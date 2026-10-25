@@ -133,7 +133,11 @@ public final class PlatformLibraryListViewNavFragment extends PlatformNavFragmen
     private String screenAspectRatio;
     private List<String> screenAspectRatioList;
     private String selectedLetterFormatString;
-    private PlayableItemEntity selectedPlayableItemEntity;
+    PlayableItemEntity selectedPlayableItemEntity;
+
+    public static final PlayableItemEntity access$getSelectedPlayableItemEntity$p(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment) {
+        return platformLibraryListViewNavFragment.selectedPlayableItemEntity;
+    }
     private String setPreviewToBoxArtString;
     private String setPreviewToSnapshotString;
     private String setPreviewToTitleString;

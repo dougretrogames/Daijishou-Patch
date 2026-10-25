@@ -5,6 +5,8 @@ import android.widget.ImageView;
 import com.magneticchen.daijishou.cache.CachedBitmapLoader;
 import com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity;
 import com.magneticchen.daijishou.daijishou_library_db.PlayableItemPreviewMediaIndex;
+import java.io.FileInputStream;
+import java.nio.charset.StandardCharsets;
 import kotlin.ExceptionsKt;
 import kotlin.Metadata;
 import kotlin.ResultKt;
@@ -17,7 +19,11 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Dispatchers;
+import kotlinx.serialization.json.Json;
+import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpStatus;
 
 /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
@@ -57,29 +63,51 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:20:0x009b, code lost:
-    
-        if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1.AnonymousClass1(r10.$previewMode, r6, r10.this$0, r10.$it, null), r10) == r1) goto L26;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:25:0x00cb, code lost:
-    
-        if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1.AnonymousClass2(r10.this$0, null), r10) == r1) goto L26;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:26:0x00cd, code lost:
-    
-        return r1;
-     */
-
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object invokeSuspendImpl(java.lang.Object r11) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 209
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+    public final Object invokeSuspendImpl(Object obj) throws Throwable {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            CoroutineScope coroutineScope = (CoroutineScope) this.L$0;
+            try {
+                String str = this.$it.getPreviewMediaPath() + "index.json";
+                String string = IOUtils.toString(new FileInputStream(str), StandardCharsets.UTF_8);
+                Intrinsics.checkNotNullExpressionValue(string, "toString(...)");
+                PlayableItemPreviewMediaIndex playableItemPreviewMediaIndex = (PlayableItemPreviewMediaIndex) Json.Default.decodeFromString(PlayableItemPreviewMediaIndex.INSTANCE.serializer(), string);
+                if (!Intrinsics.areEqual(this.$loadingPlayableItemEntity, this.this$0.selectedPlayableItemEntity)) {
+                    return Unit.INSTANCE;
+                }
+                this.L$0 = coroutineScope;
+                this.label = 1;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass1(this.$previewMode, playableItemPreviewMediaIndex, this.this$0, this.$it, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } catch (Exception e) {
+                this.this$0.getLogger().warn(coroutineScope, ExceptionsKt.stackTraceToString(e));
+                this.L$0 = null;
+                this.label = 2;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(this.this$0, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+        } else if (i == 1) {
+            CoroutineScope coroutineScope2 = (CoroutineScope) this.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+            } catch (Exception e2) {
+                this.this$0.getLogger().warn(coroutineScope2, ExceptionsKt.stackTraceToString(e2));
+                this.L$0 = null;
+                this.label = 2;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(this.this$0, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+        } else if (i == 2) {
+            ResultKt.throwOnFailure(obj);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        return Unit.INSTANCE;
     }
 
     /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1, reason: invalid class name */
