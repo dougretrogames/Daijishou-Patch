@@ -94,7 +94,7 @@ public final class PlatformLibraryGridViewNavFragment extends PlatformNavFragmen
     public LinearLayout emptyLayout;
     public Chip favoriteButton;
     public String favoriteFormatString;
-    private int filterMode;
+    int filterMode;
     private boolean filterModeRequestFromOnPageSelected;
     private ChipGroup genresChipGroup;
     private DaijishouGridLayoutManager gridLayoutManager;
@@ -1829,4 +1829,15 @@ public final class PlatformLibraryGridViewNavFragment extends PlatformNavFragmen
         horizontalScrollView.smoothScrollTo(Math.max(0, (i + (marginLayoutParams2 != null ? marginLayoutParams2.rightMargin : 0)) - this$0.getDpToPxConverter().convert(32.0f)), 0);
     }
 
+    public static final int access$getFilterMode$p(PlatformLibraryGridViewNavFragment fragment) {
+        return fragment.filterMode;
+    }
+
+    public static final boolean access$getMergePlayableItemsPreference(PlatformLibraryGridViewNavFragment fragment) {
+        return fragment.getMergePlayableItemsPreference();
+    }
+
+    public static final com.magneticchen.daijishou.view_models.DaijishouLibraryModel access$getDaijishouLibrary(PlatformLibraryGridViewNavFragment fragment) {
+        return fragment.getDaijishouLibrary();
+    }
 }

@@ -14,19 +14,26 @@ import com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity;
 import com.magneticchen.daijishou.utils.Utils;
 import com.magneticchen.daijishou.view_models.DaijishouLibraryModel;
 import com.magneticchen.daijishou.view_models.DaijishouViewModel;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Dispatchers;
+import com.magneticchen.daijishou.application_data.Constants;
 
 /* JADX INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
 /* JADX INFO: loaded from: classes4.dex */
@@ -61,21 +68,116 @@ final class PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:75:0x026e, code lost:
-    
-        if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1.AnonymousClass8(r11.this$0, r1, r11.$platformLibrarySharedPreferences, null), r11) == r0) goto L76;
-     */
-
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object invokeSuspendImpl(java.lang.Object r12) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 628
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+    public final Object invokeSuspendImpl(Object obj) throws Throwable {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        List<PlayableItemEntity> playableItemsToBeAdded;
+        if (i != 0) {
+            if (i == 1 || i == 2 || i == 3) {
+                playableItemsToBeAdded = (List) this.L$0;
+                ResultKt.throwOnFailure(obj);
+            } else if (i == 4) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+        } else {
+            ResultKt.throwOnFailure(obj);
+            playableItemsToBeAdded = new ArrayList<>();
+            PlatformLibraryGridViewNavFragment.onCreateView$refreshCountingButtons(this.this$0);
+            int filterMode = this.this$0.filterMode;
+            if (filterMode == 0) {
+                List<PlayableItemEntity> items;
+                if (this.this$0.getMergePlayableItemsPreference()) {
+                    PlayableItemEntity[] array = (PlayableItemEntity[]) this.$playableItems.toArray(new PlayableItemEntity[0]);
+                    items = this.this$0.getDaijishouLibrary().getMergedPlayableItems((PlayableItemEntity[]) Arrays.copyOf(array, array.length));
+                } else {
+                    items = this.$playableItems;
+                }
+                playableItemsToBeAdded.addAll(items);
+            } else if (filterMode == 1) {
+                List<PlayableItemEntity> items2;
+                if (this.this$0.getMergePlayableItemsPreference()) {
+                    PlayableItemEntity[] array2 = (PlayableItemEntity[]) this.$playableItems.toArray(new PlayableItemEntity[0]);
+                    items2 = this.this$0.getDaijishouLibrary().getMergedPlayableItems((PlayableItemEntity[]) Arrays.copyOf(array2, array2.length));
+                } else {
+                    items2 = this.$playableItems;
+                }
+                ArrayList arrayList = new ArrayList();
+                for (PlayableItemEntity playableItemEntity : items2) {
+                    if (playableItemEntity.isFavorite()) {
+                        arrayList.add(playableItemEntity);
+                    }
+                }
+                playableItemsToBeAdded.addAll(arrayList);
+                this.L$0 = playableItemsToBeAdded;
+                this.label = 1;
+                if (BuildersKt.withContext((CoroutineContext) Dispatchers.getMain(), new AnonymousClass2(this.this$0, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else if (filterMode == 2) {
+                List<PlayableItemEntity> items3;
+                if (this.this$0.getMergePlayableItemsPreference()) {
+                    PlayableItemEntity[] array3 = (PlayableItemEntity[]) this.$playableItems.toArray(new PlayableItemEntity[0]);
+                    items3 = this.this$0.getDaijishouLibrary().getMergedPlayableItems((PlayableItemEntity[]) Arrays.copyOf(array3, array3.length));
+                } else {
+                    items3 = this.$playableItems;
+                }
+                Date cutoff = new Date(System.currentTimeMillis() - com.magneticchen.daijishou.support.DaijishouValueSupport.durationInWholeMilliseconds(Constants.INSTANCE.m3492getRecentDurationDefinitionUwyO8pc()));
+                ArrayList arrayList2 = new ArrayList();
+                for (PlayableItemEntity playableItemEntity2 : items3) {
+                    Date lastPlayedTimestamp = playableItemEntity2.getLastPlayedTimestamp();
+                    if (lastPlayedTimestamp != null && lastPlayedTimestamp.compareTo(cutoff) > 0) {
+                        arrayList2.add(playableItemEntity2);
+                    }
+                }
+                playableItemsToBeAdded.addAll(arrayList2);
+                this.L$0 = playableItemsToBeAdded;
+                this.label = 2;
+                if (BuildersKt.withContext((CoroutineContext) Dispatchers.getMain(), new AnonymousClass4(this.this$0, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else if (filterMode == 3) {
+                List<PlayableItemEntity> items4;
+                if (this.this$0.getMergePlayableItemsPreference()) {
+                    PlayableItemEntity[] array4 = (PlayableItemEntity[]) this.$playableItems.toArray(new PlayableItemEntity[0]);
+                    items4 = this.this$0.getDaijishouLibrary().getMergedPlayableItems((PlayableItemEntity[]) Arrays.copyOf(array4, array4.length));
+                } else {
+                    items4 = this.$playableItems;
+                }
+                Date cutoff2 = new Date(System.currentTimeMillis() - com.magneticchen.daijishou.support.DaijishouValueSupport.durationInWholeMilliseconds(Constants.INSTANCE.m3491getNewlyDurationDefinitionUwyO8pc()));
+                ArrayList arrayList3 = new ArrayList();
+                for (PlayableItemEntity playableItemEntity3 : items4) {
+                    Date addedDateTimestamp = playableItemEntity3.getAddedDateTimestamp();
+                    if (addedDateTimestamp != null && addedDateTimestamp.compareTo(cutoff2) > 0) {
+                        arrayList3.add(playableItemEntity3);
+                    }
+                }
+                playableItemsToBeAdded.addAll(arrayList3);
+                this.L$0 = playableItemsToBeAdded;
+                this.label = 3;
+                if (BuildersKt.withContext((CoroutineContext) Dispatchers.getMain(), new AnonymousClass6(this.this$0, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else if (filterMode == 4) {
+                String currentGenreId = this.this$0.getCurrentGenreId();
+                if (currentGenreId != null) {
+                    List<PlayableItemEntity> items5 = this.$playableItems;
+                    if (this.this$0.getMergePlayableItemsPreference()) {
+                        PlayableItemEntity[] array5 = (PlayableItemEntity[]) items5.toArray(new PlayableItemEntity[0]);
+                        items5 = this.this$0.getDaijishouLibrary().getMergedPlayableItems((PlayableItemEntity[]) Arrays.copyOf(array5, array5.length));
+                    }
+                    playableItemsToBeAdded.addAll(items5);
+                }
+            }
+        }
+        this.L$0 = null;
+        this.label = 4;
+        if (BuildersKt.withContext((CoroutineContext) Dispatchers.getMain(), new AnonymousClass8(this.this$0, playableItemsToBeAdded, this.$platformLibrarySharedPreferences, null), this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$2, reason: invalid class name */
