@@ -1,6 +1,6 @@
 # Plano de porte P0 — classes ainda substituídas pelo bytecode ORIG
 
-33 classes em 8 arquivos Java; 0 classes ORIG sem smali localizado; 0 sem arquivo Java.
+31 classes em 7 arquivos Java; 0 classes ORIG sem smali localizado; 0 sem arquivo Java.
 
 `java_real_stubs` = corpos que hoje são stub no Java (sem contar as guardas do
 compilador Kotlin "Super calls with default arguments", que existem também no ORIG).
@@ -14,7 +14,6 @@ compilador Kotlin "Super calls with default arguments", que existem também no O
 | 5 | `com/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment.java` | 1 | 4710 | 1 |
 | 6 | `com/magneticchen/daijishou/view_models/DaijishouConsoleViewModel.java` | 4 | 3782 | 1 |
 | 7 | `com/magneticchen/daijishou/settings_nav_fragments/BackupAndRestoreSettingsNavFragment.java` | 3 | 1249 | 0 |
-| 8 | `com/magneticchen/daijishou/dialog_fragments/DownloadPlatformsDialogFragment.java` | 2 | 1099 | 0 |
 
 ## Classes por arquivo (nomes ORIG)
 
@@ -25,4 +24,3 @@ compilador Kotlin "Super calls with default arguments", que existem também no O
 - `com/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment.java`: `dialog_fragments/RetroAchievementsGameDialogFragment`
 - `com/magneticchen/daijishou/view_models/DaijishouConsoleViewModel.java`: `view_models/DaijishouConsoleViewModel$commands$2`, `view_models/DaijishouConsoleViewModel$commands$6`, `view_models/DaijishouConsoleViewModel$commands$7`, `view_models/DaijishouConsoleViewModel`
 - `com/magneticchen/daijishou/settings_nav_fragments/BackupAndRestoreSettingsNavFragment.java`: `settings_nav_fragments/BackupAndRestoreSettingsNavFragment$onCreateView$2$1`, `settings_nav_fragments/BackupAndRestoreSettingsNavFragment$onCreateView$2$1$2$2$1$1`, `settings_nav_fragments/BackupAndRestoreSettingsNavFragment$onCreateView$4$1$1`
-- `com/magneticchen/daijishou/dialog_fragments/DownloadPlatformsDialogFragment.java`: `dialog_fragments/DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2`, `dialog_fragments/DownloadPlatformsDialogFragment$onStart$1$1`
