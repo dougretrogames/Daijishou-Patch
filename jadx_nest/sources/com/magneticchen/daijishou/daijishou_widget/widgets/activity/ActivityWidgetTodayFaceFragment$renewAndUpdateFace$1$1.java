@@ -1,20 +1,25 @@
 package com.magneticchen.daijishou.daijishou_widget.widgets.activity;
 
+import android.graphics.Bitmap;
 import android.widget.TextView;
 import com.magneticchen.daijishou.R;
+import com.magneticchen.daijishou.daijishou_library_db.EventEntity;
 import java.util.Arrays;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.Boxing;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
-import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.StringCompanionObject;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Dispatchers;
 
 /* JADX INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
 /* JADX INFO: loaded from: classes4.dex */
@@ -32,7 +37,6 @@ final class ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1 extends com.m
         this.$widgetInstanceId = j;
     }
 
-
     public final Continuation create(Object obj, Continuation<?> continuation) {
         return new ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1(this.this$0, this.$widgetInstanceId, continuation);
     }
@@ -46,118 +50,145 @@ final class ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1 extends com.m
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:16:0x006a, code lost:
-    
-        if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1.AnonymousClass1(r7.this$0, r7.$widgetInstanceId, null), r7) == r0) goto L17;
-     */
-
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object invokeSuspendImpl(java.lang.Object r8) throws java.lang.Throwable {
-        /*
-            r7 = this;
-            java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r1 = r7.label
-            r2 = 2
-            r3 = 1
-            if (r1 == 0) goto L1e
-            if (r1 == r3) goto L1a
-            if (r1 != r2) goto L12
-            kotlin.ResultKt.throwOnFailure(r8)
-            goto L6d
-        L12:
-            java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
-            java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-            r8.<init>(r0)
-            throw r8
-        L1a:
-            kotlin.ResultKt.throwOnFailure(r8)
-            goto L4f
-        L1e:
-            kotlin.ResultKt.throwOnFailure(r8)
-            com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment r8 = r7.this$0
-            java.util.List r8 = com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment.access$getRecentEvents$p(r8)
-            java.util.Collection r8 = (java.util.Collection) r8
-            boolean r8 = r8.isEmpty()
-            if (r8 != 0) goto L4f
-            kotlin.jvm.internal.Ref$IntRef r8 = new kotlin.jvm.internal.Ref$IntRef
-            r8.<init>()
-            r1 = -1
-            r8.element = r1
-            kotlin.jvm.internal.Ref$IntRef r1 = new kotlin.jvm.internal.Ref$IntRef
-            r1.<init>()
-            kotlin.jvm.internal.Ref$ObjectRef r4 = new kotlin.jvm.internal.Ref$ObjectRef
-            r4.<init>()
-            com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment r5 = r7.this$0
-            r6 = r7
-            kotlin.coroutines.Continuation r6 = (kotlin.coroutines.Continuation) r6
-            r7.label = r3
-            java.lang.Object r8 = invokeSuspendImpl$tryNext(r8, r5, r1, r4, r6)
-            if (r8 != r0) goto L4f
-            goto L6c
-        L4f:
-            kotlinx.coroutines.MainCoroutineDispatcher r8 = kotlinx.coroutines.Dispatchers.getMain()
-            kotlin.coroutines.CoroutineContext r8 = (kotlin.coroutines.CoroutineContext) r8
-            com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$1 r1 = new com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$1
-            com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment r3 = r7.this$0
-            long r4 = r7.$widgetInstanceId
-            r6 = 0
-            r1.<init>(r3, r4, r6)
-            kotlin.jvm.functions.Function2 r1 = (kotlin.jvm.functions.Function2) r1
-            r3 = r7
-            kotlin.coroutines.Continuation r3 = (kotlin.coroutines.Continuation) r3
-            r7.label = r2
-            java.lang.Object r8 = kotlinx.coroutines.BuildersKt.withContext(r8, r1, r3)
-            if (r8 != r0) goto L6d
-        L6c:
-            return r0
-        L6d:
-            kotlin.Unit r8 = kotlin.Unit.INSTANCE
-            return r8
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+    public final Object invokeSuspendImpl(Object obj) throws Throwable {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        if (i != 0) {
+            if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+            } else if (i == 2) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+        } else {
+            ResultKt.throwOnFailure(obj);
+            if (!this.this$0.recentEvents.isEmpty()) {
+                Ref.IntRef intRef = new Ref.IntRef();
+                intRef.element = -1;
+                Ref.IntRef intRef2 = new Ref.IntRef();
+                Ref.ObjectRef<EventEntity> objectRef = new Ref.ObjectRef<>();
+                this.label = 1;
+                if (invokeSuspendImpl$tryNext(intRef, this.this$0, intRef2, objectRef, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+        }
+        CoroutineContext main = (CoroutineContext) Dispatchers.getMain();
+        AnonymousClass1 anonymousClass1 = new AnonymousClass1(this.this$0, this.$widgetInstanceId, null);
+        this.label = 2;
+        if (BuildersKt.withContext(main, anonymousClass1, this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:31:0x00b6 A[PHI: r9 r10 r11 r12
-  0x00b6: PHI (r9v5 kotlin.jvm.internal.Ref$IntRef) = (r9v0 kotlin.jvm.internal.Ref$IntRef), (r9v0 kotlin.jvm.internal.Ref$IntRef), (r9v12 kotlin.jvm.internal.Ref$IntRef) binds: [B:27:0x008c, B:29:0x00b3, B:19:0x0047] A[DONT_GENERATE, DONT_INLINE]
-  0x00b6: PHI (r10v1 com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment) = 
-  (r10v0 com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment)
-  (r10v0 com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment)
-  (r10v4 com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment)
- binds: [B:27:0x008c, B:29:0x00b3, B:19:0x0047] A[DONT_GENERATE, DONT_INLINE]
-  0x00b6: PHI (r11v3 kotlin.jvm.internal.Ref$IntRef) = (r11v0 kotlin.jvm.internal.Ref$IntRef), (r11v0 kotlin.jvm.internal.Ref$IntRef), (r11v6 kotlin.jvm.internal.Ref$IntRef) binds: [B:27:0x008c, B:29:0x00b3, B:19:0x0047] A[DONT_GENERATE, DONT_INLINE]
-  0x00b6: PHI (r12v5 kotlin.jvm.internal.Ref$ObjectRef<com.magneticchen.daijishou.daijishou_library_db.EventEntity>) = 
-  (r12v0 kotlin.jvm.internal.Ref$ObjectRef<com.magneticchen.daijishou.daijishou_library_db.EventEntity>)
-  (r12v0 kotlin.jvm.internal.Ref$ObjectRef<com.magneticchen.daijishou.daijishou_library_db.EventEntity>)
-  (r12v8 kotlin.jvm.internal.Ref$ObjectRef<com.magneticchen.daijishou.daijishou_library_db.EventEntity>)
- binds: [B:27:0x008c, B:29:0x00b3, B:19:0x0047] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:32:0x00c4, code lost:
-    
-        if (invokeSuspendImpl$tryNext(r9, r10, r11, r12, r0) == r1) goto L49;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:41:0x00e9, code lost:
-    
-        if (invokeSuspendImpl$tryNext(r9, r10, r11, r12, r0) == r1) goto L49;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:48:0x0110, code lost:
-    
-        if (kotlinx.coroutines.BuildersKt.withContext(r11, r12, r0) == r1) goto L49;
-     */
-    /* JADX WARN: Type inference failed for: r13v7, types: [T, com.magneticchen.daijishou.daijishou_library_db.EventEntity] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public static final java.lang.Object invokeSuspendImpl$tryNext(kotlin.jvm.internal.Ref.IntRef r9, com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment r10, kotlin.jvm.internal.Ref.IntRef r11, kotlin.jvm.internal.Ref.ObjectRef<com.magneticchen.daijishou.daijishou_library_db.EventEntity> r12, kotlin.coroutines.Continuation<?> r13) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 278
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1.invokeSuspendImpl$tryNext(kotlin.jvm.internal.Ref$IntRef, com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment, kotlin.jvm.internal.Ref$IntRef, kotlin.jvm.internal.Ref$ObjectRef, kotlin.coroutines.Continuation):java.lang.Object");
+    public static final Object access$invokeSuspend$tryNext(Ref.IntRef index, ActivityWidgetTodayFaceFragment fragment, Ref.IntRef backgroundSetCount, Ref.ObjectRef<EventEntity> latestEventWithBackground, Continuation<?> continuation) throws Throwable {
+        return invokeSuspendImpl$tryNext(index, fragment, backgroundSetCount, latestEventWithBackground, continuation);
+    }
+
+    public static final Object invokeSuspendImpl$tryNext(Ref.IntRef index, ActivityWidgetTodayFaceFragment fragment, Ref.IntRef backgroundSetCount, Ref.ObjectRef<EventEntity> latestEventWithBackground, Continuation<?> continuation) throws Throwable {
+        ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$tryNext$1 tryNext1;
+        if (continuation instanceof ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$tryNext$1) {
+            tryNext1 = (ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$tryNext$1) continuation;
+            if ((tryNext1.label & Integer.MIN_VALUE) != 0) {
+                tryNext1.label -= Integer.MIN_VALUE;
+            } else {
+                tryNext1 = new ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$tryNext$1(continuation);
+            }
+        } else {
+            tryNext1 = new ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$tryNext$1(continuation);
+        }
+
+        Object obj = tryNext1.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int label = tryNext1.label;
+        if (label != 0) {
+            if (label == 1) {
+                latestEventWithBackground = (Ref.ObjectRef) tryNext1.L$3;
+                backgroundSetCount = (Ref.IntRef) tryNext1.L$2;
+                fragment = (ActivityWidgetTodayFaceFragment) tryNext1.L$1;
+                index = (Ref.IntRef) tryNext1.L$0;
+                ResultKt.throwOnFailure(obj);
+                tryNext1.L$0 = null;
+                tryNext1.L$1 = null;
+                tryNext1.L$2 = null;
+                tryNext1.L$3 = null;
+                tryNext1.label = 2;
+                if (invokeSuspendImpl$tryNext(index, fragment, backgroundSetCount, latestEventWithBackground, tryNext1) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            } else if (label == 2) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else if (label == 3) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else if (label == 4) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+        }
+
+        ResultKt.throwOnFailure(obj);
+        index.element++;
+        if (index.element >= fragment.recentEvents.size()) {
+            return Unit.INSTANCE;
+        }
+
+        EventEntity eventEntity = fragment.recentEvents.get(index.element);
+        if (backgroundSetCount.element == 0) {
+            Bitmap bitmap = fragment.getBitmapFromEvent(eventEntity);
+            if (bitmap != null) {
+                latestEventWithBackground.element = eventEntity;
+                backgroundSetCount.element++;
+                fragment.backgroundBitmap = bitmap;
+                ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$tryNext$2 tryNext2 = new ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$tryNext$2(fragment, bitmap, null);
+                tryNext1.L$0 = index;
+                tryNext1.L$1 = fragment;
+                tryNext1.L$2 = backgroundSetCount;
+                tryNext1.L$3 = latestEventWithBackground;
+                tryNext1.label = 1;
+                if (BuildersKt.withContext((CoroutineContext) Dispatchers.getMain(), tryNext2, tryNext1) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+            tryNext1.L$0 = null;
+            tryNext1.L$1 = null;
+            tryNext1.L$2 = null;
+            tryNext1.L$3 = null;
+            tryNext1.label = 2;
+            if (invokeSuspendImpl$tryNext(index, fragment, backgroundSetCount, latestEventWithBackground, tryNext1) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
+        } else if (backgroundSetCount.element == 1) {
+            EventEntity prevEvent = latestEventWithBackground.element;
+            Intrinsics.checkNotNull(prevEvent);
+            if (Intrinsics.areEqual(eventEntity.getPlayableItemId(), prevEvent.getPlayableItemId())) {
+                tryNext1.label = 3;
+                if (invokeSuspendImpl$tryNext(index, fragment, backgroundSetCount, latestEventWithBackground, tryNext1) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            }
+            Bitmap bitmap2 = fragment.getBitmapFromEvent(eventEntity);
+            if (bitmap2 != null) {
+                backgroundSetCount.element++;
+                fragment.secondBackgroundBitmap = bitmap2;
+                ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$tryNext$3$1 tryNext3 = new ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$tryNext$3$1(fragment, bitmap2, null);
+                tryNext1.label = 4;
+                if (BuildersKt.withContext((CoroutineContext) Dispatchers.getMain(), tryNext3, tryNext1) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            }
+        }
+        return Unit.INSTANCE;
     }
 
     /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$1, reason: invalid class name */
@@ -176,7 +207,6 @@ final class ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1 extends com.m
             this.$widgetInstanceId = j;
         }
 
-
         public final Continuation create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass1(this.this$0, this.$widgetInstanceId, continuation);
         }
@@ -184,11 +214,7 @@ final class ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1 extends com.m
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<?> continuation) {
             try {
-                try {
-                    return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspendImpl(Unit.INSTANCE);
-                } catch (Throwable th) {
-                    throw com.magneticchen.daijishou.support.DaijishouSupport.sneakyThrow(th);
-                }
+                return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspendImpl(Unit.INSTANCE);
             } catch (Throwable th) {
                 throw com.magneticchen.daijishou.support.DaijishouSupport.sneakyThrow(th);
             }
