@@ -144,7 +144,7 @@ do build de referência. Etapas, na ordem:
 | Etapa | Script | Efeito |
 |---|---|---|
 | mapa de membros | `build_member_map.py` | 718 renomeações de classes internas + mapa membro→referência |
-| stubs de classe | `patch_stubs.py` | 49 classes-stub substituídas pelo código de referência (progresso: 57 -> 54 após calibração -> 49 após lote 2) |
+| stubs de classe | `patch_stubs.py` | 46 classes-stub substituídas pelo código de referência (progresso: 57 -> 54 após calibração -> 49 após lote 2 -> 46 após lote 3) |
 | classes ausentes | `patch_closure.py` | 7 classes de closure copiadas da referência |
 | membros | `patch_members.py` | membros renomeados/realinhados nos arquivos derivados |
 | alinhamento/injeção | `patch_align.py` (2×) | **49** membros compilados injetados em massa + **101** e **9** injeções de closure |
@@ -554,7 +554,7 @@ Depois: recompilar → D8 → baksmali → `run_pipeline.ps1` → `rebuild_app.p
 
 ## 8. Limitações conhecidas
 
-1. **A árvore Java não é, sozinha, o APK**: 49 classes e 5 corpos de método que ainda não foram
+1. **A árvore Java não é, sozinha, o APK**: 46 classes e 5 corpos de método que ainda não foram
    convertidos permanecem como stubs (`UnsupportedOperationException`) na árvore Java; o APK
    final usa o **código de referência** nesses pontos, aplicado pelo pipeline. Compilar a árvore
    sem o pipeline gera um APK que compila, mas não é equivalente nesses pontos.
@@ -588,7 +588,7 @@ Depois: recompilar → D8 → baksmali → `run_pipeline.ps1` → `rebuild_app.p
 - Deduplicação: 3.577 classes alteradas, 10.006 métodos removidos (10 jars).
 - Correções manuais/semi-automáticas: centenas, em lotes b1–b16 + passes globais
   (genéricos, lambdas sintéticas, DAOs, `suspend`, campos `final`, fluxo de máquinas de estado).
-- Reconciliação: 718 renomeações de classe, 49 classes-stub (iniciado em 57, 54 após calibração, 49 após lote 2), 7 classes de closure copiadas,
+- Reconciliação: 718 renomeações de classe, 46 classes-stub (iniciado em 57, 54 após calibração, 49 após lote 2, 46 após lote 3), 7 classes de closure copiadas,
   49 + 101 + 9 injeções de membros, 5 corpos de stub, 9 classes/83 membros publicizados,
   59 normalizações de `invoke` em 14 arquivos.
 - Referências: 0 métodos e 0 campos ausentes (113 herdados benignos); 0 casts pós-`catch`.
