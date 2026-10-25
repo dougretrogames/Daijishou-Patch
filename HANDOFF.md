@@ -294,12 +294,16 @@ Regras de interação aprendidas:
 - **Automação da matriz de AVD**:
   - Script `build_tmp/test_avd_matrix.py` automatiza completamente a bateria de testes na AVD: boot, instalação, locale pt-BR, monkey launch, bypass de pop-up de tela cheia do Android, verificação de PID ativo, validação de elementos de tela, captura de screenshot e verificação de 0 erros fatais em logcat (`AndroidRuntime:E`).
 
-### P2 — Cobertura de testes e robustez
+### P2 — Cobertura de testes e robustez (Em andamento)
 
-Biblioteca real + execução de emulador externo, scraping real, RA autenticado, Drive autenticado,
-backup→restore round-trip, API 26 (minSdk), outras densidades/idiomas, serviço de acessibilidade,
-protocolo TCP de debug (`daijishou_debug_service`). Cada fluxo testado vira linha da matriz de AVD
-(build atual × build de referência).
+- **Protocolo TCP de debug (`daijishou_debug_service`) [CONCLUÍDO]**:
+  - Validado e automatizado através do script `build_tmp/test_debug_service.py`.
+  - Fluxo de desbloqueio validado via keyword secreta (`nooxyhowdoyouturnthison?`) no Registrador (`LoggerDialogFragment`), ativação do diálogo `DebugAndExperimentalDialogFragment` e concessão de runtime permission `POST_NOTIFICATIONS`.
+  - Serviço executado em primeiro plano escutando na porta TCP 19487.
+  - Comunicação via adb forward (`tcp:19487`) com validação ponta a ponta do handshake de Heartbeat (`0x00`).
+  - Corrigido defeito sutil de descompilação de corrotina em `ConsoleOperation.java`: garantia de serialização e retorno correto do `commandResult` para o cliente socket mesmo em execuções síncronas.
+- **Próximos fluxos de P2**:
+  - Biblioteca real + execução de emulador externo, scraping real, RA autenticado, Drive autenticado, backup→restore round-trip, API 26 (minSdk), outras densidades/idiomas, serviço de acessibilidade (`LauncherAccessibilityService`).
 
 ### Opcional — nomes binários (722 classes)
 

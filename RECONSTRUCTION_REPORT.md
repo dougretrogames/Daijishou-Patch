@@ -60,6 +60,7 @@ com feed inválido), sua causa e a correção (seção 7).
 | `build_tmp/verify_no_orig.py` | gate estrito do modo No-Orig (0 stubs em class_map, 0 UOE) |
 | `build_tmp/diff_methods.py` | diff estrutural normalizado de métodos entre recon e referência |
 | `build_tmp/test_avd_matrix.py` | automação completa da matriz de testes na AVD |
+| `build_tmp/test_debug_service.py` | automação do teste de protocolo TCP DaijishouDebugService |
 | `build_tmp/dump_ui.py` | imprime texto/desc/bounds de um dump do `uiautomator` |
 | `avd_tests/reconstructed/` | capturas, dumps XML e logcat do build atual |
 | `avd_tests/original/` | capturas, dumps XML e logcat do build de referência (comparação) |

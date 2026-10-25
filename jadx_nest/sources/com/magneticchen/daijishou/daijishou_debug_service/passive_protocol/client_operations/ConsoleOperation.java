@@ -94,22 +94,22 @@ public final class ConsoleOperation extends ClientOperation {
                     this.$dataOutputStream.write(ConsoleOperation.this.getHeaderByteCode());
                     this.$dataOutputStream.writeInt(DaijishouConsoleViewModel.Companion.CommandResult.INSTANCE.getFAILED_STATUS_CODE());
                     iWriteStringToDataOutputStream = ConsoleOperation.this.writeStringToDataOutputStream(this.$dataOutputStream, "");
-                } else {
-                    MainActivity mainActivityRequireMainActivity = ConsoleOperation.this.requireMainActivity();
-                    MainActivity mainActivity = mainActivityRequireMainActivity;
-                    ConsoleOperation$handleDataStreams$2$invokeSuspendImpl$$inlined$viewModels$default$1 consoleOperation$handleDataStreams$2$invokeSuspendImpl$$inlined$viewModels$default$1 = new ConsoleOperation$handleDataStreams$2$invokeSuspendImpl$$inlined$viewModels$default$1(mainActivity);
-                    this.label = 1;
-                    obj = invokeSuspendImpl$lambda$0(new ViewModelLazy(Reflection.getOrCreateKotlinClass(DaijishouConsoleViewModel.class), new ConsoleOperation$handleDataStreams$2$invokeSuspendImpl$$inlined$viewModels$default$2(mainActivity), consoleOperation$handleDataStreams$2$invokeSuspendImpl$$inlined$viewModels$default$1, new ConsoleOperation$handleDataStreams$2$invokeSuspendImpl$$inlined$viewModels$default$3(null, mainActivity))).execute(mainActivityRequireMainActivity, stringFromDataInputStream, this);
-                    if (obj == coroutine_suspended) {
-                        return coroutine_suspended;
-                    }
+                    return Boxing.boxInt(iWriteStringToDataOutputStream);
                 }
-                return Boxing.boxInt(iWriteStringToDataOutputStream);
+                MainActivity mainActivityRequireMainActivity = ConsoleOperation.this.requireMainActivity();
+                MainActivity mainActivity = mainActivityRequireMainActivity;
+                ConsoleOperation$handleDataStreams$2$invokeSuspendImpl$$inlined$viewModels$default$1 consoleOperation$handleDataStreams$2$invokeSuspendImpl$$inlined$viewModels$default$1 = new ConsoleOperation$handleDataStreams$2$invokeSuspendImpl$$inlined$viewModels$default$1(mainActivity);
+                this.label = 1;
+                obj = invokeSuspendImpl$lambda$0(new ViewModelLazy(Reflection.getOrCreateKotlinClass(DaijishouConsoleViewModel.class), new ConsoleOperation$handleDataStreams$2$invokeSuspendImpl$$inlined$viewModels$default$2(mainActivity), consoleOperation$handleDataStreams$2$invokeSuspendImpl$$inlined$viewModels$default$1, new ConsoleOperation$handleDataStreams$2$invokeSuspendImpl$$inlined$viewModels$default$3(null, mainActivity))).execute(mainActivityRequireMainActivity, stringFromDataInputStream, this);
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else {
+                if (i != 1) {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                ResultKt.throwOnFailure(obj);
             }
-            if (i != 1) {
-                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-            }
-            ResultKt.throwOnFailure(obj);
             DaijishouConsoleViewModel.Companion.CommandResult commandResult = (DaijishouConsoleViewModel.Companion.CommandResult) obj;
             this.$dataOutputStream.write(ConsoleOperation.this.getHeaderByteCode());
             this.$dataOutputStream.writeInt(commandResult.getStatusCode());
