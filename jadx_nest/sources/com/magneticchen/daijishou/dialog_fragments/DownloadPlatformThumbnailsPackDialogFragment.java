@@ -16,6 +16,7 @@ import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.magneticchen.daijishou.R;
 import com.magneticchen.daijishou.abstract_fragment_classes.DaijishouDialogFragment;
 import com.magneticchen.daijishou.daijishou_library_db.portables.PlatformThumbnailsPackIndexJson;
+import com.magneticchen.daijishou.utils.Utils;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
@@ -133,100 +134,50 @@ public final class DownloadPlatformThumbnailsPackDialogFragment extends Daijisho
             }
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:15:0x0077, code lost:
-        
-            if (kotlinx.coroutines.BuildersKt.withContext(r11, r4, r10) == r1) goto L20;
-         */
-        /* JADX WARN: Code restructure failed: missing block: B:19:0x0095, code lost:
-        
-            if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment.AnonymousClass1.AnonymousClass2(r10.this$0, r0, null), r10) == r1) goto L20;
-         */
-        /* JADX WARN: Code restructure failed: missing block: B:20:0x0097, code lost:
-        
-            return r1;
-         */
-
-        /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r11) throws java.lang.Throwable {
-            /*
-                r10 = this;
-                java.lang.Object r1 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-                int r0 = r10.label
-                r2 = 2
-                r3 = 1
-                if (r0 == 0) goto L20
-                if (r0 == r3) goto L1b
-                if (r0 != r2) goto L13
-                kotlin.ResultKt.throwOnFailure(r11)
-                goto L98
-            L13:
-                java.lang.IllegalStateException r11 = new java.lang.IllegalStateException
-                java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-                r11.<init>(r0)
-                throw r11
-            L1b:
-                kotlin.ResultKt.throwOnFailure(r11)     // Catch: java.lang.Exception -> L7a
-                goto L98
-            L20:
-                kotlin.ResultKt.throwOnFailure(r11)
-                com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment r11 = com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment.this     // Catch: java.lang.Exception -> L7a
-                kotlinx.serialization.json.Json r0 = com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment.access$getWeakJson(r11)     // Catch: java.lang.Exception -> L7a
-                com.magneticchen.daijishou.daijishou_library_db.portables.PlatformThumbnailsPackIndexJson$Companion r4 = com.magneticchen.daijishou.daijishou_library_db.portables.PlatformThumbnailsPackIndexJson.INSTANCE     // Catch: java.lang.Exception -> L7a
-                kotlinx.serialization.KSerializer r4 = r4.serializer()     // Catch: java.lang.Exception -> L7a
-                kotlinx.serialization.DeserializationStrategy r4 = (kotlinx.serialization.DeserializationStrategy) r4     // Catch: java.lang.Exception -> L7a
-                com.magneticchen.daijishou.utils.Utils r5 = com.magneticchen.daijishou.utils.Utils.INSTANCE     // Catch: java.lang.Exception -> L7a
-                java.lang.String r6 = r10.$platformThumbnailPackUrlString     // Catch: java.lang.Exception -> L7a
-                java.lang.StringBuilder r7 = new java.lang.StringBuilder     // Catch: java.lang.Exception -> L7a
-                r7.<init>()     // Catch: java.lang.Exception -> L7a
-                java.lang.StringBuilder r6 = r7.append(r6)     // Catch: java.lang.Exception -> L7a
-                java.lang.String r7 = "index.json"
-                java.lang.StringBuilder r6 = r6.append(r7)     // Catch: java.lang.Exception -> L7a
-                java.lang.String r6 = r6.toString()     // Catch: java.lang.Exception -> L7a
-                java.lang.String r5 = r5.readEntireTextFromURL(r6)     // Catch: java.lang.Exception -> L7a
-                java.lang.Object r0 = r0.decodeFromString(r4, r5)     // Catch: java.lang.Exception -> L7a
-                com.magneticchen.daijishou.daijishou_library_db.portables.PlatformThumbnailsPackIndexJson r0 = (com.magneticchen.daijishou.daijishou_library_db.portables.PlatformThumbnailsPackIndexJson) r0     // Catch: java.lang.Exception -> L7a
-                com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment.access$setPlatformThumbnailsPackIndexJson$p(r11, r0)     // Catch: java.lang.Exception -> L7a
-                com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment r11 = com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment.this     // Catch: java.lang.Exception -> L7a
-                com.magneticchen.daijishou.daijishou_library_db.portables.PlatformThumbnailsPackIndexJson r5 = com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment.access$getPlatformThumbnailsPackIndexJson$p(r11)     // Catch: java.lang.Exception -> L7a
-                if (r5 == 0) goto L98
-                com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment r6 = com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment.this     // Catch: java.lang.Exception -> L7a
-                android.app.Dialog r7 = r10.$dialog     // Catch: java.lang.Exception -> L7a
-                java.lang.String r8 = r10.$platformThumbnailPackUrlString     // Catch: java.lang.Exception -> L7a
-                kotlinx.coroutines.MainCoroutineDispatcher r11 = kotlinx.coroutines.Dispatchers.getMain()     // Catch: java.lang.Exception -> L7a
-                kotlin.coroutines.CoroutineContext r11 = (kotlin.coroutines.CoroutineContext) r11     // Catch: java.lang.Exception -> L7a
-                com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1 r4 = new com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1     // Catch: java.lang.Exception -> L7a
-                r9 = 0
-                r4.<init>(r5, r6, r7, r8, r9)     // Catch: java.lang.Exception -> L7a
-                kotlin.jvm.functions.Function2 r4 = (kotlin.jvm.functions.Function2) r4     // Catch: java.lang.Exception -> L7a
-                r10.label = r3     // Catch: java.lang.Exception -> L7a
-                java.lang.Object r11 = kotlinx.coroutines.BuildersKt.withContext(r11, r4, r10)     // Catch: java.lang.Exception -> L7a
-                if (r11 != r1) goto L98
-                goto L97
-            L7a:
-                r0 = move-exception
-                r11 = r0
-                kotlinx.coroutines.MainCoroutineDispatcher r0 = kotlinx.coroutines.Dispatchers.getMain()
-                kotlin.coroutines.CoroutineContext r0 = (kotlin.coroutines.CoroutineContext) r0
-                com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment$onStart$1$2 r3 = new com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment$onStart$1$2
-                com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment r4 = com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment.this
-                r5 = 0
-                r3.<init>(r4, r11, r5)
-                kotlin.jvm.functions.Function2 r3 = (kotlin.jvm.functions.Function2) r3
-                r11 = r10
-                kotlin.coroutines.Continuation r11 = (kotlin.coroutines.Continuation) r11
-                r10.label = r2
-                java.lang.Object r11 = kotlinx.coroutines.BuildersKt.withContext(r0, r3, r11)
-                if (r11 != r1) goto L98
-            L97:
-                return r1
-            L98:
-                kotlin.Unit r11 = kotlin.Unit.INSTANCE
-                return r11
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment.AnonymousClass1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                try {
+                    DownloadPlatformThumbnailsPackDialogFragment fragment = DownloadPlatformThumbnailsPackDialogFragment.this;
+                    PlatformThumbnailsPackIndexJson packIndex = (PlatformThumbnailsPackIndexJson) fragment.getWeakJson().decodeFromString(
+                        PlatformThumbnailsPackIndexJson.INSTANCE.serializer(),
+                        Utils.INSTANCE.readEntireTextFromURL(this.$platformThumbnailPackUrlString + "index.json")
+                    );
+                    fragment.platformThumbnailsPackIndexJson = packIndex;
+                    if (packIndex != null) {
+                        DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1 callback = new DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1(
+                            packIndex, fragment, this.$dialog, this.$platformThumbnailPackUrlString, null
+                        );
+                        this.label = 1;
+                        if (BuildersKt.withContext(Dispatchers.getMain(), callback, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    }
+                } catch (Exception e) {
+                    AnonymousClass2 errorCallback = new AnonymousClass2(DownloadPlatformThumbnailsPackDialogFragment.this, e, null);
+                    this.label = 2;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), errorCallback, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+            } else if (i == 1) {
+                try {
+                    ResultKt.throwOnFailure(obj);
+                } catch (Exception e) {
+                    AnonymousClass2 errorCallback = new AnonymousClass2(DownloadPlatformThumbnailsPackDialogFragment.this, e, null);
+                    this.label = 2;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), errorCallback, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+            } else if (i == 2) {
+                ResultKt.throwOnFailure(obj);
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            return Unit.INSTANCE;
         }
 
         /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment$onStart$1$2, reason: invalid class name */
