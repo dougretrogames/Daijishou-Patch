@@ -51,6 +51,19 @@ import kotlinx.coroutines.flow.FlowKt;
 import org.eclipse.jgit.lib.ReflogEntry;
 import org.retroachivements.api.RetroClient;
 import org.retroachivements.api.RetroInterface;
+import org.retroachivements.api.data.pojo.ErrorResponse;
+import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsAchievementRecordEntity;
+import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity;
+import com.magneticchen.daijishou.repositories.DaijishouLibraryRepository;
+import com.magneticchen.daijishou.daijishou_library_db.PlatformEntity;
+import java.util.Date;
+import java.util.LinkedHashMap;
+import kotlin.Pair;
+import kotlin.ranges.RangesKt;
+import kotlin.collections.MapsKt;
+import kotlin.jvm.internal.Ref;
+import kotlin.text.StringsKt;
+import com.magneticchen.daijishou.utils.UtilsKt;
 import org.retroachivements.api.data.RetroCredentials;
 import org.retroachivements.api.data.pojo.ErrorResponse;
 import org.retroachivements.api.data.pojo.user.GetUserCompletionProgress;
@@ -136,7 +149,7 @@ public final class RetroAchievementsManager {
     public final Object refreshUserProfile(String str, Continuation<?> continuation) {
         Object objCollect;
         RetroInterface retroAchievementsInterface = getRetroAchievementsInterface();
-        return (retroAchievementsInterface != null && (objCollect = FlowKt.retryWhen(getRetroAchievementsUserProfile(retroAchievementsInterface, str), new AnonymousClass2(null)).collect(new AnonymousClass3(retroAchievementsInterface, str), (kotlin.coroutines.Continuation<? super kotlin.Unit>) continuation)) == IntrinsicsKt.getCOROUTINE_SUSPENDED()) ? objCollect : Unit.INSTANCE;
+        return (retroAchievementsInterface != null && (objCollect = FlowKt.retryWhen(getRetroAchievementsUserProfile(retroAchievementsInterface, str), new AnonymousClass2(null)).collect(new AnonymousClass3(this, retroAchievementsInterface, str), (kotlin.coroutines.Continuation<? super kotlin.Unit>) continuation)) == IntrinsicsKt.getCOROUTINE_SUSPENDED()) ? objCollect : Unit.INSTANCE;
     }
 
     /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.v2.RetroAchievementsManager$refreshUserProfile$2, reason: invalid class name */
@@ -195,8 +208,10 @@ public final class RetroAchievementsManager {
     static final class AnonymousClass3<T> implements FlowCollector {
         final /* synthetic */ RetroInterface $retroAchievements;
         final /* synthetic */ String $username;
+        final /* synthetic */ RetroAchievementsManager this$0;
 
-        AnonymousClass3(RetroInterface retroInterface, String str) {
+        AnonymousClass3(RetroAchievementsManager retroAchievementsManager, RetroInterface retroInterface, String str) {
+            this.this$0 = retroAchievementsManager;
             this.$retroAchievements = retroInterface;
             this.$username = str;
         }
@@ -210,12 +225,63 @@ public final class RetroAchievementsManager {
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object emit(com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserProfileEntity r9, kotlin.coroutines.Continuation<?> r10) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 208
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.retro_achievements.v2.RetroAchievementsManager.AnonymousClass3.emit(com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserProfileEntity, kotlin.coroutines.Continuation):java.lang.Object");
+        public final Object emit(RetroAchievementsUserProfileEntity profile, Continuation<?> continuation) throws Throwable {
+            RetroAchievementsManager$refreshUserProfile$3$emit$1 c;
+            if (continuation instanceof RetroAchievementsManager$refreshUserProfile$3$emit$1) {
+                c = (RetroAchievementsManager$refreshUserProfile$3$emit$1) continuation;
+                if ((c.label & Integer.MIN_VALUE) != 0) {
+                    c.label -= Integer.MIN_VALUE;
+                } else {
+                    c = new RetroAchievementsManager$refreshUserProfile$3$emit$1(this, continuation);
+                }
+            } else {
+                c = new RetroAchievementsManager$refreshUserProfile$3$emit$1(this, continuation);
+            }
+            Object obj = c.result;
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = c.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                RetroAchievementsUserProfileEntity profileEntity = profile;
+                Flow retryWhen = FlowKt.retryWhen(this.this$0.getRetroAchievementsUserProgressGames(this.$retroAchievements, this.$username), new AnonymousClass1(null));
+                AnonymousClass2 anonymousClass2 = new AnonymousClass2(this.this$0, profileEntity);
+                c.L$0 = this;
+                c.L$1 = profileEntity;
+                c.label = 1;
+                if (retryWhen.collect(anonymousClass2, c) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else if (i == 1) {
+                RetroAchievementsUserProfileEntity profileEntity = (RetroAchievementsUserProfileEntity) c.L$1;
+                AnonymousClass3 anonymousClass3 = (AnonymousClass3) c.L$0;
+                ResultKt.throwOnFailure(obj);
+                Flow retryWhen2 = FlowKt.retryWhen(anonymousClass3.this$0.getRetroAchievementsAwardsByUserId(anonymousClass3.$username), new AnonymousClass5(null));
+                AnonymousClass6 anonymousClass6 = AnonymousClass6.INSTANCE;
+                c.L$0 = null;
+                c.L$1 = null;
+                c.label = 3;
+                if (retryWhen2.collect(anonymousClass6, c) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            } else if (i == 2) {
+                AnonymousClass3 anonymousClass3 = (AnonymousClass3) c.L$0;
+                ResultKt.throwOnFailure(obj);
+                Flow retryWhen2 = FlowKt.retryWhen(anonymousClass3.this$0.getRetroAchievementsAwardsByUserId(anonymousClass3.$username), new AnonymousClass5(null));
+                AnonymousClass6 anonymousClass6 = AnonymousClass6.INSTANCE;
+                c.L$0 = null;
+                c.label = 3;
+                if (retryWhen2.collect(anonymousClass6, c) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            } else if (i == 3) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            return Unit.INSTANCE;
         }
 
         @Override // kotlinx.coroutines.flow.FlowCollector
@@ -639,12 +705,180 @@ public final class RetroAchievementsManager {
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r40) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 786
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.retro_achievements.v2.RetroAchievementsManager.AnonymousClass1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            PlatformEntity platformByIdStatically;
+            List<Long> retroAchievementsConsoleIdList;
+            FlowCollector flowCollector;
+            Iterator it;
+            RetroAchievementsManager retroAchievementsManager;
+            List<String> mutableList;
+            Ref.ObjectRef objectRef;
+            Ref.FloatRef floatRef;
+            RetroAchievementsManager retroAchievementsManager2;
+            int i;
+            Long l;
+            long null_game_id;
+            long jLongValue;
+            float size;
+            String str;
+            int length;
+            String strReplace$default;
+            String name;
+            long id2;
+            float f;
+            float ranking;
+            Flow flowRetry$default;
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i2 = this.label;
+            if (i2 != 0) {
+                if (i2 == 1 || i2 == 2 || i2 == 3) {
+                    ResultKt.throwOnFailure(obj);
+                    return Unit.INSTANCE;
+                }
+                if (i2 == 4) {
+                    it = (Iterator) this.L$3;
+                    retroAchievementsManager = (RetroAchievementsManager) this.L$2;
+                    retroAchievementsConsoleIdList = (List) this.L$1;
+                    flowCollector = (FlowCollector) this.L$0;
+                    ResultKt.throwOnFailure(obj);
+                    while (it.hasNext()) {
+                        flowRetry$default = FlowKt.retry$default(retroAchievementsManager.getRetroAchievementsGameListByConsoleId(((Number) it.next()).longValue()), 3L, null, 2, null);
+                        this.L$0 = flowCollector;
+                        this.L$1 = retroAchievementsConsoleIdList;
+                        this.L$2 = retroAchievementsManager;
+                        this.L$3 = it;
+                        this.label = 4;
+                        if (FlowKt.collect(flowRetry$default, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    }
+                } else if (i2 == 5) {
+                    ResultKt.throwOnFailure(obj);
+                    return Unit.INSTANCE;
+                } else {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+            } else {
+                ResultKt.throwOnFailure(obj);
+                FlowCollector flowCollector2 = (FlowCollector) this.L$0;
+                RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity surjection = RetroAchievementsManager.this.getRetroAchievementsRepository().getRetroAchievementsCachedPlayableItemIdToGameIdSurjectionByPlayableItemIdStatically(this.$playableItemEntity.getId());
+                if (surjection != null) {
+                    if (surjection.isPermanent()) {
+                        this.label = 1;
+                        if (flowCollector2.emit(surjection, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    }
+                    Date lastUpdatedTimestamp = surjection.getLastUpdatedTimestamp();
+                    Long lBoxLong = lastUpdatedTimestamp != null ? Boxing.boxLong(lastUpdatedTimestamp.getTime()) : null;
+                    if (lBoxLong != null && lBoxLong.longValue() + ((long) RetroAchievementsConfiguration.PLAYABLE_ITEM_ID_TO_GAME_ID_SURJECTION_EXPIRE_DURATION_MS) > System.currentTimeMillis()) {
+                        this.label = 2;
+                        if (flowCollector2.emit(surjection, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    }
+                }
+                DaijishouLibraryRepository daijishouLibraryRepository = RetroAchievementsManager.this.getApplication().getDaijishouLibraryRepository();
+                Long attachedPlatformId = this.$playableItemEntity.getAttachedPlatformId();
+                Intrinsics.checkNotNull(attachedPlatformId);
+                platformByIdStatically = daijishouLibraryRepository.getPlatformByIdStatically(attachedPlatformId.longValue());
+                if (platformByIdStatically == null) {
+                    throw new NullPointerException("Couldn't retrieve platform entity for the platform ID `" + this.$playableItemEntity.getAttachedPlatformId() + "`");
+                }
+                retroAchievementsConsoleIdList = platformByIdStatically.getRetroAchievementsConsoleIdList();
+                if (retroAchievementsConsoleIdList.isEmpty()) {
+                    this.label = 3;
+                    if (flowCollector2.emit(Boxing.boxBoolean(false), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                }
+                retroAchievementsManager = RetroAchievementsManager.this;
+                flowCollector = flowCollector2;
+                it = retroAchievementsConsoleIdList.iterator();
+                while (it.hasNext()) {
+                    flowRetry$default = FlowKt.retry$default(retroAchievementsManager.getRetroAchievementsGameListByConsoleId(((Number) it.next()).longValue()), 3L, null, 2, null);
+                    this.L$0 = flowCollector;
+                    this.L$1 = retroAchievementsConsoleIdList;
+                    this.L$2 = retroAchievementsManager;
+                    this.L$3 = it;
+                    this.label = 4;
+                    if (FlowKt.collect(flowRetry$default, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+            }
+            mutableList = CollectionsKt.toMutableList((Collection) this.$playableItemEntity.getScraperKeywordList());
+            for (String str3 : this.$playableItemEntity.getScraperKeywordList()) {
+                if (StringsKt.contains$default((CharSequence) str3, (CharSequence) " - ", false, 2, (Object) null)) {
+                    mutableList.add(StringsKt.replace$default(str3, " - ", "", false, 4, (Object) null));
+                } else if (StringsKt.contains$default((CharSequence) str3, (CharSequence) ": ", false, 2, (Object) null)) {
+                    mutableList.add(StringsKt.replace$default(str3, ": ", " ", false, 4, (Object) null));
+                }
+            }
+            objectRef = new Ref.ObjectRef();
+            floatRef = new Ref.FloatRef();
+            retroAchievementsManager2 = RetroAchievementsManager.this;
+            i = 0;
+            for (Object obj2 : retroAchievementsConsoleIdList) {
+                int i5 = i + 1;
+                if (i < 0) {
+                    CollectionsKt.throwIndexOverflow();
+                }
+                jLongValue = ((Number) obj2).longValue();
+                size = (retroAchievementsConsoleIdList.size() - i) - 1.0f;
+                for (String str4 : mutableList) {
+                    String[] strArr = new String[] { "&" };
+                    str = "";
+                    length = 0;
+                    for (Object str5Obj : (Iterable) StringsKt.split$default((CharSequence) str4, strArr, false, 0, 6, (Object) null)) {
+                        String str5 = (String) str5Obj;
+                        if (str5.length() > length) {
+                            length = str5.length();
+                            str = str5;
+                        }
+                    }
+                    strReplace$default = StringsKt.replace$default(str, " - ", ": ", false, 4, (Object) null);
+                    for (Object itemObj : (Iterable) RetroAchievementsRepository.searchRetroAchievementsUserIndependentGameRecordByKeywordAndConsoleId$default(retroAchievementsManager2.getRetroAchievementsRepository(), strReplace$default, jLongValue, 0, null, false, 28, null)) {
+                        RetroAchievementsRepository.RetroAchievementsUserIndependentGameRecordSearchItem item = (RetroAchievementsRepository.RetroAchievementsUserIndependentGameRecordSearchItem) itemObj;
+                        RetroAchievementsUserIndependentGameRecordEntity entity = item.getRetroAchievementsUserIndependentGameRecordEntity();
+                        name = entity.getName();
+                        id2 = entity.getId();
+                        f = size;
+                        if (name != null) {
+                            if (Intrinsics.areEqual(retroAchievementsManager2.toGenericNameExtreme(name), retroAchievementsManager2.toGenericNameExtreme(strReplace$default))) {
+                                f = 1.0f + size;
+                            }
+                        }
+                        ranking = f + (item.getRanking() / item.getMaxRanking()) + (item.getMatchCount() / item.getMaxMatchCount());
+                        if (objectRef.element == null || ranking > floatRef.element) {
+                            floatRef.element = ranking;
+                            objectRef.element = Boxing.boxLong(id2);
+                        }
+                    }
+                }
+                i = i5;
+            }
+            RetroAchievementsRepository retroAchievementsRepository = RetroAchievementsManager.this.getRetroAchievementsRepository();
+            long id3 = this.$playableItemEntity.getId();
+            l = (Long) objectRef.element;
+            if (l != null) {
+                null_game_id = l.longValue();
+            } else {
+                null_game_id = RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity.INSTANCE.getNULL_GAME_ID();
+            }
+            retroAchievementsRepository.addRetroAchievementsCachedPlayableItemIdToGameIdSurjection(new RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity(0L, false, id3, null_game_id, new Date(), 3, null));
+            this.L$0 = null;
+            this.L$1 = null;
+            this.L$2 = null;
+            this.L$3 = null;
+            this.label = 5;
+            if (flowCollector.emit(Boxing.boxBoolean(true), this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
         }
     }
 
@@ -713,12 +947,131 @@ public final class RetroAchievementsManager {
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r25) throws java.lang.Exception {
-            /*
-                Method dump skipped, instruction units count: 656
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.retro_achievements.v2.RetroAchievementsManager.C02681.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            FlowCollector flowCollector;
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                flowCollector = (FlowCollector) this.L$0;
+                List<RetroAchievementsUserIndependentGameRecordEntity> existing = (List) RetroAchievementsManager.this.getRetroAchievementsRepository().getRetroAchievementsUserIndependentGameRecordsByConsoleId(this.$consoleId).getValue();
+                if (existing != null && !existing.isEmpty()) {
+                    RetroAchievementsUserIndependentGameRecordEntity first = (RetroAchievementsUserIndependentGameRecordEntity) CollectionsKt.first(existing);
+                    Date lastUpdated = first.getLastUpdatedTimestamp();
+                    if (lastUpdated != null && lastUpdated.getTime() + 691200000L > System.currentTimeMillis()) {
+                        this.label = 1;
+                        if (flowCollector.emit(existing, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    }
+                }
+                RetroInterface retro = RetroAchievementsManager.this.getRetroAchievementsInterface();
+                if (retro == null || !RetroAchievementsManager.this.refreshingConsoleIds.add(Boxing.boxLong(this.$consoleId))) {
+                    return Unit.INSTANCE;
+                }
+                try {
+                    this.L$0 = flowCollector;
+                    this.L$1 = retro;
+                    this.label = 2;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new C00641(RetroAchievementsManager.this, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    this.L$0 = flowCollector;
+                    this.L$1 = null;
+                    this.label = 3;
+                    obj = RetroInterface.DefaultImpls.getGameList$default(retro, this.$consoleId, 0, 0, 0, 0, this, 30, null);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } catch (Throwable th) {
+                    BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(RetroAchievementsManager.this, this.$consoleId, null), this);
+                    throw th;
+                }
+            } else if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else if (i == 2) {
+                RetroInterface retro = (RetroInterface) this.L$1;
+                flowCollector = (FlowCollector) this.L$0;
+                try {
+                    ResultKt.throwOnFailure(obj);
+                    this.L$0 = flowCollector;
+                    this.L$1 = null;
+                    this.label = 3;
+                    obj = RetroInterface.DefaultImpls.getGameList$default(retro, this.$consoleId, 0, 0, 0, 0, this, 30, null);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } catch (Throwable th) {
+                    BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(RetroAchievementsManager.this, this.$consoleId, null), this);
+                    throw th;
+                }
+            } else if (i == 3) {
+                flowCollector = (FlowCollector) this.L$0;
+                try {
+                    ResultKt.throwOnFailure(obj);
+                } catch (Throwable th) {
+                    BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(RetroAchievementsManager.this, this.$consoleId, null), this);
+                    throw th;
+                }
+            } else if (i == 4) {
+                try {
+                    ResultKt.throwOnFailure(obj);
+                    BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(RetroAchievementsManager.this, this.$consoleId, null), this);
+                    return Unit.INSTANCE;
+                } catch (Throwable th) {
+                    BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(RetroAchievementsManager.this, this.$consoleId, null), this);
+                    throw th;
+                }
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            try {
+                Object responseResult = obj;
+                NetworkResponse networkResponse = (NetworkResponse) responseResult;
+                if (networkResponse instanceof NetworkResponse.Success) {
+                    org.retroachivements.api.data.pojo.system.GetGameList.Response response = (org.retroachivements.api.data.pojo.system.GetGameList.Response) ((NetworkResponse.Success) networkResponse).getBody();
+                    Date now = new Date();
+                    List<RetroAchievementsUserIndependentGameRecordEntity> list = new ArrayList<>(CollectionsKt.collectionSizeOrDefault(response, 10));
+                    for (org.retroachivements.api.data.pojo.system.GetGameList.Response.Game game : response) {
+                        RetroAchievementsUserIndependentGameRecordEntity entity = new RetroAchievementsUserIndependentGameRecordEntity(0L, null, null, null, null, null, null, 0, 0L, null, null, 2047, null);
+                        entity.setUrl("https://retroachievements.org/game/" + game.getId());
+                        String dateMod = game.getDateModified();
+                        entity.setDateModified(dateMod != null ? UtilsKt.toRetroAchievementsDate(dateMod) : null);
+                        entity.setAchievementsCount(game.getNumAchievements());
+                        entity.setForumTopicId(Boxing.boxLong(game.getForumTopicId()));
+                        entity.setConsoleName(game.getConsoleName());
+                        entity.setConsoleId(Boxing.boxLong(game.getConsoleId()));
+                        entity.setImageUrl(game.getImageIcon());
+                        entity.setPoints(game.getPoints());
+                        entity.setName(game.getTitle());
+                        entity.setId(game.getId());
+                        entity.setLastUpdatedTimestamp(now);
+                        list.add(entity);
+                    }
+                    RetroAchievementsManager.this.getRetroAchievementsRepository().deleteRetroAchievementsUserIndependentGameRecordsByConsoleId(this.$consoleId);
+                    RetroAchievementsManager.this.getRetroAchievementsRepository().addRetroAchievementsUserIndependentGameRecords(list.toArray(new RetroAchievementsUserIndependentGameRecordEntity[0]));
+                    this.L$0 = null;
+                    this.label = 4;
+                    if (flowCollector.emit(list, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } else if (networkResponse instanceof NetworkResponse.Error) {
+                    NetworkResponse.Error error = (NetworkResponse.Error) networkResponse;
+                    ErrorResponse errorResponse = (ErrorResponse) error.getBody();
+                    Throwable error2 = error.getError();
+                    if (errorResponse != null) {
+                        throw new IOException(errorResponse.getMessage());
+                    }
+                    throw new IOException("There was an internal error fetching `getRetroAchievementsGameListByConsoleId` for `" + this.$consoleId + "`", error2);
+                }
+                BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(RetroAchievementsManager.this, this.$consoleId, null), this);
+                return Unit.INSTANCE;
+            } catch (Throwable th) {
+                BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(RetroAchievementsManager.this, this.$consoleId, null), this);
+                throw th;
+            }
         }
 
         /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.v2.RetroAchievementsManager$getRetroAchievementsGameListByConsoleId$1$1, reason: invalid class name and collision with other inner class name */
@@ -893,12 +1246,173 @@ public final class RetroAchievementsManager {
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r39) throws java.lang.Exception {
-            /*
-                Method dump skipped, instruction units count: 1048
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.retro_achievements.v2.RetroAchievementsManager.C02691.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            FlowCollector flowCollector;
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                flowCollector = (FlowCollector) this.L$0;
+                RetroAchievementsGameRecordEntity record = RetroAchievementsManager.this.getRetroAchievementsRepository().getRetroAchievementsGameRecordByUserIdAndGameIdStatically(this.$username, this.$gameId);
+                if (record != null) {
+                    Date lastUpdated = record.getLastUpdatedTimestamp();
+                    Long lastUpdatedTime = lastUpdated != null ? Boxing.boxLong(lastUpdated.getTime()) : null;
+                    if (lastUpdatedTime != null && lastUpdatedTime.longValue() + 480000L > System.currentTimeMillis()) {
+                        this.label = 1;
+                        if (flowCollector.emit(record, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    }
+                }
+                RetroInterface retro = RetroAchievementsManager.this.getRetroAchievementsInterface();
+                if (retro == null || !RetroAchievementsManager.this.refreshingGameIds.add(Boxing.boxLong(this.$gameId))) {
+                    return Unit.INSTANCE;
+                }
+                try {
+                    this.L$0 = flowCollector;
+                    this.L$1 = retro;
+                    this.label = 2;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new C00651(RetroAchievementsManager.this, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    this.L$0 = flowCollector;
+                    this.L$1 = null;
+                    this.label = 3;
+                    obj = retro.getGameInfoAndUserProgress(this.$username, this.$gameId, 0, this);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } catch (Throwable th) {
+                    BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(RetroAchievementsManager.this, this.$gameId, null), this);
+                    throw th;
+                }
+            } else if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else if (i == 2) {
+                RetroInterface retro = (RetroInterface) this.L$1;
+                flowCollector = (FlowCollector) this.L$0;
+                try {
+                    ResultKt.throwOnFailure(obj);
+                    this.L$0 = flowCollector;
+                    this.L$1 = null;
+                    this.label = 3;
+                    obj = retro.getGameInfoAndUserProgress(this.$username, this.$gameId, 0, this);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } catch (Throwable th) {
+                    BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(RetroAchievementsManager.this, this.$gameId, null), this);
+                    throw th;
+                }
+            } else if (i == 3) {
+                flowCollector = (FlowCollector) this.L$0;
+                try {
+                    ResultKt.throwOnFailure(obj);
+                } catch (Throwable th) {
+                    BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(RetroAchievementsManager.this, this.$gameId, null), this);
+                    throw th;
+                }
+            } else if (i == 4) {
+                try {
+                    ResultKt.throwOnFailure(obj);
+                    BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(RetroAchievementsManager.this, this.$gameId, null), this);
+                    return Unit.INSTANCE;
+                } catch (Throwable th) {
+                    BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(RetroAchievementsManager.this, this.$gameId, null), this);
+                    throw th;
+                }
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            try {
+                Object responseResult = obj;
+                NetworkResponse networkResponse = (NetworkResponse) responseResult;
+                RetroAchievementsGameRecordEntity record = RetroAchievementsManager.this.getRetroAchievementsRepository().getRetroAchievementsGameRecordByUserIdAndGameIdStatically(this.$username, this.$gameId);
+                if (record == null) {
+                    record = new RetroAchievementsGameRecordEntity(0L, this.$username, this.$gameId, null, null, null, null, null, null, null, null, 0, 0, 0L, 0L, 0L, null, null, 0, 0, null, 2097145, null);
+                }
+                if (networkResponse instanceof NetworkResponse.Success) {
+                    org.retroachivements.api.data.pojo.game.GetGameInfoAndUserProgress.Response response = (org.retroachivements.api.data.pojo.game.GetGameInfoAndUserProgress.Response) ((NetworkResponse.Success) networkResponse).getBody();
+                    record.setImageUrl("https://retroachievements.org" + response.getImageIcon());
+                    record.setUrl("https://retroachievements.org/game/" + response.getId());
+                    record.setDistinctPlayerCount(response.getNumDistinctPlayers());
+                    record.setAchievementsCount(response.getNumAchievements());
+                    record.setTotalPlayerCount(response.getPlayersTotal());
+                    record.setConsoleId(Boxing.boxLong(response.getConsoleId()));
+                    record.setForumTopicId(Boxing.boxInt(response.getForumTopicId()));
+                    record.setConsoleName(response.getConsoleName());
+                    record.setGameId(response.getId());
+                    record.setGuideUrl(response.getGuideUrl());
+                    record.setName(response.getTitle());
+                    record.setUnlockedAchievementsCount(0);
+                    record.setLastUpdatedTimestamp(new Date());
+
+                    if (record.getId() == 0) {
+                        long id = RetroAchievementsManager.this.getRetroAchievementsRepository().addRetroAchievementsGameRecord(record);
+                        record.setId(id);
+                    }
+
+                    Map<String, org.retroachivements.api.data.pojo.game.GetGameInfoAndUserProgress.Response.Achievement> achievementsMap = response.getAchievements();
+                    if (achievementsMap != null) {
+                        List<org.retroachivements.api.data.pojo.game.GetGameInfoAndUserProgress.Response.Achievement> sortedAchievements = CollectionsKt.sortedWith(achievementsMap.values(), new RetroAchievementsManager$getRetroAchievementsGameRecordByGameId$1$invokeSuspend$lambda$3$$inlined$sortedBy$1());
+                        List<RetroAchievementsAchievementRecordEntity> achievementEntities = new ArrayList<>(CollectionsKt.collectionSizeOrDefault(sortedAchievements, 10));
+                        for (org.retroachivements.api.data.pojo.game.GetGameInfoAndUserProgress.Response.Achievement ach : sortedAchievements) {
+                            long achId = Long.parseLong(ach.getId());
+                            RetroAchievementsAchievementRecordEntity entity = new RetroAchievementsAchievementRecordEntity(0L, achId, 0L, null, null, 0, null, null, null, null, 0.0f, 0, 0L, 0L, false, false, null, 131049, null);
+                            entity.setImageUrl("https://media.retroachievements.org/Badge/" + ach.getBadgeName() + ".png");
+                            entity.setUrl("https://retroachievements.org/achievement/" + ach.getId());
+                            entity.setUnlockedHardcorePlayerCount(ach.getNumAwardedHardcore());
+                            entity.setUnlockedPlayerCount(ach.getNumAwarded());
+                            entity.setDescription(ach.getDescription());
+                            entity.setPoints((int) ach.getPoints());
+                            entity.setName(ach.getTitle());
+                            entity.setUserId(this.$username);
+                            entity.setGameId(Boxing.boxLong(this.$gameId));
+                            if (ach.getDateEarned() != null) {
+                                entity.setUnlockedTimestamp(UtilsKt.toRetroAchievementsDate(ach.getDateEarned()));
+                                entity.setUnlocked(true);
+                            } else {
+                                entity.setUnlocked(false);
+                            }
+                            if (ach.getDateEarnedHardcore() != null) {
+                                entity.setUnlockedTimestamp(UtilsKt.toRetroAchievementsDate(ach.getDateEarnedHardcore()));
+                                entity.setHardcoreUnlocked(true);
+                                entity.setUnlocked(true);
+                            } else {
+                                entity.setHardcoreUnlocked(false);
+                            }
+                            if (entity.isUnlocked()) {
+                                record.setUnlockedAchievementsCount(record.getUnlockedAchievementsCount() + 1);
+                            }
+                            achievementEntities.add(entity);
+                        }
+                        if (!achievementEntities.isEmpty()) {
+                            RetroAchievementsManager.this.getRetroAchievementsRepository().addRetroAchievementsAchievementRecords(achievementEntities.toArray(new RetroAchievementsAchievementRecordEntity[0]));
+                        }
+                    }
+                    RetroAchievementsManager.this.getRetroAchievementsRepository().updateRetroAchievementsGameRecord(record);
+                } else if (networkResponse instanceof NetworkResponse.Error) {
+                    NetworkResponse.Error error = (NetworkResponse.Error) networkResponse;
+                    ErrorResponse errorResponse = (ErrorResponse) error.getBody();
+                    Throwable error2 = error.getError();
+                    if (errorResponse != null) {
+                        throw new IOException(errorResponse.getMessage());
+                    }
+                    throw new IOException("There was an internal error fetching `getRetroAchievementsGameRecordByGameId` for `" + this.$gameId + "`", error2);
+                }
+                this.L$0 = null;
+                this.label = 4;
+                if (flowCollector.emit(record, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(RetroAchievementsManager.this, this.$gameId, null), this);
+                return Unit.INSTANCE;
+            } catch (Throwable th) {
+                BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(RetroAchievementsManager.this, this.$gameId, null), this);
+                throw th;
+            }
         }
 
         /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.v2.RetroAchievementsManager$getRetroAchievementsGameRecordByGameId$1$1, reason: invalid class name and collision with other inner class name */
@@ -1139,12 +1653,66 @@ public final class RetroAchievementsManager {
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r40) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 336
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.retro_achievements.v2.RetroAchievementsManager.C02721.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            FlowCollector flowCollector;
+            HashSet<RetroAchievementsGameRecordEntity> hashSet;
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                flowCollector = (FlowCollector) this.L$0;
+                hashSet = new HashSet<>();
+                this.L$0 = flowCollector;
+                this.L$1 = hashSet;
+                this.label = 1;
+                obj = RetroInterface.DefaultImpls.getUserRecentlyPlayedGames$default(this.$retroInterface, this.$username, 20, 0, this, 4, null);
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else if (i == 1) {
+                hashSet = (HashSet) this.L$1;
+                flowCollector = (FlowCollector) this.L$0;
+                ResultKt.throwOnFailure(obj);
+            } else if (i == 2) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            NetworkResponse networkResponse = (NetworkResponse) obj;
+            if (networkResponse instanceof NetworkResponse.Success) {
+                org.retroachivements.api.data.pojo.user.GetUserRecentlyPlayedGames.Response response = (org.retroachivements.api.data.pojo.user.GetUserRecentlyPlayedGames.Response) ((NetworkResponse.Success) networkResponse).getBody();
+                RetroAchievementsManager retroAchievementsManager = this.this$0;
+                String str = this.$username;
+                for (org.retroachivements.api.data.pojo.user.GetUserRecentlyPlayedGames.Response.Game game : response) {
+                    RetroAchievementsGameRecordEntity record = retroAchievementsManager.getRetroAchievementsRepository().getRetroAchievementsGameRecordByUserIdAndGameIdStatically(str, game.getGameId());
+                    if (record == null) {
+                        record = new RetroAchievementsGameRecordEntity(0L, str, game.getGameId(), null, null, null, null, null, null, null, null, 0, 0, 0L, 0L, 0L, null, null, 0, 0, null, 2097145, null);
+                    }
+                    record.setName(game.getTitle());
+                    record.setImageUrl(RetroAchievementsConfiguration.BASE_URL + game.getImageIcon());
+                    record.setConsoleId(Boxing.boxLong(game.getConsoleId()));
+                    record.setConsoleName(game.getConsoleName());
+                    record.setAchievementsCount((int) game.getAchievementsTotal());
+                    record.setUnlockedAchievementsCount((int) game.getNumAchievedHardcore());
+                    hashSet.add(record);
+                }
+            } else if (networkResponse instanceof NetworkResponse.Error) {
+                NetworkResponse.Error error = (NetworkResponse.Error) networkResponse;
+                ErrorResponse errorResponse = (ErrorResponse) error.getBody();
+                Throwable error2 = error.getError();
+                if (errorResponse != null) {
+                    throw new IOException(errorResponse.getMessage());
+                }
+                throw new IOException("There was an internal error fetching the user's recent games for `" + this.$username + "`", error2);
+            }
+            this.L$0 = null;
+            this.L$1 = null;
+            this.label = 2;
+            if (flowCollector.emit(hashSet, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
         }
     }
 
@@ -1209,12 +1777,72 @@ public final class RetroAchievementsManager {
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r23) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 349
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.retro_achievements.v2.RetroAchievementsManager.C02701.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            FlowCollector flowCollector;
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                flowCollector = (FlowCollector) this.L$0;
+                RetroAchievementsUserProfileEntity profile = RetroAchievementsManager.this.getRetroAchievementsRepository().getRetroAchievementsUserProfileByIdStatically(this.$username);
+                if (profile != null) {
+                    Date lastUpdatedTimestamp = profile.getLastUpdatedTimestamp();
+                    Long lastUpdated = lastUpdatedTimestamp != null ? Boxing.boxLong(lastUpdatedTimestamp.getTime()) : null;
+                    if (lastUpdated != null && lastUpdated.longValue() + 480000L > System.currentTimeMillis()) {
+                        this.label = 1;
+                        if (flowCollector.emit(profile, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    }
+                }
+                this.L$0 = flowCollector;
+                this.label = 2;
+                obj = this.$retroInterface.getUserProfile(this.$username, this);
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else if (i == 2) {
+                flowCollector = (FlowCollector) this.L$0;
+                ResultKt.throwOnFailure(obj);
+            } else if (i == 3) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            NetworkResponse networkResponse = (NetworkResponse) obj;
+            RetroAchievementsUserProfileEntity profile = RetroAchievementsManager.this.getRetroAchievementsRepository().getRetroAchievementsUserProfileByIdStatically(this.$username);
+            if (profile == null) {
+                profile = new RetroAchievementsUserProfileEntity(this.$username, "https://retroachievements.org/user/" + this.$username, null, 0, 0, null, null, null, 0.0f, null, null, null, 4092, null);
+            }
+            if (networkResponse instanceof NetworkResponse.Success) {
+                org.retroachivements.api.data.pojo.user.GetUserProfile.Response response = (org.retroachivements.api.data.pojo.user.GetUserProfile.Response) ((NetworkResponse.Success) networkResponse).getBody();
+                profile.setImageUrl("https://retroachievements.org" + response.getUserPic());
+                profile.setRichPresenceMsg(response.getRichPresenceMsg());
+                profile.setMotto(response.getMotto());
+                profile.setHardcorePoints(response.getTotalPoints());
+                profile.setSoftcorePoints(response.getTotalSoftcorePoints());
+            } else if (networkResponse instanceof NetworkResponse.Error) {
+                NetworkResponse.Error error = (NetworkResponse.Error) networkResponse;
+                ErrorResponse errorResponse = (ErrorResponse) error.getBody();
+                Throwable error2 = error.getError();
+                if (errorResponse != null) {
+                    throw new IOException(errorResponse.getMessage());
+                }
+                throw new IOException("There was an internal error fetching the user's profile for `" + this.$username + "`", error2);
+            }
+            profile.setLastUpdatedTimestamp(new Date());
+            RetroAchievementsManager.this.getRetroAchievementsRepository().addRetroAchievementsUserProfile(profile);
+            this.L$0 = null;
+            this.label = 3;
+            if (flowCollector.emit(profile, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
         }
     }
 
@@ -1279,12 +1907,107 @@ public final class RetroAchievementsManager {
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r29) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 548
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.retro_achievements.v2.RetroAchievementsManager.C02661.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            FlowCollector flowCollector;
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                flowCollector = (FlowCollector) this.L$0;
+                List<RetroAchievementsUserAwardEntity> existingAwards = RetroAchievementsManager.this.getRetroAchievementsRepository().getRetroAchievementsUserAwardsByUserIdStatically(this.$username);
+                if (existingAwards != null && !existingAwards.isEmpty()) {
+                    RetroAchievementsUserAwardEntity first = (RetroAchievementsUserAwardEntity) CollectionsKt.getOrNull(existingAwards, 0);
+                    Date lastUpdated = first != null ? first.getLastUpdatedTimestamp() : null;
+                    Long lastUpdatedTime = lastUpdated != null ? Boxing.boxLong(lastUpdated.getTime()) : null;
+                    if (lastUpdatedTime != null && lastUpdatedTime.longValue() + 480000L > System.currentTimeMillis()) {
+                        this.label = 1;
+                        if (flowCollector.emit(existingAwards, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    }
+                }
+                RetroInterface retro = RetroAchievementsManager.this.getRetroAchievementsInterface();
+                if (retro == null || !RetroAchievementsManager.this.refreshingAwards.add(this.$username)) {
+                    return Unit.INSTANCE;
+                }
+                try {
+                    this.L$0 = flowCollector;
+                    this.label = 3;
+                    obj = retro.getUserAwards(this.$username, this);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } catch (Throwable th) {
+                    RetroAchievementsManager.this.refreshingAwards.remove(this.$username);
+                    throw th;
+                }
+            } else if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else if (i == 3) {
+                flowCollector = (FlowCollector) this.L$0;
+                try {
+                    ResultKt.throwOnFailure(obj);
+                } catch (Throwable th) {
+                    RetroAchievementsManager.this.refreshingAwards.remove(this.$username);
+                    throw th;
+                }
+            } else if (i == 4) {
+                try {
+                    ResultKt.throwOnFailure(obj);
+                    RetroAchievementsManager.this.refreshingAwards.remove(this.$username);
+                    return Unit.INSTANCE;
+                } catch (Throwable th) {
+                    RetroAchievementsManager.this.refreshingAwards.remove(this.$username);
+                    throw th;
+                }
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            try {
+                Object responseResult = obj;
+                NetworkResponse networkResponse = (NetworkResponse) responseResult;
+                if (networkResponse instanceof NetworkResponse.Success) {
+                    org.retroachivements.api.data.pojo.user.GetUserAwards.Response response = (org.retroachivements.api.data.pojo.user.GetUserAwards.Response) ((NetworkResponse.Success) networkResponse).getBody();
+                    Date now = new Date();
+                    ArrayList<org.retroachivements.api.data.pojo.user.GetUserAwards.Response.Award> awards = response.getVisibleUserAwards();
+                    List<RetroAchievementsUserAwardEntity> entityList = new ArrayList<>(CollectionsKt.collectionSizeOrDefault(awards, 10));
+                    for (org.retroachivements.api.data.pojo.user.GetUserAwards.Response.Award award : awards) {
+                        RetroAchievementsUserAwardEntity entity = new RetroAchievementsUserAwardEntity(0L, this.$username, award.getAwardType(), award.getAwardData(), null, null, 0, null, null, null, null, null, null, 8177, null);
+                        entity.setImageUrl("https://retroachievements.org" + award.getImageIcon());
+                        entity.setAwardedAt(UtilsKt.toRetroAchievementsDate(award.getAwardedAt()));
+                        entity.setAwardDataExtra(Boxing.boxInt(award.getAwardDataExtra()));
+                        entity.setDisplayOrder(award.getDisplayOrder());
+                        entity.setConsoleName(award.getConsoleName());
+                        entity.setConsoleId(Boxing.boxLong(award.getConsoleId()));
+                        entity.setTitle(award.getTitle());
+                        entity.setFlags(Boxing.boxInt(award.getFlags()));
+                        entity.setLastUpdatedTimestamp(now);
+                        entityList.add(entity);
+                    }
+                    RetroAchievementsManager.this.getRetroAchievementsRepository().deleteRetroAchievementsUserAwardByUserId(this.$username);
+                    RetroAchievementsManager.this.getRetroAchievementsRepository().addRetroAchievementsUserAwards(entityList.toArray(new RetroAchievementsUserAwardEntity[0]));
+                    this.L$0 = null;
+                    this.label = 4;
+                    if (flowCollector.emit(entityList, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } else if (networkResponse instanceof NetworkResponse.Error) {
+                    NetworkResponse.Error error = (NetworkResponse.Error) networkResponse;
+                    ErrorResponse errorResponse = (ErrorResponse) error.getBody();
+                    Throwable error2 = error.getError();
+                    if (errorResponse != null) {
+                        throw new IOException(errorResponse.getMessage());
+                    }
+                    throw new IOException(error2);
+                }
+                RetroAchievementsManager.this.refreshingAwards.remove(this.$username);
+                return Unit.INSTANCE;
+            } catch (Throwable th) {
+                RetroAchievementsManager.this.refreshingAwards.remove(this.$username);
+                throw th;
+            }
         }
     }
 
@@ -1344,12 +2067,63 @@ public final class RetroAchievementsManager {
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r19) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 292
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.retro_achievements.v2.RetroAchievementsManager.C02671.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            FlowCollector flowCollector;
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                flowCollector = (FlowCollector) this.L$0;
+                if (!RetroAchievementsManager.this.consoles.isEmpty()) {
+                    this.label = 1;
+                    if (flowCollector.emit(RetroAchievementsManager.this.consoles, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                }
+                RetroInterface retro = RetroAchievementsManager.this.getRetroAchievementsInterface();
+                if (retro == null) {
+                    throw new IOException("Failed to retrieve the Retro Achievements interface.");
+                }
+                this.L$0 = flowCollector;
+                this.label = 2;
+                obj = RetroInterface.DefaultImpls.getConsoleIds$default(retro, 0, 0, this, 3, null);
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else if (i == 2) {
+                flowCollector = (FlowCollector) this.L$0;
+                ResultKt.throwOnFailure(obj);
+            } else if (i == 3) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            NetworkResponse networkResponse = (NetworkResponse) obj;
+            if (networkResponse instanceof NetworkResponse.Success) {
+                Iterable<org.retroachivements.api.data.pojo.system.GetConsoleID.Response.Console> consolesIterable = (Iterable<org.retroachivements.api.data.pojo.system.GetConsoleID.Response.Console>) ((NetworkResponse.Success) networkResponse).getBody();
+                Map<Long, RetroAchievementsConsole> map = new LinkedHashMap<>(RangesKt.coerceAtLeast(MapsKt.mapCapacity(CollectionsKt.collectionSizeOrDefault(consolesIterable, 10)), 16));
+                for (org.retroachivements.api.data.pojo.system.GetConsoleID.Response.Console c : consolesIterable) {
+                    map.put(Boxing.boxLong(c.getId()), new RetroAchievementsConsole(c.getId(), c.getName(), c.getIconUrl(), false, false));
+                }
+                RetroAchievementsManager.this.consoles.putAll(map);
+                this.L$0 = null;
+                this.label = 3;
+                if (flowCollector.emit(RetroAchievementsManager.this.consoles, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            }
+            NetworkResponse.Error error = (NetworkResponse.Error) networkResponse;
+            ErrorResponse errorResponse = (ErrorResponse) error.getBody();
+            if (errorResponse != null) {
+                throw new IOException(errorResponse.getMessage());
+            }
+            throw new IOException(error.getError());
         }
     }
 
