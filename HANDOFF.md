@@ -10,9 +10,9 @@ Lista de trabalho do próximo passo: **`build_tmp/PORT_PLAN.md`**.
 
 - O build atual **funciona** e foi comparado tela a tela com o build de referência em dois AVDs
   (mesmos bounds de UI, mesmos textos, mesmos logs nos caminhos de erro).
-- O que falta **não é comportamento**: é **autossuficiência da árvore**. 38 classes em 10
+- O que falta **não é comportamento**: é **autossuficiência da árvore**. 35 classes em 9
   arquivos Java ainda são substituídas pelo código de referência dentro do pipeline
-  (**51.778 linhas de smali** a portar). Todo o resto do app (1.429 arquivos) já é Java real.
+  (**50.755 linhas de smali** a portar). Todo o resto do app (1.430 arquivos) já é Java real.
 - Objetivo: **P0** eliminar essa dependência → **P1** gates de fidelidade → **P2** cobertura de
   testes. **Sem conversão para Kotlin** (decisão de escopo): a réplica é funcional, em Java.
 - Recursos Android (`res/`, `assets/`, `AndroidManifest.xml`, `resources.arsc`) já são
@@ -60,8 +60,8 @@ Ferramentas e método:
 | Smali textualmente igual ao ORIG | 9 classes |
 | Classes com nome JADX (`$AnonymousClassN` ou `$Cn`) | **722** |
 | Lambdas sintéticas geradas (`$$ExternalSyntheticLambda`) | 347 |
-| Classes substituídas inteiras pelo pipeline | **38** (em 10 arquivos Java) |
-| Smali ORIG a portar | **51.778 linhas** |
+| Classes substituídas inteiras pelo pipeline | **35** (em 9 arquivos Java) |
+| Smali ORIG a portar | **50.755 linhas** |
 | Ocorrências de stub no Java | 186 (116 são guardas do compilador Kotlin; **70 corpos reais**) |
 | Stubs no dex final | 116 métodos / 9 classes |
 | Stubs no dex de referência | 116 métodos / 9 classes — **conjunto idêntico (0 diferença)** |
