@@ -1,5 +1,6 @@
 package com.magneticchen.daijishou.google_drive;
 
+import android.content.Context;
 import android.content.Intent;
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultLauncher;
@@ -17,6 +18,8 @@ import com.google.android.gms.common.api.Scope;
 import com.google.api.client.googleapis.batch.BatchRequest;
 import com.google.api.client.googleapis.extensions.android.gms.auth.GoogleAccountCredential;
 import com.google.api.client.http.InputStreamContent;
+import com.google.api.client.http.javanet.NetHttpTransport;
+import com.google.api.client.json.gson.GsonFactory;
 import com.google.api.services.drive.Drive;
 import com.google.api.services.drive.model.File;
 import com.google.api.services.drive.model.FileList;
@@ -46,6 +49,7 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
+import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.CoroutineScopeKt;
@@ -581,134 +585,178 @@ public final class GoogleDrive {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object requestSignIn(boolean r8, kotlin.coroutines.Continuation<?> r9) throws java.lang.Throwable {
-        /*
-            r7 = this;
-            boolean r0 = r9 instanceof com.magneticchen.daijishou.google_drive.GoogleDrive.C02421
-            if (r0 == 0) goto L14
-            r0 = r9
-            com.magneticchen.daijishou.google_drive.GoogleDrive$requestSignIn$1 r0 = (com.magneticchen.daijishou.google_drive.GoogleDrive.C02421) r0
-            int r1 = r0.label
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r1 = r1 & r2
-            if (r1 == 0) goto L14
-            int r9 = r0.label
-            int r9 = r9 - r2
-            r0.label = r9
-            goto L19
-        L14:
-            com.magneticchen.daijishou.google_drive.GoogleDrive$requestSignIn$1 r0 = new com.magneticchen.daijishou.google_drive.GoogleDrive$requestSignIn$1
-            r0.<init>(r9)
-        L19:
-            java.lang.Object r9 = r0.result
-            java.lang.Object r1 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r2 = r0.label
-            r3 = 3
-            r4 = 2
-            r5 = 1
-            r6 = 0
-            if (r2 == 0) goto L50
-            if (r2 == r5) goto L44
-            if (r2 == r4) goto L3a
-            if (r2 != r3) goto L32
-            kotlin.ResultKt.throwOnFailure(r9)
-            goto L9e
-        L32:
-            java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
-            java.lang.String r9 = "call to 'resume' before 'invoke' with coroutine"
-            r8.<init>(r9)
-            throw r8
-        L3a:
-            java.lang.Object r8 = r0.L$0
-            kotlinx.coroutines.sync.Mutex r8 = (kotlinx.coroutines.sync.Mutex) r8
-            kotlin.ResultKt.throwOnFailure(r9)     // Catch: java.lang.Throwable -> L42
-            goto L89
-        L42:
-            r9 = move-exception
-            goto L91
-        L44:
-            java.lang.Object r8 = r0.L$1
-            kotlinx.coroutines.sync.Mutex r8 = (kotlinx.coroutines.sync.Mutex) r8
-            java.lang.Object r2 = r0.L$0
-            com.magneticchen.daijishou.google_drive.GoogleDrive r2 = (com.magneticchen.daijishou.google_drive.GoogleDrive) r2
-            kotlin.ResultKt.throwOnFailure(r9)
-            goto L7c
-        L50:
-            kotlin.ResultKt.throwOnFailure(r9)
-            boolean r9 = r7.hasSignedIn
-            if (r9 == 0) goto L6a
-            com.magneticchen.daijishou.DaijishouApplication$WrappedLogger r8 = r7.logger
-            if (r8 != 0) goto L61
-            java.lang.String r8 = "logger"
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r8)
-            goto L62
-        L61:
-            r6 = r8
-        L62:
-            java.lang.String r8 = "Already signed in, ignored request."
-            r6.debug(r7, r8)
-            kotlin.Unit r8 = kotlin.Unit.INSTANCE
-            return r8
-        L6a:
-            if (r8 == 0) goto L95
-            kotlinx.coroutines.sync.Mutex r8 = r7.driveOperationMutex
-            r0.L$0 = r7
-            r0.L$1 = r8
-            r0.label = r5
-            java.lang.Object r9 = r8.lock(r6, r0)
-            if (r9 != r1) goto L7b
-            goto L9d
-        L7b:
-            r2 = r7
-        L7c:
-            r0.L$0 = r8     // Catch: java.lang.Throwable -> L42
-            r0.L$1 = r6     // Catch: java.lang.Throwable -> L42
-            r0.label = r4     // Catch: java.lang.Throwable -> L42
-            java.lang.Object r9 = requestSignIn$runIt(r2, r0)     // Catch: java.lang.Throwable -> L42
-            if (r9 != r1) goto L89
-            goto L9d
-        L89:
-            kotlin.Unit r9 = kotlin.Unit.INSTANCE     // Catch: java.lang.Throwable -> L42
-            r8.unlock(r6)
-            kotlin.Unit r8 = kotlin.Unit.INSTANCE
-            return r8
-        L91:
-            r8.unlock(r6)
-            throw r9
-        L95:
-            r0.label = r3
-            java.lang.Object r8 = requestSignIn$runIt(r7, r0)
-            if (r8 != r1) goto L9e
-        L9d:
-            return r1
-        L9e:
-            kotlin.Unit r8 = kotlin.Unit.INSTANCE
-            return r8
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.google_drive.GoogleDrive.requestSignIn(boolean, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object requestSignIn(boolean z, Continuation<?> continuation) throws Throwable {
+        C02421 c02421;
+        if (continuation instanceof C02421) {
+            c02421 = (C02421) continuation;
+            if ((c02421.label & Integer.MIN_VALUE) != 0) {
+                c02421.label -= Integer.MIN_VALUE;
+            } else {
+                c02421 = new C02421(continuation);
+            }
+        } else {
+            c02421 = new C02421(continuation);
+        }
+        Object obj = c02421.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = c02421.label;
+        Mutex mutex;
+        GoogleDrive googleDrive;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            if (this.hasSignedIn) {
+                DaijishouApplication.WrappedLogger wrappedLogger = this.logger;
+                if (wrappedLogger == null) {
+                    Intrinsics.throwUninitializedPropertyAccessException("logger");
+                    wrappedLogger = null;
+                }
+                wrappedLogger.debug(this, "Already signed in, ignored request.");
+                return Unit.INSTANCE;
+            }
+            if (z) {
+                mutex = this.driveOperationMutex;
+                c02421.L$0 = this;
+                c02421.L$1 = mutex;
+                c02421.label = 1;
+                if (mutex.lock(null, c02421) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                googleDrive = this;
+            } else {
+                c02421.label = 3;
+                if (requestSignIn$runIt(this, c02421) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            }
+        } else if (i == 1) {
+            mutex = (Mutex) c02421.L$1;
+            googleDrive = (GoogleDrive) c02421.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            Mutex mutex2 = (Mutex) c02421.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                mutex2.unlock(null);
+                return Unit.INSTANCE;
+            } catch (Throwable th) {
+                mutex2.unlock(null);
+                throw th;
+            }
+        } else if (i == 3) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        c02421.L$0 = mutex;
+        c02421.L$1 = null;
+        c02421.label = 2;
+        try {
+            if (requestSignIn$runIt(googleDrive, c02421) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            mutex.unlock(null);
+            return Unit.INSTANCE;
+        } catch (Throwable th2) {
+            mutex.unlock(null);
+            throw th2;
+        }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:45:0x00d1 A[Catch: Exception -> 0x00d5, all -> 0x00fc, TRY_LEAVE, TryCatch #1 {Exception -> 0x00d5, blocks: (B:31:0x0091, B:33:0x009b, B:38:0x00af, B:40:0x00b3, B:41:0x00b7, B:43:0x00c0, B:44:0x00c4, B:45:0x00d1), top: B:63:0x0091, outer: #2 }] */
-    /* JADX WARN: Code duplicated, block: B:7:0x0016  */
-    /* JADX WARN: Code restructure failed: missing block: B:23:0x0068, code lost:
-    
-        if (kotlinx.coroutines.sync.Mutex.DefaultImpls.lock$default(r8, null, r1, 1, null) == r2) goto L29;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:28:0x007f, code lost:
-    
-        if (r8.lock(null, r1) == r2) goto L29;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public static final java.lang.Object requestSignIn$runIt(com.magneticchen.daijishou.google_drive.GoogleDrive r7, kotlin.coroutines.Continuation<?> r8) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 257
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.google_drive.GoogleDrive.requestSignIn$runIt(com.magneticchen.daijishou.google_drive.GoogleDrive, kotlin.coroutines.Continuation):java.lang.Object");
+    public static final Object requestSignIn$runIt(GoogleDrive googleDrive, Continuation<?> continuation) throws Throwable {
+        GoogleDrive$requestSignIn$runIt$1 googleDrive$requestSignIn$runIt$1;
+        if (continuation instanceof GoogleDrive$requestSignIn$runIt$1) {
+            googleDrive$requestSignIn$runIt$1 = (GoogleDrive$requestSignIn$runIt$1) continuation;
+            if ((googleDrive$requestSignIn$runIt$1.label & Integer.MIN_VALUE) != 0) {
+                googleDrive$requestSignIn$runIt$1.label -= Integer.MIN_VALUE;
+            } else {
+                googleDrive$requestSignIn$runIt$1 = new GoogleDrive$requestSignIn$runIt$1(continuation);
+            }
+        } else {
+            googleDrive$requestSignIn$runIt$1 = new GoogleDrive$requestSignIn$runIt$1(continuation);
+        }
+        Object obj = googleDrive$requestSignIn$runIt$1.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = googleDrive$requestSignIn$runIt$1.label;
+        Mutex mutex;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            if (!googleDrive.checkGooglePlayService()) {
+                return Unit.INSTANCE;
+            }
+            if (googleDrive.requestSignInMutex.isLocked()) {
+                googleDrive$requestSignIn$runIt$1.L$0 = googleDrive;
+                googleDrive$requestSignIn$runIt$1.label = 1;
+                if (Mutex.DefaultImpls.lock$default(googleDrive.requestSignInMutex, null, googleDrive$requestSignIn$runIt$1, 1, null) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                Mutex.DefaultImpls.unlock$default(googleDrive.requestSignInMutex, null, 1, null);
+                return Unit.INSTANCE;
+            }
+            mutex = googleDrive.requestSignInMutex;
+            googleDrive$requestSignIn$runIt$1.L$0 = googleDrive;
+            googleDrive$requestSignIn$runIt$1.L$1 = mutex;
+            googleDrive$requestSignIn$runIt$1.label = 2;
+            if (mutex.lock(null, googleDrive$requestSignIn$runIt$1) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else if (i == 1) {
+            googleDrive = (GoogleDrive) googleDrive$requestSignIn$runIt$1.L$0;
+            ResultKt.throwOnFailure(obj);
+            Mutex.DefaultImpls.unlock$default(googleDrive.requestSignInMutex, null, 1, null);
+            return Unit.INSTANCE;
+        } else if (i == 2) {
+            mutex = (Mutex) googleDrive$requestSignIn$runIt$1.L$1;
+            googleDrive = (GoogleDrive) googleDrive$requestSignIn$runIt$1.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        try {
+            GoogleSignInClient client = GoogleSignIn.getClient((Context) googleDrive.application, signInOptions);
+            Intrinsics.checkNotNullExpressionValue(client, "getClient(...)");
+            try {
+                GoogleSignInAccount lastSignedInAccount = GoogleSignIn.getLastSignedInAccount((Context) googleDrive.application);
+                if (lastSignedInAccount != null && GoogleSignIn.hasPermissions(lastSignedInAccount, (Scope[]) Arrays.copyOf(scopes, scopes.length))) {
+                    try {
+                        googleDrive.setupGoogleSignInAccount(lastSignedInAccount);
+                    } catch (Exception e) {
+                        DaijishouApplication.WrappedLogger wrappedLogger = googleDrive.logger;
+                        if (wrappedLogger == null) {
+                            Intrinsics.throwUninitializedPropertyAccessException("logger");
+                            wrappedLogger = null;
+                        }
+                        wrappedLogger.warn(googleDrive, "Google Drive sign in via LastSignedInAccount error.");
+                        DaijishouApplication.WrappedLogger wrappedLogger2 = googleDrive.logger;
+                        if (wrappedLogger2 == null) {
+                            Intrinsics.throwUninitializedPropertyAccessException("logger");
+                            wrappedLogger2 = null;
+                        }
+                        wrappedLogger2.error(googleDrive, ExceptionsKt.stackTraceToString(e));
+                        requestSignIn$runIt$lambda$0$signInViaGooglePlay(googleDrive, client);
+                    }
+                } else {
+                    requestSignIn$runIt$lambda$0$signInViaGooglePlay(googleDrive, client);
+                }
+            } catch (Exception e2) {
+                DaijishouApplication.WrappedLogger wrappedLogger3 = googleDrive.logger;
+                if (wrappedLogger3 == null) {
+                    Intrinsics.throwUninitializedPropertyAccessException("logger");
+                    wrappedLogger3 = null;
+                }
+                wrappedLogger3.warn(googleDrive, "Google Drive sign in error.");
+                DaijishouApplication.WrappedLogger wrappedLogger4 = googleDrive.logger;
+                if (wrappedLogger4 == null) {
+                    Intrinsics.throwUninitializedPropertyAccessException("logger");
+                    wrappedLogger4 = null;
+                }
+                wrappedLogger4.error(googleDrive, ExceptionsKt.stackTraceToString(e2));
+            }
+            return Unit.INSTANCE;
+        } finally {
+            mutex.unlock(null);
+        }
     }
 
     private static final void requestSignIn$runIt$lambda$0$signInViaGooglePlay(GoogleDrive googleDrive, GoogleSignInClient googleSignInClient) {
@@ -740,111 +788,83 @@ public final class GoogleDrive {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object requestSignOut(boolean r8, kotlin.coroutines.Continuation<?> r9) throws java.lang.Throwable {
-        /*
-            r7 = this;
-            boolean r0 = r9 instanceof com.magneticchen.daijishou.google_drive.GoogleDrive.C02431
-            if (r0 == 0) goto L14
-            r0 = r9
-            com.magneticchen.daijishou.google_drive.GoogleDrive$requestSignOut$1 r0 = (com.magneticchen.daijishou.google_drive.GoogleDrive.C02431) r0
-            int r1 = r0.label
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r1 = r1 & r2
-            if (r1 == 0) goto L14
-            int r9 = r0.label
-            int r9 = r9 - r2
-            r0.label = r9
-            goto L19
-        L14:
-            com.magneticchen.daijishou.google_drive.GoogleDrive$requestSignOut$1 r0 = new com.magneticchen.daijishou.google_drive.GoogleDrive$requestSignOut$1
-            r0.<init>(r9)
-        L19:
-            java.lang.Object r9 = r0.result
-            java.lang.Object r1 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r2 = r0.label
-            r3 = 3
-            r4 = 2
-            r5 = 1
-            r6 = 0
-            if (r2 == 0) goto L50
-            if (r2 == r5) goto L44
-            if (r2 == r4) goto L3a
-            if (r2 != r3) goto L32
-            kotlin.ResultKt.throwOnFailure(r9)
-            goto L9e
-        L32:
-            java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
-            java.lang.String r9 = "call to 'resume' before 'invoke' with coroutine"
-            r8.<init>(r9)
-            throw r8
-        L3a:
-            java.lang.Object r8 = r0.L$0
-            kotlinx.coroutines.sync.Mutex r8 = (kotlinx.coroutines.sync.Mutex) r8
-            kotlin.ResultKt.throwOnFailure(r9)     // Catch: java.lang.Throwable -> L42
-            goto L89
-        L42:
-            r9 = move-exception
-            goto L91
-        L44:
-            java.lang.Object r8 = r0.L$1
-            kotlinx.coroutines.sync.Mutex r8 = (kotlinx.coroutines.sync.Mutex) r8
-            java.lang.Object r2 = r0.L$0
-            com.magneticchen.daijishou.google_drive.GoogleDrive r2 = (com.magneticchen.daijishou.google_drive.GoogleDrive) r2
-            kotlin.ResultKt.throwOnFailure(r9)
-            goto L7c
-        L50:
-            kotlin.ResultKt.throwOnFailure(r9)
-            boolean r9 = r7.hasSignedIn
-            if (r9 != 0) goto L6a
-            com.magneticchen.daijishou.DaijishouApplication$WrappedLogger r8 = r7.logger
-            if (r8 != 0) goto L61
-            java.lang.String r8 = "logger"
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r8)
-            goto L62
-        L61:
-            r6 = r8
-        L62:
-            java.lang.String r8 = "Requested sign out but isSignedIn is false."
-            r6.warn(r7, r8)
-            kotlin.Unit r8 = kotlin.Unit.INSTANCE
-            return r8
-        L6a:
-            if (r8 == 0) goto L95
-            kotlinx.coroutines.sync.Mutex r8 = r7.driveOperationMutex
-            r0.L$0 = r7
-            r0.L$1 = r8
-            r0.label = r5
-            java.lang.Object r9 = r8.lock(r6, r0)
-            if (r9 != r1) goto L7b
-            goto L9d
-        L7b:
-            r2 = r7
-        L7c:
-            r0.L$0 = r8     // Catch: java.lang.Throwable -> L42
-            r0.L$1 = r6     // Catch: java.lang.Throwable -> L42
-            r0.label = r4     // Catch: java.lang.Throwable -> L42
-            java.lang.Object r9 = requestSignOut$runIt$2(r2, r0)     // Catch: java.lang.Throwable -> L42
-            if (r9 != r1) goto L89
-            goto L9d
-        L89:
-            kotlin.Unit r9 = kotlin.Unit.INSTANCE     // Catch: java.lang.Throwable -> L42
-            r8.unlock(r6)
-            kotlin.Unit r8 = kotlin.Unit.INSTANCE
-            return r8
-        L91:
-            r8.unlock(r6)
-            throw r9
-        L95:
-            r0.label = r3
-            java.lang.Object r8 = requestSignOut$runIt$2(r7, r0)
-            if (r8 != r1) goto L9e
-        L9d:
-            return r1
-        L9e:
-            kotlin.Unit r8 = kotlin.Unit.INSTANCE
-            return r8
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.google_drive.GoogleDrive.requestSignOut(boolean, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object requestSignOut(boolean z, Continuation<?> continuation) throws Throwable {
+        C02431 c02431;
+        if (continuation instanceof C02431) {
+            c02431 = (C02431) continuation;
+            if ((c02431.label & Integer.MIN_VALUE) != 0) {
+                c02431.label -= Integer.MIN_VALUE;
+            } else {
+                c02431 = new C02431(continuation);
+            }
+        } else {
+            c02431 = new C02431(continuation);
+        }
+        Object obj = c02431.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = c02431.label;
+        Mutex mutex;
+        GoogleDrive googleDrive;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            if (!this.hasSignedIn) {
+                DaijishouApplication.WrappedLogger wrappedLogger = this.logger;
+                if (wrappedLogger == null) {
+                    Intrinsics.throwUninitializedPropertyAccessException("logger");
+                    wrappedLogger = null;
+                }
+                wrappedLogger.warn(this, "Requested sign out but isSignedIn is false.");
+                return Unit.INSTANCE;
+            }
+            if (z) {
+                mutex = this.driveOperationMutex;
+                c02431.L$0 = this;
+                c02431.L$1 = mutex;
+                c02431.label = 1;
+                if (mutex.lock(null, c02431) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                googleDrive = this;
+            } else {
+                c02431.label = 3;
+                if (requestSignOut$runIt$2(this, c02431) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            }
+        } else if (i == 1) {
+            mutex = (Mutex) c02431.L$1;
+            googleDrive = (GoogleDrive) c02431.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            Mutex mutex2 = (Mutex) c02431.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                mutex2.unlock(null);
+                return Unit.INSTANCE;
+            } catch (Throwable th) {
+                mutex2.unlock(null);
+                throw th;
+            }
+        } else if (i == 3) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        c02431.L$0 = mutex;
+        c02431.L$1 = null;
+        c02431.label = 2;
+        try {
+            if (requestSignOut$runIt$2(googleDrive, c02431) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            mutex.unlock(null);
+            return Unit.INSTANCE;
+        } catch (Throwable th2) {
+            mutex.unlock(null);
+            throw th2;
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -912,122 +932,87 @@ public final class GoogleDrive {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object batchDeleteFiles(java.util.List<java.lang.String> r9, boolean r10, kotlin.coroutines.Continuation<?> r11) throws java.lang.Throwable {
-        /*
-            r8 = this;
-            boolean r0 = r11 instanceof com.magneticchen.daijishou.google_drive.GoogleDrive.AnonymousClass1
-            if (r0 == 0) goto L14
-            r0 = r11
-            com.magneticchen.daijishou.google_drive.GoogleDrive$batchDeleteFiles$1 r0 = (com.magneticchen.daijishou.google_drive.GoogleDrive.AnonymousClass1) r0
-            int r1 = r0.label
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r1 = r1 & r2
-            if (r1 == 0) goto L14
-            int r11 = r0.label
-            int r11 = r11 - r2
-            r0.label = r11
-            goto L19
-        L14:
-            com.magneticchen.daijishou.google_drive.GoogleDrive$batchDeleteFiles$1 r0 = new com.magneticchen.daijishou.google_drive.GoogleDrive$batchDeleteFiles$1
-            r0.<init>(r11)
-        L19:
-            java.lang.Object r11 = r0.result
-            java.lang.Object r1 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r2 = r0.label
-            r3 = 3
-            r4 = 2
-            r5 = 1
-            r6 = 0
-            if (r2 == 0) goto L5b
-            if (r2 == r5) goto L44
-            if (r2 == r4) goto L3a
-            if (r2 != r3) goto L32
-            kotlin.ResultKt.throwOnFailure(r11)
-            goto Lb1
-        L32:
-            java.lang.IllegalStateException r9 = new java.lang.IllegalStateException
-            java.lang.String r10 = "call to 'resume' before 'invoke' with coroutine"
-            r9.<init>(r10)
-            throw r9
-        L3a:
-            java.lang.Object r9 = r0.L$0
-            kotlinx.coroutines.sync.Mutex r9 = (kotlinx.coroutines.sync.Mutex) r9
-            kotlin.ResultKt.throwOnFailure(r11)     // Catch: java.lang.Throwable -> L42
-            goto L98
-        L42:
-            r10 = move-exception
-            goto La4
-        L44:
-            java.lang.Object r9 = r0.L$3
-            kotlinx.coroutines.sync.Mutex r9 = (kotlinx.coroutines.sync.Mutex) r9
-            java.lang.Object r10 = r0.L$2
-            com.google.api.client.googleapis.batch.BatchRequest r10 = (com.google.api.client.googleapis.batch.BatchRequest) r10
-            java.lang.Object r2 = r0.L$1
-            java.util.List r2 = (java.util.List) r2
-            java.lang.Object r3 = r0.L$0
-            com.magneticchen.daijishou.google_drive.GoogleDrive r3 = (com.magneticchen.daijishou.google_drive.GoogleDrive) r3
-            kotlin.ResultKt.throwOnFailure(r11)
-            r11 = r10
-            r10 = r9
-            r9 = r2
-            goto L86
-        L5b:
-            kotlin.ResultKt.throwOnFailure(r11)
-            boolean r11 = r9.isEmpty()
-            if (r11 == 0) goto L67
-            kotlin.Unit r9 = kotlin.Unit.INSTANCE
-            return r9
-        L67:
-            com.google.api.services.drive.Drive r11 = r8.googleDriveService
-            kotlin.jvm.internal.Intrinsics.checkNotNull(r11)
-            com.google.api.client.googleapis.batch.BatchRequest r11 = r11.batch()
-            if (r10 == 0) goto La8
-            kotlinx.coroutines.sync.Mutex r10 = r8.driveOperationMutex
-            r0.L$0 = r8
-            r0.L$1 = r9
-            r0.L$2 = r11
-            r0.L$3 = r10
-            r0.label = r5
-            java.lang.Object r2 = r10.lock(r6, r0)
-            if (r2 != r1) goto L85
-            goto Lb0
-        L85:
-            r3 = r8
-        L86:
-            r0.L$0 = r10     // Catch: java.lang.Throwable -> La0
-            r0.L$1 = r6     // Catch: java.lang.Throwable -> La0
-            r0.L$2 = r6     // Catch: java.lang.Throwable -> La0
-            r0.L$3 = r6     // Catch: java.lang.Throwable -> La0
-            r0.label = r4     // Catch: java.lang.Throwable -> La0
-            java.lang.Object r9 = batchDeleteFiles$runIt$5(r9, r3, r11, r0)     // Catch: java.lang.Throwable -> La0
-            if (r9 != r1) goto L97
-            goto Lb0
-        L97:
-            r9 = r10
-        L98:
-            kotlin.Unit r10 = kotlin.Unit.INSTANCE     // Catch: java.lang.Throwable -> L42
-            r9.unlock(r6)
-            kotlin.Unit r9 = kotlin.Unit.INSTANCE
-            return r9
-        La0:
-            r9 = move-exception
-            r7 = r10
-            r10 = r9
-            r9 = r7
-        La4:
-            r9.unlock(r6)
-            throw r10
-        La8:
-            r0.label = r3
-            java.lang.Object r9 = batchDeleteFiles$runIt$5(r9, r8, r11, r0)
-            if (r9 != r1) goto Lb1
-        Lb0:
-            return r1
-        Lb1:
-            kotlin.Unit r9 = kotlin.Unit.INSTANCE
-            return r9
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.google_drive.GoogleDrive.batchDeleteFiles(java.util.List, boolean, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object batchDeleteFiles(List<String> list, boolean z, Continuation<?> continuation) throws Throwable {
+        AnonymousClass1 anonymousClass1;
+        if (continuation instanceof AnonymousClass1) {
+            anonymousClass1 = (AnonymousClass1) continuation;
+            if ((anonymousClass1.label & Integer.MIN_VALUE) != 0) {
+                anonymousClass1.label -= Integer.MIN_VALUE;
+            } else {
+                anonymousClass1 = new AnonymousClass1(continuation);
+            }
+        } else {
+            anonymousClass1 = new AnonymousClass1(continuation);
+        }
+        Object obj = anonymousClass1.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = anonymousClass1.label;
+        Mutex mutex;
+        BatchRequest batchRequest;
+        GoogleDrive googleDrive;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            if (list.isEmpty()) {
+                return Unit.INSTANCE;
+            }
+            Drive drive = this.googleDriveService;
+            Intrinsics.checkNotNull(drive);
+            batchRequest = drive.batch();
+            if (z) {
+                mutex = this.driveOperationMutex;
+                anonymousClass1.L$0 = this;
+                anonymousClass1.L$1 = list;
+                anonymousClass1.L$2 = batchRequest;
+                anonymousClass1.L$3 = mutex;
+                anonymousClass1.label = 1;
+                if (mutex.lock(null, anonymousClass1) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                googleDrive = this;
+            } else {
+                anonymousClass1.label = 3;
+                if (batchDeleteFiles$runIt$5(list, this, batchRequest, anonymousClass1) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            }
+        } else if (i == 1) {
+            mutex = (Mutex) anonymousClass1.L$3;
+            batchRequest = (BatchRequest) anonymousClass1.L$2;
+            list = (List) anonymousClass1.L$1;
+            googleDrive = (GoogleDrive) anonymousClass1.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            Mutex mutex2 = (Mutex) anonymousClass1.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                mutex2.unlock(null);
+                return Unit.INSTANCE;
+            } catch (Throwable th) {
+                mutex2.unlock(null);
+                throw th;
+            }
+        } else if (i == 3) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        anonymousClass1.L$0 = mutex;
+        anonymousClass1.L$1 = null;
+        anonymousClass1.L$2 = null;
+        anonymousClass1.L$3 = null;
+        anonymousClass1.label = 2;
+        try {
+            if (batchDeleteFiles$runIt$5(list, googleDrive, batchRequest, anonymousClass1) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            mutex.unlock(null);
+            return Unit.INSTANCE;
+        } catch (Throwable th2) {
+            mutex.unlock(null);
+            throw th2;
+        }
     }
 
     static /* synthetic */ Object batchDeleteFiles$default(GoogleDrive googleDrive, List list, boolean z, Continuation continuation, int i, Object obj) throws Throwable {
@@ -1071,204 +1056,123 @@ public final class GoogleDrive {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object deleteAllFiles(boolean r8, kotlin.coroutines.Continuation<?> r9) throws java.lang.Throwable {
-        /*
-            r7 = this;
-            boolean r0 = r9 instanceof com.magneticchen.daijishou.google_drive.GoogleDrive.C02311
-            if (r0 == 0) goto L14
-            r0 = r9
-            com.magneticchen.daijishou.google_drive.GoogleDrive$deleteAllFiles$1 r0 = (com.magneticchen.daijishou.google_drive.GoogleDrive.C02311) r0
-            int r1 = r0.label
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r1 = r1 & r2
-            if (r1 == 0) goto L14
-            int r9 = r0.label
-            int r9 = r9 - r2
-            r0.label = r9
-            goto L19
-        L14:
-            com.magneticchen.daijishou.google_drive.GoogleDrive$deleteAllFiles$1 r0 = new com.magneticchen.daijishou.google_drive.GoogleDrive$deleteAllFiles$1
-            r0.<init>(r9)
-        L19:
-            java.lang.Object r9 = r0.result
-            java.lang.Object r1 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r2 = r0.label
-            r3 = 3
-            r4 = 2
-            r5 = 1
-            r6 = 0
-            if (r2 == 0) goto L4f
-            if (r2 == r5) goto L43
-            if (r2 == r4) goto L39
-            if (r2 != r3) goto L31
-            kotlin.ResultKt.throwOnFailure(r9)
-            goto L86
-        L31:
-            java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
-            java.lang.String r9 = "call to 'resume' before 'invoke' with coroutine"
-            r8.<init>(r9)
-            throw r8
-        L39:
-            java.lang.Object r8 = r0.L$0
-            kotlinx.coroutines.sync.Mutex r8 = (kotlinx.coroutines.sync.Mutex) r8
-            kotlin.ResultKt.throwOnFailure(r9)     // Catch: java.lang.Throwable -> L41
-            goto L71
-        L41:
-            r9 = move-exception
-            goto L79
-        L43:
-            java.lang.Object r8 = r0.L$1
-            kotlinx.coroutines.sync.Mutex r8 = (kotlinx.coroutines.sync.Mutex) r8
-            java.lang.Object r2 = r0.L$0
-            com.magneticchen.daijishou.google_drive.GoogleDrive r2 = (com.magneticchen.daijishou.google_drive.GoogleDrive) r2
-            kotlin.ResultKt.throwOnFailure(r9)
-            goto L64
-        L4f:
-            kotlin.ResultKt.throwOnFailure(r9)
-            if (r8 == 0) goto L7d
-            kotlinx.coroutines.sync.Mutex r8 = r7.driveOperationMutex
-            r0.L$0 = r7
-            r0.L$1 = r8
-            r0.label = r5
-            java.lang.Object r9 = r8.lock(r6, r0)
-            if (r9 != r1) goto L63
-            goto L85
-        L63:
-            r2 = r7
-        L64:
-            r0.L$0 = r8     // Catch: java.lang.Throwable -> L41
-            r0.L$1 = r6     // Catch: java.lang.Throwable -> L41
-            r0.label = r4     // Catch: java.lang.Throwable -> L41
-            java.lang.Object r9 = deleteAllFiles$runIt$8(r2, r0)     // Catch: java.lang.Throwable -> L41
-            if (r9 != r1) goto L71
-            goto L85
-        L71:
-            kotlin.Unit r9 = kotlin.Unit.INSTANCE     // Catch: java.lang.Throwable -> L41
-            r8.unlock(r6)
-            kotlin.Unit r8 = kotlin.Unit.INSTANCE
-            return r8
-        L79:
-            r8.unlock(r6)
-            throw r9
-        L7d:
-            r0.label = r3
-            java.lang.Object r8 = deleteAllFiles$runIt$8(r7, r0)
-            if (r8 != r1) goto L86
-        L85:
-            return r1
-        L86:
-            kotlin.Unit r8 = kotlin.Unit.INSTANCE
-            return r8
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.google_drive.GoogleDrive.deleteAllFiles(boolean, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object deleteAllFiles(boolean z, Continuation<?> continuation) throws Throwable {
+        C02311 c02311;
+        if (continuation instanceof C02311) {
+            c02311 = (C02311) continuation;
+            if ((c02311.label & Integer.MIN_VALUE) != 0) {
+                c02311.label -= Integer.MIN_VALUE;
+            } else {
+                c02311 = new C02311(continuation);
+            }
+        } else {
+            c02311 = new C02311(continuation);
+        }
+        Object obj = c02311.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = c02311.label;
+        Mutex mutex;
+        GoogleDrive googleDrive;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            if (z) {
+                mutex = this.driveOperationMutex;
+                c02311.L$0 = this;
+                c02311.L$1 = mutex;
+                c02311.label = 1;
+                if (mutex.lock(null, c02311) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                googleDrive = this;
+            } else {
+                c02311.label = 3;
+                if (deleteAllFiles$runIt$8(this, c02311) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            }
+        } else if (i == 1) {
+            mutex = (Mutex) c02311.L$1;
+            googleDrive = (GoogleDrive) c02311.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            Mutex mutex2 = (Mutex) c02311.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                mutex2.unlock(null);
+                return Unit.INSTANCE;
+            } catch (Throwable th) {
+                mutex2.unlock(null);
+                throw th;
+            }
+        } else if (i == 3) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        c02311.L$0 = mutex;
+        c02311.L$1 = null;
+        c02311.label = 2;
+        try {
+            if (deleteAllFiles$runIt$8(googleDrive, c02311) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            mutex.unlock(null);
+            return Unit.INSTANCE;
+        } catch (Throwable th2) {
+            mutex.unlock(null);
+            throw th2;
+        }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:32:0x0095, code lost:
-    
-        if (r10.batchDeleteFiles(r1, false, r5) == r0) goto L33;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public static final java.lang.Object deleteAllFiles$runIt$8(com.magneticchen.daijishou.google_drive.GoogleDrive r10, kotlin.coroutines.Continuation<?> r11) throws java.lang.Throwable {
-        /*
-            boolean r0 = r11 instanceof com.magneticchen.daijishou.google_drive.GoogleDrive$deleteAllFiles$runIt$1
-            if (r0 == 0) goto L14
-            r0 = r11
-            com.magneticchen.daijishou.google_drive.GoogleDrive$deleteAllFiles$runIt$1 r0 = (com.magneticchen.daijishou.google_drive.GoogleDrive$deleteAllFiles$runIt$1) r0
-            int r1 = r0.label
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r1 = r1 & r2
-            if (r1 == 0) goto L14
-            int r11 = r0.label
-            int r11 = r11 - r2
-            r0.label = r11
-            goto L19
-        L14:
-            com.magneticchen.daijishou.google_drive.GoogleDrive$deleteAllFiles$runIt$1 r0 = new com.magneticchen.daijishou.google_drive.GoogleDrive$deleteAllFiles$runIt$1
-            r0.<init>(r11)
-        L19:
-            r5 = r0
-            java.lang.Object r11 = r5.result
-            java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r1 = r5.label
-            r8 = 0
-            r9 = 2
-            r2 = 1
-            if (r1 == 0) goto L3f
-            if (r1 == r2) goto L37
-            if (r1 != r9) goto L2f
-            kotlin.ResultKt.throwOnFailure(r11)
-            goto L98
-        L2f:
-            java.lang.IllegalStateException r10 = new java.lang.IllegalStateException
-            java.lang.String r11 = "call to 'resume' before 'invoke' with coroutine"
-            r10.<init>(r11)
-            throw r10
-        L37:
-            java.lang.Object r10 = r5.L$0
-            com.magneticchen.daijishou.google_drive.GoogleDrive r10 = (com.magneticchen.daijishou.google_drive.GoogleDrive) r10
-            kotlin.ResultKt.throwOnFailure(r11)
-            goto L63
-        L3f:
-            kotlin.ResultKt.throwOnFailure(r11)
-            com.google.api.services.drive.Drive r11 = r10.googleDriveService
-            if (r11 == 0) goto L4b
-            com.google.api.services.drive.Drive$Files r11 = r11.files()
-            goto L4c
-        L4b:
-            r11 = r8
-        L4c:
-            if (r11 != 0) goto L51
-            kotlin.Unit r10 = kotlin.Unit.INSTANCE
-            return r10
-        L51:
-            r5.L$0 = r10
-            r5.label = r2
-            r2 = 0
-            r3 = 0
-            r4 = 0
-            r6 = 3
-            r7 = 0
-            r1 = r10
-            java.lang.Object r11 = listAllFiles$default(r1, r2, r3, r4, r5, r6, r7)
-            if (r11 != r0) goto L62
-            goto L97
-        L62:
-            r10 = r1
-        L63:
-            java.lang.Iterable r11 = (java.lang.Iterable) r11
-            java.util.ArrayList r1 = new java.util.ArrayList
-            r2 = 10
-            int r2 = kotlin.collections.CollectionsKt.collectionSizeOrDefault(r11, r2)
-            r1.<init>(r2)
-            java.util.Collection r1 = (java.util.Collection) r1
-            java.util.Iterator r11 = r11.iterator()
-        L76:
-            boolean r2 = r11.hasNext()
-            if (r2 == 0) goto L8a
-            java.lang.Object r2 = r11.next()
-            com.google.api.services.drive.model.File r2 = (com.google.api.services.drive.model.File) r2
-            java.lang.String r2 = r2.getId()
-            r1.add(r2)
-            goto L76
-        L8a:
-            java.util.List r1 = (java.util.List) r1
-            r5.L$0 = r8
-            r5.label = r9
-            r11 = 0
-            java.lang.Object r10 = r10.batchDeleteFiles(r1, r11, r5)
-            if (r10 != r0) goto L98
-        L97:
-            return r0
-        L98:
-            kotlin.Unit r10 = kotlin.Unit.INSTANCE
-            return r10
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.google_drive.GoogleDrive.deleteAllFiles$runIt$8(com.magneticchen.daijishou.google_drive.GoogleDrive, kotlin.coroutines.Continuation):java.lang.Object");
+    public static final Object deleteAllFiles$runIt$8(GoogleDrive googleDrive, Continuation<?> continuation) throws Throwable {
+        GoogleDrive$deleteAllFiles$runIt$1 googleDrive$deleteAllFiles$runIt$1;
+        if (continuation instanceof GoogleDrive$deleteAllFiles$runIt$1) {
+            googleDrive$deleteAllFiles$runIt$1 = (GoogleDrive$deleteAllFiles$runIt$1) continuation;
+            if ((googleDrive$deleteAllFiles$runIt$1.label & Integer.MIN_VALUE) != 0) {
+                googleDrive$deleteAllFiles$runIt$1.label -= Integer.MIN_VALUE;
+            } else {
+                googleDrive$deleteAllFiles$runIt$1 = new GoogleDrive$deleteAllFiles$runIt$1(continuation);
+            }
+        } else {
+            googleDrive$deleteAllFiles$runIt$1 = new GoogleDrive$deleteAllFiles$runIt$1(continuation);
+        }
+        Object obj = googleDrive$deleteAllFiles$runIt$1.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = googleDrive$deleteAllFiles$runIt$1.label;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            Drive drive = googleDrive.googleDriveService;
+            if ((drive != null ? drive.files() : null) == null) {
+                return Unit.INSTANCE;
+            }
+            googleDrive$deleteAllFiles$runIt$1.L$0 = googleDrive;
+            googleDrive$deleteAllFiles$runIt$1.label = 1;
+            obj = listAllFiles$default(googleDrive, null, null, false, googleDrive$deleteAllFiles$runIt$1, 3, null);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else if (i == 1) {
+            googleDrive = (GoogleDrive) googleDrive$deleteAllFiles$runIt$1.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        Iterable<File> iterable = (Iterable) obj;
+        ArrayList arrayList = new ArrayList(CollectionsKt.collectionSizeOrDefault(iterable, 10));
+        for (File file : iterable) {
+            arrayList.add(file.getId());
+        }
+        googleDrive$deleteAllFiles$runIt$1.L$0 = null;
+        googleDrive$deleteAllFiles$runIt$1.label = 2;
+        if (googleDrive.batchDeleteFiles(arrayList, false, googleDrive$deleteAllFiles$runIt$1) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     public static /* synthetic */ Object deleteFileByFileId$default(GoogleDrive googleDrive, String str, boolean z, Continuation continuation, int i, Object obj) throws Throwable {
@@ -1288,110 +1192,77 @@ public final class GoogleDrive {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object deleteFileByFileId(java.lang.String r9, boolean r10, kotlin.coroutines.Continuation<?> r11) throws java.lang.Throwable {
-        /*
-            r8 = this;
-            boolean r0 = r11 instanceof com.magneticchen.daijishou.google_drive.GoogleDrive.C02321
-            if (r0 == 0) goto L14
-            r0 = r11
-            com.magneticchen.daijishou.google_drive.GoogleDrive$deleteFileByFileId$1 r0 = (com.magneticchen.daijishou.google_drive.GoogleDrive.C02321) r0
-            int r1 = r0.label
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r1 = r1 & r2
-            if (r1 == 0) goto L14
-            int r11 = r0.label
-            int r11 = r11 - r2
-            r0.label = r11
-            goto L19
-        L14:
-            com.magneticchen.daijishou.google_drive.GoogleDrive$deleteFileByFileId$1 r0 = new com.magneticchen.daijishou.google_drive.GoogleDrive$deleteFileByFileId$1
-            r0.<init>(r11)
-        L19:
-            java.lang.Object r11 = r0.result
-            java.lang.Object r1 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r2 = r0.label
-            r3 = 3
-            r4 = 2
-            r5 = 1
-            r6 = 0
-            if (r2 == 0) goto L57
-            if (r2 == r5) goto L44
-            if (r2 == r4) goto L3a
-            if (r2 != r3) goto L32
-            kotlin.ResultKt.throwOnFailure(r11)
-            goto L97
-        L32:
-            java.lang.IllegalStateException r9 = new java.lang.IllegalStateException
-            java.lang.String r10 = "call to 'resume' before 'invoke' with coroutine"
-            r9.<init>(r10)
-            throw r9
-        L3a:
-            java.lang.Object r9 = r0.L$0
-            kotlinx.coroutines.sync.Mutex r9 = (kotlinx.coroutines.sync.Mutex) r9
-            kotlin.ResultKt.throwOnFailure(r11)     // Catch: java.lang.Throwable -> L42
-            goto L7e
-        L42:
-            r10 = move-exception
-            goto L8a
-        L44:
-            java.lang.Object r9 = r0.L$2
-            kotlinx.coroutines.sync.Mutex r9 = (kotlinx.coroutines.sync.Mutex) r9
-            java.lang.Object r10 = r0.L$1
-            java.lang.String r10 = (java.lang.String) r10
-            java.lang.Object r2 = r0.L$0
-            com.magneticchen.daijishou.google_drive.GoogleDrive r2 = (com.magneticchen.daijishou.google_drive.GoogleDrive) r2
-            kotlin.ResultKt.throwOnFailure(r11)
-            r7 = r10
-            r10 = r9
-            r9 = r7
-            goto L6e
-        L57:
-            kotlin.ResultKt.throwOnFailure(r11)
-            if (r10 == 0) goto L8e
-            kotlinx.coroutines.sync.Mutex r10 = r8.driveOperationMutex
-            r0.L$0 = r8
-            r0.L$1 = r9
-            r0.L$2 = r10
-            r0.label = r5
-            java.lang.Object r11 = r10.lock(r6, r0)
-            if (r11 != r1) goto L6d
-            goto L96
-        L6d:
-            r2 = r8
-        L6e:
-            r0.L$0 = r10     // Catch: java.lang.Throwable -> L86
-            r0.L$1 = r6     // Catch: java.lang.Throwable -> L86
-            r0.L$2 = r6     // Catch: java.lang.Throwable -> L86
-            r0.label = r4     // Catch: java.lang.Throwable -> L86
-            java.lang.Object r9 = deleteFileByFileId$runIt$10(r2, r9, r0)     // Catch: java.lang.Throwable -> L86
-            if (r9 != r1) goto L7d
-            goto L96
-        L7d:
-            r9 = r10
-        L7e:
-            kotlin.Unit r10 = kotlin.Unit.INSTANCE     // Catch: java.lang.Throwable -> L42
-            r9.unlock(r6)
-            kotlin.Unit r9 = kotlin.Unit.INSTANCE
-            return r9
-        L86:
-            r9 = move-exception
-            r7 = r10
-            r10 = r9
-            r9 = r7
-        L8a:
-            r9.unlock(r6)
-            throw r10
-        L8e:
-            r0.label = r3
-            java.lang.Object r9 = deleteFileByFileId$runIt$10(r8, r9, r0)
-            if (r9 != r1) goto L97
-        L96:
-            return r1
-        L97:
-            kotlin.Unit r9 = kotlin.Unit.INSTANCE
-            return r9
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.google_drive.GoogleDrive.deleteFileByFileId(java.lang.String, boolean, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object deleteFileByFileId(String str, boolean z, Continuation<?> continuation) throws Throwable {
+        C02321 c02321;
+        if (continuation instanceof C02321) {
+            c02321 = (C02321) continuation;
+            if ((c02321.label & Integer.MIN_VALUE) != 0) {
+                c02321.label -= Integer.MIN_VALUE;
+            } else {
+                c02321 = new C02321(continuation);
+            }
+        } else {
+            c02321 = new C02321(continuation);
+        }
+        Object obj = c02321.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = c02321.label;
+        Mutex mutex;
+        GoogleDrive googleDrive;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            if (z) {
+                mutex = this.driveOperationMutex;
+                c02321.L$0 = this;
+                c02321.L$1 = str;
+                c02321.L$2 = mutex;
+                c02321.label = 1;
+                if (mutex.lock(null, c02321) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                googleDrive = this;
+            } else {
+                c02321.label = 3;
+                if (deleteFileByFileId$runIt$10(this, str, c02321) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            }
+        } else if (i == 1) {
+            mutex = (Mutex) c02321.L$2;
+            str = (String) c02321.L$1;
+            googleDrive = (GoogleDrive) c02321.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            Mutex mutex2 = (Mutex) c02321.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                mutex2.unlock(null);
+                return Unit.INSTANCE;
+            } catch (Throwable th) {
+                mutex2.unlock(null);
+                throw th;
+            }
+        } else if (i == 3) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        c02321.L$0 = mutex;
+        c02321.L$1 = null;
+        c02321.L$2 = null;
+        c02321.label = 2;
+        try {
+            if (deleteFileByFileId$runIt$10(googleDrive, str, c02321) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            mutex.unlock(null);
+            return Unit.INSTANCE;
+        } catch (Throwable th2) {
+            mutex.unlock(null);
+            throw th2;
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1422,112 +1293,80 @@ public final class GoogleDrive {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object renameFileByFileId(java.lang.String r9, java.lang.String r10, boolean r11, kotlin.coroutines.Continuation<?> r12) throws java.lang.Throwable {
-        /*
-            r8 = this;
-            boolean r0 = r12 instanceof com.magneticchen.daijishou.google_drive.GoogleDrive.C02411
-            if (r0 == 0) goto L14
-            r0 = r12
-            com.magneticchen.daijishou.google_drive.GoogleDrive$renameFileByFileId$1 r0 = (com.magneticchen.daijishou.google_drive.GoogleDrive.C02411) r0
-            int r1 = r0.label
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r1 = r1 & r2
-            if (r1 == 0) goto L14
-            int r12 = r0.label
-            int r12 = r12 - r2
-            r0.label = r12
-            goto L19
-        L14:
-            com.magneticchen.daijishou.google_drive.GoogleDrive$renameFileByFileId$1 r0 = new com.magneticchen.daijishou.google_drive.GoogleDrive$renameFileByFileId$1
-            r0.<init>(r12)
-        L19:
-            java.lang.Object r12 = r0.result
-            java.lang.Object r1 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r2 = r0.label
-            r3 = 3
-            r4 = 2
-            r5 = 1
-            r6 = 0
-            if (r2 == 0) goto L5b
-            if (r2 == r5) goto L44
-            if (r2 == r4) goto L3a
-            if (r2 != r3) goto L32
-            kotlin.ResultKt.throwOnFailure(r12)
-            goto L9d
-        L32:
-            java.lang.IllegalStateException r9 = new java.lang.IllegalStateException
-            java.lang.String r10 = "call to 'resume' before 'invoke' with coroutine"
-            r9.<init>(r10)
-            throw r9
-        L3a:
-            java.lang.Object r9 = r0.L$0
-            kotlinx.coroutines.sync.Mutex r9 = (kotlinx.coroutines.sync.Mutex) r9
-            kotlin.ResultKt.throwOnFailure(r12)     // Catch: java.lang.Throwable -> L42
-            goto L86
-        L42:
-            r10 = move-exception
-            goto L90
-        L44:
-            java.lang.Object r9 = r0.L$3
-            kotlinx.coroutines.sync.Mutex r9 = (kotlinx.coroutines.sync.Mutex) r9
-            java.lang.Object r10 = r0.L$2
-            java.lang.String r10 = (java.lang.String) r10
-            java.lang.Object r11 = r0.L$1
-            java.lang.String r11 = (java.lang.String) r11
-            java.lang.Object r2 = r0.L$0
-            com.magneticchen.daijishou.google_drive.GoogleDrive r2 = (com.magneticchen.daijishou.google_drive.GoogleDrive) r2
-            kotlin.ResultKt.throwOnFailure(r12)
-            r7 = r11
-            r11 = r9
-            r9 = r7
-            goto L74
-        L5b:
-            kotlin.ResultKt.throwOnFailure(r12)
-            if (r11 == 0) goto L94
-            kotlinx.coroutines.sync.Mutex r11 = r8.driveOperationMutex
-            r0.L$0 = r8
-            r0.L$1 = r9
-            r0.L$2 = r10
-            r0.L$3 = r11
-            r0.label = r5
-            java.lang.Object r12 = r11.lock(r6, r0)
-            if (r12 != r1) goto L73
-            goto L9c
-        L73:
-            r2 = r8
-        L74:
-            r0.L$0 = r11     // Catch: java.lang.Throwable -> L8e
-            r0.L$1 = r6     // Catch: java.lang.Throwable -> L8e
-            r0.L$2 = r6     // Catch: java.lang.Throwable -> L8e
-            r0.L$3 = r6     // Catch: java.lang.Throwable -> L8e
-            r0.label = r4     // Catch: java.lang.Throwable -> L8e
-            java.lang.Object r9 = renameFileByFileId$runIt$12(r2, r9, r10, r0)     // Catch: java.lang.Throwable -> L8e
-            if (r9 != r1) goto L85
-            goto L9c
-        L85:
-            r9 = r11
-        L86:
-            kotlin.Unit r10 = kotlin.Unit.INSTANCE     // Catch: java.lang.Throwable -> L42
-            r9.unlock(r6)
-            kotlin.Unit r9 = kotlin.Unit.INSTANCE
-            return r9
-        L8e:
-            r10 = move-exception
-            r9 = r11
-        L90:
-            r9.unlock(r6)
-            throw r10
-        L94:
-            r0.label = r3
-            java.lang.Object r9 = renameFileByFileId$runIt$12(r8, r9, r10, r0)
-            if (r9 != r1) goto L9d
-        L9c:
-            return r1
-        L9d:
-            kotlin.Unit r9 = kotlin.Unit.INSTANCE
-            return r9
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.google_drive.GoogleDrive.renameFileByFileId(java.lang.String, java.lang.String, boolean, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object renameFileByFileId(String str, String str2, boolean z, Continuation<?> continuation) throws Throwable {
+        C02411 c02411;
+        if (continuation instanceof C02411) {
+            c02411 = (C02411) continuation;
+            if ((c02411.label & Integer.MIN_VALUE) != 0) {
+                c02411.label -= Integer.MIN_VALUE;
+            } else {
+                c02411 = new C02411(continuation);
+            }
+        } else {
+            c02411 = new C02411(continuation);
+        }
+        Object obj = c02411.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = c02411.label;
+        Mutex mutex;
+        GoogleDrive googleDrive;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            if (z) {
+                mutex = this.driveOperationMutex;
+                c02411.L$0 = this;
+                c02411.L$1 = str;
+                c02411.L$2 = str2;
+                c02411.L$3 = mutex;
+                c02411.label = 1;
+                if (mutex.lock(null, c02411) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                googleDrive = this;
+            } else {
+                c02411.label = 3;
+                if (renameFileByFileId$runIt$12(this, str, str2, c02411) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            }
+        } else if (i == 1) {
+            mutex = (Mutex) c02411.L$3;
+            str2 = (String) c02411.L$2;
+            str = (String) c02411.L$1;
+            googleDrive = (GoogleDrive) c02411.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            Mutex mutex2 = (Mutex) c02411.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                mutex2.unlock(null);
+                return Unit.INSTANCE;
+            } catch (Throwable th) {
+                mutex2.unlock(null);
+                throw th;
+            }
+        } else if (i == 3) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        c02411.L$0 = mutex;
+        c02411.L$1 = null;
+        c02411.L$2 = null;
+        c02411.L$3 = null;
+        c02411.label = 2;
+        try {
+            if (renameFileByFileId$runIt$12(googleDrive, str, str2, c02411) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            mutex.unlock(null);
+            return Unit.INSTANCE;
+        } catch (Throwable th2) {
+            mutex.unlock(null);
+            throw th2;
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1567,111 +1406,82 @@ public final class GoogleDrive {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object listAllFiles(java.lang.String r9, java.lang.String r10, boolean r11, kotlin.coroutines.Continuation<?> r12) throws java.lang.Throwable {
-        /*
-            r8 = this;
-            boolean r0 = r12 instanceof com.magneticchen.daijishou.google_drive.GoogleDrive.C02391
-            if (r0 == 0) goto L14
-            r0 = r12
-            com.magneticchen.daijishou.google_drive.GoogleDrive$listAllFiles$1 r0 = (com.magneticchen.daijishou.google_drive.GoogleDrive.C02391) r0
-            int r1 = r0.label
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r1 = r1 & r2
-            if (r1 == 0) goto L14
-            int r12 = r0.label
-            int r12 = r12 - r2
-            r0.label = r12
-            goto L19
-        L14:
-            com.magneticchen.daijishou.google_drive.GoogleDrive$listAllFiles$1 r0 = new com.magneticchen.daijishou.google_drive.GoogleDrive$listAllFiles$1
-            r0.<init>(r12)
-        L19:
-            java.lang.Object r12 = r0.result
-            java.lang.Object r1 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r2 = r0.label
-            r3 = 3
-            r4 = 2
-            r5 = 1
-            r6 = 0
-            if (r2 == 0) goto L5b
-            if (r2 == r5) goto L44
-            if (r2 == r4) goto L3a
-            if (r2 != r3) goto L32
-            kotlin.ResultKt.throwOnFailure(r12)
-            goto L9b
-        L32:
-            java.lang.IllegalStateException r9 = new java.lang.IllegalStateException
-            java.lang.String r10 = "call to 'resume' before 'invoke' with coroutine"
-            r9.<init>(r10)
-            throw r9
-        L3a:
-            java.lang.Object r9 = r0.L$0
-            kotlinx.coroutines.sync.Mutex r9 = (kotlinx.coroutines.sync.Mutex) r9
-            kotlin.ResultKt.throwOnFailure(r12)     // Catch: java.lang.Throwable -> L42
-            goto L86
-        L42:
-            r10 = move-exception
-            goto L8e
-        L44:
-            java.lang.Object r9 = r0.L$3
-            kotlinx.coroutines.sync.Mutex r9 = (kotlinx.coroutines.sync.Mutex) r9
-            java.lang.Object r10 = r0.L$2
-            java.lang.String r10 = (java.lang.String) r10
-            java.lang.Object r11 = r0.L$1
-            java.lang.String r11 = (java.lang.String) r11
-            java.lang.Object r2 = r0.L$0
-            com.magneticchen.daijishou.google_drive.GoogleDrive r2 = (com.magneticchen.daijishou.google_drive.GoogleDrive) r2
-            kotlin.ResultKt.throwOnFailure(r12)
-            r7 = r11
-            r11 = r9
-            r9 = r7
-            goto L74
-        L5b:
-            kotlin.ResultKt.throwOnFailure(r12)
-            if (r11 == 0) goto L92
-            kotlinx.coroutines.sync.Mutex r11 = r8.driveOperationMutex
-            r0.L$0 = r8
-            r0.L$1 = r9
-            r0.L$2 = r10
-            r0.L$3 = r11
-            r0.label = r5
-            java.lang.Object r12 = r11.lock(r6, r0)
-            if (r12 != r1) goto L73
-            goto L9a
-        L73:
-            r2 = r8
-        L74:
-            r0.L$0 = r11     // Catch: java.lang.Throwable -> L8c
-            r0.L$1 = r6     // Catch: java.lang.Throwable -> L8c
-            r0.L$2 = r6     // Catch: java.lang.Throwable -> L8c
-            r0.L$3 = r6     // Catch: java.lang.Throwable -> L8c
-            r0.label = r4     // Catch: java.lang.Throwable -> L8c
-            java.lang.Object r12 = listAllFiles$runIt$15(r2, r9, r10, r0)     // Catch: java.lang.Throwable -> L8c
-            if (r12 != r1) goto L85
-            goto L9a
-        L85:
-            r9 = r11
-        L86:
-            java.util.List r12 = (java.util.List) r12     // Catch: java.lang.Throwable -> L42
-            r9.unlock(r6)
-            return r12
-        L8c:
-            r10 = move-exception
-            r9 = r11
-        L8e:
-            r9.unlock(r6)
-            throw r10
-        L92:
-            r0.label = r3
-            java.lang.Object r12 = listAllFiles$runIt$15(r8, r9, r10, r0)
-            if (r12 != r1) goto L9b
-        L9a:
-            return r1
-        L9b:
-            java.util.List r12 = (java.util.List) r12
-            return r12
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.google_drive.GoogleDrive.listAllFiles(java.lang.String, java.lang.String, boolean, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object listAllFiles(String str, String str2, boolean z, Continuation<?> continuation) throws Throwable {
+        C02391 c02391;
+        if (continuation instanceof C02391) {
+            c02391 = (C02391) continuation;
+            if ((c02391.label & Integer.MIN_VALUE) != 0) {
+                c02391.label -= Integer.MIN_VALUE;
+            } else {
+                c02391 = new C02391(continuation);
+            }
+        } else {
+            c02391 = new C02391(continuation);
+        }
+        Object obj = c02391.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = c02391.label;
+        Mutex mutex;
+        GoogleDrive googleDrive;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            if (z) {
+                mutex = this.driveOperationMutex;
+                c02391.L$0 = this;
+                c02391.L$1 = str;
+                c02391.L$2 = str2;
+                c02391.L$3 = mutex;
+                c02391.label = 1;
+                if (mutex.lock(null, c02391) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                googleDrive = this;
+            } else {
+                c02391.label = 3;
+                Object objListAllFiles$runIt$15 = listAllFiles$runIt$15(this, str, str2, c02391);
+                if (objListAllFiles$runIt$15 == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return (List) objListAllFiles$runIt$15;
+            }
+        } else if (i == 1) {
+            mutex = (Mutex) c02391.L$3;
+            str2 = (String) c02391.L$2;
+            str = (String) c02391.L$1;
+            googleDrive = (GoogleDrive) c02391.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            Mutex mutex2 = (Mutex) c02391.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                mutex2.unlock(null);
+                return (List) obj;
+            } catch (Throwable th) {
+                mutex2.unlock(null);
+                throw th;
+            }
+        } else if (i == 3) {
+            ResultKt.throwOnFailure(obj);
+            return (List) obj;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        c02391.L$0 = mutex;
+        c02391.L$1 = null;
+        c02391.L$2 = null;
+        c02391.L$3 = null;
+        c02391.label = 2;
+        try {
+            Object objListAllFiles$runIt$15_2 = listAllFiles$runIt$15(googleDrive, str, str2, c02391);
+            if (objListAllFiles$runIt$15_2 == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            mutex.unlock(null);
+            return (List) objListAllFiles$runIt$15_2;
+        } catch (Throwable th2) {
+            mutex.unlock(null);
+            throw th2;
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1739,96 +1549,74 @@ public final class GoogleDrive {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object logAllFiles(boolean r8, kotlin.coroutines.Continuation<?> r9) throws java.lang.Throwable {
-        /*
-            r7 = this;
-            boolean r0 = r9 instanceof com.magneticchen.daijishou.google_drive.GoogleDrive.C02401
-            if (r0 == 0) goto L14
-            r0 = r9
-            com.magneticchen.daijishou.google_drive.GoogleDrive$logAllFiles$1 r0 = (com.magneticchen.daijishou.google_drive.GoogleDrive.C02401) r0
-            int r1 = r0.label
-            r2 = -2147483648(0xffffffff80000000, float:-0.0)
-            r1 = r1 & r2
-            if (r1 == 0) goto L14
-            int r9 = r0.label
-            int r9 = r9 - r2
-            r0.label = r9
-            goto L19
-        L14:
-            com.magneticchen.daijishou.google_drive.GoogleDrive$logAllFiles$1 r0 = new com.magneticchen.daijishou.google_drive.GoogleDrive$logAllFiles$1
-            r0.<init>(r9)
-        L19:
-            java.lang.Object r9 = r0.result
-            java.lang.Object r1 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r2 = r0.label
-            r3 = 3
-            r4 = 2
-            r5 = 1
-            r6 = 0
-            if (r2 == 0) goto L4f
-            if (r2 == r5) goto L43
-            if (r2 == r4) goto L39
-            if (r2 != r3) goto L31
-            kotlin.ResultKt.throwOnFailure(r9)
-            goto L86
-        L31:
-            java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
-            java.lang.String r9 = "call to 'resume' before 'invoke' with coroutine"
-            r8.<init>(r9)
-            throw r8
-        L39:
-            java.lang.Object r8 = r0.L$0
-            kotlinx.coroutines.sync.Mutex r8 = (kotlinx.coroutines.sync.Mutex) r8
-            kotlin.ResultKt.throwOnFailure(r9)     // Catch: java.lang.Throwable -> L41
-            goto L71
-        L41:
-            r9 = move-exception
-            goto L79
-        L43:
-            java.lang.Object r8 = r0.L$1
-            kotlinx.coroutines.sync.Mutex r8 = (kotlinx.coroutines.sync.Mutex) r8
-            java.lang.Object r2 = r0.L$0
-            com.magneticchen.daijishou.google_drive.GoogleDrive r2 = (com.magneticchen.daijishou.google_drive.GoogleDrive) r2
-            kotlin.ResultKt.throwOnFailure(r9)
-            goto L64
-        L4f:
-            kotlin.ResultKt.throwOnFailure(r9)
-            if (r8 == 0) goto L7d
-            kotlinx.coroutines.sync.Mutex r8 = r7.driveOperationMutex
-            r0.L$0 = r7
-            r0.L$1 = r8
-            r0.label = r5
-            java.lang.Object r9 = r8.lock(r6, r0)
-            if (r9 != r1) goto L63
-            goto L85
-        L63:
-            r2 = r7
-        L64:
-            r0.L$0 = r8     // Catch: java.lang.Throwable -> L41
-            r0.L$1 = r6     // Catch: java.lang.Throwable -> L41
-            r0.label = r4     // Catch: java.lang.Throwable -> L41
-            java.lang.Object r9 = logAllFiles$runIt$17(r2, r0)     // Catch: java.lang.Throwable -> L41
-            if (r9 != r1) goto L71
-            goto L85
-        L71:
-            kotlin.Unit r9 = kotlin.Unit.INSTANCE     // Catch: java.lang.Throwable -> L41
-            r8.unlock(r6)
-            kotlin.Unit r8 = kotlin.Unit.INSTANCE
-            return r8
-        L79:
-            r8.unlock(r6)
-            throw r9
-        L7d:
-            r0.label = r3
-            java.lang.Object r8 = logAllFiles$runIt$17(r7, r0)
-            if (r8 != r1) goto L86
-        L85:
-            return r1
-        L86:
-            kotlin.Unit r8 = kotlin.Unit.INSTANCE
-            return r8
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.google_drive.GoogleDrive.logAllFiles(boolean, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object logAllFiles(boolean z, Continuation<?> continuation) throws Throwable {
+        C02401 c02401;
+        if (continuation instanceof C02401) {
+            c02401 = (C02401) continuation;
+            if ((c02401.label & Integer.MIN_VALUE) != 0) {
+                c02401.label -= Integer.MIN_VALUE;
+            } else {
+                c02401 = new C02401(continuation);
+            }
+        } else {
+            c02401 = new C02401(continuation);
+        }
+        Object obj = c02401.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = c02401.label;
+        Mutex mutex;
+        GoogleDrive googleDrive;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            if (z) {
+                mutex = this.driveOperationMutex;
+                c02401.L$0 = this;
+                c02401.L$1 = mutex;
+                c02401.label = 1;
+                if (mutex.lock(null, c02401) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                googleDrive = this;
+            } else {
+                c02401.label = 3;
+                if (logAllFiles$runIt$17(this, c02401) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            }
+        } else if (i == 1) {
+            mutex = (Mutex) c02401.L$1;
+            googleDrive = (GoogleDrive) c02401.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            Mutex mutex2 = (Mutex) c02401.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                mutex2.unlock(null);
+                return Unit.INSTANCE;
+            } catch (Throwable th) {
+                mutex2.unlock(null);
+                throw th;
+            }
+        } else if (i == 3) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        c02401.L$0 = mutex;
+        c02401.L$1 = null;
+        c02401.label = 2;
+        try {
+            if (logAllFiles$runIt$17(googleDrive, c02401) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            mutex.unlock(null);
+            return Unit.INSTANCE;
+        } catch (Throwable th2) {
+            mutex.unlock(null);
+            throw th2;
+        }
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -2909,12 +2697,107 @@ public final class GoogleDrive {
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r18) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 327
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.google_drive.GoogleDrive.C02441.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            CoroutineScope coroutineScope;
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            try {
+                if (i == 0) {
+                    ResultKt.throwOnFailure(obj);
+                    coroutineScope = (CoroutineScope) this.L$0;
+                    GoogleDrive.this.googleDriveService = new Drive.Builder(new NetHttpTransport(), GsonFactory.getDefaultInstance(), this.$googleAccountCredential).setApplicationName("Daijishou").build();
+                    String str = "[upload_test]\ndaijishou_uuid: " + GoogleDrive.this.getApplication().getDaijishouUUID();
+                    byte[] encodeToByteArray = StringsKt.encodeToByteArray(str);
+                    this.L$0 = coroutineScope;
+                    this.label = 1;
+                    obj = GoogleDrive.this.uploadByteArrayToFilename("upload_test.txt", encodeToByteArray, false, this);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } else if (i == 1) {
+                    coroutineScope = (CoroutineScope) this.L$0;
+                    ResultKt.throwOnFailure(obj);
+                } else if (i == 2) {
+                    GoogleDrive googleDrive = (GoogleDrive) this.L$1;
+                    coroutineScope = (CoroutineScope) this.L$0;
+                    ResultKt.throwOnFailure(obj);
+                    byte[] bArr = (byte[]) obj;
+                    if (bArr != null) {
+                        DaijishouApplication.WrappedLogger wrappedLogger = GoogleDrive.this.logger;
+                        if (wrappedLogger == null) {
+                            Intrinsics.throwUninitializedPropertyAccessException("logger");
+                            wrappedLogger = null;
+                        }
+                        wrappedLogger.debug(coroutineScope, "upload_test.txt, size: " + bArr.length + ", content below: \n" + StringsKt.decodeToString(bArr));
+                    }
+                    this.L$0 = null;
+                    this.L$1 = null;
+                    this.label = 3;
+                    if (GoogleDrive.this.logAllFiles(false, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    this.label = 4;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(GoogleDrive.this, this.$googleSignInAccount, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                } else if (i == 3) {
+                    ResultKt.throwOnFailure(obj);
+                    this.label = 4;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(GoogleDrive.this, this.$googleSignInAccount, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                } else if (i == 4) {
+                    ResultKt.throwOnFailure(obj);
+                    return Unit.INSTANCE;
+                } else {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                if (((File) obj) != null) {
+                    this.L$0 = coroutineScope;
+                    this.L$1 = GoogleDrive.this;
+                    this.label = 2;
+                    obj = GoogleDrive.this.downloadByteArrayFromFilename("upload_test.txt", false, this);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    byte[] bArr2 = (byte[]) obj;
+                    if (bArr2 != null) {
+                        DaijishouApplication.WrappedLogger wrappedLogger2 = GoogleDrive.this.logger;
+                        if (wrappedLogger2 == null) {
+                            Intrinsics.throwUninitializedPropertyAccessException("logger");
+                            wrappedLogger2 = null;
+                        }
+                        wrappedLogger2.debug(coroutineScope, "upload_test.txt, size: " + bArr2.length + ", content below: \n" + StringsKt.decodeToString(bArr2));
+                    }
+                }
+                this.L$0 = null;
+                this.L$1 = null;
+                this.label = 3;
+                if (GoogleDrive.this.logAllFiles(false, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                this.label = 4;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(GoogleDrive.this, this.$googleSignInAccount, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            } catch (Exception e) {
+                DaijishouApplication.WrappedLogger wrappedLogger3 = GoogleDrive.this.logger;
+                if (wrappedLogger3 == null) {
+                    Intrinsics.throwUninitializedPropertyAccessException("logger");
+                    wrappedLogger3 = null;
+                }
+                wrappedLogger3.error(GoogleDrive.this, "Google Drive setupGoogleSignInAccount error.");
+                DaijishouApplication.WrappedLogger wrappedLogger4 = GoogleDrive.this.logger;
+                if (wrappedLogger4 == null) {
+                    Intrinsics.throwUninitializedPropertyAccessException("logger");
+                    wrappedLogger4 = null;
+                }
+                wrappedLogger4.error(GoogleDrive.this, ExceptionsKt.stackTraceToString(e));
+                return Unit.INSTANCE;
+            }
         }
 
         /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$setupGoogleSignInAccount$1$2, reason: invalid class name */
