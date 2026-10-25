@@ -8,6 +8,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Transformations;
 import com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity;
 import com.magneticchen.daijishou.repositories.RetroAchievementsRepository;
+import com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager;
 import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity;
 import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsGameRecordEntity;
 import kotlin.Metadata;
@@ -15,7 +16,9 @@ import kotlin.ResultKt;
 import kotlin.Triple;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.Boxing;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function1;
@@ -23,6 +26,7 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Ref;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
@@ -132,79 +136,39 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
                 }
             }
 
-            /* JADX WARN: Code restructure failed: missing block: B:18:0x006d, code lost:
-            
-                if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getIO(), new com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1.AnonymousClass1.C00591.C00601(r7.this$0, r7.$surjection, r1, null), r7) == r0) goto L19;
-             */
-
-            /*
-                Code decompiled incorrectly, please refer to instructions dump.
-                To view partially-correct add '--show-bad-code' argument
-            */
-            public final java.lang.Object invokeSuspendImpl(java.lang.Object r8) throws java.lang.Throwable {
-                /*
-                    r7 = this;
-                    java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-                    int r1 = r7.label
-                    r2 = 2
-                    r3 = 1
-                    if (r1 == 0) goto L22
-                    if (r1 == r3) goto L1a
-                    if (r1 != r2) goto L12
-                    kotlin.ResultKt.throwOnFailure(r8)
-                    goto L70
-                L12:
-                    java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
-                    java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-                    r8.<init>(r0)
-                    throw r8
-                L1a:
-                    java.lang.Object r1 = r7.L$0
-                    androidx.lifecycle.LiveDataScope r1 = (androidx.lifecycle.LiveDataScope) r1
-                    kotlin.ResultKt.throwOnFailure(r8)
-                    goto L44
-                L22:
-                    kotlin.ResultKt.throwOnFailure(r8)
-                    java.lang.Object r8 = r7.L$0
-                    r1 = r8
-                    androidx.lifecycle.LiveDataScope r1 = (androidx.lifecycle.LiveDataScope) r1
-                    com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity r8 = r7.$surjection
-                    if (r8 == 0) goto L44
-                    long r4 = r8.getGameId()
-                    java.lang.Long r8 = kotlin.coroutines.jvm.internal.Boxing.boxLong(r4)
-                    r4 = r7
-                    kotlin.coroutines.Continuation r4 = (kotlin.coroutines.Continuation) r4
-                    r7.L$0 = r1
-                    r7.label = r3
-                    java.lang.Object r8 = r1.emit(r8, r4)
-                    if (r8 != r0) goto L44
-                    goto L6f
-                L44:
-                    java.lang.Boolean r8 = r7.$enableRA
-                    java.lang.Boolean r3 = kotlin.coroutines.jvm.internal.Boxing.boxBoolean(r3)
-                    boolean r8 = kotlin.jvm.internal.Intrinsics.areEqual(r8, r3)
-                    if (r8 == 0) goto L70
-                    kotlinx.coroutines.CoroutineDispatcher r8 = kotlinx.coroutines.Dispatchers.getIO()
-                    kotlin.coroutines.CoroutineContext r8 = (kotlin.coroutines.CoroutineContext) r8
-                    com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1$1$1 r3 = new com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1$1$1
-                    com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment r4 = r7.this$0
-                    com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity r5 = r7.$surjection
-                    r6 = 0
-                    r3.<init>(r4, r5, r1, r6)
-                    kotlin.jvm.functions.Function2 r3 = (kotlin.jvm.functions.Function2) r3
-                    r1 = r7
-                    kotlin.coroutines.Continuation r1 = (kotlin.coroutines.Continuation) r1
-                    r7.L$0 = r6
-                    r7.label = r2
-                    java.lang.Object r8 = kotlinx.coroutines.BuildersKt.withContext(r8, r3, r1)
-                    if (r8 != r0) goto L70
-                L6f:
-                    return r0
-                L70:
-                    kotlin.Unit r8 = kotlin.Unit.INSTANCE
-                    return r8
-                */
-                throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1.AnonymousClass1.C00591.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+            public final Object invokeSuspendImpl(Object obj) throws Throwable {
+                Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                int i = this.label;
+                LiveDataScope<Long> liveDataScope;
+                if (i == 0) {
+                    ResultKt.throwOnFailure(obj);
+                    liveDataScope = (LiveDataScope) this.L$0;
+                    if (this.$surjection != null) {
+                        this.L$0 = liveDataScope;
+                        this.label = 1;
+                        if (liveDataScope.emit(Boxing.boxLong(this.$surjection.getGameId()), this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    }
+                } else if (i == 1) {
+                    liveDataScope = (LiveDataScope) this.L$0;
+                    ResultKt.throwOnFailure(obj);
+                } else if (i == 2) {
+                    ResultKt.throwOnFailure(obj);
+                    return Unit.INSTANCE;
+                } else {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                if (Intrinsics.areEqual(this.$enableRA, Boxing.boxBoolean(true))) {
+                    CoroutineContext io = (CoroutineContext) Dispatchers.getIO();
+                    C00601 c00601 = new C00601(this.this$0, this.$surjection, liveDataScope, null);
+                    this.L$0 = null;
+                    this.label = 2;
+                    if (BuildersKt.withContext(io, c00601, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+                return Unit.INSTANCE;
             }
 
             /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1$1$1, reason: invalid class name and collision with other inner class name */
@@ -243,72 +207,38 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
                     }
                 }
 
-                /* JADX WARN: Code restructure failed: missing block: B:20:0x0059, code lost:
-                
-                    if (r6.$$this$liveData.emit(null, r6) == r0) goto L21;
-                 */
-
-                /*
-                    Code decompiled incorrectly, please refer to instructions dump.
-                    To view partially-correct add '--show-bad-code' argument
-                */
-                public final java.lang.Object invokeSuspendImpl(java.lang.Object r7) throws java.lang.Throwable {
-                    /*
-                        r6 = this;
-                        java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-                        int r1 = r6.label
-                        r2 = 0
-                        r3 = 2
-                        r4 = 1
-                        if (r1 == 0) goto L1f
-                        if (r1 == r4) goto L1b
-                        if (r1 != r3) goto L13
-                        kotlin.ResultKt.throwOnFailure(r7)
-                        goto L5c
-                    L13:
-                        java.lang.IllegalStateException r7 = new java.lang.IllegalStateException
-                        java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-                        r7.<init>(r0)
-                        throw r7
-                    L1b:
-                        kotlin.ResultKt.throwOnFailure(r7)
-                        goto L42
-                    L1f:
-                        kotlin.ResultKt.throwOnFailure(r7)
-                        com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment r7 = r6.this$0
-                        com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager r7 = com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment.access$getRetroAchievementsManager(r7)
-                        com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment r1 = r6.this$0
-                        com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity r1 = com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment.access$getPlayableItemEntity$p(r1)
-                        if (r1 != 0) goto L36
-                        java.lang.String r1 = "playableItemEntity"
-                        kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r1)
-                        r1 = r2
-                    L36:
-                        r5 = r6
-                        kotlin.coroutines.Continuation r5 = (kotlin.coroutines.Continuation) r5
-                        r6.label = r4
-                        java.lang.Object r7 = r7.refreshPlayableItemIdToRetroAchievementsGameIdSurjectionByPlayableItemEntityIfExpired(r1, r5)
-                        if (r7 != r0) goto L42
-                        goto L5b
-                    L42:
-                        java.lang.Boolean r7 = (java.lang.Boolean) r7
-                        boolean r7 = r7.booleanValue()
-                        com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity r1 = r6.$surjection
-                        if (r1 != 0) goto L5c
-                        if (r7 != 0) goto L5c
-                        androidx.lifecycle.LiveDataScope<java.lang.Long> r7 = r6.$$this$liveData
-                        r1 = r6
-                        kotlin.coroutines.Continuation r1 = (kotlin.coroutines.Continuation) r1
-                        r6.label = r3
-                        java.lang.Object r7 = r7.emit(r2, r1)
-                        if (r7 != r0) goto L5c
-                    L5b:
-                        return r0
-                    L5c:
-                        kotlin.Unit r7 = kotlin.Unit.INSTANCE
-                        return r7
-                    */
-                    throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1.AnonymousClass1.C00591.C00601.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+                public final Object invokeSuspendImpl(Object obj) throws Throwable {
+                    Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                    int i = this.label;
+                    if (i == 0) {
+                        ResultKt.throwOnFailure(obj);
+                        RetroAchievementsManager retroAchievementsManager = this.this$0.getRetroAchievementsManager();
+                        PlayableItemEntity playableItemEntity = this.this$0.playableItemEntity;
+                        if (playableItemEntity == null) {
+                            Intrinsics.throwUninitializedPropertyAccessException("playableItemEntity");
+                            playableItemEntity = null;
+                        }
+                        this.label = 1;
+                        obj = retroAchievementsManager.refreshPlayableItemIdToRetroAchievementsGameIdSurjectionByPlayableItemEntityIfExpired(playableItemEntity, this);
+                        if (obj == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    } else if (i == 1) {
+                        ResultKt.throwOnFailure(obj);
+                    } else if (i == 2) {
+                        ResultKt.throwOnFailure(obj);
+                        return Unit.INSTANCE;
+                    } else {
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                    }
+                    boolean booleanValue = ((Boolean) obj).booleanValue();
+                    if (this.$surjection == null && !booleanValue) {
+                        this.label = 2;
+                        if (this.$$this$liveData.emit(null, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    }
+                    return Unit.INSTANCE;
                 }
             }
         }
@@ -390,111 +320,56 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
                     }
                 }
 
-                /* JADX WARN: Code duplicated, block: B:25:0x005d  */
-                /* JADX WARN: Code restructure failed: missing block: B:26:0x0077, code lost:
-                
-                    if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getIO(), new com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1.AnonymousClass2.AnonymousClass1.C00611.C00621(r9.this$0, r9.$gameId, null), r9) == r0) goto L33;
-                 */
-                /* JADX WARN: Code restructure failed: missing block: B:29:0x0083, code lost:
-                
-                    if (r10.emit(null, r9) == r0) goto L33;
-                 */
-                /* JADX WARN: Code restructure failed: missing block: B:32:0x008f, code lost:
-                
-                    if (r10.emit(null, r9) == r0) goto L33;
-                 */
-
-                /*
-                    Code decompiled incorrectly, please refer to instructions dump.
-                    To view partially-correct add '--show-bad-code' argument
-                */
-                public final java.lang.Object invokeSuspendImpl(java.lang.Object r10) throws java.lang.Throwable {
-                    /*
-                        r9 = this;
-                        java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-                        int r1 = r9.label
-                        r2 = 4
-                        r3 = 3
-                        r4 = 2
-                        r5 = 0
-                        r6 = 1
-                        if (r1 == 0) goto L27
-                        if (r1 == r6) goto L23
-                        if (r1 == r4) goto L1e
-                        if (r1 == r3) goto L1e
-                        if (r1 != r2) goto L16
-                        goto L1e
-                    L16:
-                        java.lang.IllegalStateException r10 = new java.lang.IllegalStateException
-                        java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-                        r10.<init>(r0)
-                        throw r10
-                    L1e:
-                        kotlin.ResultKt.throwOnFailure(r10)
-                        goto L92
-                    L23:
-                        kotlin.ResultKt.throwOnFailure(r10)
-                        goto L5d
-                    L27:
-                        kotlin.ResultKt.throwOnFailure(r10)
-                        java.lang.Object r10 = r9.L$0
-                        androidx.lifecycle.LiveDataScope r10 = (androidx.lifecycle.LiveDataScope) r10
-                        java.lang.Boolean r1 = r9.$enableRA
-                        java.lang.Boolean r7 = kotlin.coroutines.jvm.internal.Boxing.boxBoolean(r6)
-                        boolean r1 = kotlin.jvm.internal.Intrinsics.areEqual(r1, r7)
-                        if (r1 == 0) goto L86
-                        java.lang.Long r1 = r9.$gameId
-                        com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity$Companion r2 = com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity.INSTANCE
-                        long r7 = r2.getNULL_GAME_ID()
-                        if (r1 != 0) goto L45
-                        goto L4d
-                    L45:
-                        long r1 = r1.longValue()
-                        int r1 = (r1 > r7 ? 1 : (r1 == r7 ? 0 : -1))
-                        if (r1 == 0) goto L7a
-                    L4d:
-                        com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsGameRecordEntity r1 = r9.$gameRecord
-                        if (r1 == 0) goto L5d
-                        r2 = r9
-                        kotlin.coroutines.Continuation r2 = (kotlin.coroutines.Continuation) r2
-                        r9.label = r6
-                        java.lang.Object r10 = r10.emit(r1, r2)
-                        if (r10 != r0) goto L5d
-                        goto L91
-                    L5d:
-                        kotlinx.coroutines.CoroutineDispatcher r10 = kotlinx.coroutines.Dispatchers.getIO()
-                        kotlin.coroutines.CoroutineContext r10 = (kotlin.coroutines.CoroutineContext) r10
-                        com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2$1$1$1 r1 = new com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2$1$1$1
-                        com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment r2 = r9.this$0
-                        java.lang.Long r3 = r9.$gameId
-                        r1.<init>(r2, r3, r5)
-                        kotlin.jvm.functions.Function2 r1 = (kotlin.jvm.functions.Function2) r1
-                        r2 = r9
-                        kotlin.coroutines.Continuation r2 = (kotlin.coroutines.Continuation) r2
-                        r9.label = r4
-                        java.lang.Object r10 = kotlinx.coroutines.BuildersKt.withContext(r10, r1, r2)
-                        if (r10 != r0) goto L92
-                        goto L91
-                    L7a:
-                        r1 = r9
-                        kotlin.coroutines.Continuation r1 = (kotlin.coroutines.Continuation) r1
-                        r9.label = r3
-                        java.lang.Object r10 = r10.emit(r5, r1)
-                        if (r10 != r0) goto L92
-                        goto L91
-                    L86:
-                        r1 = r9
-                        kotlin.coroutines.Continuation r1 = (kotlin.coroutines.Continuation) r1
-                        r9.label = r2
-                        java.lang.Object r10 = r10.emit(r5, r1)
-                        if (r10 != r0) goto L92
-                    L91:
-                        return r0
-                    L92:
-                        kotlin.Unit r10 = kotlin.Unit.INSTANCE
-                        return r10
-                    */
-                    throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1.AnonymousClass2.AnonymousClass1.C00611.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+                public final Object invokeSuspendImpl(Object obj) throws Throwable {
+                    Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                    int i = this.label;
+                    LiveDataScope<RetroAchievementsGameRecordEntity> liveDataScope;
+                    if (i == 0) {
+                        ResultKt.throwOnFailure(obj);
+                        liveDataScope = (LiveDataScope) this.L$0;
+                        if (Intrinsics.areEqual(this.$enableRA, Boxing.boxBoolean(true))) {
+                            long nullGameId = RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity.INSTANCE.getNULL_GAME_ID();
+                            if (this.$gameId == null || this.$gameId.longValue() != nullGameId) {
+                                if (this.$gameRecord != null) {
+                                    this.label = 1;
+                                    if (liveDataScope.emit(this.$gameRecord, this) == coroutine_suspended) {
+                                        return coroutine_suspended;
+                                    }
+                                }
+                                CoroutineContext io = (CoroutineContext) Dispatchers.getIO();
+                                C00621 c00621 = new C00621(this.this$0, this.$gameId, null);
+                                this.label = 2;
+                                if (BuildersKt.withContext(io, c00621, this) == coroutine_suspended) {
+                                    return coroutine_suspended;
+                                }
+                                return Unit.INSTANCE;
+                            }
+                            this.label = 3;
+                            if (liveDataScope.emit(null, this) == coroutine_suspended) {
+                                return coroutine_suspended;
+                            }
+                            return Unit.INSTANCE;
+                        }
+                        this.label = 4;
+                        if (liveDataScope.emit(null, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    } else if (i == 1) {
+                        ResultKt.throwOnFailure(obj);
+                        CoroutineContext io2 = (CoroutineContext) Dispatchers.getIO();
+                        C00621 c006212 = new C00621(this.this$0, this.$gameId, null);
+                        this.label = 2;
+                        if (BuildersKt.withContext(io2, c006212, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    } else if (i == 2 || i == 3 || i == 4) {
+                        ResultKt.throwOnFailure(obj);
+                        return Unit.INSTANCE;
+                    } else {
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                    }
                 }
 
                 /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2$1$1$1, reason: invalid class name and collision with other inner class name */
