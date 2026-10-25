@@ -20,6 +20,7 @@ import com.google.android.material.imageview.ShapeableImageView;
 import com.magneticchen.daijishou.DaijishouApplication;
 import com.magneticchen.daijishou.R;
 import com.magneticchen.daijishou.daijishou_widget.abstract_widget_classes.WidgetFaceFragment;
+import com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager;
 import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserProfileEntity;
 import java.util.List;
 import kotlin.Metadata;
@@ -233,63 +234,34 @@ public final class RetroAchievementsFaceFragment extends WidgetFaceFragment {
                 if (kotlinx.coroutines.BuildersKt.withContext(r6, r1, r5) == r0) goto L19;
              */
 
-            /*
-                Code decompiled incorrectly, please refer to instructions dump.
-                To view partially-correct add '--show-bad-code' argument
-            */
-            public final java.lang.Object invokeSuspendImpl(java.lang.Object r6) throws java.lang.Throwable {
-                /*
-                    r5 = this;
-                    java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-                    int r1 = r5.label
-                    r2 = 2
-                    r3 = 1
-                    if (r1 == 0) goto L1e
-                    if (r1 == r3) goto L1a
-                    if (r1 != r2) goto L12
-                    kotlin.ResultKt.throwOnFailure(r6)
-                    goto L58
-                L12:
-                    java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
-                    java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-                    r6.<init>(r0)
-                    throw r6
-                L1a:
-                    kotlin.ResultKt.throwOnFailure(r6)
-                    goto L33
-                L1e:
-                    kotlin.ResultKt.throwOnFailure(r6)
-                    com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment r6 = r5.this$0
-                    com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager r6 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment.access$getRetroAchievementsManager(r6)
-                    r1 = r5
-                    kotlin.coroutines.Continuation r1 = (kotlin.coroutines.Continuation) r1
-                    r5.label = r3
-                    java.lang.Object r6 = r6.getMyRetroAchievementsUsername(r1)
-                    if (r6 != r0) goto L33
-                    goto L57
-                L33:
-                    java.lang.String r6 = (java.lang.String) r6
-                    if (r6 == 0) goto L58
-                    java.util.List<java.lang.String> r1 = r5.$it
-                    com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment r3 = r5.this$0
-                    boolean r6 = r1.contains(r6)
-                    if (r6 == 0) goto L58
-                    kotlinx.coroutines.MainCoroutineDispatcher r6 = kotlinx.coroutines.Dispatchers.getMain()
-                    kotlin.coroutines.CoroutineContext r6 = (kotlin.coroutines.CoroutineContext) r6
-                    com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$3$1$1$1 r1 = new com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$3$1$1$1
-                    r4 = 0
-                    r1.<init>(r3, r4)
-                    kotlin.jvm.functions.Function2 r1 = (kotlin.jvm.functions.Function2) r1
-                    r5.label = r2
-                    java.lang.Object r6 = kotlinx.coroutines.BuildersKt.withContext(r6, r1, r5)
-                    if (r6 != r0) goto L58
-                L57:
-                    return r0
-                L58:
-                    kotlin.Unit r6 = kotlin.Unit.INSTANCE
-                    return r6
-                */
-                throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment.AnonymousClass3.AnonymousClass1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+            public final Object invokeSuspendImpl(Object obj) throws Throwable {
+                Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                int i = this.label;
+                if (i == 0) {
+                    ResultKt.throwOnFailure(obj);
+                    RetroAchievementsManager retroAchievementsManager = RetroAchievementsFaceFragment.this.getRetroAchievementsManager();
+                    this.label = 1;
+                    obj = retroAchievementsManager.getMyRetroAchievementsUsername(this);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } else if (i == 1) {
+                    ResultKt.throwOnFailure(obj);
+                } else if (i == 2) {
+                    ResultKt.throwOnFailure(obj);
+                    return Unit.INSTANCE;
+                } else {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                String username = (String) obj;
+                if (username != null && this.$it.contains(username)) {
+                    RetroAchievementsFaceFragment$onCreateView$3$1$1$1 callback = new RetroAchievementsFaceFragment$onCreateView$3$1$1$1(RetroAchievementsFaceFragment.this, null);
+                    this.label = 2;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), callback, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+                return Unit.INSTANCE;
             }
         }
 
@@ -334,84 +306,40 @@ public final class RetroAchievementsFaceFragment extends WidgetFaceFragment {
             }
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:18:0x0054, code lost:
-        
-            if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment.AnonymousClass4.AnonymousClass1(r5.this$0, null), r5) == r0) goto L22;
-         */
-        /* JADX WARN: Code restructure failed: missing block: B:21:0x0066, code lost:
-        
-            if (r5.this$0.getRetroAchievementsManager().refreshRetroAchievementsUserProfileDataIfExpired(r6, r5) == r0) goto L22;
-         */
-
-        /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r6) throws java.lang.Throwable {
-            /*
-                r5 = this;
-                java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-                int r1 = r5.label
-                r2 = 3
-                r3 = 2
-                r4 = 1
-                if (r1 == 0) goto L22
-                if (r1 == r4) goto L1e
-                if (r1 == r3) goto L1a
-                if (r1 != r2) goto L12
-                goto L1a
-            L12:
-                java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
-                java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-                r6.<init>(r0)
-                throw r6
-            L1a:
-                kotlin.ResultKt.throwOnFailure(r6)
-                goto L69
-            L1e:
-                kotlin.ResultKt.throwOnFailure(r6)
-                goto L37
-            L22:
-                kotlin.ResultKt.throwOnFailure(r6)
-                com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment r6 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment.this
-                com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager r6 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment.access$getRetroAchievementsManager(r6)
-                r1 = r5
-                kotlin.coroutines.Continuation r1 = (kotlin.coroutines.Continuation) r1
-                r5.label = r4
-                java.lang.Object r6 = r6.getMyRetroAchievementsUsername(r1)
-                if (r6 != r0) goto L37
-                goto L68
-            L37:
-                java.lang.String r6 = (java.lang.String) r6
-                if (r6 != 0) goto L57
-                kotlinx.coroutines.MainCoroutineDispatcher r6 = kotlinx.coroutines.Dispatchers.getMain()
-                kotlin.coroutines.CoroutineContext r6 = (kotlin.coroutines.CoroutineContext) r6
-                com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$4$1 r1 = new com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$4$1
-                com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment r2 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment.this
-                r4 = 0
-                r1.<init>(r2, r4)
-                kotlin.jvm.functions.Function2 r1 = (kotlin.jvm.functions.Function2) r1
-                r2 = r5
-                kotlin.coroutines.Continuation r2 = (kotlin.coroutines.Continuation) r2
-                r5.label = r3
-                java.lang.Object r6 = kotlinx.coroutines.BuildersKt.withContext(r6, r1, r2)
-                if (r6 != r0) goto L69
-                goto L68
-            L57:
-                com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment r1 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment.this
-                com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager r1 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment.access$getRetroAchievementsManager(r1)
-                r3 = r5
-                kotlin.coroutines.Continuation r3 = (kotlin.coroutines.Continuation) r3
-                r5.label = r2
-                java.lang.Object r6 = r1.refreshRetroAchievementsUserProfileDataIfExpired(r6, r3)
-                if (r6 != r0) goto L69
-            L68:
-                return r0
-            L69:
-                kotlin.Unit r6 = kotlin.Unit.INSTANCE
-                return r6
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment.AnonymousClass4.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                RetroAchievementsManager retroAchievementsManager = RetroAchievementsFaceFragment.this.getRetroAchievementsManager();
+                this.label = 1;
+                obj = retroAchievementsManager.getMyRetroAchievementsUsername(this);
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+            } else if (i == 2 || i == 3) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            String username = (String) obj;
+            if (username == null) {
+                AnonymousClass1 callback = new AnonymousClass1(RetroAchievementsFaceFragment.this, null);
+                this.label = 2;
+                if (BuildersKt.withContext(Dispatchers.getMain(), callback, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else {
+                RetroAchievementsManager retroAchievementsManager2 = RetroAchievementsFaceFragment.this.getRetroAchievementsManager();
+                this.label = 3;
+                if (retroAchievementsManager2.refreshRetroAchievementsUserProfileDataIfExpired(username, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+            return Unit.INSTANCE;
         }
 
         /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$4$1, reason: invalid class name */
