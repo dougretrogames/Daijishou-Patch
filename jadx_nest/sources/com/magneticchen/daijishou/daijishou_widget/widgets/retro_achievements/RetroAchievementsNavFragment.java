@@ -51,9 +51,11 @@ import java.util.Arrays;
 import java.util.List;
 import kotlin.Lazy;
 import kotlin.Metadata;
+import kotlin.ResultKt;
 import kotlin.Triple;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function1;
@@ -162,108 +164,68 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         if (r0.getScrollX() == 0) goto L19;
      */
     @Override // com.magneticchen.daijishou.abstract_fragment_classes.DaijishouFragment
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
     public boolean onBackPressed() {
-        /*
-            r8 = this;
-            boolean r0 = r8.scrollingOnBackPressed
-            java.lang.String r1 = "scrollView"
-            java.lang.String r2 = "refreshButton"
-            r3 = 1
-            java.lang.String r4 = "recyclerView"
-            r5 = 0
-            r6 = 0
-            if (r0 == 0) goto L1c
-            com.magneticchen.daijishou.daijishou_recycler_view.DaijishouRecyclerView r0 = r8.recyclerView
-            if (r0 != 0) goto L15
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r4)
-            r0 = r6
-        L15:
-            int r0 = r0.getScrollState()
-            r7 = 2
-            if (r0 == r7) goto L38
-        L1c:
-            com.magneticchen.daijishou.daijishou_recycler_view.DaijishouRecyclerView r0 = r8.recyclerView
-            if (r0 != 0) goto L24
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r4)
-            r0 = r6
-        L24:
-            int r0 = r0.computeVerticalScrollOffset()
-            if (r0 != 0) goto L77
-            android.widget.HorizontalScrollView r0 = r8.scrollView
-            if (r0 != 0) goto L32
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r1)
-            r0 = r6
-        L32:
-            int r0 = r0.getScrollX()
-            if (r0 != 0) goto L77
-        L38:
-            com.magneticchen.daijishou.daijishou_recycler_view.DaijishouRecyclerView r0 = r8.recyclerView
-            if (r0 != 0) goto L40
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r4)
-            r0 = r6
-        L40:
-            r0.scrollToPosition(r5)
-            android.widget.HorizontalScrollView r0 = r8.scrollView
-            if (r0 != 0) goto L4b
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r1)
-            r0 = r6
-        L4b:
-            r0.scrollTo(r5, r5)
-            com.google.android.material.chip.Chip r0 = r8.refreshButton
-            if (r0 != 0) goto L56
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r2)
-            r0 = r6
-        L56:
-            boolean r0 = r0.isFocused()
-            if (r0 == 0) goto L5d
-            return r3
-        L5d:
-            com.google.android.material.chip.Chip r0 = r8.refreshButton
-            if (r0 != 0) goto L65
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r2)
-            r0 = r6
-        L65:
-            r0.requestFocus()
-            com.google.android.material.chip.Chip r0 = r8.refreshButton
-            if (r0 != 0) goto L70
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r2)
-            goto L71
-        L70:
-            r6 = r0
-        L71:
-            boolean r0 = r6.isFocused()
-            r0 = r0 ^ r3
-            return r0
-        L77:
-            r8.scrollingOnBackPressed = r3
-            r8.refocusOnScrolledToTop = r3
-            com.google.android.material.chip.Chip r0 = r8.refreshButton
-            if (r0 != 0) goto L83
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r2)
-            r0 = r6
-        L83:
-            r0.requestFocus()
-            com.magneticchen.daijishou.daijishou_recycler_view.DaijishouRecyclerView r0 = r8.recyclerView
-            if (r0 != 0) goto L8e
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r4)
-            r0 = r6
-        L8e:
-            r0.smoothScrollToPosition(r5)
-            android.widget.HorizontalScrollView r0 = r8.scrollView
-            if (r0 != 0) goto L99
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r1)
-            goto L9a
-        L99:
-            r6 = r0
-        L9a:
-            r6.smoothScrollTo(r5, r5)
-            return r5
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment.onBackPressed():boolean");
+        DaijishouRecyclerView daijishouRecyclerView = this.recyclerView;
+        if (daijishouRecyclerView == null) {
+            Intrinsics.throwUninitializedPropertyAccessException("recyclerView");
+            daijishouRecyclerView = null;
+        }
+        int scrollState = daijishouRecyclerView.getScrollState();
+        if ((this.scrollingOnBackPressed && scrollState == 2) || (daijishouRecyclerView.computeVerticalScrollOffset() == 0 && (this.scrollView != null ? this.scrollView : null) != null && (this.scrollView.getScrollX() == 0))) {
+            DaijishouRecyclerView daijishouRecyclerView2 = this.recyclerView;
+            if (daijishouRecyclerView2 == null) {
+                Intrinsics.throwUninitializedPropertyAccessException("recyclerView");
+                daijishouRecyclerView2 = null;
+            }
+            daijishouRecyclerView2.scrollToPosition(0);
+            android.widget.HorizontalScrollView horizontalScrollView = this.scrollView;
+            if (horizontalScrollView == null) {
+                Intrinsics.throwUninitializedPropertyAccessException("scrollView");
+                horizontalScrollView = null;
+            }
+            horizontalScrollView.scrollTo(0, 0);
+            Chip chip = this.refreshButton;
+            if (chip == null) {
+                Intrinsics.throwUninitializedPropertyAccessException("refreshButton");
+                chip = null;
+            }
+            if (chip.isFocused()) {
+                return true;
+            }
+            Chip chip2 = this.refreshButton;
+            if (chip2 == null) {
+                Intrinsics.throwUninitializedPropertyAccessException("refreshButton");
+                chip2 = null;
+            }
+            chip2.requestFocus();
+            Chip chip3 = this.refreshButton;
+            if (chip3 == null) {
+                Intrinsics.throwUninitializedPropertyAccessException("refreshButton");
+                chip3 = null;
+            }
+            return !chip3.isFocused();
+        }
+        this.scrollingOnBackPressed = true;
+        this.refocusOnScrolledToTop = true;
+        Chip chip4 = this.refreshButton;
+        if (chip4 == null) {
+            Intrinsics.throwUninitializedPropertyAccessException("refreshButton");
+            chip4 = null;
+        }
+        chip4.requestFocus();
+        DaijishouRecyclerView daijishouRecyclerView3 = this.recyclerView;
+        if (daijishouRecyclerView3 == null) {
+            Intrinsics.throwUninitializedPropertyAccessException("recyclerView");
+            daijishouRecyclerView3 = null;
+        }
+        daijishouRecyclerView3.smoothScrollToPosition(0);
+        android.widget.HorizontalScrollView horizontalScrollView2 = this.scrollView;
+        if (horizontalScrollView2 == null) {
+            Intrinsics.throwUninitializedPropertyAccessException("scrollView");
+            horizontalScrollView2 = null;
+        }
+        horizontalScrollView2.smoothScrollTo(0, 0);
+        return false;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -524,7 +486,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         @Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0010\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0003H\u0002J\u0018\u0010\u0017\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u0003H\u0016J\b\u0010\u001b\u001a\u00020\u001cH\u0016J\b\u0010\u001d\u001a\u00020\u0015H\u0016R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001e"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$GameListAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$GameListAdapter;Landroid/view/View;)V", "description", "Landroid/widget/TextView;", "gameId", "", "imageView", "Landroid/widget/ImageView;", "linearProgressIndicator", "Lcom/google/android/material/progressindicator/LinearProgressIndicator;", "pointsSubtitle", "progress", "", "systemIcon", "title", "loadGameData", "", "retroAchievementsGameRecord", "onBind", "position", "", "item", "onClick", "", "onFocus", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<RetroAchievementsGameRecordEntity>.ViewHolder {
             private final TextView description;
-            private long gameId;
+            long gameId;
             private final ImageView imageView;
             private final LinearProgressIndicator linearProgressIndicator;
             private final TextView pointsSubtitle;
@@ -1432,63 +1394,35 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
                 if (kotlinx.coroutines.BuildersKt.withContext(r6, r1, r5) == r0) goto L19;
              */
 
-            /*
-                Code decompiled incorrectly, please refer to instructions dump.
-                To view partially-correct add '--show-bad-code' argument
-            */
-            public final java.lang.Object invokeSuspendImpl(java.lang.Object r6) throws java.lang.Throwable {
-                /*
-                    r5 = this;
-                    java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-                    int r1 = r5.label
-                    r2 = 2
-                    r3 = 1
-                    if (r1 == 0) goto L1e
-                    if (r1 == r3) goto L1a
-                    if (r1 != r2) goto L12
-                    kotlin.ResultKt.throwOnFailure(r6)
-                    goto L58
-                L12:
-                    java.lang.IllegalStateException r6 = new java.lang.IllegalStateException
-                    java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-                    r6.<init>(r0)
-                    throw r6
-                L1a:
-                    kotlin.ResultKt.throwOnFailure(r6)
-                    goto L33
-                L1e:
-                    kotlin.ResultKt.throwOnFailure(r6)
-                    com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment r6 = r5.this$0
-                    com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager r6 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment.access$getRetroAchievementsManager(r6)
-                    r1 = r5
-                    kotlin.coroutines.Continuation r1 = (kotlin.coroutines.Continuation) r1
-                    r5.label = r3
-                    java.lang.Object r6 = r6.getMyRetroAchievementsUsername(r1)
-                    if (r6 != r0) goto L33
-                    goto L57
-                L33:
-                    java.lang.String r6 = (java.lang.String) r6
-                    if (r6 == 0) goto L58
-                    java.util.List<java.lang.String> r1 = r5.$it
-                    com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment r3 = r5.this$0
-                    boolean r6 = r1.contains(r6)
-                    if (r6 == 0) goto L58
-                    kotlinx.coroutines.MainCoroutineDispatcher r6 = kotlinx.coroutines.Dispatchers.getMain()
-                    kotlin.coroutines.CoroutineContext r6 = (kotlin.coroutines.CoroutineContext) r6
-                    com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$10$1$1$1 r1 = new com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$10$1$1$1
-                    r4 = 0
-                    r1.<init>(r3, r4)
-                    kotlin.jvm.functions.Function2 r1 = (kotlin.jvm.functions.Function2) r1
-                    r5.label = r2
-                    java.lang.Object r6 = kotlinx.coroutines.BuildersKt.withContext(r6, r1, r5)
-                    if (r6 != r0) goto L58
-                L57:
-                    return r0
-                L58:
-                    kotlin.Unit r6 = kotlin.Unit.INSTANCE
-                    return r6
-                */
-                throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment.AnonymousClass10.AnonymousClass1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+            public final Object invokeSuspendImpl(Object obj) throws Throwable {
+                Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                int i = this.label;
+                if (i != 0) {
+                    if (i == 1) {
+                        ResultKt.throwOnFailure(obj);
+                    } else {
+                        if (i != 2) {
+                            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                        }
+                        ResultKt.throwOnFailure(obj);
+                        return Unit.INSTANCE;
+                    }
+                } else {
+                    ResultKt.throwOnFailure(obj);
+                    this.label = 1;
+                    obj = this.this$0.getRetroAchievementsManager().getMyRetroAchievementsUsername(this);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+                String str = (String) obj;
+                if (str != null && this.$it.contains(str)) {
+                    this.label = 2;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new RetroAchievementsNavFragment$onCreateView$10$1$1$1(this.this$0, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+                return Unit.INSTANCE;
             }
         }
 
@@ -1591,55 +1525,35 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
             if (r1.refreshRetroAchievementsUserProfileDataIfExpired(r5, r4) == r0) goto L17;
          */
 
-        /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r5) throws java.lang.Throwable {
-            /*
-                r4 = this;
-                java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-                int r1 = r4.label
-                r2 = 2
-                r3 = 1
-                if (r1 == 0) goto L1e
-                if (r1 == r3) goto L1a
-                if (r1 != r2) goto L12
-                kotlin.ResultKt.throwOnFailure(r5)
-                goto L46
-            L12:
-                java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
-                java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-                r5.<init>(r0)
-                throw r5
-            L1a:
-                kotlin.ResultKt.throwOnFailure(r5)
-                goto L33
-            L1e:
-                kotlin.ResultKt.throwOnFailure(r5)
-                com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment r5 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment.this
-                com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager r5 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment.access$getRetroAchievementsManager(r5)
-                r1 = r4
-                kotlin.coroutines.Continuation r1 = (kotlin.coroutines.Continuation) r1
-                r4.label = r3
-                java.lang.Object r5 = r5.getMyRetroAchievementsUsername(r1)
-                if (r5 != r0) goto L33
-                goto L45
-            L33:
-                java.lang.String r5 = (java.lang.String) r5
-                if (r5 == 0) goto L46
-                com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment r1 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment.this
-                com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager r1 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment.access$getRetroAchievementsManager(r1)
-                r4.label = r2
-                java.lang.Object r5 = r1.refreshRetroAchievementsUserProfileDataIfExpired(r5, r4)
-                if (r5 != r0) goto L46
-            L45:
-                return r0
-            L46:
-                kotlin.Unit r5 = kotlin.Unit.INSTANCE
-                return r5
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment.AnonymousClass12.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i != 0) {
+                if (i == 1) {
+                    ResultKt.throwOnFailure(obj);
+                } else {
+                    if (i != 2) {
+                        throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                    }
+                    ResultKt.throwOnFailure(obj);
+                    return Unit.INSTANCE;
+                }
+            } else {
+                ResultKt.throwOnFailure(obj);
+                this.label = 1;
+                obj = RetroAchievementsNavFragment.this.getRetroAchievementsManager().getMyRetroAchievementsUsername(this);
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+            String str = (String) obj;
+            if (str != null) {
+                this.label = 2;
+                if (RetroAchievementsNavFragment.this.getRetroAchievementsManager().refreshRetroAchievementsUserProfileDataIfExpired(str, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+            return Unit.INSTANCE;
         }
     }
 

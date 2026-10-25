@@ -1,8 +1,10 @@
 package com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements;
 
 import kotlin.Metadata;
+import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
@@ -36,62 +38,35 @@ final class RetroAchievementsNavFragment$onCreateView$3$1 extends com.magneticch
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:16:0x004c, code lost:
-    
-        if (r1.refreshRetroAchievementsUserProfileData(r5, r4) == r0) goto L17;
-     */
-
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object invokeSuspendImpl(java.lang.Object r5) throws java.lang.Throwable {
-        /*
-            r4 = this;
-            java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r1 = r4.label
-            r2 = 2
-            r3 = 1
-            if (r1 == 0) goto L1e
-            if (r1 == r3) goto L1a
-            if (r1 != r2) goto L12
-            kotlin.ResultKt.throwOnFailure(r5)
-            goto L4f
-        L12:
-            java.lang.IllegalStateException r5 = new java.lang.IllegalStateException
-            java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-            r5.<init>(r0)
-            throw r5
-        L1a:
-            kotlin.ResultKt.throwOnFailure(r5)
-            goto L3c
-        L1e:
-            kotlin.ResultKt.throwOnFailure(r5)
-            com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment r5 = r4.this$0
-            com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager r5 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment.access$getRetroAchievementsManager(r5)
-            r5.resetCredentialsRetriedCount()
-            com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment r5 = r4.this$0
-            com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager r5 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment.access$getRetroAchievementsManager(r5)
-            r1 = r4
-            kotlin.coroutines.Continuation r1 = (kotlin.coroutines.Continuation) r1
-            r4.label = r3
-            java.lang.Object r5 = r5.getMyRetroAchievementsUsername(r1)
-            if (r5 != r0) goto L3c
-            goto L4e
-        L3c:
-            java.lang.String r5 = (java.lang.String) r5
-            if (r5 == 0) goto L4f
-            com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment r1 = r4.this$0
-            com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager r1 = com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment.access$getRetroAchievementsManager(r1)
-            r4.label = r2
-            java.lang.Object r5 = r1.refreshRetroAchievementsUserProfileData(r5, r4)
-            if (r5 != r0) goto L4f
-        L4e:
-            return r0
-        L4f:
-            kotlin.Unit r5 = kotlin.Unit.INSTANCE
-            return r5
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$3$1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+    public final Object invokeSuspendImpl(Object obj) throws Throwable {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        if (i != 0) {
+            if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+            } else {
+                if (i != 2) {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            }
+        } else {
+            ResultKt.throwOnFailure(obj);
+            this.this$0.getRetroAchievementsManager().resetCredentialsRetriedCount();
+            this.label = 1;
+            obj = this.this$0.getRetroAchievementsManager().getMyRetroAchievementsUsername(this);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        }
+        String str = (String) obj;
+        if (str != null) {
+            this.label = 2;
+            if (this.this$0.getRetroAchievementsManager().refreshRetroAchievementsUserProfileData(str, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        }
+        return Unit.INSTANCE;
     }
 }
