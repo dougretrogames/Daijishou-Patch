@@ -20,6 +20,7 @@ import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.Retro
 import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsGameRecordEntity;
 import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserAwardEntity;
 import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordEntity;
+import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserProfileEntity;
 import com.magneticchen.daijishou.utils.Utils;
 import com.magneticchen.daijishou.utils.UtilsKt;
 import java.time.LocalDate;
@@ -726,12 +727,195 @@ public final class RetroAchievementsManager {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object refreshRetroAchievementsCredentials(boolean r28, kotlin.coroutines.Continuation<?> r29) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 1282
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager.refreshRetroAchievementsCredentials(boolean, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object refreshRetroAchievementsCredentials(boolean z, Continuation<?> continuation) throws Throwable {
+        C02561 c02561;
+        if (continuation instanceof C02561) {
+            c02561 = (C02561) continuation;
+            if ((c02561.label & Integer.MIN_VALUE) != 0) {
+                c02561.label -= Integer.MIN_VALUE;
+            } else {
+                c02561 = new C02561(continuation);
+            }
+        } else {
+            c02561 = new C02561(continuation);
+        }
+        Object obj = c02561.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        RetroAchievementsManager retroAchievementsManager = this;
+        String username = null;
+        String webApiKey = null;
+        boolean toastOnSuccess = z;
+        int i = c02561.label;
+        try {
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                username = getRetroAchievementsSharedPreferences().getString("username", null);
+                if (username == null || (webApiKey = getRetroAchievementsSharedPreferences().getString("web_api_key", null)) == null) {
+                    return Unit.INSTANCE;
+                }
+                if (!Utils.INSTANCE.isNetworkAvailable(this.application)) {
+                    this.myUsername = username;
+                    this.retroInterface = null;
+                    c02561.label = 1;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new C02572(null), c02561) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                }
+                this.logger.debug(this, "before credentialsRefreshMutex.isLocked");
+                if (this.credentialsRefreshMutex.isLocked()) {
+                    this.logger.debug(this, "retroInterface: " + this.retroInterface);
+                    c02561.L$0 = this;
+                    c02561.L$1 = username;
+                    c02561.L$2 = webApiKey;
+                    c02561.Z$0 = toastOnSuccess;
+                    c02561.label = 2;
+                    if (Mutex.DefaultImpls.lock$default(this.credentialsRefreshMutex, null, c02561, 1, null) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    Mutex.DefaultImpls.unlock$default(this.credentialsRefreshMutex, null, 1, null);
+                    this.logger.debug(this, "retroInterface: " + this.retroInterface);
+                    if (this.retroInterface != null) {
+                        return Unit.INSTANCE;
+                    }
+                }
+                c02561.L$0 = this;
+                c02561.L$1 = username;
+                c02561.L$2 = webApiKey;
+                c02561.L$3 = this.credentialsRefreshMutex;
+                c02561.Z$0 = toastOnSuccess;
+                c02561.label = 4;
+                if (this.credentialsRefreshMutex.lock(null, c02561) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return this.performCredentialsRefresh(username, webApiKey, toastOnSuccess, c02561, coroutine_suspended);
+            } else if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else if (i == 2) {
+                toastOnSuccess = c02561.Z$0;
+                webApiKey = (String) c02561.L$2;
+                username = (String) c02561.L$1;
+                retroAchievementsManager = (RetroAchievementsManager) c02561.L$0;
+                ResultKt.throwOnFailure(obj);
+                Mutex.DefaultImpls.unlock$default(retroAchievementsManager.credentialsRefreshMutex, null, 1, null);
+                retroAchievementsManager.logger.debug(retroAchievementsManager, "retroInterface: " + retroAchievementsManager.retroInterface);
+                if (retroAchievementsManager.retroInterface != null) {
+                    return Unit.INSTANCE;
+                }
+                c02561.L$0 = retroAchievementsManager;
+                c02561.L$1 = username;
+                c02561.L$2 = webApiKey;
+                c02561.L$3 = retroAchievementsManager.credentialsRefreshMutex;
+                c02561.Z$0 = toastOnSuccess;
+                c02561.label = 4;
+                if (retroAchievementsManager.credentialsRefreshMutex.lock(null, c02561) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return retroAchievementsManager.performCredentialsRefresh(username, webApiKey, toastOnSuccess, c02561, coroutine_suspended);
+            } else if (i == 4) {
+                toastOnSuccess = c02561.Z$0;
+                webApiKey = (String) c02561.L$2;
+                username = (String) c02561.L$1;
+                retroAchievementsManager = (RetroAchievementsManager) c02561.L$0;
+                ResultKt.throwOnFailure(obj);
+                return retroAchievementsManager.performCredentialsRefresh(username, webApiKey, toastOnSuccess, c02561, coroutine_suspended);
+            } else if (i == 5) {
+                toastOnSuccess = c02561.Z$0;
+                webApiKey = (String) c02561.L$2;
+                username = (String) c02561.L$1;
+                retroAchievementsManager = (RetroAchievementsManager) c02561.L$0;
+                ResultKt.throwOnFailure(obj);
+                return retroAchievementsManager.handleCredentialsResult(obj, username, toastOnSuccess, c02561, coroutine_suspended);
+            } else if (i == 6) {
+                retroAchievementsManager = (RetroAchievementsManager) c02561.L$0;
+                ResultKt.throwOnFailure(obj);
+                return retroAchievementsManager.updateWatchlistLoop(c02561, coroutine_suspended);
+            } else if (i == 7 || i == 8 || i == 9 || i == 11 || i == 13) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+        } catch (Exception e) {
+            retroAchievementsManager.logger.warn(retroAchievementsManager, "retroInterface failed to create. Stack trace:\n" + ExceptionsKt.stackTraceToString(e));
+            retroAchievementsManager.myUsername = null;
+            retroAchievementsManager.retroInterface = null;
+            c02561.L$0 = null;
+            c02561.L$1 = null;
+            c02561.L$2 = null;
+            c02561.L$3 = null;
+            c02561.label = 11;
+            if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(null), c02561) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
+        }
+    }
+
+    private final Object performCredentialsRefresh(String username, String webApiKey, boolean toastOnSuccess, C02561 c02561, Object coroutine_suspended) throws Throwable {
+        try {
+            this.myUsername = username;
+            this.retroCredentials = new org.retroachivements.api.data.RetroCredentials(username, webApiKey);
+            this.retroInterface = new org.retroachivements.api.RetroClient(this.retroCredentials, false).getApi();
+            c02561.L$0 = this;
+            c02561.L$1 = username;
+            c02561.L$2 = webApiKey;
+            c02561.Z$0 = toastOnSuccess;
+            c02561.label = 5;
+            Object obj = org.retroachivements.api.RetroInterface.DefaultImpls.getConsoleIds$default(this.retroInterface, 0, 0, c02561, 3, null);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return handleCredentialsResult(obj, username, toastOnSuccess, c02561, coroutine_suspended);
+        } finally {
+            this.credentialsRefreshMutex.unlock(null);
+        }
+    }
+
+    private final Object handleCredentialsResult(Object obj, String username, boolean toastOnSuccess, C02561 c02561, Object coroutine_suspended) throws Throwable {
+        NetworkResponse networkResponse = (NetworkResponse) obj;
+        if ((networkResponse instanceof NetworkResponse.Success) && !RetroAchievementsManagerKt.areCredentialsInvalid(networkResponse)) {
+            Iterable<org.retroachivements.api.data.pojo.system.GetConsoleID.Response.Console> consolesList = (Iterable<org.retroachivements.api.data.pojo.system.GetConsoleID.Response.Console>) ((NetworkResponse.Success) networkResponse).getBody();
+            if (consolesList != null) {
+                for (org.retroachivements.api.data.pojo.system.GetConsoleID.Response.Console console : consolesList) {
+                    RetroAchievementsConsole c = new RetroAchievementsConsole(console.getId(), console.getName(), console.getIconUrl(), false, false);
+                    this.consoles.put(Long.valueOf(c.getId()), c);
+                }
+            }
+            this.myUsername = username;
+            c02561.L$0 = this;
+            c02561.label = 6;
+            if (BuildersKt.withContext(Dispatchers.getMain(), new RetroAchievementsManager$refreshRetroAchievementsCredentials$4$3(this, toastOnSuccess, null), c02561) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            this.logger.info(this, "retroInterface created.");
+            return updateWatchlistLoop(c02561, coroutine_suspended);
+        } else {
+            this.retroInterface = null;
+            if (networkResponse instanceof NetworkResponse.Error) {
+                ErrorResponse errorResponse = (ErrorResponse) ((NetworkResponse.Error) networkResponse).getBody();
+                Throwable error = ((NetworkResponse.Error) networkResponse).getError();
+                if (errorResponse != null) {
+                    throw new Exception(errorResponse.getMessage());
+                }
+                if (error != null) {
+                    throw error;
+                }
+            }
+            BuildersKt.withContext(Dispatchers.getMain(), new RetroAchievementsManager$refreshRetroAchievementsCredentials$4$1(this, null), c02561);
+            return Unit.INSTANCE;
+        }
+    }
+
+    private final Object updateWatchlistLoop(C02561 c02561, Object coroutine_suspended) throws Throwable {
+        for (Long consoleId : this.consoleWatchlist) {
+            c02561.label = 9;
+            if (refreshRetroAchievementsGameListByConsoleIdIfExpired(consoleId.longValue(), c02561) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        }
+        return Unit.INSTANCE;
     }
 
     static /* synthetic */ Object refreshRetroAchievementsCredentials$default(RetroAchievementsManager retroAchievementsManager, boolean z, Continuation continuation, int i, Object obj) throws Throwable {
@@ -1191,12 +1375,163 @@ public final class RetroAchievementsManager {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object refreshRetroAchievementsGameListByConsoleId(long r37, kotlin.coroutines.Continuation<?> r39) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 730
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager.refreshRetroAchievementsGameListByConsoleId(long, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object refreshRetroAchievementsGameListByConsoleId(long j, Continuation<? super Boolean> continuation) throws Throwable {
+        C02591 c02591;
+        if (continuation instanceof C02591) {
+            c02591 = (C02591) continuation;
+            if ((c02591.label & Integer.MIN_VALUE) != 0) {
+                c02591.label -= Integer.MIN_VALUE;
+            } else {
+                c02591 = new C02591(continuation);
+            }
+        } else {
+            c02591 = new C02591(continuation);
+        }
+        Object obj = c02591.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = c02591.label;
+        RetroAchievementsManager retroAchievementsManager = this;
+        long consoleId = j;
+        int succeed = 0;
+        try {
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                this.logger.debug(this, "refreshRetroAchievementsGameListByConsoleId, consoleId: " + j);
+                c02591.L$0 = this;
+                c02591.J$0 = j;
+                c02591.label = 1;
+                obj = getRetroInterface(c02591);
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else if (i == 1) {
+                consoleId = c02591.J$0;
+                retroAchievementsManager = (RetroAchievementsManager) c02591.L$0;
+                ResultKt.throwOnFailure(obj);
+            } else if (i == 2) {
+                succeed = c02591.I$0;
+                consoleId = c02591.J$0;
+                retroAchievementsManager = (RetroAchievementsManager) c02591.L$0;
+                ResultKt.throwOnFailure(obj);
+                RetroInterface retroInterface = retroAchievementsManager.retroInterface;
+                Intrinsics.checkNotNull(retroInterface);
+                c02591.L$0 = retroAchievementsManager;
+                c02591.J$0 = consoleId;
+                c02591.I$0 = succeed;
+                c02591.label = 3;
+                obj = RetroInterface.DefaultImpls.getGameList$default(retroInterface, consoleId, 0, 0, 0, 0, c02591, 30, null);
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return retroAchievementsManager.processGameListResult(obj, consoleId, succeed, c02591, coroutine_suspended);
+            } else if (i == 3) {
+                succeed = c02591.I$0;
+                consoleId = c02591.J$0;
+                retroAchievementsManager = (RetroAchievementsManager) c02591.L$0;
+                ResultKt.throwOnFailure(obj);
+                return retroAchievementsManager.processGameListResult(obj, consoleId, succeed, c02591, coroutine_suspended);
+            } else if (i == 4) {
+                succeed = c02591.I$0;
+                ResultKt.throwOnFailure(obj);
+                return Boxing.boxBoolean(succeed != 0);
+            } else if (i == 5) {
+                succeed = c02591.I$0;
+                ResultKt.throwOnFailure(obj);
+                return Boxing.boxBoolean(succeed != 0);
+            } else if (i == 6) {
+                Throwable th = (Throwable) c02591.L$0;
+                ResultKt.throwOnFailure(obj);
+                throw th;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+
+            RetroInterface retroInterface = (RetroInterface) obj;
+            if (retroInterface == null || retroAchievementsManager.refreshingConsoleIds.contains(Boxing.boxLong(consoleId))) {
+                return Boxing.boxBoolean(false);
+            }
+            retroAchievementsManager.refreshingConsoleIds.add(Boxing.boxLong(consoleId));
+            c02591.L$0 = retroAchievementsManager;
+            c02591.J$0 = consoleId;
+            c02591.I$0 = 1;
+            c02591.label = 2;
+            if (BuildersKt.withContext(Dispatchers.getMain(), new C02602(null), c02591) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            RetroInterface retroInterface2 = retroAchievementsManager.retroInterface;
+            Intrinsics.checkNotNull(retroInterface2);
+            c02591.L$0 = retroAchievementsManager;
+            c02591.J$0 = consoleId;
+            c02591.I$0 = 1;
+            c02591.label = 3;
+            obj = RetroInterface.DefaultImpls.getGameList$default(retroInterface2, consoleId, 0, 0, 0, 0, c02591, 30, null);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return retroAchievementsManager.processGameListResult(obj, consoleId, 1, c02591, coroutine_suspended);
+        } catch (Exception e) {
+            retroAchievementsManager.logger.error(retroAchievementsManager, ExceptionsKt.stackTraceToString(e));
+            retroAchievementsManager.refreshingConsoleIds.remove(Boxing.boxLong(consoleId));
+            c02591.L$0 = null;
+            c02591.I$0 = 0;
+            c02591.label = 5;
+            if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass4(null), c02591) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Boxing.boxBoolean(false);
+        } catch (Throwable th) {
+            retroAchievementsManager.refreshingConsoleIds.remove(Boxing.boxLong(consoleId));
+            c02591.L$0 = th;
+            c02591.label = 6;
+            if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass4(null), c02591) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            throw th;
+        }
+    }
+
+    private final Object processGameListResult(Object resultObj, long consoleId, int succeed, C02591 c02591, Object coroutine_suspended) throws Throwable {
+        NetworkResponse networkResponse = (NetworkResponse) resultObj;
+        if (networkResponse instanceof NetworkResponse.Success) {
+            org.retroachivements.api.data.pojo.system.GetGameList.Response body = (org.retroachivements.api.data.pojo.system.GetGameList.Response) ((NetworkResponse.Success) networkResponse).getBody();
+            List<RetroAchievementsUserIndependentGameRecordEntity> list = new ArrayList<>();
+            Date now = new Date();
+            for (org.retroachivements.api.data.pojo.system.GetGameList.Response.Game game : body) {
+                RetroAchievementsUserIndependentGameRecordEntity entity = new RetroAchievementsUserIndependentGameRecordEntity();
+                entity.setId(game.getId());
+                entity.setName(game.getTitle());
+                entity.setUrl("https://retroachievements.org/game/" + game.getId());
+                entity.setImageUrl(game.getImageIcon());
+                entity.setForumTopicId(Boxing.boxLong(game.getForumTopicId()));
+                entity.setConsoleId(Boxing.boxLong(game.getConsoleId()));
+                entity.setConsoleName(game.getConsoleName());
+                entity.setAchievementsCount(game.getNumAchievements());
+                entity.setPoints(game.getPoints());
+                String dateModified = game.getDateModified();
+                entity.setDateModified(dateModified != null ? toRetroAchievementsDate(dateModified) : null);
+                entity.setLastUpdatedTimestamp(now);
+                list.add(entity);
+            }
+            getRetroAchievementsRepository().deleteRetroAchievementsUserIndependentGameRecordsByConsoleId(consoleId);
+            getRetroAchievementsRepository().addRetroAchievementsUserIndependentGameRecords(list.toArray(new RetroAchievementsUserIndependentGameRecordEntity[0]));
+        } else if (networkResponse instanceof NetworkResponse.Error) {
+            ErrorResponse errorResponse = (ErrorResponse) ((NetworkResponse.Error) networkResponse).getBody();
+            Throwable error = ((NetworkResponse.Error) networkResponse).getError();
+            if (errorResponse != null) {
+                throw new Exception(errorResponse.getMessage());
+            }
+            if (error != null) {
+                throw error;
+            }
+        }
+        this.refreshingConsoleIds.remove(Boxing.boxLong(consoleId));
+        c02591.L$0 = null;
+        c02591.I$0 = succeed;
+        c02591.label = 4;
+        if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass4(null), c02591) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Boxing.boxBoolean(succeed != 0);
     }
 
     /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager$refreshRetroAchievementsGameListByConsoleId$2, reason: invalid class name and case insensitive filesystem */
@@ -2675,12 +3010,64 @@ public final class RetroAchievementsManager {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object refreshRetroAchievementsUserProfileDataIfExpired(java.lang.String r14, kotlin.coroutines.Continuation<?> r15) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 222
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager.refreshRetroAchievementsUserProfileDataIfExpired(java.lang.String, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object refreshRetroAchievementsUserProfileDataIfExpired(String str, Continuation<?> continuation) throws Throwable {
+        C02641 c02641;
+        if (continuation instanceof C02641) {
+            c02641 = (C02641) continuation;
+            if ((c02641.label & Integer.MIN_VALUE) != 0) {
+                c02641.label -= Integer.MIN_VALUE;
+            } else {
+                c02641 = new C02641(continuation);
+            }
+        } else {
+            c02641 = new C02641(continuation);
+        }
+        Object obj = c02641.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = c02641.label;
+        RetroAchievementsManager retroAchievementsManager = this;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            this.logger.debug(this, "refreshRetroAchievementsUserProfileDataIfExpired");
+            c02641.L$0 = this;
+            c02641.L$1 = str;
+            c02641.label = 1;
+            obj = getRetroInterface(c02641);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else if (i == 1) {
+            str = (String) c02641.L$1;
+            retroAchievementsManager = (RetroAchievementsManager) c02641.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            ResultKt.throwOnFailure(obj);
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        RetroInterface retroInterface = (RetroInterface) obj;
+        if (retroInterface == null) {
+            return Unit.INSTANCE;
+        }
+        RetroAchievementsUserProfileEntity entity = retroAchievementsManager.getRetroAchievementsRepository().getRetroAchievementsUserProfileByIdStatically(str);
+        Date lastUpdatedTimestamp = entity != null ? entity.getLastUpdatedTimestamp() : null;
+        Long lastUpdated = lastUpdatedTimestamp != null ? Long.valueOf(lastUpdatedTimestamp.getTime()) : null;
+        int expireDelta = 480000;
+        if (lastUpdated != null && lastUpdated.longValue() + ((long) expireDelta) > System.currentTimeMillis()) {
+            return Unit.INSTANCE;
+        }
+        long now = System.currentTimeMillis();
+        Object expireVal = lastUpdated != null ? Long.valueOf(lastUpdated.longValue() + ((long) expireDelta)) : "None";
+        String msg = "refreshRetroAchievementsUserProfileDataIfExpired (Expired). Current: " + now + ", Last Updated: " + lastUpdated + ", Expire: " + expireVal;
+        retroAchievementsManager.logger.debug(retroAchievementsManager, msg);
+        c02641.L$0 = null;
+        c02641.L$1 = null;
+        c02641.label = 2;
+        if (retroAchievementsManager.refreshRetroAchievementsUserProfileData(str, c02641) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     /* JADX WARN: Code duplicated, block: B:101:0x0303 A[Catch: all -> 0x04b0, Exception -> 0x04b4, TryCatch #10 {Exception -> 0x04b4, all -> 0x04b0, blocks: (B:89:0x0232, B:91:0x0238, B:92:0x0247, B:94:0x024d, B:96:0x0267, B:97:0x02a4, B:108:0x0323, B:99:0x02fe, B:101:0x0303, B:105:0x0318, B:106:0x0319, B:107:0x0322, B:63:0x0148, B:65:0x0154, B:73:0x018c, B:75:0x0190, B:85:0x01ec, B:76:0x01c9, B:78:0x01cd, B:82:0x01e1, B:83:0x01e2, B:84:0x01eb), top: B:169:0x0148 }] */
@@ -2795,12 +3182,286 @@ public final class RetroAchievementsManager {
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object refreshRetroAchievementsUserProfileData(java.lang.String r47, kotlin.coroutines.Continuation<?> r48) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 1332
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager.refreshRetroAchievementsUserProfileData(java.lang.String, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object refreshRetroAchievementsUserProfileData(String str, Continuation<? super Unit> continuation) throws Throwable {
+        C02621 c02621;
+        if (continuation instanceof C02621) {
+            c02621 = (C02621) continuation;
+            if ((c02621.label & Integer.MIN_VALUE) != 0) {
+                c02621.label -= Integer.MIN_VALUE;
+            } else {
+                c02621 = new C02621(continuation);
+            }
+        } else {
+            c02621 = new C02621(continuation);
+        }
+        Object obj = c02621.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        RetroAchievementsManager retroAchievementsManager = this;
+        String username = str;
+        RetroAchievementsUserProfileEntity profileEntity = null;
+        List<RetroAchievementsGameRecordEntity> gameRecords = null;
+        int i = c02621.label;
+        try {
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                this.logger.debug(this, "refreshRetroAchievementsUserProfileData");
+                if (this.refreshingUsernames.contains(str)) {
+                    return Unit.INSTANCE;
+                }
+                c02621.L$0 = this;
+                c02621.L$1 = str;
+                c02621.label = 1;
+                obj = getRetroInterface(c02621);
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else if (i == 1) {
+                username = (String) c02621.L$1;
+                retroAchievementsManager = (RetroAchievementsManager) c02621.L$0;
+                ResultKt.throwOnFailure(obj);
+            } else if (i == 2) {
+                username = (String) c02621.L$1;
+                retroAchievementsManager = (RetroAchievementsManager) c02621.L$0;
+                ResultKt.throwOnFailure(obj);
+                RetroInterface retroInterface = retroAchievementsManager.retroInterface;
+                Intrinsics.checkNotNull(retroInterface);
+                c02621.L$0 = retroAchievementsManager;
+                c02621.L$1 = username;
+                c02621.label = 3;
+                obj = retroInterface.getUserProfile(username, c02621);
+                if (obj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return retroAchievementsManager.processUserProfileStep1(username, obj, c02621, coroutine_suspended);
+            } else if (i == 3) {
+                username = (String) c02621.L$1;
+                retroAchievementsManager = (RetroAchievementsManager) c02621.L$0;
+                ResultKt.throwOnFailure(obj);
+                return retroAchievementsManager.processUserProfileStep1(username, obj, c02621, coroutine_suspended);
+            } else if (i == 4) {
+                profileEntity = (RetroAchievementsUserProfileEntity) c02621.L$2;
+                username = (String) c02621.L$1;
+                retroAchievementsManager = (RetroAchievementsManager) c02621.L$0;
+                ResultKt.throwOnFailure(obj);
+                return retroAchievementsManager.processUserProfileStep2(username, profileEntity, obj, c02621, coroutine_suspended);
+            } else if (i == 5) {
+                gameRecords = (List) c02621.L$3;
+                profileEntity = (RetroAchievementsUserProfileEntity) c02621.L$2;
+                username = (String) c02621.L$1;
+                retroAchievementsManager = (RetroAchievementsManager) c02621.L$0;
+                ResultKt.throwOnFailure(obj);
+                return retroAchievementsManager.processUserProfileStep3(username, profileEntity, gameRecords, obj, c02621, coroutine_suspended);
+            } else if (i == 6) {
+                username = (String) c02621.L$1;
+                retroAchievementsManager = (RetroAchievementsManager) c02621.L$0;
+                ResultKt.throwOnFailure(obj);
+                retroAchievementsManager.refreshingUsernames.remove(username);
+                c02621.L$0 = null;
+                c02621.L$1 = null;
+                c02621.label = 7;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass6(null), c02621) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            } else if (i == 7 || i == 8) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else if (i == 9) {
+                Throwable th = (Throwable) c02621.L$0;
+                ResultKt.throwOnFailure(obj);
+                throw th;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+
+            if (((RetroInterface) obj) == null) {
+                return Unit.INSTANCE;
+            }
+            retroAchievementsManager.refreshingUsernames.add(username);
+            c02621.L$0 = retroAchievementsManager;
+            c02621.L$1 = username;
+            c02621.label = 2;
+            if (BuildersKt.withContext(Dispatchers.getMain(), new C02632(null), c02621) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            RetroInterface retroInterface = retroAchievementsManager.retroInterface;
+            Intrinsics.checkNotNull(retroInterface);
+            c02621.L$0 = retroAchievementsManager;
+            c02621.L$1 = username;
+            c02621.label = 3;
+            obj = retroInterface.getUserProfile(username, c02621);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return retroAchievementsManager.processUserProfileStep1(username, obj, c02621, coroutine_suspended);
+        } catch (Exception e) {
+            retroAchievementsManager.logger.warn(retroAchievementsManager, ExceptionsKt.stackTraceToString(e));
+            retroAchievementsManager.refreshingUsernames.remove(username);
+            c02621.L$0 = Unit.INSTANCE;
+            c02621.L$1 = null;
+            c02621.L$2 = null;
+            c02621.L$3 = null;
+            c02621.L$4 = null;
+            c02621.label = 8;
+            if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass6(null), c02621) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
+        } catch (Throwable th) {
+            retroAchievementsManager.refreshingUsernames.remove(username);
+            c02621.L$0 = th;
+            c02621.L$1 = null;
+            c02621.L$2 = null;
+            c02621.L$3 = null;
+            c02621.L$4 = null;
+            c02621.label = 9;
+            if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass6(null), c02621) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            throw th;
+        }
+    }
+
+    private final Object processUserProfileStep1(String username, Object obj, C02621 c02621, Object coroutine_suspended) throws Throwable {
+        NetworkResponse networkResponse = (NetworkResponse) obj;
+        RetroAchievementsUserProfileEntity profile = getRetroAchievementsRepository().getRetroAchievementsUserProfileByIdStatically(username);
+        if (profile == null) {
+            profile = new RetroAchievementsUserProfileEntity(username, "https://retroachievements.org/user/" + username, null, 0, 0, null, null, null, 0.0f, null, null, null, 4092, null);
+        }
+        if (networkResponse instanceof NetworkResponse.Success) {
+            org.retroachivements.api.data.pojo.user.GetUserProfile.Response response = (org.retroachivements.api.data.pojo.user.GetUserProfile.Response) ((NetworkResponse.Success) networkResponse).getBody();
+            profile.setImageUrl("https://retroachievements.org" + response.getUserPic());
+            profile.setRichPresenceMsg(response.getRichPresenceMsg());
+            profile.setMotto(response.getMotto());
+            profile.setHardcorePoints(response.getTotalPoints());
+            profile.setSoftcorePoints(response.getTotalSoftcorePoints());
+        } else if (networkResponse instanceof NetworkResponse.Error) {
+            ErrorResponse errorResponse = (ErrorResponse) ((NetworkResponse.Error) networkResponse).getBody();
+            Throwable error = ((NetworkResponse.Error) networkResponse).getError();
+            if (errorResponse != null) {
+                throw new Exception(errorResponse.getMessage());
+            }
+            if (error != null) {
+                throw error;
+            }
+        }
+        profile.setLastUpdatedTimestamp(new Date());
+        getRetroAchievementsRepository().addRetroAchievementsUserProfile(profile);
+        profile.getRecentPlayedGameIds().clear();
+        RetroInterface retroInterface = this.retroInterface;
+        Intrinsics.checkNotNull(retroInterface);
+        c02621.L$0 = this;
+        c02621.L$1 = username;
+        c02621.L$2 = profile;
+        c02621.label = 4;
+        Object nextObj = retroInterface.getUserRecentlyPlayedGames(username, 0, 15, c02621);
+        if (nextObj == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return processUserProfileStep2(username, profile, nextObj, c02621, coroutine_suspended);
+    }
+
+    private final Object processUserProfileStep2(String username, RetroAchievementsUserProfileEntity profile, Object obj, C02621 c02621, Object coroutine_suspended) throws Throwable {
+        NetworkResponse networkResponse2 = (NetworkResponse) obj;
+        List<RetroAchievementsGameRecordEntity> list = new ArrayList<>();
+        if (networkResponse2 instanceof NetworkResponse.Success) {
+            org.retroachivements.api.data.pojo.user.GetUserRecentlyPlayedGames.Response response = (org.retroachivements.api.data.pojo.user.GetUserRecentlyPlayedGames.Response) ((NetworkResponse.Success) networkResponse2).getBody();
+            for (org.retroachivements.api.data.pojo.user.GetUserRecentlyPlayedGames.Response.Game game : response) {
+                String myUser = this.myUsername;
+                Intrinsics.checkNotNull(myUser);
+                RetroAchievementsGameRecordEntity record = getRetroAchievementsRepository().getRetroAchievementsGameRecordByUserIdAndGameIdStatically(myUser, game.getGameId());
+                if (record == null) {
+                    String myUser2 = this.myUsername;
+                    Intrinsics.checkNotNull(myUser2);
+                    record = new RetroAchievementsGameRecordEntity(0L, myUser2, game.getGameId(), null, null, null, null, null, null, null, null, 0, 0, 0L, 0L, 0L, null, null, 0, 0, null, 2097145, null);
+                }
+                record.setName(game.getTitle());
+                record.setConsoleId(Boxing.boxLong(game.getConsoleId()));
+                record.setConsoleName(game.getConsoleName());
+                record.setImageUrl("https://retroachievements.org" + game.getImageIcon());
+                record.setAchievementsCount((int) game.getNumPossibleAchievements());
+                record.setUnlockedAchievementsCount((int) game.getNumAchievedHardcore());
+                list.add(record);
+                profile.getRecentPlayedGameIds().add(Boxing.boxLong(game.getGameId()));
+            }
+        } else if (networkResponse2 instanceof NetworkResponse.Error) {
+            ErrorResponse errorResponse2 = (ErrorResponse) ((NetworkResponse.Error) networkResponse2).getBody();
+            Throwable error2 = ((NetworkResponse.Error) networkResponse2).getError();
+            if (errorResponse2 != null) {
+                throw new Exception(errorResponse2.getMessage());
+            }
+            if (error2 != null) {
+                throw error2;
+            }
+        }
+        RetroInterface retroInterface = this.retroInterface;
+        Intrinsics.checkNotNull(retroInterface);
+        c02621.L$0 = this;
+        c02621.L$1 = username;
+        c02621.L$2 = profile;
+        c02621.L$3 = list;
+        c02621.L$4 = networkResponse2;
+        c02621.label = 5;
+        Object nextObj = org.retroachivements.api.RetroInterface.DefaultImpls.getUserCompletionProgress$default(retroInterface, username, 128, 0, c02621, 4, null);
+        if (nextObj == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return processUserProfileStep3(username, profile, list, nextObj, c02621, coroutine_suspended);
+    }
+
+    private final Object processUserProfileStep3(String username, RetroAchievementsUserProfileEntity profile, List<RetroAchievementsGameRecordEntity> list, Object obj, C02621 c02621, Object coroutine_suspended) throws Throwable {
+        NetworkResponse networkResponse4 = (NetworkResponse) obj;
+        if (networkResponse4 instanceof NetworkResponse.Success) {
+            org.retroachivements.api.data.pojo.user.GetUserCompletionProgress.Response response = (org.retroachivements.api.data.pojo.user.GetUserCompletionProgress.Response) ((NetworkResponse.Success) networkResponse4).getBody();
+            List<org.retroachivements.api.data.pojo.user.GetUserCompletionProgress.Progress> sortedResults = CollectionsKt.reversed(CollectionsKt.sortedWith(response.getResults(), new RetroAchievementsManager$refreshRetroAchievementsUserProfileData$$inlined$sortedBy$1()));
+            for (org.retroachivements.api.data.pojo.user.GetUserCompletionProgress.Progress progress : sortedResults) {
+                String myUser = this.myUsername;
+                Intrinsics.checkNotNull(myUser);
+                RetroAchievementsGameRecordEntity record = getRetroAchievementsRepository().getRetroAchievementsGameRecordByUserIdAndGameIdStatically(myUser, progress.getGameId());
+                if (record == null) {
+                    String myUser2 = this.myUsername;
+                    Intrinsics.checkNotNull(myUser2);
+                    record = new RetroAchievementsGameRecordEntity(0L, myUser2, progress.getGameId(), null, null, null, null, null, null, null, null, 0, 0, 0L, 0L, 0L, null, null, 0, 0, null, 2097145, null);
+                }
+                record.setName(progress.getTitle());
+                record.setConsoleId(Boxing.boxLong(progress.getConsoleId()));
+                record.setConsoleName(progress.getConsoleName());
+                record.setImageUrl("https://retroachievements.org" + progress.getImageIcon());
+                record.setAchievementsCount((int) progress.getMaxPossible());
+                record.setUnlockedAchievementsCount((int) progress.getNumAwarded());
+                list.add(record);
+                profile.getCompletionProgressGameIds().add(Boxing.boxLong(progress.getGameId()));
+            }
+        } else if (networkResponse4 instanceof NetworkResponse.Error) {
+            ErrorResponse errorResponse3 = (ErrorResponse) ((NetworkResponse.Error) networkResponse4).getBody();
+            Throwable error3 = ((NetworkResponse.Error) networkResponse4).getError();
+            if (errorResponse3 != null) {
+                throw new Exception(errorResponse3.getMessage());
+            }
+            if (error3 != null) {
+                throw error3;
+            }
+        }
+        getRetroAchievementsRepository().addRetroAchievementsGameRecords(list.toArray(new RetroAchievementsGameRecordEntity[0]));
+        profile.setLastUpdatedTimestamp(new Date());
+        getRetroAchievementsRepository().addRetroAchievementsUserProfile(profile);
+        c02621.L$0 = this;
+        c02621.L$1 = username;
+        c02621.L$2 = null;
+        c02621.L$3 = null;
+        c02621.L$4 = null;
+        c02621.label = 6;
+        if (refreshMyRetroAchievementsAwardsIfExpired(c02621) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        this.refreshingUsernames.remove(username);
+        c02621.L$0 = null;
+        c02621.L$1 = null;
+        c02621.label = 7;
+        if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass6(null), c02621) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager$refreshRetroAchievementsUserProfileData$2, reason: invalid class name and case insensitive filesystem */
