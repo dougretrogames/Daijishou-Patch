@@ -60,13 +60,13 @@ Ferramentas e método:
 | Smali textualmente igual ao ORIG | 9 classes |
 | Classes com nome JADX (`$AnonymousClassN` ou `$Cn`) | **722** |
 | Lambdas sintéticas geradas (`$$ExternalSyntheticLambda`) | 347 |
-| Classes substituídas inteiras pelo pipeline | **16** (em 2 arquivos Java) |
-| Smali ORIG a portar | **27.280 linhas** |
-| Ocorrências de stub no Java | 155 (116 são guardas do compilador Kotlin; **39 corpos reais**) |
+| Classes substituídas inteiras pelo pipeline | **9** (em 1 arquivo Java) |
+| Smali ORIG a portar | **16.669 linhas** |
+| Ocorrências de stub no Java | 145 (116 são guardas do compilador Kotlin; **29 corpos reais**, sendo 7 em P0) |
 | Stubs no dex final | 116 métodos / 9 classes |
 | Stubs no dex de referência | 116 métodos / 9 classes — **conjunto idêntico (0 diferença)** |
 | Referências ausentes (`check_refs.py`) | **0 métodos, 0 campos** (113 herdados benignos) |
-| APK gerado | 21.283.686 bytes, `apksigner` v2+v3 OK, `zipalign -c -p 4` OK |
+| APK gerado | 21.267.302 bytes, `apksigner` v2+v3 OK, `zipalign -c -p 4` OK |
 | Dex do app | 3.615.796 bytes (`classes7.dex`, armazenado sem compressão) |
 | Testes | 71 PNG + 119 XML (build atual); 18 PNG + 24 XML (build de referência) |
 
@@ -235,8 +235,8 @@ Regras de interação aprendidas:
 
 ### P0 — Eliminar o reaproveitamento do código de referência (**prioridade máxima**)
 
-16 classes em 2 arquivos Java (`build_tmp/PORT_PLAN.md`). Total: **27.280 linhas** de smali restante.
-(Lote de calibração: `MD5.java`, `ForeverUpgradeScript.java` e `DownloadPlatformThumbnailsPackDialogFragment.java`; Lote 2: `SplashScreenActivity.java`, `BackupAndRestore.java`, `DownloadPlatformWallpapersPackDialogFragment.java`, `DownloadPlatformThumbnailsPackListDialogFragment.java`; Lote 3: `RetroAchievementsFaceFragment.java`, `PinAndPlayWidgetFaceFragment.java`; Lotes 4-11: `RetroAchievementsGameRecordDialogFragment`, `PlayableItemDetailDialogFragment`, `CachedBitmapLoader`, `DownloadPlatformsDialogFragment`, `BackupAndRestoreSettingsNavFragment`; Lote 12: `DaijishouConsoleViewModel.java`; Lote 13: `RetroAchievementsNavFragment.java`; Lote 14: `RetroAchievementsGameDialogFragment.java`; Lote 15: `GoogleDrive.java`).
+9 classes em 1 arquivo Java (`build_tmp/PORT_PLAN.md`). Total: **16.669 linhas** de smali restante.
+(Lote de calibração: `MD5.java`, `ForeverUpgradeScript.java` e `DownloadPlatformThumbnailsPackDialogFragment.java`; Lote 2: `SplashScreenActivity.java`, `BackupAndRestore.java`, `DownloadPlatformWallpapersPackDialogFragment.java`, `DownloadPlatformThumbnailsPackListDialogFragment.java`; Lote 3: `RetroAchievementsFaceFragment.java`, `PinAndPlayWidgetFaceFragment.java`; Lotes 4-11: `RetroAchievementsGameRecordDialogFragment`, `PlayableItemDetailDialogFragment`, `CachedBitmapLoader`, `DownloadPlatformsDialogFragment`, `BackupAndRestoreSettingsNavFragment`; Lote 12: `DaijishouConsoleViewModel.java`; Lote 13: `RetroAchievementsNavFragment.java`; Lote 14: `RetroAchievementsGameDialogFragment.java`; Lote 15: `GoogleDrive.java`; Lote 16: `DaijishouSynchronizationModel.java`).
 
 | Ordem sugerida | Arquivo Java | Classes | Linhas de smali |
 |---|---|---|---|
@@ -252,7 +252,6 @@ Regras de interação aprendidas:
 | 4 | `google_drive/GoogleDrive.java` | 2 | 7.780 |
 | 5 | `view_models/DaijishouSynchronizationModel.java` | 7 | 10.611 |
 | 6 | `retro_achievements/RetroAchievementsManager.java` | 9 | 16.669 |
-| 7 | demais 15 arquivos | 25 | ~21.000 |
 
 **Aceite:** `build_member_map.py` reporta `stub classes: 0`; `class_map.json["stubs"]` vazio;
 `stub_compare.py` 0/0; `check_refs.py` 0; APK montado **sem** substituição passa a matriz de AVD.
