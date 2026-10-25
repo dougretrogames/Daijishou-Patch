@@ -1,6 +1,6 @@
 # Plano de porte P0 — classes ainda substituídas pelo bytecode ORIG
 
-57 classes em 27 arquivos Java; 0 classes ORIG sem smali localizado; 0 sem arquivo Java.
+54 classes em 24 arquivos Java; 0 classes ORIG sem smali localizado; 0 sem arquivo Java.
 
 `java_real_stubs` = corpos que hoje são stub no Java (sem contar as guardas do
 compilador Kotlin "Super calls with default arguments", que existem também no ORIG).
@@ -17,23 +17,20 @@ compilador Kotlin "Super calls with default arguments", que existem também no O
 | 8 | `com/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment.java` | 1 | 4710 | 1 |
 | 9 | `com/magneticchen/daijishou/view_models/DaijishouConsoleViewModel.java` | 4 | 3782 | 1 |
 | 10 | `com/magneticchen/daijishou/daijishou_widget/widgets/pin_and_play/PinAndPlayWidgetFaceFragment.java` | 1 | 1631 | 1 |
-| 11 | `com/magneticchen/daijishou/upgrade_scripts/ForeverUpgradeScript.java` | 1 | 630 | 1 |
-| 12 | `com/magneticchen/daijishou/utils/MD5.java` | 1 | 365 | 1 |
-| 13 | `com/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackDialogFragment.java` | 1 | 359 | 1 |
-| 14 | `com/magneticchen/daijishou/dialog_fragments/DownloadPlatformWallpapersPackDialogFragment.java` | 1 | 359 | 1 |
-| 15 | `com/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment.java` | 1 | 334 | 1 |
-| 16 | `com/magneticchen/daijishou/settings_nav_fragments/BackupAndRestoreSettingsNavFragment.java` | 3 | 1249 | 0 |
-| 17 | `com/magneticchen/daijishou/dialog_fragments/DownloadPlatformsDialogFragment.java` | 2 | 1099 | 0 |
-| 18 | `com/magneticchen/daijishou/cache/CachedBitmapLoader.java` | 2 | 1088 | 0 |
-| 19 | `com/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment.java` | 3 | 1023 | 0 |
-| 20 | `com/magneticchen/daijishou/nav_fragments/PlatformLibraryGridViewNavFragment.java` | 1 | 949 | 0 |
-| 21 | `com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetTodayFaceFragment.java` | 1 | 675 | 0 |
-| 22 | `com/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetFaceFragment.java` | 1 | 507 | 0 |
-| 23 | `com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetContinueFaceFragment.java` | 1 | 471 | 0 |
-| 24 | `com/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment.java` | 1 | 450 | 0 |
-| 25 | `com/magneticchen/daijishou/nav_fragments/PlatformLibraryListViewNavFragment.java` | 1 | 444 | 0 |
-| 26 | `com/magneticchen/daijishou/dialog_fragments/DebugAndExperimentalDialogFragment.java` | 1 | 341 | 0 |
-| 27 | `com/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment.java` | 1 | 313 | 0 |
+| 11 | `com/magneticchen/daijishou/dialog_fragments/DownloadPlatformWallpapersPackDialogFragment.java` | 1 | 359 | 1 |
+| 12 | `com/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment.java` | 1 | 334 | 1 |
+| 13 | `com/magneticchen/daijishou/settings_nav_fragments/BackupAndRestoreSettingsNavFragment.java` | 3 | 1249 | 0 |
+| 14 | `com/magneticchen/daijishou/dialog_fragments/DownloadPlatformsDialogFragment.java` | 2 | 1099 | 0 |
+| 15 | `com/magneticchen/daijishou/cache/CachedBitmapLoader.java` | 2 | 1088 | 0 |
+| 16 | `com/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment.java` | 3 | 1023 | 0 |
+| 17 | `com/magneticchen/daijishou/nav_fragments/PlatformLibraryGridViewNavFragment.java` | 1 | 949 | 0 |
+| 18 | `com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetTodayFaceFragment.java` | 1 | 675 | 0 |
+| 19 | `com/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetFaceFragment.java` | 1 | 507 | 0 |
+| 20 | `com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetContinueFaceFragment.java` | 1 | 471 | 0 |
+| 21 | `com/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment.java` | 1 | 450 | 0 |
+| 22 | `com/magneticchen/daijishou/nav_fragments/PlatformLibraryListViewNavFragment.java` | 1 | 444 | 0 |
+| 23 | `com/magneticchen/daijishou/dialog_fragments/DebugAndExperimentalDialogFragment.java` | 1 | 341 | 0 |
+| 24 | `com/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment.java` | 1 | 313 | 0 |
 
 ## Classes por arquivo (nomes ORIG)
 
@@ -47,9 +44,6 @@ compilador Kotlin "Super calls with default arguments", que existem também no O
 - `com/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment.java`: `dialog_fragments/RetroAchievementsGameDialogFragment`
 - `com/magneticchen/daijishou/view_models/DaijishouConsoleViewModel.java`: `view_models/DaijishouConsoleViewModel$commands$2`, `view_models/DaijishouConsoleViewModel$commands$6`, `view_models/DaijishouConsoleViewModel$commands$7`, `view_models/DaijishouConsoleViewModel`
 - `com/magneticchen/daijishou/daijishou_widget/widgets/pin_and_play/PinAndPlayWidgetFaceFragment.java`: `daijishou_widget/widgets/pin_and_play/PinAndPlayWidgetFaceFragment`
-- `com/magneticchen/daijishou/upgrade_scripts/ForeverUpgradeScript.java`: `upgrade_scripts/ForeverUpgradeScript$upgrade$2`
-- `com/magneticchen/daijishou/utils/MD5.java`: `utils/MD5`
-- `com/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackDialogFragment.java`: `dialog_fragments/DownloadPlatformThumbnailsPackDialogFragment$onStart$1`
 - `com/magneticchen/daijishou/dialog_fragments/DownloadPlatformWallpapersPackDialogFragment.java`: `dialog_fragments/DownloadPlatformWallpapersPackDialogFragment$onStart$1`
 - `com/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment.java`: `dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment$onStart$1`
 - `com/magneticchen/daijishou/settings_nav_fragments/BackupAndRestoreSettingsNavFragment.java`: `settings_nav_fragments/BackupAndRestoreSettingsNavFragment$onCreateView$2$1`, `settings_nav_fragments/BackupAndRestoreSettingsNavFragment$onCreateView$2$1$2$2$1$1`, `settings_nav_fragments/BackupAndRestoreSettingsNavFragment$onCreateView$4$1$1`

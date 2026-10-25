@@ -10,9 +10,9 @@ Lista de trabalho do próximo passo: **`build_tmp/PORT_PLAN.md`**.
 
 - O build atual **funciona** e foi comparado tela a tela com o build de referência em dois AVDs
   (mesmos bounds de UI, mesmos textos, mesmos logs nos caminhos de erro).
-- O que falta **não é comportamento**: é **autossuficiência da árvore**. 57 classes em 27
+- O que falta **não é comportamento**: é **autossuficiência da árvore**. 54 classes em 24
   arquivos Java ainda são substituídas pelo código de referência dentro do pipeline
-  (**63.198 linhas de smali** a portar). Todo o resto do app (1.412 arquivos) já é Java real.
+  (**61.844 linhas de smali** a portar). Todo o resto do app (1.415 arquivos) já é Java real.
 - Objetivo: **P0** eliminar essa dependência → **P1** gates de fidelidade → **P2** cobertura de
   testes. **Sem conversão para Kotlin** (decisão de escopo): a réplica é funcional, em Java.
 - Recursos Android (`res/`, `assets/`, `AndroidManifest.xml`, `resources.arsc`) já são
@@ -60,9 +60,9 @@ Ferramentas e método:
 | Smali textualmente igual ao ORIG | 9 classes |
 | Classes com nome JADX (`$AnonymousClassN` ou `$Cn`) | **722** |
 | Lambdas sintéticas geradas (`$$ExternalSyntheticLambda`) | 347 |
-| Classes substituídas inteiras pelo pipeline | **57** (em 27 arquivos Java) |
-| Smali ORIG a portar | **63.198 linhas** |
-| Ocorrências de stub no Java | 207 (115 são guardas do compilador Kotlin; **92 corpos reais**) |
+| Classes substituídas inteiras pelo pipeline | **54** (em 24 arquivos Java) |
+| Smali ORIG a portar | **61.844 linhas** |
+| Ocorrências de stub no Java | 204 (115 são guardas do compilador Kotlin; **89 corpos reais**) |
 | Stubs no dex final | 116 métodos / 9 classes |
 | Stubs no dex de referência | 116 métodos / 9 classes — **conjunto idêntico (0 diferença)** |
 | Referências ausentes (`check_refs.py`) | **0 métodos, 0 campos** (113 herdados benignos) |
@@ -235,7 +235,8 @@ Regras de interação aprendidas:
 
 ### P0 — Eliminar o reaproveitamento do código de referência (**prioridade máxima**)
 
-57 classes em 27 arquivos Java (`build_tmp/PORT_PLAN.md`). Total: **63.198 linhas** de smali.
+54 classes em 24 arquivos Java (`build_tmp/PORT_PLAN.md`). Total: **61.844 linhas** de smali restante.
+(Lote de calibração concluído: `MD5.java`, `ForeverUpgradeScript.java` e `DownloadPlatformThumbnailsPackDialogFragment.java`).
 
 | Ordem sugerida | Arquivo Java | Classes | Linhas de smali |
 |---|---|---|---|
