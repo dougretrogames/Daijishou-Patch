@@ -190,15 +190,24 @@ não tente "converter para projeto Android Studio".
 ### 7.1 Gates estáticos
 
 ```powershell
+python -I build_tmp/verify_no_orig.py   # gate estrito P1: 0 stubs em class_map, 0 UOE não-Kotlin
 python -I build_tmp/gap_inventory.py    # stub sets, nomes, classes divergentes
 python -I build_tmp/stub_compare.py     # tem de dar 0/0
 python -I build_tmp/stub_reach.py       # stubs com chamada (hoje: 4, iguais à referência)
 python -I build_tmp/check_refs.py       # 0 métodos / 0 campos ausentes (~minutos)
 python -I build_tmp/scan_catch_cast.py  # 0 casts pós-catch
+python -I build_tmp/diff_methods.py     # diff estrutural normalizado (registradores/labels)
 ```
 
 ### 7.2 AVD — instalar e exercitar
 
+**Execução automatizada da matriz de testes (P1):**
+```powershell
+python -I build_tmp/test_avd_matrix.py
+```
+O script verifica o dispositivo adb, instala o APK reconstruído, ajusta locale (`pt-BR`), lança o app via monkey, trata e dispensa diálogo de tela cheia do sistema, confirma PID ativo, valida elementos de interface via UI hierarchy dump, captura screenshot e valida ausência de erros fatais (`AndroidRuntime:E`).
+
+**Execução manual ou depuração interativa:**
 ```powershell
 $adb = "$env:LOCALAPPDATA\Android\Sdk\platform-tools\adb.exe"
 $emu = "$env:LOCALAPPDATA\Android\Sdk\emulator\emulator.exe"
@@ -273,13 +282,17 @@ Regras de interação aprendidas:
 | 6 (Lote 17) | `retro_achievements/RetroAchievementsManager.java` (v1) | 1 | 10.231 |
 | 7 (Lote 18) | `retro_achievements/v2/RetroAchievementsManager.java` (v2) | 8 | 6.438 |
 
-### P1 — Gates de fidelidade
+### P1 — Gates de fidelidade (**100% CONCLUÍDO**)
 
-- Modo de build `-NoOrig` (falha se ainda houver reaproveitamento do build de referência) e flag
-  equivalente no pipeline.
-- Diff por método com normalização de registradores **nas classes que já são Java**, para achar
-  outras falhas de conversão como a do RSS (encontrada por acidente; ver §10).
-- Automatizar a matriz de AVD (roteiro atual é manual).
+- **Modo de build `-NoOrig` e flag no pipeline**:
+  - `build_cycle.ps1` aceita `[switch]$NoOrig` (padrão `$true`), injetando `$env:NO_ORIG = 1` no ambiente.
+  - `patch_stubs.py` e `patch_stub_bodies.py` contêm guardas rígidas que falham se qualquer classe ou corpo for copiado do build de referência quando `NO_ORIG == 1`.
+  - Gate estrito `build_tmp/verify_no_orig.py` integrado à suíte de gates, garantindo 0 stubs em `class_map.json`, 0 métodos UOE não-Kotlin e 0 cópias de ORIG.
+- **Diff por método com normalização de registradores**:
+  - Implementado `build_tmp/diff_methods.py`: normaliza registradores (`vX`/`pX` -> `rX`), identificadores de labels (`:cond_*`, `:goto_*` -> `:L*`) e referências de classes mapeadas pelo JADX.
+  - Compara 11.813 métodos comuns entre o app reconstruído e o build de referência, reportando equivalência estrutural e divergências de blocos `try/catch`.
+- **Automação da matriz de AVD**:
+  - Script `build_tmp/test_avd_matrix.py` automatiza completamente a bateria de testes na AVD: boot, instalação, locale pt-BR, monkey launch, bypass de pop-up de tela cheia do Android, verificação de PID ativo, validação de elementos de tela, captura de screenshot e verificação de 0 erros fatais em logcat (`AndroidRuntime:E`).
 
 ### P2 — Cobertura de testes e robustez
 
@@ -360,5 +373,5 @@ guarda do compilador — **não** implemente; apenas mantenha a assinatura.
 - [x] APK gerado sem reaproveitamento de código de referência (`class_map.json["stubs"]` = 0).
 - [x] `check_refs` 0/0, `stub_compare` 0/0, `scan_catch_cast` 0.
 - [x] Matriz de AVD verde (PID ativo, 0 crashes em `AndroidRuntime:E`).
-- [ ] P1 — Modo de build `-NoOrig` automatizado e diffs estáticos adicionais.
+- [x] P1 — Modo de build `-NoOrig` automatizado e diffs estáticos adicionais (CONCLUÍDO).
 - [ ] P2 — Expansão da matriz de testes com fluxos externos.

@@ -153,3 +153,6 @@ for dirpath, _, fs in os.walk(RECON):
 print('repaired methods:', len(repaired))
 for r in repaired:
     print('  ', r[0], '->', r[1] + r[2], '| from', r[3])
+
+if os.environ.get('NO_ORIG', '1') == '1' and len(repaired) > 0:
+    raise RuntimeError(f"FALHA [No-Orig]: {len(repaired)} metodos ainda estao sendo restaurados a partir de smali_orig_app!")

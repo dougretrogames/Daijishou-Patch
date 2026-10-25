@@ -57,6 +57,9 @@ com feed inválido), sua causa e a correção (seção 7).
 | `build_tmp/rebuild_app.ps1` | apktool build + `assemble3.py` + zipalign + apksigner |
 | `build_tmp/check_refs.py` | verificador estático de referências (métodos/campos) |
 | `build_tmp/scan_catch_cast.py` | detector de cast movido para fora de `try` (regressão do JADX) |
+| `build_tmp/verify_no_orig.py` | gate estrito do modo No-Orig (0 stubs em class_map, 0 UOE) |
+| `build_tmp/diff_methods.py` | diff estrutural normalizado de métodos entre recon e referência |
+| `build_tmp/test_avd_matrix.py` | automação completa da matriz de testes na AVD |
 | `build_tmp/dump_ui.py` | imprime texto/desc/bounds de um dump do `uiautomator` |
 | `avd_tests/reconstructed/` | capturas, dumps XML e logcat do build atual |
 | `avd_tests/original/` | capturas, dumps XML e logcat do build de referência (comparação) |
@@ -554,11 +557,12 @@ Depois: recompilar → D8 → baksmali → `run_pipeline.ps1` → `rebuild_app.p
 
 ## 8. Limitações conhecidas
 
-1. **A árvore Java não é, sozinha, o APK**: 8 classes que ainda não foram
-   convertidas permanecem como stubs (UnsupportedOperationException) na árvore Java; o APK
-   final usa o **código de referência** nesses pontos, aplicado pelo pipeline. Compilar a árvore
-   sem o pipeline gera um APK que compila, mas não é equivalente nesses pontos.
-   (Progresso P0: 57 → 54 após calibração, 49 após lote 2, 46 após lote 3, 44 após lote 4, 42 após lote 5, 40 após lote 6, 38 após lote 7, 35 após lote 8, 33 após lote 9, 31 após lote 10, 28 após lote 11, 25 após lote 12, 23 após lote 13, 20 após lote 14, 16 após lote 15, 9 após lote 16, 8 após lote 17; restante: 1 arquivo, 6.438 linhas de smali).
+1. **A árvore Java é 100% autossuficiente (P0 e P1 CONCLUÍDOS)**: Todas as 57 classes-stub originais
+   foram completamente portadas para código Java nativo em `jadx_nest/sources/com/magneticchen/daijishou`.
+   O modo de build `-NoOrig` é executado por padrão no ciclo (`build_cycle.ps1`), e o pipeline
+   não reaproveita nenhuma classe do APK original (`class_map.json["stubs"]` = 0). O APK reconstruído
+   é compilado e montado exclusivamente a partir do Java portado.
+   (Progresso P0: 57 → 54 → 49 → 46 → 44 → 42 → 40 → 38 → 35 → 33 → 31 → 28 → 25 → 23 → 20 → 16 → 9 → 8 → 0 — 100% concluído).
 2. **Nomes binários internos**: classes internas foram renomeadas pelo JADX
    (`Foo$onCreate$1` → `Foo$AnonymousClass1`/`Foo$C02201`); o pipeline mapeia de volta, mas a
    árvore não é idêntica ao Kotlin de origem.
@@ -587,9 +591,9 @@ Depois: recompilar → D8 → baksmali → `run_pipeline.ps1` → `rebuild_app.p
 - Deduplicação: 3.577 classes alteradas, 10.006 métodos removidos (10 jars).
 - Correções manuais/semi-automáticas: centenas, em lotes b1–b16 + passes globais
   (genéricos, lambdas sintéticas, DAOs, `suspend`, campos `final`, fluxo de máquinas de estado).
-- Reconciliação: 718 renomeações de classe, 8 classes-stub (iniciado em 57, 54 após calibração, 49 após lote 2, 46 após lote 3, 44 após lote 4, 42 após lote 5, 40 após lote 6, 38 após lote 7, 35 após lote 8, 33 após lote 9, 31 após lote 10, 28 após lote 11, 25 após lote 12, 23 após lote 13, 20 após lote 14, 16 após lote 15, 9 após lote 16, 8 após lote 17), 6 classes de closure copiadas,
-  49 + 101 + 9 injeções de membros, 5 corpos de stub, 9 classes/83 membros publicizados,
-  59 normalizações de `invoke` em 14 arquivos.
+- Reconciliação: 718 renomeações de classe, 0 classes-stub (iniciado em 57, concluído com 0 no lote 18 — 100% autossuficiente), 0 classes de closure copiadas,
+  49 + 101 + 9 injeções de membros, 0 corpos de stub do original, 9 classes/83 membros publicizados,
+  59 normalizações de `invoke` em 14 arquivos. Modo `-NoOrig` estrito ativo.
 - Referências: 0 métodos e 0 campos ausentes (113 herdados benignos); 0 casts pós-`catch`.
 - Progressão de erros do javac: 148 → … → 0.
 - Testes: 71 capturas PNG + 119 dumps XML no AVD do build atual; 18 capturas + 24 dumps no AVD

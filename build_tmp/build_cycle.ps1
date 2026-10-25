@@ -1,8 +1,15 @@
+param(
+    [switch]$NoOrig = $true
+)
+
 $ErrorActionPreference = 'Stop'
 $jd21   = 'C:\Users\Douglas\.jdks\jdk-21.0.12.1+1\bin'
 $android= "$env:LOCALAPPDATA\Android\Sdk\platforms\android-35\android.jar"
 $bt     = "$env:LOCALAPPDATA\Android\Sdk\build-tools\35.0.0"
 $env:JAVA_HOME = 'C:\Users\Douglas\.jdks\jdk-21.0.12.1+1'
+$env:NO_ORIG   = if ($NoOrig) { '1' } else { '0' }
+
+Write-Host "=== [Build Cycle] Modo No-Orig: $NoOrig ==="
 
 Write-Host "=== 1) Compilando nest sources com javac ==="
 & "$jd21\javac.exe" -J-Xmx6g -nowarn -proc:none -encoding UTF-8 -source 8 -target 8 `
@@ -32,6 +39,12 @@ if ($LASTEXITCODE -ne 0) { throw "build_class_map failed with exit code $LASTEXI
 Write-Host "=== 4) Executando run_pipeline.ps1 ==="
 powershell -ExecutionPolicy Bypass -File build_tmp\run_pipeline.ps1
 if ($LASTEXITCODE -ne 0) { throw "pipeline failed with exit code $LASTEXITCODE" }
+
+if ($NoOrig) {
+    Write-Host "=== 4.1) Validando Gate No-Orig com verify_no_orig.py ==="
+    python -I build_tmp\verify_no_orig.py
+    if ($LASTEXITCODE -ne 0) { throw "verify_no_orig failed: build contem dependencias de referencia!" }
+}
 
 Write-Host "=== 5) Executando rebuild_app.ps1 ==="
 powershell -ExecutionPolicy Bypass -File build_tmp\rebuild_app.ps1

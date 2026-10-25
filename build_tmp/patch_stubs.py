@@ -40,3 +40,6 @@ print('patched:', patched)
 print('missing:', len(missing))
 for m in missing:
     print('  ', m)
+
+if os.environ.get('NO_ORIG', '1') == '1' and len(stubs) > 0:
+    raise RuntimeError(f"FALHA [No-Orig]: {len(stubs)} classes-stub ainda estao ativas no pipeline!")
