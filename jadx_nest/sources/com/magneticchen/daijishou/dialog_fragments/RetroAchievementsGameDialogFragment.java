@@ -835,118 +835,65 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         if (r0.getScrollX() == 0) goto L19;
      */
     @Override // com.magneticchen.daijishou.abstract_fragment_classes.DaijishouDialogFragment
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
     public boolean onBackPressed() {
-        /*
-            r5 = this;
-            boolean r0 = r5.scrollingOnBackPressed
-            java.lang.String r1 = "recyclerView"
-            r2 = 0
-            r3 = 0
-            if (r0 == 0) goto L17
-            com.magneticchen.daijishou.daijishou_recycler_view.DaijishouRecyclerView r0 = r5.recyclerView
-            if (r0 != 0) goto L10
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r1)
-            r0 = r3
-        L10:
-            int r0 = r0.getScrollState()
-            r4 = 2
-            if (r0 == r4) goto L35
-        L17:
-            com.magneticchen.daijishou.daijishou_recycler_view.DaijishouRecyclerView r0 = r5.recyclerView
-            if (r0 != 0) goto L1f
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r1)
-            r0 = r3
-        L1f:
-            int r0 = r0.computeVerticalScrollOffset()
-            java.lang.String r4 = "scrollView"
-            if (r0 != 0) goto La3
-            android.widget.HorizontalScrollView r0 = r5.scrollView
-            if (r0 != 0) goto L2f
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r4)
-            r0 = r3
-        L2f:
-            int r0 = r0.getScrollX()
-            if (r0 != 0) goto La3
-        L35:
-            com.magneticchen.daijishou.daijishou_recycler_view.DaijishouRecyclerView r0 = r5.recyclerView
-            if (r0 != 0) goto L3d
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r1)
-            r0 = r3
-        L3d:
-            r0.scrollToPosition(r2)
-            com.google.android.material.chip.Chip r0 = r5.refreshButton
-            java.lang.String r1 = "refreshButton"
-            if (r0 != 0) goto L4a
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r1)
-            r0 = r3
-        L4a:
-            boolean r0 = r0.isFocused()
-            if (r0 == 0) goto L6c
-            com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity r0 = r5.playableItemEntityToBeRestoredInDialog
-            if (r0 == 0) goto L67
-            com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$Companion r1 = com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment.INSTANCE
-            com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment r0 = r1.newInstance(r0)
-            androidx.fragment.app.FragmentManager r1 = r5.getParentFragmentManager()
-            java.lang.Class<com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment> r2 = com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment.class
-            java.lang.String r2 = r2.getName()
-            r0.show(r1, r2)
-        L67:
-            boolean r0 = super.onBackPressed()
-            return r0
-        L6c:
-            com.google.android.material.chip.Chip r0 = r5.refreshButton
-            if (r0 != 0) goto L74
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r1)
-            r0 = r3
-        L74:
-            r0.requestFocus()
-            com.google.android.material.chip.Chip r0 = r5.refreshButton
-            if (r0 != 0) goto L7f
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r1)
-            goto L80
-        L7f:
-            r3 = r0
-        L80:
-            boolean r0 = r3.isFocused()
-            if (r0 != 0) goto La2
-            com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity r0 = r5.playableItemEntityToBeRestoredInDialog
-            if (r0 == 0) goto L9d
-            com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$Companion r1 = com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment.INSTANCE
-            com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment r0 = r1.newInstance(r0)
-            androidx.fragment.app.FragmentManager r1 = r5.getParentFragmentManager()
-            java.lang.Class<com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment> r2 = com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment.class
-            java.lang.String r2 = r2.getName()
-            r0.show(r1, r2)
-        L9d:
-            boolean r0 = super.onBackPressed()
-            return r0
-        La2:
-            return r2
-        La3:
-            r0 = 1
-            r5.scrollingOnBackPressed = r0
-            r5.refocusOnScrolledToTop = r0
-            com.magneticchen.daijishou.daijishou_recycler_view.DaijishouRecyclerView r0 = r5.recyclerView
-            if (r0 != 0) goto Lb0
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r1)
-            r0 = r3
-        Lb0:
-            r0.smoothScrollToPosition(r2)
-            android.widget.HorizontalScrollView r0 = r5.scrollView
-            if (r0 != 0) goto Lbb
-            kotlin.jvm.internal.Intrinsics.throwUninitializedPropertyAccessException(r4)
-            goto Lbc
-        Lbb:
-            r3 = r0
-        Lbc:
-            r3.smoothScrollTo(r2, r2)
-            return r2
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment.onBackPressed():boolean");
+        DaijishouRecyclerView daijishouRecyclerView = this.recyclerView;
+        if (daijishouRecyclerView == null) {
+            Intrinsics.throwUninitializedPropertyAccessException("recyclerView");
+            daijishouRecyclerView = null;
+        }
+        int scrollState = daijishouRecyclerView.getScrollState();
+        if ((this.scrollingOnBackPressed && scrollState == 2) || (daijishouRecyclerView.computeVerticalScrollOffset() == 0 && (this.scrollView != null ? this.scrollView : null) != null && this.scrollView.getScrollX() == 0)) {
+            DaijishouRecyclerView daijishouRecyclerView2 = this.recyclerView;
+            if (daijishouRecyclerView2 == null) {
+                Intrinsics.throwUninitializedPropertyAccessException("recyclerView");
+                daijishouRecyclerView2 = null;
+            }
+            daijishouRecyclerView2.scrollToPosition(0);
+            Chip chip = this.refreshButton;
+            if (chip == null) {
+                Intrinsics.throwUninitializedPropertyAccessException("refreshButton");
+                chip = null;
+            }
+            if (chip.isFocused()) {
+                if (this.playableItemEntityToBeRestoredInDialog != null) {
+                    PlayableItemDetailDialogFragment.INSTANCE.newInstance(this.playableItemEntityToBeRestoredInDialog).show(getParentFragmentManager(), PlayableItemDetailDialogFragment.class.getName());
+                }
+                return super.onBackPressed();
+            }
+            Chip chip2 = this.refreshButton;
+            if (chip2 == null) {
+                Intrinsics.throwUninitializedPropertyAccessException("refreshButton");
+                chip2 = null;
+            }
+            chip2.requestFocus();
+            Chip chip3 = this.refreshButton;
+            if (chip3 == null) {
+                Intrinsics.throwUninitializedPropertyAccessException("refreshButton");
+                chip3 = null;
+            }
+            if (!chip3.isFocused()) {
+                if (this.playableItemEntityToBeRestoredInDialog != null) {
+                    PlayableItemDetailDialogFragment.INSTANCE.newInstance(this.playableItemEntityToBeRestoredInDialog).show(getParentFragmentManager(), PlayableItemDetailDialogFragment.class.getName());
+                }
+                return super.onBackPressed();
+            }
+            return false;
+        }
+        this.scrollingOnBackPressed = true;
+        this.refocusOnScrolledToTop = true;
+        DaijishouRecyclerView daijishouRecyclerView3 = this.recyclerView;
+        if (daijishouRecyclerView3 == null) {
+            Intrinsics.throwUninitializedPropertyAccessException("recyclerView");
+            daijishouRecyclerView3 = null;
+        }
+        daijishouRecyclerView3.smoothScrollToPosition(0);
+        android.widget.HorizontalScrollView horizontalScrollView = this.scrollView;
+        if (horizontalScrollView == null) {
+            Intrinsics.throwUninitializedPropertyAccessException("scrollView");
+            horizontalScrollView = null;
+        }
+        horizontalScrollView.smoothScrollTo(0, 0);
+        return false;
     }
 
     @Override // androidx.fragment.app.DialogFragment, androidx.fragment.app.Fragment
