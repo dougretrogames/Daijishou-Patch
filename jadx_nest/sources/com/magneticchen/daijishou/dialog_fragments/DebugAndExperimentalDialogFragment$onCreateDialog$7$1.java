@@ -1,6 +1,7 @@
 package com.magneticchen.daijishou.dialog_fragments;
 
 import android.widget.Toast;
+import com.magneticchen.daijishou.google_drive.GoogleDrive;
 import com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel;
 import kotlin.Lazy;
 import kotlin.Metadata;
@@ -11,7 +12,9 @@ import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Dispatchers;
 
 /* JADX INFO: compiled from: DebugAndExperimentalDialogFragment.kt */
 /* JADX INFO: loaded from: classes4.dex */
@@ -45,86 +48,51 @@ final class DebugAndExperimentalDialogFragment$onCreateDialog$7$1 extends com.ma
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:22:0x005a  */
-    /* JADX WARN: Code restructure failed: missing block: B:23:0x0074, code lost:
-    
-        if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.dialog_fragments.DebugAndExperimentalDialogFragment$onCreateDialog$7$1.AnonymousClass1(r7.$progressDialogFragment, r7.this$0, null), r7) == r0) goto L24;
-     */
+    public final Object invokeSuspendImpl(Object obj) throws Throwable {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        if (i != 0) {
+            if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+            } else if (i == 2) {
+                ResultKt.throwOnFailure(obj);
+                this.label = 3;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass1(this.$progressDialogFragment, this.this$0, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            } else if (i == 3) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+        } else {
+            ResultKt.throwOnFailure(obj);
+            DaijishouSynchronizationModel daijishouSynchronizationModel = DebugAndExperimentalDialogFragment.onCreateDialog$lambda$1(this.$daijishouSynchronization$delegate);
+            GoogleDrive googleDrive = daijishouSynchronizationModel != null ? daijishouSynchronizationModel.getGoogleDrive() : null;
+            if (googleDrive != null) {
+                this.label = 1;
+                if (GoogleDrive.deleteAllFiles$default(googleDrive, false, this, 1, null) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+        }
 
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object invokeSuspendImpl(java.lang.Object r8) throws java.lang.Throwable {
-        /*
-            r7 = this;
-            java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r1 = r7.label
-            r2 = 0
-            r3 = 3
-            r4 = 2
-            r5 = 0
-            r6 = 1
-            if (r1 == 0) goto L27
-            if (r1 == r6) goto L23
-            if (r1 == r4) goto L1f
-            if (r1 != r3) goto L17
-            kotlin.ResultKt.throwOnFailure(r8)
-            goto L77
-        L17:
-            java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
-            java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-            r8.<init>(r0)
-            throw r8
-        L1f:
-            kotlin.ResultKt.throwOnFailure(r8)
-            goto L5a
-        L23:
-            kotlin.ResultKt.throwOnFailure(r8)
-            goto L42
-        L27:
-            kotlin.ResultKt.throwOnFailure(r8)
-            kotlin.Lazy<com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel> r8 = r7.$daijishouSynchronization$delegate
-            com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel r8 = com.magneticchen.daijishou.dialog_fragments.DebugAndExperimentalDialogFragment.access$onCreateDialog$lambda$1(r8)
-            com.magneticchen.daijishou.google_drive.GoogleDrive r8 = r8.getGoogleDrive()
-            if (r8 == 0) goto L42
-            r1 = r7
-            kotlin.coroutines.Continuation r1 = (kotlin.coroutines.Continuation) r1
-            r7.label = r6
-            java.lang.Object r8 = com.magneticchen.daijishou.google_drive.GoogleDrive.deleteAllFiles$default(r8, r2, r1, r6, r5)
-            if (r8 != r0) goto L42
-            goto L76
-        L42:
-            kotlin.Lazy<com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel> r8 = r7.$daijishouSynchronization$delegate
-            com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel r8 = com.magneticchen.daijishou.dialog_fragments.DebugAndExperimentalDialogFragment.access$onCreateDialog$lambda$1(r8)
-            com.magneticchen.daijishou.google_drive.GoogleDrive r8 = r8.getGoogleDrive()
-            if (r8 == 0) goto L5a
-            r1 = r7
-            kotlin.coroutines.Continuation r1 = (kotlin.coroutines.Continuation) r1
-            r7.label = r4
-            java.lang.Object r8 = com.magneticchen.daijishou.google_drive.GoogleDrive.logAllFiles$default(r8, r2, r1, r6, r5)
-            if (r8 != r0) goto L5a
-            goto L76
-        L5a:
-            kotlinx.coroutines.MainCoroutineDispatcher r8 = kotlinx.coroutines.Dispatchers.getMain()
-            kotlin.coroutines.CoroutineContext r8 = (kotlin.coroutines.CoroutineContext) r8
-            com.magneticchen.daijishou.dialog_fragments.DebugAndExperimentalDialogFragment$onCreateDialog$7$1$1 r1 = new com.magneticchen.daijishou.dialog_fragments.DebugAndExperimentalDialogFragment$onCreateDialog$7$1$1
-            com.magneticchen.daijishou.dialog_fragments.ProgressDialogFragment r2 = r7.$progressDialogFragment
-            com.magneticchen.daijishou.dialog_fragments.DebugAndExperimentalDialogFragment r4 = r7.this$0
-            r1.<init>(r2, r4, r5)
-            kotlin.jvm.functions.Function2 r1 = (kotlin.jvm.functions.Function2) r1
-            r2 = r7
-            kotlin.coroutines.Continuation r2 = (kotlin.coroutines.Continuation) r2
-            r7.label = r3
-            java.lang.Object r8 = kotlinx.coroutines.BuildersKt.withContext(r8, r1, r2)
-            if (r8 != r0) goto L77
-        L76:
-            return r0
-        L77:
-            kotlin.Unit r8 = kotlin.Unit.INSTANCE
-            return r8
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.dialog_fragments.DebugAndExperimentalDialogFragment$onCreateDialog$7$1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        DaijishouSynchronizationModel daijishouSynchronizationModel2 = DebugAndExperimentalDialogFragment.onCreateDialog$lambda$1(this.$daijishouSynchronization$delegate);
+        GoogleDrive googleDrive2 = daijishouSynchronizationModel2 != null ? daijishouSynchronizationModel2.getGoogleDrive() : null;
+        if (googleDrive2 != null) {
+            this.label = 2;
+            if (GoogleDrive.logAllFiles$default(googleDrive2, false, this, 1, null) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        }
+
+        this.label = 3;
+        if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass1(this.$progressDialogFragment, this.this$0, null), this) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return Unit.INSTANCE;
     }
 
     /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DebugAndExperimentalDialogFragment$onCreateDialog$7$1$1, reason: invalid class name */
