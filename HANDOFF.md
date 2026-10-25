@@ -10,9 +10,9 @@ Lista de trabalho do próximo passo: **`build_tmp/PORT_PLAN.md`**.
 
 - O build atual **funciona** e foi comparado tela a tela com o build de referência em dois AVDs
   (mesmos bounds de UI, mesmos textos, mesmos logs nos caminhos de erro).
-- O que falta **não é comportamento**: é **autossuficiência da árvore**. 18 classes em 3
+- O que falta **não é comportamento**: é **autossuficiência da árvore**. 16 classes em 2
   arquivos Java ainda são substituídas pelo código de referência dentro do pipeline
-  (**35.060 linhas de smali** a portar). Todo o resto do app (1.436 arquivos) já é Java real.
+  (**27.280 linhas de smali** a portar). Todo o resto do app (1.437 arquivos) já é Java real.
 - Objetivo: **P0** eliminar essa dependência → **P1** gates de fidelidade → **P2** cobertura de
   testes. **Sem conversão para Kotlin** (decisão de escopo): a réplica é funcional, em Java.
 - Recursos Android (`res/`, `assets/`, `AndroidManifest.xml`, `resources.arsc`) já são
@@ -60,9 +60,9 @@ Ferramentas e método:
 | Smali textualmente igual ao ORIG | 9 classes |
 | Classes com nome JADX (`$AnonymousClassN` ou `$Cn`) | **722** |
 | Lambdas sintéticas geradas (`$$ExternalSyntheticLambda`) | 347 |
-| Classes substituídas inteiras pelo pipeline | **18** (em 3 arquivos Java) |
-| Smali ORIG a portar | **35.060 linhas** |
-| Ocorrências de stub no Java | 166 (116 são guardas do compilador Kotlin; **50 corpos reais**) |
+| Classes substituídas inteiras pelo pipeline | **16** (em 2 arquivos Java) |
+| Smali ORIG a portar | **27.280 linhas** |
+| Ocorrências de stub no Java | 155 (116 são guardas do compilador Kotlin; **39 corpos reais**) |
 | Stubs no dex final | 116 métodos / 9 classes |
 | Stubs no dex de referência | 116 métodos / 9 classes — **conjunto idêntico (0 diferença)** |
 | Referências ausentes (`check_refs.py`) | **0 métodos, 0 campos** (113 herdados benignos) |
@@ -235,8 +235,8 @@ Regras de interação aprendidas:
 
 ### P0 — Eliminar o reaproveitamento do código de referência (**prioridade máxima**)
 
-18 classes em 3 arquivos Java (`build_tmp/PORT_PLAN.md`). Total: **35.060 linhas** de smali restante.
-(Lote de calibração: `MD5.java`, `ForeverUpgradeScript.java` e `DownloadPlatformThumbnailsPackDialogFragment.java`; Lote 2: `SplashScreenActivity.java`, `BackupAndRestore.java`, `DownloadPlatformWallpapersPackDialogFragment.java`, `DownloadPlatformThumbnailsPackListDialogFragment.java`; Lote 3: `RetroAchievementsFaceFragment.java`, `PinAndPlayWidgetFaceFragment.java`; Lotes 4-11: `RetroAchievementsGameRecordDialogFragment`, `PlayableItemDetailDialogFragment`, `CachedBitmapLoader`, `DownloadPlatformsDialogFragment`, `BackupAndRestoreSettingsNavFragment`; Lote 12: `DaijishouConsoleViewModel.java`; Lote 13: `RetroAchievementsNavFragment.java`; Lote 14: `RetroAchievementsGameDialogFragment.java`).
+16 classes em 2 arquivos Java (`build_tmp/PORT_PLAN.md`). Total: **27.280 linhas** de smali restante.
+(Lote de calibração: `MD5.java`, `ForeverUpgradeScript.java` e `DownloadPlatformThumbnailsPackDialogFragment.java`; Lote 2: `SplashScreenActivity.java`, `BackupAndRestore.java`, `DownloadPlatformWallpapersPackDialogFragment.java`, `DownloadPlatformThumbnailsPackListDialogFragment.java`; Lote 3: `RetroAchievementsFaceFragment.java`, `PinAndPlayWidgetFaceFragment.java`; Lotes 4-11: `RetroAchievementsGameRecordDialogFragment`, `PlayableItemDetailDialogFragment`, `CachedBitmapLoader`, `DownloadPlatformsDialogFragment`, `BackupAndRestoreSettingsNavFragment`; Lote 12: `DaijishouConsoleViewModel.java`; Lote 13: `RetroAchievementsNavFragment.java`; Lote 14: `RetroAchievementsGameDialogFragment.java`; Lote 15: `GoogleDrive.java`).
 
 | Ordem sugerida | Arquivo Java | Classes | Linhas de smali |
 |---|---|---|---|
