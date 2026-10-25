@@ -10,9 +10,9 @@ Lista de trabalho do próximo passo: **`build_tmp/PORT_PLAN.md`**.
 
 - O build atual **funciona** e foi comparado tela a tela com o build de referência em dois AVDs
   (mesmos bounds de UI, mesmos textos, mesmos logs nos caminhos de erro).
-- O que falta **não é comportamento**: é **autossuficiência da árvore**. 54 classes em 24
+- O que falta **não é comportamento**: é **autossuficiência da árvore**. 49 classes em 20
   arquivos Java ainda são substituídas pelo código de referência dentro do pipeline
-  (**61.844 linhas de smali** a portar). Todo o resto do app (1.415 arquivos) já é Java real.
+  (**58.156 linhas de smali** a portar). Todo o resto do app (1.419 arquivos) já é Java real.
 - Objetivo: **P0** eliminar essa dependência → **P1** gates de fidelidade → **P2** cobertura de
   testes. **Sem conversão para Kotlin** (decisão de escopo): a réplica é funcional, em Java.
 - Recursos Android (`res/`, `assets/`, `AndroidManifest.xml`, `resources.arsc`) já são
@@ -235,8 +235,8 @@ Regras de interação aprendidas:
 
 ### P0 — Eliminar o reaproveitamento do código de referência (**prioridade máxima**)
 
-54 classes em 24 arquivos Java (`build_tmp/PORT_PLAN.md`). Total: **61.844 linhas** de smali restante.
-(Lote de calibração concluído: `MD5.java`, `ForeverUpgradeScript.java` e `DownloadPlatformThumbnailsPackDialogFragment.java`).
+49 classes em 20 arquivos Java (`build_tmp/PORT_PLAN.md`). Total: **58.156 linhas** de smali restante.
+(Lote de calibração concluído: `MD5.java`, `ForeverUpgradeScript.java` e `DownloadPlatformThumbnailsPackDialogFragment.java`; Lote 2 concluído: `SplashScreenActivity.java`, `BackupAndRestore.java`, `DownloadPlatformWallpapersPackDialogFragment.java`, `DownloadPlatformThumbnailsPackListDialogFragment.java`).
 
 | Ordem sugerida | Arquivo Java | Classes | Linhas de smali |
 |---|---|---|---|
@@ -245,10 +245,12 @@ Regras de interação aprendidas:
 | 1 | `upgrade_scripts/ForeverUpgradeScript.java` | 1 | 630 |
 | 2 | `activities/SplashScreenActivity.java` | 2 | 1.306 |
 | 2 | `backup_and_restore/BackupAndRestore.java` | 1 | 1.689 |
+| 2 | `dialog_fragments/DownloadPlatformWallpapersPackDialogFragment.java` | 1 | 359 |
+| 2 | `dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment.java` | 1 | 334 |
 | 3 | `google_drive/GoogleDrive.java` | 2 | 7.780 |
 | 4 | `view_models/DaijishouSynchronizationModel.java` | 7 | 10.611 |
 | 5 | `retro_achievements/RetroAchievementsManager.java` | 9 | 16.669 |
-| 6 | demais 19 arquivos | 33 | ~24.000 |
+| 6 | demais 17 arquivos | 28 | ~23.000 |
 
 **Aceite:** `build_member_map.py` reporta `stub classes: 0`; `class_map.json["stubs"]` vazio;
 `stub_compare.py` 0/0; `check_refs.py` 0; APK montado **sem** substituição passa a matriz de AVD.
