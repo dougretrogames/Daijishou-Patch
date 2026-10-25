@@ -43,7 +43,7 @@ public final class DownloadPlatformsDialogFragment extends DaijishouDialogFragme
     public ArrayAdapter<String> adapter;
     public ListView listView;
     public final List<String> listViewItems = new ArrayList();
-    private PlatformsIndexJson platformsIndexJson;
+    PlatformsIndexJson platformsIndexJson;
     public ProgressBar progressBar;
 
     /* JADX INFO: Access modifiers changed from: private */

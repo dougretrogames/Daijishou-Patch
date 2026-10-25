@@ -1,5 +1,6 @@
 package com.magneticchen.daijishou.dialog_fragments;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Application;
 import androidx.fragment.app.FragmentActivity;
@@ -7,6 +8,7 @@ import com.magneticchen.daijishou.DaijishouApplication;
 import com.magneticchen.daijishou.daijishou_library_db.portables.PlatformSharable;
 import com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexPlatformListItemJson;
 import com.magneticchen.daijishou.utils.Utils;
+import com.magneticchen.daijishou.view_models.DaijishouLibraryModel;
 import java.util.ArrayList;
 import java.util.List;
 import kotlin.ExceptionsKt;
@@ -14,13 +16,15 @@ import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
-import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Dispatchers;
 
 /* JADX INFO: compiled from: DownloadPlatformsDialogFragment.kt */
 /* JADX INFO: loaded from: classes4.dex */
@@ -46,7 +50,6 @@ final class DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2 extends c
         this.$succeedCount = intRef;
         this.$dialog = alertDialog;
     }
-
 
     public final Continuation create(Object obj, Continuation<?> continuation) {
         DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2 downloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2 = new DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2(this.$selectedPlatformList, this.$activity, this.$baseUri, this.this$0, this.$succeedCount, this.$dialog, continuation);
@@ -99,20 +102,82 @@ final class DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2 extends c
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:7:0x0018  */
-    /* JADX WARN: Code restructure failed: missing block: B:30:0x00de, code lost:
-    
-        if (kotlinx.coroutines.BuildersKt.withContext(r0, r15, r9) == r10) goto L31;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public static final java.lang.Object invokeSuspendImpl$importNext(kotlin.jvm.internal.Ref.IntRef r21, java.util.List<com.magneticchen.daijishou.daijishou_library_db.portables.PlatformSharable> r22, com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment r23, androidx.fragment.app.FragmentActivity r24, kotlinx.coroutines.CoroutineScope r25, kotlin.jvm.internal.Ref.IntRef r26, android.app.AlertDialog r27, java.util.List<com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexPlatformListItemJson> r28, kotlin.coroutines.Continuation<?> r29) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 228
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2.invokeSuspendImpl$importNext(kotlin.jvm.internal.Ref$IntRef, java.util.List, com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment, androidx.fragment.app.FragmentActivity, kotlinx.coroutines.CoroutineScope, kotlin.jvm.internal.Ref$IntRef, android.app.AlertDialog, java.util.List, kotlin.coroutines.Continuation):java.lang.Object");
+    public static final Object invokeSuspendImpl$importNext(
+            Ref.IntRef intRef,
+            List<PlatformSharable> list,
+            DownloadPlatformsDialogFragment downloadPlatformsDialogFragment,
+            FragmentActivity fragmentActivity,
+            CoroutineScope coroutineScope,
+            Ref.IntRef succeedCount,
+            AlertDialog alertDialog,
+            List<PlatformsIndexPlatformListItemJson> selectedPlatformList,
+            Continuation<?> continuation) throws Throwable {
+        DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$1 continuationImpl;
+        if (continuation instanceof DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$1) {
+            continuationImpl = (DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$1) continuation;
+            if ((continuationImpl.label & Integer.MIN_VALUE) != 0) {
+                continuationImpl.label -= Integer.MIN_VALUE;
+            } else {
+                continuationImpl = new DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$1(continuation);
+            }
+        } else {
+            continuationImpl = new DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$1(continuation);
+        }
+        Object obj = continuationImpl.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = continuationImpl.label;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            intRef.element++;
+            if (intRef.element < list.size()) {
+                PlatformSharable platformSharable = list.get(intRef.element);
+                try {
+                    DaijishouLibraryModel daijishouLibrary = downloadPlatformsDialogFragment.getDaijishouLibrary();
+                    Intrinsics.checkNotNull(fragmentActivity);
+                    DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$2 callback = new DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$2(
+                            succeedCount,
+                            downloadPlatformsDialogFragment,
+                            intRef,
+                            list,
+                            fragmentActivity,
+                            coroutineScope,
+                            alertDialog,
+                            selectedPlatformList);
+                    daijishouLibrary.importPlatformWithDialog(fragmentActivity, platformSharable, callback);
+                } catch (Exception e) {
+                    continuationImpl.L$0 = downloadPlatformsDialogFragment;
+                    continuationImpl.L$1 = coroutineScope;
+                    continuationImpl.L$2 = e;
+                    continuationImpl.label = 1;
+                    if (invokeSuspendImpl$importNext(intRef, list, downloadPlatformsDialogFragment, fragmentActivity, coroutineScope, succeedCount, alertDialog, selectedPlatformList, continuationImpl) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    downloadPlatformsDialogFragment.getLogger().warn(coroutineScope, ExceptionsKt.stackTraceToString(e));
+                }
+            } else {
+                CoroutineContext mainContext = (CoroutineContext) Dispatchers.getMain();
+                DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$3 withContextAction = new DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$3(
+                        alertDialog,
+                        downloadPlatformsDialogFragment,
+                        succeedCount,
+                        selectedPlatformList,
+                        null);
+                continuationImpl.label = 2;
+                if (BuildersKt.withContext(mainContext, withContextAction, continuationImpl) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+        } else if (i == 1) {
+            Exception exc = (Exception) continuationImpl.L$2;
+            CoroutineScope scope = (CoroutineScope) continuationImpl.L$1;
+            DownloadPlatformsDialogFragment fragment = (DownloadPlatformsDialogFragment) continuationImpl.L$0;
+            ResultKt.throwOnFailure(obj);
+            fragment.getLogger().warn(scope, ExceptionsKt.stackTraceToString(exc));
+        } else if (i == 2) {
+            ResultKt.throwOnFailure(obj);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        return Unit.INSTANCE;
     }
 }

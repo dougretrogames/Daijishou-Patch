@@ -1,17 +1,28 @@
 package com.magneticchen.daijishou.dialog_fragments;
 
+import android.app.Application;
 import android.app.Dialog;
+import android.content.SharedPreferences;
 import android.widget.Toast;
 import androidx.fragment.app.FragmentActivity;
+import com.magneticchen.daijishou.DaijishouApplication;
+import com.magneticchen.daijishou.application_data.StringPreference;
+import com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexJson;
+import com.magneticchen.daijishou.utils.Utils;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
-import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Dispatchers;
+import kotlinx.serialization.KSerializer;
+import kotlinx.serialization.json.Json;
 
 /* JADX INFO: compiled from: DownloadPlatformsDialogFragment.kt */
 /* JADX INFO: loaded from: classes4.dex */
@@ -31,7 +42,6 @@ final class DownloadPlatformsDialogFragment$onStart$1$1 extends com.magneticchen
         this.$dialog = dialog;
     }
 
-
     public final Continuation create(Object obj, Continuation<?> continuation) {
         return new DownloadPlatformsDialogFragment$onStart$1$1(this.this$0, this.$activity, this.$dialog, continuation);
     }
@@ -45,98 +55,67 @@ final class DownloadPlatformsDialogFragment$onStart$1$1 extends com.magneticchen
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:21:0x00a4, code lost:
-    
-        if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onStart$1$1.AnonymousClass2(r10.this$0, r11, null), r10) == r0) goto L22;
-     */
-
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object invokeSuspendImpl(java.lang.Object r11) throws java.lang.Throwable {
-        /*
-            r10 = this;
-            java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r1 = r10.label
-            r2 = 0
-            r3 = 2
-            r4 = 1
-            if (r1 == 0) goto L20
-            if (r1 == r4) goto L1c
-            if (r1 != r3) goto L14
-            kotlin.ResultKt.throwOnFailure(r11)
-            goto La7
-        L14:
-            java.lang.IllegalStateException r11 = new java.lang.IllegalStateException
-            java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-            r11.<init>(r0)
-            throw r11
-        L1c:
-            kotlin.ResultKt.throwOnFailure(r11)     // Catch: java.lang.Exception -> L8b
-            goto L88
-        L20:
-            kotlin.ResultKt.throwOnFailure(r11)
-            com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment r11 = r10.this$0     // Catch: java.lang.Exception -> L8b
-            androidx.fragment.app.FragmentActivity r1 = r10.$activity     // Catch: java.lang.Exception -> L8b
-            android.app.Application r1 = r1.getApplication()     // Catch: java.lang.Exception -> L8b
-            java.lang.String r5 = "null cannot be cast to non-null type com.magneticchen.daijishou.DaijishouApplication"
-            kotlin.jvm.internal.Intrinsics.checkNotNull(r1, r5)     // Catch: java.lang.Exception -> L8b
-            com.magneticchen.daijishou.DaijishouApplication r1 = (com.magneticchen.daijishou.DaijishouApplication) r1     // Catch: java.lang.Exception -> L8b
-            kotlinx.serialization.json.Json r1 = r1.getWeakJson()     // Catch: java.lang.Exception -> L8b
-            com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexJson$Companion r5 = com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexJson.INSTANCE     // Catch: java.lang.Exception -> L8b
-            kotlinx.serialization.KSerializer r5 = r5.serializer()     // Catch: java.lang.Exception -> L8b
-            kotlinx.serialization.DeserializationStrategy r5 = (kotlinx.serialization.DeserializationStrategy) r5     // Catch: java.lang.Exception -> L8b
-            com.magneticchen.daijishou.utils.Utils r6 = com.magneticchen.daijishou.utils.Utils.INSTANCE     // Catch: java.lang.Exception -> L8b
-            com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment r7 = r10.this$0     // Catch: java.lang.Exception -> L8b
-            android.content.SharedPreferences r7 = com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment.access$getDefaultSharedPreferences(r7)     // Catch: java.lang.Exception -> L8b
-            com.magneticchen.daijishou.application_data.StringPreference r8 = com.magneticchen.daijishou.application_data.StringPreference.INDEX_URI     // Catch: java.lang.Exception -> L8b
-            java.lang.String r8 = r8.getKey()     // Catch: java.lang.Exception -> L8b
-            com.magneticchen.daijishou.application_data.StringPreference r9 = com.magneticchen.daijishou.application_data.StringPreference.INDEX_URI     // Catch: java.lang.Exception -> L8b
-            java.lang.String r9 = r9.getDefaultValue()     // Catch: java.lang.Exception -> L8b
-            java.lang.String r7 = r7.getString(r8, r9)     // Catch: java.lang.Exception -> L8b
-            kotlin.jvm.internal.Intrinsics.checkNotNull(r7)     // Catch: java.lang.Exception -> L8b
-            java.lang.String r6 = r6.readEntireTextFromURL(r7)     // Catch: java.lang.Exception -> L8b
-            java.lang.Object r1 = r1.decodeFromString(r5, r6)     // Catch: java.lang.Exception -> L8b
-            com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexJson r1 = (com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexJson) r1     // Catch: java.lang.Exception -> L8b
-            com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment.access$setPlatformsIndexJson$p(r11, r1)     // Catch: java.lang.Exception -> L8b
-            com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment r11 = r10.this$0     // Catch: java.lang.Exception -> L8b
-            com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexJson r11 = com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment.access$getPlatformsIndexJson$p(r11)     // Catch: java.lang.Exception -> L8b
-            if (r11 == 0) goto La7
-            com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment r1 = r10.this$0     // Catch: java.lang.Exception -> L8b
-            android.app.Dialog r5 = r10.$dialog     // Catch: java.lang.Exception -> L8b
-            kotlinx.coroutines.MainCoroutineDispatcher r6 = kotlinx.coroutines.Dispatchers.getMain()     // Catch: java.lang.Exception -> L8b
-            kotlin.coroutines.CoroutineContext r6 = (kotlin.coroutines.CoroutineContext) r6     // Catch: java.lang.Exception -> L8b
-            com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onStart$1$1$1$1 r7 = new com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onStart$1$1$1$1     // Catch: java.lang.Exception -> L8b
-            r7.<init>(r1, r5, r11, r2)     // Catch: java.lang.Exception -> L8b
-            kotlin.jvm.functions.Function2 r7 = (kotlin.jvm.functions.Function2) r7     // Catch: java.lang.Exception -> L8b
-            r10.label = r4     // Catch: java.lang.Exception -> L8b
-            java.lang.Object r11 = kotlinx.coroutines.BuildersKt.withContext(r6, r7, r10)     // Catch: java.lang.Exception -> L8b
-            if (r11 != r0) goto L88
-            goto La6
-        L88:
-            kotlin.Unit r11 = (kotlin.Unit) r11     // Catch: java.lang.Exception -> L8b
-            goto La7
-        L8b:
-            r11 = move-exception
-            kotlinx.coroutines.MainCoroutineDispatcher r1 = kotlinx.coroutines.Dispatchers.getMain()
-            kotlin.coroutines.CoroutineContext r1 = (kotlin.coroutines.CoroutineContext) r1
-            com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onStart$1$1$2 r4 = new com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onStart$1$1$2
-            com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment r5 = r10.this$0
-            r4.<init>(r5, r11, r2)
-            kotlin.jvm.functions.Function2 r4 = (kotlin.jvm.functions.Function2) r4
-            r11 = r10
-            kotlin.coroutines.Continuation r11 = (kotlin.coroutines.Continuation) r11
-            r10.label = r3
-            java.lang.Object r11 = kotlinx.coroutines.BuildersKt.withContext(r1, r4, r11)
-            if (r11 != r0) goto La7
-        La6:
-            return r0
-        La7:
-            kotlin.Unit r11 = kotlin.Unit.INSTANCE
-            return r11
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onStart$1$1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+    public final Object invokeSuspendImpl(Object obj) throws Throwable {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int r1 = this.label;
+        if (r1 == 0) {
+            ResultKt.throwOnFailure(obj);
+            try {
+                DownloadPlatformsDialogFragment downloadPlatformsDialogFragment = this.this$0;
+                FragmentActivity activity = this.$activity;
+                Application application = activity.getApplication();
+                Intrinsics.checkNotNull(application, "null cannot be cast to non-null type com.magneticchen.daijishou.DaijishouApplication");
+                DaijishouApplication daijishouApplication = (DaijishouApplication) application;
+                Json weakJson = daijishouApplication.getWeakJson();
+                PlatformsIndexJson.Companion companion = PlatformsIndexJson.INSTANCE;
+                KSerializer serializer = companion.serializer();
+                Utils utils = Utils.INSTANCE;
+                DownloadPlatformsDialogFragment fragment = this.this$0;
+                SharedPreferences defaultSharedPreferences = fragment.getDefaultSharedPreferences();
+                StringPreference stringPreference = StringPreference.INDEX_URI;
+                String key = stringPreference.getKey();
+                String defaultValue = stringPreference.getDefaultValue();
+                String string = defaultSharedPreferences.getString(key, defaultValue);
+                Intrinsics.checkNotNull(string);
+                String readEntireTextFromURL = utils.readEntireTextFromURL(string);
+                PlatformsIndexJson platformsIndexJson = (PlatformsIndexJson) weakJson.decodeFromString(serializer, readEntireTextFromURL);
+                downloadPlatformsDialogFragment.platformsIndexJson = platformsIndexJson;
+                PlatformsIndexJson platformsIndexJson2 = this.this$0.platformsIndexJson;
+                if (platformsIndexJson2 != null) {
+                    DownloadPlatformsDialogFragment fragment2 = this.this$0;
+                    Dialog dialog = this.$dialog;
+                    CoroutineContext mainContext = (CoroutineContext) Dispatchers.getMain();
+                    DownloadPlatformsDialogFragment$onStart$1$1$1$1 action = new DownloadPlatformsDialogFragment$onStart$1$1$1$1(fragment2, dialog, platformsIndexJson2, null);
+                    this.label = 1;
+                    if (BuildersKt.withContext(mainContext, action, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+            } catch (Exception e) {
+                CoroutineContext mainContext2 = (CoroutineContext) Dispatchers.getMain();
+                AnonymousClass2 action2 = new AnonymousClass2(this.this$0, e, null);
+                this.label = 2;
+                if (BuildersKt.withContext(mainContext2, action2, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+        } else if (r1 == 1) {
+            try {
+                ResultKt.throwOnFailure(obj);
+            } catch (Exception e) {
+                CoroutineContext mainContext2 = (CoroutineContext) Dispatchers.getMain();
+                AnonymousClass2 action2 = new AnonymousClass2(this.this$0, e, null);
+                this.label = 2;
+                if (BuildersKt.withContext(mainContext2, action2, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+        } else if (r1 == 2) {
+            ResultKt.throwOnFailure(obj);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        return Unit.INSTANCE;
     }
 
     /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onStart$1$1$2, reason: invalid class name */
@@ -155,7 +134,6 @@ final class DownloadPlatformsDialogFragment$onStart$1$1 extends com.magneticchen
             this.$e = exc;
         }
 
-
         public final Continuation create(Object obj, Continuation<?> continuation) {
             return new AnonymousClass2(this.this$0, this.$e, continuation);
         }
@@ -163,11 +141,7 @@ final class DownloadPlatformsDialogFragment$onStart$1$1 extends com.magneticchen
         @Override // kotlin.jvm.functions.Function2
         public final Object invoke(CoroutineScope coroutineScope, Continuation<?> continuation) {
             try {
-                try {
-                    return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspendImpl(Unit.INSTANCE);
-                } catch (Throwable th) {
-                    throw com.magneticchen.daijishou.support.DaijishouSupport.sneakyThrow(th);
-                }
+                return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspendImpl(Unit.INSTANCE);
             } catch (Throwable th) {
                 throw com.magneticchen.daijishou.support.DaijishouSupport.sneakyThrow(th);
             }
