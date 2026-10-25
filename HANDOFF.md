@@ -10,9 +10,9 @@ Lista de trabalho do próximo passo: **`build_tmp/PORT_PLAN.md`**.
 
 - O build atual **funciona** e foi comparado tela a tela com o build de referência em dois AVDs
   (mesmos bounds de UI, mesmos textos, mesmos logs nos caminhos de erro).
-- O que falta **não é comportamento**: é **autossuficiência da árvore**. 40 classes em 12
+- O que falta **não é comportamento**: é **autossuficiência da árvore**. 38 classes em 10
   arquivos Java ainda são substituídas pelo código de referência dentro do pipeline
-  (**53.402 linhas de smali** a portar). Todo o resto do app (1.427 arquivos) já é Java real.
+  (**51.778 linhas de smali** a portar). Todo o resto do app (1.429 arquivos) já é Java real.
 - Objetivo: **P0** eliminar essa dependência → **P1** gates de fidelidade → **P2** cobertura de
   testes. **Sem conversão para Kotlin** (decisão de escopo): a réplica é funcional, em Java.
 - Recursos Android (`res/`, `assets/`, `AndroidManifest.xml`, `resources.arsc`) já são
@@ -60,13 +60,13 @@ Ferramentas e método:
 | Smali textualmente igual ao ORIG | 9 classes |
 | Classes com nome JADX (`$AnonymousClassN` ou `$Cn`) | **722** |
 | Lambdas sintéticas geradas (`$$ExternalSyntheticLambda`) | 347 |
-| Classes substituídas inteiras pelo pipeline | **40** (em 12 arquivos Java) |
-| Smali ORIG a portar | **53.402 linhas** |
-| Ocorrências de stub no Java | 189 (116 são guardas do compilador Kotlin; **73 corpos reais**) |
+| Classes substituídas inteiras pelo pipeline | **38** (em 10 arquivos Java) |
+| Smali ORIG a portar | **51.778 linhas** |
+| Ocorrências de stub no Java | 186 (116 são guardas do compilador Kotlin; **70 corpos reais**) |
 | Stubs no dex final | 116 métodos / 9 classes |
 | Stubs no dex de referência | 116 métodos / 9 classes — **conjunto idêntico (0 diferença)** |
 | Referências ausentes (`check_refs.py`) | **0 métodos, 0 campos** (113 herdados benignos) |
-| APK gerado | 21.287.782 bytes, `apksigner` v2+v3 OK, `zipalign -c -p 4` OK |
+| APK gerado | 21.283.686 bytes, `apksigner` v2+v3 OK, `zipalign -c -p 4` OK |
 | Dex do app | 3.615.796 bytes (`classes7.dex`, armazenado sem compressão) |
 | Testes | 71 PNG + 119 XML (build atual); 18 PNG + 24 XML (build de referência) |
 
