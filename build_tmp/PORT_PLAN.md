@@ -1,6 +1,6 @@
 # Plano de porte P0 — classes ainda substituídas pelo bytecode ORIG
 
-42 classes em 14 arquivos Java; 0 classes ORIG sem smali localizado; 0 sem arquivo Java.
+40 classes em 12 arquivos Java; 0 classes ORIG sem smali localizado; 0 sem arquivo Java.
 
 `java_real_stubs` = corpos que hoje são stub no Java (sem contar as guardas do
 compilador Kotlin "Super calls with default arguments", que existem também no ORIG).
@@ -19,8 +19,6 @@ compilador Kotlin "Super calls with default arguments", que existem também no O
 | 10 | `com/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment.java` | 3 | 1023 | 0 |
 | 11 | `com/magneticchen/daijishou/nav_fragments/PlatformLibraryGridViewNavFragment.java` | 1 | 949 | 0 |
 | 12 | `com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetTodayFaceFragment.java` | 1 | 675 | 0 |
-| 13 | `com/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetFaceFragment.java` | 1 | 507 | 0 |
-| 14 | `com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetContinueFaceFragment.java` | 1 | 471 | 0 |
 
 ## Classes por arquivo (nomes ORIG)
 
@@ -36,5 +34,3 @@ compilador Kotlin "Super calls with default arguments", que existem também no O
 - `com/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment.java`: `dialog_fragments/PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1$1`, `dialog_fragments/PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1$1$1`, `dialog_fragments/PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2$1$1`
 - `com/magneticchen/daijishou/nav_fragments/PlatformLibraryGridViewNavFragment.java`: `nav_fragments/PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1`
 - `com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetTodayFaceFragment.java`: `daijishou_widget/widgets/activity/ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1`
-- `com/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetFaceFragment.java`: `daijishou_widget/widgets/rss/RSSWidgetFaceFragment$onCreateView$1$1$2`
-- `com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetContinueFaceFragment.java`: `daijishou_widget/widgets/activity/ActivityWidgetContinueFaceFragment$onCreateView$2$1$1`
