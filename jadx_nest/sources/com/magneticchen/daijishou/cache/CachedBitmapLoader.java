@@ -34,7 +34,7 @@ public final class CachedBitmapLoader {
     private final ExpiringMap<String, Bitmap> cache;
     private final ExecutorCoroutineDispatcher dispatcher;
     public final HashMap<View, Job> jobs;
-    private final int maxShortEdgeLength;
+    final int maxShortEdgeLength;
 
     public CachedBitmapLoader(int i, int i2, long j, ExecutorCoroutineDispatcher executorCoroutineDispatcher) {
         this.maxShortEdgeLength = i2;
@@ -120,13 +120,13 @@ public final class CachedBitmapLoader {
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public final Object invokeOnFailedListenerWithoutJob(Exception exc, Continuation<?> continuation) {
+        final Object invokeOnFailedListenerWithoutJob(Exception exc, Continuation<?> continuation) {
             Object objWithContext = BuildersKt.withContext(LifecycleOwnerKt.getLifecycleScope(this.fragment).getCoroutineContext().plus(Dispatchers.getMain()), new CachedBitmapLoader$CachedBitmapLoaderTask$invokeOnFailedListenerWithoutJob$2(this, exc, null), continuation);
             return objWithContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objWithContext : Unit.INSTANCE;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public final Object invokeOnFailedListenerWithJob(Job job, View view, Exception exc, Continuation<?> continuation) {
+        final Object invokeOnFailedListenerWithJob(Job job, View view, Exception exc, Continuation<?> continuation) {
             if (Intrinsics.areEqual(this.this$0.jobs.get(view), job)) {
                 this.this$0.jobs.remove(view);
             }
@@ -142,7 +142,7 @@ public final class CachedBitmapLoader {
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public final Object finishAndInvokeCorrectListenerWithoutJob(Bitmap bitmap, boolean z, Continuation<?> continuation) {
+        final Object finishAndInvokeCorrectListenerWithoutJob(Bitmap bitmap, boolean z, Continuation<?> continuation) {
             Object objWithContext = BuildersKt.withContext(LifecycleOwnerKt.getLifecycleScope(this.fragment).getCoroutineContext().plus(Dispatchers.getMain()), new CachedBitmapLoader$CachedBitmapLoaderTask$finishAndInvokeCorrectListenerWithoutJob$2(this, bitmap, z, null), continuation);
             return objWithContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objWithContext : Unit.INSTANCE;
         }
@@ -155,7 +155,7 @@ public final class CachedBitmapLoader {
         }
 
         /* JADX INFO: Access modifiers changed from: private */
-        public final Object finishAndInvokeCorrectListenerWithJob(Job job, View view, Bitmap bitmap, boolean z, Continuation<?> continuation) {
+        final Object finishAndInvokeCorrectListenerWithJob(Job job, View view, Bitmap bitmap, boolean z, Continuation<?> continuation) {
             if (Intrinsics.areEqual(this.this$0.jobs.get(view), job)) {
                 this.this$0.jobs.remove(view);
                 Object objWithContext = BuildersKt.withContext(LifecycleOwnerKt.getLifecycleScope(this.fragment).getCoroutineContext().plus(Dispatchers.getMain()), new CachedBitmapLoader$CachedBitmapLoaderTask$finishAndInvokeCorrectListenerWithJob$2(this, bitmap, z, null), continuation);

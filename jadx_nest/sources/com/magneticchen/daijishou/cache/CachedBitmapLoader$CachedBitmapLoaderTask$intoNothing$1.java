@@ -1,10 +1,15 @@
 package com.magneticchen.daijishou.cache;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import com.magneticchen.daijishou.utils.ScaledBitmapLoader;
+import java.io.File;
 import kotlin.Metadata;
+import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
-import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 
@@ -24,7 +29,6 @@ final class CachedBitmapLoader$CachedBitmapLoaderTask$intoNothing$1 extends com.
         this.this$1 = cachedBitmapLoader;
     }
 
-
     public final Continuation create(Object obj, Continuation<?> continuation) {
         return new CachedBitmapLoader$CachedBitmapLoaderTask$intoNothing$1(this.this$0, this.this$1, continuation);
     }
@@ -38,24 +42,61 @@ final class CachedBitmapLoader$CachedBitmapLoaderTask$intoNothing$1 extends com.
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:32:0x00cf, code lost:
-    
-        if (r12.this$0.invokeOnFailedListenerWithoutJob(new java.lang.Exception("File not exists."), r12) == r1) goto L36;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:35:0x00dd, code lost:
-    
-        if (r12.this$0.invokeOnFailedListenerWithoutJob(r0, r12) == r1) goto L36;
-     */
-
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object invokeSuspendImpl(java.lang.Object r13) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 227
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.cache.CachedBitmapLoader$CachedBitmapLoaderTask$intoNothing$1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+    public final Object invokeSuspendImpl(Object obj) throws Throwable {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            if (this.this$0.getMode() == 0) {
+                try {
+                    File file = new File(this.this$0.getPath());
+                    if (file.exists()) {
+                        Bitmap bitmap;
+                        if (this.this$1.maxShortEdgeLength > 0) {
+                            bitmap = ScaledBitmapLoader.INSTANCE.decodeSampledBitmapFromFile(this.this$0.getPath(), this.this$1.maxShortEdgeLength, this.this$1.maxShortEdgeLength);
+                        } else {
+                            bitmap = BitmapFactory.decodeFile(this.this$0.getPath());
+                        }
+                        if (bitmap == null) {
+                            this.label = 1;
+                            if (this.this$0.invokeOnFailedListenerWithoutJob(new Exception("Bitmap is null."), this) == coroutine_suspended) {
+                                return coroutine_suspended;
+                            }
+                        } else {
+                            this.this$1.getCache().put(this.this$0.getPath(), bitmap);
+                            this.label = 2;
+                            if (this.this$0.finishAndInvokeCorrectListenerWithoutJob(bitmap, false, this) == coroutine_suspended) {
+                                return coroutine_suspended;
+                            }
+                        }
+                    } else {
+                        this.this$1.getCache().put(this.this$0.getPath(), null);
+                        this.label = 3;
+                        if (this.this$0.invokeOnFailedListenerWithoutJob(new Exception("File not exists."), this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    }
+                } catch (Exception e) {
+                    this.label = 4;
+                    if (this.this$0.invokeOnFailedListenerWithoutJob(e, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+            }
+        } else if (i == 1 || i == 2 || i == 3) {
+            try {
+                ResultKt.throwOnFailure(obj);
+            } catch (Exception e2) {
+                this.label = 4;
+                if (this.this$0.invokeOnFailedListenerWithoutJob(e2, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+        } else if (i == 4) {
+            ResultKt.throwOnFailure(obj);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        return Unit.INSTANCE;
     }
 }

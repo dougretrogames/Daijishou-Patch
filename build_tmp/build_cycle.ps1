@@ -25,6 +25,10 @@ Write-Host "=== 3) Descompilando com baksmali ==="
 & "$jd21\java.exe" -jar tools\baksmali-2.5.2.jar d build_tmp\app_dex\classes.dex -o build_tmp\smali_compiled
 if ($LASTEXITCODE -ne 0) { throw "baksmali failed with exit code $LASTEXITCODE" }
 
+Write-Host "=== 3.1) Atualizando class_map.json com build_class_map.py ==="
+python -I build_tmp\build_class_map.py
+if ($LASTEXITCODE -ne 0) { throw "build_class_map failed with exit code $LASTEXITCODE" }
+
 Write-Host "=== 4) Executando run_pipeline.ps1 ==="
 powershell -ExecutionPolicy Bypass -File build_tmp\run_pipeline.ps1
 if ($LASTEXITCODE -ne 0) { throw "pipeline failed with exit code $LASTEXITCODE" }
