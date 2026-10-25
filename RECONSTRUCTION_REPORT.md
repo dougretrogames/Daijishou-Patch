@@ -554,11 +554,11 @@ Depois: recompilar → D8 → baksmali → `run_pipeline.ps1` → `rebuild_app.p
 
 ## 8. Limitações conhecidas
 
-1. **A árvore Java não é, sozinha, o APK**: 9 classes que ainda não foram
+1. **A árvore Java não é, sozinha, o APK**: 8 classes que ainda não foram
    convertidas permanecem como stubs (UnsupportedOperationException) na árvore Java; o APK
    final usa o **código de referência** nesses pontos, aplicado pelo pipeline. Compilar a árvore
    sem o pipeline gera um APK que compila, mas não é equivalente nesses pontos.
-   (Progresso P0: 57 → 54 após calibração, 49 após lote 2, 46 após lote 3, 44 após lote 4, 42 após lote 5, 40 após lote 6, 38 após lote 7, 35 após lote 8, 33 após lote 9, 31 após lote 10, 28 após lote 11, 25 após lote 12, 23 após lote 13, 20 após lote 14, 16 após lote 15, 9 após lote 16; restante: 1 arquivo, 16.669 linhas de smali).
+   (Progresso P0: 57 → 54 após calibração, 49 após lote 2, 46 após lote 3, 44 após lote 4, 42 após lote 5, 40 após lote 6, 38 após lote 7, 35 após lote 8, 33 após lote 9, 31 após lote 10, 28 após lote 11, 25 após lote 12, 23 após lote 13, 20 após lote 14, 16 após lote 15, 9 após lote 16, 8 após lote 17; restante: 1 arquivo, 6.438 linhas de smali).
 2. **Nomes binários internos**: classes internas foram renomeadas pelo JADX
    (`Foo$onCreate$1` → `Foo$AnonymousClass1`/`Foo$C02201`); o pipeline mapeia de volta, mas a
    árvore não é idêntica ao Kotlin de origem.
@@ -587,7 +587,7 @@ Depois: recompilar → D8 → baksmali → `run_pipeline.ps1` → `rebuild_app.p
 - Deduplicação: 3.577 classes alteradas, 10.006 métodos removidos (10 jars).
 - Correções manuais/semi-automáticas: centenas, em lotes b1–b16 + passes globais
   (genéricos, lambdas sintéticas, DAOs, `suspend`, campos `final`, fluxo de máquinas de estado).
-- Reconciliação: 718 renomeações de classe, 9 classes-stub (iniciado em 57, 54 após calibração, 49 após lote 2, 46 após lote 3, 44 após lote 4, 42 após lote 5, 40 após lote 6, 38 após lote 7, 35 após lote 8, 33 após lote 9, 31 após lote 10, 28 após lote 11, 25 após lote 12, 23 após lote 13, 20 após lote 14, 16 após lote 15, 9 após lote 16),, 6 classes de closure copiadas,
+- Reconciliação: 718 renomeações de classe, 8 classes-stub (iniciado em 57, 54 após calibração, 49 após lote 2, 46 após lote 3, 44 após lote 4, 42 após lote 5, 40 após lote 6, 38 após lote 7, 35 após lote 8, 33 após lote 9, 31 após lote 10, 28 após lote 11, 25 após lote 12, 23 após lote 13, 20 após lote 14, 16 após lote 15, 9 após lote 16, 8 após lote 17), 6 classes de closure copiadas,
   49 + 101 + 9 injeções de membros, 5 corpos de stub, 9 classes/83 membros publicizados,
   59 normalizações de `invoke` em 14 arquivos.
 - Referências: 0 métodos e 0 campos ausentes (113 herdados benignos); 0 casts pós-`catch`.
