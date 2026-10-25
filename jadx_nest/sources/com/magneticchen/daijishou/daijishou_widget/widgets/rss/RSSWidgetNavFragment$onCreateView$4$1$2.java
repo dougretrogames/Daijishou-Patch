@@ -6,6 +6,7 @@ import com.google.android.material.progressindicator.LinearProgressIndicator;
 import com.prof18.rssparser.model.RssChannel;
 import java.util.Arrays;
 import java.util.List;
+import kotlin.ExceptionsKt;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
@@ -17,7 +18,9 @@ import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.StringCompanionObject;
+import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
+import kotlinx.coroutines.Dispatchers;
 
 /* JADX INFO: compiled from: RSSWidgetNavFragment.kt */
 /* JADX INFO: loaded from: classes4.dex */
@@ -53,28 +56,72 @@ final class RSSWidgetNavFragment$onCreateView$4$1$2 extends com.magneticchen.dai
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:32:0x00a0, code lost:
-    
-        if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.daijishou_widget.widgets.rss.RSSWidgetNavFragment$onCreateView$4$1$2.AnonymousClass1(r10.this$0, r11, null), r10) == r0) goto L37;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:36:0x00cf, code lost:
-    
-        if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.daijishou_widget.widgets.rss.RSSWidgetNavFragment$onCreateView$4$1$2.AnonymousClass2(r10.this$0, null), r10) == r0) goto L37;
-     */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v0, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v7 */
-
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object invokeSuspendImpl(java.lang.Object r11) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 213
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.daijishou_widget.widgets.rss.RSSWidgetNavFragment$onCreateView$4$1$2.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+    public final Object invokeSuspendImpl(Object obj) throws Throwable {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            CoroutineScope coroutineScope = (CoroutineScope) this.L$0;
+            try {
+                this.L$0 = coroutineScope;
+                this.L$1 = this.this$0;
+                this.label = 1;
+                Object rssChannelObj = this.this$0.parser.getRssChannel(this.$url, this);
+                if (rssChannelObj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                RssChannel rssChannel = (RssChannel) rssChannelObj;
+                this.this$0.channel = rssChannel;
+                String title = rssChannel.getTitle();
+                if (title == null) {
+                    title = this.this$0.noTitleString;
+                }
+                this.L$0 = coroutineScope;
+                this.L$1 = null;
+                this.label = 2;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass1(this.this$0, title, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } catch (Exception e) {
+                this.this$0.getLogger().warn(coroutineScope, ExceptionsKt.stackTraceToString(e));
+                this.L$0 = null;
+                this.L$1 = null;
+                this.label = 3;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(this.this$0, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+        } else if (i == 1) {
+            CoroutineScope coroutineScope2 = (CoroutineScope) this.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                RssChannel rssChannel2 = (RssChannel) obj;
+                this.this$0.channel = rssChannel2;
+                String title2 = rssChannel2.getTitle();
+                if (title2 == null) {
+                    title2 = this.this$0.noTitleString;
+                }
+                this.L$0 = coroutineScope2;
+                this.L$1 = null;
+                this.label = 2;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass1(this.this$0, title2, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } catch (Exception e2) {
+                this.this$0.getLogger().warn(coroutineScope2, ExceptionsKt.stackTraceToString(e2));
+                this.L$0 = null;
+                this.L$1 = null;
+                this.label = 3;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(this.this$0, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+        } else if (i == 2 || i == 3) {
+            ResultKt.throwOnFailure(obj);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        return Unit.INSTANCE;
     }
 
     /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.rss.RSSWidgetNavFragment$onCreateView$4$1$2$1, reason: invalid class name */

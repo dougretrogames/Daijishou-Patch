@@ -64,7 +64,7 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
     public String articlesFormatString;
     public RssChannel channel;
     public DaijishouWidgetRepository daijishouWidgetRepository;
-    private String noTitleString;
+    String noTitleString;
     public LinearProgressIndicator progressbar;
     public String rSSFeedString;
     private RecyclerView recyclerView;
@@ -73,7 +73,27 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
     private boolean scrollingOnBackPressed;
     private ConstraintLayout titleLayout;
     public TextView titleTextView;
-    private final RssParser parser = RssParserBuilderKt.RssParser();
+    final RssParser parser = RssParserBuilderKt.RssParser();
+
+    public static final RssParser access$getParser$p(RSSWidgetNavFragment rSSWidgetNavFragment) {
+        return rSSWidgetNavFragment.parser;
+    }
+
+    public static final void access$setChannel$p(RSSWidgetNavFragment rSSWidgetNavFragment, RssChannel rssChannel) {
+        rSSWidgetNavFragment.channel = rssChannel;
+    }
+
+    public static final RssChannel access$getChannel$p(RSSWidgetNavFragment rSSWidgetNavFragment) {
+        return rSSWidgetNavFragment.channel;
+    }
+
+    public static final String access$getNoTitleString$p(RSSWidgetNavFragment rSSWidgetNavFragment) {
+        return rSSWidgetNavFragment.noTitleString;
+    }
+
+    public static final DaijishouApplication.WrappedLogger access$getLogger(RSSWidgetNavFragment rSSWidgetNavFragment) {
+        return rSSWidgetNavFragment.getLogger();
+    }
     public final List<RssItem> articleList = new ArrayList();
 
     /* JADX INFO: compiled from: RSSWidgetNavFragment.kt */
