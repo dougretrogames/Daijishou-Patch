@@ -20,6 +20,7 @@ import com.magneticchen.daijishou.application_data.BooleanPreference;
 import com.magneticchen.daijishou.application_data.Constants;
 import com.magneticchen.daijishou.application_data.IntPreference;
 import com.magneticchen.daijishou.dialog_fragments.AcknowledgementDialogFragment;
+import com.magneticchen.daijishou.upgrade_scripts.UpgradeScript;
 import com.magneticchen.daijishou.utils.PlaidColorUtils;
 import com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel;
 import java.util.Arrays;
@@ -189,72 +190,30 @@ public final class SplashScreenActivity extends DaijishouAppCompatActivity {
             }
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:14:0x005b, code lost:
-        
-            if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getDefault(), new com.magneticchen.daijishou.activities.SplashScreenActivity.AnonymousClass1.AnonymousClass2(r7.this$0, r7.$activity, r7.$descriptionTextView, null), r7) == r0) goto L15;
-         */
-
-        /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r8) throws java.lang.Throwable {
-            /*
-                r7 = this;
-                java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-                int r1 = r7.label
-                r2 = 0
-                r3 = 2
-                r4 = 1
-                if (r1 == 0) goto L1f
-                if (r1 == r4) goto L1b
-                if (r1 != r3) goto L13
-                kotlin.ResultKt.throwOnFailure(r8)
-                goto L5e
-            L13:
-                java.lang.IllegalStateException r8 = new java.lang.IllegalStateException
-                java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-                r8.<init>(r0)
-                throw r8
-            L1b:
-                kotlin.ResultKt.throwOnFailure(r8)
-                goto L3f
-            L1f:
-                kotlin.ResultKt.throwOnFailure(r8)
-                kotlinx.coroutines.MainCoroutineDispatcher r8 = kotlinx.coroutines.Dispatchers.getMain()
-                kotlin.coroutines.CoroutineContext r8 = (kotlin.coroutines.CoroutineContext) r8
-                com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$1 r1 = new com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$1
-                android.widget.TextView r5 = r7.$descriptionTextView
-                com.magneticchen.daijishou.activities.SplashScreenActivity r6 = r7.this$0
-                r1.<init>(r5, r6, r2)
-                kotlin.jvm.functions.Function2 r1 = (kotlin.jvm.functions.Function2) r1
-                r5 = r7
-                kotlin.coroutines.Continuation r5 = (kotlin.coroutines.Continuation) r5
-                r7.label = r4
-                java.lang.Object r8 = kotlinx.coroutines.BuildersKt.withContext(r8, r1, r5)
-                if (r8 != r0) goto L3f
-                goto L5d
-            L3f:
-                kotlinx.coroutines.CoroutineDispatcher r8 = kotlinx.coroutines.Dispatchers.getDefault()
-                kotlin.coroutines.CoroutineContext r8 = (kotlin.coroutines.CoroutineContext) r8
-                com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$2 r1 = new com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$2
-                com.magneticchen.daijishou.activities.SplashScreenActivity r4 = r7.this$0
-                com.magneticchen.daijishou.activities.SplashScreenActivity r5 = r7.$activity
-                android.widget.TextView r6 = r7.$descriptionTextView
-                r1.<init>(r4, r5, r6, r2)
-                kotlin.jvm.functions.Function2 r1 = (kotlin.jvm.functions.Function2) r1
-                r2 = r7
-                kotlin.coroutines.Continuation r2 = (kotlin.coroutines.Continuation) r2
-                r7.label = r3
-                java.lang.Object r8 = kotlinx.coroutines.BuildersKt.withContext(r8, r1, r2)
-                if (r8 != r0) goto L5e
-            L5d:
-                return r0
-            L5e:
-                kotlin.Unit r8 = kotlin.Unit.INSTANCE
-                return r8
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.activities.SplashScreenActivity.AnonymousClass1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                C00531 step1 = new C00531(this.$descriptionTextView, this.this$0, null);
+                this.label = 1;
+                if (BuildersKt.withContext(Dispatchers.getMain(), step1, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } else if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+            } else if (i == 2) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            AnonymousClass2 step2 = new AnonymousClass2(this.this$0, this.$activity, this.$descriptionTextView, null);
+            this.label = 2;
+            if (BuildersKt.withContext(Dispatchers.getDefault(), step2, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
         }
 
         /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$2, reason: invalid class name */
@@ -361,30 +320,107 @@ public final class SplashScreenActivity extends DaijishouAppCompatActivity {
                 splashScreenActivity.finishWithDelay();
             }
 
-            /* JADX INFO: Access modifiers changed from: private */
-            /* JADX WARN: Code duplicated, block: B:7:0x001a  */
-            /* JADX WARN: Code restructure failed: missing block: B:27:0x0088, code lost:
-            
-                if (invokeSuspendImpl$finalize(r4, r5, r3) == r6) goto L50;
-             */
-            /* JADX WARN: Code restructure failed: missing block: B:42:0x00f7, code lost:
-            
-                if (r2.upgrade(r0, r7, r3) == r6) goto L50;
-             */
-            /* JADX WARN: Code restructure failed: missing block: B:49:0x011d, code lost:
-            
-                if (kotlinx.coroutines.BuildersKt.withContext(r2, r4, r3) == r6) goto L50;
-             */
-            /*
-                Code decompiled incorrectly, please refer to instructions dump.
-                To view partially-correct add '--show-bad-code' argument
-            */
-            public static final java.lang.Object invokeSuspendImpl$nextUpgrade(kotlin.jvm.internal.Ref.IntRef r14, int r15, com.magneticchen.daijishou.activities.SplashScreenActivity r16, com.magneticchen.daijishou.activities.SplashScreenActivity r17, android.widget.TextView r18, kotlin.coroutines.Continuation<?> r19) throws java.lang.Throwable {
-                /*
-                    Method dump skipped, instruction units count: 336
-                    To view this dump add '--comments-level debug' option
-                */
-                throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.activities.SplashScreenActivity.AnonymousClass1.AnonymousClass2.invokeSuspendImpl$nextUpgrade(kotlin.jvm.internal.Ref$IntRef, int, com.magneticchen.daijishou.activities.SplashScreenActivity, com.magneticchen.daijishou.activities.SplashScreenActivity, android.widget.TextView, kotlin.coroutines.Continuation):java.lang.Object");
+            public static final Object invokeSuspendImpl$nextUpgrade(Ref.IntRef index, int upgradedVersion, SplashScreenActivity activity, SplashScreenActivity this$0, TextView descriptionTextView, Continuation<?> continuation) throws Throwable {
+                SplashScreenActivity$onCreate$1$2$nextUpgrade$1 cont;
+                if (continuation instanceof SplashScreenActivity$onCreate$1$2$nextUpgrade$1) {
+                    cont = (SplashScreenActivity$onCreate$1$2$nextUpgrade$1) continuation;
+                    if ((cont.label & Integer.MIN_VALUE) != 0) {
+                        cont.label -= Integer.MIN_VALUE;
+                    } else {
+                        cont = new SplashScreenActivity$onCreate$1$2$nextUpgrade$1(continuation);
+                    }
+                } else {
+                    cont = new SplashScreenActivity$onCreate$1$2$nextUpgrade$1(continuation);
+                }
+                Object result = cont.result;
+                Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                int label = cont.label;
+                UpgradeScript script;
+                if (label == 0) {
+                    ResultKt.throwOnFailure(result);
+                    if (index.element >= Constants.INSTANCE.getUpgradeScripts().size()) {
+                        cont.label = 1;
+                        if (invokeSuspendImpl$finalize(this$0, descriptionTextView, cont) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    }
+                    script = Constants.INSTANCE.getUpgradeScripts().get(index.element);
+                    if (upgradedVersion < script.getToVersion()) {
+                        SplashScreenActivity$onCreate$1$2$nextUpgrade$2 step2 = new SplashScreenActivity$onCreate$1$2$nextUpgrade$2(descriptionTextView, script, null);
+                        cont.L$0 = index;
+                        cont.L$1 = activity;
+                        cont.L$2 = this$0;
+                        cont.L$3 = descriptionTextView;
+                        cont.L$4 = script;
+                        cont.I$0 = upgradedVersion;
+                        cont.label = 2;
+                        if (BuildersKt.withContext(Dispatchers.getMain(), step2, cont) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    } else {
+                        index.element++;
+                        BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this$0), null, null, new SplashScreenActivity$onCreate$1$2$nextUpgrade$5(index, upgradedVersion, activity, this$0, descriptionTextView, null), 3, null);
+                        return Unit.INSTANCE;
+                    }
+                } else if (label == 1) {
+                    ResultKt.throwOnFailure(result);
+                    return Unit.INSTANCE;
+                } else if (label == 2) {
+                    upgradedVersion = cont.I$0;
+                    script = (UpgradeScript) cont.L$4;
+                    descriptionTextView = (TextView) cont.L$3;
+                    this$0 = (SplashScreenActivity) cont.L$2;
+                    activity = (SplashScreenActivity) cont.L$1;
+                    index = (Ref.IntRef) cont.L$0;
+                    ResultKt.throwOnFailure(result);
+                } else if (label == 3) {
+                    this$0 = (SplashScreenActivity) cont.L$0;
+                    try {
+                        ResultKt.throwOnFailure(result);
+                        return Unit.INSTANCE;
+                    } catch (Exception e) {
+                        cont.L$0 = null;
+                        cont.L$1 = null;
+                        cont.L$2 = null;
+                        cont.L$3 = null;
+                        cont.L$4 = null;
+                        cont.label = 4;
+                        if (BuildersKt.withContext(Dispatchers.getMain(), new SplashScreenActivity$onCreate$1$2$nextUpgrade$4(this$0, e, null), cont) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    }
+                } else if (label == 4) {
+                    ResultKt.throwOnFailure(result);
+                    return Unit.INSTANCE;
+                } else {
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                }
+
+                try {
+                    SplashScreenActivity$onCreate$1$2$nextUpgrade$3 callback = new SplashScreenActivity$onCreate$1$2$nextUpgrade$3(index, this$0, upgradedVersion, activity, descriptionTextView);
+                    cont.L$0 = this$0;
+                    cont.L$1 = null;
+                    cont.L$2 = null;
+                    cont.L$3 = null;
+                    cont.L$4 = null;
+                    cont.label = 3;
+                    if (script.upgrade(activity, callback, cont) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } catch (Exception e) {
+                    cont.L$0 = null;
+                    cont.L$1 = null;
+                    cont.L$2 = null;
+                    cont.L$3 = null;
+                    cont.L$4 = null;
+                    cont.label = 4;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new SplashScreenActivity$onCreate$1$2$nextUpgrade$4(this$0, e, null), cont) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+                return Unit.INSTANCE;
             }
         }
     }
