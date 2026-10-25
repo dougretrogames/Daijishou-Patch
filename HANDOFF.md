@@ -10,9 +10,9 @@ Lista de trabalho do próximo passo: **`build_tmp/PORT_PLAN.md`**.
 
 - O build atual **funciona** e foi comparado tela a tela com o build de referência em dois AVDs
   (mesmos bounds de UI, mesmos textos, mesmos logs nos caminhos de erro).
-- O que falta **não é comportamento**: é **autossuficiência da árvore**. 28 classes em 6
+- O que falta **não é comportamento**: é **autossuficiência da árvore**. 24 classes em 5
   arquivos Java ainda são substituídas pelo código de referência dentro do pipeline
-  (**47.319 linhas de smali** a portar). Todo o resto do app (1.433 arquivos) já é Java real.
+  (**43.537 linhas de smali** a portar). Todo o resto do app (1.434 arquivos) já é Java real.
 - Objetivo: **P0** eliminar essa dependência → **P1** gates de fidelidade → **P2** cobertura de
   testes. **Sem conversão para Kotlin** (decisão de escopo): a réplica é funcional, em Java.
 - Recursos Android (`res/`, `assets/`, `AndroidManifest.xml`, `resources.arsc`) já são
@@ -235,8 +235,8 @@ Regras de interação aprendidas:
 
 ### P0 — Eliminar o reaproveitamento do código de referência (**prioridade máxima**)
 
-46 classes em 18 arquivos Java (`build_tmp/PORT_PLAN.md`). Total: **55.928 linhas** de smali restante.
-(Lote de calibração: `MD5.java`, `ForeverUpgradeScript.java` e `DownloadPlatformThumbnailsPackDialogFragment.java`; Lote 2: `SplashScreenActivity.java`, `BackupAndRestore.java`, `DownloadPlatformWallpapersPackDialogFragment.java`, `DownloadPlatformThumbnailsPackListDialogFragment.java`; Lote 3: `RetroAchievementsFaceFragment.java`, `PinAndPlayWidgetFaceFragment.java`).
+24 classes em 5 arquivos Java (`build_tmp/PORT_PLAN.md`). Total: **43.537 linhas** de smali restante.
+(Lote de calibração: `MD5.java`, `ForeverUpgradeScript.java` e `DownloadPlatformThumbnailsPackDialogFragment.java`; Lote 2: `SplashScreenActivity.java`, `BackupAndRestore.java`, `DownloadPlatformWallpapersPackDialogFragment.java`, `DownloadPlatformThumbnailsPackListDialogFragment.java`; Lote 3: `RetroAchievementsFaceFragment.java`, `PinAndPlayWidgetFaceFragment.java`; Lotes 4-11: `RetroAchievementsGameRecordDialogFragment`, `PlayableItemDetailDialogFragment`, `CachedBitmapLoader`, `DownloadPlatformsDialogFragment`, `BackupAndRestoreSettingsNavFragment`; Lote 12: `DaijishouConsoleViewModel.java`).
 
 | Ordem sugerida | Arquivo Java | Classes | Linhas de smali |
 |---|---|---|---|

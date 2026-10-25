@@ -144,7 +144,7 @@ do build de referência. Etapas, na ordem:
 | Etapa | Script | Efeito |
 |---|---|---|
 | mapa de membros | `build_member_map.py` | 718 renomeações de classes internas + mapa membro→referência |
-| stubs de classe | `patch_stubs.py` | 28 classes-stub substituídas pelo código de referência (progresso: 57 -> 54 após calibração -> 49 após lote 2 -> 46 após lote 3 -> 44 após lote 4 -> 42 após lote 5 -> 40 após lote 6 -> 38 após lote 7 -> 35 após lote 8 -> 33 após lote 9 -> 31 após lote 10 -> 28 após lote 11) |
+| stubs de classe | `patch_stubs.py` | 24 classes-stub substituídas pelo código de referência (progresso: 57 -> 54 após calibração -> 49 após lote 2 -> 46 após lote 3 -> 44 após lote 4 -> 42 após lote 5 -> 40 após lote 6 -> 38 após lote 7 -> 35 após lote 8 -> 33 após lote 9 -> 31 após lote 10 -> 28 após lote 11 -> 24 após lote 12) |
 | classes ausentes | `patch_closure.py` | 7 classes de closure copiadas da referência |
 | membros | `patch_members.py` | membros renomeados/realinhados nos arquivos derivados |
 | alinhamento/injeção | `patch_align.py` (2×) | **49** membros compilados injetados em massa + **101** e **9** injeções de closure |
