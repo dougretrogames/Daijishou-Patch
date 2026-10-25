@@ -2,19 +2,28 @@ package com.magneticchen.daijishou.backup_and_restore;
 
 import android.content.SharedPreferences;
 import com.magneticchen.daijishou.DaijishouApplication;
+import com.magneticchen.daijishou.application_data.BooleanPreference;
 import com.magneticchen.daijishou.backup_and_restore.modules.library.LibraryBackupAndRestoreModule;
 import com.magneticchen.daijishou.backup_and_restore.modules.misc.MiscBackupAndRestoreModule;
 import com.magneticchen.daijishou.backup_and_restore.modules.settings.SettingsBackupAndRestoreModule;
 import com.magneticchen.daijishou.backup_and_restore.modules.widget.WidgetBackupAndRestoreModule;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.Boxing;
 import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.jvm.internal.Intrinsics;
+import kotlin.random.Random;
 import org.eclipse.jgit.lib.Constants;
 
 /* JADX INFO: compiled from: BackupAndRestore.kt */
@@ -159,49 +168,190 @@ public final class BackupAndRestore {
         return backupAndRestore.backupToListOfBackupData(list, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:18:0x00a0  */
-    /* JADX WARN: Code duplicated, block: B:20:0x00bf A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:24:0x00d2 A[LOOP:0: B:22:0x00cc->B:24:0x00d2, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:7:0x0018  */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:19:0x00bd -> B:12:0x003f). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
-        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
-        */
-    public final java.lang.Object backupToListOfBackupData(java.util.List<com.magneticchen.daijishou.backup_and_restore.BackupData> r18, kotlin.coroutines.Continuation<?> r19) {
-        /*
-            Method dump skipped, instruction units count: 257
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.backup_and_restore.BackupAndRestore.backupToListOfBackupData(java.util.List, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object backupToListOfBackupData(List<BackupData> previousListOfBackupData, Continuation<?> continuation) {
+        AnonymousClass1 cont;
+        if (continuation instanceof AnonymousClass1) {
+            cont = (AnonymousClass1) continuation;
+            if ((cont.label & Integer.MIN_VALUE) != 0) {
+                cont.label -= Integer.MIN_VALUE;
+            } else {
+                cont = new AnonymousClass1(continuation);
+            }
+        } else {
+            cont = new AnonymousClass1(continuation);
+        }
+        Object result = cont.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int label = cont.label;
+        HashMap pipeLineData;
+        List<BackupData> listOfBackupData;
+        Iterator<BackupAndRestoreModule> it;
+        BackupAndRestoreModule module;
+        int randomInt;
+
+        if (label == 0) {
+            ResultKt.throwOnFailure(result);
+            pipeLineData = new HashMap();
+            listOfBackupData = new ArrayList<>();
+            pipeLineData.put("lastBackupTimestamp", Boxing.boxLong(this.defaultSharedPreferences.getLong("last_backup_timestamp", 0L)));
+            pipeLineData.put("useLightweightBackup", Boxing.boxBoolean(this.defaultSharedPreferences.getBoolean(BooleanPreference.USE_LIGHTWEIGHT_BACKUP.getKey(), BooleanPreference.USE_LIGHTWEIGHT_BACKUP.getDefaultValue())));
+            it = this.modules.iterator();
+        } else if (label == 1) {
+            randomInt = cont.I$0;
+            module = (BackupAndRestoreModule) cont.L$3;
+            it = (Iterator<BackupAndRestoreModule>) cont.L$2;
+            listOfBackupData = (List<BackupData>) cont.L$1;
+            pipeLineData = (HashMap) cont.L$0;
+            ResultKt.throwOnFailure(result);
+            HashMap contentMap = (HashMap) result;
+            for (Map.Entry entry : (Set<Map.Entry>) contentMap.entrySet()) {
+                listOfBackupData.add(new BackupData(
+                    module.getId(),
+                    module.getVersion(),
+                    randomInt,
+                    System.currentTimeMillis(),
+                    (String) entry.getKey(),
+                    (byte[]) entry.getValue()
+                ));
+            }
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+
+        while (it.hasNext()) {
+            module = it.next();
+            randomInt = Random.Default.nextInt();
+            cont.L$0 = pipeLineData;
+            cont.L$1 = listOfBackupData;
+            cont.L$2 = it;
+            cont.L$3 = module;
+            cont.I$0 = randomInt;
+            cont.label = 1;
+            Object res = module.createBackupContentHashMap(pipeLineData, cont);
+            if (res == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            HashMap contentMap = (HashMap) res;
+            for (Map.Entry entry : (Set<Map.Entry>) contentMap.entrySet()) {
+                listOfBackupData.add(new BackupData(
+                    module.getId(),
+                    module.getVersion(),
+                    randomInt,
+                    System.currentTimeMillis(),
+                    (String) entry.getKey(),
+                    (byte[]) entry.getValue()
+                ));
+            }
+        }
+        return listOfBackupData;
     }
 
-    /* JADX WARN: Code duplicated, block: B:41:0x00f8  */
-    /* JADX WARN: Code duplicated, block: B:43:0x0100  */
-    /* JADX WARN: Code duplicated, block: B:48:0x012e  */
-    /* JADX WARN: Code duplicated, block: B:51:0x0155 A[LOOP:1: B:39:0x00f2->B:51:0x0155, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:7:0x0018  */
-    /* JADX WARN: Code duplicated, block: B:80:0x0134 A[SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r14v6, types: [T, java.util.HashMap] */
-    /* JADX WARN: Type inference failed for: r5v21, types: [T, java.util.HashMap] */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:47:0x012b -> B:74:0x0265). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:68:0x021e -> B:69:0x021f). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:72:0x0224 -> B:74:0x0265). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:73:0x0245 -> B:74:0x0265). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
-        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
-        */
-    public final java.lang.Object restoreFromListOfBackupData(java.util.List<com.magneticchen.daijishou.backup_and_restore.BackupData> r19, int r20, kotlin.coroutines.Continuation<?> r21) {
-        /*
-            Method dump skipped, instruction units count: 621
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.backup_and_restore.BackupAndRestore.restoreFromListOfBackupData(java.util.List, int, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object restoreFromListOfBackupData(List<BackupData> listOfBackupData, int restorePolicy, Continuation<?> continuation) {
+        C02091 cont;
+        if (continuation instanceof C02091) {
+            cont = (C02091) continuation;
+            if ((cont.label & Integer.MIN_VALUE) != 0) {
+                cont.label -= Integer.MIN_VALUE;
+            } else {
+                cont = new C02091(continuation);
+            }
+        } else {
+            cont = new C02091(continuation);
+        }
+        Object result = cont.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int label = cont.label;
+        HashMap pipeLineData;
+        Iterator<BackupAndRestoreModule> it;
+
+        if (label == 0) {
+            ResultKt.throwOnFailure(result);
+            pipeLineData = new HashMap();
+            it = getBackupAndRestoreModulesByPolicy(restorePolicy).iterator();
+        } else if (label == 1) {
+            restorePolicy = cont.I$0;
+            it = (Iterator<BackupAndRestoreModule>) cont.L$3;
+            pipeLineData = (HashMap) cont.L$2;
+            listOfBackupData = (List<BackupData>) cont.L$1;
+            ResultKt.throwOnFailure(result);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+
+        String tag = "Restore from module with id (";
+        while (it.hasNext()) {
+            BackupAndRestoreModule module = it.next();
+            List<BackupData> listOfBackupDataForModule = new ArrayList<>();
+            boolean hasOlderVersion = false;
+            boolean hasNewerVersion = false;
+            for (BackupData item : listOfBackupData) {
+                if (Intrinsics.areEqual(item.getModuleId(), module.getId())) {
+                    listOfBackupDataForModule.add(item);
+                }
+                if (item.getModuleVersion() < module.getVersion()) {
+                    hasOlderVersion = true;
+                }
+                if (item.getModuleVersion() > module.getVersion()) {
+                    hasNewerVersion = true;
+                }
+            }
+            if (hasNewerVersion || listOfBackupDataForModule.isEmpty()) {
+                if (hasNewerVersion) {
+                    this.application.getLogger().error(this, tag + module.getId() + ") abort. Because backup has a newer version.");
+                } else {
+                    this.application.getLogger().error(this, tag + module.getId() + ") abort. Because listOfBackupDataForModule is empty.");
+                }
+                continue;
+            }
+            int firstVersion = listOfBackupDataForModule.get(0).getModuleVersion();
+            int firstRandomInt = listOfBackupDataForModule.get(0).getModuleRandomInt();
+            if (listOfBackupDataForModule.size() > 1) {
+                CollectionsKt.sortWith(listOfBackupDataForModule, new BackupAndRestore$restoreFromListOfBackupData$lambda$15$$inlined$sortBy$1());
+            }
+            boolean unaligned = false;
+            for (BackupData item : listOfBackupDataForModule) {
+                if (item.getModuleVersion() != firstVersion) {
+                    this.application.getLogger().error(this, tag + module.getId() + ") abort. Because versions are unaligned.");
+                    unaligned = true;
+                    break;
+                }
+                if (item.getModuleRandomInt() != firstRandomInt) {
+                    this.application.getLogger().error(this, tag + module.getId() + ") abort. Because random ints are unaligned.");
+                    unaligned = true;
+                    break;
+                }
+            }
+            if (unaligned) {
+                continue;
+            }
+            HashMap<String, byte[]> backupContent = new HashMap<>();
+            for (BackupData item : listOfBackupDataForModule) {
+                backupContent.put(item.getContentHashMapKey(), item.getContent());
+            }
+            if (hasOlderVersion) {
+                List<List<BackupAndRestoreModule.Companion.BackupContentMigration>> migrationChains =
+                    acquireMigrationChainsFromBackupContentListMigrations(firstVersion, module.getVersion(), module.getBackupContentListMigrations());
+                if (!migrationChains.isEmpty()) {
+                    List<BackupAndRestoreModule.Companion.BackupContentMigration> shortestChain =
+                        (List<BackupAndRestoreModule.Companion.BackupContentMigration>) CollectionsKt.sortedWith(migrationChains, new BackupAndRestore$restoreFromListOfBackupData$lambda$15$$inlined$sortedBy$1()).get(0);
+                    for (BackupAndRestoreModule.Companion.BackupContentMigration migration : shortestChain) {
+                        backupContent = migration.migrate(backupContent);
+                    }
+                } else {
+                    this.application.getLogger().error(this, tag + module.getId() + ") abort. Because migration from \"" + firstVersion + "\" to \"{" + module + ".version}\" is not supported.");
+                    continue;
+                }
+            }
+            cont.L$0 = this;
+            cont.L$1 = listOfBackupData;
+            cont.L$2 = pipeLineData;
+            cont.L$3 = it;
+            cont.I$0 = restorePolicy;
+            cont.label = 1;
+            if (module.restoreFromBackupContentHashMap(backupContent, pipeLineData, restorePolicy, cont) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        }
+        return Unit.INSTANCE;
     }
 }
