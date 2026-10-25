@@ -1,6 +1,6 @@
 # Plano de porte P0 — classes ainda substituídas pelo bytecode ORIG
 
-44 classes em 16 arquivos Java; 0 classes ORIG sem smali localizado; 0 sem arquivo Java.
+42 classes em 14 arquivos Java; 0 classes ORIG sem smali localizado; 0 sem arquivo Java.
 
 `java_real_stubs` = corpos que hoje são stub no Java (sem contar as guardas do
 compilador Kotlin "Super calls with default arguments", que existem também no ORIG).
@@ -21,8 +21,6 @@ compilador Kotlin "Super calls with default arguments", que existem também no O
 | 12 | `com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetTodayFaceFragment.java` | 1 | 675 | 0 |
 | 13 | `com/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetFaceFragment.java` | 1 | 507 | 0 |
 | 14 | `com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetContinueFaceFragment.java` | 1 | 471 | 0 |
-| 15 | `com/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment.java` | 1 | 450 | 0 |
-| 16 | `com/magneticchen/daijishou/nav_fragments/PlatformLibraryListViewNavFragment.java` | 1 | 444 | 0 |
 
 ## Classes por arquivo (nomes ORIG)
 
@@ -40,5 +38,3 @@ compilador Kotlin "Super calls with default arguments", que existem também no O
 - `com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetTodayFaceFragment.java`: `daijishou_widget/widgets/activity/ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1`
 - `com/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetFaceFragment.java`: `daijishou_widget/widgets/rss/RSSWidgetFaceFragment$onCreateView$1$1$2`
 - `com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetContinueFaceFragment.java`: `daijishou_widget/widgets/activity/ActivityWidgetContinueFaceFragment$onCreateView$2$1$1`
-- `com/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment.java`: `daijishou_widget/widgets/rss/RSSWidgetNavFragment$onCreateView$4$1$2`
-- `com/magneticchen/daijishou/nav_fragments/PlatformLibraryListViewNavFragment.java`: `nav_fragments/PlatformLibraryListViewNavFragment$refreshPreview$1$1`
