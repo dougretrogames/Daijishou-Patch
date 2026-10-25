@@ -1,5 +1,6 @@
 package com.magneticchen.daijishou.settings_nav_fragments;
 
+import android.app.Application;
 import android.widget.Toast;
 import androidx.lifecycle.LifecycleOwnerKt;
 import com.magneticchen.daijishou.DaijishouApplication;
@@ -7,15 +8,18 @@ import com.magneticchen.daijishou.R;
 import com.magneticchen.daijishou.dialog_fragments.AcknowledgementDialogFragment;
 import com.magneticchen.daijishou.dialog_fragments.ListSelectDialogFragment;
 import com.magneticchen.daijishou.dialog_fragments.ProgressDialogFragment;
+import com.magneticchen.daijishou.utils.Utils;
 import com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import kotlin.ExceptionsKt;
 import kotlin.Metadata;
 import kotlin.ResultKt;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.CoroutineContext;
 import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
@@ -24,6 +28,7 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
+import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
@@ -84,12 +89,90 @@ final class BackupAndRestoreSettingsNavFragment$onCreateView$2$1 extends com.mag
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object invokeSuspendImpl(java.lang.Object r19) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 321
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$2$1.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+    public final Object invokeSuspendImpl(Object obj) throws Throwable {
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = this.label;
+        CoroutineScope coroutineScope;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            coroutineScope = (CoroutineScope) this.L$0;
+            try {
+                this.L$0 = coroutineScope;
+                this.label = 1;
+                Object res = this.this$0.getDaijishouSynchronizationModel().getIndicesOfListOfBackupDataFromGoogleDrive(this);
+                if (res == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                obj = res;
+            } catch (Exception e) {
+                this.$logger.error(coroutineScope, ExceptionsKt.stackTraceToString(e));
+                return Unit.INSTANCE;
+            }
+        } else if (i == 1) {
+            coroutineScope = (CoroutineScope) this.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+            } catch (Exception e) {
+                this.$logger.error(coroutineScope, ExceptionsKt.stackTraceToString(e));
+                return Unit.INSTANCE;
+            }
+        } else if (i == 2) {
+            coroutineScope = (CoroutineScope) this.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+            } catch (Exception e) {
+                this.$logger.error(coroutineScope, ExceptionsKt.stackTraceToString(e));
+            }
+            return Unit.INSTANCE;
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+
+        Object resultObj = obj;
+        try {
+            List<DaijishouSynchronizationModel.Companion.IndexOfListOfBackupData> indices = (List) resultObj;
+            List<String> titles = new ArrayList<>();
+            List<String> descriptions = new ArrayList<>();
+            BackupAndRestoreSettingsNavFragment fragment = this.this$0;
+
+            for (DaijishouSynchronizationModel.Companion.IndexOfListOfBackupData item : indices) {
+                String daijishouUUID = item.getDaijishouUUID();
+                Application application = fragment.requireActivity().getApplication();
+                Intrinsics.checkNotNull(application, "null cannot be cast to non-null type com.magneticchen.daijishou.DaijishouApplication");
+                String myUUID = ((DaijishouApplication) application).getDaijishouUUID();
+                String title;
+                if (Intrinsics.areEqual(daijishouUUID, myUUID)) {
+                    title = "* " + fragment.getString(R.string.from_this_daijishou);
+                } else {
+                    String rawUuid = StringsKt.replace$default(item.getDaijishouUUID(), "\n", "", false, 4, null);
+                    String shortUuid = rawUuid.substring(0, 8);
+                    title = item.getTitle() + " (" + shortUuid + "...)";
+                }
+                titles.add(title);
+                String relativeTimeFormat = fragment.getString(R.string.last_backup_time_format);
+                String relativeTimeString = Utils.INSTANCE.getRelativeTimeString(item.getTimestamp());
+                String formatted = String.format(relativeTimeFormat, Arrays.copyOf(new Object[]{relativeTimeString}, 1));
+                descriptions.add(formatted);
+            }
+
+            CoroutineContext mainContext = (CoroutineContext) Dispatchers.getMain();
+            AnonymousClass2 action = new AnonymousClass2(
+                this.$progressDialogFragment,
+                this.this$0,
+                titles,
+                descriptions,
+                indices,
+                null
+            );
+            this.L$0 = coroutineScope;
+            this.label = 2;
+            if (BuildersKt.withContext(mainContext, action, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } catch (Exception e2) {
+            this.$logger.error(coroutineScope, ExceptionsKt.stackTraceToString(e2));
+        }
+        return Unit.INSTANCE;
     }
 
     /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$2$1$2, reason: invalid class name */
@@ -349,75 +432,36 @@ final class BackupAndRestoreSettingsNavFragment$onCreateView$2$1 extends com.mag
                         Code decompiled incorrectly, please refer to instructions dump.
                         To view partially-correct add '--show-bad-code' argument
                     */
-                    public final java.lang.Object invokeSuspendImpl(java.lang.Object r7) throws java.lang.Throwable {
-                        /*
-                            r6 = this;
-                            java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-                            int r1 = r6.label
-                            r2 = 2
-                            r3 = 1
-                            if (r1 == 0) goto L1e
-                            if (r1 == r3) goto L1a
-                            if (r1 != r2) goto L12
-                            kotlin.ResultKt.throwOnFailure(r7)
-                            goto L83
-                        L12:
-                            java.lang.IllegalStateException r7 = new java.lang.IllegalStateException
-                            java.lang.String r0 = "call to 'resume' before 'invoke' with coroutine"
-                            r7.<init>(r0)
-                            throw r7
-                        L1a:
-                            kotlin.ResultKt.throwOnFailure(r7)
-                            goto L67
-                        L1e:
-                            kotlin.ResultKt.throwOnFailure(r7)
-                            java.lang.Object r7 = r6.L$0
-                            kotlinx.coroutines.CoroutineScope r7 = (kotlinx.coroutines.CoroutineScope) r7
-                            com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment r1 = r6.this$0
-                            androidx.fragment.app.FragmentActivity r1 = r1.requireActivity()
-                            android.app.Application r1 = r1.getApplication()
-                            java.lang.String r4 = "null cannot be cast to non-null type com.magneticchen.daijishou.DaijishouApplication"
-                            kotlin.jvm.internal.Intrinsics.checkNotNull(r1, r4)
-                            com.magneticchen.daijishou.DaijishouApplication r1 = (com.magneticchen.daijishou.DaijishouApplication) r1
-                            com.magneticchen.daijishou.DaijishouApplication$WrappedLogger r1 = r1.getLogger()
-                            java.util.List<com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$Companion$IndexOfListOfBackupData> r4 = r6.$indices
-                            int r5 = r6.$it
-                            java.lang.Object r4 = r4.get(r5)
-                            com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$Companion$IndexOfListOfBackupData r4 = (com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.Companion.IndexOfListOfBackupData) r4
-                            java.lang.String r4 = r4.toString()
-                            r1.debug(r7, r4)
-                            com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment r7 = r6.this$0
-                            com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel r7 = com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment.access$getDaijishouSynchronizationModel(r7)
-                            java.util.List<com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$Companion$IndexOfListOfBackupData> r1 = r6.$indices
-                            int r4 = r6.$it
-                            java.lang.Object r1 = r1.get(r4)
-                            com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$Companion$IndexOfListOfBackupData r1 = (com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.Companion.IndexOfListOfBackupData) r1
-                            r4 = r6
-                            kotlin.coroutines.Continuation r4 = (kotlin.coroutines.Continuation) r4
-                            r6.label = r3
-                            java.lang.Object r7 = r7.deleteListOfBackupDataByIndexFromGoogleDrive(r1, r4)
-                            if (r7 != r0) goto L67
-                            goto L82
-                        L67:
-                            kotlinx.coroutines.MainCoroutineDispatcher r7 = kotlinx.coroutines.Dispatchers.getMain()
-                            kotlin.coroutines.CoroutineContext r7 = (kotlin.coroutines.CoroutineContext) r7
-                            com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$2$1$2$2$1$1$1 r1 = new com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$2$1$2$2$1$1$1
-                            com.magneticchen.daijishou.dialog_fragments.ProgressDialogFragment r3 = r6.$progressDialogFragment
-                            r4 = 0
-                            r1.<init>(r3, r4)
-                            kotlin.jvm.functions.Function2 r1 = (kotlin.jvm.functions.Function2) r1
-                            r3 = r6
-                            kotlin.coroutines.Continuation r3 = (kotlin.coroutines.Continuation) r3
-                            r6.label = r2
-                            java.lang.Object r7 = kotlinx.coroutines.BuildersKt.withContext(r7, r1, r3)
-                            if (r7 != r0) goto L83
-                        L82:
-                            return r0
-                        L83:
-                            kotlin.Unit r7 = kotlin.Unit.INSTANCE
-                            return r7
-                        */
-                        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$2$1.AnonymousClass2.C00682.AnonymousClass1.C00691.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+                    public final Object invokeSuspendImpl(Object obj) throws Throwable {
+                        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+                        int i = this.label;
+                        if (i == 0) {
+                            ResultKt.throwOnFailure(obj);
+                            CoroutineScope coroutineScope = (CoroutineScope) this.L$0;
+                            Application application = this.this$0.requireActivity().getApplication();
+                            Intrinsics.checkNotNull(application, "null cannot be cast to non-null type com.magneticchen.daijishou.DaijishouApplication");
+                            ((DaijishouApplication) application).getLogger().debug(coroutineScope, this.$indices.get(this.$it).toString());
+                            DaijishouSynchronizationModel daijishouSynchronizationModel = this.this$0.getDaijishouSynchronizationModel();
+                            DaijishouSynchronizationModel.Companion.IndexOfListOfBackupData indexOfListOfBackupData = this.$indices.get(this.$it);
+                            this.label = 1;
+                            if (daijishouSynchronizationModel.deleteListOfBackupDataByIndexFromGoogleDrive(indexOfListOfBackupData, this) == coroutine_suspended) {
+                                return coroutine_suspended;
+                            }
+                        } else if (i == 1) {
+                            ResultKt.throwOnFailure(obj);
+                        } else if (i == 2) {
+                            ResultKt.throwOnFailure(obj);
+                            return Unit.INSTANCE;
+                        } else {
+                            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+                        }
+                        CoroutineContext mainContext = (CoroutineContext) Dispatchers.getMain();
+                        C00701 action = new C00701(this.$progressDialogFragment, null);
+                        this.label = 2;
+                        if (BuildersKt.withContext(mainContext, action, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
                     }
 
                     /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$2$1$2$2$1$1$1, reason: invalid class name and collision with other inner class name */
