@@ -3,6 +3,14 @@ package com.magneticchen.daijishou.utils;
 import android.text.TextUtils;
 import android.util.Log;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Arrays;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
@@ -33,93 +41,46 @@ public final class MD5 {
         return StringsKt.equals(strCalculateMD5, md5, true);
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x005d */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    private final java.lang.String calculateMD5(java.io.File r12) {
-        /*
-            r11 = this;
-            java.lang.String r1 = "Exception on closing MD5 input stream"
-            java.lang.String r2 = "MD5"
-            r3 = 0
-            java.security.MessageDigest r0 = java.security.MessageDigest.getInstance(r2)     // Catch: java.security.NoSuchAlgorithmException -> L81
-            kotlin.jvm.internal.Intrinsics.checkNotNull(r0)     // Catch: java.security.NoSuchAlgorithmException -> L81
-            java.io.FileInputStream r4 = new java.io.FileInputStream     // Catch: java.io.FileNotFoundException -> L77
-            r4.<init>(r12)     // Catch: java.io.FileNotFoundException -> L77
-            java.io.InputStream r4 = (java.io.InputStream) r4     // Catch: java.io.FileNotFoundException -> L77
-            r12 = 8192(0x2000, float:1.148E-41)
-            byte[] r12 = new byte[r12]
-        L17:
-            int r3 = r4.read(r12)     // Catch: java.lang.Throwable -> L5d java.io.IOException -> L60
-            if (r3 <= 0) goto L22
-            r5 = 0
-            r0.update(r12, r5, r3)     // Catch: java.lang.Throwable -> L5d java.io.IOException -> L60
-            goto L17
-        L22:
-            byte[] r12 = r0.digest()     // Catch: java.lang.Throwable -> L5d java.io.IOException -> L60
-            java.math.BigInteger r0 = new java.math.BigInteger     // Catch: java.lang.Throwable -> L5d java.io.IOException -> L60
-            r3 = 1
-            r0.<init>(r3, r12)     // Catch: java.lang.Throwable -> L5d java.io.IOException -> L60
-            r12 = 16
-            java.lang.String r12 = r0.toString(r12)     // Catch: java.lang.Throwable -> L5d java.io.IOException -> L60
-            kotlin.jvm.internal.StringCompanionObject r0 = kotlin.jvm.internal.StringCompanionObject.INSTANCE     // Catch: java.lang.Throwable -> L5d java.io.IOException -> L60
-            java.lang.String r0 = "%32s"
-            java.lang.Object[] r12 = new java.lang.Object[]{r12}     // Catch: java.lang.Throwable -> L5d java.io.IOException -> L60
-            java.lang.Object[] r12 = java.util.Arrays.copyOf(r12, r3)     // Catch: java.lang.Throwable -> L5d java.io.IOException -> L60
-            java.lang.String r5 = java.lang.String.format(r0, r12)     // Catch: java.lang.Throwable -> L5d java.io.IOException -> L60
-            java.lang.String r12 = "format(...)"
-            kotlin.jvm.internal.Intrinsics.checkNotNullExpressionValue(r5, r12)     // Catch: java.lang.Throwable -> L5d java.io.IOException -> L60
-            r9 = 4
-            r10 = 0
-            r6 = 32
-            r7 = 48
-            r8 = 0
-            java.lang.String r12 = kotlin.text.StringsKt.replace$default(r5, r6, r7, r8, r9, r10)     // Catch: java.lang.Throwable -> L5d java.io.IOException -> L60
-            r4.close()     // Catch: java.io.IOException -> L56
-            return r12
-        L56:
-            r0 = move-exception
-            java.lang.Throwable r0 = (java.lang.Throwable) r0
-            android.util.Log.e(r2, r1, r0)
-            return r12
-        L5d:
-            r0 = move-exception
-            r12 = r0
-            goto L6c
-        L60:
-            r0 = move-exception
-            r12 = r0
-            java.lang.RuntimeException r0 = new java.lang.RuntimeException     // Catch: java.lang.Throwable -> L5d
-            java.lang.String r3 = "Unable to process file for MD5"
-            java.lang.Throwable r12 = (java.lang.Throwable) r12     // Catch: java.lang.Throwable -> L5d
-            r0.<init>(r3, r12)     // Catch: java.lang.Throwable -> L5d
-            throw r0     // Catch: java.lang.Throwable -> L5d
-        L6c:
-            r4.close()     // Catch: java.io.IOException -> L70
-            goto L76
-        L70:
-            r0 = move-exception
-            java.lang.Throwable r0 = (java.lang.Throwable) r0
-            android.util.Log.e(r2, r1, r0)
-        L76:
-            throw r12
-        L77:
-            r0 = move-exception
-            r12 = r0
-            java.lang.String r0 = "Exception while getting FileInputStream"
-            java.lang.Throwable r12 = (java.lang.Throwable) r12
-            android.util.Log.e(r2, r0, r12)
-            return r3
-        L81:
-            r0 = move-exception
-            r12 = r0
-            java.lang.String r0 = "Exception while getting digest"
-            java.lang.Throwable r12 = (java.lang.Throwable) r12
-            android.util.Log.e(r2, r0, r12)
-            return r3
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.utils.MD5.calculateMD5(java.io.File):java.lang.String");
+    private final String calculateMD5(File updateFile) {
+        String strClosingException = "Exception on closing MD5 input stream";
+        MessageDigest digest;
+        try {
+            digest = MessageDigest.getInstance("MD5");
+            Intrinsics.checkNotNull(digest);
+        } catch (NoSuchAlgorithmException e) {
+            Log.e("MD5", "Exception while getting digest", e);
+            return null;
+        }
+
+        FileInputStream fis;
+        try {
+            fis = new FileInputStream(updateFile);
+        } catch (FileNotFoundException e) {
+            Log.e("MD5", "Exception while getting FileInputStream", e);
+            return null;
+        }
+
+        InputStream is = fis;
+        byte[] buffer = new byte[8192];
+        try {
+            int read;
+            while ((read = is.read(buffer)) > 0) {
+                digest.update(buffer, 0, read);
+            }
+            byte[] md5Bytes = digest.digest();
+            BigInteger bigInt = new BigInteger(1, md5Bytes);
+            String output = bigInt.toString(16);
+            String formatted = String.format("%32s", Arrays.copyOf(new Object[]{output}, 1));
+            Intrinsics.checkNotNullExpressionValue(formatted, "format(...)");
+            return StringsKt.replace$default(formatted, ' ', '0', false, 4, (Object) null);
+        } catch (IOException e) {
+            throw new RuntimeException("Unable to process file for MD5", e);
+        } finally {
+            try {
+                is.close();
+            } catch (IOException e) {
+                Log.e("MD5", strClosingException, e);
+            }
+        }
     }
 }
