@@ -1,9 +1,12 @@
 package com.magneticchen.daijishou.upgrade_scripts;
 
+import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.net.Uri;
+import android.view.Window;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.content.res.AppCompatResources;
 import com.magneticchen.daijishou.application_data.Constants;
 import com.magneticchen.daijishou.application_data.portables.MessageJson;
 import com.magneticchen.daijishou.application_data.portables.MessagesIndexJson;
@@ -183,22 +186,60 @@ public final class ForeverUpgradeScript extends UpgradeScript {
             return Unit.INSTANCE;
         }
 
-        /* JADX WARN: Code duplicated, block: B:10:0x003a A[Catch: Exception -> 0x00c2, TryCatch #1 {Exception -> 0x00c2, blocks: (B:6:0x001a, B:8:0x002d, B:14:0x004d, B:10:0x003a, B:12:0x0040), top: B:34:0x001a }] */
-        /* JADX WARN: Code duplicated, block: B:12:0x0040 A[Catch: Exception -> 0x00c2, TryCatch #1 {Exception -> 0x00c2, blocks: (B:6:0x001a, B:8:0x002d, B:14:0x004d, B:10:0x003a, B:12:0x0040), top: B:34:0x001a }] */
-        /* JADX WARN: Code restructure failed: missing block: B:13:0x004b, code lost:
-        
-            if (r12 == r0.intValue()) goto L14;
-         */
-        /*
-            Code decompiled incorrectly, please refer to instructions dump.
-            To view partially-correct add '--show-bad-code' argument
-        */
-        private static final void invokeSuspendImpl$nextMessage(kotlin.jvm.internal.Ref.IntRef r9, com.magneticchen.daijishou.application_data.portables.MessagesIndexJson r10, kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r11, int r12, androidx.appcompat.app.AppCompatActivity r13) {
-            /*
-                Method dump skipped, instruction units count: 203
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.upgrade_scripts.ForeverUpgradeScript.AnonymousClass2.invokeSuspendImpl$nextMessage(kotlin.jvm.internal.Ref$IntRef, com.magneticchen.daijishou.application_data.portables.MessagesIndexJson, kotlin.jvm.functions.Function1, int, androidx.appcompat.app.AppCompatActivity):void");
+        private static final void invokeSuspendImpl$nextMessage(Ref.IntRef index, MessagesIndexJson messagesIndexJson, Function1<? super Boolean, Unit> callback, int version, AppCompatActivity appCompatActivity) {
+            index.element++;
+            if (index.element >= messagesIndexJson.getMessages().size()) {
+                callback.invoke(Boxing.boxBoolean(true));
+                return;
+            }
+            try {
+                MessageJson message = messagesIndexJson.getMessages().get(index.element);
+                Integer belowVersion = message.getBelowVersion();
+                Integer targetVersion = message.getTargetVersion();
+                boolean matches = false;
+                if (belowVersion != null && version < belowVersion.intValue()) {
+                    matches = true;
+                } else if (targetVersion != null && version == targetVersion.intValue()) {
+                    matches = true;
+                }
+                if (matches) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(appCompatActivity);
+                    builder.setTitle(message.getTitle());
+                    builder.setPositiveButton(message.getAcknowledgmentText(), new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            AnonymousClass2.invokeSuspendImpl$nextMessage$lambda$1(message, appCompatActivity, index, messagesIndexJson, callback, version, dialogInterface, i);
+                        }
+                    });
+                    builder.setMessage(message.getMessage());
+                    if (message.getCancelText() != null) {
+                        builder.setNegativeButton(message.getCancelText(), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                AnonymousClass2.invokeSuspendImpl$nextMessage$lambda$4$lambda$3(message, callback, appCompatActivity, dialogInterface, i);
+                            }
+                        });
+                    }
+                    if (message.getNeutralText() != null) {
+                        builder.setNeutralButton(message.getNeutralText(), new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                AnonymousClass2.invokeSuspendImpl$nextMessage$lambda$7$lambda$6(message, appCompatActivity, index, messagesIndexJson, callback, version, dialogInterface, i);
+                            }
+                        });
+                    }
+                    AlertDialog dialog = builder.create();
+                    Window window = dialog.getWindow();
+                    if (window != null) {
+                        window.setBackgroundDrawable(AppCompatResources.getDrawable(appCompatActivity, 0x7f0800a9));
+                    }
+                    dialog.show();
+                    return;
+                }
+                invokeSuspendImpl$nextMessage(index, messagesIndexJson, callback, version, appCompatActivity);
+            } catch (Exception e) {
+                invokeSuspendImpl$nextMessage(index, messagesIndexJson, callback, version, appCompatActivity);
+            }
         }
 
         /* JADX INFO: Access modifiers changed from: private */
