@@ -1,0 +1,125 @@
+package com.magneticchen.daijishou.settings_nav_fragments;
+
+import android.content.ContentResolver;
+import android.net.Uri;
+import android.os.Bundle;
+import android.widget.Toast;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.fragment.app.FragmentViewModelLazyKt;
+import androidx.lifecycle.LifecycleOwnerKt;
+import androidx.preference.Preference;
+import com.magneticchen.daijishou.R;
+import com.magneticchen.daijishou.abstract_fragment_classes.DaijishouPreferenceFragmentCompat;
+import com.magneticchen.daijishou.dialog_fragments.AcknowledgementDialogFragment;
+import com.magneticchen.daijishou.dialog_fragments.DownloadPlatformWallpapersPackListDialogFragment;
+import com.magneticchen.daijishou.dialog_fragments.ProgressDialogFragment;
+import com.magneticchen.daijishou.utils.Utils;
+import com.magneticchen.daijishou.view_models.DaijishouViewModel;
+import com.magneticchen.daijishou.view_models.SettingsViewModel;
+import kotlin.Lazy;
+import kotlin.Metadata;
+import kotlin.jvm.internal.Intrinsics;
+import kotlin.jvm.internal.Reflection;
+import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.Dispatchers;
+
+/* JADX INFO: compiled from: AppearanceSettingsNavFragment.kt */
+/* JADX INFO: loaded from: classes4.dex */
+@Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0012\u0010\b\u001a\u00020\t2\b\u0010\n\u001a\u0004\u0018\u00010\u000bH\u0016J\u001c\u0010\f\u001a\u00020\t2\b\u0010\n\u001a\u0004\u0018\u00010\u000b2\b\u0010\r\u001a\u0004\u0018\u00010\u0005H\u0016J\b\u0010\u000e\u001a\u00020\tH\u0016R\u001c\u0010\u0003\u001a\u0010\u0012\f\u0012\n \u0006*\u0004\u0018\u00010\u00050\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0005X\u0082.¢\u0006\u0002\n\u0000¨\u0006\u000f²\u0006\n\u0010\u0010\u001a\u00020\u0011X\u008a\u0084\u0002²\u0006\n\u0010\u0012\u001a\u00020\u0013X\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/settings_nav_fragments/AppearanceSettingsNavFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouPreferenceFragmentCompat;", "()V", "setWallpaperActivity", "Landroidx/activity/result/ActivityResultLauncher;", "", "kotlin.jvm.PlatformType", "titleString", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreatePreferences", "rootKey", "onStart", "app_release", "settingsModel", "Lcom/magneticchen/daijishou/view_models/SettingsViewModel;", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;"}, k = 1, mv = {1, 9, 0}, xi = 48)
+public final class AppearanceSettingsNavFragment extends DaijishouPreferenceFragmentCompat {
+    public final ActivityResultLauncher<String> setWallpaperActivity;
+    private String titleString;
+
+    public AppearanceSettingsNavFragment() {
+        ActivityResultLauncher<String> activityResultLauncherRegisterForActivityResult = registerForActivityResult(new ActivityResultContracts.GetContent(), new AppearanceSettingsNavFragment$$ExternalSyntheticLambda2(this));
+        Intrinsics.checkNotNullExpressionValue(activityResultLauncherRegisterForActivityResult, "registerForActivityResult(...)");
+        this.setWallpaperActivity = activityResultLauncherRegisterForActivityResult;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final void setWallpaperActivity$lambda$0(AppearanceSettingsNavFragment this$0, Uri uri) {
+        Intrinsics.checkNotNullParameter(this$0, "this$0");
+        if (Intrinsics.areEqual(uri, Uri.EMPTY) || uri == null) {
+            Toast.makeText(this$0.requireContext(), this$0.getString(R.string.aborted_period), 0).show();
+            return;
+        }
+        Utils utils = Utils.INSTANCE;
+        ContentResolver contentResolver = this$0.getApplication().getContentResolver();
+        Intrinsics.checkNotNullExpressionValue(contentResolver, "getContentResolver(...)");
+        long fileSize;
+        try {
+            fileSize = utils.getFileSize(contentResolver, uri);
+        } catch (java.io.FileNotFoundException e) {
+            throw com.magneticchen.daijishou.support.DaijishouSupport.sneakyThrow(e);
+        }
+        if (fileSize <= ((long) 5) * 1048576) {
+            BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this$0), Dispatchers.getIO(), null, new AppearanceSettingsNavFragment$setWallpaperActivity$1$1(this$0, uri, null), 2, null);
+        } else {
+            Toast.makeText(this$0.requireContext(), this$0.getString(R.string.file_too_large), 0).show();
+        }
+    }
+
+    @Override // com.magneticchen.daijishou.abstract_fragment_classes.DaijishouPreferenceFragmentCompat, androidx.preference.PreferenceFragmentCompat, androidx.fragment.app.Fragment
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        String string = getString(R.string.appearance_title);
+        Intrinsics.checkNotNullExpressionValue(string, "getString(...)");
+        this.titleString = string;
+        Preference preferenceFindPreference = findPreference("download_platform_wallpapers_pack_button");
+        Intrinsics.checkNotNull(preferenceFindPreference);
+        preferenceFindPreference.setOnPreferenceClickListener(new AppearanceSettingsNavFragment$$ExternalSyntheticLambda0(this));
+        Preference preferenceFindPreference2 = findPreference("set_wallpaper_button");
+        Intrinsics.checkNotNull(preferenceFindPreference2);
+        preferenceFindPreference2.setOnPreferenceClickListener(new AppearanceSettingsNavFragment$$ExternalSyntheticLambda1(this));
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final boolean onCreate$lambda$1(AppearanceSettingsNavFragment this$0, Preference it) {
+        Intrinsics.checkNotNullParameter(this$0, "this$0");
+        Intrinsics.checkNotNullParameter(it, "it");
+        DownloadPlatformWallpapersPackListDialogFragment.INSTANCE.newInstance().show(this$0.getParentFragmentManager(), ProgressDialogFragment.class.getName());
+        return true;
+    }
+
+    /* JADX INFO: Access modifiers changed from: private */
+    public static final boolean onCreate$lambda$2(AppearanceSettingsNavFragment this$0, Preference it) {
+        Intrinsics.checkNotNullParameter(this$0, "this$0");
+        Intrinsics.checkNotNullParameter(it, "it");
+        AcknowledgementDialogFragment.INSTANCE.newInstance(this$0.getString(R.string.set_wallpaper_title), this$0.getString(R.string.set_wallpaper_summary), this$0.getString(R.string.select), this$0.getString(R.string.cancel), this$0.getString(R.string.clear)).setOnAcknowledgedListener(new AppearanceSettingsNavFragment$onCreate$2$1(this$0)).setOnNeutralButtonClickedListener(new AppearanceSettingsNavFragment$onCreate$2$2(this$0)).show(this$0.getParentFragmentManager(), AcknowledgementDialogFragment.class.getName());
+        return true;
+    }
+
+    @Override // androidx.preference.PreferenceFragmentCompat
+    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        setPreferencesFromResource(R.xml.appearance_preferences, rootKey);
+    }
+
+    @Override // androidx.preference.PreferenceFragmentCompat, androidx.fragment.app.Fragment
+    public void onStart() {
+        super.onStart();
+        AppearanceSettingsNavFragment appearanceSettingsNavFragment = this;
+        SettingsViewModel settingsViewModelOnStart$lambda$3 = onStart$lambda$3(FragmentViewModelLazyKt.createViewModelLazy(appearanceSettingsNavFragment, Reflection.getOrCreateKotlinClass(SettingsViewModel.class), new AppearanceSettingsNavFragment$onStart$$inlined$activityViewModels$default$1(appearanceSettingsNavFragment), new AppearanceSettingsNavFragment$onStart$$inlined$activityViewModels$default$2(null, appearanceSettingsNavFragment), new AppearanceSettingsNavFragment$onStart$$inlined$activityViewModels$default$3(appearanceSettingsNavFragment)));
+        String str = this.titleString;
+        if (str == null) {
+            Intrinsics.throwUninitializedPropertyAccessException("titleString");
+            str = null;
+        }
+        settingsViewModelOnStart$lambda$3.setTitle(str);
+        DaijishouViewModel daijishouViewModelOnStart$lambda$4 = onStart$lambda$4(FragmentViewModelLazyKt.createViewModelLazy(appearanceSettingsNavFragment, Reflection.getOrCreateKotlinClass(DaijishouViewModel.class), new AppearanceSettingsNavFragment$onStart$$inlined$activityViewModels$default$4(appearanceSettingsNavFragment), new AppearanceSettingsNavFragment$onStart$$inlined$activityViewModels$default$5(null, appearanceSettingsNavFragment), new AppearanceSettingsNavFragment$onStart$$inlined$activityViewModels$default$6(appearanceSettingsNavFragment)));
+        String str2 = this.titleString;
+        if (str2 == null) {
+            Intrinsics.throwUninitializedPropertyAccessException("titleString");
+            str2 = null;
+        }
+        DaijishouViewModel.setTips$default(daijishouViewModelOnStart$lambda$4, str2, false, 2, null);
+    }
+
+    private static final SettingsViewModel onStart$lambda$3(Lazy<SettingsViewModel> lazy) {
+        return lazy.getValue();
+    }
+
+    private static final DaijishouViewModel onStart$lambda$4(Lazy<DaijishouViewModel> lazy) {
+        return lazy.getValue();
+    }
+}

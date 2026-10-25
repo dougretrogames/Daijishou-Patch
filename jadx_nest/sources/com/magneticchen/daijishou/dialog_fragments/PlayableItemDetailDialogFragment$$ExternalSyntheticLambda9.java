@@ -1,0 +1,25 @@
+package com.magneticchen.daijishou.dialog_fragments;
+
+import android.view.View;
+import androidx.fragment.app.FragmentActivity;
+
+/* JADX INFO: compiled from: D8$$SyntheticClass */
+/* JADX INFO: loaded from: classes4.dex */
+public final /* synthetic */ class PlayableItemDetailDialogFragment$$ExternalSyntheticLambda9 implements View.OnClickListener {
+    public final /* synthetic */ PlayableItemDetailDialogFragment f$0;
+    public final /* synthetic */ FragmentActivity f$1;
+
+    public /* synthetic */ PlayableItemDetailDialogFragment$$ExternalSyntheticLambda9(PlayableItemDetailDialogFragment playableItemDetailDialogFragment, FragmentActivity fragmentActivity) {
+        this.f$0 = playableItemDetailDialogFragment;
+        this.f$1 = fragmentActivity;
+    }
+
+    @Override // android.view.View.OnClickListener
+    public final void onClick(View view) {
+        try {
+            PlayableItemDetailDialogFragment.onCreateView$lambda$17(this.f$0, this.f$1, view);
+        } catch (Throwable th) {
+            throw com.magneticchen.daijishou.support.DaijishouSupport.sneakyThrow(th);
+        }
+    }
+}

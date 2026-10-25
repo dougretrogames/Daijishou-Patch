@@ -1,0 +1,169 @@
+package com.google.common.eventbus;
+
+import com.google.common.base.Preconditions;
+import com.google.common.collect.Queues;
+import java.util.Iterator;
+import java.util.Objects;
+import java.util.Queue;
+import java.util.concurrent.ConcurrentLinkedQueue;
+
+/* JADX INFO: loaded from: classes3.dex */
+@ElementTypesAreNonnullByDefault
+abstract class Dispatcher {
+    abstract void dispatch(Object event, Iterator<Subscriber> subscribers);
+
+    Dispatcher() {
+    }
+
+    static Dispatcher perThreadDispatchQueue() {
+        return new PerThreadQueuedDispatcher(null);
+    }
+
+    static Dispatcher legacyAsync() {
+        return new LegacyAsyncDispatcher(null);
+    }
+
+    static Dispatcher immediate() {
+        return ImmediateDispatcher.INSTANCE;
+    }
+
+    private static final class PerThreadQueuedDispatcher extends Dispatcher {
+        private final ThreadLocal<Boolean> dispatching;
+        private final ThreadLocal<Queue<Event>> queue;
+
+        private PerThreadQueuedDispatcher() {
+            this.queue = new AnonymousClass1(this);
+            this.dispatching = new AnonymousClass2(this);
+        }
+
+        /* synthetic */ PerThreadQueuedDispatcher(AnonymousClass1 anonymousClass1) {
+            this();
+        }
+
+        /* JADX INFO: renamed from: com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher$1, reason: invalid class name */
+        class AnonymousClass1 extends ThreadLocal<Queue<Event>> {
+            AnonymousClass1(final PerThreadQueuedDispatcher this$0) {
+            }
+
+            /* JADX INFO: Access modifiers changed from: protected */
+            @Override // java.lang.ThreadLocal
+            public Queue<Event> initialValue() {
+                return Queues.newArrayDeque();
+            }
+        }
+
+        /* JADX INFO: renamed from: com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher$2, reason: invalid class name */
+        class AnonymousClass2 extends ThreadLocal<Boolean> {
+            AnonymousClass2(final PerThreadQueuedDispatcher this$0) {
+            }
+
+            /* JADX INFO: Access modifiers changed from: protected */
+            /* JADX WARN: Can't rename method to resolve collision */
+            @Override // java.lang.ThreadLocal
+            public Boolean initialValue() {
+                return false;
+            }
+        }
+
+        @Override // com.google.common.eventbus.Dispatcher
+        void dispatch(Object event, Iterator<Subscriber> subscribers) {
+            Preconditions.checkNotNull(event);
+            Preconditions.checkNotNull(subscribers);
+            Queue queue = (Queue) Objects.requireNonNull(this.queue.get());
+            queue.offer(new Event(event, subscribers, null));
+            if (this.dispatching.get().booleanValue()) {
+                return;
+            }
+            this.dispatching.set(true);
+            while (true) {
+                try {
+                    Event event2 = (Event) queue.poll();
+                    if (event2 == null) {
+                        this.dispatching.remove();
+                        this.queue.remove();
+                        return;
+                    } else {
+                        while (event2.subscribers.hasNext()) {
+                            ((Subscriber) event2.subscribers.next()).dispatchEvent(event2.event);
+                        }
+                    }
+                } catch (Throwable th) {
+                    this.dispatching.remove();
+                    this.queue.remove();
+                    throw th;
+                }
+            }
+        }
+
+        private static final class Event {
+            private final Object event;
+            private final Iterator<Subscriber> subscribers;
+
+            /* synthetic */ Event(Object obj, Iterator it, AnonymousClass1 anonymousClass1) {
+                this(obj, it);
+            }
+
+            private Event(Object event, Iterator<Subscriber> subscribers) {
+                this.event = event;
+                this.subscribers = subscribers;
+            }
+        }
+    }
+
+    private static final class LegacyAsyncDispatcher extends Dispatcher {
+        private final ConcurrentLinkedQueue<EventWithSubscriber> queue;
+
+        private LegacyAsyncDispatcher() {
+            this.queue = Queues.newConcurrentLinkedQueue();
+        }
+
+        /* synthetic */ LegacyAsyncDispatcher(AnonymousClass1 anonymousClass1) {
+            this();
+        }
+
+        @Override // com.google.common.eventbus.Dispatcher
+        void dispatch(Object event, Iterator<Subscriber> subscribers) {
+            Preconditions.checkNotNull(event);
+            while (subscribers.hasNext()) {
+                this.queue.add(new EventWithSubscriber(event, subscribers.next(), null));
+            }
+            while (true) {
+                EventWithSubscriber eventWithSubscriberPoll = this.queue.poll();
+                if (eventWithSubscriberPoll == null) {
+                    return;
+                } else {
+                    eventWithSubscriberPoll.subscriber.dispatchEvent(eventWithSubscriberPoll.event);
+                }
+            }
+        }
+
+        private static final class EventWithSubscriber {
+            private final Object event;
+            private final Subscriber subscriber;
+
+            /* synthetic */ EventWithSubscriber(Object obj, Subscriber subscriber, AnonymousClass1 anonymousClass1) {
+                this(obj, subscriber);
+            }
+
+            private EventWithSubscriber(Object event, Subscriber subscriber) {
+                this.event = event;
+                this.subscriber = subscriber;
+            }
+        }
+    }
+
+    private static final class ImmediateDispatcher extends Dispatcher {
+        private static final ImmediateDispatcher INSTANCE = new ImmediateDispatcher();
+
+        private ImmediateDispatcher() {
+        }
+
+        @Override // com.google.common.eventbus.Dispatcher
+        void dispatch(Object event, Iterator<Subscriber> subscribers) {
+            Preconditions.checkNotNull(event);
+            while (subscribers.hasNext()) {
+                subscribers.next().dispatchEvent(event);
+            }
+        }
+    }
+}

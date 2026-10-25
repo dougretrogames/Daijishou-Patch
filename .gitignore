@@ -1,0 +1,41 @@
+# artefatos de build (scripts ficam versionados)
+build_tmp/*
+!build_tmp/*.py
+!build_tmp/*.ps1
+!build_tmp/*.md
+
+# compilação e dex
+nest_classes*/
+app_dex*/
+*.apk
+*.idsig
+*.dex
+*.jar
+*.class
+*.log
+*.stdout
+*.args
+nest_errors*.txt
+
+# árvores descompactadas (regeneráveis a partir do APK)
+jadx-1.5.6/
+jadx_noanon/
+smali/
+smali_classes*/
+smali_orig_app/
+dex/
+reconstructed/
+snapshots/
+tools/
+try_cfr/
+try_cfr_classes/
+jadx_nest/resources/
+
+# evidência de teste (regenerável)
+avd_tests/**/*.png
+avd_tests/**/*.xml
+avd_tests/**/*.txt
+
+# sistema
+Thumbs.db
+desktop.ini

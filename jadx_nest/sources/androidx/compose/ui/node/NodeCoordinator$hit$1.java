@@ -1,0 +1,43 @@
+package androidx.compose.ui.node;
+
+import androidx.compose.ui.Modifier;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.internal.Lambda;
+
+/* JADX INFO: compiled from: NodeCoordinator.kt */
+/* JADX INFO: loaded from: classes.dex */
+@Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
+final class NodeCoordinator$hit$1 extends Lambda implements Function0<Unit> {
+    final /* synthetic */ HitTestResult $hitTestResult;
+    final /* synthetic */ NodeCoordinator.HitTestSource $hitTestSource;
+    final /* synthetic */ boolean $isInLayer;
+    final /* synthetic */ boolean $isTouchEvent;
+    final /* synthetic */ long $pointerPosition;
+    final /* synthetic */ Modifier.Node $this_hit;
+    final /* synthetic */ NodeCoordinator this$0;
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    NodeCoordinator$hit$1(NodeCoordinator nodeCoordinator, Modifier.Node node, NodeCoordinator.HitTestSource hitTestSource, long j, HitTestResult hitTestResult, boolean z, boolean z2) {
+        super(0);
+        this.this$0 = nodeCoordinator;
+        this.$this_hit = node;
+        this.$hitTestSource = hitTestSource;
+        this.$pointerPosition = j;
+        this.$hitTestResult = hitTestResult;
+        this.$isTouchEvent = z;
+        this.$isInLayer = z2;
+    }
+
+    @Override // kotlin.jvm.functions.Function0
+    public /* bridge */ /* synthetic */ Unit invoke() {
+        invoke2();
+        return Unit.INSTANCE;
+    }
+
+    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    public final void invoke2() {
+        this.this$0.m2008hit1hIXUjU(NodeCoordinatorKt.m2032nextUntilhw7D004(this.$this_hit, this.$hitTestSource.mo2030entityTypeOLwlOKw(), NodeKind.m2034constructorimpl(2)), this.$hitTestSource, this.$pointerPosition, this.$hitTestResult, this.$isTouchEvent, this.$isInLayer);
+    }
+}

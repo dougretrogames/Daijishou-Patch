@@ -1,0 +1,49 @@
+package com.google.auth.oauth2;
+
+import com.google.common.collect.ImmutableMap;
+import java.io.Serializable;
+import java.util.Map;
+import javax.annotation.Nullable;
+
+/* JADX INFO: loaded from: classes3.dex */
+public abstract class JwtClaims implements Serializable {
+    private static final long serialVersionUID = 4974444151019426702L;
+
+    public static abstract class Builder {
+        public abstract JwtClaims build();
+
+        public abstract Builder setAdditionalClaims(Map<String, String> map);
+
+        public abstract Builder setAudience(String str);
+
+        public abstract Builder setIssuer(String str);
+
+        public abstract Builder setSubject(String str);
+    }
+
+    abstract Map<String, String> getAdditionalClaims();
+
+    @Nullable
+    abstract String getAudience();
+
+    @Nullable
+    abstract String getIssuer();
+
+    @Nullable
+    abstract String getSubject();
+
+    public static Builder newBuilder() {
+        return new AutoValue_JwtClaims.Builder().setAdditionalClaims(ImmutableMap.of());
+    }
+
+    public JwtClaims merge(JwtClaims jwtClaims) {
+        ImmutableMap.Builder builder = ImmutableMap.builder();
+        builder.putAll(getAdditionalClaims());
+        builder.putAll(jwtClaims.getAdditionalClaims());
+        return newBuilder().setAudience(jwtClaims.getAudience() == null ? getAudience() : jwtClaims.getAudience()).setIssuer(jwtClaims.getIssuer() == null ? getIssuer() : jwtClaims.getIssuer()).setSubject(jwtClaims.getSubject() == null ? getSubject() : jwtClaims.getSubject()).setAdditionalClaims(builder.build()).build();
+    }
+
+    public boolean isComplete() {
+        return ((getAudience() == null && !(getAdditionalClaims().containsKey("scope") && !getAdditionalClaims().get("scope").isEmpty())) || getIssuer() == null || getSubject() == null) ? false : true;
+    }
+}

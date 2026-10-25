@@ -1,0 +1,18 @@
+package org.eclipse.jgit.util;
+
+/* JADX INFO: loaded from: classes5.dex */
+public class Holder<T> {
+    private T value;
+
+    public Holder(T t) {
+        set(t);
+    }
+
+    public T get() {
+        return this.value;
+    }
+
+    public void set(T t) {
+        this.value = t;
+    }
+}

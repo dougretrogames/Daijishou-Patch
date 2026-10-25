@@ -1,0 +1,32 @@
+package io.opencensus.trace.config;
+
+/* JADX INFO: loaded from: classes4.dex */
+public abstract class TraceConfig {
+    private static final NoopTraceConfig NOOP_TRACE_CONFIG = new NoopTraceConfig(null);
+
+    public abstract TraceParams getActiveTraceParams();
+
+    public abstract void updateActiveTraceParams(TraceParams traceParams);
+
+    public static TraceConfig getNoopTraceConfig() {
+        return NOOP_TRACE_CONFIG;
+    }
+
+    private static final class NoopTraceConfig extends TraceConfig {
+        @Override // io.opencensus.trace.config.TraceConfig
+        public void updateActiveTraceParams(TraceParams traceParams) {
+        }
+
+        private NoopTraceConfig() {
+        }
+
+        /* synthetic */ NoopTraceConfig(AnonymousClass1 anonymousClass1) {
+            this();
+        }
+
+        @Override // io.opencensus.trace.config.TraceConfig
+        public TraceParams getActiveTraceParams() {
+            return TraceParams.DEFAULT;
+        }
+    }
+}

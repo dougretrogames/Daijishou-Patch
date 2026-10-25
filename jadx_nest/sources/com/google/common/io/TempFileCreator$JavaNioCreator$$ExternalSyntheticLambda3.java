@@ -1,0 +1,18 @@
+package com.google.common.io;
+
+import java.nio.file.attribute.FileAttribute;
+
+/* JADX INFO: compiled from: D8$$SyntheticClass */
+/* JADX INFO: loaded from: classes3.dex */
+public final /* synthetic */ class TempFileCreator$JavaNioCreator$$ExternalSyntheticLambda3 implements TempFileCreator.JavaNioCreator.PermissionSupplier {
+    public final /* synthetic */ FileAttribute f$0;
+
+    public /* synthetic */ TempFileCreator$JavaNioCreator$$ExternalSyntheticLambda3(FileAttribute fileAttribute) {
+        this.f$0 = fileAttribute;
+    }
+
+    @Override // com.google.common.io.TempFileCreator.JavaNioCreator.PermissionSupplier
+    public final FileAttribute get() {
+        return TempFileCreator.JavaNioCreator.lambda$userPermissions$3(this.f$0);
+    }
+}

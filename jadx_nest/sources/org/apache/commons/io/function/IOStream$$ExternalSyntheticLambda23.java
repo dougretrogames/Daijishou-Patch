@@ -1,0 +1,18 @@
+package org.apache.commons.io.function;
+
+import java.util.function.BiConsumer;
+
+/* JADX INFO: compiled from: D8$$SyntheticClass */
+/* JADX INFO: loaded from: classes5.dex */
+public final /* synthetic */ class IOStream$$ExternalSyntheticLambda23 implements BiConsumer {
+    public final /* synthetic */ IOBiConsumer f$0;
+
+    public /* synthetic */ IOStream$$ExternalSyntheticLambda23(IOBiConsumer iOBiConsumer) {
+        this.f$0 = iOBiConsumer;
+    }
+
+    @Override // java.util.function.BiConsumer
+    public final void accept(Object obj, Object obj2) throws Throwable {
+        Erase.accept(this.f$0, obj, obj2);
+    }
+}

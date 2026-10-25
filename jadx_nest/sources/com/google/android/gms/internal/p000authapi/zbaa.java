@@ -1,0 +1,25 @@
+package com.google.android.gms.internal.p000authapi;
+
+import android.os.RemoteException;
+import com.google.android.gms.auth.api.identity.SaveAccountLinkingTokenRequest;
+import com.google.android.gms.common.api.internal.RemoteCall;
+import com.google.android.gms.common.internal.Preconditions;
+import com.google.android.gms.tasks.TaskCompletionSource;
+
+/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* JADX INFO: loaded from: classes3.dex */
+public final /* synthetic */ class zbaa implements RemoteCall {
+    public final /* synthetic */ zbaf zba;
+    public final /* synthetic */ SaveAccountLinkingTokenRequest zbb;
+
+    public /* synthetic */ zbaa(zbaf zbafVar, SaveAccountLinkingTokenRequest saveAccountLinkingTokenRequest) {
+        this.zba = zbafVar;
+        this.zbb = saveAccountLinkingTokenRequest;
+    }
+
+    /* JADX WARN: Multi-variable type inference failed */
+    @Override // com.google.android.gms.common.api.internal.RemoteCall
+    public final void accept(Object obj, Object obj2) throws RemoteException {
+        ((zbm) ((zbg) obj).getService()).zbc(new zbad(this.zba, (TaskCompletionSource) obj2), (SaveAccountLinkingTokenRequest) Preconditions.checkNotNull(this.zbb));
+    }
+}

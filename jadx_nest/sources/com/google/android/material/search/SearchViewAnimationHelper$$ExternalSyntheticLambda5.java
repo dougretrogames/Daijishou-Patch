@@ -1,0 +1,16 @@
+package com.google.android.material.search;
+
+/* JADX INFO: compiled from: D8$$SyntheticClass */
+/* JADX INFO: loaded from: classes3.dex */
+public final /* synthetic */ class SearchViewAnimationHelper$$ExternalSyntheticLambda5 implements Runnable {
+    public final /* synthetic */ SearchViewAnimationHelper f$0;
+
+    public /* synthetic */ SearchViewAnimationHelper$$ExternalSyntheticLambda5(SearchViewAnimationHelper searchViewAnimationHelper) {
+        this.f$0 = searchViewAnimationHelper;
+    }
+
+    @Override // java.lang.Runnable
+    public final void run() {
+        this.f$0.m3323x4df249eb();
+    }
+}

@@ -1,0 +1,13 @@
+package com.google.common.util.concurrent;
+
+import com.google.common.base.Function;
+import java.util.List;
+
+/* JADX INFO: compiled from: D8$$SyntheticClass */
+/* JADX INFO: loaded from: classes4.dex */
+public final /* synthetic */ class FuturesGetChecked$$ExternalSyntheticLambda0 implements Function {
+    @Override // com.google.common.base.Function
+    public final Object apply(Object obj) {
+        return Boolean.valueOf(((List) obj).contains(String.class));
+    }
+}

@@ -1,0 +1,19 @@
+package androidx.compose.ui.graphics;
+
+import android.graphics.ColorSpace;
+import androidx.compose.ui.graphics.colorspace.DoubleFunction;
+
+/* JADX INFO: compiled from: D8$$SyntheticClass */
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class ColorSpaceVerificationHelper$$ExternalSyntheticLambda2 implements DoubleFunction {
+    public final /* synthetic */ ColorSpace f$0;
+
+    public /* synthetic */ ColorSpaceVerificationHelper$$ExternalSyntheticLambda2(ColorSpace colorSpace) {
+        this.f$0 = colorSpace;
+    }
+
+    @Override // androidx.compose.ui.graphics.colorspace.DoubleFunction
+    public final double invoke(double d) {
+        return ColorSpaceVerificationHelper.composeColorSpace$lambda$2(this.f$0, d);
+    }
+}

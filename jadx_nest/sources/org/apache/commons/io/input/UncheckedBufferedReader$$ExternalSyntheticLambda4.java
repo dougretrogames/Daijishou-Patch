@@ -1,0 +1,18 @@
+package org.apache.commons.io.input;
+
+import org.apache.commons.io.function.IOTriFunction;
+
+/* JADX INFO: compiled from: D8$$SyntheticClass */
+/* JADX INFO: loaded from: classes5.dex */
+public final /* synthetic */ class UncheckedBufferedReader$$ExternalSyntheticLambda4 implements IOTriFunction {
+    public final /* synthetic */ UncheckedBufferedReader f$0;
+
+    public /* synthetic */ UncheckedBufferedReader$$ExternalSyntheticLambda4(UncheckedBufferedReader uncheckedBufferedReader) {
+        this.f$0 = uncheckedBufferedReader;
+    }
+
+    @Override // org.apache.commons.io.function.IOTriFunction
+    public final Object apply(Object obj, Object obj2, Object obj3) {
+        return this.f$0.m5593xe63f3180((char[]) obj, ((Integer) obj2).intValue(), ((Integer) obj3).intValue());
+    }
+}

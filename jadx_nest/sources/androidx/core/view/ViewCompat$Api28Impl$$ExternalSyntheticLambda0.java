@@ -1,0 +1,19 @@
+package androidx.core.view;
+
+import android.view.KeyEvent;
+import android.view.View;
+
+/* JADX INFO: compiled from: D8$$SyntheticClass */
+/* JADX INFO: loaded from: classes.dex */
+public final /* synthetic */ class ViewCompat$Api28Impl$$ExternalSyntheticLambda0 implements View.OnUnhandledKeyEventListener {
+    public final /* synthetic */ ViewCompat.OnUnhandledKeyEventListenerCompat f$0;
+
+    public /* synthetic */ ViewCompat$Api28Impl$$ExternalSyntheticLambda0(ViewCompat.OnUnhandledKeyEventListenerCompat onUnhandledKeyEventListenerCompat) {
+        this.f$0 = onUnhandledKeyEventListenerCompat;
+    }
+
+    @Override // android.view.View.OnUnhandledKeyEventListener
+    public final boolean onUnhandledKeyEvent(View view, KeyEvent keyEvent) {
+        return this.f$0.onUnhandledKeyEvent(view, keyEvent);
+    }
+}
