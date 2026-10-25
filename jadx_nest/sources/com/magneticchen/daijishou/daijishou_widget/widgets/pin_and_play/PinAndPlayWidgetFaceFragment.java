@@ -297,18 +297,183 @@ public final class PinAndPlayWidgetFaceFragment extends WidgetFaceFragment {
     /* JADX WARN: Type inference failed for: r10v4 */
     /* JADX WARN: Type inference failed for: r10v6, types: [boolean] */
     /* JADX WARN: Type inference failed for: r11v34 */
-    /* JADX WARN: Type inference failed for: r11v5 */
-    /* JADX WARN: Type inference failed for: r11v6, types: [boolean] */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object updateFace(boolean r10, kotlin.coroutines.Continuation<?> r11) {
-        /*
-            Method dump skipped, instruction units count: 443
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.daijishou_widget.widgets.pin_and_play.PinAndPlayWidgetFaceFragment.updateFace(boolean, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object updateFace(boolean z, Continuation<?> continuation) {
+        C02191 c02191;
+        if (continuation instanceof C02191) {
+            c02191 = (C02191) continuation;
+            if ((c02191.label & Integer.MIN_VALUE) != 0) {
+                c02191.label -= Integer.MIN_VALUE;
+            } else {
+                c02191 = new C02191(continuation);
+            }
+        } else {
+            c02191 = new C02191(continuation);
+        }
+
+        Object obj = c02191.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = c02191.label;
+        Mutex mutex;
+        boolean updateView;
+        PinAndPlayWidgetFaceFragment self;
+        PlayableItemEntity playableItemEntity;
+
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            mutex = this.pinAndPlayWidgetMutex;
+            c02191.L$0 = this;
+            c02191.L$1 = mutex;
+            c02191.Z$0 = z;
+            c02191.label = 1;
+            if (mutex.lock(null, c02191) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            updateView = z;
+            self = this;
+        } else if (i == 1) {
+            updateView = c02191.Z$0;
+            mutex = (Mutex) c02191.L$1;
+            self = (PinAndPlayWidgetFaceFragment) c02191.L$0;
+            ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            mutex = (Mutex) c02191.L$1;
+            self = (PinAndPlayWidgetFaceFragment) c02191.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                c02191.L$0 = self;
+                c02191.L$1 = mutex;
+                c02191.label = 5;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new PinAndPlayWidgetFaceFragment$updateFace$2$8(self, null), c02191) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                self.cachedBitmap = null;
+                return Unit.INSTANCE;
+            } finally {
+                mutex.unlock(null);
+            }
+        } else if (i == 3) {
+            updateView = c02191.Z$0;
+            playableItemEntity = (PlayableItemEntity) c02191.L$2;
+            mutex = (Mutex) c02191.L$1;
+            self = (PinAndPlayWidgetFaceFragment) c02191.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                String boxArtPath = Utils.INSTANCE.getBoxArtPath(playableItemEntity);
+                PinAndPlayWidgetInstanceEntity instance = self.pinAndPlayWidgetInstanceEntity;
+                String alternativeImagePath = instance != null ? instance.getAlternativeImagePath() : null;
+                if (boxArtPath == null && alternativeImagePath == null) {
+                    self.cachedBitmap = null;
+                    if (updateView) {
+                        c02191.L$0 = mutex;
+                        c02191.L$1 = null;
+                        c02191.L$2 = null;
+                        c02191.label = 4;
+                        if (BuildersKt.withContext(Dispatchers.getMain(), new PinAndPlayWidgetFaceFragment$updateFace$2$3(self, null), c02191) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    }
+                } else if (alternativeImagePath != null) {
+                    ImageView iv = self.imageView;
+                    if (iv == null) {
+                        Intrinsics.throwUninitializedPropertyAccessException("imageView");
+                        iv = null;
+                    }
+                    self.getDaijishouLibrary().getCachedBoxArtBitmapLoader().with(self).load(alternativeImagePath).setOnFailedListener(new PinAndPlayWidgetFaceFragment$updateFace$2$4(self, updateView)).setOnSucceedListener(new PinAndPlayWidgetFaceFragment$updateFace$2$5(self, updateView)).into(iv);
+                } else if (boxArtPath != null) {
+                    ImageView iv = self.imageView;
+                    if (iv == null) {
+                        Intrinsics.throwUninitializedPropertyAccessException("imageView");
+                        iv = null;
+                    }
+                    self.getDaijishouLibrary().getCachedBoxArtBitmapLoader().with(self).load(boxArtPath).setOnFailedListener(new PinAndPlayWidgetFaceFragment$updateFace$2$6(self, updateView)).setOnSucceedListener(new PinAndPlayWidgetFaceFragment$updateFace$2$7(self, updateView)).into(iv);
+                }
+                return Unit.INSTANCE;
+            } finally {
+                mutex.unlock(null);
+            }
+        } else if (i == 4) {
+            mutex = (Mutex) c02191.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } finally {
+                mutex.unlock(null);
+            }
+        } else if (i == 5) {
+            mutex = (Mutex) c02191.L$1;
+            self = (PinAndPlayWidgetFaceFragment) c02191.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                self.cachedBitmap = null;
+                return Unit.INSTANCE;
+            } finally {
+                mutex.unlock(null);
+            }
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+
+        try {
+            playableItemEntity = self.playableItemEntity;
+            if (playableItemEntity == null) {
+                c02191.L$0 = self;
+                c02191.L$1 = mutex;
+                c02191.label = 2;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new PinAndPlayWidgetFaceFragment$updateFace$2$1(self, null), c02191) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                c02191.L$0 = self;
+                c02191.L$1 = mutex;
+                c02191.label = 5;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new PinAndPlayWidgetFaceFragment$updateFace$2$8(self, null), c02191) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                self.cachedBitmap = null;
+                return Unit.INSTANCE;
+            } else {
+                Intrinsics.checkNotNull(playableItemEntity);
+                c02191.L$0 = self;
+                c02191.L$1 = mutex;
+                c02191.L$2 = playableItemEntity;
+                c02191.Z$0 = updateView;
+                c02191.label = 3;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new PinAndPlayWidgetFaceFragment$updateFace$2$2(self, playableItemEntity, null), c02191) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                String boxArtPath = Utils.INSTANCE.getBoxArtPath(playableItemEntity);
+                PinAndPlayWidgetInstanceEntity instance = self.pinAndPlayWidgetInstanceEntity;
+                String alternativeImagePath = instance != null ? instance.getAlternativeImagePath() : null;
+                if (boxArtPath == null && alternativeImagePath == null) {
+                    self.cachedBitmap = null;
+                    if (updateView) {
+                        c02191.L$0 = mutex;
+                        c02191.L$1 = null;
+                        c02191.L$2 = null;
+                        c02191.label = 4;
+                        if (BuildersKt.withContext(Dispatchers.getMain(), new PinAndPlayWidgetFaceFragment$updateFace$2$3(self, null), c02191) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    }
+                } else if (alternativeImagePath != null) {
+                    ImageView iv = self.imageView;
+                    if (iv == null) {
+                        Intrinsics.throwUninitializedPropertyAccessException("imageView");
+                        iv = null;
+                    }
+                    self.getDaijishouLibrary().getCachedBoxArtBitmapLoader().with(self).load(alternativeImagePath).setOnFailedListener(new PinAndPlayWidgetFaceFragment$updateFace$2$4(self, updateView)).setOnSucceedListener(new PinAndPlayWidgetFaceFragment$updateFace$2$5(self, updateView)).into(iv);
+                } else if (boxArtPath != null) {
+                    ImageView iv = self.imageView;
+                    if (iv == null) {
+                        Intrinsics.throwUninitializedPropertyAccessException("imageView");
+                        iv = null;
+                    }
+                    self.getDaijishouLibrary().getCachedBoxArtBitmapLoader().with(self).load(boxArtPath).setOnFailedListener(new PinAndPlayWidgetFaceFragment$updateFace$2$6(self, updateView)).setOnSucceedListener(new PinAndPlayWidgetFaceFragment$updateFace$2$7(self, updateView)).into(iv);
+                }
+                return Unit.INSTANCE;
+            }
+        } finally {
+            mutex.unlock(null);
+        }
     }
 
     static /* synthetic */ Object updateFace$default(PinAndPlayWidgetFaceFragment pinAndPlayWidgetFaceFragment, boolean z, Continuation continuation, int i, Object obj) {
