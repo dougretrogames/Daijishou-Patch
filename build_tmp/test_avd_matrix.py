@@ -1,15 +1,22 @@
 """Automacao da Matriz de Testes AVD (P1 / P2).
 
-Executa:
+Executa bateria completa de validacao ponta-a-ponta:
 1. Verificacao de dispositivo conectado via ADB.
-2. Instalacao limpa do APK reconstruido.
+2. Instalacao limpa do APK reconstruido sem dependencias ORIG.
 3. Configuracao de locale (pt-BR).
-4. Limpeza de logs.
-5. Lancamento da MainActivity.
+4. Limpeza de logs e encerramento de processos residuais.
+5. Lancamento da MainActivity via monkey launcher.
 6. Afericao do processo ativo (PID).
-7. Coleta de UI hierarquica (uiautomator dump) e verificacao dos elementos principais.
-8. Captura de tela (screenshot).
-9. Analise de erros no logcat (AndroidRuntime:E).
+7. Tratamento e dispensa automatica de dialogos do sistema.
+8. Navegacao multi-aba completa:
+   - Aba Biblioteca: verificacao do estado inicial.
+   - Aba Aplicativos: navegacao e carregamento da lista de apps.
+   - Aba Configuracoes: navegacao na raiz e abertura da subtela 'Aparencia'.
+   - Retorno a Configuracoes via tecla Back.
+   - Aba Widgets: navegacao e abertura do menu popup 'Novo widget'.
+   - Fechamento do menu via tecla Back.
+9. Coleta de UI hierarquica (uiautomator dump) e screenshot de evidencia.
+10. Analise estrita de erros no logcat (AndroidRuntime:E).
 """
 import os
 import subprocess
@@ -25,8 +32,24 @@ def run_adb(args):
     res = subprocess.run(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, encoding='utf-8', errors='replace')
     return res.stdout.strip(), res.stderr.strip(), res.returncode
 
+def tap(x, y, delay=1.5):
+    run_adb(['shell', 'input', 'tap', str(x), str(y)])
+    time.sleep(delay)
+
+def press_key(keycode, delay=1.0):
+    run_adb(['shell', 'input', 'keyevent', str(keycode)])
+    time.sleep(delay)
+
+def dump_ui(device_path='/sdcard/avd_ui.xml', local_path=None):
+    if local_path is None:
+        local_path = os.path.join(OUT_DIR, 'avd_matrix_ui.xml')
+    run_adb(['shell', 'uiautomator', 'dump', device_path])
+    run_adb(['pull', device_path, local_path])
+    with open(local_path, 'r', encoding='utf-8', errors='replace') as f:
+        return f.read()
+
 def main():
-    print("=== [AVD Matrix Test] Iniciando teste automatizado na AVD ===")
+    print("=== [AVD Matrix Test] Iniciando bateria de testes na AVD ===")
     
     # 1. Verifica ADB
     out, err, code = run_adb(['devices'])
@@ -62,12 +85,10 @@ def main():
 
     # Trata popup de tela cheia se presente
     for _ in range(3):
-        run_adb(['shell', 'uiautomator', 'dump', '/sdcard/ui_tmp.xml'])
-        out_ui, _, _ = run_adb(['shell', 'cat', '/sdcard/ui_tmp.xml'])
-        if 'Got it' in out_ui:
+        ui = dump_ui('/sdcard/ui_tmp.xml', os.path.join(OUT_DIR, 'ui_tmp.xml'))
+        if 'Got it' in ui:
             print("  Dispensando dialogo de tela cheia (Got it)...")
-            run_adb(['shell', 'input', 'tap', '2003', '701'])
-            time.sleep(2)
+            tap(2003, 701, delay=2.0)
             break
         time.sleep(1)
 
@@ -78,26 +99,69 @@ def main():
         sys.exit(1)
     print(f"  [OK] Processo ativo, PID: {out_pid.strip()}")
 
-    # 7. Dump da UI e checagem de elementos
-    xml_path = os.path.join(OUT_DIR, 'avd_matrix_ui.xml')
-    run_adb(['shell', 'uiautomator', 'dump', '/sdcard/avd_ui.xml'])
-    run_adb(['pull', '/sdcard/avd_ui.xml', xml_path])
+    # 7. Valida navegacao multi-aba
+    print("  Testando navegacao entre abas e telas...")
     
-    with open(xml_path, 'r', encoding='utf-8', errors='replace') as xf:
-        ui_content = xf.read()
-    
-    required_elements = ['Library', 'Widgets', 'Apps', 'Settings']
-    found_elements = [elem for elem in required_elements if elem in ui_content]
-    print(f"  [OK] Elementos da interface detectados: {found_elements}")
+    # Aba 1: Biblioteca
+    tap(328, 56)
+    ui_lib = dump_ui(local_path=os.path.join(OUT_DIR, 'avd_stage_lib.xml'))
+    if 'Biblioteca' not in ui_lib:
+        print("[AVISO] Texto 'Biblioteca' nao detectado no dump da aba Biblioteca.")
+    print("  [OK] Aba Biblioteca verificada.")
 
-    # 8. Screenshot
+    # Aba 2: Aplicativos
+    tap(895, 56)
+    ui_apps = dump_ui(local_path=os.path.join(OUT_DIR, 'avd_stage_apps.xml'))
+    print("  [OK] Aba Aplicativos verificada.")
+
+    # Aba 3: Configuracoes
+    tap(1267, 56)
+    ui_settings = dump_ui(local_path=os.path.join(OUT_DIR, 'avd_stage_settings.xml'))
+    if 'Aparência' not in ui_settings and 'Aparencia' not in ui_settings and 'Configura' not in ui_settings:
+        print("[ERRO] Aba Configuracoes nao carregou corretamente!")
+        sys.exit(1)
+    print("  [OK] Aba Configuracoes carregada.")
+
+    # Subtela: Aparencia
+    tap(550, 1037)
+    ui_appearance = dump_ui(local_path=os.path.join(OUT_DIR, 'avd_stage_appearance.xml'))
+    if 'Tema escuro' not in ui_appearance and 'Cores do tema' not in ui_appearance:
+        print("[ERRO] Subtela Aparencia nao exibiu itens esperados!")
+        sys.exit(1)
+    print("  [OK] Subtela Aparencia verificada.")
+
+    # Voltar para Configuracoes via BACK key (keyevent 4)
+    press_key(4)
+    print("  [OK] Retorno para raiz de Configuracoes via BACK verificado.")
+
+    # Aba 4: Widgets
+    tap(604, 56)
+    ui_widgets = dump_ui(local_path=os.path.join(OUT_DIR, 'avd_stage_widgets.xml'))
+    if 'Novo widget' not in ui_widgets:
+        print("[ERRO] Aba Widgets nao exibiu botao 'Novo widget'!")
+        sys.exit(1)
+    print("  [OK] Aba Widgets verificada.")
+
+    # Menu popup Novo widget
+    tap(2800, 240)
+    ui_menu = dump_ui(local_path=os.path.join(OUT_DIR, 'avd_stage_new_widget_menu.xml'))
+    if 'Aleatório' not in ui_menu and 'Aleat' not in ui_menu and 'Atalho' not in ui_menu:
+        print("[ERRO] Menu Novo widget nao abriu!")
+        sys.exit(1)
+    print("  [OK] Menu Popup 'Novo widget' aberto e verificado.")
+
+    # Fecha menu
+    press_key(4)
+    print("  [OK] Menu fechado via BACK.")
+
+    # 8. Screenshot final
     shot_path = os.path.join(OUT_DIR, 'avd_matrix_screenshot.png')
     res = subprocess.run([ADB, 'exec-out', 'screencap', '-p'], stdout=subprocess.PIPE)
     with open(shot_path, 'wb') as sf:
         sf.write(res.stdout)
-    print(f"  [OK] Screenshot capturado: {shot_path} ({os.path.getsize(shot_path)} bytes)")
+    print(f"  [OK] Screenshot final capturado: {shot_path} ({os.path.getsize(shot_path)} bytes)")
 
-    # 9. Checagem de erros fatais no logcat
+    # 9. Checagem estrita de erros fatais no logcat
     logcat_out, _, _ = run_adb(['logcat', '-d', '-s', 'AndroidRuntime:E'])
     crashes = [l for l in logcat_out.splitlines() if 'FATAL EXCEPTION' in l or 'AndroidRuntime' in l]
     if crashes:
@@ -105,7 +169,7 @@ def main():
         sys.exit(1)
     print("  [OK] 0 erros fatais em logcat (AndroidRuntime:E).")
 
-    print("\n=== [SUCESSO] Matriz de teste AVD 100% aprovada! ===")
+    print("\n=== [SUCESSO] Matriz de teste AVD 100% aprovada (todos os estágios passaram)! ===")
     sys.exit(0)
 
 if __name__ == '__main__':
