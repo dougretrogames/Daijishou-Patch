@@ -1,8 +1,14 @@
 package com.magneticchen.daijishou.view_models;
 
 import android.app.Application;
+import android.content.ContentResolver;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Build;
+import android.util.Xml;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.InputDeviceCompat;
@@ -13,21 +19,40 @@ import com.google.api.services.drive.model.File;
 import com.magneticchen.daijishou.DaijishouApplication;
 import com.magneticchen.daijishou.R;
 import com.magneticchen.daijishou.application_data.BooleanPreference;
+import com.magneticchen.daijishou.application_data.Constants;
+import com.magneticchen.daijishou.application_data.StringPreference;
 import com.magneticchen.daijishou.backup_and_restore.BackupAndRestore;
 import com.magneticchen.daijishou.backup_and_restore.BackupData;
 import com.magneticchen.daijishou.daijishou_library_db.Genre;
+import com.magneticchen.daijishou.daijishou_library_db.Genres;
 import com.magneticchen.daijishou.daijishou_library_db.PlatformEntity;
 import com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity;
+import com.magneticchen.daijishou.daijishou_library_db.PlayableItemPreviewMediaIndex;
+import com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairEntity;
+import com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexJson;
+import com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexPlatformListItemJson;
+import com.magneticchen.daijishou.daijishou_library_db.portables.PlatformSharable;
 import com.magneticchen.daijishou.google_drive.GoogleDrive;
 import com.magneticchen.daijishou.repositories.DaijishouLibraryRepository;
 import com.magneticchen.daijishou.scraper.ScraperManager;
+import com.magneticchen.daijishou.scraper.ScraperUtilsKt;
 import com.magneticchen.daijishou.utils.Utils;
 import com.magneticchen.daijishou.view_models.abstract_view_models.DaijishouAndroidViewModel;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
+import java.net.SocketTimeoutException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
 import java.util.UUID;
 import kotlin.Deprecated;
 import kotlin.DeprecationLevel;
@@ -35,6 +60,7 @@ import kotlin.ExceptionsKt;
 import kotlin.Metadata;
 import kotlin.ReplaceWith;
 import kotlin.ResultKt;
+import kotlin.Triple;
 import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
@@ -43,6 +69,7 @@ import kotlin.coroutines.jvm.internal.Boxing;
 import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
+import kotlin.io.FilesKt;
 import kotlin.jvm.JvmStatic;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
@@ -51,6 +78,7 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Ref;
+import kotlin.text.MatchResult;
 import kotlin.text.Regex;
 import kotlin.text.StringsKt;
 import kotlinx.coroutines.BuildersKt;
@@ -65,6 +93,8 @@ import kotlinx.serialization.internal.PluginExceptionsKt;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import kotlinx.serialization.internal.StringSerializer;
 import kotlinx.serialization.json.Json;
+import kotlinx.serialization.json.JsonKt;
+import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpStatus;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.xmlpull.v1.XmlPullParser;
@@ -618,12 +648,66 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r18) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 273
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02921.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            CoroutineScope coroutineScope;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                coroutineScope = (CoroutineScope) this.L$0;
+                try {
+                    Json weakJson = DaijishouSynchronizationModel.this.getApplication().getWeakJson();
+                    String string = DaijishouSynchronizationModel.this.getDefaultSharedPreferences().getString(StringPreference.INDEX_URI.getKey(), StringPreference.INDEX_URI.getDefaultValue());
+                    Intrinsics.checkNotNull(string);
+                    weakJson.getSerializersModule();
+                    PlatformsIndexJson platformsIndexJson = (PlatformsIndexJson) weakJson.decodeFromString(PlatformsIndexJson.INSTANCE.serializer(), Utils.INSTANCE.readEntireTextFromURL(string));
+                    String baseUri = platformsIndexJson.getBaseUri();
+                    String prevJsonStr = DaijishouSynchronizationModel.this.getDefaultSharedPreferences().getString(StringPreference.PREVIOUS_PLATFORMS_INDEX_JSON.getKey(), StringPreference.PREVIOUS_PLATFORMS_INDEX_JSON.getDefaultValue());
+                    Ref.ObjectRef prevIndexRef = new Ref.ObjectRef();
+                    prevIndexRef.element = new PlatformsIndexJson(baseUri, CollectionsKt.emptyList());
+                    if (prevJsonStr != null) {
+                        try {
+                            weakJson.getSerializersModule();
+                            prevIndexRef.element = (PlatformsIndexJson) weakJson.decodeFromString(PlatformsIndexJson.INSTANCE.serializer(), prevJsonStr);
+                        } catch (Exception e) {
+                            DaijishouSynchronizationModel.this.getLogger().debug(coroutineScope, ExceptionsKt.stackTraceToString(e));
+                        }
+                    }
+                    Ref.IntRef iRef = new Ref.IntRef();
+                    iRef.element = -1;
+                    Ref.IntRef countRef = new Ref.IntRef();
+                    DaijishouSynchronizationModel.this.updateEveryPlatform = false;
+                    this.L$0 = coroutineScope;
+                    this.label = 1;
+                    if (DaijishouSynchronizationModel.invokeSuspendImpl$checkNextPlatform(iRef, platformsIndexJson, DaijishouSynchronizationModel.this, countRef, this.$updateEveryPlatformThisCycle, prevIndexRef, weakJson, baseUri, coroutineScope, this.$callback, this.$coroutineExceptionHandler, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } catch (Exception e2) {
+                    DaijishouSynchronizationModel.this.getLogger().warn(coroutineScope, ExceptionsKt.stackTraceToString(e2));
+                    this.L$0 = null;
+                    this.label = 2;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new C00801(this.$callback, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+            } else if (i == 1) {
+                coroutineScope = (CoroutineScope) this.L$0;
+                try {
+                    ResultKt.throwOnFailure(obj);
+                } catch (Exception e2) {
+                    DaijishouSynchronizationModel.this.getLogger().warn(coroutineScope, ExceptionsKt.stackTraceToString(e2));
+                    this.L$0 = null;
+                    this.label = 2;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new C00801(this.$callback, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+            } else if (i == 2) {
+                ResultKt.throwOnFailure(obj);
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            return Unit.INSTANCE;
         }
 
         /* JADX INFO: Access modifiers changed from: private */
@@ -887,12 +971,98 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
         	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
-    public final java.lang.Object getIndicesOfListOfBackupDataFromGoogleDrive(kotlin.coroutines.Continuation<?> r15) {
-        /*
-            Method dump skipped, instruction units count: 246
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.getIndicesOfListOfBackupDataFromGoogleDrive(kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object getIndicesOfListOfBackupDataFromGoogleDrive(Continuation<?> continuation) throws Throwable {
+        C02821 c02821;
+        if (continuation instanceof C02821) {
+            c02821 = (C02821) continuation;
+            if ((c02821.label & Integer.MIN_VALUE) != 0) {
+                c02821.label -= Integer.MIN_VALUE;
+            } else {
+                c02821 = new C02821(continuation);
+            }
+        } else {
+            c02821 = new C02821(continuation);
+        }
+        Object obj = c02821.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        DaijishouSynchronizationModel daijishouSynchronizationModel;
+        List list;
+        GoogleDrive googleDrive;
+        Iterator it;
+        String filename;
+        int i = c02821.label;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            list = new ArrayList();
+            googleDrive = this.googleDrive;
+            if (googleDrive == null) {
+                return list;
+            }
+            c02821.L$0 = this;
+            c02821.L$1 = list;
+            c02821.L$2 = googleDrive;
+            c02821.label = 1;
+            obj = GoogleDrive.getFilesByFilenameContainingSubstring$default(googleDrive, ".backup_index", false, c02821, 2, null);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            daijishouSynchronizationModel = this;
+            it = ((Iterable) obj).iterator();
+        } else if (i == 1) {
+            googleDrive = (GoogleDrive) c02821.L$2;
+            list = (List) c02821.L$1;
+            daijishouSynchronizationModel = (DaijishouSynchronizationModel) c02821.L$0;
+            ResultKt.throwOnFailure(obj);
+            it = ((Iterable) obj).iterator();
+        } else if (i == 2) {
+            filename = (String) c02821.L$4;
+            it = (Iterator) c02821.L$3;
+            googleDrive = (GoogleDrive) c02821.L$2;
+            list = (List) c02821.L$1;
+            daijishouSynchronizationModel = (DaijishouSynchronizationModel) c02821.L$0;
+            ResultKt.throwOnFailure(obj);
+            byte[] bArr = (byte[]) obj;
+            if (bArr != null) {
+                Json weakJson = daijishouSynchronizationModel.getWeakJson();
+                String decodeToString = StringsKt.decodeToString(bArr);
+                weakJson.getSerializersModule();
+                Companion.IndexOfListOfBackupData indexOfListOfBackupData = (Companion.IndexOfListOfBackupData) weakJson.decodeFromString(Companion.IndexOfListOfBackupData.INSTANCE.serializer(), decodeToString);
+                indexOfListOfBackupData.setFilename(filename);
+                list.add(indexOfListOfBackupData);
+            }
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+
+        while (it.hasNext()) {
+            File file = (File) it.next();
+            String name = file.getName();
+            Intrinsics.checkNotNull(name);
+            if (!StringsKt.endsWith$default(name, "-in-progress.backup_index", false, 2, null)) {
+                String fileId = file.getId();
+                Intrinsics.checkNotNullExpressionValue(fileId, "getId(...)");
+                c02821.L$0 = daijishouSynchronizationModel;
+                c02821.L$1 = list;
+                c02821.L$2 = googleDrive;
+                c02821.L$3 = it;
+                c02821.L$4 = name;
+                c02821.label = 2;
+                Object downloadObj = GoogleDrive.downloadByteArrayFromFileId$default(googleDrive, fileId, false, c02821, 2, null);
+                if (downloadObj == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                byte[] bArr = (byte[]) downloadObj;
+                if (bArr != null) {
+                    Json weakJson = daijishouSynchronizationModel.getWeakJson();
+                    String decodeToString = StringsKt.decodeToString(bArr);
+                    weakJson.getSerializersModule();
+                    Companion.IndexOfListOfBackupData indexOfListOfBackupData = (Companion.IndexOfListOfBackupData) weakJson.decodeFromString(Companion.IndexOfListOfBackupData.INSTANCE.serializer(), decodeToString);
+                    indexOfListOfBackupData.setFilename(name);
+                    list.add(indexOfListOfBackupData);
+                }
+            }
+        }
+        return list;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -910,12 +1080,110 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
         	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
-    public final java.lang.Object getListOfBackupDataByIndexFromGoogleDrive(com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.Companion.IndexOfListOfBackupData r14, kotlin.coroutines.Continuation<?> r15) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 308
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.getListOfBackupDataByIndexFromGoogleDrive(com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$Companion$IndexOfListOfBackupData, kotlin.coroutines.Continuation):java.lang.Object");
+    public final java.lang.Object getListOfBackupDataByIndexFromGoogleDrive(com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.Companion.IndexOfListOfBackupData indexOfListOfBackupData, kotlin.coroutines.Continuation<?> continuation) throws java.lang.Throwable {
+        C02831 c02831;
+        if (continuation instanceof C02831) {
+            c02831 = (C02831) continuation;
+            if ((c02831.label & Integer.MIN_VALUE) != 0) {
+                c02831.label -= Integer.MIN_VALUE;
+            } else {
+                c02831 = new C02831(continuation);
+            }
+        } else {
+            c02831 = new C02831(continuation);
+        }
+        Object obj = c02831.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        DaijishouSynchronizationModel daijishouSynchronizationModel;
+        List list;
+        GoogleDrive googleDrive;
+        Ref.IntRef checksum;
+        Iterator it;
+        int i = c02831.label;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            list = new ArrayList();
+            googleDrive = this.googleDrive;
+            if (googleDrive == null) {
+                return null;
+            }
+            checksum = new Ref.IntRef();
+            c02831.L$0 = this;
+            c02831.L$1 = indexOfListOfBackupData;
+            c02831.L$2 = list;
+            c02831.L$3 = googleDrive;
+            c02831.L$4 = checksum;
+            c02831.label = 1;
+            obj = GoogleDrive.getFilesByFilenameContainingSubstring$default(googleDrive, indexOfListOfBackupData.getSignature(), false, c02831, 2, null);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            daijishouSynchronizationModel = this;
+            it = ((Iterable) obj).iterator();
+        } else if (i == 1) {
+            checksum = (Ref.IntRef) c02831.L$4;
+            googleDrive = (GoogleDrive) c02831.L$3;
+            list = (List) c02831.L$2;
+            indexOfListOfBackupData = (Companion.IndexOfListOfBackupData) c02831.L$1;
+            daijishouSynchronizationModel = (DaijishouSynchronizationModel) c02831.L$0;
+            ResultKt.throwOnFailure(obj);
+            it = ((Iterable) obj).iterator();
+        } else if (i == 2) {
+            it = (Iterator) c02831.L$5;
+            checksum = (Ref.IntRef) c02831.L$4;
+            googleDrive = (GoogleDrive) c02831.L$3;
+            list = (List) c02831.L$2;
+            indexOfListOfBackupData = (Companion.IndexOfListOfBackupData) c02831.L$1;
+            daijishouSynchronizationModel = (DaijishouSynchronizationModel) c02831.L$0;
+            try {
+                ResultKt.throwOnFailure(obj);
+                byte[] bArr = (byte[]) obj;
+                if (bArr != null) {
+                    BackupData backupData = BackupData.INSTANCE.fromByteArray(bArr);
+                    list.add(backupData);
+                    checksum.element += backupData.getModuleRandomInt();
+                }
+            } catch (Exception e) {
+                daijishouSynchronizationModel.logger.error(daijishouSynchronizationModel, ExceptionsKt.stackTraceToString(e));
+            }
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+
+        while (it.hasNext()) {
+            File file = (File) it.next();
+            String name = file.getName();
+            Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
+            if (StringsKt.contains$default((CharSequence) name, (CharSequence) ".backup", false, 2, null)) {
+                try {
+                    String fileId = file.getId();
+                    Intrinsics.checkNotNullExpressionValue(fileId, "getId(...)");
+                    c02831.L$0 = daijishouSynchronizationModel;
+                    c02831.L$1 = indexOfListOfBackupData;
+                    c02831.L$2 = list;
+                    c02831.L$3 = googleDrive;
+                    c02831.L$4 = checksum;
+                    c02831.L$5 = it;
+                    c02831.label = 2;
+                    Object downloadObj = GoogleDrive.downloadByteArrayFromFileId$default(googleDrive, fileId, false, c02831, 2, null);
+                    if (downloadObj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    byte[] bArr = (byte[]) downloadObj;
+                    if (bArr != null) {
+                        BackupData backupData = BackupData.INSTANCE.fromByteArray(bArr);
+                        list.add(backupData);
+                        checksum.element += backupData.getModuleRandomInt();
+                    }
+                } catch (Exception e2) {
+                    daijishouSynchronizationModel.logger.error(daijishouSynchronizationModel, ExceptionsKt.stackTraceToString(e2));
+                }
+            }
+        }
+        if (checksum.element == indexOfListOfBackupData.getContentHashMapRandomIntChecksum()) {
+            return list;
+        }
+        return null;
     }
 
     /* JADX WARN: Code duplicated, block: B:35:0x00a9  */
@@ -1065,12 +1333,121 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
     */
-    public final java.lang.Object renameAndReplaceListOfBackupDataByIndexFromGoogleDrive(com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.Companion.IndexOfListOfBackupData r20, java.lang.String r21, kotlin.coroutines.Continuation<?> r22) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 326
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.renameAndReplaceListOfBackupDataByIndexFromGoogleDrive(com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$Companion$IndexOfListOfBackupData, java.lang.String, kotlin.coroutines.Continuation):java.lang.Object");
+    public final java.lang.Object renameAndReplaceListOfBackupDataByIndexFromGoogleDrive(com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.Companion.IndexOfListOfBackupData indexOfListOfBackupData, java.lang.String str, kotlin.coroutines.Continuation<?> continuation) throws java.lang.Throwable {
+        C02871 c02871;
+        if (continuation instanceof C02871) {
+            c02871 = (C02871) continuation;
+            if ((c02871.label & Integer.MIN_VALUE) != 0) {
+                c02871.label -= Integer.MIN_VALUE;
+            } else {
+                c02871 = new C02871(continuation);
+            }
+        } else {
+            c02871 = new C02871(continuation);
+        }
+        Object obj = c02871.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        GoogleDrive googleDrive;
+        String newFilename = null;
+        Iterator it = null;
+        int i = c02871.label;
+        if (i == 0) {
+            ResultKt.throwOnFailure(obj);
+            googleDrive = this.googleDrive;
+            if (googleDrive == null) {
+                return Unit.INSTANCE;
+            }
+            c02871.L$0 = this;
+            c02871.L$1 = indexOfListOfBackupData;
+            c02871.L$2 = str;
+            c02871.L$3 = googleDrive;
+            c02871.label = 1;
+            obj = getIndexByIndexFilenameFromGoogleDrive(str, c02871);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+        } else if (i == 1) {
+            googleDrive = (GoogleDrive) c02871.L$3;
+            str = (String) c02871.L$2;
+            indexOfListOfBackupData = (Companion.IndexOfListOfBackupData) c02871.L$1;
+            ResultKt.throwOnFailure(obj);
+        } else if (i == 2) {
+            googleDrive = (GoogleDrive) c02871.L$2;
+            str = (String) c02871.L$1;
+            indexOfListOfBackupData = (Companion.IndexOfListOfBackupData) c02871.L$0;
+            ResultKt.throwOnFailure(obj);
+            newFilename = str + BACKUP_DATA_INDEX_EXTENSION;
+            String filename = indexOfListOfBackupData.getFilename();
+            Intrinsics.checkNotNull(filename);
+            c02871.L$0 = indexOfListOfBackupData;
+            c02871.L$1 = googleDrive;
+            c02871.L$2 = newFilename;
+            c02871.L$3 = null;
+            c02871.label = 3;
+            obj = GoogleDrive.getFilesByFilename$default(googleDrive, filename, false, c02871, 2, null);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            it = ((Iterable) obj).iterator();
+        } else if (i == 3) {
+            newFilename = (String) c02871.L$2;
+            googleDrive = (GoogleDrive) c02871.L$1;
+            indexOfListOfBackupData = (Companion.IndexOfListOfBackupData) c02871.L$0;
+            ResultKt.throwOnFailure(obj);
+            it = ((Iterable) obj).iterator();
+        } else if (i == 4) {
+            it = (Iterator) c02871.L$3;
+            newFilename = (String) c02871.L$2;
+            googleDrive = (GoogleDrive) c02871.L$1;
+            indexOfListOfBackupData = (Companion.IndexOfListOfBackupData) c02871.L$0;
+            ResultKt.throwOnFailure(obj);
+            indexOfListOfBackupData.setFilename(newFilename);
+        } else {
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+
+        if (i == 0 || i == 1) {
+            Companion.IndexOfListOfBackupData existing = (Companion.IndexOfListOfBackupData) obj;
+            if (existing != null) {
+                c02871.L$0 = indexOfListOfBackupData;
+                c02871.L$1 = str;
+                c02871.L$2 = googleDrive;
+                c02871.L$3 = null;
+                c02871.label = 2;
+                if (deleteListOfBackupDataByIndexFromGoogleDrive(existing, c02871) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+            newFilename = str + BACKUP_DATA_INDEX_EXTENSION;
+            String filename = indexOfListOfBackupData.getFilename();
+            Intrinsics.checkNotNull(filename);
+            c02871.L$0 = indexOfListOfBackupData;
+            c02871.L$1 = googleDrive;
+            c02871.L$2 = newFilename;
+            c02871.L$3 = null;
+            c02871.label = 3;
+            obj = GoogleDrive.getFilesByFilename$default(googleDrive, filename, false, c02871, 2, null);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            it = ((Iterable) obj).iterator();
+        }
+
+        while (it.hasNext()) {
+            File file = (File) it.next();
+            String id = file.getId();
+            Intrinsics.checkNotNullExpressionValue(id, "getId(...)");
+            c02871.L$0 = indexOfListOfBackupData;
+            c02871.L$1 = googleDrive;
+            c02871.L$2 = newFilename;
+            c02871.L$3 = it;
+            c02871.label = 4;
+            if (GoogleDrive.renameFileByFileId$default(googleDrive, id, newFilename, false, c02871, 4, null) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            indexOfListOfBackupData.setFilename(newFilename);
+        }
+        return Unit.INSTANCE;
     }
 
     /* JADX INFO: Access modifiers changed from: private */
@@ -1205,12 +1582,156 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r13) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 293
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02881.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            CoroutineScope coroutineScope;
+            DaijishouSynchronizationModel daijishouSynchronizationModel;
+            List list;
+            int i2;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                coroutineScope = (CoroutineScope) this.L$0;
+                try {
+                    this.L$0 = coroutineScope;
+                    this.label = 1;
+                    obj = DaijishouSynchronizationModel.this.getListOfBackupDataByIndexFromGoogleDrive(this.$indexOfListOfBackupData, this);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } catch (Exception e) {
+                    DaijishouSynchronizationModel.this.getLogger().error(coroutineScope, ExceptionsKt.stackTraceToString(e));
+                    this.L$0 = null;
+                    this.L$1 = null;
+                    this.L$2 = null;
+                    this.label = 4;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(DaijishouSynchronizationModel.this, e, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    this.L$0 = null;
+                    this.label = 5;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                }
+            } else if (i == 1) {
+                coroutineScope = (CoroutineScope) this.L$0;
+                try {
+                    ResultKt.throwOnFailure(obj);
+                } catch (Exception e) {
+                    DaijishouSynchronizationModel.this.getLogger().error(coroutineScope, ExceptionsKt.stackTraceToString(e));
+                    this.L$0 = null;
+                    this.L$1 = null;
+                    this.L$2 = null;
+                    this.label = 4;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(DaijishouSynchronizationModel.this, e, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    this.L$0 = null;
+                    this.label = 5;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                }
+            } else if (i == 2) {
+                i2 = this.I$0;
+                list = (List) this.L$2;
+                daijishouSynchronizationModel = (DaijishouSynchronizationModel) this.L$1;
+                coroutineScope = (CoroutineScope) this.L$0;
+                try {
+                    ResultKt.throwOnFailure(obj);
+                    this.L$0 = coroutineScope;
+                    this.L$1 = null;
+                    this.L$2 = null;
+                    this.label = 3;
+                    if (daijishouSynchronizationModel.backupAndRestore.restoreFromListOfBackupData(list, i2, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                } catch (Exception e) {
+                    DaijishouSynchronizationModel.this.getLogger().error(coroutineScope, ExceptionsKt.stackTraceToString(e));
+                    this.L$0 = null;
+                    this.L$1 = null;
+                    this.L$2 = null;
+                    this.label = 4;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(DaijishouSynchronizationModel.this, e, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    this.L$0 = null;
+                    this.label = 5;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                }
+                this.L$0 = null;
+                this.label = 5;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            } else if (i == 3) {
+                ResultKt.throwOnFailure(obj);
+                this.L$0 = null;
+                this.label = 5;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            } else if (i == 4) {
+                ResultKt.throwOnFailure(obj);
+                this.L$0 = null;
+                this.label = 5;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            } else if (i == 5) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+
+            try {
+                list = (List) obj;
+                if (list == null) {
+                    throw new Exception("ListOfBackupData is null from \"" + this.$indexOfListOfBackupData + "\".");
+                }
+                daijishouSynchronizationModel = DaijishouSynchronizationModel.this;
+                i2 = this.$restorePolicy;
+                this.L$0 = coroutineScope;
+                this.L$1 = daijishouSynchronizationModel;
+                this.L$2 = list;
+                this.I$0 = i2;
+                this.label = 2;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new DaijishouSynchronizationModel$restoreFromIndexOfListOfBackupDataFromGoogleDrive$1$1$1(daijishouSynchronizationModel, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                this.L$0 = coroutineScope;
+                this.L$1 = null;
+                this.L$2 = null;
+                this.label = 3;
+                if (daijishouSynchronizationModel.backupAndRestore.restoreFromListOfBackupData(list, i2, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } catch (Exception e) {
+                DaijishouSynchronizationModel.this.getLogger().error(coroutineScope, ExceptionsKt.stackTraceToString(e));
+                this.L$0 = null;
+                this.L$1 = null;
+                this.L$2 = null;
+                this.label = 4;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(DaijishouSynchronizationModel.this, e, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+            this.L$0 = null;
+            this.label = 5;
+            if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
         }
 
         /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$restoreFromIndexOfListOfBackupDataFromGoogleDrive$1$2, reason: invalid class name */
@@ -1472,12 +1993,302 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r13) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 654
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02901.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            CoroutineScope coroutineScope;
+            List list;
+            String inProgressName;
+            Iterator it;
+            GoogleDrive googleDrive;
+            Ref.ObjectRef<Companion.IndexOfListOfBackupData> refInProgress;
+            String uuid;
+            switch (i) {
+                case 0:
+                    ResultKt.throwOnFailure(obj);
+                    coroutineScope = (CoroutineScope) this.L$0;
+                    this.L$0 = coroutineScope;
+                    this.label = 1;
+                    obj = BackupAndRestore.backupToListOfBackupData$default(DaijishouSynchronizationModel.this.backupAndRestore, null, this, 1, null);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    break;
+                case 1:
+                    coroutineScope = (CoroutineScope) this.L$0;
+                    ResultKt.throwOnFailure(obj);
+                    break;
+                case 2:
+                    inProgressName = (String) this.L$2;
+                    list = (List) this.L$1;
+                    coroutineScope = (CoroutineScope) this.L$0;
+                    ResultKt.throwOnFailure(obj);
+                    Companion.IndexOfListOfBackupData existing = (Companion.IndexOfListOfBackupData) obj;
+                    if (existing != null) {
+                        this.L$0 = coroutineScope;
+                        this.L$1 = list;
+                        this.L$2 = inProgressName;
+                        this.label = 3;
+                        if (DaijishouSynchronizationModel.this.deleteListOfBackupDataByIndexFromGoogleDrive(existing, this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    }
+                    this.L$0 = coroutineScope;
+                    this.L$1 = list;
+                    this.L$2 = this.$indexOfListOfBackupDataInProgress;
+                    this.label = 4;
+                    obj = DaijishouSynchronizationModel.this.createAndUploadIndexForListOfBackupDataToGoogleDrive(inProgressName, list, this);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    this.$indexOfListOfBackupDataInProgress.element = (Companion.IndexOfListOfBackupData) obj;
+                    if (this.$indexOfListOfBackupDataInProgress.element == null) {
+                        this.L$0 = null;
+                        this.L$1 = null;
+                        this.L$2 = null;
+                        this.label = 5;
+                        if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    }
+                    DaijishouSynchronizationModel.this.getLogger().debug(coroutineScope, "Backup data count: " + list.size());
+                    this.L$0 = list;
+                    this.L$1 = null;
+                    this.L$2 = null;
+                    this.label = 6;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    it = list.iterator();
+                    googleDrive = this.$googleDrive;
+                    refInProgress = this.$indexOfListOfBackupDataInProgress;
+                    return uploadLoop(it, googleDrive, refInProgress, coroutine_suspended);
+                case 3:
+                    inProgressName = (String) this.L$2;
+                    list = (List) this.L$1;
+                    coroutineScope = (CoroutineScope) this.L$0;
+                    ResultKt.throwOnFailure(obj);
+                    this.L$0 = coroutineScope;
+                    this.L$1 = list;
+                    this.L$2 = this.$indexOfListOfBackupDataInProgress;
+                    this.label = 4;
+                    obj = DaijishouSynchronizationModel.this.createAndUploadIndexForListOfBackupDataToGoogleDrive(inProgressName, list, this);
+                    if (obj == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    this.$indexOfListOfBackupDataInProgress.element = (Companion.IndexOfListOfBackupData) obj;
+                    if (this.$indexOfListOfBackupDataInProgress.element == null) {
+                        this.L$0 = null;
+                        this.L$1 = null;
+                        this.L$2 = null;
+                        this.label = 5;
+                        if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    }
+                    DaijishouSynchronizationModel.this.getLogger().debug(coroutineScope, "Backup data count: " + list.size());
+                    this.L$0 = list;
+                    this.L$1 = null;
+                    this.L$2 = null;
+                    this.label = 6;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    it = list.iterator();
+                    googleDrive = this.$googleDrive;
+                    refInProgress = this.$indexOfListOfBackupDataInProgress;
+                    return uploadLoop(it, googleDrive, refInProgress, coroutine_suspended);
+                case 4:
+                    refInProgress = (Ref.ObjectRef) this.L$2;
+                    list = (List) this.L$1;
+                    coroutineScope = (CoroutineScope) this.L$0;
+                    ResultKt.throwOnFailure(obj);
+                    refInProgress.element = (Companion.IndexOfListOfBackupData) obj;
+                    if (this.$indexOfListOfBackupDataInProgress.element == null) {
+                        this.L$0 = null;
+                        this.L$1 = null;
+                        this.L$2 = null;
+                        this.label = 5;
+                        if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                        return Unit.INSTANCE;
+                    }
+                    DaijishouSynchronizationModel.this.getLogger().debug(coroutineScope, "Backup data count: " + list.size());
+                    this.L$0 = list;
+                    this.L$1 = null;
+                    this.L$2 = null;
+                    this.label = 6;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    it = list.iterator();
+                    googleDrive = this.$googleDrive;
+                    refInProgress = this.$indexOfListOfBackupDataInProgress;
+                    return uploadLoop(it, googleDrive, refInProgress, coroutine_suspended);
+                case 5:
+                    ResultKt.throwOnFailure(obj);
+                    return Unit.INSTANCE;
+                case 6:
+                    list = (List) this.L$0;
+                    ResultKt.throwOnFailure(obj);
+                    it = list.iterator();
+                    googleDrive = this.$googleDrive;
+                    refInProgress = this.$indexOfListOfBackupDataInProgress;
+                    return uploadLoop(it, googleDrive, refInProgress, coroutine_suspended);
+                case 7:
+                    it = (Iterator) this.L$2;
+                    refInProgress = (Ref.ObjectRef) this.L$1;
+                    googleDrive = (GoogleDrive) this.L$0;
+                    ResultKt.throwOnFailure(obj);
+                    return uploadLoop(it, googleDrive, refInProgress, coroutine_suspended);
+                case 8:
+                    ResultKt.throwOnFailure(obj);
+                    uuid = DaijishouSynchronizationModel.this.getApplication().getDaijishouUUID();
+                    Companion.IndexOfListOfBackupData existingBackup = (Companion.IndexOfListOfBackupData) obj;
+                    if (existingBackup != null) {
+                        this.label = 9;
+                        if (DaijishouSynchronizationModel.this.renameAndReplaceListOfBackupDataByIndexFromGoogleDrive(existingBackup, uuid + "-older", this) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    }
+                    Companion.IndexOfListOfBackupData inProg = this.$indexOfListOfBackupDataInProgress.element;
+                    Intrinsics.checkNotNull(inProg);
+                    this.label = 10;
+                    if (DaijishouSynchronizationModel.this.renameAndReplaceListOfBackupDataByIndexFromGoogleDrive(inProg, uuid, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    this.label = 11;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass6(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                case 9:
+                    ResultKt.throwOnFailure(obj);
+                    uuid = DaijishouSynchronizationModel.this.getApplication().getDaijishouUUID();
+                    Companion.IndexOfListOfBackupData inProg2 = this.$indexOfListOfBackupDataInProgress.element;
+                    Intrinsics.checkNotNull(inProg2);
+                    this.label = 10;
+                    if (DaijishouSynchronizationModel.this.renameAndReplaceListOfBackupDataByIndexFromGoogleDrive(inProg2, uuid, this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    this.label = 11;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass6(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                case 10:
+                    ResultKt.throwOnFailure(obj);
+                    this.label = 11;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass6(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                case 11:
+                    ResultKt.throwOnFailure(obj);
+                    return Unit.INSTANCE;
+                default:
+                    throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+
+            list = (List) obj;
+            inProgressName = DaijishouSynchronizationModel.this.getApplication().getDaijishouUUID() + "-in-progress";
+            this.L$0 = coroutineScope;
+            this.L$1 = list;
+            this.L$2 = inProgressName;
+            this.label = 2;
+            obj = DaijishouSynchronizationModel.this.getIndexByIndexFilenameFromGoogleDrive(inProgressName, this);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            Companion.IndexOfListOfBackupData existing = (Companion.IndexOfListOfBackupData) obj;
+            if (existing != null) {
+                this.L$0 = coroutineScope;
+                this.L$1 = list;
+                this.L$2 = inProgressName;
+                this.label = 3;
+                if (DaijishouSynchronizationModel.this.deleteListOfBackupDataByIndexFromGoogleDrive(existing, this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+            this.L$0 = coroutineScope;
+            this.L$1 = list;
+            this.L$2 = this.$indexOfListOfBackupDataInProgress;
+            this.label = 4;
+            obj = DaijishouSynchronizationModel.this.createAndUploadIndexForListOfBackupDataToGoogleDrive(inProgressName, list, this);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            this.$indexOfListOfBackupDataInProgress.element = (Companion.IndexOfListOfBackupData) obj;
+            if (this.$indexOfListOfBackupDataInProgress.element == null) {
+                this.L$0 = null;
+                this.L$1 = null;
+                this.L$2 = null;
+                this.label = 5;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass2(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            }
+            DaijishouSynchronizationModel.this.getLogger().debug(coroutineScope, "Backup data count: " + list.size());
+            this.L$0 = list;
+            this.L$1 = null;
+            this.L$2 = null;
+            this.label = 6;
+            if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass3(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            it = list.iterator();
+            googleDrive = this.$googleDrive;
+            refInProgress = this.$indexOfListOfBackupDataInProgress;
+            return uploadLoop(it, googleDrive, refInProgress, coroutine_suspended);
+        }
+
+        private Object uploadLoop(Iterator it, GoogleDrive googleDrive, Ref.ObjectRef<Companion.IndexOfListOfBackupData> refInProgress, Object coroutine_suspended) throws Throwable {
+            while (it.hasNext()) {
+                BackupData backupData = (BackupData) it.next();
+                byte[] bytes = backupData.toByteArray();
+                Companion.IndexOfListOfBackupData inProg = refInProgress.element;
+                Intrinsics.checkNotNull(inProg);
+                String signature = inProg.getSignature();
+                String filename = signature + "-" + backupData.getModuleId() + "-" + backupData.getContentHashMapKey() + ".backup";
+                this.L$0 = googleDrive;
+                this.L$1 = refInProgress;
+                this.L$2 = it;
+                this.label = 7;
+                if (GoogleDrive.uploadByteArrayToFilename$default(googleDrive, filename, bytes, false, this, 4, null) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+            String uuid = DaijishouSynchronizationModel.this.getApplication().getDaijishouUUID();
+            this.L$0 = null;
+            this.L$1 = null;
+            this.L$2 = null;
+            this.label = 8;
+            Object obj = DaijishouSynchronizationModel.this.getIndexByIndexFilenameFromGoogleDrive(uuid, this);
+            if (obj == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            Companion.IndexOfListOfBackupData existingBackup = (Companion.IndexOfListOfBackupData) obj;
+            if (existingBackup != null) {
+                this.label = 9;
+                if (DaijishouSynchronizationModel.this.renameAndReplaceListOfBackupDataByIndexFromGoogleDrive(existingBackup, uuid + "-older", this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            }
+            Companion.IndexOfListOfBackupData inProg = refInProgress.element;
+            Intrinsics.checkNotNull(inProg);
+            this.label = 10;
+            if (DaijishouSynchronizationModel.this.renameAndReplaceListOfBackupDataByIndexFromGoogleDrive(inProg, uuid, this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            this.label = 11;
+            if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass6(DaijishouSynchronizationModel.this, null), this) == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return Unit.INSTANCE;
         }
 
         /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1$2, reason: invalid class name */
@@ -1801,12 +2612,104 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r19) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 495
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02841.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                PlatformEntity platform = DaijishouSynchronizationModel.this.daijishouLibraryRepository.getPlatformByIdStatically(this.$platformId);
+                InputStream inputStream = DaijishouSynchronizationModel.this.getApplication().getContentResolver().openInputStream(this.$uri);
+                if (platform == null || inputStream == null) {
+                    this.label = 1;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new C00771(this.$callback, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                }
+                XmlPullParser parser = Xml.newPullParser();
+                Intrinsics.checkNotNullExpressionValue(parser, "newPullParser(...)");
+                HashMap hashMap = new HashMap();
+                parser.setFeature("http://xmlpull.org/v1/doc/features.html#process-namespaces", false);
+                parser.setInput(inputStream, null);
+                parser.nextTag();
+                parser.require(2, null, "datafile");
+                while (parser.next() != 3) {
+                    if (parser.getEventType() == 2) {
+                        if (Intrinsics.areEqual(parser.getName(), "game")) {
+                            parser.require(2, null, "game");
+                            Game game = new Game(null, null, null, 7, null);
+                            game.setName(parser.getAttributeValue(null, "name"));
+                            while (parser.next() != 3) {
+                                if (parser.getEventType() == 2) {
+                                    String tagName = parser.getName();
+                                    if (Intrinsics.areEqual(tagName, "description")) {
+                                        parser.require(2, null, "description");
+                                        game.setDescription(DaijishouSynchronizationModel.this.readTextFromXmlPullParser(parser));
+                                        parser.require(3, null, "description");
+                                    } else if (Intrinsics.areEqual(tagName, "rom")) {
+                                        parser.require(2, null, "rom");
+                                        game.setRomName(parser.getAttributeValue(null, "name"));
+                                        parser.nextTag();
+                                        parser.require(3, null, "rom");
+                                    } else {
+                                        DaijishouSynchronizationModel.this.skipTagForXmlPullParser(parser);
+                                    }
+                                }
+                            }
+                            String romName = game.getRomName();
+                            if (romName != null) {
+                                String lowerRomName = romName.toLowerCase(Locale.ROOT);
+                                Intrinsics.checkNotNullExpressionValue(lowerRomName, "toLowerCase(...)");
+                                hashMap.put(lowerRomName, game);
+                            }
+                        } else {
+                            DaijishouSynchronizationModel.this.skipTagForXmlPullParser(parser);
+                        }
+                    }
+                }
+                List list = new ArrayList();
+                for (PlayableItemEntity item : DaijishouSynchronizationModel.this.daijishouLibraryRepository.getPlayableItemsByAttachedPlatformIdStatically(this.$platformId)) {
+                    String name = platform.getName();
+                    String path = item.getUri().getPath();
+                    if (path != null) {
+                        name = new java.io.File(path).getName();
+                        Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
+                    }
+                    String lowerName = name.toLowerCase(Locale.ROOT);
+                    Intrinsics.checkNotNullExpressionValue(lowerName, "toLowerCase(...)");
+                    Game matchedGame = (Game) hashMap.get(lowerName);
+                    if (matchedGame != null) {
+                        String gName = matchedGame.getName();
+                        if (gName != null) {
+                            item.setName(gName);
+                        }
+                        String gDesc = matchedGame.getDescription();
+                        if (gDesc != null) {
+                            item.setDescription(gDesc);
+                        }
+                        list.add(item);
+                    }
+                    if (list.size() >= 8) {
+                        PlayableItemEntity[] array = (PlayableItemEntity[]) list.toArray(new PlayableItemEntity[0]);
+                        DaijishouSynchronizationModel.this.daijishouLibraryRepository.updatePlayableItems((PlayableItemEntity[]) Arrays.copyOf(array, array.length));
+                        list.clear();
+                    }
+                }
+                if (!list.isEmpty()) {
+                    PlayableItemEntity[] array2 = (PlayableItemEntity[]) list.toArray(new PlayableItemEntity[0]);
+                    DaijishouSynchronizationModel.this.daijishouLibraryRepository.updatePlayableItems((PlayableItemEntity[]) Arrays.copyOf(array2, array2.length));
+                }
+                this.label = 2;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass4(this.$callback, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            } else if (i == 1 || i == 2) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
         }
 
         /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1$1, reason: invalid class name and collision with other inner class name */
@@ -2058,12 +2961,147 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r27) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 704
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02861.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                PlatformEntity platform = DaijishouSynchronizationModel.this.daijishouLibraryRepository.getPlatformByIdStatically(this.$platformId);
+                InputStream inputStream = DaijishouSynchronizationModel.this.getApplication().getContentResolver().openInputStream(this.$uri);
+                if (platform == null || inputStream == null) {
+                    this.label = 1;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new C00791(this.$callback, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                }
+                XmlPullParser parser = Xml.newPullParser();
+                Intrinsics.checkNotNullExpressionValue(parser, "newPullParser(...)");
+                HashMap hashMap = new HashMap();
+                parser.setFeature("http://xmlpull.org/v1/doc/features.html#process-namespaces", false);
+                parser.setInput(inputStream, null);
+                parser.nextTag();
+                parser.require(2, null, "gameList");
+                while (parser.next() != 3) {
+                    if (parser.getEventType() == 2) {
+                        if (Intrinsics.areEqual(parser.getName(), "game")) {
+                            parser.require(2, null, "game");
+                            Game game = new Game(null, null, null, null, 15, null);
+                            while (parser.next() != 3) {
+                                if (parser.getEventType() == 2) {
+                                    String tagName = parser.getName();
+                                    if (tagName != null) {
+                                        switch (tagName.hashCode()) {
+                                            case 3076010:
+                                                if (tagName.equals("desc")) {
+                                                    parser.require(2, null, "desc");
+                                                    game.setDesc(DaijishouSynchronizationModel.this.readTextFromXmlPullParser(parser));
+                                                    parser.require(3, null, "desc");
+                                                    break;
+                                                }
+                                                DaijishouSynchronizationModel.this.skipTagForXmlPullParser(parser);
+                                                break;
+                                            case 3373707:
+                                                if (tagName.equals("name")) {
+                                                    parser.require(2, null, "name");
+                                                    game.setName(DaijishouSynchronizationModel.this.readTextFromXmlPullParser(parser));
+                                                    parser.require(3, null, "name");
+                                                    break;
+                                                }
+                                                DaijishouSynchronizationModel.this.skipTagForXmlPullParser(parser);
+                                                break;
+                                            case 3433509:
+                                                if (tagName.equals("path")) {
+                                                    parser.require(2, null, "path");
+                                                    game.setPath(DaijishouSynchronizationModel.this.readTextFromXmlPullParser(parser));
+                                                    parser.require(3, null, "path");
+                                                    break;
+                                                }
+                                                DaijishouSynchronizationModel.this.skipTagForXmlPullParser(parser);
+                                                break;
+                                            case 98240899:
+                                                if (tagName.equals("genre")) {
+                                                    parser.require(2, null, "genre");
+                                                    game.getGenres().addAll(Genres.INSTANCE.extractGenresFromString(DaijishouSynchronizationModel.this.readTextFromXmlPullParser(parser)));
+                                                    parser.require(3, null, "genre");
+                                                    break;
+                                                }
+                                                DaijishouSynchronizationModel.this.skipTagForXmlPullParser(parser);
+                                                break;
+                                            default:
+                                                DaijishouSynchronizationModel.this.skipTagForXmlPullParser(parser);
+                                                break;
+                                        }
+                                    } else {
+                                        DaijishouSynchronizationModel.this.skipTagForXmlPullParser(parser);
+                                    }
+                                }
+                            }
+                            String path = game.getPath();
+                            if (path != null) {
+                                String filename = path.substring(StringsKt.lastIndexOf$default((CharSequence) path, "/", 0, false, 6, (Object) null) + 1);
+                                Intrinsics.checkNotNullExpressionValue(filename, "substring(...)");
+                                String lowerFilename = filename.toLowerCase(Locale.ROOT);
+                                Intrinsics.checkNotNullExpressionValue(lowerFilename, "toLowerCase(...)");
+                                hashMap.put(lowerFilename, game);
+                            }
+                        } else {
+                            DaijishouSynchronizationModel.this.skipTagForXmlPullParser(parser);
+                        }
+                    }
+                }
+                List list = new ArrayList();
+                for (PlayableItemEntity item : DaijishouSynchronizationModel.this.daijishouLibraryRepository.getPlayableItemsByAttachedPlatformIdStatically(this.$platformId)) {
+                    String name = platform.getName();
+                    String path2 = item.getUri().getPath();
+                    if (path2 != null) {
+                        name = new java.io.File(path2).getName();
+                        Intrinsics.checkNotNullExpressionValue(name, "getName(...)");
+                    }
+                    String lowerName = name.toLowerCase(Locale.ROOT);
+                    Intrinsics.checkNotNullExpressionValue(lowerName, "toLowerCase(...)");
+                    Game matchedGame = (Game) hashMap.get(lowerName);
+                    if (matchedGame != null) {
+                        String gName = matchedGame.getName();
+                        if (gName != null) {
+                            item.setName(gName);
+                        }
+                        List<Genre> genres = matchedGame.getGenres();
+                        if (!genres.isEmpty()) {
+                            ArrayList pairList = new ArrayList(genres.size());
+                            for (Genre genre : genres) {
+                                pairList.add(new PlayableItemToGenrePairEntity(0L, item.getId(), genre.getId(), null, 9, null));
+                            }
+                            PlayableItemToGenrePairEntity[] pairArray = (PlayableItemToGenrePairEntity[]) pairList.toArray(new PlayableItemToGenrePairEntity[0]);
+                            DaijishouSynchronizationModel.this.daijishouLibraryRepository.addPlayableItemToGenrePairs((PlayableItemToGenrePairEntity[]) Arrays.copyOf(pairArray, pairArray.length));
+                        }
+                        String desc = matchedGame.getDesc();
+                        if (desc != null) {
+                            item.setDescription(desc);
+                        }
+                        list.add(item);
+                    }
+                    if (list.size() >= 8) {
+                        PlayableItemEntity[] array = (PlayableItemEntity[]) list.toArray(new PlayableItemEntity[0]);
+                        DaijishouSynchronizationModel.this.daijishouLibraryRepository.updatePlayableItems((PlayableItemEntity[]) Arrays.copyOf(array, array.length));
+                        list.clear();
+                    }
+                }
+                if (!list.isEmpty()) {
+                    PlayableItemEntity[] array2 = (PlayableItemEntity[]) list.toArray(new PlayableItemEntity[0]);
+                    DaijishouSynchronizationModel.this.daijishouLibraryRepository.updatePlayableItems((PlayableItemEntity[]) Arrays.copyOf(array2, array2.length));
+                }
+                this.label = 2;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass4(this.$callback, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            } else if (i == 1 || i == 2) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
         }
 
         /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1$1, reason: invalid class name and collision with other inner class name */
@@ -2326,12 +3364,136 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument
         */
-        public final java.lang.Object invokeSuspendImpl(java.lang.Object r34) throws java.lang.Throwable {
-            /*
-                Method dump skipped, instruction units count: 979
-                To view this dump add '--comments-level debug' option
-            */
-            throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02851.invokeSuspendImpl(java.lang.Object):java.lang.Object");
+        public final Object invokeSuspendImpl(Object obj) throws Throwable {
+            Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+            int i = this.label;
+            if (i == 0) {
+                ResultKt.throwOnFailure(obj);
+                CoroutineScope coroutineScope = (CoroutineScope) this.L$0;
+                PlatformEntity platform = DaijishouSynchronizationModel.this.daijishouLibraryRepository.getPlatformByIdStatically(this.$platformId);
+                if (platform == null) {
+                    this.label = 1;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new C00781(this.$callback, null), this) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                }
+                HashMap hashMap = new HashMap();
+                ContentResolver contentResolver = DaijishouSynchronizationModel.this.getApplication().getContentResolver();
+                Intrinsics.checkNotNullExpressionValue(contentResolver, "getContentResolver(...)");
+                for (Triple triple : Utils.INSTANCE.traverseDirectoryEntries(contentResolver, this.$uri)) {
+                    if (StringsKt.contains$default((CharSequence) triple.getThird(), (CharSequence) "image", false, 2, null)) {
+                        MatchResult find$default = Regex.find$default(DaijishouSynchronizationModel.filenameWithoutExtensionRegex, (CharSequence) triple.getFirst(), 0, 2, null);
+                        if (find$default != null) {
+                            List groupValues = find$default.getGroupValues();
+                            if (groupValues != null) {
+                                String str = (String) CollectionsKt.getOrNull(groupValues, 1);
+                                if (str != null) {
+                                    String lower = str.toLowerCase(Locale.ROOT);
+                                    Intrinsics.checkNotNullExpressionValue(lower, "toLowerCase(...)");
+                                    String replaced = StringsKt.replace$default(lower, " ", "", false, 4, (Object) null);
+                                    hashMap.put(replaced, triple.getSecond());
+                                }
+                            }
+                        }
+                    }
+                }
+                List list = new ArrayList();
+                String previewMediaPath = DaijishouSynchronizationModel.this.getDefaultSharedPreferences().getString("preview_media_path", DaijishouSynchronizationModel.this.getApplication().getApplicationContext().getFilesDir() + "/preview_media/");
+                for (PlayableItemEntity item : DaijishouSynchronizationModel.this.daijishouLibraryRepository.getPlayableItemsByAttachedPlatformIdStatically(this.$platformId)) {
+                    String name = platform.getName();
+                    String path = item.getUri().getPath();
+                    if (path != null) {
+                        name = FilesKt.getNameWithoutExtension(new java.io.File(path));
+                    }
+                    String lower = name.toLowerCase(Locale.ROOT);
+                    Intrinsics.checkNotNullExpressionValue(lower, "toLowerCase(...)");
+                    String replaced = StringsKt.replace$default(lower, " ", "", false, 4, (Object) null);
+                    Uri mediaUri = (Uri) hashMap.get(replaced);
+                    if (mediaUri != null) {
+                        DaijishouSynchronizationModel.this.getLogger().debug(coroutineScope, mediaUri.toString());
+                        String itemDirPath = previewMediaPath + item.getId() + "/";
+                        String boxArtPath = itemDirPath + "box_art.png";
+                        String snapshotPath = itemDirPath + "snapshot.png";
+                        String titlePath = itemDirPath + "title.png";
+                        String indexPath = itemDirPath + "index.json";
+                        java.io.File itemDir = new java.io.File(itemDirPath);
+                        if (!itemDir.exists()) {
+                            itemDir.mkdirs();
+                        }
+                        DaijishouSynchronizationModel.this.getScraper().getPlayableItemPreviewMediaIndexFromPath(itemDirPath);
+                        java.io.File indexFile = new java.io.File(indexPath);
+                        PlayableItemPreviewMediaIndex mediaIndex;
+                        if (indexFile.exists()) {
+                            InputStream is = new FileInputStream(indexPath);
+                            String jsonStr = IOUtils.toString(is, StandardCharsets.UTF_8);
+                            Intrinsics.checkNotNullExpressionValue(jsonStr, "toString(...)");
+                            Json.Default.getSerializersModule();
+                            mediaIndex = (PlayableItemPreviewMediaIndex) Json.Default.decodeFromString(PlayableItemPreviewMediaIndex.INSTANCE.serializer(), jsonStr);
+                        } else {
+                            mediaIndex = new PlayableItemPreviewMediaIndex(null, null, null, 7, null);
+                        }
+                        try {
+                            InputStream is = DaijishouSynchronizationModel.this.getApplication().getContentResolver().openInputStream(mediaUri);
+                            Bitmap bitmap = BitmapFactory.decodeStream(is);
+                            Intrinsics.checkNotNull(bitmap);
+                            String type = this.$type;
+                            if (Intrinsics.areEqual(type, "box art")) {
+                                Bitmap resized = ScraperUtilsKt.getResizedBitmap(bitmap, 240);
+                                Intrinsics.checkNotNull(resized);
+                                FileOutputStream fos = new FileOutputStream(boxArtPath);
+                                resized.compress(Constants.INSTANCE.getScraperFormat(), 100, fos);
+                                mediaIndex.setBoxArtPath(boxArtPath);
+                            } else if (Intrinsics.areEqual(type, "snapshot")) {
+                                Bitmap resized = ScraperUtilsKt.getResizedBitmap(bitmap, 720);
+                                Intrinsics.checkNotNull(resized);
+                                FileOutputStream fos = new FileOutputStream(snapshotPath);
+                                resized.compress(Constants.INSTANCE.getScraperFormat(), 100, fos);
+                                mediaIndex.setSnapshotPath(snapshotPath);
+                            } else if (Intrinsics.areEqual(type, "title")) {
+                                Bitmap resized = ScraperUtilsKt.getResizedBitmap(bitmap, 720);
+                                Intrinsics.checkNotNull(resized);
+                                FileOutputStream fos = new FileOutputStream(titlePath);
+                                resized.compress(Constants.INSTANCE.getScraperFormat(), 100, fos);
+                                mediaIndex.setTitlePath(titlePath);
+                            }
+                            if (ScraperUtilsKt.hasAnyMedia(mediaIndex)) {
+                                Json json = JsonKt.Json$default(null, DaijishouSynchronizationModel$importPreviewMediaFromUriForPlatformId$1$3$jsonFormat$1.INSTANCE, 1, null);
+                                json.getSerializersModule();
+                                String encoded = json.encodeToString(PlayableItemPreviewMediaIndex.INSTANCE.serializer(), mediaIndex);
+                                OutputStreamWriter writer = new OutputStreamWriter(new FileOutputStream(indexPath));
+                                writer.write(encoded);
+                                writer.close();
+                            } else if (itemDir.exists()) {
+                                FilesKt.deleteRecursively(itemDir);
+                            }
+                            item.setPreviewMediaPath(itemDirPath);
+                            list.add(item);
+                        } catch (Exception e) {
+                            DaijishouSynchronizationModel.this.getLogger().warn(coroutineScope, ExceptionsKt.stackTraceToString(e));
+                        }
+                    }
+                    if (list.size() >= 8) {
+                        PlayableItemEntity[] array = (PlayableItemEntity[]) list.toArray(new PlayableItemEntity[0]);
+                        DaijishouSynchronizationModel.this.daijishouLibraryRepository.updatePlayableItems((PlayableItemEntity[]) Arrays.copyOf(array, array.length));
+                        list.clear();
+                    }
+                }
+                if (!list.isEmpty()) {
+                    PlayableItemEntity[] array2 = (PlayableItemEntity[]) list.toArray(new PlayableItemEntity[0]);
+                    DaijishouSynchronizationModel.this.daijishouLibraryRepository.updatePlayableItems((PlayableItemEntity[]) Arrays.copyOf(array2, array2.length));
+                }
+                this.label = 2;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new AnonymousClass4(this.$callback, null), this) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            } else if (i == 1 || i == 2) {
+                ResultKt.throwOnFailure(obj);
+                return Unit.INSTANCE;
+            } else {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
         }
 
         /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importPreviewMediaFromUriForPlatformId$1$1, reason: invalid class name and collision with other inner class name */
@@ -2462,12 +3624,104 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO().plus(new DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$$inlined$CoroutineExceptionHandler$1(CoroutineExceptionHandler.Key, this, callback)), null, new C02861(platformId, uri, callback, null), 2, null);
     }
 
-    public static final java.lang.Object invokeSuspendImpl$checkNextPlatform(kotlin.jvm.internal.Ref.IntRef r17, com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexJson r18, com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel r19, kotlin.jvm.internal.Ref.IntRef r20, boolean r21, kotlin.jvm.internal.Ref.ObjectRef<com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexJson> r22, kotlinx.serialization.json.Json r23, java.lang.String r24, kotlinx.coroutines.CoroutineScope r25, kotlin.jvm.functions.Function1<? super java.lang.Boolean, kotlin.Unit> r26, kotlinx.coroutines.CoroutineExceptionHandler r27, kotlin.coroutines.Continuation<?> r28) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 580
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.invokeSuspendImpl$checkNextPlatform(kotlin.jvm.internal.Ref$IntRef, com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexJson, com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel, kotlin.jvm.internal.Ref$IntRef, boolean, kotlin.jvm.internal.Ref$ObjectRef, kotlinx.serialization.json.Json, java.lang.String, kotlinx.coroutines.CoroutineScope, kotlin.jvm.functions.Function1, kotlinx.coroutines.CoroutineExceptionHandler, kotlin.coroutines.Continuation):java.lang.Object");
+    public static final Object invokeSuspendImpl$checkNextPlatform(Ref.IntRef iRef, PlatformsIndexJson platformsIndexJson, DaijishouSynchronizationModel daijishouSynchronizationModel, Ref.IntRef countRef, boolean z, Ref.ObjectRef<PlatformsIndexJson> prevIndexRef, Json json, String baseUri, CoroutineScope coroutineScope, Function1<? super Boolean, Unit> callback, CoroutineExceptionHandler coroutineExceptionHandler, Continuation<?> continuation) throws Throwable {
+        DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$1 c1;
+        if (continuation instanceof DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$1) {
+            c1 = (DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$1) continuation;
+            if ((c1.label & Integer.MIN_VALUE) != 0) {
+                c1.label -= Integer.MIN_VALUE;
+            } else {
+                c1 = new DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$1(continuation);
+            }
+        } else {
+            c1 = new DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$1(continuation);
+        }
+        Object result = c1.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        switch (c1.label) {
+            case 0:
+                ResultKt.throwOnFailure(result);
+                iRef.element++;
+                if (iRef.element == platformsIndexJson.getPlatformList().size()) {
+                    SharedPreferences.Editor edit = daijishouSynchronizationModel.getDefaultSharedPreferences().edit();
+                    String key = StringPreference.PREVIOUS_PLATFORMS_INDEX_JSON.getKey();
+                    Json.Default.getSerializersModule();
+                    edit.putString(key, Json.Default.encodeToString(PlatformsIndexJson.INSTANCE.serializer(), platformsIndexJson)).apply();
+                    if (countRef.element > 0) {
+                        c1.L$0 = callback;
+                        c1.label = 1;
+                        if (BuildersKt.withContext(Dispatchers.getMain(), new DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$2(daijishouSynchronizationModel, countRef, null), c1) == coroutine_suspended) {
+                            return coroutine_suspended;
+                        }
+                    }
+                    c1.L$0 = null;
+                    c1.label = 2;
+                    if (BuildersKt.withContext(Dispatchers.getMain(), new DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$3(callback, null), c1) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                }
+                PlatformsIndexPlatformListItemJson item = platformsIndexJson.getPlatformList().get(iRef.element);
+                String uniqueId = item.getPlatformUniqueId();
+                Integer revisionNumber = item.getRevisionNumber();
+                if (revisionNumber == null) {
+                    c1.label = 3;
+                    if (invokeSuspendImpl$checkNextPlatform(iRef, platformsIndexJson, daijishouSynchronizationModel, countRef, z, prevIndexRef, json, baseUri, coroutineScope, callback, coroutineExceptionHandler, c1) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                }
+                PlatformEntity entity = daijishouSynchronizationModel.daijishouLibraryRepository.getPlatformByUniqueIdStatically(uniqueId);
+                if (entity == null) {
+                    c1.label = 4;
+                    if (invokeSuspendImpl$checkNextPlatform(iRef, platformsIndexJson, daijishouSynchronizationModel, countRef, z, prevIndexRef, json, baseUri, coroutineScope, callback, coroutineExceptionHandler, c1) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    return Unit.INSTANCE;
+                }
+                if (!z) {
+                    for (PlatformsIndexPlatformListItemJson prevItem : prevIndexRef.element.getPlatformList()) {
+                        if (Intrinsics.areEqual(prevItem.getPlatformUniqueId(), uniqueId) && prevItem.getRevisionNumber() != null && prevItem.getRevisionNumber().intValue() >= revisionNumber.intValue()) {
+                            c1.label = 5;
+                            if (invokeSuspendImpl$checkNextPlatform(iRef, platformsIndexJson, daijishouSynchronizationModel, countRef, z, prevIndexRef, json, baseUri, coroutineScope, callback, coroutineExceptionHandler, c1) == coroutine_suspended) {
+                                return coroutine_suspended;
+                            }
+                            return Unit.INSTANCE;
+                        }
+                    }
+                }
+                countRef.element++;
+                json.getSerializersModule();
+                PlatformSharable platformSharable = (PlatformSharable) json.decodeFromString(PlatformSharable.INSTANCE.serializer(), Utils.INSTANCE.readEntireTextFromURL(baseUri + item.getFilename()));
+                try {
+                    daijishouSynchronizationModel.daijishouLibraryRepository.importPlatform(platformSharable, false, true, null, new DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$5(daijishouSynchronizationModel, coroutineScope, uniqueId, coroutineExceptionHandler, iRef, platformsIndexJson, countRef, z, prevIndexRef, json, baseUri, callback));
+                } catch (Exception e) {
+                    daijishouSynchronizationModel.getApplication().getLogger().error(coroutineScope, ExceptionsKt.stackTraceToString(e));
+                    c1.label = 6;
+                    if (invokeSuspendImpl$checkNextPlatform(iRef, platformsIndexJson, daijishouSynchronizationModel, countRef, z, prevIndexRef, json, baseUri, coroutineScope, callback, coroutineExceptionHandler, c1) == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                }
+                return Unit.INSTANCE;
+            case 1:
+                callback = (Function1) c1.L$0;
+                ResultKt.throwOnFailure(result);
+                c1.L$0 = null;
+                c1.label = 2;
+                if (BuildersKt.withContext(Dispatchers.getMain(), new DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$3(callback, null), c1) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return Unit.INSTANCE;
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                ResultKt.throwOnFailure(result);
+                return Unit.INSTANCE;
+            default:
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
     }
 
 }
