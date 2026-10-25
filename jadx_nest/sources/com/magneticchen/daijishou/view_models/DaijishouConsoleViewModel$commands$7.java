@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.magneticchen.daijishou.DaijishouApplication;
 import com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity;
 import com.magneticchen.daijishou.daijishou_player.AmStartCommandToIntentConverter;
+import com.magneticchen.daijishou.dialog_fragments.ChoosePlayableItemFromLibraryDialogFragment;
 import com.magneticchen.daijishou.utils.FileUtils;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -13,11 +14,17 @@ import java.util.List;
 import kotlin.ExceptionsKt;
 import kotlin.Metadata;
 import kotlin.Pair;
+import kotlin.ResultKt;
 import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.SafeContinuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.coroutines.jvm.internal.DebugProbesKt;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.text.StringsKt;
+import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.Dispatchers;
 import org.eclipse.jgit.diff.DiffEntry;
 
 /* JADX INFO: compiled from: DaijishouConsoleViewModel.kt */
@@ -109,20 +116,99 @@ public final class DaijishouConsoleViewModel$commands$7 extends DaijishouConsole
     }
 
     /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:7:0x0018  */
-    /* JADX WARN: Code restructure failed: missing block: B:23:0x013a, code lost:
-    
-        if (r1 == r3) goto L24;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public static final java.lang.Object execute$lambda$2$pickAnItem(com.magneticchen.daijishou.DaijishouApplication r22, androidx.appcompat.app.AppCompatActivity r23, kotlin.jvm.internal.Ref.ObjectRef<com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity> r24, com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$7 r25, java.util.List<kotlin.Pair<java.lang.String, java.lang.String>> r26, com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel r27, java.lang.String r28, kotlin.coroutines.Continuation<?> r29) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 320
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$7.execute$lambda$2$pickAnItem(com.magneticchen.daijishou.DaijishouApplication, androidx.appcompat.app.AppCompatActivity, kotlin.jvm.internal.Ref$ObjectRef, com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$7, java.util.List, com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel, java.lang.String, kotlin.coroutines.Continuation):java.lang.Object");
+    public static final Object execute$lambda$2$pickAnItem(DaijishouApplication daijishouApplication, AppCompatActivity appCompatActivity, Ref.ObjectRef<PlayableItemEntity> objectRef, DaijishouConsoleViewModel$commands$7 daijishouConsoleViewModel$commands$7, List<Pair<String, String>> list, DaijishouConsoleViewModel daijishouConsoleViewModel, String str, Continuation<?> continuation) throws Throwable {
+        DaijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1 daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1;
+        if (continuation instanceof DaijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1) {
+            daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1 = (DaijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1) continuation;
+            if ((daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.label & Integer.MIN_VALUE) != 0) {
+                daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.label -= Integer.MIN_VALUE;
+            } else {
+                daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1 = new DaijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1(continuation);
+            }
+        } else {
+            daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1 = new DaijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1(continuation);
+        }
+        Object obj = daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.label;
+        if (i != 0) {
+            if (i == 1) {
+                Ref.BooleanRef booleanRef = (Ref.BooleanRef) daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$8;
+                ChoosePlayableItemFromLibraryDialogFragment choosePlayableItemFromLibraryDialogFragment = (ChoosePlayableItemFromLibraryDialogFragment) daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$7;
+                String str2 = (String) daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$6;
+                DaijishouConsoleViewModel daijishouConsoleViewModel2 = (DaijishouConsoleViewModel) daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$5;
+                List<Pair<String, String>> list2 = (List) daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$4;
+                DaijishouConsoleViewModel$commands$7 daijishouConsoleViewModel$commands$72 = (DaijishouConsoleViewModel$commands$7) daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$3;
+                Ref.ObjectRef<PlayableItemEntity> objectRef2 = (Ref.ObjectRef) daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$2;
+                AppCompatActivity appCompatActivity2 = (AppCompatActivity) daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$1;
+                DaijishouApplication daijishouApplication2 = (DaijishouApplication) daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$0;
+                ResultKt.throwOnFailure(obj);
+                daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$0 = daijishouApplication2;
+                daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$1 = appCompatActivity2;
+                daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$2 = objectRef2;
+                daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$3 = daijishouConsoleViewModel$commands$72;
+                daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$4 = list2;
+                daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$5 = daijishouConsoleViewModel2;
+                daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$6 = str2;
+                daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$7 = choosePlayableItemFromLibraryDialogFragment;
+                daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$8 = booleanRef;
+                daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.label = 2;
+                SafeContinuation safeContinuation = new SafeContinuation(IntrinsicsKt.intercepted(daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1));
+                choosePlayableItemFromLibraryDialogFragment.setOnClickListener(new DaijishouConsoleViewModel$commands$7$execute$2$pickAnItem$result$1$1(objectRef2, booleanRef, choosePlayableItemFromLibraryDialogFragment, safeContinuation, daijishouApplication2, daijishouConsoleViewModel$commands$72, list2, daijishouConsoleViewModel2, appCompatActivity2, str2));
+                choosePlayableItemFromLibraryDialogFragment.setOnDialogDismissedListener(new DaijishouConsoleViewModel$commands$7$execute$2$pickAnItem$result$1$2(booleanRef, safeContinuation));
+                choosePlayableItemFromLibraryDialogFragment.show(appCompatActivity2.getSupportFragmentManager(), ChoosePlayableItemFromLibraryDialogFragment.class.getName());
+                Object orThrow = safeContinuation.getOrThrow();
+                if (orThrow == IntrinsicsKt.getCOROUTINE_SUSPENDED()) {
+                    DebugProbesKt.probeCoroutineSuspended(daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1);
+                }
+                if (orThrow == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+                return (DaijishouConsoleViewModel.Companion.CommandResult) orThrow;
+            }
+            if (i != 2) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            ResultKt.throwOnFailure(obj);
+            return (DaijishouConsoleViewModel.Companion.CommandResult) obj;
+        }
+        ResultKt.throwOnFailure(obj);
+        ChoosePlayableItemFromLibraryDialogFragment newInstance$default = ChoosePlayableItemFromLibraryDialogFragment.Companion.newInstance$default(ChoosePlayableItemFromLibraryDialogFragment.INSTANCE, null, false, false, false, false, false, 63, null);
+        Ref.BooleanRef booleanRef2 = new Ref.BooleanRef();
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$0 = daijishouApplication;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$1 = appCompatActivity;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$2 = objectRef;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$3 = daijishouConsoleViewModel$commands$7;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$4 = list;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$5 = daijishouConsoleViewModel;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$6 = str;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$7 = newInstance$default;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$8 = booleanRef2;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.label = 1;
+        if (BuildersKt.withContext(Dispatchers.getMain(), new DaijishouConsoleViewModel$commands$7$execute$2$pickAnItem$2(daijishouApplication, null), daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1) == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$0 = daijishouApplication;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$1 = appCompatActivity;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$2 = objectRef;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$3 = daijishouConsoleViewModel$commands$7;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$4 = list;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$5 = daijishouConsoleViewModel;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$6 = str;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$7 = newInstance$default;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.L$8 = booleanRef2;
+        daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1.label = 2;
+        SafeContinuation safeContinuation2 = new SafeContinuation(IntrinsicsKt.intercepted(daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1));
+        newInstance$default.setOnClickListener(new DaijishouConsoleViewModel$commands$7$execute$2$pickAnItem$result$1$1(objectRef, booleanRef2, newInstance$default, safeContinuation2, daijishouApplication, daijishouConsoleViewModel$commands$7, list, daijishouConsoleViewModel, appCompatActivity, str));
+        newInstance$default.setOnDialogDismissedListener(new DaijishouConsoleViewModel$commands$7$execute$2$pickAnItem$result$1$2(booleanRef2, safeContinuation2));
+        newInstance$default.show(appCompatActivity.getSupportFragmentManager(), ChoosePlayableItemFromLibraryDialogFragment.class.getName());
+        Object orThrow2 = safeContinuation2.getOrThrow();
+        if (orThrow2 == IntrinsicsKt.getCOROUTINE_SUSPENDED()) {
+            DebugProbesKt.probeCoroutineSuspended(daijishouConsoleViewModel$commands$7$execute$2$pickAnItem$1);
+        }
+        if (orThrow2 == coroutine_suspended) {
+            return coroutine_suspended;
+        }
+        return (DaijishouConsoleViewModel.Companion.CommandResult) orThrow2;
     }
 }

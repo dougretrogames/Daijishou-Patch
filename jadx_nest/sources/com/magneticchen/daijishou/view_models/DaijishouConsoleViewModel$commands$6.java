@@ -1,6 +1,16 @@
 package com.magneticchen.daijishou.view_models;
 
+import androidx.appcompat.app.AppCompatActivity;
+import com.magneticchen.daijishou.DaijishouApplication;
+import com.magneticchen.daijishou.google_drive.GoogleDrive;
+import java.util.List;
 import kotlin.Metadata;
+import kotlin.ResultKt;
+import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
+import kotlin.jvm.internal.Intrinsics;
+import kotlinx.coroutines.BuildersKt;
+import kotlinx.coroutines.Dispatchers;
 
 /* JADX INFO: compiled from: DaijishouConsoleViewModel.kt */
 /* JADX INFO: loaded from: classes4.dex */
@@ -24,119 +34,55 @@ public final class DaijishouConsoleViewModel$commands$6 extends DaijishouConsole
         return this.description;
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:24:0x006d, code lost:
-    
-        if (com.magneticchen.daijishou.google_drive.GoogleDrive.logAllFiles$default(r13, false, r12, 1, null) == r0) goto L36;
-     */
     @Override // com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel.Companion.Command
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public java.lang.Object execute(androidx.appcompat.app.AppCompatActivity r12, com.magneticchen.daijishou.DaijishouApplication r13, java.lang.String r14, kotlin.coroutines.Continuation<?> r15) {
-        /*
-            r11 = this;
-            boolean r12 = r15 instanceof com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$6$execute$1
-            if (r12 == 0) goto L14
-            r12 = r15
-            com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$6$execute$1 r12 = (com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$6$execute$1) r12
-            int r0 = r12.label
-            r1 = -2147483648(0xffffffff80000000, float:-0.0)
-            r0 = r0 & r1
-            if (r0 == 0) goto L14
-            int r15 = r12.label
-            int r15 = r15 - r1
-            r12.label = r15
-            goto L19
-        L14:
-            com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$6$execute$1 r12 = new com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$6$execute$1
-            r12.<init>(r11, r15)
-        L19:
-            java.lang.Object r15 = r12.result
-            java.lang.Object r0 = kotlin.coroutines.intrinsics.IntrinsicsKt.getCOROUTINE_SUSPENDED()
-            int r1 = r12.label
-            r2 = 2
-            r3 = 1
-            if (r1 == 0) goto L39
-            if (r1 == r3) goto L35
-            if (r1 != r2) goto L2d
-            kotlin.ResultKt.throwOnFailure(r15)
-            return r15
-        L2d:
-            java.lang.IllegalStateException r12 = new java.lang.IllegalStateException
-            java.lang.String r13 = "call to 'resume' before 'invoke' with coroutine"
-            r12.<init>(r13)
-            throw r12
-        L35:
-            kotlin.ResultKt.throwOnFailure(r15)
-            goto L70
-        L39:
-            kotlin.ResultKt.throwOnFailure(r15)
-            com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$Companion r15 = com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel.INSTANCE
-            java.util.List r15 = com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel.Companion.access$splitCommandBySpaces(r15, r14)
-            int r1 = r15.size()
-            r4 = 0
-            java.lang.String r5 = "all"
-            r6 = 3
-            if (r1 != r6) goto L7e
-            java.lang.Object r1 = r15.get(r3)
-            java.lang.String r7 = "list"
-            boolean r1 = kotlin.jvm.internal.Intrinsics.areEqual(r1, r7)
-            if (r1 == 0) goto L7e
-            java.lang.Object r1 = r15.get(r2)
-            boolean r1 = kotlin.jvm.internal.Intrinsics.areEqual(r1, r5)
-            if (r1 == 0) goto L7e
-            com.magneticchen.daijishou.google_drive.GoogleDrive r13 = r13.getGoogleDrive()
-            r12.label = r3
-            r14 = 0
-            java.lang.Object r12 = com.magneticchen.daijishou.google_drive.GoogleDrive.logAllFiles$default(r13, r14, r12, r3, r4)
-            if (r12 != r0) goto L70
-            goto Lba
-        L70:
-            com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$Companion$CommandResult r1 = new com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$Companion$CommandResult
-            r6 = 14
-            r7 = 0
-            java.lang.String r2 = "Results printed in the logger."
-            r3 = 0
-            r4 = 0
-            r5 = 0
-            r1.<init>(r2, r3, r4, r5, r6, r7)
-            return r1
-        L7e:
-            int r1 = r15.size()
-            if (r1 != r6) goto Lbc
-            java.lang.Object r1 = r15.get(r3)
-            java.lang.String r3 = "delete"
-            boolean r1 = kotlin.jvm.internal.Intrinsics.areEqual(r1, r3)
-            if (r1 == 0) goto Lbc
-            java.lang.Object r15 = r15.get(r2)
-            boolean r15 = kotlin.jvm.internal.Intrinsics.areEqual(r15, r5)
-            if (r15 == 0) goto Lbc
-            com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel r5 = r11.this$0
-            r9 = 4
-            r10 = 0
-            java.lang.String r7 = "Executed. This can take a while. Please wait..."
-            r8 = 0
-            r6 = r14
-            com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel.logCommand$default(r5, r6, r7, r8, r9, r10)
-            kotlinx.coroutines.CoroutineDispatcher r14 = kotlinx.coroutines.Dispatchers.getIO()
-            kotlin.coroutines.CoroutineContext r14 = (kotlin.coroutines.CoroutineContext) r14
-            com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$6$execute$2 r15 = new com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$6$execute$2
-            r15.<init>(r13, r4)
-            kotlin.jvm.functions.Function2 r15 = (kotlin.jvm.functions.Function2) r15
-            r12.label = r2
-            java.lang.Object r12 = kotlinx.coroutines.BuildersKt.withContext(r14, r15, r12)
-            if (r12 != r0) goto Lbb
-        Lba:
-            return r0
-        Lbb:
-            return r12
-        Lbc:
-            com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$Companion r12 = com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel.INSTANCE
-            com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$Companion$CommandResult r12 = r12.getUnsupportedCommandResult()
-            return r12
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$6.execute(androidx.appcompat.app.AppCompatActivity, com.magneticchen.daijishou.DaijishouApplication, java.lang.String, kotlin.coroutines.Continuation):java.lang.Object");
+    public Object execute(AppCompatActivity appCompatActivity, DaijishouApplication daijishouApplication, String str, Continuation<?> continuation) {
+        DaijishouConsoleViewModel$commands$6$execute$1 daijishouConsoleViewModel$commands$6$execute$1;
+        if (continuation instanceof DaijishouConsoleViewModel$commands$6$execute$1) {
+            daijishouConsoleViewModel$commands$6$execute$1 = (DaijishouConsoleViewModel$commands$6$execute$1) continuation;
+            if ((daijishouConsoleViewModel$commands$6$execute$1.label & Integer.MIN_VALUE) != 0) {
+                daijishouConsoleViewModel$commands$6$execute$1.label -= Integer.MIN_VALUE;
+            } else {
+                daijishouConsoleViewModel$commands$6$execute$1 = new DaijishouConsoleViewModel$commands$6$execute$1(this, continuation);
+            }
+        } else {
+            daijishouConsoleViewModel$commands$6$execute$1 = new DaijishouConsoleViewModel$commands$6$execute$1(this, continuation);
+        }
+        Object obj = daijishouConsoleViewModel$commands$6$execute$1.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = daijishouConsoleViewModel$commands$6$execute$1.label;
+        if (i != 0) {
+            if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+                return new DaijishouConsoleViewModel.Companion.CommandResult("Results printed in the logger.", 0, null, false, 14, null);
+            }
+            if (i != 2) {
+                throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+            }
+            ResultKt.throwOnFailure(obj);
+            return obj;
+        }
+        ResultKt.throwOnFailure(obj);
+        List listSplitCommandBySpaces = DaijishouConsoleViewModel.INSTANCE.splitCommandBySpaces(str);
+        if (listSplitCommandBySpaces.size() == 3 && Intrinsics.areEqual(listSplitCommandBySpaces.get(1), "list") && Intrinsics.areEqual(listSplitCommandBySpaces.get(2), "all")) {
+            daijishouConsoleViewModel$commands$6$execute$1.label = 1;
+            try {
+                if (GoogleDrive.logAllFiles$default(daijishouApplication.getGoogleDrive(), false, daijishouConsoleViewModel$commands$6$execute$1, 1, null) == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
+            } catch (Throwable th) {
+                throw com.magneticchen.daijishou.support.DaijishouSupport.sneakyThrow(th);
+            }
+            return new DaijishouConsoleViewModel.Companion.CommandResult("Results printed in the logger.", 0, null, false, 14, null);
+        }
+        if (listSplitCommandBySpaces.size() == 3 && Intrinsics.areEqual(listSplitCommandBySpaces.get(1), "delete") && Intrinsics.areEqual(listSplitCommandBySpaces.get(2), "all")) {
+            DaijishouConsoleViewModel.logCommand$default(this.this$0, str, "Executed. This can take a while. Please wait...", false, 4, null);
+            daijishouConsoleViewModel$commands$6$execute$1.label = 2;
+            Object withContextResult = BuildersKt.withContext(Dispatchers.getIO(), new DaijishouConsoleViewModel$commands$6$execute$2(daijishouApplication, null), daijishouConsoleViewModel$commands$6$execute$1);
+            if (withContextResult == coroutine_suspended) {
+                return coroutine_suspended;
+            }
+            return withContextResult;
+        }
+        return DaijishouConsoleViewModel.INSTANCE.getUnsupportedCommandResult();
     }
 }

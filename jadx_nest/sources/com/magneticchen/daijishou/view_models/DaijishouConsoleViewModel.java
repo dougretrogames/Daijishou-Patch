@@ -12,9 +12,12 @@ import com.magneticchen.daijishou.view_models.abstract_view_models.DaijishouAndr
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+import kotlin.ExceptionsKt;
 import kotlin.Metadata;
+import kotlin.ResultKt;
 import kotlin.collections.CollectionsKt;
 import kotlin.coroutines.Continuation;
+import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
@@ -360,34 +363,132 @@ public final class DaijishouConsoleViewModel extends DaijishouAndroidViewModel {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:43:0x00fa A[Catch: Exception -> 0x003b, TryCatch #0 {Exception -> 0x003b, blocks: (B:13:0x0036, B:41:0x00ec, B:43:0x00fa, B:46:0x0102, B:48:0x0114, B:50:0x0120, B:53:0x0128, B:55:0x0136, B:57:0x0142), top: B:68:0x0036 }] */
-    /* JADX WARN: Code duplicated, block: B:45:0x0100  */
-    /* JADX WARN: Code duplicated, block: B:48:0x0114 A[Catch: Exception -> 0x003b, TryCatch #0 {Exception -> 0x003b, blocks: (B:13:0x0036, B:41:0x00ec, B:43:0x00fa, B:46:0x0102, B:48:0x0114, B:50:0x0120, B:53:0x0128, B:55:0x0136, B:57:0x0142), top: B:68:0x0036 }] */
-    /* JADX WARN: Code duplicated, block: B:50:0x0120 A[Catch: Exception -> 0x003b, TryCatch #0 {Exception -> 0x003b, blocks: (B:13:0x0036, B:41:0x00ec, B:43:0x00fa, B:46:0x0102, B:48:0x0114, B:50:0x0120, B:53:0x0128, B:55:0x0136, B:57:0x0142), top: B:68:0x0036 }] */
-    /* JADX WARN: Code duplicated, block: B:52:0x0126  */
-    /* JADX WARN: Code duplicated, block: B:55:0x0136 A[Catch: Exception -> 0x003b, TryCatch #0 {Exception -> 0x003b, blocks: (B:13:0x0036, B:41:0x00ec, B:43:0x00fa, B:46:0x0102, B:48:0x0114, B:50:0x0120, B:53:0x0128, B:55:0x0136, B:57:0x0142), top: B:68:0x0036 }] */
-    /* JADX WARN: Code duplicated, block: B:57:0x0142 A[Catch: Exception -> 0x003b, TRY_LEAVE, TryCatch #0 {Exception -> 0x003b, blocks: (B:13:0x0036, B:41:0x00ec, B:43:0x00fa, B:46:0x0102, B:48:0x0114, B:50:0x0120, B:53:0x0128, B:55:0x0136, B:57:0x0142), top: B:68:0x0036 }] */
-    /* JADX WARN: Code duplicated, block: B:63:0x0166  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:59:0x0146, code lost:
-    
-        r0 = move-exception;
-     */
-    /* JADX WARN: Code restructure failed: missing block: B:60:0x0147, code lost:
-    
-        r9 = r0;
-        r8 = r7;
-        r1 = r8;
-     */
-    /*
-        Code decompiled incorrectly, please refer to instructions dump.
-        To view partially-correct add '--show-bad-code' argument
-    */
-    public final java.lang.Object execute(androidx.appcompat.app.AppCompatActivity r8, java.lang.String r9, kotlin.coroutines.Continuation<?> r10) throws java.lang.Throwable {
-        /*
-            Method dump skipped, instruction units count: 383
-            To view this dump add '--comments-level debug' option
-        */
-        throw new UnsupportedOperationException("Method not decompiled: com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel.execute(androidx.appcompat.app.AppCompatActivity, java.lang.String, kotlin.coroutines.Continuation):java.lang.Object");
+    public final Object execute(AppCompatActivity appCompatActivity, String str, Continuation<?> continuation) throws Throwable {
+        AnonymousClass1 anonymousClass1;
+        if (continuation instanceof AnonymousClass1) {
+            anonymousClass1 = (AnonymousClass1) continuation;
+            if ((anonymousClass1.label & Integer.MIN_VALUE) != 0) {
+                anonymousClass1.label -= Integer.MIN_VALUE;
+            } else {
+                anonymousClass1 = new AnonymousClass1(continuation);
+            }
+        } else {
+            anonymousClass1 = new AnonymousClass1(continuation);
+        }
+        Object obj = anonymousClass1.result;
+        Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
+        int i = anonymousClass1.label;
+        if (i != 0) {
+            if (i == 1) {
+                ResultKt.throwOnFailure(obj);
+                return obj;
+            }
+            if (i == 2) {
+                DaijishouConsoleViewModel daijishouConsoleViewModel = (DaijishouConsoleViewModel) anonymousClass1.L$2;
+                String str2 = (String) anonymousClass1.L$1;
+                DaijishouConsoleViewModel daijishouConsoleViewModel2 = (DaijishouConsoleViewModel) anonymousClass1.L$0;
+                try {
+                    ResultKt.throwOnFailure(obj);
+                    Companion.CommandResult commandResult = (Companion.CommandResult) obj;
+                    if (commandResult.getStatusCode() == Companion.CommandResult.INSTANCE.getSUCCEED_STATUS_CODE()) {
+                        String message = commandResult.getMessage();
+                        if (message == null) {
+                            message = "Succeed. With null value.";
+                        }
+                        commandResult.setMessage(message);
+                        String message2 = commandResult.getMessage();
+                        Intrinsics.checkNotNull(message2);
+                        daijishouConsoleViewModel.logCommand(str2, message2, commandResult.getPrettyPrint());
+                        return commandResult;
+                    }
+                    if (commandResult.getStatusCode() == Companion.CommandResult.INSTANCE.getFAILED_STATUS_CODE()) {
+                        String message3 = commandResult.getMessage();
+                        if (message3 == null) {
+                            message3 = "Failed. With null value.";
+                        }
+                        commandResult.setMessage(message3);
+                        String message4 = commandResult.getMessage();
+                        Intrinsics.checkNotNull(message4);
+                        daijishouConsoleViewModel.logWarningCommand(str2, message4);
+                        return commandResult;
+                    }
+                    if (commandResult.getStatusCode() == Companion.CommandResult.INSTANCE.getUNSUPPORTED_COMMAND_STATUS_CODE()) {
+                        daijishouConsoleViewModel.logUnsupportedCommand(str2);
+                    }
+                    return commandResult;
+                } catch (Exception e) {
+                    daijishouConsoleViewModel.getApplication().getLogger().warn(daijishouConsoleViewModel2, ExceptionsKt.stackTraceToString(e));
+                    String message5 = e.getMessage();
+                    if (message5 == null) {
+                        message5 = ExceptionsKt.stackTraceToString(e);
+                    }
+                    return new Companion.CommandResult(message5, Companion.CommandResult.INSTANCE.getFAILED_STATUS_CODE(), null, false, 12, null);
+                }
+            }
+            throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
+        }
+        ResultKt.throwOnFailure(obj);
+        String string = StringsKt.trimStart((CharSequence) str).toString();
+        if (!getApplication().getDefaultSharedPreferences().getBoolean(BooleanPreference.USE_DEBUG_MODE.getKey(), false)) {
+            if (StringsKt.startsWith$default(string, this.debugCommand.getStartWith(), false, 2, (Object) null)) {
+                anonymousClass1.label = 1;
+                Object execute = this.debugCommand.execute(appCompatActivity, getApplication(), string, anonymousClass1);
+                return execute == coroutine_suspended ? coroutine_suspended : execute;
+            }
+            String str3 = "This action only allowed in debug mode.\n> " + string;
+            getApplication().getLogger().warn(this, str3);
+            return new Companion.CommandResult(str3, Companion.CommandResult.INSTANCE.getFAILED_STATUS_CODE(), null, false, 12, null);
+        }
+        for (Companion.Command command : this.commands) {
+            if (StringsKt.startsWith$default(string, command.getStartWith(), false, 2, (Object) null)) {
+                try {
+                    DaijishouApplication application = getApplication();
+                    anonymousClass1.L$0 = this;
+                    anonymousClass1.L$1 = string;
+                    anonymousClass1.L$2 = this;
+                    anonymousClass1.label = 2;
+                    Object execute2 = command.execute(appCompatActivity, application, string, anonymousClass1);
+                    if (execute2 == coroutine_suspended) {
+                        return coroutine_suspended;
+                    }
+                    Companion.CommandResult commandResult2 = (Companion.CommandResult) execute2;
+                    if (commandResult2.getStatusCode() == Companion.CommandResult.INSTANCE.getSUCCEED_STATUS_CODE()) {
+                        String message6 = commandResult2.getMessage();
+                        if (message6 == null) {
+                            message6 = "Succeed. With null value.";
+                        }
+                        commandResult2.setMessage(message6);
+                        String message7 = commandResult2.getMessage();
+                        Intrinsics.checkNotNull(message7);
+                        logCommand(string, message7, commandResult2.getPrettyPrint());
+                        return commandResult2;
+                    }
+                    if (commandResult2.getStatusCode() == Companion.CommandResult.INSTANCE.getFAILED_STATUS_CODE()) {
+                        String message8 = commandResult2.getMessage();
+                        if (message8 == null) {
+                            message8 = "Failed. With null value.";
+                        }
+                        commandResult2.setMessage(message8);
+                        String message9 = commandResult2.getMessage();
+                        Intrinsics.checkNotNull(message9);
+                        logWarningCommand(string, message9);
+                        return commandResult2;
+                    }
+                    if (commandResult2.getStatusCode() == Companion.CommandResult.INSTANCE.getUNSUPPORTED_COMMAND_STATUS_CODE()) {
+                        logUnsupportedCommand(string);
+                    }
+                    return commandResult2;
+                } catch (Exception e2) {
+                    getApplication().getLogger().warn(this, ExceptionsKt.stackTraceToString(e2));
+                    String message10 = e2.getMessage();
+                    if (message10 == null) {
+                        message10 = ExceptionsKt.stackTraceToString(e2);
+                    }
+                    return new Companion.CommandResult(message10, Companion.CommandResult.INSTANCE.getFAILED_STATUS_CODE(), null, false, 12, null);
+                }
+            }
+        }
+        logUnsupportedCommand(string);
+        return unsupportedCommandResult;
     }
 }
