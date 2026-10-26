@@ -61,11 +61,7 @@ public final class VideoAndSoundsSettingsNavFragment extends DaijishouPreference
                 @Override
                 public boolean onPreferenceChange(androidx.preference.Preference preference, Object newValue) {
                     boolean enabled = Boolean.TRUE.equals(newValue);
-                    if (enabled) {
-                        com.magneticchen.daijishou.audio.MusicManager.getInstance().play(requireContext());
-                    } else {
-                        com.magneticchen.daijishou.audio.MusicManager.getInstance().stop();
-                    }
+                    com.magneticchen.daijishou.audio.MusicManager.getInstance().onPreferenceChanged(requireContext(), enabled);
                     return true;
                 }
             });

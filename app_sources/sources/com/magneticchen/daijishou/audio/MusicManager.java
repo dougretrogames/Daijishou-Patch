@@ -40,6 +40,7 @@ public class MusicManager {
     private boolean isScanning = false;
     private boolean isPaused = false;
     private Context appContext;
+    private Uri lastPlayedUri;
 
     private MusicManager() {
     }
@@ -119,6 +120,39 @@ public class MusicManager {
         }
     }
 
+    public void onPreferenceChanged(Context context, boolean enabled) {
+        init(context);
+        Context ctx = context != null ? context : appContext;
+        if (ctx != null) {
+            PreferenceManager.getDefaultSharedPreferences(ctx)
+                .edit()
+                .putBoolean(PREF_KEY_PLAY_MUSIC, enabled)
+                .apply();
+        }
+        if (enabled) {
+            startRandomTrack(context);
+        } else {
+            stop();
+        }
+    }
+
+    public void startRandomTrack(Context context) {
+        init(context);
+        releasePlayer();
+        isPaused = false;
+        if (fullPlaylist.isEmpty()) {
+            refreshPlaylistAndPlay(context);
+        } else {
+            currentQueue.clear();
+            currentQueue.addAll(fullPlaylist);
+            Collections.shuffle(currentQueue, secureRandom);
+            if (currentQueue.size() > 1 && lastPlayedUri != null && currentQueue.get(0).equals(lastPlayedUri)) {
+                Collections.swap(currentQueue, 0, currentQueue.size() - 1);
+            }
+            playNextTrack();
+        }
+    }
+
     public void stop() {
         releasePlayer();
         isPaused = false;
@@ -192,6 +226,7 @@ public class MusicManager {
         }
 
         Uri trackUri = currentQueue.remove(0);
+        lastPlayedUri = trackUri;
         releasePlayer();
 
         try {
