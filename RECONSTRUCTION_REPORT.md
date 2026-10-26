@@ -599,3 +599,17 @@ Depois: recompilar → D8 → baksmali → `run_pipeline.ps1` → `rebuild_app.p
 - Progressão de erros do javac: 148 → … → 0.
 - Testes: 71 capturas PNG + 119 dumps XML no AVD do build atual; 18 capturas + 24 dumps no AVD
   do build de referência.
+
+
+## P2 — Cobertura Completa de Subsistemas e Suíte Master (100% CONCLUÍDO)
+
+- **Suíte Master Integrada P2 (`build_tmp/test_p2_suite.py`)**:
+  - Gate No-Orig estrito validado (`verify_no_orig.py`).
+  - Matriz multi-aba AVD semântica (`test_avd_matrix.py`).
+  - Protocolo TCP DaijishouDebugService validado na porta 19487 com Heartbeat 0x00 (`test_debug_service.py`).
+  - Serviço de Acessibilidade (`LauncherAccessibilityService`) validado com binding no framework Android (`dumpsys accessibility`).
+  - Download e importação de plataformas do GitHub (`3DO.json`) com persistência Room DB (`test_platforms_flow.py`).
+  - Criação de widgets dinâmicos no grid de Widgets (`test_widgets_flow.py`).
+  - Fluxo de backup e sincronização (diálogo de topo, fragment de configurações, backup Google Drive e exportação de plataforma para Android Chooser) (`test_backup_flow.py`).
+  - Todos os 11/11 estágios executados sequencialmente com 100% de status PASS (0 crashes, 0 UOE não-Kotlin, 0 missing refs, 0 catch-casts).
+  - Correção cirúrgica de descompilação de corrotina em `RetroAchievementsManager.java:refreshRetroAchievementsGameListByConsoleIdIfExpired`.

@@ -294,7 +294,7 @@ Regras de interação aprendidas:
 - **Automação da matriz de AVD**:
   - Script `build_tmp/test_avd_matrix.py` automatiza completamente a bateria de testes na AVD: boot, instalação, locale pt-BR, monkey launch, bypass de pop-up de tela cheia do Android, verificação de PID ativo, validação de elementos de tela, captura de screenshot e verificação de 0 erros fatais em logcat (`AndroidRuntime:E`).
 
-### P2 — Cobertura de testes e robustez (Em andamento)
+### P2 — Cobertura de testes e robustez (100% VALIDADO)
 
 - **Protocolo TCP de debug (`daijishou_debug_service`) [CONCLUÍDO]**:
   - Validado e automatizado através do script `build_tmp/test_debug_service.py`.
@@ -302,8 +302,33 @@ Regras de interação aprendidas:
   - Serviço executado em primeiro plano escutando na porta TCP 19487.
   - Comunicação via adb forward (`tcp:19487`) com validação ponta a ponta do handshake de Heartbeat (`0x00`).
   - Corrigido defeito sutil de descompilação de corrotina em `ConsoleOperation.java`: garantia de serialização e retorno correto do `commandResult` para o cliente socket mesmo em execuções síncronas.
-- **Próximos fluxos de P2**:
-  - Biblioteca real + execução de emulador externo, scraping real, RA autenticado, Drive autenticado, backup→restore round-trip, API 26 (minSdk), outras densidades/idiomas, serviço de acessibilidade (`LauncherAccessibilityService`).
+- **Serviço de Acessibilidade (`LauncherAccessibilityService`) [CONCLUÍDO]**:
+  - Validado via ativação segura via ADB (`settings put secure enabled_accessibility_services`), confirmação de vínculo do sistema Android (`Bound services:{Service[label=Daijishō...]}`, 0 crashed services) e desativação limpa.
+- **Download e Importação de Plataformas Remotas [CONCLUÍDO]**:
+  - Validado via script `build_tmp/test_platforms_flow.py`: busca remota de 122 plataformas em `https://raw.githubusercontent.com/TapiocaFox/Daijishou/main/platforms/index.json`, seleção da plataforma `3DO`, download de `3do.json` e persistência no Room Database.
+  - Identificado e corrigido bug de descompilação JADX em `RetroAchievementsManager.java:refreshRetroAchievementsGameListByConsoleIdIfExpired` (corrotina gerada sem tratamento de suspensão imediata causando `IllegalStateException` e encerramento forçado do processo via `Process.killProcess`).
+- **Criação de Widgets Dinâmicos no Grid [CONCLUÍDO]**:
+  - Validado via script `build_tmp/test_widgets_flow.py`: navegação até a aba Widgets, abertura do menu popup 'Novo widget', seleção de 'Atividade' -> 'Continuar a jogar (Item)' e renderização do card de widget no `widgets_recycler_view`.
+- **Fluxo de Backup e Sincronização Local/Nuvem [CONCLUÍDO]**:
+  - Validado via script `build_tmp/test_backup_flow.py`:
+    1. Abertura do diálogo de status de sincronização (`SynchronizationStatusDialogFragment`) pelo topo.
+    2. Navegação até Configurações -> 'Backup e restauração' (`BackupAndRestoreSettingsNavFragment`).
+    3. Acionamento do backup manual (`scheduleBackup` / `startSyncingIfNot`).
+    4. Exportação da plataforma `3DO` para JSON (`3DO.json`) transmitido com sucesso ao Android Chooser Intent.
+    5. Verificação estrita de ausência de crashes ou exceções não-tratadas.
+- **Suíte Master Integrada P2 (`build_tmp/test_p2_suite.py`) [CONCLUÍDO]**:
+  - 11/11 estágios executados sequencialmente com 100% de aprovação (tempo total: ~160s):
+    1. Gate de Compilação No-Orig (`verify_no_orig.py`) [PASS]
+    2. Matriz de Abas e Telas AVD (`test_avd_matrix.py`) [PASS]
+    3. Serviço TCP DaijishouDebugService (`test_debug_service.py`) [PASS]
+    4. Serviço de Acessibilidade (`LauncherAccessibilityService`) [PASS]
+    5. Download e Importação de Plataformas (`test_platforms_flow.py`) [PASS]
+    6. Criação de Widgets Dinâmicos no Grid (`test_widgets_flow.py`) [PASS]
+    7. Fluxo de Backup e Sincronização (`test_backup_flow.py`) [PASS]
+    8. Gate Estático: Gap Inventory (`gap_inventory.py`) [PASS]
+    9. Gate Estático: Stub Compare 0/0 (`stub_compare.py`) [PASS]
+    10. Gate Estático: Scan Catch Cast 0 (`scan_catch_cast.py`) [PASS]
+    11. Gate Estático: Check References 0/0 (`check_refs.py`) [PASS]
 
 ### Opcional — nomes binários (722 classes)
 

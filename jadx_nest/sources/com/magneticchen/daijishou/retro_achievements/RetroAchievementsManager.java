@@ -1315,27 +1315,30 @@ public final class RetroAchievementsManager {
         Object retroInterface = c02611.result;
         Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
         int i = c02611.label;
-        if (i == 0) {
-            ResultKt.throwOnFailure(retroInterface);
-            this.logger.debug(this, "refreshRetroAchievementsGameListByConsoleIdIfExpired, consoleId: " + j);
-            c02611.L$0 = this;
-            c02611.J$0 = j;
-            c02611.label = 1;
-            retroInterface = getRetroInterface(c02611);
-            if (retroInterface != coroutine_suspended) {
+        switch (i) {
+            case 0:
+                ResultKt.throwOnFailure(retroInterface);
+                this.logger.debug(this, "refreshRetroAchievementsGameListByConsoleIdIfExpired, consoleId: " + j);
+                c02611.L$0 = this;
+                c02611.J$0 = j;
+                c02611.label = 1;
+                retroInterface = getRetroInterface(c02611);
+                if (retroInterface == coroutine_suspended) {
+                    return coroutine_suspended;
+                }
                 retroAchievementsManager = this;
-            }
-        }
-        if (i != 1) {
-            if (i != 2) {
+                break;
+            case 1:
+                j = c02611.J$0;
+                retroAchievementsManager = (RetroAchievementsManager) c02611.L$0;
+                ResultKt.throwOnFailure(retroInterface);
+                break;
+            case 2:
+                ResultKt.throwOnFailure(retroInterface);
+                return retroInterface;
+            default:
                 throw new IllegalStateException("call to 'resume' before 'invoke' with coroutine");
-            }
-            ResultKt.throwOnFailure(retroInterface);
-            return retroInterface;
         }
-        j = c02611.J$0;
-        retroAchievementsManager = (RetroAchievementsManager) c02611.L$0;
-        ResultKt.throwOnFailure(retroInterface);
         if (((RetroInterface) retroInterface) == null) {
             return Boxing.boxBoolean(false);
         }

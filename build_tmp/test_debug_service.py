@@ -69,17 +69,24 @@ def main():
     tap(1639, 192) # foca no campo de busca
     time.sleep(1)
     run_adb(['shell', 'input', 'text', 'nooxyhowdoyouturnthison\\?'])
-    time.sleep(2)
-
-    ui = get_ui()
-    if 'Debug and experimental' not in ui:
+    
+    # Aguarda dialogo 'Debug and experimental' com polling
+    dialog_opened = False
+    for _ in range(6):
+        time.sleep(1)
+        ui = get_ui()
+        if 'Debug and experimental' in ui:
+            dialog_opened = True
+            break
+            
+    if not dialog_opened:
         print("[ERRO] Dialogo 'Debug and experimental' nao abriu!")
         sys.exit(1)
     print("  [OK] Dialogo 'Debug and experimental' aberto com sucesso.")
 
     # 4. Inicia Servico de Debug
     print("  Clicando em 'START DEBUG SERVICE'...")
-    tap(1064, 726)
+    tap(920, 726)
     time.sleep(2)
 
     # 5. Concede permissao se houver popup
@@ -91,10 +98,12 @@ def main():
 
     # 6. Fecha dialogos
     print("  Fechando dialogos...")
-    tap(2444, 1258) # DONE no debug dialog
-    time.sleep(1)
-    press_key(4)    # BACK para fechar logger dialog
-    time.sleep(1)
+    tap(2300, 1258) # DONE no debug dialog
+    time.sleep(1.5)
+    tap(168, 192)   # Clica explicitamente no fragment_logger_dialog_back_button
+    time.sleep(1.0)
+    press_key(4)    # Garante fechamento
+    time.sleep(1.5)
 
     # 7. Configura adb forward
     print("  Configurando adb forward para porta 19487...")
