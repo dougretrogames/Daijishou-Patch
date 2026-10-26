@@ -49,6 +49,7 @@ import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.temporal.TemporalAdjuster;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collection;
 import java.util.Date;
 import java.util.LinkedHashMap;
@@ -185,29 +186,43 @@ public final class Utils {
 
     public final Date atStartOfDay(Date date) {
         Intrinsics.checkNotNullParameter(date, "date");
-        LocalDateTime localDateTimeWith = dateToLocalDateTime(date).with((TemporalAdjuster) LocalTime.MIN);
-        Intrinsics.checkNotNullExpressionValue(localDateTimeWith, "with(...)");
-        return localDateTimeToDate(localDateTimeWith);
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        cal.set(Calendar.HOUR_OF_DAY, 0);
+        cal.set(Calendar.MINUTE, 0);
+        cal.set(Calendar.SECOND, 0);
+        cal.set(Calendar.MILLISECOND, 0);
+        return cal.getTime();
     }
 
     public final Date atEndOfDay(Date date) {
         Intrinsics.checkNotNullParameter(date, "date");
-        LocalDateTime localDateTimeWith = dateToLocalDateTime(date).with((TemporalAdjuster) LocalTime.MAX);
-        Intrinsics.checkNotNullExpressionValue(localDateTimeWith, "with(...)");
-        return localDateTimeToDate(localDateTimeWith);
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(date);
+        cal.set(Calendar.HOUR_OF_DAY, 23);
+        cal.set(Calendar.MINUTE, 59);
+        cal.set(Calendar.SECOND, 59);
+        cal.set(Calendar.MILLISECOND, 999);
+        return cal.getTime();
     }
 
     public final LocalDateTime dateToLocalDateTime(Date date) {
         Intrinsics.checkNotNullParameter(date, "date");
-        LocalDateTime localDateTimeOfInstant = LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault());
-        Intrinsics.checkNotNullExpressionValue(localDateTimeOfInstant, "ofInstant(...)");
-        return localDateTimeOfInstant;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            LocalDateTime localDateTimeOfInstant = LocalDateTime.ofInstant(date.toInstant(), ZoneId.systemDefault());
+            Intrinsics.checkNotNullExpressionValue(localDateTimeOfInstant, "ofInstant(...)");
+            return localDateTimeOfInstant;
+        }
+        return null;
     }
 
     /* WARN: Type inference failed for: r2v1, types: [java.time.ZonedDateTime] */
     public final Date localDateTimeToDate(LocalDateTime localDateTime) {
         Intrinsics.checkNotNullParameter(localDateTime, "localDateTime");
-        return Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            return Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
+        }
+        return null;
     }
 
     public static /* synthetic */ void scaleView$default(Utils utils, View view, float f, float f2, long j, boolean z, int i, Object obj) {

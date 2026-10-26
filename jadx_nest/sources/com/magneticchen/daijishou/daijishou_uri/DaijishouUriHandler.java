@@ -3,8 +3,6 @@ package com.magneticchen.daijishou.daijishou_uri;
 import com.magneticchen.daijishou.DaijishouApplication;
 import java.io.File;
 import java.net.URI;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 import kotlin.Metadata;
@@ -93,9 +91,7 @@ public final class DaijishouUriHandler {
         String absolutePath = application.getFilesDir().getAbsolutePath();
         Intrinsics.checkNotNullExpressionValue(absolutePath, "getAbsolutePath(...)");
         this.filesDirAbsolutePath = absolutePath;
-        Path path = Paths.get(application.getFilesDir().getAbsolutePath(), "temp");
-        Intrinsics.checkNotNullExpressionValue(path, "get(...)");
-        String string = path.toAbsolutePath().toString();
+        String string = new File(application.getFilesDir(), "temp").getAbsolutePath();
         this.tempFilesDirAbsolutePath = string;
         String absolutePath2 = application.getCacheDir().getAbsolutePath();
         Intrinsics.checkNotNullExpressionValue(absolutePath2, "getAbsolutePath(...)");
@@ -152,11 +148,10 @@ public final class DaijishouUriHandler {
 
     public final String encodeToDaijishouFileUri(String path) {
         Intrinsics.checkNotNullParameter(path, "path");
-        Path absolutePath = Paths.get(path, new String[0]).toAbsolutePath();
-        if (absolutePath == null) {
+        String string = new File(path).getAbsolutePath();
+        if (string == null) {
             return null;
         }
-        String string = absolutePath.toString();
         for (Map.Entry<String, String> entry : this.fileUriToPathHashMap.entrySet()) {
             String key = entry.getKey();
             if (StringsKt.startsWith$default(entry.getValue(), this.filesDirAbsolutePath, false, 2, (Object) null)) {

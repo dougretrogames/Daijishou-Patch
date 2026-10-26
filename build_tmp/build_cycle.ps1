@@ -59,7 +59,7 @@ if (-not (Test-Path build_tmp\app_dex_rel)) { New-Item -ItemType Directory -Forc
 & "$jd21\jar.exe" cf build_tmp\app_classes_compile.jar -C nest_classes_compile .
 if ($LASTEXITCODE -ne 0) { throw "jar failed with exit code $LASTEXITCODE" }
 
-& "$bt\d8.bat" --release --min-api 26 --lib $android --output build_tmp\app_dex_rel build_tmp\app_classes_compile.jar
+& "$bt\d8.bat" --release --min-api 24 --lib $android --output build_tmp\app_dex_rel build_tmp\app_classes_compile.jar
 if ($LASTEXITCODE -ne 0) { throw "d8 failed with exit code $LASTEXITCODE" }
 
 Copy-Item build_tmp\app_dex_rel\classes.dex build_tmp\app_dex\classes.dex -Force

@@ -81,9 +81,13 @@ public final class DaijishouDebugService extends DaijishouService {
         this.job = completableJobSupervisorJob$default;
         this.scope = CoroutineScopeKt.CoroutineScope(Dispatchers.getIO().plus(completableJobSupervisorJob$default));
         this.isServerRunning = new AtomicBoolean(true);
-        NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, "Daijishou Debug", 4);
-        notificationChannel.setDescription("This is Daijishou Debug notification channel.");
-        this.notificationChannel = notificationChannel;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel notificationChannel = new NotificationChannel(NOTIFICATION_CHANNEL_ID, "Daijishou Debug", 4);
+            notificationChannel.setDescription("This is Daijishou Debug notification channel.");
+            this.notificationChannel = notificationChannel;
+        } else {
+            this.notificationChannel = null;
+        }
         this.daijishouDebugServiceTcpClients = new ArrayList();
     }
 
@@ -193,10 +197,17 @@ public final class DaijishouDebugService extends DaijishouService {
         Intrinsics.checkNotNull(application, "null cannot be cast to non-null type com.magneticchen.daijishou.DaijishouApplication");
         setLogger(((DaijishouApplication) application).getLogger());
         getLogger().info(this, "DaijishouDebugService onCreate  (" + Process.myPid() + CollectionUtils.COLON + Process.myTid() + ").");
-        Object systemService = getSystemService(NotificationManager.class);
+        Object systemService;
+        if (Build.VERSION.SDK_INT >= 23) {
+            systemService = getSystemService(NotificationManager.class);
+        } else {
+            systemService = getSystemService("notification");
+        }
         Intrinsics.checkNotNullExpressionValue(systemService, "getSystemService(...)");
         setNotificationManager((NotificationManager) systemService);
-        getNotificationManager().createNotificationChannel(this.notificationChannel);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && this.notificationChannel != null) {
+            getNotificationManager().createNotificationChannel(this.notificationChannel);
+        }
         BuildersKt.launch$default(this.scope, null, null, new AnonymousClass1(null), 3, null);
     }
 

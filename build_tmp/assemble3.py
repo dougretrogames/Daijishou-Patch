@@ -17,6 +17,8 @@ for n in zin.namelist():
         skip.add(n)
 
 repl = {'classes4.dex': zipfile.ZipFile(lib4_apk).read('classes.dex')}
+if os.path.exists(res_apk):
+    repl['AndroidManifest.xml'] = zipfile.ZipFile(res_apk).read('AndroidManifest.xml')
 # Note: resources.arsc from apktool changes resource IDs (breaking hardcoded R.id/drawable constants in dex)
 # Keep original byte-exact resources.arsc as required by HANDOFF.md §6.
 

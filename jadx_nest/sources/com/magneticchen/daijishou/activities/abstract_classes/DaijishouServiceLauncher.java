@@ -2,6 +2,7 @@ package com.magneticchen.daijishou.activities.abstract_classes;
 
 import android.content.Intent;
 import android.content.ServiceConnection;
+import android.os.Build;
 import androidx.core.app.NotificationCompat;
 import androidx.exifinterface.media.ExifInterface;
 import com.magneticchen.daijishou.DaijishouApplication;
@@ -99,7 +100,11 @@ public final class DaijishouServiceLauncher<T extends DaijishouService> {
             this.logger.info(this, "Trying to start Daijishou service(" + this.serviceClass + ") in foreground.");
             this.startedInForeground = true;
             intent.putExtra("startForeground", true);
-            this.application.startForegroundService(intent);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                this.application.startForegroundService(intent);
+            } else {
+                this.application.startService(intent);
+            }
             return true;
         } catch (Exception e) {
             this.logger.warn(this, ExceptionsKt.stackTraceToString(e));

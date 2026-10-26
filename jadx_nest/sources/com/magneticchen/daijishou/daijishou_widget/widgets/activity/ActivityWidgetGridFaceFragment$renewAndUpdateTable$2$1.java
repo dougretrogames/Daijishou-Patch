@@ -6,8 +6,8 @@ import androidx.core.graphics.ColorUtils;
 import com.magneticchen.daijishou.daijishou_library_db.EventEntity;
 import com.magneticchen.daijishou.repositories.DaijishouLibraryRepository;
 import com.magneticchen.daijishou.utils.Utils;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import kotlin.Metadata;
@@ -63,11 +63,10 @@ final class ActivityWidgetGridFaceFragment$renewAndUpdateTable$2$1 extends com.m
             int i2 = ((int) this.$widgetInstanceId) - 1;
             Date dateAtStartOfDay = Utils.INSTANCE.atStartOfDay(new Date());
             Intrinsics.checkNotNull(dateAtStartOfDay);
-            LocalDateTime localDateTimeDateToLocalDateTime = Utils.INSTANCE.dateToLocalDateTime(dateAtStartOfDay);
-            Utils utils = Utils.INSTANCE;
-            LocalDateTime localDateTimeMinusDays = localDateTimeDateToLocalDateTime.minusDays(25L);
-            Intrinsics.checkNotNullExpressionValue(localDateTimeMinusDays, "minusDays(...)");
-            Date dateLocalDateTimeToDate = utils.localDateTimeToDate(localDateTimeMinusDays);
+            Calendar cal = Calendar.getInstance();
+            cal.setTime(dateAtStartOfDay);
+            cal.add(Calendar.DAY_OF_YEAR, -25);
+            Date dateLocalDateTimeToDate = cal.getTime();
             Intrinsics.checkNotNull(dateLocalDateTimeToDate);
             ActivityWidgetGridFaceFragment activityWidgetGridFaceFragment = this.this$0;
             activityWidgetGridFaceFragment.recentEvents = DaijishouLibraryRepository.getRecentEventsByEventStatically$default(activityWidgetGridFaceFragment.getDaijishouLibraryRepository(), i2, dateLocalDateTimeToDate, 0, 4, null);
@@ -76,10 +75,10 @@ final class ActivityWidgetGridFaceFragment$renewAndUpdateTable$2$1 extends com.m
             this.this$0.recentEventsBitmapList.clear();
             int i3 = 0;
             for (int i4 = 0; i4 < 25; i4++) {
-                Utils utils2 = Utils.INSTANCE;
-                LocalDateTime localDateTimeMinusDays2 = localDateTimeDateToLocalDateTime.minusDays(i4);
-                Intrinsics.checkNotNullExpressionValue(localDateTimeMinusDays2, "minusDays(...)");
-                Date dateLocalDateTimeToDate2 = utils2.localDateTimeToDate(localDateTimeMinusDays2);
+                Calendar cal2 = Calendar.getInstance();
+                cal2.setTime(dateAtStartOfDay);
+                cal2.add(Calendar.DAY_OF_YEAR, -i4);
+                Date dateLocalDateTimeToDate2 = cal2.getTime();
                 ArrayList arrayList = new ArrayList();
                 while (true) {
                     List list = this.this$0.recentEvents;

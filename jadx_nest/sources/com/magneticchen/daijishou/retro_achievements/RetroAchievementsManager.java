@@ -23,6 +23,9 @@ import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.Retro
 import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserProfileEntity;
 import com.magneticchen.daijishou.utils.Utils;
 import com.magneticchen.daijishou.utils.UtilsKt;
+import android.os.Build;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -114,7 +117,14 @@ public final class RetroAchievementsManager {
     private SharedPreferenceStringLiveData retroAchievementsWebApiKeyPreferenceLiveData;
     private RetroCredentials retroCredentials;
     public RetroInterface retroInterface;
-    private static final DateTimeFormatter achievementEarnedTimestampFormatter = DateTimeFormatter.ofPattern("yyyy[-MM-dd[' 'HH:mm:ss]]");
+    private static DateTimeFormatter achievementEarnedTimestampFormatter;
+
+    private static DateTimeFormatter getAchievementEarnedTimestampFormatter() {
+        if (achievementEarnedTimestampFormatter == null && Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            achievementEarnedTimestampFormatter = DateTimeFormatter.ofPattern("yyyy[-MM-dd[' 'HH:mm:ss]]");
+        }
+        return achievementEarnedTimestampFormatter;
+    }
     private static final Regex genericNameRegex = Constants.INSTANCE.getToGenericNameRegex();
 
     /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.RetroAchievementsManager$getMyRetroAchievementsUsername$1, reason: invalid class name */
@@ -608,16 +618,29 @@ public final class RetroAchievementsManager {
     public final Date toRetroAchievementsDate(String str) {
         Intrinsics.checkNotNullParameter(str, "<this>");
         try {
-            TemporalAccessor best = achievementEarnedTimestampFormatter.parseBest(str, new RetroAchievementsManager$$ExternalSyntheticLambda0(), new RetroAchievementsManager$$ExternalSyntheticLambda1());
-            Intrinsics.checkNotNullExpressionValue(best, "parseBest(...)");
-            if (best instanceof LocalDateTime) {
-                return Date.from(((LocalDateTime) best).atZone(ZoneId.systemDefault()).toInstant());
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                DateTimeFormatter formatter = getAchievementEarnedTimestampFormatter();
+                if (formatter != null) {
+                    TemporalAccessor best = formatter.parseBest(str, new RetroAchievementsManager$$ExternalSyntheticLambda0(), new RetroAchievementsManager$$ExternalSyntheticLambda1());
+                    Intrinsics.checkNotNullExpressionValue(best, "parseBest(...)");
+                    if (best instanceof LocalDateTime) {
+                        return Date.from(((LocalDateTime) best).atZone(ZoneId.systemDefault()).toInstant());
+                    }
+                    if (best instanceof LocalDate) {
+                        return Date.from(((LocalDate) best).atStartOfDay(ZoneId.systemDefault()).toInstant());
+                    }
+                }
+                return null;
+            } else {
+                String[] formats = {"yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd", "yyyy"};
+                for (String fmt : formats) {
+                    try {
+                        return new SimpleDateFormat(fmt, Locale.US).parse(str);
+                    } catch (ParseException ignored) {}
+                }
+                return null;
             }
-            if (best instanceof LocalDate) {
-                return Date.from(((LocalDate) best).atStartOfDay(ZoneId.systemDefault()).toInstant());
-            }
-            return null;
-        } catch (DateTimeParseException e) {
+        } catch (Exception e) {
             System.out.println((Object) ("Failed to parse date: " + str + ", Error: " + e.getMessage()));
             return null;
         }

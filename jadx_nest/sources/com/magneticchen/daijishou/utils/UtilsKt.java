@@ -1,5 +1,8 @@
 package com.magneticchen.daijishou.utils;
 
+import android.os.Build;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
@@ -20,16 +23,26 @@ public final class UtilsKt {
     public static final Date toRetroAchievementsDate(String str) {
         Intrinsics.checkNotNullParameter(str, "<this>");
         try {
-            TemporalAccessor best = DateTimeFormatter.ofPattern("yyyy[-MM-dd[' 'HH:mm:ss]]").parseBest(str, new UtilsKt$$ExternalSyntheticLambda0(), new UtilsKt$$ExternalSyntheticLambda1());
-            Intrinsics.checkNotNullExpressionValue(best, "parseBest(...)");
-            if (best instanceof LocalDateTime) {
-                return Date.from(((LocalDateTime) best).atZone(ZoneId.systemDefault()).toInstant());
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                TemporalAccessor best = DateTimeFormatter.ofPattern("yyyy[-MM-dd[' 'HH:mm:ss]]").parseBest(str, new UtilsKt$$ExternalSyntheticLambda0(), new UtilsKt$$ExternalSyntheticLambda1());
+                Intrinsics.checkNotNullExpressionValue(best, "parseBest(...)");
+                if (best instanceof LocalDateTime) {
+                    return Date.from(((LocalDateTime) best).atZone(ZoneId.systemDefault()).toInstant());
+                }
+                if (best instanceof LocalDate) {
+                    return Date.from(((LocalDate) best).atStartOfDay(ZoneId.systemDefault()).toInstant());
+                }
+                return null;
+            } else {
+                String[] formats = {"yyyy-MM-dd HH:mm:ss", "yyyy-MM-dd", "yyyy"};
+                for (String fmt : formats) {
+                    try {
+                        return new SimpleDateFormat(fmt, Locale.US).parse(str);
+                    } catch (ParseException ignored) {}
+                }
+                return null;
             }
-            if (best instanceof LocalDate) {
-                return Date.from(((LocalDate) best).atStartOfDay(ZoneId.systemDefault()).toInstant());
-            }
-            return null;
-        } catch (DateTimeParseException e) {
+        } catch (Exception e) {
             System.out.println((Object) ("Failed to parse date: " + str + ", Error: " + e.getMessage()));
             return null;
         }

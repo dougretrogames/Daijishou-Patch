@@ -22,13 +22,16 @@ public final class RetroAchievementsConfiguration {
     public static final int USER_PROFILE_EXPIRE_DURATION_MS = 480000;
     public static final String WEB_API_KEY_PREFERENCE_STRING = "web_api_key";
     public static final RetroAchievementsConfiguration INSTANCE = new RetroAchievementsConfiguration();
-    private static final DateTimeFormatter achievementEarnedTimestampFormatter = DateTimeFormatter.ofPattern("yyyy[-MM-dd[' 'HH:mm:ss]]");
+    private static DateTimeFormatter achievementEarnedTimestampFormatter;
     private static final Regex genericNameRegex = Constants.INSTANCE.getToGenericNameRegex();
 
     private RetroAchievementsConfiguration() {
     }
 
     public final DateTimeFormatter getAchievementEarnedTimestampFormatter() {
+        if (achievementEarnedTimestampFormatter == null && android.os.Build.VERSION.SDK_INT >= 26) {
+            achievementEarnedTimestampFormatter = DateTimeFormatter.ofPattern("yyyy[-MM-dd[' 'HH:mm:ss]]");
+        }
         return achievementEarnedTimestampFormatter;
     }
 

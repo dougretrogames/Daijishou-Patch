@@ -4,6 +4,7 @@ import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.os.Process;
@@ -119,23 +120,20 @@ public final class DaijishouMainService extends DaijishouService {
         if (logger != null) {
             logger.info(this, "Daijishou main service created (" + Process.myPid() + CollectionUtils.COLON + Process.myTid() + ").");
         }
-        this.notificationChannel = new NotificationChannel("daijishou", getString(R.string.app_name), 1);
-        Object systemService = getSystemService(NotificationManager.class);
-        Intrinsics.checkNotNullExpressionValue(systemService, "getSystemService(...)");
-        NotificationManager notificationManager = (NotificationManager) systemService;
-        this.notificationManager = notificationManager;
-        NotificationChannel notificationChannel = null;
-        if (notificationManager == null) {
-            Intrinsics.throwUninitializedPropertyAccessException("notificationManager");
-            notificationManager = null;
-        }
-        NotificationChannel notificationChannel2 = this.notificationChannel;
-        if (notificationChannel2 == null) {
-            Intrinsics.throwUninitializedPropertyAccessException("notificationChannel");
+        NotificationManager notificationManager;
+        if (Build.VERSION.SDK_INT >= 23) {
+            notificationManager = (NotificationManager) getSystemService(NotificationManager.class);
         } else {
-            notificationChannel = notificationChannel2;
+            notificationManager = (NotificationManager) getSystemService("notification");
         }
-        notificationManager.createNotificationChannel(notificationChannel);
+        this.notificationManager = notificationManager;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            NotificationChannel notificationChannel = new NotificationChannel("daijishou", getString(R.string.app_name), 1);
+            this.notificationChannel = notificationChannel;
+            if (notificationManager != null) {
+                notificationManager.createNotificationChannel(notificationChannel);
+            }
+        }
     }
 
     @Override // android.app.Service
@@ -180,7 +178,12 @@ public final class DaijishouMainService extends DaijishouService {
 
     private final void startForeground() {
         try {
-            Notification notificationBuild = new Notification.Builder(this, "daijishou").setContentTitle(getString(R.string.daijishou_service_notification_content_title)).setContentText(getString(R.string.daijishou_service_notification_content_text)).setSmallIcon(R.drawable.ic_daijishou_notification).build();
+            Notification notificationBuild;
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                notificationBuild = new Notification.Builder(this, "daijishou").setContentTitle(getString(R.string.daijishou_service_notification_content_title)).setContentText(getString(R.string.daijishou_service_notification_content_text)).setSmallIcon(R.drawable.ic_daijishou_notification).build();
+            } else {
+                notificationBuild = new Notification.Builder(this).setContentTitle(getString(R.string.daijishou_service_notification_content_title)).setContentText(getString(R.string.daijishou_service_notification_content_text)).setSmallIcon(R.drawable.ic_daijishou_notification).build();
+            }
             Intrinsics.checkNotNullExpressionValue(notificationBuild, "build(...)");
             startForeground(1, notificationBuild);
             this.isServiceInForeground = true;
@@ -197,7 +200,11 @@ public final class DaijishouMainService extends DaijishouService {
         if (logger != null) {
             logger.info(this, "Daijishou main service stopForeground.");
         }
-        stopForeground(2);
+        if (Build.VERSION.SDK_INT >= 24) {
+            stopForeground(2);
+        } else {
+            stopForeground(true);
+        }
         NotificationManager notificationManager = this.notificationManager;
         if (notificationManager == null) {
             Intrinsics.throwUninitializedPropertyAccessException("notificationManager");

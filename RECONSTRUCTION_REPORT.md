@@ -1,7 +1,7 @@
 # Daijishou 1.5.0 — Reconstrução de código e relatório funcional
 
 Alvo: `Daijishou v1.5.0.apk` (`com.magneticchen.daijishou`, versionCode 416, versionName 1.5.0,
-minSdk 26, targetSdk 35, compileSdk 35).
+minSdk 24 (original 26), targetSdk 35, compileSdk 35).
 
 O trabalho tem duas partes: (1) **análise estática** — leitura do artefato de referência com JADX +
 baksmali, manutenção da árvore Java, recompilação e remontagem do APK; (2) **validação em runtime** —

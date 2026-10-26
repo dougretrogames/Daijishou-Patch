@@ -1,6 +1,7 @@
 package com.magneticchen.daijishou.daijishou_debug_service;
 
 import android.content.Intent;
+import android.os.Build;
 import com.magneticchen.daijishou.DaijishouApplication;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
@@ -21,7 +22,12 @@ public final class DaijishouDebugServiceDaemon {
     }
 
     public final void start() {
-        this.application.startForegroundService(new Intent(this.application.getBaseContext(), (Class<?>) DaijishouDebugService.class));
+        Intent intent = new Intent(this.application.getBaseContext(), (Class<?>) DaijishouDebugService.class);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            this.application.startForegroundService(intent);
+        } else {
+            this.application.startService(intent);
+        }
     }
 
     public final void stop() {

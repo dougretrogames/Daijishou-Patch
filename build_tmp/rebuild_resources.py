@@ -34,7 +34,22 @@ for loc in locales:
     shutil.copy2(src_file, dst_file)
     print(f"Synced {loc}/strings.xml")
 
-# 3. Build apktool_res.apk
+# 3. Ensure API 24 compatibility for adaptive icons and apktool.yml
+old_mipmap = os.path.join(res_dir, 'res', 'mipmap-anydpi')
+v26_mipmap = os.path.join(res_dir, 'res', 'mipmap-anydpi-v26')
+if os.path.exists(old_mipmap) and not os.path.exists(v26_mipmap):
+    shutil.move(old_mipmap, v26_mipmap)
+    print("Moved mipmap-anydpi to mipmap-anydpi-v26")
+
+yml_path = os.path.join(res_dir, 'apktool.yml')
+if os.path.exists(yml_path):
+    with open(yml_path, 'r', encoding='utf-8') as f:
+        yml = f.read()
+    yml = yml.replace("minSdkVersion: '26'", "minSdkVersion: '24'").replace("minSdkVersion: 26", "minSdkVersion: 24")
+    with open(yml_path, 'w', encoding='utf-8') as f:
+        f.write(yml)
+
+# 4. Build apktool_res.apk
 print("Building resources with apktool...")
 p_build = subprocess.run([jd, '-jar', apktool, 'b', res_dir, '-o', out_apk], capture_output=True, text=True)
 if p_build.returncode != 0:
