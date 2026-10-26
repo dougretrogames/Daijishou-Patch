@@ -53,6 +53,7 @@ public final class VideoAndSoundsSettingsNavFragment extends DaijishouPreference
 
             androidx.preference.SwitchPreferenceCompat playMusicPref = new androidx.preference.SwitchPreferenceCompat(requireContext());
             playMusicPref.setKey(com.magneticchen.daijishou.audio.MusicManager.PREF_KEY_PLAY_MUSIC);
+            playMusicPref.setIcon(R.drawable.ic_baseline_music_note_24);
             playMusicPref.setTitle(com.magneticchen.daijishou.audio.MusicStrings.getPlayMusicTitle(requireContext()));
             playMusicPref.setSummary(com.magneticchen.daijishou.audio.MusicStrings.getPlayMusicSummary(requireContext()));
             playMusicPref.setDefaultValue(true);
