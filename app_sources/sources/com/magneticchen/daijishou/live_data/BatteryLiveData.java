@@ -34,7 +34,10 @@ public final class BatteryLiveData extends LiveData<BatteryInfo> {
         if (this.batteryReceiver == null) {
             this.batteryReceiver = new BatteryReceiver();
         }
-        this.context.registerReceiver(this.batteryReceiver, new IntentFilter("android.intent.action.BATTERY_CHANGED"));
+        Intent intent = this.context.registerReceiver(this.batteryReceiver, new IntentFilter("android.intent.action.BATTERY_CHANGED"));
+        if (intent != null) {
+            setBatteryInfo(intent);
+        }
     }
 
     @Override // androidx.lifecycle.LiveData

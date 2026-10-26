@@ -72,7 +72,13 @@ public final class BatteryInfo {
     }
 
     public final int getPercent() {
-        return (int) ((this.level / this.scale) * 100);
+        if (this.scale <= 0) {
+            return this.level > 0 ? this.level : 0;
+        }
+        if (this.level < 0) {
+            return 0;
+        }
+        return Math.min(100, Math.max(0, Math.round(((float) this.level / (float) this.scale) * 100.0f)));
     }
 
     public String toString() {
