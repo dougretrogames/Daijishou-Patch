@@ -613,3 +613,18 @@ Depois: recompilar → D8 → baksmali → `run_pipeline.ps1` → `rebuild_app.p
   - Fluxo de backup e sincronização (diálogo de topo, fragment de configurações, backup Google Drive e exportação de plataforma para Android Chooser) (`test_backup_flow.py`).
   - Todos os 11/11 estágios executados sequencialmente com 100% de status PASS (0 crashes, 0 UOE não-Kotlin, 0 missing refs, 0 catch-casts).
   - Correção cirúrgica de descompilação de corrotina em `RetroAchievementsManager.java:refreshRetroAchievementsGameListByConsoleIdIfExpired`.
+
+
+## P3 — Higienização de Comentários, Localização e Metadados (100% CONCLUÍDO)
+
+- **Remoção de referências do JADX em comentários**:
+  - Varredura de 16.914 arquivos Java; 60.576 ocorrências em comentários removidas (0 restantes).
+  - Ajuste em `build_class_map.py` com regex resiliente `/* (?:JADX\s+)?INFO:`.
+- **Tradução completa da interface para 10 idiomas + pt-BR**:
+  - Mapeamento e tradução integral de 148 strings ausentes das novas funcionalidades da v1.5.0 (Extensões, Widgets, Scraper, Resgate, Ciclo de vida).
+  - Idiomas com 100% de cobertura (971/971 strings): `pt-BR`, `pt`, `es`, `fr`, `de`, `it`, `ja`, `ko`, `zh-rTW`, `zh`, `hi`.
+  - Preservação estrita de termos técnicos e entidades do sistema (`Daemon`, `RetroAchievements`, `Web API Key`, `system id`, `Scraper`, `Widget`, `JavaScript`, `eval`, `Jsoup`, `Daijishō`, `DaiRescue`, `Uptime`).
+- **Metadados do APK**:
+  - `kotlin-tooling-metadata.json` atualizado para `"buildSystemVersion": "8.14.6"`.
+- **Validação E2E**:
+  - Todos os gates estáticos verdes e matriz de testes na AVD aprovada com 0 erros.

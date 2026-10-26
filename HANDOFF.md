@@ -403,4 +403,6 @@ guarda do compilador — **não** implemente; apenas mantenha a assinatura.
 - [x] `check_refs` 0/0, `stub_compare` 0/0, `scan_catch_cast` 0.
 - [x] Matriz de AVD verde (PID ativo, 0 crashes em `AndroidRuntime:E`).
 - [x] P1 — Modo de build `-NoOrig` automatizado e diffs estáticos adicionais (CONCLUÍDO).
-- [ ] P2 — Expansão da matriz de testes com fluxos externos.
+- [x] P2 — Expansão da matriz de testes com fluxos externos e validação master suite 100% verde (CONCLUÍDO).
+- [x] Higienização completa de referências de decompilador em comentários (CONCLUÍDO).
+- [x] Tradução completa de interface para 10 idiomas + pt-BR com termos técnicos preservados (CONCLUÍDO).
