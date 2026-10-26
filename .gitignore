@@ -1,30 +1,35 @@
-# artefatos de build (scripts ficam versionados)
+# artefatos de build (scripts e dependências essenciais versionados)
 build_tmp/*
 !build_tmp/*.py
 !build_tmp/*.ps1
 !build_tmp/*.md
+!build_tmp/lib4.apk
+!build_tmp/debug.keystore
 
 # compilação e dex
 nest_classes*/
 app_dex*/
 *.apk
+!build_tmp/lib4.apk
 *.idsig
 *.dex
 *.jar
+!reconstructed/jars_compile/*.jar
 *.class
 *.log
 *.stdout
 *.args
 nest_errors*.txt
 
-# árvores descompactadas (regeneráveis a partir do APK)
+# árvores descompactadas (apenas jars_compile é versionado)
 jadx-1.5.6/
 jadx_noanon/
 smali/
 smali_classes*/
 smali_orig_app/
 dex/
-reconstructed/
+reconstructed/*
+!reconstructed/jars_compile/
 snapshots/
 tools/
 try_cfr/

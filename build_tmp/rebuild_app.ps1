@@ -1,10 +1,37 @@
 $ErrorActionPreference = 'Continue'
-$jd   = 'C:\Users\Douglas\.jdks\jdk-21.0.12.1+1\bin\java.exe'
-$apk  = 'C:\Users\Douglas\AppData\Local\apk-editor-studio\apktool\apktool_2.11.1.jar'
-$bt   = 'C:\Users\Douglas\AppData\Local\Android\Sdk\build-tools\35.0.0'
-$base = 'C:\Users\Douglas\Documents\Daijishou'
+$base = (Get-Item $PSScriptRoot).Parent.FullName
 $tmp  = Join-Path $base 'build_tmp'
 $d    = Join-Path $tmp 'smali_build7'
+
+# Detect Java
+$jd = if ($env:JAVA_HOME -and (Test-Path "$env:JAVA_HOME\bin\java.exe")) {
+    "$env:JAVA_HOME\bin\java.exe"
+} elseif (Test-Path 'C:\Users\Douglas\.jdks\jdk-21.0.12.1+1\bin\java.exe') {
+    'C:\Users\Douglas\.jdks\jdk-21.0.12.1+1\bin\java.exe'
+} else {
+    'java.exe'
+}
+
+# Detect apktool
+$apk = if (Test-Path (Join-Path $base 'tools\apktool_2.11.1.jar')) {
+    Join-Path $base 'tools\apktool_2.11.1.jar'
+} elseif (Test-Path 'C:\Users\Douglas\AppData\Local\apk-editor-studio\apktool\apktool_2.11.1.jar') {
+    'C:\Users\Douglas\AppData\Local\apk-editor-studio\apktool\apktool_2.11.1.jar'
+} else {
+    (Get-ChildItem (Join-Path $base 'tools') -Filter 'apktool*.jar' -ErrorAction SilentlyContinue | Select-Object -First 1).FullName
+}
+
+# Detect Android SDK Build-Tools
+$android_root = if ($env:ANDROID_HOME) { $env:ANDROID_HOME }
+                elseif ($env:ANDROID_SDK_ROOT) { $env:ANDROID_SDK_ROOT }
+                elseif (Test-Path "$env:LOCALAPPDATA\Android\Sdk") { "$env:LOCALAPPDATA\Android\Sdk" }
+                else { "C:\Android\android-sdk" }
+
+$bt = Join-Path $android_root 'build-tools\35.0.0'
+if (-not (Test-Path $bt)) {
+    $bts = Get-ChildItem (Join-Path $android_root 'build-tools') -Directory -ErrorAction SilentlyContinue | Sort-Object Name -Descending
+    if ($bts) { $bt = $bts[0].FullName }
+}
 
 Remove-Item -Recurse -Force $d -ErrorAction SilentlyContinue
 New-Item -ItemType Directory -Force (Join-Path $d 'smali') | Out-Null

@@ -1,0 +1,125 @@
+name: Build Debug APK
+
+on:
+  push:
+    branches:
+      - master
+      - Daijishou-Backup
+  pull_request:
+    branches:
+      - master
+  workflow_dispatch:
+
+concurrency:
+  group: debug-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-debug:
+    name: Build & Package Debug APK
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Set up Android SDK
+        run: |
+          $sdk = if ($env:ANDROID_HOME) { $env:ANDROID_HOME } else { "C:\Android\android-sdk" }
+          $sdkmanager = Join-Path $sdk "cmdline-tools\latest\bin\sdkmanager.bat"
+          if (-not (Test-Path $sdkmanager)) {
+            $sdkmanager = (Get-ChildItem -Path (Join-Path $sdk "cmdline-tools") -Filter "sdkmanager.bat" -Recurse | Select-Object -First 1).FullName
+          }
+          if ($sdkmanager -and (Test-Path $sdkmanager)) {
+            Write-Host "Ensuring Android SDK 35 and Build-Tools 35.0.0..."
+            & $sdkmanager --install "platforms;android-35" "build-tools;35.0.0"
+          }
+
+      - name: Download Base Reference APK & Tools
+        run: |
+          if (-not (Test-Path "Daijishou v1.5.0.apk")) {
+            Write-Host "Downloading upstream Daijishou v1.5.0 reference APK..."
+            Invoke-WebRequest -Uri "https://github.com/TapiocaFox/Daijishou/releases/download/v1.5.0/416.apk" -OutFile "Daijishou v1.5.0.apk"
+          }
+          if (-not (Test-Path "tools")) { New-Item -ItemType Directory -Force "tools" | Out-Null }
+          if (-not (Test-Path "tools\apktool_2.11.1.jar")) {
+            Write-Host "Downloading apktool 2.11.1..."
+            Invoke-WebRequest -Uri "https://github.com/iBotPeaches/Apktool/releases/download/v2.11.1/apktool_2.11.1.jar" -OutFile "tools\apktool_2.11.1.jar"
+          }
+          if (-not (Test-Path "tools\baksmali-2.5.2.jar")) {
+            Write-Host "Downloading baksmali 2.5.2..."
+            Invoke-WebRequest -Uri "https://bitbucket.org/JesusFreke/smali/downloads/baksmali-2.5.2.jar" -OutFile "tools\baksmali-2.5.2.jar"
+          }
+
+      - name: Execute Full Build Pipeline (No-Orig)
+        run: |
+          powershell -ExecutionPolicy Bypass -File build_tmp\build_cycle.ps1 -NoOrig
+
+      - name: Run Quality & Fidelity Gates
+        run: |
+          python -I build_tmp\verify_no_orig.py
+          python -I build_tmp\stub_compare.py
+          python -I build_tmp\scan_catch_cast.py
+          python -I build_tmp\gap_inventory.py
+
+      - name: Package Debug Artifact (ZIP with Commit Number)
+        id: package
+        run: |
+          $commitNum = git rev-list --count HEAD
+          $shortSha  = git rev-parse --short HEAD
+          $stageDir  = "build_out_debug"
+          New-Item -ItemType Directory -Force $stageDir | Out-Null
+
+          $apkSrc  = "Daijishou v1.5.0-reconstructed.apk"
+          $apkName = "Daijishou-1.5.0-debug-c${commitNum}-${shortSha}.apk"
+          Copy-Item $apkSrc (Join-Path $stageDir $apkName) -Force
+
+          $hash = (Get-FileHash -Path $apkSrc -Algorithm SHA256).Hash
+          $buildInfo = @"
+          ==================================================
+          Daijishou 1.5.0 Reconstructed Build (Debug)
+          ==================================================
+          Commit Number : $commitNum
+          Commit SHA    : $shortSha
+          Full SHA      : $($env:GITHUB_SHA)
+          Branch/Ref    : $($env:GITHUB_REF_NAME)
+          APK Output    : $apkName
+          APK Size      : $((Get-Item $apkSrc).Length) bytes
+          SHA256 Checksum:
+          $hash  $apkName
+          Build Date    : $((Get-Date).ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss")) UTC
+          Pipeline Mode : No-Orig Strict (100% autonomous Java)
+          ==================================================
+          "@
+          Set-Content -Path (Join-Path $stageDir "BUILD_INFO.txt") -Value $buildInfo
+
+          # Run quick audit summary into zip
+          python -I build_tmp\audit_translations.py > (Join-Path $stageDir "TRANSLATION_AUDIT.txt")
+
+          $zipName = "Daijishou-Debug-c${commitNum}-${shortSha}.zip"
+          Compress-Archive -Path "$stageDir\*" -DestinationPath $zipName -Force
+
+          Write-Host "Created ZIP: $zipName"
+          echo "commit_num=$commitNum" >> $env:GITHUB_OUTPUT
+          echo "short_sha=$shortSha" >> $env:GITHUB_OUTPUT
+          echo "zip_name=$zipName" >> $env:GITHUB_OUTPUT
+
+      - name: Upload Debug ZIP Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.package.outputs.zip_name }}
+          path: ${{ steps.package.outputs.zip_name }}
+          retention-days: 30

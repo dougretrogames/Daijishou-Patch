@@ -1,10 +1,11 @@
 import os, zipfile, json
 
-orig = r'C:\Users\Douglas\Documents\Daijishou\Daijishou v1.5.0.apk'
-out = r'C:\Users\Douglas\Documents\Daijishou\build_tmp\unsigned3.apk'
-lib4_apk = r'C:\Users\Douglas\Documents\Daijishou\build_tmp\lib4.apk'
-appdex = r'C:\Users\Douglas\Documents\Daijishou\build_tmp\app7.apk'
-res_apk = r'C:\Users\Douglas\Documents\Daijishou\build_tmp\apktool_res.apk'
+base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+orig = os.path.join(base, 'Daijishou v1.5.0.apk')
+out = os.path.join(base, 'build_tmp', 'unsigned3.apk')
+lib4_apk = os.path.join(base, 'build_tmp', 'lib4.apk')
+appdex = os.path.join(base, 'build_tmp', 'app7.apk')
+res_apk = os.path.join(base, 'build_tmp', 'apktool_res.apk')
 appdex_entry = 'classes.dex'
 
 zin = zipfile.ZipFile(orig)
