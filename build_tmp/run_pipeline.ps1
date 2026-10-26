@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $bt = $PSScriptRoot
 Set-Location $bt
-Remove-Item -Recurse -Force smali_recon
+Remove-Item -Recurse -Force smali_recon -ErrorAction SilentlyContinue
 Copy-Item smali_compiled smali_recon -Recurse
 python -I build_member_map.py | Select-Object -First 4
 python -I patch_stubs.py | Select-Object -First 4
