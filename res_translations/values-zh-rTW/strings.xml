@@ -1089,4 +1089,7 @@
     <string name="widgets_page_subtitle_implementation">Widgets 頁面副標題實作</string>
     <string name="widgets_page_subtitle_implementation_summary">自訂 Widgets 頁面中的副標題。</string>
     <string name="widgets_page_subtitle_implementation_title">Widgets 頁面副標題</string>
+    <string name="music_settings_title">音樂</string>
+    <string name="play_music_title">播放音樂</string>
+    <string name="play_music_summary">播放ROM所在目錄中'music'資料夾下的背景音樂。</string>
 </resources>

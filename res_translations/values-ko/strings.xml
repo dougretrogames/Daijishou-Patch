@@ -1089,4 +1089,7 @@
     <string name="widgets_page_subtitle_implementation">위젯 페이지 부제목 구현</string>
     <string name="widgets_page_subtitle_implementation_summary">위젯 페이지의 부제목을 맞춤설정합니다.</string>
     <string name="widgets_page_subtitle_implementation_title">위젯 페이지 부제목</string>
+    <string name="music_settings_title">음악</string>
+    <string name="play_music_title">음악 재생</string>
+    <string name="play_music_summary">ROM이 있는 위치의 'music' 폴더에 있는 배경 음악을 재생합니다。</string>
 </resources>

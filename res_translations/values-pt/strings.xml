@@ -1006,4 +1006,7 @@
     <string name="icon_content_description">Ícone do diálogo</string>
     <string name="searchview_navigation_content_description">Voltar</string>
     <string name="searchview_clear_text_content_description">Limpar texto</string>
+    <string name="music_settings_title">Músicas</string>
+    <string name="play_music_title">Reproduzir músicas</string>
+    <string name="play_music_summary">Reproduzir músicas de fundo encontradas na pasta 'music' de onde as roms estão localizadas.</string>
 </resources>

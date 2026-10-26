@@ -1089,4 +1089,7 @@
     <string name="widgets_page_subtitle_implementation">Widgets पृष्ठ उपशीर्षक implementation</string>
     <string name="widgets_page_subtitle_implementation_summary">Widgets पृष्ठ में उपशीर्षक को अनुकूलित करें।</string>
     <string name="widgets_page_subtitle_implementation_title">Widgets पृष्ठ उपशीर्षक</string>
+    <string name="music_settings_title">संगीत</string>
+    <string name="play_music_title">संगीत चलाएं</string>
+    <string name="play_music_summary">जहां ROM स्थित हैं वहां 'music' फ़ोल्डर में मिलने वाला बैकग्राउंड संगीत चलाएं।</string>
 </resources>

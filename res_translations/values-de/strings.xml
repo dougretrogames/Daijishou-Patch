@@ -1089,4 +1089,7 @@
     <string name="widgets_page_subtitle_implementation">Implementierung des Untertitels der Widgets-Seite</string>
     <string name="widgets_page_subtitle_implementation_summary">Passen Sie den Untertitel auf der Widgets-Seite an.</string>
     <string name="widgets_page_subtitle_implementation_title">Untertitel der Widgets-Seite</string>
+    <string name="music_settings_title">Musik</string>
+    <string name="play_music_title">Musik abspielen</string>
+    <string name="play_music_summary">Hintergrundmusik aus dem Ordner 'music' am Speicherort der ROMs abspielen.</string>
 </resources>

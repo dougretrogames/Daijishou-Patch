@@ -1136,4 +1136,7 @@
     <string name="widgets_page_subtitle_implementation_title">Widgets page subtitle</string>
     <string name="yes">Yes</string>
     <string name="yes_delete_all">Yes delete all</string>
+    <string name="music_settings_title">Music</string>
+    <string name="play_music_title">Play music</string>
+    <string name="play_music_summary">Play background music found in the 'music' folder where the ROMs are located.</string>
 </resources>

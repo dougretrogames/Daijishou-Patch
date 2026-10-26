@@ -1437,3 +1437,5 @@
 "app_sources/sources/com/magneticchen/daijishou/view_pager_fragments/WidgetsViewPagerFragment.java"
 "app_sources/sources/com/magneticchen/daijishou/view_pager_selected_parameters/HighlightPageSelectedParameters.java"
 "app_sources/sources/com/magneticchen/daijishou/view_pager_selected_parameters/LibraryPageSelectedParameters.java"
+"app_sources/sources/com/magneticchen/daijishou/audio/MusicManager.java"
+"app_sources/sources/com/magneticchen/daijishou/audio/MusicStrings.java"

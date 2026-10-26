@@ -44,6 +44,32 @@ public final class VideoAndSoundsSettingsNavFragment extends DaijishouPreference
     @Override // androidx.preference.PreferenceFragmentCompat
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         setPreferencesFromResource(R.xml.video_and_sounds_preferences, rootKey);
+
+        androidx.preference.PreferenceScreen screen = getPreferenceScreen();
+        if (screen != null) {
+            androidx.preference.PreferenceCategory musicCategory = new androidx.preference.PreferenceCategory(requireContext());
+            musicCategory.setTitle(com.magneticchen.daijishou.audio.MusicStrings.getCategoryTitle(requireContext()));
+            screen.addPreference(musicCategory);
+
+            androidx.preference.SwitchPreferenceCompat playMusicPref = new androidx.preference.SwitchPreferenceCompat(requireContext());
+            playMusicPref.setKey(com.magneticchen.daijishou.audio.MusicManager.PREF_KEY_PLAY_MUSIC);
+            playMusicPref.setTitle(com.magneticchen.daijishou.audio.MusicStrings.getPlayMusicTitle(requireContext()));
+            playMusicPref.setSummary(com.magneticchen.daijishou.audio.MusicStrings.getPlayMusicSummary(requireContext()));
+            playMusicPref.setDefaultValue(true);
+            playMusicPref.setOnPreferenceChangeListener(new androidx.preference.Preference.OnPreferenceChangeListener() {
+                @Override
+                public boolean onPreferenceChange(androidx.preference.Preference preference, Object newValue) {
+                    boolean enabled = Boolean.TRUE.equals(newValue);
+                    if (enabled) {
+                        com.magneticchen.daijishou.audio.MusicManager.getInstance().play(requireContext());
+                    } else {
+                        com.magneticchen.daijishou.audio.MusicManager.getInstance().stop();
+                    }
+                    return true;
+                }
+            });
+            musicCategory.addPreference(playMusicPref);
+        }
     }
 
     @Override // com.magneticchen.daijishou.abstract_fragment_classes.DaijishouPreferenceFragmentCompat, androidx.preference.PreferenceFragmentCompat, androidx.fragment.app.Fragment

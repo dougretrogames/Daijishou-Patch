@@ -1532,6 +1532,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         Intrinsics.checkNotNull(application, "null cannot be cast to non-null type com.magneticchen.daijishou.DaijishouApplication");
         ((DaijishouApplication) application).getGoogleDrive().unbindActivity();
         destroyClock();
+        com.magneticchen.daijishou.audio.MusicManager.getInstance().stop();
     }
 
     /* INFO: Access modifiers changed from: private */
@@ -2116,11 +2117,13 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         Application application2 = getApplication();
         Intrinsics.checkNotNull(application2, "null cannot be cast to non-null type com.magneticchen.daijishou.DaijishouApplication");
         ((DaijishouApplication) application2).setMainActivity(this);
+        com.magneticchen.daijishou.audio.MusicManager.getInstance().resume(this);
     }
 
     @Override // androidx.fragment.app.FragmentActivity, android.app.Activity
     public void onPause() {
         super.onPause();
+        com.magneticchen.daijishou.audio.MusicManager.getInstance().pause();
         Application application = getApplication();
         Intrinsics.checkNotNull(application, "null cannot be cast to non-null type com.magneticchen.daijishou.DaijishouApplication");
         ((DaijishouApplication) application).setMainActivity(null);

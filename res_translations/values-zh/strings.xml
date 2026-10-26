@@ -1091,4 +1091,7 @@
     <string name="template_percent">百分之 %1$d。</string>
     <string name="v7_preference_off">已关闭</string>
     <string name="v7_preference_on">已开启</string>
+    <string name="music_settings_title">音乐</string>
+    <string name="play_music_title">播放音乐</string>
+    <string name="play_music_summary">播放ROM所在目录中'music'文件夹下的背景音乐。</string>
 </resources>

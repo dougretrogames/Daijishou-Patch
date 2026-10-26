@@ -1089,4 +1089,7 @@
     <string name="widgets_page_subtitle_implementation">Implémentation du sous-titre de la page des Widgets</string>
     <string name="widgets_page_subtitle_implementation_summary">Personnalisez le sous-titre sur la page des Widgets.</string>
     <string name="widgets_page_subtitle_implementation_title">Sous-titre de la page des Widgets</string>
+    <string name="music_settings_title">Musique</string>
+    <string name="play_music_title">Lire la musique</string>
+    <string name="play_music_summary">Lire la musique de fond trouvée dans le dossier 'music' où se trouvent les ROM.</string>
 </resources>

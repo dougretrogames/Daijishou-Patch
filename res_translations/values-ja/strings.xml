@@ -1089,4 +1089,7 @@
     <string name="widgets_page_subtitle_implementation">Widgetsページのサブタイトルの実装</string>
     <string name="widgets_page_subtitle_implementation_summary">Widgetsページのサブタイトルをカスタマイズします。</string>
     <string name="widgets_page_subtitle_implementation_title">Widgetsページのサブタイトル</string>
+    <string name="music_settings_title">音楽</string>
+    <string name="play_music_title">音楽を再生</string>
+    <string name="play_music_summary">ROMがある場所の「music」フォルダー内のBGMを再生します。</string>
 </resources>
