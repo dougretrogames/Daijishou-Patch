@@ -1,6 +1,6 @@
 import os, re, json, glob
 
-BASE = r'C:\Users\Douglas\Documents\Daijishou'
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RECON = os.path.join(BASE, 'build_tmp', 'smali_recon')
 ORIG = os.path.join(BASE, 'smali_orig_app')
 APP = 'com/magneticchen/daijishou'

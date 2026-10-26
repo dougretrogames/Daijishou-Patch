@@ -1,10 +1,18 @@
 import os, subprocess, shutil, zipfile
 
-jd = r'C:\Users\Douglas\.jdks\jdk-21.0.12.1+1\bin\java.exe'
-apktool = r'tools\apktool_2.11.1.jar'
-orig_apk = 'Daijishou v1.5.0.apk'
-res_dir = 'build_tmp/apktool_res'
-out_apk = 'build_tmp/apktool_res.apk'
+if os.environ.get('JAVA_HOME') and os.path.exists(os.path.join(os.environ['JAVA_HOME'], 'bin', 'java.exe')):
+    jd = os.path.join(os.environ['JAVA_HOME'], 'bin', 'java.exe')
+elif os.path.exists(r'C:\Users\Douglas\.jdks\jdk-21.0.12.1+1\bin\java.exe'):
+    jd = r'C:\Users\Douglas\.jdks\jdk-21.0.12.1+1\bin\java.exe'
+else:
+    jd = 'java'
+base = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+apktool = os.path.join(base, 'tools', 'apktool_2.11.1.jar')
+if not os.path.exists(apktool):
+    apktool = 'apktool'
+orig_apk = os.path.join(base, 'Daijishou v1.5.0.apk')
+res_dir = os.path.join(base, 'build_tmp', 'apktool_res')
+out_apk = os.path.join(base, 'build_tmp', 'apktool_res.apk')
 
 # 1. Decode resources if not already decoded
 if not os.path.exists(res_dir):
@@ -15,9 +23,9 @@ if not os.path.exists(res_dir):
         raise RuntimeError("apktool decode failed")
     print("Decode complete.")
 
-# 2. Copy modified strings.xml from jadx-1.5.6/resources/res/ to apktool_res/res/
+# 2. Copy modified strings.xml to apktool_res/res/
 print("Syncing translated strings.xml...")
-src_res = os.path.join('jadx-1.5.6', 'resources', 'res')
+src_res = os.path.join(base, 'res_translations') if os.path.exists(os.path.join(base, 'res_translations')) else os.path.join(base, 'jadx-1.5.6', 'resources', 'res')
 dst_res = os.path.join(res_dir, 'res')
 
 locales = [

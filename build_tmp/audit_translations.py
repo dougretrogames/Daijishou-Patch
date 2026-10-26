@@ -4,7 +4,8 @@ import xml.etree.ElementTree as ET
 # Ensure stdout is utf-8
 sys.stdout.reconfigure(encoding='utf-8')
 
-tree = ET.parse('jadx-1.5.6/resources/res/values/strings.xml')
+base_dir = 'res_translations' if os.path.exists('res_translations') else 'jadx-1.5.6/resources/res'
+tree = ET.parse(os.path.join(base_dir, 'values', 'strings.xml'))
 all_items = {e.get('name'): (e.text or '') for e in tree.getroot().findall('string') if e.get('name')}
 
 lib_prefixes = (
@@ -23,7 +24,7 @@ print(f"Library strings: {len(lib_keys)}")
 print(f"App-specific strings: {len(app_keys)}")
 
 locales = []
-for p in sorted(glob.glob('jadx-1.5.6/resources/res/values-*/strings.xml')):
+for p in sorted(glob.glob(os.path.join(base_dir, 'values-*/strings.xml'))):
     dirname = os.path.basename(os.path.dirname(p))
     t = ET.parse(p)
     loc_keys = set(e.get('name') for e in t.getroot().findall('string') if e.get('name'))

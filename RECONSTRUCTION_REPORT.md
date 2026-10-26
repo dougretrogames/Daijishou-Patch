@@ -17,7 +17,7 @@ código de referência nos pontos ainda não convertidos (seção 3.2).
 
 | Item | Resultado |
 |---|---|
-| Fonte Java reconstruído | `jadx_nest/sources/com/magneticchen/daijishou` — **1.439 arquivos** |
+| Fonte Java reconstruído | `app_sources/sources/com/magneticchen/daijishou` — **1.439 arquivos** |
 | Classes compiladas | **2.404** arquivos `.class` em `nest_classes_compile/` |
 | Compilação javac 21 (`-source 8 -target 8`) | **0 erros** |
 | Dex do app (D8 `--release`, minApi 26) | 3.615.796 bytes |
@@ -38,7 +38,7 @@ com feed inválido), sua causa e a correção (seção 7).
 
 | Caminho | Conteúdo |
 |---|---|
-| `jadx_nest/sources/...` | árvore Java reconstruída (fonte de verdade do trabalho) |
+| `app_sources/sources/...` | árvore Java reconstruída (fonte de verdade do trabalho) |
 | `nest_classes_compile/` | saída do javac (2.404 classes) |
 | `nest_sources_compile.txt` | argfile com os 1.439 fontes do pacote do app |
 | `jadx-1.5.6/` | árvore completa gerada pelo JADX (13.701 arquivos, inclui bibliotecas) |
@@ -71,7 +71,7 @@ com feed inválido), sua causa e a correção (seção 7).
 # 0) gerar a árvore Java (SEMPRE headless; nunca use -jar, abre a GUI)
 java -cp jadx-1.5.6/jadx-1.5.6-all.jar jadx.cli.JadxCLI `
   --no-inline-anonymous --no-inline-kotlin-lambda `
-  -d jadx_nest "Daijishou v1.5.0.apk"
+  -d app_sources "Daijishou v1.5.0.apk"
 
 # 1) compilar somente o pacote do app (1.439 arquivos)
 javac -source 8 -target 8 `
@@ -96,7 +96,7 @@ powershell -ExecutionPolicy Bypass -File build_tmp/rebuild_app.ps1
 
 Observações de ambiente:
 
-- `compile_app.ps1` regenera o argfile a partir de `-SrcRoot`; apontá-lo para `jadx_nest/sources`
+- `compile_app.ps1` regenera o argfile a partir de `-SrcRoot`; apontá-lo para `app_sources/sources`
   inclui as 13,7 mil classes de biblioteca e produz 1.679 erros. Use o `javac` acima com
   `nest_sources_compile.txt`.
 - javac 21 exige `-source 8 -target 8` + `-bootclasspath` (Android 35); argfiles com `/` e sem BOM.
@@ -530,7 +530,7 @@ capturada → crash do processo.
 ### Correção
 
 O cast/atribuição foi movido para **dentro** do `try`, restaurando a semântica do código de
-referência (`jadx_nest/.../rss/RSSWidgetFaceFragment.java`, classe `C02201`,
+referência (`app_sources/.../rss/RSSWidgetFaceFragment.java`, classe `C02201`,
 `invokeSuspendImpl`):
 
 ```java
@@ -559,7 +559,7 @@ Depois: recompilar → D8 → baksmali → `run_pipeline.ps1` → `rebuild_app.p
 ## 8. Limitações conhecidas
 
 1. **A árvore Java é 100% autossuficiente (P0 e P1 CONCLUÍDOS)**: Todas as 57 classes-stub originais
-   foram completamente portadas para código Java nativo em `jadx_nest/sources/com/magneticchen/daijishou`.
+   foram completamente portadas para código Java nativo em `app_sources/sources/com/magneticchen/daijishou`.
    O modo de build `-NoOrig` é executado por padrão no ciclo (`build_cycle.ps1`), e o pipeline
    não reaproveita nenhuma classe do APK original (`class_map.json["stubs"]` = 0). O APK reconstruído
    é compilado e montado exclusivamente a partir do Java portado.

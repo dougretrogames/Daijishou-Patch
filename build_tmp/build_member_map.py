@@ -1,6 +1,6 @@
 import os, re, json
 
-BASE = r'C:\Users\Douglas\Documents\Daijishou'
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ORIG = os.path.join(BASE, 'smali_orig_app')
 COMP = os.path.join(BASE, 'build_tmp', 'smali_compiled')
 

@@ -13,7 +13,7 @@ BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RECON = os.path.join(BASE, 'build_tmp', 'smali_recon')
 ORIG = os.path.join(BASE, 'smali_orig_app')
 SCOPE = 'com/magneticchen/daijishou'
-SRC = os.path.join(BASE, 'jadx_nest', 'sources', 'com', 'magneticchen', 'daijishou')
+SRC = os.path.join(BASE, 'app_sources', 'sources', 'com', 'magneticchen', 'daijishou')
 OUT = os.path.join(BASE, 'build_tmp')
 
 

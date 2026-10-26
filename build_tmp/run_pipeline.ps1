@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-$bt = 'C:\Users\Douglas\Documents\Daijishou\build_tmp'
+$bt = $PSScriptRoot
 Set-Location $bt
 Remove-Item -Recurse -Force smali_recon
 Copy-Item smali_compiled smali_recon -Recurse

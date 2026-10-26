@@ -1,7 +1,8 @@
 import os, re, io, sys
 
 sys.stdout.reconfigure(errors='replace')
-BASE = r'C:\Users\Douglas\Documents\Daijishou\jadx_nest\sources\com\magneticchen\daijishou'
+BASE_REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE = os.path.join(BASE_REPO, 'app_sources', 'sources', 'com', 'magneticchen', 'daijishou')
 
 bad = []
 for dirpath, _, files in os.walk(BASE):

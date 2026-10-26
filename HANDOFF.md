@@ -36,7 +36,7 @@ sem depender de uma árvore de código publicada.
 
 Ferramentas e método:
 
-1. **JADX 1.5.6** (`--no-inline-anonymous --no-inline-kotlin-lambda`) → `jadx_nest/sources`
+1. **JADX 1.5.6** (`--no-inline-anonymous --no-inline-kotlin-lambda`) → `app_sources/sources`
    (1.439 arquivos do pacote do app; a árvore com as 13,7 mil classes de biblioteca foi descartada).
 2. **javac 21** mirando bytecode 8, contra os jars das dependências → 2.404 classes, 0 erros.
 3. **D8 `--release`** → `classes7.dex` (app).
@@ -81,8 +81,8 @@ Kotlin para `super.foo$default` em interfaces e métodos que o app nunca chama).
 
 | Caminho | Conteúdo |
 |---|---|
-| `jadx_nest/sources/` | **árvore de código Java** — é aqui que se trabalha |
-| `jadx_nest/resources/` | vazio (o JADX não exportou recursos; ver §6) |
+| `app_sources/sources/` | **árvore de código Java** — é aqui que se trabalha |
+| `app_sources/resources/` | vazio (o JADX não exportou recursos; ver §6) |
 | `smali_orig_app/` | smali do `classes4.dex` do build de referência = **especificação** (não editar) |
 | `smali/`, `smali_classes3..6/` | smali dos 6 dex do build de referência |
 | `dex/` | os 6 dex do build de referência |
@@ -124,7 +124,7 @@ $android= "$env:LOCALAPPDATA\Android\Sdk\platforms\android-35\android.jar"
 $bt     = "$env:LOCALAPPDATA\Android\Sdk\build-tools\35.0.0"
 $env:JAVA_HOME = 'C:\Users\Douglas\.jdks\jdk-21.0.12.1+1'   # o d8.bat usa JAVA_HOME
 
-# 1) compilar os 1.439 arquivos do app (o argfile já está pronto; NÃO regenere apontando para jadx_nest/sources)
+# 1) compilar os 1.439 arquivos do app (o argfile já está pronto; NÃO regenere apontando para app_sources/sources)
 & "$jd21\javac.exe" -J-Xmx6g -nowarn -proc:none -encoding UTF-8 -source 8 -target 8 `
   -bootclasspath $android -classpath "reconstructed\jars_compile\*;$android" `
   -Xmaxerrs 40000 -d nest_classes_compile "@nest_sources_compile.txt"
@@ -151,7 +151,7 @@ powershell -ExecutionPolicy Bypass -File build_tmp\rebuild_app.ps1
 ```powershell
 # regerar a árvore Java (sempre headless; nunca java -jar, que abre a GUI)
 & "$jd21\java.exe" -cp tools\jadx-1.5.6-all.jar jadx.cli.JadxCLI `
-  --no-inline-anonymous --no-inline-kotlin-lambda -d jadx_nest "Daijishou v1.5.0.apk"
+  --no-inline-anonymous --no-inline-kotlin-lambda -d app_sources "Daijishou v1.5.0.apk"
 
 # especificação do app (classes4 contém o app + bibliotecas)
 & "$jd21\java.exe" -jar tools\baksmali-2.5.2.jar d -f dex\classes4.dex -o smali_classes4

@@ -34,7 +34,7 @@ snapshots/
 tools/
 try_cfr/
 try_cfr_classes/
-jadx_nest/resources/
+app_sources/resources/
 
 # evidência de teste (regenerável)
 avd_tests/**/*.png

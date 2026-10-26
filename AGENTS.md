@@ -15,7 +15,7 @@ idênticos ao original — exige-se o mesmo comportamento observável na matriz 
 
 | Caminho | Papel | Pode editar? |
 |---|---|---|
-| `jadx_nest/sources/` | árvore de código Java (1.439 arquivos) | **sim, é aqui que se trabalha** |
+| `app_sources/sources/` | árvore de código Java (1.439 arquivos) | **sim, é aqui que se trabalha** |
 | `smali_orig_app/` | código de referência do app (cópia de `smali_classes4`) | **nunca** |
 | `build_tmp/smali_compiled/` | baksmali do dex compilado | nunca (gerado) |
 | `build_tmp/smali_recon/` | smali após o pipeline, entra no APK | nunca (gerado) |
@@ -27,7 +27,7 @@ no Java e validada contra o smali.
 ## Ciclo obrigatório
 
 ```
-editar jadx_nest/sources  →  javac  →  jar  →  d8 --release  →  baksmali
+editar app_sources/sources  →  javac  →  jar  →  d8 --release  →  baksmali
 →  run_pipeline.ps1  →  rebuild_app.ps1  →  gates  →  teste na AVD  →  commit
 ```
 
@@ -40,7 +40,7 @@ Comandos exatos: `HANDOFF.md` §5. Nunca pule etapas: o APK só é válido se sa
 - Editar `smali_recon`, `smali_compiled`, `smali_orig_app` ou `class_map.json` à mão.
 - "Consertar" os 116 métodos `UnsupportedOperationException` que existem **também no build de
   referência** (são guardas do compilador Kotlin). `stub_compare.py` deve continuar 0/0.
-- Apontar `compile_app.ps1` para `jadx_nest/sources` (inclui as 13,7 mil classes de biblioteca
+- Apontar `compile_app.ps1` para `app_sources/sources` (inclui as 13,7 mil classes de biblioteca
   e gera ~1.679 erros). Use `nest_sources_compile.txt` (1.439 arquivos).
 - Instalar o build atual por cima do build de referência (assinaturas diferentes: debug × release).
 - Converter o projeto para Kotlin (fora de escopo: a réplica é em Java).

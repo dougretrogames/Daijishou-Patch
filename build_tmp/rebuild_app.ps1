@@ -65,6 +65,10 @@ Push-Location $tmp
 Remove-Item app7.apk -Force -ErrorAction SilentlyContinue
 & $jd -Xmx6g -jar $apk b $d -o app7.apk 2>&1 | Select-Object -Last 6
 if (-not (Test-Path (Join-Path $tmp 'app7.apk'))) { Pop-Location; throw 'apktool build failed' }
+if (-not (Test-Path (Join-Path $tmp 'apktool_res.apk'))) {
+    Write-Host "apktool_res.apk not found, rebuilding resources..."
+    python (Join-Path $tmp 'rebuild_resources.py')
+}
 python -I assemble3.py
 & (Join-Path $bt 'zipalign.exe') -f -p 4 unsigned3.apk aligned3.apk
 & (Join-Path $bt 'apksigner.bat') sign --ks debug.keystore --ks-pass pass:android --key-pass pass:android --ks-key-alias androiddebugkey --out (Join-Path $base 'Daijishou v1.5.0-reconstructed.apk') aligned3.apk

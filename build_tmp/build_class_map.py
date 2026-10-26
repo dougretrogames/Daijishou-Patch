@@ -1,6 +1,7 @@
 import os, re, json
 
-ROOT = r'C:\Users\Douglas\Documents\Daijishou\jadx_nest\sources\com\magneticchen\daijishou'
+BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+ROOT = os.path.join(BASE, 'app_sources', 'sources', 'com', 'magneticchen', 'daijishou')
 renamed_re = re.compile(r'/\* (?:JADX\s+)?INFO: renamed from: ([^,\s]+), reason:')
 class_re = re.compile(r'\b(?:class|interface|enum)\s+([A-Za-z_$][\w$]*)')
 stub_re = re.compile(r'Method not decompiled: ([A-Za-z0-9_$.]+)\.[A-Za-z_$][\w$]*\(')
@@ -100,7 +101,7 @@ for orig, jadx in mapping.items():
 print('mapped:', len(mapping))
 print('stub classes:', len(stubs), 'methods:', sum(stubs.values()))
 
-base = r'C:\Users\Douglas\Documents\Daijishou\smali_orig_app'
+base = os.path.join(BASE, 'smali_orig_app')
 miss = []
 for j in stubs:
     o = inv.get(j, j)
@@ -109,4 +110,4 @@ for j in stubs:
 print('stub classes missing original smali:', len(miss))
 for m in miss[:10]:
     print(' ', m)
-json.dump({'map': mapping, 'inv': inv, 'stubs': stubs}, open(r'C:\Users\Douglas\Documents\Daijishou\build_tmp\class_map.json', 'w'), indent=0)
+json.dump({'map': mapping, 'inv': inv, 'stubs': stubs}, open(os.path.join(BASE, 'build_tmp', 'class_map.json'), 'w'), indent=0)
