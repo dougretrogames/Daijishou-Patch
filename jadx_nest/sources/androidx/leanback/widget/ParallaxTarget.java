@@ -5,7 +5,7 @@ import android.animation.PropertyValuesHolder;
 import android.util.Property;
 import android.view.animation.LinearInterpolator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ParallaxTarget {
     public void directUpdate(Number number) {
     }

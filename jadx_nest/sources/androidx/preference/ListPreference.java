@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import androidx.core.content.res.TypedArrayUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ListPreference extends DialogPreference {
     private static final String TAG = "ListPreference";
     private CharSequence[] mEntries;
@@ -186,18 +186,18 @@ public class ListPreference extends DialogPreference {
         public static final Parcelable.Creator<SavedState> CREATOR = new AnonymousClass1();
         String mValue;
 
-        /* JADX INFO: renamed from: androidx.preference.ListPreference$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.preference.ListPreference$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];

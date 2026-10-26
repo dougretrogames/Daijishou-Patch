@@ -8,7 +8,7 @@ import androidx.appcompat.widget.TintTypedArray;
 import com.google.android.material.R;
 import com.google.android.material.resources.MaterialAttributes;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ThemeEnforcement {
     private static final String APPCOMPAT_THEME_NAME = "Theme.AppCompat";
     private static final String MATERIAL_THEME_NAME = "Theme.MaterialComponents";

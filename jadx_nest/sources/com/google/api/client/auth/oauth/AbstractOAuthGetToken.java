@@ -7,7 +7,7 @@ import com.google.api.client.http.HttpTransport;
 import com.google.api.client.http.UrlEncodedParser;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class AbstractOAuthGetToken extends GenericUrl {
     public String consumerKey;
     public OAuthSigner signer;

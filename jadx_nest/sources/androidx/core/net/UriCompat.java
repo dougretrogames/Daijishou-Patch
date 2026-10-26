@@ -5,7 +5,7 @@ import androidx.webkit.ProxyConfig;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class UriCompat {
     private UriCompat() {
     }

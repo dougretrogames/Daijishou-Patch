@@ -1,6 +1,6 @@
 package com.google.android.material.sidesheet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class SheetUtils {
     private SheetUtils() {
     }

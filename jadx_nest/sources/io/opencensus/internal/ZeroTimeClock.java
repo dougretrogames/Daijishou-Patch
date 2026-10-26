@@ -3,7 +3,7 @@ package io.opencensus.internal;
 import io.opencensus.common.Clock;
 import io.opencensus.common.Timestamp;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ZeroTimeClock extends Clock {
     private static final ZeroTimeClock INSTANCE = new ZeroTimeClock();
     private static final Timestamp ZERO_TIMESTAMP = Timestamp.create(0, 0);

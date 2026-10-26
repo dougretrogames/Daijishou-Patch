@@ -3,7 +3,7 @@ package org.apache.http.util;
 import java.io.UnsupportedEncodingException;
 import org.apache.http.Consts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class EncodingUtils {
     public static String getString(byte[] bArr, int i, int i2, String str) {
         Args.notNull(bArr, "Input");

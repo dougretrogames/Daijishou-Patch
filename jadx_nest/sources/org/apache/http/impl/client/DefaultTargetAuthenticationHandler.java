@@ -9,7 +9,7 @@ import org.apache.http.auth.params.AuthPNames;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class DefaultTargetAuthenticationHandler extends AbstractAuthenticationHandler {
     @Override // org.apache.http.client.AuthenticationHandler

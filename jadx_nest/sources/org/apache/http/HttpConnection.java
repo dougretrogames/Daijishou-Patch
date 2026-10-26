@@ -3,7 +3,7 @@ package org.apache.http;
 import java.io.Closeable;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface HttpConnection extends Closeable {
     @Override // java.io.Closeable, java.lang.AutoCloseable
     void close() throws IOException;

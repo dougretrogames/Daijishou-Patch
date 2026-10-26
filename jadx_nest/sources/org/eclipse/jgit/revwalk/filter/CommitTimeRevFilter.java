@@ -6,7 +6,7 @@ import org.eclipse.jgit.errors.StopWalkException;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class CommitTimeRevFilter extends RevFilter {
     final int when;
 

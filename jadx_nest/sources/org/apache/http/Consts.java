@@ -2,7 +2,7 @@ package org.apache.http;
 
 import java.nio.charset.Charset;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Consts {
     public static final int CR = 13;
     public static final int HT = 9;

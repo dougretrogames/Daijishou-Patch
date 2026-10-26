@@ -6,7 +6,7 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import org.apache.http.message.TokenParser;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicMarker implements Marker {
     private static String CLOSE = " ]";
     private static String OPEN = "[ ";

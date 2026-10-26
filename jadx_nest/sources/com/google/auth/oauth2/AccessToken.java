@@ -8,7 +8,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AccessToken implements Serializable {
     private static final long serialVersionUID = -8514239465808977353L;
     private final Long expirationTimeMillis;

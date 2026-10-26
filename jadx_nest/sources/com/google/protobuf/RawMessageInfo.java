@@ -1,6 +1,6 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 final class RawMessageInfo implements MessageInfo {
     private static final int IS_EDITION_BIT = 4;

@@ -42,7 +42,7 @@ import java.util.WeakHashMap;
 import java.util.concurrent.Executor;
 import org.chromium.support_lib_boundary.WebViewProviderBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebViewCompat {
     private static final Uri WILDCARD_URI = Uri.parse("*");
     private static final Uri EMPTY_URI = Uri.parse("");
@@ -390,7 +390,7 @@ public class WebViewCompat {
         throw WebViewFeatureInternal.getUnsupportedOperationException();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class NullReturningWebViewStartUpResult implements WebViewStartUpResult {
         @Override // androidx.webkit.WebViewStartUpResult
         public List<BlockingStartUpLocation> getBlockingStartUpLocations() {

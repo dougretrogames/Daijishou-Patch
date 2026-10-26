@@ -13,7 +13,7 @@ import org.jsoup.parser.ParseErrorList;
 import org.jsoup.parser.Parser;
 import org.jsoup.select.NodeVisitor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Cleaner {
     private final Safelist safelist;
 
@@ -100,7 +100,7 @@ public class Cleaner {
         return cleaningVisitor.numDiscarded;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public ElementMeta createSafeElement(Element element) {
         Element elementShallowClone = element.shallowClone();
         String strTagName = element.tagName();

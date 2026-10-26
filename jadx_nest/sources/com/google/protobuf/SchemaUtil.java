@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.RandomAccess;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 final class SchemaUtil {
     private static final int DEFAULT_LOOK_UP_START_NUMBER = 40;

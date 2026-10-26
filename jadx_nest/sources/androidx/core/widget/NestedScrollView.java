@@ -41,7 +41,7 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityRecordCompat;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class NestedScrollView extends FrameLayout implements NestedScrollingParent3, NestedScrollingChild3, ScrollingView {
     static final int ANIMATED_SCROLL_GAP = 250;
     private static final int DEFAULT_SMOOTH_SCROLL_DURATION = 250;
@@ -528,8 +528,8 @@ public class NestedScrollView extends FrameLayout implements NestedScrollingPare
         super.requestDisallowInterceptTouchEvent(z);
     }
 
-    /* JADX WARN: Code duplicated, block: B:31:0x007d  */
-    /* JADX WARN: Code duplicated, block: B:33:0x009b  */
+    /* WARN: Code duplicated, block: B:31:0x007d  */
+    /* WARN: Code duplicated, block: B:33:0x009b  */
     @Override // android.view.ViewGroup
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         int action = motionEvent.getAction();
@@ -966,7 +966,7 @@ public class NestedScrollView extends FrameLayout implements NestedScrollingPare
         return Math.max(0, ((childAt.getHeight() + layoutParams.topMargin) + layoutParams.bottomMargin) - ((getHeight() - getPaddingTop()) - getPaddingBottom()));
     }
 
-    /* JADX WARN: Code duplicated, block: B:29:0x004f  */
+    /* WARN: Code duplicated, block: B:29:0x004f  */
     private View findFocusableViewInBounds(boolean z, int i, int i2) {
         ArrayList focusables = getFocusables(2);
         int size = focusables.size();
@@ -1259,7 +1259,7 @@ public class NestedScrollView extends FrameLayout implements NestedScrollingPare
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x0060  */
+    /* WARN: Code duplicated, block: B:15:0x0060  */
     private int releaseVerticalGlow(int i, float f) {
         float fOnPullDistance;
         int iRound;
@@ -1584,18 +1584,18 @@ public class NestedScrollView extends FrameLayout implements NestedScrollingPare
             return "HorizontalScrollView.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " scrollPosition=" + this.scrollPosition + "}";
         }
 
-        /* JADX INFO: renamed from: androidx.core.widget.NestedScrollView$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.core.widget.NestedScrollView$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];

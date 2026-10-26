@@ -5,7 +5,7 @@ import java.time.Instant;
 import java.time.temporal.TemporalAmount;
 import kotlin.time.DurationKt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ThreadUtils {
     private static int getNanosOfMilli(Duration duration) {
         return duration.getNano() % DurationKt.NANOS_IN_MILLIS;

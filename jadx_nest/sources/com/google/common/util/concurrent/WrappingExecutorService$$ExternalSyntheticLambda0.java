@@ -2,8 +2,8 @@ package com.google.common.util.concurrent;
 
 import java.util.concurrent.Callable;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class WrappingExecutorService$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ Callable f$0;
 

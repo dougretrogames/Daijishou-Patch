@@ -2,7 +2,7 @@ package org.apache.commons.codec;
 
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Resources {
     public static InputStream getInputStream(String str) {
         InputStream resourceAsStream = Resources.class.getResourceAsStream(str);

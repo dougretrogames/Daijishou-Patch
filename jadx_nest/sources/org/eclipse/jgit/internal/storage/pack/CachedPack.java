@@ -2,7 +2,7 @@ package org.eclipse.jgit.internal.storage.pack;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class CachedPack {
     public long getDeltaCount() throws IOException {
         return 0L;

@@ -12,7 +12,7 @@ import android.graphics.Shader;
 import androidx.core.graphics.ColorUtils;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ShadowRenderer {
     private static final int COLOR_ALPHA_END = 0;
     private static final int COLOR_ALPHA_MIDDLE = 20;

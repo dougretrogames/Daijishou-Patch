@@ -4,7 +4,7 @@ import android.text.TextPaint;
 import android.text.style.MetricAffectingSpan;
 import io.noties.markwon.core.MarkwonTheme;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class CodeSpan extends MetricAffectingSpan {
     private final MarkwonTheme theme;
 

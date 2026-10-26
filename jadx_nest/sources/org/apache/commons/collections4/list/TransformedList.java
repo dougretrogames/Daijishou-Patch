@@ -7,7 +7,7 @@ import org.apache.commons.collections4.Transformer;
 import org.apache.commons.collections4.collection.TransformedCollection;
 import org.apache.commons.collections4.iterators.AbstractListIteratorDecorator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformedList<E> extends TransformedCollection<E> implements List<E> {
     private static final long serialVersionUID = 1077193035000013141L;
 
@@ -16,13 +16,13 @@ public class TransformedList<E> extends TransformedCollection<E> implements List
             super(listIterator);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // org.apache.commons.collections4.iterators.AbstractListIteratorDecorator, java.util.ListIterator
         public void add(E e) {
             getListIterator().add(TransformedList.this.transform(e));
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // org.apache.commons.collections4.iterators.AbstractListIteratorDecorator, java.util.ListIterator
         public void set(E e) {
             getListIterator().set(TransformedList.this.transform(e));

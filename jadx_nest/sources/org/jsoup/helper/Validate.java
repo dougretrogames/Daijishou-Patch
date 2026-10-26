@@ -1,6 +1,6 @@
 package org.jsoup.helper;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Validate {
     private Validate() {
     }

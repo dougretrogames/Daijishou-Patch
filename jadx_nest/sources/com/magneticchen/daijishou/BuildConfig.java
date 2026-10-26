@@ -1,6 +1,6 @@
 package com.magneticchen.daijishou;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class BuildConfig {
     public static final String APPLICATION_ID = "com.magneticchen.daijishou";
     public static final String BUILD_TYPE = "release";

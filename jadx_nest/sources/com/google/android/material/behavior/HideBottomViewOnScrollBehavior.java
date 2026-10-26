@@ -15,7 +15,7 @@ import com.google.android.material.motion.MotionUtils;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorLayout.Behavior<V> {
     private static final int DEFAULT_ENTER_ANIMATION_DURATION_MS = 225;
     private static final int DEFAULT_EXIT_ANIMATION_DURATION_MS = 175;
@@ -152,7 +152,7 @@ public class HideBottomViewOnScrollBehavior<V extends View> extends CoordinatorL
         this.currentAnimator = v.animate().translationY(i).setInterpolator(timeInterpolator).setDuration(j).setListener(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.behavior.HideBottomViewOnScrollBehavior$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.behavior.HideBottomViewOnScrollBehavior$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }

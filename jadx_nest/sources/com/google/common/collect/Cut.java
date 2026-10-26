@@ -9,7 +9,7 @@ import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class Cut<C extends Comparable> implements Comparable<Cut<C>>, Serializable {
     private static final long serialVersionUID = 0;
@@ -332,7 +332,7 @@ abstract class Cut<C extends Comparable> implements Comparable<Cut<C>>, Serializ
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.Cut$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.Cut$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$common$collect$BoundType;
 

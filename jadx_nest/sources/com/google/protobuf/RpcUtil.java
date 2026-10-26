@@ -1,8 +1,8 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class RpcUtil {
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <Type extends Message> RpcCallback<Type> specializeCallback(final RpcCallback<Message> originalCallback) {
         return originalCallback;
     }
@@ -10,7 +10,7 @@ public final class RpcUtil {
     private RpcUtil() {
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.RpcUtil$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.RpcUtil$1, reason: invalid class name */
     class AnonymousClass1 implements RpcCallback<Message> {
         final /* synthetic */ Message val$defaultInstance;
         final /* synthetic */ RpcCallback val$originalCallback;
@@ -38,13 +38,13 @@ public final class RpcUtil {
         return new AnonymousClass1(originalClass, defaultInstance, originalCallback);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <Type extends Message> Type copyAsType(Type type, Message message) {
         return (Type) type.newBuilderForType().mergeFrom(message).build();
     }
 
-    /* JADX INFO: Add missing generic type declarations: [ParameterType] */
-    /* JADX INFO: renamed from: com.google.protobuf.RpcUtil$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [ParameterType] */
+    /* INFO: renamed from: com.google.protobuf.RpcUtil$2, reason: invalid class name */
     class AnonymousClass2<ParameterType> implements RpcCallback<ParameterType> {
         private boolean alreadyCalled = false;
         final /* synthetic */ RpcCallback val$originalCallback;

@@ -1,7 +1,7 @@
 package com.magneticchen.daijishou.daijishou_widget.widgets.activity;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class ActivityWidgetTodayFaceFragment$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ ActivityWidgetTodayFaceFragment f$0;
     public final /* synthetic */ long f$1;

@@ -14,7 +14,7 @@ import java.util.RandomAccess;
 import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ImmutableList<E> extends ImmutableCollection<E> implements List<E>, RandomAccess {
     private static final UnmodifiableListIterator<Object> EMPTY_ITR = new Itr(RegularImmutableList.EMPTY, 0);

@@ -5,7 +5,7 @@ import org.eclipse.jgit.errors.CorruptObjectException;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EmptyTreeIterator extends AbstractTreeIterator {
     @Override // org.eclipse.jgit.treewalk.AbstractTreeIterator
     public void back(int i) throws CorruptObjectException {

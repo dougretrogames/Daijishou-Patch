@@ -5,7 +5,7 @@ import android.os.Handler;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public final class GestureDetectorCompat {
     private final GestureDetector mDetector;

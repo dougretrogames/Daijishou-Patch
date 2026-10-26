@@ -4,7 +4,7 @@ import java.util.ListIterator;
 import java.util.Objects;
 import org.apache.commons.collections4.Unmodifiable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UnmodifiableListIterator<E> implements ListIterator<E>, Unmodifiable {
     private final ListIterator<? extends E> iterator;
 
@@ -13,7 +13,7 @@ public final class UnmodifiableListIterator<E> implements ListIterator<E>, Unmod
         return unmodifiableListIterator(listIterator);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <E> ListIterator<E> unmodifiableListIterator(ListIterator<? extends E> listIterator) {
         Objects.requireNonNull(listIterator, "iterator");
         return listIterator instanceof Unmodifiable ? listIterator : new UnmodifiableListIterator(listIterator);

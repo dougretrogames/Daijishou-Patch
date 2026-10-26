@@ -2,7 +2,7 @@ package io.noties.markwon;
 
 import org.commonmark.node.Node;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class BlockHandlerDef implements MarkwonVisitor.BlockHandler {
     @Override // io.noties.markwon.MarkwonVisitor.BlockHandler
     public void blockStart(MarkwonVisitor markwonVisitor, Node node) {

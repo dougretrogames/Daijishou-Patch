@@ -29,7 +29,7 @@ import org.ietf.jgss.GSSManager;
 import org.ietf.jgss.GSSName;
 import org.ietf.jgss.Oid;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class HttpAuthMethod {
     static final String EMPTY_STRING = "";
     static final String SCHEMA_NAME_SEPARATOR = " ";
@@ -39,8 +39,8 @@ abstract class HttpAuthMethod {
 
     abstract void configureRequest(HttpConnection httpConnection) throws IOException;
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     public static abstract class Type {
         public static final Type BASIC;
         public static final Type DIGEST;
@@ -68,7 +68,7 @@ abstract class HttpAuthMethod {
 
         public abstract HttpAuthMethod method(String str);
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.transport.HttpAuthMethod$Type$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.transport.HttpAuthMethod$Type$1, reason: invalid class name */
         final enum AnonymousClass1 extends Type {
             AnonymousClass1(String str, int i) {
                 super(str, i, null);
@@ -101,7 +101,7 @@ abstract class HttpAuthMethod {
             ENUM$VALUES = new Type[]{anonymousClass1, anonymousClass2, anonymousClass3, anonymousClass4};
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.transport.HttpAuthMethod$Type$2, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.transport.HttpAuthMethod$Type$2, reason: invalid class name */
         final enum AnonymousClass2 extends Type {
             AnonymousClass2(String str, int i) {
                 super(str, i, null);
@@ -118,7 +118,7 @@ abstract class HttpAuthMethod {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.transport.HttpAuthMethod$Type$3, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.transport.HttpAuthMethod$Type$3, reason: invalid class name */
         final enum AnonymousClass3 extends Type {
             AnonymousClass3(String str, int i) {
                 super(str, i, null);
@@ -135,7 +135,7 @@ abstract class HttpAuthMethod {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.transport.HttpAuthMethod$Type$4, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.transport.HttpAuthMethod$Type$4, reason: invalid class name */
         final enum AnonymousClass4 extends Type {
             AnonymousClass4(String str, int i) {
                 super(str, i, null);

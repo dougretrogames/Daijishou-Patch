@@ -33,7 +33,7 @@ import java.util.Objects;
 import java.util.Queue;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class AppCompatDelegate {
     static final String APP_LOCALES_META_DATA_HOLDER_SERVICE_NAME = "androidx.appcompat.app.AppLocalesMetadataHolderService";
     static final boolean DEBUG = false;
@@ -164,7 +164,7 @@ public abstract class AppCompatDelegate {
             }
         }
 
-        /* JADX INFO: renamed from: lambda$execute$0$androidx-appcompat-app-AppCompatDelegate$SerialExecutor, reason: not valid java name */
+        /* INFO: renamed from: lambda$execute$0$androidx-appcompat-app-AppCompatDelegate$SerialExecutor, reason: not valid java name */
         /* synthetic */ void m5x45c145d(Runnable runnable) {
             try {
                 runnable.run();
@@ -316,7 +316,7 @@ public abstract class AppCompatDelegate {
         sSerialExecutorForLocalesStorage.execute(new AppCompatDelegate$$ExternalSyntheticLambda1(context));
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     public static void syncRequestedAndStoredLocales(Context context) {
         if (isAutoStorageOptedIn(context)) {
             if (Build.VERSION.SDK_INT >= 33) {

@@ -19,7 +19,7 @@ import org.eclipse.jgit.treewalk.WorkingTreeIterator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FS_Win32 extends FS {
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) FS_Win32.class);
 
@@ -76,7 +76,7 @@ public class FS_Win32 extends FS {
         return (WorkingTreeIterator.Entry[]) arrayList.toArray(new WorkingTreeIterator.Entry[0]);
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.util.FS_Win32$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.util.FS_Win32$1, reason: invalid class name */
     class AnonymousClass1 extends SimpleFileVisitor<Path> {
         private final /* synthetic */ boolean val$checkExecutable;
         private final /* synthetic */ FileTreeIterator.FileModeStrategy val$fileModeStrategy;

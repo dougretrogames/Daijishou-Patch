@@ -9,7 +9,7 @@ import java.util.Iterator;
 import javax.annotation.CheckForNull;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable(containerOf = {"N"})
 @ElementTypesAreNonnullByDefault
 public abstract class EndpointPair<N> implements Iterable<N> {

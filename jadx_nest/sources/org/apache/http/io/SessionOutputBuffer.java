@@ -3,7 +3,7 @@ package org.apache.http.io;
 import java.io.IOException;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface SessionOutputBuffer {
     void flush() throws IOException;
 

@@ -3,10 +3,10 @@ package com.google.common.collect;
 import java.util.List;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ForwardingListMultimap<K, V> extends ForwardingMultimap<K, V> implements ListMultimap<K, V> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingMultimap, com.google.common.collect.ForwardingObject
     public abstract ListMultimap<K, V> delegate();
 

@@ -7,7 +7,7 @@ import java.io.StreamCorruptedException;
 import java.text.MessageFormat;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BinaryDeltaInputStream extends InputStream {
     private final byte[] base;
     private final InputStream delta;

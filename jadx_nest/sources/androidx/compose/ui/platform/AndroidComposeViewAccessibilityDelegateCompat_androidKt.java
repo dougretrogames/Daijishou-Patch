@@ -29,8 +29,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.math.MathKt;
 
-/* JADX INFO: compiled from: AndroidComposeViewAccessibilityDelegateCompat.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AndroidComposeViewAccessibilityDelegateCompat.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000v\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\b\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a\u001a\u0010\u001c\u001a\u00020\u0003*\u0006\u0012\u0002\b\u00030\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fH\u0002\u001a\f\u0010 \u001a\u00020\u0003*\u00020\rH\u0002\u001a\f\u0010!\u001a\u00020\u0003*\u00020\rH\u0002\u001a\u001c\u0010\"\u001a\u0004\u0018\u00010#*\b\u0012\u0004\u0012\u00020#0$2\u0006\u0010%\u001a\u00020&H\u0002\u001a\"\u0010'\u001a\u0004\u0018\u00010(*\u00020(2\u0012\u0010)\u001a\u000e\u0012\u0004\u0012\u00020(\u0012\u0004\u0012\u00020\u00030*H\u0002\u001a\u0018\u0010+\u001a\u000e\u0012\u0004\u0012\u00020&\u0012\u0004\u0012\u00020-0,*\u00020.H\u0002\u001a\u000e\u0010/\u001a\u0004\u0018\u00010\f*\u00020\rH\u0002\u001a\f\u00100\u001a\u00020\u0003*\u00020\rH\u0002\u001a\u0014\u00101\u001a\u00020\u0003*\u00020(2\u0006\u00102\u001a\u00020(H\u0002\u001a\f\u00103\u001a\u00020\u0003*\u00020\rH\u0002\u001a\u0014\u00104\u001a\u00020\u0003*\u00020\r2\u0006\u00105\u001a\u000206H\u0002\u001a\u0016\u00107\u001a\u0004\u0018\u000108*\u0002092\u0006\u0010%\u001a\u00020&H\u0000\u001a\u0018\u0010:\u001a\u0004\u0018\u00010\f*\u00020;H\u0002ø\u0001\u0000¢\u0006\u0004\b<\u0010=\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\",\u0010\u0004\u001a\u00020\u00032\u0006\u0010\u0002\u001a\u00020\u00038G@GX\u0087\u000e¢\u0006\u0014\n\u0000\u0012\u0004\b\u0005\u0010\u0006\u001a\u0004\b\u0007\u0010\b\"\u0004\b\t\u0010\n\"\u001a\u0010\u000b\u001a\u0004\u0018\u00010\f*\u00020\r8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u000e\u0010\u000f\"\u0019\u0010\u0010\u001a\u00020\u0003*\u00020\r8Â\u0002X\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011\"\u0019\u0010\u0012\u001a\u00020\u0003*\u00020\r8Â\u0002X\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0012\u0010\u0011\"\u0019\u0010\u0013\u001a\u00020\u0003*\u00020\r8Â\u0002X\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0013\u0010\u0011\"\u0019\u0010\u0014\u001a\u00020\u0003*\u00020\r8Â\u0002X\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0014\u0010\u0011\"\u001e\u0010\u0015\u001a\u00020\u0003*\u00020\r8BX\u0082\u0004¢\u0006\f\u0012\u0004\b\u0016\u0010\u0017\u001a\u0004\b\u0015\u0010\u0011\"\u0019\u0010\u0018\u001a\u00020\u0019*\u00020\r8Â\u0002X\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u001a\u0010\u001b\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006>"}, d2 = {"DefaultFakeNodeBounds", "Landroidx/compose/ui/geometry/Rect;", "<set-?>", "", "DisableContentCapture", "getDisableContentCapture$annotations", "()V", "getDisableContentCapture", "()Z", "setDisableContentCapture", "(Z)V", "infoContentDescriptionOrNull", "", "Landroidx/compose/ui/semantics/SemanticsNode;", "getInfoContentDescriptionOrNull", "(Landroidx/compose/ui/semantics/SemanticsNode;)Ljava/lang/String;", "isPassword", "(Landroidx/compose/ui/semantics/SemanticsNode;)Z", "isRtl", "isTextField", "isTraversalGroup", "isVisible", "isVisible$annotations", "(Landroidx/compose/ui/semantics/SemanticsNode;)V", "traversalIndex", "", "getTraversalIndex", "(Landroidx/compose/ui/semantics/SemanticsNode;)F", "accessibilityEquals", "Landroidx/compose/ui/semantics/AccessibilityAction;", "other", "", "enabled", "excludeLineAndPageGranularities", "findById", "Landroidx/compose/ui/platform/ScrollObservationScope;", "", "id", "", "findClosestParentNode", "Landroidx/compose/ui/node/LayoutNode;", "selector", "Lkotlin/Function1;", "getAllUncoveredSemanticsNodesToMap", "", "Landroidx/compose/ui/platform/SemanticsNodeWithAdjustedBounds;", "Landroidx/compose/ui/semantics/SemanticsOwner;", "getTextForTranslation", "hasPaneTitle", "isAncestorOf", "node", "isImportantForAccessibility", "propertiesDeleted", "oldConfig", "Landroidx/compose/ui/semantics/SemanticsConfiguration;", "semanticsIdToView", "Landroid/view/View;", "Landroidx/compose/ui/platform/AndroidViewsHandler;", "toLegacyClassName", "Landroidx/compose/ui/semantics/Role;", "toLegacyClassName-V4PA4sw", "(I)Ljava/lang/String;", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
     private static final Rect DefaultFakeNodeBounds = new Rect(0.0f, 0.0f, 10.0f, 10.0f);
@@ -42,7 +42,7 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
     private static /* synthetic */ void isVisible$annotations(SemanticsNode semanticsNode) {
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final LayoutNode findClosestParentNode(LayoutNode layoutNode, Function1<? super LayoutNode, Boolean> function1) {
         for (LayoutNode parent$ui_release = layoutNode.getParent$ui_release(); parent$ui_release != null; parent$ui_release = parent$ui_release.getParent$ui_release()) {
             if (function1.invoke(parent$ui_release).booleanValue()) {
@@ -52,22 +52,22 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean enabled(SemanticsNode semanticsNode) {
         return SemanticsConfigurationKt.getOrNull(semanticsNode.getConfig(), SemanticsProperties.INSTANCE.getDisabled()) == null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean isImportantForAccessibility(SemanticsNode semanticsNode) {
         return semanticsNode.getUnmergedConfig().getIsMergingSemanticsOfDescendants() || semanticsNode.getUnmergedConfig().containsImportantForAccessibility$ui_release();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean isVisible(SemanticsNode semanticsNode) {
         return (semanticsNode.isTransparent$ui_release() || semanticsNode.getUnmergedConfig().contains(SemanticsProperties.INSTANCE.getInvisibleToUser())) ? false : true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean propertiesDeleted(SemanticsNode semanticsNode, SemanticsConfiguration semanticsConfiguration) {
         Iterator<Map.Entry<? extends SemanticsPropertyKey<?>, ? extends Object>> it = semanticsConfiguration.iterator();
         while (it.hasNext()) {
@@ -78,7 +78,7 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean hasPaneTitle(SemanticsNode semanticsNode) {
         return semanticsNode.getConfig().contains(SemanticsProperties.INSTANCE.getPaneTitle());
     }
@@ -95,8 +95,8 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
         return semanticsNode.getLayoutInfo().getLayoutDirection() == LayoutDirection.Rtl;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat_androidKt$isTraversalGroup$1, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidComposeViewAccessibilityDelegateCompat.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.platform.AndroidComposeViewAccessibilityDelegateCompat_androidKt$isTraversalGroup$1, reason: invalid class name */
+    /* INFO: compiled from: AndroidComposeViewAccessibilityDelegateCompat.android.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "()Ljava/lang/Boolean;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     public static final class AnonymousClass1 extends Lambda implements Function0<Boolean> {
         public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -105,7 +105,7 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
             super(0);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final Boolean invoke() {
             return false;
@@ -120,7 +120,7 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
         return ((Number) semanticsNode.getConfig().getOrElse(SemanticsProperties.INSTANCE.getTraversalIndex(), AndroidComposeViewAccessibilityDelegateCompat_androidKt$traversalIndex$1.INSTANCE)).floatValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final String getInfoContentDescriptionOrNull(SemanticsNode semanticsNode) {
         List list = (List) SemanticsConfigurationKt.getOrNull(semanticsNode.getUnmergedConfig(), SemanticsProperties.INSTANCE.getContentDescription());
         if (list != null) {
@@ -129,7 +129,7 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final String getTextForTranslation(SemanticsNode semanticsNode) {
         List list = (List) SemanticsConfigurationKt.getOrNull(semanticsNode.getUnmergedConfig(), SemanticsProperties.INSTANCE.getText());
         if (list != null) {
@@ -138,7 +138,7 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean accessibilityEquals(AccessibilityAction<?> accessibilityAction, Object obj) {
         if (accessibilityAction == obj) {
             return true;
@@ -156,7 +156,7 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Map<Integer, SemanticsNodeWithAdjustedBounds> getAllUncoveredSemanticsNodesToMap(SemanticsOwner semanticsOwner) {
         SemanticsNode unmergedRootSemanticsNode = semanticsOwner.getUnmergedRootSemanticsNode();
         LinkedHashMap linkedHashMap = new LinkedHashMap();
@@ -210,7 +210,7 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final ScrollObservationScope findById(List<ScrollObservationScope> list, int i) {
         int size = list.size();
         for (int i2 = 0; i2 < size; i2++) {
@@ -221,8 +221,8 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: toLegacyClassName-V4PA4sw, reason: not valid java name */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: renamed from: toLegacyClassName-V4PA4sw, reason: not valid java name */
     public static final String m2128toLegacyClassNameV4PA4sw(int i) {
         if (Role.m2207equalsimpl0(i, Role.INSTANCE.m2211getButtono7Vup1c())) {
             return "android.widget.Button";
@@ -256,7 +256,7 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
         return entry != null ? (AndroidViewHolder) entry.getValue() : null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean isAncestorOf(LayoutNode layoutNode, LayoutNode layoutNode2) {
         LayoutNode parent$ui_release = layoutNode2.getParent$ui_release();
         if (parent$ui_release == null) {
@@ -273,7 +273,7 @@ public final class AndroidComposeViewAccessibilityDelegateCompat_androidKt {
         DisableContentCapture = z;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean excludeLineAndPageGranularities(SemanticsNode semanticsNode) {
         if (semanticsNode.getUnmergedConfig().contains(SemanticsActions.INSTANCE.getSetText()) && !Intrinsics.areEqual(SemanticsConfigurationKt.getOrNull(semanticsNode.getUnmergedConfig(), SemanticsProperties.INSTANCE.getFocused()), (Object) true)) {
             return true;

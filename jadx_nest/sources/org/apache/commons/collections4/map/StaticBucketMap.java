@@ -11,7 +11,7 @@ import java.util.Objects;
 import java.util.Set;
 import org.apache.commons.collections4.KeyValue;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class StaticBucketMap<K, V> extends AbstractIterableMap<K, V> {
     private static final int DEFAULT_BUCKETS = 255;
     private final Node<K, V>[] buckets;
@@ -388,7 +388,7 @@ public final class StaticBucketMap<K, V> extends AbstractIterableMap<K, V> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getHash(Object obj) {
         if (obj == null) {
             return 0;

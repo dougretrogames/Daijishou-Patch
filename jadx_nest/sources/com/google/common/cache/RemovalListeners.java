@@ -3,7 +3,7 @@ package com.google.common.cache;
 import com.google.common.base.Preconditions;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class RemovalListeners {
     private RemovalListeners() {

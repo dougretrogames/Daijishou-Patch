@@ -4,7 +4,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.TransitionDrawable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DrawableCrossFadeTransition implements Transition<Drawable> {
     private final int duration;
     private final boolean isCrossFadeEnabled;

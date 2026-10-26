@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class LoggingInputStream extends FilterInputStream {
     private final LoggingByteArrayOutputStream logStream;
 

@@ -5,7 +5,7 @@ import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import androidx.webkit.ServiceWorkerClientCompat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FrameworkServiceWorkerClient extends ServiceWorkerClient {
     private final ServiceWorkerClientCompat mImpl;
 

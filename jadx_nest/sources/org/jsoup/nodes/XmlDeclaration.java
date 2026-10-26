@@ -4,7 +4,7 @@ import org.apache.http.message.TokenParser;
 import org.jsoup.internal.QuietAppendable;
 import org.jsoup.internal.StringUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class XmlDeclaration extends LeafNode {
     private final boolean isDeclaration;
 

@@ -4,7 +4,7 @@ import java.text.MessageFormat;
 import java.util.Date;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RelativeDateFormatter {
     static final long DAY_IN_MILLIS = 86400000;
     static final long HOUR_IN_MILLIS = 3600000;

@@ -3,7 +3,7 @@ package org.apache.commons.codec.language;
 import org.apache.commons.codec.EncoderException;
 import org.apache.commons.codec.StringEncoder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class Caverphone implements StringEncoder {
     private final Caverphone2 encoder = new Caverphone2();

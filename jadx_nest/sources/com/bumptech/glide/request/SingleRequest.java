@@ -28,7 +28,7 @@ import java.util.Map;
 import java.util.concurrent.Executor;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class SingleRequest<R> implements Request, SizeReadyCallback, ResourceCallback {
     private static final String GLIDE_TAG = "Glide";
     private final TransitionFactory<? super R> animationFactory;
@@ -290,26 +290,26 @@ public final class SingleRequest<R> implements Request, SizeReadyCallback, Resou
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v0, types: [com.bumptech.glide.request.ResourceCallback, com.bumptech.glide.request.SingleRequest] */
-    /* JADX WARN: Type inference failed for: r1v1 */
-    /* JADX WARN: Type inference failed for: r1v2 */
-    /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r1v4 */
-    /* JADX WARN: Type inference failed for: r1v5 */
-    /* JADX WARN: Type inference failed for: r1v6 */
-    /* JADX WARN: Type inference failed for: r1v7 */
-    /* JADX WARN: Type inference failed for: r1v8 */
-    /* JADX WARN: Type inference failed for: r2v1, types: [com.bumptech.glide.load.engine.Engine] */
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$PrimitiveArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r1v0, types: [com.bumptech.glide.request.ResourceCallback, com.bumptech.glide.request.SingleRequest] */
+    /* WARN: Type inference failed for: r1v1 */
+    /* WARN: Type inference failed for: r1v2 */
+    /* WARN: Type inference failed for: r1v3 */
+    /* WARN: Type inference failed for: r1v4 */
+    /* WARN: Type inference failed for: r1v5 */
+    /* WARN: Type inference failed for: r1v6 */
+    /* WARN: Type inference failed for: r1v7 */
+    /* WARN: Type inference failed for: r1v8 */
+    /* WARN: Type inference failed for: r2v1, types: [com.bumptech.glide.load.engine.Engine] */
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$PrimitiveArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     @Override // com.bumptech.glide.request.target.SizeReadyCallback
     public void onSizeReady(int i, int i2) throws Throwable {
@@ -437,23 +437,23 @@ public final class SingleRequest<R> implements Request, SizeReadyCallback, Resou
         }
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:19:0x0057, code lost:
+    /* WARN: Code restructure failed: missing block: B:19:0x0057, code lost:
     
         if (r7 == null) goto L37;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:35:0x00b6, code lost:
+    /* WARN: Code restructure failed: missing block: B:35:0x00b6, code lost:
     
         if (r7 == null) goto L51;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:37:0x00b9, code lost:
+    /* WARN: Code restructure failed: missing block: B:37:0x00b9, code lost:
     
         return;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:51:?, code lost:
+    /* WARN: Code restructure failed: missing block: B:51:?, code lost:
     
         return;
      */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.bumptech.glide.request.ResourceCallback
     /*
         Code decompiled incorrectly, please refer to instructions dump.

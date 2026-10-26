@@ -6,8 +6,8 @@ import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.HasApiKey;
 import com.google.android.gms.tasks.Task;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 public interface SignInClient extends HasApiKey<zbs> {
     @Deprecated
     Task<BeginSignInResult> beginSignIn(BeginSignInRequest beginSignInRequest);

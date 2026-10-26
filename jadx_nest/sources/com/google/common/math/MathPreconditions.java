@@ -3,7 +3,7 @@ package com.google.common.math;
 import java.math.BigInteger;
 import java.math.RoundingMode;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class MathPreconditions {
     static int checkPositive(String role, int x) {

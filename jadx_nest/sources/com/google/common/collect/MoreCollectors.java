@@ -11,7 +11,7 @@ import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 import kotlin.text.Typography;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class MoreCollectors {
     private static final Collector<Object, ?, Optional<Object>> TO_OPTIONAL = Collector.of(new MoreCollectors$$ExternalSyntheticLambda0(), new MoreCollectors$$ExternalSyntheticLambda1(), new MoreCollectors$$ExternalSyntheticLambda2(), new MoreCollectors$$ExternalSyntheticLambda3(), Collector.Characteristics.UNORDERED);
@@ -41,7 +41,7 @@ final class MoreCollectors {
         return (Collector<T, ?, T>) ONLY_ELEMENT;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class ToOptionalState {
         static final int MAX_EXTRAS = 4;
 

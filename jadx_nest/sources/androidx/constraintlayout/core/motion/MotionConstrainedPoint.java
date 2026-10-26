@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.LinkedHashMap;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MotionConstrainedPoint implements Comparable<MotionConstrainedPoint> {
     static final int CARTESIAN = 2;
     public static final boolean DEBUG = false;
@@ -189,7 +189,7 @@ class MotionConstrainedPoint implements Comparable<MotionConstrainedPoint> {
         }
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public void addValues(HashMap<String, SplineSet> map, int i) {
         for (String str : map.keySet()) {
             SplineSet splineSet = map.get(str);

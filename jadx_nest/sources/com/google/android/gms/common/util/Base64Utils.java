@@ -3,8 +3,8 @@ package com.google.android.gms.common.util;
 import android.util.Base64;
 import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class Base64Utils {
     public static byte[] decode(String str) {
         if (str == null) {

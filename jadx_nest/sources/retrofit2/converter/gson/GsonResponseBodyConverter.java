@@ -9,7 +9,7 @@ import java.io.IOException;
 import okhttp3.ResponseBody;
 import retrofit2.Converter;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 final class GsonResponseBodyConverter<T> implements Converter<ResponseBody, T> {
     private final TypeAdapter<T> adapter;
     private final Gson gson;

@@ -5,7 +5,7 @@ import com.google.common.escape.UnicodeEscaper;
 import javax.annotation.CheckForNull;
 import net.lingala.zip4j.crypto.PBKDF2.BinTools;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class PercentEscaper extends UnicodeEscaper {
     private static final char[] PLUS_SIGN = {'+'};

@@ -16,7 +16,7 @@ import org.apache.http.util.Asserts;
 import org.apache.http.util.ByteArrayBuffer;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SessionInputBufferImpl implements SessionInputBuffer, BufferInfo {
     private final byte[] buffer;
     private int bufferLen;

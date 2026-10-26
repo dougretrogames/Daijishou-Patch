@@ -6,8 +6,8 @@ import com.google.android.gms.common.data.AbstractDataBuffer;
 import com.google.android.gms.common.data.DataBuffer;
 import java.util.Iterator;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public class DataBufferResponse<T, R extends AbstractDataBuffer<T> & Result> extends Response<R> implements DataBuffer<T> {
     public DataBufferResponse() {
     }
@@ -52,8 +52,8 @@ public class DataBufferResponse<T, R extends AbstractDataBuffer<T> & Result> ext
         return ((AbstractDataBuffer) getResult()).singleRefIterator();
     }
 
-    /* JADX WARN: Incorrect types in method signature: (TR;)V */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Incorrect types in method signature: (TR;)V */
+    /* WARN: Multi-variable type inference failed */
     public DataBufferResponse(AbstractDataBuffer abstractDataBuffer) {
         super(abstractDataBuffer);
     }

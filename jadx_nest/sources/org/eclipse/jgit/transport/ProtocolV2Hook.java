@@ -1,6 +1,6 @@
 package org.eclipse.jgit.transport;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface ProtocolV2Hook {
     public static final ProtocolV2Hook DEFAULT = new AnonymousClass1();
 
@@ -16,7 +16,7 @@ public interface ProtocolV2Hook {
     default void onObjectInfo(ObjectInfoRequest objectInfoRequest) throws ServiceMayNotContinueException {
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.ProtocolV2Hook$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.ProtocolV2Hook$1, reason: invalid class name */
     class AnonymousClass1 implements ProtocolV2Hook {
         AnonymousClass1() {
         }

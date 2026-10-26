@@ -3,8 +3,8 @@ package org.apache.commons.io.file;
 import java.nio.file.Path;
 import java.util.function.Predicate;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class PathUtils$$ExternalSyntheticLambda0 implements Predicate {
     public final /* synthetic */ PathFilter f$0;
     public final /* synthetic */ boolean f$1;

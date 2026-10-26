@@ -7,7 +7,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.codec.language.Soundex;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Deadline implements Comparable<Deadline> {
     private static final long MAX_OFFSET;
     private static final long MIN_OFFSET;

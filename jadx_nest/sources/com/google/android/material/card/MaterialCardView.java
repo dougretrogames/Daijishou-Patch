@@ -22,7 +22,7 @@ import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialCardView extends CardView implements Checkable, Shapeable {
     private static final String ACCESSIBILITY_CLASS_NAME = "androidx.cardview.widget.CardView";
     public static final int CHECKED_ICON_GRAVITY_BOTTOM_END = 8388693;
@@ -56,7 +56,7 @@ public class MaterialCardView extends CardView implements Checkable, Shapeable {
         this(context, attributeSet, com.google.android.material.R.attr.materialCardViewStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public MaterialCardView(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);

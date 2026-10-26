@@ -14,7 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class NameResolverRegistry {
     private static final String UNKNOWN_SCHEME = "unknown";
     private static NameResolverRegistry instance;

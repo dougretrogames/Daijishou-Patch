@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Objects;
 import org.apache.commons.collections4.Equator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultEquator<T> implements Equator<T>, Serializable {
     public static final int HASHCODE_NULL = -1;
     public static final DefaultEquator INSTANCE = new DefaultEquator();

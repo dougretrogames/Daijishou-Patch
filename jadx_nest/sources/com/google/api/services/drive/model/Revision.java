@@ -6,13 +6,13 @@ import com.google.api.client.util.DateTime;
 import com.google.api.client.util.Key;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Revision extends GenericJson {
 
     @Key
     private Map<String, String> exportLinks;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     @Key
     private String f49id;
 

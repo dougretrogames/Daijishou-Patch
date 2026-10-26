@@ -28,8 +28,8 @@ import kotlin.ReplaceWith;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: LayoutNodeDrawScope.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: LayoutNodeDrawScope.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000ü\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\b\b\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u000f\u0012\b\b\u0002\u0010\u0003\u001a\u00020\u0004¢\u0006\u0002\u0010\u0005J2\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010!\u001a\u00020\"2\u0006\u0010\u0012\u001a\u00020#H\u0000ø\u0001\u0000¢\u0006\u0004\b$\u0010%Jq\u0010&\u001a\u00020\u001e2\u0006\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020\u000b2\u0006\u0010*\u001a\u00020\u000b2\u0006\u0010+\u001a\u00020,2\b\b\u0002\u0010-\u001a\u00020\u00072\b\b\u0002\u0010\u001a\u001a\u00020\u001b2\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\b5\u00106Jq\u0010&\u001a\u00020\u001e2\u0006\u00107\u001a\u0002082\u0006\u0010)\u001a\u00020\u000b2\u0006\u0010*\u001a\u00020\u000b2\u0006\u0010+\u001a\u00020,2\b\b\u0002\u0010-\u001a\u00020\u00072\b\b\u0002\u0010\u001a\u001a\u00020\u001b2\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\b9\u0010:JY\u0010;\u001a\u00020\u001e2\u0006\u0010'\u001a\u00020(2\b\b\u0002\u0010<\u001a\u00020\u000b2\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\b=\u0010>JY\u0010;\u001a\u00020\u001e2\u0006\u00107\u001a\u0002082\b\b\u0002\u0010<\u001a\u00020\u000b2\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\b?\u0010@J\b\u0010A\u001a\u00020\u001eH\u0016J2\u0010B\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010!\u001a\u00020\"2\u0006\u0010\u0012\u001a\u00020\u0013H\u0000ø\u0001\u0000¢\u0006\u0004\bC\u0010DJO\u0010E\u001a\u00020\u001e2\u0006\u0010F\u001a\u00020G2\b\b\u0002\u0010-\u001a\u00020\u00072\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\bH\u0010IJm\u0010E\u001a\u00020\u001e2\u0006\u0010F\u001a\u00020G2\b\b\u0002\u0010J\u001a\u00020K2\b\b\u0002\u0010L\u001a\u00020M2\b\b\u0002\u0010N\u001a\u00020K2\b\b\u0002\u0010O\u001a\u00020M2\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0097\u0001ø\u0001\u0000¢\u0006\u0004\bP\u0010QJw\u0010E\u001a\u00020\u001e2\u0006\u0010F\u001a\u00020G2\b\b\u0002\u0010J\u001a\u00020K2\b\b\u0002\u0010L\u001a\u00020M2\b\b\u0002\u0010N\u001a\u00020K2\b\b\u0002\u0010O\u001a\u00020M2\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u0002042\b\b\u0002\u0010R\u001a\u00020SH\u0096\u0001ø\u0001\u0000¢\u0006\u0004\bT\u0010UJk\u0010V\u001a\u00020\u001e2\u0006\u0010'\u001a\u00020(2\u0006\u0010W\u001a\u00020\u00072\u0006\u0010X\u001a\u00020\u00072\b\b\u0002\u0010Y\u001a\u00020\u000b2\b\b\u0002\u0010Z\u001a\u00020[2\n\b\u0002\u0010\\\u001a\u0004\u0018\u00010]2\b\b\u0003\u0010.\u001a\u00020\u000b2\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\b^\u0010_Jk\u0010V\u001a\u00020\u001e2\u0006\u00107\u001a\u0002082\u0006\u0010W\u001a\u00020\u00072\u0006\u0010X\u001a\u00020\u00072\b\b\u0002\u0010Y\u001a\u00020\u000b2\b\b\u0002\u0010Z\u001a\u00020[2\n\b\u0002\u0010\\\u001a\u0004\u0018\u00010]2\b\b\u0003\u0010.\u001a\u00020\u000b2\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\b`\u0010aJY\u0010b\u001a\u00020\u001e2\u0006\u0010'\u001a\u00020(2\b\b\u0002\u0010-\u001a\u00020\u00072\b\b\u0002\u0010\u001a\u001a\u00020\u001b2\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\bc\u0010dJY\u0010b\u001a\u00020\u001e2\u0006\u00107\u001a\u0002082\b\b\u0002\u0010-\u001a\u00020\u00072\b\b\u0002\u0010\u001a\u001a\u00020\u001b2\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\be\u0010fJM\u0010g\u001a\u00020\u001e2\u0006\u0010h\u001a\u00020i2\u0006\u0010'\u001a\u00020(2\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\bj\u0010kJM\u0010g\u001a\u00020\u001e2\u0006\u0010h\u001a\u00020i2\u0006\u00107\u001a\u0002082\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\bl\u0010mJq\u0010n\u001a\u00020\u001e2\f\u0010o\u001a\b\u0012\u0004\u0012\u00020\u00070p2\u0006\u0010q\u001a\u00020r2\u0006\u0010'\u001a\u00020(2\b\b\u0002\u0010Y\u001a\u00020\u000b2\b\b\u0002\u0010Z\u001a\u00020[2\n\b\u0002\u0010\\\u001a\u0004\u0018\u00010]2\b\b\u0003\u0010.\u001a\u00020\u000b2\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\bs\u0010tJq\u0010n\u001a\u00020\u001e2\f\u0010o\u001a\b\u0012\u0004\u0012\u00020\u00070p2\u0006\u0010q\u001a\u00020r2\u0006\u00107\u001a\u0002082\b\b\u0002\u0010Y\u001a\u00020\u000b2\b\b\u0002\u0010Z\u001a\u00020[2\n\b\u0002\u0010\\\u001a\u0004\u0018\u00010]2\b\b\u0003\u0010.\u001a\u00020\u000b2\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\bu\u0010vJY\u0010w\u001a\u00020\u001e2\u0006\u0010'\u001a\u00020(2\b\b\u0002\u0010-\u001a\u00020\u00072\b\b\u0002\u0010\u001a\u001a\u00020\u001b2\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\bx\u0010dJY\u0010w\u001a\u00020\u001e2\u0006\u00107\u001a\u0002082\b\b\u0002\u0010-\u001a\u00020\u00072\b\b\u0002\u0010\u001a\u001a\u00020\u001b2\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\by\u0010fJc\u0010z\u001a\u00020\u001e2\u0006\u0010'\u001a\u00020(2\b\b\u0002\u0010-\u001a\u00020\u00072\b\b\u0002\u0010\u001a\u001a\u00020\u001b2\b\b\u0002\u0010{\u001a\u00020|2\b\b\u0003\u0010.\u001a\u00020\u000b2\b\b\u0002\u0010/\u001a\u0002002\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0004\b}\u0010~Jd\u0010z\u001a\u00020\u001e2\u0006\u00107\u001a\u0002082\b\b\u0002\u0010-\u001a\u00020\u00072\b\b\u0002\u0010\u001a\u001a\u00020\u001b2\b\b\u0002\u0010{\u001a\u00020|2\b\b\u0002\u0010/\u001a\u0002002\b\b\u0003\u0010.\u001a\u00020\u000b2\n\b\u0002\u00101\u001a\u0004\u0018\u0001022\b\b\u0002\u00103\u001a\u000204H\u0096\u0001ø\u0001\u0000¢\u0006\u0005\b\u007f\u0010\u0080\u0001J\u0013\u0010\u0081\u0001\u001a\u00020\u001e*\u00020\u00132\u0006\u0010\u001f\u001a\u00020 J\u001c\u0010\u0082\u0001\u001a\u00030\u0083\u0001*\u00030\u0084\u0001H\u0097\u0001ø\u0001\u0000¢\u0006\u0006\b\u0085\u0001\u0010\u0086\u0001J\u001c\u0010\u0082\u0001\u001a\u00030\u0083\u0001*\u00030\u0087\u0001H\u0097\u0001ø\u0001\u0000¢\u0006\u0006\b\u0088\u0001\u0010\u0089\u0001J\u001c\u0010\u008a\u0001\u001a\u00030\u0084\u0001*\u00030\u0087\u0001H\u0097\u0001ø\u0001\u0000¢\u0006\u0006\b\u008b\u0001\u0010\u008c\u0001J\u001e\u0010\u008a\u0001\u001a\u00030\u0084\u0001*\u00020\u000bH\u0097\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0006\b\u008d\u0001\u0010\u008e\u0001J\u001f\u0010\u008a\u0001\u001a\u00030\u0084\u0001*\u00030\u0083\u0001H\u0097\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0006\b\u008d\u0001\u0010\u008f\u0001J\u001b\u0010\u0090\u0001\u001a\u00030\u0091\u0001*\u00020\u001bH\u0097\u0001ø\u0001\u0000¢\u0006\u0006\b\u0092\u0001\u0010\u0093\u0001J\u001b\u0010\u0094\u0001\u001a\u00020\u000b*\u00030\u0084\u0001H\u0097\u0001ø\u0001\u0000¢\u0006\u0006\b\u0095\u0001\u0010\u008e\u0001J\u001b\u0010\u0094\u0001\u001a\u00020\u000b*\u00030\u0087\u0001H\u0097\u0001ø\u0001\u0000¢\u0006\u0006\b\u0096\u0001\u0010\u008c\u0001J\u0010\u0010\u0097\u0001\u001a\u00030\u0098\u0001*\u00030\u0099\u0001H\u0097\u0001J\u001b\u0010\u009a\u0001\u001a\u00020\u001b*\u00030\u0091\u0001H\u0097\u0001ø\u0001\u0000¢\u0006\u0006\b\u009b\u0001\u0010\u0093\u0001J\u001c\u0010\u009c\u0001\u001a\u00030\u0087\u0001*\u00030\u0084\u0001H\u0097\u0001ø\u0001\u0000¢\u0006\u0006\b\u009d\u0001\u0010\u009e\u0001J\u001e\u0010\u009c\u0001\u001a\u00030\u0087\u0001*\u00020\u000bH\u0097\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0006\b\u009f\u0001\u0010\u009e\u0001J\u001f\u0010\u009c\u0001\u001a\u00030\u0087\u0001*\u00030\u0083\u0001H\u0097\u0001ø\u0001\u0001ø\u0001\u0000¢\u0006\u0006\b\u009f\u0001\u0010 \u0001R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0006\u001a\u00020\u00078VX\u0096\u0005ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\b\u0010\tR\u0014\u0010\n\u001a\u00020\u000b8\u0016X\u0097\u0005¢\u0006\u0006\u001a\u0004\b\f\u0010\rR\u0012\u0010\u000e\u001a\u00020\u000fX\u0096\u0005¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011R\u0010\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0014\u001a\u00020\u000b8\u0016X\u0097\u0005¢\u0006\u0006\u001a\u0004\b\u0015\u0010\rR\u0012\u0010\u0016\u001a\u00020\u0017X\u0096\u0005¢\u0006\u0006\u001a\u0004\b\u0018\u0010\u0019R\u001a\u0010\u001a\u001a\u00020\u001b8VX\u0096\u0005ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u001c\u0010\t\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006¡\u0001"}, d2 = {"Landroidx/compose/ui/node/LayoutNodeDrawScope;", "Landroidx/compose/ui/graphics/drawscope/DrawScope;", "Landroidx/compose/ui/graphics/drawscope/ContentDrawScope;", "canvasDrawScope", "Landroidx/compose/ui/graphics/drawscope/CanvasDrawScope;", "(Landroidx/compose/ui/graphics/drawscope/CanvasDrawScope;)V", "center", "Landroidx/compose/ui/geometry/Offset;", "getCenter-F1C5BW0", "()J", "density", "", "getDensity", "()F", "drawContext", "Landroidx/compose/ui/graphics/drawscope/DrawContext;", "getDrawContext", "()Landroidx/compose/ui/graphics/drawscope/DrawContext;", "drawNode", "Landroidx/compose/ui/node/DrawModifierNode;", "fontScale", "getFontScale", "layoutDirection", "Landroidx/compose/ui/unit/LayoutDirection;", "getLayoutDirection", "()Landroidx/compose/ui/unit/LayoutDirection;", "size", "Landroidx/compose/ui/geometry/Size;", "getSize-NH-jbRc", "draw", "", "canvas", "Landroidx/compose/ui/graphics/Canvas;", "coordinator", "Landroidx/compose/ui/node/NodeCoordinator;", "Landroidx/compose/ui/Modifier$Node;", "draw-x_KDEd0$ui_release", "(Landroidx/compose/ui/graphics/Canvas;JLandroidx/compose/ui/node/NodeCoordinator;Landroidx/compose/ui/Modifier$Node;)V", "drawArc", "brush", "Landroidx/compose/ui/graphics/Brush;", "startAngle", "sweepAngle", "useCenter", "", "topLeft", "alpha", "style", "Landroidx/compose/ui/graphics/drawscope/DrawStyle;", "colorFilter", "Landroidx/compose/ui/graphics/ColorFilter;", "blendMode", "Landroidx/compose/ui/graphics/BlendMode;", "drawArc-illE91I", "(Landroidx/compose/ui/graphics/Brush;FFZJJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V", TypedValues.Custom.S_COLOR, "Landroidx/compose/ui/graphics/Color;", "drawArc-yD3GUKo", "(JFFZJJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V", "drawCircle", "radius", "drawCircle-V9BoPsw", "(Landroidx/compose/ui/graphics/Brush;FJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V", "drawCircle-VaOC9Bg", "(JFJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V", "drawContent", "drawDirect", "drawDirect-x_KDEd0$ui_release", "(Landroidx/compose/ui/graphics/Canvas;JLandroidx/compose/ui/node/NodeCoordinator;Landroidx/compose/ui/node/DrawModifierNode;)V", "drawImage", "image", "Landroidx/compose/ui/graphics/ImageBitmap;", "drawImage-gbVJVH8", "(Landroidx/compose/ui/graphics/ImageBitmap;JFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V", "srcOffset", "Landroidx/compose/ui/unit/IntOffset;", "srcSize", "Landroidx/compose/ui/unit/IntSize;", "dstOffset", "dstSize", "drawImage-9jGpkUE", "(Landroidx/compose/ui/graphics/ImageBitmap;JJJJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V", "filterQuality", "Landroidx/compose/ui/graphics/FilterQuality;", "drawImage-AZ2fEMs", "(Landroidx/compose/ui/graphics/ImageBitmap;JJJJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;II)V", "drawLine", "start", "end", "strokeWidth", "cap", "Landroidx/compose/ui/graphics/StrokeCap;", "pathEffect", "Landroidx/compose/ui/graphics/PathEffect;", "drawLine-1RTmtNc", "(Landroidx/compose/ui/graphics/Brush;JJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;I)V", "drawLine-NGM6Ib0", "(JJJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;I)V", "drawOval", "drawOval-AsUm42w", "(Landroidx/compose/ui/graphics/Brush;JJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V", "drawOval-n-J9OG0", "(JJJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V", "drawPath", "path", "Landroidx/compose/ui/graphics/Path;", "drawPath-GBMwjPU", "(Landroidx/compose/ui/graphics/Path;Landroidx/compose/ui/graphics/Brush;FLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V", "drawPath-LG529CI", "(Landroidx/compose/ui/graphics/Path;JFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V", "drawPoints", "points", "", "pointMode", "Landroidx/compose/ui/graphics/PointMode;", "drawPoints-Gsft0Ws", "(Ljava/util/List;ILandroidx/compose/ui/graphics/Brush;FILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;I)V", "drawPoints-F8ZwMP8", "(Ljava/util/List;IJFILandroidx/compose/ui/graphics/PathEffect;FLandroidx/compose/ui/graphics/ColorFilter;I)V", "drawRect", "drawRect-AsUm42w", "drawRect-n-J9OG0", "drawRoundRect", "cornerRadius", "Landroidx/compose/ui/geometry/CornerRadius;", "drawRoundRect-ZuiqVtQ", "(Landroidx/compose/ui/graphics/Brush;JJJFLandroidx/compose/ui/graphics/drawscope/DrawStyle;Landroidx/compose/ui/graphics/ColorFilter;I)V", "drawRoundRect-u-Aw5IA", "(JJJJLandroidx/compose/ui/graphics/drawscope/DrawStyle;FLandroidx/compose/ui/graphics/ColorFilter;I)V", "performDraw", "roundToPx", "", "Landroidx/compose/ui/unit/Dp;", "roundToPx-0680j_4", "(F)I", "Landroidx/compose/ui/unit/TextUnit;", "roundToPx--R2X_6o", "(J)I", "toDp", "toDp-GaN1DYA", "(J)F", "toDp-u2uoSUM", "(F)F", "(I)F", "toDpSize", "Landroidx/compose/ui/unit/DpSize;", "toDpSize-k-rfVVM", "(J)J", "toPx", "toPx-0680j_4", "toPx--R2X_6o", "toRect", "Landroidx/compose/ui/geometry/Rect;", "Landroidx/compose/ui/unit/DpRect;", "toSize", "toSize-XkaWNTQ", "toSp", "toSp-0xMU5do", "(F)J", "toSp-kPz2Gy4", "(I)J", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class LayoutNodeDrawScope implements DrawScope, ContentDrawScope {
     public static final int $stable = 0;
@@ -41,122 +41,122 @@ public final class LayoutNodeDrawScope implements DrawScope, ContentDrawScope {
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawArc-illE91I */
+    /* INFO: renamed from: drawArc-illE91I */
     public void mo982drawArcillE91I(Brush brush, float startAngle, float sweepAngle, boolean useCenter, long topLeft, long size, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo982drawArcillE91I(brush, startAngle, sweepAngle, useCenter, topLeft, size, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawArc-yD3GUKo */
+    /* INFO: renamed from: drawArc-yD3GUKo */
     public void mo983drawArcyD3GUKo(long color, float startAngle, float sweepAngle, boolean useCenter, long topLeft, long size, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo983drawArcyD3GUKo(color, startAngle, sweepAngle, useCenter, topLeft, size, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawCircle-V9BoPsw */
+    /* INFO: renamed from: drawCircle-V9BoPsw */
     public void mo984drawCircleV9BoPsw(Brush brush, float radius, long center, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo984drawCircleV9BoPsw(brush, radius, center, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawCircle-VaOC9Bg */
+    /* INFO: renamed from: drawCircle-VaOC9Bg */
     public void mo985drawCircleVaOC9Bg(long color, float radius, long center, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo985drawCircleVaOC9Bg(color, radius, center, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
     @Deprecated(level = DeprecationLevel.HIDDEN, message = "Prefer usage of drawImage that consumes an optional FilterQuality parameter", replaceWith = @ReplaceWith(expression = "drawImage(image, srcOffset, srcSize, dstOffset, dstSize, alpha, style, colorFilter, blendMode, FilterQuality.Low)", imports = {"androidx.compose.ui.graphics.drawscope", "androidx.compose.ui.graphics.FilterQuality"}))
-    /* JADX INFO: renamed from: drawImage-9jGpkUE */
+    /* INFO: renamed from: drawImage-9jGpkUE */
     public /* synthetic */ void mo986drawImage9jGpkUE(ImageBitmap image, long srcOffset, long srcSize, long dstOffset, long dstSize, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo986drawImage9jGpkUE(image, srcOffset, srcSize, dstOffset, dstSize, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawImage-AZ2fEMs */
+    /* INFO: renamed from: drawImage-AZ2fEMs */
     public void mo987drawImageAZ2fEMs(ImageBitmap image, long srcOffset, long srcSize, long dstOffset, long dstSize, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode, int filterQuality) {
         this.canvasDrawScope.mo987drawImageAZ2fEMs(image, srcOffset, srcSize, dstOffset, dstSize, alpha, style, colorFilter, blendMode, filterQuality);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawImage-gbVJVH8 */
+    /* INFO: renamed from: drawImage-gbVJVH8 */
     public void mo988drawImagegbVJVH8(ImageBitmap image, long topLeft, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo988drawImagegbVJVH8(image, topLeft, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawLine-1RTmtNc */
+    /* INFO: renamed from: drawLine-1RTmtNc */
     public void mo989drawLine1RTmtNc(Brush brush, long start, long end, float strokeWidth, int cap, PathEffect pathEffect, float alpha, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo989drawLine1RTmtNc(brush, start, end, strokeWidth, cap, pathEffect, alpha, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawLine-NGM6Ib0 */
+    /* INFO: renamed from: drawLine-NGM6Ib0 */
     public void mo990drawLineNGM6Ib0(long color, long start, long end, float strokeWidth, int cap, PathEffect pathEffect, float alpha, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo990drawLineNGM6Ib0(color, start, end, strokeWidth, cap, pathEffect, alpha, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawOval-AsUm42w */
+    /* INFO: renamed from: drawOval-AsUm42w */
     public void mo991drawOvalAsUm42w(Brush brush, long topLeft, long size, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo991drawOvalAsUm42w(brush, topLeft, size, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawOval-n-J9OG0 */
+    /* INFO: renamed from: drawOval-n-J9OG0 */
     public void mo992drawOvalnJ9OG0(long color, long topLeft, long size, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo992drawOvalnJ9OG0(color, topLeft, size, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawPath-GBMwjPU */
+    /* INFO: renamed from: drawPath-GBMwjPU */
     public void mo993drawPathGBMwjPU(Path path, Brush brush, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo993drawPathGBMwjPU(path, brush, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawPath-LG529CI */
+    /* INFO: renamed from: drawPath-LG529CI */
     public void mo994drawPathLG529CI(Path path, long color, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo994drawPathLG529CI(path, color, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawPoints-F8ZwMP8 */
+    /* INFO: renamed from: drawPoints-F8ZwMP8 */
     public void mo995drawPointsF8ZwMP8(List<Offset> points, int pointMode, long color, float strokeWidth, int cap, PathEffect pathEffect, float alpha, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo995drawPointsF8ZwMP8(points, pointMode, color, strokeWidth, cap, pathEffect, alpha, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawPoints-Gsft0Ws */
+    /* INFO: renamed from: drawPoints-Gsft0Ws */
     public void mo996drawPointsGsft0Ws(List<Offset> points, int pointMode, Brush brush, float strokeWidth, int cap, PathEffect pathEffect, float alpha, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo996drawPointsGsft0Ws(points, pointMode, brush, strokeWidth, cap, pathEffect, alpha, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawRect-AsUm42w */
+    /* INFO: renamed from: drawRect-AsUm42w */
     public void mo997drawRectAsUm42w(Brush brush, long topLeft, long size, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo997drawRectAsUm42w(brush, topLeft, size, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawRect-n-J9OG0 */
+    /* INFO: renamed from: drawRect-n-J9OG0 */
     public void mo998drawRectnJ9OG0(long color, long topLeft, long size, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo998drawRectnJ9OG0(color, topLeft, size, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawRoundRect-ZuiqVtQ */
+    /* INFO: renamed from: drawRoundRect-ZuiqVtQ */
     public void mo999drawRoundRectZuiqVtQ(Brush brush, long topLeft, long size, long cornerRadius, float alpha, DrawStyle style, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo999drawRoundRectZuiqVtQ(brush, topLeft, size, cornerRadius, alpha, style, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: drawRoundRect-u-Aw5IA */
+    /* INFO: renamed from: drawRoundRect-u-Aw5IA */
     public void mo1000drawRoundRectuAw5IA(long color, long topLeft, long size, long cornerRadius, DrawStyle style, float alpha, ColorFilter colorFilter, int blendMode) {
         this.canvasDrawScope.mo1000drawRoundRectuAw5IA(color, topLeft, size, cornerRadius, style, alpha, colorFilter, blendMode);
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: getCenter-F1C5BW0 */
+    /* INFO: renamed from: getCenter-F1C5BW0 */
     public long mo1080getCenterF1C5BW0() {
         return this.canvasDrawScope.mo1080getCenterF1C5BW0();
     }
@@ -182,55 +182,55 @@ public final class LayoutNodeDrawScope implements DrawScope, ContentDrawScope {
     }
 
     @Override // androidx.compose.ui.graphics.drawscope.DrawScope
-    /* JADX INFO: renamed from: getSize-NH-jbRc */
+    /* INFO: renamed from: getSize-NH-jbRc */
     public long mo1081getSizeNHjbRc() {
         return this.canvasDrawScope.mo1081getSizeNHjbRc();
     }
 
     @Override // androidx.compose.ui.unit.Density
-    /* JADX INFO: renamed from: roundToPx--R2X_6o */
+    /* INFO: renamed from: roundToPx--R2X_6o */
     public int mo1778roundToPxR2X_6o(long j) {
         return this.canvasDrawScope.mo1778roundToPxR2X_6o(j);
     }
 
     @Override // androidx.compose.ui.unit.Density
-    /* JADX INFO: renamed from: roundToPx-0680j_4 */
+    /* INFO: renamed from: roundToPx-0680j_4 */
     public int mo1779roundToPx0680j_4(float f) {
         return this.canvasDrawScope.mo1779roundToPx0680j_4(f);
     }
 
     @Override // androidx.compose.ui.unit.FontScaling
-    /* JADX INFO: renamed from: toDp-GaN1DYA */
+    /* INFO: renamed from: toDp-GaN1DYA */
     public float mo1780toDpGaN1DYA(long j) {
         return this.canvasDrawScope.mo1780toDpGaN1DYA(j);
     }
 
     @Override // androidx.compose.ui.unit.Density
-    /* JADX INFO: renamed from: toDp-u2uoSUM */
+    /* INFO: renamed from: toDp-u2uoSUM */
     public float mo1781toDpu2uoSUM(float f) {
         return this.canvasDrawScope.mo1781toDpu2uoSUM(f);
     }
 
     @Override // androidx.compose.ui.unit.Density
-    /* JADX INFO: renamed from: toDp-u2uoSUM */
+    /* INFO: renamed from: toDp-u2uoSUM */
     public float mo1782toDpu2uoSUM(int i) {
         return this.canvasDrawScope.mo1782toDpu2uoSUM(i);
     }
 
     @Override // androidx.compose.ui.unit.Density
-    /* JADX INFO: renamed from: toDpSize-k-rfVVM */
+    /* INFO: renamed from: toDpSize-k-rfVVM */
     public long mo1783toDpSizekrfVVM(long j) {
         return this.canvasDrawScope.mo1783toDpSizekrfVVM(j);
     }
 
     @Override // androidx.compose.ui.unit.Density
-    /* JADX INFO: renamed from: toPx--R2X_6o */
+    /* INFO: renamed from: toPx--R2X_6o */
     public float mo1784toPxR2X_6o(long j) {
         return this.canvasDrawScope.mo1784toPxR2X_6o(j);
     }
 
     @Override // androidx.compose.ui.unit.Density
-    /* JADX INFO: renamed from: toPx-0680j_4 */
+    /* INFO: renamed from: toPx-0680j_4 */
     public float mo1785toPx0680j_4(float f) {
         return this.canvasDrawScope.mo1785toPx0680j_4(f);
     }
@@ -241,25 +241,25 @@ public final class LayoutNodeDrawScope implements DrawScope, ContentDrawScope {
     }
 
     @Override // androidx.compose.ui.unit.Density
-    /* JADX INFO: renamed from: toSize-XkaWNTQ */
+    /* INFO: renamed from: toSize-XkaWNTQ */
     public long mo1786toSizeXkaWNTQ(long j) {
         return this.canvasDrawScope.mo1786toSizeXkaWNTQ(j);
     }
 
     @Override // androidx.compose.ui.unit.FontScaling
-    /* JADX INFO: renamed from: toSp-0xMU5do */
+    /* INFO: renamed from: toSp-0xMU5do */
     public long mo1787toSp0xMU5do(float f) {
         return this.canvasDrawScope.mo1787toSp0xMU5do(f);
     }
 
     @Override // androidx.compose.ui.unit.Density
-    /* JADX INFO: renamed from: toSp-kPz2Gy4 */
+    /* INFO: renamed from: toSp-kPz2Gy4 */
     public long mo1788toSpkPz2Gy4(float f) {
         return this.canvasDrawScope.mo1788toSpkPz2Gy4(f);
     }
 
     @Override // androidx.compose.ui.unit.Density
-    /* JADX INFO: renamed from: toSp-kPz2Gy4 */
+    /* INFO: renamed from: toSp-kPz2Gy4 */
     public long mo1789toSpkPz2Gy4(int i) {
         return this.canvasDrawScope.mo1789toSpkPz2Gy4(i);
     }
@@ -272,8 +272,8 @@ public final class LayoutNodeDrawScope implements DrawScope, ContentDrawScope {
         this((i & 1) != 0 ? new CanvasDrawScope() : canvasDrawScope);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r3v8 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r3v8 */
     @Override // androidx.compose.ui.graphics.drawscope.ContentDrawScope
     public void drawContent() {
         Canvas canvas = getDrawContext().getCanvas();
@@ -334,7 +334,7 @@ public final class LayoutNodeDrawScope implements DrawScope, ContentDrawScope {
         nodeCoordinatorM1931requireCoordinator64DMado.getLayoutNode().getMDrawScope$ui_release().m1968drawDirectx_KDEd0$ui_release(canvas, IntSizeKt.m3064toSizeozmzZPI(nodeCoordinatorM1931requireCoordinator64DMado.mo1831getSizeYbymL2g()), nodeCoordinatorM1931requireCoordinator64DMado, drawModifierNode);
     }
 
-    /* JADX INFO: renamed from: drawDirect-x_KDEd0$ui_release, reason: not valid java name */
+    /* INFO: renamed from: drawDirect-x_KDEd0$ui_release, reason: not valid java name */
     public final void m1968drawDirectx_KDEd0$ui_release(Canvas canvas, long size, NodeCoordinator coordinator, DrawModifierNode drawNode) {
         DrawModifierNode drawModifierNode = this.drawNode;
         this.drawNode = drawNode;
@@ -361,7 +361,7 @@ public final class LayoutNodeDrawScope implements DrawScope, ContentDrawScope {
         this.drawNode = drawModifierNode;
     }
 
-    /* JADX INFO: renamed from: draw-x_KDEd0$ui_release, reason: not valid java name */
+    /* INFO: renamed from: draw-x_KDEd0$ui_release, reason: not valid java name */
     public final void m1967drawx_KDEd0$ui_release(Canvas canvas, long size, NodeCoordinator coordinator, Modifier.Node drawNode) {
         Canvas canvas2;
         long j;

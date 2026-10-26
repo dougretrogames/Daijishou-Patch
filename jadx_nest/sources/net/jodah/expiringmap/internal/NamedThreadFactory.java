@@ -3,7 +3,7 @@ package net.jodah.expiringmap.internal;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NamedThreadFactory implements ThreadFactory {
     private final String nameFormat;
     private final AtomicInteger threadNumber = new AtomicInteger(1);

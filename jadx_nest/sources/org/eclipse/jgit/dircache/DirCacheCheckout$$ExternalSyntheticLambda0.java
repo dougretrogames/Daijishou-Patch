@@ -3,8 +3,8 @@ package org.eclipse.jgit.dircache;
 import java.io.InputStream;
 import org.eclipse.jgit.lib.ObjectLoader;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class DirCacheCheckout$$ExternalSyntheticLambda0 implements DirCacheCheckout.StreamSupplier {
     public final /* synthetic */ ObjectLoader f$0;
 

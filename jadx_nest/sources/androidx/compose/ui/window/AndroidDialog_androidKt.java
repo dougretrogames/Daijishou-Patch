@@ -48,13 +48,13 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: AndroidDialog.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AndroidDialog.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000$\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a8\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\u0011\u0010\u0006\u001a\r\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\u0007H\u0007¢\u0006\u0002\u0010\b\u001a*\u0010\t\u001a\u00020\u00012\b\b\u0002\u0010\n\u001a\u00020\u000b2\u0011\u0010\u0006\u001a\r\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\u0007H\u0003¢\u0006\u0002\u0010\f¨\u0006\r²\u0006\u0015\u0010\u000e\u001a\r\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\u0007X\u008a\u0084\u0002"}, d2 = {"Dialog", "", "onDismissRequest", "Lkotlin/Function0;", "properties", "Landroidx/compose/ui/window/DialogProperties;", "content", "Landroidx/compose/runtime/Composable;", "(Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/window/DialogProperties;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V", "DialogLayout", "modifier", "Landroidx/compose/ui/Modifier;", "(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V", "ui_release", "currentContent"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class AndroidDialog_androidKt {
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$Dialog$3, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidDialog.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$Dialog$3, reason: invalid class name */
+    /* INFO: compiled from: AndroidDialog.android.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass3 extends Lambda implements Function2<Composer, Integer, Unit> {
         final /* synthetic */ int $$changed;
@@ -63,8 +63,8 @@ public final class AndroidDialog_androidKt {
         final /* synthetic */ Function0<Unit> $onDismissRequest;
         final /* synthetic */ DialogProperties $properties;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass3(Function0<Unit> function0, DialogProperties dialogProperties, Function2<? super Composer, ? super Integer, Unit> function2, int i, int i2) {
             super(2);
             this.$onDismissRequest = function0;
@@ -85,8 +85,8 @@ public final class AndroidDialog_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$DialogLayout$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: AndroidDialog.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$DialogLayout$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: AndroidDialog.android.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01412 extends Lambda implements Function2<Composer, Integer, Unit> {
         final /* synthetic */ int $$changed;
@@ -94,8 +94,8 @@ public final class AndroidDialog_androidKt {
         final /* synthetic */ Function2<Composer, Integer, Unit> $content;
         final /* synthetic */ Modifier $modifier;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C01412(Modifier modifier, Function2<? super Composer, ? super Integer, Unit> function2, int i, int i2) {
             super(2);
             this.$modifier = modifier;
@@ -115,19 +115,19 @@ public final class AndroidDialog_androidKt {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:26:0x004b  */
-    /* JADX WARN: Code duplicated, block: B:27:0x004e  */
-    /* JADX WARN: Code duplicated, block: B:29:0x0052  */
-    /* JADX WARN: Code duplicated, block: B:31:0x0058  */
-    /* JADX WARN: Code duplicated, block: B:32:0x005b  */
-    /* JADX WARN: Code duplicated, block: B:40:0x0071 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:41:0x0073  */
-    /* JADX WARN: Code duplicated, block: B:44:0x0088  */
-    /* JADX WARN: Code duplicated, block: B:47:0x0108  */
-    /* JADX WARN: Code duplicated, block: B:51:0x0115  */
-    /* JADX WARN: Code duplicated, block: B:54:0x015b  */
-    /* JADX WARN: Code duplicated, block: B:57:0x0164  */
-    /* JADX WARN: Code duplicated, block: B:59:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:26:0x004b  */
+    /* WARN: Code duplicated, block: B:27:0x004e  */
+    /* WARN: Code duplicated, block: B:29:0x0052  */
+    /* WARN: Code duplicated, block: B:31:0x0058  */
+    /* WARN: Code duplicated, block: B:32:0x005b  */
+    /* WARN: Code duplicated, block: B:40:0x0071 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:41:0x0073  */
+    /* WARN: Code duplicated, block: B:44:0x0088  */
+    /* WARN: Code duplicated, block: B:47:0x0108  */
+    /* WARN: Code duplicated, block: B:51:0x0115  */
+    /* WARN: Code duplicated, block: B:54:0x015b  */
+    /* WARN: Code duplicated, block: B:57:0x0164  */
+    /* WARN: Code duplicated, block: B:59:? A[RETURN, SYNTHETIC] */
     public static final void Dialog(Function0<Unit> function0, DialogProperties dialogProperties, Function2<? super Composer, ? super Integer, Unit> function2, Composer composer, int i, int i2) {
         int i3;
         DialogProperties dialogProperties2;
@@ -345,13 +345,13 @@ public final class AndroidDialog_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$Dialog$1, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidDialog.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$Dialog$1, reason: invalid class name */
+    /* INFO: compiled from: AndroidDialog.android.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "Landroidx/compose/runtime/DisposableEffectResult;", "Landroidx/compose/runtime/DisposableEffectScope;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<DisposableEffectScope, DisposableEffectResult> {
         final /* synthetic */ DialogWrapper $dialog;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(DialogWrapper dialogWrapper) {
             super(1);
             this.$dialog = dialogWrapper;
@@ -364,8 +364,8 @@ public final class AndroidDialog_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$Dialog$2, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidDialog.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$Dialog$2, reason: invalid class name */
+    /* INFO: compiled from: AndroidDialog.android.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda implements Function0<Unit> {
         final /* synthetic */ DialogWrapper $dialog;
@@ -373,7 +373,7 @@ public final class AndroidDialog_androidKt {
         final /* synthetic */ Function0<Unit> $onDismissRequest;
         final /* synthetic */ DialogProperties $properties;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(DialogWrapper dialogWrapper, Function0<Unit> function0, DialogProperties dialogProperties, LayoutDirection layoutDirection) {
             super(0);
             this.$dialog = dialogWrapper;
@@ -388,13 +388,13 @@ public final class AndroidDialog_androidKt {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             this.$dialog.updateParameters(this.$onDismissRequest, this.$properties, this.$layoutDirection);
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void DialogLayout(Modifier modifier, Function2<? super Composer, ? super Integer, Unit> function2, Composer composer, int i, int i2) {
         int i3;
         Composer composerStartRestartGroup = composer.startRestartGroup(-1177876616);
@@ -463,8 +463,8 @@ public final class AndroidDialog_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$DialogLayout$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: AndroidDialog.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$DialogLayout$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: AndroidDialog.android.kt */
     @Metadata(d1 = {"\u0000\u001e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\n¢\u0006\u0004\b\b\u0010\t"}, d2 = {"<anonymous>", "Landroidx/compose/ui/layout/MeasureResult;", "Landroidx/compose/ui/layout/MeasureScope;", "measurables", "", "Landroidx/compose/ui/layout/Measurable;", "constraints", "Landroidx/compose/ui/unit/Constraints;", "measure-3p2s80s", "(Landroidx/compose/ui/layout/MeasureScope;Ljava/util/List;J)Landroidx/compose/ui/layout/MeasureResult;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01401 implements MeasurePolicy {
         public static final C01401 INSTANCE = new C01401();
@@ -472,14 +472,14 @@ public final class AndroidDialog_androidKt {
         C01401() {
         }
 
-        /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$DialogLayout$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: AndroidDialog.android.kt */
+        /* INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$DialogLayout$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: AndroidDialog.android.kt */
         @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Landroidx/compose/ui/layout/Placeable$PlacementScope;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
         static final class C00081 extends Lambda implements Function1<Placeable.PlacementScope, Unit> {
             final /* synthetic */ List<Placeable> $placeables;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             C00081(List<? extends Placeable> list) {
                 super(1);
                 this.$placeables = list;
@@ -491,7 +491,7 @@ public final class AndroidDialog_androidKt {
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Placeable.PlacementScope placementScope) {
                 List<Placeable> list = this.$placeables;
                 int size = list.size();
@@ -502,7 +502,7 @@ public final class AndroidDialog_androidKt {
         }
 
         @Override // androidx.compose.ui.layout.MeasurePolicy
-        /* JADX INFO: renamed from: measure-3p2s80s */
+        /* INFO: renamed from: measure-3p2s80s */
         public final MeasureResult mo1841measure3p2s80s(MeasureScope measureScope, List<? extends Measurable> list, long j) {
             Object obj;
             ArrayList arrayList = new ArrayList(list.size());
@@ -562,7 +562,7 @@ public final class AndroidDialog_androidKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Function2<Composer, Integer, Unit> Dialog$lambda$0(State<? extends Function2<? super Composer, ? super Integer, Unit>> state) {
         return (Function2) state.getValue();
     }

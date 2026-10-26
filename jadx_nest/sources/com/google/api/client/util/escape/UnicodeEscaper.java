@@ -1,6 +1,6 @@
 package com.google.api.client.util.escape;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class UnicodeEscaper extends Escaper {
     private static final int DEST_PAD = 32;
 

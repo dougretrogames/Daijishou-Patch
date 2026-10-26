@@ -4,7 +4,7 @@ import com.google.api.client.http.HttpResponseException;
 import com.google.auth.Retryable;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class GoogleAuthException extends IOException implements Retryable {
     private final boolean isRetryable;
     private final int retryCount;

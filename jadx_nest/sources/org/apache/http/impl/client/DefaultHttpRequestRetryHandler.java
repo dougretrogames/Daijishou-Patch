@@ -19,7 +19,7 @@ import org.apache.http.client.protocol.HttpClientContext;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultHttpRequestRetryHandler implements HttpRequestRetryHandler {
     public static final DefaultHttpRequestRetryHandler INSTANCE = new DefaultHttpRequestRetryHandler();
     private final Set<Class<? extends IOException>> nonRetriableClasses;

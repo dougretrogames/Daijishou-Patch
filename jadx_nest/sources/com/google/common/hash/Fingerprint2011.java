@@ -2,7 +2,7 @@ package com.google.common.hash;
 
 import com.google.common.base.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class Fingerprint2011 extends AbstractNonStreamingHashFunction {
     static final HashFunction FINGERPRINT_2011 = new Fingerprint2011();

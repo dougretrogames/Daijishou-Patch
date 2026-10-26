@@ -6,7 +6,7 @@ import org.apache.maven.execution.MavenSession;
 import org.codehaus.plexus.logging.Logger;
 import org.eclipse.aether.RepositorySystemSession;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class RepositorySessionInjector {
     static void injectRepositorySession(Logger logger, MavenSession mavenSession, Map<String, String> map) {
         try {

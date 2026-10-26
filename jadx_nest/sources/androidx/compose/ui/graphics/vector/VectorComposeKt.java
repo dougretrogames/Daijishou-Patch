@@ -22,13 +22,13 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Lambda;
 import org.eclipse.jgit.lib.FileMode;
 
-/* JADX INFO: compiled from: VectorCompose.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: VectorCompose.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000L\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0007\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\u001a\u0085\u0001\u0010\u0000\u001a\u00020\u00012\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\u00052\b\b\u0002\u0010\t\u001a\u00020\u00052\b\b\u0002\u0010\n\u001a\u00020\u00052\b\b\u0002\u0010\u000b\u001a\u00020\u00052\u000e\b\u0002\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000e0\r2\u0016\u0010\u000f\u001a\u0012\u0012\u0004\u0012\u00020\u00010\u0010¢\u0006\u0002\b\u0011¢\u0006\u0002\b\u0012H\u0007¢\u0006\u0002\u0010\u0013\u001a¦\u0001\u0010\u0014\u001a\u00020\u00012\f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u000e0\r2\b\b\u0002\u0010\u0016\u001a\u00020\u00172\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00192\b\b\u0002\u0010\u001a\u001a\u00020\u00052\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00192\b\b\u0002\u0010\u001c\u001a\u00020\u00052\b\b\u0002\u0010\u001d\u001a\u00020\u00052\b\b\u0002\u0010\u001e\u001a\u00020\u001f2\b\b\u0002\u0010 \u001a\u00020!2\b\b\u0002\u0010\"\u001a\u00020\u00052\b\b\u0002\u0010#\u001a\u00020\u00052\b\b\u0002\u0010$\u001a\u00020\u00052\b\b\u0002\u0010%\u001a\u00020\u0005H\u0007ø\u0001\u0000¢\u0006\u0004\b&\u0010'\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006("}, d2 = {"Group", "", "name", "", Key.ROTATION, "", "pivotX", "pivotY", "scaleX", "scaleY", "translationX", "translationY", "clipPathData", "", "Landroidx/compose/ui/graphics/vector/PathNode;", "content", "Lkotlin/Function0;", "Landroidx/compose/runtime/Composable;", "Landroidx/compose/ui/graphics/vector/VectorComposable;", "(Ljava/lang/String;FFFFFFFLjava/util/List;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V", "Path", "pathData", "pathFillType", "Landroidx/compose/ui/graphics/PathFillType;", "fill", "Landroidx/compose/ui/graphics/Brush;", "fillAlpha", "stroke", "strokeAlpha", "strokeLineWidth", "strokeLineCap", "Landroidx/compose/ui/graphics/StrokeCap;", "strokeLineJoin", "Landroidx/compose/ui/graphics/StrokeJoin;", "strokeLineMiter", "trimPathStart", "trimPathEnd", "trimPathOffset", "Path-9cdaXJ4", "(Ljava/util/List;ILjava/lang/String;Landroidx/compose/ui/graphics/Brush;FLandroidx/compose/ui/graphics/Brush;FFIIFFFFLandroidx/compose/runtime/Composer;III)V", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class VectorComposeKt {
 
-    /* JADX INFO: renamed from: androidx.compose.ui.graphics.vector.VectorComposeKt$Group$4, reason: invalid class name */
-    /* JADX INFO: compiled from: VectorCompose.kt */
+    /* INFO: renamed from: androidx.compose.ui.graphics.vector.VectorComposeKt$Group$4, reason: invalid class name */
+    /* INFO: compiled from: VectorCompose.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass4 extends Lambda implements Function2<Composer, Integer, Unit> {
         final /* synthetic */ int $$changed;
@@ -44,8 +44,8 @@ public final class VectorComposeKt {
         final /* synthetic */ float $translationX;
         final /* synthetic */ float $translationY;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass4(String str, float f, float f2, float f3, float f4, float f5, float f6, float f7, List<? extends PathNode> list, Function2<? super Composer, ? super Integer, Unit> function2, int i, int i2) {
             super(2);
             this.$name = str;
@@ -73,67 +73,67 @@ public final class VectorComposeKt {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:102:0x0131  */
-    /* JADX WARN: Code duplicated, block: B:104:0x013c  */
-    /* JADX WARN: Code duplicated, block: B:109:0x0153  */
-    /* JADX WARN: Code duplicated, block: B:112:0x015f  */
-    /* JADX WARN: Code duplicated, block: B:119:0x0176 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:120:0x0178  */
-    /* JADX WARN: Code duplicated, block: B:123:0x017e  */
-    /* JADX WARN: Code duplicated, block: B:125:0x0181  */
-    /* JADX WARN: Code duplicated, block: B:127:0x0184  */
-    /* JADX WARN: Code duplicated, block: B:130:0x0189  */
-    /* JADX WARN: Code duplicated, block: B:131:0x018b  */
-    /* JADX WARN: Code duplicated, block: B:134:0x0190  */
-    /* JADX WARN: Code duplicated, block: B:136:0x0193  */
-    /* JADX WARN: Code duplicated, block: B:137:0x0195  */
-    /* JADX WARN: Code duplicated, block: B:140:0x019a  */
-    /* JADX WARN: Code duplicated, block: B:142:0x019e  */
-    /* JADX WARN: Code duplicated, block: B:143:0x01a4  */
-    /* JADX WARN: Code duplicated, block: B:146:0x01af  */
-    /* JADX WARN: Code duplicated, block: B:147:0x01bb  */
-    /* JADX WARN: Code duplicated, block: B:150:0x01d4  */
-    /* JADX WARN: Code duplicated, block: B:153:0x01e0  */
-    /* JADX WARN: Code duplicated, block: B:154:0x01e4  */
-    /* JADX WARN: Code duplicated, block: B:157:0x0268  */
-    /* JADX WARN: Code duplicated, block: B:161:0x0279  */
-    /* JADX WARN: Code duplicated, block: B:163:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:26:0x0052  */
-    /* JADX WARN: Code duplicated, block: B:27:0x0055  */
-    /* JADX WARN: Code duplicated, block: B:29:0x0059  */
-    /* JADX WARN: Code duplicated, block: B:31:0x0061  */
-    /* JADX WARN: Code duplicated, block: B:32:0x0064  */
-    /* JADX WARN: Code duplicated, block: B:37:0x006e  */
-    /* JADX WARN: Code duplicated, block: B:38:0x0071  */
-    /* JADX WARN: Code duplicated, block: B:40:0x0075  */
-    /* JADX WARN: Code duplicated, block: B:42:0x007d  */
-    /* JADX WARN: Code duplicated, block: B:43:0x0080  */
-    /* JADX WARN: Code duplicated, block: B:48:0x008a  */
-    /* JADX WARN: Code duplicated, block: B:49:0x008f  */
-    /* JADX WARN: Code duplicated, block: B:51:0x0098  */
-    /* JADX WARN: Code duplicated, block: B:53:0x009e  */
-    /* JADX WARN: Code duplicated, block: B:54:0x00a1  */
-    /* JADX WARN: Code duplicated, block: B:58:0x00a9  */
-    /* JADX WARN: Code duplicated, block: B:59:0x00b0  */
-    /* JADX WARN: Code duplicated, block: B:61:0x00b8  */
-    /* JADX WARN: Code duplicated, block: B:63:0x00be  */
-    /* JADX WARN: Code duplicated, block: B:64:0x00c1  */
-    /* JADX WARN: Code duplicated, block: B:68:0x00c9  */
-    /* JADX WARN: Code duplicated, block: B:69:0x00d0  */
-    /* JADX WARN: Code duplicated, block: B:71:0x00d8  */
-    /* JADX WARN: Code duplicated, block: B:73:0x00de  */
-    /* JADX WARN: Code duplicated, block: B:74:0x00e1  */
-    /* JADX WARN: Code duplicated, block: B:78:0x00e9  */
-    /* JADX WARN: Code duplicated, block: B:79:0x00ee  */
-    /* JADX WARN: Code duplicated, block: B:81:0x00f4  */
-    /* JADX WARN: Code duplicated, block: B:83:0x00fe  */
-    /* JADX WARN: Code duplicated, block: B:84:0x0101  */
-    /* JADX WARN: Code duplicated, block: B:89:0x010e  */
-    /* JADX WARN: Code duplicated, block: B:92:0x0118  */
-    /* JADX WARN: Code duplicated, block: B:94:0x011c  */
-    /* JADX WARN: Code duplicated, block: B:96:0x0121  */
-    /* JADX WARN: Code duplicated, block: B:98:0x0127  */
-    /* JADX WARN: Code duplicated, block: B:99:0x012a  */
+    /* WARN: Code duplicated, block: B:102:0x0131  */
+    /* WARN: Code duplicated, block: B:104:0x013c  */
+    /* WARN: Code duplicated, block: B:109:0x0153  */
+    /* WARN: Code duplicated, block: B:112:0x015f  */
+    /* WARN: Code duplicated, block: B:119:0x0176 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:120:0x0178  */
+    /* WARN: Code duplicated, block: B:123:0x017e  */
+    /* WARN: Code duplicated, block: B:125:0x0181  */
+    /* WARN: Code duplicated, block: B:127:0x0184  */
+    /* WARN: Code duplicated, block: B:130:0x0189  */
+    /* WARN: Code duplicated, block: B:131:0x018b  */
+    /* WARN: Code duplicated, block: B:134:0x0190  */
+    /* WARN: Code duplicated, block: B:136:0x0193  */
+    /* WARN: Code duplicated, block: B:137:0x0195  */
+    /* WARN: Code duplicated, block: B:140:0x019a  */
+    /* WARN: Code duplicated, block: B:142:0x019e  */
+    /* WARN: Code duplicated, block: B:143:0x01a4  */
+    /* WARN: Code duplicated, block: B:146:0x01af  */
+    /* WARN: Code duplicated, block: B:147:0x01bb  */
+    /* WARN: Code duplicated, block: B:150:0x01d4  */
+    /* WARN: Code duplicated, block: B:153:0x01e0  */
+    /* WARN: Code duplicated, block: B:154:0x01e4  */
+    /* WARN: Code duplicated, block: B:157:0x0268  */
+    /* WARN: Code duplicated, block: B:161:0x0279  */
+    /* WARN: Code duplicated, block: B:163:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:26:0x0052  */
+    /* WARN: Code duplicated, block: B:27:0x0055  */
+    /* WARN: Code duplicated, block: B:29:0x0059  */
+    /* WARN: Code duplicated, block: B:31:0x0061  */
+    /* WARN: Code duplicated, block: B:32:0x0064  */
+    /* WARN: Code duplicated, block: B:37:0x006e  */
+    /* WARN: Code duplicated, block: B:38:0x0071  */
+    /* WARN: Code duplicated, block: B:40:0x0075  */
+    /* WARN: Code duplicated, block: B:42:0x007d  */
+    /* WARN: Code duplicated, block: B:43:0x0080  */
+    /* WARN: Code duplicated, block: B:48:0x008a  */
+    /* WARN: Code duplicated, block: B:49:0x008f  */
+    /* WARN: Code duplicated, block: B:51:0x0098  */
+    /* WARN: Code duplicated, block: B:53:0x009e  */
+    /* WARN: Code duplicated, block: B:54:0x00a1  */
+    /* WARN: Code duplicated, block: B:58:0x00a9  */
+    /* WARN: Code duplicated, block: B:59:0x00b0  */
+    /* WARN: Code duplicated, block: B:61:0x00b8  */
+    /* WARN: Code duplicated, block: B:63:0x00be  */
+    /* WARN: Code duplicated, block: B:64:0x00c1  */
+    /* WARN: Code duplicated, block: B:68:0x00c9  */
+    /* WARN: Code duplicated, block: B:69:0x00d0  */
+    /* WARN: Code duplicated, block: B:71:0x00d8  */
+    /* WARN: Code duplicated, block: B:73:0x00de  */
+    /* WARN: Code duplicated, block: B:74:0x00e1  */
+    /* WARN: Code duplicated, block: B:78:0x00e9  */
+    /* WARN: Code duplicated, block: B:79:0x00ee  */
+    /* WARN: Code duplicated, block: B:81:0x00f4  */
+    /* WARN: Code duplicated, block: B:83:0x00fe  */
+    /* WARN: Code duplicated, block: B:84:0x0101  */
+    /* WARN: Code duplicated, block: B:89:0x010e  */
+    /* WARN: Code duplicated, block: B:92:0x0118  */
+    /* WARN: Code duplicated, block: B:94:0x011c  */
+    /* WARN: Code duplicated, block: B:96:0x0121  */
+    /* WARN: Code duplicated, block: B:98:0x0127  */
+    /* WARN: Code duplicated, block: B:99:0x012a  */
     public static final void Group(String str, float f, float f2, float f3, float f4, float f5, float f6, float f7, List<? extends PathNode> list, Function2<? super Composer, ? super Integer, Unit> function2, Composer composer, int i, int i2) {
         String str2;
         int i3;
@@ -4827,8 +4827,8 @@ public final class VectorComposeKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.graphics.vector.VectorComposeKt$Group$1, reason: invalid class name */
-    /* JADX INFO: compiled from: VectorCompose.kt */
+    /* INFO: renamed from: androidx.compose.ui.graphics.vector.VectorComposeKt$Group$1, reason: invalid class name */
+    /* INFO: compiled from: VectorCompose.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Landroidx/compose/ui/graphics/vector/GroupComponent;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function0<GroupComponent> {
         public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -4837,14 +4837,14 @@ public final class VectorComposeKt {
             super(0);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final GroupComponent invoke() {
             return new GroupComponent();
         }
     }
 
-    /* JADX INFO: renamed from: Path-9cdaXJ4, reason: not valid java name */
+    /* INFO: renamed from: Path-9cdaXJ4, reason: not valid java name */
     public static final void m1178Path9cdaXJ4(List<? extends PathNode> list, int i, String str, Brush brush, float f, Brush brush2, float f2, float f3, int i2, int i3, float f4, float f5, float f6, float f7, Composer composer, int i4, int i5, int i6) {
         int i7;
         int i8;

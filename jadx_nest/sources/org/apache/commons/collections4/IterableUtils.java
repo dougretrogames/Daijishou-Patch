@@ -15,7 +15,7 @@ import org.apache.commons.collections4.iterators.LazyIteratorChain;
 import org.apache.commons.collections4.iterators.ReverseListIterator;
 import org.apache.commons.collections4.iterators.UniqueFilterIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IterableUtils {
     static final FluentIterable EMPTY_ITERABLE = new AnonymousClass1();
 
@@ -32,7 +32,7 @@ public class IterableUtils {
         }
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$1, reason: invalid class name */
     class AnonymousClass1 extends FluentIterable<Object> {
         AnonymousClass1() {
         }
@@ -51,8 +51,8 @@ public class IterableUtils {
         return new AnonymousClass2(iterable, j);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$2, reason: invalid class name */
     class AnonymousClass2<E> extends FluentIterable<E> {
         final /* synthetic */ Iterable val$iterable;
         final /* synthetic */ long val$maxSize;
@@ -68,8 +68,8 @@ public class IterableUtils {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$3, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$3, reason: invalid class name */
     class AnonymousClass3<E> extends FluentIterable<E> {
         final /* synthetic */ Iterable[] val$iterables;
 
@@ -77,7 +77,7 @@ public class IterableUtils {
             this.val$iterables = iterableArr;
         }
 
-        /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$3$1, reason: invalid class name */
+        /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$3$1, reason: invalid class name */
         class AnonymousClass1 extends LazyIteratorChain<E> {
             AnonymousClass1() {
             }
@@ -121,8 +121,8 @@ public class IterableUtils {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$4, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$4, reason: invalid class name */
     class AnonymousClass4<E> extends FluentIterable<E> {
         final /* synthetic */ Iterable val$a;
         final /* synthetic */ Iterable val$b;
@@ -145,8 +145,8 @@ public class IterableUtils {
         return new AnonymousClass4(comparator, iterable, iterable2);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$5, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$5, reason: invalid class name */
     class AnonymousClass5<E> extends FluentIterable<E> {
         final /* synthetic */ Iterable val$a;
         final /* synthetic */ Iterable val$b;
@@ -212,7 +212,7 @@ public class IterableUtils {
         return EMPTY_ITERABLE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> Iterator<E> emptyIteratorIfNull(Iterable<E> iterable) {
         return iterable != null ? iterable.iterator() : IteratorUtils.emptyIterator();
     }
@@ -223,8 +223,8 @@ public class IterableUtils {
         return new AnonymousClass6(iterable, predicate);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$6, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$6, reason: invalid class name */
     class AnonymousClass6<E> extends FluentIterable<E> {
         final /* synthetic */ Iterable val$iterable;
         final /* synthetic */ Predicate val$predicate;
@@ -285,8 +285,8 @@ public class IterableUtils {
         return IteratorUtils.isEmpty(emptyIteratorIfNull(iterable));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$7, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$7, reason: invalid class name */
     class AnonymousClass7<E> extends FluentIterable<E> {
         final /* synthetic */ Iterable val$iterable;
 
@@ -294,7 +294,7 @@ public class IterableUtils {
             this.val$iterable = iterable;
         }
 
-        /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$7$1, reason: invalid class name */
+        /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$7$1, reason: invalid class name */
         class AnonymousClass1 extends LazyIteratorChain<E> {
             AnonymousClass1() {
             }
@@ -373,8 +373,8 @@ public class IterableUtils {
         return partition(iterable, FactoryUtils.instantiateFactory(ArrayList.class), predicateArr);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$8, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$8, reason: invalid class name */
     class AnonymousClass8<E> extends FluentIterable<E> {
         final /* synthetic */ Iterable val$iterable;
 
@@ -418,8 +418,8 @@ public class IterableUtils {
         return new AnonymousClass9(iterable, j);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$9, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$9, reason: invalid class name */
     class AnonymousClass9<E> extends FluentIterable<E> {
         final /* synthetic */ long val$elementsToSkip;
         final /* synthetic */ Iterable val$iterable;
@@ -458,8 +458,8 @@ public class IterableUtils {
         return new AnonymousClass10(iterable, transformer);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [O] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$10, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [O] */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$10, reason: invalid class name */
     class AnonymousClass10<O> extends FluentIterable<O> {
         final /* synthetic */ Iterable val$iterable;
         final /* synthetic */ Transformer val$transformer;
@@ -475,8 +475,8 @@ public class IterableUtils {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$11, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$11, reason: invalid class name */
     class AnonymousClass11<E> extends FluentIterable<E> {
         final /* synthetic */ Iterable val$iterable;
 
@@ -506,8 +506,8 @@ public class IterableUtils {
         return new AnonymousClass12(iterable, iterable2);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$12, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$12, reason: invalid class name */
     class AnonymousClass12<E> extends FluentIterable<E> {
         final /* synthetic */ Iterable val$a;
         final /* synthetic */ Iterable val$b;
@@ -529,8 +529,8 @@ public class IterableUtils {
         return new AnonymousClass13(iterableArr, iterable);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IterableUtils$13, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.IterableUtils$13, reason: invalid class name */
     class AnonymousClass13<E> extends FluentIterable<E> {
         final /* synthetic */ Iterable val$first;
         final /* synthetic */ Iterable[] val$others;

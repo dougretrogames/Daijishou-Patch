@@ -1,6 +1,6 @@
 package androidx.leanback.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ItemAlignmentFacet {
     public static final float ITEM_ALIGN_OFFSET_PERCENT_DISABLED = -1.0f;
     private ItemAlignmentDef[] mAlignmentDefs = {new ItemAlignmentDef()};

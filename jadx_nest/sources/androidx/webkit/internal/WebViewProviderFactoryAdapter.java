@@ -15,7 +15,7 @@ import org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface
 import org.chromium.support_lib_boundary.WebkitToCompatConverterBoundaryInterface;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebViewProviderFactoryAdapter implements WebViewProviderFactory {
     final WebViewProviderFactoryBoundaryInterface mImpl;
 

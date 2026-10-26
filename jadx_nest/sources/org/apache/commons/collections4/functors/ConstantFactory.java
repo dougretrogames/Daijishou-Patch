@@ -3,7 +3,7 @@ package org.apache.commons.collections4.functors;
 import java.io.Serializable;
 import org.apache.commons.collections4.Factory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ConstantFactory<T> implements Factory<T>, Serializable {
     public static final Factory NULL_INSTANCE = new ConstantFactory(null);
     private static final long serialVersionUID = -3520677225766901240L;

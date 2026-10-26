@@ -6,8 +6,8 @@ import com.google.android.gms.common.internal.Objects;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class GoogleThirdPartyPaymentExtension extends AbstractSafeParcelable {
     public static final Parcelable.Creator<GoogleThirdPartyPaymentExtension> CREATOR = new zzaf();
     private final boolean zza;

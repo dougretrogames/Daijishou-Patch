@@ -3,7 +3,7 @@ package com.google.common.base;
 import javax.annotation.CheckForNull;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Preconditions {
 

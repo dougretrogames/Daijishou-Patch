@@ -3,7 +3,7 @@ package androidx.activity.result;
 import androidx.activity.result.contract.ActivityResultContract;
 import androidx.core.app.ActivityOptionsCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ActivityResultLauncher<I> {
     public abstract ActivityResultContract<I, ?> getContract();
 

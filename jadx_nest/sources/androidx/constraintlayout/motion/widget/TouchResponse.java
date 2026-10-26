@@ -13,7 +13,7 @@ import androidx.constraintlayout.widget.R;
 import androidx.core.widget.NestedScrollView;
 import org.xmlpull.v1.XmlPullParser;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class TouchResponse {
     public static final int COMPLETE_MODE_CONTINUOUS_VELOCITY = 0;
     public static final int COMPLETE_MODE_SPRING = 1;
@@ -277,10 +277,10 @@ class TouchResponse {
         this.mDragStarted = false;
     }
 
-    /* JADX WARN: Code duplicated, block: B:59:0x0276  */
-    /* JADX WARN: Code duplicated, block: B:60:0x0290  */
-    /* JADX WARN: Code duplicated, block: B:63:0x02ae  */
-    /* JADX WARN: Code duplicated, block: B:64:0x02ba  */
+    /* WARN: Code duplicated, block: B:59:0x0276  */
+    /* WARN: Code duplicated, block: B:60:0x0290  */
+    /* WARN: Code duplicated, block: B:63:0x02ae  */
+    /* WARN: Code duplicated, block: B:64:0x02ba  */
     void processTouchRotateEvent(MotionEvent motionEvent, MotionLayout.MotionTracker motionTracker, int i, MotionScene motionScene) {
         float left;
         float f;
@@ -469,16 +469,16 @@ class TouchResponse {
         this.mMotionLayout.setState(MotionLayout.TransitionState.FINISHED);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     void processTouchEvent(MotionEvent motionEvent, MotionLayout.MotionTracker motionTracker, int i, MotionScene motionScene) {
         char c;
@@ -692,7 +692,7 @@ class TouchResponse {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.motion.widget.TouchResponse$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.motion.widget.TouchResponse$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnTouchListener {
         @Override // android.view.View.OnTouchListener
         public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -703,7 +703,7 @@ class TouchResponse {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.motion.widget.TouchResponse$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.motion.widget.TouchResponse$2, reason: invalid class name */
     class AnonymousClass2 implements NestedScrollView.OnScrollChangeListener {
         @Override // androidx.core.widget.NestedScrollView.OnScrollChangeListener
         public void onScrollChange(NestedScrollView nestedScrollView, int i, int i2, int i3, int i4) {

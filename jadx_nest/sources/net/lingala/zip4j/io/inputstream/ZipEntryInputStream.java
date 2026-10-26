@@ -3,7 +3,7 @@ package net.lingala.zip4j.io.inputstream;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class ZipEntryInputStream extends InputStream {
     private static final int MAX_RAW_READ_FULLY_RETRY_ATTEMPTS = 15;
     private long compressedSize;

@@ -7,7 +7,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import org.apache.commons.collections4.SortedBag;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class CollectionSortedBag<E> extends AbstractSortedBagDecorator<E> {
     private static final long serialVersionUID = -2560033712679053143L;
 

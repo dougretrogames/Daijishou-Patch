@@ -27,47 +27,47 @@ import kotlin.jvm.internal.MutablePropertyReference1Impl;
 import kotlin.jvm.internal.Reflection;
 import kotlin.reflect.KProperty;
 
-/* JADX INFO: compiled from: BalloonAnchorOverlayView.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: BalloonAnchorOverlayView.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\n\n\u0002\u0010 \n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u0007\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\u0018\u00002\u00020\u0001B'\b\u0007\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0004\b\b\u0010\tJ\u0006\u0010F\u001a\u00020GJ\u0010\u0010H\u001a\u00020G2\u0006\u0010I\u001a\u00020JH\u0014J\b\u0010K\u001a\u00020GH\u0002J\u001a\u0010L\u001a\u00020G2\b\u0010M\u001a\u0004\u0018\u00010\u00012\u0006\u0010I\u001a\u00020JH\u0002J\b\u0010N\u001a\u00020\u0007H\u0002J0\u0010O\u001a\u00020G2\u0006\u0010P\u001a\u00020E2\u0006\u0010Q\u001a\u00020\u00072\u0006\u0010R\u001a\u00020\u00072\u0006\u0010S\u001a\u00020\u00072\u0006\u0010T\u001a\u00020\u0007H\u0014R/\u0010\u000b\u001a\u0004\u0018\u00010\u00012\b\u0010\n\u001a\u0004\u0018\u00010\u00018F@FX\u0086\u008e\u0002¢\u0006\u0012\n\u0004\b\u0010\u0010\u0011\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR;\u0010\u0013\u001a\n\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u00122\u000e\u0010\n\u001a\n\u0012\u0004\u0012\u00020\u0001\u0018\u00010\u00128F@FX\u0086\u008e\u0002¢\u0006\u0012\n\u0004\b\u0018\u0010\u0011\u001a\u0004\b\u0014\u0010\u0015\"\u0004\b\u0016\u0010\u0017R+\u0010\u0019\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\u00078G@FX\u0086\u008e\u0002¢\u0006\u0012\n\u0004\b\u001e\u0010\u0011\u001a\u0004\b\u001a\u0010\u001b\"\u0004\b\u001c\u0010\u001dR+\u0010\u001f\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\u00078G@FX\u0086\u008e\u0002¢\u0006\u0012\n\u0004\b\"\u0010\u0011\u001a\u0004\b \u0010\u001b\"\u0004\b!\u0010\u001dR/\u0010$\u001a\u0004\u0018\u00010#2\b\u0010\n\u001a\u0004\u0018\u00010#8F@FX\u0086\u008e\u0002¢\u0006\u0012\n\u0004\b)\u0010\u0011\u001a\u0004\b%\u0010&\"\u0004\b'\u0010(R+\u0010+\u001a\u00020*2\u0006\u0010\n\u001a\u00020*8G@FX\u0086\u008e\u0002¢\u0006\u0012\n\u0004\b0\u0010\u0011\u001a\u0004\b,\u0010-\"\u0004\b.\u0010/R/\u00102\u001a\u0004\u0018\u0001012\b\u0010\n\u001a\u0004\u0018\u0001018F@FX\u0086\u008e\u0002¢\u0006\u0012\n\u0004\b7\u0010\u0011\u001a\u0004\b3\u00104\"\u0004\b5\u00106R+\u00109\u001a\u0002082\u0006\u0010\n\u001a\u0002088F@FX\u0086\u008e\u0002¢\u0006\u0012\n\u0004\b>\u0010\u0011\u001a\u0004\b:\u0010;\"\u0004\b<\u0010=R\u0010\u0010?\u001a\u0004\u0018\u00010@X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010A\u001a\u00020BX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010C\u001a\u00020BX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010D\u001a\u00020EX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006U"}, d2 = {"Lcom/skydoves/balloon/overlay/BalloonAnchorOverlayView;", "Landroid/view/View;", "context", "Landroid/content/Context;", "attr", "Landroid/util/AttributeSet;", "defStyle", "", "<init>", "(Landroid/content/Context;Landroid/util/AttributeSet;I)V", "<set-?>", "anchorView", "getAnchorView", "()Landroid/view/View;", "setAnchorView", "(Landroid/view/View;)V", "anchorView$delegate", "Lcom/skydoves/balloon/internals/ViewPropertyDelegate;", "", "anchorViewList", "getAnchorViewList", "()Ljava/util/List;", "setAnchorViewList", "(Ljava/util/List;)V", "anchorViewList$delegate", "overlayColor", "getOverlayColor", "()I", "setOverlayColor", "(I)V", "overlayColor$delegate", "overlayPaddingColor", "getOverlayPaddingColor", "setOverlayPaddingColor", "overlayPaddingColor$delegate", "Landroid/graphics/Shader;", "overlayPaddingShader", "getOverlayPaddingShader", "()Landroid/graphics/Shader;", "setOverlayPaddingShader", "(Landroid/graphics/Shader;)V", "overlayPaddingShader$delegate", "", "overlayPadding", "getOverlayPadding", "()F", "setOverlayPadding", "(F)V", "overlayPadding$delegate", "Landroid/graphics/Point;", "overlayPosition", "getOverlayPosition", "()Landroid/graphics/Point;", "setOverlayPosition", "(Landroid/graphics/Point;)V", "overlayPosition$delegate", "Lcom/skydoves/balloon/overlay/BalloonOverlayShape;", "balloonOverlayShape", "getBalloonOverlayShape", "()Lcom/skydoves/balloon/overlay/BalloonOverlayShape;", "setBalloonOverlayShape", "(Lcom/skydoves/balloon/overlay/BalloonOverlayShape;)V", "balloonOverlayShape$delegate", "bitmap", "Landroid/graphics/Bitmap;", "paint", "Landroid/graphics/Paint;", "paddingColorPaint", "invalidated", "", "forceInvalidate", "", "dispatchDraw", "canvas", "Landroid/graphics/Canvas;", "prepareBitmap", "addFocusViewInOverlay", "view", "getStatusBarHeight", "onLayout", "changed", "left", "top", "right", "bottom", "balloon_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 public final class BalloonAnchorOverlayView extends View {
     static final /* synthetic */ KProperty<Object>[] $$delegatedProperties = {Reflection.mutableProperty1(new MutablePropertyReference1Impl(BalloonAnchorOverlayView.class, "anchorView", "getAnchorView()Landroid/view/View;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(BalloonAnchorOverlayView.class, "anchorViewList", "getAnchorViewList()Ljava/util/List;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(BalloonAnchorOverlayView.class, "overlayColor", "getOverlayColor()I", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(BalloonAnchorOverlayView.class, "overlayPaddingColor", "getOverlayPaddingColor()I", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(BalloonAnchorOverlayView.class, "overlayPaddingShader", "getOverlayPaddingShader()Landroid/graphics/Shader;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(BalloonAnchorOverlayView.class, "overlayPadding", "getOverlayPadding()F", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(BalloonAnchorOverlayView.class, "overlayPosition", "getOverlayPosition()Landroid/graphics/Point;", 0)), Reflection.mutableProperty1(new MutablePropertyReference1Impl(BalloonAnchorOverlayView.class, "balloonOverlayShape", "getBalloonOverlayShape()Lcom/skydoves/balloon/overlay/BalloonOverlayShape;", 0))};
 
-    /* JADX INFO: renamed from: anchorView$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: anchorView$delegate, reason: from kotlin metadata */
     private final ViewPropertyDelegate anchorView;
 
-    /* JADX INFO: renamed from: anchorViewList$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: anchorViewList$delegate, reason: from kotlin metadata */
     private final ViewPropertyDelegate anchorViewList;
 
-    /* JADX INFO: renamed from: balloonOverlayShape$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: balloonOverlayShape$delegate, reason: from kotlin metadata */
     private final ViewPropertyDelegate balloonOverlayShape;
     private Bitmap bitmap;
     private boolean invalidated;
 
-    /* JADX INFO: renamed from: overlayColor$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: overlayColor$delegate, reason: from kotlin metadata */
     private final ViewPropertyDelegate overlayColor;
 
-    /* JADX INFO: renamed from: overlayPadding$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: overlayPadding$delegate, reason: from kotlin metadata */
     private final ViewPropertyDelegate overlayPadding;
 
-    /* JADX INFO: renamed from: overlayPaddingColor$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: overlayPaddingColor$delegate, reason: from kotlin metadata */
     private final ViewPropertyDelegate overlayPaddingColor;
 
-    /* JADX INFO: renamed from: overlayPaddingShader$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: overlayPaddingShader$delegate, reason: from kotlin metadata */
     private final ViewPropertyDelegate overlayPaddingShader;
 
-    /* JADX INFO: renamed from: overlayPosition$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: overlayPosition$delegate, reason: from kotlin metadata */
     private final ViewPropertyDelegate overlayPosition;
     private final Paint paddingColorPaint;
     private final Paint paint;
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public BalloonAnchorOverlayView(Context context) {
         this(context, null, 0, 6, null);
         Intrinsics.checkNotNullParameter(context, "context");
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public BalloonAnchorOverlayView(Context context, AttributeSet attributeSet) {
         this(context, attributeSet, 0, 4, null);
         Intrinsics.checkNotNullParameter(context, "context");
@@ -77,7 +77,7 @@ public final class BalloonAnchorOverlayView extends View {
         this(context, (i2 & 2) != 0 ? null : attributeSet, (i2 & 4) != 0 ? 0 : i);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public BalloonAnchorOverlayView(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);
         Intrinsics.checkNotNullParameter(context, "context");

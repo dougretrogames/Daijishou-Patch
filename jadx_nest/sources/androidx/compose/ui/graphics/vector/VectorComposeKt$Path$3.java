@@ -9,8 +9,8 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: VectorCompose.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: VectorCompose.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 final class VectorComposeKt$Path$3 extends Lambda implements Function2<Composer, Integer, Unit> {
     final /* synthetic */ int $$changed;
@@ -31,8 +31,8 @@ final class VectorComposeKt$Path$3 extends Lambda implements Function2<Composer,
     final /* synthetic */ float $trimPathOffset;
     final /* synthetic */ float $trimPathStart;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     VectorComposeKt$Path$3(List<? extends PathNode> list, int i, String str, Brush brush, float f, Brush brush2, float f2, float f3, int i2, int i3, float f4, float f5, float f6, float f7, int i4, int i5, int i6) {
         super(2);
         this.$pathData = list;

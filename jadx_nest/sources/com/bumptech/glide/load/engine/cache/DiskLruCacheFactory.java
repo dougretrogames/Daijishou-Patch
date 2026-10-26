@@ -2,7 +2,7 @@ package com.bumptech.glide.load.engine.cache;
 
 import java.io.File;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DiskLruCacheFactory implements DiskCache.Factory {
     private final CacheDirectoryGetter cacheDirectoryGetter;
     private final long diskCacheSize;
@@ -11,7 +11,7 @@ public class DiskLruCacheFactory implements DiskCache.Factory {
         File getCacheDirectory();
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.cache.DiskLruCacheFactory$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.cache.DiskLruCacheFactory$1, reason: invalid class name */
     class AnonymousClass1 implements CacheDirectoryGetter {
         final /* synthetic */ String val$diskCacheFolder;
 
@@ -29,7 +29,7 @@ public class DiskLruCacheFactory implements DiskCache.Factory {
         this(new AnonymousClass1(str), j);
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.cache.DiskLruCacheFactory$2, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.cache.DiskLruCacheFactory$2, reason: invalid class name */
     class AnonymousClass2 implements CacheDirectoryGetter {
         final /* synthetic */ String val$diskCacheFolder;
         final /* synthetic */ String val$diskCacheName;

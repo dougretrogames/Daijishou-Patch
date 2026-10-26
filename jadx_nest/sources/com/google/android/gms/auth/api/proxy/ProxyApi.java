@@ -4,16 +4,16 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
 import com.google.android.gms.common.api.Result;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public interface ProxyApi {
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+    /* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
     public interface ProxyResult extends Result {
         ProxyResponse getResponse();
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+    /* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
     public interface SpatulaHeaderResult extends Result {
         String getSpatulaHeader();
     }

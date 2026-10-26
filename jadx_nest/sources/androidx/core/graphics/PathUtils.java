@@ -5,7 +5,7 @@ import android.graphics.PointF;
 import java.util.ArrayList;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class PathUtils {
     public static Collection<PathSegment> flatten(Path path) {
         return flatten(path, 0.5f);

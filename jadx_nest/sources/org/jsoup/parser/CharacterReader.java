@@ -14,7 +14,7 @@ import org.jsoup.helper.Validate;
 import org.jsoup.internal.SoftPool;
 import org.jsoup.internal.StringUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class CharacterReader implements AutoCloseable {
     static final int BufferSize = 2048;
     static final char EOF = 65535;

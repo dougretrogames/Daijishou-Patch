@@ -24,7 +24,7 @@ import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.internal.view.SupportMenuItem;
 import androidx.core.view.ActionProvider;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MenuItemImpl implements SupportMenuItem {
     private static final int CHECKABLE = 1;
     private static final int CHECKED = 2;
@@ -622,7 +622,7 @@ public final class MenuItemImpl implements SupportMenuItem {
         return this;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.view.menu.MenuItemImpl$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.view.menu.MenuItemImpl$1, reason: invalid class name */
     class AnonymousClass1 implements ActionProvider.VisibilityListener {
         AnonymousClass1() {
         }

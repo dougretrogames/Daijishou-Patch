@@ -9,8 +9,8 @@ import javax.annotation.CheckForNull;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.jspecify.nullness.NullMarked;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 @NullMarked
 public abstract class zzag extends zzac implements List, RandomAccess {
     private static final zzak zza = new zzae(zzai.zza, 0);
@@ -176,13 +176,13 @@ public abstract class zzag extends zzac implements List, RandomAccess {
     }
 
     @Override // com.google.android.gms.internal.common.zzac
-    /* JADX INFO: renamed from: zze */
+    /* INFO: renamed from: zze */
     public final zzaj iterator() {
         return listIterator(0);
     }
 
     @Override // java.util.List
-    /* JADX INFO: renamed from: zzh, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: zzh, reason: merged with bridge method [inline-methods] */
     public zzag subList(int i, int i2) {
         zzs.zzc(i, i2, size());
         int i3 = i2 - i;
@@ -193,7 +193,7 @@ public abstract class zzag extends zzac implements List, RandomAccess {
     }
 
     @Override // java.util.List
-    /* JADX INFO: renamed from: zzo, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: zzo, reason: merged with bridge method [inline-methods] */
     public final zzak listIterator(int i) {
         zzs.zzb(i, size(), ConfigConstants.CONFIG_INDEX_SECTION);
         return isEmpty() ? zza : new zzae(this, i);

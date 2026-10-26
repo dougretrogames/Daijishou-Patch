@@ -7,7 +7,7 @@ import org.apache.http.cookie.MalformedCookieException;
 import org.apache.http.cookie.SetCookie;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicMaxAgeHandler extends AbstractCookieAttributeHandler implements CommonCookieAttributeHandler {
     @Override // org.apache.http.cookie.CookieAttributeHandler
     public void parse(SetCookie setCookie, String str) throws MalformedCookieException {

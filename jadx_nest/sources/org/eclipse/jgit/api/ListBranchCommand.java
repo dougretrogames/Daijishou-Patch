@@ -17,7 +17,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.revwalk.RevWalkUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ListBranchCommand extends GitCommand<List<Ref>> {
     private String containsCommitish;
     private ListMode listMode;
@@ -26,7 +26,7 @@ public class ListBranchCommand extends GitCommand<List<Ref>> {
         ALL,
         REMOTE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static ListMode[] valuesCustom() {
             ListMode[] listModeArrValuesCustom = values();
             int length = listModeArrValuesCustom.length;

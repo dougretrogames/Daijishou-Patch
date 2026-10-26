@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicReferenceArray;
 import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class UnpackedObjectCache {
     private static final int INITIAL_BITS = 5;
     private static final int MAX_BITS = 11;

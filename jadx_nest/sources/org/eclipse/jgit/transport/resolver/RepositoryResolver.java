@@ -4,7 +4,7 @@ import org.eclipse.jgit.errors.RepositoryNotFoundException;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.transport.ServiceMayNotContinueException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface RepositoryResolver<C> {
     public static final RepositoryResolver<?> NONE = new RepositoryResolver$$ExternalSyntheticLambda0();
 

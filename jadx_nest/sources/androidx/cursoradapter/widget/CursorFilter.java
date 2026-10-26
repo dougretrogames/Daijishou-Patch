@@ -3,7 +3,7 @@ package androidx.cursoradapter.widget;
 import android.database.Cursor;
 import android.widget.Filter;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class CursorFilter extends Filter {
     CursorFilterClient mClient;
 

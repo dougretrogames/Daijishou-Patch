@@ -2,7 +2,7 @@ package org.apache.http.conn.ssl;
 
 import javax.net.ssl.SSLException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class StrictHostnameVerifier extends AbstractVerifier {
     public static final StrictHostnameVerifier INSTANCE = new StrictHostnameVerifier();

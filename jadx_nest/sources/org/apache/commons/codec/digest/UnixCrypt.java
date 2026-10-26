@@ -11,7 +11,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.regex.Pattern;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UnixCrypt {
     private static final String CRYPT_SALT_REGEX = "^[./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz]{2,}$";
     private static final Pattern CRYPT_SALT_PATTERN = Pattern.compile(CRYPT_SALT_REGEX);

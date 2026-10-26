@@ -26,7 +26,7 @@ import java.util.WeakHashMap;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class JsonParser implements Closeable {
     private static WeakHashMap<Class<?>, Field> cachedTypemapFields = new WeakHashMap<>();
     private static final Lock lock = new ReentrantLock();
@@ -101,7 +101,7 @@ public abstract class JsonParser implements Closeable {
         return currentToken;
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.json.JsonParser$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.json.JsonParser$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$api$client$json$JsonToken;
 
@@ -300,7 +300,7 @@ public abstract class JsonParser implements Closeable {
         parseArray(null, collection, cls, new ArrayList<>(), customizeJsonParser);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private <T> void parseArray(Field field, Collection<T> collection, Type type, ArrayList<Type> arrayList, CustomizeJsonParser customizeJsonParser) throws IOException {
         JsonToken jsonTokenStartParsingObjectOrArray = startParsingObjectOrArray();
         while (jsonTokenStartParsingObjectOrArray != JsonToken.END_ARRAY) {
@@ -326,7 +326,7 @@ public abstract class JsonParser implements Closeable {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:207:0x02c4  */
+    /* WARN: Code duplicated, block: B:207:0x02c4  */
     private final Object parseValue(Field field, Type type, ArrayList<Type> arrayList, Object obj, CustomizeJsonParser customizeJsonParser, boolean z) throws IOException {
         Type typeResolveWildcardTypeOrTypeVariable = Data.resolveWildcardTypeOrTypeVariable(arrayList, type);
         Type typeRef = null;

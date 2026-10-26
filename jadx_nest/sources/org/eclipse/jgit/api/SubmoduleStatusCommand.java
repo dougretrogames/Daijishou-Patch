@@ -16,7 +16,7 @@ import org.eclipse.jgit.submodule.SubmoduleStatusType;
 import org.eclipse.jgit.submodule.SubmoduleWalk;
 import org.eclipse.jgit.treewalk.filter.PathFilterGroup;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SubmoduleStatusCommand extends GitCommand<Map<String, SubmoduleStatus>> {
     private final Collection<String> paths;
 

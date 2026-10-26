@@ -8,13 +8,13 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.TypeIntrinsics;
 
-/* JADX INFO: compiled from: ComposedModifier.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: ComposedModifier.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "Landroidx/compose/ui/Modifier;", "acc", "element", "Landroidx/compose/ui/Modifier$Element;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 final class ComposedModifierKt$materialize$result$1 extends Lambda implements Function2<Modifier, Modifier.Element, Modifier> {
     final /* synthetic */ Composer $this_materialize;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     ComposedModifierKt$materialize$result$1(Composer composer) {
         super(2);
         this.$this_materialize = composer;

@@ -2,8 +2,8 @@ package com.magneticchen.daijishou.settings_nav_fragments;
 
 import android.view.View;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class AboutThisAppNavFragment$$ExternalSyntheticLambda1 implements View.OnClickListener {
     public final /* synthetic */ AboutThisAppNavFragment f$0;
 

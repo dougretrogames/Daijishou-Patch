@@ -26,13 +26,13 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: Layout.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Layout.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000D\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a8\u0010\u0000\u001a\u00020\u00012\u0016\u0010\u0002\u001a\u0012\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\u0004¢\u0006\u0002\b\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0087\b¢\u0006\u0002\u0010\n\u001a \u0010\u0000\u001a\u00020\u00012\b\b\u0002\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0087\b¢\u0006\u0002\u0010\u000b\u001a>\u0010\u0000\u001a\u00020\u00012\u001c\u0010\f\u001a\u0018\u0012\u0014\u0012\u0012\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\u0004¢\u0006\u0002\b\u00050\r2\b\b\u0002\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u000eH\u0087\b¢\u0006\u0002\u0010\u000f\u001a7\u0010\u0010\u001a\u00020\u00012\b\b\u0002\u0010\u0006\u001a\u00020\u00072\u0016\u0010\u0002\u001a\u0012\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\u0004¢\u0006\u0002\b\u00052\u0006\u0010\b\u001a\u00020\tH\u0007¢\u0006\u0002\u0010\u0011\u001a;\u0010\u0012\u001a\u0012\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\u0004¢\u0006\u0002\b\u00052\u001c\u0010\f\u001a\u0018\u0012\u0014\u0012\u0012\u0012\u0004\u0012\u00020\u00010\u0003¢\u0006\u0002\b\u0004¢\u0006\u0002\b\u00050\rH\u0001¢\u0006\u0002\u0010\u0013\u001a3\u0010\u0014\u001a\u001e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00170\u0016\u0012\u0004\u0012\u00020\u00010\u0015¢\u0006\u0002\b\u0004¢\u0006\u0002\b\u00182\u0006\u0010\u0006\u001a\u00020\u0007H\u0001¢\u0006\u0004\b\u0019\u0010\u001a\u001a3\u0010\u001b\u001a\u001e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00170\u0016\u0012\u0004\u0012\u00020\u00010\u0015¢\u0006\u0002\b\u0004¢\u0006\u0002\b\u00182\u0006\u0010\u0006\u001a\u00020\u0007H\u0001¢\u0006\u0004\b\u0014\u0010\u001a¨\u0006\u001c"}, d2 = {"Layout", "", "content", "Lkotlin/Function0;", "Landroidx/compose/runtime/Composable;", "Landroidx/compose/ui/UiComposable;", "modifier", "Landroidx/compose/ui/Modifier;", "measurePolicy", "Landroidx/compose/ui/layout/MeasurePolicy;", "(Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/layout/MeasurePolicy;Landroidx/compose/runtime/Composer;II)V", "(Landroidx/compose/ui/Modifier;Landroidx/compose/ui/layout/MeasurePolicy;Landroidx/compose/runtime/Composer;II)V", "contents", "", "Landroidx/compose/ui/layout/MultiContentMeasurePolicy;", "(Ljava/util/List;Landroidx/compose/ui/Modifier;Landroidx/compose/ui/layout/MultiContentMeasurePolicy;Landroidx/compose/runtime/Composer;II)V", "MultiMeasureLayout", "(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Landroidx/compose/ui/layout/MeasurePolicy;Landroidx/compose/runtime/Composer;II)V", "combineAsVirtualLayouts", "(Ljava/util/List;)Lkotlin/jvm/functions/Function2;", "materializerOf", "Lkotlin/Function1;", "Landroidx/compose/runtime/SkippableUpdater;", "Landroidx/compose/ui/node/ComposeUiNode;", "Lkotlin/ExtensionFunctionType;", "modifierMaterializerOf", "(Landroidx/compose/ui/Modifier;)Lkotlin/jvm/functions/Function3;", "materializerOfWithCompositionLocalInjection", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class LayoutKt {
 
-    /* JADX INFO: renamed from: androidx.compose.ui.layout.LayoutKt$MultiMeasureLayout$2, reason: invalid class name */
-    /* JADX INFO: compiled from: Layout.kt */
+    /* INFO: renamed from: androidx.compose.ui.layout.LayoutKt$MultiMeasureLayout$2, reason: invalid class name */
+    /* INFO: compiled from: Layout.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda implements Function2<Composer, Integer, Unit> {
         final /* synthetic */ int $$changed;
@@ -41,8 +41,8 @@ public final class LayoutKt {
         final /* synthetic */ MeasurePolicy $measurePolicy;
         final /* synthetic */ Modifier $modifier;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass2(Modifier modifier, Function2<? super Composer, ? super Integer, Unit> function2, MeasurePolicy measurePolicy, int i, int i2) {
             super(2);
             this.$modifier = modifier;
@@ -183,14 +183,14 @@ public final class LayoutKt {
         composer.endReplaceableGroup();
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.layout.LayoutKt$combineAsVirtualLayouts$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Layout.kt */
+    /* INFO: renamed from: androidx.compose.ui.layout.LayoutKt$combineAsVirtualLayouts$1, reason: invalid class name */
+    /* INFO: compiled from: Layout.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\u000b¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "(Landroidx/compose/runtime/Composer;I)V"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function2<Composer, Integer, Unit> {
         final /* synthetic */ List<Function2<Composer, Integer, Unit>> $contents;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(List<? extends Function2<? super Composer, ? super Integer, Unit>> list) {
             super(2);
             this.$contents = list;
@@ -249,13 +249,13 @@ public final class LayoutKt {
         return ComposableLambdaKt.composableLambdaInstance(-1953651383, true, new AnonymousClass1(list));
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.layout.LayoutKt$materializerOf$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Layout.kt */
+    /* INFO: renamed from: androidx.compose.ui.layout.LayoutKt$materializerOf$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Layout.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00030\u0002H\u000b¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "Landroidx/compose/runtime/SkippableUpdater;", "Landroidx/compose/ui/node/ComposeUiNode;", "invoke-Deg8D_g", "(Landroidx/compose/runtime/Composer;Landroidx/compose/runtime/Composer;I)V"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01211 extends Lambda implements Function3<SkippableUpdater<ComposeUiNode>, Composer, Integer, Unit> {
         final /* synthetic */ Modifier $modifier;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01211(Modifier modifier) {
             super(3);
             this.$modifier = modifier;
@@ -267,7 +267,7 @@ public final class LayoutKt {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke-Deg8D_g, reason: not valid java name */
+        /* INFO: renamed from: invoke-Deg8D_g, reason: not valid java name */
         public final void m1838invokeDeg8D_g(Composer composer, Composer composer2, int i) {
             ComposerKt.sourceInformation(composer2, "C202@7952L23:Layout.kt#80mrfh");
             if (ComposerKt.isTraceInProgress()) {

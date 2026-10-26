@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Summary {
     @Nullable
     public abstract Long getCount();
@@ -53,7 +53,7 @@ public abstract class Summary {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void checkCountAndSum(@Nullable Long l, @Nullable Double d) {
         Utils.checkArgument(l == null || l.longValue() >= 0, "count must be non-negative.");
         Utils.checkArgument(d == null || d.doubleValue() >= 0.0d, "sum must be non-negative.");

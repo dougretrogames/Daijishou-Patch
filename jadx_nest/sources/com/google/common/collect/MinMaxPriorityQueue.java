@@ -16,7 +16,7 @@ import java.util.Objects;
 import java.util.Queue;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class MinMaxPriorityQueue<E> extends AbstractQueue<E> {
     private static final int DEFAULT_CAPACITY = 11;
@@ -94,7 +94,7 @@ public final class MinMaxPriorityQueue<E> extends AbstractQueue<E> {
             return minMaxPriorityQueue;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public <T extends B> Ordering<T> ordering() {
             return Ordering.from(this.comparator);
         }
@@ -438,7 +438,7 @@ public final class MinMaxPriorityQueue<E> extends AbstractQueue<E> {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public boolean verifyIndex(int i) {
             if (getLeftChildIndex(i) < MinMaxPriorityQueue.this.size && compareElements(i, getLeftChildIndex(i)) > 0) {
                 return false;
@@ -571,7 +571,7 @@ public final class MinMaxPriorityQueue<E> extends AbstractQueue<E> {
             }
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         private void nextNotInSkipMe(int c) {
             if (this.nextCursor < c) {
                 if (this.skipMe != null) {

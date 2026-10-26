@@ -1,6 +1,6 @@
 package org.apache.http.conn.params;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface ConnManagerPNames {
     public static final String MAX_CONNECTIONS_PER_ROUTE = "http.conn-manager.max-per-route";

@@ -12,7 +12,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class CursorableLinkedList<E> extends AbstractLinkedList<E> implements Serializable {
     private static final long serialVersionUID = 8836393098519411393L;
@@ -51,7 +51,7 @@ public class CursorableLinkedList<E> extends AbstractLinkedList<E> implements Se
             return super.previousIndex();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // org.apache.commons.collections4.list.AbstractLinkedList.LinkedListIterator, java.util.ListIterator
         public /* bridge */ /* synthetic */ void set(Object obj) {
             super.set(obj);

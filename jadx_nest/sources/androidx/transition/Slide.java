@@ -14,7 +14,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import org.xmlpull.v1.XmlPullParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Slide extends Visibility {
     private static final String PROPNAME_SCREEN_POSITION = "android:slide:screenPosition";
     private CalculateSlide mSlideCalculator;
@@ -71,7 +71,7 @@ public class Slide extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.Slide$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.Slide$1, reason: invalid class name */
     class AnonymousClass1 extends CalculateSlideHorizontal {
         AnonymousClass1() {
             super(null);
@@ -83,7 +83,7 @@ public class Slide extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.Slide$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.Slide$2, reason: invalid class name */
     class AnonymousClass2 extends CalculateSlideHorizontal {
         AnonymousClass2() {
             super(null);
@@ -98,7 +98,7 @@ public class Slide extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.Slide$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.Slide$3, reason: invalid class name */
     class AnonymousClass3 extends CalculateSlideVertical {
         AnonymousClass3() {
             super(null);
@@ -110,7 +110,7 @@ public class Slide extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.Slide$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.Slide$4, reason: invalid class name */
     class AnonymousClass4 extends CalculateSlideHorizontal {
         AnonymousClass4() {
             super(null);
@@ -122,7 +122,7 @@ public class Slide extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.Slide$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.Slide$5, reason: invalid class name */
     class AnonymousClass5 extends CalculateSlideHorizontal {
         AnonymousClass5() {
             super(null);
@@ -137,7 +137,7 @@ public class Slide extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.Slide$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.Slide$6, reason: invalid class name */
     class AnonymousClass6 extends CalculateSlideVertical {
         AnonymousClass6() {
             super(null);

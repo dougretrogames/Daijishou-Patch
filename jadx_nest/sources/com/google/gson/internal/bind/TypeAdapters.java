@@ -46,7 +46,7 @@ import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class TypeAdapters {
     public static final TypeAdapter<AtomicBoolean> ATOMIC_BOOLEAN;
     public static final TypeAdapterFactory ATOMIC_BOOLEAN_FACTORY;
@@ -103,7 +103,7 @@ public final class TypeAdapters {
         throw new UnsupportedOperationException();
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$1, reason: invalid class name */
     class AnonymousClass1 extends TypeAdapter<Class> {
         AnonymousClass1() {
         }
@@ -113,7 +113,7 @@ public final class TypeAdapters {
             throw new UnsupportedOperationException("Attempted to serialize java.lang.Class: " + cls.getName() + ". Forgot to register a type adapter?");
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public Class read(JsonReader jsonReader) throws IOException {
             throw new UnsupportedOperationException("Attempted to deserialize a java.lang.Class. Forgot to register a type adapter?");
@@ -194,7 +194,7 @@ public final class TypeAdapters {
         ENUM_FACTORY = new AnonymousClass29();
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$2, reason: invalid class name */
     class AnonymousClass2 extends TypeAdapter<BitSet> {
         AnonymousClass2() {
         }
@@ -241,7 +241,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$35, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$35, reason: invalid class name */
     static /* synthetic */ class AnonymousClass35 {
         static final /* synthetic */ int[] $SwitchMap$com$google$gson$stream$JsonToken;
 
@@ -275,12 +275,12 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$3, reason: invalid class name */
     class AnonymousClass3 extends TypeAdapter<Boolean> {
         AnonymousClass3() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public Boolean read(JsonReader jsonReader) throws IOException {
             JsonToken jsonTokenPeek = jsonReader.peek();
@@ -300,12 +300,12 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$4, reason: invalid class name */
     class AnonymousClass4 extends TypeAdapter<Boolean> {
         AnonymousClass4() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public Boolean read(JsonReader jsonReader) throws IOException {
             if (jsonReader.peek() == JsonToken.NULL) {
@@ -321,12 +321,12 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$5, reason: invalid class name */
     class AnonymousClass5 extends TypeAdapter<Number> {
         AnonymousClass5() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public Number read(JsonReader jsonReader) throws IOException {
             if (jsonReader.peek() == JsonToken.NULL) {
@@ -354,12 +354,12 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$6, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$6, reason: invalid class name */
     class AnonymousClass6 extends TypeAdapter<Number> {
         AnonymousClass6() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public Number read(JsonReader jsonReader) throws IOException {
             if (jsonReader.peek() == JsonToken.NULL) {
@@ -387,12 +387,12 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$7, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$7, reason: invalid class name */
     class AnonymousClass7 extends TypeAdapter<Number> {
         AnonymousClass7() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public Number read(JsonReader jsonReader) throws IOException {
             if (jsonReader.peek() == JsonToken.NULL) {
@@ -416,7 +416,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$8, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$8, reason: invalid class name */
     class AnonymousClass8 extends TypeAdapter<AtomicInteger> {
         AnonymousClass8() {
         }
@@ -436,7 +436,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$9, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$9, reason: invalid class name */
     class AnonymousClass9 extends TypeAdapter<AtomicBoolean> {
         AnonymousClass9() {
         }
@@ -452,7 +452,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$10, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$10, reason: invalid class name */
     class AnonymousClass10 extends TypeAdapter<AtomicIntegerArray> {
         AnonymousClass10() {
         }
@@ -488,12 +488,12 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$11, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$11, reason: invalid class name */
     class AnonymousClass11 extends TypeAdapter<Number> {
         AnonymousClass11() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public Number read(JsonReader jsonReader) throws IOException {
             if (jsonReader.peek() == JsonToken.NULL) {
@@ -517,12 +517,12 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$12, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$12, reason: invalid class name */
     class AnonymousClass12 extends TypeAdapter<Number> {
         AnonymousClass12() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public Number read(JsonReader jsonReader) throws IOException {
             if (jsonReader.peek() == JsonToken.NULL) {
@@ -545,12 +545,12 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$13, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$13, reason: invalid class name */
     class AnonymousClass13 extends TypeAdapter<Number> {
         AnonymousClass13() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public Number read(JsonReader jsonReader) throws IOException {
             if (jsonReader.peek() == JsonToken.NULL) {
@@ -570,12 +570,12 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$14, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$14, reason: invalid class name */
     class AnonymousClass14 extends TypeAdapter<Character> {
         AnonymousClass14() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public Character read(JsonReader jsonReader) throws IOException {
             if (jsonReader.peek() == JsonToken.NULL) {
@@ -595,7 +595,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$15, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$15, reason: invalid class name */
     class AnonymousClass15 extends TypeAdapter<String> {
         AnonymousClass15() {
         }
@@ -619,7 +619,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$16, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$16, reason: invalid class name */
     class AnonymousClass16 extends TypeAdapter<BigDecimal> {
         AnonymousClass16() {
         }
@@ -644,7 +644,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$17, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$17, reason: invalid class name */
     class AnonymousClass17 extends TypeAdapter<BigInteger> {
         AnonymousClass17() {
         }
@@ -669,12 +669,12 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$18, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$18, reason: invalid class name */
     class AnonymousClass18 extends TypeAdapter<LazilyParsedNumber> {
         AnonymousClass18() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public LazilyParsedNumber read(JsonReader jsonReader) throws IOException {
             if (jsonReader.peek() == JsonToken.NULL) {
@@ -690,7 +690,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$19, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$19, reason: invalid class name */
     class AnonymousClass19 extends TypeAdapter<StringBuilder> {
         AnonymousClass19() {
         }
@@ -710,7 +710,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$20, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$20, reason: invalid class name */
     class AnonymousClass20 extends TypeAdapter<StringBuffer> {
         AnonymousClass20() {
         }
@@ -730,7 +730,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$21, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$21, reason: invalid class name */
     class AnonymousClass21 extends TypeAdapter<URL> {
         AnonymousClass21() {
         }
@@ -754,7 +754,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$22, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$22, reason: invalid class name */
     class AnonymousClass22 extends TypeAdapter<URI> {
         AnonymousClass22() {
         }
@@ -782,7 +782,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$23, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$23, reason: invalid class name */
     class AnonymousClass23 extends TypeAdapter<InetAddress> {
         AnonymousClass23() {
         }
@@ -802,7 +802,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$24, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$24, reason: invalid class name */
     class AnonymousClass24 extends TypeAdapter<UUID> {
         AnonymousClass24() {
         }
@@ -827,7 +827,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$25, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$25, reason: invalid class name */
     class AnonymousClass25 extends TypeAdapter<Currency> {
         AnonymousClass25() {
         }
@@ -848,7 +848,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$26, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$26, reason: invalid class name */
     class AnonymousClass26 extends TypeAdapter<Calendar> {
         private static final String DAY_OF_MONTH = "dayOfMonth";
         private static final String HOUR_OF_DAY = "hourOfDay";
@@ -917,7 +917,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$27, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$27, reason: invalid class name */
     class AnonymousClass27 extends TypeAdapter<Locale> {
         AnonymousClass27() {
         }
@@ -947,7 +947,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$28, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$28, reason: invalid class name */
     class AnonymousClass28 extends TypeAdapter<JsonElement> {
         AnonymousClass28() {
         }
@@ -983,7 +983,7 @@ public final class TypeAdapters {
             throw new IllegalStateException("Unexpected token: " + jsonToken);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public JsonElement read(JsonReader jsonReader) throws IOException {
             if (jsonReader instanceof JsonTreeReader) {
@@ -1095,7 +1095,7 @@ public final class TypeAdapters {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter$1, reason: invalid class name */
         class AnonymousClass1 implements PrivilegedAction<Field[]> {
             final /* synthetic */ Class val$classOfT;
 
@@ -1135,7 +1135,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$29, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$29, reason: invalid class name */
     class AnonymousClass29 implements TypeAdapterFactory {
         AnonymousClass29() {
         }
@@ -1153,7 +1153,7 @@ public final class TypeAdapters {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$30, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$30, reason: invalid class name */
     class AnonymousClass30 implements TypeAdapterFactory {
         final /* synthetic */ TypeToken val$type;
         final /* synthetic */ TypeAdapter val$typeAdapter;
@@ -1176,7 +1176,7 @@ public final class TypeAdapters {
         return new AnonymousClass30(typeToken, typeAdapter);
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$31, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$31, reason: invalid class name */
     class AnonymousClass31 implements TypeAdapterFactory {
         final /* synthetic */ Class val$type;
         final /* synthetic */ TypeAdapter val$typeAdapter;
@@ -1203,7 +1203,7 @@ public final class TypeAdapters {
         return new AnonymousClass31(cls, typeAdapter);
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$32, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$32, reason: invalid class name */
     class AnonymousClass32 implements TypeAdapterFactory {
         final /* synthetic */ Class val$boxed;
         final /* synthetic */ TypeAdapter val$typeAdapter;
@@ -1233,7 +1233,7 @@ public final class TypeAdapters {
         return new AnonymousClass32(cls, cls2, typeAdapter);
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$33, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$33, reason: invalid class name */
     class AnonymousClass33 implements TypeAdapterFactory {
         final /* synthetic */ Class val$base;
         final /* synthetic */ Class val$sub;
@@ -1263,7 +1263,7 @@ public final class TypeAdapters {
         return new AnonymousClass33(cls, cls2, typeAdapter);
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$34, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$34, reason: invalid class name */
     class AnonymousClass34 implements TypeAdapterFactory {
         final /* synthetic */ Class val$clazz;
         final /* synthetic */ TypeAdapter val$typeAdapter;
@@ -1282,8 +1282,8 @@ public final class TypeAdapters {
             return null;
         }
 
-        /* JADX INFO: Add missing generic type declarations: [T1] */
-        /* JADX INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$34$1, reason: invalid class name */
+        /* INFO: Add missing generic type declarations: [T1] */
+        /* INFO: renamed from: com.google.gson.internal.bind.TypeAdapters$34$1, reason: invalid class name */
         class AnonymousClass1<T1> extends TypeAdapter<T1> {
             final /* synthetic */ Class val$requestedType;
 

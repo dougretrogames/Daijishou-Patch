@@ -15,20 +15,20 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StashListCommand extends GitCommand<Collection<RevCommit>> {
     public StashListCommand(Repository repository) {
         super(repository);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v6, types: [java.lang.Throwable] */
-    /* JADX WARN: Type inference failed for: r2v10 */
-    /* JADX WARN: Type inference failed for: r2v11 */
-    /* JADX WARN: Type inference failed for: r2v3 */
-    /* JADX WARN: Type inference failed for: r2v4, types: [java.lang.Throwable] */
-    /* JADX WARN: Type inference failed for: r2v8, types: [java.lang.String] */
-    /* JADX WARN: Type inference failed for: r2v9 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v6, types: [java.lang.Throwable] */
+    /* WARN: Type inference failed for: r2v10 */
+    /* WARN: Type inference failed for: r2v11 */
+    /* WARN: Type inference failed for: r2v3 */
+    /* WARN: Type inference failed for: r2v4, types: [java.lang.Throwable] */
+    /* WARN: Type inference failed for: r2v8, types: [java.lang.String] */
+    /* WARN: Type inference failed for: r2v9 */
     @Override // org.eclipse.jgit.api.GitCommand, java.util.concurrent.Callable
     public Collection<RevCommit> call() throws GitAPIException {
         checkCallable();

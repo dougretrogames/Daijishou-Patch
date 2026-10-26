@@ -5,7 +5,7 @@ import io.opencensus.trace.unsafe.ContextHandleUtils;
 import java.util.concurrent.Callable;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class CurrentSpanUtils {
     private CurrentSpanUtils() {
     }
@@ -144,7 +144,7 @@ final class CurrentSpanUtils {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void setErrorStatus(Span span, Throwable th) {
         span.setStatus(Status.UNKNOWN.withDescription(th.getMessage() == null ? th.getClass().getSimpleName() : th.getMessage()));
     }

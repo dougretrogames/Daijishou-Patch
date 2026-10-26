@@ -13,7 +13,7 @@ import org.eclipse.jgit.lib.FileMode;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.WorkingTreeIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IndexDiffFilter extends TreeFilter {
     private final int dirCache;
     private final boolean honorIgnores;

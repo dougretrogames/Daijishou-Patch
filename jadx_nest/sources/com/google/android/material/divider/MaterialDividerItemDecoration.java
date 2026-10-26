@@ -16,7 +16,7 @@ import com.google.android.material.internal.ThemeEnforcement;
 import com.google.android.material.internal.ViewUtils;
 import com.google.android.material.resources.MaterialResources;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialDividerItemDecoration extends RecyclerView.ItemDecoration {
     private static final int DEF_STYLE_RES = R.style.Widget_MaterialComponents_MaterialDivider;
     public static final int HORIZONTAL = 0;

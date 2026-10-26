@@ -28,16 +28,16 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Reflection;
 
-/* JADX INFO: compiled from: SettingsViewPagerFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: SettingsViewPagerFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\u0018\u0000 *2\u00020\u0001:\u0001*B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u001d\u001a\u00020\u0018H\u0016J&\u0010\u001e\u001a\u0004\u0018\u00010\u001f2\u0006\u0010 \u001a\u00020!2\b\u0010\"\u001a\u0004\u0018\u00010#2\b\u0010$\u001a\u0004\u0018\u00010%H\u0016J\u001a\u0010&\u001a\u00020'2\u0006\u0010(\u001a\u00020\u001f2\b\u0010$\u001a\u0004\u0018\u00010%H\u0016J\b\u0010)\u001a\u00020\u0010H\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u0014\u0010\t\u001a\u00020\nX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0014\u0010\r\u001a\u00020\u0004X\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u0006R\u0010\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0082\u000e¢\u0006\u0002\n\u0000R\u001b\u0010\u0011\u001a\u00020\u00128BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0015\u0010\u0016\u001a\u0004\b\u0013\u0010\u0014R\u001a\u0010\u0017\u001a\u00020\u0018X\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u001a\"\u0004\b\u001b\u0010\u001c¨\u0006+"}, d2 = {"Lcom/magneticchen/daijishou/view_pager_fragments/SettingsViewPagerFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/BackStackViewPagerFragment;", "()V", "displayNameStringId", "", "getDisplayNameStringId", "()I", "setDisplayNameStringId", "(I)V", "id", "", "getId", "()Ljava/lang/String;", "navFragmentContainerId", "getNavFragmentContainerId", "settingsNavFragment", "Lcom/magneticchen/daijishou/settings_nav_fragments/SettingsNavFragment;", "settingsViewModel", "Lcom/magneticchen/daijishou/view_models/SettingsViewModel;", "getSettingsViewModel", "()Lcom/magneticchen/daijishou/view_models/SettingsViewModel;", "settingsViewModel$delegate", "Lkotlin/Lazy;", "useDefaultWallpaper", "", "getUseDefaultWallpaper", "()Z", "setUseDefaultWallpaper", "(Z)V", "onBackPressed", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "savedInstanceState", "Landroid/os/Bundle;", "onViewCreated", "", "view", "requireSettingsNavFragment", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class SettingsViewPagerFragment extends BackStackViewPagerFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private SettingsNavFragment settingsNavFragment;
 
-    /* JADX INFO: renamed from: settingsViewModel$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: settingsViewModel$delegate, reason: from kotlin metadata */
     private final Lazy settingsViewModel;
     private boolean useDefaultWallpaper;
     private final String id = ViewPagerType.SETTINGS.getId();
@@ -113,7 +113,7 @@ public final class SettingsViewPagerFragment extends BackStackViewPagerFragment 
         return false;
     }
 
-    /* JADX INFO: compiled from: SettingsViewPagerFragment.kt */
+    /* INFO: compiled from: SettingsViewPagerFragment.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0003\u001a\u00020\u0004¨\u0006\u0005"}, d2 = {"Lcom/magneticchen/daijishou/view_pager_fragments/SettingsViewPagerFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/view_pager_fragments/SettingsViewPagerFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -145,13 +145,13 @@ public final class SettingsViewPagerFragment extends BackStackViewPagerFragment 
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.SettingsViewPagerFragment$onCreateView$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SettingsViewPagerFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.SettingsViewPagerFragment$onCreateView$1, reason: invalid class name */
+    /* INFO: compiled from: SettingsViewPagerFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "settingsTitle", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda<Unit> implements Function1<String, Unit> {
         final /* synthetic */ View $view;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(View view) {
             super(1);
             this.$view = view;
@@ -163,7 +163,7 @@ public final class SettingsViewPagerFragment extends BackStackViewPagerFragment 
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(String str) {
             ((TextView) this.$view.findViewById(R.id.settings_title_text_view)).setText(str);
         }

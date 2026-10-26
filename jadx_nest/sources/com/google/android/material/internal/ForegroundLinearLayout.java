@@ -11,7 +11,7 @@ import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.core.view.GravityCompat;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ForegroundLinearLayout extends LinearLayoutCompat {
     private Drawable foreground;
     boolean foregroundBoundsChanged;

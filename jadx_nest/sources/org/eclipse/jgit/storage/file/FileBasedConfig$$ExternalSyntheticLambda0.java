@@ -3,8 +3,8 @@ package org.eclipse.jgit.storage.file;
 import java.io.File;
 import org.eclipse.jgit.util.FileUtils;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class FileBasedConfig$$ExternalSyntheticLambda0 implements FileUtils.IOFunction {
     public final /* synthetic */ FileBasedConfig f$0;
 

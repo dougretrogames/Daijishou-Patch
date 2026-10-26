@@ -31,7 +31,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class PluginProtos {
     private static Descriptors.FileDescriptor descriptor;
     private static final Descriptors.Descriptor internal_static_google_protobuf_compiler_CodeGeneratorRequest_descriptor;
@@ -446,7 +446,7 @@ public final class PluginProtos {
             return this == DEFAULT_INSTANCE ? new Builder((AnonymousClass1) null) : new Builder((AnonymousClass1) null).mergeFrom(this);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.protobuf.AbstractMessage
         public Builder newBuilderForType(AbstractMessage.BuilderParent parent) {
             return new Builder(parent, null);
@@ -753,7 +753,7 @@ public final class PluginProtos {
             return DEFAULT_INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.compiler.PluginProtos$Version$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.compiler.PluginProtos$Version$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractParser<Version> {
             AnonymousClass1() {
             }
@@ -1273,7 +1273,7 @@ public final class PluginProtos {
             return this == DEFAULT_INSTANCE ? new Builder((AnonymousClass1) null) : new Builder((AnonymousClass1) null).mergeFrom(this);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.protobuf.AbstractMessage
         public Builder newBuilderForType(AbstractMessage.BuilderParent parent) {
             return new Builder(parent, null);
@@ -2188,7 +2188,7 @@ public final class PluginProtos {
             return DEFAULT_INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.compiler.PluginProtos$CodeGeneratorRequest$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.compiler.PluginProtos$CodeGeneratorRequest$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractParser<CodeGeneratorRequest> {
             AnonymousClass1() {
             }
@@ -2481,7 +2481,7 @@ public final class PluginProtos {
                 return internalValueMap;
             }
 
-            /* JADX INFO: renamed from: com.google.protobuf.compiler.PluginProtos$CodeGeneratorResponse$Feature$1, reason: invalid class name */
+            /* INFO: renamed from: com.google.protobuf.compiler.PluginProtos$CodeGeneratorResponse$Feature$1, reason: invalid class name */
             class AnonymousClass1 implements Internal.EnumLiteMap<Feature> {
                 AnonymousClass1() {
                 }
@@ -2847,7 +2847,7 @@ public final class PluginProtos {
                 return this == DEFAULT_INSTANCE ? new Builder((AnonymousClass1) null) : new Builder((AnonymousClass1) null).mergeFrom(this);
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.protobuf.AbstractMessage
             public Builder newBuilderForType(AbstractMessage.BuilderParent parent) {
                 return new Builder(parent, null);
@@ -3312,7 +3312,7 @@ public final class PluginProtos {
                 return DEFAULT_INSTANCE;
             }
 
-            /* JADX INFO: renamed from: com.google.protobuf.compiler.PluginProtos$CodeGeneratorResponse$File$1, reason: invalid class name */
+            /* INFO: renamed from: com.google.protobuf.compiler.PluginProtos$CodeGeneratorResponse$File$1, reason: invalid class name */
             class AnonymousClass1 extends AbstractParser<File> {
                 AnonymousClass1() {
                 }
@@ -3731,7 +3731,7 @@ public final class PluginProtos {
             return this == DEFAULT_INSTANCE ? new Builder((AnonymousClass1) null) : new Builder((AnonymousClass1) null).mergeFrom(this);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.protobuf.AbstractMessage
         public Builder newBuilderForType(AbstractMessage.BuilderParent parent) {
             return new Builder(parent, null);
@@ -4282,7 +4282,7 @@ public final class PluginProtos {
             return DEFAULT_INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.compiler.PluginProtos$CodeGeneratorResponse$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.compiler.PluginProtos$CodeGeneratorResponse$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractParser<CodeGeneratorResponse> {
             AnonymousClass1() {
             }

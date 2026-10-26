@@ -2,7 +2,7 @@ package io.noties.markwon.utils;
 
 import android.text.Layout;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class LayoutUtils {
     private static final float DEFAULT_EXTRA = 0.0f;
     private static final float DEFAULT_MULTIPLIER = 1.0f;

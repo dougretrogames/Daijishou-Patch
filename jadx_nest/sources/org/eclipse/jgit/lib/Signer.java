@@ -7,7 +7,7 @@ import org.eclipse.jgit.api.errors.JGitInternalException;
 import org.eclipse.jgit.api.errors.UnsupportedSigningFormatException;
 import org.eclipse.jgit.transport.CredentialsProvider;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface Signer {
     boolean canLocateSigningKey(Repository repository, GpgConfig gpgConfig, PersonIdent personIdent, String str, CredentialsProvider credentialsProvider) throws CanceledException;
 

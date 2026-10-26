@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.leanback.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class VideoSupportFragment extends PlaybackSupportFragment {
     static final int SURFACE_CREATED = 1;
     static final int SURFACE_NOT_CREATED = 0;
@@ -27,7 +27,7 @@ public class VideoSupportFragment extends PlaybackSupportFragment {
         return viewGroup2;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.VideoSupportFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.VideoSupportFragment$1, reason: invalid class name */
     class AnonymousClass1 implements SurfaceHolder.Callback {
         AnonymousClass1() {
         }

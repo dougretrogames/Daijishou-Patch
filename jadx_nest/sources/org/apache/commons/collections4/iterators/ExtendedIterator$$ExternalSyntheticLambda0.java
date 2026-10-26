@@ -3,8 +3,8 @@ package org.apache.commons.collections4.iterators;
 import java.util.function.Function;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class ExtendedIterator$$ExternalSyntheticLambda0 implements Transformer {
     public final /* synthetic */ Function f$0;
 

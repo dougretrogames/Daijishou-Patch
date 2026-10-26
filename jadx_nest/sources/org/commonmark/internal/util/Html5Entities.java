@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Html5Entities {
     private static final String ENTITY_PATH = "/org/commonmark/internal/util/entities.properties";
     private static final Map<String, String> NAMED_CHARACTER_REFERENCES = readEntities();

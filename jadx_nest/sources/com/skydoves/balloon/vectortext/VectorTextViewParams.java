@@ -8,8 +8,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.StringCompanionObject;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: VectorTextViewParams.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: VectorTextViewParams.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\r\n\u0002\bK\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001BÝ\u0001\b\u0007\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\b\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\b\u0012\b\b\u0002\u0010\f\u001a\u00020\r\u0012\b\b\u0002\u0010\u000e\u001a\u00020\u000f\u0012\n\b\u0003\u0010\u0010\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010\u0011\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010\u0012\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010\u0013\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010\u0014\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010\u0015\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010\u0016\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0003\u0010\u0017\u001a\u0004\u0018\u00010\u0003¢\u0006\u0004\b\u0018\u0010\u0019J\u0010\u0010C\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0010\u0010D\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0010\u0010E\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0010\u0010F\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u000b\u0010G\u001a\u0004\u0018\u00010\bHÆ\u0003J\u000b\u0010H\u001a\u0004\u0018\u00010\bHÆ\u0003J\u000b\u0010I\u001a\u0004\u0018\u00010\bHÆ\u0003J\u000b\u0010J\u001a\u0004\u0018\u00010\bHÆ\u0003J\t\u0010K\u001a\u00020\rHÆ\u0003J\t\u0010L\u001a\u00020\u000fHÆ\u0003J\u0010\u0010M\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0010\u0010N\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0010\u0010O\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0010\u0010P\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0010\u0010Q\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0010\u0010R\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0010\u0010S\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001bJ\u0010\u0010T\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001bJâ\u0001\u0010U\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\b2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\b2\b\b\u0002\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\n\b\u0003\u0010\u0010\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010\u0011\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010\u0012\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010\u0013\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010\u0014\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010\u0015\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010\u0016\u001a\u0004\u0018\u00010\u00032\n\b\u0003\u0010\u0017\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0002\u0010VJ\u0013\u0010W\u001a\u00020\r2\b\u0010X\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010Y\u001a\u00020\u0003HÖ\u0001J\t\u0010Z\u001a\u00020[HÖ\u0001R\u001e\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b\u001a\u0010\u001b\"\u0004\b\u001c\u0010\u001dR\u001e\u0010\u0004\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b\u001f\u0010\u001b\"\u0004\b \u0010\u001dR\u001e\u0010\u0005\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b!\u0010\u001b\"\u0004\b\"\u0010\u001dR\u001e\u0010\u0006\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b#\u0010\u001b\"\u0004\b$\u0010\u001dR\u001c\u0010\u0007\u001a\u0004\u0018\u00010\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b%\u0010&\"\u0004\b'\u0010(R\u001c\u0010\t\u001a\u0004\u0018\u00010\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b)\u0010&\"\u0004\b*\u0010(R\u001c\u0010\n\u001a\u0004\u0018\u00010\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b+\u0010&\"\u0004\b,\u0010(R\u001c\u0010\u000b\u001a\u0004\u0018\u00010\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b-\u0010&\"\u0004\b.\u0010(R\u001a\u0010\f\u001a\u00020\rX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010/\"\u0004\b0\u00101R\u001a\u0010\u000e\u001a\u00020\u000fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b2\u00103\"\u0004\b4\u00105R\u0015\u0010\u0010\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u001e\u001a\u0004\b6\u0010\u001bR\u0015\u0010\u0011\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u001e\u001a\u0004\b7\u0010\u001bR\u0015\u0010\u0012\u001a\u0004\u0018\u00010\u0003¢\u0006\n\n\u0002\u0010\u001e\u001a\u0004\b8\u0010\u001bR\u001e\u0010\u0013\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b9\u0010\u001b\"\u0004\b:\u0010\u001dR\u001e\u0010\u0014\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b;\u0010\u001b\"\u0004\b<\u0010\u001dR\u001e\u0010\u0015\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b=\u0010\u001b\"\u0004\b>\u0010\u001dR\u001e\u0010\u0016\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\b?\u0010\u001b\"\u0004\b@\u0010\u001dR\u001e\u0010\u0017\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001e\u001a\u0004\bA\u0010\u001b\"\u0004\bB\u0010\u001d¨\u0006\\"}, d2 = {"Lcom/skydoves/balloon/vectortext/VectorTextViewParams;", "", "drawableStartRes", "", "drawableEndRes", "drawableBottomRes", "drawableTopRes", "drawableStart", "Landroid/graphics/drawable/Drawable;", "drawableEnd", "drawableBottom", "drawableTop", "isRtlLayout", "", "contentDescription", "", "compoundDrawablePadding", "iconWidth", "iconHeight", "compoundDrawablePaddingRes", "tintColor", "widthRes", "heightRes", "squareSizeRes", "<init>", "(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;ZLjava/lang/CharSequence;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)V", "getDrawableStartRes", "()Ljava/lang/Integer;", "setDrawableStartRes", "(Ljava/lang/Integer;)V", "Ljava/lang/Integer;", "getDrawableEndRes", "setDrawableEndRes", "getDrawableBottomRes", "setDrawableBottomRes", "getDrawableTopRes", "setDrawableTopRes", "getDrawableStart", "()Landroid/graphics/drawable/Drawable;", "setDrawableStart", "(Landroid/graphics/drawable/Drawable;)V", "getDrawableEnd", "setDrawableEnd", "getDrawableBottom", "setDrawableBottom", "getDrawableTop", "setDrawableTop", "()Z", "setRtlLayout", "(Z)V", "getContentDescription", "()Ljava/lang/CharSequence;", "setContentDescription", "(Ljava/lang/CharSequence;)V", "getCompoundDrawablePadding", "getIconWidth", "getIconHeight", "getCompoundDrawablePaddingRes", "setCompoundDrawablePaddingRes", "getTintColor", "setTintColor", "getWidthRes", "setWidthRes", "getHeightRes", "setHeightRes", "getSquareSizeRes", "setSquareSizeRes", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "(Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;ZLjava/lang/CharSequence;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)Lcom/skydoves/balloon/vectortext/VectorTextViewParams;", "equals", "other", "hashCode", "toString", "", "balloon_release"}, k = 1, mv = {2, 0, 0}, xi = 48)
 public final /* data */ class VectorTextViewParams {
     private final Integer compoundDrawablePadding;
@@ -71,49 +71,49 @@ public final /* data */ class VectorTextViewParams {
         this(num, num2, num3, num4, drawable, drawable2, drawable3, drawable4, z, null, null, null, null, null, null, null, null, null, 261632, null);
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public VectorTextViewParams(Integer num, Integer num2, Integer num3, Integer num4, Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4, boolean z, CharSequence contentDescription) {
         this(num, num2, num3, num4, drawable, drawable2, drawable3, drawable4, z, contentDescription, null, null, null, null, null, null, null, null, 261120, null);
         Intrinsics.checkNotNullParameter(contentDescription, "contentDescription");
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public VectorTextViewParams(Integer num, Integer num2, Integer num3, Integer num4, Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4, boolean z, CharSequence contentDescription, Integer num5) {
         this(num, num2, num3, num4, drawable, drawable2, drawable3, drawable4, z, contentDescription, num5, null, null, null, null, null, null, null, 260096, null);
         Intrinsics.checkNotNullParameter(contentDescription, "contentDescription");
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public VectorTextViewParams(Integer num, Integer num2, Integer num3, Integer num4, Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4, boolean z, CharSequence contentDescription, Integer num5, Integer num6) {
         this(num, num2, num3, num4, drawable, drawable2, drawable3, drawable4, z, contentDescription, num5, num6, null, null, null, null, null, null, 258048, null);
         Intrinsics.checkNotNullParameter(contentDescription, "contentDescription");
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public VectorTextViewParams(Integer num, Integer num2, Integer num3, Integer num4, Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4, boolean z, CharSequence contentDescription, Integer num5, Integer num6, Integer num7) {
         this(num, num2, num3, num4, drawable, drawable2, drawable3, drawable4, z, contentDescription, num5, num6, num7, null, null, null, null, null, 253952, null);
         Intrinsics.checkNotNullParameter(contentDescription, "contentDescription");
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public VectorTextViewParams(Integer num, Integer num2, Integer num3, Integer num4, Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4, boolean z, CharSequence contentDescription, Integer num5, Integer num6, Integer num7, Integer num8) {
         this(num, num2, num3, num4, drawable, drawable2, drawable3, drawable4, z, contentDescription, num5, num6, num7, num8, null, null, null, null, 245760, null);
         Intrinsics.checkNotNullParameter(contentDescription, "contentDescription");
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public VectorTextViewParams(Integer num, Integer num2, Integer num3, Integer num4, Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4, boolean z, CharSequence contentDescription, Integer num5, Integer num6, Integer num7, Integer num8, Integer num9) {
         this(num, num2, num3, num4, drawable, drawable2, drawable3, drawable4, z, contentDescription, num5, num6, num7, num8, num9, null, null, null, 229376, null);
         Intrinsics.checkNotNullParameter(contentDescription, "contentDescription");
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public VectorTextViewParams(Integer num, Integer num2, Integer num3, Integer num4, Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4, boolean z, CharSequence contentDescription, Integer num5, Integer num6, Integer num7, Integer num8, Integer num9, Integer num10) {
         this(num, num2, num3, num4, drawable, drawable2, drawable3, drawable4, z, contentDescription, num5, num6, num7, num8, num9, num10, null, null, ProfileVerifier.CompilationStatus.RESULT_CODE_ERROR_CANT_WRITE_PROFILE_VERIFICATION_RESULT_CACHE_FILE, null);
         Intrinsics.checkNotNullParameter(contentDescription, "contentDescription");
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public VectorTextViewParams(Integer num, Integer num2, Integer num3, Integer num4, Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4, boolean z, CharSequence contentDescription, Integer num5, Integer num6, Integer num7, Integer num8, Integer num9, Integer num10, Integer num11) {
         this(num, num2, num3, num4, drawable, drawable2, drawable3, drawable4, z, contentDescription, num5, num6, num7, num8, num9, num10, num11, null, 131072, null);
         Intrinsics.checkNotNullParameter(contentDescription, "contentDescription");
@@ -150,92 +150,92 @@ public final /* data */ class VectorTextViewParams {
         return vectorTextViewParams.copy(num23, num16, num17, num18, drawable5, drawable6, drawable7, drawable8, z2, charSequence2, num19, num20, num21, num22, num24, num25, num14, num13);
     }
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    /* INFO: renamed from: component1, reason: from getter */
     public final Integer getDrawableStartRes() {
         return this.drawableStartRes;
     }
 
-    /* JADX INFO: renamed from: component10, reason: from getter */
+    /* INFO: renamed from: component10, reason: from getter */
     public final CharSequence getContentDescription() {
         return this.contentDescription;
     }
 
-    /* JADX INFO: renamed from: component11, reason: from getter */
+    /* INFO: renamed from: component11, reason: from getter */
     public final Integer getCompoundDrawablePadding() {
         return this.compoundDrawablePadding;
     }
 
-    /* JADX INFO: renamed from: component12, reason: from getter */
+    /* INFO: renamed from: component12, reason: from getter */
     public final Integer getIconWidth() {
         return this.iconWidth;
     }
 
-    /* JADX INFO: renamed from: component13, reason: from getter */
+    /* INFO: renamed from: component13, reason: from getter */
     public final Integer getIconHeight() {
         return this.iconHeight;
     }
 
-    /* JADX INFO: renamed from: component14, reason: from getter */
+    /* INFO: renamed from: component14, reason: from getter */
     public final Integer getCompoundDrawablePaddingRes() {
         return this.compoundDrawablePaddingRes;
     }
 
-    /* JADX INFO: renamed from: component15, reason: from getter */
+    /* INFO: renamed from: component15, reason: from getter */
     public final Integer getTintColor() {
         return this.tintColor;
     }
 
-    /* JADX INFO: renamed from: component16, reason: from getter */
+    /* INFO: renamed from: component16, reason: from getter */
     public final Integer getWidthRes() {
         return this.widthRes;
     }
 
-    /* JADX INFO: renamed from: component17, reason: from getter */
+    /* INFO: renamed from: component17, reason: from getter */
     public final Integer getHeightRes() {
         return this.heightRes;
     }
 
-    /* JADX INFO: renamed from: component18, reason: from getter */
+    /* INFO: renamed from: component18, reason: from getter */
     public final Integer getSquareSizeRes() {
         return this.squareSizeRes;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    /* INFO: renamed from: component2, reason: from getter */
     public final Integer getDrawableEndRes() {
         return this.drawableEndRes;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    /* INFO: renamed from: component3, reason: from getter */
     public final Integer getDrawableBottomRes() {
         return this.drawableBottomRes;
     }
 
-    /* JADX INFO: renamed from: component4, reason: from getter */
+    /* INFO: renamed from: component4, reason: from getter */
     public final Integer getDrawableTopRes() {
         return this.drawableTopRes;
     }
 
-    /* JADX INFO: renamed from: component5, reason: from getter */
+    /* INFO: renamed from: component5, reason: from getter */
     public final Drawable getDrawableStart() {
         return this.drawableStart;
     }
 
-    /* JADX INFO: renamed from: component6, reason: from getter */
+    /* INFO: renamed from: component6, reason: from getter */
     public final Drawable getDrawableEnd() {
         return this.drawableEnd;
     }
 
-    /* JADX INFO: renamed from: component7, reason: from getter */
+    /* INFO: renamed from: component7, reason: from getter */
     public final Drawable getDrawableBottom() {
         return this.drawableBottom;
     }
 
-    /* JADX INFO: renamed from: component8, reason: from getter */
+    /* INFO: renamed from: component8, reason: from getter */
     public final Drawable getDrawableTop() {
         return this.drawableTop;
     }
 
-    /* JADX INFO: renamed from: component9, reason: from getter */
+    /* INFO: renamed from: component9, reason: from getter */
     public final boolean getIsRtlLayout() {
         return this.isRtlLayout;
     }
@@ -399,7 +399,7 @@ public final /* data */ class VectorTextViewParams {
         this.isRtlLayout = z;
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public /* synthetic */ VectorTextViewParams(Integer num, Integer num2, Integer num3, Integer num4, Drawable drawable, Drawable drawable2, Drawable drawable3, Drawable drawable4, boolean z, CharSequence charSequence, Integer num5, Integer num6, Integer num7, Integer num8, Integer num9, Integer num10, Integer num11, Integer num12, int i, DefaultConstructorMarker defaultConstructorMarker) {
         CharSequence charSequence2;
         Integer num13 = (i & 1) != 0 ? null : num;

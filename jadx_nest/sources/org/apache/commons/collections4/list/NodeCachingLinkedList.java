@@ -6,7 +6,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class NodeCachingLinkedList<E> extends AbstractLinkedList<E> implements Serializable {
     private static final int DEFAULT_MAXIMUM_CACHE_SIZE = 20;

@@ -1,6 +1,6 @@
 package com.google.android.material.transition;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class FadeModeResult {
     final int endAlpha;
     final boolean endOnTop;

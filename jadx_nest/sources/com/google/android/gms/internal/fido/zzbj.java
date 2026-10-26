@@ -2,8 +2,8 @@ package com.google.android.gms.internal.fido;
 
 import java.util.Arrays;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public final class zzbj extends zzbk {
     private final String zza;
 

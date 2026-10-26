@@ -7,7 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SymbolicLinkFileFilter extends AbstractFileFilter implements Serializable {
     public static final SymbolicLinkFileFilter INSTANCE = new SymbolicLinkFileFilter();
     private static final long serialVersionUID = 1;

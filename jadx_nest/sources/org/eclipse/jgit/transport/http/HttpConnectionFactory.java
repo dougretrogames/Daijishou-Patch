@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.net.Proxy;
 import java.net.URL;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface HttpConnectionFactory {
     HttpConnection create(URL url) throws IOException;
 

@@ -6,7 +6,7 @@ import android.net.Uri;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class AssetFileDescriptorLocalUriFetcher extends LocalUriFetcher<AssetFileDescriptor> {
     public AssetFileDescriptorLocalUriFetcher(ContentResolver contentResolver, Uri uri) {
         super(contentResolver, uri);
@@ -16,8 +16,8 @@ public final class AssetFileDescriptorLocalUriFetcher extends LocalUriFetcher<As
         super(contentResolver, uri, z);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* INFO: Access modifiers changed from: protected */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.load.data.LocalUriFetcher
     public AssetFileDescriptor loadResource(Uri uri, ContentResolver contentResolver) throws FileNotFoundException {
         AssetFileDescriptor assetFileDescriptorOpenAssetFileDescriptor = openAssetFileDescriptor(uri);
@@ -27,7 +27,7 @@ public final class AssetFileDescriptorLocalUriFetcher extends LocalUriFetcher<As
         throw new FileNotFoundException("FileDescriptor is null for: " + uri);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.bumptech.glide.load.data.LocalUriFetcher
     public void close(AssetFileDescriptor assetFileDescriptor) throws IOException {
         assetFileDescriptor.close();

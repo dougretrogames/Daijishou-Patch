@@ -12,7 +12,7 @@ import com.bumptech.glide.load.resource.bitmap.DownsampleStrategy;
 import com.bumptech.glide.load.resource.bitmap.Downsampler;
 import com.bumptech.glide.load.resource.bitmap.HardwareConfigState;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class DefaultOnHeaderDecodedListener implements ImageDecoder.OnHeaderDecodedListener {
     private static final String TAG = "ImageDecoder";
     private final DecodeFormat decodeFormat;
@@ -68,7 +68,7 @@ public final class DefaultOnHeaderDecodedListener implements ImageDecoder.OnHead
         }
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.resource.DefaultOnHeaderDecodedListener$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.resource.DefaultOnHeaderDecodedListener$1, reason: invalid class name */
     class AnonymousClass1 implements ImageDecoder.OnPartialImageListener {
         @Override // android.graphics.ImageDecoder.OnPartialImageListener
         public boolean onPartialImage(ImageDecoder.DecodeException decodeException) {

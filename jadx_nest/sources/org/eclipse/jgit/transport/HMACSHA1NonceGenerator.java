@@ -10,7 +10,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HMACSHA1NonceGenerator implements NonceGenerator {
     private static final String HEX = "0123456789ABCDEF";
     private Mac mac;

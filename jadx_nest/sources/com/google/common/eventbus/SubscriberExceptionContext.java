@@ -3,7 +3,7 @@ package com.google.common.eventbus;
 import com.google.common.base.Preconditions;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class SubscriberExceptionContext {
     private final Object event;

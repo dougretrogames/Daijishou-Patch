@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 import org.apache.commons.collections4.Predicate;
 import org.apache.commons.collections4.functors.TruePredicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FilterIterator<E> implements IteratorOperations<E> {
     private Iterator<? extends E> iterator;
     private E nextObject;

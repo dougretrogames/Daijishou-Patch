@@ -5,7 +5,7 @@ import java.nio.ByteOrder;
 import java.util.Arrays;
 import java.util.Comparator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Table {
     protected ByteBuffer bb;
     protected int bb_pos;
@@ -116,7 +116,7 @@ public class Table {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.emoji2.text.flatbuffer.Table$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.emoji2.text.flatbuffer.Table$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<Integer> {
         final /* synthetic */ ByteBuffer val$bb;
 

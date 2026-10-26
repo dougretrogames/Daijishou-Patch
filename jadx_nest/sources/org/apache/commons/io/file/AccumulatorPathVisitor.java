@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.Objects;
 import org.apache.commons.io.function.IOBiFunction;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AccumulatorPathVisitor extends CountingPathVisitor {
     private final List<Path> dirList;
     private final List<Path> fileList;

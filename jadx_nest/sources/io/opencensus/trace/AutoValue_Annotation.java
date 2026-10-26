@@ -2,7 +2,7 @@ package io.opencensus.trace;
 
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Annotation extends Annotation {
     private final Map<String, AttributeValue> attributes;
     private final String description;

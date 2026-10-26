@@ -3,7 +3,7 @@ package org.apache.commons.collections4.bloomfilter;
 import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class CountingPredicate<T> implements Predicate<T> {
     private final T[] ary;
     private final BiPredicate<T, T> func;

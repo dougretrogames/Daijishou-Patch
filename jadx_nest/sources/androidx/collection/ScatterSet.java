@@ -19,8 +19,8 @@ import org.apache.commons.codec.language.bm.Languages;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: ScatterSet.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: ScatterSet.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\\\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u0011\n\u0002\b\u0003\n\u0002\u0010\u0016\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\"\n\u0002\b\r\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\r\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\b6\u0018\u0000*\u0004\b\u0000\u0010\u00012\u00020\u0002:\u0001<B\u0007\b\u0004¢\u0006\u0002\u0010\u0003J:\u0010\u0013\u001a\u00020\u00142!\u0010\u0015\u001a\u001d\u0012\u0013\u0012\u00118\u0000¢\u0006\f\b\u0017\u0012\b\b\u0018\u0012\u0004\b\b(\u0019\u0012\u0004\u0012\u00020\u00140\u0016H\u0086\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001J\u0006\u0010\u001a\u001a\u00020\u0014J:\u0010\u001a\u001a\u00020\u00142!\u0010\u0015\u001a\u001d\u0012\u0013\u0012\u00118\u0000¢\u0006\f\b\u0017\u0012\b\b\u0018\u0012\u0004\b\b(\u0019\u0012\u0004\u0012\u00020\u00140\u0016H\u0086\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001J\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00028\u00000\u001cJ\u0016\u0010\u001d\u001a\u00020\u00142\u0006\u0010\u0019\u001a\u00028\u0000H\u0086\u0002¢\u0006\u0002\u0010\u001eJ\b\u0010\u001f\u001a\u00020\u0005H\u0007J:\u0010\u001f\u001a\u00020\u00052!\u0010\u0015\u001a\u001d\u0012\u0013\u0012\u00118\u0000¢\u0006\f\b\u0017\u0012\b\b\u0018\u0012\u0004\b\b(\u0019\u0012\u0004\u0012\u00020\u00140\u0016H\u0087\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001J\u0013\u0010 \u001a\u00020\u00142\b\u0010!\u001a\u0004\u0018\u00010\u0002H\u0096\u0002J\u0018\u0010\"\u001a\u00020\u00052\u0006\u0010\u0019\u001a\u00028\u0000H\u0080\b¢\u0006\u0004\b#\u0010$J\u000e\u0010%\u001a\u00028\u0000H\u0086\b¢\u0006\u0002\u0010&J?\u0010%\u001a\u00028\u00002!\u0010\u0015\u001a\u001d\u0012\u0013\u0012\u00118\u0000¢\u0006\f\b\u0017\u0012\b\b\u0018\u0012\u0004\b\b(\u0019\u0012\u0004\u0012\u00020\u00140\u0016H\u0086\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001¢\u0006\u0002\u0010'JA\u0010(\u001a\u0004\u0018\u00018\u00002!\u0010\u0015\u001a\u001d\u0012\u0013\u0012\u00118\u0000¢\u0006\f\b\u0017\u0012\b\b\u0018\u0012\u0004\b\b(\u0019\u0012\u0004\u0012\u00020\u00140\u0016H\u0086\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001¢\u0006\u0002\u0010'J:\u0010)\u001a\u00020*2!\u0010+\u001a\u001d\u0012\u0013\u0012\u00118\u0000¢\u0006\f\b\u0017\u0012\b\b\u0018\u0012\u0004\b\b(\u0019\u0012\u0004\u0012\u00020*0\u0016H\u0086\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001J:\u0010,\u001a\u00020*2!\u0010+\u001a\u001d\u0012\u0013\u0012\u00110\u0005¢\u0006\f\b\u0017\u0012\b\b\u0018\u0012\u0004\b\b(-\u0012\u0004\u0012\u00020*0\u0016H\u0081\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001J\b\u0010.\u001a\u00020\u0005H\u0016J\u0006\u0010/\u001a\u00020\u0014J\u0006\u00100\u001a\u00020\u0014JR\u00101\u001a\u0002022\b\b\u0002\u00103\u001a\u0002042\b\b\u0002\u00105\u001a\u0002042\b\b\u0002\u00106\u001a\u0002042\b\b\u0002\u00107\u001a\u00020\u00052\b\b\u0002\u00108\u001a\u0002042\u0016\b\u0002\u00109\u001a\u0010\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u000204\u0018\u00010\u0016H\u0007J\u0006\u0010:\u001a\u00020\u0014J\b\u0010;\u001a\u000202H\u0016R\u0012\u0010\u0004\u001a\u00020\u00058\u0000@\u0000X\u0081\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u0006\u001a\u00020\u00058\u0000@\u0000X\u0081\u000e¢\u0006\u0002\n\u0000R\u0011\u0010\u0007\u001a\u00020\u00058G¢\u0006\u0006\u001a\u0004\b\b\u0010\tR\"\u0010\n\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u000b8\u0000@\u0000X\u0081\u000e¢\u0006\n\n\u0002\u0010\r\u0012\u0004\b\f\u0010\u0003R\u0018\u0010\u000e\u001a\u00020\u000f8\u0000@\u0000X\u0081\u000e¢\u0006\b\n\u0000\u0012\u0004\b\u0010\u0010\u0003R\u0011\u0010\u0011\u001a\u00020\u00058G¢\u0006\u0006\u001a\u0004\b\u0012\u0010\t\u0082\u0001\u0001=\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006>"}, d2 = {"Landroidx/collection/ScatterSet;", ExifInterface.LONGITUDE_EAST, "", "()V", "_capacity", "", "_size", "capacity", "getCapacity", "()I", "elements", "", "getElements$annotations", "[Ljava/lang/Object;", "metadata", "", "getMetadata$annotations", "size", "getSize", "all", "", "predicate", "Lkotlin/Function1;", "Lkotlin/ParameterName;", "name", "element", Languages.ANY, "asSet", "", "contains", "(Ljava/lang/Object;)Z", "count", "equals", "other", "findElementIndex", "findElementIndex$collection", "(Ljava/lang/Object;)I", "first", "()Ljava/lang/Object;", "(Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;", "firstOrNull", "forEach", "", "block", "forEachIndex", ConfigConstants.CONFIG_INDEX_SECTION, "hashCode", "isEmpty", "isNotEmpty", "joinToString", "", "separator", "", "prefix", "postfix", "limit", "truncated", "transform", "none", "toString", "SetWrapper", "Landroidx/collection/MutableScatterSet;", "collection"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public abstract class ScatterSet<E> {
     public int _capacity;
@@ -80,12 +80,12 @@ public abstract class ScatterSet<E> {
         this.elements = ContainerHelpersKt.EMPTY_OBJECTS;
     }
 
-    /* JADX INFO: renamed from: getCapacity, reason: from getter */
+    /* INFO: renamed from: getCapacity, reason: from getter */
     public final int get_capacity() {
         return this._capacity;
     }
 
-    /* JADX INFO: renamed from: getSize, reason: from getter */
+    /* INFO: renamed from: getSize, reason: from getter */
     public final int get_size() {
         return this._size;
     }
@@ -171,7 +171,7 @@ public abstract class ScatterSet<E> {
         return get_size();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ String joinToString$default(ScatterSet scatterSet, CharSequence charSequence, CharSequence charSequence2, CharSequence charSequence3, int i, CharSequence charSequence4, Function1 function1, int i2, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: joinToString");
@@ -254,10 +254,10 @@ public abstract class ScatterSet<E> {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x005c A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:26:0x005e A[LOOP:0: B:14:0x0025->B:26:0x005e, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:30:0x0061 A[SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Code duplicated, block: B:25:0x005c A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:26:0x005e A[LOOP:0: B:14:0x0025->B:26:0x005e, LOOP_END] */
+    /* WARN: Code duplicated, block: B:30:0x0061 A[SYNTHETIC] */
+    /* WARN: Multi-variable type inference failed */
     public boolean equals(Object other) {
         if (other == this) {
             return true;
@@ -297,19 +297,19 @@ public abstract class ScatterSet<E> {
         return true;
     }
 
-    /* JADX INFO: renamed from: androidx.collection.ScatterSet$toString$1, reason: invalid class name */
-    /* JADX INFO: compiled from: ScatterSet.kt */
+    /* INFO: renamed from: androidx.collection.ScatterSet$toString$1, reason: invalid class name */
+    /* INFO: compiled from: ScatterSet.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\r\n\u0002\b\u0004\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001a\u0002H\u0002H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", ExifInterface.LONGITUDE_EAST, "element", "invoke", "(Ljava/lang/Object;)Ljava/lang/CharSequence;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<E, CharSequence> {
         final /* synthetic */ ScatterSet<E> this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(ScatterSet<E> scatterSet) {
             super(1);
             this.this$0 = scatterSet;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function1
         public final CharSequence invoke(E e) {
             if (e == this.this$0) {
@@ -327,7 +327,7 @@ public abstract class ScatterSet<E> {
         return new SetWrapper();
     }
 
-    /* JADX INFO: compiled from: ScatterSet.kt */
+    /* INFO: compiled from: ScatterSet.kt */
     @Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\"\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u001e\n\u0002\b\u0002\n\u0002\u0010(\n\u0000\b\u0090\u0004\u0018\u00002\b\u0012\u0004\u0012\u00028\u00000\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0016\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00028\u0000H\u0096\u0002¢\u0006\u0002\u0010\nJ\u0016\u0010\u000b\u001a\u00020\b2\f\u0010\f\u001a\b\u0012\u0004\u0012\u00028\u00000\rH\u0016J\b\u0010\u000e\u001a\u00020\bH\u0016J\u000f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00028\u00000\u0010H\u0096\u0002R\u0014\u0010\u0003\u001a\u00020\u00048VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u0011"}, d2 = {"Landroidx/collection/ScatterSet$SetWrapper;", "", "(Landroidx/collection/ScatterSet;)V", "size", "", "getSize", "()I", "contains", "", "element", "(Ljava/lang/Object;)Z", "containsAll", "elements", "", "isEmpty", "iterator", "", "collection"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public class SetWrapper implements Set<E>, KMappedMarker {
         @Override // java.util.Set, java.util.Collection
@@ -412,9 +412,9 @@ public abstract class ScatterSet<E> {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x003c A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:16:0x003e A[LOOP:0: B:5:0x000b->B:16:0x003e, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:21:0x0041 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:15:0x003c A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:16:0x003e A[LOOP:0: B:5:0x000b->B:16:0x003e, LOOP_END] */
+    /* WARN: Code duplicated, block: B:21:0x0041 A[SYNTHETIC] */
     public final E first() {
         Object[] objArr = this.elements;
         long[] jArr = this.metadata;
@@ -444,10 +444,10 @@ public abstract class ScatterSet<E> {
         throw new NoSuchElementException("The ScatterSet is empty");
     }
 
-    /* JADX WARN: Code duplicated, block: B:16:0x004d A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:17:0x004f A[LOOP:0: B:5:0x0010->B:17:0x004f, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:20:0x0052 A[SYNTHETIC] */
-    /* JADX WARN: Type inference failed for: r10v5, types: [E, java.lang.Object] */
+    /* WARN: Code duplicated, block: B:16:0x004d A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:17:0x004f A[LOOP:0: B:5:0x0010->B:17:0x004f, LOOP_END] */
+    /* WARN: Code duplicated, block: B:20:0x0052 A[SYNTHETIC] */
+    /* WARN: Type inference failed for: r10v5, types: [E, java.lang.Object] */
     public final E first(Function1<? super E, Boolean> predicate) {
         Intrinsics.checkNotNullParameter(predicate, "predicate");
         Object[] objArr = this.elements;
@@ -481,7 +481,7 @@ public abstract class ScatterSet<E> {
         throw new NoSuchElementException("Could not find a match");
     }
 
-    /* JADX WARN: Type inference failed for: r10v5, types: [E, java.lang.Object] */
+    /* WARN: Type inference failed for: r10v5, types: [E, java.lang.Object] */
     public final E firstOrNull(Function1<? super E, Boolean> predicate) {
         Intrinsics.checkNotNullParameter(predicate, "predicate");
         Object[] objArr = this.elements;
@@ -545,9 +545,9 @@ public abstract class ScatterSet<E> {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x004e A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:18:0x0050 A[LOOP:0: B:5:0x0010->B:18:0x0050, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:21:0x0053 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:17:0x004e A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:18:0x0050 A[LOOP:0: B:5:0x0010->B:18:0x0050, LOOP_END] */
+    /* WARN: Code duplicated, block: B:21:0x0053 A[SYNTHETIC] */
     public final boolean any(Function1<? super E, Boolean> predicate) {
         Intrinsics.checkNotNullParameter(predicate, "predicate");
         Object[] objArr = this.elements;

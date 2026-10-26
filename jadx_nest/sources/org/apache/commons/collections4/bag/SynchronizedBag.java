@@ -4,7 +4,7 @@ import java.util.Set;
 import org.apache.commons.collections4.Bag;
 import org.apache.commons.collections4.collection.SynchronizedCollection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SynchronizedBag<E> extends SynchronizedCollection<E> implements Bag<E> {
     private static final long serialVersionUID = 8084674570753837109L;
 

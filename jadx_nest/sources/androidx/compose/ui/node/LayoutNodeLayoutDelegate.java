@@ -18,8 +18,8 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: LayoutNodeLayoutDelegate.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: LayoutNodeLayoutDelegate.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u001c\b\u0000\u0018\u00002\u00020\u0001:\u0002^_B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\r\u0010I\u001a\u00020DH\u0000¢\u0006\u0002\bJJ\u0006\u0010K\u001a\u00020DJ\u0006\u0010L\u001a\u00020DJ\r\u0010M\u001a\u00020DH\u0000¢\u0006\u0002\bNJ\r\u0010O\u001a\u00020DH\u0000¢\u0006\u0002\bPJ\r\u0010Q\u001a\u00020DH\u0000¢\u0006\u0002\bRJ\r\u0010S\u001a\u00020DH\u0000¢\u0006\u0002\bTJ\u0006\u0010U\u001a\u00020DJ\u001a\u0010V\u001a\u00020D2\u0006\u0010W\u001a\u00020\u001fH\u0002ø\u0001\u0000¢\u0006\u0004\bX\u0010YJ\u001a\u0010Z\u001a\u00020D2\u0006\u0010W\u001a\u00020\u001fH\u0002ø\u0001\u0000¢\u0006\u0004\b[\u0010YJ\u0006\u0010\\\u001a\u00020DJ\u0006\u0010]\u001a\u00020DR\u0014\u0010\u0005\u001a\u00020\u00068@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\bR$\u0010\u000b\u001a\u00020\n2\u0006\u0010\t\u001a\u00020\n@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR$\u0010\u0011\u001a\u00020\u00102\u0006\u0010\t\u001a\u00020\u0010@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R$\u0010\u0016\u001a\u00020\u00102\u0006\u0010\t\u001a\u00020\u0010@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0013\"\u0004\b\u0018\u0010\u0015R\u001e\u0010\u001a\u001a\u00020\u00102\u0006\u0010\u0019\u001a\u00020\u0010@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0013R\u0014\u0010\u001c\u001a\u00020\n8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u001d\u0010\rR\u0019\u0010\u001e\u001a\u0004\u0018\u00010\u001f8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b \u0010!R\u0019\u0010\"\u001a\u0004\u0018\u00010\u001f8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b#\u0010!R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001e\u0010$\u001a\u00020\u00102\u0006\u0010\u0019\u001a\u00020\u0010@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\b%\u0010\u0013R\u000e\u0010&\u001a\u00020\u0010X\u0082\u000e¢\u0006\u0002\n\u0000R\u001e\u0010(\u001a\u00020'2\u0006\u0010\u0019\u001a\u00020'@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\b)\u0010*R\u0016\u0010+\u001a\u0004\u0018\u00010\u00068@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b,\u0010\bR\u001e\u0010-\u001a\u00020\u00102\u0006\u0010\u0019\u001a\u00020\u0010@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\b.\u0010\u0013R\u000e\u0010/\u001a\u00020\u0010X\u0082\u000e¢\u0006\u0002\n\u0000R\u001e\u00100\u001a\u00020\u00102\u0006\u0010\u0019\u001a\u00020\u0010@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\b1\u0010\u0013R*\u00103\u001a\b\u0018\u000102R\u00020\u00002\f\u0010\u0019\u001a\b\u0018\u000102R\u00020\u0000@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\b4\u00105R\u0018\u00106\u001a\u000607R\u00020\u0000X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b8\u00109R\u001e\u0010:\u001a\u00020\u00102\u0006\u0010\u0019\u001a\u00020\u0010@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\b;\u0010\u0013R\u000e\u0010<\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010=\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u0011\u0010>\u001a\u00020?8F¢\u0006\u0006\u001a\u0004\b@\u0010AR\u0014\u0010B\u001a\b\u0012\u0004\u0012\u00020D0CX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010E\u001a\u00020\u001fX\u0082\u000eø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\n\u0002\u0010FR\u0014\u0010G\u001a\u00020\n8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\bH\u0010\r\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006`"}, d2 = {"Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;", "", "layoutNode", "Landroidx/compose/ui/node/LayoutNode;", "(Landroidx/compose/ui/node/LayoutNode;)V", "alignmentLinesOwner", "Landroidx/compose/ui/node/AlignmentLinesOwner;", "getAlignmentLinesOwner$ui_release", "()Landroidx/compose/ui/node/AlignmentLinesOwner;", "value", "", "childrenAccessingCoordinatesDuringPlacement", "getChildrenAccessingCoordinatesDuringPlacement", "()I", "setChildrenAccessingCoordinatesDuringPlacement", "(I)V", "", "coordinatesAccessedDuringModifierPlacement", "getCoordinatesAccessedDuringModifierPlacement", "()Z", "setCoordinatesAccessedDuringModifierPlacement", "(Z)V", "coordinatesAccessedDuringPlacement", "getCoordinatesAccessedDuringPlacement", "setCoordinatesAccessedDuringPlacement", "<set-?>", "detachedFromParentLookaheadPass", "getDetachedFromParentLookaheadPass$ui_release", "height", "getHeight$ui_release", "lastConstraints", "Landroidx/compose/ui/unit/Constraints;", "getLastConstraints-DWUhwKw", "()Landroidx/compose/ui/unit/Constraints;", "lastLookaheadConstraints", "getLastLookaheadConstraints-DWUhwKw", "layoutPending", "getLayoutPending$ui_release", "layoutPendingForAlignment", "Landroidx/compose/ui/node/LayoutNode$LayoutState;", "layoutState", "getLayoutState$ui_release", "()Landroidx/compose/ui/node/LayoutNode$LayoutState;", "lookaheadAlignmentLinesOwner", "getLookaheadAlignmentLinesOwner$ui_release", "lookaheadLayoutPending", "getLookaheadLayoutPending$ui_release", "lookaheadLayoutPendingForAlignment", "lookaheadMeasurePending", "getLookaheadMeasurePending$ui_release", "Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;", "lookaheadPassDelegate", "getLookaheadPassDelegate$ui_release", "()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;", "measurePassDelegate", "Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$MeasurePassDelegate;", "getMeasurePassDelegate$ui_release", "()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$MeasurePassDelegate;", "measurePending", "getMeasurePending$ui_release", "nextChildLookaheadPlaceOrder", "nextChildPlaceOrder", "outerCoordinator", "Landroidx/compose/ui/node/NodeCoordinator;", "getOuterCoordinator", "()Landroidx/compose/ui/node/NodeCoordinator;", "performMeasureBlock", "Lkotlin/Function0;", "", "performMeasureConstraints", "J", "width", "getWidth$ui_release", "ensureLookaheadDelegateCreated", "ensureLookaheadDelegateCreated$ui_release", "invalidateParentData", "markChildrenDirty", "markLayoutPending", "markLayoutPending$ui_release", "markLookaheadLayoutPending", "markLookaheadLayoutPending$ui_release", "markLookaheadMeasurePending", "markLookaheadMeasurePending$ui_release", "markMeasurePending", "markMeasurePending$ui_release", "onCoordinatesUsed", "performLookaheadMeasure", "constraints", "performLookaheadMeasure-BRTryo0", "(J)V", "performMeasure", "performMeasure-BRTryo0", "resetAlignmentLines", "updateParentData", "LookaheadPassDelegate", "MeasurePassDelegate", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class LayoutNodeLayoutDelegate {
     public static final int $stable = 8;
@@ -50,12 +50,12 @@ public final class LayoutNodeLayoutDelegate {
         return this.layoutNode.getNodes().getOuterCoordinator();
     }
 
-    /* JADX INFO: renamed from: getLastConstraints-DWUhwKw, reason: not valid java name */
+    /* INFO: renamed from: getLastConstraints-DWUhwKw, reason: not valid java name */
     public final Constraints m1973getLastConstraintsDWUhwKw() {
         return this.measurePassDelegate.m1979getLastConstraintsDWUhwKw();
     }
 
-    /* JADX INFO: renamed from: getLastLookaheadConstraints-DWUhwKw, reason: not valid java name */
+    /* INFO: renamed from: getLastLookaheadConstraints-DWUhwKw, reason: not valid java name */
     public final Constraints m1974getLastLookaheadConstraintsDWUhwKw() {
         LookaheadPassDelegate lookaheadPassDelegate = this.lookaheadPassDelegate;
         if (lookaheadPassDelegate != null) {
@@ -72,32 +72,32 @@ public final class LayoutNodeLayoutDelegate {
         return this.measurePassDelegate.getWidth();
     }
 
-    /* JADX INFO: renamed from: getDetachedFromParentLookaheadPass$ui_release, reason: from getter */
+    /* INFO: renamed from: getDetachedFromParentLookaheadPass$ui_release, reason: from getter */
     public final boolean getDetachedFromParentLookaheadPass() {
         return this.detachedFromParentLookaheadPass;
     }
 
-    /* JADX INFO: renamed from: getLayoutState$ui_release, reason: from getter */
+    /* INFO: renamed from: getLayoutState$ui_release, reason: from getter */
     public final LayoutNode.LayoutState getLayoutState() {
         return this.layoutState;
     }
 
-    /* JADX INFO: renamed from: getMeasurePending$ui_release, reason: from getter */
+    /* INFO: renamed from: getMeasurePending$ui_release, reason: from getter */
     public final boolean getMeasurePending() {
         return this.measurePending;
     }
 
-    /* JADX INFO: renamed from: getLayoutPending$ui_release, reason: from getter */
+    /* INFO: renamed from: getLayoutPending$ui_release, reason: from getter */
     public final boolean getLayoutPending() {
         return this.layoutPending;
     }
 
-    /* JADX INFO: renamed from: getLookaheadMeasurePending$ui_release, reason: from getter */
+    /* INFO: renamed from: getLookaheadMeasurePending$ui_release, reason: from getter */
     public final boolean getLookaheadMeasurePending() {
         return this.lookaheadMeasurePending;
     }
 
-    /* JADX INFO: renamed from: getLookaheadLayoutPending$ui_release, reason: from getter */
+    /* INFO: renamed from: getLookaheadLayoutPending$ui_release, reason: from getter */
     public final boolean getLookaheadLayoutPending() {
         return this.lookaheadLayoutPending;
     }
@@ -184,12 +184,12 @@ public final class LayoutNodeLayoutDelegate {
         }
     }
 
-    /* JADX INFO: renamed from: getMeasurePassDelegate$ui_release, reason: from getter */
+    /* INFO: renamed from: getMeasurePassDelegate$ui_release, reason: from getter */
     public final MeasurePassDelegate getMeasurePassDelegate() {
         return this.measurePassDelegate;
     }
 
-    /* JADX INFO: renamed from: getLookaheadPassDelegate$ui_release, reason: from getter */
+    /* INFO: renamed from: getLookaheadPassDelegate$ui_release, reason: from getter */
     public final LookaheadPassDelegate getLookaheadPassDelegate() {
         return this.lookaheadPassDelegate;
     }
@@ -213,7 +213,7 @@ public final class LayoutNodeLayoutDelegate {
         }
     }
 
-    /* JADX INFO: compiled from: LayoutNodeLayoutDelegate.kt */
+    /* INFO: compiled from: LayoutNodeLayoutDelegate.kt */
     @Metadata(d1 = {"\u0000\u009a\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\t\n\u0002\u0010\u0000\n\u0002\b\u0012\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\b0\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0004\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u0003B\u0005¢\u0006\u0002\u0010\u0004J\u0014\u0010W\u001a\u000e\u0012\u0004\u0012\u00020Y\u0012\u0004\u0012\u00020;0XH\u0016J\b\u0010Z\u001a\u00020)H\u0002J\b\u0010[\u001a\u00020)H\u0002J\u001c\u0010\\\u001a\u00020)2\u0012\u0010]\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020)0'H\u0016J!\u0010^\u001a\u00020)2\u0016\u0010]\u001a\u0012\u0012\b\u0012\u00060\u0000R\u00020\u0007\u0012\u0004\u0012\u00020)0'H\u0082\bJ\u0011\u0010_\u001a\u00020;2\u0006\u0010`\u001a\u00020YH\u0096\u0002J\u000e\u0010a\u001a\u00020)2\u0006\u0010b\u001a\u00020\u0011J\u0006\u0010c\u001a\u00020)J\b\u0010d\u001a\u00020)H\u0016J\r\u0010e\u001a\u00020)H\u0000¢\u0006\u0002\bfJ\b\u0010g\u001a\u00020)H\u0002J\b\u0010h\u001a\u00020)H\u0002J\u0010\u0010i\u001a\u00020;2\u0006\u0010j\u001a\u00020;H\u0016J\u0010\u0010k\u001a\u00020;2\u0006\u0010l\u001a\u00020;H\u0016J\u001a\u0010m\u001a\u00020\u00022\u0006\u0010n\u001a\u00020#H\u0016ø\u0001\u0000¢\u0006\u0004\bo\u0010pJ\u0006\u0010q\u001a\u00020)J\u0010\u0010r\u001a\u00020;2\u0006\u0010j\u001a\u00020;H\u0016J\u0010\u0010s\u001a\u00020;2\u0006\u0010l\u001a\u00020;H\u0016J\u0006\u0010t\u001a\u00020)J\b\u0010u\u001a\u00020)H\u0002J\b\u0010v\u001a\u00020)H\u0002J\u0006\u0010w\u001a\u00020)J\r\u0010x\u001a\u00020)H\u0000¢\u0006\u0002\byJ=\u0010z\u001a\u00020)2\u0006\u0010{\u001a\u00020,2\u0006\u0010T\u001a\u00020/2\u0019\u0010|\u001a\u0015\u0012\u0004\u0012\u00020(\u0012\u0004\u0012\u00020)\u0018\u00010'¢\u0006\u0002\b*H\u0014ø\u0001\u0000¢\u0006\u0004\b}\u0010~J\u0006\u0010\u007f\u001a\u00020)J?\u0010\u0080\u0001\u001a\u00020)2\u0006\u0010{\u001a\u00020,2\u0006\u0010T\u001a\u00020/2\u0019\u0010|\u001a\u0015\u0012\u0004\u0012\u00020(\u0012\u0004\u0012\u00020)\u0018\u00010'¢\u0006\u0002\b*H\u0002ø\u0001\u0000¢\u0006\u0005\b\u0081\u0001\u0010~J\u001b\u0010\u0082\u0001\u001a\u00020\u00112\u0006\u0010n\u001a\u00020#ø\u0001\u0000¢\u0006\u0006\b\u0083\u0001\u0010\u0084\u0001J\u0007\u0010\u0085\u0001\u001a\u00020)J\t\u0010\u0086\u0001\u001a\u00020)H\u0016J\t\u0010\u0087\u0001\u001a\u00020)H\u0016J\u0013\u0010\u0088\u0001\u001a\u00020)2\b\u0010\u0089\u0001\u001a\u00030\u008a\u0001H\u0002J\u0007\u0010\u008b\u0001\u001a\u00020\u0011R\u0018\u0010\u0005\u001a\f\u0012\b\u0012\u00060\u0000R\u00020\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\u00020\tX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u001e\u0010\f\u001a\f\u0012\b\u0012\u00060\u0000R\u00020\u00070\r8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u0011X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R\u001a\u0010\u0016\u001a\u00020\u0011X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0013\"\u0004\b\u0018\u0010\u0015R\u0014\u0010\u0019\u001a\u00020\u001a8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u001b\u0010\u001cR$\u0010\u001e\u001a\u00020\u00112\u0006\u0010\u001d\u001a\u00020\u0011@PX\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001e\u0010\u0013\"\u0004\b\u001f\u0010\u0015R$\u0010 \u001a\u00020\u00112\u0006\u0010\u001d\u001a\u00020\u0011@@X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b \u0010\u0013\"\u0004\b!\u0010\u0015R\u0019\u0010\"\u001a\u0004\u0018\u00010#8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b$\u0010%R!\u0010&\u001a\u0015\u0012\u0004\u0012\u00020(\u0012\u0004\u0012\u00020)\u0018\u00010'¢\u0006\u0002\b*X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010+\u001a\u00020,X\u0082\u000eø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\n\u0002\u0010-R\u000e\u0010.\u001a\u00020/X\u0082\u000e¢\u0006\u0002\n\u0000R\u001e\u00100\u001a\u00020\u00112\u0006\u0010\u001d\u001a\u00020\u0011@BX\u0086\u000e¢\u0006\b\n\u0000\u001a\u0004\b1\u0010\u0013R\u0014\u00102\u001a\b\u0012\u0004\u0012\u00020)03X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u00104\u001a\u000205X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b6\u00107\"\u0004\b8\u00109R\u0014\u0010:\u001a\u00020;8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b<\u0010=R\u000e\u0010>\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010?\u001a\u00020;8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b@\u0010=R\u000e\u0010A\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010B\u001a\u0004\u0018\u00010\u00038VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bC\u0010DR\"\u0010F\u001a\u0004\u0018\u00010E2\b\u0010\u001d\u001a\u0004\u0018\u00010E@RX\u0096\u000e¢\u0006\b\n\u0000\u001a\u0004\bG\u0010HR\u000e\u0010I\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u001e\u0010J\u001a\u00020;2\u0006\u0010\u001d\u001a\u00020;@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\bK\u0010=R\u0014\u0010L\u001a\b\u0012\u0004\u0012\u00020)03X\u0082\u0004¢\u0006\u0002\n\u0000R!\u0010M\u001a\u0015\u0012\u0004\u0012\u00020(\u0012\u0004\u0012\u00020)\u0018\u00010'¢\u0006\u0002\b*X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010N\u001a\u00020,X\u0082\u000eø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\n\u0002\u0010-R\u000e\u0010O\u001a\u00020/X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010P\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u001e\u0010Q\u001a\u00020;2\u0006\u0010\u001d\u001a\u00020;@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\bR\u0010=R\u000e\u0010S\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u001e\u0010T\u001a\u00020/2\u0006\u0010\u001d\u001a\u00020/@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\bU\u0010V\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u008c\u0001"}, d2 = {"Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$MeasurePassDelegate;", "Landroidx/compose/ui/layout/Measurable;", "Landroidx/compose/ui/layout/Placeable;", "Landroidx/compose/ui/node/AlignmentLinesOwner;", "(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)V", "_childDelegates", "Landroidx/compose/runtime/collection/MutableVector;", "Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;", "alignmentLines", "Landroidx/compose/ui/node/AlignmentLines;", "getAlignmentLines", "()Landroidx/compose/ui/node/AlignmentLines;", "childDelegates", "", "getChildDelegates$ui_release", "()Ljava/util/List;", "childDelegatesDirty", "", "getChildDelegatesDirty$ui_release", "()Z", "setChildDelegatesDirty$ui_release", "(Z)V", "duringAlignmentLinesQuery", "getDuringAlignmentLinesQuery$ui_release", "setDuringAlignmentLinesQuery$ui_release", "innerCoordinator", "Landroidx/compose/ui/node/NodeCoordinator;", "getInnerCoordinator", "()Landroidx/compose/ui/node/NodeCoordinator;", "<set-?>", "isPlaced", "setPlaced$ui_release", "isPlacedByParent", "setPlacedByParent$ui_release", "lastConstraints", "Landroidx/compose/ui/unit/Constraints;", "getLastConstraints-DWUhwKw", "()Landroidx/compose/ui/unit/Constraints;", "lastLayerBlock", "Lkotlin/Function1;", "Landroidx/compose/ui/graphics/GraphicsLayerScope;", "", "Lkotlin/ExtensionFunctionType;", "lastPosition", "Landroidx/compose/ui/unit/IntOffset;", "J", "lastZIndex", "", "layingOutChildren", "getLayingOutChildren", "layoutChildrenBlock", "Lkotlin/Function0;", "measuredByParent", "Landroidx/compose/ui/node/LayoutNode$UsageByParent;", "getMeasuredByParent$ui_release", "()Landroidx/compose/ui/node/LayoutNode$UsageByParent;", "setMeasuredByParent$ui_release", "(Landroidx/compose/ui/node/LayoutNode$UsageByParent;)V", "measuredHeight", "", "getMeasuredHeight", "()I", "measuredOnce", "measuredWidth", "getMeasuredWidth", "onNodePlacedCalled", "parentAlignmentLinesOwner", "getParentAlignmentLinesOwner", "()Landroidx/compose/ui/node/AlignmentLinesOwner;", "", "parentData", "getParentData", "()Ljava/lang/Object;", "parentDataDirty", "placeOrder", "getPlaceOrder$ui_release", "placeOuterCoordinatorBlock", "placeOuterCoordinatorLayerBlock", "placeOuterCoordinatorPosition", "placeOuterCoordinatorZIndex", "placedOnce", "previousPlaceOrder", "getPreviousPlaceOrder$ui_release", "relayoutWithoutParentInProgress", "zIndex", "getZIndex$ui_release", "()F", "calculateAlignmentLines", "", "Landroidx/compose/ui/layout/AlignmentLine;", "checkChildrenPlaceOrderForUpdates", "clearPlaceOrder", "forEachChildAlignmentLinesOwner", "block", "forEachChildDelegate", "get", "alignmentLine", "invalidateIntrinsicsParent", "forceRequest", "invalidateParentData", "layoutChildren", "markDetachedFromParentLookaheadPass", "markDetachedFromParentLookaheadPass$ui_release", "markNodeAndSubtreeAsPlaced", "markSubtreeAsNotPlaced", "maxIntrinsicHeight", "width", "maxIntrinsicWidth", "height", "measure", "constraints", "measure-BRTryo0", "(J)Landroidx/compose/ui/layout/Placeable;", "measureBasedOnLookahead", "minIntrinsicHeight", "minIntrinsicWidth", "notifyChildrenUsingCoordinatesWhilePlacing", "onBeforeLayoutChildren", "onIntrinsicsQueried", "onNodeDetached", "onNodePlaced", "onNodePlaced$ui_release", "placeAt", "position", "layerBlock", "placeAt-f8xVGno", "(JFLkotlin/jvm/functions/Function1;)V", "placeBasedOnLookahead", "placeOuterCoordinator", "placeOuterCoordinator-f8xVGno", "remeasure", "remeasure-BRTryo0", "(J)Z", "replace", "requestLayout", "requestMeasure", "trackMeasurementByParent", "node", "Landroidx/compose/ui/node/LayoutNode;", "updateParentData", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public final class MeasurePassDelegate extends Placeable implements Measurable, AlignmentLinesOwner {
         private boolean duringAlignmentLinesQuery;
@@ -242,7 +242,7 @@ public final class LayoutNodeLayoutDelegate {
         private final Function0<Unit> layoutChildrenBlock = new LayoutNodeLayoutDelegate$MeasurePassDelegate$layoutChildrenBlock$1(this);
         private long placeOuterCoordinatorPosition = IntOffset.INSTANCE.m3022getZeronOccac();
 
-        /* JADX INFO: compiled from: LayoutNodeLayoutDelegate.kt */
+        /* INFO: compiled from: LayoutNodeLayoutDelegate.kt */
         @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
         public /* synthetic */ class WhenMappings {
             public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -276,17 +276,17 @@ public final class LayoutNodeLayoutDelegate {
             this.placeOuterCoordinatorBlock = new LayoutNodeLayoutDelegate$MeasurePassDelegate$placeOuterCoordinatorBlock$1(LayoutNodeLayoutDelegate.this, this);
         }
 
-        /* JADX INFO: renamed from: getPreviousPlaceOrder$ui_release, reason: from getter */
+        /* INFO: renamed from: getPreviousPlaceOrder$ui_release, reason: from getter */
         public final int getPreviousPlaceOrder() {
             return this.previousPlaceOrder;
         }
 
-        /* JADX INFO: renamed from: getPlaceOrder$ui_release, reason: from getter */
+        /* INFO: renamed from: getPlaceOrder$ui_release, reason: from getter */
         public final int getPlaceOrder() {
             return this.placeOrder;
         }
 
-        /* JADX INFO: renamed from: getLastConstraints-DWUhwKw, reason: not valid java name */
+        /* INFO: renamed from: getLastConstraints-DWUhwKw, reason: not valid java name */
         public final Constraints m1979getLastConstraintsDWUhwKw() {
             if (this.measuredOnce) {
                 return Constraints.m2828boximpl(getMeasurementConstraints());
@@ -294,7 +294,7 @@ public final class LayoutNodeLayoutDelegate {
             return null;
         }
 
-        /* JADX INFO: renamed from: getMeasuredByParent$ui_release, reason: from getter */
+        /* INFO: renamed from: getMeasuredByParent$ui_release, reason: from getter */
         public final LayoutNode.UsageByParent getMeasuredByParent() {
             return this.measuredByParent;
         }
@@ -303,7 +303,7 @@ public final class LayoutNodeLayoutDelegate {
             this.measuredByParent = usageByParent;
         }
 
-        /* JADX INFO: renamed from: getDuringAlignmentLinesQuery$ui_release, reason: from getter */
+        /* INFO: renamed from: getDuringAlignmentLinesQuery$ui_release, reason: from getter */
         public final boolean getDuringAlignmentLinesQuery() {
             return this.duringAlignmentLinesQuery;
         }
@@ -318,7 +318,7 @@ public final class LayoutNodeLayoutDelegate {
         }
 
         @Override // androidx.compose.ui.node.AlignmentLinesOwner
-        /* JADX INFO: renamed from: isPlaced, reason: from getter */
+        /* INFO: renamed from: isPlaced, reason: from getter */
         public boolean getIsPlaced() {
             return this.isPlaced;
         }
@@ -327,7 +327,7 @@ public final class LayoutNodeLayoutDelegate {
             this.isPlaced = z;
         }
 
-        /* JADX INFO: renamed from: isPlacedByParent, reason: from getter */
+        /* INFO: renamed from: isPlacedByParent, reason: from getter */
         public final boolean getIsPlacedByParent() {
             return this.isPlacedByParent;
         }
@@ -346,7 +346,7 @@ public final class LayoutNodeLayoutDelegate {
             return this.alignmentLines;
         }
 
-        /* JADX INFO: renamed from: getChildDelegatesDirty$ui_release, reason: from getter */
+        /* INFO: renamed from: getChildDelegatesDirty$ui_release, reason: from getter */
         public final boolean getChildDelegatesDirty() {
             return this.childDelegatesDirty;
         }
@@ -419,7 +419,7 @@ public final class LayoutNodeLayoutDelegate {
             this.layingOutChildren = false;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final void checkChildrenPlaceOrderForUpdates() {
             LayoutNode layoutNode = LayoutNodeLayoutDelegate.this.layoutNode;
             MutableVector<LayoutNode> mutableVector = layoutNode.get_children$ui_release();
@@ -490,7 +490,7 @@ public final class LayoutNodeLayoutDelegate {
             }
         }
 
-        /* JADX INFO: renamed from: getZIndex$ui_release, reason: from getter */
+        /* INFO: renamed from: getZIndex$ui_release, reason: from getter */
         public final float getZIndex() {
             return this.zIndex;
         }
@@ -541,7 +541,7 @@ public final class LayoutNodeLayoutDelegate {
             layoutChildren();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final void clearPlaceOrder() {
             LayoutNodeLayoutDelegate.this.nextChildPlaceOrder = 0;
             MutableVector<LayoutNode> mutableVector = LayoutNodeLayoutDelegate.this.layoutNode.get_children$ui_release();
@@ -576,7 +576,7 @@ public final class LayoutNodeLayoutDelegate {
         }
 
         @Override // androidx.compose.ui.layout.Measurable
-        /* JADX INFO: renamed from: measure-BRTryo0 */
+        /* INFO: renamed from: measure-BRTryo0 */
         public Placeable mo1824measureBRTryo0(long constraints) {
             if (LayoutNodeLayoutDelegate.this.layoutNode.getIntrinsicsUsageByParent() == LayoutNode.UsageByParent.NotUsed) {
                 LayoutNodeLayoutDelegate.this.layoutNode.clearSubtreeIntrinsicsUsage$ui_release();
@@ -592,7 +592,7 @@ public final class LayoutNodeLayoutDelegate {
             return this;
         }
 
-        /* JADX INFO: renamed from: remeasure-BRTryo0, reason: not valid java name */
+        /* INFO: renamed from: remeasure-BRTryo0, reason: not valid java name */
         public final boolean m1980remeasureBRTryo0(long constraints) {
             if (!LayoutNodeLayoutDelegate.this.layoutNode.getIsDeactivated()) {
                 Owner ownerRequireOwner = LayoutNodeKt.requireOwner(LayoutNodeLayoutDelegate.this.layoutNode);
@@ -667,9 +667,9 @@ public final class LayoutNodeLayoutDelegate {
             return i;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.compose.ui.layout.Placeable
-        /* JADX INFO: renamed from: placeAt-f8xVGno */
+        /* INFO: renamed from: placeAt-f8xVGno */
         public void mo1825placeAtf8xVGno(long position, float zIndex, Function1<? super GraphicsLayerScope, Unit> layerBlock) {
             Placeable.PlacementScope placementScope;
             this.isPlacedByParent = true;
@@ -702,7 +702,7 @@ public final class LayoutNodeLayoutDelegate {
             m1978placeOuterCoordinatorf8xVGno(position, zIndex, layerBlock);
         }
 
-        /* JADX INFO: renamed from: placeOuterCoordinator-f8xVGno, reason: not valid java name */
+        /* INFO: renamed from: placeOuterCoordinator-f8xVGno, reason: not valid java name */
         private final void m1978placeOuterCoordinatorf8xVGno(long position, float zIndex, Function1<? super GraphicsLayerScope, Unit> layerBlock) {
             if (LayoutNodeLayoutDelegate.this.layoutNode.getIsDeactivated()) {
                 throw new IllegalArgumentException("place is called on a deactivated node".toString());
@@ -950,7 +950,7 @@ public final class LayoutNodeLayoutDelegate {
         }
     }
 
-    /* JADX INFO: compiled from: LayoutNodeLayoutDelegate.kt */
+    /* INFO: compiled from: LayoutNodeLayoutDelegate.kt */
     @Metadata(d1 = {"\u0000\u009e\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0007\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\t\n\u0002\u0010\u0000\n\u0002\b\u000e\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\b+\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0004\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u0003B\u0005¢\u0006\u0002\u0010\u0004J\u0014\u0010Z\u001a\u000e\u0012\u0004\u0012\u00020\\\u0012\u0004\u0012\u00020B0[H\u0016J\b\u0010]\u001a\u00020&H\u0002J\b\u0010^\u001a\u00020&H\u0002J\u001c\u0010_\u001a\u00020&2\u0012\u0010`\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020&0$H\u0016J!\u0010a\u001a\u00020&2\u0016\u0010`\u001a\u0012\u0012\b\u0012\u00060\u0000R\u00020\u0007\u0012\u0004\u0012\u00020&0$H\u0082\bJ\u0011\u0010b\u001a\u00020B2\u0006\u0010c\u001a\u00020\\H\u0096\u0002J\u000e\u0010d\u001a\u00020&2\u0006\u0010e\u001a\u00020\u0011J\u0006\u0010f\u001a\u00020&J\b\u0010g\u001a\u00020&H\u0016J\b\u0010h\u001a\u00020&H\u0002J\b\u0010i\u001a\u00020&H\u0002J\u0010\u0010j\u001a\u00020B2\u0006\u0010k\u001a\u00020BH\u0016J\u0010\u0010l\u001a\u00020B2\u0006\u0010m\u001a\u00020BH\u0016J\u001a\u0010n\u001a\u00020\u00012\u0006\u0010o\u001a\u00020 H\u0016ø\u0001\u0000¢\u0006\u0004\bp\u0010qJ\u0010\u0010r\u001a\u00020B2\u0006\u0010k\u001a\u00020BH\u0016J\u0010\u0010s\u001a\u00020B2\u0006\u0010m\u001a\u00020BH\u0016J\u0006\u0010t\u001a\u00020&J\b\u0010u\u001a\u00020&H\u0002J\b\u0010v\u001a\u00020&H\u0002J\u0006\u0010w\u001a\u00020&J\r\u0010x\u001a\u00020&H\u0000¢\u0006\u0002\byJ=\u0010z\u001a\u00020&2\u0006\u0010{\u001a\u00020+2\u0006\u0010|\u001a\u0002002\u0019\u0010}\u001a\u0015\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020&\u0018\u00010$¢\u0006\u0002\b'H\u0014ø\u0001\u0000¢\u0006\u0004\b~\u0010\u007fJ\u001b\u0010\u0080\u0001\u001a\u00020\u00112\u0006\u0010o\u001a\u00020 ø\u0001\u0000¢\u0006\u0006\b\u0081\u0001\u0010\u0082\u0001J\u0007\u0010\u0083\u0001\u001a\u00020&J\t\u0010\u0084\u0001\u001a\u00020&H\u0016J\t\u0010\u0085\u0001\u001a\u00020&H\u0016J\u0013\u0010\u0086\u0001\u001a\u00020&2\b\u0010\u0087\u0001\u001a\u00030\u0088\u0001H\u0002J\u0007\u0010\u0089\u0001\u001a\u00020\u0011R\u0018\u0010\u0005\u001a\f\u0012\b\u0012\u00060\u0000R\u00020\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\u00020\tX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u001e\u0010\f\u001a\f\u0012\b\u0012\u00060\u0000R\u00020\u00070\r8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0010\u001a\u00020\u0011X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R\u001a\u0010\u0016\u001a\u00020\u0011X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0013\"\u0004\b\u0018\u0010\u0015R\u0014\u0010\u0019\u001a\u00020\u001a8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u001b\u0010\u001cR\u001a\u0010\u001d\u001a\u00020\u0011X\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001d\u0010\u0013\"\u0004\b\u001e\u0010\u0015R\u0019\u0010\u001f\u001a\u0004\u0018\u00010 8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b!\u0010\"RD\u0010(\u001a\u0015\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020&\u0018\u00010$¢\u0006\u0002\b'2\u0019\u0010#\u001a\u0015\u0012\u0004\u0012\u00020%\u0012\u0004\u0012\u00020&\u0018\u00010$¢\u0006\u0002\b'@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\b)\u0010*R&\u0010,\u001a\u00020+2\u0006\u0010#\u001a\u00020+@BX\u0080\u000eø\u0001\u0000ø\u0001\u0001¢\u0006\n\n\u0002\u0010/\u001a\u0004\b-\u0010.R\u001e\u00101\u001a\u0002002\u0006\u0010#\u001a\u000200@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\b2\u00103R\u001e\u00104\u001a\u00020\u00112\u0006\u0010#\u001a\u00020\u0011@BX\u0086\u000e¢\u0006\b\n\u0000\u001a\u0004\b5\u0010\u0013R\u0016\u00106\u001a\u0004\u0018\u00010 X\u0082\u000eø\u0001\u0000ø\u0001\u0001¢\u0006\u0002\n\u0000R\u0018\u00107\u001a\u000608R\u00020\u00078@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b9\u0010:R\u001a\u0010;\u001a\u00020<X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b=\u0010>\"\u0004\b?\u0010@R\u0014\u0010A\u001a\u00020B8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bC\u0010DR\u000e\u0010E\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010F\u001a\u00020B8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bG\u0010DR\u000e\u0010H\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010I\u001a\u0004\u0018\u00010\u00038VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bJ\u0010KR\"\u0010M\u001a\u0004\u0018\u00010L2\b\u0010#\u001a\u0004\u0018\u00010L@RX\u0096\u000e¢\u0006\b\n\u0000\u001a\u0004\bN\u0010OR\u000e\u0010P\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010Q\u001a\u00020BX\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bR\u0010D\"\u0004\bS\u0010TR\u001a\u0010U\u001a\u00020\u0011X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bV\u0010\u0013\"\u0004\bW\u0010\u0015R\u0018\u0010X\u001a\u00020B2\u0006\u0010#\u001a\u00020B@BX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010Y\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u008a\u0001"}, d2 = {"Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;", "Landroidx/compose/ui/layout/Placeable;", "Landroidx/compose/ui/layout/Measurable;", "Landroidx/compose/ui/node/AlignmentLinesOwner;", "(Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;)V", "_childDelegates", "Landroidx/compose/runtime/collection/MutableVector;", "Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;", "alignmentLines", "Landroidx/compose/ui/node/AlignmentLines;", "getAlignmentLines", "()Landroidx/compose/ui/node/AlignmentLines;", "childDelegates", "", "getChildDelegates$ui_release", "()Ljava/util/List;", "childDelegatesDirty", "", "getChildDelegatesDirty$ui_release", "()Z", "setChildDelegatesDirty$ui_release", "(Z)V", "duringAlignmentLinesQuery", "getDuringAlignmentLinesQuery$ui_release", "setDuringAlignmentLinesQuery$ui_release", "innerCoordinator", "Landroidx/compose/ui/node/NodeCoordinator;", "getInnerCoordinator", "()Landroidx/compose/ui/node/NodeCoordinator;", "isPlaced", "setPlaced", "lastConstraints", "Landroidx/compose/ui/unit/Constraints;", "getLastConstraints-DWUhwKw", "()Landroidx/compose/ui/unit/Constraints;", "<set-?>", "Lkotlin/Function1;", "Landroidx/compose/ui/graphics/GraphicsLayerScope;", "", "Lkotlin/ExtensionFunctionType;", "lastLayerBlock", "getLastLayerBlock$ui_release", "()Lkotlin/jvm/functions/Function1;", "Landroidx/compose/ui/unit/IntOffset;", "lastPosition", "getLastPosition-nOcc-ac$ui_release", "()J", "J", "", "lastZIndex", "getLastZIndex$ui_release", "()F", "layingOutChildren", "getLayingOutChildren", "lookaheadConstraints", "measurePassDelegate", "Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$MeasurePassDelegate;", "getMeasurePassDelegate$ui_release", "()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$MeasurePassDelegate;", "measuredByParent", "Landroidx/compose/ui/node/LayoutNode$UsageByParent;", "getMeasuredByParent$ui_release", "()Landroidx/compose/ui/node/LayoutNode$UsageByParent;", "setMeasuredByParent$ui_release", "(Landroidx/compose/ui/node/LayoutNode$UsageByParent;)V", "measuredHeight", "", "getMeasuredHeight", "()I", "measuredOnce", "measuredWidth", "getMeasuredWidth", "onNodePlacedCalled", "parentAlignmentLinesOwner", "getParentAlignmentLinesOwner", "()Landroidx/compose/ui/node/AlignmentLinesOwner;", "", "parentData", "getParentData", "()Ljava/lang/Object;", "parentDataDirty", "placeOrder", "getPlaceOrder$ui_release", "setPlaceOrder$ui_release", "(I)V", "placedOnce", "getPlacedOnce$ui_release", "setPlacedOnce$ui_release", "previousPlaceOrder", "relayoutWithoutParentInProgress", "calculateAlignmentLines", "", "Landroidx/compose/ui/layout/AlignmentLine;", "checkChildrenPlaceOrderForUpdates", "clearPlaceOrder", "forEachChildAlignmentLinesOwner", "block", "forEachChildDelegate", "get", "alignmentLine", "invalidateIntrinsicsParent", "forceRequest", "invalidateParentData", "layoutChildren", "markNodeAndSubtreeAsPlaced", "markSubtreeAsNotPlaced", "maxIntrinsicHeight", "width", "maxIntrinsicWidth", "height", "measure", "constraints", "measure-BRTryo0", "(J)Landroidx/compose/ui/layout/Placeable;", "minIntrinsicHeight", "minIntrinsicWidth", "notifyChildrenUsingCoordinatesWhilePlacing", "onBeforeLayoutChildren", "onIntrinsicsQueried", "onNodeDetached", "onNodePlaced", "onNodePlaced$ui_release", "placeAt", "position", "zIndex", "layerBlock", "placeAt-f8xVGno", "(JFLkotlin/jvm/functions/Function1;)V", "remeasure", "remeasure-BRTryo0", "(J)Z", "replace", "requestLayout", "requestMeasure", "trackLookaheadMeasurementByParent", "node", "Landroidx/compose/ui/node/LayoutNode;", "updateParentData", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public final class LookaheadPassDelegate extends Placeable implements Measurable, AlignmentLinesOwner {
         private boolean duringAlignmentLinesQuery;
@@ -973,7 +973,7 @@ public final class LayoutNodeLayoutDelegate {
         private boolean parentDataDirty = true;
         private Object parentData = getMeasurePassDelegate$ui_release().getParentData();
 
-        /* JADX INFO: compiled from: LayoutNodeLayoutDelegate.kt */
+        /* INFO: compiled from: LayoutNodeLayoutDelegate.kt */
         @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
         public /* synthetic */ class WhenMappings {
             public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -1014,7 +1014,7 @@ public final class LayoutNodeLayoutDelegate {
         public LookaheadPassDelegate() {
         }
 
-        /* JADX INFO: renamed from: getPlaceOrder$ui_release, reason: from getter */
+        /* INFO: renamed from: getPlaceOrder$ui_release, reason: from getter */
         public final int getPlaceOrder() {
             return this.placeOrder;
         }
@@ -1023,7 +1023,7 @@ public final class LayoutNodeLayoutDelegate {
             this.placeOrder = i;
         }
 
-        /* JADX INFO: renamed from: getMeasuredByParent$ui_release, reason: from getter */
+        /* INFO: renamed from: getMeasuredByParent$ui_release, reason: from getter */
         public final LayoutNode.UsageByParent getMeasuredByParent() {
             return this.measuredByParent;
         }
@@ -1036,7 +1036,7 @@ public final class LayoutNodeLayoutDelegate {
             return LayoutNodeLayoutDelegate.this.getMeasurePassDelegate();
         }
 
-        /* JADX INFO: renamed from: getDuringAlignmentLinesQuery$ui_release, reason: from getter */
+        /* INFO: renamed from: getDuringAlignmentLinesQuery$ui_release, reason: from getter */
         public final boolean getDuringAlignmentLinesQuery() {
             return this.duringAlignmentLinesQuery;
         }
@@ -1045,7 +1045,7 @@ public final class LayoutNodeLayoutDelegate {
             this.duringAlignmentLinesQuery = z;
         }
 
-        /* JADX INFO: renamed from: getPlacedOnce$ui_release, reason: from getter */
+        /* INFO: renamed from: getPlacedOnce$ui_release, reason: from getter */
         public final boolean getPlacedOnce() {
             return this.placedOnce;
         }
@@ -1054,17 +1054,17 @@ public final class LayoutNodeLayoutDelegate {
             this.placedOnce = z;
         }
 
-        /* JADX INFO: renamed from: getLastConstraints-DWUhwKw, reason: not valid java name and from getter */
+        /* INFO: renamed from: getLastConstraints-DWUhwKw, reason: not valid java name and from getter */
         public final Constraints getLookaheadConstraints() {
             return this.lookaheadConstraints;
         }
 
-        /* JADX INFO: renamed from: getLastPosition-nOcc-ac$ui_release, reason: not valid java name and from getter */
+        /* INFO: renamed from: getLastPosition-nOcc-ac$ui_release, reason: not valid java name and from getter */
         public final long getLastPosition() {
             return this.lastPosition;
         }
 
-        /* JADX INFO: renamed from: getLastZIndex$ui_release, reason: from getter */
+        /* INFO: renamed from: getLastZIndex$ui_release, reason: from getter */
         public final float getLastZIndex() {
             return this.lastZIndex;
         }
@@ -1074,7 +1074,7 @@ public final class LayoutNodeLayoutDelegate {
         }
 
         @Override // androidx.compose.ui.node.AlignmentLinesOwner
-        /* JADX INFO: renamed from: isPlaced, reason: from getter */
+        /* INFO: renamed from: isPlaced, reason: from getter */
         public boolean getIsPlaced() {
             return this.isPlaced;
         }
@@ -1093,7 +1093,7 @@ public final class LayoutNodeLayoutDelegate {
             return this.alignmentLines;
         }
 
-        /* JADX INFO: renamed from: getChildDelegatesDirty$ui_release, reason: from getter */
+        /* INFO: renamed from: getChildDelegatesDirty$ui_release, reason: from getter */
         public final boolean getChildDelegatesDirty() {
             return this.childDelegatesDirty;
         }
@@ -1283,9 +1283,9 @@ public final class LayoutNodeLayoutDelegate {
             } while (i < size);
         }
 
-        /* JADX WARN: Code duplicated, block: B:13:0x002b  */
+        /* WARN: Code duplicated, block: B:13:0x002b  */
         @Override // androidx.compose.ui.layout.Measurable
-        /* JADX INFO: renamed from: measure-BRTryo0 */
+        /* INFO: renamed from: measure-BRTryo0 */
         public Placeable mo1824measureBRTryo0(long constraints) {
             LayoutNode parent$ui_release = LayoutNodeLayoutDelegate.this.layoutNode.getParent$ui_release();
             if ((parent$ui_release != null ? parent$ui_release.getLayoutState$ui_release() : null) == LayoutNode.LayoutState.LookaheadMeasuring) {
@@ -1330,7 +1330,7 @@ public final class LayoutNodeLayoutDelegate {
             return this.parentData;
         }
 
-        /* JADX INFO: renamed from: remeasure-BRTryo0, reason: not valid java name */
+        /* INFO: renamed from: remeasure-BRTryo0, reason: not valid java name */
         public final boolean m1977remeasureBRTryo0(long constraints) {
             long jIntSize;
             if (!LayoutNodeLayoutDelegate.this.layoutNode.getIsDeactivated()) {
@@ -1368,9 +1368,9 @@ public final class LayoutNodeLayoutDelegate {
             throw new IllegalArgumentException("measure is called on a deactivated node".toString());
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.compose.ui.layout.Placeable
-        /* JADX INFO: renamed from: placeAt-f8xVGno */
+        /* INFO: renamed from: placeAt-f8xVGno */
         public void mo1825placeAtf8xVGno(long position, float zIndex, Function1<? super GraphicsLayerScope, Unit> layerBlock) {
             if (LayoutNodeLayoutDelegate.this.layoutNode.getIsDeactivated()) {
                 throw new IllegalArgumentException("place is called on a deactivated node".toString());
@@ -1563,7 +1563,7 @@ public final class LayoutNodeLayoutDelegate {
             layoutChildren();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final void clearPlaceOrder() {
             int i = 0;
             LayoutNodeLayoutDelegate.this.nextChildLookaheadPlaceOrder = 0;
@@ -1658,7 +1658,7 @@ public final class LayoutNodeLayoutDelegate {
             setPlaced(false);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final void checkChildrenPlaceOrderForUpdates() {
             MutableVector<LayoutNode> mutableVector = LayoutNodeLayoutDelegate.this.layoutNode.get_children$ui_release();
             int size = mutableVector.getSize();
@@ -1679,8 +1679,8 @@ public final class LayoutNodeLayoutDelegate {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: performMeasure-BRTryo0, reason: not valid java name */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: renamed from: performMeasure-BRTryo0, reason: not valid java name */
     public final void m1972performMeasureBRTryo0(long constraints) {
         if (this.layoutState != LayoutNode.LayoutState.Idle) {
             throw new IllegalStateException("layout state is not idle before measure starts".toString());
@@ -1695,8 +1695,8 @@ public final class LayoutNodeLayoutDelegate {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: performLookaheadMeasure-BRTryo0, reason: not valid java name */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: renamed from: performLookaheadMeasure-BRTryo0, reason: not valid java name */
     public final void m1971performLookaheadMeasureBRTryo0(long constraints) {
         this.layoutState = LayoutNode.LayoutState.LookaheadMeasuring;
         this.lookaheadMeasurePending = false;

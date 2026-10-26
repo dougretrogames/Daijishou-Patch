@@ -24,7 +24,7 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlSerializer;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class ActivityChooserModel extends DataSetObservable {
     static final String ATTRIBUTE_ACTIVITY = "activity";
     static final String ATTRIBUTE_TIME = "time";
@@ -479,7 +479,7 @@ class ActivityChooserModel extends DataSetObservable {
         PersistHistoryAsyncTask() {
         }
 
-        /* JADX WARN: Code duplicated, block: B:46:0x006f A[DONT_GENERATE, EXC_TOP_SPLITTER, SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:46:0x006f A[DONT_GENERATE, EXC_TOP_SPLITTER, SYNTHETIC] */
         @Override // android.os.AsyncTask
         public Void doInBackground(Object... objArr) {
             List list = (List) objArr[0];

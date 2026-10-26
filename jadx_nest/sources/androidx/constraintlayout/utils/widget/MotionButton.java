@@ -12,7 +12,7 @@ import android.view.ViewOutlineProvider;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.constraintlayout.widget.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionButton extends AppCompatButton {
     private Path mPath;
     RectF mRect;
@@ -88,7 +88,7 @@ public class MotionButton extends AppCompatButton {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.utils.widget.MotionButton$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.utils.widget.MotionButton$1, reason: invalid class name */
     class AnonymousClass1 extends ViewOutlineProvider {
         AnonymousClass1() {
         }
@@ -138,7 +138,7 @@ public class MotionButton extends AppCompatButton {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.utils.widget.MotionButton$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.utils.widget.MotionButton$2, reason: invalid class name */
     class AnonymousClass2 extends ViewOutlineProvider {
         AnonymousClass2() {
         }

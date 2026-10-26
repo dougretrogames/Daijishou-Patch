@@ -19,7 +19,7 @@ import androidx.core.widget.TextViewCompat;
 import androidx.core.widget.TintableCompoundDrawablesView;
 import java.util.function.IntFunction;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AppCompatButton extends Button implements TintableBackgroundView, AutoSizeableTextView, TintableCompoundDrawablesView, EmojiCompatConfigurationView {
     private AppCompatEmojiTextHelper mAppCompatEmojiTextHelper;
     private final AppCompatBackgroundHelper mBackgroundTintHelper;
@@ -49,8 +49,8 @@ public class AppCompatButton extends Button implements TintableBackgroundView, A
             this.mPropertiesMapped = true;
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.AppCompatButton$InspectionCompanion$1, reason: invalid class name */
-        /* JADX INFO: compiled from: AppCompatButton$InspectionCompanion.java */
+        /* INFO: renamed from: androidx.appcompat.widget.AppCompatButton$InspectionCompanion$1, reason: invalid class name */
+        /* INFO: compiled from: AppCompatButton$InspectionCompanion.java */
         class AnonymousClass1 implements IntFunction<String> {
             AnonymousClass1() {
             }

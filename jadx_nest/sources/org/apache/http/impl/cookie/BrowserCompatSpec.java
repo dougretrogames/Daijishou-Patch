@@ -21,7 +21,7 @@ import org.apache.http.message.ParserCursor;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class BrowserCompatSpec extends CookieSpecBase {
     private static final String[] DEFAULT_DATE_PATTERNS = {"EEE, dd MMM yyyy HH:mm:ss zzz", "EEE, dd-MMM-yy HH:mm:ss zzz", "EEE MMM d HH:mm:ss yyyy", "EEE, dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MMM-yyyy HH-mm-ss z", "EEE, dd MMM yy HH:mm:ss z", "EEE dd-MMM-yyyy HH:mm:ss z", "EEE dd MMM yyyy HH:mm:ss z", "EEE dd-MMM-yyyy HH-mm-ss z", "EEE dd-MMM-yy HH:mm:ss z", "EEE dd MMM yy HH:mm:ss z", "EEE,dd-MMM-yy HH:mm:ss z", "EEE,dd-MMM-yyyy HH:mm:ss z", "EEE, dd-MM-yyyy HH:mm:ss z"};
@@ -36,7 +36,7 @@ public class BrowserCompatSpec extends CookieSpecBase {
         return null;
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public BrowserCompatSpec(String[] strArr, BrowserCompatSpecFactory.SecurityLevel securityLevel) {
         CommonCookieAttributeHandler[] commonCookieAttributeHandlerArr = new CommonCookieAttributeHandler[7];
         commonCookieAttributeHandlerArr[0] = new BrowserCompatVersionAttributeHandler();
@@ -49,7 +49,7 @@ public class BrowserCompatSpec extends CookieSpecBase {
         super(commonCookieAttributeHandlerArr);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.cookie.BrowserCompatSpec$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.cookie.BrowserCompatSpec$1, reason: invalid class name */
     class AnonymousClass1 extends BasicPathHandler {
         @Override // org.apache.http.impl.cookie.BasicPathHandler, org.apache.http.cookie.CookieAttributeHandler
         public void validate(Cookie cookie, CookieOrigin cookieOrigin) throws MalformedCookieException {

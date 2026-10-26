@@ -3,8 +3,8 @@ package org.apache.commons.collections4.bloomfilter;
 import java.util.TreeSet;
 import java.util.function.IntPredicate;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class SparseBloomFilter$$ExternalSyntheticLambda2 implements IntPredicate {
     public final /* synthetic */ TreeSet f$0;
 

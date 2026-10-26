@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ArrayMap<K, V> extends SimpleArrayMap<K, V> implements Map<K, V> {
     ArrayMap<K, V>.EntrySet mEntrySet;
     ArrayMap<K, V>.KeySet mKeySet;
@@ -36,25 +36,25 @@ public class ArrayMap<K, V> extends SimpleArrayMap<K, V> implements Map<K, V> {
         return true;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // androidx.collection.SimpleArrayMap, java.util.Map
     public boolean containsKey(Object obj) {
         return super.containsKey(obj);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // androidx.collection.SimpleArrayMap, java.util.Map
     public boolean containsValue(Object obj) {
         return super.containsValue(obj);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // androidx.collection.SimpleArrayMap, java.util.Map
     public V get(Object obj) {
         return (V) super.get(obj);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // androidx.collection.SimpleArrayMap, java.util.Map
     public V remove(Object obj) {
         return (V) super.remove(obj);

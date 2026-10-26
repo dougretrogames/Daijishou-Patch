@@ -3,7 +3,7 @@ package org.slf4j.helpers;
 import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NOPLoggerFactory implements ILoggerFactory {
     @Override // org.slf4j.ILoggerFactory
     public Logger getLogger(String str) {

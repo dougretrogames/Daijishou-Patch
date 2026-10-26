@@ -3,7 +3,7 @@ package com.google.common.base;
 import java.io.Serializable;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class Equivalence<T> {
     protected abstract boolean doEquivalent(T a, T b);

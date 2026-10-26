@@ -2,7 +2,7 @@ package org.apache.commons.codec.digest;
 
 import java.util.zip.Checksum;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class XXHash32 implements Checksum {
     private static final int BUF_SIZE = 16;
     private static final int PRIME1 = -1640531535;

@@ -11,7 +11,7 @@ import androidx.fragment.app.FragmentTransitionImpl;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FragmentTransitionSupport extends FragmentTransitionImpl {
     @Override // androidx.fragment.app.FragmentTransitionImpl
     public boolean isSeekingSupported() {
@@ -64,7 +64,7 @@ public class FragmentTransitionSupport extends FragmentTransitionImpl {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.FragmentTransitionSupport$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.FragmentTransitionSupport$1, reason: invalid class name */
     class AnonymousClass1 extends Transition.EpicenterCallback {
         final /* synthetic */ Rect val$epicenter;
 
@@ -123,7 +123,7 @@ public class FragmentTransitionSupport extends FragmentTransitionImpl {
         return transitionSet;
     }
 
-    /* JADX INFO: renamed from: androidx.transition.FragmentTransitionSupport$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.FragmentTransitionSupport$2, reason: invalid class name */
     class AnonymousClass2 implements Transition.TransitionListener {
         final /* synthetic */ ArrayList val$exitingViews;
         final /* synthetic */ View val$fragmentView;
@@ -232,7 +232,7 @@ public class FragmentTransitionSupport extends FragmentTransitionImpl {
         ((TransitionSeekController) obj).animateToStart(runnable);
     }
 
-    /* JADX INFO: renamed from: androidx.transition.FragmentTransitionSupport$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.FragmentTransitionSupport$3, reason: invalid class name */
     class AnonymousClass3 extends TransitionListenerAdapter {
         final /* synthetic */ Object val$enterTransition;
         final /* synthetic */ ArrayList val$enteringViews;
@@ -298,7 +298,7 @@ public class FragmentTransitionSupport extends FragmentTransitionImpl {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.FragmentTransitionSupport$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.FragmentTransitionSupport$4, reason: invalid class name */
     class AnonymousClass4 implements Transition.TransitionListener {
         final /* synthetic */ Runnable val$transitionCompleteRunnable;
 
@@ -381,7 +381,7 @@ public class FragmentTransitionSupport extends FragmentTransitionImpl {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.FragmentTransitionSupport$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.FragmentTransitionSupport$5, reason: invalid class name */
     class AnonymousClass5 extends Transition.EpicenterCallback {
         final /* synthetic */ Rect val$epicenter;
 

@@ -12,7 +12,7 @@ import okhttp3.RequestBody;
 import okio.Buffer;
 import retrofit2.Converter;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 final class GsonRequestBodyConverter<T> implements Converter<T, RequestBody> {
     private static final MediaType MEDIA_TYPE = MediaType.get(Json.MEDIA_TYPE);
     private final TypeAdapter<T> adapter;

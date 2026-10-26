@@ -1,6 +1,6 @@
 package io.grpc;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ServerMethodDefinition<ReqT, RespT> {
     private final ServerCallHandler<ReqT, RespT> handler;
     private final MethodDescriptor<ReqT, RespT> method;

@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.util.Property;
 import com.google.android.material.math.MathUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface CircularRevealWidget extends CircularRevealHelper.Delegate {
     void buildCircularRevealCache();
 

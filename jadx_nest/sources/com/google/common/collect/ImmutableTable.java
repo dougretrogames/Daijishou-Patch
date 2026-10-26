@@ -15,7 +15,7 @@ import java.util.function.Function;
 import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ImmutableTable<R, C, V> extends AbstractTable<R, C, V> implements Serializable {
     private static final long serialVersionUID = 912559;
@@ -23,11 +23,11 @@ public abstract class ImmutableTable<R, C, V> extends AbstractTable<R, C, V> imp
     @Override // com.google.common.collect.Table
     public abstract ImmutableMap<C, Map<R, V>> columnMap();
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractTable
     public abstract ImmutableSet<Table.Cell<R, C, V>> createCellSet();
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractTable
     public abstract ImmutableCollection<V> createValues();
 
@@ -186,7 +186,7 @@ public abstract class ImmutableTable<R, C, V> extends AbstractTable<R, C, V> imp
         return (ImmutableSet) super.cellSet();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractTable
     public final UnmodifiableIterator<Table.Cell<R, C, V>> cellIterator() {
         throw new AssertionError("should never be called");

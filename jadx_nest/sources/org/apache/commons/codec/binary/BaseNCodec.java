@@ -10,7 +10,7 @@ import org.apache.commons.codec.CodecPolicy;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.EncoderException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class BaseNCodec implements BinaryEncoder, BinaryDecoder {
     private static final int DEFAULT_BUFFER_RESIZE_FACTOR = 2;
     private static final int DEFAULT_BUFFER_SIZE = 8192;

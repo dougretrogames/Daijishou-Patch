@@ -9,7 +9,7 @@ import androidx.appcompat.R;
 import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AlertDialogLayout extends LinearLayoutCompat {
     public AlertDialogLayout(Context context) {
         super(context);
@@ -113,7 +113,7 @@ public class AlertDialogLayout extends LinearLayoutCompat {
         return true;
     }
 
-    /* JADX WARN: Code duplicated, block: B:9:0x0036  */
+    /* WARN: Code duplicated, block: B:9:0x0036  */
     private void forceUniformWidth(int i, int i2) {
         int i3;
         int iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(getMeasuredWidth(), 1073741824);
@@ -153,7 +153,7 @@ public class AlertDialogLayout extends LinearLayoutCompat {
         return 0;
     }
 
-    /* JADX WARN: Code duplicated, block: B:31:0x009f  */
+    /* WARN: Code duplicated, block: B:31:0x009f  */
     @Override // androidx.appcompat.widget.LinearLayoutCompat, android.view.ViewGroup, android.view.View
     protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
         int paddingTop;

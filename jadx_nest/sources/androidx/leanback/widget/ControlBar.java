@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class ControlBar extends LinearLayout {
     private int mChildMarginFromCenter;
     boolean mDefaultFocusToMiddle;

@@ -9,7 +9,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
 import org.apache.http.client.methods.HttpRequestBase;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ApacheHttpResponse extends LowLevelHttpResponse {
     private final Header[] allHeaders;
     private final HttpRequestBase request;

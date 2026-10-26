@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.AbstractMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class MapEntryLite<K, V> {
     private static final int KEY_FIELD_NUMBER = 1;
     private static final int VALUE_FIELD_NUMBER = 2;
@@ -59,7 +59,7 @@ public class MapEntryLite<K, V> {
         return FieldSet.computeElementSize(metadata.keyType, 1, key) + FieldSet.computeElementSize(metadata.valueType, 2, value);
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.MapEntryLite$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.MapEntryLite$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$FieldType;
 
@@ -130,7 +130,7 @@ public class MapEntryLite<K, V> {
         return new AbstractMap.SimpleImmutableEntry(field, field2);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public void parseInto(MapFieldLite<K, V> map, CodedInputStream input, ExtensionRegistryLite extensionRegistry) throws IOException {
         int iPushLimit = input.pushLimit(input.readRawVarint32());
         Object field = this.metadata.defaultKey;

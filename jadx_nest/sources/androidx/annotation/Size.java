@@ -10,8 +10,8 @@ import kotlin.annotation.AnnotationRetention;
 import kotlin.annotation.AnnotationTarget;
 import kotlin.annotation.MustBeDocumented;
 
-/* JADX INFO: compiled from: Size.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Size.kt */
+/* INFO: loaded from: classes.dex */
 @Target({ElementType.FIELD, ElementType.METHOD, ElementType.PARAMETER, ElementType.LOCAL_VARIABLE, ElementType.ANNOTATION_TYPE})
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.VALUE_PARAMETER, AnnotationTarget.LOCAL_VARIABLE, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.FIELD, AnnotationTarget.ANNOTATION_CLASS})
 @Retention(RetentionPolicy.CLASS)

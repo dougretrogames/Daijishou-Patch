@@ -9,7 +9,7 @@ import android.view.contentcapture.ContentCaptureSession;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ContentCaptureSessionCompat {
     private static final String KEY_VIEW_TREE_APPEARED = "TREAT_AS_VIEW_TREE_APPEARED";
     private static final String KEY_VIEW_TREE_APPEARING = "TREAT_AS_VIEW_TREE_APPEARING";

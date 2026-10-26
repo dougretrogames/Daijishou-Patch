@@ -12,7 +12,7 @@ import org.apache.commons.codec.StringEncoder;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.binary.BaseNCodec;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BCodec extends RFC1522Codec implements StringEncoder, StringDecoder {
     private static final CodecPolicy DECODING_POLICY_DEFAULT = CodecPolicy.LENIENT;
     private final CodecPolicy decodingPolicy;

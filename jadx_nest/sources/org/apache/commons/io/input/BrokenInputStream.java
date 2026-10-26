@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.util.function.Supplier;
 import org.apache.commons.io.function.Erase;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BrokenInputStream extends InputStream {
     public static final BrokenInputStream INSTANCE = new BrokenInputStream();
     private final Supplier<Throwable> exceptionSupplier;

@@ -19,7 +19,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class PlayableItemDAO_Impl implements PlayableItemDAO {
     private final RoomDatabase __db;
     private final EntityDeletionOrUpdateAdapter<PlayableItemEntity> __deletionAdapterOfPlayableItemEntity;
@@ -42,7 +42,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         this.__preparedStmtOfUpdatePreviewMediaPathAll = new AnonymousClass7(__db);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$1, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$1, reason: invalid class name */
     class AnonymousClass1 extends EntityInsertionAdapter<PlayableItemEntity> {
         AnonymousClass1(RoomDatabase database) {
             super(database);
@@ -53,7 +53,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             return "INSERT OR REPLACE INTO `PlayableItemEntity` (`id`,`is_singleton_disjoint_set`,`use_disjoint_set_primary_playable_item`,`disjoint_set_primary_playable_item_id`,`playable_item_type`,`name`,`do_scrape_name`,`description`,`scraper_keyword_list`,`scrape_scraper_keywords`,`is_favorite`,`is_searchable`,`is_visible`,`preview_media_path`,`attached_platform_id`,`uri`,`sync_tree_uri`,`md5`,`activity_component_string`,`use_custom_player`,`custom_player_id`,`play_count`,`last_played_timestamp`,`added_date_timestamp`,`extra`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityInsertionAdapter
         public void bind(SupportSQLiteStatement supportSQLiteStatement, PlayableItemEntity playableItemEntity) {
             supportSQLiteStatement.bindLong(1, playableItemEntity.getId());
@@ -118,7 +118,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$2, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$2, reason: invalid class name */
     class AnonymousClass2 extends EntityDeletionOrUpdateAdapter<PlayableItemEntity> {
         AnonymousClass2(RoomDatabase database) {
             super(database);
@@ -129,14 +129,14 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             return "DELETE FROM `PlayableItemEntity` WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final PlayableItemEntity entity) {
             statement.bindLong(1, entity.getId());
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$3, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$3, reason: invalid class name */
     class AnonymousClass3 extends EntityDeletionOrUpdateAdapter<PlayableItemEntity> {
         AnonymousClass3(RoomDatabase database) {
             super(database);
@@ -147,7 +147,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             return "UPDATE OR ABORT `PlayableItemEntity` SET `id` = ?,`is_singleton_disjoint_set` = ?,`use_disjoint_set_primary_playable_item` = ?,`disjoint_set_primary_playable_item_id` = ?,`playable_item_type` = ?,`name` = ?,`do_scrape_name` = ?,`description` = ?,`scraper_keyword_list` = ?,`scrape_scraper_keywords` = ?,`is_favorite` = ?,`is_searchable` = ?,`is_visible` = ?,`preview_media_path` = ?,`attached_platform_id` = ?,`uri` = ?,`sync_tree_uri` = ?,`md5` = ?,`activity_component_string` = ?,`use_custom_player` = ?,`custom_player_id` = ?,`play_count` = ?,`last_played_timestamp` = ?,`added_date_timestamp` = ?,`extra` = ? WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(SupportSQLiteStatement supportSQLiteStatement, PlayableItemEntity playableItemEntity) {
             supportSQLiteStatement.bindLong(1, playableItemEntity.getId());
@@ -213,7 +213,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$4, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$4, reason: invalid class name */
     class AnonymousClass4 extends SharedSQLiteStatement {
         AnonymousClass4(RoomDatabase database) {
             super(database);
@@ -225,7 +225,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$5, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$5, reason: invalid class name */
     class AnonymousClass5 extends SharedSQLiteStatement {
         AnonymousClass5(RoomDatabase database) {
             super(database);
@@ -237,7 +237,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$6, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$6, reason: invalid class name */
     class AnonymousClass6 extends SharedSQLiteStatement {
         AnonymousClass6(RoomDatabase database) {
             super(database);
@@ -249,7 +249,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$7, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$7, reason: invalid class name */
     class AnonymousClass7 extends SharedSQLiteStatement {
         AnonymousClass7(RoomDatabase database) {
             super(database);
@@ -428,7 +428,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$8, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$8, reason: invalid class name */
     class AnonymousClass8 implements Callable<Integer> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -436,7 +436,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Integer call() throws Exception {
             Integer numValueOf = null;
@@ -468,7 +468,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass9(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$9, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$9, reason: invalid class name */
     class AnonymousClass9 implements Callable<Integer> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -476,7 +476,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Integer call() throws Exception {
             Integer numValueOf = null;
@@ -524,7 +524,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$10, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$10, reason: invalid class name */
     class AnonymousClass10 implements Callable<Integer> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -532,7 +532,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Integer call() throws Exception {
             Integer numValueOf = null;
@@ -564,7 +564,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass11(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$11, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$11, reason: invalid class name */
     class AnonymousClass11 implements Callable<Integer> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -572,7 +572,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Integer call() throws Exception {
             Integer numValueOf = null;
@@ -620,7 +620,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$12, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$12, reason: invalid class name */
     class AnonymousClass12 implements Callable<List<Long>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -661,7 +661,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass13(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$13, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$13, reason: invalid class name */
     class AnonymousClass13 implements Callable<List<Long>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -731,7 +731,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$14, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$14, reason: invalid class name */
     class AnonymousClass14 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -858,7 +858,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass15(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$15, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$15, reason: invalid class name */
     class AnonymousClass15 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -1202,7 +1202,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$16, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$16, reason: invalid class name */
     class AnonymousClass16 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -1210,7 +1210,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -1300,7 +1300,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass17(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$17, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$17, reason: invalid class name */
     class AnonymousClass17 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -1308,7 +1308,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -1567,7 +1567,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass18(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$18, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$18, reason: invalid class name */
     class AnonymousClass18 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -1575,7 +1575,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -1666,7 +1666,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass19(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$19, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$19, reason: invalid class name */
     class AnonymousClass19 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -1674,7 +1674,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -1933,7 +1933,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$20, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$20, reason: invalid class name */
     class AnonymousClass20 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -1941,7 +1941,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -2031,7 +2031,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass21(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$21, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$21, reason: invalid class name */
     class AnonymousClass21 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -2039,7 +2039,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -2298,7 +2298,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass22(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$22, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$22, reason: invalid class name */
     class AnonymousClass22 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -2306,7 +2306,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -2397,7 +2397,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass23(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$23, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$23, reason: invalid class name */
     class AnonymousClass23 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -2405,7 +2405,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -2671,7 +2671,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass24(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$24, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$24, reason: invalid class name */
     class AnonymousClass24 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -2679,7 +2679,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -2765,7 +2765,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass25(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$25, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$25, reason: invalid class name */
     class AnonymousClass25 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -2773,7 +2773,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -3029,7 +3029,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass26(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$26, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$26, reason: invalid class name */
     class AnonymousClass26 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -3037,7 +3037,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -3245,7 +3245,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass27(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$27, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$27, reason: invalid class name */
     class AnonymousClass27 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -3253,7 +3253,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -3562,7 +3562,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass28(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$28, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$28, reason: invalid class name */
     class AnonymousClass28 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -3696,7 +3696,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass29(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$29, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$29, reason: invalid class name */
     class AnonymousClass29 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -4066,7 +4066,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity", "PlayableItemToGenrePairEntity"}, false, new AnonymousClass30(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$30, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$30, reason: invalid class name */
     class AnonymousClass30 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -4190,7 +4190,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity", "PlayableItemToGenrePairEntity"}, false, new AnonymousClass31(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$31, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$31, reason: invalid class name */
     class AnonymousClass31 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -4542,7 +4542,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity", "PlayableItemToGenrePairEntity"}, false, new AnonymousClass32(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$32, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$32, reason: invalid class name */
     class AnonymousClass32 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -4780,7 +4780,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity", "PlayableItemToGenrePairEntity"}, false, new AnonymousClass33(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$33, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$33, reason: invalid class name */
     class AnonymousClass33 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -5023,7 +5023,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity", "PlayableItemToGenrePairEntity"}, false, new AnonymousClass34(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$34, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$34, reason: invalid class name */
     class AnonymousClass34 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -5153,7 +5153,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity", "PlayableItemToGenrePairEntity"}, false, new AnonymousClass35(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$35, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$35, reason: invalid class name */
     class AnonymousClass35 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -5523,7 +5523,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity", "PlayableItemToGenrePairEntity"}, false, new AnonymousClass36(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$36, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$36, reason: invalid class name */
     class AnonymousClass36 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -5647,7 +5647,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity", "PlayableItemToGenrePairEntity"}, false, new AnonymousClass37(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$37, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$37, reason: invalid class name */
     class AnonymousClass37 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -6005,7 +6005,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity", "PlayableItemToGenrePairEntity"}, false, new AnonymousClass38(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$38, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$38, reason: invalid class name */
     class AnonymousClass38 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -6135,7 +6135,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity", "PlayableItemToGenrePairEntity"}, false, new AnonymousClass39(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$39, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$39, reason: invalid class name */
     class AnonymousClass39 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -6504,7 +6504,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass40(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$40, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$40, reason: invalid class name */
     class AnonymousClass40 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -6627,7 +6627,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass41(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$41, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$41, reason: invalid class name */
     class AnonymousClass41 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -6979,7 +6979,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass42(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$42, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$42, reason: invalid class name */
     class AnonymousClass42 implements Callable<List<Long>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -7016,7 +7016,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass43(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$43, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$43, reason: invalid class name */
     class AnonymousClass43 implements Callable<List<Long>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -7095,7 +7095,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass44(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$44, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$44, reason: invalid class name */
     class AnonymousClass44 implements Callable<List<Long>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -7132,7 +7132,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass45(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$45, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$45, reason: invalid class name */
     class AnonymousClass45 implements Callable<List<Long>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -7211,7 +7211,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass46(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$46, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$46, reason: invalid class name */
     class AnonymousClass46 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -7334,7 +7334,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass47(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$47, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$47, reason: invalid class name */
     class AnonymousClass47 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -7687,7 +7687,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass48(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$48, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$48, reason: invalid class name */
     class AnonymousClass48 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -7811,7 +7811,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass49(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$49, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$49, reason: invalid class name */
     class AnonymousClass49 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -8168,7 +8168,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass50(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$50, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$50, reason: invalid class name */
     class AnonymousClass50 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -8298,7 +8298,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass51(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$51, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$51, reason: invalid class name */
     class AnonymousClass51 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -8660,7 +8660,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass52(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$52, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$52, reason: invalid class name */
     class AnonymousClass52 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -8784,7 +8784,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass53(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$53, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$53, reason: invalid class name */
     class AnonymousClass53 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -9141,7 +9141,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass54(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$54, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$54, reason: invalid class name */
     class AnonymousClass54 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -9271,7 +9271,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass55(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$55, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$55, reason: invalid class name */
     class AnonymousClass55 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -9644,7 +9644,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass56(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$56, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$56, reason: invalid class name */
     class AnonymousClass56 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -9779,7 +9779,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass57(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$57, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$57, reason: invalid class name */
     class AnonymousClass57 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -10150,7 +10150,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$58, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$58, reason: invalid class name */
     class AnonymousClass58 implements Callable<PlayableItemEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -10158,7 +10158,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemEntity call() throws Exception {
             PlayableItemEntity playableItemEntity;
@@ -10338,7 +10338,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass59(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$59, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$59, reason: invalid class name */
     class AnonymousClass59 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -10467,7 +10467,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass60(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$60, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$60, reason: invalid class name */
     class AnonymousClass60 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -10834,7 +10834,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass61(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$61, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$61, reason: invalid class name */
     class AnonymousClass61 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -10957,7 +10957,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass62(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$62, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$62, reason: invalid class name */
     class AnonymousClass62 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -11315,7 +11315,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass63(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$63, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$63, reason: invalid class name */
     class AnonymousClass63 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -11444,7 +11444,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass64(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$64, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$64, reason: invalid class name */
     class AnonymousClass64 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -11812,7 +11812,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass65(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$65, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$65, reason: invalid class name */
     class AnonymousClass65 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -11936,7 +11936,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass66(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$66, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$66, reason: invalid class name */
     class AnonymousClass66 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -12289,7 +12289,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass67(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$67, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$67, reason: invalid class name */
     class AnonymousClass67 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -12414,7 +12414,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass68(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$68, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$68, reason: invalid class name */
     class AnonymousClass68 implements Callable<List<PlayableItemEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -12767,7 +12767,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass69(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$69, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$69, reason: invalid class name */
     class AnonymousClass69 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -12775,7 +12775,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -12803,7 +12803,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass70(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$70, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$70, reason: invalid class name */
     class AnonymousClass70 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -12811,7 +12811,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -12867,7 +12867,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass71(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$71, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$71, reason: invalid class name */
     class AnonymousClass71 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -12875,7 +12875,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -12903,7 +12903,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass72(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$72, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$72, reason: invalid class name */
     class AnonymousClass72 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -12911,7 +12911,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -12967,7 +12967,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass73(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$73, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$73, reason: invalid class name */
     class AnonymousClass73 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -12975,7 +12975,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -13003,7 +13003,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass74(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$74, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$74, reason: invalid class name */
     class AnonymousClass74 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -13011,7 +13011,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -13073,7 +13073,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass75(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$75, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$75, reason: invalid class name */
     class AnonymousClass75 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -13081,7 +13081,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -13115,7 +13115,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass76(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$76, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$76, reason: invalid class name */
     class AnonymousClass76 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -13123,7 +13123,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -13197,7 +13197,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass77(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$77, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$77, reason: invalid class name */
     class AnonymousClass77 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -13205,7 +13205,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -13239,7 +13239,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass78(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$78, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$78, reason: invalid class name */
     class AnonymousClass78 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -13247,7 +13247,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -13315,7 +13315,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass79(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$79, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$79, reason: invalid class name */
     class AnonymousClass79 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -13323,7 +13323,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -13351,7 +13351,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass80(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$80, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$80, reason: invalid class name */
     class AnonymousClass80 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -13359,7 +13359,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -13421,7 +13421,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass81(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$81, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$81, reason: invalid class name */
     class AnonymousClass81 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -13429,7 +13429,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -13463,7 +13463,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass82(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$82, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$82, reason: invalid class name */
     class AnonymousClass82 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -13471,7 +13471,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -13545,7 +13545,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass83(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$83, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$83, reason: invalid class name */
     class AnonymousClass83 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -13553,7 +13553,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;
@@ -13587,7 +13587,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemEntity"}, false, new AnonymousClass84(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$84, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemDAO_Impl$84, reason: invalid class name */
     class AnonymousClass84 implements Callable<Long> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -13595,7 +13595,7 @@ public final class PlayableItemDAO_Impl implements PlayableItemDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Long call() throws Exception {
             Long lValueOf = null;

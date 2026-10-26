@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Timestamp extends GeneratedMessage implements TimestampOrBuilder {
     private static final Timestamp DEFAULT_INSTANCE;
     public static final int NANOS_FIELD_NUMBER = 2;
@@ -188,7 +188,7 @@ public final class Timestamp extends GeneratedMessage implements TimestampOrBuil
         return this == DEFAULT_INSTANCE ? new Builder((AnonymousClass1) null) : new Builder((AnonymousClass1) null).mergeFrom(this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent parent) {
         return new Builder(parent, null);
@@ -374,7 +374,7 @@ public final class Timestamp extends GeneratedMessage implements TimestampOrBuil
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.Timestamp$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.Timestamp$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<Timestamp> {
         AnonymousClass1() {
         }

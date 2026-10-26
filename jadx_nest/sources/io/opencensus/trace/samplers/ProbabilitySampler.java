@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 abstract class ProbabilitySampler extends Sampler {
     abstract long getIdUpperBound();
 

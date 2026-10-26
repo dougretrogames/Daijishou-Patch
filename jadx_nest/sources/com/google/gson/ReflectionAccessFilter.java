@@ -2,7 +2,7 @@ package com.google.gson;
 
 import com.google.gson.internal.ReflectionAccessFilterHelper;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public interface ReflectionAccessFilter {
     public static final ReflectionAccessFilter BLOCK_INACCESSIBLE_JAVA = new AnonymousClass1();
     public static final ReflectionAccessFilter BLOCK_ALL_JAVA = new AnonymousClass2();
@@ -18,7 +18,7 @@ public interface ReflectionAccessFilter {
 
     FilterResult check(Class<?> cls);
 
-    /* JADX INFO: renamed from: com.google.gson.ReflectionAccessFilter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.ReflectionAccessFilter$1, reason: invalid class name */
     class AnonymousClass1 implements ReflectionAccessFilter {
         AnonymousClass1() {
         }
@@ -32,7 +32,7 @@ public interface ReflectionAccessFilter {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.ReflectionAccessFilter$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.ReflectionAccessFilter$2, reason: invalid class name */
     class AnonymousClass2 implements ReflectionAccessFilter {
         AnonymousClass2() {
         }
@@ -46,7 +46,7 @@ public interface ReflectionAccessFilter {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.ReflectionAccessFilter$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.ReflectionAccessFilter$3, reason: invalid class name */
     class AnonymousClass3 implements ReflectionAccessFilter {
         AnonymousClass3() {
         }
@@ -60,7 +60,7 @@ public interface ReflectionAccessFilter {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.ReflectionAccessFilter$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.ReflectionAccessFilter$4, reason: invalid class name */
     class AnonymousClass4 implements ReflectionAccessFilter {
         AnonymousClass4() {
         }

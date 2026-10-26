@@ -4,12 +4,12 @@ import java.util.Arrays;
 import java.util.Objects;
 import java.util.function.LongPredicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @FunctionalInterface
 public interface BitMapExtractor {
     boolean processBitMaps(LongPredicate longPredicate);
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.bloomfilter.BitMapExtractor$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.bloomfilter.BitMapExtractor$1, reason: invalid class name */
     class AnonymousClass1 implements BitMapExtractor {
         final /* synthetic */ long[] val$bitMaps;
 
@@ -56,7 +56,7 @@ public interface BitMapExtractor {
         return true;
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.bloomfilter.BitMapExtractor$1Bits, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.bloomfilter.BitMapExtractor$1Bits, reason: invalid class name */
     final class C1Bits {
         private long[] data = new long[16];
         private int size;

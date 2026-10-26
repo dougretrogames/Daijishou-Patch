@@ -28,7 +28,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
 import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Sets {
     private Sets() {
@@ -259,13 +259,13 @@ public final class Sets {
         return new AnonymousClass1(set1, set2);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Sets$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Sets$1, reason: invalid class name */
     class AnonymousClass1<E> extends SetView<E> {
         final /* synthetic */ Set val$set1;
         final /* synthetic */ Set val$set2;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(final Set val$set1, final Set val$set2) {
             super(null);
             this.val$set1 = val$set1;
@@ -289,7 +289,7 @@ public final class Sets {
             return this.val$set1.isEmpty() && this.val$set2.isEmpty();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Sets$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.google.common.collect.Sets$1$1, reason: invalid class name and collision with other inner class name */
         class C00421 extends AbstractIterator<E> {
             final Iterator<? extends E> itr1;
             final Iterator<? extends E> itr2;
@@ -344,20 +344,20 @@ public final class Sets {
         return new AnonymousClass2(set1, set2);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Sets$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Sets$2, reason: invalid class name */
     class AnonymousClass2<E> extends SetView<E> {
         final /* synthetic */ Set val$set1;
         final /* synthetic */ Set val$set2;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(final Set val$set1, final Set val$set2) {
             super(null);
             this.val$set1 = val$set1;
             this.val$set2 = val$set2;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Sets$2$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Sets$2$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<E> {
             final Iterator<E> itr;
 
@@ -417,20 +417,20 @@ public final class Sets {
         return new AnonymousClass3(set1, set2);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Sets$3, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Sets$3, reason: invalid class name */
     class AnonymousClass3<E> extends SetView<E> {
         final /* synthetic */ Set val$set1;
         final /* synthetic */ Set val$set2;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(final Set val$set1, final Set val$set2) {
             super(null);
             this.val$set1 = val$set1;
             this.val$set2 = val$set2;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Sets$3$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Sets$3$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<E> {
             final Iterator<E> itr;
 
@@ -485,13 +485,13 @@ public final class Sets {
         return new AnonymousClass4(set1, set2);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Sets$4, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Sets$4, reason: invalid class name */
     class AnonymousClass4<E> extends SetView<E> {
         final /* synthetic */ Set val$set1;
         final /* synthetic */ Set val$set2;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass4(final Set val$set1, final Set val$set2) {
             super(null);
             this.val$set1 = val$set1;
@@ -503,7 +503,7 @@ public final class Sets {
             return new AnonymousClass1(this.val$set1.iterator(), this.val$set2.iterator());
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Sets$4$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Sets$4$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<E> {
             final /* synthetic */ Iterator val$itr1;
             final /* synthetic */ Iterator val$itr2;
@@ -572,7 +572,7 @@ public final class Sets {
         return new FilteredSet((Set) Preconditions.checkNotNull(unfiltered), (Predicate) Preconditions.checkNotNull(predicate));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <E> SortedSet<E> filter(SortedSet<E> unfiltered, Predicate<? super E> predicate) {
         if (unfiltered instanceof FilteredSet) {
             FilteredSet filteredSet = (FilteredSet) unfiltered;
@@ -581,7 +581,7 @@ public final class Sets {
         return new FilteredSortedSet((SortedSet) Preconditions.checkNotNull(unfiltered), (Predicate) Preconditions.checkNotNull(predicate));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <E> NavigableSet<E> filter(NavigableSet<E> unfiltered, Predicate<? super E> predicate) {
         if (unfiltered instanceof FilteredSet) {
             FilteredSet filteredSet = (FilteredSet) unfiltered;
@@ -755,7 +755,7 @@ public final class Sets {
             return new CartesianSet(immutableListBuild, new CartesianList(new AnonymousClass1(immutableListBuild)));
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Sets$CartesianSet$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Sets$CartesianSet$1, reason: invalid class name */
         class AnonymousClass1 extends ImmutableList<List<E>> {
             final /* synthetic */ ImmutableList val$axes;
 
@@ -789,7 +789,7 @@ public final class Sets {
             this.delegate = delegate;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Collection<List<E>> delegate() {
             return this.delegate;
@@ -858,7 +858,7 @@ public final class Sets {
             this.mask = mask;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Sets$SubSet$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Sets$SubSet$1, reason: invalid class name */
         class AnonymousClass1 extends UnmodifiableIterator<E> {
             final ImmutableList<E> elements;
             int remainingSetBits;
@@ -922,13 +922,13 @@ public final class Sets {
             return 1 << this.inputSet.size();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Sets$PowerSet$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Sets$PowerSet$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIndexedListIterator<Set<E>> {
             AnonymousClass1(int size) {
                 super(size);
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIndexedListIterator
             public Set<E> get(final int setBits) {
                 return new SubSet(PowerSet.this.inputSet, setBits);
@@ -980,8 +980,8 @@ public final class Sets {
         return new AnonymousClass5(size, immutableMapIndexMap);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Sets$5, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Sets$5, reason: invalid class name */
     class AnonymousClass5<E> extends AbstractSet<Set<E>> {
         final /* synthetic */ ImmutableMap val$index;
         final /* synthetic */ int val$size;
@@ -1002,7 +1002,7 @@ public final class Sets {
             return false;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Sets$5$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Sets$5$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<Set<E>> {
             final BitSet bits;
 
@@ -1010,7 +1010,7 @@ public final class Sets {
                 this.bits = new BitSet(AnonymousClass5.this.val$index.size());
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
             public Set<E> computeNext() {
@@ -1030,7 +1030,7 @@ public final class Sets {
                 return new C00431((BitSet) this.bits.clone());
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.Sets$5$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: renamed from: com.google.common.collect.Sets$5$1$1, reason: invalid class name and collision with other inner class name */
             class C00431 extends AbstractSet<E> {
                 final /* synthetic */ BitSet val$copy;
 
@@ -1044,7 +1044,7 @@ public final class Sets {
                     return num != null && this.val$copy.get(num.intValue());
                 }
 
-                /* JADX INFO: renamed from: com.google.common.collect.Sets$5$1$1$1, reason: invalid class name and collision with other inner class name */
+                /* INFO: renamed from: com.google.common.collect.Sets$5$1$1$1, reason: invalid class name and collision with other inner class name */
                 class C00441 extends AbstractIterator<E> {
                     int i = -1;
 
@@ -1135,7 +1135,7 @@ public final class Sets {
             this.unmodifiableDelegate = Collections.unmodifiableSortedSet(delegate);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingSortedSet, com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public SortedSet<E> delegate() {
             return this.unmodifiableDelegate;
@@ -1240,7 +1240,7 @@ public final class Sets {
             this.forward = forward;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingNavigableSet, com.google.common.collect.ForwardingSortedSet, com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public NavigableSet<E> delegate() {
             return this.forward;
@@ -1368,7 +1368,7 @@ public final class Sets {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <K extends Comparable<? super K>> NavigableSet<K> subSet(NavigableSet<K> set, Range<K> range) {
         if (set.comparator() != null && set.comparator() != Ordering.natural() && range.hasLowerBound() && range.hasUpperBound()) {
             Preconditions.checkArgument(set.comparator().compare(range.lowerEndpoint(), range.upperEndpoint()) <= 0, "set is using a custom comparator which is inconsistent with the natural ordering.");

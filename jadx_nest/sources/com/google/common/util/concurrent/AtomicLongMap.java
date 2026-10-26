@@ -12,7 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicLong;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class AtomicLongMap<K> implements Serializable {
 
@@ -190,7 +190,7 @@ public final class AtomicLongMap<K> implements Serializable {
         return Collections.unmodifiableMap(Maps.transformValues(this.map, new AnonymousClass1(this)));
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.AtomicLongMap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.AtomicLongMap$1, reason: invalid class name */
     class AnonymousClass1 implements Function<AtomicLong, Long> {
         AnonymousClass1(final AtomicLongMap this$0) {
         }

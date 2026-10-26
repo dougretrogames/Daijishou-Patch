@@ -3,7 +3,7 @@ package kotlin.jvm.internal;
 import kotlin.reflect.KClass;
 import kotlin.reflect.KDeclarationContainer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class FunctionReferenceImpl extends FunctionReference {
     public FunctionReferenceImpl(int i, KDeclarationContainer kDeclarationContainer, String str, String str2) {
         super(i, NO_RECEIVER, ((ClassBasedDeclarationContainer) kDeclarationContainer).getJClass(), str, str2, !(kDeclarationContainer instanceof KClass) ? 1 : 0);

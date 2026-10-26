@@ -17,7 +17,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class PluggableAuthHandler implements ExecutableHandler {
     private static final int EXECUTABLE_SUPPORTED_MAX_VERSION = 1;
     private static final int EXIT_CODE_SUCCESS = 0;

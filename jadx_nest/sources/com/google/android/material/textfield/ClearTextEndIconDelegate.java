@@ -12,7 +12,7 @@ import com.google.android.material.R;
 import com.google.android.material.animation.AnimationUtils;
 import com.google.android.material.motion.MotionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ClearTextEndIconDelegate extends EndIconDelegate {
     private static final float ANIMATION_SCALE_FROM_VALUE = 0.8f;
     private static final int DEFAULT_ANIMATION_FADE_DURATION = 100;
@@ -27,7 +27,7 @@ class ClearTextEndIconDelegate extends EndIconDelegate {
     private final View.OnFocusChangeListener onFocusChangeListener;
     private final View.OnClickListener onIconClickListener;
 
-    /* JADX INFO: renamed from: lambda$new$0$com-google-android-material-textfield-ClearTextEndIconDelegate, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$com-google-android-material-textfield-ClearTextEndIconDelegate, reason: not valid java name */
     /* synthetic */ void m3332xfc81bd94(View view) {
         EditText editText = this.editText;
         if (editText == null) {
@@ -40,7 +40,7 @@ class ClearTextEndIconDelegate extends EndIconDelegate {
         refreshIconState();
     }
 
-    /* JADX INFO: renamed from: lambda$new$1$com-google-android-material-textfield-ClearTextEndIconDelegate, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$1$com-google-android-material-textfield-ClearTextEndIconDelegate, reason: not valid java name */
     /* synthetic */ void m3333x7ae2c173(View view, boolean z) {
         animateIcon(shouldBeVisible());
     }
@@ -68,7 +68,7 @@ class ClearTextEndIconDelegate extends EndIconDelegate {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$tearDown$2$com-google-android-material-textfield-ClearTextEndIconDelegate, reason: not valid java name */
+    /* INFO: renamed from: lambda$tearDown$2$com-google-android-material-textfield-ClearTextEndIconDelegate, reason: not valid java name */
     /* synthetic */ void m3334x26d8c5f4() {
         animateIcon(true);
     }
@@ -153,7 +153,7 @@ class ClearTextEndIconDelegate extends EndIconDelegate {
         alphaAnimator2.addListener(new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.textfield.ClearTextEndIconDelegate$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.textfield.ClearTextEndIconDelegate$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }
@@ -164,7 +164,7 @@ class ClearTextEndIconDelegate extends EndIconDelegate {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.textfield.ClearTextEndIconDelegate$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.textfield.ClearTextEndIconDelegate$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         AnonymousClass2() {
         }
@@ -183,7 +183,7 @@ class ClearTextEndIconDelegate extends EndIconDelegate {
         return valueAnimatorOfFloat;
     }
 
-    /* JADX INFO: renamed from: lambda$getAlphaAnimator$3$com-google-android-material-textfield-ClearTextEndIconDelegate, reason: not valid java name */
+    /* INFO: renamed from: lambda$getAlphaAnimator$3$com-google-android-material-textfield-ClearTextEndIconDelegate, reason: not valid java name */
     /* synthetic */ void m3330xa5c23ba8(ValueAnimator valueAnimator) {
         this.endIconView.setAlpha(((Float) valueAnimator.getAnimatedValue()).floatValue());
     }
@@ -196,7 +196,7 @@ class ClearTextEndIconDelegate extends EndIconDelegate {
         return valueAnimatorOfFloat;
     }
 
-    /* JADX INFO: renamed from: lambda$getScaleAnimator$4$com-google-android-material-textfield-ClearTextEndIconDelegate, reason: not valid java name */
+    /* INFO: renamed from: lambda$getScaleAnimator$4$com-google-android-material-textfield-ClearTextEndIconDelegate, reason: not valid java name */
     /* synthetic */ void m3331x3819711b(ValueAnimator valueAnimator) {
         float fFloatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
         this.endIconView.setScaleX(fFloatValue);

@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ConcatAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     static final String TAG = "ConcatAdapter";
     private final ConcatAdapterController mController;

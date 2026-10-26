@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LineIterator implements Iterator<String>, Closeable {
     private final BufferedReader bufferedReader;
     private String cachedLine;

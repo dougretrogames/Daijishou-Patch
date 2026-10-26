@@ -9,7 +9,7 @@ import java.math.RoundingMode;
 import kotlin.time.DurationKt;
 import okhttp3.internal.http2.Http2Connection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class IntMath {
     static final int FLOOR_SQRT_MAX_INT = 46340;
@@ -46,7 +46,7 @@ public final class IntMath {
         return Integer.highestOneBit(x);
     }
 
-    /* JADX INFO: renamed from: com.google.common.math.IntMath$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.math.IntMath$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$java$math$RoundingMode;
 
@@ -208,7 +208,7 @@ public final class IntMath {
         return (int) Math.sqrt(x);
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
     public static int divide(int p, int q, RoundingMode mode) {
         Preconditions.checkNotNull(mode);
         if (q == 0) {

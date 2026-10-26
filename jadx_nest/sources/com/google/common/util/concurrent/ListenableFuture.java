@@ -4,7 +4,7 @@ import com.google.errorprone.annotations.DoNotMock;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Future;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @DoNotMock("Use the methods in Futures (like immediateFuture) or SettableFuture")
 @ElementTypesAreNonnullByDefault
 public interface ListenableFuture<V> extends Future<V> {

@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentMap;
 import javax.annotation.CheckForNull;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class MapMaker {
     private static final int DEFAULT_CONCURRENCY_LEVEL = 4;

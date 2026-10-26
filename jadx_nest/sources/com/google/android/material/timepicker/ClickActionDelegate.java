@@ -5,7 +5,7 @@ import android.view.View;
 import androidx.core.view.AccessibilityDelegateCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ClickActionDelegate extends AccessibilityDelegateCompat {
     private final AccessibilityNodeInfoCompat.AccessibilityActionCompat clickAction;
 

@@ -2,7 +2,7 @@ package androidx.leanback.widget;
 
 import android.view.View;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class ShadowHelper {
     static boolean supportsDynamicShadow() {
         return true;

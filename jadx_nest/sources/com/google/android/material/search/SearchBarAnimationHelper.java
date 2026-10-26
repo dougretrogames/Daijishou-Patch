@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class SearchBarAnimationHelper {
     private static final long COLLAPSE_DURATION_MS = 250;
     private static final long COLLAPSE_FADE_IN_CHILDREN_DURATION_MS = 100;
@@ -45,7 +45,7 @@ class SearchBarAnimationHelper {
     private boolean onLoadAnimationFadeInEnabled = true;
     private Animator runningExpandOrCollapseAnimator = null;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     interface OnLoadAnimationInvocation {
         void invoke(SearchBar.OnLoadAnimationCallback onLoadAnimationCallback);
     }
@@ -53,7 +53,7 @@ class SearchBarAnimationHelper {
     SearchBarAnimationHelper() {
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     void startOnLoadAnimation(SearchBar searchBar) {
         dispatchOnLoadAnimation(new SearchBarAnimationHelper$$ExternalSyntheticLambda1());
         TextView textView = searchBar.getTextView();
@@ -83,7 +83,7 @@ class SearchBarAnimationHelper {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchBarAnimationHelper$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchBarAnimationHelper$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }
@@ -94,7 +94,7 @@ class SearchBarAnimationHelper {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchBarAnimationHelper$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchBarAnimationHelper$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         final /* synthetic */ View val$centerView;
         final /* synthetic */ Animator val$secondaryViewAnimator;
@@ -111,7 +111,7 @@ class SearchBarAnimationHelper {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     void stopOnLoadAnimation(SearchBar searchBar) {
         Animator animator = this.secondaryViewAnimator;
         if (animator != null) {
@@ -146,7 +146,7 @@ class SearchBarAnimationHelper {
         return this.onLoadAnimationCallbacks.remove(onLoadAnimationCallback);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void dispatchOnLoadAnimation(OnLoadAnimationInvocation onLoadAnimationInvocation) {
         Iterator<SearchBar.OnLoadAnimationCallback> it = this.onLoadAnimationCallbacks.iterator();
         while (it.hasNext()) {
@@ -206,7 +206,7 @@ class SearchBarAnimationHelper {
         view.post(new SearchBarAnimationHelper$$ExternalSyntheticLambda3(this, searchBar, view, appBarLayout, z));
     }
 
-    /* JADX INFO: renamed from: lambda$startExpandAnimation$0$com-google-android-material-search-SearchBarAnimationHelper, reason: not valid java name */
+    /* INFO: renamed from: lambda$startExpandAnimation$0$com-google-android-material-search-SearchBarAnimationHelper, reason: not valid java name */
     /* synthetic */ void m3312x1b96b119(SearchBar searchBar, View view, AppBarLayout appBarLayout, boolean z) {
         AnimatorSet animatorSet = new AnimatorSet();
         animatorSet.playSequentially(getFadeOutChildrenAnimator(searchBar, view), getExpandAnimator(searchBar, view, appBarLayout));
@@ -222,7 +222,7 @@ class SearchBarAnimationHelper {
         this.runningExpandOrCollapseAnimator = animatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchBarAnimationHelper$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchBarAnimationHelper$3, reason: invalid class name */
     class AnonymousClass3 extends AnimatorListenerAdapter {
         AnonymousClass3() {
         }
@@ -237,7 +237,7 @@ class SearchBarAnimationHelper {
         return getExpandCollapseAnimationHelper(searchBar, view, appBarLayout).setDuration(300L).addListener(new AnonymousClass4(searchBar)).getExpandAnimator();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchBarAnimationHelper$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchBarAnimationHelper$4, reason: invalid class name */
     class AnonymousClass4 extends AnimatorListenerAdapter {
         final /* synthetic */ SearchBar val$searchBar;
 
@@ -288,7 +288,7 @@ class SearchBarAnimationHelper {
         this.runningExpandOrCollapseAnimator = animatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchBarAnimationHelper$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchBarAnimationHelper$5, reason: invalid class name */
     class AnonymousClass5 extends AnimatorListenerAdapter {
         AnonymousClass5() {
         }
@@ -303,7 +303,7 @@ class SearchBarAnimationHelper {
         return getExpandCollapseAnimationHelper(searchBar, view, appBarLayout).setDuration(250L).addListener(new AnonymousClass6(searchBar)).getCollapseAnimator();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchBarAnimationHelper$6, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchBarAnimationHelper$6, reason: invalid class name */
     class AnonymousClass6 extends AnimatorListenerAdapter {
         final /* synthetic */ SearchBar val$searchBar;
 

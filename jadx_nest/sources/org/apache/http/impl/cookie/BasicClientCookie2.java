@@ -3,7 +3,7 @@ package org.apache.http.impl.cookie;
 import java.util.Date;
 import org.apache.http.cookie.SetCookie2;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicClientCookie2 extends BasicClientCookie implements SetCookie2 {
     private static final long serialVersionUID = -7744598295706617057L;
     private String commentURL;

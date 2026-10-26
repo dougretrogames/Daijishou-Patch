@@ -6,7 +6,7 @@ import java.nio.charset.Charset;
 import java.util.List;
 import org.eclipse.jgit.diff.RawText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class MergeFormatterPass {
     private final Charset charset;
     private String lastConflictingName;

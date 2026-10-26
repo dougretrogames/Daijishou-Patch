@@ -18,7 +18,7 @@ import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.storage.pack.PackConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RenameDetector {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$diff$DiffEntry$ChangeType = null;
     private static final Comparator<DiffEntry> DIFF_COMPARATOR = new AnonymousClass1();
@@ -65,7 +65,7 @@ public class RenameDetector {
         return iArr2;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.diff.RenameDetector$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.diff.RenameDetector$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<DiffEntry> {
         private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$diff$DiffEntry$ChangeType;
 

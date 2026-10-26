@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CompositeFileComparator extends AbstractFileComparator implements Serializable {
     private static final Comparator<?>[] EMPTY_COMPARATOR_ARRAY = new Comparator[0];
     private static final long serialVersionUID = -2224170307287243428L;
@@ -51,7 +51,7 @@ public class CompositeFileComparator extends AbstractFileComparator implements S
         return ((Integer) Stream.of((Object[]) this.delegates).map(new CompositeFileComparator$$ExternalSyntheticLambda1(file, file2)).filter(new CompositeFileComparator$$ExternalSyntheticLambda2()).findFirst().orElse(0)).intValue();
     }
 
-    /* JADX WARN: Type inference failed for: r0v0, types: [java.util.Comparator<?>[], java.util.Comparator<java.io.File>[]] */
+    /* WARN: Type inference failed for: r0v0, types: [java.util.Comparator<?>[], java.util.Comparator<java.io.File>[]] */
     private Comparator<File>[] emptyArray() {
         return EMPTY_COMPARATOR_ARRAY;
     }

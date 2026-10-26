@@ -6,7 +6,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.MapIterator;
 import org.apache.commons.collections4.ResettableIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EntrySetMapIterator<K, V> implements MapIterator<K, V>, ResettableIterator<K> {
     private boolean canRemove;
     private Iterator<Map.Entry<K, V>> iterator;

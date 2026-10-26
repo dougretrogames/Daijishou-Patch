@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.pack;
 import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class BitmapCommit extends ObjectId {
     private final boolean addToIndex;
     private final int flags;

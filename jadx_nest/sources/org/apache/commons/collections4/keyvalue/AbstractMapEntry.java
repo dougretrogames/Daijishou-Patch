@@ -3,7 +3,7 @@ package org.apache.commons.collections4.keyvalue;
 import java.util.Map;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractMapEntry<K, V> extends AbstractKeyValue<K, V> implements Map.Entry<K, V> {
     protected AbstractMapEntry(K k, V v) {
         super(k, v);

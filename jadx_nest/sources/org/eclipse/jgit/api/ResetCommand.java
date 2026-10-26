@@ -31,7 +31,7 @@ import org.eclipse.jgit.treewalk.EmptyTreeIterator;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.filter.PathFilterGroup;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ResetCommand extends GitCommand<Ref> {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$api$ResetCommand$ResetType;
     private Collection<String> filepaths;
@@ -47,7 +47,7 @@ public class ResetCommand extends GitCommand<Ref> {
         MERGE,
         KEEP;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static ResetType[] valuesCustom() {
             ResetType[] resetTypeArrValuesCustom = values();
             int length = resetTypeArrValuesCustom.length;
@@ -239,9 +239,9 @@ public class ResetCommand extends GitCommand<Ref> {
         return this;
     }
 
-    /* JADX WARN: Code duplicated, block: B:33:0x007b A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:47:0x007d A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:60:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:33:0x007b A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:47:0x007d A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:60:? A[RETURN, SYNTHETIC] */
     private void resetIndexForPaths(ObjectId objectId) throws Throwable {
         Throwable th = null;
         DirCache dirCache = null;

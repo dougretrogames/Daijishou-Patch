@@ -32,7 +32,7 @@ import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.transport.FetchResult;
 import org.eclipse.jgit.transport.TagOpt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PullCommand extends TransportCommand<PullCommand, PullResult> {
     private static final String DOT = ".";
     private ContentMergeStrategy contentStrategy;

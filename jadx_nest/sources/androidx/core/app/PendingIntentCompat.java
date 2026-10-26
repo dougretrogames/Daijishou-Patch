@@ -13,7 +13,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.concurrent.CountDownLatch;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class PendingIntentCompat {
 
     @Retention(RetentionPolicy.SOURCE)
@@ -119,7 +119,7 @@ public final class PendingIntentCompat {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class GatedCallback implements Closeable {
         private PendingIntent.OnFinished mCallback;
         private final CountDownLatch mComplete = new CountDownLatch(1);
@@ -148,7 +148,7 @@ public final class PendingIntentCompat {
             this.mComplete.countDown();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void onSendFinished(PendingIntent pendingIntent, Intent intent, int i, String str, Bundle bundle) {
             boolean z = false;
             while (true) {

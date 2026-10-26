@@ -14,7 +14,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class Ordering<T> implements Comparator<T> {
     static final int LEFT_IS_GREATER = 1;
@@ -160,7 +160,7 @@ public abstract class Ordering<T> implements Comparator<T> {
         return (E) min(iterable.iterator());
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @ParametricNullness
     public <E extends T> E min(@ParametricNullness E a, @ParametricNullness E b) {
         return compare(a, b) <= 0 ? a : b;
@@ -189,7 +189,7 @@ public abstract class Ordering<T> implements Comparator<T> {
         return (E) max(iterable.iterator());
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @ParametricNullness
     public <E extends T> E max(@ParametricNullness E a, @ParametricNullness E b) {
         return compare(a, b) >= 0 ? a : b;

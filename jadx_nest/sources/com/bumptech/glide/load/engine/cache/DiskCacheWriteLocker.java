@@ -8,7 +8,7 @@ import java.util.Queue;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class DiskCacheWriteLocker {
     private final Map<String, WriteLock> locks = new HashMap();
     private final WriteLockPool writeLockPool = new WriteLockPool();

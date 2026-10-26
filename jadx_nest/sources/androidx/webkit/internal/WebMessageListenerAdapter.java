@@ -9,7 +9,7 @@ import org.chromium.support_lib_boundary.WebMessageBoundaryInterface;
 import org.chromium.support_lib_boundary.WebMessageListenerBoundaryInterface;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebMessageListenerAdapter implements WebMessageListenerBoundaryInterface {
     private final WebViewCompat.WebMessageListener mWebMessageListener;
 

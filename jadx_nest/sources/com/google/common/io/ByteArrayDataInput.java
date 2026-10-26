@@ -3,7 +3,7 @@ package com.google.common.io;
 import java.io.DataInput;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public interface ByteArrayDataInput extends DataInput {
     @Override // java.io.DataInput

@@ -2,7 +2,7 @@ package io.opencensus.trace;
 
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Tracestate extends Tracestate {
     private final List<Tracestate.Entry> entries;
 

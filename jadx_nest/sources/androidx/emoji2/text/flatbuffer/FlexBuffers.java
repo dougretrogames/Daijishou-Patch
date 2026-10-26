@@ -6,7 +6,7 @@ import kotlin.UShort;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FlexBuffers {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private static final ReadBuf EMPTY_BB = new ArrayReadWriteBuf(new byte[]{0}, 1);
@@ -71,12 +71,12 @@ public class FlexBuffers {
         return i - 10;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int indirect(ReadBuf readBuf, int i, int i2) {
         return (int) (((long) i) - readUInt(readBuf, i, i2));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static long readUInt(ReadBuf readBuf, int i, int i2) {
         if (i2 == 1) {
             return Unsigned.byteToUnsignedInt(readBuf.get(i));
@@ -93,12 +93,12 @@ public class FlexBuffers {
         return readBuf.getLong(i);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int readInt(ReadBuf readBuf, int i, int i2) {
         return (int) readLong(readBuf, i, i2);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static long readLong(ReadBuf readBuf, int i, int i2) {
         int i3;
         if (i2 == 1) {
@@ -117,7 +117,7 @@ public class FlexBuffers {
         return i3;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static double readDouble(ReadBuf readBuf, int i, int i2) {
         if (i2 == 4) {
             return readBuf.getFloat(i);

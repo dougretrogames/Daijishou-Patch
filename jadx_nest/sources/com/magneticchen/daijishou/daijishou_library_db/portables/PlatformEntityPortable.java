@@ -19,8 +19,8 @@ import kotlinx.serialization.internal.SerializationConstructorMarker;
 import kotlinx.serialization.internal.StringSerializer;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: PlatformEntityPortable.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlatformEntityPortable.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b:\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 Z2\u00020\u0001:\u0002YZB©\u0001\b\u0011\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0005\u0012\u000e\u0010\n\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u000b\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\u0006\u0010\r\u001a\u00020\u000e\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0010\u001a\u00020\u0003\u0012\u0006\u0010\u0011\u001a\u00020\u000e\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0005\u0012\u000e\u0010\u0013\u001a\n\u0012\u0004\u0012\u00020\u0014\u0018\u00010\u000b\u0012\b\u0010\u0015\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017¢\u0006\u0002\u0010\u0018B¥\u0001\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0005\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\t\u001a\u00020\u0005\u0012\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00050\u000b\u0012\b\b\u0002\u0010\f\u001a\u00020\u0003\u0012\b\b\u0002\u0010\r\u001a\u00020\u000e\u0012\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0010\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0011\u001a\u00020\u000e\u0012\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u0005\u0012\u000e\b\u0002\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00140\u000b\u0012\b\b\u0002\u0010\u0015\u001a\u00020\u0005¢\u0006\u0002\u0010\u0019J\t\u0010>\u001a\u00020\u0005HÆ\u0003J\t\u0010?\u001a\u00020\u0003HÆ\u0003J\t\u0010@\u001a\u00020\u000eHÆ\u0003J\u000b\u0010A\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000f\u0010B\u001a\b\u0012\u0004\u0012\u00020\u00140\u000bHÆ\u0003J\t\u0010C\u001a\u00020\u0005HÆ\u0003J\u000b\u0010D\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010E\u001a\u00020\u0005HÆ\u0003J\u000b\u0010F\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010G\u001a\u00020\u0005HÆ\u0003J\u000f\u0010H\u001a\b\u0012\u0004\u0012\u00020\u00050\u000bHÆ\u0003J\t\u0010I\u001a\u00020\u0003HÆ\u0003J\t\u0010J\u001a\u00020\u000eHÆ\u0003J\u000b\u0010K\u001a\u0004\u0018\u00010\u0005HÆ\u0003J©\u0001\u0010L\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\t\u001a\u00020\u00052\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00050\u000b2\b\b\u0002\u0010\f\u001a\u00020\u00032\b\b\u0002\u0010\r\u001a\u00020\u000e2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0010\u001a\u00020\u00032\b\b\u0002\u0010\u0011\u001a\u00020\u000e2\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00052\u000e\b\u0002\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00140\u000b2\b\b\u0002\u0010\u0015\u001a\u00020\u0005HÆ\u0001J\u0013\u0010M\u001a\u00020\u000e2\b\u0010N\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010O\u001a\u00020\u0003HÖ\u0001J\t\u0010P\u001a\u00020\u0005HÖ\u0001J&\u0010Q\u001a\u00020R2\u0006\u0010S\u001a\u00020\u00002\u0006\u0010T\u001a\u00020U2\u0006\u0010V\u001a\u00020WHÁ\u0001¢\u0006\u0002\bXR\u001a\u0010\t\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\u001b\"\u0004\b\u001c\u0010\u001dR\u001a\u0010\f\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001e\u0010\u001f\"\u0004\b \u0010!R\u001c\u0010\u000f\u001a\u0004\u0018\u00010\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\"\u0010\u001b\"\u0004\b#\u0010\u001dR\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b$\u0010\u001b\"\u0004\b%\u0010\u001dR\u001c\u0010\b\u001a\u0004\u0018\u00010\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b&\u0010\u001b\"\u0004\b'\u0010\u001dR\u001a\u0010\u0015\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b(\u0010\u001b\"\u0004\b)\u0010\u001dR\u001a\u0010\u0004\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b*\u0010\u001b\"\u0004\b+\u0010\u001dR \u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00140\u000bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b,\u0010-\"\u0004\b.\u0010/R \u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00050\u000bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b0\u0010-\"\u0004\b1\u0010/R\u001a\u0010\u0010\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b2\u0010\u001f\"\u0004\b3\u0010!R\u001a\u0010\u0007\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b4\u0010\u001b\"\u0004\b5\u0010\u001dR\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b6\u0010\u001b\"\u0004\b7\u0010\u001dR\u001a\u0010\r\u001a\u00020\u000eX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b8\u00109\"\u0004\b:\u0010;R\u001a\u0010\u0011\u001a\u00020\u000eX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b<\u00109\"\u0004\b=\u0010;¨\u0006["}, d2 = {"Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformEntityPortable;", "", "seen1", "", "name", "", "uniqueId", "shortname", "description", "acceptedFilenameRegex", "scraperSourceList", "", "boxArtAspectRatioId", "useCustomBoxArtAspectRatio", "", "customBoxArtAspectRatio", "screenAspectRatioId", "useCustomScreenAspectRatio", "customScreenAspectRatio", "retroAchievementsConsoleIdList", "", "extra", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;IZLjava/lang/String;IZLjava/lang/String;Ljava/util/List;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;IZLjava/lang/String;IZLjava/lang/String;Ljava/util/List;Ljava/lang/String;)V", "getAcceptedFilenameRegex", "()Ljava/lang/String;", "setAcceptedFilenameRegex", "(Ljava/lang/String;)V", "getBoxArtAspectRatioId", "()I", "setBoxArtAspectRatioId", "(I)V", "getCustomBoxArtAspectRatio", "setCustomBoxArtAspectRatio", "getCustomScreenAspectRatio", "setCustomScreenAspectRatio", "getDescription", "setDescription", "getExtra", "setExtra", "getName", "setName", "getRetroAchievementsConsoleIdList", "()Ljava/util/List;", "setRetroAchievementsConsoleIdList", "(Ljava/util/List;)V", "getScraperSourceList", "setScraperSourceList", "getScreenAspectRatioId", "setScreenAspectRatioId", "getShortname", "setShortname", "getUniqueId", "setUniqueId", "getUseCustomBoxArtAspectRatio", "()Z", "setUseCustomBoxArtAspectRatio", "(Z)V", "getUseCustomScreenAspectRatio", "setUseCustomScreenAspectRatio", "component1", "component10", "component11", "component12", "component13", "component14", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$app_release", "$serializer", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 @Serializable
 public final /* data */ class PlatformEntityPortable {
@@ -39,7 +39,7 @@ public final /* data */ class PlatformEntityPortable {
     private boolean useCustomBoxArtAspectRatio;
     private boolean useCustomScreenAspectRatio;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public static final KSerializer[] $childSerializers = {null, null, null, null, null, new ArrayListSerializer(StringSerializer.INSTANCE), null, null, null, null, null, null, new ArrayListSerializer(LongSerializer.INSTANCE), null};
 
@@ -47,22 +47,22 @@ public final /* data */ class PlatformEntityPortable {
         this((String) null, (String) null, (String) null, (String) null, (String) null, (List) null, 0, false, (String) null, 0, false, (String) null, (List) null, (String) null, 16383, (DefaultConstructorMarker) null);
     }
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    /* INFO: renamed from: component1, reason: from getter */
     public final String getName() {
         return this.name;
     }
 
-    /* JADX INFO: renamed from: component10, reason: from getter */
+    /* INFO: renamed from: component10, reason: from getter */
     public final int getScreenAspectRatioId() {
         return this.screenAspectRatioId;
     }
 
-    /* JADX INFO: renamed from: component11, reason: from getter */
+    /* INFO: renamed from: component11, reason: from getter */
     public final boolean getUseCustomScreenAspectRatio() {
         return this.useCustomScreenAspectRatio;
     }
 
-    /* JADX INFO: renamed from: component12, reason: from getter */
+    /* INFO: renamed from: component12, reason: from getter */
     public final String getCustomScreenAspectRatio() {
         return this.customScreenAspectRatio;
     }
@@ -71,27 +71,27 @@ public final /* data */ class PlatformEntityPortable {
         return this.retroAchievementsConsoleIdList;
     }
 
-    /* JADX INFO: renamed from: component14, reason: from getter */
+    /* INFO: renamed from: component14, reason: from getter */
     public final String getExtra() {
         return this.extra;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    /* INFO: renamed from: component2, reason: from getter */
     public final String getUniqueId() {
         return this.uniqueId;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    /* INFO: renamed from: component3, reason: from getter */
     public final String getShortname() {
         return this.shortname;
     }
 
-    /* JADX INFO: renamed from: component4, reason: from getter */
+    /* INFO: renamed from: component4, reason: from getter */
     public final String getDescription() {
         return this.description;
     }
 
-    /* JADX INFO: renamed from: component5, reason: from getter */
+    /* INFO: renamed from: component5, reason: from getter */
     public final String getAcceptedFilenameRegex() {
         return this.acceptedFilenameRegex;
     }
@@ -100,17 +100,17 @@ public final /* data */ class PlatformEntityPortable {
         return this.scraperSourceList;
     }
 
-    /* JADX INFO: renamed from: component7, reason: from getter */
+    /* INFO: renamed from: component7, reason: from getter */
     public final int getBoxArtAspectRatioId() {
         return this.boxArtAspectRatioId;
     }
 
-    /* JADX INFO: renamed from: component8, reason: from getter */
+    /* INFO: renamed from: component8, reason: from getter */
     public final boolean getUseCustomBoxArtAspectRatio() {
         return this.useCustomBoxArtAspectRatio;
     }
 
-    /* JADX INFO: renamed from: component9, reason: from getter */
+    /* INFO: renamed from: component9, reason: from getter */
     public final String getCustomBoxArtAspectRatio() {
         return this.customBoxArtAspectRatio;
     }
@@ -152,7 +152,7 @@ public final /* data */ class PlatformEntityPortable {
         return "PlatformEntityPortable(name=" + this.name + ", uniqueId=" + this.uniqueId + ", shortname=" + this.shortname + ", description=" + this.description + ", acceptedFilenameRegex=" + this.acceptedFilenameRegex + ", scraperSourceList=" + this.scraperSourceList + ", boxArtAspectRatioId=" + this.boxArtAspectRatioId + ", useCustomBoxArtAspectRatio=" + this.useCustomBoxArtAspectRatio + ", customBoxArtAspectRatio=" + this.customBoxArtAspectRatio + ", screenAspectRatioId=" + this.screenAspectRatioId + ", useCustomScreenAspectRatio=" + this.useCustomScreenAspectRatio + ", customScreenAspectRatio=" + this.customScreenAspectRatio + ", retroAchievementsConsoleIdList=" + this.retroAchievementsConsoleIdList + ", extra=" + this.extra + ")";
     }
 
-    /* JADX INFO: compiled from: PlatformEntityPortable.kt */
+    /* INFO: compiled from: PlatformEntityPortable.kt */
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformEntityPortable$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformEntityPortable;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {

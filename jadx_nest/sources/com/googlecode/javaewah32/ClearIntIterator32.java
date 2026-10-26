@@ -2,7 +2,7 @@ package com.googlecode.javaewah32;
 
 import com.googlecode.javaewah.IntIterator;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class ClearIntIterator32 implements IntIterator {
     private final Buffer32 buffer;
     private final EWAHIterator32 ewahIter;

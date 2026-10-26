@@ -19,8 +19,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class DataHolder extends AbstractSafeParcelable implements Closeable {
     public static final Parcelable.Creator<DataHolder> CREATOR = new zaf();
     private static final Builder zaf = new zab(new String[0], null);
@@ -35,7 +35,7 @@ public final class DataHolder extends AbstractSafeParcelable implements Closeabl
     private final Bundle zaj;
     private boolean zak;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static class Builder {
         private final String[] zaa;
         private final ArrayList zab = new ArrayList();

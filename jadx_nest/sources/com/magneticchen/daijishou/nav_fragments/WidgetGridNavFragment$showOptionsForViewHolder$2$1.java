@@ -8,14 +8,14 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: WidgetGridNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: WidgetGridNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "fromPosition", "", "toPosition", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class WidgetGridNavFragment$showOptionsForViewHolder$2$1 extends Lambda<Unit> implements Function2<Integer, Integer, Unit> {
     final /* synthetic */ WidgetsManager $widgetsManager;
     final /* synthetic */ WidgetGridNavFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     WidgetGridNavFragment$showOptionsForViewHolder$2$1(WidgetGridNavFragment widgetGridNavFragment, WidgetsManager widgetsManager) {
         super(2);
         this.this$0 = widgetGridNavFragment;

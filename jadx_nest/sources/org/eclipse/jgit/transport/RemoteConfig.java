@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import org.eclipse.jgit.lib.Config;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RemoteConfig implements Serializable {
     private static final boolean DEFAULT_MIRROR = false;
     public static final String DEFAULT_RECEIVE_PACK = "git-receive-pack";

@@ -2,7 +2,7 @@ package androidx.core.util;
 
 import java.util.regex.Pattern;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class PatternsCompat {
     public static final Pattern AUTOLINK_EMAIL_ADDRESS;
     public static final Pattern AUTOLINK_WEB_URL;

@@ -2,7 +2,7 @@ package org.apache.http.impl.execchain;
 
 import java.io.InterruptedIOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RequestAbortedException extends InterruptedIOException {
     private static final long serialVersionUID = 4973849966012490112L;
 

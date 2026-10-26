@@ -11,7 +11,7 @@ import androidx.concurrent.futures.ResolvableFuture;
 import androidx.core.app.unusedapprestrictions.IUnusedAppRestrictionsBackportCallback;
 import androidx.core.app.unusedapprestrictions.IUnusedAppRestrictionsBackportService;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class UnusedAppRestrictionsBackportServiceConnection implements ServiceConnection {
     private final Context mContext;
     ResolvableFuture<Integer> mResultFuture;
@@ -55,7 +55,7 @@ class UnusedAppRestrictionsBackportServiceConnection implements ServiceConnectio
         this.mContext.unbindService(this);
     }
 
-    /* JADX INFO: renamed from: androidx.core.content.UnusedAppRestrictionsBackportServiceConnection$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.content.UnusedAppRestrictionsBackportServiceConnection$1, reason: invalid class name */
     class AnonymousClass1 extends IUnusedAppRestrictionsBackportCallback.Stub {
         AnonymousClass1() {
         }

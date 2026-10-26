@@ -18,7 +18,7 @@ import org.apache.http.conn.routing.RouteInfo;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RequestAuthCache implements HttpRequestInterceptor {
     private final Log log = LogFactory.getLog(getClass());
 

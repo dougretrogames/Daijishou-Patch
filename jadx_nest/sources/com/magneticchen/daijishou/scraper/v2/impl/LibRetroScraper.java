@@ -32,8 +32,8 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-/* JADX INFO: compiled from: LibRetroScraper.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: LibRetroScraper.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0010$\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\n\u0018\u00002\u00020\u0001:\u0003#$%B\u001f\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\u0010\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u000bH\u0002J\u0010\u0010\u0013\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u000bH\u0002J\u001c\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b0\f2\u0006\u0010\u0012\u001a\u00020\u000bH\u0002J\u0012\u0010\u0015\u001a\u0004\u0018\u00010\u00162\u0006\u0010\u0012\u001a\u00020\u000bH\u0002J\u0012\u0010\u0017\u001a\u0004\u0018\u00010\u00162\u0006\u0010\u0012\u001a\u00020\u000bH\u0002J.\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u0012\u001a\u00020\u000b2\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u000b0\u001c2\u0006\u0010\u001d\u001a\u00020\u000bH\u0002J.\u0010\u001e\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u0012\u001a\u00020\u000b2\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u000b0\u001c2\u0006\u0010\u001d\u001a\u00020\u000bH\u0002J,\u0010\u001f\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u00192\u0006\u0010\u0012\u001a\u00020\u000b2\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u000b0\u001c2\u0006\u0010\u001d\u001a\u00020\u000bJ\u0012\u0010 \u001a\u0004\u0018\u00010\u000b2\u0006\u0010!\u001a\u00020\u000bH\u0002J\u0012\u0010\"\u001a\u0004\u0018\u00010\u000b2\u0006\u0010!\u001a\u00020\u000bH\u0002R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R&\u0010\t\u001a\u001a\u0012\u0004\u0012\u00020\u000b\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b0\f0\nX\u0082\u0004¢\u0006\u0002\n\u0000RB\u0010\r\u001a6\u0012\u0004\u0012\u00020\u000b\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b0\f0\u000ej\u001a\u0012\u0004\u0012\u00020\u000b\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b0\f`\u000fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006&"}, d2 = {"Lcom/magneticchen/daijishou/scraper/v2/impl/LibRetroScraper;", "Lcom/magneticchen/daijishou/scraper/v2/AbstractScraper;", "application", "Lcom/magneticchen/daijishou/DaijishouApplication;", "config", "Lcom/magneticchen/daijishou/scraper/v2/ScraperConfig;", "libRetroConfig", "Lcom/magneticchen/daijishou/scraper/v2/impl/LibRetroScraper$Config;", "(Lcom/magneticchen/daijishou/DaijishouApplication;Lcom/magneticchen/daijishou/scraper/v2/ScraperConfig;Lcom/magneticchen/daijishou/scraper/v2/impl/LibRetroScraper$Config;)V", "normalNameCache", "Lcom/magneticchen/daijishou/utils/Utils$MaxSizeHashMap;", "", "", "strictNameCache", "Ljava/util/HashMap;", "Lkotlin/collections/HashMap;", "getResourceLinksBaseUrlGithub", "Lcom/magneticchen/daijishou/scraper/v2/impl/LibRetroScraper$ResourceLinks;", "systemName", "getResourceLinksBaseUrlWebsite", "resolveSystem", "resolveSystemBaseUrlGithub", "Lcom/magneticchen/daijishou/scraper/v2/impl/LibRetroScraper$Resolved;", "resolveSystemBaseUrlWebsite", "scrapeByKeywordsBaseUrlGithub", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemPreviewMediaIndex;", "playableItemPreviewMediaIndex", "keywords", "", "path", "scrapeByKeywordsBaseUrlWebsite", "scrapePreviewMediaByKeywords", "toGenericName", TypedValues.Custom.S_STRING, "toStrictGenericName", "Config", "Resolved", "ResourceLinks", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class LibRetroScraper extends AbstractScraper {
     private final Config libRetroConfig;
@@ -44,7 +44,7 @@ public final class LibRetroScraper extends AbstractScraper {
         this(daijishouApplication, scraperConfig, (i & 4) != 0 ? new Config(null, null, null, null, null, null, null, null, 255, null) : config);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public LibRetroScraper(DaijishouApplication application, ScraperConfig config, Config libRetroConfig) {
         super(application, config);
         Intrinsics.checkNotNullParameter(application, "application");
@@ -345,7 +345,7 @@ public final class LibRetroScraper extends AbstractScraper {
         return new Regex("[^0-9a-zA-Z]+").replace(string, "");
     }
 
-    /* JADX INFO: compiled from: LibRetroScraper.kt */
+    /* INFO: compiled from: LibRetroScraper.kt */
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B1\u0012\u0014\b\u0002\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0014\b\u0002\u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\u0002\u0010\u0006J\u0015\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J\u0015\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0003J5\u0010\f\u001a\u00020\u00002\u0014\b\u0002\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\u00032\u0014\b\u0002\u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\u0003HÆ\u0001J\u0013\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0010\u001a\u00020\u0011HÖ\u0001J\t\u0010\u0012\u001a\u00020\u0004HÖ\u0001R\u001d\u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u001d\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\b¨\u0006\u0013"}, d2 = {"Lcom/magneticchen/daijishou/scraper/v2/impl/LibRetroScraper$Resolved;", "", "strict", "", "", "normal", "(Ljava/util/Map;Ljava/util/Map;)V", "getNormal", "()Ljava/util/Map;", "getStrict", "component1", "component2", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "", "toString", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class Resolved {
         private final Map<String, String> normal;
@@ -355,7 +355,7 @@ public final class LibRetroScraper extends AbstractScraper {
             this(null, null, 3, null);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public static /* synthetic */ Resolved copy$default(Resolved resolved, Map map, Map map2, int i, Object obj) {
             if ((i & 1) != 0) {
                 map = resolved.strict;
@@ -419,7 +419,7 @@ public final class LibRetroScraper extends AbstractScraper {
         }
     }
 
-    /* JADX INFO: compiled from: LibRetroScraper.kt */
+    /* INFO: compiled from: LibRetroScraper.kt */
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003¢\u0006\u0002\u0010\u0007J\t\u0010\r\u001a\u00020\u0003HÆ\u0003J\t\u0010\u000e\u001a\u00020\u0003HÆ\u0003J\t\u0010\u000f\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0010\u001a\u00020\u0003HÆ\u0003J1\u0010\u0011\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u0012\u001a\u00020\u00132\b\u0010\u0014\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0015\u001a\u00020\u0016HÖ\u0001J\t\u0010\u0017\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\tR\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\tR\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\t¨\u0006\u0018"}, d2 = {"Lcom/magneticchen/daijishou/scraper/v2/impl/LibRetroScraper$ResourceLinks;", "", "baseURL", "", "boxArtURL", "snapshotURL", "titleURL", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getBaseURL", "()Ljava/lang/String;", "getBoxArtURL", "getSnapshotURL", "getTitleURL", "component1", "component2", "component3", "component4", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "", "toString", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class ResourceLinks {
         private final String baseURL;
@@ -443,22 +443,22 @@ public final class LibRetroScraper extends AbstractScraper {
             return resourceLinks.copy(str, str2, str3, str4);
         }
 
-        /* JADX INFO: renamed from: component1, reason: from getter */
+        /* INFO: renamed from: component1, reason: from getter */
         public final String getBaseURL() {
             return this.baseURL;
         }
 
-        /* JADX INFO: renamed from: component2, reason: from getter */
+        /* INFO: renamed from: component2, reason: from getter */
         public final String getBoxArtURL() {
             return this.boxArtURL;
         }
 
-        /* JADX INFO: renamed from: component3, reason: from getter */
+        /* INFO: renamed from: component3, reason: from getter */
         public final String getSnapshotURL() {
             return this.snapshotURL;
         }
 
-        /* JADX INFO: renamed from: component4, reason: from getter */
+        /* INFO: renamed from: component4, reason: from getter */
         public final String getTitleURL() {
             return this.titleURL;
         }
@@ -506,7 +506,7 @@ public final class LibRetroScraper extends AbstractScraper {
 
     }
 
-    /* JADX INFO: compiled from: LibRetroScraper.kt */
+    /* INFO: compiled from: LibRetroScraper.kt */
     @Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0016\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001BU\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0003\u0012\b\b\u0002\u0010\b\u001a\u00020\u0003\u0012\b\b\u0002\u0010\t\u001a\u00020\n\u0012\b\b\u0002\u0010\u000b\u001a\u00020\n¢\u0006\u0002\u0010\fJ\t\u0010\u0017\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0019\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001a\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001b\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001c\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001d\u001a\u00020\nHÆ\u0003J\t\u0010\u001e\u001a\u00020\nHÆ\u0003JY\u0010\u001f\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u00032\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\nHÆ\u0001J\u0013\u0010 \u001a\u00020!2\b\u0010\"\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010#\u001a\u00020$HÖ\u0001J\t\u0010%\u001a\u00020\u0003HÖ\u0001R\u0011\u0010\u0007\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\b\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u000eR\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000eR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u000eR\u0011\u0010\t\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u000eR\u0011\u0010\u000b\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0013R\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u000e¨\u0006&"}, d2 = {"Lcom/magneticchen/daijishou/scraper/v2/impl/LibRetroScraper$Config;", "", "boxArtsPath", "", "snapshotsPath", "titlesPath", "baseUrlWebsite", "baseUrlGithub", "baseUrlGithubIndex", "genericNameRegex", "Lkotlin/text/Regex;", "strictGenericNameRegex", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lkotlin/text/Regex;Lkotlin/text/Regex;)V", "getBaseUrlGithub", "()Ljava/lang/String;", "getBaseUrlGithubIndex", "getBaseUrlWebsite", "getBoxArtsPath", "getGenericNameRegex", "()Lkotlin/text/Regex;", "getSnapshotsPath", "getStrictGenericNameRegex", "getTitlesPath", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "", "toString", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class Config {
         private final String baseUrlGithub;
@@ -554,42 +554,42 @@ public final class LibRetroScraper extends AbstractScraper {
             return config.copy(str, str2, str3, str4, str7, str8, regex3, regex4);
         }
 
-        /* JADX INFO: renamed from: component1, reason: from getter */
+        /* INFO: renamed from: component1, reason: from getter */
         public final String getBoxArtsPath() {
             return this.boxArtsPath;
         }
 
-        /* JADX INFO: renamed from: component2, reason: from getter */
+        /* INFO: renamed from: component2, reason: from getter */
         public final String getSnapshotsPath() {
             return this.snapshotsPath;
         }
 
-        /* JADX INFO: renamed from: component3, reason: from getter */
+        /* INFO: renamed from: component3, reason: from getter */
         public final String getTitlesPath() {
             return this.titlesPath;
         }
 
-        /* JADX INFO: renamed from: component4, reason: from getter */
+        /* INFO: renamed from: component4, reason: from getter */
         public final String getBaseUrlWebsite() {
             return this.baseUrlWebsite;
         }
 
-        /* JADX INFO: renamed from: component5, reason: from getter */
+        /* INFO: renamed from: component5, reason: from getter */
         public final String getBaseUrlGithub() {
             return this.baseUrlGithub;
         }
 
-        /* JADX INFO: renamed from: component6, reason: from getter */
+        /* INFO: renamed from: component6, reason: from getter */
         public final String getBaseUrlGithubIndex() {
             return this.baseUrlGithubIndex;
         }
 
-        /* JADX INFO: renamed from: component7, reason: from getter */
+        /* INFO: renamed from: component7, reason: from getter */
         public final Regex getGenericNameRegex() {
             return this.genericNameRegex;
         }
 
-        /* JADX INFO: renamed from: component8, reason: from getter */
+        /* INFO: renamed from: component8, reason: from getter */
         public final Regex getStrictGenericNameRegex() {
             return this.strictGenericNameRegex;
         }

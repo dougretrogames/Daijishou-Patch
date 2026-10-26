@@ -13,7 +13,7 @@ import java.nio.channels.FileChannel;
 import java.nio.channels.FileLock;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DeviceProfileWriter {
     private final String mApkName;
     private final AssetManager mAssetManager;
@@ -31,7 +31,7 @@ public class DeviceProfileWriter {
         this.mExecutor.execute(new DeviceProfileWriter$$ExternalSyntheticLambda0(this, i, obj));
     }
 
-    /* JADX INFO: renamed from: lambda$result$0$androidx-profileinstaller-DeviceProfileWriter, reason: not valid java name */
+    /* INFO: renamed from: lambda$result$0$androidx-profileinstaller-DeviceProfileWriter, reason: not valid java name */
     /* synthetic */ void m3226lambda$result$0$androidxprofileinstallerDeviceProfileWriter(int i, Object obj) {
         this.mDiagnostics.onResultReceived(i, obj);
     }

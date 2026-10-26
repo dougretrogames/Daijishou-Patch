@@ -2,8 +2,8 @@ package org.apache.commons.collections4.bloomfilter;
 
 import java.util.function.IntPredicate;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class SimpleBloomFilter$$ExternalSyntheticLambda3 implements IntPredicate {
     public final /* synthetic */ SimpleBloomFilter f$0;
 

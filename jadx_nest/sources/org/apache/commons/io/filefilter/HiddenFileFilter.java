@@ -8,7 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HiddenFileFilter extends AbstractFileFilter implements Serializable {
     public static final IOFileFilter HIDDEN;
     public static final IOFileFilter VISIBLE;
@@ -33,7 +33,7 @@ public class HiddenFileFilter extends AbstractFileFilter implements Serializable
         return get(new HiddenFileFilter$$ExternalSyntheticLambda0(this, path));
     }
 
-    /* JADX INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-HiddenFileFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-HiddenFileFilter, reason: not valid java name */
     /* synthetic */ FileVisitResult m5576x3301f0b8(Path path) throws IOException {
         return toFileVisitResult(path == null || Files.isHidden(path));
     }

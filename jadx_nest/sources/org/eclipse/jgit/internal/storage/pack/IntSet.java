@@ -1,6 +1,6 @@
 package org.eclipse.jgit.internal.storage.pack;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class IntSet {
     private int cnt;
     private int[] set = new int[64];

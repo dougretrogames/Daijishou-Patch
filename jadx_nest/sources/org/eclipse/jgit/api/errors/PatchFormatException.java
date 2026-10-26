@@ -5,7 +5,7 @@ import java.util.List;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.patch.FormatError;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PatchFormatException extends GitAPIException {
     private static final long serialVersionUID = 1;
     private List<FormatError> errors;

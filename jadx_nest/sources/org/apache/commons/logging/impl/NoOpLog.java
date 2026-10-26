@@ -3,7 +3,7 @@ package org.apache.commons.logging.impl;
 import java.io.Serializable;
 import org.apache.commons.logging.Log;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NoOpLog implements Log, Serializable {
     private static final long serialVersionUID = 561423906191706148L;
 

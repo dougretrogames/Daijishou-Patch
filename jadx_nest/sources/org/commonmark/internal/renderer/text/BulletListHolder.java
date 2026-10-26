@@ -2,7 +2,7 @@ package org.commonmark.internal.renderer.text;
 
 import org.commonmark.node.BulletList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BulletListHolder extends ListHolder {
     private final char marker;
 

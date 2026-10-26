@@ -2,7 +2,7 @@ package com.google.android.material.internal;
 
 import android.animation.TimeInterpolator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ReversableAnimatedValueInterpolator implements TimeInterpolator {
     private final TimeInterpolator sourceInterpolator;
 

@@ -51,7 +51,7 @@ import java.lang.reflect.Method;
 import java.util.WeakHashMap;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class SearchView extends LinearLayoutCompat implements CollapsibleActionView {
     static final boolean DBG = false;
     private static final String IME_OPTION_NO_MICROPHONE = "nm";
@@ -156,7 +156,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
         PRE_API_29_HIDDEN_METHOD_INVOKER = Build.VERSION.SDK_INT < 29 ? new PreQAutoCompleteTextViewReflector() : null;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.SearchView$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.SearchView$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -167,7 +167,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.SearchView$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.SearchView$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -283,7 +283,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
         updateQueryHint();
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.SearchView$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.SearchView$3, reason: invalid class name */
     class AnonymousClass3 implements View.OnFocusChangeListener {
         AnonymousClass3() {
         }
@@ -296,7 +296,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.SearchView$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.SearchView$4, reason: invalid class name */
     class AnonymousClass4 implements View.OnLayoutChangeListener {
         AnonymousClass4() {
         }
@@ -635,7 +635,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
         setQuery(charSequence);
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.SearchView$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.SearchView$5, reason: invalid class name */
     class AnonymousClass5 implements View.OnClickListener {
         AnonymousClass5() {
         }
@@ -660,7 +660,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.SearchView$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.SearchView$6, reason: invalid class name */
     class AnonymousClass6 implements View.OnKeyListener {
         AnonymousClass6() {
         }
@@ -756,7 +756,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
         this.mVoiceButton.setVisibility(i);
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.SearchView$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.SearchView$7, reason: invalid class name */
     class AnonymousClass7 implements TextView.OnEditorActionListener {
         AnonymousClass7() {
         }
@@ -904,12 +904,12 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
             return "SearchView.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " isIconified=" + this.isIconified + "}";
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.SearchView$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.widget.SearchView$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);
@@ -985,7 +985,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
         return true;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.SearchView$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.SearchView$8, reason: invalid class name */
     class AnonymousClass8 implements AdapterView.OnItemClickListener {
         AnonymousClass8() {
         }
@@ -996,7 +996,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.SearchView$9, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.SearchView$9, reason: invalid class name */
     class AnonymousClass9 implements AdapterView.OnItemSelectedListener {
         @Override // android.widget.AdapterView.OnItemSelectedListener
         public void onNothingSelected(AdapterView<?> adapterView) {
@@ -1167,7 +1167,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
         return context.getResources().getConfiguration().orientation == 2;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.SearchView$10, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.SearchView$10, reason: invalid class name */
     class AnonymousClass10 implements TextWatcher {
         @Override // android.text.TextWatcher
         public void afterTextChanged(Editable editable) {
@@ -1213,7 +1213,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
             this.mActualBounds.set(rect2);
         }
 
-        /* JADX WARN: Code duplicated, block: B:19:0x003f  */
+        /* WARN: Code duplicated, block: B:19:0x003f  */
         @Override // android.view.TouchDelegate
         public boolean onTouchEvent(MotionEvent motionEvent) {
             boolean z;
@@ -1271,7 +1271,7 @@ public class SearchView extends LinearLayoutCompat implements CollapsibleActionV
         protected void replaceText(CharSequence charSequence) {
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.SearchView$SearchAutoComplete$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.widget.SearchView$SearchAutoComplete$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             AnonymousClass1() {
             }

@@ -23,7 +23,7 @@ import org.apache.http.client.AuthenticationStrategy;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpAuthenticator {
     private final Log log;
 
@@ -57,7 +57,7 @@ public class HttpAuthenticator {
         return false;
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.auth.HttpAuthenticator$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.auth.HttpAuthenticator$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$org$apache$http$auth$AuthProtocolState;
 

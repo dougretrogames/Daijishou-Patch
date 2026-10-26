@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class FieldSet<T extends FieldDescriptorLite<T>> {
     private static final int DEFAULT_FIELD_MAP_ARRAY_SIZE = 16;
     private static final FieldSet DEFAULT_INSTANCE = new FieldSet(true);
@@ -98,7 +98,7 @@ final class FieldSet<T extends FieldDescriptorLite<T>> {
         return this.fields.hashCode();
     }
 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public FieldSet<T> m3411clone() {
         FieldSet<T> fieldSetNewFieldSet = newFieldSet();
         for (int i = 0; i < this.fields.getNumArrayEntries(); i++) {
@@ -130,7 +130,7 @@ final class FieldSet<T extends FieldDescriptorLite<T>> {
         return smallSortedMapCloneAllFieldsMap;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <T extends FieldDescriptorLite<T>> SmallSortedMap<T, Object> cloneAllFieldsMap(SmallSortedMap<T, Object> fields, boolean copyList, boolean resolveLazyFields) {
         SmallSortedMap<T, Object> smallSortedMapNewFieldMap = SmallSortedMap.newFieldMap(16);
         for (int i = 0; i < fields.getNumArrayEntries(); i++) {
@@ -265,7 +265,7 @@ final class FieldSet<T extends FieldDescriptorLite<T>> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean isValidType(final WireFormat.FieldType type, final Object value) {
         Internal.checkNotNull(value);
         switch (AnonymousClass1.$SwitchMap$com$google$protobuf$WireFormat$JavaType[type.getJavaType().ordinal()]) {
@@ -307,7 +307,7 @@ final class FieldSet<T extends FieldDescriptorLite<T>> {
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <T extends FieldDescriptorLite<T>> boolean isInitialized(final Map.Entry<T, Object> entry) {
         T key = entry.getKey();
         if (key.getLiteJavaType() != WireFormat.JavaType.MESSAGE) {
@@ -352,7 +352,7 @@ final class FieldSet<T extends FieldDescriptorLite<T>> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Object cloneIfMutable(Object value) {
         if (!(value instanceof byte[])) {
             return value;
@@ -457,7 +457,7 @@ final class FieldSet<T extends FieldDescriptorLite<T>> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.FieldSet$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.FieldSet$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$FieldType;
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$JavaType;

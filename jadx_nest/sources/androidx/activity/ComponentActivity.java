@@ -68,7 +68,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicInteger;
 import kotlin.Unit;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ComponentActivity extends androidx.core.app.ComponentActivity implements ContextAware, LifecycleOwner, ViewModelStoreOwner, HasDefaultViewModelProviderFactory, SavedStateRegistryOwner, OnBackPressedDispatcherOwner, ActivityResultRegistryOwner, ActivityResultCaller, OnConfigurationChangedProvider, OnTrimMemoryProvider, OnNewIntentProvider, OnMultiWindowModeChangedProvider, OnPictureInPictureModeChangedProvider, MenuHost, FullyDrawnReporterOwner {
     private static final String ACTIVITY_RESULT_TAG = "android:support:activity-result";
     private final ActivityResultRegistry mActivityResultRegistry;
@@ -110,13 +110,13 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         }
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$androidx-activity-ComponentActivity, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$androidx-activity-ComponentActivity, reason: not valid java name */
     /* synthetic */ Unit m0lambda$new$0$androidxactivityComponentActivity() {
         reportFullyDrawn();
         return null;
     }
 
-    /* JADX INFO: renamed from: androidx.activity.ComponentActivity$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.activity.ComponentActivity$1, reason: invalid class name */
     class AnonymousClass1 extends ActivityResultRegistry {
         AnonymousClass1() {
         }
@@ -169,7 +169,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
             }
         }
 
-        /* JADX INFO: renamed from: androidx.activity.ComponentActivity$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: androidx.activity.ComponentActivity$1$1, reason: invalid class name and collision with other inner class name */
         class RunnableC00001 implements Runnable {
             final /* synthetic */ int val$requestCode;
             final /* synthetic */ ActivityResultContract.SynchronousResult val$synchronousResult;
@@ -185,7 +185,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
             }
         }
 
-        /* JADX INFO: renamed from: androidx.activity.ComponentActivity$1$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.activity.ComponentActivity$1$2, reason: invalid class name */
         class AnonymousClass2 implements Runnable {
             final /* synthetic */ IntentSender.SendIntentException val$e;
             final /* synthetic */ int val$requestCode;
@@ -233,7 +233,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         addOnContextAvailableListener(new ComponentActivity$$ExternalSyntheticLambda3(this));
     }
 
-    /* JADX INFO: renamed from: androidx.activity.ComponentActivity$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.activity.ComponentActivity$2, reason: invalid class name */
     class AnonymousClass2 implements LifecycleEventObserver {
         AnonymousClass2() {
         }
@@ -250,7 +250,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         }
     }
 
-    /* JADX INFO: renamed from: androidx.activity.ComponentActivity$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.activity.ComponentActivity$3, reason: invalid class name */
     class AnonymousClass3 implements LifecycleEventObserver {
         AnonymousClass3() {
         }
@@ -267,7 +267,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         }
     }
 
-    /* JADX INFO: renamed from: androidx.activity.ComponentActivity$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.activity.ComponentActivity$4, reason: invalid class name */
     class AnonymousClass4 implements LifecycleEventObserver {
         AnonymousClass4() {
         }
@@ -279,14 +279,14 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         }
     }
 
-    /* JADX INFO: renamed from: lambda$new$1$androidx-activity-ComponentActivity, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$1$androidx-activity-ComponentActivity, reason: not valid java name */
     /* synthetic */ Bundle m1lambda$new$1$androidxactivityComponentActivity() {
         Bundle bundle = new Bundle();
         this.mActivityResultRegistry.onSaveInstanceState(bundle);
         return bundle;
     }
 
-    /* JADX INFO: renamed from: lambda$new$2$androidx-activity-ComponentActivity, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$2$androidx-activity-ComponentActivity, reason: not valid java name */
     /* synthetic */ void m2lambda$new$2$androidxactivityComponentActivity(Context context) {
         Bundle bundleConsumeRestoredStateForKey = getSavedStateRegistry().consumeRestoredStateForKey(ACTIVITY_RESULT_TAG);
         if (bundleConsumeRestoredStateForKey != null) {
@@ -514,7 +514,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         getOnBackPressedDispatcher().onBackPressed();
     }
 
-    /* JADX INFO: renamed from: androidx.activity.ComponentActivity$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.activity.ComponentActivity$5, reason: invalid class name */
     class AnonymousClass5 implements Runnable {
         AnonymousClass5() {
         }
@@ -544,7 +544,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
         return this.mOnBackPressedDispatcher;
     }
 
-    /* JADX INFO: renamed from: androidx.activity.ComponentActivity$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.activity.ComponentActivity$6, reason: invalid class name */
     class AnonymousClass6 implements LifecycleEventObserver {
         AnonymousClass6() {
         }
@@ -858,7 +858,7 @@ public class ComponentActivity extends androidx.core.app.ComponentActivity imple
             decorView.postOnAnimation(new ComponentActivity$ReportFullyDrawnExecutorApi16Impl$$ExternalSyntheticLambda0(this));
         }
 
-        /* JADX INFO: renamed from: lambda$execute$0$androidx-activity-ComponentActivity$ReportFullyDrawnExecutorApi16Impl, reason: not valid java name */
+        /* INFO: renamed from: lambda$execute$0$androidx-activity-ComponentActivity$ReportFullyDrawnExecutorApi16Impl, reason: not valid java name */
         /* synthetic */ void m3x96b76666() {
             Runnable runnable = this.mRunnable;
             if (runnable != null) {

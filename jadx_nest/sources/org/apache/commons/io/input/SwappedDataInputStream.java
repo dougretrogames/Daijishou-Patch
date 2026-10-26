@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import org.apache.commons.io.EndianUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SwappedDataInputStream extends ProxyInputStream implements DataInput {
     public SwappedDataInputStream(InputStream inputStream) {
         super(inputStream);

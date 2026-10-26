@@ -19,7 +19,7 @@ import org.apache.http.util.Args;
 import org.apache.http.util.ByteArrayBuffer;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public abstract class AbstractSessionInputBuffer implements SessionInputBuffer, BufferInfo {
     private boolean ascii;

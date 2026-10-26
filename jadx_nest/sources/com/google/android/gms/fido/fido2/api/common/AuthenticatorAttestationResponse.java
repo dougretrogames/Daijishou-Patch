@@ -10,8 +10,8 @@ import com.google.android.gms.fido.u2f.api.common.SignResponseData;
 import com.google.android.gms.internal.fido.zzbf;
 import java.util.Arrays;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class AuthenticatorAttestationResponse extends AuthenticatorResponse {
     public static final Parcelable.Creator<AuthenticatorAttestationResponse> CREATOR = new zzk();
     private final byte[] zza;

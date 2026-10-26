@@ -7,7 +7,7 @@ import org.eclipse.jgit.lib.ObjectLoader;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.util.io.UnionInputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultNoteMerger implements NoteMerger {
     @Override // org.eclipse.jgit.notes.NoteMerger
     public Note merge(Note note, Note note2, Note note3, ObjectReader objectReader, ObjectInserter objectInserter) throws IOException {

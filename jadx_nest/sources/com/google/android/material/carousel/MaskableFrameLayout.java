@@ -16,7 +16,7 @@ import com.google.android.material.shape.ShapeAppearanceModel;
 import com.google.android.material.shape.Shapeable;
 import com.google.android.material.shape.ShapeableDelegate;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaskableFrameLayout extends FrameLayout implements Maskable, Shapeable {
     private static final int NOT_SET = -1;
     private final RectF maskRect;
@@ -154,7 +154,7 @@ public class MaskableFrameLayout extends FrameLayout implements Maskable, Shapea
         this.shapeableDelegate.maybeClip(canvas, new MaskableFrameLayout$$ExternalSyntheticLambda1(this));
     }
 
-    /* JADX INFO: renamed from: lambda$dispatchDraw$1$com-google-android-material-carousel-MaskableFrameLayout, reason: not valid java name */
+    /* INFO: renamed from: lambda$dispatchDraw$1$com-google-android-material-carousel-MaskableFrameLayout, reason: not valid java name */
     /* synthetic */ void m3260x418c47c0(Canvas canvas) {
         super.dispatchDraw(canvas);
     }

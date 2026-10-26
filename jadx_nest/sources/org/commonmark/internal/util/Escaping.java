@@ -6,7 +6,7 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Escaping {
     public static final String ENTITY = "&(?:#x[a-f0-9]{1,6}|#[0-9]{1,7}|[a-z][a-z0-9]{1,31});";
     public static final String ESCAPABLE = "[!\"#$%&'()*+,./:;<=>?@\\[\\\\\\]^_`{|}~-]";
@@ -22,7 +22,7 @@ public class Escaping {
         void replace(String str, StringBuilder sb);
     }
 
-    /* JADX INFO: renamed from: org.commonmark.internal.util.Escaping$1, reason: invalid class name */
+    /* INFO: renamed from: org.commonmark.internal.util.Escaping$1, reason: invalid class name */
     static class AnonymousClass1 implements Replacer {
         AnonymousClass1() {
         }
@@ -37,7 +37,7 @@ public class Escaping {
         }
     }
 
-    /* JADX INFO: renamed from: org.commonmark.internal.util.Escaping$2, reason: invalid class name */
+    /* INFO: renamed from: org.commonmark.internal.util.Escaping$2, reason: invalid class name */
     static class AnonymousClass2 implements Replacer {
         AnonymousClass2() {
         }

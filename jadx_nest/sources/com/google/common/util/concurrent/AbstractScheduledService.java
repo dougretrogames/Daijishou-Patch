@@ -17,7 +17,7 @@ import java.util.logging.Level;
 import javax.annotation.CheckForNull;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class AbstractScheduledService implements Service {
     private static final LazyLogger logger = new LazyLogger(AbstractScheduledService.class);
@@ -52,13 +52,13 @@ public abstract class AbstractScheduledService implements Service {
             return new AnonymousClass1(initialDelay, delay, unit);
         }
 
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.AbstractScheduledService$Scheduler$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.util.concurrent.AbstractScheduledService$Scheduler$1, reason: invalid class name */
         class AnonymousClass1 extends Scheduler {
             final /* synthetic */ long val$delay;
             final /* synthetic */ long val$initialDelay;
             final /* synthetic */ TimeUnit val$unit;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(final long val$initialDelay, final long val$delay, final TimeUnit val$unit) {
                 super(null);
                 this.val$initialDelay = val$initialDelay;
@@ -78,13 +78,13 @@ public abstract class AbstractScheduledService implements Service {
             return new AnonymousClass2(initialDelay, period, unit);
         }
 
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.AbstractScheduledService$Scheduler$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.util.concurrent.AbstractScheduledService$Scheduler$2, reason: invalid class name */
         class AnonymousClass2 extends Scheduler {
             final /* synthetic */ long val$initialDelay;
             final /* synthetic */ long val$period;
             final /* synthetic */ TimeUnit val$unit;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(final long val$initialDelay, final long val$period, final TimeUnit val$unit) {
                 super(null);
                 this.val$initialDelay = val$initialDelay;
@@ -102,7 +102,7 @@ public abstract class AbstractScheduledService implements Service {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     final class ServiceDelegate extends AbstractService {
 
         @CheckForNull
@@ -159,12 +159,12 @@ public abstract class AbstractScheduledService implements Service {
             this.executorService.execute(new AbstractScheduledService$ServiceDelegate$$ExternalSyntheticLambda1(this));
         }
 
-        /* JADX INFO: renamed from: lambda$doStart$0$com-google-common-util-concurrent-AbstractScheduledService$ServiceDelegate, reason: not valid java name */
+        /* INFO: renamed from: lambda$doStart$0$com-google-common-util-concurrent-AbstractScheduledService$ServiceDelegate, reason: not valid java name */
         /* synthetic */ String m3370xcd8af3c3() {
             return AbstractScheduledService.this.serviceName() + " " + state();
         }
 
-        /* JADX INFO: renamed from: lambda$doStart$1$com-google-common-util-concurrent-AbstractScheduledService$ServiceDelegate, reason: not valid java name */
+        /* INFO: renamed from: lambda$doStart$1$com-google-common-util-concurrent-AbstractScheduledService$ServiceDelegate, reason: not valid java name */
         /* synthetic */ void m3371xfa22122() {
             this.lock.lock();
             try {
@@ -193,7 +193,7 @@ public abstract class AbstractScheduledService implements Service {
             this.executorService.execute(new AbstractScheduledService$ServiceDelegate$$ExternalSyntheticLambda2(this));
         }
 
-        /* JADX INFO: renamed from: lambda$doStop$2$com-google-common-util-concurrent-AbstractScheduledService$ServiceDelegate, reason: not valid java name */
+        /* INFO: renamed from: lambda$doStop$2$com-google-common-util-concurrent-AbstractScheduledService$ServiceDelegate, reason: not valid java name */
         /* synthetic */ void m3372x2d03b891() {
             try {
                 this.lock.lock();
@@ -224,7 +224,7 @@ public abstract class AbstractScheduledService implements Service {
     protected AbstractScheduledService() {
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.AbstractScheduledService$1ThreadFactoryImpl, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.AbstractScheduledService$1ThreadFactoryImpl, reason: invalid class name */
     class C1ThreadFactoryImpl implements ThreadFactory {
         C1ThreadFactoryImpl() {
         }
@@ -241,7 +241,7 @@ public abstract class AbstractScheduledService implements Service {
         return scheduledExecutorServiceNewSingleThreadScheduledExecutor;
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.AbstractScheduledService$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.AbstractScheduledService$1, reason: invalid class name */
     class AnonymousClass1 extends Service.Listener {
         final /* synthetic */ ScheduledExecutorService val$executor;
 

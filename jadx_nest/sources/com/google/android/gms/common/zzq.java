@@ -6,8 +6,8 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 import javax.annotation.Nullable;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class zzq extends AbstractSafeParcelable {
     public static final Parcelable.Creator<zzq> CREATOR = new zzr();
     private final boolean zza;

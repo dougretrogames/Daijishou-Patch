@@ -22,7 +22,7 @@ import org.apache.http.protocol.BasicHttpContext;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.EntityUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class DecompressingHttpClient implements HttpClient {
     private final HttpRequestInterceptor acceptEncodingInterceptor;

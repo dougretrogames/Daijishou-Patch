@@ -11,7 +11,7 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class RoundRectDrawable extends Drawable {
     private ColorStateList mBackground;
     private final RectF mBoundsF;

@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class PreFillQueue {
     private final Map<PreFillType, Integer> bitmapsPerType;
     private int bitmapsRemaining;

@@ -19,7 +19,7 @@ import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.submodule.SubmoduleWalk;
 import org.eclipse.jgit.treewalk.filter.PathFilterGroup;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SubmoduleUpdateCommand extends TransportCommand<SubmoduleUpdateCommand, Collection<String>> {
     private CloneCommand.Callback callback;
     private boolean fetch;
@@ -84,7 +84,7 @@ public class SubmoduleUpdateCommand extends TransportCommand<SubmoduleUpdateComm
         return repository;
     }
 
-    /* JADX WARN: Code duplicated, block: B:54:0x00ef A[Catch: all -> 0x00f3, TRY_ENTER, TryCatch #4 {all -> 0x00f3, blocks: (B:3:0x0004, B:11:0x0028, B:54:0x00ef, B:55:0x00f2, B:4:0x000a, B:6:0x0012, B:7:0x001b, B:8:0x0020, B:13:0x002c, B:16:0x0033, B:33:0x00c3, B:49:0x00e6, B:51:0x00eb), top: B:72:0x0004, inners: #6 }] */
+    /* WARN: Code duplicated, block: B:54:0x00ef A[Catch: all -> 0x00f3, TRY_ENTER, TryCatch #4 {all -> 0x00f3, blocks: (B:3:0x0004, B:11:0x0028, B:54:0x00ef, B:55:0x00f2, B:4:0x000a, B:6:0x0012, B:7:0x001b, B:8:0x0020, B:13:0x002c, B:16:0x0033, B:33:0x00c3, B:49:0x00e6, B:51:0x00eb), top: B:72:0x0004, inners: #6 }] */
     @Override // org.eclipse.jgit.api.GitCommand, java.util.concurrent.Callable
     public Collection<String> call() throws Throwable {
         String configUrl;

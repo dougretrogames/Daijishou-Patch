@@ -9,7 +9,7 @@ import androidx.core.view.MarginLayoutParamsCompat;
 import androidx.core.view.ViewCompat;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FlowLayout extends ViewGroup {
     private int itemSpacing;
     private int lineSpacing;

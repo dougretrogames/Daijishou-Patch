@@ -4,7 +4,7 @@ import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 import android.widget.ImageView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ImageViewCompat {
     public static ColorStateList getImageTintList(ImageView imageView) {
         return Api21Impl.getImageTintList(imageView);

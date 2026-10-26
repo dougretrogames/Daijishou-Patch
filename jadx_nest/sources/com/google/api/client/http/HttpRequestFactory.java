@@ -2,7 +2,7 @@ package com.google.api.client.http;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class HttpRequestFactory {
     private final HttpRequestInitializer initializer;
     private final HttpTransport transport;

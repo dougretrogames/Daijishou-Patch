@@ -2,8 +2,8 @@ package androidx.appcompat.app;
 
 import android.content.Context;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class AppCompatDelegate$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ Context f$0;
 

@@ -20,18 +20,18 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.StringCompanionObject;
 
-/* JADX INFO: compiled from: KeyDownDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: KeyDownDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 \u00122\u00020\u0001:\u0001\u0012B\u0005¢\u0006\u0002\u0010\u0002J\u0012\u0010\n\u001a\u00020\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\rH\u0016J\b\u0010\u000e\u001a\u00020\u0006H\u0016J\u0014\u0010\u000f\u001a\u00020\u00002\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\bJ\u0014\u0010\u0010\u001a\u00020\u00002\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00060\bJ\u001a\u0010\u0011\u001a\u00020\u00002\u0012\u0010\u0003\u001a\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004R\u001c\u0010\u0003\u001a\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\bX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0013"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/KeyDownDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "()V", "keyDownListener", "Lkotlin/Function1;", "Landroid/view/KeyEvent;", "", "onCanceledListener", "Lkotlin/Function0;", "onClearedListener", "onCreateDialog", "Landroid/app/Dialog;", "savedInstanceState", "Landroid/os/Bundle;", "onStart", "setOnCanceledListener", "setOnClearedListener", "setOnKeyDownListener", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class KeyDownDialogFragment extends DaijishouDialogFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private Function1<? super KeyEvent, Unit> keyDownListener;
     private Function0<Unit> onCanceledListener;
     private Function0<Unit> onClearedListener;
 
-    /* JADX INFO: compiled from: KeyDownDialogFragment.kt */
+    /* INFO: compiled from: KeyDownDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006¨\u0006\u0007"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/KeyDownDialogFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/dialog_fragments/KeyDownDialogFragment;", "title", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -95,7 +95,7 @@ public final class KeyDownDialogFragment extends DaijishouDialogFragment {
         throw new IllegalStateException("Context cannot be null");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$6$lambda$1(KeyDownDialogFragment this$0, DialogInterface dialogInterface, int i) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Function0<Unit> function0 = this$0.onClearedListener;
@@ -104,7 +104,7 @@ public final class KeyDownDialogFragment extends DaijishouDialogFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$6$lambda$3(KeyDownDialogFragment this$0, DialogInterface dialogInterface, int i) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Function0<Unit> function0 = this$0.onCanceledListener;
@@ -113,9 +113,9 @@ public final class KeyDownDialogFragment extends DaijishouDialogFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r3v6, types: [T, java.lang.Integer] */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r3v6, types: [T, java.lang.Integer] */
     public static final boolean onCreateDialog$lambda$6$lambda$5(Ref.ObjectRef keyCode, KeyDownDialogFragment this$0, AlertDialog alertDialog, DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
         Intrinsics.checkNotNullParameter(keyCode, "$keyCode");
         Intrinsics.checkNotNullParameter(this$0, "this$0");

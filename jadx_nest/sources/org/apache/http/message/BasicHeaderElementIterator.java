@@ -9,7 +9,7 @@ import org.apache.http.HeaderIterator;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicHeaderElementIterator implements HeaderElementIterator {
     private CharArrayBuffer buffer;
     private HeaderElement currentElement;

@@ -2,7 +2,7 @@ package org.jsoup.parser;
 
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ParseErrorList extends ArrayList<ParseError> {
     private static final int INITIAL_CAPACITY = 16;
     private final int initialCapacity;

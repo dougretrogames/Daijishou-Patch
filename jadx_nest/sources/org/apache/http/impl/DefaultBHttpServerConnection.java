@@ -22,7 +22,7 @@ import org.apache.http.io.HttpMessageWriter;
 import org.apache.http.io.HttpMessageWriterFactory;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultBHttpServerConnection extends BHttpConnectionBase implements HttpServerConnection {
     private final HttpMessageParser<HttpRequest> requestParser;
     private final HttpMessageWriter<HttpResponse> responseWriter;

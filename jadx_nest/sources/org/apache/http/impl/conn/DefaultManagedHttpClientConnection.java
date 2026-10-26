@@ -19,11 +19,11 @@ import org.apache.http.io.HttpMessageParserFactory;
 import org.apache.http.io.HttpMessageWriterFactory;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultManagedHttpClientConnection extends DefaultBHttpClientConnection implements ManagedHttpClientConnection, HttpContext {
     private final Map<String, Object> attributes;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     private final String f107id;
     private volatile boolean shutdown;
 

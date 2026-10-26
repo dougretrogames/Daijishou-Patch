@@ -12,7 +12,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockHttpURLConnection extends HttpURLConnection {
     private boolean doOutputCalled;
     private InputStream errorStream;

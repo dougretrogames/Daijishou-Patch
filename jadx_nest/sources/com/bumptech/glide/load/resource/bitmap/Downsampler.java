@@ -32,7 +32,7 @@ import java.util.Queue;
 import java.util.Set;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Downsampler {
     static final String TAG = "Downsampler";
     private final BitmapPool bitmapPool;
@@ -80,7 +80,7 @@ public final class Downsampler {
         return true;
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.resource.bitmap.Downsampler$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.resource.bitmap.Downsampler$1, reason: invalid class name */
     class AnonymousClass1 implements DecodeCallbacks {
         @Override // com.bumptech.glide.load.resource.bitmap.Downsampler.DecodeCallbacks
         public void onDecodeComplete(BitmapPool bitmapPool, Bitmap bitmap) {
@@ -351,7 +351,7 @@ public final class Downsampler {
         return new int[]{options.outWidth, options.outHeight};
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:26:?, code lost:
+    /* WARN: Code restructure failed: missing block: B:26:?, code lost:
     
         throw r1;
      */

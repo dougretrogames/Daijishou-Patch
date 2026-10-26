@@ -3,7 +3,7 @@ package com.google.api.client.googleapis.notifications;
 import com.google.api.client.util.Objects;
 import com.google.api.client.util.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class AbstractNotification {
     private String changed;
     private String channelExpiration;

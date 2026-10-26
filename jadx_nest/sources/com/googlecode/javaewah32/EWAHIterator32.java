@@ -1,6 +1,6 @@
 package com.googlecode.javaewah32;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class EWAHIterator32 implements Cloneable {
     private int pointer;
     final RunningLengthWord32 rlw;
@@ -40,7 +40,7 @@ public final class EWAHIterator32 implements Cloneable {
         return this.rlw;
     }
 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public EWAHIterator32 m3473clone() throws CloneNotSupportedException {
         return new EWAHIterator32(this.pointer, this.rlw.m3479clone(), this.size);
     }

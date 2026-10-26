@@ -52,7 +52,7 @@ import org.commonmark.node.StrongEmphasis;
 import org.commonmark.node.Text;
 import org.commonmark.node.ThematicBreak;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class CorePlugin extends AbstractMarkwonPlugin {
     private boolean hasExplicitMovementMethod;
     private final List<OnTextAddedListener> onTextAddedListeners = new ArrayList(0);
@@ -125,7 +125,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         textView.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$1, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$1, reason: invalid class name */
     class AnonymousClass1 implements MarkwonVisitor.NodeVisitor<Text> {
         AnonymousClass1() {
         }
@@ -149,7 +149,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(Text.class, new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$2, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$2, reason: invalid class name */
     class AnonymousClass2 implements MarkwonVisitor.NodeVisitor<StrongEmphasis> {
         AnonymousClass2() {
         }
@@ -166,7 +166,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(StrongEmphasis.class, new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$3, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$3, reason: invalid class name */
     class AnonymousClass3 implements MarkwonVisitor.NodeVisitor<Emphasis> {
         AnonymousClass3() {
         }
@@ -183,7 +183,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(Emphasis.class, new AnonymousClass3());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$4, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$4, reason: invalid class name */
     class AnonymousClass4 implements MarkwonVisitor.NodeVisitor<BlockQuote> {
         AnonymousClass4() {
         }
@@ -202,7 +202,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(BlockQuote.class, new AnonymousClass4());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$5, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$5, reason: invalid class name */
     class AnonymousClass5 implements MarkwonVisitor.NodeVisitor<Code> {
         AnonymousClass5() {
         }
@@ -219,7 +219,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(Code.class, new AnonymousClass5());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$6, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$6, reason: invalid class name */
     class AnonymousClass6 implements MarkwonVisitor.NodeVisitor<FencedCodeBlock> {
         AnonymousClass6() {
         }
@@ -234,7 +234,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(FencedCodeBlock.class, new AnonymousClass6());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$7, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$7, reason: invalid class name */
     class AnonymousClass7 implements MarkwonVisitor.NodeVisitor<IndentedCodeBlock> {
         AnonymousClass7() {
         }
@@ -249,7 +249,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(IndentedCodeBlock.class, new AnonymousClass7());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$8, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$8, reason: invalid class name */
     class AnonymousClass8 implements MarkwonVisitor.NodeVisitor<Image> {
         AnonymousClass8() {
         }
@@ -300,7 +300,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(OrderedList.class, new SimpleBlockNodeVisitor());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$9, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$9, reason: invalid class name */
     class AnonymousClass9 implements MarkwonVisitor.NodeVisitor<ListItem> {
         AnonymousClass9() {
         }
@@ -331,7 +331,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(ListItem.class, new AnonymousClass9());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int listLevel(Node node) {
         int i = 0;
         for (Node parent = node.getParent(); parent != null; parent = parent.getParent()) {
@@ -342,7 +342,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         return i;
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$10, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$10, reason: invalid class name */
     class AnonymousClass10 implements MarkwonVisitor.NodeVisitor<ThematicBreak> {
         AnonymousClass10() {
         }
@@ -361,7 +361,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(ThematicBreak.class, new AnonymousClass10());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$11, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$11, reason: invalid class name */
     class AnonymousClass11 implements MarkwonVisitor.NodeVisitor<Heading> {
         AnonymousClass11() {
         }
@@ -381,7 +381,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(Heading.class, new AnonymousClass11());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$12, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$12, reason: invalid class name */
     class AnonymousClass12 implements MarkwonVisitor.NodeVisitor<SoftLineBreak> {
         AnonymousClass12() {
         }
@@ -396,7 +396,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(SoftLineBreak.class, new AnonymousClass12());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$13, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$13, reason: invalid class name */
     class AnonymousClass13 implements MarkwonVisitor.NodeVisitor<HardLineBreak> {
         AnonymousClass13() {
         }
@@ -411,7 +411,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(HardLineBreak.class, new AnonymousClass13());
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$14, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$14, reason: invalid class name */
     class AnonymousClass14 implements MarkwonVisitor.NodeVisitor<Paragraph> {
         AnonymousClass14() {
         }
@@ -437,7 +437,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         builder.on(Paragraph.class, new AnonymousClass14());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean isInTightList(Paragraph paragraph) {
         Block parent = paragraph.getParent();
         if (parent == null) {
@@ -450,7 +450,7 @@ public class CorePlugin extends AbstractMarkwonPlugin {
         return false;
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.core.CorePlugin$15, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.core.CorePlugin$15, reason: invalid class name */
     class AnonymousClass15 implements MarkwonVisitor.NodeVisitor<Link> {
         AnonymousClass15() {
         }

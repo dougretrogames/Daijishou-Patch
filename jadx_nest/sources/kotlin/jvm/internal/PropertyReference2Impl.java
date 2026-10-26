@@ -3,7 +3,7 @@ package kotlin.jvm.internal;
 import kotlin.reflect.KClass;
 import kotlin.reflect.KDeclarationContainer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class PropertyReference2Impl extends PropertyReference2 {
     public PropertyReference2Impl(KDeclarationContainer kDeclarationContainer, String str, String str2) {
         super(((ClassBasedDeclarationContainer) kDeclarationContainer).getJClass(), str, str2, !(kDeclarationContainer instanceof KClass) ? 1 : 0);

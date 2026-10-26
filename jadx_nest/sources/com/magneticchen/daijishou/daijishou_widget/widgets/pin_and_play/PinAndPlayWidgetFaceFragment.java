@@ -53,12 +53,12 @@ import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.sync.Mutex;
 import kotlinx.coroutines.sync.MutexKt;
 
-/* JADX INFO: compiled from: PinAndPlayWidgetFaceFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PinAndPlayWidgetFaceFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000~\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\u0018\u0000 02\u00020\u0001:\u00010B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u001f\u001a\u00020 H\u0002J\b\u0010!\u001a\u00020 H\u0016J\u0012\u0010\"\u001a\u00020 2\b\u0010#\u001a\u0004\u0018\u00010$H\u0016J&\u0010%\u001a\u0004\u0018\u00010&2\u0006\u0010'\u001a\u00020(2\b\u0010)\u001a\u0004\u0018\u00010*2\b\u0010#\u001a\u0004\u0018\u00010$H\u0016J\b\u0010+\u001a\u00020 H\u0016J\u0018\u0010,\u001a\u00020 2\b\b\u0002\u0010-\u001a\u00020.H\u0082@¢\u0006\u0002\u0010/R\u0010\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u0010\u001a\u0004\u0018\u00010\bX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0011R\u0018\u0010\u0012\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u000f\u0018\u00010\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u0018\u0010\u0014\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u000f\u0018\u00010\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u001f\u0010\u0016\u001a\u0010\u0012\f\u0012\n \u0019*\u0004\u0018\u00010\u00180\u00180\u0017¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u000e\u0010\u001c\u001a\u00020\u001dX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u001dX\u0082.¢\u0006\u0002\n\u0000¨\u00061"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/pin_and_play/PinAndPlayWidgetFaceFragment;", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetFaceFragment;", "()V", "cachedBitmap", "Landroid/graphics/Bitmap;", "imageView", "Landroid/widget/ImageView;", "lastUpdateTimestamp", "", "pinAndPlayWidgetInstanceEntity", "Lcom/magneticchen/daijishou/daijishou_widget/widget_db/PinAndPlayWidgetInstanceEntity;", "pinAndPlayWidgetMutex", "Lkotlinx/coroutines/sync/Mutex;", "placeholder", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "playableItemId", "Ljava/lang/Long;", "playableItemLiveData", "Landroidx/lifecycle/LiveData;", "playableItemObserver", "Landroidx/lifecycle/Observer;", "selectImageActivity", "Landroidx/activity/result/ActivityResultLauncher;", "", "kotlin.jvm.PlatformType", "getSelectImageActivity", "()Landroidx/activity/result/ActivityResultLauncher;", "subtitle", "Landroid/widget/TextView;", "title", "ensureWallpaperDirectory", "", "onClick", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onPreload", "updateFace", "updateView", "", "(ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class PinAndPlayWidgetFaceFragment extends WidgetFaceFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public Bitmap cachedBitmap;
     public ImageView imageView;
@@ -74,8 +74,8 @@ public final class PinAndPlayWidgetFaceFragment extends WidgetFaceFragment {
     public TextView subtitle;
     public TextView title;
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.pin_and_play.PinAndPlayWidgetFaceFragment$updateFace$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: PinAndPlayWidgetFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.pin_and_play.PinAndPlayWidgetFaceFragment$updateFace$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: PinAndPlayWidgetFaceFragment.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_widget.widgets.pin_and_play.PinAndPlayWidgetFaceFragment", f = "PinAndPlayWidgetFaceFragment.kt", i = {0, 0, 0, 1, 1, 2, 2, 2, 2, 3, 4, 4}, l = {330, 176, 186, 194, 252}, m = "updateFace", n = {"this", "$this$withLock_u24default$iv", "updateView", "this", "$this$withLock_u24default$iv", "this", "$this$withLock_u24default$iv", "playableItemEntity", "updateView", "$this$withLock_u24default$iv", "this", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "Z$0", "L$0", "L$1", "L$0", "L$1", "L$2", "Z$0", "L$0", "L$0", "L$1"})
     final class C02191 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -103,7 +103,7 @@ public final class PinAndPlayWidgetFaceFragment extends WidgetFaceFragment {
         this.selectImageActivity = activityResultLauncherRegisterForActivityResult;
     }
 
-    /* JADX INFO: compiled from: PinAndPlayWidgetFaceFragment.kt */
+    /* INFO: compiled from: PinAndPlayWidgetFaceFragment.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006¨\u0006\u0007"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/pin_and_play/PinAndPlayWidgetFaceFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/pin_and_play/PinAndPlayWidgetFaceFragment;", "widgetInstanceId", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -126,7 +126,7 @@ public final class PinAndPlayWidgetFaceFragment extends WidgetFaceFragment {
         return this.selectImageActivity;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void selectImageActivity$lambda$1(PinAndPlayWidgetFaceFragment this$0, Uri uri) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         long j = this$0.requireArguments().getLong("widgetInstanceId");
@@ -163,8 +163,8 @@ public final class PinAndPlayWidgetFaceFragment extends WidgetFaceFragment {
         BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this), Dispatchers.getIO(), null, new AnonymousClass1(null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.pin_and_play.PinAndPlayWidgetFaceFragment$onPreload$1, reason: invalid class name */
-    /* JADX INFO: compiled from: PinAndPlayWidgetFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.pin_and_play.PinAndPlayWidgetFaceFragment$onPreload$1, reason: invalid class name */
+    /* INFO: compiled from: PinAndPlayWidgetFaceFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_widget.widgets.pin_and_play.PinAndPlayWidgetFaceFragment$onPreload$1", f = "PinAndPlayWidgetFaceFragment.kt", i = {0}, l = {330}, m = "invokeSuspendImpl", n = {"$this$withLock_u24default$iv"}, s = {"L$0"})
     final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -273,30 +273,30 @@ public final class PinAndPlayWidgetFaceFragment extends WidgetFaceFragment {
         file.mkdirs();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:46:0x00d9  */
-    /* JADX WARN: Code duplicated, block: B:47:0x00da  */
-    /* JADX WARN: Code duplicated, block: B:57:0x0113 A[Catch: all -> 0x0064, TryCatch #0 {all -> 0x0064, blocks: (B:24:0x005f, B:55:0x0109, B:57:0x0113, B:61:0x011d, B:63:0x0121, B:68:0x0141, B:70:0x016e, B:71:0x0172, B:73:0x017a, B:75:0x01a7, B:76:0x01ab), top: B:83:0x005f }] */
-    /* JADX WARN: Code duplicated, block: B:58:0x0118  */
-    /* JADX WARN: Code duplicated, block: B:66:0x013d  */
-    /* JADX WARN: Code duplicated, block: B:68:0x0141 A[Catch: all -> 0x0064, TRY_ENTER, TryCatch #0 {all -> 0x0064, blocks: (B:24:0x005f, B:55:0x0109, B:57:0x0113, B:61:0x011d, B:63:0x0121, B:68:0x0141, B:70:0x016e, B:71:0x0172, B:73:0x017a, B:75:0x01a7, B:76:0x01ab), top: B:83:0x005f }] */
-    /* JADX WARN: Code duplicated, block: B:70:0x016e A[Catch: all -> 0x0064, TryCatch #0 {all -> 0x0064, blocks: (B:24:0x005f, B:55:0x0109, B:57:0x0113, B:61:0x011d, B:63:0x0121, B:68:0x0141, B:70:0x016e, B:71:0x0172, B:73:0x017a, B:75:0x01a7, B:76:0x01ab), top: B:83:0x005f }] */
-    /* JADX WARN: Code duplicated, block: B:72:0x0178 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:73:0x017a A[Catch: all -> 0x0064, TryCatch #0 {all -> 0x0064, blocks: (B:24:0x005f, B:55:0x0109, B:57:0x0113, B:61:0x011d, B:63:0x0121, B:68:0x0141, B:70:0x016e, B:71:0x0172, B:73:0x017a, B:75:0x01a7, B:76:0x01ab), top: B:83:0x005f }] */
-    /* JADX WARN: Code duplicated, block: B:75:0x01a7 A[Catch: all -> 0x0064, TryCatch #0 {all -> 0x0064, blocks: (B:24:0x005f, B:55:0x0109, B:57:0x0113, B:61:0x011d, B:63:0x0121, B:68:0x0141, B:70:0x016e, B:71:0x0172, B:73:0x017a, B:75:0x01a7, B:76:0x01ab), top: B:83:0x005f }] */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:64:0x013a, code lost:
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:46:0x00d9  */
+    /* WARN: Code duplicated, block: B:47:0x00da  */
+    /* WARN: Code duplicated, block: B:57:0x0113 A[Catch: all -> 0x0064, TryCatch #0 {all -> 0x0064, blocks: (B:24:0x005f, B:55:0x0109, B:57:0x0113, B:61:0x011d, B:63:0x0121, B:68:0x0141, B:70:0x016e, B:71:0x0172, B:73:0x017a, B:75:0x01a7, B:76:0x01ab), top: B:83:0x005f }] */
+    /* WARN: Code duplicated, block: B:58:0x0118  */
+    /* WARN: Code duplicated, block: B:66:0x013d  */
+    /* WARN: Code duplicated, block: B:68:0x0141 A[Catch: all -> 0x0064, TRY_ENTER, TryCatch #0 {all -> 0x0064, blocks: (B:24:0x005f, B:55:0x0109, B:57:0x0113, B:61:0x011d, B:63:0x0121, B:68:0x0141, B:70:0x016e, B:71:0x0172, B:73:0x017a, B:75:0x01a7, B:76:0x01ab), top: B:83:0x005f }] */
+    /* WARN: Code duplicated, block: B:70:0x016e A[Catch: all -> 0x0064, TryCatch #0 {all -> 0x0064, blocks: (B:24:0x005f, B:55:0x0109, B:57:0x0113, B:61:0x011d, B:63:0x0121, B:68:0x0141, B:70:0x016e, B:71:0x0172, B:73:0x017a, B:75:0x01a7, B:76:0x01ab), top: B:83:0x005f }] */
+    /* WARN: Code duplicated, block: B:72:0x0178 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:73:0x017a A[Catch: all -> 0x0064, TryCatch #0 {all -> 0x0064, blocks: (B:24:0x005f, B:55:0x0109, B:57:0x0113, B:61:0x011d, B:63:0x0121, B:68:0x0141, B:70:0x016e, B:71:0x0172, B:73:0x017a, B:75:0x01a7, B:76:0x01ab), top: B:83:0x005f }] */
+    /* WARN: Code duplicated, block: B:75:0x01a7 A[Catch: all -> 0x0064, TryCatch #0 {all -> 0x0064, blocks: (B:24:0x005f, B:55:0x0109, B:57:0x0113, B:61:0x011d, B:63:0x0121, B:68:0x0141, B:70:0x016e, B:71:0x0172, B:73:0x017a, B:75:0x01a7, B:76:0x01ab), top: B:83:0x005f }] */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:64:0x013a, code lost:
     
         if (kotlinx.coroutines.BuildersKt.withContext(r10, r11, r0) == r1) goto L65;
      */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r10v0, types: [boolean] */
-    /* JADX WARN: Type inference failed for: r10v1, types: [kotlinx.coroutines.sync.Mutex] */
-    /* JADX WARN: Type inference failed for: r10v21 */
-    /* JADX WARN: Type inference failed for: r10v27 */
-    /* JADX WARN: Type inference failed for: r10v4 */
-    /* JADX WARN: Type inference failed for: r10v6, types: [boolean] */
-    /* JADX WARN: Type inference failed for: r11v34 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r10v0, types: [boolean] */
+    /* WARN: Type inference failed for: r10v1, types: [kotlinx.coroutines.sync.Mutex] */
+    /* WARN: Type inference failed for: r10v21 */
+    /* WARN: Type inference failed for: r10v27 */
+    /* WARN: Type inference failed for: r10v4 */
+    /* WARN: Type inference failed for: r10v6, types: [boolean] */
+    /* WARN: Type inference failed for: r11v34 */
     public final Object updateFace(boolean z, Continuation<?> continuation) {
         C02191 c02191;
         if (continuation instanceof C02191) {
@@ -569,13 +569,13 @@ public final class PinAndPlayWidgetFaceFragment extends WidgetFaceFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.pin_and_play.PinAndPlayWidgetFaceFragment$onCreateView$3, reason: invalid class name */
-    /* JADX INFO: compiled from: PinAndPlayWidgetFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.pin_and_play.PinAndPlayWidgetFaceFragment$onCreateView$3, reason: invalid class name */
+    /* INFO: compiled from: PinAndPlayWidgetFaceFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/daijishou_widget/widget_db/PinAndPlayWidgetInstanceEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass3 extends Lambda<Unit> implements Function1<PinAndPlayWidgetInstanceEntity, Unit> {
         final /* synthetic */ Ref.BooleanRef $firstTime;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(Ref.BooleanRef booleanRef) {
             super(1);
             this.$firstTime = booleanRef;
@@ -587,7 +587,7 @@ public final class PinAndPlayWidgetFaceFragment extends WidgetFaceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(PinAndPlayWidgetInstanceEntity pinAndPlayWidgetInstanceEntity) {
             LiveData liveData;
             Date lastUpdateTimestamp;

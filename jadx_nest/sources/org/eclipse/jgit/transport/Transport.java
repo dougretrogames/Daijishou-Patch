@@ -35,7 +35,7 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.storage.pack.PackConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class Transport implements AutoCloseable {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$transport$Transport$Operation = null;
     public static final boolean DEFAULT_FETCH_THIN = true;
@@ -77,7 +77,7 @@ public abstract class Transport implements AutoCloseable {
         FETCH,
         PUSH;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Operation[] valuesCustom() {
             Operation[] operationArrValuesCustom = values();
             int length = operationArrValuesCustom.length;

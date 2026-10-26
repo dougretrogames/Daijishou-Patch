@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewOffsetBehavior<V extends View> extends CoordinatorLayout.Behavior<V> {
     private int tempLeftRightOffset;
     private int tempTopBottomOffset;

@@ -18,7 +18,7 @@ import javax.net.ssl.HttpsURLConnection;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class NetHttpTransport extends HttpTransport {
     private static final String SHOULD_USE_PROXY_FLAG = "com.google.api.client.should_use_proxy";
     private static final String[] SUPPORTED_METHODS;
@@ -27,7 +27,7 @@ public final class NetHttpTransport extends HttpTransport {
     private final boolean isMtls;
     private final SSLSocketFactory sslSocketFactory;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Proxy defaultProxy() {
         return new Proxy(Proxy.Type.HTTP, new InetSocketAddress(System.getProperty("https.proxyHost"), Integer.parseInt(System.getProperty("https.proxyPort"))));
     }
@@ -38,7 +38,7 @@ public final class NetHttpTransport extends HttpTransport {
         Arrays.sort(strArr);
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public NetHttpTransport() {
         this((ConnectionFactory) null, (SSLSocketFactory) null, (HostnameVerifier) null, false);
     }
@@ -74,7 +74,7 @@ public final class NetHttpTransport extends HttpTransport {
         return this.isMtls;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.api.client.http.HttpTransport
     public NetHttpRequest buildRequest(String str, String str2) throws IOException {
         Preconditions.checkArgument(supportsMethod(str), "HTTP method %s not supported", str);

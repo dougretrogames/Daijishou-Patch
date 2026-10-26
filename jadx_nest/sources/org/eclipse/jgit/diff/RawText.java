@@ -15,7 +15,7 @@ import org.eclipse.jgit.util.IO;
 import org.eclipse.jgit.util.IntList;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RawText extends Sequence {
     private static final int FIRST_FEW_BYTES = 8192;
     protected final byte[] content;

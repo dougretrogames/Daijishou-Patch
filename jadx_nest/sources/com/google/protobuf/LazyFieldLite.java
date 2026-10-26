@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class LazyFieldLite {
     private static final ExtensionRegistryLite EMPTY_REGISTRY = ExtensionRegistryLite.getEmptyRegistry();
     private ByteString delayedBytes;

@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.widget.CheckedTextView;
 import androidx.annotation.ReplaceWith;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class CheckedTextViewCompat {
     private CheckedTextViewCompat() {
     }

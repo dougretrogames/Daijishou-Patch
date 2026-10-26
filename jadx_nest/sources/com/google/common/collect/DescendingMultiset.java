@@ -7,7 +7,7 @@ import java.util.NavigableSet;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class DescendingMultiset<E> extends ForwardingMultiset<E> implements SortedMultiset<E> {
 
@@ -79,7 +79,7 @@ abstract class DescendingMultiset<E> extends ForwardingMultiset<E> implements So
         return forwardMultiset().headMultiset(fromElement, boundType).descendingMultiset();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingMultiset, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
     public Multiset<E> delegate() {
         return forwardMultiset();
@@ -113,7 +113,7 @@ abstract class DescendingMultiset<E> extends ForwardingMultiset<E> implements So
         return setCreateEntrySet;
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.DescendingMultiset$1EntrySetImpl, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.DescendingMultiset$1EntrySetImpl, reason: invalid class name */
     class C1EntrySetImpl extends Multisets.EntrySet<E> {
         C1EntrySetImpl() {
         }

@@ -2,7 +2,7 @@ package androidx.media;
 
 import androidx.versionedparcelable.VersionedParcel;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class AudioAttributesImplBaseParcelizer {
     public static AudioAttributesImplBase read(VersionedParcel versionedParcel) {
         AudioAttributesImplBase audioAttributesImplBase = new AudioAttributesImplBase();

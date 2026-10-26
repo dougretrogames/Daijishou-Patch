@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import androidx.collection.SimpleArrayMap;
 import androidx.customview.view.AbsSavedState;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ExtendableSavedState extends AbsSavedState {
     public static final Parcelable.Creator<ExtendableSavedState> CREATOR = new AnonymousClass1();
     public final SimpleArrayMap<String, Bundle> extendableStates;
@@ -52,12 +52,12 @@ public class ExtendableSavedState extends AbsSavedState {
         return "ExtendableSavedState{" + Integer.toHexString(System.identityHashCode(this)) + " states=" + this.extendableStates + "}";
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.stateful.ExtendableSavedState$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.stateful.ExtendableSavedState$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.ClassLoaderCreator<ExtendableSavedState> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.ClassLoaderCreator
         public ExtendableSavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
             return new ExtendableSavedState(parcel, classLoader, null);

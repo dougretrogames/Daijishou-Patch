@@ -11,17 +11,17 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import org.apache.commons.codec.digest.MessageDigestAlgorithms;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SafeKeyGenerator {
     private final LruCache<Key, String> loadIdToSafeHash = new LruCache<>(1000);
     private final Pools.Pool<PoolableDigestContainer> digestPool = FactoryPools.threadSafe(10, new AnonymousClass1());
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.cache.SafeKeyGenerator$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.cache.SafeKeyGenerator$1, reason: invalid class name */
     class AnonymousClass1 implements FactoryPools.Factory<PoolableDigestContainer> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.bumptech.glide.util.pool.FactoryPools.Factory
         public PoolableDigestContainer create() {
             try {

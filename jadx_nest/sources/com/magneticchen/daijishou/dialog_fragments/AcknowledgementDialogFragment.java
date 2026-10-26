@@ -15,18 +15,18 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: AcknowledgementDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: AcknowledgementDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 \u00132\u00020\u0001:\u0001\u0013B\u0005¢\u0006\u0002\u0010\u0002J\u0010\u0010\b\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\nH\u0016J\u0012\u0010\u000b\u001a\u00020\f2\b\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0016J\b\u0010\u000f\u001a\u00020\u0005H\u0016J\u0014\u0010\u0010\u001a\u00020\u00002\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004J\u0014\u0010\u0011\u001a\u00020\u00002\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004J\u0014\u0010\u0012\u001a\u00020\u00002\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004R\u0016\u0010\u0003\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u0006\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u0007\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0014"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/AcknowledgementDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "()V", "acknowledgedListener", "Lkotlin/Function0;", "", "canceledListener", "neutralButtonClickedListener", "onCancel", "dialog", "Landroid/content/DialogInterface;", "onCreateDialog", "Landroid/app/Dialog;", "savedInstanceState", "Landroid/os/Bundle;", "onStart", "setOnAcknowledgedListener", "setOnCanceledListener", "setOnNeutralButtonClickedListener", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class AcknowledgementDialogFragment extends DaijishouDialogFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private Function0<Unit> acknowledgedListener;
     private Function0<Unit> canceledListener;
     private Function0<Unit> neutralButtonClickedListener;
 
-    /* JADX INFO: compiled from: AcknowledgementDialogFragment.kt */
+    /* INFO: compiled from: AcknowledgementDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J>\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\u00062\n\b\u0002\u0010\n\u001a\u0004\u0018\u00010\u0006¨\u0006\u000b"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/AcknowledgementDialogFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/dialog_fragments/AcknowledgementDialogFragment;", "title", "", "message", "positiveText", "negativeText", "neutralText", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -130,7 +130,7 @@ public final class AcknowledgementDialogFragment extends DaijishouDialogFragment
         return alertDialog;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$14$lambda$2(AcknowledgementDialogFragment this$0, DialogInterface dialogInterface) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Function0<Unit> function0 = this$0.canceledListener;
@@ -139,7 +139,7 @@ public final class AcknowledgementDialogFragment extends DaijishouDialogFragment
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$14$lambda$4(AcknowledgementDialogFragment this$0, DialogInterface dialogInterface, int i) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Function0<Unit> function0 = this$0.acknowledgedListener;
@@ -148,7 +148,7 @@ public final class AcknowledgementDialogFragment extends DaijishouDialogFragment
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$14$lambda$6(AcknowledgementDialogFragment this$0, DialogInterface dialogInterface, int i) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Function0<Unit> function0 = this$0.canceledListener;
@@ -157,7 +157,7 @@ public final class AcknowledgementDialogFragment extends DaijishouDialogFragment
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$14$lambda$8(AcknowledgementDialogFragment this$0, DialogInterface dialogInterface, int i) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Function0<Unit> function0 = this$0.neutralButtonClickedListener;
@@ -166,7 +166,7 @@ public final class AcknowledgementDialogFragment extends DaijishouDialogFragment
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$14$lambda$10(AcknowledgementDialogFragment this$0, DialogInterface dialogInterface, int i) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Function0<Unit> function0 = this$0.canceledListener;
@@ -175,7 +175,7 @@ public final class AcknowledgementDialogFragment extends DaijishouDialogFragment
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$14$lambda$12(AcknowledgementDialogFragment this$0, DialogInterface dialogInterface, int i) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Function0<Unit> function0 = this$0.neutralButtonClickedListener;
@@ -184,7 +184,7 @@ public final class AcknowledgementDialogFragment extends DaijishouDialogFragment
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$14$lambda$13(String str, AcknowledgementDialogFragment this$0, AlertDialog alertDialog, DialogInterface dialogInterface) {
         boolean z;
         Intrinsics.checkNotNullParameter(this$0, "this$0");

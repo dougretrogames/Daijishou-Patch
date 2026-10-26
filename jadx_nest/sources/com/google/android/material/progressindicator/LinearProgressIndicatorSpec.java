@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import com.google.android.material.R;
 import com.google.android.material.internal.ThemeEnforcement;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class LinearProgressIndicatorSpec extends BaseProgressIndicatorSpec {
     boolean drawHorizontallyInverse;
     public int indeterminateAnimationType;

@@ -1,6 +1,6 @@
 package org.apache.http.util;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class LangUtils {
     public static final int HASH_OFFSET = 37;
     public static final int HASH_SEED = 17;

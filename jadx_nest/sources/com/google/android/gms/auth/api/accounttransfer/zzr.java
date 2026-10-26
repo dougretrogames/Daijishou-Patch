@@ -6,8 +6,8 @@ import com.google.android.gms.common.internal.Objects;
 import java.util.ArrayList;
 import java.util.Collections;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public final class zzr implements Api.ApiOptions.Optional {
     public static final zzr zza;
     private final Bundle zzb;

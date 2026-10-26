@@ -39,19 +39,19 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: RetroAchievementsFaceFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: RetroAchievementsFaceFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000 \u00132\u00020\u0001:\u0001\u0013B\u0005¢\u0006\u0002\u0010\u0002J&\u0010\u000b\u001a\u0004\u0018\u00010\f2\u0006\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u00102\b\u0010\u0011\u001a\u0004\u0018\u00010\u0012H\u0016R\u0010\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082.¢\u0006\u0002\n\u0000¨\u0006\u0014"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsFaceFragment;", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetFaceFragment;", "()V", "cachedProfileImageUrl", "", "cachedUserProfile", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsUserProfileEntity;", "points", "Landroid/widget/TextView;", "thumbnail", "Lcom/google/android/material/imageview/ShapeableImageView;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "savedInstanceState", "Landroid/os/Bundle;", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class RetroAchievementsFaceFragment extends WidgetFaceFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private String cachedProfileImageUrl;
     private RetroAchievementsUserProfileEntity cachedUserProfile;
     public TextView points;
     private ShapeableImageView thumbnail;
 
-    /* JADX INFO: compiled from: RetroAchievementsFaceFragment.kt */
+    /* INFO: compiled from: RetroAchievementsFaceFragment.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006¨\u0006\u0007"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsFaceFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsFaceFragment;", "widgetInstanceId", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -110,8 +110,8 @@ public final class RetroAchievementsFaceFragment extends WidgetFaceFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$2, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$2, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsFaceFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "userProfile", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsUserProfileEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass2 extends Lambda<Unit> implements Function1<RetroAchievementsUserProfileEntity, Unit> {
         AnonymousClass2() {
@@ -124,7 +124,7 @@ public final class RetroAchievementsFaceFragment extends WidgetFaceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(RetroAchievementsUserProfileEntity retroAchievementsUserProfileEntity) {
             ShapeableImageView shapeableImageView = null;
             if (retroAchievementsUserProfileEntity == null) {
@@ -187,16 +187,16 @@ public final class RetroAchievementsFaceFragment extends WidgetFaceFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$3, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$3, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsFaceFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass3 extends Lambda<Unit> implements Function1<List<? extends String>, Unit> {
         AnonymousClass3() {
             super(1);
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$3$1, reason: invalid class name */
-        /* JADX INFO: compiled from: RetroAchievementsFaceFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$3$1, reason: invalid class name */
+        /* INFO: compiled from: RetroAchievementsFaceFragment.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$3$1", f = "RetroAchievementsFaceFragment.kt", i = {}, l = {125, 127}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -204,7 +204,7 @@ public final class RetroAchievementsFaceFragment extends WidgetFaceFragment {
             int label;
             final /* synthetic */ RetroAchievementsFaceFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(RetroAchievementsFaceFragment retroAchievementsFaceFragment, List<String> list, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = retroAchievementsFaceFragment;
@@ -229,7 +229,7 @@ public final class RetroAchievementsFaceFragment extends WidgetFaceFragment {
                 }
             }
 
-            /* JADX WARN: Code restructure failed: missing block: B:18:0x0055, code lost:
+            /* WARN: Code restructure failed: missing block: B:18:0x0055, code lost:
             
                 if (kotlinx.coroutines.BuildersKt.withContext(r6, r1, r5) == r0) goto L19;
              */
@@ -271,14 +271,14 @@ public final class RetroAchievementsFaceFragment extends WidgetFaceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<String> list) {
             BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(RetroAchievementsFaceFragment.this), Dispatchers.getIO(), null, new AnonymousClass1(RetroAchievementsFaceFragment.this, list, null), 2, null);
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$4, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$4, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsFaceFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$4", f = "RetroAchievementsFaceFragment.kt", i = {}, l = {136, 138, 142}, m = "invokeSuspendImpl", n = {}, s = {})
     final class AnonymousClass4 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -342,15 +342,15 @@ public final class RetroAchievementsFaceFragment extends WidgetFaceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$4$1, reason: invalid class name */
-        /* JADX INFO: compiled from: RetroAchievementsFaceFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$4$1, reason: invalid class name */
+        /* INFO: compiled from: RetroAchievementsFaceFragment.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsFaceFragment$onCreateView$4$1", f = "RetroAchievementsFaceFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             int label;
             final /* synthetic */ RetroAchievementsFaceFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(RetroAchievementsFaceFragment retroAchievementsFaceFragment, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = retroAchievementsFaceFragment;

@@ -21,7 +21,7 @@ import java.util.Map;
 import java.util.Objects;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ExternalAccountAuthorizedUserCredentials extends GoogleCredentials {
     static final String EXTERNAL_ACCOUNT_AUTHORIZED_USER_FILE_TYPE = "external_account_authorized_user";
     private static final String PARSE_ERROR_PREFIX = "Error parsing token refresh response. ";

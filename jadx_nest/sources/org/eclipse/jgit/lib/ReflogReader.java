@@ -3,7 +3,7 @@ package org.eclipse.jgit.lib;
 import java.io.IOException;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface ReflogReader {
     ReflogEntry getLastEntry() throws IOException;
 

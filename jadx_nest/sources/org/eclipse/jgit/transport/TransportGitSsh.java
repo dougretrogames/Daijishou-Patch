@@ -26,12 +26,12 @@ import org.eclipse.jgit.util.SystemReader;
 import org.eclipse.jgit.util.io.MessageWriter;
 import org.eclipse.jgit.util.io.StreamCopyThread;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransportGitSsh extends SshTransport implements PackTransport {
     private static final String EXT = "ext";
     static final TransportProtocol PROTO_SSH = new AnonymousClass1();
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.TransportGitSsh$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.TransportGitSsh$1, reason: invalid class name */
     class AnonymousClass1 extends TransportProtocol {
         private final String[] schemeNames;
         private final Set<String> schemeSet;
@@ -96,7 +96,7 @@ public class TransportGitSsh extends SshTransport implements PackTransport {
         initSshSessionFactory();
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.TransportGitSsh$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.TransportGitSsh$2, reason: invalid class name */
     class AnonymousClass2 extends SshSessionFactory {
         AnonymousClass2() {
         }

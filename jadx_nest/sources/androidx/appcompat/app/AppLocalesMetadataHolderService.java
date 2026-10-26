@@ -8,7 +8,7 @@ import android.content.pm.PackageManager;
 import android.content.pm.ServiceInfo;
 import android.os.IBinder;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class AppLocalesMetadataHolderService extends Service {
     @Override // android.app.Service
     public IBinder onBind(Intent intent) {

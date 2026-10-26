@@ -9,7 +9,7 @@ import android.widget.Checkable;
 import android.widget.CompoundButton;
 import androidx.core.content.res.TypedArrayUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CheckBoxPreference extends TwoStatePreference {
     private final Listener mListener;
 
@@ -55,7 +55,7 @@ public class CheckBoxPreference extends TwoStatePreference {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void syncCheckboxView(View view) {
         boolean z = view instanceof CompoundButton;
         if (z) {

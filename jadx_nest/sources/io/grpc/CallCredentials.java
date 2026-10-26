@@ -2,7 +2,7 @@ package io.grpc;
 
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class CallCredentials {
 
     public static abstract class MetadataApplier {

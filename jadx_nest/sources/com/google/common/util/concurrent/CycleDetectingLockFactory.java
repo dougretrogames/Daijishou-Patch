@@ -24,7 +24,7 @@ import java.util.logging.Level;
 import javax.annotation.CheckForNull;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public class CycleDetectingLockFactory {
     final Policy policy;
@@ -46,8 +46,8 @@ public class CycleDetectingLockFactory {
         this(policy);
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     public static abstract class Policies implements Policy {
         public static final Policies THROW = new AnonymousClass1("THROW", 0);
         public static final Policies WARN = new AnonymousClass2("WARN", 1);
@@ -74,7 +74,7 @@ public class CycleDetectingLockFactory {
             return (Policies[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.CycleDetectingLockFactory$Policies$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.util.concurrent.CycleDetectingLockFactory$Policies$1, reason: invalid class name */
         final enum AnonymousClass1 extends Policies {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -86,7 +86,7 @@ public class CycleDetectingLockFactory {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.CycleDetectingLockFactory$Policies$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.util.concurrent.CycleDetectingLockFactory$Policies$2, reason: invalid class name */
         final enum AnonymousClass2 extends Policies {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -98,7 +98,7 @@ public class CycleDetectingLockFactory {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.CycleDetectingLockFactory$Policies$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.util.concurrent.CycleDetectingLockFactory$Policies$3, reason: invalid class name */
         final enum AnonymousClass3 extends Policies {
             @Override // com.google.common.util.concurrent.CycleDetectingLockFactory.Policy
             public void handlePotentialDeadlock(PotentialDeadlockException e) {
@@ -212,12 +212,12 @@ public class CycleDetectingLockFactory {
         this.policy = (Policy) Preconditions.checkNotNull(policy);
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.CycleDetectingLockFactory$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.CycleDetectingLockFactory$1, reason: invalid class name */
     class AnonymousClass1 extends ThreadLocal<ArrayList<LockGraphNode>> {
         AnonymousClass1() {
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // java.lang.ThreadLocal
         public ArrayList<LockGraphNode> initialValue() {
             return Lists.newArrayListWithCapacity(3);
@@ -336,7 +336,7 @@ public class CycleDetectingLockFactory {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void aboutToAcquire(CycleDetectingLock lock) {
         if (lock.isAcquiredByCurrentThread()) {
             return;
@@ -347,7 +347,7 @@ public class CycleDetectingLockFactory {
         arrayList.add(lockGraphNode);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void lockStateChanged(CycleDetectingLock lock) {
         if (lock.isAcquiredByCurrentThread()) {
             return;

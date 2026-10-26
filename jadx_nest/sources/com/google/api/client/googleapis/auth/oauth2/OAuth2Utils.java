@@ -12,7 +12,7 @@ import java.util.Collection;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class OAuth2Utils {
     private static final int COMPUTE_PING_CONNECTION_TIMEOUT_MS = 500;
     private static final String DEFAULT_METADATA_SERVER_URL = "http://169.254.169.254";

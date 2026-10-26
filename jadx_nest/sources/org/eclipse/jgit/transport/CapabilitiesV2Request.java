@@ -1,6 +1,6 @@
 package org.eclipse.jgit.transport;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class CapabilitiesV2Request {
     /* synthetic */ CapabilitiesV2Request(CapabilitiesV2RequestIA capabilitiesV2RequestIA) {
         this();

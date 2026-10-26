@@ -4,8 +4,8 @@ import java.util.function.BiConsumer;
 import java.util.function.BinaryOperator;
 import java.util.function.Function;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class TableCollectors$$ExternalSyntheticLambda5 implements BiConsumer {
     public final /* synthetic */ Function f$0;
     public final /* synthetic */ Function f$1;

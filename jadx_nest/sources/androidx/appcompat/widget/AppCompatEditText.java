@@ -28,7 +28,7 @@ import androidx.core.widget.TextViewCompat;
 import androidx.core.widget.TextViewOnReceiveContentListener;
 import androidx.core.widget.TintableCompoundDrawablesView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AppCompatEditText extends EditText implements TintableBackgroundView, OnReceiveContentViewBehavior, EmojiCompatConfigurationView, TintableCompoundDrawablesView {
     private final AppCompatEmojiEditTextHelper mAppCompatEmojiEditTextHelper;
     private final AppCompatBackgroundHelper mBackgroundTintHelper;

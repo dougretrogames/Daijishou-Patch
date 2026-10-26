@@ -5,7 +5,7 @@ import com.google.errorprone.annotations.concurrent.LazyInit;
 import java.io.Serializable;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class NaturalOrdering extends Ordering<Comparable<?>> implements Serializable {
     static final NaturalOrdering INSTANCE = new NaturalOrdering();

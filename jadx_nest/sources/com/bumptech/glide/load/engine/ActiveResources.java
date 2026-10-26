@@ -12,7 +12,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ActiveResources {
     final Map<Key, ResourceWeakReference> activeEngineResources;
     private volatile DequeuedResourceCallback cb;
@@ -30,12 +30,12 @@ final class ActiveResources {
         this(z, Executors.newSingleThreadExecutor(new AnonymousClass1()));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.ActiveResources$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.ActiveResources$1, reason: invalid class name */
     class AnonymousClass1 implements ThreadFactory {
         AnonymousClass1() {
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.engine.ActiveResources$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.bumptech.glide.load.engine.ActiveResources$1$1, reason: invalid class name and collision with other inner class name */
         class RunnableC00261 implements Runnable {
             final /* synthetic */ Runnable val$r;
 
@@ -64,7 +64,7 @@ final class ActiveResources {
         executor.execute(new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.ActiveResources$2, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.ActiveResources$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }

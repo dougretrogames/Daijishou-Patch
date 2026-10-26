@@ -7,7 +7,7 @@ import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public class ListenableFutureTask<V> extends FutureTask<V> implements ListenableFuture<V> {
     private final ExecutionList executionList;

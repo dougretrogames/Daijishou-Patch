@@ -41,7 +41,7 @@ import com.google.android.material.shape.Shapeable;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class FloatingActionButtonImpl {
     static final int ANIM_STATE_HIDING = 1;
     static final int ANIM_STATE_NONE = 0;
@@ -230,7 +230,7 @@ class FloatingActionButtonImpl {
         this.view.setImageMatrix(matrix);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void calculateImageMatrixFromScale(float f, Matrix matrix) {
         matrix.reset();
         Drawable drawable = this.view.getDrawable();
@@ -387,7 +387,7 @@ class FloatingActionButtonImpl {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         private boolean cancelled;
         final /* synthetic */ boolean val$fromUser;
@@ -475,7 +475,7 @@ class FloatingActionButtonImpl {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         final /* synthetic */ boolean val$fromUser;
         final /* synthetic */ InternalVisibilityChangedListener val$listener;
@@ -525,12 +525,12 @@ class FloatingActionButtonImpl {
         return animatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$3, reason: invalid class name */
     class AnonymousClass3 extends MatrixEvaluator {
         AnonymousClass3() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.android.material.animation.MatrixEvaluator, android.animation.TypeEvaluator
         public Matrix evaluate(float f, Matrix matrix, Matrix matrix2) {
             FloatingActionButtonImpl.this.imageMatrixScale = f;
@@ -550,7 +550,7 @@ class FloatingActionButtonImpl {
         return animatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$4, reason: invalid class name */
     class AnonymousClass4 implements ValueAnimator.AnimatorUpdateListener {
         final /* synthetic */ Matrix val$matrix;
         final /* synthetic */ float val$startAlpha;
@@ -591,7 +591,7 @@ class FloatingActionButtonImpl {
         objectAnimator.setEvaluator(new AnonymousClass5());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$5, reason: invalid class name */
     class AnonymousClass5 implements TypeEvaluator<Float> {
         FloatEvaluator floatEvaluator = new FloatEvaluator();
 
@@ -712,7 +712,7 @@ class FloatingActionButtonImpl {
         return this.preDrawListener;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$6, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButtonImpl$6, reason: invalid class name */
     class AnonymousClass6 implements ViewTreeObserver.OnPreDrawListener {
         AnonymousClass6() {
         }

@@ -27,8 +27,8 @@ import kotlinx.coroutines.JobKt;
 import net.jodah.expiringmap.ExpirationPolicy;
 import net.jodah.expiringmap.ExpiringMap;
 
-/* JADX INFO: compiled from: CachedBitmapLoader.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: CachedBitmapLoader.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u0000  2\u00020\u0001:\u0002\u001f B)\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b¢\u0006\u0002\u0010\tJ\u0006\u0010\u0017\u001a\u00020\u0018J\u000e\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u001a\u001a\u00020\fJ\u0012\u0010\u001b\u001a\u00060\u001cR\u00020\u00002\u0006\u0010\u001d\u001a\u00020\u001eR\u001d\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\r0\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R*\u0010\u0012\u001a\u001e\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u00150\u0013j\u000e\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u0015`\u0016X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006!"}, d2 = {"Lcom/magneticchen/daijishou/cache/CachedBitmapLoader;", "", "cacheSize", "", "maxShortEdgeLength", "expirationInMinutes", "", "dispatcher", "Lkotlinx/coroutines/ExecutorCoroutineDispatcher;", "(IIJLkotlinx/coroutines/ExecutorCoroutineDispatcher;)V", "cache", "Lnet/jodah/expiringmap/ExpiringMap;", "", "Landroid/graphics/Bitmap;", "getCache", "()Lnet/jodah/expiringmap/ExpiringMap;", "getDispatcher", "()Lkotlinx/coroutines/ExecutorCoroutineDispatcher;", "jobs", "Ljava/util/HashMap;", "Landroid/view/View;", "Lkotlinx/coroutines/Job;", "Lkotlin/collections/HashMap;", "clear", "", "remove", "pathOrURL", "with", "Lcom/magneticchen/daijishou/cache/CachedBitmapLoader$CachedBitmapLoaderTask;", "fragment", "Landroidx/fragment/app/Fragment;", "CachedBitmapLoaderTask", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class CachedBitmapLoader {
     private final ExpiringMap<String, Bitmap> cache;
@@ -62,7 +62,7 @@ public final class CachedBitmapLoader {
         return this.cache;
     }
 
-    /* JADX INFO: compiled from: CachedBitmapLoader.kt */
+    /* INFO: compiled from: CachedBitmapLoader.kt */
     @Metadata(d1 = {"\u0000d\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0086\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J0\u0010\u001f\u001a\u00020\u00122\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#2\u0006\u0010\u0016\u001a\u00020\u00152\b\b\u0002\u0010\u0018\u001a\u00020\u0017H\u0082@¢\u0006\u0002\u0010$J \u0010%\u001a\u00020\u00122\u0006\u0010\u0016\u001a\u00020\u00152\b\b\u0002\u0010\u0018\u001a\u00020\u0017H\u0082@¢\u0006\u0002\u0010&J\u000e\u0010'\u001a\u00020\u00122\u0006\u0010\"\u001a\u00020#J\u0006\u0010(\u001a\u00020\u0012J\u0014\u0010)\u001a\u00020\u00122\n\u0010\u0011\u001a\u00060\rj\u0002`\u000eH\u0002J*\u0010*\u001a\u00020\u00122\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#2\n\u0010\u0011\u001a\u00060\rj\u0002`\u000eH\u0082@¢\u0006\u0002\u0010+J\u001a\u0010,\u001a\u00020\u00122\n\u0010\u0011\u001a\u00060\rj\u0002`\u000eH\u0082@¢\u0006\u0002\u0010-J\u001a\u0010.\u001a\u00020\u00122\u0006\u0010\u0016\u001a\u00020\u00152\b\b\u0002\u0010\u0018\u001a\u00020\u0017H\u0002J\u0012\u0010/\u001a\u00060\u0000R\u0002002\u0006\u00101\u001a\u00020\u001aJ1\u00102\u001a\u00060\u0000R\u0002002%\u0010\u000b\u001a!\u0012\u0017\u0012\u00150\rj\u0002`\u000e¢\u0006\f\b\u000f\u0012\b\b\u0010\u0012\u0004\b\b(\u0011\u0012\u0004\u0012\u00020\u00120\fJB\u00103\u001a\u00060\u0000R\u00020026\u0010\u0013\u001a2\u0012\u0013\u0012\u00110\u0015¢\u0006\f\b\u000f\u0012\b\b\u0010\u0012\u0004\b\b(\u0016\u0012\u0013\u0012\u00110\u0017¢\u0006\f\b\u000f\u0012\b\b\u0010\u0012\u0004\b\b(\u0018\u0012\u0004\u0012\u00020\u00120\u0014R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0005\u001a\u00020\u0006X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0007\u0010\b\"\u0004\b\t\u0010\nR/\u0010\u000b\u001a#\u0012\u0017\u0012\u00150\rj\u0002`\u000e¢\u0006\f\b\u000f\u0012\b\b\u0010\u0012\u0004\b\b(\u0011\u0012\u0004\u0012\u00020\u0012\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R@\u0010\u0013\u001a4\u0012\u0013\u0012\u00110\u0015¢\u0006\f\b\u000f\u0012\b\b\u0010\u0012\u0004\b\b(\u0016\u0012\u0013\u0012\u00110\u0017¢\u0006\f\b\u000f\u0012\b\b\u0010\u0012\u0004\b\b(\u0018\u0012\u0004\u0012\u00020\u0012\u0018\u00010\u0014X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\u0019\u001a\u00020\u001aX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001b\u0010\u001c\"\u0004\b\u001d\u0010\u001e¨\u00064"}, d2 = {"Lcom/magneticchen/daijishou/cache/CachedBitmapLoader$CachedBitmapLoaderTask;", "", "fragment", "Landroidx/fragment/app/Fragment;", "(Lcom/magneticchen/daijishou/cache/CachedBitmapLoader;Landroidx/fragment/app/Fragment;)V", "mode", "", "getMode", "()I", "setMode", "(I)V", "onFailedListener", "Lkotlin/Function1;", "Ljava/lang/Exception;", "Lkotlin/Exception;", "Lkotlin/ParameterName;", "name", "e", "", "onSucceedListener", "Lkotlin/Function2;", "Landroid/graphics/Bitmap;", "bitmap", "", "isCached", "path", "", "getPath", "()Ljava/lang/String;", "setPath", "(Ljava/lang/String;)V", "finishAndInvokeCorrectListenerWithJob", "job", "Lkotlinx/coroutines/Job;", "view", "Landroid/view/View;", "(Lkotlinx/coroutines/Job;Landroid/view/View;Landroid/graphics/Bitmap;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "finishAndInvokeCorrectListenerWithoutJob", "(Landroid/graphics/Bitmap;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "into", "intoNothing", "invokeOnFailedListener", "invokeOnFailedListenerWithJob", "(Lkotlinx/coroutines/Job;Landroid/view/View;Ljava/lang/Exception;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "invokeOnFailedListenerWithoutJob", "(Ljava/lang/Exception;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "invokeOnSucceedListener", "load", "Lcom/magneticchen/daijishou/cache/CachedBitmapLoader;", "pathOrURL", "setOnFailedListener", "setOnSucceedListener", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class CachedBitmapLoaderTask {
         private final Fragment fragment;
@@ -119,13 +119,13 @@ public final class CachedBitmapLoader {
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         final Object invokeOnFailedListenerWithoutJob(Exception exc, Continuation<?> continuation) {
             Object objWithContext = BuildersKt.withContext(LifecycleOwnerKt.getLifecycleScope(this.fragment).getCoroutineContext().plus(Dispatchers.getMain()), new CachedBitmapLoader$CachedBitmapLoaderTask$invokeOnFailedListenerWithoutJob$2(this, exc, null), continuation);
             return objWithContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objWithContext : Unit.INSTANCE;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         final Object invokeOnFailedListenerWithJob(Job job, View view, Exception exc, Continuation<?> continuation) {
             if (Intrinsics.areEqual(this.this$0.jobs.get(view), job)) {
                 this.this$0.jobs.remove(view);
@@ -141,7 +141,7 @@ public final class CachedBitmapLoader {
             return cachedBitmapLoaderTask.finishAndInvokeCorrectListenerWithoutJob(bitmap, z, continuation);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         final Object finishAndInvokeCorrectListenerWithoutJob(Bitmap bitmap, boolean z, Continuation<?> continuation) {
             Object objWithContext = BuildersKt.withContext(LifecycleOwnerKt.getLifecycleScope(this.fragment).getCoroutineContext().plus(Dispatchers.getMain()), new CachedBitmapLoader$CachedBitmapLoaderTask$finishAndInvokeCorrectListenerWithoutJob$2(this, bitmap, z, null), continuation);
             return objWithContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objWithContext : Unit.INSTANCE;
@@ -154,7 +154,7 @@ public final class CachedBitmapLoader {
             return cachedBitmapLoaderTask.finishAndInvokeCorrectListenerWithJob(job, view, bitmap, z, continuation);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         final Object finishAndInvokeCorrectListenerWithJob(Job job, View view, Bitmap bitmap, boolean z, Continuation<?> continuation) {
             if (Intrinsics.areEqual(this.this$0.jobs.get(view), job)) {
                 this.this$0.jobs.remove(view);
@@ -172,7 +172,7 @@ public final class CachedBitmapLoader {
             cachedBitmapLoaderTask.invokeOnSucceedListener(bitmap, z);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final void invokeOnSucceedListener(Bitmap bitmap, boolean isCached) {
             Function2<? super Bitmap, ? super Boolean, Unit> function2 = this.onSucceedListener;
             if (function2 != null) {
@@ -182,7 +182,7 @@ public final class CachedBitmapLoader {
             this.onSucceedListener = null;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final void invokeOnFailedListener(Exception e) {
             Function1<? super Exception, Unit> function1 = this.onFailedListener;
             if (function1 != null) {
@@ -237,7 +237,7 @@ public final class CachedBitmapLoader {
         return new CachedBitmapLoaderTask(this, fragment);
     }
 
-    /* JADX INFO: Companion + nested exception were dropped from the decompiled output. */
+    /* INFO: Companion + nested exception were dropped from the decompiled output. */
     public static final class Companion {
         public Companion() {
         }

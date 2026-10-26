@@ -2,7 +2,7 @@ package com.google.common.util.concurrent;
 
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 final class NullnessCasts {
     @ParametricNullness

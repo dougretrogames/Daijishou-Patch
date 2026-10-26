@@ -2,7 +2,7 @@ package org.eclipse.jgit.lib;
 
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class ConfigLine {
     String includedFrom;
     String name;

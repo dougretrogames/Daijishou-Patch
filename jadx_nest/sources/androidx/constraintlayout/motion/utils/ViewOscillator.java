@@ -10,13 +10,13 @@ import com.google.common.base.Ascii;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ViewOscillator extends KeyCycleOscillator {
     private static final String TAG = "ViewOscillator";
 
     public abstract void setProperty(View view, float f);
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public static ViewOscillator makeSpline(String str) {
         if (str.startsWith("CUSTOM")) {
             return new CustomSet();

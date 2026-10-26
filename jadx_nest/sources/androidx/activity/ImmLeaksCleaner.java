@@ -8,7 +8,7 @@ import androidx.lifecycle.LifecycleEventObserver;
 import androidx.lifecycle.LifecycleOwner;
 import java.lang.reflect.Field;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class ImmLeaksCleaner implements LifecycleEventObserver {
     private static final int INIT_FAILED = 2;
     private static final int INIT_SUCCESS = 1;

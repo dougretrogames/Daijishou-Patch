@@ -2,7 +2,7 @@ package org.eclipse.jgit.lib;
 
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RepositoryCacheConfig {
     public static final long AUTO_CLEANUP_DELAY = -1;
     public static final long NO_CLEANUP = 0;

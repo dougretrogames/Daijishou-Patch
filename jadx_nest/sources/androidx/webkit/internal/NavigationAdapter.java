@@ -6,7 +6,7 @@ import org.chromium.support_lib_boundary.WebViewNavigationBoundaryInterface;
 import org.chromium.support_lib_boundary.WebViewPageBoundaryInterface;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class NavigationAdapter implements Navigation {
     WebViewNavigationBoundaryInterface mImpl;
     PageImpl mPage;

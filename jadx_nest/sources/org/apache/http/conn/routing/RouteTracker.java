@@ -7,7 +7,7 @@ import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 import org.apache.http.util.LangUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class RouteTracker implements RouteInfo, Cloneable {
     private boolean connected;
     private RouteInfo.LayerType layered;

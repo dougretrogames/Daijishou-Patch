@@ -21,7 +21,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class DropDownListView extends ListView {
     public static final int INVALID_POSITION = -1;
     public static final int NO_POSITION = -1;
@@ -302,12 +302,12 @@ class DropDownListView extends ListView {
         super.onDetachedFromWindow();
     }
 
-    /* JADX WARN: Code duplicated, block: B:23:0x004a  */
-    /* JADX WARN: Code duplicated, block: B:25:0x004f  */
-    /* JADX WARN: Code duplicated, block: B:27:0x0053  */
-    /* JADX WARN: Code duplicated, block: B:30:0x0065  */
-    /* JADX WARN: Code duplicated, block: B:32:0x0069  */
-    /* JADX WARN: Code duplicated, block: B:9:0x0011  */
+    /* WARN: Code duplicated, block: B:23:0x004a  */
+    /* WARN: Code duplicated, block: B:25:0x004f  */
+    /* WARN: Code duplicated, block: B:27:0x0053  */
+    /* WARN: Code duplicated, block: B:30:0x0065  */
+    /* WARN: Code duplicated, block: B:32:0x0069  */
+    /* WARN: Code duplicated, block: B:9:0x0011  */
     public boolean onForwardedEvent(MotionEvent motionEvent, int i) {
         boolean z;
         boolean z2;

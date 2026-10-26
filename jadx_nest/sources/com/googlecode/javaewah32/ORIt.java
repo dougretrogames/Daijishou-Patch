@@ -5,8 +5,8 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-/* JADX INFO: compiled from: IteratorAggregation32.java */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: IteratorAggregation32.java */
+/* INFO: loaded from: classes4.dex */
 class ORIt implements CloneableIterator<EWAHIterator32> {
     final EWAHCompressedBitmap32 buffer = new EWAHCompressedBitmap32();
     final int[] hardBitmap;
@@ -18,7 +18,7 @@ class ORIt implements CloneableIterator<EWAHIterator32> {
     }
 
     @Override // com.googlecode.javaewah.CloneableIterator
-    /* JADX INFO: renamed from: clone, reason: avoid collision after fix types in other method and merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: avoid collision after fix types in other method and merged with bridge method [inline-methods] */
     public CloneableIterator<EWAHIterator32> m3478clone() throws CloneNotSupportedException {
         XORIt xORIt = (XORIt) super.clone();
         xORIt.buffer = this.buffer.m3472clone();
@@ -32,7 +32,7 @@ class ORIt implements CloneableIterator<EWAHIterator32> {
         return !this.ll.isEmpty();
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.googlecode.javaewah.CloneableIterator
     public EWAHIterator32 next() {
         this.buffer.clear();

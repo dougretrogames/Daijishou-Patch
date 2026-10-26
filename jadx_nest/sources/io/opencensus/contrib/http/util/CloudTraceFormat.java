@@ -14,7 +14,7 @@ import java.nio.ByteBuffer;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class CloudTraceFormat extends TextFormat {
     static final int CLOUD_TRACE_IS_SAMPLED = 1;
     static final int MIN_HEADER_SIZE = 34;

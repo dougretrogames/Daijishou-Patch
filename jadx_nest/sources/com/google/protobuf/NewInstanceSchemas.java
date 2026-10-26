@@ -1,6 +1,6 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 final class NewInstanceSchemas {
     private static final NewInstanceSchema FULL_SCHEMA = loadSchemaForFullRuntime();

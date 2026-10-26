@@ -15,7 +15,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.filter.PathFilterGroup;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RmCommand extends GitCommand<DirCache> {
     private boolean cached;
     private Collection<String> filepatterns;
@@ -38,9 +38,9 @@ public class RmCommand extends GitCommand<DirCache> {
         return this;
     }
 
-    /* JADX WARN: Code duplicated, block: B:45:0x00ad A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:75:0x00af A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:94:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:45:0x00ad A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:75:0x00af A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:94:? A[RETURN, SYNTHETIC] */
     @Override // org.eclipse.jgit.api.GitCommand, java.util.concurrent.Callable
     public DirCache call() throws Throwable {
         DirCache dirCacheLockDirCache;

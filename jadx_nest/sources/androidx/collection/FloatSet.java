@@ -10,8 +10,8 @@ import org.apache.commons.codec.language.bm.Languages;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: FloatSet.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: FloatSet.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u0014\n\u0002\b\u0002\n\u0002\u0010\u0016\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0007\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\r\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001B\u0007\b\u0004¢\u0006\u0002\u0010\u0002J:\u0010\u0011\u001a\u00020\u00122!\u0010\u0013\u001a\u001d\u0012\u0013\u0012\u00110\u0015¢\u0006\f\b\u0016\u0012\b\b\u0017\u0012\u0004\b\b(\u0018\u0012\u0004\u0012\u00020\u00120\u0014H\u0086\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001J\u0006\u0010\u0019\u001a\u00020\u0012J:\u0010\u0019\u001a\u00020\u00122!\u0010\u0013\u001a\u001d\u0012\u0013\u0012\u00110\u0015¢\u0006\f\b\u0016\u0012\b\b\u0017\u0012\u0004\b\b(\u0018\u0012\u0004\u0012\u00020\u00120\u0014H\u0086\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001J\u0011\u0010\u001a\u001a\u00020\u00122\u0006\u0010\u0018\u001a\u00020\u0015H\u0086\u0002J\b\u0010\u001b\u001a\u00020\u0004H\u0007J:\u0010\u001b\u001a\u00020\u00042!\u0010\u0013\u001a\u001d\u0012\u0013\u0012\u00110\u0015¢\u0006\f\b\u0016\u0012\b\b\u0017\u0012\u0004\b\b(\u0018\u0012\u0004\u0012\u00020\u00120\u0014H\u0087\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001J\u0013\u0010\u001c\u001a\u00020\u00122\b\u0010\u001d\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\u0016\u0010\u001e\u001a\u00020\u00042\u0006\u0010\u0018\u001a\u00020\u0015H\u0080\b¢\u0006\u0002\b\u001fJ\t\u0010 \u001a\u00020\u0015H\u0086\bJ:\u0010 \u001a\u00020\u00152!\u0010\u0013\u001a\u001d\u0012\u0013\u0012\u00110\u0015¢\u0006\f\b\u0016\u0012\b\b\u0017\u0012\u0004\b\b(\u0018\u0012\u0004\u0012\u00020\u00120\u0014H\u0086\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001J:\u0010!\u001a\u00020\"2!\u0010#\u001a\u001d\u0012\u0013\u0012\u00110\u0015¢\u0006\f\b\u0016\u0012\b\b\u0017\u0012\u0004\b\b(\u0018\u0012\u0004\u0012\u00020\"0\u0014H\u0086\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001J:\u0010$\u001a\u00020\"2!\u0010#\u001a\u001d\u0012\u0013\u0012\u00110\u0004¢\u0006\f\b\u0016\u0012\b\b\u0017\u0012\u0004\b\b(%\u0012\u0004\u0012\u00020\"0\u0014H\u0081\bø\u0001\u0000\u0082\u0002\b\n\u0006\b\u0001\u0012\u0002\u0010\u0001J\b\u0010&\u001a\u00020\u0004H\u0016J\u0006\u0010'\u001a\u00020\u0012J\u0006\u0010(\u001a\u00020\u0012J:\u0010)\u001a\u00020*2\b\b\u0002\u0010+\u001a\u00020,2\b\b\u0002\u0010-\u001a\u00020,2\b\b\u0002\u0010.\u001a\u00020,2\b\b\u0002\u0010/\u001a\u00020\u00042\b\b\u0002\u00100\u001a\u00020,H\u0007JT\u0010)\u001a\u00020*2\b\b\u0002\u0010+\u001a\u00020,2\b\b\u0002\u0010-\u001a\u00020,2\b\b\u0002\u0010.\u001a\u00020,2\b\b\u0002\u0010/\u001a\u00020\u00042\b\b\u0002\u00100\u001a\u00020,2\u0014\b\u0004\u00101\u001a\u000e\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020,0\u0014H\u0087\bø\u0001\u0000J\u0006\u00102\u001a\u00020\u0012J\b\u00103\u001a\u00020*H\u0016R\u0012\u0010\u0003\u001a\u00020\u00048\u0000@\u0000X\u0081\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u0005\u001a\u00020\u00048\u0000@\u0000X\u0081\u000e¢\u0006\u0002\n\u0000R\u0011\u0010\u0006\u001a\u00020\u00048G¢\u0006\u0006\u001a\u0004\b\u0007\u0010\bR\u0018\u0010\t\u001a\u00020\n8\u0000@\u0000X\u0081\u000e¢\u0006\b\n\u0000\u0012\u0004\b\u000b\u0010\u0002R\u0018\u0010\f\u001a\u00020\r8\u0000@\u0000X\u0081\u000e¢\u0006\b\n\u0000\u0012\u0004\b\u000e\u0010\u0002R\u0011\u0010\u000f\u001a\u00020\u00048G¢\u0006\u0006\u001a\u0004\b\u0010\u0010\b\u0082\u0001\u00014\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u00065"}, d2 = {"Landroidx/collection/FloatSet;", "", "()V", "_capacity", "", "_size", "capacity", "getCapacity", "()I", "elements", "", "getElements$annotations", "metadata", "", "getMetadata$annotations", "size", "getSize", "all", "", "predicate", "Lkotlin/Function1;", "", "Lkotlin/ParameterName;", "name", "element", Languages.ANY, "contains", "count", "equals", "other", "findElementIndex", "findElementIndex$collection", "first", "forEach", "", "block", "forEachIndex", ConfigConstants.CONFIG_INDEX_SECTION, "hashCode", "isEmpty", "isNotEmpty", "joinToString", "", "separator", "", "prefix", "postfix", "limit", "truncated", "transform", "none", "toString", "Landroidx/collection/MutableFloatSet;", "collection"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public abstract class FloatSet {
     public int _capacity;
@@ -63,7 +63,7 @@ public abstract class FloatSet {
         this.elements = FloatSetKt.getEmptyFloatArray();
     }
 
-    /* JADX INFO: renamed from: getCapacity, reason: from getter */
+    /* INFO: renamed from: getCapacity, reason: from getter */
     public final int get_capacity() {
         return this._capacity;
     }
@@ -149,7 +149,7 @@ public abstract class FloatSet {
         }
     }
 
-    /* JADX INFO: renamed from: count, reason: from getter */
+    /* INFO: renamed from: count, reason: from getter */
     public final int get_size() {
         return this._size;
     }
@@ -229,10 +229,10 @@ public abstract class FloatSet {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:43:0x00bd A[DONT_INVERT, PHI: r11
+    /* WARN: Code duplicated, block: B:43:0x00bd A[DONT_INVERT, PHI: r11
   0x00bd: PHI (r11v2 int) = (r11v1 int), (r11v3 int) binds: [B:28:0x0076, B:42:0x00bb] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:44:0x00bf A[LOOP:0: B:27:0x0065->B:44:0x00bf, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:52:0x00c2 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:44:0x00bf A[LOOP:0: B:27:0x0065->B:44:0x00bf, LOOP_END] */
+    /* WARN: Code duplicated, block: B:52:0x00c2 A[SYNTHETIC] */
     public static /* synthetic */ String joinToString$default(FloatSet floatSet, CharSequence charSequence, CharSequence charSequence2, CharSequence charSequence3, int i, CharSequence charSequence4, Function1 transform, int i2, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: joinToString");
@@ -357,9 +357,9 @@ public abstract class FloatSet {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x0058 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:26:0x005a A[LOOP:0: B:14:0x0021->B:26:0x005a, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:30:0x005d A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:25:0x0058 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:26:0x005a A[LOOP:0: B:14:0x0021->B:26:0x005a, LOOP_END] */
+    /* WARN: Code duplicated, block: B:30:0x005d A[SYNTHETIC] */
     public boolean equals(Object other) {
         if (other == this) {
             return true;
@@ -403,9 +403,9 @@ public abstract class FloatSet {
         return joinToString$default(this, null, CollectionUtils.DEFAULT_TOSTRING_PREFIX, CollectionUtils.DEFAULT_TOSTRING_SUFFIX, 0, null, 25, null);
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x003c A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:16:0x003e A[LOOP:0: B:5:0x000b->B:16:0x003e, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:21:0x0041 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:15:0x003c A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:16:0x003e A[LOOP:0: B:5:0x000b->B:16:0x003e, LOOP_END] */
+    /* WARN: Code duplicated, block: B:21:0x0041 A[SYNTHETIC] */
     public final float first() {
         float[] fArr = this.elements;
         long[] jArr = this.metadata;
@@ -435,9 +435,9 @@ public abstract class FloatSet {
         throw new NoSuchElementException("The FloatSet is empty");
     }
 
-    /* JADX WARN: Code duplicated, block: B:16:0x0051 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:17:0x0053 A[LOOP:0: B:5:0x0010->B:17:0x0053, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:20:0x0056 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:16:0x0051 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:17:0x0053 A[LOOP:0: B:5:0x0010->B:17:0x0053, LOOP_END] */
+    /* WARN: Code duplicated, block: B:20:0x0056 A[SYNTHETIC] */
     public final float first(Function1<? super Float, Boolean> predicate) {
         Intrinsics.checkNotNullParameter(predicate, "predicate");
         float[] fArr = this.elements;
@@ -501,9 +501,9 @@ public abstract class FloatSet {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x0052 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:18:0x0054 A[LOOP:0: B:5:0x0010->B:18:0x0054, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:21:0x0057 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:17:0x0052 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:18:0x0054 A[LOOP:0: B:5:0x0010->B:18:0x0054, LOOP_END] */
+    /* WARN: Code duplicated, block: B:21:0x0057 A[SYNTHETIC] */
     public final boolean any(Function1<? super Float, Boolean> predicate) {
         Intrinsics.checkNotNullParameter(predicate, "predicate");
         float[] fArr = this.elements;
@@ -707,10 +707,10 @@ public abstract class FloatSet {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x008e A[DONT_INVERT, PHI: r11
+    /* WARN: Code duplicated, block: B:21:0x008e A[DONT_INVERT, PHI: r11
   0x008e: PHI (r11v2 int) = (r11v1 int), (r11v3 int) binds: [B:6:0x0046, B:20:0x008c] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:22:0x0090 A[LOOP:0: B:5:0x0035->B:22:0x0090, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:28:0x0093 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:22:0x0090 A[LOOP:0: B:5:0x0035->B:22:0x0090, LOOP_END] */
+    /* WARN: Code duplicated, block: B:28:0x0093 A[SYNTHETIC] */
     public final String joinToString(CharSequence separator, CharSequence prefix, CharSequence postfix, Function1<? super Float, ? extends CharSequence> transform) {
         Intrinsics.checkNotNullParameter(separator, "separator");
         Intrinsics.checkNotNullParameter(prefix, "prefix");
@@ -770,10 +770,10 @@ public abstract class FloatSet {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x008b A[DONT_INVERT, PHI: r11
+    /* WARN: Code duplicated, block: B:21:0x008b A[DONT_INVERT, PHI: r11
   0x008b: PHI (r11v2 int) = (r11v1 int), (r11v3 int) binds: [B:6:0x0043, B:20:0x0089] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:22:0x008d A[LOOP:0: B:5:0x0032->B:22:0x008d, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:28:0x0090 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:22:0x008d A[LOOP:0: B:5:0x0032->B:22:0x008d, LOOP_END] */
+    /* WARN: Code duplicated, block: B:28:0x0090 A[SYNTHETIC] */
     public final String joinToString(CharSequence separator, CharSequence prefix, Function1<? super Float, ? extends CharSequence> transform) {
         Intrinsics.checkNotNullParameter(separator, "separator");
         Intrinsics.checkNotNullParameter(prefix, "prefix");
@@ -832,10 +832,10 @@ public abstract class FloatSet {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x0087 A[DONT_INVERT, PHI: r11
+    /* WARN: Code duplicated, block: B:21:0x0087 A[DONT_INVERT, PHI: r11
   0x0087: PHI (r11v2 int) = (r11v1 int), (r11v3 int) binds: [B:6:0x003f, B:20:0x0085] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:22:0x0089 A[LOOP:0: B:5:0x002e->B:22:0x0089, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:28:0x008c A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:22:0x0089 A[LOOP:0: B:5:0x002e->B:22:0x0089, LOOP_END] */
+    /* WARN: Code duplicated, block: B:28:0x008c A[SYNTHETIC] */
     public final String joinToString(CharSequence separator, Function1<? super Float, ? extends CharSequence> transform) {
         Intrinsics.checkNotNullParameter(separator, "separator");
         Intrinsics.checkNotNullParameter(transform, "transform");
@@ -893,10 +893,10 @@ public abstract class FloatSet {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x0084 A[DONT_INVERT, PHI: r11
+    /* WARN: Code duplicated, block: B:21:0x0084 A[DONT_INVERT, PHI: r11
   0x0084: PHI (r11v2 int) = (r11v1 int), (r11v3 int) binds: [B:6:0x003c, B:20:0x0082] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:22:0x0086 A[LOOP:0: B:5:0x002b->B:22:0x0086, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:28:0x0089 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:22:0x0086 A[LOOP:0: B:5:0x002b->B:22:0x0086, LOOP_END] */
+    /* WARN: Code duplicated, block: B:28:0x0089 A[SYNTHETIC] */
     public final String joinToString(Function1<? super Float, ? extends CharSequence> transform) {
         Intrinsics.checkNotNullParameter(transform, "transform");
         StringBuilder sb = new StringBuilder();

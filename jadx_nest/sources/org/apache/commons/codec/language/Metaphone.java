@@ -4,7 +4,7 @@ import java.util.Locale;
 import org.apache.commons.codec.EncoderException;
 import org.apache.commons.codec.StringEncoder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Metaphone implements StringEncoder {
     private static final String FRONTV = "EIY";
     private static final String VARSON = "CSPTG";
@@ -48,7 +48,7 @@ public class Metaphone implements StringEncoder {
         return VOWELS.indexOf(sb.charAt(i)) >= 0;
     }
 
-    /* JADX WARN: Code duplicated, block: B:131:0x020d  */
+    /* WARN: Code duplicated, block: B:131:0x020d  */
     public String metaphone(String str) {
         int length;
         boolean z;

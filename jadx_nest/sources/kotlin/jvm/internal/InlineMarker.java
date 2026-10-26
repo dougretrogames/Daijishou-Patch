@@ -1,6 +1,6 @@
 package kotlin.jvm.internal;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class InlineMarker {
     public static void afterInlineCall() {
     }

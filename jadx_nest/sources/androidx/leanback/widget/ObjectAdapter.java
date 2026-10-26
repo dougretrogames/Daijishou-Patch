@@ -2,7 +2,7 @@ package androidx.leanback.widget;
 
 import android.database.Observable;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ObjectAdapter {
     public static final int NO_ID = -1;
     private boolean mHasStableIds;

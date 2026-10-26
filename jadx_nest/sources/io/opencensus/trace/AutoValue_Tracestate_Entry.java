@@ -1,6 +1,6 @@
 package io.opencensus.trace;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Tracestate_Entry extends Tracestate.Entry {
     private final String key;
     private final String value;

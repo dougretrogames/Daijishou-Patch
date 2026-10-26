@@ -7,7 +7,7 @@ import androidx.webkit.ServiceWorkerWebSettingsCompat;
 import org.chromium.support_lib_boundary.ServiceWorkerControllerBoundaryInterface;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ServiceWorkerControllerImpl extends ServiceWorkerControllerCompat {
     private ServiceWorkerControllerBoundaryInterface mBoundaryInterface;
     private ServiceWorkerController mFrameworksImpl;

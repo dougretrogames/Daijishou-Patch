@@ -24,7 +24,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.ViewPropertyAnimatorCompat;
 import androidx.core.view.ViewPropertyAnimatorListenerAdapter;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ToolbarWidgetWrapper implements DecorToolbar {
     private static final int AFFECTS_LOGO_MASK = 3;
     private static final long DEFAULT_FADE_DURATION_MS = 200;
@@ -127,7 +127,7 @@ public class ToolbarWidgetWrapper implements DecorToolbar {
         this.mToolbar.setNavigationOnClickListener(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ToolbarWidgetWrapper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ToolbarWidgetWrapper$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         final ActionMenuItem mNavItem;
 
@@ -528,7 +528,7 @@ public class ToolbarWidgetWrapper implements DecorToolbar {
         return ViewCompat.animate(this.mToolbar).alpha(i == 0 ? 1.0f : 0.0f).setDuration(j).setListener(new AnonymousClass2(i));
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ToolbarWidgetWrapper$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ToolbarWidgetWrapper$2, reason: invalid class name */
     class AnonymousClass2 extends ViewPropertyAnimatorListenerAdapter {
         private boolean mCanceled = false;
         final /* synthetic */ int val$visibility;

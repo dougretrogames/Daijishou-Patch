@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ByteArrayEntity extends AbstractHttpEntity implements Cloneable {
     private final byte[] b;
 

@@ -8,7 +8,7 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class LineReader {
     private final char[] buf;
@@ -20,7 +20,7 @@ public final class LineReader {
     @CheckForNull
     private final Reader reader;
 
-    /* JADX INFO: renamed from: com.google.common.io.LineReader$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.io.LineReader$1, reason: invalid class name */
     class AnonymousClass1 extends LineBuffer {
         AnonymousClass1() {
         }

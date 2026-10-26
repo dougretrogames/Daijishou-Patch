@@ -6,7 +6,7 @@ import com.google.api.client.googleapis.json.GoogleJsonErrorContainer;
 import com.google.api.client.http.HttpHeaders;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class JsonBatchCallback<T> implements BatchCallback<T, GoogleJsonErrorContainer> {
     public abstract void onFailure(GoogleJsonError googleJsonError, HttpHeaders httpHeaders) throws IOException;
 

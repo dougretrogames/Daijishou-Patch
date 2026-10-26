@@ -35,19 +35,19 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u0018\u0000 \u00122\u00020\u0001:\u0001\u0012B\u0005¢\u0006\u0002\u0010\u0002J\u0012\u0010\f\u001a\u00020\r2\b\u0010\u000e\u001a\u0004\u0018\u00010\u000fH\u0016J\b\u0010\u0010\u001a\u00020\u0011H\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082.¢\u0006\u0002\n\u0000¨\u0006\u0013"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "()V", "listViewItems", "", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformThumbnailsPacksIndexPlatformThumbnailPackListItemJson;", "platformThumbnailsPacksIndexJson", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformThumbnailsPacksIndexJson;", "progressBar", "Landroid/widget/ProgressBar;", "recyclerView", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;", "onCreateDialog", "Landroid/app/Dialog;", "savedInstanceState", "Landroid/os/Bundle;", "onStart", "", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class DownloadPlatformThumbnailsPackListDialogFragment extends DaijishouDialogFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public final List<PlatformThumbnailsPacksIndexPlatformThumbnailPackListItemJson> listViewItems = new ArrayList();
     public PlatformThumbnailsPacksIndexJson platformThumbnailsPacksIndexJson;
     public ProgressBar progressBar;
     public DaijishouRecyclerView recyclerView;
 
-    /* JADX INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
+    /* INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0003\u001a\u00020\u0004¨\u0006\u0005"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -82,15 +82,15 @@ public final class DownloadPlatformThumbnailsPackListDialogFragment extends Daij
         BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this), Dispatchers.getIO(), null, new C02211(dialogRequireDialog, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackListDialogFragment$onStart$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackListDialogFragment$onStart$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackListDialogFragment$onStart$1", f = "DownloadPlatformThumbnailsPackListDialogFragment.kt", i = {}, l = {78, 93}, m = "invokeSuspendImpl", n = {}, s = {})
     final class C02211 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
         final /* synthetic */ Dialog $dialog;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02211(Dialog dialog, Continuation<?> continuation) {
             super(2, continuation);
             this.$dialog = dialog;
@@ -161,8 +161,8 @@ public final class DownloadPlatformThumbnailsPackListDialogFragment extends Daij
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackListDialogFragment$onStart$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackListDialogFragment$onStart$1$2, reason: invalid class name */
+        /* INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackListDialogFragment$onStart$1$2", f = "DownloadPlatformThumbnailsPackListDialogFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -170,7 +170,7 @@ public final class DownloadPlatformThumbnailsPackListDialogFragment extends Daij
             int label;
             final /* synthetic */ DownloadPlatformThumbnailsPackListDialogFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(DownloadPlatformThumbnailsPackListDialogFragment downloadPlatformThumbnailsPackListDialogFragment, Exception exc, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = downloadPlatformThumbnailsPackListDialogFragment;
@@ -239,8 +239,8 @@ public final class DownloadPlatformThumbnailsPackListDialogFragment extends Daij
         return alertDialog;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$1, reason: invalid class name */
+    /* INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformThumbnailsPacksIndexPlatformThumbnailPackListItemJson;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function4<View, Integer, Long, PlatformThumbnailsPacksIndexPlatformThumbnailPackListItemJson, Unit> {
         AnonymousClass1() {

@@ -5,7 +5,7 @@ import org.apache.http.HttpClientConnection;
 import org.apache.http.HttpHost;
 import org.apache.http.pool.PoolEntry;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicPoolEntry extends PoolEntry<HttpHost, HttpClientConnection> {
     public BasicPoolEntry(String str, HttpHost httpHost, HttpClientConnection httpClientConnection) {
         super(str, httpHost, httpClientConnection);

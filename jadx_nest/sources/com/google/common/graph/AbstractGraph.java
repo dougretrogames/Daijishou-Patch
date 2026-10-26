@@ -3,10 +3,10 @@ package com.google.common.graph;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class AbstractGraph<N> extends AbstractBaseGraph<N> implements Graph<N> {
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ int degree(Object node) {
         return super.degree(node);
@@ -22,13 +22,13 @@ public abstract class AbstractGraph<N> extends AbstractBaseGraph<N> implements G
         return super.hasEdgeConnecting(endpoints);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ boolean hasEdgeConnecting(Object nodeU, Object nodeV) {
         return super.hasEdgeConnecting(nodeU, nodeV);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ int inDegree(Object node) {
         return super.inDegree(node);
@@ -39,13 +39,13 @@ public abstract class AbstractGraph<N> extends AbstractBaseGraph<N> implements G
         return super.incidentEdgeOrder();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ Set incidentEdges(Object node) {
         return super.incidentEdges(node);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ int outDegree(Object node) {
         return super.outDegree(node);

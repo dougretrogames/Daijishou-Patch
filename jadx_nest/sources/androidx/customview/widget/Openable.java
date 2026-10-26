@@ -1,6 +1,6 @@
 package androidx.customview.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface Openable {
     void close();
 

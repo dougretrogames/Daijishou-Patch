@@ -11,7 +11,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.file.PathVisitor;
 import org.apache.commons.io.function.IOSupplier;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractFileFilter implements IOFileFilter, PathVisitor {
     private final FileVisitResult onAccept;
     private final FileVisitResult onReject;

@@ -5,7 +5,7 @@ import java.text.MessageFormat;
 import java.util.Arrays;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Base85 {
     private static final int[] DECODE;
     private static final byte[] ENCODE = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!#$%&()*+-;<=>?@^_`{|}~".getBytes(StandardCharsets.US_ASCII);
@@ -36,7 +36,7 @@ public final class Base85 {
         return encode(bArr, 0, bArr.length);
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x003a A[PHI: r2 r3
+    /* WARN: Code duplicated, block: B:13:0x003a A[PHI: r2 r3
   0x003a: PHI (r2v1 int) = (r2v0 int), (r2v8 int) binds: [B:6:0x0015, B:10:0x002d] A[DONT_GENERATE, DONT_INLINE]
   0x003a: PHI (r3v4 long) = (r3v3 long), (r3v9 long) binds: [B:6:0x0015, B:10:0x002d] A[DONT_GENERATE, DONT_INLINE]] */
     public static byte[] encode(byte[] bArr, int i, int i2) {

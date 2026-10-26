@@ -3,7 +3,7 @@ package io.opencensus.trace;
 import io.opencensus.common.Function;
 import io.opencensus.internal.Utils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class AttributeValue {
     @Deprecated
     public abstract <T> T match(Function<? super String, T> function, Function<? super Boolean, T> function2, Function<? super Long, T> function3, Function<Object, T> function4);

@@ -19,7 +19,7 @@ import androidx.activity.result.ActivityResultCaller;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class PreferenceDialogFragmentCompat extends DialogFragment implements DialogInterface.OnClickListener {
     protected static final String ARG_KEY = "key";
     private static final String SAVE_STATE_ICON = "PreferenceDialogFragment.icon";

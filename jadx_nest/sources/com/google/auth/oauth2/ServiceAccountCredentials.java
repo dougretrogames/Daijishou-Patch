@@ -41,7 +41,7 @@ import java.util.concurrent.Executor;
 import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ServiceAccountCredentials extends GoogleCredentials implements ServiceAccountSigner, IdTokenProvider, JwtProvider {
     private static final int DEFAULT_LIFETIME_IN_SECONDS = 3600;
     static final int DEFAULT_NUMBER_OF_RETRIES = 3;

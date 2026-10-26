@@ -5,8 +5,8 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import com.google.android.gms.common.api.Status;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public abstract class zzn extends zzb implements zzo {
     public zzn() {
         super("com.google.android.gms.auth.account.data.IGetTokenWithDetailsCallback");

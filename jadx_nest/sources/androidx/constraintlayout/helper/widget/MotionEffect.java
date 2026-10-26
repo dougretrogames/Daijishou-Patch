@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import androidx.constraintlayout.motion.widget.MotionHelper;
 import androidx.constraintlayout.widget.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionEffect extends MotionHelper {
     public static final int AUTO = -1;
     public static final int EAST = 2;
@@ -108,20 +108,20 @@ public class MotionEffect extends MotionHelper {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:48:0x016e  */
-    /* JADX WARN: Code duplicated, block: B:88:0x01d1  */
-    /* JADX WARN: Code duplicated, block: B:90:0x01e1  */
-    /* JADX WARN: Code duplicated, block: B:93:0x01eb  */
-    /* JADX WARN: Code duplicated, block: B:95:0x01f4  */
-    /* JADX WARN: Code restructure failed: missing block: B:56:0x0192, code lost:
+    /* WARN: Code duplicated, block: B:48:0x016e  */
+    /* WARN: Code duplicated, block: B:88:0x01d1  */
+    /* WARN: Code duplicated, block: B:90:0x01e1  */
+    /* WARN: Code duplicated, block: B:93:0x01eb  */
+    /* WARN: Code duplicated, block: B:95:0x01f4  */
+    /* WARN: Code restructure failed: missing block: B:56:0x0192, code lost:
     
         if (r14 == 0.0f) goto L57;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:66:0x01a7, code lost:
+    /* WARN: Code restructure failed: missing block: B:66:0x01a7, code lost:
     
         if (r14 == 0.0f) goto L57;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:75:0x01b8, code lost:
+    /* WARN: Code restructure failed: missing block: B:75:0x01b8, code lost:
     
         if (r15 == 0.0f) goto L57;
      */

@@ -11,19 +11,19 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: NavHostFragment.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: NavHostFragment.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Landroidx/navigation/NavHostController;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 final class NavHostFragment$navHostController$2 extends Lambda implements Function0<NavHostController> {
     final /* synthetic */ NavHostFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     NavHostFragment$navHostController$2(NavHostFragment navHostFragment) {
         super(0);
         this.this$0 = navHostFragment;
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // kotlin.jvm.functions.Function0
     public final NavHostController invoke() {
         Context context = this.this$0.getContext();
@@ -61,7 +61,7 @@ final class NavHostFragment$navHostController$2 extends Lambda implements Functi
         return navHostController;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Bundle invoke$lambda$5$lambda$2(NavHostController this_apply) {
         Intrinsics.checkNotNullParameter(this_apply, "$this_apply");
         Bundle bundleSaveState = this_apply.saveState();
@@ -73,7 +73,7 @@ final class NavHostFragment$navHostController$2 extends Lambda implements Functi
         return EMPTY;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Bundle invoke$lambda$5$lambda$4(NavHostFragment this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (this$0.graphId != 0) {

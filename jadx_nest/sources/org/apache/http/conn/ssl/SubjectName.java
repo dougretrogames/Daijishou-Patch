@@ -2,7 +2,7 @@ package org.apache.http.conn.ssl;
 
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class SubjectName {
     static final int DNS = 2;
     static final int IP = 7;

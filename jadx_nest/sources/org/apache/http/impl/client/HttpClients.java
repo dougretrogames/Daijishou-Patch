@@ -3,7 +3,7 @@ package org.apache.http.impl.client;
 import org.apache.http.conn.HttpClientConnectionManager;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpClients {
     private HttpClients() {
     }

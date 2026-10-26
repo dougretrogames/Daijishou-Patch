@@ -2,8 +2,8 @@ package androidx.appcompat.app;
 
 import android.window.OnBackInvokedCallback;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class AppCompatDelegateImpl$Api33Impl$$ExternalSyntheticLambda0 implements OnBackInvokedCallback {
     public final /* synthetic */ AppCompatDelegateImpl f$0;
 

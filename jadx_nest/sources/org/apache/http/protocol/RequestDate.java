@@ -7,7 +7,7 @@ import org.apache.http.HttpRequest;
 import org.apache.http.HttpRequestInterceptor;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RequestDate implements HttpRequestInterceptor {
     private static final HttpDateGenerator DATE_GENERATOR = new HttpDateGenerator();
 

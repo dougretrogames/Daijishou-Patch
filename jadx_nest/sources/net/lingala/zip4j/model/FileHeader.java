@@ -3,7 +3,7 @@ package net.lingala.zip4j.model;
 import java.util.Objects;
 import net.lingala.zip4j.headers.HeaderSignature;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileHeader extends AbstractFileHeader {
     private int diskNumberStart;
     private byte[] externalFileAttributes;

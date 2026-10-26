@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ViewTransitionController {
     ArrayList<ViewTransition.Animate> mAnimations;
     private final MotionLayout mMotionLayout;
@@ -198,7 +198,7 @@ public class ViewTransitionController {
         ConstraintLayout.getSharedValues().addListener(viewTransition.getSharedValueID(), new AnonymousClass1(viewTransition, viewTransition.getSharedValueID(), z, viewTransition.getSharedValue()));
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.motion.widget.ViewTransitionController$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.motion.widget.ViewTransitionController$1, reason: invalid class name */
     class AnonymousClass1 implements SharedValues.SharedValuesListener {
         final /* synthetic */ boolean val$isSet;
         final /* synthetic */ int val$listen_for_id;

@@ -4,14 +4,14 @@ import io.opencensus.internal.Utils;
 import java.util.Random;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class SpanId implements Comparable<SpanId> {
     private static final int BASE16_SIZE = 16;
     public static final SpanId INVALID = new SpanId(0);
     private static final long INVALID_ID = 0;
     public static final int SIZE = 8;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     private final long f102id;
 
     private SpanId(long j) {

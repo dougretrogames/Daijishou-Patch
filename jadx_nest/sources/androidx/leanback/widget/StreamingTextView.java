@@ -22,7 +22,7 @@ import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class StreamingTextView extends EditText {
     private static final String ACCESSIBILITY_CLASS_NAME = "androidx.leanback.widget.StreamingTextView";
     static final boolean ANIMATE_DOTS_FOR_PENDING = true;
@@ -43,7 +43,7 @@ class StreamingTextView extends EditText {
     public void updateRecognizedText(String str, List<Float> list) {
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.StreamingTextView$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.StreamingTextView$1, reason: invalid class name */
     class AnonymousClass1 extends Property<StreamingTextView, Integer> {
         AnonymousClass1(Class cls, String str) {
             super(cls, str);

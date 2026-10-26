@@ -5,7 +5,7 @@ import java.util.Objects;
 import java.util.Spliterator;
 import java.util.function.Consumer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class UncheckedIOSpliterator<T> implements Spliterator<T> {
     private final IOSpliterator<T> delegate;
 

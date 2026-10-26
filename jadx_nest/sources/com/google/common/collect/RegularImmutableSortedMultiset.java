@@ -5,7 +5,7 @@ import com.google.common.primitives.Ints;
 import java.util.Comparator;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class RegularImmutableSortedMultiset<E> extends ImmutableSortedMultiset<E> {
     private final transient long[] cumulativeCounts;

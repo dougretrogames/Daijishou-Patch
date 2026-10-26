@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DetailsOverviewLogoPresenter extends Presenter {
     @Override // androidx.leanback.widget.Presenter
     public void onUnbindViewHolder(Presenter.ViewHolder viewHolder) {

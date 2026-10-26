@@ -9,7 +9,7 @@ import java.util.Set;
 import javax.annotation.CheckForNull;
 import okhttp3.HttpUrl;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class EmptyContiguousSet<C extends Comparable> extends ContiguousSet<C> {
     @Override // com.google.common.collect.ImmutableCollection, java.util.AbstractCollection, java.util.Collection, java.util.Set
@@ -22,7 +22,7 @@ final class EmptyContiguousSet<C extends Comparable> extends ContiguousSet<C> {
         return 0;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ContiguousSet, com.google.common.collect.ImmutableSortedSet
     public ContiguousSet<C> headSetImpl(C toElement, boolean inclusive) {
         return this;
@@ -58,13 +58,13 @@ final class EmptyContiguousSet<C extends Comparable> extends ContiguousSet<C> {
         return 0;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ContiguousSet, com.google.common.collect.ImmutableSortedSet
     public ContiguousSet<C> subSetImpl(C fromElement, boolean fromInclusive, C toElement, boolean toInclusive) {
         return this;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ContiguousSet, com.google.common.collect.ImmutableSortedSet
     public ContiguousSet<C> tailSetImpl(C fromElement, boolean fromInclusive) {
         return this;

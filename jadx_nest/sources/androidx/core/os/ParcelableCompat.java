@@ -3,7 +3,7 @@ package androidx.core.os;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public final class ParcelableCompat {
     @Deprecated

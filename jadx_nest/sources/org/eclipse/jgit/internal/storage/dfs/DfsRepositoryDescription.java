@@ -2,7 +2,7 @@ package org.eclipse.jgit.internal.storage.dfs;
 
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsRepositoryDescription {
     private final String repositoryName;
 

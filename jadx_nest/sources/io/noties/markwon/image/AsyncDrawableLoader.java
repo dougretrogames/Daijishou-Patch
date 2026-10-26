@@ -2,7 +2,7 @@ package io.noties.markwon.image;
 
 import android.graphics.drawable.Drawable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class AsyncDrawableLoader {
     public abstract void cancel(AsyncDrawable asyncDrawable);
 

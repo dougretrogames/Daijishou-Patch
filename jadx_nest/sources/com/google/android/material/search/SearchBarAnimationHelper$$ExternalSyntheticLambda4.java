@@ -4,8 +4,8 @@ import android.animation.ValueAnimator;
 import android.view.View;
 import com.google.android.material.shape.MaterialShapeDrawable;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SearchBarAnimationHelper$$ExternalSyntheticLambda4 implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ MaterialShapeDrawable f$0;
     public final /* synthetic */ View f$1;

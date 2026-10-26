@@ -2,8 +2,8 @@ package androidx.emoji2.text;
 
 import java.util.concurrent.ThreadPoolExecutor;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class EmojiCompatInitializer$BackgroundDefaultLoader$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ EmojiCompatInitializer.BackgroundDefaultLoader f$0;
     public final /* synthetic */ EmojiCompat.MetadataRepoLoaderCallback f$1;

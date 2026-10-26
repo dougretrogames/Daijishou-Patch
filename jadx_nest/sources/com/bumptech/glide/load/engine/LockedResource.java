@@ -5,7 +5,7 @@ import com.bumptech.glide.util.Preconditions;
 import com.bumptech.glide.util.pool.FactoryPools;
 import com.bumptech.glide.util.pool.StateVerifier;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class LockedResource<Z> implements Resource<Z>, FactoryPools.Poolable {
     private static final Pools.Pool<LockedResource<?>> POOL = FactoryPools.threadSafe(20, new AnonymousClass1());
     private boolean isLocked;
@@ -13,12 +13,12 @@ final class LockedResource<Z> implements Resource<Z>, FactoryPools.Poolable {
     private final StateVerifier stateVerifier = StateVerifier.newInstance();
     private Resource<Z> toWrap;
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.LockedResource$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.LockedResource$1, reason: invalid class name */
     class AnonymousClass1 implements FactoryPools.Factory<LockedResource<?>> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.bumptech.glide.util.pool.FactoryPools.Factory
         public LockedResource<?> create() {
             return new LockedResource<>();

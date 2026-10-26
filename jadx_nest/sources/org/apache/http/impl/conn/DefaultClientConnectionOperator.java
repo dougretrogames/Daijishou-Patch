@@ -25,7 +25,7 @@ import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class DefaultClientConnectionOperator implements ClientConnectionOperator {
     protected final DnsResolver dnsResolver;
@@ -55,8 +55,8 @@ public class DefaultClientConnectionOperator implements ClientConnectionOperator
         return schemeRegistry == null ? this.schemeRegistry : schemeRegistry;
     }
 
-    /* JADX WARN: Code duplicated, block: B:29:0x00aa  */
-    /* JADX WARN: Code duplicated, block: B:40:0x00c4 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:29:0x00aa  */
+    /* WARN: Code duplicated, block: B:40:0x00c4 A[SYNTHETIC] */
     @Override // org.apache.http.conn.ClientConnectionOperator
     public void openConnection(OperatedClientConnection operatedClientConnection, HttpHost httpHost, InetAddress inetAddress, HttpContext httpContext, HttpParams httpParams) throws IOException {
         Args.notNull(operatedClientConnection, "Connection");

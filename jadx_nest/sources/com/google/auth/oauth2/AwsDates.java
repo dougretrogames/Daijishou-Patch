@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.TimeZone;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class AwsDates {
     private static final String HTTP_DATE_FORMAT = "E, dd MMM yyyy HH:mm:ss z";
     private static final String X_AMZ_DATE_FORMAT = "yyyyMMdd'T'HHmmss'Z'";

@@ -4,7 +4,7 @@ import android.content.Context;
 import com.google.android.material.R;
 import com.google.android.material.navigation.NavigationBarItemView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BottomNavigationItemView extends NavigationBarItemView {
     public BottomNavigationItemView(Context context) {
         super(context);

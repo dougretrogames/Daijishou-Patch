@@ -9,7 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.apache.http.util.Args;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class PublicSuffixMatcher {
     private final Map<String, DomainType> exceptions;
     private final Map<String, DomainType> rules;
@@ -73,7 +73,7 @@ public final class PublicSuffixMatcher {
         return getDomainRoot(str, null);
     }
 
-    /* JADX WARN: Code duplicated, block: B:34:0x0078 A[RETURN] */
+    /* WARN: Code duplicated, block: B:34:0x0078 A[RETURN] */
     public String getDomainRoot(String str, DomainType domainType) {
         if (str == null || str.startsWith(BranchConfig.LOCAL_REPOSITORY)) {
             return null;

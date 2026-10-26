@@ -2,7 +2,7 @@ package co.infinum.retromock;
 
 import java.lang.reflect.Type;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class NoOpCallWrapper implements CallWrapper {
     private Type returnType;
 

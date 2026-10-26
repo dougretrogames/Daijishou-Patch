@@ -14,12 +14,12 @@ import org.eclipse.jgit.lib.ReflogEntry;
 import org.eclipse.jgit.transport.SshConstants;
 import org.retroachivements.api.core.BooleanJsonDeserializer;
 
-/* JADX INFO: compiled from: GetGameExtended.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: GetGameExtended.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u00002\u00020\u0001:\u0001\u0003B\u0005¢\u0006\u0002\u0010\u0002¨\u0006\u0004"}, d2 = {"Lorg/retroachivements/api/data/pojo/game/GetGameExtended;", "", "()V", "Response", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class GetGameExtended {
 
-    /* JADX INFO: compiled from: GetGameExtended.kt */
+    /* INFO: compiled from: GetGameExtended.kt */
     @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0002\b\r\n\u0002\u0010\u000b\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\bG\n\u0002\u0010\b\n\u0002\b\u0004\b\u0086\b\u0018\u00002\u00020\u0001:\u0002pqB«\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\u0006\u0010\u000b\u001a\u00020\u0005\u0012\u0006\u0010\f\u001a\u00020\u0005\u0012\u0006\u0010\r\u001a\u00020\u0005\u0012\u0006\u0010\u000e\u001a\u00020\u0005\u0012\u0006\u0010\u000f\u001a\u00020\u0005\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0012\u001a\u00020\u0013\u0012\u0006\u0010\u0014\u001a\u00020\u0005\u0012\u0006\u0010\u0015\u001a\u00020\u0003\u0012\u0006\u0010\u0016\u001a\u00020\u0005\u0012\u0006\u0010\u0017\u001a\u00020\u0003\u0012\u0006\u0010\u0018\u001a\u00020\u0003\u0012\b\u0010\u0019\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u001a\u001a\u00020\u0005\u0012\u0006\u0010\u001b\u001a\u00020\u0005\u0012\b\u0010\u001c\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u001d\u001a\u00020\u0003\u0012\u0006\u0010\u001e\u001a\u00020\u0003\u0012\"\u0010\u001f\u001a\u001e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020!0 j\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020!`\"\u0012\u0016\u0010#\u001a\u0012\u0012\u0004\u0012\u00020%0$j\b\u0012\u0004\u0012\u00020%`&\u0012\u0006\u0010'\u001a\u00020\u0003\u0012\u0006\u0010(\u001a\u00020\u0003¢\u0006\u0002\u0010)J\t\u0010L\u001a\u00020\u0003HÆ\u0003J\t\u0010M\u001a\u00020\u0005HÆ\u0003J\t\u0010N\u001a\u00020\u0005HÆ\u0003J\t\u0010O\u001a\u00020\u0005HÆ\u0003J\u000b\u0010P\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010Q\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010R\u001a\u00020\u0013HÆ\u0003J\t\u0010S\u001a\u00020\u0005HÆ\u0003J\t\u0010T\u001a\u00020\u0003HÆ\u0003J\t\u0010U\u001a\u00020\u0005HÆ\u0003J\t\u0010V\u001a\u00020\u0003HÆ\u0003J\t\u0010W\u001a\u00020\u0005HÆ\u0003J\t\u0010X\u001a\u00020\u0003HÆ\u0003J\u000b\u0010Y\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010Z\u001a\u00020\u0005HÆ\u0003J\t\u0010[\u001a\u00020\u0005HÆ\u0003J\u000b\u0010\\\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010]\u001a\u00020\u0003HÆ\u0003J\t\u0010^\u001a\u00020\u0003HÆ\u0003J%\u0010_\u001a\u001e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020!0 j\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020!`\"HÆ\u0003J\u0019\u0010`\u001a\u0012\u0012\u0004\u0012\u00020%0$j\b\u0012\u0004\u0012\u00020%`&HÆ\u0003J\t\u0010a\u001a\u00020\u0003HÆ\u0003J\t\u0010b\u001a\u00020\u0005HÆ\u0003J\t\u0010c\u001a\u00020\u0003HÆ\u0003J\t\u0010d\u001a\u00020\u0003HÆ\u0003J\u000b\u0010e\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010f\u001a\u00020\u0005HÆ\u0003J\t\u0010g\u001a\u00020\u0005HÆ\u0003J\t\u0010h\u001a\u00020\u0005HÆ\u0003J\t\u0010i\u001a\u00020\u0005HÆ\u0003Jë\u0002\u0010j\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00032\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\t\u001a\u00020\u00052\b\b\u0002\u0010\n\u001a\u00020\u00052\b\b\u0002\u0010\u000b\u001a\u00020\u00052\b\b\u0002\u0010\f\u001a\u00020\u00052\b\b\u0002\u0010\r\u001a\u00020\u00052\b\b\u0002\u0010\u000e\u001a\u00020\u00052\b\b\u0002\u0010\u000f\u001a\u00020\u00052\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0012\u001a\u00020\u00132\b\b\u0002\u0010\u0014\u001a\u00020\u00052\b\b\u0002\u0010\u0015\u001a\u00020\u00032\b\b\u0002\u0010\u0016\u001a\u00020\u00052\b\b\u0002\u0010\u0017\u001a\u00020\u00032\b\b\u0002\u0010\u0018\u001a\u00020\u00032\n\b\u0002\u0010\u0019\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u001a\u001a\u00020\u00052\b\b\u0002\u0010\u001b\u001a\u00020\u00052\n\b\u0002\u0010\u001c\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u001d\u001a\u00020\u00032\b\b\u0002\u0010\u001e\u001a\u00020\u00032$\b\u0002\u0010\u001f\u001a\u001e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020!0 j\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020!`\"2\u0018\b\u0002\u0010#\u001a\u0012\u0012\u0004\u0012\u00020%0$j\b\u0012\u0004\u0012\u00020%`&2\b\b\u0002\u0010'\u001a\u00020\u00032\b\b\u0002\u0010(\u001a\u00020\u0003HÆ\u0001J\u0013\u0010k\u001a\u00020\u00132\b\u0010l\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010m\u001a\u00020nHÖ\u0001J\t\u0010o\u001a\u00020\u0005HÖ\u0001R\u0016\u0010\u0016\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b*\u0010+R2\u0010\u001f\u001a\u001e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020!0 j\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020!`\"8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b,\u0010-R\u0016\u0010\u0017\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b.\u0010/R&\u0010#\u001a\u0012\u0012\u0004\u0012\u00020%0$j\b\u0012\u0004\u0012\u00020%`&8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b0\u00101R\u0016\u0010\u0006\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b2\u0010+R\u0016\u0010\u001b\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b3\u0010+R\u0016\u0010\u000e\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b4\u0010+R\u0018\u0010\b\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b5\u0010+R\u0016\u0010\u0007\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b6\u0010/R\u0016\u0010\u000f\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b7\u0010+R\u0018\u0010\u0019\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b8\u0010+R\u0016\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b9\u0010/R\u0016\u0010\f\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b:\u0010+R\u0016\u0010\t\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b;\u0010+R\u0016\u0010\u000b\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b<\u0010+R\u0016\u0010\n\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b=\u0010+R\u0016\u0010\u0012\u001a\u00020\u00138\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010>R\u0016\u0010\u001e\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b?\u0010/R\u0016\u0010\u001d\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b@\u0010/R\u0016\u0010'\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\bA\u0010/R\u0016\u0010(\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\bB\u0010/R\u0018\u0010\u001c\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\bC\u0010+R\u0016\u0010\u0015\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\bD\u0010/R\u0016\u0010\u0018\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\bE\u0010/R\u0016\u0010\r\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\bF\u0010+R\u0018\u0010\u0010\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\bG\u0010+R\u0018\u0010\u0011\u001a\u0004\u0018\u00010\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\bH\u0010+R\u0016\u0010\u0014\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\bI\u0010+R\u0016\u0010\u0004\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\bJ\u0010+R\u0016\u0010\u001a\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\bK\u0010+¨\u0006r"}, d2 = {"Lorg/retroachivements/api/data/pojo/game/GetGameExtended$Response;", "", "id", "", "title", "", "consoleId", "forumTopicId", "flags", "imageIcon", "imageTitle", "imageInGame", "imageBoxArt", "publisher", "developer", "genre", "released", "releasedAtGranularity", "isFinal", "", "richPresencePatch", "playersTotal", "achievementSetVersionHash", "achievementsPublished", "pointsTotal", "guideUrl", "updated", "consoleName", "parentGameId", "numDistinctPlayers", "numAchievements", "achievements", "Ljava/util/HashMap;", "Lorg/retroachivements/api/data/pojo/game/GetGameExtended$Response$Achievement;", "Lkotlin/collections/HashMap;", "claims", "Ljava/util/ArrayList;", "Lorg/retroachivements/api/data/pojo/game/GetGameExtended$Response$Claim;", "Lkotlin/collections/ArrayList;", "numDistinctPlayersCasual", "numDistinctPlayersHardcore", "(JLjava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;JLjava/lang/String;JJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJLjava/util/HashMap;Ljava/util/ArrayList;JJ)V", "getAchievementSetVersionHash", "()Ljava/lang/String;", "getAchievements", "()Ljava/util/HashMap;", "getAchievementsPublished", "()J", "getClaims", "()Ljava/util/ArrayList;", "getConsoleId", "getConsoleName", "getDeveloper", "getFlags", "getForumTopicId", "getGenre", "getGuideUrl", "getId", "getImageBoxArt", "getImageIcon", "getImageInGame", "getImageTitle", "()Z", "getNumAchievements", "getNumDistinctPlayers", "getNumDistinctPlayersCasual", "getNumDistinctPlayersHardcore", "getParentGameId", "getPlayersTotal", "getPointsTotal", "getPublisher", "getReleased", "getReleasedAtGranularity", "getRichPresencePatch", "getTitle", "getUpdated", "component1", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component2", "component20", "component21", "component22", "component23", "component24", "component25", "component26", "component27", "component28", "component29", "component3", "component30", "component4", "component5", "component6", "component7", "component8", "component9", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "other", "hashCode", "", "toString", "Achievement", "Claim", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class Response {
 
@@ -114,7 +114,7 @@ public final class GetGameExtended {
         @SerializedName("Updated")
         private final String updated;
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public static /* synthetic */ Response copy$default(Response response, long j, String str, String str2, long j2, String str3, String str4, String str5, String str6, String str7, String str8, String str9, String str10, String str11, String str12, boolean z, String str13, long j3, String str14, long j4, long j5, String str15, String str16, String str17, String str18, long j6, long j7, HashMap map, ArrayList arrayList, long j8, long j9, int i, Object obj) {
             long j10;
             long j11;
@@ -162,97 +162,97 @@ public final class GetGameExtended {
             return response.copy(j14, str19, str20, j13, str21, str22, str23, str24, str25, str26, str27, str28, str31, str30, z3, str32, j15, str33, j16, j17, str36, str39, str37, str38, j18, j19, map2, arrayList2, j11, j10);
         }
 
-        /* JADX INFO: renamed from: component1, reason: from getter */
+        /* INFO: renamed from: component1, reason: from getter */
         public final long getId() {
             return this.id;
         }
 
-        /* JADX INFO: renamed from: component10, reason: from getter */
+        /* INFO: renamed from: component10, reason: from getter */
         public final String getPublisher() {
             return this.publisher;
         }
 
-        /* JADX INFO: renamed from: component11, reason: from getter */
+        /* INFO: renamed from: component11, reason: from getter */
         public final String getDeveloper() {
             return this.developer;
         }
 
-        /* JADX INFO: renamed from: component12, reason: from getter */
+        /* INFO: renamed from: component12, reason: from getter */
         public final String getGenre() {
             return this.genre;
         }
 
-        /* JADX INFO: renamed from: component13, reason: from getter */
+        /* INFO: renamed from: component13, reason: from getter */
         public final String getReleased() {
             return this.released;
         }
 
-        /* JADX INFO: renamed from: component14, reason: from getter */
+        /* INFO: renamed from: component14, reason: from getter */
         public final String getReleasedAtGranularity() {
             return this.releasedAtGranularity;
         }
 
-        /* JADX INFO: renamed from: component15, reason: from getter */
+        /* INFO: renamed from: component15, reason: from getter */
         public final boolean getIsFinal() {
             return this.isFinal;
         }
 
-        /* JADX INFO: renamed from: component16, reason: from getter */
+        /* INFO: renamed from: component16, reason: from getter */
         public final String getRichPresencePatch() {
             return this.richPresencePatch;
         }
 
-        /* JADX INFO: renamed from: component17, reason: from getter */
+        /* INFO: renamed from: component17, reason: from getter */
         public final long getPlayersTotal() {
             return this.playersTotal;
         }
 
-        /* JADX INFO: renamed from: component18, reason: from getter */
+        /* INFO: renamed from: component18, reason: from getter */
         public final String getAchievementSetVersionHash() {
             return this.achievementSetVersionHash;
         }
 
-        /* JADX INFO: renamed from: component19, reason: from getter */
+        /* INFO: renamed from: component19, reason: from getter */
         public final long getAchievementsPublished() {
             return this.achievementsPublished;
         }
 
-        /* JADX INFO: renamed from: component2, reason: from getter */
+        /* INFO: renamed from: component2, reason: from getter */
         public final String getTitle() {
             return this.title;
         }
 
-        /* JADX INFO: renamed from: component20, reason: from getter */
+        /* INFO: renamed from: component20, reason: from getter */
         public final long getPointsTotal() {
             return this.pointsTotal;
         }
 
-        /* JADX INFO: renamed from: component21, reason: from getter */
+        /* INFO: renamed from: component21, reason: from getter */
         public final String getGuideUrl() {
             return this.guideUrl;
         }
 
-        /* JADX INFO: renamed from: component22, reason: from getter */
+        /* INFO: renamed from: component22, reason: from getter */
         public final String getUpdated() {
             return this.updated;
         }
 
-        /* JADX INFO: renamed from: component23, reason: from getter */
+        /* INFO: renamed from: component23, reason: from getter */
         public final String getConsoleName() {
             return this.consoleName;
         }
 
-        /* JADX INFO: renamed from: component24, reason: from getter */
+        /* INFO: renamed from: component24, reason: from getter */
         public final String getParentGameId() {
             return this.parentGameId;
         }
 
-        /* JADX INFO: renamed from: component25, reason: from getter */
+        /* INFO: renamed from: component25, reason: from getter */
         public final long getNumDistinctPlayers() {
             return this.numDistinctPlayers;
         }
 
-        /* JADX INFO: renamed from: component26, reason: from getter */
+        /* INFO: renamed from: component26, reason: from getter */
         public final long getNumAchievements() {
             return this.numAchievements;
         }
@@ -265,47 +265,47 @@ public final class GetGameExtended {
             return this.claims;
         }
 
-        /* JADX INFO: renamed from: component29, reason: from getter */
+        /* INFO: renamed from: component29, reason: from getter */
         public final long getNumDistinctPlayersCasual() {
             return this.numDistinctPlayersCasual;
         }
 
-        /* JADX INFO: renamed from: component3, reason: from getter */
+        /* INFO: renamed from: component3, reason: from getter */
         public final String getConsoleId() {
             return this.consoleId;
         }
 
-        /* JADX INFO: renamed from: component30, reason: from getter */
+        /* INFO: renamed from: component30, reason: from getter */
         public final long getNumDistinctPlayersHardcore() {
             return this.numDistinctPlayersHardcore;
         }
 
-        /* JADX INFO: renamed from: component4, reason: from getter */
+        /* INFO: renamed from: component4, reason: from getter */
         public final long getForumTopicId() {
             return this.forumTopicId;
         }
 
-        /* JADX INFO: renamed from: component5, reason: from getter */
+        /* INFO: renamed from: component5, reason: from getter */
         public final String getFlags() {
             return this.flags;
         }
 
-        /* JADX INFO: renamed from: component6, reason: from getter */
+        /* INFO: renamed from: component6, reason: from getter */
         public final String getImageIcon() {
             return this.imageIcon;
         }
 
-        /* JADX INFO: renamed from: component7, reason: from getter */
+        /* INFO: renamed from: component7, reason: from getter */
         public final String getImageTitle() {
             return this.imageTitle;
         }
 
-        /* JADX INFO: renamed from: component8, reason: from getter */
+        /* INFO: renamed from: component8, reason: from getter */
         public final String getImageInGame() {
             return this.imageInGame;
         }
 
-        /* JADX INFO: renamed from: component9, reason: from getter */
+        /* INFO: renamed from: component9, reason: from getter */
         public final String getImageBoxArt() {
             return this.imageBoxArt;
         }
@@ -530,7 +530,7 @@ public final class GetGameExtended {
             return this.numDistinctPlayersHardcore;
         }
 
-        /* JADX INFO: compiled from: GetGameExtended.kt */
+        /* INFO: compiled from: GetGameExtended.kt */
         @Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b(\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001Bm\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\u0007\u0012\u0006\u0010\t\u001a\u00020\u0003\u0012\u0006\u0010\n\u001a\u00020\u0003\u0012\u0006\u0010\u000b\u001a\u00020\u0007\u0012\u0006\u0010\f\u001a\u00020\u0007\u0012\u0006\u0010\r\u001a\u00020\u0007\u0012\u0006\u0010\u000e\u001a\u00020\u0003\u0012\u0006\u0010\u000f\u001a\u00020\u0007\u0012\u0006\u0010\u0010\u001a\u00020\u0007¢\u0006\u0002\u0010\u0011J\t\u0010!\u001a\u00020\u0003HÆ\u0003J\t\u0010\"\u001a\u00020\u0007HÆ\u0003J\t\u0010#\u001a\u00020\u0003HÆ\u0003J\t\u0010$\u001a\u00020\u0007HÆ\u0003J\t\u0010%\u001a\u00020\u0007HÆ\u0003J\t\u0010&\u001a\u00020\u0003HÆ\u0003J\t\u0010'\u001a\u00020\u0003HÆ\u0003J\t\u0010(\u001a\u00020\u0007HÆ\u0003J\t\u0010)\u001a\u00020\u0007HÆ\u0003J\t\u0010*\u001a\u00020\u0003HÆ\u0003J\t\u0010+\u001a\u00020\u0003HÆ\u0003J\t\u0010,\u001a\u00020\u0007HÆ\u0003J\t\u0010-\u001a\u00020\u0007HÆ\u0003J\u008b\u0001\u0010.\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u00072\b\b\u0002\u0010\t\u001a\u00020\u00032\b\b\u0002\u0010\n\u001a\u00020\u00032\b\b\u0002\u0010\u000b\u001a\u00020\u00072\b\b\u0002\u0010\f\u001a\u00020\u00072\b\b\u0002\u0010\r\u001a\u00020\u00072\b\b\u0002\u0010\u000e\u001a\u00020\u00032\b\b\u0002\u0010\u000f\u001a\u00020\u00072\b\b\u0002\u0010\u0010\u001a\u00020\u0007HÆ\u0001J\u0013\u0010/\u001a\u0002002\b\u00101\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00102\u001a\u000203HÖ\u0001J\t\u00104\u001a\u00020\u0007HÖ\u0001R\u0016\u0010\u000b\u001a\u00020\u00078\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0016\u0010\r\u001a\u00020\u00078\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0013R\u0016\u0010\f\u001a\u00020\u00078\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0013R\u0016\u0010\b\u001a\u00020\u00078\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0013R\u0016\u0010\u000e\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0016\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0018R\u0016\u0010\u000f\u001a\u00020\u00078\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0013R\u0016\u0010\u0004\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0018R\u0016\u0010\u0005\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0018R\u0016\u0010\t\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0018R\u0016\u0010\u0006\u001a\u00020\u00078\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0013R\u0016\u0010\n\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u0018R\u0016\u0010\u0010\u001a\u00020\u00078\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u0013¨\u00065"}, d2 = {"Lorg/retroachivements/api/data/pojo/game/GetGameExtended$Response$Achievement;", "", "id", "", "numAwarded", "numAwardedHardcore", "title", "", "description", "points", "trueRatio", "author", "dateModified", "badgeName", "displayOrder", "memAddr", "type", "(JJJLjava/lang/String;Ljava/lang/String;JJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;)V", "getAuthor", "()Ljava/lang/String;", "getBadgeName", "getDateModified", "getDescription", "getDisplayOrder", "()J", "getId", "getMemAddr", "getNumAwarded", "getNumAwardedHardcore", "getPoints", "getTitle", "getTrueRatio", "getType", "component1", "component10", "component11", "component12", "component13", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "", "toString", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Achievement {
 
@@ -578,67 +578,67 @@ public final class GetGameExtended {
                 return achievement.copy(j7, (i & 2) != 0 ? achievement.numAwarded : j2, (i & 4) != 0 ? achievement.numAwardedHardcore : j3, (i & 8) != 0 ? achievement.title : str, (i & 16) != 0 ? achievement.description : str2, (i & 32) != 0 ? achievement.points : j4, (i & 64) != 0 ? achievement.trueRatio : j5, (i & 128) != 0 ? achievement.author : str3, (i & 256) != 0 ? achievement.dateModified : str4, (i & 512) != 0 ? achievement.badgeName : str5, (i & 1024) != 0 ? achievement.displayOrder : j6, (i & 2048) != 0 ? achievement.memAddr : str6, (i & 4096) != 0 ? achievement.type : str7);
             }
 
-            /* JADX INFO: renamed from: component1, reason: from getter */
+            /* INFO: renamed from: component1, reason: from getter */
             public final long getId() {
                 return this.id;
             }
 
-            /* JADX INFO: renamed from: component10, reason: from getter */
+            /* INFO: renamed from: component10, reason: from getter */
             public final String getBadgeName() {
                 return this.badgeName;
             }
 
-            /* JADX INFO: renamed from: component11, reason: from getter */
+            /* INFO: renamed from: component11, reason: from getter */
             public final long getDisplayOrder() {
                 return this.displayOrder;
             }
 
-            /* JADX INFO: renamed from: component12, reason: from getter */
+            /* INFO: renamed from: component12, reason: from getter */
             public final String getMemAddr() {
                 return this.memAddr;
             }
 
-            /* JADX INFO: renamed from: component13, reason: from getter */
+            /* INFO: renamed from: component13, reason: from getter */
             public final String getType() {
                 return this.type;
             }
 
-            /* JADX INFO: renamed from: component2, reason: from getter */
+            /* INFO: renamed from: component2, reason: from getter */
             public final long getNumAwarded() {
                 return this.numAwarded;
             }
 
-            /* JADX INFO: renamed from: component3, reason: from getter */
+            /* INFO: renamed from: component3, reason: from getter */
             public final long getNumAwardedHardcore() {
                 return this.numAwardedHardcore;
             }
 
-            /* JADX INFO: renamed from: component4, reason: from getter */
+            /* INFO: renamed from: component4, reason: from getter */
             public final String getTitle() {
                 return this.title;
             }
 
-            /* JADX INFO: renamed from: component5, reason: from getter */
+            /* INFO: renamed from: component5, reason: from getter */
             public final String getDescription() {
                 return this.description;
             }
 
-            /* JADX INFO: renamed from: component6, reason: from getter */
+            /* INFO: renamed from: component6, reason: from getter */
             public final long getPoints() {
                 return this.points;
             }
 
-            /* JADX INFO: renamed from: component7, reason: from getter */
+            /* INFO: renamed from: component7, reason: from getter */
             public final long getTrueRatio() {
                 return this.trueRatio;
             }
 
-            /* JADX INFO: renamed from: component8, reason: from getter */
+            /* INFO: renamed from: component8, reason: from getter */
             public final String getAuthor() {
                 return this.author;
             }
 
-            /* JADX INFO: renamed from: component9, reason: from getter */
+            /* INFO: renamed from: component9, reason: from getter */
             public final String getDateModified() {
                 return this.dateModified;
             }
@@ -752,7 +752,7 @@ public final class GetGameExtended {
             }
         }
 
-        /* JADX INFO: compiled from: GetGameExtended.kt */
+        /* INFO: compiled from: GetGameExtended.kt */
         @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0010\b\n\u0002\b*\n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0086\b\u0018\u00002\u00020\u0001B}\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\u0006\u0010\n\u001a\u00020\u0003\u0012\u0006\u0010\u000b\u001a\u00020\u0003\u0012\u0006\u0010\f\u001a\u00020\r\u0012\u0006\u0010\u000e\u001a\u00020\u0003\u0012\u0006\u0010\u000f\u001a\u00020\u0003\u0012\u0006\u0010\u0010\u001a\u00020\u0005\u0012\u0006\u0010\u0011\u001a\u00020\u0005\u0012\u0006\u0010\u0012\u001a\u00020\u0005\u0012\u0006\u0010\u0013\u001a\u00020\u0003¢\u0006\u0002\u0010\u0014J\t\u0010'\u001a\u00020\u0003HÆ\u0003J\t\u0010(\u001a\u00020\u0003HÆ\u0003J\t\u0010)\u001a\u00020\u0003HÆ\u0003J\t\u0010*\u001a\u00020\u0005HÆ\u0003J\t\u0010+\u001a\u00020\u0005HÆ\u0003J\t\u0010,\u001a\u00020\u0005HÆ\u0003J\t\u0010-\u001a\u00020\u0003HÆ\u0003J\t\u0010.\u001a\u00020\u0005HÆ\u0003J\t\u0010/\u001a\u00020\u0005HÆ\u0003J\t\u00100\u001a\u00020\u0005HÆ\u0003J\t\u00101\u001a\u00020\u0005HÆ\u0003J\t\u00102\u001a\u00020\u0005HÆ\u0003J\t\u00103\u001a\u00020\u0003HÆ\u0003J\t\u00104\u001a\u00020\u0003HÆ\u0003J\t\u00105\u001a\u00020\rHÆ\u0003J\u009f\u0001\u00106\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\u00052\b\b\u0002\u0010\t\u001a\u00020\u00052\b\b\u0002\u0010\n\u001a\u00020\u00032\b\b\u0002\u0010\u000b\u001a\u00020\u00032\b\b\u0002\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u00032\b\b\u0002\u0010\u000f\u001a\u00020\u00032\b\b\u0002\u0010\u0010\u001a\u00020\u00052\b\b\u0002\u0010\u0011\u001a\u00020\u00052\b\b\u0002\u0010\u0012\u001a\u00020\u00052\b\b\u0002\u0010\u0013\u001a\u00020\u0003HÆ\u0001J\u0013\u00107\u001a\u0002082\b\u00109\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010:\u001a\u00020\rHÖ\u0001J\t\u0010;\u001a\u00020\u0005HÖ\u0001R\u0016\u0010\n\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0016\u0010\t\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0016\u0010\u0010\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0018R\u0016\u0010\u0011\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0018R\u0016\u0010\u000e\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0016R\u0016\u0010\b\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0018R\u0016\u0010\u0006\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0018R\u0016\u0010\u0007\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0018R\u0016\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u0016R\u0016\u0010\u0013\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u0016R\u0016\u0010\u000b\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u0016R\u0016\u0010\u000f\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u0016R\u0016\u0010\f\u001a\u00020\r8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b#\u0010$R\u0016\u0010\u0012\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b%\u0010\u0018R\u0016\u0010\u0004\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b&\u0010\u0018¨\u0006<"}, d2 = {"Lorg/retroachivements/api/data/pojo/game/GetGameExtended$Response$Claim;", "", "id", "", ConfigConstants.CONFIG_USER_SECTION, "", "gameId", "gameTitle", "gameIcon", "consoleName", "claimType", "setType", NotificationCompat.CATEGORY_STATUS, "", "extension", "special", ReflogEntry.PREFIX_CREATED, "doneTime", "updated", "minutesLeft", "(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JJIJJLjava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V", "getClaimType", "()J", "getConsoleName", "()Ljava/lang/String;", "getCreated", "getDoneTime", "getExtension", "getGameIcon", "getGameId", "getGameTitle", "getId", "getMinutesLeft", "getSetType", "getSpecial", "getStatus", "()I", "getUpdated", "getUser", "component1", "component10", "component11", "component12", "component13", "component14", "component15", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "toString", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Claim {
 
@@ -830,77 +830,77 @@ public final class GetGameExtended {
                 return claim.copy(j12, str10, str11, str12, str13, str14, j9, j10, i3, j11, j13, str17, str16, str9, j7);
             }
 
-            /* JADX INFO: renamed from: component1, reason: from getter */
+            /* INFO: renamed from: component1, reason: from getter */
             public final long getId() {
                 return this.id;
             }
 
-            /* JADX INFO: renamed from: component10, reason: from getter */
+            /* INFO: renamed from: component10, reason: from getter */
             public final long getExtension() {
                 return this.extension;
             }
 
-            /* JADX INFO: renamed from: component11, reason: from getter */
+            /* INFO: renamed from: component11, reason: from getter */
             public final long getSpecial() {
                 return this.special;
             }
 
-            /* JADX INFO: renamed from: component12, reason: from getter */
+            /* INFO: renamed from: component12, reason: from getter */
             public final String getCreated() {
                 return this.created;
             }
 
-            /* JADX INFO: renamed from: component13, reason: from getter */
+            /* INFO: renamed from: component13, reason: from getter */
             public final String getDoneTime() {
                 return this.doneTime;
             }
 
-            /* JADX INFO: renamed from: component14, reason: from getter */
+            /* INFO: renamed from: component14, reason: from getter */
             public final String getUpdated() {
                 return this.updated;
             }
 
-            /* JADX INFO: renamed from: component15, reason: from getter */
+            /* INFO: renamed from: component15, reason: from getter */
             public final long getMinutesLeft() {
                 return this.minutesLeft;
             }
 
-            /* JADX INFO: renamed from: component2, reason: from getter */
+            /* INFO: renamed from: component2, reason: from getter */
             public final String getUser() {
                 return this.user;
             }
 
-            /* JADX INFO: renamed from: component3, reason: from getter */
+            /* INFO: renamed from: component3, reason: from getter */
             public final String getGameId() {
                 return this.gameId;
             }
 
-            /* JADX INFO: renamed from: component4, reason: from getter */
+            /* INFO: renamed from: component4, reason: from getter */
             public final String getGameTitle() {
                 return this.gameTitle;
             }
 
-            /* JADX INFO: renamed from: component5, reason: from getter */
+            /* INFO: renamed from: component5, reason: from getter */
             public final String getGameIcon() {
                 return this.gameIcon;
             }
 
-            /* JADX INFO: renamed from: component6, reason: from getter */
+            /* INFO: renamed from: component6, reason: from getter */
             public final String getConsoleName() {
                 return this.consoleName;
             }
 
-            /* JADX INFO: renamed from: component7, reason: from getter */
+            /* INFO: renamed from: component7, reason: from getter */
             public final long getClaimType() {
                 return this.claimType;
             }
 
-            /* JADX INFO: renamed from: component8, reason: from getter */
+            /* INFO: renamed from: component8, reason: from getter */
             public final long getSetType() {
                 return this.setType;
             }
 
-            /* JADX INFO: renamed from: component9, reason: from getter */
+            /* INFO: renamed from: component9, reason: from getter */
             public final int getStatus() {
                 return this.status;
             }

@@ -2,7 +2,7 @@ package org.apache.http.conn;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UnsupportedSchemeException extends IOException {
     private static final long serialVersionUID = 3597127619218687636L;
 

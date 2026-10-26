@@ -3,7 +3,7 @@ package com.googlecode.javaewah32.symmetric;
 import com.googlecode.javaewah32.BitmapStorage32;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ThresholdFuncBitmap32 extends UpdateableBitmapFunction32 {
     private static final int[] zeroes64 = new int[64];
     private final int min;

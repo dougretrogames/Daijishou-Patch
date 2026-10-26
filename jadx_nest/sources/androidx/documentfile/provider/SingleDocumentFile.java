@@ -4,7 +4,7 @@ import android.content.Context;
 import android.net.Uri;
 import android.provider.DocumentsContract;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class SingleDocumentFile extends DocumentFile {
     private Context mContext;
     private Uri mUri;

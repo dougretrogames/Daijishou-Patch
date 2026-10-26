@@ -2,7 +2,7 @@ package com.google.android.material.color;
 
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class HarmonizedColorsOptions {
     private final int colorAttributeToHarmonizeWith;
     private final HarmonizedColorAttributes colorAttributes;

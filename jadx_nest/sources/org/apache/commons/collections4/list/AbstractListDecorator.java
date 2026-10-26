@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.ListIterator;
 import org.apache.commons.collections4.collection.AbstractCollectionDecorator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractListDecorator<E> extends AbstractCollectionDecorator<E> implements List<E> {
     private static final long serialVersionUID = 4500739654952315623L;
 
@@ -26,7 +26,7 @@ public abstract class AbstractListDecorator<E> extends AbstractCollectionDecorat
         return decorated().addAll(i, collection);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public List<E> decorated() {
         return (List) super.decorated();

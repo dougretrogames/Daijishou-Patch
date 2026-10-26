@@ -2,7 +2,7 @@ package com.google.api.client.testing.util;
 
 import com.google.api.client.util.Sleeper;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockSleeper implements Sleeper {
     private int count;
     private long lastMillis;

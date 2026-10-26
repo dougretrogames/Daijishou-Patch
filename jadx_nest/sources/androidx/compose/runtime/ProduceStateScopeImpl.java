@@ -15,15 +15,15 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.functions.Function1;
 import kotlinx.coroutines.CancellableContinuationImpl;
 
-/* JADX INFO: compiled from: ProduceState.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: ProduceState.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u0001\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\b\u0002\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u0002H\u00010\u00022\b\u0012\u0004\u0012\u0002H\u00010\u0003B\u001b\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00028\u00000\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006¢\u0006\u0002\u0010\u0007J\u001c\u0010\u000f\u001a\u00020\u00102\f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00130\u0012H\u0096@¢\u0006\u0002\u0010\u0014J\u000e\u0010\u0015\u001a\u00028\u0000H\u0096\u0003¢\u0006\u0002\u0010\fJ\u0015\u0010\u0016\u001a\u000e\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00130\u0017H\u0096\u0003R\u0014\u0010\u0005\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0018\u0010\n\u001a\u00028\u0000X\u0096\u000f¢\u0006\f\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000e¨\u0006\u0018"}, d2 = {"Landroidx/compose/runtime/ProduceStateScopeImpl;", ExifInterface.GPS_DIRECTION_TRUE, "Landroidx/compose/runtime/ProduceStateScope;", "Landroidx/compose/runtime/MutableState;", "state", "coroutineContext", "Lkotlin/coroutines/CoroutineContext;", "(Landroidx/compose/runtime/MutableState;Lkotlin/coroutines/CoroutineContext;)V", "getCoroutineContext", "()Lkotlin/coroutines/CoroutineContext;", "value", "getValue", "()Ljava/lang/Object;", "setValue", "(Ljava/lang/Object;)V", "awaitDispose", "", "onDispose", "Lkotlin/Function0;", "", "(Lkotlin/jvm/functions/Function0;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "component1", "component2", "Lkotlin/Function1;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 final class ProduceStateScopeImpl<T> implements ProduceStateScope<T>, MutableState<T> {
     private final /* synthetic */ MutableState<T> $$delegate_0;
     private final CoroutineContext coroutineContext;
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.ProduceStateScopeImpl$awaitDispose$1, reason: invalid class name */
-    /* JADX INFO: compiled from: ProduceState.kt */
+    /* INFO: renamed from: androidx.compose.runtime.ProduceStateScopeImpl$awaitDispose$1, reason: invalid class name */
+    /* INFO: compiled from: ProduceState.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.ProduceStateScopeImpl", f = "ProduceState.kt", i = {0}, l = {224}, m = "awaitDispose", n = {"onDispose"}, s = {"L$0"})
     static final class AnonymousClass1 extends ContinuationImpl {
@@ -32,7 +32,7 @@ final class ProduceStateScopeImpl<T> implements ProduceStateScope<T>, MutableSta
         /* synthetic */ Object result;
         final /* synthetic */ ProduceStateScopeImpl<T> this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(ProduceStateScopeImpl<T> produceStateScopeImpl, Continuation<? super AnonymousClass1> continuation) {
             super(continuation);
             this.this$0 = produceStateScopeImpl;
@@ -76,7 +76,7 @@ final class ProduceStateScopeImpl<T> implements ProduceStateScope<T>, MutableSta
         return this.coroutineContext;
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     @Override // androidx.compose.runtime.ProduceStateScope
     public Object awaitDispose(Function0<Unit> function0, Continuation<?> continuation) throws Throwable {
         AnonymousClass1 anonymousClass1;

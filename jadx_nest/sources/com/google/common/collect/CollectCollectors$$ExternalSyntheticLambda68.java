@@ -3,8 +3,8 @@ package com.google.common.collect;
 import java.util.function.BinaryOperator;
 import java.util.function.Supplier;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class CollectCollectors$$ExternalSyntheticLambda68 implements Supplier {
     public final /* synthetic */ BinaryOperator f$0;
 

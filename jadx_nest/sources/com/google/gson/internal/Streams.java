@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Streams {
     private Streams() {
         throw new UnsupportedOperationException();

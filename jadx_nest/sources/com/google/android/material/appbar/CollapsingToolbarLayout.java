@@ -39,7 +39,7 @@ import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CollapsingToolbarLayout extends FrameLayout {
     private static final int DEFAULT_SCRIM_ANIMATION_DURATION = 600;
     private static final int DEF_STYLE_RES = R.style.Widget_Design_CollapsingToolbar;
@@ -92,7 +92,7 @@ public class CollapsingToolbarLayout extends FrameLayout {
         this(context, attributeSet, R.attr.collapsingToolbarLayoutStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public CollapsingToolbarLayout(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -167,7 +167,7 @@ public class CollapsingToolbarLayout extends FrameLayout {
         ViewCompat.setOnApplyWindowInsetsListener(this, new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.appbar.CollapsingToolbarLayout$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.appbar.CollapsingToolbarLayout$1, reason: invalid class name */
     class AnonymousClass1 implements OnApplyWindowInsetsListener {
         AnonymousClass1() {
         }
@@ -626,7 +626,7 @@ public class CollapsingToolbarLayout extends FrameLayout {
         this.scrimAnimator.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.appbar.CollapsingToolbarLayout$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.appbar.CollapsingToolbarLayout$2, reason: invalid class name */
     class AnonymousClass2 implements ValueAnimator.AnimatorUpdateListener {
         AnonymousClass2() {
         }
@@ -975,7 +975,7 @@ public class CollapsingToolbarLayout extends FrameLayout {
         return layoutParams instanceof LayoutParams;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.widget.FrameLayout, android.view.ViewGroup
     public LayoutParams generateDefaultLayoutParams() {
         return new LayoutParams(-1, -1);
@@ -986,7 +986,7 @@ public class CollapsingToolbarLayout extends FrameLayout {
         return new LayoutParams(getContext(), attributeSet);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.widget.FrameLayout, android.view.ViewGroup
     public FrameLayout.LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
         return new LayoutParams(layoutParams);

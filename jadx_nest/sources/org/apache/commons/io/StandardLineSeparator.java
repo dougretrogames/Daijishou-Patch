@@ -3,7 +3,7 @@ package org.apache.commons.io;
 import java.nio.charset.Charset;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum StandardLineSeparator {
     CR("\r"),
     CRLF("\r\n"),

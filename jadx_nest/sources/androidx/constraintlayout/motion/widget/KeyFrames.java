@@ -14,7 +14,7 @@ import java.util.Set;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class KeyFrames {
     private static final String CUSTOM_ATTRIBUTE = "CustomAttribute";
     private static final String CUSTOM_METHOD = "CustomMethod";
@@ -50,7 +50,7 @@ public class KeyFrames {
     public KeyFrames() {
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public KeyFrames(Context context, XmlPullParser xmlPullParser) {
         Key keyTimeCycle;
         try {

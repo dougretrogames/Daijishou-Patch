@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class MultiEdgesConnecting<E> extends AbstractSet<E> {
     private final Map<E, ?> outEdgeToNode;
@@ -19,7 +19,7 @@ abstract class MultiEdgesConnecting<E> extends AbstractSet<E> {
         this.targetNode = Preconditions.checkNotNull(targetNode);
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.MultiEdgesConnecting$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.MultiEdgesConnecting$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractIterator<E> {
         final /* synthetic */ Iterator val$entries;
 

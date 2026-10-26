@@ -5,7 +5,7 @@ import java.text.MessageFormat;
 import java.util.ArrayDeque;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class MergeBaseGenerator extends Generator {
     private static final int CONTINUE = 0;
     private static final int CONTINUE_ON_STACK = 2;

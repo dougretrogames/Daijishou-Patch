@@ -9,7 +9,7 @@ import java.io.OutputStream;
 import java.io.Serializable;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SerializableEntity extends AbstractHttpEntity {
     private Serializable objRef;
     private byte[] objSer;

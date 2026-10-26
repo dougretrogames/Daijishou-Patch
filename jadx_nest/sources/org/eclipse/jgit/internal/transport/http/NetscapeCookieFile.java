@@ -32,7 +32,7 @@ import org.eclipse.jgit.util.RawParseUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class NetscapeCookieFile {
     private static final String COLUMN_SEPARATOR = "\t";
     private static final String HTTP_ONLY_PREAMBLE = "#HttpOnly_";

@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ProxyOutputStream extends FilterOutputStream {
     protected void afterWrite(int i) throws IOException {
     }

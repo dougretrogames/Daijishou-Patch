@@ -8,7 +8,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.transport.PackedObjectInfo;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class PackObjectSizeIndexWriter {
     private static final int MAX_24BITS_UINT = 16777215;
     private static final PackObjectSizeIndexWriter NULL_WRITER = new AnonymousClass1();
@@ -16,7 +16,7 @@ public abstract class PackObjectSizeIndexWriter {
 
     public abstract void write(List<? extends PackedObjectInfo> list) throws IOException;
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.PackObjectSizeIndexWriter$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.PackObjectSizeIndexWriter$1, reason: invalid class name */
     class AnonymousClass1 extends PackObjectSizeIndexWriter {
         @Override // org.eclipse.jgit.internal.storage.file.PackObjectSizeIndexWriter
         public void write(List<? extends PackedObjectInfo> list) {
@@ -83,13 +83,13 @@ public abstract class PackObjectSizeIndexWriter {
             this.os.write(this.intBuffer, 3, 1);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void writeInt24(int i) throws IOException {
             NB.encodeInt24(this.intBuffer, 1, i);
             this.os.write(this.intBuffer, 1, 3);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void writeInt32(int i) throws IOException {
             NB.encodeInt32(this.intBuffer, 0, i);
             this.os.write(this.intBuffer);

@@ -7,7 +7,7 @@ import java.util.Random;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Sha2Crypt {
     private static final int ROUNDS_DEFAULT = 5000;
     private static final int ROUNDS_MAX = 999999999;

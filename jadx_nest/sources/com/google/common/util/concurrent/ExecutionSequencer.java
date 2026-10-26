@@ -8,7 +8,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicReference;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class ExecutionSequencer {
     private final AtomicReference<ListenableFuture<Void>> ref = new AtomicReference<>(Futures.immediateVoidFuture());
@@ -55,8 +55,8 @@ public final class ExecutionSequencer {
         return submitAsync(new AnonymousClass1(this, callable), executor);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ExecutionSequencer$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.util.concurrent.ExecutionSequencer$1, reason: invalid class name */
     class AnonymousClass1<T> implements AsyncCallable<T> {
         final /* synthetic */ Callable val$callable;
 
@@ -90,8 +90,8 @@ public final class ExecutionSequencer {
         return listenableFutureNonCancellationPropagating;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ExecutionSequencer$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.util.concurrent.ExecutionSequencer$2, reason: invalid class name */
     class AnonymousClass2<T> implements AsyncCallable<T> {
         final /* synthetic */ AsyncCallable val$callable;
         final /* synthetic */ TaskNonReentrantExecutor val$taskExecutor;
@@ -122,7 +122,7 @@ public final class ExecutionSequencer {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class TaskNonReentrantExecutor extends AtomicReference<RunningState> implements Executor, Runnable {
 
         @CheckForNull
@@ -209,12 +209,12 @@ public final class ExecutionSequencer {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public boolean trySetStarted() {
             return compareAndSet(RunningState.NOT_RUN, RunningState.STARTED);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public boolean trySetCancelled() {
             return compareAndSet(RunningState.NOT_RUN, RunningState.CANCELLED);
         }

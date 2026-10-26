@@ -5,7 +5,7 @@ import org.apache.http.cookie.CookieSpec;
 import org.apache.http.cookie.CookieSpecProvider;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RFC2109SpecProvider implements CookieSpecProvider {
     private volatile CookieSpec cookieSpec;
     private final boolean oneHeader;

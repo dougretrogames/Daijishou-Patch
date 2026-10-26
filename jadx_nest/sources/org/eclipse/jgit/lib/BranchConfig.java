@@ -4,14 +4,14 @@ import java.net.URISyntaxException;
 import org.eclipse.jgit.transport.RefSpec;
 import org.eclipse.jgit.transport.RemoteConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BranchConfig {
     public static final String LOCAL_REPOSITORY = ".";
     private final String branchName;
     private final Config config;
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     public static class BranchRebaseMode implements Config.ConfigEnum {
         private static final /* synthetic */ BranchRebaseMode[] ENUM$VALUES;
         public static final BranchRebaseMode INTERACTIVE;
@@ -48,7 +48,7 @@ public class BranchConfig {
             ENUM$VALUES = new BranchRebaseMode[]{branchRebaseMode, anonymousClass1, branchRebaseMode2, branchRebaseMode3};
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.lib.BranchConfig$BranchRebaseMode$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.lib.BranchConfig$BranchRebaseMode$1, reason: invalid class name */
         final enum AnonymousClass1 extends BranchRebaseMode {
             AnonymousClass1(String str, int i, String str2) {
                 super(str, i, str2, null);

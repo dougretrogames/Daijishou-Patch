@@ -8,8 +8,8 @@ import kotlin.Metadata;
 import kotlin.annotation.AnnotationRetention;
 import kotlin.annotation.AnnotationTarget;
 
-/* JADX INFO: compiled from: DateFormat.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: DateFormat.kt */
+/* INFO: loaded from: classes5.dex */
 @Target({ElementType.PARAMETER})
 @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u001b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0087\u0002\u0018\u00002\u00020\u0001B\n\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003R\u000f\u0010\u0002\u001a\u00020\u0003¢\u0006\u0006\u001a\u0004\b\u0002\u0010\u0004¨\u0006\u0005"}, d2 = {"Lorg/retroachivements/api/core/DateFormat;", "", "value", "", "()Ljava/lang/String;", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.VALUE_PARAMETER})

@@ -3,8 +3,8 @@ package org.apache.commons.codec.language.bm;
 import java.util.Set;
 import java.util.function.Consumer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class Lang$$ExternalSyntheticLambda0 implements Consumer {
     public final /* synthetic */ String f$0;
     public final /* synthetic */ Set f$1;

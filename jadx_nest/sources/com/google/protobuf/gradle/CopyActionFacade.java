@@ -10,7 +10,7 @@ import org.gradle.api.model.ObjectFactory;
 import org.gradle.api.tasks.WorkResult;
 import org.gradle.util.GradleVersion;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 interface CopyActionFacade {
     WorkResult copy(Action<? super CopySpec> action);
 

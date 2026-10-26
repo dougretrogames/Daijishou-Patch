@@ -33,7 +33,7 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.lib.SymbolicRef;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransportAmazonS3 extends HttpTransport implements WalkTransport {
     static final TransportProtocol PROTO_S3 = new AnonymousClass1();
     static final String S3_SCHEME = "amazon-s3";
@@ -45,7 +45,7 @@ public class TransportAmazonS3 extends HttpTransport implements WalkTransport {
     public void close() {
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.TransportAmazonS3$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.TransportAmazonS3$1, reason: invalid class name */
     class AnonymousClass1 extends TransportProtocol {
         AnonymousClass1() {
         }

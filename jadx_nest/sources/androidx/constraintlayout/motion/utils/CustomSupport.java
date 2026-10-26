@@ -9,7 +9,7 @@ import androidx.constraintlayout.widget.ConstraintAttribute;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CustomSupport {
     private static final boolean DEBUG = false;
     private static final String TAG = "CustomSupport";
@@ -65,7 +65,7 @@ public class CustomSupport {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.motion.utils.CustomSupport$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.motion.utils.CustomSupport$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$androidx$constraintlayout$widget$ConstraintAttribute$AttributeType;
 

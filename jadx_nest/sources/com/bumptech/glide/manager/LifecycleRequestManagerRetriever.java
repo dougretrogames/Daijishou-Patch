@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class LifecycleRequestManagerRetriever {
     private final RequestManagerRetriever.RequestManagerFactory factory;
     final Map<androidx.lifecycle.Lifecycle, RequestManager> lifecycleToRequestManager = new HashMap();
@@ -42,7 +42,7 @@ final class LifecycleRequestManagerRetriever {
         return requestManagerBuild;
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.manager.LifecycleRequestManagerRetriever$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.manager.LifecycleRequestManagerRetriever$1, reason: invalid class name */
     class AnonymousClass1 implements LifecycleListener {
         final /* synthetic */ androidx.lifecycle.Lifecycle val$lifecycle;
 

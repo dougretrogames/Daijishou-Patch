@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.leanback.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ErrorSupportFragment extends BrandedSupportFragment {
     private Drawable mBackgroundDrawable;
     private Button mButton;

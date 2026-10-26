@@ -29,8 +29,8 @@ import kotlinx.coroutines.ExceptionsKt;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.JobKt;
 
-/* JADX INFO: compiled from: Future.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: Future.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000D\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a\u001c\u0010\u0000\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00020\u0003\u001a\u0010\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00040\u0001*\u00020\u0005\u001a\u001c\u0010\u0006\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0003\"\u0004\b\u0000\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00020\u0007\u001a\u001e\u0010\b\u001a\u0002H\u0002\"\u0004\b\u0000\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00020\u0007H\u0086@¢\u0006\u0002\u0010\t\u001aX\u0010\n\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\u00020\u000b2\b\b\u0002\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u000f2'\u0010\u0010\u001a#\b\u0001\u0012\u0004\u0012\u00020\u000b\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00020\u0012\u0012\u0006\u0012\u0004\u0018\u00010\u00130\u0011¢\u0006\u0002\b\u0014¢\u0006\u0002\u0010\u0015\u001a\u0018\u0010\u0016\u001a\u00020\u0004*\u00020\u00052\n\u0010\n\u001a\u0006\u0012\u0002\b\u00030\u0001H\u0002¨\u0006\u0017"}, d2 = {"asCompletableFuture", "Ljava/util/concurrent/CompletableFuture;", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/Deferred;", "", "Lkotlinx/coroutines/Job;", "asDeferred", "Ljava/util/concurrent/CompletionStage;", "await", "(Ljava/util/concurrent/CompletionStage;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "future", "Lkotlinx/coroutines/CoroutineScope;", "context", "Lkotlin/coroutines/CoroutineContext;", "start", "Lkotlinx/coroutines/CoroutineStart;", "block", "Lkotlin/Function2;", "Lkotlin/coroutines/Continuation;", "", "Lkotlin/ExtensionFunctionType;", "(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/CoroutineContext;Lkotlinx/coroutines/CoroutineStart;Lkotlin/jvm/functions/Function2;)Ljava/util/concurrent/CompletableFuture;", "setupCancellation", "kotlinx-coroutines-core"}, k = 2, mv = {1, 9, 0}, xi = 48)
 public final class FutureKt {
     public static /* synthetic */ CompletableFuture future$default(CoroutineScope coroutineScope, CoroutineContext coroutineContext, CoroutineStart coroutineStart, Function2 function2, int i, Object obj) {
@@ -62,15 +62,15 @@ public final class FutureKt {
         return completableFuture;
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.future.FutureKt$asCompletableFuture$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Future.kt */
+    /* INFO: renamed from: kotlinx.coroutines.future.FutureKt$asCompletableFuture$1, reason: invalid class name */
+    /* INFO: compiled from: Future.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u0003\n\u0000\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u00022\b\u0010\u0003\u001a\u0004\u0018\u00010\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<Throwable, Unit> {
         final /* synthetic */ CompletableFuture<T> $future;
         final /* synthetic */ Deferred<T> $this_asCompletableFuture;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(CompletableFuture<T> completableFuture, Deferred<? extends T> deferred) {
             super(1);
             this.$future = completableFuture;
@@ -83,8 +83,8 @@ public final class FutureKt {
             return Unit.INSTANCE;
         }
 
-        /* JADX WARN: Type inference incomplete: some casts might be missing */
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* WARN: Type inference incomplete: some casts might be missing */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Throwable th) {
             try {
                 this.$future.complete((T) this.$this_asCompletableFuture.getCompleted());
@@ -101,13 +101,13 @@ public final class FutureKt {
         return completableFuture;
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.future.FutureKt$asCompletableFuture$2, reason: invalid class name */
-    /* JADX INFO: compiled from: Future.kt */
+    /* INFO: renamed from: kotlinx.coroutines.future.FutureKt$asCompletableFuture$2, reason: invalid class name */
+    /* INFO: compiled from: Future.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0003\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "cause", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda implements Function1<Throwable, Unit> {
         final /* synthetic */ CompletableFuture<Unit> $future;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(CompletableFuture<Unit> completableFuture) {
             super(1);
             this.$future = completableFuture;
@@ -119,7 +119,7 @@ public final class FutureKt {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Throwable th) {
             if (th == null) {
                 this.$future.complete(Unit.INSTANCE);
@@ -133,7 +133,7 @@ public final class FutureKt {
         completableFuture.handle((BiFunction<? super Object, Throwable, ? extends U>) new FutureKt$$ExternalSyntheticLambda1(job));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Unit setupCancellation$lambda$2(Job job, Object obj, Throwable th) {
         CancellationException CancellationException = null;
         if (th != null) {
@@ -169,14 +169,14 @@ public final class FutureKt {
         return completableDeferredCompletableDeferred$default2;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: kotlinx.coroutines.future.FutureKt$asDeferred$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Future.kt */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: kotlinx.coroutines.future.FutureKt$asDeferred$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Future.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0010\u0003\n\u0002\b\u0002\u0010\u0000\u001a\n \u0002*\u0004\u0018\u00010\u00010\u0001\"\u0004\b\u0000\u0010\u00032\u000e\u0010\u0004\u001a\n \u0002*\u0004\u0018\u0001H\u0003H\u00032\u000e\u0010\u0005\u001a\n \u0002*\u0004\u0018\u00010\u00060\u0006H\n¢\u0006\u0004\b\u0007\u0010\b"}, d2 = {"<anonymous>", "", "kotlin.jvm.PlatformType", ExifInterface.GPS_DIRECTION_TRUE, "value", "exception", "", "invoke", "(Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class C04032<T> extends Lambda implements Function2<T, Throwable, Object> {
         final /* synthetic */ CompletableDeferred<T> $result;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C04032(CompletableDeferred<T> completableDeferred) {
             super(2);
             this.$result = completableDeferred;

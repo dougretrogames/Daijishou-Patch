@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.logging.Logger;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class TypeRegistry {
     private static final Logger logger = Logger.getLogger(TypeRegistry.class.getName());
     private final Map<String, Descriptors.Descriptor> types;

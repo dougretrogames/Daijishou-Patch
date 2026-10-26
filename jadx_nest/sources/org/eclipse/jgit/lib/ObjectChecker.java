@@ -17,7 +17,7 @@ import org.eclipse.jgit.util.Paths;
 import org.eclipse.jgit.util.RawParseUtils;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ObjectChecker {
     private boolean allowInvalidPersonIdent;
     private boolean macosx;
@@ -96,7 +96,7 @@ public class ObjectChecker {
         WIN32_BAD_NAME,
         BAD_UTF8;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static ErrorType[] valuesCustom() {
             ErrorType[] errorTypeArrValuesCustom = values();
             int length = errorTypeArrValuesCustom.length;

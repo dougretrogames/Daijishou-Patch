@@ -2,7 +2,7 @@ package com.google.common.collect;
 
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class ObjectCountLinkedHashMap<K> extends ObjectCountHashMap<K> {
     private static final int ENDPOINT = -2;

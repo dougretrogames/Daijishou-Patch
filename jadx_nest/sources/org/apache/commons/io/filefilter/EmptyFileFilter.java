@@ -11,7 +11,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.stream.Stream;
 import org.apache.commons.io.IOUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EmptyFileFilter extends AbstractFileFilter implements Serializable {
     public static final IOFileFilter EMPTY;
     public static final IOFileFilter NOT_EMPTY;
@@ -45,7 +45,7 @@ public class EmptyFileFilter extends AbstractFileFilter implements Serializable 
         return get(new EmptyFileFilter$$ExternalSyntheticLambda0(this, path));
     }
 
-    /* JADX INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-EmptyFileFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-EmptyFileFilter, reason: not valid java name */
     /* synthetic */ FileVisitResult m5575lambda$accept$0$orgapachecommonsiofilefilterEmptyFileFilter(Path path) throws IOException {
         if (!Files.isDirectory(path, new LinkOption[0])) {
             return toFileVisitResult(Files.size(path) == 0);

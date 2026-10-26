@@ -1,6 +1,6 @@
 package androidx.tracing;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class TraceApi29Impl {
     private TraceApi29Impl() {
     }

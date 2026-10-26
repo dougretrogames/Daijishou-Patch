@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.SortedSet;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformedSortedSet<E> extends TransformedSet<E> implements SortedSet<E> {
     private static final long serialVersionUID = -1675486811351124386L;
 

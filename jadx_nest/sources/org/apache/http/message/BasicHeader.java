@@ -7,7 +7,7 @@ import org.apache.http.ParseException;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicHeader implements Header, Cloneable, Serializable {
     private static final HeaderElement[] EMPTY_HEADER_ELEMENTS = new HeaderElement[0];
     private static final long serialVersionUID = -5427236326487562174L;

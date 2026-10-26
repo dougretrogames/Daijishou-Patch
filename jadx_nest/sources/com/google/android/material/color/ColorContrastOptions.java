@@ -1,6 +1,6 @@
 package com.google.android.material.color;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ColorContrastOptions {
     private final int highContrastThemeOverlayResourceId;
     private final int mediumContrastThemeOverlayResourceId;

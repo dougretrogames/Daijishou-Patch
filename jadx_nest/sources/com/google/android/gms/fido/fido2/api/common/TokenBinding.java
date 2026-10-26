@@ -10,8 +10,8 @@ import java.util.Arrays;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class TokenBinding extends AbstractSafeParcelable {
     private final TokenBindingStatus zza;
     private final String zzb;
@@ -19,7 +19,7 @@ public class TokenBinding extends AbstractSafeParcelable {
     public static final TokenBinding SUPPORTED = new TokenBinding(TokenBindingStatus.SUPPORTED.toString(), null);
     public static final TokenBinding NOT_SUPPORTED = new TokenBinding(TokenBindingStatus.NOT_SUPPORTED.toString(), null);
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public enum TokenBindingStatus implements Parcelable {
         PRESENT("present"),
         SUPPORTED("supported"),
@@ -57,7 +57,7 @@ public class TokenBinding extends AbstractSafeParcelable {
         }
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class UnsupportedTokenBindingStatusException extends Exception {
         public UnsupportedTokenBindingStatusException(String str) {
             super(String.format("TokenBindingStatus %s not supported", str));

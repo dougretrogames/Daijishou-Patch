@@ -11,7 +11,7 @@ import org.apache.http.HttpServerConnection;
 import org.apache.http.config.SocketConfig;
 import org.apache.http.protocol.HttpService;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class RequestListener implements Runnable {
     private final HttpConnectionFactory<? extends HttpServerConnection> connectionFactory;
     private final ExceptionLogger exceptionLogger;

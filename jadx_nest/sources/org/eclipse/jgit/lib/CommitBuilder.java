@@ -9,7 +9,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.List;
 import org.eclipse.jgit.util.References;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CommitBuilder extends ObjectBuilder {
     private PersonIdent committer;
     private ObjectId[] parentIds = EMPTY_OBJECTID_LIST;

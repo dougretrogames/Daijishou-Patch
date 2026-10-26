@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UriPatternMatcher<T> {
     private final Map<String, T> map = new LinkedHashMap();
 

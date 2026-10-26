@@ -8,7 +8,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectLoader;
 import org.eclipse.jgit.lib.ObjectStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class LargePackedWholeObject extends ObjectLoader {
     private final FileObjectDatabase db;
     private final int headerLength;

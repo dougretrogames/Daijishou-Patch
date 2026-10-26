@@ -4,7 +4,7 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import com.google.android.material.internal.ViewUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialShapeUtils {
     private MaterialShapeUtils() {
     }

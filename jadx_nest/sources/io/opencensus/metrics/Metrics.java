@@ -6,7 +6,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Metrics {
     private static final Logger logger = Logger.getLogger(Metrics.class.getName());
     private static final MetricsComponent metricsComponent = loadMetricsComponent(MetricsComponent.class.getClassLoader());

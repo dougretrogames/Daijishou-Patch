@@ -11,7 +11,7 @@ import java.util.zip.Deflater;
 import java.util.zip.DeflaterOutputStream;
 import java.util.zip.Inflater;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class Encoding {
     static final int SIZEOF_BYTE = 8;
     static final int UINT_16_SIZE = 2;

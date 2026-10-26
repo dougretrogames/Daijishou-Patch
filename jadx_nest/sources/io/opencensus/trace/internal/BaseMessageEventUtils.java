@@ -6,7 +6,7 @@ import io.opencensus.trace.BaseMessageEvent;
 import io.opencensus.trace.MessageEvent;
 import io.opencensus.trace.NetworkEvent;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class BaseMessageEventUtils {
     public static MessageEvent asMessageEvent(BaseMessageEvent baseMessageEvent) {
         MessageEvent.Type type;

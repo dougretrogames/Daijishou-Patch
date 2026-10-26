@@ -3,7 +3,7 @@ package org.apache.commons.codec.binary;
 import java.io.OutputStream;
 import org.apache.commons.codec.CodecPolicy;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Base32OutputStream extends BaseNCodecOutputStream {
     public Base32OutputStream(OutputStream outputStream) {
         this(outputStream, true);

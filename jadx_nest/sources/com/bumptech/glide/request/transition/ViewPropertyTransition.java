@@ -2,7 +2,7 @@ package com.bumptech.glide.request.transition;
 
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ViewPropertyTransition<R> implements Transition<R> {
     private final Animator animator;
 

@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.parser;
 
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CLToken extends CLElement {
     int mIndex;
     char[] mTokenFalse;

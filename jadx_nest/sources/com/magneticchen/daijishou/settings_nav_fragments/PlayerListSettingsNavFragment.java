@@ -28,12 +28,12 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Reflection;
 
-/* JADX INFO: compiled from: PlayerListSettingsNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlayerListSettingsNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\u0018\u0000 \"2\u00020\u0001:\u0002\"#B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u0016\u001a\u00020\u0013H\u0016J\u0012\u0010\u0017\u001a\u00020\u00182\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aH\u0016J&\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\b\u0010\u001f\u001a\u0004\u0018\u00010 2\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aH\u0016J\b\u0010!\u001a\u00020\u0018H\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0006\u001a\u00020\u0007X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\b\u0010\t\"\u0004\b\n\u0010\u000bR\u001e\u0010\f\u001a\u00060\rR\u00020\u0000X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082.¢\u0006\u0002\n\u0000¨\u0006$²\u0006\n\u0010%\u001a\u00020&X\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouPreferenceFragment;", "()V", "arrayItems", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayerEntity;", "recyclerView", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;", "getRecyclerView", "()Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;", "setRecyclerView", "(Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;)V", "recyclerViewAdapter", "Lcom/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment$DaijishouRecyclerViewAdapter;", "getRecyclerViewAdapter", "()Lcom/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment$DaijishouRecyclerViewAdapter;", "setRecyclerViewAdapter", "(Lcom/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment$DaijishouRecyclerViewAdapter;)V", "scrollingOnBackPressed", "", "titleString", "", "onBackPressed", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onStart", "Companion", "DaijishouRecyclerViewAdapter", "app_release", "settingsModel", "Lcom/magneticchen/daijishou/view_models/SettingsViewModel;"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class PlayerListSettingsNavFragment extends DaijishouPreferenceFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private final List<PlayerEntity> arrayItems = new ArrayList();
     public DaijishouRecyclerView recyclerView;
@@ -41,7 +41,7 @@ public final class PlayerListSettingsNavFragment extends DaijishouPreferenceFrag
     private boolean scrollingOnBackPressed;
     private String titleString;
 
-    /* JADX INFO: compiled from: PlayerListSettingsNavFragment.kt */
+    /* INFO: compiled from: PlayerListSettingsNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0003\u001a\u00020\u0004¨\u0006\u0005"}, d2 = {"Lcom/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -95,13 +95,13 @@ public final class PlayerListSettingsNavFragment extends DaijishouPreferenceFrag
         return false;
     }
 
-    /* JADX INFO: compiled from: PlayerListSettingsNavFragment.kt */
+    /* INFO: compiled from: PlayerListSettingsNavFragment.kt */
     @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0010B\u0013\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004¢\u0006\u0002\u0010\u0005J\u0010\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J \u0010\n\u001a\n0\u000bR\u00060\u0000R\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\tH\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0011"}, d2 = {"Lcom/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment$DaijishouRecyclerViewAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayerEntity;", "playerEntityList", "", "(Lcom/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment;Ljava/util/List;)V", "getItemId", "", "position", "", "onCreateViewHolder", "Lcom/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment$DaijishouRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment;", "parent", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class DaijishouRecyclerViewAdapter extends DaijishouRecyclerView.Adapter<PlayerEntity> {
         private final List<PlayerEntity> playerEntityList;
         final /* synthetic */ PlayerListSettingsNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public DaijishouRecyclerViewAdapter(PlayerListSettingsNavFragment playerListSettingsNavFragment, List<PlayerEntity> playerEntityList) {
             super(playerEntityList, false, false, 6, null);
             Intrinsics.checkNotNullParameter(playerEntityList, "playerEntityList");
@@ -122,14 +122,14 @@ public final class PlayerListSettingsNavFragment extends DaijishouPreferenceFrag
             return this.playerEntityList.get(position).getId();
         }
 
-        /* JADX INFO: compiled from: PlayerListSettingsNavFragment.kt */
+        /* INFO: compiled from: PlayerListSettingsNavFragment.kt */
         @Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u0003H\u0016R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000f"}, d2 = {"Lcom/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment$DaijishouRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayerEntity;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment$DaijishouRecyclerViewAdapter;Landroid/view/View;)V", "text1", "Landroid/widget/TextView;", "text2", "onBind", "", "position", "", "item", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<PlayerEntity>.ViewHolder {
             private final TextView text1;
             private final TextView text2;
             final /* synthetic */ DaijishouRecyclerViewAdapter this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(DaijishouRecyclerViewAdapter daijishouRecyclerViewAdapter, View itemView) {
                 super(daijishouRecyclerViewAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");
@@ -178,8 +178,8 @@ public final class PlayerListSettingsNavFragment extends DaijishouPreferenceFrag
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.PlayerListSettingsNavFragment$onCreateView$1, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayerListSettingsNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.PlayerListSettingsNavFragment$onCreateView$1, reason: invalid class name */
+    /* INFO: compiled from: PlayerListSettingsNavFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "playerEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayerEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function4<View, Integer, Long, PlayerEntity, Unit> {
         AnonymousClass1() {
@@ -199,8 +199,8 @@ public final class PlayerListSettingsNavFragment extends DaijishouPreferenceFrag
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.PlayerListSettingsNavFragment$onCreateView$2, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayerListSettingsNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.PlayerListSettingsNavFragment$onCreateView$2, reason: invalid class name */
+    /* INFO: compiled from: PlayerListSettingsNavFragment.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/settings_nav_fragments/PlayerListSettingsNavFragment$onCreateView$2", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass2 extends RecyclerView.OnScrollListener {
         AnonymousClass2() {
@@ -224,8 +224,8 @@ public final class PlayerListSettingsNavFragment extends DaijishouPreferenceFrag
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.PlayerListSettingsNavFragment$onCreateView$3, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayerListSettingsNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.PlayerListSettingsNavFragment$onCreateView$3, reason: invalid class name */
+    /* INFO: compiled from: PlayerListSettingsNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "playerEntityList", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayerEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass3 extends Lambda<Unit> implements Function1<List<? extends PlayerEntity>, Unit> {
         AnonymousClass3() {
@@ -238,7 +238,7 @@ public final class PlayerListSettingsNavFragment extends DaijishouPreferenceFrag
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<PlayerEntity> list) {
             PlayerListSettingsNavFragment.this.arrayItems.clear();
             List list2 = PlayerListSettingsNavFragment.this.arrayItems;

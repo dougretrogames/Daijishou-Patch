@@ -7,7 +7,7 @@ import android.util.AttributeSet;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.content.res.TypedArrayUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class DialogPreference extends Preference {
     private Drawable mDialogIcon;
     private int mDialogLayoutResId;

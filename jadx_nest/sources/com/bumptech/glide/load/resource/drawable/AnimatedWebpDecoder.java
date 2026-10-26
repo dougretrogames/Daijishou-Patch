@@ -18,7 +18,7 @@ import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public final class AnimatedWebpDecoder {
     private final ArrayPool arrayPool;

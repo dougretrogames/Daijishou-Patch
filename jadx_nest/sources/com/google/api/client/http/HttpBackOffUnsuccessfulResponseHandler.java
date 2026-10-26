@@ -6,7 +6,7 @@ import com.google.api.client.util.Preconditions;
 import com.google.api.client.util.Sleeper;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class HttpBackOffUnsuccessfulResponseHandler implements HttpUnsuccessfulResponseHandler {
     private final BackOff backOff;
     private BackOffRequired backOffRequired = BackOffRequired.ON_SERVER_ERROR;
@@ -56,7 +56,7 @@ public class HttpBackOffUnsuccessfulResponseHandler implements HttpUnsuccessfulR
 
         boolean isRequired(HttpResponse httpResponse);
 
-        /* JADX INFO: renamed from: com.google.api.client.http.HttpBackOffUnsuccessfulResponseHandler$BackOffRequired$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.api.client.http.HttpBackOffUnsuccessfulResponseHandler$BackOffRequired$1, reason: invalid class name */
         static class AnonymousClass1 implements BackOffRequired {
             @Override // com.google.api.client.http.HttpBackOffUnsuccessfulResponseHandler.BackOffRequired
             public boolean isRequired(HttpResponse httpResponse) {
@@ -67,7 +67,7 @@ public class HttpBackOffUnsuccessfulResponseHandler implements HttpUnsuccessfulR
             }
         }
 
-        /* JADX INFO: renamed from: com.google.api.client.http.HttpBackOffUnsuccessfulResponseHandler$BackOffRequired$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.api.client.http.HttpBackOffUnsuccessfulResponseHandler$BackOffRequired$2, reason: invalid class name */
         static class AnonymousClass2 implements BackOffRequired {
             AnonymousClass2() {
             }

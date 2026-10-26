@@ -2,8 +2,8 @@ package com.google.android.material.timepicker;
 
 import com.google.android.material.button.MaterialButtonToggleGroup;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class TimePickerView$$ExternalSyntheticLambda0 implements MaterialButtonToggleGroup.OnButtonCheckedListener {
     public final /* synthetic */ TimePickerView f$0;
 

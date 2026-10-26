@@ -3,7 +3,7 @@ package org.eclipse.jgit.lib;
 import java.io.IOException;
 import org.eclipse.jgit.errors.ConfigInvalidException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class StoredConfig extends Config {
     public abstract void load() throws ConfigInvalidException, IOException;
 

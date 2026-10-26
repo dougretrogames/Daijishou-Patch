@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Tracestate {
     private static final int KEY_MAX_SIZE = 256;
     private static final int MAX_KEY_VALUE_PAIRS = 32;
@@ -104,7 +104,7 @@ public abstract class Tracestate {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean validateKey(String str) {
         if (str.length() > 256 || str.isEmpty() || str.charAt(0) < 'a' || str.charAt(0) > 'z') {
             return false;
@@ -118,7 +118,7 @@ public abstract class Tracestate {
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean validateValue(String str) {
         if (str.length() > 256 || str.charAt(str.length() - 1) == ' ') {
             return false;
@@ -132,7 +132,7 @@ public abstract class Tracestate {
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Tracestate create(List<Entry> list) {
         Utils.checkState(list.size() <= 32, "Invalid size");
         return new AutoValue_Tracestate(Collections.unmodifiableList(list));

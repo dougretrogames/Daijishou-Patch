@@ -11,7 +11,7 @@ import android.view.animation.Interpolator;
 import androidx.collection.SimpleArrayMap;
 import androidx.core.view.accessibility.AccessibilityEventCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class WindowInsetsControllerCompat {
     public static final int BEHAVIOR_DEFAULT = 1;
 
@@ -296,7 +296,7 @@ public final class WindowInsetsControllerCompat {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class Impl30 extends Impl {
         final WindowInsetsControllerCompat mCompatController;
         final WindowInsetsController mInsetsController;
@@ -374,7 +374,7 @@ public final class WindowInsetsControllerCompat {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.core.view.WindowInsetsControllerCompat$Impl30$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.core.view.WindowInsetsControllerCompat$Impl30$1, reason: invalid class name */
         class AnonymousClass1 implements WindowInsetsAnimationControlListener {
             private WindowInsetsAnimationControllerCompat mCompatAnimController = null;
             final /* synthetic */ WindowInsetsAnimationControlListenerCompat val$listener;
@@ -454,7 +454,7 @@ public final class WindowInsetsControllerCompat {
             this.mInsetsController.addOnControllableInsetsChangedListener(windowInsetsControllerCompat$Impl30$$ExternalSyntheticLambda0);
         }
 
-        /* JADX INFO: renamed from: lambda$addOnControllableInsetsChangedListener$0$androidx-core-view-WindowInsetsControllerCompat$Impl30, reason: not valid java name */
+        /* INFO: renamed from: lambda$addOnControllableInsetsChangedListener$0$androidx-core-view-WindowInsetsControllerCompat$Impl30, reason: not valid java name */
         /* synthetic */ void m3172xe96d8c51(OnControllableInsetsChangedListener onControllableInsetsChangedListener, WindowInsetsController windowInsetsController, int i) {
             if (this.mInsetsController == windowInsetsController) {
                 onControllableInsetsChangedListener.onControllableInsetsChanged(this.mCompatController, i);

@@ -11,8 +11,8 @@ import kotlin.annotation.AnnotationTarget;
 import kotlin.annotation.Repeatable;
 import kotlin.jvm.internal.RepeatableContainer;
 
-/* JADX INFO: compiled from: Annotations.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: Annotations.kt */
+/* INFO: loaded from: classes4.dex */
 @Target({ElementType.TYPE, ElementType.METHOD, ElementType.CONSTRUCTOR})
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.CLASS, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY, AnnotationTarget.CONSTRUCTOR, AnnotationTarget.TYPEALIAS})
 @Retention(RetentionPolicy.SOURCE)
@@ -22,7 +22,7 @@ import kotlin.jvm.internal.RepeatableContainer;
 @java.lang.annotation.Repeatable(Container.class)
 public @interface RequireKotlin {
 
-    /* JADX INFO: compiled from: Annotations.kt */
+    /* INFO: compiled from: Annotations.kt */
     @Target({ElementType.TYPE, ElementType.METHOD, ElementType.CONSTRUCTOR})
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.CLASS, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY, AnnotationTarget.CONSTRUCTOR, AnnotationTarget.TYPEALIAS})

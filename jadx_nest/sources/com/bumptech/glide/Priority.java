@@ -1,6 +1,6 @@
 package com.bumptech.glide;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public enum Priority {
     IMMEDIATE,
     HIGH,

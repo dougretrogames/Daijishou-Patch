@@ -2,8 +2,8 @@ package com.magneticchen.daijishou.daijishou_recycler_view;
 
 import android.view.View;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class DaijishouRecyclerView$Adapter$ViewHolder$$ExternalSyntheticLambda0 implements View.OnClickListener {
     public final /* synthetic */ DaijishouRecyclerView.Adapter f$0;
     public final /* synthetic */ View f$1;

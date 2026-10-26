@@ -2,7 +2,7 @@ package com.google.common.io;
 
 import java.nio.Buffer;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class Java8Compatibility {
     static void clear(Buffer b) {

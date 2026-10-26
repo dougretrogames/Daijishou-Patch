@@ -16,13 +16,13 @@ import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Reflection;
 import kotlin.reflect.KClass;
 
-/* JADX INFO: compiled from: SafeWindowLayoutComponentProvider.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: SafeWindowLayoutComponentProvider.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\r\u001a\u00020\n2\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J \u0010\u0010\u001a\u0012\u0012\u0002\b\u0003 \u0012*\b\u0012\u0002\b\u0003\u0018\u00010\u00110\u00112\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J\u0010\u0010\u0013\u001a\u00020\n2\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J\u0010\u0010\u0014\u001a\u00020\n2\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J\u0010\u0010\u0015\u001a\u00020\n2\u0006\u0010\u000e\u001a\u00020\u000fH\u0003J\u0010\u0010\u0016\u001a\u00020\n2\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J\u0016\u0010\u0017\u001a\u00020\n2\f\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\n0\u0019H\u0002J \u0010\u001a\u001a\u0012\u0012\u0002\b\u0003 \u0012*\b\u0012\u0002\b\u0003\u0018\u00010\u00110\u00112\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J \u0010\u001b\u001a\u0012\u0012\u0002\b\u0003 \u0012*\b\u0012\u0002\b\u0003\u0018\u00010\u00110\u00112\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J \u0010\u001c\u001a\u0012\u0012\u0002\b\u0003 \u0012*\b\u0012\u0002\b\u0003\u0018\u00010\u00110\u00112\u0006\u0010\u000e\u001a\u00020\u000fH\u0002J\u0018\u0010\u001d\u001a\u00020\n*\u00020\u000b2\n\u0010\u001e\u001a\u0006\u0012\u0002\b\u00030\u0011H\u0002J\u0018\u0010\u001d\u001a\u00020\n*\u00020\u000b2\n\u0010\u001e\u001a\u0006\u0012\u0002\b\u00030\u001fH\u0002R\u001d\u0010\u0003\u001a\u0004\u0018\u00010\u00048FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0005\u0010\u0006R\u0018\u0010\t\u001a\u00020\n*\u00020\u000b8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\t\u0010\f¨\u0006 "}, d2 = {"Landroidx/window/layout/SafeWindowLayoutComponentProvider;", "", "()V", "windowLayoutComponent", "Landroidx/window/extensions/layout/WindowLayoutComponent;", "getWindowLayoutComponent", "()Landroidx/window/extensions/layout/WindowLayoutComponent;", "windowLayoutComponent$delegate", "Lkotlin/Lazy;", "isPublic", "", "Ljava/lang/reflect/Method;", "(Ljava/lang/reflect/Method;)Z", "canUseWindowLayoutComponent", "classLoader", "Ljava/lang/ClassLoader;", "foldingFeatureClass", "Ljava/lang/Class;", "kotlin.jvm.PlatformType", "isFoldingFeatureValid", "isWindowExtensionsValid", "isWindowLayoutComponentValid", "isWindowLayoutProviderValid", "validate", "block", "Lkotlin/Function0;", "windowExtensionsClass", "windowExtensionsProviderClass", "windowLayoutComponentClass", "doesReturn", "clazz", "Lkotlin/reflect/KClass;", "window_release"}, k = 1, mv = {1, 6, 0}, xi = 48)
 public final class SafeWindowLayoutComponentProvider {
     public static final SafeWindowLayoutComponentProvider INSTANCE = new SafeWindowLayoutComponentProvider();
 
-    /* JADX INFO: renamed from: windowLayoutComponent$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: windowLayoutComponent$delegate, reason: from kotlin metadata */
     private static final Lazy windowLayoutComponent = LazyKt.lazy(SafeWindowLayoutComponentProvider$windowLayoutComponent$2.INSTANCE);
 
     private SafeWindowLayoutComponentProvider() {
@@ -32,24 +32,24 @@ public final class SafeWindowLayoutComponentProvider {
         return (WindowLayoutComponent) windowLayoutComponent.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean canUseWindowLayoutComponent(ClassLoader classLoader) {
         return isWindowLayoutProviderValid(classLoader) && isWindowExtensionsValid(classLoader) && isWindowLayoutComponentValid(classLoader) && isFoldingFeatureValid(classLoader);
     }
 
-    /* JADX INFO: renamed from: androidx.window.layout.SafeWindowLayoutComponentProvider$isWindowLayoutProviderValid$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: SafeWindowLayoutComponentProvider.kt */
+    /* INFO: renamed from: androidx.window.layout.SafeWindowLayoutComponentProvider$isWindowLayoutProviderValid$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: SafeWindowLayoutComponentProvider.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "()Ljava/lang/Boolean;"}, k = 3, mv = {1, 6, 0}, xi = 48)
     static final class C01861 extends Lambda implements Function0<Boolean> {
         final /* synthetic */ ClassLoader $classLoader;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01861(ClassLoader classLoader) {
             super(0);
             this.$classLoader = classLoader;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final Boolean invoke() throws NoSuchMethodException {
             boolean z = false;
@@ -69,19 +69,19 @@ public final class SafeWindowLayoutComponentProvider {
         return validate(new C01861(classLoader));
     }
 
-    /* JADX INFO: renamed from: androidx.window.layout.SafeWindowLayoutComponentProvider$isWindowExtensionsValid$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: SafeWindowLayoutComponentProvider.kt */
+    /* INFO: renamed from: androidx.window.layout.SafeWindowLayoutComponentProvider$isWindowExtensionsValid$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: SafeWindowLayoutComponentProvider.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "()Ljava/lang/Boolean;"}, k = 3, mv = {1, 6, 0}, xi = 48)
     static final class C01841 extends Lambda implements Function0<Boolean> {
         final /* synthetic */ ClassLoader $classLoader;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01841(ClassLoader classLoader) {
             super(0);
             this.$classLoader = classLoader;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final Boolean invoke() throws NoSuchMethodException {
             boolean z = false;
@@ -104,19 +104,19 @@ public final class SafeWindowLayoutComponentProvider {
         return validate(new C01841(classLoader));
     }
 
-    /* JADX INFO: renamed from: androidx.window.layout.SafeWindowLayoutComponentProvider$isFoldingFeatureValid$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SafeWindowLayoutComponentProvider.kt */
+    /* INFO: renamed from: androidx.window.layout.SafeWindowLayoutComponentProvider$isFoldingFeatureValid$1, reason: invalid class name */
+    /* INFO: compiled from: SafeWindowLayoutComponentProvider.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "()Ljava/lang/Boolean;"}, k = 3, mv = {1, 6, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function0<Boolean> {
         final /* synthetic */ ClassLoader $classLoader;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(ClassLoader classLoader) {
             super(0);
             this.$classLoader = classLoader;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final Boolean invoke() throws NoSuchMethodException {
             Class clsFoldingFeatureClass = SafeWindowLayoutComponentProvider.INSTANCE.foldingFeatureClass(this.$classLoader);
@@ -145,19 +145,19 @@ public final class SafeWindowLayoutComponentProvider {
         return validate(new AnonymousClass1(classLoader));
     }
 
-    /* JADX INFO: renamed from: androidx.window.layout.SafeWindowLayoutComponentProvider$isWindowLayoutComponentValid$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: SafeWindowLayoutComponentProvider.kt */
+    /* INFO: renamed from: androidx.window.layout.SafeWindowLayoutComponentProvider$isWindowLayoutComponentValid$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: SafeWindowLayoutComponentProvider.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "()Ljava/lang/Boolean;"}, k = 3, mv = {1, 6, 0}, xi = 48)
     static final class C01851 extends Lambda implements Function0<Boolean> {
         final /* synthetic */ ClassLoader $classLoader;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01851(ClassLoader classLoader) {
             super(0);
             this.$classLoader = classLoader;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final Boolean invoke() throws NoSuchMethodException {
             Class clsWindowLayoutComponentClass = SafeWindowLayoutComponentProvider.INSTANCE.windowLayoutComponentClass(this.$classLoader);
@@ -189,37 +189,37 @@ public final class SafeWindowLayoutComponentProvider {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean isPublic(Method method) {
         return Modifier.isPublic(method.getModifiers());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean doesReturn(Method method, KClass<?> kClass) {
         return doesReturn(method, JvmClassMappingKt.getJavaClass((KClass) kClass));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean doesReturn(Method method, Class<?> cls) {
         return method.getReturnType().equals(cls);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final Class<?> windowExtensionsProviderClass(ClassLoader classLoader) {
         return classLoader.loadClass("androidx.window.extensions.WindowExtensionsProvider");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final Class<?> windowExtensionsClass(ClassLoader classLoader) {
         return classLoader.loadClass("androidx.window.extensions.WindowExtensions");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final Class<?> foldingFeatureClass(ClassLoader classLoader) {
         return classLoader.loadClass("androidx.window.extensions.layout.FoldingFeature");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final Class<?> windowLayoutComponentClass(ClassLoader classLoader) {
         return classLoader.loadClass("androidx.window.extensions.layout.WindowLayoutComponent");
     }

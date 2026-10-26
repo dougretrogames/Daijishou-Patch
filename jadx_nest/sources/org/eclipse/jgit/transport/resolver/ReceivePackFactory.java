@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport.resolver;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.transport.ReceivePack;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface ReceivePackFactory<C> {
     public static final ReceivePackFactory<?> DISABLED = new ReceivePackFactory$$ExternalSyntheticLambda0();
 

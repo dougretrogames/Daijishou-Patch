@@ -30,7 +30,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class RequestManager implements ComponentCallbacks2, LifecycleListener, ModelTypes<RequestBuilder<Drawable>> {
     private static final RequestOptions DECODE_TYPE_BITMAP = RequestOptions.decodeTypeOf(Bitmap.class).lock();
     private static final RequestOptions DECODE_TYPE_GIF = RequestOptions.decodeTypeOf(GifDrawable.class).lock();
@@ -56,7 +56,7 @@ public class RequestManager implements ComponentCallbacks2, LifecycleListener, M
     public void onLowMemory() {
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.RequestManager$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.RequestManager$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -205,56 +205,56 @@ public class RequestManager implements ComponentCallbacks2, LifecycleListener, M
         return as(Drawable.class);
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.ModelTypes
     public RequestBuilder<Drawable> load(Bitmap bitmap) {
         return asDrawable().load(bitmap);
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.ModelTypes
     public RequestBuilder<Drawable> load(Drawable drawable) {
         return asDrawable().load(drawable);
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.ModelTypes
     public RequestBuilder<Drawable> load(String str) {
         return asDrawable().load(str);
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.ModelTypes
     public RequestBuilder<Drawable> load(Uri uri) {
         return asDrawable().load(uri);
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.ModelTypes
     public RequestBuilder<Drawable> load(File file) {
         return asDrawable().load(file);
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.ModelTypes
     public RequestBuilder<Drawable> load(Integer num) {
         return asDrawable().load(num);
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.ModelTypes
     @Deprecated
     public RequestBuilder<Drawable> load(URL url) {
         return asDrawable().load(url);
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.ModelTypes
     public RequestBuilder<Drawable> load(byte[] bArr) {
         return asDrawable().load(bArr);
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.ModelTypes
     public RequestBuilder<Drawable> load(Object obj) {
         return asDrawable().load(obj);

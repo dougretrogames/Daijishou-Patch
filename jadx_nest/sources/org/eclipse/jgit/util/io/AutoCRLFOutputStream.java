@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import org.eclipse.jgit.diff.RawText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AutoCRLFOutputStream extends OutputStream {
     private byte[] binbuf;
     private int binbufcnt;

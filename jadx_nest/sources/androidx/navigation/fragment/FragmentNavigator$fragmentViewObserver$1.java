@@ -10,13 +10,13 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: FragmentNavigator.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: FragmentNavigator.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "Landroidx/lifecycle/LifecycleEventObserver;", "entry", "Landroidx/navigation/NavBackStackEntry;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 final class FragmentNavigator$fragmentViewObserver$1 extends Lambda implements Function1<NavBackStackEntry, LifecycleEventObserver> {
     final /* synthetic */ FragmentNavigator this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     FragmentNavigator$fragmentViewObserver$1(FragmentNavigator fragmentNavigator) {
         super(1);
         this.this$0 = fragmentNavigator;
@@ -28,7 +28,7 @@ final class FragmentNavigator$fragmentViewObserver$1 extends Lambda implements F
         return new FragmentNavigator$fragmentViewObserver$1$$ExternalSyntheticLambda0(this.this$0, entry);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void invoke$lambda$0(FragmentNavigator this$0, NavBackStackEntry entry, LifecycleOwner owner, Lifecycle.Event event) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(entry, "$entry");

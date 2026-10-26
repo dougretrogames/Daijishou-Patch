@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TypefaceCompatApi29Impl extends TypefaceCompatBaseImpl {
     private static final String TAG = "TypefaceCompatApi29Impl";
 
@@ -64,7 +64,7 @@ public class TypefaceCompatApi29Impl extends TypefaceCompatBaseImpl {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:8:0x0016 A[Catch: IOException -> 0x0056, PHI: r3
+    /* WARN: Code duplicated, block: B:8:0x0016 A[Catch: IOException -> 0x0056, PHI: r3
   0x0016: PHI (r3v5 android.graphics.fonts.FontFamily$Builder) = (r3v3 android.graphics.fonts.FontFamily$Builder), (r3v1 android.graphics.fonts.FontFamily$Builder) binds: [B:14:0x0047, B:7:0x0014] A[DONT_GENERATE, DONT_INLINE], TRY_LEAVE, TryCatch #1 {IOException -> 0x0056, blocks: (B:5:0x0008, B:8:0x0016, B:22:0x0055, B:21:0x0052, B:18:0x004d, B:10:0x001a, B:12:0x003d, B:13:0x0044), top: B:32:0x0008, inners: #0, #2 }] */
     private static FontFamily getFontFamily(CancellationSignal cancellationSignal, FontsContractCompat.FontInfo[] fontInfoArr, ContentResolver contentResolver) {
         FontFamily.Builder builder = null;

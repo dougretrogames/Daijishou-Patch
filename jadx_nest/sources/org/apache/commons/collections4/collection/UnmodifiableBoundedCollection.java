@@ -8,11 +8,11 @@ import org.apache.commons.collections4.BoundedCollection;
 import org.apache.commons.collections4.Unmodifiable;
 import org.apache.commons.collections4.iterators.UnmodifiableIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UnmodifiableBoundedCollection<E> extends AbstractCollectionDecorator<E> implements BoundedCollection<E>, Unmodifiable {
     private static final long serialVersionUID = -7112672385450340330L;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <E> BoundedCollection<E> unmodifiableBoundedCollection(BoundedCollection<? extends E> boundedCollection) {
         return boundedCollection instanceof Unmodifiable ? boundedCollection : new UnmodifiableBoundedCollection(boundedCollection);
     }
@@ -51,7 +51,7 @@ public final class UnmodifiableBoundedCollection<E> extends AbstractCollectionDe
         throw new UnsupportedOperationException();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public BoundedCollection<E> decorated() {
         return (BoundedCollection) super.decorated();

@@ -2,7 +2,7 @@ package io.grpc;
 
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class InternalServiceProviders {
 
     public interface PriorityAccessor<T> extends ServiceProviders.PriorityAccessor<T> {

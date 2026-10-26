@@ -18,8 +18,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: RequestExecutionOptions.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: RequestExecutionOptions.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0094\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0016\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u001f\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001Bk\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0007\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0016\u0010\f\u001a\u0012\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000e0\rj\u0002`\u000f\u0012\u001c\u0010\u0010\u001a\u0018\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00120\u0011j\u0002`\u0013¢\u0006\u0002\u0010\u0014J\u0014\u0010U\u001a\u00020-2\f\u0010V\u001a\b\u0012\u0004\u0012\u00020-0WJ\t\u0010X\u001a\u00020\u0003HÆ\u0003J\u000b\u0010Y\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010Z\u001a\u0004\u0018\u00010\u0007HÆ\u0003J\t\u0010[\u001a\u00020\tHÆ\u0003J\t\u0010\\\u001a\u00020\u000bHÆ\u0003J\u0019\u0010]\u001a\u0012\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000e0\rj\u0002`\u000fHÆ\u0003J\u001f\u0010^\u001a\u0018\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00120\u0011j\u0002`\u0013HÆ\u0003Jy\u0010_\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u000b2\u0018\b\u0002\u0010\f\u001a\u0012\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000e0\rj\u0002`\u000f2\u001e\b\u0002\u0010\u0010\u001a\u0018\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00120\u0011j\u0002`\u0013HÆ\u0001J\u0013\u0010`\u001a\u00020\u00162\b\u0010a\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010b\u001a\u00020JHÖ\u0001J'\u0010c\u001a\u00020-2\u001c\u0010d\u001a\u0018\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00120\u0011j\u0002`\u0013H\u0086\u0002J\u001a\u0010e\u001a\b\u0012\u0004\u0012\u00020\u00120f2\f\u0010g\u001a\b\u0012\u0004\u0012\u00020\u00120hJ\t\u0010i\u001a\u00020jHÖ\u0001R\u001e\u0010\u0015\u001a\u0004\u0018\u00010\u0016X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001b\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR\u0011\u0010\n\u001a\u00020\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u001e\u0010 \u001a\u0004\u0018\u00010\u0016X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001b\u001a\u0004\b!\u0010\u0018\"\u0004\b\"\u0010\u001aR\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b#\u0010$R\u001a\u0010%\u001a\u00020\u0016X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b&\u0010'\"\u0004\b(\u0010)R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0007¢\u0006\b\n\u0000\u001a\u0004\b*\u0010+R!\u0010,\u001a\u0012\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020-0\rj\u0002`.¢\u0006\b\n\u0000\u001a\u0004\b/\u00100R0\u00101\u001a\u0018\u0012\u0014\u0012\u0012\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020-0\rj\u0002`.02X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b3\u00104\"\u0004\b5\u00106R\u0011\u00107\u001a\u000208¢\u0006\b\n\u0000\u001a\u0004\b9\u0010:R!\u0010\f\u001a\u0012\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000e0\rj\u0002`\u000f¢\u0006\b\n\u0000\u001a\u0004\b;\u00100R\u0011\u0010<\u001a\u000208¢\u0006\b\n\u0000\u001a\u0004\b=\u0010:R0\u0010\u0010\u001a\u0018\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00120\u0011j\u0002`\u0013X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b>\u0010?\"\u0004\b@\u0010AR*\u0010B\u001a\u0012\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u00160\rj\u0002`CX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bD\u00100\"\u0004\bE\u0010FR\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\bG\u0010HR\u001a\u0010I\u001a\u00020JX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bK\u0010L\"\u0004\bM\u0010NR\u001a\u0010O\u001a\u00020JX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bP\u0010L\"\u0004\bQ\u0010NR\u001e\u0010R\u001a\u0004\u0018\u00010\u0016X\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001b\u001a\u0004\bS\u0010\u0018\"\u0004\bT\u0010\u001a¨\u0006k"}, d2 = {"Lcom/github/kittinunf/fuel/core/RequestExecutionOptions;", "", "client", "Lcom/github/kittinunf/fuel/core/Client;", "socketFactory", "Ljavax/net/ssl/SSLSocketFactory;", "hostnameVerifier", "Ljavax/net/ssl/HostnameVerifier;", "executorService", "Ljava/util/concurrent/ExecutorService;", "callbackExecutor", "Ljava/util/concurrent/Executor;", "requestTransformer", "Lkotlin/Function1;", "Lcom/github/kittinunf/fuel/core/Request;", "Lcom/github/kittinunf/fuel/core/RequestTransformer;", "responseTransformer", "Lkotlin/Function2;", "Lcom/github/kittinunf/fuel/core/Response;", "Lcom/github/kittinunf/fuel/core/ResponseTransformer;", "(Lcom/github/kittinunf/fuel/core/Client;Ljavax/net/ssl/SSLSocketFactory;Ljavax/net/ssl/HostnameVerifier;Ljava/util/concurrent/ExecutorService;Ljava/util/concurrent/Executor;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;)V", "allowRedirects", "", "getAllowRedirects", "()Ljava/lang/Boolean;", "setAllowRedirects", "(Ljava/lang/Boolean;)V", "Ljava/lang/Boolean;", "getCallbackExecutor", "()Ljava/util/concurrent/Executor;", "getClient", "()Lcom/github/kittinunf/fuel/core/Client;", "decodeContent", "getDecodeContent", "setDecodeContent", "getExecutorService", "()Ljava/util/concurrent/ExecutorService;", "forceMethods", "getForceMethods", "()Z", "setForceMethods", "(Z)V", "getHostnameVerifier", "()Ljavax/net/ssl/HostnameVerifier;", "interruptCallback", "", "Lcom/github/kittinunf/fuel/core/InterruptCallback;", "getInterruptCallback", "()Lkotlin/jvm/functions/Function1;", "interruptCallbacks", "", "getInterruptCallbacks", "()Ljava/util/Collection;", "setInterruptCallbacks", "(Ljava/util/Collection;)V", "requestProgress", "Lcom/github/kittinunf/fuel/core/Progress;", "getRequestProgress", "()Lcom/github/kittinunf/fuel/core/Progress;", "getRequestTransformer", "responseProgress", "getResponseProgress", "getResponseTransformer", "()Lkotlin/jvm/functions/Function2;", "setResponseTransformer", "(Lkotlin/jvm/functions/Function2;)V", "responseValidator", "Lcom/github/kittinunf/fuel/core/ResponseValidator;", "getResponseValidator", "setResponseValidator", "(Lkotlin/jvm/functions/Function1;)V", "getSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;", "timeoutInMillisecond", "", "getTimeoutInMillisecond", "()I", "setTimeoutInMillisecond", "(I)V", "timeoutReadInMillisecond", "getTimeoutReadInMillisecond", "setTimeoutReadInMillisecond", "useHttpCache", "getUseHttpCache", "setUseHttpCache", "callback", "f", "Lkotlin/Function0;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "other", "hashCode", "plusAssign", "next", "submit", "Ljava/util/concurrent/Future;", "task", "Ljava/util/concurrent/Callable;", "toString", "", "fuel"}, k = 1, mv = {1, 4, 0})
 public final /* data */ class RequestExecutionOptions {
     private Boolean allowRedirects;
@@ -41,7 +41,7 @@ public final /* data */ class RequestExecutionOptions {
     private int timeoutReadInMillisecond;
     private Boolean useHttpCache;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ RequestExecutionOptions copy$default(RequestExecutionOptions requestExecutionOptions, Client client, SSLSocketFactory sSLSocketFactory, HostnameVerifier hostnameVerifier, ExecutorService executorService, Executor executor, Function1 function1, Function2 function2, int i, Object obj) {
         if ((i & 1) != 0) {
             client = requestExecutionOptions.client;
@@ -71,27 +71,27 @@ public final /* data */ class RequestExecutionOptions {
         return requestExecutionOptions.copy(client, sSLSocketFactory, hostnameVerifier2, executorService, executor2, function3, function4);
     }
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    /* INFO: renamed from: component1, reason: from getter */
     public final Client getClient() {
         return this.client;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    /* INFO: renamed from: component2, reason: from getter */
     public final SSLSocketFactory getSocketFactory() {
         return this.socketFactory;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    /* INFO: renamed from: component3, reason: from getter */
     public final HostnameVerifier getHostnameVerifier() {
         return this.hostnameVerifier;
     }
 
-    /* JADX INFO: renamed from: component4, reason: from getter */
+    /* INFO: renamed from: component4, reason: from getter */
     public final ExecutorService getExecutorService() {
         return this.executorService;
     }
 
-    /* JADX INFO: renamed from: component5, reason: from getter */
+    /* INFO: renamed from: component5, reason: from getter */
     public final Executor getCallbackExecutor() {
         return this.callbackExecutor;
     }
@@ -145,7 +145,7 @@ public final /* data */ class RequestExecutionOptions {
         return "RequestExecutionOptions(client=" + this.client + ", socketFactory=" + this.socketFactory + ", hostnameVerifier=" + this.hostnameVerifier + ", executorService=" + this.executorService + ", callbackExecutor=" + this.callbackExecutor + ", requestTransformer=" + this.requestTransformer + ", responseTransformer=" + this.responseTransformer + ")";
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public RequestExecutionOptions(Client client, SSLSocketFactory sSLSocketFactory, HostnameVerifier hostnameVerifier, ExecutorService executorService, Executor callbackExecutor, Function1<? super Request, ? extends Request> requestTransformer, Function2<? super Request, ? super Response, Response> responseTransformer) {
         Intrinsics.checkNotNullParameter(client, "client");
         Intrinsics.checkNotNullParameter(executorService, "executorService");
@@ -172,7 +172,7 @@ public final /* data */ class RequestExecutionOptions {
         return this.client;
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public /* synthetic */ RequestExecutionOptions(Client client, SSLSocketFactory sSLSocketFactory, HostnameVerifier hostnameVerifier, ExecutorService executorService, Executor executor, Function1 function1, Function2 function2, int i, DefaultConstructorMarker defaultConstructorMarker) {
         SSLSocketFactory sSLSocketFactory2;
         HostnameVerifier hostnameVerifier2;
@@ -308,14 +308,14 @@ public final /* data */ class RequestExecutionOptions {
         return this.interruptCallback;
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.RequestExecutionOptions$plusAssign$1, reason: invalid class name */
-    /* JADX INFO: compiled from: RequestExecutionOptions.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.RequestExecutionOptions$plusAssign$1, reason: invalid class name */
+    /* INFO: compiled from: RequestExecutionOptions.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "Lcom/github/kittinunf/fuel/core/Response;", "request", "Lcom/github/kittinunf/fuel/core/Request;", "response", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass1 extends Lambda implements Function2<Request, Response, Response> {
         final /* synthetic */ Function2 $next;
         final /* synthetic */ Function2 $previous;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Function2 function2, Function2 function3) {
             super(2);
             this.$next = function2;

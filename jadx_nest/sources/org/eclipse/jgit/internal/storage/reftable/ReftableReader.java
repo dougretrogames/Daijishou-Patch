@@ -17,7 +17,7 @@ import org.eclipse.jgit.util.LongList;
 import org.eclipse.jgit.util.LongMap;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReftableReader extends Reftable implements AutoCloseable {
     static final LongList EMPTY_LONG_LIST = new LongList(0);
     private LongMap<BlockReader> indexCache;
@@ -142,7 +142,7 @@ public class ReftableReader extends Reftable implements AutoCloseable {
         return new EmptyLogCursor();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public BlockReader seek(byte b, byte[] bArr, BlockReader blockReader, long j, long j2) throws IOException {
         if (blockReader != null) {
             while (blockReader.seekKey(bArr) <= 0) {
@@ -284,7 +284,7 @@ public class ReftableReader extends Reftable implements AutoCloseable {
         return bArr;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void initRefIndex() throws IOException {
         if (this.refIndexPosition < 0) {
             readFileFooter();
@@ -349,7 +349,7 @@ public class ReftableReader extends Reftable implements AutoCloseable {
         return BlockReader.decodeBlockLen(NB.decodeInt32(bArrArray, j != 0 ? 0 : 24));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public BlockReader readBlock(long j, long j2) throws IOException {
         BlockReader blockReader;
         LongMap<BlockReader> longMap = this.indexCache;

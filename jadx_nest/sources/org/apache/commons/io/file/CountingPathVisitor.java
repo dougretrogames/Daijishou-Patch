@@ -14,7 +14,7 @@ import org.apache.commons.io.filefilter.SymbolicLinkFileFilter;
 import org.apache.commons.io.filefilter.TrueFileFilter;
 import org.apache.commons.io.function.IOBiFunction;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CountingPathVisitor extends SimplePathVisitor {
     static final String[] EMPTY_STRING_ARRAY = new String[0];
     private final PathFilter directoryFilter;
@@ -165,7 +165,7 @@ public class CountingPathVisitor extends SimplePathVisitor {
         return FileVisitResult.CONTINUE;
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // java.nio.file.SimpleFileVisitor, java.nio.file.FileVisitor
     public FileVisitResult preVisitDirectory(Path path, BasicFileAttributes basicFileAttributes) throws IOException {
         return this.directoryFilter.accept(path, basicFileAttributes) != FileVisitResult.CONTINUE ? FileVisitResult.SKIP_SUBTREE : FileVisitResult.CONTINUE;
@@ -184,7 +184,7 @@ public class CountingPathVisitor extends SimplePathVisitor {
         this.pathCounters.getByteCounter().add(basicFileAttributes.size());
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // java.nio.file.SimpleFileVisitor, java.nio.file.FileVisitor
     public FileVisitResult visitFile(Path path, BasicFileAttributes basicFileAttributes) throws IOException {
         if (Files.exists(path, new LinkOption[0]) && this.fileFilter.accept(path, basicFileAttributes) == FileVisitResult.CONTINUE) {

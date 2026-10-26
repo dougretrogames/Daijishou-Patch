@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class GrowthList<E> extends AbstractSerializableListDecorator<E> {
     private static final long serialVersionUID = -3620001881672L;
 

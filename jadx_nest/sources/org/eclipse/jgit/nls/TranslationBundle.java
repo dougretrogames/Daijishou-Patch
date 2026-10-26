@@ -7,7 +7,7 @@ import java.util.ResourceBundle;
 import org.eclipse.jgit.errors.TranslationBundleLoadingException;
 import org.eclipse.jgit.errors.TranslationStringMissingException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class TranslationBundle {
     private Locale effectiveLocale;
     private ResourceBundle resourceBundle;

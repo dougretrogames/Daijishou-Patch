@@ -4,8 +4,8 @@ import java.util.Iterator;
 import javax.annotation.CheckForNull;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 final class zzay extends zzau {
     final transient Object zza;
 
@@ -46,7 +46,7 @@ final class zzay extends zzau {
     }
 
     @Override // com.google.android.gms.internal.fido.zzau, com.google.android.gms.internal.fido.zzaq
-    /* JADX INFO: renamed from: zzd */
+    /* INFO: renamed from: zzd */
     public final zzaz iterator() {
         return new zzav(this.zza);
     }

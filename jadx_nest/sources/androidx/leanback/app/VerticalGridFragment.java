@@ -17,7 +17,7 @@ import androidx.leanback.widget.Row;
 import androidx.leanback.widget.RowPresenter;
 import androidx.leanback.widget.VerticalGridPresenter;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public class VerticalGridFragment extends BaseFragment {
     static final boolean DEBUG = false;
@@ -33,7 +33,7 @@ public class VerticalGridFragment extends BaseFragment {
     private final OnItemViewSelectedListener mViewSelectedListener = new AnonymousClass2();
     private final OnChildLaidOutListener mChildLaidOutListener = new AnonymousClass3();
 
-    /* JADX INFO: renamed from: androidx.leanback.app.VerticalGridFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.VerticalGridFragment$1, reason: invalid class name */
     class AnonymousClass1 extends StateMachine.State {
         AnonymousClass1(String str) {
             super(str);
@@ -82,7 +82,7 @@ public class VerticalGridFragment extends BaseFragment {
         return this.mAdapter;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.VerticalGridFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.VerticalGridFragment$2, reason: invalid class name */
     class AnonymousClass2 implements OnItemViewSelectedListener {
         AnonymousClass2() {
         }
@@ -96,7 +96,7 @@ public class VerticalGridFragment extends BaseFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.VerticalGridFragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.VerticalGridFragment$3, reason: invalid class name */
     class AnonymousClass3 implements OnChildLaidOutListener {
         AnonymousClass3() {
         }
@@ -158,7 +158,7 @@ public class VerticalGridFragment extends BaseFragment {
         return viewGroup2;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.VerticalGridFragment$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.VerticalGridFragment$4, reason: invalid class name */
     class AnonymousClass4 implements Runnable {
         AnonymousClass4() {
         }

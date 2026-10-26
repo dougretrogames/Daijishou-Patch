@@ -2,7 +2,7 @@ package org.apache.commons.io.monitor;
 
 import java.io.File;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileAlterationListenerAdaptor implements FileAlterationListener {
     @Override // org.apache.commons.io.monitor.FileAlterationListener
     public void onDirectoryChange(File file) {

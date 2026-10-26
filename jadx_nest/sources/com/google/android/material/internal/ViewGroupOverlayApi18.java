@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroupOverlay;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewGroupOverlayApi18 implements ViewGroupOverlayImpl {
     private final ViewGroupOverlay viewGroupOverlay;
 

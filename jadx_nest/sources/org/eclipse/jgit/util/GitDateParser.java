@@ -12,18 +12,18 @@ import java.util.Map;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated(since = "7.1")
 public class GitDateParser {
     public static final Date NEVER = new Date(Long.MAX_VALUE);
     private static ThreadLocal<Map<Locale, Map<ParseableSimpleDateFormat, SimpleDateFormat>>> formatCache = new AnonymousClass1();
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.util.GitDateParser$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.util.GitDateParser$1, reason: invalid class name */
     class AnonymousClass1 extends ThreadLocal<Map<Locale, Map<ParseableSimpleDateFormat, SimpleDateFormat>>> {
         AnonymousClass1() {
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // java.lang.ThreadLocal
         public Map<Locale, Map<ParseableSimpleDateFormat, SimpleDateFormat>> initialValue() {
             return new HashMap();
@@ -60,7 +60,7 @@ public class GitDateParser {
 
         private final String formatStr;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static ParseableSimpleDateFormat[] valuesCustom() {
             ParseableSimpleDateFormat[] parseableSimpleDateFormatArrValuesCustom = values();
             int length = parseableSimpleDateFormatArrValuesCustom.length;
@@ -108,7 +108,7 @@ public class GitDateParser {
         return dateFormat.parse(str);
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     private static Date parse_relative(String str, Calendar calendar) {
         Calendar gregorianCalendar;
         SystemReader systemReader = SystemReader.getInstance();

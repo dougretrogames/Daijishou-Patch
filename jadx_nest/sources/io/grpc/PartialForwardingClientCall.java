@@ -3,7 +3,7 @@ package io.grpc;
 import com.google.common.base.MoreObjects;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 abstract class PartialForwardingClientCall<ReqT, RespT> extends ClientCall<ReqT, RespT> {
     protected abstract ClientCall<?, ?> delegate();
 

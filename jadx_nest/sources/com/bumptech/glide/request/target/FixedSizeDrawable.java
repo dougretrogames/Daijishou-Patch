@@ -10,7 +10,7 @@ import android.graphics.RectF;
 import android.graphics.drawable.Drawable;
 import com.bumptech.glide.util.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FixedSizeDrawable extends Drawable {
     private final RectF bounds;
     private final Matrix matrix;

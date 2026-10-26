@@ -15,7 +15,7 @@ import org.eclipse.jgit.util.io.SilentFileInputStream;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CommitGraphLoader {
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) CommitGraphLoader.class);
 
@@ -126,7 +126,7 @@ public class CommitGraphLoader {
 
     private static class ChunkSegment {
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         final int f116id;
         final long offset;
 

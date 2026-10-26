@@ -2,8 +2,8 @@ package com.google.common.graph;
 
 import com.google.common.base.Function;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class DirectedGraphConnections$$ExternalSyntheticLambda1 implements Function {
     public final /* synthetic */ Object f$0;
 

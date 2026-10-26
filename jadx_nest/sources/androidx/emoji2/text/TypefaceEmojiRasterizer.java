@@ -7,7 +7,7 @@ import androidx.emoji2.text.flatbuffer.MetadataItem;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TypefaceEmojiRasterizer {
     static final int HAS_GLYPH_ABSENT = 1;
     static final int HAS_GLYPH_EXISTS = 2;

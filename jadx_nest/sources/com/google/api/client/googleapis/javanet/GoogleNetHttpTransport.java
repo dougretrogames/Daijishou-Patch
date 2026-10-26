@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.security.KeyStore;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GoogleNetHttpTransport {
     public static NetHttpTransport newTrustedTransport() throws GeneralSecurityException, IOException {
         return newTrustedTransport(MtlsUtils.getDefaultMtlsProvider());

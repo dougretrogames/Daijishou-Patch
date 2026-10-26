@@ -2,8 +2,8 @@ package androidx.compose.ui.platform;
 
 import android.view.ViewTreeObserver;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class AndroidComposeView$$ExternalSyntheticLambda2 implements ViewTreeObserver.OnTouchModeChangeListener {
     public final /* synthetic */ AndroidComposeView f$0;
 

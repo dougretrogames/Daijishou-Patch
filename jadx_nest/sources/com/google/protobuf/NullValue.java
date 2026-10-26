@@ -1,6 +1,6 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public enum NullValue implements ProtocolMessageEnum {
     NULL_VALUE(0),
     UNRECOGNIZED(-1);
@@ -40,7 +40,7 @@ public enum NullValue implements ProtocolMessageEnum {
         return internalValueMap;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.NullValue$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.NullValue$1, reason: invalid class name */
     class AnonymousClass1 implements Internal.EnumLiteMap<NullValue> {
         AnonymousClass1() {
         }

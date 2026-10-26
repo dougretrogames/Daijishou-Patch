@@ -1,7 +1,7 @@
 package com.google.android.gms.internal.auth;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 final class zzfp implements zzgj {
     private static final zzfv zza = new zzfn();
     private final zzfv zzb;

@@ -1,6 +1,6 @@
 package org.apache.commons.collections4.sequence;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface CommandVisitor<T> {
     void visitDeleteCommand(T t);
 

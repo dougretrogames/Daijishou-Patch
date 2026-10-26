@@ -16,8 +16,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Job;
 
-/* JADX INFO: compiled from: CachedBitmapLoader.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: CachedBitmapLoader.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.cache.CachedBitmapLoader$CachedBitmapLoaderTask$into$1", f = "CachedBitmapLoader.kt", i = {0, 1, 2}, l = {192, 198, 202, 207, 211}, m = "invokeSuspendImpl", n = {"$this$launch", "$this$launch", "$this$launch"}, s = {"L$0", "L$0", "L$0"})
 final class CachedBitmapLoader$CachedBitmapLoaderTask$into$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -27,7 +27,7 @@ final class CachedBitmapLoader$CachedBitmapLoaderTask$into$1 extends com.magneti
     final /* synthetic */ CachedBitmapLoader.CachedBitmapLoaderTask this$0;
     final /* synthetic */ CachedBitmapLoader this$1;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     CachedBitmapLoader$CachedBitmapLoaderTask$into$1(CachedBitmapLoader.CachedBitmapLoaderTask cachedBitmapLoaderTask, CachedBitmapLoader cachedBitmapLoader, View view, Continuation<?> continuation) {
         super(2, continuation);
         this.this$0 = cachedBitmapLoaderTask;

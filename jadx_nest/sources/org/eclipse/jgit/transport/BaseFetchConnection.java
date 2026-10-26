@@ -8,7 +8,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.lib.Ref;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class BaseFetchConnection extends BaseConnection implements FetchConnection {
     @Override // org.eclipse.jgit.transport.FetchConnection
     public boolean didFetchIncludeTags() {

@@ -33,7 +33,7 @@ import org.eclipse.jgit.util.io.InterruptTimer;
 import org.eclipse.jgit.util.io.TimeoutInputStream;
 import org.eclipse.jgit.util.io.TimeoutOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class BasePackConnection extends BaseConnection {
     protected static final String CAPABILITY_SYMREF_PREFIX = "symref=";
     protected InputStream in;
@@ -52,7 +52,7 @@ abstract class BasePackConnection extends BaseConnection {
     protected final Set<ObjectId> additionalHaves = new HashSet();
     private TransferConfig.ProtocolVersion protocol = TransferConfig.ProtocolVersion.V0;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     BasePackConnection(PackTransport packTransport) {
         Transport transport = (Transport) packTransport;
         this.transport = transport;
@@ -421,7 +421,7 @@ abstract class BasePackConnection extends BaseConnection {
         return new PackProtocolException(this.uri, MessageFormat.format(JGitText.get().invalidRefAdvertisementLine, str));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.eclipse.jgit.transport.BaseConnection, org.eclipse.jgit.transport.Connection, java.lang.AutoCloseable
     public void close() {
         if (this.out != null) {
@@ -459,7 +459,7 @@ abstract class BasePackConnection extends BaseConnection {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     protected void endOut() {
         if (!this.outNeedsEnd || this.out == null) {
             return;

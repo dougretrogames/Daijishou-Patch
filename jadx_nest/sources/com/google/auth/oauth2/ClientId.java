@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ClientId {
     private static final String FIELD_CLIENT_ID = "client_id";
     private static final String FIELD_CLIENT_SECRET = "client_secret";

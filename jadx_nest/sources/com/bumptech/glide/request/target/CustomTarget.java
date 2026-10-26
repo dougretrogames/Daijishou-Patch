@@ -4,7 +4,7 @@ import android.graphics.drawable.Drawable;
 import com.bumptech.glide.request.Request;
 import com.bumptech.glide.util.Util;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class CustomTarget<T> implements Target<T> {
     private final int height;
     private Request request;

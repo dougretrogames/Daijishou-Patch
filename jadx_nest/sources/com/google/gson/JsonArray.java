@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class JsonArray extends JsonElement implements Iterable<JsonElement> {
     private final ArrayList<JsonElement> elements;
 

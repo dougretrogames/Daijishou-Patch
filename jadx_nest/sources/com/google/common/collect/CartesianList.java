@@ -10,7 +10,7 @@ import java.util.ListIterator;
 import java.util.RandomAccess;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class CartesianList<E> extends AbstractList<List<E>> implements RandomAccess {
     private final transient ImmutableList<List<E>> axes;
@@ -43,7 +43,7 @@ final class CartesianList<E> extends AbstractList<List<E>> implements RandomAcce
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getAxisIndexForProductIndex(int index, int axis) {
         return (index / this.axesSizeProduct[axis + 1]) % this.axes.get(axis).size();
     }
@@ -92,7 +92,7 @@ final class CartesianList<E> extends AbstractList<List<E>> implements RandomAcce
         return i;
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.CartesianList$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.CartesianList$1, reason: invalid class name */
     class AnonymousClass1 extends ImmutableList<E> {
         final /* synthetic */ int val$index;
 

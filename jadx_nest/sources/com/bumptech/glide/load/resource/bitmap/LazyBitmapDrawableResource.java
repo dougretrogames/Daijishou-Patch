@@ -10,7 +10,7 @@ import com.bumptech.glide.load.engine.Resource;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.util.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class LazyBitmapDrawableResource implements Resource<BitmapDrawable>, Initializable {
     private final Resource<Bitmap> bitmapResource;
     private final Resources resources;
@@ -42,7 +42,7 @@ public final class LazyBitmapDrawableResource implements Resource<BitmapDrawable
         return BitmapDrawable.class;
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.load.engine.Resource
     public BitmapDrawable get() {
         return new BitmapDrawable(this.resources, this.bitmapResource.get());

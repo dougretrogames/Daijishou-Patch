@@ -7,7 +7,7 @@ import androidx.viewbinding.ViewBinding;
 import com.skydoves.balloon.R;
 import com.skydoves.balloon.overlay.BalloonAnchorOverlayView;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class BalloonLayoutOverlayBinding implements ViewBinding {
     public final BalloonAnchorOverlayView balloonOverlayView;
     private final BalloonAnchorOverlayView rootView;

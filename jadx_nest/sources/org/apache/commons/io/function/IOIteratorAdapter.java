@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Iterator;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class IOIteratorAdapter<E> implements IOIterator<E> {
     private final Iterator<E> delegate;
 

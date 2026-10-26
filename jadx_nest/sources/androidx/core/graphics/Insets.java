@@ -3,7 +3,7 @@ package androidx.core.graphics;
 import android.graphics.Rect;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class Insets {
     public static final Insets NONE = new Insets(0, 0, 0, 0);
     public final int bottom;

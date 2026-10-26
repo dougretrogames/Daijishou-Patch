@@ -2,7 +2,7 @@ package io.noties.markwon.utils;
 
 import android.text.Spanned;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class LeadingMarginUtils {
     public static boolean selfStart(int i, CharSequence charSequence, Object obj) {
         return (charSequence instanceof Spanned) && ((Spanned) charSequence).getSpanStart(obj) == i;

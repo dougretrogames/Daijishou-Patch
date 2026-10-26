@@ -4,7 +4,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ScrollView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class InterpolateOnScrollPositionChangeHelper {
     private ScrollView containingScrollView;
     private MaterialShapeDrawable materialShapeDrawable;
@@ -13,7 +13,7 @@ public class InterpolateOnScrollPositionChangeHelper {
     private final int[] containerLocation = new int[2];
     private final ViewTreeObserver.OnScrollChangedListener scrollChangedListener = new AnonymousClass1();
 
-    /* JADX INFO: renamed from: com.google.android.material.shape.InterpolateOnScrollPositionChangeHelper$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.shape.InterpolateOnScrollPositionChangeHelper$1, reason: invalid class name */
     class AnonymousClass1 implements ViewTreeObserver.OnScrollChangedListener {
         AnonymousClass1() {
         }

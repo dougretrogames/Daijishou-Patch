@@ -34,7 +34,7 @@ import org.apache.commons.io.input.ReaderInputStream;
 import org.apache.commons.io.output.RandomAccessFileOutputStream;
 import org.apache.commons.io.output.WriterOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractOrigin<T, B extends AbstractOrigin<T, B>> extends AbstractSupplier<T, B> {
     final T origin;
 
@@ -67,7 +67,7 @@ public abstract class AbstractOrigin<T, B extends AbstractOrigin<T, B>> extends 
             return BufferedFileChannelInputStream.builder().setFileChannel(this.origin.getChannel()).get();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // org.apache.commons.io.build.AbstractOrigin
         public OutputStream getOutputStream(OpenOption... openOptionArr) throws IOException {
             return ((RandomAccessFileOutputStream.Builder) RandomAccessFileOutputStream.builder().setRandomAccessFile(this.origin)).get();
@@ -135,7 +135,7 @@ public abstract class AbstractOrigin<T, B extends AbstractOrigin<T, B>> extends 
             return get();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // org.apache.commons.io.build.AbstractOrigin
         public InputStream getInputStream(OpenOption... openOptionArr) throws IOException {
             return ((CharSequenceInputStream.Builder) CharSequenceInputStream.builder().setCharSequence(getCharSequence(Charset.defaultCharset()))).get();
@@ -284,7 +284,7 @@ public abstract class AbstractOrigin<T, B extends AbstractOrigin<T, B>> extends 
             return IOUtils.toString((Reader) this.origin);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // org.apache.commons.io.build.AbstractOrigin
         public InputStream getInputStream(OpenOption... openOptionArr) throws IOException {
             return ((ReaderInputStream.Builder) ReaderInputStream.builder().setReader((Reader) this.origin)).setCharset(Charset.defaultCharset()).get();
@@ -334,7 +334,7 @@ public abstract class AbstractOrigin<T, B extends AbstractOrigin<T, B>> extends 
             super(writer);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // org.apache.commons.io.build.AbstractOrigin
         public OutputStream getOutputStream(OpenOption... openOptionArr) throws IOException {
             return ((WriterOutputStream.Builder) WriterOutputStream.builder().setWriter((Writer) this.origin)).setCharset(Charset.defaultCharset()).get();

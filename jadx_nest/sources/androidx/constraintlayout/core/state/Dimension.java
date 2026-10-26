@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.state;
 
 import androidx.constraintlayout.core.widgets.ConstraintWidget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Dimension {
     Object mInitialValue;
     boolean mIsSuggested;

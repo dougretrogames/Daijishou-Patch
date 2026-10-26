@@ -2,7 +2,7 @@ package io.opencensus.common;
 
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Functions {
     private static final Function<Object, Void> RETURN_NULL = new AnonymousClass1();
     private static final Function<Object, Void> THROW_ILLEGAL_ARGUMENT_EXCEPTION = new AnonymousClass2();
@@ -12,7 +12,7 @@ public final class Functions {
     private Functions() {
     }
 
-    /* JADX INFO: renamed from: io.opencensus.common.Functions$1, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.common.Functions$1, reason: invalid class name */
     class AnonymousClass1 implements Function<Object, Void> {
         @Override // io.opencensus.common.Function
         @Nullable
@@ -24,7 +24,7 @@ public final class Functions {
         }
     }
 
-    /* JADX INFO: renamed from: io.opencensus.common.Functions$2, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.common.Functions$2, reason: invalid class name */
     class AnonymousClass2 implements Function<Object, Void> {
         AnonymousClass2() {
         }
@@ -35,7 +35,7 @@ public final class Functions {
         }
     }
 
-    /* JADX INFO: renamed from: io.opencensus.common.Functions$3, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.common.Functions$3, reason: invalid class name */
     class AnonymousClass3 implements Function<Object, Void> {
         AnonymousClass3() {
         }
@@ -46,7 +46,7 @@ public final class Functions {
         }
     }
 
-    /* JADX INFO: renamed from: io.opencensus.common.Functions$4, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.common.Functions$4, reason: invalid class name */
     class AnonymousClass4 implements Function<Object, String> {
         AnonymousClass4() {
         }
@@ -64,8 +64,8 @@ public final class Functions {
         return (Function<Object, T>) RETURN_NULL;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: io.opencensus.common.Functions$5, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: io.opencensus.common.Functions$5, reason: invalid class name */
     class AnonymousClass5<T> implements Function<Object, T> {
         final /* synthetic */ Object val$constant;
 

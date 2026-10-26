@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class Present<T> extends Optional<T> {
     private static final long serialVersionUID = 0;

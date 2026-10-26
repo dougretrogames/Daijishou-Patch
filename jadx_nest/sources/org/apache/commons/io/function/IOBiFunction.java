@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Objects;
 import java.util.function.BiFunction;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @FunctionalInterface
 public interface IOBiFunction<T, U, R> {
     R apply(T t, U u) throws IOException;

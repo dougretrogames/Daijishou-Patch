@@ -20,7 +20,7 @@ import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.util.RefList;
 import org.eclipse.jgit.util.RefMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class DfsRefDatabase extends RefDatabase {
     private final AtomicReference<RefCache> cache = new AtomicReference<>();
     private final DfsRepository repository;

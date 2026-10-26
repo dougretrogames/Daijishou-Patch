@@ -9,7 +9,7 @@ import org.eclipse.jgit.internal.storage.file.RefDirectory;
 import org.eclipse.jgit.util.RefList;
 import org.eclipse.jgit.util.RefMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class RefWriter {
     private final Collection<Ref> refs;
 

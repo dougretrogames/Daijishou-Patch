@@ -17,7 +17,7 @@ import org.jsoup.Connection;
 import org.jsoup.internal.StringUtil;
 import org.jsoup.parser.CharacterReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class CookieUtil {
     private static final String Cookie2Name = "Cookie2";
     private static final String CookieName = "Cookie";

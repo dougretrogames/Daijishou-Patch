@@ -38,7 +38,7 @@ import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.filter.PathFilterGroup;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CheckoutCommand extends GitCommand<Ref> {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$lib$RefUpdate$Result;
     private Set<String> actuallyModifiedPaths;
@@ -121,7 +121,7 @@ public class CheckoutCommand extends GitCommand<Ref> {
 
         private final int number;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Stage[] valuesCustom() {
             Stage[] stageArrValuesCustom = values();
             int length = stageArrValuesCustom.length;
@@ -147,7 +147,7 @@ public class CheckoutCommand extends GitCommand<Ref> {
         this.paths = new ArrayList();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.eclipse.jgit.api.GitCommand, java.util.concurrent.Callable
     public Ref call() throws GitAPIException {
         ObjectId objectIdResolve;
@@ -348,9 +348,9 @@ public class CheckoutCommand extends GitCommand<Ref> {
         return this;
     }
 
-    /* JADX WARN: Code duplicated, block: B:45:0x00a9 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:62:0x00ab A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:77:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:45:0x00a9 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:62:0x00ab A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:77:? A[RETURN, SYNTHETIC] */
     protected CheckoutCommand checkoutPaths() throws Throwable {
         Throwable th;
         this.actuallyModifiedPaths = new HashSet();
@@ -460,7 +460,7 @@ public class CheckoutCommand extends GitCommand<Ref> {
         dirCacheEditorEditor.commit();
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.api.CheckoutCommand$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.api.CheckoutCommand$1, reason: invalid class name */
     class AnonymousClass1 extends DirCacheEditor.PathEdit {
         private final /* synthetic */ Checkout val$checkout;
         private final /* synthetic */ CoreConfig.EolStreamType val$eolStreamType;
@@ -468,7 +468,7 @@ public class CheckoutCommand extends GitCommand<Ref> {
         private final /* synthetic */ String val$path;
         private final /* synthetic */ ObjectReader val$r;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(String str, ObjectReader objectReader, Checkout checkout, String str2, CoreConfig.EolStreamType eolStreamType, String str3) {
             super(str);
             this.val$r = objectReader;
@@ -513,7 +513,7 @@ public class CheckoutCommand extends GitCommand<Ref> {
         dirCacheEditorEditor.commit();
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.api.CheckoutCommand$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.api.CheckoutCommand$2, reason: invalid class name */
     class AnonymousClass2 extends DirCacheEditor.PathEdit {
         private final /* synthetic */ ObjectId val$blobId;
         private final /* synthetic */ Checkout val$checkout;
@@ -523,7 +523,7 @@ public class CheckoutCommand extends GitCommand<Ref> {
         private final /* synthetic */ String val$path;
         private final /* synthetic */ ObjectReader val$r;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(String str, ObjectId objectId, FileMode fileMode, ObjectReader objectReader, Checkout checkout, String str2, CoreConfig.EolStreamType eolStreamType, String str3) {
             super(str);
             this.val$blobId = objectId;
@@ -547,7 +547,7 @@ public class CheckoutCommand extends GitCommand<Ref> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void checkoutPath(DirCacheEntry dirCacheEntry, ObjectReader objectReader, Checkout checkout, String str, DirCacheCheckout.CheckoutMetadata checkoutMetadata) {
         try {
             checkout.checkout(dirCacheEntry, checkoutMetadata, objectReader, str);

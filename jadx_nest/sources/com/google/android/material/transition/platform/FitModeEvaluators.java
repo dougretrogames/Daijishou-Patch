@@ -2,12 +2,12 @@ package com.google.android.material.transition.platform;
 
 import android.graphics.RectF;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class FitModeEvaluators {
     private static final FitModeEvaluator WIDTH = new AnonymousClass1();
     private static final FitModeEvaluator HEIGHT = new AnonymousClass2();
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.platform.FitModeEvaluators$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.platform.FitModeEvaluators$1, reason: invalid class name */
     class AnonymousClass1 implements FitModeEvaluator {
         AnonymousClass1() {
         }
@@ -31,7 +31,7 @@ class FitModeEvaluators {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.platform.FitModeEvaluators$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.platform.FitModeEvaluators$2, reason: invalid class name */
     class AnonymousClass2 implements FitModeEvaluator {
         AnonymousClass2() {
         }

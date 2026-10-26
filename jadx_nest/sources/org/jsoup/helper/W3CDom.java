@@ -36,7 +36,7 @@ import org.w3c.dom.DocumentType;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class W3CDom {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private static final String ContextNodeProperty = "jsoupContextNode";

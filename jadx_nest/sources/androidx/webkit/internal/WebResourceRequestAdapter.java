@@ -2,7 +2,7 @@ package androidx.webkit.internal;
 
 import org.chromium.support_lib_boundary.WebResourceRequestBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebResourceRequestAdapter {
     private final WebResourceRequestBoundaryInterface mBoundaryInterface;
 

@@ -4,8 +4,8 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import kotlinx.coroutines.channels.ProducerScope;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class PipHintTrackerKt$trackPipAnimationHintView$flow$1$$ExternalSyntheticLambda1 implements ViewTreeObserver.OnScrollChangedListener {
     public final /* synthetic */ ProducerScope f$0;
     public final /* synthetic */ View f$1;

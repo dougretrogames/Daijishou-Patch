@@ -9,7 +9,7 @@ import android.text.style.LeadingMarginSpan;
 import android.text.style.MetricAffectingSpan;
 import io.noties.markwon.core.MarkwonTheme;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class CodeBlockSpan extends MetricAffectingSpan implements LeadingMarginSpan {
     private final MarkwonTheme theme;
     private final Rect rect = ObjectsPool.rect();

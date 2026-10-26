@@ -16,7 +16,7 @@ import java.util.Iterator;
 import java.util.Objects;
 import java.util.concurrent.Executors;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class PackageManagerCompat {
     public static final String ACTION_PERMISSION_REVOCATION_SETTINGS = "android.intent.action.AUTO_REVOKE_PERMISSIONS";
     public static final String LOG_TAG = "PackageManagerCompat";

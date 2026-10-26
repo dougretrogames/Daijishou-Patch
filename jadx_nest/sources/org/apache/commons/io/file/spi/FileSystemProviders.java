@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileSystemProviders {
     private static final FileSystemProviders INSTALLED = new FileSystemProviders(FileSystemProvider.installedProviders());
     private static final String SCHEME_FILE = "file";

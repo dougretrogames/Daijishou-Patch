@@ -3,7 +3,7 @@ package io.opencensus.metrics.export;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Distribution extends Distribution {
     private final Distribution.BucketOptions bucketOptions;
     private final List<Distribution.Bucket> buckets;

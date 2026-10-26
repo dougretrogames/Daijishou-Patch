@@ -3,7 +3,7 @@ package io.opencensus.trace;
 import io.opencensus.common.Timestamp;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @Deprecated
 final class AutoValue_NetworkEvent extends NetworkEvent {
     private final long compressedMessageSize;

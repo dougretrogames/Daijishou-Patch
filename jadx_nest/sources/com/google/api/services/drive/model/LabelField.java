@@ -7,13 +7,13 @@ import com.google.api.client.util.DateTime;
 import com.google.api.client.util.Key;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class LabelField extends GenericJson {
 
     @Key
     private List<DateTime> dateString;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     @Key
     private String f46id;
 

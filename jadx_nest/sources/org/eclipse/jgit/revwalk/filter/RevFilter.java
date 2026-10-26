@@ -9,7 +9,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class RevFilter {
     public static final RevFilter ALL = new AllFilter(null);
     public static final RevFilter NONE = new NoneFilter(null);

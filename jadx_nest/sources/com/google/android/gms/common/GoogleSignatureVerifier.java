@@ -11,8 +11,8 @@ import com.google.errorprone.annotations.RestrictedInheritance;
 import java.util.Set;
 import javax.annotation.Nullable;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 @CheckReturnValue
 @RestrictedInheritance(allowedOnPath = ".*java.*/com/google/android/gms/common/testing/.*", explanation = "Sub classing of GMS Core's APIs are restricted to testing fakes.", link = "go/gmscore-restrictedinheritance")
 public class GoogleSignatureVerifier {

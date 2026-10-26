@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class SpannableBuilder extends SpannableStringBuilder {
     private final Class<?> mWatcherClass;
     private final List<WatcherWrapper> mWatchers;
@@ -64,7 +64,7 @@ public final class SpannableBuilder extends SpannableStringBuilder {
         super.setSpan(obj, i, i2, i3);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // android.text.SpannableStringBuilder, android.text.Spanned
     public <T> T[] getSpans(int i, int i2, Class<T> cls) {
         if (isWatcher((Class<?>) cls)) {
@@ -262,7 +262,7 @@ public final class SpannableBuilder extends SpannableStringBuilder {
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:14:0x001e A[PHI: r11
+        /* WARN: Code duplicated, block: B:14:0x001e A[PHI: r11
   0x001e: PHI (r11v1 int) = (r11v0 int), (r11v3 int) binds: [B:8:0x0013, B:12:0x0019] A[DONT_GENERATE, DONT_INLINE]] */
         @Override // android.text.SpanWatcher
         public void onSpanChanged(Spannable spannable, Object obj, int i, int i2, int i3, int i4) {

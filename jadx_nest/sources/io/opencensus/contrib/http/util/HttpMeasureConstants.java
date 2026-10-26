@@ -3,7 +3,7 @@ package io.opencensus.contrib.http.util;
 import io.opencensus.stats.Measure;
 import io.opencensus.tags.TagKey;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class HttpMeasureConstants {
     private static final String UNIT_SIZE_BYTE = "By";
     public static final Measure.MeasureLong HTTP_CLIENT_SENT_BYTES = Measure.MeasureLong.create("opencensus.io/http/client/sent_bytes", "Client-side total bytes sent in request body (uncompressed)", UNIT_SIZE_BYTE);

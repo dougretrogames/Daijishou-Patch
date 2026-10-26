@@ -36,12 +36,12 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.SerializersKt;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: NavGraph.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: NavGraph.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(d1 = {"\u0000\u0080\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u001c\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\f\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\u0011\n\u0000\n\u0002\u0010\u001e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\u0010\u0000\n\u0002\b\r\n\u0002\u0010)\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0016\u0018\u0000 L2\u00020\u00012\b\u0012\u0004\u0012\u00020\u00010\u0002:\u0001LB\u0015\u0012\u000e\u0010\u0003\u001a\n\u0012\u0006\b\u0001\u0012\u00020\u00000\u0004¢\u0006\u0002\u0010\u0005J\u000e\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u0000J\u000e\u0010 \u001a\u00020\u001e2\u0006\u0010!\u001a\u00020\u0001J\u001f\u0010\"\u001a\u00020\u001e2\u0012\u0010\n\u001a\n\u0012\u0006\b\u0001\u0012\u00020\u00010#\"\u00020\u0001¢\u0006\u0002\u0010$J\u0016\u0010\"\u001a\u00020\u001e2\u000e\u0010\n\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010%J\u0006\u0010&\u001a\u00020\u001eJ\u0013\u0010'\u001a\u00020(2\b\u0010\u001f\u001a\u0004\u0018\u00010)H\u0096\u0002J\u0013\u0010*\u001a\u0004\u0018\u00010\u0001\"\u0006\b\u0000\u0010+\u0018\u0001H\u0086\bJ\u001d\u0010*\u001a\u0004\u0018\u00010\u0001\"\u0004\b\u0000\u0010+2\b\u0010,\u001a\u0004\u0018\u0001H+¢\u0006\u0002\u0010-J\u0012\u0010*\u001a\u0004\u0018\u00010\u00012\b\b\u0001\u0010.\u001a\u00020\u0011J\u001a\u0010*\u001a\u0004\u0018\u00010\u00012\u0006\u0010,\u001a\u00020\u00072\u0006\u0010/\u001a\u00020(H\u0007J\u0012\u0010*\u001a\u0004\u0018\u00010\u00012\b\u0010,\u001a\u0004\u0018\u00010\u0007J2\u00100\u001a\u0004\u0018\u00010\u00012\b\b\u0001\u0010.\u001a\u00020\u00112\b\u00101\u001a\u0004\u0018\u00010\u00012\u0006\u00102\u001a\u00020(2\n\b\u0002\u00103\u001a\u0004\u0018\u00010\u0001H\u0007J\b\u00104\u001a\u00020\u0011H\u0007J\b\u00105\u001a\u00020\u0011H\u0016J\u000f\u00106\u001a\b\u0012\u0004\u0012\u00020\u000107H\u0086\u0002J\u0012\u00108\u001a\u0004\u0018\u0001092\u0006\u0010:\u001a\u00020;H\u0017J*\u0010<\u001a\u0004\u0018\u0001092\u0006\u0010:\u001a\u00020;2\u0006\u00102\u001a\u00020(2\u0006\u0010=\u001a\u00020(2\u0006\u00101\u001a\u00020\u0001H\u0007J*\u0010>\u001a\u0004\u0018\u0001092\u0006\u0010,\u001a\u00020\u00072\u0006\u00102\u001a\u00020(2\u0006\u0010=\u001a\u00020(2\u0006\u00101\u001a\u00020\u0001H\u0007J\u0018\u0010?\u001a\u00020\u001e2\u0006\u0010@\u001a\u00020A2\u0006\u0010B\u001a\u00020CH\u0016J\u000e\u0010D\u001a\u00020\u001e2\u0006\u0010!\u001a\u00020\u0001J\u0015\u0010E\u001a\u00020\u001e\"\n\b\u0000\u0010+\u0018\u0001*\u00020)H\u0086\bJ\u001d\u0010E\u001a\u00020\u001e\"\b\b\u0000\u0010+*\u00020)2\u0006\u0010\u0018\u001a\u0002H+¢\u0006\u0002\u0010FJ\u000e\u0010E\u001a\u00020\u001e2\u0006\u0010\u0010\u001a\u00020\u0011J\u000e\u0010E\u001a\u00020\u001e2\u0006\u0010\u0018\u001a\u00020\u0007J0\u0010E\u001a\u00020\u001e\"\u0004\b\u0000\u0010+2\f\u0010G\u001a\b\u0012\u0004\u0012\u0002H+0H2\u0012\u0010I\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00070JH\u0007J\b\u0010K\u001a\u00020\u0007H\u0016R\u0014\u0010\u0006\u001a\u00020\u00078WX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\tR\u0019\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00010\u000b8G¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0011\u0010\u000e\u001a\u00020\u00078G¢\u0006\u0006\u001a\u0004\b\u000f\u0010\tR\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0012\u001a\u0004\u0018\u00010\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R$\u0010\u0013\u001a\u00020\u00112\u0006\u0010\u0010\u001a\u00020\u00118G@BX\u0086\u000e¢\u0006\f\u001a\u0004\b\u0014\u0010\u0015\"\u0004\b\u0016\u0010\u0017R(\u0010\u0019\u001a\u0004\u0018\u00010\u00072\b\u0010\u0018\u001a\u0004\u0018\u00010\u0007@BX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001a\u0010\t\"\u0004\b\u001b\u0010\u001c¨\u0006M"}, d2 = {"Landroidx/navigation/NavGraph;", "Landroidx/navigation/NavDestination;", "", "navGraphNavigator", "Landroidx/navigation/Navigator;", "(Landroidx/navigation/Navigator;)V", "displayName", "", "getDisplayName", "()Ljava/lang/String;", "nodes", "Landroidx/collection/SparseArrayCompat;", "getNodes", "()Landroidx/collection/SparseArrayCompat;", "startDestDisplayName", "getStartDestDisplayName", "startDestId", "", "startDestIdName", "startDestinationId", "getStartDestinationId", "()I", "setStartDestinationId", "(I)V", "startDestRoute", "startDestinationRoute", "getStartDestinationRoute", "setStartDestinationRoute", "(Ljava/lang/String;)V", "addAll", "", "other", "addDestination", "node", "addDestinations", "", "([Landroidx/navigation/NavDestination;)V", "", "clear", "equals", "", "", "findNode", ExifInterface.GPS_DIRECTION_TRUE, "route", "(Ljava/lang/Object;)Landroidx/navigation/NavDestination;", "resId", "searchParents", "findNodeComprehensive", "lastVisited", "searchChildren", "matchingDest", "getStartDestination", "hashCode", "iterator", "", "matchDeepLink", "Landroidx/navigation/NavDestination$DeepLinkMatch;", "navDeepLinkRequest", "Landroidx/navigation/NavDeepLinkRequest;", "matchDeepLinkComprehensive", "searchParent", "matchRouteComprehensive", "onInflate", "context", "Landroid/content/Context;", "attrs", "Landroid/util/AttributeSet;", "remove", "setStartDestination", "(Ljava/lang/Object;)V", "serializer", "Lkotlinx/serialization/KSerializer;", "parseRoute", "Lkotlin/Function1;", "toString", "Companion", "navigation-common_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public class NavGraph extends NavDestination implements Iterable<NavDestination>, KMappedMarker {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private final SparseArrayCompat<NavDestination> nodes;
     private int startDestId;
@@ -53,7 +53,7 @@ public class NavGraph extends NavDestination implements Iterable<NavDestination>
         return INSTANCE.findStartDestination(navGraph);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public NavGraph(Navigator<? extends NavGraph> navGraphNavigator) {
         super(navGraphNavigator);
         Intrinsics.checkNotNullParameter(navGraphNavigator, "navGraphNavigator");
@@ -197,7 +197,7 @@ public class NavGraph extends NavDestination implements Iterable<NavDestination>
         return navGraph.findNodeComprehensive(i, navDestination, z, navDestination2);
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:10:0x0022, code lost:
+    /* WARN: Code restructure failed: missing block: B:10:0x0022, code lost:
     
         if (r0 != null) goto L11;
      */
@@ -326,8 +326,8 @@ public class NavGraph extends NavDestination implements Iterable<NavDestination>
         return parent.findNode(route);
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavGraph$iterator$1, reason: invalid class name */
-    /* JADX INFO: compiled from: NavGraph.kt */
+    /* INFO: renamed from: androidx.navigation.NavGraph$iterator$1, reason: invalid class name */
+    /* INFO: compiled from: NavGraph.kt */
     @Metadata(d1 = {"\u0000#\n\u0000\n\u0002\u0010)\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001J\t\u0010\u0007\u001a\u00020\u0006H\u0096\u0002J\t\u0010\b\u001a\u00020\u0002H\u0096\u0002J\b\u0010\t\u001a\u00020\nH\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u000b"}, d2 = {"androidx/navigation/NavGraph$iterator$1", "", "Landroidx/navigation/NavDestination;", ConfigConstants.CONFIG_INDEX_SECTION, "", "wentToNext", "", "hasNext", "next", "remove", "", "navigation-common_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class AnonymousClass1 implements Iterator<NavDestination>, KMutableIterator {
         private int index = -1;
@@ -341,7 +341,7 @@ public class NavGraph extends NavDestination implements Iterable<NavDestination>
             return this.index + 1 < NavGraph.this.getNodes().size();
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.Iterator
         public NavDestination next() {
             if (!hasNext()) {
@@ -409,7 +409,7 @@ public class NavGraph extends NavDestination implements Iterable<NavDestination>
         return getStartDestId();
     }
 
-    /* JADX INFO: renamed from: getStartDestinationId, reason: from getter */
+    /* INFO: renamed from: getStartDestinationId, reason: from getter */
     public final int getStartDestId() {
         return this.startDestId;
     }
@@ -434,8 +434,8 @@ public class NavGraph extends NavDestination implements Iterable<NavDestination>
         setStartDestinationRoute(startDestRoute);
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavGraph$setStartDestination$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: NavGraph.kt */
+    /* INFO: renamed from: androidx.navigation.NavGraph$setStartDestination$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: NavGraph.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\n\b\u0000\u0010\u0002\u0018\u0001*\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "startDestination", "Landroidx/navigation/NavDestination;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 176)
     public static final class C01781 extends Lambda implements Function1<NavDestination, String> {
         public static final C01781 INSTANCE = new C01781();
@@ -453,20 +453,20 @@ public class NavGraph extends NavDestination implements Iterable<NavDestination>
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public final /* synthetic */ <T> void setStartDestination() {
         Intrinsics.reifiedOperationMarker(6, ExifInterface.GPS_DIRECTION_TRUE);
         MagicApiIntrinsics.voidMagicApiCall("kotlinx.serialization.serializer.simple");
         setStartDestination(SerializersKt.serializer((KType) null), C01781.INSTANCE);
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavGraph$setStartDestination$2, reason: invalid class name */
-    /* JADX INFO: compiled from: NavGraph.kt */
+    /* INFO: renamed from: androidx.navigation.NavGraph$setStartDestination$2, reason: invalid class name */
+    /* INFO: compiled from: NavGraph.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "startDestination", "Landroidx/navigation/NavDestination;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda implements Function1<NavDestination, String> {
         final /* synthetic */ T $startDestRoute;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(T t) {
             super(1);
             this.$startDestRoute = t;
@@ -597,7 +597,7 @@ public class NavGraph extends NavDestination implements Iterable<NavDestination>
         return startDestId;
     }
 
-    /* JADX INFO: compiled from: NavGraph.kt */
+    /* INFO: compiled from: NavGraph.kt */
     @Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0012\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004*\u00020\u0006H\u0007J\f\u0010\u0007\u001a\u00020\u0005*\u00020\u0006H\u0007¨\u0006\b"}, d2 = {"Landroidx/navigation/NavGraph$Companion;", "", "()V", "childHierarchy", "Lkotlin/sequences/Sequence;", "Landroidx/navigation/NavDestination;", "Landroidx/navigation/NavGraph;", "findStartDestination", "navigation-common_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {

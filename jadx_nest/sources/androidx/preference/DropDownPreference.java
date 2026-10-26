@@ -9,14 +9,14 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DropDownPreference extends ListPreference {
     private final ArrayAdapter mAdapter;
     private final Context mContext;
     private final AdapterView.OnItemSelectedListener mItemSelectedListener;
     private Spinner mSpinner;
 
-    /* JADX INFO: renamed from: androidx.preference.DropDownPreference$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.DropDownPreference$1, reason: invalid class name */
     class AnonymousClass1 implements AdapterView.OnItemSelectedListener {
         @Override // android.widget.AdapterView.OnItemSelectedListener
         public void onNothingSelected(AdapterView<?> adapterView) {

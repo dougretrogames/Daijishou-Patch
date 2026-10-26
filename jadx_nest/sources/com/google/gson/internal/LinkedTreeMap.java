@@ -16,7 +16,7 @@ import java.util.NoSuchElementException;
 import java.util.Objects;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class LinkedTreeMap<K, V> extends AbstractMap<K, V> implements Serializable {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private static final Comparator<Comparable> NATURAL_ORDER = new AnonymousClass1();
@@ -29,7 +29,7 @@ public final class LinkedTreeMap<K, V> extends AbstractMap<K, V> implements Seri
     Node<K, V> root;
     int size;
 
-    /* JADX INFO: renamed from: com.google.gson.internal.LinkedTreeMap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.LinkedTreeMap$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<Comparable> {
         AnonymousClass1() {
         }
@@ -158,7 +158,7 @@ public final class LinkedTreeMap<K, V> extends AbstractMap<K, V> implements Seri
         return node;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     Node<K, V> findByObject(Object obj) {
         if (obj != 0) {
             try {
@@ -502,7 +502,7 @@ public final class LinkedTreeMap<K, V> extends AbstractMap<K, V> implements Seri
             return LinkedTreeMap.this.size;
         }
 
-        /* JADX INFO: renamed from: com.google.gson.internal.LinkedTreeMap$EntrySet$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.gson.internal.LinkedTreeMap$EntrySet$1, reason: invalid class name */
         class AnonymousClass1 extends LinkedTreeMap<K, V>.LinkedTreeMapIterator<Map.Entry<K, V>> {
             AnonymousClass1() {
                 super();
@@ -549,7 +549,7 @@ public final class LinkedTreeMap<K, V> extends AbstractMap<K, V> implements Seri
             return LinkedTreeMap.this.size;
         }
 
-        /* JADX INFO: renamed from: com.google.gson.internal.LinkedTreeMap$KeySet$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.gson.internal.LinkedTreeMap$KeySet$1, reason: invalid class name */
         class AnonymousClass1 extends LinkedTreeMap<K, V>.LinkedTreeMapIterator<K> {
             AnonymousClass1() {
                 super();

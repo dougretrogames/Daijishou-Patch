@@ -19,7 +19,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.lib.StoredConfig;
 import org.eclipse.jgit.storage.pack.PackConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class GarbageCollectCommand extends GitCommand<Properties> {
     public static final int DEFAULT_GC_AGGRESSIVE_DEPTH = 250;
     public static final int DEFAULT_GC_AGGRESSIVE_WINDOW = 250;

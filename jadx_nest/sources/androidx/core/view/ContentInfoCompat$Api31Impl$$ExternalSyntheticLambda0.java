@@ -3,8 +3,8 @@ package androidx.core.view;
 import android.content.ClipData;
 import androidx.core.util.Predicate;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class ContentInfoCompat$Api31Impl$$ExternalSyntheticLambda0 implements Predicate {
     public final /* synthetic */ java.util.function.Predicate f$0;
 

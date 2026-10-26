@@ -4,7 +4,7 @@ import com.bumptech.glide.util.LruCache;
 import com.bumptech.glide.util.Util;
 import java.util.Queue;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ModelCache<A, B> {
     private static final int DEFAULT_SIZE = 250;
     private final LruCache<ModelKey<A>, B> cache;
@@ -17,13 +17,13 @@ public class ModelCache<A, B> {
         this.cache = new AnonymousClass1(j);
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.model.ModelCache$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.model.ModelCache$1, reason: invalid class name */
     class AnonymousClass1 extends LruCache<ModelKey<A>, B> {
         AnonymousClass1(long j) {
             super(j);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.bumptech.glide.util.LruCache
         public void onItemEvicted(ModelKey<A> modelKey, B b) {
             modelKey.release();

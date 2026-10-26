@@ -27,8 +27,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.StringCompanionObject;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: DownloadPlatformThumbnailsPackDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DownloadPlatformThumbnailsPackDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1", f = "DownloadPlatformThumbnailsPackDialogFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
 final class DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -38,7 +38,7 @@ final class DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1 extends c
     int label;
     final /* synthetic */ DownloadPlatformThumbnailsPackDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1(PlatformThumbnailsPackIndexJson platformThumbnailsPackIndexJson, DownloadPlatformThumbnailsPackDialogFragment downloadPlatformThumbnailsPackDialogFragment, Dialog dialog, String str, Continuation<?> continuation) {
         super(2, continuation);
         this.$it = platformThumbnailsPackIndexJson;
@@ -132,7 +132,7 @@ final class DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1 extends c
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void invokeSuspendImpl$lambda$0(DownloadPlatformThumbnailsPackDialogFragment downloadPlatformThumbnailsPackDialogFragment, String str, View view) {
         AcknowledgementDialogFragment.Companion.newInstance$default(AcknowledgementDialogFragment.INSTANCE, downloadPlatformThumbnailsPackDialogFragment.getString(R.string.are_you_sure), "This will replace your all of your thumbnails.", null, null, null, 28, null).setOnAcknowledgedListener(new DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1$1$1(downloadPlatformThumbnailsPackDialogFragment, str)).setOnCanceledListener(DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1$1$2.INSTANCE).show(downloadPlatformThumbnailsPackDialogFragment.getParentFragmentManager(), AcknowledgementDialogFragment.class.getName());
     }

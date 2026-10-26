@@ -18,7 +18,7 @@ import com.google.android.material.internal.ManufacturerUtils;
 import com.google.android.material.internal.ThemeEnforcement;
 import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TextInputEditText extends AppCompatEditText {
     private final Rect parentRect;
     private boolean textInputLayoutFocusedRectEnabled;

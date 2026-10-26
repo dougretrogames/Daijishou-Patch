@@ -11,7 +11,7 @@ import android.view.animation.Interpolator;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SimpleItemAnimator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class BaseGridView extends RecyclerView {
     public static final int FOCUS_SCROLL_ALIGNED = 0;
     public static final int FOCUS_SCROLL_ITEM = 1;
@@ -83,7 +83,7 @@ public abstract class BaseGridView extends RecyclerView {
         super.addRecyclerListener(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.BaseGridView$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.BaseGridView$1, reason: invalid class name */
     class AnonymousClass1 implements RecyclerView.RecyclerListener {
         AnonymousClass1() {
         }
@@ -310,7 +310,7 @@ public abstract class BaseGridView extends RecyclerView {
         setSelectedPositionSmooth(i);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.BaseGridView$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.BaseGridView$2, reason: invalid class name */
     class AnonymousClass2 extends OnChildViewHolderSelectedListener {
         final /* synthetic */ int val$position;
         final /* synthetic */ ViewHolderTask val$task;
@@ -341,7 +341,7 @@ public abstract class BaseGridView extends RecyclerView {
         setSelectedPosition(i);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.BaseGridView$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.BaseGridView$3, reason: invalid class name */
     class AnonymousClass3 extends OnChildViewHolderSelectedListener {
         final /* synthetic */ int val$position;
         final /* synthetic */ ViewHolderTask val$task;

@@ -4,7 +4,7 @@ import androidx.core.app.NotificationCompat;
 import io.opencensus.internal.Utils;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class BlankSpan extends Span {
     public static final BlankSpan INSTANCE = new BlankSpan();
 

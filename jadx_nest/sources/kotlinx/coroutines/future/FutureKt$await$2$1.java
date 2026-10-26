@@ -7,14 +7,14 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: Future.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: Future.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u0003\n\u0000\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u00022\b\u0010\u0003\u001a\u0004\u0018\u00010\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class FutureKt$await$2$1 extends Lambda implements Function1<Throwable, Unit> {
     final /* synthetic */ ContinuationHandler<T> $consumer;
     final /* synthetic */ CompletableFuture<T> $future;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     FutureKt$await$2$1(CompletableFuture<T> completableFuture, ContinuationHandler<T> continuationHandler) {
         super(1);
         this.$future = completableFuture;
@@ -27,7 +27,7 @@ final class FutureKt$await$2$1 extends Lambda implements Function1<Throwable, Un
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(Throwable th) {
         this.$future.cancel(false);
         this.$consumer.cont = null;

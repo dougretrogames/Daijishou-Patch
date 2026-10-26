@@ -3,7 +3,7 @@ package com.google.auth.oauth2;
 import com.google.common.base.Preconditions;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class OAuth2CredentialsWithRefresh extends OAuth2Credentials {
     private final OAuth2RefreshHandler refreshHandler;
 

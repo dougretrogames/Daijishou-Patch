@@ -5,10 +5,10 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ForwardingMultimap<K, V> extends ForwardingObject implements Multimap<K, V> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingObject
     public abstract Multimap<K, V> delegate();
 

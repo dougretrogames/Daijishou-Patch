@@ -18,8 +18,8 @@ import okio.BufferedSink;
 import okio.Okio;
 import org.apache.http.protocol.HTTP;
 
-/* JADX INFO: compiled from: CallServerInterceptor.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: CallServerInterceptor.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0016J\u0010\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u000bH\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, d2 = {"Lokhttp3/internal/http/CallServerInterceptor;", "Lokhttp3/Interceptor;", "forWebSocket", "", "(Z)V", "intercept", "Lokhttp3/Response;", "chain", "Lokhttp3/Interceptor$Chain;", "shouldIgnoreAndWaitForRealResponse", "code", "", "okhttp"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class CallServerInterceptor implements Interceptor {
     private final boolean forWebSocket;
@@ -35,27 +35,27 @@ public final class CallServerInterceptor implements Interceptor {
         this.forWebSocket = z;
     }
 
-    /* JADX WARN: Code duplicated, block: B:28:0x0095 A[Catch: IOException -> 0x009a, TRY_LEAVE, TryCatch #0 {IOException -> 0x009a, blocks: (B:15:0x0053, B:17:0x0059, B:26:0x008f, B:28:0x0095, B:18:0x0068, B:19:0x0077, B:21:0x0084), top: B:82:0x002e }] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r10v0 */
-    /* JADX WARN: Type inference failed for: r10v1 */
-    /* JADX WARN: Type inference failed for: r10v13, types: [boolean] */
-    /* JADX WARN: Type inference failed for: r10v14 */
-    /* JADX WARN: Type inference failed for: r10v15 */
-    /* JADX WARN: Type inference failed for: r10v16 */
-    /* JADX WARN: Type inference failed for: r10v19 */
-    /* JADX WARN: Type inference failed for: r10v2 */
-    /* JADX WARN: Type inference failed for: r10v20 */
-    /* JADX WARN: Type inference failed for: r10v21, types: [okhttp3.Response$Builder] */
-    /* JADX WARN: Type inference failed for: r10v22 */
-    /* JADX WARN: Type inference failed for: r10v23 */
-    /* JADX WARN: Type inference failed for: r10v24 */
-    /* JADX WARN: Type inference failed for: r10v25 */
-    /* JADX WARN: Type inference failed for: r10v26 */
-    /* JADX WARN: Type inference failed for: r10v27 */
-    /* JADX WARN: Type inference failed for: r10v28 */
-    /* JADX WARN: Type inference failed for: r10v3, types: [java.lang.Object, okhttp3.Response$Builder] */
-    /* JADX WARN: Type inference failed for: r10v4, types: [okhttp3.Response$Builder] */
+    /* WARN: Code duplicated, block: B:28:0x0095 A[Catch: IOException -> 0x009a, TRY_LEAVE, TryCatch #0 {IOException -> 0x009a, blocks: (B:15:0x0053, B:17:0x0059, B:26:0x008f, B:28:0x0095, B:18:0x0068, B:19:0x0077, B:21:0x0084), top: B:82:0x002e }] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r10v0 */
+    /* WARN: Type inference failed for: r10v1 */
+    /* WARN: Type inference failed for: r10v13, types: [boolean] */
+    /* WARN: Type inference failed for: r10v14 */
+    /* WARN: Type inference failed for: r10v15 */
+    /* WARN: Type inference failed for: r10v16 */
+    /* WARN: Type inference failed for: r10v19 */
+    /* WARN: Type inference failed for: r10v2 */
+    /* WARN: Type inference failed for: r10v20 */
+    /* WARN: Type inference failed for: r10v21, types: [okhttp3.Response$Builder] */
+    /* WARN: Type inference failed for: r10v22 */
+    /* WARN: Type inference failed for: r10v23 */
+    /* WARN: Type inference failed for: r10v24 */
+    /* WARN: Type inference failed for: r10v25 */
+    /* WARN: Type inference failed for: r10v26 */
+    /* WARN: Type inference failed for: r10v27 */
+    /* WARN: Type inference failed for: r10v28 */
+    /* WARN: Type inference failed for: r10v3, types: [java.lang.Object, okhttp3.Response$Builder] */
+    /* WARN: Type inference failed for: r10v4, types: [okhttp3.Response$Builder] */
     @Override // okhttp3.Interceptor
     public Response intercept(Interceptor.Chain chain) throws IOException {
         boolean z;

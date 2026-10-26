@@ -7,7 +7,7 @@ import org.apache.http.ParseException;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BufferedHeader implements FormattedHeader, Cloneable, Serializable {
     private static final long serialVersionUID = -2768352615787625448L;
     private final CharArrayBuffer buffer;

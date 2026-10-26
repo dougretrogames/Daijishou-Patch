@@ -6,7 +6,7 @@ import java.nio.charset.CharsetEncoder;
 import java.nio.charset.CodingErrorAction;
 import org.apache.http.config.ConnectionConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ConnSupport {
     public static CharsetDecoder createDecoder(ConnectionConfig connectionConfig) {
         if (connectionConfig == null) {

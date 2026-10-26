@@ -8,7 +8,7 @@ import java.util.Optional;
 import javax.annotation.Nullable;
 import okhttp3.ResponseBody;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public final class OptionalConverterFactory extends Converter.Factory {
     public static OptionalConverterFactory create() {
         return new OptionalConverterFactory();

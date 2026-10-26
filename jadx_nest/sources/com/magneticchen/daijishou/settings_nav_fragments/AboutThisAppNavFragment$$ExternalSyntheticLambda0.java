@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.settings_nav_fragments;
 import android.view.View;
 import android.widget.ImageView;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class AboutThisAppNavFragment$$ExternalSyntheticLambda0 implements View.OnScrollChangeListener {
     public final /* synthetic */ AboutThisAppNavFragment f$0;
     public final /* synthetic */ ImageView f$1;

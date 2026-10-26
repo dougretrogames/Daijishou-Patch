@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 abstract class AllocatedBuffer {
     public abstract byte[] array();
@@ -42,7 +42,7 @@ abstract class AllocatedBuffer {
         return new AnonymousClass1(buffer);
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.AllocatedBuffer$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.AllocatedBuffer$1, reason: invalid class name */
     class AnonymousClass1 extends AllocatedBuffer {
         final /* synthetic */ ByteBuffer val$buffer;
 
@@ -97,7 +97,7 @@ abstract class AllocatedBuffer {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.AllocatedBuffer$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.AllocatedBuffer$2, reason: invalid class name */
     class AnonymousClass2 extends AllocatedBuffer {
         private int position;
         final /* synthetic */ byte[] val$bytes;

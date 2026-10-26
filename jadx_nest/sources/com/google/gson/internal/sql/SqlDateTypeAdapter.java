@@ -14,12 +14,12 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class SqlDateTypeAdapter extends TypeAdapter<Date> {
     static final TypeAdapterFactory FACTORY = new AnonymousClass1();
     private final DateFormat format;
 
-    /* JADX INFO: renamed from: com.google.gson.internal.sql.SqlDateTypeAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.sql.SqlDateTypeAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements TypeAdapterFactory {
         AnonymousClass1() {
         }

@@ -2,7 +2,7 @@ package org.apache.commons.collections4.bloomfilter;
 
 import java.util.function.LongPredicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class CountingLongPredicate implements LongPredicate {
     private final long[] ary;
     private final LongBiPredicate func;

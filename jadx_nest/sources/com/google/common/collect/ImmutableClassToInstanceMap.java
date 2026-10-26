@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable(containerOf = {"B"})
 @ElementTypesAreNonnullByDefault
 public final class ImmutableClassToInstanceMap<B> extends ForwardingMap<Class<? extends B>, B> implements ClassToInstanceMap<B>, Serializable {
@@ -71,7 +71,7 @@ public final class ImmutableClassToInstanceMap<B> extends ForwardingMap<Class<? 
         this.delegate = delegate;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingMap, com.google.common.collect.ForwardingObject
     public Map<Class<? extends B>, B> delegate() {
         return this.delegate;

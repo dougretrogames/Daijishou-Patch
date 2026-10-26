@@ -20,7 +20,7 @@ import java.util.SortedMap;
 import java.util.SortedSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractMapBasedMultimap<K, V> extends AbstractMultimap<K, V> implements Serializable {
     private static final long serialVersionUID = 2447537837011683357L;
@@ -422,7 +422,7 @@ abstract class AbstractMapBasedMultimap<K, V> extends AbstractMultimap<K, V> imp
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> Iterator<E> iteratorOrListIterator(Collection<E> collection) {
         if (collection instanceof List) {
             return ((List) collection).listIterator();
@@ -503,7 +503,7 @@ abstract class AbstractMapBasedMultimap<K, V> extends AbstractMultimap<K, V> imp
             super(key, delegate, ancestor);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.AbstractMapBasedMultimap.WrappedSortedSet
         public NavigableSet<V> getSortedSetDelegate() {
             return (NavigableSet) super.getSortedSetDelegate();
@@ -659,7 +659,7 @@ abstract class AbstractMapBasedMultimap<K, V> extends AbstractMultimap<K, V> imp
             return new WrappedListIterator(index);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.List
         public List<V> subList(int fromIndex, int toIndex) {
             refreshIfEmpty();
@@ -744,7 +744,7 @@ abstract class AbstractMapBasedMultimap<K, V> extends AbstractMultimap<K, V> imp
             super(subMap);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.AbstractMapBasedMultimap$KeySet$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.AbstractMapBasedMultimap$KeySet$1, reason: invalid class name */
         class AnonymousClass1 implements Iterator<K> {
 
             @CheckForNull
@@ -864,7 +864,7 @@ abstract class AbstractMapBasedMultimap<K, V> extends AbstractMultimap<K, V> imp
             super(subMap);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.AbstractMapBasedMultimap.SortedKeySet
         public NavigableMap<K, Collection<V>> sortedMap() {
             return (NavigableMap) super.sortedMap();
@@ -947,7 +947,7 @@ abstract class AbstractMapBasedMultimap<K, V> extends AbstractMultimap<K, V> imp
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void removeValuesForKey(@CheckForNull Object key) {
         Collection collection = (Collection) Maps.safeRemove(this.map, key);
         if (collection != null) {
@@ -1011,7 +1011,7 @@ abstract class AbstractMapBasedMultimap<K, V> extends AbstractMultimap<K, V> imp
         return new AbstractMultimap.Values();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.AbstractMapBasedMultimap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.AbstractMapBasedMultimap$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractMapBasedMultimap<K, V>.Itr<V> {
         @Override // com.google.common.collect.AbstractMapBasedMultimap.Itr
         @ParametricNullness
@@ -1047,13 +1047,13 @@ abstract class AbstractMapBasedMultimap<K, V> extends AbstractMultimap<K, V> imp
         return new AbstractMultimap.Entries();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.AbstractMapBasedMultimap$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.AbstractMapBasedMultimap$2, reason: invalid class name */
     class AnonymousClass2 extends AbstractMapBasedMultimap<K, V>.Itr<Map.Entry<K, V>> {
         AnonymousClass2(final AbstractMapBasedMultimap this$0) {
             super();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.AbstractMapBasedMultimap.Itr
         public Map.Entry<K, V> output(@ParametricNullness K key, @ParametricNullness V value) {
             return Maps.immutableEntry(key, value);
@@ -1277,7 +1277,7 @@ abstract class AbstractMapBasedMultimap<K, V> extends AbstractMultimap<K, V> imp
             return sortedSetCreateKeySet;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Maps.ViewCachingAbstractMap
         public SortedSet<K> createKeySet() {
             return new SortedKeySet(sortedMap());
@@ -1289,7 +1289,7 @@ abstract class AbstractMapBasedMultimap<K, V> extends AbstractMultimap<K, V> imp
             super(submap);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.AbstractMapBasedMultimap.SortedAsMap
         public NavigableMap<K, Collection<V>> sortedMap() {
             return (NavigableMap) super.sortedMap();
@@ -1413,7 +1413,7 @@ abstract class AbstractMapBasedMultimap<K, V> extends AbstractMultimap<K, V> imp
             return (NavigableSet) super.keySet();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.AbstractMapBasedMultimap.SortedAsMap, com.google.common.collect.Maps.ViewCachingAbstractMap
         public NavigableSet<K> createKeySet() {
             return new NavigableKeySet(sortedMap());

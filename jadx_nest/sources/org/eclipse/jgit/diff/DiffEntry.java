@@ -16,7 +16,7 @@ import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.filter.TreeFilter;
 import org.eclipse.jgit.treewalk.filter.TreeFilterMarker;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DiffEntry {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$diff$DiffEntry$ChangeType = null;
     static final AbbreviatedObjectId A_ZERO = AbbreviatedObjectId.fromObjectId(ObjectId.zeroId());
@@ -39,7 +39,7 @@ public class DiffEntry {
         RENAME,
         COPY;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static ChangeType[] valuesCustom() {
             ChangeType[] changeTypeArrValuesCustom = values();
             int length = changeTypeArrValuesCustom.length;
@@ -53,7 +53,7 @@ public class DiffEntry {
         OLD,
         NEW;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Side[] valuesCustom() {
             Side[] sideArrValuesCustom = values();
             int length = sideArrValuesCustom.length;

@@ -18,8 +18,8 @@ import kotlinx.serialization.internal.SerializationConstructorMarker;
 import kotlinx.serialization.internal.StringSerializer;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0017\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 .2\u00020\u0001:\u0002-.BY\b\u0011\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u000e\u0010\u0004\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0005\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\b\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\t\u001a\u0004\u0018\u00010\u0006\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\b\u0010\r\u001a\u0004\u0018\u00010\u000e¢\u0006\u0002\u0010\u000fB=\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\b\u001a\u00020\u0006\u0012\u0006\u0010\t\u001a\u00020\u0006\u0012\u0006\u0010\n\u001a\u00020\u0006\u0012\b\b\u0002\u0010\u000b\u001a\u00020\f¢\u0006\u0002\u0010\u0010J\u000f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005HÆ\u0003J\t\u0010\u001b\u001a\u00020\u0006HÆ\u0003J\t\u0010\u001c\u001a\u00020\u0006HÆ\u0003J\t\u0010\u001d\u001a\u00020\u0006HÆ\u0003J\t\u0010\u001e\u001a\u00020\u0006HÆ\u0003J\t\u0010\u001f\u001a\u00020\fHÆ\u0003JK\u0010 \u001a\u00020\u00002\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00062\b\b\u0002\u0010\b\u001a\u00020\u00062\b\b\u0002\u0010\t\u001a\u00020\u00062\b\b\u0002\u0010\n\u001a\u00020\u00062\b\b\u0002\u0010\u000b\u001a\u00020\fHÆ\u0001J\u0013\u0010!\u001a\u00020\f2\b\u0010\"\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010#\u001a\u00020\u0003HÖ\u0001J\t\u0010$\u001a\u00020\u0006HÖ\u0001J&\u0010%\u001a\u00020&2\u0006\u0010'\u001a\u00020\u00002\u0006\u0010(\u001a\u00020)2\u0006\u0010*\u001a\u00020+HÁ\u0001¢\u0006\u0002\b,R\u0017\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\n\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0011\u0010\u0007\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0014R\u0011\u0010\t\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0014R\u0011\u0010\b\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0014¨\u0006/"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson;", "", "seen1", "", "platformWallpapersPackAuthors", "", "", "platformWallpapersPackName", "platformWallpapersPackRootPath", "platformWallpapersPackPreviewThumbnailPath", "platformWallpapersPackDescription", "platformWallpapersPackIsNSFW", "", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V", "getPlatformWallpapersPackAuthors", "()Ljava/util/List;", "getPlatformWallpapersPackDescription", "()Ljava/lang/String;", "getPlatformWallpapersPackIsNSFW", "()Z", "getPlatformWallpapersPackName", "getPlatformWallpapersPackPreviewThumbnailPath", "getPlatformWallpapersPackRootPath", "component1", "component2", "component3", "component4", "component5", "component6", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$app_release", "$serializer", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 @Serializable
 public final /* data */ class PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson {
@@ -30,11 +30,11 @@ public final /* data */ class PlatformWallpapersPacksIndexPlatformWallpaperPackL
     private final String platformWallpapersPackPreviewThumbnailPath;
     private final String platformWallpapersPackRootPath;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public static final KSerializer[] $childSerializers = {new ArrayListSerializer(StringSerializer.INSTANCE), null, null, null, null, null};
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson copy$default(PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson platformWallpapersPacksIndexPlatformWallpaperPackListItemJson, List list, String str, String str2, String str3, String str4, boolean z, int i, Object obj) {
         if ((i & 1) != 0) {
             list = platformWallpapersPacksIndexPlatformWallpaperPackListItemJson.platformWallpapersPackAuthors;
@@ -63,27 +63,27 @@ public final /* data */ class PlatformWallpapersPacksIndexPlatformWallpaperPackL
         return this.platformWallpapersPackAuthors;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    /* INFO: renamed from: component2, reason: from getter */
     public final String getPlatformWallpapersPackName() {
         return this.platformWallpapersPackName;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    /* INFO: renamed from: component3, reason: from getter */
     public final String getPlatformWallpapersPackRootPath() {
         return this.platformWallpapersPackRootPath;
     }
 
-    /* JADX INFO: renamed from: component4, reason: from getter */
+    /* INFO: renamed from: component4, reason: from getter */
     public final String getPlatformWallpapersPackPreviewThumbnailPath() {
         return this.platformWallpapersPackPreviewThumbnailPath;
     }
 
-    /* JADX INFO: renamed from: component5, reason: from getter */
+    /* INFO: renamed from: component5, reason: from getter */
     public final String getPlatformWallpapersPackDescription() {
         return this.platformWallpapersPackDescription;
     }
 
-    /* JADX INFO: renamed from: component6, reason: from getter */
+    /* INFO: renamed from: component6, reason: from getter */
     public final boolean getPlatformWallpapersPackIsNSFW() {
         return this.platformWallpapersPackIsNSFW;
     }
@@ -116,7 +116,7 @@ public final /* data */ class PlatformWallpapersPacksIndexPlatformWallpaperPackL
         return "PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson(platformWallpapersPackAuthors=" + this.platformWallpapersPackAuthors + ", platformWallpapersPackName=" + this.platformWallpapersPackName + ", platformWallpapersPackRootPath=" + this.platformWallpapersPackRootPath + ", platformWallpapersPackPreviewThumbnailPath=" + this.platformWallpapersPackPreviewThumbnailPath + ", platformWallpapersPackDescription=" + this.platformWallpapersPackDescription + ", platformWallpapersPackIsNSFW=" + this.platformWallpapersPackIsNSFW + ")";
     }
 
-    /* JADX INFO: compiled from: PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson.kt */
+    /* INFO: compiled from: PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson.kt */
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {

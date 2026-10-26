@@ -3,7 +3,7 @@ package org.apache.commons.io;
 import java.io.IOException;
 import java.io.Serializable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TaggedIOException extends IOExceptionWithCause {
     private static final long serialVersionUID = -6994123481142850163L;
     private final Serializable tag;

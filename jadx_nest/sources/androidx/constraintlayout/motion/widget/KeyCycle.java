@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class KeyCycle extends Key {
     public static final int KEY_TYPE = 4;
     static final String NAME = "KeyCycle";
@@ -123,7 +123,7 @@ public class KeyCycle extends Key {
         }
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public float getValue(String str) {
         str.hashCode();
         byte b = -1;
@@ -237,7 +237,7 @@ public class KeyCycle extends Key {
         }
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     @Override // androidx.constraintlayout.motion.widget.Key
     public void addValues(HashMap<String, ViewSpline> map) {
         Debug.logStack(TypedValues.CycleType.NAME, "add " + map.size() + " values", 2);
@@ -424,7 +424,7 @@ public class KeyCycle extends Key {
             sAttrMap.append(R.styleable.KeyCycle_wavePhase, 21);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static void read(KeyCycle keyCycle, TypedArray typedArray) {
             int indexCount = typedArray.getIndexCount();
             for (int i = 0; i < indexCount; i++) {
@@ -519,7 +519,7 @@ public class KeyCycle extends Key {
         }
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     @Override // androidx.constraintlayout.motion.widget.Key
     public void setValue(String str, Object obj) {
         str.hashCode();
@@ -707,7 +707,7 @@ public class KeyCycle extends Key {
     }
 
     @Override // androidx.constraintlayout.motion.widget.Key
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public Key mo3143clone() {
         return new KeyCycle().copy(this);
     }

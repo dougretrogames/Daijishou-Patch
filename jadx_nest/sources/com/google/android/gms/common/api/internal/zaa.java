@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 final class zaa extends LifecycleCallback {
     private List zaa;
 
@@ -28,7 +28,7 @@ final class zaa extends LifecycleCallback {
         return zaaVar;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final synchronized void zac(Runnable runnable) {
         this.zaa.add(runnable);
     }

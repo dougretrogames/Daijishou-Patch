@@ -4,7 +4,7 @@ import com.bumptech.glide.load.Encoder;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class EncoderRegistry {
     private final List<Entry<?>> encoders = new ArrayList();
 

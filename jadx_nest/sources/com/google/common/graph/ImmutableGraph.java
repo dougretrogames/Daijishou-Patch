@@ -8,13 +8,13 @@ import com.google.common.collect.Maps;
 import com.google.errorprone.annotations.Immutable;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable(containerOf = {"N"})
 @ElementTypesAreNonnullByDefault
 public class ImmutableGraph<N> extends ForwardingGraph<N> {
     private final BaseGraph<N> backingGraph;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.ForwardingGraph, com.google.common.graph.BaseGraph, com.google.common.graph.Graph
     public /* bridge */ /* synthetic */ Set adjacentNodes(Object node) {
         return super.adjacentNodes(node);
@@ -25,7 +25,7 @@ public class ImmutableGraph<N> extends ForwardingGraph<N> {
         return super.allowsSelfLoops();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.ForwardingGraph, com.google.common.graph.AbstractGraph, com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ int degree(Object node) {
         return super.degree(node);
@@ -36,19 +36,19 @@ public class ImmutableGraph<N> extends ForwardingGraph<N> {
         return super.hasEdgeConnecting(endpoints);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.ForwardingGraph, com.google.common.graph.AbstractGraph, com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ boolean hasEdgeConnecting(Object nodeU, Object nodeV) {
         return super.hasEdgeConnecting(nodeU, nodeV);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.ForwardingGraph, com.google.common.graph.AbstractGraph, com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ int inDegree(Object node) {
         return super.inDegree(node);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.ForwardingGraph, com.google.common.graph.AbstractGraph, com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ Set incidentEdges(Object node) {
         return super.incidentEdges(node);
@@ -69,19 +69,19 @@ public class ImmutableGraph<N> extends ForwardingGraph<N> {
         return super.nodes();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.ForwardingGraph, com.google.common.graph.AbstractGraph, com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ int outDegree(Object node) {
         return super.outDegree(node);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.ForwardingGraph, com.google.common.graph.BaseGraph, com.google.common.graph.PredecessorsFunction, com.google.common.graph.Graph
     public /* bridge */ /* synthetic */ Set predecessors(Object node) {
         return super.predecessors(node);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.ForwardingGraph, com.google.common.graph.BaseGraph, com.google.common.graph.SuccessorsFunction, com.google.common.graph.Graph
     public /* bridge */ /* synthetic */ Set successors(Object node) {
         return super.successors(node);

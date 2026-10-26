@@ -9,7 +9,7 @@ import org.apache.http.Header;
 import org.apache.http.HeaderIterator;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HeaderGroup implements Cloneable, Serializable {
     private static final Header[] EMPTY = new Header[0];
     private static final long serialVersionUID = 2608834160639271617L;

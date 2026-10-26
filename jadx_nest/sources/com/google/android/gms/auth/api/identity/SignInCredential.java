@@ -9,8 +9,8 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 import com.google.android.gms.fido.fido2.api.common.PublicKeyCredential;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public final class SignInCredential extends AbstractSafeParcelable {
     public static final Parcelable.Creator<SignInCredential> CREATOR = new zbr();

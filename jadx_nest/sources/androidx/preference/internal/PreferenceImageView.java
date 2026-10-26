@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 import androidx.preference.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PreferenceImageView extends ImageView {
     private int mMaxHeight;
     private int mMaxWidth;

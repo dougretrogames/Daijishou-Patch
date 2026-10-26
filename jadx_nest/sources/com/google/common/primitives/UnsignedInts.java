@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.util.Arrays;
 import java.util.Comparator;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class UnsignedInts {
     static final long INT_MASK = 4294967295L;

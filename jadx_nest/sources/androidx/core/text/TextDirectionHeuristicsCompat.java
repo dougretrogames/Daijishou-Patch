@@ -3,7 +3,7 @@ package androidx.core.text;
 import java.nio.CharBuffer;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class TextDirectionHeuristicsCompat {
     private static final int STATE_FALSE = 1;
     private static final int STATE_TRUE = 0;

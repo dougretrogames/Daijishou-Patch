@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class FilteredEntryMultimap<K, V> extends AbstractMultimap<K, V> implements FilteredMultimap<K, V> {
     final Predicate<? super Map.Entry<K, V>> predicate;
@@ -38,7 +38,7 @@ class FilteredEntryMultimap<K, V> extends AbstractMultimap<K, V> implements Filt
         return entries().size();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean satisfies(@ParametricNullness K key, @ParametricNullness V value) {
         return this.predicate.apply(Maps.immutableEntry(key, value));
     }
@@ -189,7 +189,7 @@ class FilteredEntryMultimap<K, V> extends AbstractMultimap<K, V> implements Filt
             return Collections.unmodifiableList(arrayListNewArrayList);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.FilteredEntryMultimap$AsMap$1KeySetImpl, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.FilteredEntryMultimap$AsMap$1KeySetImpl, reason: invalid class name */
         class C1KeySetImpl extends Maps.KeySet<K, Collection<V>> {
             C1KeySetImpl() {
                 super(AsMap.this);
@@ -216,7 +216,7 @@ class FilteredEntryMultimap<K, V> extends AbstractMultimap<K, V> implements Filt
             return new C1KeySetImpl();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.FilteredEntryMultimap$AsMap$1EntrySetImpl, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.FilteredEntryMultimap$AsMap$1EntrySetImpl, reason: invalid class name */
         class C1EntrySetImpl extends Maps.EntrySet<K, Collection<V>> {
             C1EntrySetImpl() {
             }
@@ -226,7 +226,7 @@ class FilteredEntryMultimap<K, V> extends AbstractMultimap<K, V> implements Filt
                 return AsMap.this;
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.FilteredEntryMultimap$AsMap$1EntrySetImpl$1, reason: invalid class name */
+            /* INFO: renamed from: com.google.common.collect.FilteredEntryMultimap$AsMap$1EntrySetImpl$1, reason: invalid class name */
             class AnonymousClass1 extends AbstractIterator<Map.Entry<K, Collection<V>>> {
                 final Iterator<Map.Entry<K, Collection<V>>> backingIterator;
 
@@ -234,7 +234,7 @@ class FilteredEntryMultimap<K, V> extends AbstractMultimap<K, V> implements Filt
                     this.backingIterator = FilteredEntryMultimap.this.unfiltered.asMap().entrySet().iterator();
                 }
 
-                /* JADX INFO: Access modifiers changed from: protected */
+                /* INFO: Access modifiers changed from: protected */
                 @Override // com.google.common.collect.AbstractIterator
                 @CheckForNull
                 public Map.Entry<K, Collection<V>> computeNext() {
@@ -276,7 +276,7 @@ class FilteredEntryMultimap<K, V> extends AbstractMultimap<K, V> implements Filt
             return new C1EntrySetImpl();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.FilteredEntryMultimap$AsMap$1ValuesImpl, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.FilteredEntryMultimap$AsMap$1ValuesImpl, reason: invalid class name */
         class C1ValuesImpl extends Maps.Values<K, Collection<V>> {
             C1ValuesImpl() {
                 super(AsMap.this);
@@ -351,7 +351,7 @@ class FilteredEntryMultimap<K, V> extends AbstractMultimap<K, V> implements Filt
             return i;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.FilteredEntryMultimap$Keys$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.FilteredEntryMultimap$Keys$1, reason: invalid class name */
         class AnonymousClass1 extends Multisets.EntrySet<K> {
             AnonymousClass1() {
             }

@@ -5,7 +5,7 @@ import java.util.List;
 import org.eclipse.jgit.errors.InvalidPatternException;
 import org.eclipse.jgit.ignore.IMatcher;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PathMatcher extends AbstractMatcher {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$ignore$internal$Strings$PatternState;
     private static final WildMatcher WILD_NO_DIRECTORY = new WildMatcher(false);

@@ -18,7 +18,7 @@ import com.google.android.material.R;
 import com.google.android.material.motion.MaterialBackOrchestrator;
 import com.google.android.material.sidesheet.SheetCallback;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class SheetDialog<C extends SheetCallback> extends AppCompatDialog {
     private static final int COORDINATOR_LAYOUT_ID = R.id.coordinator;
     private static final int TOUCH_OUTSIDE_ID = R.id.touch_outside;
@@ -203,14 +203,14 @@ abstract class SheetDialog<C extends SheetCallback> extends AppCompatDialog {
         return this.container;
     }
 
-    /* JADX INFO: renamed from: lambda$wrapInSheet$0$com-google-android-material-sidesheet-SheetDialog, reason: not valid java name */
+    /* INFO: renamed from: lambda$wrapInSheet$0$com-google-android-material-sidesheet-SheetDialog, reason: not valid java name */
     /* synthetic */ void m3324x401f75dd(View view) {
         if (this.cancelable && isShowing() && shouldWindowCloseOnTouchOutside()) {
             cancel();
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.sidesheet.SheetDialog$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.sidesheet.SheetDialog$1, reason: invalid class name */
     class AnonymousClass1 extends AccessibilityDelegateCompat {
         AnonymousClass1() {
         }

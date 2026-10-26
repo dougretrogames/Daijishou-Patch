@@ -17,7 +17,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import net.lingala.zip4j.util.UnzipUtil;
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ExtractFileTask extends AbstractExtractFileTask<ExtractFileTaskParameters> {
     private char[] password;
     private SplitFileInputStream splitInputStream;
@@ -27,9 +27,9 @@ public class ExtractFileTask extends AbstractExtractFileTask<ExtractFileTaskPara
         this.password = cArr;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    /* JADX WARN: Code duplicated, block: B:36:0x006b  */
-    /* JADX WARN: Code duplicated, block: B:50:? A[SYNTHETIC] */
+    /* INFO: Access modifiers changed from: protected */
+    /* WARN: Code duplicated, block: B:36:0x006b  */
+    /* WARN: Code duplicated, block: B:50:? A[SYNTHETIC] */
     @Override // net.lingala.zip4j.tasks.AsyncZipTask
     public void executeTask(ExtractFileTaskParameters extractFileTaskParameters, ProgressMonitor progressMonitor) throws Throwable {
         ExtractFileTask extractFileTask;
@@ -97,7 +97,7 @@ public class ExtractFileTask extends AbstractExtractFileTask<ExtractFileTaskPara
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.tasks.AsyncZipTask
     public long calculateTotalWork(ExtractFileTaskParameters extractFileTaskParameters) throws ZipException {
         return HeaderUtil.getTotalUncompressedSizeOfAllFileHeaders(getFileHeadersToExtract(extractFileTaskParameters.fileToExtract));

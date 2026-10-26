@@ -10,7 +10,7 @@ import java.nio.ByteBuffer;
 import java.security.MessageDigest;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ResourceCacheKey implements Key {
     private static final LruCache<Class<?>, byte[]> RESOURCE_CLASS_BYTES = new LruCache<>(50);
     private final ArrayPool arrayPool;

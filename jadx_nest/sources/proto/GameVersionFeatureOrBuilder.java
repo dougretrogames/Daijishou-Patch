@@ -4,7 +4,7 @@ import com.google.protobuf.ByteString;
 import com.google.protobuf.MessageOrBuilder;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public interface GameVersionFeatureOrBuilder extends MessageOrBuilder {
     GameVersionFeatureCategoryEnum getCategory();
 

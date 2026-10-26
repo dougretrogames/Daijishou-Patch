@@ -12,7 +12,7 @@ import java.util.Date;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.file.PathUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AgeFileFilter extends AbstractFileFilter implements Serializable {
     private static final long serialVersionUID = -2132740084016138541L;
     private final boolean acceptOlder;
@@ -61,7 +61,7 @@ public class AgeFileFilter extends AbstractFileFilter implements Serializable {
         return get(new AgeFileFilter$$ExternalSyntheticLambda0(this, path));
     }
 
-    /* JADX INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-AgeFileFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-AgeFileFilter, reason: not valid java name */
     /* synthetic */ FileVisitResult m5574lambda$accept$0$orgapachecommonsiofilefilterAgeFileFilter(Path path) throws IOException {
         return toFileVisitResult(this.acceptOlder != PathUtils.isNewer(path, this.cutoffInstant, new LinkOption[0]));
     }

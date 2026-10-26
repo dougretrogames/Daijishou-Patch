@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class FilteredEntrySetMultimap<K, V> extends FilteredEntryMultimap<K, V> implements FilteredSetMultimap<K, V> {
     FilteredEntrySetMultimap(SetMultimap<K, V> unfiltered, Predicate<? super Map.Entry<K, V>> predicate) {
@@ -32,7 +32,7 @@ final class FilteredEntrySetMultimap<K, V> extends FilteredEntryMultimap<K, V> i
         return (Set) super.replaceValues((Object) key, (Iterable) values);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.FilteredEntryMultimap, com.google.common.collect.AbstractMultimap
     public Set<Map.Entry<K, V>> createEntries() {
         return Sets.filter(unfiltered().entries(), entryPredicate());

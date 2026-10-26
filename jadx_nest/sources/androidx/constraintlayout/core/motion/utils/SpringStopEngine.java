@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.motion.utils;
 
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class SpringStopEngine implements StopEngine {
     private static final double UNSET = Double.MAX_VALUE;
     private float mLastTime;

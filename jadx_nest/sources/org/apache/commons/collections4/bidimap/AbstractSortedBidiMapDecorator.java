@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.SortedMap;
 import org.apache.commons.collections4.SortedBidiMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractSortedBidiMapDecorator<K, V> extends AbstractOrderedBidiMapDecorator<K, V> implements SortedBidiMap<K, V> {
     public AbstractSortedBidiMapDecorator(SortedBidiMap<K, V> sortedBidiMap) {
         super(sortedBidiMap);
@@ -15,7 +15,7 @@ public abstract class AbstractSortedBidiMapDecorator<K, V> extends AbstractOrder
         return decorated().comparator();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.bidimap.AbstractOrderedBidiMapDecorator, org.apache.commons.collections4.bidimap.AbstractBidiMapDecorator, org.apache.commons.collections4.map.AbstractMapDecorator
     public SortedBidiMap<K, V> decorated() {
         return (SortedBidiMap) super.decorated();

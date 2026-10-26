@@ -25,7 +25,7 @@ import org.eclipse.jgit.transport.URIish;
 import org.eclipse.jgit.transport.UrlConfig;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LsRemoteCommand extends TransportCommand<LsRemoteCommand, Collection<Ref>> {
     private boolean heads;
     private String remote;

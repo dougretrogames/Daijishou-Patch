@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public final class DefaultedHttpParams extends AbstractHttpParams {
     private final HttpParams defaults;

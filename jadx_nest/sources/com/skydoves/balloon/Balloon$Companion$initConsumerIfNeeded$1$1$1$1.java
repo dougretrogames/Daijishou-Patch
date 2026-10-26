@@ -7,15 +7,15 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlinx.coroutines.CancellableContinuation;
 
-/* JADX INFO: compiled from: Balloon.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: Balloon.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
 final class Balloon$Companion$initConsumerIfNeeded$1$1$1$1 implements Function0<Unit> {
     final /* synthetic */ CancellableContinuation<Unit> $cont;
     final /* synthetic */ DeferredBalloonGroup $group;
     final /* synthetic */ OnBalloonDismissListener $previousListener;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     Balloon$Companion$initConsumerIfNeeded$1$1$1$1(CancellableContinuation<? super Unit> cancellableContinuation, OnBalloonDismissListener onBalloonDismissListener, DeferredBalloonGroup deferredBalloonGroup) {
         this.$cont = cancellableContinuation;
         this.$previousListener = onBalloonDismissListener;
@@ -28,7 +28,7 @@ final class Balloon$Companion$initConsumerIfNeeded$1$1$1$1 implements Function0<
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2() {
         CancellableContinuation<Unit> cancellableContinuation = this.$cont;
         Result.Companion companion = Result.INSTANCE;

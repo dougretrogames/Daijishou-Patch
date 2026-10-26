@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class GuidedActionAdapter extends RecyclerView.Adapter {
     static final boolean DEBUG = false;
     static final boolean DEBUG_EDIT = false;
@@ -49,7 +49,7 @@ public class GuidedActionAdapter extends RecyclerView.Adapter {
         void onGuidedActionFocused(GuidedAction guidedAction);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.GuidedActionAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.GuidedActionAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         AnonymousClass1() {
         }
@@ -126,7 +126,7 @@ public class GuidedActionAdapter extends RecyclerView.Adapter {
         notifyDataSetChanged();
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.GuidedActionAdapter$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.GuidedActionAdapter$2, reason: invalid class name */
     class AnonymousClass2 extends DiffUtil.Callback {
         final /* synthetic */ List val$oldActions;
 
@@ -205,7 +205,7 @@ public class GuidedActionAdapter extends RecyclerView.Adapter {
         return viewHolderOnCreateViewHolder;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void setupListeners(EditText editText) {
         if (editText != 0) {
             editText.setPrivateImeOptions("escapeNorth");

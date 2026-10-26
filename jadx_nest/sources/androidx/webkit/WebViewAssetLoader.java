@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class WebViewAssetLoader {
     public static final String DEFAULT_DOMAIN = "appassets.androidplatform.net";
     private static final String TAG = "WebViewAssetLoader";

@@ -2,8 +2,8 @@ package com.magneticchen.daijishou.live_data;
 
 import android.content.SharedPreferences;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class SharedPreferenceLiveData$$ExternalSyntheticLambda0 implements SharedPreferences.OnSharedPreferenceChangeListener {
     public final /* synthetic */ SharedPreferenceLiveData f$0;
 

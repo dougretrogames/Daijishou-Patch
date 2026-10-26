@@ -1,6 +1,6 @@
 package io.opencensus.tags;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Tag extends Tag {
     private final TagKey key;
     private final TagMetadata tagMetadata;

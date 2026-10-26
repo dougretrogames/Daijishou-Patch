@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class FilteredKeyMultimap<K, V> extends AbstractMultimap<K, V> implements FilteredMultimap<K, V> {
     final Predicate<? super K> keyPredicate;
@@ -101,7 +101,7 @@ class FilteredKeyMultimap<K, V> extends AbstractMultimap<K, V> implements Filter
             throw new IllegalArgumentException("Key does not satisfy predicate: " + this.key);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Set<V> delegate() {
             return Collections.emptySet();
@@ -142,7 +142,7 @@ class FilteredKeyMultimap<K, V> extends AbstractMultimap<K, V> implements Filter
             throw new IllegalArgumentException("Key does not satisfy predicate: " + this.key);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingList, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public List<V> delegate() {
             return Collections.emptyList();
@@ -163,7 +163,7 @@ class FilteredKeyMultimap<K, V> extends AbstractMultimap<K, V> implements Filter
         Entries() {
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Collection<Map.Entry<K, V>> delegate() {
             return Collections2.filter(FilteredKeyMultimap.this.unfiltered.entries(), FilteredKeyMultimap.this.entryPredicate());

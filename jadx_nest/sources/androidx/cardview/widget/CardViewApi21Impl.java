@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.res.ColorStateList;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class CardViewApi21Impl implements CardViewImpl {
     @Override // androidx.cardview.widget.CardViewImpl
     public void initStatic() {

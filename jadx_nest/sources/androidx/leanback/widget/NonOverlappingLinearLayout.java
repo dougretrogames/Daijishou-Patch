@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class NonOverlappingLinearLayout extends LinearLayout {
     boolean mDeferFocusableViewAvailableInLayout;
     boolean mFocusableViewAvailableFixEnabled;
@@ -35,19 +35,19 @@ public class NonOverlappingLinearLayout extends LinearLayout {
         this.mFocusableViewAvailableFixEnabled = z;
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x0019  */
-    /* JADX WARN: Code duplicated, block: B:16:0x001e A[Catch: all -> 0x0014, LOOP:0: B:16:0x001e->B:18:0x002a, LOOP_START, TRY_ENTER, TryCatch #0 {all -> 0x0014, blocks: (B:6:0x0006, B:8:0x000c, B:16:0x001e, B:18:0x002a, B:19:0x0035, B:21:0x0041), top: B:54:0x0006 }] */
-    /* JADX WARN: Code duplicated, block: B:18:0x002a A[Catch: all -> 0x0014, LOOP:0: B:16:0x001e->B:18:0x002a, LOOP_END, TryCatch #0 {all -> 0x0014, blocks: (B:6:0x0006, B:8:0x000c, B:16:0x001e, B:18:0x002a, B:19:0x0035, B:21:0x0041), top: B:54:0x0006 }] */
-    /* JADX WARN: Code duplicated, block: B:21:0x0041 A[Catch: all -> 0x0014, LOOP:1: B:19:0x0035->B:21:0x0041, LOOP_END, TRY_LEAVE, TryCatch #0 {all -> 0x0014, blocks: (B:6:0x0006, B:8:0x000c, B:16:0x001e, B:18:0x002a, B:19:0x0035, B:21:0x0041), top: B:54:0x0006 }] */
-    /* JADX WARN: Code duplicated, block: B:26:0x0059  */
-    /* JADX WARN: Code duplicated, block: B:29:0x0062  */
-    /* JADX WARN: Code duplicated, block: B:32:0x0071 A[Catch: all -> 0x00a5, TRY_LEAVE, TryCatch #1 {all -> 0x00a5, blocks: (B:24:0x0052, B:27:0x005a, B:30:0x0063, B:32:0x0071), top: B:56:0x0052 }] */
-    /* JADX WARN: Code duplicated, block: B:37:0x008c  */
-    /* JADX WARN: Code duplicated, block: B:40:0x0096 A[LOOP:5: B:38:0x008e->B:40:0x0096, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:41:0x00a4 A[ORIG_RETURN, RETURN] */
-    /* JADX WARN: Code duplicated, block: B:49:0x00ae  */
-    /* JADX WARN: Code duplicated, block: B:52:0x00b8 A[LOOP:2: B:50:0x00b0->B:52:0x00b8, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:53:0x00c6  */
+    /* WARN: Code duplicated, block: B:13:0x0019  */
+    /* WARN: Code duplicated, block: B:16:0x001e A[Catch: all -> 0x0014, LOOP:0: B:16:0x001e->B:18:0x002a, LOOP_START, TRY_ENTER, TryCatch #0 {all -> 0x0014, blocks: (B:6:0x0006, B:8:0x000c, B:16:0x001e, B:18:0x002a, B:19:0x0035, B:21:0x0041), top: B:54:0x0006 }] */
+    /* WARN: Code duplicated, block: B:18:0x002a A[Catch: all -> 0x0014, LOOP:0: B:16:0x001e->B:18:0x002a, LOOP_END, TryCatch #0 {all -> 0x0014, blocks: (B:6:0x0006, B:8:0x000c, B:16:0x001e, B:18:0x002a, B:19:0x0035, B:21:0x0041), top: B:54:0x0006 }] */
+    /* WARN: Code duplicated, block: B:21:0x0041 A[Catch: all -> 0x0014, LOOP:1: B:19:0x0035->B:21:0x0041, LOOP_END, TRY_LEAVE, TryCatch #0 {all -> 0x0014, blocks: (B:6:0x0006, B:8:0x000c, B:16:0x001e, B:18:0x002a, B:19:0x0035, B:21:0x0041), top: B:54:0x0006 }] */
+    /* WARN: Code duplicated, block: B:26:0x0059  */
+    /* WARN: Code duplicated, block: B:29:0x0062  */
+    /* WARN: Code duplicated, block: B:32:0x0071 A[Catch: all -> 0x00a5, TRY_LEAVE, TryCatch #1 {all -> 0x00a5, blocks: (B:24:0x0052, B:27:0x005a, B:30:0x0063, B:32:0x0071), top: B:56:0x0052 }] */
+    /* WARN: Code duplicated, block: B:37:0x008c  */
+    /* WARN: Code duplicated, block: B:40:0x0096 A[LOOP:5: B:38:0x008e->B:40:0x0096, LOOP_END] */
+    /* WARN: Code duplicated, block: B:41:0x00a4 A[ORIG_RETURN, RETURN] */
+    /* WARN: Code duplicated, block: B:49:0x00ae  */
+    /* WARN: Code duplicated, block: B:52:0x00b8 A[LOOP:2: B:50:0x00b0->B:52:0x00b8, LOOP_END] */
+    /* WARN: Code duplicated, block: B:53:0x00c6  */
     @Override // android.widget.LinearLayout, android.view.ViewGroup, android.view.View
     protected void onLayout(boolean z, int i, int i2, int i3, int i4) throws Throwable {
         NonOverlappingLinearLayout nonOverlappingLinearLayout;

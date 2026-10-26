@@ -4,7 +4,7 @@ import com.google.common.base.Ascii;
 import java.util.Objects;
 import org.apache.commons.codec.CodecPolicy;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Base16 extends BaseNCodec {
     private static final int BITS_PER_ENCODED_BYTE = 4;
     private static final int BYTES_PER_ENCODED_BLOCK = 2;

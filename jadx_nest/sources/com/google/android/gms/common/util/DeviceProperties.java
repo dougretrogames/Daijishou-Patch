@@ -9,8 +9,8 @@ import android.os.Build;
 import com.google.android.gms.common.GooglePlayServicesUtilLight;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class DeviceProperties {
     private static Boolean zza;
     private static Boolean zzb;
@@ -77,7 +77,7 @@ public final class DeviceProperties {
         return zzg.booleanValue();
     }
 
-    /* JADX WARN: Code duplicated, block: B:31:0x006f  */
+    /* WARN: Code duplicated, block: B:31:0x006f  */
     public static boolean isPhone(Context context) {
         if (zza == null) {
             boolean z = true;

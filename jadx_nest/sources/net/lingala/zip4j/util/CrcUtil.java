@@ -7,7 +7,7 @@ import java.util.zip.CRC32;
 import net.lingala.zip4j.exception.ZipException;
 import net.lingala.zip4j.progress.ProgressMonitor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CrcUtil {
     private static final int BUF_SIZE = 16384;
 

@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MenuHostHelper {
     private final Runnable mOnInvalidateMenuCallback;
     private final CopyOnWriteArrayList<MenuProvider> mMenuProviders = new CopyOnWriteArrayList<>();
@@ -67,7 +67,7 @@ public class MenuHostHelper {
         this.mProviderToLifecycleContainers.put(menuProvider, new LifecycleContainer(lifecycle, new MenuHostHelper$$ExternalSyntheticLambda1(this, menuProvider)));
     }
 
-    /* JADX INFO: renamed from: lambda$addMenuProvider$0$androidx-core-view-MenuHostHelper, reason: not valid java name */
+    /* INFO: renamed from: lambda$addMenuProvider$0$androidx-core-view-MenuHostHelper, reason: not valid java name */
     /* synthetic */ void m3169lambda$addMenuProvider$0$androidxcoreviewMenuHostHelper(MenuProvider menuProvider, LifecycleOwner lifecycleOwner, Lifecycle.Event event) {
         if (event == Lifecycle.Event.ON_DESTROY) {
             removeMenuProvider(menuProvider);
@@ -83,7 +83,7 @@ public class MenuHostHelper {
         this.mProviderToLifecycleContainers.put(menuProvider, new LifecycleContainer(lifecycle, new MenuHostHelper$$ExternalSyntheticLambda0(this, state, menuProvider)));
     }
 
-    /* JADX INFO: renamed from: lambda$addMenuProvider$1$androidx-core-view-MenuHostHelper, reason: not valid java name */
+    /* INFO: renamed from: lambda$addMenuProvider$1$androidx-core-view-MenuHostHelper, reason: not valid java name */
     /* synthetic */ void m3170lambda$addMenuProvider$1$androidxcoreviewMenuHostHelper(Lifecycle.State state, MenuProvider menuProvider, LifecycleOwner lifecycleOwner, Lifecycle.Event event) {
         if (event == Lifecycle.Event.upTo(state)) {
             addMenuProvider(menuProvider);

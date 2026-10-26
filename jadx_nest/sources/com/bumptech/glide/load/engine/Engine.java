@@ -20,7 +20,7 @@ import com.bumptech.glide.util.pool.FactoryPools;
 import java.util.Map;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Engine implements EngineJobListener, MemoryCache.ResourceRemovedListener, EngineResource.ResourceListener {
     private static final int JOB_POOL_SIZE = 150;
     private static final String TAG = "Engine";
@@ -239,12 +239,12 @@ public class Engine implements EngineJobListener, MemoryCache.ResourceRemovedLis
         final DecodeJob.DiskCacheProvider diskCacheProvider;
         final Pools.Pool<DecodeJob<?>> pool = FactoryPools.threadSafe(Engine.JOB_POOL_SIZE, new AnonymousClass1());
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.engine.Engine$DecodeJobFactory$1, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.load.engine.Engine$DecodeJobFactory$1, reason: invalid class name */
         class AnonymousClass1 implements FactoryPools.Factory<DecodeJob<?>> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // com.bumptech.glide.util.pool.FactoryPools.Factory
             public DecodeJob<?> create() {
                 return new DecodeJob<>(DecodeJobFactory.this.diskCacheProvider, DecodeJobFactory.this.pool);
@@ -272,12 +272,12 @@ public class Engine implements EngineJobListener, MemoryCache.ResourceRemovedLis
         final GlideExecutor sourceExecutor;
         final GlideExecutor sourceUnlimitedExecutor;
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.engine.Engine$EngineJobFactory$1, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.load.engine.Engine$EngineJobFactory$1, reason: invalid class name */
         class AnonymousClass1 implements FactoryPools.Factory<EngineJob<?>> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // com.bumptech.glide.util.pool.FactoryPools.Factory
             public EngineJob<?> create() {
                 return new EngineJob<>(EngineJobFactory.this.diskCacheExecutor, EngineJobFactory.this.sourceExecutor, EngineJobFactory.this.sourceUnlimitedExecutor, EngineJobFactory.this.animationExecutor, EngineJobFactory.this.engineJobListener, EngineJobFactory.this.resourceListener, EngineJobFactory.this.pool);

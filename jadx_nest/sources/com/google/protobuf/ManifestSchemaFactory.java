@@ -1,6 +1,6 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 final class ManifestSchemaFactory implements SchemaFactory {
     private static final MessageInfoFactory EMPTY_FACTORY = new AnonymousClass1();
@@ -40,7 +40,7 @@ final class ManifestSchemaFactory implements SchemaFactory {
         return MessageSchema.newSchema(messageType, messageInfo, NewInstanceSchemas.full(), ListFieldSchema.full(), SchemaUtil.unknownFieldSetFullSchema(), null, MapFieldSchemas.full());
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.ManifestSchemaFactory$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.ManifestSchemaFactory$2, reason: invalid class name */
     static /* synthetic */ class AnonymousClass2 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$ProtoSyntax;
 
@@ -90,7 +90,7 @@ final class ManifestSchemaFactory implements SchemaFactory {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.ManifestSchemaFactory$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.ManifestSchemaFactory$1, reason: invalid class name */
     class AnonymousClass1 implements MessageInfoFactory {
         @Override // com.google.protobuf.MessageInfoFactory
         public boolean isSupported(Class<?> clazz) {

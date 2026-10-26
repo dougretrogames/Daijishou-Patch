@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 import org.apache.commons.io.IOCase;
 import org.apache.commons.io.file.PathUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NameFileFilter extends AbstractFileFilter implements Serializable {
     private static final long serialVersionUID = 176844364689077340L;
     private final IOCase ioCase;
@@ -66,7 +66,7 @@ public class NameFileFilter extends AbstractFileFilter implements Serializable {
         return Stream.of((Object[]) this.names).anyMatch(new NameFileFilter$$ExternalSyntheticLambda0(this, str));
     }
 
-    /* JADX INFO: renamed from: lambda$acceptBaseName$0$org-apache-commons-io-filefilter-NameFileFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$acceptBaseName$0$org-apache-commons-io-filefilter-NameFileFilter, reason: not valid java name */
     /* synthetic */ boolean m5578xeb0d6bf5(String str, String str2) {
         return this.ioCase.checkEquals(str, str2);
     }

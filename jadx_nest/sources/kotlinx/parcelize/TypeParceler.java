@@ -12,8 +12,8 @@ import kotlin.annotation.Repeatable;
 import kotlin.jvm.internal.RepeatableContainer;
 import kotlinx.parcelize.Parceler;
 
-/* JADX INFO: compiled from: TypeParceler.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: TypeParceler.kt */
+/* INFO: loaded from: classes5.dex */
 @Target({ElementType.TYPE})
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.CLASS, AnnotationTarget.PROPERTY})
 @Retention(RetentionPolicy.SOURCE)
@@ -23,7 +23,7 @@ import kotlinx.parcelize.Parceler;
 @java.lang.annotation.Repeatable(Container.class)
 public @interface TypeParceler<T, P extends Parceler<? super T>> {
 
-    /* JADX INFO: compiled from: TypeParceler.kt */
+    /* INFO: compiled from: TypeParceler.kt */
     @Target({ElementType.TYPE})
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.CLASS, AnnotationTarget.PROPERTY})

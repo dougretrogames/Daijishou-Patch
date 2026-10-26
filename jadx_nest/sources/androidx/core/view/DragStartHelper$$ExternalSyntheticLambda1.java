@@ -3,8 +3,8 @@ package androidx.core.view;
 import android.view.MotionEvent;
 import android.view.View;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class DragStartHelper$$ExternalSyntheticLambda1 implements View.OnTouchListener {
     public final /* synthetic */ DragStartHelper f$0;
 

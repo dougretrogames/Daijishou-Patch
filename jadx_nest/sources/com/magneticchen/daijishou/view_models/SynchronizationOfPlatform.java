@@ -78,8 +78,8 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.commons.io.IOUtils;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: SynchronizationOfPlatform.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: SynchronizationOfPlatform.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0094\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0002\b\u001b\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\b\u0086\b\u0018\u0000 m2\u00020\u0001:\u0001mB\u008b\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\t\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\b\b\u0002\u0010\f\u001a\u00020\r\u0012\b\b\u0002\u0010\u000e\u001a\u00020\u000f\u0012\b\b\u0002\u0010\u0010\u001a\u00020\u0011\u0012\b\b\u0002\u0010\u0012\u001a\u00020\u000f\u0012\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u0014\u0012\u000e\b\u0002\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00070\u0016\u0012\u000e\b\u0002\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00070\u0016\u0012\b\b\u0002\u0010\u0018\u001a\u00020\r¢\u0006\u0002\u0010\u0019J\b\u0010L\u001a\u00020-H\u0002J\u000e\u0010M\u001a\u00020-2\u0006\u0010\u001a\u001a\u00020\u001bJ\t\u0010N\u001a\u00020\u0003HÆ\u0003J\u000b\u0010O\u001a\u0004\u0018\u00010\u0014HÆ\u0003J\u000f\u0010P\u001a\b\u0012\u0004\u0012\u00020\u00070\u0016HÆ\u0003J\u000f\u0010Q\u001a\b\u0012\u0004\u0012\u00020\u00070\u0016HÆ\u0003J\t\u0010R\u001a\u00020\rHÆ\u0003J\t\u0010S\u001a\u00020\u0005HÆ\u0003J\t\u0010T\u001a\u00020\u0007HÆ\u0003J\t\u0010U\u001a\u00020\tHÆ\u0003J\t\u0010V\u001a\u00020\u000bHÆ\u0003J\t\u0010W\u001a\u00020\rHÆ\u0003J\t\u0010X\u001a\u00020\u000fHÆ\u0003J\t\u0010Y\u001a\u00020\u0011HÆ\u0003J\t\u0010Z\u001a\u00020\u000fHÆ\u0003J\u0099\u0001\u0010[\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\u000b2\b\b\u0002\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\b\b\u0002\u0010\u0010\u001a\u00020\u00112\b\b\u0002\u0010\u0012\u001a\u00020\u000f2\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00142\u000e\b\u0002\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00070\u00162\u000e\b\u0002\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00070\u00162\b\b\u0002\u0010\u0018\u001a\u00020\rHÆ\u0001J\u0013\u0010\\\u001a\u00020\r2\b\u0010]\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\u0010\u0010^\u001a\u00020\u00112\u0006\u0010_\u001a\u00020\u0011H\u0002J\u0006\u0010`\u001a\u00020\rJ\t\u0010a\u001a\u00020\u000fHÖ\u0001J\u0006\u0010b\u001a\u00020-J\u000e\u0010c\u001a\u00020-2\u0006\u0010d\u001a\u00020eJ\b\u0010f\u001a\u00020-H\u0002J+\u0010g\u001a\u00020-2#\u0010'\u001a\u001f\u0012\u0015\u0012\u0013\u0018\u00010)¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(,\u0012\u0004\u0012\u00020-0(J\u0014\u0010h\u001a\u00020-2\f\u0010H\u001a\b\u0012\u0004\u0012\u00020-0IJ\u0006\u0010i\u001a\u00020-J\u0006\u0010j\u001a\u00020-J\u0010\u0010k\u001a\u00020-2\u0006\u0010\u001a\u001a\u00020\u001bH\u0002J\t\u0010l\u001a\u00020\u0011HÖ\u0001R\u0010\u0010\u001a\u001a\u0004\u0018\u00010\u001bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001fR\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b \u0010!R\u000e\u0010\"\u001a\u00020#X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010$\u001a\n &*\u0004\u0018\u00010%0%X\u0082\u0004¢\u0006\u0002\n\u0000R-\u0010'\u001a!\u0012\u0015\u0012\u0013\u0018\u00010)¢\u0006\f\b*\u0012\b\b+\u0012\u0004\b\b(,\u0012\u0004\u0012\u00020-\u0018\u00010(X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\u0018\u001a\u00020\rX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b.\u0010/\"\u0004\b0\u00101R\u001a\u0010\f\u001a\u00020\rX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010/\"\u0004\b2\u00101R\u001c\u0010\u0013\u001a\u0004\u0018\u00010\u0014X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b3\u00104\"\u0004\b5\u00106R\u0012\u00107\u001a\u000608R\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b9\u0010:R\u0017\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\u00070\u0016¢\u0006\b\n\u0000\u001a\u0004\b;\u0010<R\u0017\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00070\u0016¢\u0006\b\n\u0000\u001a\u0004\b=\u0010<R\u0011\u0010\n\u001a\u00020\u000b¢\u0006\b\n\u0000\u001a\u0004\b>\u0010?R\u001a\u0010\u0012\u001a\u00020\u000fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b@\u0010A\"\u0004\bB\u0010CR\u001a\u0010\u0010\u001a\u00020\u0011X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bD\u0010E\"\u0004\bF\u0010GR\u0016\u0010H\u001a\n\u0012\u0004\u0012\u00020-\u0018\u00010IX\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\u000e\u001a\u00020\u000fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bJ\u0010A\"\u0004\bK\u0010C¨\u0006n²\u0006\n\u0010o\u001a\u00020pX\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/view_models/SynchronizationOfPlatform;", "", "application", "Lcom/magneticchen/daijishou/DaijishouApplication;", "coroutineScope", "Lkotlinx/coroutines/CoroutineScope;", "platformId", "", "daijishouLibraryRepository", "Lcom/magneticchen/daijishou/repositories/DaijishouLibraryRepository;", "scraperManager", "Lcom/magneticchen/daijishou/scraper/ScraperManager;", "isSyncing", "", "syncProgress", "", "statusString", "", "statusCode", "job", "Lkotlinx/coroutines/Job;", "playableItemEntityToBeScrapedIdList", "", "playableItemEntityPreviewMediaMustBeScrapedIdList", "fullSynchronization", "(Lcom/magneticchen/daijishou/DaijishouApplication;Lkotlinx/coroutines/CoroutineScope;JLcom/magneticchen/daijishou/repositories/DaijishouLibraryRepository;Lcom/magneticchen/daijishou/scraper/ScraperManager;ZILjava/lang/String;ILkotlinx/coroutines/Job;Ljava/util/List;Ljava/util/List;Z)V", "activity", "Landroidx/appcompat/app/AppCompatActivity;", "getApplication", "()Lcom/magneticchen/daijishou/DaijishouApplication;", "getCoroutineScope", "()Lkotlinx/coroutines/CoroutineScope;", "getDaijishouLibraryRepository", "()Lcom/magneticchen/daijishou/repositories/DaijishouLibraryRepository;", "daijishouPlayerTemplate", "Lcom/magneticchen/daijishou/daijishou_player/DaijishouPlayerTemplate;", "defaultSharedPreferences", "Landroid/content/SharedPreferences;", "kotlin.jvm.PlatformType", "finishedListener", "Lkotlin/Function1;", "", "Lkotlin/ParameterName;", "name", "e", "", "getFullSynchronization", "()Z", "setFullSynchronization", "(Z)V", "setSyncing", "getJob", "()Lkotlinx/coroutines/Job;", "setJob", "(Lkotlinx/coroutines/Job;)V", "logger", "Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "getPlatformId", "()J", "getPlayableItemEntityPreviewMediaMustBeScrapedIdList", "()Ljava/util/List;", "getPlayableItemEntityToBeScrapedIdList", "getScraperManager", "()Lcom/magneticchen/daijishou/scraper/ScraperManager;", "getStatusCode", "()I", "setStatusCode", "(I)V", "getStatusString", "()Ljava/lang/String;", "setStatusString", "(Ljava/lang/String;)V", "statusUpdatedListener", "Lkotlin/Function0;", "getSyncProgress", "setSyncProgress", "aggregatePlayableItems", "attachActivity", "component1", "component10", "component11", "component12", "component13", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "other", "generalizeTitleForDisjointSets", "title", "hasAnyTask", "hashCode", "requestFullSynchronization", "requestScrapingOfPlayableItem", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "scrapePlayableItems", "setOnFinishedListener", "setOnStatusUpdatedListener", "stopSyncing", "synchronize", "synchronizePlayableItems", "toString", "Companion", "app_release", "appsViewModel", "Lcom/magneticchen/daijishou/view_models/AppsViewModel;"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final /* data */ class SynchronizationOfPlatform {
     public static final int IS_AGGREGATING_PLAYABLE_ITEMS = 3;
@@ -107,12 +107,12 @@ public final /* data */ class SynchronizationOfPlatform {
     private Function0<Unit> statusUpdatedListener;
     private int syncProgress;
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    /* INFO: renamed from: component1, reason: from getter */
     public final DaijishouApplication getApplication() {
         return this.application;
     }
 
-    /* JADX INFO: renamed from: component10, reason: from getter */
+    /* INFO: renamed from: component10, reason: from getter */
     public final Job getJob() {
         return this.job;
     }
@@ -125,47 +125,47 @@ public final /* data */ class SynchronizationOfPlatform {
         return this.playableItemEntityPreviewMediaMustBeScrapedIdList;
     }
 
-    /* JADX INFO: renamed from: component13, reason: from getter */
+    /* INFO: renamed from: component13, reason: from getter */
     public final boolean getFullSynchronization() {
         return this.fullSynchronization;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    /* INFO: renamed from: component2, reason: from getter */
     public final CoroutineScope getCoroutineScope() {
         return this.coroutineScope;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    /* INFO: renamed from: component3, reason: from getter */
     public final long getPlatformId() {
         return this.platformId;
     }
 
-    /* JADX INFO: renamed from: component4, reason: from getter */
+    /* INFO: renamed from: component4, reason: from getter */
     public final DaijishouLibraryRepository getDaijishouLibraryRepository() {
         return this.daijishouLibraryRepository;
     }
 
-    /* JADX INFO: renamed from: component5, reason: from getter */
+    /* INFO: renamed from: component5, reason: from getter */
     public final ScraperManager getScraperManager() {
         return this.scraperManager;
     }
 
-    /* JADX INFO: renamed from: component6, reason: from getter */
+    /* INFO: renamed from: component6, reason: from getter */
     public final boolean getIsSyncing() {
         return this.isSyncing;
     }
 
-    /* JADX INFO: renamed from: component7, reason: from getter */
+    /* INFO: renamed from: component7, reason: from getter */
     public final int getSyncProgress() {
         return this.syncProgress;
     }
 
-    /* JADX INFO: renamed from: component8, reason: from getter */
+    /* INFO: renamed from: component8, reason: from getter */
     public final String getStatusString() {
         return this.statusString;
     }
 
-    /* JADX INFO: renamed from: component9, reason: from getter */
+    /* INFO: renamed from: component9, reason: from getter */
     public final int getStatusCode() {
         return this.statusCode;
     }
@@ -313,7 +313,7 @@ public final /* data */ class SynchronizationOfPlatform {
         this.finishedListener = finishedListener;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void synchronizePlayableItems(AppCompatActivity activity) throws PackageManager.NameNotFoundException, IOException {
         Iterator it;
         Regex regex;
@@ -631,8 +631,8 @@ public final /* data */ class SynchronizationOfPlatform {
         return lazy.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:54:0x0203  */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:54:0x0203  */
     public final void scrapePlayableItems() {
         boolean z;
         String strScrapeNameByName;
@@ -742,7 +742,7 @@ public final /* data */ class SynchronizationOfPlatform {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void aggregatePlayableItems() {
         this.statusCode = 3;
         this.statusString = "Aggregating items";
@@ -828,8 +828,8 @@ public final /* data */ class SynchronizationOfPlatform {
         this.job = BuildersKt.launch$default(this.coroutineScope, Dispatchers.getIO().plus(new SynchronizationOfPlatform$synchronize$$inlined$CoroutineExceptionHandler$1(CoroutineExceptionHandler.Key, this)), null, new AnonymousClass1(null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.SynchronizationOfPlatform$synchronize$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SynchronizationOfPlatform.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.SynchronizationOfPlatform$synchronize$1, reason: invalid class name */
+    /* INFO: compiled from: SynchronizationOfPlatform.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.SynchronizationOfPlatform$synchronize$1", f = "SynchronizationOfPlatform.kt", i = {}, l = {545}, m = "invokeSuspendImpl", n = {}, s = {})
     final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -901,15 +901,15 @@ public final /* data */ class SynchronizationOfPlatform {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.SynchronizationOfPlatform$synchronize$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: SynchronizationOfPlatform.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.SynchronizationOfPlatform$synchronize$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: SynchronizationOfPlatform.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.SynchronizationOfPlatform$synchronize$1$1", f = "SynchronizationOfPlatform.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class C00811 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             int label;
             final /* synthetic */ SynchronizationOfPlatform this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             C00811(SynchronizationOfPlatform synchronizationOfPlatform, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = synchronizationOfPlatform;

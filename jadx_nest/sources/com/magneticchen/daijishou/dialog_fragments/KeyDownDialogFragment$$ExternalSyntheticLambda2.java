@@ -5,8 +5,8 @@ import android.content.DialogInterface;
 import android.view.KeyEvent;
 import kotlin.jvm.internal.Ref;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class KeyDownDialogFragment$$ExternalSyntheticLambda2 implements DialogInterface.OnKeyListener {
     public final /* synthetic */ Ref.ObjectRef f$0;
     public final /* synthetic */ KeyDownDialogFragment f$1;

@@ -2,8 +2,8 @@ package com.google.android.material.chip;
 
 import android.widget.CompoundButton;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class Chip$$ExternalSyntheticLambda0 implements CompoundButton.OnCheckedChangeListener {
     public final /* synthetic */ Chip f$0;
 

@@ -1,6 +1,6 @@
 package com.googlecode.javaewah.datastructure;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 interface WordArray {
     int getNumberOfWords();
 

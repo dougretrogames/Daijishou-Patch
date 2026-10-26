@@ -12,7 +12,7 @@ import java.util.Collection;
 import java.util.Date;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class AppEngineCredentials extends GoogleCredentials implements ServiceAccountSigner {
     static final String APP_IDENTITY_SERVICE_CLASS = "com.google.appengine.api.appidentity.AppIdentityService";
     static final String APP_IDENTITY_SERVICE_FACTORY_CLASS = "com.google.appengine.api.appidentity.AppIdentityServiceFactory";

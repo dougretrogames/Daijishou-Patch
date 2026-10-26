@@ -16,7 +16,7 @@ import androidx.appcompat.R;
 import androidx.core.view.PointerIconCompat;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class TooltipPopup {
     private static final String TAG = "TooltipPopup";
     private final View mContentView;

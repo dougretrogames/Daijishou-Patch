@@ -2,7 +2,7 @@ package org.commonmark.internal.renderer.text;
 
 import org.commonmark.node.OrderedList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class OrderedListHolder extends ListHolder {
     private int counter;
     private final char delimiter;

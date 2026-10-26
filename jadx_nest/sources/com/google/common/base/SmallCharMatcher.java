@@ -2,7 +2,7 @@ package com.google.common.base;
 
 import java.util.BitSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class SmallCharMatcher extends CharMatcher.NamedFastMatcher {
     private static final int C1 = -862048943;

@@ -15,11 +15,11 @@ import org.apache.commons.collections4.iterators.EntrySetMapIterator;
 import org.apache.commons.collections4.iterators.UnmodifiableMapIterator;
 import org.apache.commons.collections4.set.UnmodifiableSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UnmodifiableMap<K, V> extends AbstractMapDecorator<K, V> implements Unmodifiable, Serializable {
     private static final long serialVersionUID = 2737023427269031941L;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <K, V> Map<K, V> unmodifiableMap(Map<? extends K, ? extends V> map) {
         return map instanceof Unmodifiable ? map : new UnmodifiableMap(map);
     }

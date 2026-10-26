@@ -1,6 +1,6 @@
 package com.googlecode.javaewah;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class BufferedIterator implements IteratingRLW, Cloneable {
     private IteratingBufferedRunningLengthWord iteratingBrlw;
     private CloneableIterator<EWAHIterator> masterIterator;
@@ -87,7 +87,7 @@ public class BufferedIterator implements IteratingRLW, Cloneable {
     }
 
     @Override // com.googlecode.javaewah.IteratingRLW
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public BufferedIterator m3456clone() throws CloneNotSupportedException {
         BufferedIterator bufferedIterator = (BufferedIterator) super.clone();
         bufferedIterator.iteratingBrlw = this.iteratingBrlw.m3456clone();

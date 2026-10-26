@@ -9,7 +9,7 @@ import org.apache.http.message.BasicHttpEntityEnclosingRequest;
 import org.apache.http.message.BasicHttpRequest;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultHttpRequestFactory implements HttpRequestFactory {
     public static final DefaultHttpRequestFactory INSTANCE = new DefaultHttpRequestFactory();
     private static final String[] RFC2616_COMMON_METHODS = {"GET"};

@@ -10,7 +10,7 @@ import com.bumptech.glide.load.Transformation;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.load.resource.bitmap.DownsampleStrategy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class RequestOptions extends BaseRequestOptions<RequestOptions> {
     private static RequestOptions centerCropOptions;
     private static RequestOptions centerInsideOptions;

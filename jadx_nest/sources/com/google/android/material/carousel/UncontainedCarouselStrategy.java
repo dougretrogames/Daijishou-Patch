@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class UncontainedCarouselStrategy extends CarouselStrategy {
     private static final float MEDIUM_LARGE_ITEM_PERCENTAGE_THRESHOLD = 0.85f;
 

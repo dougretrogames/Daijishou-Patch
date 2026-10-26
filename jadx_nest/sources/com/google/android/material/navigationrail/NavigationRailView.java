@@ -17,7 +17,7 @@ import com.google.android.material.internal.ViewUtils;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.resources.MaterialResources;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class NavigationRailView extends NavigationBarView {
     private static final int DEFAULT_HEADER_GRAVITY = 49;
     static final int DEFAULT_MENU_GRAVITY = 49;
@@ -86,7 +86,7 @@ public class NavigationRailView extends NavigationBarView {
         ViewUtils.doOnApplyWindowInsets(this, new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.navigationrail.NavigationRailView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.navigationrail.NavigationRailView$1, reason: invalid class name */
     class AnonymousClass1 implements ViewUtils.OnApplyWindowInsetsListener {
         AnonymousClass1() {
         }
@@ -111,7 +111,7 @@ public class NavigationRailView extends NavigationBarView {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean shouldApplyWindowInsetPadding(Boolean bool) {
         return bool != null ? bool.booleanValue() : ViewCompat.getFitsSystemWindows(this);
     }
@@ -189,7 +189,7 @@ public class NavigationRailView extends NavigationBarView {
         return (NavigationRailMenuView) getMenuView();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.android.material.navigation.NavigationBarView
     public NavigationRailMenuView createNavigationBarMenuView(Context context) {
         return new NavigationRailMenuView(context);

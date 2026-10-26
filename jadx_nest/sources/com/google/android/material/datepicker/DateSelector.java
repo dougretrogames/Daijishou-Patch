@@ -12,7 +12,7 @@ import com.google.android.material.internal.ViewUtils;
 import java.text.SimpleDateFormat;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface DateSelector<S> extends Parcelable {
     int getDefaultThemeResId(Context context);
 

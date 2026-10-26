@@ -6,8 +6,8 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 
-/* JADX INFO: compiled from: JsonElementMarker.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: JsonElementMarker.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 /* synthetic */ class JsonElementMarker$origin$1 extends FunctionReferenceImpl implements Function2<SerialDescriptor, Integer, Boolean> {
     JsonElementMarker$origin$1(Object obj) {

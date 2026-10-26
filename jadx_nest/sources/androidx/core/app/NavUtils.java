@@ -10,7 +10,7 @@ import android.os.Build;
 import android.util.Log;
 import androidx.annotation.ReplaceWith;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class NavUtils {
     public static final String PARENT_ACTIVITY = "android.support.PARENT_ACTIVITY";
     private static final String TAG = "NavUtils";

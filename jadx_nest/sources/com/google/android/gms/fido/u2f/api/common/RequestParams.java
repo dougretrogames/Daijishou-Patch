@@ -6,8 +6,8 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import java.util.List;
 import java.util.Set;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public abstract class RequestParams extends AbstractSafeParcelable implements ReflectedParcelable {
     public abstract Set<Uri> getAllAppIds();

@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class AppInitializer {
     private static final String SECTION_NAME = "Startup";
     private static volatile AppInitializer sInstance;

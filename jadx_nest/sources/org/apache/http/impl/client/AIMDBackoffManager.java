@@ -8,7 +8,7 @@ import org.apache.http.conn.routing.HttpRoute;
 import org.apache.http.pool.ConnPoolControl;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AIMDBackoffManager implements BackoffManager {
     private double backoffFactor;
     private int cap;

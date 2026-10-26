@@ -3,7 +3,7 @@ package org.apache.commons.collections4.queue;
 import java.util.Queue;
 import org.apache.commons.collections4.collection.AbstractCollectionDecorator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractQueueDecorator<E> extends AbstractCollectionDecorator<E> implements Queue<E> {
     private static final long serialVersionUID = -2629815475789577029L;
 
@@ -14,7 +14,7 @@ public abstract class AbstractQueueDecorator<E> extends AbstractCollectionDecora
         super(queue);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public Queue<E> decorated() {
         return (Queue) super.decorated();

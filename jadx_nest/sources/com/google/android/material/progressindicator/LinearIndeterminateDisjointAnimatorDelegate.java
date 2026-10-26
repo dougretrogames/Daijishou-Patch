@@ -13,7 +13,7 @@ import com.google.android.material.R;
 import com.magneticchen.daijishou.application_data.Constants;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class LinearIndeterminateDisjointAnimatorDelegate extends IndeterminateAnimatorDelegate<ObjectAnimator> {
     private static final int TOTAL_DURATION_IN_MS = 1800;
     private float animationFraction;
@@ -61,7 +61,7 @@ final class LinearIndeterminateDisjointAnimatorDelegate extends IndeterminateAni
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.LinearIndeterminateDisjointAnimatorDelegate$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.LinearIndeterminateDisjointAnimatorDelegate$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }
@@ -75,7 +75,7 @@ final class LinearIndeterminateDisjointAnimatorDelegate extends IndeterminateAni
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.LinearIndeterminateDisjointAnimatorDelegate$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.LinearIndeterminateDisjointAnimatorDelegate$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         AnonymousClass2() {
         }
@@ -159,7 +159,7 @@ final class LinearIndeterminateDisjointAnimatorDelegate extends IndeterminateAni
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public float getAnimationFraction() {
         return this.animationFraction;
     }
@@ -172,7 +172,7 @@ final class LinearIndeterminateDisjointAnimatorDelegate extends IndeterminateAni
         this.drawable.invalidateSelf();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.LinearIndeterminateDisjointAnimatorDelegate$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.LinearIndeterminateDisjointAnimatorDelegate$3, reason: invalid class name */
     class AnonymousClass3 extends Property<LinearIndeterminateDisjointAnimatorDelegate, Float> {
         AnonymousClass3(Class cls, String str) {
             super(cls, str);

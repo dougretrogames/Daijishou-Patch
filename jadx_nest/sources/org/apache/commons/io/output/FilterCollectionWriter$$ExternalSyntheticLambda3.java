@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.io.Writer;
 import org.apache.commons.io.function.IOConsumer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class FilterCollectionWriter$$ExternalSyntheticLambda3 implements IOConsumer {
     public final /* synthetic */ CharSequence f$0;
 

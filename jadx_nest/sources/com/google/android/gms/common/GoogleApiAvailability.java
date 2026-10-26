@@ -43,8 +43,8 @@ import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 @RestrictedInheritance(allowedOnPath = ".*java.*/com/google/android/gms.*", allowlistAnnotations = {com.google.android.gms.internal.base.zad.class, zae.class}, explanation = "Sub classing of GMS Core's APIs are restricted to GMS Core client libs and testing fakes.", link = "go/gmscore-restrictedinheritance")
 public class GoogleApiAvailability extends GoogleApiAvailabilityLight {
     public static final String GOOGLE_PLAY_SERVICES_PACKAGE = "com.google.android.gms";

@@ -20,7 +20,7 @@ import com.bumptech.glide.util.Util;
 import java.util.Collection;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class RequestManagerRetriever implements Handler.Callback {
     private static final RequestManagerFactory DEFAULT_FACTORY = new AnonymousClass1();
     static final String FRAGMENT_TAG = "com.bumptech.glide.manager";
@@ -182,7 +182,7 @@ public class RequestManagerRetriever implements Handler.Callback {
         return activityFindActivity == null || !activityFindActivity.isFinishing();
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.manager.RequestManagerRetriever$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.manager.RequestManagerRetriever$1, reason: invalid class name */
     class AnonymousClass1 implements RequestManagerFactory {
         AnonymousClass1() {
         }

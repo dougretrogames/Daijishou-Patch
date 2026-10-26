@@ -20,7 +20,7 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractMessageParser<T extends HttpMessage> implements HttpMessageParser<T> {
     private static final int HEADERS = 1;
     private static final int HEAD_LINE = 0;

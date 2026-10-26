@@ -6,7 +6,7 @@ import androidx.appcompat.widget.AppCompatTextView;
 import androidx.core.text.PrecomputedTextCompat;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class PrecomputedFutureTextSetterCompat implements Markwon.TextSetter {
     private final Executor executor;
 

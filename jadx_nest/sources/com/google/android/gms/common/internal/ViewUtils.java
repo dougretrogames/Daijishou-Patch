@@ -6,8 +6,8 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.util.TypedValue;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public class ViewUtils {
     private ViewUtils() {
     }

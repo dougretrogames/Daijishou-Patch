@@ -7,7 +7,7 @@ import android.graphics.RectF;
 import com.google.android.material.color.MaterialColors;
 import com.google.android.material.math.MathUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class CircularDrawingDelegate extends DrawingDelegate<CircularProgressIndicatorSpec> {
     private static final float ROUND_CAP_RAMP_DOWN_THRESHHOLD = 0.01f;
     private float adjustedRadius;

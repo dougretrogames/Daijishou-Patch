@@ -1,6 +1,6 @@
 package com.google.android.material.color.utilities;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class PointProviderLab implements PointProvider {
     @Override // com.google.android.material.color.utilities.PointProvider
     public double[] fromInt(int i) {

@@ -6,7 +6,7 @@ import com.google.android.material.R;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CircularProgressIndicator extends BaseProgressIndicator<CircularProgressIndicatorSpec> {
     public static final int DEF_STYLE_RES = R.style.Widget_MaterialComponents_CircularProgressIndicator;
     public static final int INDICATOR_DIRECTION_CLOCKWISE = 0;
@@ -29,7 +29,7 @@ public class CircularProgressIndicator extends BaseProgressIndicator<CircularPro
         initializeDrawables();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.progressindicator.BaseProgressIndicator
     public CircularProgressIndicatorSpec createSpec(Context context, AttributeSet attributeSet) {
         return new CircularProgressIndicatorSpec(context, attributeSet);

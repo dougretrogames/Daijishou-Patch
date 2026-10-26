@@ -1,6 +1,6 @@
 package org.apache.commons.codec.language.bm;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum NameType {
     ASHKENAZI("ash"),
     GENERIC("gen"),

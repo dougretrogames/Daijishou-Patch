@@ -11,7 +11,7 @@ import java.nio.ByteOrder;
 import java.util.Arrays;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class StandardGifDecoder implements GifDecoder {
     private static final int BYTES_PER_INTEGER = 4;
     private static final int COLOR_TRANSPARENT_BLACK = 0;
@@ -566,12 +566,12 @@ public class StandardGifDecoder implements GifDecoder {
         return ((i4 / i8) << 24) | ((i5 / i8) << 16) | ((i6 / i8) << 8) | (i7 / i8);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r3v10 */
-    /* JADX WARN: Type inference failed for: r3v15, types: [short] */
-    /* JADX WARN: Type inference failed for: r3v17 */
-    /* JADX WARN: Type inference failed for: r3v8 */
-    /* JADX WARN: Type inference failed for: r3v9 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r3v10 */
+    /* WARN: Type inference failed for: r3v15, types: [short] */
+    /* WARN: Type inference failed for: r3v17 */
+    /* WARN: Type inference failed for: r3v8 */
+    /* WARN: Type inference failed for: r3v9 */
     private void decodeBitmapData(GifFrame gifFrame) {
         short s;
         StandardGifDecoder standardGifDecoder = this;

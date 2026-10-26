@@ -3,10 +3,10 @@ package com.google.api.client.json.rpc2;
 import com.google.api.client.util.GenericData;
 import com.google.api.client.util.Key;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class JsonRpcRequest extends GenericData {
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     @Key
     private Object f35id;
 

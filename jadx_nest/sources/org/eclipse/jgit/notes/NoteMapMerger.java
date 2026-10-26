@@ -12,7 +12,7 @@ import org.eclipse.jgit.merge.MergeStrategy;
 import org.eclipse.jgit.merge.Merger;
 import org.eclipse.jgit.merge.ThreeWayMerger;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NoteMapMerger {
     private static final FanoutBucket EMPTY_FANOUT = new FanoutBucket(0);
     private static final LeafBucket EMPTY_LEAF = new LeafBucket(0);

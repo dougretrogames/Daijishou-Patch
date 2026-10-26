@@ -13,7 +13,7 @@ import org.apache.commons.io.Charsets;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.charset.CharsetEncoders;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReaderInputStream extends AbstractInputStream {
     private final CharsetEncoder charsetEncoder;
     private final CharBuffer encoderIn;
@@ -41,7 +41,7 @@ public class ReaderInputStream extends AbstractInputStream {
             return this;
         }
 
-        /* JADX INFO: renamed from: lambda$setCharsetEncoder$0$org-apache-commons-io-input-ReaderInputStream$Builder, reason: not valid java name */
+        /* INFO: renamed from: lambda$setCharsetEncoder$0$org-apache-commons-io-input-ReaderInputStream$Builder, reason: not valid java name */
         /* synthetic */ CharsetEncoder m5588x5a2c7bac() {
             return ReaderInputStream.newEncoder(getCharsetDefault());
         }
@@ -70,7 +70,7 @@ public class ReaderInputStream extends AbstractInputStream {
         return charsetEncoder.maxBytesPerChar() * 2.0f;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static CharsetEncoder newEncoder(Charset charset) {
         return Charsets.toCharset(charset).newEncoder().onMalformedInput(CodingErrorAction.REPLACE).onUnmappableCharacter(CodingErrorAction.REPLACE);
     }

@@ -7,7 +7,7 @@ import net.lingala.zip4j.model.LocalFileHeader;
 import net.lingala.zip4j.model.enums.CompressionMethod;
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class CipherInputStream<T extends Decrypter> extends InputStream {
     private T decrypter;
     private byte[] lastReadRawDataCache;

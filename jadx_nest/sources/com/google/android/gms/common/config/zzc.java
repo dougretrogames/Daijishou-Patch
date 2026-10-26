@@ -2,8 +2,8 @@ package com.google.android.gms.common.config;
 
 import com.google.android.gms.common.internal.Preconditions;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 final class zzc extends GservicesValue {
     zzc(String str, Integer num) {
         super(str, num);

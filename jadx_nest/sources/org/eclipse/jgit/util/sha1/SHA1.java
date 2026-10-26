@@ -7,7 +7,7 @@ import org.eclipse.jgit.lib.MutableObjectId;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class SHA1 {
     private static final Sha1Implementation SHA1_IMPLEMENTATION = fromConfig();
 
@@ -35,7 +35,7 @@ public abstract class SHA1 {
 
         private final String implClassName;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Sha1Implementation[] valuesCustom() {
             Sha1Implementation[] sha1ImplementationArrValuesCustom = values();
             int length = sha1ImplementationArrValuesCustom.length;

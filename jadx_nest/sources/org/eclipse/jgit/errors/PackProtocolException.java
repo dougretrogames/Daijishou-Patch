@@ -2,7 +2,7 @@ package org.eclipse.jgit.errors;
 
 import org.eclipse.jgit.transport.URIish;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PackProtocolException extends TransportException {
     private static final long serialVersionUID = 1;
 

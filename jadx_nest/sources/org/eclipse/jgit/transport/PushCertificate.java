@@ -9,7 +9,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.Constants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PushCertificate {
     private final List<ReceiveCommand> commands;
     private final String nonce;
@@ -26,7 +26,7 @@ public class PushCertificate {
         OK,
         SLOP;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static NonceStatus[] valuesCustom() {
             NonceStatus[] nonceStatusArrValuesCustom = values();
             int length = nonceStatusArrValuesCustom.length;

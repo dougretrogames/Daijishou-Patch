@@ -5,8 +5,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: WindowMetricsCalculator.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: WindowMetricsCalculator.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(k = 3, mv = {1, 6, 0}, xi = 48)
 /* synthetic */ class WindowMetricsCalculator$Companion$overrideDecorator$1 extends FunctionReferenceImpl implements Function1<WindowMetricsCalculator, WindowMetricsCalculator> {
     WindowMetricsCalculator$Companion$overrideDecorator$1(Object obj) {

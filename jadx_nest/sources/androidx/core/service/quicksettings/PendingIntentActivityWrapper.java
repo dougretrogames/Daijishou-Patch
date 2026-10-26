@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import androidx.core.app.PendingIntentCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class PendingIntentActivityWrapper {
     private final Context mContext;
     private final int mFlags;

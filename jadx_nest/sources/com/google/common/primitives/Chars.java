@@ -15,7 +15,7 @@ import kotlin.jvm.internal.CharCompanionObject;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import okhttp3.internal.ws.WebSocketProtocol;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class Chars {
     public static final int BYTES = 2;
@@ -64,7 +64,7 @@ public final class Chars {
         return indexOf(array, target, 0, array.length);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int indexOf(char[] array, char target, int start, int end) {
         while (start < end) {
             if (array[start] == target) {
@@ -95,7 +95,7 @@ public final class Chars {
         return lastIndexOf(array, target, 0, array.length);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int lastIndexOf(char[] array, char target, int start, int end) {
         for (int i = end - 1; i >= start; i--) {
             if (array[i] == target) {

@@ -13,7 +13,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ImageCardView extends BaseCardView {
     private static final String ALPHA = "alpha";
     public static final int CARD_TYPE_FLAG_CONTENT = 2;

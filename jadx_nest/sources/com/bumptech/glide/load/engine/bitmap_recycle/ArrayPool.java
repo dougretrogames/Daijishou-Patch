@@ -1,6 +1,6 @@
 package com.bumptech.glide.load.engine.bitmap_recycle;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface ArrayPool {
     public static final int STANDARD_BUFFER_SIZE_BYTES = 65536;
 

@@ -5,7 +5,7 @@ import com.google.protobuf.Internal;
 import com.google.protobuf.ProtocolMessageEnum;
 import com.google.protobuf.RuntimeVersion;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public enum TestDummyEnumTestEnum implements ProtocolMessageEnum {
     TESTDUMMY_ENUM_TEST_NULL(0),
     ENUM1(1),
@@ -55,7 +55,7 @@ public enum TestDummyEnumTestEnum implements ProtocolMessageEnum {
         return internalValueMap;
     }
 
-    /* JADX INFO: renamed from: proto.TestDummyEnumTestEnum$1, reason: invalid class name */
+    /* INFO: renamed from: proto.TestDummyEnumTestEnum$1, reason: invalid class name */
     class AnonymousClass1 implements Internal.EnumLiteMap<TestDummyEnumTestEnum> {
         AnonymousClass1() {
         }

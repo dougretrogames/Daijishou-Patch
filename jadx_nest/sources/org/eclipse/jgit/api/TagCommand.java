@@ -26,7 +26,7 @@ import org.eclipse.jgit.revwalk.RevObject;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.transport.CredentialsProvider;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TagCommand extends GitCommand<Ref> {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$lib$RefUpdate$Result;
     private Boolean annotated;
@@ -34,7 +34,7 @@ public class TagCommand extends GitCommand<Ref> {
     private boolean forceUpdate;
     private GpgConfig gpgConfig;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     private RevObject f113id;
     private String message;
     private String name;

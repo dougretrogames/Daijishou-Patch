@@ -3,8 +3,8 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public enum Attachment implements Parcelable {
     PLATFORM("platform"),
     CROSS_PLATFORM("cross-platform");
@@ -12,7 +12,7 @@ public enum Attachment implements Parcelable {
     public static final Parcelable.Creator<Attachment> CREATOR = new zza();
     private final String zzb;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class UnsupportedAttachmentException extends Exception {
         public UnsupportedAttachmentException(String str) {
             super(String.format("Attachment %s not supported", str));

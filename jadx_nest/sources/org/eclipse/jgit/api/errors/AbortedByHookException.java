@@ -3,7 +3,7 @@ package org.eclipse.jgit.api.errors;
 import java.text.MessageFormat;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AbortedByHookException extends GitAPIException {
     private static final long serialVersionUID = 1;
     private final String hookName;

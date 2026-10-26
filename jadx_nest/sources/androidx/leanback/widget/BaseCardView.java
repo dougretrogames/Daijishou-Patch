@@ -15,7 +15,7 @@ import android.view.animation.Transformation;
 import android.widget.FrameLayout;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class BaseCardView extends FrameLayout {
     public static final int CARD_REGION_VISIBLE_ACTIVATED = 1;
     public static final int CARD_REGION_VISIBLE_ALWAYS = 0;
@@ -51,7 +51,7 @@ public class BaseCardView extends FrameLayout {
         return false;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.BaseCardView$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.BaseCardView$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -498,7 +498,7 @@ public class BaseCardView extends FrameLayout {
         startAnimation(this.mAnim);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.BaseCardView$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.BaseCardView$2, reason: invalid class name */
     class AnonymousClass2 implements Animation.AnimationListener {
         @Override // android.view.animation.Animation.AnimationListener
         public void onAnimationRepeat(Animation animation) {
@@ -540,7 +540,7 @@ public class BaseCardView extends FrameLayout {
         startAnimation(this.mAnim);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.BaseCardView$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.BaseCardView$3, reason: invalid class name */
     class AnonymousClass3 implements Animation.AnimationListener {
         @Override // android.view.animation.Animation.AnimationListener
         public void onAnimationRepeat(Animation animation) {
@@ -581,7 +581,7 @@ public class BaseCardView extends FrameLayout {
         startAnimation(this.mAnim);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.BaseCardView$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.BaseCardView$4, reason: invalid class name */
     class AnonymousClass4 implements Animation.AnimationListener {
         @Override // android.view.animation.Animation.AnimationListener
         public void onAnimationRepeat(Animation animation) {
@@ -609,13 +609,13 @@ public class BaseCardView extends FrameLayout {
         return new LayoutParams(getContext(), attributeSet);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.widget.FrameLayout, android.view.ViewGroup
     public LayoutParams generateDefaultLayoutParams() {
         return new LayoutParams(-2, -2);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.widget.FrameLayout, android.view.ViewGroup
     public LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
         if (layoutParams instanceof LayoutParams) {

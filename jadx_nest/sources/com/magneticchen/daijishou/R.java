@@ -1,6 +1,6 @@
 package com.magneticchen.daijishou;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class R {
 
     public static final class anim {
@@ -4412,124 +4412,124 @@ public final class R {
         public static final int tooltip_frame_light = 0x7f0801db;
         public static final int twotone_dark_mode_24 = 0x7f0801dc;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _avd_hide_password__0_res_0x7f080000 = 0x7f080000;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _avd_hide_password__1_res_0x7f080001 = 0x7f080001;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _avd_hide_password__2_res_0x7f080002 = 0x7f080002;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _avd_show_password__0_res_0x7f080003 = 0x7f080003;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _avd_show_password__1_res_0x7f080004 = 0x7f080004;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _avd_show_password__2_res_0x7f080005 = 0x7f080005;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _m3_avd_hide_password__0_res_0x7f080006 = 0x7f080006;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _m3_avd_hide_password__1_res_0x7f080007 = 0x7f080007;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _m3_avd_hide_password__2_res_0x7f080008 = 0x7f080008;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _m3_avd_show_password__0_res_0x7f080009 = 0x7f080009;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _m3_avd_show_password__1_res_0x7f08000a = 0x7f08000a;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _m3_avd_show_password__2_res_0x7f08000b = 0x7f08000b;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_checked_unchecked__0_res_0x7f08000c = 0x7f08000c;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_checked_unchecked__1_res_0x7f08000d = 0x7f08000d;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_checked_unchecked__2_res_0x7f08000e = 0x7f08000e;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_checked_indeterminate__0_res_0x7f08000f = 0x7f08000f;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_checked_unchecked__0_res_0x7f080010 = 0x7f080010;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_checked_unchecked__1_res_0x7f080011 = 0x7f080011;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_checked_unchecked__2_res_0x7f080012 = 0x7f080012;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_indeterminate_checked__0_res_0x7f080013 = 0x7f080013;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_indeterminate_unchecked__0_res_0x7f080014 = 0x7f080014;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_indeterminate_unchecked__1_res_0x7f080015 = 0x7f080015;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_indeterminate_unchecked__2_res_0x7f080016 = 0x7f080016;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_unchecked_checked__0_res_0x7f080017 = 0x7f080017;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_unchecked_checked__1_res_0x7f080018 = 0x7f080018;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_unchecked_checked__2_res_0x7f080019 = 0x7f080019;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_unchecked_indeterminate__0_res_0x7f08001a = 0x7f08001a;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_unchecked_indeterminate__1_res_0x7f08001b = 0x7f08001b;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_icon_unchecked_indeterminate__2_res_0x7f08001c = 0x7f08001c;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_unchecked_checked__0_res_0x7f08001d = 0x7f08001d;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_unchecked_checked__1_res_0x7f08001e = 0x7f08001e;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_checkbox_button_unchecked_checked__2_res_0x7f08001f = 0x7f08001f;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_switch_thumb_checked_pressed__0_res_0x7f080020 = 0x7f080020;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_switch_thumb_checked_unchecked__0_res_0x7f080021 = 0x7f080021;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_switch_thumb_checked_unchecked__1_res_0x7f080022 = 0x7f080022;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_switch_thumb_pressed_checked__0_res_0x7f080023 = 0x7f080023;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_switch_thumb_pressed_unchecked__0_res_0x7f080024 = 0x7f080024;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_switch_thumb_unchecked_checked__0_res_0x7f080025 = 0x7f080025;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_switch_thumb_unchecked_checked__1_res_0x7f080026 = 0x7f080026;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int _mtrl_switch_thumb_unchecked_pressed__0_res_0x7f080027 = 0x7f080027;
 
         private drawable() {
@@ -11501,7 +11501,7 @@ public final class R {
         public static final int searchable = 0x7f18000d;
         public static final int video_and_sounds_preferences = 0x7f18000e;
 
-        /* JADX INFO: Added by JADX */
+        /* INFO: Added by decompiler */
         public static final int splits0 = 0x7f18000f;
 
         private xml() {

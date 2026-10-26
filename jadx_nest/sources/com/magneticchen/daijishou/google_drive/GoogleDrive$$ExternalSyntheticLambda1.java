@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.google_drive;
 import com.google.android.gms.tasks.OnSuccessListener;
 import kotlin.jvm.functions.Function1;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class GoogleDrive$$ExternalSyntheticLambda1 implements OnSuccessListener {
     public final /* synthetic */ Function1 f$0;
 

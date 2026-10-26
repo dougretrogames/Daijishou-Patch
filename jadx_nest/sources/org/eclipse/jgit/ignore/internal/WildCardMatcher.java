@@ -3,7 +3,7 @@ package org.eclipse.jgit.ignore.internal;
 import java.util.regex.Pattern;
 import org.eclipse.jgit.errors.InvalidPatternException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class WildCardMatcher extends NameMatcher {
     final Pattern p;
 

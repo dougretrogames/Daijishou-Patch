@@ -3,7 +3,7 @@ package com.bumptech.glide.load.engine.cache;
 import com.bumptech.glide.load.Key;
 import java.io.File;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface DiskCache {
 
     public interface Factory {

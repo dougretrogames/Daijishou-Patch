@@ -11,7 +11,7 @@ import org.eclipse.jgit.errors.CorruptObjectException;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.util.MutableInteger;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Constants {
     public static final String ATTR_BUILTIN_BINARY_MERGER = "binary";
     public static final String ATTR_BUILTIN_UNION_MERGE_DRIVER = "union";

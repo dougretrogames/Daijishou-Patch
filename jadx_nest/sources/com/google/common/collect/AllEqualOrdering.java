@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.List;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class AllEqualOrdering extends Ordering<Object> implements Serializable {
     static final AllEqualOrdering INSTANCE = new AllEqualOrdering();

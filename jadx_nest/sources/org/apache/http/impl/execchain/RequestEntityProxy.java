@@ -9,7 +9,7 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpEntityEnclosingRequest;
 import org.apache.http.HttpRequest;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class RequestEntityProxy implements HttpEntity {
     private boolean consumed = false;
     private final HttpEntity original;

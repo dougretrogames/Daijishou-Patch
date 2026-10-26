@@ -3,7 +3,7 @@ package androidx.emoji2.text.flatbuffer;
 import com.google.common.base.Ascii;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ArrayReadWriteBuf implements ReadWriteBuf {
     private byte[] buffer;
     private int writePos;

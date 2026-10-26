@@ -3,7 +3,7 @@ package com.google.common.base;
 import java.nio.charset.Charset;
 import org.apache.http.protocol.HTTP;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Charsets {
     public static final Charset US_ASCII = Charset.forName("US-ASCII");

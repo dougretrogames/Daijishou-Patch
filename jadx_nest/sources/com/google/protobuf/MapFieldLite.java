@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class MapFieldLite<K, V> extends LinkedHashMap<K, V> {
     private static final MapFieldLite<?, ?> EMPTY_MAP_FIELD;
     private boolean isMutable;
@@ -139,7 +139,7 @@ public final class MapFieldLite<K, V> extends LinkedHashMap<K, V> {
         return Arrays.copyOf(bArr, bArr.length);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static <K, V> Map<K, V> copy(Map<K, V> map) {
         LinkedHashMap linkedHashMap = new LinkedHashMap(((map.size() * 4) / 3) + 1);
         for (Map.Entry<K, V> entry : map.entrySet()) {

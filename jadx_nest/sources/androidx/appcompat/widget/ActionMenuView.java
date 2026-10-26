@@ -18,7 +18,7 @@ import androidx.appcompat.view.menu.MenuItemImpl;
 import androidx.appcompat.view.menu.MenuPresenter;
 import androidx.appcompat.view.menu.MenuView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ActionMenuView extends LinearLayoutCompat implements MenuBuilder.ItemInvoker, MenuView {
     static final int GENERATED_ITEM_PADDING = 4;
     static final int MIN_CELL_SIZE = 56;
@@ -134,9 +134,9 @@ public class ActionMenuView extends LinearLayoutCompat implements MenuBuilder.It
         super.onMeasure(i, i2);
     }
 
-    /* JADX WARN: Type inference failed for: r3v34 */
-    /* JADX WARN: Type inference failed for: r3v35, types: [boolean, int] */
-    /* JADX WARN: Type inference failed for: r3v49 */
+    /* WARN: Type inference failed for: r3v34 */
+    /* WARN: Type inference failed for: r3v35, types: [boolean, int] */
+    /* WARN: Type inference failed for: r3v49 */
     private void onMeasureExactFormat(int i, int i2) {
         long j;
         int i3;
@@ -339,7 +339,7 @@ public class ActionMenuView extends LinearLayoutCompat implements MenuBuilder.It
         setMeasuredDimension(i5, mode != 1073741824 ? iMax : i15);
     }
 
-    /* JADX WARN: Code duplicated, block: B:23:0x004c  */
+    /* WARN: Code duplicated, block: B:23:0x004c  */
     static int measureChildForCells(View view, int i, int i2, int i3, int i4) {
         int i5;
         LayoutParams layoutParams = (LayoutParams) view.getLayoutParams();
@@ -480,7 +480,7 @@ public class ActionMenuView extends LinearLayoutCompat implements MenuBuilder.It
         this.mReserveOverflow = z;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // androidx.appcompat.widget.LinearLayoutCompat, android.view.ViewGroup
     public LayoutParams generateDefaultLayoutParams() {
         LayoutParams layoutParams = new LayoutParams(-2, -2);
@@ -493,7 +493,7 @@ public class ActionMenuView extends LinearLayoutCompat implements MenuBuilder.It
         return new LayoutParams(getContext(), attributeSet);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // androidx.appcompat.widget.LinearLayoutCompat, android.view.ViewGroup
     public LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
         LayoutParams layoutParams2;

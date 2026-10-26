@@ -13,8 +13,8 @@ import com.google.android.gms.dynamic.RemoteCreator;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class SignInButton extends FrameLayout implements View.OnClickListener {
     public static final int COLOR_AUTO = 2;
     public static final int COLOR_DARK = 0;
@@ -27,12 +27,12 @@ public final class SignInButton extends FrameLayout implements View.OnClickListe
     private View zac;
     private View.OnClickListener zad;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     @Retention(RetentionPolicy.SOURCE)
     public @interface ButtonSize {
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     @Retention(RetentionPolicy.SOURCE)
     public @interface ColorScheme {
     }

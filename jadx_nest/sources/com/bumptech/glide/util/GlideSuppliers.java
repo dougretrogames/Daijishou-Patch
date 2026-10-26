@@ -1,6 +1,6 @@
 package com.bumptech.glide.util;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class GlideSuppliers {
 
     public interface GlideSupplier<T> {
@@ -10,8 +10,8 @@ public final class GlideSuppliers {
     private GlideSuppliers() {
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.bumptech.glide.util.GlideSuppliers$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.bumptech.glide.util.GlideSuppliers$1, reason: invalid class name */
     class AnonymousClass1<T> implements GlideSupplier<T> {
         private volatile T instance;
         final /* synthetic */ GlideSupplier val$supplier;

@@ -5,14 +5,14 @@ import com.google.android.gms.common.internal.Preconditions;
 import com.google.android.gms.common.util.concurrent.HandlerExecutor;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class ListenerHolder<L> {
     private final Executor zaa;
     private volatile Object zab;
     private volatile ListenerKey zac;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static final class ListenerKey<L> {
         private final Object zaa;
         private final String zab;
@@ -42,7 +42,7 @@ public final class ListenerHolder<L> {
         }
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public interface Notifier<L> {
         void notifyListener(L l);
 
@@ -73,7 +73,7 @@ public final class ListenerHolder<L> {
         this.zaa.execute(new zacb(this, notifier));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     final void zaa(Notifier notifier) {
         Object obj = this.zab;
         if (obj == null) {

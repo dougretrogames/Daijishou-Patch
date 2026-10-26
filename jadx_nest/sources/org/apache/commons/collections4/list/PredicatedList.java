@@ -8,7 +8,7 @@ import org.apache.commons.collections4.Predicate;
 import org.apache.commons.collections4.collection.PredicatedCollection;
 import org.apache.commons.collections4.iterators.AbstractListIteratorDecorator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PredicatedList<E> extends PredicatedCollection<E> implements List<E> {
     private static final long serialVersionUID = -5722039223898659102L;
 
@@ -53,7 +53,7 @@ public class PredicatedList<E> extends PredicatedCollection<E> implements List<E
         return decorated().addAll(i, collection);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public List<E> decorated() {
         return (List) super.decorated();

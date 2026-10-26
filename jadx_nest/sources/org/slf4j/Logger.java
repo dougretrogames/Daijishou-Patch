@@ -1,6 +1,6 @@
 package org.slf4j;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface Logger {
     public static final String ROOT_LOGGER_NAME = "ROOT";
 

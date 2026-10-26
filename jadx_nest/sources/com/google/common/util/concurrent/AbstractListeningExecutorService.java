@@ -5,7 +5,7 @@ import java.util.concurrent.AbstractExecutorService;
 import java.util.concurrent.Callable;
 import java.util.concurrent.RunnableFuture;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 @CheckReturnValue
 public abstract class AbstractListeningExecutorService extends AbstractExecutorService implements ListeningExecutorService {

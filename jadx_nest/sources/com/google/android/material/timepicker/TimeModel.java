@@ -6,7 +6,7 @@ import android.os.Parcelable;
 import com.google.android.material.R;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class TimeModel implements Parcelable {
     public static final Parcelable.Creator<TimeModel> CREATOR = new AnonymousClass1();
     public static final String NUMBER_FORMAT = "%d";
@@ -113,18 +113,18 @@ class TimeModel implements Parcelable {
         parcel.writeInt(this.format);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.TimeModel$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.TimeModel$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.Creator<TimeModel> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public TimeModel createFromParcel(Parcel parcel) {
             return new TimeModel(parcel);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public TimeModel[] newArray(int i) {
             return new TimeModel[i];

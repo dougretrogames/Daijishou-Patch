@@ -8,7 +8,7 @@ import javax.crypto.spec.SecretKeySpec;
 import kotlin.text.Typography;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class OAuthHmacSigner implements OAuthSigner {
     public String clientSharedSecret;
     public String tokenSharedSecret;

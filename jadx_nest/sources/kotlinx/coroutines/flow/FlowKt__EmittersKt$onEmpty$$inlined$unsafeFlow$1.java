@@ -6,16 +6,16 @@ import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.jvm.functions.Function2;
 
-/* JADX INFO: Add missing generic type declarations: [T] */
-/* JADX INFO: compiled from: SafeCollector.common.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: Add missing generic type declarations: [T] */
+/* INFO: compiled from: SafeCollector.common.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000\u0019\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002*\u0001\u0000\b\n\u0018\u00002\b\u0012\u0004\u0012\u00028\u00000\u0001J\u001c\u0010\u0002\u001a\u00020\u00032\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00028\u00000\u0005H\u0096@¢\u0006\u0002\u0010\u0006¨\u0006\u0007¸\u0006\u0000"}, d2 = {"kotlinx/coroutines/flow/internal/SafeCollector_commonKt$unsafeFlow$1", "Lkotlinx/coroutines/flow/Flow;", "collect", "", "collector", "Lkotlinx/coroutines/flow/FlowCollector;", "(Lkotlinx/coroutines/flow/FlowCollector;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "kotlinx-coroutines-core"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class FlowKt__EmittersKt$onEmpty$$inlined$unsafeFlow$1<T> implements Flow<T> {
     final /* synthetic */ Function2 $action$inlined;
     final /* synthetic */ Flow $this_onEmpty$inlined;
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.flow.FlowKt__EmittersKt$onEmpty$$inlined$unsafeFlow$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SafeCollector.common.kt */
+    /* INFO: renamed from: kotlinx.coroutines.flow.FlowKt__EmittersKt$onEmpty$$inlined$unsafeFlow$1$1, reason: invalid class name */
+    /* INFO: compiled from: SafeCollector.common.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.coroutines.flow.FlowKt__EmittersKt$onEmpty$$inlined$unsafeFlow$1", f = "Emitters.kt", i = {0, 0, 0, 1}, l = {113, 121}, m = "collect", n = {"this", "$this$onEmpty_u24lambda_u243", "isEmpty", "collector"}, s = {"L$0", "L$1", "L$2", "L$0"})
     public static final class AnonymousClass1 extends ContinuationImpl {
@@ -37,20 +37,20 @@ public final class FlowKt__EmittersKt$onEmpty$$inlined$unsafeFlow$1<T> implement
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:28:0x008f, code lost:
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:28:0x008f, code lost:
     
         if (r8 == r1) goto L29;
      */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r2v3 */
-    /* JADX WARN: Type inference failed for: r2v4, types: [kotlinx.coroutines.flow.FlowCollector] */
-    /* JADX WARN: Type inference failed for: r2v8 */
-    /* JADX WARN: Type inference failed for: r7v0, types: [java.lang.Object, kotlinx.coroutines.flow.FlowCollector, kotlinx.coroutines.flow.FlowCollector<? super T>] */
-    /* JADX WARN: Type inference failed for: r7v1, types: [kotlinx.coroutines.flow.internal.SafeCollector] */
-    /* JADX WARN: Type inference failed for: r7v15 */
-    /* JADX WARN: Type inference failed for: r7v16 */
-    /* JADX WARN: Type inference failed for: r7v7, types: [kotlinx.coroutines.flow.internal.SafeCollector] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r2v3 */
+    /* WARN: Type inference failed for: r2v4, types: [kotlinx.coroutines.flow.FlowCollector] */
+    /* WARN: Type inference failed for: r2v8 */
+    /* WARN: Type inference failed for: r7v0, types: [java.lang.Object, kotlinx.coroutines.flow.FlowCollector, kotlinx.coroutines.flow.FlowCollector<? super T>] */
+    /* WARN: Type inference failed for: r7v1, types: [kotlinx.coroutines.flow.internal.SafeCollector] */
+    /* WARN: Type inference failed for: r7v15 */
+    /* WARN: Type inference failed for: r7v16 */
+    /* WARN: Type inference failed for: r7v7, types: [kotlinx.coroutines.flow.internal.SafeCollector] */
     @Override // kotlinx.coroutines.flow.Flow
     /*
         Code decompiled incorrectly, please refer to instructions dump.

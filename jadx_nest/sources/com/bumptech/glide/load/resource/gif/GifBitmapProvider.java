@@ -5,7 +5,7 @@ import com.bumptech.glide.gifdecoder.GifDecoder;
 import com.bumptech.glide.load.engine.bitmap_recycle.ArrayPool;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class GifBitmapProvider implements GifDecoder.BitmapProvider {
     private final ArrayPool arrayPool;
     private final BitmapPool bitmapPool;

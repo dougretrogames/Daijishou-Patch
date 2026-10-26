@@ -4,8 +4,8 @@ import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
 import org.apache.commons.io.function.IOSupplier;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class PathVisitorFileFilter$$ExternalSyntheticLambda0 implements IOSupplier {
     public final /* synthetic */ PathVisitorFileFilter f$0;
     public final /* synthetic */ Path f$1;

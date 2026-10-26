@@ -6,7 +6,7 @@ import android.view.ViewParent;
 import android.view.accessibility.AccessibilityEvent;
 import androidx.annotation.ReplaceWith;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ViewParentCompat {
     private static final String TAG = "ViewParentCompat";
     private static int[] sTempNestedScrollConsumed;

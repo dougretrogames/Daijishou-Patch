@@ -1,6 +1,6 @@
 package co.infinum.retromock;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DefaultBehavior implements Behavior {
     static final DefaultBehavior INSTANCE = new DefaultBehavior(1000, 500);
     private final int durationDeviation;

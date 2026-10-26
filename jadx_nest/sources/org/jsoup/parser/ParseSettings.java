@@ -3,7 +3,7 @@ package org.jsoup.parser;
 import org.jsoup.internal.Normalizer;
 import org.jsoup.nodes.Attributes;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ParseSettings {
     public static final ParseSettings htmlDefault = new ParseSettings(false, false);
     public static final ParseSettings preserveCase = new ParseSettings(true, true);

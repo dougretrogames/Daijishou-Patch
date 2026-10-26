@@ -5,7 +5,7 @@ import java.lang.ref.WeakReference;
 import org.apache.http.conn.routing.HttpRoute;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class BasicPoolEntryRef extends WeakReference<BasicPoolEntry> {
     private final HttpRoute route;

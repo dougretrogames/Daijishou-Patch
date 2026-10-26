@@ -12,7 +12,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SimpleLruCache<K, V> {
     private volatile int maximumSize;
     private int purgeSize;
@@ -24,7 +24,7 @@ public class SimpleLruCache<K, V> {
         return (int) ((1.0f - f) * i);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class Entry<K, V> {
         private final K key;
         private volatile long lastAccessed;

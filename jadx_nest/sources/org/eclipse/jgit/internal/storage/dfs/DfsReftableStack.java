@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import org.eclipse.jgit.internal.storage.reftable.ReftableReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsReftableStack implements AutoCloseable {
     private final List<DfsReftable> files;
     private final List<ReftableReader> tables;

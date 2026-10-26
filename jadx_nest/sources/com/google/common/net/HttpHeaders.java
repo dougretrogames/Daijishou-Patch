@@ -1,6 +1,6 @@
 package com.google.common.net;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class HttpHeaders {
     public static final String ACCEPT = "Accept";

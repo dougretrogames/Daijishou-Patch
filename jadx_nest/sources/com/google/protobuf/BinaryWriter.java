@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 abstract class BinaryWriter extends ByteOutput implements Writer {
     public static final int DEFAULT_CHUNK_SIZE = 4096;
@@ -20,7 +20,7 @@ abstract class BinaryWriter extends ByteOutput implements Writer {
     private final int chunkSize;
     int totalDoneBytes;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte computeUInt64SizeNoTag(long value) {
         byte b;
         if (((-128) & value) == 0) {
@@ -611,7 +611,7 @@ abstract class BinaryWriter extends ByteOutput implements Writer {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.BinaryWriter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.BinaryWriter$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$FieldType;
 
@@ -2227,20 +2227,20 @@ abstract class BinaryWriter extends ByteOutput implements Writer {
             UnsafeUtil.putByte(bArr8, j8, (byte) (((int) value) & 255));
         }
 
-        /* JADX WARN: Code duplicated, block: B:17:0x0049  */
-        /* JADX WARN: Code duplicated, block: B:19:0x004d  */
-        /* JADX WARN: Code duplicated, block: B:21:0x0055  */
-        /* JADX WARN: Code duplicated, block: B:22:0x0074  */
-        /* JADX WARN: Code duplicated, block: B:24:0x0079  */
-        /* JADX WARN: Code duplicated, block: B:26:0x007e  */
-        /* JADX WARN: Code duplicated, block: B:28:0x0087  */
-        /* JADX WARN: Code duplicated, block: B:29:0x00b6  */
-        /* JADX WARN: Code duplicated, block: B:31:0x00c1 A[DONT_INVERT] */
-        /* JADX WARN: Code duplicated, block: B:32:0x00c3  */
-        /* JADX WARN: Code duplicated, block: B:34:0x00cf  */
-        /* JADX WARN: Code duplicated, block: B:37:0x011f  */
-        /* JADX WARN: Code duplicated, block: B:43:0x0117 A[SYNTHETIC] */
-        /* JADX WARN: Code duplicated, block: B:44:0x0117 A[SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:17:0x0049  */
+        /* WARN: Code duplicated, block: B:19:0x004d  */
+        /* WARN: Code duplicated, block: B:21:0x0055  */
+        /* WARN: Code duplicated, block: B:22:0x0074  */
+        /* WARN: Code duplicated, block: B:24:0x0079  */
+        /* WARN: Code duplicated, block: B:26:0x007e  */
+        /* WARN: Code duplicated, block: B:28:0x0087  */
+        /* WARN: Code duplicated, block: B:29:0x00b6  */
+        /* WARN: Code duplicated, block: B:31:0x00c1 A[DONT_INVERT] */
+        /* WARN: Code duplicated, block: B:32:0x00c3  */
+        /* WARN: Code duplicated, block: B:34:0x00cf  */
+        /* WARN: Code duplicated, block: B:37:0x011f  */
+        /* WARN: Code duplicated, block: B:43:0x0117 A[SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:44:0x0117 A[SYNTHETIC] */
         @Override // com.google.protobuf.BinaryWriter
         void writeString(String in) {
             long j;
@@ -3238,7 +3238,7 @@ abstract class BinaryWriter extends ByteOutput implements Writer {
             nextBuffer();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static boolean isSupported() {
             return UnsafeUtil.hasUnsafeByteBufferOperations();
         }
@@ -3806,20 +3806,20 @@ abstract class BinaryWriter extends ByteOutput implements Writer {
             UnsafeUtil.putByte(j8, (byte) (((int) value) & 255));
         }
 
-        /* JADX WARN: Code duplicated, block: B:17:0x0045  */
-        /* JADX WARN: Code duplicated, block: B:19:0x0049  */
-        /* JADX WARN: Code duplicated, block: B:21:0x0051  */
-        /* JADX WARN: Code duplicated, block: B:22:0x006c  */
-        /* JADX WARN: Code duplicated, block: B:24:0x0071  */
-        /* JADX WARN: Code duplicated, block: B:26:0x0076  */
-        /* JADX WARN: Code duplicated, block: B:28:0x007f  */
-        /* JADX WARN: Code duplicated, block: B:29:0x00a8  */
-        /* JADX WARN: Code duplicated, block: B:31:0x00b3 A[DONT_INVERT] */
-        /* JADX WARN: Code duplicated, block: B:32:0x00b5  */
-        /* JADX WARN: Code duplicated, block: B:34:0x00c1  */
-        /* JADX WARN: Code duplicated, block: B:37:0x0109  */
-        /* JADX WARN: Code duplicated, block: B:43:0x0101 A[SYNTHETIC] */
-        /* JADX WARN: Code duplicated, block: B:44:0x0101 A[SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:17:0x0045  */
+        /* WARN: Code duplicated, block: B:19:0x0049  */
+        /* WARN: Code duplicated, block: B:21:0x0051  */
+        /* WARN: Code duplicated, block: B:22:0x006c  */
+        /* WARN: Code duplicated, block: B:24:0x0071  */
+        /* WARN: Code duplicated, block: B:26:0x0076  */
+        /* WARN: Code duplicated, block: B:28:0x007f  */
+        /* WARN: Code duplicated, block: B:29:0x00a8  */
+        /* WARN: Code duplicated, block: B:31:0x00b3 A[DONT_INVERT] */
+        /* WARN: Code duplicated, block: B:32:0x00b5  */
+        /* WARN: Code duplicated, block: B:34:0x00c1  */
+        /* WARN: Code duplicated, block: B:37:0x0109  */
+        /* WARN: Code duplicated, block: B:43:0x0101 A[SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:44:0x0101 A[SYNTHETIC] */
         @Override // com.google.protobuf.BinaryWriter
         void writeString(String in) {
             long j;

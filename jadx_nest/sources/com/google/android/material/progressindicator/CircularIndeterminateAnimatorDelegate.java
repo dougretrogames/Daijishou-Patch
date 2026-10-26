@@ -8,7 +8,7 @@ import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 import androidx.vectordrawable.graphics.drawable.Animatable2Compat;
 import com.google.android.material.animation.ArgbEvaluatorCompat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class CircularIndeterminateAnimatorDelegate extends IndeterminateAnimatorDelegate<ObjectAnimator> {
     private static final int CONSTANT_ROTATION_DEGREES = 1520;
     private static final int DURATION_TO_COLLAPSE_IN_MS = 667;
@@ -66,7 +66,7 @@ final class CircularIndeterminateAnimatorDelegate extends IndeterminateAnimatorD
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.CircularIndeterminateAnimatorDelegate$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.CircularIndeterminateAnimatorDelegate$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }
@@ -79,7 +79,7 @@ final class CircularIndeterminateAnimatorDelegate extends IndeterminateAnimatorD
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.CircularIndeterminateAnimatorDelegate$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.CircularIndeterminateAnimatorDelegate$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         AnonymousClass2() {
         }
@@ -164,7 +164,7 @@ final class CircularIndeterminateAnimatorDelegate extends IndeterminateAnimatorD
         this.completeEndFraction = 0.0f;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public float getAnimationFraction() {
         return this.animationFraction;
     }
@@ -178,17 +178,17 @@ final class CircularIndeterminateAnimatorDelegate extends IndeterminateAnimatorD
         this.drawable.invalidateSelf();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public float getCompleteEndFraction() {
         return this.completeEndFraction;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void setCompleteEndFraction(float f) {
         this.completeEndFraction = f;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.CircularIndeterminateAnimatorDelegate$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.CircularIndeterminateAnimatorDelegate$3, reason: invalid class name */
     class AnonymousClass3 extends Property<CircularIndeterminateAnimatorDelegate, Float> {
         AnonymousClass3(Class cls, String str) {
             super(cls, str);
@@ -205,7 +205,7 @@ final class CircularIndeterminateAnimatorDelegate extends IndeterminateAnimatorD
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.CircularIndeterminateAnimatorDelegate$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.CircularIndeterminateAnimatorDelegate$4, reason: invalid class name */
     class AnonymousClass4 extends Property<CircularIndeterminateAnimatorDelegate, Float> {
         AnonymousClass4(Class cls, String str) {
             super(cls, str);

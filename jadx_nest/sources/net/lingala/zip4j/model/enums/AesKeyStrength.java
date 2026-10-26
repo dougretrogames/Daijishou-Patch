@@ -1,6 +1,6 @@
 package net.lingala.zip4j.model.enums;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum AesKeyStrength {
     KEY_STRENGTH_128(1, 8, 16, 16),
     KEY_STRENGTH_192(2, 12, 24, 24),

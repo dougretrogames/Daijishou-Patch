@@ -4,8 +4,8 @@ import java.io.File;
 import org.apache.commons.io.file.PathUtils;
 import org.apache.commons.io.function.IOBooleanSupplier;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class FileUtils$$ExternalSyntheticLambda1 implements IOBooleanSupplier {
     public final /* synthetic */ File f$0;
     public final /* synthetic */ File f$1;

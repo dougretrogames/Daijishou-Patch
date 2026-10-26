@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class CodedInputStream {
     private static final int DEFAULT_BUFFER_SIZE = 4096;
     private static final int DEFAULT_SIZE_LIMIT = Integer.MAX_VALUE;
@@ -1339,7 +1339,7 @@ public abstract class CodedInputStream {
             return decodeZigZag64(readRawVarint64());
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:33:0x008c, code lost:
+        /* WARN: Code restructure failed: missing block: B:33:0x008c, code lost:
         
             if (com.google.protobuf.UnsafeUtil.getByte(r3) < 0) goto L34;
          */

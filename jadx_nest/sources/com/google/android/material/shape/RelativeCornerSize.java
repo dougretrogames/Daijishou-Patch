@@ -3,7 +3,7 @@ package com.google.android.material.shape;
 import android.graphics.RectF;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class RelativeCornerSize implements CornerSize {
     private final float percent;
 

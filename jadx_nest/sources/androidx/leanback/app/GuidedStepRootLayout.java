@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class GuidedStepRootLayout extends LinearLayout {
     private boolean mFocusOutEnd;
     private boolean mFocusOutStart;
@@ -29,8 +29,8 @@ class GuidedStepRootLayout extends LinearLayout {
         this.mFocusOutEnd = z;
     }
 
-    /* JADX WARN: Code duplicated, block: B:18:0x0027 A[RETURN] */
-    /* JADX WARN: Code restructure failed: missing block: B:14:0x0020, code lost:
+    /* WARN: Code duplicated, block: B:18:0x0027 A[RETURN] */
+    /* WARN: Code restructure failed: missing block: B:14:0x0020, code lost:
     
         if (r4.mFocusOutStart != false) goto L19;
      */

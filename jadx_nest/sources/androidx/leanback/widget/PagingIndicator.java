@@ -22,7 +22,7 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class PagingIndicator extends View {
     private static final TimeInterpolator DECELERATE_INTERPOLATOR = new DecelerateInterpolator();
     private static final Property<Dot, Float> DOT_ALPHA = new AnonymousClass1(Float.class, "alpha");
@@ -58,7 +58,7 @@ public class PagingIndicator extends View {
     private final int mShadowRadius;
     private final AnimatorSet mShowAnimator;
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.PagingIndicator$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.PagingIndicator$1, reason: invalid class name */
     class AnonymousClass1 extends Property<Dot, Float> {
         AnonymousClass1(Class cls, String str) {
             super(cls, str);
@@ -75,7 +75,7 @@ public class PagingIndicator extends View {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.PagingIndicator$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.PagingIndicator$2, reason: invalid class name */
     class AnonymousClass2 extends Property<Dot, Float> {
         AnonymousClass2(Class cls, String str) {
             super(cls, str);
@@ -92,7 +92,7 @@ public class PagingIndicator extends View {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.PagingIndicator$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.PagingIndicator$3, reason: invalid class name */
     class AnonymousClass3 extends Property<Dot, Float> {
         AnonymousClass3(Class cls, String str) {
             super(cls, str);

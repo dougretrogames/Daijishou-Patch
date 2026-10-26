@@ -14,7 +14,7 @@ import java.util.stream.Collector;
 import java.util.stream.Stream;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class ImmutableListMultimap<K, V> extends ImmutableMultimap<K, V> implements ListMultimap<K, V> {
     private static final long serialVersionUID = 0;
@@ -116,7 +116,7 @@ public class ImmutableListMultimap<K, V> extends ImmutableMultimap<K, V> impleme
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.ImmutableMultimap.Builder
         public Builder<K, V> combine(ImmutableMultimap.Builder<K, V> other) {
             super.combine((ImmutableMultimap.Builder) other);
@@ -202,7 +202,7 @@ public class ImmutableListMultimap<K, V> extends ImmutableMultimap<K, V> impleme
         return immutableListMultimapInvert;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private ImmutableListMultimap<V, K> invert() {
         Builder builder = builder();
         UnmodifiableIterator it = entries().iterator();
@@ -232,7 +232,7 @@ public class ImmutableListMultimap<K, V> extends ImmutableMultimap<K, V> impleme
         Serialization.writeMultimap(this, stream);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void readObject(ObjectInputStream stream) throws ClassNotFoundException, IOException {
         stream.defaultReadObject();
         int i = stream.readInt();

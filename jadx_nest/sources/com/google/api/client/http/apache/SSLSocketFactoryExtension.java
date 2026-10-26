@@ -11,11 +11,11 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocket;
 import org.apache.http.conn.ssl.SSLSocketFactory;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class SSLSocketFactoryExtension extends SSLSocketFactory {
     private final javax.net.ssl.SSLSocketFactory socketFactory;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     SSLSocketFactoryExtension(SSLContext sSLContext) throws UnrecoverableKeyException, NoSuchAlgorithmException, KeyManagementException, KeyStoreException {
         super((KeyStore) null);
         this.socketFactory = sSLContext.getSocketFactory();

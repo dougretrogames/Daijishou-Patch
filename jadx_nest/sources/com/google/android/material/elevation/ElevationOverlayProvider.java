@@ -9,7 +9,7 @@ import com.google.android.material.color.MaterialColors;
 import com.google.android.material.internal.ViewUtils;
 import com.google.android.material.resources.MaterialAttributes;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ElevationOverlayProvider {
     private static final float FORMULA_MULTIPLIER = 4.5f;
     private static final float FORMULA_OFFSET = 2.0f;

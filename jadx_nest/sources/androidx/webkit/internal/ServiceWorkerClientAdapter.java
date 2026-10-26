@@ -5,7 +5,7 @@ import android.webkit.WebResourceResponse;
 import androidx.webkit.ServiceWorkerClientCompat;
 import org.chromium.support_lib_boundary.ServiceWorkerClientBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ServiceWorkerClientAdapter implements ServiceWorkerClientBoundaryInterface {
     private final ServiceWorkerClientCompat mClient;
 

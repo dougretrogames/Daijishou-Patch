@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.TreeMap;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class PrettyPrintTreeMap<K, V> extends TreeMap<K, V> {
     PrettyPrintTreeMap() {
     }

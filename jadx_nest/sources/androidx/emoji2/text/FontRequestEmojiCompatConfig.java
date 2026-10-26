@@ -16,7 +16,7 @@ import java.nio.ByteBuffer;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ThreadPoolExecutor;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FontRequestEmojiCompatConfig extends EmojiCompat.Config {
     private static final FontProviderHelper DEFAULT_FONTS_CONTRACT = new FontProviderHelper();
 
@@ -73,7 +73,7 @@ public class FontRequestEmojiCompatConfig extends EmojiCompat.Config {
         return this;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class FontRequestMetadataLoader implements EmojiCompat.MetadataRepoLoader {
         private static final String S_TRACE_BUILD_TYPEFACE = "EmojiCompat.FontRequestEmojiCompatConfig.buildTypeface";
         EmojiCompat.MetadataRepoLoaderCallback mCallback;
@@ -166,7 +166,7 @@ public class FontRequestEmojiCompatConfig extends EmojiCompat.Config {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.emoji2.text.FontRequestEmojiCompatConfig$FontRequestMetadataLoader$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.emoji2.text.FontRequestEmojiCompatConfig$FontRequestMetadataLoader$1, reason: invalid class name */
         class AnonymousClass1 extends ContentObserver {
             AnonymousClass1(Handler handler) {
                 super(handler);

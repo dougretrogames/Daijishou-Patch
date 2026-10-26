@@ -3,10 +3,10 @@ package com.google.common.util.concurrent;
 import com.google.common.base.Preconditions;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ForwardingListenableFuture<V> extends ForwardingFuture<V> implements ListenableFuture<V> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.util.concurrent.ForwardingFuture, com.google.common.collect.ForwardingObject
     public abstract ListenableFuture<? extends V> delegate();
 
@@ -25,7 +25,7 @@ public abstract class ForwardingListenableFuture<V> extends ForwardingFuture<V> 
             this.delegate = (ListenableFuture) Preconditions.checkNotNull(delegate);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.util.concurrent.ForwardingListenableFuture, com.google.common.util.concurrent.ForwardingFuture, com.google.common.collect.ForwardingObject
         public final ListenableFuture<V> delegate() {
             return this.delegate;

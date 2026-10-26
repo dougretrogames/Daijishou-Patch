@@ -14,7 +14,7 @@ import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class GitTimeParser {
     private static final Map<ParseableSimpleDateFormat, DateTimeFormatter> formatCache = new EnumMap(ParseableSimpleDateFormat.class);
 
@@ -30,7 +30,7 @@ public class GitTimeParser {
 
         private final String formatStr;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static ParseableSimpleDateFormat[] valuesCustom() {
             ParseableSimpleDateFormat[] parseableSimpleDateFormatArrValuesCustom = values();
             int length = parseableSimpleDateFormatArrValuesCustom.length;
@@ -83,7 +83,7 @@ public class GitTimeParser {
         return LocalDate.from(temporalAccessor).atStartOfDay();
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     @Nullable
     private static LocalDateTime parseRelative(String str, LocalDateTime localDateTime) {
         if (str.equals("now")) {

@@ -7,7 +7,7 @@ import android.view.SubMenu;
 import android.view.View;
 import androidx.core.internal.view.SupportSubMenu;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class SubMenuWrapperICS extends MenuWrapperICS implements SubMenu {
     private final SupportSubMenu mSubMenu;
 

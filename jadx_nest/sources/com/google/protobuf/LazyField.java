@@ -3,7 +3,7 @@ package com.google.protobuf;
 import java.util.Iterator;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class LazyField extends LazyFieldLite {
     private final MessageLite defaultInstance;
 

@@ -4,7 +4,7 @@ import com.google.api.client.json.GenericJson;
 import com.google.api.client.util.DateTime;
 import com.google.api.client.util.Key;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Reply extends GenericJson {
 
     @Key
@@ -25,7 +25,7 @@ public final class Reply extends GenericJson {
     @Key
     private String htmlContent;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     @Key
     private String f48id;
 

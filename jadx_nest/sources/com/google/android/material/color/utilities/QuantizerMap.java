@@ -3,7 +3,7 @@ package com.google.android.material.color.utilities;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class QuantizerMap implements Quantizer {
     Map<Integer, Integer> colorToCount;
 

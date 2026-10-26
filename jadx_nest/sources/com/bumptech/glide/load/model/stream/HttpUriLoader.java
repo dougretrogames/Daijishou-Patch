@@ -5,7 +5,7 @@ import com.bumptech.glide.load.model.ModelLoader;
 import com.bumptech.glide.load.model.UrlUriLoader;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class HttpUriLoader extends UrlUriLoader<InputStream> {
 

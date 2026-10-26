@@ -7,8 +7,8 @@ import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: SaveableStateHolder.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: SaveableStateHolder.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\r\u0010\u0000\u001a\u00020\u0001H\u0007¢\u0006\u0002\u0010\u0002¨\u0006\u0003"}, d2 = {"rememberSaveableStateHolder", "Landroidx/compose/runtime/saveable/SaveableStateHolder;", "(Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/saveable/SaveableStateHolder;", "runtime-saveable_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class SaveableStateHolderKt {
     public static final SaveableStateHolder rememberSaveableStateHolder(Composer composer, int i) {
@@ -30,8 +30,8 @@ public final class SaveableStateHolderKt {
         return saveableStateHolderImpl;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.saveable.SaveableStateHolderKt$rememberSaveableStateHolder$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SaveableStateHolder.kt */
+    /* INFO: renamed from: androidx.compose.runtime.saveable.SaveableStateHolderKt$rememberSaveableStateHolder$1, reason: invalid class name */
+    /* INFO: compiled from: SaveableStateHolder.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Landroidx/compose/runtime/saveable/SaveableStateHolderImpl;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function0<SaveableStateHolderImpl> {
         public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -40,7 +40,7 @@ public final class SaveableStateHolderKt {
             super(0);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final SaveableStateHolderImpl invoke() {
             return new SaveableStateHolderImpl(null, 1, null);

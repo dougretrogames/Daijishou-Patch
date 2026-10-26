@@ -2,7 +2,7 @@ package com.google.common.graph;
 
 import com.google.common.base.Optional;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractGraphBuilder<N> {
     final boolean directed;

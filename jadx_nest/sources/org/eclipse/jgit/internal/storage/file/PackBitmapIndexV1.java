@@ -21,7 +21,7 @@ import org.eclipse.jgit.lib.ObjectIdOwnerMap;
 import org.eclipse.jgit.util.IO;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PackBitmapIndexV1 extends BasePackBitmapIndex {
     private static final int MAX_XOR_OFFSET = 126;
     static final int OPT_FULL = 1;
@@ -44,7 +44,7 @@ class PackBitmapIndexV1 extends BasePackBitmapIndex {
         return packReverseIndex;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.PackBitmapIndexV1$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.PackBitmapIndexV1$1, reason: invalid class name */
     class AnonymousClass1 implements ThreadFactory {
         private final ThreadFactory baseFactory = Executors.defaultThreadFactory();
         private final AtomicInteger threadNumber = new AtomicInteger(0);

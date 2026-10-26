@@ -22,7 +22,7 @@ import java.util.Map;
 import net.lingala.zip4j.util.InternalZipConstants;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FileProvider extends ContentProvider {
     private static final String ATTR_NAME = "name";
     private static final String ATTR_PATH = "path";
@@ -191,7 +191,7 @@ public class FileProvider extends ContentProvider {
         return objArr2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static String removeTrailingSlash(String str) {
         return (str.length() <= 0 || str.charAt(str.length() + (-1)) != '/') ? str : str.substring(0, str.length() - 1);
     }

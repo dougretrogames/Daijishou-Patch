@@ -4,7 +4,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebMessageCompat {
     public static final int TYPE_ARRAY_BUFFER = 1;
     public static final int TYPE_STRING = 0;

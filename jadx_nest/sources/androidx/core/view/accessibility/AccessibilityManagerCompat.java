@@ -6,7 +6,7 @@ import android.view.accessibility.AccessibilityManager;
 import androidx.annotation.ReplaceWith;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class AccessibilityManagerCompat {
 
     @Deprecated

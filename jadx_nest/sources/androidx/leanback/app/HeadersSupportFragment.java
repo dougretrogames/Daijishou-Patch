@@ -22,7 +22,7 @@ import androidx.leanback.widget.SectionRow;
 import androidx.leanback.widget.VerticalGridView;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class HeadersSupportFragment extends BaseRowSupportFragment {
     private static final PresenterSelector sHeaderPresenter = new ClassPresenterSelector().addClassPresenter(DividerRow.class, new DividerPresenter()).addClassPresenter(SectionRow.class, new RowHeaderPresenter(R.layout.lb_section_header, false)).addClassPresenter(Row.class, new RowHeaderPresenter(R.layout.lb_header));
     static View.OnLayoutChangeListener sLayoutChangeListener = new AnonymousClass2();
@@ -114,12 +114,12 @@ public class HeadersSupportFragment extends BaseRowSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.HeadersSupportFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.HeadersSupportFragment$1, reason: invalid class name */
     class AnonymousClass1 extends ItemBridgeAdapter.AdapterListener {
         AnonymousClass1() {
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.app.HeadersSupportFragment$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: androidx.leanback.app.HeadersSupportFragment$1$1, reason: invalid class name and collision with other inner class name */
         class ViewOnClickListenerC00131 implements View.OnClickListener {
             final /* synthetic */ ItemBridgeAdapter.ViewHolder val$viewHolder;
 
@@ -147,7 +147,7 @@ public class HeadersSupportFragment extends BaseRowSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.HeadersSupportFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.HeadersSupportFragment$2, reason: invalid class name */
     class AnonymousClass2 implements View.OnLayoutChangeListener {
         AnonymousClass2() {
         }
@@ -219,7 +219,7 @@ public class HeadersSupportFragment extends BaseRowSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.HeadersSupportFragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.HeadersSupportFragment$3, reason: invalid class name */
     class AnonymousClass3 extends ItemBridgeAdapter.Wrapper {
         AnonymousClass3() {
         }

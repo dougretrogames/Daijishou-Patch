@@ -8,7 +8,7 @@ import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.ReflogEntry;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MergedReftable extends Reftable {
     private final ReftableReader[] tables;
 
@@ -288,7 +288,7 @@ public class MergedReftable extends Reftable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class RefQueueEntry {
         final RefCursor rc;
         final int stackIdx;
@@ -385,7 +385,7 @@ public class MergedReftable extends Reftable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class LogQueueEntry {
         final LogCursor lc;
         final int stackIdx;

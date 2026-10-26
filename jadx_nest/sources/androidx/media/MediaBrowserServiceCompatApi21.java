@@ -12,7 +12,7 @@ import android.support.v4.media.session.MediaSessionCompat;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MediaBrowserServiceCompatApi21 {
 
     public interface ServiceCompatProxy {
@@ -48,7 +48,7 @@ class MediaBrowserServiceCompatApi21 {
             this.mResultObj = result;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public void sendResult(T t) {
             if (t instanceof List) {
                 this.mResultObj.sendResult(parcelListToItemList((List) t));

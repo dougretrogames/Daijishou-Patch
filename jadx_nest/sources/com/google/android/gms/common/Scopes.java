@@ -1,7 +1,7 @@
 package com.google.android.gms.common;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class Scopes {
     public static final String APP_STATE = "https://www.googleapis.com/auth/appstate";
     public static final String CLOUD_SAVE = "https://www.googleapis.com/auth/datastoremobile";

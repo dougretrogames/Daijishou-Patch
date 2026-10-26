@@ -6,7 +6,7 @@ import org.apache.http.conn.ClientConnectionManager;
 import org.apache.http.params.HttpParams;
 import org.apache.http.protocol.BasicHttpProcessor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class ContentEncodingHttpClient extends DefaultHttpClient {
     public ContentEncodingHttpClient(ClientConnectionManager clientConnectionManager, HttpParams httpParams) {

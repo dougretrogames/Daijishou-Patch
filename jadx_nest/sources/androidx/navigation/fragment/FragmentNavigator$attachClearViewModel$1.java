@@ -9,8 +9,8 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: FragmentNavigator.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: FragmentNavigator.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 final class FragmentNavigator$attachClearViewModel$1 extends Lambda implements Function0<Unit> {
     final /* synthetic */ NavBackStackEntry $entry;
@@ -18,7 +18,7 @@ final class FragmentNavigator$attachClearViewModel$1 extends Lambda implements F
     final /* synthetic */ NavigatorState $state;
     final /* synthetic */ FragmentNavigator this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     FragmentNavigator$attachClearViewModel$1(NavBackStackEntry navBackStackEntry, NavigatorState navigatorState, FragmentNavigator fragmentNavigator, Fragment fragment) {
         super(0);
         this.$entry = navBackStackEntry;
@@ -33,7 +33,7 @@ final class FragmentNavigator$attachClearViewModel$1 extends Lambda implements F
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2() {
         NavigatorState navigatorState = this.$state;
         FragmentNavigator fragmentNavigator = this.this$0;

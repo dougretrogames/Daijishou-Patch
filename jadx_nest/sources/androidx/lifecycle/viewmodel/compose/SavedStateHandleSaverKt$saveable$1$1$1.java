@@ -8,8 +8,8 @@ import kotlin.jvm.internal.FunctionAdapter;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: SavedStateHandleSaver.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: SavedStateHandleSaver.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 /* synthetic */ class SavedStateHandleSaverKt$saveable$1$1$1 implements SaverScope, FunctionAdapter {
     final /* synthetic */ SavedStateHandle.Companion $tmp0;

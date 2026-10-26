@@ -10,8 +10,8 @@ import kotlin.Metadata;
 import kotlin.annotation.AnnotationRetention;
 import kotlin.annotation.AnnotationTarget;
 
-/* JADX INFO: compiled from: ExperimentalFileSystem.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: ExperimentalFileSystem.kt */
+/* INFO: loaded from: classes5.dex */
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u001b\n\u0000\b\u0087\u0002\u0018\u00002\u00020\u0001B\u0000¨\u0006\u0002"}, d2 = {"Lokio/ExperimentalFileSystem;", "", "okio"}, k = 1, mv = {1, 9, 0}, xi = 48)
 @Deprecated(level = DeprecationLevel.HIDDEN, message = "This annotation is obsolete and should be removed.")

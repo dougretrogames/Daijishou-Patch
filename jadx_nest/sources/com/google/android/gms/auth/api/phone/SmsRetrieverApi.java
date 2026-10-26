@@ -2,8 +2,8 @@ package com.google.android.gms.auth.api.phone;
 
 import com.google.android.gms.tasks.Task;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
+/* INFO: loaded from: classes3.dex */
 public interface SmsRetrieverApi {
     Task<Void> startSmsRetriever();
 

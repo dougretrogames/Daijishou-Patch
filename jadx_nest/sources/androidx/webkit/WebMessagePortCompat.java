@@ -4,7 +4,7 @@ import android.os.Handler;
 import android.webkit.WebMessagePort;
 import java.lang.reflect.InvocationHandler;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class WebMessagePortCompat {
 
     public static abstract class WebMessageCallbackCompat {

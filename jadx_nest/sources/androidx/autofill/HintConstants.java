@@ -2,7 +2,7 @@ package androidx.autofill;
 
 import androidx.core.util.Preconditions;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class HintConstants {
     public static final String AUTOFILL_HINT_BIRTH_DATE_DAY = "birthDateDay";
     public static final String AUTOFILL_HINT_BIRTH_DATE_FULL = "birthDateFull";

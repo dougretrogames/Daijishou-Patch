@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 final class CodedOutputStreamWriter implements Writer {
     private final CodedOutputStream output;
@@ -537,7 +537,7 @@ final class CodedOutputStreamWriter implements Writer {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.CodedOutputStreamWriter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.CodedOutputStreamWriter$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$FieldType;
 

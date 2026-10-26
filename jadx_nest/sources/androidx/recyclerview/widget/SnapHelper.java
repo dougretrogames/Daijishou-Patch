@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Scroller;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class SnapHelper extends RecyclerView.OnFlingListener {
     static final float MILLISECONDS_PER_INCH = 100.0f;
     private Scroller mGravityScroller;
@@ -19,7 +19,7 @@ public abstract class SnapHelper extends RecyclerView.OnFlingListener {
 
     public abstract int findTargetSnapPosition(RecyclerView.LayoutManager layoutManager, int i, int i2);
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.SnapHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.SnapHelper$1, reason: invalid class name */
     class AnonymousClass1 extends RecyclerView.OnScrollListener {
         boolean mScrolled = false;
 
@@ -126,7 +126,7 @@ public abstract class SnapHelper extends RecyclerView.OnFlingListener {
         return null;
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.SnapHelper$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.SnapHelper$2, reason: invalid class name */
     class AnonymousClass2 extends LinearSmoothScroller {
         AnonymousClass2(Context context) {
             super(context);

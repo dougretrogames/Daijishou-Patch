@@ -14,7 +14,7 @@ import org.apache.http.ParseException;
 import org.apache.http.entity.ContentType;
 import org.apache.http.protocol.HTTP;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class EntityUtils {
     private static final int DEFAULT_BUFFER_SIZE = 4096;
 

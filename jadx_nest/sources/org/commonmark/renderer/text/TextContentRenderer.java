@@ -8,7 +8,7 @@ import org.commonmark.node.Node;
 import org.commonmark.renderer.NodeRenderer;
 import org.commonmark.renderer.Renderer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TextContentRenderer implements Renderer {
     private final List<TextContentNodeRendererFactory> nodeRendererFactories;
     private final boolean stripNewlines;
@@ -29,7 +29,7 @@ public class TextContentRenderer implements Renderer {
         arrayList.add(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: org.commonmark.renderer.text.TextContentRenderer$1, reason: invalid class name */
+    /* INFO: renamed from: org.commonmark.renderer.text.TextContentRenderer$1, reason: invalid class name */
     class AnonymousClass1 implements TextContentNodeRendererFactory {
         AnonymousClass1() {
         }

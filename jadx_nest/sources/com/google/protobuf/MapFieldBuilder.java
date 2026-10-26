@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class MapFieldBuilder<KeyT, MessageOrBuilderT extends MessageOrBuilder, MessageT extends MessageOrBuilderT, BuilderT extends MessageOrBuilderT> extends MapFieldReflectionAccessor {
     Converter<KeyT, MessageOrBuilderT, MessageT> converter;
     Map<KeyT, MessageOrBuilderT> builderMap = new LinkedHashMap();
@@ -14,7 +14,7 @@ public class MapFieldBuilder<KeyT, MessageOrBuilderT extends MessageOrBuilder, M
     List<Message> messageList = null;
 
     public interface Converter<KeyT, MessageOrBuilderT extends MessageOrBuilder, MessageT extends MessageOrBuilderT> {
-        /* JADX WARN: Incorrect return type in method signature: (TMessageOrBuilderT;)TMessageT; */
+        /* WARN: Incorrect return type in method signature: (TMessageOrBuilderT;)TMessageT; */
         MessageOrBuilder build(MessageOrBuilder val);
 
         MapEntry<KeyT, MessageT> defaultEntry();

@@ -2,7 +2,7 @@ package com.bumptech.glide.load.data;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface DataRewinder<T> {
 
     public interface Factory<T> {

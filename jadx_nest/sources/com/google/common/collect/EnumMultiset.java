@@ -14,7 +14,7 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class EnumMultiset<E extends Enum<E>> extends AbstractMultiset<E> implements Serializable {
     private static final long serialVersionUID = 0;
@@ -44,7 +44,7 @@ public final class EnumMultiset<E extends Enum<E>> extends AbstractMultiset<E> i
         return super.isEmpty();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractMultiset, com.google.common.collect.Multiset
     public /* bridge */ /* synthetic */ boolean setCount(@ParametricNullness Object element, int oldCount, int newCount) {
         return super.setCount(element, oldCount, newCount);
@@ -245,13 +245,13 @@ public final class EnumMultiset<E extends Enum<E>> extends AbstractMultiset<E> i
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.EnumMultiset$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.EnumMultiset$1, reason: invalid class name */
     class AnonymousClass1 extends EnumMultiset<E>.Itr<E> {
         AnonymousClass1() {
             super();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.EnumMultiset.Itr
         public E output(int i) {
             return (E) EnumMultiset.this.enumConstants[i];
@@ -263,13 +263,13 @@ public final class EnumMultiset<E extends Enum<E>> extends AbstractMultiset<E> i
         return new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.EnumMultiset$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.EnumMultiset$2, reason: invalid class name */
     class AnonymousClass2 extends EnumMultiset<E>.Itr<Multiset.Entry<E>> {
         AnonymousClass2() {
             super();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.EnumMultiset$2$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.EnumMultiset$2$1, reason: invalid class name */
         class AnonymousClass1 extends Multisets.AbstractEntry<E> {
             final /* synthetic */ int val$index;
 
@@ -288,7 +288,7 @@ public final class EnumMultiset<E extends Enum<E>> extends AbstractMultiset<E> i
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.EnumMultiset.Itr
         public Multiset.Entry<E> output(final int index) {
             return new AnonymousClass1(index);

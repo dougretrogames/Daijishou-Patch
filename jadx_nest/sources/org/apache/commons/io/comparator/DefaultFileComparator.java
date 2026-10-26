@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Comparator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultFileComparator extends AbstractFileComparator implements Serializable {
     public static final Comparator<File> DEFAULT_COMPARATOR;
     public static final Comparator<File> DEFAULT_REVERSE;

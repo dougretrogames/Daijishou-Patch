@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class GuidanceStylingRelativeLayout extends RelativeLayout {
     private float mTitleKeylinePercent;
 

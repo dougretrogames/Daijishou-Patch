@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Distribution {
     @Nullable
     public abstract BucketOptions getBucketOptions();
@@ -64,7 +64,7 @@ public abstract class Distribution {
                 return function.apply(this);
             }
 
-            /* JADX INFO: Access modifiers changed from: private */
+            /* INFO: Access modifiers changed from: private */
             public static ExplicitOptions create(List<Double> list) {
                 Utils.checkNotNull(list, "bucketBoundaries");
                 List listUnmodifiableList = Collections.unmodifiableList(new ArrayList(list));

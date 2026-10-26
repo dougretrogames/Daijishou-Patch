@@ -11,7 +11,7 @@ import com.google.api.client.json.JsonFactory;
 import java.io.IOException;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GoogleRefreshTokenRequest extends RefreshTokenRequest {
     @Override // com.google.api.client.auth.oauth2.RefreshTokenRequest, com.google.api.client.auth.oauth2.TokenRequest
     public /* bridge */ /* synthetic */ RefreshTokenRequest setScopes(Collection collection) {

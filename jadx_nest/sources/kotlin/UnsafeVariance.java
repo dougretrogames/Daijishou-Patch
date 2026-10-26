@@ -8,8 +8,8 @@ import kotlin.annotation.AnnotationRetention;
 import kotlin.annotation.AnnotationTarget;
 import kotlin.annotation.MustBeDocumented;
 
-/* JADX INFO: compiled from: Annotations.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: Annotations.kt */
+/* INFO: loaded from: classes4.dex */
 @Target({})
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.TYPE})
 @Retention(RetentionPolicy.SOURCE)

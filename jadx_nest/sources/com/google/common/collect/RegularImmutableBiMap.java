@@ -3,7 +3,7 @@ package com.google.common.collect;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class RegularImmutableBiMap<K, V> extends ImmutableBiMap<K, V> {
     static final RegularImmutableBiMap<Object, Object> EMPTY = new RegularImmutableBiMap<>();
@@ -20,7 +20,7 @@ final class RegularImmutableBiMap<K, V> extends ImmutableBiMap<K, V> {
         return false;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private RegularImmutableBiMap() {
         this.keyHashTable = null;
         this.alternatingKeysAndValues = new Object[0];

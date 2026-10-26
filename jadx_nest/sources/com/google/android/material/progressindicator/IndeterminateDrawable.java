@@ -12,7 +12,7 @@ import androidx.vectordrawable.graphics.drawable.VectorDrawableCompat;
 import com.google.android.material.R;
 import com.google.android.material.progressindicator.BaseProgressIndicatorSpec;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class IndeterminateDrawable<S extends BaseProgressIndicatorSpec> extends DrawableWithAnimatedVisibilityChange {
     private IndeterminateAnimatorDelegate<ObjectAnimator> animatorDelegate;
     private DrawingDelegate<S> drawingDelegate;

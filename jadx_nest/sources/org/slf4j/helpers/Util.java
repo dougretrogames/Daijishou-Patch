@@ -1,6 +1,6 @@
 package org.slf4j.helpers;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Util {
     private static ClassContextSecurityManager SECURITY_MANAGER = null;
     private static boolean SECURITY_MANAGER_CREATION_ALREADY_ATTEMPTED = false;

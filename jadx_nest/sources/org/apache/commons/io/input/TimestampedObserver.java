@@ -5,7 +5,7 @@ import java.time.Duration;
 import java.time.Instant;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TimestampedObserver extends ObservableInputStream.Observer {
     private volatile Instant closeInstant;
     private final Instant openInstant = Instant.now();

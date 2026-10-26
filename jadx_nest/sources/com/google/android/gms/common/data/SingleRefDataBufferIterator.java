@@ -3,8 +3,8 @@ package com.google.android.gms.common.data;
 import com.google.android.gms.common.internal.Preconditions;
 import java.util.NoSuchElementException;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public class SingleRefDataBufferIterator<T> extends DataBufferIterator<T> {
     private Object zac;
 

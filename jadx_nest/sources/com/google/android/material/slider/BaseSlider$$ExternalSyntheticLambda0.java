@@ -2,8 +2,8 @@ package com.google.android.material.slider;
 
 import android.view.ViewTreeObserver;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class BaseSlider$$ExternalSyntheticLambda0 implements ViewTreeObserver.OnScrollChangedListener {
     public final /* synthetic */ BaseSlider f$0;
 

@@ -17,7 +17,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.commons.io.FilenameUtils;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class UriTemplate {
     private static final String COMPOSITE_NON_EXPLODE_JOINER = ",";
     private static final Map<Character, CompositeOutput> COMPOSITE_PREFIXES = new HashMap();
@@ -69,7 +69,7 @@ public class UriTemplate {
             return this.propertyPrefix == null ? 0 : 1;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public String getEncodedValue(String str) {
             if (this.reservedExpansion) {
                 return CharEscapers.escapeUriPathWithoutReserved(str);

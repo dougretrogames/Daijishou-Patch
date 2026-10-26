@@ -20,7 +20,7 @@ import net.lingala.zip4j.util.FileUtils;
 import net.lingala.zip4j.util.RawIO;
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ZipOutputStream extends OutputStream {
     private CompressedOutputStream compressedOutputStream;
     private CountingOutputStream countingOutputStream;

@@ -1,6 +1,6 @@
 package io.opencensus.metrics.data;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class AttachmentValue {
     public abstract String getValue();
 

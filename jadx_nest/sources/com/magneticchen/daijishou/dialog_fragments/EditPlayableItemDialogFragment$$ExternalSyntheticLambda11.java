@@ -6,8 +6,8 @@ import com.google.android.material.chip.ChipGroup;
 import com.google.android.material.textfield.TextInputEditText;
 import java.util.List;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class EditPlayableItemDialogFragment$$ExternalSyntheticLambda11 implements View.OnClickListener {
     public final /* synthetic */ TextInputEditText f$0;
     public final /* synthetic */ List f$1;

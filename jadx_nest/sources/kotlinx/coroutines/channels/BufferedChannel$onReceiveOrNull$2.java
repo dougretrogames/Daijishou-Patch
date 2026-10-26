@@ -4,8 +4,8 @@ import kotlin.Metadata;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 
-/* JADX INFO: compiled from: BufferedChannel.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: BufferedChannel.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 /* synthetic */ class BufferedChannel$onReceiveOrNull$2 extends FunctionReferenceImpl implements Function3<BufferedChannel<?>, Object, Object, Object> {
     public static final BufferedChannel$onReceiveOrNull$2 INSTANCE = new BufferedChannel$onReceiveOrNull$2();

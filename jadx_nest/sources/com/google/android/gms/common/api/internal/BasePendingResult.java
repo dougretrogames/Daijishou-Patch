@@ -22,8 +22,8 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public abstract class BasePendingResult<R extends Result> extends PendingResult<R> {
     static final ThreadLocal zaa = new zaq();
     public static final /* synthetic */ int zad = 0;
@@ -253,13 +253,13 @@ public abstract class BasePendingResult<R extends Result> extends PendingResult<
         this.zai.set(zadbVar);
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static class CallbackHandler<R extends Result> extends com.google.android.gms.internal.base.zau {
         public CallbackHandler() {
             super(Looper.getMainLooper());
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // android.os.Handler
         public final void handleMessage(Message message) {
             int i = message.what;

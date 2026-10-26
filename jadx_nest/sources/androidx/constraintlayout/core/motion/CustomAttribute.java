@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.motion;
 
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CustomAttribute {
     private static final String TAG = "TransitionLayout";
     boolean mBooleanValue;

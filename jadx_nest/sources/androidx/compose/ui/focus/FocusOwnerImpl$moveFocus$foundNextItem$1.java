@@ -14,8 +14,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Ref;
 
-/* JADX INFO: compiled from: FocusOwnerImpl.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: FocusOwnerImpl.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "destination", "Landroidx/compose/ui/focus/FocusTargetNode;", "invoke", "(Landroidx/compose/ui/focus/FocusTargetNode;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 8, 0}, xi = 48)
 final class FocusOwnerImpl$moveFocus$foundNextItem$1 extends Lambda implements Function1<FocusTargetNode, Boolean> {
     final /* synthetic */ int $focusDirection;
@@ -23,7 +23,7 @@ final class FocusOwnerImpl$moveFocus$foundNextItem$1 extends Lambda implements F
     final /* synthetic */ FocusTargetNode $source;
     final /* synthetic */ FocusOwnerImpl this$0;
 
-    /* JADX INFO: compiled from: FocusOwnerImpl.kt */
+    /* INFO: compiled from: FocusOwnerImpl.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     public /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -50,7 +50,7 @@ final class FocusOwnerImpl$moveFocus$foundNextItem$1 extends Lambda implements F
         }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     FocusOwnerImpl$moveFocus$foundNextItem$1(FocusTargetNode focusTargetNode, FocusOwnerImpl focusOwnerImpl, int i, Ref.BooleanRef booleanRef) {
         super(1);
         this.$source = focusTargetNode;

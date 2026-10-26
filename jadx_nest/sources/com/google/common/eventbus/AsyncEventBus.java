@@ -2,7 +2,7 @@ package com.google.common.eventbus;
 
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class AsyncEventBus extends EventBus {
     public AsyncEventBus(String identifier, Executor executor) {

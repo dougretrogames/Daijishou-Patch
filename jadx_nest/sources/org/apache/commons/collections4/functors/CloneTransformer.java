@@ -2,7 +2,7 @@ package org.apache.commons.collections4.functors;
 
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CloneTransformer<T> implements Transformer<T, T> {
     public static final Transformer INSTANCE = new CloneTransformer();
 

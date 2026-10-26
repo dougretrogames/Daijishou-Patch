@@ -5,7 +5,7 @@ import java.util.Collection;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.treewalk.TreeWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class OrTreeFilter extends TreeFilter {
     public static TreeFilter create(TreeFilter treeFilter, TreeFilter treeFilter2) {
         if (treeFilter == ALL || treeFilter2 == ALL) {

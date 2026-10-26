@@ -8,7 +8,7 @@ import org.apache.http.cookie.MalformedCookieException;
 import org.apache.http.cookie.SetCookie;
 import org.apache.http.cookie.SetCookie2;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RFC2965DiscardAttributeHandler implements CommonCookieAttributeHandler {
     @Override // org.apache.http.cookie.CookieAttributeHandler
     public boolean match(Cookie cookie, CookieOrigin cookieOrigin) {

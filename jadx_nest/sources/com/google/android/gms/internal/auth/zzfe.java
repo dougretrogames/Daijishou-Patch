@@ -6,8 +6,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.RandomAccess;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public final class zzfe extends zzdr implements RandomAccess, zzff {
 
     @Deprecated
@@ -92,7 +92,7 @@ public final class zzfe extends zzdr implements RandomAccess, zzff {
     }
 
     @Override // java.util.AbstractList, java.util.List
-    /* JADX INFO: renamed from: zzf, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: zzf, reason: merged with bridge method [inline-methods] */
     public final String get(int i) {
         Object obj = this.zzc.get(i);
         if (obj instanceof String) {

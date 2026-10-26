@@ -15,7 +15,7 @@ import javax.annotation.Nullable;
 import net.lingala.zip4j.util.InternalZipConstants;
 import org.eclipse.jgit.transport.AmazonS3;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class InternalAwsSecurityCredentialsSupplier implements AwsSecurityCredentialsSupplier {
     static final String AWS_ACCESS_KEY_ID = "AWS_ACCESS_KEY_ID";
     static final String AWS_DEFAULT_REGION = "AWS_DEFAULT_REGION";
@@ -114,7 +114,7 @@ class InternalAwsSecurityCredentialsSupplier implements AwsSecurityCredentialsSu
         return map;
     }
 
-    /* JADX INFO: renamed from: com.google.auth.oauth2.InternalAwsSecurityCredentialsSupplier$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.auth.oauth2.InternalAwsSecurityCredentialsSupplier$1, reason: invalid class name */
     class AnonymousClass1 extends HashMap<String, Object> {
         AnonymousClass1() {
             put(InternalAwsSecurityCredentialsSupplier.AWS_IMDSV2_SESSION_TOKEN_TTL_HEADER, InternalAwsSecurityCredentialsSupplier.AWS_IMDSV2_SESSION_TOKEN_TTL);

@@ -7,7 +7,7 @@ import android.graphics.Color;
 import android.view.View;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DrawerLayoutUtils {
     private static final int DEFAULT_SCRIM_COLOR = -1728053248;
     private static final int DEFAULT_SCRIM_ALPHA = Color.alpha(DEFAULT_SCRIM_COLOR);
@@ -19,7 +19,7 @@ public class DrawerLayoutUtils {
         return new DrawerLayoutUtils$$ExternalSyntheticLambda0(drawerLayout);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.navigation.DrawerLayoutUtils$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.navigation.DrawerLayoutUtils$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         final /* synthetic */ DrawerLayout val$drawerLayout;
         final /* synthetic */ View val$drawerView;

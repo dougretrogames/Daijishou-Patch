@@ -1,7 +1,7 @@
 package androidx.webkit;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class WebViewCompat$$ExternalSyntheticLambda1 implements Runnable {
     public final /* synthetic */ WebViewCompat.WebViewStartUpCallback f$0;
     public final /* synthetic */ WebViewStartUpResult f$1;

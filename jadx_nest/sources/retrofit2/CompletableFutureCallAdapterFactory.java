@@ -6,7 +6,7 @@ import java.lang.reflect.Type;
 import java.util.concurrent.CompletableFuture;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 final class CompletableFutureCallAdapterFactory extends CallAdapter.Factory {
     CompletableFutureCallAdapterFactory() {
     }

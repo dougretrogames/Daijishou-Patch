@@ -2,7 +2,7 @@ package org.eclipse.jgit.lib;
 
 import org.eclipse.jgit.annotations.Nullable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SymbolicRef implements Ref {
     private final String name;
     private final Ref target;

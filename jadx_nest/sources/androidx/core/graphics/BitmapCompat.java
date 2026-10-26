@@ -11,7 +11,7 @@ import android.graphics.Rect;
 import android.os.Build;
 import androidx.annotation.ReplaceWith;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class BitmapCompat {
     static int sizeAtStep(int i, int i2, int i3, int i4) {
         if (i3 == 0) {

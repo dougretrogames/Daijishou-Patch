@@ -6,7 +6,7 @@ import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.log4j.Priority;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Log4JLogger implements Log, Serializable {
     private static final String FQCN;
     static /* synthetic */ Class class$org$apache$commons$logging$impl$Log4JLogger = null;

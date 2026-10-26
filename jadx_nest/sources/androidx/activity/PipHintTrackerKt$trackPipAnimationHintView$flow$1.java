@@ -16,8 +16,8 @@ import kotlin.jvm.internal.Lambda;
 import kotlinx.coroutines.channels.ProduceKt;
 import kotlinx.coroutines.channels.ProducerScope;
 
-/* JADX INFO: compiled from: PipHintTracker.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: PipHintTracker.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00030\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/channels/ProducerScope;", "Landroid/graphics/Rect;"}, k = 3, mv = {1, 8, 0}, xi = 48)
 @DebugMetadata(c = "androidx.activity.PipHintTrackerKt$trackPipAnimationHintView$flow$1", f = "PipHintTracker.kt", i = {}, l = {85}, m = "invokeSuspend", n = {}, s = {})
 final class PipHintTrackerKt$trackPipAnimationHintView$flow$1 extends SuspendLambda implements Function2<ProducerScope<? super Rect>, Continuation<? super Unit>, Object> {
@@ -25,7 +25,7 @@ final class PipHintTrackerKt$trackPipAnimationHintView$flow$1 extends SuspendLam
     private /* synthetic */ Object L$0;
     int label;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     PipHintTrackerKt$trackPipAnimationHintView$flow$1(View view, Continuation<? super PipHintTrackerKt$trackPipAnimationHintView$flow$1> continuation) {
         super(2, continuation);
         this.$view = view;
@@ -72,7 +72,7 @@ final class PipHintTrackerKt$trackPipAnimationHintView$flow$1 extends SuspendLam
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void invokeSuspend$lambda$0(ProducerScope producerScope, View view, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
         if (i == i5 && i3 == i7 && i2 == i6 && i4 == i8) {
             return;
@@ -80,13 +80,13 @@ final class PipHintTrackerKt$trackPipAnimationHintView$flow$1 extends SuspendLam
         producerScope.mo5255trySendJP2dKIU(PipHintTrackerKt.trackPipAnimationHintView$positionInWindow(view));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void invokeSuspend$lambda$1(ProducerScope producerScope, View view) {
         producerScope.mo5255trySendJP2dKIU(PipHintTrackerKt.trackPipAnimationHintView$positionInWindow(view));
     }
 
-    /* JADX INFO: renamed from: androidx.activity.PipHintTrackerKt$trackPipAnimationHintView$flow$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: PipHintTracker.kt */
+    /* INFO: renamed from: androidx.activity.PipHintTrackerKt$trackPipAnimationHintView$flow$1$1, reason: invalid class name */
+    /* INFO: compiled from: PipHintTracker.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function0<Unit> {
         final /* synthetic */ PipHintTrackerKt$trackPipAnimationHintView$flow$1$attachStateChangeListener$1 $attachStateChangeListener;
@@ -94,7 +94,7 @@ final class PipHintTrackerKt$trackPipAnimationHintView$flow$1 extends SuspendLam
         final /* synthetic */ ViewTreeObserver.OnScrollChangedListener $scrollChangeListener;
         final /* synthetic */ View $view;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(View view, ViewTreeObserver.OnScrollChangedListener onScrollChangedListener, View.OnLayoutChangeListener onLayoutChangeListener, PipHintTrackerKt$trackPipAnimationHintView$flow$1$attachStateChangeListener$1 pipHintTrackerKt$trackPipAnimationHintView$flow$1$attachStateChangeListener$1) {
             super(0);
             this.$view = view;
@@ -109,7 +109,7 @@ final class PipHintTrackerKt$trackPipAnimationHintView$flow$1 extends SuspendLam
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             this.$view.getViewTreeObserver().removeOnScrollChangedListener(this.$scrollChangeListener);
             this.$view.removeOnLayoutChangeListener(this.$layoutChangeListener);

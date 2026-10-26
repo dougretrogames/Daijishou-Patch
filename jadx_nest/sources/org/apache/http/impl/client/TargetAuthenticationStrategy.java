@@ -10,7 +10,7 @@ import org.apache.http.auth.MalformedChallengeException;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TargetAuthenticationStrategy extends AuthenticationStrategyImpl {
     public static final TargetAuthenticationStrategy INSTANCE = new TargetAuthenticationStrategy();
 

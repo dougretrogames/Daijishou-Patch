@@ -2,11 +2,11 @@ package org.apache.commons.collections4.iterators;
 
 import org.apache.commons.collections4.OrderedIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EmptyOrderedIterator<E> extends AbstractEmptyIterator<E> implements OrderedIterator<E> {
     public static final OrderedIterator INSTANCE = new EmptyOrderedIterator();
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.apache.commons.collections4.iterators.AbstractEmptyIterator
     @Deprecated
     public /* bridge */ /* synthetic */ void add(Object obj) {
@@ -53,7 +53,7 @@ public class EmptyOrderedIterator<E> extends AbstractEmptyIterator<E> implements
         super.reset();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.apache.commons.collections4.iterators.AbstractEmptyIterator
     public /* bridge */ /* synthetic */ void set(Object obj) {
         super.set(obj);

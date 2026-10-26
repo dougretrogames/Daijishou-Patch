@@ -7,14 +7,14 @@ import android.os.RemoteException;
 import androidx.core.app.unusedapprestrictions.IUnusedAppRestrictionsBackportCallback;
 import androidx.core.app.unusedapprestrictions.IUnusedAppRestrictionsBackportService;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class UnusedAppRestrictionsBackportService extends Service {
     public static final String ACTION_UNUSED_APP_RESTRICTIONS_BACKPORT_CONNECTION = "android.support.unusedapprestrictions.action.CustomUnusedAppRestrictionsBackportService";
     private IUnusedAppRestrictionsBackportService.Stub mBinder = new AnonymousClass1();
 
     protected abstract void isPermissionRevocationEnabled(UnusedAppRestrictionsBackportCallback unusedAppRestrictionsBackportCallback);
 
-    /* JADX INFO: renamed from: androidx.core.content.UnusedAppRestrictionsBackportService$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.content.UnusedAppRestrictionsBackportService$1, reason: invalid class name */
     class AnonymousClass1 extends IUnusedAppRestrictionsBackportService.Stub {
         AnonymousClass1() {
         }

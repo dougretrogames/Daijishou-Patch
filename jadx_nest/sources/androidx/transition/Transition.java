@@ -37,7 +37,7 @@ import java.util.List;
 import java.util.StringTokenizer;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class Transition implements Cloneable {
     static final boolean DBG = false;
     private static final String LOG_TAG = "Transition";
@@ -122,7 +122,7 @@ public abstract class Transition implements Cloneable {
         return false;
     }
 
-    /* JADX INFO: renamed from: androidx.transition.Transition$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.Transition$1, reason: invalid class name */
     class AnonymousClass1 extends PathMotion {
         AnonymousClass1() {
         }
@@ -550,7 +550,7 @@ public abstract class Transition implements Cloneable {
         end();
     }
 
-    /* JADX INFO: renamed from: androidx.transition.Transition$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.Transition$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         final /* synthetic */ ArrayMap val$runningAnimators;
 
@@ -1091,7 +1091,7 @@ public abstract class Transition implements Cloneable {
         animator.start();
     }
 
-    /* JADX INFO: renamed from: androidx.transition.Transition$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.Transition$3, reason: invalid class name */
     class AnonymousClass3 extends AnimatorListenerAdapter {
         AnonymousClass3() {
         }
@@ -1132,7 +1132,7 @@ public abstract class Transition implements Cloneable {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     void forceToEnd(ViewGroup viewGroup) {
         ArrayMap<Animator, AnimationInfo> runningAnimators = getRunningAnimators();
         int size = runningAnimators.getSize();
@@ -1243,7 +1243,7 @@ public abstract class Transition implements Cloneable {
     }
 
     @Override // 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public Transition mo3238clone() {
         try {
             Transition transition = (Transition) super.clone();
@@ -1584,7 +1584,7 @@ public abstract class Transition implements Cloneable {
             this.mSpringAnimation.addEndListener(new Transition$SeekController$$ExternalSyntheticLambda0(this));
         }
 
-        /* JADX INFO: renamed from: lambda$ensureAnimation$0$androidx-transition-Transition$SeekController, reason: not valid java name */
+        /* INFO: renamed from: lambda$ensureAnimation$0$androidx-transition-Transition$SeekController, reason: not valid java name */
         /* synthetic */ void m3239x76b2d240(DynamicAnimation dynamicAnimation, boolean z, float f, float f2) {
             if (z) {
                 return;

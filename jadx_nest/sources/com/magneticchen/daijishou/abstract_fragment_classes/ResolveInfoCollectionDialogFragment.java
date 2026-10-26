@@ -42,12 +42,12 @@ import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Reflection;
 import kotlin.text.StringsKt;
 
-/* JADX INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0096\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\r\n\u0002\u0010\b\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010 \n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0003\b&\u0018\u00002\u00020\u0001:\u0002?@B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010$\u001a\u00020\u0017H\u0016J&\u0010%\u001a\u0004\u0018\u00010&2\u0006\u0010'\u001a\u00020(2\b\u0010)\u001a\u0004\u0018\u00010*2\b\u0010+\u001a\u0004\u0018\u00010,H\u0016J\u0010\u0010-\u001a\u00020\u000e2\u0006\u0010.\u001a\u00020/H\u0016J\b\u00100\u001a\u00020\u000eH\u0016J\u001a\u00101\u001a\u00020\u000e2\u0006\u00102\u001a\u00020&2\b\u0010+\u001a\u0004\u0018\u00010,H\u0016J\u0006\u00103\u001a\u00020\u000eJ\u001a\u00104\u001a\u00020\u00002\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u000e0\fJ\u0014\u00105\u001a\u00020\u00002\f\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u000e0\u0010J\u001a\u00106\u001a\u00020\u00002\u0012\u0010\u0011\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u000e0\fJ\u001a\u00107\u001a\u00020\u00002\u0012\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u000e0\fJ.\u00108\u001a\u00020\u00002&\u0010\u0013\u001a\"\u0012\u0006\u0012\u0004\u0018\u00010\u0015\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u00170\u0014J\u0014\u00109\u001a\u00020\u000e2\f\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\r0:J\u0016\u0010;\u001a\u00020\u000e2\f\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\r0:H\u0002J\u000e\u0010<\u001a\u00020\u00002\u0006\u0010=\u001a\u00020>R\u001b\u0010\u0003\u001a\u00020\u00048BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0005\u0010\u0006R\u000e\u0010\t\u001a\u00020\nX\u0082.¢\u0006\u0002\n\u0000R\u001c\u0010\u000b\u001a\u0010\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u000e\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u000f\u001a\n\u0012\u0004\u0012\u00020\u000e\u0018\u00010\u0010X\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u0011\u001a\u0010\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u000e\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u0012\u001a\u0010\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u000e\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R0\u0010\u0013\u001a$\u0012\u0006\u0012\u0004\u0018\u00010\u0015\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u0017\u0018\u00010\u0014X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010\u001a\u001a\u00060\u001bR\u00020\u0000X\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\r0\u001dX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\r0\u001dX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u0017X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020!X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020#X\u0082.¢\u0006\u0002\n\u0000¨\u0006A"}, d2 = {"Lcom/magneticchen/daijishou/abstract_fragment_classes/ResolveInfoCollectionDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "()V", "appsViewModel", "Lcom/magneticchen/daijishou/view_models/AppsViewModel;", "getAppsViewModel", "()Lcom/magneticchen/daijishou/view_models/AppsViewModel;", "appsViewModel$delegate", "Lkotlin/Lazy;", "backButton", "Landroidx/constraintlayout/widget/ConstraintLayout;", "onClickListener", "Lkotlin/Function1;", "Landroid/content/pm/ResolveInfo;", "", "onDialogDismissedListener", "Lkotlin/Function0;", "onLongClickListener", "onSelectListener", "onTextChangedListener", "Lkotlin/Function4;", "", "", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "recyclerViewAdapter", "Lcom/magneticchen/daijishou/abstract_fragment_classes/ResolveInfoCollectionDialogFragment$GridRecyclerViewAdapter;", "resolveInfoCollection", "", "resolveInfoCollectionInRecyclerView", "scrollingOnBackPressed", "textInputEditText", "Lcom/google/android/material/textfield/TextInputEditText;", "textInputLayout", "Lcom/google/android/material/textfield/TextInputLayout;", "onBackPressed", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "savedInstanceState", "Landroid/os/Bundle;", "onDismiss", "dialog", "Landroid/content/DialogInterface;", "onStart", "onViewCreated", "view", "resetResolveInfoCollectionInRecyclerView", "setOnClickListener", "setOnDialogDismissedListener", "setOnLongClickListener", "setOnSelectListener", "setOnTextChangedListener", "setResolveInfoCollection", "", "setResolveInfoCollectionInRecyclerView", "setTitle", "title", "", "GridRecyclerViewAdapter", "ResolveInfoDiffUtilCallback", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public abstract class ResolveInfoCollectionDialogFragment extends DaijishouDialogFragment {
 
-    /* JADX INFO: renamed from: appsViewModel$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: appsViewModel$delegate, reason: from kotlin metadata */
     private final Lazy appsViewModel;
     private ConstraintLayout backButton;
     private Function1<? super ResolveInfo, Unit> onClickListener;
@@ -68,19 +68,19 @@ public abstract class ResolveInfoCollectionDialogFragment extends DaijishouDialo
         this.appsViewModel = FragmentViewModelLazyKt.createViewModelLazy(resolveInfoCollectionDialogFragment, Reflection.getOrCreateKotlinClass(AppsViewModel.class), new ResolveInfoCollectionDialogFragment$special$$inlined$activityViewModels$default$1(resolveInfoCollectionDialogFragment), new ResolveInfoCollectionDialogFragment$special$$inlined$activityViewModels$default$2(null, resolveInfoCollectionDialogFragment), new ResolveInfoCollectionDialogFragment$special$$inlined$activityViewModels$default$3(resolveInfoCollectionDialogFragment));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final AppsViewModel getAppsViewModel() {
         return (AppsViewModel) this.appsViewModel.getValue();
     }
 
-    /* JADX INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
+    /* INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0018\u0002\b\u0086\u0004\u0018\u00002\u00020\u0001B!\u0012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\u0002\u0010\u0006J\u0018\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\nH\u0016J\u0018\u0010\f\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\nH\u0016J\b\u0010\r\u001a\u00020\nH\u0016J\b\u0010\u000e\u001a\u00020\nH\u0016R\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000f²\u0006\n\u0010\u0010\u001a\u00020\u0011X\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/abstract_fragment_classes/ResolveInfoCollectionDialogFragment$ResolveInfoDiffUtilCallback;", "Landroidx/recyclerview/widget/DiffUtil$Callback;", "oldList", "", "Landroid/content/pm/ResolveInfo;", "newList", "(Lcom/magneticchen/daijishou/abstract_fragment_classes/ResolveInfoCollectionDialogFragment;Ljava/util/List;Ljava/util/List;)V", "areContentsTheSame", "", "oldItemPosition", "", "newItemPosition", "areItemsTheSame", "getNewListSize", "getOldListSize", "app_release", "appsViewModel", "Lcom/magneticchen/daijishou/view_models/AppsViewModel;"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class ResolveInfoDiffUtilCallback extends DiffUtil.Callback {
         private final List<ResolveInfo> newList;
         private final List<ResolveInfo> oldList;
         final /* synthetic */ ResolveInfoCollectionDialogFragment this$0;
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public ResolveInfoDiffUtilCallback(ResolveInfoCollectionDialogFragment resolveInfoCollectionDialogFragment, List<ResolveInfo> oldList, List<ResolveInfo> newList) {
             Intrinsics.checkNotNullParameter(oldList, "oldList");
             Intrinsics.checkNotNullParameter(newList, "newList");
@@ -230,12 +230,12 @@ public abstract class ResolveInfoCollectionDialogFragment extends DaijishouDialo
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x001b  */
-    /* JADX WARN: Code duplicated, block: B:20:0x0036  */
-    /* JADX WARN: Code duplicated, block: B:22:0x003d  */
-    /* JADX WARN: Code duplicated, block: B:25:0x004a  */
-    /* JADX WARN: Code duplicated, block: B:26:0x004e  */
-    /* JADX WARN: Code duplicated, block: B:9:0x0017  */
+    /* WARN: Code duplicated, block: B:11:0x001b  */
+    /* WARN: Code duplicated, block: B:20:0x0036  */
+    /* WARN: Code duplicated, block: B:22:0x003d  */
+    /* WARN: Code duplicated, block: B:25:0x004a  */
+    /* WARN: Code duplicated, block: B:26:0x004e  */
+    /* WARN: Code duplicated, block: B:9:0x0017  */
     @Override // com.magneticchen.daijishou.abstract_fragment_classes.DaijishouDialogFragment
     public boolean onBackPressed() {
         RecyclerView recyclerView;
@@ -385,8 +385,8 @@ public abstract class ResolveInfoCollectionDialogFragment extends DaijishouDialo
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.ResolveInfoCollectionDialogFragment$onCreateView$1, reason: invalid class name */
-    /* JADX INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.ResolveInfoCollectionDialogFragment$onCreateView$1, reason: invalid class name */
+    /* INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "resolveInfo", "Landroid/content/pm/ResolveInfo;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function4<View, Integer, Long, ResolveInfo, Unit> {
         AnonymousClass1() {
@@ -409,8 +409,8 @@ public abstract class ResolveInfoCollectionDialogFragment extends DaijishouDialo
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.ResolveInfoCollectionDialogFragment$onCreateView$2, reason: invalid class name */
-    /* JADX INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.ResolveInfoCollectionDialogFragment$onCreateView$2, reason: invalid class name */
+    /* INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000\"\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0004\b\n\u0010\u000b"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "resolveInfo", "Landroid/content/pm/ResolveInfo;", "invoke", "(Landroid/view/View;IJLandroid/content/pm/ResolveInfo;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass2 extends Lambda<Boolean> implements Function4<View, Integer, Long, ResolveInfo, Boolean> {
         AnonymousClass2() {
@@ -433,8 +433,8 @@ public abstract class ResolveInfoCollectionDialogFragment extends DaijishouDialo
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.ResolveInfoCollectionDialogFragment$onCreateView$3, reason: invalid class name */
-    /* JADX INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.ResolveInfoCollectionDialogFragment$onCreateView$3, reason: invalid class name */
+    /* INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "resolveInfo", "Landroid/content/pm/ResolveInfo;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass3 extends Lambda<Unit> implements Function4<View, Integer, Long, ResolveInfo, Unit> {
         AnonymousClass3() {
@@ -456,8 +456,8 @@ public abstract class ResolveInfoCollectionDialogFragment extends DaijishouDialo
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.ResolveInfoCollectionDialogFragment$onCreateView$4, reason: invalid class name */
-    /* JADX INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.ResolveInfoCollectionDialogFragment$onCreateView$4, reason: invalid class name */
+    /* INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/abstract_fragment_classes/ResolveInfoCollectionDialogFragment$onCreateView$4", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass4 extends RecyclerView.OnScrollListener {
         AnonymousClass4() {
@@ -473,14 +473,14 @@ public abstract class ResolveInfoCollectionDialogFragment extends DaijishouDialo
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$0(ResolveInfoCollectionDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.requireDialog().onBackPressed();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.ResolveInfoCollectionDialogFragment$onCreateView$6, reason: invalid class name */
-    /* JADX INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.ResolveInfoCollectionDialogFragment$onCreateView$6, reason: invalid class name */
+    /* INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000%\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0012\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u0016J*\u0010\u0006\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\tH\u0016J*\u0010\f\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\tH\u0016¨\u0006\u000e"}, d2 = {"com/magneticchen/daijishou/abstract_fragment_classes/ResolveInfoCollectionDialogFragment$onCreateView$6", "Landroid/text/TextWatcher;", "afterTextChanged", "", "s", "Landroid/text/Editable;", "beforeTextChanged", "", "start", "", "count", "after", "onTextChanged", "before", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass6 implements TextWatcher {
         @Override // android.text.TextWatcher
@@ -551,7 +551,7 @@ public abstract class ResolveInfoCollectionDialogFragment extends DaijishouDialo
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$1(ResolveInfoCollectionDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         TextInputEditText textInputEditText = this$0.textInputEditText;
@@ -565,13 +565,13 @@ public abstract class ResolveInfoCollectionDialogFragment extends DaijishouDialo
         }
     }
 
-    /* JADX INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
+    /* INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0010B\u0013\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004¢\u0006\u0002\u0010\u0005J\u0010\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J \u0010\n\u001a\n0\u000bR\u00060\u0000R\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\tH\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0011"}, d2 = {"Lcom/magneticchen/daijishou/abstract_fragment_classes/ResolveInfoCollectionDialogFragment$GridRecyclerViewAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Landroid/content/pm/ResolveInfo;", "resolveInfoList", "", "(Lcom/magneticchen/daijishou/abstract_fragment_classes/ResolveInfoCollectionDialogFragment;Ljava/util/List;)V", "getItemId", "", "position", "", "onCreateViewHolder", "Lcom/magneticchen/daijishou/abstract_fragment_classes/ResolveInfoCollectionDialogFragment$GridRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/ResolveInfoCollectionDialogFragment;", "parent", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class GridRecyclerViewAdapter extends DaijishouRecyclerView.Adapter<ResolveInfo> {
         private final List<ResolveInfo> resolveInfoList;
         final /* synthetic */ ResolveInfoCollectionDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public GridRecyclerViewAdapter(ResolveInfoCollectionDialogFragment resolveInfoCollectionDialogFragment, List<ResolveInfo> resolveInfoList) {
             super(resolveInfoList, false, false, 6, null);
             Intrinsics.checkNotNullParameter(resolveInfoList, "resolveInfoList");
@@ -584,7 +584,7 @@ public abstract class ResolveInfoCollectionDialogFragment extends DaijishouDialo
             return this.resolveInfoList.get(position).hashCode();
         }
 
-        /* JADX INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
+        /* INFO: compiled from: ResolveInfoCollectionDialogFragment.kt */
         @Metadata(d1 = {"\u0000R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0003H\u0016J\b\u0010\u0017\u001a\u00020\u0013H\u0016J\u0010\u0010\u0018\u001a\u00020\u00132\u0006\u0010\u0019\u001a\u00020\u001aH\u0016R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\f0\nX\u0082\u0004¢\u0006\u0002\n\u0000R*\u0010\r\u001a\u001e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b0\u000ej\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u000b`\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u001b"}, d2 = {"Lcom/magneticchen/daijishou/abstract_fragment_classes/ResolveInfoCollectionDialogFragment$GridRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Landroid/content/pm/ResolveInfo;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/abstract_fragment_classes/ResolveInfoCollectionDialogFragment$GridRecyclerViewAdapter;Landroid/view/View;)V", "imageView", "Landroid/widget/ImageView;", "resolveInfoStringIdToBitmapCache", "Lcom/magneticchen/daijishou/utils/Utils$MaxSizeHashMap;", "", "Landroid/graphics/Bitmap;", "resolveInfoStringIdToLabelCache", "Ljava/util/HashMap;", "Lkotlin/collections/HashMap;", "textView", "Landroid/widget/TextView;", "onBind", "", "position", "", "item", "onFocus", "onFocusClear", "isAbsoluteAdapterPositionValid", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<ResolveInfo>.ViewHolder {
             private ImageView imageView;
@@ -593,7 +593,7 @@ public abstract class ResolveInfoCollectionDialogFragment extends DaijishouDialo
             private TextView textView;
             final /* synthetic */ GridRecyclerViewAdapter this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(GridRecyclerViewAdapter gridRecyclerViewAdapter, View itemView) {
                 super(gridRecyclerViewAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");

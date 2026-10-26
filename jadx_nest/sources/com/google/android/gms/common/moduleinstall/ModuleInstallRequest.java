@@ -6,14 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class ModuleInstallRequest {
     private final List zaa;
     private final InstallStatusListener zab;
     private final Executor zac;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static class Builder {
         private final List zaa = new ArrayList();
         private InstallStatusListener zab;

@@ -6,8 +6,8 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: DefaultConstraint.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DefaultConstraint.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001c\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a2\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\b\b\u0002\u0010\u0003\u001a\u00020\u00042\b\b\u0002\u0010\u0005\u001a\u00020\u00042\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\u0004¨\u0006\t"}, d2 = {"default", "", "Lid/zelory/compressor/constraint/Compression;", "width", "", "height", ConfigConstants.CONFIG_KEY_FORMAT, "Landroid/graphics/Bitmap$CompressFormat;", "quality", "compressor_release"}, k = 2, mv = {1, 1, 16})
 public final class DefaultConstraintKt {
     public static /* synthetic */ void default$default(Compression compression, int i, int i2, Bitmap.CompressFormat compressFormat, int i3, int i4, Object obj) {
@@ -26,7 +26,7 @@ public final class DefaultConstraintKt {
         m3747default(compression, i, i2, compressFormat, i3);
     }
 
-    /* JADX INFO: renamed from: default, reason: not valid java name */
+    /* INFO: renamed from: default, reason: not valid java name */
     public static final void m3747default(Compression compression, int i, int i2, Bitmap.CompressFormat format, int i3) {
         Intrinsics.checkParameterIsNotNull(compression, "$this$default");
         Intrinsics.checkParameterIsNotNull(format, "format");

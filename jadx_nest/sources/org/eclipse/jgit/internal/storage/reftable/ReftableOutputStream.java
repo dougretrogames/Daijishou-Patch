@@ -11,7 +11,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.util.NB;
 import org.eclipse.jgit.util.io.CountingOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class ReftableOutputStream extends OutputStream {
     private final boolean alignBlocks;
     private byte[] blockBuf;

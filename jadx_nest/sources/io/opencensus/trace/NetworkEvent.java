@@ -4,7 +4,7 @@ import io.opencensus.common.Timestamp;
 import io.opencensus.internal.Utils;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @Deprecated
 public abstract class NetworkEvent extends BaseMessageEvent {
 

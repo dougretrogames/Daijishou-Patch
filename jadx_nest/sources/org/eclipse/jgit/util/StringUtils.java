@@ -9,7 +9,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.CommitConfig$$ExternalSyntheticBackport0;
 import org.eclipse.jgit.transport.SshConstants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class StringUtils {
     private static final String EMPTY = "";
     private static final long GiB = 1073741824;
@@ -175,9 +175,9 @@ public final class StringUtils {
         return new String(cArr, 0, i3);
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x0030  */
-    /* JADX WARN: Code duplicated, block: B:18:0x0034  */
-    /* JADX WARN: Code duplicated, block: B:19:0x0037  */
+    /* WARN: Code duplicated, block: B:17:0x0030  */
+    /* WARN: Code duplicated, block: B:18:0x0034  */
+    /* WARN: Code duplicated, block: B:19:0x0037  */
     public static long parseLongWithSuffix(String str, boolean z) throws StringIndexOutOfBoundsException, NumberFormatException {
         long j;
         long unsignedLong;

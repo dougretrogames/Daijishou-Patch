@@ -5,7 +5,7 @@ import org.apache.commons.logging.Log;
 import org.apache.log.Hierarchy;
 import org.apache.log.Logger;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LogKitLogger implements Log, Serializable {
     private static final long serialVersionUID = 3768538055836059519L;
     protected volatile transient Logger logger;

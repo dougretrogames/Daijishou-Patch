@@ -4,11 +4,11 @@ import com.google.api.client.util.Preconditions;
 import java.io.IOException;
 import java.io.Serializable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class AbstractDataStore<V extends Serializable> implements DataStore<V> {
     private final DataStoreFactory dataStoreFactory;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     private final String f36id;
 
     protected AbstractDataStore(DataStoreFactory dataStoreFactory, String str) {

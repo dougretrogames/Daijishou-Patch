@@ -9,12 +9,12 @@ import androidx.compose.ui.node.NodeChain;
 import androidx.compose.ui.node.NodeKind;
 import kotlin.Metadata;
 
-/* JADX INFO: compiled from: FocusEventModifierNode.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: FocusEventModifierNode.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0018\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\f\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u0000\u001a\f\u0010\u0003\u001a\u00020\u0004*\u00020\u0002H\u0000\u001a\f\u0010\u0005\u001a\u00020\u0004*\u00020\u0006H\u0000¨\u0006\u0007"}, d2 = {"getFocusState", "Landroidx/compose/ui/focus/FocusState;", "Landroidx/compose/ui/focus/FocusEventModifierNode;", "invalidateFocusEvent", "", "refreshFocusEventNodes", "Landroidx/compose/ui/focus/FocusTargetNode;", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class FocusEventModifierNodeKt {
 
-    /* JADX INFO: compiled from: FocusEventModifierNode.kt */
+    /* INFO: compiled from: FocusEventModifierNode.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     public /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -147,8 +147,8 @@ public final class FocusEventModifierNodeKt {
         return FocusStateImpl.Inactive;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r5v14 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r5v14 */
     public static final void refreshFocusEventNodes(FocusTargetNode focusTargetNode) {
         NodeChain nodes;
         FocusTargetNode focusTargetNode2 = focusTargetNode;

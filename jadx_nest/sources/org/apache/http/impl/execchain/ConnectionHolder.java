@@ -10,7 +10,7 @@ import org.apache.http.concurrent.Cancellable;
 import org.apache.http.conn.ConnectionReleaseTrigger;
 import org.apache.http.conn.HttpClientConnectionManager;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class ConnectionHolder implements ConnectionReleaseTrigger, Cancellable, Closeable {
     private final Log log;
     private final HttpClientConnection managedConn;

@@ -24,7 +24,7 @@ import java.util.Locale;
 import java.util.NoSuchElementException;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 public abstract class ByteString implements Iterable<Byte>, Serializable {
     static final int CONCATENATE_BY_COPY_SIZE = 128;
@@ -58,7 +58,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
         return c - 'W';
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int toInt(byte value) {
         return value & 255;
     }
@@ -143,7 +143,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
     ByteString() {
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.ByteString$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.ByteString$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractByteIterator {
         private final int limit;
         private int position = 0;
@@ -169,7 +169,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
     }
 
     @Override // java.lang.Iterable
-    /* JADX INFO: renamed from: iterator, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: iterator, reason: merged with bridge method [inline-methods] */
     public Iterator<Byte> iterator2() {
         return new AnonymousClass1();
     }
@@ -178,7 +178,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
         AbstractByteIterator() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.Iterator
         public final Byte next() {
             return Byte.valueOf(nextByte());
@@ -206,13 +206,13 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
         throw new NumberFormatException("Invalid hexString " + hexString + " must only contain [0-9a-fA-F] but contained " + hexString.charAt(index) + " at index " + index);
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.ByteString$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.ByteString$2, reason: invalid class name */
     class AnonymousClass2 implements Comparator<ByteString> {
         AnonymousClass2() {
         }
 
-        /* JADX WARN: Type inference failed for: r0v0, types: [com.google.protobuf.ByteString$ByteIterator] */
-        /* JADX WARN: Type inference failed for: r1v0, types: [com.google.protobuf.ByteString$ByteIterator] */
+        /* WARN: Type inference failed for: r0v0, types: [com.google.protobuf.ByteString$ByteIterator] */
+        /* WARN: Type inference failed for: r1v0, types: [com.google.protobuf.ByteString$ByteIterator] */
         @Override // java.util.Comparator
         public int compare(ByteString former, ByteString latter) {
             ?? Iterator2 = former.iterator2();
@@ -1006,7 +1006,7 @@ public abstract class ByteString implements Iterable<Byte>, Serializable {
             return h;
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.ByteString$NioByteString$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.ByteString$NioByteString$1, reason: invalid class name */
         class AnonymousClass1 extends InputStream {
             private final ByteBuffer buf;
 

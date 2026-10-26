@@ -1,6 +1,6 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public enum Syntax implements ProtocolMessageEnum {
     SYNTAX_PROTO2(0),
     SYNTAX_PROTO3(1),
@@ -50,7 +50,7 @@ public enum Syntax implements ProtocolMessageEnum {
         return internalValueMap;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.Syntax$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.Syntax$1, reason: invalid class name */
     class AnonymousClass1 implements Internal.EnumLiteMap<Syntax> {
         AnonymousClass1() {
         }

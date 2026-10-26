@@ -7,7 +7,7 @@ import android.text.style.ReplacementSpan;
 import io.noties.markwon.core.MarkwonTheme;
 import io.noties.markwon.utils.SpanUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class AsyncDrawableSpan extends ReplacementSpan {
     public static final int ALIGN_BASELINE = 1;
     public static final int ALIGN_BOTTOM = 0;

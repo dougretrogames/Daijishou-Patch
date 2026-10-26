@@ -15,7 +15,7 @@ import org.jsoup.nodes.Attribute;
 import org.jsoup.nodes.Attributes;
 import org.jsoup.nodes.Element;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Safelist {
     private static final String All = ":all";
     private final Map<TagName, Set<AttributeKey>> attributes;

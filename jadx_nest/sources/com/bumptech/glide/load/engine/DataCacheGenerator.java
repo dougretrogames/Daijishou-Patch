@@ -8,7 +8,7 @@ import com.bumptech.glide.util.pool.GlideTrace;
 import java.io.File;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class DataCacheGenerator implements DataFetcherGenerator, DataFetcher.DataCallback<Object> {
     private File cacheFile;
     private final List<Key> cacheKeys;

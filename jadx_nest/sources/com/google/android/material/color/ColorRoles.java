@@ -1,6 +1,6 @@
 package com.google.android.material.color;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ColorRoles {
     private final int accent;
     private final int accentContainer;

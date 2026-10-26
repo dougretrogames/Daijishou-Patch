@@ -2,7 +2,7 @@ package androidx.compose.ui.platform.coreshims;
 
 import android.view.ViewStructure;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ViewStructureCompat {
     private final Object mWrappedObj;
 

@@ -37,7 +37,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionScene {
     static final int ANTICIPATE = 6;
     static final int BOUNCE = 4;
@@ -96,12 +96,12 @@ public class MotionScene {
     protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
     }
 
-    /* JADX WARN: Code duplicated, block: B:23:0x0037  */
-    /* JADX WARN: Code duplicated, block: B:40:0x0079  */
-    /* JADX WARN: Code duplicated, block: B:45:0x0094  */
-    /* JADX WARN: Code duplicated, block: B:48:0x006b A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:56:0x0085 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:58:0x0073 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:23:0x0037  */
+    /* WARN: Code duplicated, block: B:40:0x0079  */
+    /* WARN: Code duplicated, block: B:45:0x0094  */
+    /* WARN: Code duplicated, block: B:48:0x006b A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:56:0x0085 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:58:0x0073 A[SYNTHETIC] */
     void setTransition(int i, int i2) {
         int iStateGetConstraintID;
         int iStateGetConstraintID2;
@@ -937,7 +937,7 @@ public class MotionScene {
         this.mConstraintSetIdMap.put("motion_base", Integer.valueOf(R.id.motion_base));
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     private void load(Context context, int i) {
         XmlResourceParser xml = context.getResources().getXml(i);
         try {
@@ -1076,7 +1076,7 @@ public class MotionScene {
         typedArrayObtainStyledAttributes.recycle();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int parseInclude(Context context, int i) {
         XmlResourceParser xml = context.getResources().getXml(i);
         try {
@@ -1421,7 +1421,7 @@ public class MotionScene {
         return new AnticipateInterpolator();
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.motion.widget.MotionScene$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.motion.widget.MotionScene$1, reason: invalid class name */
     class AnonymousClass1 implements Interpolator {
         final /* synthetic */ Easing val$easing;
 

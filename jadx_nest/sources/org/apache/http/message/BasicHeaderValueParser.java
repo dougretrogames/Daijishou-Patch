@@ -8,7 +8,7 @@ import org.apache.http.ParseException;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicHeaderValueParser implements HeaderValueParser {
     private static final char ELEM_DELIMITER = ',';
     private static final char PARAM_DELIMITER = ';';

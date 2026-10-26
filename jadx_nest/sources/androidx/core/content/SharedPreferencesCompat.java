@@ -2,7 +2,7 @@ package androidx.core.content;
 
 import android.content.SharedPreferences;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public final class SharedPreferencesCompat {
 

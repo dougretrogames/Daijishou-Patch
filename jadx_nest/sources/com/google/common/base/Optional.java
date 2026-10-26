@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock("Use Optional.of(value) or Optional.absent()")
 @ElementTypesAreNonnullByDefault
 public abstract class Optional<T> implements Serializable {
@@ -50,7 +50,7 @@ public abstract class Optional<T> implements Serializable {
     Optional() {
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Optional$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Optional$1, reason: invalid class name */
     class AnonymousClass1 implements Iterable<T> {
         final /* synthetic */ Iterable val$optionals;
 
@@ -58,7 +58,7 @@ public abstract class Optional<T> implements Serializable {
             this.val$optionals = val$optionals;
         }
 
-        /* JADX INFO: renamed from: com.google.common.base.Optional$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.google.common.base.Optional$1$1, reason: invalid class name and collision with other inner class name */
         class C00351 extends AbstractIterator<T> {
             private final Iterator<? extends Optional<? extends T>> iterator;
 

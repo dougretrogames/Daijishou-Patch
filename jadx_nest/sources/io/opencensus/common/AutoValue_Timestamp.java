@@ -1,6 +1,6 @@
 package io.opencensus.common;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Timestamp extends Timestamp {
     private final int nanos;
     private final long seconds;

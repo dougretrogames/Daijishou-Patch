@@ -1,7 +1,7 @@
 package androidx.core.view;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class ViewCompat$$ExternalSyntheticLambda0 implements OnReceiveContentViewBehavior {
     @Override // androidx.core.view.OnReceiveContentViewBehavior
     public final ContentInfoCompat onReceiveContent(ContentInfoCompat contentInfoCompat) {

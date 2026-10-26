@@ -27,8 +27,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.android.gms.tasks.TaskCompletionSource;
 import java.util.Iterator;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class zbap extends GoogleApi implements SignInClient {
     private static final Api.ClientKey zba;
     private static final Api.AbstractClientBuilder zbb;
@@ -119,12 +119,12 @@ public final class zbap extends GoogleApi implements SignInClient {
         return doWrite(TaskApiCall.builder().setFeatures(zbar.zbb).run(new zbah(this)).setAutoResolveMissingFeatures(false).setMethodKey(1554).build());
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     final /* synthetic */ void zba(GetPhoneNumberHintIntentRequest getPhoneNumberHintIntentRequest, zbaq zbaqVar, TaskCompletionSource taskCompletionSource) throws RemoteException {
         ((zbv) zbaqVar.getService()).zbd(new zbao(this, taskCompletionSource), getPhoneNumberHintIntentRequest, this.zbd);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     final /* synthetic */ void zbb(zbaq zbaqVar, TaskCompletionSource taskCompletionSource) throws RemoteException {
         ((zbv) zbaqVar.getService()).zbf(new zbam(this, taskCompletionSource), this.zbd);
     }

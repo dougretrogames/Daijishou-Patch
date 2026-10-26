@@ -55,7 +55,7 @@ import org.apache.http.protocol.HttpRequestExecutor;
 import org.apache.http.util.Args;
 import org.apache.http.util.EntityUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class DefaultRequestDirector implements RequestDirector {
     private final HttpAuthenticator authenticator;
@@ -536,7 +536,7 @@ public class DefaultRequestDirector implements RequestDirector {
         return new BasicHttpRequest(HttpMethods.CONNECT, sb.toString(), HttpProtocolParams.getVersion(this.params));
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:21:0x008e, code lost:
+    /* WARN: Code restructure failed: missing block: B:21:0x008e, code lost:
     
         if (r13.authenticator.authenticate(r1, r15, r13.proxyAuthStrategy, r13.proxyAuthState, r5) != false) goto L22;
      */

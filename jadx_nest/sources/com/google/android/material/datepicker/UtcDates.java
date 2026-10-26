@@ -10,7 +10,7 @@ import java.util.Locale;
 import java.util.TimeZone;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class UtcDates {
     static final String UTC = "UTC";
     static AtomicReference<TimeSource> timeSourceRef = new AtomicReference<>();

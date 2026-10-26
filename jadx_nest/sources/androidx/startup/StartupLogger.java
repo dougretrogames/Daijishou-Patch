@@ -2,7 +2,7 @@ package androidx.startup;
 
 import android.util.Log;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class StartupLogger {
     static final boolean DEBUG = false;
     private static final String TAG = "StartupLogger";

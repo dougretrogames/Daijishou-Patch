@@ -18,7 +18,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class TextFormat {
     private static final String DEBUG_STRING_SILENT_MARKER = "\t ";
     private static final Logger logger = Logger.getLogger(TextFormat.class.getName());
@@ -464,7 +464,7 @@ public final class TextFormat {
             generator.eol();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static void printUnknownFields(final UnknownFieldSet unknownFields, final TextGenerator generator) throws IOException {
             for (Map.Entry<Integer, UnknownFieldSet.Field> entry : unknownFields.asMap().entrySet()) {
                 int iIntValue = entry.getKey().intValue();
@@ -496,7 +496,7 @@ public final class TextFormat {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.TextFormat$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.TextFormat$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$Descriptors$FieldDescriptor$JavaType;
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$Descriptors$FieldDescriptor$Type;
@@ -611,12 +611,12 @@ public final class TextFormat {
         return BigInteger.valueOf(value & Long.MAX_VALUE).setBit(63).toString();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static TextGenerator multiLineOutput(Appendable output) {
         return new TextGenerator(output, false, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static TextGenerator singleLineOutput(Appendable output) {
         return new TextGenerator(output, true, null);
     }

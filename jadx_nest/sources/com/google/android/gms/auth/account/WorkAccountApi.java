@@ -5,12 +5,12 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.PendingResult;
 import com.google.android.gms.common.api.Result;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public interface WorkAccountApi {
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+    /* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
     @Deprecated
     public interface AddAccountResult extends Result {
         Account getAccount();

@@ -9,7 +9,7 @@ import android.graphics.RectF;
 import androidx.core.math.MathUtils;
 import com.google.android.material.color.MaterialColors;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class LinearDrawingDelegate extends DrawingDelegate<LinearProgressIndicatorSpec> {
     private float displayedCornerRadius;
     private float displayedTrackThickness;

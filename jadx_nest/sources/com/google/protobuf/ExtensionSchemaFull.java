@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class ExtensionSchemaFull extends ExtensionSchema<Descriptors.FieldDescriptor> {
     private static final long EXTENSION_FIELD_OFFSET = getExtensionsFieldOffset();
 
@@ -38,7 +38,7 @@ final class ExtensionSchemaFull extends ExtensionSchema<Descriptors.FieldDescrip
         UnsafeUtil.putObject(message, EXTENSION_FIELD_OFFSET, extensions);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.protobuf.ExtensionSchema
     FieldSet<Descriptors.FieldDescriptor> getMutableExtensions(Object message) {
         FieldSet<Descriptors.FieldDescriptor> extensions = getExtensions(message);
@@ -241,7 +241,7 @@ final class ExtensionSchemaFull extends ExtensionSchema<Descriptors.FieldDescrip
         return ub;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.ExtensionSchemaFull$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.ExtensionSchemaFull$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$FieldType;
 

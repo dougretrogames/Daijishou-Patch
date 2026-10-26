@@ -10,8 +10,8 @@ import kotlin.annotation.AnnotationRetention;
 import kotlin.annotation.AnnotationTarget;
 import kotlin.annotation.MustBeDocumented;
 
-/* JADX INFO: compiled from: RequiresApi.jvm.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: RequiresApi.jvm.kt */
+/* INFO: loaded from: classes.dex */
 @Target({ElementType.TYPE, ElementType.METHOD, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.PACKAGE})
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.ANNOTATION_CLASS, AnnotationTarget.CLASS, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CONSTRUCTOR, AnnotationTarget.FIELD, AnnotationTarget.FILE})
 @Retention(RetentionPolicy.CLASS)

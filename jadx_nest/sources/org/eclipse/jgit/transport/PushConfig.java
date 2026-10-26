@@ -6,7 +6,7 @@ import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PushConfig {
     private final PushDefault pushDefault;
     private final PushRecurseSubmodulesMode recurseSubmodules;
@@ -18,7 +18,7 @@ public class PushConfig {
 
         private final String configValue;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static PushRecurseSubmodulesMode[] valuesCustom() {
             PushRecurseSubmodulesMode[] pushRecurseSubmodulesModeArrValuesCustom = values();
             int length = pushRecurseSubmodulesModeArrValuesCustom.length;
@@ -55,7 +55,7 @@ public class PushConfig {
 
         private final String alias;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static PushDefault[] valuesCustom() {
             PushDefault[] pushDefaultArrValuesCustom = values();
             int length = pushDefaultArrValuesCustom.length;

@@ -5,8 +5,8 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: FormatConstraint.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: FormatConstraint.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u001a\u0012\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0000\u001a\u00020\u0003¨\u0006\u0004"}, d2 = {ConfigConstants.CONFIG_KEY_FORMAT, "", "Lid/zelory/compressor/constraint/Compression;", "Landroid/graphics/Bitmap$CompressFormat;", "compressor_release"}, k = 2, mv = {1, 1, 16})
 public final class FormatConstraintKt {
     public static final void format(Compression format, Bitmap.CompressFormat format2) {

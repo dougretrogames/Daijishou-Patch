@@ -1,7 +1,7 @@
 package androidx.compose.ui.platform;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class AndroidComposeView$$ExternalSyntheticLambda3 implements Runnable {
     public final /* synthetic */ AndroidComposeView f$0;
 

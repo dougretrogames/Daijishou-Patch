@@ -10,7 +10,7 @@ import org.apache.commons.collections4.map.EntrySetToMapIteratorAdapter;
 import org.apache.commons.collections4.map.UnmodifiableEntrySet;
 import org.apache.commons.collections4.set.UnmodifiableSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SplitMapUtils {
 
     private static final class WrappedGet<K, V> implements IterableMap<K, V>, Unmodifiable {

@@ -2,7 +2,7 @@ package io.grpc;
 
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ManagedChannel extends Channel {
     public abstract boolean awaitTermination(long j, TimeUnit timeUnit) throws InterruptedException;
 

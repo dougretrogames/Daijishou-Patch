@@ -61,7 +61,7 @@ import org.eclipse.jgit.util.io.NullOutputStream;
 import org.eclipse.jgit.util.io.TimeoutInputStream;
 import org.eclipse.jgit.util.io.TimeoutOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UploadPack implements Closeable {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$transport$GitProtocolConstants$MultiAck;
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$transport$UploadPack$RequestPolicy;
@@ -115,7 +115,7 @@ public class UploadPack implements Closeable {
         void writeError(String str) throws IOException;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @FunctionalInterface
     interface IOConsumer<R> {
         void accept(R r) throws IOException;
@@ -125,7 +125,7 @@ public class UploadPack implements Closeable {
         WAIT_FOR_DONE,
         NONE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Option[] valuesCustom() {
             Option[] optionArrValuesCustom = values();
             int length = optionArrValuesCustom.length;
@@ -216,7 +216,7 @@ public class UploadPack implements Closeable {
 
         private final int bitmask;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static RequestPolicy[] valuesCustom() {
             RequestPolicy[] requestPolicyArrValuesCustom = values();
             int length = requestPolicyArrValuesCustom.length;
@@ -451,10 +451,10 @@ public class UploadPack implements Closeable {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:14:0x0012 A[Catch: all -> 0x0007, TryCatch #0 {all -> 0x0007, blocks: (B:2:0x0000, B:12:0x000e, B:14:0x0012, B:16:0x0016, B:18:0x0021, B:19:0x0026, B:20:0x002b, B:22:0x002d, B:23:0x0030, B:17:0x001b, B:24:0x0031, B:26:0x0033, B:28:0x0039, B:30:0x003f, B:31:0x0048, B:33:0x004d, B:34:0x0050, B:35:0x0051), top: B:38:0x0000, inners: #1, #4, #5, #7, #5 }] */
-    /* JADX WARN: Code duplicated, block: B:16:0x0016 A[Catch: all -> 0x0007, TryCatch #0 {all -> 0x0007, blocks: (B:2:0x0000, B:12:0x000e, B:14:0x0012, B:16:0x0016, B:18:0x0021, B:19:0x0026, B:20:0x002b, B:22:0x002d, B:23:0x0030, B:17:0x001b, B:24:0x0031, B:26:0x0033, B:28:0x0039, B:30:0x003f, B:31:0x0048, B:33:0x004d, B:34:0x0050, B:35:0x0051), top: B:38:0x0000, inners: #1, #4, #5, #7, #5 }] */
-    /* JADX WARN: Code duplicated, block: B:17:0x001b A[Catch: all -> 0x0007, TRY_LEAVE, TryCatch #0 {all -> 0x0007, blocks: (B:2:0x0000, B:12:0x000e, B:14:0x0012, B:16:0x0016, B:18:0x0021, B:19:0x0026, B:20:0x002b, B:22:0x002d, B:23:0x0030, B:17:0x001b, B:24:0x0031, B:26:0x0033, B:28:0x0039, B:30:0x003f, B:31:0x0048, B:33:0x004d, B:34:0x0050, B:35:0x0051), top: B:38:0x0000, inners: #1, #4, #5, #7, #5 }] */
-    /* JADX WARN: Code duplicated, block: B:24:0x0031 A[Catch: all -> 0x0007, TryCatch #0 {all -> 0x0007, blocks: (B:2:0x0000, B:12:0x000e, B:14:0x0012, B:16:0x0016, B:18:0x0021, B:19:0x0026, B:20:0x002b, B:22:0x002d, B:23:0x0030, B:17:0x001b, B:24:0x0031, B:26:0x0033, B:28:0x0039, B:30:0x003f, B:31:0x0048, B:33:0x004d, B:34:0x0050, B:35:0x0051), top: B:38:0x0000, inners: #1, #4, #5, #7, #5 }] */
+    /* WARN: Code duplicated, block: B:14:0x0012 A[Catch: all -> 0x0007, TryCatch #0 {all -> 0x0007, blocks: (B:2:0x0000, B:12:0x000e, B:14:0x0012, B:16:0x0016, B:18:0x0021, B:19:0x0026, B:20:0x002b, B:22:0x002d, B:23:0x0030, B:17:0x001b, B:24:0x0031, B:26:0x0033, B:28:0x0039, B:30:0x003f, B:31:0x0048, B:33:0x004d, B:34:0x0050, B:35:0x0051), top: B:38:0x0000, inners: #1, #4, #5, #7, #5 }] */
+    /* WARN: Code duplicated, block: B:16:0x0016 A[Catch: all -> 0x0007, TryCatch #0 {all -> 0x0007, blocks: (B:2:0x0000, B:12:0x000e, B:14:0x0012, B:16:0x0016, B:18:0x0021, B:19:0x0026, B:20:0x002b, B:22:0x002d, B:23:0x0030, B:17:0x001b, B:24:0x0031, B:26:0x0033, B:28:0x0039, B:30:0x003f, B:31:0x0048, B:33:0x004d, B:34:0x0050, B:35:0x0051), top: B:38:0x0000, inners: #1, #4, #5, #7, #5 }] */
+    /* WARN: Code duplicated, block: B:17:0x001b A[Catch: all -> 0x0007, TRY_LEAVE, TryCatch #0 {all -> 0x0007, blocks: (B:2:0x0000, B:12:0x000e, B:14:0x0012, B:16:0x0016, B:18:0x0021, B:19:0x0026, B:20:0x002b, B:22:0x002d, B:23:0x0030, B:17:0x001b, B:24:0x0031, B:26:0x0033, B:28:0x0039, B:30:0x003f, B:31:0x0048, B:33:0x004d, B:34:0x0050, B:35:0x0051), top: B:38:0x0000, inners: #1, #4, #5, #7, #5 }] */
+    /* WARN: Code duplicated, block: B:24:0x0031 A[Catch: all -> 0x0007, TryCatch #0 {all -> 0x0007, blocks: (B:2:0x0000, B:12:0x000e, B:14:0x0012, B:16:0x0016, B:18:0x0021, B:19:0x0026, B:20:0x002b, B:22:0x002d, B:23:0x0030, B:17:0x001b, B:24:0x0031, B:26:0x0033, B:28:0x0039, B:30:0x003f, B:31:0x0048, B:33:0x004d, B:34:0x0050, B:35:0x0051), top: B:38:0x0000, inners: #1, #4, #5, #7, #5 }] */
     public void upload(InputStream inputStream, OutputStream outputStream, @Nullable OutputStream outputStream2) throws IOException {
         String message;
         try {
@@ -920,7 +920,7 @@ public class UploadPack implements Closeable {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x002a  */
+    /* WARN: Code duplicated, block: B:7:0x002a  */
     private List<String> getV2CapabilityAdvertisement() {
         boolean z;
         ArrayList arrayList = new ArrayList();
@@ -968,7 +968,7 @@ public class UploadPack implements Closeable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Set<ObjectId> refIdSet(Collection<Ref> collection) {
         HashSet hashSet = new HashSet(collection.size());
         for (Ref ref : collection) {
@@ -1416,7 +1416,7 @@ public class UploadPack implements Closeable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void checkNotAdvertisedWants(UploadPack uploadPack, List<ObjectId> list, Collection<Ref> collection) throws IOException {
         ObjectReader objectReader = uploadPack.getRevWalk().getObjectReader();
         Set<ObjectId> setRefIdSet = refIdSet(collection);
@@ -1520,12 +1520,12 @@ public class UploadPack implements Closeable {
         return (predicate.test(ref) || predicate2.test(ref)) ? false : true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static ObjectId refToObjectId(Ref ref) {
         return ref.getObjectId() != null ? ref.getObjectId() : ref.getPeeledObjectId();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @Nullable
     public static RevCommit objectIdToRevCommit(RevWalk revWalk, ObjectId objectId) {
         if (objectId == null) {
@@ -1538,7 +1538,7 @@ public class UploadPack implements Closeable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @Nullable
     public static RevObject objectIdToRevObject(RevWalk revWalk, ObjectId objectId) {
         if (objectId == null) {
@@ -1638,7 +1638,7 @@ public class UploadPack implements Closeable {
         sendPack(NullProgressMonitor.INSTANCE, packetLineOut, this.rawOut, fetchRequest, accumulator, collection, list, list2);
     }
 
-    /* JADX WARN: Code duplicated, block: B:76:0x01b3 A[Catch: all -> 0x0251, TryCatch #0 {all -> 0x0251, blocks: (B:10:0x0037, B:12:0x0045, B:14:0x0053, B:16:0x0059, B:18:0x0063, B:22:0x0074, B:24:0x00a6, B:26:0x00aa, B:27:0x00b9, B:29:0x00bf, B:30:0x00c3, B:32:0x00cf, B:33:0x00d7, B:36:0x00de, B:38:0x00ea, B:39:0x00f2, B:41:0x00ff, B:43:0x0105, B:50:0x013e, B:52:0x0146, B:54:0x0167, B:57:0x0175, B:58:0x0179, B:61:0x0180, B:64:0x018d, B:66:0x0195, B:74:0x01ad, B:76:0x01b3, B:77:0x01bd, B:81:0x01ca, B:83:0x01d0, B:69:0x019e, B:71:0x01a4, B:84:0x01d8, B:86:0x01de, B:88:0x01e2, B:90:0x01e6, B:92:0x01f3, B:93:0x0204, B:94:0x0209, B:96:0x0217, B:53:0x0153, B:45:0x010b, B:49:0x011b, B:48:0x0115, B:13:0x0049), top: B:108:0x0037 }] */
+    /* WARN: Code duplicated, block: B:76:0x01b3 A[Catch: all -> 0x0251, TryCatch #0 {all -> 0x0251, blocks: (B:10:0x0037, B:12:0x0045, B:14:0x0053, B:16:0x0059, B:18:0x0063, B:22:0x0074, B:24:0x00a6, B:26:0x00aa, B:27:0x00b9, B:29:0x00bf, B:30:0x00c3, B:32:0x00cf, B:33:0x00d7, B:36:0x00de, B:38:0x00ea, B:39:0x00f2, B:41:0x00ff, B:43:0x0105, B:50:0x013e, B:52:0x0146, B:54:0x0167, B:57:0x0175, B:58:0x0179, B:61:0x0180, B:64:0x018d, B:66:0x0195, B:74:0x01ad, B:76:0x01b3, B:77:0x01bd, B:81:0x01ca, B:83:0x01d0, B:69:0x019e, B:71:0x01a4, B:84:0x01d8, B:86:0x01de, B:88:0x01e2, B:90:0x01e6, B:92:0x01f3, B:93:0x0204, B:94:0x0209, B:96:0x0217, B:53:0x0153, B:45:0x010b, B:49:0x011b, B:48:0x0115, B:13:0x0049), top: B:108:0x0037 }] */
     private void sendPack(ProgressMonitor progressMonitor, PacketLineOut packetLineOut, OutputStream outputStream, FetchRequest fetchRequest, PackStatistics.Accumulator accumulator, @Nullable Collection<Ref> collection, List<ObjectId> list, List<ObjectId> list2) throws IOException {
         RevWalk revWalk;
         ProgressMonitor progressMonitor2;
@@ -1768,11 +1768,11 @@ public class UploadPack implements Closeable {
         refAdvertiser.addSymref("HEAD", ref.getLeaf().getName());
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r3v0, types: [org.eclipse.jgit.revwalk.RevTag] */
-    /* JADX WARN: Type inference failed for: r3v1 */
-    /* JADX WARN: Type inference failed for: r3v3, types: [org.eclipse.jgit.revwalk.RevObject] */
-    /* JADX WARN: Type inference failed for: r4v0, types: [org.eclipse.jgit.internal.storage.pack.PackWriter] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r3v0, types: [org.eclipse.jgit.revwalk.RevTag] */
+    /* WARN: Type inference failed for: r3v1 */
+    /* WARN: Type inference failed for: r3v3, types: [org.eclipse.jgit.revwalk.RevObject] */
+    /* WARN: Type inference failed for: r4v0, types: [org.eclipse.jgit.internal.storage.pack.PackWriter] */
     private void addTagChain(RevTag revTag, PackWriter packWriter) throws IOException {
         do {
             RevTag revTag2 = (RevTag) revTag;

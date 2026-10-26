@@ -1,6 +1,6 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class TypeProto {
     private static Descriptors.FileDescriptor descriptor;
     static final Descriptors.Descriptor internal_static_google_protobuf_EnumValue_descriptor;

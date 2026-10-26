@@ -18,7 +18,7 @@ import java.util.Map;
 import java.util.zip.GZIPInputStream;
 import org.eclipse.jgit.util.HttpSupport;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockLowLevelHttpRequest extends LowLevelHttpRequest {
     private final Map<String, List<String>> headersMap = new HashMap();
     private MockLowLevelHttpResponse response = new MockLowLevelHttpResponse();

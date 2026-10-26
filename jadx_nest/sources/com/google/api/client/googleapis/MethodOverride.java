@@ -7,7 +7,7 @@ import com.google.api.client.http.HttpRequestInitializer;
 import com.google.api.client.http.UrlEncodedContent;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MethodOverride implements HttpExecuteInterceptor, HttpRequestInitializer {
     public static final String HEADER = "X-HTTP-Method-Override";
     static final int MAX_URL_LENGTH = 2048;

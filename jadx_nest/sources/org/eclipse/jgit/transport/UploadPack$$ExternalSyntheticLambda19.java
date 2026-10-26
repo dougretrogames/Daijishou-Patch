@@ -3,8 +3,8 @@ package org.eclipse.jgit.transport;
 import java.util.List;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class UploadPack$$ExternalSyntheticLambda19 implements UploadPack.IOConsumer {
     public final /* synthetic */ List f$0;
 

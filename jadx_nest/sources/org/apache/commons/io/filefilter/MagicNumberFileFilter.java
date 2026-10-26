@@ -19,7 +19,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.RandomAccessFileMode;
 import org.apache.commons.io.RandomAccessFiles;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MagicNumberFileFilter extends AbstractFileFilter implements Serializable {
     private static final long serialVersionUID = -547733176983104172L;
     private final long byteOffset;
@@ -69,7 +69,7 @@ public class MagicNumberFileFilter extends AbstractFileFilter implements Seriali
         }
     }
 
-    /* JADX INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-MagicNumberFileFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-MagicNumberFileFilter, reason: not valid java name */
     /* synthetic */ Boolean m5577x5edb28f0(RandomAccessFile randomAccessFile) throws IOException {
         byte[] bArr = this.magicNumbers;
         return Boolean.valueOf(Arrays.equals(bArr, RandomAccessFiles.read(randomAccessFile, this.byteOffset, bArr.length)));

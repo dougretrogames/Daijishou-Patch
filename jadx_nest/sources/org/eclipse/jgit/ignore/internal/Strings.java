@@ -12,7 +12,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.eclipse.jgit.errors.InvalidPatternException;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Strings {
     private static final String DL = "\\p{javaDigit}\\p{javaLetter}";
     static final List<String> POSIX_CHAR_CLASSES = Arrays.asList("alnum", "alpha", "blank", "cntrl", "digit", "graph", "lower", "print", "punct", "space", "upper", "xdigit", "word");
@@ -25,7 +25,7 @@ public class Strings {
         COMPLEX,
         NONE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static PatternState[] valuesCustom() {
             PatternState[] patternStateArrValuesCustom = values();
             int length = patternStateArrValuesCustom.length;
@@ -154,10 +154,10 @@ public class Strings {
         return PatternState.COMPLEX;
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code duplicated, block: B:100:0x016d A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:103:0x0178  */
-    /* JADX WARN: Code duplicated, block: B:99:0x016b  */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Code duplicated, block: B:100:0x016d A[ADDED_TO_REGION] */
+    /* WARN: Code duplicated, block: B:103:0x0178  */
+    /* WARN: Code duplicated, block: B:99:0x016b  */
     static Pattern convertGlob(String str) throws InvalidPatternException {
         if (UNSUPPORTED.matcher(str).find()) {
             throw new InvalidPatternException("Collating symbols [[.a.]] or equivalence class expressions [[=a=]] are not supported", str);
@@ -367,7 +367,7 @@ public class Strings {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x003f  */
+    /* WARN: Code duplicated, block: B:21:0x003f  */
     static String deleteBackslash(String str) {
         if (str.indexOf(92) < 0) {
             return str;

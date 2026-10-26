@@ -12,7 +12,7 @@ import androidx.appcompat.R;
 import androidx.core.view.GravityCompat;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MenuPopupHelper implements MenuHelper {
     private static final int TOUCH_EPICENTER_SIZE_DP = 48;
     private View mAnchorView;
@@ -179,7 +179,7 @@ public class MenuPopupHelper implements MenuHelper {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.view.menu.MenuPopupHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.view.menu.MenuPopupHelper$1, reason: invalid class name */
     class AnonymousClass1 implements PopupWindow.OnDismissListener {
         AnonymousClass1() {
         }

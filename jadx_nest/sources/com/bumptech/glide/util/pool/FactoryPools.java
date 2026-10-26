@@ -5,7 +5,7 @@ import androidx.core.util.Pools;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class FactoryPools {
     private static final int DEFAULT_POOL_SIZE = 20;
     private static final Resetter<Object> EMPTY_RESETTER = new AnonymousClass1();
@@ -23,7 +23,7 @@ public final class FactoryPools {
         void reset(T t);
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.util.pool.FactoryPools$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.util.pool.FactoryPools$1, reason: invalid class name */
     class AnonymousClass1 implements Resetter<Object> {
         @Override // com.bumptech.glide.util.pool.FactoryPools.Resetter
         public void reset(Object obj) {
@@ -56,8 +56,8 @@ public final class FactoryPools {
         return build(new Pools.SynchronizedPool(i), new AnonymousClass2(), new AnonymousClass3());
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.bumptech.glide.util.pool.FactoryPools$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.bumptech.glide.util.pool.FactoryPools$2, reason: invalid class name */
     class AnonymousClass2<T> implements Factory<List<T>> {
         AnonymousClass2() {
         }
@@ -68,8 +68,8 @@ public final class FactoryPools {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.bumptech.glide.util.pool.FactoryPools$3, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.bumptech.glide.util.pool.FactoryPools$3, reason: invalid class name */
     class AnonymousClass3<T> implements Resetter<List<T>> {
         AnonymousClass3() {
         }

@@ -13,7 +13,7 @@ import java.util.Spliterator;
 import java.util.Spliterators;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock("Use ImmutableList.of or another implementation")
 @ElementTypesAreNonnullByDefault
 public abstract class ImmutableCollection<E> extends AbstractCollection<E> implements Serializable {

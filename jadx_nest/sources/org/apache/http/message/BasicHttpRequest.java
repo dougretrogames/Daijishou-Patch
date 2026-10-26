@@ -6,7 +6,7 @@ import org.apache.http.ProtocolVersion;
 import org.apache.http.RequestLine;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicHttpRequest extends AbstractHttpMessage implements HttpRequest {
     private final String method;
     private RequestLine requestline;

@@ -2,7 +2,7 @@ package net.lingala.zip4j.model;
 
 import net.lingala.zip4j.headers.HeaderSignature;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LocalFileHeader extends AbstractFileHeader {
     private byte[] extraField;
     private long offsetStartOfData;

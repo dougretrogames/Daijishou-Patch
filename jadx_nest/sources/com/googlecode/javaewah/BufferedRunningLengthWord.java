@@ -1,6 +1,6 @@
 package com.googlecode.javaewah;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class BufferedRunningLengthWord implements Cloneable {
     protected int literalWordOffset;
     protected int numberOfLiteralWords;
@@ -73,7 +73,7 @@ public final class BufferedRunningLengthWord implements Cloneable {
         return "running bit = " + getRunningBit() + " running length = " + getRunningLength() + " number of lit. words " + getNumberOfLiteralWords();
     }
 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public BufferedRunningLengthWord m3458clone() throws CloneNotSupportedException {
         BufferedRunningLengthWord bufferedRunningLengthWord = (BufferedRunningLengthWord) super.clone();
         bufferedRunningLengthWord.literalWordOffset = this.literalWordOffset;

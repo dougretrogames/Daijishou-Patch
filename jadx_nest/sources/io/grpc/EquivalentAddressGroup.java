@@ -11,7 +11,7 @@ import java.util.List;
 import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class EquivalentAddressGroup {
     public static final Attributes.Key<String> ATTR_AUTHORITY_OVERRIDE = Attributes.Key.create("io.grpc.EquivalentAddressGroup.ATTR_AUTHORITY_OVERRIDE");
     private final List<SocketAddress> addrs;

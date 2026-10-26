@@ -34,7 +34,7 @@ import java.util.Map;
 import java.util.Set;
 import org.apache.http.HttpStatus;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class OAuth2Utils {
     static final String BEARER_PREFIX = "Bearer ";
     static final String GRANT_TYPE_JWT_BEARER = "urn:ietf:params:oauth:grant-type:jwt-bearer";

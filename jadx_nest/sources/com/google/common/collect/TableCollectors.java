@@ -8,7 +8,7 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.stream.Collector;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class TableCollectors {
     static <T, R, C, V> Collector<T, ?, ImmutableTable<R, C, V>> toImmutableTable(Function<? super T, ? extends R> rowFunction, Function<? super T, ? extends C> columnFunction, Function<? super T, ? extends V> valueFunction) {
@@ -54,7 +54,7 @@ final class TableCollectors {
         return table;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class ImmutableTableCollectorState<R, C, V> {
         final List<MutableCell<R, C, V>> insertionOrder;
         final Table<R, C, MutableCell<R, C, V>> table;
@@ -68,7 +68,7 @@ final class TableCollectors {
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         public void put(R row, C column, V value, BinaryOperator<V> merger) {
             MutableCell<R, C, V> mutableCell = this.table.get(row, column);
             if (mutableCell == null) {
@@ -80,7 +80,7 @@ final class TableCollectors {
             mutableCell.merge(value, merger);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         public ImmutableTableCollectorState<R, C, V> combine(ImmutableTableCollectorState<R, C, V> other, BinaryOperator<V> merger) {
             for (MutableCell<R, C, V> mutableCell : other.insertionOrder) {
                 put(mutableCell.getRowKey(), mutableCell.getColumnKey(), mutableCell.getValue(), merger);
@@ -88,7 +88,7 @@ final class TableCollectors {
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         public ImmutableTable<R, C, V> toTable() {
             return ImmutableTable.copyOf(this.insertionOrder);
         }
@@ -126,8 +126,8 @@ final class TableCollectors {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Multi-variable type inference failed */
     public static <R, C, V> void mergeTables(Table<R, C, V> table, @ParametricNullness R row, @ParametricNullness C column, V value, BinaryOperator<V> mergeFunction) {
         Preconditions.checkNotNull(value);
         V v = table.get(row, column);

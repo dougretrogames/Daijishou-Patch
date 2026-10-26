@@ -2,7 +2,7 @@ package androidx.leanback.widget;
 
 import android.graphics.drawable.Drawable;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface MultiActionsProvider {
     MultiAction[] getActions();
 

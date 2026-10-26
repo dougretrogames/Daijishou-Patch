@@ -5,7 +5,7 @@ import android.view.ViewParent;
 import androidx.core.util.Preconditions;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MarginPageTransformer implements ViewPager2.PageTransformer {
     private final int mMarginPx;
 

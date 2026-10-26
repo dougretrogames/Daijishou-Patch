@@ -10,7 +10,7 @@ import java.nio.file.StandardOpenOption;
 import java.util.Objects;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class BufferedFileChannelInputStream extends InputStream {
     private final ByteBuffer byteBuffer;
     private final FileChannel fileChannel;

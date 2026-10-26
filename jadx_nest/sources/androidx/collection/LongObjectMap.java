@@ -13,8 +13,8 @@ import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.codec.language.bm.Languages;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: LongObjectMap.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: LongObjectMap.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0007\n\u0002\u0010\u0016\n\u0002\b\u0006\n\u0002\u0010\u0011\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\b\r\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\r\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\b6\u0018\u0000*\u0004\b\u0000\u0010\u00012\u00020\u0002B\u0007\b\u0004¢\u0006\u0002\u0010\u0003J&\u0010\u0017\u001a\u00020\u00182\u0018\u0010\u0019\u001a\u0014\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00180\u001aH\u0086\bø\u0001\u0000J\u0006\u0010\u001c\u001a\u00020\u0018J&\u0010\u001c\u001a\u00020\u00182\u0018\u0010\u0019\u001a\u0014\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00180\u001aH\u0086\bø\u0001\u0000J\u0011\u0010\u001d\u001a\u00020\u00182\u0006\u0010\u001e\u001a\u00020\u001bH\u0086\u0002J\u000e\u0010\u001f\u001a\u00020\u00182\u0006\u0010\u001e\u001a\u00020\u001bJ\u0013\u0010 \u001a\u00020\u00182\u0006\u0010!\u001a\u00028\u0000¢\u0006\u0002\u0010\"J\u0006\u0010#\u001a\u00020\u0005J&\u0010#\u001a\u00020\u00052\u0018\u0010\u0019\u001a\u0014\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\u00180\u001aH\u0086\bø\u0001\u0000J\u0013\u0010$\u001a\u00020\u00182\b\u0010%\u001a\u0004\u0018\u00010\u0002H\u0096\u0002J\u0016\u0010&\u001a\u00020\u00052\u0006\u0010\u001e\u001a\u00020\u001bH\u0080\b¢\u0006\u0002\b'JD\u0010(\u001a\u00020)26\u0010*\u001a2\u0012\u0013\u0012\u00110\u001b¢\u0006\f\b+\u0012\b\b,\u0012\u0004\b\b(\u001e\u0012\u0013\u0012\u00118\u0000¢\u0006\f\b+\u0012\b\b,\u0012\u0004\b\b(!\u0012\u0004\u0012\u00020)0\u001aH\u0086\bø\u0001\u0000J/\u0010-\u001a\u00020)2!\u0010*\u001a\u001d\u0012\u0013\u0012\u00110\u0005¢\u0006\f\b+\u0012\b\b,\u0012\u0004\b\b(/\u0012\u0004\u0012\u00020)0.H\u0081\bø\u0001\u0000J/\u00100\u001a\u00020)2!\u0010*\u001a\u001d\u0012\u0013\u0012\u00110\u001b¢\u0006\f\b+\u0012\b\b,\u0012\u0004\b\b(\u001e\u0012\u0004\u0012\u00020)0.H\u0086\bø\u0001\u0000J/\u00101\u001a\u00020)2!\u0010*\u001a\u001d\u0012\u0013\u0012\u00118\u0000¢\u0006\f\b+\u0012\b\b,\u0012\u0004\b\b(!\u0012\u0004\u0012\u00020)0.H\u0086\bø\u0001\u0000J\u0018\u00102\u001a\u0004\u0018\u00018\u00002\u0006\u0010\u001e\u001a\u00020\u001bH\u0086\u0002¢\u0006\u0002\u00103J\u001b\u00104\u001a\u00028\u00002\u0006\u0010\u001e\u001a\u00020\u001b2\u0006\u00105\u001a\u00028\u0000¢\u0006\u0002\u00106J'\u00107\u001a\u00028\u00002\u0006\u0010\u001e\u001a\u00020\u001b2\f\u00105\u001a\b\u0012\u0004\u0012\u00028\u000008H\u0086\bø\u0001\u0000¢\u0006\u0002\u00109J\b\u0010:\u001a\u00020\u0005H\u0016J\u0006\u0010;\u001a\u00020\u0018J\u0006\u0010<\u001a\u00020\u0018J:\u0010=\u001a\u00020>2\b\b\u0002\u0010?\u001a\u00020@2\b\b\u0002\u0010A\u001a\u00020@2\b\b\u0002\u0010B\u001a\u00020@2\b\b\u0002\u0010C\u001a\u00020\u00052\b\b\u0002\u0010D\u001a\u00020@H\u0007Jx\u0010=\u001a\u00020>2\b\b\u0002\u0010?\u001a\u00020@2\b\b\u0002\u0010A\u001a\u00020@2\b\b\u0002\u0010B\u001a\u00020@2\b\b\u0002\u0010C\u001a\u00020\u00052\b\b\u0002\u0010D\u001a\u00020@28\b\u0004\u0010E\u001a2\u0012\u0013\u0012\u00110\u001b¢\u0006\f\b+\u0012\b\b,\u0012\u0004\b\b(\u001e\u0012\u0013\u0012\u00118\u0000¢\u0006\f\b+\u0012\b\b,\u0012\u0004\b\b(!\u0012\u0004\u0012\u00020@0\u001aH\u0087\bø\u0001\u0000J\u0006\u0010F\u001a\u00020\u0018J\b\u0010G\u001a\u00020>H\u0016R\u0018\u0010\u0004\u001a\u00020\u00058\u0000@\u0000X\u0081\u000e¢\u0006\b\n\u0000\u0012\u0004\b\u0006\u0010\u0003R\u0018\u0010\u0007\u001a\u00020\u00058\u0000@\u0000X\u0081\u000e¢\u0006\b\n\u0000\u0012\u0004\b\b\u0010\u0003R\u0011\u0010\t\u001a\u00020\u00058F¢\u0006\u0006\u001a\u0004\b\n\u0010\u000bR\u0018\u0010\f\u001a\u00020\r8\u0000@\u0000X\u0081\u000e¢\u0006\b\n\u0000\u0012\u0004\b\u000e\u0010\u0003R\u0018\u0010\u000f\u001a\u00020\r8\u0000@\u0000X\u0081\u000e¢\u0006\b\n\u0000\u0012\u0004\b\u0010\u0010\u0003R\u0011\u0010\u0011\u001a\u00020\u00058F¢\u0006\u0006\u001a\u0004\b\u0012\u0010\u000bR\"\u0010\u0013\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u00148\u0000@\u0000X\u0081\u000e¢\u0006\n\n\u0002\u0010\u0016\u0012\u0004\b\u0015\u0010\u0003\u0082\u0001\u0001H\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006I"}, d2 = {"Landroidx/collection/LongObjectMap;", ExifInterface.GPS_MEASUREMENT_INTERRUPTED, "", "()V", "_capacity", "", "get_capacity$collection$annotations", "_size", "get_size$collection$annotations", "capacity", "getCapacity", "()I", "keys", "", "getKeys$annotations", "metadata", "getMetadata$annotations", "size", "getSize", "values", "", "getValues$annotations", "[Ljava/lang/Object;", "all", "", "predicate", "Lkotlin/Function2;", "", Languages.ANY, "contains", "key", "containsKey", "containsValue", "value", "(Ljava/lang/Object;)Z", "count", "equals", "other", "findKeyIndex", "findKeyIndex$collection", "forEach", "", "block", "Lkotlin/ParameterName;", "name", "forEachIndexed", "Lkotlin/Function1;", ConfigConstants.CONFIG_INDEX_SECTION, "forEachKey", "forEachValue", "get", "(J)Ljava/lang/Object;", "getOrDefault", "defaultValue", "(JLjava/lang/Object;)Ljava/lang/Object;", "getOrElse", "Lkotlin/Function0;", "(JLkotlin/jvm/functions/Function0;)Ljava/lang/Object;", "hashCode", "isEmpty", "isNotEmpty", "joinToString", "", "separator", "", "prefix", "postfix", "limit", "truncated", "transform", "none", "toString", "Landroidx/collection/MutableLongObjectMap;", "collection"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public abstract class LongObjectMap<V> {
     public int _capacity;
@@ -77,12 +77,12 @@ public abstract class LongObjectMap<V> {
         this.values = ContainerHelpersKt.EMPTY_OBJECTS;
     }
 
-    /* JADX INFO: renamed from: getCapacity, reason: from getter */
+    /* INFO: renamed from: getCapacity, reason: from getter */
     public final int get_capacity() {
         return this._capacity;
     }
 
-    /* JADX INFO: renamed from: getSize, reason: from getter */
+    /* INFO: renamed from: getSize, reason: from getter */
     public final int get_size() {
         return this._size;
     }
@@ -700,9 +700,9 @@ public abstract class LongObjectMap<V> {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x005a A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:18:0x005c A[LOOP:0: B:5:0x0016->B:18:0x005c, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:21:0x005f A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:17:0x005a A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:18:0x005c A[LOOP:0: B:5:0x0016->B:18:0x005c, LOOP_END] */
+    /* WARN: Code duplicated, block: B:21:0x005f A[SYNTHETIC] */
     public final boolean any(Function2<? super Long, ? super V, Boolean> predicate) {
         Intrinsics.checkNotNullParameter(predicate, "predicate");
         long[] jArr = this.keys;
@@ -832,9 +832,9 @@ public abstract class LongObjectMap<V> {
         return iNumberOfTrailingZeros >= 0;
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x0043 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:18:0x0045 A[LOOP:0: B:5:0x000b->B:18:0x0045, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:21:0x0048 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:17:0x0043 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:18:0x0045 A[LOOP:0: B:5:0x000b->B:18:0x0045, LOOP_END] */
+    /* WARN: Code duplicated, block: B:21:0x0048 A[SYNTHETIC] */
     public final boolean containsValue(V value) {
         Object[] objArr = this.values;
         long[] jArr = this.metadata;
@@ -1113,10 +1113,10 @@ public abstract class LongObjectMap<V> {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x008f A[PHI: r12
+    /* WARN: Code duplicated, block: B:21:0x008f A[PHI: r12
   0x008f: PHI (r12v2 int) = (r12v1 int), (r12v3 int) binds: [B:6:0x0043, B:20:0x008d] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:23:0x0093 A[LOOP:0: B:5:0x0030->B:23:0x0093, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:29:0x0098 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:23:0x0093 A[LOOP:0: B:5:0x0030->B:23:0x0093, LOOP_END] */
+    /* WARN: Code duplicated, block: B:29:0x0098 A[SYNTHETIC] */
     public final String joinToString(CharSequence separator, Function2<? super Long, ? super V, ? extends CharSequence> transform) {
         Intrinsics.checkNotNullParameter(separator, "separator");
         Intrinsics.checkNotNullParameter(transform, "transform");
@@ -1178,10 +1178,10 @@ public abstract class LongObjectMap<V> {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x008c A[PHI: r12
+    /* WARN: Code duplicated, block: B:21:0x008c A[PHI: r12
   0x008c: PHI (r12v2 int) = (r12v1 int), (r12v3 int) binds: [B:6:0x0040, B:20:0x008a] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:23:0x0090 A[LOOP:0: B:5:0x002d->B:23:0x0090, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:29:0x0095 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:23:0x0090 A[LOOP:0: B:5:0x002d->B:23:0x0090, LOOP_END] */
+    /* WARN: Code duplicated, block: B:29:0x0095 A[SYNTHETIC] */
     public final String joinToString(Function2<? super Long, ? super V, ? extends CharSequence> transform) {
         Intrinsics.checkNotNullParameter(transform, "transform");
         StringBuilder sb = new StringBuilder();

@@ -4,7 +4,7 @@ import com.google.api.client.json.GenericJson;
 import com.google.api.client.util.Key;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class SearchResponse extends GenericJson {
 
     @Key("@context")

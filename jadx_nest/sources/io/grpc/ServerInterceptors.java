@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ServerInterceptors {
     private ServerInterceptors() {
     }
@@ -59,7 +59,7 @@ public final class ServerInterceptors {
         return intercept(bindableService.bindService(), list);
     }
 
-    /* JADX INFO: renamed from: io.grpc.ServerInterceptors$1, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.ServerInterceptors$1, reason: invalid class name */
     class AnonymousClass1 implements MethodDescriptor.Marshaller<InputStream> {
         @Override // io.grpc.MethodDescriptor.Marshaller
         public InputStream stream(InputStream inputStream) {
@@ -69,7 +69,7 @@ public final class ServerInterceptors {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // io.grpc.MethodDescriptor.Marshaller
         public InputStream parse(InputStream inputStream) {
             if (inputStream.markSupported()) {
@@ -96,7 +96,7 @@ public final class ServerInterceptors {
         return useMarshalledMessages(serverServiceDefinition, marshaller, marshaller);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <ReqT, RespT> ServerServiceDefinition useMarshalledMessages(ServerServiceDefinition serverServiceDefinition, MethodDescriptor.Marshaller<ReqT> marshaller, MethodDescriptor.Marshaller<RespT> marshaller2) {
         ArrayList arrayList = new ArrayList();
         ArrayList arrayList2 = new ArrayList();
@@ -150,8 +150,8 @@ public final class ServerInterceptors {
         return ServerMethodDefinition.create(methodDescriptor, wrapHandler(serverMethodDefinition.getServerCallHandler(), serverMethodDefinition.getMethodDescriptor(), methodDescriptor));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [WRespT, WReqT] */
-    /* JADX INFO: renamed from: io.grpc.ServerInterceptors$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [WRespT, WReqT] */
+    /* INFO: renamed from: io.grpc.ServerInterceptors$2, reason: invalid class name */
     class AnonymousClass2<WReqT, WRespT> implements ServerCallHandler<WReqT, WRespT> {
         final /* synthetic */ ServerCallHandler val$originalHandler;
         final /* synthetic */ MethodDescriptor val$originalMethod;
@@ -163,8 +163,8 @@ public final class ServerInterceptors {
             this.val$originalHandler = serverCallHandler;
         }
 
-        /* JADX INFO: Add missing generic type declarations: [OReqT, ORespT] */
-        /* JADX INFO: renamed from: io.grpc.ServerInterceptors$2$1, reason: invalid class name */
+        /* INFO: Add missing generic type declarations: [OReqT, ORespT] */
+        /* INFO: renamed from: io.grpc.ServerInterceptors$2$1, reason: invalid class name */
         class AnonymousClass1<OReqT, ORespT> extends PartialForwardingServerCall<OReqT, ORespT> {
             final /* synthetic */ ServerCall val$call;
 
@@ -193,7 +193,7 @@ public final class ServerInterceptors {
             return new C00862(this.val$originalHandler.startCall(new AnonymousClass1(serverCall), metadata));
         }
 
-        /* JADX INFO: renamed from: io.grpc.ServerInterceptors$2$2, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: io.grpc.ServerInterceptors$2$2, reason: invalid class name and collision with other inner class name */
         class C00862 extends PartialForwardingServerCallListener<WReqT> {
             final /* synthetic */ ServerCall.Listener val$originalListener;
 

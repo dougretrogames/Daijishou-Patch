@@ -7,7 +7,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class Monitor {
 
@@ -115,9 +115,9 @@ public final class Monitor {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x0029  */
-    /* JADX WARN: Code duplicated, block: B:15:0x0033 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:24:0x0049  */
+    /* WARN: Code duplicated, block: B:13:0x0029  */
+    /* WARN: Code duplicated, block: B:15:0x0033 A[RETURN] */
+    /* WARN: Code duplicated, block: B:24:0x0049  */
     public boolean enterWhen(Guard guard, long time, TimeUnit unit) throws InterruptedException {
         long jInitNanoTime;
         boolean z;
@@ -385,7 +385,7 @@ public final class Monitor {
         awaitUninterruptibly(guard, true);
     }
 
-    /* JADX WARN: Code duplicated, block: B:24:0x004b  */
+    /* WARN: Code duplicated, block: B:24:0x004b  */
     public boolean waitForUninterruptibly(Guard guard, long time, TimeUnit unit) throws Throwable {
         long safeNanos = toSafeNanos(time, unit);
         if (guard.monitor != this || !this.lock.isHeldByCurrentThread()) {

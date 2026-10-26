@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.List;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 abstract class CollectionFuture<V, C> extends AggregateFuture<V, C> {
 

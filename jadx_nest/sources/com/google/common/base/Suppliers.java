@@ -5,7 +5,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Suppliers {
 

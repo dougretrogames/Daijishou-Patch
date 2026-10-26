@@ -1,6 +1,6 @@
 package org.slf4j.helpers;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NOPLogger extends MarkerIgnoringBase {
     public static final NOPLogger NOP_LOGGER = new NOPLogger();
     private static final long serialVersionUID = -517220405410904473L;

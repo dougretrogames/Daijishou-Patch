@@ -85,12 +85,12 @@ import net.jodah.expiringmap.ExpirationPolicy;
 import net.jodah.expiringmap.ExpiringMap;
 import org.eclipse.jgit.diff.DiffEntry;
 
-/* JADX INFO: compiled from: DaijishouLibraryModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouLibraryModel.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000Ö\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b$\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0016\n\u0002\u0018\u0002\n\u0002\b!\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0017\u0018\u0000 Ô\u00012\u00020\u0001:\u0002Ô\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u000e\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u000200J\u000e\u00101\u001a\u00020.2\u0006\u00102\u001a\u000203J%\u00104\u001a\b\u0012\u0004\u0012\u00020.0\u00062\u0012\u00105\u001a\n\u0012\u0006\b\u0001\u0012\u00020306\"\u000203¢\u0006\u0002\u00107J\u000e\u00108\u001a\u00020.2\u0006\u00109\u001a\u00020:J\u0016\u0010;\u001a\u00020<2\u0006\u0010/\u001a\u0002002\u0006\u0010=\u001a\u00020>J0\u0010?\u001a\u00020<2\u0006\u0010@\u001a\u00020\u00072\u0006\u0010=\u001a\u00020>2\u0018\u0010A\u001a\u0014\u0012\u0004\u0012\u00020C\u0012\u0004\u0012\u00020>\u0012\u0004\u0012\u00020<0BJ0\u0010D\u001a\u00020<2\u0006\u0010/\u001a\u0002002\u0006\u0010@\u001a\u00020\u00072\u0006\u0010=\u001a\u00020>2\u0010\b\u0002\u0010A\u001a\n\u0012\u0004\u0012\u00020<\u0018\u00010EJ\u0006\u0010F\u001a\u00020>J\u000e\u0010G\u001a\u00020>2\u0006\u0010H\u001a\u00020.J\u0010\u0010I\u001a\u0004\u0018\u00010\u00072\u0006\u0010J\u001a\u00020\u0007J\u0006\u0010K\u001a\u00020<J\u0018\u0010L\u001a\u00020.2\u0006\u0010M\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u0018\u0010O\u001a\u00020.2\u0006\u0010M\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u000e\u0010P\u001a\u00020.2\u0006\u0010M\u001a\u00020.J\u000e\u0010Q\u001a\u00020.2\u0006\u0010M\u001a\u00020.J\u0018\u0010R\u001a\u00020.2\u0006\u0010M\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u0018\u0010S\u001a\u00020.2\u0006\u0010M\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u000e\u0010T\u001a\u00020.2\u0006\u0010M\u001a\u00020.J\u000e\u0010U\u001a\u00020.2\u0006\u0010M\u001a\u00020.J\u0018\u0010V\u001a\u00020.2\u0006\u0010M\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u0018\u0010W\u001a\u00020.2\u0006\u0010M\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u000e\u0010X\u001a\u00020.2\u0006\u0010M\u001a\u00020.J\u000e\u0010Y\u001a\u00020.2\u0006\u0010M\u001a\u00020.J\u0018\u0010Z\u001a\u00020.2\u0006\u0010M\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u0018\u0010[\u001a\u00020.2\u0006\u0010M\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u000e\u0010\\\u001a\u00020.2\u0006\u0010M\u001a\u00020.J\u000e\u0010]\u001a\u00020.2\u0006\u0010M\u001a\u00020.J\u0006\u0010^\u001a\u00020<J\u000e\u0010_\u001a\u00020<2\u0006\u0010H\u001a\u00020.J\u0006\u0010`\u001a\u00020<J\u000e\u0010a\u001a\u00020<2\u0006\u00102\u001a\u000203J\u001f\u0010b\u001a\u00020<2\u0012\u00105\u001a\n\u0012\u0006\b\u0001\u0012\u00020306\"\u000203¢\u0006\u0002\u0010cJ\u000e\u0010d\u001a\u00020<2\u0006\u0010H\u001a\u00020\u0007J\u000e\u0010e\u001a\u00020<2\u0006\u0010H\u001a\u00020.J\u000e\u0010f\u001a\u00020<2\u0006\u00109\u001a\u00020:J\u0006\u0010g\u001a\u00020<J\u0016\u0010h\u001a\u00020<2\u0006\u0010i\u001a\u00020j2\u0006\u0010k\u001a\u00020lJ\u0010\u0010m\u001a\u00020<2\u0006\u0010=\u001a\u00020>H\u0002J\u000e\u0010n\u001a\u00020o2\u0006\u0010/\u001a\u000200J\u000e\u0010p\u001a\u00020q2\u0006\u0010/\u001a\u000200J\u001e\u0010r\u001a\b\u0012\u0004\u0012\u00020l0\u00062\u0006\u0010s\u001a\u00020\u00072\b\b\u0002\u0010t\u001a\u00020>J(\u0010u\u001a\b\u0012\u0004\u0012\u00020l0\u00062\u0006\u0010s\u001a\u00020\u00072\b\b\u0002\u0010t\u001a\u00020>2\b\b\u0002\u0010N\u001a\u00020CJ\f\u0010v\u001a\b\u0012\u0004\u0012\u00020>0wJ\u0006\u0010x\u001a\u00020>J\u0012\u0010y\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00070\u00060wJ\f\u0010z\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006J\u0012\u0010{\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u0002000\u00060wJ\f\u0010|\u001a\b\u0012\u0004\u0012\u00020>0wJ\f\u0010}\u001a\b\u0012\u0004\u0012\u0002000\u0006J\f\u0010~\u001a\b\u0012\u0004\u0012\u00020>0wJ\u001c\u0010\u007f\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020.0\u00060w2\b\b\u0002\u0010N\u001a\u00020CJ\u0013\u0010\u0080\u0001\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020:0\u00060wJ\r\u0010\u0081\u0001\u001a\b\u0012\u0004\u0012\u00020>0wJ\r\u0010\u0082\u0001\u001a\b\u0012\u0004\u0012\u00020:0\u0006J\u0013\u0010\u0083\u0001\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u0002000\u00060wJ\r\u0010\u0084\u0001\u001a\b\u0012\u0004\u0012\u0002000\u0006J\t\u0010\u0085\u0001\u001a\u0004\u0018\u00010lJ\u0013\u0010\u0086\u0001\u001a\u0004\u0018\u00010l2\b\b\u0002\u0010N\u001a\u00020CJ\u001b\u0010\u0087\u0001\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00070\u00060w2\u0006\u0010H\u001a\u00020.J%\u0010\u0088\u0001\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00070\u00060w2\u0006\u0010H\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u001f\u0010\u0089\u0001\u001a\b\u0012\u0004\u0012\u00020\u00070\u00062\u0006\u0010H\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u0015\u0010\u008a\u0001\u001a\b\u0012\u0004\u0012\u00020\u00070\u00062\u0006\u0010H\u001a\u00020.J\u001b\u0010\u008b\u0001\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00070\u00060w2\u0006\u0010H\u001a\u00020.J\u0015\u0010\u008c\u0001\u001a\b\u0012\u0004\u0012\u00020\u00070\u00062\u0006\u0010H\u001a\u00020.J\u0010\u0010\u008d\u0001\u001a\u000b\u0012\u0007\u0012\u0005\u0018\u00010\u008e\u00010wJ\n\u0010\u008f\u0001\u001a\u0005\u0018\u00010\u008e\u0001J(\u0010\u0090\u0001\u001a\b\u0012\u0004\u0012\u00020l0\u00062\u0013\u0010\u0091\u0001\u001a\n\u0012\u0006\b\u0001\u0012\u00020l06\"\u00020l¢\u0006\u0003\u0010\u0092\u0001J(\u0010\u0093\u0001\u001a\b\u0012\u0004\u0012\u00020l0\u00062\u0013\u0010\u0091\u0001\u001a\n\u0012\u0006\b\u0001\u0012\u00020l06\"\u00020l¢\u0006\u0003\u0010\u0092\u0001J\u000f\u0010\u0094\u0001\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010l0wJ\t\u0010\u0095\u0001\u001a\u0004\u0018\u00010lJ\t\u0010\u0096\u0001\u001a\u0004\u0018\u00010lJ\u0013\u0010\u0097\u0001\u001a\u0004\u0018\u00010l2\b\b\u0002\u0010N\u001a\u00020CJ\u001d\u0010\u0098\u0001\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020l0\u00060w2\b\b\u0002\u0010t\u001a\u00020>J'\u0010\u0098\u0001\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020l0\u00060w2\b\b\u0002\u0010t\u001a\u00020>2\b\b\u0002\u0010N\u001a\u00020CJ\u0017\u0010\u0099\u0001\u001a\b\u0012\u0004\u0012\u00020l0\u00062\b\b\u0002\u0010t\u001a\u00020>J!\u0010\u0099\u0001\u001a\b\u0012\u0004\u0012\u00020l0\u00062\b\b\u0002\u0010t\u001a\u00020>2\b\b\u0002\u0010N\u001a\u00020CJ\u0017\u0010\u009a\u0001\u001a\n\u0012\u0006\u0012\u0004\u0018\u0001000w2\u0006\u0010H\u001a\u00020.J\u0011\u0010\u009b\u0001\u001a\u0004\u0018\u0001002\u0006\u0010H\u001a\u00020.J\u0018\u0010\u009c\u0001\u001a\n\u0012\u0006\u0012\u0004\u0018\u0001000w2\u0007\u0010\u009d\u0001\u001a\u00020\u0007J\u0012\u0010\u009e\u0001\u001a\u0004\u0018\u0001002\u0007\u0010\u009d\u0001\u001a\u00020\u0007J\u0017\u0010\u009f\u0001\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010l0w2\u0006\u0010H\u001a\u00020.J!\u0010 \u0001\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010l0w2\u0006\u0010H\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u001b\u0010¡\u0001\u001a\u0004\u0018\u00010l2\u0006\u0010H\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u0011\u0010¢\u0001\u001a\u0004\u0018\u00010l2\u0006\u0010H\u001a\u00020.J$\u0010£\u0001\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020l0\u00060w2\u0006\u0010M\u001a\u00020.2\u0007\u0010¤\u0001\u001a\u00020\u0007J\u001e\u0010¥\u0001\u001a\b\u0012\u0004\u0012\u00020l0\u00062\u0006\u0010M\u001a\u00020.2\u0007\u0010¤\u0001\u001a\u00020\u0007J.\u0010¦\u0001\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020l0\u00060w2\u0006\u0010M\u001a\u00020.2\u0007\u0010¤\u0001\u001a\u00020\u00072\b\b\u0002\u0010N\u001a\u00020CJ(\u0010§\u0001\u001a\b\u0012\u0004\u0012\u00020l0\u00062\u0006\u0010M\u001a\u00020.2\u0007\u0010¤\u0001\u001a\u00020\u00072\b\b\u0002\u0010N\u001a\u00020CJ\t\u0010¨\u0001\u001a\u0004\u0018\u00010lJ\u001b\u0010©\u0001\u001a\u0004\u0018\u00010l2\u0006\u0010H\u001a\u00020.2\b\b\u0002\u0010N\u001a\u00020CJ\u0011\u0010ª\u0001\u001a\u0004\u0018\u00010l2\u0006\u0010H\u001a\u00020.J\u0013\u0010«\u0001\u001a\u0004\u0018\u00010l2\b\b\u0002\u0010N\u001a\u00020CJ\u0011\u0010¬\u0001\u001a\u0004\u0018\u00010:2\u0006\u0010H\u001a\u00020.J1\u0010\u00ad\u0001\u001a\u000f\u0012\u000b\u0012\t\u0012\u0005\u0012\u00030\u008e\u00010\u00060w2\u0007\u0010®\u0001\u001a\u00020>2\b\u0010¯\u0001\u001a\u00030°\u00012\b\b\u0002\u0010t\u001a\u00020>J+\u0010±\u0001\u001a\t\u0012\u0005\u0012\u00030\u008e\u00010\u00062\u0007\u0010®\u0001\u001a\u00020>2\b\u0010¯\u0001\u001a\u00030°\u00012\b\b\u0002\u0010t\u001a\u00020>J\t\u0010²\u0001\u001a\u0004\u0018\u00010lJ\u0013\u0010³\u0001\u001a\u0004\u0018\u00010l2\b\b\u0002\u0010N\u001a\u00020CJ\u001d\u0010´\u0001\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020l0\u00060w2\b\b\u0002\u0010t\u001a\u00020>J'\u0010´\u0001\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020l0\u00060w2\b\b\u0002\u0010t\u001a\u00020>2\b\b\u0002\u0010N\u001a\u00020CJ\u0017\u0010µ\u0001\u001a\b\u0012\u0004\u0012\u00020l0\u00062\b\b\u0002\u0010t\u001a\u00020>J!\u0010µ\u0001\u001a\b\u0012\u0004\u0012\u00020l0\u00062\b\b\u0002\u0010t\u001a\u00020>2\b\b\u0002\u0010N\u001a\u00020CJ*\u0010¶\u0001\u001a\b\u0012\u0004\u0012\u00020l0\u00062\u0006\u0010k\u001a\u00020l2\b\b\u0002\u0010t\u001a\u00020>2\t\b\u0002\u0010·\u0001\u001a\u00020CJ\u0010\u0010¸\u0001\u001a\u00020<2\u0007\u0010¹\u0001\u001a\u00020qJM\u0010º\u0001\u001a\u00020<2\u0007\u0010»\u0001\u001a\u00020o2\t\b\u0002\u0010¼\u0001\u001a\u00020C2\t\b\u0002\u0010½\u0001\u001a\u00020C2\n\b\u0002\u0010i\u001a\u0004\u0018\u00010j2\u0019\b\u0002\u0010A\u001a\u0013\u0012\u0006\u0012\u0004\u0018\u000100\u0012\u0004\u0012\u00020<\u0018\u00010¾\u0001J\u0010\u0010¿\u0001\u001a\u00020<2\u0007\u0010À\u0001\u001a\u00020\u0007J3\u0010Á\u0001\u001a\u00020<2\u0006\u0010i\u001a\u00020j2\u0007\u0010»\u0001\u001a\u00020o2\u0019\b\u0002\u0010A\u001a\u0013\u0012\u0006\u0012\u0004\u0018\u000100\u0012\u0004\u0012\u00020<\u0018\u00010¾\u0001J\u000f\u0010Â\u0001\u001a\u00020<2\u0006\u0010k\u001a\u00020lJ0\u0010Ã\u0001\u001a\u00020<2\u0006\u0010i\u001a\u00020j2\u0006\u0010k\u001a\u00020l2\u0017\b\u0002\u0010A\u001a\u0011\u0012\u0004\u0012\u00020C\u0012\u0004\u0012\u00020<\u0018\u00010¾\u0001J\u001b\u0010Ä\u0001\u001a\u00020\u00072\u0007\u0010Å\u0001\u001a\u00020\u00072\t\b\u0002\u0010Æ\u0001\u001a\u00020CJ\u0012\u0010Ç\u0001\u001a\u0004\u0018\u00010\u00072\u0007\u0010Å\u0001\u001a\u00020\u0007J\u000f\u0010È\u0001\u001a\u00020<2\u0006\u0010k\u001a\u00020lJ\u0007\u0010É\u0001\u001a\u00020<J\u001a\u0010Ê\u0001\u001a\u00020<2\u0006\u0010/\u001a\u0002002\t\b\u0002\u0010Ë\u0001\u001a\u00020CJ\u000f\u0010Ì\u0001\u001a\u00020<2\u0006\u0010k\u001a\u00020lJ?\u0010Í\u0001\u001a\b\u0012\u0004\u0012\u00020l0\u00062\u0006\u0010s\u001a\u00020\u00072\b\b\u0002\u0010t\u001a\u00020>2\t\b\u0002\u0010Î\u0001\u001a\u00020C2\t\b\u0002\u0010·\u0001\u001a\u00020C2\b\b\u0002\u0010N\u001a\u00020CJ\u000f\u0010Ï\u0001\u001a\u00020l2\u0006\u0010k\u001a\u00020lJ\u000f\u0010Ð\u0001\u001a\u00020<2\u0006\u0010/\u001a\u000200J\u000f\u0010Ñ\u0001\u001a\u00020<2\u0006\u0010k\u001a\u00020lJ\u000f\u0010Ò\u0001\u001a\u00020<2\u0006\u00102\u001a\u000203J \u0010Ó\u0001\u001a\u00020<2\u0012\u00105\u001a\n\u0012\u0006\b\u0001\u0012\u00020306\"\u000203¢\u0006\u0002\u0010cR\u001f\u0010\u0005\u001a\u0010\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00070\u00070\u0006¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0017\u0010\u000b\u001a\u00020\f¢\u0006\u000e\n\u0000\u0012\u0004\b\r\u0010\u000e\u001a\u0004\b\u000f\u0010\u0010R\u0011\u0010\u0011\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0010R\u0011\u0010\u0013\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0010R\u0011\u0010\u0015\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0010R\u0011\u0010\u0017\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0010R\u000e\u0010\u0019\u001a\u00020\u001aX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u001cX\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\u001d\u001a\u00060\u001eR\u00020\u001fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010 \u001a\u00020!¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010#R\u001f\u0010$\u001a\u0010\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00070\u00070\u0006¢\u0006\b\n\u0000\u001a\u0004\b%\u0010\nR\u001a\u0010&\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020(0'X\u0082\u0004¢\u0006\u0002\n\u0000R\u001d\u0010)\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020*0'¢\u0006\b\n\u0000\u001a\u0004\b+\u0010,¨\u0006Õ\u0001"}, d2 = {"Lcom/magneticchen/daijishou/view_models/DaijishouLibraryModel;", "Lcom/magneticchen/daijishou/view_models/abstract_view_models/DaijishouAndroidViewModel;", "application", "Landroid/app/Application;", "(Landroid/app/Application;)V", "boxArtAspectRatioList", "", "", "kotlin.jvm.PlatformType", "getBoxArtAspectRatioList", "()Ljava/util/List;", "cachedBoxArtBitmapLoader", "Lcom/magneticchen/daijishou/cache/CachedBitmapLoader;", "getCachedBoxArtBitmapLoader$annotations", "()V", "getCachedBoxArtBitmapLoader", "()Lcom/magneticchen/daijishou/cache/CachedBitmapLoader;", "cachedPlatformThumbnailBitmapLoader", "getCachedPlatformThumbnailBitmapLoader", "cachedPlatformWallpaperBitmapLoader", "getCachedPlatformWallpaperBitmapLoader", "cachedSnapshotBitmapLoader", "getCachedSnapshotBitmapLoader", "cachedTitleBitmapLoader", "getCachedTitleBitmapLoader", "daijishouLibraryRepository", "Lcom/magneticchen/daijishou/repositories/DaijishouLibraryRepository;", "daijishouPlayerTemplate", "Lcom/magneticchen/daijishou/daijishou_player/DaijishouPlayerTemplate;", "logger", "Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "Lcom/magneticchen/daijishou/DaijishouApplication;", "scraper", "Lcom/magneticchen/daijishou/scraper/ScraperManager;", "getScraper", "()Lcom/magneticchen/daijishou/scraper/ScraperManager;", "screenAspectRatioList", "getScreenAspectRatioList", "urlStringToPlatformThumbnailsPackIndexJsonCache", "Lnet/jodah/expiringmap/ExpiringMap;", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformThumbnailsPackIndexJson;", "urlStringToPlatformWallpapersPackIndexJsonCache", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformWallpapersPackIndexJson;", "getUrlStringToPlatformWallpapersPackIndexJsonCache", "()Lnet/jodah/expiringmap/ExpiringMap;", "addPlatform", "", "platformEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "addPlayableItemToGenrePair", "playableItemToGenrePairEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemToGenrePairEntity;", "addPlayableItemToGenrePairs", "playableItemToGenrePairEntities", "", "([Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemToGenrePairEntity;)Ljava/util/List;", "addPlayer", "playerEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayerEntity;", "applyPlatformPreviewMediaIndexJsonToPlatformWithCurrentSettings", "", "previewMediaType", "", "applyPlatformPreviewMediaPackIndexJsonToAllPlatforms", "platformPreviewMediaPackUrlString", "callback", "Lkotlin/Function2;", "", "applyPlatformPreviewMediaPackIndexJsonToPlatform", "Lkotlin/Function0;", "clearAllDisjointedPlayableItems", "clearAllDisjointedPlayableItemsByAttachedPlatformId", "id", "convertAmStartArgumentsToPackageName", "amStartArguments", "convertPlatformIdToShortname", "countFavoritePlayableItemsByAttachedPlatformIdAndVisibilityStatically", "platformId", "visibility", "countFavoritePlayableItemsByAttachedPlatformIdAndVisibilityWithDisjointSetPrimaryPlayableItemIdStatically", "countFavoritePlayableItemsByAttachedPlatformIdStatically", "countFavoritePlayableItemsByAttachedPlatformIdWithDisjointSetPrimaryPlayableItemIdStatically", "countNewlyPlayableItemsByAttachedPlatformIdAndVisibilityStatically", "countNewlyPlayableItemsByAttachedPlatformIdAndVisibilityWithDisjointSetPrimaryPlayableItemIdStatically", "countNewlyPlayableItemsByAttachedPlatformIdStatically", "countNewlyPlayableItemsByAttachedPlatformIdWithDisjointSetPrimaryPlayableItemIdStatically", "countPlayableItemsByAttachedPlatformIdAndVisibilityStatically", "countPlayableItemsByAttachedPlatformIdAndVisibilityWithDisjointSetPrimaryPlayableItemIdStatically", "countPlayableItemsByAttachedPlatformIdStatically", "countPlayableItemsByAttachedPlatformIdWithDisjointSetPrimaryPlayableItemIdStatically", "countRecentPlayableItemsByAttachedPlatformIdAndVisibilityStatically", "countRecentPlayableItemsByAttachedPlatformIdAndVisibilityWithDisjointSetPrimaryPlayableItemIdStatically", "countRecentPlayableItemsByAttachedPlatformIdStatically", "countRecentPlayableItemsByAttachedPlatformIdWithDisjointSetPrimaryPlayableItemIdStatically", "deleteAllEvents", "deleteAllEventsByPlayableItemId", "deleteAllPlayableItemToGenrePairs", "deletePlayableItemToGenrePair", "deletePlayableItemToGenrePairs", "([Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemToGenrePairEntity;)V", "deletePlayableItemToGenrePairsByGenreId", "deletePlayableItemToGenrePairsByPlayableItemId", "deletePlayer", "disableAllPlayableItemsCustomPlayer", "editPlayableItem", "activity", "Landroid/app/Activity;", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "ensurePlatformsPreviewMediaDirectory", "exportPlatform", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformSharable;", "exportPlatformFavoriteItems", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/FavoriteItemsShareable;", "findPlayableItemsWithNameAndDescriptionStatically", "keyword", "limit", "findPlayableItemsWithNameDescriptionAndVisibilityStatically", "getAllEventsCount", "Landroidx/lifecycle/LiveData;", "getAllEventsCountStatically", "getAllGenreIds", "getAllGenreIdsStatically", "getAllPlatforms", "getAllPlatformsCount", "getAllPlatformsStatically", "getAllPlayableItemCount", "getAllPlayableItemsIdsByVisibility", "getAllPlayers", "getAllPlayersCount", "getAllPlayersStatically", "getAllVisiblePlatformsOrderedByShortName", "getAllVisiblePlatformsOrderedByShortNameStatically", "getFavoritePlayableItemRandomly", "getFavoritePlayableItemRandomlyByVisibility", "getGenreIdsByPlatformId", "getGenreIdsByPlatformIdAndVisibility", "getGenreIdsByPlatformIdAndVisibilityStatically", "getGenreIdsByPlatformIdStatically", "getGenreIdsByPlayableItemId", "getGenreIdsByPlayableItemIdStatically", "getLatestEvent", "Lcom/magneticchen/daijishou/daijishou_library_db/EventEntity;", "getLatestEventStatically", "getMergedPlayableItems", "playableItemEntities", "([Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;)Ljava/util/List;", "getMergedPlayableItemsWithPreferences", "getMostRecentPlayableItem", "getMostRecentPlayableItemStatically", "getNewlyPlayableItemRandomly", "getNewlyPlayableItemRandomlyByVisibility", "getNewlyPlayableItems", "getNewlyPlayableItemsStatically", "getPlatformById", "getPlatformByIdStatically", "getPlatformByShortName", "shortname", "getPlatformByShortNameStatically", "getPlayableItemById", "getPlayableItemByIdAndVisibility", "getPlayableItemByIdAndVisibilityStatically", "getPlayableItemByIdStatically", "getPlayableItemIdsByPlatformIdAndGenreId", "genreId", "getPlayableItemIdsByPlatformIdAndGenreIdStatically", "getPlayableItemIdsByPlatformIdGenreIdAndVisibility", "getPlayableItemIdsByPlatformIdGenreIdAndVisibilityStatically", "getPlayableItemRandomly", "getPlayableItemRandomlyByAttachedPlatformIdAndVisibilityStatically", "getPlayableItemRandomlyByAttachedPlatformIdStatically", "getPlayableItemRandomlyByVisibility", "getPlayerByIdStatically", "getRecentEventsByEvent", NotificationCompat.CATEGORY_EVENT, "afterDate", "Ljava/util/Date;", "getRecentEventsByEventStatically", "getRecentPlayableItemRandomly", "getRecentPlayableItemRandomlyByVisibility", "getRecentPlayableItems", "getRecentPlayableItemsStatically", "getSimilarPlayableItems", "withVisibility", "importFavoriteItems", "favoriteItemsShareable", "importPlatform", "platformSharable", "toast", "forceReplace", "Lkotlin/Function1;", "importPlatformFromPegasus", TypedValues.Custom.S_STRING, "importPlatformWithDialog", "injectPlayableItemWithMergedInfo", "play", "prettifyTitle", "title", "showDiscIndex", "prettifyTitleWithPreferences", "registerPlayableItemViewedEvent", "removeAllPlayableItemsPreviewMedia", "removePlatform", "deletePlayers", "removePlayableItem", "searchPlayableItemsByKeyword", "ignoreTrivial", "toggleIsPlayableItemFavorite", "updatePlatform", "updatePlayableItem", "updatePlayableItemToGenrePair", "updatePlayableItemToGenrePairs", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final Regex packageNameRegex = new Regex("\\.*-n[\\s]*(.*)/");
     private final List<String> boxArtAspectRatioList;
@@ -113,7 +113,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
     public final void convertPlatformIdToShortname() {
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DaijishouLibraryModel(Application application) {
         super(application);
         Intrinsics.checkNotNullParameter(application, "application");
@@ -140,7 +140,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         this.urlStringToPlatformThumbnailsPackIndexJsonCache = expiringMapBuild2;
     }
 
-    /* JADX INFO: compiled from: DaijishouLibraryModel.kt */
+    /* INFO: compiled from: DaijishouLibraryModel.kt */
     @Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0014\u0010\u0003\u001a\u00020\u00048BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/magneticchen/daijishou/view_models/DaijishouLibraryModel$Companion;", "", "()V", "launcherIntent", "Landroid/content/Intent;", "getLauncherIntent", "()Landroid/content/Intent;", "packageNameRegex", "Lkotlin/text/Regex;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -150,7 +150,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         private Companion() {
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final Intent getLauncherIntent() {
             Intent intent = new Intent("android.intent.action.MAIN", (Uri) null);
             intent.addCategory("android.intent.category.LAUNCHER");
@@ -227,7 +227,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         return prettifyTitle(title, true);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void ensurePlatformsPreviewMediaDirectory(int previewMediaType) {
         if (previewMediaType == 0) {
             File file = new File(getApplication().getFilesDir() + "/platform_wallpapers/");
@@ -477,15 +477,15 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         this.daijishouLibraryRepository.removePlatform(platformEntity, deletePlayers);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$importPlatform$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouLibraryModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$importPlatform$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouLibraryModel.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class C02761 extends Lambda<Unit> implements Function1<PlatformEntity, Unit> {
         final /* synthetic */ Function1<? super PlatformEntity, Unit> $callback;
         final /* synthetic */ DaijishouLibraryModel this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C02761(Function1<? super PlatformEntity, Unit> function1, DaijishouLibraryModel daijishouLibraryModel) {
             super(1);
             this.$callback = function1;
@@ -498,7 +498,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(PlatformEntity platformEntity) {
             if (platformEntity != null) {
                 DaijishouLibraryModel daijishouLibraryModel = this.this$0;
@@ -512,7 +512,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void importPlatform$default(DaijishouLibraryModel daijishouLibraryModel, PlatformSharable platformSharable, boolean z, boolean z2, Activity activity, Function1 function1, int i, Object obj) throws Exception {
         if ((i & 2) != 0) {
             z = true;
@@ -529,15 +529,15 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         this.daijishouLibraryRepository.importPlatform(platformSharable, toast, forceReplace, activity, new C02761(callback, this));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$importPlatformWithDialog$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouLibraryModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$importPlatformWithDialog$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouLibraryModel.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class C02771 extends Lambda<Unit> implements Function1<PlatformEntity, Unit> {
         final /* synthetic */ Function1<? super PlatformEntity, Unit> $callback;
         final /* synthetic */ DaijishouLibraryModel this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C02771(Function1<? super PlatformEntity, Unit> function1, DaijishouLibraryModel daijishouLibraryModel) {
             super(1);
             this.$callback = function1;
@@ -550,7 +550,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(PlatformEntity platformEntity) {
             if (platformEntity != null) {
                 DaijishouLibraryModel daijishouLibraryModel = this.this$0;
@@ -565,7 +565,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void importPlatformWithDialog$default(DaijishouLibraryModel daijishouLibraryModel, Activity activity, PlatformSharable platformSharable, Function1 function1, int i, Object obj) throws Exception {
         if ((i & 4) != 0) {
             function1 = null;
@@ -672,8 +672,8 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         return this.daijishouLibraryRepository.getPlatformByShortnameStatically(shortname);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$applyPlatformPreviewMediaPackIndexJsonToPlatform$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouLibraryModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$applyPlatformPreviewMediaPackIndexJsonToPlatform$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouLibraryModel.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouLibraryModel$applyPlatformPreviewMediaPackIndexJsonToPlatform$1", f = "DaijishouLibraryModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class C02751 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -685,7 +685,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         int label;
         final /* synthetic */ DaijishouLibraryModel this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02751(int i, DaijishouLibraryModel daijishouLibraryModel, String str, Function0<Unit> function0, PlatformEntity platformEntity, Continuation<?> continuation) {
             super(2, continuation);
             this.$previewMediaType = i;
@@ -719,7 +719,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
             }
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public final Object invokeSuspendImpl(Object obj) throws Throwable {
             Object t = null;
             Object t2 = null;
@@ -781,7 +781,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static final void invokeSuspendImpl$nextPreviewMedia(Ref.IntRef intRef, int i, Ref.ObjectRef<PlatformWallpapersPackIndexJson> objectRef, String str, Function0<Unit> function0, PlatformEntity platformEntity, Ref.ObjectRef<PlatformThumbnailsPackIndexJson> objectRef2, DaijishouLibraryModel daijishouLibraryModel) {
             intRef.element++;
             Ref.IntRef intRef2 = new Ref.IntRef();
@@ -836,7 +836,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static final void invokeSuspendImpl$nextPreviewMedia$tryThisPreviewMedia(Ref.IntRef intRef, DaijishouLibraryModel daijishouLibraryModel, int i, PlatformEntity platformEntity, String str, Function0<Unit> function0, Function0<Unit> function1) {
             if (intRef.element >= 3) {
                 function1.invoke();
@@ -847,7 +847,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void applyPlatformPreviewMediaPackIndexJsonToPlatform$default(DaijishouLibraryModel daijishouLibraryModel, PlatformEntity platformEntity, String str, int i, Function0 function0, int i2, Object obj) {
         if ((i2 & 8) != 0) {
             function0 = null;
@@ -861,8 +861,8 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         BuildersKt.launch$default(ViewModelKt.getViewModelScope(this), Dispatchers.getIO(), null, new C02751(previewMediaType, this, platformPreviewMediaPackUrlString, callback, platformEntity, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$applyPlatformPreviewMediaPackIndexJsonToAllPlatforms$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouLibraryModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$applyPlatformPreviewMediaPackIndexJsonToAllPlatforms$1, reason: invalid class name */
+    /* INFO: compiled from: DaijishouLibraryModel.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouLibraryModel$applyPlatformPreviewMediaPackIndexJsonToAllPlatforms$1", f = "DaijishouLibraryModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -871,8 +871,8 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         final /* synthetic */ int $previewMediaType;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(int i, String str, Function2<? super Boolean, ? super Integer, Unit> function2, Continuation<?> continuation) {
             super(2, continuation);
             this.$previewMediaType = i;
@@ -1037,19 +1037,19 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         ListSelectDialogFragment.Companion.newInstance$default(companion, string, new ArrayList(arrayList), null, false, 12, null).setOnSelectListener(new AnonymousClass2(playableItemsByDisjointSetPrimaryPlayableItemIdStatically, appCompatActivity)).setOnCancelListener(AnonymousClass3.INSTANCE).show(appCompatActivity.getSupportFragmentManager(), ListSelectDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void editPlayableItem$editPlayableItemEntity(AppCompatActivity appCompatActivity, PlayableItemEntity playableItemEntity) {
         EditPlayableItemDialogFragment.INSTANCE.newInstance(playableItemEntity).show(appCompatActivity.getSupportFragmentManager(), EditPlayableItemDialogFragment.class.getName());
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$editPlayableItem$2, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouLibraryModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$editPlayableItem$2, reason: invalid class name */
+    /* INFO: compiled from: DaijishouLibraryModel.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ AppCompatActivity $appCompatActivity;
         final /* synthetic */ List<PlayableItemEntity> $disjointSet;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(List<PlayableItemEntity> list, AppCompatActivity appCompatActivity) {
             super(1);
             this.$disjointSet = list;
@@ -1071,8 +1071,8 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$editPlayableItem$3, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouLibraryModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$editPlayableItem$3, reason: invalid class name */
+    /* INFO: compiled from: DaijishouLibraryModel.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass3 extends Lambda<Unit> implements Function0<Unit> {
         public static final AnonymousClass3 INSTANCE = new AnonymousClass3();
@@ -1081,7 +1081,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
             super(0);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
         }
 
@@ -1092,7 +1092,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void play$default(DaijishouLibraryModel daijishouLibraryModel, Activity activity, PlayableItemEntity playableItemEntity, Function1 function1, int i, Object obj) {
         if ((i & 4) != 0) {
             function1 = null;
@@ -1126,13 +1126,13 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         ListSelectDialogFragment.Companion.newInstance$default(companion, string, new ArrayList(arrayList), null, false, 12, null).setOnSelectListener(new C02782(playableItemsByDisjointSetPrimaryPlayableItemIdStatically, callback, this, activity, appCompatActivity)).setOnCancelListener(new C02793(callback)).show(appCompatActivity.getSupportFragmentManager(), ListSelectDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:58:0x01de  */
-    /* JADX WARN: Code duplicated, block: B:60:0x01e4  */
-    /* JADX WARN: Code duplicated, block: B:63:0x0204  */
-    /* JADX WARN: Code duplicated, block: B:78:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r3v5, types: [T, com.magneticchen.daijishou.daijishou_library_db.PlayerEntity] */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:58:0x01de  */
+    /* WARN: Code duplicated, block: B:60:0x01e4  */
+    /* WARN: Code duplicated, block: B:63:0x0204  */
+    /* WARN: Code duplicated, block: B:78:? A[RETURN, SYNTHETIC] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r3v5, types: [T, com.magneticchen.daijishou.daijishou_library_db.PlayerEntity] */
     public static final void play$playPlayableItem(Function1<? super Boolean, Unit> function1, DaijishouLibraryModel daijishouLibraryModel, Activity activity, AppCompatActivity appCompatActivity, PlayableItemEntity playableItemEntity) {
         Exception e = null;
         Context context;
@@ -1291,13 +1291,13 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:54:0x01b3 A[Catch: Exception -> 0x02ab, TryCatch #0 {Exception -> 0x02ab, blocks: (B:3:0x0012, B:6:0x0025, B:7:0x002c, B:9:0x0041, B:11:0x004b, B:14:0x0055, B:15:0x005c, B:17:0x0071, B:28:0x00ac, B:30:0x00b7, B:33:0x00bf, B:34:0x00c6, B:36:0x00fe, B:41:0x0129, B:47:0x013f, B:49:0x014d, B:59:0x0269, B:60:0x0272, B:52:0x0155, B:54:0x01b3, B:55:0x01be, B:57:0x025e, B:24:0x0099, B:20:0x008c), top: B:67:0x0012, inners: #2 }] */
-    /* JADX WARN: Code duplicated, block: B:57:0x025e A[Catch: Exception -> 0x02ab, TryCatch #0 {Exception -> 0x02ab, blocks: (B:3:0x0012, B:6:0x0025, B:7:0x002c, B:9:0x0041, B:11:0x004b, B:14:0x0055, B:15:0x005c, B:17:0x0071, B:28:0x00ac, B:30:0x00b7, B:33:0x00bf, B:34:0x00c6, B:36:0x00fe, B:41:0x0129, B:47:0x013f, B:49:0x014d, B:59:0x0269, B:60:0x0272, B:52:0x0155, B:54:0x01b3, B:55:0x01be, B:57:0x025e, B:24:0x0099, B:20:0x008c), top: B:67:0x0012, inners: #2 }] */
-    /* JADX WARN: Code duplicated, block: B:73:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Type inference failed for: r18v2, types: [boolean] */
-    /* JADX WARN: Type inference failed for: r18v7 */
-    /* JADX WARN: Type inference failed for: r18v8 */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:54:0x01b3 A[Catch: Exception -> 0x02ab, TryCatch #0 {Exception -> 0x02ab, blocks: (B:3:0x0012, B:6:0x0025, B:7:0x002c, B:9:0x0041, B:11:0x004b, B:14:0x0055, B:15:0x005c, B:17:0x0071, B:28:0x00ac, B:30:0x00b7, B:33:0x00bf, B:34:0x00c6, B:36:0x00fe, B:41:0x0129, B:47:0x013f, B:49:0x014d, B:59:0x0269, B:60:0x0272, B:52:0x0155, B:54:0x01b3, B:55:0x01be, B:57:0x025e, B:24:0x0099, B:20:0x008c), top: B:67:0x0012, inners: #2 }] */
+    /* WARN: Code duplicated, block: B:57:0x025e A[Catch: Exception -> 0x02ab, TryCatch #0 {Exception -> 0x02ab, blocks: (B:3:0x0012, B:6:0x0025, B:7:0x002c, B:9:0x0041, B:11:0x004b, B:14:0x0055, B:15:0x005c, B:17:0x0071, B:28:0x00ac, B:30:0x00b7, B:33:0x00bf, B:34:0x00c6, B:36:0x00fe, B:41:0x0129, B:47:0x013f, B:49:0x014d, B:59:0x0269, B:60:0x0272, B:52:0x0155, B:54:0x01b3, B:55:0x01be, B:57:0x025e, B:24:0x0099, B:20:0x008c), top: B:67:0x0012, inners: #2 }] */
+    /* WARN: Code duplicated, block: B:73:? A[RETURN, SYNTHETIC] */
+    /* WARN: Type inference failed for: r18v2, types: [boolean] */
+    /* WARN: Type inference failed for: r18v7 */
+    /* WARN: Type inference failed for: r18v8 */
     public static final void play$playPlayableItem$lambda$13$lambda$12$playIt(PlayableItemEntity playableItemEntity, Ref.ObjectRef<PlayerEntity> objectRef, Function1<? super Boolean, Unit> function1, Context context, DaijishouLibraryModel daijishouLibraryModel, boolean z) {
         Exception e = null;
         boolean z2 = false;
@@ -1470,14 +1470,14 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void play$playPlayableItem$lambda$13$lambda$12$killPackageProcesses(AppCompatActivity appCompatActivity, String str) {
         Object systemService = appCompatActivity.getSystemService("activity");
         Intrinsics.checkNotNull(systemService, "null cannot be cast to non-null type android.app.ActivityManager");
         ((ActivityManager) systemService).killBackgroundProcesses(str);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void play$playPlayableItem$lambda$13$lambda$12$playItWithRules(Ref.ObjectRef<PlayerEntity> objectRef, DaijishouLibraryModel daijishouLibraryModel, AppCompatActivity appCompatActivity, String str, PlayableItemEntity playableItemEntity, Function1<? super Boolean, Unit> function1, Context context, boolean z) {
         PlayerEntity playerEntity = objectRef.element;
         Intrinsics.checkNotNull(playerEntity);
@@ -1496,8 +1496,8 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         play$playPlayableItem$lambda$13$lambda$12$playIt(playableItemEntity, objectRef, function1, context, daijishouLibraryModel, z);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$play$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouLibraryModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$play$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouLibraryModel.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class C02782 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ Activity $activity;
@@ -1506,8 +1506,8 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         final /* synthetic */ List<PlayableItemEntity> $disjointSet;
         final /* synthetic */ DaijishouLibraryModel this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C02782(List<PlayableItemEntity> list, Function1<? super Boolean, Unit> function1, DaijishouLibraryModel daijishouLibraryModel, Activity activity, AppCompatActivity appCompatActivity) {
             super(1);
             this.$disjointSet = list;
@@ -1532,14 +1532,14 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$play$3, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouLibraryModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$play$3, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouLibraryModel.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class C02793 extends Lambda<Unit> implements Function0<Unit> {
         final /* synthetic */ Function1<? super Boolean, Unit> $callback;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C02793(Function1<? super Boolean, Unit> function1) {
             super(0);
             this.$callback = function1;
@@ -1551,7 +1551,7 @@ public final class DaijishouLibraryModel extends DaijishouAndroidViewModel {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             Function1<? super Boolean, Unit> function1 = this.$callback;
             if (function1 != null) {

@@ -1,13 +1,13 @@
 package io.noties.markwon;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 abstract class MarkwonVisitorFactory {
     abstract MarkwonVisitor create();
 
     MarkwonVisitorFactory() {
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.MarkwonVisitorFactory$1, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.MarkwonVisitorFactory$1, reason: invalid class name */
     class AnonymousClass1 extends MarkwonVisitorFactory {
         final /* synthetic */ MarkwonVisitor.Builder val$builder;
         final /* synthetic */ MarkwonConfiguration val$configuration;

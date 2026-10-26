@@ -9,9 +9,9 @@ import java.util.Arrays;
 import java.util.concurrent.atomic.AtomicLongArray;
 import javax.annotation.CheckForNull;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: loaded from: classes3.dex */
+/* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* WARN: Unknown enum class pattern. Please report as an issue! */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class BloomFilterStrategies implements BloomFilter.Strategy {
     public static final BloomFilterStrategies MURMUR128_MITZ_32 = new AnonymousClass1("MURMUR128_MITZ_32", 0);
@@ -38,7 +38,7 @@ abstract class BloomFilterStrategies implements BloomFilter.Strategy {
         this(str, i);
     }
 
-    /* JADX INFO: renamed from: com.google.common.hash.BloomFilterStrategies$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.hash.BloomFilterStrategies$1, reason: invalid class name */
     final enum AnonymousClass1 extends BloomFilterStrategies {
         AnonymousClass1(String $enum$name, int $enum$ordinal) {
             super($enum$name, $enum$ordinal, null);
@@ -80,7 +80,7 @@ abstract class BloomFilterStrategies implements BloomFilter.Strategy {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.hash.BloomFilterStrategies$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.hash.BloomFilterStrategies$2, reason: invalid class name */
     final enum AnonymousClass2 extends BloomFilterStrategies {
         AnonymousClass2(String $enum$name, int $enum$ordinal) {
             super($enum$name, $enum$ordinal, null);

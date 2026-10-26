@@ -19,7 +19,7 @@ import java.util.HashSet;
 import java.util.Locale;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class KeyTrigger extends Key {
     public static final String CROSS = "CROSS";
     public static final int KEY_TYPE = 5;
@@ -80,7 +80,7 @@ public class KeyTrigger extends Key {
         return this.mCurveFit;
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     @Override // androidx.constraintlayout.motion.widget.Key
     public void setValue(String str, Object obj) {
         str.hashCode();
@@ -197,14 +197,14 @@ public class KeyTrigger extends Key {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:38:0x008c  */
-    /* JADX WARN: Code duplicated, block: B:43:0x00a0  */
-    /* JADX WARN: Code duplicated, block: B:45:0x00ae  */
-    /* JADX WARN: Code duplicated, block: B:49:0x00b5  */
-    /* JADX WARN: Code duplicated, block: B:51:0x00c1  */
-    /* JADX WARN: Code duplicated, block: B:54:0x00c9  */
-    /* JADX WARN: Code duplicated, block: B:56:0x00ce  */
-    /* JADX WARN: Code duplicated, block: B:58:0x00dc  */
+    /* WARN: Code duplicated, block: B:38:0x008c  */
+    /* WARN: Code duplicated, block: B:43:0x00a0  */
+    /* WARN: Code duplicated, block: B:45:0x00ae  */
+    /* WARN: Code duplicated, block: B:49:0x00b5  */
+    /* WARN: Code duplicated, block: B:51:0x00c1  */
+    /* WARN: Code duplicated, block: B:54:0x00c9  */
+    /* WARN: Code duplicated, block: B:56:0x00ce  */
+    /* WARN: Code duplicated, block: B:58:0x00dc  */
     public void conditionallyFire(float f, View view) {
         boolean z;
         boolean z2;
@@ -469,7 +469,7 @@ public class KeyTrigger extends Key {
     }
 
     @Override // androidx.constraintlayout.motion.widget.Key
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public Key mo3143clone() {
         return new KeyTrigger().copy(this);
     }

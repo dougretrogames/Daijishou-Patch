@@ -5,7 +5,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ActivityResult implements Parcelable {
     public static final Parcelable.Creator<ActivityResult> CREATOR = new AnonymousClass1();
     private final Intent mData;
@@ -58,18 +58,18 @@ public final class ActivityResult implements Parcelable {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.activity.result.ActivityResult$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.activity.result.ActivityResult$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.Creator<ActivityResult> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public ActivityResult createFromParcel(Parcel parcel) {
             return new ActivityResult(parcel);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public ActivityResult[] newArray(int i) {
             return new ActivityResult[i];

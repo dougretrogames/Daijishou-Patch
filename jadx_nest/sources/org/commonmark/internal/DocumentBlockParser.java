@@ -6,7 +6,7 @@ import org.commonmark.parser.block.AbstractBlockParser;
 import org.commonmark.parser.block.BlockContinue;
 import org.commonmark.parser.block.ParserState;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DocumentBlockParser extends AbstractBlockParser {
     private final Document document = new Document();
 

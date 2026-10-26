@@ -2,8 +2,8 @@ package com.google.android.gms.common.util.concurrent;
 
 import android.os.Process;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 final class zza implements Runnable {
     private final Runnable zza;
 

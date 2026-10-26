@@ -3,7 +3,7 @@ package org.eclipse.jgit.diff;
 import org.eclipse.jgit.util.IntList;
 import org.eclipse.jgit.util.RawCharUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class RawTextComparator extends SequenceComparator<RawText> {
     public static final RawTextComparator DEFAULT = new AnonymousClass1();
     public static final RawTextComparator WS_IGNORE_ALL = new AnonymousClass2();
@@ -13,7 +13,7 @@ public abstract class RawTextComparator extends SequenceComparator<RawText> {
 
     protected abstract int hashRegion(byte[] bArr, int i, int i2);
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.diff.RawTextComparator$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.diff.RawTextComparator$1, reason: invalid class name */
     class AnonymousClass1 extends RawTextComparator {
         AnonymousClass1() {
         }
@@ -49,7 +49,7 @@ public abstract class RawTextComparator extends SequenceComparator<RawText> {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.diff.RawTextComparator$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.diff.RawTextComparator$2, reason: invalid class name */
     class AnonymousClass2 extends RawTextComparator {
         AnonymousClass2() {
         }
@@ -96,7 +96,7 @@ public abstract class RawTextComparator extends SequenceComparator<RawText> {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.diff.RawTextComparator$3, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.diff.RawTextComparator$3, reason: invalid class name */
     class AnonymousClass3 extends RawTextComparator {
         AnonymousClass3() {
         }
@@ -134,7 +134,7 @@ public abstract class RawTextComparator extends SequenceComparator<RawText> {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.diff.RawTextComparator$4, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.diff.RawTextComparator$4, reason: invalid class name */
     class AnonymousClass4 extends RawTextComparator {
         AnonymousClass4() {
         }
@@ -173,7 +173,7 @@ public abstract class RawTextComparator extends SequenceComparator<RawText> {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.diff.RawTextComparator$5, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.diff.RawTextComparator$5, reason: invalid class name */
     class AnonymousClass5 extends RawTextComparator {
         AnonymousClass5() {
         }

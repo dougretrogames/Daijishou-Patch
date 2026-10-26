@@ -1,6 +1,6 @@
 package org.eclipse.jgit.lib;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ConfigConstants {
     public static final String CONFIG_BRANCH_SECTION = "branch";
     public static final String CONFIG_COMMIT_GRAPH = "commitGraph";

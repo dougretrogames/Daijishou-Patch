@@ -1,7 +1,7 @@
 package com.google.android.material.datepicker;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class DateFormatTextWatcher$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ DateFormatTextWatcher f$0;
     public final /* synthetic */ String f$1;

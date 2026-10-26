@@ -16,7 +16,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.transport.RefSpec;
 import org.eclipse.jgit.transport.WalkEncryption;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Rule {
     public static final String ALL = "ALL";
     private static final String DOUBLE_QUOTE = "\"";
@@ -208,7 +208,7 @@ public class Rule {
         return new Scanner(Resources.getInputStream(String.format("/org/apache/commons/codec/language/bm/%s.txt", str)), ResourceConstants.ENCODING);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean endsWith(CharSequence charSequence, CharSequence charSequence2) {
         int length = charSequence2.length();
         int length2 = charSequence.length();
@@ -339,7 +339,7 @@ public class Rule {
         return map;
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.codec.language.bm.Rule$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.codec.language.bm.Rule$1, reason: invalid class name */
     class AnonymousClass1 extends Rule {
         private final String loc;
         private final int myLine;
@@ -349,7 +349,7 @@ public class Rule {
         final /* synthetic */ String val$pat;
         final /* synthetic */ String val$rCon;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(String str, String str2, String str3, PhonemeExpr phonemeExpr, int i, String str4, String str5, String str6, String str7) {
             super(str, str2, str3, phonemeExpr);
             this.val$cLine = i;
@@ -442,7 +442,7 @@ public class Rule {
         return charSequence.length() > 0 && contains(str, charSequence.charAt(charSequence.length() - 1)) == z;
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.codec.language.bm.Rule$2, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.codec.language.bm.Rule$2, reason: invalid class name */
     class AnonymousClass2 implements RPattern {
         final Pattern pattern;
         final /* synthetic */ String val$regex;
@@ -458,7 +458,7 @@ public class Rule {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean startsWith(CharSequence charSequence, CharSequence charSequence2) {
         if (charSequence2.length() > charSequence.length()) {
             return false;

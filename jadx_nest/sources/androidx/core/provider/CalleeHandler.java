@@ -3,7 +3,7 @@ package androidx.core.provider;
 import android.os.Handler;
 import android.os.Looper;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class CalleeHandler {
     private CalleeHandler() {
     }

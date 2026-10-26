@@ -1,6 +1,6 @@
 package com.google.android.material.shape;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TriangleEdgeTreatment extends EdgeTreatment {
     private final boolean inside;
     private final float size;

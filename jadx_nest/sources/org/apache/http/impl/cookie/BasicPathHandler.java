@@ -9,7 +9,7 @@ import org.apache.http.cookie.SetCookie;
 import org.apache.http.util.Args;
 import org.apache.http.util.TextUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicPathHandler implements CommonCookieAttributeHandler {
     @Override // org.apache.http.cookie.CookieAttributeHandler
     public void validate(Cookie cookie, CookieOrigin cookieOrigin) throws MalformedCookieException {

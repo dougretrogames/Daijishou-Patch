@@ -7,7 +7,7 @@ import androidx.constraintlayout.widget.ConstraintSet;
 import java.util.Arrays;
 import java.util.LinkedHashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MotionPaths implements Comparable<MotionPaths> {
     static final int CARTESIAN = 0;
     public static final boolean DEBUG = false;
@@ -479,7 +479,7 @@ class MotionPaths implements Comparable<MotionPaths> {
         fArr[i + 1] = f2;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     void setView(float f, View view, int[] iArr, double[] dArr, double[] dArr2, double[] dArr3, boolean z) {
         float f2;
         float fSin = this.mX;

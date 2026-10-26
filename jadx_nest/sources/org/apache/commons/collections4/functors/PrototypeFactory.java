@@ -11,7 +11,7 @@ import java.lang.reflect.Method;
 import org.apache.commons.collections4.Factory;
 import org.apache.commons.collections4.FunctorException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PrototypeFactory {
 
     static class PrototypeCloneFactory<T> implements Factory<T> {
@@ -61,7 +61,7 @@ public class PrototypeFactory {
             this.iPrototype = t;
         }
 
-        /* JADX WARN: Code duplicated, block: B:32:0x0045 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:32:0x0045 A[EXC_TOP_SPLITTER, SYNTHETIC] */
         @Override // org.apache.commons.collections4.Factory
         public T create() throws Throwable {
             Throwable th;

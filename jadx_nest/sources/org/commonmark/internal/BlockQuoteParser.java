@@ -10,7 +10,7 @@ import org.commonmark.parser.block.BlockStart;
 import org.commonmark.parser.block.MatchedBlockParser;
 import org.commonmark.parser.block.ParserState;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BlockQuoteParser extends AbstractBlockParser {
     private final BlockQuote block = new BlockQuote();
 
@@ -43,7 +43,7 @@ public class BlockQuoteParser extends AbstractBlockParser {
         return BlockContinue.none();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean isMarker(ParserState parserState, int i) {
         CharSequence line = parserState.getLine();
         return parserState.getIndent() < Parsing.CODE_BLOCK_INDENT && i < line.length() && line.charAt(i) == '>';

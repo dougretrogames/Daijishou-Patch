@@ -15,7 +15,7 @@ import java.util.function.BiConsumer;
 import java.util.function.BiFunction;
 import java.util.function.Function;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PropertiesFactory extends AbstractPropertiesFactory<Properties> {
     public static final Properties EMPTY_PROPERTIES = new EmptyProperties(null);
     public static final PropertiesFactory INSTANCE = new PropertiesFactory();

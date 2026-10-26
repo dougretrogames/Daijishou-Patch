@@ -10,7 +10,7 @@ import org.apache.http.cookie.ClientCookie;
 import org.apache.http.cookie.SetCookie;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicClientCookie implements SetCookie, ClientCookie, Cloneable, Serializable {
     private static final long serialVersionUID = -3869795591041535538L;
     private Map<String, String> attribs;

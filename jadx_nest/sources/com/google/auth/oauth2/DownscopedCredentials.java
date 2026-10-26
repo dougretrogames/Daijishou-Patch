@@ -6,7 +6,7 @@ import com.google.common.base.MoreObjects;
 import com.google.common.base.Preconditions;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class DownscopedCredentials extends OAuth2Credentials {
     private final String TOKEN_EXCHANGE_URL_FORMAT;
     private final CredentialAccessBoundary credentialAccessBoundary;

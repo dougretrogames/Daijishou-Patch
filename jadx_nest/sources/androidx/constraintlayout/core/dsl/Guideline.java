@@ -1,6 +1,6 @@
 package androidx.constraintlayout.core.dsl;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class Guideline extends Helper {
     private int mEnd;
     private float mPercent;

@@ -26,7 +26,7 @@ import androidx.core.view.PointerIconCompat;
 import androidx.core.widget.PopupWindowCompat;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ListPopupWindow implements ShowableListMenu {
     private static final boolean DEBUG = false;
     static final int EXPAND_LIST_TIMEOUT = 250;
@@ -581,7 +581,7 @@ public class ListPopupWindow implements ShowableListMenu {
         return true;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ListPopupWindow$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ListPopupWindow$1, reason: invalid class name */
     class AnonymousClass1 extends ForwardingListener {
         AnonymousClass1(View view) {
             super(view);
@@ -693,7 +693,7 @@ public class ListPopupWindow implements ShowableListMenu {
         return iMeasureHeightOfChildrenCompat + measuredHeight;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ListPopupWindow$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ListPopupWindow$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -708,7 +708,7 @@ public class ListPopupWindow implements ShowableListMenu {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ListPopupWindow$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ListPopupWindow$3, reason: invalid class name */
     class AnonymousClass3 implements AdapterView.OnItemSelectedListener {
         @Override // android.widget.AdapterView.OnItemSelectedListener
         public void onNothingSelected(AdapterView<?> adapterView) {

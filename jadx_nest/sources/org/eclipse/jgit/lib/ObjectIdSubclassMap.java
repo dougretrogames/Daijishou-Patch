@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ObjectIdSubclassMap<V extends ObjectId> implements Iterable<V>, ObjectIdSet {
     private static final int INITIAL_TABLE_SIZE = 2048;
     private int grow;
@@ -42,7 +42,7 @@ public class ObjectIdSubclassMap<V extends ObjectId> implements Iterable<V>, Obj
         return get(anyObjectId) != null;
     }
 
-    /* JADX WARN: Incorrect types in method signature: <Q:TV;>(TQ;)V */
+    /* WARN: Incorrect types in method signature: <Q:TV;>(TQ;)V */
     public void add(ObjectId objectId) {
         int i = this.size + 1;
         this.size = i;
@@ -52,7 +52,7 @@ public class ObjectIdSubclassMap<V extends ObjectId> implements Iterable<V>, Obj
         insert(objectId);
     }
 
-    /* JADX WARN: Incorrect types in method signature: <Q:TV;>(TQ;)TV; */
+    /* WARN: Incorrect types in method signature: <Q:TV;>(TQ;)TV; */
     public ObjectId addIfAbsent(ObjectId objectId) {
         int i = this.mask;
         int i2 = objectId.w1 & i;
@@ -86,7 +86,7 @@ public class ObjectIdSubclassMap<V extends ObjectId> implements Iterable<V>, Obj
         return this.size == 0;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.ObjectIdSubclassMap$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.ObjectIdSubclassMap$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<V> {
         private int found;
         private int i;

@@ -3,7 +3,7 @@ package androidx.core.graphics;
 import android.graphics.BlendMode;
 import android.graphics.PorterDuff;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class BlendModeUtils {
     private BlendModeUtils() {
     }
@@ -78,7 +78,7 @@ class BlendModeUtils {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.graphics.BlendModeUtils$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.graphics.BlendModeUtils$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$androidx$core$graphics$BlendModeCompat;
 

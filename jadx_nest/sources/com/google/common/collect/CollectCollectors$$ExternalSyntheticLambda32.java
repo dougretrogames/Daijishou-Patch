@@ -3,8 +3,8 @@ package com.google.common.collect;
 import com.google.common.base.Preconditions;
 import java.util.function.Function;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class CollectCollectors$$ExternalSyntheticLambda32 implements Function {
     public final /* synthetic */ Function f$0;
 

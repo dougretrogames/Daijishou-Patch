@@ -6,8 +6,8 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.FunctionAdapter;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: AppBarConfiguration.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: AppBarConfiguration.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 176)
 public final class AppBarConfigurationKt$sam$i$androidx_navigation_ui_AppBarConfiguration_OnNavigateUpListener$0 implements AppBarConfiguration.OnNavigateUpListener, FunctionAdapter {
     private final /* synthetic */ Function0 function;

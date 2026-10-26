@@ -6,8 +6,8 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.os.SystemClock;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class zak extends Drawable implements Drawable.Callback {
     private int zaa;
     private long zab;
@@ -157,8 +157,8 @@ public final class zak extends Drawable implements Drawable.Callback {
         return this.zam;
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x005b  */
-    /* JADX WARN: Code duplicated, block: B:36:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:25:0x005b  */
+    /* WARN: Code duplicated, block: B:36:? A[RETURN, SYNTHETIC] */
     @Override // android.graphics.drawable.Drawable
     public final void draw(Canvas canvas) {
         boolean z;

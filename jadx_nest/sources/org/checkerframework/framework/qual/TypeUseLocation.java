@@ -1,6 +1,6 @@
 package org.checkerframework.framework.qual;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum TypeUseLocation {
     FIELD,
     LOCAL_VARIABLE,

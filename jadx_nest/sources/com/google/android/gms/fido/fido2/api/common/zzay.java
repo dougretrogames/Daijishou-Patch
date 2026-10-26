@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public enum zzay implements Parcelable {
     USER_VERIFICATION_REQUIRED(ConfigConstants.CONFIG_KEY_REQUIRED),
     USER_VERIFICATION_PREFERRED("preferred"),

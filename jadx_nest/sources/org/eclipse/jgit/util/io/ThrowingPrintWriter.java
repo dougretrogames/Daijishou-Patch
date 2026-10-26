@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.Writer;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ThrowingPrintWriter extends Writer {
     private final String LF = SystemReader.getInstance().getProperty("line.separator");
     private final Writer out;

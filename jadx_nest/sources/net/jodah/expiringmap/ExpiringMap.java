@@ -32,7 +32,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import net.jodah.expiringmap.internal.Assert;
 import net.jodah.expiringmap.internal.NamedThreadFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
     static volatile ScheduledExecutorService EXPIRER;
     static volatile ThreadPoolExecutor LISTENER_SERVICE;
@@ -136,14 +136,14 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public <K1 extends K, V1 extends V> Builder<K1, V1> entryLoader(EntryLoader<? super K1, ? super V1> entryLoader) {
             assertNoLoaderSet();
             this.entryLoader = (EntryLoader) Assert.notNull(entryLoader, "loader");
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public <K1 extends K, V1 extends V> Builder<K1, V1> expiringEntryLoader(ExpiringEntryLoader<? super K1, ? super V1> expiringEntryLoader) {
             assertNoLoaderSet();
             this.expiringEntryLoader = (ExpiringEntryLoader) Assert.notNull(expiringEntryLoader, "loader");
@@ -151,7 +151,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public <K1 extends K, V1 extends V> Builder<K1, V1> expirationListener(ExpirationListener<? super K1, ? super V1> expirationListener) {
             Assert.notNull(expirationListener, ServiceSpecificExtraArgs.CastExtraArgs.LISTENER);
             if (this.expirationListeners == null) {
@@ -161,7 +161,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public <K1 extends K, V1 extends V> Builder<K1, V1> expirationListeners(List<ExpirationListener<? super K1, ? super V1>> list) {
             Assert.notNull(list, "listeners");
             if (this.expirationListeners == null) {
@@ -174,7 +174,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public <K1 extends K, V1 extends V> Builder<K1, V1> asyncExpirationListener(ExpirationListener<? super K1, ? super V1> expirationListener) {
             Assert.notNull(expirationListener, ServiceSpecificExtraArgs.CastExtraArgs.LISTENER);
             if (this.asyncExpirationListeners == null) {
@@ -184,7 +184,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public <K1 extends K, V1 extends V> Builder<K1, V1> asyncExpirationListeners(List<ExpirationListener<? super K1, ? super V1>> list) {
             Assert.notNull(list, "listeners");
             if (this.asyncExpirationListeners == null) {
@@ -370,7 +370,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
             return this.sortedSet.first();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.HashMap, java.util.AbstractMap, java.util.Map
         public ExpiringEntry<K, V> put(K k, ExpiringEntry<K, V> expiringEntry) {
             this.sortedSet.add(expiringEntry);
@@ -615,7 +615,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
         }
     }
 
-    /* JADX INFO: renamed from: net.jodah.expiringmap.ExpiringMap$1, reason: invalid class name */
+    /* INFO: renamed from: net.jodah.expiringmap.ExpiringMap$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractSet<Map.Entry<K, V>> {
         AnonymousClass1() {
         }
@@ -671,7 +671,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // java.util.Map
     public V get(Object obj) {
         ExpiringEntry<K, V> entry = getEntry(obj);
@@ -787,7 +787,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
         }
     }
 
-    /* JADX INFO: renamed from: net.jodah.expiringmap.ExpiringMap$2, reason: invalid class name */
+    /* INFO: renamed from: net.jodah.expiringmap.ExpiringMap$2, reason: invalid class name */
     class AnonymousClass2 extends AbstractSet<K> {
         AnonymousClass2() {
         }
@@ -1096,7 +1096,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
         }
     }
 
-    /* JADX INFO: renamed from: net.jodah.expiringmap.ExpiringMap$3, reason: invalid class name */
+    /* INFO: renamed from: net.jodah.expiringmap.ExpiringMap$3, reason: invalid class name */
     class AnonymousClass3 extends AbstractCollection<V> {
         AnonymousClass3() {
         }
@@ -1162,7 +1162,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
         }
     }
 
-    /* JADX INFO: renamed from: net.jodah.expiringmap.ExpiringMap$4, reason: invalid class name */
+    /* INFO: renamed from: net.jodah.expiringmap.ExpiringMap$4, reason: invalid class name */
     class AnonymousClass4 implements Runnable {
         final /* synthetic */ ExpiringEntry val$entry;
         final /* synthetic */ ExpirationListener val$listener;
@@ -1172,7 +1172,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
             this.val$entry = expiringEntry;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.lang.Runnable
         public void run() {
             try {
@@ -1247,7 +1247,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
         }
     }
 
-    /* JADX INFO: renamed from: net.jodah.expiringmap.ExpiringMap$5, reason: invalid class name */
+    /* INFO: renamed from: net.jodah.expiringmap.ExpiringMap$5, reason: invalid class name */
     class AnonymousClass5 implements Runnable {
         final /* synthetic */ WeakReference val$entryReference;
 
@@ -1287,7 +1287,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
         }
     }
 
-    /* JADX INFO: renamed from: net.jodah.expiringmap.ExpiringMap$6, reason: invalid class name */
+    /* INFO: renamed from: net.jodah.expiringmap.ExpiringMap$6, reason: invalid class name */
     class AnonymousClass6 implements Map.Entry<K, V> {
         final /* synthetic */ ExpiringEntry val$entry;
 
@@ -1311,7 +1311,7 @@ public class ExpiringMap<K, V> implements ConcurrentMap<K, V> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <K, V> Map.Entry<K, V> mapEntryFor(ExpiringEntry<K, V> expiringEntry) {
         return new AnonymousClass6(expiringEntry);
     }

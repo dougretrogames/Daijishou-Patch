@@ -6,7 +6,7 @@ import java.util.Objects;
 import org.chromium.support_lib_boundary.JsReplyProxyBoundaryInterface;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class JavaScriptReplyProxyImpl extends JavaScriptReplyProxy {
     private final JsReplyProxyBoundaryInterface mBoundaryInterface;
 

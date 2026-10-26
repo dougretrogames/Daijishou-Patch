@@ -12,8 +12,8 @@ import kotlin.jvm.internal.Reflection;
 import kotlin.reflect.KClass;
 import kotlin.reflect.KType;
 
-/* JADX INFO: compiled from: NavDeepLinkDslBuilder.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: NavDeepLinkDslBuilder.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(d1 = {"\u0000>\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\u001f\u0010\u0000\u001a\u00020\u00012\u0017\u0010\u0002\u001a\u0013\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003¢\u0006\u0002\b\u0006\u001aZ\u0010\u0000\u001a\u00020\u0001\"\n\b\u0000\u0010\u0007\u0018\u0001*\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u001d\b\u0002\u0010\u000b\u001a\u0017\u0012\u0004\u0012\u00020\r\u0012\r\u0012\u000b\u0012\u0002\b\u00030\u000e¢\u0006\u0002\b\u000f0\f2\u0019\b\n\u0010\u0002\u001a\u0013\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003¢\u0006\u0002\b\u0006H\u0086\bø\u0001\u0000\u001a^\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0007*\u00020\b2\u0006\u0010\t\u001a\u00020\n2\f\u0010\u0010\u001a\b\u0012\u0004\u0012\u0002H\u00070\u00112\u001b\u0010\u000b\u001a\u0017\u0012\u0004\u0012\u00020\r\u0012\r\u0012\u000b\u0012\u0002\b\u00030\u000e¢\u0006\u0002\b\u000f0\f2\u0017\u0010\u0002\u001a\u0013\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003¢\u0006\u0002\b\u0006H\u0007\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006\u0012"}, d2 = {"navDeepLink", "Landroidx/navigation/NavDeepLink;", "deepLinkBuilder", "Lkotlin/Function1;", "Landroidx/navigation/NavDeepLinkDslBuilder;", "", "Lkotlin/ExtensionFunctionType;", ExifInterface.GPS_DIRECTION_TRUE, "", "basePath", "", "typeMap", "", "Lkotlin/reflect/KType;", "Landroidx/navigation/NavType;", "Lkotlin/jvm/JvmSuppressWildcards;", "route", "Lkotlin/reflect/KClass;", "navigation-common_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class NavDeepLinkDslBuilderKt {
     public static final NavDeepLink navDeepLink(Function1<? super NavDeepLinkDslBuilder, Unit> deepLinkBuilder) {
@@ -23,8 +23,8 @@ public final class NavDeepLinkDslBuilderKt {
         return navDeepLinkDslBuilder.build$navigation_common_release();
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavDeepLinkDslBuilderKt$navDeepLink$1, reason: invalid class name */
-    /* JADX INFO: compiled from: NavDeepLinkDslBuilder.kt */
+    /* INFO: renamed from: androidx.navigation.NavDeepLinkDslBuilderKt$navDeepLink$1, reason: invalid class name */
+    /* INFO: compiled from: NavDeepLinkDslBuilder.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\n\b\u0000\u0010\u0002\u0018\u0001*\u00020\u0003*\u00020\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "Landroidx/navigation/NavDeepLinkDslBuilder;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 176)
     public static final class AnonymousClass1 extends Lambda implements Function1<NavDeepLinkDslBuilder, Unit> {
         public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -33,7 +33,7 @@ public final class NavDeepLinkDslBuilderKt {
             super(1);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(NavDeepLinkDslBuilder navDeepLinkDslBuilder) {
             Intrinsics.checkNotNullParameter(navDeepLinkDslBuilder, "$this$null");
         }

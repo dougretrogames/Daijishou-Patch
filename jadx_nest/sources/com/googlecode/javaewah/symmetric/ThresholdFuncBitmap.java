@@ -3,7 +3,7 @@ package com.googlecode.javaewah.symmetric;
 import com.googlecode.javaewah.BitmapStorage;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ThresholdFuncBitmap extends UpdateableBitmapFunction {
     private static final int[] zeroes64 = new int[64];
     private final int min;

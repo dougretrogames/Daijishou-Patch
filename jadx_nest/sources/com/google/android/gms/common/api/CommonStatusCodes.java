@@ -1,7 +1,7 @@
 package com.google.android.gms.common.api;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public class CommonStatusCodes {
     public static final int API_NOT_CONNECTED = 17;
     public static final int CANCELED = 16;

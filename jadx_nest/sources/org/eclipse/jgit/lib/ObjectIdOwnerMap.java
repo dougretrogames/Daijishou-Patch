@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import org.eclipse.jgit.lib.ObjectIdOwnerMap.Entry;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ObjectIdOwnerMap<V extends Entry> implements Iterable<V>, ObjectIdSet {
     private static final int INITIAL_DIRECTORY = 1024;
     private static final int SEGMENT_BITS = 11;
@@ -20,7 +20,7 @@ public class ObjectIdOwnerMap<V extends Entry> implements Iterable<V>, ObjectIdS
         return 1 << (i + 11);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public ObjectIdOwnerMap() {
         V[][] vArr = (V[][]) new Entry[1024][];
         this.directory = vArr;
@@ -55,7 +55,7 @@ public class ObjectIdOwnerMap<V extends Entry> implements Iterable<V>, ObjectIdS
         return get(anyObjectId) != null;
     }
 
-    /* JADX WARN: Incorrect types in method signature: <Q:TV;>(TQ;)V */
+    /* WARN: Incorrect types in method signature: <Q:TV;>(TQ;)V */
     public void add(Entry entry) {
         int i = this.size + 1;
         this.size = i;
@@ -69,7 +69,7 @@ public class ObjectIdOwnerMap<V extends Entry> implements Iterable<V>, ObjectIdS
         entryArr[i3] = entry;
     }
 
-    /* JADX WARN: Incorrect types in method signature: <Q:TV;>(TQ;)TV; */
+    /* WARN: Incorrect types in method signature: <Q:TV;>(TQ;)TV; */
     public Entry addIfAbsent(Entry entry) {
         int i = entry.w1;
         Entry[] entryArr = this.directory[this.mask & i];
@@ -97,7 +97,7 @@ public class ObjectIdOwnerMap<V extends Entry> implements Iterable<V>, ObjectIdS
         return this.size == 0;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.ObjectIdOwnerMap$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.ObjectIdOwnerMap$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<V> {
         private int dirIdx;
         private int found;

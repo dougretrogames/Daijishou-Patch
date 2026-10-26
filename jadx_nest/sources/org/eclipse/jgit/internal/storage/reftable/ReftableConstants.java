@@ -1,6 +1,6 @@
 package org.eclipse.jgit.internal.storage.reftable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class ReftableConstants {
     static final int FILE_FOOTER_LEN = 68;
     static final int FILE_HEADER_LEN = 24;

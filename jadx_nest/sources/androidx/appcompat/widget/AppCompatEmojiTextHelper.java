@@ -8,7 +8,7 @@ import android.widget.TextView;
 import androidx.appcompat.R;
 import androidx.emoji2.viewsintegration.EmojiTextViewHelper;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class AppCompatEmojiTextHelper {
     private final EmojiTextViewHelper mEmojiTextViewHelper;
     private final TextView mView;

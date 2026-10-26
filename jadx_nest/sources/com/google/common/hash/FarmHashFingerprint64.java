@@ -2,7 +2,7 @@ package com.google.common.hash;
 
 import com.google.common.base.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class FarmHashFingerprint64 extends AbstractNonStreamingHashFunction {
     static final HashFunction FARMHASH_FINGERPRINT_64 = new FarmHashFingerprint64();

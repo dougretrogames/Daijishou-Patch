@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.dfs;
 import org.eclipse.jgit.nls.NLS;
 import org.eclipse.jgit.nls.TranslationBundle;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsText extends TranslationBundle {
     public String cannotReadCommitGraph;
     public String cannotReadIndex;

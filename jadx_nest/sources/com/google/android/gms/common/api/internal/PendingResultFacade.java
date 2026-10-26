@@ -8,8 +8,8 @@ import com.google.android.gms.common.api.TransformedResult;
 import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public abstract class PendingResultFacade<A extends Result, B extends Result> extends PendingResult<B> {
     @Override // com.google.android.gms.common.api.PendingResult
     public final void addStatusListener(PendingResult.StatusListener statusListener) {

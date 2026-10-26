@@ -4,7 +4,7 @@ import java.nio.file.Path;
 import org.eclipse.jgit.transport.HttpConfig;
 import org.eclipse.jgit.util.LRUMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NetscapeCookieFileCache {
     private static NetscapeCookieFileCache instance;
     private final LRUMap<Path, NetscapeCookieFile> cookieFileMap;

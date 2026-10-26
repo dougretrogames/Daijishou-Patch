@@ -35,7 +35,7 @@ import org.eclipse.jgit.transport.RefSpec;
 import org.eclipse.jgit.transport.TagOpt;
 import org.eclipse.jgit.transport.Transport;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FetchCommand extends TransportCommand<FetchCommand, FetchResult> {
     private Callback callback;
     private boolean checkFetchedObjects;

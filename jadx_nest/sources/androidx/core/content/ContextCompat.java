@@ -83,7 +83,7 @@ import java.util.HashMap;
 import java.util.concurrent.Executor;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ContextCompat {
     private static final String DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION_SUFFIX = ".DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION";
     public static final int RECEIVER_EXPORTED = 2;

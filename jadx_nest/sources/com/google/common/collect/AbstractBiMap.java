@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractBiMap<K, V> extends ForwardingMap<K, V> implements BiMap<K, V>, Serializable {
     private static final long serialVersionUID = 0;
@@ -55,7 +55,7 @@ abstract class AbstractBiMap<K, V> extends ForwardingMap<K, V> implements BiMap<
         this.inverse = forward;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingMap, com.google.common.collect.ForwardingObject
     public Map<K, V> delegate() {
         return this.delegate;
@@ -114,8 +114,8 @@ abstract class AbstractBiMap<K, V> extends ForwardingMap<K, V> implements BiMap<
         return vPut;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Multi-variable type inference failed */
     public void updateInverseMap(@ParametricNullness K key, boolean containedKey, @CheckForNull V oldValue, @ParametricNullness V newValue) {
         if (containedKey) {
             removeFromInverseMap(NullnessCasts.uncheckedCastNullableTToT(oldValue));
@@ -132,7 +132,7 @@ abstract class AbstractBiMap<K, V> extends ForwardingMap<K, V> implements BiMap<
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @ParametricNullness
     public V removeFromBothMaps(@CheckForNull Object obj) {
         V v = (V) NullnessCasts.uncheckedCastNullableTToT(this.delegate.remove(obj));
@@ -140,7 +140,7 @@ abstract class AbstractBiMap<K, V> extends ForwardingMap<K, V> implements BiMap<
         return v;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void removeFromInverseMap(@ParametricNullness V oldValue) {
         this.inverse.delegate.remove(oldValue);
     }
@@ -182,7 +182,7 @@ abstract class AbstractBiMap<K, V> extends ForwardingMap<K, V> implements BiMap<
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Set<K> delegate() {
             return AbstractBiMap.this.delegate.keySet();
@@ -240,7 +240,7 @@ abstract class AbstractBiMap<K, V> extends ForwardingMap<K, V> implements BiMap<
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Set<V> delegate() {
             return this.valuesDelegate;
@@ -285,7 +285,7 @@ abstract class AbstractBiMap<K, V> extends ForwardingMap<K, V> implements BiMap<
             this.delegate = delegate;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingMapEntry, com.google.common.collect.ForwardingObject
         public Map.Entry<K, V> delegate() {
             return this.delegate;
@@ -306,7 +306,7 @@ abstract class AbstractBiMap<K, V> extends ForwardingMap<K, V> implements BiMap<
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.AbstractBiMap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.AbstractBiMap$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<Map.Entry<K, V>> {
 
         @CheckForNull
@@ -356,7 +356,7 @@ abstract class AbstractBiMap<K, V> extends ForwardingMap<K, V> implements BiMap<
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Set<Map.Entry<K, V>> delegate() {
             return this.esDelegate;

@@ -17,7 +17,7 @@ import java.nio.charset.Charset;
 import java.util.Set;
 import org.apache.http.protocol.HTTP;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class VersionedParcelStream extends VersionedParcel {
     private static final int TYPE_BOOLEAN = 5;
     private static final int TYPE_BOOLEAN_ARRAY = 6;
@@ -69,7 +69,7 @@ class VersionedParcelStream extends VersionedParcel {
         this(inputStream, outputStream, new ArrayMap(), new ArrayMap(), new ArrayMap());
     }
 
-    /* JADX INFO: renamed from: androidx.versionedparcelable.VersionedParcelStream$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.versionedparcelable.VersionedParcelStream$1, reason: invalid class name */
     class AnonymousClass1 extends FilterInputStream {
         AnonymousClass1(InputStream inputStream) {
             super(inputStream);

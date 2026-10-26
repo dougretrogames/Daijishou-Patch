@@ -3,7 +3,7 @@ package com.google.android.material.appbar;
 import android.view.View;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewOffsetHelper {
     private int layoutLeft;
     private int layoutTop;

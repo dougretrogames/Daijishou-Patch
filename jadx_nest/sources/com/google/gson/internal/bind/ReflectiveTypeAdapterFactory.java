@@ -39,7 +39,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ReflectiveTypeAdapterFactory implements TypeAdapterFactory {
     private final ConstructorConstructor constructorConstructor;
     private final Excluder excluder;
@@ -92,7 +92,7 @@ public final class ReflectiveTypeAdapterFactory implements TypeAdapterFactory {
         return new FieldReflectionAdapter(this.constructorConstructor.get(typeToken), getBoundFields(gson, typeToken, rawType, z, false));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <M extends AccessibleObject & Member> void checkAccessible(Object obj, M m) {
         if (Modifier.isStatic(m.getModifiers())) {
             obj = null;
@@ -116,7 +116,7 @@ public final class ReflectiveTypeAdapterFactory implements TypeAdapterFactory {
         return new AnonymousClass1(str, field, z, z2, z3, method, z5, typeAdapter, gson, typeToken, zIsPrimitive, z4);
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$1, reason: invalid class name */
     class AnonymousClass1 extends BoundField {
         final /* synthetic */ Method val$accessor;
         final /* synthetic */ boolean val$blockInaccessible;
@@ -127,7 +127,7 @@ public final class ReflectiveTypeAdapterFactory implements TypeAdapterFactory {
         final /* synthetic */ boolean val$jsonAdapterPresent;
         final /* synthetic */ TypeAdapter val$typeAdapter;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(String str, Field field, boolean z, boolean z2, boolean z3, Method method, boolean z4, TypeAdapter typeAdapter, Gson gson, TypeToken typeToken, boolean z5, boolean z6) {
             super(str, field, z, z2);
             this.val$blockInaccessible = z3;
@@ -194,12 +194,12 @@ public final class ReflectiveTypeAdapterFactory implements TypeAdapterFactory {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:48:0x00eb  */
-    /* JADX WARN: Code duplicated, block: B:50:0x00f3  */
-    /* JADX WARN: Code duplicated, block: B:53:0x010f  */
-    /* JADX WARN: Code duplicated, block: B:65:0x0130 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:68:0x0122 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:71:0x0110 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:48:0x00eb  */
+    /* WARN: Code duplicated, block: B:50:0x00f3  */
+    /* WARN: Code duplicated, block: B:53:0x010f  */
+    /* WARN: Code duplicated, block: B:65:0x0130 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:68:0x0122 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:71:0x0110 A[SYNTHETIC] */
     private Map<String, BoundField> getBoundFields(Gson gson, TypeToken<?> typeToken, Class<?> cls, boolean z, boolean z2) {
         boolean z3;
         Method method;
@@ -486,13 +486,13 @@ public final class ReflectiveTypeAdapterFactory implements TypeAdapterFactory {
             return map;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.Adapter
         public Object[] createAccumulator() {
             return (Object[]) this.constructorArgsDefaults.clone();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.Adapter
         public void readField(Object[] objArr, JsonReader jsonReader, BoundField boundField) throws IOException {
             Integer num = this.componentIndices.get(boundField.fieldName);
@@ -502,7 +502,7 @@ public final class ReflectiveTypeAdapterFactory implements TypeAdapterFactory {
             boundField.readIntoArray(jsonReader, num.intValue(), objArr);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.gson.internal.bind.ReflectiveTypeAdapterFactory.Adapter
         public T finalize(Object[] objArr) {
             try {

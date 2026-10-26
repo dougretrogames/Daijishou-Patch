@@ -18,14 +18,14 @@ import java.util.Set;
 import org.apache.commons.collections4.MapIterator;
 import org.apache.commons.collections4.keyvalue.DefaultMapEntry;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractReferenceMap<K, V> extends AbstractHashedMap<K, V> {
     private ReferenceStrength keyType;
     private boolean purgeValues;
     private transient ReferenceQueue<Object> queue;
     private ReferenceStrength valueType;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.apache.commons.collections4.map.AbstractHashedMap
     protected /* bridge */ /* synthetic */ AbstractHashedMap.HashEntry createEntry(AbstractHashedMap.HashEntry hashEntry, int i, Object obj, Object obj2) {
         return createEntry((AbstractHashedMap.HashEntry<Object, Object>) hashEntry, i, obj, obj2);
@@ -455,7 +455,7 @@ public abstract class AbstractReferenceMap<K, V> extends AbstractHashedMap<K, V>
         return new ReferenceValuesIterator(this);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.apache.commons.collections4.map.AbstractHashedMap
     protected void doReadObject(ObjectInputStream objectInputStream) throws IOException, ClassNotFoundException {
         this.keyType = ReferenceStrength.resolve(objectInputStream.readInt());

@@ -5,9 +5,9 @@ import java.util.concurrent.atomic.AtomicLongFieldUpdater;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* JADX INFO: Access modifiers changed from: private */
-/* JADX INFO: compiled from: DebugProbesImpl.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: Access modifiers changed from: private */
+/* INFO: compiled from: DebugProbesImpl.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 public /* synthetic */ class DebugProbesImpl$DebugProbesImpl$VolatileWrapper$atomicfu$private {
     private static final /* synthetic */ AtomicIntegerFieldUpdater installations$volatile$FU = AtomicIntegerFieldUpdater.newUpdater(DebugProbesImpl$DebugProbesImpl$VolatileWrapper$atomicfu$private.class, "installations$volatile");

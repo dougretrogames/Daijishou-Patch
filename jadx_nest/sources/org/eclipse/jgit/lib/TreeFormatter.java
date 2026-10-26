@@ -10,7 +10,7 @@ import org.eclipse.jgit.revwalk.RevTree;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 import org.eclipse.jgit.util.TemporaryBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TreeFormatter {
     private byte[] buf;
     private TemporaryBuffer.Heap overflowBuffer;

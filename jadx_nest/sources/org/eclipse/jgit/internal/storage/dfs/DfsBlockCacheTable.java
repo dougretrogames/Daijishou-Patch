@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.dfs;
 import java.io.IOException;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface DfsBlockCacheTable {
 
     public interface BlockCacheStats {

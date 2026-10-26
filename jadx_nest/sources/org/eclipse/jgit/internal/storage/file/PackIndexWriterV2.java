@@ -6,7 +6,7 @@ import java.util.Iterator;
 import org.eclipse.jgit.transport.PackedObjectInfo;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PackIndexWriterV2 extends BasePackIndexWriter {
     private static final int IS_OFFSET_64 = Integer.MIN_VALUE;
     private static final int MAX_OFFSET_32 = Integer.MAX_VALUE;

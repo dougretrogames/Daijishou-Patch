@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SideSheetDialog extends SheetDialog<SideSheetCallback> {
     private static final int SIDE_SHEET_DIALOG_THEME_ATTR = R.attr.sideSheetDialogTheme;
     private static final int SIDE_SHEET_DIALOG_DEFAULT_THEME_RES = R.style.Theme_Material3_Light_SideSheetDialog;
@@ -79,7 +79,7 @@ public class SideSheetDialog extends SheetDialog<SideSheetCallback> {
         super(context, i, SIDE_SHEET_DIALOG_THEME_ATTR, SIDE_SHEET_DIALOG_DEFAULT_THEME_RES);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.sidesheet.SideSheetDialog$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.sidesheet.SideSheetDialog$1, reason: invalid class name */
     class AnonymousClass1 extends SideSheetCallback {
         @Override // com.google.android.material.sidesheet.SideSheetCallback, com.google.android.material.sidesheet.SheetCallback
         public void onSlide(View view, float f) {

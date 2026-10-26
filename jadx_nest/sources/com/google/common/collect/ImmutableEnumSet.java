@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.EnumSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class ImmutableEnumSet<E extends Enum<E>> extends ImmutableSet<E> {
     private final transient EnumSet<E> delegate;

@@ -9,13 +9,13 @@ import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.resource.bitmap.BitmapResource;
 import com.bumptech.glide.load.resource.gif.GifDrawable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class DrawableBytesTranscoder implements ResourceTranscoder<Drawable, byte[]> {
     private final ResourceTranscoder<Bitmap, byte[]> bitmapBytesTranscoder;
     private final BitmapPool bitmapPool;
     private final ResourceTranscoder<GifDrawable, byte[]> gifDrawableBytesTranscoder;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private static Resource<GifDrawable> toGifDrawableResource(Resource<Drawable> resource) {
         return resource;
     }

@@ -14,7 +14,7 @@ import com.google.android.material.resources.MaterialResources;
 import com.google.android.material.shape.MaterialShapeDrawable;
 import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialDivider extends View {
     private static final int DEF_STYLE_RES = R.style.Widget_MaterialComponents_MaterialDivider;
     private int color;
@@ -31,7 +31,7 @@ public class MaterialDivider extends View {
         this(context, attributeSet, R.attr.materialDividerStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public MaterialDivider(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);

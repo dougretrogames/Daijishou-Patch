@@ -3,7 +3,7 @@ package io.opencensus.metrics.export;
 import io.opencensus.metrics.LabelKey;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_MetricDescriptor extends MetricDescriptor {
     private final String description;
     private final List<LabelKey> labelKeys;

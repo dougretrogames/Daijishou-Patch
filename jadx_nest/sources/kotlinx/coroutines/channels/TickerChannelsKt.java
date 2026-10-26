@@ -12,13 +12,13 @@ import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.GlobalScope;
 
-/* JADX INFO: compiled from: TickerChannels.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: TickerChannels.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000*\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a,\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00032\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00010\u0006H\u0082@¢\u0006\u0002\u0010\u0007\u001a,\u0010\b\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00032\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00010\u0006H\u0082@¢\u0006\u0002\u0010\u0007\u001a4\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00010\n2\u0006\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\r\u001a\u00020\u000eH\u0007¨\u0006\u000f"}, d2 = {"fixedDelayTicker", "", "delayMillis", "", "initialDelayMillis", "channel", "Lkotlinx/coroutines/channels/SendChannel;", "(JJLkotlinx/coroutines/channels/SendChannel;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "fixedPeriodTicker", "ticker", "Lkotlinx/coroutines/channels/ReceiveChannel;", "context", "Lkotlin/coroutines/CoroutineContext;", "mode", "Lkotlinx/coroutines/channels/TickerMode;", "kotlinx-coroutines-core"}, k = 2, mv = {1, 9, 0}, xi = 48)
 public final class TickerChannelsKt {
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1, reason: invalid class name */
-    /* JADX INFO: compiled from: TickerChannels.kt */
+    /* INFO: renamed from: kotlinx.coroutines.channels.TickerChannelsKt$fixedDelayTicker$1, reason: invalid class name */
+    /* INFO: compiled from: TickerChannels.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.coroutines.channels.TickerChannelsKt", f = "TickerChannels.kt", i = {0, 0, 1, 1, 2, 2}, l = {102, 104, 105}, m = "fixedDelayTicker", n = {"channel", "delayMillis", "channel", "delayMillis", "channel", "delayMillis"}, s = {"L$0", "J$0", "L$0", "J$0", "L$0", "J$0"})
     static final class AnonymousClass1 extends ContinuationImpl {
@@ -39,8 +39,8 @@ public final class TickerChannelsKt {
         }
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: TickerChannels.kt */
+    /* INFO: renamed from: kotlinx.coroutines.channels.TickerChannelsKt$fixedPeriodTicker$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: TickerChannels.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.coroutines.channels.TickerChannelsKt", f = "TickerChannels.kt", i = {0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3}, l = {80, 84, 90, 92}, m = "fixedPeriodTicker", n = {"channel", "delayMillis", "deadline", "channel", "deadline", "delayNs", "channel", "deadline", "delayNs", "channel", "deadline", "delayNs"}, s = {"L$0", "J$0", "J$1", "L$0", "J$0", "J$1", "L$0", "J$0", "J$1", "L$0", "J$0", "J$1"})
     static final class C03831 extends ContinuationImpl {
@@ -85,8 +85,8 @@ public final class TickerChannelsKt {
         return ProduceKt.produce(GlobalScope.INSTANCE, Dispatchers.getUnconfined().plus(coroutineContext), 0, new AnonymousClass3(tickerMode, j, j2, null));
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.channels.TickerChannelsKt$ticker$3, reason: invalid class name */
-    /* JADX INFO: compiled from: TickerChannels.kt */
+    /* INFO: renamed from: kotlinx.coroutines.channels.TickerChannelsKt$ticker$3, reason: invalid class name */
+    /* INFO: compiled from: TickerChannels.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00010\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/channels/ProducerScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.coroutines.channels.TickerChannelsKt$ticker$3", f = "TickerChannels.kt", i = {}, l = {68, 69}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass3 extends SuspendLambda implements Function2<ProducerScope<? super Unit>, Continuation<? super Unit>, Object> {
@@ -96,8 +96,8 @@ public final class TickerChannelsKt {
         private /* synthetic */ Object L$0;
         int label;
 
-        /* JADX INFO: renamed from: kotlinx.coroutines.channels.TickerChannelsKt$ticker$3$WhenMappings */
-        /* JADX INFO: compiled from: TickerChannels.kt */
+        /* INFO: renamed from: kotlinx.coroutines.channels.TickerChannelsKt$ticker$3$WhenMappings */
+        /* INFO: compiled from: TickerChannels.kt */
         @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
         public /* synthetic */ class WhenMappings {
             public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -116,7 +116,7 @@ public final class TickerChannelsKt {
             }
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(TickerMode tickerMode, long j, long j2, Continuation<? super AnonymousClass3> continuation) {
             super(2, continuation);
             this.$mode = tickerMode;
@@ -136,15 +136,15 @@ public final class TickerChannelsKt {
             return ((AnonymousClass3) create(producerScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:14:0x0041, code lost:
+        /* WARN: Code restructure failed: missing block: B:14:0x0041, code lost:
         
             if (kotlinx.coroutines.channels.TickerChannelsKt.fixedDelayTicker(r10.$delayMillis, r10.$initialDelayMillis, r11.getChannel(), r10) == r0) goto L18;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:17:0x0057, code lost:
+        /* WARN: Code restructure failed: missing block: B:17:0x0057, code lost:
         
             if (kotlinx.coroutines.channels.TickerChannelsKt.fixedPeriodTicker(r10.$delayMillis, r10.$initialDelayMillis, r11.getChannel(), r10) == r0) goto L18;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:18:0x0059, code lost:
+        /* WARN: Code restructure failed: missing block: B:18:0x0059, code lost:
         
             return r0;
          */
@@ -213,23 +213,23 @@ public final class TickerChannelsKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:34:0x00be  */
-    /* JADX WARN: Code duplicated, block: B:37:0x00ca  */
-    /* JADX WARN: Code duplicated, block: B:38:0x00cf  */
-    /* JADX WARN: Code duplicated, block: B:41:0x00df  */
-    /* JADX WARN: Code duplicated, block: B:47:0x0102  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0016  */
-    /* JADX WARN: Code restructure failed: missing block: B:44:0x00fb, code lost:
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:34:0x00be  */
+    /* WARN: Code duplicated, block: B:37:0x00ca  */
+    /* WARN: Code duplicated, block: B:38:0x00cf  */
+    /* WARN: Code duplicated, block: B:41:0x00df  */
+    /* WARN: Code duplicated, block: B:47:0x0102  */
+    /* WARN: Code duplicated, block: B:7:0x0016  */
+    /* WARN: Code restructure failed: missing block: B:44:0x00fb, code lost:
     
         if (kotlinx.coroutines.DelayKt.delay(r4, r1) == r2) goto L49;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:48:0x0114, code lost:
+    /* WARN: Code restructure failed: missing block: B:48:0x0114, code lost:
     
         if (kotlinx.coroutines.DelayKt.delay(r4, r1) == r2) goto L49;
      */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:46:0x00fe -> B:31:0x00ac). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:48:0x0114 -> B:15:0x003e). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:46:0x00fe -> B:31:0x00ac). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:48:0x0114 -> B:15:0x003e). Please report as a decompilation issue!!! */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -242,13 +242,13 @@ public final class TickerChannelsKt {
         throw new UnsupportedOperationException("Method not decompiled: kotlinx.coroutines.channels.TickerChannelsKt.fixedPeriodTicker(long, long, kotlinx.coroutines.channels.SendChannel, kotlin.coroutines.Continuation):java.lang.Object");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:27:0x007e, code lost:
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:27:0x007e, code lost:
     
         if (kotlinx.coroutines.DelayKt.delay(r6, r0) == r1) goto L28;
      */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:27:0x007e -> B:14:0x0035). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:27:0x007e -> B:14:0x0035). Please report as a decompilation issue!!! */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument

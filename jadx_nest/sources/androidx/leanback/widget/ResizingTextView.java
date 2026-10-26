@@ -8,7 +8,7 @@ import android.view.ActionMode;
 import android.widget.TextView;
 import androidx.core.widget.TextViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class ResizingTextView extends TextView {
     public static final int TRIGGER_MAX_LINES = 1;
     private float mDefaultLineSpacingExtra;
@@ -112,8 +112,8 @@ class ResizingTextView extends TextView {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x0053  */
-    /* JADX WARN: Code duplicated, block: B:45:0x00d3 A[PHI: r2
+    /* WARN: Code duplicated, block: B:13:0x0053  */
+    /* WARN: Code duplicated, block: B:45:0x00d3 A[PHI: r2
   0x00d3: PHI (r2v7 boolean) = (r2v2 boolean), (r2v9 boolean) binds: [B:43:0x00d0, B:28:0x0099] A[DONT_GENERATE, DONT_INLINE]] */
     @Override // android.widget.TextView, android.view.View
     protected void onMeasure(int i, int i2) {

@@ -7,7 +7,7 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class CompactLinkedHashSet<E> extends CompactHashSet<E> {
     private static final int ENDPOINT = -2;

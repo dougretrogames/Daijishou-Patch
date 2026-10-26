@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface ReachabilityChecker {
     Optional<RevCommit> areAllReachable(Collection<RevCommit> collection, Stream<RevCommit> stream) throws IOException;
 }

@@ -5,7 +5,7 @@ import java.io.Writer;
 import java.util.function.Supplier;
 import org.apache.commons.io.function.Erase;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BrokenWriter extends Writer {
     public static final BrokenWriter INSTANCE = new BrokenWriter();
     private final Supplier<Throwable> exceptionSupplier;

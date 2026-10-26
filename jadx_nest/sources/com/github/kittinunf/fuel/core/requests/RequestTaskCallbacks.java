@@ -17,8 +17,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: RequestTaskCallbacks.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: RequestTaskCallbacks.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0000\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001BS\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u000e\b\u0002\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001\u0012\u0016\u0010\u0006\u001a\u0012\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\b0\u0007j\u0002`\t\u0012\u001c\u0010\n\u001a\u0018\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\b0\u000bj\u0002`\r¢\u0006\u0002\u0010\u000eJ\b\u0010\u000f\u001a\u00020\u0002H\u0016R$\u0010\n\u001a\u0018\u0012\u0004\u0012\u00020\f\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\b0\u000bj\u0002`\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u001e\u0010\u0006\u001a\u0012\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\b0\u0007j\u0002`\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0010"}, d2 = {"Lcom/github/kittinunf/fuel/core/requests/RequestTaskCallbacks;", "Ljava/util/concurrent/Callable;", "Lcom/github/kittinunf/fuel/core/Response;", "request", "Lcom/github/kittinunf/fuel/core/Request;", "task", "onSuccess", "Lkotlin/Function1;", "", "Lcom/github/kittinunf/fuel/core/requests/RequestSuccessCallback;", "onFailure", "Lkotlin/Function2;", "Lcom/github/kittinunf/fuel/core/FuelError;", "Lcom/github/kittinunf/fuel/core/requests/RequestFailureCallback;", "(Lcom/github/kittinunf/fuel/core/Request;Ljava/util/concurrent/Callable;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function2;)V", NotificationCompat.CATEGORY_CALL, "fuel"}, k = 1, mv = {1, 4, 0})
 public final class RequestTaskCallbacks implements Callable<Response> {
     private final Function2<FuelError, Response, Unit> onFailure;
@@ -26,7 +26,7 @@ public final class RequestTaskCallbacks implements Callable<Response> {
     private final Request request;
     private final Callable<Response> task;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public RequestTaskCallbacks(Request request, Callable<Response> task, Function1<? super Response, Unit> onSuccess, Function2<? super FuelError, ? super Response, Unit> onFailure) {
         Intrinsics.checkNotNullParameter(request, "request");
         Intrinsics.checkNotNullParameter(task, "task");
@@ -42,8 +42,8 @@ public final class RequestTaskCallbacks implements Callable<Response> {
         this(request, (i & 2) != 0 ? RequestTaskKt.toTask(request) : callable, function1, function2);
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.requests.RequestTaskCallbacks$call$1, reason: invalid class name */
-    /* JADX INFO: compiled from: RequestTaskCallbacks.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.requests.RequestTaskCallbacks$call$1, reason: invalid class name */
+    /* INFO: compiled from: RequestTaskCallbacks.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u000e\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass1 extends Lambda implements Function0<String> {
         AnonymousClass1() {
@@ -56,7 +56,7 @@ public final class RequestTaskCallbacks implements Callable<Response> {
         }
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // java.util.concurrent.Callable
     public Response call() {
         Object objM3752constructorimpl;

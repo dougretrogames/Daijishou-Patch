@@ -5,7 +5,7 @@ import android.content.res.ColorStateList;
 import android.graphics.drawable.Drawable;
 import android.os.Parcelable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class DayViewDecorator implements Parcelable {
     public ColorStateList getBackgroundColor(Context context, int i, int i2, int i3, boolean z, boolean z2) {
         return null;

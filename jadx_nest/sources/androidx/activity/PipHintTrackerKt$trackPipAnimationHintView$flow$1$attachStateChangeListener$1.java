@@ -6,8 +6,8 @@ import android.view.ViewTreeObserver;
 import kotlin.Metadata;
 import kotlinx.coroutines.channels.ProducerScope;
 
-/* JADX INFO: compiled from: PipHintTracker.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: PipHintTracker.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0019\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016¨\u0006\u0007"}, d2 = {"androidx/activity/PipHintTrackerKt$trackPipAnimationHintView$flow$1$attachStateChangeListener$1", "Landroid/view/View$OnAttachStateChangeListener;", "onViewAttachedToWindow", "", "v", "Landroid/view/View;", "onViewDetachedFromWindow", "activity-ktx_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class PipHintTrackerKt$trackPipAnimationHintView$flow$1$attachStateChangeListener$1 implements View.OnAttachStateChangeListener {
     final /* synthetic */ ProducerScope<Rect> $$this$callbackFlow;
@@ -15,7 +15,7 @@ public final class PipHintTrackerKt$trackPipAnimationHintView$flow$1$attachState
     final /* synthetic */ ViewTreeObserver.OnScrollChangedListener $scrollChangeListener;
     final /* synthetic */ View $view;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     PipHintTrackerKt$trackPipAnimationHintView$flow$1$attachStateChangeListener$1(ProducerScope<? super Rect> producerScope, View view, ViewTreeObserver.OnScrollChangedListener onScrollChangedListener, View.OnLayoutChangeListener onLayoutChangeListener) {
         this.$$this$callbackFlow = producerScope;
         this.$view = view;

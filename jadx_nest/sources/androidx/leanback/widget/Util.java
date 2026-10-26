@@ -3,7 +3,7 @@ package androidx.leanback.widget;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Util {
     public static boolean isDescendant(ViewGroup viewGroup, View view) {
         while (view != null) {

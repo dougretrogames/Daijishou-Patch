@@ -9,7 +9,7 @@ import android.view.WindowInsets;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ViewUtils {
     static final boolean SDK_LEVEL_SUPPORTS_AUTOSIZE;
     private static final String TAG = "ViewUtils";

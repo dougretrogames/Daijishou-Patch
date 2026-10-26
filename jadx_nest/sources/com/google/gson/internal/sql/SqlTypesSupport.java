@@ -5,7 +5,7 @@ import com.google.gson.internal.bind.DefaultDateTypeAdapter;
 import java.sql.Timestamp;
 import java.util.Date;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class SqlTypesSupport {
     public static final DefaultDateTypeAdapter.DateType<? extends Date> DATE_DATE_TYPE;
     public static final TypeAdapterFactory DATE_FACTORY;
@@ -38,26 +38,26 @@ public final class SqlTypesSupport {
         TIMESTAMP_FACTORY = null;
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.sql.SqlTypesSupport$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.sql.SqlTypesSupport$1, reason: invalid class name */
     class AnonymousClass1 extends DefaultDateTypeAdapter.DateType<java.sql.Date> {
         AnonymousClass1(Class cls) {
             super(cls);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.gson.internal.bind.DefaultDateTypeAdapter.DateType
         public java.sql.Date deserialize(Date date) {
             return new java.sql.Date(date.getTime());
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.sql.SqlTypesSupport$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.sql.SqlTypesSupport$2, reason: invalid class name */
     class AnonymousClass2 extends DefaultDateTypeAdapter.DateType<Timestamp> {
         AnonymousClass2(Class cls) {
             super(cls);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.gson.internal.bind.DefaultDateTypeAdapter.DateType
         public Timestamp deserialize(Date date) {
             return new Timestamp(date.getTime());

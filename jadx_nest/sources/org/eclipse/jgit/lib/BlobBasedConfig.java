@@ -12,7 +12,7 @@ import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BlobBasedConfig extends Config {
     public BlobBasedConfig(Config config, byte[] bArr) throws ConfigInvalidException {
         String strDecode;

@@ -12,7 +12,7 @@ import com.google.gson.stream.JsonToken;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class NumberTypeAdapter extends TypeAdapter<Number> {
     private static final TypeAdapterFactory LAZILY_PARSED_NUMBER_FACTORY = newFactory(ToNumberPolicy.LAZILY_PARSED_NUMBER);
     private final ToNumberStrategy toNumberStrategy;
@@ -21,7 +21,7 @@ public final class NumberTypeAdapter extends TypeAdapter<Number> {
         this.toNumberStrategy = toNumberStrategy;
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.NumberTypeAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.NumberTypeAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements TypeAdapterFactory {
         AnonymousClass1() {
         }
@@ -46,7 +46,7 @@ public final class NumberTypeAdapter extends TypeAdapter<Number> {
         return newFactory(toNumberStrategy);
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.NumberTypeAdapter$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.NumberTypeAdapter$2, reason: invalid class name */
     static /* synthetic */ class AnonymousClass2 {
         static final /* synthetic */ int[] $SwitchMap$com$google$gson$stream$JsonToken;
 
@@ -68,7 +68,7 @@ public final class NumberTypeAdapter extends TypeAdapter<Number> {
         }
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.google.gson.TypeAdapter
     public Number read(JsonReader jsonReader) throws IOException {
         JsonToken jsonTokenPeek = jsonReader.peek();

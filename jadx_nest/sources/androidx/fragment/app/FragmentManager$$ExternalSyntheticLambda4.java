@@ -3,8 +3,8 @@ package androidx.fragment.app;
 import android.os.Bundle;
 import androidx.savedstate.SavedStateRegistry;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class FragmentManager$$ExternalSyntheticLambda4 implements SavedStateRegistry.SavedStateProvider {
     public final /* synthetic */ FragmentManager f$0;
 

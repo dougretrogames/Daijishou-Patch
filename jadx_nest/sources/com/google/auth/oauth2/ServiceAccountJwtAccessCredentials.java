@@ -31,7 +31,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ServiceAccountJwtAccessCredentials extends Credentials implements JwtProvider, ServiceAccountSigner, QuotaProjectIdProvider {
     static final String JWT_ACCESS_PREFIX = "Bearer ";
     private static final long serialVersionUID = -7274955171379494197L;
@@ -124,7 +124,7 @@ public class ServiceAccountJwtAccessCredentials extends Credentials implements J
         return CacheBuilder.newBuilder().maximumSize(100L).expireAfterWrite(LIFE_SPAN_SECS - CLOCK_SKEW, TimeUnit.SECONDS).ticker(new AnonymousClass2()).build(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.auth.oauth2.ServiceAccountJwtAccessCredentials$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.auth.oauth2.ServiceAccountJwtAccessCredentials$2, reason: invalid class name */
     class AnonymousClass2 extends Ticker {
         AnonymousClass2() {
         }
@@ -135,7 +135,7 @@ public class ServiceAccountJwtAccessCredentials extends Credentials implements J
         }
     }
 
-    /* JADX INFO: renamed from: com.google.auth.oauth2.ServiceAccountJwtAccessCredentials$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.auth.oauth2.ServiceAccountJwtAccessCredentials$1, reason: invalid class name */
     class AnonymousClass1 extends CacheLoader<JwtClaims, JwtCredentials> {
         AnonymousClass1() {
         }

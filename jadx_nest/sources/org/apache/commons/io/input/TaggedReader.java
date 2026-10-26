@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.UUID;
 import org.apache.commons.io.TaggedIOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TaggedReader extends ProxyReader {
     private final Serializable tag;
 

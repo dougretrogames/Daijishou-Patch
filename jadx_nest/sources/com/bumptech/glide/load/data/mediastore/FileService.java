@@ -2,7 +2,7 @@ package com.bumptech.glide.load.data.mediastore;
 
 import java.io.File;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class FileService {
     FileService() {
     }

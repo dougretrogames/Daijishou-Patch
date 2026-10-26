@@ -9,11 +9,11 @@ import org.apache.commons.collections4.Unmodifiable;
 import org.apache.commons.collections4.iterators.UnmodifiableIterator;
 import org.apache.commons.collections4.iterators.UnmodifiableListIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UnmodifiableList<E> extends AbstractSerializableListDecorator<E> implements Unmodifiable {
     private static final long serialVersionUID = 6595182819922443652L;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <E> List<E> unmodifiableList(List<? extends E> list) {
         return list instanceof Unmodifiable ? list : new UnmodifiableList(list);
     }

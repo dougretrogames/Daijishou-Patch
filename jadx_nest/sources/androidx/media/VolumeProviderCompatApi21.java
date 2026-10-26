@@ -2,7 +2,7 @@ package androidx.media;
 
 import android.media.VolumeProvider;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class VolumeProviderCompatApi21 {
 
     public interface Delegate {
@@ -11,11 +11,11 @@ class VolumeProviderCompatApi21 {
         void onSetVolumeTo(int i);
     }
 
-    /* JADX INFO: renamed from: androidx.media.VolumeProviderCompatApi21$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.media.VolumeProviderCompatApi21$1, reason: invalid class name */
     static class AnonymousClass1 extends VolumeProvider {
         final /* synthetic */ Delegate val$delegate;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(int i, int i2, int i3, Delegate delegate) {
             super(i, i2, i3);
             this.val$delegate = delegate;

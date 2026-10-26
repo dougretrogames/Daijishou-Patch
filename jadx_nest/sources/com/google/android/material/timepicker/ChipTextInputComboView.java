@@ -24,7 +24,7 @@ import com.google.android.material.internal.ViewUtils;
 import com.google.android.material.textfield.TextInputLayout;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ChipTextInputComboView extends FrameLayout implements Checkable {
     private final Chip chip;
     private final EditText editText;
@@ -103,7 +103,7 @@ class ChipTextInputComboView extends FrameLayout implements Checkable {
         return this.chip.getText();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public String formatText(CharSequence charSequence) {
         return TimeModel.formatText(getResources(), charSequence);
     }

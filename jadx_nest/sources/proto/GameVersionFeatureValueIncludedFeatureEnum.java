@@ -5,7 +5,7 @@ import com.google.protobuf.Internal;
 import com.google.protobuf.ProtocolMessageEnum;
 import com.google.protobuf.RuntimeVersion;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public enum GameVersionFeatureValueIncludedFeatureEnum implements ProtocolMessageEnum {
     NOT_INCLUDED(0),
     INCLUDED(1),
@@ -55,7 +55,7 @@ public enum GameVersionFeatureValueIncludedFeatureEnum implements ProtocolMessag
         return internalValueMap;
     }
 
-    /* JADX INFO: renamed from: proto.GameVersionFeatureValueIncludedFeatureEnum$1, reason: invalid class name */
+    /* INFO: renamed from: proto.GameVersionFeatureValueIncludedFeatureEnum$1, reason: invalid class name */
     class AnonymousClass1 implements Internal.EnumLiteMap<GameVersionFeatureValueIncludedFeatureEnum> {
         AnonymousClass1() {
         }

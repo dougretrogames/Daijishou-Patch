@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.io.InterruptedIOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StreamCopyThread extends Thread {
     private static final int BUFFER_SIZE = 1024;
     private volatile boolean done;
@@ -31,10 +31,10 @@ public class StreamCopyThread extends Thread {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:22:0x002d A[Catch: IOException -> 0x0045, all -> 0x0050, TRY_ENTER, TryCatch #1 {all -> 0x0050, blocks: (B:3:0x0002, B:6:0x0008, B:7:0x000a, B:15:0x001e, B:16:0x001f, B:19:0x0024, B:22:0x002d, B:23:0x002f, B:31:0x0042), top: B:47:0x0002 }] */
-    /* JADX WARN: Code duplicated, block: B:26:0x003b A[Catch: all -> 0x0040, TryCatch #0 {, blocks: (B:24:0x0030, B:26:0x003b, B:27:0x003e), top: B:45:0x0030 }] */
-    /* JADX WARN: Code duplicated, block: B:45:0x0030 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:53:0x0024 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:22:0x002d A[Catch: IOException -> 0x0045, all -> 0x0050, TRY_ENTER, TryCatch #1 {all -> 0x0050, blocks: (B:3:0x0002, B:6:0x0008, B:7:0x000a, B:15:0x001e, B:16:0x001f, B:19:0x0024, B:22:0x002d, B:23:0x002f, B:31:0x0042), top: B:47:0x0002 }] */
+    /* WARN: Code duplicated, block: B:26:0x003b A[Catch: all -> 0x0040, TryCatch #0 {, blocks: (B:24:0x0030, B:26:0x003b, B:27:0x003e), top: B:45:0x0030 }] */
+    /* WARN: Code duplicated, block: B:45:0x0030 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:53:0x0024 A[EXC_TOP_SPLITTER, SYNTHETIC] */
     @Override // java.lang.Thread, java.lang.Runnable
     public void run() {
         int i;

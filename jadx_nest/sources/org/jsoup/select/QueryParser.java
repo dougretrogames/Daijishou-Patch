@@ -21,7 +21,7 @@ import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
 import org.jsoup.parser.TokenQueue;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class QueryParser implements AutoCloseable {
     private boolean inNodeContext;
     private final String query;
@@ -179,7 +179,7 @@ public class QueryParser implements AutoCloseable {
         return new CombiningEvaluator.And(evaluator, evaluator2);
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     private Evaluator parsePseudoSelector() {
         String strConsumeCssIdentifier = this.tq.consumeCssIdentifier();
         strConsumeCssIdentifier.hashCode();
@@ -537,7 +537,7 @@ public class QueryParser implements AutoCloseable {
         throw new Selector.SelectorParseException("Could not parse attribute query '%s': unexpected token at '%s'", this.query, tokenQueue.remainder());
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x001d A[PHI: r3
+    /* WARN: Code duplicated, block: B:7:0x001d A[PHI: r3
   0x001d: PHI (r3v7 int) = (r3v0 int), (r3v5 int) binds: [B:6:0x001b, B:18:0x0057] A[DONT_GENERATE, DONT_INLINE]] */
     private Evaluator cssNthChild(boolean z, boolean z2) {
         String strNormalize = Normalizer.normalize(consumeParens());

@@ -21,8 +21,8 @@ import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: Operations.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Operations.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0088\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0015\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0011\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u001c\n\u0002\b\u0004\b\u0000\u0018\u0000 J2\u00020\u0001:\u0003JKLB\u0005¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0015\u001a\u00020\u0016J\u0010\u0010\u0017\u001a\u00020\u00062\u0006\u0010\u0018\u001a\u00020\u0006H\u0002J\u0018\u0010\u0019\u001a\u00020\u00062\u0006\u0010\u001a\u001a\u00020\u00062\u0006\u0010\u001b\u001a\u00020\u0006H\u0002J&\u0010\u001c\u001a\u00020\u00162\u001b\u0010\u001d\u001a\u0017\u0012\b\u0012\u00060\u001fR\u00020\u0000\u0012\u0004\u0012\u00020\u00160\u001e¢\u0006\u0002\b H\u0086\bJ\u0010\u0010!\u001a\u00020\u00162\u0006\u0010\u001b\u001a\u00020\u0006H\u0002J\u0010\u0010\"\u001a\u00020\u00162\u0006\u0010\u001b\u001a\u00020\u0006H\u0002J\"\u0010#\u001a\u00020\u00162\n\u0010$\u001a\u0006\u0012\u0002\b\u00030%2\u0006\u0010&\u001a\u00020'2\u0006\u0010(\u001a\u00020)J&\u0010*\u001a\u00020\u00162\u001b\u0010+\u001a\u0017\u0012\b\u0012\u00060\u001fR\u00020\u0000\u0012\u0004\u0012\u00020\u00160\u001e¢\u0006\u0002\b H\u0086\bJ\u0006\u0010,\u001a\u00020-J\u0006\u0010.\u001a\u00020-J\b\u0010/\u001a\u00020\rH\u0002J\u0006\u00100\u001a\u00020\u0016J\u000e\u00101\u001a\u00020\u00162\u0006\u00102\u001a\u00020\u0000J\u000e\u00103\u001a\u00020\u00162\u0006\u00104\u001a\u00020\rJ7\u00103\u001a\u00020\u00162\u0006\u00104\u001a\u00020\r2\u0017\u00105\u001a\u0013\u0012\u0004\u0012\u000206\u0012\u0004\u0012\u00020\u00160\u001e¢\u0006\u0002\b H\u0086\b\u0082\u0002\n\n\b\b\u0001\u0012\u0002\u0010\u0002 \u0001J\u0010\u00107\u001a\u00020\u00162\u0006\u00104\u001a\u00020\rH\u0007J\u0010\u00108\u001a\u0002092\u0006\u0010:\u001a\u000209H\u0016J\b\u0010;\u001a\u000209H\u0017J\u001a\u0010<\u001a\u00020\u00062\u0006\u0010=\u001a\u00020>H\u0002ø\u0001\u0000¢\u0006\u0004\b?\u0010@J\u001e\u0010A\u001a\u00020\u00062\n\u0010=\u001a\u0006\u0012\u0002\b\u00030BH\u0002ø\u0001\u0000¢\u0006\u0004\bC\u0010@J\u0018\u0010D\u001a\u000209*\u00060\u001fR\u00020\u00002\u0006\u0010:\u001a\u000209H\u0002J\u0016\u0010E\u001a\u000209*\u0004\u0018\u00010\t2\u0006\u0010:\u001a\u000209H\u0002J\f\u0010F\u001a\u000209*\u000209H\u0002J \u0010G\u001a\u000209\"\u0004\b\u0000\u0010H*\b\u0012\u0004\u0012\u0002HH0I2\u0006\u0010:\u001a\u000209H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0018\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\t0\bX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\nR\u000e\u0010\u000b\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0018\u0010\f\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\r0\bX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u000eR\u000e\u0010\u000f\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0011\u0010\u0012\u001a\u00020\u00068F¢\u0006\u0006\u001a\u0004\b\u0013\u0010\u0014\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006M"}, d2 = {"Landroidx/compose/runtime/changelist/Operations;", "Landroidx/compose/runtime/changelist/OperationsDebugStringFormattable;", "()V", "intArgs", "", "intArgsSize", "", "objectArgs", "", "", "[Ljava/lang/Object;", "objectArgsSize", "opCodes", "Landroidx/compose/runtime/changelist/Operation;", "[Landroidx/compose/runtime/changelist/Operation;", "opCodesSize", "pushedIntMask", "pushedObjectMask", "size", "getSize", "()I", "clear", "", "createExpectedArgMask", "paramCount", "determineNewSize", "currentSize", "requiredSize", "drain", "sink", "Lkotlin/Function1;", "Landroidx/compose/runtime/changelist/Operations$OpIterator;", "Lkotlin/ExtensionFunctionType;", "ensureIntArgsSizeAtLeast", "ensureObjectArgsSizeAtLeast", "executeAndFlushAllPendingOperations", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "forEach", "action", "isEmpty", "", "isNotEmpty", "peekOperation", "pop", "popInto", "other", ConfigConstants.CONFIG_PUSH_SECTION, "operation", "args", "Landroidx/compose/runtime/changelist/Operations$WriteScope;", "pushOp", "toDebugString", "", "linePrefix", "toString", "topIntIndexOf", "parameter", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "topIntIndexOf-w8GmfQM", "(I)I", "topObjectIndexOf", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "topObjectIndexOf-31yXWZQ", "currentOpToDebugString", "formatOpArgumentToString", "indent", "toCollectionString", ExifInterface.GPS_DIRECTION_TRUE, "", "Companion", "OpIterator", "WriteScope", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class Operations implements OperationsDebugStringFormattable {
     public static final int InitialCapacity = 16;
@@ -37,7 +37,7 @@ public final class Operations implements OperationsDebugStringFormattable {
     private int[] intArgs = new int[16];
     private Object[] objectArgs = new Object[16];
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final int createExpectedArgMask(int paramCount) {
         if (paramCount == 0) {
             return 0;
@@ -45,7 +45,7 @@ public final class Operations implements OperationsDebugStringFormattable {
         return (-1) >>> (32 - paramCount);
     }
 
-    /* JADX INFO: renamed from: getSize, reason: from getter */
+    /* INFO: renamed from: getSize, reason: from getter */
     public final int getOpCodesSize() {
         return this.opCodesSize;
     }
@@ -228,57 +228,57 @@ public final class Operations implements OperationsDebugStringFormattable {
         return str + "    ";
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final Operation peekOperation() {
         Operation operation = this.opCodes[this.opCodesSize - 1];
         Intrinsics.checkNotNull(operation);
         return operation;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: topIntIndexOf-w8GmfQM, reason: not valid java name */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: renamed from: topIntIndexOf-w8GmfQM, reason: not valid java name */
     public final int m134topIntIndexOfw8GmfQM(int parameter) {
         return (this.intArgsSize - peekOperation().getInts()) + parameter;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: topObjectIndexOf-31yXWZQ, reason: not valid java name */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: renamed from: topObjectIndexOf-31yXWZQ, reason: not valid java name */
     public final int m135topObjectIndexOf31yXWZQ(int parameter) {
         return (this.objectArgsSize - peekOperation().getObjects()) + parameter;
     }
 
-    /* JADX INFO: compiled from: Operations.kt */
+    /* INFO: compiled from: Operations.kt */
     @Metadata(d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0003\b\u0087@\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u001a\u0010\n\u001a\u00020\u000b2\b\u0010\f\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b\r\u0010\u000eJ\u0010\u0010\u000f\u001a\u00020\u0010HÖ\u0001¢\u0006\u0004\b\u0011\u0010\u0012J \u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0010ø\u0001\u0000¢\u0006\u0004\b\u0018\u0010\u0019J,\u0010\u001a\u001a\u00020\u0014\"\u0004\b\u0000\u0010\u001b2\f\u0010\u0015\u001a\b\u0012\u0004\u0012\u0002H\u001b0\u001c2\u0006\u0010\u0017\u001a\u0002H\u001bø\u0001\u0000¢\u0006\u0004\b\u001d\u0010\u001eJ\u0010\u0010\u001f\u001a\u00020 HÖ\u0001¢\u0006\u0004\b!\u0010\"R\u0011\u0010\u0006\u001a\u00020\u00078F¢\u0006\u0006\u001a\u0004\b\b\u0010\tR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000\u0088\u0001\u0002\u0092\u0001\u00020\u0003\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006#"}, d2 = {"Landroidx/compose/runtime/changelist/Operations$WriteScope;", "", "stack", "Landroidx/compose/runtime/changelist/Operations;", "constructor-impl", "(Landroidx/compose/runtime/changelist/Operations;)Landroidx/compose/runtime/changelist/Operations;", "operation", "Landroidx/compose/runtime/changelist/Operation;", "getOperation-impl", "(Landroidx/compose/runtime/changelist/Operations;)Landroidx/compose/runtime/changelist/Operation;", "equals", "", "other", "equals-impl", "(Landroidx/compose/runtime/changelist/Operations;Ljava/lang/Object;)Z", "hashCode", "", "hashCode-impl", "(Landroidx/compose/runtime/changelist/Operations;)I", "setInt", "", "parameter", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "value", "setInt-A6tL2VI", "(Landroidx/compose/runtime/changelist/Operations;II)V", "setObject", ExifInterface.GPS_DIRECTION_TRUE, "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "setObject-DKhxnng", "(Landroidx/compose/runtime/changelist/Operations;ILjava/lang/Object;)V", "toString", "", "toString-impl", "(Landroidx/compose/runtime/changelist/Operations;)Ljava/lang/String;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     @JvmInline
     public static final class WriteScope {
         private final Operations stack;
 
-        /* JADX INFO: renamed from: box-impl, reason: not valid java name */
+        /* INFO: renamed from: box-impl, reason: not valid java name */
         public static final /* synthetic */ WriteScope m136boximpl(Operations operations) {
             return new WriteScope(operations);
         }
 
-        /* JADX INFO: renamed from: constructor-impl, reason: not valid java name */
+        /* INFO: renamed from: constructor-impl, reason: not valid java name */
         public static Operations m137constructorimpl(Operations operations) {
             return operations;
         }
 
-        /* JADX INFO: renamed from: equals-impl, reason: not valid java name */
+        /* INFO: renamed from: equals-impl, reason: not valid java name */
         public static boolean m138equalsimpl(Operations operations, Object obj) {
             return (obj instanceof WriteScope) && Intrinsics.areEqual(operations, ((WriteScope) obj).getStack());
         }
 
-        /* JADX INFO: renamed from: equals-impl0, reason: not valid java name */
+        /* INFO: renamed from: equals-impl0, reason: not valid java name */
         public static final boolean m139equalsimpl0(Operations operations, Operations operations2) {
             return Intrinsics.areEqual(operations, operations2);
         }
 
-        /* JADX INFO: renamed from: hashCode-impl, reason: not valid java name */
+        /* INFO: renamed from: hashCode-impl, reason: not valid java name */
         public static int m141hashCodeimpl(Operations operations) {
             return operations.hashCode();
         }
 
-        /* JADX INFO: renamed from: toString-impl, reason: not valid java name */
+        /* INFO: renamed from: toString-impl, reason: not valid java name */
         public static String m144toStringimpl(Operations operations) {
             return "WriteScope(stack=" + operations + ')';
         }
@@ -295,7 +295,7 @@ public final class Operations implements OperationsDebugStringFormattable {
             return m144toStringimpl(this.stack);
         }
 
-        /* JADX INFO: renamed from: unbox-impl, reason: not valid java name and from getter */
+        /* INFO: renamed from: unbox-impl, reason: not valid java name and from getter */
         public final /* synthetic */ Operations getStack() {
             return this.stack;
         }
@@ -304,12 +304,12 @@ public final class Operations implements OperationsDebugStringFormattable {
             this.stack = operations;
         }
 
-        /* JADX INFO: renamed from: getOperation-impl, reason: not valid java name */
+        /* INFO: renamed from: getOperation-impl, reason: not valid java name */
         public static final Operation m140getOperationimpl(Operations operations) {
             return operations.peekOperation();
         }
 
-        /* JADX INFO: renamed from: setInt-A6tL2VI, reason: not valid java name */
+        /* INFO: renamed from: setInt-A6tL2VI, reason: not valid java name */
         public static final void m142setIntA6tL2VI(Operations operations, int i, int i2) {
             int i3 = 1 << i;
             if ((operations.pushedIntMask & i3) == 0) {
@@ -320,7 +320,7 @@ public final class Operations implements OperationsDebugStringFormattable {
             throw new IllegalStateException(("Already pushed argument " + m140getOperationimpl(operations).mo72intParamNamew8GmfQM(i)).toString());
         }
 
-        /* JADX INFO: renamed from: setObject-DKhxnng, reason: not valid java name */
+        /* INFO: renamed from: setObject-DKhxnng, reason: not valid java name */
         public static final <T> void m143setObjectDKhxnng(Operations operations, int i, T t) {
             int i2 = 1 << i;
             if ((operations.pushedObjectMask & i2) == 0) {
@@ -332,7 +332,7 @@ public final class Operations implements OperationsDebugStringFormattable {
         }
     }
 
-    /* JADX INFO: compiled from: Operations.kt */
+    /* INFO: compiled from: Operations.kt */
     @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\b\u0086\u0004\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u001a\u0010\u000b\u001a\u00020\u00042\u0006\u0010\f\u001a\u00020\rH\u0016ø\u0001\u0000¢\u0006\u0004\b\u000e\u0010\u000fJ&\u0010\u0010\u001a\u0002H\u0011\"\u0004\b\u0000\u0010\u00112\f\u0010\f\u001a\b\u0012\u0004\u0012\u0002H\u00110\u0012H\u0016ø\u0001\u0000¢\u0006\u0004\b\u0013\u0010\u0014J\u0006\u0010\u0015\u001a\u00020\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u0011\u0010\u0007\u001a\u00020\b8F¢\u0006\u0006\u001a\u0004\b\t\u0010\n\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006\u0017"}, d2 = {"Landroidx/compose/runtime/changelist/Operations$OpIterator;", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "(Landroidx/compose/runtime/changelist/Operations;)V", "intIdx", "", "objIdx", "opIdx", "operation", "Landroidx/compose/runtime/changelist/Operation;", "getOperation", "()Landroidx/compose/runtime/changelist/Operation;", "getInt", "parameter", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "getInt-w8GmfQM", "(I)I", "getObject", ExifInterface.GPS_DIRECTION_TRUE, "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "getObject-31yXWZQ", "(I)Ljava/lang/Object;", "next", "", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public final class OpIterator implements OperationArgContainer {
         private int intIdx;
@@ -361,13 +361,13 @@ public final class Operations implements OperationsDebugStringFormattable {
         }
 
         @Override // androidx.compose.runtime.changelist.OperationArgContainer
-        /* JADX INFO: renamed from: getInt-w8GmfQM */
+        /* INFO: renamed from: getInt-w8GmfQM */
         public int mo130getIntw8GmfQM(int parameter) {
             return Operations.this.intArgs[this.intIdx + parameter];
         }
 
         @Override // androidx.compose.runtime.changelist.OperationArgContainer
-        /* JADX INFO: renamed from: getObject-31yXWZQ */
+        /* INFO: renamed from: getObject-31yXWZQ */
         public <T> T mo131getObject31yXWZQ(int parameter) {
             return (T) Operations.this.objectArgs[this.objIdx + parameter];
         }
@@ -451,7 +451,7 @@ public final class Operations implements OperationsDebugStringFormattable {
         return string;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final String formatOpArgumentToString(Object obj, String str) {
         if (obj == null) {
             return AbstractJsonLexerKt.NULL;
@@ -477,20 +477,20 @@ public final class Operations implements OperationsDebugStringFormattable {
         return obj instanceof OperationsDebugStringFormattable ? ((OperationsDebugStringFormattable) obj).toDebugString(str) : obj.toString();
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: androidx.compose.runtime.changelist.Operations$toCollectionString$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Operations.kt */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: androidx.compose.runtime.changelist.Operations$toCollectionString$1, reason: invalid class name */
+    /* INFO: compiled from: Operations.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\r\n\u0002\b\u0004\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001a\u0002H\u0002H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "it", "invoke", "(Ljava/lang/Object;)Ljava/lang/CharSequence;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1<T> extends Lambda implements Function1<T, CharSequence> {
         final /* synthetic */ String $linePrefix;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(String str) {
             super(1);
             this.$linePrefix = str;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function1
         public final CharSequence invoke(T t) {
             return Operations.this.formatOpArgumentToString(t, this.$linePrefix);

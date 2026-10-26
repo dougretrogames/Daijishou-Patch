@@ -4,14 +4,14 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class IteratorAggregation {
     public static final int DEFAULT_MAX_BUF_SIZE = 65536;
 
     private IteratorAggregation() {
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.IteratorAggregation$1, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.IteratorAggregation$1, reason: invalid class name */
     class AnonymousClass1 implements IteratingRLW {
         final /* synthetic */ IteratingRLW val$x;
 
@@ -60,7 +60,7 @@ public final class IteratorAggregation {
         }
 
         @Override // com.googlecode.javaewah.IteratingRLW
-        /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+        /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
         public IteratingRLW m3463clone() throws CloneNotSupportedException {
             throw new CloneNotSupportedException();
         }

@@ -33,7 +33,7 @@ import org.commonmark.node.Text;
 import org.commonmark.node.ThematicBreak;
 import org.commonmark.renderer.NodeRenderer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CoreHtmlNodeRenderer extends AbstractVisitor implements NodeRenderer {
     protected final HtmlNodeRendererContext context;
     private final HtmlWriter html;

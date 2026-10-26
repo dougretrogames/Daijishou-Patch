@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.reftable;
 import java.io.IOException;
 import org.eclipse.jgit.lib.ReflogEntry;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class EmptyLogCursor extends LogCursor {
     @Override // org.eclipse.jgit.internal.storage.reftable.LogCursor, java.lang.AutoCloseable
     public void close() {

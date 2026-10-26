@@ -6,7 +6,7 @@ import java.text.NumberFormat;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class LoggingByteArrayOutputStream extends ByteArrayOutputStream {
     private int bytesWritten;
     private boolean closed;

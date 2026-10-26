@@ -6,7 +6,7 @@ import android.net.Uri;
 import android.provider.DocumentsContract;
 import java.io.FileNotFoundException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class DocumentsContractCompat {
     private static final String PATH_TREE = "tree";
 

@@ -6,7 +6,7 @@ import java.io.Writer;
 import java.util.UUID;
 import org.apache.commons.io.TaggedIOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TaggedWriter extends ProxyWriter {
     private final Serializable tag;
 

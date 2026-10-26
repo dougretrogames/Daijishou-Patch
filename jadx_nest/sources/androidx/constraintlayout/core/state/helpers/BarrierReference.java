@@ -6,7 +6,7 @@ import androidx.constraintlayout.core.state.State;
 import androidx.constraintlayout.core.widgets.Barrier;
 import androidx.constraintlayout.core.widgets.HelperWidget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class BarrierReference extends HelperReference {
     private Barrier mBarrierWidget;
     private State.Direction mDirection;
@@ -56,7 +56,7 @@ public class BarrierReference extends HelperReference {
         this.mBarrierWidget.setMargin(this.mMargin);
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.core.state.helpers.BarrierReference$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.core.state.helpers.BarrierReference$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$androidx$constraintlayout$core$state$State$Direction;
 

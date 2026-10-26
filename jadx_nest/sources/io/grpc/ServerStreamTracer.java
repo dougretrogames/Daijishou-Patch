@@ -2,7 +2,7 @@ package io.grpc;
 
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ServerStreamTracer extends StreamTracer {
 
     public static abstract class Factory {
@@ -44,7 +44,7 @@ public abstract class ServerStreamTracer extends StreamTracer {
             return false;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static <ReqT, RespT> ReadOnlyServerCall<ReqT, RespT> create(ServerCallInfo<ReqT, RespT> serverCallInfo) {
             return new ReadOnlyServerCall<>(serverCallInfo);
         }

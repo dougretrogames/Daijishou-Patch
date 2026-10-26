@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DateValidatorPointBackward implements CalendarConstraints.DateValidator {
     public static final Parcelable.Creator<DateValidatorPointBackward> CREATOR = new AnonymousClass1();
     private final long point;
@@ -30,18 +30,18 @@ public class DateValidatorPointBackward implements CalendarConstraints.DateValid
         return before(UtcDates.getTodayCalendar().getTimeInMillis());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.DateValidatorPointBackward$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.DateValidatorPointBackward$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.Creator<DateValidatorPointBackward> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public DateValidatorPointBackward createFromParcel(Parcel parcel) {
             return new DateValidatorPointBackward(parcel.readLong(), null);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public DateValidatorPointBackward[] newArray(int i) {
             return new DateValidatorPointBackward[i];

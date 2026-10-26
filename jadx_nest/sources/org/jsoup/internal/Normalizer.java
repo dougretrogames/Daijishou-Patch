@@ -4,7 +4,7 @@ import java.util.Locale;
 import org.jsoup.nodes.Attribute;
 import org.jsoup.nodes.Document;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Normalizer {
     public static String lowerCase(String str) {
         return str != null ? str.toLowerCase(Locale.ROOT) : "";

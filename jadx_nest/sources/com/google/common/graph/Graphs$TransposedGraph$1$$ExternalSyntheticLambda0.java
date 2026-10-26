@@ -2,8 +2,8 @@ package com.google.common.graph;
 
 import com.google.common.base.Function;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class Graphs$TransposedGraph$1$$ExternalSyntheticLambda0 implements Function {
     public final /* synthetic */ Graphs.TransposedGraph.AnonymousClass1 f$0;
 

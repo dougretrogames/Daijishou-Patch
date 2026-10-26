@@ -3,7 +3,7 @@ package org.eclipse.jgit.blame;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.codec.language.Soundex;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class Region {
     int length;
     Region next;

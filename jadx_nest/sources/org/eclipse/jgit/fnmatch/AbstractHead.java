@@ -3,7 +3,7 @@ package org.eclipse.jgit.fnmatch;
 import java.util.List;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class AbstractHead implements Head {
     private List<Head> newHeads = null;
     private final boolean star;

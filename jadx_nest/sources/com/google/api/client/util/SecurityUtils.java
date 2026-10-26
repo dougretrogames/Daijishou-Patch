@@ -23,7 +23,7 @@ import java.util.Iterator;
 import java.util.List;
 import javax.net.ssl.X509TrustManager;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class SecurityUtils {
     public static KeyStore getDefaultKeyStore() throws KeyStoreException {
         return KeyStore.getInstance(KeyStore.getDefaultType());

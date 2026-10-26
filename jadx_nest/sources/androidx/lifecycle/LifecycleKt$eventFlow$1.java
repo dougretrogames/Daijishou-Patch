@@ -13,8 +13,8 @@ import kotlin.jvm.internal.Lambda;
 import kotlinx.coroutines.channels.ProduceKt;
 import kotlinx.coroutines.channels.ProducerScope;
 
-/* JADX INFO: compiled from: Lifecycle.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Lifecycle.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00030\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/channels/ProducerScope;", "Landroidx/lifecycle/Lifecycle$Event;"}, k = 3, mv = {1, 8, 0}, xi = 48)
 @DebugMetadata(c = "androidx.lifecycle.LifecycleKt$eventFlow$1", f = "Lifecycle.kt", i = {}, l = {388}, m = "invokeSuspend", n = {}, s = {})
 final class LifecycleKt$eventFlow$1 extends SuspendLambda implements Function2<ProducerScope<? super Lifecycle.Event>, Continuation<? super Unit>, Object> {
@@ -22,7 +22,7 @@ final class LifecycleKt$eventFlow$1 extends SuspendLambda implements Function2<P
     private /* synthetic */ Object L$0;
     int label;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     LifecycleKt$eventFlow$1(Lifecycle lifecycle, Continuation<? super LifecycleKt$eventFlow$1> continuation) {
         super(2, continuation);
         this.$this_eventFlow = lifecycle;
@@ -62,14 +62,14 @@ final class LifecycleKt$eventFlow$1 extends SuspendLambda implements Function2<P
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: androidx.lifecycle.LifecycleKt$eventFlow$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Lifecycle.kt */
+    /* INFO: renamed from: androidx.lifecycle.LifecycleKt$eventFlow$1$1, reason: invalid class name */
+    /* INFO: compiled from: Lifecycle.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function0<Unit> {
         final /* synthetic */ LifecycleEventObserver $observer;
         final /* synthetic */ Lifecycle $this_eventFlow;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Lifecycle lifecycle, LifecycleEventObserver lifecycleEventObserver) {
             super(0);
             this.$this_eventFlow = lifecycle;
@@ -82,7 +82,7 @@ final class LifecycleKt$eventFlow$1 extends SuspendLambda implements Function2<P
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             this.$this_eventFlow.removeObserver(this.$observer);
         }

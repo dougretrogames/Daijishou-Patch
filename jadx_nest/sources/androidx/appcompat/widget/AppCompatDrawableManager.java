@@ -14,7 +14,7 @@ import androidx.appcompat.R;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.graphics.ColorUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class AppCompatDrawableManager {
     private static final boolean DEBUG = false;
     private static final PorterDuff.Mode DEFAULT_MODE = PorterDuff.Mode.SRC_IN;
@@ -31,7 +31,7 @@ public final class AppCompatDrawableManager {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.AppCompatDrawableManager$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.AppCompatDrawableManager$1, reason: invalid class name */
     class AnonymousClass1 implements ResourceManagerInternal.ResourceManagerHooks {
         private final int[] COLORFILTER_TINT_COLOR_CONTROL_NORMAL = {R.drawable.abc_textfield_search_default_mtrl_alpha, R.drawable.abc_textfield_default_mtrl_alpha, R.drawable.abc_ab_share_pack_mtrl_alpha};
         private final int[] TINT_COLOR_CONTROL_NORMAL = {R.drawable.abc_ic_commit_search_api_mtrl_alpha, R.drawable.abc_seekbar_tick_mark_material, R.drawable.abc_ic_menu_share_mtrl_alpha, R.drawable.abc_ic_menu_copy_mtrl_am_alpha, R.drawable.abc_ic_menu_cut_mtrl_alpha, R.drawable.abc_ic_menu_selectall_mtrl_alpha, R.drawable.abc_ic_menu_paste_mtrl_am_alpha};
@@ -209,9 +209,9 @@ public final class AppCompatDrawableManager {
             return null;
         }
 
-        /* JADX WARN: Code duplicated, block: B:23:0x0050  */
-        /* JADX WARN: Code duplicated, block: B:25:0x0061  */
-        /* JADX WARN: Code duplicated, block: B:27:0x0065 A[RETURN] */
+        /* WARN: Code duplicated, block: B:23:0x0050  */
+        /* WARN: Code duplicated, block: B:25:0x0061  */
+        /* WARN: Code duplicated, block: B:27:0x0065 A[RETURN] */
         @Override // androidx.appcompat.widget.ResourceManagerInternal.ResourceManagerHooks
         public boolean tintDrawableUsingColorFilter(Context context, int i, Drawable drawable) {
             int i2;

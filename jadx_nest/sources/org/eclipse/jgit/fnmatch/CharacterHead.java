@@ -1,6 +1,6 @@
 package org.eclipse.jgit.fnmatch;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class CharacterHead extends AbstractHead {
     private final char expectedCharacter;
 

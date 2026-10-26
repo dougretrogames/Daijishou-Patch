@@ -6,12 +6,12 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: GetUserAwards.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: GetUserAwards.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u00002\u00020\u0001:\u0001\u0003B\u0005¢\u0006\u0002\u0010\u0002¨\u0006\u0004"}, d2 = {"Lorg/retroachivements/api/data/pojo/user/GetUserAwards;", "", "()V", "Response", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class GetUserAwards {
 
-    /* JADX INFO: compiled from: GetUserAwards.kt */
+    /* INFO: compiled from: GetUserAwards.kt */
     @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0015\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001:\u0001)BU\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\u0003\u0012\u0016\u0010\n\u001a\u0012\u0012\u0004\u0012\u00020\f0\u000bj\b\u0012\u0004\u0012\u00020\f`\r¢\u0006\u0002\u0010\u000eJ\t\u0010\u0019\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001a\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001b\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001c\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001d\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001e\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001f\u001a\u00020\u0003HÆ\u0003J\u0019\u0010 \u001a\u0012\u0012\u0004\u0012\u00020\f0\u000bj\b\u0012\u0004\u0012\u00020\f`\rHÆ\u0003Ji\u0010!\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\u00032\b\b\u0002\u0010\b\u001a\u00020\u00032\b\b\u0002\u0010\t\u001a\u00020\u00032\u0018\b\u0002\u0010\n\u001a\u0012\u0012\u0004\u0012\u00020\f0\u000bj\b\u0012\u0004\u0012\u00020\f`\rHÆ\u0001J\u0013\u0010\"\u001a\u00020#2\b\u0010$\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010%\u001a\u00020&HÖ\u0001J\t\u0010'\u001a\u00020(HÖ\u0001R\u0016\u0010\u0007\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0016\u0010\u0006\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0010R\u0016\u0010\b\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0010R\u0016\u0010\u0004\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0010R\u0016\u0010\u0005\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0010R\u0016\u0010\t\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0010R\u0016\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0010R&\u0010\n\u001a\u0012\u0012\u0004\u0012\u00020\f0\u000bj\b\u0012\u0004\u0012\u00020\f`\r8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018¨\u0006*"}, d2 = {"Lorg/retroachivements/api/data/pojo/user/GetUserAwards$Response;", "", "totalAwardsCount", "", "hiddenAwardsCount", "masteryAwardsCount", "completionAwardsCount", "beatenHardcoreAwardsCount", "eventAwardsCount", "siteAwardsCount", "visibleUserAwards", "Ljava/util/ArrayList;", "Lorg/retroachivements/api/data/pojo/user/GetUserAwards$Response$Award;", "Lkotlin/collections/ArrayList;", "(JJJJJJJLjava/util/ArrayList;)V", "getBeatenHardcoreAwardsCount", "()J", "getCompletionAwardsCount", "getEventAwardsCount", "getHiddenAwardsCount", "getMasteryAwardsCount", "getSiteAwardsCount", "getTotalAwardsCount", "getVisibleUserAwards", "()Ljava/util/ArrayList;", "component1", "component2", "component3", "component4", "component5", "component6", "component7", "component8", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "", "toString", "", "Award", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class Response {
 
@@ -39,37 +39,37 @@ public final class GetUserAwards {
         @SerializedName("VisibleUserAwards")
         private final ArrayList<Award> visibleUserAwards;
 
-        /* JADX INFO: renamed from: component1, reason: from getter */
+        /* INFO: renamed from: component1, reason: from getter */
         public final long getTotalAwardsCount() {
             return this.totalAwardsCount;
         }
 
-        /* JADX INFO: renamed from: component2, reason: from getter */
+        /* INFO: renamed from: component2, reason: from getter */
         public final long getHiddenAwardsCount() {
             return this.hiddenAwardsCount;
         }
 
-        /* JADX INFO: renamed from: component3, reason: from getter */
+        /* INFO: renamed from: component3, reason: from getter */
         public final long getMasteryAwardsCount() {
             return this.masteryAwardsCount;
         }
 
-        /* JADX INFO: renamed from: component4, reason: from getter */
+        /* INFO: renamed from: component4, reason: from getter */
         public final long getCompletionAwardsCount() {
             return this.completionAwardsCount;
         }
 
-        /* JADX INFO: renamed from: component5, reason: from getter */
+        /* INFO: renamed from: component5, reason: from getter */
         public final long getBeatenHardcoreAwardsCount() {
             return this.beatenHardcoreAwardsCount;
         }
 
-        /* JADX INFO: renamed from: component6, reason: from getter */
+        /* INFO: renamed from: component6, reason: from getter */
         public final long getEventAwardsCount() {
             return this.eventAwardsCount;
         }
 
-        /* JADX INFO: renamed from: component7, reason: from getter */
+        /* INFO: renamed from: component7, reason: from getter */
         public final long getSiteAwardsCount() {
             return this.siteAwardsCount;
         }
@@ -146,7 +146,7 @@ public final class GetUserAwards {
             return this.visibleUserAwards;
         }
 
-        /* JADX INFO: compiled from: GetUserAwards.kt */
+        /* INFO: compiled from: GetUserAwards.kt */
         @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0002\b \n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0086\b\u0018\u00002\u00020\u0001BU\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\b\u0012\u0006\u0010\n\u001a\u00020\u0003\u0012\u0006\u0010\u000b\u001a\u00020\u0006\u0012\u0006\u0010\f\u001a\u00020\u0003\u0012\u0006\u0010\r\u001a\u00020\b\u0012\u0006\u0010\u000e\u001a\u00020\u0003¢\u0006\u0002\u0010\u000fJ\t\u0010\u001d\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001e\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001f\u001a\u00020\u0003HÆ\u0003J\t\u0010 \u001a\u00020\u0006HÆ\u0003J\t\u0010!\u001a\u00020\bHÆ\u0003J\t\u0010\"\u001a\u00020\bHÆ\u0003J\t\u0010#\u001a\u00020\u0003HÆ\u0003J\t\u0010$\u001a\u00020\u0006HÆ\u0003J\t\u0010%\u001a\u00020\u0003HÆ\u0003J\t\u0010&\u001a\u00020\bHÆ\u0003Jm\u0010'\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\b2\b\b\u0002\u0010\n\u001a\u00020\u00032\b\b\u0002\u0010\u000b\u001a\u00020\u00062\b\b\u0002\u0010\f\u001a\u00020\u00032\b\b\u0002\u0010\r\u001a\u00020\b2\b\b\u0002\u0010\u000e\u001a\u00020\u0003HÆ\u0001J\u0013\u0010(\u001a\u00020)2\b\u0010*\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010+\u001a\u00020\bHÖ\u0001J\t\u0010,\u001a\u00020\u0003HÖ\u0001R\u0016\u0010\u0005\u001a\u00020\u00068\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0016\u0010\u0007\u001a\u00020\b8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0016\u0010\u0004\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u0016\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0015R\u0016\u0010\u000b\u001a\u00020\u00068\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0011R\u0016\u0010\f\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0015R\u0016\u0010\t\u001a\u00020\b8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0013R\u0016\u0010\r\u001a\u00020\b8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0013R\u0016\u0010\u000e\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0015R\u0016\u0010\n\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0015¨\u0006-"}, d2 = {"Lorg/retroachivements/api/data/pojo/user/GetUserAwards$Response$Award;", "", "awardedAt", "", "awardType", "awardData", "", "awardDataExtra", "", "displayOrder", "title", "consoleId", "consoleName", "flags", "imageIcon", "(Ljava/lang/String;Ljava/lang/String;JIILjava/lang/String;JLjava/lang/String;ILjava/lang/String;)V", "getAwardData", "()J", "getAwardDataExtra", "()I", "getAwardType", "()Ljava/lang/String;", "getAwardedAt", "getConsoleId", "getConsoleName", "getDisplayOrder", "getFlags", "getImageIcon", "getTitle", "component1", "component10", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "toString", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Award {
 
@@ -220,52 +220,52 @@ public final class GetUserAwards {
                 return award.copy(str, str2, j4, i5, i2, str8, j3, str7, i3, str6);
             }
 
-            /* JADX INFO: renamed from: component1, reason: from getter */
+            /* INFO: renamed from: component1, reason: from getter */
             public final String getAwardedAt() {
                 return this.awardedAt;
             }
 
-            /* JADX INFO: renamed from: component10, reason: from getter */
+            /* INFO: renamed from: component10, reason: from getter */
             public final String getImageIcon() {
                 return this.imageIcon;
             }
 
-            /* JADX INFO: renamed from: component2, reason: from getter */
+            /* INFO: renamed from: component2, reason: from getter */
             public final String getAwardType() {
                 return this.awardType;
             }
 
-            /* JADX INFO: renamed from: component3, reason: from getter */
+            /* INFO: renamed from: component3, reason: from getter */
             public final long getAwardData() {
                 return this.awardData;
             }
 
-            /* JADX INFO: renamed from: component4, reason: from getter */
+            /* INFO: renamed from: component4, reason: from getter */
             public final int getAwardDataExtra() {
                 return this.awardDataExtra;
             }
 
-            /* JADX INFO: renamed from: component5, reason: from getter */
+            /* INFO: renamed from: component5, reason: from getter */
             public final int getDisplayOrder() {
                 return this.displayOrder;
             }
 
-            /* JADX INFO: renamed from: component6, reason: from getter */
+            /* INFO: renamed from: component6, reason: from getter */
             public final String getTitle() {
                 return this.title;
             }
 
-            /* JADX INFO: renamed from: component7, reason: from getter */
+            /* INFO: renamed from: component7, reason: from getter */
             public final long getConsoleId() {
                 return this.consoleId;
             }
 
-            /* JADX INFO: renamed from: component8, reason: from getter */
+            /* INFO: renamed from: component8, reason: from getter */
             public final String getConsoleName() {
                 return this.consoleName;
             }
 
-            /* JADX INFO: renamed from: component9, reason: from getter */
+            /* INFO: renamed from: component9, reason: from getter */
             public final int getFlags() {
                 return this.flags;
             }

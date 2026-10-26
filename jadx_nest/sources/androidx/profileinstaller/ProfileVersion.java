@@ -3,7 +3,7 @@ package androidx.profileinstaller;
 import java.util.Arrays;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ProfileVersion {
     public static final int MIN_SUPPORTED_SDK = 24;
     static final byte[] V015_S = {48, 49, 53, 0};

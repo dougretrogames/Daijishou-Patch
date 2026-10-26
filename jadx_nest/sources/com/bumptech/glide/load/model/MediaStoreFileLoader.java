@@ -13,7 +13,7 @@ import com.bumptech.glide.signature.ObjectKey;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MediaStoreFileLoader implements ModelLoader<Uri, File> {
     private final Context context;
 

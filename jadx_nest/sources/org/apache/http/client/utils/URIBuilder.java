@@ -17,7 +17,7 @@ import org.apache.http.conn.util.InetAddressUtils;
 import org.apache.http.message.BasicNameValuePair;
 import org.apache.http.util.TextUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class URIBuilder {
     private Charset charset;
     private String encodedAuthority;

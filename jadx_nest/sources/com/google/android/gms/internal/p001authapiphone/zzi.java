@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import com.google.android.gms.common.api.Status;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
+/* INFO: loaded from: classes3.dex */
 public abstract class zzi extends zzb implements zzj {
     public zzi() {
         super("com.google.android.gms.auth.api.phone.internal.ISmsRetrieverResultCallback");

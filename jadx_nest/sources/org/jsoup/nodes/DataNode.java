@@ -2,7 +2,7 @@ package org.jsoup.nodes;
 
 import org.jsoup.internal.QuietAppendable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DataNode extends LeafNode {
     public DataNode(String str) {
         super(str);

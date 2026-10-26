@@ -8,7 +8,7 @@ import android.os.RemoteException;
 import kotlin.text.Typography;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface IMultiInstanceInvalidationCallback extends IInterface {
     public static final String DESCRIPTOR = "androidx$room$IMultiInstanceInvalidationCallback".replace(Typography.dollar, FilenameUtils.EXTENSION_SEPARATOR);
 

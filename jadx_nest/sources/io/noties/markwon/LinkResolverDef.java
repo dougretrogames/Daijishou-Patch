@@ -8,7 +8,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class LinkResolverDef implements LinkResolver {
     private static final String DEFAULT_SCHEME = "https";
 

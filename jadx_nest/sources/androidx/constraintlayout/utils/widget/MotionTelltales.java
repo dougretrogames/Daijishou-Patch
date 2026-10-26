@@ -10,7 +10,7 @@ import android.view.ViewParent;
 import androidx.constraintlayout.motion.widget.MotionLayout;
 import androidx.constraintlayout.widget.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionTelltales extends MockView {
     private static final String TAG = "MotionTelltales";
     Matrix mInvertMatrix;

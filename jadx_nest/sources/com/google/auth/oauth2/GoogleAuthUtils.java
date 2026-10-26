@@ -2,7 +2,7 @@ package com.google.auth.oauth2;
 
 import java.io.File;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GoogleAuthUtils {
     public static final String getWellKnownCredentialsPath() {
         return getWellKnownCredentialsFile(DefaultCredentialsProvider.DEFAULT).getAbsolutePath();

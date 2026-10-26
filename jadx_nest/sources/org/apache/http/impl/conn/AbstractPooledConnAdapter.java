@@ -8,7 +8,7 @@ import org.apache.http.conn.routing.HttpRoute;
 import org.apache.http.params.HttpParams;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public abstract class AbstractPooledConnAdapter extends AbstractClientConnAdapter {
     protected volatile AbstractPoolEntry poolEntry;

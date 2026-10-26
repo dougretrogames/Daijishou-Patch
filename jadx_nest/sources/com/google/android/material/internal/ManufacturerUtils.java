@@ -3,7 +3,7 @@ package com.google.android.material.internal;
 import android.os.Build;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ManufacturerUtils {
     private static final String LGE = "lge";
     private static final String MEIZU = "meizu";

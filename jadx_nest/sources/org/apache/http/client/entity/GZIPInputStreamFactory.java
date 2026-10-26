@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.zip.GZIPInputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class GZIPInputStreamFactory implements InputStreamFactory {
     private static final GZIPInputStreamFactory INSTANCE = new GZIPInputStreamFactory();
 

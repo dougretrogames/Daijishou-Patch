@@ -11,7 +11,7 @@ import android.util.TypedValue;
 import androidx.appcompat.content.res.AppCompatResources;
 import androidx.core.content.res.ResourcesCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TintTypedArray {
     private final Context mContext;
     private TypedValue mTypedValue;

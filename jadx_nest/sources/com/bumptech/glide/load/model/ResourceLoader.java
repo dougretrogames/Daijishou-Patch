@@ -8,7 +8,7 @@ import android.util.Log;
 import com.bumptech.glide.load.Options;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ResourceLoader<Data> implements ModelLoader<Integer, Data> {
     private static final String TAG = "ResourceLoader";
     private final Resources resources;

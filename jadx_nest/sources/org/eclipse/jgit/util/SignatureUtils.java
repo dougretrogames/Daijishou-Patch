@@ -6,7 +6,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.PersonIdent;
 import org.eclipse.jgit.lib.SignatureVerifier;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class SignatureUtils {
     private SignatureUtils() {
     }

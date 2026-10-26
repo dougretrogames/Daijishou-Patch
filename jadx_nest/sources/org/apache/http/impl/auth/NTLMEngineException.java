@@ -2,7 +2,7 @@ package org.apache.http.impl.auth;
 
 import org.apache.http.auth.AuthenticationException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NTLMEngineException extends AuthenticationException {
     private static final long serialVersionUID = 6027981323731768824L;
 

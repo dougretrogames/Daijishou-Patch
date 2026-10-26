@@ -4,8 +4,8 @@ import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
 import java.util.function.Predicate;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class AndFileFilter$$ExternalSyntheticLambda0 implements Predicate {
     public final /* synthetic */ Path f$0;
     public final /* synthetic */ BasicFileAttributes f$1;

@@ -17,7 +17,7 @@ import org.eclipse.jgit.util.FS_Win32_Cygwin;
 import org.eclipse.jgit.util.StringUtils;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CommandExecutor {
     private boolean checkExitCode;
     private File commandFile;
@@ -108,7 +108,7 @@ public class CommandExecutor {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:14:0x0056  */
+    /* WARN: Code duplicated, block: B:14:0x0056  */
     private void createCommandFile(String str) throws IOException, ToolException {
         String str2;
         if (!this.useMsys2) {

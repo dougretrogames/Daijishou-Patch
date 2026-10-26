@@ -5,8 +5,8 @@ import android.widget.TextView;
 import com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity;
 import kotlin.jvm.internal.Ref;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class EditPlayableItemDialogFragment$$ExternalSyntheticLambda12 implements View.OnClickListener {
     public final /* synthetic */ Ref.BooleanRef f$0;
     public final /* synthetic */ PlayableItemEntity f$1;

@@ -5,7 +5,7 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ChildHelper {
     private static final boolean DEBUG = false;
     private static final int REMOVE_STATUS_IN_REMOVE = 1;

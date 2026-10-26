@@ -9,7 +9,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Parser implements Cloneable {
     public static final String NamespaceHtml = "http://www.w3.org/1999/xhtml";
     public static final String NamespaceMathml = "http://www.w3.org/1998/Math/MathML";

@@ -3,7 +3,7 @@ package androidx.transition;
 import android.graphics.Matrix;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewUtilsApi29 extends ViewUtilsApi23 {
     ViewUtilsApi29() {
     }

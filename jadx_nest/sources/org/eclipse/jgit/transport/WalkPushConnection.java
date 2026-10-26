@@ -29,7 +29,7 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.RefWriter;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class WalkPushConnection extends BaseConnection implements PushConnection {
     final WalkRemoteObjectDatabase dest;
     private final Repository local;
@@ -39,7 +39,7 @@ class WalkPushConnection extends BaseConnection implements PushConnection {
     private final Transport transport;
     private final URIish uri;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     WalkPushConnection(WalkTransport walkTransport, WalkRemoteObjectDatabase walkRemoteObjectDatabase) {
         Transport transport = (Transport) walkTransport;
         this.transport = transport;
@@ -104,7 +104,7 @@ class WalkPushConnection extends BaseConnection implements PushConnection {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.WalkPushConnection$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.WalkPushConnection$1, reason: invalid class name */
     class AnonymousClass1 extends RefWriter {
         AnonymousClass1(Collection collection) {
             super((Collection<Ref>) collection);
@@ -121,14 +121,14 @@ class WalkPushConnection extends BaseConnection implements PushConnection {
         this.dest.close();
     }
 
-    /* JADX WARN: Code duplicated, block: B:101:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:70:0x01a6 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:90:0x01a8 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r11v0, types: [org.eclipse.jgit.transport.WalkPushConnection] */
-    /* JADX WARN: Type inference failed for: r13v2 */
-    /* JADX WARN: Type inference failed for: r13v3, types: [java.io.File] */
-    /* JADX WARN: Type inference failed for: r13v5 */
+    /* WARN: Code duplicated, block: B:101:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:70:0x01a6 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:90:0x01a8 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r11v0, types: [org.eclipse.jgit.transport.WalkPushConnection] */
+    /* WARN: Type inference failed for: r13v2 */
+    /* WARN: Type inference failed for: r13v3, types: [java.io.File] */
+    /* WARN: Type inference failed for: r13v5 */
     private void sendpack(List<RemoteRefUpdate> list, ProgressMonitor progressMonitor) throws Throwable {
         ?? r13;
         Throwable th;

@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import com.google.android.material.R;
 import com.google.android.material.animation.AnimationUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MaterialFade extends MaterialVisibility<FadeProvider> {
     private static final float DEFAULT_FADE_END_THRESHOLD_ENTER = 0.3f;
     private static final float DEFAULT_START_SCALE = 0.8f;

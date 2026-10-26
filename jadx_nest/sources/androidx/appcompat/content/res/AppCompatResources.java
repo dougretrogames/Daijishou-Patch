@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 import androidx.appcompat.widget.ResourceManagerInternal;
 import androidx.core.content.ContextCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class AppCompatResources {
     private AppCompatResources() {
     }

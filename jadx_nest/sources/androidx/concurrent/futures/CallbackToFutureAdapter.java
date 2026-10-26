@@ -8,7 +8,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class CallbackToFutureAdapter {
 
     public interface Resolver<T> {
@@ -43,7 +43,7 @@ public final class CallbackToFutureAdapter {
             this.completerWeakReference = new WeakReference<>(completer);
         }
 
-        /* JADX INFO: renamed from: androidx.concurrent.futures.CallbackToFutureAdapter$SafeFuture$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.concurrent.futures.CallbackToFutureAdapter$SafeFuture$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractResolvableFuture<T> {
             AnonymousClass1() {
             }

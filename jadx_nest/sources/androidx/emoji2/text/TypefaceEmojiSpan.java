@@ -6,7 +6,7 @@ import android.text.Spanned;
 import android.text.TextPaint;
 import android.text.style.CharacterStyle;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class TypefaceEmojiSpan extends EmojiSpan {
     private static Paint sDebugPaint;
     private TextPaint mWorkingPaint;

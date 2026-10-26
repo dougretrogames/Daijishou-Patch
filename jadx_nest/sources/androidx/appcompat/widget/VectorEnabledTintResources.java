@@ -18,7 +18,7 @@ import java.io.InputStream;
 import java.lang.ref.WeakReference;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class VectorEnabledTintResources extends ResourcesWrapper {
     public static final int MAX_SDK_WHERE_REQUIRED = 20;
     private static boolean sCompatVectorFromResourcesEnabled = false;

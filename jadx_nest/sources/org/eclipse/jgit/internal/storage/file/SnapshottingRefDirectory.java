@@ -14,25 +14,25 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.RefUpdate;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class SnapshottingRefDirectory extends RefDirectory {
     private volatile boolean isValid;
     final RefDirectory refDb;
     private final Set<File> refreshedLooseRefDirs;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @FunctionalInterface
     interface FunctionThrowsException<A, R, E extends Exception> {
         R apply(A a) throws Exception;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @FunctionalInterface
     interface SupplierThrowsException<R, E extends Exception> {
         R call() throws Exception;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @FunctionalInterface
     interface TriConsumerThrowsException<A1, A2, A3, E extends Exception> {
         void accept(A1 a1, A2 a2, A3 a3) throws Exception;
@@ -130,12 +130,12 @@ class SnapshottingRefDirectory extends RefDirectory {
         this.isValid = true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <T> T invalidateSnapshotOnError(SupplierThrowsException<T, IOException> supplierThrowsException, SnapshottingRefDirectory snapshottingRefDirectory) throws IOException {
         return (T) invalidateSnapshotOnError(new SnapshottingRefDirectory$$ExternalSyntheticLambda0(supplierThrowsException), null, snapshottingRefDirectory);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <A, R> R invalidateSnapshotOnError(FunctionThrowsException<A, R, IOException> functionThrowsException, A a, SnapshottingRefDirectory snapshottingRefDirectory) throws IOException {
         try {
             return functionThrowsException.apply(a);
@@ -145,7 +145,7 @@ class SnapshottingRefDirectory extends RefDirectory {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <A1, A2, A3> void invalidateSnapshotOnError(TriConsumerThrowsException<A1, A2, A3, IOException> triConsumerThrowsException, A1 a1, A2 a2, A3 a3, SnapshottingRefDirectory snapshottingRefDirectory) throws Exception {
         try {
             triConsumerThrowsException.accept(a1, a2, a3);
@@ -155,7 +155,7 @@ class SnapshottingRefDirectory extends RefDirectory {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class SnapshotRefDirectoryUpdate extends RefDirectoryUpdate {
         SnapshotRefDirectoryUpdate(RefDirectory refDirectory, Ref ref) {
             super(refDirectory, ref);
@@ -202,7 +202,7 @@ class SnapshottingRefDirectory extends RefDirectory {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class SnapshotRefDirectoryRename extends RefDirectoryRename {
         SnapshotRefDirectoryRename(RefDirectoryUpdate refDirectoryUpdate, RefDirectoryUpdate refDirectoryUpdate2) {
             super(refDirectoryUpdate, refDirectoryUpdate2);
@@ -219,7 +219,7 @@ class SnapshottingRefDirectory extends RefDirectory {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class SnapshotPackedBatchRefUpdate extends PackedBatchRefUpdate {
         SnapshotPackedBatchRefUpdate(RefDirectory refDirectory) {
             super(refDirectory);
@@ -239,7 +239,7 @@ class SnapshottingRefDirectory extends RefDirectory {
             SnapshottingRefDirectory.invalidateSnapshotOnError(new SnapshottingRefDirectory$SnapshotPackedBatchRefUpdate$$ExternalSyntheticLambda0(this), revWalk, progressMonitor, null, getRefDatabase());
         }
 
-        /* JADX INFO: renamed from: lambda$1$org-eclipse-jgit-internal-storage-file-SnapshottingRefDirectory$SnapshotPackedBatchRefUpdate, reason: not valid java name */
+        /* INFO: renamed from: lambda$1$org-eclipse-jgit-internal-storage-file-SnapshottingRefDirectory$SnapshotPackedBatchRefUpdate, reason: not valid java name */
         /* synthetic */ void m5731x5bd856e1(RevWalk revWalk, ProgressMonitor progressMonitor, Object obj) throws IOException {
             super.execute(revWalk, progressMonitor);
         }

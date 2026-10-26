@@ -1,7 +1,7 @@
 package androidx.core.app;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class ActivityCompat$SharedElementCallback21Impl$$ExternalSyntheticLambda0 implements SharedElementCallback.OnSharedElementsReadyListener {
     public final /* synthetic */ android.app.SharedElementCallback.OnSharedElementsReadyListener f$0;
 

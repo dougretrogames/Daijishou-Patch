@@ -11,7 +11,7 @@ import org.apache.http.util.Args;
 import org.apache.http.util.TextUtils;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NetscapeDomainHandler extends BasicDomainHandler {
     @Override // org.apache.http.impl.cookie.BasicDomainHandler, org.apache.http.cookie.CookieAttributeHandler
     public void parse(SetCookie setCookie, String str) throws MalformedCookieException {

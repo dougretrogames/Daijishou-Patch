@@ -5,7 +5,7 @@ import com.google.protobuf.Internal;
 import com.google.protobuf.ProtocolMessageEnum;
 import com.google.protobuf.RuntimeVersion;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public enum RegionRegionEnum implements ProtocolMessageEnum {
     REGION_REGION_NULL(0),
     EUROPE(1),
@@ -87,7 +87,7 @@ public enum RegionRegionEnum implements ProtocolMessageEnum {
         return internalValueMap;
     }
 
-    /* JADX INFO: renamed from: proto.RegionRegionEnum$1, reason: invalid class name */
+    /* INFO: renamed from: proto.RegionRegionEnum$1, reason: invalid class name */
     class AnonymousClass1 implements Internal.EnumLiteMap<RegionRegionEnum> {
         AnonymousClass1() {
         }

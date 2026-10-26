@@ -5,7 +5,7 @@ import org.apache.commons.collections4.functors.ExceptionFactory;
 import org.apache.commons.collections4.functors.InstantiateFactory;
 import org.apache.commons.collections4.functors.PrototypeFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FactoryUtils {
     public static <T> Factory<T> constantFactory(T t) {
         return ConstantFactory.constantFactory(t);

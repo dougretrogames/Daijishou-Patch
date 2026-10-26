@@ -5,13 +5,13 @@ import java.io.OutputStream;
 import net.lingala.zip4j.crypto.Encrypter;
 import net.lingala.zip4j.model.ZipParameters;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class NoCipherOutputStream extends CipherOutputStream<NoEncrypter> {
     public NoCipherOutputStream(ZipEntryOutputStream zipEntryOutputStream, ZipParameters zipParameters, char[] cArr) throws IOException {
         super(zipEntryOutputStream, zipParameters, cArr, true);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.io.outputstream.CipherOutputStream
     public NoEncrypter initializeEncrypter(OutputStream outputStream, ZipParameters zipParameters, char[] cArr, boolean z) {
         return new NoEncrypter();

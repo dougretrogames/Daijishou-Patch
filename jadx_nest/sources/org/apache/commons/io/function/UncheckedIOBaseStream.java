@@ -6,7 +6,7 @@ import java.util.Spliterator;
 import java.util.stream.BaseStream;
 import org.apache.commons.io.function.IOBaseStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class UncheckedIOBaseStream<T, S extends IOBaseStream<T, S, B>, B extends BaseStream<T, B>> implements BaseStream<T, B> {
     private final S delegate;
 

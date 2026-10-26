@@ -5,7 +5,7 @@ import android.util.TypedValue;
 import android.view.View;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialAttributes {
     public static TypedValue resolve(Context context, int i) {
         TypedValue typedValue = new TypedValue();

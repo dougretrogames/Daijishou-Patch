@@ -6,7 +6,7 @@ import java.nio.channels.FileChannel;
 import java.nio.file.StandardOpenOption;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class MemoryMappedFileInputStream extends AbstractInputStream {
     private static final int DEFAULT_BUFFER_SIZE = 262144;
     private static final ByteBuffer EMPTY_BUFFER = ByteBuffer.wrap(new byte[0]).asReadOnlyBuffer();

@@ -1,6 +1,6 @@
 package io.opencensus.common;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_ServerStats extends ServerStats {
     private final long lbLatencyNs;
     private final long serviceLatencyNs;

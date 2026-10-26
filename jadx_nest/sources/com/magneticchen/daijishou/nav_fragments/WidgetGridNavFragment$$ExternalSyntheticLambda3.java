@@ -6,8 +6,8 @@ import com.magneticchen.daijishou.daijishou_widget.WidgetsManager;
 import com.magneticchen.daijishou.daijishou_widget.abstract_widget_classes.WidgetInstance;
 import com.magneticchen.daijishou.daijishou_widget.widget_recycler_view.WidgetFaceRecyclerViewAdapter;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class WidgetGridNavFragment$$ExternalSyntheticLambda3 implements PopupMenu.OnMenuItemClickListener {
     public final /* synthetic */ WidgetInstance f$0;
     public final /* synthetic */ WidgetGridNavFragment f$1;

@@ -24,7 +24,7 @@ import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.util.io.TimeoutInputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class BasePackPushConnection extends BasePackConnection implements PushConnection {
     public static final String CAPABILITY_DELETE_REFS = "delete-refs";
     public static final String CAPABILITY_OFS_DELTA = "ofs-delta";

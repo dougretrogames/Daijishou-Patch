@@ -2,8 +2,8 @@ package com.google.common.util.concurrent;
 
 import java.util.concurrent.Future;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class Futures$$ExternalSyntheticLambda1 implements Runnable {
     public final /* synthetic */ Future f$0;
 

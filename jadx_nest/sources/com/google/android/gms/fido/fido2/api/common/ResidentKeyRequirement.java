@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public enum ResidentKeyRequirement implements Parcelable {
     RESIDENT_KEY_DISCOURAGED("discouraged"),
     RESIDENT_KEY_PREFERRED("preferred"),
@@ -14,7 +14,7 @@ public enum ResidentKeyRequirement implements Parcelable {
     public static final Parcelable.Creator<ResidentKeyRequirement> CREATOR = new zzas();
     private final String zzb;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class UnsupportedResidentKeyRequirementException extends Exception {
         public UnsupportedResidentKeyRequirementException(String str) {
             super(String.format("Resident key requirement %s not supported", str));

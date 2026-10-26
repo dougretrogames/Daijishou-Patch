@@ -10,7 +10,7 @@ import android.os.RemoteException;
 import kotlin.text.Typography;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface INotificationSideChannel extends IInterface {
     public static final String DESCRIPTOR = "android$support$v4$app$INotificationSideChannel".replace(Typography.dollar, FilenameUtils.EXTENSION_SEPARATOR);
 
@@ -146,7 +146,7 @@ public interface INotificationSideChannel extends IInterface {
     }
 
     public static class _Parcel {
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> creator) {
             if (parcel.readInt() != 0) {
                 return creator.createFromParcel(parcel);
@@ -154,7 +154,7 @@ public interface INotificationSideChannel extends IInterface {
             return null;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T t, int i) {
             if (t != null) {
                 parcel.writeInt(1);

@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.List;
 import org.eclipse.jgit.internal.storage.pack.PackExt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class AggregatedBlockCacheStats implements DfsBlockCacheTable.BlockCacheStats {
     private final List<DfsBlockCacheTable.BlockCacheStats> blockCacheStats;
 

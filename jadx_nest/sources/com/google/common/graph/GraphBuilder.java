@@ -4,11 +4,11 @@ import com.google.common.base.Optional;
 import com.google.common.base.Preconditions;
 import com.google.errorprone.annotations.DoNotMock;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock
 @ElementTypesAreNonnullByDefault
 public final class GraphBuilder<N> extends AbstractGraphBuilder<N> {
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private <N1 extends N> GraphBuilder<N1> cast() {
         return this;
     }

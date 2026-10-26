@@ -18,7 +18,7 @@ import org.apache.http.conn.UnsupportedSchemeException;
 import org.apache.http.impl.conn.DefaultSchemePortResolver;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicAuthCache implements AuthCache {
     private final Log log;
     private final Map<HttpHost, byte[]> map;

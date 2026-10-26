@@ -10,7 +10,7 @@ import org.checkerframework.framework.qual.DefaultQualifierInHierarchy;
 import org.checkerframework.framework.qual.SubtypeOf;
 import org.checkerframework.framework.qual.TypeUseLocation;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Target({ElementType.TYPE_PARAMETER, ElementType.TYPE_USE})
 @DefaultFor(types = {Void.class}, value = {TypeUseLocation.UPPER_BOUND, TypeUseLocation.LOWER_BOUND})
 @Documented

@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class EditTextPreferenceDialogFragmentCompat extends PreferenceDialogFragmentCompat {
     private static final String SAVE_STATE_TEXT = "EditTextPreferenceDialogFragment.text";
     private static final int SHOW_REQUEST_TIMEOUT = 1000;
@@ -20,7 +20,7 @@ public class EditTextPreferenceDialogFragmentCompat extends PreferenceDialogFrag
         return true;
     }
 
-    /* JADX INFO: renamed from: androidx.preference.EditTextPreferenceDialogFragmentCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.EditTextPreferenceDialogFragmentCompat$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }

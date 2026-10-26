@@ -14,7 +14,7 @@ import java.util.function.Function;
 import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class ImmutableRangeMap<K extends Comparable<?>, V> implements RangeMap<K, V>, Serializable {
     private static final ImmutableRangeMap<Comparable<?>, Object> EMPTY = new ImmutableRangeMap<>(ImmutableList.of(), ImmutableList.of());
@@ -64,7 +64,7 @@ public class ImmutableRangeMap<K extends Comparable<?>, V> implements RangeMap<K
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public Builder<K, V> putAll(RangeMap<K, ? extends V> rangeMap) {
             for (Map.Entry entry : rangeMap.asMapOfRanges().entrySet()) {
                 put((Range) entry.getKey(), entry.getValue());
@@ -197,7 +197,7 @@ public class ImmutableRangeMap<K extends Comparable<?>, V> implements RangeMap<K
         return new AnonymousClass2(this, new AnonymousClass1(iBinarySearch2 - iBinarySearch, iBinarySearch, range), this.values.subList(iBinarySearch, iBinarySearch2), range, this);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ImmutableRangeMap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ImmutableRangeMap$1, reason: invalid class name */
     class AnonymousClass1 extends ImmutableList<Range<K>> {
         final /* synthetic */ int val$len;
         final /* synthetic */ int val$off;
@@ -219,7 +219,7 @@ public class ImmutableRangeMap<K extends Comparable<?>, V> implements RangeMap<K
             return this.val$len;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.List
         public Range<K> get(int index) {
             Preconditions.checkElementIndex(index, this.val$len);
@@ -232,12 +232,12 @@ public class ImmutableRangeMap<K extends Comparable<?>, V> implements RangeMap<K
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ImmutableRangeMap$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ImmutableRangeMap$2, reason: invalid class name */
     class AnonymousClass2 extends ImmutableRangeMap<K, V> {
         final /* synthetic */ ImmutableRangeMap val$outer;
         final /* synthetic */ Range val$range;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(final ImmutableRangeMap this$0, ImmutableList ranges, ImmutableList values, final Range val$range, final ImmutableRangeMap val$outer) {
             super(ranges, values);
             this.val$range = val$range;
@@ -254,16 +254,16 @@ public class ImmutableRangeMap<K extends Comparable<?>, V> implements RangeMap<K
             return super.asMapOfRanges();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Multi-variable type inference failed */
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         @Override // com.google.common.collect.ImmutableRangeMap, com.google.common.collect.RangeMap
         public ImmutableRangeMap<K, V> subRangeMap(Range<K> subRange) {

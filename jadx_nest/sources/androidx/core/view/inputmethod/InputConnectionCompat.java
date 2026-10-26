@@ -18,7 +18,7 @@ import androidx.core.util.Preconditions;
 import androidx.core.view.ContentInfoCompat;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class InputConnectionCompat {
     private static final String COMMIT_CONTENT_ACTION = "androidx.core.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT";
     private static final String COMMIT_CONTENT_CONTENT_URI_INTEROP_KEY = "android.support.v13.view.inputmethod.InputConnectionCompat.CONTENT_URI";
@@ -42,11 +42,11 @@ public final class InputConnectionCompat {
         boolean onCommitContent(InputContentInfoCompat inputContentInfoCompat, int i, Bundle bundle);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v0 */
-    /* JADX WARN: Type inference failed for: r0v3, types: [boolean, int] */
-    /* JADX WARN: Type inference failed for: r0v5 */
-    /* JADX WARN: Type inference failed for: r0v6 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v0 */
+    /* WARN: Type inference failed for: r0v3, types: [boolean, int] */
+    /* WARN: Type inference failed for: r0v5 */
+    /* WARN: Type inference failed for: r0v6 */
     static boolean handlePerformPrivateCommand(String str, Bundle bundle, OnCommitContentListener onCommitContentListener) throws Throwable {
         boolean z;
         String str2;
@@ -142,11 +142,11 @@ public final class InputConnectionCompat {
         return new AnonymousClass1(inputConnection, false, onCommitContentListener);
     }
 
-    /* JADX INFO: renamed from: androidx.core.view.inputmethod.InputConnectionCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.view.inputmethod.InputConnectionCompat$1, reason: invalid class name */
     class AnonymousClass1 extends InputConnectionWrapper {
         final /* synthetic */ OnCommitContentListener val$listener;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(InputConnection inputConnection, boolean z, OnCommitContentListener onCommitContentListener) {
             super(inputConnection, z);
             this.val$listener = onCommitContentListener;
@@ -161,11 +161,11 @@ public final class InputConnectionCompat {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.view.inputmethod.InputConnectionCompat$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.view.inputmethod.InputConnectionCompat$2, reason: invalid class name */
     class AnonymousClass2 extends InputConnectionWrapper {
         final /* synthetic */ OnCommitContentListener val$listener;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(InputConnection inputConnection, boolean z, OnCommitContentListener onCommitContentListener) {
             super(inputConnection, z);
             this.val$listener = onCommitContentListener;

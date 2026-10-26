@@ -2,7 +2,7 @@ package androidx.transition;
 
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewUtilsApi22 extends ViewUtilsApi21 {
     private static boolean sTryHiddenSetLeftTopRightBottom = true;
 

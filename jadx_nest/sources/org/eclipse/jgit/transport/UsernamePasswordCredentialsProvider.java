@@ -4,7 +4,7 @@ import java.util.Arrays;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.errors.UnsupportedCredentialItem;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UsernamePasswordCredentialsProvider extends CredentialsProvider {
     private char[] password;
     private String username;

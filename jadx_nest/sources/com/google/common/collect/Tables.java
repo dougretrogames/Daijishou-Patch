@@ -17,7 +17,7 @@ import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Tables {
     private static final Function<? extends Map<?, ?>, ? extends Map<?, ?>> UNMODIFIABLE_WRAPPER = new AnonymousClass1();
@@ -109,7 +109,7 @@ public final class Tables {
         return new TransposeTable(table);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class TransposeTable<C, R, V> extends AbstractTable<C, R, V> {
         final Table<R, C, V> original;
 
@@ -211,7 +211,7 @@ public final class Tables {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <R, C, V> Table.Cell<C, R, V> transposeCell(Table.Cell<R, C, V> cell) {
         return immutableCell(cell.getColumnKey(), cell.getRowKey(), cell.getValue());
     }
@@ -289,7 +289,7 @@ public final class Tables {
             return Maps.transformValues(this.fromTable.column(columnKey), this.function);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Tables$TransformedTable$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Tables$TransformedTable$1, reason: invalid class name */
         class AnonymousClass1 implements Function<Table.Cell<R, C, V1>, Table.Cell<R, C, V2>> {
             AnonymousClass1() {
             }
@@ -324,7 +324,7 @@ public final class Tables {
             return Collections2.transform(this.fromTable.values(), this.function);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Tables$TransformedTable$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Tables$TransformedTable$2, reason: invalid class name */
         class AnonymousClass2 implements Function<Map<C, V1>, Map<C, V2>> {
             AnonymousClass2() {
             }
@@ -340,7 +340,7 @@ public final class Tables {
             return Maps.transformValues(this.fromTable.rowMap(), new AnonymousClass2());
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Tables$TransformedTable$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Tables$TransformedTable$3, reason: invalid class name */
         class AnonymousClass3 implements Function<Map<R, V1>, Map<R, V2>> {
             AnonymousClass3() {
             }
@@ -369,7 +369,7 @@ public final class Tables {
             this.delegate = (Table) Preconditions.checkNotNull(delegate);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingTable, com.google.common.collect.ForwardingObject
         public Table<R, C, V> delegate() {
             return this.delegate;
@@ -449,7 +449,7 @@ public final class Tables {
             super(delegate);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.Tables.UnmodifiableTable, com.google.common.collect.ForwardingTable, com.google.common.collect.ForwardingObject
         public RowSortedTable<R, C, V> delegate() {
             return (RowSortedTable) super.delegate();
@@ -466,12 +466,12 @@ public final class Tables {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <K, V> Function<Map<K, V>, Map<K, V>> unmodifiableWrapper() {
         return (Function<Map<K, V>, Map<K, V>>) UNMODIFIABLE_WRAPPER;
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.Tables$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.Tables$1, reason: invalid class name */
     class AnonymousClass1 implements Function<Map<Object, Object>, Map<Object, Object>> {
         AnonymousClass1() {
         }

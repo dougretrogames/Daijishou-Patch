@@ -4,7 +4,7 @@ import java.io.IOException;
 import org.eclipse.jgit.errors.DirCacheNameConflictException;
 import org.eclipse.jgit.util.Paths;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class BaseDirCacheEditor {
     protected DirCache cache;
     protected DirCacheEntry[] entries;

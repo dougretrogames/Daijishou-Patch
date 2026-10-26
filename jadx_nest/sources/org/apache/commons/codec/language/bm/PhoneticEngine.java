@@ -17,7 +17,7 @@ import org.apache.commons.codec.language.Soundex;
 import org.apache.http.message.TokenParser;
 import org.eclipse.jgit.transport.WalkEncryption;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PhoneticEngine {
     private static final int DEFAULT_MAX_PHONEMES = 20;
     private static final Map<NameType, Set<String>> NAME_PREFIXES;
@@ -176,7 +176,7 @@ public class PhoneticEngine {
         return new PhonemeBuilder(treeMap.keySet(), null);
     }
 
-    /* JADX INFO: renamed from: lambda$applyFinalRules$1$org-apache-commons-codec-language-bm-PhoneticEngine, reason: not valid java name */
+    /* INFO: renamed from: lambda$applyFinalRules$1$org-apache-commons-codec-language-bm-PhoneticEngine, reason: not valid java name */
     /* synthetic */ void m5525xf7464fbc(Map map, Map map2, Rule.Phoneme phoneme) {
         PhonemeBuilder phonemeBuilderEmpty = PhonemeBuilder.empty(phoneme.getLanguages());
         String string = phoneme.getPhonemeText().toString();
@@ -260,7 +260,7 @@ public class PhoneticEngine {
         return applyFinalRules(applyFinalRules(phonemeBuilderEmpty, instanceMap2), instanceMap3).makeString();
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.codec.language.bm.PhoneticEngine$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.codec.language.bm.PhoneticEngine$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$org$apache$commons$codec$language$bm$NameType;
 
@@ -287,7 +287,7 @@ public class PhoneticEngine {
         list.add(strArrSplit[strArrSplit.length - 1]);
     }
 
-    /* JADX INFO: renamed from: lambda$encode$3$org-apache-commons-codec-language-bm-PhoneticEngine, reason: not valid java name */
+    /* INFO: renamed from: lambda$encode$3$org-apache-commons-codec-language-bm-PhoneticEngine, reason: not valid java name */
     /* synthetic */ void m5526xb393c13f(StringBuilder sb, String str) {
         sb.append("-").append(encode(str));
     }

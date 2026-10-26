@@ -20,8 +20,8 @@ import kotlinx.coroutines.CoroutineScopeKt;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.sync.Mutex;
 
-/* JADX INFO: compiled from: RepeatOnLifecycle.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: RepeatOnLifecycle.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroidx/lifecycle/LifecycleOwner;", NotificationCompat.CATEGORY_EVENT, "Landroidx/lifecycle/Lifecycle$Event;", "onStateChanged"}, k = 3, mv = {1, 8, 0}, xi = 48)
 final class RepeatOnLifecycleKt$repeatOnLifecycle$3$1$1$1 implements LifecycleEventObserver {
     final /* synthetic */ CoroutineScope $$this$coroutineScope;
@@ -32,7 +32,7 @@ final class RepeatOnLifecycleKt$repeatOnLifecycle$3$1$1$1 implements LifecycleEv
     final /* synthetic */ Mutex $mutex;
     final /* synthetic */ Lifecycle.Event $startWorkEvent;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     RepeatOnLifecycleKt$repeatOnLifecycle$3$1$1$1(Lifecycle.Event event, Ref.ObjectRef<Job> objectRef, CoroutineScope coroutineScope, Lifecycle.Event event2, CancellableContinuation<? super Unit> cancellableContinuation, Mutex mutex, Function2<? super CoroutineScope, ? super Continuation<? super Unit>, ? extends Object> function2) {
         this.$startWorkEvent = event;
         this.$launchedJob = objectRef;
@@ -43,7 +43,7 @@ final class RepeatOnLifecycleKt$repeatOnLifecycle$3$1$1$1 implements LifecycleEv
         this.$block = function2;
     }
 
-    /* JADX WARN: Type inference failed for: r9v5, types: [T, kotlinx.coroutines.Job] */
+    /* WARN: Type inference failed for: r9v5, types: [T, kotlinx.coroutines.Job] */
     @Override // androidx.lifecycle.LifecycleEventObserver
     public final void onStateChanged(LifecycleOwner lifecycleOwner, Lifecycle.Event event) {
         Intrinsics.checkNotNullParameter(lifecycleOwner, "<anonymous parameter 0>");
@@ -66,8 +66,8 @@ final class RepeatOnLifecycleKt$repeatOnLifecycle$3$1$1$1 implements LifecycleEv
         }
     }
 
-    /* JADX INFO: renamed from: androidx.lifecycle.RepeatOnLifecycleKt$repeatOnLifecycle$3$1$1$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: RepeatOnLifecycle.kt */
+    /* INFO: renamed from: androidx.lifecycle.RepeatOnLifecycleKt$repeatOnLifecycle$3$1$1$1$1, reason: invalid class name */
+    /* INFO: compiled from: RepeatOnLifecycle.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.lifecycle.RepeatOnLifecycleKt$repeatOnLifecycle$3$1$1$1$1", f = "RepeatOnLifecycle.kt", i = {0, 1}, l = {171, 110}, m = "invokeSuspend", n = {"$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$0"})
     static final class AnonymousClass1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -77,8 +77,8 @@ final class RepeatOnLifecycleKt$repeatOnLifecycle$3$1$1$1 implements LifecycleEv
         Object L$1;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(Mutex mutex, Function2<? super CoroutineScope, ? super Continuation<? super Unit>, ? extends Object> function2, Continuation<? super AnonymousClass1> continuation) {
             super(2, continuation);
             this.$mutex = mutex;

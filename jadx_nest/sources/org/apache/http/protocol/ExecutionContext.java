@@ -1,6 +1,6 @@
 package org.apache.http.protocol;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface ExecutionContext {
     public static final String HTTP_CONNECTION = "http.connection";

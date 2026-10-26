@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.function.IntPredicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractCharacterFilterReader extends FilterReader {
     protected static final IntPredicate SKIP_NONE = new AbstractCharacterFilterReader$$ExternalSyntheticLambda0();
     private final IntPredicate skip;

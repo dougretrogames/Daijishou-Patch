@@ -20,7 +20,7 @@ import java.util.Set;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.eclipse.jgit.transport.AmazonS3;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class TempFileCreator {
     static final TempFileCreator INSTANCE = pickSecureCreator();
@@ -57,12 +57,12 @@ abstract class TempFileCreator {
         JavaNioCreator.userPermissions().get();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class JavaNioCreator extends TempFileCreator {
         private static final PermissionSupplier directoryPermissions;
         private static final PermissionSupplier filePermissions;
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         interface PermissionSupplier {
             FileAttribute<?> get() throws IOException;
         }
@@ -113,7 +113,7 @@ abstract class TempFileCreator {
             throw new IOException("unrecognized FileSystem type " + FileSystems.getDefault());
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static PermissionSupplier userPermissions() {
             try {
                 return new TempFileCreator$JavaNioCreator$$ExternalSyntheticLambda3(new AnonymousClass1(ImmutableList.of(AclEntry.newBuilder().setType(AclEntryType.ALLOW).setPrincipal(FileSystems.getDefault().getUserPrincipalLookupService().lookupPrincipalByName(getUsername())).setPermissions(EnumSet.allOf(AclEntryPermission.class)).setFlags(AclEntryFlag.DIRECTORY_INHERIT, AclEntryFlag.FILE_INHERIT).build())));
@@ -122,7 +122,7 @@ abstract class TempFileCreator {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.io.TempFileCreator$JavaNioCreator$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.io.TempFileCreator$JavaNioCreator$1, reason: invalid class name */
         class AnonymousClass1 implements FileAttribute<ImmutableList<AclEntry>> {
             final /* synthetic */ ImmutableList val$acl;
 
@@ -135,7 +135,7 @@ abstract class TempFileCreator {
                 return "acl:acl";
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // java.nio.file.attribute.FileAttribute
             public ImmutableList<AclEntry> value() {
                 return this.val$acl;

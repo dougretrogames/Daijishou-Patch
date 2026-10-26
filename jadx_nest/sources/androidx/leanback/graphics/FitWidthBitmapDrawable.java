@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.util.IntProperty;
 import android.util.Property;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FitWidthBitmapDrawable extends Drawable {
     public static final Property<FitWidthBitmapDrawable, Integer> PROPERTY_VERTICAL_OFFSET = getVerticalOffsetIntProperty();
     BitmapState mBitmapState;
@@ -156,7 +156,7 @@ public class FitWidthBitmapDrawable extends Drawable {
         return this.mBitmapState.mSource;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.graphics.FitWidthBitmapDrawable$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.graphics.FitWidthBitmapDrawable$1, reason: invalid class name */
     class AnonymousClass1 extends Property<FitWidthBitmapDrawable, Integer> {
         AnonymousClass1(Class cls, String str) {
             super(cls, str);
@@ -173,7 +173,7 @@ public class FitWidthBitmapDrawable extends Drawable {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.graphics.FitWidthBitmapDrawable$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.graphics.FitWidthBitmapDrawable$2, reason: invalid class name */
     class AnonymousClass2 extends IntProperty<FitWidthBitmapDrawable> {
         AnonymousClass2(String str) {
             super(str);

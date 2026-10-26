@@ -7,7 +7,7 @@ import org.apache.http.io.SessionOutputBuffer;
 import org.apache.http.message.BasicLineFormatter;
 import org.apache.http.message.LineFormatter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultHttpResponseWriterFactory implements HttpMessageWriterFactory<HttpResponse> {
     public static final DefaultHttpResponseWriterFactory INSTANCE = new DefaultHttpResponseWriterFactory();
     private final LineFormatter lineFormatter;

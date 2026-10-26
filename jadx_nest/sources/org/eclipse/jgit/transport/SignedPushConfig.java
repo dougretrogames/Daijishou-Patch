@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SignedPushConfig {
     public static final Config.SectionParser<SignedPushConfig> KEY = new SignedPushConfig$$ExternalSyntheticLambda0();
     private String certNonceSeed;

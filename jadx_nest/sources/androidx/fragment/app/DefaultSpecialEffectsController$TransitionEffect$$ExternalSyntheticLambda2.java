@@ -2,8 +2,8 @@ package androidx.fragment.app;
 
 import java.util.ArrayList;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class DefaultSpecialEffectsController$TransitionEffect$$ExternalSyntheticLambda2 implements Runnable {
     public final /* synthetic */ ArrayList f$0;
 

@@ -3,7 +3,7 @@ package com.google.api.client.auth.oauth2;
 import com.google.api.client.util.Preconditions;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public final class CredentialStoreRefreshListener implements CredentialRefreshListener {
     private final CredentialStore credentialStore;

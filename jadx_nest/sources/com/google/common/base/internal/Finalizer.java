@@ -11,7 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Finalizer implements Runnable {
     private static final String FINALIZABLE_REFERENCE = "com.google.common.base.FinalizableReference";
 

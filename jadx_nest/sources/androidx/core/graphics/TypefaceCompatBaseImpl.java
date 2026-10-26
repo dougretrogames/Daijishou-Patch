@@ -15,7 +15,7 @@ import java.lang.reflect.Field;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class TypefaceCompatBaseImpl {
     private static final int INVALID_KEY = 0;
     private static final String TAG = "TypefaceCompatBaseImpl";
@@ -64,7 +64,7 @@ class TypefaceCompatBaseImpl {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.graphics.TypefaceCompatBaseImpl$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.graphics.TypefaceCompatBaseImpl$1, reason: invalid class name */
     class AnonymousClass1 implements StyleExtractor<FontsContractCompat.FontInfo> {
         AnonymousClass1() {
         }
@@ -133,7 +133,7 @@ class TypefaceCompatBaseImpl {
         throw new IllegalStateException("createFromFontInfoWithFallback must only be called on API 29+");
     }
 
-    /* JADX INFO: renamed from: androidx.core.graphics.TypefaceCompatBaseImpl$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.graphics.TypefaceCompatBaseImpl$2, reason: invalid class name */
     class AnonymousClass2 implements StyleExtractor<FontResourcesParserCompat.FontFileResourceEntry> {
         AnonymousClass2() {
         }
@@ -153,7 +153,7 @@ class TypefaceCompatBaseImpl {
         return (FontResourcesParserCompat.FontFileResourceEntry) findBestFont(fontFamilyFilesResourceEntry.getEntries(), i, new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: androidx.core.graphics.TypefaceCompatBaseImpl$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.graphics.TypefaceCompatBaseImpl$3, reason: invalid class name */
     class AnonymousClass3 implements StyleExtractor<FontResourcesParserCompat.FontFileResourceEntry> {
         AnonymousClass3() {
         }

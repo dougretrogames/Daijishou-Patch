@@ -7,7 +7,7 @@ import java.util.Spliterator;
 import java.util.stream.BaseStream;
 import org.apache.commons.io.function.IOBaseStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface IOBaseStream<T, S extends IOBaseStream<T, S, B>, B extends BaseStream<T, B>> extends Closeable {
     B unwrap();
 

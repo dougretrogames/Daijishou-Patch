@@ -4,7 +4,7 @@ import android.location.GnssStatus;
 import android.os.Build;
 import androidx.core.util.Preconditions;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class GnssStatusWrapper extends GnssStatusCompat {
     private final GnssStatus mWrapped;
 

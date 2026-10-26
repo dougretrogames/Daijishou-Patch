@@ -1,6 +1,6 @@
 package androidx.dynamicanimation.animation;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class FlingAnimation extends DynamicAnimation<FlingAnimation> {
     private final DragForce mFlingForce;
 

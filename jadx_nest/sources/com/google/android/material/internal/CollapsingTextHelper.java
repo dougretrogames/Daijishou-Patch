@@ -29,7 +29,7 @@ import com.google.android.material.resources.CancelableFontCallback;
 import com.google.android.material.resources.TextAppearance;
 import com.google.android.material.resources.TypefaceUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class CollapsingTextHelper {
     private static final boolean DEBUG_DRAW = false;
     private static final String ELLIPSIS_NORMAL = "…";
@@ -323,7 +323,7 @@ public final class CollapsingTextHelper {
         recalculate();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.CollapsingTextHelper$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.CollapsingTextHelper$1, reason: invalid class name */
     class AnonymousClass1 implements CancelableFontCallback.ApplyFont {
         AnonymousClass1() {
         }
@@ -358,7 +358,7 @@ public final class CollapsingTextHelper {
         recalculate();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.CollapsingTextHelper$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.CollapsingTextHelper$2, reason: invalid class name */
     class AnonymousClass2 implements CancelableFontCallback.ApplyFont {
         AnonymousClass2() {
         }

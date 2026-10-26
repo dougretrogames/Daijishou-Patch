@@ -4,12 +4,12 @@ import android.os.RemoteException;
 import com.google.android.gms.internal.auth.zzaq;
 import com.google.android.gms.internal.auth.zzau;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 final class zzg extends zzl {
     final /* synthetic */ zzaq zza;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     zzg(AccountTransferClient accountTransferClient, int i, zzaq zzaqVar) {
         super(1608, null);
         this.zza = zzaqVar;

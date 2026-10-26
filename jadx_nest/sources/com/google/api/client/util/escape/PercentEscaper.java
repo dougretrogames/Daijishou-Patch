@@ -2,7 +2,7 @@ package com.google.api.client.util.escape;
 
 import net.lingala.zip4j.crypto.PBKDF2.BinTools;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PercentEscaper extends UnicodeEscaper {
     public static final String SAFECHARS_URLENCODER = "-_.*";
     public static final String SAFEPATHCHARS_URLENCODER = "-_.!~*'()@:$&,;=";

@@ -3,7 +3,7 @@ package com.bumptech.glide.load.engine;
 import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.load.EncodeStrategy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class DiskCacheStrategy {
     public static final DiskCacheStrategy ALL = new AnonymousClass1();
     public static final DiskCacheStrategy NONE = new AnonymousClass2();
@@ -19,7 +19,7 @@ public abstract class DiskCacheStrategy {
 
     public abstract boolean isResourceCacheable(boolean z, DataSource dataSource, EncodeStrategy encodeStrategy);
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.DiskCacheStrategy$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.DiskCacheStrategy$1, reason: invalid class name */
     class AnonymousClass1 extends DiskCacheStrategy {
         @Override // com.bumptech.glide.load.engine.DiskCacheStrategy
         public boolean decodeCachedData() {
@@ -45,7 +45,7 @@ public abstract class DiskCacheStrategy {
         }
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.DiskCacheStrategy$2, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.DiskCacheStrategy$2, reason: invalid class name */
     class AnonymousClass2 extends DiskCacheStrategy {
         @Override // com.bumptech.glide.load.engine.DiskCacheStrategy
         public boolean decodeCachedData() {
@@ -71,7 +71,7 @@ public abstract class DiskCacheStrategy {
         }
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.DiskCacheStrategy$3, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.DiskCacheStrategy$3, reason: invalid class name */
     class AnonymousClass3 extends DiskCacheStrategy {
         @Override // com.bumptech.glide.load.engine.DiskCacheStrategy
         public boolean decodeCachedData() {
@@ -97,7 +97,7 @@ public abstract class DiskCacheStrategy {
         }
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.DiskCacheStrategy$4, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.DiskCacheStrategy$4, reason: invalid class name */
     class AnonymousClass4 extends DiskCacheStrategy {
         @Override // com.bumptech.glide.load.engine.DiskCacheStrategy
         public boolean decodeCachedData() {
@@ -123,7 +123,7 @@ public abstract class DiskCacheStrategy {
         }
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.DiskCacheStrategy$5, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.DiskCacheStrategy$5, reason: invalid class name */
     class AnonymousClass5 extends DiskCacheStrategy {
         @Override // com.bumptech.glide.load.engine.DiskCacheStrategy
         public boolean decodeCachedData() {

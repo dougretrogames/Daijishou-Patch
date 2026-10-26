@@ -23,7 +23,7 @@ import java.io.IOException;
 import java.util.Collection;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GoogleAccountCredential implements HttpRequestInitializer {
     private final GoogleAccountManager accountManager;
     private String accountName;

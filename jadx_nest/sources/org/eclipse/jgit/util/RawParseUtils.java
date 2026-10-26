@@ -20,7 +20,7 @@ import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.ObjectChecker;
 import org.eclipse.jgit.lib.PersonIdent;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class RawParseUtils {
     private static final byte[] base10byte;
     private static final byte[] digits10;
@@ -104,9 +104,9 @@ public final class RawParseUtils {
         return i4;
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x002f A[LOOP:1: B:20:0x0023->B:25:0x002f, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:35:0x0026 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:40:0x0036 A[EDGE_INSN: B:40:0x0036->B:27:0x0036 BREAK  A[LOOP:1: B:20:0x0023->B:25:0x002f], SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:25:0x002f A[LOOP:1: B:20:0x0023->B:25:0x002f, LOOP_END] */
+    /* WARN: Code duplicated, block: B:35:0x0026 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:40:0x0036 A[EDGE_INSN: B:40:0x0036->B:27:0x0036 BREAK  A[LOOP:1: B:20:0x0023->B:25:0x002f], SYNTHETIC] */
     public static final int parseBase10(byte[] bArr, int i, MutableInteger mutableInteger) {
         byte b;
         byte b2;
@@ -158,7 +158,7 @@ public final class RawParseUtils {
         return b < 0 ? -i2 : i2;
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:32:0x0021, code lost:
+    /* WARN: Code restructure failed: missing block: B:32:0x0021, code lost:
     
         r8 = r8 + 1;
      */

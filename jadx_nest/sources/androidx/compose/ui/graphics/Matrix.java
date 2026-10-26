@@ -12,8 +12,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: compiled from: Matrix.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Matrix.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0014\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\b\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u001d\n\u0002\u0010\u000e\n\u0002\b\u0006\b\u0087@\u0018\u0000 G2\u00020\u0001:\u0001GB\u0011\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u001a\u0010\b\u001a\u00020\t2\b\u0010\n\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b\u000b\u0010\fJ \u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0010H\u0086\n¢\u0006\u0004\b\u0012\u0010\u0013J\u0010\u0010\u0014\u001a\u00020\u0010HÖ\u0001¢\u0006\u0004\b\u0015\u0010\u0016J\r\u0010\u0017\u001a\u00020\u0018¢\u0006\u0004\b\u0019\u0010\u001aJ\u0015\u0010\u001b\u001a\u00020\u00182\u0006\u0010\u001c\u001a\u00020\u001d¢\u0006\u0004\b\u001e\u0010\u001fJ\u0018\u0010\u001b\u001a\u00020 2\u0006\u0010!\u001a\u00020 ø\u0001\u0000¢\u0006\u0004\b\"\u0010#J\u0015\u0010\u001b\u001a\u00020$2\u0006\u0010\u001c\u001a\u00020$¢\u0006\u0004\b\u001e\u0010%J\r\u0010&\u001a\u00020\u0018¢\u0006\u0004\b'\u0010\u001aJ\u0015\u0010(\u001a\u00020\u00182\u0006\u0010)\u001a\u00020\u000e¢\u0006\u0004\b*\u0010+J\u0015\u0010,\u001a\u00020\u00182\u0006\u0010)\u001a\u00020\u000e¢\u0006\u0004\b-\u0010+J\u0015\u0010.\u001a\u00020\u00182\u0006\u0010)\u001a\u00020\u000e¢\u0006\u0004\b/\u0010+J+\u00100\u001a\u00020\u00182\b\b\u0002\u00101\u001a\u00020\u000e2\b\b\u0002\u00102\u001a\u00020\u000e2\b\b\u0002\u00103\u001a\u00020\u000e¢\u0006\u0004\b4\u00105J(\u00106\u001a\u00020\u00182\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00102\u0006\u00107\u001a\u00020\u000eH\u0086\n¢\u0006\u0004\b8\u00109J\u0018\u0010:\u001a\u00020\u00182\u0006\u0010;\u001a\u00020\u0000ø\u0001\u0000¢\u0006\u0004\b<\u0010=J\u001b\u0010>\u001a\u00020\u00182\u0006\u0010?\u001a\u00020\u0000H\u0086\u0002ø\u0001\u0000¢\u0006\u0004\b@\u0010=J\u000f\u0010A\u001a\u00020BH\u0016¢\u0006\u0004\bC\u0010DJ+\u0010E\u001a\u00020\u00182\b\b\u0002\u00101\u001a\u00020\u000e2\b\b\u0002\u00102\u001a\u00020\u000e2\b\b\u0002\u00103\u001a\u00020\u000e¢\u0006\u0004\bF\u00105R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007\u0088\u0001\u0002\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006H"}, d2 = {"Landroidx/compose/ui/graphics/Matrix;", "", "values", "", "constructor-impl", "([F)[F", "getValues", "()[F", "equals", "", "other", "equals-impl", "([FLjava/lang/Object;)Z", "get", "", "row", "", "column", "get-impl", "([FII)F", "hashCode", "hashCode-impl", "([F)I", "invert", "", "invert-impl", "([F)V", "map", "rect", "Landroidx/compose/ui/geometry/MutableRect;", "map-impl", "([FLandroidx/compose/ui/geometry/MutableRect;)V", "Landroidx/compose/ui/geometry/Offset;", "point", "map-MK-Hz9U", "([FJ)J", "Landroidx/compose/ui/geometry/Rect;", "([FLandroidx/compose/ui/geometry/Rect;)Landroidx/compose/ui/geometry/Rect;", "reset", "reset-impl", "rotateX", "degrees", "rotateX-impl", "([FF)V", "rotateY", "rotateY-impl", "rotateZ", "rotateZ-impl", "scale", "x", "y", "z", "scale-impl", "([FFFF)V", "set", "v", "set-impl", "([FIIF)V", "setFrom", "matrix", "setFrom-58bKbWc", "([F[F)V", "timesAssign", "m", "timesAssign-58bKbWc", "toString", "", "toString-impl", "([F)Ljava/lang/String;", "translate", "translate-impl", "Companion", "ui-graphics_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 @JvmInline
 public final class Matrix {
@@ -30,27 +30,27 @@ public final class Matrix {
     public static final int TranslateZ = 14;
     private final float[] values;
 
-    /* JADX INFO: renamed from: box-impl, reason: not valid java name */
+    /* INFO: renamed from: box-impl, reason: not valid java name */
     public static final /* synthetic */ Matrix m760boximpl(float[] fArr) {
         return new Matrix(fArr);
     }
 
-    /* JADX INFO: renamed from: constructor-impl, reason: not valid java name */
+    /* INFO: renamed from: constructor-impl, reason: not valid java name */
     public static float[] m761constructorimpl(float[] fArr) {
         return fArr;
     }
 
-    /* JADX INFO: renamed from: equals-impl, reason: not valid java name */
+    /* INFO: renamed from: equals-impl, reason: not valid java name */
     public static boolean m763equalsimpl(float[] fArr, Object obj) {
         return (obj instanceof Matrix) && Intrinsics.areEqual(fArr, ((Matrix) obj).m783unboximpl());
     }
 
-    /* JADX INFO: renamed from: equals-impl0, reason: not valid java name */
+    /* INFO: renamed from: equals-impl0, reason: not valid java name */
     public static final boolean m764equalsimpl0(float[] fArr, float[] fArr2) {
         return Intrinsics.areEqual(fArr, fArr2);
     }
 
-    /* JADX INFO: renamed from: hashCode-impl, reason: not valid java name */
+    /* INFO: renamed from: hashCode-impl, reason: not valid java name */
     public static int m766hashCodeimpl(float[] fArr) {
         return Arrays.hashCode(fArr);
     }
@@ -63,7 +63,7 @@ public final class Matrix {
         return m766hashCodeimpl(this.values);
     }
 
-    /* JADX INFO: renamed from: unbox-impl, reason: not valid java name */
+    /* INFO: renamed from: unbox-impl, reason: not valid java name */
     public final /* synthetic */ float[] m783unboximpl() {
         return this.values;
     }
@@ -76,7 +76,7 @@ public final class Matrix {
         return this.values;
     }
 
-    /* JADX INFO: renamed from: constructor-impl$default, reason: not valid java name */
+    /* INFO: renamed from: constructor-impl$default, reason: not valid java name */
     public static /* synthetic */ float[] m762constructorimpl$default(float[] fArr, int i, DefaultConstructorMarker defaultConstructorMarker) {
         if ((i & 1) != 0) {
             fArr = new float[]{1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f};
@@ -84,17 +84,17 @@ public final class Matrix {
         return m761constructorimpl(fArr);
     }
 
-    /* JADX INFO: renamed from: get-impl, reason: not valid java name */
+    /* INFO: renamed from: get-impl, reason: not valid java name */
     public static final float m765getimpl(float[] fArr, int i, int i2) {
         return fArr[(i * 4) + i2];
     }
 
-    /* JADX INFO: renamed from: set-impl, reason: not valid java name */
+    /* INFO: renamed from: set-impl, reason: not valid java name */
     public static final void m777setimpl(float[] fArr, int i, int i2, float f) {
         fArr[(i * 4) + i2] = f;
     }
 
-    /* JADX INFO: renamed from: map-MK-Hz9U, reason: not valid java name */
+    /* INFO: renamed from: map-MK-Hz9U, reason: not valid java name */
     public static final long m768mapMKHz9U(float[] fArr, long j) {
         float fM289getXimpl = Offset.m289getXimpl(j);
         float fM290getYimpl = Offset.m290getYimpl(j);
@@ -105,7 +105,7 @@ public final class Matrix {
         return OffsetKt.Offset(((fArr[0] * fM289getXimpl) + (fArr[4] * fM290getYimpl) + fArr[12]) * f, f * ((fArr[1] * fM289getXimpl) + (fArr[5] * fM290getYimpl) + fArr[13]));
     }
 
-    /* JADX INFO: renamed from: map-impl, reason: not valid java name */
+    /* INFO: renamed from: map-impl, reason: not valid java name */
     public static final Rect m769mapimpl(float[] fArr, Rect rect) {
         long jM768mapMKHz9U = m768mapMKHz9U(fArr, OffsetKt.Offset(rect.getLeft(), rect.getTop()));
         long jM768mapMKHz9U2 = m768mapMKHz9U(fArr, OffsetKt.Offset(rect.getLeft(), rect.getBottom()));
@@ -114,7 +114,7 @@ public final class Matrix {
         return new Rect(Math.min(Math.min(Offset.m289getXimpl(jM768mapMKHz9U), Offset.m289getXimpl(jM768mapMKHz9U2)), Math.min(Offset.m289getXimpl(jM768mapMKHz9U3), Offset.m289getXimpl(jM768mapMKHz9U4))), Math.min(Math.min(Offset.m290getYimpl(jM768mapMKHz9U), Offset.m290getYimpl(jM768mapMKHz9U2)), Math.min(Offset.m290getYimpl(jM768mapMKHz9U3), Offset.m290getYimpl(jM768mapMKHz9U4))), Math.max(Math.max(Offset.m289getXimpl(jM768mapMKHz9U), Offset.m289getXimpl(jM768mapMKHz9U2)), Math.max(Offset.m289getXimpl(jM768mapMKHz9U3), Offset.m289getXimpl(jM768mapMKHz9U4))), Math.max(Math.max(Offset.m290getYimpl(jM768mapMKHz9U), Offset.m290getYimpl(jM768mapMKHz9U2)), Math.max(Offset.m290getYimpl(jM768mapMKHz9U3), Offset.m290getYimpl(jM768mapMKHz9U4))));
     }
 
-    /* JADX INFO: renamed from: map-impl, reason: not valid java name */
+    /* INFO: renamed from: map-impl, reason: not valid java name */
     public static final void m770mapimpl(float[] fArr, MutableRect mutableRect) {
         long jM768mapMKHz9U = m768mapMKHz9U(fArr, OffsetKt.Offset(mutableRect.getLeft(), mutableRect.getTop()));
         long jM768mapMKHz9U2 = m768mapMKHz9U(fArr, OffsetKt.Offset(mutableRect.getLeft(), mutableRect.getBottom()));
@@ -126,7 +126,7 @@ public final class Matrix {
         mutableRect.setBottom(Math.max(Math.max(Offset.m290getYimpl(jM768mapMKHz9U), Offset.m290getYimpl(jM768mapMKHz9U2)), Math.max(Offset.m290getYimpl(jM768mapMKHz9U3), Offset.m290getYimpl(jM768mapMKHz9U4))));
     }
 
-    /* JADX INFO: renamed from: timesAssign-58bKbWc, reason: not valid java name */
+    /* INFO: renamed from: timesAssign-58bKbWc, reason: not valid java name */
     public static final void m779timesAssign58bKbWc(float[] fArr, float[] fArr2) {
         float fM785dotp89u6pk = MatrixKt.m785dotp89u6pk(fArr, 0, fArr2, 0);
         float fM785dotp89u6pk2 = MatrixKt.m785dotp89u6pk(fArr, 0, fArr2, 1);
@@ -166,7 +166,7 @@ public final class Matrix {
         return m780toStringimpl(this.values);
     }
 
-    /* JADX INFO: renamed from: toString-impl, reason: not valid java name */
+    /* INFO: renamed from: toString-impl, reason: not valid java name */
     public static String m780toStringimpl(float[] fArr) {
         StringBuilder sb = new StringBuilder("\n            |");
         sb.append(fArr[0]).append(TokenParser.SP).append(fArr[1]).append(TokenParser.SP).append(fArr[2]).append(TokenParser.SP).append(fArr[3]).append("|\n            |").append(fArr[4]).append(TokenParser.SP).append(fArr[5]).append(TokenParser.SP).append(fArr[6]).append(TokenParser.SP).append(fArr[7]).append("|\n            |").append(fArr[8]).append(TokenParser.SP).append(fArr[9]).append(TokenParser.SP).append(fArr[10]).append(TokenParser.SP);
@@ -174,14 +174,14 @@ public final class Matrix {
         return StringsKt.trimIndent(sb.toString());
     }
 
-    /* JADX INFO: renamed from: setFrom-58bKbWc, reason: not valid java name */
+    /* INFO: renamed from: setFrom-58bKbWc, reason: not valid java name */
     public static final void m778setFrom58bKbWc(float[] fArr, float[] fArr2) {
         for (int i = 0; i < 16; i++) {
             fArr[i] = fArr2[i];
         }
     }
 
-    /* JADX INFO: renamed from: rotateX-impl, reason: not valid java name */
+    /* INFO: renamed from: rotateX-impl, reason: not valid java name */
     public static final void m772rotateXimpl(float[] fArr, float f) {
         double d = (((double) f) * 3.141592653589793d) / 180.0d;
         float fCos = (float) Math.cos(d);
@@ -204,7 +204,7 @@ public final class Matrix {
         fArr[14] = (f8 * fSin) + (f9 * fCos);
     }
 
-    /* JADX INFO: renamed from: rotateY-impl, reason: not valid java name */
+    /* INFO: renamed from: rotateY-impl, reason: not valid java name */
     public static final void m773rotateYimpl(float[] fArr, float f) {
         double d = (((double) f) * 3.141592653589793d) / 180.0d;
         float fCos = (float) Math.cos(d);
@@ -227,7 +227,7 @@ public final class Matrix {
         fArr[14] = ((-f8) * fSin) + (f9 * fCos);
     }
 
-    /* JADX INFO: renamed from: rotateZ-impl, reason: not valid java name */
+    /* INFO: renamed from: rotateZ-impl, reason: not valid java name */
     public static final void m774rotateZimpl(float[] fArr, float f) {
         double d = (((double) f) * 3.141592653589793d) / 180.0d;
         float fCos = (float) Math.cos(d);
@@ -254,7 +254,7 @@ public final class Matrix {
         fArr[7] = (f5 * f12) + (fCos * f13);
     }
 
-    /* JADX INFO: renamed from: scale-impl$default, reason: not valid java name */
+    /* INFO: renamed from: scale-impl$default, reason: not valid java name */
     public static /* synthetic */ void m776scaleimpl$default(float[] fArr, float f, float f2, float f3, int i, Object obj) {
         if ((i & 1) != 0) {
             f = 1.0f;
@@ -268,7 +268,7 @@ public final class Matrix {
         m775scaleimpl(fArr, f, f2, f3);
     }
 
-    /* JADX INFO: renamed from: translate-impl$default, reason: not valid java name */
+    /* INFO: renamed from: translate-impl$default, reason: not valid java name */
     public static /* synthetic */ void m782translateimpl$default(float[] fArr, float f, float f2, float f3, int i, Object obj) {
         if ((i & 1) != 0) {
             f = 0.0f;
@@ -282,7 +282,7 @@ public final class Matrix {
         m781translateimpl(fArr, f, f2, f3);
     }
 
-    /* JADX INFO: renamed from: invert-impl, reason: not valid java name */
+    /* INFO: renamed from: invert-impl, reason: not valid java name */
     public static final void m767invertimpl(float[] fArr) {
         float f = fArr[0];
         float f2 = fArr[1];
@@ -337,7 +337,7 @@ public final class Matrix {
         fArr[15] = (((f9 * f20) - (f10 * f18)) + (f11 * f17)) * f30;
     }
 
-    /* JADX INFO: renamed from: reset-impl, reason: not valid java name */
+    /* INFO: renamed from: reset-impl, reason: not valid java name */
     public static final void m771resetimpl(float[] fArr) {
         int i = 0;
         while (i < 4) {
@@ -350,7 +350,7 @@ public final class Matrix {
         }
     }
 
-    /* JADX INFO: renamed from: scale-impl, reason: not valid java name */
+    /* INFO: renamed from: scale-impl, reason: not valid java name */
     public static final void m775scaleimpl(float[] fArr, float f, float f2, float f3) {
         fArr[0] = fArr[0] * f;
         fArr[1] = fArr[1] * f;
@@ -366,7 +366,7 @@ public final class Matrix {
         fArr[11] = fArr[11] * f3;
     }
 
-    /* JADX INFO: renamed from: translate-impl, reason: not valid java name */
+    /* INFO: renamed from: translate-impl, reason: not valid java name */
     public static final void m781translateimpl(float[] fArr, float f, float f2, float f3) {
         float f4 = (fArr[0] * f) + (fArr[4] * f2) + (fArr[8] * f3) + fArr[12];
         float f5 = (fArr[1] * f) + (fArr[5] * f2) + (fArr[9] * f3) + fArr[13];

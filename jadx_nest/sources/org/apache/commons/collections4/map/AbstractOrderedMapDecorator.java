@@ -3,7 +3,7 @@ package org.apache.commons.collections4.map;
 import org.apache.commons.collections4.OrderedMap;
 import org.apache.commons.collections4.OrderedMapIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractOrderedMapDecorator<K, V> extends AbstractMapDecorator<K, V> implements OrderedMap<K, V> {
     protected AbstractOrderedMapDecorator() {
     }
@@ -12,7 +12,7 @@ public abstract class AbstractOrderedMapDecorator<K, V> extends AbstractMapDecor
         super(orderedMap);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.map.AbstractMapDecorator
     public OrderedMap<K, V> decorated() {
         return (OrderedMap) super.decorated();

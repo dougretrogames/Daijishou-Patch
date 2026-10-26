@@ -12,7 +12,7 @@ import org.jsoup.nodes.Node;
 import org.jsoup.nodes.NodeIterator;
 import org.jsoup.nodes.TextNode;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class StructuralEvaluator extends Evaluator {
     final Evaluator evaluator;
     final ThreadLocal<IdentityHashMap<Node, IdentityHashMap<Node, Boolean>>> threadMemo = ThreadLocal.withInitial(new StructuralEvaluator$$ExternalSyntheticLambda0());
@@ -38,7 +38,7 @@ abstract class StructuralEvaluator extends Evaluator {
         return this.threadMemo.get().computeIfAbsent(element, Functions.identityMapFunction()).computeIfAbsent(node, new StructuralEvaluator$$ExternalSyntheticLambda1(this, element)).booleanValue();
     }
 
-    /* JADX INFO: renamed from: lambda$memoMatches$0$org-jsoup-select-StructuralEvaluator, reason: not valid java name */
+    /* INFO: renamed from: lambda$memoMatches$0$org-jsoup-select-StructuralEvaluator, reason: not valid java name */
     /* synthetic */ Boolean m5879lambda$memoMatches$0$orgjsoupselectStructuralEvaluator(Element element, Node node) {
         return Boolean.valueOf(this.evaluator.m5877lambda$asNodePredicate$1$orgjsoupselectEvaluator(element, node));
     }
@@ -51,7 +51,7 @@ abstract class StructuralEvaluator extends Evaluator {
     }
 
     @Override // org.jsoup.select.Evaluator
-    /* JADX INFO: renamed from: matches */
+    /* INFO: renamed from: matches */
     public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
         return evaluateMatch(element, element2);
     }
@@ -68,7 +68,7 @@ abstract class StructuralEvaluator extends Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element == element2;
         }
@@ -100,7 +100,7 @@ abstract class StructuralEvaluator extends Evaluator {
         }
 
         @Override // org.jsoup.select.StructuralEvaluator, org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             if (this.checkSiblings) {
                 for (Element elementFirstElementSibling = element2.firstElementSibling(); elementFirstElementSibling != null; elementFirstElementSibling = elementFirstElementSibling.nextElementSibling()) {

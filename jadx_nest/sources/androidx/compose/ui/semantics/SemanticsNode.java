@@ -24,8 +24,8 @@ import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.functions.Function1;
 
-/* JADX INFO: compiled from: SemanticsNode.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: SemanticsNode.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0090\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010 \n\u0002\b\u0007\n\u0002\u0010\b\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\b\u0007\u0018\u00002\u00020\u0001B'\b\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\t¢\u0006\u0002\u0010\nJ\r\u0010H\u001a\u00020\u0000H\u0000¢\u0006\u0002\bIJ\u0016\u0010J\u001a\u00020K2\f\u0010L\u001a\b\u0012\u0004\u0012\u00020\u00000MH\u0002J3\u0010N\u001a\u00020\u00002\b\u0010O\u001a\u0004\u0018\u00010P2\u0017\u0010Q\u001a\u0013\u0012\u0004\u0012\u00020S\u0012\u0004\u0012\u00020K0R¢\u0006\u0002\bTH\u0002ø\u0001\u0000¢\u0006\u0002\bUJ\u000f\u0010V\u001a\u0004\u0018\u00010WH\u0000¢\u0006\u0002\bXJ\u001e\u0010Y\u001a\b\u0012\u0004\u0012\u00020\u00000\u00142\u000e\b\u0002\u0010Z\u001a\b\u0012\u0004\u0012\u00020\u00000MH\u0002J\u000e\u0010[\u001a\u00020\u001c2\u0006\u0010\\\u001a\u00020]J\u001e\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00000\u00142\u0006\u0010^\u001a\u00020\u00052\u0006\u0010_\u001a\u00020\u0005H\u0002J\u0010\u0010`\u001a\u00020K2\u0006\u0010a\u001a\u00020\tH\u0002J\u001d\u0010L\u001a\b\u0012\u0004\u0012\u00020\u00000\u00142\b\b\u0002\u0010_\u001a\u00020\u0005H\u0000¢\u0006\u0002\bbJ\u001a\u0010c\u001a\u00020K*\u00020\u00072\f\u0010Z\u001a\b\u0012\u0004\u0012\u00020\u00000MH\u0002R\u0014\u0010\u000b\u001a\u00020\f8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\u000f\u001a\u00020\f8F¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u000eR\u0011\u0010\u0011\u001a\u00020\f8F¢\u0006\u0006\u001a\u0004\b\u0012\u0010\u000eR\u0017\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00000\u00148F¢\u0006\u0006\u001a\u0004\b\u0015\u0010\u0016R\u0011\u0010\u0017\u001a\u00020\t8F¢\u0006\u0006\u001a\u0004\b\u0018\u0010\u0019R\u0010\u0010\u001a\u001a\u0004\u0018\u00010\u0000X\u0082\u000e¢\u0006\u0002\n\u0000R\u0011\u0010\u001b\u001a\u00020\u001c¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u001a\u0010\u001f\u001a\u00020\u0005X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b \u0010!\"\u0004\b\"\u0010#R\u0014\u0010$\u001a\u00020\u00058BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b$\u0010!R\u0011\u0010%\u001a\u00020\u00058F¢\u0006\u0006\u001a\u0004\b%\u0010!R\u0014\u0010&\u001a\u00020\u00058@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b'\u0010!R\u0014\u0010(\u001a\u00020\u00058@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b)\u0010!R\u0011\u0010*\u001a\u00020+8F¢\u0006\u0006\u001a\u0004\b,\u0010-R\u0014\u0010\u0006\u001a\u00020\u0007X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b.\u0010/R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b0\u0010!R\u0014\u0010\u0002\u001a\u00020\u0003X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b1\u00102R\u0013\u00103\u001a\u0004\u0018\u00010\u00008F¢\u0006\u0006\u001a\u0004\b4\u00105R\u0017\u00106\u001a\u0002078Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b8\u00109R\u0017\u0010:\u001a\u0002078Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b;\u00109R\u001a\u0010<\u001a\b\u0012\u0004\u0012\u00020\u00000\u00148@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b=\u0010\u0016R\u0013\u0010>\u001a\u0004\u0018\u00010?8F¢\u0006\u0006\u001a\u0004\b@\u0010AR\u0017\u0010B\u001a\u00020C8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\bD\u00109R\u0011\u0010E\u001a\u00020\f8F¢\u0006\u0006\u001a\u0004\bF\u0010\u000eR\u0014\u0010\b\u001a\u00020\tX\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\bG\u0010\u0019\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006d"}, d2 = {"Landroidx/compose/ui/semantics/SemanticsNode;", "", "outerSemanticsNode", "Landroidx/compose/ui/Modifier$Node;", "mergingEnabled", "", "layoutNode", "Landroidx/compose/ui/node/LayoutNode;", "unmergedConfig", "Landroidx/compose/ui/semantics/SemanticsConfiguration;", "(Landroidx/compose/ui/Modifier$Node;ZLandroidx/compose/ui/node/LayoutNode;Landroidx/compose/ui/semantics/SemanticsConfiguration;)V", "boundsInParent", "Landroidx/compose/ui/geometry/Rect;", "getBoundsInParent$ui_release", "()Landroidx/compose/ui/geometry/Rect;", "boundsInRoot", "getBoundsInRoot", "boundsInWindow", "getBoundsInWindow", "children", "", "getChildren", "()Ljava/util/List;", "config", "getConfig", "()Landroidx/compose/ui/semantics/SemanticsConfiguration;", "fakeNodeParent", "id", "", "getId", "()I", "isFake", "isFake$ui_release", "()Z", "setFake$ui_release", "(Z)V", "isMergingSemanticsOfDescendants", "isRoot", "isTransparent", "isTransparent$ui_release", "isUnmergedLeafNode", "isUnmergedLeafNode$ui_release", "layoutInfo", "Landroidx/compose/ui/layout/LayoutInfo;", "getLayoutInfo", "()Landroidx/compose/ui/layout/LayoutInfo;", "getLayoutNode$ui_release", "()Landroidx/compose/ui/node/LayoutNode;", "getMergingEnabled", "getOuterSemanticsNode$ui_release", "()Landroidx/compose/ui/Modifier$Node;", "parent", "getParent", "()Landroidx/compose/ui/semantics/SemanticsNode;", "positionInRoot", "Landroidx/compose/ui/geometry/Offset;", "getPositionInRoot-F1C5BW0", "()J", "positionInWindow", "getPositionInWindow-F1C5BW0", "replacedChildren", "getReplacedChildren$ui_release", "root", "Landroidx/compose/ui/node/RootForTest;", "getRoot", "()Landroidx/compose/ui/node/RootForTest;", "size", "Landroidx/compose/ui/unit/IntSize;", "getSize-YbymL2g", "touchBoundsInRoot", "getTouchBoundsInRoot", "getUnmergedConfig$ui_release", "copyWithMergingEnabled", "copyWithMergingEnabled$ui_release", "emitFakeNodes", "", "unmergedChildren", "", "fakeSemanticsNode", "role", "Landroidx/compose/ui/semantics/Role;", "properties", "Lkotlin/Function1;", "Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;", "Lkotlin/ExtensionFunctionType;", "fakeSemanticsNode-ypyhhiA", "findCoordinatorToGetBounds", "Landroidx/compose/ui/node/NodeCoordinator;", "findCoordinatorToGetBounds$ui_release", "findOneLayerOfMergingSemanticsNodes", "list", "getAlignmentLinePosition", "alignmentLine", "Landroidx/compose/ui/layout/AlignmentLine;", "includeReplacedSemantics", "includeFakeNodes", "mergeConfig", "mergedConfig", "unmergedChildren$ui_release", "fillOneLayerOfSemanticsWrappers", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class SemanticsNode {
     public static final int $stable = 8;
@@ -45,7 +45,7 @@ public final class SemanticsNode {
         this.id = layoutNode.getSemanticsId();
     }
 
-    /* JADX INFO: renamed from: getOuterSemanticsNode$ui_release, reason: from getter */
+    /* INFO: renamed from: getOuterSemanticsNode$ui_release, reason: from getter */
     public final Modifier.Node getOuterSemanticsNode() {
         return this.outerSemanticsNode;
     }
@@ -54,17 +54,17 @@ public final class SemanticsNode {
         return this.mergingEnabled;
     }
 
-    /* JADX INFO: renamed from: getLayoutNode$ui_release, reason: from getter */
+    /* INFO: renamed from: getLayoutNode$ui_release, reason: from getter */
     public final LayoutNode getLayoutNode() {
         return this.layoutNode;
     }
 
-    /* JADX INFO: renamed from: getUnmergedConfig$ui_release, reason: from getter */
+    /* INFO: renamed from: getUnmergedConfig$ui_release, reason: from getter */
     public final SemanticsConfiguration getUnmergedConfig() {
         return this.unmergedConfig;
     }
 
-    /* JADX INFO: renamed from: isFake$ui_release, reason: from getter */
+    /* INFO: renamed from: isFake$ui_release, reason: from getter */
     public final boolean getIsFake() {
         return this.isFake;
     }
@@ -107,7 +107,7 @@ public final class SemanticsNode {
         return SemanticsModifierNodeKt.touchBoundsInRoot(node.getNode(), SemanticsModifierNodeKt.getUseMinimumTouchTarget(this.unmergedConfig));
     }
 
-    /* JADX INFO: renamed from: getSize-YbymL2g, reason: not valid java name */
+    /* INFO: renamed from: getSize-YbymL2g, reason: not valid java name */
     public final long m2221getSizeYbymL2g() {
         NodeCoordinator nodeCoordinatorFindCoordinatorToGetBounds$ui_release = findCoordinatorToGetBounds$ui_release();
         return nodeCoordinatorFindCoordinatorToGetBounds$ui_release != null ? nodeCoordinatorFindCoordinatorToGetBounds$ui_release.mo1831getSizeYbymL2g() : IntSize.INSTANCE.m3059getZeroYbymL2g();
@@ -127,7 +127,7 @@ public final class SemanticsNode {
         return Rect.INSTANCE.getZero();
     }
 
-    /* JADX INFO: renamed from: getPositionInRoot-F1C5BW0, reason: not valid java name */
+    /* INFO: renamed from: getPositionInRoot-F1C5BW0, reason: not valid java name */
     public final long m2219getPositionInRootF1C5BW0() {
         NodeCoordinator nodeCoordinatorFindCoordinatorToGetBounds$ui_release = findCoordinatorToGetBounds$ui_release();
         if (nodeCoordinatorFindCoordinatorToGetBounds$ui_release != null) {
@@ -155,7 +155,7 @@ public final class SemanticsNode {
         return Rect.INSTANCE.getZero();
     }
 
-    /* JADX INFO: renamed from: getPositionInWindow-F1C5BW0, reason: not valid java name */
+    /* INFO: renamed from: getPositionInWindow-F1C5BW0, reason: not valid java name */
     public final long m2220getPositionInWindowF1C5BW0() {
         NodeCoordinator nodeCoordinatorFindCoordinatorToGetBounds$ui_release = findCoordinatorToGetBounds$ui_release();
         if (nodeCoordinatorFindCoordinatorToGetBounds$ui_release != null) {
@@ -307,7 +307,7 @@ public final class SemanticsNode {
         return SemanticsNodeKt.SemanticsNode(layoutNodeFindClosestParentNode, this.mergingEnabled);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static /* synthetic */ List findOneLayerOfMergingSemanticsNodes$default(SemanticsNode semanticsNode, List list, int i, Object obj) {
         if ((i & 1) != 0) {
             list = new ArrayList();
@@ -358,7 +358,7 @@ public final class SemanticsNode {
         }
     }
 
-    /* JADX INFO: renamed from: fakeSemanticsNode-ypyhhiA, reason: not valid java name */
+    /* INFO: renamed from: fakeSemanticsNode-ypyhhiA, reason: not valid java name */
     private final SemanticsNode m2218fakeSemanticsNodeypyhhiA(Role role, Function1<? super SemanticsPropertyReceiver, Unit> properties) {
         SemanticsConfiguration semanticsConfiguration = new SemanticsConfiguration();
         semanticsConfiguration.setMergingSemanticsOfDescendants(false);

@@ -3,8 +3,8 @@ package okhttp3.internal;
 import okhttp3.Call;
 import okhttp3.EventListener;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class Util$$ExternalSyntheticLambda0 implements EventListener.Factory {
     public final /* synthetic */ EventListener f$0;
 

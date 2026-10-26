@@ -5,7 +5,7 @@ import org.eclipse.jgit.errors.StopWalkException;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.revwalk.filter.RevFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PendingGenerator extends Generator {
     private static final RevCommit INIT_LAST;
     static final int OVER_SCAN = 6;

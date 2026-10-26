@@ -5,7 +5,7 @@ import java.net.PasswordAuthentication;
 import java.util.Collection;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class CachedAuthenticator extends Authenticator {
     private static final Collection<CachedAuthentication> cached = new CopyOnWriteArrayList();
 

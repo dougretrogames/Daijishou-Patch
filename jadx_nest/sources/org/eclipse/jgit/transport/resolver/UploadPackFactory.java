@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport.resolver;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.transport.UploadPack;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface UploadPackFactory<C> {
     public static final UploadPackFactory<?> DISABLED = new UploadPackFactory$$ExternalSyntheticLambda0();
 

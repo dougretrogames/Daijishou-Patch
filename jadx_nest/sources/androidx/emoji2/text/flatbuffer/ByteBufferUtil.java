@@ -2,7 +2,7 @@ package androidx.emoji2.text.flatbuffer;
 
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ByteBufferUtil {
     public static int getSizePrefix(ByteBuffer byteBuffer) {
         return byteBuffer.getInt(byteBuffer.position());

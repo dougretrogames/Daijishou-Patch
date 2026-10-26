@@ -34,7 +34,7 @@ import org.apache.commons.collections4.map.UnmodifiableMap;
 import org.apache.commons.collections4.map.UnmodifiableSortedMap;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MapUtils {
     public static final SortedMap EMPTY_SORTED_MAP = UnmodifiableSortedMap.unmodifiableSortedMap(new TreeMap());
     private static final String INDENT_STRING = "    ";
@@ -385,8 +385,8 @@ public class MapUtils {
         return !isEmpty(map);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [V, K] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.MapUtils$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [V, K] */
+    /* INFO: renamed from: org.apache.commons.collections4.MapUtils$1, reason: invalid class name */
     class AnonymousClass1<K, V> extends AbstractMapDecorator<K, V> {
         AnonymousClass1(Map map) {
             super(map);
@@ -403,8 +403,8 @@ public class MapUtils {
         return sortedMap instanceof IterableSortedMap ? (IterableSortedMap) sortedMap : new AnonymousClass2(sortedMap);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [V, K] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.MapUtils$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [V, K] */
+    /* INFO: renamed from: org.apache.commons.collections4.MapUtils$2, reason: invalid class name */
     class AnonymousClass2<K, V> extends AbstractSortedMapDecorator<K, V> {
         AnonymousClass2(SortedMap sortedMap) {
             super(sortedMap);
@@ -480,7 +480,7 @@ public class MapUtils {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <K, V> Map<K, V> putAll(Map<K, V> map, Object[] objArr) {
         Objects.requireNonNull(map, "map");
         if (objArr != null && objArr.length != 0) {
@@ -520,7 +520,7 @@ public class MapUtils {
         return map;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <K> void safeAddToMap(Map<? super K, Object> map, K k, Object obj) throws NullPointerException {
         Objects.requireNonNull(map, "map");
         if (obj == null) {

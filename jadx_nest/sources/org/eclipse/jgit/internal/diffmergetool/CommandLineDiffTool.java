@@ -1,6 +1,6 @@
 package org.eclipse.jgit.internal.diffmergetool;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum CommandLineDiffTool {
     araxis("compare", "-wait -2 \"$LOCAL\" \"$REMOTE\""),
     bc("bcomp", "\"$LOCAL\" \"$REMOTE\""),
@@ -31,7 +31,7 @@ public enum CommandLineDiffTool {
     private final String parameters;
     private final String path;
 
-    /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+    /* INFO: renamed from: values, reason: to resolve conflict with enum method */
     public static CommandLineDiffTool[] valuesCustom() {
         CommandLineDiffTool[] commandLineDiffToolArrValuesCustom = values();
         int length = commandLineDiffToolArrValuesCustom.length;

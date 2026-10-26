@@ -3,7 +3,7 @@ package androidx.leanback.widget;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class TitleViewAdapter {
     public static final int BRANDING_VIEW_VISIBLE = 2;
     public static final int FULL_VIEW_VISIBLE = 6;

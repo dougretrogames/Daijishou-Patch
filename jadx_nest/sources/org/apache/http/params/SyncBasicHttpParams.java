@@ -1,6 +1,6 @@
 package org.apache.http.params;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class SyncBasicHttpParams extends BasicHttpParams {
     private static final long serialVersionUID = 5387834869062660642L;

@@ -9,7 +9,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.Ref;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RefSpec implements Serializable {
     public static final String WILDCARD_SUFFIX = "/*";
     private static final long serialVersionUID = 1;
@@ -25,7 +25,7 @@ public class RefSpec implements Serializable {
         REQUIRE_MATCH,
         ALLOW_MISMATCH;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static WildcardMode[] valuesCustom() {
             WildcardMode[] wildcardModeArrValuesCustom = values();
             int length = wildcardModeArrValuesCustom.length;
@@ -49,7 +49,7 @@ public class RefSpec implements Serializable {
         this.allowMismatchedWildcards = WildcardMode.REQUIRE_MATCH;
     }
 
-    /* JADX WARN: Code duplicated, block: B:52:0x00f5  */
+    /* WARN: Code duplicated, block: B:52:0x00f5  */
     public RefSpec(String str, WildcardMode wildcardMode) {
         String strSubstring;
         this.allowMismatchedWildcards = wildcardMode;

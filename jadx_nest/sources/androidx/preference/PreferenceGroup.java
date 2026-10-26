@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class PreferenceGroup extends Preference {
     private static final String TAG = "PreferenceGroup";
     private boolean mAttachedToHierarchy;
@@ -43,7 +43,7 @@ public abstract class PreferenceGroup extends Preference {
         return true;
     }
 
-    /* JADX INFO: renamed from: androidx.preference.PreferenceGroup$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.PreferenceGroup$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -324,18 +324,18 @@ public abstract class PreferenceGroup extends Preference {
         public static final Parcelable.Creator<SavedState> CREATOR = new AnonymousClass1();
         int mInitialExpandedChildrenCount;
 
-        /* JADX INFO: renamed from: androidx.preference.PreferenceGroup$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.preference.PreferenceGroup$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];

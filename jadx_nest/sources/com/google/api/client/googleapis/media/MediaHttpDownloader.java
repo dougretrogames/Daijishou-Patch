@@ -13,7 +13,7 @@ import com.google.common.io.ByteStreams;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MediaHttpDownloader {
     public static final int MAXIMUM_CHUNK_SIZE = 33554432;
     private long bytesDownloaded;

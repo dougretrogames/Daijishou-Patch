@@ -5,13 +5,13 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.RefUpdate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ConcurrentRefUpdateException extends GitAPIException {
     private static final long serialVersionUID = 1;
     private RefUpdate.Result rc;
     private Ref ref;
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public ConcurrentRefUpdateException(String str, Ref ref, RefUpdate.Result result, Throwable th) {
         if (result != null) {
             str = str + ". " + MessageFormat.format(JGitText.get().refUpdateReturnCodeWas, result);
@@ -21,7 +21,7 @@ public class ConcurrentRefUpdateException extends GitAPIException {
         this.ref = ref;
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public ConcurrentRefUpdateException(String str, Ref ref, RefUpdate.Result result) {
         if (result != null) {
             str = str + ". " + MessageFormat.format(JGitText.get().refUpdateReturnCodeWas, result);

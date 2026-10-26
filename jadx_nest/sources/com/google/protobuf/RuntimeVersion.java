@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class RuntimeVersion {
     public static final int MAJOR = 4;
     public static final int MINOR = 27;

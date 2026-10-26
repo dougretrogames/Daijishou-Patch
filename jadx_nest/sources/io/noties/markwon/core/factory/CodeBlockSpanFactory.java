@@ -5,7 +5,7 @@ import io.noties.markwon.RenderProps;
 import io.noties.markwon.SpanFactory;
 import io.noties.markwon.core.spans.CodeBlockSpan;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class CodeBlockSpanFactory implements SpanFactory {
     @Override // io.noties.markwon.SpanFactory
     public Object getSpans(MarkwonConfiguration markwonConfiguration, RenderProps renderProps) {

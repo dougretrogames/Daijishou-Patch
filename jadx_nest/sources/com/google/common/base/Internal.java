@@ -2,7 +2,7 @@ package com.google.common.base;
 
 import java.time.Duration;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class Internal {
     static long toNanosSaturated(Duration duration) {

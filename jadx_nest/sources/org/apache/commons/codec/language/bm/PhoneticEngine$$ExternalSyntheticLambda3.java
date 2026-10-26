@@ -3,8 +3,8 @@ package org.apache.commons.codec.language.bm;
 import java.util.Map;
 import java.util.function.Consumer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class PhoneticEngine$$ExternalSyntheticLambda3 implements Consumer {
     public final /* synthetic */ PhoneticEngine f$0;
     public final /* synthetic */ Map f$1;

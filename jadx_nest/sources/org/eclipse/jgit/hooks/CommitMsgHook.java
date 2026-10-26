@@ -7,7 +7,7 @@ import org.eclipse.jgit.api.errors.AbortedByHookException;
 import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CommitMsgHook extends GitHook<String> {
     public static final String NAME = "commit-msg";
     private String commitMessage;

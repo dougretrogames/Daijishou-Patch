@@ -7,7 +7,7 @@ import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.errors.PackProtocolException;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class FilterSpec {
     public static final FilterSpec NO_FILTER = new FilterSpec(ObjectTypes.ALL, -1, -1);
     private final long blobLimit;

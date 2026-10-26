@@ -8,7 +8,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ByteBufferEncoder implements Encoder<ByteBuffer> {
     private static final String TAG = "ByteBufferEncoder";
 

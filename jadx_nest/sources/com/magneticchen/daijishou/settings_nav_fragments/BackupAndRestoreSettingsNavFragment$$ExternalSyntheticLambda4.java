@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.settings_nav_fragments;
 import androidx.preference.Preference;
 import com.magneticchen.daijishou.DaijishouApplication;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class BackupAndRestoreSettingsNavFragment$$ExternalSyntheticLambda4 implements Preference.OnPreferenceClickListener {
     public final /* synthetic */ BackupAndRestoreSettingsNavFragment f$0;
     public final /* synthetic */ DaijishouApplication.WrappedLogger f$1;

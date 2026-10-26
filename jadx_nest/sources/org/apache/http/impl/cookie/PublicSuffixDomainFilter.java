@@ -11,7 +11,7 @@ import org.apache.http.cookie.MalformedCookieException;
 import org.apache.http.cookie.SetCookie;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PublicSuffixDomainFilter implements CommonCookieAttributeHandler {
     private final CommonCookieAttributeHandler handler;
     private final Map<String, Boolean> localDomainMap;

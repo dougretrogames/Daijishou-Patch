@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class JsonWriter implements Closeable, Flushable {
     private static final String[] HTML_SAFE_REPLACEMENT_CHARS;
     private String deferredName;
@@ -296,7 +296,7 @@ public class JsonWriter implements Closeable, Flushable {
         this.stackSize = 0;
     }
 
-    /* JADX WARN: Code duplicated, block: B:20:0x0034  */
+    /* WARN: Code duplicated, block: B:20:0x0034  */
     private void string(String str) throws IOException {
         String str2;
         String[] strArr = this.htmlSafe ? HTML_SAFE_REPLACEMENT_CHARS : REPLACEMENT_CHARS;

@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractMapDecorator<K, V> extends AbstractIterableMap<K, V> {
     transient Map<K, V> map;
 

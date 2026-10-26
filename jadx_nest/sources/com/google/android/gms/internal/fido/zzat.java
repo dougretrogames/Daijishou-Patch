@@ -8,8 +8,8 @@ import java.util.RandomAccess;
 import javax.annotation.CheckForNull;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public abstract class zzat extends zzaq implements List, RandomAccess {
     private static final zzba zza = new zzar(zzaw.zza, 0);
     public static final /* synthetic */ int zzd = 0;
@@ -138,13 +138,13 @@ public abstract class zzat extends zzaq implements List, RandomAccess {
     }
 
     @Override // com.google.android.gms.internal.fido.zzaq
-    /* JADX INFO: renamed from: zzd */
+    /* INFO: renamed from: zzd */
     public final zzaz iterator() {
         return listIterator(0);
     }
 
     @Override // java.util.List
-    /* JADX INFO: renamed from: zzf, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: zzf, reason: merged with bridge method [inline-methods] */
     public zzat subList(int i, int i2) {
         zzam.zze(i, i2, size());
         int i3 = i2 - i;
@@ -155,7 +155,7 @@ public abstract class zzat extends zzaq implements List, RandomAccess {
     }
 
     @Override // java.util.List
-    /* JADX INFO: renamed from: zzh, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: zzh, reason: merged with bridge method [inline-methods] */
     public final zzba listIterator(int i) {
         zzam.zzb(i, size(), ConfigConstants.CONFIG_INDEX_SECTION);
         return isEmpty() ? zza : new zzar(this, i);

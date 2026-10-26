@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class GoogleClientSecrets extends GenericJson {
 
     @Key

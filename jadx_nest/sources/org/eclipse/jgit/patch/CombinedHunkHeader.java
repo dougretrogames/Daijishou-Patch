@@ -9,7 +9,7 @@ import org.eclipse.jgit.lib.AbbreviatedObjectId;
 import org.eclipse.jgit.util.MutableInteger;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CombinedHunkHeader extends HunkHeader {
     private CombinedOldImage[] old;
 
@@ -38,12 +38,12 @@ public class CombinedHunkHeader extends HunkHeader {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.patch.CombinedHunkHeader$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.patch.CombinedHunkHeader$1, reason: invalid class name */
     class AnonymousClass1 extends CombinedOldImage {
         private final /* synthetic */ CombinedFileHeader val$fh;
         private final /* synthetic */ int val$imagePos;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(CombinedFileHeader combinedFileHeader, int i) {
             super(null);
             this.val$fh = combinedFileHeader;
@@ -202,8 +202,8 @@ public class CombinedHunkHeader extends HunkHeader {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:29:0x0051  */
-    /* JADX WARN: Code duplicated, block: B:30:0x0055  */
+    /* WARN: Code duplicated, block: B:29:0x0051  */
+    /* WARN: Code duplicated, block: B:30:0x0055  */
     @Override // org.eclipse.jgit.patch.HunkHeader
     void extractFileLines(StringBuilder sb, String[] strArr, int[] iArr) {
         CombinedOldImage[] combinedOldImageArr;

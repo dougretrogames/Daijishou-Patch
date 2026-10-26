@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal;
 import org.eclipse.jgit.nls.NLS;
 import org.eclipse.jgit.nls.TranslationBundle;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class JGitText extends TranslationBundle {
     public String DIRCChecksumMismatch;
     public String DIRCCorruptLength;

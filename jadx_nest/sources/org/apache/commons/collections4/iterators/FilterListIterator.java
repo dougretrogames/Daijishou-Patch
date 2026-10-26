@@ -4,7 +4,7 @@ import java.util.ListIterator;
 import java.util.NoSuchElementException;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FilterListIterator<E> implements ListIterator<E> {
     private ListIterator<? extends E> iterator;
     private int nextIndex;

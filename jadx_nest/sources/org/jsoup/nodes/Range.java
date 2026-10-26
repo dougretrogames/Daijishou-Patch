@@ -5,7 +5,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.jsoup.internal.SharedConstants;
 import org.jsoup.internal.StringUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Range {
     static final Range Untracked;
     private static final Position UntrackedPos;

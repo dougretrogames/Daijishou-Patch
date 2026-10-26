@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.motion.utils;
 
 import com.google.common.base.Ascii;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface TypedValues {
     public static final int BOOLEAN_MASK = 1;
     public static final int FLOAT_MASK = 4;
@@ -125,7 +125,7 @@ public interface TypedValues {
             }
         }
 
-        /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+        /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
         static int getId(String str) {
             byte b;
             str.hashCode();
@@ -336,7 +336,7 @@ public interface TypedValues {
             }
         }
 
-        /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+        /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
         static int getId(String str) {
             byte b;
             str.hashCode();
@@ -460,7 +460,7 @@ public interface TypedValues {
         public static final String VIEW_TRANSITION_ON_NEGATIVE_CROSS = "viewTransitionOnNegativeCross";
         public static final String VIEW_TRANSITION_ON_POSITIVE_CROSS = "viewTransitionOnPositiveCross";
 
-        /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+        /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
         static int getId(String str) {
             byte b;
             str.hashCode();
@@ -634,7 +634,7 @@ public interface TypedValues {
         public static final String S_QUANTIZE_INTERPOLATOR_ID = "QuantizeInterpolatorID";
         public static final String[] KEY_WORDS = {S_STAGGER, S_PATH_ROTATE, S_QUANTIZE_MOTION_PHASE, S_EASING, S_QUANTIZE_INTERPOLATOR, S_ANIMATE_RELATIVE_TO, S_ANIMATE_CIRCLEANGLE_TO, S_PATHMOTION_ARC, S_DRAW_PATH, S_POLAR_RELATIVETO, S_QUANTIZE_MOTIONSTEPS, S_QUANTIZE_INTERPOLATOR_TYPE, S_QUANTIZE_INTERPOLATOR_ID};
 
-        /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+        /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
         static int getId(String str) {
             byte b;
             str.hashCode();

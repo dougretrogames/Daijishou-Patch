@@ -2,7 +2,7 @@ package io.grpc;
 
 import java.time.Duration;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class TimeUtils {
     private TimeUtils() {
     }

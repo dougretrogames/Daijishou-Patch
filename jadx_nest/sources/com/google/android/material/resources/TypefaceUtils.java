@@ -6,7 +6,7 @@ import android.graphics.Typeface;
 import android.os.Build;
 import androidx.core.math.MathUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TypefaceUtils {
     private TypefaceUtils() {
     }

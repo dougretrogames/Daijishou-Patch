@@ -3,7 +3,7 @@ package io.grpc;
 import com.google.common.base.Preconditions;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public interface MetricRecorder {
 
     public interface BatchCallback {

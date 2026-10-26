@@ -8,7 +8,7 @@ import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.util.io.NullOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PatchIdDiffFormatter extends DiffFormatter {
     private final MessageDigest digest;
 

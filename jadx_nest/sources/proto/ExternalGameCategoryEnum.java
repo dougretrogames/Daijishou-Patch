@@ -5,7 +5,7 @@ import com.google.protobuf.Internal;
 import com.google.protobuf.ProtocolMessageEnum;
 import com.google.protobuf.RuntimeVersion;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public enum ExternalGameCategoryEnum implements ProtocolMessageEnum {
     EXTERNALGAME_CATEGORY_NULL(0),
     EXTERNALGAME_STEAM(1),
@@ -143,7 +143,7 @@ public enum ExternalGameCategoryEnum implements ProtocolMessageEnum {
         return internalValueMap;
     }
 
-    /* JADX INFO: renamed from: proto.ExternalGameCategoryEnum$1, reason: invalid class name */
+    /* INFO: renamed from: proto.ExternalGameCategoryEnum$1, reason: invalid class name */
     class AnonymousClass1 implements Internal.EnumLiteMap<ExternalGameCategoryEnum> {
         AnonymousClass1() {
         }

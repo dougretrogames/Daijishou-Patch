@@ -10,7 +10,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class LocationRequestCompat {
     private static final long IMPLICIT_MIN_UPDATE_INTERVAL = -1;
     public static final long PASSIVE_INTERVAL = Long.MAX_VALUE;

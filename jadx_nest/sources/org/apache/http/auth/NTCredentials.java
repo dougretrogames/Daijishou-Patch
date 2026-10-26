@@ -7,7 +7,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.http.util.Args;
 import org.apache.http.util.LangUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NTCredentials implements Credentials, Serializable {
     private static final long serialVersionUID = -7385699315228907265L;
     private final String password;

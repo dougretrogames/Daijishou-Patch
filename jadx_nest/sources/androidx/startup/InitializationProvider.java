@@ -6,7 +6,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.net.Uri;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class InitializationProvider extends ContentProvider {
     @Override // android.content.ContentProvider
     public final boolean onCreate() {

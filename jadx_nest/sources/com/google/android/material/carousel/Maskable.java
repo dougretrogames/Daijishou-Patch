@@ -2,7 +2,7 @@ package com.google.android.material.carousel;
 
 import android.graphics.RectF;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 interface Maskable {
     RectF getMaskRectF();
 

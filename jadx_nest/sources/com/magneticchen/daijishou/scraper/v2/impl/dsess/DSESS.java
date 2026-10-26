@@ -40,8 +40,8 @@ import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.slf4j.Marker;
 
-/* JADX INFO: compiled from: DSESS.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DSESS.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0088\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010$\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u001e\n\u0002\b\n\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\"\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u000b\u0018\u0000 F2\u00020\u0001:\bFGHIJKLMB'\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\b\b\u0002\u0010\b\u001a\u00020\t¢\u0006\u0002\u0010\nJ4\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00172\"\u0010\u0019\u001a\u001e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020\u00070\u001aj\u000e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020\u0007`\u001cH\u0002J4\u0010\u001d\u001a\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u00072\"\u0010\u001e\u001a\u001e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020\u00070\u001aj\u000e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020\u0007`\u001cH\u0002J¦\u0001\u0010\u001f\u001a\u00020\u00072\u0012\u0010 \u001a\u000e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020\u00070!2\u0006\u0010\u0018\u001a\u00020\u00072\u0006\u0010\"\u001a\u00020\u00072\u0012\u0010#\u001a\u000e\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\u00070!2\u0006\u0010%\u001a\u00020\u00072\b\u0010&\u001a\u0004\u0018\u00010\u00072\f\u0010'\u001a\b\u0012\u0004\u0012\u00020\u001b0(2\b\u0010)\u001a\u0004\u0018\u00010\u00072\b\u0010*\u001a\u0004\u0018\u00010\u00072\b\u0010+\u001a\u0004\u0018\u00010\u00072\b\u0010,\u001a\u0004\u0018\u00010\u00072\b\u0010-\u001a\u0004\u0018\u00010\u00072\b\u0010.\u001a\u0004\u0018\u00010\u00072\b\u0010/\u001a\u0004\u0018\u00010\u0007H\u0002J\u0010\u00100\u001a\u00020\u000e2\u0006\u0010\u0006\u001a\u00020\u0007H\u0002J\u001c\u00101\u001a\u000e\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\u00070!2\u0006\u0010\u0018\u001a\u00020\u0017H\u0002J \u00102\u001a\b\u0012\u0004\u0012\u00020\u0007032\u0006\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u00104\u001a\u00020\u0007H\u0002J\\\u00105\u001a\b\u0012\u0004\u0012\u000206032\u0006\u00107\u001a\u0002082\"\u0010\u001e\u001a\u001e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020\u00070\u001aj\u000e\u0012\u0004\u0012\u00020\u001b\u0012\u0004\u0012\u00020\u0007`\u001c2\b\u0010&\u001a\u0004\u0018\u00010\u00072\f\u0010'\u001a\b\u0012\u0004\u0012\u00020\u001b0(2\b\u0010)\u001a\u0004\u0018\u00010\u0007H\u0002J\u0016\u00109\u001a\b\u0012\u0004\u0012\u00020\u001b0:2\u0006\u0010;\u001a\u00020\u0007H\u0002J\u0012\u0010<\u001a\u0004\u0018\u00010\u00072\u0006\u0010\u0006\u001a\u00020\u0007H\u0002J\u0010\u0010=\u001a\u00020\u00172\u0006\u0010>\u001a\u00020\u0017H\u0002J,\u0010?\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010@\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010A\u001a\u0004\u0018\u00010\u00072\n\b\u0002\u0010B\u001a\u0004\u0018\u00010CJ\u0010\u0010D\u001a\u0004\u0018\u00010\u00072\u0006\u0010\u0006\u001a\u00020\u0007J\u0010\u0010E\u001a\u00020\u00072\u0006\u0010\u0006\u001a\u00020\u0007H\u0002R\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0011\u0010\r\u001a\u00020\u000e¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u000e\u0010\u0015\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006N"}, d2 = {"Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS;", "Lcom/magneticchen/daijishou/scraper/v2/AbstractScraper;", "application", "Lcom/magneticchen/daijishou/DaijishouApplication;", "config", "Lcom/magneticchen/daijishou/scraper/v2/ScraperConfig;", TypedValues.Custom.S_STRING, "", "dsessConfig", "Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Config;", "(Lcom/magneticchen/daijishou/DaijishouApplication;Lcom/magneticchen/daijishou/scraper/v2/ScraperConfig;Ljava/lang/String;Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Config;)V", "getDsessConfig", "()Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Config;", "dsessParts", "Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$DSESSParts;", "getDsessParts", "()Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$DSESSParts;", "scraperTargetRegex", "Lkotlin/text/Regex;", "getString", "()Ljava/lang/String;", "templateTagsRegex", "applyTemplateTagsToDSESSURLUri", "Landroid/net/Uri;", "dsessURLUri", "templateValues", "Ljava/util/HashMap;", "Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Template;", "Lkotlin/collections/HashMap;", "applyTemplateTagsToString", "templateTagValueHashMap", "createDebugLog", "templates", "", "searchEngineSiteURLUri", "dsessUrlParameters", "Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Parameter;", "dsessTargetSiteSelector", "dsessTargetSiteLabelSubselector", "dsessTargetSiteLabelMatchers", "", "dsessTargetSiteLinkSubselector", "dsessTargetSite", "dsessSelector", "dsessAttribute", "dsessExtractor", "dsessReplacer", "dsessReplacerValue", "extractDSESSPartsFromDSESSString", "extractDSESSURLParametersFromDESSURLUri", "extractStringListFromTightString", "", "splitterRegexString", "extractTargetSiteElementWithInfoListFromElements", "Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$TargetSiteElementWithInfo;", "targetSiteElements", "Lorg/jsoup/select/Elements;", "extractTemplateTagsFromString", "", "templateTagsString", "normalizeString", "removeDsessURLParametersFromDsessURLUri", "uri", "scrape", "scraperKeyword", "platformName", "locale", "Ljava/util/Locale;", "toGenericName", "toStrictGenericName", "Companion", "Config", "DSESSData", "DSESSParts", "Parameter", "Scraper", "TargetSiteElementWithInfo", "Template", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class DSESS extends AbstractScraper {
     private static final ExpiringMap<String, String> dSESSURLUriStringToResultCache = ExpiringMap.builder().maxSize(64).expiration(3, TimeUnit.MINUTES).expirationPolicy(ExpirationPolicy.ACCESSED).build();
@@ -53,7 +53,7 @@ public final class DSESS extends AbstractScraper {
     private final String string;
     private final Regex templateTagsRegex;
 
-    /* JADX INFO: compiled from: DSESS.kt */
+    /* INFO: compiled from: DSESS.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     public static /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -100,7 +100,7 @@ public final class DSESS extends AbstractScraper {
         return this.dsessConfig;
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DSESS(DaijishouApplication application, ScraperConfig config, String string, Config dsessConfig) {
         super(application, config);
         Intrinsics.checkNotNullParameter(application, "application");
@@ -297,13 +297,13 @@ public final class DSESS extends AbstractScraper {
         return strDecode;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Document scrape$lambda$0(Function1 tmp0, Object obj) {
         Intrinsics.checkNotNullParameter(tmp0, "$tmp0");
         return (Document) tmp0.invoke(obj);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Document scrape$lambda$1(Function1 tmp0, Object obj) {
         Intrinsics.checkNotNullParameter(tmp0, "$tmp0");
         return (Document) tmp0.invoke(obj);
@@ -609,7 +609,7 @@ public final class DSESS extends AbstractScraper {
         return string;
     }
 
-    /* JADX INFO: compiled from: DSESS.kt */
+    /* INFO: compiled from: DSESS.kt */
     @Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u001e\n\u0002\b)\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B£\u0001\u0012\u0012\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0012\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u00050\u0003\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\f\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u00040\r\u0012\b\u0010\u000e\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000f\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0010\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0011\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0012\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0013\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0014\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u0015J\u0015\u0010'\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003HÆ\u0003J\u000b\u0010(\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010)\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010*\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010+\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010,\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010-\u001a\u00020\u0005HÆ\u0003J\t\u0010.\u001a\u00020\u0005HÆ\u0003J\u0015\u0010/\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u00050\u0003HÆ\u0003J\t\u00100\u001a\u00020\u0005HÆ\u0003J\u000b\u00101\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000f\u00102\u001a\b\u0012\u0004\u0012\u00020\u00040\rHÆ\u0003J\u000b\u00103\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u00104\u001a\u0004\u0018\u00010\u0005HÆ\u0003JÃ\u0001\u00105\u001a\u00020\u00002\u0014\b\u0002\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\u0014\b\u0002\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u00050\u00032\b\b\u0002\u0010\n\u001a\u00020\u00052\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u00052\u000e\b\u0002\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u00040\r2\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0012\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0013\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u0005HÆ\u0001J\u0013\u00106\u001a\u0002072\b\u00108\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u00109\u001a\u00020:HÖ\u0001J\t\u0010;\u001a\u00020\u0005HÖ\u0001R\u0013\u0010\u0011\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u0013\u0010\u0012\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0017R\u0013\u0010\u0013\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u0017R\u0013\u0010\u0014\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0017R\u0013\u0010\u0010\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u0017R\u0013\u0010\u000f\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0017R\u0017\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u00040\r¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0013\u0010\u000b\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u0017R\u0013\u0010\u000e\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u0017R\u0011\u0010\n\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\u0017R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u0017R\u001d\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\u00050\u0003¢\u0006\b\n\u0000\u001a\u0004\b#\u0010$R\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b%\u0010\u0017R\u001d\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003¢\u0006\b\n\u0000\u001a\u0004\b&\u0010$¨\u0006<"}, d2 = {"Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$DSESSData;", "", "templates", "", "Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Template;", "", "dsessURLUri", "searchEngineSiteURLUri", "dsessUrlParameters", "Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Parameter;", "dsessTargetSiteSelector", "dsessTargetSiteLabelSubselector", "dsessTargetSiteLabelMatchers", "", "dsessTargetSiteLinkSubselector", "dsessTargetSite", "dsessSelector", "dsessAttribute", "dsessExtractor", "dsessReplacer", "dsessReplacerValue", "(Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;Ljava/lang/String;Ljava/util/Collection;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getDsessAttribute", "()Ljava/lang/String;", "getDsessExtractor", "getDsessReplacer", "getDsessReplacerValue", "getDsessSelector", "getDsessTargetSite", "getDsessTargetSiteLabelMatchers", "()Ljava/util/Collection;", "getDsessTargetSiteLabelSubselector", "getDsessTargetSiteLinkSubselector", "getDsessTargetSiteSelector", "getDsessURLUri", "getDsessUrlParameters", "()Ljava/util/Map;", "getSearchEngineSiteURLUri", "getTemplates", "component1", "component10", "component11", "component12", "component13", "component14", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "", "toString", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class DSESSData {
         private final String dsessAttribute;
@@ -631,37 +631,37 @@ public final class DSESS extends AbstractScraper {
             return this.templates;
         }
 
-        /* JADX INFO: renamed from: component10, reason: from getter */
+        /* INFO: renamed from: component10, reason: from getter */
         public final String getDsessSelector() {
             return this.dsessSelector;
         }
 
-        /* JADX INFO: renamed from: component11, reason: from getter */
+        /* INFO: renamed from: component11, reason: from getter */
         public final String getDsessAttribute() {
             return this.dsessAttribute;
         }
 
-        /* JADX INFO: renamed from: component12, reason: from getter */
+        /* INFO: renamed from: component12, reason: from getter */
         public final String getDsessExtractor() {
             return this.dsessExtractor;
         }
 
-        /* JADX INFO: renamed from: component13, reason: from getter */
+        /* INFO: renamed from: component13, reason: from getter */
         public final String getDsessReplacer() {
             return this.dsessReplacer;
         }
 
-        /* JADX INFO: renamed from: component14, reason: from getter */
+        /* INFO: renamed from: component14, reason: from getter */
         public final String getDsessReplacerValue() {
             return this.dsessReplacerValue;
         }
 
-        /* JADX INFO: renamed from: component2, reason: from getter */
+        /* INFO: renamed from: component2, reason: from getter */
         public final String getDsessURLUri() {
             return this.dsessURLUri;
         }
 
-        /* JADX INFO: renamed from: component3, reason: from getter */
+        /* INFO: renamed from: component3, reason: from getter */
         public final String getSearchEngineSiteURLUri() {
             return this.searchEngineSiteURLUri;
         }
@@ -670,12 +670,12 @@ public final class DSESS extends AbstractScraper {
             return this.dsessUrlParameters;
         }
 
-        /* JADX INFO: renamed from: component5, reason: from getter */
+        /* INFO: renamed from: component5, reason: from getter */
         public final String getDsessTargetSiteSelector() {
             return this.dsessTargetSiteSelector;
         }
 
-        /* JADX INFO: renamed from: component6, reason: from getter */
+        /* INFO: renamed from: component6, reason: from getter */
         public final String getDsessTargetSiteLabelSubselector() {
             return this.dsessTargetSiteLabelSubselector;
         }
@@ -684,12 +684,12 @@ public final class DSESS extends AbstractScraper {
             return this.dsessTargetSiteLabelMatchers;
         }
 
-        /* JADX INFO: renamed from: component8, reason: from getter */
+        /* INFO: renamed from: component8, reason: from getter */
         public final String getDsessTargetSiteLinkSubselector() {
             return this.dsessTargetSiteLinkSubselector;
         }
 
-        /* JADX INFO: renamed from: component9, reason: from getter */
+        /* INFO: renamed from: component9, reason: from getter */
         public final String getDsessTargetSite() {
             return this.dsessTargetSite;
         }
@@ -739,7 +739,7 @@ public final class DSESS extends AbstractScraper {
             return "DSESSData(templates=" + this.templates + ", dsessURLUri=" + this.dsessURLUri + ", searchEngineSiteURLUri=" + this.searchEngineSiteURLUri + ", dsessUrlParameters=" + this.dsessUrlParameters + ", dsessTargetSiteSelector=" + this.dsessTargetSiteSelector + ", dsessTargetSiteLabelSubselector=" + this.dsessTargetSiteLabelSubselector + ", dsessTargetSiteLabelMatchers=" + this.dsessTargetSiteLabelMatchers + ", dsessTargetSiteLinkSubselector=" + this.dsessTargetSiteLinkSubselector + ", dsessTargetSite=" + this.dsessTargetSite + ", dsessSelector=" + this.dsessSelector + ", dsessAttribute=" + this.dsessAttribute + ", dsessExtractor=" + this.dsessExtractor + ", dsessReplacer=" + this.dsessReplacer + ", dsessReplacerValue=" + this.dsessReplacerValue + ")";
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public DSESSData(Map<Template, String> templates, String dsessURLUri, String searchEngineSiteURLUri, Map<Parameter, String> dsessUrlParameters, String dsessTargetSiteSelector, String str, Collection<? extends Template> dsessTargetSiteLabelMatchers, String str2, String str3, String str4, String str5, String str6, String str7, String str8) {
             Intrinsics.checkNotNullParameter(templates, "templates");
             Intrinsics.checkNotNullParameter(dsessURLUri, "dsessURLUri");
@@ -787,14 +787,14 @@ public final class DSESS extends AbstractScraper {
 
     }
 
-    /* JADX INFO: compiled from: DSESS.kt */
+    /* INFO: compiled from: DSESS.kt */
     @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B'\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\f\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005\u0012\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\b¢\u0006\u0002\u0010\tJ\t\u0010\u0010\u001a\u00020\u0003HÆ\u0003J\u000f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005HÆ\u0003J\u000b\u0010\u0012\u001a\u0004\u0018\u00010\bHÆ\u0003J/\u0010\u0013\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\n\b\u0002\u0010\u0007\u001a\u0004\u0018\u00010\bHÆ\u0001J\u0013\u0010\u0014\u001a\u00020\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0017\u001a\u00020\u0018HÖ\u0001J\t\u0010\u0019\u001a\u00020\bHÖ\u0001R\u0013\u0010\u0007\u001a\u0004\u0018\u00010\b¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0017\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000f¨\u0006\u001a"}, d2 = {"Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$DSESSParts;", "", "scraper", "Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Scraper;", "templateTags", "", "Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Template;", "dsessURL", "", "(Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Scraper;Ljava/util/List;Ljava/lang/String;)V", "getDsessURL", "()Ljava/lang/String;", "getScraper", "()Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Scraper;", "getTemplateTags", "()Ljava/util/List;", "component1", "component2", "component3", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "", "toString", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class DSESSParts {
         private final String dsessURL;
         private final Scraper scraper;
         private final List<Template> templateTags;
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public static /* synthetic */ DSESSParts copy$default(DSESSParts dSESSParts, Scraper scraper, List list, String str, int i, Object obj) {
             if ((i & 1) != 0) {
                 scraper = dSESSParts.scraper;
@@ -808,7 +808,7 @@ public final class DSESS extends AbstractScraper {
             return dSESSParts.copy(scraper, list, str);
         }
 
-        /* JADX INFO: renamed from: component1, reason: from getter */
+        /* INFO: renamed from: component1, reason: from getter */
         public final Scraper getScraper() {
             return this.scraper;
         }
@@ -817,7 +817,7 @@ public final class DSESS extends AbstractScraper {
             return this.templateTags;
         }
 
-        /* JADX INFO: renamed from: component3, reason: from getter */
+        /* INFO: renamed from: component3, reason: from getter */
         public final String getDsessURL() {
             return this.dsessURL;
         }
@@ -849,7 +849,7 @@ public final class DSESS extends AbstractScraper {
             return "DSESSParts(scraper=" + this.scraper + ", templateTags=" + this.templateTags + ", dsessURL=" + this.dsessURL + ")";
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public DSESSParts(Scraper scraper, List<? extends Template> templateTags, String str) {
             Intrinsics.checkNotNullParameter(scraper, "scraper");
             Intrinsics.checkNotNullParameter(templateTags, "templateTags");
@@ -869,7 +869,7 @@ public final class DSESS extends AbstractScraper {
 
     }
 
-    /* JADX INFO: compiled from: DSESS.kt */
+    /* INFO: compiled from: DSESS.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0015\n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0086\b\u0018\u00002\u00020\u0001B/\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0007\u001a\u00020\b¢\u0006\u0002\u0010\tJ\t\u0010\u0018\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u0019\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010\u001a\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010\u001b\u001a\u00020\bHÆ\u0003J5\u0010\u001c\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0007\u001a\u00020\bHÆ\u0001J\u0013\u0010\u001d\u001a\u00020\u001e2\b\u0010\u001f\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010 \u001a\u00020\u0003HÖ\u0001J\t\u0010!\u001a\u00020\u0005HÖ\u0001R\u001c\u0010\u0006\u001a\u0004\u0018\u00010\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u000b\"\u0004\b\f\u0010\rR\u001a\u0010\u0002\u001a\u00020\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0007\u001a\u00020\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u0013\"\u0004\b\u0014\u0010\u0015R\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0016\u0010\u000b\"\u0004\b\u0017\u0010\r¨\u0006\""}, d2 = {"Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$TargetSiteElementWithInfo;", "", "score", "", "targetSiteLink", "", "label", "targetSiteElement", "Lorg/jsoup/nodes/Element;", "(ILjava/lang/String;Ljava/lang/String;Lorg/jsoup/nodes/Element;)V", "getLabel", "()Ljava/lang/String;", "setLabel", "(Ljava/lang/String;)V", "getScore", "()I", "setScore", "(I)V", "getTargetSiteElement", "()Lorg/jsoup/nodes/Element;", "setTargetSiteElement", "(Lorg/jsoup/nodes/Element;)V", "getTargetSiteLink", "setTargetSiteLink", "component1", "component2", "component3", "component4", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "toString", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class TargetSiteElementWithInfo {
         private String label;
@@ -893,22 +893,22 @@ public final class DSESS extends AbstractScraper {
             return targetSiteElementWithInfo.copy(i, str, str2, element);
         }
 
-        /* JADX INFO: renamed from: component1, reason: from getter */
+        /* INFO: renamed from: component1, reason: from getter */
         public final int getScore() {
             return this.score;
         }
 
-        /* JADX INFO: renamed from: component2, reason: from getter */
+        /* INFO: renamed from: component2, reason: from getter */
         public final String getTargetSiteLink() {
             return this.targetSiteLink;
         }
 
-        /* JADX INFO: renamed from: component3, reason: from getter */
+        /* INFO: renamed from: component3, reason: from getter */
         public final String getLabel() {
             return this.label;
         }
 
-        /* JADX INFO: renamed from: component4, reason: from getter */
+        /* INFO: renamed from: component4, reason: from getter */
         public final Element getTargetSiteElement() {
             return this.targetSiteElement;
         }
@@ -975,7 +975,7 @@ public final class DSESS extends AbstractScraper {
         }
     }
 
-    /* JADX INFO: compiled from: DSESS.kt */
+    /* INFO: compiled from: DSESS.kt */
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B#\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0003¢\u0006\u0002\u0010\u0006J\t\u0010\u000b\u001a\u00020\u0003HÆ\u0003J\t\u0010\f\u001a\u00020\u0003HÆ\u0003J\t\u0010\r\u001a\u00020\u0003HÆ\u0003J'\u0010\u000e\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u0003HÆ\u0001J\u0013\u0010\u000f\u001a\u00020\u00102\b\u0010\u0011\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0012\u001a\u00020\u0013HÖ\u0001J\t\u0010\u0014\u001a\u00020\u0015HÖ\u0001R\u0011\u0010\u0005\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\bR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\b¨\u0006\u0016"}, d2 = {"Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Config;", "", "genericNameRegex", "Lkotlin/text/Regex;", "templateTagsRegex", "dSESSURLRegex", "(Lkotlin/text/Regex;Lkotlin/text/Regex;Lkotlin/text/Regex;)V", "getDSESSURLRegex", "()Lkotlin/text/Regex;", "getGenericNameRegex", "getTemplateTagsRegex", "component1", "component2", "component3", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "", "toString", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class Config {
         private final Regex dSESSURLRegex;
@@ -999,17 +999,17 @@ public final class DSESS extends AbstractScraper {
             return config.copy(regex, regex2, regex3);
         }
 
-        /* JADX INFO: renamed from: component1, reason: from getter */
+        /* INFO: renamed from: component1, reason: from getter */
         public final Regex getGenericNameRegex() {
             return this.genericNameRegex;
         }
 
-        /* JADX INFO: renamed from: component2, reason: from getter */
+        /* INFO: renamed from: component2, reason: from getter */
         public final Regex getTemplateTagsRegex() {
             return this.templateTagsRegex;
         }
 
-        /* JADX INFO: renamed from: component3, reason: from getter */
+        /* INFO: renamed from: component3, reason: from getter */
         public final Regex getDSESSURLRegex() {
             return this.dSESSURLRegex;
         }
@@ -1057,7 +1057,7 @@ public final class DSESS extends AbstractScraper {
 
     }
 
-    /* JADX INFO: compiled from: DSESS.kt */
+    /* INFO: compiled from: DSESS.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\r\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0017\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011¨\u0006\u0012"}, d2 = {"Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Scraper;", "", "id", "", "label", "", "(Ljava/lang/String;IILjava/lang/String;)V", "getId", "()I", "getLabel", "()Ljava/lang/String;", "TARGET_BOX_ART", "TARGET_SNAPSHOT", "TARGET_TITLE", "TARGET_YOUTUBE", "TARGET_DESCRIPTION", "TARGET_GENRES", "TARGET_NONE", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public enum Scraper {
         TARGET_BOX_ART(0, "BOX_ART"),
@@ -1090,7 +1090,7 @@ public final class DSESS extends AbstractScraper {
         }
     }
 
-    /* JADX INFO: compiled from: DSESS.kt */
+    /* INFO: compiled from: DSESS.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\r\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0017\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011¨\u0006\u0012"}, d2 = {"Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Template;", "", "id", "", "label", "", "(Ljava/lang/String;IILjava/lang/String;)V", "getId", "()I", "getLabel", "()Ljava/lang/String;", "TAG_NONE", "TAG_SCRAPER_KEYWORD", "TAG_SCRAPER_KEYWORD_NORMALIZED", "TAG_PLATFORM_NAME", "TAG_LOCALE_LANGUAGE", "TAG_LOCALE_COUNTRY", "TAG_LOCALE_LANGUAGE_AND_COUNTRY", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public enum Template {
         TAG_NONE(0, ""),
@@ -1123,7 +1123,7 @@ public final class DSESS extends AbstractScraper {
         }
     }
 
-    /* JADX INFO: compiled from: DSESS.kt */
+    /* INFO: compiled from: DSESS.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0010\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0017\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nj\u0002\b\u000bj\u0002\b\fj\u0002\b\rj\u0002\b\u000ej\u0002\b\u000fj\u0002\b\u0010j\u0002\b\u0011j\u0002\b\u0012j\u0002\b\u0013j\u0002\b\u0014¨\u0006\u0015"}, d2 = {"Lcom/magneticchen/daijishou/scraper/v2/impl/dsess/DSESS$Parameter;", "", "id", "", "label", "", "(Ljava/lang/String;IILjava/lang/String;)V", "getId", "()I", "getLabel", "()Ljava/lang/String;", "TARGET_SITE_SELECTOR", "TARGET_SITE_LABEL_SUBSELECTOR", "TARGET_SITE_LABEL_MATCHERS", "TARGET_SITE_LINK_SUBSELECTOR", "TARGET_SITE", "SELECTOR", "ATTRIBUTE", "EXTRACTOR", "REPLACER", "REPLACER_VALUE", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public enum Parameter {
         TARGET_SITE_SELECTOR(1, "dsess_target_site_selector"),

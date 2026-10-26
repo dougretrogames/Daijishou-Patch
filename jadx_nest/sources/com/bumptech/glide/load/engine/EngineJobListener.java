@@ -2,7 +2,7 @@ package com.bumptech.glide.load.engine;
 
 import com.bumptech.glide.load.Key;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 interface EngineJobListener {
     void onEngineJobCancelled(EngineJob<?> engineJob, Key key);
 

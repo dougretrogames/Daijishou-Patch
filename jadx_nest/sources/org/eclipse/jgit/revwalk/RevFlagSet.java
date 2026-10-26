@@ -6,7 +6,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RevFlagSet extends AbstractSet<RevFlag> {
     private final List<RevFlag> active;
     int mask;
@@ -73,7 +73,7 @@ public class RevFlagSet extends AbstractSet<RevFlag> {
         return true;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.revwalk.RevFlagSet$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.revwalk.RevFlagSet$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<RevFlag> {
         private RevFlag current;
         private final /* synthetic */ Iterator val$i;

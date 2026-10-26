@@ -6,8 +6,8 @@ import com.google.android.gms.common.internal.Objects;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelableSerializer;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class AuthenticatorErrorResponse extends AuthenticatorResponse {
     public static final Parcelable.Creator<AuthenticatorErrorResponse> CREATOR = new zzl();
     private final ErrorCode zza;

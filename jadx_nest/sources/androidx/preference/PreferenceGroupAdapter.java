@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PreferenceGroupAdapter extends RecyclerView.Adapter<PreferenceViewHolder> implements Preference.OnPreferenceChangeInternalListener, PreferenceGroup.PreferencePositionCallback {
     private final PreferenceGroup mPreferenceGroup;
     private final List<PreferenceResourceDescriptor> mPreferenceResourceDescriptors;
@@ -26,7 +26,7 @@ public class PreferenceGroupAdapter extends RecyclerView.Adapter<PreferenceViewH
     private final Runnable mSyncRunnable = new AnonymousClass1();
     private final Handler mHandler = new Handler(Looper.getMainLooper());
 
-    /* JADX INFO: renamed from: androidx.preference.PreferenceGroupAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.PreferenceGroupAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -74,7 +74,7 @@ public class PreferenceGroupAdapter extends RecyclerView.Adapter<PreferenceViewH
         }
     }
 
-    /* JADX INFO: renamed from: androidx.preference.PreferenceGroupAdapter$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.PreferenceGroupAdapter$2, reason: invalid class name */
     class AnonymousClass2 extends DiffUtil.Callback {
         final /* synthetic */ PreferenceManager.PreferenceComparisonCallback val$comparisonCallback;
         final /* synthetic */ List val$oldVisibleList;
@@ -174,7 +174,7 @@ public class PreferenceGroupAdapter extends RecyclerView.Adapter<PreferenceViewH
         return expandButton;
     }
 
-    /* JADX INFO: renamed from: androidx.preference.PreferenceGroupAdapter$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.PreferenceGroupAdapter$3, reason: invalid class name */
     class AnonymousClass3 implements Preference.OnPreferenceClickListener {
         final /* synthetic */ PreferenceGroup val$group;
 

@@ -16,7 +16,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectIdOwnerMap;
 import org.eclipse.jgit.util.BlockList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PackBitmapIndexBuilder extends BasePackBitmapIndex {
     private static final int MAX_XOR_OFFSET_SEARCH = 10;
     private List<StoredEntry> bitmapsToWrite;
@@ -112,7 +112,7 @@ public class PackBitmapIndexBuilder extends BasePackBitmapIndex {
         return objectIdOwnerMap;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.PackBitmapIndexBuilder$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.PackBitmapIndexBuilder$1, reason: invalid class name */
     class AnonymousClass1 extends ObjectIdOwnerMap.Entry {
         AnonymousClass1(AnyObjectId anyObjectId) {
             super(anyObjectId);

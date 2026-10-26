@@ -13,7 +13,7 @@ import org.chromium.support_lib_boundary.WebViewProviderFactoryBoundaryInterface
 import org.eclipse.jgit.transport.resolver.ServiceNotAuthorizedException;
 import org.eclipse.jgit.transport.resolver.ServiceNotEnabledException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DaemonClient {
     private final Daemon daemon;
     private InetAddress peer;

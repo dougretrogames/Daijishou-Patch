@@ -13,7 +13,7 @@ import com.google.api.client.util.StringUtils;
 import com.google.api.client.util.Strings;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GoogleJsonResponseException extends HttpResponseException {
     private static final long serialVersionUID = 409811126989994864L;
     private final transient GoogleJsonError details;
@@ -27,23 +27,23 @@ public class GoogleJsonResponseException extends HttpResponseException {
         return this.details;
     }
 
-    /* JADX WARN: Code duplicated, block: B:26:0x0075  */
-    /* JADX WARN: Code duplicated, block: B:52:0x00a9 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:53:0x00ab A[Catch: IOException -> 0x009a, TryCatch #0 {IOException -> 0x009a, blocks: (B:53:0x00ab, B:55:0x00b2, B:54:0x00af, B:44:0x0096, B:48:0x00a0), top: B:66:0x002b }] */
-    /* JADX WARN: Code duplicated, block: B:54:0x00af A[Catch: IOException -> 0x009a, TryCatch #0 {IOException -> 0x009a, blocks: (B:53:0x00ab, B:55:0x00b2, B:54:0x00af, B:44:0x0096, B:48:0x00a0), top: B:66:0x002b }] */
-    /* JADX WARN: Code duplicated, block: B:56:0x00b3 A[Catch: IOException -> 0x00b8, TRY_ENTER, TRY_LEAVE, TryCatch #2 {IOException -> 0x00b8, blocks: (B:3:0x0015, B:5:0x001b, B:7:0x0027, B:56:0x00b3), top: B:67:0x0015 }] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v1 */
-    /* JADX WARN: Type inference failed for: r1v10 */
-    /* JADX WARN: Type inference failed for: r1v11 */
-    /* JADX WARN: Type inference failed for: r1v12 */
-    /* JADX WARN: Type inference failed for: r1v13 */
-    /* JADX WARN: Type inference failed for: r1v14 */
-    /* JADX WARN: Type inference failed for: r1v2 */
-    /* JADX WARN: Type inference failed for: r1v3, types: [com.google.api.client.googleapis.json.GoogleJsonError] */
-    /* JADX WARN: Type inference failed for: r1v4 */
-    /* JADX WARN: Type inference failed for: r1v6 */
-    /* JADX WARN: Type inference failed for: r1v7 */
+    /* WARN: Code duplicated, block: B:26:0x0075  */
+    /* WARN: Code duplicated, block: B:52:0x00a9 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:53:0x00ab A[Catch: IOException -> 0x009a, TryCatch #0 {IOException -> 0x009a, blocks: (B:53:0x00ab, B:55:0x00b2, B:54:0x00af, B:44:0x0096, B:48:0x00a0), top: B:66:0x002b }] */
+    /* WARN: Code duplicated, block: B:54:0x00af A[Catch: IOException -> 0x009a, TryCatch #0 {IOException -> 0x009a, blocks: (B:53:0x00ab, B:55:0x00b2, B:54:0x00af, B:44:0x0096, B:48:0x00a0), top: B:66:0x002b }] */
+    /* WARN: Code duplicated, block: B:56:0x00b3 A[Catch: IOException -> 0x00b8, TRY_ENTER, TRY_LEAVE, TryCatch #2 {IOException -> 0x00b8, blocks: (B:3:0x0015, B:5:0x001b, B:7:0x0027, B:56:0x00b3), top: B:67:0x0015 }] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r1v1 */
+    /* WARN: Type inference failed for: r1v10 */
+    /* WARN: Type inference failed for: r1v11 */
+    /* WARN: Type inference failed for: r1v12 */
+    /* WARN: Type inference failed for: r1v13 */
+    /* WARN: Type inference failed for: r1v14 */
+    /* WARN: Type inference failed for: r1v2 */
+    /* WARN: Type inference failed for: r1v3, types: [com.google.api.client.googleapis.json.GoogleJsonError] */
+    /* WARN: Type inference failed for: r1v4 */
+    /* WARN: Type inference failed for: r1v6 */
+    /* WARN: Type inference failed for: r1v7 */
     public static GoogleJsonResponseException from(JsonFactory jsonFactory, HttpResponse httpResponse) throws Throwable {
         String asString;
         JsonParser jsonParserCreateJsonParser;

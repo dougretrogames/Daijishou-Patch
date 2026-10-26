@@ -27,7 +27,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ShortcutManagerCompat {
     static final String ACTION_INSTALL_SHORTCUT = "com.android.launcher.action.INSTALL_SHORTCUT";
     private static final int DEFAULT_MAX_ICON_DIMENSION_DP = 96;
@@ -61,7 +61,7 @@ public class ShortcutManagerCompat {
         return false;
     }
 
-    /* JADX INFO: renamed from: androidx.core.content.pm.ShortcutManagerCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.content.pm.ShortcutManagerCompat$1, reason: invalid class name */
     class AnonymousClass1 extends BroadcastReceiver {
         final /* synthetic */ IntentSender val$callback;
 

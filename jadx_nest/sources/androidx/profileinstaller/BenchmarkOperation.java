@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Build;
 import java.io.File;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class BenchmarkOperation {
     private BenchmarkOperation() {
     }

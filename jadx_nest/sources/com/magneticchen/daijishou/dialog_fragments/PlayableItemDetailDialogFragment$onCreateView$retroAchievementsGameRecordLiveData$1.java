@@ -30,21 +30,21 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u0011\u0012\u0006\u0012\u0004\u0018\u00010\u0002\u0018\u00010\u0001¢\u0006\u0002\b\u00032H\u0010\u0004\u001aD\u0012\u0006\u0012\u0004\u0018\u00010\u0006\u0012\u0006\u0012\u0004\u0018\u00010\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u0007 \b*!\u0012\u0006\u0012\u0004\u0018\u00010\u0006\u0012\u0006\u0012\u0004\u0018\u00010\u0007\u0012\u0006\u0012\u0004\u0018\u00010\u0007\u0018\u00010\u0005¢\u0006\u0002\b\u00030\u0005¢\u0006\u0002\b\u0003H\n¢\u0006\u0002\b\t"}, d2 = {"<anonymous>", "Landroidx/lifecycle/LiveData;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "Lkotlin/jvm/JvmSuppressWildcards;", "it", "Lkotlin/Triple;", "", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1 extends Lambda<LiveData<RetroAchievementsGameRecordEntity>> implements Function1<Triple<Boolean, String, String>, LiveData<RetroAchievementsGameRecordEntity>> {
     final /* synthetic */ Ref.ObjectRef<String> $webApiKey;
     final /* synthetic */ PlayableItemDetailDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1(Ref.ObjectRef<String> objectRef, PlayableItemDetailDialogFragment playableItemDetailDialogFragment) {
         super(1);
         this.$webApiKey = objectRef;
         this.this$0 = playableItemDetailDialogFragment;
     }
 
-    /* JADX WARN: Type inference failed for: r2v0, types: [T, java.lang.Object] */
+    /* WARN: Type inference failed for: r2v0, types: [T, java.lang.Object] */
     @Override // kotlin.jvm.functions.Function1
     public final LiveData<RetroAchievementsGameRecordEntity> invoke(Triple<Boolean, String, String> triple) {
         Boolean first = triple.getFirst();
@@ -87,22 +87,22 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
         return Transformations.switchMap(Transformations.switchMap(retroAchievementsRepository2.getRetroAchievementsCachedPlayableItemIdToGameIdSurjectionByPlayableItemId(playableItemEntity.getId()), new AnonymousClass1(first, this.this$0)), new AnonymousClass2(retroAchievementsRepository, this.$webApiKey, first, this.this$0));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0016\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u0011\u0012\u0006\u0012\u0004\u0018\u00010\u0002\u0018\u00010\u0001¢\u0006\u0002\b\u00032\r\u0010\u0004\u001a\t\u0018\u00010\u0005¢\u0006\u0002\b\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "Landroidx/lifecycle/LiveData;", "", "Lkotlin/jvm/JvmSuppressWildcards;", "surjection", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda<LiveData<Long>> implements Function1<RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity, LiveData<Long>> {
         final /* synthetic */ Boolean $enableRA;
         final /* synthetic */ PlayableItemDetailDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Boolean bool, PlayableItemDetailDialogFragment playableItemDetailDialogFragment) {
             super(1);
             this.$enableRA = bool;
             this.this$0 = playableItemDetailDialogFragment;
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
         @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0010\t\u0010\u0000\u001a\u00020\u0001*\n\u0012\u0006\u0012\u0004\u0018\u00010\u00030\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Landroidx/lifecycle/LiveDataScope;", ""}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1$1", f = "PlayableItemDetailDialogFragment.kt", i = {0}, l = {1042, 1043}, m = "invokeSuspendImpl", n = {"$this$liveData"}, s = {"L$0"})
         static final class C00591 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<LiveDataScope<Long>, Continuation<?>, Object> {
@@ -112,7 +112,7 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
             int label;
             final /* synthetic */ PlayableItemDetailDialogFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             C00591(RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity retroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity, Boolean bool, PlayableItemDetailDialogFragment playableItemDetailDialogFragment, Continuation<?> continuation) {
                 super(2, continuation);
                 this.$surjection = retroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity;
@@ -171,8 +171,8 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1$1$1, reason: invalid class name and collision with other inner class name */
-            /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+            /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
             @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
             @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$1$1$1", f = "PlayableItemDetailDialogFragment.kt", i = {}, l = {1044, 1047}, m = "invokeSuspendImpl", n = {}, s = {})
             static final class C00601 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -181,7 +181,7 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
                 int label;
                 final /* synthetic */ PlayableItemDetailDialogFragment this$0;
 
-                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                /* WARN: 'super' call moved to the top of the method (can break code semantics) */
                 C00601(PlayableItemDetailDialogFragment playableItemDetailDialogFragment, RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity retroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity, LiveDataScope<Long> liveDataScope, Continuation<?> continuation) {
                     super(2, continuation);
                     this.this$0 = playableItemDetailDialogFragment;
@@ -249,8 +249,8 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u001a\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\u0010\u0000\u001a\u0017\u0012\f\u0012\n \u0003*\u0004\u0018\u00010\u00020\u0002\u0018\u00010\u0001¢\u0006\u0002\b\u00042\r\u0010\u0005\u001a\t\u0018\u00010\u0006¢\u0006\u0002\b\u0004H\n¢\u0006\u0004\b\u0007\u0010\b"}, d2 = {"<anonymous>", "Landroidx/lifecycle/LiveData;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "kotlin.jvm.PlatformType", "Lkotlin/jvm/JvmSuppressWildcards;", "gameId", "", "invoke", "(Ljava/lang/Long;)Landroidx/lifecycle/LiveData;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda<LiveData<RetroAchievementsGameRecordEntity>> implements Function1<Long, LiveData<RetroAchievementsGameRecordEntity>> {
         final /* synthetic */ Boolean $enableRA;
@@ -258,7 +258,7 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
         final /* synthetic */ Ref.ObjectRef<String> $webApiKey;
         final /* synthetic */ PlayableItemDetailDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(RetroAchievementsRepository retroAchievementsRepository, Ref.ObjectRef<String> objectRef, Boolean bool, PlayableItemDetailDialogFragment playableItemDetailDialogFragment) {
             super(1);
             this.$retroAchievementsRepository = retroAchievementsRepository;
@@ -267,15 +267,15 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
             this.this$0 = playableItemDetailDialogFragment;
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2$1, reason: invalid class name */
-        /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2$1, reason: invalid class name */
+        /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
         @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u0017\u0012\f\u0012\n \u0003*\u0004\u0018\u00010\u00020\u0002\u0018\u00010\u0001¢\u0006\u0002\b\u00042\r\u0010\u0005\u001a\t\u0018\u00010\u0002¢\u0006\u0002\b\u0004H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "Landroidx/lifecycle/LiveData;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "kotlin.jvm.PlatformType", "Lkotlin/jvm/JvmSuppressWildcards;", "gameRecord", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass1 extends Lambda<LiveData<RetroAchievementsGameRecordEntity>> implements Function1<RetroAchievementsGameRecordEntity, LiveData<RetroAchievementsGameRecordEntity>> {
             final /* synthetic */ Boolean $enableRA;
             final /* synthetic */ Long $gameId;
             final /* synthetic */ PlayableItemDetailDialogFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(Boolean bool, Long l, PlayableItemDetailDialogFragment playableItemDetailDialogFragment) {
                 super(1);
                 this.$enableRA = bool;
@@ -283,8 +283,8 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
                 this.this$0 = playableItemDetailDialogFragment;
             }
 
-            /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2$1$1, reason: invalid class name and collision with other inner class name */
-            /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+            /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
             @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u0010\u0012\f\u0012\n \u0004*\u0004\u0018\u00010\u00030\u00030\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Landroidx/lifecycle/LiveDataScope;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "kotlin.jvm.PlatformType"}, k = 3, mv = {1, 9, 0}, xi = 48)
             @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2$1$1", f = "PlayableItemDetailDialogFragment.kt", i = {}, l = {1056, 1057, 1063, 1065}, m = "invokeSuspendImpl", n = {}, s = {})
             static final class C00611 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<LiveDataScope<RetroAchievementsGameRecordEntity>, Continuation<?>, Object> {
@@ -295,7 +295,7 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
                 int label;
                 final /* synthetic */ PlayableItemDetailDialogFragment this$0;
 
-                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                /* WARN: 'super' call moved to the top of the method (can break code semantics) */
                 C00611(Boolean bool, Long l, RetroAchievementsGameRecordEntity retroAchievementsGameRecordEntity, PlayableItemDetailDialogFragment playableItemDetailDialogFragment, Continuation<?> continuation) {
                     super(2, continuation);
                     this.$enableRA = bool;
@@ -372,8 +372,8 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
                     }
                 }
 
-                /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2$1$1$1, reason: invalid class name and collision with other inner class name */
-                /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+                /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2$1$1$1, reason: invalid class name and collision with other inner class name */
+                /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
                 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
                 @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameRecordLiveData$1$2$1$1$1", f = "PlayableItemDetailDialogFragment.kt", i = {}, l = {1058}, m = "invokeSuspendImpl", n = {}, s = {})
                 static final class C00621 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -381,7 +381,7 @@ final class PlayableItemDetailDialogFragment$onCreateView$retroAchievementsGameR
                     int label;
                     final /* synthetic */ PlayableItemDetailDialogFragment this$0;
 
-                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
                     C00621(PlayableItemDetailDialogFragment playableItemDetailDialogFragment, Long l, Continuation<?> continuation) {
                         super(2, continuation);
                         this.this$0 = playableItemDetailDialogFragment;

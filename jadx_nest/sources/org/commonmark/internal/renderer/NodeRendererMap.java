@@ -6,7 +6,7 @@ import java.util.Map;
 import org.commonmark.node.Node;
 import org.commonmark.renderer.NodeRenderer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NodeRendererMap {
     private final Map<Class<? extends Node>, NodeRenderer> renderers = new HashMap(32);
 

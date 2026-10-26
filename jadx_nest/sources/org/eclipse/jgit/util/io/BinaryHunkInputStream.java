@@ -8,7 +8,7 @@ import java.text.MessageFormat;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.util.Base85;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BinaryHunkInputStream extends InputStream {
     private byte[] buffer;
     private final InputStream in;

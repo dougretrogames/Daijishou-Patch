@@ -3,7 +3,7 @@ package io.grpc;
 import com.google.common.base.Preconditions;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class CompositeCallCredentials extends CallCredentials {
     private final CallCredentials credentials1;
     private final CallCredentials credentials2;

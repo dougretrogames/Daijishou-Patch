@@ -33,7 +33,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FS_POSIX extends FS {
     private static final String DEFAULT_GIT_LOCATION = "/usr/bin/git";
     private static final int DEFAULT_UMASK = 18;
@@ -47,7 +47,7 @@ public class FS_POSIX extends FS {
         NOT_SUPPORTED,
         UNDEFINED;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static AtomicFileCreation[] valuesCustom() {
             AtomicFileCreation[] atomicFileCreationArrValuesCustom = values();
             int length = atomicFileCreationArrValuesCustom.length;

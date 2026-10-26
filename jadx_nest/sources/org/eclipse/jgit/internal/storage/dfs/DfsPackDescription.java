@@ -8,7 +8,7 @@ import org.eclipse.jgit.internal.storage.reftable.ReftableWriter;
 import org.eclipse.jgit.lib.BranchConfig;
 import org.eclipse.jgit.storage.pack.PackStatistics;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsPackDescription {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$internal$storage$dfs$DfsObjDatabase$PackSource;
     private int[] blockSizeMap;

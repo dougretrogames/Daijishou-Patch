@@ -6,15 +6,15 @@ import com.google.android.gms.common.internal.Objects;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class UvmEntry extends AbstractSafeParcelable {
     public static final Parcelable.Creator<UvmEntry> CREATOR = new zzba();
     private final int zza;
     private final short zzb;
     private final short zzc;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static final class Builder {
         private int zza;
         private short zzb;

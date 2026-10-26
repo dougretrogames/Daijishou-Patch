@@ -30,7 +30,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class SearchBar extends RelativeLayout {
     static final boolean DEBUG = false;
     static final int DEFAULT_PRIORITY = 1;
@@ -136,7 +136,7 @@ public class SearchBar extends RelativeLayout {
         updateHint();
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.SearchBar$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnFocusChangeListener {
         AnonymousClass1() {
         }
@@ -152,7 +152,7 @@ public class SearchBar extends RelativeLayout {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.SearchBar$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -164,7 +164,7 @@ public class SearchBar extends RelativeLayout {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.SearchBar$3, reason: invalid class name */
     class AnonymousClass3 implements TextWatcher {
         final /* synthetic */ Runnable val$mOnTextChangedRunnable;
 
@@ -190,7 +190,7 @@ public class SearchBar extends RelativeLayout {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.SearchBar$4, reason: invalid class name */
     class AnonymousClass4 implements SearchEditText.OnKeyboardDismissListener {
         AnonymousClass4() {
         }
@@ -203,7 +203,7 @@ public class SearchBar extends RelativeLayout {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.SearchBar$5, reason: invalid class name */
     class AnonymousClass5 implements TextView.OnEditorActionListener {
         AnonymousClass5() {
         }
@@ -228,7 +228,7 @@ public class SearchBar extends RelativeLayout {
             return true;
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$5$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.SearchBar$5$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             AnonymousClass1() {
             }
@@ -239,7 +239,7 @@ public class SearchBar extends RelativeLayout {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$5$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.SearchBar$5$2, reason: invalid class name */
         class AnonymousClass2 implements Runnable {
             AnonymousClass2() {
             }
@@ -250,7 +250,7 @@ public class SearchBar extends RelativeLayout {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$5$3, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.SearchBar$5$3, reason: invalid class name */
         class AnonymousClass3 implements Runnable {
             AnonymousClass3() {
             }
@@ -263,7 +263,7 @@ public class SearchBar extends RelativeLayout {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.SearchBar$6, reason: invalid class name */
     class AnonymousClass6 implements View.OnClickListener {
         AnonymousClass6() {
         }
@@ -274,7 +274,7 @@ public class SearchBar extends RelativeLayout {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.SearchBar$7, reason: invalid class name */
     class AnonymousClass7 implements View.OnFocusChangeListener {
         AnonymousClass7() {
         }
@@ -416,7 +416,7 @@ public class SearchBar extends RelativeLayout {
         this.mInputMethodManager.hideSoftInputFromWindow(this.mSearchTextEditor.getWindowToken(), 0);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.SearchBar$8, reason: invalid class name */
     class AnonymousClass8 implements Runnable {
         AnonymousClass8() {
         }
@@ -519,7 +519,7 @@ public class SearchBar extends RelativeLayout {
         this.mSpeechRecognizer.startListening(intent);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$9, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.SearchBar$9, reason: invalid class name */
     class AnonymousClass9 implements RecognitionListener {
         @Override // android.speech.RecognitionListener
         public void onBeginningOfSpeech() {
@@ -649,7 +649,7 @@ public class SearchBar extends RelativeLayout {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.SearchBar$10, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.SearchBar$10, reason: invalid class name */
     class AnonymousClass10 implements Runnable {
         final /* synthetic */ int val$resId;
 

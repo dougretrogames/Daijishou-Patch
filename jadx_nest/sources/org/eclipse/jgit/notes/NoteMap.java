@@ -13,7 +13,7 @@ import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevTree;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NoteMap implements Iterable<Note> {
     private final ObjectReader reader;
     private InMemoryNoteBucket root;

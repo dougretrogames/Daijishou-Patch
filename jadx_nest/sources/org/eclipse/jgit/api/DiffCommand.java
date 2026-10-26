@@ -22,7 +22,7 @@ import org.eclipse.jgit.treewalk.FileTreeIterator;
 import org.eclipse.jgit.treewalk.filter.TreeFilter;
 import org.eclipse.jgit.util.io.NullOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DiffCommand extends GitCommand<List<DiffEntry>> {
     private boolean cached;
     private int contextLines;
@@ -50,7 +50,7 @@ public class DiffCommand extends GitCommand<List<DiffEntry>> {
         return new DiffFormatter(NullOutputStream.INSTANCE);
     }
 
-    /* JADX WARN: Code duplicated, block: B:54:0x00b7 A[Catch: all -> 0x00c2, TRY_ENTER, TryCatch #0 {all -> 0x00c2, blocks: (B:3:0x0001, B:54:0x00b7, B:58:0x00be, B:59:0x00c1, B:4:0x0005, B:6:0x0013, B:8:0x0017, B:10:0x0021, B:15:0x0034, B:24:0x0043, B:26:0x0048, B:27:0x0049, B:28:0x0054, B:29:0x0055, B:36:0x0081, B:38:0x0092, B:41:0x0097, B:43:0x009b, B:44:0x009e, B:46:0x00a2, B:47:0x00a5, B:49:0x00a9, B:50:0x00ac, B:30:0x0063, B:32:0x0067, B:33:0x0074, B:35:0x0078), top: B:69:0x0001, inners: #2 }] */
+    /* WARN: Code duplicated, block: B:54:0x00b7 A[Catch: all -> 0x00c2, TRY_ENTER, TryCatch #0 {all -> 0x00c2, blocks: (B:3:0x0001, B:54:0x00b7, B:58:0x00be, B:59:0x00c1, B:4:0x0005, B:6:0x0013, B:8:0x0017, B:10:0x0021, B:15:0x0034, B:24:0x0043, B:26:0x0048, B:27:0x0049, B:28:0x0054, B:29:0x0055, B:36:0x0081, B:38:0x0092, B:41:0x0097, B:43:0x009b, B:44:0x009e, B:46:0x00a2, B:47:0x00a5, B:49:0x00a9, B:50:0x00ac, B:30:0x0063, B:32:0x0067, B:33:0x0074, B:35:0x0078), top: B:69:0x0001, inners: #2 }] */
     @Override // org.eclipse.jgit.api.GitCommand, java.util.concurrent.Callable
     public List<DiffEntry> call() throws GitAPIException {
         Throwable th = null;

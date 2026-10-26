@@ -6,7 +6,7 @@ import java.util.Map;
 import javax.annotation.Nullable;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class IdentityPoolCredentialSource extends ExternalAccountCredentials.CredentialSource {
     private static final long serialVersionUID = -745855247050085694L;
     CredentialFormatType credentialFormatType;

@@ -16,7 +16,7 @@ import io.opencensus.trace.propagation.TextFormat;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class HttpClientHandler<Q, P, C> extends AbstractHttpHandler<Q, P> {
     private final TextFormat.Setter<C> setter;
     private final StatsRecorder statsRecorder;

@@ -5,7 +5,7 @@ import com.google.api.client.json.JsonString;
 import com.google.api.client.util.Key;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Channel extends GenericJson {
 
     @Key
@@ -15,7 +15,7 @@ public final class Channel extends GenericJson {
     @Key
     private Long expiration;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     @Key
     private String f40id;
 

@@ -1,6 +1,6 @@
 package io.noties.markwon;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class R {
 
     public static final class anim {

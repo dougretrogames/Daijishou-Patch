@@ -3,7 +3,7 @@ package io.opencensus.tags;
 import io.opencensus.internal.StringUtils;
 import io.opencensus.internal.Utils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class TagKey {
     public static final int MAX_LENGTH = 255;
 

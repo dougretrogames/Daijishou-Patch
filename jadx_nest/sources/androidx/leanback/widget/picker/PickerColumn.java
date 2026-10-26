@@ -1,6 +1,6 @@
 package androidx.leanback.widget.picker;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class PickerColumn {
     private int mCurrentValue;
     private String mLabelFormat;

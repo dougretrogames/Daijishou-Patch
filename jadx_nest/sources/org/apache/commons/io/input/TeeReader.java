@@ -5,7 +5,7 @@ import java.io.Reader;
 import java.io.Writer;
 import java.nio.CharBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TeeReader extends ProxyReader {
     private final Writer branch;
     private final boolean closeBranch;

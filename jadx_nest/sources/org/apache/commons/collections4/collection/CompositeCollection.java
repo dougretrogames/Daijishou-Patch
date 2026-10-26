@@ -13,7 +13,7 @@ import org.apache.commons.collections4.iterators.EmptyIterator;
 import org.apache.commons.collections4.iterators.IteratorChain;
 import org.apache.commons.collections4.list.UnmodifiableList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CompositeCollection<E> implements Collection<E>, Serializable {
     private static final long serialVersionUID = 8417515734108306801L;
     private final List<Collection<E>> all = new ArrayList();

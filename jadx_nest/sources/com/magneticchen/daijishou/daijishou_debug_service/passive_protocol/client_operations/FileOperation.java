@@ -42,8 +42,8 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 import org.apache.commons.codec.digest.MessageDigestAlgorithms;
 
-/* JADX INFO: compiled from: FileOperation.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: FileOperation.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0005\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 \u00152\u00020\u0001:\u0001\u0015B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u001e\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0011H\u0096@¢\u0006\u0002\u0010\u0012J\u0006\u0010\u0013\u001a\u00020\nJ\u0006\u0010\u0014\u001a\u00020\nR\u0014\u0010\u0005\u001a\u00020\u0006X\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0014\u0010\t\u001a\u00020\nX\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\u000b¨\u0006\u0016"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_debug_service/passive_protocol/client_operations/FileOperation;", "Lcom/magneticchen/daijishou/daijishou_debug_service/passive_protocol/ClientOperation;", "application", "Lcom/magneticchen/daijishou/DaijishouApplication;", "(Lcom/magneticchen/daijishou/DaijishouApplication;)V", "headerByteCode", "", "getHeaderByteCode", "()B", "isMainActivityRequired", "", "()Z", "handleDataStreams", "", "dataInputStream", "Ljava/io/DataInputStream;", "dataOutputStream", "Ljava/io/DataOutputStream;", "(Ljava/io/DataInputStream;Ljava/io/DataOutputStream;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "readFileFromDataInputStreamToFile", "writeFileToDataInputStreamFromFile", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class FileOperation extends ClientOperation {
     private static final Void MAKE_DIRECTORY_SUB_OPERATION_BYTE_CODE = null;
@@ -52,7 +52,7 @@ public final class FileOperation extends ClientOperation {
     private final byte headerByteCode;
     private final boolean isMainActivityRequired = false;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final int LIST_FILES_SUB_OPERATION_BYTE_CODE = 1;
     private static final int DELETE_FILE_SUB_OPERATION_BYTE_CODE = 2;
@@ -74,7 +74,7 @@ public final class FileOperation extends ClientOperation {
         return false;
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public FileOperation(DaijishouApplication application) {
         super(application);
         Intrinsics.checkNotNullParameter(application, "application");
@@ -86,7 +86,7 @@ public final class FileOperation extends ClientOperation {
         return this.headerByteCode;
     }
 
-    /* JADX INFO: compiled from: FileOperation.kt */
+    /* INFO: compiled from: FileOperation.kt */
     @Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u000f\n\u0002\u0010\u0001\n\u0002\b\u000f\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0014\u0010\u0003\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u0014\u0010\t\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u0006R\u0014\u0010\u000b\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u0006R\u0014\u0010\r\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u0006R\u0014\u0010\u000f\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0006R\u0014\u0010\u0011\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0006R\u0013\u0010\u0013\u001a\u0004\u0018\u00010\u0014¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0014\u0010\u0017\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0006R\u0013\u0010\u0019\u001a\u0004\u0018\u00010\u0014¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0016R\u0014\u0010\u001b\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0006R\u0014\u0010\u001d\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0006R\u0014\u0010\u001f\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u0006R\u0014\u0010!\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\"\u0010\u0006¨\u0006#"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_debug_service/passive_protocol/client_operations/FileOperation$Companion;", "", "()V", "ACCESS_DENIED_RESULT_STATUS_BYTE_CODE", "", "getACCESS_DENIED_RESULT_STATUS_BYTE_CODE", "()I", "BYTES_CHUNK_SIZE", "getBYTES_CHUNK_SIZE", "CHECKSUM_MISMATCHED_RESULT_STATUS_BYTE_CODE", "getCHECKSUM_MISMATCHED_RESULT_STATUS_BYTE_CODE", "DELETE_FILE_SUB_OPERATION_BYTE_CODE", "getDELETE_FILE_SUB_OPERATION_BYTE_CODE", "FAILED_RESULT_STATUS_BYTE_CODE", "getFAILED_RESULT_STATUS_BYTE_CODE", "FILE_EXISTS_RESULT_STATUS_BYTE_CODE", "getFILE_EXISTS_RESULT_STATUS_BYTE_CODE", "LIST_FILES_SUB_OPERATION_BYTE_CODE", "getLIST_FILES_SUB_OPERATION_BYTE_CODE", "MAKE_DIRECTORY_SUB_OPERATION_BYTE_CODE", "", "getMAKE_DIRECTORY_SUB_OPERATION_BYTE_CODE", "()Ljava/lang/Void;", "MAX_RETRIED_COUNT", "getMAX_RETRIED_COUNT", "MOVE_FILE_SUB_OPERATION_BYTE_CODE", "getMOVE_FILE_SUB_OPERATION_BYTE_CODE", "NO_SUCH_FILE_RESULT_STATUS_BYTE_CODE", "getNO_SUCH_FILE_RESULT_STATUS_BYTE_CODE", "PULL_FILE_SUB_OPERATION_BYTE_CODE", "getPULL_FILE_SUB_OPERATION_BYTE_CODE", "PUSH_FILE_SUB_OPERATION_BYTE_CODE", "getPUSH_FILE_SUB_OPERATION_BYTE_CODE", "SUCCEED_RESULT_STATUS_BYTE_CODE", "getSUCCEED_RESULT_STATUS_BYTE_CODE", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -154,13 +154,13 @@ public final class FileOperation extends ClientOperation {
     }
 
     @Override // com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.ClientOperation
-    /* JADX INFO: renamed from: isMainActivityRequired, reason: from getter */
+    /* INFO: renamed from: isMainActivityRequired, reason: from getter */
     public boolean getIsMainActivityRequired() {
         return this.isMainActivityRequired;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.client_operations.FileOperation$handleDataStreams$2, reason: invalid class name */
-    /* JADX INFO: compiled from: FileOperation.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.client_operations.FileOperation$handleDataStreams$2, reason: invalid class name */
+    /* INFO: compiled from: FileOperation.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.client_operations.FileOperation$handleDataStreams$2", f = "FileOperation.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -170,7 +170,7 @@ public final class FileOperation extends ClientOperation {
         int label;
         final /* synthetic */ FileOperation this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(DataInputStream dataInputStream, FileOperation fileOperation, DataOutputStream dataOutputStream, Continuation<?> continuation) {
             super(2, continuation);
             this.$dataInputStream = dataInputStream;
@@ -198,15 +198,15 @@ public final class FileOperation extends ClientOperation {
             }
         }
 
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         public final Object invokeSuspendImpl(Object obj) throws Throwable {
             boolean zDeleteRecursively;
@@ -442,8 +442,8 @@ public final class FileOperation extends ClientOperation {
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.client_operations.FileOperation$handleDataStreams$2$2, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: FileOperation.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.client_operations.FileOperation$handleDataStreams$2$2, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: FileOperation.kt */
         @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "Ljava/nio/file/Path;", "kotlin.jvm.PlatformType", "invoke", "(Ljava/nio/file/Path;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class C00552 extends Lambda<Boolean> implements Function1<Path, Boolean> {
             public static final C00552 INSTANCE = new C00552();
@@ -459,13 +459,13 @@ public final class FileOperation extends ClientOperation {
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.client_operations.FileOperation$handleDataStreams$2$3, reason: invalid class name */
-        /* JADX INFO: compiled from: FileOperation.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.client_operations.FileOperation$handleDataStreams$2$3, reason: invalid class name */
+        /* INFO: compiled from: FileOperation.kt */
         @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "it", "Ljava/nio/file/Path;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass3 extends Lambda<Unit> implements Function1<Path, Unit> {
             final /* synthetic */ List<Path> $files;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass3(List<Path> list) {
                 super(1);
                 this.$files = list;
@@ -477,7 +477,7 @@ public final class FileOperation extends ClientOperation {
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Path path) {
                 List<Path> list = this.$files;
                 Intrinsics.checkNotNull(path);
@@ -485,7 +485,7 @@ public final class FileOperation extends ClientOperation {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static final boolean invokeSuspendImpl$lambda$1(Function1 function1, Object obj) {
             return ((Boolean) function1.invoke(obj)).booleanValue();
         }

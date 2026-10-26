@@ -4,8 +4,8 @@ import android.text.TextUtils;
 import androidx.webkit.ProxyConfig;
 import com.google.android.gms.common.internal.Preconditions;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public final class CookieUtil {
     private CookieUtil() {
     }

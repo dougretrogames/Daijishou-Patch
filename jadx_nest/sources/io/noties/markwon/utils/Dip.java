@@ -2,7 +2,7 @@ package io.noties.markwon.utils;
 
 import android.content.Context;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class Dip {
     private final float density;
 

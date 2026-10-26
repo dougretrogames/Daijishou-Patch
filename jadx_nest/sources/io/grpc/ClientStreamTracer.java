@@ -3,7 +3,7 @@ package io.grpc;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Preconditions;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ClientStreamTracer extends StreamTracer {
     public static final CallOptions.Key<Long> NAME_RESOLUTION_DELAYED = CallOptions.Key.create("io.grpc.ClientStreamTracer.NAME_RESOLUTION_DELAYED");
 

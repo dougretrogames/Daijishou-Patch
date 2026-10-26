@@ -2,8 +2,8 @@ package com.google.common.collect;
 
 import java.util.function.BinaryOperator;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class TableCollectors$$ExternalSyntheticLambda3 implements BinaryOperator {
     public final /* synthetic */ BinaryOperator f$0;
 

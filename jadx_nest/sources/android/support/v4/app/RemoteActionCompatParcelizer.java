@@ -3,7 +3,7 @@ package android.support.v4.app;
 import androidx.core.app.RemoteActionCompat;
 import androidx.versionedparcelable.VersionedParcel;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class RemoteActionCompatParcelizer extends androidx.core.app.RemoteActionCompatParcelizer {
     public static RemoteActionCompat read(VersionedParcel versionedParcel) {
         return androidx.core.app.RemoteActionCompatParcelizer.read(versionedParcel);

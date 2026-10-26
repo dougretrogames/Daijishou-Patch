@@ -3,7 +3,7 @@ package org.commonmark.internal;
 import org.commonmark.node.Text;
 import org.commonmark.parser.delimiter.DelimiterRun;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Delimiter implements DelimiterRun {
     public final boolean canClose;
     public final boolean canOpen;

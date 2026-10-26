@@ -9,7 +9,7 @@ import android.os.LocaleList;
 import androidx.core.os.LocaleListCompat;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class LocaleManagerCompat {
     private LocaleManagerCompat() {
     }

@@ -4,7 +4,7 @@ import android.graphics.Point;
 import android.view.MotionEvent;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DragStartHelper {
     private boolean mDragging;
     private int mLastTouchX;
@@ -33,7 +33,7 @@ public class DragStartHelper {
         this.mView.setOnTouchListener(null);
     }
 
-    /* JADX WARN: Code duplicated, block: B:26:0x0046  */
+    /* WARN: Code duplicated, block: B:26:0x0046  */
     public boolean onTouch(View view, MotionEvent motionEvent) {
         int x = (int) motionEvent.getX();
         int y = (int) motionEvent.getY();

@@ -6,7 +6,7 @@ import org.eclipse.jgit.api.errors.AbortedByHookException;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.util.ProcessResult;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PostCommitHook extends GitHook<Void> {
     public static final String NAME = "post-commit";
 

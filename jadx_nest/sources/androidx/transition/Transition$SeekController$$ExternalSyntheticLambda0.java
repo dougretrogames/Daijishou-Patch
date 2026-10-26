@@ -2,8 +2,8 @@ package androidx.transition;
 
 import androidx.dynamicanimation.animation.DynamicAnimation;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class Transition$SeekController$$ExternalSyntheticLambda0 implements DynamicAnimation.OnAnimationEndListener {
     public final /* synthetic */ Transition.SeekController f$0;
 

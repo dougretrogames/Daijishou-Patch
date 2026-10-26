@@ -16,7 +16,7 @@ import android.view.ViewGroup;
 import androidx.core.content.res.TypedArrayUtils;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ChangeBounds extends Transition {
     private boolean mResizeClip;
     private static final String PROPNAME_BOUNDS = "android:changeBounds:bounds";
@@ -37,7 +37,7 @@ public class ChangeBounds extends Transition {
         return true;
     }
 
-    /* JADX INFO: renamed from: androidx.transition.ChangeBounds$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ChangeBounds$1, reason: invalid class name */
     class AnonymousClass1 extends Property<ViewBounds, PointF> {
         @Override // android.util.Property
         public PointF get(ViewBounds viewBounds) {
@@ -54,7 +54,7 @@ public class ChangeBounds extends Transition {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.ChangeBounds$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ChangeBounds$2, reason: invalid class name */
     class AnonymousClass2 extends Property<ViewBounds, PointF> {
         @Override // android.util.Property
         public PointF get(ViewBounds viewBounds) {
@@ -71,7 +71,7 @@ public class ChangeBounds extends Transition {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.ChangeBounds$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ChangeBounds$3, reason: invalid class name */
     class AnonymousClass3 extends Property<View, PointF> {
         @Override // android.util.Property
         public PointF get(View view) {
@@ -88,7 +88,7 @@ public class ChangeBounds extends Transition {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.ChangeBounds$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ChangeBounds$4, reason: invalid class name */
     class AnonymousClass4 extends Property<View, PointF> {
         @Override // android.util.Property
         public PointF get(View view) {
@@ -105,7 +105,7 @@ public class ChangeBounds extends Transition {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.ChangeBounds$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ChangeBounds$5, reason: invalid class name */
     class AnonymousClass5 extends Property<View, PointF> {
         @Override // android.util.Property
         public PointF get(View view) {
@@ -177,7 +177,7 @@ public class ChangeBounds extends Transition {
         captureValues(transitionValues);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // androidx.transition.Transition
     public Animator createAnimator(ViewGroup viewGroup, TransitionValues transitionValues, TransitionValues transitionValues2) {
         int i;
@@ -278,7 +278,7 @@ public class ChangeBounds extends Transition {
         return animatorMergeAnimators;
     }
 
-    /* JADX INFO: renamed from: androidx.transition.ChangeBounds$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ChangeBounds$6, reason: invalid class name */
     class AnonymousClass6 extends AnimatorListenerAdapter {
         private final ViewBounds mViewBounds;
         final /* synthetic */ ViewBounds val$viewBounds;

@@ -3,7 +3,7 @@ package io.opencensus.stats;
 import io.opencensus.tags.TagKey;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_View extends View {
     private final Aggregation aggregation;
     private final List<TagKey> columns;

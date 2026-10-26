@@ -2,7 +2,7 @@ package com.google.common.collect;
 
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class EmptyImmutableSetMultimap extends ImmutableSetMultimap<Object, Object> {
     static final EmptyImmutableSetMultimap INSTANCE = new EmptyImmutableSetMultimap();

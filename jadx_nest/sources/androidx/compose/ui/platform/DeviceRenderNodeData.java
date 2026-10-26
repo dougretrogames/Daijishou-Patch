@@ -7,8 +7,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: DeviceRenderNode.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: DeviceRenderNode.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0010\u0007\n\u0002\b\r\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\bW\n\u0002\u0010\u000e\n\u0000\b\u0080\b\u0018\u00002\u00020\u0001BÏ\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\u0005\u0012\u0006\u0010\t\u001a\u00020\u0005\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\u0006\u0010\u000b\u001a\u00020\f\u0012\u0006\u0010\r\u001a\u00020\f\u0012\u0006\u0010\u000e\u001a\u00020\f\u0012\u0006\u0010\u000f\u001a\u00020\f\u0012\u0006\u0010\u0010\u001a\u00020\f\u0012\u0006\u0010\u0011\u001a\u00020\u0005\u0012\u0006\u0010\u0012\u001a\u00020\u0005\u0012\u0006\u0010\u0013\u001a\u00020\f\u0012\u0006\u0010\u0014\u001a\u00020\f\u0012\u0006\u0010\u0015\u001a\u00020\f\u0012\u0006\u0010\u0016\u001a\u00020\f\u0012\u0006\u0010\u0017\u001a\u00020\f\u0012\u0006\u0010\u0018\u001a\u00020\f\u0012\u0006\u0010\u0019\u001a\u00020\u001a\u0012\u0006\u0010\u001b\u001a\u00020\u001a\u0012\u0006\u0010\u001c\u001a\u00020\f\u0012\b\u0010\u001d\u001a\u0004\u0018\u00010\u001e\u0012\u0006\u0010\u001f\u001a\u00020 ¢\u0006\u0002\u0010!J\t\u0010W\u001a\u00020\u0003HÆ\u0003J\t\u0010X\u001a\u00020\fHÆ\u0003J\t\u0010Y\u001a\u00020\fHÆ\u0003J\t\u0010Z\u001a\u00020\fHÆ\u0003J\t\u0010[\u001a\u00020\u0005HÆ\u0003J\t\u0010\\\u001a\u00020\u0005HÆ\u0003J\t\u0010]\u001a\u00020\fHÆ\u0003J\t\u0010^\u001a\u00020\fHÆ\u0003J\t\u0010_\u001a\u00020\fHÆ\u0003J\t\u0010`\u001a\u00020\fHÆ\u0003J\t\u0010a\u001a\u00020\fHÆ\u0003J\t\u0010b\u001a\u00020\u0005HÆ\u0003J\t\u0010c\u001a\u00020\fHÆ\u0003J\t\u0010d\u001a\u00020\u001aHÆ\u0003J\t\u0010e\u001a\u00020\u001aHÆ\u0003J\t\u0010f\u001a\u00020\fHÆ\u0003J\u000b\u0010g\u001a\u0004\u0018\u00010\u001eHÆ\u0003J\u0016\u0010h\u001a\u00020 HÆ\u0003ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\bi\u0010'J\t\u0010j\u001a\u00020\u0005HÆ\u0003J\t\u0010k\u001a\u00020\u0005HÆ\u0003J\t\u0010l\u001a\u00020\u0005HÆ\u0003J\t\u0010m\u001a\u00020\u0005HÆ\u0003J\t\u0010n\u001a\u00020\u0005HÆ\u0003J\t\u0010o\u001a\u00020\fHÆ\u0003J\t\u0010p\u001a\u00020\fHÆ\u0003J\u008f\u0002\u0010q\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\b\b\u0002\u0010\b\u001a\u00020\u00052\b\b\u0002\u0010\t\u001a\u00020\u00052\b\b\u0002\u0010\n\u001a\u00020\u00052\b\b\u0002\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\r\u001a\u00020\f2\b\b\u0002\u0010\u000e\u001a\u00020\f2\b\b\u0002\u0010\u000f\u001a\u00020\f2\b\b\u0002\u0010\u0010\u001a\u00020\f2\b\b\u0002\u0010\u0011\u001a\u00020\u00052\b\b\u0002\u0010\u0012\u001a\u00020\u00052\b\b\u0002\u0010\u0013\u001a\u00020\f2\b\b\u0002\u0010\u0014\u001a\u00020\f2\b\b\u0002\u0010\u0015\u001a\u00020\f2\b\b\u0002\u0010\u0016\u001a\u00020\f2\b\b\u0002\u0010\u0017\u001a\u00020\f2\b\b\u0002\u0010\u0018\u001a\u00020\f2\b\b\u0002\u0010\u0019\u001a\u00020\u001a2\b\b\u0002\u0010\u001b\u001a\u00020\u001a2\b\b\u0002\u0010\u001c\u001a\u00020\f2\n\b\u0002\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\b\b\u0002\u0010\u001f\u001a\u00020 HÆ\u0001ø\u0001\u0000¢\u0006\u0004\br\u0010sJ\u0013\u0010t\u001a\u00020\u001a2\b\u0010u\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010v\u001a\u00020\u0005HÖ\u0001J\t\u0010w\u001a\u00020xHÖ\u0001R\u001a\u0010\u001c\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\"\u0010#\"\u0004\b$\u0010%R\u001a\u0010\u0011\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b&\u0010'\"\u0004\b(\u0010)R\u0011\u0010\b\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b*\u0010'R\u001a\u0010\u0016\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b+\u0010#\"\u0004\b,\u0010%R\u001a\u0010\u001b\u001a\u00020\u001aX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b-\u0010.\"\u0004\b/\u00100R\u001a\u0010\u0019\u001a\u00020\u001aX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b1\u0010.\"\u0004\b2\u00100R\"\u0010\u001f\u001a\u00020 X\u0086\u000eø\u0001\u0000ø\u0001\u0001¢\u0006\u0010\n\u0002\u00105\u001a\u0004\b3\u0010'\"\u0004\b4\u0010)R\u001a\u0010\u0010\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b6\u0010#\"\u0004\b7\u0010%R\u0011\u0010\n\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b8\u0010'R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b9\u0010'R\u001a\u0010\u0017\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b:\u0010#\"\u0004\b;\u0010%R\u001a\u0010\u0018\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b<\u0010#\"\u0004\b=\u0010%R\u001c\u0010\u001d\u001a\u0004\u0018\u00010\u001eX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b>\u0010?\"\u0004\b@\u0010AR\u0011\u0010\u0007\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\bB\u0010'R\u001a\u0010\u0014\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bC\u0010#\"\u0004\bD\u0010%R\u001a\u0010\u0015\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bE\u0010#\"\u0004\bF\u0010%R\u001a\u0010\u0013\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bG\u0010#\"\u0004\bH\u0010%R\u001a\u0010\u000b\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bI\u0010#\"\u0004\bJ\u0010%R\u001a\u0010\r\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bK\u0010#\"\u0004\bL\u0010%R\u001a\u0010\u0012\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bM\u0010'\"\u0004\bN\u0010)R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\bO\u0010'R\u001a\u0010\u000e\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bP\u0010#\"\u0004\bQ\u0010%R\u001a\u0010\u000f\u001a\u00020\fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bR\u0010#\"\u0004\bS\u0010%R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\bT\u0010UR\u0011\u0010\t\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\bV\u0010'\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006y"}, d2 = {"Landroidx/compose/ui/platform/DeviceRenderNodeData;", "", "uniqueId", "", "left", "", "top", "right", "bottom", "width", "height", "scaleX", "", "scaleY", "translationX", "translationY", "elevation", "ambientShadowColor", "spotShadowColor", "rotationZ", "rotationX", "rotationY", "cameraDistance", "pivotX", "pivotY", "clipToOutline", "", "clipToBounds", "alpha", "renderEffect", "Landroidx/compose/ui/graphics/RenderEffect;", "compositingStrategy", "Landroidx/compose/ui/graphics/CompositingStrategy;", "(JIIIIIIFFFFFIIFFFFFFZZFLandroidx/compose/ui/graphics/RenderEffect;ILkotlin/jvm/internal/DefaultConstructorMarker;)V", "getAlpha", "()F", "setAlpha", "(F)V", "getAmbientShadowColor", "()I", "setAmbientShadowColor", "(I)V", "getBottom", "getCameraDistance", "setCameraDistance", "getClipToBounds", "()Z", "setClipToBounds", "(Z)V", "getClipToOutline", "setClipToOutline", "getCompositingStrategy--NrFUSI", "setCompositingStrategy-aDBOjCE", "I", "getElevation", "setElevation", "getHeight", "getLeft", "getPivotX", "setPivotX", "getPivotY", "setPivotY", "getRenderEffect", "()Landroidx/compose/ui/graphics/RenderEffect;", "setRenderEffect", "(Landroidx/compose/ui/graphics/RenderEffect;)V", "getRight", "getRotationX", "setRotationX", "getRotationY", "setRotationY", "getRotationZ", "setRotationZ", "getScaleX", "setScaleX", "getScaleY", "setScaleY", "getSpotShadowColor", "setSpotShadowColor", "getTop", "getTranslationX", "setTranslationX", "getTranslationY", "setTranslationY", "getUniqueId", "()J", "getWidth", "component1", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component2", "component20", "component21", "component22", "component23", "component24", "component25", "component25--NrFUSI", "component3", "component4", "component5", "component6", "component7", "component8", "component9", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "copy-fuCbV5c", "(JIIIIIIFFFFFIIFFFFFFZZFLandroidx/compose/ui/graphics/RenderEffect;I)Landroidx/compose/ui/platform/DeviceRenderNodeData;", "equals", "other", "hashCode", "toString", "", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final /* data */ class DeviceRenderNodeData {
     public static final int $stable = 8;
@@ -42,7 +42,7 @@ public final /* data */ class DeviceRenderNodeData {
         this(j, i, i2, i3, i4, i5, i6, f, f2, f3, f4, f5, i7, i8, f6, f7, f8, f9, f10, f11, z, z2, f12, renderEffect, i9);
     }
 
-    /* JADX INFO: renamed from: copy-fuCbV5c$default, reason: not valid java name */
+    /* INFO: renamed from: copy-fuCbV5c$default, reason: not valid java name */
     public static /* synthetic */ DeviceRenderNodeData m2147copyfuCbV5c$default(DeviceRenderNodeData deviceRenderNodeData, long j, int i, int i2, int i3, int i4, int i5, int i6, float f, float f2, float f3, float f4, float f5, int i7, int i8, float f6, float f7, float f8, float f9, float f10, float f11, boolean z, boolean z2, float f12, RenderEffect renderEffect, int i9, int i10, Object obj) {
         int i11;
         RenderEffect renderEffect2;
@@ -81,132 +81,132 @@ public final /* data */ class DeviceRenderNodeData {
         return deviceRenderNodeData.m2149copyfuCbV5c(j3, i12, i13, i14, i15, i16, i17, f13, f14, f15, f16, f17, i18, i19, f18, f19, f20, f21, f22, f23, z3, z4, f24, renderEffect2, i11);
     }
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    /* INFO: renamed from: component1, reason: from getter */
     public final long getUniqueId() {
         return this.uniqueId;
     }
 
-    /* JADX INFO: renamed from: component10, reason: from getter */
+    /* INFO: renamed from: component10, reason: from getter */
     public final float getTranslationX() {
         return this.translationX;
     }
 
-    /* JADX INFO: renamed from: component11, reason: from getter */
+    /* INFO: renamed from: component11, reason: from getter */
     public final float getTranslationY() {
         return this.translationY;
     }
 
-    /* JADX INFO: renamed from: component12, reason: from getter */
+    /* INFO: renamed from: component12, reason: from getter */
     public final float getElevation() {
         return this.elevation;
     }
 
-    /* JADX INFO: renamed from: component13, reason: from getter */
+    /* INFO: renamed from: component13, reason: from getter */
     public final int getAmbientShadowColor() {
         return this.ambientShadowColor;
     }
 
-    /* JADX INFO: renamed from: component14, reason: from getter */
+    /* INFO: renamed from: component14, reason: from getter */
     public final int getSpotShadowColor() {
         return this.spotShadowColor;
     }
 
-    /* JADX INFO: renamed from: component15, reason: from getter */
+    /* INFO: renamed from: component15, reason: from getter */
     public final float getRotationZ() {
         return this.rotationZ;
     }
 
-    /* JADX INFO: renamed from: component16, reason: from getter */
+    /* INFO: renamed from: component16, reason: from getter */
     public final float getRotationX() {
         return this.rotationX;
     }
 
-    /* JADX INFO: renamed from: component17, reason: from getter */
+    /* INFO: renamed from: component17, reason: from getter */
     public final float getRotationY() {
         return this.rotationY;
     }
 
-    /* JADX INFO: renamed from: component18, reason: from getter */
+    /* INFO: renamed from: component18, reason: from getter */
     public final float getCameraDistance() {
         return this.cameraDistance;
     }
 
-    /* JADX INFO: renamed from: component19, reason: from getter */
+    /* INFO: renamed from: component19, reason: from getter */
     public final float getPivotX() {
         return this.pivotX;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    /* INFO: renamed from: component2, reason: from getter */
     public final int getLeft() {
         return this.left;
     }
 
-    /* JADX INFO: renamed from: component20, reason: from getter */
+    /* INFO: renamed from: component20, reason: from getter */
     public final float getPivotY() {
         return this.pivotY;
     }
 
-    /* JADX INFO: renamed from: component21, reason: from getter */
+    /* INFO: renamed from: component21, reason: from getter */
     public final boolean getClipToOutline() {
         return this.clipToOutline;
     }
 
-    /* JADX INFO: renamed from: component22, reason: from getter */
+    /* INFO: renamed from: component22, reason: from getter */
     public final boolean getClipToBounds() {
         return this.clipToBounds;
     }
 
-    /* JADX INFO: renamed from: component23, reason: from getter */
+    /* INFO: renamed from: component23, reason: from getter */
     public final float getAlpha() {
         return this.alpha;
     }
 
-    /* JADX INFO: renamed from: component24, reason: from getter */
+    /* INFO: renamed from: component24, reason: from getter */
     public final RenderEffect getRenderEffect() {
         return this.renderEffect;
     }
 
-    /* JADX INFO: renamed from: component25--NrFUSI, reason: not valid java name and from getter */
+    /* INFO: renamed from: component25--NrFUSI, reason: not valid java name and from getter */
     public final int getCompositingStrategy() {
         return this.compositingStrategy;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    /* INFO: renamed from: component3, reason: from getter */
     public final int getTop() {
         return this.top;
     }
 
-    /* JADX INFO: renamed from: component4, reason: from getter */
+    /* INFO: renamed from: component4, reason: from getter */
     public final int getRight() {
         return this.right;
     }
 
-    /* JADX INFO: renamed from: component5, reason: from getter */
+    /* INFO: renamed from: component5, reason: from getter */
     public final int getBottom() {
         return this.bottom;
     }
 
-    /* JADX INFO: renamed from: component6, reason: from getter */
+    /* INFO: renamed from: component6, reason: from getter */
     public final int getWidth() {
         return this.width;
     }
 
-    /* JADX INFO: renamed from: component7, reason: from getter */
+    /* INFO: renamed from: component7, reason: from getter */
     public final int getHeight() {
         return this.height;
     }
 
-    /* JADX INFO: renamed from: component8, reason: from getter */
+    /* INFO: renamed from: component8, reason: from getter */
     public final float getScaleX() {
         return this.scaleX;
     }
 
-    /* JADX INFO: renamed from: component9, reason: from getter */
+    /* INFO: renamed from: component9, reason: from getter */
     public final float getScaleY() {
         return this.scaleY;
     }
 
-    /* JADX INFO: renamed from: copy-fuCbV5c, reason: not valid java name */
+    /* INFO: renamed from: copy-fuCbV5c, reason: not valid java name */
     public final DeviceRenderNodeData m2149copyfuCbV5c(long uniqueId, int left, int top, int right, int bottom, int width, int height, float scaleX, float scaleY, float translationX, float translationY, float elevation, int ambientShadowColor, int spotShadowColor, float rotationZ, float rotationX, float rotationY, float cameraDistance, float pivotX, float pivotY, boolean clipToOutline, boolean clipToBounds, float alpha, RenderEffect renderEffect, int compositingStrategy) {
         return new DeviceRenderNodeData(uniqueId, left, top, right, bottom, width, height, scaleX, scaleY, translationX, translationY, elevation, ambientShadowColor, spotShadowColor, rotationZ, rotationX, rotationY, cameraDistance, pivotX, pivotY, clipToOutline, clipToBounds, alpha, renderEffect, compositingStrategy, null);
     }
@@ -428,12 +428,12 @@ public final /* data */ class DeviceRenderNodeData {
         this.renderEffect = renderEffect;
     }
 
-    /* JADX INFO: renamed from: getCompositingStrategy--NrFUSI, reason: not valid java name */
+    /* INFO: renamed from: getCompositingStrategy--NrFUSI, reason: not valid java name */
     public final int m2150getCompositingStrategyNrFUSI() {
         return this.compositingStrategy;
     }
 
-    /* JADX INFO: renamed from: setCompositingStrategy-aDBOjCE, reason: not valid java name */
+    /* INFO: renamed from: setCompositingStrategy-aDBOjCE, reason: not valid java name */
     public final void m2151setCompositingStrategyaDBOjCE(int i) {
         this.compositingStrategy = i;
     }

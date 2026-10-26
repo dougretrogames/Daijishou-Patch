@@ -20,7 +20,7 @@ import org.apache.http.util.Args;
 import org.apache.http.util.EncodingUtils;
 import org.apache.http.util.EntityUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpService {
     private volatile ConnectionReuseStrategy connStrategy;
     private volatile HttpExpectationVerifier expectationVerifier;
@@ -114,8 +114,8 @@ public class HttpService {
         return this.params;
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x0062 A[Catch: HttpException -> 0x0081, TryCatch #1 {HttpException -> 0x0081, blocks: (B:4:0x000c, B:6:0x0012, B:8:0x001b, B:14:0x003c, B:16:0x0046, B:13:0x0030, B:18:0x0055, B:19:0x005b, B:21:0x0062, B:22:0x0072, B:24:0x0076, B:10:0x0029), top: B:40:0x000c, inners: #2 }] */
-    /* JADX WARN: Code duplicated, block: B:24:0x0076 A[Catch: HttpException -> 0x0081, TRY_LEAVE, TryCatch #1 {HttpException -> 0x0081, blocks: (B:4:0x000c, B:6:0x0012, B:8:0x001b, B:14:0x003c, B:16:0x0046, B:13:0x0030, B:18:0x0055, B:19:0x005b, B:21:0x0062, B:22:0x0072, B:24:0x0076, B:10:0x0029), top: B:40:0x000c, inners: #2 }] */
+    /* WARN: Code duplicated, block: B:21:0x0062 A[Catch: HttpException -> 0x0081, TryCatch #1 {HttpException -> 0x0081, blocks: (B:4:0x000c, B:6:0x0012, B:8:0x001b, B:14:0x003c, B:16:0x0046, B:13:0x0030, B:18:0x0055, B:19:0x005b, B:21:0x0062, B:22:0x0072, B:24:0x0076, B:10:0x0029), top: B:40:0x000c, inners: #2 }] */
+    /* WARN: Code duplicated, block: B:24:0x0076 A[Catch: HttpException -> 0x0081, TRY_LEAVE, TryCatch #1 {HttpException -> 0x0081, blocks: (B:4:0x000c, B:6:0x0012, B:8:0x001b, B:14:0x003c, B:16:0x0046, B:13:0x0030, B:18:0x0055, B:19:0x005b, B:21:0x0062, B:22:0x0072, B:24:0x0076, B:10:0x0029), top: B:40:0x000c, inners: #2 }] */
     public void handleRequest(HttpServerConnection httpServerConnection, HttpContext httpContext) throws HttpException, IOException {
         HttpRequest httpRequestReceiveRequestHeader;
         HttpException e;

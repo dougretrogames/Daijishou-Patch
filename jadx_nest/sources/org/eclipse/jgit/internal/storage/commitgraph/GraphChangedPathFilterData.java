@@ -2,7 +2,7 @@ package org.eclipse.jgit.internal.storage.commitgraph;
 
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class GraphChangedPathFilterData {
     private static final int BDAT_HEADER_BYTES = 12;
     private static final int BIDX_BYTES_PER_ENTRY = 4;

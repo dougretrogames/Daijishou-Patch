@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class FragmentTransitionImpl {
     public abstract void addTarget(Object obj, View view);
 
@@ -124,7 +124,7 @@ public abstract class FragmentTransitionImpl {
         OneShotPreDrawListener.add(view, new AnonymousClass1(size, arrayList2, arrayList3, arrayList, arrayList4));
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentTransitionImpl$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentTransitionImpl$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ ArrayList val$inNames;
         final /* synthetic */ int val$numSharedElements;

@@ -4,8 +4,8 @@ import java.nio.file.Path;
 import java.time.Instant;
 import java.util.function.Consumer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class GC$$ExternalSyntheticLambda12 implements Consumer {
     public final /* synthetic */ Instant f$0;
 

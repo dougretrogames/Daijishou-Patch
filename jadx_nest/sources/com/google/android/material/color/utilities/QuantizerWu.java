@@ -7,7 +7,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class QuantizerWu implements Quantizer {
     private static final int INDEX_BITS = 5;
     private static final int INDEX_COUNT = 33;
@@ -234,7 +234,7 @@ public final class QuantizerWu implements Quantizer {
         return true;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.color.utilities.QuantizerWu$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.color.utilities.QuantizerWu$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$android$material$color$utilities$QuantizerWu$Direction;
 

@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.TimeZone;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class DateUtils {
     private static final String[] DEFAULT_PATTERNS = {"EEE, dd MMM yyyy HH:mm:ss zzz", "EEE, dd-MMM-yy HH:mm:ss zzz", "EEE MMM d HH:mm:ss yyyy"};
     private static final Date DEFAULT_TWO_DIGIT_YEAR_START;

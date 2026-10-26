@@ -11,7 +11,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class HeaderScrollingViewBehavior extends ViewOffsetBehavior<View> {
     private int overlayTop;
     final Rect tempRect1;

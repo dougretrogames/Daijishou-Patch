@@ -61,8 +61,8 @@ import kotlinx.coroutines.flow.MutableStateFlow;
 import kotlinx.coroutines.flow.StateFlow;
 import kotlinx.coroutines.flow.StateFlowKt;
 
-/* JADX INFO: compiled from: Recomposer.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Recomposer.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0094\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0010\u0003\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010#\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0015\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\r\b\u0007\u0018\u0000 ¹\u00012\u00020\u0001:\n¹\u0001º\u0001»\u0001¼\u0001½\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010]\u001a\u00020\\2\u0006\u0010^\u001a\u00020\u0007H\u0002J\u0010\u0010_\u001a\u00020\\2\u0006\u0010`\u001a\u00020aH\u0002J\u0006\u0010b\u001a\u00020cJ\u000e\u0010d\u001a\u00020\\H\u0086@¢\u0006\u0002\u0010eJ\u000e\u0010f\u001a\u00020\\H\u0082@¢\u0006\u0002\u0010eJ\u0006\u0010g\u001a\u00020\\J\b\u0010h\u001a\u00020\\H\u0002J\u0006\u0010i\u001a\u00020\\J*\u0010j\u001a\u00020\\2\u0006\u0010^\u001a\u00020\u00072\u0011\u0010k\u001a\r\u0012\u0004\u0012\u00020\\0l¢\u0006\u0002\bmH\u0010¢\u0006\u0004\bn\u0010oJ:\u0010p\u001a\u0002Hq\"\u0004\b\u0000\u0010q2\u0006\u0010^\u001a\u00020\u00072\u000e\u0010r\u001a\n\u0012\u0004\u0012\u00020$\u0018\u00010R2\f\u0010s\u001a\b\u0012\u0004\u0012\u0002Hq0lH\u0082\b¢\u0006\u0002\u0010tJ\u0015\u0010u\u001a\u00020\\2\u0006\u0010v\u001a\u00020\u001fH\u0010¢\u0006\u0002\bwJ\u0010\u0010x\u001a\n\u0012\u0004\u0012\u00020\\\u0018\u00010[H\u0002J\b\u0010y\u001a\u00020\\H\u0002J\u0015\u0010z\u001a\u00020\\2\u0006\u0010v\u001a\u00020\u001fH\u0010¢\u0006\u0002\b{J\u0015\u0010|\u001a\u00020\\2\u0006\u0010^\u001a\u00020\u0007H\u0010¢\u0006\u0002\b}J\u0017\u0010~\u001a\u00020\\2\u0007\u0010\u007f\u001a\u00030\u0080\u0001H\u0010¢\u0006\u0003\b\u0081\u0001J\u000f\u0010\u0082\u0001\u001a\u00020\\H\u0086@¢\u0006\u0002\u0010eJ \u0010\u0083\u0001\u001a\u00020\\2\u0006\u0010v\u001a\u00020\u001f2\u0007\u0010\u0084\u0001\u001a\u00020 H\u0010¢\u0006\u0003\b\u0085\u0001J\u0019\u0010\u0086\u0001\u001a\u0004\u0018\u00010 2\u0006\u0010v\u001a\u00020\u001fH\u0010¢\u0006\u0003\b\u0087\u0001J\u0007\u0010\u0088\u0001\u001a\u00020\\J\u0011\u0010\u0089\u0001\u001a\u00020\\2\u0006\u0010^\u001a\u00020\u0007H\u0002J.\u0010\u008a\u0001\u001a\b\u0012\u0004\u0012\u00020\u00070\t2\r\u0010\u008b\u0001\u001a\b\u0012\u0004\u0012\u00020\u001f0\t2\u000e\u0010r\u001a\n\u0012\u0004\u0012\u00020$\u0018\u00010RH\u0002J#\u0010\u008c\u0001\u001a\u0004\u0018\u00010\u00072\u0006\u0010^\u001a\u00020\u00072\u000e\u0010r\u001a\n\u0012\u0004\u0012\u00020$\u0018\u00010RH\u0002J0\u0010\u008d\u0001\u001a\u00020\\2\r\u0010\u008e\u0001\u001a\b0\u008f\u0001j\u0003`\u0090\u00012\u000b\b\u0002\u0010\u0091\u0001\u001a\u0004\u0018\u00010\u00072\t\b\u0002\u0010\u0092\u0001\u001a\u00020\u0017H\u0002J\u001e\u0010\u0093\u0001\u001a\u000f\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\\0\u0094\u00012\u0006\u0010^\u001a\u00020\u0007H\u0002JV\u0010\u0095\u0001\u001a\u00020\\2D\u0010s\u001a@\b\u0001\u0012\u0005\u0012\u00030\u0097\u0001\u0012\u0017\u0012\u00150\u0098\u0001¢\u0006\u000f\b\u0099\u0001\u0012\n\b\u009a\u0001\u0012\u0005\b\b(\u009b\u0001\u0012\u000b\u0012\t\u0012\u0004\u0012\u00020\\0\u009c\u0001\u0012\u0006\u0012\u0004\u0018\u00010$0\u0096\u0001¢\u0006\u0003\b\u009d\u0001H\u0082@¢\u0006\u0003\u0010\u009e\u0001J\t\u0010\u009f\u0001\u001a\u00020\u0017H\u0002J \u0010\u009f\u0001\u001a\u00020\\2\u0014\u0010 \u0001\u001a\u000f\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\\0\u0094\u0001H\u0082\bJ\u001f\u0010¡\u0001\u001a\u00020\\2\u000e\u0010¢\u0001\u001a\t\u0012\u0005\u0012\u00030£\u00010'H\u0010¢\u0006\u0003\b¤\u0001J\u0017\u0010¥\u0001\u001a\u00020\\2\u0006\u0010^\u001a\u00020\u0007H\u0010¢\u0006\u0003\b¦\u0001J\u0012\u0010§\u0001\u001a\u00020\\2\u0007\u0010¨\u0001\u001a\u00020NH\u0002J\u0011\u0010©\u0001\u001a\u00020\\2\u0006\u0010^\u001a\u00020\u0007H\u0002J\u0017\u0010ª\u0001\u001a\u00020\\2\u0006\u0010^\u001a\u00020\u0007H\u0010¢\u0006\u0003\b«\u0001J\u000b\u0010¬\u0001\u001a\u0004\u0018\u000106H\u0002J\u0007\u0010\u00ad\u0001\u001a\u00020\\J\t\u0010®\u0001\u001a\u00020\\H\u0002J$\u0010¯\u0001\u001a\u00020\\2\b\u0010\u009b\u0001\u001a\u00030\u0098\u00012\b\u0010°\u0001\u001a\u00030±\u0001H\u0082@¢\u0006\u0003\u0010²\u0001J\u000f\u0010³\u0001\u001a\u00020\\H\u0086@¢\u0006\u0002\u0010eJ\u0018\u0010´\u0001\u001a\u00020\\2\u0006\u0010I\u001a\u00020\u0003H\u0087@¢\u0006\u0003\u0010µ\u0001J\u0017\u0010¶\u0001\u001a\u00020\\2\u0006\u0010^\u001a\u00020\u0007H\u0010¢\u0006\u0003\b·\u0001J.\u0010¸\u0001\u001a\u000f\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\\0\u0094\u00012\u0006\u0010^\u001a\u00020\u00072\u000e\u0010r\u001a\n\u0012\u0004\u0012\u00020$\u0018\u00010RH\u0002R\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\b\u001a\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u001e\u0010\u0011\u001a\u00020\u00102\u0006\u0010\u000f\u001a\u00020\u0010@BX\u0086\u000e¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u0010\u0010\u0014\u001a\u0004\u0018\u00010\u0015X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0016\u001a\u00020\u00178PX\u0090\u0004¢\u0006\u0006\u001a\u0004\b\u0018\u0010\u0019R\u0014\u0010\u001a\u001a\u00020\u00178PX\u0090\u0004¢\u0006\u0006\u001a\u0004\b\u001b\u0010\u0019R\u0014\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u001d\u001a\u000e\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020 0\u001eX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010!\u001a\b\u0012\u0004\u0012\u00020\u001f0\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R(\u0010\"\u001a\u001c\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010$0#\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001f0\u00060\u001eX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010%\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010&\u001a\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010'X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010(\u001a\u00020)8PX\u0090\u0004¢\u0006\u0006\u001a\u0004\b*\u0010+R\u000e\u0010,\u001a\u00020)X\u0082\u000e¢\u0006\u0002\n\u0000R\u0017\u0010-\u001a\b\u0012\u0004\u0012\u00020\f0.8F¢\u0006\u0006\u001a\u0004\b/\u00100R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b1\u00102R\u000e\u00103\u001a\u000204X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u00105\u001a\u0004\u0018\u000106X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u00107\u001a\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00108\u001a\u00020\u0017X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u00109\u001a\u00020\u00178BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b:\u0010\u0019R\u0014\u0010;\u001a\u00020\u00178BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b<\u0010\u0019R\u0014\u0010=\u001a\u00020\u00178BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b>\u0010\u0019R\u0014\u0010?\u001a\u00020\u00178BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b@\u0010\u0019R\u0011\u0010A\u001a\u00020\u00178F¢\u0006\u0006\u001a\u0004\bB\u0010\u0019R\u0014\u0010C\u001a\u00020\u00178BX\u0082\u0004¢\u0006\u0006\u001a\u0004\bD\u0010\u0019R\u000e\u0010E\u001a\u00020\u0017X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010F\u001a\b\u0012\u0004\u0012\u00020\u00070\t8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\bG\u0010HR\u0014\u0010I\u001a\u00020\u00038PX\u0090\u0004¢\u0006\u0006\u001a\u0004\bJ\u00102R\u0012\u0010K\u001a\u00060LR\u00020\u0000X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010M\u001a\u0004\u0018\u00010NX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010O\u001a\u00020\u00178BX\u0082\u0004¢\u0006\u0006\u001a\u0004\bP\u0010\u0019R\u0014\u0010Q\u001a\b\u0012\u0004\u0012\u00020$0RX\u0082\u000e¢\u0006\u0002\n\u0000R \u0010S\u001a\b\u0012\u0004\u0012\u00020\f0T8FX\u0087\u0004¢\u0006\f\u0012\u0004\bU\u0010V\u001a\u0004\bW\u0010XR\u000e\u0010Y\u001a\u00020$X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010Z\u001a\n\u0012\u0004\u0012\u00020\\\u0018\u00010[X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006¾\u0001"}, d2 = {"Landroidx/compose/runtime/Recomposer;", "Landroidx/compose/runtime/CompositionContext;", "effectCoroutineContext", "Lkotlin/coroutines/CoroutineContext;", "(Lkotlin/coroutines/CoroutineContext;)V", "_knownCompositions", "", "Landroidx/compose/runtime/ControlledComposition;", "_knownCompositionsCache", "", "_state", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Landroidx/compose/runtime/Recomposer$State;", "broadcastFrameClock", "Landroidx/compose/runtime/BroadcastFrameClock;", "<set-?>", "", "changeCount", "getChangeCount", "()J", "closeCause", "", "collectingParameterInformation", "", "getCollectingParameterInformation$runtime_release", "()Z", "collectingSourceInformation", "getCollectingSourceInformation$runtime_release", "compositionInvalidations", "compositionValueStatesAvailable", "", "Landroidx/compose/runtime/MovableContentStateReference;", "Landroidx/compose/runtime/MovableContentState;", "compositionValuesAwaitingInsert", "compositionValuesRemoved", "Landroidx/compose/runtime/MovableContent;", "", "compositionsAwaitingApply", "compositionsRemoved", "", "compoundHashKey", "", "getCompoundHashKey$runtime_release", "()I", "concurrentCompositionsOutstanding", "currentState", "Lkotlinx/coroutines/flow/StateFlow;", "getCurrentState", "()Lkotlinx/coroutines/flow/StateFlow;", "getEffectCoroutineContext", "()Lkotlin/coroutines/CoroutineContext;", "effectJob", "Lkotlinx/coroutines/CompletableJob;", "errorState", "Landroidx/compose/runtime/Recomposer$RecomposerErrorState;", "failedCompositions", "frameClockPaused", "hasBroadcastFrameClockAwaiters", "getHasBroadcastFrameClockAwaiters", "hasBroadcastFrameClockAwaitersLocked", "getHasBroadcastFrameClockAwaitersLocked", "hasConcurrentFrameWorkLocked", "getHasConcurrentFrameWorkLocked", "hasFrameWorkLocked", "getHasFrameWorkLocked", "hasPendingWork", "getHasPendingWork", "hasSchedulingWork", "getHasSchedulingWork", "isClosed", "knownCompositions", "getKnownCompositions", "()Ljava/util/List;", "recomposeCoroutineContext", "getRecomposeCoroutineContext$runtime_release", "recomposerInfo", "Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;", "runnerJob", "Lkotlinx/coroutines/Job;", "shouldKeepRecomposing", "getShouldKeepRecomposing", "snapshotInvalidations", "Landroidx/compose/runtime/collection/IdentityArraySet;", "state", "Lkotlinx/coroutines/flow/Flow;", "getState$annotations", "()V", "getState", "()Lkotlinx/coroutines/flow/Flow;", "stateLock", "workContinuation", "Lkotlinx/coroutines/CancellableContinuation;", "", "addKnownCompositionLocked", "composition", "applyAndCheck", "snapshot", "Landroidx/compose/runtime/snapshots/MutableSnapshot;", "asRecomposerInfo", "Landroidx/compose/runtime/RecomposerInfo;", "awaitIdle", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "awaitWorkAvailable", "cancel", "clearKnownCompositionsLocked", "close", "composeInitial", "content", "Lkotlin/Function0;", "Landroidx/compose/runtime/Composable;", "composeInitial$runtime_release", "(Landroidx/compose/runtime/ControlledComposition;Lkotlin/jvm/functions/Function2;)V", "composing", ExifInterface.GPS_DIRECTION_TRUE, "modifiedValues", "block", "(Landroidx/compose/runtime/ControlledComposition;Landroidx/compose/runtime/collection/IdentityArraySet;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;", "deletedMovableContent", TypedValues.Custom.S_REFERENCE, "deletedMovableContent$runtime_release", "deriveStateLocked", "discardUnusedValues", "insertMovableContent", "insertMovableContent$runtime_release", "invalidate", "invalidate$runtime_release", "invalidateScope", "scope", "Landroidx/compose/runtime/RecomposeScopeImpl;", "invalidateScope$runtime_release", "join", "movableContentStateReleased", "data", "movableContentStateReleased$runtime_release", "movableContentStateResolve", "movableContentStateResolve$runtime_release", "pauseCompositionFrameClock", "performInitialMovableContentInserts", "performInsertValues", "references", "performRecompose", "processCompositionError", "e", "Ljava/lang/Exception;", "Lkotlin/Exception;", "failedInitialComposition", "recoverable", "readObserverOf", "Lkotlin/Function1;", "recompositionRunner", "Lkotlin/Function3;", "Lkotlinx/coroutines/CoroutineScope;", "Landroidx/compose/runtime/MonotonicFrameClock;", "Lkotlin/ParameterName;", "name", "parentFrameClock", "Lkotlin/coroutines/Continuation;", "Lkotlin/ExtensionFunctionType;", "(Lkotlin/jvm/functions/Function3;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "recordComposerModifications", "onEachInvalidComposition", "recordInspectionTable", "table", "Landroidx/compose/runtime/tooling/CompositionData;", "recordInspectionTable$runtime_release", "registerComposition", "registerComposition$runtime_release", "registerRunnerJob", "callingJob", "removeKnownCompositionLocked", "reportRemovedComposition", "reportRemovedComposition$runtime_release", "resetErrorState", "resumeCompositionFrameClock", "retryFailedCompositions", "runFrameLoop", "frameSignal", "Landroidx/compose/runtime/ProduceFrameSignal;", "(Landroidx/compose/runtime/MonotonicFrameClock;Landroidx/compose/runtime/ProduceFrameSignal;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "runRecomposeAndApplyChanges", "runRecomposeConcurrentlyAndApplyChanges", "(Lkotlin/coroutines/CoroutineContext;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "unregisterComposition", "unregisterComposition$runtime_release", "writeObserverOf", "Companion", "HotReloadable", "RecomposerErrorState", "RecomposerInfoImpl", "State", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class Recomposer extends CompositionContext {
     private final List<ControlledComposition> _knownCompositions;
@@ -90,13 +90,13 @@ public final class Recomposer extends CompositionContext {
     private final Object stateLock;
     private CancellableContinuation<? super Unit> workContinuation;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public static final int $stable = 8;
     private static final MutableStateFlow<PersistentSet<RecomposerInfoImpl>> _runningRecomposers = StateFlowKt.MutableStateFlow(ExtensionsKt.persistentSetOf());
     private static final AtomicReference<Boolean> _hotReloadEnabled = new AtomicReference<>(false);
 
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\b\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006j\u0002\b\u0007j\u0002\b\b¨\u0006\t"}, d2 = {"Landroidx/compose/runtime/Recomposer$State;", "", "(Ljava/lang/String;I)V", "ShutDown", "ShuttingDown", "Inactive", "InactivePendingWork", "Idle", "PendingWork", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public enum State {
         ShutDown,
@@ -107,8 +107,8 @@ public final class Recomposer extends CompositionContext {
         PendingWork
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.Recomposer$runFrameLoop$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: renamed from: androidx.compose.runtime.Recomposer$runFrameLoop$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.Recomposer", f = "Recomposer.kt", i = {0, 0, 0, 0, 0, 1, 1, 1, 1, 1}, l = {871, 878}, m = "runFrameLoop", n = {"this", "parentFrameClock", "frameSignal", "toRecompose", "toApply", "this", "parentFrameClock", "frameSignal", "toRecompose", "toApply"}, s = {"L$0", "L$1", "L$2", "L$3", "L$4", "L$0", "L$1", "L$2", "L$3", "L$4"})
     static final class C01061 extends ContinuationImpl {
@@ -137,19 +137,19 @@ public final class Recomposer extends CompositionContext {
     }
 
     @Override // androidx.compose.runtime.CompositionContext
-    /* JADX INFO: renamed from: getCollectingParameterInformation$runtime_release */
+    /* INFO: renamed from: getCollectingParameterInformation$runtime_release */
     public boolean getCollectingParameterInformation() {
         return false;
     }
 
     @Override // androidx.compose.runtime.CompositionContext
-    /* JADX INFO: renamed from: getCollectingSourceInformation$runtime_release */
+    /* INFO: renamed from: getCollectingSourceInformation$runtime_release */
     public boolean getCollectingSourceInformation() {
         return false;
     }
 
     @Override // androidx.compose.runtime.CompositionContext
-    /* JADX INFO: renamed from: getCompoundHashKey$runtime_release */
+    /* INFO: renamed from: getCompoundHashKey$runtime_release */
     public int getCompoundHashKey() {
         return 1000;
     }
@@ -185,7 +185,7 @@ public final class Recomposer extends CompositionContext {
         return this.changeCount;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final List<ControlledComposition> getKnownCompositions() {
         List listEmptyList = this._knownCompositionsCache;
         if (listEmptyList == null) {
@@ -210,7 +210,7 @@ public final class Recomposer extends CompositionContext {
         return !this.frameClockPaused && this.broadcastFrameClock.getHasAwaiters();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean getHasBroadcastFrameClockAwaiters() {
         boolean hasBroadcastFrameClockAwaitersLocked;
         synchronized (this.stateLock) {
@@ -219,7 +219,7 @@ public final class Recomposer extends CompositionContext {
         return hasBroadcastFrameClockAwaitersLocked;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final CancellableContinuation<Unit> deriveStateLocked() {
         State state;
         if (this._state.getValue().compareTo(State.ShuttingDown) <= 0) {
@@ -257,7 +257,7 @@ public final class Recomposer extends CompositionContext {
         return cancellableContinuation2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean getShouldKeepRecomposing() {
         boolean z;
         synchronized (this.stateLock) {
@@ -283,7 +283,7 @@ public final class Recomposer extends CompositionContext {
         return this._state;
     }
 
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\b\u0082\u0004\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0017J\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019J\u0006\u0010\u001a\u001a\u00020\u0015J\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u001d0\u001cR\u0014\u0010\u0003\u001a\u00020\u00048VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006R\u0013\u0010\u0007\u001a\u0004\u0018\u00010\b8F¢\u0006\u0006\u001a\u0004\b\t\u0010\nR\u0014\u0010\u000b\u001a\u00020\f8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\u000eR\u001a\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00110\u00108VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0012\u0010\u0013¨\u0006\u001e"}, d2 = {"Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;", "Landroidx/compose/runtime/RecomposerInfo;", "(Landroidx/compose/runtime/Recomposer;)V", "changeCount", "", "getChangeCount", "()J", "currentError", "Landroidx/compose/runtime/RecomposerErrorInfo;", "getCurrentError", "()Landroidx/compose/runtime/RecomposerErrorInfo;", "hasPendingWork", "", "getHasPendingWork", "()Z", "state", "Lkotlinx/coroutines/flow/Flow;", "Landroidx/compose/runtime/Recomposer$State;", "getState", "()Lkotlinx/coroutines/flow/Flow;", "invalidateGroupsWithKey", "", "key", "", "resetErrorState", "Landroidx/compose/runtime/Recomposer$RecomposerErrorState;", "retryFailedCompositions", "saveStateAndDisposeForHotReload", "", "Landroidx/compose/runtime/Recomposer$HotReloadable;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     private final class RecomposerInfoImpl implements RecomposerInfo {
         public RecomposerInfoImpl() {
@@ -373,7 +373,7 @@ public final class Recomposer extends CompositionContext {
         }
     }
 
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0002\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0006\u0010\n\u001a\u00020\u0007J\u0006\u0010\u000b\u001a\u00020\u0007J\u0006\u0010\f\u001a\u00020\u0007R\u001b\u0010\u0005\u001a\r\u0012\u0004\u0012\u00020\u00070\u0006¢\u0006\u0002\b\bX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\tR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\r"}, d2 = {"Landroidx/compose/runtime/Recomposer$HotReloadable;", "", "composition", "Landroidx/compose/runtime/CompositionImpl;", "(Landroidx/compose/runtime/CompositionImpl;)V", "composable", "Lkotlin/Function0;", "", "Landroidx/compose/runtime/Composable;", "Lkotlin/jvm/functions/Function2;", "clearContent", "recompose", "resetContent", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     private static final class HotReloadable {
         private Function2<? super Composer, ? super Integer, Unit> composable;
@@ -401,7 +401,7 @@ public final class Recomposer extends CompositionContext {
         }
     }
 
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0002\u0018\u00002\u00020\u0001B\u0019\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\n\u0010\u0004\u001a\u00060\u0005j\u0002`\u0006¢\u0006\u0002\u0010\u0007R\u0018\u0010\u0004\u001a\u00060\u0005j\u0002`\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000b¨\u0006\f"}, d2 = {"Landroidx/compose/runtime/Recomposer$RecomposerErrorState;", "Landroidx/compose/runtime/RecomposerErrorInfo;", "recoverable", "", "cause", "Ljava/lang/Exception;", "Lkotlin/Exception;", "(ZLjava/lang/Exception;)V", "getCause", "()Ljava/lang/Exception;", "getRecoverable", "()Z", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     private static final class RecomposerErrorState implements RecomposerErrorInfo {
         private final Exception cause;
@@ -427,7 +427,7 @@ public final class Recomposer extends CompositionContext {
         return this.recomposerInfo;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean recordComposerModifications() {
         List<ControlledComposition> knownCompositions;
         boolean hasFrameWorkLocked;
@@ -488,7 +488,7 @@ public final class Recomposer extends CompositionContext {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void registerRunnerJob(Job callingJob) {
         synchronized (this.stateLock) {
             Throwable th = this.closeCause;
@@ -506,8 +506,8 @@ public final class Recomposer extends CompositionContext {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: renamed from: androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;", "parentFrameClock", "Landroidx/compose/runtime/MonotonicFrameClock;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2", f = "Recomposer.kt", i = {0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1}, l = {540, 551}, m = "invokeSuspend", n = {"parentFrameClock", "toRecompose", "toInsert", "toApply", "toLateApply", "toComplete", "modifiedValues", "alreadyComposed", "parentFrameClock", "toRecompose", "toInsert", "toApply", "toLateApply", "toComplete", "modifiedValues", "alreadyComposed"}, s = {"L$0", "L$1", "L$2", "L$3", "L$4", "L$5", "L$6", "L$7", "L$0", "L$1", "L$2", "L$3", "L$4", "L$5", "L$6", "L$7"})
     static final class C01082 extends SuspendLambda implements Function3<CoroutineScope, MonotonicFrameClock, Continuation<? super Unit>, Object> {
@@ -532,18 +532,18 @@ public final class Recomposer extends CompositionContext {
             return c01082.invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Code duplicated, block: B:14:0x00af  */
-        /* JADX WARN: Code duplicated, block: B:17:0x00cd  */
-        /* JADX WARN: Code duplicated, block: B:20:0x00dd  */
-        /* JADX WARN: Code duplicated, block: B:23:0x0102  */
-        /* JADX WARN: Code duplicated, block: B:25:0x0110  */
-        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:23:0x0102 -> B:24:0x010a). Please report as a decompilation issue!!! */
-        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:25:0x0110 -> B:12:0x00a7). Please report as a decompilation issue!!! */
-        /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-            jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
-            	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-            	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-            	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+        /* WARN: Code duplicated, block: B:14:0x00af  */
+        /* WARN: Code duplicated, block: B:17:0x00cd  */
+        /* WARN: Code duplicated, block: B:20:0x00dd  */
+        /* WARN: Code duplicated, block: B:23:0x0102  */
+        /* WARN: Code duplicated, block: B:25:0x0110  */
+        /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:23:0x0102 -> B:24:0x010a). Please report as a decompilation issue!!! */
+        /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:25:0x0110 -> B:12:0x00a7). Please report as a decompilation issue!!! */
+        /* ERROR: decompilerOverflowException in pass: RegionMakerVisitor
+            decompiler.core.utils.exceptions.decompilerOverflowException: Regions stack size limit reached
+            	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+            	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+            	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final java.lang.Object invokeSuspend(java.lang.Object r15) {
@@ -554,7 +554,7 @@ public final class Recomposer extends CompositionContext {
             throw new UnsupportedOperationException("Method not decompiled: androidx.compose.runtime.Recomposer.C01082.invokeSuspend(java.lang.Object):java.lang.Object");
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static final void invokeSuspend$clearRecompositionState(List<ControlledComposition> list, List<MovableContentStateReference> list2, List<ControlledComposition> list3, Set<ControlledComposition> set, Set<ControlledComposition> set2, IdentityArraySet<Object> identityArraySet, IdentityArraySet<ControlledComposition> identityArraySet2) {
             list.clear();
             list2.clear();
@@ -565,7 +565,7 @@ public final class Recomposer extends CompositionContext {
             identityArraySet2.clear();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static final void invokeSuspend$fillToInsert(List<MovableContentStateReference> list, Recomposer recomposer) {
             list.clear();
             synchronized (recomposer.stateLock) {
@@ -579,8 +579,8 @@ public final class Recomposer extends CompositionContext {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1, reason: invalid class name */
-        /* JADX INFO: compiled from: Recomposer.kt */
+        /* INFO: renamed from: androidx.compose.runtime.Recomposer$runRecomposeAndApplyChanges$2$1, reason: invalid class name */
+        /* INFO: compiled from: Recomposer.kt */
         @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "frameTime", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
         static final class AnonymousClass1 extends Lambda implements Function1<Long, Unit> {
             final /* synthetic */ IdentityArraySet<ControlledComposition> $alreadyComposed;
@@ -592,7 +592,7 @@ public final class Recomposer extends CompositionContext {
             final /* synthetic */ List<ControlledComposition> $toRecompose;
             final /* synthetic */ Recomposer this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(Recomposer recomposer, IdentityArraySet<Object> identityArraySet, IdentityArraySet<ControlledComposition> identityArraySet2, List<ControlledComposition> list, List<MovableContentStateReference> list2, Set<ControlledComposition> set, List<ControlledComposition> list3, Set<ControlledComposition> set2) {
                 super(1);
                 this.this$0 = recomposer;
@@ -611,13 +611,13 @@ public final class Recomposer extends CompositionContext {
                 return Unit.INSTANCE;
             }
 
-            /* JADX WARN: Code duplicated, block: B:170:0x00f9 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-            /* JADX WARN: Code duplicated, block: B:180:0x0183 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-            /* JADX WARN: Code duplicated, block: B:183:0x0144 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-            /* JADX WARN: Code duplicated, block: B:56:0x010f A[Catch: all -> 0x011d, Exception -> 0x011f, TRY_LEAVE, TryCatch #9 {Exception -> 0x011f, blocks: (B:53:0x00f9, B:54:0x0109, B:56:0x010f), top: B:170:0x00f9, outer: #8 }] */
-            /* JADX WARN: Code duplicated, block: B:73:0x013b A[Catch: all -> 0x0250, TRY_LEAVE, TryCatch #8 {all -> 0x0250, blocks: (B:11:0x0049, B:12:0x0050, B:17:0x0074, B:18:0x0075, B:19:0x007b, B:21:0x0084, B:24:0x008f, B:26:0x0098, B:34:0x00c8, B:49:0x00ec, B:50:0x00ef, B:44:0x00e1, B:51:0x00f0, B:58:0x0119, B:73:0x013b, B:80:0x015b, B:95:0x017e, B:96:0x0182, B:98:0x0186, B:99:0x0187, B:101:0x019b, B:102:0x019c, B:93:0x017a, B:94:0x017d, B:90:0x0173, B:71:0x0137, B:72:0x013a, B:68:0x0131, B:109:0x01bc, B:111:0x01c5, B:112:0x01c9, B:122:0x01f5, B:125:0x01f8, B:126:0x01f9, B:127:0x01fa, B:129:0x0200, B:130:0x0203, B:132:0x020c, B:136:0x0222, B:147:0x0249, B:148:0x024c, B:145:0x0243, B:150:0x024e, B:151:0x024f, B:13:0x0051, B:15:0x005c, B:16:0x006b, B:53:0x00f9, B:54:0x0109, B:56:0x010f, B:113:0x01ca, B:115:0x01d5, B:117:0x01e1, B:119:0x01ea, B:120:0x01f0, B:121:0x01f3, B:97:0x0183, B:75:0x0144, B:76:0x014b, B:78:0x0151), top: B:169:0x0049, inners: #5, #9, #10, #12, #14, #16 }] */
-            /* JADX WARN: Code duplicated, block: B:78:0x0151 A[Catch: all -> 0x015f, Exception -> 0x0161, TRY_LEAVE, TryCatch #16 {Exception -> 0x0161, blocks: (B:75:0x0144, B:76:0x014b, B:78:0x0151), top: B:183:0x0144, outer: #8 }] */
-            /* JADX WARN: Code duplicated, block: B:95:0x017e A[Catch: all -> 0x0250, TryCatch #8 {all -> 0x0250, blocks: (B:11:0x0049, B:12:0x0050, B:17:0x0074, B:18:0x0075, B:19:0x007b, B:21:0x0084, B:24:0x008f, B:26:0x0098, B:34:0x00c8, B:49:0x00ec, B:50:0x00ef, B:44:0x00e1, B:51:0x00f0, B:58:0x0119, B:73:0x013b, B:80:0x015b, B:95:0x017e, B:96:0x0182, B:98:0x0186, B:99:0x0187, B:101:0x019b, B:102:0x019c, B:93:0x017a, B:94:0x017d, B:90:0x0173, B:71:0x0137, B:72:0x013a, B:68:0x0131, B:109:0x01bc, B:111:0x01c5, B:112:0x01c9, B:122:0x01f5, B:125:0x01f8, B:126:0x01f9, B:127:0x01fa, B:129:0x0200, B:130:0x0203, B:132:0x020c, B:136:0x0222, B:147:0x0249, B:148:0x024c, B:145:0x0243, B:150:0x024e, B:151:0x024f, B:13:0x0051, B:15:0x005c, B:16:0x006b, B:53:0x00f9, B:54:0x0109, B:56:0x010f, B:113:0x01ca, B:115:0x01d5, B:117:0x01e1, B:119:0x01ea, B:120:0x01f0, B:121:0x01f3, B:97:0x0183, B:75:0x0144, B:76:0x014b, B:78:0x0151), top: B:169:0x0049, inners: #5, #9, #10, #12, #14, #16 }] */
+            /* WARN: Code duplicated, block: B:170:0x00f9 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+            /* WARN: Code duplicated, block: B:180:0x0183 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+            /* WARN: Code duplicated, block: B:183:0x0144 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+            /* WARN: Code duplicated, block: B:56:0x010f A[Catch: all -> 0x011d, Exception -> 0x011f, TRY_LEAVE, TryCatch #9 {Exception -> 0x011f, blocks: (B:53:0x00f9, B:54:0x0109, B:56:0x010f), top: B:170:0x00f9, outer: #8 }] */
+            /* WARN: Code duplicated, block: B:73:0x013b A[Catch: all -> 0x0250, TRY_LEAVE, TryCatch #8 {all -> 0x0250, blocks: (B:11:0x0049, B:12:0x0050, B:17:0x0074, B:18:0x0075, B:19:0x007b, B:21:0x0084, B:24:0x008f, B:26:0x0098, B:34:0x00c8, B:49:0x00ec, B:50:0x00ef, B:44:0x00e1, B:51:0x00f0, B:58:0x0119, B:73:0x013b, B:80:0x015b, B:95:0x017e, B:96:0x0182, B:98:0x0186, B:99:0x0187, B:101:0x019b, B:102:0x019c, B:93:0x017a, B:94:0x017d, B:90:0x0173, B:71:0x0137, B:72:0x013a, B:68:0x0131, B:109:0x01bc, B:111:0x01c5, B:112:0x01c9, B:122:0x01f5, B:125:0x01f8, B:126:0x01f9, B:127:0x01fa, B:129:0x0200, B:130:0x0203, B:132:0x020c, B:136:0x0222, B:147:0x0249, B:148:0x024c, B:145:0x0243, B:150:0x024e, B:151:0x024f, B:13:0x0051, B:15:0x005c, B:16:0x006b, B:53:0x00f9, B:54:0x0109, B:56:0x010f, B:113:0x01ca, B:115:0x01d5, B:117:0x01e1, B:119:0x01ea, B:120:0x01f0, B:121:0x01f3, B:97:0x0183, B:75:0x0144, B:76:0x014b, B:78:0x0151), top: B:169:0x0049, inners: #5, #9, #10, #12, #14, #16 }] */
+            /* WARN: Code duplicated, block: B:78:0x0151 A[Catch: all -> 0x015f, Exception -> 0x0161, TRY_LEAVE, TryCatch #16 {Exception -> 0x0161, blocks: (B:75:0x0144, B:76:0x014b, B:78:0x0151), top: B:183:0x0144, outer: #8 }] */
+            /* WARN: Code duplicated, block: B:95:0x017e A[Catch: all -> 0x0250, TryCatch #8 {all -> 0x0250, blocks: (B:11:0x0049, B:12:0x0050, B:17:0x0074, B:18:0x0075, B:19:0x007b, B:21:0x0084, B:24:0x008f, B:26:0x0098, B:34:0x00c8, B:49:0x00ec, B:50:0x00ef, B:44:0x00e1, B:51:0x00f0, B:58:0x0119, B:73:0x013b, B:80:0x015b, B:95:0x017e, B:96:0x0182, B:98:0x0186, B:99:0x0187, B:101:0x019b, B:102:0x019c, B:93:0x017a, B:94:0x017d, B:90:0x0173, B:71:0x0137, B:72:0x013a, B:68:0x0131, B:109:0x01bc, B:111:0x01c5, B:112:0x01c9, B:122:0x01f5, B:125:0x01f8, B:126:0x01f9, B:127:0x01fa, B:129:0x0200, B:130:0x0203, B:132:0x020c, B:136:0x0222, B:147:0x0249, B:148:0x024c, B:145:0x0243, B:150:0x024e, B:151:0x024f, B:13:0x0051, B:15:0x005c, B:16:0x006b, B:53:0x00f9, B:54:0x0109, B:56:0x010f, B:113:0x01ca, B:115:0x01d5, B:117:0x01e1, B:119:0x01ea, B:120:0x01f0, B:121:0x01f3, B:97:0x0183, B:75:0x0144, B:76:0x014b, B:78:0x0151), top: B:169:0x0049, inners: #5, #9, #10, #12, #14, #16 }] */
             public final void invoke(long j) {
                 List<ControlledComposition> list;
                 Iterator<T> it;
@@ -975,7 +975,7 @@ public final class Recomposer extends CompositionContext {
         this._knownCompositionsCache = null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final RecomposerErrorState resetErrorState() {
         RecomposerErrorState recomposerErrorState;
         synchronized (this.stateLock) {
@@ -988,7 +988,7 @@ public final class Recomposer extends CompositionContext {
         return recomposerErrorState;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void retryFailedCompositions() {
         List<ControlledComposition> list;
         synchronized (this.stateLock) {
@@ -1041,8 +1041,8 @@ public final class Recomposer extends CompositionContext {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.Recomposer$runRecomposeConcurrentlyAndApplyChanges$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: renamed from: androidx.compose.runtime.Recomposer$runRecomposeConcurrentlyAndApplyChanges$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;", "parentFrameClock", "Landroidx/compose/runtime/MonotonicFrameClock;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.Recomposer$runRecomposeConcurrentlyAndApplyChanges$2", f = "Recomposer.kt", i = {0, 0, 0, 1}, l = {840, 860, 861}, m = "invokeSuspend", n = {"recomposeCoroutineScope", "frameSignal", "frameLoop", "frameLoop"}, s = {"L$0", "L$1", "L$2", "L$0"})
     static final class C01092 extends SuspendLambda implements Function3<CoroutineScope, MonotonicFrameClock, Continuation<? super Unit>, Object> {
@@ -1053,7 +1053,7 @@ public final class Recomposer extends CompositionContext {
         int label;
         final /* synthetic */ Recomposer this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01092(CoroutineContext coroutineContext, Recomposer recomposer, Continuation<? super C01092> continuation) {
             super(3, continuation);
             this.$recomposeCoroutineContext = coroutineContext;
@@ -1068,19 +1068,19 @@ public final class Recomposer extends CompositionContext {
             return c01092.invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Code duplicated, block: B:21:0x009b  */
-        /* JADX WARN: Code duplicated, block: B:57:0x015e  */
-        /* JADX WARN: Code duplicated, block: B:60:0x0178 A[PHI: r2
+        /* WARN: Code duplicated, block: B:21:0x009b  */
+        /* WARN: Code duplicated, block: B:57:0x015e  */
+        /* WARN: Code duplicated, block: B:60:0x0178 A[PHI: r2
   0x0178: PHI (r2v14 kotlinx.coroutines.Job) = (r2v10 kotlinx.coroutines.Job), (r2v19 kotlinx.coroutines.Job) binds: [B:58:0x0175, B:10:0x0021] A[DONT_GENERATE, DONT_INLINE]] */
-        /* JADX WARN: Code restructure failed: missing block: B:22:0x00ac, code lost:
+        /* WARN: Code restructure failed: missing block: B:22:0x00ac, code lost:
         
             if (r18.this$0.awaitWorkAvailable(r18) == r0) goto L62;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:61:0x0183, code lost:
+        /* WARN: Code restructure failed: missing block: B:61:0x0183, code lost:
         
             if (kotlinx.coroutines.JobKt.cancelAndJoin(r2, r18) == r0) goto L62;
          */
-        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:22:0x00ac -> B:24:0x00b0). Please report as a decompilation issue!!! */
+        /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:22:0x00ac -> B:24:0x00b0). Please report as a decompilation issue!!! */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
             Code decompiled incorrectly, please refer to instructions dump.
@@ -1100,14 +1100,14 @@ public final class Recomposer extends CompositionContext {
         return objRecompositionRunner == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objRecompositionRunner : Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:21:0x008d  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:23:0x00a9, code lost:
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:21:0x008d  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:23:0x00a9, code lost:
     
         if (r5.withFrameNanos(r10, r0) == r1) goto L24;
      */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:23:0x00a9 -> B:13:0x0040). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:23:0x00a9 -> B:13:0x0040). Please report as a decompilation issue!!! */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -1219,15 +1219,15 @@ public final class Recomposer extends CompositionContext {
         throw new UnsupportedOperationException("Method not decompiled: androidx.compose.runtime.Recomposer.runFrameLoop(androidx.compose.runtime.MonotonicFrameClock, androidx.compose.runtime.ProduceFrameSignal, kotlin.coroutines.Continuation):java.lang.Object");
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.Recomposer$runFrameLoop$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: renamed from: androidx.compose.runtime.Recomposer$runFrameLoop$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0000\u0010\u0000\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "Lkotlinx/coroutines/CancellableContinuation;", "", "frameTime", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01072 extends Lambda implements Function1<Long, CancellableContinuation<? super Unit>> {
         final /* synthetic */ ProduceFrameSignal $frameSignal;
         final /* synthetic */ List<ControlledComposition> $toApply;
         final /* synthetic */ List<ControlledComposition> $toRecompose;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01072(List<ControlledComposition> list, List<ControlledComposition> list2, ProduceFrameSignal produceFrameSignal) {
             super(1);
             this.$toRecompose = list;
@@ -1318,7 +1318,7 @@ public final class Recomposer extends CompositionContext {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean getHasSchedulingWork() {
         boolean z;
         synchronized (this.stateLock) {
@@ -1327,7 +1327,7 @@ public final class Recomposer extends CompositionContext {
         return z;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final Object awaitWorkAvailable(Continuation<? super Unit> continuation) {
         if (getHasSchedulingWork()) {
             return Unit.INSTANCE;
@@ -1352,8 +1352,8 @@ public final class Recomposer extends CompositionContext {
         return result == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? result : Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.Recomposer$recompositionRunner$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: renamed from: androidx.compose.runtime.Recomposer$recompositionRunner$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.Recomposer$recompositionRunner$2", f = "Recomposer.kt", i = {0, 0}, l = {PointerIconCompat.TYPE_HELP}, m = "invokeSuspend", n = {"callingJob", "unregisterApplyObserver"}, s = {"L$0", "L$1"})
     static final class C01052 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -1363,8 +1363,8 @@ public final class Recomposer extends CompositionContext {
         Object L$1;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C01052(Function3<? super CoroutineScope, ? super MonotonicFrameClock, ? super Continuation<? super Unit>, ? extends Object> function3, MonotonicFrameClock monotonicFrameClock, Continuation<? super C01052> continuation) {
             super(2, continuation);
             this.$block = function3;
@@ -1383,10 +1383,10 @@ public final class Recomposer extends CompositionContext {
             return ((C01052) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Code duplicated, block: B:28:0x00a1 A[Catch: all -> 0x00b6, TryCatch #1 {, blocks: (B:26:0x009b, B:28:0x00a1, B:29:0x00a4), top: B:55:0x009b }] */
-        /* JADX WARN: Code duplicated, block: B:45:0x00d2 A[Catch: all -> 0x00e5, TryCatch #0 {, blocks: (B:43:0x00cc, B:45:0x00d2, B:46:0x00d5), top: B:53:0x00cc }] */
-        /* JADX WARN: Code duplicated, block: B:53:0x00cc A[EXC_TOP_SPLITTER, SYNTHETIC] */
-        /* JADX WARN: Code duplicated, block: B:55:0x009b A[EXC_TOP_SPLITTER, SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:28:0x00a1 A[Catch: all -> 0x00b6, TryCatch #1 {, blocks: (B:26:0x009b, B:28:0x00a1, B:29:0x00a4), top: B:55:0x009b }] */
+        /* WARN: Code duplicated, block: B:45:0x00d2 A[Catch: all -> 0x00e5, TryCatch #0 {, blocks: (B:43:0x00cc, B:45:0x00d2, B:46:0x00d5), top: B:53:0x00cc }] */
+        /* WARN: Code duplicated, block: B:53:0x00cc A[EXC_TOP_SPLITTER, SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:55:0x009b A[EXC_TOP_SPLITTER, SYNTHETIC] */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Object invokeSuspend(Object obj) throws Throwable {
             Job job;
@@ -1483,8 +1483,8 @@ public final class Recomposer extends CompositionContext {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.compose.runtime.Recomposer$recompositionRunner$2$3, reason: invalid class name */
-        /* JADX INFO: compiled from: Recomposer.kt */
+        /* INFO: renamed from: androidx.compose.runtime.Recomposer$recompositionRunner$2$3, reason: invalid class name */
+        /* INFO: compiled from: Recomposer.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
         @DebugMetadata(c = "androidx.compose.runtime.Recomposer$recompositionRunner$2$3", f = "Recomposer.kt", i = {}, l = {PointerIconCompat.TYPE_WAIT}, m = "invokeSuspend", n = {}, s = {})
         static final class AnonymousClass3 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -1493,8 +1493,8 @@ public final class Recomposer extends CompositionContext {
             private /* synthetic */ Object L$0;
             int label;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             AnonymousClass3(Function3<? super CoroutineScope, ? super MonotonicFrameClock, ? super Continuation<? super Unit>, ? extends Object> function3, MonotonicFrameClock monotonicFrameClock, Continuation<? super AnonymousClass3> continuation) {
                 super(2, continuation);
                 this.$block = function3;
@@ -1537,7 +1537,7 @@ public final class Recomposer extends CompositionContext {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final Object recompositionRunner(Function3<? super CoroutineScope, ? super MonotonicFrameClock, ? super Continuation<? super Unit>, ? extends Object> function3, Continuation<? super Unit> continuation) {
         Object objWithContext = BuildersKt.withContext(this.broadcastFrameClock, new C01052(function3, MonotonicFrameClockKt.getMonotonicFrameClock(continuation.getContext()), null), continuation);
         return objWithContext == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objWithContext : Unit.INSTANCE;
@@ -1562,8 +1562,8 @@ public final class Recomposer extends CompositionContext {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.Recomposer$join$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: renamed from: androidx.compose.runtime.Recomposer$join$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", "it", "Landroidx/compose/runtime/Recomposer$State;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.Recomposer$join$2", f = "Recomposer.kt", i = {}, l = {}, m = "invokeSuspend", n = {}, s = {})
     static final class C01042 extends SuspendLambda implements Function2<State, Continuation<? super Boolean>, Object> {
@@ -1709,7 +1709,7 @@ public final class Recomposer extends CompositionContext {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final ControlledComposition performRecompose(ControlledComposition composition, IdentityArraySet<Object> modifiedValues) {
         Set<ControlledComposition> set;
         if (composition.isComposing() || composition.getDisposed() || ((set = this.compositionsRemoved) != null && set.contains(composition))) {
@@ -1742,7 +1742,7 @@ public final class Recomposer extends CompositionContext {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void discardUnusedValues() {
         int i;
         ArrayList arrayListEmptyList;
@@ -1773,13 +1773,13 @@ public final class Recomposer extends CompositionContext {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.Recomposer$readObserverOf$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: renamed from: androidx.compose.runtime.Recomposer$readObserverOf$1, reason: invalid class name */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "value", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<Object, Unit> {
         final /* synthetic */ ControlledComposition $composition;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(ControlledComposition controlledComposition) {
             super(1);
             this.$composition = controlledComposition;
@@ -1791,7 +1791,7 @@ public final class Recomposer extends CompositionContext {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Object obj) {
             this.$composition.recordReadOf(obj);
         }
@@ -1801,14 +1801,14 @@ public final class Recomposer extends CompositionContext {
         return new AnonymousClass1(composition);
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.Recomposer$writeObserverOf$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: renamed from: androidx.compose.runtime.Recomposer$writeObserverOf$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "value", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01101 extends Lambda implements Function1<Object, Unit> {
         final /* synthetic */ ControlledComposition $composition;
         final /* synthetic */ IdentityArraySet<Object> $modifiedValues;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01101(ControlledComposition controlledComposition, IdentityArraySet<Object> identityArraySet) {
             super(1);
             this.$composition = controlledComposition;
@@ -1821,7 +1821,7 @@ public final class Recomposer extends CompositionContext {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Object obj) {
             this.$composition.recordWriteOf(obj);
             IdentityArraySet<Object> identityArraySet = this.$modifiedValues;
@@ -1879,13 +1879,13 @@ public final class Recomposer extends CompositionContext {
         return !this.compositionInvalidations.isEmpty() || getHasBroadcastFrameClockAwaitersLocked();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean getHasConcurrentFrameWorkLocked() {
         return !this.compositionsAwaitingApply.isEmpty() || getHasBroadcastFrameClockAwaitersLocked();
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.Recomposer$awaitIdle$2, reason: invalid class name */
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: renamed from: androidx.compose.runtime.Recomposer$awaitIdle$2, reason: invalid class name */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", "it", "Landroidx/compose/runtime/Recomposer$State;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.Recomposer$awaitIdle$2", f = "Recomposer.kt", i = {}, l = {}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass2 extends SuspendLambda implements Function2<State, Continuation<? super Boolean>, Object> {
@@ -2036,7 +2036,7 @@ public final class Recomposer extends CompositionContext {
         return movableContentStateRemove;
     }
 
-    /* JADX INFO: compiled from: Recomposer.kt */
+    /* INFO: compiled from: Recomposer.kt */
     @Metadata(d1 = {"\u0000Z\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\"\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u000b\b\u0087\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0014\u0010\u0013\u001a\u00020\u00142\n\u0010\u0015\u001a\u00060\u000bR\u00020\fH\u0002J\r\u0010\u0016\u001a\u00020\u0014H\u0000¢\u0006\u0002\b\u0017J\u0013\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\u001a0\u0019H\u0000¢\u0006\u0002\b\u001bJ\u0015\u0010\u001c\u001a\u00020\u00142\u0006\u0010\u001d\u001a\u00020\u001eH\u0000¢\u0006\u0002\b\u001fJ\u0015\u0010 \u001a\u00020\u00142\u0006\u0010!\u001a\u00020\u0001H\u0000¢\u0006\u0002\b\"J\u0014\u0010#\u001a\u00020\u00142\n\u0010\u0015\u001a\u00060\u000bR\u00020\fH\u0002J\r\u0010$\u001a\u00020\u0001H\u0000¢\u0006\u0002\b%J\u0015\u0010&\u001a\u00020\u00142\u0006\u0010'\u001a\u00020\u0005H\u0000¢\u0006\u0002\b(R.\u0010\u0003\u001a\"\u0012\f\u0012\n \u0006*\u0004\u0018\u00010\u00050\u00050\u0004j\u0010\u0012\f\u0012\n \u0006*\u0004\u0018\u00010\u00050\u0005`\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u001e\u0010\b\u001a\u0012\u0012\u000e\u0012\f\u0012\b\u0012\u00060\u000bR\u00020\f0\n0\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u001d\u0010\r\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00100\u000f0\u000e8F¢\u0006\u0006\u001a\u0004\b\u0011\u0010\u0012¨\u0006)"}, d2 = {"Landroidx/compose/runtime/Recomposer$Companion;", "", "()V", "_hotReloadEnabled", "Ljava/util/concurrent/atomic/AtomicReference;", "", "kotlin.jvm.PlatformType", "Landroidx/compose/runtime/AtomicReference;", "_runningRecomposers", "Lkotlinx/coroutines/flow/MutableStateFlow;", "Landroidx/compose/runtime/external/kotlinx/collections/immutable/PersistentSet;", "Landroidx/compose/runtime/Recomposer$RecomposerInfoImpl;", "Landroidx/compose/runtime/Recomposer;", "runningRecomposers", "Lkotlinx/coroutines/flow/StateFlow;", "", "Landroidx/compose/runtime/RecomposerInfo;", "getRunningRecomposers", "()Lkotlinx/coroutines/flow/StateFlow;", "addRunning", "", "info", "clearErrors", "clearErrors$runtime_release", "getCurrentErrors", "", "Landroidx/compose/runtime/RecomposerErrorInfo;", "getCurrentErrors$runtime_release", "invalidateGroupsWithKey", "key", "", "invalidateGroupsWithKey$runtime_release", "loadStateAndComposeForHotReload", "token", "loadStateAndComposeForHotReload$runtime_release", "removeRunning", "saveStateAndDisposeForHotReload", "saveStateAndDisposeForHotReload$runtime_release", "setHotReloadEnabled", "value", "setHotReloadEnabled$runtime_release", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -2054,7 +2054,7 @@ public final class Recomposer extends CompositionContext {
             Recomposer._hotReloadEnabled.set(Boolean.valueOf(value));
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final void addRunning(RecomposerInfoImpl info) {
             PersistentSet persistentSet;
             PersistentSet persistentSetAdd;
@@ -2067,7 +2067,7 @@ public final class Recomposer extends CompositionContext {
             } while (!Recomposer._runningRecomposers.compareAndSet(persistentSet, persistentSetAdd));
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final void removeRunning(RecomposerInfoImpl info) {
             PersistentSet persistentSet;
             PersistentSet persistentSetRemove;
@@ -2151,7 +2151,7 @@ public final class Recomposer extends CompositionContext {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final List<ControlledComposition> performInsertValues(List<MovableContentStateReference> references, IdentityArraySet<Object> modifiedValues) {
         HashMap map;
         ArrayList arrayList;

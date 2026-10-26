@@ -15,7 +15,7 @@ import androidx.leanback.transition.TransitionListener;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class DetailsOverviewSharedElementHelper extends SharedElementCallback {
     static final boolean DEBUG = false;
     static final String TAG = "DetailsTransitionHelper";
@@ -170,7 +170,7 @@ final class DetailsOverviewSharedElementHelper extends SharedElementCallback {
         viewHolder.mRightPanel.postOnAnimation(new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.DetailsOverviewSharedElementHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.DetailsOverviewSharedElementHelper$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnLayoutChangeListener {
         AnonymousClass1() {
         }
@@ -186,7 +186,7 @@ final class DetailsOverviewSharedElementHelper extends SharedElementCallback {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.DetailsOverviewSharedElementHelper$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.DetailsOverviewSharedElementHelper$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -205,7 +205,7 @@ final class DetailsOverviewSharedElementHelper extends SharedElementCallback {
             DetailsOverviewSharedElementHelper.this.startPostponedEnterTransition();
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.DetailsOverviewSharedElementHelper$2$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.DetailsOverviewSharedElementHelper$2$1, reason: invalid class name */
         class AnonymousClass1 extends TransitionListener {
             AnonymousClass1() {
             }

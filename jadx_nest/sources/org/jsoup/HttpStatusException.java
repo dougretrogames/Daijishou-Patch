@@ -3,7 +3,7 @@ package org.jsoup;
 import java.io.IOException;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpStatusException extends IOException {
     private final int statusCode;
     private final String url;

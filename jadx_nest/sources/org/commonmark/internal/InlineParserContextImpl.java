@@ -6,7 +6,7 @@ import org.commonmark.node.LinkReferenceDefinition;
 import org.commonmark.parser.InlineParserContext;
 import org.commonmark.parser.delimiter.DelimiterProcessor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class InlineParserContextImpl implements InlineParserContext {
     private final List<DelimiterProcessor> delimiterProcessors;
     private final Map<String, LinkReferenceDefinition> linkReferenceDefinitions;

@@ -28,7 +28,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Registry {
     public static final String BUCKET_ANIMATION = "Animation";
     private static final String BUCKET_APPEND_ALL = "legacy_append";

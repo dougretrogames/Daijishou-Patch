@@ -5,7 +5,7 @@ import java.util.Map;
 import org.eclipse.jgit.merge.ResolveMerger;
 import org.eclipse.jgit.revwalk.RevCommit;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RebaseResult {
     private List<String> conflicts;
     private final RevCommit currentCommit;
@@ -20,8 +20,8 @@ public class RebaseResult {
     static final RebaseResult INTERACTIVE_PREPARED_RESULT = new RebaseResult(Status.INTERACTIVE_PREPARED);
     static final RebaseResult STASH_APPLY_CONFLICTS_RESULT = new RebaseResult(Status.STASH_APPLY_CONFLICTS);
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     public static abstract class Status {
         public static final Status ABORTED;
         public static final Status CONFLICTS;
@@ -87,7 +87,7 @@ public class RebaseResult {
             ENUM$VALUES = new Status[]{anonymousClass1, anonymousClass2, anonymousClass3, anonymousClass4, anonymousClass5, anonymousClass6, anonymousClass7, anonymousClass8, anonymousClass9, anonymousClass10, anonymousClass11, anonymousClass12};
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$1, reason: invalid class name */
         final enum AnonymousClass1 extends Status {
             @Override // org.eclipse.jgit.api.RebaseResult.Status
             public boolean isSuccessful() {
@@ -99,7 +99,7 @@ public class RebaseResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$2, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$2, reason: invalid class name */
         final enum AnonymousClass2 extends Status {
             @Override // org.eclipse.jgit.api.RebaseResult.Status
             public boolean isSuccessful() {
@@ -111,7 +111,7 @@ public class RebaseResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$3, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$3, reason: invalid class name */
         final enum AnonymousClass3 extends Status {
             @Override // org.eclipse.jgit.api.RebaseResult.Status
             public boolean isSuccessful() {
@@ -123,7 +123,7 @@ public class RebaseResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$4, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$4, reason: invalid class name */
         final enum AnonymousClass4 extends Status {
             @Override // org.eclipse.jgit.api.RebaseResult.Status
             public boolean isSuccessful() {
@@ -135,7 +135,7 @@ public class RebaseResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$5, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$5, reason: invalid class name */
         final enum AnonymousClass5 extends Status {
             @Override // org.eclipse.jgit.api.RebaseResult.Status
             public boolean isSuccessful() {
@@ -147,7 +147,7 @@ public class RebaseResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$6, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$6, reason: invalid class name */
         final enum AnonymousClass6 extends Status {
             @Override // org.eclipse.jgit.api.RebaseResult.Status
             public boolean isSuccessful() {
@@ -159,7 +159,7 @@ public class RebaseResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$7, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$7, reason: invalid class name */
         final enum AnonymousClass7 extends Status {
             @Override // org.eclipse.jgit.api.RebaseResult.Status
             public boolean isSuccessful() {
@@ -171,7 +171,7 @@ public class RebaseResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$8, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$8, reason: invalid class name */
         final enum AnonymousClass8 extends Status {
             @Override // org.eclipse.jgit.api.RebaseResult.Status
             public boolean isSuccessful() {
@@ -183,7 +183,7 @@ public class RebaseResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$9, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$9, reason: invalid class name */
         final enum AnonymousClass9 extends Status {
             @Override // org.eclipse.jgit.api.RebaseResult.Status
             public boolean isSuccessful() {
@@ -195,7 +195,7 @@ public class RebaseResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$10, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$10, reason: invalid class name */
         final enum AnonymousClass10 extends Status {
             @Override // org.eclipse.jgit.api.RebaseResult.Status
             public boolean isSuccessful() {
@@ -207,7 +207,7 @@ public class RebaseResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$11, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$11, reason: invalid class name */
         final enum AnonymousClass11 extends Status {
             @Override // org.eclipse.jgit.api.RebaseResult.Status
             public boolean isSuccessful() {
@@ -219,7 +219,7 @@ public class RebaseResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$12, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.RebaseResult$Status$12, reason: invalid class name */
         final enum AnonymousClass12 extends Status {
             @Override // org.eclipse.jgit.api.RebaseResult.Status
             public boolean isSuccessful() {

@@ -3,7 +3,7 @@ package org.apache.http.impl.conn;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class LoggingOutputStream extends OutputStream {
     private final OutputStream out;
     private final Wire wire;

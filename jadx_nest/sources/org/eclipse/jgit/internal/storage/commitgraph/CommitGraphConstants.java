@@ -1,6 +1,6 @@
 package org.eclipse.jgit.internal.storage.commitgraph;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class CommitGraphConstants {
     static final int CHUNK_ID_BLOOM_FILTER_DATA = 1111769428;
     static final int CHUNK_ID_BLOOM_FILTER_INDEX = 1112097880;

@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.motion.utils;
 
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ArcCurveFit extends CurveFit {
     public static final int ARC_ABOVE = 5;
     public static final int ARC_BELOW = 4;
@@ -303,7 +303,7 @@ public class ArcCurveFit extends CurveFit {
         return this.mTime;
     }
 
-    /* JADX WARN: Code duplicated, block: B:18:0x0033  */
+    /* WARN: Code duplicated, block: B:18:0x0033  */
     public ArcCurveFit(int[] iArr, double[] dArr, double[][] dArr2) {
         this.mTime = dArr;
         this.mArcs = new Arc[dArr.length - 1];

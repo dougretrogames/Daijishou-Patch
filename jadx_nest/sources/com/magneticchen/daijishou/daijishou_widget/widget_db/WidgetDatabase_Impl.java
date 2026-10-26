@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class WidgetDatabase_Impl extends WidgetDatabase {
     private volatile AppShortcutWidgetInstanceDAO _appShortcutWidgetInstanceDAO;
     private volatile ImageBlockWidgetInstanceDAO _imageBlockWidgetInstanceDAO;
@@ -28,7 +28,7 @@ public final class WidgetDatabase_Impl extends WidgetDatabase {
     private volatile RSSWidgetInstanceDAO _rSSWidgetInstanceDAO;
     private volatile WidgetInstanceDAO _widgetInstanceDAO;
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.WidgetDatabase_Impl$1, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.WidgetDatabase_Impl$1, reason: invalid class name */
     class AnonymousClass1 extends RoomOpenHelper.Delegate {
         @Override // androidx.room.RoomOpenHelper.Delegate
         public void onPostMigrate(final SupportSQLiteDatabase db) {

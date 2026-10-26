@@ -4,7 +4,7 @@ import com.google.api.client.googleapis.services.json.AbstractGoogleJsonClientRe
 import com.google.api.client.googleapis.services.json.CommonGoogleJsonClientRequestInitializer;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class KgsearchRequestInitializer extends CommonGoogleJsonClientRequestInitializer {
     protected void initializeKgsearchRequest(KgsearchRequest<?> kgsearchRequest) throws IOException {
     }

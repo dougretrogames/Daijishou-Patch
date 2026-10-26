@@ -1,6 +1,6 @@
 package com.google.common.base;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class Ticker {
     private static final Ticker SYSTEM_TICKER = new AnonymousClass1();
@@ -14,7 +14,7 @@ public abstract class Ticker {
         return SYSTEM_TICKER;
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Ticker$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Ticker$1, reason: invalid class name */
     class AnonymousClass1 extends Ticker {
         AnonymousClass1() {
         }

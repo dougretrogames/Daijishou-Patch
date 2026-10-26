@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BaseNCodecOutputStream extends FilterOutputStream {
     private final BaseNCodec baseNCodec;
     private final BaseNCodec.Context context;

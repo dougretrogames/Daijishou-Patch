@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Option extends GeneratedMessage implements OptionOrBuilder {
     private static final Option DEFAULT_INSTANCE;
     public static final int NAME_FIELD_NUMBER = 1;
@@ -226,7 +226,7 @@ public final class Option extends GeneratedMessage implements OptionOrBuilder {
         return this == DEFAULT_INSTANCE ? new Builder((AnonymousClass1) null) : new Builder((AnonymousClass1) null).mergeFrom(this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent parent) {
         return new Builder(parent, null);
@@ -545,7 +545,7 @@ public final class Option extends GeneratedMessage implements OptionOrBuilder {
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.Option$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.Option$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<Option> {
         AnonymousClass1() {
         }

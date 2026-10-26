@@ -16,7 +16,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.commons.codec.digest.MessageDigestAlgorithms;
 import org.apache.commons.codec.digest.MurmurHash3;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Hashing {
     static final int GOOD_FAST_HASH_SEED = (int) System.currentTimeMillis();
@@ -179,8 +179,8 @@ public final class Hashing {
         return ChecksumType.ADLER_32.hashFunction;
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     @Immutable
     static abstract class ChecksumType implements ImmutableSupplier<Checksum> {
         public final HashFunction hashFunction;
@@ -200,7 +200,7 @@ public final class Hashing {
             return (ChecksumType[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.hash.Hashing$ChecksumType$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.hash.Hashing$ChecksumType$1, reason: invalid class name */
         final enum AnonymousClass1 extends ChecksumType {
             AnonymousClass1(String $enum$name, int $enum$ordinal, String toString) {
                 super($enum$name, $enum$ordinal, toString, null);
@@ -216,7 +216,7 @@ public final class Hashing {
             this(str, i, str2);
         }
 
-        /* JADX INFO: renamed from: com.google.common.hash.Hashing$ChecksumType$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.hash.Hashing$ChecksumType$2, reason: invalid class name */
         final enum AnonymousClass2 extends ChecksumType {
             AnonymousClass2(String $enum$name, int $enum$ordinal, String toString) {
                 super($enum$name, $enum$ordinal, toString, null);

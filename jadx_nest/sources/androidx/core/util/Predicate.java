@@ -2,7 +2,7 @@ package androidx.core.util;
 
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface Predicate<T> {
     boolean test(T t);
 

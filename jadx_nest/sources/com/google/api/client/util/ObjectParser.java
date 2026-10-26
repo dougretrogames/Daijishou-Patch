@@ -6,7 +6,7 @@ import java.io.Reader;
 import java.lang.reflect.Type;
 import java.nio.charset.Charset;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface ObjectParser {
     <T> T parseAndClose(InputStream inputStream, Charset charset, Class<T> cls) throws IOException;
 

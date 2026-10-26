@@ -4,7 +4,7 @@ import java.io.Reader;
 import java.io.Serializable;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CharSequenceReader extends Reader implements Serializable {
     private static final long serialVersionUID = 3724187752191401220L;
     private final CharSequence charSequence;

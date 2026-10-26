@@ -7,7 +7,7 @@ import java.util.List;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.IOCase;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NameFileComparator extends AbstractFileComparator implements Serializable {
     public static final Comparator<File> NAME_COMPARATOR;
     public static final Comparator<File> NAME_INSENSITIVE_COMPARATOR;

@@ -28,7 +28,7 @@ import org.eclipse.jgit.transport.http.NoCheckX509TrustManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpSupport {
     public static final String ENCODING_GZIP = "gzip";
     public static final String ENCODING_X_GZIP = "x-gzip";

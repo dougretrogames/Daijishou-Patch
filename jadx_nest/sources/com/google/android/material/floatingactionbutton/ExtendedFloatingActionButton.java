@@ -27,7 +27,7 @@ import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ExtendedFloatingActionButton extends MaterialButton implements CoordinatorLayout.AttachedBehavior {
     private static final int ANIM_STATE_HIDING = 1;
     private static final int ANIM_STATE_NONE = 0;
@@ -96,7 +96,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         this(context, attributeSet, R.attr.extendedFloatingActionButtonStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public ExtendedFloatingActionButton(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -136,7 +136,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         saveOriginalTextCsl();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$1, reason: invalid class name */
     class AnonymousClass1 implements Size {
         AnonymousClass1() {
         }
@@ -167,7 +167,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$2, reason: invalid class name */
     class AnonymousClass2 implements Size {
         AnonymousClass2() {
         }
@@ -208,7 +208,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         return anonymousClass2;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$3, reason: invalid class name */
     class AnonymousClass3 implements Size {
         final /* synthetic */ Size val$wrapContentSize;
 
@@ -266,7 +266,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$4, reason: invalid class name */
     class AnonymousClass4 implements Size {
         final /* synthetic */ Size val$matchParentSize;
         final /* synthetic */ Size val$wrapContentSize;
@@ -499,7 +499,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         setShrinkMotionSpec(MotionSpec.createFromResource(getContext(), i));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void performMotion(int i, OnChangedCallback onChangedCallback) {
         MotionStrategy motionStrategy;
         if (i == 0) {
@@ -541,7 +541,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         animatorSetCreateAnimator.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$5, reason: invalid class name */
     class AnonymousClass5 extends AnimatorListenerAdapter {
         private boolean cancelled;
         final /* synthetic */ OnChangedCallback val$callback;
@@ -574,7 +574,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean isOrWillBeShown() {
         if (getVisibility() != 0) {
             return this.animState == 2;
@@ -582,7 +582,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         return this.animState != 1;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean isOrWillBeHidden() {
         if (getVisibility() == 0) {
             return this.animState == 1;
@@ -594,7 +594,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         return (ViewCompat.isLaidOut(this) || (!isOrWillBeShown() && this.animateShowBeforeLayout)) && !isInEditMode();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$6, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$6, reason: invalid class name */
     class AnonymousClass6 extends Property<View, Float> {
         AnonymousClass6(Class cls, String str) {
             super(cls, str);
@@ -612,7 +612,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$7, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$7, reason: invalid class name */
     class AnonymousClass7 extends Property<View, Float> {
         AnonymousClass7(Class cls, String str) {
             super(cls, str);
@@ -630,7 +630,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$8, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$8, reason: invalid class name */
     class AnonymousClass8 extends Property<View, Float> {
         AnonymousClass8(Class cls, String str) {
             super(cls, str);
@@ -647,7 +647,7 @@ public class ExtendedFloatingActionButton extends MaterialButton implements Coor
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$9, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton$9, reason: invalid class name */
     class AnonymousClass9 extends Property<View, Float> {
         AnonymousClass9(Class cls, String str) {
             super(cls, str);

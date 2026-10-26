@@ -11,7 +11,7 @@ import java.util.Comparator;
 import java.util.Objects;
 import sun.misc.Unsafe;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class UnsignedBytes {
     public static final byte MAX_POWER_OF_TWO = -128;
@@ -150,7 +150,7 @@ public final class UnsignedBytes {
                 }
             }
 
-            /* JADX INFO: renamed from: com.google.common.primitives.UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator$1, reason: invalid class name */
+            /* INFO: renamed from: com.google.common.primitives.UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator$1, reason: invalid class name */
             class AnonymousClass1 implements PrivilegedExceptionAction<Unsafe> {
                 AnonymousClass1() {
                 }

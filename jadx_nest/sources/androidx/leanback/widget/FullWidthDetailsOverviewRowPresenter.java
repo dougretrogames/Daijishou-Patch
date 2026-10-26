@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FullWidthDetailsOverviewRowPresenter extends RowPresenter {
     public static final int ALIGN_MODE_MIDDLE = 1;
     public static final int ALIGN_MODE_START = 0;
@@ -62,7 +62,7 @@ public class FullWidthDetailsOverviewRowPresenter extends RowPresenter {
             viewHolder.getPresenter().setOnClickListener(viewHolder.getViewHolder(), new AnonymousClass1(viewHolder));
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter$ActionsItemBridgeAdapter$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter$ActionsItemBridgeAdapter$1, reason: invalid class name */
         class AnonymousClass1 implements View.OnClickListener {
             final /* synthetic */ ItemBridgeAdapter.ViewHolder val$ibvh;
 
@@ -146,7 +146,7 @@ public class FullWidthDetailsOverviewRowPresenter extends RowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             AnonymousClass1() {
             }
@@ -185,7 +185,7 @@ public class FullWidthDetailsOverviewRowPresenter extends RowPresenter {
             FullWidthDetailsOverviewRowPresenter.sHandler.removeCallbacks(this.mUpdateDrawableCallback);
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$2, reason: invalid class name */
         class AnonymousClass2 implements View.OnLayoutChangeListener {
             AnonymousClass2() {
             }
@@ -196,7 +196,7 @@ public class FullWidthDetailsOverviewRowPresenter extends RowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$3, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$3, reason: invalid class name */
         class AnonymousClass3 implements OnChildSelectedListener {
             AnonymousClass3() {
             }
@@ -227,7 +227,7 @@ public class FullWidthDetailsOverviewRowPresenter extends RowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$4, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter$ViewHolder$4, reason: invalid class name */
         class AnonymousClass4 extends RecyclerView.OnScrollListener {
             @Override // androidx.recyclerview.widget.RecyclerView.OnScrollListener
             public void onScrollStateChanged(RecyclerView recyclerView, int i) {
@@ -405,7 +405,7 @@ public class FullWidthDetailsOverviewRowPresenter extends RowPresenter {
         return viewHolder;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewRowPresenter$1, reason: invalid class name */
     class AnonymousClass1 implements BaseGridView.OnUnhandledKeyListener {
         final /* synthetic */ ViewHolder val$vh;
 

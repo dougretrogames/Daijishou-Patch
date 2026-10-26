@@ -8,7 +8,7 @@ import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class StrictLineReader implements Closeable {
     private static final byte CR = 13;
     private static final byte LF = 10;
@@ -47,7 +47,7 @@ class StrictLineReader implements Closeable {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:19:0x002b  */
+    /* WARN: Code duplicated, block: B:19:0x002b  */
     String readLine() throws IOException {
         int i;
         byte[] bArr;
@@ -102,7 +102,7 @@ class StrictLineReader implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.disklrucache.StrictLineReader$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.disklrucache.StrictLineReader$1, reason: invalid class name */
     class AnonymousClass1 extends ByteArrayOutputStream {
         AnonymousClass1(int i) {
             super(i);

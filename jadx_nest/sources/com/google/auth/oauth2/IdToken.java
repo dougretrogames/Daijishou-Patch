@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class IdToken extends AccessToken implements Serializable {
     private static final long serialVersionUID = -8514239465808977353L;
     private transient JsonWebSignature jsonWebSignature;

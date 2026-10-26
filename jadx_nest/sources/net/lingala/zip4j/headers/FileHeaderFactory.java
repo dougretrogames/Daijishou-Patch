@@ -17,7 +17,7 @@ import net.lingala.zip4j.util.RawIO;
 import net.lingala.zip4j.util.Zip4jUtil;
 import net.lingala.zip4j.util.ZipVersionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileHeaderFactory {
     public FileHeader generateFileHeader(ZipParameters zipParameters, boolean z, int i, Charset charset, RawIO rawIO) throws ZipException {
         FileHeader fileHeader = new FileHeader();

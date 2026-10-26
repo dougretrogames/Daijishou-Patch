@@ -12,14 +12,14 @@ import kotlin.NoWhenBranchMatchedException;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: TwoDimensionalFocusSearch.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: TwoDimensionalFocusSearch.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000B\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\r\u001a2\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\t2\u0006\u0010\f\u001a\u00020\rH\u0002ø\u0001\u0000¢\u0006\u0004\b\u000e\u0010\u000f\u001a2\u0010\u0010\u001a\u00020\u00072\u0006\u0010\u0011\u001a\u00020\t2\u0006\u0010\u0012\u001a\u00020\t2\u0006\u0010\u0013\u001a\u00020\t2\u0006\u0010\f\u001a\u00020\rH\u0002ø\u0001\u0000¢\u0006\u0004\b\u0014\u0010\u000f\u001a\f\u0010\u0015\u001a\u00020\u0016*\u00020\u0016H\u0002\u001a\f\u0010\u0017\u001a\u00020\t*\u00020\tH\u0002\u001a\u001a\u0010\u0018\u001a\u00020\u0019*\u00020\u001a2\f\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u00160\u001cH\u0002\u001a.\u0010\u001d\u001a\u0004\u0018\u00010\u0016*\b\u0012\u0004\u0012\u00020\u00160\u001c2\u0006\u0010\u001e\u001a\u00020\t2\u0006\u0010\f\u001a\u00020\rH\u0002ø\u0001\u0000¢\u0006\u0004\b\u001f\u0010 \u001a2\u0010!\u001a\u00020\u0007*\u00020\u00162\u0006\u0010\f\u001a\u00020\r2\u0012\u0010\"\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u00070#H\u0000ø\u0001\u0000¢\u0006\u0004\b$\u0010%\u001a:\u0010&\u001a\u00020\u0007*\u00020\u00162\u0006\u0010'\u001a\u00020\u00162\u0006\u0010\f\u001a\u00020\r2\u0012\u0010\"\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u00070#H\u0002ø\u0001\u0000¢\u0006\u0004\b(\u0010)\u001a:\u0010*\u001a\u00020\u0007*\u00020\u00162\u0006\u0010'\u001a\u00020\u00162\u0006\u0010\f\u001a\u00020\r2\u0012\u0010\"\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u00070#H\u0002ø\u0001\u0000¢\u0006\u0004\b+\u0010)\u001a\f\u0010,\u001a\u00020\t*\u00020\tH\u0002\u001a4\u0010-\u001a\u0004\u0018\u00010\u0007*\u00020\u00162\u0006\u0010\f\u001a\u00020\r2\u0012\u0010\"\u001a\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u00070#H\u0000ø\u0001\u0000¢\u0006\u0004\b.\u0010/\"\u0014\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\b\n\u0000\u0012\u0004\b\u0002\u0010\u0003\"\u0014\u0010\u0004\u001a\u00020\u0001X\u0082T¢\u0006\b\n\u0000\u0012\u0004\b\u0005\u0010\u0003\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u00060"}, d2 = {"InvalidFocusDirection", "", "getInvalidFocusDirection$annotations", "()V", "NoActiveChild", "getNoActiveChild$annotations", "beamBeats", "", "source", "Landroidx/compose/ui/geometry/Rect;", "rect1", "rect2", "direction", "Landroidx/compose/ui/focus/FocusDirection;", "beamBeats-I7lrPNg", "(Landroidx/compose/ui/geometry/Rect;Landroidx/compose/ui/geometry/Rect;Landroidx/compose/ui/geometry/Rect;I)Z", "isBetterCandidate", "proposedCandidate", "currentCandidate", "focusedRect", "isBetterCandidate-I7lrPNg", "activeNode", "Landroidx/compose/ui/focus/FocusTargetNode;", "bottomRight", "collectAccessibleChildren", "", "Landroidx/compose/ui/node/DelegatableNode;", "accessibleChildren", "Landroidx/compose/runtime/collection/MutableVector;", "findBestCandidate", "focusRect", "findBestCandidate-4WY_MpI", "(Landroidx/compose/runtime/collection/MutableVector;Landroidx/compose/ui/geometry/Rect;I)Landroidx/compose/ui/focus/FocusTargetNode;", "findChildCorrespondingToFocusEnter", "onFound", "Lkotlin/Function1;", "findChildCorrespondingToFocusEnter--OM-vw8", "(Landroidx/compose/ui/focus/FocusTargetNode;ILkotlin/jvm/functions/Function1;)Z", "generateAndSearchChildren", "focusedItem", "generateAndSearchChildren-4C6V_qg", "(Landroidx/compose/ui/focus/FocusTargetNode;Landroidx/compose/ui/focus/FocusTargetNode;ILkotlin/jvm/functions/Function1;)Z", "searchChildren", "searchChildren-4C6V_qg", "topLeft", "twoDimensionalFocusSearch", "twoDimensionalFocusSearch--OM-vw8", "(Landroidx/compose/ui/focus/FocusTargetNode;ILkotlin/jvm/functions/Function1;)Ljava/lang/Boolean;", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class TwoDimensionalFocusSearchKt {
     private static final String InvalidFocusDirection = "This function should only be used for 2-D focus search";
     private static final String NoActiveChild = "ActiveParent must have a focusedChild";
 
-    /* JADX INFO: compiled from: TwoDimensionalFocusSearch.kt */
+    /* INFO: compiled from: TwoDimensionalFocusSearch.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     public /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -52,7 +52,7 @@ public final class TwoDimensionalFocusSearchKt {
     private static /* synthetic */ void getNoActiveChild$annotations() {
     }
 
-    /* JADX INFO: renamed from: twoDimensionalFocusSearch--OM-vw8, reason: not valid java name */
+    /* INFO: renamed from: twoDimensionalFocusSearch--OM-vw8, reason: not valid java name */
     public static final Boolean m254twoDimensionalFocusSearchOMvw8(FocusTargetNode focusTargetNode, int i, Function1<? super FocusTargetNode, Boolean> function1) {
         int i2 = WhenMappings.$EnumSwitchMapping$0[focusTargetNode.getFocusState().ordinal()];
         if (i2 != 1) {
@@ -85,7 +85,7 @@ public final class TwoDimensionalFocusSearchKt {
         throw new NoWhenBranchMatchedException();
     }
 
-    /* JADX INFO: renamed from: generateAndSearchChildren-4C6V_qg, reason: not valid java name */
+    /* INFO: renamed from: generateAndSearchChildren-4C6V_qg, reason: not valid java name */
     private static final boolean m251generateAndSearchChildren4C6V_qg(FocusTargetNode focusTargetNode, FocusTargetNode focusTargetNode2, int i, Function1<? super FocusTargetNode, Boolean> function1) {
         if (m253searchChildren4C6V_qg(focusTargetNode, focusTargetNode2, i, function1)) {
             return true;
@@ -97,7 +97,7 @@ public final class TwoDimensionalFocusSearchKt {
         return false;
     }
 
-    /* JADX INFO: renamed from: findBestCandidate-4WY_MpI, reason: not valid java name */
+    /* INFO: renamed from: findBestCandidate-4WY_MpI, reason: not valid java name */
     private static final FocusTargetNode m249findBestCandidate4WY_MpI(MutableVector<FocusTargetNode> mutableVector, Rect rect, int i) {
         Rect rectTranslate;
         if (FocusDirection.m209equalsimpl0(i, FocusDirection.INSTANCE.m218getLeftdhqQ8s())) {
@@ -205,7 +205,7 @@ public final class TwoDimensionalFocusSearchKt {
         return (((long) 13) * jAbs * jAbs) + (jAbs2 * jAbs2);
     }
 
-    /* JADX INFO: renamed from: isBetterCandidate-I7lrPNg, reason: not valid java name */
+    /* INFO: renamed from: isBetterCandidate-I7lrPNg, reason: not valid java name */
     private static final boolean m252isBetterCandidateI7lrPNg(Rect rect, Rect rect2, Rect rect3, int i) {
         if (!isBetterCandidate_I7lrPNg$isCandidate(rect, i, rect3)) {
             return false;
@@ -300,7 +300,7 @@ public final class TwoDimensionalFocusSearchKt {
         return Math.max(1.0f, f);
     }
 
-    /* JADX INFO: renamed from: beamBeats-I7lrPNg, reason: not valid java name */
+    /* INFO: renamed from: beamBeats-I7lrPNg, reason: not valid java name */
     private static final boolean m248beamBeatsI7lrPNg(Rect rect, Rect rect2, Rect rect3, int i) {
         if (beamBeats_I7lrPNg$inSourceBeam(rect3, i, rect) || !beamBeats_I7lrPNg$inSourceBeam(rect2, i, rect)) {
             return false;
@@ -327,7 +327,7 @@ public final class TwoDimensionalFocusSearchKt {
         throw new IllegalStateException(NoActiveChild.toString());
     }
 
-    /* JADX INFO: renamed from: findChildCorrespondingToFocusEnter--OM-vw8, reason: not valid java name */
+    /* INFO: renamed from: findChildCorrespondingToFocusEnter--OM-vw8, reason: not valid java name */
     public static final boolean m250findChildCorrespondingToFocusEnterOMvw8(FocusTargetNode focusTargetNode, int i, Function1<? super FocusTargetNode, Boolean> function1) {
         Rect rectBottomRight;
         MutableVector mutableVector = new MutableVector(new FocusTargetNode[16], 0);
@@ -357,8 +357,8 @@ public final class TwoDimensionalFocusSearchKt {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: searchChildren-4C6V_qg, reason: not valid java name */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: renamed from: searchChildren-4C6V_qg, reason: not valid java name */
     public static final boolean m253searchChildren4C6V_qg(FocusTargetNode focusTargetNode, FocusTargetNode focusTargetNode2, int i, Function1<? super FocusTargetNode, Boolean> function1) {
         FocusTargetNode focusTargetNodeM249findBestCandidate4WY_MpI;
         MutableVector mutableVector = new MutableVector(new FocusTargetNode[16], 0);

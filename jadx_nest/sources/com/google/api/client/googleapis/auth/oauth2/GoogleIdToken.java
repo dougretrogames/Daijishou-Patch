@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GoogleIdToken extends IdToken {
     public static GoogleIdToken parse(JsonFactory jsonFactory, String str) throws IOException {
         JsonWebSignature jsonWebSignature = JsonWebSignature.parser(jsonFactory).setPayloadClass(Payload.class).parse(str);

@@ -2,8 +2,8 @@ package com.google.android.gms.internal.auth;
 
 import android.util.Base64;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public final class zzhz implements zzhx {
     public static final zzdc zza;
     public static final zzdc zzb;

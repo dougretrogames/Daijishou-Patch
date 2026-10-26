@@ -1,6 +1,6 @@
 package io.opencensus.stats;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @Deprecated
 final class AutoValue_AggregationData_MeanData extends AggregationData.MeanData {
     private final long count;

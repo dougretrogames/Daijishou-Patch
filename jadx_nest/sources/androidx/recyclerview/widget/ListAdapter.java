@@ -3,7 +3,7 @@ package androidx.recyclerview.widget;
 import androidx.recyclerview.widget.RecyclerView.ViewHolder;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class ListAdapter<T, VH extends RecyclerView.ViewHolder> extends RecyclerView.Adapter<VH> {
     final AsyncListDiffer<T> mDiffer;
     private final AsyncListDiffer.ListListener<T> mListener;
@@ -11,7 +11,7 @@ public abstract class ListAdapter<T, VH extends RecyclerView.ViewHolder> extends
     public void onCurrentListChanged(List<T> list, List<T> list2) {
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.ListAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.ListAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements AsyncListDiffer.ListListener<T> {
         AnonymousClass1() {
         }

@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Objects;
 import org.apache.commons.collections4.KeyValue;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TiedMapEntry<K, V> implements Map.Entry<K, V>, KeyValue<K, V>, Serializable {
     private static final long serialVersionUID = -8453869361373831205L;
     private final K key;

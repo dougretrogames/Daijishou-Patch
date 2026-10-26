@@ -50,7 +50,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AppBarLayout extends LinearLayout implements CoordinatorLayout.AttachedBehavior {
     private static final int DEF_STYLE_RES = R.style.Widget_Design_AppBarLayout;
     private static final int INVALID_SCROLL_RANGE = -1;
@@ -115,7 +115,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
         this(context, attributeSet, R.attr.appBarLayoutStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public AppBarLayout(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -166,7 +166,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
         ViewCompat.setOnApplyWindowInsetsListener(this, new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.appbar.AppBarLayout$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.appbar.AppBarLayout$1, reason: invalid class name */
     class AnonymousClass1 implements OnApplyWindowInsetsListener {
         AnonymousClass1() {
         }
@@ -182,7 +182,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
         ViewCompat.setBackground(this, materialShapeDrawable);
     }
 
-    /* JADX INFO: renamed from: lambda$initializeLiftOnScrollWithColor$0$com-google-android-material-appbar-AppBarLayout, reason: not valid java name */
+    /* INFO: renamed from: lambda$initializeLiftOnScrollWithColor$0$com-google-android-material-appbar-AppBarLayout, reason: not valid java name */
     /* synthetic */ void m3255x91f594d8(ColorStateList colorStateList, ColorStateList colorStateList2, MaterialShapeDrawable materialShapeDrawable, Integer num, ValueAnimator valueAnimator) {
         Integer num2;
         int iLayer = MaterialColors.layer(colorStateList.getDefaultColor(), colorStateList2.getDefaultColor(), ((Float) valueAnimator.getAnimatedValue()).floatValue());
@@ -206,7 +206,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
         ViewCompat.setBackground(this, materialShapeDrawable);
     }
 
-    /* JADX INFO: renamed from: lambda$initializeLiftOnScrollWithElevation$1$com-google-android-material-appbar-AppBarLayout, reason: not valid java name */
+    /* INFO: renamed from: lambda$initializeLiftOnScrollWithElevation$1$com-google-android-material-appbar-AppBarLayout, reason: not valid java name */
     /* synthetic */ void m3256x84b6053(MaterialShapeDrawable materialShapeDrawable, ValueAnimator valueAnimator) {
         float fFloatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
         materialShapeDrawable.setElevation(fFloatValue);
@@ -470,7 +470,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
         return layoutParams instanceof LayoutParams;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.widget.LinearLayout, android.view.ViewGroup
     public LayoutParams generateDefaultLayoutParams() {
         return new LayoutParams(-1, -2);
@@ -481,7 +481,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
         return new LayoutParams(getContext(), attributeSet);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.widget.LinearLayout, android.view.ViewGroup
     public LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
         if (layoutParams instanceof LinearLayout.LayoutParams) {
@@ -1093,7 +1093,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
             return t.hasScrollableChildren() && coordinatorLayout.getHeight() - view.getHeight() <= t.getHeight();
         }
 
-        /* JADX WARN: Code duplicated, block: B:9:0x0025  */
+        /* WARN: Code duplicated, block: B:9:0x0025  */
         @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior
         public void onNestedPreScroll(CoordinatorLayout coordinatorLayout, T t, View view, int i, int i2, int[] iArr, int i3) {
             T t2;
@@ -1194,7 +1194,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
             this.offsetAnimator.start();
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.appbar.AppBarLayout$BaseBehavior$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.appbar.AppBarLayout$BaseBehavior$1, reason: invalid class name */
         class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
             final /* synthetic */ AppBarLayout val$child;
             final /* synthetic */ CoordinatorLayout val$coordinatorLayout;
@@ -1329,7 +1329,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
             ViewCompat.setAccessibilityDelegate(coordinatorLayout, new AnonymousClass2(t, coordinatorLayout));
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.appbar.AppBarLayout$BaseBehavior$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.appbar.AppBarLayout$BaseBehavior$2, reason: invalid class name */
         class AnonymousClass2 extends AccessibilityDelegateCompat {
             final /* synthetic */ AppBarLayout val$appBarLayout;
             final /* synthetic */ CoordinatorLayout val$coordinatorLayout;
@@ -1365,16 +1365,16 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
                 }
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$PrimitiveArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+            /* WARN: Multi-variable type inference failed */
+            /* WARN: Type inference fix 'apply assigned field type' failed
+            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$PrimitiveArg
+            	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+            	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+            	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
              */
             @Override // androidx.core.view.AccessibilityDelegateCompat
             public boolean performAccessibilityAction(View view, int i, Bundle bundle) {
@@ -1402,7 +1402,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public View getChildWithScrollingBehavior(CoordinatorLayout coordinatorLayout) {
             int childCount = coordinatorLayout.getChildCount();
             for (int i = 0; i < childCount; i++) {
@@ -1414,7 +1414,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
             return null;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public boolean childrenHaveScrollFlags(AppBarLayout appBarLayout) {
             int childCount = appBarLayout.getChildCount();
             for (int i = 0; i < childCount; i++) {
@@ -1425,7 +1425,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
             return false;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.android.material.appbar.HeaderBehavior
         public boolean canDragView(T t) {
             BaseDragCallback baseDragCallback = this.onDragCallback;
@@ -1440,7 +1440,7 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
             return (view == null || !view.isShown() || view.canScrollVertically(-1)) ? false : true;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.android.material.appbar.HeaderBehavior
         public void onFlingFinished(CoordinatorLayout coordinatorLayout, T t) {
             snapToChildIfNeeded(coordinatorLayout, t);
@@ -1449,19 +1449,19 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.android.material.appbar.HeaderBehavior
         public int getMaxDragOffset(T t) {
             return (-t.getDownNestedScrollRange()) + t.getTopInset();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.android.material.appbar.HeaderBehavior
         public int getScrollRangeForDragFling(T t) {
             return t.getTotalScrollRange();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.android.material.appbar.HeaderBehavior
         public int setHeaderTopBottomOffset(CoordinatorLayout coordinatorLayout, T t, int i, int i2, int i3) {
             CoordinatorLayout coordinatorLayout2;
@@ -1689,12 +1689,12 @@ public class AppBarLayout extends LinearLayout implements CoordinatorLayout.Atta
                 parcel.writeByte(this.firstVisibleChildAtMinimumHeight ? (byte) 1 : (byte) 0);
             }
 
-            /* JADX INFO: renamed from: com.google.android.material.appbar.AppBarLayout$BaseBehavior$SavedState$1, reason: invalid class name */
+            /* INFO: renamed from: com.google.android.material.appbar.AppBarLayout$BaseBehavior$SavedState$1, reason: invalid class name */
             class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
                 AnonymousClass1() {
                 }
 
-                /* JADX WARN: Can't rename method to resolve collision */
+                /* WARN: Can't rename method to resolve collision */
                 @Override // android.os.Parcelable.ClassLoaderCreator
                 public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                     return new SavedState(parcel, classLoader);

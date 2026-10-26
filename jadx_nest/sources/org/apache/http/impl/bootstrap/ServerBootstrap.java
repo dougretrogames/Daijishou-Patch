@@ -31,7 +31,7 @@ import org.apache.http.protocol.ResponseDate;
 import org.apache.http.protocol.ResponseServer;
 import org.apache.http.protocol.UriHttpRequestHandlerMapper;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ServerBootstrap {
     private ConnectionReuseStrategy connStrategy;
     private ConnectionConfig connectionConfig;
@@ -190,11 +190,11 @@ public class ServerBootstrap {
         return this;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v2, types: [org.apache.http.protocol.HttpRequestHandlerMapper] */
-    /* JADX WARN: Type inference failed for: r1v27, types: [org.apache.http.protocol.UriHttpRequestHandlerMapper] */
-    /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r7v0, types: [org.apache.http.protocol.HttpRequestHandlerMapper] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r1v2, types: [org.apache.http.protocol.HttpRequestHandlerMapper] */
+    /* WARN: Type inference failed for: r1v27, types: [org.apache.http.protocol.UriHttpRequestHandlerMapper] */
+    /* WARN: Type inference failed for: r1v3 */
+    /* WARN: Type inference failed for: r7v0, types: [org.apache.http.protocol.HttpRequestHandlerMapper] */
     public HttpServer create() {
         HttpProcessor httpProcessorBuild = this.httpProcessor;
         if (httpProcessorBuild == null) {

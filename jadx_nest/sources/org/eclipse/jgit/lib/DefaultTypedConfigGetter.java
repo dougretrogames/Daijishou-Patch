@@ -13,7 +13,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.transport.RefSpec;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultTypedConfigGetter implements TypedConfigGetter {
     @Override // org.eclipse.jgit.lib.TypedConfigGetter
     public boolean getBoolean(Config config, String str, String str2, String str3, boolean z) {

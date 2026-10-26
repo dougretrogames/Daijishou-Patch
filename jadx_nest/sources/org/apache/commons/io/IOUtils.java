@@ -56,7 +56,7 @@ import org.apache.commons.io.output.StringBuilderWriter;
 import org.apache.commons.io.output.ThresholdingOutputStream;
 import org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IOUtils {
     public static final int CR = 13;
     public static final int DEFAULT_BUFFER_SIZE = 8192;
@@ -124,7 +124,7 @@ public class IOUtils {
         return new byte[i];
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static char[] charArray() {
         return charArray(8192);
     }

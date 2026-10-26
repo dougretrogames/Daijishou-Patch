@@ -28,8 +28,8 @@ import kotlin.Metadata;
 import kotlin.jvm.JvmStatic;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: NavigationUI.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: NavigationUI.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(d1 = {"\u0000t\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\bÆ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0016\u0010\u0005\u001a\b\u0012\u0002\b\u0003\u0018\u00010\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0007J\u001a\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\b\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0007J\u0018\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\u0010H\u0007J\u0018\u0010\u0011\u001a\u00020\n2\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u000b\u001a\u00020\fH\u0007J \u0010\u0011\u001a\u00020\n2\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0014\u001a\u00020\nH\u0007J\"\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u000b\u001a\u00020\f2\b\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0007J\"\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\u000f\u001a\u00020\u0010H\u0007J\"\u0010\u0019\u001a\u00020\u00162\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u000b\u001a\u00020\f2\b\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0007J\"\u0010\u0019\u001a\u00020\u00162\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\u000f\u001a\u00020\u0010H\u0007J*\u0010\u0019\u001a\u00020\u00162\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u000b\u001a\u00020\f2\b\u0010\r\u001a\u0004\u0018\u00010\u000eH\u0007J*\u0010\u0019\u001a\u00020\u00162\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u000b\u001a\u00020\f2\b\b\u0002\u0010\u000f\u001a\u00020\u0010H\u0007J\u0018\u0010\u0019\u001a\u00020\u00162\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010\u000b\u001a\u00020\fH\u0007J \u0010\u0019\u001a\u00020\u00162\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0014\u001a\u00020\nH\u0007J\u0018\u0010\u0019\u001a\u00020\u00162\u0006\u0010 \u001a\u00020!2\u0006\u0010\u000b\u001a\u00020\fH\u0007J \u0010\u0019\u001a\u00020\u00162\u0006\u0010 \u001a\u00020!2\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u0014\u001a\u00020\nH\u0007J\u001b\u0010\"\u001a\u00020\n*\u00020#2\b\b\u0001\u0010$\u001a\u00020%H\u0001¢\u0006\u0002\b&R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000¨\u0006'"}, d2 = {"Landroidx/navigation/ui/NavigationUI;", "", "()V", "TAG", "", "findBottomSheetBehavior", "Lcom/google/android/material/bottomsheet/BottomSheetBehavior;", "view", "Landroid/view/View;", "navigateUp", "", "navController", "Landroidx/navigation/NavController;", "openableLayout", "Landroidx/customview/widget/Openable;", "configuration", "Landroidx/navigation/ui/AppBarConfiguration;", "onNavDestinationSelected", "item", "Landroid/view/MenuItem;", "saveState", "setupActionBarWithNavController", "", "activity", "Landroidx/appcompat/app/AppCompatActivity;", "setupWithNavController", "toolbar", "Landroidx/appcompat/widget/Toolbar;", "collapsingToolbarLayout", "Lcom/google/android/material/appbar/CollapsingToolbarLayout;", "navigationBarView", "Lcom/google/android/material/navigation/NavigationBarView;", "navigationView", "Lcom/google/android/material/navigation/NavigationView;", "matchDestination", "Landroidx/navigation/NavDestination;", "destId", "", "matchDestination$navigation_ui_release", "navigation-ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class NavigationUI {
     public static final NavigationUI INSTANCE = new NavigationUI();
@@ -188,7 +188,7 @@ public final class NavigationUI {
         toolbar.setNavigationOnClickListener(new NavigationUI$$ExternalSyntheticLambda1(navController, configuration));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void setupWithNavController$lambda$1(NavController navController, AppBarConfiguration configuration, View view) {
         Intrinsics.checkNotNullParameter(navController, "$navController");
         Intrinsics.checkNotNullParameter(configuration, "$configuration");
@@ -220,7 +220,7 @@ public final class NavigationUI {
         toolbar.setNavigationOnClickListener(new NavigationUI$$ExternalSyntheticLambda3(navController, configuration));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void setupWithNavController$lambda$2(NavController navController, AppBarConfiguration configuration, View view) {
         Intrinsics.checkNotNullParameter(navController, "$navController");
         Intrinsics.checkNotNullParameter(configuration, "$configuration");
@@ -235,7 +235,7 @@ public final class NavigationUI {
         navController.addOnDestinationChangedListener(new AnonymousClass4(new WeakReference(navigationView), navController));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean setupWithNavController$lambda$3(NavController navController, NavigationView navigationView, MenuItem item) {
         Intrinsics.checkNotNullParameter(navController, "$navController");
         Intrinsics.checkNotNullParameter(navigationView, "$navigationView");
@@ -255,8 +255,8 @@ public final class NavigationUI {
         return zOnNavDestinationSelected;
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.ui.NavigationUI$setupWithNavController$4, reason: invalid class name */
-    /* JADX INFO: compiled from: NavigationUI.kt */
+    /* INFO: renamed from: androidx.navigation.ui.NavigationUI$setupWithNavController$4, reason: invalid class name */
+    /* INFO: compiled from: NavigationUI.kt */
     @Metadata(d1 = {"\u0000#\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\"\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\tH\u0016¨\u0006\n"}, d2 = {"androidx/navigation/ui/NavigationUI$setupWithNavController$4", "Landroidx/navigation/NavController$OnDestinationChangedListener;", "onDestinationChanged", "", "controller", "Landroidx/navigation/NavController;", "destination", "Landroidx/navigation/NavDestination;", "arguments", "Landroid/os/Bundle;", "navigation-ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class AnonymousClass4 implements NavController.OnDestinationChangedListener {
         final /* synthetic */ NavController $navController;
@@ -301,7 +301,7 @@ public final class NavigationUI {
         navController.addOnDestinationChangedListener(new AnonymousClass7(new WeakReference(navigationView), navController));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean setupWithNavController$lambda$5(NavController navController, boolean z, NavigationView navigationView, MenuItem item) {
         Intrinsics.checkNotNullParameter(navController, "$navController");
         Intrinsics.checkNotNullParameter(navigationView, "$navigationView");
@@ -321,8 +321,8 @@ public final class NavigationUI {
         return zOnNavDestinationSelected;
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.ui.NavigationUI$setupWithNavController$7, reason: invalid class name */
-    /* JADX INFO: compiled from: NavigationUI.kt */
+    /* INFO: renamed from: androidx.navigation.ui.NavigationUI$setupWithNavController$7, reason: invalid class name */
+    /* INFO: compiled from: NavigationUI.kt */
     @Metadata(d1 = {"\u0000#\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\"\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\tH\u0016¨\u0006\n"}, d2 = {"androidx/navigation/ui/NavigationUI$setupWithNavController$7", "Landroidx/navigation/NavController$OnDestinationChangedListener;", "onDestinationChanged", "", "controller", "Landroidx/navigation/NavController;", "destination", "Landroidx/navigation/NavDestination;", "arguments", "Landroid/os/Bundle;", "navigation-ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class AnonymousClass7 implements NavController.OnDestinationChangedListener {
         final /* synthetic */ NavController $navController;
@@ -382,15 +382,15 @@ public final class NavigationUI {
         navController.addOnDestinationChangedListener(new AnonymousClass9(new WeakReference(navigationBarView), navController));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean setupWithNavController$lambda$6(NavController navController, MenuItem item) {
         Intrinsics.checkNotNullParameter(navController, "$navController");
         Intrinsics.checkNotNullParameter(item, "item");
         return onNavDestinationSelected(item, navController);
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.ui.NavigationUI$setupWithNavController$9, reason: invalid class name */
-    /* JADX INFO: compiled from: NavigationUI.kt */
+    /* INFO: renamed from: androidx.navigation.ui.NavigationUI$setupWithNavController$9, reason: invalid class name */
+    /* INFO: compiled from: NavigationUI.kt */
     @Metadata(d1 = {"\u0000#\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\"\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\tH\u0016¨\u0006\n"}, d2 = {"androidx/navigation/ui/NavigationUI$setupWithNavController$9", "Landroidx/navigation/NavController$OnDestinationChangedListener;", "onDestinationChanged", "", "controller", "Landroidx/navigation/NavController;", "destination", "Landroidx/navigation/NavDestination;", "arguments", "Landroid/os/Bundle;", "navigation-ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class AnonymousClass9 implements NavController.OnDestinationChangedListener {
         final /* synthetic */ NavController $navController;
@@ -437,15 +437,15 @@ public final class NavigationUI {
         navController.addOnDestinationChangedListener(new AnonymousClass12(new WeakReference(navigationBarView), navController));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean setupWithNavController$lambda$8(NavController navController, boolean z, MenuItem item) {
         Intrinsics.checkNotNullParameter(navController, "$navController");
         Intrinsics.checkNotNullParameter(item, "item");
         return onNavDestinationSelected(item, navController, z);
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.ui.NavigationUI$setupWithNavController$12, reason: invalid class name */
-    /* JADX INFO: compiled from: NavigationUI.kt */
+    /* INFO: renamed from: androidx.navigation.ui.NavigationUI$setupWithNavController$12, reason: invalid class name */
+    /* INFO: compiled from: NavigationUI.kt */
     @Metadata(d1 = {"\u0000#\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\"\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\tH\u0016¨\u0006\n"}, d2 = {"androidx/navigation/ui/NavigationUI$setupWithNavController$12", "Landroidx/navigation/NavController$OnDestinationChangedListener;", "onDestinationChanged", "", "controller", "Landroidx/navigation/NavController;", "destination", "Landroidx/navigation/NavDestination;", "arguments", "Landroid/os/Bundle;", "navigation-ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class AnonymousClass12 implements NavController.OnDestinationChangedListener {
         final /* synthetic */ NavController $navController;

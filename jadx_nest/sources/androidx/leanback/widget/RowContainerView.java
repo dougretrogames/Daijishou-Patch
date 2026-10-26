@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class RowContainerView extends LinearLayout {
     private Drawable mForeground;
     private boolean mForegroundBoundsChanged;

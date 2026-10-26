@@ -1,6 +1,6 @@
 package org.eclipse.jgit.util;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class NB {
     public static int compareUInt32(int i, int i2) {
         int i3 = (i >>> 1) - (i2 >>> 1);

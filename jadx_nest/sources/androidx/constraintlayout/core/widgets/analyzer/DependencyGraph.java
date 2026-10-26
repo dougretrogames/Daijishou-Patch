@@ -11,7 +11,7 @@ import java.util.Iterator;
 import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DependencyGraph {
     private static final boolean DEBUG = false;
     private static final boolean USE_GROUPS = true;
@@ -185,7 +185,7 @@ public class DependencyGraph {
         return true;
     }
 
-    /* JADX WARN: Code duplicated, block: B:36:0x00d4  */
+    /* WARN: Code duplicated, block: B:36:0x00d4  */
     public boolean directMeasureWithOrientation(boolean z, int i) {
         boolean z2;
         boolean z3 = false;
@@ -264,10 +264,10 @@ public class DependencyGraph {
         constraintWidget.setBaselineDistance(this.mMeasure.measuredBaseline);
     }
 
-    /* JADX WARN: Code duplicated, block: B:105:0x01bb  */
-    /* JADX WARN: Code duplicated, block: B:176:0x0296 A[ADDED_TO_REGION, REMOVE, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:185:0x029a A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:207:0x0006 A[ADDED_TO_REGION, REMOVE, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:105:0x01bb  */
+    /* WARN: Code duplicated, block: B:176:0x0296 A[ADDED_TO_REGION, REMOVE, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:185:0x029a A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:207:0x0006 A[ADDED_TO_REGION, REMOVE, SYNTHETIC] */
     private boolean basicMeasureWidgets(ConstraintWidgetContainer constraintWidgetContainer) {
         int i;
         ConstraintWidget.DimensionBehaviour dimensionBehaviour;

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Objects;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ConstantTransformer<T, R> implements Transformer<T, R>, Serializable {
     public static final Transformer NULL_INSTANCE = new ConstantTransformer(null);
     private static final long serialVersionUID = 6374440726369055124L;

@@ -1,6 +1,6 @@
 package com.google.android.material.transition.platform;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class FitModeResult {
     final float currentEndHeight;
     final float currentEndWidth;

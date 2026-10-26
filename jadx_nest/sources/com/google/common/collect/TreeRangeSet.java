@@ -15,7 +15,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> implements Serializable {
 
@@ -135,7 +135,7 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
             this.delegate = delegate;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Collection<Range<C>> delegate() {
             return this.delegate;
@@ -181,7 +181,7 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
         return entryFloorEntry != null && entryFloorEntry.getValue().encloses(range);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @CheckForNull
     public Range<C> rangeEnclosing(Range<C> range) {
         Preconditions.checkNotNull(range);
@@ -202,7 +202,7 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
         return Range.create(entryFirstEntry.getValue().lowerBound, entryLastEntry.getValue().upperBound);
     }
 
-    /* JADX WARN: Type inference incomplete: some casts might be missing */
+    /* WARN: Type inference incomplete: some casts might be missing */
     @Override // com.google.common.collect.AbstractRangeSet, com.google.common.collect.RangeSet
     public void add(Range<C> range) {
         Preconditions.checkNotNull(range);
@@ -232,15 +232,15 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
         replaceRangeWithSameLowerBound(Range.create(cut, cut2));
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     @Override // com.google.common.collect.AbstractRangeSet, com.google.common.collect.RangeSet
     public void remove(Range<C> rangeToRemove) {
@@ -349,15 +349,15 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
             return null;
         }
 
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         @Override // com.google.common.collect.Maps.IteratorBasedAbstractMap
         Iterator<Map.Entry<Cut<C>, Range<C>>> entryIterator() {
@@ -373,7 +373,7 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
             return new AnonymousClass1(it);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.TreeRangeSet$RangesByUpperBound$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.TreeRangeSet$RangesByUpperBound$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<Map.Entry<Cut<C>, Range<C>>> {
             final /* synthetic */ Iterator val$backingItr;
 
@@ -381,16 +381,16 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
                 this.val$backingItr = val$backingItr;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+            /* INFO: Access modifiers changed from: protected */
+            /* WARN: Type inference fix 'apply assigned field type' failed
+            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+            	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+            	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+            	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
              */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
@@ -406,15 +406,15 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
             }
         }
 
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         @Override // com.google.common.collect.AbstractNavigableMap
         Iterator<Map.Entry<Cut<C>, Range<C>>> descendingEntryIterator() {
@@ -431,7 +431,7 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
             return new AnonymousClass2(peekingIterator);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.TreeRangeSet$RangesByUpperBound$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.TreeRangeSet$RangesByUpperBound$2, reason: invalid class name */
         class AnonymousClass2 extends AbstractIterator<Map.Entry<Cut<C>, Range<C>>> {
             final /* synthetic */ PeekingIterator val$backingItr;
 
@@ -439,16 +439,16 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
                 this.val$backingItr = val$backingItr;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+            /* INFO: Access modifiers changed from: protected */
+            /* WARN: Type inference fix 'apply assigned field type' failed
+            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+            	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+            	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+            	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
              */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
@@ -543,7 +543,7 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
             return new AnonymousClass1(cutBelowAll, peekingIterator);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.TreeRangeSet$ComplementRangesByLowerBound$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.TreeRangeSet$ComplementRangesByLowerBound$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<Map.Entry<Cut<C>, Range<C>>> {
             Cut<C> nextComplementRangeLowerBound;
             final /* synthetic */ Cut val$firstComplementRangeLowerBound;
@@ -555,7 +555,7 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
                 this.nextComplementRangeLowerBound = val$firstComplementRangeLowerBound;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
             public Map.Entry<Cut<C>, Range<C>> computeNext() {
@@ -600,7 +600,7 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
             return new AnonymousClass2((Cut) MoreObjects.firstNonNull(cutHigherKey, Cut.aboveAll()), peekingIterator);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.TreeRangeSet$ComplementRangesByLowerBound$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.TreeRangeSet$ComplementRangesByLowerBound$2, reason: invalid class name */
         class AnonymousClass2 extends AbstractIterator<Map.Entry<Cut<C>, Range<C>>> {
             Cut<C> nextComplementRangeUpperBound;
             final /* synthetic */ Cut val$firstComplementRangeUpperBound;
@@ -612,16 +612,16 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
                 this.nextComplementRangeUpperBound = val$firstComplementRangeUpperBound;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+            /* INFO: Access modifiers changed from: protected */
+            /* WARN: Type inference fix 'apply assigned field type' failed
+            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+            	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+            	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+            	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
              */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
@@ -749,15 +749,15 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
             return get(key) != null;
         }
 
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         @Override // com.google.common.collect.AbstractNavigableMap, java.util.AbstractMap, java.util.Map
         @CheckForNull
@@ -784,15 +784,15 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
             return null;
         }
 
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         @Override // com.google.common.collect.Maps.IteratorBasedAbstractMap
         Iterator<Map.Entry<Cut<C>, Range<C>>> entryIterator() {
@@ -811,7 +811,7 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
             return new AnonymousClass1(it, (Cut) Ordering.natural().min(this.lowerBoundWindow.upperBound, Cut.belowValue(this.restriction.upperBound)));
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.TreeRangeSet$SubRangeSetRangesByLowerBound$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.TreeRangeSet$SubRangeSetRangesByLowerBound$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<Map.Entry<Cut<C>, Range<C>>> {
             final /* synthetic */ Iterator val$completeRangeItr;
             final /* synthetic */ Cut val$upperBoundOnLowerBounds;
@@ -821,7 +821,7 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
                 this.val$upperBoundOnLowerBounds = val$upperBoundOnLowerBounds;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
             public Map.Entry<Cut<C>, Range<C>> computeNext() {
@@ -846,7 +846,7 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
             return new AnonymousClass2(this.rangesByLowerBound.headMap((Cut) cut.endpoint(), cut.typeAsUpperBound() == BoundType.CLOSED).descendingMap().values().iterator());
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.TreeRangeSet$SubRangeSetRangesByLowerBound$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.TreeRangeSet$SubRangeSetRangesByLowerBound$2, reason: invalid class name */
         class AnonymousClass2 extends AbstractIterator<Map.Entry<Cut<C>, Range<C>>> {
             final /* synthetic */ Iterator val$completeRangeItr;
 
@@ -854,16 +854,16 @@ public class TreeRangeSet<C extends Comparable<?>> extends AbstractRangeSet<C> i
                 this.val$completeRangeItr = val$completeRangeItr;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+            /* INFO: Access modifiers changed from: protected */
+            /* WARN: Type inference fix 'apply assigned field type' failed
+            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+            	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+            	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+            	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
              */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull

@@ -3,7 +3,7 @@ package androidx.core.graphics.drawable;
 import android.content.res.ColorStateList;
 import androidx.versionedparcelable.VersionedParcel;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class IconCompatParcelizer {
     public static IconCompat read(VersionedParcel versionedParcel) {
         IconCompat iconCompat = new IconCompat();

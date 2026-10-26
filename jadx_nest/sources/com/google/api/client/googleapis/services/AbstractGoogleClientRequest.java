@@ -30,7 +30,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class AbstractGoogleClientRequest<T> extends GenericData {
     private static final String API_CLIENT_HEADER = "X-Goog-Api-Client";
     protected static final String API_VERSION_HEADER = "X-Goog-Api-Version";
@@ -209,7 +209,7 @@ public abstract class AbstractGoogleClientRequest<T> extends GenericData {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.googleapis.services.AbstractGoogleClientRequest$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.googleapis.services.AbstractGoogleClientRequest$1, reason: invalid class name */
     static class AnonymousClass1 implements HttpRequestInitializer {
         final /* synthetic */ String val$applicationName;
 
@@ -233,7 +233,7 @@ public abstract class AbstractGoogleClientRequest<T> extends GenericData {
         return new AnonymousClass2(httpRequestInitializer, str);
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.googleapis.services.AbstractGoogleClientRequest$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.googleapis.services.AbstractGoogleClientRequest$2, reason: invalid class name */
     static class AnonymousClass2 implements HttpRequestInitializer {
         final /* synthetic */ String val$applicationName;
         final /* synthetic */ HttpRequestInitializer val$originalInitializer;
@@ -293,7 +293,7 @@ public abstract class AbstractGoogleClientRequest<T> extends GenericData {
         return httpRequestBuildRequest;
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.googleapis.services.AbstractGoogleClientRequest$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.googleapis.services.AbstractGoogleClientRequest$3, reason: invalid class name */
     class AnonymousClass3 implements HttpResponseInterceptor {
         final /* synthetic */ HttpRequest val$httpRequest;
         final /* synthetic */ HttpResponseInterceptor val$responseInterceptor;

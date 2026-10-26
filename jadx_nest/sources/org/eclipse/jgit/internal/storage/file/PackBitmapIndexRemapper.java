@@ -9,7 +9,7 @@ import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.BitmapIndex;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PackBitmapIndexRemapper implements PackBitmapIndex, Iterable<Entry> {
     private final BitSet inflated;
     final PackBitmapIndex newPackIndex;
@@ -104,7 +104,7 @@ public class PackBitmapIndexRemapper implements PackBitmapIndex, Iterable<Entry>
         return new AnonymousClass1(basePackBitmapIndex.getBitmaps().iterator());
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.PackBitmapIndexRemapper$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.PackBitmapIndexRemapper$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<Entry> {
         private Entry entry;
         private final /* synthetic */ Iterator val$it;

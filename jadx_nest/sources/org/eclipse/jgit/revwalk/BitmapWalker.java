@@ -14,7 +14,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.revwalk.filter.ObjectFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class BitmapWalker {
     private final BitmapIndex bitmapIndex;
     private long countOfBitmapIndexMisses;

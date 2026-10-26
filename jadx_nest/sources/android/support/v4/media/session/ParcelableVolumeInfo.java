@@ -3,7 +3,7 @@ package android.support.v4.media.session;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ParcelableVolumeInfo implements Parcelable {
     public static final Parcelable.Creator<ParcelableVolumeInfo> CREATOR = new AnonymousClass1();
     public int audioStream;
@@ -42,18 +42,18 @@ public class ParcelableVolumeInfo implements Parcelable {
         parcel.writeInt(this.audioStream);
     }
 
-    /* JADX INFO: renamed from: android.support.v4.media.session.ParcelableVolumeInfo$1, reason: invalid class name */
+    /* INFO: renamed from: android.support.v4.media.session.ParcelableVolumeInfo$1, reason: invalid class name */
     static class AnonymousClass1 implements Parcelable.Creator<ParcelableVolumeInfo> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public ParcelableVolumeInfo createFromParcel(Parcel parcel) {
             return new ParcelableVolumeInfo(parcel);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public ParcelableVolumeInfo[] newArray(int i) {
             return new ParcelableVolumeInfo[i];

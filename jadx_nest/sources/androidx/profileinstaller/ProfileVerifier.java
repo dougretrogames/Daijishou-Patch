@@ -17,7 +17,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ProfileVerifier {
     private static final String CUR_PROFILES_BASE_DIR = "/data/misc/profiles/cur/0/";
     private static final String PROFILE_FILE_NAME = "primary.prof";
@@ -35,20 +35,20 @@ public final class ProfileVerifier {
         return writeProfileVerification(context, false);
     }
 
-    /* JADX WARN: Code duplicated, block: B:111:0x00fb A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:113:0x00ab A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:18:0x0028  */
-    /* JADX WARN: Code duplicated, block: B:19:0x002a  */
-    /* JADX WARN: Code duplicated, block: B:21:0x002d A[Catch: all -> 0x003e, IOException -> 0x0041, TRY_ENTER, TRY_LEAVE, TryCatch #2 {IOException -> 0x0041, blocks: (B:14:0x0016, B:21:0x002d, B:30:0x003d, B:29:0x003a), top: B:108:0x0016 }] */
-    /* JADX WARN: Code duplicated, block: B:44:0x0072  */
-    /* JADX WARN: Code duplicated, block: B:50:0x0095  */
-    /* JADX WARN: Code duplicated, block: B:60:0x00b8  */
-    /* JADX WARN: Code duplicated, block: B:69:0x00ca A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:70:0x00cc  */
-    /* JADX WARN: Code duplicated, block: B:71:0x00cf A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:72:0x00d1  */
-    /* JADX WARN: Code duplicated, block: B:73:0x00d3 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:74:0x00d5  */
+    /* WARN: Code duplicated, block: B:111:0x00fb A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:113:0x00ab A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:18:0x0028  */
+    /* WARN: Code duplicated, block: B:19:0x002a  */
+    /* WARN: Code duplicated, block: B:21:0x002d A[Catch: all -> 0x003e, IOException -> 0x0041, TRY_ENTER, TRY_LEAVE, TryCatch #2 {IOException -> 0x0041, blocks: (B:14:0x0016, B:21:0x002d, B:30:0x003d, B:29:0x003a), top: B:108:0x0016 }] */
+    /* WARN: Code duplicated, block: B:44:0x0072  */
+    /* WARN: Code duplicated, block: B:50:0x0095  */
+    /* WARN: Code duplicated, block: B:60:0x00b8  */
+    /* WARN: Code duplicated, block: B:69:0x00ca A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:70:0x00cc  */
+    /* WARN: Code duplicated, block: B:71:0x00cf A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:72:0x00d1  */
+    /* WARN: Code duplicated, block: B:73:0x00d3 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:74:0x00d5  */
     static CompilationStatus writeProfileVerification(Context context, boolean z) {
         int i;
         boolean z2;

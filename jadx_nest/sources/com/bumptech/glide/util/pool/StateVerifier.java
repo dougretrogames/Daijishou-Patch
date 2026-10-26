@@ -1,6 +1,6 @@
 package com.bumptech.glide.util.pool;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class StateVerifier {
     private static final boolean DEBUG = false;
 

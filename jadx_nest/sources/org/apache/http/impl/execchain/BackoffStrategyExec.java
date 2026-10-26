@@ -12,7 +12,7 @@ import org.apache.http.client.protocol.HttpClientContext;
 import org.apache.http.conn.routing.HttpRoute;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BackoffStrategyExec implements ClientExecChain {
     private final BackoffManager backoffManager;
     private final ConnectionBackoffStrategy connectionBackoffStrategy;

@@ -6,7 +6,7 @@ import java.io.RandomAccessFile;
 import net.lingala.zip4j.model.FileHeader;
 import net.lingala.zip4j.model.enums.RandomAccessFileMode;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NumberedSplitFileInputStream extends SplitFileInputStream {
     private RandomAccessFile randomAccessFile;
 

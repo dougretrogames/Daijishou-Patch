@@ -16,7 +16,7 @@ import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 import com.google.android.material.R;
 import com.google.android.material.animation.AnimationUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialSideContainerBackHelper extends MaterialBackAnimationHelper<View> {
     private final float maxScaleXDistanceGrow;
     private final float maxScaleXDistanceShrink;
@@ -112,7 +112,7 @@ public class MaterialSideContainerBackHelper extends MaterialBackAnimationHelper
         objectAnimatorOfFloat.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.motion.MaterialSideContainerBackHelper$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.motion.MaterialSideContainerBackHelper$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         final /* synthetic */ int val$gravity;
         final /* synthetic */ boolean val$leftSwipeEdge;

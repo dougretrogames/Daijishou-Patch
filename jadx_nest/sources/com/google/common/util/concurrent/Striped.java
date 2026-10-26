@@ -23,7 +23,7 @@ import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class Striped<L> {
     private static final int ALL_SET = -1;
@@ -33,7 +33,7 @@ public abstract class Striped<L> {
         return new ReentrantReadWriteLock();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int smear(int hashCode) {
         int i = hashCode ^ ((hashCode >>> 20) ^ (hashCode >>> 12));
         return (i >>> 4) ^ ((i >>> 7) ^ i);
@@ -125,7 +125,7 @@ public abstract class Striped<L> {
         return lazy(stripes, new Striped$$ExternalSyntheticLambda0());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class WeakSafeReadWriteLock implements ReadWriteLock {
         private final ReadWriteLock delegate = new ReentrantReadWriteLock();
 
@@ -326,12 +326,12 @@ public abstract class Striped<L> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int ceilToPowerOfTwo(int x) {
         return 1 << IntMath.log2(x, RoundingMode.CEILING);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class PaddedLock extends ReentrantLock {
         long unused1;
         long unused2;
@@ -342,7 +342,7 @@ public abstract class Striped<L> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class PaddedSemaphore extends Semaphore {
         long unused1;
         long unused2;

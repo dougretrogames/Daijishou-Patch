@@ -6,7 +6,7 @@ import android.widget.FrameLayout;
 import com.google.android.material.navigation.NavigationBarItemView;
 import com.google.android.material.navigation.NavigationBarMenuView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class NavigationRailMenuView extends NavigationBarMenuView {
     private int itemMinimumHeight;
     private final FrameLayout.LayoutParams layoutParams;

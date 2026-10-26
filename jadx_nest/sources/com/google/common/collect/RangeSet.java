@@ -5,7 +5,7 @@ import java.lang.Comparable;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock("Use ImmutableRangeSet or TreeRangeSet")
 @ElementTypesAreNonnullByDefault
 public interface RangeSet<C extends Comparable> {

@@ -12,7 +12,7 @@ import org.jsoup.internal.QuietAppendable;
 import org.jsoup.internal.SharedConstants;
 import org.jsoup.internal.StringUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Attribute implements Map.Entry<String, String>, Cloneable {
     private String key;
     Attributes parent;

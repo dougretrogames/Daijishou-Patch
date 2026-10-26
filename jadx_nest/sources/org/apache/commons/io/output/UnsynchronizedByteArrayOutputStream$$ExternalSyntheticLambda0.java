@@ -3,8 +3,8 @@ package org.apache.commons.io.output;
 import org.apache.commons.io.function.IOSupplier;
 import org.apache.commons.io.input.UnsynchronizedByteArrayInputStream;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class UnsynchronizedByteArrayOutputStream$$ExternalSyntheticLambda0 implements IOSupplier {
     public final /* synthetic */ byte[] f$0;
     public final /* synthetic */ int f$1;

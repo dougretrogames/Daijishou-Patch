@@ -10,8 +10,8 @@ import org.codehaus.groovy.runtime.typehandling.ShortTypeHandling;
 import org.gradle.api.Named;
 import org.gradle.api.file.FileCollection;
 
-/* JADX INFO: compiled from: ExecutableLocator.groovy */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ExecutableLocator.groovy */
+/* INFO: loaded from: classes4.dex */
 public class ExecutableLocator implements Named, GroovyObject {
     private static /* synthetic */ ClassInfo $staticClassInfo;
     private static /* synthetic */ ClassInfo $staticClassInfo$;

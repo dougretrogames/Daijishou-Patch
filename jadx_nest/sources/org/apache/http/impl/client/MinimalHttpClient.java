@@ -27,7 +27,7 @@ import org.apache.http.protocol.HttpContext;
 import org.apache.http.protocol.HttpRequestExecutor;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class MinimalHttpClient extends CloseableHttpClient {
     private final HttpClientConnectionManager connManager;
     private final HttpParams params = new BasicHttpParams();
@@ -70,7 +70,7 @@ class MinimalHttpClient extends CloseableHttpClient {
         this.connManager.shutdown();
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.client.MinimalHttpClient$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.client.MinimalHttpClient$1, reason: invalid class name */
     class AnonymousClass1 implements ClientConnectionManager {
         AnonymousClass1() {
         }

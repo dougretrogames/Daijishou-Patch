@@ -16,20 +16,20 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Lambda;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: WindowInfo.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: WindowInfo.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0018\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a0\u0010\u0000\u001a\u00020\u00012!\u0010\u0002\u001a\u001d\u0012\u0013\u0012\u00110\u0004¢\u0006\f\b\u0005\u0012\b\b\u0006\u0012\u0004\b\b(\u0007\u0012\u0004\u0012\u00020\u00010\u0003H\u0001¢\u0006\u0002\u0010\b¨\u0006\t"}, d2 = {"WindowFocusObserver", "", "onWindowFocusChanged", "Lkotlin/Function1;", "", "Lkotlin/ParameterName;", "name", "isWindowFocused", "(Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)V", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class WindowInfoKt {
 
-    /* JADX INFO: renamed from: androidx.compose.ui.platform.WindowInfoKt$WindowFocusObserver$2, reason: invalid class name */
-    /* JADX INFO: compiled from: WindowInfo.kt */
+    /* INFO: renamed from: androidx.compose.ui.platform.WindowInfoKt$WindowFocusObserver$2, reason: invalid class name */
+    /* INFO: compiled from: WindowInfo.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda implements Function2<Composer, Integer, Unit> {
         final /* synthetic */ int $$changed;
         final /* synthetic */ Function1<Boolean, Unit> $onWindowFocusChanged;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass2(Function1<? super Boolean, Unit> function1, int i) {
             super(2);
             this.$onWindowFocusChanged = function1;

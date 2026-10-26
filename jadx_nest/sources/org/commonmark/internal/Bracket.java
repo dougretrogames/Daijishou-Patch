@@ -2,7 +2,7 @@ package org.commonmark.internal;
 
 import org.commonmark.node.Text;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Bracket {
     public boolean allowed = true;
     public boolean bracketAfter = false;

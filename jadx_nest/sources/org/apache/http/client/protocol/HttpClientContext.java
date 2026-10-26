@@ -18,7 +18,7 @@ import org.apache.http.protocol.BasicHttpContext;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.protocol.HttpCoreContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpClientContext extends HttpCoreContext {
     public static final String AUTHSCHEME_REGISTRY = "http.authscheme-registry";
     public static final String AUTH_CACHE = "http.auth.auth-cache";

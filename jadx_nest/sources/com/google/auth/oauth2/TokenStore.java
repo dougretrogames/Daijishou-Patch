@@ -2,7 +2,7 @@ package com.google.auth.oauth2;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface TokenStore {
     void delete(String str) throws IOException;
 

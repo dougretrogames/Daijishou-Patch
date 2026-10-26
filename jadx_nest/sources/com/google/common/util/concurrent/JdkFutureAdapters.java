@@ -7,7 +7,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class JdkFutureAdapters {
     public static <V> ListenableFuture<V> listenInPoolThread(Future<V> future) {
@@ -25,7 +25,7 @@ public final class JdkFutureAdapters {
         return new ListenableFutureAdapter(future, executor);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class ListenableFutureAdapter<V> extends ForwardingFuture<V> implements ListenableFuture<V> {
         private static final Executor defaultAdapterExecutor;
         private static final ThreadFactory threadFactory;
@@ -51,7 +51,7 @@ public final class JdkFutureAdapters {
             this.adapterExecutor = (Executor) Preconditions.checkNotNull(adapterExecutor);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.util.concurrent.ForwardingFuture, com.google.common.collect.ForwardingObject
         public Future<V> delegate() {
             return this.delegate;
@@ -69,7 +69,7 @@ public final class JdkFutureAdapters {
             }
         }
 
-        /* JADX INFO: renamed from: lambda$addListener$0$com-google-common-util-concurrent-JdkFutureAdapters$ListenableFutureAdapter, reason: not valid java name */
+        /* INFO: renamed from: lambda$addListener$0$com-google-common-util-concurrent-JdkFutureAdapters$ListenableFutureAdapter, reason: not valid java name */
         /* synthetic */ void m3375x6e801c7a() {
             try {
                 Uninterruptibles.getUninterruptibly(this.delegate);

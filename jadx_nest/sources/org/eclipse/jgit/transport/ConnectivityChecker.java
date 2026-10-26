@@ -8,7 +8,7 @@ import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface ConnectivityChecker {
     void checkConnectivity(ConnectivityCheckInfo connectivityCheckInfo, Set<ObjectId> set, ProgressMonitor progressMonitor) throws IOException;
 

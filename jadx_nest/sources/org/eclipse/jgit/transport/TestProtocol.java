@@ -13,7 +13,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.transport.resolver.ReceivePackFactory;
 import org.eclipse.jgit.transport.resolver.UploadPackFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TestProtocol<C> extends TransportProtocol {
     private static final String SCHEME = "test";
     private static BasePackFetchConnection.FetchConfig fetchConfig;
@@ -92,7 +92,7 @@ public class TestProtocol<C> extends TransportProtocol {
             this.handle = handle;
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.transport.TestProtocol$TransportInternal$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.transport.TestProtocol$TransportInternal$1, reason: invalid class name */
         class AnonymousClass1 extends InternalFetchConnection<C> {
             AnonymousClass1(PackTransport packTransport, UploadPackFactory uploadPackFactory, Object obj, Repository repository) throws TransportException {
                 super(packTransport, uploadPackFactory, obj, repository);

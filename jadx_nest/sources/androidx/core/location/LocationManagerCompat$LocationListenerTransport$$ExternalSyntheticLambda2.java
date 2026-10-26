@@ -2,8 +2,8 @@ package androidx.core.location;
 
 import java.util.List;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class LocationManagerCompat$LocationListenerTransport$$ExternalSyntheticLambda2 implements Runnable {
     public final /* synthetic */ LocationManagerCompat.LocationListenerTransport f$0;
     public final /* synthetic */ List f$1;

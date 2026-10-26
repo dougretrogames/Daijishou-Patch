@@ -7,7 +7,7 @@ import android.system.Os;
 import android.system.OsConstants;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ParcelFileDescriptorRewinder implements DataRewinder<ParcelFileDescriptor> {
     private final InternalRewinder rewinder;
 
@@ -23,7 +23,7 @@ public final class ParcelFileDescriptorRewinder implements DataRewinder<ParcelFi
         this.rewinder = new InternalRewinder(parcelFileDescriptor);
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.load.data.DataRewinder
     public ParcelFileDescriptor rewindAndGet() throws IOException {
         return this.rewinder.rewind();

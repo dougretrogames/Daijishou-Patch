@@ -21,7 +21,7 @@ import javax.annotation.Nullable;
 import javax.net.ssl.SSLPeerUnverifiedException;
 import javax.net.ssl.SSLSession;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class InternalChannelz {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private static final Logger log = Logger.getLogger(InternalChannelz.class.getName());

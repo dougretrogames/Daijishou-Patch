@@ -4,7 +4,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface MenuProvider {
     void onCreateMenu(Menu menu, MenuInflater menuInflater);
 

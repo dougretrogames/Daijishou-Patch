@@ -13,7 +13,7 @@ import androidx.appcompat.view.menu.MenuBuilder;
 import androidx.appcompat.view.menu.MenuPopupHelper;
 import androidx.appcompat.view.menu.ShowableListMenu;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class PopupMenu {
     private final View mAnchor;
     private final Context mContext;
@@ -51,7 +51,7 @@ public class PopupMenu {
         menuPopupHelper.setOnDismissListener(new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.PopupMenu$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.PopupMenu$1, reason: invalid class name */
     class AnonymousClass1 implements MenuBuilder.Callback {
         @Override // androidx.appcompat.view.menu.MenuBuilder.Callback
         public void onMenuModeChange(MenuBuilder menuBuilder) {
@@ -69,7 +69,7 @@ public class PopupMenu {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.PopupMenu$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.PopupMenu$2, reason: invalid class name */
     class AnonymousClass2 implements PopupWindow.OnDismissListener {
         AnonymousClass2() {
         }
@@ -90,7 +90,7 @@ public class PopupMenu {
         return this.mPopup.getGravity();
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.PopupMenu$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.PopupMenu$3, reason: invalid class name */
     class AnonymousClass3 extends ForwardingListener {
         AnonymousClass3(View view) {
             super(view);

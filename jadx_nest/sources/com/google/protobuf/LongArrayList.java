@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.RandomAccess;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class LongArrayList extends AbstractProtobufList<Long> implements Internal.LongList, RandomAccess, PrimitiveNonBoxingCollection {
     private static final LongArrayList EMPTY_LIST = new LongArrayList(new long[0], 0, false);
     private long[] array;
@@ -67,7 +67,7 @@ final class LongArrayList extends AbstractProtobufList<Long> implements Internal
     }
 
     @Override // com.google.protobuf.Internal.ProtobufList, com.google.protobuf.Internal.BooleanList
-    /* JADX INFO: renamed from: mutableCopyWithCapacity */
+    /* INFO: renamed from: mutableCopyWithCapacity */
     public Internal.ProtobufList<Long> mutableCopyWithCapacity2(int capacity) {
         if (capacity < this.size) {
             throw new IllegalArgumentException();

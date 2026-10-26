@@ -3,8 +3,8 @@ package com.google.common.io;
 import java.io.IOException;
 import java.nio.file.attribute.FileAttribute;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class TempFileCreator$JavaNioCreator$$ExternalSyntheticLambda4 implements TempFileCreator.JavaNioCreator.PermissionSupplier {
     public final /* synthetic */ IOException f$0;
 

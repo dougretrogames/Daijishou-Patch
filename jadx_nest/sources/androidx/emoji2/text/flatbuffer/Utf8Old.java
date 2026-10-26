@@ -8,11 +8,11 @@ import java.nio.charset.CharsetEncoder;
 import java.nio.charset.CoderResult;
 import java.nio.charset.StandardCharsets;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Utf8Old extends Utf8 {
     private static final ThreadLocal<Cache> CACHE = ThreadLocal.withInitial(new Utf8Old$$ExternalSyntheticLambda0());
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class Cache {
         CharSequence lastInput = null;
         ByteBuffer lastOutput = null;

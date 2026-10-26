@@ -8,7 +8,7 @@ import org.apache.commons.collections4.iterators.AbstractIteratorDecorator;
 import org.apache.commons.collections4.keyvalue.AbstractMapEntryDecorator;
 import org.apache.commons.collections4.set.AbstractSetDecorator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class AbstractInputCheckedMapDecorator<K, V> extends AbstractMapDecorator<K, V> {
     protected abstract V checkSetValue(V v);
 
@@ -39,7 +39,7 @@ abstract class AbstractInputCheckedMapDecorator<K, V> extends AbstractMapDecorat
             return array;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator, java.util.Collection
         public <T> T[] toArray(T[] tArr) {
             T[] tArr2 = (T[]) decorated().toArray(tArr.length > 0 ? (Object[]) Array.newInstance(tArr.getClass().getComponentType(), 0) : tArr);

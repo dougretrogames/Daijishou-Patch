@@ -13,7 +13,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ExpandCollapseAnimationHelper {
     private ValueAnimator.AnimatorUpdateListener additionalUpdateListener;
     private final View collapsedView;
@@ -36,7 +36,7 @@ public class ExpandCollapseAnimationHelper {
         return animatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.ExpandCollapseAnimationHelper$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.ExpandCollapseAnimationHelper$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }
@@ -54,7 +54,7 @@ public class ExpandCollapseAnimationHelper {
         return animatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.ExpandCollapseAnimationHelper$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.ExpandCollapseAnimationHelper$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         AnonymousClass2() {
         }
@@ -121,7 +121,7 @@ public class ExpandCollapseAnimationHelper {
         return valueAnimatorOfObject;
     }
 
-    /* JADX INFO: renamed from: lambda$getExpandCollapseAnimator$0$com-google-android-material-internal-ExpandCollapseAnimationHelper, reason: not valid java name */
+    /* INFO: renamed from: lambda$getExpandCollapseAnimator$0$com-google-android-material-internal-ExpandCollapseAnimationHelper, reason: not valid java name */
     /* synthetic */ void m3308xeb41e2ac(Rect rect, ValueAnimator valueAnimator) {
         ViewUtils.setBoundsFromRect(this.expandedView, rect);
     }

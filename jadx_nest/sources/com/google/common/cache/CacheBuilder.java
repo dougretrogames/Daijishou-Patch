@@ -13,7 +13,7 @@ import java.util.logging.Logger;
 import javax.annotation.CheckForNull;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class CacheBuilder<K, V> {
     private static final int DEFAULT_CONCURRENCY_LEVEL = 4;
@@ -73,7 +73,7 @@ public final class CacheBuilder<K, V> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.cache.CacheBuilder$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.cache.CacheBuilder$1, reason: invalid class name */
     class AnonymousClass1 implements AbstractCache.StatsCounter {
         @Override // com.google.common.cache.AbstractCache.StatsCounter
         public void recordEviction() {
@@ -104,19 +104,19 @@ public final class CacheBuilder<K, V> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.cache.CacheBuilder$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.cache.CacheBuilder$2, reason: invalid class name */
     class AnonymousClass2 implements Supplier<AbstractCache.StatsCounter> {
         AnonymousClass2() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.common.base.Supplier
         public AbstractCache.StatsCounter get() {
             return new AbstractCache.SimpleStatsCounter();
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.cache.CacheBuilder$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.cache.CacheBuilder$3, reason: invalid class name */
     class AnonymousClass3 extends Ticker {
         @Override // com.google.common.base.Ticker
         public long read() {
@@ -229,7 +229,7 @@ public final class CacheBuilder<K, V> {
         return this;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public <K1 extends K, V1 extends V> CacheBuilder<K1, V1> weigher(Weigher<? super K1, ? super V1> weigher) {
         Preconditions.checkState(this.weigher == null);
         if (this.strictParsing) {
@@ -348,7 +348,7 @@ public final class CacheBuilder<K, V> {
         return recordsTime ? Ticker.systemTicker() : NULL_TICKER;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public <K1 extends K, V1 extends V> CacheBuilder<K1, V1> removalListener(RemovalListener<? super K1, ? super V1> listener) {
         Preconditions.checkState(this.removalListener == null);
         this.removalListener = (RemovalListener) Preconditions.checkNotNull(listener);

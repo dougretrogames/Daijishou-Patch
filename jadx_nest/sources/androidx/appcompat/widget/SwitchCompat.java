@@ -38,7 +38,7 @@ import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class SwitchCompat extends CompoundButton implements EmojiCompatConfigurationView {
     private static final String ACCESSIBILITY_EVENT_CLASS_NAME = "android.widget.Switch";
     private static final int MONOSPACE = 3;
@@ -157,7 +157,7 @@ public class SwitchCompat extends CompoundButton implements EmojiCompatConfigura
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.SwitchCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.SwitchCompat$1, reason: invalid class name */
     class AnonymousClass1 extends Property<SwitchCompat, Float> {
         AnonymousClass1(Class cls, String str) {
             super(cls, str);
@@ -626,9 +626,9 @@ public class SwitchCompat extends CompoundButton implements EmojiCompatConfigura
         return f > ((float) i4) && f < ((float) (i5 + i6)) && f2 > ((float) i3) && f2 < ((float) (this.mSwitchBottom + i6));
     }
 
-    /* JADX WARN: Code duplicated, block: B:34:0x0089  */
-    /* JADX WARN: Code duplicated, block: B:36:0x008d  */
-    /* JADX WARN: Code duplicated, block: B:38:0x0094  */
+    /* WARN: Code duplicated, block: B:34:0x0089  */
+    /* WARN: Code duplicated, block: B:36:0x008d  */
+    /* WARN: Code duplicated, block: B:38:0x0094  */
     @Override // android.widget.TextView, android.view.View
     public boolean onTouchEvent(MotionEvent motionEvent) {
         float f;

@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Collection;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HashMultiSet<E> extends AbstractMapMultiSet<E> implements Serializable {
     private static final long serialVersionUID = 20150610;
 

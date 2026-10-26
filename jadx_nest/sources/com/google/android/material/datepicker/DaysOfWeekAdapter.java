@@ -9,7 +9,7 @@ import com.google.android.material.R;
 import java.util.Calendar;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class DaysOfWeekAdapter extends BaseAdapter {
     private static final int CALENDAR_DAY_STYLE = 4;
     private static final int NARROW_FORMAT = 4;

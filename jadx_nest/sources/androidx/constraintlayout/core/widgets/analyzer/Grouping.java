@@ -10,7 +10,7 @@ import androidx.constraintlayout.core.widgets.HelperWidget;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Grouping {
     private static final boolean DEBUG = false;
     private static final boolean DEBUG_GROUPING = false;
@@ -20,7 +20,7 @@ public class Grouping {
         return (dimensionBehaviour3 == ConstraintWidget.DimensionBehaviour.FIXED || dimensionBehaviour3 == ConstraintWidget.DimensionBehaviour.WRAP_CONTENT || (dimensionBehaviour3 == ConstraintWidget.DimensionBehaviour.MATCH_PARENT && dimensionBehaviour != ConstraintWidget.DimensionBehaviour.WRAP_CONTENT)) || (dimensionBehaviour4 == ConstraintWidget.DimensionBehaviour.FIXED || dimensionBehaviour4 == ConstraintWidget.DimensionBehaviour.WRAP_CONTENT || (dimensionBehaviour4 == ConstraintWidget.DimensionBehaviour.MATCH_PARENT && dimensionBehaviour2 != ConstraintWidget.DimensionBehaviour.WRAP_CONTENT));
     }
 
-    /* JADX WARN: Code duplicated, block: B:179:0x0357  */
+    /* WARN: Code duplicated, block: B:179:0x0357  */
     public static boolean simpleSolvingPass(ConstraintWidgetContainer constraintWidgetContainer, BasicMeasure.Measurer measurer) {
         WidgetGroup widgetGroup;
         boolean z;

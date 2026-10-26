@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Objects;
 import org.apache.commons.collections4.Closure;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ChainedClosure<T> implements Closure<T>, Serializable {
     private static final long serialVersionUID = -3520677225766901240L;
     private final Closure<? super T>[] iClosures;

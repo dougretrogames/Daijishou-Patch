@@ -17,11 +17,11 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Ref;
 
-/* JADX INFO: compiled from: JvmAnnotatedString.jvm.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: JvmAnnotatedString.jvm.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000*\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\u001a*\u0010\u0000\u001a\u00020\u00012\u0012\u0010\u0002\u001a\u000e\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u0004\u0018\u00010\u00032\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006H\u0002\u001a,\u0010\b\u001a\u00020\t*\u00020\t2\u001e\u0010\b\u001a\u001a\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u000b0\nH\u0000¨\u0006\f"}, d2 = {"collectRangeTransitions", "", "ranges", "", "Landroidx/compose/ui/text/AnnotatedString$Range;", TypedValues.AttributesType.S_TARGET, "Ljava/util/SortedSet;", "", "transform", "Landroidx/compose/ui/text/AnnotatedString;", "Lkotlin/Function3;", "", "ui-text_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class JvmAnnotatedString_jvmKt {
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static final AnnotatedString transform(AnnotatedString annotatedString, Function3<? super String, ? super Integer, ? super Integer, String> function3) {
         ArrayList arrayList;
         ArrayList arrayList2;
@@ -90,8 +90,8 @@ public final class JvmAnnotatedString_jvmKt {
         return new AnnotatedString((String) objectRef.element, arrayList, arrayList2, arrayList3);
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.text.JvmAnnotatedString_jvmKt$transform$1, reason: invalid class name */
-    /* JADX INFO: compiled from: JvmAnnotatedString.jvm.kt */
+    /* INFO: renamed from: androidx.compose.ui.text.JvmAnnotatedString_jvmKt$transform$1, reason: invalid class name */
+    /* INFO: compiled from: JvmAnnotatedString.jvm.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010 \n\u0002\b\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00010\u0003H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "<name for destructuring parameter 0>", "", "invoke", "(Ljava/util/List;)Ljava/lang/Integer;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<List<? extends Integer>, Integer> {
         final /* synthetic */ Map<Integer, Integer> $offsetMap;
@@ -99,8 +99,8 @@ public final class JvmAnnotatedString_jvmKt {
         final /* synthetic */ AnnotatedString $this_transform;
         final /* synthetic */ Function3<String, Integer, Integer, String> $transform;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(Ref.ObjectRef<String> objectRef, Function3<? super String, ? super Integer, ? super Integer, String> function3, AnnotatedString annotatedString, Map<Integer, Integer> map) {
             super(1);
             this.$resultStr = objectRef;
@@ -109,8 +109,8 @@ public final class JvmAnnotatedString_jvmKt {
             this.$offsetMap = map;
         }
 
-        /* JADX WARN: Type inference failed for: r0v8, types: [T, java.lang.String] */
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* WARN: Type inference failed for: r0v8, types: [T, java.lang.String] */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final Integer invoke2(List<Integer> list) {
             int iIntValue = list.get(0).intValue();
             int iIntValue2 = list.get(1).intValue();

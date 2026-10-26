@@ -17,7 +17,7 @@ import java.util.NoSuchElementException;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class HashBiMap<K, V> extends AbstractMap<K, V> implements BiMap<K, V>, Serializable {
     private static final int ABSENT = -1;
@@ -360,7 +360,7 @@ public final class HashBiMap<K, V> extends AbstractMap<K, V> implements BiMap<K,
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void replaceValueInEntry(int entry, @ParametricNullness V newValue, boolean force) {
         Preconditions.checkArgument(entry != -1);
         int iSmearedHash = Hashing.smearedHash(newValue);
@@ -380,7 +380,7 @@ public final class HashBiMap<K, V> extends AbstractMap<K, V> implements BiMap<K,
         insertIntoTableVToK(entry, iSmearedHash);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void replaceKeyInEntry(int entry, @ParametricNullness K newKey, boolean force) {
         int i;
         Preconditions.checkArgument(entry != -1);
@@ -554,7 +554,7 @@ public final class HashBiMap<K, V> extends AbstractMap<K, V> implements BiMap<K,
             this.biMap = biMap;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.HashBiMap$View$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.HashBiMap$View$1, reason: invalid class name */
         class AnonymousClass1 implements Iterator<T> {
             private int expectedModCount;
             private int index;
@@ -746,7 +746,7 @@ public final class HashBiMap<K, V> extends AbstractMap<K, V> implements BiMap<K,
             return true;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.HashBiMap.View
         public Map.Entry<K, V> forEntry(int entry) {
             return new EntryForKey(entry);
@@ -932,7 +932,7 @@ public final class HashBiMap<K, V> extends AbstractMap<K, V> implements BiMap<K,
             return true;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.HashBiMap.View
         public Map.Entry<V, K> forEntry(int entry) {
             return new EntryForValue(this.biMap, entry);

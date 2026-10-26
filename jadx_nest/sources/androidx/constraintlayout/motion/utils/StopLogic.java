@@ -5,7 +5,7 @@ import androidx.constraintlayout.core.motion.utils.StopEngine;
 import androidx.constraintlayout.core.motion.utils.StopLogicEngine;
 import androidx.constraintlayout.motion.widget.MotionInterpolator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class StopLogic extends MotionInterpolator {
     private StopEngine mEngine;
     private SpringStopEngine mSpringStopEngine;

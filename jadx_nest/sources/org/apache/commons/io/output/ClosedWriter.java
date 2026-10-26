@@ -3,7 +3,7 @@ package org.apache.commons.io.output;
 import java.io.IOException;
 import java.io.Writer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ClosedWriter extends Writer {
 
     @Deprecated

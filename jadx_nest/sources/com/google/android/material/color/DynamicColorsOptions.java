@@ -5,7 +5,7 @@ import android.graphics.Bitmap;
 import com.google.android.material.color.utilities.QuantizerCelebi;
 import com.google.android.material.color.utilities.Score;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DynamicColorsOptions {
     private static final DynamicColors.Precondition ALWAYS_ALLOW = new AnonymousClass1();
     private static final DynamicColors.OnAppliedCallback NO_OP_CALLBACK = new AnonymousClass2();
@@ -18,7 +18,7 @@ public class DynamicColorsOptions {
         this(builder);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.color.DynamicColorsOptions$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.color.DynamicColorsOptions$1, reason: invalid class name */
     class AnonymousClass1 implements DynamicColors.Precondition {
         @Override // com.google.android.material.color.DynamicColors.Precondition
         public boolean shouldApplyDynamicColors(Activity activity, int i) {
@@ -29,7 +29,7 @@ public class DynamicColorsOptions {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.color.DynamicColorsOptions$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.color.DynamicColorsOptions$2, reason: invalid class name */
     class AnonymousClass2 implements DynamicColors.OnAppliedCallback {
         @Override // com.google.android.material.color.DynamicColors.OnAppliedCallback
         public void onApplied(Activity activity) {

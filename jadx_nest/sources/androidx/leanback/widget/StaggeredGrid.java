@@ -5,7 +5,7 @@ import androidx.collection.CircularIntArray;
 import java.io.PrintWriter;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 abstract class StaggeredGrid extends Grid {
     protected Object mPendingItem;
     protected int mPendingItemSize;
@@ -132,13 +132,13 @@ abstract class StaggeredGrid extends Grid {
         return false;
     }
 
-    /* JADX WARN: Code duplicated, block: B:16:0x0039  */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:16:0x0039 -> B:17:0x003f). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
-        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+    /* WARN: Code duplicated, block: B:16:0x0039  */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:16:0x0039 -> B:17:0x003f). Please report as a decompilation issue!!! */
+    /* ERROR: decompilerOverflowException in pass: RegionMakerVisitor
+        decompiler.core.utils.exceptions.decompilerOverflowException: Regions stack size limit reached
+        	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     private int calculateOffsetAfterLastItem(int r3) {
         /*

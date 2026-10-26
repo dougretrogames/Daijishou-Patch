@@ -3,8 +3,8 @@ package com.google.common.collect;
 import java.util.Comparator;
 import java.util.function.Supplier;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class ImmutableSortedMultiset$$ExternalSyntheticLambda0 implements Supplier {
     public final /* synthetic */ Comparator f$0;
 

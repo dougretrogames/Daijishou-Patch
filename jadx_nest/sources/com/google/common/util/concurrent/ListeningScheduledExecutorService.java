@@ -4,7 +4,7 @@ import java.util.concurrent.Callable;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public interface ListeningScheduledExecutorService extends ScheduledExecutorService, ListeningExecutorService {
     @Override // java.util.concurrent.ScheduledExecutorService

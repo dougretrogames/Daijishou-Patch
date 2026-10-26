@@ -25,7 +25,7 @@ import androidx.leanback.widget.VerticalGridView;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class SearchSupportFragment extends Fragment {
     private static final String ARG_PREFIX = "androidx.leanback.app.SearchSupportFragment";
     private static final String ARG_QUERY;
@@ -75,7 +75,7 @@ public class SearchSupportFragment extends Fragment {
         ARG_TITLE = canonicalName + ".title";
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.SearchSupportFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.SearchSupportFragment$1, reason: invalid class name */
     class AnonymousClass1 extends ObjectAdapter.DataObserver {
         AnonymousClass1() {
         }
@@ -87,7 +87,7 @@ public class SearchSupportFragment extends Fragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.SearchSupportFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.SearchSupportFragment$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -106,7 +106,7 @@ public class SearchSupportFragment extends Fragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.SearchSupportFragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.SearchSupportFragment$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         AnonymousClass3() {
         }
@@ -138,7 +138,7 @@ public class SearchSupportFragment extends Fragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.SearchSupportFragment$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.SearchSupportFragment$4, reason: invalid class name */
     class AnonymousClass4 implements Runnable {
         AnonymousClass4() {
         }
@@ -150,7 +150,7 @@ public class SearchSupportFragment extends Fragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.SearchSupportFragment$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.SearchSupportFragment$5, reason: invalid class name */
     class AnonymousClass5 implements SearchBar.SearchBarPermissionListener {
         AnonymousClass5() {
         }
@@ -238,7 +238,7 @@ public class SearchSupportFragment extends Fragment {
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.SearchSupportFragment$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.SearchSupportFragment$6, reason: invalid class name */
     class AnonymousClass6 implements SearchBar.SearchBarListener {
         AnonymousClass6() {
         }
@@ -263,7 +263,7 @@ public class SearchSupportFragment extends Fragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.SearchSupportFragment$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.SearchSupportFragment$7, reason: invalid class name */
     class AnonymousClass7 implements OnItemViewSelectedListener {
         AnonymousClass7() {
         }
@@ -277,7 +277,7 @@ public class SearchSupportFragment extends Fragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.SearchSupportFragment$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.SearchSupportFragment$8, reason: invalid class name */
     class AnonymousClass8 implements BrowseFrameLayout.OnFocusSearchListener {
         AnonymousClass8() {
         }

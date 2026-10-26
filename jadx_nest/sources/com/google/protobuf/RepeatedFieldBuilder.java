@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.RandomAccess;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class RepeatedFieldBuilder<MType extends GeneratedMessage, BType extends GeneratedMessage.Builder, IType extends MessageOrBuilder> implements AbstractMessage.BuilderParent {
     private List<SingleFieldBuilder<MType, BType, IType>> builders;
     private BuilderExternalList<MType, BType, IType> externalBuilderList;

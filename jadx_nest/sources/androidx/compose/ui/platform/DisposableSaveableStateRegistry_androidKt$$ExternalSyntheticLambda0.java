@@ -4,8 +4,8 @@ import android.os.Bundle;
 import androidx.compose.runtime.saveable.SaveableStateRegistry;
 import androidx.savedstate.SavedStateRegistry;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class DisposableSaveableStateRegistry_androidKt$$ExternalSyntheticLambda0 implements SavedStateRegistry.SavedStateProvider {
     public final /* synthetic */ SaveableStateRegistry f$0;
 

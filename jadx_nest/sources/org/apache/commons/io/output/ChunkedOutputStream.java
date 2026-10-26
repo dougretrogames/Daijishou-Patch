@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ChunkedOutputStream extends FilterOutputStream {
     private final int chunkSize;
 

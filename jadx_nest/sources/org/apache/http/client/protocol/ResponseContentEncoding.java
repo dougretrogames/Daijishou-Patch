@@ -18,7 +18,7 @@ import org.apache.http.protocol.HTTP;
 import org.apache.http.protocol.HttpContext;
 import org.eclipse.jgit.util.HttpSupport;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ResponseContentEncoding implements HttpResponseInterceptor {
     public static final String UNCOMPRESSED = "http.client.response.uncompressed";
     private final Lookup<InputStreamFactory> decoderRegistry;

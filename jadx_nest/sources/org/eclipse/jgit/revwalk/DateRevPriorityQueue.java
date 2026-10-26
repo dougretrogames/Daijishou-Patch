@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class DateRevPriorityQueue extends DateRevQueue {
     private PriorityQueue<RevCommitEntry> queue;
     private final AtomicInteger sequence;
@@ -106,7 +106,7 @@ class DateRevPriorityQueue extends DateRevQueue {
         return sb.toString();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class RevCommitEntry {
         private final RevCommit entry;
         private final int insertSequenceNumber;

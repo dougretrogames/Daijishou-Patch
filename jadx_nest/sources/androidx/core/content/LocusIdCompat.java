@@ -5,7 +5,7 @@ import android.os.Build;
 import androidx.core.util.Preconditions;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class LocusIdCompat {
     private final String mId;
     private final LocusId mWrapped;

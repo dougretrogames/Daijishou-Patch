@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import org.apache.commons.codec.Resources;
 import org.eclipse.jgit.transport.RefSpec;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Languages {
     public static final String ANY = "any";
     private final Set<String> languages;
@@ -104,7 +104,7 @@ public class Languages {
         }
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.codec.language.bm.Languages$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.codec.language.bm.Languages$1, reason: invalid class name */
     class AnonymousClass1 extends LanguageSet {
         @Override // org.apache.commons.codec.language.bm.Languages.LanguageSet
         public boolean contains(String str) {
@@ -144,7 +144,7 @@ public class Languages {
         }
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.codec.language.bm.Languages$2, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.codec.language.bm.Languages$2, reason: invalid class name */
     class AnonymousClass2 extends LanguageSet {
         @Override // org.apache.commons.codec.language.bm.Languages.LanguageSet
         public boolean contains(String str) {

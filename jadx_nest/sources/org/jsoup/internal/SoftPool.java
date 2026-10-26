@@ -4,7 +4,7 @@ import java.lang.ref.SoftReference;
 import java.util.ArrayDeque;
 import java.util.function.Supplier;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SoftPool<T> {
     static final int MaxIdle = 12;
     private final Supplier<T> initializer;

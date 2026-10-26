@@ -5,7 +5,7 @@ import java.util.Objects;
 import java.util.function.Consumer;
 import java.util.function.IntConsumer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @FunctionalInterface
 public interface IOIntConsumer {
     public static final IOIntConsumer NOOP = new IOIntConsumer$$ExternalSyntheticLambda2();

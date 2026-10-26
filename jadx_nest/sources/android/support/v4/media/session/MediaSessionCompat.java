@@ -43,7 +43,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MediaSessionCompat {
     public static final String ACTION_ARGUMENT_CAPTIONING_ENABLED = "android.support.v4.media.session.action.ARGUMENT_CAPTIONING_ENABLED";
     public static final String ACTION_ARGUMENT_EXTRAS = "android.support.v4.media.session.action.ARGUMENT_EXTRAS";
@@ -195,13 +195,13 @@ public class MediaSessionCompat {
         }
     }
 
-    /* JADX INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$1, reason: invalid class name */
+    /* INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$1, reason: invalid class name */
     class AnonymousClass1 extends Callback {
         AnonymousClass1() {
         }
     }
 
-    /* JADX INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$2, reason: invalid class name */
+    /* INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$2, reason: invalid class name */
     class AnonymousClass2 extends Callback {
         AnonymousClass2() {
         }
@@ -216,7 +216,7 @@ public class MediaSessionCompat {
         this.mController = new MediaControllerCompat(context, this);
     }
 
-    /* JADX INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$3, reason: invalid class name */
+    /* INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$3, reason: invalid class name */
     class AnonymousClass3 extends Callback {
         AnonymousClass3() {
         }
@@ -885,18 +885,18 @@ public class MediaSessionCompat {
             return new Token(token.mInner, iMediaSessionAsInterface, bundle2);
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$Token$1, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$Token$1, reason: invalid class name */
         static class AnonymousClass1 implements Parcelable.Creator<Token> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public Token createFromParcel(Parcel parcel) {
                 return new Token(parcel.readParcelable(null));
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public Token[] newArray(int i) {
                 return new Token[i];
@@ -980,18 +980,18 @@ public class MediaSessionCompat {
             return arrayList;
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$QueueItem$1, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$QueueItem$1, reason: invalid class name */
         static class AnonymousClass1 implements Parcelable.Creator<QueueItem> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public QueueItem createFromParcel(Parcel parcel) {
                 return new QueueItem(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public QueueItem[] newArray(int i) {
                 return new QueueItem[i];
@@ -1020,18 +1020,18 @@ public class MediaSessionCompat {
             this.mResultReceiver = (ResultReceiver) ResultReceiver.CREATOR.createFromParcel(parcel);
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper$1, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$ResultReceiverWrapper$1, reason: invalid class name */
         static class AnonymousClass1 implements Parcelable.Creator<ResultReceiverWrapper> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public ResultReceiverWrapper createFromParcel(Parcel parcel) {
                 return new ResultReceiverWrapper(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public ResultReceiverWrapper[] newArray(int i) {
                 return new ResultReceiverWrapper[i];
@@ -1151,7 +1151,7 @@ public class MediaSessionCompat {
         public void setMediaButtonReceiver(PendingIntent pendingIntent) {
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$MediaSessionImplBase$1, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$MediaSessionImplBase$1, reason: invalid class name */
         class AnonymousClass1 extends VolumeProviderCompat.Callback {
             AnonymousClass1() {
             }
@@ -2211,7 +2211,7 @@ public class MediaSessionCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi18$1, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi18$1, reason: invalid class name */
         class AnonymousClass1 implements RemoteControlClient.OnPlaybackPositionUpdateListener {
             AnonymousClass1() {
             }
@@ -2290,7 +2290,7 @@ public class MediaSessionCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi19$1, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.session.MediaSessionCompat$MediaSessionImplApi19$1, reason: invalid class name */
         class AnonymousClass1 implements RemoteControlClient.OnMetadataUpdateListener {
             AnonymousClass1() {
             }

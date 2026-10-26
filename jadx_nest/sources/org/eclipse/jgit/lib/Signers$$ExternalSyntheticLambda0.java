@@ -2,8 +2,8 @@ package org.eclipse.jgit.lib;
 
 import java.util.function.Function;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class Signers$$ExternalSyntheticLambda0 implements Function {
     public final /* synthetic */ GpgConfig.GpgFormat f$0;
 

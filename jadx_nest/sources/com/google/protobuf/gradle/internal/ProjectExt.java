@@ -17,8 +17,8 @@ import org.codehaus.groovy.runtime.typehandling.ShortTypeHandling;
 import org.gradle.api.Action;
 import org.gradle.api.Project;
 
-/* JADX INFO: compiled from: ProjectExt.groovy */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ProjectExt.groovy */
+/* INFO: loaded from: classes4.dex */
 public class ProjectExt implements GroovyObject {
     private static /* synthetic */ ClassInfo $staticClassInfo;
     private static /* synthetic */ ClassInfo $staticClassInfo$;

@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.SortedSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public interface SortedSetMultimap<K, V> extends SetMultimap<K, V> {
     @Override // com.google.common.collect.SetMultimap, com.google.common.collect.Multimap, com.google.common.collect.ListMultimap

@@ -1,6 +1,6 @@
 package org.apache.commons.collections4.iterators;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractEmptyMapIterator<K, V> extends AbstractEmptyIterator<K> {
     @Override // org.apache.commons.collections4.iterators.AbstractEmptyIterator
     @Deprecated

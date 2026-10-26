@@ -4,7 +4,7 @@ import java.util.Set;
 import org.apache.commons.collections4.Transformer;
 import org.apache.commons.collections4.collection.TransformedCollection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformedSet<E> extends TransformedCollection<E> implements Set<E> {
     private static final long serialVersionUID = 306127383500410386L;
 

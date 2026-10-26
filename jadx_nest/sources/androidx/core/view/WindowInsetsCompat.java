@@ -15,7 +15,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class WindowInsetsCompat {
     public static final WindowInsetsCompat CONSUMED;
     private static final String TAG = "WindowInsetsCompat";
@@ -925,7 +925,7 @@ public class WindowInsetsCompat {
         void setVisible(int i, boolean z) {
         }
 
-        /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'this' call moved to the top of the method (can break code semantics) */
         BuilderImpl() {
             this(new WindowInsetsCompat((WindowInsetsCompat) null));
         }

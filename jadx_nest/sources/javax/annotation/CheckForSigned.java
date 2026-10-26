@@ -5,7 +5,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import javax.annotation.meta.When;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
 @Nonnegative(when = When.MAYBE)

@@ -2,7 +2,7 @@ package androidx.emoji2.text.flatbuffer;
 
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class Utf8Safe extends Utf8 {
     private static int computeEncodedLength(CharSequence charSequence) {
         int length = charSequence.length();

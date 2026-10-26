@@ -4,7 +4,7 @@ import com.google.api.client.googleapis.services.json.AbstractGoogleJsonClientRe
 import com.google.api.client.http.HttpHeaders;
 import com.google.api.client.util.Key;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class KgsearchRequest<T> extends AbstractGoogleJsonClientRequest<T> {
 
     @Key("$.xgafv")
@@ -48,7 +48,7 @@ public abstract class KgsearchRequest<T> extends AbstractGoogleJsonClientRequest
         return this.$Xgafv;
     }
 
-    /* JADX INFO: renamed from: set$Xgafv */
+    /* INFO: renamed from: set$Xgafv */
     public KgsearchRequest<T> set$Xgafv2(String str) {
         this.$Xgafv = str;
         return this;
@@ -58,7 +58,7 @@ public abstract class KgsearchRequest<T> extends AbstractGoogleJsonClientRequest
         return this.accessToken;
     }
 
-    /* JADX INFO: renamed from: setAccessToken */
+    /* INFO: renamed from: setAccessToken */
     public KgsearchRequest<T> setAccessToken2(String str) {
         this.accessToken = str;
         return this;
@@ -68,7 +68,7 @@ public abstract class KgsearchRequest<T> extends AbstractGoogleJsonClientRequest
         return this.alt;
     }
 
-    /* JADX INFO: renamed from: setAlt */
+    /* INFO: renamed from: setAlt */
     public KgsearchRequest<T> setAlt2(String str) {
         this.alt = str;
         return this;
@@ -78,7 +78,7 @@ public abstract class KgsearchRequest<T> extends AbstractGoogleJsonClientRequest
         return this.callback;
     }
 
-    /* JADX INFO: renamed from: setCallback */
+    /* INFO: renamed from: setCallback */
     public KgsearchRequest<T> setCallback2(String str) {
         this.callback = str;
         return this;
@@ -88,7 +88,7 @@ public abstract class KgsearchRequest<T> extends AbstractGoogleJsonClientRequest
         return this.fields;
     }
 
-    /* JADX INFO: renamed from: setFields */
+    /* INFO: renamed from: setFields */
     public KgsearchRequest<T> setFields2(String str) {
         this.fields = str;
         return this;
@@ -98,7 +98,7 @@ public abstract class KgsearchRequest<T> extends AbstractGoogleJsonClientRequest
         return this.key;
     }
 
-    /* JADX INFO: renamed from: setKey */
+    /* INFO: renamed from: setKey */
     public KgsearchRequest<T> setKey2(String str) {
         this.key = str;
         return this;
@@ -108,7 +108,7 @@ public abstract class KgsearchRequest<T> extends AbstractGoogleJsonClientRequest
         return this.oauthToken;
     }
 
-    /* JADX INFO: renamed from: setOauthToken */
+    /* INFO: renamed from: setOauthToken */
     public KgsearchRequest<T> setOauthToken2(String str) {
         this.oauthToken = str;
         return this;
@@ -118,7 +118,7 @@ public abstract class KgsearchRequest<T> extends AbstractGoogleJsonClientRequest
         return this.prettyPrint;
     }
 
-    /* JADX INFO: renamed from: setPrettyPrint */
+    /* INFO: renamed from: setPrettyPrint */
     public KgsearchRequest<T> setPrettyPrint2(Boolean bool) {
         this.prettyPrint = bool;
         return this;
@@ -128,7 +128,7 @@ public abstract class KgsearchRequest<T> extends AbstractGoogleJsonClientRequest
         return this.quotaUser;
     }
 
-    /* JADX INFO: renamed from: setQuotaUser */
+    /* INFO: renamed from: setQuotaUser */
     public KgsearchRequest<T> setQuotaUser2(String str) {
         this.quotaUser = str;
         return this;
@@ -138,7 +138,7 @@ public abstract class KgsearchRequest<T> extends AbstractGoogleJsonClientRequest
         return this.uploadType;
     }
 
-    /* JADX INFO: renamed from: setUploadType */
+    /* INFO: renamed from: setUploadType */
     public KgsearchRequest<T> setUploadType2(String str) {
         this.uploadType = str;
         return this;
@@ -148,7 +148,7 @@ public abstract class KgsearchRequest<T> extends AbstractGoogleJsonClientRequest
         return this.uploadProtocol;
     }
 
-    /* JADX INFO: renamed from: setUploadProtocol */
+    /* INFO: renamed from: setUploadProtocol */
     public KgsearchRequest<T> setUploadProtocol2(String str) {
         this.uploadProtocol = str;
         return this;

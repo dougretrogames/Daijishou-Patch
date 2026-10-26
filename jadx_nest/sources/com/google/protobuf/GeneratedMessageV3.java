@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @Deprecated
 public abstract class GeneratedMessageV3 extends GeneratedMessage {
     private static final long serialVersionUID = 1;

@@ -2,7 +2,7 @@ package org.apache.commons.collections4;
 
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface MultiMap<K, V> extends IterableMap<K, Object> {
     @Override // java.util.Map, org.apache.commons.collections4.Get

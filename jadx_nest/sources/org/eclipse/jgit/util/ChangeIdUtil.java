@@ -6,7 +6,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectInserter;
 import org.eclipse.jgit.lib.PersonIdent;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ChangeIdUtil {
     static final String CHANGE_ID = "Change-Id:";
     private static final Pattern issuePattern = Pattern.compile("^(Bug|Issue)[a-zA-Z0-9-]*:.*$");

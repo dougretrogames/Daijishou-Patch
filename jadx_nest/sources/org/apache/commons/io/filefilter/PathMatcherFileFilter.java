@@ -5,7 +5,7 @@ import java.nio.file.Path;
 import java.nio.file.PathMatcher;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PathMatcherFileFilter extends AbstractFileFilter {
     private final PathMatcher pathMatcher;
 

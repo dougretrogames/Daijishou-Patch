@@ -16,7 +16,7 @@ import java.util.Objects;
 import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class ImmutableRangeSet<C extends Comparable> extends AbstractRangeSet<C> implements Serializable {
 
@@ -218,7 +218,7 @@ public final class ImmutableRangeSet<C extends Comparable> extends AbstractRange
             return true;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         ComplementRanges() {
             boolean zHasLowerBound = ((Range) ImmutableRangeSet.this.ranges.get(0)).hasLowerBound();
             this.positiveBoundedBelow = zHasLowerBound;
@@ -234,7 +234,7 @@ public final class ImmutableRangeSet<C extends Comparable> extends AbstractRange
             return this.size;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.List
         public Range<C> get(int i) {
             Cut<C> cutBelowAll;
@@ -317,7 +317,7 @@ public final class ImmutableRangeSet<C extends Comparable> extends AbstractRange
         return new AnonymousClass1(i, iBinarySearch, range);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ImmutableRangeSet$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ImmutableRangeSet$1, reason: invalid class name */
     class AnonymousClass1 extends ImmutableList<Range<C>> {
         final /* synthetic */ int val$fromIndex;
         final /* synthetic */ int val$length;
@@ -339,7 +339,7 @@ public final class ImmutableRangeSet<C extends Comparable> extends AbstractRange
             return this.val$length;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.List
         public Range<C> get(int index) {
             Preconditions.checkElementIndex(index, this.val$length);
@@ -397,7 +397,7 @@ public final class ImmutableRangeSet<C extends Comparable> extends AbstractRange
             this.domain = domain;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
         public int size() {
             Integer numValueOf = this.size;
@@ -416,7 +416,7 @@ public final class ImmutableRangeSet<C extends Comparable> extends AbstractRange
             return numValueOf.intValue();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.ImmutableRangeSet$AsSet$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.ImmutableRangeSet$AsSet$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<C> {
             Iterator<C> elemItr = Iterators.emptyIterator();
             final Iterator<Range<C>> rangeItr;
@@ -425,7 +425,7 @@ public final class ImmutableRangeSet<C extends Comparable> extends AbstractRange
                 this.rangeItr = ImmutableRangeSet.this.ranges.iterator();
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
             public C computeNext() {
@@ -445,7 +445,7 @@ public final class ImmutableRangeSet<C extends Comparable> extends AbstractRange
             return new AnonymousClass1();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.ImmutableRangeSet$AsSet$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.ImmutableRangeSet$AsSet$2, reason: invalid class name */
         class AnonymousClass2 extends AbstractIterator<C> {
             Iterator<C> elemItr = Iterators.emptyIterator();
             final Iterator<Range<C>> rangeItr;
@@ -454,7 +454,7 @@ public final class ImmutableRangeSet<C extends Comparable> extends AbstractRange
                 this.rangeItr = ImmutableRangeSet.this.ranges.reverse().iterator();
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
             public C computeNext() {
@@ -478,13 +478,13 @@ public final class ImmutableRangeSet<C extends Comparable> extends AbstractRange
             return ImmutableRangeSet.this.subRangeSet((Range) range).asSet(this.domain);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.ImmutableSortedSet
         public ImmutableSortedSet<C> headSetImpl(C toElement, boolean inclusive) {
             return subSet(Range.upTo(toElement, BoundType.forBoolean(inclusive)));
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.ImmutableSortedSet
         public ImmutableSortedSet<C> subSetImpl(C fromElement, boolean fromInclusive, C toElement, boolean toInclusive) {
             if (!fromInclusive && !toInclusive && Range.compareOrThrow(fromElement, toElement) == 0) {
@@ -493,7 +493,7 @@ public final class ImmutableRangeSet<C extends Comparable> extends AbstractRange
             return subSet(Range.range(fromElement, BoundType.forBoolean(fromInclusive), toElement, BoundType.forBoolean(toInclusive)));
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.ImmutableSortedSet
         public ImmutableSortedSet<C> tailSetImpl(C fromElement, boolean inclusive) {
             return subSet(Range.downTo(fromElement, BoundType.forBoolean(inclusive)));
@@ -511,7 +511,7 @@ public final class ImmutableRangeSet<C extends Comparable> extends AbstractRange
             }
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.common.collect.ImmutableSortedSet
         int indexOf(@CheckForNull Object target) {
             if (!contains(target)) {

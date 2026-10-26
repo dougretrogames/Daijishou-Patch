@@ -14,7 +14,7 @@ import android.widget.TabHost;
 import android.widget.TabWidget;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public class FragmentTabHost extends TabHost implements TabHost.OnTabChangeListener {
     private boolean mAttached;
@@ -78,18 +78,18 @@ public class FragmentTabHost extends TabHost implements TabHost.OnTabChangeListe
             return "FragmentTabHost.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " curTab=" + this.curTab + "}";
         }
 
-        /* JADX INFO: renamed from: androidx.fragment.app.FragmentTabHost$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.fragment.app.FragmentTabHost$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];

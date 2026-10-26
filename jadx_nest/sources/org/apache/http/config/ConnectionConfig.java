@@ -6,7 +6,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.http.Consts;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ConnectionConfig implements Cloneable {
     public static final ConnectionConfig DEFAULT = new Builder().build();
     private final int bufferSize;
@@ -49,7 +49,7 @@ public class ConnectionConfig implements Cloneable {
         return this.messageConstraints;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public ConnectionConfig clone() throws CloneNotSupportedException {
         return (ConnectionConfig) super.clone();
     }

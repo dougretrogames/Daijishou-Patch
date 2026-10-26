@@ -2,7 +2,7 @@ package org.eclipse.jgit.lib;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class RefRename {
     protected final RefUpdate destination;
     private RefUpdate.Result result = RefUpdate.Result.NOT_ATTEMPTED;

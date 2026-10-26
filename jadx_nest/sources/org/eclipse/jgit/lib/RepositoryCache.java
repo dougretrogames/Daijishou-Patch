@@ -19,7 +19,7 @@ import org.eclipse.jgit.util.RawParseUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RepositoryCache {
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) RepositoryCache.class);
     private static final RepositoryCache cache = new RepositoryCache();

@@ -7,7 +7,7 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 import org.eclipse.jgit.lib.Ref;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class OperationResult {
     StringBuilder messageBuffer;
     String peerUserAgent;

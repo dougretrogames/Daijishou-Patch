@@ -5,7 +5,7 @@ import io.opencensus.internal.Utils;
 import java.util.concurrent.Callable;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Tracer {
     private static final NoopTracer noopTracer = new NoopTracer(null);
 

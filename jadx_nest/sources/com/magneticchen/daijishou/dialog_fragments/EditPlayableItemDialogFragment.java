@@ -63,27 +63,27 @@ import kotlinx.serialization.json.JsonKt;
 import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.commons.io.IOUtils;
 
-/* JADX INFO: compiled from: EditPlayableItemDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: EditPlayableItemDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u0018\u0000 \u00122\u00020\u0001:\u0001\u0012B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u000b\u001a\u00020\u0007H\u0002J\u0012\u0010\f\u001a\u00020\r2\b\u0010\u000e\u001a\u0004\u0018\u00010\u000fH\u0016J\b\u0010\u0010\u001a\u00020\u0011H\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u001c\u0010\u0005\u001a\u0010\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00070\u00070\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\t\u001a\u0010\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00070\u00070\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\n\u001a\u0010\u0012\f\u0012\n \b*\u0004\u0018\u00010\u00070\u00070\u0006X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0013"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/EditPlayableItemDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "()V", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "setBoxArtActivity", "Landroidx/activity/result/ActivityResultLauncher;", "", "kotlin.jvm.PlatformType", "setSnapshotActivity", "setTitleActivity", "checkPreviewMediaDirectory", "onCreateDialog", "Landroid/app/Dialog;", "savedInstanceState", "Landroid/os/Bundle;", "onStart", "", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class EditPlayableItemDialogFragment extends DaijishouDialogFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private PlayableItemEntity playableItemEntity;
     public ActivityResultLauncher<String> setBoxArtActivity;
     public ActivityResultLauncher<String> setSnapshotActivity;
     public ActivityResultLauncher<String> setTitleActivity;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$lambda$16(DialogInterface dialogInterface, int i) {
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$lambda$18(DialogInterface dialogInterface, int i) {
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$lambda$19(DialogInterface dialogInterface, int i) {
     }
 
@@ -99,7 +99,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         this.setTitleActivity = activityResultLauncherRegisterForActivityResult3;
     }
 
-    /* JADX INFO: compiled from: EditPlayableItemDialogFragment.kt */
+    /* INFO: compiled from: EditPlayableItemDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006¨\u0006\u0007"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/EditPlayableItemDialogFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/dialog_fragments/EditPlayableItemDialogFragment;", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -165,7 +165,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         return previewMediaPath;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void setBoxArtActivity$lambda$0(EditPlayableItemDialogFragment this$0, Uri uri) throws IOException {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (Intrinsics.areEqual(uri, Uri.EMPTY) || uri == null) {
@@ -205,7 +205,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         Toast.makeText(this$0.requireContext(), this$0.getString(R.string.box_art_saved), 0).show();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void setSnapshotActivity$lambda$1(EditPlayableItemDialogFragment this$0, Uri uri) throws IOException {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (Intrinsics.areEqual(uri, Uri.EMPTY) || uri == null) {
@@ -245,7 +245,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         Toast.makeText(this$0.requireContext(), this$0.getString(R.string.snapshot_saved), 0).show();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void setTitleActivity$lambda$2(EditPlayableItemDialogFragment this$0, Uri uri) throws IOException {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (Intrinsics.areEqual(uri, Uri.EMPTY) || uri == null) {
@@ -468,7 +468,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$addScraperKeyword$lambda$4(List scraperKeywordList, String scraperKeywordText, ChipGroup chipGroup, View view) {
         Intrinsics.checkNotNullParameter(scraperKeywordList, "$scraperKeywordList");
         Intrinsics.checkNotNullParameter(scraperKeywordText, "$scraperKeywordText");
@@ -502,7 +502,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$addGenreId$lambda$5(List genreIdList, String genreId, ChipGroup chipGroup, View view) {
         Intrinsics.checkNotNullParameter(genreIdList, "$genreIdList");
         Intrinsics.checkNotNullParameter(genreId, "$genreId");
@@ -510,7 +510,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         chipGroup.removeView(view);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$lambda$7(AutoCompleteTextView autoCompleteTextView, List availableGenreIdList, List genreNamesList, EditPlayableItemDialogFragment this$0, List genreIdList, TextInputEditText textInputEditText, Context context, ChipGroup chipGroup, View view) {
         Intrinsics.checkNotNullParameter(availableGenreIdList, "$availableGenreIdList");
         Intrinsics.checkNotNullParameter(genreNamesList, "$genreNamesList");
@@ -530,7 +530,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$setUseCustomPlayer(SwitchMaterial switchMaterial, AutoCompleteTextView autoCompleteTextView, boolean z) {
         switchMaterial.setChecked(z);
         autoCompleteTextView.setEnabled(z);
@@ -582,7 +582,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$lambda$9(EditPlayableItemDialogFragment this$0, PlayableItemEntity playableItemEntity, PlayableItemPreviewMediaIndex playableItemPreviewMediaIndex, String indexPath, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(playableItemEntity, "$playableItemEntity");
@@ -600,7 +600,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         listSelectDialogFragmentNewInstance$default.setOnSelectListener(new EditPlayableItemDialogFragment$onCreateDialog$1$1$1$2$1(listSelectDialogFragmentNewInstance$default, this$0)).setOnLongSelectListener(new EditPlayableItemDialogFragment$onCreateDialog$1$1$1$2$2(listSelectDialogFragmentNewInstance$default, playableItemEntity, playableItemPreviewMediaIndex, this$0, indexPath)).show(this$0.getParentFragmentManager(), ListSelectDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$lambda$10(TextInputEditText textInputEditText, List scraperKeywordList, EditPlayableItemDialogFragment this$0, Context context, ChipGroup chipGroup, View view) {
         Intrinsics.checkNotNullParameter(scraperKeywordList, "$scraperKeywordList");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -614,7 +614,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$lambda$11(Ref.BooleanRef resetRecord, PlayableItemEntity playableItemEntity, TextView textView, View view) {
         Intrinsics.checkNotNullParameter(resetRecord, "$resetRecord");
         Intrinsics.checkNotNullParameter(playableItemEntity, "$playableItemEntity");
@@ -624,7 +624,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         textView.setText(Html.fromHtml("<b>Id:</b> " + playableItemEntity.getId() + "<br><b>IsInSingletonDisjointSet:</b> " + playableItemEntity.isInSingletonDisjointSet() + "<br><b>UseDisjointSetPrimaryPlayableItem:</b> " + playableItemEntity.getUseDisjointSetPrimaryPlayableItem() + "<br><b>DisjointSetPrimaryPlayableItemId:</b> " + playableItemEntity.getDisjointSetPrimaryPlayableItemId() + "<br><b>Lazy md5:</b> " + playableItemEntity.getMd5() + "<br><b>Added date:</b> " + playableItemEntity.getAddedDateTimestamp() + "<br><b>Sync tree:</b> " + playableItemEntity.getSyncTreeUri().getPath() + "<br><b>Uri:</b> " + playableItemEntity.getUri() + "<br><b>Uri path:</b> " + playableItemEntity.getUri().getPath() + "<br><b>Preview media path:</b> " + playableItemEntity.getPreviewMediaPath() + "<br><b>Played count:</b> " + playableItemEntity.getPlayCount() + "<br><b>Last played:</b> " + playableItemEntity.getLastPlayedTimestamp()));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$lambda$12(EditPlayableItemDialogFragment this$0, PlayableItemEntity playableItemEntity, EditText editText, CheckBox checkBox, SwitchMaterial switchMaterial, SwitchMaterial switchMaterial2, SwitchMaterial switchMaterial3, AutoCompleteTextView autoCompleteTextView, List playerNameList, List playerIdList, List scraperKeywordList, Ref.BooleanRef resetRecord, List genreIdList, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(playableItemEntity, "$playableItemEntity");
@@ -648,7 +648,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         Toast.makeText(this$0.requireContext(), this$0.getString(R.string.aborted_period), 0).show();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$lambda$22(AlertDialog alertDialog, Context context, EditPlayableItemDialogFragment this$0, EditText editText, CheckBox checkBox, SwitchMaterial switchMaterial, SwitchMaterial switchMaterial2, SwitchMaterial switchMaterial3, AutoCompleteTextView autoCompleteTextView, List playerNameList, List playerIdList, PlayableItemEntity playableItemEntity, List scraperKeywordList, Ref.BooleanRef resetRecord, List genreIdList, DialogInterface dialogInterface) {
         Intrinsics.checkNotNullParameter(context, "$context");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -667,7 +667,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         button2.setOnClickListener(new EditPlayableItemDialogFragment$$ExternalSyntheticLambda6(playableItemEntity, this$0, alertDialog, context, button2));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$lambda$22$lambda$20(AlertDialog alertDialog, Context context, EditPlayableItemDialogFragment this$0, EditText editText, CheckBox checkBox, SwitchMaterial switchMaterial, SwitchMaterial switchMaterial2, SwitchMaterial switchMaterial3, AutoCompleteTextView autoCompleteTextView, List playerNameList, List playerIdList, PlayableItemEntity playableItemEntity, List scraperKeywordList, Ref.BooleanRef resetRecord, List genreIdList, View view) {
         Intrinsics.checkNotNullParameter(context, "$context");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -683,7 +683,7 @@ public final class EditPlayableItemDialogFragment extends DaijishouDialogFragmen
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$25$lambda$24$lambda$23$lambda$22$lambda$21(PlayableItemEntity playableItemEntity, EditPlayableItemDialogFragment this$0, AlertDialog alertDialog, Context context, Button neutralButton, View view) {
         Intrinsics.checkNotNullParameter(playableItemEntity, "$playableItemEntity");
         Intrinsics.checkNotNullParameter(this$0, "this$0");

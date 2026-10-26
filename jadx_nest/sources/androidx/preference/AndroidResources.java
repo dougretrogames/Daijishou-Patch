@@ -1,6 +1,6 @@
 package androidx.preference;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AndroidResources {
     public static final int ANDROID_R_ICON_FRAME = 16908350;
     static final int ANDROID_R_LIST_CONTAINER = 16908351;

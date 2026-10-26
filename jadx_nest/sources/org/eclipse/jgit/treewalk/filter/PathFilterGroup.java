@@ -9,7 +9,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PathFilterGroup {
     public static TreeFilter createFromStrings(Collection<String> collection) {
         if (collection.isEmpty()) {

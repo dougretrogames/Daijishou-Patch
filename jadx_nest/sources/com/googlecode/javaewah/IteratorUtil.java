@@ -2,7 +2,7 @@ package com.googlecode.javaewah;
 
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class IteratorUtil {
     private IteratorUtil() {
     }
@@ -11,7 +11,7 @@ public final class IteratorUtil {
         return new IntIteratorOverIteratingRLW(iteratingRLW);
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.IteratorUtil$1, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.IteratorUtil$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<Integer> {
         private final IntIterator under;
         final /* synthetic */ IteratingRLW val$i;
@@ -30,7 +30,7 @@ public final class IteratorUtil {
             return this.under.hasNext();
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.Iterator
         public Integer next() {
             return Integer.valueOf(this.under.next());

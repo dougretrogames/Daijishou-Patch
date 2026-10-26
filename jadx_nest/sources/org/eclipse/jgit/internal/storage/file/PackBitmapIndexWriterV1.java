@@ -12,7 +12,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.internal.storage.pack.PackBitmapIndexWriter;
 import org.eclipse.jgit.lib.Constants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PackBitmapIndexWriterV1 implements PackBitmapIndexWriter {
     private final DataOutput dataOutput;
     private final DigestOutputStream out;

@@ -64,7 +64,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class FragmentManager implements FragmentResultOwner {
     private static boolean DEBUG = false;
     private static final String EXTRA_CREATED_FILLIN_INTENT = "androidx.fragment.extra.ACTIVITY_OPTIONS_BUNDLE";
@@ -262,7 +262,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentManager$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentManager$1, reason: invalid class name */
     class AnonymousClass1 extends OnBackPressedCallback {
         AnonymousClass1(boolean z) {
             super(z);
@@ -315,35 +315,35 @@ public abstract class FragmentManager implements FragmentResultOwner {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$androidx-fragment-app-FragmentManager, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$androidx-fragment-app-FragmentManager, reason: not valid java name */
     /* synthetic */ void m3194lambda$new$0$androidxfragmentappFragmentManager(Configuration configuration) {
         if (isParentAdded()) {
             dispatchConfigurationChanged(configuration, false);
         }
     }
 
-    /* JADX INFO: renamed from: lambda$new$1$androidx-fragment-app-FragmentManager, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$1$androidx-fragment-app-FragmentManager, reason: not valid java name */
     /* synthetic */ void m3195lambda$new$1$androidxfragmentappFragmentManager(Integer num) {
         if (isParentAdded() && num.intValue() == 80) {
             dispatchLowMemory(false);
         }
     }
 
-    /* JADX INFO: renamed from: lambda$new$2$androidx-fragment-app-FragmentManager, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$2$androidx-fragment-app-FragmentManager, reason: not valid java name */
     /* synthetic */ void m3196lambda$new$2$androidxfragmentappFragmentManager(MultiWindowModeChangedInfo multiWindowModeChangedInfo) {
         if (isParentAdded()) {
             dispatchMultiWindowModeChanged(multiWindowModeChangedInfo.getIsInMultiWindowMode(), false);
         }
     }
 
-    /* JADX INFO: renamed from: lambda$new$3$androidx-fragment-app-FragmentManager, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$3$androidx-fragment-app-FragmentManager, reason: not valid java name */
     /* synthetic */ void m3197lambda$new$3$androidxfragmentappFragmentManager(PictureInPictureModeChangedInfo pictureInPictureModeChangedInfo) {
         if (isParentAdded()) {
             dispatchPictureInPictureModeChanged(pictureInPictureModeChangedInfo.getIsInPictureInPictureMode(), false);
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentManager$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentManager$2, reason: invalid class name */
     class AnonymousClass2 implements MenuProvider {
         AnonymousClass2() {
         }
@@ -369,7 +369,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentManager$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentManager$3, reason: invalid class name */
     class AnonymousClass3 extends FragmentFactory {
         AnonymousClass3() {
         }
@@ -380,7 +380,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentManager$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentManager$4, reason: invalid class name */
     class AnonymousClass4 implements SpecialEffectsControllerFactory {
         AnonymousClass4() {
         }
@@ -391,7 +391,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentManager$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentManager$5, reason: invalid class name */
     class AnonymousClass5 implements Runnable {
         AnonymousClass5() {
         }
@@ -593,7 +593,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$cancelBackStackTransition$4$androidx-fragment-app-FragmentManager, reason: not valid java name */
+    /* INFO: renamed from: lambda$cancelBackStackTransition$4$androidx-fragment-app-FragmentManager, reason: not valid java name */
     /* synthetic */ void m3193x2102d663() {
         Iterator<OnBackStackChangedListener> it = this.mBackStackChangeListeners.iterator();
         while (it.hasNext()) {
@@ -693,7 +693,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
         lifecycle.addObserver(anonymousClass6);
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentManager$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentManager$6, reason: invalid class name */
     class AnonymousClass6 implements LifecycleEventObserver {
         final /* synthetic */ Lifecycle val$lifecycle;
         final /* synthetic */ FragmentResultListener val$listener;
@@ -788,8 +788,8 @@ public abstract class FragmentManager implements FragmentResultOwner {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:19:0x004f  */
-    /* JADX WARN: Code duplicated, block: B:21:0x0054  */
+    /* WARN: Code duplicated, block: B:19:0x004f  */
+    /* WARN: Code duplicated, block: B:21:0x0054  */
     public static FragmentManager findFragmentManager(View view) {
         FragmentActivity fragmentActivity;
         Fragment fragmentFindViewFragment = findViewFragment(view);
@@ -1485,7 +1485,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void endAnimatingAwayFragments() {
         Iterator<SpecialEffectsController> it = collectAllSpecialEffectsController().iterator();
         while (it.hasNext()) {
@@ -1758,8 +1758,8 @@ public abstract class FragmentManager implements FragmentResultOwner {
         return bundleM3192lambda$attachController$5$androidxfragmentappFragmentManager;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX INFO: renamed from: saveAllStateInternal, reason: merged with bridge method [inline-methods] */
+    /* INFO: Access modifiers changed from: package-private */
+    /* INFO: renamed from: saveAllStateInternal, reason: merged with bridge method [inline-methods] */
     public Bundle m3192lambda$attachController$5$androidxfragmentappFragmentManager() {
         BackStackRecordState[] backStackRecordStateArr;
         Bundle bundle = new Bundle();
@@ -1939,7 +1939,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
         return this.mFragmentStore;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     void attachController(FragmentHostCallback<?> fragmentHostCallback, FragmentContainer fragmentContainer, Fragment fragment) {
         LifecycleOwner lifecycleOwner;
         if (this.mHost != null) {
@@ -2015,7 +2015,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentManager$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentManager$7, reason: invalid class name */
     class AnonymousClass7 implements FragmentOnAttachListener {
         final /* synthetic */ Fragment val$parent;
 
@@ -2029,7 +2029,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentManager$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentManager$8, reason: invalid class name */
     class AnonymousClass8 implements ActivityResultCallback<ActivityResult> {
         AnonymousClass8() {
         }
@@ -2052,7 +2052,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentManager$9, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentManager$9, reason: invalid class name */
     class AnonymousClass9 implements ActivityResultCallback<ActivityResult> {
         AnonymousClass9() {
         }
@@ -2075,7 +2075,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentManager$10, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentManager$10, reason: invalid class name */
     class AnonymousClass10 implements ActivityResultCallback<Map<String, Boolean>> {
         AnonymousClass10() {
         }
@@ -2658,18 +2658,18 @@ public abstract class FragmentManager implements FragmentResultOwner {
             parcel.writeInt(this.mRequestCode);
         }
 
-        /* JADX INFO: renamed from: androidx.fragment.app.FragmentManager$LaunchedFragmentInfo$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.fragment.app.FragmentManager$LaunchedFragmentInfo$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<LaunchedFragmentInfo> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public LaunchedFragmentInfo createFromParcel(Parcel parcel) {
                 return new LaunchedFragmentInfo(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public LaunchedFragmentInfo[] newArray(int i) {
                 return new LaunchedFragmentInfo[i];
@@ -2700,7 +2700,7 @@ public abstract class FragmentManager implements FragmentResultOwner {
             return intent;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // androidx.activity.result.contract.ActivityResultContract
         public ActivityResult parseResult(int i, Intent intent) {
             return new ActivityResult(i, intent);

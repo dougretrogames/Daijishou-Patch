@@ -8,7 +8,7 @@ import io.noties.markwon.image.destination.ImageDestinationProcessor;
 import io.noties.markwon.syntax.SyntaxHighlight;
 import io.noties.markwon.syntax.SyntaxHighlightNoOp;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class MarkwonConfiguration {
     private final AsyncDrawableLoader asyncDrawableLoader;
     private final ImageDestinationProcessor imageDestinationProcessor;

@@ -16,7 +16,7 @@ import java.util.SortedSet;
 import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ImmutableSortedSet<E> extends ImmutableSet<E> implements NavigableSet<E>, SortedIterable<E> {
     private static final long serialVersionUID = 912559;
@@ -57,32 +57,32 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E> implements N
         return RegularImmutableSortedSet.NATURAL_EMPTY_SET;
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
     public static ImmutableSortedSet of(Comparable element) {
         return new RegularImmutableSortedSet(ImmutableList.of(element), Ordering.natural());
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
     public static ImmutableSortedSet of(Comparable e1, Comparable e2) {
         return construct(Ordering.natural(), 2, e1, e2);
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
     public static ImmutableSortedSet of(Comparable e1, Comparable e2, Comparable e3) {
         return construct(Ordering.natural(), 3, e1, e2, e3);
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
     public static ImmutableSortedSet of(Comparable e1, Comparable e2, Comparable e3, Comparable e4) {
         return construct(Ordering.natural(), 4, e1, e2, e3, e4);
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
     public static ImmutableSortedSet of(Comparable e1, Comparable e2, Comparable e3, Comparable e4, Comparable e5) {
         return construct(Ordering.natural(), 5, e1, e2, e3, e4, e5);
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;TE;TE;TE;[TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;TE;TE;TE;[TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
     public static ImmutableSortedSet of(Comparable e1, Comparable e2, Comparable e3, Comparable e4, Comparable e5, Comparable e6, Comparable... remaining) {
         int length = remaining.length + 6;
         Comparable[] comparableArr = new Comparable[length];
@@ -96,7 +96,7 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E> implements N
         return construct(Ordering.natural(), length, comparableArr);
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>([TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>([TE;)Lcom/google/common/collect/ImmutableSortedSet<TE;>; */
     public static ImmutableSortedSet copyOf(Comparable[] elements) {
         return construct(Ordering.natural(), elements.length, (Comparable[]) elements.clone());
     }
@@ -142,7 +142,7 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E> implements N
         return new RegularImmutableSortedSet(immutableListCopyOf, comparator);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static <E> ImmutableSortedSet<E> construct(Comparator<? super E> comparator, int i, E... eArr) {
         if (i == 0) {
             return emptySet(comparator);
@@ -207,7 +207,7 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E> implements N
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.ImmutableSet.Builder
         public Builder<E> combine(ImmutableSet.Builder<E> builder) {
             super.combine((ImmutableSet.Builder) builder);
@@ -245,7 +245,7 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E> implements N
         return headSet((Object) toElement, false);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // java.util.NavigableSet
     public ImmutableSortedSet<E> headSet(E toElement, boolean inclusive) {
         return headSetImpl(Preconditions.checkNotNull(toElement), inclusive);
@@ -269,7 +269,7 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E> implements N
         return tailSet((Object) fromElement, true);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // java.util.NavigableSet
     public ImmutableSortedSet<E> tailSet(E fromElement, boolean inclusive) {
         return tailSetImpl(Preconditions.checkNotNull(fromElement), inclusive);
@@ -339,7 +339,7 @@ public abstract class ImmutableSortedSet<E> extends ImmutableSet<E> implements N
             this.elements = elements;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         Object readResolve() {
             return new Builder(this.comparator).add(this.elements).build();
         }

@@ -15,7 +15,7 @@ import androidx.appcompat.view.menu.MenuBuilder;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.ViewPropertyAnimatorCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ActionBarContextView extends AbsActionBarView {
     private View mClose;
     private View mCloseButton;
@@ -219,7 +219,7 @@ public class ActionBarContextView extends AbsActionBarView {
         addView(this.mMenuView, layoutParams);
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ActionBarContextView$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ActionBarContextView$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         final /* synthetic */ ActionMode val$mode;
 

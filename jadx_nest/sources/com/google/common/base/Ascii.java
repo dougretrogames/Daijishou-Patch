@@ -1,6 +1,6 @@
 package com.google.common.base;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Ascii {
     public static final byte ACK = 6;

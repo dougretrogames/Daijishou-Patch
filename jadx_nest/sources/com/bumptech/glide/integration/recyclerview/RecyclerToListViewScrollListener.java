@@ -4,7 +4,7 @@ import android.widget.AbsListView;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class RecyclerToListViewScrollListener extends RecyclerView.OnScrollListener {
     public static final int UNKNOWN_SCROLL_STATE = Integer.MIN_VALUE;
     private final AbsListView.OnScrollListener scrollListener;

@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.commitgraph;
 import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface CommitGraph {
     public static final CommitGraph EMPTY = new AnonymousClass1();
 
@@ -27,7 +27,7 @@ public interface CommitGraph {
 
     ObjectId getObjectId(int i);
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.commitgraph.CommitGraph$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.commitgraph.CommitGraph$1, reason: invalid class name */
     class AnonymousClass1 implements CommitGraph {
         @Override // org.eclipse.jgit.internal.storage.commitgraph.CommitGraph
         public int findGraphPosition(AnyObjectId anyObjectId) {

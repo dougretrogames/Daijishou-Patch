@@ -16,7 +16,7 @@ import com.google.android.material.math.MathUtils;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CircularRevealHelper {
     public static final int BITMAP_SHADER = 0;
     public static final int CLIP_PATH = 1;
@@ -44,7 +44,7 @@ public class CircularRevealHelper {
     public @interface Strategy {
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public CircularRevealHelper(Delegate delegate) {
         this.delegate = delegate;
         View view = (View) delegate;

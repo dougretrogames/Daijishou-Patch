@@ -1,6 +1,6 @@
 package androidx.constraintlayout.motion.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class TransitionAdapter implements MotionLayout.TransitionListener {
     @Override // androidx.constraintlayout.motion.widget.MotionLayout.TransitionListener
     public void onTransitionChange(MotionLayout motionLayout, int i, int i2, float f) {

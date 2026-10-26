@@ -20,7 +20,7 @@ import java.util.Set;
 import javax.annotation.CheckForNull;
 import kotlinx.coroutines.internal.LockFreeTaskQueueCore;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class CompactHashSet<E> extends AbstractSet<E> implements Serializable {
     static final double HASH_FLOODING_FPP = 0.001d;
@@ -333,7 +333,7 @@ class CompactHashSet<E> extends AbstractSet<E> implements Serializable {
         return new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.CompactHashSet$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.CompactHashSet$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<E> {
         int currentIndex;
         int expectedMetadata;
@@ -471,7 +471,7 @@ class CompactHashSet<E> extends AbstractSet<E> implements Serializable {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void readObject(ObjectInputStream stream) throws ClassNotFoundException, IOException {
         stream.defaultReadObject();
         int i = stream.readInt();
@@ -496,7 +496,7 @@ class CompactHashSet<E> extends AbstractSet<E> implements Serializable {
         return (Object[]) java.util.Objects.requireNonNull(this.elements);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public E element(int i) {
         return (E) requireElements()[i];
     }

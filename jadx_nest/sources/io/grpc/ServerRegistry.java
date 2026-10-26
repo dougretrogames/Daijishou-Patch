@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ServerRegistry {
     private static ServerRegistry instance;
     private static final Logger logger = Logger.getLogger(ServerRegistry.class.getName());
@@ -37,7 +37,7 @@ public final class ServerRegistry {
         this.effectiveProviders = Collections.unmodifiableList(arrayList);
     }
 
-    /* JADX INFO: renamed from: io.grpc.ServerRegistry$1, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.ServerRegistry$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<ServerProvider> {
         AnonymousClass1() {
         }

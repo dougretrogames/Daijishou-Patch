@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class TextFormatParseInfoTree {
     private Map<Descriptors.FieldDescriptor, List<TextFormatParseLocation>> locationsFromField;
     Map<Descriptors.FieldDescriptor, List<TextFormatParseInfoTree>> subtreesFromField;

@@ -10,7 +10,7 @@ import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.codec.language.Soundex;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class LocaleListCompatWrapper implements LocaleListInterface {
     private final Locale[] mList;
     private final String mStringRepresentation;
@@ -192,7 +192,7 @@ final class LocaleListCompatWrapper implements LocaleListInterface {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:16:0x001e  */
+    /* WARN: Code duplicated, block: B:16:0x001e  */
     private int computeFirstMatchIndex(Collection<String> collection, boolean z) {
         int iFindFirstMatchIndex;
         Locale[] localeArr = this.mList;

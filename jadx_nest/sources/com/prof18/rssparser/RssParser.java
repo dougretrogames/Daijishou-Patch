@@ -20,15 +20,15 @@ import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.SupervisorKt;
 
-/* JADX INFO: compiled from: RssParser.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: RssParser.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\u0018\u00002\u00020\u0001:\u0001\u0010B\u0017\b\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0016\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0086@¢\u0006\u0002\u0010\rJ\u0016\u0010\u000e\u001a\u00020\n2\u0006\u0010\u000f\u001a\u00020\fH\u0086@¢\u0006\u0002\u0010\rR\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0011"}, d2 = {"Lcom/prof18/rssparser/RssParser;", "", "xmlFetcher", "Lcom/prof18/rssparser/internal/XmlFetcher;", "xmlParser", "Lcom/prof18/rssparser/internal/XmlParser;", "(Lcom/prof18/rssparser/internal/XmlFetcher;Lcom/prof18/rssparser/internal/XmlParser;)V", "coroutineContext", "Lkotlin/coroutines/CoroutineContext;", "getRssChannel", "Lcom/prof18/rssparser/model/RssChannel;", "url", "", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "parse", "rawRssFeed", "Builder", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class RssParser {
     private final CoroutineContext coroutineContext;
     private final XmlFetcher xmlFetcher;
     private final XmlParser xmlParser;
 
-    /* JADX INFO: compiled from: RssParser.kt */
+    /* INFO: compiled from: RssParser.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\b`\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H&¨\u0006\u0004"}, d2 = {"Lcom/prof18/rssparser/RssParser$Builder;", "", "build", "Lcom/prof18/rssparser/RssParser;", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public interface Builder {
         RssParser build();
@@ -42,15 +42,15 @@ public final class RssParser {
         this.coroutineContext = SupervisorKt.SupervisorJob$default((Job) null, 1, (Object) null).plus(Dispatchers.getDefault());
     }
 
-    /* JADX INFO: renamed from: com.prof18.rssparser.RssParser$getRssChannel$2, reason: invalid class name */
-    /* JADX INFO: compiled from: RssParser.kt */
+    /* INFO: renamed from: com.prof18.rssparser.RssParser$getRssChannel$2, reason: invalid class name */
+    /* INFO: compiled from: RssParser.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "Lcom/prof18/rssparser/model/RssChannel;", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.prof18.rssparser.RssParser$getRssChannel$2", f = "RssParser.kt", i = {}, l = {34, 36, 38, 40}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass2 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super RssChannel>, Object> {
         final /* synthetic */ String $url;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(String str, Continuation<? super AnonymousClass2> continuation) {
             super(2, continuation);
             this.$url = str;
@@ -66,7 +66,7 @@ public final class RssParser {
             return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:28:0x008a, code lost:
+        /* WARN: Code restructure failed: missing block: B:28:0x008a, code lost:
         
             if (r8 == r0) goto L29;
          */
@@ -165,15 +165,15 @@ public final class RssParser {
         return BuildersKt.withContext(this.coroutineContext, new AnonymousClass2(str, null), continuation);
     }
 
-    /* JADX INFO: renamed from: com.prof18.rssparser.RssParser$parse$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: RssParser.kt */
+    /* INFO: renamed from: com.prof18.rssparser.RssParser$parse$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: RssParser.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "Lcom/prof18/rssparser/model/RssChannel;", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.prof18.rssparser.RssParser$parse$2", f = "RssParser.kt", i = {}, l = {49}, m = "invokeSuspend", n = {}, s = {})
     static final class C02952 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super RssChannel>, Object> {
         final /* synthetic */ String $rawRssFeed;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02952(String str, Continuation<? super C02952> continuation) {
             super(2, continuation);
             this.$rawRssFeed = str;

@@ -4,7 +4,7 @@ import androidx.arch.core.executor.ArchTaskExecutor;
 import androidx.arch.core.internal.SafeIterableMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class LiveData<T> {
     static final Object NOT_SET = new Object();
     static final int START_VERSION = -1;
@@ -25,12 +25,12 @@ public abstract class LiveData<T> {
     protected void onInactive() {
     }
 
-    /* JADX INFO: renamed from: androidx.lifecycle.LiveData$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.lifecycle.LiveData$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.lang.Runnable
         public void run() {
             Object obj;

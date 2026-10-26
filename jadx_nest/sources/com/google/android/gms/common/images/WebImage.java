@@ -10,8 +10,8 @@ import java.util.Locale;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class WebImage extends AbstractSafeParcelable {
     public static final Parcelable.Creator<WebImage> CREATOR = new zah();
     final int zaa;
@@ -95,7 +95,7 @@ public final class WebImage extends AbstractSafeParcelable {
         }
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public WebImage(JSONObject jSONObject) throws IllegalArgumentException {
         Uri uri = Uri.EMPTY;
         if (jSONObject.has("url")) {

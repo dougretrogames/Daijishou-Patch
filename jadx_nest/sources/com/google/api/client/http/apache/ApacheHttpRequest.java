@@ -11,7 +11,7 @@ import org.apache.http.conn.params.ConnManagerParams;
 import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ApacheHttpRequest extends LowLevelHttpRequest {
     private final HttpClient httpClient;
     private final HttpRequestBase request;

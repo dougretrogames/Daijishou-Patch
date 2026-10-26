@@ -10,7 +10,7 @@ import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CursorLoader extends AsyncTaskLoader<Cursor> {
     private CancellationSignal mCancellationSignal;
     private Cursor mCursor;
@@ -21,7 +21,7 @@ public class CursorLoader extends AsyncTaskLoader<Cursor> {
     private String mSortOrder;
     private Uri mUri;
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // androidx.loader.content.AsyncTaskLoader
     public Cursor loadInBackground() {
         synchronized (this) {

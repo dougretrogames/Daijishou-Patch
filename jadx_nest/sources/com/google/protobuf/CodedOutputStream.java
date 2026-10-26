@@ -8,7 +8,7 @@ import java.nio.ByteOrder;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class CodedOutputStream extends ByteOutput {
     public static final int DEFAULT_BUFFER_SIZE = 4096;
 

@@ -8,7 +8,7 @@ import org.apache.http.util.Args;
 import org.apache.http.util.TextUtils;
 import org.eclipse.jgit.transport.SshConstants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class CookieOrigin {
     private final String host;
     private final String path;

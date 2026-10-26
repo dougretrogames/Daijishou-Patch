@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class Month implements Comparable<Month>, Parcelable {
     public static final Parcelable.Creator<Month> CREATOR = new AnonymousClass1();
     final int daysInMonth;
@@ -115,18 +115,18 @@ final class Month implements Comparable<Month>, Parcelable {
         return this.longName;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.Month$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.Month$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.Creator<Month> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public Month createFromParcel(Parcel parcel) {
             return Month.create(parcel.readInt(), parcel.readInt());
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public Month[] newArray(int i) {
             return new Month[i];

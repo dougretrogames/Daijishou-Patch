@@ -1,6 +1,6 @@
 package io.opencensus.stats;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Aggregation_Distribution extends Aggregation.Distribution {
     private final BucketBoundaries bucketBoundaries;
 

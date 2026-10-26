@@ -2,7 +2,7 @@ package androidx.constraintlayout.core;
 
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Metrics {
     public long additionalMeasures;
     public long bfs;

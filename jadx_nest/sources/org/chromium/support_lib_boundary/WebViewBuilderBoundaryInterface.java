@@ -12,7 +12,7 @@ import java.util.function.BiConsumer;
 import java.util.function.Consumer;
 import org.jspecify.annotations.NullMarked;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @NullMarked
 public interface WebViewBuilderBoundaryInterface {
 

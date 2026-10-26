@@ -3,7 +3,7 @@ package kotlin.jvm.internal;
 import kotlin.reflect.KCallable;
 import kotlin.reflect.KFunction;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class FunctionReference extends CallableReference implements FunctionBase, KFunction {
     private final int arity;
     private final int flags;
@@ -27,7 +27,7 @@ public class FunctionReference extends CallableReference implements FunctionBase
         return this.arity;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlin.jvm.internal.CallableReference
     public KFunction getReflected() {
         return (KFunction) super.getReflected();

@@ -3,8 +3,8 @@ package androidx.profileinstaller;
 import android.content.Context;
 import android.view.Choreographer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class ProfileInstallerInitializer$$ExternalSyntheticLambda0 implements Choreographer.FrameCallback {
     public final /* synthetic */ ProfileInstallerInitializer f$0;
     public final /* synthetic */ Context f$1;

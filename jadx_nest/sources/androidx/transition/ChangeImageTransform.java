@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ChangeImageTransform extends Transition {
     private static final String PROPNAME_MATRIX = "android:changeImageTransform:matrix";
     private static final String PROPNAME_BOUNDS = "android:changeImageTransform:bounds";
@@ -28,7 +28,7 @@ public class ChangeImageTransform extends Transition {
         return true;
     }
 
-    /* JADX INFO: renamed from: androidx.transition.ChangeImageTransform$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ChangeImageTransform$1, reason: invalid class name */
     class AnonymousClass1 implements TypeEvaluator<Matrix> {
         @Override // android.animation.TypeEvaluator
         public Matrix evaluate(float f, Matrix matrix, Matrix matrix2) {
@@ -39,7 +39,7 @@ public class ChangeImageTransform extends Transition {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.ChangeImageTransform$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ChangeImageTransform$2, reason: invalid class name */
     class AnonymousClass2 extends Property<ImageView, Matrix> {
         @Override // android.util.Property
         public Matrix get(ImageView imageView) {
@@ -156,7 +156,7 @@ public class ChangeImageTransform extends Transition {
         return new Matrix(imageView.getImageMatrix());
     }
 
-    /* JADX INFO: renamed from: androidx.transition.ChangeImageTransform$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ChangeImageTransform$3, reason: invalid class name */
     static /* synthetic */ class AnonymousClass3 {
         static final /* synthetic */ int[] $SwitchMap$android$widget$ImageView$ScaleType;
 

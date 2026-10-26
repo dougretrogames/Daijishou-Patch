@@ -2,8 +2,8 @@ package com.google.auth.oauth2;
 
 import java.util.concurrent.Callable;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class PluggableAuthHandler$$ExternalSyntheticLambda0 implements Callable {
     public final /* synthetic */ Process f$0;
 

@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import org.commonmark.node.Node;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class MarkwonSpansFactoryImpl implements MarkwonSpansFactory {
     private final Map<Class<? extends Node>, SpanFactory> factories;
 

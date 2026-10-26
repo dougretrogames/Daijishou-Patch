@@ -6,7 +6,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.TextView;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class GuidedActionAdapterGroup {
     private static final boolean DEBUG_EDIT = false;
     private static final String TAG_EDIT = "EditableAction";
@@ -38,8 +38,8 @@ public class GuidedActionAdapterGroup {
         this.mEditListener = editListener;
     }
 
-    /* JADX WARN: Code duplicated, block: B:8:0x0011 A[LOOP:0: B:9:0x0012->B:8:0x0011, LOOP_END] */
-    /* JADX WARN: Code restructure failed: missing block: B:31:0x0012, code lost:
+    /* WARN: Code duplicated, block: B:8:0x0011 A[LOOP:0: B:9:0x0012->B:8:0x0011, LOOP_END] */
+    /* WARN: Code restructure failed: missing block: B:31:0x0012, code lost:
     
         r8 = 0;
      */

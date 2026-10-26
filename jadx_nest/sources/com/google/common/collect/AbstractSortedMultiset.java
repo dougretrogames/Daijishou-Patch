@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.NavigableSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractSortedMultiset<E> extends AbstractMultiset<E> implements SortedMultiset<E> {
 
@@ -33,7 +33,7 @@ abstract class AbstractSortedMultiset<E> extends AbstractMultiset<E> implements 
         return (NavigableSet) super.elementSet();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractMultiset
     public NavigableSet<E> createElementSet() {
         return new SortedMultisets.NavigableElementSet(this);
@@ -112,7 +112,7 @@ abstract class AbstractSortedMultiset<E> extends AbstractMultiset<E> implements 
         return sortedMultisetCreateDescendingMultiset;
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.AbstractSortedMultiset$1DescendingMultisetImpl, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.AbstractSortedMultiset$1DescendingMultisetImpl, reason: invalid class name */
     class C1DescendingMultisetImpl extends DescendingMultiset<E> {
         C1DescendingMultisetImpl() {
         }

@@ -28,7 +28,7 @@ import org.apache.http.message.HeaderGroup;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RequestBuilder {
     private Charset charset;
     private RequestConfig config;

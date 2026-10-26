@@ -13,7 +13,7 @@ import java.util.Set;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class SmallSortedMap<K extends Comparable<K>, V> extends AbstractMap<K, V> {
     private List<SmallSortedMap<K, V>.Entry> entryList;
     private boolean isImmutable;
@@ -27,8 +27,8 @@ class SmallSortedMap<K extends Comparable<K>, V> extends AbstractMap<K, V> {
         this(i);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [FieldDescriptorType] */
-    /* JADX INFO: renamed from: com.google.protobuf.SmallSortedMap$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [FieldDescriptorType] */
+    /* INFO: renamed from: com.google.protobuf.SmallSortedMap$1, reason: invalid class name */
     class AnonymousClass1<FieldDescriptorType> extends SmallSortedMap<FieldDescriptorType, Object> {
         AnonymousClass1(int arraySize) {
             super(arraySize, null);
@@ -193,7 +193,7 @@ class SmallSortedMap<K extends Comparable<K>, V> extends AbstractMap<K, V> {
         return this.overflowEntries.remove(comparable);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public V removeArrayEntryAt(int index) {
         checkMutable();
         V value = this.entryList.remove(index).getValue();
@@ -205,11 +205,11 @@ class SmallSortedMap<K extends Comparable<K>, V> extends AbstractMap<K, V> {
         return value;
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x0026  */
-    /* JADX WARN: Code duplicated, block: B:17:0x0042  */
-    /* JADX WARN: Code duplicated, block: B:21:0x0040 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:22:0x0046 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:23:0x003c A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:13:0x0026  */
+    /* WARN: Code duplicated, block: B:17:0x0042  */
+    /* WARN: Code duplicated, block: B:21:0x0040 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:22:0x0046 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:23:0x003c A[SYNTHETIC] */
     private int binarySearchInArray(K key) {
         int i;
         int i2;
@@ -274,7 +274,7 @@ class SmallSortedMap<K extends Comparable<K>, V> extends AbstractMap<K, V> {
         return this.lazyDescendingEntrySet;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void checkMutable() {
         if (this.isImmutable) {
             throw new UnsupportedOperationException();
@@ -539,7 +539,7 @@ class SmallSortedMap<K extends Comparable<K>, V> extends AbstractMap<K, V> {
         private EmptySet() {
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.SmallSortedMap$EmptySet$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.SmallSortedMap$EmptySet$1, reason: invalid class name */
         class AnonymousClass1 implements Iterator<Object> {
             @Override // java.util.Iterator
             public boolean hasNext() {
@@ -560,7 +560,7 @@ class SmallSortedMap<K extends Comparable<K>, V> extends AbstractMap<K, V> {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.SmallSortedMap$EmptySet$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.SmallSortedMap$EmptySet$2, reason: invalid class name */
         class AnonymousClass2 implements Iterable<Object> {
             AnonymousClass2() {
             }

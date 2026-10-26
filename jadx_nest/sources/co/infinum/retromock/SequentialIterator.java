@@ -2,7 +2,7 @@ package co.infinum.retromock;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class SequentialIterator<T> implements ResponseIterator<T> {
     private AtomicInteger index = new AtomicInteger();
     private final T[] responses;

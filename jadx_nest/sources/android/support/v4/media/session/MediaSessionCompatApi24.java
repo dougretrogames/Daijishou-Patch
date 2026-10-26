@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import java.lang.reflect.InvocationTargetException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MediaSessionCompatApi24 {
     private static final String TAG = "MediaSessionCompatApi24";
 

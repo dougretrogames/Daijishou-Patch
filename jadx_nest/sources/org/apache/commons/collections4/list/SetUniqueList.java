@@ -15,7 +15,7 @@ import org.apache.commons.collections4.iterators.AbstractIteratorDecorator;
 import org.apache.commons.collections4.iterators.AbstractListIteratorDecorator;
 import org.apache.commons.collections4.set.UnmodifiableSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SetUniqueList<E> extends AbstractSerializableListDecorator<E> {
     private static final long serialVersionUID = 7196982186153478694L;
     private final Set<E> set;

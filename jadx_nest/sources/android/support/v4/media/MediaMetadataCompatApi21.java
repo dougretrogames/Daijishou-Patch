@@ -6,7 +6,7 @@ import android.media.Rating;
 import android.os.Parcel;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MediaMetadataCompatApi21 {
     public static Set<String> keySet(Object obj) {
         return ((MediaMetadata) obj).keySet();

@@ -6,7 +6,7 @@ import java.util.Map;
 import javax.annotation.CheckForNull;
 import kotlin.jvm.internal.CharCompanionObject;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Escapers {
     private static final Escaper NULL_ESCAPER = new AnonymousClass1();
@@ -18,7 +18,7 @@ public final class Escapers {
         return NULL_ESCAPER;
     }
 
-    /* JADX INFO: renamed from: com.google.common.escape.Escapers$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.escape.Escapers$1, reason: invalid class name */
     class AnonymousClass1 extends CharEscaper {
         @Override // com.google.common.escape.CharEscaper
         @CheckForNull
@@ -75,7 +75,7 @@ public final class Escapers {
             return this;
         }
 
-        /* JADX INFO: renamed from: com.google.common.escape.Escapers$Builder$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.escape.Escapers$Builder$1, reason: invalid class name */
         class AnonymousClass1 extends ArrayBasedCharEscaper {
 
             @CheckForNull
@@ -127,7 +127,7 @@ public final class Escapers {
         return new String(in);
     }
 
-    /* JADX INFO: renamed from: com.google.common.escape.Escapers$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.escape.Escapers$2, reason: invalid class name */
     class AnonymousClass2 extends UnicodeEscaper {
         final /* synthetic */ CharEscaper val$escaper;
 

@@ -10,7 +10,7 @@ import java.util.function.Predicate;
 import java.util.function.Supplier;
 import org.apache.commons.collections4.bloomfilter.BloomFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LayerManager<T extends BloomFilter<T>> implements BloomFilterExtractor {
     private final Predicate<LayerManager<T>> extendCheck;
     private final Consumer<Deque<T>> filterCleanup;
@@ -101,7 +101,7 @@ public class LayerManager<T extends BloomFilter<T>> implements BloomFilterExtrac
             return false;
         }
 
-        /* JADX INFO: renamed from: org.apache.commons.collections4.bloomfilter.LayerManager$ExtendCheck$1, reason: invalid class name */
+        /* INFO: renamed from: org.apache.commons.collections4.bloomfilter.LayerManager$ExtendCheck$1, reason: invalid class name */
         class AnonymousClass1 implements Predicate<LayerManager<T>> {
             int count;
             final /* synthetic */ int val$breakAt;

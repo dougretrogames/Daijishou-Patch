@@ -2,7 +2,7 @@ package org.apache.commons.codec.digest;
 
 import java.nio.charset.StandardCharsets;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Crypt {
     public static String crypt(byte[] bArr) {
         return crypt(bArr, (String) null);

@@ -4,7 +4,7 @@ import com.google.common.base.Ascii;
 import org.apache.commons.codec.binary.StringUtils;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class MurmurHash3 {
     private static final long C1 = -8663945395140668459L;
     private static final int C1_32 = -862048943;
@@ -25,7 +25,7 @@ public final class MurmurHash3 {
     private static final int R2_32 = 13;
     private static final int R3 = 33;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int fmix32(int i) {
         int i2 = (i ^ (i >>> 16)) * (-2048144789);
         int i3 = (i2 ^ (i2 >>> 13)) * (-1028477387);
@@ -144,7 +144,7 @@ public final class MurmurHash3 {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int getLittleEndianInt(byte[] bArr, int i) {
         return ((bArr[i + 3] & 255) << 24) | (bArr[i] & 255) | ((bArr[i + 1] & 255) << 8) | ((bArr[i + 2] & 255) << 16);
     }
@@ -463,7 +463,7 @@ public final class MurmurHash3 {
         return hash64(bArr, i, i2, DEFAULT_SEED);
     }
 
-    /* JADX WARN: Failed to find 'out' block for switch in B:7:0x0042. Please report as an issue. */
+    /* WARN: Failed to find 'out' block for switch in B:7:0x0042. Please report as an issue. */
     @Deprecated
     public static long hash64(byte[] bArr, int i, int i2, int i3) {
         long j;
@@ -539,7 +539,7 @@ public final class MurmurHash3 {
         return fmix64((Long.rotateLeft((((((long) s) & 255) << 8) ^ (255 & ((long) ((s & 65280) >> 8)))) * C1, 31) * C2) ^ 104731);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int mix32(int i, int i2) {
         return (Integer.rotateLeft((Integer.rotateLeft(i * (-862048943), 15) * C2_32) ^ i2, 13) * 5) + N_32;
     }

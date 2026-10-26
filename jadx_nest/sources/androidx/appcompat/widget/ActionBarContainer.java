@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import androidx.appcompat.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ActionBarContainer extends FrameLayout {
     private View mActionBarView;
     Drawable mBackground;
@@ -274,7 +274,7 @@ public class ActionBarContainer extends FrameLayout {
         setMeasuredDimension(getMeasuredWidth(), Math.min(measuredHeightWithMargins + getMeasuredHeightWithMargins(this.mTabContainer), mode == Integer.MIN_VALUE ? View.MeasureSpec.getSize(i2) : Integer.MAX_VALUE));
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x004b A[PHI: r1
+    /* WARN: Code duplicated, block: B:17:0x004b A[PHI: r1
   0x004b: PHI (r1v8 boolean) = (r1v1 boolean), (r1v1 boolean), (r1v0 boolean) binds: [B:31:0x00a8, B:33:0x00ac, B:15:0x003c] A[DONT_GENERATE, DONT_INLINE]] */
     @Override // android.widget.FrameLayout, android.view.ViewGroup, android.view.View
     public void onLayout(boolean z, int i, int i2, int i3, int i4) {

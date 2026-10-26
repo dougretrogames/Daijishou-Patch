@@ -3,7 +3,7 @@ package io.grpc;
 import com.google.common.base.Preconditions;
 import java.util.concurrent.TimeoutException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Contexts {
     private Contexts() {
     }

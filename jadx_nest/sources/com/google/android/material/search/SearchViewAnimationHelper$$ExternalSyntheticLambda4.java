@@ -1,7 +1,7 @@
 package com.google.android.material.search;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SearchViewAnimationHelper$$ExternalSyntheticLambda4 implements Runnable {
     public final /* synthetic */ SearchView f$0;
 

@@ -4,7 +4,7 @@ import com.google.common.base.Objects;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractMapEntry<K, V> implements Map.Entry<K, V> {
     @Override // java.util.Map.Entry

@@ -6,8 +6,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: AutoClosingRoomOpenHelper.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: AutoClosingRoomOpenHelper.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 /* synthetic */ class AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$inTransaction$1 extends FunctionReferenceImpl implements Function1<SupportSQLiteDatabase, Boolean> {
     public static final AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$inTransaction$1 INSTANCE = new AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$inTransaction$1();

@@ -9,7 +9,7 @@ import java.util.List;
 import org.eclipse.jgit.lib.PersonIdent;
 import org.eclipse.jgit.lib.ReflogEntry;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReftableCompactor {
     private boolean includeDeletes;
     private long reflogExpireOldestReflogTimeMillis;

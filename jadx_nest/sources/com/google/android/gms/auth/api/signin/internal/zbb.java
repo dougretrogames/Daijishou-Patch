@@ -12,8 +12,8 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class zbb implements Runnable {
     private static final Logger zba = new Logger("RevokeAccessOperation", new String[0]);
     private final String zbb;

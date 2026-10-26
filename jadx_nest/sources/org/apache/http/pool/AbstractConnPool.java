@@ -24,7 +24,7 @@ import org.apache.http.pool.PoolEntry;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractConnPool<T, C, E extends PoolEntry<T, C>> implements ConnPool<T, E>, ConnPoolControl<T> {
     private final LinkedList<E> available;
     private final Condition condition;
@@ -109,24 +109,24 @@ public abstract class AbstractConnPool<T, C, E extends PoolEntry<T, C>> implemen
         return anonymousClass1;
     }
 
-    /* JADX INFO: renamed from: org.apache.http.pool.AbstractConnPool$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.pool.AbstractConnPool$1, reason: invalid class name */
     class AnonymousClass1 extends RouteSpecificPool<T, C, E> {
         final /* synthetic */ Object val$route;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Object obj, Object obj2) {
             super(obj);
             this.val$route = obj2;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // org.apache.http.pool.RouteSpecificPool
         protected E createEntry(C c) {
             return (E) AbstractConnPool.this.createEntry(this.val$route, c);
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Exception operationAborted() {
         return new CancellationException("Operation aborted");
     }
@@ -138,7 +138,7 @@ public abstract class AbstractConnPool<T, C, E extends PoolEntry<T, C>> implemen
         return new AnonymousClass2(futureCallback, t, obj);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.pool.AbstractConnPool$2, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.pool.AbstractConnPool$2, reason: invalid class name */
     class AnonymousClass2 implements Future<E> {
         private final AtomicBoolean cancelled = new AtomicBoolean(false);
         private final AtomicBoolean done = new AtomicBoolean(false);
@@ -193,15 +193,15 @@ public abstract class AbstractConnPool<T, C, E extends PoolEntry<T, C>> implemen
             }
         }
 
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         @Override // java.util.concurrent.Future
         public E get(long j, TimeUnit timeUnit) throws Throwable {
@@ -279,8 +279,8 @@ public abstract class AbstractConnPool<T, C, E extends PoolEntry<T, C>> implemen
         return lease(t, obj, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Multi-variable type inference failed */
     public E getPoolEntryBlocking(T t, Object obj, long j, TimeUnit timeUnit, Future<E> future) throws ExecutionException, InterruptedException, TimeoutException, IOException {
         E e;
         Date date = j > 0 ? new Date(System.currentTimeMillis() + timeUnit.toMillis(j)) : null;
@@ -369,7 +369,7 @@ public abstract class AbstractConnPool<T, C, E extends PoolEntry<T, C>> implemen
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.apache.http.pool.ConnPool
     public void release(E e, boolean z) {
         this.lock.lock();
@@ -555,7 +555,7 @@ public abstract class AbstractConnPool<T, C, E extends PoolEntry<T, C>> implemen
         enumAvailable(new AnonymousClass3(System.currentTimeMillis() - millis));
     }
 
-    /* JADX INFO: renamed from: org.apache.http.pool.AbstractConnPool$3, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.pool.AbstractConnPool$3, reason: invalid class name */
     class AnonymousClass3 implements PoolEntryCallback<T, C> {
         final /* synthetic */ long val$deadline;
 
@@ -571,7 +571,7 @@ public abstract class AbstractConnPool<T, C, E extends PoolEntry<T, C>> implemen
         }
     }
 
-    /* JADX INFO: renamed from: org.apache.http.pool.AbstractConnPool$4, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.pool.AbstractConnPool$4, reason: invalid class name */
     class AnonymousClass4 implements PoolEntryCallback<T, C> {
         final /* synthetic */ long val$now;
 

@@ -11,7 +11,7 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 import org.apache.commons.collections4.SortedBag;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TreeBag<E> extends AbstractMapBag<E> implements SortedBag<E>, Serializable {
     private static final long serialVersionUID = -7740146511091606676L;
 
@@ -51,7 +51,7 @@ public class TreeBag<E> extends AbstractMapBag<E> implements SortedBag<E>, Seria
         return getMap().firstKey();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.bag.AbstractMapBag
     public SortedMap<E, AbstractMapBag.MutableInteger> getMap() {
         return (SortedMap) super.getMap();

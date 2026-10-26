@@ -28,7 +28,7 @@ import com.google.android.material.shape.MaterialShapeDrawable;
 import com.google.android.material.shape.ShapeAppearanceModel;
 import java.util.HashSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class NavigationBarMenuView extends ViewGroup implements MenuView {
     private static final int[] CHECKED_STATE_SET = {R.attr.state_checked};
     private static final int[] DISABLED_STATE_SET = {-16842910};
@@ -110,7 +110,7 @@ public abstract class NavigationBarMenuView extends ViewGroup implements MenuVie
         ViewCompat.setImportantForAccessibility(this, 1);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.navigation.NavigationBarMenuView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.navigation.NavigationBarMenuView$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         AnonymousClass1() {
         }

@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewOutlineProvider;
 import com.google.android.material.internal.ThemeEnforcement;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewUtilsLollipop {
     private static final int[] STATE_LIST_ANIM_ATTRS = {R.attr.stateListAnimator};
 

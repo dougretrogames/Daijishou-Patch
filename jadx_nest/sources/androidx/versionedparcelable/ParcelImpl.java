@@ -3,7 +3,7 @@ package androidx.versionedparcelable;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ParcelImpl implements Parcelable {
     public static final Parcelable.Creator<ParcelImpl> CREATOR = new AnonymousClass1();
     private final VersionedParcelable mParcel;
@@ -30,18 +30,18 @@ public class ParcelImpl implements Parcelable {
         new VersionedParcelParcel(parcel).writeVersionedParcelable(this.mParcel);
     }
 
-    /* JADX INFO: renamed from: androidx.versionedparcelable.ParcelImpl$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.versionedparcelable.ParcelImpl$1, reason: invalid class name */
     static class AnonymousClass1 implements Parcelable.Creator<ParcelImpl> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public ParcelImpl createFromParcel(Parcel parcel) {
             return new ParcelImpl(parcel);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public ParcelImpl[] newArray(int i) {
             return new ParcelImpl[i];

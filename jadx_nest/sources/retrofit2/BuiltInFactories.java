@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.concurrent.Executor;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 class BuiltInFactories {
     BuiltInFactories() {
     }

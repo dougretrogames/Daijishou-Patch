@@ -6,8 +6,8 @@ import androidx.appcompat.widget.PopupMenu;
 import androidx.fragment.app.FragmentActivity;
 import java.util.HashMap;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class WidgetGridNavFragment$$ExternalSyntheticLambda1 implements PopupMenu.OnMenuItemClickListener {
     public final /* synthetic */ HashMap f$0;
     public final /* synthetic */ WidgetGridNavFragment f$1;

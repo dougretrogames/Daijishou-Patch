@@ -4,7 +4,7 @@ import java.lang.Comparable;
 import java.util.Iterator;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractRangeSet<C extends Comparable> implements RangeSet<C> {
     @Override // com.google.common.collect.RangeSet

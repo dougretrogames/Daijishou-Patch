@@ -22,7 +22,7 @@ import org.eclipse.jgit.revwalk.RevObject;
 import org.eclipse.jgit.revwalk.RevTag;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NameRevCommand extends GitCommand<Map<ObjectId, String>> {
     private static final int COMMIT_TIME_SLOP = 86400;
     private static final int MERGE_COST = 65535;
@@ -45,7 +45,7 @@ public class NameRevCommand extends GitCommand<Map<ObjectId, String>> {
             super(anyObjectId);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public StringBuilder format() {
             StringBuilder sb = new StringBuilder(this.tip);
             if (this.distance > 0) {
@@ -75,7 +75,7 @@ public class NameRevCommand extends GitCommand<Map<ObjectId, String>> {
         this.walk = new AnonymousClass1(repository);
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.api.NameRevCommand$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.api.NameRevCommand$1, reason: invalid class name */
     class AnonymousClass1 extends RevWalk {
         AnonymousClass1(Repository repository) {
             super(repository);

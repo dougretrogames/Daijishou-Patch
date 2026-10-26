@@ -6,8 +6,8 @@ import com.google.android.gms.common.api.OptionalModuleApi;
 import com.google.android.gms.tasks.Task;
 import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public interface ModuleInstallClient extends HasApiKey<Api.ApiOptions.NoOptions> {
     Task<ModuleAvailabilityResponse> areModulesAvailable(OptionalModuleApi... optionalModuleApiArr);
 

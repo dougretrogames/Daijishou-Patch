@@ -7,7 +7,7 @@ import android.view.inputmethod.InputConnectionWrapper;
 import android.widget.TextView;
 import androidx.emoji2.text.EmojiCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class EmojiInputConnection extends InputConnectionWrapper {
     private final EmojiCompatDeleteHelper mEmojiCompatDeleteHelper;
     private final TextView mTextView;

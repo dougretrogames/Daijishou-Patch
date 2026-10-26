@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SortedList<T> {
     private static final int CAPACITY_GROWTH = 10;
     private static final int DELETION = 2;
@@ -59,7 +59,7 @@ public class SortedList<T> {
         addAll(tArr, false);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public void addAll(Collection<T> collection) {
         addAll(collection.toArray((Object[]) Array.newInstance((Class<?>) this.mTClass, collection.size())), true);
     }
@@ -77,7 +77,7 @@ public class SortedList<T> {
         replaceAll(tArr, false);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public void replaceAll(Collection<T> collection) {
         replaceAll(collection.toArray((Object[]) Array.newInstance((Class<?>) this.mTClass, collection.size())), true);
     }

@@ -2,8 +2,8 @@ package org.eclipse.jgit.treewalk;
 
 import java.util.function.Supplier;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class TreeWalk$$ExternalSyntheticLambda1 implements Supplier {
     public final /* synthetic */ TreeWalk f$0;
     public final /* synthetic */ int f$1;

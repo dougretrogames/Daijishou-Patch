@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.widget.EditText;
 import androidx.core.content.res.TypedArrayUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class EditTextPreference extends DialogPreference {
     private OnBindEditTextListener mOnBindEditTextListener;
     private String mText;
@@ -103,18 +103,18 @@ public class EditTextPreference extends DialogPreference {
         public static final Parcelable.Creator<SavedState> CREATOR = new AnonymousClass1();
         String mText;
 
-        /* JADX INFO: renamed from: androidx.preference.EditTextPreference$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.preference.EditTextPreference$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];

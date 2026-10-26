@@ -12,7 +12,7 @@ import androidx.core.content.res.TypedArrayUtils;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TransitionSet extends Transition {
     private static final int FLAG_CHANGE_EPICENTER = 8;
     private static final int FLAG_CHANGE_INTERPOLATOR = 1;
@@ -339,7 +339,7 @@ public class TransitionSet extends Transition {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.TransitionSet$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.TransitionSet$1, reason: invalid class name */
     class AnonymousClass1 extends TransitionListenerAdapter {
         final /* synthetic */ Transition val$nextTransition;
 
@@ -364,7 +364,7 @@ public class TransitionSet extends Transition {
         return false;
     }
 
-    /* JADX INFO: renamed from: androidx.transition.TransitionSet$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.TransitionSet$2, reason: invalid class name */
     class AnonymousClass2 extends TransitionListenerAdapter {
         AnonymousClass2() {
         }
@@ -408,9 +408,9 @@ public class TransitionSet extends Transition {
         return this.mTransitions.size() - 1;
     }
 
-    /* JADX WARN: Code duplicated, block: B:48:0x00ab  */
-    /* JADX WARN: Code duplicated, block: B:56:0x00bb  */
-    /* JADX WARN: Code duplicated, block: B:65:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:48:0x00ab  */
+    /* WARN: Code duplicated, block: B:56:0x00bb  */
+    /* WARN: Code duplicated, block: B:65:? A[RETURN, SYNTHETIC] */
     @Override // androidx.transition.Transition
     void setCurrentPlayTimeMillis(long j, long j2) {
         long j3;
@@ -607,7 +607,7 @@ public class TransitionSet extends Transition {
     }
 
     @Override // androidx.transition.Transition
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public Transition mo3238clone() {
         TransitionSet transitionSet = (TransitionSet) super.mo3238clone();
         transitionSet.mTransitions = new ArrayList<>();

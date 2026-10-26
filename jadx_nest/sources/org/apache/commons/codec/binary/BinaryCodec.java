@@ -5,7 +5,7 @@ import org.apache.commons.codec.BinaryEncoder;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.EncoderException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BinaryCodec implements BinaryDecoder, BinaryEncoder {
     private static final int BIT_0 = 1;
     private static final int BIT_1 = 2;

@@ -37,12 +37,12 @@ import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.Reflection;
 import kotlin.text.Regex;
 
-/* JADX INFO: compiled from: AboutThisAppNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: AboutThisAppNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u0018\u0000 \u001a2\u00020\u0001:\u0001\u001aB\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\f\u001a\u00020\u0004H\u0016J\u0012\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010H\u0016J&\u0010\u0011\u001a\u0004\u0018\u00010\u00122\u0006\u0010\u0013\u001a\u00020\u00142\b\u0010\u0015\u001a\u0004\u0018\u00010\u00162\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010H\u0016J\b\u0010\u0017\u001a\u00020\u000eH\u0016J\u001a\u0010\u0018\u001a\u00020\u000e2\u0006\u0010\u0019\u001a\u00020\u00122\b\u0010\u000f\u001a\u0004\u0018\u00010\u0010H\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082.¢\u0006\u0002\n\u0000¨\u0006\u001b²\u0006\n\u0010\u001c\u001a\u00020\u001dX\u008a\u0084\u0002²\u0006\n\u0010\u001e\u001a\u00020\u001fX\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/settings_nav_fragments/AboutThisAppNavFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouPreferenceFragment;", "()V", "goBack", "", "iconClickedCount", "", "refocusOnScrolledToTop", "scrollView", "Landroid/widget/ScrollView;", "titleString", "", "onBackPressed", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onStart", "onViewCreated", "view", "Companion", "app_release", "settingsModel", "Lcom/magneticchen/daijishou/view_models/SettingsViewModel;", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class AboutThisAppNavFragment extends DaijishouPreferenceFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private boolean goBack;
     private int iconClickedCount;
@@ -50,7 +50,7 @@ public final class AboutThisAppNavFragment extends DaijishouPreferenceFragment {
     private ScrollView scrollView;
     private String titleString;
 
-    /* JADX INFO: compiled from: AboutThisAppNavFragment.kt */
+    /* INFO: compiled from: AboutThisAppNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0003\u001a\u00020\u0004¨\u0006\u0005"}, d2 = {"Lcom/magneticchen/daijishou/settings_nav_fragments/AboutThisAppNavFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/settings_nav_fragments/AboutThisAppNavFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -98,7 +98,7 @@ public final class AboutThisAppNavFragment extends DaijishouPreferenceFragment {
         this.titleString = string;
     }
 
-    /* JADX WARN: Type inference failed for: r3v16, types: [T, java.lang.String] */
+    /* WARN: Type inference failed for: r3v16, types: [T, java.lang.String] */
     @Override // androidx.fragment.app.Fragment
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         Intrinsics.checkNotNullParameter(inflater, "inflater");
@@ -142,7 +142,7 @@ public final class AboutThisAppNavFragment extends DaijishouPreferenceFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$0(AboutThisAppNavFragment this$0, ImageView imageView, View view, int i, int i2, int i3, int i4) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (this$0.refocusOnScrolledToTop) {
@@ -158,13 +158,13 @@ public final class AboutThisAppNavFragment extends DaijishouPreferenceFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.AboutThisAppNavFragment$onCreateView$2, reason: invalid class name */
-    /* JADX INFO: compiled from: AboutThisAppNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.AboutThisAppNavFragment$onCreateView$2, reason: invalid class name */
+    /* INFO: compiled from: AboutThisAppNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ Ref.ObjectRef<String> $detailText;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(Ref.ObjectRef<String> objectRef) {
             super(1);
             this.$detailText = objectRef;
@@ -176,21 +176,21 @@ public final class AboutThisAppNavFragment extends DaijishouPreferenceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX WARN: Type inference failed for: r6v4, types: [T, java.lang.String] */
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* WARN: Type inference failed for: r6v4, types: [T, java.lang.String] */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             Ref.ObjectRef<String> objectRef = this.$detailText;
             objectRef.element = new Regex("Events count: \\d+ event\\(s\\)\n").replace(objectRef.element, "Events count: " + num + " events\n");
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.AboutThisAppNavFragment$onCreateView$3, reason: invalid class name */
-    /* JADX INFO: compiled from: AboutThisAppNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.AboutThisAppNavFragment$onCreateView$3, reason: invalid class name */
+    /* INFO: compiled from: AboutThisAppNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass3 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ Ref.ObjectRef<String> $detailText;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(Ref.ObjectRef<String> objectRef) {
             super(1);
             this.$detailText = objectRef;
@@ -202,21 +202,21 @@ public final class AboutThisAppNavFragment extends DaijishouPreferenceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX WARN: Type inference failed for: r6v4, types: [T, java.lang.String] */
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* WARN: Type inference failed for: r6v4, types: [T, java.lang.String] */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             Ref.ObjectRef<String> objectRef = this.$detailText;
             objectRef.element = new Regex("Platforms count: \\d+ platform\\(s\\)\n").replace(objectRef.element, "Platforms count: " + num + " items\n");
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.AboutThisAppNavFragment$onCreateView$4, reason: invalid class name */
-    /* JADX INFO: compiled from: AboutThisAppNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.AboutThisAppNavFragment$onCreateView$4, reason: invalid class name */
+    /* INFO: compiled from: AboutThisAppNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass4 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ Ref.ObjectRef<String> $detailText;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass4(Ref.ObjectRef<String> objectRef) {
             super(1);
             this.$detailText = objectRef;
@@ -228,21 +228,21 @@ public final class AboutThisAppNavFragment extends DaijishouPreferenceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX WARN: Type inference failed for: r6v4, types: [T, java.lang.String] */
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* WARN: Type inference failed for: r6v4, types: [T, java.lang.String] */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             Ref.ObjectRef<String> objectRef = this.$detailText;
             objectRef.element = new Regex("Players count: \\d+ player\\(s\\)\n").replace(objectRef.element, "Players count: " + num + " items\n");
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.AboutThisAppNavFragment$onCreateView$5, reason: invalid class name */
-    /* JADX INFO: compiled from: AboutThisAppNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.AboutThisAppNavFragment$onCreateView$5, reason: invalid class name */
+    /* INFO: compiled from: AboutThisAppNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass5 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ Ref.ObjectRef<String> $detailText;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass5(Ref.ObjectRef<String> objectRef) {
             super(1);
             this.$detailText = objectRef;
@@ -254,15 +254,15 @@ public final class AboutThisAppNavFragment extends DaijishouPreferenceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX WARN: Type inference failed for: r6v4, types: [T, java.lang.String] */
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* WARN: Type inference failed for: r6v4, types: [T, java.lang.String] */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             Ref.ObjectRef<String> objectRef = this.$detailText;
             objectRef.element = new Regex("Playable items count: \\d+ item\\(s\\)\n").replace(objectRef.element, "Playable items count: " + num + " items\n");
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$1(AboutThisAppNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         int i = this$0.iconClickedCount + 1;
@@ -277,21 +277,21 @@ public final class AboutThisAppNavFragment extends DaijishouPreferenceFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$2(AboutThisAppNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.startActivity(new Intent("android.intent.action.VIEW", Uri.parse(Constants.githubUri)));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Multi-variable type inference failed */
     public static final void onCreateView$lambda$3(AboutThisAppNavFragment this$0, Ref.ObjectRef detailText, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(detailText, "$detailText");
         AcknowledgementDialogFragment.Companion.newInstance$default(AcknowledgementDialogFragment.INSTANCE, this$0.getString(R.string.more_detail), (String) detailText.element, null, null, this$0.getString(R.string.donation_title), 12, null).setOnNeutralButtonClickedListener(new AboutThisAppNavFragment$onCreateView$8$1(this$0)).show(this$0.getChildFragmentManager(), AcknowledgementDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$4(AboutThisAppNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.goBack = true;

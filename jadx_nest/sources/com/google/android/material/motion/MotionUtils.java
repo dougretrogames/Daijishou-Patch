@@ -9,7 +9,7 @@ import androidx.core.view.animation.PathInterpolatorCompat;
 import com.google.android.material.resources.MaterialAttributes;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MotionUtils {
     private static final String EASING_TYPE_CUBIC_BEZIER = "cubic-bezier";
     private static final String EASING_TYPE_FORMAT_END = ")";

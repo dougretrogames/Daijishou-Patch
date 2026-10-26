@@ -11,7 +11,7 @@ import java.util.Objects;
 import org.apache.commons.io.function.IOConsumer;
 import org.apache.commons.io.function.IOFunction;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum RandomAccessFileMode {
     READ_ONLY(R, 1),
     READ_WRITE(RW, 2),
@@ -25,7 +25,7 @@ public enum RandomAccessFileMode {
     private final int level;
     private final String mode;
 
-    /* JADX WARN: Code duplicated, block: B:21:0x003a A[PHI: r3
+    /* WARN: Code duplicated, block: B:21:0x003a A[PHI: r3
   0x003a: PHI (r3v5 org.apache.commons.io.RandomAccessFileMode) = 
   (r3v4 org.apache.commons.io.RandomAccessFileMode)
   (r3v6 org.apache.commons.io.RandomAccessFileMode)
@@ -58,7 +58,7 @@ public enum RandomAccessFileMode {
         return randomAccessFileMode2;
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.io.RandomAccessFileMode$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.io.RandomAccessFileMode$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$java$nio$file$StandardOpenOption;
 

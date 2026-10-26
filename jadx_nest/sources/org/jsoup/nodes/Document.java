@@ -12,7 +12,7 @@ import org.jsoup.parser.Parser;
 import org.jsoup.parser.Tag;
 import org.jsoup.select.Evaluator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Document extends Element {
     private static final Evaluator titleEval = new Evaluator.Tag("title");
     private Connection connection;

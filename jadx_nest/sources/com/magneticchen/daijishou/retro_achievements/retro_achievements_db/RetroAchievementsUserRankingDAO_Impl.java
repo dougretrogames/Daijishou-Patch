@@ -14,7 +14,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class RetroAchievementsUserRankingDAO_Impl implements RetroAchievementsUserRankingDAO {
     private final RoomDatabase __db;
     private final EntityDeletionOrUpdateAdapter<RetroAchievementsUserRankingEntity> __deletionAdapterOfRetroAchievementsUserRankingEntity;
@@ -28,7 +28,7 @@ public final class RetroAchievementsUserRankingDAO_Impl implements RetroAchievem
         this.__updateAdapterOfRetroAchievementsUserRankingEntity = new AnonymousClass3(__db);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$1, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$1, reason: invalid class name */
     class AnonymousClass1 extends EntityInsertionAdapter<RetroAchievementsUserRankingEntity> {
         AnonymousClass1(RoomDatabase database) {
             super(database);
@@ -39,7 +39,7 @@ public final class RetroAchievementsUserRankingDAO_Impl implements RetroAchievem
             return "INSERT OR REPLACE INTO `RetroAchievementsUserRankingEntity` (`id`,`user_id`,`whose_perspective`,`granularity`,`url`,`image_url`,`earned_points`) VALUES (nullif(?, 0),?,?,?,?,?,?)";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityInsertionAdapter
         public void bind(final SupportSQLiteStatement statement, final RetroAchievementsUserRankingEntity entity) {
             statement.bindLong(1, entity.getId());
@@ -60,7 +60,7 @@ public final class RetroAchievementsUserRankingDAO_Impl implements RetroAchievem
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$2, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$2, reason: invalid class name */
     class AnonymousClass2 extends EntityDeletionOrUpdateAdapter<RetroAchievementsUserRankingEntity> {
         AnonymousClass2(RoomDatabase database) {
             super(database);
@@ -71,14 +71,14 @@ public final class RetroAchievementsUserRankingDAO_Impl implements RetroAchievem
             return "DELETE FROM `RetroAchievementsUserRankingEntity` WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final RetroAchievementsUserRankingEntity entity) {
             statement.bindLong(1, entity.getId());
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$3, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$3, reason: invalid class name */
     class AnonymousClass3 extends EntityDeletionOrUpdateAdapter<RetroAchievementsUserRankingEntity> {
         AnonymousClass3(RoomDatabase database) {
             super(database);
@@ -89,7 +89,7 @@ public final class RetroAchievementsUserRankingDAO_Impl implements RetroAchievem
             return "UPDATE OR ABORT `RetroAchievementsUserRankingEntity` SET `id` = ?,`user_id` = ?,`whose_perspective` = ?,`granularity` = ?,`url` = ?,`image_url` = ?,`earned_points` = ? WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final RetroAchievementsUserRankingEntity entity) {
             statement.bindLong(1, entity.getId());
@@ -185,7 +185,7 @@ public final class RetroAchievementsUserRankingDAO_Impl implements RetroAchievem
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$4, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$4, reason: invalid class name */
     class AnonymousClass4 implements Callable<Integer> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -193,7 +193,7 @@ public final class RetroAchievementsUserRankingDAO_Impl implements RetroAchievem
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Integer call() throws Exception {
             Integer numValueOf = null;
@@ -238,7 +238,7 @@ public final class RetroAchievementsUserRankingDAO_Impl implements RetroAchievem
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"RetroAchievementsUserRankingEntity"}, false, new AnonymousClass5(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$5, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$5, reason: invalid class name */
     class AnonymousClass5 implements Callable<RetroAchievementsUserRankingEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -246,7 +246,7 @@ public final class RetroAchievementsUserRankingDAO_Impl implements RetroAchievem
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public RetroAchievementsUserRankingEntity call() throws Exception {
             RetroAchievementsUserRankingEntity retroAchievementsUserRankingEntity = null;
@@ -306,7 +306,7 @@ public final class RetroAchievementsUserRankingDAO_Impl implements RetroAchievem
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"RetroAchievementsUserRankingEntity"}, false, new AnonymousClass6(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$6, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$6, reason: invalid class name */
     class AnonymousClass6 implements Callable<List<RetroAchievementsUserRankingEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -373,7 +373,7 @@ public final class RetroAchievementsUserRankingDAO_Impl implements RetroAchievem
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"RetroAchievementsUserRankingEntity"}, false, new AnonymousClass7(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$7, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserRankingDAO_Impl$7, reason: invalid class name */
     class AnonymousClass7 implements Callable<List<RetroAchievementsUserRankingEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 

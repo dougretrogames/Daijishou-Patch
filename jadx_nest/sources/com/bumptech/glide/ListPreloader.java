@@ -10,7 +10,7 @@ import com.bumptech.glide.util.Util;
 import java.util.List;
 import java.util.Queue;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ListPreloader<T> implements AbsListView.OnScrollListener {
     private int lastEnd;
     private int lastStart;

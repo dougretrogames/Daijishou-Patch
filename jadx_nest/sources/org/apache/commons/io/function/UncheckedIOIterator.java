@@ -3,7 +3,7 @@ package org.apache.commons.io.function;
 import java.util.Iterator;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class UncheckedIOIterator<E> implements Iterator<E> {
     private final IOIterator<E> delegate;
 

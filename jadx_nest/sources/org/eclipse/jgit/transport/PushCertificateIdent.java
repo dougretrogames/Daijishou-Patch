@@ -11,7 +11,7 @@ import org.eclipse.jgit.lib.PersonIdent;
 import org.eclipse.jgit.util.MutableInteger;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PushCertificateIdent {
     private final String raw;
     private final int tzOffset;

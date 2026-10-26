@@ -8,7 +8,7 @@ import android.util.Property;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ScaleProvider implements VisibilityAnimatorProvider {
     private boolean growing;
     private float incomingEndScale;
@@ -105,7 +105,7 @@ public final class ScaleProvider implements VisibilityAnimatorProvider {
         return objectAnimatorOfPropertyValuesHolder;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.ScaleProvider$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.ScaleProvider$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         final /* synthetic */ float val$originalScaleX;
         final /* synthetic */ float val$originalScaleY;

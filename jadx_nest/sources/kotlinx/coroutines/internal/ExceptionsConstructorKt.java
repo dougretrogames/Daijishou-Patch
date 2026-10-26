@@ -17,8 +17,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlinx.coroutines.CopyableThrowable;
 
-/* JADX INFO: compiled from: ExceptionsConstructor.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: ExceptionsConstructor.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000&\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\u001a2\u0010\u0004\u001a\u0014\u0012\u0004\u0012\u00020\u0006\u0012\u0006\u0012\u0004\u0018\u00010\u00060\u0005j\u0002`\u0007\"\b\b\u0000\u0010\b*\u00020\u00062\f\u0010\t\u001a\b\u0012\u0004\u0012\u0002H\b0\nH\u0002\u001a.\u0010\u000b\u001a\u0014\u0012\u0004\u0012\u00020\u0006\u0012\u0006\u0012\u0004\u0018\u00010\u00060\u0005j\u0002`\u00072\u0012\u0010\f\u001a\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\u0005H\u0002\u001a!\u0010\r\u001a\u0004\u0018\u0001H\b\"\b\b\u0000\u0010\b*\u00020\u00062\u0006\u0010\u000e\u001a\u0002H\bH\u0000¢\u0006\u0002\u0010\u000f\u001a\u001b\u0010\u0010\u001a\u00020\u0003*\u0006\u0012\u0002\b\u00030\n2\b\b\u0002\u0010\u0011\u001a\u00020\u0003H\u0082\u0010\u001a\u0018\u0010\u0012\u001a\u00020\u0003*\u0006\u0012\u0002\b\u00030\n2\u0006\u0010\u0013\u001a\u00020\u0003H\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000*(\b\u0002\u0010\u0014\"\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0006\u0012\u0004\u0018\u00010\u00060\u00052\u0010\u0012\u0004\u0012\u00020\u0006\u0012\u0006\u0012\u0004\u0018\u00010\u00060\u0005¨\u0006\u0015"}, d2 = {"ctorCache", "Lkotlinx/coroutines/internal/CtorCache;", "throwableFields", "", "createConstructor", "Lkotlin/Function1;", "", "Lkotlinx/coroutines/internal/Ctor;", ExifInterface.LONGITUDE_EAST, "clz", "Ljava/lang/Class;", "safeCtor", "block", "tryCopyException", "exception", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;", "fieldsCount", "accumulator", "fieldsCountOrDefault", "defaultValue", "Ctor", "kotlinx-coroutines-core"}, k = 2, mv = {1, 9, 0}, xi = 48)
 public final class ExceptionsConstructorKt {
     private static final CtorCache ctorCache;
@@ -34,7 +34,7 @@ public final class ExceptionsConstructorKt {
         ctorCache = weakMapCtorCache;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static final <E extends Throwable> E tryCopyException(E e) {
         Object objM3752constructorimpl;
         if (e instanceof CopyableThrowable) {
@@ -53,7 +53,7 @@ public final class ExceptionsConstructorKt {
         return (E) ctorCache.get(e.getClass()).invoke(e);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final <E extends Throwable> Function1<Throwable, Throwable> createConstructor(Class<E> cls) {
         Object next;
         Function1<Throwable, Throwable> function1;
@@ -118,14 +118,14 @@ public final class ExceptionsConstructorKt {
         return exceptionsConstructorKt$createConstructor$nullResult$1;
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.internal.ExceptionsConstructorKt$safeCtor$1, reason: invalid class name */
-    /* JADX INFO: compiled from: ExceptionsConstructor.kt */
+    /* INFO: renamed from: kotlinx.coroutines.internal.ExceptionsConstructorKt$safeCtor$1, reason: invalid class name */
+    /* INFO: compiled from: ExceptionsConstructor.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0003\n\u0002\b\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u0002\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "e", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<Throwable, Throwable> {
         final /* synthetic */ Function1<Throwable, Throwable> $block;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(Function1<? super Throwable, ? extends Throwable> function1) {
             super(1);
             this.$block = function1;

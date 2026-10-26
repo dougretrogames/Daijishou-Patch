@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import java.util.Map;
 import org.eclipse.jgit.lib.Ref;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface RefFilter {
     public static final RefFilter DEFAULT = new RefFilter$$ExternalSyntheticLambda0();
 

@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class ArrayListMultimap<K, V> extends ArrayListMultimapGwtSerializationDependencies<K, V> {
     private static final int DEFAULT_VALUES_PER_KEY = 3;
@@ -78,7 +78,7 @@ public final class ArrayListMultimap<K, V> extends ArrayListMultimapGwtSerializa
         return super.keys();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractListMultimap, com.google.common.collect.AbstractMapBasedMultimap, com.google.common.collect.AbstractMultimap, com.google.common.collect.Multimap
     public /* bridge */ /* synthetic */ boolean put(@ParametricNullness Object key, @ParametricNullness Object value) {
         return super.put(key, value);
@@ -89,7 +89,7 @@ public final class ArrayListMultimap<K, V> extends ArrayListMultimapGwtSerializa
         return super.putAll(multimap);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractMultimap, com.google.common.collect.Multimap
     public /* bridge */ /* synthetic */ boolean putAll(@ParametricNullness Object key, Iterable values) {
         return super.putAll(key, values);
@@ -152,7 +152,7 @@ public final class ArrayListMultimap<K, V> extends ArrayListMultimapGwtSerializa
         putAll(multimap);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractListMultimap, com.google.common.collect.AbstractMapBasedMultimap
     public List<V> createCollection() {
         return new ArrayList(this.expectedValuesPerKey);

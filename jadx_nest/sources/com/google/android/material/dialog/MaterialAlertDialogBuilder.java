@@ -23,7 +23,7 @@ import com.google.android.material.resources.MaterialAttributes;
 import com.google.android.material.shape.MaterialShapeDrawable;
 import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialAlertDialogBuilder extends AlertDialog.Builder {
     private static final int DEF_STYLE_ATTR = R.attr.alertDialogStyle;
     private static final int DEF_STYLE_RES = R.style.MaterialAlertDialog_MaterialComponents;

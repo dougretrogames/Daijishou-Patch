@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.Map;
 import org.apache.commons.collections4.MultiValuedMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HashSetValuedHashMap<K, V> extends AbstractSetValuedMap<K, V> implements Serializable {
     private static final int DEFAULT_INITIAL_MAP_CAPACITY = 16;
     private static final int DEFAULT_INITIAL_SET_CAPACITY = 3;
@@ -39,7 +39,7 @@ public class HashSetValuedHashMap<K, V> extends AbstractSetValuedMap<K, V> imple
         super.putAll(multiValuedMap);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.multimap.AbstractSetValuedMap, org.apache.commons.collections4.multimap.AbstractMultiValuedMap
     public HashSet<V> createCollection() {
         return new HashSet<>(this.initialSetCapacity);

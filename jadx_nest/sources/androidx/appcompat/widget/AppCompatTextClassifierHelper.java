@@ -5,7 +5,7 @@ import android.view.textclassifier.TextClassifier;
 import android.widget.TextView;
 import androidx.core.util.Preconditions;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class AppCompatTextClassifierHelper {
     private TextClassifier mTextClassifier;
     private TextView mTextView;

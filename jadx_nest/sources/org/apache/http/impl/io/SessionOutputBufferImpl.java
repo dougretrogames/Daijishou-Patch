@@ -15,7 +15,7 @@ import org.apache.http.util.Asserts;
 import org.apache.http.util.ByteArrayBuffer;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SessionOutputBufferImpl implements SessionOutputBuffer, BufferInfo {
     private static final byte[] CRLF = {Ascii.CR, 10};
     private ByteBuffer bbuf;

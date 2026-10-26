@@ -5,7 +5,7 @@ import java.util.List;
 import org.eclipse.jgit.diff.Sequence;
 import org.eclipse.jgit.util.IntList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MergeResult<S extends Sequence> implements Iterable<MergeChunk> {
     static final MergeChunk.ConflictState[] states = MergeChunk.ConflictState.valuesCustom();
     final IntList chunks = new IntList();
@@ -30,7 +30,7 @@ public class MergeResult<S extends Sequence> implements Iterable<MergeChunk> {
         return this.sequences;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.merge.MergeResult$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.merge.MergeResult$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<MergeChunk> {
         int idx;
 

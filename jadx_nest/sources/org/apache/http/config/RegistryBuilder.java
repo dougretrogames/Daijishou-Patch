@@ -5,7 +5,7 @@ import java.util.Locale;
 import java.util.Map;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class RegistryBuilder<I> {
     private final Map<String, I> items = new HashMap();
 

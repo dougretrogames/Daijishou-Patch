@@ -8,7 +8,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FilterCommandRegistry {
     private static Map<String, FilterCommandFactory> filterCommandRegistry = new ConcurrentHashMap();
 

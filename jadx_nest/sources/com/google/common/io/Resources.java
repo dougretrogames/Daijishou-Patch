@@ -10,7 +10,7 @@ import java.net.URL;
 import java.nio.charset.Charset;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Resources {
     private Resources() {
@@ -62,7 +62,7 @@ public final class Resources {
         return (List) readLines(url, charset, new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.common.io.Resources$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.io.Resources$1, reason: invalid class name */
     class AnonymousClass1 implements LineProcessor<List<String>> {
         final List<String> result = Lists.newArrayList();
 

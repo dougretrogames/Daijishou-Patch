@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import androidx.core.internal.view.SupportMenu;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class SeekBar extends View {
     private AccessibilitySeekListener mAccessibilitySeekListener;
     private int mActiveBarHeight;

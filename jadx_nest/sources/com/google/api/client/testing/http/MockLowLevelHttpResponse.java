@@ -9,7 +9,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockLowLevelHttpResponse extends LowLevelHttpResponse {
     private InputStream content;
     private String contentEncoding;

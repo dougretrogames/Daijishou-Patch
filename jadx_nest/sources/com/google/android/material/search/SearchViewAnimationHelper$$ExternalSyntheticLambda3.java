@@ -3,8 +3,8 @@ package com.google.android.material.search;
 import android.animation.ValueAnimator;
 import com.google.android.material.internal.FadeThroughDrawable;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SearchViewAnimationHelper$$ExternalSyntheticLambda3 implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ FadeThroughDrawable f$0;
 

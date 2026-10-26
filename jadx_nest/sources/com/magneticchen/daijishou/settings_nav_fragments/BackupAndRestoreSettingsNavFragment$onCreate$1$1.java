@@ -15,27 +15,27 @@ import kotlin.jvm.internal.Lambda;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class BackupAndRestoreSettingsNavFragment$onCreate$1$1 extends Lambda<Unit> implements Function0<Unit> {
     final /* synthetic */ BackupAndRestoreSettingsNavFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     BackupAndRestoreSettingsNavFragment$onCreate$1$1(BackupAndRestoreSettingsNavFragment backupAndRestoreSettingsNavFragment) {
         super(0);
         this.this$0 = backupAndRestoreSettingsNavFragment;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreate$1$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreate$1$1$1, reason: invalid class name */
+    /* INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreate$1$1$1", f = "BackupAndRestoreSettingsNavFragment.kt", i = {}, l = {77}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
         int label;
         final /* synthetic */ BackupAndRestoreSettingsNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(BackupAndRestoreSettingsNavFragment backupAndRestoreSettingsNavFragment, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = backupAndRestoreSettingsNavFragment;
@@ -84,7 +84,7 @@ final class BackupAndRestoreSettingsNavFragment$onCreate$1$1 extends Lambda<Unit
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2() {
         BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this.this$0), null, null, new AnonymousClass1(this.this$0, null), 3, null);
     }

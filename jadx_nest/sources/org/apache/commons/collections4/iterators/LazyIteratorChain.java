@@ -2,7 +2,7 @@ package org.apache.commons.collections4.iterators;
 
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class LazyIteratorChain<E> implements Iterator<E> {
     private int callCounter;
     private boolean chainExhausted;

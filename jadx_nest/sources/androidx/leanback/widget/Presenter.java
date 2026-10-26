@@ -6,7 +6,7 @@ import androidx.collection.ArrayMap;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class Presenter implements FacetProvider {
     private Map<Class<?>, Object> mFacets;
 

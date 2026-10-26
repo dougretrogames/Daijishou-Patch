@@ -15,7 +15,7 @@ import org.apache.http.conn.scheme.SchemeRegistry;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class BasicClientConnectionManager implements ClientConnectionManager {
     private static final AtomicLong COUNTER = new AtomicLong();
@@ -55,7 +55,7 @@ public class BasicClientConnectionManager implements ClientConnectionManager {
         return new DefaultClientConnectionOperator(schemeRegistry);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.conn.BasicClientConnectionManager$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.conn.BasicClientConnectionManager$1, reason: invalid class name */
     class AnonymousClass1 implements ClientConnectionRequest {
         final /* synthetic */ HttpRoute val$route;
         final /* synthetic */ Object val$state;

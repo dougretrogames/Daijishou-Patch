@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Objects;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class UserAgentMetadata {
     public static final int BITNESS_DEFAULT = 0;
     private final String mArchitecture;

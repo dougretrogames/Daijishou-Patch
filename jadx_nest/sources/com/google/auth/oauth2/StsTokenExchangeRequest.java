@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class StsTokenExchangeRequest {
     private static final String GRANT_TYPE = "urn:ietf:params:oauth:grant-type:token-exchange";
 

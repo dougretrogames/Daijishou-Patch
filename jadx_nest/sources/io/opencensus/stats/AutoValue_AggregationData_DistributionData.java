@@ -3,7 +3,7 @@ package io.opencensus.stats;
 import io.opencensus.metrics.data.Exemplar;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_AggregationData_DistributionData extends AggregationData.DistributionData {
     private final List<Long> bucketCounts;
     private final long count;

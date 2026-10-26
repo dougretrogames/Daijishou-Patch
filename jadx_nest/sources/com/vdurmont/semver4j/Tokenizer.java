@@ -7,7 +7,7 @@ import java.util.Map;
 import kotlin.text.Typography;
 import org.apache.commons.codec.language.Soundex;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class Tokenizer {
     private static final Map<Semver.SemverType, Map<Character, Token>> SPECIAL_CHARS = new HashMap();
 

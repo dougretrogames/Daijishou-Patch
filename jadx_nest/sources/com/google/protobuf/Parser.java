@@ -3,7 +3,7 @@ package com.google.protobuf;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public interface Parser<MessageType> {
     MessageType parseDelimitedFrom(InputStream input) throws InvalidProtocolBufferException;
 

@@ -5,7 +5,7 @@ import java.util.AbstractList;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.revwalk.RevObject;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RevObjectList<E extends RevObject> extends AbstractList<E> {
     static final int BLOCK_SHIFT = 8;
     static final int BLOCK_SIZE = 256;

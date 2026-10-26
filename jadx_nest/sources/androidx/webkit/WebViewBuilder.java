@@ -10,7 +10,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import org.chromium.support_lib_boundary.WebViewBuilderBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class WebViewBuilder {
     WebViewBuilderBoundaryInterface mBuilderStateBoundary;
     private Policy mPolicy;

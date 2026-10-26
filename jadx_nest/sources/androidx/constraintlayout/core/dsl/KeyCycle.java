@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.dsl;
 
 import androidx.constraintlayout.core.motion.utils.TypedValues;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class KeyCycle extends KeyAttribute {
     private static final String TAG = "KeyCycle";
     private float mWaveOffset;

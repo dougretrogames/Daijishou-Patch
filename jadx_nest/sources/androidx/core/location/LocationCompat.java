@@ -9,7 +9,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class LocationCompat {
     public static final String EXTRA_BEARING_ACCURACY = "bearingAccuracy";
     public static final String EXTRA_IS_MOCK = "mockLocation";

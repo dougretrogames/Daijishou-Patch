@@ -3,7 +3,7 @@ package androidx.core.os;
 import android.os.LocaleList;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class LocaleListPlatformWrapper implements LocaleListInterface {
     private final LocaleList mLocaleList;
 

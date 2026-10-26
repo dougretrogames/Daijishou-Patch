@@ -23,7 +23,7 @@ import retrofit2.Converter;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Retromock {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private final ExecutorService backgroundExecutor;
@@ -68,7 +68,7 @@ public final class Retromock {
         return (T) Proxy.newProxyInstance(cls.getClassLoader(), new Class[]{cls}, new AnonymousClass1(delegateFactory.create()));
     }
 
-    /* JADX INFO: renamed from: co.infinum.retromock.Retromock$1, reason: invalid class name */
+    /* INFO: renamed from: co.infinum.retromock.Retromock$1, reason: invalid class name */
     class AnonymousClass1 implements InvocationHandler {
         final /* synthetic */ Object val$delegate;
 
@@ -91,8 +91,8 @@ public final class Retromock {
             return method.invoke(this, objArr);
         }
 
-        /* JADX INFO: Add missing generic type declarations: [T] */
-        /* JADX INFO: renamed from: co.infinum.retromock.Retromock$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: Add missing generic type declarations: [T] */
+        /* INFO: renamed from: co.infinum.retromock.Retromock$1$1, reason: invalid class name and collision with other inner class name */
         class CallableC00241<T> implements Callable<Call<T>> {
             final /* synthetic */ CallAdapter val$callAdapter;
             final /* synthetic */ Method val$method;
@@ -111,7 +111,7 @@ public final class Retromock {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public RetromockMethod findRetromockMethod(Method method) throws DisabledException {
         RetromockMethod retromockMethod;
         RetromockMethod retromockMethod2 = this.methodCache.get(method);
@@ -128,7 +128,7 @@ public final class Retromock {
         return retromockMethod;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public <T> CallWrapper findCallWrapper(Method method) {
         CallWrapper callWrapperCreate;
         CallWrapper callWrapper = this.callWrapperCache.get(method);
@@ -176,8 +176,8 @@ public final class Retromock {
         return this.callbackExecutor;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: co.infinum.retromock.Retromock$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: co.infinum.retromock.Retromock$2, reason: invalid class name */
     static class AnonymousClass2<T> implements DelegateFactory<T> {
         final /* synthetic */ Retrofit val$retrofit;
         final /* synthetic */ Class val$service;
@@ -206,7 +206,7 @@ public final class Retromock {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <T> Response<T> createResponse(Converter<ResponseBody, T> converter, ResponseParams responseParams) throws IOException {
         ResponseBody responseBodyCreate;
         RetromockBodyFactory retromockBodyFactoryBodyFactory = responseParams.bodyFactory();

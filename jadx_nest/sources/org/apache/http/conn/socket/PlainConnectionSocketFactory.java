@@ -6,7 +6,7 @@ import java.net.Socket;
 import org.apache.http.HttpHost;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PlainConnectionSocketFactory implements ConnectionSocketFactory {
     public static final PlainConnectionSocketFactory INSTANCE = new PlainConnectionSocketFactory();
 

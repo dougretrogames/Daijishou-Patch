@@ -4,7 +4,7 @@ import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ResourceRecycler {
     private final Handler handler = new Handler(Looper.getMainLooper(), new ResourceRecyclerCallback());
     private boolean isRecycling;

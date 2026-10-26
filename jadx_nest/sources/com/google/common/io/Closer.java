@@ -10,7 +10,7 @@ import java.util.Deque;
 import java.util.logging.Level;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Closer implements Closeable {
     private static final Suppressor SUPPRESSOR;

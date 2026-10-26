@@ -14,7 +14,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.conn.ManagedHttpClientConnection;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class CPoolProxy implements ManagedHttpClientConnection, HttpContext {
     private volatile CPoolEntry poolEntry;
 

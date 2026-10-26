@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.Collection;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public abstract class zzaq extends AbstractCollection implements Serializable {
     private static final Object[] zza = new Object[0];
 
@@ -68,7 +68,7 @@ public abstract class zzaq extends AbstractCollection implements Serializable {
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
-    /* JADX INFO: renamed from: zzd, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: zzd, reason: merged with bridge method [inline-methods] */
     public abstract zzaz iterator();
 
     @CheckForNull

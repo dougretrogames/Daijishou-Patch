@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenrePairDAO {
     private final RoomDatabase __db;
     private final EntityDeletionOrUpdateAdapter<PlayableItemToGenrePairEntity> __deletionAdapterOfPlayableItemToGenrePairEntity;
@@ -38,7 +38,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         this.__preparedStmtOfDeleteByPlayableItemId = new AnonymousClass7(__db);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$1, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$1, reason: invalid class name */
     class AnonymousClass1 extends EntityInsertionAdapter<PlayableItemToGenrePairEntity> {
         AnonymousClass1(RoomDatabase database) {
             super(database);
@@ -49,7 +49,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
             return "INSERT OR REPLACE INTO `PlayableItemToGenrePairEntity` (`id`,`playable_item_id`,`genre_id`,`extra`) VALUES (nullif(?, 0),?,?,?)";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityInsertionAdapter
         public void bind(final SupportSQLiteStatement statement, final PlayableItemToGenrePairEntity entity) {
             statement.bindLong(1, entity.getId());
@@ -59,7 +59,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$2, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$2, reason: invalid class name */
     class AnonymousClass2 extends EntityDeletionOrUpdateAdapter<PlayableItemToGenrePairEntity> {
         AnonymousClass2(RoomDatabase database) {
             super(database);
@@ -70,14 +70,14 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
             return "DELETE FROM `PlayableItemToGenrePairEntity` WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final PlayableItemToGenrePairEntity entity) {
             statement.bindLong(1, entity.getId());
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$3, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$3, reason: invalid class name */
     class AnonymousClass3 extends EntityDeletionOrUpdateAdapter<PlayableItemToGenrePairEntity> {
         AnonymousClass3(RoomDatabase database) {
             super(database);
@@ -88,7 +88,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
             return "UPDATE OR ABORT `PlayableItemToGenrePairEntity` SET `id` = ?,`playable_item_id` = ?,`genre_id` = ?,`extra` = ? WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final PlayableItemToGenrePairEntity entity) {
             statement.bindLong(1, entity.getId());
@@ -99,7 +99,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$4, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$4, reason: invalid class name */
     class AnonymousClass4 extends SharedSQLiteStatement {
         AnonymousClass4(RoomDatabase database) {
             super(database);
@@ -111,7 +111,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$5, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$5, reason: invalid class name */
     class AnonymousClass5 extends SharedSQLiteStatement {
         AnonymousClass5(RoomDatabase database) {
             super(database);
@@ -123,7 +123,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$6, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$6, reason: invalid class name */
     class AnonymousClass6 extends SharedSQLiteStatement {
         AnonymousClass6(RoomDatabase database) {
             super(database);
@@ -135,7 +135,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$7, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$7, reason: invalid class name */
     class AnonymousClass7 extends SharedSQLiteStatement {
         AnonymousClass7(RoomDatabase database) {
             super(database);
@@ -308,7 +308,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$8, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$8, reason: invalid class name */
     class AnonymousClass8 implements Callable<Integer> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -316,7 +316,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Integer call() throws Exception {
             Integer numValueOf = null;
@@ -354,7 +354,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$9, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$9, reason: invalid class name */
     class AnonymousClass9 implements Callable<List<Long>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -415,7 +415,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemToGenrePairEntity", "PlayableItemEntity"}, false, new AnonymousClass10(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$10, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$10, reason: invalid class name */
     class AnonymousClass10 implements Callable<List<String>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -473,7 +473,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemToGenrePairEntity", "PlayableItemEntity"}, false, new AnonymousClass11(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$11, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$11, reason: invalid class name */
     class AnonymousClass11 implements Callable<List<String>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -524,7 +524,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$12, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$12, reason: invalid class name */
     class AnonymousClass12 implements Callable<List<String>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -578,7 +578,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$13, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$13, reason: invalid class name */
     class AnonymousClass13 implements Callable<List<PlayableItemToGenrePairEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -647,7 +647,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemToGenrePairEntity"}, false, new AnonymousClass14(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$14, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$14, reason: invalid class name */
     class AnonymousClass14 implements Callable<PlayableItemToGenrePairEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -655,7 +655,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayableItemToGenrePairEntity call() throws Exception {
             Cursor cursorQuery = DBUtil.query(PlayableItemToGenrePairDAO_Impl.this.__db, this.val$_statement, false, null);
@@ -692,7 +692,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemToGenrePairEntity"}, false, new AnonymousClass15(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$15, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$15, reason: invalid class name */
     class AnonymousClass15 implements Callable<List<PlayableItemToGenrePairEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -757,7 +757,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemToGenrePairEntity"}, false, new AnonymousClass16(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$16, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$16, reason: invalid class name */
     class AnonymousClass16 implements Callable<List<Long>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -814,7 +814,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemToGenrePairEntity"}, false, new AnonymousClass17(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$17, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$17, reason: invalid class name */
     class AnonymousClass17 implements Callable<List<PlayableItemToGenrePairEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -879,7 +879,7 @@ public final class PlayableItemToGenrePairDAO_Impl implements PlayableItemToGenr
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayableItemToGenrePairEntity"}, false, new AnonymousClass18(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$18, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayableItemToGenrePairDAO_Impl$18, reason: invalid class name */
     class AnonymousClass18 implements Callable<List<String>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 

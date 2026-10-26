@@ -9,7 +9,7 @@ import org.apache.http.cookie.SetCookie;
 import org.apache.http.util.Args;
 import org.apache.http.util.TextUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LaxMaxAgeHandler extends AbstractCookieAttributeHandler implements CommonCookieAttributeHandler {
     private static final Pattern MAX_AGE_PATTERN = Pattern.compile("^\\-?[0-9]+$");
 

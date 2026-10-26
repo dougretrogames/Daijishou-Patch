@@ -11,16 +11,16 @@ import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: DaijishouLibraryModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouLibraryModel.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouLibraryModel$applyPlatformPreviewMediaPackIndexJsonToAllPlatforms$1$nextPlatform$1", f = "DaijishouLibraryModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
 final class DaijishouLibraryModel$applyPlatformPreviewMediaPackIndexJsonToAllPlatforms$1$nextPlatform$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
     final /* synthetic */ Function2<? super Boolean, ? super Integer, Unit> $callback;
     int label;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     DaijishouLibraryModel$applyPlatformPreviewMediaPackIndexJsonToAllPlatforms$1$nextPlatform$1(Function2<? super Boolean, ? super Integer, Unit> function2, Continuation<?> continuation) {
         super(2, continuation);
         this.$callback = function2;

@@ -8,7 +8,7 @@ import com.bumptech.glide.load.model.MultiModelLoaderFactory;
 import java.io.InputStream;
 import java.net.URL;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class UrlLoader implements ModelLoader<URL, InputStream> {
     private final ModelLoader<GlideUrl, InputStream> glideUrlLoader;
 

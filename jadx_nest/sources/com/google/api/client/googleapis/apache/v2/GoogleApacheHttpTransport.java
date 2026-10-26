@@ -21,7 +21,7 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.conn.PoolingHttpClientConnectionManager;
 import org.apache.http.impl.conn.SystemDefaultRoutePlanner;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class GoogleApacheHttpTransport {
     public static ApacheHttpTransport newTrustedTransport() throws GeneralSecurityException, IOException {
         return newTrustedTransport(MtlsUtils.getDefaultMtlsProvider());

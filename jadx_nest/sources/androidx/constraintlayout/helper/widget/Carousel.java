@@ -13,7 +13,7 @@ import androidx.constraintlayout.widget.R;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Carousel extends MotionHelper {
     private static final boolean DEBUG = false;
     private static final String TAG = "Carousel";
@@ -257,7 +257,7 @@ public class Carousel extends MotionHelper {
         return true;
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.helper.widget.Carousel$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.helper.widget.Carousel$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -279,7 +279,7 @@ public class Carousel extends MotionHelper {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.constraintlayout.helper.widget.Carousel$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: androidx.constraintlayout.helper.widget.Carousel$1$1, reason: invalid class name and collision with other inner class name */
         class RunnableC00101 implements Runnable {
             final /* synthetic */ float val$v;
 
@@ -352,7 +352,7 @@ public class Carousel extends MotionHelper {
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void updateItems() {
         Adapter adapter = this.mAdapter;
         if (adapter == null || this.mMotionLayout == null || adapter.count() == 0) {
@@ -430,7 +430,7 @@ public class Carousel extends MotionHelper {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$updateItems$0$androidx-constraintlayout-helper-widget-Carousel, reason: not valid java name */
+    /* INFO: renamed from: lambda$updateItems$0$androidx-constraintlayout-helper-widget-Carousel, reason: not valid java name */
     /* synthetic */ void m3142xc943cdea() {
         this.mMotionLayout.setTransitionDuration(this.mAnimateTargetDelay);
         if (this.mTargetIndex < this.mIndex) {

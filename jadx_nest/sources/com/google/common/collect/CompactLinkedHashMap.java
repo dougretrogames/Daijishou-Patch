@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Objects;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class CompactLinkedHashMap<K, V> extends CompactHashMap<K, V> {
     private static final int ENDPOINT = -2;

@@ -6,8 +6,8 @@ import android.util.Log;
 import com.google.android.gms.common.api.Result;
 import com.google.android.gms.common.internal.Preconditions;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public abstract class ResolvingResultCallbacks<R extends Result> extends ResultCallbacks<R> {
     private final Activity zza;
     private final int zzb;

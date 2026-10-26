@@ -11,8 +11,8 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public class ProxyRequest extends AbstractSafeParcelable {
     public static final int VERSION_CODE = 2;
     public final byte[] body;
@@ -32,7 +32,7 @@ public class ProxyRequest extends AbstractSafeParcelable {
     public static final int HTTP_METHOD_PATCH = 7;
     public static final int LAST_CODE = 7;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+    /* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
     public static class Builder {
         private final String zza;
         private int zzb = ProxyRequest.HTTP_METHOD_GET;

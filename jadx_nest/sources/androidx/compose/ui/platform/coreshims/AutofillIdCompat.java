@@ -2,7 +2,7 @@ package androidx.compose.ui.platform.coreshims;
 
 import android.view.autofill.AutofillId;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AutofillIdCompat {
     private final Object mWrappedObj;
 

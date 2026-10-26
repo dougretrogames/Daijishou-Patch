@@ -6,7 +6,7 @@ import org.apache.http.HttpEntityEnclosingRequest;
 import org.apache.http.client.utils.CloneUtils;
 import org.apache.http.protocol.HTTP;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class HttpEntityEnclosingRequestBase extends HttpRequestBase implements HttpEntityEnclosingRequest {
     private HttpEntity entity;
 

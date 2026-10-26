@@ -5,7 +5,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.FunctorException;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class NullIsExceptionPredicate<T> extends AbstractPredicate<T> implements PredicateDecorator<T>, Serializable {
     private static final long serialVersionUID = 3243449850504576071L;
     private final Predicate<? super T> iPredicate;

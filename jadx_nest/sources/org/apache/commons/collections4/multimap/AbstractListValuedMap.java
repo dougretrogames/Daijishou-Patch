@@ -8,9 +8,9 @@ import java.util.Map;
 import org.apache.commons.collections4.ListUtils;
 import org.apache.commons.collections4.ListValuedMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractListValuedMap<K, V> extends AbstractMultiValuedMap<K, V> implements ListValuedMap<K, V> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.multimap.AbstractMultiValuedMap
     public abstract List<V> createCollection();
 
@@ -134,7 +134,7 @@ public abstract class AbstractListValuedMap<K, V> extends AbstractMultiValuedMap
             return (V) ListUtils.emptyIfNull(getMapping()).get(i);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // org.apache.commons.collections4.multimap.AbstractMultiValuedMap.WrappedCollection
         public List<V> getMapping() {
             return AbstractListValuedMap.this.getMap().get(this.key);
@@ -208,7 +208,7 @@ public abstract class AbstractListValuedMap<K, V> extends AbstractMultiValuedMap
         return ListUtils.emptyIfNull(getMap().remove(obj));
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // org.apache.commons.collections4.multimap.AbstractMultiValuedMap
     public List<V> wrappedCollection(K k) {
         return new WrappedList(k);

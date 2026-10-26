@@ -12,7 +12,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.patch.Patch;
 import org.eclipse.jgit.patch.PatchApplier;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ApplyCommand extends GitCommand<ApplyResult> {
     private InputStream in;
 

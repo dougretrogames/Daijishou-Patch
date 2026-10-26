@@ -3,7 +3,7 @@ package com.google.common.util.concurrent;
 import java.util.Locale;
 import java.util.logging.Level;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class UncaughtExceptionHandlers {
     private UncaughtExceptionHandlers() {

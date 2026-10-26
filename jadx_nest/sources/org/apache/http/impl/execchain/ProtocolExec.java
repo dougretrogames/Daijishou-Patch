@@ -24,7 +24,7 @@ import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.apache.http.protocol.HttpProcessor;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ProtocolExec implements ClientExecChain {
     private final HttpProcessor httpProcessor;
     private final Log log = LogFactory.getLog(getClass());

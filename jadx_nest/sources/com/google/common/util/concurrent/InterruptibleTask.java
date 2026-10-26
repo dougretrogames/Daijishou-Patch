@@ -6,7 +6,7 @@ import java.util.concurrent.locks.LockSupport;
 import javax.annotation.CheckForNull;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 abstract class InterruptibleTask<T> extends AtomicReference<Runnable> implements Runnable {
     private static final int MAX_BUSY_WAIT_SPINS = 1000;
@@ -40,7 +40,7 @@ abstract class InterruptibleTask<T> extends AtomicReference<Runnable> implements
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // java.lang.Runnable
     public final void run() {
         Thread threadCurrentThread = Thread.currentThread();
@@ -144,7 +144,7 @@ abstract class InterruptibleTask<T> extends AtomicReference<Runnable> implements
             this.task = task;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setOwner(Thread thread) {
             super.setExclusiveOwnerThread(thread);
         }

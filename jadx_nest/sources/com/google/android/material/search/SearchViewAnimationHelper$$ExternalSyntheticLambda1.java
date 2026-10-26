@@ -3,8 +3,8 @@ package com.google.android.material.search;
 import android.animation.ValueAnimator;
 import androidx.appcompat.graphics.drawable.DrawerArrowDrawable;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SearchViewAnimationHelper$$ExternalSyntheticLambda1 implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ DrawerArrowDrawable f$0;
 

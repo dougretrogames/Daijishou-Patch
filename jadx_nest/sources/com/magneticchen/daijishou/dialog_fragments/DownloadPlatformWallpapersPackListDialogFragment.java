@@ -51,12 +51,12 @@ import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.MainCoroutineDispatcher;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: compiled from: DownloadPlatformWallpapersPackListDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DownloadPlatformWallpapersPackListDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u0018\u0000 \u001a2\u00020\u0001:\u0001\u001aB\u0005¢\u0006\u0002\u0010\u0002J\u0012\u0010\u0014\u001a\u00020\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u0017H\u0016J\b\u0010\u0018\u001a\u00020\u0019H\u0016R\u0010\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\nX\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000b0\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u000e\u001a\u00020\u000fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0011\"\u0004\b\u0012\u0010\u0013¨\u0006\u001b"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/DownloadPlatformWallpapersPackListDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "()V", "platformWallpapersPacksIndexJson", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformWallpapersPacksIndexJson;", "progressBar", "Landroid/widget/ProgressBar;", "recyclerView", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;", "recyclerViewAdapter", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson;", "recyclerViewItems", "", "scrollingOnBackPressed", "", "getScrollingOnBackPressed", "()Z", "setScrollingOnBackPressed", "(Z)V", "onCreateDialog", "Landroid/app/Dialog;", "savedInstanceState", "Landroid/os/Bundle;", "onStart", "", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class DownloadPlatformWallpapersPackListDialogFragment extends DaijishouDialogFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public PlatformWallpapersPacksIndexJson platformWallpapersPacksIndexJson;
     public ProgressBar progressBar;
@@ -65,7 +65,7 @@ public final class DownloadPlatformWallpapersPackListDialogFragment extends Daij
     private final List<PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson> recyclerViewItems = new ArrayList();
     private boolean scrollingOnBackPressed;
 
-    /* JADX INFO: compiled from: DownloadPlatformWallpapersPackListDialogFragment.kt */
+    /* INFO: compiled from: DownloadPlatformWallpapersPackListDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0003\u001a\u00020\u0004¨\u0006\u0005"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/DownloadPlatformWallpapersPackListDialogFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/dialog_fragments/DownloadPlatformWallpapersPackListDialogFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -100,8 +100,8 @@ public final class DownloadPlatformWallpapersPackListDialogFragment extends Daij
         BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this), Dispatchers.getIO(), null, new C02221(null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformWallpapersPackListDialogFragment$onStart$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DownloadPlatformWallpapersPackListDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformWallpapersPackListDialogFragment$onStart$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DownloadPlatformWallpapersPackListDialogFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.DownloadPlatformWallpapersPackListDialogFragment$onStart$1", f = "DownloadPlatformWallpapersPackListDialogFragment.kt", i = {0}, l = {87}, m = "invokeSuspendImpl", n = {"$this$launch"}, s = {"L$0"})
     final class C02221 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -257,8 +257,8 @@ public final class DownloadPlatformWallpapersPackListDialogFragment extends Daij
         return alertDialog;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformWallpapersPackListDialogFragment$onCreateDialog$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DownloadPlatformWallpapersPackListDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformWallpapersPackListDialogFragment$onCreateDialog$1, reason: invalid class name */
+    /* INFO: compiled from: DownloadPlatformWallpapersPackListDialogFragment.kt */
     @Metadata(d1 = {"\u00008\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003*\u0002\u0000\u000b\b\n\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0011J!\u0010\n\u001a\u00060\u000bR\u00020\u00002\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000fH\u0016¢\u0006\u0002\u0010\u0010R(\u0010\u0003\u001a\u001c\u0012\u0004\u0012\u00020\u0002\u0012\u0012\u0012\u0010\u0012\f\u0012\n \u0007*\u0004\u0018\u00010\u00060\u00060\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0012"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/DownloadPlatformWallpapersPackListDialogFragment$onCreateDialog$1", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson;", "glideBuilderCreator", "Lkotlin/Function1;", "Lcom/bumptech/glide/RequestBuilder;", "Landroid/graphics/drawable/Drawable;", "kotlin.jvm.PlatformType", "glideViewPreloadSizeProvider", "Lcom/bumptech/glide/util/ViewPreloadSizeProvider;", "onCreateViewHolder", "com/magneticchen/daijishou/dialog_fragments/DownloadPlatformWallpapersPackListDialogFragment$onCreateDialog$1.ViewHolder", "viewGroup", "Landroid/view/ViewGroup;", "viewType", "", "(Landroid/view/ViewGroup;I)Lcom/magneticchen/daijishou/dialog_fragments/DownloadPlatformWallpapersPackListDialogFragment$onCreateDialog$1$ViewHolder;", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass1 extends DaijishouRecyclerView.Adapter<PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson> {
         private final Function1<PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson, RequestBuilder<Drawable>> glideBuilderCreator;
@@ -271,8 +271,8 @@ public final class DownloadPlatformWallpapersPackListDialogFragment extends Daij
             this.glideViewPreloadSizeProvider = DaijishouRecyclerView.Adapter.addGlidePreloaderBuilderCreator$default(this, downloadPlatformWallpapersPackListDialogFragment$onCreateDialog$1$glideBuilderCreator$1, 0, 2, null);
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformWallpapersPackListDialogFragment$onCreateDialog$1$ViewHolder */
-        /* JADX INFO: compiled from: DownloadPlatformWallpapersPackListDialogFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformWallpapersPackListDialogFragment$onCreateDialog$1$ViewHolder */
+        /* INFO: compiled from: DownloadPlatformWallpapersPackListDialogFragment.kt */
         @Metadata(d1 = {"\u00007\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002*\u0001\u0000\b\u008a\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0003H\u0016R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0011"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/DownloadPlatformWallpapersPackListDialogFragment$onCreateDialog$1.ViewHolder", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/dialog_fragments/DownloadPlatformWallpapersPackListDialogFragment$onCreateDialog$1;Landroid/view/View;)V", "imageView", "Lcom/google/android/material/imageview/ShapeableImageView;", "text1", "Landroid/widget/TextView;", "text2", "onBind", "", "position", "", "item", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson>.ViewHolder {
             private final ShapeableImageView imageView;
@@ -280,7 +280,7 @@ public final class DownloadPlatformWallpapersPackListDialogFragment extends Daij
             private final TextView text2;
             final /* synthetic */ AnonymousClass1 this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(AnonymousClass1 anonymousClass1, View itemView) {
                 super(anonymousClass1, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");
@@ -324,8 +324,8 @@ public final class DownloadPlatformWallpapersPackListDialogFragment extends Daij
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformWallpapersPackListDialogFragment$onCreateDialog$2, reason: invalid class name */
-    /* JADX INFO: compiled from: DownloadPlatformWallpapersPackListDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformWallpapersPackListDialogFragment$onCreateDialog$2, reason: invalid class name */
+    /* INFO: compiled from: DownloadPlatformWallpapersPackListDialogFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass2 extends Lambda<Unit> implements Function4<View, Integer, Long, PlatformWallpapersPacksIndexPlatformWallpaperPackListItemJson, Unit> {
         AnonymousClass2() {

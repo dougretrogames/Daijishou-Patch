@@ -11,7 +11,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.util.IntList;
 import org.eclipse.jgit.util.LongList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MyersDiff<S extends Sequence> {
     public static final DiffAlgorithm INSTANCE = new AnonymousClass1();
     protected HashedSequence<S> a;
@@ -24,7 +24,7 @@ public class MyersDiff<S extends Sequence> {
         this(editList, hashedSequenceComparator, hashedSequence, hashedSequence2, edit);
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.diff.MyersDiff$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.diff.MyersDiff$1, reason: invalid class name */
     class AnonymousClass1 extends LowLevelDiffAlgorithm {
         AnonymousClass1() {
         }

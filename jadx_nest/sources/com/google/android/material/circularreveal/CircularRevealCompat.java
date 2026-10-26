@@ -9,12 +9,12 @@ import android.util.Property;
 import android.view.View;
 import android.view.ViewAnimationUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class CircularRevealCompat {
     private CircularRevealCompat() {
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static Animator createCircularReveal(CircularRevealWidget circularRevealWidget, float f, float f2, float f3) {
         ObjectAnimator objectAnimatorOfObject = ObjectAnimator.ofObject(circularRevealWidget, (Property<CircularRevealWidget, V>) CircularRevealWidget.CircularRevealProperty.CIRCULAR_REVEAL, (TypeEvaluator) CircularRevealWidget.CircularRevealEvaluator.CIRCULAR_REVEAL, (Object[]) new CircularRevealWidget.RevealInfo[]{new CircularRevealWidget.RevealInfo(f, f2, f3)});
         CircularRevealWidget.RevealInfo revealInfo = circularRevealWidget.getRevealInfo();
@@ -27,7 +27,7 @@ public final class CircularRevealCompat {
         return animatorSet;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static Animator createCircularReveal(CircularRevealWidget circularRevealWidget, float f, float f2, float f3, float f4) {
         ObjectAnimator objectAnimatorOfObject = ObjectAnimator.ofObject(circularRevealWidget, (Property<CircularRevealWidget, V>) CircularRevealWidget.CircularRevealProperty.CIRCULAR_REVEAL, (TypeEvaluator) CircularRevealWidget.CircularRevealEvaluator.CIRCULAR_REVEAL, (Object[]) new CircularRevealWidget.RevealInfo[]{new CircularRevealWidget.RevealInfo(f, f2, f3), new CircularRevealWidget.RevealInfo(f, f2, f4)});
         Animator animatorCreateCircularReveal = ViewAnimationUtils.createCircularReveal((View) circularRevealWidget, (int) f, (int) f2, f3, f4);
@@ -36,7 +36,7 @@ public final class CircularRevealCompat {
         return animatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.circularreveal.CircularRevealCompat$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.circularreveal.CircularRevealCompat$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         final /* synthetic */ CircularRevealWidget val$view;
 

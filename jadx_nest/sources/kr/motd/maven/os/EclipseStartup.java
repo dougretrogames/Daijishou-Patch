@@ -7,7 +7,7 @@ import org.eclipse.core.runtime.Platform;
 import org.eclipse.core.runtime.Status;
 import org.eclipse.ui.IStartup;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EclipseStartup extends Detector implements IStartup {
     private static final String ID = EclipseStartup.class.getPackage().getName();
     private ILog logger;

@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
 import java.util.Objects;
 import org.apache.commons.collections4.FluentIterable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ZippingIterator<E> implements Iterator<E> {
     private final Iterator<Iterator<? extends E>> iterators;
     private Iterator<? extends E> lastReturned;

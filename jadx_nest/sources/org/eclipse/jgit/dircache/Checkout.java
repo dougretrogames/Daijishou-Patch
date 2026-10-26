@@ -9,7 +9,7 @@ import org.eclipse.jgit.treewalk.WorkingTreeOptions;
 import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.FileUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Checkout {
     private final FileModeCache cache;
     private final WorkingTreeOptions options;
@@ -50,8 +50,8 @@ public class Checkout {
         dirCacheEntry.setLastModified(fs.lastModifiedInstant(file));
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x0135 */
-    /* JADX WARN: Code restructure failed: missing block: B:64:?, code lost:
+    /* WARN: Bottom block not found for handler: all -> 0x0135 */
+    /* WARN: Code restructure failed: missing block: B:64:?, code lost:
     
         throw r0;
      */

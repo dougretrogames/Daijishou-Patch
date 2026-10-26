@@ -16,7 +16,7 @@ import org.eclipse.jgit.lib.PersonIdent;
 import org.eclipse.jgit.util.RawParseUtils;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RevCommit extends RevObject {
     static final RevCommit[] NO_PARENTS = new RevCommit[0];
     private static final int STACK_DEPTH = 500;

@@ -10,7 +10,7 @@ import android.support.v4.media.session.MediaControllerCompat;
 import android.support.v4.media.session.PlaybackStateCompat;
 import android.util.Log;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public abstract class MediaControllerGlue extends PlaybackControlGlue {
     static final boolean DEBUG = false;
@@ -18,7 +18,7 @@ public abstract class MediaControllerGlue extends PlaybackControlGlue {
     private final MediaControllerCompat.Callback mCallback;
     MediaControllerCompat mMediaController;
 
-    /* JADX INFO: renamed from: androidx.leanback.media.MediaControllerGlue$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.MediaControllerGlue$1, reason: invalid class name */
     class AnonymousClass1 extends MediaControllerCompat.Callback {
         @Override // android.support.v4.media.session.MediaControllerCompat.Callback
         public void onSessionEvent(String str, Bundle bundle) {

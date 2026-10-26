@@ -19,15 +19,15 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.MainCoroutineDispatcher;
 
-/* JADX INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshCountingButtons$1", f = "PlatformLibraryGridViewNavFragment.kt", i = {}, l = {522}, m = "invokeSuspendImpl", n = {}, s = {})
 final class PlatformLibraryGridViewNavFragment$onCreateView$refreshCountingButtons$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
     int label;
     final /* synthetic */ PlatformLibraryGridViewNavFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     PlatformLibraryGridViewNavFragment$onCreateView$refreshCountingButtons$1(PlatformLibraryGridViewNavFragment platformLibraryGridViewNavFragment, Continuation<?> continuation) {
         super(2, continuation);
         this.this$0 = platformLibraryGridViewNavFragment;
@@ -71,8 +71,8 @@ final class PlatformLibraryGridViewNavFragment$onCreateView$refreshCountingButto
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshCountingButtons$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshCountingButtons$1$1, reason: invalid class name */
+    /* INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshCountingButtons$1$1", f = "PlatformLibraryGridViewNavFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -83,7 +83,7 @@ final class PlatformLibraryGridViewNavFragment$onCreateView$refreshCountingButto
         int label;
         final /* synthetic */ PlatformLibraryGridViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(PlatformLibraryGridViewNavFragment platformLibraryGridViewNavFragment, long j, long j2, long j3, long j4, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = platformLibraryGridViewNavFragment;

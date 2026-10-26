@@ -11,7 +11,7 @@ import androidx.core.content.res.ResourcesCompat;
 import androidx.core.view.ViewCompat;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TextAppearance {
     private static final String TAG = "TextAppearance";
     private static final int TYPEFACE_MONOSPACE = 3;
@@ -105,7 +105,7 @@ public class TextAppearance {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.resources.TextAppearance$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.resources.TextAppearance$1, reason: invalid class name */
     class AnonymousClass1 extends ResourcesCompat.FontCallback {
         final /* synthetic */ TextAppearanceFontCallback val$callback;
 
@@ -114,7 +114,7 @@ public class TextAppearance {
         }
 
         @Override // androidx.core.content.res.ResourcesCompat.FontCallback
-        /* JADX INFO: renamed from: onFontRetrieved */
+        /* INFO: renamed from: onFontRetrieved */
         public void m3151x46c88379(Typeface typeface) {
             TextAppearance textAppearance = TextAppearance.this;
             textAppearance.font = Typeface.create(typeface, textAppearance.textStyle);
@@ -123,7 +123,7 @@ public class TextAppearance {
         }
 
         @Override // androidx.core.content.res.ResourcesCompat.FontCallback
-        /* JADX INFO: renamed from: onFontRetrievalFailed */
+        /* INFO: renamed from: onFontRetrievalFailed */
         public void m3150xb24343b7(int i) {
             TextAppearance.this.fontResolved = true;
             this.val$callback.onFontRetrievalFailed(i);
@@ -135,7 +135,7 @@ public class TextAppearance {
         getFontAsync(context, new AnonymousClass2(context, textPaint, textAppearanceFontCallback));
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.resources.TextAppearance$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.resources.TextAppearance$2, reason: invalid class name */
     class AnonymousClass2 extends TextAppearanceFontCallback {
         final /* synthetic */ TextAppearanceFontCallback val$callback;
         final /* synthetic */ Context val$context;

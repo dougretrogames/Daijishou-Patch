@@ -6,7 +6,7 @@ import java.io.Reader;
 import java.util.Iterator;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class MultiReader extends Reader {
 

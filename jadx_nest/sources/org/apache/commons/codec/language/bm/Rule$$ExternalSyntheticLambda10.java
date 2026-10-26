@@ -2,8 +2,8 @@ package org.apache.commons.codec.language.bm;
 
 import java.util.function.IntPredicate;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class Rule$$ExternalSyntheticLambda10 implements IntPredicate {
     public final /* synthetic */ char f$0;
 

@@ -6,7 +6,7 @@ import java.nio.charset.StandardCharsets;
 import javax.annotation.Nonnull;
 import okio.Okio;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class PassThroughBodyFactory implements BodyFactory {
     @Override // co.infinum.retromock.BodyFactory
     public InputStream create(@Nonnull String str) {

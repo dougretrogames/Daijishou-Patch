@@ -9,7 +9,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.TextView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class TwoStatePreference extends Preference {
     protected boolean mChecked;
     private boolean mCheckedSet;
@@ -126,11 +126,11 @@ public abstract class TwoStatePreference extends Preference {
         syncSummaryView(preferenceViewHolder.findViewById(android.R.id.summary));
     }
 
-    /* JADX WARN: Code duplicated, block: B:18:0x0030  */
-    /* JADX WARN: Code duplicated, block: B:20:0x003a  */
-    /* JADX WARN: Code duplicated, block: B:23:0x0041  */
-    /* JADX WARN: Code duplicated, block: B:26:0x0049  */
-    /* JADX WARN: Code duplicated, block: B:28:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:18:0x0030  */
+    /* WARN: Code duplicated, block: B:20:0x003a  */
+    /* WARN: Code duplicated, block: B:23:0x0041  */
+    /* WARN: Code duplicated, block: B:26:0x0049  */
+    /* WARN: Code duplicated, block: B:28:? A[RETURN, SYNTHETIC] */
     protected void syncSummaryView(View view) {
         boolean z;
         int i;
@@ -199,18 +199,18 @@ public abstract class TwoStatePreference extends Preference {
         public static final Parcelable.Creator<SavedState> CREATOR = new AnonymousClass1();
         boolean mChecked;
 
-        /* JADX INFO: renamed from: androidx.preference.TwoStatePreference$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.preference.TwoStatePreference$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];

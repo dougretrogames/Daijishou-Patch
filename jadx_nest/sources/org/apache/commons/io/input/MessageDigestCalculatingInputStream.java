@@ -7,7 +7,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class MessageDigestCalculatingInputStream extends ObservableInputStream {
     private static final String DEFAULT_ALGORITHM = "MD5";

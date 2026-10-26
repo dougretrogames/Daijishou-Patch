@@ -2,8 +2,8 @@ package org.apache.commons.io.function;
 
 import java.util.Comparator;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class IOComparator$$ExternalSyntheticLambda0 implements Comparator {
     public final /* synthetic */ IOComparator f$0;
 

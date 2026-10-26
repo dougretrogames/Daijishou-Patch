@@ -3,8 +3,8 @@ package com.google.android.gms.internal.fido;
 import java.io.IOException;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 final class zzbd extends zzbe {
     zzbd(String str, String str2, @CheckForNull Character ch) {
         zzbb zzbbVar = new zzbb(str, str2.toCharArray());

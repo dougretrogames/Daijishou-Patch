@@ -5,7 +5,7 @@ import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.eclipse.jgit.storage.pack.PackConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsReaderOptions {
     public static final int KiB = 1024;
     public static final int MiB = 1048576;

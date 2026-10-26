@@ -2,7 +2,7 @@ package io.grpc;
 
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ForwardingClientCall<ReqT, RespT> extends PartialForwardingClientCall<ReqT, RespT> {
     @Override // io.grpc.PartialForwardingClientCall
     protected abstract ClientCall<ReqT, RespT> delegate();

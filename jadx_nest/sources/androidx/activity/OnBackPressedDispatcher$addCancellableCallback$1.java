@@ -5,8 +5,8 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 
-/* JADX INFO: compiled from: OnBackPressedDispatcher.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: OnBackPressedDispatcher.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 /* synthetic */ class OnBackPressedDispatcher$addCancellableCallback$1 extends FunctionReferenceImpl implements Function0<Unit> {
     OnBackPressedDispatcher$addCancellableCallback$1(Object obj) {
@@ -19,7 +19,7 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2() {
         ((OnBackPressedDispatcher) this.receiver).updateEnabledCallbacks();
     }

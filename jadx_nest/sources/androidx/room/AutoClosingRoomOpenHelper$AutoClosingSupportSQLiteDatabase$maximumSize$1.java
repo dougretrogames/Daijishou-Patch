@@ -4,8 +4,8 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import kotlin.Metadata;
 import kotlin.jvm.internal.PropertyReference1Impl;
 
-/* JADX INFO: compiled from: AutoClosingRoomOpenHelper.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: AutoClosingRoomOpenHelper.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 /* synthetic */ class AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$maximumSize$1 extends PropertyReference1Impl {
     public static final AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$maximumSize$1 INSTANCE = new AutoClosingRoomOpenHelper$AutoClosingSupportSQLiteDatabase$maximumSize$1();

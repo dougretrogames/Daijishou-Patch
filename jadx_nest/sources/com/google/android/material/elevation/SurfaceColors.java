@@ -4,7 +4,7 @@ import android.content.Context;
 import com.google.android.material.R;
 import com.google.android.material.color.MaterialColors;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public enum SurfaceColors {
     SURFACE_0(R.dimen.m3_sys_elevation_level0),
     SURFACE_1(R.dimen.m3_sys_elevation_level1),

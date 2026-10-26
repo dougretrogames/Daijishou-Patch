@@ -12,8 +12,8 @@ import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.channels.Channel;
 import kotlinx.coroutines.flow.FlowCollector;
 
-/* JADX INFO: compiled from: WindowRecomposer.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: WindowRecomposer.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0007\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00030\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/flow/FlowCollector;", ""}, k = 3, mv = {1, 8, 0}, xi = 48)
 @DebugMetadata(c = "androidx.compose.ui.platform.WindowRecomposer_androidKt$getAnimationScaleFlowFor$1$1$1", f = "WindowRecomposer.android.kt", i = {0, 1}, l = {115, 121}, m = "invokeSuspend", n = {"$this$flow", "$this$flow"}, s = {"L$0", "L$0"})
 final class WindowRecomposer_androidKt$getAnimationScaleFlowFor$1$1$1 extends SuspendLambda implements Function2<FlowCollector<? super Float>, Continuation<? super Unit>, Object> {
@@ -26,7 +26,7 @@ final class WindowRecomposer_androidKt$getAnimationScaleFlowFor$1$1$1 extends Su
     Object L$1;
     int label;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     WindowRecomposer_androidKt$getAnimationScaleFlowFor$1$1$1(ContentResolver contentResolver, Uri uri, WindowRecomposer_androidKt$getAnimationScaleFlowFor$1$1$contentObserver$1 windowRecomposer_androidKt$getAnimationScaleFlowFor$1$1$contentObserver$1, Channel<Unit> channel, Context context, Continuation<? super WindowRecomposer_androidKt$getAnimationScaleFlowFor$1$1$1> continuation) {
         super(2, continuation);
         this.$resolver = contentResolver;
@@ -48,15 +48,15 @@ final class WindowRecomposer_androidKt$getAnimationScaleFlowFor$1$1$1 extends Su
         return ((WindowRecomposer_androidKt$getAnimationScaleFlowFor$1$1$1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
-    /* JADX WARN: Code duplicated, block: B:18:0x0057  */
-    /* JADX WARN: Code duplicated, block: B:19:0x0058  */
-    /* JADX WARN: Code duplicated, block: B:22:0x0063 A[Catch: all -> 0x0094, TRY_LEAVE, TryCatch #0 {all -> 0x0094, blocks: (B:7:0x0016, B:16:0x0048, B:20:0x005b, B:22:0x0063, B:12:0x002b, B:15:0x0042), top: B:30:0x0008 }] */
-    /* JADX WARN: Code duplicated, block: B:25:0x0088  */
-    /* JADX WARN: Code restructure failed: missing block: B:23:0x0085, code lost:
+    /* WARN: Code duplicated, block: B:18:0x0057  */
+    /* WARN: Code duplicated, block: B:19:0x0058  */
+    /* WARN: Code duplicated, block: B:22:0x0063 A[Catch: all -> 0x0094, TRY_LEAVE, TryCatch #0 {all -> 0x0094, blocks: (B:7:0x0016, B:16:0x0048, B:20:0x005b, B:22:0x0063, B:12:0x002b, B:15:0x0042), top: B:30:0x0008 }] */
+    /* WARN: Code duplicated, block: B:25:0x0088  */
+    /* WARN: Code restructure failed: missing block: B:23:0x0085, code lost:
     
         if (r4.emit(kotlin.coroutines.jvm.internal.Boxing.boxFloat(android.provider.Settings.Global.getFloat(r8.$applicationContext.getContentResolver(), "animator_duration_scale", 1.0f)), r8) == r0) goto L24;
      */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:23:0x0085 -> B:8:0x0019). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:23:0x0085 -> B:8:0x0019). Please report as a decompilation issue!!! */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     /*
         Code decompiled incorrectly, please refer to instructions dump.

@@ -27,7 +27,7 @@ import org.apache.http.message.TokenParser;
 import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.util.HttpSupport;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable
 @ElementTypesAreNonnullByDefault
 public final class MediaType {

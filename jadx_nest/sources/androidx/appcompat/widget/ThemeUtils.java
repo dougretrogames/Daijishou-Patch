@@ -11,7 +11,7 @@ import android.util.TypedValue;
 import android.view.View;
 import androidx.core.graphics.ColorUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ThemeUtils {
     private static final String TAG = "ThemeUtils";
     private static final ThreadLocal<TypedValue> TL_TYPED_VALUE = new ThreadLocal<>();

@@ -1,6 +1,6 @@
 package org.apache.http.cookie.params;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface CookieSpecPNames {
     public static final String DATE_PATTERNS = "http.protocol.cookie-datepatterns";

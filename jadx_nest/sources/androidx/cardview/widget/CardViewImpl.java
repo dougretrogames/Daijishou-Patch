@@ -3,7 +3,7 @@ package androidx.cardview.widget;
 import android.content.Context;
 import android.content.res.ColorStateList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 interface CardViewImpl {
     ColorStateList getBackgroundColor(CardViewDelegate cardViewDelegate);
 

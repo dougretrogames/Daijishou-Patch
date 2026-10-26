@@ -17,7 +17,7 @@ import org.slf4j.helpers.SubstituteLoggerFactory;
 import org.slf4j.helpers.Util;
 import org.slf4j.impl.StaticLoggerBinder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class LoggerFactory {
     static final String CODES_PREFIX = "http://www.slf4j.org/codes.html";
     static final int FAILED_INITIALIZATION = 2;

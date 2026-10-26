@@ -22,8 +22,8 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: DownloadPlatformsDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DownloadPlatformsDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "platformEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$2 extends Lambda<Unit> implements Function1<PlatformEntity, Unit> {
     final /* synthetic */ CoroutineScope $$this$launch;
@@ -35,7 +35,7 @@ final class DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNex
     final /* synthetic */ Ref.IntRef $succeedCount;
     final /* synthetic */ DownloadPlatformsDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$2(Ref.IntRef intRef, DownloadPlatformsDialogFragment downloadPlatformsDialogFragment, Ref.IntRef intRef2, List<PlatformSharable> list, FragmentActivity fragmentActivity, CoroutineScope coroutineScope, AlertDialog alertDialog, List<PlatformsIndexPlatformListItemJson> list2) {
         super(1);
         this.$succeedCount = intRef;
@@ -54,7 +54,7 @@ final class DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNex
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(PlatformEntity platformEntity) {
         if (platformEntity != null) {
             this.$succeedCount.element++;
@@ -62,8 +62,8 @@ final class DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNex
         BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this.this$0), Dispatchers.getDefault(), null, new AnonymousClass1(this.$index, this.$platformSharableList, this.this$0, this.$activity, this.$$this$launch, this.$succeedCount, this.$dialog, this.$selectedPlatformList, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$2$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DownloadPlatformsDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$2$1, reason: invalid class name */
+    /* INFO: compiled from: DownloadPlatformsDialogFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNext$2$1", f = "DownloadPlatformsDialogFragment.kt", i = {}, l = {190}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -77,7 +77,7 @@ final class DownloadPlatformsDialogFragment$onCreateDialog$1$2$1$1$1$2$importNex
         int label;
         final /* synthetic */ DownloadPlatformsDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Ref.IntRef intRef, List<PlatformSharable> list, DownloadPlatformsDialogFragment downloadPlatformsDialogFragment, FragmentActivity fragmentActivity, CoroutineScope coroutineScope, Ref.IntRef intRef2, AlertDialog alertDialog, List<PlatformsIndexPlatformListItemJson> list2, Continuation<?> continuation) {
             super(2, continuation);
             this.$index = intRef;

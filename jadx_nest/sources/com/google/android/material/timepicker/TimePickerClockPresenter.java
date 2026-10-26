@@ -9,7 +9,7 @@ import androidx.exifinterface.media.ExifInterface;
 import com.google.android.material.R;
 import com.magneticchen.daijishou.application_data.Constants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class TimePickerClockPresenter implements ClockHandView.OnRotateListener, TimePickerView.OnSelectionChange, TimePickerView.OnPeriodChangeListener, ClockHandView.OnActionUpListener, TimePickerPresenter {
     private static final int DEGREES_PER_HOUR = 30;
     private static final int DEGREES_PER_MINUTE = 6;
@@ -121,7 +121,7 @@ class TimePickerClockPresenter implements ClockHandView.OnRotateListener, TimePi
         this.timePickerView.setHourClickDelegate(new AnonymousClass2(this.timePickerView.getContext(), R.string.material_minute_selection));
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.TimePickerClockPresenter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.TimePickerClockPresenter$1, reason: invalid class name */
     class AnonymousClass1 extends ClickActionDelegate {
         AnonymousClass1(Context context, int i) {
             super(context, i);
@@ -134,7 +134,7 @@ class TimePickerClockPresenter implements ClockHandView.OnRotateListener, TimePi
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.TimePickerClockPresenter$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.TimePickerClockPresenter$2, reason: invalid class name */
     class AnonymousClass2 extends ClickActionDelegate {
         AnonymousClass2(Context context, int i) {
             super(context, i);

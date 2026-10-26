@@ -19,7 +19,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec> extends ProgressBar {
     static final float DEFAULT_OPACITY = 0.2f;
     static final int DEF_STYLE_RES = R.style.Widget_MaterialComponents_ProgressIndicator;
@@ -107,7 +107,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void internalShow() {
         if (this.minHideDelay > 0) {
             this.lastShowStartTime = SystemClock.uptimeMillis();
@@ -130,7 +130,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void internalHide() {
         ((DrawableWithAnimatedVisibilityChange) getCurrentDrawable()).setVisible(false, false, true);
         if (isNoLongerNeedToBeVisible()) {
@@ -448,7 +448,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.BaseProgressIndicator$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.BaseProgressIndicator$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -459,7 +459,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.BaseProgressIndicator$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.BaseProgressIndicator$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -471,7 +471,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.BaseProgressIndicator$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.BaseProgressIndicator$3, reason: invalid class name */
     class AnonymousClass3 extends Animatable2Compat.AnimationCallback {
         AnonymousClass3() {
         }
@@ -484,7 +484,7 @@ public abstract class BaseProgressIndicator<S extends BaseProgressIndicatorSpec>
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.BaseProgressIndicator$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.BaseProgressIndicator$4, reason: invalid class name */
     class AnonymousClass4 extends Animatable2Compat.AnimationCallback {
         AnonymousClass4() {
         }

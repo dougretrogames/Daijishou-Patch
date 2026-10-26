@@ -14,7 +14,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.customview.view.AbsSavedState;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CheckableImageButton extends AppCompatImageButton implements Checkable {
     private static final int[] DRAWABLE_STATE_CHECKED = {R.attr.state_checked};
     private boolean checkable;
@@ -36,7 +36,7 @@ public class CheckableImageButton extends AppCompatImageButton implements Checka
         ViewCompat.setAccessibilityDelegate(this, new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.CheckableImageButton$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.CheckableImageButton$1, reason: invalid class name */
     class AnonymousClass1 extends AccessibilityDelegateCompat {
         AnonymousClass1() {
         }
@@ -151,12 +151,12 @@ public class CheckableImageButton extends AppCompatImageButton implements Checka
             this.checked = parcel.readInt() == 1;
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.internal.CheckableImageButton$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.internal.CheckableImageButton$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);

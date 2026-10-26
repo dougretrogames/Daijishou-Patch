@@ -11,7 +11,7 @@ import java.nio.file.attribute.FileAttribute;
 import java.util.Arrays;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CopyDirectoryVisitor extends CountingPathVisitor {
     private final CopyOption[] copyOptions;
     private final Path sourceDirectory;

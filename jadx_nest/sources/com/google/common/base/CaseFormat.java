@@ -4,9 +4,9 @@ import java.io.Serializable;
 import javax.annotation.CheckForNull;
 import org.apache.commons.codec.language.Soundex;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: loaded from: classes3.dex */
+/* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* WARN: Unknown enum class pattern. Please report as an issue! */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class CaseFormat {
     private final CharMatcher wordBoundary;
@@ -36,7 +36,7 @@ public abstract class CaseFormat {
         this(str, i, charMatcher, str2);
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.CaseFormat$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.CaseFormat$1, reason: invalid class name */
     final enum AnonymousClass1 extends CaseFormat {
         AnonymousClass1(String $enum$name, int $enum$ordinal, CharMatcher wordBoundary, String wordSeparator) {
             super($enum$name, $enum$ordinal, wordBoundary, wordSeparator, null);
@@ -59,7 +59,7 @@ public abstract class CaseFormat {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.CaseFormat$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.CaseFormat$2, reason: invalid class name */
     final enum AnonymousClass2 extends CaseFormat {
         AnonymousClass2(String $enum$name, int $enum$ordinal, CharMatcher wordBoundary, String wordSeparator) {
             super($enum$name, $enum$ordinal, wordBoundary, wordSeparator, null);
@@ -82,7 +82,7 @@ public abstract class CaseFormat {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.CaseFormat$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.CaseFormat$3, reason: invalid class name */
     final enum AnonymousClass3 extends CaseFormat {
         AnonymousClass3(String $enum$name, int $enum$ordinal, CharMatcher wordBoundary, String wordSeparator) {
             super($enum$name, $enum$ordinal, wordBoundary, wordSeparator, null);
@@ -99,7 +99,7 @@ public abstract class CaseFormat {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.CaseFormat$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.CaseFormat$4, reason: invalid class name */
     final enum AnonymousClass4 extends CaseFormat {
         AnonymousClass4(String $enum$name, int $enum$ordinal, CharMatcher wordBoundary, String wordSeparator) {
             super($enum$name, $enum$ordinal, wordBoundary, wordSeparator, null);
@@ -111,7 +111,7 @@ public abstract class CaseFormat {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.CaseFormat$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.CaseFormat$5, reason: invalid class name */
     final enum AnonymousClass5 extends CaseFormat {
         AnonymousClass5(String $enum$name, int $enum$ordinal, CharMatcher wordBoundary, String wordSeparator) {
             super($enum$name, $enum$ordinal, wordBoundary, wordSeparator, null);
@@ -184,13 +184,13 @@ public abstract class CaseFormat {
             this.targetFormat = (CaseFormat) Preconditions.checkNotNull(targetFormat);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.base.Converter
         public String doForward(String s) {
             return this.sourceFormat.to(this.targetFormat, s);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.base.Converter
         public String doBackward(String s) {
             return this.targetFormat.to(this.sourceFormat, s);
@@ -220,7 +220,7 @@ public abstract class CaseFormat {
         return normalizeWord(word);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static String firstCharOnlyToUpper(String word) {
         return word.isEmpty() ? word : Ascii.toUpperCase(word.charAt(0)) + Ascii.toLowerCase(word.substring(1));
     }

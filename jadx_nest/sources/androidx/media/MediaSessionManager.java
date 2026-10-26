@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Build;
 import android.util.Log;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MediaSessionManager {
     private static volatile MediaSessionManager sSessionManager;
     MediaSessionManagerImpl mImpl;

@@ -4,7 +4,7 @@ import android.content.ComponentName;
 import android.content.pm.PackageManager;
 import android.content.pm.ServiceInfo;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ApiHelperForTiramisu {
     private ApiHelperForTiramisu() {
     }

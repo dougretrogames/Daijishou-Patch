@@ -4,7 +4,7 @@ import org.eclipse.jgit.errors.CorruptObjectException;
 import org.eclipse.jgit.errors.PackMismatchException;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface PackReverseIndex {
     public static final byte[] MAGIC = {82, 73, 68, 88};
     public static final int VERSION_1 = 1;

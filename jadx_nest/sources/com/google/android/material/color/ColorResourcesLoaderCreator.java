@@ -10,7 +10,7 @@ import java.io.FileDescriptor;
 import java.io.FileOutputStream;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ColorResourcesLoaderCreator {
     private static final String TAG = "ColorResLoaderCreator";
 

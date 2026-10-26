@@ -1,6 +1,6 @@
 package org.eclipse.jgit.internal.diffmergetool;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UserDefinedDiffTool implements ExternalDiffTool {
     private boolean available;
     private final String cmd;

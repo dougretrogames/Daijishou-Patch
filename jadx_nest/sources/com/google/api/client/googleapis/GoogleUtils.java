@@ -9,7 +9,7 @@ import java.util.Properties;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class GoogleUtils {
     public static final Integer BUGFIX_VERSION;
     public static final Integer MAJOR_VERSION;

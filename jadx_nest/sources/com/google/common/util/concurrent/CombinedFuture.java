@@ -10,7 +10,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.RejectedExecutionException;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 final class CombinedFuture<V> extends AggregateFuture<Object, V> {
 
@@ -107,13 +107,13 @@ final class CombinedFuture<V> extends AggregateFuture<Object, V> {
             this.callable = (AsyncCallable) Preconditions.checkNotNull(callable);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.util.concurrent.InterruptibleTask
         public ListenableFuture<V> runInterruptibly() throws Exception {
             return (ListenableFuture) Preconditions.checkNotNull(this.callable.call(), "AsyncCallable.call returned null instead of a Future. Did you mean to return immediateFuture(null)? %s", this.callable);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.util.concurrent.CombinedFuture.CombinedFutureInterruptibleTask
         public void setValue(ListenableFuture<V> value) {
             CombinedFuture.this.setFuture(value);

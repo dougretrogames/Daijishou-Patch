@@ -3,8 +3,8 @@ package androidx.activity;
 import android.view.View;
 import kotlinx.coroutines.channels.ProducerScope;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class PipHintTrackerKt$trackPipAnimationHintView$flow$1$$ExternalSyntheticLambda0 implements View.OnLayoutChangeListener {
     public final /* synthetic */ ProducerScope f$0;
 

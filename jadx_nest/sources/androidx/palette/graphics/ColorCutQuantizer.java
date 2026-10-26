@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.PriorityQueue;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ColorCutQuantizer {
     static final int COMPONENT_BLUE = -1;
     static final int COMPONENT_GREEN = -2;
@@ -293,7 +293,7 @@ final class ColorCutQuantizer {
         return false;
     }
 
-    /* JADX INFO: renamed from: androidx.palette.graphics.ColorCutQuantizer$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.palette.graphics.ColorCutQuantizer$1, reason: invalid class name */
     static class AnonymousClass1 implements Comparator<Vbox> {
         AnonymousClass1() {
         }

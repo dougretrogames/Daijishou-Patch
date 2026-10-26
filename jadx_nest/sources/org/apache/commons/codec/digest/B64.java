@@ -5,7 +5,7 @@ import com.google.common.base.Ascii;
 import java.security.SecureRandom;
 import java.util.Random;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class B64 {
     static final String B64T_STRING = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     static final char[] B64T_ARRAY = B64T_STRING.toCharArray();

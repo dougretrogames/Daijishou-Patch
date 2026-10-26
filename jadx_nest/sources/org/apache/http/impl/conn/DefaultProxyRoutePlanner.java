@@ -7,7 +7,7 @@ import org.apache.http.conn.SchemePortResolver;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultProxyRoutePlanner extends DefaultRoutePlanner {
     private final HttpHost proxy;
 

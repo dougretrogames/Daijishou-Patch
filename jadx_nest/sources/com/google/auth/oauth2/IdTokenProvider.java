@@ -3,7 +3,7 @@ package com.google.auth.oauth2;
 import java.io.IOException;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface IdTokenProvider {
     IdToken idTokenWithAudience(String str, List<Option> list) throws IOException;
 

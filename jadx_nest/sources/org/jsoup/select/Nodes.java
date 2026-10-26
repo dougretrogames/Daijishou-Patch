@@ -11,7 +11,7 @@ import org.jsoup.helper.Validate;
 import org.jsoup.internal.StringUtil;
 import org.jsoup.nodes.Node;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Nodes<T extends Node> extends ArrayList<T> {
     public Nodes() {
     }

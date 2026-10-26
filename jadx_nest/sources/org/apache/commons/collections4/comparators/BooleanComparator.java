@@ -3,7 +3,7 @@ package org.apache.commons.collections4.comparators;
 import java.io.Serializable;
 import java.util.Comparator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class BooleanComparator implements Comparator<Boolean>, Serializable {
     private static final long serialVersionUID = 1830042991606340609L;
     private final boolean trueFirst;

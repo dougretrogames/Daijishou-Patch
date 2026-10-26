@@ -1,6 +1,6 @@
 package com.google.common.collect;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class IndexedImmutableSet<E> extends ImmutableSet<E> {
     abstract E get(int index);
@@ -18,7 +18,7 @@ abstract class IndexedImmutableSet<E> extends ImmutableSet<E> {
         return asList().copyIntoArray(dst, offset);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.IndexedImmutableSet$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.IndexedImmutableSet$1, reason: invalid class name */
     class AnonymousClass1 extends ImmutableList<E> {
         AnonymousClass1() {
         }

@@ -2,7 +2,7 @@ package io.opencensus.common;
 
 import java.math.BigInteger;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class TimeUtils {
     static final int MAX_NANOS = 999999999;
     static final long MAX_SECONDS = 315576000000L;

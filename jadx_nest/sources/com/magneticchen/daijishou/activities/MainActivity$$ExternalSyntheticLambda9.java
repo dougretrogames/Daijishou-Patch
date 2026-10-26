@@ -1,7 +1,7 @@
 package com.magneticchen.daijishou.activities;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class MainActivity$$ExternalSyntheticLambda9 implements Runnable {
     public final /* synthetic */ MainActivity f$0;
 

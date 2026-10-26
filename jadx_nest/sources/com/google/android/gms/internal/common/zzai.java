@@ -3,8 +3,8 @@ package com.google.android.gms.internal.common;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.jspecify.nullness.NullMarked;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 @NullMarked
 final class zzai extends zzag {
     static final zzag zza = new zzai(new Object[0], 0);

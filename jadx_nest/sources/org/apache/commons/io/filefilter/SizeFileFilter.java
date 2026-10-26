@@ -8,7 +8,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SizeFileFilter extends AbstractFileFilter implements Serializable {
     private static final long serialVersionUID = 7388077430788600069L;
     private final boolean acceptLarger;
@@ -40,7 +40,7 @@ public class SizeFileFilter extends AbstractFileFilter implements Serializable {
         return get(new SizeFileFilter$$ExternalSyntheticLambda0(this, path));
     }
 
-    /* JADX INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-SizeFileFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-SizeFileFilter, reason: not valid java name */
     /* synthetic */ FileVisitResult m5581lambda$accept$0$orgapachecommonsiofilefilterSizeFileFilter(Path path) throws IOException {
         return toFileVisitResult(accept(Files.size(path)));
     }

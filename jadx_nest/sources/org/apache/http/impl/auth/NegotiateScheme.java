@@ -12,7 +12,7 @@ import org.apache.http.util.Args;
 import org.ietf.jgss.GSSException;
 import org.ietf.jgss.Oid;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class NegotiateScheme extends GGSSchemeBase {
     private static final String KERBEROS_OID = "1.2.840.113554.1.2.2";
@@ -64,7 +64,7 @@ public class NegotiateScheme extends GGSSchemeBase {
         return super.generateToken(bArr, str);
     }
 
-    /* JADX INFO: Thrown type has an unknown type hierarchy: org.ietf.jgss.GSSException */
+    /* INFO: Thrown type has an unknown type hierarchy: org.ietf.jgss.GSSException */
     @Override // org.apache.http.impl.auth.GGSSchemeBase
     protected byte[] generateToken(byte[] bArr, String str, Credentials credentials) throws GSSException {
         boolean z;

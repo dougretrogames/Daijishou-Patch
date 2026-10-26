@@ -14,7 +14,7 @@ import java.io.FileDescriptor;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class GlideBitmapFactory {
     private static final String TAG = "GlideBitmapFactory";
 
@@ -58,7 +58,7 @@ final class GlideBitmapFactory {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:10:0x0019 A[PHI: r0
+    /* WARN: Code duplicated, block: B:10:0x0019 A[PHI: r0
   0x0019: PHI (r0v10 android.graphics.Bitmap) = (r0v8 android.graphics.Bitmap), (r0v4 android.graphics.Bitmap) binds: [B:14:0x0025, B:9:0x0017] A[DONT_GENERATE, DONT_INLINE]] */
     private static Bitmap safeAndExpensiveDecodeHardwareBitmapWithGainmap(InputStream inputStream, BitmapFactory.Options options) throws Throwable {
         Throwable th;
@@ -93,7 +93,7 @@ final class GlideBitmapFactory {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:10:0x001b A[PHI: r0
+    /* WARN: Code duplicated, block: B:10:0x001b A[PHI: r0
   0x001b: PHI (r0v10 android.graphics.Bitmap) = (r0v8 android.graphics.Bitmap), (r0v4 android.graphics.Bitmap) binds: [B:14:0x0027, B:9:0x0019] A[DONT_GENERATE, DONT_INLINE]] */
     private static Bitmap safeAndExpensiveDecodeHardwareBitmapWithGainmap(byte[] bArr, BitmapFactory.Options options) throws Throwable {
         Throwable th;
@@ -128,7 +128,7 @@ final class GlideBitmapFactory {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:10:0x0019 A[PHI: r0
+    /* WARN: Code duplicated, block: B:10:0x0019 A[PHI: r0
   0x0019: PHI (r0v10 android.graphics.Bitmap) = (r0v8 android.graphics.Bitmap), (r0v4 android.graphics.Bitmap) binds: [B:14:0x0025, B:9:0x0017] A[DONT_GENERATE, DONT_INLINE]] */
     private static Bitmap safeAndExpensiveDecodeHardwareBitmapWithGainmap(FileDescriptor fileDescriptor, BitmapFactory.Options options) throws Throwable {
         Throwable th;
@@ -217,7 +217,7 @@ final class GlideBitmapFactory {
         private GainmapDecoderWorkaroundStateCalculator() {
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static boolean needsGainmapDecodeWorkaround(BitmapFactory.Options options) {
             if (Build.VERSION.SDK_INT == 34 && options.inPreferredConfig == Bitmap.Config.HARDWARE) {
                 return REQUIRES_GAIN_MAP_FIX.get().booleanValue();

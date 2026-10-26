@@ -20,7 +20,7 @@ import org.jsoup.nodes.FormElement;
 import org.jsoup.nodes.Node;
 import org.jsoup.nodes.TextNode;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HtmlTreeBuilder extends TreeBuilder {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     public static final int MaxScopeSearchDepth = 100;
@@ -60,7 +60,7 @@ public class HtmlTreeBuilder extends TreeBuilder {
         return ParseSettings.htmlDefault;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // org.jsoup.parser.TreeBuilder
     public HtmlTreeBuilder newInstance() {
         return new HtmlTreeBuilder();
@@ -481,13 +481,13 @@ public class HtmlTreeBuilder extends TreeBuilder {
         arrayList.set(iLastIndexOf, element2);
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code duplicated, block: B:103:0x0155 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:112:0x0183 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:113:0x0184 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:127:0x0157 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:128:0x015d A[SYNTHETIC] */
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Code duplicated, block: B:103:0x0155 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:112:0x0183 A[RETURN] */
+    /* WARN: Code duplicated, block: B:113:0x0184 A[RETURN] */
+    /* WARN: Code duplicated, block: B:127:0x0157 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:128:0x015d A[SYNTHETIC] */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     boolean resetInsertionMode() {
         int size = this.stack.size();
         int i = size - 1;

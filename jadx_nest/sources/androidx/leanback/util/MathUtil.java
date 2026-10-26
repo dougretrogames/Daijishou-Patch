@@ -1,6 +1,6 @@
 package androidx.leanback.util;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MathUtil {
     private MathUtil() {
     }

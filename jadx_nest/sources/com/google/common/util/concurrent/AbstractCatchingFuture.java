@@ -11,7 +11,7 @@ import java.util.concurrent.Executor;
 import javax.annotation.CheckForNull;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractCatchingFuture<V, X extends Throwable, F, T> extends FluentFuture.TrustedFuture<V> implements Runnable {
 
@@ -50,8 +50,8 @@ abstract class AbstractCatchingFuture<V, X extends Throwable, F, T> extends Flue
         this.fallback = (F) Preconditions.checkNotNull(f);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r3v4, types: [F, java.lang.Class<X extends java.lang.Throwable>] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r3v4, types: [F, java.lang.Class<X extends java.lang.Throwable>] */
     @Override // java.lang.Runnable
     public final void run() {
         Object done;
@@ -134,8 +134,8 @@ abstract class AbstractCatchingFuture<V, X extends Throwable, F, T> extends Flue
             super(input, exceptionType, fallback);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* INFO: Access modifiers changed from: package-private */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.common.util.concurrent.AbstractCatchingFuture
         public ListenableFuture<? extends V> doFallback(AsyncFunction<? super X, ? extends V> fallback, X cause) throws Exception {
             ListenableFuture<? extends V> listenableFutureApply = fallback.apply(cause);
@@ -143,7 +143,7 @@ abstract class AbstractCatchingFuture<V, X extends Throwable, F, T> extends Flue
             return listenableFutureApply;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.util.concurrent.AbstractCatchingFuture
         public void setResult(ListenableFuture<? extends V> result) {
             setFuture(result);
@@ -155,8 +155,8 @@ abstract class AbstractCatchingFuture<V, X extends Throwable, F, T> extends Flue
             super(input, exceptionType, fallback);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* INFO: Access modifiers changed from: package-private */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.common.util.concurrent.AbstractCatchingFuture
         @ParametricNullness
         public V doFallback(Function<? super X, ? extends V> fallback, X cause) throws Exception {

@@ -10,7 +10,7 @@ import android.widget.RemoteViews;
 import androidx.core.app.NotificationBuilderWithBuilderAccessor;
 import androidx.media.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class NotificationCompat {
     private NotificationCompat() {
     }

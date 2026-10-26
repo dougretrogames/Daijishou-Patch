@@ -4,7 +4,7 @@ import java.util.StringTokenizer;
 import org.apache.commons.io.FilenameUtils;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class Rfc3492Idn implements Idn {
     private static final String ACE_PREFIX = "xn--";

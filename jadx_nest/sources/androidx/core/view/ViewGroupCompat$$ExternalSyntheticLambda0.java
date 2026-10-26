@@ -3,8 +3,8 @@ package androidx.core.view;
 import android.view.View;
 import android.view.WindowInsets;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class ViewGroupCompat$$ExternalSyntheticLambda0 implements View.OnApplyWindowInsetsListener {
     public final /* synthetic */ WindowInsets[] f$0;
     public final /* synthetic */ View.OnApplyWindowInsetsListener f$1;

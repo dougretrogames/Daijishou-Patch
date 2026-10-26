@@ -7,7 +7,7 @@ import android.os.Bundle;
 import androidx.core.content.ContextCompat;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class GuidedAction extends Action {
     public static final long ACTION_ID_CANCEL = -5;
     public static final long ACTION_ID_CONTINUE = -7;

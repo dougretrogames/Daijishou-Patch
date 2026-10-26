@@ -8,16 +8,16 @@ import kotlin.jvm.internal.Intrinsics;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.retroachivements.api.core.BooleanJsonDeserializer;
 
-/* JADX INFO: compiled from: GetConsoleID.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: GetConsoleID.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u00002\u00020\u0001:\u0001\u0003B\u0005¢\u0006\u0002\u0010\u0002¨\u0006\u0004"}, d2 = {"Lorg/retroachivements/api/data/pojo/system/GetConsoleID;", "", "()V", "Response", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class GetConsoleID {
 
-    /* JADX INFO: compiled from: GetConsoleID.kt */
+    /* INFO: compiled from: GetConsoleID.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u0012\u0012\u0004\u0012\u00020\u00020\u0001j\b\u0012\u0004\u0012\u00020\u0002`\u0003:\u0001\u0005B\u0005¢\u0006\u0002\u0010\u0004¨\u0006\u0006"}, d2 = {"Lorg/retroachivements/api/data/pojo/system/GetConsoleID$Response;", "Ljava/util/ArrayList;", "Lorg/retroachivements/api/data/pojo/system/GetConsoleID$Response$Console;", "Lkotlin/collections/ArrayList;", "()V", "Console", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Response extends ArrayList<Console> {
 
-        /* JADX INFO: compiled from: GetConsoleID.kt */
+        /* INFO: compiled from: GetConsoleID.kt */
         @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0012\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\b\u0018\u00002\u00020\u0001B-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\b¢\u0006\u0002\u0010\nJ\t\u0010\u0012\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0013\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0014\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0015\u001a\u00020\bHÆ\u0003J\t\u0010\u0016\u001a\u00020\bHÆ\u0003J;\u0010\u0017\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\bHÆ\u0001J\u0013\u0010\u0018\u001a\u00020\b2\b\u0010\u0019\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001a\u001a\u00020\u001bHÖ\u0001J\t\u0010\u001c\u001a\u00020\u0005HÖ\u0001R\u0016\u0010\u0007\u001a\u00020\b8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0016\u0010\u0006\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0016\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0016\u0010\t\u001a\u00020\b8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\fR\u0016\u0010\u0004\u001a\u00020\u00058\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u000e¨\u0006\u001d"}, d2 = {"Lorg/retroachivements/api/data/pojo/system/GetConsoleID$Response$Console;", "", "id", "", "name", "", "iconUrl", "active", "", "isGameSystem", "(JLjava/lang/String;Ljava/lang/String;ZZ)V", "getActive", "()Z", "getIconUrl", "()Ljava/lang/String;", "getId", "()J", "getName", "component1", "component2", "component3", "component4", "component5", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "other", "hashCode", "", "toString", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Console {
 
@@ -61,27 +61,27 @@ public final class GetConsoleID {
                 return console.copy(j2, str3, str4, z3, z2);
             }
 
-            /* JADX INFO: renamed from: component1, reason: from getter */
+            /* INFO: renamed from: component1, reason: from getter */
             public final long getId() {
                 return this.id;
             }
 
-            /* JADX INFO: renamed from: component2, reason: from getter */
+            /* INFO: renamed from: component2, reason: from getter */
             public final String getName() {
                 return this.name;
             }
 
-            /* JADX INFO: renamed from: component3, reason: from getter */
+            /* INFO: renamed from: component3, reason: from getter */
             public final String getIconUrl() {
                 return this.iconUrl;
             }
 
-            /* JADX INFO: renamed from: component4, reason: from getter */
+            /* INFO: renamed from: component4, reason: from getter */
             public final boolean getActive() {
                 return this.active;
             }
 
-            /* JADX INFO: renamed from: component5, reason: from getter */
+            /* INFO: renamed from: component5, reason: from getter */
             public final boolean getIsGameSystem() {
                 return this.isGameSystem;
             }

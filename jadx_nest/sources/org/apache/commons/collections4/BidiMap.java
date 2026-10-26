@@ -2,7 +2,7 @@ package org.apache.commons.collections4;
 
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface BidiMap<K, V> extends IterableMap<K, V> {
     K getKey(Object obj);
 

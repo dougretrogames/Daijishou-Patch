@@ -5,7 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import org.ietf.jgss.GSSManager;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class GSSManagerFactory {
     public abstract GSSManager newInstance(URL url);
 

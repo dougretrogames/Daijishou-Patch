@@ -3,7 +3,7 @@ package kotlin.jvm.internal;
 import java.io.Serializable;
 import kotlin.reflect.KFunction;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class FunInterfaceConstructorReference extends FunctionReference implements Serializable {
     private final Class funInterface;
 
@@ -33,7 +33,7 @@ public class FunInterfaceConstructorReference extends FunctionReference implemen
         return "fun interface " + this.funInterface.getName();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlin.jvm.internal.FunctionReference, kotlin.jvm.internal.CallableReference
     public KFunction getReflected() {
         throw new UnsupportedOperationException("Functional interface constructor does not support reflection");

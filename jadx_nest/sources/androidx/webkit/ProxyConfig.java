@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ProxyConfig {
     private static final String BYPASS_RULE_REMOVE_IMPLICIT = "<-loopback>";
     private static final String BYPASS_RULE_SIMPLE_NAMES = "<local>";

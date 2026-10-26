@@ -5,8 +5,8 @@ import android.content.Context;
 import com.google.android.gms.internal.p001authapiphone.zzr;
 import com.google.android.gms.internal.p001authapiphone.zzv;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
+/* INFO: loaded from: classes3.dex */
 public final class SmsCodeRetriever {
     public static final String EXTRA_SMS_CODE = "com.google.android.gms.auth.api.phone.EXTRA_SMS_CODE";
     public static final String EXTRA_SMS_CODE_LINE = "com.google.android.gms.auth.api.phone.EXTRA_SMS_CODE_LINE";

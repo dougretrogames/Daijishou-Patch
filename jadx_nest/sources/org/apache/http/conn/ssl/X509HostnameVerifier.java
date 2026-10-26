@@ -6,7 +6,7 @@ import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLException;
 import javax.net.ssl.SSLSocket;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface X509HostnameVerifier extends HostnameVerifier {
     void verify(String str, X509Certificate x509Certificate) throws SSLException;

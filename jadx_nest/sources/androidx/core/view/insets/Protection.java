@@ -6,7 +6,7 @@ import android.view.animation.Interpolator;
 import android.view.animation.PathInterpolator;
 import androidx.core.graphics.Insets;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class Protection {
     private static final long DEFAULT_DURATION_IN = 333;
     private static final long DEFAULT_DURATION_OUT = 166;
@@ -161,7 +161,7 @@ public abstract class Protection {
         this.mUserAlphaAnimator.start();
     }
 
-    /* JADX INFO: renamed from: lambda$animateAlpha$0$androidx-core-view-insets-Protection, reason: not valid java name */
+    /* INFO: renamed from: lambda$animateAlpha$0$androidx-core-view-insets-Protection, reason: not valid java name */
     /* synthetic */ void m3173lambda$animateAlpha$0$androidxcoreviewinsetsProtection(ValueAnimator valueAnimator) {
         setAlphaInternal(((Float) valueAnimator.getAnimatedValue()).floatValue());
     }
@@ -238,7 +238,7 @@ public abstract class Protection {
         this.mUserInsetAmountAnimator.start();
     }
 
-    /* JADX INFO: renamed from: lambda$animateInsetsAmount$1$androidx-core-view-insets-Protection, reason: not valid java name */
+    /* INFO: renamed from: lambda$animateInsetsAmount$1$androidx-core-view-insets-Protection, reason: not valid java name */
     /* synthetic */ void m3174x124db077(ValueAnimator valueAnimator) {
         setAlphaInternal(((Float) valueAnimator.getAnimatedValue()).floatValue());
     }
@@ -320,7 +320,7 @@ public abstract class Protection {
             return this.mAlpha;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setWidth(int i) {
             if (this.mWidth != i) {
                 this.mWidth = i;
@@ -331,7 +331,7 @@ public abstract class Protection {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setHeight(int i) {
             if (this.mHeight != i) {
                 this.mHeight = i;
@@ -342,7 +342,7 @@ public abstract class Protection {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setMargin(Insets insets) {
             if (this.mMargin.equals(insets)) {
                 return;
@@ -354,7 +354,7 @@ public abstract class Protection {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setVisible(boolean z) {
             if (this.mVisible != z) {
                 this.mVisible = z;
@@ -365,7 +365,7 @@ public abstract class Protection {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setDrawable(Drawable drawable) {
             this.mDrawable = drawable;
             Callback callback = this.mCallback;
@@ -374,7 +374,7 @@ public abstract class Protection {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setTranslationX(float f) {
             if (this.mTranslationX != f) {
                 this.mTranslationX = f;
@@ -385,7 +385,7 @@ public abstract class Protection {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setTranslationY(float f) {
             if (this.mTranslationY != f) {
                 this.mTranslationY = f;
@@ -396,7 +396,7 @@ public abstract class Protection {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setAlpha(float f) {
             if (this.mAlpha != f) {
                 this.mAlpha = f;

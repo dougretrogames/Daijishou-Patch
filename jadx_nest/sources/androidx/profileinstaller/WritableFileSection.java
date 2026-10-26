@@ -1,6 +1,6 @@
 package androidx.profileinstaller;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class WritableFileSection {
     final byte[] mContents;
     final int mExpectedInflateSize;

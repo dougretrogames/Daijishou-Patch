@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class GlobalBundleCache {
     private static final Map<Locale, Map<Class, TranslationBundle>> cachedBundles = new HashMap();
 

@@ -12,7 +12,7 @@ import androidx.constraintlayout.core.parser.CLObject;
 import androidx.constraintlayout.core.parser.CLParsingException;
 import java.lang.reflect.Array;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TransitionParser {
     @Deprecated
     public static void parse(CLObject cLObject, Transition transition, CorePixelDp corePixelDp) throws CLParsingException {

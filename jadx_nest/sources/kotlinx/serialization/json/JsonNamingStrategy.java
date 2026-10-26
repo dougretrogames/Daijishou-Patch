@@ -6,19 +6,19 @@ import kotlin.text.StringsKt;
 import kotlinx.serialization.ExperimentalSerializationApi;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 
-/* JADX INFO: compiled from: JsonNamingStrategy.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: JsonNamingStrategy.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\bç\u0080\u0001\u0018\u0000 \t2\u00020\u0001:\u0001\tJ \u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u0003H&¨\u0006\n"}, d2 = {"Lkotlinx/serialization/json/JsonNamingStrategy;", "", "serialNameForJson", "", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "elementIndex", "", "serialName", "Builtins", "kotlinx-serialization-json"}, k = 1, mv = {1, 9, 0}, xi = 48)
 @ExperimentalSerializationApi
 public interface JsonNamingStrategy {
 
-    /* JADX INFO: renamed from: Builtins, reason: from kotlin metadata */
+    /* INFO: renamed from: Builtins, reason: from kotlin metadata */
     public static final Companion INSTANCE = Companion.$$INSTANCE;
 
     String serialNameForJson(SerialDescriptor descriptor, int elementIndex, String serialName);
 
-    /* JADX INFO: renamed from: kotlinx.serialization.json.JsonNamingStrategy$Builtins, reason: from kotlin metadata */
-    /* JADX INFO: compiled from: JsonNamingStrategy.kt */
+    /* INFO: renamed from: kotlinx.serialization.json.JsonNamingStrategy$Builtins, reason: from kotlin metadata */
+    /* INFO: compiled from: JsonNamingStrategy.kt */
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\f\n\u0000\b\u0087\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\f2\u0006\u0010\u000e\u001a\u00020\u000fH\u0002R\u001c\u0010\u0003\u001a\u00020\u00048\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0005\u0010\u0002\u001a\u0004\b\u0006\u0010\u0007R\u001c\u0010\b\u001a\u00020\u00048\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\t\u0010\u0002\u001a\u0004\b\n\u0010\u0007¨\u0006\u0010"}, d2 = {"Lkotlinx/serialization/json/JsonNamingStrategy$Builtins;", "", "()V", "KebabCase", "Lkotlinx/serialization/json/JsonNamingStrategy;", "getKebabCase$annotations", "getKebabCase", "()Lkotlinx/serialization/json/JsonNamingStrategy;", "SnakeCase", "getSnakeCase$annotations", "getSnakeCase", "convertCamelCase", "", "serialName", "delimiter", "", "kotlinx-serialization-json"}, k = 1, mv = {1, 9, 0}, xi = 48)
     @ExperimentalSerializationApi
     public static final class Companion {
@@ -45,7 +45,7 @@ public interface JsonNamingStrategy {
             return KebabCase;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final String convertCamelCase(String serialName, char delimiter) {
             StringBuilder sb = new StringBuilder(serialName.length() * 2);
             String str = serialName;

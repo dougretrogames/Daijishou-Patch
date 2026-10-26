@@ -6,8 +6,8 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: NodeCoordinator.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: NodeCoordinator.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 final class NodeCoordinator$speculativeHit$1 extends Lambda implements Function0<Unit> {
     final /* synthetic */ float $distanceFromEdge;
@@ -19,7 +19,7 @@ final class NodeCoordinator$speculativeHit$1 extends Lambda implements Function0
     final /* synthetic */ Modifier.Node $this_speculativeHit;
     final /* synthetic */ NodeCoordinator this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     NodeCoordinator$speculativeHit$1(NodeCoordinator nodeCoordinator, Modifier.Node node, NodeCoordinator.HitTestSource hitTestSource, long j, HitTestResult hitTestResult, boolean z, boolean z2, float f) {
         super(0);
         this.this$0 = nodeCoordinator;
@@ -38,7 +38,7 @@ final class NodeCoordinator$speculativeHit$1 extends Lambda implements Function0
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2() {
         this.this$0.m2012speculativeHitJHbHoSQ(NodeCoordinatorKt.m2032nextUntilhw7D004(this.$this_speculativeHit, this.$hitTestSource.mo2030entityTypeOLwlOKw(), NodeKind.m2034constructorimpl(2)), this.$hitTestSource, this.$pointerPosition, this.$hitTestResult, this.$isTouchEvent, this.$isInLayer, this.$distanceFromEdge);
     }

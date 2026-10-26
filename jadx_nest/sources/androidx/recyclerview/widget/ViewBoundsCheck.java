@@ -4,7 +4,7 @@ import android.view.View;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewBoundsCheck {
     static final int CVE_PVE_POS = 12;
     static final int CVE_PVS_POS = 8;

@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.SparseBooleanArray;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ParcelableSparseBooleanArray extends SparseBooleanArray implements Parcelable {
     public static final Parcelable.Creator<ParcelableSparseBooleanArray> CREATOR = new AnonymousClass1();
 
@@ -40,12 +40,12 @@ public class ParcelableSparseBooleanArray extends SparseBooleanArray implements 
         parcel.writeBooleanArray(zArr);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.ParcelableSparseBooleanArray$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.ParcelableSparseBooleanArray$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.Creator<ParcelableSparseBooleanArray> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public ParcelableSparseBooleanArray createFromParcel(Parcel parcel) {
             int i = parcel.readInt();
@@ -60,7 +60,7 @@ public class ParcelableSparseBooleanArray extends SparseBooleanArray implements 
             return parcelableSparseBooleanArray;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public ParcelableSparseBooleanArray[] newArray(int i) {
             return new ParcelableSparseBooleanArray[i];

@@ -7,7 +7,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public abstract class ExpandableTransformationBehavior extends ExpandableBehavior {
     private AnimatorSet currentAnimation;
@@ -38,7 +38,7 @@ public abstract class ExpandableTransformationBehavior extends ExpandableBehavio
         return true;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transformation.ExpandableTransformationBehavior$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transformation.ExpandableTransformationBehavior$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }

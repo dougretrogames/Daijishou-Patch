@@ -3,7 +3,7 @@ package com.googlecode.javaewah32;
 import com.googlecode.javaewah.IntIterator;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class IteratorUtil32 {
     private IteratorUtil32() {
     }
@@ -12,7 +12,7 @@ public final class IteratorUtil32 {
         return new IntIteratorOverIteratingRLW32(iteratingRLW32);
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah32.IteratorUtil32$1, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah32.IteratorUtil32$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<Integer> {
         private final IntIterator under;
         final /* synthetic */ IteratingRLW32 val$i;
@@ -31,7 +31,7 @@ public final class IteratorUtil32 {
             return this.under.hasNext();
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.Iterator
         public Integer next() {
             return Integer.valueOf(this.under.next());

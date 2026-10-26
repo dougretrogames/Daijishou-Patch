@@ -16,7 +16,7 @@ import java.util.Map;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class JsonTreeReader extends JsonReader {
     private int[] pathIndices;
     private String[] pathNames;
@@ -25,7 +25,7 @@ public final class JsonTreeReader extends JsonReader {
     private static final Reader UNREADABLE_READER = new AnonymousClass1();
     private static final Object SENTINEL_CLOSED = new Object();
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.JsonTreeReader$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.JsonTreeReader$1, reason: invalid class name */
     class AnonymousClass1 extends Reader {
         AnonymousClass1() {
         }
@@ -286,7 +286,7 @@ public final class JsonTreeReader extends JsonReader {
         this.stackSize = 1;
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.JsonTreeReader$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.JsonTreeReader$2, reason: invalid class name */
     static /* synthetic */ class AnonymousClass2 {
         static final /* synthetic */ int[] $SwitchMap$com$google$gson$stream$JsonToken;
 

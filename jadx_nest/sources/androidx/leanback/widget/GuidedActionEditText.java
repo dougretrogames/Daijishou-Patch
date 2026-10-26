@@ -15,7 +15,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import androidx.core.widget.TextViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class GuidedActionEditText extends EditText implements ImeKeyMonitor, GuidedActionAutofillSupport {
     private GuidedActionAutofillSupport.OnAutofillListener mAutofillListener;
     private ImeKeyMonitor.ImeKeyListener mKeyListener;

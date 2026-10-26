@@ -7,7 +7,7 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.RecyclerViewAccessibilityDelegate;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class PreferenceRecyclerViewAccessibilityDelegate extends RecyclerViewAccessibilityDelegate {
     final AccessibilityDelegateCompat mDefaultItemDelegate;
@@ -26,7 +26,7 @@ public class PreferenceRecyclerViewAccessibilityDelegate extends RecyclerViewAcc
         return this.mItemDelegate;
     }
 
-    /* JADX INFO: renamed from: androidx.preference.PreferenceRecyclerViewAccessibilityDelegate$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.PreferenceRecyclerViewAccessibilityDelegate$1, reason: invalid class name */
     class AnonymousClass1 extends AccessibilityDelegateCompat {
         AnonymousClass1() {
         }

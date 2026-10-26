@@ -10,7 +10,7 @@ import java.util.Map;
 import org.apache.commons.collections4.MultiSet;
 import org.apache.commons.collections4.iterators.AbstractIteratorDecorator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractMapMultiSet<E> extends AbstractMultiSet<E> {
     private transient Map<E, MutableInteger> map;
     private transient int modCount;

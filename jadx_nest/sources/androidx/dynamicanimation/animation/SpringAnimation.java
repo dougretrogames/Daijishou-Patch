@@ -3,7 +3,7 @@ package androidx.dynamicanimation.animation;
 import android.os.Looper;
 import android.util.AndroidRuntimeException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class SpringAnimation extends DynamicAnimation<SpringAnimation> {
     private static final float UNSET = Float.MAX_VALUE;
     private boolean mEndRequested;

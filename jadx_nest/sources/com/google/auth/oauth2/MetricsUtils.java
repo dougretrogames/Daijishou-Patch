@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class MetricsUtils {
     static final String API_CLIENT_HEADER = "x-goog-api-client";
     private static final String authLibraryVersion = getAuthLibraryVersion();

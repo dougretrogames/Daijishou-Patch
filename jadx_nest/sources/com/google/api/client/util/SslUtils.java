@@ -13,7 +13,7 @@ import javax.net.ssl.TrustManager;
 import javax.net.ssl.TrustManagerFactory;
 import javax.net.ssl.X509TrustManager;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class SslUtils {
     public static SSLContext getSslContext() throws NoSuchAlgorithmException {
         return SSLContext.getInstance("SSL");
@@ -59,7 +59,7 @@ public final class SslUtils {
         return tlsSslContext;
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.util.SslUtils$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.util.SslUtils$1, reason: invalid class name */
     static class AnonymousClass1 implements X509TrustManager {
         @Override // javax.net.ssl.X509TrustManager
         public void checkClientTrusted(X509Certificate[] x509CertificateArr, String str) throws CertificateException {
@@ -78,7 +78,7 @@ public final class SslUtils {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.util.SslUtils$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.util.SslUtils$2, reason: invalid class name */
     static class AnonymousClass2 implements HostnameVerifier {
         @Override // javax.net.ssl.HostnameVerifier
         public boolean verify(String str, SSLSession sSLSession) {

@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.Window;
 import androidx.appcompat.view.menu.MenuPresenter;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface DecorContentParent {
     boolean canShowOverflowMenu();
 

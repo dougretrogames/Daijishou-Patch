@@ -26,7 +26,7 @@ import java.util.concurrent.Executor;
 import java.util.regex.Pattern;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class ExternalAccountCredentials extends GoogleCredentials {
     private static final String CLOUD_PLATFORM_SCOPE = "https://www.googleapis.com/auth/cloud-platform";
     static final String DEFAULT_TOKEN_URL = "https://sts.googleapis.com/v1/token";
@@ -143,7 +143,7 @@ public abstract class ExternalAccountCredentials extends GoogleCredentials {
         super.getRequestMetadata(uri, executor, new AnonymousClass1(requestMetadataCallback));
     }
 
-    /* JADX INFO: renamed from: com.google.auth.oauth2.ExternalAccountCredentials$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.auth.oauth2.ExternalAccountCredentials$1, reason: invalid class name */
     class AnonymousClass1 implements RequestMetadataCallback {
         final /* synthetic */ RequestMetadataCallback val$callback;
 

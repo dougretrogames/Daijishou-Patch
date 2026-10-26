@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import java.nio.Buffer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class Java8Compatibility {
     static void clear(Buffer b) {
         b.clear();

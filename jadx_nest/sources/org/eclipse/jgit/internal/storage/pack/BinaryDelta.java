@@ -6,7 +6,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.util.QuotedString;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BinaryDelta {
     public static long getBaseSize(byte[] bArr) {
         int i = 0;

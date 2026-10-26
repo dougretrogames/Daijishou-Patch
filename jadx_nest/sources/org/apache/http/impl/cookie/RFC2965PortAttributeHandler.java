@@ -12,7 +12,7 @@ import org.apache.http.cookie.SetCookie;
 import org.apache.http.cookie.SetCookie2;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RFC2965PortAttributeHandler implements CommonCookieAttributeHandler {
     private static int[] parsePortAttribute(String str) throws MalformedCookieException {
         StringTokenizer stringTokenizer = new StringTokenizer(str, CollectionUtils.COMMA);

@@ -5,7 +5,7 @@ import java.nio.CharBuffer;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.http.protocol.HTTP;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class CharArrayBuffer implements CharSequence, Serializable {
     private static final long serialVersionUID = -6208952725094867135L;
     private char[] buffer;

@@ -4,7 +4,7 @@ import android.app.Dialog;
 import android.os.Bundle;
 import androidx.fragment.app.DialogFragment;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AppCompatDialogFragment extends DialogFragment {
     public AppCompatDialogFragment() {
     }

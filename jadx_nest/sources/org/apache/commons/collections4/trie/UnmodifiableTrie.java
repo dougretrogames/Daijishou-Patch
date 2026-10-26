@@ -13,12 +13,12 @@ import org.apache.commons.collections4.Trie;
 import org.apache.commons.collections4.Unmodifiable;
 import org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UnmodifiableTrie<K, V> implements Trie<K, V>, Serializable, Unmodifiable {
     private static final long serialVersionUID = -7156426030315945159L;
     private final Trie<K, V> delegate;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <K, V> Trie<K, V> unmodifiableTrie(Trie<K, ? extends V> trie) {
         return trie instanceof Unmodifiable ? trie : new UnmodifiableTrie(trie);
     }

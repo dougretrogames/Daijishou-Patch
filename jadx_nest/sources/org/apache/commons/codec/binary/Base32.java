@@ -5,7 +5,7 @@ import java.util.Objects;
 import org.apache.commons.codec.CodecPolicy;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Base32 extends BaseNCodec {
     private static final int BITS_PER_ENCODED_BYTE = 5;
     private static final int BYTES_PER_ENCODED_BLOCK = 8;
@@ -51,12 +51,12 @@ public class Base32 extends BaseNCodec {
         return new Builder();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] decodeTable(boolean z) {
         return z ? HEX_DECODE_TABLE : DECODE_TABLE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] encodeTable(boolean z) {
         return z ? HEX_ENCODE_TABLE : ENCODE_TABLE;
     }

@@ -10,11 +10,11 @@ import com.google.api.client.http.HttpResponse;
 import com.google.api.client.http.json.JsonHttpContent;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class AbstractGoogleJsonClientRequest<T> extends AbstractGoogleClientRequest<T> {
     private final Object jsonContent;
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     protected AbstractGoogleJsonClientRequest(AbstractGoogleJsonClient abstractGoogleJsonClient, String str, String str2, Object obj, Class<T> cls) {
         JsonHttpContent wrapperKey = null;
         if (obj != null) {
@@ -43,7 +43,7 @@ public abstract class AbstractGoogleJsonClientRequest<T> extends AbstractGoogleC
         super.queue(batchRequest, GoogleJsonErrorContainer.class, jsonBatchCallback);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.api.client.googleapis.services.AbstractGoogleClientRequest
     public GoogleJsonResponseException newExceptionOnError(HttpResponse httpResponse) {
         return GoogleJsonResponseException.from(getAbstractGoogleClient().getJsonFactory(), httpResponse);

@@ -3,7 +3,7 @@ package org.slf4j.event;
 import org.slf4j.Marker;
 import org.slf4j.helpers.SubstituteLogger;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SubstituteLoggingEvent implements LoggingEvent {
     Object[] argArray;
     Level level;

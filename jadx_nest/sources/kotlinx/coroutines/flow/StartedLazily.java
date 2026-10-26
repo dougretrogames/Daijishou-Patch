@@ -11,13 +11,13 @@ import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Ref;
 
-/* JADX INFO: compiled from: SharingStarted.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: SharingStarted.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0002\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u001c\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00042\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007H\u0016J\b\u0010\t\u001a\u00020\nH\u0016¨\u0006\u000b"}, d2 = {"Lkotlinx/coroutines/flow/StartedLazily;", "Lkotlinx/coroutines/flow/SharingStarted;", "()V", "command", "Lkotlinx/coroutines/flow/Flow;", "Lkotlinx/coroutines/flow/SharingCommand;", "subscriptionCount", "Lkotlinx/coroutines/flow/StateFlow;", "", "toString", "", "kotlinx-coroutines-core"}, k = 1, mv = {1, 9, 0}, xi = 48)
 final class StartedLazily implements SharingStarted {
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.flow.StartedLazily$command$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SharingStarted.kt */
+    /* INFO: renamed from: kotlinx.coroutines.flow.StartedLazily$command$1, reason: invalid class name */
+    /* INFO: compiled from: SharingStarted.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00030\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/flow/FlowCollector;", "Lkotlinx/coroutines/flow/SharingCommand;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.coroutines.flow.StartedLazily$command$1", f = "SharingStarted.kt", i = {}, l = {151}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass1 extends SuspendLambda implements Function2<FlowCollector<? super SharingCommand>, Continuation<? super Unit>, Object> {
@@ -25,7 +25,7 @@ final class StartedLazily implements SharingStarted {
         private /* synthetic */ Object L$0;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(StateFlow<Integer> stateFlow, Continuation<? super AnonymousClass1> continuation) {
             super(2, continuation);
             this.$subscriptionCount = stateFlow;
@@ -64,20 +64,20 @@ final class StartedLazily implements SharingStarted {
             throw new KotlinNothingValueException();
         }
 
-        /* JADX INFO: renamed from: kotlinx.coroutines.flow.StartedLazily$command$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: SharingStarted.kt */
+        /* INFO: renamed from: kotlinx.coroutines.flow.StartedLazily$command$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: SharingStarted.kt */
         @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u008a@¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "count", "", "emit", "(ILkotlin/coroutines/Continuation;)Ljava/lang/Object;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class C00881<T> implements FlowCollector {
             final /* synthetic */ FlowCollector<SharingCommand> $$this$flow;
             final /* synthetic */ Ref.BooleanRef $started;
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             C00881(Ref.BooleanRef booleanRef, FlowCollector<? super SharingCommand> flowCollector) {
                 this.$started = booleanRef;
                 this.$$this$flow = flowCollector;
             }
 
-            /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+            /* WARN: Code duplicated, block: B:7:0x0014  */
             public final Object emit(int i, Continuation<? super Unit> continuation) throws Throwable {
                 StartedLazily$command$1$1$emit$1 startedLazily$command$1$1$emit$1;
                 if (continuation instanceof StartedLazily$command$1$1$emit$1) {

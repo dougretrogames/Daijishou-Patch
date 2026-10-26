@@ -1,6 +1,6 @@
 package org.apache.http.util;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class TextUtils {
     public static boolean isEmpty(CharSequence charSequence) {
         return charSequence == null || charSequence.length() == 0;

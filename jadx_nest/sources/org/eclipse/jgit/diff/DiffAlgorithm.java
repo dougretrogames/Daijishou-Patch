@@ -1,6 +1,6 @@
 package org.eclipse.jgit.diff;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class DiffAlgorithm {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$diff$DiffAlgorithm$SupportedAlgorithm;
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$diff$Edit$Type;
@@ -9,7 +9,7 @@ public abstract class DiffAlgorithm {
         MYERS,
         HISTOGRAM;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static SupportedAlgorithm[] valuesCustom() {
             SupportedAlgorithm[] supportedAlgorithmArrValuesCustom = values();
             int length = supportedAlgorithmArrValuesCustom.length;

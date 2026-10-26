@@ -3,7 +3,7 @@ package org.apache.http.impl.cookie;
 import java.util.Date;
 import java.util.TimeZone;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public final class DateUtils {
     public static final TimeZone GMT = TimeZone.getTimeZone("GMT");

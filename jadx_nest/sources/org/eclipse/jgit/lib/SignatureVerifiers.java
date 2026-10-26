@@ -18,7 +18,7 @@ import org.eclipse.jgit.util.RawParseUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class SignatureVerifiers {
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) SignatureVerifiers.class);
     private static final byte[] PGP_PREFIX = Constants.GPG_SIGNATURE_PREFIX.getBytes(StandardCharsets.US_ASCII);

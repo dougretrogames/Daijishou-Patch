@@ -3,8 +3,8 @@ package androidx.core.location;
 import android.location.GnssMeasurementsEvent;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class LocationManagerCompat$GnssMeasurementsTransport$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ LocationManagerCompat.GnssMeasurementsTransport f$0;
     public final /* synthetic */ Executor f$1;

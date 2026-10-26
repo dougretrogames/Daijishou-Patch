@@ -14,7 +14,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.lib.BranchConfig;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class Requirement {
     protected final RequirementOperator op;
     protected final Range range;
@@ -370,7 +370,7 @@ public class Requirement {
         }
     }
 
-    /* JADX INFO: renamed from: com.vdurmont.semver4j.Requirement$1, reason: invalid class name */
+    /* INFO: renamed from: com.vdurmont.semver4j.Requirement$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$vdurmont$semver4j$Requirement$RequirementOperator;
         static final /* synthetic */ int[] $SwitchMap$com$vdurmont$semver4j$Semver$SemverType;

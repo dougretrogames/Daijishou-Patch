@@ -19,7 +19,7 @@ import org.gradle.util.GradleVersion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class OsDetector {
     private static final Logger logger = LoggerFactory.getLogger(OsDetector.class.getName());
     private final List<String> classifierWithLikes = new ArrayList();
@@ -126,7 +126,7 @@ public abstract class OsDetector {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <T> Provider<T> forUseAtConfigurationTime(Provider<T> provider) {
         return GradleVersion.current().compareTo(GradleVersion.version("7.4")) < 0 ? provider.forUseAtConfigurationTime() : provider;
     }

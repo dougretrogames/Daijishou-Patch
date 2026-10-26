@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.io;
 import java.security.MessageDigest;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class NullMessageDigest extends MessageDigest {
     private static final byte[] digest = new byte[20];
     private static final NullMessageDigest INSTANCE = new NullMessageDigest();

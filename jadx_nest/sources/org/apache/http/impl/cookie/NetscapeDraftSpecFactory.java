@@ -8,7 +8,7 @@ import org.apache.http.cookie.params.CookieSpecPNames;
 import org.apache.http.params.HttpParams;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class NetscapeDraftSpecFactory implements CookieSpecFactory, CookieSpecProvider {
     private final CookieSpec cookieSpec;

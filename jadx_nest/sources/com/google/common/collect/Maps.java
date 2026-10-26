@@ -37,7 +37,7 @@ import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Maps {
 
@@ -49,14 +49,14 @@ public final class Maps {
     private Maps() {
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     private static abstract class EntryFunction implements Function<Map.Entry<?, ?>, Object> {
         public static final EntryFunction KEY = new AnonymousClass1("KEY", 0);
         public static final EntryFunction VALUE = new AnonymousClass2("VALUE", 1);
         private static final /* synthetic */ EntryFunction[] $VALUES = $values();
 
-        /* JADX INFO: renamed from: com.google.common.collect.Maps$EntryFunction$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Maps$EntryFunction$1, reason: invalid class name */
         final enum AnonymousClass1 extends EntryFunction {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -89,7 +89,7 @@ public final class Maps {
             return (EntryFunction[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Maps$EntryFunction$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Maps$EntryFunction$2, reason: invalid class name */
         final enum AnonymousClass2 extends EntryFunction {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -111,14 +111,14 @@ public final class Maps {
         return EntryFunction.VALUE;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [V, K] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [V, K] */
+    /* INFO: renamed from: com.google.common.collect.Maps$1, reason: invalid class name */
     class AnonymousClass1<K, V> extends TransformedIterator<Map.Entry<K, V>, K> {
         AnonymousClass1(Iterator backingIterator) {
             super(backingIterator);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.TransformedIterator
         @ParametricNullness
         public K transform(Map.Entry<K, V> entry) {
@@ -130,14 +130,14 @@ public final class Maps {
         return new AnonymousClass1(entryIterator);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [V, K] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [V, K] */
+    /* INFO: renamed from: com.google.common.collect.Maps$2, reason: invalid class name */
     class AnonymousClass2<K, V> extends TransformedIterator<Map.Entry<K, V>, V> {
         AnonymousClass2(Iterator backingIterator) {
             super(backingIterator);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.TransformedIterator
         @ParametricNullness
         public V transform(Map.Entry<K, V> entry) {
@@ -273,7 +273,7 @@ public final class Maps {
         return new SortedMapDifferenceImpl(treeMapNewTreeMap, treeMapNewTreeMap2, treeMapNewTreeMap3, treeMapNewTreeMap4);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private static <K, V> void doDifference(Map<? extends K, ? extends V> map, Map<? extends K, ? extends V> map2, Equivalence<? super V> equivalence, Map<K, V> map3, Map<K, V> map4, Map<K, V> map5, Map<K, MapDifference.ValueDifference<V>> map6) {
         for (Map.Entry<? extends K, ? extends V> entry : map.entrySet()) {
             K key = entry.getKey();
@@ -291,7 +291,7 @@ public final class Maps {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <K, V> Map<K, V> unmodifiableMap(Map<K, ? extends V> map) {
         if (map instanceof SortedMap) {
             return Collections.unmodifiableSortedMap((SortedMap) map);
@@ -522,7 +522,7 @@ public final class Maps {
             backingSet().clear();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Maps$AsMapView$1EntrySetImpl, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Maps$AsMapView$1EntrySetImpl, reason: invalid class name */
         class C1EntrySetImpl extends EntrySet<K, V> {
             C1EntrySetImpl() {
             }
@@ -544,18 +544,18 @@ public final class Maps {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [V, K] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$3, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [V, K] */
+    /* INFO: renamed from: com.google.common.collect.Maps$3, reason: invalid class name */
     class AnonymousClass3<K, V> extends TransformedIterator<K, Map.Entry<K, V>> {
         final /* synthetic */ Function val$function;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(Iterator backingIterator, final Function val$function) {
             super(backingIterator);
             this.val$function = val$function;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.TransformedIterator
         public Map.Entry<K, V> transform(@ParametricNullness final K key) {
             return Maps.immutableEntry(key, this.val$function.apply(key));
@@ -571,7 +571,7 @@ public final class Maps {
             super(set, function);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Maps.AsMapView
         public SortedSet<K> backingSet() {
             return (SortedSet) super.backingSet();
@@ -686,8 +686,8 @@ public final class Maps {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$4, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Maps$4, reason: invalid class name */
     class AnonymousClass4<E> extends ForwardingSet<E> {
         final /* synthetic */ Set val$set;
 
@@ -695,7 +695,7 @@ public final class Maps {
             this.val$set = val$set;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Set<E> delegate() {
             return this.val$set;
@@ -712,13 +712,13 @@ public final class Maps {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> Set<E> removeOnlySet(final Set<E> set) {
         return new AnonymousClass4(set);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$5, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Maps$5, reason: invalid class name */
     class AnonymousClass5<E> extends ForwardingSortedSet<E> {
         final /* synthetic */ SortedSet val$set;
 
@@ -726,7 +726,7 @@ public final class Maps {
             this.val$set = val$set;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingSortedSet, com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public SortedSet<E> delegate() {
             return this.val$set;
@@ -758,13 +758,13 @@ public final class Maps {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> SortedSet<E> removeOnlySortedSet(final SortedSet<E> set) {
         return new AnonymousClass5(set);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$6, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Maps$6, reason: invalid class name */
     class AnonymousClass6<E> extends ForwardingNavigableSet<E> {
         final /* synthetic */ NavigableSet val$set;
 
@@ -772,7 +772,7 @@ public final class Maps {
             this.val$set = val$set;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingNavigableSet, com.google.common.collect.ForwardingSortedSet, com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public NavigableSet<E> delegate() {
             return this.val$set;
@@ -824,7 +824,7 @@ public final class Maps {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> NavigableSet<E> removeOnlyNavigableSet(final NavigableSet<E> set) {
         return new AnonymousClass6(set);
     }
@@ -885,8 +885,8 @@ public final class Maps {
         return new UnmodifiableEntrySet(Collections.unmodifiableSet(entrySet));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [V, K] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$7, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [V, K] */
+    /* INFO: renamed from: com.google.common.collect.Maps$7, reason: invalid class name */
     class AnonymousClass7<K, V> extends AbstractMapEntry<K, V> {
         final /* synthetic */ Map.Entry val$entry;
 
@@ -912,8 +912,8 @@ public final class Maps {
         return new AnonymousClass7(entry);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [V, K] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$8, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [V, K] */
+    /* INFO: renamed from: com.google.common.collect.Maps$8, reason: invalid class name */
     class AnonymousClass8<K, V> extends UnmodifiableIterator<Map.Entry<K, V>> {
         final /* synthetic */ Iterator val$entryIterator;
 
@@ -943,7 +943,7 @@ public final class Maps {
             this.entries = entries;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Collection<Map.Entry<K, V>> delegate() {
             return this.entries;
@@ -1053,7 +1053,7 @@ public final class Maps {
             this.inverse = inverse;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingMap, com.google.common.collect.ForwardingObject
         public Map<K, V> delegate() {
             return this.unmodifiableMap;
@@ -1112,8 +1112,8 @@ public final class Maps {
         return new TransformedEntriesNavigableMap(fromMap, transformer);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [K, V1, V2] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$9, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [K, V1, V2] */
+    /* INFO: renamed from: com.google.common.collect.Maps$9, reason: invalid class name */
     class AnonymousClass9<K, V1, V2> implements EntryTransformer<K, V1, V2> {
         final /* synthetic */ Function val$function;
 
@@ -1133,8 +1133,8 @@ public final class Maps {
         return new AnonymousClass9(function);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [V1, V2] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$10, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [V1, V2] */
+    /* INFO: renamed from: com.google.common.collect.Maps$10, reason: invalid class name */
     class AnonymousClass10<V1, V2> implements Function<V1, V2> {
         final /* synthetic */ Object val$key;
         final /* synthetic */ EntryTransformer val$transformer;
@@ -1156,8 +1156,8 @@ public final class Maps {
         return new AnonymousClass10(transformer, key);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [K, V1, V2] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$11, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [K, V1, V2] */
+    /* INFO: renamed from: com.google.common.collect.Maps$11, reason: invalid class name */
     class AnonymousClass11<K, V1, V2> implements Function<Map.Entry<K, V1>, V2> {
         final /* synthetic */ EntryTransformer val$transformer;
 
@@ -1183,8 +1183,8 @@ public final class Maps {
         return new AnonymousClass12(entry, transformer);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [K, V2] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$12, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [K, V2] */
+    /* INFO: renamed from: com.google.common.collect.Maps$12, reason: invalid class name */
     class AnonymousClass12<K, V2> extends AbstractMapEntry<K, V2> {
         final /* synthetic */ Map.Entry val$entry;
         final /* synthetic */ EntryTransformer val$transformer;
@@ -1200,7 +1200,7 @@ public final class Maps {
             return (K) this.val$entry.getKey();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.common.collect.AbstractMapEntry, java.util.Map.Entry
         @ParametricNullness
         public V2 getValue() {
@@ -1208,8 +1208,8 @@ public final class Maps {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [K, V1, V2] */
-    /* JADX INFO: renamed from: com.google.common.collect.Maps$13, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [K, V1, V2] */
+    /* INFO: renamed from: com.google.common.collect.Maps$13, reason: invalid class name */
     class AnonymousClass13<K, V1, V2> implements Function<Map.Entry<K, V1>, Map.Entry<K, V2>> {
         final /* synthetic */ EntryTransformer val$transformer;
 
@@ -1457,7 +1457,7 @@ public final class Maps {
             return Maps.transformEntry(this.transformer, entry);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.Maps.TransformedEntriesSortedMap
         public NavigableMap<K, V1> fromMap() {
             return (NavigableMap) super.fromMap();
@@ -1729,19 +1729,19 @@ public final class Maps {
                 this();
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
             public Set<Map.Entry<K, V>> delegate() {
                 return FilteredEntryMap.this.filteredEntrySet;
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.Maps$FilteredEntryMap$EntrySet$1, reason: invalid class name */
+            /* INFO: renamed from: com.google.common.collect.Maps$FilteredEntryMap$EntrySet$1, reason: invalid class name */
             class AnonymousClass1 extends TransformedIterator<Map.Entry<K, V>, Map.Entry<K, V>> {
                 AnonymousClass1(Iterator backingIterator) {
                     super(backingIterator);
                 }
 
-                /* JADX INFO: renamed from: com.google.common.collect.Maps$FilteredEntryMap$EntrySet$1$1, reason: invalid class name and collision with other inner class name */
+                /* INFO: renamed from: com.google.common.collect.Maps$FilteredEntryMap$EntrySet$1$1, reason: invalid class name and collision with other inner class name */
                 class C00381 extends ForwardingMapEntry<K, V> {
                     final /* synthetic */ Map.Entry val$entry;
 
@@ -1749,7 +1749,7 @@ public final class Maps {
                         this.val$entry = val$entry;
                     }
 
-                    /* JADX INFO: Access modifiers changed from: protected */
+                    /* INFO: Access modifiers changed from: protected */
                     @Override // com.google.common.collect.ForwardingMapEntry, com.google.common.collect.ForwardingObject
                     public Map.Entry<K, V> delegate() {
                         return this.val$entry;
@@ -1763,7 +1763,7 @@ public final class Maps {
                     }
                 }
 
-                /* JADX INFO: Access modifiers changed from: package-private */
+                /* INFO: Access modifiers changed from: package-private */
                 @Override // com.google.common.collect.TransformedIterator
                 public Map.Entry<K, V> transform(final Map.Entry<K, V> entry) {
                     return new C00381(entry);
@@ -1857,7 +1857,7 @@ public final class Maps {
             return (SortedSet) super.keySet();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Maps.FilteredEntryMap, com.google.common.collect.Maps.ViewCachingAbstractMap
         public SortedSet<K> createKeySet() {
             return new SortedKeySet();
@@ -1914,7 +1914,7 @@ public final class Maps {
             return keySet().iterator().next();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.SortedMap
         @ParametricNullness
         public K lastKey() {
@@ -1961,7 +1961,7 @@ public final class Maps {
             return this.unfiltered.comparator();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Maps$FilteredEntryNavigableMap$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Maps$FilteredEntryNavigableMap$1, reason: invalid class name */
         class AnonymousClass1 extends NavigableKeySet<K, V> {
             AnonymousClass1(NavigableMap map) {
                 super(map);
@@ -2082,7 +2082,7 @@ public final class Maps {
     static final class FilteredEntryBiMap<K, V> extends FilteredEntryMap<K, V> implements BiMap<K, V> {
         private final BiMap<V, K> inverse;
 
-        /* JADX INFO: renamed from: com.google.common.collect.Maps$FilteredEntryBiMap$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Maps$FilteredEntryBiMap$1, reason: invalid class name */
         class AnonymousClass1 implements Predicate<Map.Entry<V, K>> {
             final /* synthetic */ Predicate val$forwardPredicate;
 
@@ -2132,13 +2132,13 @@ public final class Maps {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <K, V> NavigableMap<K, V> unmodifiableNavigableMap(NavigableMap<K, ? extends V> map) {
         Preconditions.checkNotNull(map);
         return map instanceof UnmodifiableNavigableMap ? map : new UnmodifiableNavigableMap(map);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @CheckForNull
     public static <K, V> Map.Entry<K, V> unmodifiableOrNull(@CheckForNull Map.Entry<K, ? extends V> entry) {
         if (entry == null) {
@@ -2163,7 +2163,7 @@ public final class Maps {
             this.descendingMap = descendingMap;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingSortedMap, com.google.common.collect.ForwardingMap, com.google.common.collect.ForwardingObject
         public SortedMap<K, V> delegate() {
             return Collections.unmodifiableSortedMap(this.delegate);
@@ -2372,7 +2372,7 @@ public final class Maps {
         IteratorBasedAbstractMap() {
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Maps$IteratorBasedAbstractMap$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Maps$IteratorBasedAbstractMap$1, reason: invalid class name */
         class AnonymousClass1 extends EntrySet<K, V> {
             AnonymousClass1() {
             }
@@ -2546,7 +2546,7 @@ public final class Maps {
             super(map);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Maps.KeySet
         public SortedMap<K, V> map() {
             return (SortedMap) super.map();
@@ -2588,7 +2588,7 @@ public final class Maps {
             super(map);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Maps.SortedKeySet, com.google.common.collect.Maps.KeySet
         public NavigableMap<K, V> map() {
             return (NavigableMap) this.map;
@@ -2841,7 +2841,7 @@ public final class Maps {
         DescendingMap() {
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingMap, com.google.common.collect.ForwardingObject
         public final Map<K, V> delegate() {
             return forward();
@@ -2966,7 +2966,7 @@ public final class Maps {
             return setCreateEntrySet;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Maps$DescendingMap$1EntrySetImpl, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Maps$DescendingMap$1EntrySetImpl, reason: invalid class name */
         class C1EntrySetImpl extends EntrySet<K, V> {
             C1EntrySetImpl() {
             }
@@ -3059,7 +3059,7 @@ public final class Maps {
         return builder.buildOrThrow();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <K extends Comparable<? super K>, V> NavigableMap<K, V> subMap(NavigableMap<K, V> map, Range<K> range) {
         if (map.comparator() != null && map.comparator() != Ordering.natural() && range.hasLowerBound() && range.hasUpperBound()) {
             Preconditions.checkArgument(map.comparator().compare(range.lowerEndpoint(), range.upperEndpoint()) <= 0, "map is using a custom comparator which is inconsistent with the natural ordering.");

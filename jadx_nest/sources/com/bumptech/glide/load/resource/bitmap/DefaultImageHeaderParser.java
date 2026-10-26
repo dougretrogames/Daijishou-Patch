@@ -10,7 +10,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.charset.Charset;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class DefaultImageHeaderParser implements ImageHeaderParser {
     static final int APP2_SEGMENT_TYPE = 226;
     private static final int AVIF_BRAND = 1635150182;

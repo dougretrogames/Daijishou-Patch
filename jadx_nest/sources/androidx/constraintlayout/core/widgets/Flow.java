@@ -4,7 +4,7 @@ import androidx.constraintlayout.core.LinearSystem;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Flow extends VirtualLayout {
     public static final int HORIZONTAL_ALIGN_CENTER = 2;
     public static final int HORIZONTAL_ALIGN_END = 1;
@@ -148,7 +148,7 @@ public class Flow extends VirtualLayout {
         return this.mMaxElementsWrap;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getWidgetWidth(ConstraintWidget constraintWidget, int i) {
         ConstraintWidget constraintWidget2;
         if (constraintWidget == null) {
@@ -179,7 +179,7 @@ public class Flow extends VirtualLayout {
         return constraintWidget2.getWidth();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getWidgetHeight(ConstraintWidget constraintWidget, int i) {
         ConstraintWidget constraintWidget2;
         if (constraintWidget == null) {
@@ -1084,46 +1084,46 @@ public class Flow extends VirtualLayout {
         iArr[1] = widgetsList.getHeight();
     }
 
-    /* JADX WARN: Code duplicated, block: B:100:0x00fc  */
-    /* JADX WARN: Code duplicated, block: B:106:0x010f A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:109:0x0117 A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:117:0x011d A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:118:0x0115 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:119:0x0059 A[ADDED_TO_REGION, EDGE_INSN: B:119:0x0059->B:42:0x0059 BREAK  A[LOOP:1: B:44:0x005c->B:124:0x005c], REMOVE, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:121:0x010d A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:122:0x0059 A[ADDED_TO_REGION, EDGE_INSN: B:122:0x0059->B:42:0x0059 BREAK  A[LOOP:1: B:44:0x005c->B:124:0x005c], REMOVE, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:132:0x00d3 A[ADDED_TO_REGION, REMOVE, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:136:0x00ed A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:139:0x0104 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:45:0x005e A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:46:0x0060  */
-    /* JADX WARN: Code duplicated, block: B:47:0x006a  */
-    /* JADX WARN: Code duplicated, block: B:50:0x0078  */
-    /* JADX WARN: Code duplicated, block: B:54:0x0080  */
-    /* JADX WARN: Code duplicated, block: B:57:0x0088  */
-    /* JADX WARN: Code duplicated, block: B:61:0x0090  */
-    /* JADX WARN: Code duplicated, block: B:64:0x0097  */
-    /* JADX WARN: Code duplicated, block: B:66:0x009a  */
-    /* JADX WARN: Code duplicated, block: B:68:0x009f  */
-    /* JADX WARN: Code duplicated, block: B:72:0x00a6  */
-    /* JADX WARN: Code duplicated, block: B:77:0x00b5  */
-    /* JADX WARN: Code duplicated, block: B:79:0x00bb  */
-    /* JADX WARN: Code duplicated, block: B:82:0x00c9  */
-    /* JADX WARN: Code duplicated, block: B:84:0x00cf  */
-    /* JADX WARN: Code duplicated, block: B:89:0x00dd  */
-    /* JADX WARN: Code duplicated, block: B:91:0x00e3 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:92:0x00e5  */
-    /* JADX WARN: Code duplicated, block: B:97:0x00f4  */
-    /* JADX WARN: Code duplicated, block: B:99:0x00fa A[DONT_INVERT] */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:105:0x010d -> B:42:0x0059). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:106:0x010f -> B:42:0x0059). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:108:0x0115 -> B:42:0x0059). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:109:0x0117 -> B:42:0x0059). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-        jadx.core.utils.exceptions.JadxOverflowException: Regions count limit reached at block B:45:0x005e
-        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+    /* WARN: Code duplicated, block: B:100:0x00fc  */
+    /* WARN: Code duplicated, block: B:106:0x010f A[ADDED_TO_REGION] */
+    /* WARN: Code duplicated, block: B:109:0x0117 A[ADDED_TO_REGION] */
+    /* WARN: Code duplicated, block: B:117:0x011d A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:118:0x0115 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:119:0x0059 A[ADDED_TO_REGION, EDGE_INSN: B:119:0x0059->B:42:0x0059 BREAK  A[LOOP:1: B:44:0x005c->B:124:0x005c], REMOVE, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:121:0x010d A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:122:0x0059 A[ADDED_TO_REGION, EDGE_INSN: B:122:0x0059->B:42:0x0059 BREAK  A[LOOP:1: B:44:0x005c->B:124:0x005c], REMOVE, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:132:0x00d3 A[ADDED_TO_REGION, REMOVE, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:136:0x00ed A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:139:0x0104 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:45:0x005e A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:46:0x0060  */
+    /* WARN: Code duplicated, block: B:47:0x006a  */
+    /* WARN: Code duplicated, block: B:50:0x0078  */
+    /* WARN: Code duplicated, block: B:54:0x0080  */
+    /* WARN: Code duplicated, block: B:57:0x0088  */
+    /* WARN: Code duplicated, block: B:61:0x0090  */
+    /* WARN: Code duplicated, block: B:64:0x0097  */
+    /* WARN: Code duplicated, block: B:66:0x009a  */
+    /* WARN: Code duplicated, block: B:68:0x009f  */
+    /* WARN: Code duplicated, block: B:72:0x00a6  */
+    /* WARN: Code duplicated, block: B:77:0x00b5  */
+    /* WARN: Code duplicated, block: B:79:0x00bb  */
+    /* WARN: Code duplicated, block: B:82:0x00c9  */
+    /* WARN: Code duplicated, block: B:84:0x00cf  */
+    /* WARN: Code duplicated, block: B:89:0x00dd  */
+    /* WARN: Code duplicated, block: B:91:0x00e3 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:92:0x00e5  */
+    /* WARN: Code duplicated, block: B:97:0x00f4  */
+    /* WARN: Code duplicated, block: B:99:0x00fa A[DONT_INVERT] */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:105:0x010d -> B:42:0x0059). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:106:0x010f -> B:42:0x0059). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:108:0x0115 -> B:42:0x0059). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:109:0x0117 -> B:42:0x0059). Please report as a decompilation issue!!! */
+    /* ERROR: decompilerOverflowException in pass: RegionMakerVisitor
+        decompiler.core.utils.exceptions.decompilerOverflowException: Regions count limit reached at block B:45:0x005e
+        	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     private void measureAligned(androidx.constraintlayout.core.widgets.ConstraintWidget[] r11, int r12, int r13, int r14, int[] r15) {
         /*

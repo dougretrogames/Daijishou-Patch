@@ -16,7 +16,7 @@ import com.google.android.material.button.MaterialButtonToggleGroup;
 import com.google.android.material.chip.Chip;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class TimePickerView extends ConstraintLayout implements TimePickerControls {
     static final String GENERIC_VIEW_ACCESSIBILITY_CLASS_NAME = "android.view.View";
     private final ClockFaceView clockFace;
@@ -41,7 +41,7 @@ class TimePickerView extends ConstraintLayout implements TimePickerControls {
         void onSelectionChanged(int i);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.TimePickerView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.TimePickerView$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         AnonymousClass1() {
         }
@@ -77,7 +77,7 @@ class TimePickerView extends ConstraintLayout implements TimePickerControls {
         setUpDisplay();
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$com-google-android-material-timepicker-TimePickerView, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$com-google-android-material-timepicker-TimePickerView, reason: not valid java name */
     /* synthetic */ void m3347x9f44237d(MaterialButtonToggleGroup materialButtonToggleGroup, int i, boolean z) {
         if (z && this.onPeriodChangeListener != null) {
             this.onPeriodChangeListener.onPeriodChange(i == R.id.material_clock_period_pm_button ? 1 : 0);
@@ -90,7 +90,7 @@ class TimePickerView extends ConstraintLayout implements TimePickerControls {
         this.hourView.setOnTouchListener(anonymousClass3);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.TimePickerView$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.TimePickerView$2, reason: invalid class name */
     class AnonymousClass2 extends GestureDetector.SimpleOnGestureListener {
         AnonymousClass2() {
         }
@@ -106,7 +106,7 @@ class TimePickerView extends ConstraintLayout implements TimePickerControls {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.TimePickerView$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.TimePickerView$3, reason: invalid class name */
     class AnonymousClass3 implements View.OnTouchListener {
         final /* synthetic */ GestureDetector val$gestureDetector;
 
@@ -114,7 +114,7 @@ class TimePickerView extends ConstraintLayout implements TimePickerControls {
             this.val$gestureDetector = gestureDetector;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // android.view.View.OnTouchListener
         public boolean onTouch(View view, MotionEvent motionEvent) {
             if (((Checkable) view).isChecked()) {

@@ -1,6 +1,6 @@
 package org.eclipse.jgit.internal.storage.file;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class UInt24Array {
     public static final UInt24Array EMPTY = new UInt24Array(new byte[0]);
     private static final int ENTRY_SZ = 3;

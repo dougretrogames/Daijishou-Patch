@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Objects;
 import java.util.function.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractCollectionDecorator<E> implements Collection<E>, Serializable {
     private static final long serialVersionUID = 6249888059822088500L;
     private Collection<E> collection;

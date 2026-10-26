@@ -8,7 +8,7 @@ import com.google.android.material.color.MaterialColors;
 import com.google.android.material.internal.ThemeEnforcement;
 import com.google.android.material.resources.MaterialResources;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class BaseProgressIndicatorSpec {
     public int hideAnimationBehavior;
     public int[] indicatorColors = new int[0];

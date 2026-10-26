@@ -7,10 +7,10 @@ import java.lang.reflect.InvocationHandler;
 import org.chromium.support_lib_boundary.PrefetchOperationCallbackBoundaryInterface;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PrefetchOperationCallbackAdapter {
 
-    /* JADX INFO: renamed from: androidx.webkit.internal.PrefetchOperationCallbackAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.webkit.internal.PrefetchOperationCallbackAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements PrefetchOperationCallbackBoundaryInterface {
         final /* synthetic */ OutcomeReceiverCompat val$callback;
 

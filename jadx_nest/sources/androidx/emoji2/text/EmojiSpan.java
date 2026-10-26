@@ -4,7 +4,7 @@ import android.graphics.Paint;
 import android.text.style.ReplacementSpan;
 import androidx.core.util.Preconditions;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class EmojiSpan extends ReplacementSpan {
     private final TypefaceEmojiRasterizer mRasterizer;
     private final Paint.FontMetricsInt mTmpFontMetrics = new Paint.FontMetricsInt();

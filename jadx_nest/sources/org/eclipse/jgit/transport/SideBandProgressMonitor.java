@@ -7,7 +7,7 @@ import org.apache.http.message.TokenParser;
 import org.eclipse.jgit.lib.BatchingProgressMonitor;
 import org.eclipse.jgit.lib.Constants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class SideBandProgressMonitor extends BatchingProgressMonitor {
     private final OutputStream out;
     private boolean write = true;

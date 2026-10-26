@@ -3,7 +3,7 @@ package org.apache.commons.codec.binary;
 import java.io.InputStream;
 import org.apache.commons.codec.CodecPolicy;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Base64InputStream extends BaseNCodecInputStream {
     public Base64InputStream(InputStream inputStream) {
         this(inputStream, false);

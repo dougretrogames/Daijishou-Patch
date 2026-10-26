@@ -6,8 +6,8 @@ import android.os.IBinder;
 import android.util.Log;
 import com.google.android.gms.auth.api.signin.internal.zbt;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public final class RevocationBoundService extends Service {
     @Override // android.app.Service

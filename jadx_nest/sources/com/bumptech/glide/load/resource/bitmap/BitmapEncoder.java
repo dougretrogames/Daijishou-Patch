@@ -17,7 +17,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BitmapEncoder implements ResourceEncoder<Bitmap> {
     private static final String TAG = "BitmapEncoder";
     private final ArrayPool arrayPool;

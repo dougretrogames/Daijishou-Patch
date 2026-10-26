@@ -45,7 +45,7 @@ import com.google.android.material.shape.Shapeable;
 import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Chip extends AppCompatCheckBox implements ChipDrawable.Delegate, Shapeable, MaterialCheckable<Chip> {
     private static final String BUTTON_ACCESSIBILITY_CLASS_NAME = "android.widget.Button";
     private static final int CHIP_BODY_VIRTUAL_ID = 0;
@@ -79,7 +79,7 @@ public class Chip extends AppCompatCheckBox implements ChipDrawable.Delegate, Sh
     private static final int[] SELECTED_STATE = {android.R.attr.state_selected};
     private static final int[] CHECKABLE_STATE_SET = {android.R.attr.state_checkable};
 
-    /* JADX INFO: renamed from: com.google.android.material.chip.Chip$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.chip.Chip$1, reason: invalid class name */
     class AnonymousClass1 extends TextAppearanceFontCallback {
         @Override // com.google.android.material.resources.TextAppearanceFontCallback
         public void onFontRetrievalFailed(int i) {
@@ -105,7 +105,7 @@ public class Chip extends AppCompatCheckBox implements ChipDrawable.Delegate, Sh
         this(context, attributeSet, R.attr.chipStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public Chip(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -143,7 +143,7 @@ public class Chip extends AppCompatCheckBox implements ChipDrawable.Delegate, Sh
         super.setOnCheckedChangeListener(new Chip$$ExternalSyntheticLambda0(this));
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$com-google-android-material-chip-Chip, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$com-google-android-material-chip-Chip, reason: not valid java name */
     /* synthetic */ void m3262lambda$new$0$comgoogleandroidmaterialchipChip(CompoundButton compoundButton, boolean z) {
         MaterialCheckable.OnCheckedChangeListener<Chip> onCheckedChangeListener = this.onCheckedChangeListenerInternal;
         if (onCheckedChangeListener != null) {
@@ -251,7 +251,7 @@ public class Chip extends AppCompatCheckBox implements ChipDrawable.Delegate, Sh
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.chip.Chip$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.chip.Chip$2, reason: invalid class name */
     class AnonymousClass2 extends ViewOutlineProvider {
         AnonymousClass2() {
         }
@@ -660,8 +660,8 @@ public class Chip extends AppCompatCheckBox implements ChipDrawable.Delegate, Sh
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v0, types: [boolean, int] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v0, types: [boolean, int] */
     private int[] createCloseIconDrawableState() {
         ?? IsEnabled = isEnabled();
         int i = IsEnabled;
@@ -704,13 +704,13 @@ public class Chip extends AppCompatCheckBox implements ChipDrawable.Delegate, Sh
         return iArr;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean hasCloseIcon() {
         ChipDrawable chipDrawable = this.chipDrawable;
         return (chipDrawable == null || chipDrawable.getCloseIcon() == null) ? false : true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public RectF getCloseIconTouchBounds() {
         this.rectF.setEmpty();
         if (hasCloseIcon() && this.onCloseIconClickListener != null) {
@@ -719,7 +719,7 @@ public class Chip extends AppCompatCheckBox implements ChipDrawable.Delegate, Sh
         return this.rectF;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Rect getCloseIconTouchBoundsInt() {
         RectF closeIconTouchBounds = getCloseIconTouchBounds();
         this.rect.set((int) closeIconTouchBounds.left, (int) closeIconTouchBounds.top, (int) closeIconTouchBounds.right, (int) closeIconTouchBounds.bottom);

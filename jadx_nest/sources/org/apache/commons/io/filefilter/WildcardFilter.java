@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class WildcardFilter extends AbstractFileFilter implements Serializable {
     private static final long serialVersionUID = -5037645902506953517L;

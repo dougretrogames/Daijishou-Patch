@@ -1,6 +1,6 @@
 package org.apache.http;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class HttpVersion extends ProtocolVersion {
     public static final String HTTP = "HTTP";
     public static final HttpVersion HTTP_0_9 = new HttpVersion(0, 9);

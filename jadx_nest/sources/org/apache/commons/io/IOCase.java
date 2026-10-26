@@ -3,7 +3,7 @@ package org.apache.commons.io;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum IOCase {
     SENSITIVE("Sensitive", true),
     INSENSITIVE("Insensitive", false),

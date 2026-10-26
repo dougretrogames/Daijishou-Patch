@@ -1,6 +1,6 @@
 package org.eclipse.jgit.merge;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MergeChunk {
     private final int begin;
     private final ConflictState conflictState;
@@ -13,7 +13,7 @@ public class MergeChunk {
         BASE_CONFLICTING_RANGE,
         NEXT_CONFLICTING_RANGE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static ConflictState[] valuesCustom() {
             ConflictState[] conflictStateArrValuesCustom = values();
             int length = conflictStateArrValuesCustom.length;

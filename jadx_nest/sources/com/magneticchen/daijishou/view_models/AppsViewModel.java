@@ -48,12 +48,12 @@ import kotlin.ranges.RangesKt;
 import kotlinx.serialization.json.Json;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: compiled from: AppsViewModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: AppsViewModel.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000~\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\u0018\u0000 ?2\u00020\u0001:\u0001?B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0006\u0010+\u001a\u00020\fJ\u0006\u0010,\u001a\u00020\fJ\u000e\u0010-\u001a\u00020.2\u0006\u0010/\u001a\u00020\u001fJ\u000e\u00100\u001a\u00020.2\u0006\u0010/\u001a\u00020\u001fJ\u0016\u00101\u001a\u0002022\u0006\u00103\u001a\u0002042\u0006\u00105\u001a\u00020\bJ\u000e\u00106\u001a\u00020\u001f2\u0006\u00105\u001a\u00020\bJ\u0010\u00107\u001a\u0002022\u0006\u00108\u001a\u00020\fH\u0002J\u0010\u00109\u001a\u0002022\u0006\u0010:\u001a\u00020\fH\u0002J\u0006\u0010;\u001a\u000202J\u0006\u0010<\u001a\u000202J\u000e\u0010=\u001a\u0002022\u0006\u0010/\u001a\u00020\u001fJ\b\u0010>\u001a\u000202H\u0002R\u001a\u0010\u0005\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\b0\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u000e¢\u0006\u0002\n\u0000R \u0010\r\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\u0014\u001a\u00060\u0015R\u00020\u0016X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0018X\u0082\u0004¢\u0006\u0002\n\u0000R\u001d\u0010\u0019\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\b0\u00070\u001a8F¢\u0006\u0006\u001a\u0004\b\u001b\u0010\u001cR\u001d\u0010\u001d\u001a\u000e\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020 0\u001e¢\u0006\b\n\u0000\u001a\u0004\b!\u0010\"R-\u0010#\u001a\u001e\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020\u001f0$j\u000e\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020\u001f`%¢\u0006\b\n\u0000\u001a\u0004\b&\u0010'R-\u0010(\u001a\u001e\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020\b0$j\u000e\u0012\u0004\u0012\u00020\u001f\u0012\u0004\u0012\u00020\b`%¢\u0006\b\n\u0000\u001a\u0004\b)\u0010'R\u000e\u0010*\u001a\u00020\fX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006@"}, d2 = {"Lcom/magneticchen/daijishou/view_models/AppsViewModel;", "Lcom/magneticchen/daijishou/view_models/abstract_view_models/DaijishouAndroidViewModel;", "application", "Landroid/app/Application;", "(Landroid/app/Application;)V", "_packageResolveInfoListLiveData", "Landroidx/lifecycle/MediatorLiveData;", "", "Landroid/content/pm/ResolveInfo;", "appsStateJson", "Lcom/magneticchen/daijishou/application_data/AppsStateJson;", "itemsMode", "", "launcherIntentResolveInfoList", "getLauncherIntentResolveInfoList", "()Ljava/util/List;", "setLauncherIntentResolveInfoList", "(Ljava/util/List;)V", "launcherIntentResolveInfoListLiveData", "Lcom/magneticchen/daijishou/live_data/LauncherIntentResolveInfoListLiveData;", "logger", "Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "Lcom/magneticchen/daijishou/DaijishouApplication;", "packageManager", "Landroid/content/pm/PackageManager;", "packageResolveInfoListLiveData", "Landroidx/lifecycle/LiveData;", "getPackageResolveInfoListLiveData", "()Landroidx/lifecycle/LiveData;", "resolveInfoStringIdToBitmapCache", "Lcom/magneticchen/daijishou/utils/Utils$MaxSizeHashMap;", "", "Landroid/graphics/Bitmap;", "getResolveInfoStringIdToBitmapCache", "()Lcom/magneticchen/daijishou/utils/Utils$MaxSizeHashMap;", "resolveInfoStringIdToLabelCache", "Ljava/util/HashMap;", "Lkotlin/collections/HashMap;", "getResolveInfoStringIdToLabelCache", "()Ljava/util/HashMap;", "resolveInfoStringIdToResolveInfo", "getResolveInfoStringIdToResolveInfo", "sortingMode", "getItemsMode", "getSortingMode", "isResolveInfoStringIdFlagAsGame", "", "resolveInfoStringId", "isResolveInfoStringIdFlagAsGameNatively", "launchAppByResolveInfo", "", "activity", "Landroid/app/Activity;", "resolveInfo", "resolveInfoToResolveInfoStringId", "setItemsMode", "newItemsMode", "setSortingMode", "newSortingMode", "toggleNextItemsMode", "toggleNextSortingMode", "toggleResolveInfoStringIdFlagAsGame", "updatePackageResolveInfoList", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class AppsViewModel extends DaijishouAndroidViewModel {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final int appIconResolutionPx = 128;
     private final MediatorLiveData<List<ResolveInfo>> _packageResolveInfoListLiveData;
@@ -68,7 +68,7 @@ public final class AppsViewModel extends DaijishouAndroidViewModel {
     private final HashMap<String, ResolveInfo> resolveInfoStringIdToResolveInfo;
     private int sortingMode;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public AppsViewModel(Application application) {
         super(application);
         Intrinsics.checkNotNullParameter(application, "application");
@@ -98,7 +98,7 @@ public final class AppsViewModel extends DaijishouAndroidViewModel {
         this.appsStateJson = appsStateJson;
     }
 
-    /* JADX INFO: compiled from: AppsViewModel.kt */
+    /* INFO: compiled from: AppsViewModel.kt */
     @Metadata(d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\u00020\u00068BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\b¨\u0006\t"}, d2 = {"Lcom/magneticchen/daijishou/view_models/AppsViewModel$Companion;", "", "()V", "appIconResolutionPx", "", "launcherIntent", "Landroid/content/Intent;", "getLauncherIntent", "()Landroid/content/Intent;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -119,8 +119,8 @@ public final class AppsViewModel extends DaijishouAndroidViewModel {
         return this._packageResolveInfoListLiveData;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.AppsViewModel$1, reason: invalid class name */
-    /* JADX INFO: compiled from: AppsViewModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.AppsViewModel$1, reason: invalid class name */
+    /* INFO: compiled from: AppsViewModel.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "newerLauncherIntentResolveInfoList", "", "Landroid/content/pm/ResolveInfo;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function1<List<? extends ResolveInfo>, Unit> {
         AnonymousClass1() {
@@ -133,7 +133,7 @@ public final class AppsViewModel extends DaijishouAndroidViewModel {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<? extends ResolveInfo> list) {
             AppsViewModel.this.getLauncherIntentResolveInfoList().clear();
             List<ResolveInfo> launcherIntentResolveInfoList = AppsViewModel.this.getLauncherIntentResolveInfoList();
@@ -231,7 +231,7 @@ public final class AppsViewModel extends DaijishouAndroidViewModel {
         return this.appsStateJson.getResolveInfoFlagAsGameStringIds().contains(resolveInfoStringId);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void updatePackageResolveInfoList() {
         List<ResolveInfo> value = this._packageResolveInfoListLiveData.getValue();
         Intrinsics.checkNotNull(value);
@@ -349,7 +349,7 @@ public final class AppsViewModel extends DaijishouAndroidViewModel {
         new Handler(Looper.getMainLooper()).postDelayed(new AppsViewModel$$ExternalSyntheticLambda0(resolveInfo, activity, this), 150L);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void launchAppByResolveInfo$lambda$7(ResolveInfo resolveInfo, Activity activity, AppsViewModel this$0) {
         Intrinsics.checkNotNullParameter(resolveInfo, "$resolveInfo");
         Intrinsics.checkNotNullParameter(activity, "$activity");

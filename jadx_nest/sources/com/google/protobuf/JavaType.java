@@ -1,6 +1,6 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public enum JavaType {
     VOID(Void.class, Void.class, null),
     INT(Integer.TYPE, Integer.class, 0),

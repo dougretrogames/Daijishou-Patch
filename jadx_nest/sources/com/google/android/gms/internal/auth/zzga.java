@@ -6,8 +6,8 @@ import java.util.Arrays;
 import java.util.List;
 import sun.misc.Unsafe;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 final class zzga<T> implements zzgi<T> {
     private static final int[] zza = new int[0];
     private static final Unsafe zzb = zzhj.zzg();
@@ -152,10 +152,10 @@ final class zzga<T> implements zzgi<T> {
         return zzhaVarZzd;
     }
 
-    /* JADX WARN: Code duplicated, block: B:123:0x0253  */
-    /* JADX WARN: Code duplicated, block: B:124:0x0256  */
-    /* JADX WARN: Code duplicated, block: B:127:0x026e  */
-    /* JADX WARN: Code duplicated, block: B:128:0x0271  */
+    /* WARN: Code duplicated, block: B:123:0x0253  */
+    /* WARN: Code duplicated, block: B:124:0x0256  */
+    /* WARN: Code duplicated, block: B:127:0x026e  */
+    /* WARN: Code duplicated, block: B:128:0x0271  */
     static zzga zzj(Class cls, zzfu zzfuVar, zzgc zzgcVar, zzfl zzflVar, zzgz zzgzVar, zzem zzemVar, zzfs zzfsVar) {
         int i;
         int iCharAt;
@@ -1135,12 +1135,12 @@ final class zzga<T> implements zzgi<T> {
         return (i2 * 53) + this.zzl.zzb(obj).hashCode();
     }
 
-    /*  JADX ERROR: Type inference failed
-        jadx.core.utils.exceptions.JadxOverflowException: Type inference error: updates count limit reached with updateSeq = 34701. Try increasing type updates limit count.
-        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
-        	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:79)
+    /* ERROR: Type inference failed
+        decompiler.core.utils.exceptions.decompilerOverflowException: Type inference error: updates count limit reached with updateSeq = 34701. Try increasing type updates limit count.
+        	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+        	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:79)
         */
     final int zzb(java.lang.Object r35, byte[] r36, int r37, int r38, int r39, com.google.android.gms.internal.auth.zzdt r40) throws java.io.IOException {
         /*
@@ -1155,9 +1155,9 @@ final class zzga<T> implements zzgi<T> {
         return ((zzev) this.zzg).zzc();
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x006c  */
-    /* JADX WARN: Code duplicated, block: B:27:0x0072  */
-    /* JADX WARN: Code duplicated, block: B:38:0x007f A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:25:0x006c  */
+    /* WARN: Code duplicated, block: B:27:0x0072  */
+    /* WARN: Code duplicated, block: B:38:0x007f A[SYNTHETIC] */
     @Override // com.google.android.gms.internal.auth.zzgi
     public final void zze(Object obj) {
         if (zzH(obj)) {
@@ -1633,12 +1633,12 @@ final class zzga<T> implements zzgi<T> {
         return this.zzl.zzb(obj).equals(this.zzl.zzb(obj2));
     }
 
-    /* JADX WARN: Code duplicated, block: B:42:0x008d  */
-    /* JADX WARN: Code duplicated, block: B:44:0x009c  */
-    /* JADX WARN: Code duplicated, block: B:47:0x00a7  */
-    /* JADX WARN: Code duplicated, block: B:50:0x00b2 A[LOOP:1: B:45:0x00a1->B:50:0x00b2, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:63:0x00b1 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:67:0x00c6 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:42:0x008d  */
+    /* WARN: Code duplicated, block: B:44:0x009c  */
+    /* WARN: Code duplicated, block: B:47:0x00a7  */
+    /* WARN: Code duplicated, block: B:50:0x00b2 A[LOOP:1: B:45:0x00a1->B:50:0x00b2, LOOP_END] */
+    /* WARN: Code duplicated, block: B:63:0x00b1 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:67:0x00c6 A[SYNTHETIC] */
     @Override // com.google.android.gms.internal.auth.zzgi
     public final boolean zzi(Object obj) {
         int i;

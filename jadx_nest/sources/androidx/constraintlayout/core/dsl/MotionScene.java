@@ -3,7 +3,7 @@ package androidx.constraintlayout.core.dsl;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionScene {
     ArrayList<Transition> mTransitions = new ArrayList<>();
     ArrayList<ConstraintSet> mConstraintSets = new ArrayList<>();

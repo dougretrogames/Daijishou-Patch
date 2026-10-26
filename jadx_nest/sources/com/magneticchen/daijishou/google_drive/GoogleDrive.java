@@ -58,8 +58,8 @@ import kotlinx.coroutines.sync.Mutex;
 import kotlinx.coroutines.sync.MutexKt;
 import org.apache.http.HttpStatus;
 
-/* JADX INFO: compiled from: GoogleDrive.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: GoogleDrive.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0090\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0012\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u001a\u0018\u0000 W2\u00020\u0001:\u0002WXB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J&\u0010 \u001a\u00020!2\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020$0#2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0082@¢\u0006\u0002\u0010&J\u000e\u0010'\u001a\u00020!2\u0006\u0010(\u001a\u00020)J\u0006\u0010*\u001a\u00020\u0014J*\u0010+\u001a\u0004\u0018\u00010,2\u0006\u0010-\u001a\u00020$2\u0006\u0010.\u001a\u00020/2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u00100J*\u00101\u001a\u0004\u0018\u00010,2\u0006\u0010-\u001a\u00020$2\u0006\u00102\u001a\u0002032\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u00104J\u0018\u00105\u001a\u00020!2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u00106J \u00107\u001a\u00020!2\u0006\u00108\u001a\u00020$2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u00109J \u0010:\u001a\u00020;2\u0006\u0010<\u001a\u00020$2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u00109J\"\u0010=\u001a\u0004\u0018\u00010;2\u0006\u0010-\u001a\u00020$2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u00109J\"\u0010>\u001a\u0004\u0018\u00010?2\u0006\u0010-\u001a\u00020$2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u00109J&\u0010@\u001a\b\u0012\u0004\u0012\u00020,0#2\u0006\u0010-\u001a\u00020$2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u00109J&\u0010A\u001a\b\u0012\u0004\u0012\u00020,0#2\u0006\u0010B\u001a\u00020$2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u00109J\u0010\u0010C\u001a\u0004\u0018\u00010$2\u0006\u0010D\u001a\u00020$J\u0010\u0010E\u001a\u00020!2\u0006\u0010F\u001a\u00020\u001fH\u0002J6\u0010G\u001a\b\u0012\u0004\u0012\u00020,0#2\n\b\u0002\u0010H\u001a\u0004\u0018\u00010$2\n\b\u0002\u0010I\u001a\u0004\u0018\u00010$2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u0010JJ\u0018\u0010K\u001a\u00020!2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u00106J(\u0010L\u001a\u00020!2\u0006\u00108\u001a\u00020$2\u0006\u0010M\u001a\u00020$2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u0010JJ\u0018\u0010N\u001a\u00020!2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u00106J\b\u0010O\u001a\u00020!H\u0002J\u0018\u0010P\u001a\u00020!2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u00106J\u0016\u0010Q\u001a\u00020!2\u0006\u0010D\u001a\u00020$2\u0006\u0010F\u001a\u00020$J\u0010\u0010R\u001a\u00020!2\u0006\u0010\r\u001a\u00020\u000eH\u0002J\u0006\u0010S\u001a\u00020!J*\u0010T\u001a\u0004\u0018\u00010,2\u0006\u0010-\u001a\u00020$2\u0006\u0010U\u001a\u00020;2\b\b\u0002\u0010%\u001a\u00020\u0014H\u0086@¢\u0006\u0002\u0010VR\u0012\u0010\u0005\u001a\u00060\u0006R\u00020\u0000X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\r\u001a\u0004\u0018\u00010\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u0019\u0010\u000f\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u000e0\u00108F¢\u0006\u0006\u001a\u0004\b\u0011\u0010\u0012R\u001a\u0010\u0013\u001a\u00020\u0014X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R\u0011\u0010\u0019\u001a\u00020\u00148F¢\u0006\u0006\u001a\u0004\b\u0019\u0010\u0016R\u0012\u0010\u001a\u001a\u00060\u001bR\u00020\u0003X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u001d\u001a\n\u0012\u0004\u0012\u00020\u001f\u0018\u00010\u001eX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006Y"}, d2 = {"Lcom/magneticchen/daijishou/google_drive/GoogleDrive;", "", "application", "Lcom/magneticchen/daijishou/DaijishouApplication;", "(Lcom/magneticchen/daijishou/DaijishouApplication;)V", "_googleSignInAccountLiveData", "Lcom/magneticchen/daijishou/google_drive/GoogleDrive$GoogleSignInAccountLiveData;", "getApplication", "()Lcom/magneticchen/daijishou/DaijishouApplication;", "driveOperationMutex", "Lkotlinx/coroutines/sync/Mutex;", "googleDriveService", "Lcom/google/api/services/drive/Drive;", "googleSignInAccount", "Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;", "googleSignInAccountLiveData", "Landroidx/lifecycle/LiveData;", "getGoogleSignInAccountLiveData", "()Landroidx/lifecycle/LiveData;", "hasSignedIn", "", "getHasSignedIn", "()Z", "setHasSignedIn", "(Z)V", "isLocked", "logger", "Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "requestSignInMutex", "signInIntentLauncher", "Landroidx/activity/result/ActivityResultLauncher;", "Landroid/content/Intent;", "batchDeleteFiles", "", "fileIds", "", "", "withLock", "(Ljava/util/List;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "bindActivity", "activity", "Landroidx/appcompat/app/AppCompatActivity;", "checkGooglePlayService", "createOrUpdateFileByFilenameAndInputStream", "Lcom/google/api/services/drive/model/File;", "filename", "inputStream", "Ljava/io/ByteArrayInputStream;", "(Ljava/lang/String;Ljava/io/ByteArrayInputStream;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "createOrUpdateFileByInputStreamContent", "inputStreamContent", "Lcom/google/api/client/http/InputStreamContent;", "(Ljava/lang/String;Lcom/google/api/client/http/InputStreamContent;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "deleteAllFiles", "(ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "deleteFileByFileId", "fileId", "(Ljava/lang/String;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "downloadByteArrayFromFileId", "", "id", "downloadByteArrayFromFilename", "getFileOutputStreamByFilename", "Ljava/io/ByteArrayOutputStream;", "getFilesByFilename", "getFilesByFilenameContainingSubstring", "substring", "getItem", "key", "handleSignInIntent", "data", "listAllFiles", SearchIntents.EXTRA_QUERY, "customFields", "(Ljava/lang/String;Ljava/lang/String;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "logAllFiles", "renameFileByFileId", "name", "requestSignIn", "requestSignInExisted", "requestSignOut", "setItem", "setupGoogleSignInAccount", "unbindActivity", "uploadByteArrayToFilename", "byteArray", "(Ljava/lang/String;[BZLkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Companion", "GoogleSignInAccountLiveData", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class GoogleDrive {
     public static final int DEFAULT_PAGE_SIZE = 128;
@@ -75,12 +75,12 @@ public final class GoogleDrive {
     private final Mutex requestSignInMutex;
     private ActivityResultLauncher<Intent> signInIntentLauncher;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final Scope[] scopes = {new Scope("https://www.googleapis.com/auth/drive.file"), new Scope("https://www.googleapis.com/auth/drive.appdata")};
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$batchDeleteFiles$1, reason: invalid class name */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$batchDeleteFiles$1, reason: invalid class name */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 0, 0, 1}, l = {543, 266, 267}, m = "batchDeleteFiles", n = {"this", "fileIds", "batchRequest", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$2", "L$3", "L$0"})
     final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -102,8 +102,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$createOrUpdateFileByFilenameAndInputStream$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$createOrUpdateFileByFilenameAndInputStream$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 0, 0, 1}, l = {543, 385, 386}, m = "createOrUpdateFileByFilenameAndInputStream", n = {"this", "filename", "inputStream", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$2", "L$3", "L$0"})
     final class C02291 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -125,8 +125,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$createOrUpdateFileByInputStreamContent$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$createOrUpdateFileByInputStreamContent$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 0, 0, 1}, l = {543, 376, 377}, m = "createOrUpdateFileByInputStreamContent", n = {"this", "filename", "inputStreamContent", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$2", "L$3", "L$0"})
     final class C02301 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -148,8 +148,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$deleteAllFiles$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$deleteAllFiles$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 1}, l = {543, 283, 284}, m = "deleteAllFiles", n = {"this", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$0"})
     final class C02311 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -169,8 +169,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$deleteFileByFileId$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$deleteFileByFileId$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 0, 1}, l = {543, 292, 293}, m = "deleteFileByFileId", n = {"this", "fileId", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$2", "L$0"})
     final class C02321 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -191,8 +191,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$downloadByteArrayFromFileId$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$downloadByteArrayFromFileId$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 0, 1}, l = {543, 439, 440}, m = "downloadByteArrayFromFileId", n = {"this", "id", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$2", "L$0"})
     final class C02331 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -213,8 +213,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$downloadByteArrayFromFilename$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$downloadByteArrayFromFilename$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 0, 1}, l = {543, HttpStatus.SC_TOO_MANY_REQUESTS, 430}, m = "downloadByteArrayFromFilename", n = {"this", "filename", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$2", "L$0"})
     final class C02341 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -235,8 +235,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$getFileOutputStreamByFilename$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$getFileOutputStreamByFilename$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 0, 1}, l = {543, 396, 397}, m = "getFileOutputStreamByFilename", n = {"this", "filename", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$2", "L$0"})
     final class C02351 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -257,8 +257,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$getFilesByFilename$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$getFilesByFilename$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 0, 1}, l = {543, 412, HttpStatus.SC_REQUEST_TOO_LONG}, m = "getFilesByFilename", n = {"this", "filename", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$2", "L$0"})
     final class C02361 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -279,8 +279,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$getFilesByFilenameContainingSubstring$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$getFilesByFilenameContainingSubstring$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 0, 1}, l = {543, 404, 405}, m = "getFilesByFilenameContainingSubstring", n = {"this", "substring", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$2", "L$0"})
     final class C02371 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -301,8 +301,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$listAllFiles$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$listAllFiles$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 0, 0, 1}, l = {543, 339, 340}, m = "listAllFiles", n = {"this", SearchIntents.EXTRA_QUERY, "customFields", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$2", "L$3", "L$0"})
     final class C02391 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -324,8 +324,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$logAllFiles$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$logAllFiles$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 1}, l = {543, 352, 353}, m = "logAllFiles", n = {"this", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$0"})
     final class C02401 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -345,8 +345,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$renameFileByFileId$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$renameFileByFileId$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 0, 0, 1}, l = {543, 304, 305}, m = "renameFileByFileId", n = {"this", "fileId", "name", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$2", "L$3", "L$0"})
     final class C02411 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -368,8 +368,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$requestSignIn$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$requestSignIn$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 1}, l = {543, 188, 189}, m = "requestSignIn", n = {"this", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$0"})
     final class C02421 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -389,8 +389,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$requestSignOut$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$requestSignOut$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 1}, l = {543, 210, 211}, m = "requestSignOut", n = {"this", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$0"})
     final class C02431 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -410,8 +410,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$uploadByteArrayToFilename$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$uploadByteArrayToFilename$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 0, 0, 0, 1}, l = {543, 420, 421}, m = "uploadByteArrayToFilename", n = {"this", "filename", "byteArray", "$this$withLock_u24default$iv", "$this$withLock_u24default$iv"}, s = {"L$0", "L$1", "L$2", "L$3", "L$0"})
     final class C02451 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -451,7 +451,7 @@ public final class GoogleDrive {
         this.driveOperationMutex = MutexKt.Mutex$default(false, 1, null);
     }
 
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0086T¢\u0006\u0002\n\u0000R\u0019\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\b¢\u0006\n\n\u0002\u0010\f\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\r\u001a\u00020\u000e¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010¨\u0006\u0011"}, d2 = {"Lcom/magneticchen/daijishou/google_drive/GoogleDrive$Companion;", "", "()V", "DEFAULT_PAGE_SIZE", "", "DEFAULT_SPACE", "", "scopes", "", "Lcom/google/android/gms/common/api/Scope;", "getScopes", "()[Lcom/google/android/gms/common/api/Scope;", "[Lcom/google/android/gms/common/api/Scope;", "signInOptions", "Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;", "getSignInOptions", "()Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -483,7 +483,7 @@ public final class GoogleDrive {
         signInOptions = googleSignInOptionsBuild;
     }
 
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\b\u0086\u0004\u0018\u00002\n\u0012\u0006\u0012\u0004\u0018\u00010\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0003J\b\u0010\u0004\u001a\u00020\u0005H\u0014J\b\u0010\u0006\u001a\u00020\u0005H\u0014¨\u0006\u0007"}, d2 = {"Lcom/magneticchen/daijishou/google_drive/GoogleDrive$GoogleSignInAccountLiveData;", "Landroidx/lifecycle/MutableLiveData;", "Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;", "(Lcom/magneticchen/daijishou/google_drive/GoogleDrive;)V", "onActive", "", "onInactive", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class GoogleSignInAccountLiveData extends MutableLiveData<GoogleSignInAccount> {
         public GoogleSignInAccountLiveData() {
@@ -569,18 +569,18 @@ public final class GoogleDrive {
         return googleDrive.requestSignIn(z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:37:0x0088  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:44:0x009b, code lost:
+    /* WARN: Code duplicated, block: B:37:0x0088  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:44:0x009b, code lost:
     
         if (requestSignIn$runIt(r7, r0) == r1) goto L45;
      */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r8v0, types: [boolean] */
-    /* JADX WARN: Type inference failed for: r8v1, types: [kotlinx.coroutines.sync.Mutex] */
-    /* JADX WARN: Type inference failed for: r8v17 */
-    /* JADX WARN: Type inference failed for: r8v18 */
-    /* JADX WARN: Type inference failed for: r8v9, types: [kotlinx.coroutines.sync.Mutex] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r8v0, types: [boolean] */
+    /* WARN: Type inference failed for: r8v1, types: [kotlinx.coroutines.sync.Mutex] */
+    /* WARN: Type inference failed for: r8v17 */
+    /* WARN: Type inference failed for: r8v18 */
+    /* WARN: Type inference failed for: r8v9, types: [kotlinx.coroutines.sync.Mutex] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -772,18 +772,18 @@ public final class GoogleDrive {
         return googleDrive.requestSignOut(z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:37:0x0088  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:44:0x009b, code lost:
+    /* WARN: Code duplicated, block: B:37:0x0088  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:44:0x009b, code lost:
     
         if (requestSignOut$runIt$2(r7, r0) == r1) goto L45;
      */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r8v0, types: [boolean] */
-    /* JADX WARN: Type inference failed for: r8v1, types: [kotlinx.coroutines.sync.Mutex] */
-    /* JADX WARN: Type inference failed for: r8v17 */
-    /* JADX WARN: Type inference failed for: r8v18 */
-    /* JADX WARN: Type inference failed for: r8v9, types: [kotlinx.coroutines.sync.Mutex] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r8v0, types: [boolean] */
+    /* WARN: Type inference failed for: r8v1, types: [kotlinx.coroutines.sync.Mutex] */
+    /* WARN: Type inference failed for: r8v17 */
+    /* WARN: Type inference failed for: r8v18 */
+    /* WARN: Type inference failed for: r8v9, types: [kotlinx.coroutines.sync.Mutex] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -867,7 +867,7 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Object requestSignOut$runIt$2(GoogleDrive googleDrive, Continuation<?> continuation) {
         googleDrive.hasSignedIn = false;
         GoogleSignInClient client = GoogleSignIn.getClient(googleDrive.application, signInOptions);
@@ -887,7 +887,7 @@ public final class GoogleDrive {
         requestSignInExisted();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void bindActivity$lambda$4(GoogleDrive this$0, ActivityResult activityResult) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         DaijishouApplication.WrappedLogger wrappedLogger = null;
@@ -921,10 +921,10 @@ public final class GoogleDrive {
         this.signInIntentLauncher = null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:35:0x0097  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:44:0x00ae, code lost:
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:35:0x0097  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:44:0x00ae, code lost:
     
         if (batchDeleteFiles$runIt$5(r9, r8, r11, r0) == r1) goto L45;
      */
@@ -1022,7 +1022,7 @@ public final class GoogleDrive {
         return googleDrive.batchDeleteFiles(list, z, continuation);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Object batchDeleteFiles$runIt$5(List<String> list, GoogleDrive googleDrive, BatchRequest batchRequest, Continuation<?> continuation) throws IOException {
         for (String str : list) {
             Drive drive = googleDrive.googleDriveService;
@@ -1040,18 +1040,18 @@ public final class GoogleDrive {
         return googleDrive.deleteAllFiles(z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:30:0x0070  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:37:0x0083, code lost:
+    /* WARN: Code duplicated, block: B:30:0x0070  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:37:0x0083, code lost:
     
         if (deleteAllFiles$runIt$8(r7, r0) == r1) goto L38;
      */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r8v0, types: [boolean] */
-    /* JADX WARN: Type inference failed for: r8v1, types: [kotlinx.coroutines.sync.Mutex] */
-    /* JADX WARN: Type inference failed for: r8v13 */
-    /* JADX WARN: Type inference failed for: r8v14 */
-    /* JADX WARN: Type inference failed for: r8v5, types: [kotlinx.coroutines.sync.Mutex] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r8v0, types: [boolean] */
+    /* WARN: Type inference failed for: r8v1, types: [kotlinx.coroutines.sync.Mutex] */
+    /* WARN: Type inference failed for: r8v13 */
+    /* WARN: Type inference failed for: r8v14 */
+    /* WARN: Type inference failed for: r8v5, types: [kotlinx.coroutines.sync.Mutex] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -1182,9 +1182,9 @@ public final class GoogleDrive {
         return googleDrive.deleteFileByFileId(str, z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:31:0x007d  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:40:0x0094, code lost:
+    /* WARN: Code duplicated, block: B:31:0x007d  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:40:0x0094, code lost:
     
         if (deleteFileByFileId$runIt$10(r8, r9, r0) == r1) goto L41;
      */
@@ -1265,7 +1265,7 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Object deleteFileByFileId$runIt$10(GoogleDrive googleDrive, String str, Continuation<?> continuation) throws Throwable {
         Drive drive = googleDrive.googleDriveService;
         Drive.Files files = drive != null ? drive.files() : null;
@@ -1283,9 +1283,9 @@ public final class GoogleDrive {
         return googleDrive.renameFileByFileId(str, str2, z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:31:0x0085  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:40:0x009a, code lost:
+    /* WARN: Code duplicated, block: B:31:0x0085  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:40:0x009a, code lost:
     
         if (renameFileByFileId$runIt$12(r8, r9, r10, r0) == r1) goto L41;
      */
@@ -1369,7 +1369,7 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Object renameFileByFileId$runIt$12(GoogleDrive googleDrive, String str, String str2, Continuation<?> continuation) throws Throwable {
         Drive drive = googleDrive.googleDriveService;
         Drive.Files files = drive != null ? drive.files() : null;
@@ -1396,9 +1396,9 @@ public final class GoogleDrive {
         return googleDrive.listAllFiles(str, str2, z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:31:0x0085  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:40:0x0098, code lost:
+    /* WARN: Code duplicated, block: B:31:0x0085  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:40:0x0098, code lost:
     
         if (r12 == r1) goto L41;
      */
@@ -1484,9 +1484,9 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Type inference failed for: r3v8, types: [com.google.api.services.drive.Drive$Files$List] */
-    /* JADX WARN: Type inference failed for: r8v5, types: [com.google.api.services.drive.Drive$Files$List] */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Type inference failed for: r3v8, types: [com.google.api.services.drive.Drive$Files$List] */
+    /* WARN: Type inference failed for: r8v5, types: [com.google.api.services.drive.Drive$Files$List] */
     public static final Object listAllFiles$runIt$15(GoogleDrive googleDrive, String str, String str2, Continuation<?> continuation) throws Throwable {
         ArrayList arrayList = new ArrayList();
         Drive drive = googleDrive.googleDriveService;
@@ -1533,18 +1533,18 @@ public final class GoogleDrive {
         return googleDrive.logAllFiles(z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:30:0x0070  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:37:0x0083, code lost:
+    /* WARN: Code duplicated, block: B:30:0x0070  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:37:0x0083, code lost:
     
         if (logAllFiles$runIt$17(r7, r0) == r1) goto L38;
      */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r8v0, types: [boolean] */
-    /* JADX WARN: Type inference failed for: r8v1, types: [kotlinx.coroutines.sync.Mutex] */
-    /* JADX WARN: Type inference failed for: r8v13 */
-    /* JADX WARN: Type inference failed for: r8v14 */
-    /* JADX WARN: Type inference failed for: r8v5, types: [kotlinx.coroutines.sync.Mutex] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r8v0, types: [boolean] */
+    /* WARN: Type inference failed for: r8v1, types: [kotlinx.coroutines.sync.Mutex] */
+    /* WARN: Type inference failed for: r8v13 */
+    /* WARN: Type inference failed for: r8v14 */
+    /* WARN: Type inference failed for: r8v5, types: [kotlinx.coroutines.sync.Mutex] */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -1619,8 +1619,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public static final Object logAllFiles$runIt$17(GoogleDrive googleDrive, Continuation<?> continuation) throws Throwable {
         GoogleDrive$logAllFiles$runIt$1 googleDrive$logAllFiles$runIt$1;
         GoogleDrive googleDrive2;
@@ -1674,7 +1674,7 @@ public final class GoogleDrive {
         return googleDrive.createOrUpdateFileByInputStreamContent(str, inputStreamContent, z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public final Object createOrUpdateFileByInputStreamContent(String str, InputStreamContent inputStreamContent, boolean z, Continuation<?> continuation) throws Throwable {
         C02301 c02301;
         Mutex mutex = null;
@@ -1764,8 +1764,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public static final Object createOrUpdateFileByInputStreamContent$runIt$20(GoogleDrive googleDrive, String str, InputStreamContent inputStreamContent, Continuation<?> continuation) throws Throwable {
         GoogleDrive$createOrUpdateFileByInputStreamContent$runIt$1 googleDrive$createOrUpdateFileByInputStreamContent$runIt$1;
         Drive.Files files;
@@ -1841,7 +1841,7 @@ public final class GoogleDrive {
         return googleDrive.createOrUpdateFileByFilenameAndInputStream(str, byteArrayInputStream, z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public final Object createOrUpdateFileByFilenameAndInputStream(String str, ByteArrayInputStream byteArrayInputStream, boolean z, Continuation<?> continuation) throws Throwable {
         C02291 c02291;
         Mutex mutex = null;
@@ -1931,7 +1931,7 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Object createOrUpdateFileByFilenameAndInputStream$runIt$22(ByteArrayInputStream byteArrayInputStream, GoogleDrive googleDrive, String str, Continuation<?> continuation) throws Throwable {
         return googleDrive.createOrUpdateFileByInputStreamContent(str, new InputStreamContent("application/octet-stream", byteArrayInputStream), false, continuation);
     }
@@ -1943,7 +1943,7 @@ public final class GoogleDrive {
         return googleDrive.getFileOutputStreamByFilename(str, z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public final Object getFileOutputStreamByFilename(String str, boolean z, Continuation<?> continuation) throws Throwable {
         C02351 c02351;
         Mutex mutex = null;
@@ -2031,8 +2031,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public static final Object getFileOutputStreamByFilename$runIt$24(GoogleDrive googleDrive, String str, Continuation<?> continuation) throws Throwable {
         GoogleDrive$getFileOutputStreamByFilename$runIt$1 googleDrive$getFileOutputStreamByFilename$runIt$1;
         GoogleDrive googleDrive2;
@@ -2084,7 +2084,7 @@ public final class GoogleDrive {
         return googleDrive.getFilesByFilenameContainingSubstring(str, z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public final Object getFilesByFilenameContainingSubstring(String str, boolean z, Continuation<?> continuation) throws Throwable {
         C02371 c02371;
         Mutex mutex = null;
@@ -2172,7 +2172,7 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Object getFilesByFilenameContainingSubstring$runIt$26(GoogleDrive googleDrive, String str, Continuation<?> continuation) throws Throwable {
         return listAllFiles$default(googleDrive, "name contains '" + str + "'", null, false, continuation, 2, null);
     }
@@ -2184,7 +2184,7 @@ public final class GoogleDrive {
         return googleDrive.getFilesByFilename(str, z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public final Object getFilesByFilename(String str, boolean z, Continuation<?> continuation) throws Throwable {
         C02361 c02361;
         Mutex mutex = null;
@@ -2272,7 +2272,7 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Object getFilesByFilename$runIt$28(GoogleDrive googleDrive, String str, Continuation<?> continuation) throws Throwable {
         return listAllFiles$default(googleDrive, "name='" + str + "'", null, false, continuation, 2, null);
     }
@@ -2284,7 +2284,7 @@ public final class GoogleDrive {
         return googleDrive.uploadByteArrayToFilename(str, bArr, z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public final Object uploadByteArrayToFilename(String str, byte[] bArr, boolean z, Continuation<?> continuation) throws Throwable {
         C02451 c02451;
         Mutex mutex = null;
@@ -2374,7 +2374,7 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Object uploadByteArrayToFilename$runIt$30(GoogleDrive googleDrive, String str, byte[] bArr, Continuation<?> continuation) throws Throwable {
         return googleDrive.createOrUpdateFileByFilenameAndInputStream(str, new ByteArrayInputStream(bArr), false, continuation);
     }
@@ -2386,7 +2386,7 @@ public final class GoogleDrive {
         return googleDrive.downloadByteArrayFromFilename(str, z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public final Object downloadByteArrayFromFilename(String str, boolean z, Continuation<? super byte[]> continuation) throws Throwable {
         C02341 c02341;
         Mutex mutex = null;
@@ -2474,8 +2474,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public static final Object downloadByteArrayFromFilename$runIt$32(GoogleDrive googleDrive, String str, Continuation<? super byte[]> continuation) throws Throwable {
         GoogleDrive$downloadByteArrayFromFilename$runIt$1 googleDrive$downloadByteArrayFromFilename$runIt$1;
         if (continuation instanceof GoogleDrive$downloadByteArrayFromFilename$runIt$1) {
@@ -2518,7 +2518,7 @@ public final class GoogleDrive {
         return googleDrive.downloadByteArrayFromFileId(str, z, continuation);
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public final Object downloadByteArrayFromFileId(String str, boolean z, Continuation<? super byte[]> continuation) throws Throwable {
         C02331 c02331;
         Mutex mutex = null;
@@ -2606,7 +2606,7 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Object downloadByteArrayFromFileId$runIt$34(GoogleDrive googleDrive, String str, Continuation<? super byte[]> continuation) throws IOException {
         ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
         Drive drive = googleDrive.googleDriveService;
@@ -2617,7 +2617,7 @@ public final class GoogleDrive {
         return byteArray;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void setupGoogleSignInAccount(GoogleSignInAccount googleSignInAccount) {
         DaijishouApplication.WrappedLogger wrappedLogger = null;
         try {
@@ -2641,8 +2641,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$setupGoogleSignInAccount$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$setupGoogleSignInAccount$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive$setupGoogleSignInAccount$1", f = "GoogleDrive.kt", i = {0, 1}, l = {464, 465, 489, 492}, m = "invokeSuspendImpl", n = {"$this$launch", "$this$launch"}, s = {"L$0", "L$0"})
     final class C02441 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -2652,7 +2652,7 @@ public final class GoogleDrive {
         Object L$1;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02441(GoogleAccountCredential googleAccountCredential, GoogleSignInAccount googleSignInAccount, Continuation<?> continuation) {
             super(2, continuation);
             this.$googleAccountCredential = googleAccountCredential;
@@ -2683,12 +2683,12 @@ public final class GoogleDrive {
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:33:0x00be  */
-        /* JADX WARN: Code duplicated, block: B:34:0x00bf A[Catch: Exception -> 0x0032, TryCatch #0 {Exception -> 0x0032, blocks: (B:8:0x0020, B:12:0x002d, B:41:0x00fb, B:17:0x003d, B:31:0x00ba, B:38:0x00e8, B:34:0x00bf, B:36:0x00c5, B:37:0x00c9, B:20:0x0048, B:26:0x00a7, B:28:0x00ab, B:23:0x0056), top: B:54:0x0016 }] */
-        /* JADX WARN: Code duplicated, block: B:36:0x00c5 A[Catch: Exception -> 0x0032, TryCatch #0 {Exception -> 0x0032, blocks: (B:8:0x0020, B:12:0x002d, B:41:0x00fb, B:17:0x003d, B:31:0x00ba, B:38:0x00e8, B:34:0x00bf, B:36:0x00c5, B:37:0x00c9, B:20:0x0048, B:26:0x00a7, B:28:0x00ab, B:23:0x0056), top: B:54:0x0016 }] */
-        /* JADX WARN: Code duplicated, block: B:40:0x00fa  */
-        /* JADX WARN: Code duplicated, block: B:41:0x00fb A[Catch: Exception -> 0x0032, TRY_LEAVE, TryCatch #0 {Exception -> 0x0032, blocks: (B:8:0x0020, B:12:0x002d, B:41:0x00fb, B:17:0x003d, B:31:0x00ba, B:38:0x00e8, B:34:0x00bf, B:36:0x00c5, B:37:0x00c9, B:20:0x0048, B:26:0x00a7, B:28:0x00ab, B:23:0x0056), top: B:54:0x0016 }] */
-        /* JADX WARN: Code restructure failed: missing block: B:42:0x0116, code lost:
+        /* WARN: Code duplicated, block: B:33:0x00be  */
+        /* WARN: Code duplicated, block: B:34:0x00bf A[Catch: Exception -> 0x0032, TryCatch #0 {Exception -> 0x0032, blocks: (B:8:0x0020, B:12:0x002d, B:41:0x00fb, B:17:0x003d, B:31:0x00ba, B:38:0x00e8, B:34:0x00bf, B:36:0x00c5, B:37:0x00c9, B:20:0x0048, B:26:0x00a7, B:28:0x00ab, B:23:0x0056), top: B:54:0x0016 }] */
+        /* WARN: Code duplicated, block: B:36:0x00c5 A[Catch: Exception -> 0x0032, TryCatch #0 {Exception -> 0x0032, blocks: (B:8:0x0020, B:12:0x002d, B:41:0x00fb, B:17:0x003d, B:31:0x00ba, B:38:0x00e8, B:34:0x00bf, B:36:0x00c5, B:37:0x00c9, B:20:0x0048, B:26:0x00a7, B:28:0x00ab, B:23:0x0056), top: B:54:0x0016 }] */
+        /* WARN: Code duplicated, block: B:40:0x00fa  */
+        /* WARN: Code duplicated, block: B:41:0x00fb A[Catch: Exception -> 0x0032, TRY_LEAVE, TryCatch #0 {Exception -> 0x0032, blocks: (B:8:0x0020, B:12:0x002d, B:41:0x00fb, B:17:0x003d, B:31:0x00ba, B:38:0x00e8, B:34:0x00bf, B:36:0x00c5, B:37:0x00c9, B:20:0x0048, B:26:0x00a7, B:28:0x00ab, B:23:0x0056), top: B:54:0x0016 }] */
+        /* WARN: Code restructure failed: missing block: B:42:0x0116, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.google_drive.GoogleDrive.C02441.AnonymousClass2(r17.this$0, r17.$googleSignInAccount, null), r17) == r3) goto L43;
          */
@@ -2800,8 +2800,8 @@ public final class GoogleDrive {
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$setupGoogleSignInAccount$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: GoogleDrive.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$setupGoogleSignInAccount$1$2, reason: invalid class name */
+        /* INFO: compiled from: GoogleDrive.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive$setupGoogleSignInAccount$1$2", f = "GoogleDrive.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -2810,7 +2810,7 @@ public final class GoogleDrive {
             int label;
             final /* synthetic */ GoogleDrive this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(GoogleDrive googleDrive, GoogleSignInAccount googleSignInAccount, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = googleDrive;
@@ -2862,8 +2862,8 @@ public final class GoogleDrive {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$handleSignInIntent$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: GoogleDrive.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.google_drive.GoogleDrive$handleSignInIntent$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: GoogleDrive.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "googleSignInAccount", "Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02381 extends Lambda<Unit> implements Function1<GoogleSignInAccount, Unit> {
         C02381() {
@@ -2876,7 +2876,7 @@ public final class GoogleDrive {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(GoogleSignInAccount googleSignInAccount) {
             Intrinsics.checkNotNullParameter(googleSignInAccount, "googleSignInAccount");
             try {
@@ -2904,13 +2904,13 @@ public final class GoogleDrive {
         GoogleSignIn.getSignedInAccountFromIntent(data).addOnSuccessListener(new GoogleDrive$$ExternalSyntheticLambda1(new C02381())).addOnFailureListener(new GoogleDrive$$ExternalSyntheticLambda2(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void handleSignInIntent$lambda$36(Function1 tmp0, Object obj) {
         Intrinsics.checkNotNullParameter(tmp0, "$tmp0");
         tmp0.invoke(obj);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void handleSignInIntent$lambda$37(GoogleDrive this$0, Exception e) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(e, "e");

@@ -6,7 +6,7 @@ import java.io.UncheckedIOException;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.function.Uncheck;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UncheckedFilterOutputStream extends FilterOutputStream {
     /* synthetic */ UncheckedFilterOutputStream(Builder builder, AnonymousClass1 anonymousClass1) throws IOException {
         this(builder);
@@ -32,7 +32,7 @@ public final class UncheckedFilterOutputStream extends FilterOutputStream {
         Uncheck.run(new UncheckedFilterOutputStream$$ExternalSyntheticLambda4(this));
     }
 
-    /* JADX INFO: renamed from: lambda$close$0$org-apache-commons-io-output-UncheckedFilterOutputStream, reason: not valid java name */
+    /* INFO: renamed from: lambda$close$0$org-apache-commons-io-output-UncheckedFilterOutputStream, reason: not valid java name */
     /* synthetic */ void m5623x705c6664() throws IOException {
         super.close();
     }
@@ -42,12 +42,12 @@ public final class UncheckedFilterOutputStream extends FilterOutputStream {
         Uncheck.run(new UncheckedFilterOutputStream$$ExternalSyntheticLambda3(this));
     }
 
-    /* JADX INFO: renamed from: lambda$flush$1$org-apache-commons-io-output-UncheckedFilterOutputStream, reason: not valid java name */
+    /* INFO: renamed from: lambda$flush$1$org-apache-commons-io-output-UncheckedFilterOutputStream, reason: not valid java name */
     /* synthetic */ void m5624x3ee88f7() throws IOException {
         super.flush();
     }
 
-    /* JADX INFO: renamed from: lambda$write$2$org-apache-commons-io-output-UncheckedFilterOutputStream, reason: not valid java name */
+    /* INFO: renamed from: lambda$write$2$org-apache-commons-io-output-UncheckedFilterOutputStream, reason: not valid java name */
     /* synthetic */ void m5625x6026fe5b(byte[] bArr) throws IOException {
         super.write(bArr);
     }
@@ -57,7 +57,7 @@ public final class UncheckedFilterOutputStream extends FilterOutputStream {
         Uncheck.accept(new UncheckedFilterOutputStream$$ExternalSyntheticLambda1(this), bArr);
     }
 
-    /* JADX INFO: renamed from: lambda$write$3$org-apache-commons-io-output-UncheckedFilterOutputStream, reason: not valid java name */
+    /* INFO: renamed from: lambda$write$3$org-apache-commons-io-output-UncheckedFilterOutputStream, reason: not valid java name */
     /* synthetic */ void m5626xed14157a(byte[] bArr, int i, int i2) throws IOException {
         super.write(bArr, i, i2);
     }
@@ -67,7 +67,7 @@ public final class UncheckedFilterOutputStream extends FilterOutputStream {
         Uncheck.accept(new UncheckedFilterOutputStream$$ExternalSyntheticLambda2(this), bArr, Integer.valueOf(i), Integer.valueOf(i2));
     }
 
-    /* JADX INFO: renamed from: lambda$write$4$org-apache-commons-io-output-UncheckedFilterOutputStream, reason: not valid java name */
+    /* INFO: renamed from: lambda$write$4$org-apache-commons-io-output-UncheckedFilterOutputStream, reason: not valid java name */
     /* synthetic */ void m5627x7a012c99(int i) throws IOException {
         super.write(i);
     }

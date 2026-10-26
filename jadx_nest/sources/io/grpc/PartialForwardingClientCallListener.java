@@ -2,7 +2,7 @@ package io.grpc;
 
 import com.google.common.base.MoreObjects;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 abstract class PartialForwardingClientCallListener<RespT> extends ClientCall.Listener<RespT> {
     protected abstract ClientCall.Listener<?> delegate();
 

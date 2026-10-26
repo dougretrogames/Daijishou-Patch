@@ -1,6 +1,6 @@
 package net.lingala.zip4j.model;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Zip64ExtendedInfo extends ZipHeader {
     private int size;
     private long compressedSize = -1;

@@ -16,7 +16,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.util.StringUtils;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransferConfig {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$transport$TransferConfig$FsckMode = null;
     private static final String FSCK = "fsck";
@@ -48,7 +48,7 @@ public class TransferConfig {
         WARN,
         IGNORE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static FsckMode[] valuesCustom() {
             FsckMode[] fsckModeArrValuesCustom = values();
             int length = fsckModeArrValuesCustom.length;
@@ -86,7 +86,7 @@ public class TransferConfig {
 
         final String name;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static ProtocolVersion[] valuesCustom() {
             ProtocolVersion[] protocolVersionArrValuesCustom = values();
             int length = protocolVersionArrValuesCustom.length;
@@ -235,7 +235,7 @@ public class TransferConfig {
         return new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.TransferConfig$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.TransferConfig$1, reason: invalid class name */
     class AnonymousClass1 implements RefFilter {
         AnonymousClass1() {
         }

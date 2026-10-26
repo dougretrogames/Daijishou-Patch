@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import org.eclipse.jgit.storage.pack.PackStatistics;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PostUploadHookChain implements PostUploadHook {
     private final List<PostUploadHook> hooks;
 

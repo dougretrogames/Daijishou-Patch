@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TracingConfig {
     public static final int CATEGORIES_ALL = 1;
     public static final int CATEGORIES_ANDROID_WEBVIEW = 2;

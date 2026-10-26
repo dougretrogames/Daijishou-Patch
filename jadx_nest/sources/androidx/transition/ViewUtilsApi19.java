@@ -7,7 +7,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewUtilsApi19 {
     private static final String TAG = "ViewUtilsApi19";
     private static final int VISIBILITY_MASK = 12;

@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.List;
 import org.commonmark.parser.Parser;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class MarkwonBuilderImpl implements Markwon.Builder {
     private final Context context;
     private Markwon.TextSetter textSetter;

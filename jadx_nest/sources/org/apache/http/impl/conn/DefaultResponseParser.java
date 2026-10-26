@@ -17,7 +17,7 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class DefaultResponseParser extends AbstractMessageParser<HttpMessage> {
     private final CharArrayBuffer lineBuf;

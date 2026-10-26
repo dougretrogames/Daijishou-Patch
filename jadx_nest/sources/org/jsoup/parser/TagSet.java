@@ -11,7 +11,7 @@ import org.eclipse.jgit.lib.ConfigConstants;
 import org.jsoup.helper.Validate;
 import org.jsoup.internal.SharedConstants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TagSet {
     static final TagSet HtmlTagSet = initHtmlDefault();
     private ArrayList<Consumer<Tag>> customizers;

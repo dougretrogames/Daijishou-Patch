@@ -22,7 +22,7 @@ import java.util.RandomAccess;
 import java.util.concurrent.CopyOnWriteArrayList;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Lists {
     private Lists() {
@@ -201,7 +201,7 @@ public final class Lists {
             return this.fromList.isEmpty();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Lists$TransformingSequentialList$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Lists$TransformingSequentialList$1, reason: invalid class name */
         class AnonymousClass1 extends TransformedListIterator<F, T> {
             AnonymousClass1(ListIterator backingIterator) {
                 super(backingIterator);
@@ -246,7 +246,7 @@ public final class Lists {
             return listIterator();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Lists$TransformingRandomAccessList$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Lists$TransformingRandomAccessList$1, reason: invalid class name */
         class AnonymousClass1 extends TransformedListIterator<F, T> {
             AnonymousClass1(ListIterator backingIterator) {
                 super(backingIterator);
@@ -430,7 +430,7 @@ public final class Lists {
             return (size - 1) - index;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public int reversePosition(int index) {
             int size = size();
             Preconditions.checkPositionIndex(index, size);
@@ -491,7 +491,7 @@ public final class Lists {
             return new AnonymousClass1(this.forwardList.listIterator(reversePosition(index)));
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Lists$ReverseList$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Lists$ReverseList$1, reason: invalid class name */
         class AnonymousClass1 implements ListIterator<T> {
             boolean canRemoveOrSet;
             final /* synthetic */ ListIterator val$forwardIterator;
@@ -690,8 +690,8 @@ public final class Lists {
         return anonymousClass2.subList(fromIndex, toIndex);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Lists$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Lists$1, reason: invalid class name */
     class AnonymousClass1<E> extends RandomAccessListWrapper<E> {
         private static final long serialVersionUID = 0;
 
@@ -705,8 +705,8 @@ public final class Lists {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Lists$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Lists$2, reason: invalid class name */
     class AnonymousClass2<E> extends AbstractListWrapper<E> {
         private static final long serialVersionUID = 0;
 

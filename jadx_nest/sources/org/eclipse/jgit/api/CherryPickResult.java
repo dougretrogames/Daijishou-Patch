@@ -6,7 +6,7 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.merge.ResolveMerger;
 import org.eclipse.jgit.revwalk.RevCommit;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CherryPickResult {
     public static final CherryPickResult CONFLICT = new CherryPickResult(CherryPickStatus.CONFLICTING);
     private final List<Ref> cherryPickedRefs;
@@ -14,8 +14,8 @@ public class CherryPickResult {
     private final RevCommit newHead;
     private final CherryPickStatus status;
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     public static class CherryPickStatus {
         public static final CherryPickStatus CONFLICTING;
         private static final /* synthetic */ CherryPickStatus[] ENUM$VALUES;
@@ -42,7 +42,7 @@ public class CherryPickResult {
             super(str, i);
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.CherryPickResult$CherryPickStatus$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.CherryPickResult$CherryPickStatus$1, reason: invalid class name */
         final enum AnonymousClass1 extends CherryPickStatus {
             AnonymousClass1(String str, int i) {
                 super(str, i, null);
@@ -64,7 +64,7 @@ public class CherryPickResult {
             ENUM$VALUES = new CherryPickStatus[]{anonymousClass1, anonymousClass2, anonymousClass3};
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.CherryPickResult$CherryPickStatus$2, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.CherryPickResult$CherryPickStatus$2, reason: invalid class name */
         final enum AnonymousClass2 extends CherryPickStatus {
             AnonymousClass2(String str, int i) {
                 super(str, i, null);
@@ -76,7 +76,7 @@ public class CherryPickResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.CherryPickResult$CherryPickStatus$3, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.CherryPickResult$CherryPickStatus$3, reason: invalid class name */
         final enum AnonymousClass3 extends CherryPickStatus {
             AnonymousClass3(String str, int i) {
                 super(str, i, null);

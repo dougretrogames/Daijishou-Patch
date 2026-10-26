@@ -11,7 +11,7 @@ import java.nio.ByteOrder;
 import java.nio.charset.Charset;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable
 @ElementTypesAreNonnullByDefault
 final class Murmur3_32HashFunction extends AbstractHashFunction implements Serializable {
@@ -25,17 +25,17 @@ final class Murmur3_32HashFunction extends AbstractHashFunction implements Seria
     static final HashFunction MURMUR3_32_FIXED = new Murmur3_32HashFunction(0, true);
     static final HashFunction GOOD_FAST_HASH_32 = new Murmur3_32HashFunction(Hashing.GOOD_FAST_HASH_SEED, true);
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static long charToThreeUtf8Bytes(char c) {
         return ((long) (c >>> '\f')) | 224 | ((long) ((((c >>> 6) & 63) | 128) << 8)) | ((long) (((c & '?') | 128) << 16));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static long charToTwoUtf8Bytes(char c) {
         return ((long) (c >>> 6)) | 192 | ((long) (((c & '?') | 128) << 8));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static long codePointToFourUtf8Bytes(int codePoint) {
         return ((long) (codePoint >>> 18)) | 240 | ((((long) ((codePoint >>> 12) & 63)) | 128) << 8) | ((((long) ((codePoint >>> 6) & 63)) | 128) << 16) | ((((long) (codePoint & 63)) | 128) << 24);
     }
@@ -182,22 +182,22 @@ final class Murmur3_32HashFunction extends AbstractHashFunction implements Seria
         return fmix(mixK1(i) ^ iMixH1, len);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int getIntLittleEndian(byte[] input, int offset) {
         return Ints.fromBytes(input[offset + 3], input[offset + 2], input[offset + 1], input[offset]);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int mixK1(int k1) {
         return Integer.rotateLeft(k1 * (-862048943), 15) * C2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int mixH1(int h1, int k1) {
         return (Integer.rotateLeft(h1 ^ k1, 13) * 5) - 430675100;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static HashCode fmix(int h1, int length) {
         int i = h1 ^ length;
         int i2 = (i ^ (i >>> 16)) * (-2048144789);

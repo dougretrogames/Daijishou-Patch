@@ -6,7 +6,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.util.SparseArray;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ColorFilterCache {
     private static final SparseArray<ColorFilterCache> sColorToFiltersMap = new SparseArray<>();
     private final PorterDuffColorFilter[] mFilters = new PorterDuffColorFilter[256];

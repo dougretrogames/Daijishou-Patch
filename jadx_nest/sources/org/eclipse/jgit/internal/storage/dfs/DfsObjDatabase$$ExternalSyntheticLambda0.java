@@ -4,8 +4,8 @@ import java.io.IOException;
 import org.eclipse.jgit.internal.storage.file.PackBitmapIndexBuilder;
 import org.eclipse.jgit.internal.storage.pack.PackBitmapIndexWriter;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class DfsObjDatabase$$ExternalSyntheticLambda0 implements PackBitmapIndexWriter {
     public final /* synthetic */ DfsObjDatabase f$0;
     public final /* synthetic */ DfsPackDescription f$1;

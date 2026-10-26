@@ -13,7 +13,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum ShutdownHook {
     INSTANCE;
 
@@ -25,7 +25,7 @@ public enum ShutdownHook {
         void onShutdown();
     }
 
-    /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+    /* INFO: renamed from: values, reason: to resolve conflict with enum method */
     public static ShutdownHook[] valuesCustom() {
         ShutdownHook[] shutdownHookArrValuesCustom = values();
         int length = shutdownHookArrValuesCustom.length;
@@ -38,7 +38,7 @@ public enum ShutdownHook {
         CleanupService.getInstance().register(new ShutdownHook$$ExternalSyntheticLambda1(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void cleanup() {
         if (this.shutdownInProgress.getAndSet(true)) {
             return;
@@ -57,7 +57,7 @@ public enum ShutdownHook {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$1$org-eclipse-jgit-internal-util-ShutdownHook, reason: not valid java name */
+    /* INFO: renamed from: lambda$1$org-eclipse-jgit-internal-util-ShutdownHook, reason: not valid java name */
     /* synthetic */ Object m5769lambda$1$orgeclipsejgitinternalutilShutdownHook() throws Exception {
         doCleanup();
         return null;
@@ -67,7 +67,7 @@ public enum ShutdownHook {
         this.listeners.parallelStream().forEach(new ShutdownHook$$ExternalSyntheticLambda0(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void notify(Listener listener) {
         LOG.debug(JGitText.get().shutdownCleanup, listener);
         try {

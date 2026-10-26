@@ -9,7 +9,7 @@ import org.eclipse.jgit.revwalk.RevObject;
 import org.eclipse.jgit.revwalk.RevTag;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class DfsRefUpdate extends RefUpdate {
     private Ref dstRef;
     private final DfsRefDatabase refdb;
@@ -24,13 +24,13 @@ final class DfsRefUpdate extends RefUpdate {
         this.refdb = dfsRefDatabase;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.eclipse.jgit.lib.RefUpdate
     public DfsRefDatabase getRefDatabase() {
         return this.refdb;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.eclipse.jgit.lib.RefUpdate
     public DfsRepository getRepository() {
         return this.refdb.getRepository();

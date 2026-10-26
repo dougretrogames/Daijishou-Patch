@@ -9,7 +9,7 @@ import android.text.style.LeadingMarginSpan;
 import io.noties.markwon.core.MarkwonTheme;
 import io.noties.markwon.utils.LeadingMarginUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class BulletListItemSpan implements LeadingMarginSpan {
     private static final boolean IS_NOUGAT = false;
     private final int level;

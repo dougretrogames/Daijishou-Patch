@@ -14,7 +14,7 @@ import org.apache.commons.io.Charsets;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.charset.CharsetDecoders;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class WriterOutputStream extends OutputStream {
     private static final int BUFFER_SIZE = 8192;
     private final CharsetDecoder decoder;

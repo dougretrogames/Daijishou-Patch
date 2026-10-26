@@ -1,7 +1,7 @@
 package com.google.android.material.sidesheet;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SideSheetBehavior$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ SideSheetBehavior f$0;
     public final /* synthetic */ int f$1;

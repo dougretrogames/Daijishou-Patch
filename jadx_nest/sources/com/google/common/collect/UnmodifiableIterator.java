@@ -2,7 +2,7 @@ package com.google.common.collect;
 
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class UnmodifiableIterator<E> implements Iterator<E> {
     protected UnmodifiableIterator() {

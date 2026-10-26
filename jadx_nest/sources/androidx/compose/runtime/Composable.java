@@ -10,8 +10,8 @@ import kotlin.annotation.AnnotationRetention;
 import kotlin.annotation.AnnotationTarget;
 import kotlin.annotation.MustBeDocumented;
 
-/* JADX INFO: compiled from: Composable.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Composable.kt */
+/* INFO: loaded from: classes.dex */
 @Target({ElementType.METHOD, ElementType.TYPE_PARAMETER, ElementType.TYPE_USE})
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.FUNCTION, AnnotationTarget.TYPE, AnnotationTarget.TYPE_PARAMETER, AnnotationTarget.PROPERTY_GETTER})
 @Retention(RetentionPolicy.CLASS)

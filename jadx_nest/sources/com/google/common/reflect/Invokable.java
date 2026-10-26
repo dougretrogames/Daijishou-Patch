@@ -15,7 +15,7 @@ import java.lang.reflect.TypeVariable;
 import java.util.Arrays;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class Invokable<T, R> implements AnnotatedElement, Member {
     private static final boolean ANNOTATED_TYPE_EXISTS = initAnnotatedTypeExists();
@@ -200,7 +200,7 @@ public abstract class Invokable<T, R> implements AnnotatedElement, Member {
         return returning(TypeToken.of((Class) returnType));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public final <R1 extends R> Invokable<T, R1> returning(TypeToken<R1> returnType) {
         if (returnType.isSupertypeOf(getReturnType())) {
             return this;

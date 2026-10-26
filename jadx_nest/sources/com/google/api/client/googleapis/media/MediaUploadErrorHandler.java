@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class MediaUploadErrorHandler implements HttpUnsuccessfulResponseHandler, HttpIOExceptionHandler {
     static final Logger LOGGER = Logger.getLogger(MediaUploadErrorHandler.class.getName());
     private final HttpIOExceptionHandler originalIOExceptionHandler;

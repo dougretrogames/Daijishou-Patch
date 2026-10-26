@@ -6,7 +6,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @DoNotMock("Use FakeTimeLimiter")
 @ElementTypesAreNonnullByDefault
 public interface TimeLimiter {

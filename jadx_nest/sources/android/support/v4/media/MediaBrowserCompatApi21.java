@@ -6,7 +6,7 @@ import android.media.browse.MediaBrowser;
 import android.os.Bundle;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MediaBrowserCompatApi21 {
     static final String NULL_MEDIA_ITEM_ID = "android.support.v4.media.MediaBrowserCompat.NULL_MEDIA_ITEM";
 

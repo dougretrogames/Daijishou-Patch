@@ -22,7 +22,7 @@ import java.util.Map;
 import java.util.concurrent.Executor;
 import org.eclipse.jgit.lib.CommitConfig$$ExternalSyntheticBackport0;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FontsContractCompat {
 
     @Deprecated

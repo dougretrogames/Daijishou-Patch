@@ -9,8 +9,8 @@ import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelableSerializer;
 import java.util.Arrays;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class PublicKeyCredential extends AbstractSafeParcelable {
     public static final Parcelable.Creator<PublicKeyCredential> CREATOR = new zzal();
     private final String zza;
@@ -22,7 +22,7 @@ public class PublicKeyCredential extends AbstractSafeParcelable {
     private final AuthenticationExtensionsClientOutputs zzg;
     private final String zzh;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class Builder {
         private String zza;
         private byte[] zzb;

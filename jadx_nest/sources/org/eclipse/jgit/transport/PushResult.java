@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PushResult extends OperationResult {
     private Map<String, RemoteRefUpdate> remoteUpdates = Collections.emptyMap();
 

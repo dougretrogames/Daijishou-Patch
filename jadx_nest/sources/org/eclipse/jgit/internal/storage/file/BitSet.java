@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.file;
 import com.googlecode.javaewah.EWAHCompressedBitmap;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class BitSet {
     private long[] words;
 

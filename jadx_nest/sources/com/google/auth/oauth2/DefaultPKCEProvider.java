@@ -6,7 +6,7 @@ import java.security.SecureRandom;
 import java.util.Base64;
 import org.apache.commons.codec.digest.MessageDigestAlgorithms;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DefaultPKCEProvider implements PKCEProvider {
     private static final int MAX_CODE_VERIFIER_LENGTH = 127;
     private CodeChallenge codeChallenge;

@@ -4,7 +4,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 import androidx.viewpager.widget.ViewPager;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class TabFocusChangeListener implements View.OnFocusChangeListener {
     LeanbackTabLayout mLeanbackTabLayout;
     ViewPager mViewPager;

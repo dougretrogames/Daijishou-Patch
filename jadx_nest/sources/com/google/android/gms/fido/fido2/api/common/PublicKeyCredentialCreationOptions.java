@@ -9,8 +9,8 @@ import com.google.android.gms.common.internal.safeparcel.SafeParcelableSerialize
 import java.util.Arrays;
 import java.util.List;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class PublicKeyCredentialCreationOptions extends RequestOptions {
     public static final Parcelable.Creator<PublicKeyCredentialCreationOptions> CREATOR = new zzak();
     private final PublicKeyCredentialRpEntity zza;
@@ -25,7 +25,7 @@ public class PublicKeyCredentialCreationOptions extends RequestOptions {
     private final AttestationConveyancePreference zzj;
     private final AuthenticationExtensions zzk;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static final class Builder {
         private PublicKeyCredentialRpEntity zza;
         private PublicKeyCredentialUserEntity zzb;

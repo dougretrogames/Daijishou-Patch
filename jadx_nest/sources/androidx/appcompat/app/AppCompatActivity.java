@@ -22,7 +22,7 @@ import androidx.core.os.LocaleListCompat;
 import androidx.fragment.app.FragmentActivity;
 import androidx.savedstate.SavedStateRegistry;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AppCompatActivity extends FragmentActivity implements AppCompatCallback, TaskStackBuilder.SupportParentable, ActionBarDrawerToggle.DelegateProvider {
     private static final String DELEGATE_TAG = "androidx:appcompat";
     private AppCompatDelegate mDelegate;
@@ -83,7 +83,7 @@ public class AppCompatActivity extends FragmentActivity implements AppCompatCall
         initDelegate();
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatActivity$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.AppCompatActivity$1, reason: invalid class name */
     class AnonymousClass1 implements SavedStateRegistry.SavedStateProvider {
         AnonymousClass1() {
         }
@@ -101,7 +101,7 @@ public class AppCompatActivity extends FragmentActivity implements AppCompatCall
         addOnContextAvailableListener(new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatActivity$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.AppCompatActivity$2, reason: invalid class name */
     class AnonymousClass2 implements OnContextAvailableListener {
         AnonymousClass2() {
         }

@@ -5,7 +5,7 @@ import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StringUtils {
     public static boolean equals(CharSequence charSequence, CharSequence charSequence2) {
         if (charSequence == charSequence2) {

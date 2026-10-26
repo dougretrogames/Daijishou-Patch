@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.daijishou_widget.widgets.pin_and_play;
 import androidx.lifecycle.Observer;
 import com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class PinAndPlayWidgetFaceFragment$onCreateView$3$$ExternalSyntheticLambda0 implements Observer {
     public final /* synthetic */ PinAndPlayWidgetFaceFragment f$0;
 

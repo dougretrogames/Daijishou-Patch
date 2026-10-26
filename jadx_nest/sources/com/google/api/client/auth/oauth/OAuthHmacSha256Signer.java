@@ -7,7 +7,7 @@ import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import kotlin.text.Typography;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class OAuthHmacSha256Signer implements OAuthSigner {
     private final String clientSharedSecret;
     private String tokenSharedSecret;

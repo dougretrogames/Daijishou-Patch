@@ -37,7 +37,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SideSheetBehavior<V extends View> extends CoordinatorLayout.Behavior<V> implements Sheet<SideSheetCallback> {
     private static final int DEFAULT_ACCESSIBILITY_PANE_TITLE = R.string.side_sheet_accessibility_pane_title;
     private static final int DEF_STYLE_RES = R.style.Widget_Material3_SideSheet;
@@ -455,7 +455,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.Behavio
         }
     }
 
-    /* JADX INFO: renamed from: lambda$setState$0$com-google-android-material-sidesheet-SideSheetBehavior, reason: not valid java name */
+    /* INFO: renamed from: lambda$setState$0$com-google-android-material-sidesheet-SideSheetBehavior, reason: not valid java name */
     /* synthetic */ void m3327xc0f1d0a9(int i) {
         V v = this.viewRef.get();
         if (v != null) {
@@ -547,7 +547,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.Behavio
         return this.velocityTracker.getXVelocity();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void startSettling(View view, int i, boolean z) {
         if (isSettling(view, i, z)) {
             setStateInternal(2);
@@ -583,7 +583,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.Behavio
         return this.viewDragHelper;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.sidesheet.SideSheetBehavior$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.sidesheet.SideSheetBehavior$1, reason: invalid class name */
     class AnonymousClass1 extends ViewDragHelper.Callback {
         AnonymousClass1() {
         }
@@ -634,7 +634,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.Behavio
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int calculateTargetStateOnViewReleased(View view, float f, float f2) {
         if (isExpandingOutwards(f)) {
             return 3;
@@ -653,7 +653,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.Behavio
         return this.sheetDelegate.isExpandingOutwards(f);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void dispatchOnSlide(View view, int i) {
         if (this.callbacks.isEmpty()) {
             return;
@@ -762,7 +762,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.Behavio
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.sidesheet.SideSheetBehavior$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.sidesheet.SideSheetBehavior$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         AnonymousClass2() {
         }
@@ -786,7 +786,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.Behavio
         return new SideSheetBehavior$$ExternalSyntheticLambda2(this, marginLayoutParams, this.sheetDelegate.getCoplanarSiblingAdjacentMargin(marginLayoutParams), coplanarSiblingView);
     }
 
-    /* JADX INFO: renamed from: lambda$getCoplanarFinishAnimatorUpdateListener$1$com-google-android-material-sidesheet-SideSheetBehavior, reason: not valid java name */
+    /* INFO: renamed from: lambda$getCoplanarFinishAnimatorUpdateListener$1$com-google-android-material-sidesheet-SideSheetBehavior, reason: not valid java name */
     /* synthetic */ void m3326xc3af8fb4(ViewGroup.MarginLayoutParams marginLayoutParams, int i, View view, ValueAnimator valueAnimator) {
         this.sheetDelegate.updateCoplanarSiblingAdjacentMargin(marginLayoutParams, AnimationUtils.lerp(i, 0, valueAnimator.getAnimatedFraction()));
         view.requestLayout();
@@ -813,7 +813,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.Behavio
         StateSettlingTracker() {
         }
 
-        /* JADX INFO: renamed from: lambda$new$0$com-google-android-material-sidesheet-SideSheetBehavior$StateSettlingTracker, reason: not valid java name */
+        /* INFO: renamed from: lambda$new$0$com-google-android-material-sidesheet-SideSheetBehavior$StateSettlingTracker, reason: not valid java name */
         /* synthetic */ void m3328xe5f914a3() {
             this.isContinueSettlingRunnablePosted = false;
             if (SideSheetBehavior.this.viewDragHelper != null && SideSheetBehavior.this.viewDragHelper.continueSettling(true)) {
@@ -860,12 +860,12 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.Behavio
             parcel.writeInt(this.state);
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.sidesheet.SideSheetBehavior$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.sidesheet.SideSheetBehavior$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);
@@ -919,7 +919,7 @@ public class SideSheetBehavior<V extends View> extends CoordinatorLayout.Behavio
         return new SideSheetBehavior$$ExternalSyntheticLambda1(this, i);
     }
 
-    /* JADX INFO: renamed from: lambda$createAccessibilityViewCommandForState$2$com-google-android-material-sidesheet-SideSheetBehavior, reason: not valid java name */
+    /* INFO: renamed from: lambda$createAccessibilityViewCommandForState$2$com-google-android-material-sidesheet-SideSheetBehavior, reason: not valid java name */
     /* synthetic */ boolean m3325x564aa398(int i, View view, AccessibilityViewCommand.CommandArguments commandArguments) {
         setState(i);
         return true;

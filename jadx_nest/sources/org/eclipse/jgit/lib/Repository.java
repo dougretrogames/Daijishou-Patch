@@ -52,7 +52,7 @@ import org.eclipse.jgit.util.SystemReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class Repository implements AutoCloseable {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private final FS fs;
@@ -234,69 +234,69 @@ public abstract class Repository implements AutoCloseable {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:100:0x0157  */
-    /* JADX WARN: Code duplicated, block: B:102:0x0160  */
-    /* JADX WARN: Code duplicated, block: B:103:0x0163  */
-    /* JADX WARN: Code duplicated, block: B:109:0x0180  */
-    /* JADX WARN: Code duplicated, block: B:113:0x0189  */
-    /* JADX WARN: Code duplicated, block: B:117:0x0198  */
-    /* JADX WARN: Code duplicated, block: B:119:0x01a0  */
-    /* JADX WARN: Code duplicated, block: B:120:0x01a5  */
-    /* JADX WARN: Code duplicated, block: B:122:0x01ab  */
-    /* JADX WARN: Code duplicated, block: B:123:0x01b0  */
-    /* JADX WARN: Code duplicated, block: B:125:0x01b8  */
-    /* JADX WARN: Code duplicated, block: B:127:0x01c0  */
-    /* JADX WARN: Code duplicated, block: B:130:0x01c8  */
-    /* JADX WARN: Code duplicated, block: B:132:0x01ce  */
-    /* JADX WARN: Code duplicated, block: B:138:0x01e2 A[LOOP:4: B:110:0x0183->B:138:0x01e2, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:139:0x01e5  */
-    /* JADX WARN: Code duplicated, block: B:141:0x01ed  */
-    /* JADX WARN: Code duplicated, block: B:143:0x01f5  */
-    /* JADX WARN: Code duplicated, block: B:144:0x01f9  */
-    /* JADX WARN: Code duplicated, block: B:191:0x02b3  */
-    /* JADX WARN: Code duplicated, block: B:264:0x0132 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:265:0x01dc A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:266:0x01c2 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:267:0x01d6 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:268:0x0200 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:273:0x02b6 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:290:0x018d A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:291:0x0186 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:80:0x0113  */
-    /* JADX WARN: Code duplicated, block: B:82:0x0117  */
-    /* JADX WARN: Code duplicated, block: B:83:0x011a  */
-    /* JADX WARN: Code duplicated, block: B:85:0x0122  */
-    /* JADX WARN: Code duplicated, block: B:88:0x012c  */
-    /* JADX WARN: Code duplicated, block: B:91:0x0138  */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r18v0, types: [org.eclipse.jgit.revwalk.RevWalk] */
-    /* JADX WARN: Type inference failed for: r7v0 */
-    /* JADX WARN: Type inference failed for: r7v1, types: [org.eclipse.jgit.revwalk.RevObject] */
-    /* JADX WARN: Type inference failed for: r7v12 */
-    /* JADX WARN: Type inference failed for: r7v13 */
-    /* JADX WARN: Type inference failed for: r7v15 */
-    /* JADX WARN: Type inference failed for: r7v2, types: [org.eclipse.jgit.lib.AnyObjectId] */
-    /* JADX WARN: Type inference failed for: r7v22 */
-    /* JADX WARN: Type inference failed for: r7v23, types: [org.eclipse.jgit.revwalk.RevObject] */
-    /* JADX WARN: Type inference failed for: r7v26 */
-    /* JADX WARN: Type inference failed for: r7v27 */
-    /* JADX WARN: Type inference failed for: r7v29 */
-    /* JADX WARN: Type inference failed for: r7v31 */
-    /* JADX WARN: Type inference failed for: r7v32 */
-    /* JADX WARN: Type inference failed for: r7v33 */
-    /* JADX WARN: Type inference failed for: r7v34 */
-    /* JADX WARN: Type inference failed for: r7v35 */
-    /* JADX WARN: Type inference failed for: r7v36 */
-    /* JADX WARN: Type inference failed for: r7v37 */
-    /* JADX WARN: Type inference failed for: r7v38 */
-    /* JADX WARN: Type inference failed for: r7v39 */
-    /* JADX WARN: Type inference failed for: r7v40 */
-    /* JADX WARN: Type inference failed for: r7v41 */
-    /* JADX WARN: Type inference failed for: r7v5 */
-    /* JADX WARN: Type inference failed for: r7v6 */
-    /* JADX WARN: Type inference failed for: r7v7 */
-    /* JADX WARN: Type inference failed for: r7v8 */
-    /* JADX WARN: Type inference failed for: r7v9, types: [org.eclipse.jgit.lib.AnyObjectId, org.eclipse.jgit.revwalk.RevObject] */
+    /* WARN: Code duplicated, block: B:100:0x0157  */
+    /* WARN: Code duplicated, block: B:102:0x0160  */
+    /* WARN: Code duplicated, block: B:103:0x0163  */
+    /* WARN: Code duplicated, block: B:109:0x0180  */
+    /* WARN: Code duplicated, block: B:113:0x0189  */
+    /* WARN: Code duplicated, block: B:117:0x0198  */
+    /* WARN: Code duplicated, block: B:119:0x01a0  */
+    /* WARN: Code duplicated, block: B:120:0x01a5  */
+    /* WARN: Code duplicated, block: B:122:0x01ab  */
+    /* WARN: Code duplicated, block: B:123:0x01b0  */
+    /* WARN: Code duplicated, block: B:125:0x01b8  */
+    /* WARN: Code duplicated, block: B:127:0x01c0  */
+    /* WARN: Code duplicated, block: B:130:0x01c8  */
+    /* WARN: Code duplicated, block: B:132:0x01ce  */
+    /* WARN: Code duplicated, block: B:138:0x01e2 A[LOOP:4: B:110:0x0183->B:138:0x01e2, LOOP_END] */
+    /* WARN: Code duplicated, block: B:139:0x01e5  */
+    /* WARN: Code duplicated, block: B:141:0x01ed  */
+    /* WARN: Code duplicated, block: B:143:0x01f5  */
+    /* WARN: Code duplicated, block: B:144:0x01f9  */
+    /* WARN: Code duplicated, block: B:191:0x02b3  */
+    /* WARN: Code duplicated, block: B:264:0x0132 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:265:0x01dc A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:266:0x01c2 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:267:0x01d6 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:268:0x0200 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:273:0x02b6 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:290:0x018d A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:291:0x0186 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:80:0x0113  */
+    /* WARN: Code duplicated, block: B:82:0x0117  */
+    /* WARN: Code duplicated, block: B:83:0x011a  */
+    /* WARN: Code duplicated, block: B:85:0x0122  */
+    /* WARN: Code duplicated, block: B:88:0x012c  */
+    /* WARN: Code duplicated, block: B:91:0x0138  */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r18v0, types: [org.eclipse.jgit.revwalk.RevWalk] */
+    /* WARN: Type inference failed for: r7v0 */
+    /* WARN: Type inference failed for: r7v1, types: [org.eclipse.jgit.revwalk.RevObject] */
+    /* WARN: Type inference failed for: r7v12 */
+    /* WARN: Type inference failed for: r7v13 */
+    /* WARN: Type inference failed for: r7v15 */
+    /* WARN: Type inference failed for: r7v2, types: [org.eclipse.jgit.lib.AnyObjectId] */
+    /* WARN: Type inference failed for: r7v22 */
+    /* WARN: Type inference failed for: r7v23, types: [org.eclipse.jgit.revwalk.RevObject] */
+    /* WARN: Type inference failed for: r7v26 */
+    /* WARN: Type inference failed for: r7v27 */
+    /* WARN: Type inference failed for: r7v29 */
+    /* WARN: Type inference failed for: r7v31 */
+    /* WARN: Type inference failed for: r7v32 */
+    /* WARN: Type inference failed for: r7v33 */
+    /* WARN: Type inference failed for: r7v34 */
+    /* WARN: Type inference failed for: r7v35 */
+    /* WARN: Type inference failed for: r7v36 */
+    /* WARN: Type inference failed for: r7v37 */
+    /* WARN: Type inference failed for: r7v38 */
+    /* WARN: Type inference failed for: r7v39 */
+    /* WARN: Type inference failed for: r7v40 */
+    /* WARN: Type inference failed for: r7v41 */
+    /* WARN: Type inference failed for: r7v5 */
+    /* WARN: Type inference failed for: r7v6 */
+    /* WARN: Type inference failed for: r7v7 */
+    /* WARN: Type inference failed for: r7v8 */
+    /* WARN: Type inference failed for: r7v9, types: [org.eclipse.jgit.lib.AnyObjectId, org.eclipse.jgit.revwalk.RevObject] */
     @Nullable
     private Object resolve(RevWalk revWalk, String str) throws IOException {
         String str2;
@@ -1032,7 +1032,7 @@ public abstract class Repository implements AutoCloseable {
         return DirCache.lock(this, new Repository$$ExternalSyntheticLambda0(this));
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-lib-Repository, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-lib-Repository, reason: not valid java name */
     /* synthetic */ void m5779lambda$0$orgeclipsejgitlibRepository(IndexChangedEvent indexChangedEvent) {
         notifyIndexChanged(true);
     }
@@ -1138,7 +1138,7 @@ public abstract class Repository implements AutoCloseable {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:51:0x00aa  */
+    /* WARN: Code duplicated, block: B:51:0x00aa  */
     public static String normalizeBranchName(String str) {
         if (str == null || str.isEmpty()) {
             return "";

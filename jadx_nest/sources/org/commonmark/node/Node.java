@@ -1,6 +1,6 @@
 package org.commonmark.node;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class Node {
     private Node parent = null;
     private Node firstChild = null;

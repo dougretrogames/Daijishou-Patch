@@ -8,7 +8,7 @@ import com.google.api.client.util.Preconditions;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class JsonWebToken {
     private final Header header;
     private final Payload payload;

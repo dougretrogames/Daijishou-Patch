@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.Objects;
 import org.apache.commons.collections4.ComparatorUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NullComparator<E> implements Comparator<E>, Serializable {
     private static final long serialVersionUID = -5820772575483504339L;
     private final Comparator<? super E> nonNullComparator;

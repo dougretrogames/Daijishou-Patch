@@ -2,8 +2,8 @@ package com.magneticchen.daijishou.daijishou_widget.widgets.category;
 
 import com.google.android.material.chip.Chip;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class CategoryWidgetNavFragment$$ExternalSyntheticLambda2 implements Runnable {
     public final /* synthetic */ boolean f$0;
     public final /* synthetic */ CategoryWidgetNavFragment f$1;

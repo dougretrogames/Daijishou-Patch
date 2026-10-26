@@ -9,7 +9,7 @@ import android.view.accessibility.AccessibilityManager;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.ViewConfigurationCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class TooltipCompatHandler implements View.OnLongClickListener, View.OnHoverListener, View.OnAttachStateChangeListener {
     private static final long HOVER_HIDE_TIMEOUT_MS = 15000;
     private static final long HOVER_HIDE_TIMEOUT_SHORT_MS = 3000;
@@ -32,7 +32,7 @@ class TooltipCompatHandler implements View.OnLongClickListener, View.OnHoverList
     public void onViewAttachedToWindow(View view) {
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$androidx-appcompat-widget-TooltipCompatHandler, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$androidx-appcompat-widget-TooltipCompatHandler, reason: not valid java name */
     /* synthetic */ void m6lambda$new$0$androidxappcompatwidgetTooltipCompatHandler() {
         show(false);
     }

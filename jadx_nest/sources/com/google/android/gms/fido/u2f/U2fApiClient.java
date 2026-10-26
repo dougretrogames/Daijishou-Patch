@@ -12,8 +12,8 @@ import com.google.android.gms.fido.u2f.api.common.SignRequestParams;
 import com.google.android.gms.internal.fido.zzx;
 import com.google.android.gms.tasks.Task;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class U2fApiClient extends GoogleApi<Api.ApiOptions.NoOptions> {
     private static final Api.ClientKey zza;

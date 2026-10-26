@@ -11,8 +11,8 @@ import kotlin.annotation.AnnotationTarget;
 import kotlin.annotation.Repeatable;
 import kotlin.jvm.internal.RepeatableContainer;
 
-/* JADX INFO: compiled from: FunctionKeyMeta.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: FunctionKeyMeta.kt */
+/* INFO: loaded from: classes.dex */
 @Target({ElementType.TYPE})
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.CLASS})
 @Retention(RetentionPolicy.RUNTIME)
@@ -23,7 +23,7 @@ import kotlin.jvm.internal.RepeatableContainer;
 @java.lang.annotation.Repeatable(Container.class)
 public @interface FunctionKeyMeta {
 
-    /* JADX INFO: compiled from: FunctionKeyMeta.kt */
+    /* INFO: compiled from: FunctionKeyMeta.kt */
     @Target({ElementType.TYPE})
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.CLASS})

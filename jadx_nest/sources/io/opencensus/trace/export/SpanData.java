@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class SpanData {
     public abstract TimedEvents<Annotation> getAnnotations();
 

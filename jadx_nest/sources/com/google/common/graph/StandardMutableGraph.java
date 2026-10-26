@@ -1,6 +1,6 @@
 package com.google.common.graph;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class StandardMutableGraph<N> extends ForwardingGraph<N> implements MutableGraph<N> {
     private final MutableValueGraph<N, GraphConstants.Presence> backingValueGraph;

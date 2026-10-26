@@ -9,7 +9,7 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.pool.AbstractConnPool;
 import org.apache.http.pool.ConnFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicConnPool extends AbstractConnPool<HttpHost, HttpClientConnection, BasicPoolEntry> {
     private static final AtomicLong COUNTER = new AtomicLong();
 
@@ -30,13 +30,13 @@ public class BasicConnPool extends AbstractConnPool<HttpHost, HttpClientConnecti
         super(new BasicConnFactory(SocketConfig.DEFAULT, ConnectionConfig.DEFAULT), 2, 20);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.http.pool.AbstractConnPool
     public BasicPoolEntry createEntry(HttpHost httpHost, HttpClientConnection httpClientConnection) {
         return new BasicPoolEntry(Long.toString(COUNTER.getAndIncrement()), httpHost, httpClientConnection);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.http.pool.AbstractConnPool
     public boolean validate(BasicPoolEntry basicPoolEntry) {
         return !basicPoolEntry.getConnection().isStale();

@@ -5,7 +5,7 @@ import org.eclipse.jgit.attributes.AttributesNode;
 import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class InfoAttributesNode extends AttributesNode {
     final Repository repository;
 

@@ -10,7 +10,7 @@ import android.widget.EditText;
 import androidx.appcompat.R;
 import androidx.emoji2.viewsintegration.EmojiEditTextHelper;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class AppCompatEmojiEditTextHelper {
     private final EmojiEditTextHelper mEmojiEditTextHelper;
     private final EditText mView;

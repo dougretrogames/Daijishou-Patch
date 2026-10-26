@@ -9,7 +9,7 @@ import java.nio.ByteBuffer;
 import org.jsoup.Progress;
 import org.jsoup.helper.Validate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ControllableInputStream extends FilterInputStream {
     private boolean allowClose;
     private final SimpleBufferedInput buff;
@@ -182,7 +182,7 @@ public class ControllableInputStream extends FilterInputStream {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public <ProgressContext> ControllableInputStream onProgress(int i, Progress<ProgressContext> progress, ProgressContext progresscontext) {
         Validate.notNull(progress);
         Validate.notNull(progresscontext);

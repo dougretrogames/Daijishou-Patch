@@ -4,7 +4,7 @@ import com.google.protobuf.FieldSet.FieldDescriptorLite;
 import java.io.IOException;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 abstract class ExtensionSchema<T extends FieldSet.FieldDescriptorLite<T>> {
     abstract int extensionNumber(Map.Entry<?, ?> extension);

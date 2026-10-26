@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.eclipse.jgit.transport.RefSpec;
 import org.eclipse.jgit.util.FS;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface TypedConfigGetter {
     public static final int UNSET_INT = Integer.MIN_VALUE;
 

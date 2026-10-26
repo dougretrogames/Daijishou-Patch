@@ -2,7 +2,7 @@ package org.apache.commons.io.output;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NullAppendable implements Appendable {
     public static final NullAppendable INSTANCE = new NullAppendable();
 

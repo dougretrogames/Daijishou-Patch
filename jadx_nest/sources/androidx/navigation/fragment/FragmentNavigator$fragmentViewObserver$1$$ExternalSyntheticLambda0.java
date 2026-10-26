@@ -5,8 +5,8 @@ import androidx.lifecycle.LifecycleEventObserver;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.navigation.NavBackStackEntry;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class FragmentNavigator$fragmentViewObserver$1$$ExternalSyntheticLambda0 implements LifecycleEventObserver {
     public final /* synthetic */ FragmentNavigator f$0;
     public final /* synthetic */ NavBackStackEntry f$1;

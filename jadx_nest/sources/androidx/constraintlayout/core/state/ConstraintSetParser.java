@@ -21,7 +21,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ConstraintSetParser {
     private static final boolean PARSER_DEBUG = false;
 
@@ -548,7 +548,7 @@ public class ConstraintSetParser {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:30:0x0086  */
+    /* WARN: Code duplicated, block: B:30:0x0086  */
     static void parseChain(int i, State state, LayoutVariables layoutVariables, CLArray cLArray) throws CLParsingException {
         String strContent;
         ChainReference chainReferenceHorizontalChain = i == 0 ? state.horizontalChain() : state.verticalChain();
@@ -601,8 +601,8 @@ public class ConstraintSetParser {
         return state.getDpToPixel().toPixels(f);
     }
 
-    /* JADX WARN: Code duplicated, block: B:51:0x00c1  */
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Code duplicated, block: B:51:0x00c1  */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     private static void parseChainType(String str, State state, String str2, LayoutVariables layoutVariables, CLObject cLObject) throws CLParsingException {
         CLArray cLArray;
         int i;
@@ -803,8 +803,8 @@ public class ConstraintSetParser {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:116:0x01ec  */
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Code duplicated, block: B:116:0x01ec  */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     private static void parseGridType(String str, State state, String str2, LayoutVariables layoutVariables, CLObject cLObject) throws CLParsingException {
         float f;
         float f2;
@@ -992,12 +992,12 @@ public class ConstraintSetParser {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:108:0x0231  */
-    /* JADX WARN: Code duplicated, block: B:127:0x0295  */
-    /* JADX WARN: Code duplicated, block: B:137:0x02f3  */
-    /* JADX WARN: Code duplicated, block: B:174:0x03ab  */
-    /* JADX WARN: Code duplicated, block: B:190:0x0402  */
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Code duplicated, block: B:108:0x0231  */
+    /* WARN: Code duplicated, block: B:127:0x0295  */
+    /* WARN: Code duplicated, block: B:137:0x02f3  */
+    /* WARN: Code duplicated, block: B:174:0x03ab  */
+    /* WARN: Code duplicated, block: B:190:0x0402  */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     private static void parseFlowType(String str, State state, String str2, LayoutVariables layoutVariables, CLObject cLObject) throws CLParsingException {
         byte b;
         String strContent;
@@ -1331,7 +1331,7 @@ public class ConstraintSetParser {
         }
     }
 
-    /* JADX WARN: switch over string: strings are not added: [[left]] */
+    /* WARN: switch over string: strings are not added: [[left]] */
     static void parseGuidelineParams(int i, State state, String str, CLObject cLObject) throws CLParsingException {
         String next;
         ArrayList<String> arrayListNames = cLObject.names();
@@ -1526,7 +1526,7 @@ public class ConstraintSetParser {
         parseWidget(state, layoutVariables, state.constraints(str), cLObject);
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     static void applyAttribute(State state, LayoutVariables layoutVariables, ConstraintReference constraintReference, CLObject cLObject, String str) throws CLParsingException {
         byte b;
         ConstraintReference constraintReferenceConstraints;
@@ -1831,20 +1831,20 @@ public class ConstraintSetParser {
         }
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Failed to find 'out' block for switch in B:53:0x00d3. Please report as an issue. */
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r16v0 */
-    /* JADX WARN: Type inference failed for: r16v1 */
-    /* JADX WARN: Type inference failed for: r16v2 */
-    /* JADX WARN: Type inference failed for: r16v3 */
-    /* JADX WARN: Type inference failed for: r16v4 */
-    /* JADX WARN: Type inference failed for: r16v5 */
-    /* JADX WARN: Type inference failed for: r16v6 */
-    /* JADX WARN: Type inference failed for: r16v7 */
-    /* JADX WARN: Type inference failed for: r16v8 */
-    /* JADX WARN: Type inference failed for: r16v9 */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Failed to find 'out' block for switch in B:53:0x00d3. Please report as an issue. */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r16v0 */
+    /* WARN: Type inference failed for: r16v1 */
+    /* WARN: Type inference failed for: r16v2 */
+    /* WARN: Type inference failed for: r16v3 */
+    /* WARN: Type inference failed for: r16v4 */
+    /* WARN: Type inference failed for: r16v5 */
+    /* WARN: Type inference failed for: r16v6 */
+    /* WARN: Type inference failed for: r16v7 */
+    /* WARN: Type inference failed for: r16v8 */
+    /* WARN: Type inference failed for: r16v9 */
     static void parseConstraint(State state, LayoutVariables layoutVariables, CLObject cLObject, ConstraintReference constraintReference, String str) throws CLParsingException {
         ConstraintReference constraintReferenceConstraints;
         ConstraintReference constraintReferenceConstraints2;

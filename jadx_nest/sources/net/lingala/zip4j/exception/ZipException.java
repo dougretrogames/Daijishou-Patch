@@ -2,7 +2,7 @@ package net.lingala.zip4j.exception;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ZipException extends IOException {
     private static final long serialVersionUID = 1;
     private Type type;

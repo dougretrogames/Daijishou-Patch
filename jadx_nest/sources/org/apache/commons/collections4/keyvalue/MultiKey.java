@@ -5,7 +5,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MultiKey<K> implements Serializable {
     private static final long serialVersionUID = 4465448607415788805L;
     private transient int hashCode;

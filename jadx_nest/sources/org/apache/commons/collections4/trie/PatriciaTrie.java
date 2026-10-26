@@ -3,7 +3,7 @@ package org.apache.commons.collections4.trie;
 import java.util.Map;
 import org.apache.commons.collections4.trie.analyzer.StringKeyAnalyzer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PatriciaTrie<V> extends AbstractPatriciaTrie<String, V> {
     private static final long serialVersionUID = 4446367780901817838L;
 

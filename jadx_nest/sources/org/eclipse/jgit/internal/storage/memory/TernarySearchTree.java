@@ -14,7 +14,7 @@ import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class TernarySearchTree<Value> {
     private static final char WILDCARD = '?';
     private Node<Value> root;

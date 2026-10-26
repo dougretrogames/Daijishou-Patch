@@ -2,7 +2,7 @@ package androidx.webkit;
 
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class WebViewStartUpConfig {
     private final Executor mExecutor;
     private final boolean mShouldRunUiThreadStartUpTasks;

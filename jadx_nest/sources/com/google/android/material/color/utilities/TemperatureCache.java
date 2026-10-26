@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class TemperatureCache {
     private final Hct input;
     private Hct precomputedComplement;
@@ -183,7 +183,7 @@ public final class TemperatureCache {
         return arrayList;
     }
 
-    /* JADX INFO: renamed from: lambda$getHctsByTemp$0$com-google-android-material-color-utilities-TemperatureCache, reason: not valid java name */
+    /* INFO: renamed from: lambda$getHctsByTemp$0$com-google-android-material-color-utilities-TemperatureCache, reason: not valid java name */
     /* synthetic */ Double m3304xb7a75f35(Hct hct) {
         return getTempsByHct().get(hct);
     }

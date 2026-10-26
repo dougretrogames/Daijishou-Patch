@@ -5,7 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import com.google.android.material.animation.AnimationUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class FadeTabIndicatorInterpolator extends TabIndicatorInterpolator {
     private static final float FADE_THRESHOLD = 0.5f;
 

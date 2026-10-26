@@ -7,12 +7,12 @@ import java.util.Map;
 import java.util.Objects;
 import org.apache.commons.collections4.Trie;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractBitwiseTrie<K, V> extends AbstractMap<K, V> implements Trie<K, V>, Serializable {
     private static final long serialVersionUID = 5826987063535505652L;
     private final KeyAnalyzer<? super K> keyAnalyzer;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     final K castKey(Object obj) {
         return obj;
     }

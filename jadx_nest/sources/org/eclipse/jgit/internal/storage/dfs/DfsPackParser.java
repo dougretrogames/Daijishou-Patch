@@ -17,7 +17,7 @@ import org.eclipse.jgit.transport.PackLock;
 import org.eclipse.jgit.transport.PackParser;
 import org.eclipse.jgit.transport.PackedObjectInfo;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsPackParser extends PackParser {
     private DfsBlockCache blockCache;
     private int blockSize;
@@ -283,7 +283,7 @@ public class DfsPackParser extends PackParser {
         return readObjectHeader(objectTypeAndSize);
     }
 
-    /* JADX WARN: Code duplicated, block: B:24:0x0073  */
+    /* WARN: Code duplicated, block: B:24:0x0073  */
     @Override // org.eclipse.jgit.transport.PackParser
     protected int readDatabase(byte[] bArr, int i, int i2) throws IOException {
         DfsPackParser dfsPackParser;

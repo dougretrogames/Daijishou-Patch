@@ -4,7 +4,7 @@ import com.google.errorprone.annotations.DoNotMock;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @DoNotMock("Use ImmutableTypeToInstanceMap or MutableTypeToInstanceMap")
 @ElementTypesAreNonnullByDefault
 public interface TypeToInstanceMap<B> extends Map<TypeToken<? extends B>, B> {

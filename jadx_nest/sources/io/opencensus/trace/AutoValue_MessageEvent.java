@@ -1,6 +1,6 @@
 package io.opencensus.trace;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_MessageEvent extends MessageEvent {
     private final long compressedMessageSize;
     private final long messageId;

@@ -5,7 +5,7 @@ import android.graphics.PointF;
 import android.util.DisplayMetrics;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PagerSnapHelper extends SnapHelper {
     private static final int MAX_SCROLL_ON_FLING_DURATION = 100;
     private OrientationHelper mHorizontalHelper;
@@ -91,7 +91,7 @@ public class PagerSnapHelper extends SnapHelper {
         return i2 > 0;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private boolean isReverseLayout(RecyclerView.LayoutManager layoutManager) {
         PointF pointFComputeScrollVectorForPosition;
         int itemCount = layoutManager.getItemCount();
@@ -109,7 +109,7 @@ public class PagerSnapHelper extends SnapHelper {
         return null;
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.PagerSnapHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.PagerSnapHelper$1, reason: invalid class name */
     class AnonymousClass1 extends LinearSmoothScroller {
         AnonymousClass1(Context context) {
             super(context);

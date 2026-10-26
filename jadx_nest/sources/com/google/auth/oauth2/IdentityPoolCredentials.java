@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class IdentityPoolCredentials extends ExternalAccountCredentials {
     static final String FILE_METRICS_HEADER_VALUE = "file";
     static final String URL_METRICS_HEADER_VALUE = "url";
@@ -199,7 +199,7 @@ public class IdentityPoolCredentials extends ExternalAccountCredentials {
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.auth.oauth2.ExternalAccountCredentials.Builder
         public Builder setEnvironmentProvider(EnvironmentProvider environmentProvider) {
             super.setEnvironmentProvider(environmentProvider);

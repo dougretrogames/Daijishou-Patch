@@ -3,7 +3,7 @@ package org.eclipse.jgit.gitrepo.internal;
 import org.eclipse.jgit.nls.NLS;
 import org.eclipse.jgit.nls.TranslationBundle;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RepoText extends TranslationBundle {
     public String errorIncludeFile;
     public String errorIncludeNotImplemented;

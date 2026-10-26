@@ -7,7 +7,7 @@ import org.eclipse.jgit.errors.CorruptPackIndexException;
 import org.eclipse.jgit.lib.ObjectChecker;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FsckError {
     private final Set<CorruptObject> corruptObjects = new HashSet();
     private final Set<ObjectId> missingObjects = new HashSet();
@@ -19,7 +19,7 @@ public class FsckError {
         @Nullable
         final ObjectChecker.ErrorType errorType;
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         final ObjectId f115id;
         final int type;
 

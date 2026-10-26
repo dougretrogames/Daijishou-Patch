@@ -7,10 +7,10 @@ import java.util.concurrent.Future;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ForwardingFuture<V> extends ForwardingObject implements Future<V> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingObject
     public abstract Future<? extends V> delegate();
 
@@ -51,7 +51,7 @@ public abstract class ForwardingFuture<V> extends ForwardingObject implements Fu
             this.delegate = (Future) Preconditions.checkNotNull(delegate);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.util.concurrent.ForwardingFuture, com.google.common.collect.ForwardingObject
         public final Future<V> delegate() {
             return this.delegate;

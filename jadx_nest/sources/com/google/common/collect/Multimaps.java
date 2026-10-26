@@ -27,7 +27,7 @@ import java.util.stream.Collector;
 import java.util.stream.Stream;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Multimaps {
     private Multimaps() {
@@ -139,7 +139,7 @@ public final class Multimaps {
             return createMaybeNavigableAsMap();
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.AbstractListMultimap, com.google.common.collect.AbstractMapBasedMultimap
         public List<V> createCollection() {
             return this.factory.get();
@@ -181,7 +181,7 @@ public final class Multimaps {
             return createMaybeNavigableAsMap();
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.AbstractSetMultimap, com.google.common.collect.AbstractMapBasedMultimap
         public Set<V> createCollection() {
             return this.factory.get();
@@ -249,7 +249,7 @@ public final class Multimaps {
             return createMaybeNavigableAsMap();
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.AbstractSortedSetMultimap, com.google.common.collect.AbstractSetMultimap, com.google.common.collect.AbstractMapBasedMultimap
         public SortedSet<V> createCollection() {
             return this.factory.get();
@@ -297,7 +297,7 @@ public final class Multimaps {
         return (Multimap) Preconditions.checkNotNull(delegate);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class UnmodifiableMultimap<K, V> extends ForwardingMultimap<K, V> implements Serializable {
         private static final long serialVersionUID = 0;
         final Multimap<K, V> delegate;
@@ -326,7 +326,7 @@ public final class Multimaps {
             this.delegate = (Multimap) Preconditions.checkNotNull(delegate);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingMultimap, com.google.common.collect.ForwardingObject
         public Multimap<K, V> delegate() {
             return this.delegate;
@@ -557,7 +557,7 @@ public final class Multimaps {
         return (ListMultimap) Preconditions.checkNotNull(delegate);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <V> Collection<V> unmodifiableValueCollection(Collection<V> collection) {
         if (collection instanceof SortedSet) {
             return Collections.unmodifiableSortedSet((SortedSet) collection);
@@ -571,7 +571,7 @@ public final class Multimaps {
         return Collections.unmodifiableCollection(collection);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <K, V> Collection<Map.Entry<K, V>> unmodifiableEntries(Collection<Map.Entry<K, V>> entries) {
         if (entries instanceof Set) {
             return Maps.unmodifiableEntrySet((Set) entries);
@@ -627,7 +627,7 @@ public final class Multimaps {
             return this.map.entrySet().contains(Maps.immutableEntry(key, value));
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Multimaps$MapMultimap$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Multimaps$MapMultimap$1, reason: invalid class name */
         class AnonymousClass1 extends Sets.ImprovedAbstractSet<V> {
             final /* synthetic */ Object val$key;
 
@@ -635,7 +635,7 @@ public final class Multimaps {
                 this.val$key = val$key;
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.Multimaps$MapMultimap$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: renamed from: com.google.common.collect.Multimaps$MapMultimap$1$1, reason: invalid class name and collision with other inner class name */
             class C00401 implements Iterator<V> {
                 int i;
 
@@ -780,7 +780,7 @@ public final class Multimaps {
         return new TransformedEntriesListMultimap(fromMap, transformer);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class TransformedEntriesMultimap<K, V1, V2> extends AbstractMultimap<K, V2> {
         final Multimap<K, V1> fromMultimap;
         final Maps.EntryTransformer<? super K, ? super V1, V2> transformer;
@@ -790,8 +790,8 @@ public final class Multimaps {
             this.transformer = (Maps.EntryTransformer) Preconditions.checkNotNull(transformer);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* JADX INFO: renamed from: transform, reason: merged with bridge method [inline-methods] */
+        /* INFO: Access modifiers changed from: package-private */
+        /* INFO: renamed from: transform, reason: merged with bridge method [inline-methods] */
         public Collection<V2> m3351x893217c0(@ParametricNullness K key, Collection<V1> values) {
             com.google.common.base.Function functionAsValueToValueFunction = Maps.asValueToValueFunction(this.transformer, key);
             if (values instanceof List) {
@@ -860,13 +860,13 @@ public final class Multimaps {
             throw new UnsupportedOperationException();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.common.collect.AbstractMultimap, com.google.common.collect.Multimap
         public boolean remove(@CheckForNull Object key, @CheckForNull Object value) {
             return get(key).remove(value);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.common.collect.Multimap, com.google.common.collect.ListMultimap
         public Collection<V2> removeAll(@CheckForNull Object key) {
             return m3351x893217c0(key, this.fromMultimap.removeAll(key));
@@ -893,9 +893,9 @@ public final class Multimaps {
             super(fromMultimap, transformer);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Multimaps.TransformedEntriesMultimap
-        /* JADX INFO: renamed from: transform */
+        /* INFO: renamed from: transform */
         public List<V2> m3351x893217c0(@ParametricNullness K key, Collection<V1> values) {
             return Lists.transform((List) values, Maps.asValueToValueFunction(this.transformer, key));
         }
@@ -905,7 +905,7 @@ public final class Multimaps {
             return m3351x893217c0((Object) key, (Collection) this.fromMultimap.get(key));
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.common.collect.Multimaps.TransformedEntriesMultimap, com.google.common.collect.Multimap, com.google.common.collect.ListMultimap
         public List<V2> removeAll(@CheckForNull Object key) {
             return m3351x893217c0(key, (Collection) this.fromMultimap.removeAll(key));
@@ -939,13 +939,13 @@ public final class Multimaps {
             this.multimap = multimap;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Multimaps$Keys$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Multimaps$Keys$1, reason: invalid class name */
         class AnonymousClass1 extends TransformedIterator<Map.Entry<K, Collection<V>>, Multiset.Entry<K>> {
             AnonymousClass1(final Keys this$0, Iterator backingIterator) {
                 super(backingIterator);
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.Multimaps$Keys$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: renamed from: com.google.common.collect.Multimaps$Keys$1$1, reason: invalid class name and collision with other inner class name */
             class C00391 extends Multisets.AbstractEntry<K> {
                 final /* synthetic */ Map.Entry val$backingEntry;
 
@@ -965,7 +965,7 @@ public final class Multimaps {
                 }
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // com.google.common.collect.TransformedIterator
             public Multiset.Entry<K> transform(final Map.Entry<K, Collection<V>> backingEntry) {
                 return new C00391(this, backingEntry);
@@ -1115,7 +1115,7 @@ public final class Multimaps {
                 return Maps.asMapEntryIterator(AsMap.this.multimap.keySet(), new Multimaps$AsMap$EntrySet$$ExternalSyntheticLambda0(this));
             }
 
-            /* JADX INFO: renamed from: lambda$iterator$0$com-google-common-collect-Multimaps$AsMap$EntrySet, reason: not valid java name */
+            /* INFO: renamed from: lambda$iterator$0$com-google-common-collect-Multimaps$AsMap$EntrySet, reason: not valid java name */
             /* synthetic */ Collection m3350xda360ac8(Object obj) {
                 return AsMap.this.multimap.get(obj);
             }

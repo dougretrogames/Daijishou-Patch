@@ -1,6 +1,6 @@
 package org.apache.http.auth;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class AUTH {
     public static final String PROXY_AUTH = "Proxy-Authenticate";
     public static final String PROXY_AUTH_RESP = "Proxy-Authorization";

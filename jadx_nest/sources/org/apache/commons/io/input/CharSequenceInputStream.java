@@ -15,7 +15,7 @@ import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.charset.CharsetEncoders;
 import org.apache.commons.io.function.Uncheck;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CharSequenceInputStream extends InputStream {
     private static final int NO_MARK = -1;
     private final ByteBuffer bBuf;
@@ -41,7 +41,7 @@ public class CharSequenceInputStream extends InputStream {
             return (CharSequenceInputStream) Uncheck.get(new CharSequenceInputStream$Builder$$ExternalSyntheticLambda1(this));
         }
 
-        /* JADX INFO: renamed from: lambda$get$0$org-apache-commons-io-input-CharSequenceInputStream$Builder, reason: not valid java name */
+        /* INFO: renamed from: lambda$get$0$org-apache-commons-io-input-CharSequenceInputStream$Builder, reason: not valid java name */
         /* synthetic */ CharSequenceInputStream m5585xc0c8f29c() throws IOException {
             return new CharSequenceInputStream(getCharSequence(), getBufferSize(), this.charsetEncoder, null);
         }
@@ -57,7 +57,7 @@ public class CharSequenceInputStream extends InputStream {
             return this;
         }
 
-        /* JADX INFO: renamed from: lambda$setCharsetEncoder$1$org-apache-commons-io-input-CharSequenceInputStream$Builder, reason: not valid java name */
+        /* INFO: renamed from: lambda$setCharsetEncoder$1$org-apache-commons-io-input-CharSequenceInputStream$Builder, reason: not valid java name */
         /* synthetic */ CharsetEncoder m5586xabe124b9() {
             return CharSequenceInputStream.newEncoder(getCharsetDefault());
         }
@@ -74,7 +74,7 @@ public class CharSequenceInputStream extends InputStream {
         return new Builder();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static CharsetEncoder newEncoder(Charset charset) {
         return Charsets.toCharset(charset).newEncoder().onMalformedInput(CodingErrorAction.REPLACE).onUnmappableCharacter(CodingErrorAction.REPLACE);
     }

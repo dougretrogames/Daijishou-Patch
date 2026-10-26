@@ -8,14 +8,14 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class FunctorUtils {
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static <R extends Function<I, O>, P extends Function<? super I, ? extends O>, I, O> R coerce(P p) {
         return p;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static <R extends Predicate<T>, P extends Predicate<? super T>, T> R coerce(P p) {
         return p;
     }

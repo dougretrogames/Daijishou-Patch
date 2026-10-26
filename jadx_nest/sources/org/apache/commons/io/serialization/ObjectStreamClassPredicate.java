@@ -9,7 +9,7 @@ import java.util.function.Predicate;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ObjectStreamClassPredicate implements Predicate<ObjectStreamClass> {
     private final List<ClassNameMatcher> acceptMatchers = new ArrayList();
     private final List<ClassNameMatcher> rejectMatchers = new ArrayList();

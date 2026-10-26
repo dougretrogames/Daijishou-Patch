@@ -17,7 +17,7 @@ import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 import java.util.List;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ChipGroup extends FlowLayout {
     private static final int DEF_STYLE_RES = R.style.Widget_MaterialComponents_ChipGroup;
     private final CheckableGroup<Chip> checkableGroup;
@@ -62,7 +62,7 @@ public class ChipGroup extends FlowLayout {
         this(context, attributeSet, R.attr.chipGroupStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public ChipGroup(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -84,7 +84,7 @@ public class ChipGroup extends FlowLayout {
         ViewCompat.setImportantForAccessibility(this, 1);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.chip.ChipGroup$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.chip.ChipGroup$1, reason: invalid class name */
     class AnonymousClass1 implements CheckableGroup.OnCheckedStateChangeListener {
         AnonymousClass1() {
         }
@@ -189,7 +189,7 @@ public class ChipGroup extends FlowLayout {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.chip.ChipGroup$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.chip.ChipGroup$2, reason: invalid class name */
     class AnonymousClass2 implements OnCheckedStateChangeListener {
         final /* synthetic */ OnCheckedChangeListener val$listener;
 

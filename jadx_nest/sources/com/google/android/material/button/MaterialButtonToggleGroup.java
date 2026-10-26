@@ -33,7 +33,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeMap;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialButtonToggleGroup extends LinearLayout {
     private static final int DEF_STYLE_RES = R.style.Widget_MaterialComponents_MaterialButtonToggleGroup;
     private static final String LOG_TAG = "MButtonToggleGroup";
@@ -52,7 +52,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         void onButtonChecked(MaterialButtonToggleGroup materialButtonToggleGroup, int i, boolean z);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.button.MaterialButtonToggleGroup$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.button.MaterialButtonToggleGroup$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<MaterialButton> {
         AnonymousClass1() {
         }
@@ -76,7 +76,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         this(context, attributeSet, R.attr.materialButtonToggleGroupStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public MaterialButtonToggleGroup(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -128,7 +128,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         ViewCompat.setAccessibilityDelegate(materialButton, new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.button.MaterialButtonToggleGroup$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.button.MaterialButtonToggleGroup$2, reason: invalid class name */
     class AnonymousClass2 extends AccessibilityDelegateCompat {
         AnonymousClass2() {
         }
@@ -338,7 +338,7 @@ public class MaterialButtonToggleGroup extends LinearLayout {
         return i;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getIndexWithinVisibleButtons(View view) {
         if (!(view instanceof MaterialButton)) {
             return -1;

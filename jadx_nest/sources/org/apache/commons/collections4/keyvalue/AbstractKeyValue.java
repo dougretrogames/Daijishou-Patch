@@ -2,7 +2,7 @@ package org.apache.commons.collections4.keyvalue;
 
 import org.apache.commons.collections4.KeyValue;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractKeyValue<K, V> implements KeyValue<K, V> {
     private K key;
     private V value;
@@ -28,7 +28,7 @@ public abstract class AbstractKeyValue<K, V> implements KeyValue<K, V> {
         return k2;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public V setValue(V v) {
         V v2 = this.value;
         this.value = v;

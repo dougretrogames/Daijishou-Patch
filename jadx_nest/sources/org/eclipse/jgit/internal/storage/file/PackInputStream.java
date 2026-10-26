@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.file;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PackInputStream extends InputStream {
     private final Pack pack;
     private long pos;

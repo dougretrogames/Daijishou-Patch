@@ -6,12 +6,12 @@ import java.net.InetAddress;
 import java.util.Arrays;
 import org.apache.http.HttpHost;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpHostConnectException extends ConnectException {
     private static final long serialVersionUID = -3194482710275220224L;
     private final HttpHost host;
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     @Deprecated
     public HttpHostConnectException(HttpHost httpHost, ConnectException connectException) {
         this(connectException, httpHost, null);

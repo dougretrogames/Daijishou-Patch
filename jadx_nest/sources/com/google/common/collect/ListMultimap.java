@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public interface ListMultimap<K, V> extends Multimap<K, V> {
     Map<K, Collection<V>> asMap();

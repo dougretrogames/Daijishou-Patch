@@ -10,7 +10,7 @@ import java.nio.ByteOrder;
 import java.util.Iterator;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Stats implements Serializable {
     static final int BYTES = 40;

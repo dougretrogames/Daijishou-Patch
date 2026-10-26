@@ -1,6 +1,6 @@
 package io.grpc;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ServerTransportFilter {
     public Attributes transportReady(Attributes attributes) {
         return attributes;

@@ -5,7 +5,7 @@ import org.apache.commons.collections4.Bag;
 import org.apache.commons.collections4.Predicate;
 import org.apache.commons.collections4.collection.PredicatedCollection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PredicatedBag<E> extends PredicatedCollection<E> implements Bag<E> {
     private static final long serialVersionUID = -2575833140344736876L;
 
@@ -23,7 +23,7 @@ public class PredicatedBag<E> extends PredicatedCollection<E> implements Bag<E> 
         return decorated().add(e, i);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public Bag<E> decorated() {
         return (Bag) super.decorated();

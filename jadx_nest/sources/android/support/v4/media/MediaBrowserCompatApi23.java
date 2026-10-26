@@ -3,7 +3,7 @@ package android.support.v4.media;
 import android.media.browse.MediaBrowser;
 import android.os.Parcel;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MediaBrowserCompatApi23 {
 
     interface ItemCallback {

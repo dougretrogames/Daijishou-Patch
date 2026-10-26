@@ -25,7 +25,7 @@ import org.apache.http.util.CharArrayBuffer;
 import org.apache.http.util.TextUtils;
 import org.jsoup.helper.HttpConnection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ContentType implements Serializable {
     public static final ContentType APPLICATION_ATOM_XML;
     public static final ContentType APPLICATION_FORM_URLENCODED;

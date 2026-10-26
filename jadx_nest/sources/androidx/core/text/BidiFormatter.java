@@ -5,7 +5,7 @@ import com.google.common.base.Ascii;
 import java.util.Locale;
 import kotlin.text.Typography;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class BidiFormatter {
     private static final int DEFAULT_FLAGS = 2;
     static final BidiFormatter DEFAULT_LTR_INSTANCE;

@@ -5,8 +5,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import org.retroachivements.api.data.pojo.feed.GetClaims;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class DataBufferUtils {
     public static final String KEY_NEXT_PAGE_TOKEN = "next_page_token";
     public static final String KEY_PREV_PAGE_TOKEN = "prev_page_token";

@@ -14,8 +14,8 @@ import com.google.android.gms.internal.auth.zzaz;
 import com.google.android.gms.internal.auth.zzbb;
 import com.google.android.gms.tasks.Task;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public class AccountTransferClient extends GoogleApi<zzr> {
     public static final /* synthetic */ int zza = 0;
     private static final Api.ClientKey zzb;

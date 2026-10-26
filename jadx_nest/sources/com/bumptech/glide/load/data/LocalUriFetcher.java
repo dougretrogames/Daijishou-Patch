@@ -10,7 +10,7 @@ import com.bumptech.glide.load.data.mediastore.MediaStoreUtil;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class LocalUriFetcher<T> implements DataFetcher<T> {
     private static final String TAG = "LocalUriFetcher";
     private final ContentResolver contentResolver;

@@ -3,7 +3,7 @@ package org.apache.commons.io.input.buffer;
 import java.util.Objects;
 import org.apache.commons.io.IOUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CircularByteBuffer {
     private final byte[] buffer;
     private int currentNumberOfBytes;

@@ -10,14 +10,14 @@ import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
-/* JADX INFO: compiled from: DSESS.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DSESS.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "Lorg/jsoup/nodes/Document;", "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class DSESS$scrape$searchEngineSiteDocument$1 extends Lambda<Document> implements Function1<String, Document> {
     final /* synthetic */ Uri $searchEngineSiteURLUri;
     final /* synthetic */ DSESS this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     DSESS$scrape$searchEngineSiteDocument$1(Uri uri, DSESS dsess) {
         super(1);
         this.$searchEngineSiteURLUri = uri;

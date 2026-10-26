@@ -2,12 +2,12 @@ package com.google.android.gms.common.internal.safeparcel;
 
 import android.os.Parcelable;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public interface SafeParcelable extends Parcelable {
     public static final String NULL = "SAFE_PARCELABLE_NULL_STRING";
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
     public @interface Class {
         String creator();
 
@@ -18,11 +18,11 @@ public interface SafeParcelable extends Parcelable {
         boolean validate() default false;
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
     public @interface Constructor {
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
     public @interface Field {
         String defaultValue() default "SAFE_PARCELABLE_NULL_STRING";
 
@@ -35,17 +35,17 @@ public interface SafeParcelable extends Parcelable {
         String type() default "SAFE_PARCELABLE_NULL_STRING";
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
     public @interface Indicator {
         String getter() default "SAFE_PARCELABLE_NULL_STRING";
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
     public @interface Param {
         int id();
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
     public @interface RemovedParam {
         String defaultValue() default "SAFE_PARCELABLE_NULL_STRING";
 
@@ -54,12 +54,12 @@ public interface SafeParcelable extends Parcelable {
         int id();
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
     public @interface Reserved {
         int[] value();
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
     public @interface VersionField {
         String getter() default "SAFE_PARCELABLE_NULL_STRING";
 

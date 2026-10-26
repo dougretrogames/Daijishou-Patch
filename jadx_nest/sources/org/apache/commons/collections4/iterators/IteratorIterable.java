@@ -3,12 +3,12 @@ package org.apache.commons.collections4.iterators;
 import java.util.Iterator;
 import org.apache.commons.collections4.ResettableIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IteratorIterable<E> implements Iterable<E> {
     private final Iterator<? extends E> iterator;
     private final Iterator<E> typeSafeIterator;
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.iterators.IteratorIterable$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.iterators.IteratorIterable$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<E> {
         final /* synthetic */ Iterator val$iterator;
 

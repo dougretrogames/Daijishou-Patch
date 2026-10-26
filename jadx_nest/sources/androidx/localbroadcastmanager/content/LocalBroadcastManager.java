@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class LocalBroadcastManager {
     private static final boolean DEBUG = false;
     static final int MSG_EXEC_PENDING_BROADCASTS = 1;
@@ -77,7 +77,7 @@ public final class LocalBroadcastManager {
         this.mHandler = new AnonymousClass1(context.getMainLooper());
     }
 
-    /* JADX INFO: renamed from: androidx.localbroadcastmanager.content.LocalBroadcastManager$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.localbroadcastmanager.content.LocalBroadcastManager$1, reason: invalid class name */
     class AnonymousClass1 extends Handler {
         AnonymousClass1(Looper looper) {
             super(looper);

@@ -4,7 +4,7 @@ import java.io.IOException;
 import org.eclipse.jgit.internal.storage.pack.StoredObjectRepresentation;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class LocalObjectRepresentation extends StoredObjectRepresentation {
     private ObjectId baseId;
     private long baseOffset;
@@ -15,7 +15,7 @@ class LocalObjectRepresentation extends StoredObjectRepresentation {
     LocalObjectRepresentation() {
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.LocalObjectRepresentation$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.LocalObjectRepresentation$1, reason: invalid class name */
     class AnonymousClass1 extends LocalObjectRepresentation {
         @Override // org.eclipse.jgit.internal.storage.pack.StoredObjectRepresentation
         public int getFormat() {

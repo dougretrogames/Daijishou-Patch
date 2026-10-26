@@ -12,8 +12,8 @@ import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 public class SaveAccountLinkingTokenRequest extends AbstractSafeParcelable implements ReflectedParcelable {
     public static final Parcelable.Creator<SaveAccountLinkingTokenRequest> CREATOR = new zbn();
     public static final String EXTRA_TOKEN = "extra_token";
@@ -25,7 +25,7 @@ public class SaveAccountLinkingTokenRequest extends AbstractSafeParcelable imple
     private final String zbe;
     private final int zbf;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
     public static final class Builder {
         private PendingIntent zba;
         private String zbb;

@@ -29,7 +29,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class GridLayoutManager extends RecyclerView.LayoutManager {
     static final boolean DEBUG = false;
     static final int DEFAULT_MAX_PENDING_MOVES = 10;
@@ -475,7 +475,7 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         this.mFlag = (z ? 2048 : 0) | (this.mFlag & (-6145)) | (z2 ? 4096 : 0);
     }
 
-    /* JADX WARN: Code duplicated, block: B:6:0x000b  */
+    /* WARN: Code duplicated, block: B:6:0x000b  */
     void onRtlPropertiesChanged(int i) {
         int i2;
         if (this.mOrientation == 0) {
@@ -934,8 +934,8 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:33:0x0076  */
-    /* JADX WARN: Code duplicated, block: B:36:0x008b  */
+    /* WARN: Code duplicated, block: B:33:0x0076  */
+    /* WARN: Code duplicated, block: B:36:0x008b  */
     private boolean layoutInit() {
         Grid grid;
         int itemCount = this.mState.getItemCount();
@@ -1125,7 +1125,7 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         ViewCompat.postOnAnimation(this.mBaseGridView, this.mRequestLayoutRunnable);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.GridLayoutManager$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.GridLayoutManager$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -1136,13 +1136,13 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:44:0x00b5 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:45:0x00b7  */
-    /* JADX WARN: Code duplicated, block: B:46:0x00c2 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:47:0x00c4  */
-    /* JADX WARN: Code duplicated, block: B:48:0x00d2  */
-    /* JADX WARN: Code duplicated, block: B:50:0x00d8  */
-    /* JADX WARN: Code duplicated, block: B:52:0x00e5  */
+    /* WARN: Code duplicated, block: B:44:0x00b5 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:45:0x00b7  */
+    /* WARN: Code duplicated, block: B:46:0x00c2 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:47:0x00c4  */
+    /* WARN: Code duplicated, block: B:48:0x00d2  */
+    /* WARN: Code duplicated, block: B:50:0x00d8  */
+    /* WARN: Code duplicated, block: B:52:0x00e5  */
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void onMeasure(RecyclerView.Recycler recycler, RecyclerView.State state, int i, int i2) {
         int size;
@@ -1298,7 +1298,7 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         view.measure(childMeasureSpec, childMeasureSpec2);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     <E> E getFacet(RecyclerView.ViewHolder viewHolder, Class<? extends E> cls) {
         FacetProviderAdapter facetProviderAdapter;
         FacetProvider facetProvider;
@@ -1306,7 +1306,7 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         return (e != null || (facetProviderAdapter = this.mFacetProviderAdapter) == null || (facetProvider = facetProviderAdapter.getFacetProvider(viewHolder.getItemViewType())) == null) ? e : (E) facetProvider.getFacet(cls);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.GridLayoutManager$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.GridLayoutManager$2, reason: invalid class name */
     class AnonymousClass2 implements Grid.Provider {
         AnonymousClass2() {
         }
@@ -1542,7 +1542,7 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.GridLayoutManager$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.GridLayoutManager$3, reason: invalid class name */
     class AnonymousClass3 extends RecyclerView.OnScrollListener {
         AnonymousClass3() {
         }
@@ -2215,7 +2215,7 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.GridLayoutManager$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.GridLayoutManager$4, reason: invalid class name */
     class AnonymousClass4 extends GridLinearSmoothScroller {
         AnonymousClass4() {
             super();
@@ -2446,9 +2446,9 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         return getNoneAlignedPosition(view, iArr);
     }
 
-    /* JADX WARN: Code duplicated, block: B:39:0x00b8  */
-    /* JADX WARN: Code duplicated, block: B:40:0x00ba A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:41:0x00bc  */
+    /* WARN: Code duplicated, block: B:39:0x00b8  */
+    /* WARN: Code duplicated, block: B:40:0x00ba A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:41:0x00bc  */
     private boolean getNoneAlignedPosition(View view, int[] iArr) {
         View viewFindViewByPosition;
         int i;
@@ -2728,8 +2728,8 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         return false;
     }
 
-    /* JADX WARN: Code duplicated, block: B:51:0x0096  */
-    /* JADX WARN: Code duplicated, block: B:95:0x0111  */
+    /* WARN: Code duplicated, block: B:51:0x0096  */
+    /* WARN: Code duplicated, block: B:95:0x0111  */
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public boolean onAddFocusables(RecyclerView recyclerView, ArrayList<View> arrayList, int i, int i2) {
         int childCount;
@@ -2991,7 +2991,7 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         return i2;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public void onAdapterChanged(RecyclerView.Adapter adapter, RecyclerView.Adapter adapter2) {
         if (adapter != null) {
@@ -3048,18 +3048,18 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
             parcel.writeBundle(this.mChildStates);
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.GridLayoutManager$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.GridLayoutManager$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];
@@ -3150,8 +3150,8 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x003c  */
-    /* JADX WARN: Code duplicated, block: B:24:0x0046  */
+    /* WARN: Code duplicated, block: B:21:0x003c  */
+    /* WARN: Code duplicated, block: B:24:0x0046  */
     @Override // androidx.recyclerview.widget.RecyclerView.LayoutManager
     public boolean performAccessibilityAction(RecyclerView.Recycler recycler, RecyclerView.State state, int i, Bundle bundle) {
         if (!isScrollEnabled()) {
@@ -3194,15 +3194,15 @@ public final class GridLayoutManager extends RecyclerView.LayoutManager {
         return true;
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     private void sendTypeViewScrolledAccessibilityEvent() {
         AccessibilityEvent accessibilityEventObtain = AccessibilityEvent.obtain(4096);

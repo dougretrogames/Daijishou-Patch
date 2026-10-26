@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class TextFormatParseLocation {
     public static final TextFormatParseLocation EMPTY = new TextFormatParseLocation(-1, -1);
     private final int column;

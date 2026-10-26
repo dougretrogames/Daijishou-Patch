@@ -4,8 +4,8 @@ import java.util.List;
 import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class SnapshottingRefDirectory$SnapshotPackedBatchRefUpdate$$ExternalSyntheticLambda1 implements SnapshottingRefDirectory.TriConsumerThrowsException {
     public final /* synthetic */ SnapshottingRefDirectory.SnapshotPackedBatchRefUpdate f$0;
 

@@ -1,6 +1,6 @@
 package androidx.profileinstaller;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 enum FileSectionType {
     DEX_FILES(0),
     EXTRA_DESCRIPTORS(1),

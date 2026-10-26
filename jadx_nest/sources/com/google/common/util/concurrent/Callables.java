@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import com.google.common.base.Supplier;
 import java.util.concurrent.Callable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class Callables {
     static /* synthetic */ Object lambda$returning$0(Object obj) throws Exception {

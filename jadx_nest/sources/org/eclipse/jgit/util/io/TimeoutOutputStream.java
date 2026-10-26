@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import java.text.MessageFormat;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TimeoutOutputStream extends OutputStream {
     private final OutputStream dst;
     private final InterruptTimer myTimer;

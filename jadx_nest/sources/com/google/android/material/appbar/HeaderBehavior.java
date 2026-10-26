@@ -11,7 +11,7 @@ import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import androidx.core.math.MathUtils;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class HeaderBehavior<V extends View> extends ViewOffsetBehavior<V> {
     private static final int INVALID_POINTER = -1;
     private int activePointerId;
@@ -81,9 +81,9 @@ abstract class HeaderBehavior<V extends View> extends ViewOffsetBehavior<V> {
         return false;
     }
 
-    /* JADX WARN: Code duplicated, block: B:27:0x007a  */
-    /* JADX WARN: Code duplicated, block: B:30:0x0084  */
-    /* JADX WARN: Code duplicated, block: B:33:0x008b A[ADDED_TO_REGION] */
+    /* WARN: Code duplicated, block: B:27:0x007a  */
+    /* WARN: Code duplicated, block: B:30:0x0084  */
+    /* WARN: Code duplicated, block: B:33:0x008b A[ADDED_TO_REGION] */
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior
     public boolean onTouchEvent(CoordinatorLayout coordinatorLayout, V v, MotionEvent motionEvent) {
         boolean z;

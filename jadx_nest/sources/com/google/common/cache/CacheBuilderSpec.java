@@ -13,7 +13,7 @@ import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class CacheBuilderSpec {
     private static final Splitter KEYS_SPLITTER = Splitter.on(AbstractJsonLexerKt.COMMA).trimResults();
@@ -62,7 +62,7 @@ public final class CacheBuilderSpec {
         this.specification = specification;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static CacheBuilderSpec parse(String cacheBuilderSpecification) {
         CacheBuilderSpec cacheBuilderSpec = new CacheBuilderSpec(cacheBuilderSpecification);
         if (!cacheBuilderSpecification.isEmpty()) {
@@ -137,7 +137,7 @@ public final class CacheBuilderSpec {
         return cacheBuilderNewBuilder;
     }
 
-    /* JADX INFO: renamed from: com.google.common.cache.CacheBuilderSpec$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.cache.CacheBuilderSpec$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$common$cache$LocalCache$Strength;
 
@@ -380,7 +380,7 @@ public final class CacheBuilderSpec {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static String format(String format, Object... args) {
         return String.format(Locale.ROOT, format, args);
     }

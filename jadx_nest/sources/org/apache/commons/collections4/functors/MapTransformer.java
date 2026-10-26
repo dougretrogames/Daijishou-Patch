@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Map;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class MapTransformer<T, R> implements Transformer<T, R>, Serializable {
     private static final long serialVersionUID = 862391807045468939L;
     private final Map<? super T, ? extends R> iMap;

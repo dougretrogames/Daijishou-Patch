@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class DrawableWithAnimatedVisibilityChange extends Drawable implements Animatable2Compat {
     private static final boolean DEFAULT_DRAWABLE_RESTART = false;
     private static final int GROW_DURATION = 500;
@@ -95,7 +95,7 @@ abstract class DrawableWithAnimatedVisibilityChange extends Drawable implements 
         this.internalAnimationCallback = animationCallback;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void dispatchAnimationStart() {
         Animatable2Compat.AnimationCallback animationCallback = this.internalAnimationCallback;
         if (animationCallback != null) {
@@ -111,7 +111,7 @@ abstract class DrawableWithAnimatedVisibilityChange extends Drawable implements 
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void dispatchAnimationEnd() {
         Animatable2Compat.AnimationCallback animationCallback = this.internalAnimationCallback;
         if (animationCallback != null) {
@@ -240,7 +240,7 @@ abstract class DrawableWithAnimatedVisibilityChange extends Drawable implements 
         valueAnimator.addListener(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.DrawableWithAnimatedVisibilityChange$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.DrawableWithAnimatedVisibilityChange$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }
@@ -265,7 +265,7 @@ abstract class DrawableWithAnimatedVisibilityChange extends Drawable implements 
         valueAnimator.addListener(new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.DrawableWithAnimatedVisibilityChange$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.DrawableWithAnimatedVisibilityChange$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         AnonymousClass2() {
         }
@@ -305,7 +305,7 @@ abstract class DrawableWithAnimatedVisibilityChange extends Drawable implements 
         this.mockGrowFraction = f;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.DrawableWithAnimatedVisibilityChange$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.DrawableWithAnimatedVisibilityChange$3, reason: invalid class name */
     class AnonymousClass3 extends Property<DrawableWithAnimatedVisibilityChange, Float> {
         AnonymousClass3(Class cls, String str) {
             super(cls, str);

@@ -3,7 +3,7 @@ package io.opencensus.metrics;
 import io.opencensus.internal.Utils;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class LongCumulative {
 
     public static abstract class LongPoint {

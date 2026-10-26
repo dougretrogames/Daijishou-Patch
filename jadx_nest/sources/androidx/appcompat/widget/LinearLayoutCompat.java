@@ -21,7 +21,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.function.IntFunction;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class LinearLayoutCompat extends ViewGroup {
     private static final String ACCESSIBILITY_CLASS_NAME = "androidx.appcompat.widget.LinearLayoutCompat";
     public static final int HORIZONTAL = 0;
@@ -106,8 +106,8 @@ public class LinearLayoutCompat extends ViewGroup {
             this.mPropertiesMapped = true;
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.LinearLayoutCompat$InspectionCompanion$1, reason: invalid class name */
-        /* JADX INFO: compiled from: LinearLayoutCompat$InspectionCompanion.java */
+        /* INFO: renamed from: androidx.appcompat.widget.LinearLayoutCompat$InspectionCompanion$1, reason: invalid class name */
+        /* INFO: compiled from: LinearLayoutCompat$InspectionCompanion.java */
         class AnonymousClass1 implements IntFunction<String> {
             AnonymousClass1() {
             }
@@ -124,8 +124,8 @@ public class LinearLayoutCompat extends ViewGroup {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.LinearLayoutCompat$InspectionCompanion$2, reason: invalid class name */
-        /* JADX INFO: compiled from: LinearLayoutCompat$InspectionCompanion.java */
+        /* INFO: renamed from: androidx.appcompat.widget.LinearLayoutCompat$InspectionCompanion$2, reason: invalid class name */
+        /* INFO: compiled from: LinearLayoutCompat$InspectionCompanion.java */
         class AnonymousClass2 implements IntFunction<Set<String>> {
             AnonymousClass2() {
             }
@@ -428,11 +428,11 @@ public class LinearLayoutCompat extends ViewGroup {
         return false;
     }
 
-    /* JADX WARN: Code duplicated, block: B:154:0x031a  */
-    /* JADX WARN: Code duplicated, block: B:64:0x0168 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:66:0x016b  */
-    /* JADX WARN: Code duplicated, block: B:68:0x0171 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:70:0x0174  */
+    /* WARN: Code duplicated, block: B:154:0x031a  */
+    /* WARN: Code duplicated, block: B:64:0x0168 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:66:0x016b  */
+    /* WARN: Code duplicated, block: B:68:0x0171 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:70:0x0174  */
     void measureVertical(int i, int i2) {
         int i3;
         int iMax;
@@ -752,7 +752,7 @@ public class LinearLayoutCompat extends ViewGroup {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:9:0x0036  */
+    /* WARN: Code duplicated, block: B:9:0x0036  */
     private void forceUniformWidth(int i, int i2) {
         int i3;
         int iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(getMeasuredWidth(), 1073741824);
@@ -778,8 +778,8 @@ public class LinearLayoutCompat extends ViewGroup {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:203:0x0461  */
-    /* JADX WARN: Code duplicated, block: B:204:0x0464  */
+    /* WARN: Code duplicated, block: B:203:0x0461  */
+    /* WARN: Code duplicated, block: B:204:0x0464  */
     void measureHorizontal(int i, int i2) {
         int i3;
         int i4;
@@ -1141,7 +1141,7 @@ public class LinearLayoutCompat extends ViewGroup {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:9:0x0036  */
+    /* WARN: Code duplicated, block: B:9:0x0036  */
     private void forceUniformHeight(int i, int i2) {
         int i3;
         int iMakeMeasureSpec = View.MeasureSpec.makeMeasureSpec(getMeasuredHeight(), 1073741824);
@@ -1180,7 +1180,7 @@ public class LinearLayoutCompat extends ViewGroup {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:29:0x0097  */
+    /* WARN: Code duplicated, block: B:29:0x0097  */
     void layoutVertical(int i, int i2, int i3, int i4) {
         int paddingTop;
         int i5;
@@ -1251,17 +1251,17 @@ public class LinearLayoutCompat extends ViewGroup {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:29:0x00b6  */
-    /* JADX WARN: Code duplicated, block: B:32:0x00bf  */
-    /* JADX WARN: Code duplicated, block: B:34:0x00c3  */
-    /* JADX WARN: Code duplicated, block: B:36:0x00c7  */
-    /* JADX WARN: Code duplicated, block: B:37:0x00cb  */
-    /* JADX WARN: Code duplicated, block: B:39:0x00d3  */
-    /* JADX WARN: Code duplicated, block: B:40:0x00de  */
-    /* JADX WARN: Code duplicated, block: B:42:0x00e5  */
-    /* JADX WARN: Code duplicated, block: B:43:0x00ec  */
-    /* JADX WARN: Code duplicated, block: B:47:0x00ff  */
-    /* JADX WARN: Code duplicated, block: B:48:0x0104  */
+    /* WARN: Code duplicated, block: B:29:0x00b6  */
+    /* WARN: Code duplicated, block: B:32:0x00bf  */
+    /* WARN: Code duplicated, block: B:34:0x00c3  */
+    /* WARN: Code duplicated, block: B:36:0x00c7  */
+    /* WARN: Code duplicated, block: B:37:0x00cb  */
+    /* WARN: Code duplicated, block: B:39:0x00d3  */
+    /* WARN: Code duplicated, block: B:40:0x00de  */
+    /* WARN: Code duplicated, block: B:42:0x00e5  */
+    /* WARN: Code duplicated, block: B:43:0x00ec  */
+    /* WARN: Code duplicated, block: B:47:0x00ff  */
+    /* WARN: Code duplicated, block: B:48:0x0104  */
     void layoutHorizontal(int i, int i2, int i3, int i4) {
         int paddingLeft;
         int i5;
@@ -1487,7 +1487,7 @@ public class LinearLayoutCompat extends ViewGroup {
         return new LayoutParams(getContext(), attributeSet);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup
     public LayoutParams generateDefaultLayoutParams() {
         int i = this.mOrientation;
@@ -1500,7 +1500,7 @@ public class LinearLayoutCompat extends ViewGroup {
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup
     public LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
         if (layoutParams instanceof LayoutParams) {

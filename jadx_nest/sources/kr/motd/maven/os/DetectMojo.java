@@ -10,14 +10,14 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.logging.Log;
 import org.apache.maven.project.MavenProject;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DetectMojo extends AbstractMojo {
     static final String CLASSIFIER_WITH_LIKES_PROPERTY = "os.detection.classifierWithLikes";
     private String classifierWithLikes;
     private final Detector detector = new AnonymousClass1();
     private MavenProject project;
 
-    /* JADX INFO: renamed from: kr.motd.maven.os.DetectMojo$1, reason: invalid class name */
+    /* INFO: renamed from: kr.motd.maven.os.DetectMojo$1, reason: invalid class name */
     class AnonymousClass1 extends Detector {
         AnonymousClass1() {
         }
@@ -36,7 +36,7 @@ public class DetectMojo extends AbstractMojo {
         }
     }
 
-    /* JADX INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
+    /* INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
     public void execute() throws MojoExecutionException {
         try {
             this.detector.detect(this.project.getProperties(), getClassifierWithLikes(this.classifierWithLikes));

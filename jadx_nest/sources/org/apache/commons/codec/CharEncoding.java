@@ -2,7 +2,7 @@ package org.apache.commons.codec;
 
 import java.nio.charset.StandardCharsets;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CharEncoding {
     public static final String ISO_8859_1 = StandardCharsets.ISO_8859_1.name();
     public static final String US_ASCII = StandardCharsets.US_ASCII.name();

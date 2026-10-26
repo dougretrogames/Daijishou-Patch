@@ -5,7 +5,7 @@ import java.util.Map;
 import org.eclipse.jgit.errors.TransportException;
 import org.eclipse.jgit.lib.ProgressMonitor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface PushConnection extends Connection {
     void push(ProgressMonitor progressMonitor, Map<String, RemoteRefUpdate> map) throws TransportException;
 

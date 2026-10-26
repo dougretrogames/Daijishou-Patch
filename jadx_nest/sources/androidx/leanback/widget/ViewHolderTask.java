@@ -2,7 +2,7 @@ package androidx.leanback.widget;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface ViewHolderTask {
     void run(RecyclerView.ViewHolder viewHolder);
 }

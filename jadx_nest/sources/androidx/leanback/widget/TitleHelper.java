@@ -5,7 +5,7 @@ import android.view.ViewGroup;
 import androidx.leanback.transition.LeanbackTransitionHelper;
 import androidx.leanback.transition.TransitionHelper;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TitleHelper {
     private final BrowseFrameLayout.OnFocusSearchListener mOnFocusSearchListener = new AnonymousClass1();
     ViewGroup mSceneRoot;
@@ -15,7 +15,7 @@ public class TitleHelper {
     private Object mTitleUpTransition;
     View mTitleView;
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.TitleHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.TitleHelper$1, reason: invalid class name */
     class AnonymousClass1 implements BrowseFrameLayout.OnFocusSearchListener {
         AnonymousClass1() {
         }
@@ -52,7 +52,7 @@ public class TitleHelper {
         this.mSceneWithoutTitle = TransitionHelper.createScene(this.mSceneRoot, new AnonymousClass3());
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.TitleHelper$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.TitleHelper$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -63,7 +63,7 @@ public class TitleHelper {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.TitleHelper$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.TitleHelper$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         AnonymousClass3() {
         }

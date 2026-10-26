@@ -9,7 +9,7 @@ import java.util.Collections;
 import java.util.Set;
 import java.util.WeakHashMap;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class FirstFrameWaiter implements FrameWaiter {
     volatile boolean isFirstFrameSet;
     final Set<Activity> pendingActivities = Collections.newSetFromMap(new WeakHashMap());
@@ -25,7 +25,7 @@ final class FirstFrameWaiter implements FrameWaiter {
         }
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.manager.FirstFrameWaiter$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.manager.FirstFrameWaiter$1, reason: invalid class name */
     class AnonymousClass1 implements ViewTreeObserver.OnDrawListener {
         final /* synthetic */ View val$view;
 
@@ -33,7 +33,7 @@ final class FirstFrameWaiter implements FrameWaiter {
             this.val$view = view;
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.manager.FirstFrameWaiter$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.bumptech.glide.manager.FirstFrameWaiter$1$1, reason: invalid class name and collision with other inner class name */
         class RunnableC00271 implements Runnable {
             final /* synthetic */ ViewTreeObserver.OnDrawListener val$listener;
 

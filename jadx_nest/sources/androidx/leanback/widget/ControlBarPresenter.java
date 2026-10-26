@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class ControlBarPresenter extends Presenter {
     static final int MAX_CONTROLS = 7;
     private static int sChildMarginDefault;
@@ -55,7 +55,7 @@ class ControlBarPresenter extends Presenter {
             this.mDataObserver = new AnonymousClass2(ControlBarPresenter.this);
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.ControlBarPresenter$ViewHolder$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.ControlBarPresenter$ViewHolder$1, reason: invalid class name */
         class AnonymousClass1 implements ControlBar.OnChildFocusedListener {
             final /* synthetic */ ControlBarPresenter val$this$0;
 
@@ -77,7 +77,7 @@ class ControlBarPresenter extends Presenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.ControlBarPresenter$ViewHolder$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.ControlBarPresenter$ViewHolder$2, reason: invalid class name */
         class AnonymousClass2 extends ObjectAdapter.DataObserver {
             final /* synthetic */ ControlBarPresenter val$this$0;
 
@@ -143,7 +143,7 @@ class ControlBarPresenter extends Presenter {
             presenter.onBindViewHolder(viewHolderOnCreateViewHolder, obj);
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.ControlBarPresenter$ViewHolder$3, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.ControlBarPresenter$ViewHolder$3, reason: invalid class name */
         class AnonymousClass3 implements View.OnClickListener {
             final /* synthetic */ Presenter.ViewHolder val$itemViewHolder;
             final /* synthetic */ int val$position;

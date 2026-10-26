@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.util.IO;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ObjectIdSerializer {
     private static final byte NON_NULL_MARKER = 1;
     private static final byte NULL_MARKER = 0;

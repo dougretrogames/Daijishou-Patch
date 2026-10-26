@@ -5,7 +5,7 @@ import io.opencensus.metrics.LabelValue;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_TimeSeries extends TimeSeries {
     private final List<LabelValue> labelValues;
     private final List<Point> points;

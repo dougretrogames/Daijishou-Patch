@@ -4,7 +4,7 @@ import android.database.Cursor;
 import android.util.LruCache;
 import androidx.leanback.database.CursorMapper;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CursorObjectAdapter extends ObjectAdapter {
     private static final int CACHE_SIZE = 100;
     private Cursor mCursor;

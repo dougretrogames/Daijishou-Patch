@@ -4,7 +4,7 @@ import java.util.List;
 import org.jsoup.internal.QuietAppendable;
 import org.jsoup.parser.Parser;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Comment extends LeafNode {
     public Comment(String str) {
         super(str);

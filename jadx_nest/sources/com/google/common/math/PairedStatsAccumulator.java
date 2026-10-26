@@ -3,7 +3,7 @@ package com.google.common.math;
 import com.google.common.base.Preconditions;
 import com.google.common.primitives.Doubles;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class PairedStatsAccumulator {
     private final StatsAccumulator xStats = new StatsAccumulator();

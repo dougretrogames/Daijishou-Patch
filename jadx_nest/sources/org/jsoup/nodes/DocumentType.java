@@ -5,7 +5,7 @@ import org.jsoup.helper.Validate;
 import org.jsoup.internal.QuietAppendable;
 import org.jsoup.internal.StringUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DocumentType extends LeafNode {
     private static final String NameKey = "name";
     public static final String PUBLIC_KEY = "PUBLIC";

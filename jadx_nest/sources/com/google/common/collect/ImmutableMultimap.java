@@ -15,7 +15,7 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ImmutableMultimap<K, V> extends BaseImmutableMultimap<K, V> implements Serializable {
     private static final long serialVersionUID = 0;
@@ -296,7 +296,7 @@ public abstract class ImmutableMultimap<K, V> extends BaseImmutableMultimap<K, V
         return (ImmutableCollection) super.entries();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractMultimap
     public ImmutableCollection<Map.Entry<K, V>> createEntries() {
         return new EntryCollection(this);
@@ -340,7 +340,7 @@ public abstract class ImmutableMultimap<K, V> extends BaseImmutableMultimap<K, V
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ImmutableMultimap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ImmutableMultimap$1, reason: invalid class name */
     class AnonymousClass1 extends UnmodifiableIterator<Map.Entry<K, V>> {
         final Iterator<? extends Map.Entry<K, ? extends ImmutableCollection<V>>> asMapItr;
 
@@ -368,7 +368,7 @@ public abstract class ImmutableMultimap<K, V> extends BaseImmutableMultimap<K, V
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractMultimap
     public UnmodifiableIterator<Map.Entry<K, V>> entryIterator() {
         return new AnonymousClass1();
@@ -379,7 +379,7 @@ public abstract class ImmutableMultimap<K, V> extends BaseImmutableMultimap<K, V
         return (ImmutableMultiset) super.keys();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractMultimap
     public ImmutableMultiset<K> createKeys() {
         return new Keys();
@@ -451,13 +451,13 @@ public abstract class ImmutableMultimap<K, V> extends BaseImmutableMultimap<K, V
         return (ImmutableCollection) super.values();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractMultimap
     public ImmutableCollection<V> createValues() {
         return new Values(this);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ImmutableMultimap$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ImmutableMultimap$2, reason: invalid class name */
     class AnonymousClass2 extends UnmodifiableIterator<V> {
         Iterator<? extends ImmutableCollection<V>> valueCollectionItr;
         Iterator<V> valueItr = Iterators.emptyIterator();
@@ -480,7 +480,7 @@ public abstract class ImmutableMultimap<K, V> extends BaseImmutableMultimap<K, V
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractMultimap
     public UnmodifiableIterator<V> valueIterator() {
         return new AnonymousClass2();

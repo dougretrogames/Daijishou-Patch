@@ -14,7 +14,7 @@ import org.checkerframework.framework.qual.TypeKind;
 import org.checkerframework.framework.qual.TypeUseLocation;
 import org.checkerframework.framework.qual.UpperBoundFor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Target({ElementType.TYPE_USE, ElementType.TYPE_PARAMETER})
 @QualifierForLiterals({LiteralKind.STRING})
 @Retention(RetentionPolicy.RUNTIME)

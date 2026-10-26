@@ -2,7 +2,7 @@ package org.eclipse.jgit.internal.storage.dfs;
 
 import org.eclipse.jgit.events.RepositoryEvent;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BeforeDfsPackIndexLoadedEvent extends RepositoryEvent<BeforeDfsPackIndexLoadedListener> {
     private final DfsPackFile pack;
 

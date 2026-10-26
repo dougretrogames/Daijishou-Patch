@@ -1,6 +1,6 @@
 package com.google.api.client.googleapis.auth.oauth2;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class SystemEnvironmentProvider {
     static final SystemEnvironmentProvider INSTANCE = new SystemEnvironmentProvider();
 

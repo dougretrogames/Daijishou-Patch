@@ -3,8 +3,8 @@ package com.google.common.util.concurrent;
 import java.lang.reflect.Method;
 import java.util.concurrent.Callable;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class SimpleTimeLimiter$1$$ExternalSyntheticLambda0 implements Callable {
     public final /* synthetic */ Method f$0;
     public final /* synthetic */ Object f$1;

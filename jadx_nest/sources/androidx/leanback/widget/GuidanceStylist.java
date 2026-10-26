@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class GuidanceStylist implements FragmentAnimationProvider {
     private TextView mBreadcrumbView;
     private TextView mDescriptionView;

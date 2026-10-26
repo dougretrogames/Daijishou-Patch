@@ -75,7 +75,7 @@ import org.eclipse.jgit.transport.PacketLineOut;
 import org.eclipse.jgit.util.BlockList;
 import org.eclipse.jgit.util.TemporaryBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PackWriter implements AutoCloseable {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$internal$storage$pack$PackWriter$PackingPhase = null;
     private static final int PACK_VERSION_GENERATED = 2;
@@ -132,7 +132,7 @@ public class PackWriter implements AutoCloseable {
         WRITING,
         BUILDING_BITMAPS;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static PackingPhase[] valuesCustom() {
             PackingPhase[] packingPhaseArrValuesCustom = values();
             int length = packingPhaseArrValuesCustom.length;
@@ -176,7 +176,7 @@ public class PackWriter implements AutoCloseable {
         return iArr2;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.pack.PackWriter$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.pack.PackWriter$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<PackWriter> {
         private final Iterator<WeakReference<PackWriter>> it = PackWriter.instances.keySet().iterator();
         private PackWriter next;
@@ -216,7 +216,7 @@ public class PackWriter implements AutoCloseable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Iterator<PackWriter> instancesIterable() {
         return new AnonymousClass1();
     }
@@ -237,7 +237,7 @@ public class PackWriter implements AutoCloseable {
         this(packConfig, objectReader, null);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public PackWriter(PackConfig packConfig, ObjectReader objectReader, @Nullable PackStatistics.Accumulator accumulator) {
         BlockList<ObjectToPack>[] blockListArr = new BlockList[5];
         this.objectsLists = blockListArr;
@@ -424,7 +424,7 @@ public class PackWriter implements AutoCloseable {
         return objectIdOwnerMap;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.pack.PackWriter$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.pack.PackWriter$2, reason: invalid class name */
     class AnonymousClass2 extends ObjectIdOwnerMap.Entry {
         AnonymousClass2(AnyObjectId anyObjectId) {
             super(anyObjectId);

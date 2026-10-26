@@ -3,7 +3,7 @@ package androidx.leanback.widget;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class InvisibleRowPresenter extends RowPresenter {
     public InvisibleRowPresenter() {
         setHeaderPresenter(null);

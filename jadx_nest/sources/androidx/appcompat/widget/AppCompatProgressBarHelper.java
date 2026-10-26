@@ -17,7 +17,7 @@ import android.widget.ProgressBar;
 import androidx.core.graphics.drawable.WrappedDrawable;
 import androidx.leanback.media.MediaPlayerGlue;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class AppCompatProgressBarHelper {
     private static final int[] TINT_ATTRS = {R.attr.indeterminateDrawable, R.attr.progressDrawable};
     private Bitmap mSampleTile;
@@ -40,7 +40,7 @@ class AppCompatProgressBarHelper {
         tintTypedArrayObtainStyledAttributes.recycle();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     Drawable tileify(Drawable drawable, boolean z) {
         if (drawable instanceof WrappedDrawable) {
             WrappedDrawable wrappedDrawable = (WrappedDrawable) drawable;

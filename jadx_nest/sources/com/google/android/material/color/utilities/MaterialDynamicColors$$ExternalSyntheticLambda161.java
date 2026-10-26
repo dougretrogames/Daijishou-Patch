@@ -2,8 +2,8 @@ package com.google.android.material.color.utilities;
 
 import java.util.function.Function;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class MaterialDynamicColors$$ExternalSyntheticLambda161 implements Function {
     public final /* synthetic */ MaterialDynamicColors f$0;
 

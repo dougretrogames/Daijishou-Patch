@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class PublicSuffixListParser {
     public PublicSuffixList parse(Reader reader) throws IOException {
         ArrayList arrayList = new ArrayList();

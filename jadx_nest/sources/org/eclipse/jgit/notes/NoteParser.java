@@ -10,7 +10,7 @@ import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class NoteParser extends CanonicalTreeParser {
     private NonNoteEntry firstNonNote;
     private NonNoteEntry lastNonNote;

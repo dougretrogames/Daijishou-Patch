@@ -12,7 +12,7 @@ import com.google.android.material.color.utilities.Blend;
 import com.google.android.material.color.utilities.Hct;
 import com.google.android.material.resources.MaterialAttributes;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialColors {
     public static final float ALPHA_DISABLED = 0.38f;
     public static final float ALPHA_DISABLED_LOW = 0.12f;

@@ -8,7 +8,7 @@ import androidx.lifecycle.Lifecycle;
 import java.util.ArrayList;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class BackStackRecordState implements Parcelable {
     public static final Parcelable.Creator<BackStackRecordState> CREATOR = new AnonymousClass1();
     private static final String TAG = "FragmentManager";
@@ -182,18 +182,18 @@ final class BackStackRecordState implements Parcelable {
         parcel.writeInt(this.mReorderingAllowed ? 1 : 0);
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.BackStackRecordState$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.BackStackRecordState$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.Creator<BackStackRecordState> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public BackStackRecordState createFromParcel(Parcel parcel) {
             return new BackStackRecordState(parcel);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public BackStackRecordState[] newArray(int i) {
             return new BackStackRecordState[i];

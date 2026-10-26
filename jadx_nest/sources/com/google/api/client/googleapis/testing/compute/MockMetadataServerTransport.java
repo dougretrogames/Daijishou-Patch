@@ -13,7 +13,7 @@ import com.google.api.client.testing.http.MockLowLevelHttpResponse;
 import com.google.auth.http.AuthHttpConstants;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockMetadataServerTransport extends MockHttpTransport {
     static final JsonFactory JSON_FACTORY;
     private static final String METADATA_SERVER_URL;
@@ -47,7 +47,7 @@ public class MockMetadataServerTransport extends MockHttpTransport {
         return super.buildRequest(str, str2);
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.googleapis.testing.compute.MockMetadataServerTransport$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.googleapis.testing.compute.MockMetadataServerTransport$1, reason: invalid class name */
     class AnonymousClass1 extends MockLowLevelHttpRequest {
         AnonymousClass1(String str) {
             super(str);
@@ -70,7 +70,7 @@ public class MockMetadataServerTransport extends MockHttpTransport {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.googleapis.testing.compute.MockMetadataServerTransport$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.googleapis.testing.compute.MockMetadataServerTransport$2, reason: invalid class name */
     class AnonymousClass2 extends MockLowLevelHttpRequest {
         AnonymousClass2(String str) {
             super(str);

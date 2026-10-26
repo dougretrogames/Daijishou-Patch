@@ -4,8 +4,8 @@ import com.google.android.gms.common.internal.Preconditions;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadFactory;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public class NamedThreadFactory implements ThreadFactory {
     private final String zza;
     private final ThreadFactory zzb = Executors.defaultThreadFactory();

@@ -7,8 +7,8 @@ import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: BufferedChannel.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: BufferedChannel.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "kotlinx.coroutines.channels.BufferedChannel", f = "BufferedChannel.kt", i = {0, 0, 0, 0}, l = {3064}, m = "receiveCatchingOnNoWaiterSuspend-GKJJFZk", n = {"this", "segment", ConfigConstants.CONFIG_INDEX_SECTION, "r"}, s = {"L$0", "L$1", "I$0", "J$0"})
 final class BufferedChannel$receiveCatchingOnNoWaiterSuspend$1 extends ContinuationImpl {
@@ -20,7 +20,7 @@ final class BufferedChannel$receiveCatchingOnNoWaiterSuspend$1 extends Continuat
     /* synthetic */ Object result;
     final /* synthetic */ BufferedChannel<E> this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     BufferedChannel$receiveCatchingOnNoWaiterSuspend$1(BufferedChannel<E> bufferedChannel, Continuation<? super BufferedChannel$receiveCatchingOnNoWaiterSuspend$1> continuation) {
         super(continuation);
         this.this$0 = bufferedChannel;

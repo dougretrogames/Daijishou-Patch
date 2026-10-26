@@ -3,7 +3,7 @@ package com.google.protobuf;
 import java.util.Arrays;
 import java.util.RandomAccess;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class ProtobufArrayList<E> extends AbstractProtobufList<E> implements RandomAccess {
     private static final ProtobufArrayList<Object> EMPTY_LIST = new ProtobufArrayList<>(new Object[0], 0, false);
     private E[] array;
@@ -24,7 +24,7 @@ final class ProtobufArrayList<E> extends AbstractProtobufList<E> implements Rand
     }
 
     @Override // com.google.protobuf.Internal.ProtobufList, com.google.protobuf.Internal.BooleanList
-    /* JADX INFO: renamed from: mutableCopyWithCapacity */
+    /* INFO: renamed from: mutableCopyWithCapacity */
     public ProtobufArrayList<E> mutableCopyWithCapacity2(int capacity) {
         if (capacity < this.size) {
             throw new IllegalArgumentException();

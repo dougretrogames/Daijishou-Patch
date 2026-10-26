@@ -1,6 +1,6 @@
 package org.eclipse.jgit.attributes;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Attribute {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$attributes$Attribute$State;
     private final String key;
@@ -13,7 +13,7 @@ public final class Attribute {
         UNSPECIFIED,
         CUSTOM;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static State[] valuesCustom() {
             State[] stateArrValuesCustom = values();
             int length = stateArrValuesCustom.length;

@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ScrollEventAdapter extends RecyclerView.OnScrollListener {
     private static final int NO_POSITION = -1;
     private static final int STATE_IDLE = 0;
@@ -89,8 +89,8 @@ final class ScrollEventAdapter extends RecyclerView.OnScrollListener {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:12:0x001f  */
-    /* JADX WARN: Code duplicated, block: B:14:0x0025  */
+    /* WARN: Code duplicated, block: B:12:0x001f  */
+    /* WARN: Code duplicated, block: B:14:0x0025  */
     @Override // androidx.recyclerview.widget.RecyclerView.OnScrollListener
     public void onScrolled(RecyclerView recyclerView, int i, int i2) {
         int i3;

@@ -1,6 +1,6 @@
 package com.googlecode.javaewah32;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public interface IteratingRLW32 {
     IteratingRLW32 clone() throws CloneNotSupportedException;
 

@@ -8,7 +8,7 @@ import org.chromium.support_lib_boundary.WebMessageBoundaryInterface;
 import org.chromium.support_lib_boundary.WebMessagePayloadBoundaryInterface;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebMessageAdapter implements WebMessageBoundaryInterface {
     private static final String[] sFeatures = {"WEB_MESSAGE_ARRAY_BUFFER"};
     private final WebMessageCompat mWebMessageCompat;

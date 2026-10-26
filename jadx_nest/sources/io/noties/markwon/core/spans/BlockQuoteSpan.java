@@ -7,7 +7,7 @@ import android.text.Layout;
 import android.text.style.LeadingMarginSpan;
 import io.noties.markwon.core.MarkwonTheme;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class BlockQuoteSpan implements LeadingMarginSpan {
     private final MarkwonTheme theme;
     private final Rect rect = ObjectsPool.rect();

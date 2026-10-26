@@ -6,7 +6,7 @@ import java.util.concurrent.ConcurrentMap;
 import javax.annotation.Nullable;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class CompressorRegistry {
     private static final CompressorRegistry DEFAULT_INSTANCE = new CompressorRegistry(new Codec.Gzip(), Codec.Identity.NONE);
     private final ConcurrentMap<String, Compressor> compressors = new ConcurrentHashMap();

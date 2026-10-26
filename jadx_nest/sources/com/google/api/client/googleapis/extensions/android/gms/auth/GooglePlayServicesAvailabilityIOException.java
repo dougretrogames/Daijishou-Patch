@@ -2,7 +2,7 @@ package com.google.api.client.googleapis.extensions.android.gms.auth;
 
 import com.google.android.gms.auth.GooglePlayServicesAvailabilityException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GooglePlayServicesAvailabilityIOException extends UserRecoverableAuthIOException {
     private static final long serialVersionUID = 1;
 

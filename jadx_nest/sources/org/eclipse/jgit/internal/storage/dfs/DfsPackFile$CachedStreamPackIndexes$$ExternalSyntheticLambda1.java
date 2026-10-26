@@ -3,8 +3,8 @@ package org.eclipse.jgit.internal.storage.dfs;
 import java.util.concurrent.atomic.AtomicReference;
 import org.eclipse.jgit.internal.storage.file.PackIndex;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class DfsPackFile$CachedStreamPackIndexes$$ExternalSyntheticLambda1 implements DfsBlockCache.RefLoader {
     public final /* synthetic */ DfsReader f$0;
     public final /* synthetic */ PackIndex f$1;

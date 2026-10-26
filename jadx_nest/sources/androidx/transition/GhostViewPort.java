@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class GhostViewPort extends ViewGroup implements GhostView {
     private Matrix mMatrix;
     private final ViewTreeObserver.OnPreDrawListener mOnPreDrawListener;
@@ -19,7 +19,7 @@ class GhostViewPort extends ViewGroup implements GhostView {
     protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
     }
 
-    /* JADX INFO: renamed from: androidx.transition.GhostViewPort$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.GhostViewPort$1, reason: invalid class name */
     class AnonymousClass1 implements ViewTreeObserver.OnPreDrawListener {
         AnonymousClass1() {
         }

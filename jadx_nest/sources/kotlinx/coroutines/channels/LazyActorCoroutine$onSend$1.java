@@ -6,8 +6,8 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlinx.coroutines.selects.SelectInstance;
 
-/* JADX INFO: compiled from: Actor.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: Actor.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 /* synthetic */ class LazyActorCoroutine$onSend$1 extends FunctionReferenceImpl implements Function3<LazyActorCoroutine<?>, SelectInstance<?>, Object, Unit> {
     public static final LazyActorCoroutine$onSend$1 INSTANCE = new LazyActorCoroutine$onSend$1();
@@ -22,7 +22,7 @@ import kotlinx.coroutines.selects.SelectInstance;
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(LazyActorCoroutine<?> lazyActorCoroutine, SelectInstance<?> selectInstance, Object obj) throws Throwable {
         lazyActorCoroutine.onSendRegFunction(selectInstance, obj);
     }

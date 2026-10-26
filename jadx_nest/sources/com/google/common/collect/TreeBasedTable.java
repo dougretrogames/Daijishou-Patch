@@ -15,7 +15,7 @@ import java.util.SortedSet;
 import java.util.TreeMap;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class TreeBasedTable<R, C, V> extends StandardRowSortedTable<R, C, V> {
     private static final long serialVersionUID = 0;
@@ -31,7 +31,7 @@ public class TreeBasedTable<R, C, V> extends StandardRowSortedTable<R, C, V> {
         super.clear();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.StandardTable, com.google.common.collect.Table
     public /* bridge */ /* synthetic */ Map column(Object columnKey) {
         return super.column(columnKey);
@@ -88,7 +88,7 @@ public class TreeBasedTable<R, C, V> extends StandardRowSortedTable<R, C, V> {
         return super.isEmpty();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.StandardTable, com.google.common.collect.AbstractTable, com.google.common.collect.Table
     @CheckForNull
     public /* bridge */ /* synthetic */ Object put(Object rowKey, Object columnKey, Object value) {
@@ -262,7 +262,7 @@ public class TreeBasedTable<R, C, V> extends StandardRowSortedTable<R, C, V> {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.StandardTable.Row
         @CheckForNull
         public SortedMap<C, V> computeBackingRowMap() {
@@ -320,7 +320,7 @@ public class TreeBasedTable<R, C, V> extends StandardRowSortedTable<R, C, V> {
         return new AnonymousClass1(this, Iterators.mergeSorted(Iterables.transform(this.backingMap.values(), new TreeBasedTable$$ExternalSyntheticLambda0()), comparatorColumnComparator), comparatorColumnComparator);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.TreeBasedTable$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.TreeBasedTable$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractIterator<C> {
 
         @CheckForNull

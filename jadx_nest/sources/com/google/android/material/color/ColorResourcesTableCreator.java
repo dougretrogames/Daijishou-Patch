@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ColorResourcesTableCreator {
     private static final byte ANDROID_PACKAGE_ID = 1;
     private static final byte APPLICATION_PACKAGE_ID = 127;
@@ -32,7 +32,7 @@ final class ColorResourcesTableCreator {
     private ColorResourcesTableCreator() {
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.color.ColorResourcesTableCreator$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.color.ColorResourcesTableCreator$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<ColorResource> {
         AnonymousClass1() {
         }
@@ -433,7 +433,7 @@ final class ColorResourcesTableCreator {
 
     static class PackageInfo {
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         private final int f30id;
         private final String name;
 
@@ -459,22 +459,22 @@ final class ColorResourcesTableCreator {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] shortToByteArray(short s) {
         return new byte[]{(byte) (s & 255), (byte) ((s >> 8) & 255)};
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] charToByteArray(char c) {
         return new byte[]{(byte) (c & 255), (byte) ((c >> '\b') & 255)};
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] intToByteArray(int i) {
         return new byte[]{(byte) (i & 255), (byte) ((i >> 8) & 255), (byte) ((i >> 16) & 255), (byte) ((i >> 24) & 255)};
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] stringToByteArray(String str) {
         char[] charArray = str.toCharArray();
         int length = charArray.length * 2;
@@ -493,7 +493,7 @@ final class ColorResourcesTableCreator {
         return bArr;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] stringToByteArrayUtf8(String str) {
         byte[] bytes = str.getBytes(Charset.forName("UTF-8"));
         byte length = (byte) bytes.length;

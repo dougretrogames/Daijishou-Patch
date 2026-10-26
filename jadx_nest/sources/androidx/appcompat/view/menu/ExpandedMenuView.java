@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import androidx.appcompat.widget.TintTypedArray;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ExpandedMenuView extends ListView implements MenuBuilder.ItemInvoker, MenuView, AdapterView.OnItemClickListener {
     private static final int[] TINT_ATTRS = {R.attr.background, R.attr.divider};
     private int mAnimations;

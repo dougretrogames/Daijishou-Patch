@@ -9,9 +9,9 @@ import kotlin.coroutines.jvm.internal.RestrictedSuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlin.sequences.SequenceScope;
 
-/* JADX INFO: Add missing generic type declarations: [E] */
-/* JADX INFO: compiled from: ScatterSet.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: Add missing generic type declarations: [E] */
+/* INFO: compiled from: ScatterSet.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.LONGITUDE_EAST, "Lkotlin/sequences/SequenceScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
 @DebugMetadata(c = "androidx.collection.MutableScatterSet$MutableSetWrapper$iterator$1$iterator$1", f = "ScatterSet.kt", i = {0, 0, 0, 0, 0, 0, 0}, l = {1060}, m = "invokeSuspend", n = {"$this$iterator", "m$iv", "lastIndex$iv", "i$iv", "slot$iv", "bitCount$iv", "j$iv"}, s = {"L$0", "L$3", "I$0", "I$1", "J$0", "I$2", "I$3"})
 final class MutableScatterSet$MutableSetWrapper$iterator$1$iterator$1<E> extends RestrictedSuspendLambda implements Function2<SequenceScope<? super E>, Continuation<? super Unit>, Object> {
@@ -28,7 +28,7 @@ final class MutableScatterSet$MutableSetWrapper$iterator$1$iterator$1<E> extends
     final /* synthetic */ MutableScatterSet<E> this$0;
     final /* synthetic */ MutableScatterSet$MutableSetWrapper$iterator$1<E> this$1;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     MutableScatterSet$MutableSetWrapper$iterator$1$iterator$1(MutableScatterSet<E> mutableScatterSet, MutableScatterSet$MutableSetWrapper$iterator$1<E> mutableScatterSet$MutableSetWrapper$iterator$1, Continuation<? super MutableScatterSet$MutableSetWrapper$iterator$1$iterator$1> continuation) {
         super(2, continuation);
         this.this$0 = mutableScatterSet;
@@ -47,19 +47,19 @@ final class MutableScatterSet$MutableSetWrapper$iterator$1$iterator$1<E> extends
         return ((MutableScatterSet$MutableSetWrapper$iterator$1$iterator$1) create(sequenceScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x005c  */
-    /* JADX WARN: Code duplicated, block: B:21:0x00a3 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:22:0x00a5  */
-    /* JADX WARN: Code duplicated, block: B:24:0x00ae  */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:12:0x005a -> B:23:0x00ac). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:13:0x005c -> B:14:0x0070). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:16:0x0079 -> B:20:0x00a0). Please report as a decompilation issue!!! */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:18:0x009d -> B:20:0x00a0). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
-        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+    /* WARN: Code duplicated, block: B:13:0x005c  */
+    /* WARN: Code duplicated, block: B:21:0x00a3 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:22:0x00a5  */
+    /* WARN: Code duplicated, block: B:24:0x00ae  */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:12:0x005a -> B:23:0x00ac). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:13:0x005c -> B:14:0x0070). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:16:0x0079 -> B:20:0x00a0). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:18:0x009d -> B:20:0x00a0). Please report as a decompilation issue!!! */
+    /* ERROR: decompilerOverflowException in pass: RegionMakerVisitor
+        decompiler.core.utils.exceptions.decompilerOverflowException: Regions stack size limit reached
+        	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final java.lang.Object invokeSuspend(java.lang.Object r22) {

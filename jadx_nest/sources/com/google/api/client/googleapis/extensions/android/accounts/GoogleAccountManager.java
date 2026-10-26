@@ -5,7 +5,7 @@ import android.accounts.AccountManager;
 import android.content.Context;
 import com.google.api.client.util.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class GoogleAccountManager {
     public static final String ACCOUNT_TYPE = "com.google";
     private final AccountManager manager;

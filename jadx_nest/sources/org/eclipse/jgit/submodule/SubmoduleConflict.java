@@ -3,7 +3,7 @@ package org.eclipse.jgit.submodule;
 import org.eclipse.jgit.diff.Sequence;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SubmoduleConflict extends Sequence {
     private final ObjectId objectId;
 

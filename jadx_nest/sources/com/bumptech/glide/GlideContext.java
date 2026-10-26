@@ -13,7 +13,7 @@ import com.bumptech.glide.util.GlideSuppliers;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GlideContext extends ContextWrapper {
     static final TransitionOptions<?, ?> DEFAULT_TRANSITION_OPTIONS = new GenericTransitionOptions();
     private final ArrayPool arrayPool;

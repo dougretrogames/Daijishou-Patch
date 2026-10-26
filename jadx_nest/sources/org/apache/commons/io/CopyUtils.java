@@ -11,7 +11,7 @@ import java.io.StringReader;
 import java.io.Writer;
 import java.nio.charset.Charset;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class CopyUtils {
     public static void copy(byte[] bArr, OutputStream outputStream) throws IOException {

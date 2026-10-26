@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IOExceptionList extends IOException implements Iterable<Throwable> {
     private static final long serialVersionUID = 1;
     private final List<? extends Throwable> causeList;

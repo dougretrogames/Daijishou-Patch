@@ -53,8 +53,8 @@ import kotlinx.coroutines.Job;
 import kotlinx.coroutines.SupervisorKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: compiled from: DaijishouDebugService.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouDebugService.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000p\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\b\u0018\u0000 02\u00020\u0001:\u000201B\u0005¢\u0006\u0002\u0010\u0002J\u0010\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\"H\u0002J\u0012\u0010#\u001a\u0004\u0018\u00010$2\u0006\u0010%\u001a\u00020&H\u0016J\b\u0010'\u001a\u00020 H\u0016J\b\u0010(\u001a\u00020 H\u0016J\"\u0010)\u001a\u00020*2\b\u0010%\u001a\u0004\u0018\u00010&2\u0006\u0010+\u001a\u00020*2\u0006\u0010,\u001a\u00020*H\u0016J\b\u0010-\u001a\u00020 H\u0002J\b\u0010.\u001a\u00020 H\u0002J\b\u0010/\u001a\u00020 H\u0002R\u0018\u0010\u0003\u001a\f\u0012\b\u0012\u00060\u0005R\u00020\u00000\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u001e\u0010\f\u001a\u00060\rR\u00020\u000eX\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\u000f\u0010\u0010\"\u0004\b\u0011\u0010\u0012R\u000e\u0010\u0013\u001a\u00020\u0014X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0015\u001a\u00020\u0016X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR\u000e\u0010\u001b\u001a\u00020\u001cX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u001d\u001a\u0004\u0018\u00010\u001eX\u0082\u000e¢\u0006\u0002\n\u0000¨\u00062"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_debug_service/DaijishouDebugService;", "Lcom/magneticchen/daijishou/activities/abstract_classes/DaijishouService;", "()V", "daijishouDebugServiceTcpClients", "", "Lcom/magneticchen/daijishou/daijishou_debug_service/DaijishouDebugService$DaijishouDebugServiceTcpClient;", "isServerRunning", "Ljava/util/concurrent/atomic/AtomicBoolean;", "isServiceInForeground", "", "job", "Lkotlinx/coroutines/CompletableJob;", "logger", "Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "Lcom/magneticchen/daijishou/DaijishouApplication;", "getLogger", "()Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "setLogger", "(Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;)V", "notificationChannel", "Landroid/app/NotificationChannel;", "notificationManager", "Landroid/app/NotificationManager;", "getNotificationManager", "()Landroid/app/NotificationManager;", "setNotificationManager", "(Landroid/app/NotificationManager;)V", "scope", "Lkotlinx/coroutines/CoroutineScope;", "serverSocket", "Ljava/net/ServerSocket;", "handleTcpClient", "", "socket", "Ljava/net/Socket;", "onBind", "Landroid/os/IBinder;", "intent", "Landroid/content/Intent;", "onCreate", "onDestroy", "onStartCommand", "", "flags", "startId", "startForeground", "startTcpServer", "stopTcpServer", "Companion", "DaijishouDebugServiceTcpClient", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class DaijishouDebugService extends DaijishouService {
     public static final int HEARTBEAT_INTERVAL_MS = 3000;
@@ -115,7 +115,7 @@ public final class DaijishouDebugService extends DaijishouService {
         this.notificationManager = notificationManager;
     }
 
-    /* JADX INFO: compiled from: DaijishouDebugService.kt */
+    /* INFO: compiled from: DaijishouDebugService.kt */
     @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\b\u0086\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u000e\u001a\u00020\u000fH\u0002J\u0006\u0010\u0010\u001a\u00020\u000fJ\u0006\u0010\u0011\u001a\u00020\u000fJ\u0006\u0010\u0012\u001a\u00020\u000fJ\u0006\u0010\u0013\u001a\u00020\u000fR\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R*\u0010\t\u001a\u001e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\f0\nj\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\f`\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0014"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_debug_service/DaijishouDebugService$DaijishouDebugServiceTcpClient;", "", "socket", "Ljava/net/Socket;", "(Lcom/magneticchen/daijishou/daijishou_debug_service/DaijishouDebugService;Ljava/net/Socket;)V", "keepRunning", "", "lastHeartbeatTime", "", "operationCodeToInstanceHashMap", "Ljava/util/HashMap;", "", "Lcom/magneticchen/daijishou/daijishou_debug_service/passive_protocol/ClientOperation;", "Lkotlin/collections/HashMap;", "closeTcpClient", "", "digestBytes", "digestOperationBytes", "start", "stop", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class DaijishouDebugServiceTcpClient {
         public boolean keepRunning;
@@ -160,7 +160,7 @@ public final class DaijishouDebugService extends DaijishouService {
             ThreadsKt.thread$default(false, false, null, null, 0, new DaijishouDebugService$DaijishouDebugServiceTcpClient$start$1(this.this$0, this), 31, null);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final void closeTcpClient() {
             try {
                 this.socket.close();
@@ -200,8 +200,8 @@ public final class DaijishouDebugService extends DaijishouService {
         BuildersKt.launch$default(this.scope, null, null, new AnonymousClass1(null), 3, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.DaijishouDebugService$onCreate$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouDebugService.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.DaijishouDebugService$onCreate$1, reason: invalid class name */
+    /* INFO: compiled from: DaijishouDebugService.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_debug_service.DaijishouDebugService$onCreate$1", f = "DaijishouDebugService.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -277,7 +277,7 @@ public final class DaijishouDebugService extends DaijishouService {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void handleTcpClient(Socket socket) {
         Intent intent = new Intent(this, (Class<?>) BootstrapActivity.class);
         intent.addFlags(268435456);
@@ -288,8 +288,8 @@ public final class DaijishouDebugService extends DaijishouService {
         list.add(daijishouDebugServiceTcpClient);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.DaijishouDebugService$startTcpServer$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouDebugService.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.DaijishouDebugService$startTcpServer$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouDebugService.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02101 extends Lambda<Unit> implements Function0<Unit> {
         C02101() {
@@ -302,7 +302,7 @@ public final class DaijishouDebugService extends DaijishouService {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             Socket socketAccept = null;
             try {
@@ -332,7 +332,7 @@ public final class DaijishouDebugService extends DaijishouService {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void startTcpServer() {
         ThreadsKt.thread$default(false, false, null, null, 0, new C02101(), 31, null);
     }

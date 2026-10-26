@@ -31,7 +31,7 @@ import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 import org.apache.http.util.LangUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicHttpClientConnectionManager implements HttpClientConnectionManager, Closeable {
     private ManagedHttpClientConnection conn;
     private ConnectionConfig connConfig;
@@ -125,7 +125,7 @@ public class BasicHttpClientConnectionManager implements HttpClientConnectionMan
         this.connConfig = connectionConfig;
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.conn.BasicHttpClientConnectionManager$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.conn.BasicHttpClientConnectionManager$1, reason: invalid class name */
     class AnonymousClass1 implements ConnectionRequest {
         final /* synthetic */ HttpRoute val$route;
         final /* synthetic */ Object val$state;

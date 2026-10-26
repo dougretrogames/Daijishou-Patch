@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.SortedMap;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractNavigableMap<K, V> extends Maps.IteratorBasedAbstractMap<K, V> implements NavigableMap<K, V> {
     abstract Iterator<Map.Entry<K, V>> descendingEntryIterator();

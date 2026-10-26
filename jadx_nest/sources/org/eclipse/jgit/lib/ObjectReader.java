@@ -18,7 +18,7 @@ import org.eclipse.jgit.revwalk.ObjectWalk;
 import org.eclipse.jgit.revwalk.ReachabilityChecker;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class ObjectReader implements AutoCloseable {
     public static final int OBJ_ANY = -1;
     protected int streamFileThreshold;
@@ -87,11 +87,11 @@ public abstract class ObjectReader implements AutoCloseable {
         return open(anyObjectId, -1);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.ObjectReader$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: org.eclipse.jgit.lib.ObjectReader$1, reason: invalid class name */
     class AnonymousClass1<T> implements AsyncObjectLoaderQueue<T> {
 
-        /* JADX INFO: Incorrect field signature: TT; */
+        /* INFO: Incorrect field signature: TT; */
         private ObjectId cur;
         private final /* synthetic */ Iterator val$idItr;
 
@@ -117,7 +117,7 @@ public abstract class ObjectReader implements AutoCloseable {
             return true;
         }
 
-        /* JADX WARN: Incorrect return type in method signature: ()TT; */
+        /* WARN: Incorrect return type in method signature: ()TT; */
         @Override // org.eclipse.jgit.lib.AsyncObjectLoaderQueue
         public ObjectId getCurrent() {
             return this.cur;
@@ -146,11 +146,11 @@ public abstract class ObjectReader implements AutoCloseable {
         return open(anyObjectId, i).getSize() <= j;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.ObjectReader$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: org.eclipse.jgit.lib.ObjectReader$2, reason: invalid class name */
     class AnonymousClass2<T> implements AsyncObjectSizeQueue<T> {
 
-        /* JADX INFO: Incorrect field signature: TT; */
+        /* INFO: Incorrect field signature: TT; */
         private ObjectId cur;
         private long sz;
         private final /* synthetic */ Iterator val$idItr;
@@ -179,7 +179,7 @@ public abstract class ObjectReader implements AutoCloseable {
             return true;
         }
 
-        /* JADX WARN: Incorrect return type in method signature: ()TT; */
+        /* WARN: Incorrect return type in method signature: ()TT; */
         @Override // org.eclipse.jgit.lib.AsyncObjectSizeQueue
         public ObjectId getCurrent() {
             return this.cur;

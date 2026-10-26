@@ -4,7 +4,7 @@ import java.nio.file.FileVisitResult;
 import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @FunctionalInterface
 public interface PathFilter {
     FileVisitResult accept(Path path, BasicFileAttributes basicFileAttributes);

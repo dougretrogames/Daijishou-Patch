@@ -6,7 +6,7 @@ import android.view.ActionMode;
 import android.widget.TextView;
 import androidx.core.widget.TextViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class RowHeaderView extends TextView {
     public RowHeaderView(Context context) {
         this(context, null);

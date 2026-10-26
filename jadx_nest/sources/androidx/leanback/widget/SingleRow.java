@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.io.PrintWriter;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class SingleRow extends Grid {
     private final Grid.Location mTmpLocation = new Grid.Location(0);
 

@@ -15,7 +15,7 @@ import java.util.function.Function;
 import java.util.stream.Collectors;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class OrderedProperties extends Properties {
     private static final long serialVersionUID = 1;
     private final LinkedHashSet<Object> orderedKeys = new LinkedHashSet<>();
@@ -55,7 +55,7 @@ public class OrderedProperties extends Properties {
         return (Set) this.orderedKeys.stream().map(new OrderedProperties$$ExternalSyntheticLambda0(this)).collect(Collectors.toCollection(new OrderedProperties$$ExternalSyntheticLambda1()));
     }
 
-    /* JADX INFO: renamed from: lambda$entrySet$0$org-apache-commons-collections4-properties-OrderedProperties, reason: not valid java name */
+    /* INFO: renamed from: lambda$entrySet$0$org-apache-commons-collections4-properties-OrderedProperties, reason: not valid java name */
     /* synthetic */ AbstractMap.SimpleEntry m5545x72a44a24(Object obj) {
         return new AbstractMap.SimpleEntry(obj, get(obj));
     }
@@ -66,7 +66,7 @@ public class OrderedProperties extends Properties {
         this.orderedKeys.forEach(new OrderedProperties$$ExternalSyntheticLambda2(this, biConsumer));
     }
 
-    /* JADX INFO: renamed from: lambda$forEach$1$org-apache-commons-collections4-properties-OrderedProperties, reason: not valid java name */
+    /* INFO: renamed from: lambda$forEach$1$org-apache-commons-collections4-properties-OrderedProperties, reason: not valid java name */
     /* synthetic */ void m5546x46362603(BiConsumer biConsumer, Object obj) {
         biConsumer.accept(obj, get(obj));
     }

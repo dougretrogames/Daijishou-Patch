@@ -1,6 +1,6 @@
 package kr.motd.maven.os;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DetectionException extends RuntimeException {
     private static final long serialVersionUID = 7787197994442254320L;
 

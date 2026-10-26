@@ -1,7 +1,7 @@
 package androidx.core.widget;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class ContentLoadingProgressBar$$ExternalSyntheticLambda2 implements Runnable {
     public final /* synthetic */ ContentLoadingProgressBar f$0;
 

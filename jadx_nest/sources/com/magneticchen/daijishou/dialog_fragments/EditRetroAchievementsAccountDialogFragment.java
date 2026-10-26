@@ -21,23 +21,23 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: EditRetroAchievementsAccountDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: EditRetroAchievementsAccountDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u0018\u0000 \t2\u00020\u0001:\u0001\tB\u0005¢\u0006\u0002\u0010\u0002J\u0012\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006H\u0016J\b\u0010\u0007\u001a\u00020\bH\u0016¨\u0006\n"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/EditRetroAchievementsAccountDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "()V", "onCreateDialog", "Landroid/app/Dialog;", "savedInstanceState", "Landroid/os/Bundle;", "onStart", "", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class EditRetroAchievementsAccountDialogFragment extends DaijishouDialogFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$6$lambda$0(DialogInterface dialogInterface, int i) {
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$6$lambda$2(DialogInterface dialogInterface, int i) {
     }
 
-    /* JADX INFO: compiled from: EditRetroAchievementsAccountDialogFragment.kt */
+    /* INFO: compiled from: EditRetroAchievementsAccountDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0003\u001a\u00020\u0004¨\u0006\u0005"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/EditRetroAchievementsAccountDialogFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/dialog_fragments/EditRetroAchievementsAccountDialogFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -98,7 +98,7 @@ public final class EditRetroAchievementsAccountDialogFragment extends DaijishouD
         throw new IllegalStateException("Activity cannot be null");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$6$lambda$5(AlertDialog alertDialog, EditText editText, EditText editText2, SharedPreferences sharedPreferences, EditRetroAchievementsAccountDialogFragment this$0, DialogInterface dialogInterface) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNull(alertDialog, "null cannot be cast to non-null type android.app.AlertDialog");
@@ -110,7 +110,7 @@ public final class EditRetroAchievementsAccountDialogFragment extends DaijishouD
         button2.setOnClickListener(new EditRetroAchievementsAccountDialogFragment$$ExternalSyntheticLambda5(this$0));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$6$lambda$5$lambda$3(EditText editText, EditText editText2, SharedPreferences sharedPreferences, AlertDialog alertDialog, View view) {
         String string = editText.getText().toString();
         String string2 = editText2.getText().toString();
@@ -126,7 +126,7 @@ public final class EditRetroAchievementsAccountDialogFragment extends DaijishouD
         alertDialog.dismiss();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$6$lambda$5$lambda$4(EditRetroAchievementsAccountDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.startActivity(new Intent("android.intent.action.VIEW", Uri.parse(Constants.retroAchievementsRAWebKeyUri)));

@@ -6,7 +6,7 @@ import java.text.DecimalFormat;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ConstraintLayoutStatistics {
     public static final int DURATION_OF_CHILD_MEASURES = 5;
     public static final int DURATION_OF_LAYOUT = 7;
@@ -50,7 +50,7 @@ public class ConstraintLayoutStatistics {
         this.mMetrics.reset();
     }
 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public ConstraintLayoutStatistics m3145clone() {
         return new ConstraintLayoutStatistics(this);
     }

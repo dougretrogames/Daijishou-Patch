@@ -2,7 +2,7 @@ package org.jsoup;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UnsupportedMimeTypeException extends IOException {
     private final String mimeType;
     private final String url;

@@ -12,7 +12,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.OrderedIterator;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TreeList<E> extends AbstractList<E> {
     private AVLNode<E> root;
     private int size;
@@ -72,7 +72,7 @@ public class TreeList<E> extends AbstractList<E> {
             recalcHeight();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public AVLNode<E> addAll(AVLNode<E> aVLNode, int i) {
             AVLNode<E> aVLNodeMax = max();
             AVLNode<E> aVLNodeMin = aVLNode.min();

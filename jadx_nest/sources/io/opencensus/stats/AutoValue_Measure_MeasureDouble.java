@@ -1,6 +1,6 @@
 package io.opencensus.stats;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Measure_MeasureDouble extends Measure.MeasureDouble {
     private final String description;
     private final String name;

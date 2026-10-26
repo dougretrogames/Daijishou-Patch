@@ -3,7 +3,7 @@ package org.apache.commons.logging.impl;
 import org.apache.avalon.framework.logger.Logger;
 import org.apache.commons.logging.Log;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AvalonLogger implements Log {
     private static volatile Logger defaultLogger;
     private final transient Logger logger;

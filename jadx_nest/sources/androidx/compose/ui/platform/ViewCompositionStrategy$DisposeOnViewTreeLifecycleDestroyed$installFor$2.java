@@ -6,13 +6,13 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Ref;
 
-/* JADX INFO: compiled from: ViewCompositionStrategy.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: ViewCompositionStrategy.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 final class ViewCompositionStrategy$DisposeOnViewTreeLifecycleDestroyed$installFor$2 extends Lambda implements Function0<Unit> {
     final /* synthetic */ Ref.ObjectRef<Function0<Unit>> $disposer;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     ViewCompositionStrategy$DisposeOnViewTreeLifecycleDestroyed$installFor$2(Ref.ObjectRef<Function0<Unit>> objectRef) {
         super(0);
         this.$disposer = objectRef;
@@ -24,7 +24,7 @@ final class ViewCompositionStrategy$DisposeOnViewTreeLifecycleDestroyed$installF
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2() {
         this.$disposer.element.invoke();
     }

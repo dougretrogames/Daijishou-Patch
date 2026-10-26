@@ -2,7 +2,7 @@ package com.google.common.graph;
 
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class ForwardingGraph<N> extends AbstractGraph<N> {
     abstract BaseGraph<N> delegate();

@@ -5,7 +5,7 @@ import org.apache.commons.collections4.MultiSet;
 import org.apache.commons.collections4.Predicate;
 import org.apache.commons.collections4.collection.PredicatedCollection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PredicatedMultiSet<E> extends PredicatedCollection<E> implements MultiSet<E> {
     private static final long serialVersionUID = 20150629;
 
@@ -23,7 +23,7 @@ public class PredicatedMultiSet<E> extends PredicatedCollection<E> implements Mu
         return decorated().add(e, i);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public MultiSet<E> decorated() {
         return (MultiSet) super.decorated();

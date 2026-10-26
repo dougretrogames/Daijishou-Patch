@@ -3,7 +3,7 @@ package com.google.api.client.http;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class EmptyContent implements HttpContent {
     @Override // com.google.api.client.http.HttpContent
     public long getLength() throws IOException {

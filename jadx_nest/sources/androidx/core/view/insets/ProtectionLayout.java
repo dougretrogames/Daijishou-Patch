@@ -11,7 +11,7 @@ import androidx.core.graphics.Insets;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ProtectionLayout extends FrameLayout {
     private static final Object PROTECTION_VIEW = new Object();
     private ProtectionGroup mGroup;
@@ -116,7 +116,7 @@ public class ProtectionLayout extends FrameLayout {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:18:0x0089  */
+    /* WARN: Code duplicated, block: B:18:0x0089  */
     private void addProtectionView(Context context, int i, Protection protection) {
         int width;
         int i2;
@@ -175,7 +175,7 @@ public class ProtectionLayout extends FrameLayout {
         addView(view2, i, layoutParams2);
     }
 
-    /* JADX INFO: renamed from: androidx.core.view.insets.ProtectionLayout$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.view.insets.ProtectionLayout$1, reason: invalid class name */
     class AnonymousClass1 implements Protection.Attributes.Callback {
         final /* synthetic */ FrameLayout.LayoutParams val$params;
         final /* synthetic */ View val$view;

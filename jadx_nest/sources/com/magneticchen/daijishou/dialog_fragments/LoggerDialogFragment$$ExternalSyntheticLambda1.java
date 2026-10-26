@@ -4,8 +4,8 @@ import android.view.MenuItem;
 import androidx.appcompat.widget.PopupMenu;
 import java.util.List;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class LoggerDialogFragment$$ExternalSyntheticLambda1 implements PopupMenu.OnMenuItemClickListener {
     public final /* synthetic */ LoggerDialogFragment f$0;
     public final /* synthetic */ List f$1;

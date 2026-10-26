@@ -16,7 +16,7 @@ import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class NetHttpRequest extends LowLevelHttpRequest {
     private static final OutputWriter DEFAULT_CONNECTION_WRITER = new DefaultOutputWriter();
     private final HttpURLConnection connection;
@@ -157,7 +157,7 @@ final class NetHttpRequest extends LowLevelHttpRequest {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.http.javanet.NetHttpRequest$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.http.javanet.NetHttpRequest$1, reason: invalid class name */
     class AnonymousClass1 implements Callable<Boolean> {
         final /* synthetic */ StreamingContent val$content;
         final /* synthetic */ OutputStream val$out;
@@ -169,7 +169,7 @@ final class NetHttpRequest extends LowLevelHttpRequest {
             this.val$content = streamingContent;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Boolean call() throws IOException {
             this.val$outputWriter.write(this.val$out, this.val$content);

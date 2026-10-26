@@ -2,7 +2,7 @@ package io.opencensus.metrics;
 
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_LabelValue extends LabelValue {
     private final String value;
 

@@ -14,7 +14,7 @@ import java.util.Set;
 import javax.net.ssl.KeyManager;
 import javax.net.ssl.TrustManager;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class TlsChannelCredentials extends ChannelCredentials {
     private final byte[] certificateChain;
     private final boolean fakeFeature;

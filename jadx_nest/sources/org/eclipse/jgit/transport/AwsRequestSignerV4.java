@@ -21,7 +21,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.util.Hex;
 import org.eclipse.jgit.util.HttpSupport;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class AwsRequestSignerV4 {
     private static final String ALGORITHM = "HMAC-SHA256";
     private static final String EMPTY_BODY_SHA256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855";

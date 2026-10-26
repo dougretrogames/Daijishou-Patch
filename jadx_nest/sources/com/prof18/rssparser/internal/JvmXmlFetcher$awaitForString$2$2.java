@@ -13,13 +13,13 @@ import okhttp3.Callback;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
 
-/* JADX INFO: compiled from: JvmXmlFetcher.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: JvmXmlFetcher.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000%\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016J\u0018\u0010\b\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\nH\u0016¨\u0006\u000b"}, d2 = {"com/prof18/rssparser/internal/JvmXmlFetcher$awaitForString$2$2", "Lokhttp3/Callback;", "onFailure", "", NotificationCompat.CATEGORY_CALL, "Lokhttp3/Call;", "e", "Ljava/io/IOException;", "onResponse", "response", "Lokhttp3/Response;", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class JvmXmlFetcher$awaitForString$2$2 implements Callback {
     final /* synthetic */ CancellableContinuation<String> $continuation;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     JvmXmlFetcher$awaitForString$2$2(CancellableContinuation<? super String> cancellableContinuation) {
         this.$continuation = cancellableContinuation;
     }

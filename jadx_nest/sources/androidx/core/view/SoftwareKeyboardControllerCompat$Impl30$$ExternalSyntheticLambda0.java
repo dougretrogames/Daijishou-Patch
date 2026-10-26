@@ -3,8 +3,8 @@ package androidx.core.view;
 import android.view.WindowInsetsController;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class SoftwareKeyboardControllerCompat$Impl30$$ExternalSyntheticLambda0 implements WindowInsetsController.OnControllableInsetsChangedListener {
     public final /* synthetic */ AtomicBoolean f$0;
 

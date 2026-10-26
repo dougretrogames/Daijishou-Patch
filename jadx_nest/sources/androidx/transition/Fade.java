@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.core.content.res.TypedArrayUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Fade extends Visibility {
     public static final int IN = 1;
     private static final String LOG_TAG = "Fade";

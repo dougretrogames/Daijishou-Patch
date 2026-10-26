@@ -7,7 +7,7 @@ import androidx.leanback.transition.TransitionHelper;
 import androidx.leanback.transition.TransitionListener;
 import androidx.leanback.util.StateMachine;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class BaseSupportFragment extends BrandedSupportFragment {
     Object mEntranceTransition;
     final StateMachine.State STATE_START = new StateMachine.State("START", true, false);
@@ -42,7 +42,7 @@ public class BaseSupportFragment extends BrandedSupportFragment {
     protected void runEntranceTransition(Object obj) {
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BaseSupportFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BaseSupportFragment$1, reason: invalid class name */
     class AnonymousClass1 extends StateMachine.State {
         AnonymousClass1(String str, boolean z, boolean z2) {
             super(str, z, z2);
@@ -54,7 +54,7 @@ public class BaseSupportFragment extends BrandedSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BaseSupportFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BaseSupportFragment$2, reason: invalid class name */
     class AnonymousClass2 extends StateMachine.State {
         AnonymousClass2(String str) {
             super(str);
@@ -66,7 +66,7 @@ public class BaseSupportFragment extends BrandedSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BaseSupportFragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BaseSupportFragment$3, reason: invalid class name */
     class AnonymousClass3 extends StateMachine.State {
         AnonymousClass3(String str) {
             super(str);
@@ -79,7 +79,7 @@ public class BaseSupportFragment extends BrandedSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BaseSupportFragment$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BaseSupportFragment$4, reason: invalid class name */
     class AnonymousClass4 extends StateMachine.State {
         AnonymousClass4(String str) {
             super(str);
@@ -91,7 +91,7 @@ public class BaseSupportFragment extends BrandedSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BaseSupportFragment$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BaseSupportFragment$5, reason: invalid class name */
     class AnonymousClass5 extends StateMachine.Condition {
         AnonymousClass5(String str) {
             super(str);
@@ -167,7 +167,7 @@ public class BaseSupportFragment extends BrandedSupportFragment {
         view.invalidate();
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BaseSupportFragment$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BaseSupportFragment$6, reason: invalid class name */
     class AnonymousClass6 implements ViewTreeObserver.OnPreDrawListener {
         final /* synthetic */ View val$view;
 
@@ -202,7 +202,7 @@ public class BaseSupportFragment extends BrandedSupportFragment {
         TransitionHelper.addTransitionListener(objCreateEntranceTransition, new AnonymousClass7());
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BaseSupportFragment$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BaseSupportFragment$7, reason: invalid class name */
     class AnonymousClass7 extends TransitionListener {
         AnonymousClass7() {
         }

@@ -3,7 +3,7 @@ package com.google.protobuf;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class UnsafeByteOperations {
     private UnsafeByteOperations() {
     }

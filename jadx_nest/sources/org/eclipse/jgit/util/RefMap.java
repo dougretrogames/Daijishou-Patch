@@ -16,7 +16,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.RefComparator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RefMap extends AbstractMap<String, Ref> {
     private Set<Map.Entry<String, Ref>> entrySet;
     RefList<Ref> loose;
@@ -33,7 +33,7 @@ public class RefMap extends AbstractMap<String, Ref> {
         this.resolved = RefList.emptyList();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public RefMap(String str, RefList<? extends Ref> refList, RefList<? extends Ref> refList2, RefList<? extends Ref> refList3) {
         this.prefix = str;
         this.packed = refList;
@@ -114,7 +114,7 @@ public class RefMap extends AbstractMap<String, Ref> {
         return entrySet().isEmpty();
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.util.RefMap$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.util.RefMap$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractSet<Map.Entry<String, Ref>> {
         AnonymousClass1() {
         }

@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import java.io.IOException;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AdvertiseRefsHookChain implements AdvertiseRefsHook {
     private final int count;
     private final AdvertiseRefsHook[] hooks;

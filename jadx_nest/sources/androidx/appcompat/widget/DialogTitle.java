@@ -6,7 +6,7 @@ import android.text.Layout;
 import android.util.AttributeSet;
 import androidx.appcompat.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DialogTitle extends AppCompatTextView {
     public DialogTitle(Context context, AttributeSet attributeSet, int i) {
         super(context, attributeSet, i);

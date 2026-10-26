@@ -2,11 +2,11 @@ package androidx.compose.ui.platform;
 
 import kotlin.Metadata;
 
-/* JADX INFO: compiled from: InvertMatrix.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: InvertMatrix.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a\u001e\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0002H\u0000ø\u0001\u0000¢\u0006\u0004\b\u0004\u0010\u0005\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006\u0006"}, d2 = {"invertTo", "", "Landroidx/compose/ui/graphics/Matrix;", "other", "invertTo-JiSxe2E", "([F[F)Z", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class InvertMatrixKt {
-    /* JADX INFO: renamed from: invertTo-JiSxe2E, reason: not valid java name */
+    /* INFO: renamed from: invertTo-JiSxe2E, reason: not valid java name */
     public static final boolean m2158invertToJiSxe2E(float[] fArr, float[] fArr2) {
         float f = fArr[0];
         float f2 = fArr[1];

@@ -13,7 +13,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.treewalk.AbstractTreeIterator;
 import org.eclipse.jgit.treewalk.NameConflictTreeWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StrategySimpleTwoWayInCore extends ThreeWayMergeStrategy {
     protected StrategySimpleTwoWayInCore() {
     }

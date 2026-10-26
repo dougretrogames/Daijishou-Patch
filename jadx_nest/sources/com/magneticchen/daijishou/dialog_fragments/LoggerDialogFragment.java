@@ -57,8 +57,8 @@ import kotlinx.coroutines.Dispatchers;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.lib.Constants;
 
-/* JADX INFO: compiled from: LoggerDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: LoggerDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0082\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0004\n\u0002\u0018\u0002\u0018\u0000 *2\u00020\u0001:\u0002*+B\u0005¢\u0006\u0002\u0010\u0002J\u0006\u0010\u001a\u001a\u00020\u0006J\u0012\u0010\u001b\u001a\u00020\u001c2\b\u0010\u001d\u001a\u0004\u0018\u00010\u001eH\u0016J&\u0010\u001f\u001a\u0004\u0018\u00010 2\u0006\u0010!\u001a\u00020\"2\b\u0010#\u001a\u0004\u0018\u00010$2\b\u0010\u001d\u001a\u0004\u0018\u00010\u001eH\u0016J\b\u0010%\u001a\u00020&H\u0016J\b\u0010'\u001a\u00020&H\u0002J\f\u0010(\u001a\b\u0012\u0004\u0012\u00020\u00100)R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R*\u0010\u000b\u001a\u001e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00060\fj\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u0006`\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u0018\u0010\u000e\u001a\n\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0011R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082.¢\u0006\u0002\n\u0000¨\u0006,²\u0006\n\u0010-\u001a\u00020.X\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "()V", "backButtonLayout", "Landroidx/constraintlayout/widget/ConstraintLayout;", "componentFilterStatus", "", "controlPanelButtonLayout", "filterButtonLayout", "filterStatus", "", "hashCodeToComponent", "Ljava/util/HashMap;", "Lkotlin/collections/HashMap;", Constants.LOGS, "", "Lcom/magneticchen/daijishou/logger/Logger$LogRecord;", "[Lcom/magneticchen/daijishou/logger/Logger$LogRecord;", "popupMenu", "Landroidx/appcompat/widget/PopupMenu;", "recyclerView", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;", "scrollingOnBackPressed", "", "searchEditTextInputLayout", "Lcom/google/android/material/textfield/TextInputLayout;", "getSearchHint", "onCreateDialog", "Landroid/app/Dialog;", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onStart", "", "refreshComponentsInPopupMenu", "requireFilteredLogs", "", "Companion", "SearchRecyclerViewAdapter", "app_release", "console", "Lcom/magneticchen/daijishou/view_models/DaijishouConsoleViewModel;"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class LoggerDialogFragment extends DaijishouDialogFragment {
     public ConstraintLayout backButtonLayout;
@@ -69,7 +69,7 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
     public boolean scrollingOnBackPressed;
     public TextInputLayout searchEditTextInputLayout;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final int COMPONENT_FILTER = 99;
     private static final int NO_FILTER = -99;
@@ -79,7 +79,7 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
     private Logger.LogRecord[] logs = new Logger.LogRecord[0];
     private final HashMap<Integer, String> hashCodeToComponent = new HashMap<>();
 
-    /* JADX INFO: compiled from: LoggerDialogFragment.kt */
+    /* INFO: compiled from: LoggerDialogFragment.kt */
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\r\u001a\u00020\u000eR\u0014\u0010\u0003\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\u0004X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u0014\u0010\t\u001a\u00020\nX\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\f¨\u0006\u000f"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment$Companion;", "", "()V", "COMPONENT_FILTER", "", "getCOMPONENT_FILTER", "()I", "NO_FILTER", "getNO_FILTER", "SEARCH_HINT", "", "getSEARCH_HINT", "()Ljava/lang/String;", "newInstance", "Lcom/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -108,13 +108,13 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
         }
     }
 
-    /* JADX INFO: compiled from: LoggerDialogFragment.kt */
+    /* INFO: compiled from: LoggerDialogFragment.kt */
     @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0010B\u0013\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004¢\u0006\u0002\u0010\u0005J\u0010\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J \u0010\n\u001a\n0\u000bR\u00060\u0000R\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\tH\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0011"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment$SearchRecyclerViewAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/logger/Logger$LogRecord;", Constants.LOGS, "", "(Lcom/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment;Ljava/util/List;)V", "getItemId", "", "position", "", "onCreateViewHolder", "Lcom/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment$SearchRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment;", "viewGroup", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class SearchRecyclerViewAdapter extends DaijishouRecyclerView.Adapter<Logger.LogRecord> {
         private final List<Logger.LogRecord> logs;
         final /* synthetic */ LoggerDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public SearchRecyclerViewAdapter(LoggerDialogFragment loggerDialogFragment, List<Logger.LogRecord> logs) {
             super(logs, false, false, 6, null);
             Intrinsics.checkNotNullParameter(logs, "logs");
@@ -127,7 +127,7 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
             return this.logs.get(position).getTimestamp();
         }
 
-        /* JADX INFO: compiled from: LoggerDialogFragment.kt */
+        /* INFO: compiled from: LoggerDialogFragment.kt */
         @Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0003H\u0016J\b\u0010\u0017\u001a\u00020\u0013H\u0016J\u0010\u0010\u0018\u001a\u00020\u00132\u0006\u0010\u0019\u001a\u00020\u001aH\u0016R\u0016\u0010\u0007\u001a\n \t*\u0004\u0018\u00010\b0\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\n\u001a\n \t*\u0004\u0018\u00010\b0\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000b\u001a\n \t*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\r\u001a\n \t*\u0004\u0018\u00010\b0\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\n \t*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000f\u001a\n \t*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0010\u001a\n \t*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0011\u001a\n \t*\u0004\u0018\u00010\b0\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001b"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment$SearchRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/logger/Logger$LogRecord;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment$SearchRecyclerViewAdapter;Landroid/view/View;)V", "debugImageView", "Landroid/widget/ImageView;", "kotlin.jvm.PlatformType", "errorImageView", "firstLine", "Landroid/widget/TextView;", "infoImageView", "secondLine", "thirdLine", "timestamp", "warnImageView", "onBind", "", "position", "", "item", "onFocus", "onFocusClear", "isAbsoluteAdapterPositionValid", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<Logger.LogRecord>.ViewHolder {
             private final ImageView debugImageView;
@@ -140,7 +140,7 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
             private final TextView timestamp;
             private final ImageView warnImageView;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(SearchRecyclerViewAdapter searchRecyclerViewAdapter, View itemView) {
                 super(searchRecyclerViewAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");
@@ -203,7 +203,7 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void refreshComponentsInPopupMenu() {
         PopupMenu popupMenu = this.popupMenu;
         if (popupMenu == null) {
@@ -473,13 +473,13 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final DaijishouConsoleViewModel onCreateView$lambda$6(Lazy<DaijishouConsoleViewModel> lazy) {
         return lazy.getValue();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$1, reason: invalid class name */
-    /* JADX INFO: compiled from: LoggerDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$1, reason: invalid class name */
+    /* INFO: compiled from: LoggerDialogFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "i", "", "<anonymous parameter 2>", "", "item", "Lcom/magneticchen/daijishou/logger/Logger$LogRecord;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function4<View, Integer, Long, Logger.LogRecord, Unit> {
         AnonymousClass1() {
@@ -502,8 +502,8 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$2, reason: invalid class name */
-    /* JADX INFO: compiled from: LoggerDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$2, reason: invalid class name */
+    /* INFO: compiled from: LoggerDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment$onCreateView$2", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass2 extends RecyclerView.OnScrollListener {
         AnonymousClass2() {
@@ -519,13 +519,13 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$7(LoggerDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         DebugAndExperimentalDialogFragment.INSTANCE.newInstance().show(this$0.getParentFragmentManager(), DebugAndExperimentalDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreateView$lambda$8(LoggerDialogFragment this$0, List searchLogRecordList, SearchRecyclerViewAdapter recyclerViewAdapter, MenuItem menuItem) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(searchLogRecordList, "$searchLogRecordList");
@@ -570,7 +570,7 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$9(LoggerDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         PopupMenu popupMenu = this$0.popupMenu;
@@ -581,14 +581,14 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
         popupMenu.show();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$10(LoggerDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.requireDialog().onBackPressed();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$7, reason: invalid class name */
-    /* JADX INFO: compiled from: LoggerDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$7, reason: invalid class name */
+    /* INFO: compiled from: LoggerDialogFragment.kt */
     @Metadata(d1 = {"\u0000%\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0012\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u0016J*\u0010\u0006\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\tH\u0016J*\u0010\f\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\tH\u0016¨\u0006\u000e"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment$onCreateView$7", "Landroid/text/TextWatcher;", "afterTextChanged", "", "s", "Landroid/text/Editable;", "beforeTextChanged", "", "start", "", "count", "after", "onTextChanged", "before", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass7 implements TextWatcher {
         final /* synthetic */ SearchRecyclerViewAdapter $recyclerViewAdapter;
@@ -613,7 +613,7 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreateView$lambda$11(LoggerDialogFragment this$0, TextInputEditText textInputEditText, Lazy console$delegate, TextView textView, int i, KeyEvent keyEvent) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(console$delegate, "$console$delegate");
@@ -624,7 +624,7 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$12(TextInputEditText textInputEditText, View view) {
         Editable text = textInputEditText.getText();
         if (text != null) {
@@ -632,8 +632,8 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$10, reason: invalid class name */
-    /* JADX INFO: compiled from: LoggerDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$10, reason: invalid class name */
+    /* INFO: compiled from: LoggerDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/logger/Logger$LogRecord;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass10 extends Lambda<Unit> implements Function1<Logger.LogRecord, Unit> {
         final /* synthetic */ SearchRecyclerViewAdapter $recyclerViewAdapter;
@@ -641,7 +641,7 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
         final /* synthetic */ List<Logger.LogRecord> $searchLogRecordList;
         final /* synthetic */ LoggerDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass10(List<Logger.LogRecord> list, LoggerDialogFragment loggerDialogFragment, SearchRecyclerViewAdapter searchRecyclerViewAdapter, DaijishouLinearLayoutManager daijishouLinearLayoutManager) {
             super(1);
             this.$searchLogRecordList = list;
@@ -656,7 +656,7 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Logger.LogRecord logRecord) {
             Set setSubtract;
             if (logRecord == null) {
@@ -720,8 +720,8 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$11, reason: invalid class name */
-    /* JADX INFO: compiled from: LoggerDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$11, reason: invalid class name */
+    /* INFO: compiled from: LoggerDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass11 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         AnonymousClass11() {
@@ -734,7 +734,7 @@ public final class LoggerDialogFragment extends DaijishouDialogFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             ConstraintLayout constraintLayout = LoggerDialogFragment.this.controlPanelButtonLayout;
             if (constraintLayout == null) {

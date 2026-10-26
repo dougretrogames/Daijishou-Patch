@@ -5,8 +5,8 @@ import java.util.logging.Logger;
 import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public final class zzan {
     public static String zza(@CheckForNull String str, @CheckForNull Object... objArr) {
         int length;

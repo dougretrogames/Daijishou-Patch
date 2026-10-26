@@ -13,8 +13,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: EditPlatformDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: EditPlatformDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayerEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class EditPlatformDialogFragment$onCreateDialog$1$1$9 extends Lambda<Unit> implements Function1<List<? extends PlayerEntity>, Unit> {
     final /* synthetic */ AutoCompleteAdapter $playerArraySearchAdapter;
@@ -25,7 +25,7 @@ final class EditPlatformDialogFragment$onCreateDialog$1$1$9 extends Lambda<Unit>
     final /* synthetic */ List<Long> $selectedPlayerIdList;
     final /* synthetic */ EditPlatformDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     EditPlatformDialogFragment$onCreateDialog$1$1$9(List<PlayerEntity> list, List<String> list2, List<String> list3, List<Long> list4, EditPlatformDialogFragment editPlatformDialogFragment, AutoCompleteAdapter autoCompleteAdapter, List<Long> list5) {
         super(1);
         this.$playerEntityList = list;
@@ -43,7 +43,7 @@ final class EditPlatformDialogFragment$onCreateDialog$1$1$9 extends Lambda<Unit>
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(List<PlayerEntity> list) {
         this.$playerEntityList.clear();
         List<PlayerEntity> list2 = this.$playerEntityList;

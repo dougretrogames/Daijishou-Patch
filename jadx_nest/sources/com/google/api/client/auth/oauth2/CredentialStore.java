@@ -2,7 +2,7 @@ package com.google.api.client.auth.oauth2;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public interface CredentialStore {
     void delete(String str, Credential credential) throws IOException;

@@ -3,7 +3,7 @@ package org.eclipse.jgit.lib;
 import org.apache.commons.codec.language.Soundex;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SubmoduleConfig {
 
     public enum FetchRecurseSubmodulesMode implements Config.ConfigEnum {
@@ -13,7 +13,7 @@ public class SubmoduleConfig {
 
         private final String configValue;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static FetchRecurseSubmodulesMode[] valuesCustom() {
             FetchRecurseSubmodulesMode[] fetchRecurseSubmodulesModeArrValuesCustom = values();
             int length = fetchRecurseSubmodulesModeArrValuesCustom.length;

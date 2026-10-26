@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class Parallax<PropertyT extends Property> {
     private final List<ParallaxEffect> mEffects;
     private float[] mFloatValues;

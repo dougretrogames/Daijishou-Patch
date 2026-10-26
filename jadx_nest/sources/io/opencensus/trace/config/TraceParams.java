@@ -4,7 +4,7 @@ import io.opencensus.internal.Utils;
 import io.opencensus.trace.Sampler;
 import io.opencensus.trace.samplers.Samplers;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class TraceParams {
     public static final TraceParams DEFAULT;
     private static final double DEFAULT_PROBABILITY = 1.0E-4d;

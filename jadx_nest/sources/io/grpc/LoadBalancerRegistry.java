@@ -11,7 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class LoadBalancerRegistry {
     private static LoadBalancerRegistry instance;
     private final LinkedHashSet<LoadBalancerProvider> allProviders = new LinkedHashSet<>();

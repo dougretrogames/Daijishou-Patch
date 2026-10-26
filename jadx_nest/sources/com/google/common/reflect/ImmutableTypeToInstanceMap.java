@@ -5,7 +5,7 @@ import com.google.common.collect.ImmutableMap;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class ImmutableTypeToInstanceMap<B> extends ForwardingMap<TypeToken<? extends B>, B> implements TypeToInstanceMap<B> {
     private final ImmutableMap<TypeToken<? extends B>, B> delegate;
@@ -91,7 +91,7 @@ public final class ImmutableTypeToInstanceMap<B> extends ForwardingMap<TypeToken
         throw new UnsupportedOperationException();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingMap, com.google.common.collect.ForwardingObject
     public Map<TypeToken<? extends B>, B> delegate() {
         return this.delegate;

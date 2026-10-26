@@ -20,7 +20,7 @@ import androidx.lifecycle.ViewTreeLifecycleOwner;
 import androidx.lifecycle.ViewTreeViewModelStoreOwner;
 import androidx.savedstate.ViewTreeSavedStateRegistryOwner;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DialogFragment extends Fragment implements DialogInterface.OnCancelListener, DialogInterface.OnDismissListener {
     private static final String SAVED_BACK_STACK_ID = "android:backStackId";
     private static final String SAVED_CANCELABLE = "android:cancelable";
@@ -54,7 +54,7 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
     public void onCancel(DialogInterface dialogInterface) {
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.DialogFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.DialogFragment$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -65,7 +65,7 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.DialogFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.DialogFragment$2, reason: invalid class name */
     class AnonymousClass2 implements DialogInterface.OnCancelListener {
         AnonymousClass2() {
         }
@@ -79,7 +79,7 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.DialogFragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.DialogFragment$3, reason: invalid class name */
     class AnonymousClass3 implements DialogInterface.OnDismissListener {
         AnonymousClass3() {
         }
@@ -93,7 +93,7 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.DialogFragment$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.DialogFragment$4, reason: invalid class name */
     class AnonymousClass4 implements Observer<LifecycleOwner> {
         AnonymousClass4() {
         }
@@ -325,7 +325,7 @@ public class DialogFragment extends Fragment implements DialogInterface.OnCancel
         this.mDialog.onRestoreInstanceState(bundle2);
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.DialogFragment$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.DialogFragment$5, reason: invalid class name */
     class AnonymousClass5 extends FragmentContainer {
         final /* synthetic */ FragmentContainer val$fragmentContainer;
 

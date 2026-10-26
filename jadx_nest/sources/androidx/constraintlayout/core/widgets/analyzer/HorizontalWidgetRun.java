@@ -4,7 +4,7 @@ import androidx.constraintlayout.core.widgets.ConstraintAnchor;
 import androidx.constraintlayout.core.widgets.ConstraintWidget;
 import androidx.constraintlayout.core.widgets.Helper;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class HorizontalWidgetRun extends WidgetRun {
     private static int[] sTempDimensions = new int[2];
 
@@ -230,7 +230,7 @@ public class HorizontalWidgetRun extends WidgetRun {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.core.widgets.analyzer.HorizontalWidgetRun$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.core.widgets.analyzer.HorizontalWidgetRun$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$androidx$constraintlayout$core$widgets$analyzer$WidgetRun$RunType;
 
@@ -252,8 +252,8 @@ public class HorizontalWidgetRun extends WidgetRun {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:123:0x02f4  */
-    /* JADX WARN: Code duplicated, block: B:125:0x0303  */
+    /* WARN: Code duplicated, block: B:123:0x02f4  */
+    /* WARN: Code duplicated, block: B:125:0x0303  */
     @Override // androidx.constraintlayout.core.widgets.analyzer.WidgetRun, androidx.constraintlayout.core.widgets.analyzer.Dependency
     public void update(Dependency dependency) {
         int limitedDimension;

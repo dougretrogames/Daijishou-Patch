@@ -5,7 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.http.conn.HttpClientConnectionManager;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class IdleConnectionEvictor {
     private final HttpClientConnectionManager connectionManager;
     private volatile Exception exception;
@@ -23,7 +23,7 @@ public final class IdleConnectionEvictor {
         this.thread = threadFactory.newThread(new AnonymousClass1(httpClientConnectionManager));
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.client.IdleConnectionEvictor$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.client.IdleConnectionEvictor$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ HttpClientConnectionManager val$connectionManager;
 

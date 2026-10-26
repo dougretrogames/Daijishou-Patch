@@ -1,7 +1,7 @@
 package com.google.firebase;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes4.dex */
 public class FirebaseApiNotAvailableException extends FirebaseException {
     public FirebaseApiNotAvailableException(String str) {
         super(str);

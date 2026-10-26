@@ -16,8 +16,8 @@ import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 import com.google.errorprone.annotations.CheckReturnValue;
 import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class Status extends AbstractSafeParcelable implements Result, ReflectedParcelable {
     private final int zzb;
     private final String zzc;

@@ -2,7 +2,7 @@ package org.apache.commons.collections4;
 
 import java.util.function.Function;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @FunctionalInterface
 @Deprecated
 public interface Transformer<T, R> extends Function<T, R> {

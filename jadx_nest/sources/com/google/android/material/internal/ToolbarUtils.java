@@ -14,11 +14,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ToolbarUtils {
     private static final Comparator<View> VIEW_TOP_COMPARATOR = new AnonymousClass1();
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.ToolbarUtils$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.ToolbarUtils$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<View> {
         AnonymousClass1() {
         }

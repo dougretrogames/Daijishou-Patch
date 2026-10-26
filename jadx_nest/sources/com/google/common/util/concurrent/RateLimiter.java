@@ -6,7 +6,7 @@ import java.util.Locale;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class RateLimiter {
 
@@ -142,7 +142,7 @@ public abstract class RateLimiter {
         protected SleepingStopwatch() {
         }
 
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.RateLimiter$SleepingStopwatch$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.util.concurrent.RateLimiter$SleepingStopwatch$1, reason: invalid class name */
         class AnonymousClass1 extends SleepingStopwatch {
             final Stopwatch stopwatch = Stopwatch.createStarted();
 

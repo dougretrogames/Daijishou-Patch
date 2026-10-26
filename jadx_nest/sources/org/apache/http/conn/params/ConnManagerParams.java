@@ -4,7 +4,7 @@ import org.apache.http.conn.routing.HttpRoute;
 import org.apache.http.params.HttpParams;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public final class ConnManagerParams implements ConnManagerPNames {
     private static final ConnPerRoute DEFAULT_CONN_PER_ROUTE = new AnonymousClass1();
@@ -22,7 +22,7 @@ public final class ConnManagerParams implements ConnManagerPNames {
         httpParams.setLongParameter("http.conn-manager.timeout", j);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.conn.params.ConnManagerParams$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.conn.params.ConnManagerParams$1, reason: invalid class name */
     static class AnonymousClass1 implements ConnPerRoute {
         @Override // org.apache.http.conn.params.ConnPerRoute
         public int getMaxForRoute(HttpRoute httpRoute) {

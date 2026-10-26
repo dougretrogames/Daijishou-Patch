@@ -5,8 +5,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class DownloadPlatformsDialogFragment$$ExternalSyntheticLambda4 implements AdapterView.OnItemClickListener {
     public final /* synthetic */ AlertDialog f$0;
     public final /* synthetic */ DownloadPlatformsDialogFragment f$1;

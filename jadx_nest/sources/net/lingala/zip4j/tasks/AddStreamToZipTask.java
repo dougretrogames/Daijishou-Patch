@@ -16,9 +16,9 @@ import net.lingala.zip4j.progress.ProgressMonitor;
 import net.lingala.zip4j.util.InternalZipConstants;
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AddStreamToZipTask extends AbstractAddFileToZipTask<AddStreamToZipTaskParameters> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.tasks.AsyncZipTask
     public long calculateTotalWork(AddStreamToZipTaskParameters addStreamToZipTaskParameters) {
         return 0L;
@@ -28,7 +28,7 @@ public class AddStreamToZipTask extends AbstractAddFileToZipTask<AddStreamToZipT
         super(zipModel, cArr, headerWriter, asyncTaskParameters);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.tasks.AsyncZipTask
     public void executeTask(AddStreamToZipTaskParameters addStreamToZipTaskParameters, ProgressMonitor progressMonitor) throws IOException {
         verifyZipParameters(addStreamToZipTaskParameters.zipParameters);

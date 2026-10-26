@@ -9,7 +9,7 @@ import java.util.Comparator;
 import java.util.Objects;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class KeyCycleOscillator {
     private static final String TAG = "KeyCycleOscillator";
     private CurveFit mCurveFit;
@@ -153,7 +153,7 @@ public abstract class KeyCycleOscillator {
         this.mCurveFit = CurveFit.get(0, dArr, dArr2);
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.core.motion.utils.KeyCycleOscillator$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.core.motion.utils.KeyCycleOscillator$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<WavePoint> {
         AnonymousClass1() {
         }

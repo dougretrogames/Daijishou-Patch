@@ -2,7 +2,7 @@ package com.google.common.collect;
 
 import java.util.SortedMap;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public interface SortedMapDifference<K, V> extends MapDifference<K, V> {
     @Override // com.google.common.collect.MapDifference

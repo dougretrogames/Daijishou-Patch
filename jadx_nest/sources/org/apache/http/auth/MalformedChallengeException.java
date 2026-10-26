@@ -2,7 +2,7 @@ package org.apache.http.auth;
 
 import org.apache.http.ProtocolException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MalformedChallengeException extends ProtocolException {
     private static final long serialVersionUID = 814586927989932284L;
 

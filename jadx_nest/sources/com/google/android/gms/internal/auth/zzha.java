@@ -2,8 +2,8 @@ package com.google.android.gms.internal.auth;
 
 import java.util.Arrays;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public final class zzha {
     private static final zzha zza = new zzha(0, new int[0], new Object[0], false);
     private int zzb;

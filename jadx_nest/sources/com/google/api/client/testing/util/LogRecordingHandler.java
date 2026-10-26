@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.logging.Handler;
 import java.util.logging.LogRecord;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class LogRecordingHandler extends Handler {
     private final List<LogRecord> records = Lists.newArrayList();
 

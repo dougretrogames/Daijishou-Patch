@@ -2,7 +2,7 @@ package androidx.leanback.database;
 
 import android.database.Cursor;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class CursorMapper {
     private Cursor mCursor;
 

@@ -23,7 +23,7 @@ import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.function.IOIterable;
 import org.apache.commons.io.function.IOIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReversedLinesFileReader implements Closeable, IOIterable<String> {
     private static final int DEFAULT_BLOCK_SIZE = FileSystem.getCurrent().getBlockSize();
     private static final String EMPTY_STRING = "";
@@ -107,7 +107,7 @@ public class ReversedLinesFileReader implements Closeable, IOIterable<String> {
             return 0;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public String readLine() {
             String str;
             boolean z = this.partNumber == 1;
@@ -146,7 +146,7 @@ public class ReversedLinesFileReader implements Closeable, IOIterable<String> {
             return str2;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public FilePart rollOver() throws IOException {
             if (this.currentLastBytePos > -1) {
                 throw new IllegalStateException("Current currentLastCharPos unexpectedly positive... last readLine() should have returned something! currentLastCharPos=" + this.currentLastBytePos);
@@ -238,7 +238,7 @@ public class ReversedLinesFileReader implements Closeable, IOIterable<String> {
         this.channel.close();
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.io.input.ReversedLinesFileReader$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.io.input.ReversedLinesFileReader$1, reason: invalid class name */
     class AnonymousClass1 implements IOIterator<String> {
         private String next;
 

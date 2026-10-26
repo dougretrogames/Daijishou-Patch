@@ -18,7 +18,7 @@ import org.eclipse.jgit.util.RawParseUtils;
 import org.eclipse.jgit.util.References;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class URIish implements Serializable {
     private static final String HOST_P = "((?:[^\\\\/:]+)|(?:\\[[0-9a-f:]+\\]))";
     private static final String OPT_DRIVE_LETTER_P = "(?:[A-Za-z]:)?";

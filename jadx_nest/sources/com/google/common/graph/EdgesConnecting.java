@@ -8,7 +8,7 @@ import java.util.AbstractSet;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class EdgesConnecting<E> extends AbstractSet<E> {
     private final Map<?, E> nodeToOutEdge;

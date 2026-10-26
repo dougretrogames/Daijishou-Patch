@@ -12,7 +12,7 @@ import org.apache.commons.io.FileUtils$$ExternalSyntheticLambda19;
 import org.apache.commons.io.IOCase;
 import org.apache.commons.io.file.PathUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PrefixFileFilter extends AbstractFileFilter implements Serializable {
     private static final long serialVersionUID = 8533897440809599867L;
     private final IOCase isCase;
@@ -67,7 +67,7 @@ public class PrefixFileFilter extends AbstractFileFilter implements Serializable
         return Stream.of((Object[]) this.prefixes).anyMatch(new PrefixFileFilter$$ExternalSyntheticLambda0(this, str));
     }
 
-    /* JADX INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-PrefixFileFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-PrefixFileFilter, reason: not valid java name */
     /* synthetic */ boolean m5580x16e103a0(String str, String str2) {
         return this.isCase.checkStartsWith(str, str2);
     }

@@ -9,7 +9,7 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TransitionManager {
     private static final String LOG_TAG = "TransitionManager";
     private static Transition sDefaultTransition = new AutoTransition();
@@ -145,7 +145,7 @@ public class TransitionManager {
             return true;
         }
 
-        /* JADX INFO: renamed from: androidx.transition.TransitionManager$MultiListener$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.transition.TransitionManager$MultiListener$1, reason: invalid class name */
         class AnonymousClass1 extends TransitionListenerAdapter {
             final /* synthetic */ ArrayMap val$runningTransitions;
 

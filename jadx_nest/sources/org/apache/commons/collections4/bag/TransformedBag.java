@@ -6,7 +6,7 @@ import org.apache.commons.collections4.Transformer;
 import org.apache.commons.collections4.collection.TransformedCollection;
 import org.apache.commons.collections4.set.TransformedSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformedBag<E> extends TransformedCollection<E> implements Bag<E> {
     private static final long serialVersionUID = 5421170911299074185L;
 

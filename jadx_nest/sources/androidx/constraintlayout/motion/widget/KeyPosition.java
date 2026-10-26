@@ -14,7 +14,7 @@ import androidx.constraintlayout.motion.utils.ViewSpline;
 import androidx.constraintlayout.widget.R;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class KeyPosition extends KeyPositionBase {
     public static final String DRAWPATH = "drawPath";
     static final int KEY_TYPE = 2;
@@ -280,7 +280,7 @@ public class KeyPosition extends KeyPositionBase {
             sAttrMap.append(R.styleable.KeyPosition_pathMotionArc, 10);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static void read(KeyPosition keyPosition, TypedArray typedArray) {
             int indexCount = typedArray.getIndexCount();
             for (int i = 0; i < indexCount; i++) {
@@ -397,7 +397,7 @@ public class KeyPosition extends KeyPositionBase {
     }
 
     @Override // androidx.constraintlayout.motion.widget.Key
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public Key mo3143clone() {
         return new KeyPosition().copy(this);
     }

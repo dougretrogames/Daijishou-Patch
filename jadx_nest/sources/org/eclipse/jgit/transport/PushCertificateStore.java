@@ -36,7 +36,7 @@ import org.eclipse.jgit.treewalk.filter.PathFilter;
 import org.eclipse.jgit.treewalk.filter.PathFilterGroup;
 import org.eclipse.jgit.treewalk.filter.TreeFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PushCertificateStore implements AutoCloseable {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$lib$RefUpdate$Result = null;
     static final String REF_NAME = "refs/meta/push-certs";
@@ -103,7 +103,7 @@ public class PushCertificateStore implements AutoCloseable {
         return iArr2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class PendingCert {
         PushCertificate cert;
         PersonIdent ident;
@@ -155,7 +155,7 @@ public class PushCertificateStore implements AutoCloseable {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.PushCertificateStore$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.PushCertificateStore$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<PushCertificate> {
         private PushCertificate next;
         private final String path;
@@ -274,7 +274,7 @@ public class PushCertificateStore implements AutoCloseable {
         return new PushCertificateStore$$ExternalSyntheticLambda1(this, str);
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-transport-PushCertificateStore, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-transport-PushCertificateStore, reason: not valid java name */
     /* synthetic */ Iterator m5811lambda$0$orgeclipsejgittransportPushCertificateStore(String str) {
         return new AnonymousClass1(str);
     }
@@ -501,11 +501,11 @@ public class PushCertificateStore implements AutoCloseable {
         return objectInserter.insert(1, commitBuilder.build());
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.PushCertificateStore$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.PushCertificateStore$2, reason: invalid class name */
     class AnonymousClass2 extends DirCacheEditor.PathEdit {
         private final /* synthetic */ ObjectId val$certId;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(String str, ObjectId objectId) {
             super(str);
             this.val$certId = objectId;

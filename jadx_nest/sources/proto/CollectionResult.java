@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public final class CollectionResult extends GeneratedMessage implements CollectionResultOrBuilder {
     public static final int COLLECTIONS_FIELD_NUMBER = 1;
     private static final CollectionResult DEFAULT_INSTANCE;
@@ -138,18 +138,18 @@ public final class CollectionResult extends GeneratedMessage implements Collecti
         return DEFAULT_INSTANCE.toBuilder();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static Builder newBuilder(CollectionResult collectionResult) {
         return (Builder) DEFAULT_INSTANCE.toBuilder().mergeFrom((Message) collectionResult);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.protobuf.MessageLite, com.google.protobuf.Message
     public Builder toBuilder() {
         return this == DEFAULT_INSTANCE ? new Builder((CollectionResultIA) null) : (Builder) new Builder((CollectionResultIA) null).mergeFrom((Message) this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent builderParent) {
         return new Builder(builderParent, null);
@@ -439,7 +439,7 @@ public final class CollectionResult extends GeneratedMessage implements Collecti
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: proto.CollectionResult$1, reason: invalid class name */
+    /* INFO: renamed from: proto.CollectionResult$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<CollectionResult> {
         AnonymousClass1() {
         }

@@ -4,7 +4,7 @@ import android.os.UserHandle;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class UserHandleCompat {
     private static Method sGetUserIdMethod;
     private static Constructor<UserHandle> sUserHandleConstructor;

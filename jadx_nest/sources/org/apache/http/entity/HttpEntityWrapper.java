@@ -7,7 +7,7 @@ import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpEntityWrapper implements HttpEntity {
     protected HttpEntity wrappedEntity;
 

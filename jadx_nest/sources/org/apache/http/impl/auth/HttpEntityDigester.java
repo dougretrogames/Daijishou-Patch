@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.security.MessageDigest;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class HttpEntityDigester extends OutputStream {
     private boolean closed;
     private byte[] digest;

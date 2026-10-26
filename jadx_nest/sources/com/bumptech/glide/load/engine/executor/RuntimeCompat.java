@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FilenameFilter;
 import java.util.regex.Pattern;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class RuntimeCompat {
     private static final String CPU_LOCATION = "/sys/devices/system/cpu/";
     private static final String CPU_NAME_REGEX = "cpu[0-9]+";
@@ -40,7 +40,7 @@ final class RuntimeCompat {
         return Math.max(1, fileArrListFiles != null ? fileArrListFiles.length : 0);
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.executor.RuntimeCompat$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.executor.RuntimeCompat$1, reason: invalid class name */
     class AnonymousClass1 implements FilenameFilter {
         final /* synthetic */ Pattern val$cpuNamePattern;
 

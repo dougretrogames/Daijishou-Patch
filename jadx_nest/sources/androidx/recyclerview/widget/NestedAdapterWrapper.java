@@ -3,7 +3,7 @@ package androidx.recyclerview.widget;
 import android.view.ViewGroup;
 import androidx.core.util.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class NestedAdapterWrapper {
     public final RecyclerView.Adapter<RecyclerView.ViewHolder> adapter;
     private RecyclerView.AdapterDataObserver mAdapterObserver = new AnonymousClass1();
@@ -28,7 +28,7 @@ class NestedAdapterWrapper {
         void onStateRestorationPolicyChanged(NestedAdapterWrapper nestedAdapterWrapper);
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.NestedAdapterWrapper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.NestedAdapterWrapper$1, reason: invalid class name */
     class AnonymousClass1 extends RecyclerView.AdapterDataObserver {
         AnonymousClass1() {
         }

@@ -8,7 +8,7 @@ import okio.Utf8;
 import org.apache.commons.codec.CodecPolicy;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Base64 extends BaseNCodec {
     private static final int ALPHABET_LENGTH = 64;
     private static final int BITS_PER_ENCODED_BYTE = 6;
@@ -156,7 +156,7 @@ public class Base64 extends BaseNCodec {
         return bArr;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] toUrlSafeEncodeTable(boolean z) {
         return z ? URL_SAFE_ENCODE_TABLE : STANDARD_ENCODE_TABLE;
     }

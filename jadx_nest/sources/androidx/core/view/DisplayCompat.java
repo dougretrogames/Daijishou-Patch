@@ -8,7 +8,7 @@ import android.text.TextUtils;
 import android.view.Display;
 import androidx.core.util.Preconditions;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class DisplayCompat {
     private static final int DISPLAY_SIZE_4K_HEIGHT = 2160;
     private static final int DISPLAY_SIZE_4K_WIDTH = 3840;

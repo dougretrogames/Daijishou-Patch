@@ -39,8 +39,8 @@ import org.gradle.api.tasks.util.PatternFilterable;
 import org.gradle.api.tasks.util.PatternSet;
 import org.gradle.util.GradleVersion;
 
-/* JADX INFO: compiled from: ProtobufExtract.groovy */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ProtobufExtract.groovy */
+/* INFO: loaded from: classes4.dex */
 public abstract class ProtobufExtract extends DefaultTask implements GroovyObject {
     private static /* synthetic */ ClassInfo $staticClassInfo;
     private static /* synthetic */ ClassInfo $staticClassInfo$;
@@ -108,7 +108,7 @@ public abstract class ProtobufExtract extends DefaultTask implements GroovyObjec
     public ProtobufExtract() {
     }
 
-    /* JADX INFO: compiled from: ProtobufExtract.groovy */
+    /* INFO: compiled from: ProtobufExtract.groovy */
     public final class _getInputProtoFiles_closure1 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -144,7 +144,7 @@ public abstract class ProtobufExtract extends DefaultTask implements GroovyObjec
         return this.filteredProtos.getAsFileTree().matching(new _getInputProtoFiles_closure1(this, this));
     }
 
-    /* JADX INFO: compiled from: ProtobufExtract.groovy */
+    /* INFO: compiled from: ProtobufExtract.groovy */
     public final class _extract_closure2 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -200,7 +200,7 @@ public abstract class ProtobufExtract extends DefaultTask implements GroovyObjec
         return getObjectFactory().fileCollection().from(new Object[]{getInputFiles().filter(new _instantiateFilteredProtos_closure3(this, this))}).from(new Object[]{getInputFiles().getElements().map((Transformer) ScriptBytecodeAdapter.castToType(new _instantiateFilteredProtos_closure4(this, this, new Reference(false), new Reference(getLogger()), new Reference(this.archiveActionFacade), new Reference(new PatternSet().include(new String[]{"**/*.proto"}))), Transformer.class))});
     }
 
-    /* JADX INFO: compiled from: ProtobufExtract.groovy */
+    /* INFO: compiled from: ProtobufExtract.groovy */
     public final class _instantiateFilteredProtos_closure3 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -239,7 +239,7 @@ public abstract class ProtobufExtract extends DefaultTask implements GroovyObjec
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufExtract.groovy */
+    /* INFO: compiled from: ProtobufExtract.groovy */
     public final class _instantiateFilteredProtos_closure4 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -322,7 +322,7 @@ public abstract class ProtobufExtract extends DefaultTask implements GroovyObjec
             return (Set) reference.get();
         }
 
-        /* JADX INFO: compiled from: ProtobufExtract.groovy */
+        /* INFO: compiled from: ProtobufExtract.groovy */
         public final class _closure5 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -352,7 +352,7 @@ public abstract class ProtobufExtract extends DefaultTask implements GroovyObjec
             }
         }
 
-        /* JADX INFO: compiled from: ProtobufExtract.groovy */
+        /* INFO: compiled from: ProtobufExtract.groovy */
         public final class _closure6 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;

@@ -8,7 +8,7 @@ import androidx.core.text.PrecomputedTextCompat;
 import java.lang.ref.WeakReference;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class PrecomputedTextSetterCompat implements Markwon.TextSetter {
     private final Executor executor;
 
@@ -20,7 +20,7 @@ public class PrecomputedTextSetterCompat implements Markwon.TextSetter {
         this.executor = executor;
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.PrecomputedTextSetterCompat$1, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.PrecomputedTextSetterCompat$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ TextView.BufferType val$bufferType;
         final /* synthetic */ Spanned val$markdown;
@@ -53,7 +53,7 @@ public class PrecomputedTextSetterCompat implements Markwon.TextSetter {
         this.executor.execute(new AnonymousClass1(new WeakReference(textView), spanned, bufferType, runnable));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static PrecomputedTextCompat precomputedText(TextView textView, Spanned spanned) {
         PrecomputedTextCompat.Params paramsBuild;
         if (textView == null) {
@@ -69,7 +69,7 @@ public class PrecomputedTextSetterCompat implements Markwon.TextSetter {
         return PrecomputedTextCompat.create(spanned, paramsBuild);
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.PrecomputedTextSetterCompat$2, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.PrecomputedTextSetterCompat$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         final /* synthetic */ TextView.BufferType val$bufferType;
         final /* synthetic */ Runnable val$onComplete;
@@ -90,7 +90,7 @@ public class PrecomputedTextSetterCompat implements Markwon.TextSetter {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void applyText(TextView textView, Spanned spanned, TextView.BufferType bufferType, Runnable runnable) {
         if (textView != null) {
             textView.post(new AnonymousClass2(textView, spanned, bufferType, runnable));

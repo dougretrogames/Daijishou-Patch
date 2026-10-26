@@ -20,7 +20,7 @@ import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CircularProgressDrawable extends Drawable implements Animatable {
     private static final int ANIMATION_DURATION = 1332;
     private static final int ARROW_HEIGHT = 5;
@@ -311,7 +311,7 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
         this.mAnimator = valueAnimatorOfFloat;
     }
 
-    /* JADX INFO: renamed from: androidx.swiperefreshlayout.widget.CircularProgressDrawable$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.swiperefreshlayout.widget.CircularProgressDrawable$1, reason: invalid class name */
     class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
         final /* synthetic */ Ring val$ring;
 
@@ -328,7 +328,7 @@ public class CircularProgressDrawable extends Drawable implements Animatable {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.swiperefreshlayout.widget.CircularProgressDrawable$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.swiperefreshlayout.widget.CircularProgressDrawable$2, reason: invalid class name */
     class AnonymousClass2 implements Animator.AnimatorListener {
         final /* synthetic */ Ring val$ring;
 

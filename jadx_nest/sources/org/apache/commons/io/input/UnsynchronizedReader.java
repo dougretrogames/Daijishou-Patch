@@ -4,7 +4,7 @@ import android.support.v4.media.session.PlaybackStateCompat;
 import java.io.IOException;
 import java.io.Reader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class UnsynchronizedReader extends Reader {
     private static final int MAX_SKIP_BUFFER_SIZE = 8192;
     private boolean closed;

@@ -8,7 +8,7 @@ import java.util.Random;
 import javax.annotation.CheckForNull;
 import sun.misc.Unsafe;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class Striped64 extends Number {
     private static final Unsafe UNSAFE;
@@ -85,7 +85,7 @@ abstract class Striped64 extends Number {
         return UNSAFE.compareAndSwapInt(this, busyOffset, 0, 1);
     }
 
-    /* JADX WARN: Code duplicated, block: B:30:0x0056  */
+    /* WARN: Code duplicated, block: B:30:0x0056  */
     final void retryUpdate(long x, @CheckForNull int[] hc, boolean wasUncontended) {
         int iNextInt;
         int[] iArr;
@@ -217,7 +217,7 @@ abstract class Striped64 extends Number {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Unsafe getUnsafe() {
         try {
             try {
@@ -230,7 +230,7 @@ abstract class Striped64 extends Number {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.hash.Striped64$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.hash.Striped64$1, reason: invalid class name */
     class AnonymousClass1 implements PrivilegedExceptionAction<Unsafe> {
         AnonymousClass1() {
         }

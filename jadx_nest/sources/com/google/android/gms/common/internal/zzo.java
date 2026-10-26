@@ -7,8 +7,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class zzo {
     private static final Uri zza = new Uri.Builder().scheme("content").authority("com.google.android.gms.chimera").build();
     private final String zzb;

@@ -17,11 +17,11 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: Operation.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Operation.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\u0010\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u0002\u001a(\u0010\u0004\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0005\u001a\u00020\u00062\u000e\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\t0\bH\u0002\u001a(\u0010\n\u001a\u00020\u000b2\u0006\u0010\u0002\u001a\u00020\u00032\u000e\u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\t0\b2\u0006\u0010\f\u001a\u00020\u0001H\u0002\u001a(\u0010\r\u001a\u00020\u000b2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0002\u001a\u00020\u0003H\u0002¨\u0006\u0014"}, d2 = {"currentNodeIndex", "", "slots", "Landroidx/compose/runtime/SlotWriter;", "positionToInsert", "anchor", "Landroidx/compose/runtime/Anchor;", "applier", "Landroidx/compose/runtime/Applier;", "", "positionToParentOf", "", ConfigConstants.CONFIG_INDEX_SECTION, "releaseMovableGroupAtCurrent", "composition", "Landroidx/compose/runtime/ControlledComposition;", "parentContext", "Landroidx/compose/runtime/CompositionContext;", TypedValues.Custom.S_REFERENCE, "Landroidx/compose/runtime/MovableContentStateReference;", "runtime_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class OperationKt {
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void positionToParentOf(SlotWriter slotWriter, Applier<Object> applier, int i) {
         while (!slotWriter.indexInParent(i)) {
             slotWriter.skipToGroupEnd();
@@ -54,7 +54,7 @@ public final class OperationKt {
         return iNodeCount;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final int positionToInsert(SlotWriter slotWriter, Anchor anchor, Applier<Object> applier) {
         int iAnchorIndex = slotWriter.anchorIndex(anchor);
         ComposerKt.runtimeCheck(slotWriter.getCurrentGroup() < iAnchorIndex);
@@ -75,7 +75,7 @@ public final class OperationKt {
         return iCurrentNodeIndex;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void releaseMovableGroupAtCurrent(ControlledComposition controlledComposition, CompositionContext compositionContext, MovableContentStateReference movableContentStateReference, SlotWriter slotWriter) {
         SlotTable slotTable = new SlotTable();
         SlotWriter slotWriterOpenWriter = slotTable.openWriter();

@@ -16,7 +16,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ProfileInstaller {
     public static final int DIAGNOSTIC_CURRENT_PROFILE_DOES_NOT_EXIST = 2;
     public static final int DIAGNOSTIC_CURRENT_PROFILE_EXISTS = 1;
@@ -73,7 +73,7 @@ public class ProfileInstaller {
         executor.execute(new ProfileInstaller$$ExternalSyntheticLambda1(diagnosticsCallback, i, obj));
     }
 
-    /* JADX INFO: renamed from: androidx.profileinstaller.ProfileInstaller$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.profileinstaller.ProfileInstaller$1, reason: invalid class name */
     class AnonymousClass1 implements DiagnosticsCallback {
         @Override // androidx.profileinstaller.ProfileInstaller.DiagnosticsCallback
         public void onDiagnosticReceived(int i, Object obj) {
@@ -87,7 +87,7 @@ public class ProfileInstaller {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.profileinstaller.ProfileInstaller$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.profileinstaller.ProfileInstaller$2, reason: invalid class name */
     class AnonymousClass2 implements DiagnosticsCallback {
         static final String TAG = "ProfileInstaller";
 

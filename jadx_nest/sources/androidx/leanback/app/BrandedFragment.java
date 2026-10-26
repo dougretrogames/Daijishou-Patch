@@ -12,7 +12,7 @@ import androidx.leanback.widget.SearchOrbView;
 import androidx.leanback.widget.TitleHelper;
 import androidx.leanback.widget.TitleViewAdapter;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public class BrandedFragment extends Fragment {
     private static final String TITLE_SHOW = "titleShow";
@@ -41,7 +41,7 @@ public class BrandedFragment extends Fragment {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public void setTitleView(View view) {
         this.mTitleView = view;
         if (view == 0) {

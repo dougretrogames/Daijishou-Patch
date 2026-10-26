@@ -27,8 +27,8 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: DaijishouConsoleViewModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouConsoleViewModel.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class DaijishouConsoleViewModel$commands$5$execute$3$1 extends Lambda<Unit> implements Function1<PlayableItemEntity, Unit> {
     final /* synthetic */ DaijishouApplication $application;
@@ -38,8 +38,8 @@ final class DaijishouConsoleViewModel$commands$5$execute$3$1 extends Lambda<Unit
     final /* synthetic */ Ref.BooleanRef $selected;
     final /* synthetic */ DaijishouConsoleViewModel this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     DaijishouConsoleViewModel$commands$5$execute$3$1(Ref.BooleanRef booleanRef, ChoosePlayableItemFromLibraryDialogFragment choosePlayableItemFromLibraryDialogFragment, DaijishouApplication daijishouApplication, DaijishouConsoleViewModel daijishouConsoleViewModel, DSESS dsess, Continuation<?> continuation) {
         super(1);
         this.$selected = booleanRef;
@@ -56,7 +56,7 @@ final class DaijishouConsoleViewModel$commands$5$execute$3$1 extends Lambda<Unit
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(PlayableItemEntity it) {
         Intrinsics.checkNotNullParameter(it, "it");
         this.$selected.element = true;
@@ -75,8 +75,8 @@ final class DaijishouConsoleViewModel$commands$5$execute$3$1 extends Lambda<Unit
         BuildersKt.launch$default(ViewModelKt.getViewModelScope(this.this$0), Dispatchers.getIO(), null, new AnonymousClass1(scraperKeywordList, this.this$0, this.$dSESS, name, this.$continuation, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$5$execute$3$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouConsoleViewModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$5$execute$3$1$1, reason: invalid class name */
+    /* INFO: compiled from: DaijishouConsoleViewModel.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouConsoleViewModel$commands$5$execute$3$1$1", f = "DaijishouConsoleViewModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -87,8 +87,8 @@ final class DaijishouConsoleViewModel$commands$5$execute$3$1 extends Lambda<Unit
         int label;
         final /* synthetic */ DaijishouConsoleViewModel this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(List<String> list, DaijishouConsoleViewModel daijishouConsoleViewModel, DSESS dsess, String str, Continuation<?> continuation, Continuation<?> continuation2) {
             super(2, continuation2);
             this.$scraperKeywordList = list;

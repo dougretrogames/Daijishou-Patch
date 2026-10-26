@@ -5,7 +5,7 @@ import java.io.OutputStream;
 import net.lingala.zip4j.crypto.AESEncrypter;
 import net.lingala.zip4j.model.ZipParameters;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class AesCipherOutputStream extends CipherOutputStream<AESEncrypter> {
     private byte[] pendingBuffer;
     private int pendingBufferLength;
@@ -16,7 +16,7 @@ class AesCipherOutputStream extends CipherOutputStream<AESEncrypter> {
         this.pendingBufferLength = 0;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.io.outputstream.CipherOutputStream
     public AESEncrypter initializeEncrypter(OutputStream outputStream, ZipParameters zipParameters, char[] cArr, boolean z) throws IOException {
         AESEncrypter aESEncrypter = new AESEncrypter(cArr, zipParameters.getAesKeyStrength(), z);

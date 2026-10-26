@@ -70,14 +70,14 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: RetroAchievementsNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0096\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u0000 I2\u00020\u0001:\u0003IJKB\u0005¢\u0006\u0002\u0010\u0002J\b\u00109\u001a\u00020*H\u0016J\u0012\u0010:\u001a\u00020;2\b\u0010<\u001a\u0004\u0018\u00010=H\u0016J&\u0010>\u001a\u0004\u0018\u00010\u00102\u0006\u0010?\u001a\u00020@2\b\u0010A\u001a\u0004\u0018\u00010B2\b\u0010<\u001a\u0004\u0018\u00010=H\u0016J\b\u0010C\u001a\u00020;H\u0016J\u0012\u0010D\u001a\u00020;2\b\b\u0002\u0010E\u001a\u00020*H\u0002J\u0010\u0010F\u001a\u00020;2\u0006\u0010G\u001a\u00020HH\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u001b\u0010\u0014\u001a\u00020\u00158BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0018\u0010\u0019\u001a\u0004\b\u0016\u0010\u0017R\u000e\u0010\u001a\u001a\u00020\u000eX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u001fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020$X\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010%\u001a\u00060&R\u00020\u0000X\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010'\u001a\u00060(R\u00020\u0000X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020*X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010,\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010-\u001a\b\u0012\u0004\u0012\u00020/0.X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u00100\u001a\b\u0012\u0004\u0012\u0002010.X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u00102\u001a\u000203X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00104\u001a\u00020*X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00105\u001a\u00020\u001fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u00106\u001a\u00020\u000eX\u0082.¢\u0006\u0002\n\u0000R\u000e\u00107\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00108\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000¨\u0006L"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment;", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetNavFragment;", "()V", "achievementCompletedFormatString", "", "achievementPointsFormatString", "allTimeString", "awardsButton", "Lcom/google/android/material/chip/Chip;", "chipStrokeWidth", "", "completionButton", "dailyString", "description", "Landroid/widget/TextView;", "divider", "Landroid/view/View;", "loadingDataString", "loadingString", "loadingUsernameString", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "getModel", "()Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "model$delegate", "Lkotlin/Lazy;", "motto", "nOfMCompletedAbbreviationFormatString", "nOfMFormatString", "noMottoString", "placeHolder", "Landroid/widget/ImageView;", "pleaseLoginString", "rankingButton", "recentButton", "recyclerView", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;", "recyclerViewGameListAdapter", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$GameListAdapter;", "recyclerViewRankingUserProfileListAdapter", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$RankingUserProfileListAdapter;", "refocusOnScrolledToTop", "", "refreshButton", "retroAchievementsButton", "retroAchievementsGameRecordList", "", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "retroAchievementsUserRankingList", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsUserRankingEntity;", "scrollView", "Landroid/widget/HorizontalScrollView;", "scrollingOnBackPressed", "thumbnail", "title", "userAchievementDescriptionFormatString", "weeklyString", "onBackPressed", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onStart", "refreshData", "useCached", "renderUserProfile", "userProfile", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsUserProfileEntity;", "Companion", "GameListAdapter", "RankingUserProfileListAdapter", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class RetroAchievementsNavFragment extends WidgetNavFragment {
     public static final int BEATEN_VIEW_MODE = 2;
     public static final int COMPLETION_VIEW_MODE = 1;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public static final int RANKING_ALL_TIME_VIEW_MODE = 5;
     public static final int RANKING_DAILY_VIEW_MODE = 3;
@@ -97,7 +97,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
     private String loadingString;
     private String loadingUsernameString;
 
-    /* JADX INFO: renamed from: model$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: model$delegate, reason: from kotlin metadata */
     private final Lazy model;
     public TextView motto;
     private String nOfMCompletedAbbreviationFormatString;
@@ -130,7 +130,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         this.model = FragmentViewModelLazyKt.createViewModelLazy(retroAchievementsNavFragment, Reflection.getOrCreateKotlinClass(DaijishouViewModel.class), new RetroAchievementsNavFragment$special$$inlined$activityViewModels$default$1(retroAchievementsNavFragment), new RetroAchievementsNavFragment$special$$inlined$activityViewModels$default$2(null, retroAchievementsNavFragment), new RetroAchievementsNavFragment$special$$inlined$activityViewModels$default$3(retroAchievementsNavFragment));
     }
 
-    /* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
+    /* INFO: compiled from: RetroAchievementsNavFragment.kt */
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\r\u001a\u00020\u000eR\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u0016\u0010\n\u001a\n \f*\u0004\u0018\u00010\u000b0\u000bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000f"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$Companion;", "", "()V", "BEATEN_VIEW_MODE", "", "COMPLETION_VIEW_MODE", "RANKING_ALL_TIME_VIEW_MODE", "RANKING_DAILY_VIEW_MODE", "RANKING_WEEKLY_VIEW_MODE", "RECENT_VIEW_MODE", "typeface", "Landroid/graphics/Typeface;", "kotlin.jvm.PlatformType", "newInstance", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -151,15 +151,15 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         typeface = Build.VERSION.SDK_INT >= 28 ? Typeface.create(null, Constants.semiBolderWeight, false) : Typeface.defaultFromStyle(1);
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x0020  */
-    /* JADX WARN: Code duplicated, block: B:14:0x002a  */
-    /* JADX WARN: Code duplicated, block: B:16:0x002e  */
-    /* JADX WARN: Code duplicated, block: B:42:0x007f  */
-    /* JADX WARN: Code duplicated, block: B:45:0x008a  */
-    /* JADX WARN: Code duplicated, block: B:48:0x0095  */
-    /* JADX WARN: Code duplicated, block: B:49:0x0099  */
-    /* JADX WARN: Code duplicated, block: B:9:0x001c  */
-    /* JADX WARN: Code restructure failed: missing block: B:18:0x0036, code lost:
+    /* WARN: Code duplicated, block: B:11:0x0020  */
+    /* WARN: Code duplicated, block: B:14:0x002a  */
+    /* WARN: Code duplicated, block: B:16:0x002e  */
+    /* WARN: Code duplicated, block: B:42:0x007f  */
+    /* WARN: Code duplicated, block: B:45:0x008a  */
+    /* WARN: Code duplicated, block: B:48:0x0095  */
+    /* WARN: Code duplicated, block: B:49:0x0099  */
+    /* WARN: Code duplicated, block: B:9:0x001c  */
+    /* WARN: Code restructure failed: missing block: B:18:0x0036, code lost:
     
         if (r0.getScrollX() == 0) goto L19;
      */
@@ -228,7 +228,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final DaijishouViewModel getModel() {
         return (DaijishouViewModel) this.model.getValue();
     }
@@ -240,7 +240,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         retroAchievementsNavFragment.refreshData(z);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void renderUserProfile(RetroAchievementsUserProfileEntity userProfile) {
         String str;
         TextView textView = this.title;
@@ -312,7 +312,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         requestBuilderListener.into(imageView);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void renderUserProfile$lambda$1(RetroAchievementsUserProfileEntity userProfile, RetroAchievementsNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(userProfile, "$userProfile");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -322,8 +322,8 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$renderUserProfile$2, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$renderUserProfile$2, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsNavFragment.kt */
     @Metadata(d1 = {"\u0000/\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001J2\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\b2\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00020\n2\u0006\u0010\u000b\u001a\u00020\u0004H\u0016J8\u0010\f\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u00022\u0006\u0010\u0007\u001a\u00020\b2\u000e\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\n2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u000b\u001a\u00020\u0004H\u0016¨\u0006\u0010"}, d2 = {"com/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$renderUserProfile$2", "Lcom/bumptech/glide/request/RequestListener;", "Landroid/graphics/drawable/Drawable;", "onLoadFailed", "", "e", "Lcom/bumptech/glide/load/engine/GlideException;", "model", "", TypedValues.AttributesType.S_TARGET, "Lcom/bumptech/glide/request/target/Target;", "isFirstResource", "onResourceReady", "resource", "dataSource", "Lcom/bumptech/glide/load/DataSource;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass2 implements RequestListener<Drawable> {
         AnonymousClass2() {
@@ -356,13 +356,13 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
+    /* INFO: compiled from: RetroAchievementsNavFragment.kt */
     @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0010B\u0013\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004¢\u0006\u0002\u0010\u0005J\u0010\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J \u0010\n\u001a\n0\u000bR\u00060\u0000R\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\tH\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0011"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$RankingUserProfileListAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsUserRankingEntity;", "retroAchievementsUserRankingList", "", "(Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment;Ljava/util/List;)V", "getItemId", "", "position", "", "onCreateViewHolder", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$RankingUserProfileListAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment;", "parent", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class RankingUserProfileListAdapter extends DaijishouRecyclerView.Adapter<RetroAchievementsUserRankingEntity> {
         private final List<RetroAchievementsUserRankingEntity> retroAchievementsUserRankingList;
         final /* synthetic */ RetroAchievementsNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public RankingUserProfileListAdapter(RetroAchievementsNavFragment retroAchievementsNavFragment, List<RetroAchievementsUserRankingEntity> retroAchievementsUserRankingList) {
             super(retroAchievementsUserRankingList, true, false, 4, null);
             Intrinsics.checkNotNullParameter(retroAchievementsUserRankingList, "retroAchievementsUserRankingList");
@@ -371,7 +371,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
             setEnforceSelectionInSelectableMode(false);
         }
 
-        /* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
+        /* INFO: compiled from: RetroAchievementsNavFragment.kt */
         @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0003H\u0016J\b\u0010\u0011\u001a\u00020\u0012H\u0016R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0013"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$RankingUserProfileListAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsUserRankingEntity;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$RankingUserProfileListAdapter;Landroid/view/View;)V", "imageView", "Landroid/widget/ImageView;", "pointsSubtitle", "Landroid/widget/TextView;", "title", "onBind", "", "position", "", "RetroAchievementsUserRanking", "onClick", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<RetroAchievementsUserRankingEntity>.ViewHolder {
             private final ImageView imageView;
@@ -379,7 +379,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
             final /* synthetic */ RankingUserProfileListAdapter this$0;
             private final TextView title;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(RankingUserProfileListAdapter rankingUserProfileListAdapter, View itemView) {
                 super(rankingUserProfileListAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");
@@ -441,7 +441,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
+    /* INFO: compiled from: RetroAchievementsNavFragment.kt */
     @Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001fB\u0013\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004¢\u0006\u0002\u0010\u0005J\u0010\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0016J \u0010\u0019\u001a\n0\u001aR\u00060\u0000R\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u0018H\u0016R\u001a\u0010\u0006\u001a\u00020\u0007X\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\b\u0010\t\"\u0004\b\n\u0010\u000bR*\u0010\f\u001a\u001e\u0012\u0004\u0012\u00020\u0002\u0012\u0014\u0012\u0012\u0012\f\u0012\n \u0010*\u0004\u0018\u00010\u000f0\u000f\u0018\u00010\u000e0\rX\u0082\u0004¢\u0006\u0002\n\u0000R*\u0010\u0011\u001a\u001e\u0012\u0004\u0012\u00020\u0002\u0012\u0014\u0012\u0012\u0012\f\u0012\n \u0010*\u0004\u0018\u00010\u000f0\u000f\u0018\u00010\u000e0\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00020\u0013X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00020\u0013X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006 "}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$GameListAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "retroAchievementsGameRecordList", "", "(Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment;Ljava/util/List;)V", "enforceSelectionInSelectableMode", "", "getEnforceSelectionInSelectableMode", "()Z", "setEnforceSelectionInSelectableMode", "(Z)V", "getGlidePreloadRequestBuilderOfImageView", "Lkotlin/Function1;", "Lcom/bumptech/glide/RequestBuilder;", "Landroid/graphics/drawable/Drawable;", "kotlin.jvm.PlatformType", "getGlidePreloadRequestBuilderOfSystemIcon", "imageViewGlideViewPreloadSizeProvider", "Lcom/bumptech/glide/util/ViewPreloadSizeProvider;", "systemIconGlideViewPreloadSizeProvider", "getItemId", "", "position", "", "onCreateViewHolder", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$GameListAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment;", "parent", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class GameListAdapter extends DaijishouRecyclerView.Adapter<RetroAchievementsGameRecordEntity> {
         private boolean enforceSelectionInSelectableMode;
@@ -452,7 +452,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         private final ViewPreloadSizeProvider<RetroAchievementsGameRecordEntity> systemIconGlideViewPreloadSizeProvider;
         final /* synthetic */ RetroAchievementsNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public GameListAdapter(RetroAchievementsNavFragment retroAchievementsNavFragment, List<RetroAchievementsGameRecordEntity> retroAchievementsGameRecordList) {
             super(retroAchievementsGameRecordList, true, false, 4, null);
             Intrinsics.checkNotNullParameter(retroAchievementsGameRecordList, "retroAchievementsGameRecordList");
@@ -482,7 +482,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
             return this.retroAchievementsGameRecordList.get(position).getId();
         }
 
-        /* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
+        /* INFO: compiled from: RetroAchievementsNavFragment.kt */
         @Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0010\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0003H\u0002J\u0018\u0010\u0017\u001a\u00020\u00152\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u0003H\u0016J\b\u0010\u001b\u001a\u00020\u001cH\u0016J\b\u0010\u001d\u001a\u00020\u0015H\u0016R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001e"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$GameListAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$GameListAdapter;Landroid/view/View;)V", "description", "Landroid/widget/TextView;", "gameId", "", "imageView", "Landroid/widget/ImageView;", "linearProgressIndicator", "Lcom/google/android/material/progressindicator/LinearProgressIndicator;", "pointsSubtitle", "progress", "", "systemIcon", "title", "loadGameData", "", "retroAchievementsGameRecord", "onBind", "position", "", "item", "onClick", "", "onFocus", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<RetroAchievementsGameRecordEntity>.ViewHolder {
             private final TextView description;
@@ -495,7 +495,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
             final /* synthetic */ GameListAdapter this$0;
             private final TextView title;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(GameListAdapter gameListAdapter, View itemView) {
                 super(gameListAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");
@@ -818,8 +818,8 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$1, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$1, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsNavFragment.kt */
     @Metadata(d1 = {"\u0000\u001f\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016J \u0010\b\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\u0007H\u0016¨\u0006\u000b"}, d2 = {"com/magneticchen/daijishou/daijishou_widget/widgets/retro_achievements/RetroAchievementsNavFragment$onCreateView$1", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "onScrolled", "dx", "dy", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass1 extends RecyclerView.OnScrollListener {
         AnonymousClass1() {
@@ -876,7 +876,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$2(RetroAchievementsNavFragment this$0, View view, int i, int i2, int i3, int i4) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (this$0.refocusOnScrolledToTop) {
@@ -899,7 +899,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$3(Ref.BooleanRef refreshButtonClicked, RetroAchievementsNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(refreshButtonClicked, "$refreshButtonClicked");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -907,7 +907,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this$0), Dispatchers.getIO(), null, new RetroAchievementsNavFragment$onCreateView$3$1(this$0, null), 2, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$4(RetroAchievementsNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         DaijishouRecyclerView daijishouRecyclerView = null;
@@ -931,7 +931,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         this$0.getDefaultSharedPreferences().edit().putInt(IntPreference.RETRO_ACHIEVEMENTS_USER_PROFILE_VIEW_MODE.getKey(), IntPreference.RETRO_ACHIEVEMENTS_USER_PROFILE_VIEW_MODE.getDefaultValue()).apply();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$5(RetroAchievementsNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         DaijishouRecyclerView daijishouRecyclerView = null;
@@ -955,7 +955,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         this$0.getDefaultSharedPreferences().edit().putInt(IntPreference.RETRO_ACHIEVEMENTS_USER_PROFILE_VIEW_MODE.getKey(), 1).apply();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$6(RetroAchievementsNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         DaijishouRecyclerView daijishouRecyclerView = null;
@@ -979,7 +979,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         this$0.getDefaultSharedPreferences().edit().putInt(IntPreference.RETRO_ACHIEVEMENTS_USER_PROFILE_VIEW_MODE.getKey(), 2).apply();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreateView$lambda$7(RetroAchievementsNavFragment this$0, MenuItem menuItem) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         DaijishouRecyclerView daijishouRecyclerView = null;
@@ -1004,21 +1004,21 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$8(PopupMenu popupMenu, View view) {
         Intrinsics.checkNotNullParameter(popupMenu, "$popupMenu");
         popupMenu.show();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$9, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$9, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsNavFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012J\u0010\u0002\u001aF\u0012\u0004\u0012\u00020\u0004\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00060\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00070\u0005 \b*\"\u0012\u0004\u0012\u00020\u0004\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00060\u0005\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00070\u0005\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\t"}, d2 = {"<anonymous>", "", "it", "Lkotlin/Triple;", "", "", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsUserRankingEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass9 extends Lambda<Unit> implements Function1<Triple<? extends Integer, ? extends List<? extends RetroAchievementsGameRecordEntity>, ? extends List<? extends RetroAchievementsUserRankingEntity>>, Unit> {
         final /* synthetic */ Ref.BooleanRef $firstTime;
         final /* synthetic */ Ref.IntRef $oldViewMode;
         final /* synthetic */ Ref.BooleanRef $refreshButtonClicked;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass9(Ref.BooleanRef booleanRef, Ref.BooleanRef booleanRef2, Ref.IntRef intRef) {
             super(1);
             this.$firstTime = booleanRef;
@@ -1032,7 +1032,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Triple<Integer, ? extends List<RetroAchievementsGameRecordEntity>, ? extends List<RetroAchievementsUserRankingEntity>> triple) {
             int iIntValue = triple.getFirst().intValue();
             List<RetroAchievementsGameRecordEntity> second = triple.getSecond();
@@ -1347,16 +1347,16 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$10, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$10, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass10 extends Lambda<Unit> implements Function1<List<? extends String>, Unit> {
         AnonymousClass10() {
             super(1);
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$10$1, reason: invalid class name */
-        /* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$10$1, reason: invalid class name */
+        /* INFO: compiled from: RetroAchievementsNavFragment.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$10$1", f = "RetroAchievementsNavFragment.kt", i = {}, l = {809, 811}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -1364,7 +1364,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
             int label;
             final /* synthetic */ RetroAchievementsNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(RetroAchievementsNavFragment retroAchievementsNavFragment, List<String> list, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = retroAchievementsNavFragment;
@@ -1389,7 +1389,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
                 }
             }
 
-            /* JADX WARN: Code restructure failed: missing block: B:18:0x0055, code lost:
+            /* WARN: Code restructure failed: missing block: B:18:0x0055, code lost:
             
                 if (kotlinx.coroutines.BuildersKt.withContext(r6, r1, r5) == r0) goto L19;
              */
@@ -1432,14 +1432,14 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<String> list) {
             BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(RetroAchievementsNavFragment.this), Dispatchers.getIO(), null, new AnonymousClass1(RetroAchievementsNavFragment.this, list, null), 2, null);
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$11, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$11, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsNavFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "userProfile", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsUserProfileEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass11 extends Lambda<Unit> implements Function1<RetroAchievementsUserProfileEntity, Unit> {
         AnonymousClass11() {
@@ -1452,7 +1452,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(RetroAchievementsUserProfileEntity retroAchievementsUserProfileEntity) {
             if (retroAchievementsUserProfileEntity == null) {
                 TextView textView = RetroAchievementsNavFragment.this.title;
@@ -1491,8 +1491,8 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$12, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$12, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsNavFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements.RetroAchievementsNavFragment$onCreateView$12", f = "RetroAchievementsNavFragment.kt", i = {}, l = {831, 832}, m = "invokeSuspendImpl", n = {}, s = {})
     final class AnonymousClass12 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -1520,7 +1520,7 @@ public final class RetroAchievementsNavFragment extends WidgetNavFragment {
             }
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:16:0x0043, code lost:
+        /* WARN: Code restructure failed: missing block: B:16:0x0043, code lost:
         
             if (r1.refreshRetroAchievementsUserProfileDataIfExpired(r5, r4) == r0) goto L17;
          */

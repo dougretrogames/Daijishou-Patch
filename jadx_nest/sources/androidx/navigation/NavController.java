@@ -66,8 +66,8 @@ import kotlinx.serialization.SerializersKt;
 import org.apache.commons.io.FilenameUtils;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: NavController.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: NavController.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(d1 = {"\u0000Æ\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0000\n\u0002\u0010%\n\u0002\u0010\b\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0015\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0012\n\u0002\u0018\u0002\n\u0002\b\u0010\b\u0016\u0018\u0000 Ö\u00012\u00020\u0001:\u0006Ö\u0001×\u0001Ø\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J2\u0010q\u001a\u00020\u00172\u0006\u0010r\u001a\u0002052\b\u0010s\u001a\u0004\u0018\u00010_2\u0006\u0010\u0016\u001a\u00020\b2\u000e\b\u0002\u0010t\u001a\b\u0012\u0004\u0012\u00020\b0\u0007H\u0002J\u0010\u0010u\u001a\u00020\u00172\u0006\u0010v\u001a\u00020fH\u0016J\u0015\u0010w\u001a\u000209\"\n\b\u0000\u0010x\u0018\u0001*\u00020\u0001H\u0087\bJ\u001f\u0010w\u001a\u000209\"\b\b\u0000\u0010x*\u00020\u00012\u0006\u0010y\u001a\u0002HxH\u0007¢\u0006\u0002\u0010zJ\u0012\u0010w\u001a\u0002092\b\b\u0001\u0010{\u001a\u00020\u001eH\u0007J\u0010\u0010w\u001a\u0002092\u0006\u0010y\u001a\u00020\u001fH\u0007J\u0012\u0010|\u001a\u0002092\b\b\u0001\u0010{\u001a\u00020\u001eH\u0003J\u0010\u0010|\u001a\u0002092\u0006\u0010y\u001a\u00020\u001fH\u0003J\b\u0010}\u001a\u00020~H\u0016J\b\u0010\u007f\u001a\u000209H\u0002J\u0012\u0010\u0080\u0001\u001a\u00020\u00172\u0007\u0010\u0081\u0001\u001a\u000209H\u0017J7\u0010\u0082\u0001\u001a\u0002092\u0011\u0010\u0083\u0001\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030\\0\u00072\u0007\u0010\u0084\u0001\u001a\u0002052\u0007\u0010\u0085\u0001\u001a\u0002092\u0007\u0010\u0086\u0001\u001a\u000209H\u0002J;\u0010\u0087\u0001\u001a\u0002092\r\u0010\u0088\u0001\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\t\u0010\u0089\u0001\u001a\u0004\u0018\u00010_2\n\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u00012\n\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u008d\u0001H\u0002J\"\u0010\u008e\u0001\u001a\u0004\u0018\u0001052\b\b\u0001\u0010{\u001a\u00020\u001e2\u000b\b\u0002\u0010\u008f\u0001\u001a\u0004\u0018\u000105H\u0007J\u0013\u0010\u008e\u0001\u001a\u0004\u0018\u0001052\u0006\u0010y\u001a\u00020\u001fH\u0007J\u0015\u0010\u0090\u0001\u001a\u0004\u0018\u00010\u001f2\b\u0010\u0091\u0001\u001a\u00030\u0092\u0001H\u0002J!\u0010\u0093\u0001\u001a\u00020\u001f\"\b\b\u0000\u0010x*\u00020\u00012\u0006\u0010y\u001a\u0002HxH\u0002¢\u0006\u0003\u0010\u0094\u0001J\u0016\u0010\u0095\u0001\u001a\u00020\b\"\n\b\u0000\u0010x\u0018\u0001*\u00020\u0001H\u0086\bJ\u001f\u0010\u0095\u0001\u001a\u00020\b\"\b\b\u0000\u0010x*\u00020\u00012\u0006\u0010y\u001a\u0002Hx¢\u0006\u0003\u0010\u0096\u0001J\u0013\u0010\u0095\u0001\u001a\u00020\b2\b\b\u0001\u0010{\u001a\u00020\u001eH\u0016J\u000f\u0010\u0095\u0001\u001a\u00020\b2\u0006\u0010y\u001a\u00020\u001fJ\u0015\u0010\u0097\u0001\u001a\u00030\u0098\u00012\t\b\u0001\u0010\u0099\u0001\u001a\u00020\u001eH\u0016J\u0015\u0010\u009a\u0001\u001a\u0002092\n\u0010\u009b\u0001\u001a\u0005\u0018\u00010\u009c\u0001H\u0017J \u0010\u009d\u0001\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\u000f\u0010\u009e\u0001\u001a\n\u0012\u0004\u0012\u00020!\u0018\u00010\u0019H\u0002J\u001c\u0010\u009f\u0001\u001a\u0002092\u0006\u0010r\u001a\u0002052\t\u0010\u0089\u0001\u001a\u0004\u0018\u00010_H\u0002J\u001b\u0010 \u0001\u001a\u00020\u00172\u0007\u0010¡\u0001\u001a\u00020\b2\u0007\u0010¢\u0001\u001a\u00020\bH\u0002J=\u0010£\u0001\u001a\u00020\u0017\"\b\b\u0000\u0010x*\u00020\u00012\u0006\u0010y\u001a\u0002Hx2\f\b\u0002\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u00012\f\b\u0002\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u008d\u0001H\u0007¢\u0006\u0003\u0010¤\u0001J=\u0010£\u0001\u001a\u00020\u0017\"\b\b\u0000\u0010x*\u00020\u00012\u0006\u0010y\u001a\u0002Hx2\u001a\u0010¥\u0001\u001a\u0015\u0012\u0005\u0012\u00030¦\u0001\u0012\u0004\u0012\u00020\u00170\u0013¢\u0006\u0003\b§\u0001H\u0007¢\u0006\u0003\u0010¨\u0001J\u0013\u0010£\u0001\u001a\u00020\u00172\b\u0010\u0091\u0001\u001a\u00030©\u0001H\u0017J\u001f\u0010£\u0001\u001a\u00020\u00172\b\u0010\u0091\u0001\u001a\u00030©\u00012\n\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u0001H\u0017J+\u0010£\u0001\u001a\u00020\u00172\b\u0010\u0091\u0001\u001a\u00030©\u00012\n\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u00012\n\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u008d\u0001H\u0017J\u0013\u0010£\u0001\u001a\u00020\u00172\b\u0010ª\u0001\u001a\u00030«\u0001H\u0017J\u001f\u0010£\u0001\u001a\u00020\u00172\b\u0010ª\u0001\u001a\u00030«\u00012\n\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u0001H\u0017J+\u0010£\u0001\u001a\u00020\u00172\b\u0010ª\u0001\u001a\u00030«\u00012\n\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u00012\n\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u008d\u0001H\u0017J4\u0010£\u0001\u001a\u00020\u00172\u0006\u0010r\u001a\u0002052\t\u0010\u0089\u0001\u001a\u0004\u0018\u00010_2\n\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u00012\n\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u008d\u0001H\u0003J\u0013\u0010£\u0001\u001a\u00020\u00172\b\u0010¬\u0001\u001a\u00030\u00ad\u0001H\u0017J\u001f\u0010£\u0001\u001a\u00020\u00172\b\u0010¬\u0001\u001a\u00030\u00ad\u00012\n\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u0001H\u0017J\u001d\u0010£\u0001\u001a\u00020\u00172\b\u0010¬\u0001\u001a\u00030\u00ad\u00012\b\u0010\u008c\u0001\u001a\u00030\u008d\u0001H\u0017J\u0014\u0010£\u0001\u001a\u00020\u00172\t\b\u0001\u0010®\u0001\u001a\u00020\u001eH\u0017J\u001f\u0010£\u0001\u001a\u00020\u00172\t\b\u0001\u0010®\u0001\u001a\u00020\u001e2\t\u0010\u0089\u0001\u001a\u0004\u0018\u00010_H\u0017J+\u0010£\u0001\u001a\u00020\u00172\t\b\u0001\u0010®\u0001\u001a\u00020\u001e2\t\u0010\u0089\u0001\u001a\u0004\u0018\u00010_2\n\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u0001H\u0017J7\u0010£\u0001\u001a\u00020\u00172\t\b\u0001\u0010®\u0001\u001a\u00020\u001e2\t\u0010\u0089\u0001\u001a\u0004\u0018\u00010_2\n\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u00012\n\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u008d\u0001H\u0017J-\u0010£\u0001\u001a\u00020\u00172\u0006\u0010y\u001a\u00020\u001f2\f\b\u0002\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u00012\f\b\u0002\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u008d\u0001H\u0007J-\u0010£\u0001\u001a\u00020\u00172\u0006\u0010y\u001a\u00020\u001f2\u001a\u0010¥\u0001\u001a\u0015\u0012\u0005\u0012\u00030¦\u0001\u0012\u0004\u0012\u00020\u00170\u0013¢\u0006\u0003\b§\u0001H\u0007J\t\u0010¯\u0001\u001a\u000209H\u0017J\u0014\u0010°\u0001\u001a\u00020\u00172\t\u0010±\u0001\u001a\u0004\u0018\u00010_H\u0003J\t\u0010²\u0001\u001a\u000209H\u0017J5\u0010²\u0001\u001a\u000209\"\b\b\u0000\u0010x*\u00020\u00012\u0006\u0010y\u001a\u0002Hx2\u0007\u0010\u0085\u0001\u001a\u0002092\t\b\u0002\u0010\u0086\u0001\u001a\u000209H\u0007¢\u0006\u0003\u0010³\u0001J*\u0010²\u0001\u001a\u000209\"\n\b\u0000\u0010x\u0018\u0001*\u00020\u00012\u0007\u0010\u0085\u0001\u001a\u0002092\t\b\u0002\u0010\u0086\u0001\u001a\u000209H\u0087\bJ\u001c\u0010²\u0001\u001a\u0002092\b\b\u0001\u0010{\u001a\u00020\u001e2\u0007\u0010\u0085\u0001\u001a\u000209H\u0017J%\u0010²\u0001\u001a\u0002092\b\b\u0001\u0010{\u001a\u00020\u001e2\u0007\u0010\u0085\u0001\u001a\u0002092\u0007\u0010\u0086\u0001\u001a\u000209H\u0017J%\u0010²\u0001\u001a\u0002092\u0006\u0010y\u001a\u00020\u001f2\u0007\u0010\u0085\u0001\u001a\u0002092\t\b\u0002\u0010\u0086\u0001\u001a\u000209H\u0007J'\u0010´\u0001\u001a\u00020\u00172\u0006\u0010j\u001a\u00020\b2\u000e\u0010µ\u0001\u001a\t\u0012\u0004\u0012\u00020\u00170¶\u0001H\u0000¢\u0006\u0003\b·\u0001J5\u0010¸\u0001\u001a\u000209\"\b\b\u0000\u0010x*\u00020\u00012\u0006\u0010y\u001a\u0002Hx2\u0007\u0010\u0085\u0001\u001a\u0002092\t\b\u0002\u0010\u0086\u0001\u001a\u000209H\u0002¢\u0006\u0003\u0010³\u0001J'\u0010¸\u0001\u001a\u0002092\b\b\u0001\u0010{\u001a\u00020\u001e2\u0007\u0010\u0085\u0001\u001a\u0002092\t\b\u0002\u0010\u0086\u0001\u001a\u000209H\u0003J#\u0010¸\u0001\u001a\u0002092\u0006\u0010y\u001a\u00020\u001f2\u0007\u0010\u0085\u0001\u001a\u0002092\u0007\u0010\u0086\u0001\u001a\u000209H\u0002J-\u0010¹\u0001\u001a\u00020\u00172\u0006\u0010j\u001a\u00020\b2\t\b\u0002\u0010\u0086\u0001\u001a\u0002092\u000f\b\u0002\u0010º\u0001\u001a\b\u0012\u0004\u0012\u00020!0\u0019H\u0002J\u0015\u0010»\u0001\u001a\b\u0012\u0004\u0012\u00020\b0\u0007H\u0000¢\u0006\u0003\b¼\u0001J\u0011\u0010½\u0001\u001a\u00020\u00172\u0006\u0010v\u001a\u00020fH\u0016J\u0014\u0010¾\u0001\u001a\u00020\u00172\t\u0010¿\u0001\u001a\u0004\u0018\u00010_H\u0017J5\u0010À\u0001\u001a\u0002092\u0007\u0010Á\u0001\u001a\u00020\u001e2\t\u0010\u0089\u0001\u001a\u0004\u0018\u00010_2\n\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u00012\n\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u008d\u0001H\u0002J\u0011\u0010À\u0001\u001a\u0002092\u0006\u0010y\u001a\u00020\u001fH\u0002J\u000b\u0010\u0086\u0001\u001a\u0004\u0018\u00010_H\u0017J\u001b\u0010C\u001a\u00020\u00172\u0006\u0010@\u001a\u00020\f2\t\u0010±\u0001\u001a\u0004\u0018\u00010_H\u0017J\u0013\u0010C\u001a\u00020\u00172\t\b\u0001\u0010Â\u0001\u001a\u00020\u001eH\u0017J\u001e\u0010C\u001a\u00020\u00172\t\b\u0001\u0010Â\u0001\u001a\u00020\u001e2\t\u0010±\u0001\u001a\u0004\u0018\u00010_H\u0017J\u0012\u0010Ã\u0001\u001a\u00020\u00172\u0007\u0010Ä\u0001\u001a\u00020PH\u0017J\u0012\u0010Å\u0001\u001a\u00020\u00172\u0007\u0010Æ\u0001\u001a\u00020cH\u0017J\u0013\u0010Ç\u0001\u001a\u00020\u00172\b\u0010È\u0001\u001a\u00030É\u0001H\u0017J\t\u0010Ê\u0001\u001a\u000209H\u0002J\t\u0010Ë\u0001\u001a\u000209H\u0002J\u001a\u0010Ì\u0001\u001a\u0004\u0018\u00010\b2\u0007\u0010¡\u0001\u001a\u00020\bH\u0000¢\u0006\u0003\bÍ\u0001J\u000f\u0010Î\u0001\u001a\u00020\u0017H\u0000¢\u0006\u0003\bÏ\u0001J\t\u0010Ð\u0001\u001a\u00020\u0017H\u0002J/\u0010Ñ\u0001\u001a\u0004\u0018\u000105*\u0002052\b\b\u0001\u0010{\u001a\u00020\u001e2\u0007\u0010Ò\u0001\u001a\u0002092\u000b\b\u0002\u0010\u008f\u0001\u001a\u0004\u0018\u000105H\u0007J\u0013\u0010Ó\u0001\u001a\u00020\f*\b\u0012\u0004\u0012\u00020\b0\u0019H\u0002Jb\u0010Ô\u0001\u001a\u00020\u0017*\n\u0012\u0006\b\u0001\u0012\u0002050\\2\r\u0010\u0088\u0001\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\n\u0010\u008a\u0001\u001a\u0005\u0018\u00010\u008b\u00012\n\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u008d\u00012$\b\u0002\u0010Õ\u0001\u001a\u001d\u0012\u0013\u0012\u00110\b¢\u0006\f\b\u0014\u0012\b\b\u0015\u0012\u0004\b\b(\u0016\u0012\u0004\u0012\u00020\u00170\u0013H\u0002JL\u0010¸\u0001\u001a\u00020\u0017*\n\u0012\u0006\b\u0001\u0012\u0002050\\2\u0006\u0010j\u001a\u00020\b2\u0007\u0010\u0086\u0001\u001a\u0002092$\b\u0002\u0010Õ\u0001\u001a\u001d\u0012\u0013\u0012\u00110\b¢\u0006\f\b\u0014\u0012\b\b\u0015\u0012\u0004\b\b(j\u0012\u0004\u0012\u00020\u00170\u0013H\u0002R\u001a\u0010\u0005\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\b0\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\t\u001a\b\u0012\u0004\u0012\u00020\b0\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\u000f\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\b0\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R+\u0010\u0012\u001a\u001f\u0012\u0013\u0012\u00110\b¢\u0006\f\b\u0014\u0012\b\b\u0015\u0012\u0004\b\b(\u0016\u0012\u0004\u0012\u00020\u0017\u0018\u00010\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0018\u001a\b\u0012\u0004\u0012\u00020\b0\u0019X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\b0\u001bX\u0082\u0004¢\u0006\u0002\n\u0000R\u001c\u0010\u001c\u001a\u0010\u0012\u0004\u0012\u00020\u001e\u0012\u0006\u0012\u0004\u0018\u00010\u001f0\u001dX\u0082\u0004¢\u0006\u0002\n\u0000R \u0010 \u001a\u0014\u0012\u0004\u0012\u00020\u001f\u0012\n\u0012\b\u0012\u0004\u0012\u00020!0\u00190\u001dX\u0082\u0004¢\u0006\u0002\n\u0000R\u0018\u0010\"\u001a\n\u0012\u0004\u0012\u00020$\u0018\u00010#X\u0082\u000e¢\u0006\u0004\n\u0002\u0010%R\u001a\u0010&\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\b0\u001dX\u0082\u0004¢\u0006\u0002\n\u0000R\u0013\u0010\u0002\u001a\u00020\u00038\u0007¢\u0006\b\n\u0000\u001a\u0004\b'\u0010(R\"\u0010)\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\b0\u00070*8GX\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b+\u0010,R\u0016\u0010-\u001a\u0004\u0018\u00010\b8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b.\u0010/R\u0017\u00100\u001a\b\u0012\u0004\u0012\u00020\b01¢\u0006\b\n\u0000\u001a\u0004\b2\u00103R\u0016\u00104\u001a\u0004\u0018\u0001058VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b6\u00107R\u000e\u00108\u001a\u000209X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010:\u001a\u00020\u001e8BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b;\u0010<R\u000e\u0010=\u001a\u00020\u001eX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010>\u001a\u000209X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010?\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u0002090\u001dX\u0082\u0004¢\u0006\u0002\n\u0000R$\u0010@\u001a\u00020\f2\u0006\u0010@\u001a\u00020\f8W@WX\u0096\u000e¢\u0006\f\u001a\u0004\bA\u0010B\"\u0004\bC\u0010DR\u001c\u0010E\u001a\u00020F8@X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bG\u0010H\"\u0004\bI\u0010JR\u0010\u0010K\u001a\u0004\u0018\u00010LX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010M\u001a\u00020NX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010O\u001a\u0004\u0018\u00010PX\u0082\u000e¢\u0006\u0002\n\u0000R\u001b\u0010Q\u001a\u00020L8VX\u0096\u0084\u0002¢\u0006\f\n\u0004\bT\u0010U\u001a\u0004\bR\u0010SR$\u0010V\u001a\u00020\u000e2\u0006\u0010V\u001a\u00020\u000e8V@WX\u0096\u000e¢\u0006\f\u001a\u0004\bW\u0010X\"\u0004\bY\u0010ZR&\u0010[\u001a\u001a\u0012\f\u0012\n\u0012\u0006\b\u0001\u0012\u0002050\\\u0012\b\u0012\u00060]R\u00020\u00000\u001dX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010^\u001a\u0004\u0018\u00010_X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010`\u001a\u00020aX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010b\u001a\u0004\u0018\u00010cX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010d\u001a\b\u0012\u0004\u0012\u00020f0eX\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010g\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020h0\u001dX\u0082\u0004¢\u0006\u0002\n\u0000R+\u0010i\u001a\u001f\u0012\u0013\u0012\u00110\b¢\u0006\f\b\u0014\u0012\b\b\u0015\u0012\u0004\b\b(j\u0012\u0004\u0012\u00020\u0017\u0018\u00010\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010k\u001a\u0004\u0018\u00010\b8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bl\u0010/R\u0010\u0010m\u001a\u0004\u0018\u00010nX\u0082\u000e¢\u0006\u0002\n\u0000R\u001d\u0010o\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\b0\u00070*¢\u0006\b\n\u0000\u001a\u0004\bp\u0010,¨\u0006Ù\u0001"}, d2 = {"Landroidx/navigation/NavController;", "", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "_currentBackStack", "Lkotlinx/coroutines/flow/MutableStateFlow;", "", "Landroidx/navigation/NavBackStackEntry;", "_currentBackStackEntryFlow", "Lkotlinx/coroutines/flow/MutableSharedFlow;", "_graph", "Landroidx/navigation/NavGraph;", "_navigatorProvider", "Landroidx/navigation/NavigatorProvider;", "_visibleEntries", "activity", "Landroid/app/Activity;", "addToBackStackHandler", "Lkotlin/Function1;", "Lkotlin/ParameterName;", "name", "backStackEntry", "", "backQueue", "Lkotlin/collections/ArrayDeque;", "backStackEntriesToDispatch", "", "backStackMap", "", "", "", "backStackStates", "Landroidx/navigation/NavBackStackEntryState;", "backStackToRestore", "", "Landroid/os/Parcelable;", "[Landroid/os/Parcelable;", "childToParentEntries", "getContext", "()Landroid/content/Context;", "currentBackStack", "Lkotlinx/coroutines/flow/StateFlow;", "getCurrentBackStack", "()Lkotlinx/coroutines/flow/StateFlow;", "currentBackStackEntry", "getCurrentBackStackEntry", "()Landroidx/navigation/NavBackStackEntry;", "currentBackStackEntryFlow", "Lkotlinx/coroutines/flow/Flow;", "getCurrentBackStackEntryFlow", "()Lkotlinx/coroutines/flow/Flow;", "currentDestination", "Landroidx/navigation/NavDestination;", "getCurrentDestination", "()Landroidx/navigation/NavDestination;", "deepLinkHandled", "", "destinationCountOnBackStack", "getDestinationCountOnBackStack", "()I", "dispatchReentrantCount", "enableOnBackPressedCallback", "entrySavedState", "graph", "getGraph", "()Landroidx/navigation/NavGraph;", "setGraph", "(Landroidx/navigation/NavGraph;)V", "hostLifecycleState", "Landroidx/lifecycle/Lifecycle$State;", "getHostLifecycleState$navigation_runtime_release", "()Landroidx/lifecycle/Lifecycle$State;", "setHostLifecycleState$navigation_runtime_release", "(Landroidx/lifecycle/Lifecycle$State;)V", "inflater", "Landroidx/navigation/NavInflater;", "lifecycleObserver", "Landroidx/lifecycle/LifecycleObserver;", "lifecycleOwner", "Landroidx/lifecycle/LifecycleOwner;", "navInflater", "getNavInflater", "()Landroidx/navigation/NavInflater;", "navInflater$delegate", "Lkotlin/Lazy;", "navigatorProvider", "getNavigatorProvider", "()Landroidx/navigation/NavigatorProvider;", "setNavigatorProvider", "(Landroidx/navigation/NavigatorProvider;)V", "navigatorState", "Landroidx/navigation/Navigator;", "Landroidx/navigation/NavController$NavControllerNavigatorState;", "navigatorStateToRestore", "Landroid/os/Bundle;", "onBackPressedCallback", "Landroidx/activity/OnBackPressedCallback;", "onBackPressedDispatcher", "Landroidx/activity/OnBackPressedDispatcher;", "onDestinationChangedListeners", "Ljava/util/concurrent/CopyOnWriteArrayList;", "Landroidx/navigation/NavController$OnDestinationChangedListener;", "parentToChildCount", "Ljava/util/concurrent/atomic/AtomicInteger;", "popFromBackStackHandler", "popUpTo", "previousBackStackEntry", "getPreviousBackStackEntry", "viewModel", "Landroidx/navigation/NavControllerViewModel;", "visibleEntries", "getVisibleEntries", "addEntryToBackStack", "node", "finalArgs", "restoredEntries", "addOnDestinationChangedListener", ServiceSpecificExtraArgs.CastExtraArgs.LISTENER, "clearBackStack", ExifInterface.GPS_DIRECTION_TRUE, "route", "(Ljava/lang/Object;)Z", "destinationId", "clearBackStackInternal", "createDeepLink", "Landroidx/navigation/NavDeepLinkBuilder;", "dispatchOnDestinationChanged", "enableOnBackPressed", "enabled", "executePopOperations", "popOperations", "foundDestination", "inclusive", "saveState", "executeRestoreState", "entries", "args", "navOptions", "Landroidx/navigation/NavOptions;", "navigatorExtras", "Landroidx/navigation/Navigator$Extras;", "findDestination", "matchingDest", "findInvalidDestinationDisplayNameInDeepLink", "deepLink", "", "generateRouteFilled", "(Ljava/lang/Object;)Ljava/lang/String;", "getBackStackEntry", "(Ljava/lang/Object;)Landroidx/navigation/NavBackStackEntry;", "getViewModelStoreOwner", "Landroidx/lifecycle/ViewModelStoreOwner;", "navGraphId", "handleDeepLink", "intent", "Landroid/content/Intent;", "instantiateBackStack", "backStackState", "launchSingleTopInternal", "linkChildToParent", "child", "parent", "navigate", "(Ljava/lang/Object;Landroidx/navigation/NavOptions;Landroidx/navigation/Navigator$Extras;)V", "builder", "Landroidx/navigation/NavOptionsBuilder;", "Lkotlin/ExtensionFunctionType;", "(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V", "Landroid/net/Uri;", "request", "Landroidx/navigation/NavDeepLinkRequest;", "directions", "Landroidx/navigation/NavDirections;", "resId", "navigateUp", "onGraphCreated", "startDestinationArgs", "popBackStack", "(Ljava/lang/Object;ZZ)Z", "popBackStackFromNavigator", "onComplete", "Lkotlin/Function0;", "popBackStackFromNavigator$navigation_runtime_release", "popBackStackInternal", "popEntryFromBackStack", "savedState", "populateVisibleEntries", "populateVisibleEntries$navigation_runtime_release", "removeOnDestinationChangedListener", "restoreState", "navState", "restoreStateInternal", "id", "graphResId", "setLifecycleOwner", "owner", "setOnBackPressedDispatcher", "dispatcher", "setViewModelStore", "viewModelStore", "Landroidx/lifecycle/ViewModelStore;", "tryRelaunchUpToExplicitStack", "tryRelaunchUpToGeneratedStack", "unlinkChildFromParent", "unlinkChildFromParent$navigation_runtime_release", "updateBackStackLifecycle", "updateBackStackLifecycle$navigation_runtime_release", "updateOnBackPressedCallbackEnabled", "findDestinationComprehensive", "searchChildren", "getTopGraph", "navigateInternal", "handler", "Companion", "NavControllerNavigatorState", "OnDestinationChangedListener", "navigation-runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public class NavController {
     private static final String KEY_BACK_STACK = "android-support-nav:controller:backStack";
@@ -108,7 +108,7 @@ public class NavController {
     private final LifecycleObserver lifecycleObserver;
     private LifecycleOwner lifecycleOwner;
 
-    /* JADX INFO: renamed from: navInflater$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: navInflater$delegate, reason: from kotlin metadata */
     private final Lazy navInflater;
     private final Map<Navigator<? extends NavDestination>, NavControllerNavigatorState> navigatorState;
     private Bundle navigatorStateToRestore;
@@ -120,11 +120,11 @@ public class NavController {
     private NavControllerViewModel viewModel;
     private final StateFlow<List<NavBackStackEntry>> visibleEntries;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static boolean deepLinkSaveState = true;
 
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bæ\u0080\u0001\u0018\u00002\u00020\u0001J\"\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\b\u0010\b\u001a\u0004\u0018\u00010\tH&ø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001¨\u0006\nÀ\u0006\u0001"}, d2 = {"Landroidx/navigation/NavController$OnDestinationChangedListener;", "", "onDestinationChanged", "", "controller", "Landroidx/navigation/NavController;", "destination", "Landroidx/navigation/NavDestination;", "arguments", "Landroid/os/Bundle;", "navigation-runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public interface OnDestinationChangedListener {
         void onDestinationChanged(NavController controller, NavDestination destination, Bundle arguments);
@@ -295,7 +295,7 @@ public class NavController {
         return this.hostLifecycleState;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void lifecycleObserver$lambda$2(NavController this$0, LifecycleOwner lifecycleOwner, Lifecycle.Event event) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(lifecycleOwner, "<anonymous parameter 0>");
@@ -309,7 +309,7 @@ public class NavController {
         }
     }
 
-    /* JADX INFO: renamed from: getNavigatorProvider, reason: from getter */
+    /* INFO: renamed from: getNavigatorProvider, reason: from getter */
     public NavigatorProvider get_navigatorProvider() {
         return this._navigatorProvider;
     }
@@ -322,8 +322,8 @@ public class NavController {
         this._navigatorProvider = navigatorProvider;
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavController$navigateInternal$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: renamed from: androidx.navigation.NavController$navigateInternal$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Landroidx/navigation/NavBackStackEntry;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01741 extends Lambda implements Function1<NavBackStackEntry, Unit> {
         public static final C01741 INSTANCE = new C01741();
@@ -332,7 +332,7 @@ public class NavController {
             super(1);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(NavBackStackEntry it) {
             Intrinsics.checkNotNullParameter(it, "it");
         }
@@ -344,7 +344,7 @@ public class NavController {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static /* synthetic */ void navigateInternal$default(NavController navController, Navigator navigator, List list, NavOptions navOptions, Navigator.Extras extras, Function1 function1, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: navigateInternal");
@@ -361,8 +361,8 @@ public class NavController {
         this.addToBackStackHandler = null;
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavController$popBackStackInternal$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: renamed from: androidx.navigation.NavController$popBackStackInternal$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Landroidx/navigation/NavBackStackEntry;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01751 extends Lambda implements Function1<NavBackStackEntry, Unit> {
         public static final C01751 INSTANCE = new C01751();
@@ -371,7 +371,7 @@ public class NavController {
             super(1);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(NavBackStackEntry it) {
             Intrinsics.checkNotNullParameter(it, "it");
         }
@@ -383,7 +383,7 @@ public class NavController {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static /* synthetic */ void popBackStackInternal$default(NavController navController, Navigator navigator, NavBackStackEntry navBackStackEntry, boolean z, Function1 function1, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: popBackStackInternal");
@@ -400,8 +400,8 @@ public class NavController {
         this.popFromBackStackHandler = null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0082\u0004\u0018\u00002\u00020\u0001B\u0015\u0012\u000e\u0010\u0002\u001a\n\u0012\u0006\b\u0001\u0012\u00020\u00040\u0003¢\u0006\u0002\u0010\u0005J\u000e\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bJ\u001a\u0010\f\u001a\u00020\u000b2\u0006\u0010\r\u001a\u00020\u00042\b\u0010\u000e\u001a\u0004\u0018\u00010\u000fH\u0016J\u0010\u0010\u0010\u001a\u00020\t2\u0006\u0010\u0011\u001a\u00020\u000bH\u0016J\u0018\u0010\u0012\u001a\u00020\t2\u0006\u0010\u0013\u001a\u00020\u000b2\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0018\u0010\u0016\u001a\u00020\t2\u0006\u0010\u0013\u001a\u00020\u000b2\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0010\u0010\u0017\u001a\u00020\t2\u0006\u0010\u0011\u001a\u00020\u000bH\u0016J\u0010\u0010\u0018\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016R\u0019\u0010\u0002\u001a\n\u0012\u0006\b\u0001\u0012\u00020\u00040\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007¨\u0006\u0019"}, d2 = {"Landroidx/navigation/NavController$NavControllerNavigatorState;", "Landroidx/navigation/NavigatorState;", "navigator", "Landroidx/navigation/Navigator;", "Landroidx/navigation/NavDestination;", "(Landroidx/navigation/NavController;Landroidx/navigation/Navigator;)V", "getNavigator", "()Landroidx/navigation/Navigator;", "addInternal", "", "backStackEntry", "Landroidx/navigation/NavBackStackEntry;", "createBackStackEntry", "destination", "arguments", "Landroid/os/Bundle;", "markTransitionComplete", "entry", "pop", "popUpTo", "saveState", "", "popWithTransition", "prepareForTransition", ConfigConstants.CONFIG_PUSH_SECTION, "navigation-runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     final class NavControllerNavigatorState extends NavigatorState {
         private final Navigator<? extends NavDestination> navigator;
@@ -743,8 +743,8 @@ public class NavController {
         return booleanRef.element;
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavController$executePopOperations$1, reason: invalid class name */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: renamed from: androidx.navigation.NavController$executePopOperations$1, reason: invalid class name */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "entry", "Landroidx/navigation/NavBackStackEntry;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<NavBackStackEntry, Unit> {
         final /* synthetic */ Ref.BooleanRef $popped;
@@ -753,7 +753,7 @@ public class NavController {
         final /* synthetic */ ArrayDeque<NavBackStackEntryState> $savedState;
         final /* synthetic */ NavController this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Ref.BooleanRef booleanRef, Ref.BooleanRef booleanRef2, NavController navController, boolean z, ArrayDeque<NavBackStackEntryState> arrayDeque) {
             super(1);
             this.$receivedPop = booleanRef;
@@ -769,7 +769,7 @@ public class NavController {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(NavBackStackEntry entry) {
             Intrinsics.checkNotNullParameter(entry, "entry");
             this.$receivedPop.element = true;
@@ -778,8 +778,8 @@ public class NavController {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavController$executePopOperations$2, reason: invalid class name */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: renamed from: androidx.navigation.NavController$executePopOperations$2, reason: invalid class name */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u0002\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "Landroidx/navigation/NavDestination;", "destination", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda implements Function1<NavDestination, NavDestination> {
         public static final AnonymousClass2 INSTANCE = new AnonymousClass2();
@@ -799,8 +799,8 @@ public class NavController {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavController$executePopOperations$3, reason: invalid class name */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: renamed from: androidx.navigation.NavController$executePopOperations$3, reason: invalid class name */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "destination", "Landroidx/navigation/NavDestination;", "invoke", "(Landroidx/navigation/NavDestination;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass3 extends Lambda implements Function1<NavDestination, Boolean> {
         AnonymousClass3() {
@@ -814,8 +814,8 @@ public class NavController {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavController$executePopOperations$5, reason: invalid class name */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: renamed from: androidx.navigation.NavController$executePopOperations$5, reason: invalid class name */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u0002\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "Landroidx/navigation/NavDestination;", "destination", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass5 extends Lambda implements Function1<NavDestination, NavDestination> {
         public static final AnonymousClass5 INSTANCE = new AnonymousClass5();
@@ -835,8 +835,8 @@ public class NavController {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavController$executePopOperations$6, reason: invalid class name */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: renamed from: androidx.navigation.NavController$executePopOperations$6, reason: invalid class name */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "destination", "Landroidx/navigation/NavDestination;", "invoke", "(Landroidx/navigation/NavDestination;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass6 extends Lambda implements Function1<NavDestination, Boolean> {
         AnonymousClass6() {
@@ -868,7 +868,7 @@ public class NavController {
         dispatchOnDestinationChanged();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static /* synthetic */ void popEntryFromBackStack$default(NavController navController, NavBackStackEntry navBackStackEntry, boolean z, ArrayDeque arrayDeque, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: popEntryFromBackStack");
@@ -882,7 +882,7 @@ public class NavController {
         navController.popEntryFromBackStack(navBackStackEntry, z, arrayDeque);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void popEntryFromBackStack(NavBackStackEntry popUpTo, boolean saveState, ArrayDeque<NavBackStackEntryState> savedState) {
         NavControllerViewModel navControllerViewModel;
         StateFlow<Set<NavBackStackEntry>> transitionsInProgress;
@@ -1468,22 +1468,22 @@ public class NavController {
         return true;
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavController$handleDeepLink$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: renamed from: androidx.navigation.NavController$handleDeepLink$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Landroidx/navigation/NavOptionsBuilder;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01722 extends Lambda implements Function1<NavOptionsBuilder, Unit> {
         final /* synthetic */ NavDestination $node;
         final /* synthetic */ NavController this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01722(NavDestination navDestination, NavController navController) {
             super(1);
             this.$node = navDestination;
             this.this$0 = navController;
         }
 
-        /* JADX INFO: renamed from: androidx.navigation.NavController$handleDeepLink$2$1, reason: invalid class name */
-        /* JADX INFO: compiled from: NavController.kt */
+        /* INFO: renamed from: androidx.navigation.NavController$handleDeepLink$2$1, reason: invalid class name */
+        /* INFO: compiled from: NavController.kt */
         @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Landroidx/navigation/AnimBuilder;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
         static final class AnonymousClass1 extends Lambda implements Function1<AnimBuilder, Unit> {
             public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -1498,7 +1498,7 @@ public class NavController {
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(AnimBuilder anim) {
                 Intrinsics.checkNotNullParameter(anim, "$this$anim");
                 anim.setEnter(0);
@@ -1512,7 +1512,7 @@ public class NavController {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(NavOptionsBuilder navOptions) {
             Intrinsics.checkNotNullParameter(navOptions, "$this$navOptions");
             navOptions.anim(AnonymousClass1.INSTANCE);
@@ -1531,8 +1531,8 @@ public class NavController {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.navigation.NavController$handleDeepLink$2$2, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: NavController.kt */
+        /* INFO: renamed from: androidx.navigation.NavController$handleDeepLink$2$2, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: NavController.kt */
         @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Landroidx/navigation/PopUpToBuilder;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
         static final class C00202 extends Lambda implements Function1<PopUpToBuilder, Unit> {
             public static final C00202 INSTANCE = new C00202();
@@ -1547,7 +1547,7 @@ public class NavController {
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(PopUpToBuilder popUpTo) {
                 Intrinsics.checkNotNullParameter(popUpTo, "$this$popUpTo");
                 popUpTo.setSaveState(true);
@@ -1720,14 +1720,14 @@ public class NavController {
         navigate(resId, args, navOptions, (Navigator.Extras) null);
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x003f A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:18:0x0041  */
-    /* JADX WARN: Code duplicated, block: B:42:0x00ad  */
-    /* JADX WARN: Code duplicated, block: B:44:0x00b4  */
-    /* JADX WARN: Code duplicated, block: B:46:0x00c0  */
-    /* JADX WARN: Code duplicated, block: B:48:0x00dd  */
-    /* JADX WARN: Code duplicated, block: B:50:0x0110  */
-    /* JADX WARN: Code duplicated, block: B:52:0x0114  */
+    /* WARN: Code duplicated, block: B:17:0x003f A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:18:0x0041  */
+    /* WARN: Code duplicated, block: B:42:0x00ad  */
+    /* WARN: Code duplicated, block: B:44:0x00b4  */
+    /* WARN: Code duplicated, block: B:46:0x00c0  */
+    /* WARN: Code duplicated, block: B:48:0x00dd  */
+    /* WARN: Code duplicated, block: B:50:0x0110  */
+    /* WARN: Code duplicated, block: B:52:0x0114  */
     public void navigate(int resId, Bundle args, NavOptions navOptions, Navigator.Extras navigatorExtras) {
         int destinationId;
         Bundle bundle;
@@ -1858,7 +1858,7 @@ public class NavController {
         throw new IllegalArgumentException("Navigation destination that matches request " + request + " cannot be found in the navigation graph " + this._graph);
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x0098  */
+    /* WARN: Code duplicated, block: B:21:0x0098  */
     private final void navigate(NavDestination node, Bundle args, NavOptions navOptions, Navigator.Extras navigatorExtras) {
         boolean z;
         boolean z2;
@@ -1912,8 +1912,8 @@ public class NavController {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavController$navigate$5, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: renamed from: androidx.navigation.NavController$navigate$5, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Landroidx/navigation/NavBackStackEntry;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01735 extends Lambda implements Function1<NavBackStackEntry, Unit> {
         final /* synthetic */ Bundle $finalArgs;
@@ -1921,7 +1921,7 @@ public class NavController {
         final /* synthetic */ NavDestination $node;
         final /* synthetic */ NavController this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01735(Ref.BooleanRef booleanRef, NavController navController, NavDestination navDestination, Bundle bundle) {
             super(1);
             this.$navigated = booleanRef;
@@ -1936,7 +1936,7 @@ public class NavController {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(NavBackStackEntry it) {
             Intrinsics.checkNotNullParameter(it, "it");
             this.$navigated.element = true;
@@ -2010,13 +2010,13 @@ public class NavController {
         return executeRestoreState(instantiateBackStack((ArrayDeque) TypeIntrinsics.asMutableMap(this.backStackStates).remove(str)), args, navOptions, navigatorExtras);
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavController$restoreStateInternal$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: renamed from: androidx.navigation.NavController$restoreStateInternal$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "it", "", "invoke", "(Ljava/lang/String;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01761 extends Lambda implements Function1<String, Boolean> {
         final /* synthetic */ String $backStackId;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01761(String str) {
             super(1);
             this.$backStackId = str;
@@ -2049,13 +2049,13 @@ public class NavController {
         return false;
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavController$restoreStateInternal$3, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: renamed from: androidx.navigation.NavController$restoreStateInternal$3, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "it", "", "invoke", "(Ljava/lang/String;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01773 extends Lambda implements Function1<String, Boolean> {
         final /* synthetic */ String $backStackId;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01773(String str) {
             super(1);
             this.$backStackId = str;
@@ -2092,8 +2092,8 @@ public class NavController {
         return booleanRef.element;
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavController$executeRestoreState$3, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: renamed from: androidx.navigation.NavController$executeRestoreState$3, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "entry", "Landroidx/navigation/NavBackStackEntry;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01713 extends Lambda implements Function1<NavBackStackEntry, Unit> {
         final /* synthetic */ Bundle $args;
@@ -2102,7 +2102,7 @@ public class NavController {
         final /* synthetic */ Ref.BooleanRef $navigated;
         final /* synthetic */ NavController this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01713(Ref.BooleanRef booleanRef, List<NavBackStackEntry> list, Ref.IntRef intRef, NavController navController, Bundle bundle) {
             super(1);
             this.$navigated = booleanRef;
@@ -2118,7 +2118,7 @@ public class NavController {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(NavBackStackEntry entry) {
             List<NavBackStackEntry> listEmptyList;
             Intrinsics.checkNotNullParameter(entry, "entry");
@@ -2156,7 +2156,7 @@ public class NavController {
         return arrayList;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static /* synthetic */ void addEntryToBackStack$default(NavController navController, NavDestination navDestination, Bundle bundle, NavBackStackEntry navBackStackEntry, List list, int i, Object obj) {
         if (obj != null) {
             throw new UnsupportedOperationException("Super calls with default arguments not supported in this target, function: addEntryToBackStack");
@@ -2167,7 +2167,7 @@ public class NavController {
         navController.addEntryToBackStack(navDestination, bundle, navBackStackEntry, list);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void addEntryToBackStack(NavDestination node, Bundle finalArgs, NavBackStackEntry backStackEntry, List<NavBackStackEntry> restoredEntries) {
         Bundle bundle;
         ArrayDeque<NavBackStackEntry> arrayDeque;
@@ -2567,7 +2567,7 @@ public class NavController {
         updateOnBackPressedCallbackEnabled();
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x000e  */
+    /* WARN: Code duplicated, block: B:7:0x000e  */
     private final void updateOnBackPressedCallbackEnabled() {
         boolean z;
         OnBackPressedCallback onBackPressedCallback = this.onBackPressedCallback;
@@ -2696,7 +2696,7 @@ public class NavController {
         return (NavBackStackEntry) next;
     }
 
-    /* JADX INFO: compiled from: NavController.kt */
+    /* INFO: compiled from: NavController.kt */
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u000e\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0013H\u0007R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u00020\u00048\u0006X\u0087T¢\u0006\u0002\n\u0000R\u0016\u0010\n\u001a\u00020\u00048\u0006X\u0087T¢\u0006\b\n\u0000\u0012\u0004\b\u000b\u0010\u0002R\u0010\u0010\f\u001a\u00020\u00048\u0006X\u0087T¢\u0006\u0002\n\u0000R\u0010\u0010\r\u001a\u00020\u00048\u0006X\u0087T¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0017"}, d2 = {"Landroidx/navigation/NavController$Companion;", "", "()V", "KEY_BACK_STACK", "", "KEY_BACK_STACK_DEST_IDS", "KEY_BACK_STACK_IDS", "KEY_BACK_STACK_STATES_IDS", "KEY_BACK_STACK_STATES_PREFIX", "KEY_DEEP_LINK_ARGS", "KEY_DEEP_LINK_EXTRAS", "getKEY_DEEP_LINK_EXTRAS$annotations", "KEY_DEEP_LINK_HANDLED", "KEY_DEEP_LINK_IDS", "KEY_DEEP_LINK_INTENT", "KEY_NAVIGATOR_STATE", "KEY_NAVIGATOR_STATE_NAMES", "TAG", "deepLinkSaveState", "", "enableDeepLinkSaveState", "", "saveState", "navigation-runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {

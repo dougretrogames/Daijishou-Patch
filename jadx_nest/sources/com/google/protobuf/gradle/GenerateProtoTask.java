@@ -73,8 +73,8 @@ import org.gradle.api.tasks.SkipWhenEmpty;
 import org.gradle.api.tasks.SourceSet;
 import org.gradle.api.tasks.TaskAction;
 
-/* JADX INFO: compiled from: GenerateProtoTask.groovy */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: GenerateProtoTask.groovy */
+/* INFO: loaded from: classes4.dex */
 @CacheableTask
 public abstract class GenerateProtoTask extends DefaultTask implements GroovyObject {
     private static /* synthetic */ SoftReference $callSiteArray = null;
@@ -110,7 +110,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
     private State state = State.INIT;
     private transient /* synthetic */ MetaClass metaClass = $getStaticMetaClass();
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public class DescriptorSetOptions implements GroovyObject {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         private static /* synthetic */ ClassInfo $staticClassInfo$;
@@ -233,9 +233,9 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         }
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     static final class State implements GroovyObject {
         private static final /* synthetic */ State[] $VALUES;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -501,7 +501,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
     public GenerateProtoTask() {
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _closure1 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -540,7 +540,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         }
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _closure2 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -591,7 +591,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         return ((StringBuilder) reference.get()).toString();
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _makeOptionsPrefix_closure3 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -658,7 +658,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         return listCreateList;
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _generateCmds_closure4 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -808,7 +808,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         return this.variant;
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _getReleaseArtifacts_closure5 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -842,7 +842,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
             return doCall(null);
         }
 
-        /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+        /* INFO: compiled from: GenerateProtoTask.groovy */
         public final class _closure18 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -891,7 +891,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         return getProviderFactory().provider(new _getReleaseArtifacts_closure5(this, this));
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _getExecutables_closure6 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -925,7 +925,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
             return doCall(null);
         }
 
-        /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+        /* INFO: compiled from: GenerateProtoTask.groovy */
         public final class _closure19 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -975,7 +975,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
             return DefaultGroovyMethods.collect(DefaultGroovyMethods.findAll(((GenerateProtoTask) ScriptBytecodeAdapter.castToType(getThisObject(), GenerateProtoTask.class)).getAllExecutableLocators(), new _closure19(this, getThisObject(), new Reference(((GenerateProtoTask) ScriptBytecodeAdapter.castToType(getThisObject(), GenerateProtoTask.class)).getReleaseExecutableLocators()))), new _closure20(this, getThisObject()));
         }
 
-        /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+        /* INFO: compiled from: GenerateProtoTask.groovy */
         public final class _closure20 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -1022,7 +1022,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         return getObjectFactory().fileCollection().from(new Object[]{getProviderFactory().provider(new _getExecutables_closure6(this, this))});
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _getReleaseExecutableLocators_closure7 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -1065,12 +1065,12 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public List<ExecutableLocator> getReleaseExecutableLocators() {
         return DefaultGroovyMethods.findAll(getAllExecutableLocators(), new _getReleaseExecutableLocators_closure7(this, this));
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _getAllExecutableLocators_closure8 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -1100,7 +1100,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public List<ExecutableLocator> getAllExecutableLocators() {
         return DefaultGroovyMethods.plus(ScriptBytecodeAdapter.createList(new Object[]{this.toolsLocator.getProtoc()}), DefaultGroovyMethods.findResults(this.plugins, new _getAllExecutableLocators_closure8(this, this)));
     }
@@ -1196,7 +1196,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         return this.isTestProvider;
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public static class PluginOptions implements Named, GroovyObject {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         private static /* synthetic */ ClassInfo $staticClassInfo$;
@@ -1309,7 +1309,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         return sourceDirectorySet;
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _getOutputSourceDirectorySet_closure9 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -1356,7 +1356,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         return (Set) reference.get();
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _getOutputSourceDirectories_closure10 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -1401,7 +1401,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         }
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _getOutputSourceDirectories_closure11 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -1488,7 +1488,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         }
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _compile_closure12 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -1522,7 +1522,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         }
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _compile_closure13 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -1557,7 +1557,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         }
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _compile_closure14 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -1587,7 +1587,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         }
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _compile_closure15 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -1626,7 +1626,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         }
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _compile_closure16 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -1670,7 +1670,7 @@ public abstract class GenerateProtoTask extends DefaultTask implements GroovyObj
         }
     }
 
-    /* JADX INFO: compiled from: GenerateProtoTask.groovy */
+    /* INFO: compiled from: GenerateProtoTask.groovy */
     public final class _compile_closure17 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;

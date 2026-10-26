@@ -16,7 +16,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class TreeMultimap<K, V> extends AbstractSortedKeySortedSetMultimap<K, V> {
     private static final long serialVersionUID = 0;
@@ -68,7 +68,7 @@ public class TreeMultimap<K, V> extends AbstractSortedKeySortedSetMultimap<K, V>
         return super.keys();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractSetMultimap, com.google.common.collect.AbstractMapBasedMultimap, com.google.common.collect.AbstractMultimap, com.google.common.collect.Multimap
     public /* bridge */ /* synthetic */ boolean put(@ParametricNullness Object key, @ParametricNullness Object value) {
         return super.put(key, value);
@@ -79,7 +79,7 @@ public class TreeMultimap<K, V> extends AbstractSortedKeySortedSetMultimap<K, V>
         return super.putAll(multimap);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractMultimap, com.google.common.collect.Multimap
     public /* bridge */ /* synthetic */ boolean putAll(@ParametricNullness Object key, Iterable values) {
         return super.putAll(key, values);
@@ -143,13 +143,13 @@ public class TreeMultimap<K, V> extends AbstractSortedKeySortedSetMultimap<K, V>
         return createMaybeNavigableAsMap();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractSortedSetMultimap, com.google.common.collect.AbstractSetMultimap, com.google.common.collect.AbstractMapBasedMultimap
     public SortedSet<V> createCollection() {
         return new TreeSet(this.valueComparator);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractMapBasedMultimap
     Collection<V> createCollection(@ParametricNullness K key) {
         if (key == 0) {

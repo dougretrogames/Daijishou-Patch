@@ -1,6 +1,6 @@
 package com.bumptech.glide.request;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface RequestCoordinator {
     boolean canNotifyCleared(Request request);
 

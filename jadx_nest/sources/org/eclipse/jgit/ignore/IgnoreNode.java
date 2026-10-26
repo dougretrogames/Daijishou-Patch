@@ -16,7 +16,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IgnoreNode {
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) IgnoreNode.class);
     private final List<FastIgnoreRule> rules;
@@ -27,7 +27,7 @@ public class IgnoreNode {
         CHECK_PARENT,
         CHECK_PARENT_NEGATE_FIRST_MATCH;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static MatchResult[] valuesCustom() {
             MatchResult[] matchResultArrValuesCustom = values();
             int length = matchResultArrValuesCustom.length;

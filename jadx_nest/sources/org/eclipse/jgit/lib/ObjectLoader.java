@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import org.eclipse.jgit.errors.LargeObjectException;
 import org.eclipse.jgit.util.IO;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class ObjectLoader {
     public abstract byte[] getCachedBytes() throws LargeObjectException;
 

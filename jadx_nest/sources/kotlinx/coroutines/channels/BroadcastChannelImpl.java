@@ -27,8 +27,8 @@ import kotlinx.coroutines.selects.SelectImplementation;
 import kotlinx.coroutines.selects.SelectInstance;
 import kotlinx.coroutines.selects.TrySelectDetailedResult;
 
-/* JADX INFO: compiled from: BroadcastChannel.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: BroadcastChannel.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\n\n\u0002\u0010\u0003\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0000\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u0002H\u00010\u00022\b\u0012\u0004\u0012\u0002H\u00010\u0003:\u000245B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0017\u0010\u001f\u001a\u00020\n2\b\u0010 \u001a\u0004\u0018\u00010!H\u0010¢\u0006\u0002\b\"J\u0012\u0010#\u001a\u00020\n2\b\u0010 \u001a\u0004\u0018\u00010!H\u0016J\u000e\u0010$\u001a\b\u0012\u0004\u0012\u00028\u00000%H\u0016J\u001e\u0010&\u001a\u00020'2\n\u0010(\u001a\u0006\u0012\u0002\b\u00030\u00132\b\u0010)\u001a\u0004\u0018\u00010\rH\u0014J\u0016\u0010*\u001a\u00020'2\f\u0010+\u001a\b\u0012\u0004\u0012\u00028\u00000%H\u0002J\u0016\u0010,\u001a\u00020'2\u0006\u0010)\u001a\u00028\u0000H\u0096@¢\u0006\u0002\u0010-J\b\u0010.\u001a\u00020/H\u0016J#\u00100\u001a\b\u0012\u0004\u0012\u00020'012\u0006\u0010)\u001a\u00028\u0000H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b2\u00103R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0014\u0010\t\u001a\u00020\n8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\t\u0010\u000bR\u0010\u0010\f\u001a\u0004\u0018\u00010\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u000e\u001a\u00060\u000fj\u0002`\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R6\u0010\u0011\u001a*\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u0013\u0012\u0006\u0012\u0004\u0018\u00010\r0\u0012j\u0014\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u0013\u0012\u0006\u0012\u0004\u0018\u00010\r`\u0014X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0015\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\u00020\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R\u0017\u0010\u0017\u001a\u00028\u00008F¢\u0006\f\u0012\u0004\b\u0018\u0010\u0019\u001a\u0004\b\u001a\u0010\u001bR\u0019\u0010\u001c\u001a\u0004\u0018\u00018\u00008F¢\u0006\f\u0012\u0004\b\u001d\u0010\u0019\u001a\u0004\b\u001e\u0010\u001b\u0082\u0002\u000b\n\u0002\b!\n\u0005\b¡\u001e0\u0001¨\u00066"}, d2 = {"Lkotlinx/coroutines/channels/BroadcastChannelImpl;", ExifInterface.LONGITUDE_EAST, "Lkotlinx/coroutines/channels/BufferedChannel;", "Lkotlinx/coroutines/channels/BroadcastChannel;", "capacity", "", "(I)V", "getCapacity", "()I", "isClosedForSend", "", "()Z", "lastConflatedElement", "", "lock", "Ljava/util/concurrent/locks/ReentrantLock;", "Lkotlinx/coroutines/internal/ReentrantLock;", "onSendInternalResult", "Ljava/util/HashMap;", "Lkotlinx/coroutines/selects/SelectInstance;", "Lkotlin/collections/HashMap;", "subscribers", "", "value", "getValue$annotations", "()V", "getValue", "()Ljava/lang/Object;", "valueOrNull", "getValueOrNull$annotations", "getValueOrNull", "cancelImpl", "cause", "", "cancelImpl$kotlinx_coroutines_core", "close", "openSubscription", "Lkotlinx/coroutines/channels/ReceiveChannel;", "registerSelectForSend", "", "select", "element", "removeSubscriber", "s", "send", "(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "toString", "", "trySend", "Lkotlinx/coroutines/channels/ChannelResult;", "trySend-JP2dKIU", "(Ljava/lang/Object;)Ljava/lang/Object;", "SubscriberBuffered", "SubscriberConflated", "kotlinx-coroutines-core"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements BroadcastChannel<E> {
     private final int capacity;
@@ -37,8 +37,8 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
     private final HashMap<SelectInstance<?>, Object> onSendInternalResult;
     private List<? extends BufferedChannel<E>> subscribers;
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.channels.BroadcastChannelImpl$send$1, reason: invalid class name */
-    /* JADX INFO: compiled from: BroadcastChannel.kt */
+    /* INFO: renamed from: kotlinx.coroutines.channels.BroadcastChannelImpl$send$1, reason: invalid class name */
+    /* INFO: compiled from: BroadcastChannel.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.coroutines.channels.BroadcastChannelImpl", f = "BroadcastChannel.kt", i = {0, 0}, l = {227}, m = "send", n = {"this", "element"}, s = {"L$0", "L$1"})
     static final class AnonymousClass1 extends ContinuationImpl {
@@ -49,7 +49,7 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
         /* synthetic */ Object result;
         final /* synthetic */ BroadcastChannelImpl<E> this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(BroadcastChannelImpl<E> broadcastChannelImpl, Continuation<? super AnonymousClass1> continuation) {
             super(continuation);
             this.this$0 = broadcastChannelImpl;
@@ -105,7 +105,7 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void removeSubscriber(ReceiveChannel<? extends E> s) {
         ReentrantLock reentrantLock = this.lock;
         reentrantLock.lock();
@@ -126,18 +126,18 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:24:0x0068  */
-    /* JADX WARN: Code duplicated, block: B:26:0x007c A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:27:0x007d  */
-    /* JADX WARN: Code duplicated, block: B:30:0x0088  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:27:0x007d -> B:28:0x0080). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
-        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+    /* WARN: Code duplicated, block: B:24:0x0068  */
+    /* WARN: Code duplicated, block: B:26:0x007c A[RETURN] */
+    /* WARN: Code duplicated, block: B:27:0x007d  */
+    /* WARN: Code duplicated, block: B:30:0x0088  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:27:0x007d -> B:28:0x0080). Please report as a decompilation issue!!! */
+    /* ERROR: decompilerOverflowException in pass: RegionMakerVisitor
+        decompiler.core.utils.exceptions.decompilerOverflowException: Regions stack size limit reached
+        	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     @Override // kotlinx.coroutines.channels.BufferedChannel, kotlinx.coroutines.channels.SendChannel
     public java.lang.Object send(E r7, kotlin.coroutines.Continuation<? super kotlin.Unit> r8) {
@@ -241,7 +241,7 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
     }
 
     @Override // kotlinx.coroutines.channels.BufferedChannel, kotlinx.coroutines.channels.SendChannel
-    /* JADX INFO: renamed from: trySend-JP2dKIU, reason: not valid java name */
+    /* INFO: renamed from: trySend-JP2dKIU, reason: not valid java name */
     public Object mo5255trySendJP2dKIU(E element) {
         ReentrantLock reentrantLock = this.lock;
         reentrantLock.lock();
@@ -298,8 +298,8 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
         }
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.channels.BroadcastChannelImpl$registerSelectForSend$2, reason: invalid class name */
-    /* JADX INFO: compiled from: BroadcastChannel.kt */
+    /* INFO: renamed from: kotlinx.coroutines.channels.BroadcastChannelImpl$registerSelectForSend$2, reason: invalid class name */
+    /* INFO: compiled from: BroadcastChannel.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.LONGITUDE_EAST, "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.coroutines.channels.BroadcastChannelImpl$registerSelectForSend$2", f = "BroadcastChannel.kt", i = {}, l = {288}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass2 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -308,7 +308,7 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
         int label;
         final /* synthetic */ BroadcastChannelImpl<E> this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(BroadcastChannelImpl<E> broadcastChannelImpl, Object obj, SelectInstance<?> selectInstance, Continuation<? super AnonymousClass2> continuation) {
             super(2, continuation);
             this.this$0 = broadcastChannelImpl;
@@ -326,7 +326,7 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
             return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Type inference incomplete: some casts might be missing */
+        /* WARN: Type inference incomplete: some casts might be missing */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Object invokeSuspend(Object obj) throws Throwable {
             Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
@@ -429,7 +429,7 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
         }
     }
 
-    /* JADX INFO: compiled from: BroadcastChannel.kt */
+    /* INFO: compiled from: BroadcastChannel.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0003\n\u0000\b\u0082\u0004\u0018\u00002\b\u0012\u0004\u0012\u00028\u00000\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0012\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006H\u0016¨\u0006\u0007"}, d2 = {"Lkotlinx/coroutines/channels/BroadcastChannelImpl$SubscriberBuffered;", "Lkotlinx/coroutines/channels/BufferedChannel;", "(Lkotlinx/coroutines/channels/BroadcastChannelImpl;)V", "cancelImpl", "", "cause", "", "kotlinx-coroutines-core"}, k = 1, mv = {1, 9, 0}, xi = 48)
     private final class SubscriberBuffered extends BufferedChannel<E> {
         public SubscriberBuffered() {
@@ -437,7 +437,7 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
         }
 
         @Override // kotlinx.coroutines.channels.BufferedChannel
-        /* JADX INFO: renamed from: cancelImpl, reason: merged with bridge method [inline-methods] */
+        /* INFO: renamed from: cancelImpl, reason: merged with bridge method [inline-methods] */
         public boolean cancelImpl$kotlinx_coroutines_core(Throwable cause) {
             ReentrantLock reentrantLock = ((BroadcastChannelImpl) BroadcastChannelImpl.this).lock;
             BroadcastChannelImpl<E> broadcastChannelImpl = BroadcastChannelImpl.this;
@@ -452,7 +452,7 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
         }
     }
 
-    /* JADX INFO: compiled from: BroadcastChannel.kt */
+    /* INFO: compiled from: BroadcastChannel.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0003\n\u0000\b\u0082\u0004\u0018\u00002\b\u0012\u0004\u0012\u00028\u00000\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0012\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006H\u0016¨\u0006\u0007"}, d2 = {"Lkotlinx/coroutines/channels/BroadcastChannelImpl$SubscriberConflated;", "Lkotlinx/coroutines/channels/ConflatedBufferedChannel;", "(Lkotlinx/coroutines/channels/BroadcastChannelImpl;)V", "cancelImpl", "", "cause", "", "kotlinx-coroutines-core"}, k = 1, mv = {1, 9, 0}, xi = 48)
     private final class SubscriberConflated extends ConflatedBufferedChannel<E> {
         public SubscriberConflated() {
@@ -460,7 +460,7 @@ public final class BroadcastChannelImpl<E> extends BufferedChannel<E> implements
         }
 
         @Override // kotlinx.coroutines.channels.BufferedChannel
-        /* JADX INFO: renamed from: cancelImpl, reason: merged with bridge method [inline-methods] */
+        /* INFO: renamed from: cancelImpl, reason: merged with bridge method [inline-methods] */
         public boolean cancelImpl$kotlinx_coroutines_core(Throwable cause) {
             BroadcastChannelImpl.this.removeSubscriber(this);
             return super.cancelImpl$kotlinx_coroutines_core(cause);

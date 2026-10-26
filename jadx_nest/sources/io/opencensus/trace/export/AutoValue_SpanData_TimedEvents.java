@@ -2,7 +2,7 @@ package io.opencensus.trace.export;
 
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_SpanData_TimedEvents<T> extends SpanData.TimedEvents<T> {
     private final int droppedEventsCount;
     private final List<SpanData.TimedEvent<T>> events;

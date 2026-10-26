@@ -7,8 +7,8 @@ import com.google.android.gms.common.moduleinstall.ModuleAvailabilityResponse;
 import com.google.android.gms.common.moduleinstall.ModuleInstallIntentResponse;
 import com.google.android.gms.common.moduleinstall.ModuleInstallResponse;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public interface zae extends IInterface {
     void zab(Status status) throws RemoteException;
 

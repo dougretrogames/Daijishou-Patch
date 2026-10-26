@@ -4,7 +4,7 @@ import java.io.Serializable;
 import org.apache.commons.collections4.FunctorException;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ExceptionTransformer<T, R> implements Transformer<T, R>, Serializable {
     public static final Transformer INSTANCE = new ExceptionTransformer();
     private static final long serialVersionUID = 7179106032121985545L;

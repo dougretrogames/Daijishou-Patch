@@ -3,7 +3,7 @@ package com.google.android.material.carousel;
 import android.content.Context;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class CarouselStrategyHelper {
     static float addStart(float f, float f2, int i) {
         return i > 0 ? f + (f2 / 2.0f) : f;

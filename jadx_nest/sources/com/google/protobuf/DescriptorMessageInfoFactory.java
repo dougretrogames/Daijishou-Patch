@@ -11,7 +11,7 @@ import java.util.Set;
 import java.util.Stack;
 import java.util.concurrent.ConcurrentHashMap;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class DescriptorMessageInfoFactory implements MessageInfoFactory {
     private static final String GET_DEFAULT_INSTANCE_METHOD_NAME = "getDefaultInstance";
     private static final DescriptorMessageInfoFactory instance = new DescriptorMessageInfoFactory();
@@ -150,7 +150,7 @@ final class DescriptorMessageInfoFactory implements MessageInfoFactory {
         return builderNewBuilder.build();
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.DescriptorMessageInfoFactory$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.DescriptorMessageInfoFactory$1, reason: invalid class name */
     class AnonymousClass1 implements Internal.EnumVerifier {
         final /* synthetic */ Descriptors.FieldDescriptor val$fd;
 
@@ -164,7 +164,7 @@ final class DescriptorMessageInfoFactory implements MessageInfoFactory {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.DescriptorMessageInfoFactory$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.DescriptorMessageInfoFactory$2, reason: invalid class name */
     class AnonymousClass2 implements Internal.EnumVerifier {
         final /* synthetic */ Descriptors.FieldDescriptor val$valueField;
 
@@ -324,7 +324,7 @@ final class DescriptorMessageInfoFactory implements MessageInfoFactory {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.DescriptorMessageInfoFactory$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.DescriptorMessageInfoFactory$3, reason: invalid class name */
     static /* synthetic */ class AnonymousClass3 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$DescriptorProtos$Edition;
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$Descriptors$FieldDescriptor$Type;
@@ -556,7 +556,7 @@ final class DescriptorMessageInfoFactory implements MessageInfoFactory {
         return field(messageType, getCachedSizeFieldName(fd));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static java.lang.reflect.Field field(Class<?> messageType, String fieldName) {
         try {
             return messageType.getDeclaredField(fieldName);
@@ -585,7 +585,7 @@ final class DescriptorMessageInfoFactory implements MessageInfoFactory {
         return snakeCaseToLowerCamelCase(fd.getName()) + "MemoizedSerializedSize";
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static String snakeCaseToLowerCamelCase(String snakeCase) {
         return snakeCaseToCamelCase(snakeCase, false);
     }

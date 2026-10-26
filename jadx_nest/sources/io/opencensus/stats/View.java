@@ -11,7 +11,7 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class View {
     static final int NAME_MAX_LENGTH = 255;
     private static final Comparator<TagKey> TAG_KEY_COMPARATOR = new AnonymousClass1();
@@ -29,7 +29,7 @@ public abstract class View {
     @Deprecated
     public abstract AggregationWindow getWindow();
 
-    /* JADX INFO: renamed from: io.opencensus.stats.View$1, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.stats.View$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<TagKey> {
         AnonymousClass1() {
         }

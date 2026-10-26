@@ -31,8 +31,8 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Dispatchers;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: compiled from: LibraryBackupAndRestoreModule.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: LibraryBackupAndRestoreModule.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0010\u0012\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\u0018\u0000 #2\u00020\u0001:\u0001#B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004JR\u0010\u0016\u001a\u001e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00180\u0017j\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u0018`\u00192&\u0010\u001a\u001a\"\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u001b0\u0017j\u0010\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u001b`\u0019H\u0096@¢\u0006\u0002\u0010\u001cJ\b\u0010\u001d\u001a\u00020\u001eH\u0002Jb\u0010\u001f\u001a\u00020\u001e2\"\u0010 \u001a\u001e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00180\u0017j\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u0018`\u00192&\u0010\u001a\u001a\"\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u001b0\u0017j\u0010\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u001b`\u00192\u0006\u0010!\u001a\u00020\u000fH\u0096@¢\u0006\u0002\u0010\"R\u001a\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0014\u0010\n\u001a\u00020\u000bX\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0014\u0010\u000e\u001a\u00020\u000fX\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u001a\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u000f0\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\tR\u0014\u0010\u0014\u001a\u00020\u000fX\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0011¨\u0006$"}, d2 = {"Lcom/magneticchen/daijishou/backup_and_restore/modules/library/LibraryBackupAndRestoreModule;", "Lcom/magneticchen/daijishou/backup_and_restore/BackupAndRestoreModule;", "application", "Lcom/magneticchen/daijishou/DaijishouApplication;", "(Lcom/magneticchen/daijishou/DaijishouApplication;)V", "backupContentListMigrations", "", "Lcom/magneticchen/daijishou/backup_and_restore/BackupAndRestoreModule$Companion$BackupContentMigration;", "getBackupContentListMigrations", "()Ljava/util/List;", "id", "", "getId", "()Ljava/lang/String;", "nameStringId", "", "getNameStringId", "()I", "supportedPolicies", "getSupportedPolicies", "version", "getVersion", "createBackupContentHashMap", "Ljava/util/HashMap;", "", "Lkotlin/collections/HashMap;", "pipeLineData", "", "(Ljava/util/HashMap;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "ensurePlatformWallpapersDirectory", "", "restoreFromBackupContentHashMap", "contentHashMap", "restorePolicy", "(Ljava/util/HashMap;Ljava/util/HashMap;ILkotlin/coroutines/Continuation;)Ljava/lang/Object;", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class LibraryBackupAndRestoreModule extends BackupAndRestoreModule {
     private static final int BATCH_SIZE = 128;
@@ -43,7 +43,7 @@ public final class LibraryBackupAndRestoreModule extends BackupAndRestoreModule 
     private final List<Integer> supportedPolicies;
     private final int version = 0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public LibraryBackupAndRestoreModule(DaijishouApplication application) {
         super(application);
         Intrinsics.checkNotNullParameter(application, "application");
@@ -128,20 +128,20 @@ public final class LibraryBackupAndRestoreModule extends BackupAndRestoreModule 
         return map2;
     }
 
-    /* JADX WARN: Code duplicated, block: B:150:0x05c4  */
-    /* JADX WARN: Code duplicated, block: B:153:0x05cd  */
-    /* JADX WARN: Code duplicated, block: B:156:0x05d6  */
-    /* JADX WARN: Code duplicated, block: B:160:0x05eb  */
-    /* JADX WARN: Code duplicated, block: B:163:0x0617  */
-    /* JADX WARN: Code duplicated, block: B:167:0x0692 A[Catch: Exception -> 0x06d7, TryCatch #6 {Exception -> 0x06d7, blocks: (B:165:0x0635, B:167:0x0692, B:169:0x06cc, B:170:0x06d0), top: B:193:0x0635 }] */
-    /* JADX WARN: Code duplicated, block: B:169:0x06cc A[Catch: Exception -> 0x06d7, TryCatch #6 {Exception -> 0x06d7, blocks: (B:165:0x0635, B:167:0x0692, B:169:0x06cc, B:170:0x06d0), top: B:193:0x0635 }] */
-    /* JADX WARN: Code duplicated, block: B:170:0x06d0 A[Catch: Exception -> 0x06d7, TRY_LEAVE, TryCatch #6 {Exception -> 0x06d7, blocks: (B:165:0x0635, B:167:0x0692, B:169:0x06cc, B:170:0x06d0), top: B:193:0x0635 }] */
-    /* JADX WARN: Code duplicated, block: B:177:0x07c6 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:178:0x07c7  */
-    /* JADX WARN: Code duplicated, block: B:193:0x0635 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:224:0x06e5 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:225:0x06e5 A[SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Code duplicated, block: B:150:0x05c4  */
+    /* WARN: Code duplicated, block: B:153:0x05cd  */
+    /* WARN: Code duplicated, block: B:156:0x05d6  */
+    /* WARN: Code duplicated, block: B:160:0x05eb  */
+    /* WARN: Code duplicated, block: B:163:0x0617  */
+    /* WARN: Code duplicated, block: B:167:0x0692 A[Catch: Exception -> 0x06d7, TryCatch #6 {Exception -> 0x06d7, blocks: (B:165:0x0635, B:167:0x0692, B:169:0x06cc, B:170:0x06d0), top: B:193:0x0635 }] */
+    /* WARN: Code duplicated, block: B:169:0x06cc A[Catch: Exception -> 0x06d7, TryCatch #6 {Exception -> 0x06d7, blocks: (B:165:0x0635, B:167:0x0692, B:169:0x06cc, B:170:0x06d0), top: B:193:0x0635 }] */
+    /* WARN: Code duplicated, block: B:170:0x06d0 A[Catch: Exception -> 0x06d7, TRY_LEAVE, TryCatch #6 {Exception -> 0x06d7, blocks: (B:165:0x0635, B:167:0x0692, B:169:0x06cc, B:170:0x06d0), top: B:193:0x0635 }] */
+    /* WARN: Code duplicated, block: B:177:0x07c6 A[RETURN] */
+    /* WARN: Code duplicated, block: B:178:0x07c7  */
+    /* WARN: Code duplicated, block: B:193:0x0635 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:224:0x06e5 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:225:0x06e5 A[SYNTHETIC] */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.magneticchen.daijishou.backup_and_restore.BackupAndRestoreModule
     public Object restoreFromBackupContentHashMap(HashMap<String, byte[]> map, HashMap<String, Object> map2, int i, Continuation<?> continuation) {
         byte[] bArr;

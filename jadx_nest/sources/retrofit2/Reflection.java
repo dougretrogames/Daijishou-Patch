@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 class Reflection {
     boolean isDefaultMethod(Method method) {
         return false;

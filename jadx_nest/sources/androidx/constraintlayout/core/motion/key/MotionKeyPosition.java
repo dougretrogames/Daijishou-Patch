@@ -7,7 +7,7 @@ import androidx.constraintlayout.core.motion.utils.TypedValues;
 import java.util.HashMap;
 import java.util.HashSet;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionKeyPosition extends MotionKey {
     static final int KEY_TYPE = 2;
     static final String NAME = "KeyPosition";
@@ -192,7 +192,7 @@ public class MotionKeyPosition extends MotionKey {
     }
 
     @Override // androidx.constraintlayout.core.motion.key.MotionKey
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public MotionKey mo3140clone() {
         return new MotionKeyPosition().copy(this);
     }

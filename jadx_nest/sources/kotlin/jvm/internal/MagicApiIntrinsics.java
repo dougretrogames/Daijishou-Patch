@@ -1,6 +1,6 @@
 package kotlin.jvm.internal;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class MagicApiIntrinsics {
     public static <T> T anyMagicApiCall(int i) {
         return null;

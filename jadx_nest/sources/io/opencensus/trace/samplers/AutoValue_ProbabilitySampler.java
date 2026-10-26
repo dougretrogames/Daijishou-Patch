@@ -1,6 +1,6 @@
 package io.opencensus.trace.samplers;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_ProbabilitySampler extends ProbabilitySampler {
     private final long idUpperBound;
     private final double probability;

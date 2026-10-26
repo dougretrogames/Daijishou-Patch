@@ -4,7 +4,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Note extends ObjectId {
     private ObjectId data;
 

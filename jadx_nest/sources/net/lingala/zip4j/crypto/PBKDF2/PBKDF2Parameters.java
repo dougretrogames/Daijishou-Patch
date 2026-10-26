@@ -1,6 +1,6 @@
 package net.lingala.zip4j.crypto.PBKDF2;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PBKDF2Parameters {
     protected byte[] derivedKey;
     protected String hashAlgorithm;

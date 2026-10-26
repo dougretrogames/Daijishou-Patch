@@ -8,7 +8,7 @@ import androidx.core.view.ViewPropertyAnimatorListenerAdapter;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ViewPropertyAnimatorCompatSet {
     private Interpolator mInterpolator;
     private boolean mIsStarted;
@@ -87,7 +87,7 @@ public class ViewPropertyAnimatorCompatSet {
         return this;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.view.ViewPropertyAnimatorCompatSet$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.view.ViewPropertyAnimatorCompatSet$1, reason: invalid class name */
     class AnonymousClass1 extends ViewPropertyAnimatorListenerAdapter {
         private boolean mProxyStarted = false;
         private int mProxyEndCount = 0;

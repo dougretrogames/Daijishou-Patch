@@ -5,8 +5,8 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 
-/* JADX INFO: compiled from: CoroutineLiveData.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: CoroutineLiveData.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 @DebugMetadata(c = "androidx.lifecycle.CoroutineLiveData", f = "CoroutineLiveData.kt", i = {0, 0, 1}, l = {228, 229}, m = "emitSource$lifecycle_livedata_release", n = {"this", "source", "this"}, s = {"L$0", "L$1", "L$0"})
 final class CoroutineLiveData$emitSource$1 extends ContinuationImpl {
@@ -16,13 +16,13 @@ final class CoroutineLiveData$emitSource$1 extends ContinuationImpl {
     /* synthetic */ Object result;
     final /* synthetic */ CoroutineLiveData<T> this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     CoroutineLiveData$emitSource$1(CoroutineLiveData<T> coroutineLiveData, Continuation<? super CoroutineLiveData$emitSource$1> continuation) {
         super(continuation);
         this.this$0 = coroutineLiveData;
     }
 
-    /* JADX WARN: Type inference incomplete: some casts might be missing */
+    /* WARN: Type inference incomplete: some casts might be missing */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Object invokeSuspend(Object obj) {
         this.result = obj;

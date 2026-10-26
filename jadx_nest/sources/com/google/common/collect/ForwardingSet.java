@@ -5,10 +5,10 @@ import java.util.Collection;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ForwardingSet<E> extends ForwardingCollection<E> implements Set<E> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
     public abstract Set<E> delegate();
 

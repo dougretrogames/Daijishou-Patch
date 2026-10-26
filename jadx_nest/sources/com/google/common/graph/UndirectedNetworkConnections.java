@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class UndirectedNetworkConnections<N, E> extends AbstractUndirectedNetworkConnections<N, E> {
     UndirectedNetworkConnections(Map<E, N> incidentEdgeMap) {

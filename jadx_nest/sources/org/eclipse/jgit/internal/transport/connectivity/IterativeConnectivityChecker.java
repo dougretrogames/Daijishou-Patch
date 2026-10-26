@@ -19,7 +19,7 @@ import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.transport.ConnectivityChecker;
 import org.eclipse.jgit.transport.ReceiveCommand;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IterativeConnectivityChecker implements ConnectivityChecker {
     private static final int MAXIMUM_PARENTS_TO_CHECK = 128;
     private final ConnectivityChecker delegate;

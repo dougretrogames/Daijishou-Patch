@@ -3,8 +3,8 @@ package com.google.android.material.appbar;
 import android.animation.ValueAnimator;
 import com.google.android.material.shape.MaterialShapeDrawable;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class AppBarLayout$$ExternalSyntheticLambda1 implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ AppBarLayout f$0;
     public final /* synthetic */ MaterialShapeDrawable f$1;

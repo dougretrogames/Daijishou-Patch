@@ -5,13 +5,13 @@ import android.view.View;
 import android.view.ViewParent;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ExpandableWidgetHelper {
     private boolean expanded = false;
     private int expandedComponentIdHint = 0;
     private final View widget;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public ExpandableWidgetHelper(ExpandableWidget expandableWidget) {
         this.widget = (View) expandableWidget;
     }

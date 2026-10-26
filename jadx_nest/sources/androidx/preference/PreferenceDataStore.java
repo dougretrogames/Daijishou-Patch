@@ -2,7 +2,7 @@ package androidx.preference;
 
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class PreferenceDataStore {
     public boolean getBoolean(String str, boolean z) {
         return z;

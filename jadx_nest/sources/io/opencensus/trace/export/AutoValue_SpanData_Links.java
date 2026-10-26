@@ -3,7 +3,7 @@ package io.opencensus.trace.export;
 import io.opencensus.trace.Link;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_SpanData_Links extends SpanData.Links {
     private final int droppedLinksCount;
     private final List<Link> links;

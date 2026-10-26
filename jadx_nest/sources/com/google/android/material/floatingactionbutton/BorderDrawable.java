@@ -16,7 +16,7 @@ import com.google.android.material.drawable.DrawableUtils;
 import com.google.android.material.shape.ShapeAppearanceModel;
 import com.google.android.material.shape.ShapeAppearancePathProvider;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class BorderDrawable extends Drawable {
     private static final float DRAW_STROKE_WIDTH_MULTIPLE = 1.3333f;
     private ColorStateList borderTint;

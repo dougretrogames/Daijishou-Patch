@@ -4,14 +4,14 @@ import com.google.common.base.Preconditions;
 import java.util.concurrent.atomic.AtomicLong;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class InternalLogId {
     private static final AtomicLong idAlloc = new AtomicLong();
 
     @Nullable
     private final String details;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     private final long f101id;
     private final String typeName;
 

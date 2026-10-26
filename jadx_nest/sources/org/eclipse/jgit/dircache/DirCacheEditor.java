@@ -12,7 +12,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.util.Paths;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DirCacheEditor extends BaseDirCacheEditor {
     private static final Comparator<PathEdit> EDIT_CMP = new DirCacheEditor$$ExternalSyntheticLambda0();
     private int editIdx;
@@ -252,7 +252,7 @@ public class DirCacheEditor extends BaseDirCacheEditor {
     }
 
     public static final class DeleteTree extends PathEdit {
-        /* JADX WARN: Illegal instructions before constructor call */
+        /* WARN: Illegal instructions before constructor call */
         public DeleteTree(String str) {
             if (!str.isEmpty() && str.charAt(str.length() - 1) != '/') {
                 str = str + InternalZipConstants.ZIP_FILE_SEPARATOR;

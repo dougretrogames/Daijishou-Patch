@@ -18,8 +18,8 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Job;
 import kotlinx.coroutines.flow.StateFlow;
 
-/* JADX INFO: compiled from: WindowRecomposer.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: WindowRecomposer.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
 @DebugMetadata(c = "androidx.compose.ui.platform.WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1", f = "WindowRecomposer.android.kt", i = {0}, l = {394}, m = "invokeSuspend", n = {"durationScaleJob"}, s = {"L$0"})
 final class WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -31,7 +31,7 @@ final class WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$on
     private /* synthetic */ Object L$0;
     int label;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1(Ref.ObjectRef<MotionDurationScaleImpl> objectRef, Recomposer recomposer, LifecycleOwner lifecycleOwner, WindowRecomposer_androidKt.AnonymousClass2 anonymousClass2, View view, Continuation<? super WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1> continuation) {
         super(2, continuation);
         this.$systemDurationScaleSettingConsumer = objectRef;
@@ -53,15 +53,15 @@ final class WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$on
         return ((WindowRecomposer_androidKt$createLifecycleAwareWindowRecomposer$2$onStateChanged$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v0, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v1 */
-    /* JADX WARN: Type inference failed for: r1v13, types: [kotlinx.coroutines.Job] */
-    /* JADX WARN: Type inference failed for: r1v16 */
-    /* JADX WARN: Type inference failed for: r1v17 */
-    /* JADX WARN: Type inference failed for: r1v18 */
-    /* JADX WARN: Type inference failed for: r1v2, types: [kotlinx.coroutines.Job] */
-    /* JADX WARN: Type inference failed for: r1v5 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r1v0, types: [int] */
+    /* WARN: Type inference failed for: r1v1 */
+    /* WARN: Type inference failed for: r1v13, types: [kotlinx.coroutines.Job] */
+    /* WARN: Type inference failed for: r1v16 */
+    /* WARN: Type inference failed for: r1v17 */
+    /* WARN: Type inference failed for: r1v18 */
+    /* WARN: Type inference failed for: r1v2, types: [kotlinx.coroutines.Job] */
+    /* WARN: Type inference failed for: r1v5 */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Object invokeSuspend(Object obj) throws Throwable {
         Throwable th;

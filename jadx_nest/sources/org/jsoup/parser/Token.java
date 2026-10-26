@@ -6,7 +6,7 @@ import org.jsoup.internal.Normalizer;
 import org.jsoup.nodes.Attributes;
 import org.jsoup.nodes.Range;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class Token {
     static final int UnsetPos = -1;
     int endPos;
@@ -140,7 +140,7 @@ abstract class Token {
             this.trackSource = treeBuilder.trackSourceRange;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // org.jsoup.parser.Token
         public Tag reset() {
             super.reset();
@@ -318,7 +318,7 @@ abstract class Token {
             super(TokenType.StartTag, treeBuilder);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // org.jsoup.parser.Token.Tag, org.jsoup.parser.Token
         public Tag reset() {
             super.reset();
@@ -453,7 +453,7 @@ abstract class Token {
             this.isDeclaration = true;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // org.jsoup.parser.Token.Tag, org.jsoup.parser.Token
         public XmlDecl reset() {
             super.reset();

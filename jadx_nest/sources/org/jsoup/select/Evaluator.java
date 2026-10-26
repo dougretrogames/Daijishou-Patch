@@ -17,13 +17,13 @@ import org.jsoup.nodes.TextNode;
 import org.jsoup.nodes.XmlDeclaration;
 import org.jsoup.parser.ParseSettings;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class Evaluator {
     protected int cost() {
         return 5;
     }
 
-    /* JADX INFO: renamed from: matches, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: matches, reason: merged with bridge method [inline-methods] */
     public abstract boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2);
 
     boolean matches(Element element, LeafNode leafNode) {
@@ -48,8 +48,8 @@ public abstract class Evaluator {
         return new Evaluator$$ExternalSyntheticLambda0(this, element);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX INFO: renamed from: matches, reason: merged with bridge method [inline-methods] */
+    /* INFO: Access modifiers changed from: package-private */
+    /* INFO: renamed from: matches, reason: merged with bridge method [inline-methods] */
     public final boolean m5877lambda$asNodePredicate$1$orgjsoupselectEvaluator(Element element, Node node) {
         if (node instanceof Element) {
             return m5878lambda$asPredicate$0$orgjsoupselectEvaluator(element, (Element) node);
@@ -73,7 +73,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.nameIs(this.tagName);
         }
@@ -91,7 +91,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.normalName().startsWith(this.tagName);
         }
@@ -109,7 +109,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.normalName().endsWith(this.tagName);
         }
@@ -121,7 +121,7 @@ public abstract class Evaluator {
 
     public static final class Id extends Evaluator {
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         private final String f125id;
 
         @Override // org.jsoup.select.Evaluator
@@ -134,7 +134,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return this.f125id.equals(element2.id());
         }
@@ -157,7 +157,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.hasClass(this.className);
         }
@@ -180,7 +180,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.hasAttr(this.key);
         }
@@ -204,7 +204,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             Iterator<org.jsoup.nodes.Attribute> it = element2.attributes().asList().iterator();
             while (it.hasNext()) {
@@ -231,7 +231,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.hasAttr(this.key) && this.value.equalsIgnoreCase(element2.attr(this.key).trim());
         }
@@ -252,7 +252,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return !this.value.equalsIgnoreCase(element2.attr(this.key));
         }
@@ -273,7 +273,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.hasAttr(this.key) && Normalizer.lowerCase(element2.attr(this.key)).startsWith(this.value);
         }
@@ -294,7 +294,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.hasAttr(this.key) && Normalizer.lowerCase(element2.attr(this.key)).endsWith(this.value);
         }
@@ -315,7 +315,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.hasAttr(this.key) && Normalizer.lowerCase(element2.attr(this.key)).contains(this.value);
         }
@@ -340,7 +340,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.hasAttr(this.key) && this.pattern.matcher(element2.attr(this.key)).find();
         }
@@ -375,7 +375,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return true;
         }
@@ -391,7 +391,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element != element2 && element2.elementSiblingIndex() < this.index;
         }
@@ -407,7 +407,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.elementSiblingIndex() > this.index;
         }
@@ -423,7 +423,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.elementSiblingIndex() == this.index;
         }
@@ -435,7 +435,7 @@ public abstract class Evaluator {
 
     public static final class IsLastChild extends Evaluator {
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             Element elementParent = element2.parent();
             return (elementParent == null || (elementParent instanceof Document) || element2 != elementParent.lastElementChild()) ? false : true;
@@ -486,7 +486,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             Element elementParent = element2.parent();
             if (elementParent != null && !(elementParent instanceof Document)) {
@@ -607,7 +607,7 @@ public abstract class Evaluator {
 
     public static final class IsFirstChild extends Evaluator {
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             Element elementParent = element2.parent();
             return (elementParent == null || (elementParent instanceof Document) || element2 != elementParent.firstElementChild()) ? false : true;
@@ -625,7 +625,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             if (element instanceof Document) {
                 element = element.firstElementChild();
@@ -640,7 +640,7 @@ public abstract class Evaluator {
 
     public static final class IsOnlyChild extends Evaluator {
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             Element elementParent = element2.parent();
             return (elementParent == null || (elementParent instanceof Document) || !element2.siblingElements().isEmpty()) ? false : true;
@@ -653,7 +653,7 @@ public abstract class Evaluator {
 
     public static final class IsOnlyOfType extends Evaluator {
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             Element elementParent = element2.parent();
             if (elementParent != null && !(elementParent instanceof Document)) {
@@ -680,7 +680,7 @@ public abstract class Evaluator {
 
     public static final class IsEmpty extends Evaluator {
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             for (Node nodeFirstChild = element2.firstChild(); nodeFirstChild != null; nodeFirstChild = nodeFirstChild.nextSibling()) {
                 if (nodeFirstChild instanceof TextNode) {
@@ -720,7 +720,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return Normalizer.lowerCase(element2.text()).contains(this.searchText);
         }
@@ -743,7 +743,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.wholeText().contains(this.searchText);
         }
@@ -761,7 +761,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return element2.wholeOwnText().contains(this.searchText);
         }
@@ -779,7 +779,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return Normalizer.lowerCase(element2.data()).contains(this.searchText);
         }
@@ -797,7 +797,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return Normalizer.lowerCase(element2.ownText()).contains(this.searchText);
         }
@@ -820,7 +820,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return this.pattern.matcher(element2.text()).find();
         }
@@ -843,7 +843,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return this.pattern.matcher(element2.ownText()).find();
         }
@@ -866,7 +866,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return this.pattern.matcher(element2.wholeText()).find();
         }
@@ -889,7 +889,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             return this.pattern.matcher(element2.wholeOwnText()).find();
         }
@@ -917,7 +917,7 @@ public abstract class Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             if (element2 instanceof PseudoTextElement) {
                 return true;

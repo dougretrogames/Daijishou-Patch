@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.NoSuchElementException;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PermutationIterator<E> implements Iterator<List<E>> {
     private final boolean[] direction;
     private final int[] keys;

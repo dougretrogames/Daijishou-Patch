@@ -39,7 +39,7 @@ import org.apache.http.params.HttpConnectionParams;
 import org.apache.http.params.HttpParams;
 import org.apache.http.params.HttpProtocolParams;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public final class ApacheHttpTransport extends HttpTransport {
     private final HttpClient httpClient;
@@ -86,7 +86,7 @@ public final class ApacheHttpTransport extends HttpTransport {
         return defaultHttpClient;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.api.client.http.HttpTransport
     public ApacheHttpRequest buildRequest(String str, String str2) {
         HttpRequestBase httpExtensionMethod;

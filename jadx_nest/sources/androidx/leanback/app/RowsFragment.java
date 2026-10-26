@@ -23,7 +23,7 @@ import androidx.leanback.widget.ViewHolderTask;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public class RowsFragment extends BaseRowFragment implements BrowseFragment.MainFragmentRowsAdapterProvider, BrowseFragment.MainFragmentAdapterProvider {
     static final int ALIGN_TOP_NOT_SET = Integer.MIN_VALUE;
@@ -262,7 +262,7 @@ public class RowsFragment extends BaseRowFragment implements BrowseFragment.Main
         ((RowPresenter) viewHolder.getPresenter()).setRowViewSelected(viewHolder.getViewHolder(), z);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.RowsFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.RowsFragment$1, reason: invalid class name */
     class AnonymousClass1 extends ItemBridgeAdapter.AdapterListener {
         AnonymousClass1() {
         }
@@ -419,7 +419,7 @@ public class RowsFragment extends BaseRowFragment implements BrowseFragment.Main
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.RowsFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.RowsFragment$2, reason: invalid class name */
     class AnonymousClass2 implements ViewHolderTask {
         final /* synthetic */ Presenter.ViewHolderTask val$rowHolderTask;
 
@@ -427,7 +427,7 @@ public class RowsFragment extends BaseRowFragment implements BrowseFragment.Main
             this.val$rowHolderTask = viewHolderTask;
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.app.RowsFragment$2$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.app.RowsFragment$2$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             final /* synthetic */ RecyclerView.ViewHolder val$rvh;
 

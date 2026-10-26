@@ -9,7 +9,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DiffUtil {
     private static final Comparator<Diagonal> DIAGONAL_COMPARATOR = new AnonymousClass1();
 
@@ -40,7 +40,7 @@ public class DiffUtil {
     private DiffUtil() {
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.DiffUtil$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.DiffUtil$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<Diagonal> {
         AnonymousClass1() {
         }

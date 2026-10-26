@@ -31,7 +31,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class MoreExecutors {
     private MoreExecutors() {
@@ -89,7 +89,7 @@ public final class MoreExecutors {
             addShutdownHook(MoreExecutors.newThread("DelayedShutdownHook-for-" + service, new AnonymousClass1(this, service, terminationTimeout, timeUnit)));
         }
 
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.MoreExecutors$Application$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.util.concurrent.MoreExecutors$Application$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             final /* synthetic */ ExecutorService val$service;
             final /* synthetic */ long val$terminationTimeout;
@@ -116,7 +116,7 @@ public final class MoreExecutors {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void useDaemonThreadFactory(ThreadPoolExecutor executor) {
         executor.setThreadFactory(new ThreadFactoryBuilder().setDaemon(true).setThreadFactory(executor.getThreadFactory()).build());
     }
@@ -468,7 +468,7 @@ public final class MoreExecutors {
         return listenableFutureSubmit;
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.MoreExecutors$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.MoreExecutors$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ ListenableFuture val$future;
         final /* synthetic */ BlockingQueue val$queue;
@@ -529,7 +529,7 @@ public final class MoreExecutors {
         return new AnonymousClass2(executor, nameSupplier);
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.MoreExecutors$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.MoreExecutors$2, reason: invalid class name */
     class AnonymousClass2 implements Executor {
         final /* synthetic */ Executor val$executor;
         final /* synthetic */ Supplier val$nameSupplier;
@@ -551,11 +551,11 @@ public final class MoreExecutors {
         return new AnonymousClass3(service, nameSupplier);
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.MoreExecutors$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.MoreExecutors$3, reason: invalid class name */
     class AnonymousClass3 extends WrappingExecutorService {
         final /* synthetic */ Supplier val$nameSupplier;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(ExecutorService delegate, final Supplier val$nameSupplier) {
             super(delegate);
             this.val$nameSupplier = val$nameSupplier;
@@ -578,11 +578,11 @@ public final class MoreExecutors {
         return new AnonymousClass4(service, nameSupplier);
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.MoreExecutors$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.MoreExecutors$4, reason: invalid class name */
     class AnonymousClass4 extends WrappingScheduledExecutorService {
         final /* synthetic */ Supplier val$nameSupplier;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass4(ScheduledExecutorService delegate, final Supplier val$nameSupplier) {
             super(delegate);
             this.val$nameSupplier = val$nameSupplier;
@@ -620,7 +620,7 @@ public final class MoreExecutors {
         return delegate == directExecutor() ? delegate : new AnonymousClass5(delegate, future);
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.MoreExecutors$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.MoreExecutors$5, reason: invalid class name */
     class AnonymousClass5 implements Executor {
         final /* synthetic */ Executor val$delegate;
         final /* synthetic */ AbstractFuture val$future;

@@ -10,10 +10,10 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Quantiles {
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static double interpolate(double lower, double upper, double remainder, double scale) {
         if (lower == Double.NEGATIVE_INFINITY) {
             return upper == Double.POSITIVE_INFINITY ? Double.NaN : Double.NEGATIVE_INFINITY;
@@ -206,7 +206,7 @@ public final class Quantiles {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean containsNaN(double... dataset) {
         for (double d : dataset) {
             if (Double.isNaN(d)) {
@@ -216,14 +216,14 @@ public final class Quantiles {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void checkIndex(int index, int scale) {
         if (index < 0 || index > scale) {
             throw new IllegalArgumentException("Quantile indexes must be between 0 and the scale, which is " + scale);
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static double[] longsToDoubles(long[] longs) {
         int length = longs.length;
         double[] dArr = new double[length];
@@ -233,7 +233,7 @@ public final class Quantiles {
         return dArr;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static double[] intsToDoubles(int[] ints) {
         int length = ints.length;
         double[] dArr = new double[length];
@@ -243,7 +243,7 @@ public final class Quantiles {
         return dArr;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void selectInPlace(int required, double[] array, int from, int to) {
         if (required != from) {
             while (to > from) {
@@ -298,7 +298,7 @@ public final class Quantiles {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void selectAllInPlace(int[] allRequired, int requiredFrom, int requiredTo, double[] array, int from, int to) {
         int iChooseNextSelection = chooseNextSelection(allRequired, requiredFrom, requiredTo, from, to);
         int i = allRequired[iChooseNextSelection];

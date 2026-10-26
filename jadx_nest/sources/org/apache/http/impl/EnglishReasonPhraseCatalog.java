@@ -5,7 +5,7 @@ import org.apache.http.HttpStatus;
 import org.apache.http.ReasonPhraseCatalog;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EnglishReasonPhraseCatalog implements ReasonPhraseCatalog {
     public static final EnglishReasonPhraseCatalog INSTANCE = new EnglishReasonPhraseCatalog();
     private static final String[][] REASON_PHRASES = {null, new String[3], new String[8], new String[8], new String[30], new String[8]};

@@ -3,8 +3,8 @@ package com.google.android.material.sidesheet;
 import android.view.View;
 import androidx.core.view.accessibility.AccessibilityViewCommand;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SideSheetBehavior$$ExternalSyntheticLambda1 implements AccessibilityViewCommand {
     public final /* synthetic */ SideSheetBehavior f$0;
     public final /* synthetic */ int f$1;

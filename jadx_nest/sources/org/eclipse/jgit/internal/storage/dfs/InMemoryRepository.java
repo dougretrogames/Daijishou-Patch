@@ -17,7 +17,7 @@ import org.eclipse.jgit.internal.storage.reftable.ReftableConfig;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.RefDatabase;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class InMemoryRepository extends DfsRepository {
     static final AtomicInteger packId = new AtomicInteger();
     private String gitwebDescription;
@@ -120,12 +120,12 @@ public class InMemoryRepository extends DfsRepository {
             return new ByteArrayReadableChannel(bArr, this.blockSize);
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.dfs.InMemoryRepository$MemObjDatabase$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.internal.storage.dfs.InMemoryRepository$MemObjDatabase$1, reason: invalid class name */
         class AnonymousClass1 extends Out {
             private final /* synthetic */ PackExt val$ext;
             private final /* synthetic */ MemPack val$memPack;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(MemPack memPack, PackExt packExt) {
                 super(null);
                 this.val$memPack = memPack;

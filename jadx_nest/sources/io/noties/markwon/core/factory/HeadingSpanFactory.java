@@ -6,7 +6,7 @@ import io.noties.markwon.SpanFactory;
 import io.noties.markwon.core.CoreProps;
 import io.noties.markwon.core.spans.HeadingSpan;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class HeadingSpanFactory implements SpanFactory {
     @Override // io.noties.markwon.SpanFactory
     public Object getSpans(MarkwonConfiguration markwonConfiguration, RenderProps renderProps) {

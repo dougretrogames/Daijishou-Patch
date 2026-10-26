@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 interface GraphConnections<N, V> {
     void addPredecessor(N node, V value);

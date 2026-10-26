@@ -6,14 +6,14 @@ import com.google.android.gms.common.api.Api.AnyClient;
 import com.google.android.gms.common.internal.Preconditions;
 import com.google.android.gms.tasks.TaskCompletionSource;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public class RegistrationMethods<A extends Api.AnyClient, L> {
     public final RegisterListenerMethod<A, L> register;
     public final UnregisterListenerMethod zaa;
     public final Runnable zab;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static class Builder<A extends Api.AnyClient, L> {
         private RemoteCall zaa;
         private RemoteCall zab;

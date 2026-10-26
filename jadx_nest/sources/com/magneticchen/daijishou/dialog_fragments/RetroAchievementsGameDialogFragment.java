@@ -91,12 +91,12 @@ import kotlin.jvm.internal.StringCompanionObject;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000Æ\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010 \n\u0002\b\u0004\u0018\u0000 a2\u00020\u0001:\u0003_`aB\u0005¢\u0006\u0002\u0010\u0002J\u0018\u0010F\u001a\u00020G2\u0006\u0010H\u001a\u00020\u000b2\u0006\u0010I\u001a\u00020JH\u0002J\b\u0010K\u001a\u000205H\u0016J\u0012\u0010L\u001a\u00020G2\b\u0010M\u001a\u0004\u0018\u00010NH\u0016J&\u0010O\u001a\u0004\u0018\u00010\u000b2\u0006\u0010P\u001a\u00020Q2\b\u0010R\u001a\u0004\u0018\u00010S2\b\u0010M\u001a\u0004\u0018\u00010NH\u0016J \u0010T\u001a\u00020G2\u0006\u0010U\u001a\u00020\r2\u0006\u0010V\u001a\u00020\r2\u0006\u0010W\u001a\u00020XH\u0016J\b\u0010Y\u001a\u00020GH\u0016J\b\u0010Z\u001a\u00020GH\u0016J\u001a\u0010[\u001a\u00020G2\u0006\u0010H\u001a\u00020\u000b2\b\u0010M\u001a\u0004\u0018\u00010NH\u0016J\u0018\u0010\\\u001a\u00020G2\u000e\u0010]\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010^H\u0002R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0012\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\tX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0015X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u001b\u0010\u001d\u001a\u00020\u001e8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b!\u0010\"\u001a\u0004\b\u001f\u0010 R\u000e\u0010#\u001a\u00020\tX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010%\u001a\u0004\u0018\u00010&X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u001b\u0010(\u001a\u00020)8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b,\u0010\"\u001a\u0004\b*\u0010+R\u001b\u0010-\u001a\u00020)8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b/\u0010\"\u001a\u0004\b.\u0010+R\u000e\u00100\u001a\u000201X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00102\u001a\u000203X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00104\u001a\u000205X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00106\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00107\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u001b\u00108\u001a\u0002098BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b<\u0010\"\u001a\u0004\b:\u0010;R\u000e\u0010=\u001a\u00020>X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010?\u001a\u000205X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010@\u001a\u00020AX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010B\u001a\u00020\u0015X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010C\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010D\u001a\u00020\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010E\u001a\u00020\u000bX\u0082.¢\u0006\u0002\n\u0000¨\u0006b"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "()V", "achievements", "", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsAchievementRecordEntity;", "associateItemButton", "Lcom/google/android/material/chip/Chip;", "awardIcon", "Landroid/widget/ImageView;", "bottomDivider", "Landroid/view/View;", "colorHardcore", "", "colorIconThemeTintList", "Landroid/content/res/ColorStateList;", "colorOnThemeTintList", "colorSoftcore", "colorThemeTintList", "consoleIcon", "description", "Landroid/widget/TextView;", "descriptionSuffix", "forumButton", "greyscaleColorMatrix", "Landroid/graphics/ColorMatrix;", "greyscaleFilter", "Landroid/graphics/ColorMatrixColorFilter;", "guideButton", "highlightStrokeWidth", "", "getHighlightStrokeWidth", "()F", "highlightStrokeWidth$delegate", "Lkotlin/Lazy;", "placeHolder", "playableItemButton", "playableItemEntityToBeRestoredInDialog", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "playerCountButton", "playerCountDetailsFormatString", "", "getPlayerCountDetailsFormatString", "()Ljava/lang/String;", "playerCountDetailsFormatString$delegate", "playerCountFormatString", "getPlayerCountFormatString", "playerCountFormatString$delegate", "progressBar", "Lcom/google/android/material/progressindicator/LinearProgressIndicator;", "recyclerView", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;", "refocusOnScrolledToTop", "", "refreshButton", "retroAchievementsButton", "retroAchievementsRepository", "Lcom/magneticchen/daijishou/repositories/RetroAchievementsRepository;", "getRetroAchievementsRepository", "()Lcom/magneticchen/daijishou/repositories/RetroAchievementsRepository;", "retroAchievementsRepository$delegate", "scrollView", "Landroid/widget/HorizontalScrollView;", "scrollingOnBackPressed", "thumbnail", "Lcom/google/android/material/imageview/ShapeableImageView;", "title", "toggleViewButton", "viewMode", "viewToBeRefocus", "fillInRetroAchievementsMetaDataView", "", "view", "retroAchievementsGameRecord", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "onBackPressed", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onHotKeyPressed", "hotkeyCode", "keyCode", "keyEvent", "Landroid/view/KeyEvent;", "onResume", "onStart", "onViewCreated", "refreshViewType", "retroAchievementsAchievementRecords", "", "AchievementGridAdapter", "AchievementListAdapter", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final Typeface typeface;
     private Chip associateItemButton;
@@ -132,19 +132,19 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
     private View viewToBeRefocus;
     private final List<RetroAchievementsAchievementRecordEntity> achievements = new ArrayList();
 
-    /* JADX INFO: renamed from: playerCountFormatString$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: playerCountFormatString$delegate, reason: from kotlin metadata */
     private final Lazy playerCountFormatString = LazyKt.lazy(new RetroAchievementsGameDialogFragment$playerCountFormatString$2(this));
 
-    /* JADX INFO: renamed from: playerCountDetailsFormatString$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: playerCountDetailsFormatString$delegate, reason: from kotlin metadata */
     private final Lazy playerCountDetailsFormatString = LazyKt.lazy(new RetroAchievementsGameDialogFragment$playerCountDetailsFormatString$2(this));
 
-    /* JADX INFO: renamed from: retroAchievementsRepository$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: retroAchievementsRepository$delegate, reason: from kotlin metadata */
     private final Lazy retroAchievementsRepository = LazyKt.lazy(new RetroAchievementsGameDialogFragment$retroAchievementsRepository$2(this));
 
-    /* JADX INFO: renamed from: highlightStrokeWidth$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: highlightStrokeWidth$delegate, reason: from kotlin metadata */
     private final Lazy highlightStrokeWidth = LazyKt.lazy(new RetroAchievementsGameDialogFragment$highlightStrokeWidth$2(this));
 
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J>\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\f2\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u000e2\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u000eR\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u0011"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment$Companion;", "", "()V", "typeface", "Landroid/graphics/Typeface;", "getTypeface", "()Landroid/graphics/Typeface;", "newInstance", "Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment;", "retroAchievementsGameRecordId", "", "playableItemEntityToBeRestoredInDialog", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "colorThemeTintList", "Landroid/content/res/ColorStateList;", "colorOnThemeTintList", "colorIconThemeTintList", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -222,17 +222,17 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         return (String) this.playerCountDetailsFormatString.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final RetroAchievementsRepository getRetroAchievementsRepository() {
         return (RetroAchievementsRepository) this.retroAchievementsRepository.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final float getHighlightStrokeWidth() {
         return ((Number) this.highlightStrokeWidth.getValue()).floatValue();
     }
 
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001 B\u001b\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00020\u0006¢\u0006\u0002\u0010\u0007J\u0010\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0019H\u0016J \u0010\u001a\u001a\n0\u001bR\u00060\u0000R\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u0019H\u0016R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R*\u0010\u000e\u001a\u001e\u0012\u0004\u0012\u00020\u0002\u0012\u0014\u0012\u0012\u0012\f\u0012\n \u0012*\u0004\u0018\u00010\u00110\u0011\u0018\u00010\u00100\u000fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00020\u0014X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006!"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment$AchievementListAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsAchievementRecordEntity;", "context", "Landroid/content/Context;", "retroAchievementsAchievementDataList", "", "(Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment;Landroid/content/Context;Ljava/util/List;)V", "achievementCompletedString", "", "achievementDetailFormatString", "achievementHardcoreCompletedString", "achievementIncompleteString", "achievementPointsFormatString", "getGlidePreloadRequestBuilder", "Lkotlin/Function1;", "Lcom/bumptech/glide/RequestBuilder;", "Landroid/graphics/drawable/Drawable;", "kotlin.jvm.PlatformType", "glideViewPreloadSizeProvider", "Lcom/bumptech/glide/util/ViewPreloadSizeProvider;", "noDescriptionForThisAchievementString", "getItemId", "", "position", "", "onCreateViewHolder", "Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment$AchievementListAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment;", "viewGroup", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AchievementListAdapter extends DaijishouRecyclerView.Adapter<RetroAchievementsAchievementRecordEntity> {
         private final String achievementCompletedString;
@@ -247,7 +247,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         private final List<RetroAchievementsAchievementRecordEntity> retroAchievementsAchievementDataList;
         final /* synthetic */ RetroAchievementsGameDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public AchievementListAdapter(RetroAchievementsGameDialogFragment retroAchievementsGameDialogFragment, Context context, List<RetroAchievementsAchievementRecordEntity> retroAchievementsAchievementDataList) {
             super(retroAchievementsAchievementDataList, true, false, 4, null);
             Intrinsics.checkNotNullParameter(context, "context");
@@ -279,7 +279,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
             this.glideViewPreloadSizeProvider = DaijishouRecyclerView.Adapter.addGlidePreloaderBuilderCreator$default(this, retroAchievementsGameDialogFragment$AchievementListAdapter$getGlidePreloadRequestBuilder$1, 0, 2, null);
         }
 
-        /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+        /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
         @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u0003H\u0016R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\f\u001a\u0004\u0018\u00010\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001b"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment$AchievementListAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsAchievementRecordEntity;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment$AchievementListAdapter;Landroid/view/View;)V", "colorHardcoreColorStateList", "Landroid/content/res/ColorStateList;", "completedIcon", "Landroid/widget/ImageView;", "completedIconImageTintList", "defaultBorderColor", "defaultStrokeWidth", "", "description", "Landroid/widget/TextView;", "imageView", "Lcom/google/android/material/imageview/ShapeableImageView;", "pointsSubtitle", "progressDescription", "title", "onBind", "", "position", "", "item", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<RetroAchievementsAchievementRecordEntity>.ViewHolder {
             private final ColorStateList colorHardcoreColorStateList;
@@ -294,7 +294,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
             final /* synthetic */ AchievementListAdapter this$0;
             private final TextView title;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(AchievementListAdapter achievementListAdapter, View itemView) {
                 super(achievementListAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");
@@ -403,7 +403,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000R\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001dB\u0013\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004¢\u0006\u0002\u0010\u0005J\u0010\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u0016H\u0016J \u0010\u0017\u001a\n0\u0018R\u00060\u0000R\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u0016H\u0016R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R-\u0010\b\u001a\u001e\u0012\u0004\u0012\u00020\u0002\u0012\u0014\u0012\u0012\u0012\f\u0012\n \f*\u0004\u0018\u00010\u000b0\u000b\u0018\u00010\n0\t¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0017\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00020\u0010¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001e"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment$AchievementGridAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsAchievementRecordEntity;", "retroAchievementsAchievementDataList", "", "(Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment;Ljava/util/List;)V", "achievementPointsFormatString", "", "getGlidePreloadRequestBuilder", "Lkotlin/Function1;", "Lcom/bumptech/glide/RequestBuilder;", "Landroid/graphics/drawable/Drawable;", "kotlin.jvm.PlatformType", "getGetGlidePreloadRequestBuilder", "()Lkotlin/jvm/functions/Function1;", "glideViewPreloadSizeProvider", "Lcom/bumptech/glide/util/ViewPreloadSizeProvider;", "getGlideViewPreloadSizeProvider", "()Lcom/bumptech/glide/util/ViewPreloadSizeProvider;", "getItemId", "", "position", "", "onCreateViewHolder", "Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment$AchievementGridAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment;", "viewGroup", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AchievementGridAdapter extends DaijishouRecyclerView.Adapter<RetroAchievementsAchievementRecordEntity> {
         private final String achievementPointsFormatString;
@@ -412,7 +412,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         private final List<RetroAchievementsAchievementRecordEntity> retroAchievementsAchievementDataList;
         final /* synthetic */ RetroAchievementsGameDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public AchievementGridAdapter(RetroAchievementsGameDialogFragment retroAchievementsGameDialogFragment, List<RetroAchievementsAchievementRecordEntity> retroAchievementsAchievementDataList) {
             super(retroAchievementsAchievementDataList, true, false, 4, null);
             Intrinsics.checkNotNullParameter(retroAchievementsAchievementDataList, "retroAchievementsAchievementDataList");
@@ -435,7 +435,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
             return this.glideViewPreloadSizeProvider;
         }
 
-        /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+        /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
         @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0007\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u0013\u001a\u00020\u0003H\u0016J\b\u0010\u001a\u001a\u00020\u000fH\u0016J\b\u0010\u001b\u001a\u00020\u0017H\u0016J\u0010\u0010\u001c\u001a\u00020\u00172\u0006\u0010\u001d\u001a\u00020\u000fH\u0016J\b\u0010\u001e\u001a\u00020\u0017H\u0002J\b\u0010\u001f\u001a\u00020\u0017H\u0002R\u0010\u0010\u0007\u001a\u0004\u0018\u00010\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0011X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0003X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006 "}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment$AchievementGridAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsAchievementRecordEntity;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment$AchievementGridAdapter;Landroid/view/View;)V", "balloon", "Lcom/skydoves/balloon/Balloon;", "defaultBorderColor", "Landroid/content/res/ColorStateList;", "defaultPointsBackgroundTintList", "defaultStrokeWidth", "", "focused", "", "imageView", "Lcom/google/android/material/imageview/ShapeableImageView;", "isBalloonShown", "item", "pointsSubtitle", "Landroid/widget/TextView;", "onBind", "", "position", "", "onClick", "onFocus", "onFocusClear", "isAbsoluteAdapterPositionValid", "refreshBorderStyle", "showToolTips", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<RetroAchievementsAchievementRecordEntity>.ViewHolder {
             private Balloon balloon;
@@ -449,7 +449,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
             private final TextView pointsSubtitle;
             final /* synthetic */ AchievementGridAdapter this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(AchievementGridAdapter achievementGridAdapter, View itemView) {
                 super(achievementGridAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");
@@ -634,7 +634,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         this.colorHardcore = ContextCompat.getColor(requireContext(), R.color.retroachievements_hardcore);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void refreshViewType(List<RetroAchievementsAchievementRecordEntity> retroAchievementsAchievementRecords) {
         List listSortedWith = CollectionsKt.sortedWith(retroAchievementsAchievementRecords == null ? CollectionsKt.emptyList() : retroAchievementsAchievementRecords, new RetroAchievementsGameDialogFragment$refreshViewType$$inlined$sortedBy$1());
         int i = this.viewMode;
@@ -749,8 +749,8 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$refreshViewType$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$refreshViewType$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "it", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsAchievementRecordEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02271 extends Lambda<Unit> implements Function4<View, Integer, Long, RetroAchievementsAchievementRecordEntity, Unit> {
         C02271() {
@@ -774,8 +774,8 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$refreshViewType$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$refreshViewType$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "it", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsAchievementRecordEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02282 extends Lambda<Unit> implements Function4<View, Integer, Long, RetroAchievementsAchievementRecordEntity, Unit> {
         C02282() {
@@ -823,14 +823,14 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         chip2.performClick();
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x001b  */
-    /* JADX WARN: Code duplicated, block: B:14:0x0027  */
-    /* JADX WARN: Code duplicated, block: B:16:0x002b  */
-    /* JADX WARN: Code duplicated, block: B:49:0x00ac  */
-    /* JADX WARN: Code duplicated, block: B:52:0x00b7  */
-    /* JADX WARN: Code duplicated, block: B:53:0x00bb  */
-    /* JADX WARN: Code duplicated, block: B:9:0x0017  */
-    /* JADX WARN: Code restructure failed: missing block: B:18:0x0033, code lost:
+    /* WARN: Code duplicated, block: B:11:0x001b  */
+    /* WARN: Code duplicated, block: B:14:0x0027  */
+    /* WARN: Code duplicated, block: B:16:0x002b  */
+    /* WARN: Code duplicated, block: B:49:0x00ac  */
+    /* WARN: Code duplicated, block: B:52:0x00b7  */
+    /* WARN: Code duplicated, block: B:53:0x00bb  */
+    /* WARN: Code duplicated, block: B:9:0x0017  */
+    /* WARN: Code restructure failed: missing block: B:18:0x0033, code lost:
     
         if (r0.getScrollX() == 0) goto L19;
      */
@@ -998,8 +998,8 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$fillInRetroAchievementsMetaDataView$1, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$fillInRetroAchievementsMetaDataView$1, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000/\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001J2\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\b2\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00020\n2\u0006\u0010\u000b\u001a\u00020\u0004H\u0016J8\u0010\f\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u00022\u0006\u0010\u0007\u001a\u00020\b2\u000e\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\n2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u000b\u001a\u00020\u0004H\u0016¨\u0006\u0010"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment$fillInRetroAchievementsMetaDataView$1", "Lcom/bumptech/glide/request/RequestListener;", "Landroid/graphics/drawable/Drawable;", "onLoadFailed", "", "e", "Lcom/bumptech/glide/load/engine/GlideException;", "model", "", TypedValues.AttributesType.S_TARGET, "Lcom/bumptech/glide/request/target/Target;", "isFirstResource", "onResourceReady", "resource", "dataSource", "Lcom/bumptech/glide/load/DataSource;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass1 implements RequestListener<Drawable> {
         AnonymousClass1() {
@@ -1032,8 +1032,8 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$fillInRetroAchievementsMetaDataView$2, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$fillInRetroAchievementsMetaDataView$2, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000/\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001J2\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\b2\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00020\n2\u0006\u0010\u000b\u001a\u00020\u0004H\u0016J8\u0010\f\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u00022\u0006\u0010\u0007\u001a\u00020\b2\u000e\u0010\t\u001a\n\u0012\u0004\u0012\u00020\u0002\u0018\u00010\n2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u000b\u001a\u00020\u0004H\u0016¨\u0006\u0010"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment$fillInRetroAchievementsMetaDataView$2", "Lcom/bumptech/glide/request/RequestListener;", "Landroid/graphics/drawable/Drawable;", "onLoadFailed", "", "e", "Lcom/bumptech/glide/load/engine/GlideException;", "model", "", TypedValues.AttributesType.S_TARGET, "Lcom/bumptech/glide/request/target/Target;", "isFirstResource", "onResourceReady", "resource", "dataSource", "Lcom/bumptech/glide/load/DataSource;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass2 implements RequestListener<Drawable> {
         AnonymousClass2() {
@@ -1439,7 +1439,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         return viewInflate;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$11(RetroAchievementsGameDialogFragment this$0, View view, int i, int i2, int i3, int i4) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (this$0.refocusOnScrolledToTop) {
@@ -1462,8 +1462,8 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$onCreateView$5, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$onCreateView$5, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u001f\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016J \u0010\b\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\u00072\u0006\u0010\n\u001a\u00020\u0007H\u0016¨\u0006\u000b"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/RetroAchievementsGameDialogFragment$onCreateView$5", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "onScrolled", "dx", "dy", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass5 extends RecyclerView.OnScrollListener {
         AnonymousClass5() {
@@ -1536,14 +1536,14 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$12(RetroAchievementsGameDialogFragment this$0, RetroAchievementsGameRecordEntity retroAchievementsGameRecord, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(retroAchievementsGameRecord, "$retroAchievementsGameRecord");
         BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this$0), Dispatchers.getIO(), null, new RetroAchievementsGameDialogFragment$onCreateView$6$1(this$0, retroAchievementsGameRecord, null), 2, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$13(RetroAchievementsGameDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (this$0.getDefaultSharedPreferences().getInt("retro_achievements_game_view_mode", 0) == 1) {
@@ -1553,7 +1553,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreateView$lambda$16(RetroAchievementsGameRecordEntity retroAchievementsGameRecord, RetroAchievementsGameDialogFragment this$0, MenuItem menuItem) {
         Intrinsics.checkNotNullParameter(retroAchievementsGameRecord, "$retroAchievementsGameRecord");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -1585,13 +1585,13 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$17(PopupMenu popupMenu, View view) {
         Intrinsics.checkNotNullParameter(popupMenu, "$popupMenu");
         popupMenu.show();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$18(RetroAchievementsGameDialogFragment this$0, RetroAchievementsGameRecordEntity retroAchievementsGameRecord, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(retroAchievementsGameRecord, "$retroAchievementsGameRecord");
@@ -1603,7 +1603,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         Toast.makeText(contextRequireContext, str, 1).show();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$20(RetroAchievementsGameRecordEntity retroAchievementsGameRecord, RetroAchievementsGameDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(retroAchievementsGameRecord, "$retroAchievementsGameRecord");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -1613,7 +1613,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$22(RetroAchievementsGameRecordEntity retroAchievementsGameRecord, RetroAchievementsGameDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(retroAchievementsGameRecord, "$retroAchievementsGameRecord");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -1623,8 +1623,8 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Multi-variable type inference failed */
     public static final void onCreateView$lambda$24(Ref.ObjectRef relatedPlayableItem, RetroAchievementsGameDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(relatedPlayableItem, "$relatedPlayableItem");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -1635,13 +1635,13 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$onCreateView$14, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$onCreateView$14, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "playableItemId", "", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass14 extends Lambda<Unit> implements Function1<List<? extends RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity>, Unit> {
         final /* synthetic */ Ref.ObjectRef<PlayableItemEntity> $relatedPlayableItem;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass14(Ref.ObjectRef<PlayableItemEntity> objectRef) {
             super(1);
             this.$relatedPlayableItem = objectRef;
@@ -1653,9 +1653,9 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
             return Unit.INSTANCE;
         }
 
-        /* JADX WARN: Type inference failed for: r0v3, types: [T, com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity] */
-        /* JADX WARN: Type inference failed for: r9v6, types: [T, com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity] */
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* WARN: Type inference failed for: r0v3, types: [T, com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity] */
+        /* WARN: Type inference failed for: r9v6, types: [T, com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity] */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<RetroAchievementsCachedPlayableItemIdToGameIdSurjectionEntity> list) {
             Chip chip = null;
             if (RetroAchievementsGameDialogFragment.this.playableItemEntityToBeRestoredInDialog != null) {
@@ -1686,7 +1686,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$updateRetroAchievementsGameRecord(RetroAchievementsGameDialogFragment retroAchievementsGameDialogFragment, View view, RetroAchievementsGameRecordEntity retroAchievementsGameRecordEntity) {
         Chip chip = retroAchievementsGameDialogFragment.retroAchievementsButton;
         Chip chip2 = null;
@@ -1746,7 +1746,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         retroAchievementsGameDialogFragment.fillInRetroAchievementsMetaDataView(view, retroAchievementsGameRecordEntity);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$updateRetroAchievementsGameRecord$lambda$26(RetroAchievementsGameRecordEntity retroAchievementsGameRecord, RetroAchievementsGameDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(retroAchievementsGameRecord, "$retroAchievementsGameRecord");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -1756,7 +1756,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$updateRetroAchievementsGameRecord$lambda$27(RetroAchievementsGameDialogFragment this$0, RetroAchievementsGameRecordEntity retroAchievementsGameRecord, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(retroAchievementsGameRecord, "$retroAchievementsGameRecord");
@@ -1768,7 +1768,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         Toast.makeText(contextRequireContext, str, 1).show();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$updateRetroAchievementsGameRecord$lambda$29(RetroAchievementsGameRecordEntity retroAchievementsGameRecord, RetroAchievementsGameDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(retroAchievementsGameRecord, "$retroAchievementsGameRecord");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -1779,7 +1779,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$updateRetroAchievementsGameRecord$lambda$31(RetroAchievementsGameRecordEntity retroAchievementsGameRecord, RetroAchievementsGameDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(retroAchievementsGameRecord, "$retroAchievementsGameRecord");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -1789,15 +1789,15 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$onCreateView$16, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$onCreateView$16, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass16 extends Lambda<Unit> implements Function1<RetroAchievementsGameRecordEntity, Unit> {
         final /* synthetic */ Ref.BooleanRef $firstTimeGameRecord;
         final /* synthetic */ View $view;
         final /* synthetic */ RetroAchievementsGameDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass16(Ref.BooleanRef booleanRef, RetroAchievementsGameDialogFragment retroAchievementsGameDialogFragment, View view) {
             super(1);
             this.$firstTimeGameRecord = booleanRef;
@@ -1811,7 +1811,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(RetroAchievementsGameRecordEntity retroAchievementsGameRecordEntity) {
             if (!this.$firstTimeGameRecord.element && retroAchievementsGameRecordEntity != null) {
                 RetroAchievementsGameDialogFragment.onCreateView$updateRetroAchievementsGameRecord(this.this$0, this.$view, retroAchievementsGameRecordEntity);
@@ -1821,14 +1821,14 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$onCreateView$18, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$onCreateView$18, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsUserAwardEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass18 extends Lambda<Unit> implements Function1<List<? extends RetroAchievementsUserAwardEntity>, Unit> {
         final /* synthetic */ Ref.BooleanRef $firstTimeAward;
         final /* synthetic */ RetroAchievementsGameDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass18(Ref.BooleanRef booleanRef, RetroAchievementsGameDialogFragment retroAchievementsGameDialogFragment) {
             super(1);
             this.$firstTimeAward = booleanRef;
@@ -1841,7 +1841,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<RetroAchievementsUserAwardEntity> list) {
             if (!this.$firstTimeAward.element && list != null) {
                 ImageView imageView = this.this$0.awardIcon;
@@ -1856,13 +1856,13 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$onCreateView$19, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$onCreateView$19, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\t\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass19 extends Lambda<Unit> implements Function1<List<? extends Long>, Unit> {
         final /* synthetic */ RetroAchievementsGameRecordEntity $retroAchievementsGameRecord;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass19(RetroAchievementsGameRecordEntity retroAchievementsGameRecordEntity) {
             super(1);
             this.$retroAchievementsGameRecord = retroAchievementsGameRecordEntity;
@@ -1874,7 +1874,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<Long> list) {
             LinearProgressIndicator linearProgressIndicator = RetroAchievementsGameDialogFragment.this.progressBar;
             if (linearProgressIndicator == null) {
@@ -1885,14 +1885,14 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$onCreateView$20, reason: invalid class name */
-    /* JADX INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.RetroAchievementsGameDialogFragment$onCreateView$20, reason: invalid class name */
+    /* INFO: compiled from: RetroAchievementsGameDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u001c\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012:\u0010\u0002\u001a6\u0012\u0006\u0012\u0004\u0018\u00010\u0004\u0012\f\u0012\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0005 \u0007*\u001a\u0012\u0006\u0012\u0004\u0018\u00010\u0004\u0012\f\u0012\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0005\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\b"}, d2 = {"<anonymous>", "", "it", "Lkotlin/Pair;", "", "", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsAchievementRecordEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass20 extends Lambda<Unit> implements Function1<Pair<? extends Integer, ? extends List<? extends RetroAchievementsAchievementRecordEntity>>, Unit> {
         final /* synthetic */ Ref.BooleanRef $firstTime;
         final /* synthetic */ RetroAchievementsGameDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass20(Ref.BooleanRef booleanRef, RetroAchievementsGameDialogFragment retroAchievementsGameDialogFragment) {
             super(1);
             this.$firstTime = booleanRef;
@@ -1905,7 +1905,7 @@ public final class RetroAchievementsGameDialogFragment extends DaijishouDialogFr
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Pair<Integer, ? extends List<RetroAchievementsAchievementRecordEntity>> pair) {
             if (this.$firstTime.element) {
                 this.$firstTime.element = false;

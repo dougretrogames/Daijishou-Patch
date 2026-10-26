@@ -3,7 +3,7 @@ package com.bumptech.glide.load.resource.bytes;
 import com.bumptech.glide.load.data.DataRewinder;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ByteBufferRewinder implements DataRewinder<ByteBuffer> {
     private final ByteBuffer buffer;
 

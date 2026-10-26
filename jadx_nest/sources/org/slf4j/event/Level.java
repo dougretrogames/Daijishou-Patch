@@ -1,6 +1,6 @@
 package org.slf4j.event;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum Level {
     ERROR(40, "ERROR"),
     WARN(30, "WARN"),

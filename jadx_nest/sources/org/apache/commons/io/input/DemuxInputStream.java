@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import org.apache.commons.io.IOUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DemuxInputStream extends InputStream {
     private final InheritableThreadLocal<InputStream> inputStreamLocal = new InheritableThreadLocal<>();
 

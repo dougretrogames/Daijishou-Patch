@@ -4,7 +4,7 @@ import android.os.Build;
 import android.view.ScrollFeedbackProvider;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ScrollFeedbackProviderCompat {
     private final ScrollFeedbackProviderImpl mImpl;
 

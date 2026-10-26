@@ -12,7 +12,7 @@ import java.lang.reflect.Method;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class DrawableCompat {
     private static final String TAG = "DrawableCompat";
     private static Method sGetLayoutDirectionMethod;
@@ -88,7 +88,7 @@ public final class DrawableCompat {
         Api21Impl.inflate(drawable, resources, xmlPullParser, attributeSet, theme);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <T extends Drawable> T unwrap(Drawable drawable) {
         return drawable instanceof WrappedDrawable ? (T) ((WrappedDrawable) drawable).getWrappedDrawable() : drawable;
     }

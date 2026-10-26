@@ -1,7 +1,7 @@
 package androidx.core.content.res;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class ResourcesCompat$FontCallback$$ExternalSyntheticLambda1 implements Runnable {
     public final /* synthetic */ ResourcesCompat.FontCallback f$0;
     public final /* synthetic */ int f$1;

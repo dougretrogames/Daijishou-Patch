@@ -12,7 +12,7 @@ import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class JsonReader implements Closeable {
     static final int BUFFER_SIZE = 1024;
     private static final long MIN_INCOMPLETE_INTEGER = -922337203685477580L;
@@ -363,11 +363,11 @@ public class JsonReader implements Closeable {
         return i;
     }
 
-    /* JADX WARN: Code duplicated, block: B:103:0x00e9 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:14:0x0036  */
-    /* JADX WARN: Code duplicated, block: B:84:0x00d6 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:85:0x00d8  */
-    /* JADX WARN: Code duplicated, block: B:90:0x00df  */
+    /* WARN: Code duplicated, block: B:103:0x00e9 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:14:0x0036  */
+    /* WARN: Code duplicated, block: B:84:0x00d6 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:85:0x00d8  */
+    /* WARN: Code duplicated, block: B:90:0x00df  */
     private int peekNumber() throws IOException {
         char c;
         int i;
@@ -740,7 +740,7 @@ public class JsonReader implements Closeable {
         throw syntaxError("Unterminated string");
     }
 
-    /* JADX WARN: Failed to find 'out' block for switch in B:32:0x0044. Please report as an issue. */
+    /* WARN: Failed to find 'out' block for switch in B:32:0x0044. Please report as an issue. */
     private String nextUnquotedValue() throws IOException {
         StringBuilder sb = null;
         int i = 0;
@@ -923,7 +923,7 @@ public class JsonReader implements Closeable {
         this.in.close();
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
     public void skipValue() throws IOException {
         int i = 0;
         do {
@@ -1293,7 +1293,7 @@ public class JsonReader implements Closeable {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.stream.JsonReader$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.stream.JsonReader$1, reason: invalid class name */
     class AnonymousClass1 extends JsonReaderInternalAccess {
         AnonymousClass1() {
         }

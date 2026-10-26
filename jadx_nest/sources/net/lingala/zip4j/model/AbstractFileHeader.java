@@ -5,7 +5,7 @@ import net.lingala.zip4j.model.enums.CompressionMethod;
 import net.lingala.zip4j.model.enums.EncryptionMethod;
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractFileHeader extends ZipHeader {
     private AESExtraDataRecord aesExtraDataRecord;
     private CompressionMethod compressionMethod;

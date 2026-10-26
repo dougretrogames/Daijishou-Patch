@@ -16,7 +16,7 @@ import androidx.core.content.res.TypedArrayUtils;
 import androidx.core.view.ViewCompat;
 import org.xmlpull.v1.XmlPullParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ChangeTransform extends Transition {
     private static final String PROPNAME_INTERMEDIATE_MATRIX = "android:changeTransform:intermediateMatrix";
     private static final String PROPNAME_INTERMEDIATE_PARENT_MATRIX = "android:changeTransform:intermediateParentMatrix";
@@ -32,7 +32,7 @@ public class ChangeTransform extends Transition {
     private static final Property<PathAnimatorMatrix, PointF> TRANSLATIONS_PROPERTY = new AnonymousClass2(PointF.class, "translations");
     private static final boolean SUPPORTS_VIEW_REMOVAL_SUPPRESSION = true;
 
-    /* JADX INFO: renamed from: androidx.transition.ChangeTransform$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ChangeTransform$1, reason: invalid class name */
     class AnonymousClass1 extends Property<PathAnimatorMatrix, float[]> {
         @Override // android.util.Property
         public float[] get(PathAnimatorMatrix pathAnimatorMatrix) {
@@ -49,7 +49,7 @@ public class ChangeTransform extends Transition {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.ChangeTransform$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ChangeTransform$2, reason: invalid class name */
     class AnonymousClass2 extends Property<PathAnimatorMatrix, PointF> {
         @Override // android.util.Property
         public PointF get(PathAnimatorMatrix pathAnimatorMatrix) {

@@ -8,7 +8,7 @@ import org.chromium.support_lib_boundary.ProfileBoundaryInterface;
 import org.chromium.support_lib_boundary.ProfileStoreBoundaryInterface;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ProfileStoreImpl implements ProfileStore {
     private static ProfileStore sInstance;
     private final ProfileStoreBoundaryInterface mProfileStoreImpl;

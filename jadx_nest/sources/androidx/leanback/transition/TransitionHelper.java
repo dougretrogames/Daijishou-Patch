@@ -18,7 +18,7 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.animation.AnimationUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class TransitionHelper {
     public static final int FADE_IN = 1;
     public static final int FADE_OUT = 2;
@@ -172,7 +172,7 @@ public final class TransitionHelper {
         return new Fade(i);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.TransitionHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.TransitionHelper$1, reason: invalid class name */
     class AnonymousClass1 implements Transition.TransitionListener {
         final /* synthetic */ TransitionListener val$listener;
 
@@ -284,7 +284,7 @@ public final class TransitionHelper {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.TransitionHelper$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.TransitionHelper$2, reason: invalid class name */
     class AnonymousClass2 extends Transition.EpicenterCallback {
         final /* synthetic */ TransitionEpicenterCallback val$callback;
 

@@ -6,8 +6,8 @@ import org.apache.commons.io.filefilter.FileFileFilter;
 import org.apache.commons.io.filefilter.IOFileFilter;
 import org.apache.commons.io.function.IOFunction;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class FileUtils$$ExternalSyntheticLambda18 implements IOFunction {
     public final /* synthetic */ IOFileFilter f$0;
     public final /* synthetic */ IOFileFilter f$1;

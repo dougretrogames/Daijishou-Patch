@@ -6,7 +6,7 @@ import java.util.Objects;
 import java.util.function.IntPredicate;
 import java.util.function.LongPredicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @FunctionalInterface
 public interface IndexExtractor {
     boolean processIndices(IntPredicate intPredicate);
@@ -16,7 +16,7 @@ public interface IndexExtractor {
         return new IndexExtractor$$ExternalSyntheticLambda3(bitMapExtractor);
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.bloomfilter.IndexExtractor$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.bloomfilter.IndexExtractor$1, reason: invalid class name */
     class AnonymousClass1 implements LongPredicate {
         final /* synthetic */ IntPredicate val$consumer;
         int wordIdx;
@@ -46,7 +46,7 @@ public interface IndexExtractor {
         return bitMapExtractor.processBitMaps(new IndexExtractor$$ExternalSyntheticLambda0(anonymousClass1));
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.bloomfilter.IndexExtractor$2, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.bloomfilter.IndexExtractor$2, reason: invalid class name */
     class AnonymousClass2 implements IndexExtractor {
         final /* synthetic */ int[] val$values;
 
@@ -74,7 +74,7 @@ public interface IndexExtractor {
         return new AnonymousClass2(iArr);
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.bloomfilter.IndexExtractor$1Indices, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.bloomfilter.IndexExtractor$1Indices, reason: invalid class name */
     final class C1Indices {
         private int[] data = new int[32];
         private int size;
@@ -116,7 +116,7 @@ public interface IndexExtractor {
         return true;
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.bloomfilter.IndexExtractor$3, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.bloomfilter.IndexExtractor$3, reason: invalid class name */
     class AnonymousClass3 implements IndexExtractor {
         final /* synthetic */ IndexExtractor this$0;
         final /* synthetic */ BitSet val$bitSet;

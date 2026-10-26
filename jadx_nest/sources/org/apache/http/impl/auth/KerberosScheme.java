@@ -9,7 +9,7 @@ import org.apache.http.util.Args;
 import org.ietf.jgss.GSSException;
 import org.ietf.jgss.Oid;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class KerberosScheme extends GGSSchemeBase {
     private static final String KERBEROS_OID = "1.2.840.113554.1.2.2";
 

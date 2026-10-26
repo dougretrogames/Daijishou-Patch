@@ -20,7 +20,7 @@ import org.apache.commons.collections4.ResettableIterator;
 import org.apache.commons.collections4.iterators.EmptyIterator;
 import org.apache.commons.collections4.iterators.EmptyMapIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Flat3Map<K, V> implements IterableMap<K, V>, Serializable, Cloneable {
     private static final long serialVersionUID = -6701087419741928296L;
     private transient AbstractHashedMap<K, V> delegateMap;
@@ -591,9 +591,9 @@ public class Flat3Map<K, V> implements IterableMap<K, V>, Serializable, Cloneabl
         return new EntrySet(this);
     }
 
-    /* JADX WARN: Code duplicated, block: B:37:0x0063 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:38:0x0064  */
-    /* JADX WARN: Code duplicated, block: B:40:0x0072 A[RETURN] */
+    /* WARN: Code duplicated, block: B:37:0x0063 A[RETURN] */
+    /* WARN: Code duplicated, block: B:38:0x0064  */
+    /* WARN: Code duplicated, block: B:40:0x0072 A[RETURN] */
     @Override // java.util.Map
     public boolean equals(Object obj) {
         if (obj == this) {
@@ -756,7 +756,7 @@ public class Flat3Map<K, V> implements IterableMap<K, V>, Serializable, Cloneabl
         return new FlatMapIterator(this);
     }
 
-    /* JADX WARN: Code duplicated, block: B:23:0x002d  */
+    /* WARN: Code duplicated, block: B:23:0x002d  */
     @Override // java.util.Map, org.apache.commons.collections4.Put
     public V put(K k, V v) {
         AbstractHashedMap<K, V> abstractHashedMap = this.delegateMap;
@@ -862,7 +862,7 @@ public class Flat3Map<K, V> implements IterableMap<K, V>, Serializable, Cloneabl
         this.delegateMap.putAll(map);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void readObject(ObjectInputStream objectInputStream) throws ClassNotFoundException, IOException {
         objectInputStream.defaultReadObject();
         int i = objectInputStream.readInt();

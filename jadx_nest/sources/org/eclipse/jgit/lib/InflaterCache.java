@@ -2,7 +2,7 @@ package org.eclipse.jgit.lib;
 
 import java.util.zip.Inflater;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class InflaterCache {
     private static final int SZ = 4;
     private static final Inflater[] inflaterCache = new Inflater[4];

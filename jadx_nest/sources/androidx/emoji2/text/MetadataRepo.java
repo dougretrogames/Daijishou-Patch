@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MetadataRepo {
     private static final int DEFAULT_ROOT_SIZE = 1024;
     private static final String S_TRACE_CREATE_REPO = "EmojiCompat.MetadataRepo.create";

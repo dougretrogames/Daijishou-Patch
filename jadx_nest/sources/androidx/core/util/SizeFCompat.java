@@ -2,7 +2,7 @@ package androidx.core.util;
 
 import android.util.SizeF;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class SizeFCompat {
     private final float mHeight;
     private final float mWidth;

@@ -3,8 +3,8 @@ package com.google.android.gms.fido.u2f;
 import android.app.Activity;
 import android.content.IntentSender;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public interface U2fPendingIntent {
     boolean hasPendingIntent();

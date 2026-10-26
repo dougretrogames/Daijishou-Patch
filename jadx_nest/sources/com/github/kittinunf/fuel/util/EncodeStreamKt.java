@@ -6,18 +6,18 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: EncodeStream.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: EncodeStream.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0014\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a.\u0010\u0000\u001a\u00020\u0001*\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u001a\b\u0002\u0010\u0004\u001a\u0014\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00010\u0005¨\u0006\u0006"}, d2 = {"encode", "Ljava/io/OutputStream;", "encoding", "", "unsupported", "Lkotlin/Function2;", "fuel"}, k = 2, mv = {1, 4, 0})
 public final class EncodeStreamKt {
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.util.EncodeStreamKt$encode$1, reason: invalid class name */
-    /* JADX INFO: compiled from: EncodeStream.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.util.EncodeStreamKt$encode$1, reason: invalid class name */
+    /* INFO: compiled from: EncodeStream.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0001\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Ljava/io/OutputStream;", "<anonymous parameter 1>", "", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass1 extends Lambda implements Function2 {
         final /* synthetic */ String $encoding;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(String str) {
             super(2);
             this.$encoding = str;
@@ -38,19 +38,19 @@ public final class EncodeStreamKt {
         return encode(outputStream, str, function2);
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:22:0x0059, code lost:
+    /* WARN: Code restructure failed: missing block: B:22:0x0059, code lost:
     
         if (r0.equals(org.apache.http.protocol.HTTP.CHUNK_CODING) != false) goto L33;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:29:0x0072, code lost:
+    /* WARN: Code restructure failed: missing block: B:29:0x0072, code lost:
     
         if (r0.equals("") != false) goto L33;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:32:0x007b, code lost:
+    /* WARN: Code restructure failed: missing block: B:32:0x007b, code lost:
     
         if (r0.equals(org.apache.http.protocol.HTTP.IDENTITY_CODING) != false) goto L33;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:33:0x007d, code lost:
+    /* WARN: Code restructure failed: missing block: B:33:0x007d, code lost:
     
         return r3;
      */

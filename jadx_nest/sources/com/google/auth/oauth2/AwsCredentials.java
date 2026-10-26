@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AwsCredentials extends ExternalAccountCredentials {
     static final String AWS_METRICS_HEADER_VALUE = "aws";
     static final String DEFAULT_REGIONAL_CREDENTIAL_VERIFICATION_URL = "https://sts.{region}.amazonaws.com?Action=GetCallerIdentity&Version=2011-06-15";
@@ -256,7 +256,7 @@ public class AwsCredentials extends ExternalAccountCredentials {
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.auth.oauth2.ExternalAccountCredentials.Builder
         public Builder setEnvironmentProvider(EnvironmentProvider environmentProvider) {
             super.setEnvironmentProvider(environmentProvider);

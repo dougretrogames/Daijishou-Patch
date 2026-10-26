@@ -25,7 +25,7 @@ import org.eclipse.jgit.util.IO;
 import org.eclipse.jgit.util.MutableInteger;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UnpackedObject {
     private static final int BUFFER_SIZE = 8192;
 
@@ -219,12 +219,12 @@ public class UnpackedObject {
         return false;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.UnpackedObject$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.UnpackedObject$1, reason: invalid class name */
     class AnonymousClass1 extends InflaterInputStream {
         private long remaining;
         private final /* synthetic */ ObjectId val$id;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(InputStream inputStream, Inflater inflater, long j, ObjectId objectId) {
             super(inputStream, inflater);
             this.val$id = objectId;
@@ -287,7 +287,7 @@ public class UnpackedObject {
 
     private static final class LargeObject extends ObjectLoader {
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         private final ObjectId f123id;
         private final File path;
         private final long size;

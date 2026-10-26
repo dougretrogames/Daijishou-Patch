@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class PackageInfoCompat {
     public static long getLongVersionCode(PackageInfo packageInfo) {
         if (Build.VERSION.SDK_INT >= 28) {

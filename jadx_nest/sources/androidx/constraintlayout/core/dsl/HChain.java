@@ -1,6 +1,6 @@
 package androidx.constraintlayout.core.dsl;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class HChain extends Chain {
     private HAnchor mEnd;
     private HAnchor mLeft;

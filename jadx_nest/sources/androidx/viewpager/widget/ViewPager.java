@@ -44,7 +44,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ViewPager extends ViewGroup {
     private static final int CLOSE_ENOUGH = 2;
     private static final boolean DEBUG = false;
@@ -171,7 +171,7 @@ public class ViewPager extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager.widget.ViewPager$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager.widget.ViewPager$1, reason: invalid class name */
     static class AnonymousClass1 implements Comparator<ItemInfo> {
         AnonymousClass1() {
         }
@@ -182,7 +182,7 @@ public class ViewPager extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager.widget.ViewPager$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager.widget.ViewPager$2, reason: invalid class name */
     static class AnonymousClass2 implements Interpolator {
         @Override // android.animation.TimeInterpolator
         public float getInterpolation(float f) {
@@ -194,7 +194,7 @@ public class ViewPager extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager.widget.ViewPager$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager.widget.ViewPager$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         AnonymousClass3() {
         }
@@ -267,7 +267,7 @@ public class ViewPager extends ViewGroup {
         ViewCompat.setOnApplyWindowInsetsListener(this, new AnonymousClass4());
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager.widget.ViewPager$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager.widget.ViewPager$4, reason: invalid class name */
     class AnonymousClass4 implements OnApplyWindowInsetsListener {
         private final Rect mTempRect = new Rect();
 
@@ -705,7 +705,7 @@ public class ViewPager extends ViewGroup {
         populate(this.mCurItem);
     }
 
-    /* JADX WARN: Code duplicated, block: B:65:0x00fc A[PHI: r7 r10 r15
+    /* WARN: Code duplicated, block: B:65:0x00fc A[PHI: r7 r10 r15
   0x00fc: PHI (r7v6 int) = (r7v5 int), (r7v4 int), (r7v9 int) binds: [B:63:0x00f1, B:60:0x00db, B:54:0x00c5] A[DONT_GENERATE, DONT_INLINE]
   0x00fc: PHI (r10v9 int) = (r10v1 int), (r10v8 int), (r10v12 int) binds: [B:63:0x00f1, B:60:0x00db, B:54:0x00c5] A[DONT_GENERATE, DONT_INLINE]
   0x00fc: PHI (r15v7 float) = (r15v5 float), (r15v6 float), (r15v4 float) binds: [B:63:0x00f1, B:60:0x00db, B:54:0x00c5] A[DONT_GENERATE, DONT_INLINE]] */
@@ -1009,12 +1009,12 @@ public class ViewPager extends ViewGroup {
             return "FragmentPager.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " position=" + this.position + "}";
         }
 
-        /* JADX INFO: renamed from: androidx.viewpager.widget.ViewPager$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.viewpager.widget.ViewPager$SavedState$1, reason: invalid class name */
         static class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);
@@ -1242,12 +1242,12 @@ public class ViewPager extends ViewGroup {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:22:0x0073  */
-    /* JADX WARN: Code duplicated, block: B:24:0x0077  */
-    /* JADX WARN: Code duplicated, block: B:26:0x007b  */
-    /* JADX WARN: Code duplicated, block: B:27:0x007d  */
-    /* JADX WARN: Code duplicated, block: B:28:0x008a  */
-    /* JADX WARN: Code duplicated, block: B:29:0x0090  */
+    /* WARN: Code duplicated, block: B:22:0x0073  */
+    /* WARN: Code duplicated, block: B:24:0x0077  */
+    /* WARN: Code duplicated, block: B:26:0x007b  */
+    /* WARN: Code duplicated, block: B:27:0x007d  */
+    /* WARN: Code duplicated, block: B:28:0x008a  */
+    /* WARN: Code duplicated, block: B:29:0x0090  */
     @Override // android.view.ViewGroup, android.view.View
     protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
         boolean z2;
@@ -1416,7 +1416,7 @@ public class ViewPager extends ViewGroup {
         throw new IllegalStateException("onPageScrolled did not call superclass implementation");
     }
 
-    /* JADX WARN: Code duplicated, block: B:22:0x0064  */
+    /* WARN: Code duplicated, block: B:22:0x0064  */
     protected void onPageScrolled(int i, float f, int i2) {
         int iMax;
         int width;
@@ -1665,7 +1665,7 @@ public class ViewPager extends ViewGroup {
         return this.mIsBeingDragged;
     }
 
-    /* JADX WARN: Code duplicated, block: B:53:0x00dc  */
+    /* WARN: Code duplicated, block: B:53:0x00dc  */
     @Override // android.view.View
     public boolean onTouchEvent(MotionEvent motionEvent) {
         PagerAdapter pagerAdapter;
@@ -2121,7 +2121,7 @@ public class ViewPager extends ViewGroup {
         return false;
     }
 
-    /* JADX WARN: Code duplicated, block: B:40:0x00be  */
+    /* WARN: Code duplicated, block: B:40:0x00be  */
     public boolean arrowScroll(int i) {
         boolean zPageLeft;
         View viewFindFocus = findFocus();

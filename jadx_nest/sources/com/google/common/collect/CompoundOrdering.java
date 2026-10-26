@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class CompoundOrdering<T> extends Ordering<T> implements Serializable {
     private static final long serialVersionUID = 0;

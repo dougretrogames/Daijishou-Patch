@@ -4,7 +4,7 @@ import com.google.common.base.Ascii;
 import java.io.IOException;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 final class ArrayDecoders {
     private ArrayDecoders() {
@@ -782,7 +782,7 @@ final class ArrayDecoders {
         return position;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.ArrayDecoders$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.ArrayDecoders$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$FieldType;
 

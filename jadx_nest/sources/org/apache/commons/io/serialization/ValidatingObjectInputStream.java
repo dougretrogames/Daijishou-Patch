@@ -8,7 +8,7 @@ import java.io.ObjectStreamClass;
 import java.util.regex.Pattern;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ValidatingObjectInputStream extends ObjectInputStream {
     private final ObjectStreamClassPredicate predicate;
 

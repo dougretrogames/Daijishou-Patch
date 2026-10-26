@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.List;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Throwables {
     private static final String JAVA_LANG_ACCESS_CLASSNAME = "sun.misc.JavaLangAccess";
@@ -29,7 +29,7 @@ public final class Throwables {
     private Throwables() {
     }
 
-    /* JADX INFO: Thrown type has an unknown type hierarchy: X extends java.lang.Throwable */
+    /* INFO: Thrown type has an unknown type hierarchy: X extends java.lang.Throwable */
     public static <X extends Throwable> void throwIfInstanceOf(Throwable throwable, Class<X> declaredType) throws Throwable {
         Preconditions.checkNotNull(throwable);
         if (declaredType.isInstance(throwable)) {
@@ -156,7 +156,7 @@ public final class Throwables {
         return new AnonymousClass1(t);
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Throwables$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Throwables$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractList<StackTraceElement> {
         final /* synthetic */ Throwable val$t;
 
@@ -175,7 +175,7 @@ public final class Throwables {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Object invokeAccessibleNonThrowingMethod(Method method, Object receiver, Object... params) {
         try {
             return method.invoke(receiver, params);

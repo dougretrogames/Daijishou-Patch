@@ -1,6 +1,6 @@
 package com.google.common.hash;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 interface LongAddable {
     void add(long x);

@@ -2,7 +2,7 @@ package io.opencensus.trace.config;
 
 import io.opencensus.trace.Sampler;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_TraceParams extends TraceParams {
     private final int maxNumberOfAnnotations;
     private final int maxNumberOfAttributes;

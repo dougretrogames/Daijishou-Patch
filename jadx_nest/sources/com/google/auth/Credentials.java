@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class Credentials implements Serializable {
     public static final String GOOGLE_DEFAULT_UNIVERSE = "googleapis.com";
     private static final long serialVersionUID = 808575179767517313L;
@@ -30,7 +30,7 @@ public abstract class Credentials implements Serializable {
         return getRequestMetadata(null);
     }
 
-    /* JADX INFO: renamed from: com.google.auth.Credentials$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.auth.Credentials$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ RequestMetadataCallback val$callback;
         final /* synthetic */ URI val$uri;

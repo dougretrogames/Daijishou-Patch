@@ -4,7 +4,7 @@ import android.os.Handler;
 import android.os.Looper;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 final class AndroidMainExecutor implements Executor {
     private final Handler handler = new Handler(Looper.getMainLooper());
 

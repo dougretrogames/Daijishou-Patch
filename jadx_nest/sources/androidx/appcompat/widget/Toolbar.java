@@ -48,7 +48,7 @@ import java.util.List;
 import java.util.Objects;
 import kotlin.time.DurationKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Toolbar extends ViewGroup implements MenuHost {
     private static final String TAG = "Toolbar";
     private MenuPresenter.Callback mActionMenuPresenterCallback;
@@ -178,7 +178,7 @@ public class Toolbar extends ViewGroup implements MenuHost {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.Toolbar$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.Toolbar$1, reason: invalid class name */
     class AnonymousClass1 implements ActionMenuView.OnMenuItemClickListener {
         AnonymousClass1() {
         }
@@ -195,7 +195,7 @@ public class Toolbar extends ViewGroup implements MenuHost {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.Toolbar$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.Toolbar$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -803,7 +803,7 @@ public class Toolbar extends ViewGroup implements MenuHost {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.Toolbar$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.Toolbar$3, reason: invalid class name */
     class AnonymousClass3 implements MenuBuilder.Callback {
         AnonymousClass3() {
         }
@@ -969,7 +969,7 @@ public class Toolbar extends ViewGroup implements MenuHost {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.Toolbar$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.Toolbar$4, reason: invalid class name */
     class AnonymousClass4 implements View.OnClickListener {
         AnonymousClass4() {
         }
@@ -1213,58 +1213,58 @@ public class Toolbar extends ViewGroup implements MenuHost {
         setMeasuredDimension(View.resolveSizeAndState(Math.max(i5 + iMax2 + getPaddingLeft() + getPaddingRight(), getSuggestedMinimumWidth()), i, (-16777216) & iCombineMeasuredStates2), shouldCollapse() ? 0 : View.resolveSizeAndState(Math.max(Math.max(iMax, measuredHeight) + getPaddingTop() + getPaddingBottom(), getSuggestedMinimumHeight()), i2, iCombineMeasuredStates2 << 16));
     }
 
-    /* JADX WARN: Code duplicated, block: B:101:0x0288  */
-    /* JADX WARN: Code duplicated, block: B:104:0x029c A[LOOP:0: B:103:0x029a->B:104:0x029c, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:107:0x02ba A[LOOP:1: B:106:0x02b8->B:107:0x02ba, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:111:0x02e2 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:112:0x02e4  */
-    /* JADX WARN: Code duplicated, block: B:113:0x02e8  */
-    /* JADX WARN: Code duplicated, block: B:116:0x02f1 A[LOOP:2: B:115:0x02ef->B:116:0x02f1, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:19:0x005f A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:20:0x0061  */
-    /* JADX WARN: Code duplicated, block: B:21:0x0068  */
-    /* JADX WARN: Code duplicated, block: B:24:0x0076 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:25:0x0078  */
-    /* JADX WARN: Code duplicated, block: B:26:0x007f  */
-    /* JADX WARN: Code duplicated, block: B:29:0x00b3 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:30:0x00b5  */
-    /* JADX WARN: Code duplicated, block: B:31:0x00bc  */
-    /* JADX WARN: Code duplicated, block: B:34:0x00ca A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:35:0x00cc  */
-    /* JADX WARN: Code duplicated, block: B:36:0x00d3  */
-    /* JADX WARN: Code duplicated, block: B:39:0x00e7  */
-    /* JADX WARN: Code duplicated, block: B:40:0x00fe  */
-    /* JADX WARN: Code duplicated, block: B:42:0x0103  */
-    /* JADX WARN: Code duplicated, block: B:43:0x011c  */
-    /* JADX WARN: Code duplicated, block: B:48:0x0126 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:49:0x0128  */
-    /* JADX WARN: Code duplicated, block: B:50:0x012b  */
-    /* JADX WARN: Code duplicated, block: B:52:0x012f  */
-    /* JADX WARN: Code duplicated, block: B:53:0x0132  */
-    /* JADX WARN: Code duplicated, block: B:56:0x0144  */
-    /* JADX WARN: Code duplicated, block: B:58:0x014c A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:65:0x0165  */
-    /* JADX WARN: Code duplicated, block: B:67:0x0169  */
-    /* JADX WARN: Code duplicated, block: B:69:0x017a  */
-    /* JADX WARN: Code duplicated, block: B:70:0x0180  */
-    /* JADX WARN: Code duplicated, block: B:72:0x018c  */
-    /* JADX WARN: Code duplicated, block: B:74:0x019a  */
-    /* JADX WARN: Code duplicated, block: B:75:0x01a4  */
-    /* JADX WARN: Code duplicated, block: B:77:0x01b1 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:78:0x01b3  */
-    /* JADX WARN: Code duplicated, block: B:79:0x01b6  */
-    /* JADX WARN: Code duplicated, block: B:82:0x01c9  */
-    /* JADX WARN: Code duplicated, block: B:83:0x01ed  */
-    /* JADX WARN: Code duplicated, block: B:85:0x01f0  */
-    /* JADX WARN: Code duplicated, block: B:86:0x0216  */
-    /* JADX WARN: Code duplicated, block: B:88:0x0219  */
-    /* JADX WARN: Code duplicated, block: B:90:0x0222 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:91:0x0224  */
-    /* JADX WARN: Code duplicated, block: B:92:0x0227  */
-    /* JADX WARN: Code duplicated, block: B:95:0x023b  */
-    /* JADX WARN: Code duplicated, block: B:96:0x025e  */
-    /* JADX WARN: Code duplicated, block: B:98:0x0261  */
-    /* JADX WARN: Code duplicated, block: B:99:0x0285  */
+    /* WARN: Code duplicated, block: B:101:0x0288  */
+    /* WARN: Code duplicated, block: B:104:0x029c A[LOOP:0: B:103:0x029a->B:104:0x029c, LOOP_END] */
+    /* WARN: Code duplicated, block: B:107:0x02ba A[LOOP:1: B:106:0x02b8->B:107:0x02ba, LOOP_END] */
+    /* WARN: Code duplicated, block: B:111:0x02e2 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:112:0x02e4  */
+    /* WARN: Code duplicated, block: B:113:0x02e8  */
+    /* WARN: Code duplicated, block: B:116:0x02f1 A[LOOP:2: B:115:0x02ef->B:116:0x02f1, LOOP_END] */
+    /* WARN: Code duplicated, block: B:19:0x005f A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:20:0x0061  */
+    /* WARN: Code duplicated, block: B:21:0x0068  */
+    /* WARN: Code duplicated, block: B:24:0x0076 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:25:0x0078  */
+    /* WARN: Code duplicated, block: B:26:0x007f  */
+    /* WARN: Code duplicated, block: B:29:0x00b3 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:30:0x00b5  */
+    /* WARN: Code duplicated, block: B:31:0x00bc  */
+    /* WARN: Code duplicated, block: B:34:0x00ca A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:35:0x00cc  */
+    /* WARN: Code duplicated, block: B:36:0x00d3  */
+    /* WARN: Code duplicated, block: B:39:0x00e7  */
+    /* WARN: Code duplicated, block: B:40:0x00fe  */
+    /* WARN: Code duplicated, block: B:42:0x0103  */
+    /* WARN: Code duplicated, block: B:43:0x011c  */
+    /* WARN: Code duplicated, block: B:48:0x0126 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:49:0x0128  */
+    /* WARN: Code duplicated, block: B:50:0x012b  */
+    /* WARN: Code duplicated, block: B:52:0x012f  */
+    /* WARN: Code duplicated, block: B:53:0x0132  */
+    /* WARN: Code duplicated, block: B:56:0x0144  */
+    /* WARN: Code duplicated, block: B:58:0x014c A[ADDED_TO_REGION] */
+    /* WARN: Code duplicated, block: B:65:0x0165  */
+    /* WARN: Code duplicated, block: B:67:0x0169  */
+    /* WARN: Code duplicated, block: B:69:0x017a  */
+    /* WARN: Code duplicated, block: B:70:0x0180  */
+    /* WARN: Code duplicated, block: B:72:0x018c  */
+    /* WARN: Code duplicated, block: B:74:0x019a  */
+    /* WARN: Code duplicated, block: B:75:0x01a4  */
+    /* WARN: Code duplicated, block: B:77:0x01b1 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:78:0x01b3  */
+    /* WARN: Code duplicated, block: B:79:0x01b6  */
+    /* WARN: Code duplicated, block: B:82:0x01c9  */
+    /* WARN: Code duplicated, block: B:83:0x01ed  */
+    /* WARN: Code duplicated, block: B:85:0x01f0  */
+    /* WARN: Code duplicated, block: B:86:0x0216  */
+    /* WARN: Code duplicated, block: B:88:0x0219  */
+    /* WARN: Code duplicated, block: B:90:0x0222 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:91:0x0224  */
+    /* WARN: Code duplicated, block: B:92:0x0227  */
+    /* WARN: Code duplicated, block: B:95:0x023b  */
+    /* WARN: Code duplicated, block: B:96:0x025e  */
+    /* WARN: Code duplicated, block: B:98:0x0261  */
+    /* WARN: Code duplicated, block: B:99:0x0285  */
     @Override // android.view.ViewGroup, android.view.View
     protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
         int iLayoutChildLeft;
@@ -1907,7 +1907,7 @@ public class Toolbar extends ViewGroup implements MenuHost {
         return new LayoutParams(getContext(), attributeSet);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup
     public LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
         if (layoutParams instanceof LayoutParams) {
@@ -1922,7 +1922,7 @@ public class Toolbar extends ViewGroup implements MenuHost {
         return new LayoutParams(layoutParams);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup
     public LayoutParams generateDefaultLayoutParams() {
         return new LayoutParams(-2, -2);
@@ -2148,12 +2148,12 @@ public class Toolbar extends ViewGroup implements MenuHost {
             parcel.writeInt(this.isOverflowOpen ? 1 : 0);
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.Toolbar$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.widget.Toolbar$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);

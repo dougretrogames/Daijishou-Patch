@@ -3,7 +3,7 @@ package com.google.common.collect;
 import java.io.Serializable;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class Count implements Serializable {
     private int value;

@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Objects;
 import java.util.function.BinaryOperator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @FunctionalInterface
 public interface IOBinaryOperator<T> extends IOBiFunction<T, T, T> {
     static <T> IOBinaryOperator<T> maxBy(IOComparator<? super T> iOComparator) {

@@ -7,12 +7,12 @@ import android.util.Log;
 import java.util.concurrent.Executor;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class MessageThreadUtil<T> implements ThreadUtil<T> {
     MessageThreadUtil() {
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.MessageThreadUtil$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.MessageThreadUtil$1, reason: invalid class name */
     class AnonymousClass1 implements ThreadUtil.MainThreadCallback<T> {
         static final int ADD_TILE = 2;
         static final int REMOVE_TILE = 3;
@@ -46,7 +46,7 @@ class MessageThreadUtil<T> implements ThreadUtil<T> {
             this.mMainThreadHandler.post(this.mMainThreadRunnable);
         }
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.MessageThreadUtil$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.MessageThreadUtil$1$1, reason: invalid class name and collision with other inner class name */
         class RunnableC00231 implements Runnable {
             RunnableC00231() {
             }
@@ -76,7 +76,7 @@ class MessageThreadUtil<T> implements ThreadUtil<T> {
         return new AnonymousClass1(mainThreadCallback);
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.MessageThreadUtil$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.MessageThreadUtil$2, reason: invalid class name */
     class AnonymousClass2 implements ThreadUtil.BackgroundCallback<T> {
         static final int LOAD_TILE = 3;
         static final int RECYCLE_TILE = 4;
@@ -128,7 +128,7 @@ class MessageThreadUtil<T> implements ThreadUtil<T> {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.MessageThreadUtil$2$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.MessageThreadUtil$2$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             AnonymousClass1() {
             }

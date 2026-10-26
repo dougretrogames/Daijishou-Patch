@@ -2,7 +2,7 @@ package com.googlecode.javaewah.symmetric;
 
 import com.googlecode.javaewah.IteratingBufferedRunningLengthWord;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class EWAHPointer implements Comparable<EWAHPointer> {
     private boolean dead;
     private int endrun;

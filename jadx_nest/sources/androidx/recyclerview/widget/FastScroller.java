@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.StateListDrawable;
 import android.view.MotionEvent;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class FastScroller extends RecyclerView.ItemDecoration implements RecyclerView.OnItemTouchListener {
     private static final int ANIMATION_STATE_FADING_IN = 1;
     private static final int ANIMATION_STATE_FADING_OUT = 3;
@@ -62,7 +62,7 @@ class FastScroller extends RecyclerView.ItemDecoration implements RecyclerView.O
     public void onRequestDisallowInterceptTouchEvent(boolean z) {
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.FastScroller$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.FastScroller$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -73,7 +73,7 @@ class FastScroller extends RecyclerView.ItemDecoration implements RecyclerView.O
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.FastScroller$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.FastScroller$2, reason: invalid class name */
     class AnonymousClass2 extends RecyclerView.OnScrollListener {
         AnonymousClass2() {
         }

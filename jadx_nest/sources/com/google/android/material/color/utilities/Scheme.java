@@ -3,7 +3,7 @@ package com.google.android.material.color.utilities;
 import com.google.errorprone.annotations.CheckReturnValue;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @CheckReturnValue
 public class Scheme {
     private int background;

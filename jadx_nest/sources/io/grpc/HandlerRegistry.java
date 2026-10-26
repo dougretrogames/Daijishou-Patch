@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class HandlerRegistry {
     @Nullable
     public abstract ServerMethodDefinition<?, ?> lookupMethod(String str, @Nullable String str2);

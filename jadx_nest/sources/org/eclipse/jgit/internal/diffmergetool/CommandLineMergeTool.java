@@ -1,6 +1,6 @@
 package org.eclipse.jgit.internal.diffmergetool;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum CommandLineMergeTool {
     araxis("compare", "-wait -merge -3 -a1 \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"", "-wait -2 \"$LOCAL\" \"$REMOTE\" \"$MERGED\"", false),
     bc("bcomp", "\"$LOCAL\" \"$REMOTE\" \"$BASE\" --mergeoutput=\"$MERGED\"", "\"$LOCAL\" \"$REMOTE\" --mergeoutput=\"$MERGED\"", false),
@@ -34,7 +34,7 @@ public enum CommandLineMergeTool {
     private final String parametersWithoutBase;
     private final String path;
 
-    /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+    /* INFO: renamed from: values, reason: to resolve conflict with enum method */
     public static CommandLineMergeTool[] valuesCustom() {
         CommandLineMergeTool[] commandLineMergeToolArrValuesCustom = values();
         int length = commandLineMergeToolArrValuesCustom.length;

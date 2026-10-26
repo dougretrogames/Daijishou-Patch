@@ -2,7 +2,7 @@ package org.apache.commons.io.output;
 
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CloseShieldOutputStream extends ProxyOutputStream {
     public static CloseShieldOutputStream wrap(OutputStream outputStream) {
         return new CloseShieldOutputStream(outputStream);

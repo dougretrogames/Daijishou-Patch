@@ -51,8 +51,8 @@ import org.apache.http.message.TokenParser;
 import org.apache.http.protocol.HTTP;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: DefaultRequest.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: DefaultRequest.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u008e\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010%\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0014\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0012\n\u0002\b\f\n\u0002\u0010\u001e\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0000\n\u0002\u0010$\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0000\b\u0086\b\u0018\u00002\u00020\u0001B\u0083\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007\u0012 \b\u0002\u0010\b\u001a\u001a\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\f0\n0\tj\u0002`\r\u0012\b\b\u0002\u0010\u000e\u001a\u00020\u000f\u0012\u0018\b\u0002\u0010\u0010\u001a\u0012\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00010\u0011j\u0002`\u0012\u0012\u001c\b\u0002\u0010\u0013\u001a\u0016\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u0014\u0012\u0004\u0012\u00020\f0\u0011j\u0002`\u0015¢\u0006\u0002\u0010\u0016J\u0010\u00104\u001a\u00020\u00012\u0006\u00104\u001a\u000205H\u0016J9\u00106\u001a\u00020\u00012*\u00107\u001a\u0016\u0012\u0012\b\u0001\u0012\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\f0\n08\"\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\f0\nH\u0016¢\u0006\u0002\u00109J\u0018\u00106\u001a\u00020\u00012\u0006\u0010:\u001a\u00020\u000b2\u0006\u0010;\u001a\u00020\fH\u0016J)\u00106\u001a\u00020\u00012\u0006\u0010:\u001a\u00020\u000b2\u0012\u0010<\u001a\n\u0012\u0006\b\u0001\u0012\u00020\f08\"\u00020\fH\u0016¢\u0006\u0002\u0010=J\u0010\u0010\u001b\u001a\u00020\u00012\u0006\u0010\u001b\u001a\u00020\u000fH\u0016J@\u0010\u001b\u001a\u00020\u00012\u0010\u0010>\u001a\f\u0012\u0004\u0012\u00020@0?j\u0002`A2\u0014\u0010B\u001a\u0010\u0012\u0004\u0012\u00020C\u0018\u00010?j\u0004\u0018\u0001`D2\u0006\u0010E\u001a\u00020F2\u0006\u0010G\u001a\u000205H\u0016J\u0018\u0010\u001b\u001a\u00020\u00012\u0006\u0010H\u001a\u00020I2\u0006\u0010E\u001a\u00020FH\u0016J6\u0010\u001b\u001a\u00020\u00012\u0006\u0010J\u001a\u00020@2\u0014\u0010B\u001a\u0010\u0012\u0004\u0012\u00020C\u0018\u00010?j\u0004\u0018\u0001`D2\u0006\u0010E\u001a\u00020F2\u0006\u0010G\u001a\u000205H\u0016J\u0018\u0010\u001b\u001a\u00020\u00012\u0006\u0010K\u001a\u00020L2\u0006\u0010E\u001a\u00020FH\u0016J\u0018\u0010\u001b\u001a\u00020\u00012\u0006\u0010\u001b\u001a\u00020\u000b2\u0006\u0010E\u001a\u00020FH\u0016J\t\u0010M\u001a\u00020\u0003HÆ\u0003J\t\u0010N\u001a\u00020\u0005HÆ\u0003J\t\u0010O\u001a\u00020\u0007HÆ\u0003J!\u0010P\u001a\u001a\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\f0\n0\tj\u0002`\rHÆ\u0003J\u000e\u0010Q\u001a\u00020\u000fHÀ\u0003¢\u0006\u0002\bRJ\u0019\u0010S\u001a\u0012\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00010\u0011j\u0002`\u0012HÆ\u0003J\u001d\u0010T\u001a\u0016\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u0014\u0012\u0004\u0012\u00020\f0\u0011j\u0002`\u0015HÂ\u0003J\u008b\u0001\u0010U\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072 \b\u0002\u0010\b\u001a\u001a\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\f0\n0\tj\u0002`\r2\b\b\u0002\u0010\u000e\u001a\u00020\u000f2\u0018\b\u0002\u0010\u0010\u001a\u0012\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00010\u0011j\u0002`\u00122\u001c\b\u0002\u0010\u0013\u001a\u0016\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u0014\u0012\u0004\u0012\u00020\f0\u0011j\u0002`\u0015HÆ\u0001J\u0013\u0010V\u001a\u0002052\b\u0010W\u001a\u0004\u0018\u00010\fHÖ\u0003J\u001b\u0010X\u001a\f\u0012\u0004\u0012\u00020\u000b0Yj\u0002`Z2\u0006\u0010:\u001a\u00020\u000bH\u0096\u0002J'\u0010[\u001a\u0004\u0018\u0001H\\\"\b\b\u0000\u0010\\*\u00020\f2\f\u0010]\u001a\b\u0012\u0004\u0012\u0002H\\0\u0014H\u0016¢\u0006\u0002\u0010^J\t\u0010_\u001a\u00020`HÖ\u0001J9\u0010:\u001a\u00020\u00012*\u00107\u001a\u0016\u0012\u0012\b\u0001\u0012\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\f0\n08\"\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\f0\nH\u0016¢\u0006\u0002\u00109J\u001a\u0010:\u001a\f\u0012\u0004\u0012\u00020\u000b0Yj\u0002`Z2\u0006\u0010:\u001a\u00020\u000bH\u0016J\u0018\u0010:\u001a\u00020\u00012\u0006\u0010:\u001a\u00020\u000b2\u0006\u0010;\u001a\u00020\fH\u0016J)\u0010:\u001a\u00020\u00012\u0006\u0010:\u001a\u00020\u000b2\u0012\u0010<\u001a\n\u0012\u0006\b\u0001\u0012\u00020\f08\"\u00020\fH\u0016¢\u0006\u0002\u0010=J\u001c\u0010:\u001a\u00020\u00012\u0006\u0010:\u001a\u00020\u000b2\n\u0010<\u001a\u0006\u0012\u0002\b\u00030YH\u0016J\u001c\u0010:\u001a\u00020\u00012\u0012\u0010a\u001a\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\f0bH\u0016J \u0010c\u001a\u00020\u00012\u0016\u0010c\u001a\u0012\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020e0dj\u0002`fH\u0016JD\u0010g\u001a\u00020\u00012:\u0010h\u001a6\u0012\u0013\u0012\u00110C¢\u0006\f\bj\u0012\b\bk\u0012\u0004\b\b(l\u0012\u0013\u0012\u00110C¢\u0006\f\bj\u0012\b\bk\u0012\u0004\b\b(m\u0012\u0004\u0012\u00020e0ij\u0002`nH\u0016J0\u0010o\u001a*\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020q\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020L\u0012\u0004\u0012\u00020s0r0pj\b\u0012\u0004\u0012\u00020L`tH\u0016J\u0016\u0010o\u001a\u00020u2\f\u0010h\u001a\b\u0012\u0004\u0012\u00020L0vH\u0016J\u0016\u0010o\u001a\u00020u2\f\u0010h\u001a\b\u0012\u0004\u0012\u00020L0wH\u0016J>\u0010o\u001a\u00020u24\u0010h\u001a0\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020q\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020L\u0012\u0004\u0012\u00020s0r\u0012\u0004\u0012\u00020e0xj\b\u0012\u0004\u0012\u00020L`yH\u0016J2\u0010o\u001a\u00020u2(\u0010h\u001a$\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020L\u0012\u0004\u0012\u00020s0r\u0012\u0004\u0012\u00020e0dj\b\u0012\u0004\u0012\u00020L`zH\u0016JH\u0010{\u001a*\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020q\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\\\u0012\u0004\u0012\u00020s0r0pj\b\u0012\u0004\u0012\u0002H\\`t\"\b\b\u0000\u0010\\*\u00020\f2\f\u0010|\u001a\b\u0012\u0004\u0012\u0002H\\0}H\u0016J.\u0010{\u001a\u00020u\"\b\b\u0000\u0010\\*\u00020\f2\f\u0010|\u001a\b\u0012\u0004\u0012\u0002H\\0}2\f\u0010h\u001a\b\u0012\u0004\u0012\u0002H\\0vH\u0016J.\u0010{\u001a\u00020u\"\b\b\u0000\u0010\\*\u00020\f2\f\u0010|\u001a\b\u0012\u0004\u0012\u0002H\\0}2\f\u0010h\u001a\b\u0012\u0004\u0012\u0002H\\0wH\u0016JV\u0010{\u001a\u00020u\"\b\b\u0000\u0010\\*\u00020\f2\f\u0010|\u001a\b\u0012\u0004\u0012\u0002H\\0}24\u0010h\u001a0\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020q\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\\\u0012\u0004\u0012\u00020s0r\u0012\u0004\u0012\u00020e0xj\b\u0012\u0004\u0012\u0002H\\`yH\u0016JJ\u0010{\u001a\u00020u\"\b\b\u0000\u0010\\*\u00020\f2\f\u0010|\u001a\b\u0012\u0004\u0012\u0002H\\0}2(\u0010h\u001a$\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\\\u0012\u0004\u0012\u00020s0r\u0012\u0004\u0012\u00020e0dj\b\u0012\u0004\u0012\u0002H\\`zH\u0016JD\u0010~\u001a\u00020\u00012:\u0010h\u001a6\u0012\u0013\u0012\u00110C¢\u0006\f\bj\u0012\b\bk\u0012\u0004\b\b(l\u0012\u0013\u0012\u00110C¢\u0006\f\bj\u0012\b\bk\u0012\u0004\b\b(m\u0012\u0004\u0012\u00020e0ij\u0002`nH\u0016J0\u0010\u007f\u001a*\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020q\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020s0r0pj\b\u0012\u0004\u0012\u00020\u000b`tH\u0016J\u0016\u0010\u007f\u001a\u00020u2\f\u0010h\u001a\b\u0012\u0004\u0012\u00020\u000b0vH\u0016J\u0016\u0010\u007f\u001a\u00020u2\f\u0010h\u001a\b\u0012\u0004\u0012\u00020\u000b0wH\u0016J>\u0010\u007f\u001a\u00020u24\u0010h\u001a0\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020q\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020s0r\u0012\u0004\u0012\u00020e0xj\b\u0012\u0004\u0012\u00020\u000b`yH\u0016J2\u0010\u007f\u001a\u00020u2(\u0010h\u001a$\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020s0r\u0012\u0004\u0012\u00020e0dj\b\u0012\u0004\u0012\u00020\u000b`zH\u0016J8\u0010\u007f\u001a*\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020q\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020s0r0pj\b\u0012\u0004\u0012\u00020\u000b`t2\u0006\u0010E\u001a\u00020FH\u0016J\u001e\u0010\u007f\u001a\u00020u2\u0006\u0010E\u001a\u00020F2\f\u0010h\u001a\b\u0012\u0004\u0012\u00020\u000b0vH\u0016J\u001e\u0010\u007f\u001a\u00020u2\u0006\u0010E\u001a\u00020F2\f\u0010h\u001a\b\u0012\u0004\u0012\u00020\u000b0wH\u0016JF\u0010\u007f\u001a\u00020u2\u0006\u0010E\u001a\u00020F24\u0010h\u001a0\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020q\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020s0r\u0012\u0004\u0012\u00020e0xj\b\u0012\u0004\u0012\u00020\u000b`yH\u0016J:\u0010\u007f\u001a\u00020u2\u0006\u0010E\u001a\u00020F2(\u0010h\u001a$\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020s0r\u0012\u0004\u0012\u00020e0dj\b\u0012\u0004\u0012\u00020\u000b`zH\u0016J\u001a\u0010\u0080\u0001\u001a\u00020\u00012\u0006\u0010:\u001a\u00020\u000b2\u0006\u0010;\u001a\u00020\fH\u0096\u0002J\u001e\u0010\u0080\u0001\u001a\u00020\u00012\u0006\u0010:\u001a\u00020\u000b2\n\u0010<\u001a\u0006\u0012\u0002\b\u00030YH\u0096\u0002J\u0012\u0010\u0081\u0001\u001a\u00020\u00012\u0007\u0010\u0082\u0001\u001a\u00020\fH\u0016J\u0012\u0010\u0083\u0001\u001a\u00020\u00012\u0007\u0010\u0083\u0001\u001a\u00020`H\u0016J\u0012\u0010\u0084\u0001\u001a\u00020\u00012\u0007\u0010\u0083\u0001\u001a\u00020`H\u0016J\t\u0010\u0085\u0001\u001a\u00020\u000bH\u0016J\u0012\u0010\u0086\u0001\u001a\u00020\u00012\u0007\u0010\u0086\u0001\u001a\u000205H\u0016J#\u0010\u0087\u0001\u001a\u00020\u00012\u0018\u0010\u0088\u0001\u001a\u0013\u0012\u0004\u0012\u00020q\u0012\u0004\u0012\u0002050dj\u0003`\u0089\u0001H\u0016R\u001a\u0010\u000e\u001a\u00020\u000fX\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR\u0014\u0010\u001b\u001a\u00020\u000f8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u001c\u0010\u0018R$\u0010\u0010\u001a\u0012\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u00010\u0011j\u0002`\u0012X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u001a\u0010\u001f\u001a\u00020 X\u0096.¢\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\"\"\u0004\b#\u0010$R\u0014\u0010\u0006\u001a\u00020\u0007X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b%\u0010&R\u0014\u0010\u0002\u001a\u00020\u0003X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b'\u0010(R2\u0010\b\u001a\u001a\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u000b\u0012\u0006\u0012\u0004\u0018\u00010\f0\n0\tj\u0002`\rX\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b)\u0010*\"\u0004\b+\u0010,R\u0014\u0010-\u001a\u00020\u00018VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b.\u0010/R\"\u0010\u0013\u001a\u0016\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u0014\u0012\u0004\u0012\u00020\f0\u0011j\u0002`\u0015X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0004\u001a\u00020\u0005X\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b0\u00101\"\u0004\b2\u00103¨\u0006\u008a\u0001"}, d2 = {"Lcom/github/kittinunf/fuel/core/requests/DefaultRequest;", "Lcom/github/kittinunf/fuel/core/Request;", "method", "Lcom/github/kittinunf/fuel/core/Method;", "url", "Ljava/net/URL;", "headers", "Lcom/github/kittinunf/fuel/core/Headers;", "parameters", "", "Lkotlin/Pair;", "", "", "Lcom/github/kittinunf/fuel/core/Parameters;", "_body", "Lcom/github/kittinunf/fuel/core/Body;", "enabledFeatures", "", "Lcom/github/kittinunf/fuel/core/RequestFeatures;", DaijishouPlayerTemplate.templateTagPrefix, "Lkotlin/reflect/KClass;", "Lcom/github/kittinunf/fuel/core/Tags;", "(Lcom/github/kittinunf/fuel/core/Method;Ljava/net/URL;Lcom/github/kittinunf/fuel/core/Headers;Ljava/util/List;Lcom/github/kittinunf/fuel/core/Body;Ljava/util/Map;Ljava/util/Map;)V", "get_body$fuel", "()Lcom/github/kittinunf/fuel/core/Body;", "set_body$fuel", "(Lcom/github/kittinunf/fuel/core/Body;)V", "body", "getBody", "getEnabledFeatures", "()Ljava/util/Map;", "executionOptions", "Lcom/github/kittinunf/fuel/core/RequestExecutionOptions;", "getExecutionOptions", "()Lcom/github/kittinunf/fuel/core/RequestExecutionOptions;", "setExecutionOptions", "(Lcom/github/kittinunf/fuel/core/RequestExecutionOptions;)V", "getHeaders", "()Lcom/github/kittinunf/fuel/core/Headers;", "getMethod", "()Lcom/github/kittinunf/fuel/core/Method;", "getParameters", "()Ljava/util/List;", "setParameters", "(Ljava/util/List;)V", "request", "getRequest", "()Lcom/github/kittinunf/fuel/core/Request;", "getUrl", "()Ljava/net/URL;", "setUrl", "(Ljava/net/URL;)V", "allowRedirects", "", "appendHeader", "pairs", "", "([Lkotlin/Pair;)Lcom/github/kittinunf/fuel/core/Request;", "header", "value", "values", "(Ljava/lang/String;[Ljava/lang/Object;)Lcom/github/kittinunf/fuel/core/Request;", "openStream", "Lkotlin/Function0;", "Ljava/io/InputStream;", "Lcom/github/kittinunf/fuel/core/BodySource;", "calculateLength", "", "Lcom/github/kittinunf/fuel/core/BodyLength;", "charset", "Ljava/nio/charset/Charset;", "repeatable", "file", "Ljava/io/File;", "stream", "bytes", "", "component1", "component2", "component3", "component4", "component5", "component5$fuel", "component6", "component7", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "other", "get", "", "Lcom/github/kittinunf/fuel/core/HeaderValues;", "getTag", ExifInterface.GPS_DIRECTION_TRUE, "clazz", "(Lkotlin/reflect/KClass;)Ljava/lang/Object;", "hashCode", "", "map", "", "interrupt", "Lkotlin/Function1;", "", "Lcom/github/kittinunf/fuel/core/InterruptCallback;", "requestProgress", "handler", "Lkotlin/Function2;", "Lkotlin/ParameterName;", "name", "readBytes", "totalBytes", "Lcom/github/kittinunf/fuel/core/ProgressCallback;", "response", "Lkotlin/Triple;", "Lcom/github/kittinunf/fuel/core/Response;", "Lcom/github/kittinunf/result/Result;", "Lcom/github/kittinunf/fuel/core/FuelError;", "Lcom/github/kittinunf/fuel/core/ResponseResultOf;", "Lcom/github/kittinunf/fuel/core/requests/CancellableRequest;", "Lcom/github/kittinunf/fuel/core/Handler;", "Lcom/github/kittinunf/fuel/core/ResponseHandler;", "Lkotlin/Function3;", "Lcom/github/kittinunf/fuel/core/ResponseResultHandler;", "Lcom/github/kittinunf/fuel/core/ResultHandler;", "responseObject", "deserializer", "Lcom/github/kittinunf/fuel/core/ResponseDeserializable;", "responseProgress", "responseString", "set", "tag", "t", "timeout", "timeoutRead", "toString", "useHttpCache", "validate", "validator", "Lcom/github/kittinunf/fuel/core/ResponseValidator;", "fuel"}, k = 1, mv = {1, 4, 0})
 public final /* data */ class DefaultRequest implements Request {
     private Body _body;
@@ -68,7 +68,7 @@ public final /* data */ class DefaultRequest implements Request {
         return this.tags;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ DefaultRequest copy$default(DefaultRequest defaultRequest, Method method, URL url, Headers headers, List list, Body body, Map map, Map map2, int i, Object obj) {
         if ((i & 1) != 0) {
             method = defaultRequest.getMethod();
@@ -114,7 +114,7 @@ public final /* data */ class DefaultRequest implements Request {
         return getParameters();
     }
 
-    /* JADX INFO: renamed from: component5$fuel, reason: from getter */
+    /* INFO: renamed from: component5$fuel, reason: from getter */
     public final Body get_body() {
         return this._body;
     }
@@ -162,13 +162,13 @@ public final /* data */ class DefaultRequest implements Request {
         return iHashCode6 + (map != null ? map.hashCode() : 0);
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.requests.DefaultRequest$body$3, reason: invalid class name */
-    /* JADX INFO: compiled from: DefaultRequest.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.requests.DefaultRequest$body$3, reason: invalid class name */
+    /* INFO: compiled from: DefaultRequest.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\b\n\u0000\n\u0002\u0010\t\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass3 extends Lambda implements Function0<Long> {
         final /* synthetic */ byte[] $bytes;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(byte[] bArr) {
             super(0);
             this.$bytes = bArr;
@@ -179,19 +179,19 @@ public final /* data */ class DefaultRequest implements Request {
             return Long.valueOf(invoke2());
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final long invoke2() {
             return this.$bytes.length;
         }
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.requests.DefaultRequest$body$6, reason: invalid class name */
-    /* JADX INFO: compiled from: DefaultRequest.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.requests.DefaultRequest$body$6, reason: invalid class name */
+    /* INFO: compiled from: DefaultRequest.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\b\n\u0000\n\u0002\u0010\t\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass6 extends Lambda implements Function0<Long> {
         final /* synthetic */ File $file;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass6(File file) {
             super(0);
             this.$file = file;
@@ -202,7 +202,7 @@ public final /* data */ class DefaultRequest implements Request {
             return Long.valueOf(invoke2());
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final long invoke2() {
             return this.$file.length();
         }
@@ -397,19 +397,19 @@ public final /* data */ class DefaultRequest implements Request {
         return getRequest();
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.requests.DefaultRequest$body$2, reason: invalid class name */
-    /* JADX INFO: compiled from: DefaultRequest.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.requests.DefaultRequest$body$2, reason: invalid class name */
+    /* INFO: compiled from: DefaultRequest.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Ljava/io/InputStream;", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass2 extends Lambda implements Function0<InputStream> {
         final /* synthetic */ InputStream $stream;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(InputStream inputStream) {
             super(0);
             this.$stream = inputStream;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final InputStream invoke() {
             return this.$stream;
@@ -441,38 +441,38 @@ public final /* data */ class DefaultRequest implements Request {
         return (charSequence == null || StringsKt.isBlank(charSequence)) ? header("Content-Type", "text/plain; charset=" + charset.name()) : requestBody;
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.requests.DefaultRequest$body$5, reason: invalid class name */
-    /* JADX INFO: compiled from: DefaultRequest.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.requests.DefaultRequest$body$5, reason: invalid class name */
+    /* INFO: compiled from: DefaultRequest.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Ljava/io/InputStream;", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass5 extends Lambda implements Function0<InputStream> {
         final /* synthetic */ File $file;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass5(File file) {
             super(0);
             this.$file = file;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final InputStream invoke() {
             return new FileInputStream(this.$file);
         }
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.requests.DefaultRequest$body$7, reason: invalid class name */
-    /* JADX INFO: compiled from: DefaultRequest.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.requests.DefaultRequest$body$7, reason: invalid class name */
+    /* INFO: compiled from: DefaultRequest.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Ljava/io/InputStream;", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass7 extends Lambda implements Function0<InputStream> {
         final /* synthetic */ File $file;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass7(File file) {
             super(0);
             this.$file = file;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final InputStream invoke() {
             return new FileInputStream(this.$file);
@@ -520,7 +520,7 @@ public final /* data */ class DefaultRequest implements Request {
         return getRequest();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.github.kittinunf.fuel.core.Request
     public Request interrupt(Function1<? super Request, Unit> interrupt) {
         Intrinsics.checkNotNullParameter(interrupt, "interrupt");

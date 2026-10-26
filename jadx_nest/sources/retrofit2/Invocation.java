@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Objects;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public final class Invocation {
     private final List<?> arguments;
 

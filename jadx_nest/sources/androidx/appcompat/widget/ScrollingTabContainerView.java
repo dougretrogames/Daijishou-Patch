@@ -27,7 +27,7 @@ import androidx.appcompat.R;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.view.ActionBarPolicy;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ScrollingTabContainerView extends HorizontalScrollView implements AdapterView.OnItemSelectedListener {
     private static final int FADE_DURATION = 200;
     private static final String TAG = "ScrollingTabContainerView";
@@ -217,7 +217,7 @@ public class ScrollingTabContainerView extends HorizontalScrollView implements A
         post(anonymousClass1);
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ScrollingTabContainerView$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ScrollingTabContainerView$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ View val$tabView;
 

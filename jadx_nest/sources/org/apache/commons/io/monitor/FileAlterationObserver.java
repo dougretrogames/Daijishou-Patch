@@ -18,7 +18,7 @@ import org.apache.commons.io.build.AbstractOriginSupplier;
 import org.apache.commons.io.comparator.NameFileComparator;
 import org.apache.commons.io.filefilter.TrueFileFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileAlterationObserver implements Serializable {
     private static final long serialVersionUID = 1185122225658782848L;
     private final Comparator<File> comparator;
@@ -54,19 +54,19 @@ public class FileAlterationObserver implements Serializable {
             return new FileAlterationObserver(fileEntry, this.fileFilter, FileAlterationObserver.toComparator(this.ioCase), null);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public Builder setFileFilter(FileFilter fileFilter) {
             this.fileFilter = fileFilter;
             return (Builder) asThis();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public Builder setIOCase(IOCase iOCase) {
             this.ioCase = iOCase;
             return (Builder) asThis();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public Builder setRootEntry(FileEntry fileEntry) {
             this.rootEntry = fileEntry;
             return (Builder) asThis();
@@ -77,7 +77,7 @@ public class FileAlterationObserver implements Serializable {
         return new Builder(null);
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.io.monitor.FileAlterationObserver$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.io.monitor.FileAlterationObserver$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$org$apache$commons$io$IOCase;
 
@@ -95,7 +95,7 @@ public class FileAlterationObserver implements Serializable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Comparator<File> toComparator(IOCase iOCase) {
         int i = AnonymousClass1.$SwitchMap$org$apache$commons$io$IOCase[IOCase.value(iOCase, IOCase.SYSTEM).ordinal()];
         if (i == 1) {
@@ -198,18 +198,18 @@ public class FileAlterationObserver implements Serializable {
         this.listeners.forEach(new FileAlterationObserver$$ExternalSyntheticLambda7(this));
     }
 
-    /* JADX INFO: renamed from: lambda$checkAndNotify$0$org-apache-commons-io-monitor-FileAlterationObserver, reason: not valid java name */
+    /* INFO: renamed from: lambda$checkAndNotify$0$org-apache-commons-io-monitor-FileAlterationObserver, reason: not valid java name */
     /* synthetic */ void m5619x2d975733(FileAlterationListener fileAlterationListener) {
         fileAlterationListener.onStart(this);
     }
 
-    /* JADX INFO: renamed from: lambda$checkAndNotify$1$org-apache-commons-io-monitor-FileAlterationObserver, reason: not valid java name */
+    /* INFO: renamed from: lambda$checkAndNotify$1$org-apache-commons-io-monitor-FileAlterationObserver, reason: not valid java name */
     /* synthetic */ void m5620x47b2d5d2(FileAlterationListener fileAlterationListener) {
         fileAlterationListener.onStop(this);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: createFileEntry, reason: merged with bridge method [inline-methods] */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: renamed from: createFileEntry, reason: merged with bridge method [inline-methods] */
     public FileEntry m5621xd1c1b90a(FileEntry fileEntry, File file) {
         FileEntry fileEntryNewChildInstance = fileEntry.newChildInstance(file);
         fileEntryNewChildInstance.refresh(file);
@@ -231,7 +231,7 @@ public class FileAlterationObserver implements Serializable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void fireOnCreate(FileEntry fileEntry) {
         this.listeners.forEach(new FileAlterationObserver$$ExternalSyntheticLambda4(fileEntry));
         Stream.of((Object[]) fileEntry.getChildren()).forEach(new FileAlterationObserver$$ExternalSyntheticLambda5(this));

@@ -66,7 +66,7 @@ import org.apache.commons.io.function.Uncheck;
 import org.eclipse.jgit.lib.BranchConfig;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileUtils {
     public static final File[] EMPTY_FILE_ARRAY;
     public static final long ONE_EB = 1152921504606846976L;
@@ -286,7 +286,7 @@ public class FileUtils {
         copyDirectory(file, file2, fileFilter, z, StandardCopyOption.REPLACE_EXISTING, LinkOption.NOFOLLOW_LINKS);
     }
 
-    /* JADX WARN: Code duplicated, block: B:9:0x0041  */
+    /* WARN: Code duplicated, block: B:9:0x0041  */
     public static void copyDirectory(File file, File file2, FileFilter fileFilter, boolean z, CopyOption... copyOptionArr) throws IOException {
         ArrayList arrayList;
         Objects.requireNonNull(file2, "destination");
@@ -635,7 +635,7 @@ public class FileUtils {
         forceDelete(file, true);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void forceDelete(File file, boolean z) throws IOException {
         checkExists(file, z);
         try {
@@ -899,7 +899,7 @@ public class FileUtils {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static AccumulatorPathVisitor listAccumulate(File file, IOFileFilter iOFileFilter, IOFileFilter iOFileFilter2, FileVisitOption... fileVisitOptionArr) throws IOException {
         boolean z = iOFileFilter2 != null;
         IOFileFilter fileEqualsFileFilter = new FileEqualsFileFilter(file);
@@ -928,7 +928,7 @@ public class FileUtils {
         return toList(((AccumulatorPathVisitor) Uncheck.apply(new FileUtils$$ExternalSyntheticLambda18(iOFileFilter, iOFileFilter2), file)).getFileList().stream().map(new FileUtils$$ExternalSyntheticLambda19()));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void listFiles(File file, List<File> list, boolean z, FilenameFilter filenameFilter) {
         File[] fileArrListFiles = file.listFiles();
         if (fileArrListFiles != null) {

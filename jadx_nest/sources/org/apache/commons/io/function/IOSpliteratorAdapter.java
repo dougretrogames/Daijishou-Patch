@@ -3,7 +3,7 @@ package org.apache.commons.io.function;
 import java.util.Objects;
 import java.util.Spliterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class IOSpliteratorAdapter<T> implements IOSpliterator<T> {
     private final Spliterator<T> delegate;
 

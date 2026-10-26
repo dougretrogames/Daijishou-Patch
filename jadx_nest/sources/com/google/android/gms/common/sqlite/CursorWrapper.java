@@ -6,8 +6,8 @@ import android.database.Cursor;
 import android.database.CursorWindow;
 import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public class CursorWrapper extends android.database.CursorWrapper implements CrossProcessCursor {
     private AbstractWindowedCursor zza;
 

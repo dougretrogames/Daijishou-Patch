@@ -10,7 +10,7 @@ import org.apache.http.pool.AbstractConnPool;
 import org.apache.http.pool.ConnFactory;
 import org.apache.http.pool.PoolEntryCallback;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class CPool extends AbstractConnPool<HttpRoute, ManagedHttpClientConnection, CPoolEntry> {
     private static final AtomicLong COUNTER = new AtomicLong();
     private final Log log;
@@ -24,13 +24,13 @@ class CPool extends AbstractConnPool<HttpRoute, ManagedHttpClientConnection, CPo
         this.timeUnit = timeUnit;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.http.pool.AbstractConnPool
     public CPoolEntry createEntry(HttpRoute httpRoute, ManagedHttpClientConnection managedHttpClientConnection) {
         return new CPoolEntry(this.log, Long.toString(COUNTER.getAndIncrement()), httpRoute, managedHttpClientConnection, this.timeToLive, this.timeUnit);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.http.pool.AbstractConnPool
     public boolean validate(CPoolEntry cPoolEntry) {
         return !cPoolEntry.getConnection().isStale();

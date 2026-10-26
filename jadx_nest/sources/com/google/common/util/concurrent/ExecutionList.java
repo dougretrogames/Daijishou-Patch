@@ -5,7 +5,7 @@ import java.util.concurrent.Executor;
 import java.util.logging.Level;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class ExecutionList {
     private static final LazyLogger log = new LazyLogger(ExecutionList.class);

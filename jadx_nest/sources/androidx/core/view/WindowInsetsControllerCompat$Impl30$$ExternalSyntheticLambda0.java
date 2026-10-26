@@ -2,8 +2,8 @@ package androidx.core.view;
 
 import android.view.WindowInsetsController;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class WindowInsetsControllerCompat$Impl30$$ExternalSyntheticLambda0 implements WindowInsetsController.OnControllableInsetsChangedListener {
     public final /* synthetic */ WindowInsetsControllerCompat.Impl30 f$0;
     public final /* synthetic */ WindowInsetsControllerCompat.OnControllableInsetsChangedListener f$1;

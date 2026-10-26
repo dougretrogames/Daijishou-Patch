@@ -6,7 +6,7 @@ import org.apache.http.cookie.CookieSpecProvider;
 import org.apache.http.params.HttpParams;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class IgnoreSpecFactory implements CookieSpecFactory, CookieSpecProvider {
     @Override // org.apache.http.cookie.CookieSpecFactory

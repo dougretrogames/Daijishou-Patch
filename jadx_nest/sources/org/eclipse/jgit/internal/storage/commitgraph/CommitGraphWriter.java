@@ -26,7 +26,7 @@ import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.filter.TreeFilter;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CommitGraphWriter {
     private static final int COMMIT_GRAPH_VERSION_GENERATED = 1;
     private static final int GENERATION_NUMBER_MAX = 1073741823;
@@ -48,12 +48,12 @@ public class CommitGraphWriter {
         this.generateChangedPathFilters = z;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v0 */
-    /* JADX WARN: Type inference failed for: r1v1, types: [java.lang.Throwable] */
-    /* JADX WARN: Type inference failed for: r1v4, types: [java.lang.Long, java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r1v5 */
-    /* JADX WARN: Type inference failed for: r7v3, types: [java.lang.Throwable] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r1v0 */
+    /* WARN: Type inference failed for: r1v1, types: [java.lang.Throwable] */
+    /* WARN: Type inference failed for: r1v4, types: [java.lang.Long, java.lang.Object] */
+    /* WARN: Type inference failed for: r1v5 */
+    /* WARN: Type inference failed for: r7v3, types: [java.lang.Throwable] */
     public Stats write(ProgressMonitor progressMonitor, OutputStream outputStream) throws IOException {
         if (this.graphCommits.size() == 0) {
             return Stats.EMPTY;
@@ -420,11 +420,11 @@ public class CommitGraphWriter {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class ChunkHeader {
         final Optional<ByteArrayOutputStream> data;
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         final int f117id;
         final long size;
 

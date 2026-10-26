@@ -6,7 +6,7 @@ import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DiffConfig {
     public static final Config.SectionParser<DiffConfig> KEY = new DiffConfig$$ExternalSyntheticLambda0();
     private final boolean noPrefix;
@@ -18,7 +18,7 @@ public class DiffConfig {
         TRUE,
         COPY;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static RenameDetectionType[] valuesCustom() {
             RenameDetectionType[] renameDetectionTypeArrValuesCustom = values();
             int length = renameDetectionTypeArrValuesCustom.length;

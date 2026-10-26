@@ -20,7 +20,7 @@ import org.eclipse.jgit.revwalk.RevSort;
 import org.eclipse.jgit.revwalk.RevTag;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PlotWalk extends RevWalk {
     private Map<AnyObjectId, Set<Ref>> additionalRefMap;
     private Repository repository;

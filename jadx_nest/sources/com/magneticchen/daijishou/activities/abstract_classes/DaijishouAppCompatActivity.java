@@ -33,22 +33,22 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: DaijishouAppCompatActivity.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouAppCompatActivity.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\b&\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u0011\u001a\u00020\u0012H\u0004J\u0006\u0010\u0013\u001a\u00020\u0014J\b\u0010\u0015\u001a\u00020\u0012H\u0016J\u0012\u0010\u0016\u001a\u00020\u00122\b\u0010\u0017\u001a\u0004\u0018\u00010\u0018H\u0014J\b\u0010\u0019\u001a\u00020\u0012H\u0004J\b\u0010\u001a\u001a\u00020\u0012H\u0004R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u001b\u0010\u0005\u001a\u00020\u00068DX\u0084\u0084\u0002¢\u0006\f\n\u0004\b\t\u0010\n\u001a\u0004\b\u0007\u0010\bR\u001f\u0010\u000b\u001a\u00060\fR\u00020\r8DX\u0084\u0084\u0002¢\u0006\f\n\u0004\b\u0010\u0010\n\u001a\u0004\b\u000e\u0010\u000f¨\u0006\u001b"}, d2 = {"Lcom/magneticchen/daijishou/activities/abstract_classes/DaijishouAppCompatActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "()V", "changeDarkModeListener", "Landroid/content/SharedPreferences$OnSharedPreferenceChangeListener;", "defaultSharedPreferences", "Landroid/content/SharedPreferences;", "getDefaultSharedPreferences", "()Landroid/content/SharedPreferences;", "defaultSharedPreferences$delegate", "Lkotlin/Lazy;", "logger", "Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "Lcom/magneticchen/daijishou/DaijishouApplication;", "getLogger", "()Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "logger$delegate", "hideSystemBars", "", "isMyLauncherDefault", "", "onBackPressedCallback", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "setupDarkTheme", "setupTheme", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public abstract class DaijishouAppCompatActivity extends AppCompatActivity {
     private final SharedPreferences.OnSharedPreferenceChangeListener changeDarkModeListener = new DaijishouAppCompatActivity$$ExternalSyntheticLambda1(this);
 
-    /* JADX INFO: renamed from: defaultSharedPreferences$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: defaultSharedPreferences$delegate, reason: from kotlin metadata */
     private final Lazy defaultSharedPreferences = LazyKt.lazy(new DaijishouAppCompatActivity$defaultSharedPreferences$2(this));
 
-    /* JADX INFO: renamed from: logger$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: logger$delegate, reason: from kotlin metadata */
     private final Lazy logger = LazyKt.lazy(new DaijishouAppCompatActivity$logger$2(this));
 
     public void onBackPressedCallback() {
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void changeDarkModeListener$lambda$0(DaijishouAppCompatActivity this$0, SharedPreferences sharedPreferences, String str) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (Intrinsics.areEqual(str, StringPreference.USE_DARK_THEME.getKey())) {
@@ -75,7 +75,7 @@ public abstract class DaijishouAppCompatActivity extends AppCompatActivity {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public final SharedPreferences getDefaultSharedPreferences() {
         return (SharedPreferences) this.defaultSharedPreferences.getValue();
     }
@@ -84,7 +84,7 @@ public abstract class DaijishouAppCompatActivity extends AppCompatActivity {
         return (DaijishouApplication.WrappedLogger) this.logger.getValue();
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     protected final void setupDarkTheme() {
         String string = getDefaultSharedPreferences().getString(StringPreference.USE_DARK_THEME.getKey(), StringPreference.USE_DARK_THEME.getDefaultValue());
         if (string != null) {
@@ -119,15 +119,15 @@ public abstract class DaijishouAppCompatActivity extends AppCompatActivity {
         new SharedPreferenceStringLiveData(getDefaultSharedPreferences(), "theme_id", Constants.defaultThemeId).observe(this, new DaijishouAppCompatActivity$sam$androidx_lifecycle_Observer$0(new C02081(string, iIntValue, this)));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.abstract_classes.DaijishouAppCompatActivity$setupTheme$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouAppCompatActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.abstract_classes.DaijishouAppCompatActivity$setupTheme$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouAppCompatActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "themeId2", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class C02081 extends Lambda<Unit> implements Function1<String, Unit> {
         final /* synthetic */ int $defaultTheme;
         final /* synthetic */ String $themeId;
         final /* synthetic */ DaijishouAppCompatActivity this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02081(String str, int i, DaijishouAppCompatActivity daijishouAppCompatActivity) {
             super(1);
             this.$themeId = str;
@@ -141,7 +141,7 @@ public abstract class DaijishouAppCompatActivity extends AppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(String str) {
             if (Intrinsics.areEqual(str, this.$themeId)) {
                 return;
@@ -164,7 +164,7 @@ public abstract class DaijishouAppCompatActivity extends AppCompatActivity {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final WindowInsets hideSystemBars$lambda$1(WindowInsetsControllerCompat windowInsetsControllerCompat, View view, WindowInsets windowInsets) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(windowInsets, "windowInsets");
@@ -185,8 +185,8 @@ public abstract class DaijishouAppCompatActivity extends AppCompatActivity {
         OnBackPressedDispatcherKt.addCallback$default(onBackPressedDispatcher, null, false, new AnonymousClass1(), 3, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.abstract_classes.DaijishouAppCompatActivity$onCreate$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouAppCompatActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.abstract_classes.DaijishouAppCompatActivity$onCreate$1, reason: invalid class name */
+    /* INFO: compiled from: DaijishouAppCompatActivity.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Landroidx/activity/OnBackPressedCallback;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function1<OnBackPressedCallback, Unit> {
         AnonymousClass1() {
@@ -199,7 +199,7 @@ public abstract class DaijishouAppCompatActivity extends AppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(OnBackPressedCallback addCallback) {
             Intrinsics.checkNotNullParameter(addCallback, "$this$addCallback");
             DaijishouAppCompatActivity.this.onBackPressedCallback();

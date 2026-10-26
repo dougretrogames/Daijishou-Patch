@@ -2,7 +2,7 @@ package org.apache.commons.io.function;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @FunctionalInterface
 public interface IORunnable {
     void run() throws IOException;

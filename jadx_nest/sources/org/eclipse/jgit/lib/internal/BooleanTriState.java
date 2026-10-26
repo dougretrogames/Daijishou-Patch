@@ -1,12 +1,12 @@
 package org.eclipse.jgit.lib.internal;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum BooleanTriState {
     TRUE,
     FALSE,
     UNSET;
 
-    /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+    /* INFO: renamed from: values, reason: to resolve conflict with enum method */
     public static BooleanTriState[] valuesCustom() {
         BooleanTriState[] booleanTriStateArrValuesCustom = values();
         int length = booleanTriStateArrValuesCustom.length;

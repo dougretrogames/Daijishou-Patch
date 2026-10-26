@@ -3,7 +3,7 @@ package androidx.webkit.internal;
 import androidx.webkit.Page;
 import org.chromium.support_lib_boundary.WebViewPageBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PageImpl implements Page {
     private final WebViewPageBoundaryInterface mPageBoundaryInterface;
 

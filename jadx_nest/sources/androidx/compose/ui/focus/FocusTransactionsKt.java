@@ -17,12 +17,12 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: FocusTransactions.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: FocusTransactions.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u001c\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000f\u001a\f\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u0000\u001a \u0010\u0003\u001a\u00020\u0001*\u00020\u00022\b\b\u0002\u0010\u0004\u001a\u00020\u00012\b\b\u0002\u0010\u0005\u001a\u00020\u0001H\u0002\u001a\u001e\u0010\u0006\u001a\u00020\u0001*\u00020\u00022\b\b\u0002\u0010\u0004\u001a\u00020\u00012\u0006\u0010\u0005\u001a\u00020\u0001H\u0000\u001a\f\u0010\u0007\u001a\u00020\u0001*\u00020\u0002H\u0000\u001a\f\u0010\b\u001a\u00020\u0001*\u00020\u0002H\u0002\u001a\u001e\u0010\t\u001a\u00020\n*\u00020\u00022\u0006\u0010\u000b\u001a\u00020\fH\u0000ø\u0001\u0000¢\u0006\u0004\b\r\u0010\u000e\u001a\u001e\u0010\u000f\u001a\u00020\n*\u00020\u00022\u0006\u0010\u000b\u001a\u00020\fH\u0002ø\u0001\u0000¢\u0006\u0004\b\u0010\u0010\u000e\u001a\u001e\u0010\u0011\u001a\u00020\n*\u00020\u00022\u0006\u0010\u000b\u001a\u00020\fH\u0002ø\u0001\u0000¢\u0006\u0004\b\u0012\u0010\u000e\u001a\u001e\u0010\u0013\u001a\u00020\n*\u00020\u00022\u0006\u0010\u000b\u001a\u00020\fH\u0000ø\u0001\u0000¢\u0006\u0004\b\u0014\u0010\u000e\u001a\f\u0010\u0015\u001a\u00020\u0001*\u00020\u0002H\u0000\u001a\f\u0010\u0016\u001a\u00020\u0001*\u00020\u0002H\u0000\u001a\u0014\u0010\u0017\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0018\u001a\u00020\u0002H\u0002\u001a\f\u0010\u0019\u001a\u00020\u0001*\u00020\u0002H\u0002\u001a\f\u0010\u001a\u001a\u00020\u0002*\u00020\u0002H\u0002\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006\u001b"}, d2 = {"captureFocus", "", "Landroidx/compose/ui/focus/FocusTargetNode;", "clearChildFocus", "forced", "refreshFocusEvents", "clearFocus", "freeFocus", "grantFocus", "performCustomClearFocus", "Landroidx/compose/ui/focus/CustomDestinationResult;", "focusDirection", "Landroidx/compose/ui/focus/FocusDirection;", "performCustomClearFocus-Mxy_nc0", "(Landroidx/compose/ui/focus/FocusTargetNode;I)Landroidx/compose/ui/focus/CustomDestinationResult;", "performCustomEnter", "performCustomEnter-Mxy_nc0", "performCustomExit", "performCustomExit-Mxy_nc0", "performCustomRequestFocus", "performCustomRequestFocus-Mxy_nc0", "performRequestFocus", "requestFocus", "requestFocusForChild", "childNode", "requestFocusForOwner", "requireActiveChild", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class FocusTransactionsKt {
 
-    /* JADX INFO: compiled from: FocusTransactions.kt */
+    /* INFO: compiled from: FocusTransactions.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     public /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -93,7 +93,7 @@ public final class FocusTransactionsKt {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:75:0x0103  */
+    /* WARN: Code duplicated, block: B:75:0x0103  */
     public static final boolean performRequestFocus(FocusTargetNode focusTargetNode) {
         NodeChain nodes;
         int i = WhenMappings.$EnumSwitchMapping$1[focusTargetNode.getFocusState().ordinal()];
@@ -273,13 +273,13 @@ public final class FocusTransactionsKt {
         return true;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.focus.FocusTransactionsKt$grantFocus$1, reason: invalid class name */
-    /* JADX INFO: compiled from: FocusTransactions.kt */
+    /* INFO: renamed from: androidx.compose.ui.focus.FocusTransactionsKt$grantFocus$1, reason: invalid class name */
+    /* INFO: compiled from: FocusTransactions.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function0<Unit> {
         final /* synthetic */ FocusTargetNode $this_grantFocus;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(FocusTargetNode focusTargetNode) {
             super(0);
             this.$this_grantFocus = focusTargetNode;
@@ -291,7 +291,7 @@ public final class FocusTransactionsKt {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             this.$this_grantFocus.fetchFocusProperties$ui_release();
         }
@@ -499,7 +499,7 @@ public final class FocusTransactionsKt {
         throw new IllegalArgumentException("ActiveParent with no focused child".toString());
     }
 
-    /* JADX INFO: renamed from: performCustomRequestFocus-Mxy_nc0, reason: not valid java name */
+    /* INFO: renamed from: performCustomRequestFocus-Mxy_nc0, reason: not valid java name */
     public static final CustomDestinationResult m240performCustomRequestFocusMxy_nc0(FocusTargetNode focusTargetNode, int i) {
         Modifier.Node nodePop;
         NodeChain nodes;
@@ -591,7 +591,7 @@ public final class FocusTransactionsKt {
         throw new NoWhenBranchMatchedException();
     }
 
-    /* JADX INFO: renamed from: performCustomClearFocus-Mxy_nc0, reason: not valid java name */
+    /* INFO: renamed from: performCustomClearFocus-Mxy_nc0, reason: not valid java name */
     public static final CustomDestinationResult m237performCustomClearFocusMxy_nc0(FocusTargetNode focusTargetNode, int i) {
         int i2 = WhenMappings.$EnumSwitchMapping$1[focusTargetNode.getFocusState().ordinal()];
         if (i2 != 1) {
@@ -612,7 +612,7 @@ public final class FocusTransactionsKt {
         return CustomDestinationResult.None;
     }
 
-    /* JADX INFO: renamed from: performCustomEnter-Mxy_nc0, reason: not valid java name */
+    /* INFO: renamed from: performCustomEnter-Mxy_nc0, reason: not valid java name */
     private static final CustomDestinationResult m238performCustomEnterMxy_nc0(FocusTargetNode focusTargetNode, int i) {
         if (!focusTargetNode.isProcessingCustomEnter) {
             focusTargetNode.isProcessingCustomEnter = true;
@@ -631,7 +631,7 @@ public final class FocusTransactionsKt {
         return CustomDestinationResult.None;
     }
 
-    /* JADX INFO: renamed from: performCustomExit-Mxy_nc0, reason: not valid java name */
+    /* INFO: renamed from: performCustomExit-Mxy_nc0, reason: not valid java name */
     private static final CustomDestinationResult m239performCustomExitMxy_nc0(FocusTargetNode focusTargetNode, int i) {
         if (!focusTargetNode.isProcessingCustomExit) {
             focusTargetNode.isProcessingCustomExit = true;

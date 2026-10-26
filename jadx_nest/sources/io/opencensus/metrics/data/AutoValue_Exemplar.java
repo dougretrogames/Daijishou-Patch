@@ -3,7 +3,7 @@ package io.opencensus.metrics.data;
 import io.opencensus.common.Timestamp;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Exemplar extends Exemplar {
     private final Map<String, AttachmentValue> attachments;
     private final Timestamp timestamp;

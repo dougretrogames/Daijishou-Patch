@@ -4,8 +4,8 @@ import android.os.ProfilingResult;
 import java.util.function.Consumer;
 import kotlinx.coroutines.channels.ProducerScope;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class Profiling$registerForAllProfilingResults$1$$ExternalSyntheticLambda0 implements Consumer {
     public final /* synthetic */ ProducerScope f$0;
 

@@ -13,7 +13,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MediaMetadataCompat implements Parcelable {
     public static final Parcelable.Creator<MediaMetadataCompat> CREATOR;
     static final ArrayMap<String, Integer> METADATA_KEYS_TYPE;
@@ -293,18 +293,18 @@ public final class MediaMetadataCompat implements Parcelable {
         return this.mMetadataObj;
     }
 
-    /* JADX INFO: renamed from: android.support.v4.media.MediaMetadataCompat$1, reason: invalid class name */
+    /* INFO: renamed from: android.support.v4.media.MediaMetadataCompat$1, reason: invalid class name */
     static class AnonymousClass1 implements Parcelable.Creator<MediaMetadataCompat> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public MediaMetadataCompat createFromParcel(Parcel parcel) {
             return new MediaMetadataCompat(parcel);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public MediaMetadataCompat[] newArray(int i) {
             return new MediaMetadataCompat[i];

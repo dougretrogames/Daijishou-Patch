@@ -7,7 +7,7 @@ import kotlin.coroutines.Continuation;
 import retrofit2.Call;
 import retrofit2.Response;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class CallWrapperFactory {
     private CallWrapperFactory() {
     }

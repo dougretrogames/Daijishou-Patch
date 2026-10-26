@@ -5,7 +5,7 @@ import net.lingala.zip4j.model.enums.AesKeyStrength;
 import net.lingala.zip4j.model.enums.AesVersion;
 import net.lingala.zip4j.model.enums.CompressionMethod;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AESExtraDataRecord extends ZipHeader {
     private AesKeyStrength aesKeyStrength;
     private AesVersion aesVersion;

@@ -7,7 +7,7 @@ import org.apache.http.message.TokenParser;
 import org.apache.http.util.Args;
 import org.apache.http.util.LangUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AuthScope {
     public static final AuthScope ANY = new AuthScope(null, -1, null, null);
     public static final String ANY_HOST = null;

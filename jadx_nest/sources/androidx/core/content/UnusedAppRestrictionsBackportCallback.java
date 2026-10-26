@@ -3,7 +3,7 @@ package androidx.core.content;
 import android.os.RemoteException;
 import androidx.core.app.unusedapprestrictions.IUnusedAppRestrictionsBackportCallback;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class UnusedAppRestrictionsBackportCallback {
     private IUnusedAppRestrictionsBackportCallback mCallback;
 

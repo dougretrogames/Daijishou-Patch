@@ -4,7 +4,7 @@ import com.google.errorprone.annotations.DoNotMock;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock("Use Maps.difference")
 @ElementTypesAreNonnullByDefault
 public interface MapDifference<K, V> {

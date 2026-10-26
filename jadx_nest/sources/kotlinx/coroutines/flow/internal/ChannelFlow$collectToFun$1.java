@@ -11,9 +11,9 @@ import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.channels.ProducerScope;
 
-/* JADX INFO: Add missing generic type declarations: [T] */
-/* JADX INFO: compiled from: ChannelFlow.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: Add missing generic type declarations: [T] */
+/* INFO: compiled from: ChannelFlow.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u00022\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0004H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "it", "Lkotlinx/coroutines/channels/ProducerScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "kotlinx.coroutines.flow.internal.ChannelFlow$collectToFun$1", f = "ChannelFlow.kt", i = {}, l = {56}, m = "invokeSuspend", n = {}, s = {})
 final class ChannelFlow$collectToFun$1<T> extends SuspendLambda implements Function2<ProducerScope<? super T>, Continuation<? super Unit>, Object> {
@@ -21,7 +21,7 @@ final class ChannelFlow$collectToFun$1<T> extends SuspendLambda implements Funct
     int label;
     final /* synthetic */ ChannelFlow<T> this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     ChannelFlow$collectToFun$1(ChannelFlow<T> channelFlow, Continuation<? super ChannelFlow$collectToFun$1> continuation) {
         super(2, continuation);
         this.this$0 = channelFlow;

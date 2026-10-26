@@ -14,7 +14,7 @@ import org.apache.http.ProtocolException;
 import org.apache.http.ProtocolVersion;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RequestTargetHost implements HttpRequestInterceptor {
     @Override // org.apache.http.HttpRequestInterceptor
     public void process(HttpRequest httpRequest, HttpContext httpContext) throws HttpException, IOException {

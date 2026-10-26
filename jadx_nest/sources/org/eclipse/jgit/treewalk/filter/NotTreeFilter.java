@@ -3,7 +3,7 @@ package org.eclipse.jgit.treewalk.filter;
 import java.io.IOException;
 import org.eclipse.jgit.treewalk.TreeWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NotTreeFilter extends TreeFilter {
     private final TreeFilter a;
 

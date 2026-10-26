@@ -1,6 +1,6 @@
 package com.google.android.material.color.utilities;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ViewingConditions {
     public static final ViewingConditions DEFAULT = defaultWithBackgroundLstar(50.0d);
     private final double aw;

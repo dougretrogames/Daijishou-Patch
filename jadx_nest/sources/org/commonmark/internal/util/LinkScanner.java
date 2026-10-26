@@ -1,6 +1,6 @@
 package org.commonmark.internal.util;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LinkScanner {
     public static int scanLinkLabelContent(CharSequence charSequence, int i) {
         while (i < charSequence.length()) {
@@ -69,9 +69,9 @@ public class LinkScanner {
         return -1;
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x001b  */
-    /* JADX WARN: Code duplicated, block: B:21:0x001a A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:9:0x0018 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:11:0x001b  */
+    /* WARN: Code duplicated, block: B:21:0x001a A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:9:0x0018 A[DONT_INVERT] */
     public static int scanLinkTitleContent(CharSequence charSequence, int i, char c) {
         while (i < charSequence.length()) {
             char cCharAt = charSequence.charAt(i);

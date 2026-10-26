@@ -23,7 +23,7 @@ import java.util.Iterator;
 import java.util.List;
 import org.eclipse.jgit.lib.CommitConfig$$ExternalSyntheticBackport0;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class VideoDecoder<T> implements ResourceDecoder<T, Bitmap> {
     public static final long DEFAULT_FRAME = -1;
     static final int DEFAULT_FRAME_OPTION = 2;
@@ -48,7 +48,7 @@ public class VideoDecoder<T> implements ResourceDecoder<T, Bitmap> {
         return true;
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.resource.bitmap.VideoDecoder$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.resource.bitmap.VideoDecoder$1, reason: invalid class name */
     class AnonymousClass1 implements Option.CacheKeyUpdater<Long> {
         private final ByteBuffer buffer = ByteBuffer.allocate(8);
 
@@ -65,7 +65,7 @@ public class VideoDecoder<T> implements ResourceDecoder<T, Bitmap> {
         }
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.resource.bitmap.VideoDecoder$2, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.resource.bitmap.VideoDecoder$2, reason: invalid class name */
     class AnonymousClass2 implements Option.CacheKeyUpdater<Integer> {
         private final ByteBuffer buffer = ByteBuffer.allocate(4);
 
@@ -236,8 +236,8 @@ public class VideoDecoder<T> implements ResourceDecoder<T, Bitmap> {
         return mediaMetadataRetriever.getFrameAtTime(j, i);
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x005b A[Catch: all -> 0x0066, TRY_LEAVE, TryCatch #2 {all -> 0x0066, blocks: (B:23:0x0055, B:25:0x005b), top: B:38:0x0055 }] */
-    /* JADX WARN: Code duplicated, block: B:27:0x0062 A[DONT_GENERATE] */
+    /* WARN: Code duplicated, block: B:25:0x005b A[Catch: all -> 0x0066, TRY_LEAVE, TryCatch #2 {all -> 0x0066, blocks: (B:23:0x0055, B:25:0x005b), top: B:38:0x0055 }] */
+    /* WARN: Code duplicated, block: B:27:0x0062 A[DONT_GENERATE] */
     private boolean isUnsupportedFormat(T t, MediaMetadataRetriever mediaMetadataRetriever) {
         if (Build.DEVICE == null || !Build.DEVICE.matches(".+_cheets|cheets_.+")) {
             return false;
@@ -338,7 +338,7 @@ public class VideoDecoder<T> implements ResourceDecoder<T, Bitmap> {
             mediaExtractor.setDataSource(getMediaDataSource(byteBuffer));
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.resource.bitmap.VideoDecoder$ByteBufferInitializer$1, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.load.resource.bitmap.VideoDecoder$ByteBufferInitializer$1, reason: invalid class name */
         class AnonymousClass1 extends MediaDataSource {
             final /* synthetic */ ByteBuffer val$data;
 

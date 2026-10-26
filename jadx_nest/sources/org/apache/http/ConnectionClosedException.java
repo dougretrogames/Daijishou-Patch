@@ -2,7 +2,7 @@ package org.apache.http;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ConnectionClosedException extends IOException {
     private static final long serialVersionUID = 617550366255636674L;
 

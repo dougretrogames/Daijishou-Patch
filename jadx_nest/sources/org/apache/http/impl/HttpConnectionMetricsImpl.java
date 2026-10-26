@@ -5,7 +5,7 @@ import java.util.Map;
 import org.apache.http.HttpConnectionMetrics;
 import org.apache.http.io.HttpTransportMetrics;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpConnectionMetricsImpl implements HttpConnectionMetrics {
     public static final String RECEIVED_BYTES_COUNT = "http.received-bytes-count";
     public static final String REQUEST_COUNT = "http.request-count";

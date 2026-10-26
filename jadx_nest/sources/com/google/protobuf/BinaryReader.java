@@ -6,7 +6,7 @@ import java.nio.ByteBuffer;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 abstract class BinaryReader implements Reader {
     private static final int FIXED32_MULTIPLE_MASK = 3;
@@ -791,7 +791,7 @@ abstract class BinaryReader implements Reader {
             readMessageList(target, Protobuf.getInstance().schemaFor((Class) targetType), extensionRegistry);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.protobuf.Reader
         public <T> void readMessageList(List<T> target, Schema<T> schema, ExtensionRegistryLite extensionRegistry) throws IOException {
             int i;
@@ -816,7 +816,7 @@ abstract class BinaryReader implements Reader {
             readGroupList(target, Protobuf.getInstance().schemaFor((Class) targetType), extensionRegistry);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.protobuf.Reader
         @Deprecated
         public <T> void readGroupList(List<T> target, Schema<T> schema, ExtensionRegistryLite extensionRegistry) throws IOException {
@@ -1163,7 +1163,7 @@ abstract class BinaryReader implements Reader {
             this.pos = i;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.protobuf.Reader
         public <K, V> void readMap(Map<K, V> target, MapEntryLite.Metadata<K, V> metadata, ExtensionRegistryLite extensionRegistry) throws IOException {
             requireWireType(2);
@@ -1515,7 +1515,7 @@ abstract class BinaryReader implements Reader {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.BinaryReader$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.BinaryReader$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$FieldType;
 

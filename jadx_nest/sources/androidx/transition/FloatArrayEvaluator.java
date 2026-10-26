@@ -2,7 +2,7 @@ package androidx.transition;
 
 import android.animation.TypeEvaluator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class FloatArrayEvaluator implements TypeEvaluator<float[]> {
     private float[] mArray;
 

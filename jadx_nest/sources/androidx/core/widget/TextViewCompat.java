@@ -33,7 +33,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class TextViewCompat {
     public static final int AUTO_SIZE_TEXT_TYPE_NONE = 0;
     public static final int AUTO_SIZE_TEXT_TYPE_UNIFORM = 1;
@@ -85,7 +85,7 @@ public final class TextViewCompat {
         return textView.getCompoundDrawablesRelative();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static void setAutoSizeTextTypeWithDefaults(TextView textView, int i) {
         if (Build.VERSION.SDK_INT >= 27) {
             Api26Impl.setAutoSizeTextTypeWithDefaults(textView, i);
@@ -94,7 +94,7 @@ public final class TextViewCompat {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static void setAutoSizeTextTypeUniformWithConfiguration(TextView textView, int i, int i2, int i3, int i4) throws IllegalArgumentException {
         if (Build.VERSION.SDK_INT >= 27) {
             Api26Impl.setAutoSizeTextTypeUniformWithConfiguration(textView, i, i2, i3, i4);
@@ -103,7 +103,7 @@ public final class TextViewCompat {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static void setAutoSizeTextTypeUniformWithPresetSizes(TextView textView, int[] iArr, int i) throws IllegalArgumentException {
         if (Build.VERSION.SDK_INT >= 27) {
             Api26Impl.setAutoSizeTextTypeUniformWithPresetSizes(textView, iArr, i);
@@ -112,7 +112,7 @@ public final class TextViewCompat {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static int getAutoSizeTextType(TextView textView) {
         if (Build.VERSION.SDK_INT >= 27) {
             return Api26Impl.getAutoSizeTextType(textView);
@@ -123,7 +123,7 @@ public final class TextViewCompat {
         return 0;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static int getAutoSizeStepGranularity(TextView textView) {
         if (Build.VERSION.SDK_INT >= 27) {
             return Api26Impl.getAutoSizeStepGranularity(textView);
@@ -134,7 +134,7 @@ public final class TextViewCompat {
         return -1;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static int getAutoSizeMinTextSize(TextView textView) {
         if (Build.VERSION.SDK_INT >= 27) {
             return Api26Impl.getAutoSizeMinTextSize(textView);
@@ -145,7 +145,7 @@ public final class TextViewCompat {
         return -1;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static int getAutoSizeMaxTextSize(TextView textView) {
         if (Build.VERSION.SDK_INT >= 27) {
             return Api26Impl.getAutoSizeMaxTextSize(textView);
@@ -156,7 +156,7 @@ public final class TextViewCompat {
         return -1;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static int[] getAutoSizeTextAvailableSizes(TextView textView) {
         if (Build.VERSION.SDK_INT >= 27) {
             return Api26Impl.getAutoSizeTextAvailableSizes(textView);

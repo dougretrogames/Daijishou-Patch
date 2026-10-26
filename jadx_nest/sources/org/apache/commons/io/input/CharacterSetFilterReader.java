@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.function.IntPredicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CharacterSetFilterReader extends AbstractCharacterFilterReader {
     private static IntPredicate toIntPredicate(Set<Integer> set) {
         if (set == null) {

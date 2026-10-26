@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class GeneratedMessage extends AbstractMessage implements Serializable {
     protected static boolean alwaysUseFieldBuilders = false;
     private static final long serialVersionUID = 1;
@@ -77,8 +77,8 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:23:0x0066  */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:23:0x0066  */
     public Map<Descriptors.FieldDescriptor, Object> getAllFieldsMutable(boolean getBytesForString) {
         TreeMap treeMap = new TreeMap();
         List<Descriptors.FieldDescriptor> fields = internalGetFieldAccessorTable().descriptor.getFields();
@@ -250,7 +250,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
         return UnsafeUtil.hasUnsafeArrayOperations() && UnsafeUtil.hasUnsafeByteBufferOperations();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public static Internal.IntList emptyIntList() {
         return IntArrayList.emptyList();
     }
@@ -271,7 +271,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
         return BooleanArrayList.emptyList();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public static <ListT extends Internal.ProtobufList<?>> ListT makeMutableCopy(ListT listt) {
         return (ListT) makeMutableCopy(listt, 0);
     }
@@ -287,7 +287,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
         return (ListT) listt.mutableCopyWithCapacity2(i);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public static <T> Internal.ProtobufList<T> emptyList(Class<T> elementType) {
         return ProtobufArrayList.emptyList();
     }
@@ -356,7 +356,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
         }
 
         @Override // com.google.protobuf.AbstractMessage.Builder, com.google.protobuf.AbstractMessageLite.Builder
-        /* JADX INFO: renamed from: clone */
+        /* INFO: renamed from: clone */
         public BuilderT mo3377clone() {
             BuilderT buildert = (BuilderT) getDefaultInstanceForType().newBuilderForType();
             buildert.mergeFrom(buildPartial());
@@ -379,7 +379,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
             return Collections.unmodifiableMap(getAllFieldsMutable());
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public Map<Descriptors.FieldDescriptor, Object> getAllFieldsMutable() {
             TreeMap treeMap = new TreeMap();
             List<Descriptors.FieldDescriptor> fields = internalGetFieldAccessorTable().descriptor.getFields();
@@ -944,7 +944,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
             return builder == null || builder.isInitialized();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public FieldSet<Descriptors.FieldDescriptor> buildExtensions() {
             FieldSet.Builder<Descriptors.FieldDescriptor> builder = this.extensions;
             if (builder == null) {
@@ -1150,12 +1150,12 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.GeneratedMessage$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.GeneratedMessage$1, reason: invalid class name */
     class AnonymousClass1 extends CachedDescriptorRetriever {
         final /* synthetic */ int val$descriptorIndex;
         final /* synthetic */ Message val$scope;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(final Message val$scope, final int val$descriptorIndex) {
             super(null);
             this.val$scope = val$scope;
@@ -1234,7 +1234,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
             this.descriptorRetriever = new AnonymousClass1(descriptor);
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.GeneratedMessage$GeneratedExtension$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.GeneratedMessage$GeneratedExtension$1, reason: invalid class name */
         class AnonymousClass1 implements ExtensionDescriptorRetriever {
             final /* synthetic */ Descriptors.FieldDescriptor val$descriptor;
 
@@ -1346,7 +1346,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.GeneratedMessage$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.GeneratedMessage$2, reason: invalid class name */
     static /* synthetic */ class AnonymousClass2 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$Descriptors$FieldDescriptor$JavaType;
 
@@ -1364,7 +1364,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static java.lang.reflect.Method getMethodOrDie(final Class<?> clazz, final String name, final Class<?>... params) {
         try {
             return clazz.getMethod(name, params);
@@ -1373,7 +1373,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Object invokeOrDie(final java.lang.reflect.Method method, final Object object, final Object... params) {
         try {
             return method.invoke(object, params);
@@ -1526,7 +1526,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public FieldAccessor getField(final Descriptors.FieldDescriptor field) {
             if (field.getContainingType() != this.descriptor) {
                 throw new IllegalArgumentException("FieldDescriptor does not match message type.");
@@ -1537,7 +1537,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
             return this.fields[field.getIndex()];
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public OneofAccessor getOneof(final Descriptors.OneofDescriptor oneof) {
             if (oneof.getContainingType() != this.descriptor) {
                 throw new IllegalArgumentException("OneofDescriptor does not match message type.");
@@ -2364,7 +2364,7 @@ public abstract class GeneratedMessage extends AbstractMessage implements Serial
         return new GeneratedMessageLite.SerializedForm(this);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <MessageT extends ExtendableMessage<MessageT>, T> Extension<MessageT, T> checkNotLite(ExtensionLite<MessageT, T> extension) {
         if (extension.isLite()) {
             throw new IllegalArgumentException("Expected non-lite extension.");

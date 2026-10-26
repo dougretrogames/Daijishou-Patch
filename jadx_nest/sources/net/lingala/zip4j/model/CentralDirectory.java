@@ -3,7 +3,7 @@ package net.lingala.zip4j.model;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CentralDirectory {
     private List<FileHeader> fileHeaders = new ArrayList();
     private DigitalSignature digitalSignature = new DigitalSignature();

@@ -9,7 +9,7 @@ import androidx.emoji2.text.EmojiCompat;
 import java.lang.ref.Reference;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class EmojiTextWatcher implements TextWatcher {
     private final EditText mEditText;
     private final boolean mExpectInitializedEmojiCompat;

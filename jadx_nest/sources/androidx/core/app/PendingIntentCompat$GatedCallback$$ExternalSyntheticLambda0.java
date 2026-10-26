@@ -4,8 +4,8 @@ import android.app.PendingIntent;
 import android.content.Intent;
 import android.os.Bundle;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class PendingIntentCompat$GatedCallback$$ExternalSyntheticLambda0 implements PendingIntent.OnFinished {
     public final /* synthetic */ PendingIntentCompat.GatedCallback f$0;
 

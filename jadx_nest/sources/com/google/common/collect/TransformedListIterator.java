@@ -2,7 +2,7 @@ package com.google.common.collect;
 
 import java.util.ListIterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class TransformedListIterator<F, T> extends TransformedIterator<F, T> implements ListIterator<T> {
     TransformedListIterator(ListIterator<? extends F> backingIterator) {

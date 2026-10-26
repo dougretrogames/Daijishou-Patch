@@ -5,8 +5,8 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentOnAttachListener;
 import androidx.navigation.NavigatorState;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class FragmentNavigator$$ExternalSyntheticLambda1 implements FragmentOnAttachListener {
     public final /* synthetic */ NavigatorState f$0;
     public final /* synthetic */ FragmentNavigator f$1;

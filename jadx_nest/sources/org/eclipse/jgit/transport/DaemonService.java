@@ -8,7 +8,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.transport.resolver.ServiceNotAuthorizedException;
 import org.eclipse.jgit.transport.resolver.ServiceNotEnabledException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class DaemonService {
     private final String command;
     private final Config.SectionParser<ServiceConfig> configKey;
@@ -23,12 +23,12 @@ public abstract class DaemonService {
         this.overridable = true;
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-transport-DaemonService, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-transport-DaemonService, reason: not valid java name */
     /* synthetic */ ServiceConfig m5806lambda$0$orgeclipsejgittransportDaemonService(String str, Config config) {
         return new ServiceConfig(this, config, str);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class ServiceConfig {
         final boolean enabled;
 

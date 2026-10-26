@@ -9,7 +9,7 @@ import java.util.NoSuchElementException;
 import java.util.Objects;
 import org.apache.commons.collections4.ResettableListIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ListIteratorWrapper<E> implements ResettableListIterator<E> {
     private static final String CANNOT_REMOVE_MESSAGE = "Cannot remove element at index {0}.";
     private static final String UNSUPPORTED_OPERATION_MESSAGE = "ListIteratorWrapper does not support optional operations of ListIterator.";

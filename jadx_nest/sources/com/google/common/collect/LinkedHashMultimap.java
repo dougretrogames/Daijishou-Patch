@@ -14,7 +14,7 @@ import java.util.NoSuchElementException;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class LinkedHashMultimap<K, V> extends LinkedHashMultimapGwtSerializationDependencies<K, V> {
     private static final int DEFAULT_KEY_CAPACITY = 16;
@@ -79,7 +79,7 @@ public final class LinkedHashMultimap<K, V> extends LinkedHashMultimapGwtSeriali
         return super.keys();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractSetMultimap, com.google.common.collect.AbstractMapBasedMultimap, com.google.common.collect.AbstractMultimap, com.google.common.collect.Multimap
     public /* bridge */ /* synthetic */ boolean put(@ParametricNullness Object key, @ParametricNullness Object value) {
         return super.put(key, value);
@@ -90,7 +90,7 @@ public final class LinkedHashMultimap<K, V> extends LinkedHashMultimapGwtSeriali
         return super.putAll(multimap);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractMultimap, com.google.common.collect.Multimap
     public /* bridge */ /* synthetic */ boolean putAll(@ParametricNullness Object key, Iterable values) {
         return super.putAll(key, values);
@@ -130,24 +130,24 @@ public final class LinkedHashMultimap<K, V> extends LinkedHashMultimapGwtSeriali
         return linkedHashMultimapCreate;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <K, V> void succeedsInValueSet(ValueSetLink<K, V> pred, ValueSetLink<K, V> succ) {
         pred.setSuccessorInValueSet(succ);
         succ.setPredecessorInValueSet(pred);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <K, V> void succeedsInMultimap(ValueEntry<K, V> pred, ValueEntry<K, V> succ) {
         pred.setSuccessorInMultimap(succ);
         succ.setPredecessorInMultimap(pred);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <K, V> void deleteFromValueSet(ValueSetLink<K, V> entry) {
         succeedsInValueSet(entry.getPredecessorInValueSet(), entry.getSuccessorInValueSet());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <K, V> void deleteFromMultimap(ValueEntry<K, V> entry) {
         succeedsInMultimap(entry.getPredecessorInMultimap(), entry.getSuccessorInMultimap());
     }
@@ -231,7 +231,7 @@ public final class LinkedHashMultimap<K, V> extends LinkedHashMultimapGwtSeriali
         succeedsInMultimap(valueEntryNewHeader, valueEntryNewHeader);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractSetMultimap, com.google.common.collect.AbstractMapBasedMultimap
     public Set<V> createCollection() {
         return Platform.newLinkedHashSetWithExpectedSize(this.valueSetCapacity);
@@ -301,7 +301,7 @@ public final class LinkedHashMultimap<K, V> extends LinkedHashMultimapGwtSeriali
             this.firstEntry = entry;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.LinkedHashMultimap$ValueSet$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.LinkedHashMultimap$ValueSet$1, reason: invalid class name */
         class AnonymousClass1 implements Iterator<V> {
             int expectedModCount;
             ValueSetLink<K, V> nextEntry;
@@ -442,7 +442,7 @@ public final class LinkedHashMultimap<K, V> extends LinkedHashMultimapGwtSeriali
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.LinkedHashMultimap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.LinkedHashMultimap$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<Map.Entry<K, V>> {
         ValueEntry<K, V> nextEntry;
 
@@ -508,7 +508,7 @@ public final class LinkedHashMultimap<K, V> extends LinkedHashMultimapGwtSeriali
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void readObject(ObjectInputStream stream) throws ClassNotFoundException, IOException {
         stream.defaultReadObject();
         ValueEntry<K, V> valueEntryNewHeader = ValueEntry.newHeader();

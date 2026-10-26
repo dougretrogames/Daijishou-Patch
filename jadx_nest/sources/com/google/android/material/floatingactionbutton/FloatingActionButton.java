@@ -45,7 +45,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FloatingActionButton extends VisibilityAwareImageButton implements TintableBackgroundView, TintableImageSourceView, ExpandableTransformationWidget, Shapeable, CoordinatorLayout.AttachedBehavior {
     private static final int AUTO_MINI_LARGEST_SCREEN_WIDTH = 470;
     private static final int DEF_STYLE_RES = R.style.Widget_Design_FloatingActionButton;
@@ -92,7 +92,7 @@ public class FloatingActionButton extends VisibilityAwareImageButton implements 
         this(context, attributeSet, R.attr.floatingActionButtonStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public FloatingActionButton(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -408,7 +408,7 @@ public class FloatingActionButton extends VisibilityAwareImageButton implements 
         return this.size;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButton$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.FloatingActionButton$1, reason: invalid class name */
     class AnonymousClass1 implements FloatingActionButtonImpl.InternalVisibilityChangedListener {
         final /* synthetic */ OnVisibilityChangedListener val$listener;
 

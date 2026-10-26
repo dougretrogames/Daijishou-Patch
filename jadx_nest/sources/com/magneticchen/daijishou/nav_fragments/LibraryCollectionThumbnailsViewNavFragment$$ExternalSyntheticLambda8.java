@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.nav_fragments;
 import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class LibraryCollectionThumbnailsViewNavFragment$$ExternalSyntheticLambda8 implements View.OnClickListener {
     public final /* synthetic */ AppCompatActivity f$0;
     public final /* synthetic */ LibraryCollectionThumbnailsViewNavFragment f$1;

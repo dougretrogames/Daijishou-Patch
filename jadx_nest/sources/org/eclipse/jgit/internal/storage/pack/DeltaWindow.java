@@ -10,7 +10,7 @@ import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.storage.pack.PackConfig;
 import org.eclipse.jgit.util.TemporaryBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class DeltaWindow {
     private static final boolean NEXT_RES = false;
     private static final boolean NEXT_SRC = true;
@@ -82,64 +82,64 @@ final class DeltaWindow {
         return false;
     }
 
-    /* JADX WARN: Code duplicated, block: B:38:0x0093  */
-    /* JADX WARN: Code restructure failed: missing block: B:13:0x001f, code lost:
+    /* WARN: Code duplicated, block: B:38:0x0093  */
+    /* WARN: Code restructure failed: missing block: B:13:0x001f, code lost:
     
         if (r8.maxMemory == 0) goto L21;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:14:0x0021, code lost:
+    /* WARN: Code restructure failed: missing block: B:14:0x0021, code lost:
     
         clear(r8.res);
         r1 = estimateSize(r0);
         r3 = r8.res.next;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:16:0x0035, code lost:
+    /* WARN: Code restructure failed: missing block: B:16:0x0035, code lost:
     
         if (r8.maxMemory >= (r8.loaded + r1)) goto L51;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:18:0x0039, code lost:
+    /* WARN: Code restructure failed: missing block: B:18:0x0039, code lost:
     
         if (r3 != r8.res) goto L20;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:20:0x003c, code lost:
+    /* WARN: Code restructure failed: missing block: B:20:0x003c, code lost:
     
         clear(r3);
         r3 = r3.next;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:21:0x0042, code lost:
+    /* WARN: Code restructure failed: missing block: B:21:0x0042, code lost:
     
         r8.res.set(r0);
         clearWindowOnTypeSwitch();
      */
-    /* JADX WARN: Code restructure failed: missing block: B:22:0x0052, code lost:
+    /* WARN: Code restructure failed: missing block: B:22:0x0052, code lost:
     
         if (r8.res.object.isEdge() != false) goto L45;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:24:0x005c, code lost:
+    /* WARN: Code restructure failed: missing block: B:24:0x005c, code lost:
     
         if (r8.res.object.doNotAttemptDelta() == false) goto L47;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:26:0x005f, code lost:
+    /* WARN: Code restructure failed: missing block: B:26:0x005f, code lost:
     
         r1 = r8.bytesPerUnit;
         r3 = r8.bytesProcessed + ((long) r0.getWeight());
         r8.bytesProcessed = r3;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:27:0x006d, code lost:
+    /* WARN: Code restructure failed: missing block: B:27:0x006d, code lost:
     
         if (r1 > r3) goto L29;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:28:0x006f, code lost:
+    /* WARN: Code restructure failed: missing block: B:28:0x006f, code lost:
     
         r0 = (int) (r3 / r8.bytesPerUnit);
         r8.monitor.update(r0);
         r8.bytesProcessed -= ((long) r0) * r8.bytesPerUnit;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:29:0x0081, code lost:
+    /* WARN: Code restructure failed: missing block: B:29:0x0081, code lost:
     
         searchInWindow();
      */
-    /* JADX WARN: Code restructure failed: missing block: B:30:0x0086, code lost:
+    /* WARN: Code restructure failed: missing block: B:30:0x0086, code lost:
     
         keepInWindow();
      */

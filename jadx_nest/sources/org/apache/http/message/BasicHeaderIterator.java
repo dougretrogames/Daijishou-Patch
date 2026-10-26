@@ -5,7 +5,7 @@ import org.apache.http.Header;
 import org.apache.http.HeaderIterator;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicHeaderIterator implements HeaderIterator {
     protected final Header[] allHeaders;
     protected int currentIndex = findNext(-1);

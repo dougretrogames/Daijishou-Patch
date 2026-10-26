@@ -8,7 +8,7 @@ import javax.annotation.Nullable;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public interface Converter<F, T> {
     @Nullable
     T convert(F f) throws IOException;

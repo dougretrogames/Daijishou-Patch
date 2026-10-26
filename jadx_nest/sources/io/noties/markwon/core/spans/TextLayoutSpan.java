@@ -5,7 +5,7 @@ import android.text.Spannable;
 import android.text.Spanned;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class TextLayoutSpan {
     private final WeakReference<Layout> reference;
 

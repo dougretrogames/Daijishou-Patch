@@ -18,7 +18,7 @@ import java.util.Iterator;
 import java.util.List;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class CustomViewTarget<T extends View, Z> implements Target<Z> {
     private static final String TAG = "CustomViewTarget";
     private static final int VIEW_TAG_ID = R.id.glide_custom_view_target_tag;
@@ -69,7 +69,7 @@ public abstract class CustomViewTarget<T extends View, Z> implements Target<Z> {
         return this;
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.request.target.CustomViewTarget$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.request.target.CustomViewTarget$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnAttachStateChangeListener {
         AnonymousClass1() {
         }

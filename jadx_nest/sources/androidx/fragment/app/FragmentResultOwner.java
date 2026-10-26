@@ -3,7 +3,7 @@ package androidx.fragment.app;
 import android.os.Bundle;
 import androidx.lifecycle.LifecycleOwner;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface FragmentResultOwner {
     void clearFragmentResult(String str);
 

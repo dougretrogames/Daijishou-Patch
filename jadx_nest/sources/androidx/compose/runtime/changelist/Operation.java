@@ -36,8 +36,8 @@ import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Reflection;
 import org.eclipse.jgit.lib.Constants;
 
-/* JADX INFO: compiled from: Operation.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Operation.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000Æ\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b!\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b0\u0018\u00002\u00020\u0001:!\u001f !\"#$%&'()*+,-./0123456789:;<=>?B\u001b\b\u0004\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0003¢\u0006\u0002\u0010\u0005J\u001a\u0010\r\u001a\u00020\t2\u0006\u0010\u000e\u001a\u00020\u000fH\u0016ø\u0001\u0000¢\u0006\u0004\b\u0010\u0010\u0011J\u001e\u0010\u0012\u001a\u00020\t2\n\u0010\u000e\u001a\u0006\u0012\u0002\b\u00030\u0013H\u0016ø\u0001\u0000¢\u0006\u0004\b\u0014\u0010\u0011J\b\u0010\u0015\u001a\u00020\tH\u0016J(\u0010\u0016\u001a\u00020\u0017*\u00020\u00182\n\u0010\u0019\u001a\u0006\u0012\u0002\b\u00030\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH&R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0011\u0010\b\u001a\u00020\t8F¢\u0006\u0006\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u0007\u0082\u0001\u001f@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006_"}, d2 = {"Landroidx/compose/runtime/changelist/Operation;", "", "ints", "", Constants.OBJECTS, "(II)V", "getInts", "()I", "name", "", "getName", "()Ljava/lang/String;", "getObjects", "intParamName", "parameter", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "intParamName-w8GmfQM", "(I)Ljava/lang/String;", "objectParamName", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "objectParamName-31yXWZQ", "toString", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "AdvanceSlotsBy", "ApplyChangeList", "CopyNodesToNewAnchorLocation", "CopySlotTableToAnchorLocation", "DeactivateCurrentGroup", "DetermineMovableContentNodeIndex", "Downs", "EndCompositionScope", "EndCurrentGroup", "EndMovableContentPlacement", "EnsureGroupStarted", "EnsureRootGroupStarted", "InsertNodeFixup", "InsertSlots", "InsertSlotsWithFixups", "IntParameter", "MoveCurrentGroup", "MoveNode", "ObjectParameter", "PostInsertNodeFixup", "ReleaseMovableGroupAtCurrent", "Remember", "RemoveCurrentGroup", "RemoveNode", "ResetSlots", "SideEffect", "SkipToEndOfCurrentGroup", "TestOperation", "UpdateAuxData", "UpdateNode", "UpdateValue", "Ups", "UseCurrentNode", "Landroidx/compose/runtime/changelist/Operation$AdvanceSlotsBy;", "Landroidx/compose/runtime/changelist/Operation$ApplyChangeList;", "Landroidx/compose/runtime/changelist/Operation$CopyNodesToNewAnchorLocation;", "Landroidx/compose/runtime/changelist/Operation$CopySlotTableToAnchorLocation;", "Landroidx/compose/runtime/changelist/Operation$DeactivateCurrentGroup;", "Landroidx/compose/runtime/changelist/Operation$DetermineMovableContentNodeIndex;", "Landroidx/compose/runtime/changelist/Operation$Downs;", "Landroidx/compose/runtime/changelist/Operation$EndCompositionScope;", "Landroidx/compose/runtime/changelist/Operation$EndCurrentGroup;", "Landroidx/compose/runtime/changelist/Operation$EndMovableContentPlacement;", "Landroidx/compose/runtime/changelist/Operation$EnsureGroupStarted;", "Landroidx/compose/runtime/changelist/Operation$EnsureRootGroupStarted;", "Landroidx/compose/runtime/changelist/Operation$InsertNodeFixup;", "Landroidx/compose/runtime/changelist/Operation$InsertSlots;", "Landroidx/compose/runtime/changelist/Operation$InsertSlotsWithFixups;", "Landroidx/compose/runtime/changelist/Operation$MoveCurrentGroup;", "Landroidx/compose/runtime/changelist/Operation$MoveNode;", "Landroidx/compose/runtime/changelist/Operation$PostInsertNodeFixup;", "Landroidx/compose/runtime/changelist/Operation$ReleaseMovableGroupAtCurrent;", "Landroidx/compose/runtime/changelist/Operation$Remember;", "Landroidx/compose/runtime/changelist/Operation$RemoveCurrentGroup;", "Landroidx/compose/runtime/changelist/Operation$RemoveNode;", "Landroidx/compose/runtime/changelist/Operation$ResetSlots;", "Landroidx/compose/runtime/changelist/Operation$SideEffect;", "Landroidx/compose/runtime/changelist/Operation$SkipToEndOfCurrentGroup;", "Landroidx/compose/runtime/changelist/Operation$TestOperation;", "Landroidx/compose/runtime/changelist/Operation$UpdateAuxData;", "Landroidx/compose/runtime/changelist/Operation$UpdateNode;", "Landroidx/compose/runtime/changelist/Operation$UpdateValue;", "Landroidx/compose/runtime/changelist/Operation$Ups;", "Landroidx/compose/runtime/changelist/Operation$UseCurrentNode;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public abstract class Operation {
     public static final int $stable = 0;
@@ -72,12 +72,12 @@ public abstract class Operation {
         return simpleName == null ? "" : simpleName;
     }
 
-    /* JADX INFO: renamed from: intParamName-w8GmfQM, reason: not valid java name */
+    /* INFO: renamed from: intParamName-w8GmfQM, reason: not valid java name */
     public String mo72intParamNamew8GmfQM(int parameter) {
         return "IntParameter(" + parameter + ')';
     }
 
-    /* JADX INFO: renamed from: objectParamName-31yXWZQ, reason: not valid java name */
+    /* INFO: renamed from: objectParamName-31yXWZQ, reason: not valid java name */
     public String mo73objectParamName31yXWZQ(int parameter) {
         return "ObjectParameter(" + parameter + ')';
     }
@@ -86,38 +86,38 @@ public abstract class Operation {
         return getName();
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0010\u000e\n\u0002\b\u0003\b\u0087@\u0018\u00002\u00020\u0001B\u000f\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0004\b\u0004\u0010\u0005J\u001a\u0010\b\u001a\u00020\t2\b\u0010\n\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b\u000b\u0010\fJ\u0010\u0010\r\u001a\u00020\u0003HÖ\u0001¢\u0006\u0004\b\u000e\u0010\u0005J\u0010\u0010\u000f\u001a\u00020\u0010HÖ\u0001¢\u0006\u0004\b\u0011\u0010\u0012R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007\u0088\u0001\u0002¨\u0006\u0013"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$IntParameter;", "", TypedValues.CycleType.S_WAVE_OFFSET, "", "constructor-impl", "(I)I", "getOffset", "()I", "equals", "", "other", "equals-impl", "(ILjava/lang/Object;)Z", "hashCode", "hashCode-impl", "toString", "", "toString-impl", "(I)Ljava/lang/String;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     @JvmInline
     public static final class IntParameter {
         private final int offset;
 
-        /* JADX INFO: renamed from: box-impl, reason: not valid java name */
+        /* INFO: renamed from: box-impl, reason: not valid java name */
         public static final /* synthetic */ IntParameter m97boximpl(int i) {
             return new IntParameter(i);
         }
 
-        /* JADX INFO: renamed from: constructor-impl, reason: not valid java name */
+        /* INFO: renamed from: constructor-impl, reason: not valid java name */
         public static int m98constructorimpl(int i) {
             return i;
         }
 
-        /* JADX INFO: renamed from: equals-impl, reason: not valid java name */
+        /* INFO: renamed from: equals-impl, reason: not valid java name */
         public static boolean m99equalsimpl(int i, Object obj) {
             return (obj instanceof IntParameter) && i == ((IntParameter) obj).m103unboximpl();
         }
 
-        /* JADX INFO: renamed from: equals-impl0, reason: not valid java name */
+        /* INFO: renamed from: equals-impl0, reason: not valid java name */
         public static final boolean m100equalsimpl0(int i, int i2) {
             return i == i2;
         }
 
-        /* JADX INFO: renamed from: hashCode-impl, reason: not valid java name */
+        /* INFO: renamed from: hashCode-impl, reason: not valid java name */
         public static int m101hashCodeimpl(int i) {
             return Integer.hashCode(i);
         }
 
-        /* JADX INFO: renamed from: toString-impl, reason: not valid java name */
+        /* INFO: renamed from: toString-impl, reason: not valid java name */
         public static String m102toStringimpl(int i) {
             return "IntParameter(offset=" + i + ')';
         }
@@ -134,7 +134,7 @@ public abstract class Operation {
             return m102toStringimpl(this.offset);
         }
 
-        /* JADX INFO: renamed from: unbox-impl, reason: not valid java name */
+        /* INFO: renamed from: unbox-impl, reason: not valid java name */
         public final /* synthetic */ int m103unboximpl() {
             return this.offset;
         }
@@ -148,38 +148,38 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0010\u000e\n\u0002\b\u0003\b\u0087@\u0018\u0000*\u0004\b\u0000\u0010\u00012\u00020\u0002B\u000f\u0012\u0006\u0010\u0003\u001a\u00020\u0004¢\u0006\u0004\b\u0005\u0010\u0006J\u001a\u0010\t\u001a\u00020\n2\b\u0010\u000b\u001a\u0004\u0018\u00010\u0002HÖ\u0003¢\u0006\u0004\b\f\u0010\rJ\u0010\u0010\u000e\u001a\u00020\u0004HÖ\u0001¢\u0006\u0004\b\u000f\u0010\u0006J\u0010\u0010\u0010\u001a\u00020\u0011HÖ\u0001¢\u0006\u0004\b\u0012\u0010\u0013R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\b\u0088\u0001\u0003¨\u0006\u0014"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", ExifInterface.GPS_DIRECTION_TRUE, "", TypedValues.CycleType.S_WAVE_OFFSET, "", "constructor-impl", "(I)I", "getOffset", "()I", "equals", "", "other", "equals-impl", "(ILjava/lang/Object;)Z", "hashCode", "hashCode-impl", "toString", "", "toString-impl", "(I)Ljava/lang/String;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     @JvmInline
     public static final class ObjectParameter<T> {
         private final int offset;
 
-        /* JADX INFO: renamed from: box-impl, reason: not valid java name */
+        /* INFO: renamed from: box-impl, reason: not valid java name */
         public static final /* synthetic */ ObjectParameter m108boximpl(int i) {
             return new ObjectParameter(i);
         }
 
-        /* JADX INFO: renamed from: constructor-impl, reason: not valid java name */
+        /* INFO: renamed from: constructor-impl, reason: not valid java name */
         public static <T> int m109constructorimpl(int i) {
             return i;
         }
 
-        /* JADX INFO: renamed from: equals-impl, reason: not valid java name */
+        /* INFO: renamed from: equals-impl, reason: not valid java name */
         public static boolean m110equalsimpl(int i, Object obj) {
             return (obj instanceof ObjectParameter) && i == ((ObjectParameter) obj).m114unboximpl();
         }
 
-        /* JADX INFO: renamed from: equals-impl0, reason: not valid java name */
+        /* INFO: renamed from: equals-impl0, reason: not valid java name */
         public static final boolean m111equalsimpl0(int i, int i2) {
             return i == i2;
         }
 
-        /* JADX INFO: renamed from: hashCode-impl, reason: not valid java name */
+        /* INFO: renamed from: hashCode-impl, reason: not valid java name */
         public static int m112hashCodeimpl(int i) {
             return Integer.hashCode(i);
         }
 
-        /* JADX INFO: renamed from: toString-impl, reason: not valid java name */
+        /* INFO: renamed from: toString-impl, reason: not valid java name */
         public static String m113toStringimpl(int i) {
             return "ObjectParameter(offset=" + i + ')';
         }
@@ -196,7 +196,7 @@ public abstract class Operation {
             return m113toStringimpl(this.offset);
         }
 
-        /* JADX INFO: renamed from: unbox-impl, reason: not valid java name */
+        /* INFO: renamed from: unbox-impl, reason: not valid java name */
         public final /* synthetic */ int m114unboximpl() {
             return this.offset;
         }
@@ -210,7 +210,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001a\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\n\u0010\u000bJ(\u0010\f\u001a\u00020\r*\u00020\u000e2\n\u0010\u000f\u001a\u0006\u0012\u0002\b\u00030\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0016R\u0018\u0010\u0003\u001a\u00020\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0015"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$Ups;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Count", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "getCount-jn0FJLE", "()I", "intParamName", "", "parameter", "intParamName-w8GmfQM", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class Ups extends Operation {
         public static final int $stable = 0;
@@ -220,13 +220,13 @@ public abstract class Operation {
             super(1, 0, 2, null);
         }
 
-        /* JADX INFO: renamed from: getCount-jn0FJLE, reason: not valid java name */
+        /* INFO: renamed from: getCount-jn0FJLE, reason: not valid java name */
         public final int m129getCountjn0FJLE() {
             return IntParameter.m98constructorimpl(0);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: intParamName-w8GmfQM */
+        /* INFO: renamed from: intParamName-w8GmfQM */
         public String mo72intParamNamew8GmfQM(int parameter) {
             return IntParameter.m100equalsimpl0(parameter, IntParameter.m98constructorimpl(0)) ? "count" : super.mo72intParamNamew8GmfQM(parameter);
         }
@@ -240,7 +240,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0011\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\t\u001a\u00020\n2\n\u0010\u000b\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\f\u0010\rJ(\u0010\u000e\u001a\u00020\u000f*\u00020\u00102\n\u0010\u0011\u001a\u0006\u0012\u0002\b\u00030\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u0016H\u0016R&\u0010\u0003\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010\u00060\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0007\u0010\b\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0017"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$Downs;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Nodes", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "", "", "getNodes-HpuvwBQ", "()I", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class Downs extends Operation {
         public static final int $stable = 0;
@@ -250,7 +250,7 @@ public abstract class Operation {
             super(0, 1, 1, null);
         }
 
-        /* JADX INFO: renamed from: getNodes-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getNodes-HpuvwBQ, reason: not valid java name */
         public final int m85getNodesHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
@@ -264,13 +264,13 @@ public abstract class Operation {
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             return ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0)) ? "nodes" : super.mo73objectParamName31yXWZQ(parameter);
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001a\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\n\u0010\u000bJ(\u0010\f\u001a\u00020\r*\u00020\u000e2\n\u0010\u000f\u001a\u0006\u0012\u0002\b\u00030\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0016R\u0018\u0010\u0003\u001a\u00020\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0015"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$AdvanceSlotsBy;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Distance", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "getDistance-jn0FJLE", "()I", "intParamName", "", "parameter", "intParamName-w8GmfQM", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class AdvanceSlotsBy extends Operation {
         public static final int $stable = 0;
@@ -280,13 +280,13 @@ public abstract class Operation {
             super(1, 0, 2, null);
         }
 
-        /* JADX INFO: renamed from: getDistance-jn0FJLE, reason: not valid java name */
+        /* INFO: renamed from: getDistance-jn0FJLE, reason: not valid java name */
         public final int m74getDistancejn0FJLE() {
             return IntParameter.m98constructorimpl(0);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: intParamName-w8GmfQM */
+        /* INFO: renamed from: intParamName-w8GmfQM */
         public String mo72intParamNamew8GmfQM(int parameter) {
             return IntParameter.m100equalsimpl0(parameter, IntParameter.m98constructorimpl(0)) ? "distance" : super.mo72intParamNamew8GmfQM(parameter);
         }
@@ -297,7 +297,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\t\u001a\u00020\n2\n\u0010\u000b\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\f\u0010\rJ(\u0010\u000e\u001a\u00020\u0006*\u00020\u000f2\n\u0010\u0010\u001a\u0006\u0012\u0002\b\u00030\u00112\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0016R$\u0010\u0003\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00060\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0007\u0010\b\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0016"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$SideEffect;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Effect", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Lkotlin/Function0;", "", "getEffect-HpuvwBQ", "()I", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class SideEffect extends Operation {
         public static final int $stable = 0;
@@ -307,13 +307,13 @@ public abstract class Operation {
             super(0, 1, 1, null);
         }
 
-        /* JADX INFO: renamed from: getEffect-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getEffect-HpuvwBQ, reason: not valid java name */
         public final int m123getEffectHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             return ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0)) ? "effect" : super.mo73objectParamName31yXWZQ(parameter);
         }
@@ -324,7 +324,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\b\u001a\u00020\t2\n\u0010\n\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u000b\u0010\fJ(\u0010\r\u001a\u00020\u000e*\u00020\u000f2\n\u0010\u0010\u001a\u0006\u0012\u0002\b\u00030\u00112\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0016R\u001e\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0016"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$Remember;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Value", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Landroidx/compose/runtime/RememberObserver;", "getValue-HpuvwBQ", "()I", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class Remember extends Operation {
         public static final int $stable = 0;
@@ -334,13 +334,13 @@ public abstract class Operation {
             super(0, 1, 1, null);
         }
 
-        /* JADX INFO: renamed from: getValue-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getValue-HpuvwBQ, reason: not valid java name */
         public final int m120getValueHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             return ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0)) ? "value" : super.mo73objectParamName31yXWZQ(parameter);
         }
@@ -351,7 +351,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001a\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u000e\u0010\u000fJ\u001e\u0010\u0010\u001a\u00020\f2\n\u0010\r\u001a\u0006\u0012\u0002\b\u00030\bH\u0016ø\u0001\u0000¢\u0006\u0004\b\u0011\u0010\u000fJ(\u0010\u0012\u001a\u00020\u0013*\u00020\u00142\n\u0010\u0015\u001a\u0006\u0012\u0002\b\u00030\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aH\u0016R\u0018\u0010\u0003\u001a\u00020\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006R \u0010\u0007\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\t0\b8Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\n\u0010\u0006\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001b"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$UpdateValue;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "GroupSlotIndex", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "getGroupSlotIndex-jn0FJLE", "()I", "Value", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "", "getValue-HpuvwBQ", "intParamName", "", "parameter", "intParamName-w8GmfQM", "(I)Ljava/lang/String;", "objectParamName", "objectParamName-31yXWZQ", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class UpdateValue extends Operation {
         public static final int $stable = 0;
@@ -361,24 +361,24 @@ public abstract class Operation {
             super(1, 1, null);
         }
 
-        /* JADX INFO: renamed from: getValue-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getValue-HpuvwBQ, reason: not valid java name */
         public final int m128getValueHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getGroupSlotIndex-jn0FJLE, reason: not valid java name */
+        /* INFO: renamed from: getGroupSlotIndex-jn0FJLE, reason: not valid java name */
         public final int m127getGroupSlotIndexjn0FJLE() {
             return IntParameter.m98constructorimpl(0);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: intParamName-w8GmfQM */
+        /* INFO: renamed from: intParamName-w8GmfQM */
         public String mo72intParamNamew8GmfQM(int parameter) {
             return IntParameter.m100equalsimpl0(parameter, IntParameter.m98constructorimpl(0)) ? "groupSlotIndex" : super.mo72intParamNamew8GmfQM(parameter);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             return ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0)) ? "value" : super.mo73objectParamName31yXWZQ(parameter);
         }
@@ -399,7 +399,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\b\u001a\u00020\t2\n\u0010\n\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u000b\u0010\fJ(\u0010\r\u001a\u00020\u000e*\u00020\u000f2\n\u0010\u0010\u001a\u0006\u0012\u0002\b\u00030\u00112\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0016R \u0010\u0003\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0016"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$UpdateAuxData;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Data", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "", "getData-HpuvwBQ", "()I", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class UpdateAuxData extends Operation {
         public static final int $stable = 0;
@@ -409,13 +409,13 @@ public abstract class Operation {
             super(0, 1, 1, null);
         }
 
-        /* JADX INFO: renamed from: getData-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getData-HpuvwBQ, reason: not valid java name */
         public final int m124getDataHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             return ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0)) ? "data" : super.mo73objectParamName31yXWZQ(parameter);
         }
@@ -426,7 +426,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J(\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\n\u0010\u0006\u001a\u0006\u0012\u0002\b\u00030\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016¨\u0006\f"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$EnsureRootGroupStarted;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class EnsureRootGroupStarted extends Operation {
         public static final int $stable = 0;
@@ -442,7 +442,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\b\u001a\u00020\t2\n\u0010\n\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u000b\u0010\fJ(\u0010\r\u001a\u00020\u000e*\u00020\u000f2\n\u0010\u0010\u001a\u0006\u0012\u0002\b\u00030\u00112\u0006\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0016R\u001e\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0016"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$EnsureGroupStarted;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Anchor", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Landroidx/compose/runtime/Anchor;", "getAnchor-HpuvwBQ", "()I", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class EnsureGroupStarted extends Operation {
         public static final int $stable = 0;
@@ -452,13 +452,13 @@ public abstract class Operation {
             super(0, 1, 1, null);
         }
 
-        /* JADX INFO: renamed from: getAnchor-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getAnchor-HpuvwBQ, reason: not valid java name */
         public final int m88getAnchorHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             return ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0)) ? "anchor" : super.mo73objectParamName31yXWZQ(parameter);
         }
@@ -469,7 +469,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J(\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\n\u0010\u0006\u001a\u0006\u0012\u0002\b\u00030\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016¨\u0006\f"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$RemoveCurrentGroup;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class RemoveCurrentGroup extends Operation {
         public static final int $stable = 0;
@@ -485,7 +485,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001a\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\n\u0010\u000bJ(\u0010\f\u001a\u00020\r*\u00020\u000e2\n\u0010\u000f\u001a\u0006\u0012\u0002\b\u00030\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0014H\u0016R\u0018\u0010\u0003\u001a\u00020\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0015"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$MoveCurrentGroup;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Offset", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "getOffset-jn0FJLE", "()I", "intParamName", "", "parameter", "intParamName-w8GmfQM", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class MoveCurrentGroup extends Operation {
         public static final int $stable = 0;
@@ -495,13 +495,13 @@ public abstract class Operation {
             super(1, 0, 2, null);
         }
 
-        /* JADX INFO: renamed from: getOffset-jn0FJLE, reason: not valid java name */
+        /* INFO: renamed from: getOffset-jn0FJLE, reason: not valid java name */
         public final int m104getOffsetjn0FJLE() {
             return IntParameter.m98constructorimpl(0);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: intParamName-w8GmfQM */
+        /* INFO: renamed from: intParamName-w8GmfQM */
         public String mo72intParamNamew8GmfQM(int parameter) {
             return IntParameter.m100equalsimpl0(parameter, IntParameter.m98constructorimpl(0)) ? TypedValues.CycleType.S_WAVE_OFFSET : super.mo72intParamNamew8GmfQM(parameter);
         }
@@ -512,7 +512,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J(\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\n\u0010\u0006\u001a\u0006\u0012\u0002\b\u00030\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016¨\u0006\f"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$EndCurrentGroup;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class EndCurrentGroup extends Operation {
         public static final int $stable = 0;
@@ -528,7 +528,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J(\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\n\u0010\u0006\u001a\u0006\u0012\u0002\b\u00030\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016¨\u0006\f"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$SkipToEndOfCurrentGroup;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class SkipToEndOfCurrentGroup extends Operation {
         public static final int $stable = 0;
@@ -544,7 +544,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\f\u001a\u00020\r2\n\u0010\u000e\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u000f\u0010\u0010J(\u0010\u0011\u001a\u00020\u0007*\u00020\u00122\n\u0010\u0013\u001a\u0006\u0012\u0002\b\u00030\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0016R*\u0010\u0003\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\b\u0010\tR\u001e\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00060\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u000b\u0010\t\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0019"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$EndCompositionScope;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Action", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Lkotlin/Function1;", "Landroidx/compose/runtime/Composition;", "", "getAction-HpuvwBQ", "()I", "Composition", "getComposition-HpuvwBQ", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class EndCompositionScope extends Operation {
         public static final int $stable = 0;
@@ -554,18 +554,18 @@ public abstract class Operation {
             super(0, 2, 1, null);
         }
 
-        /* JADX INFO: renamed from: getAction-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getAction-HpuvwBQ, reason: not valid java name */
         public final int m86getActionHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getComposition-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getComposition-HpuvwBQ, reason: not valid java name */
         public final int m87getCompositionHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(1);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             if (ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0))) {
                 return "anchor";
@@ -579,7 +579,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J(\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\n\u0010\u0006\u001a\u0006\u0012\u0002\b\u00030\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016¨\u0006\f"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$UseCurrentNode;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class UseCurrentNode extends Operation {
         public static final int $stable = 0;
@@ -597,7 +597,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\r\u001a\u00020\u000e2\n\u0010\u000f\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u0010\u0010\u0011J(\u0010\u0012\u001a\u00020\u0007*\u00020\u00132\n\u0010\u0014\u001a\u0006\u0012\u0002\b\u00030\u00152\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0019H\u0016R9\u0010\u0003\u001a#\u0012\u001f\u0012\u001d\u0012\u0006\u0012\u0004\u0018\u00010\u0006\u0012\u0006\u0012\u0004\u0018\u00010\u0006\u0012\u0004\u0012\u00020\u00070\u0005¢\u0006\u0002\b\b0\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\t\u0010\nR \u0010\u000b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00060\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\f\u0010\n\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001a"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$UpdateNode;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Block", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Lkotlin/Function2;", "", "", "Lkotlin/ExtensionFunctionType;", "getBlock-HpuvwBQ", "()I", "Value", "getValue-HpuvwBQ", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class UpdateNode extends Operation {
         public static final int $stable = 0;
@@ -607,18 +607,18 @@ public abstract class Operation {
             super(0, 2, 1, null);
         }
 
-        /* JADX INFO: renamed from: getValue-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getValue-HpuvwBQ, reason: not valid java name */
         public final int m126getValueHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getBlock-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getBlock-HpuvwBQ, reason: not valid java name */
         public final int m125getBlockHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(1);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             if (ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0))) {
                 return "value";
@@ -632,7 +632,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001a\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\f\u0010\rJ(\u0010\u000e\u001a\u00020\u000f*\u00020\u00102\n\u0010\u0011\u001a\u0006\u0012\u0002\b\u00030\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u0016H\u0016R\u0018\u0010\u0003\u001a\u00020\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006R\u0018\u0010\u0007\u001a\u00020\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\b\u0010\u0006\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0017"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$RemoveNode;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Count", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "getCount-jn0FJLE", "()I", "RemoveIndex", "getRemoveIndex-jn0FJLE", "intParamName", "", "parameter", "intParamName-w8GmfQM", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class RemoveNode extends Operation {
         public static final int $stable = 0;
@@ -642,18 +642,18 @@ public abstract class Operation {
             super(2, 0, 2, null);
         }
 
-        /* JADX INFO: renamed from: getRemoveIndex-jn0FJLE, reason: not valid java name */
+        /* INFO: renamed from: getRemoveIndex-jn0FJLE, reason: not valid java name */
         public final int m122getRemoveIndexjn0FJLE() {
             return IntParameter.m98constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getCount-jn0FJLE, reason: not valid java name */
+        /* INFO: renamed from: getCount-jn0FJLE, reason: not valid java name */
         public final int m121getCountjn0FJLE() {
             return IntParameter.m98constructorimpl(1);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: intParamName-w8GmfQM */
+        /* INFO: renamed from: intParamName-w8GmfQM */
         public String mo72intParamNamew8GmfQM(int parameter) {
             if (IntParameter.m100equalsimpl0(parameter, IntParameter.m98constructorimpl(0))) {
                 return "removeIndex";
@@ -667,7 +667,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001a\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u000e\u0010\u000fJ(\u0010\u0010\u001a\u00020\u0011*\u00020\u00122\n\u0010\u0013\u001a\u0006\u0012\u0002\b\u00030\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0016R\u0018\u0010\u0003\u001a\u00020\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006R\u0018\u0010\u0007\u001a\u00020\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\b\u0010\u0006R\u0018\u0010\t\u001a\u00020\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\n\u0010\u0006\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0019"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$MoveNode;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Count", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "getCount-jn0FJLE", "()I", "From", "getFrom-jn0FJLE", "To", "getTo-jn0FJLE", "intParamName", "", "parameter", "intParamName-w8GmfQM", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class MoveNode extends Operation {
         public static final int $stable = 0;
@@ -677,23 +677,23 @@ public abstract class Operation {
             super(3, 0, 2, null);
         }
 
-        /* JADX INFO: renamed from: getFrom-jn0FJLE, reason: not valid java name */
+        /* INFO: renamed from: getFrom-jn0FJLE, reason: not valid java name */
         public final int m106getFromjn0FJLE() {
             return IntParameter.m98constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getTo-jn0FJLE, reason: not valid java name */
+        /* INFO: renamed from: getTo-jn0FJLE, reason: not valid java name */
         public final int m107getTojn0FJLE() {
             return IntParameter.m98constructorimpl(1);
         }
 
-        /* JADX INFO: renamed from: getCount-jn0FJLE, reason: not valid java name */
+        /* INFO: renamed from: getCount-jn0FJLE, reason: not valid java name */
         public final int m105getCountjn0FJLE() {
             return IntParameter.m98constructorimpl(2);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: intParamName-w8GmfQM */
+        /* INFO: renamed from: intParamName-w8GmfQM */
         public String mo72intParamNamew8GmfQM(int parameter) {
             if (IntParameter.m100equalsimpl0(parameter, IntParameter.m98constructorimpl(0))) {
                 return TypedValues.TransitionType.S_FROM;
@@ -710,7 +710,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\u000b\u001a\u00020\f2\n\u0010\r\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u000e\u0010\u000fJ(\u0010\u0010\u001a\u00020\u0011*\u00020\u00122\n\u0010\u0013\u001a\u0006\u0012\u0002\b\u00030\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0016R\u001e\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007R\u001e\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\n\u0010\u0007\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0019"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$InsertSlots;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Anchor", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Landroidx/compose/runtime/Anchor;", "getAnchor-HpuvwBQ", "()I", "FromSlotTable", "Landroidx/compose/runtime/SlotTable;", "getFromSlotTable-HpuvwBQ", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class InsertSlots extends Operation {
         public static final int $stable = 0;
@@ -720,18 +720,18 @@ public abstract class Operation {
             super(0, 2, 1, null);
         }
 
-        /* JADX INFO: renamed from: getAnchor-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getAnchor-HpuvwBQ, reason: not valid java name */
         public final int m92getAnchorHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getFromSlotTable-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getFromSlotTable-HpuvwBQ, reason: not valid java name */
         public final int m93getFromSlotTableHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(1);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             if (ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0))) {
                 return "anchor";
@@ -749,7 +749,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\u000e\u001a\u00020\u000f2\n\u0010\u0010\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u0011\u0010\u0012J(\u0010\u0013\u001a\u00020\u0014*\u00020\u00152\n\u0010\u0016\u001a\u0006\u0012\u0002\b\u00030\u00172\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001bH\u0016R\u001e\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007R\u001e\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\n\u0010\u0007R\u001e\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\f0\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\r\u0010\u0007\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001c"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$InsertSlotsWithFixups;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Anchor", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Landroidx/compose/runtime/Anchor;", "getAnchor-HpuvwBQ", "()I", "Fixups", "Landroidx/compose/runtime/changelist/FixupList;", "getFixups-HpuvwBQ", "FromSlotTable", "Landroidx/compose/runtime/SlotTable;", "getFromSlotTable-HpuvwBQ", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class InsertSlotsWithFixups extends Operation {
         public static final int $stable = 0;
@@ -759,23 +759,23 @@ public abstract class Operation {
             super(0, 3, 1, null);
         }
 
-        /* JADX INFO: renamed from: getAnchor-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getAnchor-HpuvwBQ, reason: not valid java name */
         public final int m94getAnchorHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getFromSlotTable-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getFromSlotTable-HpuvwBQ, reason: not valid java name */
         public final int m96getFromSlotTableHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(1);
         }
 
-        /* JADX INFO: renamed from: getFixups-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getFixups-HpuvwBQ, reason: not valid java name */
         public final int m95getFixupsHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(2);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             if (ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0))) {
                 return "anchor";
@@ -806,7 +806,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001a\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\rH\u0016ø\u0001\u0000¢\u0006\u0004\b\u0012\u0010\u0013J\u001e\u0010\u0014\u001a\u00020\u00102\n\u0010\u0011\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u0015\u0010\u0013J(\u0010\u0016\u001a\u00020\u0017*\u00020\u00182\n\u0010\u0019\u001a\u0006\u0012\u0002\b\u00030\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0016R&\u0010\u0003\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010\u00060\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0007\u0010\bR\u001e\u0010\t\u001a\b\u0012\u0004\u0012\u00020\n0\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u000b\u0010\bR\u0018\u0010\f\u001a\u00020\r8Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u000e\u0010\b\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001f"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$InsertNodeFixup;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Factory", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Lkotlin/Function0;", "", "getFactory-HpuvwBQ", "()I", "GroupAnchor", "Landroidx/compose/runtime/Anchor;", "getGroupAnchor-HpuvwBQ", "InsertIndex", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "getInsertIndex-jn0FJLE", "intParamName", "", "parameter", "intParamName-w8GmfQM", "(I)Ljava/lang/String;", "objectParamName", "objectParamName-31yXWZQ", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class InsertNodeFixup extends Operation {
         public static final int $stable = 0;
@@ -816,29 +816,29 @@ public abstract class Operation {
             super(1, 2, null);
         }
 
-        /* JADX INFO: renamed from: getFactory-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getFactory-HpuvwBQ, reason: not valid java name */
         public final int m89getFactoryHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getInsertIndex-jn0FJLE, reason: not valid java name */
+        /* INFO: renamed from: getInsertIndex-jn0FJLE, reason: not valid java name */
         public final int m91getInsertIndexjn0FJLE() {
             return IntParameter.m98constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getGroupAnchor-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getGroupAnchor-HpuvwBQ, reason: not valid java name */
         public final int m90getGroupAnchorHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(1);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: intParamName-w8GmfQM */
+        /* INFO: renamed from: intParamName-w8GmfQM */
         public String mo72intParamNamew8GmfQM(int parameter) {
             return IntParameter.m100equalsimpl0(parameter, IntParameter.m98constructorimpl(0)) ? "insertIndex" : super.mo72intParamNamew8GmfQM(parameter);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             if (ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0))) {
                 return "factory";
@@ -858,7 +858,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001a\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\tH\u0016ø\u0001\u0000¢\u0006\u0004\b\u000e\u0010\u000fJ\u001e\u0010\u0010\u001a\u00020\f2\n\u0010\r\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u0011\u0010\u000fJ(\u0010\u0012\u001a\u00020\u0013*\u00020\u00142\n\u0010\u0015\u001a\u0006\u0012\u0002\b\u00030\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aH\u0016R\u001e\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007R\u0018\u0010\b\u001a\u00020\t8Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\n\u0010\u0007\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001b"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$PostInsertNodeFixup;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "GroupAnchor", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Landroidx/compose/runtime/Anchor;", "getGroupAnchor-HpuvwBQ", "()I", "InsertIndex", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "getInsertIndex-jn0FJLE", "intParamName", "", "parameter", "intParamName-w8GmfQM", "(I)Ljava/lang/String;", "objectParamName", "objectParamName-31yXWZQ", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class PostInsertNodeFixup extends Operation {
         public static final int $stable = 0;
@@ -868,24 +868,24 @@ public abstract class Operation {
             super(1, 1, null);
         }
 
-        /* JADX INFO: renamed from: getInsertIndex-jn0FJLE, reason: not valid java name */
+        /* INFO: renamed from: getInsertIndex-jn0FJLE, reason: not valid java name */
         public final int m116getInsertIndexjn0FJLE() {
             return IntParameter.m98constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getGroupAnchor-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getGroupAnchor-HpuvwBQ, reason: not valid java name */
         public final int m115getGroupAnchorHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: intParamName-w8GmfQM */
+        /* INFO: renamed from: intParamName-w8GmfQM */
         public String mo72intParamNamew8GmfQM(int parameter) {
             return IntParameter.m100equalsimpl0(parameter, IntParameter.m98constructorimpl(0)) ? "insertIndex" : super.mo72intParamNamew8GmfQM(parameter);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             return ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0)) ? "groupAnchor" : super.mo73objectParamName31yXWZQ(parameter);
         }
@@ -900,7 +900,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J(\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\n\u0010\u0006\u001a\u0006\u0012\u0002\b\u00030\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016¨\u0006\f"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$DeactivateCurrentGroup;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class DeactivateCurrentGroup extends Operation {
         public static final int $stable = 0;
@@ -916,7 +916,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J(\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\n\u0010\u0006\u001a\u0006\u0012\u0002\b\u00030\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016¨\u0006\f"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$ResetSlots;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class ResetSlots extends Operation {
         public static final int $stable = 0;
@@ -932,7 +932,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\u000b\u001a\u00020\f2\n\u0010\r\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u000e\u0010\u000fJ(\u0010\u0010\u001a\u00020\u0011*\u00020\u00122\n\u0010\u0013\u001a\u0006\u0012\u0002\b\u00030\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0016R\u001e\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007R\u001e\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\n\u0010\u0007\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0019"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$DetermineMovableContentNodeIndex;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Anchor", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Landroidx/compose/runtime/Anchor;", "getAnchor-HpuvwBQ", "()I", "EffectiveNodeIndexOut", "Landroidx/compose/runtime/internal/IntRef;", "getEffectiveNodeIndexOut-HpuvwBQ", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class DetermineMovableContentNodeIndex extends Operation {
         public static final int $stable = 0;
@@ -942,18 +942,18 @@ public abstract class Operation {
             super(0, 2, 1, null);
         }
 
-        /* JADX INFO: renamed from: getEffectiveNodeIndexOut-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getEffectiveNodeIndexOut-HpuvwBQ, reason: not valid java name */
         public final int m84getEffectiveNodeIndexOutHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getAnchor-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getAnchor-HpuvwBQ, reason: not valid java name */
         public final int m83getAnchorHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(1);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             if (ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0))) {
                 return "effectiveNodeIndexOut";
@@ -970,7 +970,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\f\u001a\u00020\r2\n\u0010\u000e\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u000f\u0010\u0010J(\u0010\u0011\u001a\u00020\u0012*\u00020\u00132\n\u0010\u0014\u001a\u0006\u0012\u0002\b\u00030\u00152\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u0019H\u0016R\u001e\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007R&\u0010\b\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010\n0\t0\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u000b\u0010\u0007\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001a"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$CopyNodesToNewAnchorLocation;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "EffectiveNodeIndex", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Landroidx/compose/runtime/internal/IntRef;", "getEffectiveNodeIndex-HpuvwBQ", "()I", "Nodes", "", "", "getNodes-HpuvwBQ", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class CopyNodesToNewAnchorLocation extends Operation {
         public static final int $stable = 0;
@@ -980,18 +980,18 @@ public abstract class Operation {
             super(0, 2, 1, null);
         }
 
-        /* JADX INFO: renamed from: getEffectiveNodeIndex-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getEffectiveNodeIndex-HpuvwBQ, reason: not valid java name */
         public final int m77getEffectiveNodeIndexHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getNodes-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getNodes-HpuvwBQ, reason: not valid java name */
         public final int m78getNodesHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(1);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             if (ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0))) {
                 return "effectiveNodeIndex";
@@ -1014,7 +1014,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\u0010\u001a\u00020\u00112\n\u0010\u0012\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u0013\u0010\u0014J(\u0010\u0015\u001a\u00020\u0016*\u00020\u00172\n\u0010\u0018\u001a\u0006\u0012\u0002\b\u00030\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001dH\u0016R\u001e\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007R\u001e\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\n\u0010\u0007R \u0010\u000b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\f0\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\r\u0010\u0007R\u001e\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0007\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001e"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$CopySlotTableToAnchorLocation;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "From", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Landroidx/compose/runtime/MovableContentStateReference;", "getFrom-HpuvwBQ", "()I", "ParentCompositionContext", "Landroidx/compose/runtime/CompositionContext;", "getParentCompositionContext-HpuvwBQ", "ResolvedState", "Landroidx/compose/runtime/MovableContentState;", "getResolvedState-HpuvwBQ", "To", "getTo-HpuvwBQ", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class CopySlotTableToAnchorLocation extends Operation {
         public static final int $stable = 0;
@@ -1024,28 +1024,28 @@ public abstract class Operation {
             super(0, 4, 1, null);
         }
 
-        /* JADX INFO: renamed from: getResolvedState-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getResolvedState-HpuvwBQ, reason: not valid java name */
         public final int m81getResolvedStateHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getParentCompositionContext-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getParentCompositionContext-HpuvwBQ, reason: not valid java name */
         public final int m80getParentCompositionContextHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(1);
         }
 
-        /* JADX INFO: renamed from: getFrom-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getFrom-HpuvwBQ, reason: not valid java name */
         public final int m79getFromHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(2);
         }
 
-        /* JADX INFO: renamed from: getTo-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getTo-HpuvwBQ, reason: not valid java name */
         public final int m82getToHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(3);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             if (ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0))) {
                 return "resolvedState";
@@ -1077,7 +1077,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J(\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\n\u0010\u0006\u001a\u0006\u0012\u0002\b\u00030\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016¨\u0006\f"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$EndMovableContentPlacement;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class EndMovableContentPlacement extends Operation {
         public static final int $stable = 0;
@@ -1095,7 +1095,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\u000e\u001a\u00020\u000f2\n\u0010\u0010\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u0011\u0010\u0012J(\u0010\u0013\u001a\u00020\u0014*\u00020\u00152\n\u0010\u0016\u001a\u0006\u0012\u0002\b\u00030\u00172\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001bH\u0016R\u001e\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007R\u001e\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\n\u0010\u0007R\u001e\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\f0\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\r\u0010\u0007\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001c"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$ReleaseMovableGroupAtCurrent;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Composition", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Landroidx/compose/runtime/ControlledComposition;", "getComposition-HpuvwBQ", "()I", "ParentCompositionContext", "Landroidx/compose/runtime/CompositionContext;", "getParentCompositionContext-HpuvwBQ", "Reference", "Landroidx/compose/runtime/MovableContentStateReference;", "getReference-HpuvwBQ", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class ReleaseMovableGroupAtCurrent extends Operation {
         public static final int $stable = 0;
@@ -1105,23 +1105,23 @@ public abstract class Operation {
             super(0, 3, 1, null);
         }
 
-        /* JADX INFO: renamed from: getComposition-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getComposition-HpuvwBQ, reason: not valid java name */
         public final int m117getCompositionHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getParentCompositionContext-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getParentCompositionContext-HpuvwBQ, reason: not valid java name */
         public final int m118getParentCompositionContextHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(1);
         }
 
-        /* JADX INFO: renamed from: getReference-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getReference-HpuvwBQ, reason: not valid java name */
         public final int m119getReferenceHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(2);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             if (ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0))) {
                 return "composition";
@@ -1138,7 +1138,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u001e\u0010\u000b\u001a\u00020\f2\n\u0010\r\u001a\u0006\u0012\u0002\b\u00030\u0004H\u0016ø\u0001\u0000¢\u0006\u0004\b\u000e\u0010\u000fJ(\u0010\u0010\u001a\u00020\u0011*\u00020\u00122\n\u0010\u0013\u001a\u0006\u0012\u0002\b\u00030\u00142\u0006\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0018H\u0016R\u001e\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007R \u0010\b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\t0\u00048Æ\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\n\u0010\u0007\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u0019"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$ApplyChangeList;", "Landroidx/compose/runtime/changelist/Operation;", "()V", "Changes", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "Landroidx/compose/runtime/changelist/ChangeList;", "getChanges-HpuvwBQ", "()I", "EffectiveNodeIndex", "Landroidx/compose/runtime/internal/IntRef;", "getEffectiveNodeIndex-HpuvwBQ", "objectParamName", "", "parameter", "objectParamName-31yXWZQ", "(I)Ljava/lang/String;", "execute", "", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "Landroidx/compose/runtime/Applier;", "slots", "Landroidx/compose/runtime/SlotWriter;", "rememberManager", "Landroidx/compose/runtime/RememberManager;", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class ApplyChangeList extends Operation {
         public static final int $stable = 0;
@@ -1148,18 +1148,18 @@ public abstract class Operation {
             super(0, 2, 1, null);
         }
 
-        /* JADX INFO: renamed from: getChanges-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getChanges-HpuvwBQ, reason: not valid java name */
         public final int m75getChangesHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(0);
         }
 
-        /* JADX INFO: renamed from: getEffectiveNodeIndex-HpuvwBQ, reason: not valid java name */
+        /* INFO: renamed from: getEffectiveNodeIndex-HpuvwBQ, reason: not valid java name */
         public final int m76getEffectiveNodeIndexHpuvwBQ() {
             return ObjectParameter.m109constructorimpl(1);
         }
 
         @Override // androidx.compose.runtime.changelist.Operation
-        /* JADX INFO: renamed from: objectParamName-31yXWZQ */
+        /* INFO: renamed from: objectParamName-31yXWZQ */
         public String mo73objectParamName31yXWZQ(int parameter) {
             if (ObjectParameter.m111equalsimpl0(parameter, ObjectParameter.m109constructorimpl(0))) {
                 return "changes";
@@ -1179,7 +1179,7 @@ public abstract class Operation {
         }
     }
 
-    /* JADX INFO: compiled from: Operation.kt */
+    /* INFO: compiled from: Operation.kt */
     @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0007\u0018\u00002\u00020\u0001BA\b\u0007\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0003\u0012$\b\u0002\u0010\u0005\u001a\u001e\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u0007\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\u0006¢\u0006\u0002\u0010\u000bJ\b\u0010\u0017\u001a\u00020\u0018H\u0016J(\u0010\u0019\u001a\u00020\n*\u00020\u001a2\n\u0010\u001b\u001a\u0006\u0012\u0002\b\u00030\u00072\u0006\u0010\u001c\u001a\u00020\b2\u0006\u0010\u001d\u001a\u00020\tH\u0016R-\u0010\u0005\u001a\u001e\u0012\b\u0012\u0006\u0012\u0002\b\u00030\u0007\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020\n0\u0006¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u0017\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u00100\u000f¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u001f\u0010\u0013\u001a\u0010\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010\u00150\u00140\u000f¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0012¨\u0006\u001e"}, d2 = {"Landroidx/compose/runtime/changelist/Operation$TestOperation;", "Landroidx/compose/runtime/changelist/Operation;", "ints", "", Constants.OBJECTS, "block", "Lkotlin/Function3;", "Landroidx/compose/runtime/Applier;", "Landroidx/compose/runtime/SlotWriter;", "Landroidx/compose/runtime/RememberManager;", "", "(IILkotlin/jvm/functions/Function3;)V", "getBlock", "()Lkotlin/jvm/functions/Function3;", "intParams", "", "Landroidx/compose/runtime/changelist/Operation$IntParameter;", "getIntParams", "()Ljava/util/List;", "objParams", "Landroidx/compose/runtime/changelist/Operation$ObjectParameter;", "", "getObjParams", "toString", "", "execute", "Landroidx/compose/runtime/changelist/OperationArgContainer;", "applier", "slots", "rememberManager", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class TestOperation extends Operation {
         public static final int $stable = 8;
@@ -1191,8 +1191,8 @@ public abstract class Operation {
             this(0, 0, null, 7, null);
         }
 
-        /* JADX INFO: renamed from: androidx.compose.runtime.changelist.Operation$TestOperation$1, reason: invalid class name */
-        /* JADX INFO: compiled from: Operation.kt */
+        /* INFO: renamed from: androidx.compose.runtime.changelist.Operation$TestOperation$1, reason: invalid class name */
+        /* INFO: compiled from: Operation.kt */
         @Metadata(d1 = {"\u0000\u001a\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u0006\u0012\u0002\b\u00030\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\n¢\u0006\u0002\b\b"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroidx/compose/runtime/Applier;", "<anonymous parameter 1>", "Landroidx/compose/runtime/SlotWriter;", "<anonymous parameter 2>", "Landroidx/compose/runtime/RememberManager;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
         static final class AnonymousClass1 extends Lambda implements Function3<Applier<?>, SlotWriter, RememberManager, Unit> {
             public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -1201,7 +1201,7 @@ public abstract class Operation {
                 super(3);
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Applier<?> applier, SlotWriter slotWriter, RememberManager rememberManager) {
             }
 
@@ -1220,7 +1220,7 @@ public abstract class Operation {
             return this.block;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public TestOperation(int i, int i2, Function3<? super Applier<?>, ? super SlotWriter, ? super RememberManager, Unit> function3) {
             super(i, i2, null);
             this.block = function3;

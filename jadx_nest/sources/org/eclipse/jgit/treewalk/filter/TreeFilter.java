@@ -8,7 +8,7 @@ import org.apache.commons.codec.language.bm.Rule;
 import org.apache.commons.io.FilenameUtils;
 import org.eclipse.jgit.treewalk.TreeWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class TreeFilter {
     public static final TreeFilter ALL = new AllFilter(null);
     public static final TreeFilter ANY_DIFF = new AnyDiffFilter(null);

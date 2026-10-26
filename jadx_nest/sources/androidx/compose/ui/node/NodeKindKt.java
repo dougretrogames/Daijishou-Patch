@@ -28,15 +28,15 @@ import androidx.compose.ui.semantics.SemanticsModifier;
 import androidx.constraintlayout.core.motion.utils.TypedValues;
 import kotlin.Metadata;
 
-/* JADX INFO: compiled from: NodeKind.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: NodeKind.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u00004\n\u0000\n\u0002\u0010\b\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u0010\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0000\u001a \u0010\u0011\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0012\u001a\u00020\u00012\u0006\u0010\u0013\u001a\u00020\u0001H\u0000\u001a \u0010\u0014\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0015\u001a\u00020\u00012\u0006\u0010\u0013\u001a\u00020\u0001H\u0002\u001a\u0010\u0010\u0016\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0000\u001a\u0010\u0010\u0017\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0000\u001a\u0010\u0010\u0018\u001a\u00020\u00012\u0006\u0010\u0019\u001a\u00020\u001aH\u0000\u001a\u0010\u0010\u0018\u001a\u00020\u00012\u0006\u0010\u000f\u001a\u00020\u0010H\u0000\u001a\u0010\u0010\u001b\u001a\u00020\u00012\u0006\u0010\u000f\u001a\u00020\u0010H\u0000\u001a#\u0010\u001c\u001a\u00020\t*\u00020\u00012\n\u0010\u001d\u001a\u0006\u0012\u0002\b\u00030\nH\u0080\nø\u0001\u0000¢\u0006\u0004\b\u001e\u0010\u001f\u001a#\u0010 \u001a\u00020\u0001*\u00020\u00012\n\u0010!\u001a\u0006\u0012\u0002\b\u00030\nH\u0080\fø\u0001\u0000¢\u0006\u0004\b\"\u0010#\u001a\f\u0010$\u001a\u00020\u000e*\u00020%H\u0002\u001a\f\u0010&\u001a\u00020\t*\u00020%H\u0002\"\u0014\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\b\n\u0000\u0012\u0004\b\u0002\u0010\u0003\"\u0014\u0010\u0004\u001a\u00020\u0001X\u0082T¢\u0006\b\n\u0000\u0012\u0004\b\u0005\u0010\u0003\"\u0014\u0010\u0006\u001a\u00020\u0001X\u0082T¢\u0006\b\n\u0000\u0012\u0004\b\u0007\u0010\u0003\"\u001c\u0010\b\u001a\u00020\t*\u0006\u0012\u0002\b\u00030\n8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u000b\u0010\f\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006'"}, d2 = {"Inserted", "", "getInserted$annotations", "()V", "Removed", "getRemoved$annotations", "Updated", "getUpdated$annotations", "includeSelfInTraversal", "", "Landroidx/compose/ui/node/NodeKind;", "getIncludeSelfInTraversal-H91voCI", "(I)Z", "autoInvalidateInsertedNode", "", "node", "Landroidx/compose/ui/Modifier$Node;", "autoInvalidateNodeIncludingDelegates", "remainingSet", TypedValues.CycleType.S_WAVE_PHASE, "autoInvalidateNodeSelf", "selfKindSet", "autoInvalidateRemovedNode", "autoInvalidateUpdatedNode", "calculateNodeKindSetFrom", "element", "Landroidx/compose/ui/Modifier$Element;", "calculateNodeKindSetFromIncludingDelegates", "contains", "value", "contains-64DMado", "(II)Z", "or", "other", "or-64DMado", "(II)I", "scheduleInvalidationOfAssociatedFocusTargets", "Landroidx/compose/ui/focus/FocusPropertiesModifierNode;", "specifiesCanFocusProperty", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class NodeKindKt {
     private static final int Inserted = 1;
     private static final int Removed = 2;
     private static final int Updated = 0;
 
-    /* JADX INFO: renamed from: contains-64DMado, reason: not valid java name */
+    /* INFO: renamed from: contains-64DMado, reason: not valid java name */
     public static final boolean m2042contains64DMado(int i, int i2) {
         return (i & i2) != 0;
     }
@@ -50,7 +50,7 @@ public final class NodeKindKt {
     private static /* synthetic */ void getUpdated$annotations() {
     }
 
-    /* JADX INFO: renamed from: or-64DMado, reason: not valid java name */
+    /* INFO: renamed from: or-64DMado, reason: not valid java name */
     public static final int m2044or64DMado(int i, int i2) {
         return i | i2;
     }
@@ -145,7 +145,7 @@ public final class NodeKindKt {
         autoInvalidateNodeSelf(node, i & node.getKindSet(), i2);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private static final void autoInvalidateNodeSelf(Modifier.Node node, int i, int i2) {
         if (i2 != 0 || node.getShouldAutoInvalidate()) {
             if ((NodeKind.m2034constructorimpl(2) & i) != 0 && (node instanceof LayoutModifierNode)) {
@@ -268,7 +268,7 @@ public final class NodeKindKt {
         return calculateNodeKindSetFrom(node);
     }
 
-    /* JADX INFO: renamed from: getIncludeSelfInTraversal-H91voCI, reason: not valid java name */
+    /* INFO: renamed from: getIncludeSelfInTraversal-H91voCI, reason: not valid java name */
     public static final boolean m2043getIncludeSelfInTraversalH91voCI(int i) {
         return (i & NodeKind.m2034constructorimpl(128)) != 0;
     }

@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 import javax.annotation.CheckReturnValue;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 public final class CallOptions {
     public static final CallOptions DEFAULT;
@@ -88,7 +88,7 @@ public final class CallOptions {
         Builder() {
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public CallOptions build() {
             return new CallOptions(this, null);
         }

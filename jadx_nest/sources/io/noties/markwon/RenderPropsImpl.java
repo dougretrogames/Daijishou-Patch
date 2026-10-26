@@ -3,7 +3,7 @@ package io.noties.markwon;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class RenderPropsImpl implements RenderProps {
     private final Map<Prop, Object> values = new HashMap(3);
 

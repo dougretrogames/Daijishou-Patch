@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AsyncListDiffer<T> {
     private static final Executor sMainThreadExecutor = new MainThreadExecutor();
     final AsyncDifferConfig<T> mConfig;
@@ -89,7 +89,7 @@ public class AsyncListDiffer<T> {
         this.mConfig.getBackgroundThreadExecutor().execute(new AnonymousClass1(list2, list, i, runnable));
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.AsyncListDiffer$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.AsyncListDiffer$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ Runnable val$commitCallback;
         final /* synthetic */ List val$newList;
@@ -103,7 +103,7 @@ public class AsyncListDiffer<T> {
             this.val$commitCallback = runnable;
         }
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.AsyncListDiffer$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.AsyncListDiffer$1$1, reason: invalid class name and collision with other inner class name */
         class C00221 extends DiffUtil.Callback {
             C00221() {
             }
@@ -118,7 +118,7 @@ public class AsyncListDiffer<T> {
                 return AnonymousClass1.this.val$newList.size();
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // androidx.recyclerview.widget.DiffUtil.Callback
             public boolean areItemsTheSame(int i, int i2) {
                 Object obj = AnonymousClass1.this.val$oldList.get(i);
@@ -129,7 +129,7 @@ public class AsyncListDiffer<T> {
                 return AsyncListDiffer.this.mConfig.getDiffCallback().areItemsTheSame(obj, obj2);
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // androidx.recyclerview.widget.DiffUtil.Callback
             public boolean areContentsTheSame(int i, int i2) {
                 Object obj = AnonymousClass1.this.val$oldList.get(i);
@@ -143,7 +143,7 @@ public class AsyncListDiffer<T> {
                 throw new AssertionError();
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // androidx.recyclerview.widget.DiffUtil.Callback
             public Object getChangePayload(int i, int i2) {
                 Object obj = AnonymousClass1.this.val$oldList.get(i);
@@ -160,7 +160,7 @@ public class AsyncListDiffer<T> {
             AsyncListDiffer.this.mMainThreadExecutor.execute(new AnonymousClass2(DiffUtil.calculateDiff(new C00221())));
         }
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.AsyncListDiffer$1$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.AsyncListDiffer$1$2, reason: invalid class name */
         class AnonymousClass2 implements Runnable {
             final /* synthetic */ DiffUtil.DiffResult val$result;
 

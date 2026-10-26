@@ -38,7 +38,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MaterialContainerTransform extends Transition {
     private static final float ELEVATION_NOT_SET = -1.0f;
     public static final int FADE_MODE_CROSS = 2;
@@ -373,7 +373,7 @@ public final class MaterialContainerTransform extends Transition {
         return TransitionUtils.convertToRelativeCornerSizes(getShapeAppearance(view, shapeAppearanceModel), rectF);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private static ShapeAppearanceModel getShapeAppearance(View view, ShapeAppearanceModel shapeAppearanceModel) {
         if (shapeAppearanceModel != null) {
             return shapeAppearanceModel;
@@ -445,7 +445,7 @@ public final class MaterialContainerTransform extends Transition {
         return null;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.MaterialContainerTransform$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.MaterialContainerTransform$1, reason: invalid class name */
     class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
         final /* synthetic */ TransitionDrawable val$transitionDrawable;
 
@@ -459,7 +459,7 @@ public final class MaterialContainerTransform extends Transition {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.MaterialContainerTransform$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.MaterialContainerTransform$2, reason: invalid class name */
     class AnonymousClass2 extends TransitionListenerAdapter {
         final /* synthetic */ View val$drawingView;
         final /* synthetic */ View val$endView;
@@ -719,7 +719,7 @@ public final class MaterialContainerTransform extends Transition {
             TransitionUtils.transform(canvas, getBounds(), this.currentStartBounds.left, this.currentStartBounds.top, this.fitModeResult.startScale, this.fadeModeResult.startAlpha, new AnonymousClass1());
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.transition.MaterialContainerTransform$TransitionDrawable$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.transition.MaterialContainerTransform$TransitionDrawable$1, reason: invalid class name */
         class AnonymousClass1 implements CanvasCompat.CanvasOperation {
             AnonymousClass1() {
             }
@@ -735,7 +735,7 @@ public final class MaterialContainerTransform extends Transition {
             TransitionUtils.transform(canvas, getBounds(), this.currentEndBounds.left, this.currentEndBounds.top, this.fitModeResult.endScale, this.fadeModeResult.endAlpha, new AnonymousClass2());
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.transition.MaterialContainerTransform$TransitionDrawable$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.transition.MaterialContainerTransform$TransitionDrawable$2, reason: invalid class name */
         class AnonymousClass2 implements CanvasCompat.CanvasOperation {
             AnonymousClass2() {
             }
@@ -763,7 +763,7 @@ public final class MaterialContainerTransform extends Transition {
             throw new UnsupportedOperationException("Setting a color filter is not supported");
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setProgress(float f) {
             if (this.progress != f) {
                 updateProgress(f);

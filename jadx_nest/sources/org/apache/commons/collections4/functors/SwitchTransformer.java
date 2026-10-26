@@ -6,7 +6,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.Predicate;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SwitchTransformer<T, R> implements Transformer<T, R>, Serializable {
     private static final long serialVersionUID = -6404460890903469332L;
     private final Transformer<? super T, ? extends R> iDefault;
@@ -34,7 +34,7 @@ public class SwitchTransformer<T, R> implements Transformer<T, R>, Serializable 
         return new SwitchTransformer(false, predicateArr, transformerArr, transformerRemove);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <I, O> Transformer<I, O> switchTransformer(Predicate<? super I>[] predicateArr, Transformer<? super I, ? extends O>[] transformerArr, Transformer<? super I, ? extends O> transformer) {
         FunctorUtils.validate(predicateArr);
         FunctorUtils.validate(transformerArr);

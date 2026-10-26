@@ -2,7 +2,7 @@ package androidx.core.view;
 
 import android.view.MotionEvent;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class VelocityTrackerFallback {
     private static final long ASSUME_POINTER_STOPPED_MS = 40;
     private static final int HISTORY_SIZE = 20;

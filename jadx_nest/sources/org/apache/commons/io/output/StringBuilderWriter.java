@@ -3,7 +3,7 @@ package org.apache.commons.io.output;
 import java.io.Serializable;
 import java.io.Writer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StringBuilderWriter extends Writer implements Serializable {
     private static final long serialVersionUID = -146927496096066153L;
     private final StringBuilder builder;

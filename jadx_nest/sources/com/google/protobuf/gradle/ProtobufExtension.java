@@ -30,8 +30,8 @@ import org.gradle.api.provider.Property;
 import org.gradle.api.provider.Provider;
 import org.gradle.api.tasks.TaskCollection;
 
-/* JADX INFO: compiled from: ProtobufExtension.groovy */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ProtobufExtension.groovy */
+/* INFO: loaded from: classes4.dex */
 public abstract class ProtobufExtension implements GroovyObject {
     private static /* synthetic */ ClassInfo $staticClassInfo;
     private static /* synthetic */ ClassInfo $staticClassInfo$;
@@ -119,7 +119,7 @@ public abstract class ProtobufExtension implements GroovyObject {
         this.sourceSets = ((Project) reference.get()).getObjects().domainObjectContainer(ProtoSourceSet.class, (NamedDomainObjectFactory) ScriptBytecodeAdapter.castToType(new _closure2(this, this, reference), NamedDomainObjectFactory.class));
     }
 
-    /* JADX INFO: compiled from: ProtobufExtension.groovy */
+    /* INFO: compiled from: ProtobufExtension.groovy */
     public final class _closure1 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -158,7 +158,7 @@ public abstract class ProtobufExtension implements GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufExtension.groovy */
+    /* INFO: compiled from: ProtobufExtension.groovy */
     public final class _closure2 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -212,7 +212,7 @@ public abstract class ProtobufExtension implements GroovyObject {
         getGeneratedFilesBaseDirProperty().set(str);
     }
 
-    /* JADX INFO: compiled from: ProtobufExtension.groovy */
+    /* INFO: compiled from: ProtobufExtension.groovy */
     public final class _configureTasks_closure3 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -267,7 +267,7 @@ public abstract class ProtobufExtension implements GroovyObject {
         return this.tasks;
     }
 
-    /* JADX INFO: compiled from: ProtobufExtension.groovy */
+    /* INFO: compiled from: ProtobufExtension.groovy */
     public class GenerateProtoTaskCollection implements GroovyObject {
         private static /* synthetic */ SoftReference $callSiteArray;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -366,7 +366,7 @@ public abstract class ProtobufExtension implements GroovyObject {
             return this.project.getTasks().withType(GenerateProtoTask.class);
         }
 
-        /* JADX INFO: compiled from: ProtobufExtension.groovy */
+        /* INFO: compiled from: ProtobufExtension.groovy */
         public final class _ofSourceSet_closure1 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -407,7 +407,7 @@ public abstract class ProtobufExtension implements GroovyObject {
             return all().matching(new _ofSourceSet_closure1(this, this, new Reference(str)));
         }
 
-        /* JADX INFO: compiled from: ProtobufExtension.groovy */
+        /* INFO: compiled from: ProtobufExtension.groovy */
         public final class _ofFlavor_closure2 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -448,7 +448,7 @@ public abstract class ProtobufExtension implements GroovyObject {
             return all().matching(new _ofFlavor_closure2(this, this, new Reference(str)));
         }
 
-        /* JADX INFO: compiled from: ProtobufExtension.groovy */
+        /* INFO: compiled from: ProtobufExtension.groovy */
         public final class _ofBuildType_closure3 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -495,7 +495,7 @@ public abstract class ProtobufExtension implements GroovyObject {
             return (TaskCollection) ScriptBytecodeAdapter.castToType((__$stMC || BytecodeInterface8.disabledStandardMetaClass()) ? callSiteArr$getCallSiteArray[0].call(callSiteArr$getCallSiteArray[1].callCurrent(this), new _ofVariant_closure4(this, this, reference)) : callSiteArr$getCallSiteArray[2].call(all(), new _ofVariant_closure4(this, this, reference)), TaskCollection.class);
         }
 
-        /* JADX INFO: compiled from: ProtobufExtension.groovy */
+        /* INFO: compiled from: ProtobufExtension.groovy */
         public final class _ofVariant_closure4 extends Closure implements GeneratedClosure {
             private static /* synthetic */ SoftReference $callSiteArray;
             private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -526,7 +526,7 @@ public abstract class ProtobufExtension implements GroovyObject {
                 return callSiteArray$createCallSiteArray.array;
             }
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public _ofVariant_closure4(Object obj, Object obj2, Reference reference) {
                 super(obj, obj2);
                 $getCallSiteArray();
@@ -565,7 +565,7 @@ public abstract class ProtobufExtension implements GroovyObject {
             }
         }
 
-        /* JADX INFO: compiled from: ProtobufExtension.groovy */
+        /* INFO: compiled from: ProtobufExtension.groovy */
         public final class _ofNonTest_closure5 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -599,7 +599,7 @@ public abstract class ProtobufExtension implements GroovyObject {
             return all().matching(new _ofNonTest_closure5(this, this));
         }
 
-        /* JADX INFO: compiled from: ProtobufExtension.groovy */
+        /* INFO: compiled from: ProtobufExtension.groovy */
         public final class _ofTest_closure6 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;

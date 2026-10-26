@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import java.util.List;
 import org.eclipse.jgit.errors.UnsupportedCredentialItem;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class CredentialsProvider {
     private static volatile CredentialsProvider defaultProvider;
 

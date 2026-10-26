@@ -12,7 +12,7 @@ import androidx.leanback.media.PlaybackGlueHost;
 import androidx.leanback.widget.DetailsParallaxDrawable;
 import androidx.leanback.widget.ParallaxTarget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DetailsSupportFragmentBackgroundController {
     Bitmap mCoverBitmap;
     final DetailsSupportFragment mFragment;

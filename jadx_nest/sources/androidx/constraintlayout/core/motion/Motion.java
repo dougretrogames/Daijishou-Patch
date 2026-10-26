@@ -30,7 +30,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Motion implements TypedValues {
     static final int BOUNCE = 4;
     private static final boolean DEBUG = false;
@@ -569,7 +569,7 @@ public class Motion implements TypedValues {
         this.mPathMotionArc = i;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public void setup(int i, int i2, float f, long j) {
         ArrayList arrayList;
         int i3;
@@ -947,7 +947,7 @@ public class Motion implements TypedValues {
         rect2.bottom = rect2.top + rect.height();
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.core.motion.Motion$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.core.motion.Motion$1, reason: invalid class name */
     class AnonymousClass1 implements DifferentialInterpolator {
         float mX;
         final /* synthetic */ Easing val$easing;

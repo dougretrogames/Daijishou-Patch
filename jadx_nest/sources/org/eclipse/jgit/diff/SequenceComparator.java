@@ -2,7 +2,7 @@ package org.eclipse.jgit.diff;
 
 import org.eclipse.jgit.diff.Sequence;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class SequenceComparator<S extends Sequence> {
     public abstract boolean equals(S s, int i, S s2, int i2);
 

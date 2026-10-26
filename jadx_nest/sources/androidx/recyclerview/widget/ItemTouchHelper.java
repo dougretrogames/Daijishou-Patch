@@ -18,7 +18,7 @@ import androidx.recyclerview.R;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ItemTouchHelper extends RecyclerView.ItemDecoration implements RecyclerView.OnChildAttachStateChangeListener {
     static final int ACTION_MODE_DRAG_MASK = 16711680;
     private static final int ACTION_MODE_IDLE_MASK = 255;
@@ -82,7 +82,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration implements Recy
     public void onChildViewAttachedToWindow(View view) {
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -101,7 +101,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration implements Recy
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$2, reason: invalid class name */
     class AnonymousClass2 implements RecyclerView.OnItemTouchListener {
         AnonymousClass2() {
         }
@@ -397,12 +397,12 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration implements Recy
         this.mRecyclerView.invalidate();
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$3, reason: invalid class name */
     class AnonymousClass3 extends RecoverAnimation {
         final /* synthetic */ RecyclerView.ViewHolder val$prevSelected;
         final /* synthetic */ int val$swipeDir;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(RecyclerView.ViewHolder viewHolder, int i, int i2, float f, float f2, float f3, float f4, int i3, RecyclerView.ViewHolder viewHolder2) {
             super(viewHolder, i, i2, f, f2, f3, f4);
             this.val$swipeDir = i3;
@@ -431,7 +431,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration implements Recy
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$4, reason: invalid class name */
     class AnonymousClass4 implements Runnable {
         final /* synthetic */ RecoverAnimation val$anim;
         final /* synthetic */ int val$swipeDir;
@@ -469,8 +469,8 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration implements Recy
         return false;
     }
 
-    /* JADX WARN: Code duplicated, block: B:24:0x007c  */
-    /* JADX WARN: Code duplicated, block: B:36:0x00c3  */
+    /* WARN: Code duplicated, block: B:24:0x007c  */
+    /* WARN: Code duplicated, block: B:36:0x00c3  */
     boolean scrollIfNecessary() {
         int iInterpolateOutOfBoundsScroll;
         int iInterpolateOutOfBoundsScroll2;
@@ -871,7 +871,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration implements Recy
         return i2;
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$5, reason: invalid class name */
     class AnonymousClass5 implements RecyclerView.ChildDrawingOrderCallback {
         AnonymousClass5() {
         }
@@ -990,7 +990,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration implements Recy
 
         public abstract void onSwiped(RecyclerView.ViewHolder viewHolder, int i);
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$Callback$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$Callback$1, reason: invalid class name */
         class AnonymousClass1 implements Interpolator {
             @Override // android.animation.TimeInterpolator
             public float getInterpolation(float f) {
@@ -1001,7 +1001,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration implements Recy
             }
         }
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$Callback$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$Callback$2, reason: invalid class name */
         class AnonymousClass2 implements Interpolator {
             @Override // android.animation.TimeInterpolator
             public float getInterpolation(float f) {
@@ -1084,7 +1084,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration implements Recy
             return this.mCachedMaxScrollSpeed;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public void onMoved(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, int i, RecyclerView.ViewHolder viewHolder2, int i2, int i3, int i4) {
             RecyclerView.LayoutManager layoutManager = recyclerView.getLayoutManager();
             if (layoutManager instanceof ViewDropHandler) {
@@ -1290,7 +1290,7 @@ public class ItemTouchHelper extends RecyclerView.ItemDecoration implements Recy
             setFraction(0.0f);
         }
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$RecoverAnimation$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.ItemTouchHelper$RecoverAnimation$1, reason: invalid class name */
         class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
             AnonymousClass1() {
             }

@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ListRowHoverCardView extends LinearLayout {
     private final TextView mDescriptionView;
     private final TextView mTitleView;

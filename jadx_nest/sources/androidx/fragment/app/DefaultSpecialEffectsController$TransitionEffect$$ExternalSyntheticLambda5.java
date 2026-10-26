@@ -1,7 +1,7 @@
 package androidx.fragment.app;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class DefaultSpecialEffectsController$TransitionEffect$$ExternalSyntheticLambda5 implements Runnable {
     public final /* synthetic */ SpecialEffectsController.Operation f$0;
     public final /* synthetic */ DefaultSpecialEffectsController.TransitionEffect f$1;

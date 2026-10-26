@@ -15,7 +15,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ViewTimeCycle extends TimeCycleSplineSet {
     private static final String TAG = "ViewTimeCycle";
 
@@ -47,7 +47,7 @@ public abstract class ViewTimeCycle extends TimeCycleSplineSet {
         return new CustomSet(str, sparseArray);
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public static ViewTimeCycle makeSpline(String str, long j) {
         ViewTimeCycle rotationXset;
         str.hashCode();

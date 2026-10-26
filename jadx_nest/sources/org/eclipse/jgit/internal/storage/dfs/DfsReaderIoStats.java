@@ -1,6 +1,6 @@
 package org.eclipse.jgit.internal.storage.dfs;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsReaderIoStats {
     private final Accumulator stats;
 

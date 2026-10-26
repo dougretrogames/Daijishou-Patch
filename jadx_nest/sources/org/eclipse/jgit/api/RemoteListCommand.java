@@ -7,7 +7,7 @@ import org.eclipse.jgit.api.errors.JGitInternalException;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.transport.RemoteConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RemoteListCommand extends GitCommand<List<RemoteConfig>> {
     protected RemoteListCommand(Repository repository) {
         super(repository);

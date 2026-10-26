@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.SortedMap;
 import java.util.SortedSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public interface RowSortedTable<R, C, V> extends Table<R, C, V> {
     @Override // com.google.common.collect.Table

@@ -5,7 +5,7 @@ import org.apache.commons.collections4.multiset.PredicatedMultiSet;
 import org.apache.commons.collections4.multiset.SynchronizedMultiSet;
 import org.apache.commons.collections4.multiset.UnmodifiableMultiSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MultiSetUtils {
     public static final MultiSet EMPTY_MULTISET = UnmodifiableMultiSet.unmodifiableMultiSet(new HashMultiSet());
 

@@ -4,7 +4,7 @@ import org.apache.http.message.TokenParser;
 import org.jsoup.helper.Validate;
 import org.jsoup.internal.StringUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TokenQueue implements AutoCloseable {
     private static final char Esc = '\\';
     private static final char Hyphen_Minus = '-';
@@ -304,7 +304,7 @@ public class TokenQueue implements AutoCloseable {
         return c == '_' || StringUtil.isAsciiLetter(c) || isNonAscii(c);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean isIdent(char c) {
         return c == '-' || StringUtil.isDigit(c) || isIdentStart(c);
     }

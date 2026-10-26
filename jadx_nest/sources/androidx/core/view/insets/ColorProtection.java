@@ -2,7 +2,7 @@ package androidx.core.view.insets;
 
 import android.graphics.drawable.ColorDrawable;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ColorProtection extends Protection {
     private int mColor;
     private final ColorDrawable mDrawable;

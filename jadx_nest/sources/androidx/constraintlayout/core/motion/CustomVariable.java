@@ -4,7 +4,7 @@ import androidx.constraintlayout.core.motion.utils.TypedValues;
 import androidx.core.view.ViewCompat;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CustomVariable {
     private static final String TAG = "TransitionLayout";
     boolean mBooleanValue;

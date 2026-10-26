@@ -4,7 +4,7 @@ import io.opencensus.internal.Utils;
 import io.opencensus.metrics.data.AttachmentValue;
 import io.opencensus.tags.TagContext;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class MeasureMap {
     public abstract MeasureMap put(Measure.MeasureDouble measureDouble, double d);
 

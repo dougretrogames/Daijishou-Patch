@@ -11,7 +11,7 @@ import org.eclipse.jgit.revplot.PlotLane;
 import org.eclipse.jgit.revwalk.RevCommitList;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PlotCommitList<L extends PlotLane> extends RevCommitList<PlotCommit<L>> {
     static final int MAX_LENGTH = 25;
     private int positionsAllocated;
@@ -39,14 +39,14 @@ public class PlotCommitList<L extends PlotLane> extends RevCommitList<PlotCommit
         super.source(revWalk);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public void findPassingThrough(PlotCommit<L> plotCommit, Collection<L> collection) {
         for (PlotLane plotLane : plotCommit.passingLanes) {
             collection.add(plotLane);
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.eclipse.jgit.revwalk.RevCommitList
     public void enter(int i, PlotCommit<L> plotCommit) {
         int iValueOf;

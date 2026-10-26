@@ -10,7 +10,7 @@ import java.util.Comparator;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable
 @ElementTypesAreNonnullByDefault
 public final class ElementOrder<T> {
@@ -26,7 +26,7 @@ public final class ElementOrder<T> {
         SORTED
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     <T1 extends T> ElementOrder<T1> cast() {
         return this;
     }
@@ -93,7 +93,7 @@ public final class ElementOrder<T> {
         return toStringHelperAdd.toString();
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.ElementOrder$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.ElementOrder$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$common$graph$ElementOrder$Type;
 

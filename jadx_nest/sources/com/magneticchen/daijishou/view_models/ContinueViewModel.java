@@ -26,8 +26,8 @@ import kotlin.time.Duration;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: ContinueViewModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ContinueViewModel.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0019\u0010\u000b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\r0\f¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0018\u0010\u0010\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\r\u0018\u00010\u0011X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004¢\u0006\u0002\n\u0000R\u0017\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\u00150\f¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u000fR\u001d\u0010\u0017\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00190\u00180\u0011¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u0011\u0010\u001c\u001a\u00020\u001d¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u001f¨\u0006 "}, d2 = {"Lcom/magneticchen/daijishou/view_models/ContinueViewModel;", "Lcom/magneticchen/daijishou/view_models/abstract_view_models/DaijishouAndroidViewModel;", "application", "Landroid/app/Application;", "(Landroid/app/Application;)V", "connectionLiveData", "Lcom/magneticchen/daijishou/live_data/ConnectionLiveData;", "connectionType", "", "daijishouLibraryRepository", "Lcom/magneticchen/daijishou/repositories/DaijishouLibraryRepository;", "platformEntityLiveData", "Landroidx/lifecycle/MediatorLiveData;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "getPlatformEntityLiveData", "()Landroidx/lifecycle/MediatorLiveData;", "platformLiveDataSource", "Landroidx/lifecycle/LiveData;", "recentDate", "Ljava/util/Date;", "recentPlayableItemDescriptionLiveData", "", "getRecentPlayableItemDescriptionLiveData", "recentPlayableItemLiveData", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "getRecentPlayableItemLiveData", "()Landroidx/lifecycle/LiveData;", "scraper", "Lcom/magneticchen/daijishou/scraper/ScraperManager;", "getScraper", "()Lcom/magneticchen/daijishou/scraper/ScraperManager;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class ContinueViewModel extends DaijishouAndroidViewModel {
     private final ConnectionLiveData connectionLiveData;
@@ -40,8 +40,8 @@ public final class ContinueViewModel extends DaijishouAndroidViewModel {
     private final LiveData<List<PlayableItemEntity>> recentPlayableItemLiveData;
     private final ScraperManager scraper;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Type inference failed for: r5v5, types: [T, java.util.List] */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Type inference failed for: r5v5, types: [T, java.util.List] */
     public ContinueViewModel(Application application) {
         super(application);
         Intrinsics.checkNotNullParameter(application, "application");
@@ -84,8 +84,8 @@ public final class ContinueViewModel extends DaijishouAndroidViewModel {
         return this.scraper;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.ContinueViewModel$1, reason: invalid class name */
-    /* JADX INFO: compiled from: ContinueViewModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.ContinueViewModel$1, reason: invalid class name */
+    /* INFO: compiled from: ContinueViewModel.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "recentPlayableItems", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function1<List<? extends PlayableItemEntity>, Unit> {
         AnonymousClass1() {
@@ -98,7 +98,7 @@ public final class ContinueViewModel extends DaijishouAndroidViewModel {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<PlayableItemEntity> list) {
             Intrinsics.checkNotNull(list);
             if (list.isEmpty()) {
@@ -120,7 +120,7 @@ public final class ContinueViewModel extends DaijishouAndroidViewModel {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void _init_$updateDescription(Ref.ObjectRef<List<PlayableItemEntity>> objectRef, Ref.LongRef longRef, ContinueViewModel continueViewModel, Application application) {
         if (objectRef.element.isEmpty()) {
             return;
@@ -149,15 +149,15 @@ public final class ContinueViewModel extends DaijishouAndroidViewModel {
         continueViewModel.recentPlayableItemDescriptionLiveData.postValue(application.getString(R.string.no_internet_connection));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.ContinueViewModel$2, reason: invalid class name */
-    /* JADX INFO: compiled from: ContinueViewModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.ContinueViewModel$2, reason: invalid class name */
+    /* INFO: compiled from: ContinueViewModel.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass2 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ Application $application;
         final /* synthetic */ Ref.LongRef $previousLoadedPlayableItemId;
         final /* synthetic */ Ref.ObjectRef<List<PlayableItemEntity>> $recentPlayableItems;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(Ref.ObjectRef<List<PlayableItemEntity>> objectRef, Ref.LongRef longRef, Application application) {
             super(1);
             this.$recentPlayableItems = objectRef;
@@ -171,7 +171,7 @@ public final class ContinueViewModel extends DaijishouAndroidViewModel {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             ContinueViewModel continueViewModel = ContinueViewModel.this;
             Intrinsics.checkNotNull(num);
@@ -180,8 +180,8 @@ public final class ContinueViewModel extends DaijishouAndroidViewModel {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.ContinueViewModel$3, reason: invalid class name */
-    /* JADX INFO: compiled from: ContinueViewModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.ContinueViewModel$3, reason: invalid class name */
+    /* INFO: compiled from: ContinueViewModel.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass3 extends Lambda<Unit> implements Function1<List<? extends PlayableItemEntity>, Unit> {
         final /* synthetic */ Application $application;
@@ -189,7 +189,7 @@ public final class ContinueViewModel extends DaijishouAndroidViewModel {
         final /* synthetic */ Ref.ObjectRef<List<PlayableItemEntity>> $recentPlayableItems;
         final /* synthetic */ ContinueViewModel this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(Ref.ObjectRef<List<PlayableItemEntity>> objectRef, Ref.LongRef longRef, ContinueViewModel continueViewModel, Application application) {
             super(1);
             this.$recentPlayableItems = objectRef;
@@ -204,8 +204,8 @@ public final class ContinueViewModel extends DaijishouAndroidViewModel {
             return Unit.INSTANCE;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* WARN: Multi-variable type inference failed */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<PlayableItemEntity> list) {
             Ref.ObjectRef<List<PlayableItemEntity>> objectRef = this.$recentPlayableItems;
             Intrinsics.checkNotNull(list);

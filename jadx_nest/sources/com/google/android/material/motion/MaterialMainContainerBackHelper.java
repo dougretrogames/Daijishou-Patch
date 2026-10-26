@@ -18,7 +18,7 @@ import com.google.android.material.animation.AnimationUtils;
 import com.google.android.material.internal.ClippableRoundedCornerLayout;
 import com.google.android.material.internal.ViewUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialMainContainerBackHelper extends MaterialBackAnimationHelper<View> {
     private static final float MIN_SCALE = 0.9f;
     private Integer expandedCornerSize;
@@ -120,7 +120,7 @@ public class MaterialMainContainerBackHelper extends MaterialBackAnimationHelper
         return animatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.motion.MaterialMainContainerBackHelper$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.motion.MaterialMainContainerBackHelper$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         final /* synthetic */ View val$collapsedView;
 

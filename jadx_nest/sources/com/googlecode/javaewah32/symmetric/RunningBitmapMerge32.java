@@ -6,7 +6,7 @@ import com.googlecode.javaewah32.EWAHCompressedBitmap32;
 import com.googlecode.javaewah32.IteratingBufferedRunningLengthWord32;
 import java.util.Comparator;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class RunningBitmapMerge32 implements BitmapSymmetricAlgorithm32 {
     @Override // com.googlecode.javaewah32.symmetric.BitmapSymmetricAlgorithm32
     public void symmetric(UpdateableBitmapFunction32 updateableBitmapFunction32, BitmapStorage32 bitmapStorage32, EWAHCompressedBitmap32... eWAHCompressedBitmap32Arr) {
@@ -46,7 +46,7 @@ public class RunningBitmapMerge32 implements BitmapSymmetricAlgorithm32 {
         }
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah32.symmetric.RunningBitmapMerge32$1, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah32.symmetric.RunningBitmapMerge32$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<EWAHPointer32> {
         AnonymousClass1() {
         }

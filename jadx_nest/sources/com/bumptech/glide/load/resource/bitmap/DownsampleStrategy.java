@@ -2,7 +2,7 @@ package com.bumptech.glide.load.resource.bitmap;
 
 import com.bumptech.glide.load.Option;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class DownsampleStrategy {
     public static final DownsampleStrategy CENTER_OUTSIDE;
     public static final DownsampleStrategy DEFAULT;

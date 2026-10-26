@@ -6,7 +6,7 @@ import android.util.TypedValue;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TypedValueCompat {
     private static final float INCHES_PER_MM = 0.03937008f;
     private static final float INCHES_PER_PT = 0.013888889f;

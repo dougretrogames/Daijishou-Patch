@@ -4,7 +4,7 @@ import androidx.constraintlayout.core.state.ConstraintReference;
 import androidx.constraintlayout.core.state.State;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class HorizontalChainReference extends ChainReference {
     public HorizontalChainReference(State state) {
         super(state, State.Helper.HORIZONTAL_CHAIN);
@@ -80,7 +80,7 @@ public class HorizontalChainReference extends ChainReference {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.core.state.helpers.HorizontalChainReference$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.core.state.helpers.HorizontalChainReference$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$androidx$constraintlayout$core$state$State$Chain;
 

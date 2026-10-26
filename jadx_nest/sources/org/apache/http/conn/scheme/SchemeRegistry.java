@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.apache.http.HttpHost;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public final class SchemeRegistry {
     private final ConcurrentHashMap<String, Scheme> registeredSchemes = new ConcurrentHashMap<>();

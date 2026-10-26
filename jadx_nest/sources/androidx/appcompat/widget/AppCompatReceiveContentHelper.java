@@ -15,7 +15,7 @@ import android.widget.TextView;
 import androidx.core.view.ContentInfoCompat;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class AppCompatReceiveContentHelper {
     private static final String LOG_TAG = "ReceiveContent";
 

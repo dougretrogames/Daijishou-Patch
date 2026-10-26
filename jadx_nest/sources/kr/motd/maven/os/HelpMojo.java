@@ -18,7 +18,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HelpMojo extends AbstractMojo {
     private static final int DEFAULT_LINE_LENGTH = 80;
     private static final String PLUGIN_HELP_PATH = "/META-INF/maven/kr.motd.maven/os-maven-plugin/plugin-help.xml";
@@ -27,7 +27,7 @@ public class HelpMojo extends AbstractMojo {
     private int indentSize;
     private int lineLength;
 
-    /* JADX INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
+    /* INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
     private Document build() throws MojoExecutionException {
         getLog().debug("load plugin-help.xml: /META-INF/maven/kr.motd.maven/os-maven-plugin/plugin-help.xml");
         InputStream resourceAsStream = null;
@@ -65,7 +65,7 @@ public class HelpMojo extends AbstractMojo {
         }
     }
 
-    /* JADX INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
+    /* INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
     public void execute() throws MojoExecutionException {
         if (this.lineLength <= 0) {
             getLog().warn("The parameter 'lineLength' should be positive, using '80' as default.");
@@ -114,7 +114,7 @@ public class HelpMojo extends AbstractMojo {
         return getSingleChild(node, str).getTextContent();
     }
 
-    /* JADX INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
+    /* INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
     private Node getSingleChild(Node node, String str) throws MojoExecutionException {
         List<Node> listFindNamedChild = findNamedChild(node, str);
         if (listFindNamedChild.isEmpty()) {
@@ -138,7 +138,7 @@ public class HelpMojo extends AbstractMojo {
         return arrayList;
     }
 
-    /* JADX INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
+    /* INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
     private Node findSingleChild(Node node, String str) throws MojoExecutionException {
         List<Node> listFindNamedChild = findNamedChild(node, str);
         if (listFindNamedChild.isEmpty()) {
@@ -150,7 +150,7 @@ public class HelpMojo extends AbstractMojo {
         return listFindNamedChild.get(0);
     }
 
-    /* JADX INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
+    /* INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
     private void writeGoal(StringBuilder sb, String str, Element element) throws MojoExecutionException {
         String value = getValue(element, "goal");
         Node nodeFindSingleChild = findSingleChild(element, "configuration");
@@ -181,7 +181,7 @@ public class HelpMojo extends AbstractMojo {
         }
     }
 
-    /* JADX INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
+    /* INFO: Thrown type has an unknown type hierarchy: org.apache.maven.plugin.MojoExecutionException */
     private void writeParameter(StringBuilder sb, Node node, Node node2) throws MojoExecutionException {
         String str;
         String value = getValue(node, "name");

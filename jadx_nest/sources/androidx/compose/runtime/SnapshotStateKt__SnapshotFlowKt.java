@@ -23,8 +23,8 @@ import kotlinx.coroutines.flow.FlowCollector;
 import kotlinx.coroutines.flow.FlowKt;
 import kotlinx.coroutines.flow.StateFlow;
 
-/* JADX INFO: compiled from: SnapshotFlow.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: SnapshotFlow.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000<\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\"\n\u0002\b\u0002\u001a \u0010\u0000\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0004\b\u0000\u0010\u00022\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0004\u001a?\u0010\u0005\u001a\b\u0012\u0004\u0012\u0002H\u00070\u0006\"\b\b\u0000\u0010\u0002*\u0002H\u0007\"\u0004\b\u0001\u0010\u0007*\b\u0012\u0004\u0012\u0002H\u00020\u00012\u0006\u0010\b\u001a\u0002H\u00072\b\b\u0002\u0010\t\u001a\u00020\nH\u0007¢\u0006\u0002\u0010\u000b\u001a-\u0010\u0005\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0006\"\u0004\b\u0000\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00020\f2\b\b\u0002\u0010\t\u001a\u00020\nH\u0007¢\u0006\u0002\u0010\r\u001a/\u0010\u000e\u001a\u00020\u000f\"\b\b\u0000\u0010\u0002*\u00020\u0010*\b\u0012\u0004\u0012\u0002H\u00020\u00112\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0013H\u0002¢\u0006\u0002\b\u0014¨\u0006\u0015"}, d2 = {"snapshotFlow", "Lkotlinx/coroutines/flow/Flow;", ExifInterface.GPS_DIRECTION_TRUE, "block", "Lkotlin/Function0;", "collectAsState", "Landroidx/compose/runtime/State;", "R", "initial", "context", "Lkotlin/coroutines/CoroutineContext;", "(Lkotlinx/coroutines/flow/Flow;Ljava/lang/Object;Lkotlin/coroutines/CoroutineContext;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;", "Lkotlinx/coroutines/flow/StateFlow;", "(Lkotlinx/coroutines/flow/StateFlow;Lkotlin/coroutines/CoroutineContext;Landroidx/compose/runtime/Composer;II)Landroidx/compose/runtime/State;", "intersects", "", "", "Landroidx/compose/runtime/collection/IdentityArraySet;", "other", "", "intersects$SnapshotStateKt__SnapshotFlowKt", "runtime_release"}, k = 5, mv = {1, 8, 0}, xi = 48, xs = "androidx/compose/runtime/SnapshotStateKt")
 final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
     public static final <T> State<T> collectAsState(StateFlow<? extends T> stateFlow, CoroutineContext coroutineContext, Composer composer, int i, int i2) {
@@ -45,9 +45,9 @@ final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
         return stateCollectAsState;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [R] */
-    /* JADX INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$collectAsState$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SnapshotFlow.kt */
+    /* INFO: Add missing generic type declarations: [R] */
+    /* INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$collectAsState$1, reason: invalid class name */
+    /* INFO: compiled from: SnapshotFlow.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u0002H\u0003\"\u0004\b\u0001\u0010\u0003*\b\u0012\u0004\u0012\u0002H\u00030\u0004H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "R", "Landroidx/compose/runtime/ProduceStateScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$collectAsState$1", f = "SnapshotFlow.kt", i = {}, l = {65, 66}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass1<R> extends SuspendLambda implements Function2<ProduceStateScope<R>, Continuation<? super Unit>, Object> {
@@ -56,8 +56,8 @@ final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
         private /* synthetic */ Object L$0;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(CoroutineContext coroutineContext, Flow<? extends T> flow, Continuation<? super AnonymousClass1> continuation) {
             super(2, continuation);
             this.$context = coroutineContext;
@@ -76,19 +76,19 @@ final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
             return ((AnonymousClass1) create(produceStateScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:13:0x003e, code lost:
+        /* WARN: Code restructure failed: missing block: B:13:0x003e, code lost:
         
             if (r1.collect(r2, r6) == r0) goto L17;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:16:0x0056, code lost:
+        /* WARN: Code restructure failed: missing block: B:16:0x0056, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(r6.$context, new androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt.AnonymousClass1.AnonymousClass2(r6.$this_collectAsState, r7, null), r6) == r0) goto L17;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:17:0x0058, code lost:
+        /* WARN: Code restructure failed: missing block: B:17:0x0058, code lost:
         
             return r0;
          */
-        /* JADX WARN: Type inference incomplete: some casts might be missing */
+        /* WARN: Type inference incomplete: some casts might be missing */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
             Code decompiled incorrectly, please refer to instructions dump.
@@ -152,8 +152,8 @@ final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
             throw new UnsupportedOperationException("Method not decompiled: androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt.AnonymousClass1.invokeSuspend(java.lang.Object):java.lang.Object");
         }
 
-        /* JADX INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$collectAsState$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: SnapshotFlow.kt */
+        /* INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$collectAsState$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: SnapshotFlow.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u0002H\u0003\"\u0004\b\u0001\u0010\u00032\u0006\u0010\u0004\u001a\u0002H\u0002H\u008a@¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "R", "it", "emit", "(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"}, k = 3, mv = {1, 8, 0}, xi = 48)
         static final class C00011<T> implements FlowCollector {
             final /* synthetic */ ProduceStateScope<R> $$this$produceState;
@@ -169,8 +169,8 @@ final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$collectAsState$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: SnapshotFlow.kt */
+        /* INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$collectAsState$1$2, reason: invalid class name */
+        /* INFO: compiled from: SnapshotFlow.kt */
         @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u0002H\u0003\"\u0004\b\u0001\u0010\u0003*\u00020\u0004H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "R", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
         @DebugMetadata(c = "androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$collectAsState$1$2", f = "SnapshotFlow.kt", i = {}, l = {67}, m = "invokeSuspend", n = {}, s = {})
         static final class AnonymousClass2 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -178,8 +178,8 @@ final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
             final /* synthetic */ Flow<T> $this_collectAsState;
             int label;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             AnonymousClass2(Flow<? extends T> flow, ProduceStateScope<R> produceStateScope, Continuation<? super AnonymousClass2> continuation) {
                 super(2, continuation);
                 this.$this_collectAsState = flow;
@@ -196,8 +196,8 @@ final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
                 return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
             }
 
-            /* JADX INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$collectAsState$1$2$1, reason: invalid class name and collision with other inner class name */
-            /* JADX INFO: compiled from: SnapshotFlow.kt */
+            /* INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$collectAsState$1$2$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: compiled from: SnapshotFlow.kt */
             @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u0002H\u0003\"\u0004\b\u0001\u0010\u00032\u0006\u0010\u0004\u001a\u0002H\u0002H\u008a@¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "R", "it", "emit", "(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"}, k = 3, mv = {1, 8, 0}, xi = 48)
             static final class C00021<T> implements FlowCollector {
                 final /* synthetic */ ProduceStateScope<R> $$this$produceState;
@@ -213,7 +213,7 @@ final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
                 }
             }
 
-            /* JADX WARN: Type inference incomplete: some casts might be missing */
+            /* WARN: Type inference incomplete: some casts might be missing */
             @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
             public final Object invokeSuspend(Object obj) throws Throwable {
                 Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
@@ -256,9 +256,9 @@ final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
         return stateProduceState;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: SnapshotFlow.kt */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: SnapshotFlow.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/flow/FlowCollector;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.SnapshotStateKt__SnapshotFlowKt$snapshotFlow$1", f = "SnapshotFlow.kt", i = {0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2}, l = {134, 138, 160}, m = "invokeSuspend", n = {"$this$flow", "readSet", "readObserver", "appliedChanges", "unregisterApplyObserver", "lastValue", "$this$flow", "readSet", "readObserver", "appliedChanges", "unregisterApplyObserver", "lastValue", "found", "$this$flow", "readSet", "readObserver", "appliedChanges", "unregisterApplyObserver", "lastValue"}, s = {"L$0", "L$1", "L$2", "L$3", "L$4", "L$5", "L$0", "L$1", "L$2", "L$3", "L$4", "L$5", "I$0", "L$0", "L$1", "L$2", "L$3", "L$4", "L$5"})
     static final class C01111<T> extends SuspendLambda implements Function2<FlowCollector<? super T>, Continuation<? super Unit>, Object> {
@@ -272,8 +272,8 @@ final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
         Object L$5;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C01111(Function0<? extends T> function0, Continuation<? super C01111> continuation) {
             super(2, continuation);
             this.$block = function0;
@@ -291,27 +291,27 @@ final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
             return ((C01111) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Code duplicated, block: B:28:0x00ca  */
-        /* JADX WARN: Code duplicated, block: B:31:0x00d5 A[Catch: all -> 0x0052, TryCatch #1 {all -> 0x0052, blocks: (B:13:0x004d, B:29:0x00d1, B:31:0x00d5, B:36:0x00df, B:39:0x00ed, B:43:0x0103, B:45:0x010c, B:52:0x012a, B:53:0x012d, B:40:0x00f8, B:42:0x0100, B:49:0x0125, B:50:0x0128), top: B:66:0x004d, inners: #4 }] */
-        /* JADX WARN: Code duplicated, block: B:35:0x00de  */
-        /* JADX WARN: Code duplicated, block: B:39:0x00ed A[Catch: all -> 0x0052, TRY_LEAVE, TryCatch #1 {all -> 0x0052, blocks: (B:13:0x004d, B:29:0x00d1, B:31:0x00d5, B:36:0x00df, B:39:0x00ed, B:43:0x0103, B:45:0x010c, B:52:0x012a, B:53:0x012d, B:40:0x00f8, B:42:0x0100, B:49:0x0125, B:50:0x0128), top: B:66:0x004d, inners: #4 }] */
-        /* JADX WARN: Code duplicated, block: B:45:0x010c A[Catch: all -> 0x0052, TRY_LEAVE, TryCatch #1 {all -> 0x0052, blocks: (B:13:0x004d, B:29:0x00d1, B:31:0x00d5, B:36:0x00df, B:39:0x00ed, B:43:0x0103, B:45:0x010c, B:52:0x012a, B:53:0x012d, B:40:0x00f8, B:42:0x0100, B:49:0x0125, B:50:0x0128), top: B:66:0x004d, inners: #4 }] */
-        /* JADX WARN: Code duplicated, block: B:55:0x012f  */
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX WARN: Path cross not found for [B:39:0x00ed, B:54:0x012e], limit reached: 74 */
-        /* JADX WARN: Type inference failed for: r10v1, types: [java.lang.Object, kotlinx.coroutines.flow.FlowCollector] */
-        /* JADX WARN: Type inference failed for: r10v2, types: [java.lang.Object] */
-        /* JADX WARN: Type inference failed for: r10v5 */
-        /* JADX WARN: Type inference failed for: r10v6 */
-        /* JADX WARN: Type inference failed for: r10v8, types: [kotlinx.coroutines.flow.FlowCollector] */
-        /* JADX WARN: Type inference failed for: r11v1 */
-        /* JADX WARN: Type inference failed for: r11v2, types: [java.lang.Object, kotlinx.coroutines.flow.FlowCollector] */
-        /* JADX WARN: Type inference failed for: r11v5 */
-        /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-            jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
-            	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-            	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-            	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+        /* WARN: Code duplicated, block: B:28:0x00ca  */
+        /* WARN: Code duplicated, block: B:31:0x00d5 A[Catch: all -> 0x0052, TryCatch #1 {all -> 0x0052, blocks: (B:13:0x004d, B:29:0x00d1, B:31:0x00d5, B:36:0x00df, B:39:0x00ed, B:43:0x0103, B:45:0x010c, B:52:0x012a, B:53:0x012d, B:40:0x00f8, B:42:0x0100, B:49:0x0125, B:50:0x0128), top: B:66:0x004d, inners: #4 }] */
+        /* WARN: Code duplicated, block: B:35:0x00de  */
+        /* WARN: Code duplicated, block: B:39:0x00ed A[Catch: all -> 0x0052, TRY_LEAVE, TryCatch #1 {all -> 0x0052, blocks: (B:13:0x004d, B:29:0x00d1, B:31:0x00d5, B:36:0x00df, B:39:0x00ed, B:43:0x0103, B:45:0x010c, B:52:0x012a, B:53:0x012d, B:40:0x00f8, B:42:0x0100, B:49:0x0125, B:50:0x0128), top: B:66:0x004d, inners: #4 }] */
+        /* WARN: Code duplicated, block: B:45:0x010c A[Catch: all -> 0x0052, TRY_LEAVE, TryCatch #1 {all -> 0x0052, blocks: (B:13:0x004d, B:29:0x00d1, B:31:0x00d5, B:36:0x00df, B:39:0x00ed, B:43:0x0103, B:45:0x010c, B:52:0x012a, B:53:0x012d, B:40:0x00f8, B:42:0x0100, B:49:0x0125, B:50:0x0128), top: B:66:0x004d, inners: #4 }] */
+        /* WARN: Code duplicated, block: B:55:0x012f  */
+        /* WARN: Multi-variable type inference failed */
+        /* WARN: Path cross not found for [B:39:0x00ed, B:54:0x012e], limit reached: 74 */
+        /* WARN: Type inference failed for: r10v1, types: [java.lang.Object, kotlinx.coroutines.flow.FlowCollector] */
+        /* WARN: Type inference failed for: r10v2, types: [java.lang.Object] */
+        /* WARN: Type inference failed for: r10v5 */
+        /* WARN: Type inference failed for: r10v6 */
+        /* WARN: Type inference failed for: r10v8, types: [kotlinx.coroutines.flow.FlowCollector] */
+        /* WARN: Type inference failed for: r11v1 */
+        /* WARN: Type inference failed for: r11v2, types: [java.lang.Object, kotlinx.coroutines.flow.FlowCollector] */
+        /* WARN: Type inference failed for: r11v5 */
+        /* ERROR: decompilerOverflowException in pass: RegionMakerVisitor
+            decompiler.core.utils.exceptions.decompilerOverflowException: Regions stack size limit reached
+            	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+            	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+            	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final java.lang.Object invokeSuspend(java.lang.Object r14) {
@@ -327,7 +327,7 @@ final /* synthetic */ class SnapshotStateKt__SnapshotFlowKt {
         return FlowKt.flow(new C01111(function0, null));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final <T> boolean intersects$SnapshotStateKt__SnapshotFlowKt(IdentityArraySet<T> identityArraySet, Set<? extends T> set) {
         if (identityArraySet.size() >= set.size()) {
             if (!(set instanceof IdentityArraySet)) {

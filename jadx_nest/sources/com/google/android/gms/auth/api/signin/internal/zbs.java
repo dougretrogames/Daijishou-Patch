@@ -6,8 +6,8 @@ import android.os.Parcel;
 import android.os.RemoteException;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class zbs extends com.google.android.gms.internal.p000authapi.zba implements IInterface {
     zbs(IBinder iBinder) {
         super(iBinder, "com.google.android.gms.auth.api.signin.internal.ISignInService");

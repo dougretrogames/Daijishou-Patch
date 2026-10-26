@@ -14,7 +14,7 @@ import org.apache.http.message.ParserCursor;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NetscapeDraftSpec extends CookieSpecBase {
     protected static final String EXPIRES_PATTERN = "EEE, dd-MMM-yy HH:mm:ss z";
 
@@ -28,7 +28,7 @@ public class NetscapeDraftSpec extends CookieSpecBase {
         return null;
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public NetscapeDraftSpec(String[] strArr) {
         CommonCookieAttributeHandler[] commonCookieAttributeHandlerArr = new CommonCookieAttributeHandler[5];
         commonCookieAttributeHandlerArr[0] = new BasicPathHandler();
@@ -43,7 +43,7 @@ public class NetscapeDraftSpec extends CookieSpecBase {
         super(commonCookieAttributeHandlerArr);
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public NetscapeDraftSpec() {
         this((String[]) null);
     }

@@ -4,7 +4,7 @@ import java.lang.reflect.Type;
 import kotlin.coroutines.Continuation;
 import retrofit2.Call;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class SuspendCallWrapper<T> implements CallWrapper {
     private boolean continuationWantsResponse;
     private Type returnType;

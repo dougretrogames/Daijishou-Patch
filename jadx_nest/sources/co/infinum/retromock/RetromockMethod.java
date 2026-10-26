@@ -11,7 +11,7 @@ import java.lang.reflect.Method;
 import javax.annotation.Nullable;
 import okhttp3.Headers;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class RetromockMethod {
     private static final ResponseParams DEFAULT_PARAMS = new ResponseParams.Builder().code(200).message("OK").headers(new Headers.Builder().add("Content-Type", "text/plain").build()).build();
     private final Behavior behavior;

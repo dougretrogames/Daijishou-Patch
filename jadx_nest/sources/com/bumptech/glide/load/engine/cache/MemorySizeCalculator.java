@@ -7,7 +7,7 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import com.bumptech.glide.util.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MemorySizeCalculator {
     static final int BYTES_PER_ARGB_8888_PIXEL = 4;
     private static final int LOW_MEMORY_BYTE_ARRAY_POOL_DIVISOR = 2;

@@ -8,7 +8,7 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractAdvertiseRefsHook implements AdvertiseRefsHook {
     protected Set<ObjectId> getAdvertisedHaves(Repository repository, RevWalk revWalk) throws ServiceMayNotContinueException {
         return null;

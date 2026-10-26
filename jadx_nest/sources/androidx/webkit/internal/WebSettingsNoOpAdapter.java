@@ -5,7 +5,7 @@ import androidx.webkit.WebViewMediaIntegrityApiStatusConfig;
 import java.util.Collections;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebSettingsNoOpAdapter extends WebSettingsAdapter {
     @Override // androidx.webkit.internal.WebSettingsAdapter
     public int getAttributionRegistrationBehavior() {

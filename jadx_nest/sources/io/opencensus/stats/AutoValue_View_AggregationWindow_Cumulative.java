@@ -1,6 +1,6 @@
 package io.opencensus.stats;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @Deprecated
 final class AutoValue_View_AggregationWindow_Cumulative extends View.AggregationWindow.Cumulative {
     public int hashCode() {

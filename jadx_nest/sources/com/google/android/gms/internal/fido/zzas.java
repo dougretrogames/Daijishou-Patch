@@ -4,8 +4,8 @@ import java.util.List;
 import javax.annotation.CheckForNull;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 final class zzas extends zzat {
     final transient int zza;
     final transient int zzb;
@@ -50,7 +50,7 @@ final class zzas extends zzat {
     }
 
     @Override // com.google.android.gms.internal.fido.zzat
-    /* JADX INFO: renamed from: zzf */
+    /* INFO: renamed from: zzf */
     public final zzat subList(int i, int i2) {
         zzam.zze(i, i2, this.zzb);
         zzat zzatVar = this.zzc;

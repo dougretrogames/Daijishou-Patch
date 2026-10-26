@@ -1,6 +1,6 @@
 package com.google.android.material.color.utilities;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class CorePalette {
     public TonalPalette a1;
     public TonalPalette a2;

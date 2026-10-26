@@ -26,7 +26,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ActivityCompat extends ContextCompat {
     private static PermissionCompatDelegate sDelegate;
 
@@ -108,7 +108,7 @@ public class ActivityCompat extends ContextCompat {
         Api21Impl.startPostponedEnterTransition(activity);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static void requestPermissions(Activity activity, String[] strArr, int i) {
         PermissionCompatDelegate permissionCompatDelegate = sDelegate;
         if (permissionCompatDelegate == null || !permissionCompatDelegate.requestPermissions(activity, strArr, i)) {
@@ -142,7 +142,7 @@ public class ActivityCompat extends ContextCompat {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.app.ActivityCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.app.ActivityCompat$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ Activity val$activity;
         final /* synthetic */ String[] val$permissionsArray;
@@ -352,7 +352,7 @@ public class ActivityCompat extends ContextCompat {
             return activity.shouldShowRequestPermissionRationale(str);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         public static void onSharedElementsReady(Object obj) {
             ((android.app.SharedElementCallback.OnSharedElementsReadyListener) obj).onSharedElementsReady();
         }

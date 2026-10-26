@@ -1,6 +1,6 @@
 package io.opencensus.contrib.http.util;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class HttpTraceAttributeConstants {
     public static final String HTTP_HOST = "http.host";
     public static final String HTTP_METHOD = "http.method";

@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Objects;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformedCollection<E> extends AbstractCollectionDecorator<E> {
     private static final long serialVersionUID = 8692300188161871514L;
     protected final Transformer<? super E, ? extends E> transformer;

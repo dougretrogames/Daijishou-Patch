@@ -3,7 +3,7 @@ package org.apache.http.protocol;
 import java.nio.charset.Charset;
 import org.apache.http.Consts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class HTTP {
 
     @Deprecated

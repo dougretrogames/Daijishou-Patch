@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class CompositePageTransformer implements ViewPager2.PageTransformer {
     private final List<ViewPager2.PageTransformer> mTransformers = new ArrayList();
 

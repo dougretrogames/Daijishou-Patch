@@ -3,7 +3,7 @@ package org.jsoup.helper;
 import java.lang.reflect.Constructor;
 import org.jsoup.internal.SharedConstants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class RequestDispatch {
     static Constructor<RequestExecutor> clientConstructor;
 

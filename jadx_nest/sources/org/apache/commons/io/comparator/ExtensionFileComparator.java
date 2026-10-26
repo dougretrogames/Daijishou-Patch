@@ -8,7 +8,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.commons.io.IOCase;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ExtensionFileComparator extends AbstractFileComparator implements Serializable {
     public static final Comparator<File> EXTENSION_COMPARATOR;
     public static final Comparator<File> EXTENSION_INSENSITIVE_COMPARATOR;

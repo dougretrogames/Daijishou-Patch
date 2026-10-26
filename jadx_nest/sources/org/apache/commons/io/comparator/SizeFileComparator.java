@@ -7,7 +7,7 @@ import java.util.List;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FileUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SizeFileComparator extends AbstractFileComparator implements Serializable {
     public static final Comparator<File> SIZE_COMPARATOR;
     public static final Comparator<File> SIZE_REVERSE;

@@ -2,7 +2,7 @@ package org.apache.commons.collections4.bloomfilter;
 
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class IndexUtils {
     static final int MAX_ARRAY_SIZE = 2147483639;
 

@@ -5,7 +5,7 @@ import java.util.concurrent.ExecutorService;
 import net.lingala.zip4j.exception.ZipException;
 import net.lingala.zip4j.progress.ProgressMonitor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AsyncZipTask<T> {
     private final ExecutorService executorService;
     private final ProgressMonitor progressMonitor;
@@ -36,7 +36,7 @@ public abstract class AsyncZipTask<T> {
         performTaskWithErrorHandling(t, this.progressMonitor);
     }
 
-    /* JADX INFO: renamed from: net.lingala.zip4j.tasks.AsyncZipTask$1, reason: invalid class name */
+    /* INFO: renamed from: net.lingala.zip4j.tasks.AsyncZipTask$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ Object val$taskParameters;
 
@@ -56,7 +56,7 @@ public abstract class AsyncZipTask<T> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void performTaskWithErrorHandling(T t, ProgressMonitor progressMonitor) throws ZipException {
         try {
             executeTask(t, progressMonitor);

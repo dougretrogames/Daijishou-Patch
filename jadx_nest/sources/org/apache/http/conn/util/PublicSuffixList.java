@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class PublicSuffixList {
     private final List<String> exceptions;
     private final List<String> rules;

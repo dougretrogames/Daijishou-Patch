@@ -67,7 +67,7 @@ import org.eclipse.jgit.treewalk.WorkingTreeIterator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class FS {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private static volatile FSFactory factory;
@@ -203,7 +203,7 @@ public abstract class FS {
             return thread;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static void shutdownSafeRunner() {
             try {
                 ExecutorService executorService = SAVE_RUNNER;
@@ -616,7 +616,7 @@ public abstract class FS {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static void saveToConfig(FileStore fileStore, FileStoreAttributes fileStoreAttributes) {
             try {
                 StoredConfig jGitConfig = SystemReader.getInstance().getJGitConfig();
@@ -1311,32 +1311,32 @@ public abstract class FS {
         }
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code restructure failed: missing block: B:10:0x0019, code lost:
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Code restructure failed: missing block: B:10:0x0019, code lost:
     
         if (r3.equals("post-receive") == false) goto L26;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:13:0x0022, code lost:
+    /* WARN: Code restructure failed: missing block: B:13:0x0022, code lost:
     
         if (r3.equals("push-to-checkout") == false) goto L26;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:16:0x002b, code lost:
+    /* WARN: Code restructure failed: missing block: B:16:0x002b, code lost:
     
         if (r3.equals("pre-receive") == false) goto L26;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:19:0x0034, code lost:
+    /* WARN: Code restructure failed: missing block: B:19:0x0034, code lost:
     
         if (r3.equals("post-update") == false) goto L26;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:22:0x003d, code lost:
+    /* WARN: Code restructure failed: missing block: B:22:0x003d, code lost:
     
         if (r3.equals(org.eclipse.jgit.lib.ConfigConstants.CONFIG_KEY_UPDATE) == false) goto L26;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:25:0x0044, code lost:
+    /* WARN: Code restructure failed: missing block: B:25:0x0044, code lost:
     
         return r2.getCommonDirectory();
      */
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument

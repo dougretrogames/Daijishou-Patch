@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PluggableAuthCredentials extends ExternalAccountCredentials {
     static final String PLUGGABLE_AUTH_METRICS_HEADER_VALUE = "executable";
     private final PluggableAuthCredentialSource config;
@@ -57,7 +57,7 @@ public class PluggableAuthCredentials extends ExternalAccountCredentials {
         return this.handler.retrieveTokenFromExecutable(new AnonymousClass1(command, map, timeoutMs, outputFilePath));
     }
 
-    /* JADX INFO: renamed from: com.google.auth.oauth2.PluggableAuthCredentials$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.auth.oauth2.PluggableAuthCredentials$1, reason: invalid class name */
     class AnonymousClass1 implements ExecutableHandler.ExecutableOptions {
         final /* synthetic */ Map val$envMap;
         final /* synthetic */ String val$executableCommand;
@@ -231,7 +231,7 @@ public class PluggableAuthCredentials extends ExternalAccountCredentials {
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.auth.oauth2.ExternalAccountCredentials.Builder
         public Builder setEnvironmentProvider(EnvironmentProvider environmentProvider) {
             super.setEnvironmentProvider(environmentProvider);

@@ -3,7 +3,7 @@ package com.google.api.client.http;
 import com.google.api.client.util.Preconditions;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class InputStreamContent extends AbstractInputStreamContent {
     private final InputStream inputStream;
     private long length;

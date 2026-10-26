@@ -17,7 +17,7 @@ import javax.annotation.Nullable;
 import org.apache.http.message.TokenParser;
 import org.eclipse.jgit.transport.WalkEncryption;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class StsRequestHandler {
     private static final String PARSE_ERROR_PREFIX = "Error parsing token response.";
     private static final String TOKEN_EXCHANGE_GRANT_TYPE = "urn:ietf:params:oauth:grant-type:token-exchange";

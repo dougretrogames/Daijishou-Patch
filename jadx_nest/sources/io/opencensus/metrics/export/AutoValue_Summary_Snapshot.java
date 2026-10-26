@@ -3,7 +3,7 @@ package io.opencensus.metrics.export;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Summary_Snapshot extends Summary.Snapshot {
     private final Long count;
     private final Double sum;

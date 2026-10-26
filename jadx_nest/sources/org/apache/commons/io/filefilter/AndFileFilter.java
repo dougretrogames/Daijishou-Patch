@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AndFileFilter extends AbstractFileFilter implements ConditionalFileFilter, Serializable {
     private static final long serialVersionUID = 7215974688563965257L;
     private final List<IOFileFilter> fileFilters;

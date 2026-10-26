@@ -1,6 +1,6 @@
 package org.apache.commons.io.output;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface UncheckedAppendable extends Appendable {
     @Override // java.lang.Appendable
     UncheckedAppendable append(char c);

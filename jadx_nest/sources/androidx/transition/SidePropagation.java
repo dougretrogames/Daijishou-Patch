@@ -4,7 +4,7 @@ import android.graphics.Rect;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SidePropagation extends VisibilityPropagation {
     private float mPropagationSpeed = 3.0f;
     private int mSide = 80;
@@ -63,8 +63,8 @@ public class SidePropagation extends VisibilityPropagation {
         return Math.round(((duration * ((long) i)) / this.mPropagationSpeed) * fDistance);
     }
 
-    /* JADX WARN: Code duplicated, block: B:6:0x0010  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0012  */
+    /* WARN: Code duplicated, block: B:6:0x0010  */
+    /* WARN: Code duplicated, block: B:7:0x0012  */
     private int distance(View view, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
         int i9 = this.mSide;
         if (i9 == 8388611) {

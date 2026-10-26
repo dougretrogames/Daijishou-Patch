@@ -19,7 +19,7 @@ import java.util.Set;
 import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class WidgetFrame {
     public static float phone_orientation = Float.NaN;
     public float alpha;
@@ -415,7 +415,7 @@ public class WidgetFrame {
         return this.mCustom.keySet();
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public boolean setValue(String str, CLElement cLElement) throws CLParsingException {
         str.hashCode();
         byte b = -1;

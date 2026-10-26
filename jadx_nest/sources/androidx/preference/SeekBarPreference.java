@@ -11,7 +11,7 @@ import android.view.View;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SeekBarPreference extends Preference {
     private static final String TAG = "SeekBarPreference";
     boolean mAdjustable;
@@ -27,7 +27,7 @@ public class SeekBarPreference extends Preference {
     boolean mTrackingTouch;
     boolean mUpdatesContinuously;
 
-    /* JADX INFO: renamed from: androidx.preference.SeekBarPreference$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.SeekBarPreference$1, reason: invalid class name */
     class AnonymousClass1 implements SeekBar.OnSeekBarChangeListener {
         AnonymousClass1() {
         }
@@ -56,7 +56,7 @@ public class SeekBarPreference extends Preference {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.preference.SeekBarPreference$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.SeekBarPreference$2, reason: invalid class name */
     class AnonymousClass2 implements View.OnKeyListener {
         AnonymousClass2() {
         }
@@ -292,18 +292,18 @@ public class SeekBarPreference extends Preference {
         int mMin;
         int mSeekBarValue;
 
-        /* JADX INFO: renamed from: androidx.preference.SeekBarPreference$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.preference.SeekBarPreference$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];

@@ -8,7 +8,7 @@ import java.util.EnumSet;
 import java.util.Set;
 import org.eclipse.jgit.diff.RawText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AutoLFInputStream extends InputStream {
     private final boolean abortIfBinary;
     private int cnt;
@@ -26,7 +26,7 @@ public class AutoLFInputStream extends InputStream {
         ABORT_IF_BINARY,
         FOR_CHECKOUT;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static StreamFlag[] valuesCustom() {
             StreamFlag[] streamFlagArrValuesCustom = values();
             int length = streamFlagArrValuesCustom.length;

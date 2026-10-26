@@ -2,8 +2,8 @@ package com.google.common.util.concurrent;
 
 import java.util.concurrent.Executor;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class AbstractExecutionThreadService$$ExternalSyntheticLambda0 implements Executor {
     public final /* synthetic */ AbstractExecutionThreadService f$0;
 

@@ -23,7 +23,7 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.util.LongList;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReftableWriter {
     private boolean alignBlocks;
     private ReftableConfig config;
@@ -118,7 +118,7 @@ public class ReftableWriter {
         return this;
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-reftable-ReftableWriter, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-reftable-ReftableWriter, reason: not valid java name */
     /* synthetic */ BlockWriter.RefEntry m5766x967d6b23(Ref ref) {
         return new BlockWriter.RefEntry(ref, this.maxUpdateIndex - this.minUpdateIndex);
     }
@@ -266,7 +266,7 @@ public class ReftableWriter {
         this.logs.finishSectionMaybeWriteIndex();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean shouldHaveIndex(IndexBuilder indexBuilder) {
         return indexBuilder.entries.size() + (this.cur != null ? 1 : 0) > ((indexBuilder != this.refs.idx || !this.alignBlocks) ? 1 : 4);
     }

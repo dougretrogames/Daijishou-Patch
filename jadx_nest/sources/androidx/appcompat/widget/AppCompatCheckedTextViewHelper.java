@@ -12,7 +12,7 @@ import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.view.ViewCompat;
 import androidx.core.widget.CheckedTextViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class AppCompatCheckedTextViewHelper {
     private ColorStateList mCheckMarkTintList = null;
     private PorterDuff.Mode mCheckMarkTintMode = null;

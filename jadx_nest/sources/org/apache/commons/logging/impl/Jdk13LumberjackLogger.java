@@ -10,7 +10,7 @@ import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 import org.apache.commons.logging.Log;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Jdk13LumberjackLogger implements Log, Serializable {
     protected static final Level dummyLevel = Level.FINE;
     private static final long serialVersionUID = -8649807923527610591L;

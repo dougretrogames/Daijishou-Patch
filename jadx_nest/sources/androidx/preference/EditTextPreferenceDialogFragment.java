@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class EditTextPreferenceDialogFragment extends PreferenceDialogFragment {
     private static final String SAVE_STATE_TEXT = "EditTextPreferenceDialogFragment.text";

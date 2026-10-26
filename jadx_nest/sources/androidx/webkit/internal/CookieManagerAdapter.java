@@ -3,7 +3,7 @@ package androidx.webkit.internal;
 import java.util.List;
 import org.chromium.support_lib_boundary.WebViewCookieManagerBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CookieManagerAdapter {
     private final WebViewCookieManagerBoundaryInterface mBoundaryInterface;
 

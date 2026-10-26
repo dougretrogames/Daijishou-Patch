@@ -16,7 +16,7 @@ import java.math.BigInteger;
 import java.util.Iterator;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class JsonGenerator implements Closeable, Flushable {
     @Override // java.io.Closeable, java.lang.AutoCloseable
     public abstract void close() throws IOException;

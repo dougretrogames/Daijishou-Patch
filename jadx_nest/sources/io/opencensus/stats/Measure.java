@@ -4,7 +4,7 @@ import io.opencensus.common.Function;
 import io.opencensus.internal.StringUtils;
 import io.opencensus.internal.Utils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Measure {
     private static final String ERROR_MESSAGE_INVALID_NAME = "Name should be a ASCII string with a length no greater than 255 characters.";
     static final int NAME_MAX_LENGTH = 255;

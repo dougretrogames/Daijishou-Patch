@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class StandardValueGraph<N, V> extends AbstractValueGraph<N, V> {
     private final boolean allowsSelfLoops;
@@ -74,11 +74,11 @@ class StandardValueGraph<N, V> extends AbstractValueGraph<N, V> {
         return (Set<EndpointPair<N>>) nodeInvalidatableSet(new AnonymousClass1(this, this, n, checkedConnections(n)), n);
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.StandardValueGraph$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.StandardValueGraph$1, reason: invalid class name */
     class AnonymousClass1 extends IncidentEdgeSet<N> {
         final /* synthetic */ GraphConnections val$connections;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(final StandardValueGraph this$0, BaseGraph graph, Object node, final GraphConnections val$connections) {
             super(graph, node);
             this.val$connections = val$connections;
@@ -90,7 +90,7 @@ class StandardValueGraph<N, V> extends AbstractValueGraph<N, V> {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.AbstractValueGraph, com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public boolean hasEdgeConnecting(N nodeU, N nodeV) {
         return hasEdgeConnectingInternal(Preconditions.checkNotNull(nodeU), Preconditions.checkNotNull(nodeV));
@@ -102,7 +102,7 @@ class StandardValueGraph<N, V> extends AbstractValueGraph<N, V> {
         return isOrderingCompatible(endpoints) && hasEdgeConnectingInternal(endpoints.nodeU(), endpoints.nodeV());
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @CheckForNull
     public V edgeValueOrDefault(N n, N n2, @CheckForNull V v) {
         return (V) edgeValueOrDefaultInternal(Preconditions.checkNotNull(n), Preconditions.checkNotNull(n2), v);

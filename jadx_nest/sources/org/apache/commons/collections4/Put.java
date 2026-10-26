@@ -2,7 +2,7 @@ package org.apache.commons.collections4;
 
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface Put<K, V> {
     void clear();
 

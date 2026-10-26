@@ -4,7 +4,7 @@ import java.util.Set;
 import org.apache.commons.collections4.Predicate;
 import org.apache.commons.collections4.collection.PredicatedCollection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PredicatedSet<E> extends PredicatedCollection<E> implements Set<E> {
     private static final long serialVersionUID = -684521469108685117L;
 
@@ -16,7 +16,7 @@ public class PredicatedSet<E> extends PredicatedCollection<E> implements Set<E> 
         super(set, predicate);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public Set<E> decorated() {
         return (Set) super.decorated();

@@ -6,7 +6,7 @@ import com.google.api.client.util.Key;
 import com.google.api.client.util.Preconditions;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class IdTokenResponse extends TokenResponse {
 
     @Key("id_token")

@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ManagedChannelRegistry {
     private static ManagedChannelRegistry instance;
     private static final Logger logger = Logger.getLogger(ManagedChannelRegistry.class.getName());
@@ -42,7 +42,7 @@ public final class ManagedChannelRegistry {
         this.effectiveProviders = Collections.unmodifiableList(arrayList);
     }
 
-    /* JADX INFO: renamed from: io.grpc.ManagedChannelRegistry$1, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.ManagedChannelRegistry$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<ManagedChannelProvider> {
         AnonymousClass1() {
         }

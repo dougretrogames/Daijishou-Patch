@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.daijishou_widget.widgets.retro_achievements;
 import android.view.View;
 import com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserProfileEntity;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class RetroAchievementsNavFragment$$ExternalSyntheticLambda7 implements View.OnClickListener {
     public final /* synthetic */ RetroAchievementsUserProfileEntity f$0;
     public final /* synthetic */ RetroAchievementsNavFragment f$1;

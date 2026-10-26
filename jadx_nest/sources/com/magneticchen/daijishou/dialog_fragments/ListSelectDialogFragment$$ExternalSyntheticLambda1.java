@@ -4,8 +4,8 @@ import android.app.AlertDialog;
 import android.view.View;
 import android.widget.AdapterView;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class ListSelectDialogFragment$$ExternalSyntheticLambda1 implements AdapterView.OnItemClickListener {
     public final /* synthetic */ ListSelectDialogFragment f$0;
     public final /* synthetic */ boolean f$1;

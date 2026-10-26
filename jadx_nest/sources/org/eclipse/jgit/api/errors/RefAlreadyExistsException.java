@@ -3,7 +3,7 @@ package org.eclipse.jgit.api.errors;
 import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.lib.RefUpdate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RefAlreadyExistsException extends GitAPIException {
     private static final long serialVersionUID = 1;
     private final RefUpdate.Result updateResult;

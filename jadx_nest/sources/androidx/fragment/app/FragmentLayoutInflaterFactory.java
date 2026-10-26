@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import androidx.fragment.R;
 import androidx.fragment.app.strictmode.FragmentStrictMode;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class FragmentLayoutInflaterFactory implements LayoutInflater.Factory2 {
     private static final String TAG = "FragmentManager";
     final FragmentManager mFragmentManager;
@@ -100,7 +100,7 @@ class FragmentLayoutInflaterFactory implements LayoutInflater.Factory2 {
         return fragmentFindFragmentById.mView;
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentLayoutInflaterFactory$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentLayoutInflaterFactory$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnAttachStateChangeListener {
         final /* synthetic */ FragmentStateManager val$fragmentStateManager;
 

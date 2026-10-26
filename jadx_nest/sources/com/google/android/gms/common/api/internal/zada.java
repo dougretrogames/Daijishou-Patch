@@ -14,8 +14,8 @@ import com.google.android.gms.common.api.TransformedResult;
 import com.google.android.gms.common.internal.Preconditions;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class zada<R extends Result> extends TransformedResult<R> implements ResultCallback<R> {
     private final WeakReference zag;
     private final zacz zah;
@@ -34,7 +34,7 @@ public final class zada<R extends Result> extends TransformedResult<R> implement
         this.zah = new zacz(this, googleApiClient != null ? googleApiClient.getLooper() : Looper.getMainLooper());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void zaj(Status status) {
         synchronized (this.zae) {
             this.zaf = status;
@@ -77,7 +77,7 @@ public final class zada<R extends Result> extends TransformedResult<R> implement
         return (this.zac == null || ((GoogleApiClient) this.zag.get()) == null) ? false : true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void zan(Result result) {
         if (result instanceof Releasable) {
             try {

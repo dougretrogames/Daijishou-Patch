@@ -17,7 +17,7 @@ import org.eclipse.jgit.lib.ObjectLoader;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.util.FS;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class FileObjectDatabase extends ObjectDatabase {
 
     enum InsertLooseObjectResult {
@@ -26,7 +26,7 @@ abstract class FileObjectDatabase extends ObjectDatabase {
         EXISTS_LOOSE,
         FAILURE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static InsertLooseObjectResult[] valuesCustom() {
             InsertLooseObjectResult[] insertLooseObjectResultArrValuesCustom = values();
             int length = insertLooseObjectResultArrValuesCustom.length;

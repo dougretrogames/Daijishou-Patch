@@ -1,6 +1,6 @@
 package org.commonmark.node;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractVisitor implements Visitor {
     @Override // org.commonmark.node.Visitor
     public void visit(BlockQuote blockQuote) {

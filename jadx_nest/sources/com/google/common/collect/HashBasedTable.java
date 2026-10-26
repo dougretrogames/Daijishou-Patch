@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class HashBasedTable<R, C, V> extends StandardTable<R, C, V> {
     private static final long serialVersionUID = 0;
@@ -23,7 +23,7 @@ public class HashBasedTable<R, C, V> extends StandardTable<R, C, V> {
         super.clear();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.StandardTable, com.google.common.collect.Table
     public /* bridge */ /* synthetic */ Map column(Object columnKey) {
         return super.column(columnKey);
@@ -80,7 +80,7 @@ public class HashBasedTable<R, C, V> extends StandardTable<R, C, V> {
         return super.isEmpty();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.StandardTable, com.google.common.collect.AbstractTable, com.google.common.collect.Table
     @CheckForNull
     public /* bridge */ /* synthetic */ Object put(Object rowKey, Object columnKey, Object value) {
@@ -98,7 +98,7 @@ public class HashBasedTable<R, C, V> extends StandardTable<R, C, V> {
         return super.remove(rowKey, columnKey);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.StandardTable, com.google.common.collect.Table
     public /* bridge */ /* synthetic */ Map row(Object rowKey) {
         return super.row(rowKey);

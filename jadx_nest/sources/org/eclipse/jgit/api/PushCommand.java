@@ -38,7 +38,7 @@ import org.eclipse.jgit.transport.RefSpec;
 import org.eclipse.jgit.transport.RemoteConfig;
 import org.eclipse.jgit.transport.Transport;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PushCommand extends TransportCommand<PushCommand, Iterable<PushResult>> {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$transport$PushConfig$PushDefault;
     private boolean atomic;

@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.FrameLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CardView extends FrameLayout {
     private static final int[] COLOR_BACKGROUND_ATTR = {R.attr.colorBackground};
     private static final CardViewImpl IMPL;
@@ -197,7 +197,7 @@ public class CardView extends FrameLayout {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.cardview.widget.CardView$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.cardview.widget.CardView$1, reason: invalid class name */
     class AnonymousClass1 implements CardViewDelegate {
         private Drawable mCardBackground;
 

@@ -3,7 +3,7 @@ package com.google.api.client.util;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class ByteArrayStreamingContent implements StreamingContent {
     private final byte[] byteArray;

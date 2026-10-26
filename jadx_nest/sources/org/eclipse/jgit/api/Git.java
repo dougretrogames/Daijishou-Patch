@@ -11,7 +11,7 @@ import org.eclipse.jgit.lib.internal.WorkQueue;
 import org.eclipse.jgit.nls.NLS;
 import org.eclipse.jgit.util.FS;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Git implements AutoCloseable {
     private final boolean closeRepo;
     private final Repository repo;

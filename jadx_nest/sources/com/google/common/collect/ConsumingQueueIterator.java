@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.util.Queue;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class ConsumingQueueIterator<T> extends AbstractIterator<T> {
     private final Queue<T> queue;

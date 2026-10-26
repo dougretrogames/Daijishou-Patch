@@ -16,7 +16,7 @@ import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.codec.digest.MessageDigestAlgorithms;
 import org.apache.http.Consts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class NTLMEngineImpl implements NTLMEngine {
     static final int FLAG_DOMAIN_PRESENT = 4096;
     static final int FLAG_REQUEST_128BIT_KEY_EXCH = 536870912;
@@ -120,7 +120,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         return new Type3Message(str4, str3, str, str2, bArr, i, str5, bArr2, certificate, bArr3, bArr4).getResponse();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int readULong(byte[] bArr, int i) {
         if (bArr.length < i + 4) {
             return 0;
@@ -128,7 +128,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         return ((bArr[i + 3] & 255) << 24) | (bArr[i] & 255) | ((bArr[i + 1] & 255) << 8) | ((bArr[i + 2] & 255) << 16);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int readUShort(byte[] bArr, int i) {
         if (bArr.length < i + 2) {
             return 0;
@@ -136,7 +136,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         return ((bArr[i + 1] & 255) << 8) | (bArr[i] & 255);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] readSecurityBuffer(byte[] bArr, int i) {
         int uShort = readUShort(bArr, i);
         int uLong = readULong(bArr, i + 4);
@@ -148,7 +148,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         return bArr2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] makeRandomChallenge(Random random) {
         byte[] bArr = new byte[8];
         synchronized (random) {
@@ -157,7 +157,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         return bArr;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] makeSecondaryKey(Random random) {
         byte[] bArr = new byte[16];
         synchronized (random) {
@@ -457,7 +457,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] lmHash(String str) throws NTLMEngineException {
         try {
             byte[] bytes = str.toUpperCase(Locale.ROOT).getBytes(Consts.ASCII);
@@ -480,7 +480,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] ntlmHash(String str) throws NTLMEngineException {
         Charset charset = UNICODE_LITTLE_UNMARKED;
         if (charset == null) {
@@ -492,7 +492,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         return md4.getOutput();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] lmv2Hash(String str, String str2, byte[] bArr) throws NTLMEngineException {
         Charset charset = UNICODE_LITTLE_UNMARKED;
         if (charset == null) {
@@ -506,7 +506,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         return hmacmd5.getOutput();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] ntlmv2Hash(String str, String str2, byte[] bArr) throws NTLMEngineException {
         Charset charset = UNICODE_LITTLE_UNMARKED;
         if (charset == null) {
@@ -520,7 +520,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         return hmacmd5.getOutput();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] lmResponse(byte[] bArr, byte[] bArr2) throws NTLMEngineException {
         try {
             byte[] bArr3 = new byte[21];
@@ -545,7 +545,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] lmv2Response(byte[] bArr, byte[] bArr2, byte[] bArr3) {
         HMACMD5 hmacmd5 = new HMACMD5(bArr);
         hmacmd5.update(bArr2);
@@ -678,14 +678,14 @@ final class NTLMEngineImpl implements NTLMEngine {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] encodeLong(int i) {
         byte[] bArr = new byte[4];
         encodeLong(bArr, 0, i);
         return bArr;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void encodeLong(byte[] bArr, int i, int i2) {
         bArr[i] = (byte) (i2 & 255);
         bArr[i + 1] = (byte) ((i2 >> 8) & 255);
@@ -693,7 +693,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         bArr[i + 3] = (byte) ((i2 >> 24) & 255);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] createBlob(byte[] bArr, byte[] bArr2, byte[] bArr3) {
         byte[] bArr4 = new byte[bArr3.length + 20 + bArr2.length + 4];
         System.arraycopy(new byte[]{1, 1, 0, 0}, 0, bArr4, 0, 4);
@@ -708,7 +708,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         return bArr4;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Key createDESKey(byte[] bArr, int i) {
         byte[] bArr2 = new byte[7];
         System.arraycopy(bArr, i, bArr2, 0, 7);
@@ -735,7 +735,7 @@ final class NTLMEngineImpl implements NTLMEngine {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Charset getCharset(int i) throws NTLMEngineException {
         if ((i & 1) == 0) {
             return DEFAULT_CHARSET;
@@ -755,12 +755,12 @@ final class NTLMEngineImpl implements NTLMEngine {
         return iIndexOf != -1 ? str.substring(0, iIndexOf) : str;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static String convertHost(String str) {
         return stripDotSuffix(str);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static String convertDomain(String str) {
         return stripDotSuffix(str);
     }

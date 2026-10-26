@@ -3,7 +3,7 @@ package org.apache.commons.collections4.iterators;
 import java.util.Iterator;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformIterator<I, O> implements Iterator<O> {
     private Iterator<? extends I> iterator;
     private Transformer<? super I, ? extends O> transformer;

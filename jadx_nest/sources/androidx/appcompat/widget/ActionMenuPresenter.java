@@ -26,7 +26,7 @@ import androidx.core.view.ActionProvider;
 import androidx.core.view.GravityCompat;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class ActionMenuPresenter extends BaseMenuPresenter implements ActionProvider.SubUiVisibilityListener {
     private static final String TAG = "ActionMenuPresenter";
     private final SparseBooleanArray mActionButtonGroups;
@@ -266,7 +266,7 @@ class ActionMenuPresenter extends BaseMenuPresenter implements ActionProvider.Su
         return true;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private View findViewForItem(MenuItem menuItem) {
         ViewGroup viewGroup = (ViewGroup) this.mMenuView;
         if (viewGroup == null) {
@@ -331,18 +331,18 @@ class ActionMenuPresenter extends BaseMenuPresenter implements ActionProvider.Su
         return this.mReserveOverflow;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v1, types: [androidx.appcompat.widget.ActionMenuPresenter] */
-    /* JADX WARN: Type inference failed for: r0v10 */
-    /* JADX WARN: Type inference failed for: r0v11 */
-    /* JADX WARN: Type inference failed for: r0v2, types: [boolean] */
-    /* JADX WARN: Type inference failed for: r0v7 */
-    /* JADX WARN: Type inference failed for: r0v8 */
-    /* JADX WARN: Type inference failed for: r0v9 */
-    /* JADX WARN: Type inference failed for: r15v1, types: [androidx.appcompat.view.menu.MenuItemImpl] */
-    /* JADX WARN: Type inference failed for: r3v0 */
-    /* JADX WARN: Type inference failed for: r3v1, types: [int] */
-    /* JADX WARN: Type inference failed for: r3v12 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v1, types: [androidx.appcompat.widget.ActionMenuPresenter] */
+    /* WARN: Type inference failed for: r0v10 */
+    /* WARN: Type inference failed for: r0v11 */
+    /* WARN: Type inference failed for: r0v2, types: [boolean] */
+    /* WARN: Type inference failed for: r0v7 */
+    /* WARN: Type inference failed for: r0v8 */
+    /* WARN: Type inference failed for: r0v9 */
+    /* WARN: Type inference failed for: r15v1, types: [androidx.appcompat.view.menu.MenuItemImpl] */
+    /* WARN: Type inference failed for: r3v0 */
+    /* WARN: Type inference failed for: r3v1, types: [int] */
+    /* WARN: Type inference failed for: r3v12 */
     @Override // androidx.appcompat.view.menu.BaseMenuPresenter, androidx.appcompat.view.menu.MenuPresenter
     public boolean flagActionItems() {
         ArrayList<MenuItemImpl> visibleItems;
@@ -533,18 +533,18 @@ class ActionMenuPresenter extends BaseMenuPresenter implements ActionProvider.Su
             parcel.writeInt(this.openSubMenuId);
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.ActionMenuPresenter$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.widget.ActionMenuPresenter$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];
@@ -573,11 +573,11 @@ class ActionMenuPresenter extends BaseMenuPresenter implements ActionProvider.Su
             setOnTouchListener(new AnonymousClass1(this, ActionMenuPresenter.this));
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.ActionMenuPresenter$OverflowMenuButton$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.widget.ActionMenuPresenter$OverflowMenuButton$1, reason: invalid class name */
         class AnonymousClass1 extends ForwardingListener {
             final /* synthetic */ ActionMenuPresenter val$this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(View view, ActionMenuPresenter actionMenuPresenter) {
                 super(view);
                 this.val$this$0 = actionMenuPresenter;

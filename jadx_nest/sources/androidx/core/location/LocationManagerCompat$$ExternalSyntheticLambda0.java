@@ -3,8 +3,8 @@ package androidx.core.location;
 import android.location.Location;
 import androidx.core.util.Consumer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class LocationManagerCompat$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ Consumer f$0;
     public final /* synthetic */ Location f$1;

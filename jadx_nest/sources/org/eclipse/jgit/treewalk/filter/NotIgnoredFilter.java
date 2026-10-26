@@ -4,7 +4,7 @@ import java.io.IOException;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.WorkingTreeIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NotIgnoredFilter extends TreeFilter {
     private final int index;
 

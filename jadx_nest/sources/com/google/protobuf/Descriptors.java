@@ -17,7 +17,7 @@ import java.util.logging.Logger;
 import org.apache.commons.io.FilenameUtils;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 public final class Descriptors {
     private static final Logger logger = Logger.getLogger(Descriptors.class.getName());
@@ -78,7 +78,7 @@ public final class Descriptors {
         return featureSetEditionDefault.getFixedFeatures().toBuilder().mergeFrom(featureSetEditionDefault.getOverridableFeatures()).build();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static DescriptorProtos.FeatureSet internFeatures(DescriptorProtos.FeatureSet features) {
         DescriptorProtos.FeatureSet featureSetPutIfAbsent = FEATURE_CACHE.putIfAbsent(Integer.valueOf(features.hashCode()), features);
         return featureSetPutIfAbsent == null ? features : featureSetPutIfAbsent;
@@ -92,7 +92,7 @@ public final class Descriptors {
         private volatile DescriptorProtos.FileOptions options;
         private final DescriptorPool pool;
 
-        /* JADX INFO: renamed from: proto, reason: collision with root package name */
+        /* INFO: renamed from: proto, reason: collision with root package name */
         private DescriptorProtos.FileDescriptorProto f58proto;
         private final FileDescriptor[] publicDependencies;
         private final ServiceDescriptor[] services;
@@ -526,7 +526,7 @@ public final class Descriptors {
         private final OneofDescriptor[] oneofs;
         private volatile DescriptorProtos.MessageOptions options;
 
-        /* JADX INFO: renamed from: proto, reason: collision with root package name */
+        /* INFO: renamed from: proto, reason: collision with root package name */
         private DescriptorProtos.DescriptorProto f53proto;
         private final int realOneofCount;
 
@@ -793,7 +793,7 @@ public final class Descriptors {
             Arrays.sort(this.extensionRangeUpperBounds);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void resolveAllFeatures() throws DescriptorValidationException {
             resolveFeatures(this.f53proto.getOptions().getFeatures());
             for (Descriptor descriptor : this.nestedTypes) {
@@ -813,7 +813,7 @@ public final class Descriptors {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void crossLink() throws DescriptorValidationException {
             for (Descriptor descriptor : this.nestedTypes) {
                 descriptor.crossLink();
@@ -845,7 +845,7 @@ public final class Descriptors {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setProto(final DescriptorProtos.DescriptorProto proto2) throws DescriptorValidationException {
             this.f53proto = proto2;
             this.options = null;
@@ -914,7 +914,7 @@ public final class Descriptors {
         private Descriptor messageType;
         private volatile DescriptorProtos.FieldOptions options;
 
-        /* JADX INFO: renamed from: proto, reason: collision with root package name */
+        /* INFO: renamed from: proto, reason: collision with root package name */
         private DescriptorProtos.FieldDescriptorProto f57proto;
         private Type type;
 
@@ -922,7 +922,7 @@ public final class Descriptors {
             this(fieldDescriptorProto, fileDescriptor, descriptor, i, z);
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.Descriptors$FieldDescriptor$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.Descriptors$FieldDescriptor$1, reason: invalid class name */
         class AnonymousClass1 implements NumberGetter<FieldDescriptor> {
             AnonymousClass1() {
             }
@@ -1286,7 +1286,7 @@ public final class Descriptors {
             throw new DescriptorValidationException(this, "Field numbers must be positive integers.", (AnonymousClass1) null);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void resolveAllFeatures() throws DescriptorValidationException {
             resolveFeatures(this.f57proto.getOptions().getFeatures());
         }
@@ -1333,7 +1333,7 @@ public final class Descriptors {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void crossLink() throws DescriptorValidationException {
             if (this.f57proto.hasExtendee()) {
                 GenericDescriptor genericDescriptorLookupSymbol = this.file.pool.lookupSymbol(this.f57proto.getExtendee(), this, DescriptorPool.SearchFilter.TYPES_ONLY);
@@ -1477,7 +1477,7 @@ public final class Descriptors {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setProto(final DescriptorProtos.FieldDescriptorProto proto2) throws DescriptorValidationException {
             this.f57proto = proto2;
             this.options = null;
@@ -1490,7 +1490,7 @@ public final class Descriptors {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.Descriptors$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.Descriptors$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$Descriptors$FieldDescriptor$JavaType;
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$Descriptors$FieldDescriptor$Type;
@@ -1592,7 +1592,7 @@ public final class Descriptors {
         private final int index;
         private volatile DescriptorProtos.EnumOptions options;
 
-        /* JADX INFO: renamed from: proto, reason: collision with root package name */
+        /* INFO: renamed from: proto, reason: collision with root package name */
         private DescriptorProtos.EnumDescriptorProto f55proto;
         private Map<Integer, WeakReference<EnumValueDescriptor>> unknownValues;
         private final EnumValueDescriptor[] values;
@@ -1772,7 +1772,7 @@ public final class Descriptors {
             file.pool.addSymbol(this);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void resolveAllFeatures() throws DescriptorValidationException {
             resolveFeatures(this.f55proto.getOptions().getFeatures());
             for (EnumValueDescriptor enumValueDescriptor : this.values) {
@@ -1780,7 +1780,7 @@ public final class Descriptors {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setProto(final DescriptorProtos.EnumDescriptorProto proto2) throws DescriptorValidationException {
             this.f55proto = proto2;
             this.options = null;
@@ -1804,7 +1804,7 @@ public final class Descriptors {
         private final int index;
         private volatile DescriptorProtos.EnumValueOptions options;
 
-        /* JADX INFO: renamed from: proto, reason: collision with root package name */
+        /* INFO: renamed from: proto, reason: collision with root package name */
         private DescriptorProtos.EnumValueDescriptorProto f56proto;
         private final EnumDescriptor type;
 
@@ -1816,7 +1816,7 @@ public final class Descriptors {
             this(enumDescriptor, num);
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.Descriptors$EnumValueDescriptor$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.Descriptors$EnumValueDescriptor$1, reason: invalid class name */
         class AnonymousClass1 implements Comparator<EnumValueDescriptor> {
             AnonymousClass1() {
             }
@@ -1827,7 +1827,7 @@ public final class Descriptors {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.Descriptors$EnumValueDescriptor$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.Descriptors$EnumValueDescriptor$2, reason: invalid class name */
         class AnonymousClass2 implements NumberGetter<EnumValueDescriptor> {
             AnonymousClass2() {
             }
@@ -1910,12 +1910,12 @@ public final class Descriptors {
             this.fullName = parent.getFullName() + FilenameUtils.EXTENSION_SEPARATOR + enumValueDescriptorProtoBuild.getName();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void resolveAllFeatures() throws DescriptorValidationException {
             resolveFeatures(this.f56proto.getOptions().getFeatures());
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setProto(final DescriptorProtos.EnumValueDescriptorProto proto2) throws DescriptorValidationException {
             this.f56proto = proto2;
             this.options = null;
@@ -1930,7 +1930,7 @@ public final class Descriptors {
         private MethodDescriptor[] methods;
         private volatile DescriptorProtos.ServiceOptions options;
 
-        /* JADX INFO: renamed from: proto, reason: collision with root package name */
+        /* INFO: renamed from: proto, reason: collision with root package name */
         private DescriptorProtos.ServiceDescriptorProto f61proto;
 
         /* synthetic */ ServiceDescriptor(DescriptorProtos.ServiceDescriptorProto serviceDescriptorProto, FileDescriptor fileDescriptor, int i, AnonymousClass1 anonymousClass1) throws DescriptorValidationException {
@@ -2002,7 +2002,7 @@ public final class Descriptors {
             file.pool.addSymbol(this);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void resolveAllFeatures() throws DescriptorValidationException {
             resolveFeatures(this.f61proto.getOptions().getFeatures());
             for (MethodDescriptor methodDescriptor : this.methods) {
@@ -2010,14 +2010,14 @@ public final class Descriptors {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void crossLink() throws DescriptorValidationException {
             for (MethodDescriptor methodDescriptor : this.methods) {
                 methodDescriptor.crossLink();
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setProto(final DescriptorProtos.ServiceDescriptorProto proto2) throws DescriptorValidationException {
             this.f61proto = proto2;
             this.options = null;
@@ -2042,7 +2042,7 @@ public final class Descriptors {
         private volatile DescriptorProtos.MethodOptions options;
         private Descriptor outputType;
 
-        /* JADX INFO: renamed from: proto, reason: collision with root package name */
+        /* INFO: renamed from: proto, reason: collision with root package name */
         private DescriptorProtos.MethodDescriptorProto f59proto;
         private final ServiceDescriptor service;
 
@@ -2120,12 +2120,12 @@ public final class Descriptors {
             file.pool.addSymbol(this);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void resolveAllFeatures() throws DescriptorValidationException {
             resolveFeatures(this.f59proto.getOptions().getFeatures());
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void crossLink() throws DescriptorValidationException {
             GenericDescriptor genericDescriptorLookupSymbol = getFile().pool.lookupSymbol(this.f59proto.getInputType(), this, DescriptorPool.SearchFilter.TYPES_ONLY);
             if (!(genericDescriptorLookupSymbol instanceof Descriptor)) {
@@ -2139,7 +2139,7 @@ public final class Descriptors {
             this.outputType = (Descriptor) genericDescriptorLookupSymbol2;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setProto(final DescriptorProtos.MethodDescriptorProto proto2) throws DescriptorValidationException {
             this.f59proto = proto2;
             this.options = null;
@@ -2147,7 +2147,7 @@ public final class Descriptors {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static String computeFullName(final FileDescriptor file, final Descriptor parent, final String name) {
         if (parent != null) {
             return parent.getFullName() + FilenameUtils.EXTENSION_SEPARATOR + name;
@@ -2237,7 +2237,7 @@ public final class Descriptors {
         private final String description;
         private final String name;
 
-        /* JADX INFO: renamed from: proto, reason: collision with root package name */
+        /* INFO: renamed from: proto, reason: collision with root package name */
         private final Message f54proto;
 
         /* synthetic */ DescriptorValidationException(FileDescriptor fileDescriptor, String str, AnonymousClass1 anonymousClass1) {
@@ -2484,7 +2484,7 @@ public final class Descriptors {
         private final int index;
         private volatile DescriptorProtos.OneofOptions options;
 
-        /* JADX INFO: renamed from: proto, reason: collision with root package name */
+        /* INFO: renamed from: proto, reason: collision with root package name */
         private DescriptorProtos.OneofDescriptorProto f60proto;
 
         /* synthetic */ OneofDescriptor(DescriptorProtos.OneofDescriptorProto oneofDescriptorProto, FileDescriptor fileDescriptor, Descriptor descriptor, int i, AnonymousClass1 anonymousClass1) {
@@ -2557,12 +2557,12 @@ public final class Descriptors {
             return fieldDescriptorArr.length == 1 && fieldDescriptorArr[0].isProto3Optional;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void resolveAllFeatures() throws DescriptorValidationException {
             resolveFeatures(this.f60proto.getOptions().getFeatures());
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setProto(final DescriptorProtos.OneofDescriptorProto proto2) throws DescriptorValidationException {
             this.f60proto = proto2;
             this.options = null;
@@ -2581,7 +2581,7 @@ public final class Descriptors {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <T> T binarySearch(T[] array, int size, NumberGetter<T> getter, int number) {
         int i = size - 1;
         int i2 = 0;

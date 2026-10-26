@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PeekingIterator<E> implements Iterator<E> {
     private boolean exhausted;
     private final Iterator<? extends E> iterator;

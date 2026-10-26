@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import org.eclipse.jgit.errors.MissingObjectException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface ReceiveCommandErrorHandler {
     default void handleNewIdValidationException(ReceiveCommand receiveCommand, IOException iOException) {
         receiveCommand.setResult(ReceiveCommand.Result.REJECTED_MISSING_OBJECT, receiveCommand.getNewId().name());

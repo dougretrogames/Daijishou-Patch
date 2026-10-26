@@ -6,7 +6,7 @@ import com.bumptech.glide.load.ResourceDecoder;
 import com.bumptech.glide.load.engine.Resource;
 import com.bumptech.glide.util.Util;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class UnitBitmapDecoder implements ResourceDecoder<Bitmap, Bitmap> {
     @Override // com.bumptech.glide.load.ResourceDecoder
     public boolean handles(Bitmap bitmap, Options options) {
@@ -34,7 +34,7 @@ public final class UnitBitmapDecoder implements ResourceDecoder<Bitmap, Bitmap> 
             return Bitmap.class;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.bumptech.glide.load.engine.Resource
         public Bitmap get() {
             return this.bitmap;

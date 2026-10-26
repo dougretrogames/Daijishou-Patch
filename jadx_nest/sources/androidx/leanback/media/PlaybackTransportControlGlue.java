@@ -17,7 +17,7 @@ import androidx.leanback.widget.PlaybackTransportRowPresenter;
 import androidx.leanback.widget.RowPresenter;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class PlaybackTransportControlGlue<T extends PlayerAdapter> extends PlaybackBaseControlGlue<T> {
     static final boolean DEBUG = false;
     static final int MSG_UPDATE_PLAYBACK_STATE = 100;
@@ -63,7 +63,7 @@ public class PlaybackTransportControlGlue<T extends PlayerAdapter> extends Playb
         arrayObjectAdapter.add(playPauseAction);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.PlaybackTransportControlGlue$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.PlaybackTransportControlGlue$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractDetailsDescriptionPresenter {
         AnonymousClass1() {
         }
@@ -84,7 +84,7 @@ public class PlaybackTransportControlGlue<T extends PlayerAdapter> extends Playb
         return anonymousClass2;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.PlaybackTransportControlGlue$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.PlaybackTransportControlGlue$2, reason: invalid class name */
     class AnonymousClass2 extends PlaybackTransportRowPresenter {
         AnonymousClass2() {
         }
@@ -102,7 +102,7 @@ public class PlaybackTransportControlGlue<T extends PlayerAdapter> extends Playb
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // androidx.leanback.media.PlaybackBaseControlGlue, androidx.leanback.media.PlaybackGlue
     protected void onAttachedToHost(PlaybackGlueHost playbackGlueHost) {
         super.onAttachedToHost(playbackGlueHost);

@@ -3,7 +3,7 @@ package com.google.common.collect;
 import java.util.Comparator;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 interface SortedIterable<T> extends Iterable<T> {
     Comparator<? super T> comparator();

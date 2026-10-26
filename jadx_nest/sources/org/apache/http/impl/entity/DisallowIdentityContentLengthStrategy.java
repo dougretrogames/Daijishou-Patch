@@ -5,7 +5,7 @@ import org.apache.http.HttpMessage;
 import org.apache.http.ProtocolException;
 import org.apache.http.entity.ContentLengthStrategy;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DisallowIdentityContentLengthStrategy implements ContentLengthStrategy {
     public static final DisallowIdentityContentLengthStrategy INSTANCE = new DisallowIdentityContentLengthStrategy(new LaxContentLengthStrategy(0));
     private final ContentLengthStrategy contentLengthStrategy;

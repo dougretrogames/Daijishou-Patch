@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.TreeMap;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Status {
     private final CanonicalCode canonicalCode;
 

@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public interface Multiset<E> extends Collection<E> {
 

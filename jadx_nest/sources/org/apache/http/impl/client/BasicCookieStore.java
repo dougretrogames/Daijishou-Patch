@@ -14,7 +14,7 @@ import org.apache.http.client.CookieStore;
 import org.apache.http.cookie.Cookie;
 import org.apache.http.cookie.CookieIdentityComparator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicCookieStore implements CookieStore, Serializable {
     private static final long serialVersionUID = -7581093305228232025L;
     private final TreeSet<Cookie> cookies = new TreeSet<>(new CookieIdentityComparator());

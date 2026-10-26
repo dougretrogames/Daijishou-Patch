@@ -10,7 +10,7 @@ import org.apache.http.entity.ContentLengthStrategy;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LaxContentLengthStrategy implements ContentLengthStrategy {
     public static final LaxContentLengthStrategy INSTANCE = new LaxContentLengthStrategy();
     private final int implicitLen;

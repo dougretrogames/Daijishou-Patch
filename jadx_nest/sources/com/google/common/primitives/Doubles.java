@@ -17,7 +17,7 @@ import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class Doubles extends DoublesMethodsForWeb {
     public static final int BYTES = 8;
@@ -51,7 +51,7 @@ public final class Doubles extends DoublesMethodsForWeb {
         return indexOf(array, target, 0, array.length);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int indexOf(double[] array, double target, int start, int end) {
         while (start < end) {
             if (array[start] == target) {
@@ -82,7 +82,7 @@ public final class Doubles extends DoublesMethodsForWeb {
         return lastIndexOf(array, target, 0, array.length);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int lastIndexOf(double[] array, double target, int start, int end) {
         for (int i = end - 1; i >= start; i--) {
             if (array[i] == target) {
@@ -138,13 +138,13 @@ public final class Doubles extends DoublesMethodsForWeb {
         private DoubleConverter() {
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.base.Converter
         public Double doForward(String value) {
             return Double.valueOf(value);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.base.Converter
         public String doBackward(Double value) {
             return value.toString();

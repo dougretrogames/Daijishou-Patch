@@ -5,7 +5,7 @@ import com.google.api.client.util.StringUtils;
 import java.io.IOException;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class HttpResponseException extends IOException {
     private static final long serialVersionUID = -1875819453475890043L;
     private final int attemptCount;

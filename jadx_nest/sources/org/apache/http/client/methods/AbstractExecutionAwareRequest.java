@@ -11,14 +11,14 @@ import org.apache.http.message.AbstractHttpMessage;
 import org.apache.http.message.HeaderGroup;
 import org.apache.http.params.HttpParams;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractExecutionAwareRequest extends AbstractHttpMessage implements HttpExecutionAware, AbortableHttpRequest, Cloneable, HttpRequest {
     private final AtomicMarkableReference<Cancellable> cancellableRef = new AtomicMarkableReference<>(null, false);
 
     protected AbstractExecutionAwareRequest() {
     }
 
-    /* JADX INFO: renamed from: org.apache.http.client.methods.AbstractExecutionAwareRequest$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.client.methods.AbstractExecutionAwareRequest$1, reason: invalid class name */
     class AnonymousClass1 implements Cancellable {
         final /* synthetic */ ClientConnectionRequest val$connRequest;
 
@@ -39,7 +39,7 @@ public abstract class AbstractExecutionAwareRequest extends AbstractHttpMessage 
         setCancellable(new AnonymousClass1(clientConnectionRequest));
     }
 
-    /* JADX INFO: renamed from: org.apache.http.client.methods.AbstractExecutionAwareRequest$2, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.client.methods.AbstractExecutionAwareRequest$2, reason: invalid class name */
     class AnonymousClass2 implements Cancellable {
         final /* synthetic */ ConnectionReleaseTrigger val$releaseTrigger;
 

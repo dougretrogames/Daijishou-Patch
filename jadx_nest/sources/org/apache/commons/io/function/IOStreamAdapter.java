@@ -2,7 +2,7 @@ package org.apache.commons.io.function;
 
 import java.util.stream.Stream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class IOStreamAdapter<T> extends IOBaseStreamAdapter<T, IOStream<T>, Stream<T>> implements IOStream<T> {
     static <T> IOStream<T> adapt(Stream<T> stream) {
         return stream != null ? new IOStreamAdapter(stream) : IOStream.empty();

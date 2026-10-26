@@ -3,7 +3,7 @@ package androidx.constraintlayout.core.motion.utils;
 import java.util.Arrays;
 import org.apache.http.protocol.HTTP;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Easing {
     private static final String ACCELERATE = "cubic(0.4, 0.05, 0.8, 0.7)";
     private static final String ANTICIPATE = "cubic(0.36, 0, 0.66, -0.56)";

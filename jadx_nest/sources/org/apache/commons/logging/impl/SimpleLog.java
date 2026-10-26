@@ -17,7 +17,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogConfigurationException;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SimpleLog implements Log, Serializable {
     protected static final String DEFAULT_DATE_TIME_FORMAT = "yyyy/MM/dd HH:mm:ss:SSS zzz";
     public static final int LOG_LEVEL_ALL = 0;
@@ -325,7 +325,7 @@ public class SimpleLog implements Log, Serializable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static ClassLoader getContextClassLoader() {
         ClassLoader classLoader = null;
         try {
@@ -354,7 +354,7 @@ public class SimpleLog implements Log, Serializable {
         return clsClass$2.getClassLoader();
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.logging.impl.SimpleLog$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.logging.impl.SimpleLog$1, reason: invalid class name */
     final class AnonymousClass1 implements PrivilegedAction {
         private final /* synthetic */ String val$name;
 

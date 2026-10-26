@@ -21,7 +21,7 @@ import android.view.Window;
 import android.view.WindowInsets;
 import android.widget.TextView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public abstract class PreferenceDialogFragment extends DialogFragment implements DialogInterface.OnClickListener {
 

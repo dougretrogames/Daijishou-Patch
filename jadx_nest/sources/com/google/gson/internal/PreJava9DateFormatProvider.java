@@ -4,7 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class PreJava9DateFormatProvider {
     public static DateFormat getUSDateFormat(int i) {
         return new SimpleDateFormat(getDateFormatPattern(i), Locale.US);

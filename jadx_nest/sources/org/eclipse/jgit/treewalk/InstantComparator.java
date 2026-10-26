@@ -4,7 +4,7 @@ import java.time.Instant;
 import java.util.Comparator;
 import kotlin.time.DurationKt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class InstantComparator implements Comparator<Instant> {
     InstantComparator() {
     }

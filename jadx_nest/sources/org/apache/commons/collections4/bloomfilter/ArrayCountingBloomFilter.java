@@ -6,7 +6,7 @@ import java.util.function.IntPredicate;
 import java.util.function.LongPredicate;
 import java.util.stream.IntStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ArrayCountingBloomFilter implements CountingBloomFilter {
     private final int[] cells;
     private final Shape shape;
@@ -41,7 +41,7 @@ public final class ArrayCountingBloomFilter implements CountingBloomFilter {
         return isValid();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean add(int i, int i2) {
         try {
             int[] iArr = this.cells;
@@ -59,7 +59,7 @@ public final class ArrayCountingBloomFilter implements CountingBloomFilter {
         return IntStream.range(0, this.cells.length).filter(new ArrayCountingBloomFilter$$ExternalSyntheticLambda3(this)).toArray();
     }
 
-    /* JADX INFO: renamed from: lambda$asIndexArray$0$org-apache-commons-collections4-bloomfilter-ArrayCountingBloomFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$asIndexArray$0$org-apache-commons-collections4-bloomfilter-ArrayCountingBloomFilter, reason: not valid java name */
     /* synthetic */ boolean m5529xa6be2796(int i) {
         return this.cells[i] > 0;
     }
@@ -69,7 +69,7 @@ public final class ArrayCountingBloomFilter implements CountingBloomFilter {
         return (int) IntStream.range(0, this.cells.length).filter(new ArrayCountingBloomFilter$$ExternalSyntheticLambda4(this)).count();
     }
 
-    /* JADX INFO: renamed from: lambda$cardinality$1$org-apache-commons-collections4-bloomfilter-ArrayCountingBloomFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$cardinality$1$org-apache-commons-collections4-bloomfilter-ArrayCountingBloomFilter, reason: not valid java name */
     /* synthetic */ boolean m5530x217effda(int i) {
         return this.cells[i] > 0;
     }
@@ -89,7 +89,7 @@ public final class ArrayCountingBloomFilter implements CountingBloomFilter {
         return indexExtractor.processIndices(new ArrayCountingBloomFilter$$ExternalSyntheticLambda1(this));
     }
 
-    /* JADX INFO: renamed from: lambda$contains$2$org-apache-commons-collections4-bloomfilter-ArrayCountingBloomFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$contains$2$org-apache-commons-collections4-bloomfilter-ArrayCountingBloomFilter, reason: not valid java name */
     /* synthetic */ boolean m5531x4c2d03ee(int i) {
         return this.cells[i] != 0;
     }
@@ -106,7 +106,7 @@ public final class ArrayCountingBloomFilter implements CountingBloomFilter {
         return iArr[0];
     }
 
-    /* JADX INFO: renamed from: lambda$getMaxInsert$3$org-apache-commons-collections4-bloomfilter-ArrayCountingBloomFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$getMaxInsert$3$org-apache-commons-collections4-bloomfilter-ArrayCountingBloomFilter, reason: not valid java name */
     /* synthetic */ boolean m5532x8ea261a5(int[] iArr, int i, int i2) {
         int i3 = this.cells[i] / i2;
         if (i3 < iArr[0]) {
@@ -206,7 +206,7 @@ public final class ArrayCountingBloomFilter implements CountingBloomFilter {
         return isValid();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean subtract(int i, int i2) {
         try {
             int[] iArr = this.cells;

@@ -7,8 +7,8 @@ import java.util.List;
 import kotlin.Metadata;
 import kotlin.collections.ArraysKt;
 
-/* JADX INFO: compiled from: Actual.jvm.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Actual.jvm.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a\u0018\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0003H\u0000\u001a\u0018\u0010\u0005\u001a\u00020\u0006*\u00020\u00072\n\u0010\b\u001a\u0006\u0012\u0002\b\u00030\tH\u0000¨\u0006\n"}, d2 = {"areObjectsOfSameType", "", "a", "", "b", "tryPopulateReflectively", "", "Landroidx/compose/ui/platform/InspectorInfo;", "element", "Landroidx/compose/ui/node/ModifierNodeElement;", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class Actual_jvmKt {
     public static final boolean areObjectsOfSameType(Object obj, Object obj2) {

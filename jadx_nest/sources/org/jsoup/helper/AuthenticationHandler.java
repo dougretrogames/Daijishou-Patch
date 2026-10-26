@@ -3,7 +3,7 @@ package org.jsoup.helper;
 import java.net.Authenticator;
 import java.net.PasswordAuthentication;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class AuthenticationHandler extends Authenticator {
     static final int MaxAttempts = 3;
     static AuthShim handler;

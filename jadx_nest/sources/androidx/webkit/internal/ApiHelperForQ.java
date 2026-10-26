@@ -6,7 +6,7 @@ import android.webkit.WebViewRenderProcess;
 import androidx.webkit.WebViewRenderProcessClient;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ApiHelperForQ {
     private ApiHelperForQ() {
     }

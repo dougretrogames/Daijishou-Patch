@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Palette {
     static final int DEFAULT_CALCULATE_NUMBER_COLORS = 16;
     static final Filter DEFAULT_FILTER = new AnonymousClass1();
@@ -471,7 +471,7 @@ public final class Palette {
             return palette;
         }
 
-        /* JADX INFO: renamed from: androidx.palette.graphics.Palette$Builder$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.palette.graphics.Palette$Builder$1, reason: invalid class name */
         class AnonymousClass1 extends AsyncTask<Bitmap, Void, Palette> {
             final /* synthetic */ PaletteAsyncListener val$listener;
 
@@ -479,7 +479,7 @@ public final class Palette {
                 this.val$listener = paletteAsyncListener;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // android.os.AsyncTask
             public Palette doInBackground(Bitmap... bitmapArr) {
                 try {
@@ -490,7 +490,7 @@ public final class Palette {
                 }
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // android.os.AsyncTask
             public void onPostExecute(Palette palette) {
                 this.val$listener.onGenerated(palette);
@@ -539,7 +539,7 @@ public final class Palette {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.palette.graphics.Palette$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.palette.graphics.Palette$1, reason: invalid class name */
     static class AnonymousClass1 implements Filter {
         private static final float BLACK_MAX_LIGHTNESS = 0.05f;
         private static final float WHITE_MIN_LIGHTNESS = 0.95f;

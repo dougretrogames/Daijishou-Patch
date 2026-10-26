@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Span {
     private final SpanContext context;
     private final Set<Options> options;

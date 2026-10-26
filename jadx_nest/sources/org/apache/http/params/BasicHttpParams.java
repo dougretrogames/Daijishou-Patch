@@ -7,7 +7,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class BasicHttpParams extends AbstractHttpParams implements Serializable, Cloneable {
     private static final long serialVersionUID = -7086398485908701455L;

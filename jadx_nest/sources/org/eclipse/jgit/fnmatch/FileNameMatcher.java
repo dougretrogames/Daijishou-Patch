@@ -12,7 +12,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.errors.InvalidPatternException;
 import org.eclipse.jgit.errors.NoClosingBracketException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileNameMatcher {
     static final List<Head> EMPTY_HEAD_LIST = Collections.emptyList();
     private static final Pattern characterClassStartPattern = Pattern.compile("\\[[.:=]");

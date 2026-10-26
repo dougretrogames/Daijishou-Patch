@@ -4,7 +4,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.Closure;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class WhileClosure<T> implements Closure<T> {
     private final Closure<? super T> iClosure;
     private final boolean iDoLoop;

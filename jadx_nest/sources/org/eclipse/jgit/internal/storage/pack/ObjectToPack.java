@@ -6,7 +6,7 @@ import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.transport.PackedObjectInfo;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ObjectToPack extends PackedObjectInfo {
     private static final int ATTEMPT_DELTA_MASK = 3;
     private static final int DELTA_ATTEMPTED = 2;

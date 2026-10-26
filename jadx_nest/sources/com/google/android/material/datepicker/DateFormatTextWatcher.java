@@ -14,7 +14,7 @@ import java.util.Locale;
 import kotlin.text.Typography;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class DateFormatTextWatcher extends TextWatcherAdapter {
     private final CalendarConstraints constraints;
     private final DateFormat dateFormat;
@@ -39,7 +39,7 @@ abstract class DateFormatTextWatcher extends TextWatcherAdapter {
         this.setErrorCallback = new DateFormatTextWatcher$$ExternalSyntheticLambda0(this, str);
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$com-google-android-material-datepicker-DateFormatTextWatcher, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$com-google-android-material-datepicker-DateFormatTextWatcher, reason: not valid java name */
     /* synthetic */ void m3306x5657fb8e(String str) {
         TextInputLayout textInputLayout = this.textInputLayout;
         DateFormat dateFormat = this.dateFormat;
@@ -93,7 +93,7 @@ abstract class DateFormatTextWatcher extends TextWatcherAdapter {
         return new DateFormatTextWatcher$$ExternalSyntheticLambda1(this, j);
     }
 
-    /* JADX INFO: renamed from: lambda$createRangeErrorCallback$1$com-google-android-material-datepicker-DateFormatTextWatcher, reason: not valid java name */
+    /* INFO: renamed from: lambda$createRangeErrorCallback$1$com-google-android-material-datepicker-DateFormatTextWatcher, reason: not valid java name */
     /* synthetic */ void m3305x14d77527(long j) {
         this.textInputLayout.setError(String.format(this.outOfRange, sanitizeDateString(DateStrings.getDateString(j))));
         onInvalidDate();

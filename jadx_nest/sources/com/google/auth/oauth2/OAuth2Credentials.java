@@ -31,7 +31,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Executor;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class OAuth2Credentials extends Credentials {
     static final Duration DEFAULT_EXPIRATION_MARGIN = Duration.ofMinutes(3);
     static final Duration DEFAULT_REFRESH_MARGIN = Duration.ofMinutes(3).plusSeconds(45);
@@ -165,19 +165,19 @@ public class OAuth2Credentials extends Credentials {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.auth.oauth2.OAuth2Credentials$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.auth.oauth2.OAuth2Credentials$1, reason: invalid class name */
     class AnonymousClass1 implements Callable<OAuthValue> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public OAuthValue call() throws Exception {
             return OAuthValue.create(OAuth2Credentials.this.refreshAccessToken(), OAuth2Credentials.this.getAdditionalHeaders());
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void finishRefreshAsync(ListenableFuture<OAuthValue> listenableFuture) {
         synchronized (this.lock) {
             try {
@@ -414,7 +414,7 @@ public class OAuth2Credentials extends Credentials {
             Futures.addCallback(listenableFutureTask, new AnonymousClass1(OAuth2Credentials.this), MoreExecutors.directExecutor());
         }
 
-        /* JADX INFO: renamed from: com.google.auth.oauth2.OAuth2Credentials$RefreshTask$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.auth.oauth2.OAuth2Credentials$RefreshTask$1, reason: invalid class name */
         class AnonymousClass1 implements FutureCallback<OAuthValue> {
             final /* synthetic */ OAuth2Credentials val$this$0;
 

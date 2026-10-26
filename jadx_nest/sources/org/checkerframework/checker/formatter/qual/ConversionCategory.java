@@ -11,8 +11,8 @@ import java.util.Set;
 import java.util.StringJoiner;
 import org.checkerframework.dataflow.qual.Pure;
 
-/* JADX WARN: Enum visitor error
-jadx.core.utils.exceptions.JadxRuntimeException: Can't remove SSA var: r0v0 org.checkerframework.checker.formatter.qual.ConversionCategory, still in use, count: 1, list:
+/* WARN: Enum visitor error
+decompiler.core.utils.exceptions.decompilerRuntimeException: Can't remove SSA var: r0v0 org.checkerframework.checker.formatter.qual.ConversionCategory, still in use, count: 1, list:
   (r0v0 org.checkerframework.checker.formatter.qual.ConversionCategory) from 0x00cd: FILLED_NEW_ARRAY 
   (r0v0 org.checkerframework.checker.formatter.qual.ConversionCategory)
   (r5v0 org.checkerframework.checker.formatter.qual.ConversionCategory)
@@ -20,17 +20,17 @@ jadx.core.utils.exceptions.JadxRuntimeException: Can't remove SSA var: r0v0 org.
   (r10v2 org.checkerframework.checker.formatter.qual.ConversionCategory)
   (r11v7 org.checkerframework.checker.formatter.qual.ConversionCategory)
  A[WRAPPED] (LINE:190) elemType: org.checkerframework.checker.formatter.qual.ConversionCategory
-	at jadx.core.utils.InsnRemover.removeSsaVar(InsnRemover.java:164)
-	at jadx.core.utils.InsnRemover.unbindResult(InsnRemover.java:129)
-	at jadx.core.utils.InsnRemover.lambda$unbindInsns$1(InsnRemover.java:101)
+	at decompiler.core.utils.InsnRemover.removeSsaVar(InsnRemover.java:164)
+	at decompiler.core.utils.InsnRemover.unbindResult(InsnRemover.java:129)
+	at decompiler.core.utils.InsnRemover.lambda$unbindInsns$1(InsnRemover.java:101)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at jadx.core.utils.InsnRemover.unbindInsns(InsnRemover.java:100)
-	at jadx.core.utils.InsnRemover.removeAllAndUnbind(InsnRemover.java:257)
-	at jadx.core.dex.visitors.EnumVisitor.convertToEnum(EnumVisitor.java:187)
-	at jadx.core.dex.visitors.EnumVisitor.visit(EnumVisitor.java:102)
+	at decompiler.core.utils.InsnRemover.unbindInsns(InsnRemover.java:100)
+	at decompiler.core.utils.InsnRemover.removeAllAndUnbind(InsnRemover.java:257)
+	at decompiler.core.dex.visitors.EnumVisitor.convertToEnum(EnumVisitor.java:187)
+	at decompiler.core.dex.visitors.EnumVisitor.visit(EnumVisitor.java:102)
  */
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX INFO: loaded from: classes5.dex */
+/* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* INFO: loaded from: classes5.dex */
 public final class ConversionCategory {
     GENERAL("bBhHsS", null),
     CHAR("cC", Character.class, Byte.class, Short.class, Integer.class),

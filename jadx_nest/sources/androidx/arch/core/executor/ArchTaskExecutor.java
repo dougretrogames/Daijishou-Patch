@@ -2,7 +2,7 @@ package androidx.arch.core.executor;
 
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ArchTaskExecutor extends TaskExecutor {
     private static volatile ArchTaskExecutor sInstance;
     private final TaskExecutor mDefaultTaskExecutor;

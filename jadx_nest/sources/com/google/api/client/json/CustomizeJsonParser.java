@@ -3,7 +3,7 @@ package com.google.api.client.json;
 import java.lang.reflect.Field;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CustomizeJsonParser {
     public void handleUnrecognizedKey(Object obj, String str) {
     }

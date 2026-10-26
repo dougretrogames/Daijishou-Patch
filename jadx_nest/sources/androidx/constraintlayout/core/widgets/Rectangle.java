@@ -1,6 +1,6 @@
 package androidx.constraintlayout.core.widgets;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Rectangle {
     public int height;
     public int width;

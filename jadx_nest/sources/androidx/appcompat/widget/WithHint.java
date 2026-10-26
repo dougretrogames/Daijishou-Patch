@@ -1,6 +1,6 @@
 package androidx.appcompat.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface WithHint {
     CharSequence getHint();
 }

@@ -10,7 +10,7 @@ import androidx.constraintlayout.core.widgets.Helper;
 import androidx.constraintlayout.core.widgets.Placeholder;
 import androidx.constraintlayout.widget.VirtualLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionPlaceholder extends VirtualLayout {
     private static final String TAG = "MotionPlaceholder";
     Placeholder mPlaceholder;

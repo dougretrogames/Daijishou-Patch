@@ -2,7 +2,7 @@ package io.noties.markwon.core;
 
 import io.noties.markwon.Prop;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class CoreProps {
     public static final Prop<ListItemType> LIST_ITEM_TYPE = Prop.of("list-item-type");
     public static final Prop<Integer> BULLET_LIST_ITEM_LEVEL = Prop.of("bullet-list-item-level");

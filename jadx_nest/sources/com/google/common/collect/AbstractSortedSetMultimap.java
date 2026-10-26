@@ -7,12 +7,12 @@ import java.util.NavigableSet;
 import java.util.SortedSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractSortedSetMultimap<K, V> extends AbstractSetMultimap<K, V> implements SortedSetMultimap<K, V> {
     private static final long serialVersionUID = 430848587173315748L;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractSetMultimap, com.google.common.collect.AbstractMapBasedMultimap
     public abstract SortedSet<V> createCollection();
 
@@ -20,13 +20,13 @@ abstract class AbstractSortedSetMultimap<K, V> extends AbstractSetMultimap<K, V>
         super(map);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractSetMultimap, com.google.common.collect.AbstractMapBasedMultimap
     public SortedSet<V> createUnmodifiableEmptyCollection() {
         return (SortedSet<V>) unmodifiableCollectionSubclass((Collection) createCollection());
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractSetMultimap, com.google.common.collect.AbstractMapBasedMultimap
     public <E> SortedSet<E> unmodifiableCollectionSubclass(Collection<E> collection) {
         if (collection instanceof NavigableSet) {

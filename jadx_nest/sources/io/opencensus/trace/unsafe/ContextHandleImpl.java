@@ -3,7 +3,7 @@ package io.opencensus.trace.unsafe;
 import io.grpc.Context;
 import io.opencensus.trace.ContextHandle;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class ContextHandleImpl implements ContextHandle {
     private final Context context;
 

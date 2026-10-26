@@ -2,7 +2,7 @@ package com.google.auth.oauth2;
 
 import com.google.common.base.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ActingParty {
     private final String actorToken;
     private final String actorTokenType;

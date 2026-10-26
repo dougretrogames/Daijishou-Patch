@@ -7,7 +7,7 @@ import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PackConfig {
     public static final int DEFAULT_BIG_FILE_THRESHOLD = 52428800;
     public static final int DEFAULT_BITMAP_CONTIGUOUS_COMMIT_COUNT = 100;

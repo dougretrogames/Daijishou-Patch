@@ -34,12 +34,12 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Reflection;
 
-/* JADX INFO: compiled from: LibraryCollectionWebViewViewNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: LibraryCollectionWebViewViewNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000l\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u0000 22\u00020\u0001:\u00012B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u001a\u001a\u00020\u001bH\u0016J\u0012\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fH\u0016J&\u0010 \u001a\u0004\u0018\u00010!2\u0006\u0010\"\u001a\u00020#2\b\u0010$\u001a\u0004\u0018\u00010%2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fH\u0016J \u0010&\u001a\u00020\u001b2\u0006\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020(2\u0006\u0010*\u001a\u00020+H\u0016J\b\u0010,\u001a\u00020\u001dH\u0016J\b\u0010-\u001a\u00020\u001dH\u0016J\u001a\u0010.\u001a\u00020\u001d2\u0006\u0010/\u001a\u00020!2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001fH\u0016J\b\u00100\u001a\u00020\u001dH\u0002J\b\u00101\u001a\u00020\u001dH\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u001b\u0010\t\u001a\u00020\n8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\r\u0010\u000e\u001a\u0004\b\u000b\u0010\fR\u001b\u0010\u000f\u001a\u00020\u00108BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0013\u0010\u000e\u001a\u0004\b\u0011\u0010\u0012R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082.¢\u0006\u0002\n\u0000¨\u00063"}, d2 = {"Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionWebViewViewNavFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/PlatformNavFragment;", "()V", "daijishouUriHandler", "Lcom/magneticchen/daijishou/daijishou_uri/DaijishouUriHandler;", "getDaijishouUriHandler", "()Lcom/magneticchen/daijishou/daijishou_uri/DaijishouUriHandler;", "setDaijishouUriHandler", "(Lcom/magneticchen/daijishou/daijishou_uri/DaijishouUriHandler;)V", "libraryViewModel", "Lcom/magneticchen/daijishou/view_models/LibraryViewModel;", "getLibraryViewModel", "()Lcom/magneticchen/daijishou/view_models/LibraryViewModel;", "libraryViewModel$delegate", "Lkotlin/Lazy;", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "getModel", "()Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "model$delegate", "navController", "Landroidx/navigation/NavController;", "progressBar", "Landroid/widget/ProgressBar;", "webView", "Landroid/webkit/WebView;", "onBackPressed", "", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onHotKeyPressed", "hotkeyCode", "", "keyCode", "keyEvent", "Landroid/view/KeyEvent;", "onKioskMode", "onNoneKioskMode", "onViewCreated", "view", "switchNext", "switchPrevious", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class LibraryCollectionWebViewViewNavFragment extends PlatformNavFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public static final int PLATFORM_LIBRARY_GRID_VIEW_MODE = 1;
     public static final int PLATFORM_LIBRARY_LIST_VIEW_MODE = 0;
@@ -47,10 +47,10 @@ public final class LibraryCollectionWebViewViewNavFragment extends PlatformNavFr
     private static final Typeface typeface;
     public DaijishouUriHandler daijishouUriHandler;
 
-    /* JADX INFO: renamed from: libraryViewModel$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: libraryViewModel$delegate, reason: from kotlin metadata */
     private final Lazy libraryViewModel;
 
-    /* JADX INFO: renamed from: model$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: model$delegate, reason: from kotlin metadata */
     private final Lazy model;
     private NavController navController;
     public ProgressBar progressBar;
@@ -68,7 +68,7 @@ public final class LibraryCollectionWebViewViewNavFragment extends PlatformNavFr
         this.model = FragmentViewModelLazyKt.createViewModelLazy(libraryCollectionWebViewViewNavFragment, Reflection.getOrCreateKotlinClass(DaijishouViewModel.class), new LibraryCollectionWebViewViewNavFragment$special$$inlined$activityViewModels$default$4(libraryCollectionWebViewViewNavFragment), new LibraryCollectionWebViewViewNavFragment$special$$inlined$activityViewModels$default$5(null, libraryCollectionWebViewViewNavFragment), new LibraryCollectionWebViewViewNavFragment$special$$inlined$activityViewModels$default$6(libraryCollectionWebViewViewNavFragment));
     }
 
-    /* JADX INFO: compiled from: LibraryCollectionWebViewViewNavFragment.kt */
+    /* INFO: compiled from: LibraryCollectionWebViewViewNavFragment.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u000b\u001a\u00020\fR\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u0016\u0010\b\u001a\n \n*\u0004\u0018\u00010\t0\tX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\r"}, d2 = {"Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionWebViewViewNavFragment$Companion;", "", "()V", "PLATFORM_LIBRARY_GRID_VIEW_MODE", "", "PLATFORM_LIBRARY_LIST_VIEW_MODE", "RECYCLER_VIEW_SCROLL_OFFSET", "", "typeface", "Landroid/graphics/Typeface;", "kotlin.jvm.PlatformType", "newInstance", "Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionWebViewViewNavFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -184,8 +184,8 @@ public final class LibraryCollectionWebViewViewNavFragment extends PlatformNavFr
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWebViewViewNavFragment$onCreateView$1, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWebViewViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWebViewViewNavFragment$onCreateView$1, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWebViewViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function1<String, Unit> {
         AnonymousClass1() {
@@ -198,7 +198,7 @@ public final class LibraryCollectionWebViewViewNavFragment extends PlatformNavFr
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(String str) {
             NavController navController = null;
             if (Intrinsics.areEqual(str, "0")) {

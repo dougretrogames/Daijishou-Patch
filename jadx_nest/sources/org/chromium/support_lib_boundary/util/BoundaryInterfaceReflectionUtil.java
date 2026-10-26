@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import org.jspecify.annotations.NullMarked;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @NullMarked
 public class BoundaryInterfaceReflectionUtil {
     static final /* synthetic */ boolean $assertionsDisabled = false;

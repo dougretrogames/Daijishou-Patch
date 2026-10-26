@@ -3,7 +3,7 @@ package com.google.common.hash;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public interface PrimitiveSink {
     PrimitiveSink putBoolean(boolean b);

@@ -1,6 +1,6 @@
 package io.opencensus.metrics.export;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Summary_Snapshot_ValueAtPercentile extends Summary.Snapshot.ValueAtPercentile {
     private final double percentile;
     private final double value;

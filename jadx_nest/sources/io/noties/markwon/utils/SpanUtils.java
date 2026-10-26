@@ -7,7 +7,7 @@ import android.widget.TextView;
 import io.noties.markwon.core.spans.TextLayoutSpan;
 import io.noties.markwon.core.spans.TextViewSpan;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class SpanUtils {
     public static int width(Canvas canvas, CharSequence charSequence) {
         if (charSequence instanceof Spanned) {

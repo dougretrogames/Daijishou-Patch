@@ -1,6 +1,6 @@
 package io.opencensus.metrics.export;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Value_ValueLong extends Value.ValueLong {
     private final long value;
 

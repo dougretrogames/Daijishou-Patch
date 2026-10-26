@@ -12,7 +12,7 @@ import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.util.IO;
 import org.eclipse.jgit.util.io.SilentFileInputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class PackReverseIndexFactory {
     static PackReverseIndex openOrCompute(File file, long j, PackBitmapIndex.SupplierWithIOException<PackIndex> supplierWithIOException) throws IOException {
         Throwable th = null;

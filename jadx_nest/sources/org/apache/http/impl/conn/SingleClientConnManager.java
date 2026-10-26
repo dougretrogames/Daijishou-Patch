@@ -15,7 +15,7 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class SingleClientConnManager implements ClientConnectionManager {
     public static final String MISUSE_MESSAGE = "Invalid use of SingleClientConnManager: connection still allocated.\nMake sure to release the connection before allocating another one.";
@@ -71,7 +71,7 @@ public class SingleClientConnManager implements ClientConnectionManager {
         Asserts.check(!this.isShutDown, "Manager is shut down");
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.conn.SingleClientConnManager$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.conn.SingleClientConnManager$1, reason: invalid class name */
     class AnonymousClass1 implements ClientConnectionRequest {
         final /* synthetic */ HttpRoute val$route;
         final /* synthetic */ Object val$state;

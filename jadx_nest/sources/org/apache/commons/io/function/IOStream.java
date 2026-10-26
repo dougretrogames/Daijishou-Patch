@@ -24,7 +24,7 @@ import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 import org.apache.commons.io.IOExceptionList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface IOStream<T> extends IOBaseStream<T, IOStream<T>, Stream<T>> {
     static /* synthetic */ IOException lambda$forAll$10(Integer num, IOException iOException) {
         return iOException;
@@ -38,7 +38,7 @@ public interface IOStream<T> extends IOBaseStream<T, IOStream<T>, Stream<T>> {
         return IOStreamAdapter.adapt(Stream.empty());
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.io.function.IOStream$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.io.function.IOStream$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<T> {
         T t = (T) IOStreams.NONE;
         final /* synthetic */ IOUnaryOperator val$f;

@@ -4,7 +4,7 @@ import java.io.FilterWriter;
 import java.io.IOException;
 import java.io.Writer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ChunkedWriter extends FilterWriter {
     private static final int DEFAULT_CHUNK_SIZE = 8192;
     private final int chunkSize;

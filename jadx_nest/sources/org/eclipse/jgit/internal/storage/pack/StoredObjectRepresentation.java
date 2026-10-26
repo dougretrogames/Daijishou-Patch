@@ -2,7 +2,7 @@ package org.eclipse.jgit.internal.storage.pack;
 
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StoredObjectRepresentation {
     public static final int FORMAT_OTHER = 2;
     public static final int PACK_DELTA = 0;

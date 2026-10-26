@@ -37,7 +37,7 @@ import org.eclipse.jgit.transport.URIish;
 import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.FileUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CloneCommand extends TransportCommand<CloneCommand, Git> {
     private boolean bare;
     private String branch;
@@ -75,7 +75,7 @@ public class CloneCommand extends TransportCommand<CloneCommand, Git> {
         ALL_BRANCHES,
         MIRROR;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static FETCH_TYPE[] valuesCustom() {
             FETCH_TYPE[] fetch_typeArrValuesCustom = values();
             int length = fetch_typeArrValuesCustom.length;
@@ -99,7 +99,7 @@ public class CloneCommand extends TransportCommand<CloneCommand, Git> {
         return this.directory;
     }
 
-    /* JADX WARN: Code duplicated, block: B:23:0x0049 A[Catch: all -> 0x0042, TRY_ENTER, TryCatch #2 {all -> 0x0042, blocks: (B:4:0x0018, B:23:0x0049, B:24:0x004c, B:25:0x004f, B:28:0x0053, B:29:0x0056, B:30:0x006e, B:33:0x0072, B:34:0x0075, B:35:0x0081), top: B:41:0x0018, inners: #6, #9, #6 }] */
+    /* WARN: Code duplicated, block: B:23:0x0049 A[Catch: all -> 0x0042, TRY_ENTER, TryCatch #2 {all -> 0x0042, blocks: (B:4:0x0018, B:23:0x0049, B:24:0x004c, B:25:0x004f, B:28:0x0053, B:29:0x0056, B:30:0x006e, B:33:0x0072, B:34:0x0075, B:35:0x0081), top: B:41:0x0018, inners: #6, #9, #6 }] */
     @Override // org.eclipse.jgit.api.GitCommand, java.util.concurrent.Callable
     public Git call() throws Throwable {
         try {
@@ -318,8 +318,8 @@ public class CloneCommand extends TransportCommand<CloneCommand, Git> {
         }
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x0056 */
-    /* JADX WARN: Code restructure failed: missing block: B:42:?, code lost:
+    /* WARN: Bottom block not found for handler: all -> 0x0056 */
+    /* WARN: Code restructure failed: missing block: B:42:?, code lost:
     
         throw r3;
      */
@@ -576,7 +576,7 @@ public class CloneCommand extends TransportCommand<CloneCommand, Git> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void cleanup() {
         try {
             File file = this.directory;

@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import org.apache.http.HttpRequest;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StandardHttpRequestRetryHandler extends DefaultHttpRequestRetryHandler {
     private final Map<String, Boolean> idempotentMethods;
 

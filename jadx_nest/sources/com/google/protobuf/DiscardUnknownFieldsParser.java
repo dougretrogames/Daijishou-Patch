@@ -3,11 +3,11 @@ package com.google.protobuf;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class DiscardUnknownFieldsParser {
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.protobuf.DiscardUnknownFieldsParser$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.protobuf.DiscardUnknownFieldsParser$1, reason: invalid class name */
     class AnonymousClass1<T> extends AbstractParser<T> {
         final /* synthetic */ Parser val$parser;
 
@@ -140,7 +140,7 @@ public final class DiscardUnknownFieldsParser {
             return super.parsePartialFrom(data, extensionRegistry);
         }
 
-        /* JADX WARN: Incorrect return type in method signature: (Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)TT; */
+        /* WARN: Incorrect return type in method signature: (Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)TT; */
         @Override // com.google.protobuf.Parser
         public Message parsePartialFrom(CodedInputStream input, ExtensionRegistryLite extensionRegistry) throws InvalidProtocolBufferException {
             try {

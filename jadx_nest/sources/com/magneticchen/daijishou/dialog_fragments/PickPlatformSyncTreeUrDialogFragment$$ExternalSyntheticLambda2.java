@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.dialog_fragments;
 import android.app.AlertDialog;
 import android.view.View;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class PickPlatformSyncTreeUrDialogFragment$$ExternalSyntheticLambda2 implements View.OnClickListener {
     public final /* synthetic */ PickPlatformSyncTreeUrDialogFragment f$0;
     public final /* synthetic */ AlertDialog f$1;

@@ -5,7 +5,7 @@ import java.lang.Comparable;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock("Use ImmutableRangeMap or TreeRangeMap")
 @ElementTypesAreNonnullByDefault
 public interface RangeMap<K extends Comparable, V> {

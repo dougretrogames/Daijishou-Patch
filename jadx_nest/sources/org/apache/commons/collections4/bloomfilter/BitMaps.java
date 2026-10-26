@@ -1,6 +1,6 @@
 package org.apache.commons.collections4.bloomfilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BitMaps {
     private static final int DIVIDE_BY_64 = 6;
 

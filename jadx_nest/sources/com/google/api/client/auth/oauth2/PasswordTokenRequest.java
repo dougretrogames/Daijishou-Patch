@@ -9,7 +9,7 @@ import com.google.api.client.util.Key;
 import com.google.api.client.util.Preconditions;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PasswordTokenRequest extends TokenRequest {
 
     @Key

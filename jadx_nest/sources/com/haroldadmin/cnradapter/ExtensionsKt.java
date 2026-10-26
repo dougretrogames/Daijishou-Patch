@@ -10,13 +10,13 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.ranges.RangesKt;
 import kotlinx.coroutines.DelayKt;
 
-/* JADX INFO: compiled from: Extensions.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: Extensions.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u00000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u0006\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\u001a\u0083\u0001\u0010\u0000\u001a\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0004\"\b\b\u0001\u0010\u0003*\u00020\u00042\b\b\u0002\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\b2\b\b\u0002\u0010\n\u001a\u00020\u000b2(\u0010\f\u001a$\b\u0001\u0012\u0016\u0012\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u00010\u000e\u0012\u0006\u0012\u0004\u0018\u00010\u00040\rH\u0086Hø\u0001\u0000¢\u0006\u0002\u0010\u000f\u001a4\u0010\u0010\u001a\u0004\u0018\u0001H\u0002\"\b\b\u0000\u0010\u0002*\u00020\u0004\"\b\b\u0001\u0010\u0003*\u00020\u0004*\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u0001H\u0086\u0002¢\u0006\u0002\u0010\u0011\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006\u0012"}, d2 = {"executeWithRetry", "Lcom/haroldadmin/cnradapter/NetworkResponse;", ExifInterface.GPS_DIRECTION_TRUE, "U", "", "times", "", "initialDelay", "", "maxDelay", "factor", "", "block", "Lkotlin/Function1;", "Lkotlin/coroutines/Continuation;", "(IJJDLkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "invoke", "(Lcom/haroldadmin/cnradapter/NetworkResponse;)Ljava/lang/Object;", "coroutines-network-response-adapter"}, k = 2, mv = {1, 6, 0}, xi = 48)
 public final class ExtensionsKt {
 
-    /* JADX INFO: renamed from: com.haroldadmin.cnradapter.ExtensionsKt$executeWithRetry$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Extensions.kt */
+    /* INFO: renamed from: com.haroldadmin.cnradapter.ExtensionsKt$executeWithRetry$1, reason: invalid class name */
+    /* INFO: compiled from: Extensions.kt */
     @Metadata(k = 3, mv = {1, 6, 0}, xi = 176)
     @DebugMetadata(c = "com.haroldadmin.cnradapter.ExtensionsKt", f = "Extensions.kt", i = {0, 0, 0, 0, 1, 1, 1, 1}, l = {27, 29, 35}, m = "executeWithRetry", n = {"block", "currentDelay", "maxDelay", "factor", "block", "currentDelay", "maxDelay", "factor"}, s = {"L$0", "L$1", "J$0", "D$0", "L$0", "L$1", "J$0", "D$0"})
     static final class AnonymousClass1<T, U> extends ContinuationImpl {
@@ -41,18 +41,18 @@ public final class ExtensionsKt {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:22:0x0088  */
-    /* JADX WARN: Code duplicated, block: B:25:0x009f  */
-    /* JADX WARN: Code duplicated, block: B:28:0x00b3  */
-    /* JADX WARN: Code duplicated, block: B:32:0x00d6 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:33:0x00d7  */
-    /* JADX WARN: Code duplicated, block: B:36:0x00e5 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:7:0x0016  */
-    /* JADX WARN: Code restructure failed: missing block: B:29:0x00c7, code lost:
+    /* WARN: Code duplicated, block: B:22:0x0088  */
+    /* WARN: Code duplicated, block: B:25:0x009f  */
+    /* WARN: Code duplicated, block: B:28:0x00b3  */
+    /* WARN: Code duplicated, block: B:32:0x00d6 A[RETURN] */
+    /* WARN: Code duplicated, block: B:33:0x00d7  */
+    /* WARN: Code duplicated, block: B:36:0x00e5 A[RETURN] */
+    /* WARN: Code duplicated, block: B:7:0x0016  */
+    /* WARN: Code restructure failed: missing block: B:29:0x00c7, code lost:
     
         if (kotlinx.coroutines.DelayKt.delay(r14, r1) == r2) goto L35;
      */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:29:0x00c7 -> B:18:0x004d). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:29:0x00c7 -> B:18:0x004d). Please report as a decompilation issue!!! */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument

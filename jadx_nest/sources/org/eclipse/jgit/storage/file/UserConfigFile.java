@@ -8,7 +8,7 @@ import org.eclipse.jgit.lib.CommitConfig$$ExternalSyntheticBackport0;
 import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.util.FS;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UserConfigFile extends FileBasedConfig {
     private final FileBasedConfig parent;
 

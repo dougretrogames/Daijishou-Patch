@@ -1,6 +1,6 @@
 package org.eclipse.jgit.ignore.internal;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LeadingAsteriskMatcher extends NameMatcher {
     LeadingAsteriskMatcher(String str, Character ch, boolean z) {
         super(str, ch, z, true);

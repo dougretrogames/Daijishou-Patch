@@ -7,7 +7,7 @@ import java.lang.annotation.Target;
 import javax.annotation.Nonnull;
 import javax.annotation.meta.When;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Target({ElementType.FIELD, ElementType.METHOD, ElementType.PARAMETER})
 @Nonnull(when = When.UNKNOWN)
 @Retention(RetentionPolicy.RUNTIME)

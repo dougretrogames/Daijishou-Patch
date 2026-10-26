@@ -9,27 +9,27 @@ import kotlin.jvm.internal.Lambda;
 import kotlinx.coroutines.internal.OnUndeliveredElementKt;
 import kotlinx.coroutines.selects.SelectInstance;
 
-/* JADX INFO: compiled from: BufferedChannel.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: BufferedChannel.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0003\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\u0010\u0000\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001\"\u0004\b\u0000\u0010\u00042\n\u0010\u0005\u001a\u0006\u0012\u0002\b\u00030\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\b2\b\u0010\t\u001a\u0004\u0018\u00010\bH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "Lkotlin/Function1;", "", "", ExifInterface.LONGITUDE_EAST, "select", "Lkotlinx/coroutines/selects/SelectInstance;", "<anonymous parameter 1>", "", "element", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class BufferedChannel$onUndeliveredElementReceiveCancellationConstructor$1$1 extends Lambda implements Function3<SelectInstance<?>, Object, Object, Function1<? super Throwable, ? extends Unit>> {
     final /* synthetic */ BufferedChannel<E> this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     BufferedChannel$onUndeliveredElementReceiveCancellationConstructor$1$1(BufferedChannel<E> bufferedChannel) {
         super(3);
         this.this$0 = bufferedChannel;
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.channels.BufferedChannel$onUndeliveredElementReceiveCancellationConstructor$1$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: BufferedChannel.kt */
+    /* INFO: renamed from: kotlinx.coroutines.channels.BufferedChannel$onUndeliveredElementReceiveCancellationConstructor$1$1$1, reason: invalid class name */
+    /* INFO: compiled from: BufferedChannel.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u0003\n\u0000\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", ExifInterface.LONGITUDE_EAST, "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<Throwable, Unit> {
         final /* synthetic */ Object $element;
         final /* synthetic */ SelectInstance<?> $select;
         final /* synthetic */ BufferedChannel<E> this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Object obj, BufferedChannel<E> bufferedChannel, SelectInstance<?> selectInstance) {
             super(1);
             this.$element = obj;
@@ -43,7 +43,7 @@ final class BufferedChannel$onUndeliveredElementReceiveCancellationConstructor$1
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Throwable th) {
             if (this.$element != BufferedChannelKt.getCHANNEL_CLOSED()) {
                 OnUndeliveredElementKt.callUndeliveredElement(this.this$0.onUndeliveredElement, this.$element, this.$select.getContext());

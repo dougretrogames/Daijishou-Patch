@@ -1,6 +1,6 @@
 package com.google.android.material.color.utilities;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Contrast {
     private static final double CONTRAST_RATIO_EPSILON = 0.04d;
     private static final double LUMINANCE_GAMUT_MAP_TOLERANCE = 0.4d;

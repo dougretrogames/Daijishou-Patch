@@ -3,7 +3,7 @@ package org.apache.commons.io.output;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NullOutputStream extends OutputStream {
     public static final NullOutputStream INSTANCE;
 

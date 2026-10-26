@@ -15,7 +15,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.NullProgressMonitor;
 import org.eclipse.jgit.lib.ProgressMonitor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class TemporaryBuffer extends OutputStream {
     protected static final int DEFAULT_IN_CORE_LIMIT = 1048576;
     ArrayList<Block> blocks;
@@ -185,11 +185,11 @@ public abstract class TemporaryBuffer extends OutputStream {
         return new BlockInputStream();
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.util.TemporaryBuffer$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.util.TemporaryBuffer$1, reason: invalid class name */
     class AnonymousClass1 extends BlockInputStream {
         final /* synthetic */ TemporaryBuffer this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(TemporaryBuffer temporaryBuffer, TemporaryBuffer temporaryBuffer2) {
             super();
             this.this$0 = temporaryBuffer2;
@@ -422,7 +422,7 @@ public abstract class TemporaryBuffer extends OutputStream {
             return new AnonymousClass1(this.onDiskFile);
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.util.TemporaryBuffer$LocalFile$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.util.TemporaryBuffer$LocalFile$1, reason: invalid class name */
         class AnonymousClass1 extends FileInputStream {
             AnonymousClass1(File file) throws FileNotFoundException {
                 super(file);

@@ -5,7 +5,7 @@ import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Queues;
 import java.util.Deque;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class TrieParser {
     private static final Joiner DIRECT_JOINER = Joiner.on("");
 

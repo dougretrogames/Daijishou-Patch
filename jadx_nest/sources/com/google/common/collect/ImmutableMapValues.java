@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class ImmutableMapValues<K, V> extends ImmutableCollection<V> {
     private final ImmutableMap<K, V> map;
@@ -23,7 +23,7 @@ final class ImmutableMapValues<K, V> extends ImmutableCollection<V> {
         return this.map.size();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ImmutableMapValues$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ImmutableMapValues$1, reason: invalid class name */
     class AnonymousClass1 extends UnmodifiableIterator<V> {
         final UnmodifiableIterator<Map.Entry<K, V>> entryItr;
 
@@ -52,7 +52,7 @@ final class ImmutableMapValues<K, V> extends ImmutableCollection<V> {
         return object != null && Iterators.contains(iterator(), object);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ImmutableMapValues$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ImmutableMapValues$2, reason: invalid class name */
     class AnonymousClass2 extends ImmutableList<V> {
         final /* synthetic */ ImmutableList val$entryList;
 

@@ -3,8 +3,8 @@ package com.google.android.material.bottomsheet;
 import android.view.View;
 import androidx.core.view.accessibility.AccessibilityViewCommand;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class BottomSheetDragHandleView$$ExternalSyntheticLambda0 implements AccessibilityViewCommand {
     public final /* synthetic */ BottomSheetDragHandleView f$0;
 

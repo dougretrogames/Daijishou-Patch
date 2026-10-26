@@ -25,7 +25,7 @@ import org.apache.http.conn.socket.LayeredConnectionSocketFactory;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultHttpClientConnectionOperator implements HttpClientConnectionOperator {
     static final String SOCKET_FACTORY_REGISTRY = "http.socket-factory-registry";
     private final DnsResolver dnsResolver;
@@ -45,8 +45,8 @@ public class DefaultHttpClientConnectionOperator implements HttpClientConnection
         return lookup == null ? this.socketFactoryRegistry : lookup;
     }
 
-    /* JADX WARN: Code duplicated, block: B:47:0x0106  */
-    /* JADX WARN: Code duplicated, block: B:63:0x0120 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:47:0x0106  */
+    /* WARN: Code duplicated, block: B:63:0x0120 A[SYNTHETIC] */
     @Override // org.apache.http.conn.HttpClientConnectionOperator
     public void connect(ManagedHttpClientConnection managedHttpClientConnection, HttpHost httpHost, InetSocketAddress inetSocketAddress, int i, SocketConfig socketConfig, HttpContext httpContext) throws IOException {
         HttpContext httpContext2 = httpContext;

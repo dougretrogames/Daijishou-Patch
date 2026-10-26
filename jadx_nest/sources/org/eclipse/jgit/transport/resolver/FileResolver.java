@@ -13,7 +13,7 @@ import org.eclipse.jgit.lib.RepositoryCache;
 import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileResolver<C> implements RepositoryResolver<C> {
     private volatile boolean exportAll;
     private final Collection<File> exportBase;

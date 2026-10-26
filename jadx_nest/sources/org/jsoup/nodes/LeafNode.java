@@ -4,7 +4,7 @@ import java.util.List;
 import org.jsoup.helper.Validate;
 import org.jsoup.internal.QuietAppendable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class LeafNode extends Node {
     Object value;
 
@@ -121,7 +121,7 @@ public abstract class LeafNode extends Node {
         return EmptyNodes;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.jsoup.nodes.Node
     public LeafNode doClone(Node node) {
         LeafNode leafNode = (LeafNode) super.doClone(node);

@@ -1,6 +1,6 @@
 package io.grpc;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Channel {
     public abstract String authority();
 

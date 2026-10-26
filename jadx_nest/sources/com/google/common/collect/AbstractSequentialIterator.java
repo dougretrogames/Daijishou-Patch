@@ -3,7 +3,7 @@ package com.google.common.collect;
 import java.util.NoSuchElementException;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class AbstractSequentialIterator<T> extends UnmodifiableIterator<T> {
 

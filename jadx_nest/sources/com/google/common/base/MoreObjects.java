@@ -7,7 +7,7 @@ import java.util.Map;
 import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class MoreObjects {
     public static <T> T firstNonNull(@CheckForNull T first, @CheckForNull T second) {
@@ -129,10 +129,10 @@ public final class MoreObjects {
             return value.getClass().isArray() && Array.getLength(value) == 0;
         }
 
-        /* JADX WARN: Code duplicated, block: B:12:0x0032  */
-        /* JADX WARN: Code duplicated, block: B:14:0x0039  */
-        /* JADX WARN: Code duplicated, block: B:16:0x0046  */
-        /* JADX WARN: Code duplicated, block: B:19:0x0062  */
+        /* WARN: Code duplicated, block: B:12:0x0032  */
+        /* WARN: Code duplicated, block: B:14:0x0039  */
+        /* WARN: Code duplicated, block: B:16:0x0046  */
+        /* WARN: Code duplicated, block: B:19:0x0062  */
         public String toString() {
             boolean z = this.omitNullValues;
             boolean z2 = this.omitEmptyValues;

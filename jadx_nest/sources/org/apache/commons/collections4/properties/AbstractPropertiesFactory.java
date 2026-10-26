@@ -13,7 +13,7 @@ import java.nio.file.Paths;
 import java.util.Objects;
 import java.util.Properties;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractPropertiesFactory<T extends Properties> {
     protected abstract T createProperties();
 

@@ -1,8 +1,8 @@
 package com.google.gson;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: loaded from: classes4.dex */
+/* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* WARN: Unknown enum class pattern. Please report as an issue! */
+/* INFO: loaded from: classes4.dex */
 public abstract class LongSerializationPolicy {
     private static final /* synthetic */ LongSerializationPolicy[] $VALUES;
     public static final LongSerializationPolicy DEFAULT;
@@ -26,7 +26,7 @@ public abstract class LongSerializationPolicy {
         return (LongSerializationPolicy[]) $VALUES.clone();
     }
 
-    /* JADX INFO: renamed from: com.google.gson.LongSerializationPolicy$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.LongSerializationPolicy$1, reason: invalid class name */
     final enum AnonymousClass1 extends LongSerializationPolicy {
         AnonymousClass1(String str, int i) {
             super(str, i, null);
@@ -49,7 +49,7 @@ public abstract class LongSerializationPolicy {
         $VALUES = new LongSerializationPolicy[]{anonymousClass1, anonymousClass2};
     }
 
-    /* JADX INFO: renamed from: com.google.gson.LongSerializationPolicy$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.LongSerializationPolicy$2, reason: invalid class name */
     final enum AnonymousClass2 extends LongSerializationPolicy {
         AnonymousClass2(String str, int i) {
             super(str, i, null);

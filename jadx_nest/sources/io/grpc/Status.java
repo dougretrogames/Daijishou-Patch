@@ -15,7 +15,7 @@ import java.util.TreeMap;
 import javax.annotation.CheckReturnValue;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 public final class Status {
     static final Metadata.Key<String> MESSAGE_KEY;
@@ -78,7 +78,7 @@ public final class Status {
             return (Status) Status.STATUS_LIST.get(this.value);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public byte[] valueAscii() {
             return this.valueAscii;
         }
@@ -111,7 +111,7 @@ public final class Status {
         return UNKNOWN.withDescription("Unknown code " + i);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Status fromCodeValue(byte[] bArr) {
         if (bArr.length == 1 && bArr[0] == 48) {
             return OK;
@@ -264,7 +264,7 @@ public final class Status {
             return status.getCode().valueAscii();
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // io.grpc.Metadata.TrustedAsciiMarshaller
         public Status parseAsciiString(byte[] bArr) {
             return Status.fromCodeValue(bArr);

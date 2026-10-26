@@ -3,7 +3,7 @@ package com.google.api.client.auth.oauth2;
 import java.util.Collection;
 import java.util.Collections;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BrowserClientRequestUrl extends AuthorizationRequestUrl {
     @Override // com.google.api.client.auth.oauth2.AuthorizationRequestUrl
     public /* bridge */ /* synthetic */ AuthorizationRequestUrl setResponseTypes(Collection collection) {

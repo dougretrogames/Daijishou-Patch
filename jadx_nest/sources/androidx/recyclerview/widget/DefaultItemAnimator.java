@@ -12,7 +12,7 @@ import java.util.Iterator;
 import java.util.List;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DefaultItemAnimator extends SimpleItemAnimator {
     private static final boolean DEBUG = false;
     private static TimeInterpolator sDefaultInterpolator;
@@ -123,7 +123,7 @@ public class DefaultItemAnimator extends SimpleItemAnimator {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ ArrayList val$moves;
 
@@ -141,7 +141,7 @@ public class DefaultItemAnimator extends SimpleItemAnimator {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         final /* synthetic */ ArrayList val$changes;
 
@@ -160,7 +160,7 @@ public class DefaultItemAnimator extends SimpleItemAnimator {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         final /* synthetic */ ArrayList val$additions;
 
@@ -193,7 +193,7 @@ public class DefaultItemAnimator extends SimpleItemAnimator {
         viewPropertyAnimatorAnimate.setDuration(getRemoveDuration()).alpha(0.0f).setListener(new AnonymousClass4(viewHolder, viewPropertyAnimatorAnimate, view)).start();
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$4, reason: invalid class name */
     class AnonymousClass4 extends AnimatorListenerAdapter {
         final /* synthetic */ ViewPropertyAnimator val$animation;
         final /* synthetic */ RecyclerView.ViewHolder val$holder;
@@ -235,7 +235,7 @@ public class DefaultItemAnimator extends SimpleItemAnimator {
         viewPropertyAnimatorAnimate.alpha(1.0f).setDuration(getAddDuration()).setListener(new AnonymousClass5(viewHolder, view, viewPropertyAnimatorAnimate)).start();
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$5, reason: invalid class name */
     class AnonymousClass5 extends AnimatorListenerAdapter {
         final /* synthetic */ ViewPropertyAnimator val$animation;
         final /* synthetic */ RecyclerView.ViewHolder val$holder;
@@ -303,7 +303,7 @@ public class DefaultItemAnimator extends SimpleItemAnimator {
         viewPropertyAnimatorAnimate.setDuration(getMoveDuration()).setListener(new AnonymousClass6(viewHolder, i5, view, i6, viewPropertyAnimatorAnimate)).start();
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$6, reason: invalid class name */
     class AnonymousClass6 extends AnimatorListenerAdapter {
         final /* synthetic */ ViewPropertyAnimator val$animation;
         final /* synthetic */ int val$deltaX;
@@ -386,7 +386,7 @@ public class DefaultItemAnimator extends SimpleItemAnimator {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$7, reason: invalid class name */
     class AnonymousClass7 extends AnimatorListenerAdapter {
         final /* synthetic */ ChangeInfo val$changeInfo;
         final /* synthetic */ ViewPropertyAnimator val$oldViewAnim;
@@ -415,7 +415,7 @@ public class DefaultItemAnimator extends SimpleItemAnimator {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.DefaultItemAnimator$8, reason: invalid class name */
     class AnonymousClass8 extends AnimatorListenerAdapter {
         final /* synthetic */ ChangeInfo val$changeInfo;
         final /* synthetic */ View val$newView;

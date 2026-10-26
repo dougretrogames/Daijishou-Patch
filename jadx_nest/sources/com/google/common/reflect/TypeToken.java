@@ -34,7 +34,7 @@ import java.util.Set;
 import javax.annotation.CheckForNull;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class TypeToken<T> extends TypeCapture<T> implements Serializable {
     private static final long serialVersionUID = 3637540370352322684L;
@@ -266,7 +266,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
         return new AnonymousClass1(method);
     }
 
-    /* JADX INFO: renamed from: com.google.common.reflect.TypeToken$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.reflect.TypeToken$1, reason: invalid class name */
     class AnonymousClass1 extends Invokable.MethodInvokable<T> {
         AnonymousClass1(Method method) {
             super(method);
@@ -303,7 +303,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
         return new AnonymousClass2(constructor);
     }
 
-    /* JADX INFO: renamed from: com.google.common.reflect.TypeToken$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.reflect.TypeToken$2, reason: invalid class name */
     class AnonymousClass2 extends Invokable.ConstructorInvokable<T> {
         AnonymousClass2(Constructor constructor) {
             super(constructor);
@@ -352,7 +352,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
             return new ClassSet(TypeToken.this, null);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Set<TypeToken<? super T>> delegate() {
             ImmutableSet<TypeToken<? super T>> immutableSet = this.types;
@@ -369,7 +369,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     final class InterfaceSet extends TypeToken<T>.TypeSet {
         private static final long serialVersionUID = 0;
         private final transient TypeToken<T>.TypeSet allTypes;
@@ -387,7 +387,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
             this.allTypes = allTypes;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.reflect.TypeToken.TypeSet, com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Set<TypeToken<? super T>> delegate() {
             ImmutableSet<TypeToken<? super T>> immutableSet = this.interfaces;
@@ -433,7 +433,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.reflect.TypeToken.TypeSet, com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Set<TypeToken<? super T>> delegate() {
             ImmutableSet<TypeToken<? super T>> immutableSet = this.classes;
@@ -460,14 +460,14 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
         }
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     private static abstract class TypeFilter implements Predicate<TypeToken<?>> {
         public static final TypeFilter IGNORE_TYPE_VARIABLE_OR_WILDCARD = new AnonymousClass1("IGNORE_TYPE_VARIABLE_OR_WILDCARD", 0);
         public static final TypeFilter INTERFACE_ONLY = new AnonymousClass2("INTERFACE_ONLY", 1);
         private static final /* synthetic */ TypeFilter[] $VALUES = $values();
 
-        /* JADX INFO: renamed from: com.google.common.reflect.TypeToken$TypeFilter$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.TypeToken$TypeFilter$1, reason: invalid class name */
         final enum AnonymousClass1 extends TypeFilter {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -499,7 +499,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
             return (TypeFilter[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.TypeToken$TypeFilter$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.TypeToken$TypeFilter$2, reason: invalid class name */
         final enum AnonymousClass2 extends TypeFilter {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -531,7 +531,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
         return of(new TypeResolver().resolveType(this.runtimeType));
     }
 
-    /* JADX INFO: renamed from: com.google.common.reflect.TypeToken$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.reflect.TypeToken$3, reason: invalid class name */
     class AnonymousClass3 extends TypeVisitor {
         AnonymousClass3() {
         }
@@ -706,7 +706,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.reflect.TypeToken$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.reflect.TypeToken$4, reason: invalid class name */
     class AnonymousClass4 extends TypeVisitor {
         final /* synthetic */ ImmutableSet.Builder val$builder;
 
@@ -740,7 +740,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public ImmutableSet<Class<? super T>> getRawTypes() {
         ImmutableSet.Builder builder = ImmutableSet.builder();
         new AnonymousClass4(this, builder).visit(this.runtimeType);
@@ -782,7 +782,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
         return of((Class) cls);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public TypeResolver getCovariantTypeResolver() {
         TypeResolver typeResolver = this.covariantTypeResolver;
         if (typeResolver != null) {
@@ -793,7 +793,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
         return typeResolverCovariantly;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public TypeResolver getInvariantTypeResolver() {
         TypeResolver typeResolver = this.invariantTypeResolver;
         if (typeResolver != null) {
@@ -875,25 +875,25 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
             this();
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.TypeToken$TypeCollector$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.TypeToken$TypeCollector$1, reason: invalid class name */
         class AnonymousClass1 extends TypeCollector<TypeToken<?>> {
             AnonymousClass1() {
                 super(null);
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // com.google.common.reflect.TypeToken.TypeCollector
             public Class<?> getRawType(TypeToken<?> type) {
                 return type.getRawType();
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // com.google.common.reflect.TypeToken.TypeCollector
             public Iterable<? extends TypeToken<?>> getInterfaces(TypeToken<?> type) {
                 return type.getGenericInterfaces();
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // com.google.common.reflect.TypeToken.TypeCollector
             @CheckForNull
             public TypeToken<?> getSuperclass(TypeToken<?> type) {
@@ -901,9 +901,9 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.TypeToken$TypeCollector$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.TypeToken$TypeCollector$2, reason: invalid class name */
         class AnonymousClass2 extends TypeCollector<Class<?>> {
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // com.google.common.reflect.TypeToken.TypeCollector
             public Class<?> getRawType(Class<?> type) {
                 return type;
@@ -913,13 +913,13 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
                 super(null);
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // com.google.common.reflect.TypeToken.TypeCollector
             public Iterable<? extends Class<?>> getInterfaces(Class<?> type) {
                 return Arrays.asList(type.getInterfaces());
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // com.google.common.reflect.TypeToken.TypeCollector
             @CheckForNull
             public Class<?> getSuperclass(Class<?> type) {
@@ -927,7 +927,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.TypeToken$TypeCollector$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.TypeToken$TypeCollector$3, reason: invalid class name */
         class AnonymousClass3 extends ForwardingTypeCollector<K> {
             AnonymousClass3(final TypeCollector this$0, TypeCollector delegate) {
                 super(delegate);
@@ -967,7 +967,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
             return sortKeysByValue(mapNewHashMap, Ordering.natural().reverse());
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         private int collectTypes(K k, Map<? super K, Integer> map) {
             Integer num = map.get(k);
             if (num != null) {
@@ -989,7 +989,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
             return i;
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.TypeToken$TypeCollector$4, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.TypeToken$TypeCollector$4, reason: invalid class name */
         class AnonymousClass4 extends Ordering<K> {
             final /* synthetic */ Map val$map;
             final /* synthetic */ Comparator val$valueComparator;
@@ -999,7 +999,7 @@ public abstract class TypeToken<T> extends TypeCapture<T> implements Serializabl
                 this.val$map = val$map;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.collect.Ordering, java.util.Comparator
             public int compare(K left, K right) {
                 return this.val$valueComparator.compare(Objects.requireNonNull(this.val$map.get(left)), Objects.requireNonNull(this.val$map.get(right)));

@@ -46,7 +46,7 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class WindowDecorActionBar extends ActionBar implements ActionBarOverlayLayout.ActionBarVisibilityCallback {
     private static final long FADE_IN_DURATION_MS = 200;
     private static final long FADE_OUT_DURATION_MS = 100;
@@ -101,7 +101,7 @@ public class WindowDecorActionBar extends ActionBar implements ActionBarOverlayL
     public void setSplitBackgroundDrawable(Drawable drawable) {
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.WindowDecorActionBar$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.WindowDecorActionBar$1, reason: invalid class name */
     class AnonymousClass1 extends ViewPropertyAnimatorListenerAdapter {
         AnonymousClass1() {
         }
@@ -122,7 +122,7 @@ public class WindowDecorActionBar extends ActionBar implements ActionBarOverlayL
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.WindowDecorActionBar$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.WindowDecorActionBar$2, reason: invalid class name */
     class AnonymousClass2 extends ViewPropertyAnimatorListenerAdapter {
         AnonymousClass2() {
         }
@@ -134,7 +134,7 @@ public class WindowDecorActionBar extends ActionBar implements ActionBarOverlayL
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.WindowDecorActionBar$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.WindowDecorActionBar$3, reason: invalid class name */
     class AnonymousClass3 implements ViewPropertyAnimatorUpdateListener {
         AnonymousClass3() {
         }
@@ -196,7 +196,7 @@ public class WindowDecorActionBar extends ActionBar implements ActionBarOverlayL
         typedArrayObtainStyledAttributes.recycle();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private DecorToolbar getDecorToolbar(View view) {
         if (view instanceof DecorToolbar) {
             return (DecorToolbar) view;

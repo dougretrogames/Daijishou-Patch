@@ -7,7 +7,7 @@ import android.util.Property;
 import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
 import androidx.vectordrawable.graphics.drawable.Animatable2Compat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class LinearIndeterminateContiguousAnimatorDelegate extends IndeterminateAnimatorDelegate<ObjectAnimator> {
     private static final Property<LinearIndeterminateContiguousAnimatorDelegate, Float> ANIMATION_FRACTION = new AnonymousClass2(Float.class, "animationFraction");
     private static final int DURATION_PER_CYCLE_IN_MS = 333;
@@ -56,7 +56,7 @@ final class LinearIndeterminateContiguousAnimatorDelegate extends IndeterminateA
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.LinearIndeterminateContiguousAnimatorDelegate$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.LinearIndeterminateContiguousAnimatorDelegate$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }
@@ -119,7 +119,7 @@ final class LinearIndeterminateContiguousAnimatorDelegate extends IndeterminateA
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public float getAnimationFraction() {
         return this.animationFraction;
     }
@@ -132,7 +132,7 @@ final class LinearIndeterminateContiguousAnimatorDelegate extends IndeterminateA
         this.drawable.invalidateSelf();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.LinearIndeterminateContiguousAnimatorDelegate$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.LinearIndeterminateContiguousAnimatorDelegate$2, reason: invalid class name */
     class AnonymousClass2 extends Property<LinearIndeterminateContiguousAnimatorDelegate, Float> {
         AnonymousClass2(Class cls, String str) {
             super(cls, str);

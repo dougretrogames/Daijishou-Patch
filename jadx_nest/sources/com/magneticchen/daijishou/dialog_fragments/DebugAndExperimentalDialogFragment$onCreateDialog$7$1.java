@@ -16,8 +16,8 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: DebugAndExperimentalDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DebugAndExperimentalDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.DebugAndExperimentalDialogFragment$onCreateDialog$7$1", f = "DebugAndExperimentalDialogFragment.kt", i = {}, l = {127, 128, 129}, m = "invokeSuspendImpl", n = {}, s = {})
 final class DebugAndExperimentalDialogFragment$onCreateDialog$7$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -26,7 +26,7 @@ final class DebugAndExperimentalDialogFragment$onCreateDialog$7$1 extends com.ma
     int label;
     final /* synthetic */ DebugAndExperimentalDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     DebugAndExperimentalDialogFragment$onCreateDialog$7$1(Lazy<DaijishouSynchronizationModel> lazy, ProgressDialogFragment progressDialogFragment, DebugAndExperimentalDialogFragment debugAndExperimentalDialogFragment, Continuation<?> continuation) {
         super(2, continuation);
         this.$daijishouSynchronization$delegate = lazy;
@@ -95,8 +95,8 @@ final class DebugAndExperimentalDialogFragment$onCreateDialog$7$1 extends com.ma
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DebugAndExperimentalDialogFragment$onCreateDialog$7$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DebugAndExperimentalDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DebugAndExperimentalDialogFragment$onCreateDialog$7$1$1, reason: invalid class name */
+    /* INFO: compiled from: DebugAndExperimentalDialogFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.DebugAndExperimentalDialogFragment$onCreateDialog$7$1$1", f = "DebugAndExperimentalDialogFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -104,7 +104,7 @@ final class DebugAndExperimentalDialogFragment$onCreateDialog$7$1 extends com.ma
         int label;
         final /* synthetic */ DebugAndExperimentalDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(ProgressDialogFragment progressDialogFragment, DebugAndExperimentalDialogFragment debugAndExperimentalDialogFragment, Continuation<?> continuation) {
             super(2, continuation);
             this.$progressDialogFragment = progressDialogFragment;

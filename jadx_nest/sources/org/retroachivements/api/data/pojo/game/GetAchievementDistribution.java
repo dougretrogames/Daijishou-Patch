@@ -6,12 +6,12 @@ import java.util.Map;
 import java.util.Set;
 import kotlin.Metadata;
 
-/* JADX INFO: compiled from: GetAchievementDistribution.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: GetAchievementDistribution.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u00002\u00020\u0001:\u0001\u0003B\u0005¢\u0006\u0002\u0010\u0002¨\u0006\u0004"}, d2 = {"Lorg/retroachivements/api/data/pojo/game/GetAchievementDistribution;", "", "()V", "Response", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class GetAchievementDistribution {
 
-    /* JADX INFO: compiled from: GetAchievementDistribution.kt */
+    /* INFO: compiled from: GetAchievementDistribution.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u001e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001j\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0003`\u0004B\u0005¢\u0006\u0002\u0010\u0005¨\u0006\u0006"}, d2 = {"Lorg/retroachivements/api/data/pojo/game/GetAchievementDistribution$Response;", "Ljava/util/HashMap;", "", "", "Lkotlin/collections/HashMap;", "()V", "api-kotlin"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Response extends HashMap<String, Long> {
         @Override // java.util.HashMap, java.util.AbstractMap, java.util.Map

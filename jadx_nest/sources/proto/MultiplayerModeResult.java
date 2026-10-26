@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public final class MultiplayerModeResult extends GeneratedMessage implements MultiplayerModeResultOrBuilder {
     private static final MultiplayerModeResult DEFAULT_INSTANCE;
     public static final int MULTIPLAYERMODES_FIELD_NUMBER = 1;
@@ -138,18 +138,18 @@ public final class MultiplayerModeResult extends GeneratedMessage implements Mul
         return DEFAULT_INSTANCE.toBuilder();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static Builder newBuilder(MultiplayerModeResult multiplayerModeResult) {
         return (Builder) DEFAULT_INSTANCE.toBuilder().mergeFrom((Message) multiplayerModeResult);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.protobuf.MessageLite, com.google.protobuf.Message
     public Builder toBuilder() {
         return this == DEFAULT_INSTANCE ? new Builder((MultiplayerModeResultIA) null) : (Builder) new Builder((MultiplayerModeResultIA) null).mergeFrom((Message) this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent builderParent) {
         return new Builder(builderParent, null);
@@ -439,7 +439,7 @@ public final class MultiplayerModeResult extends GeneratedMessage implements Mul
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: proto.MultiplayerModeResult$1, reason: invalid class name */
+    /* INFO: renamed from: proto.MultiplayerModeResult$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<MultiplayerModeResult> {
         AnonymousClass1() {
         }

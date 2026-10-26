@@ -12,7 +12,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class KeyEventDispatcher {
     private static boolean sActionBarFieldsFetched = false;
     private static Method sActionBarOnMenuKeyMethod = null;

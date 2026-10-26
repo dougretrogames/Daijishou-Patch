@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 public interface MessageLite extends MessageLiteOrBuilder {
 
@@ -15,7 +15,7 @@ public interface MessageLite extends MessageLiteOrBuilder {
 
         Builder clear();
 
-        /* JADX INFO: renamed from: clone */
+        /* INFO: renamed from: clone */
         Builder m3448clone();
 
         boolean mergeDelimitedFrom(InputStream input) throws IOException;

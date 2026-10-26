@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class ArrayTable<R, C, V> extends AbstractTable<R, C, V> implements Serializable {
     private static final long serialVersionUID = 0;
@@ -69,7 +69,7 @@ public final class ArrayTable<R, C, V> extends AbstractTable<R, C, V> implements
         eraseAll();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private ArrayTable(Table<R, C, ? extends V> table) {
         this(table.rowKeySet(), table.columnKeySet());
         putAll(table);
@@ -128,7 +128,7 @@ public final class ArrayTable<R, C, V> extends AbstractTable<R, C, V> implements
             return this.keyIndex.isEmpty();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.ArrayTable$ArrayMap$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.ArrayTable$ArrayMap$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractMapEntry<K, V> {
             final /* synthetic */ int val$index;
 
@@ -159,13 +159,13 @@ public final class ArrayTable<R, C, V> extends AbstractTable<R, C, V> implements
             return new AnonymousClass1(index);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.ArrayTable$ArrayMap$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.ArrayTable$ArrayMap$2, reason: invalid class name */
         class AnonymousClass2 extends AbstractIndexedListIterator<Map.Entry<K, V>> {
             AnonymousClass2(int size) {
                 super(size);
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIndexedListIterator
             public Map.Entry<K, V> get(final int index) {
                 return ArrayMap.this.getEntry(index);
@@ -347,13 +347,13 @@ public final class ArrayTable<R, C, V> extends AbstractTable<R, C, V> implements
         return super.cellSet();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ArrayTable$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ArrayTable$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractIndexedListIterator<Table.Cell<R, C, V>> {
         AnonymousClass1(int size) {
             super(size);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.AbstractIndexedListIterator
         public Table.Cell<R, C, V> get(final int index) {
             return ArrayTable.this.getCell(index);
@@ -365,7 +365,7 @@ public final class ArrayTable<R, C, V> extends AbstractTable<R, C, V> implements
         return new AnonymousClass1(size());
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ArrayTable$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ArrayTable$2, reason: invalid class name */
     class AnonymousClass2 extends Tables.AbstractCell<R, C, V> {
         final int columnIndex;
         final int rowIndex;
@@ -394,12 +394,12 @@ public final class ArrayTable<R, C, V> extends AbstractTable<R, C, V> implements
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Table.Cell<R, C, V> getCell(final int index) {
         return new AnonymousClass2(index);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @CheckForNull
     public V getValue(int index) {
         return at(index / this.columnList.size(), index % this.columnList.size());
@@ -471,13 +471,13 @@ public final class ArrayTable<R, C, V> extends AbstractTable<R, C, V> implements
             return "Column";
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.ArrayTable.ArrayMap
         public Map<R, V> getValue(int index) {
             return new Column(index);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.ArrayTable.ArrayMap
         public Map<R, V> setValue(int index, Map<R, V> newValue) {
             throw new UnsupportedOperationException();
@@ -556,13 +556,13 @@ public final class ArrayTable<R, C, V> extends AbstractTable<R, C, V> implements
             return "Row";
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.ArrayTable.ArrayMap
         public Map<C, V> getValue(int index) {
             return new Row(index);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.ArrayTable.ArrayMap
         public Map<C, V> setValue(int index, Map<C, V> newValue) {
             throw new UnsupportedOperationException();
@@ -580,7 +580,7 @@ public final class ArrayTable<R, C, V> extends AbstractTable<R, C, V> implements
         return super.values();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ArrayTable$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ArrayTable$3, reason: invalid class name */
     class AnonymousClass3 extends AbstractIndexedListIterator<V> {
         AnonymousClass3(int size) {
             super(size);

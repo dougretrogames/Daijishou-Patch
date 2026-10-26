@@ -8,7 +8,7 @@ import java.util.concurrent.TimeoutException;
 import javax.annotation.CheckForNull;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class AbstractService implements Service {
     private static final ListenerCallQueue.Event<Service.Listener> STARTING_EVENT = new AnonymousClass1();
@@ -34,7 +34,7 @@ public abstract class AbstractService implements Service {
 
     protected abstract void doStop();
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.AbstractService$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.AbstractService$1, reason: invalid class name */
     class AnonymousClass1 implements ListenerCallQueue.Event<Service.Listener> {
         AnonymousClass1() {
         }
@@ -49,7 +49,7 @@ public abstract class AbstractService implements Service {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.AbstractService$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.AbstractService$2, reason: invalid class name */
     class AnonymousClass2 implements ListenerCallQueue.Event<Service.Listener> {
         AnonymousClass2() {
         }
@@ -64,7 +64,7 @@ public abstract class AbstractService implements Service {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.AbstractService$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.AbstractService$3, reason: invalid class name */
     class AnonymousClass3 implements ListenerCallQueue.Event<Service.Listener> {
         final /* synthetic */ Service.State val$from;
 
@@ -86,7 +86,7 @@ public abstract class AbstractService implements Service {
         return new AnonymousClass3(from);
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.AbstractService$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.AbstractService$4, reason: invalid class name */
     class AnonymousClass4 implements ListenerCallQueue.Event<Service.Listener> {
         final /* synthetic */ Service.State val$from;
 
@@ -215,7 +215,7 @@ public abstract class AbstractService implements Service {
         return this;
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.AbstractService$6, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.AbstractService$6, reason: invalid class name */
     static /* synthetic */ class AnonymousClass6 {
         static final /* synthetic */ int[] $SwitchMap$com$google$common$util$concurrent$Service$State;
 
@@ -451,7 +451,7 @@ public abstract class AbstractService implements Service {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.AbstractService$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.AbstractService$5, reason: invalid class name */
     class AnonymousClass5 implements ListenerCallQueue.Event<Service.Listener> {
         final /* synthetic */ Throwable val$cause;
         final /* synthetic */ Service.State val$from;

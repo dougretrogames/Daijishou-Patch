@@ -60,7 +60,7 @@ import org.eclipse.jgit.transport.SshConstants;
 import org.eclipse.jgit.transport.WalkEncryption;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ExifInterface {
     public static final short ALTITUDE_ABOVE_SEA_LEVEL = 0;
     public static final short ALTITUDE_BELOW_SEA_LEVEL = 1;
@@ -762,8 +762,8 @@ public class ExifInterface {
             return "(" + ExifInterface.IFD_FORMAT_NAMES[this.format] + ", data length:" + this.bytes.length + ")";
         }
 
-        /* JADX WARN: Code duplicated, block: B:105:0x014c A[EXC_TOP_SPLITTER, SYNTHETIC] */
-        /* JADX WARN: Not initialized variable reg: 3, insn: 0x0149: MOVE (r2 I:??[OBJECT, ARRAY]) = (r3 I:??[OBJECT, ARRAY]), block:B:94:0x0149 */
+        /* WARN: Code duplicated, block: B:105:0x014c A[EXC_TOP_SPLITTER, SYNTHETIC] */
+        /* WARN: Not initialized variable reg: 3, insn: 0x0149: MOVE (r2 I:??[OBJECT, ARRAY]) = (r3 I:??[OBJECT, ARRAY]), block:B:94:0x0149 */
         Object getValue(ByteOrder byteOrder) throws Throwable {
             ByteOrderedDataInputStream byteOrderedDataInputStream;
             ByteOrderedDataInputStream byteOrderedDataInputStream2;
@@ -1175,7 +1175,7 @@ public class ExifInterface {
         this(inputStream, 0);
     }
 
-    /* JADX WARN: Code duplicated, block: B:19:0x0065  */
+    /* WARN: Code duplicated, block: B:19:0x0065  */
     public ExifInterface(InputStream inputStream, int i) throws IOException {
         ExifTag[][] exifTagArr = EXIF_TAGS;
         this.mAttributes = new HashMap[exifTagArr.length];
@@ -1214,7 +1214,7 @@ public class ExifInterface {
         loadAttributes(inputStream);
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public static boolean isSupportedMimeType(String str) {
         if (str == null) {
             throw new NullPointerException("mimeType shouldn't be null");
@@ -1778,9 +1778,9 @@ public class ExifInterface {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:66:0x00e9 A[Catch: all -> 0x0111, Exception -> 0x0114, TryCatch #19 {Exception -> 0x0114, all -> 0x0111, blocks: (B:64:0x00e5, B:66:0x00e9, B:68:0x00ff, B:67:0x00f8), top: B:130:0x00e5 }] */
-    /* JADX WARN: Code duplicated, block: B:67:0x00f8 A[Catch: all -> 0x0111, Exception -> 0x0114, TryCatch #19 {Exception -> 0x0114, all -> 0x0111, blocks: (B:64:0x00e5, B:66:0x00e9, B:68:0x00ff, B:67:0x00f8), top: B:130:0x00e5 }] */
-    /* JADX WARN: Code duplicated, block: B:90:0x0147  */
+    /* WARN: Code duplicated, block: B:66:0x00e9 A[Catch: all -> 0x0111, Exception -> 0x0114, TryCatch #19 {Exception -> 0x0114, all -> 0x0111, blocks: (B:64:0x00e5, B:66:0x00e9, B:68:0x00ff, B:67:0x00f8), top: B:130:0x00e5 }] */
+    /* WARN: Code duplicated, block: B:67:0x00f8 A[Catch: all -> 0x0111, Exception -> 0x0114, TryCatch #19 {Exception -> 0x0114, all -> 0x0111, blocks: (B:64:0x00e5, B:66:0x00e9, B:68:0x00ff, B:67:0x00f8), top: B:130:0x00e5 }] */
+    /* WARN: Code duplicated, block: B:90:0x0147  */
     public void saveAttributes() throws Throwable {
         FileOutputStream fileOutputStream;
         FileInputStream fileInputStream;
@@ -2015,27 +2015,27 @@ public class ExifInterface {
         return null;
     }
 
-    /* JADX WARN: Code duplicated, block: B:57:0x00ab  */
-    /* JADX WARN: Code duplicated, block: B:63:0x00b6  */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v1, types: [byte[]] */
-    /* JADX WARN: Type inference failed for: r1v11 */
-    /* JADX WARN: Type inference failed for: r1v12 */
-    /* JADX WARN: Type inference failed for: r1v14 */
-    /* JADX WARN: Type inference failed for: r1v15 */
-    /* JADX WARN: Type inference failed for: r1v16 */
-    /* JADX WARN: Type inference failed for: r1v17 */
-    /* JADX WARN: Type inference failed for: r1v18 */
-    /* JADX WARN: Type inference failed for: r1v2 */
-    /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r1v4, types: [java.io.Closeable] */
-    /* JADX WARN: Type inference failed for: r1v5, types: [android.content.res.AssetManager$AssetInputStream, java.io.Closeable, java.io.InputStream] */
-    /* JADX WARN: Type inference failed for: r1v6, types: [java.io.Closeable, java.io.InputStream] */
-    /* JADX WARN: Type inference failed for: r1v7 */
-    /* JADX WARN: Type inference failed for: r2v0 */
-    /* JADX WARN: Type inference failed for: r2v1 */
-    /* JADX WARN: Type inference failed for: r2v2, types: [java.io.Closeable] */
-    /* JADX WARN: Type inference failed for: r2v3 */
+    /* WARN: Code duplicated, block: B:57:0x00ab  */
+    /* WARN: Code duplicated, block: B:63:0x00b6  */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r1v1, types: [byte[]] */
+    /* WARN: Type inference failed for: r1v11 */
+    /* WARN: Type inference failed for: r1v12 */
+    /* WARN: Type inference failed for: r1v14 */
+    /* WARN: Type inference failed for: r1v15 */
+    /* WARN: Type inference failed for: r1v16 */
+    /* WARN: Type inference failed for: r1v17 */
+    /* WARN: Type inference failed for: r1v18 */
+    /* WARN: Type inference failed for: r1v2 */
+    /* WARN: Type inference failed for: r1v3 */
+    /* WARN: Type inference failed for: r1v4, types: [java.io.Closeable] */
+    /* WARN: Type inference failed for: r1v5, types: [android.content.res.AssetManager$AssetInputStream, java.io.Closeable, java.io.InputStream] */
+    /* WARN: Type inference failed for: r1v6, types: [java.io.Closeable, java.io.InputStream] */
+    /* WARN: Type inference failed for: r1v7 */
+    /* WARN: Type inference failed for: r2v0 */
+    /* WARN: Type inference failed for: r2v1 */
+    /* WARN: Type inference failed for: r2v2, types: [java.io.Closeable] */
+    /* WARN: Type inference failed for: r2v3 */
     public byte[] getThumbnailBytes() throws Throwable {
         FileDescriptor fileDescriptor;
         ?? r1;
@@ -2685,26 +2685,26 @@ public class ExifInterface {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:34:0x00b4 A[FALL_THROUGH] */
-    /* JADX WARN: Code duplicated, block: B:36:0x00bd  */
-    /* JADX WARN: Code duplicated, block: B:37:0x00c0  */
-    /* JADX WARN: Code duplicated, block: B:40:0x00d6  */
-    /* JADX WARN: Code duplicated, block: B:41:0x00d9  */
-    /* JADX WARN: Code duplicated, block: B:63:0x0176 A[LOOP:0: B:10:0x0035->B:63:0x0176, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:81:0x017d A[SYNTHETIC] */
-    /*  JADX ERROR: UnsupportedOperationException in pass: RegionMakerVisitor
+    /* WARN: Code duplicated, block: B:34:0x00b4 A[FALL_THROUGH] */
+    /* WARN: Code duplicated, block: B:36:0x00bd  */
+    /* WARN: Code duplicated, block: B:37:0x00c0  */
+    /* WARN: Code duplicated, block: B:40:0x00d6  */
+    /* WARN: Code duplicated, block: B:41:0x00d9  */
+    /* WARN: Code duplicated, block: B:63:0x0176 A[LOOP:0: B:10:0x0035->B:63:0x0176, LOOP_END] */
+    /* WARN: Code duplicated, block: B:81:0x017d A[SYNTHETIC] */
+    /* ERROR: UnsupportedOperationException in pass: RegionMakerVisitor
         java.lang.UnsupportedOperationException
         	at java.base/java.util.Collections$UnmodifiableCollection.add(Collections.java:1092)
-        	at jadx.core.dex.visitors.regions.maker.SwitchRegionMaker$1.leaveRegion(SwitchRegionMaker.java:419)
-        	at jadx.core.dex.visitors.regions.DepthRegionTraversal.traverseInternal(DepthRegionTraversal.java:91)
-        	at jadx.core.dex.visitors.regions.DepthRegionTraversal.traverse(DepthRegionTraversal.java:31)
-        	at jadx.core.dex.visitors.regions.maker.SwitchRegionMaker.insertBreaksForCase(SwitchRegionMaker.java:399)
-        	at jadx.core.dex.visitors.regions.maker.SwitchRegionMaker.insertBreaks(SwitchRegionMaker.java:89)
-        	at jadx.core.dex.visitors.regions.PostProcessRegions.leaveRegion(PostProcessRegions.java:31)
-        	at jadx.core.dex.visitors.regions.DepthRegionTraversal.traverseInternal(DepthRegionTraversal.java:91)
-        	at jadx.core.dex.visitors.regions.DepthRegionTraversal.traverse(DepthRegionTraversal.java:27)
-        	at jadx.core.dex.visitors.regions.PostProcessRegions.process(PostProcessRegions.java:21)
-        	at jadx.core.dex.visitors.regions.RegionMakerVisitor.visit(RegionMakerVisitor.java:31)
+        	at decompiler.core.dex.visitors.regions.maker.SwitchRegionMaker$1.leaveRegion(SwitchRegionMaker.java:419)
+        	at decompiler.core.dex.visitors.regions.DepthRegionTraversal.traverseInternal(DepthRegionTraversal.java:91)
+        	at decompiler.core.dex.visitors.regions.DepthRegionTraversal.traverse(DepthRegionTraversal.java:31)
+        	at decompiler.core.dex.visitors.regions.maker.SwitchRegionMaker.insertBreaksForCase(SwitchRegionMaker.java:399)
+        	at decompiler.core.dex.visitors.regions.maker.SwitchRegionMaker.insertBreaks(SwitchRegionMaker.java:89)
+        	at decompiler.core.dex.visitors.regions.PostProcessRegions.leaveRegion(PostProcessRegions.java:31)
+        	at decompiler.core.dex.visitors.regions.DepthRegionTraversal.traverseInternal(DepthRegionTraversal.java:91)
+        	at decompiler.core.dex.visitors.regions.DepthRegionTraversal.traverse(DepthRegionTraversal.java:27)
+        	at decompiler.core.dex.visitors.regions.PostProcessRegions.process(PostProcessRegions.java:21)
+        	at decompiler.core.dex.visitors.regions.RegionMakerVisitor.visit(RegionMakerVisitor.java:31)
         */
     private void getJpegAttributes(androidx.exifinterface.media.ExifInterface.ByteOrderedDataInputStream r22, int r23, int r24) throws java.lang.Throwable {
         /*
@@ -2862,7 +2862,7 @@ public class ExifInterface {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.exifinterface.media.ExifInterface$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.exifinterface.media.ExifInterface$1, reason: invalid class name */
     class AnonymousClass1 extends MediaDataSource {
         long mPosition;
         final /* synthetic */ SeekableByteOrderedDataInputStream val$in;
@@ -3455,38 +3455,38 @@ public class ExifInterface {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:102:0x02bc  */
-    /* JADX WARN: Code duplicated, block: B:104:0x02c6  */
-    /* JADX WARN: Code duplicated, block: B:113:0x02f2  */
-    /* JADX WARN: Code duplicated, block: B:140:0x02f5 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:46:0x0127  */
-    /* JADX WARN: Code duplicated, block: B:47:0x012c  */
-    /* JADX WARN: Code duplicated, block: B:49:0x0132  */
-    /* JADX WARN: Code duplicated, block: B:51:0x0138  */
-    /* JADX WARN: Code duplicated, block: B:54:0x014f  */
-    /* JADX WARN: Code duplicated, block: B:56:0x015d  */
-    /* JADX WARN: Code duplicated, block: B:57:0x0160  */
-    /* JADX WARN: Code duplicated, block: B:59:0x0163  */
-    /* JADX WARN: Code duplicated, block: B:63:0x01a9  */
-    /* JADX WARN: Code duplicated, block: B:65:0x01b4  */
-    /* JADX WARN: Code duplicated, block: B:68:0x01c8  */
-    /* JADX WARN: Code duplicated, block: B:71:0x01e9 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:72:0x01eb  */
-    /* JADX WARN: Code duplicated, block: B:74:0x01ef A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:75:0x01f1  */
-    /* JADX WARN: Code duplicated, block: B:77:0x01f5  */
-    /* JADX WARN: Code duplicated, block: B:81:0x0201  */
-    /* JADX WARN: Code duplicated, block: B:82:0x0206  */
-    /* JADX WARN: Code duplicated, block: B:83:0x020b  */
-    /* JADX WARN: Code duplicated, block: B:86:0x0212  */
-    /* JADX WARN: Code duplicated, block: B:89:0x0229  */
-    /* JADX WARN: Code duplicated, block: B:91:0x0236  */
-    /* JADX WARN: Code duplicated, block: B:92:0x0241 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:93:0x0243  */
-    /* JADX WARN: Code duplicated, block: B:94:0x0266 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:95:0x0268  */
-    /* JADX WARN: Code duplicated, block: B:97:0x0281  */
-    /* JADX WARN: Code duplicated, block: B:99:0x02b0  */
+    /* WARN: Code duplicated, block: B:102:0x02bc  */
+    /* WARN: Code duplicated, block: B:104:0x02c6  */
+    /* WARN: Code duplicated, block: B:113:0x02f2  */
+    /* WARN: Code duplicated, block: B:140:0x02f5 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:46:0x0127  */
+    /* WARN: Code duplicated, block: B:47:0x012c  */
+    /* WARN: Code duplicated, block: B:49:0x0132  */
+    /* WARN: Code duplicated, block: B:51:0x0138  */
+    /* WARN: Code duplicated, block: B:54:0x014f  */
+    /* WARN: Code duplicated, block: B:56:0x015d  */
+    /* WARN: Code duplicated, block: B:57:0x0160  */
+    /* WARN: Code duplicated, block: B:59:0x0163  */
+    /* WARN: Code duplicated, block: B:63:0x01a9  */
+    /* WARN: Code duplicated, block: B:65:0x01b4  */
+    /* WARN: Code duplicated, block: B:68:0x01c8  */
+    /* WARN: Code duplicated, block: B:71:0x01e9 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:72:0x01eb  */
+    /* WARN: Code duplicated, block: B:74:0x01ef A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:75:0x01f1  */
+    /* WARN: Code duplicated, block: B:77:0x01f5  */
+    /* WARN: Code duplicated, block: B:81:0x0201  */
+    /* WARN: Code duplicated, block: B:82:0x0206  */
+    /* WARN: Code duplicated, block: B:83:0x020b  */
+    /* WARN: Code duplicated, block: B:86:0x0212  */
+    /* WARN: Code duplicated, block: B:89:0x0229  */
+    /* WARN: Code duplicated, block: B:91:0x0236  */
+    /* WARN: Code duplicated, block: B:92:0x0241 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:93:0x0243  */
+    /* WARN: Code duplicated, block: B:94:0x0266 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:95:0x0268  */
+    /* WARN: Code duplicated, block: B:97:0x0281  */
+    /* WARN: Code duplicated, block: B:99:0x02b0  */
     private void readImageFileDirectory(SeekableByteOrderedDataInputStream seekableByteOrderedDataInputStream, int i) throws IOException {
         int i2;
         ExifTag exifTag;

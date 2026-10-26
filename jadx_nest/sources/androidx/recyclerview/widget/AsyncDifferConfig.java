@@ -3,7 +3,7 @@ package androidx.recyclerview.widget;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class AsyncDifferConfig<T> {
     private final Executor mBackgroundThreadExecutor;
     private final DiffUtil.ItemCallback<T> mDiffCallback;

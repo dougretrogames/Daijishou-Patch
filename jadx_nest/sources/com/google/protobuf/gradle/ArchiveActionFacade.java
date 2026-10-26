@@ -5,7 +5,7 @@ import org.gradle.api.Project;
 import org.gradle.api.file.FileTree;
 import org.gradle.api.internal.file.FileOperations;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public interface ArchiveActionFacade {
     FileTree tarTree(Object obj);
 

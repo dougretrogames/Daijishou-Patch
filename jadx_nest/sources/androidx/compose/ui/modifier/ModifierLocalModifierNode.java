@@ -11,8 +11,8 @@ import androidx.compose.ui.node.NodeKind;
 import androidx.exifinterface.media.ExifInterface;
 import kotlin.Metadata;
 
-/* JADX INFO: compiled from: ModifierLocalModifierNode.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: ModifierLocalModifierNode.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0004\bf\u0018\u00002\u00020\u00012\u00020\u0002J)\u0010\f\u001a\u00020\r\"\u0004\b\u0000\u0010\b2\f\u0010\u000e\u001a\b\u0012\u0004\u0012\u0002H\b0\t2\u0006\u0010\u000f\u001a\u0002H\bH\u0016¢\u0006\u0002\u0010\u0010R\u0014\u0010\u0003\u001a\u00020\u00048VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006R$\u0010\u0007\u001a\u0002H\b\"\u0004\b\u0000\u0010\b*\b\u0012\u0004\u0012\u0002H\b0\t8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\n\u0010\u000bø\u0001\u0000\u0082\u0002\u0006\n\u0004\b!0\u0001¨\u0006\u0011À\u0006\u0001"}, d2 = {"Landroidx/compose/ui/modifier/ModifierLocalModifierNode;", "Landroidx/compose/ui/modifier/ModifierLocalReadScope;", "Landroidx/compose/ui/node/DelegatableNode;", "providedValues", "Landroidx/compose/ui/modifier/ModifierLocalMap;", "getProvidedValues", "()Landroidx/compose/ui/modifier/ModifierLocalMap;", "current", ExifInterface.GPS_DIRECTION_TRUE, "Landroidx/compose/ui/modifier/ModifierLocal;", "getCurrent", "(Landroidx/compose/ui/modifier/ModifierLocal;)Ljava/lang/Object;", "provide", "", "key", "value", "(Landroidx/compose/ui/modifier/ModifierLocal;Ljava/lang/Object;)V", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public interface ModifierLocalModifierNode extends ModifierLocalReadScope, DelegatableNode {
     default ModifierLocalMap getProvidedValues() {
@@ -29,30 +29,30 @@ public interface ModifierLocalModifierNode extends ModifierLocalReadScope, Deleg
         getProvidedValues().mo1914set$ui_release(key, value);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r3v10, types: [androidx.compose.ui.Modifier$Node] */
-    /* JADX WARN: Type inference failed for: r3v11, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r3v12 */
-    /* JADX WARN: Type inference failed for: r3v13 */
-    /* JADX WARN: Type inference failed for: r3v14 */
-    /* JADX WARN: Type inference failed for: r3v15 */
-    /* JADX WARN: Type inference failed for: r3v16 */
-    /* JADX WARN: Type inference failed for: r3v17 */
-    /* JADX WARN: Type inference failed for: r3v6 */
-    /* JADX WARN: Type inference failed for: r3v7, types: [androidx.compose.ui.Modifier$Node] */
-    /* JADX WARN: Type inference failed for: r3v9 */
-    /* JADX WARN: Type inference failed for: r5v0 */
-    /* JADX WARN: Type inference failed for: r5v1 */
-    /* JADX WARN: Type inference failed for: r5v10 */
-    /* JADX WARN: Type inference failed for: r5v11 */
-    /* JADX WARN: Type inference failed for: r5v2 */
-    /* JADX WARN: Type inference failed for: r5v3, types: [androidx.compose.runtime.collection.MutableVector] */
-    /* JADX WARN: Type inference failed for: r5v4 */
-    /* JADX WARN: Type inference failed for: r5v5 */
-    /* JADX WARN: Type inference failed for: r5v6, types: [androidx.compose.runtime.collection.MutableVector] */
-    /* JADX WARN: Type inference failed for: r5v8 */
-    /* JADX WARN: Type inference failed for: r5v9 */
-    /* JADX WARN: Type inference failed for: r6v6 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r3v10, types: [androidx.compose.ui.Modifier$Node] */
+    /* WARN: Type inference failed for: r3v11, types: [java.lang.Object] */
+    /* WARN: Type inference failed for: r3v12 */
+    /* WARN: Type inference failed for: r3v13 */
+    /* WARN: Type inference failed for: r3v14 */
+    /* WARN: Type inference failed for: r3v15 */
+    /* WARN: Type inference failed for: r3v16 */
+    /* WARN: Type inference failed for: r3v17 */
+    /* WARN: Type inference failed for: r3v6 */
+    /* WARN: Type inference failed for: r3v7, types: [androidx.compose.ui.Modifier$Node] */
+    /* WARN: Type inference failed for: r3v9 */
+    /* WARN: Type inference failed for: r5v0 */
+    /* WARN: Type inference failed for: r5v1 */
+    /* WARN: Type inference failed for: r5v10 */
+    /* WARN: Type inference failed for: r5v11 */
+    /* WARN: Type inference failed for: r5v2 */
+    /* WARN: Type inference failed for: r5v3, types: [androidx.compose.runtime.collection.MutableVector] */
+    /* WARN: Type inference failed for: r5v4 */
+    /* WARN: Type inference failed for: r5v5 */
+    /* WARN: Type inference failed for: r5v6, types: [androidx.compose.runtime.collection.MutableVector] */
+    /* WARN: Type inference failed for: r5v8 */
+    /* WARN: Type inference failed for: r5v9 */
+    /* WARN: Type inference failed for: r6v6 */
     @Override // androidx.compose.ui.modifier.ModifierLocalReadScope
     default <T> T getCurrent(ModifierLocal<T> modifierLocal) {
         NodeChain nodes;

@@ -1,6 +1,6 @@
 package androidx.leanback.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class DiffCallback<Value> {
     public abstract boolean areContentsTheSame(Value value, Value value2);
 

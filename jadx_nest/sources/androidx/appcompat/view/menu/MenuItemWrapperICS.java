@@ -16,7 +16,7 @@ import android.widget.FrameLayout;
 import androidx.core.internal.view.SupportMenuItem;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MenuItemWrapperICS extends BaseMenuWrapper implements MenuItem {
     static final String LOG_TAG = "MenuItemWrapper";
     private Method mSetExclusiveCheckableMethod;
@@ -451,7 +451,7 @@ public class MenuItemWrapperICS extends BaseMenuWrapper implements MenuItem {
     static class CollapsibleActionViewWrapper extends FrameLayout implements androidx.appcompat.view.CollapsibleActionView {
         final CollapsibleActionView mWrappedView;
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         CollapsibleActionViewWrapper(View view) {
             super(view.getContext());
             this.mWrappedView = (CollapsibleActionView) view;

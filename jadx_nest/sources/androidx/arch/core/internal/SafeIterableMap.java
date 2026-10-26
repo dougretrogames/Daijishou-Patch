@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.WeakHashMap;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class SafeIterableMap<K, V> implements Iterable<Map.Entry<K, V>> {
     private Entry<K, V> mEnd;
     private final WeakHashMap<SupportRemove<K, V>, Boolean> mIterators = new WeakHashMap<>();

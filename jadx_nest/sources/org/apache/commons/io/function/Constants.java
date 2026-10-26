@@ -2,7 +2,7 @@ package org.apache.commons.io.function;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class Constants {
     static final IOBiConsumer IO_BI_CONSUMER = new Constants$$ExternalSyntheticLambda0();
     static final IORunnable IO_RUNNABLE = new Constants$$ExternalSyntheticLambda1();

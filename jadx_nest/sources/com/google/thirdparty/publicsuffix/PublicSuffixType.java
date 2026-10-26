@@ -2,7 +2,7 @@ package com.google.thirdparty.publicsuffix;
 
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public enum PublicSuffixType {
     PRIVATE(AbstractJsonLexerKt.COLON, AbstractJsonLexerKt.COMMA),
     REGISTRY('!', '?');

@@ -1,6 +1,6 @@
 package org.eclipse.jgit.util;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Stats {
     private int n = 0;
     private double avg = 0.0d;

@@ -1,6 +1,6 @@
 package io.opencensus.stats;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_AggregationData_SumDataLong extends AggregationData.SumDataLong {
     private final long sum;
 

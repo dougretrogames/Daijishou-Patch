@@ -8,7 +8,7 @@ import androidx.core.view.ViewCompat;
 import androidx.dynamicanimation.animation.DynamicAnimation;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements AnimationHandler.AnimationFrameCallback {
     public static final float MIN_VISIBLE_CHANGE_ALPHA = 0.00390625f;
     public static final float MIN_VISIBLE_CHANGE_PIXELS = 1.0f;
@@ -69,7 +69,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$1, reason: invalid class name */
     static class AnonymousClass1 extends ViewProperty {
         AnonymousClass1(String str) {
             super(str, null);
@@ -86,7 +86,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$2, reason: invalid class name */
     static class AnonymousClass2 extends ViewProperty {
         AnonymousClass2(String str) {
             super(str, null);
@@ -103,7 +103,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$3, reason: invalid class name */
     static class AnonymousClass3 extends ViewProperty {
         AnonymousClass3(String str) {
             super(str, null);
@@ -120,7 +120,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$4, reason: invalid class name */
     static class AnonymousClass4 extends ViewProperty {
         AnonymousClass4(String str) {
             super(str, null);
@@ -137,7 +137,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$5, reason: invalid class name */
     static class AnonymousClass5 extends ViewProperty {
         AnonymousClass5(String str) {
             super(str, null);
@@ -154,7 +154,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$6, reason: invalid class name */
     static class AnonymousClass6 extends ViewProperty {
         AnonymousClass6(String str) {
             super(str, null);
@@ -171,7 +171,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$7, reason: invalid class name */
     static class AnonymousClass7 extends ViewProperty {
         AnonymousClass7(String str) {
             super(str, null);
@@ -188,7 +188,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$8, reason: invalid class name */
     static class AnonymousClass8 extends ViewProperty {
         AnonymousClass8(String str) {
             super(str, null);
@@ -205,7 +205,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$9, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$9, reason: invalid class name */
     static class AnonymousClass9 extends ViewProperty {
         AnonymousClass9(String str) {
             super(str, null);
@@ -222,7 +222,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$10, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$10, reason: invalid class name */
     static class AnonymousClass10 extends ViewProperty {
         AnonymousClass10(String str) {
             super(str, null);
@@ -239,7 +239,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$11, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$11, reason: invalid class name */
     static class AnonymousClass11 extends ViewProperty {
         AnonymousClass11(String str) {
             super(str, null);
@@ -256,7 +256,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$12, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$12, reason: invalid class name */
     static class AnonymousClass12 extends ViewProperty {
         AnonymousClass12(String str) {
             super(str, null);
@@ -273,7 +273,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$13, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$13, reason: invalid class name */
     static class AnonymousClass13 extends ViewProperty {
         AnonymousClass13(String str) {
             super(str, null);
@@ -290,7 +290,7 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         }
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$14, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$14, reason: invalid class name */
     static class AnonymousClass14 extends ViewProperty {
         AnonymousClass14(String str) {
             super(str, null);
@@ -330,11 +330,11 @@ public abstract class DynamicAnimation<T extends DynamicAnimation<T>> implements
         this.mMinVisibleChange = 1.0f;
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$15, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.DynamicAnimation$15, reason: invalid class name */
     class AnonymousClass15 extends FloatPropertyCompat {
         final /* synthetic */ FloatValueHolder val$floatValueHolder;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass15(String str, FloatValueHolder floatValueHolder) {
             super(str);
             this.val$floatValueHolder = floatValueHolder;

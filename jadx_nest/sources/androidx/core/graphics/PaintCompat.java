@@ -8,7 +8,7 @@ import android.graphics.Rect;
 import android.os.Build;
 import androidx.core.util.Pair;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class PaintCompat {
     private static final String EM_STRING = "m";
     private static final String TOFU_STRING = "\udfffd";

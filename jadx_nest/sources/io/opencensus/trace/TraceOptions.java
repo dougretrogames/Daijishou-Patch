@@ -4,7 +4,7 @@ import io.opencensus.internal.Utils;
 import java.util.Arrays;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class TraceOptions {
     private static final int BASE16_SIZE = 2;
     public static final TraceOptions DEFAULT = fromByte((byte) 0);

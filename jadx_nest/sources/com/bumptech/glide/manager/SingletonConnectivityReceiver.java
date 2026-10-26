@@ -17,7 +17,7 @@ import java.util.Iterator;
 import java.util.Set;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class SingletonConnectivityReceiver {
     private static final String TAG = "ConnectivityMonitor";
     private static volatile SingletonConnectivityReceiver instance;
@@ -50,7 +50,7 @@ final class SingletonConnectivityReceiver {
         this.frameworkConnectivityMonitor = new FrameworkConnectivityMonitorPostApi24(GlideSuppliers.memorize(new AnonymousClass1(context)), new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$1, reason: invalid class name */
     class AnonymousClass1 implements GlideSuppliers.GlideSupplier<ConnectivityManager> {
         final /* synthetic */ Context val$context;
 
@@ -58,14 +58,14 @@ final class SingletonConnectivityReceiver {
             this.val$context = context;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.bumptech.glide.util.GlideSuppliers.GlideSupplier
         public ConnectivityManager get() {
             return (ConnectivityManager) this.val$context.getSystemService("connectivity");
         }
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$2, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$2, reason: invalid class name */
     class AnonymousClass2 implements ConnectivityMonitor.ConnectivityListener {
         AnonymousClass2() {
         }
@@ -114,7 +114,7 @@ final class SingletonConnectivityReceiver {
         final ConnectivityMonitor.ConnectivityListener listener;
         private final ConnectivityManager.NetworkCallback networkCallback = new AnonymousClass1();
 
-        /* JADX INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPostApi24$1, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPostApi24$1, reason: invalid class name */
         class AnonymousClass1 extends ConnectivityManager.NetworkCallback {
             AnonymousClass1() {
             }
@@ -129,7 +129,7 @@ final class SingletonConnectivityReceiver {
                 postOnConnectivityChange(false);
             }
 
-            /* JADX INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPostApi24$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPostApi24$1$1, reason: invalid class name and collision with other inner class name */
             class RunnableC00281 implements Runnable {
                 final /* synthetic */ boolean val$newState;
 
@@ -191,7 +191,7 @@ final class SingletonConnectivityReceiver {
         volatile boolean isRegistered;
         final ConnectivityMonitor.ConnectivityListener listener;
 
-        /* JADX INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPreApi24$1, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPreApi24$1, reason: invalid class name */
         class AnonymousClass1 extends BroadcastReceiver {
             AnonymousClass1() {
             }
@@ -208,7 +208,7 @@ final class SingletonConnectivityReceiver {
             this.listener = connectivityListener;
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPreApi24$2, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPreApi24$2, reason: invalid class name */
         class AnonymousClass2 implements Runnable {
             AnonymousClass2() {
             }
@@ -235,7 +235,7 @@ final class SingletonConnectivityReceiver {
             return true;
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPreApi24$3, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPreApi24$3, reason: invalid class name */
         class AnonymousClass3 implements Runnable {
             AnonymousClass3() {
             }
@@ -254,7 +254,7 @@ final class SingletonConnectivityReceiver {
             EXECUTOR.execute(new AnonymousClass3());
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPreApi24$4, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPreApi24$4, reason: invalid class name */
         class AnonymousClass4 implements Runnable {
             AnonymousClass4() {
             }
@@ -278,7 +278,7 @@ final class SingletonConnectivityReceiver {
             EXECUTOR.execute(new AnonymousClass4());
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPreApi24$5, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.manager.SingletonConnectivityReceiver$FrameworkConnectivityMonitorPreApi24$5, reason: invalid class name */
         class AnonymousClass5 implements Runnable {
             final /* synthetic */ boolean val$isConnected;
 

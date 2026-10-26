@@ -11,7 +11,7 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.Interpolator;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class AutoScrollHelper implements View.OnTouchListener {
     private static final int DEFAULT_ACTIVATION_DELAY = ViewConfiguration.getTapTimeout();
     private static final int DEFAULT_EDGE_TYPE = 1;
@@ -162,7 +162,7 @@ public abstract class AutoScrollHelper implements View.OnTouchListener {
         return this;
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x0016  */
+    /* WARN: Code duplicated, block: B:13:0x0016  */
     @Override // android.view.View.OnTouchListener
     public boolean onTouch(View view, MotionEvent motionEvent) {
         if (!this.mEnabled) {

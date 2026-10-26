@@ -3,8 +3,8 @@ package androidx.activity;
 import android.window.OnBackInvokedCallback;
 import kotlin.jvm.functions.Function0;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class OnBackPressedDispatcher$Api33Impl$$ExternalSyntheticLambda0 implements OnBackInvokedCallback {
     public final /* synthetic */ Function0 f$0;
 

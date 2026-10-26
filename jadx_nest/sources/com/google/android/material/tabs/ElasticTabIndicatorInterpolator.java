@@ -5,7 +5,7 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import com.google.android.material.animation.AnimationUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ElasticTabIndicatorInterpolator extends TabIndicatorInterpolator {
     ElasticTabIndicatorInterpolator() {
     }

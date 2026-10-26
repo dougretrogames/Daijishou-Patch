@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.util.Iterator;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class MultiInputStream extends InputStream {
 

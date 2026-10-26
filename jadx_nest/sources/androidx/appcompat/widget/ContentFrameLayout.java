@@ -8,7 +8,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.FrameLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ContentFrameLayout extends FrameLayout {
     private OnAttachListener mAttachListener;
     private final Rect mDecorPadding;
@@ -53,12 +53,12 @@ public class ContentFrameLayout extends FrameLayout {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:23:0x0050  */
-    /* JADX WARN: Code duplicated, block: B:24:0x0068  */
-    /* JADX WARN: Code duplicated, block: B:41:0x0094  */
-    /* JADX WARN: Code duplicated, block: B:60:0x00e2  */
-    /* JADX WARN: Code duplicated, block: B:62:0x00ee  */
-    /* JADX WARN: Code duplicated, block: B:63:0x00f3  */
+    /* WARN: Code duplicated, block: B:23:0x0050  */
+    /* WARN: Code duplicated, block: B:24:0x0068  */
+    /* WARN: Code duplicated, block: B:41:0x0094  */
+    /* WARN: Code duplicated, block: B:60:0x00e2  */
+    /* WARN: Code duplicated, block: B:62:0x00ee  */
+    /* WARN: Code duplicated, block: B:63:0x00f3  */
     @Override // android.widget.FrameLayout, android.view.View
     protected void onMeasure(int i, int i2) {
         boolean z;

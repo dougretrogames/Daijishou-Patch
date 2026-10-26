@@ -8,7 +8,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.RejectedExecutionException;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 final class SequentialExecutor implements Executor {
     private static final LazyLogger log = new LazyLogger(SequentialExecutor.class);
@@ -71,7 +71,7 @@ final class SequentialExecutor implements Executor {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.SequentialExecutor$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.SequentialExecutor$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ Runnable val$task;
 
@@ -113,40 +113,40 @@ final class SequentialExecutor implements Executor {
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:44:0x003d A[SYNTHETIC] */
-        /* JADX WARN: Code restructure failed: missing block: B:16:0x0045, code lost:
+        /* WARN: Code duplicated, block: B:44:0x003d A[SYNTHETIC] */
+        /* WARN: Code restructure failed: missing block: B:16:0x0045, code lost:
         
             if (r1 == false) goto L48;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:21:0x004e, code lost:
+        /* WARN: Code restructure failed: missing block: B:21:0x004e, code lost:
         
             r1 = r1 | java.lang.Thread.interrupted();
          */
-        /* JADX WARN: Code restructure failed: missing block: B:22:0x0050, code lost:
+        /* WARN: Code restructure failed: missing block: B:22:0x0050, code lost:
         
             r8.task.run();
          */
-        /* JADX WARN: Code restructure failed: missing block: B:25:0x0058, code lost:
+        /* WARN: Code restructure failed: missing block: B:25:0x0058, code lost:
         
             r0 = move-exception;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:27:0x005a, code lost:
+        /* WARN: Code restructure failed: missing block: B:27:0x005a, code lost:
         
             r3 = move-exception;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:28:0x005b, code lost:
+        /* WARN: Code restructure failed: missing block: B:28:0x005b, code lost:
         
             com.google.common.util.concurrent.SequentialExecutor.log.get().log(java.util.logging.Level.SEVERE, "Exception while executing runnable " + r8.task, (java.lang.Throwable) r3);
          */
-        /* JADX WARN: Code restructure failed: missing block: B:30:0x007e, code lost:
+        /* WARN: Code restructure failed: missing block: B:30:0x007e, code lost:
         
             r8.task = null;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:31:0x0080, code lost:
+        /* WARN: Code restructure failed: missing block: B:31:0x0080, code lost:
         
             throw r0;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:48:?, code lost:
+        /* WARN: Code restructure failed: missing block: B:48:?, code lost:
         
             return;
          */

@@ -5,7 +5,7 @@ import android.util.Log;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Trace {
     static final int MAX_TRACE_LABEL_LENGTH = 127;
     static final String TAG = "Trace";

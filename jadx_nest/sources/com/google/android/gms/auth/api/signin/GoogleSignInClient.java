@@ -13,8 +13,8 @@ import com.google.android.gms.common.internal.PendingResultUtil;
 import com.google.android.gms.dynamite.DynamiteModule;
 import com.google.android.gms.tasks.Task;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class GoogleSignInClient extends GoogleApi<GoogleSignInOptions> {
     private static final zba zbb = new zba(null);

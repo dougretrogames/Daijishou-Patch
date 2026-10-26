@@ -3,7 +3,7 @@ package com.bumptech.glide.request.target;
 import android.graphics.drawable.Drawable;
 import com.bumptech.glide.request.Request;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public abstract class BaseTarget<Z> implements Target<Z> {
     private Request request;

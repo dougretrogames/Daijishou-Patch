@@ -5,7 +5,7 @@ import android.view.SubMenu;
 import androidx.appcompat.view.menu.MenuBuilder;
 import androidx.appcompat.view.menu.MenuItemImpl;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class NavigationMenu extends MenuBuilder {
     public NavigationMenu(Context context) {
         super(context);

@@ -7,7 +7,7 @@ import org.apache.http.Header;
 import org.apache.http.HttpEntity;
 import org.apache.http.message.BasicHeader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractHttpEntity implements HttpEntity {
     protected static final int OUTPUT_BUFFER_SIZE = 4096;
     protected boolean chunked;

@@ -6,7 +6,7 @@ import org.eclipse.jgit.internal.storage.io.BlockSource;
 import org.eclipse.jgit.internal.storage.pack.PackExt;
 import org.eclipse.jgit.internal.storage.reftable.ReftableReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsReftable extends BlockBasedFile {
     public DfsReftable(DfsPackDescription dfsPackDescription) {
         this(DfsBlockCache.getInstance(), dfsPackDescription);
@@ -30,7 +30,7 @@ public class DfsReftable extends BlockBasedFile {
         return new ReftableReader(new CacheSource(this, this.cache, dfsReader));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class CacheSource extends BlockSource {
         private final DfsBlockCache cache;
         private ReadableChannel ch;
@@ -81,8 +81,8 @@ public class DfsReftable extends BlockBasedFile {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
-        /* JADX INFO: renamed from: open, reason: merged with bridge method [inline-methods] */
+        /* INFO: Access modifiers changed from: private */
+        /* INFO: renamed from: open, reason: merged with bridge method [inline-methods] */
         public ReadableChannel m5676xa4b6974c() throws IOException {
             if (this.ch == null) {
                 this.ch = this.ctx.db.openFile(this.file.desc, this.file.ext);

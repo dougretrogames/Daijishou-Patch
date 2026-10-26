@@ -5,7 +5,7 @@ import com.google.common.base.Supplier;
 import com.google.common.collect.ForwardingSet;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class InvalidatableSet<E> extends ForwardingSet<E> {
     private final Set<E> delegate;
@@ -16,7 +16,7 @@ final class InvalidatableSet<E> extends ForwardingSet<E> {
         return new InvalidatableSet<>((Set) Preconditions.checkNotNull(delegate), (Supplier) Preconditions.checkNotNull(validator), (Supplier) Preconditions.checkNotNull(errorMessage));
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
     public Set<E> delegate() {
         validate();

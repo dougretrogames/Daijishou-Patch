@@ -69,7 +69,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicReference;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuListener, LifecycleOwner, ViewModelStoreOwner, HasDefaultViewModelProviderFactory, SavedStateRegistryOwner, ActivityResultCaller {
     static final int ACTIVITY_CREATED = 4;
     static final int ATTACHED = 0;
@@ -197,7 +197,7 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
     public void onViewCreated(View view, Bundle bundle) {
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.Fragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.Fragment$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -219,7 +219,7 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.Fragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.Fragment$2, reason: invalid class name */
     class AnonymousClass2 extends OnPreAttachedListener {
         AnonymousClass2() {
             super(null);
@@ -357,7 +357,7 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
             parcel.writeBundle(this.mState);
         }
 
-        /* JADX INFO: renamed from: androidx.fragment.app.Fragment$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.fragment.app.Fragment$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
@@ -367,7 +367,7 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
                 return new SavedState(parcel, null);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);
@@ -1178,7 +1178,7 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.Fragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.Fragment$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         AnonymousClass3() {
         }
@@ -1213,7 +1213,7 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.Fragment$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.Fragment$4, reason: invalid class name */
     class AnonymousClass4 implements Runnable {
         final /* synthetic */ SpecialEffectsController val$controller;
 
@@ -1360,7 +1360,7 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
         return str.equals(this.mWho) ? this : this.mChildFragmentManager.findFragmentByWho(str);
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.Fragment$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.Fragment$5, reason: invalid class name */
     class AnonymousClass5 extends FragmentContainer {
         AnonymousClass5() {
         }
@@ -1413,7 +1413,7 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
         this.mLifecycleRegistry.handleLifecycleEvent(Lifecycle.Event.ON_CREATE);
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.Fragment$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.Fragment$6, reason: invalid class name */
     class AnonymousClass6 implements LifecycleEventObserver {
         AnonymousClass6() {
         }
@@ -1450,7 +1450,7 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
         this.mViewLifecycleOwner = null;
     }
 
-    /* JADX INFO: renamed from: lambda$performCreateView$0$androidx-fragment-app-Fragment, reason: not valid java name */
+    /* INFO: renamed from: lambda$performCreateView$0$androidx-fragment-app-Fragment, reason: not valid java name */
     /* synthetic */ void m3186lambda$performCreateView$0$androidxfragmentappFragment() {
         this.mViewLifecycleOwner.performRestore(this.mSavedViewRegistryState);
         this.mSavedViewRegistryState = null;
@@ -1833,7 +1833,7 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
         return animationInfo.mEnterTransitionPostponed;
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.Fragment$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.Fragment$7, reason: invalid class name */
     class AnonymousClass7 implements Function<Void, ActivityResultRegistry> {
         AnonymousClass7() {
         }
@@ -1852,7 +1852,7 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
         return prepareCallInternal(activityResultContract, new AnonymousClass7(), activityResultCallback);
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.Fragment$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.Fragment$8, reason: invalid class name */
     class AnonymousClass8 implements Function<Void, ActivityResultRegistry> {
         final /* synthetic */ ActivityResultRegistry val$registry;
 
@@ -1880,14 +1880,14 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
         return new AnonymousClass10(atomicReference, activityResultContract);
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.Fragment$9, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.Fragment$9, reason: invalid class name */
     class AnonymousClass9 extends OnPreAttachedListener {
         final /* synthetic */ ActivityResultCallback val$callback;
         final /* synthetic */ ActivityResultContract val$contract;
         final /* synthetic */ AtomicReference val$ref;
         final /* synthetic */ Function val$registryProvider;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass9(Function function, AtomicReference atomicReference, ActivityResultContract activityResultContract, ActivityResultCallback activityResultCallback) {
             super(null);
             this.val$registryProvider = function;
@@ -1903,8 +1903,8 @@ public class Fragment implements ComponentCallbacks, View.OnCreateContextMenuLis
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [I] */
-    /* JADX INFO: renamed from: androidx.fragment.app.Fragment$10, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [I] */
+    /* INFO: renamed from: androidx.fragment.app.Fragment$10, reason: invalid class name */
     class AnonymousClass10<I> extends ActivityResultLauncher<I> {
         final /* synthetic */ ActivityResultContract val$contract;
         final /* synthetic */ AtomicReference val$ref;

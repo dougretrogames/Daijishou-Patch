@@ -37,7 +37,7 @@ import androidx.savedstate.SavedStateRegistryOwner;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FragmentActivity extends ComponentActivity implements ActivityCompat.OnRequestPermissionsResultCallback, ActivityCompat.RequestPermissionsRequestCodeValidator {
     static final String LIFECYCLE_TAG = "android:support:lifecycle";
     boolean mCreated;
@@ -77,24 +77,24 @@ public class FragmentActivity extends ComponentActivity implements ActivityCompa
         addOnContextAvailableListener(new FragmentActivity$$ExternalSyntheticLambda3(this));
     }
 
-    /* JADX INFO: renamed from: lambda$init$0$androidx-fragment-app-FragmentActivity, reason: not valid java name */
+    /* INFO: renamed from: lambda$init$0$androidx-fragment-app-FragmentActivity, reason: not valid java name */
     /* synthetic */ Bundle m3187lambda$init$0$androidxfragmentappFragmentActivity() {
         markFragmentsCreated();
         this.mFragmentLifecycleRegistry.handleLifecycleEvent(Lifecycle.Event.ON_STOP);
         return new Bundle();
     }
 
-    /* JADX INFO: renamed from: lambda$init$1$androidx-fragment-app-FragmentActivity, reason: not valid java name */
+    /* INFO: renamed from: lambda$init$1$androidx-fragment-app-FragmentActivity, reason: not valid java name */
     /* synthetic */ void m3188lambda$init$1$androidxfragmentappFragmentActivity(Configuration configuration) {
         this.mFragments.noteStateNotSaved();
     }
 
-    /* JADX INFO: renamed from: lambda$init$2$androidx-fragment-app-FragmentActivity, reason: not valid java name */
+    /* INFO: renamed from: lambda$init$2$androidx-fragment-app-FragmentActivity, reason: not valid java name */
     /* synthetic */ void m3189lambda$init$2$androidxfragmentappFragmentActivity(Intent intent) {
         this.mFragments.noteStateNotSaved();
     }
 
-    /* JADX INFO: renamed from: lambda$init$3$androidx-fragment-app-FragmentActivity, reason: not valid java name */
+    /* INFO: renamed from: lambda$init$3$androidx-fragment-app-FragmentActivity, reason: not valid java name */
     /* synthetic */ void m3190lambda$init$3$androidxfragmentappFragmentActivity(Context context) {
         this.mFragments.attachHost(null);
     }
@@ -320,7 +320,7 @@ public class FragmentActivity extends ComponentActivity implements ActivityCompa
             return FragmentActivity.this.getLayoutInflater().cloneInContext(FragmentActivity.this);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // androidx.fragment.app.FragmentHostCallback
         public FragmentActivity onGetHost() {
             return FragmentActivity.this;
@@ -342,7 +342,7 @@ public class FragmentActivity extends ComponentActivity implements ActivityCompa
         }
 
         @Override // androidx.fragment.app.FragmentHostCallback
-        /* JADX INFO: renamed from: onGetWindowAnimations */
+        /* INFO: renamed from: onGetWindowAnimations */
         public int getWindowAnimations() {
             Window window = FragmentActivity.this.getWindow();
             if (window == null) {

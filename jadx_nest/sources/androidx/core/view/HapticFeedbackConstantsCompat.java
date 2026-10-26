@@ -4,7 +4,7 @@ import android.os.Build;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class HapticFeedbackConstantsCompat {
     public static final int CLOCK_TICK = 4;
     public static final int CONFIRM = 16;
@@ -39,8 +39,8 @@ public final class HapticFeedbackConstantsCompat {
     public @interface HapticFeedbackType {
     }
 
-    /* JADX WARN: Code duplicated, block: B:24:0x002e  */
-    /* JADX WARN: Code duplicated, block: B:25:0x0030  */
+    /* WARN: Code duplicated, block: B:24:0x002e  */
+    /* WARN: Code duplicated, block: B:25:0x0030  */
     static int getFeedbackConstantOrFallback(int i) {
         if (i == -1) {
             return -1;

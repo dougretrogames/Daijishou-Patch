@@ -17,7 +17,7 @@ import java.util.Properties;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class LogFactory {
     public static final String DIAGNOSTICS_DEST_PROPERTY = "org.apache.commons.logging.diagnostics.dest";
     public static final String FACTORY_DEFAULT = "org.apache.commons.logging.impl.LogFactoryImpl";
@@ -266,7 +266,7 @@ public abstract class LogFactory {
         return directGetContextClassLoader();
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.logging.LogFactory$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.logging.LogFactory$1, reason: invalid class name */
     final class AnonymousClass1 implements PrivilegedAction {
         AnonymousClass1() {
         }
@@ -306,7 +306,7 @@ public abstract class LogFactory {
         }
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.logging.LogFactory$2, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.logging.LogFactory$2, reason: invalid class name */
     final class AnonymousClass2 implements PrivilegedAction {
         private final /* synthetic */ ClassLoader val$classLoader;
         private final /* synthetic */ String val$factoryClass;
@@ -467,7 +467,7 @@ public abstract class LogFactory {
         return false;
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.logging.LogFactory$3, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.logging.LogFactory$3, reason: invalid class name */
     final class AnonymousClass3 implements PrivilegedAction {
         private final /* synthetic */ ClassLoader val$loader;
         private final /* synthetic */ String val$name;
@@ -491,7 +491,7 @@ public abstract class LogFactory {
         return (InputStream) AccessController.doPrivileged(new AnonymousClass3(classLoader, str));
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.logging.LogFactory$4, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.logging.LogFactory$4, reason: invalid class name */
     final class AnonymousClass4 implements PrivilegedAction {
         private final /* synthetic */ ClassLoader val$loader;
         private final /* synthetic */ String val$name;
@@ -524,7 +524,7 @@ public abstract class LogFactory {
         return (Enumeration) AccessController.doPrivileged(new AnonymousClass4(classLoader, str));
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.logging.LogFactory$5, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.logging.LogFactory$5, reason: invalid class name */
     final class AnonymousClass5 implements PrivilegedAction {
         private final /* synthetic */ URL val$url;
 
@@ -532,7 +532,7 @@ public abstract class LogFactory {
             this.val$url = url;
         }
 
-        /* JADX WARN: Code duplicated, block: B:39:0x0072 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:39:0x0072 A[EXC_TOP_SPLITTER, SYNTHETIC] */
         @Override // java.security.PrivilegedAction
         public Object run() throws Throwable {
             InputStream inputStream;
@@ -607,9 +607,9 @@ public abstract class LogFactory {
         return (Properties) AccessController.doPrivileged(new AnonymousClass5(url));
     }
 
-    /* JADX WARN: Code duplicated, block: B:43:0x0105 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:44:0x0107  */
-    /* JADX WARN: Code duplicated, block: B:45:0x0120  */
+    /* WARN: Code duplicated, block: B:43:0x0105 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:44:0x0107  */
+    /* WARN: Code duplicated, block: B:45:0x0120  */
     private static final Properties getConfigurationFile(ClassLoader classLoader, String str) {
         URL url;
         Properties properties = null;
@@ -680,7 +680,7 @@ public abstract class LogFactory {
         }
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.logging.LogFactory$6, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.logging.LogFactory$6, reason: invalid class name */
     final class AnonymousClass6 implements PrivilegedAction {
         private final /* synthetic */ String val$def;
         private final /* synthetic */ String val$key;
@@ -722,7 +722,7 @@ public abstract class LogFactory {
         return diagnosticsStream != null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void logDiagnostic(String str) {
         PrintStream printStream = diagnosticsStream;
         if (printStream != null) {

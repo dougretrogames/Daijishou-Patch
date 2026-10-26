@@ -16,7 +16,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.security.AccessControlException;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class DefaultCredentialProvider extends SystemEnvironmentProvider {
     static final String APP_ENGINE_CREDENTIAL_CLASS = "com.google.api.client.googleapis.extensions.appengine.auth.oauth2.AppIdentityCredential$AppEngineCredentialWrapper";
     static final String CLOUDSDK_CONFIG_DIRECTORY = "gcloud";
@@ -75,7 +75,7 @@ class DefaultCredentialProvider extends SystemEnvironmentProvider {
         return getComputeCredential(httpTransport, jsonFactory);
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.googleapis.auth.oauth2.DefaultCredentialProvider$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.googleapis.auth.oauth2.DefaultCredentialProvider$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$api$client$googleapis$auth$oauth2$DefaultCredentialProvider$Environment;
 

@@ -2,7 +2,7 @@ package org.commonmark.parser.delimiter;
 
 import org.commonmark.node.Text;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface DelimiterProcessor {
     char getClosingCharacter();
 

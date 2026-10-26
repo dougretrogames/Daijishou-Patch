@@ -3,7 +3,7 @@ package org.apache.commons.collections4.bloomfilter;
 import java.util.TreeMap;
 import java.util.function.IntPredicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @FunctionalInterface
 public interface CellExtractor extends IndexExtractor {
 
@@ -19,7 +19,7 @@ public interface CellExtractor extends IndexExtractor {
         return this;
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.bloomfilter.CellExtractor$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.bloomfilter.CellExtractor$1, reason: invalid class name */
     class AnonymousClass1 implements CellExtractor {
         TreeMap<CounterCell, CounterCell> counterCells = new TreeMap<>();
         final /* synthetic */ IndexExtractor val$indexExtractor;
@@ -28,7 +28,7 @@ public interface CellExtractor extends IndexExtractor {
             this.val$indexExtractor = indexExtractor;
         }
 
-        /* JADX INFO: renamed from: org.apache.commons.collections4.bloomfilter.CellExtractor$1$CounterCell */
+        /* INFO: renamed from: org.apache.commons.collections4.bloomfilter.CellExtractor$1$CounterCell */
         final class CounterCell implements Comparable<CounterCell> {
             int count;
             final int idx;
@@ -56,7 +56,7 @@ public interface CellExtractor extends IndexExtractor {
             }
         }
 
-        /* JADX INFO: renamed from: lambda$populate$1$org-apache-commons-collections4-bloomfilter-CellExtractor$1, reason: not valid java name */
+        /* INFO: renamed from: lambda$populate$1$org-apache-commons-collections4-bloomfilter-CellExtractor$1, reason: not valid java name */
         /* synthetic */ boolean m5533xb15feafa(int i) {
             CounterCell counterCell = new CounterCell(i, 1);
             CounterCell counterCell2 = this.counterCells.get(counterCell);

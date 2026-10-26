@@ -45,7 +45,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behavior<V> implements MaterialBackHandler {
     private static final int CORNER_ANIMATION_DURATION = 500;
     static final int DEFAULT_SIGNIFICANT_VEL_THRESHOLD = 500;
@@ -524,8 +524,8 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:48:0x0092  */
-    /* JADX WARN: Code duplicated, block: B:51:0x00a9  */
+    /* WARN: Code duplicated, block: B:48:0x0092  */
+    /* WARN: Code duplicated, block: B:51:0x00a9  */
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior
     public void onStopNestedScroll(CoordinatorLayout coordinatorLayout, V v, View view, int i) {
         WeakReference<View> weakReference;
@@ -637,7 +637,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
         updatePeekHeight(z);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void updatePeekHeight(boolean z) {
         V v;
         if (this.viewRef != null) {
@@ -789,7 +789,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ View val$child;
         final /* synthetic */ int val$finalState;
@@ -1049,7 +1049,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         AnonymousClass2() {
         }
@@ -1132,7 +1132,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
         this.interpolatorAnimator.addUpdateListener(new AnonymousClass3());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$3, reason: invalid class name */
     class AnonymousClass3 implements ValueAnimator.AnimatorUpdateListener {
         AnonymousClass3() {
         }
@@ -1153,7 +1153,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$4, reason: invalid class name */
     class AnonymousClass4 implements ViewUtils.OnApplyWindowInsetsListener {
         final /* synthetic */ boolean val$shouldHandleGestureInsets;
 
@@ -1222,7 +1222,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
         return this.velocityTracker.getYVelocity(this.activePointerId);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void startSettling(View view, int i, boolean z) {
         int topOffsetForState = getTopOffsetForState(i);
         ViewDragHelper viewDragHelper = this.viewDragHelper;
@@ -1251,7 +1251,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
         throw new IllegalArgumentException("Invalid state to get top offset: " + i);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$5, reason: invalid class name */
     class AnonymousClass5 extends ViewDragHelper.Callback {
         private long viewCapturedMillis;
 
@@ -1289,8 +1289,8 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
             return view.getTop() > (BottomSheetBehavior.this.parentHeight + BottomSheetBehavior.this.getExpandedOffset()) / 2;
         }
 
-        /* JADX WARN: Code duplicated, block: B:39:0x00b1  */
-        /* JADX WARN: Code duplicated, block: B:6:0x0010  */
+        /* WARN: Code duplicated, block: B:39:0x00b1  */
+        /* WARN: Code duplicated, block: B:6:0x0010  */
         @Override // androidx.customview.widget.ViewDragHelper.Callback
         public void onViewReleased(View view, float f, float f2) {
             int i = 6;
@@ -1383,7 +1383,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
         this.interpolatorAnimator = null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean canBeHiddenByDragging() {
         return isHideable() && isHideableWhenDragging();
     }
@@ -1409,7 +1409,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
             this();
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$StateSettlingTracker$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$StateSettlingTracker$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             AnonymousClass1() {
             }
@@ -1485,12 +1485,12 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
             parcel.writeInt(this.skipCollapsed ? 1 : 0);
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);
@@ -1633,7 +1633,7 @@ public class BottomSheetBehavior<V extends View> extends CoordinatorLayout.Behav
         return ViewCompat.addAccessibilityAction(view, view.getResources().getString(i), createAccessibilityViewCommandForState(i2));
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$6, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetBehavior$6, reason: invalid class name */
     class AnonymousClass6 implements AccessibilityViewCommand {
         final /* synthetic */ int val$state;
 

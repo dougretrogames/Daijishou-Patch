@@ -10,7 +10,7 @@ import org.eclipse.jgit.lib.ObjectInserter;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.TreeFormatter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class LeafBucket extends InMemoryNoteBucket {
     static final int MAX_SIZE = 256;
     private int cnt;
@@ -56,7 +56,7 @@ class LeafBucket extends InMemoryNoteBucket {
         return this.cnt;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.notes.LeafBucket$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.notes.LeafBucket$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<Note> {
         private int idx;
 

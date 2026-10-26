@@ -3,8 +3,8 @@ package androidx.navigation.ui;
 import android.view.View;
 import androidx.navigation.NavController;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class NavigationUI$$ExternalSyntheticLambda3 implements View.OnClickListener {
     public final /* synthetic */ NavController f$0;
     public final /* synthetic */ AppBarConfiguration f$1;

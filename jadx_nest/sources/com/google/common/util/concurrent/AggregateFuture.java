@@ -11,7 +11,7 @@ import java.util.concurrent.Future;
 import java.util.logging.Level;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AggregateFuture<InputT, OutputT> extends AggregateFutureState<OutputT> {
     private static final LazyLogger logger = new LazyLogger(AggregateFuture.class);
@@ -85,7 +85,7 @@ abstract class AggregateFuture<InputT, OutputT> extends AggregateFutureState<Out
         }
     }
 
-    /* JADX INFO: renamed from: lambda$init$0$com-google-common-util-concurrent-AggregateFuture, reason: not valid java name */
+    /* INFO: renamed from: lambda$init$0$com-google-common-util-concurrent-AggregateFuture, reason: not valid java name */
     /* synthetic */ void m3373lambda$init$0$comgooglecommonutilconcurrentAggregateFuture(ListenableFuture listenableFuture, int i) {
         try {
             if (listenableFuture.isCancelled()) {
@@ -127,7 +127,7 @@ abstract class AggregateFuture<InputT, OutputT> extends AggregateFutureState<Out
         addCausalChain(seen, (Throwable) Objects.requireNonNull(tryInternalFastPathGetFailure()));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void collectValueFromNonCancelledFuture(int index, Future<? extends InputT> future) {
         try {
             collectOneValue(index, Futures.getDone(future));
@@ -138,8 +138,8 @@ abstract class AggregateFuture<InputT, OutputT> extends AggregateFutureState<Out
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: decrementCountAndMaybeComplete, reason: merged with bridge method [inline-methods] */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: renamed from: decrementCountAndMaybeComplete, reason: merged with bridge method [inline-methods] */
     public void m3374lambda$init$1$comgooglecommonutilconcurrentAggregateFuture(@CheckForNull ImmutableCollection<? extends Future<? extends InputT>> futuresIfNeedToCollectAtCompletion) {
         int iDecrementRemainingAndGet = decrementRemainingAndGet();
         Preconditions.checkState(iDecrementRemainingAndGet >= 0, "Less than 0 remaining futures");

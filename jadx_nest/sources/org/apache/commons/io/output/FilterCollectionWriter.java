@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import org.apache.commons.io.IOExceptionList;
 import org.apache.commons.io.function.IOConsumer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FilterCollectionWriter extends Writer {
     protected final Collection<Writer> EMPTY_WRITERS;
     protected final Collection<Writer> writers;

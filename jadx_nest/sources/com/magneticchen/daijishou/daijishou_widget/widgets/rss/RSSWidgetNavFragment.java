@@ -52,12 +52,12 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Dispatchers;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: compiled from: RSSWidgetNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: RSSWidgetNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0080\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u0000 *2\u00020\u0001:\u0002*+B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u001f\u001a\u00020\u001aH\u0016J\u0012\u0010 \u001a\u00020!2\b\u0010\"\u001a\u0004\u0018\u00010#H\u0016J&\u0010$\u001a\u0004\u0018\u00010%2\u0006\u0010&\u001a\u00020'2\b\u0010(\u001a\u0004\u0018\u00010)2\b\u0010\"\u001a\u0004\u0018\u00010#H\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\tX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\tX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010\u0016\u001a\u00060\u0017R\u00020\u0000X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u001aX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u001cX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u001eX\u0082.¢\u0006\u0002\n\u0000¨\u0006,"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment;", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetNavFragment;", "()V", "articleList", "", "Lcom/prof18/rssparser/model/RssItem;", "articlesCountButton", "Lcom/google/android/material/chip/Chip;", "articlesFormatString", "", "channel", "Lcom/prof18/rssparser/model/RssChannel;", "daijishouWidgetRepository", "Lcom/magneticchen/daijishou/repositories/DaijishouWidgetRepository;", "noTitleString", "parser", "Lcom/prof18/rssparser/RssParser;", "progressbar", "Lcom/google/android/material/progressindicator/LinearProgressIndicator;", "rSSFeedString", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "recyclerViewAdapter", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment$RSSArticleListAdapter;", "refreshButton", "scrollingOnBackPressed", "", "titleLayout", "Landroidx/constraintlayout/widget/ConstraintLayout;", "titleTextView", "Landroid/widget/TextView;", "onBackPressed", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "Companion", "RSSArticleListAdapter", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class RSSWidgetNavFragment extends WidgetNavFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final Typeface typeface;
     public Chip articlesCountButton;
@@ -96,7 +96,7 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
     }
     public final List<RssItem> articleList = new ArrayList();
 
-    /* JADX INFO: compiled from: RSSWidgetNavFragment.kt */
+    /* INFO: compiled from: RSSWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nR\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u000b"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment$Companion;", "", "()V", "typeface", "Landroid/graphics/Typeface;", "getTypeface", "()Landroid/graphics/Typeface;", "newInstance", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment;", "widgetInstanceId", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -133,12 +133,12 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
         typeface = typefaceDefaultFromStyle;
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x001f  */
-    /* JADX WARN: Code duplicated, block: B:20:0x0036  */
-    /* JADX WARN: Code duplicated, block: B:22:0x003c  */
-    /* JADX WARN: Code duplicated, block: B:25:0x0049  */
-    /* JADX WARN: Code duplicated, block: B:26:0x004d  */
-    /* JADX WARN: Code duplicated, block: B:9:0x001b  */
+    /* WARN: Code duplicated, block: B:11:0x001f  */
+    /* WARN: Code duplicated, block: B:20:0x0036  */
+    /* WARN: Code duplicated, block: B:22:0x003c  */
+    /* WARN: Code duplicated, block: B:25:0x0049  */
+    /* WARN: Code duplicated, block: B:26:0x004d  */
+    /* WARN: Code duplicated, block: B:9:0x001b  */
     @Override // com.magneticchen.daijishou.abstract_fragment_classes.DaijishouFragment
     public boolean onBackPressed() {
         RecyclerView recyclerView;
@@ -210,7 +210,7 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
         return true;
     }
 
-    /* JADX INFO: compiled from: RSSWidgetNavFragment.kt */
+    /* INFO: compiled from: RSSWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\t\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0086\u0004\u0018\u00002\u0010\u0012\f\u0012\n0\u0002R\u00060\u0000R\u00020\u00030\u0001:\u0001!B\u001b\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007¢\u0006\u0002\u0010\tJ\b\u0010\u0014\u001a\u00020\u0010H\u0016J\u0010\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0010H\u0016J \u0010\u0018\u001a\u00020\f2\u000e\u0010\u0019\u001a\n0\u0002R\u00060\u0000R\u00020\u00032\u0006\u0010\u0013\u001a\u00020\u0010H\u0016J \u0010\u001a\u001a\n0\u0002R\u00060\u0000R\u00020\u00032\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u0010H\u0016J\u001a\u0010\u001e\u001a\u00020\f2\u0012\u0010\n\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\f0\u000bJ\u001a\u0010\u001f\u001a\u00020\f2\u0012\u0010\r\u001a\u000e\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\f0\u000bJ/\u0010 \u001a\u00020\f2'\u0010\u000e\u001a#\u0012\u0013\u0012\u00110\u0010¢\u0006\f\b\u0011\u0012\b\b\u0012\u0012\u0004\b\b(\u0013\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\f0\u000fR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u001c\u0010\n\u001a\u0010\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\f\u0018\u00010\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\r\u001a\u0010\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\f\u0018\u00010\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R1\u0010\u000e\u001a%\u0012\u0013\u0012\u00110\u0010¢\u0006\f\b\u0011\u0012\b\b\u0012\u0012\u0004\b\b(\u0013\u0012\u0004\u0012\u00020\b\u0012\u0004\u0012\u00020\f\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\""}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment$RSSArticleListAdapter;", "Landroidx/recyclerview/widget/RecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment$RSSArticleListAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment;", "context", "Landroid/content/Context;", "values", "", "Lcom/prof18/rssparser/model/RssItem;", "(Lcom/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment;Landroid/content/Context;Ljava/util/List;)V", "onItemClickedListener", "Lkotlin/Function1;", "", "onItemLongClickedListener", "onItemSelectedListener", "Lkotlin/Function2;", "", "Lkotlin/ParameterName;", "name", "position", "getItemCount", "getItemId", "", "pos", "onBindViewHolder", "viewHolder", "onCreateViewHolder", "viewGroup", "Landroid/view/ViewGroup;", "viewType", "setOnItemClicked", "setOnItemLongClicked", "setOnItemSelected", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class RSSArticleListAdapter extends RecyclerView.Adapter<RSSArticleListAdapter.ViewHolder> {
         private final Context context;
@@ -228,7 +228,7 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
             this.values = values;
         }
 
-        /* JADX INFO: compiled from: RSSWidgetNavFragment.kt */
+        /* INFO: compiled from: RSSWidgetNavFragment.kt */
         @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0086\u0004\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0011\u0010\t\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\bR\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\u000f\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\b¨\u0006\u0011"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment$RSSArticleListAdapter$ViewHolder;", "Landroidx/recyclerview/widget/RecyclerView$ViewHolder;", "view", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment$RSSArticleListAdapter;Landroid/view/View;)V", "content", "Landroid/widget/TextView;", "getContent", "()Landroid/widget/TextView;", "date", "getDate", "imageView", "Landroid/widget/ImageView;", "getImageView", "()Landroid/widget/ImageView;", "title", "getTitle", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends RecyclerView.ViewHolder {
             private final TextView content;
@@ -237,7 +237,7 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
             final /* synthetic */ RSSArticleListAdapter this$0;
             private final TextView title;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(RSSArticleListAdapter rSSArticleListAdapter, View view) {
                 super(view);
                 Intrinsics.checkNotNullParameter(view, "view");
@@ -437,8 +437,8 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.rss.RSSWidgetNavFragment$onCreateView$1, reason: invalid class name */
-    /* JADX INFO: compiled from: RSSWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.rss.RSSWidgetNavFragment$onCreateView$1, reason: invalid class name */
+    /* INFO: compiled from: RSSWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/daijishou_widget/widgets/rss/RSSWidgetNavFragment$onCreateView$1", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass1 extends RecyclerView.OnScrollListener {
         AnonymousClass1() {
@@ -454,7 +454,7 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$0(RSSWidgetNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         FragmentActivity fragmentActivityRequireActivity = this$0.requireActivity();
@@ -462,8 +462,8 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
         ((MainActivity) fragmentActivityRequireActivity).onBackPressedCallback();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.rss.RSSWidgetNavFragment$onCreateView$3, reason: invalid class name */
-    /* JADX INFO: compiled from: RSSWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.rss.RSSWidgetNavFragment$onCreateView$3, reason: invalid class name */
+    /* INFO: compiled from: RSSWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/prof18/rssparser/model/RssItem;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass3 extends Lambda<Unit> implements Function1<RssItem, Unit> {
         AnonymousClass3() {
@@ -476,7 +476,7 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(RssItem it) {
             Intrinsics.checkNotNullParameter(it, "it");
             String sourceUrl = it.getSourceUrl();
@@ -505,8 +505,8 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.rss.RSSWidgetNavFragment$onCreateView$4, reason: invalid class name */
-    /* JADX INFO: compiled from: RSSWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.rss.RSSWidgetNavFragment$onCreateView$4, reason: invalid class name */
+    /* INFO: compiled from: RSSWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "rssWidgetInstanceEntity", "Lcom/magneticchen/daijishou/daijishou_widget/widget_db/RSSWidgetInstanceEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass4 extends Lambda<Unit> implements Function1<RSSWidgetInstanceEntity, Unit> {
         AnonymousClass4() {
@@ -519,7 +519,7 @@ public final class RSSWidgetNavFragment extends WidgetNavFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(RSSWidgetInstanceEntity rSSWidgetInstanceEntity) {
             if (rSSWidgetInstanceEntity != null) {
                 RSSWidgetNavFragment rSSWidgetNavFragment = RSSWidgetNavFragment.this;

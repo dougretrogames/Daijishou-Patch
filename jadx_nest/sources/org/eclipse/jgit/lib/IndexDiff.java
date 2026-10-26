@@ -30,7 +30,7 @@ import org.eclipse.jgit.treewalk.filter.IndexDiffFilter;
 import org.eclipse.jgit.treewalk.filter.SkipWorkTreeFilter;
 import org.eclipse.jgit.treewalk.filter.TreeFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IndexDiff {
     private static final int INDEX = 1;
     private static final int TREE = 0;
@@ -71,7 +71,7 @@ public class IndexDiff {
 
         private final int stageMask;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static StageState[] valuesCustom() {
             StageState[] stageStateArrValuesCustom = values();
             int length = stageStateArrValuesCustom.length;

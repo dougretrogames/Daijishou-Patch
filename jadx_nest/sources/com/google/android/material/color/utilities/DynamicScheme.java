@@ -1,6 +1,6 @@
 package com.google.android.material.color.utilities;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DynamicScheme {
     public final double contrastLevel;
     public final TonalPalette errorPalette = TonalPalette.fromHueAndChroma(25.0d, 84.0d);

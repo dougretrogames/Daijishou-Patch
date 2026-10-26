@@ -8,7 +8,7 @@ import org.apache.http.HttpRequestInterceptor;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpResponseInterceptor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ImmutableHttpProcessor implements HttpProcessor {
     private final HttpRequestInterceptor[] requestInterceptors;
     private final HttpResponseInterceptor[] responseInterceptors;

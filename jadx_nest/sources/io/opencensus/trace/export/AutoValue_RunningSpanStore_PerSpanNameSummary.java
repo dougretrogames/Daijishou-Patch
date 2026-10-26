@@ -1,6 +1,6 @@
 package io.opencensus.trace.export;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_RunningSpanStore_PerSpanNameSummary extends RunningSpanStore.PerSpanNameSummary {
     private final int numRunningSpans;
 

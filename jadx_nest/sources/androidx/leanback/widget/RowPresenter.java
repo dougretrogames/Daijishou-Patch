@@ -4,7 +4,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.leanback.graphics.ColorOverlayDimmer;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class RowPresenter extends Presenter {
     public static final int SYNC_ACTIVATED_CUSTOM = 0;
     public static final int SYNC_ACTIVATED_TO_EXPANDED = 1;

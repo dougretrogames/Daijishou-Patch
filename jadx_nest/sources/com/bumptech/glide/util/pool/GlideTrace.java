@@ -2,7 +2,7 @@ package com.bumptech.glide.util.pool;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class GlideTrace {
     private static final AtomicInteger COOKIE_CREATOR = null;
     private static final int MAX_LENGTH = 127;

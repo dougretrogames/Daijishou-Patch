@@ -2,8 +2,8 @@ package com.google.android.material.search;
 
 import androidx.core.view.accessibility.AccessibilityManagerCompat;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SearchBar$$ExternalSyntheticLambda1 implements AccessibilityManagerCompat.TouchExplorationStateChangeListener {
     public final /* synthetic */ SearchBar f$0;
 

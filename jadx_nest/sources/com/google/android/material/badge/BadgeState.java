@@ -13,7 +13,7 @@ import com.google.android.material.resources.MaterialResources;
 import com.google.android.material.resources.TextAppearance;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class BadgeState {
     private static final String BADGE_RESOURCE_TAG = "badge";
     final float badgeHeight;
@@ -612,18 +612,18 @@ public final class BadgeState {
             this.autoAdjustToWithinGrandparentBounds = (Boolean) parcel.readSerializable();
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.badge.BadgeState$State$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.badge.BadgeState$State$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<State> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public State createFromParcel(Parcel parcel) {
                 return new State(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public State[] newArray(int i) {
                 return new State[i];

@@ -6,7 +6,7 @@ import android.os.Build;
 import android.util.Property;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewUtils {
     static final Property<View, Rect> CLIP_BOUNDS;
     private static final ViewUtilsApi19 IMPL;
@@ -23,7 +23,7 @@ class ViewUtils {
         CLIP_BOUNDS = new AnonymousClass2(Rect.class, "clipBounds");
     }
 
-    /* JADX INFO: renamed from: androidx.transition.ViewUtils$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ViewUtils$1, reason: invalid class name */
     class AnonymousClass1 extends Property<View, Float> {
         AnonymousClass1(Class cls, String str) {
             super(cls, str);
@@ -40,7 +40,7 @@ class ViewUtils {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.transition.ViewUtils$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.ViewUtils$2, reason: invalid class name */
     class AnonymousClass2 extends Property<View, Rect> {
         AnonymousClass2(Class cls, String str) {
             super(cls, str);

@@ -2,7 +2,7 @@ package io.opencensus.trace;
 
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class EndSpanOptions {
     public static final EndSpanOptions DEFAULT = builder().build();
 

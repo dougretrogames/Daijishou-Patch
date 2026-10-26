@@ -1,7 +1,7 @@
 package com.google.android.gms.internal.fido;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public final class zzh {
     public static final zzbj zza = zzbk.zzb("id");
     public static final zzbj zzb = zzbk.zzb("type");

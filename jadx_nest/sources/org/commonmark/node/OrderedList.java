@@ -1,6 +1,6 @@
 package org.commonmark.node;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class OrderedList extends ListBlock {
     private char delimiter;
     private int startNumber;

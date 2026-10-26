@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 import org.apache.commons.collections4.iterators.EnumerationIterator;
 import org.apache.commons.collections4.iterators.IteratorIterable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EnumerationUtils {
     public static <T> Iterable<T> asIterable(Enumeration<T> enumeration) {
         return new IteratorIterable(new EnumerationIterator(enumeration));

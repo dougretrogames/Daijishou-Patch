@@ -5,7 +5,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.transport.CredentialsProvider;
 import org.eclipse.jgit.transport.Transport;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class TransportCommand<C extends GitCommand, T> extends GitCommand<T> {
     protected CredentialsProvider credentialsProvider;
     protected int timeout;

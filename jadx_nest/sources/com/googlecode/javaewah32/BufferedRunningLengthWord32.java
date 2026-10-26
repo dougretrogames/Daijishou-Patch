@@ -1,6 +1,6 @@
 package com.googlecode.javaewah32;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class BufferedRunningLengthWord32 implements Cloneable {
     protected int NumberOfLiteralWords;
     public boolean RunningBit;
@@ -73,7 +73,7 @@ public final class BufferedRunningLengthWord32 implements Cloneable {
         return "running bit = " + getRunningBit() + " running length = " + getRunningLength() + " number of lit. words " + getNumberOfLiteralWords();
     }
 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public BufferedRunningLengthWord32 m3471clone() throws CloneNotSupportedException {
         BufferedRunningLengthWord32 bufferedRunningLengthWord32 = (BufferedRunningLengthWord32) super.clone();
         bufferedRunningLengthWord32.literalWordOffset = this.literalWordOffset;

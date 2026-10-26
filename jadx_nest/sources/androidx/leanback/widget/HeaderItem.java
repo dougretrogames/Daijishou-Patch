@@ -1,6 +1,6 @@
 package androidx.leanback.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class HeaderItem {
     private CharSequence mContentDescription;
     private CharSequence mDescription;

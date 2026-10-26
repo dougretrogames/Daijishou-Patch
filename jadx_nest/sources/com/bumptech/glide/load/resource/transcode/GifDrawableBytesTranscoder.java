@@ -6,7 +6,7 @@ import com.bumptech.glide.load.resource.bytes.BytesResource;
 import com.bumptech.glide.load.resource.gif.GifDrawable;
 import com.bumptech.glide.util.ByteBufferUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GifDrawableBytesTranscoder implements ResourceTranscoder<GifDrawable, byte[]> {
     @Override // com.bumptech.glide.load.resource.transcode.ResourceTranscoder
     public Resource<byte[]> transcode(Resource<GifDrawable> resource, Options options) {

@@ -14,7 +14,7 @@ import org.apache.http.auth.UsernamePasswordCredentials;
 import org.apache.http.client.CredentialsProvider;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SystemDefaultCredentialsProvider implements CredentialsProvider {
     private static final Map<String, String> SCHEME_MAP;
     private final BasicCredentialsProvider internal = new BasicCredentialsProvider();

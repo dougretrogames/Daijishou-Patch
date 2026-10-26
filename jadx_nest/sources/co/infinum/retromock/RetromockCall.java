@@ -13,7 +13,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class RetromockCall<T> implements Call<T> {
     private final ExecutorService backgroundExecutor;
     private final Behavior behavior;
@@ -48,7 +48,7 @@ final class RetromockCall<T> implements Call<T> {
         this.task = this.backgroundExecutor.submit(new DelayAndEnqueueRunnable(callback));
     }
 
-    /* JADX INFO: renamed from: co.infinum.retromock.RetromockCall$1, reason: invalid class name */
+    /* INFO: renamed from: co.infinum.retromock.RetromockCall$1, reason: invalid class name */
     class AnonymousClass1 implements Callback<T> {
         final /* synthetic */ Callback val$callback;
 
@@ -56,7 +56,7 @@ final class RetromockCall<T> implements Call<T> {
             this.val$callback = callback;
         }
 
-        /* JADX INFO: renamed from: co.infinum.retromock.RetromockCall$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: co.infinum.retromock.RetromockCall$1$1, reason: invalid class name and collision with other inner class name */
         class RunnableC00251 implements Runnable {
             final /* synthetic */ Call val$call;
             final /* synthetic */ Response val$response;
@@ -77,7 +77,7 @@ final class RetromockCall<T> implements Call<T> {
             RetromockCall.this.callbackExecutor.execute(new RunnableC00251(call, response));
         }
 
-        /* JADX INFO: renamed from: co.infinum.retromock.RetromockCall$1$2, reason: invalid class name */
+        /* INFO: renamed from: co.infinum.retromock.RetromockCall$1$2, reason: invalid class name */
         class AnonymousClass2 implements Runnable {
             final /* synthetic */ Call val$call;
             final /* synthetic */ Throwable val$error;
@@ -129,7 +129,7 @@ final class RetromockCall<T> implements Call<T> {
         }
     }
 
-    /* JADX INFO: renamed from: co.infinum.retromock.RetromockCall$2, reason: invalid class name */
+    /* INFO: renamed from: co.infinum.retromock.RetromockCall$2, reason: invalid class name */
     class AnonymousClass2 implements Callback<T> {
         final /* synthetic */ AtomicReference val$errorRef;
         final /* synthetic */ CountDownLatch val$latch;
@@ -210,7 +210,7 @@ final class RetromockCall<T> implements Call<T> {
             }
         }
 
-        /* JADX INFO: renamed from: co.infinum.retromock.RetromockCall$DelayAndEnqueueRunnable$1, reason: invalid class name */
+        /* INFO: renamed from: co.infinum.retromock.RetromockCall$DelayAndEnqueueRunnable$1, reason: invalid class name */
         class AnonymousClass1 implements Callback<T> {
             AnonymousClass1() {
             }

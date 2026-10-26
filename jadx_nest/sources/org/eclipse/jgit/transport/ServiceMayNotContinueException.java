@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import java.io.IOException;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ServiceMayNotContinueException extends IOException {
     private static final int FORBIDDEN = 403;
     private static final long serialVersionUID = 1;

@@ -8,7 +8,7 @@ import com.bumptech.glide.load.engine.Resource;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.util.Util;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class BitmapTransformation implements Transformation<Bitmap> {
     protected abstract Bitmap transform(BitmapPool bitmapPool, Bitmap bitmap, int i, int i2);
 

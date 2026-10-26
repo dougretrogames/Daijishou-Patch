@@ -23,7 +23,7 @@ import org.apache.http.pool.ConnFactory;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicConnFactory implements ConnFactory<HttpHost, HttpClientConnection> {
     private final HttpConnectionFactory<? extends HttpClientConnection> connFactory;
     private final int connectTimeout;
@@ -120,7 +120,7 @@ public class BasicConnFactory implements ConnFactory<HttpHost, HttpClientConnect
         }
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.pool.BasicConnFactory$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.pool.BasicConnFactory$1, reason: invalid class name */
     class AnonymousClass1 implements PrivilegedExceptionAction<Object> {
         final /* synthetic */ InetSocketAddress val$address;
         final /* synthetic */ Socket val$socket;

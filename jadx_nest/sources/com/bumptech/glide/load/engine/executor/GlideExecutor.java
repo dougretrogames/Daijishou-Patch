@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicInteger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class GlideExecutor implements ExecutorService {
     static final String DEFAULT_ANIMATION_EXECUTOR_NAME = "animation";
     static final String DEFAULT_DISK_CACHE_EXECUTOR_NAME = "disk-cache";
@@ -177,7 +177,7 @@ public final class GlideExecutor implements ExecutorService {
 
         void handle(Throwable th);
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.engine.executor.GlideExecutor$UncaughtThrowableStrategy$1, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.load.engine.executor.GlideExecutor$UncaughtThrowableStrategy$1, reason: invalid class name */
         class AnonymousClass1 implements UncaughtThrowableStrategy {
             @Override // com.bumptech.glide.load.engine.executor.GlideExecutor.UncaughtThrowableStrategy
             public void handle(Throwable th) {
@@ -194,7 +194,7 @@ public final class GlideExecutor implements ExecutorService {
             DEFAULT = anonymousClass2;
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.engine.executor.GlideExecutor$UncaughtThrowableStrategy$2, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.load.engine.executor.GlideExecutor$UncaughtThrowableStrategy$2, reason: invalid class name */
         class AnonymousClass2 implements UncaughtThrowableStrategy {
             AnonymousClass2() {
             }
@@ -208,7 +208,7 @@ public final class GlideExecutor implements ExecutorService {
             }
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.engine.executor.GlideExecutor$UncaughtThrowableStrategy$3, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.load.engine.executor.GlideExecutor$UncaughtThrowableStrategy$3, reason: invalid class name */
         class AnonymousClass3 implements UncaughtThrowableStrategy {
             AnonymousClass3() {
             }
@@ -230,7 +230,7 @@ public final class GlideExecutor implements ExecutorService {
             this();
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.engine.executor.GlideExecutor$DefaultPriorityThreadFactory$1, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.load.engine.executor.GlideExecutor$DefaultPriorityThreadFactory$1, reason: invalid class name */
         class AnonymousClass1 extends Thread {
             AnonymousClass1(Runnable runnable) {
                 super(runnable);
@@ -270,7 +270,7 @@ public final class GlideExecutor implements ExecutorService {
             return threadNewThread;
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.engine.executor.GlideExecutor$DefaultThreadFactory$1, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.load.engine.executor.GlideExecutor$DefaultThreadFactory$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             final /* synthetic */ Runnable val$runnable;
 

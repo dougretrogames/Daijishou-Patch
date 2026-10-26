@@ -8,7 +8,7 @@ import android.text.Spanned;
 import androidx.core.text.PrecomputedTextCompat;
 import java.util.stream.IntStream;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class UnprecomputeTextOnModificationSpannable implements Spannable {
     private Spannable mDelegate;
     private boolean mSafeToWrite = false;

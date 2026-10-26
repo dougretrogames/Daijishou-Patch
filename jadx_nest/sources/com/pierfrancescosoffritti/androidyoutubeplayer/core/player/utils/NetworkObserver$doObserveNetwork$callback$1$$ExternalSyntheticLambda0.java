@@ -1,7 +1,7 @@
 package com.pierfrancescosoffritti.androidyoutubeplayer.core.player.utils;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class NetworkObserver$doObserveNetwork$callback$1$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ NetworkObserver f$0;
 

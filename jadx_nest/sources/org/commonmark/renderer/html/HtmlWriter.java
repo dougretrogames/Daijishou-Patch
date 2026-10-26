@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.Map;
 import org.commonmark.internal.util.Escaping;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HtmlWriter {
     private static final Map<String, String> NO_ATTRIBUTES = Collections.emptyMap();
     private final Appendable buffer;

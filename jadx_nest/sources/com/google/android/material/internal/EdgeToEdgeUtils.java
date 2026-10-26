@@ -9,7 +9,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowCompat;
 import com.google.android.material.color.MaterialColors;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class EdgeToEdgeUtils {
     private static final int EDGE_TO_EDGE_BAR_ALPHA = 128;
 

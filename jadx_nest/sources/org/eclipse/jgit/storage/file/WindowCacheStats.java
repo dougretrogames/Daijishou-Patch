@@ -4,7 +4,7 @@ import java.util.Map;
 import javax.management.MXBean;
 import org.eclipse.jgit.internal.storage.file.WindowCache;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @MXBean
 public interface WindowCacheStats {
     long getEvictionCount();

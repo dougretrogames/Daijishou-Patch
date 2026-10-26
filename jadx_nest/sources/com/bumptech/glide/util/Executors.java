@@ -4,7 +4,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Executors {
     private static final Executor MAIN_THREAD_EXECUTOR = new AnonymousClass1();
     private static final Executor MAIN_THREAD_EXECUTOR_FRONT = new AnonymousClass2();
@@ -13,7 +13,7 @@ public final class Executors {
     private Executors() {
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.util.Executors$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.util.Executors$1, reason: invalid class name */
     class AnonymousClass1 implements Executor {
         AnonymousClass1() {
         }
@@ -24,7 +24,7 @@ public final class Executors {
         }
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.util.Executors$2, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.util.Executors$2, reason: invalid class name */
     class AnonymousClass2 implements Executor {
         AnonymousClass2() {
         }
@@ -35,7 +35,7 @@ public final class Executors {
         }
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.util.Executors$3, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.util.Executors$3, reason: invalid class name */
     class AnonymousClass3 implements Executor {
         AnonymousClass3() {
         }

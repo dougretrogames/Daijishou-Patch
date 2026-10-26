@@ -7,8 +7,8 @@ import android.widget.EditText;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 import com.magneticchen.daijishou.daijishou_library_db.PlayerEntity;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class EditPlayerDialogFragment$$ExternalSyntheticLambda3 implements DialogInterface.OnShowListener {
     public final /* synthetic */ AlertDialog f$0;
     public final /* synthetic */ EditText f$1;

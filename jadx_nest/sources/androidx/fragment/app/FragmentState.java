@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import androidx.lifecycle.Lifecycle;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class FragmentState implements Parcelable {
     public static final Parcelable.Creator<FragmentState> CREATOR = new AnonymousClass1();
     final String mClassName;
@@ -149,18 +149,18 @@ final class FragmentState implements Parcelable {
         parcel.writeInt(this.mUserVisibleHint ? 1 : 0);
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentState$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentState$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.Creator<FragmentState> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public FragmentState createFromParcel(Parcel parcel) {
             return new FragmentState(parcel);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public FragmentState[] newArray(int i) {
             return new FragmentState[i];

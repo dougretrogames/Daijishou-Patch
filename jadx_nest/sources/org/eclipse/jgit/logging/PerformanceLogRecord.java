@@ -1,6 +1,6 @@
 package org.eclipse.jgit.logging;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PerformanceLogRecord {
     private long durationMs;
     private String name;

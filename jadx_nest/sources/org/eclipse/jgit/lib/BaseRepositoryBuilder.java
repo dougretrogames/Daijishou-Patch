@@ -21,7 +21,7 @@ import org.eclipse.jgit.util.RawParseUtils;
 import org.eclipse.jgit.util.StringUtils;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BaseRepositoryBuilder<B extends BaseRepositoryBuilder, R extends Repository> {
     private List<File> alternateObjectDirectories;
     private boolean bare;

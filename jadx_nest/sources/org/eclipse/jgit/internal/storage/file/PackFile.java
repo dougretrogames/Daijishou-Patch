@@ -7,7 +7,7 @@ import org.eclipse.jgit.internal.storage.pack.PackExt;
 import org.eclipse.jgit.lib.BranchConfig;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PackFile extends File {
     private static final String PREFIX = "pack-";
     private static final String TMP_GC_PREFIX = ".tmp-";
@@ -15,7 +15,7 @@ public class PackFile extends File {
     private final String base;
     private final boolean hasOldPrefix;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     private final String f121id;
     private final PackExt packExt;
 

@@ -18,7 +18,7 @@ import androidx.fragment.app.strictmode.FragmentStrictMode;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.ViewModelStoreOwner;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class FragmentStateManager {
     static final String ARGUMENTS_KEY = "arguments";
     static final String CHILD_FRAGMENT_MANAGER_KEY = "childFragmentManager";
@@ -136,7 +136,7 @@ class FragmentStateManager {
         return iMin;
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentStateManager$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentStateManager$2, reason: invalid class name */
     static /* synthetic */ class AnonymousClass2 {
         static final /* synthetic */ int[] $SwitchMap$androidx$lifecycle$Lifecycle$State;
 
@@ -461,7 +461,7 @@ class FragmentStateManager {
         this.mFragment.mState = 2;
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentStateManager$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentStateManager$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnAttachStateChangeListener {
         final /* synthetic */ View val$fragmentView;
 

@@ -2,7 +2,7 @@ package org.apache.http.impl.cookie;
 
 import org.apache.http.cookie.CommonCookieAttributeHandler;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RFC6265StrictSpec extends RFC6265CookieSpecBase {
     static final String[] DATE_PATTERNS = {"EEE, dd MMM yyyy HH:mm:ss zzz", "EEE, dd-MMM-yy HH:mm:ss zzz", "EEE MMM d HH:mm:ss yyyy"};
 

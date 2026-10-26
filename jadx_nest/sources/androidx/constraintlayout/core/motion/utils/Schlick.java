@@ -1,6 +1,6 @@
 package androidx.constraintlayout.core.motion.utils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Schlick extends Easing {
     private static final boolean DEBUG = false;
     double mEps;

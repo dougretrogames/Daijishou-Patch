@@ -22,7 +22,7 @@ import org.eclipse.jgit.util.LongList;
 import org.eclipse.jgit.util.NB;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class BlockReader {
     private byte blockType;
     private byte[] buf;
@@ -149,7 +149,7 @@ class BlockReader {
         return new AnonymousClass1(readValueId(), readValueId(), readPersonIdent(), readValueString());
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.reftable.BlockReader$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.reftable.BlockReader$1, reason: invalid class name */
     class AnonymousClass1 implements ReflogEntry {
         private final /* synthetic */ String val$msg;
         private final /* synthetic */ ObjectId val$newId;

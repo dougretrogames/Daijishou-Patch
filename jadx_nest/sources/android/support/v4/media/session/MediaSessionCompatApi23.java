@@ -3,7 +3,7 @@ package android.support.v4.media.session;
 import android.net.Uri;
 import android.os.Bundle;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MediaSessionCompatApi23 {
 
     public interface Callback extends MediaSessionCompatApi21.Callback {

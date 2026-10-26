@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Iterator;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class PairwiseEquivalence<E, T extends E> extends Equivalence<Iterable<T>> implements Serializable {
     private static final long serialVersionUID = 1;
@@ -14,7 +14,7 @@ final class PairwiseEquivalence<E, T extends E> extends Equivalence<Iterable<T>>
         this.elementEquivalence = (Equivalence) Preconditions.checkNotNull(elementEquivalence);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.base.Equivalence
     public boolean doEquivalent(Iterable<T> iterableA, Iterable<T> iterableB) {
         Iterator<T> it = iterableA.iterator();
@@ -27,7 +27,7 @@ final class PairwiseEquivalence<E, T extends E> extends Equivalence<Iterable<T>>
         return (it.hasNext() || it2.hasNext()) ? false : true;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.base.Equivalence
     public int doHash(Iterable<T> iterable) {
         Iterator<T> it = iterable.iterator();

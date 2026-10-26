@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class TransitionUtils {
     private static final boolean HAS_PICTURE_BITMAP;
     private static final int MAX_IMAGE_SIZE = 1048576;

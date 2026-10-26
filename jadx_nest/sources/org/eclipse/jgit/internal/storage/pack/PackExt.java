@@ -2,7 +2,7 @@ package org.eclipse.jgit.internal.storage.pack;
 
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum PackExt {
     PACK(ConfigConstants.CONFIG_PACK_SECTION),
     INDEX("idx"),
@@ -15,7 +15,7 @@ public enum PackExt {
 
     private final String ext;
 
-    /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+    /* INFO: renamed from: values, reason: to resolve conflict with enum method */
     public static PackExt[] valuesCustom() {
         PackExt[] packExtArrValuesCustom = values();
         int length = packExtArrValuesCustom.length;

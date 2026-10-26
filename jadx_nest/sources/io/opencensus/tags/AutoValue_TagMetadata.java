@@ -1,6 +1,6 @@
 package io.opencensus.tags;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_TagMetadata extends TagMetadata {
     private final TagMetadata.TagTtl tagTtl;
 

@@ -16,7 +16,7 @@ import org.eclipse.jgit.lib.internal.BooleanTriState;
 import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DiffTools {
     private final DiffToolConfig config;
     private final FS fs;

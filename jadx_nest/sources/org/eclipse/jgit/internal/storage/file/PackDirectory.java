@@ -35,7 +35,7 @@ import org.eclipse.jgit.util.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PackDirectory {
     private static final int MAX_PACKLIST_RESCAN_ATTEMPTS = 5;
     private final Config config;

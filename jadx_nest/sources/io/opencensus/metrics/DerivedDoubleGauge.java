@@ -4,7 +4,7 @@ import io.opencensus.common.ToDoubleFunction;
 import io.opencensus.internal.Utils;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class DerivedDoubleGauge {
     public abstract void clear();
 

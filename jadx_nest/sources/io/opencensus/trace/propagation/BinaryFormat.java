@@ -4,7 +4,7 @@ import io.opencensus.internal.Utils;
 import io.opencensus.trace.SpanContext;
 import java.text.ParseException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class BinaryFormat {
     static final NoopBinaryFormat NOOP_BINARY_FORMAT = new NoopBinaryFormat(null);
 

@@ -6,7 +6,7 @@ import android.view.View;
 import com.google.android.material.animation.AnimationUtils;
 import com.google.android.material.internal.ViewUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class TabIndicatorInterpolator {
     private static final int MIN_INDICATOR_WIDTH = 24;
 

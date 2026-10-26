@@ -22,7 +22,7 @@ import org.apache.http.client.CredentialsProvider;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 class AuthenticationStrategyAdaptor implements AuthenticationStrategy {
     private final AuthenticationHandler handler;

@@ -15,7 +15,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.util.Paths;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractTreeIterator {
     protected static final int DEFAULT_PATH_SIZE = 128;
     protected static final byte[] zeroid = new byte[20];

@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public final class PlatformVersion extends GeneratedMessage implements PlatformVersionOrBuilder {
     public static final int CHECKSUM_FIELD_NUMBER = 21;
     public static final int COMPANIES_FIELD_NUMBER = 2;
@@ -647,18 +647,18 @@ public final class PlatformVersion extends GeneratedMessage implements PlatformV
         return DEFAULT_INSTANCE.toBuilder();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static Builder newBuilder(PlatformVersion platformVersion) {
         return (Builder) DEFAULT_INSTANCE.toBuilder().mergeFrom((Message) platformVersion);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.protobuf.MessageLite, com.google.protobuf.Message
     public Builder toBuilder() {
         return this == DEFAULT_INSTANCE ? new Builder((PlatformVersionIA) null) : (Builder) new Builder((PlatformVersionIA) null).mergeFrom((Message) this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent builderParent) {
         return new Builder(builderParent, null);
@@ -2273,7 +2273,7 @@ public final class PlatformVersion extends GeneratedMessage implements PlatformV
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: proto.PlatformVersion$1, reason: invalid class name */
+    /* INFO: renamed from: proto.PlatformVersion$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<PlatformVersion> {
         AnonymousClass1() {
         }

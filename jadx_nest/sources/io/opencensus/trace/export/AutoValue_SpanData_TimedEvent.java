@@ -2,7 +2,7 @@ package io.opencensus.trace.export;
 
 import io.opencensus.common.Timestamp;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_SpanData_TimedEvent<T> extends SpanData.TimedEvent<T> {
     private final T event;
     private final Timestamp timestamp;

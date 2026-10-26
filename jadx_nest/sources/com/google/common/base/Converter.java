@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.Iterator;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class Converter<A, B> implements Function<A, B> {
     private final boolean handleNullAutomatically;
@@ -54,19 +54,19 @@ public abstract class Converter<A, B> implements Function<A, B> {
         return (A) Preconditions.checkNotNull(doBackward(b));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @CheckForNull
     private B unsafeDoForward(@CheckForNull A a) {
         return (B) doForward(NullnessCasts.uncheckedCastNullableTToT(a));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @CheckForNull
     private A unsafeDoBackward(@CheckForNull B b) {
         return (A) doBackward(NullnessCasts.uncheckedCastNullableTToT(b));
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Converter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Converter$1, reason: invalid class name */
     class AnonymousClass1 implements Iterable<B> {
         final /* synthetic */ Iterable val$fromIterable;
 
@@ -74,7 +74,7 @@ public abstract class Converter<A, B> implements Function<A, B> {
             this.val$fromIterable = val$fromIterable;
         }
 
-        /* JADX INFO: renamed from: com.google.common.base.Converter$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.google.common.base.Converter$1$1, reason: invalid class name and collision with other inner class name */
         class C00341 implements Iterator<B> {
             private final Iterator<? extends A> fromIterator;
 

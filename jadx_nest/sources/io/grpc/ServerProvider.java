@@ -2,7 +2,7 @@ package io.grpc;
 
 import com.google.common.base.Preconditions;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ServerProvider {
     protected abstract ServerBuilder<?> builderForPort(int i);
 

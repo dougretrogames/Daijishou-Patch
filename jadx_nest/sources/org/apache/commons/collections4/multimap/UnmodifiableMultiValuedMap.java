@@ -13,7 +13,7 @@ import org.apache.commons.collections4.map.UnmodifiableMap;
 import org.apache.commons.collections4.multiset.UnmodifiableMultiSet;
 import org.apache.commons.collections4.set.UnmodifiableSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UnmodifiableMultiValuedMap<K, V> extends AbstractMultiValuedMapDecorator<K, V> implements Unmodifiable {
     private static final long serialVersionUID = 20150612;
 

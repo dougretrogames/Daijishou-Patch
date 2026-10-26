@@ -3,7 +3,7 @@ package androidx.emoji2.text.flatbuffer;
 import com.google.common.base.Ascii;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class Utf8 {
     private static Utf8 DEFAULT;
 

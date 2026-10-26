@@ -2,7 +2,7 @@ package org.apache.commons.collections4.iterators;
 
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SkippingIterator<E> extends AbstractIteratorDecorator<E> {
     private final long offset;
     private long pos;

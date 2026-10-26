@@ -3,7 +3,7 @@ package androidx.webkit;
 import androidx.webkit.internal.ProxyControllerImpl;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class ProxyController {
     public abstract void clearProxyOverride(Executor executor, Runnable runnable);
 

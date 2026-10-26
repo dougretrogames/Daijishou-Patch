@@ -2,7 +2,7 @@ package org.eclipse.jgit.revwalk;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class DelayRevQueue extends Generator {
     private static final int OVER_SCAN = 6;
     private final FIFORevQueue delay;

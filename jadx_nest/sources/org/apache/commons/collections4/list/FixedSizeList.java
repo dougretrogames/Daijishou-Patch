@@ -9,7 +9,7 @@ import org.apache.commons.collections4.BoundedCollection;
 import org.apache.commons.collections4.iterators.AbstractListIteratorDecorator;
 import org.apache.commons.collections4.iterators.UnmodifiableIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FixedSizeList<E> extends AbstractSerializableListDecorator<E> implements BoundedCollection<E> {
     private static final long serialVersionUID = -2218010673611160319L;
 
@@ -38,7 +38,7 @@ public class FixedSizeList<E> extends AbstractSerializableListDecorator<E> imple
         return new FixedSizeList<>(list);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static UnsupportedOperationException unsupportedOperationException() {
         return new UnsupportedOperationException("List is fixed size");
     }

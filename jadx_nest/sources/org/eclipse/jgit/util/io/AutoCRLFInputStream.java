@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import org.eclipse.jgit.diff.RawText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AutoCRLFInputStream extends InputStream {
     private int cnt;
     private boolean detectBinary;

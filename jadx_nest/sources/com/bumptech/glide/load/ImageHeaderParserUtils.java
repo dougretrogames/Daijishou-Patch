@@ -10,7 +10,7 @@ import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ImageHeaderParserUtils {
     private static final int MARK_READ_LIMIT = 5242880;
 
@@ -40,7 +40,7 @@ public final class ImageHeaderParserUtils {
         return getTypeInternal(list, new AnonymousClass1(inputStream));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$1, reason: invalid class name */
     class AnonymousClass1 implements TypeReader {
         final /* synthetic */ InputStream val$finalIs;
 
@@ -65,7 +65,7 @@ public final class ImageHeaderParserUtils {
         return getTypeInternal(list, new AnonymousClass2(byteBuffer));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$2, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$2, reason: invalid class name */
     class AnonymousClass2 implements TypeReader {
         final /* synthetic */ ByteBuffer val$buffer;
 
@@ -87,7 +87,7 @@ public final class ImageHeaderParserUtils {
         return getTypeInternal(list, new AnonymousClass3(parcelFileDescriptorRewinder, arrayPool));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$3, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$3, reason: invalid class name */
     class AnonymousClass3 implements TypeReader {
         final /* synthetic */ ArrayPool val$byteArrayPool;
         final /* synthetic */ ParcelFileDescriptorRewinder val$parcelFileDescriptorRewinder;
@@ -140,7 +140,7 @@ public final class ImageHeaderParserUtils {
         return getOrientationInternal(list, new AnonymousClass4(byteBuffer, arrayPool));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$4, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$4, reason: invalid class name */
     class AnonymousClass4 implements OrientationReader {
         final /* synthetic */ ArrayPool val$arrayPool;
         final /* synthetic */ ByteBuffer val$buffer;
@@ -171,7 +171,7 @@ public final class ImageHeaderParserUtils {
         return getOrientationInternal(list, new AnonymousClass5(inputStream, arrayPool));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$5, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$5, reason: invalid class name */
     class AnonymousClass5 implements OrientationReader {
         final /* synthetic */ ArrayPool val$byteArrayPool;
         final /* synthetic */ InputStream val$finalIs;
@@ -195,7 +195,7 @@ public final class ImageHeaderParserUtils {
         return getOrientationInternal(list, new AnonymousClass6(parcelFileDescriptorRewinder, arrayPool));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$6, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$6, reason: invalid class name */
     class AnonymousClass6 implements OrientationReader {
         final /* synthetic */ ArrayPool val$byteArrayPool;
         final /* synthetic */ ParcelFileDescriptorRewinder val$parcelFileDescriptorRewinder;
@@ -248,7 +248,7 @@ public final class ImageHeaderParserUtils {
         return hasJpegMpfInternal(list, new AnonymousClass7(byteBuffer, arrayPool));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$7, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$7, reason: invalid class name */
     class AnonymousClass7 implements JpegMpfReader {
         final /* synthetic */ ByteBuffer val$buffer;
         final /* synthetic */ ArrayPool val$byteArrayPool;
@@ -279,7 +279,7 @@ public final class ImageHeaderParserUtils {
         return hasJpegMpfInternal(list, new AnonymousClass8(inputStream, arrayPool));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$8, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$8, reason: invalid class name */
     class AnonymousClass8 implements JpegMpfReader {
         final /* synthetic */ ArrayPool val$byteArrayPool;
         final /* synthetic */ InputStream val$finalIs;
@@ -303,7 +303,7 @@ public final class ImageHeaderParserUtils {
         return hasJpegMpfInternal(list, new AnonymousClass9(parcelFileDescriptorRewinder, arrayPool));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$9, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.ImageHeaderParserUtils$9, reason: invalid class name */
     class AnonymousClass9 implements JpegMpfReader {
         final /* synthetic */ ArrayPool val$byteArrayPool;
         final /* synthetic */ ParcelFileDescriptorRewinder val$parcelFileDescriptorRewinder;

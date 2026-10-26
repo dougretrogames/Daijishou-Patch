@@ -7,7 +7,7 @@ import java.util.Objects;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RandomAccessFileInputStream extends AbstractInputStream {
     private final boolean propagateClose;
     private final RandomAccessFile randomAccessFile;

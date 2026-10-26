@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.function.Supplier;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class DecodeJob<R> implements DataFetcherGenerator.FetcherReadyCallback, Runnable, Comparable<DecodeJob<?>>, FactoryPools.Poolable {
     public static final Option<Supplier<Integer>> GLIDE_THREAD_PRIORITY_OVERRIDE = Option.memory("glide_thread_priority_override");
     private static final String TAG = "DecodeJob";
@@ -426,7 +426,7 @@ class DecodeJob<R> implements DataFetcherGenerator.FetcherReadyCallback, Runnabl
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void notifyEncodeAndRelease(Resource<R> resource, DataSource dataSource, boolean z) {
         LockedResource lockedResource;
         GlideTrace.beginSection("DecodeJob.notifyEncodeAndRelease");
@@ -564,7 +564,7 @@ class DecodeJob<R> implements DataFetcherGenerator.FetcherReadyCallback, Runnabl
         return lockedResourceObtain;
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.DecodeJob$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.DecodeJob$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$bumptech$glide$load$EncodeStrategy;
         static final /* synthetic */ int[] $SwitchMap$com$bumptech$glide$load$engine$DecodeJob$RunReason;
@@ -675,7 +675,7 @@ class DecodeJob<R> implements DataFetcherGenerator.FetcherReadyCallback, Runnabl
         DeferredEncodeManager() {
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         <X> void init(Key key, ResourceEncoder<X> resourceEncoder, LockedResource<X> lockedResource) {
             this.key = key;
             this.encoder = resourceEncoder;

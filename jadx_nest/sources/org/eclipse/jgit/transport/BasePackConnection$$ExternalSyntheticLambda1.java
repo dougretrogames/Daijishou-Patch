@@ -3,8 +3,8 @@ package org.eclipse.jgit.transport;
 import java.util.Set;
 import java.util.function.Consumer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class BasePackConnection$$ExternalSyntheticLambda1 implements Consumer {
     public final /* synthetic */ Set f$0;
 

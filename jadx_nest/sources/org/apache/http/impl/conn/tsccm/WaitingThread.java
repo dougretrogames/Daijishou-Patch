@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.concurrent.locks.Condition;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class WaitingThread {
     private boolean aborted;

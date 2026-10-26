@@ -5,13 +5,13 @@ import java.io.ObjectStreamClass;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class UnsafeAllocator {
     public static final UnsafeAllocator INSTANCE = create();
 
     public abstract <T> T newInstance(Class<T> cls) throws Exception;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void assertInstantiable(Class<?> cls) {
         String strCheckInstantiable = ConstructorConstructor.checkInstantiable(cls);
         if (strCheckInstantiable != null) {
@@ -45,7 +45,7 @@ public abstract class UnsafeAllocator {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.UnsafeAllocator$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.UnsafeAllocator$1, reason: invalid class name */
     class AnonymousClass1 extends UnsafeAllocator {
         final /* synthetic */ Method val$allocateInstance;
         final /* synthetic */ Object val$unsafe;
@@ -62,7 +62,7 @@ public abstract class UnsafeAllocator {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.UnsafeAllocator$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.UnsafeAllocator$2, reason: invalid class name */
     class AnonymousClass2 extends UnsafeAllocator {
         final /* synthetic */ int val$constructorId;
         final /* synthetic */ Method val$newInstance;
@@ -79,7 +79,7 @@ public abstract class UnsafeAllocator {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.UnsafeAllocator$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.UnsafeAllocator$3, reason: invalid class name */
     class AnonymousClass3 extends UnsafeAllocator {
         final /* synthetic */ Method val$newInstance;
 
@@ -94,7 +94,7 @@ public abstract class UnsafeAllocator {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.UnsafeAllocator$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.UnsafeAllocator$4, reason: invalid class name */
     class AnonymousClass4 extends UnsafeAllocator {
         AnonymousClass4() {
         }

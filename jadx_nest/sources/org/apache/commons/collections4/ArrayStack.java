@@ -3,7 +3,7 @@ package org.apache.commons.collections4;
 import java.util.ArrayList;
 import java.util.EmptyStackException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class ArrayStack<E> extends ArrayList<E> {
     private static final long serialVersionUID = 2130079159931574599L;

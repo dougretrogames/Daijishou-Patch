@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class MutableClassToInstanceMap<B> extends ForwardingMap<Class<? extends B>, B> implements ClassToInstanceMap<B>, Serializable {
     private final Map<Class<? extends B>, B> delegate;
@@ -29,13 +29,13 @@ public final class MutableClassToInstanceMap<B> extends ForwardingMap<Class<? ex
         this.delegate = (Map) Preconditions.checkNotNull(delegate);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingMap, com.google.common.collect.ForwardingObject
     public Map<Class<? extends B>, B> delegate() {
         return this.delegate;
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.MutableClassToInstanceMap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.MutableClassToInstanceMap$1, reason: invalid class name */
     class AnonymousClass1 extends ForwardingMapEntry<Class<? extends B>, B> {
         final /* synthetic */ Map.Entry val$entry;
 
@@ -43,7 +43,7 @@ public final class MutableClassToInstanceMap<B> extends ForwardingMap<Class<? ex
             this.val$entry = val$entry;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingMapEntry, com.google.common.collect.ForwardingObject
         public Map.Entry<Class<? extends B>, B> delegate() {
             return this.val$entry;
@@ -57,17 +57,17 @@ public final class MutableClassToInstanceMap<B> extends ForwardingMap<Class<? ex
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <B> Map.Entry<Class<? extends B>, B> checkedEntry(final Map.Entry<Class<? extends B>, B> entry) {
         return new AnonymousClass1(entry);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.MutableClassToInstanceMap$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.MutableClassToInstanceMap$2, reason: invalid class name */
     class AnonymousClass2 extends ForwardingSet<Map.Entry<Class<? extends B>, B>> {
         AnonymousClass2() {
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Set<Map.Entry<Class<? extends B>, B>> delegate() {
             return MutableClassToInstanceMap.this.delegate().entrySet();
@@ -78,13 +78,13 @@ public final class MutableClassToInstanceMap<B> extends ForwardingMap<Class<? ex
             return new AnonymousClass1(this, delegate().iterator());
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.MutableClassToInstanceMap$2$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.MutableClassToInstanceMap$2$1, reason: invalid class name */
         class AnonymousClass1 extends TransformedIterator<Map.Entry<Class<? extends B>, B>, Map.Entry<Class<? extends B>, B>> {
             AnonymousClass1(final AnonymousClass2 this$1, Iterator backingIterator) {
                 super(backingIterator);
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // com.google.common.collect.TransformedIterator
             public Map.Entry<Class<? extends B>, B> transform(Map.Entry<Class<? extends B>, B> from) {
                 return MutableClassToInstanceMap.checkedEntry(from);
@@ -123,7 +123,7 @@ public final class MutableClassToInstanceMap<B> extends ForwardingMap<Class<? ex
         super.putAll(linkedHashMap);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.ClassToInstanceMap
     @CheckForNull
     public <T extends B> T putInstance(Class<T> cls, @ParametricNullness T t) {
@@ -136,7 +136,7 @@ public final class MutableClassToInstanceMap<B> extends ForwardingMap<Class<? ex
         return (T) cast(cls, get(cls));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @CheckForNull
     public static <T> T cast(Class<T> cls, @CheckForNull Object obj) {
         return (T) Primitives.wrap(cls).cast(obj);

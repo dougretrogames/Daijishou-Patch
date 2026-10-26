@@ -3,8 +3,8 @@ package com.google.common.util.concurrent;
 import java.util.concurrent.atomic.AtomicReferenceArray;
 import sun.misc.Unsafe;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class Striped$SmallLazyStriped$$ExternalSyntheticBackportWithForwarding0 {
     public static /* synthetic */ boolean m(AtomicReferenceArray atomicReferenceArray, int i, Object obj, Object obj2) {
         while (!atomicReferenceArray.compareAndSet(i, obj, obj2)) {

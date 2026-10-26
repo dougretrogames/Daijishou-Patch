@@ -5,7 +5,7 @@ import android.location.LocationListener;
 import android.os.Bundle;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface LocationListenerCompat extends LocationListener {
     @Override // android.location.LocationListener
     default void onFlushComplete(int i) {

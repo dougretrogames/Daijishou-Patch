@@ -3,7 +3,7 @@ package androidx.constraintlayout.core.widgets;
 import androidx.constraintlayout.core.widgets.analyzer.BasicMeasure;
 import java.util.HashSet;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class VirtualLayout extends HelperWidget {
     private int mPaddingTop = 0;
     private int mPaddingBottom = 0;

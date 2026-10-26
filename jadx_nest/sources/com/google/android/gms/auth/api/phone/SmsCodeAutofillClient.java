@@ -8,11 +8,11 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
+/* INFO: loaded from: classes3.dex */
 public interface SmsCodeAutofillClient extends HasApiKey<Api.ApiOptions.NoOptions> {
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
+    /* INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
     @Target({ElementType.TYPE_PARAMETER, ElementType.TYPE_USE})
     @Retention(RetentionPolicy.SOURCE)
     public @interface PermissionState {

@@ -15,7 +15,7 @@ import org.apache.commons.io.Charsets;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.file.PathUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractStreamBuilder<T, B extends AbstractStreamBuilder<T, B>> extends AbstractOriginSupplier<T, B> {
     private static final int DEFAULT_MAX_VALUE = Integer.MAX_VALUE;
     private static final OpenOption[] DEFAULT_OPEN_OPTIONS = PathUtils.EMPTY_OPEN_OPTION_ARRAY;
@@ -28,7 +28,7 @@ public abstract class AbstractStreamBuilder<T, B extends AbstractStreamBuilder<T
     private Charset charsetDefault = Charset.defaultCharset();
     private OpenOption[] openOptions = DEFAULT_OPEN_OPTIONS;
 
-    /* JADX INFO: renamed from: lambda$new$0$org-apache-commons-io-build-AbstractStreamBuilder, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$org-apache-commons-io-build-AbstractStreamBuilder, reason: not valid java name */
     /* synthetic */ int m5552lambda$new$0$orgapachecommonsiobuildAbstractStreamBuilder(int i) {
         int i2 = this.bufferSizeMax;
         return i > i2 ? throwIae(i, i2) : i;

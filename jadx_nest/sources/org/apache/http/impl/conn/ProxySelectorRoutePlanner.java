@@ -18,7 +18,7 @@ import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class ProxySelectorRoutePlanner implements HttpRoutePlanner {
     protected ProxySelector proxySelector;
@@ -95,7 +95,7 @@ public class ProxySelectorRoutePlanner implements HttpRoutePlanner {
         return proxy == null ? Proxy.NO_PROXY : proxy;
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.conn.ProxySelectorRoutePlanner$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.conn.ProxySelectorRoutePlanner$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$java$net$Proxy$Type;
 

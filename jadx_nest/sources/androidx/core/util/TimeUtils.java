@@ -4,7 +4,7 @@ import java.io.PrintWriter;
 import org.apache.commons.codec.language.Soundex;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class TimeUtils {
     public static final int HUNDRED_DAY_FIELD_LEN = 19;
     private static final int SECONDS_PER_DAY = 86400;

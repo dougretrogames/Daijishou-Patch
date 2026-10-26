@@ -2,7 +2,7 @@ package org.apache.commons.codec.net;
 
 import org.apache.commons.codec.DecoderException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class Utils {
     private static final int RADIX = 16;
 

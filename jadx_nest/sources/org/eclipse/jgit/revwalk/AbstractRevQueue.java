@@ -1,6 +1,6 @@
 package org.eclipse.jgit.revwalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class AbstractRevQueue extends Generator {
     static final AbstractRevQueue EMPTY_QUEUE = new AlwaysEmptyQueue(null);
     int outputType;

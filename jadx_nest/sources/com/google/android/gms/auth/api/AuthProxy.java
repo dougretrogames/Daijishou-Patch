@@ -8,8 +8,8 @@ import com.google.android.gms.common.api.Api;
 import com.google.android.gms.internal.auth.zzbo;
 import com.google.android.gms.internal.auth.zzbt;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public final class AuthProxy {
     public static final Api<AuthProxyOptions> API;
     public static final ProxyApi ProxyApi;

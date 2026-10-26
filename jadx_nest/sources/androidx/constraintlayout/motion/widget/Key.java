@@ -7,7 +7,7 @@ import androidx.constraintlayout.widget.ConstraintAttribute;
 import java.util.HashMap;
 import java.util.HashSet;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class Key {
     public static final String ALPHA = "alpha";
     public static final String CURVEFIT = "curveFit";
@@ -42,7 +42,7 @@ public abstract class Key {
     public abstract void addValues(HashMap<String, ViewSpline> map);
 
     @Override // 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public abstract Key mo3143clone();
 
     abstract void getAttributeNames(HashSet<String> hashSet);

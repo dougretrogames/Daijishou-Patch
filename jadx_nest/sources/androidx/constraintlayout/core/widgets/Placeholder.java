@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.widgets;
 
 import androidx.constraintlayout.core.LinearSystem;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Placeholder extends VirtualLayout {
     @Override // androidx.constraintlayout.core.widgets.VirtualLayout
     public void measure(int i, int i2, int i3, int i4) {

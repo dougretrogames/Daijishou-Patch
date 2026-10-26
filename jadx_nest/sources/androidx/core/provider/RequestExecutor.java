@@ -15,7 +15,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class RequestExecutor {
     private RequestExecutor() {
     }
@@ -83,7 +83,7 @@ class RequestExecutor {
             this.mHandler.post(new AnonymousClass1(this.mConsumer, tCall));
         }
 
-        /* JADX INFO: renamed from: androidx.core.provider.RequestExecutor$ReplyRunnable$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.core.provider.RequestExecutor$ReplyRunnable$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             final /* synthetic */ Consumer val$consumer;
             final /* synthetic */ Object val$result;
@@ -93,7 +93,7 @@ class RequestExecutor {
                 this.val$result = obj;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // java.lang.Runnable
             public void run() {
                 this.val$consumer.accept(this.val$result);

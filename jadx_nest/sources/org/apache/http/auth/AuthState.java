@@ -3,7 +3,7 @@ package org.apache.http.auth;
 import java.util.Queue;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AuthState {
     private Queue<AuthOption> authOptions;
     private AuthScheme authScheme;

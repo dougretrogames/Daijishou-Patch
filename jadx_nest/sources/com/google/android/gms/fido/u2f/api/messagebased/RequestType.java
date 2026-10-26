@@ -1,7 +1,7 @@
 package com.google.android.gms.fido.u2f.api.messagebased;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public enum RequestType {
     REGISTER("u2f_register_request"),
@@ -9,7 +9,7 @@ public enum RequestType {
 
     private final String zzb;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class UnsupportedRequestTypeException extends Exception {
         public UnsupportedRequestTypeException(String str) {
             super("Unsupported request type ".concat(String.valueOf(str)));

@@ -2,8 +2,8 @@ package com.google.android.material.card;
 
 import android.animation.ValueAnimator;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class MaterialCardViewHelper$$ExternalSyntheticLambda0 implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ MaterialCardViewHelper f$0;
 

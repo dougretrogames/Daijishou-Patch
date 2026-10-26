@@ -19,7 +19,7 @@ import com.google.api.client.util.store.DataStoreFactory;
 import java.io.IOException;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GoogleAuthorizationCodeFlow extends AuthorizationCodeFlow {
     private final String accessType;
     private final String approvalPrompt;

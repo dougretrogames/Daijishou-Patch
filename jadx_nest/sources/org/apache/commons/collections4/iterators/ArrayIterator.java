@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 import java.util.NoSuchElementException;
 import org.apache.commons.collections4.ResettableIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ArrayIterator<E> implements ResettableIterator<E> {
     final Object array;
     final int endIndex;

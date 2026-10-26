@@ -7,7 +7,7 @@ import java.util.Arrays;
 import org.eclipse.jgit.lib.ObjectLoader;
 import org.eclipse.jgit.lib.ObjectStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SimilarityIndex {
     private static final int KEY_SHIFT = 32;
     private static final long MAX_COUNT = 4294967295L;

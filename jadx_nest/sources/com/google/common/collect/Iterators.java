@@ -24,7 +24,7 @@ import kotlin.text.Typography;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Iterators {
     private Iterators() {
@@ -69,8 +69,8 @@ public final class Iterators {
         return new AnonymousClass1(iterator);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterators$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterators$1, reason: invalid class name */
     class AnonymousClass1<T> extends UnmodifiableIterator<T> {
         final /* synthetic */ Iterator val$iterator;
 
@@ -223,8 +223,8 @@ public final class Iterators {
         return i;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterators$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterators$2, reason: invalid class name */
     class AnonymousClass2<T> implements Iterator<T> {
         Iterator<T> iterator = Iterators.emptyModifiableIterator();
         final /* synthetic */ Iterable val$iterable;
@@ -267,8 +267,8 @@ public final class Iterators {
         return cycle(Lists.newArrayList(elements));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [I] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterators$3, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [I] */
+    /* INFO: renamed from: com.google.common.collect.Iterators$3, reason: invalid class name */
     class AnonymousClass3<I> extends UnmodifiableIterator<I> {
         int index = 0;
         final /* synthetic */ Iterator[] val$elements;
@@ -282,7 +282,7 @@ public final class Iterators {
             return this.index < this.val$elements.length;
         }
 
-        /* JADX WARN: Incorrect return type in method signature: ()TI; */
+        /* WARN: Incorrect return type in method signature: ()TI; */
         @Override // java.util.Iterator
         public Iterator next() {
             if (!hasNext()) {
@@ -352,8 +352,8 @@ public final class Iterators {
         return new AnonymousClass4(iterator, size, pad);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterators$4, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterators$4, reason: invalid class name */
     class AnonymousClass4<T> extends UnmodifiableIterator<List<T>> {
         final /* synthetic */ Iterator val$iterator;
         final /* synthetic */ boolean val$pad;
@@ -395,8 +395,8 @@ public final class Iterators {
         return new AnonymousClass5(unfiltered, retainIfTrue);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterators$5, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterators$5, reason: invalid class name */
     class AnonymousClass5<T> extends AbstractIterator<T> {
         final /* synthetic */ Predicate val$retainIfTrue;
         final /* synthetic */ Iterator val$unfiltered;
@@ -406,15 +406,15 @@ public final class Iterators {
             this.val$retainIfTrue = val$retainIfTrue;
         }
 
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         @Override // com.google.common.collect.AbstractIterator
         @CheckForNull
@@ -460,7 +460,7 @@ public final class Iterators {
         throw new NoSuchElementException();
     }
 
-    /* JADX WARN: Type inference failed for: r0v1, types: [T, java.lang.Object] */
+    /* WARN: Type inference failed for: r0v1, types: [T, java.lang.Object] */
     @CheckForNull
     public static <T> T find(Iterator<? extends T> it, Predicate<? super T> predicate, @CheckForNull T t) {
         Preconditions.checkNotNull(it);
@@ -498,12 +498,12 @@ public final class Iterators {
         return -1;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T, F] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterators$6, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T, F] */
+    /* INFO: renamed from: com.google.common.collect.Iterators$6, reason: invalid class name */
     class AnonymousClass6<F, T> extends TransformedIterator<F, T> {
         final /* synthetic */ Function val$function;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass6(Iterator backingIterator, final Function val$function) {
             super(backingIterator);
             this.val$function = val$function;
@@ -580,8 +580,8 @@ public final class Iterators {
         return new AnonymousClass7(limitSize, iterator);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterators$7, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterators$7, reason: invalid class name */
     class AnonymousClass7<T> implements Iterator<T> {
         private int count;
         final /* synthetic */ Iterator val$iterator;
@@ -613,8 +613,8 @@ public final class Iterators {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterators$8, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterators$8, reason: invalid class name */
     class AnonymousClass8<T> extends UnmodifiableIterator<T> {
         final /* synthetic */ Iterator val$iterator;
 
@@ -722,8 +722,8 @@ public final class Iterators {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterators$9, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterators$9, reason: invalid class name */
     class AnonymousClass9<T> extends UnmodifiableIterator<T> {
         final /* synthetic */ Enumeration val$enumeration;
 
@@ -748,8 +748,8 @@ public final class Iterators {
         return new AnonymousClass9(enumeration);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterators$10, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterators$10, reason: invalid class name */
     class AnonymousClass10<T> implements Enumeration<T> {
         final /* synthetic */ Iterator val$iterator;
 
@@ -837,7 +837,7 @@ public final class Iterators {
         return new MergingIterator(iterators, comparator);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class MergingIterator<T> extends UnmodifiableIterator<T> {
         final Queue<PeekingIterator<T>> queue;
 

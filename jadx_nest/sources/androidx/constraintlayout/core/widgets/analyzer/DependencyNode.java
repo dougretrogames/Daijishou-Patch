@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DependencyNode implements Dependency {
     int mMargin;
     WidgetRun mRun;

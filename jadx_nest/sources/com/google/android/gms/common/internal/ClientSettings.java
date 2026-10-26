@@ -16,8 +16,8 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.Nullable;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class ClientSettings {
 
     @Nullable
@@ -34,7 +34,7 @@ public final class ClientSettings {
     private final SignInOptions zai;
     private Integer zaj;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static final class Builder {
 
         @Nullable

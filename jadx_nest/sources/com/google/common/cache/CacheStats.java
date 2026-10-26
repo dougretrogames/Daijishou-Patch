@@ -6,7 +6,7 @@ import com.google.common.base.Preconditions;
 import com.google.common.math.LongMath;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class CacheStats {
     private final long evictionCount;

@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.dialog_fragments;
 import android.view.View;
 import com.google.android.material.textfield.TextInputEditText;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class SearchPlayableItemDialogFragment$$ExternalSyntheticLambda1 implements View.OnClickListener {
     public final /* synthetic */ TextInputEditText f$0;
 

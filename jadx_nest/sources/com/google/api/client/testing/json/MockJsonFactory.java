@@ -10,7 +10,7 @@ import java.io.Reader;
 import java.io.Writer;
 import java.nio.charset.Charset;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockJsonFactory extends JsonFactory {
     @Override // com.google.api.client.json.JsonFactory
     public JsonParser createJsonParser(InputStream inputStream) throws IOException {

@@ -3,7 +3,7 @@ package org.eclipse.jgit.util.io;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CountingOutputStream extends OutputStream {
     private long cnt;
     private final OutputStream out;

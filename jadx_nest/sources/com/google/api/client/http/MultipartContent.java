@@ -13,7 +13,7 @@ import java.util.Iterator;
 import java.util.UUID;
 import org.eclipse.jgit.lib.Constants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MultipartContent extends AbstractHttpContent {
     static final String NEWLINE = "\r\n";
     private static final String TWO_DASHES = "--";

@@ -17,7 +17,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class PlayerDAO_Impl implements PlayerDAO {
     private final RoomDatabase __db;
     private final EntityDeletionOrUpdateAdapter<PlayerEntity> __deletionAdapterOfPlayerEntity;
@@ -33,7 +33,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
         this.__preparedStmtOfDeleteById = new AnonymousClass4(__db);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$1, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$1, reason: invalid class name */
     class AnonymousClass1 extends EntityInsertionAdapter<PlayerEntity> {
         AnonymousClass1(RoomDatabase database) {
             super(database);
@@ -44,7 +44,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
             return "INSERT OR REPLACE INTO `PlayerEntity` (`id`,`unique_id`,`player`,`name`,`description`,`am_start_arguments`,`kill_package_processes`,`kill_package_processes_warning`,`accepted_filename_regex`,`extra`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?)";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityInsertionAdapter
         public void bind(SupportSQLiteStatement supportSQLiteStatement, PlayerEntity playerEntity) {
             supportSQLiteStatement.bindLong(1, playerEntity.getId());
@@ -68,7 +68,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$2, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$2, reason: invalid class name */
     class AnonymousClass2 extends EntityDeletionOrUpdateAdapter<PlayerEntity> {
         AnonymousClass2(RoomDatabase database) {
             super(database);
@@ -79,14 +79,14 @@ public final class PlayerDAO_Impl implements PlayerDAO {
             return "DELETE FROM `PlayerEntity` WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final PlayerEntity entity) {
             statement.bindLong(1, entity.getId());
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$3, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$3, reason: invalid class name */
     class AnonymousClass3 extends EntityDeletionOrUpdateAdapter<PlayerEntity> {
         AnonymousClass3(RoomDatabase database) {
             super(database);
@@ -97,7 +97,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
             return "UPDATE OR ABORT `PlayerEntity` SET `id` = ?,`unique_id` = ?,`player` = ?,`name` = ?,`description` = ?,`am_start_arguments` = ?,`kill_package_processes` = ?,`kill_package_processes_warning` = ?,`accepted_filename_regex` = ?,`extra` = ? WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(SupportSQLiteStatement supportSQLiteStatement, PlayerEntity playerEntity) {
             supportSQLiteStatement.bindLong(1, playerEntity.getId());
@@ -122,7 +122,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$4, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$4, reason: invalid class name */
     class AnonymousClass4 extends SharedSQLiteStatement {
         AnonymousClass4(RoomDatabase database) {
             super(database);
@@ -230,7 +230,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$5, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$5, reason: invalid class name */
     class AnonymousClass5 implements Callable<Integer> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -238,7 +238,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Integer call() throws Exception {
             Integer numValueOf = null;
@@ -276,7 +276,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$6, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$6, reason: invalid class name */
     class AnonymousClass6 implements Callable<List<Long>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -330,7 +330,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$7, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$7, reason: invalid class name */
     class AnonymousClass7 implements Callable<List<PlayerEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -406,7 +406,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayerEntity"}, false, new AnonymousClass8(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$8, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$8, reason: invalid class name */
     class AnonymousClass8 implements Callable<PlayerEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -414,7 +414,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayerEntity call() throws Exception {
             PlayerEntity playerEntity = null;
@@ -507,7 +507,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayerEntity"}, false, new AnonymousClass9(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$9, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$9, reason: invalid class name */
     class AnonymousClass9 implements Callable<PlayerEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -515,7 +515,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlayerEntity call() throws Exception {
             PlayerEntity playerEntity = null;
@@ -562,7 +562,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayerEntity"}, false, new AnonymousClass10(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$10, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$10, reason: invalid class name */
     class AnonymousClass10 implements Callable<List<PlayerEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -644,7 +644,7 @@ public final class PlayerDAO_Impl implements PlayerDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlayerEntity"}, false, new AnonymousClass11(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$11, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlayerDAO_Impl$11, reason: invalid class name */
     class AnonymousClass11 implements Callable<List<PlayerEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 

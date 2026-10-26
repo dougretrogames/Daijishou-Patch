@@ -3,7 +3,7 @@ package net.lingala.zip4j.crypto;
 import net.lingala.zip4j.crypto.engine.ZipCryptoEngine;
 import net.lingala.zip4j.exception.ZipException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StandardDecrypter implements Decrypter {
     private ZipCryptoEngine zipCryptoEngine = new ZipCryptoEngine();
 

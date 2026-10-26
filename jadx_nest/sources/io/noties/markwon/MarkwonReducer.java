@@ -6,7 +6,7 @@ import java.util.List;
 import org.commonmark.node.LinkReferenceDefinition;
 import org.commonmark.node.Node;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class MarkwonReducer {
     public abstract List<Node> reduce(Node node);
 

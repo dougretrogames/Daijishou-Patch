@@ -11,7 +11,7 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class EnumBiMap<K extends Enum<K>, V extends Enum<V>> extends AbstractBiMap<K, V> {
     private static final long serialVersionUID = 0;
@@ -33,7 +33,7 @@ public final class EnumBiMap<K extends Enum<K>, V extends Enum<V>> extends Abstr
         return super.entrySet();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractBiMap, com.google.common.collect.BiMap
     @CheckForNull
     public /* bridge */ /* synthetic */ Object forcePut(@ParametricNullness Object key, @ParametricNullness Object value) {
@@ -50,7 +50,7 @@ public final class EnumBiMap<K extends Enum<K>, V extends Enum<V>> extends Abstr
         return super.keySet();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractBiMap, com.google.common.collect.ForwardingMap, java.util.Map, com.google.common.collect.BiMap
     @CheckForNull
     public /* bridge */ /* synthetic */ Object put(@ParametricNullness Object key, @ParametricNullness Object value) {
@@ -116,13 +116,13 @@ public final class EnumBiMap<K extends Enum<K>, V extends Enum<V>> extends Abstr
         return this.valueTypeOrObjectUnderJ2cl;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractBiMap
     public K checkKey(K key) {
         return (K) Preconditions.checkNotNull(key);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractBiMap
     public V checkValue(V value) {
         return (V) Preconditions.checkNotNull(value);

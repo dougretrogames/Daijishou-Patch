@@ -29,7 +29,7 @@ import org.eclipse.jgit.revwalk.RevFlagSet;
 import org.eclipse.jgit.revwalk.RevTag;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DescribeCommand extends GitCommand<String> {
     private final Comparator<Ref> TAG_TIE_BREAKER;
     private int abbrev;
@@ -99,7 +99,7 @@ public class DescribeCommand extends GitCommand<String> {
         return this;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public String longDescription(Ref ref, int i, ObjectId objectId) throws IOException {
         if (this.abbrev == 0) {
             return formatRefName(ref.getName());
@@ -114,7 +114,7 @@ public class DescribeCommand extends GitCommand<String> {
         return this;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.api.DescribeCommand$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.api.DescribeCommand$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<Ref> {
         AnonymousClass1() {
         }
@@ -151,7 +151,7 @@ public class DescribeCommand extends GitCommand<String> {
         return streamEmpty.sorted(this.TAG_TIE_BREAKER).findFirst();
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-api-DescribeCommand, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-api-DescribeCommand, reason: not valid java name */
     /* synthetic */ boolean m5648lambda$0$orgeclipsejgitapiDescribeCommand(FileNameMatcher fileNameMatcher, Ref ref) {
         fileNameMatcher.append(formatRefName(ref.getName()));
         boolean zIsMatch = fileNameMatcher.isMatch();
@@ -159,7 +159,7 @@ public class DescribeCommand extends GitCommand<String> {
         return zIsMatch;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public ObjectId getObjectIdFromRef(Ref ref) throws JGitInternalException {
         try {
             ObjectId peeledObjectId = this.repo.getRefDatabase().peel(ref).getPeeledObjectId();
@@ -249,7 +249,7 @@ public class DescribeCommand extends GitCommand<String> {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.api.DescribeCommand$1Candidate, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.api.DescribeCommand$1Candidate, reason: invalid class name */
     class C1Candidate {
         int depth;
         final RevFlag flag;
@@ -285,7 +285,7 @@ public class DescribeCommand extends GitCommand<String> {
         return str.substring(Constants.R_REFS.length());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean filterLightweightTags(Ref ref) {
         ObjectId objectId = ref.getObjectId();
         try {

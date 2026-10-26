@@ -24,8 +24,8 @@ import java.util.Iterator;
 import java.util.concurrent.atomic.AtomicBoolean;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public class GooglePlayServicesUtilLight {
     static final int GMS_AVAILABILITY_NOTIFICATION_ID = 10436;
     static final int GMS_GENERAL_ERROR_NOTIFICATION_ID = 39789;
@@ -224,13 +224,13 @@ public class GooglePlayServicesUtilLight {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:45:0x00b2  */
-    /* JADX WARN: Code duplicated, block: B:52:0x00de  */
-    /* JADX WARN: Code duplicated, block: B:53:0x0103  */
-    /* JADX WARN: Code duplicated, block: B:61:0x011f A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:62:0x0121 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:69:0x0107 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Instruction removed from duplicated block: B:52:0x00de, please report this as an issue */
+    /* WARN: Code duplicated, block: B:45:0x00b2  */
+    /* WARN: Code duplicated, block: B:52:0x00de  */
+    /* WARN: Code duplicated, block: B:53:0x0103  */
+    /* WARN: Code duplicated, block: B:61:0x011f A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:62:0x0121 A[RETURN] */
+    /* WARN: Code duplicated, block: B:69:0x0107 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Instruction removed from duplicated block: B:52:0x00de, please report this as an issue */
     @Deprecated
     public static int isGooglePlayServicesAvailable(Context context, int i) {
         PackageInfo packageInfo;

@@ -4,7 +4,7 @@ import com.google.common.base.Ascii;
 import java.util.Arrays;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Blake3 {
     private static final int BLOCK_INTS = 16;
     private static final int BLOCK_LEN = 64;
@@ -43,12 +43,12 @@ public final class Blake3 {
             this.flags = i;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public int length() {
             return (this.blocksCompressed * 64) + this.blockLength;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public Output output() {
             return new Output(this.chainingValue, Blake3.unpackInts(this.block, 16), this.chunkCounter, this.blockLength, this.flags | startFlag() | 2, null);
         }
@@ -57,7 +57,7 @@ public final class Blake3 {
             return this.blocksCompressed == 0 ? 1 : 0;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void update(byte[] bArr, int i, int i2) {
             while (i2 > 0) {
                 if (this.blockLength == 64) {
@@ -101,7 +101,7 @@ public final class Blake3 {
             pushCV(iArr);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void inputData(byte[] bArr, int i, int i2) {
             while (i2 > 0) {
                 if (this.state.length() == 1024) {
@@ -117,7 +117,7 @@ public final class Blake3 {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void outputHash(byte[] bArr, int i, int i2) {
             Output output = this.state.output();
             int i3 = this.stackLen;
@@ -147,7 +147,7 @@ public final class Blake3 {
             iArr2[i] = iArr;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void reset() {
             this.stackLen = 0;
             Arrays.fill(this.cvStack, (Object) null);
@@ -174,12 +174,12 @@ public final class Blake3 {
             this.flags = i2;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public int[] chainingValue() {
             return Arrays.copyOf(Blake3.compress(this.inputChainingValue, this.blockWords, this.blockLength, this.counter, this.flags), 8);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void rootOutputBytes(byte[] bArr, int i, int i2) {
             int i3 = 0;
             while (i2 > 0) {
@@ -214,7 +214,7 @@ public final class Blake3 {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int[] compress(int[] iArr, int[] iArr2, int i, long j, int i2) {
         int[] iArrCopyOf = Arrays.copyOf(iArr, 16);
         System.arraycopy(IV, 0, iArrCopyOf, 8, 4);
@@ -280,19 +280,19 @@ public final class Blake3 {
         return initKeyedHash(bArr).update(bArr2).doFinalize(32);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void packInt(int i, byte[] bArr, int i2, int i3) {
         for (int i4 = 0; i4 < i3; i4++) {
             bArr[i2 + i4] = (byte) (i >>> (i4 * 8));
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int[] parentChainingValue(int[] iArr, int[] iArr2, int[] iArr3, int i) {
         return parentOutput(iArr, iArr2, iArr3, i).chainingValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Output parentOutput(int[] iArr, int[] iArr2, int[] iArr3, int i) {
         int[] iArrCopyOf = Arrays.copyOf(iArr, 16);
         System.arraycopy(iArr2, 0, iArrCopyOf, 8, 8);
@@ -314,7 +314,7 @@ public final class Blake3 {
         return ((bArr[i + 3] & 255) << 24) | (bArr[i] & 255) | ((bArr[i + 1] & 255) << 8) | ((bArr[i + 2] & 255) << 16);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int[] unpackInts(byte[] bArr, int i) {
         int[] iArr = new int[i];
         int i2 = 0;

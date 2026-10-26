@@ -3,7 +3,7 @@ package androidx.core.content.pm;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ShortcutInfoCompatSaver<T> {
     public abstract T addShortcuts(List<ShortcutInfoCompat> list);
 
@@ -17,7 +17,7 @@ public abstract class ShortcutInfoCompatSaver<T> {
 
     public static class NoopImpl extends ShortcutInfoCompatSaver<Void> {
         @Override // androidx.core.content.pm.ShortcutInfoCompatSaver
-        /* JADX INFO: renamed from: addShortcuts, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: addShortcuts, reason: avoid collision after fix types in other method */
         public Void addShortcuts2(List<ShortcutInfoCompat> list) {
             return null;
         }
@@ -28,7 +28,7 @@ public abstract class ShortcutInfoCompatSaver<T> {
         }
 
         @Override // androidx.core.content.pm.ShortcutInfoCompatSaver
-        /* JADX INFO: renamed from: removeShortcuts, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: removeShortcuts, reason: avoid collision after fix types in other method */
         public Void removeShortcuts2(List<String> list) {
             return null;
         }

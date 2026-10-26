@@ -20,7 +20,7 @@ import org.apache.http.message.ParserCursor;
 import org.apache.http.util.CharArrayBuffer;
 import org.apache.http.util.CharsetUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class RFC2617Scheme extends AuthSchemeBase implements Serializable {
     private static final long serialVersionUID = -2845454858205884623L;
     private transient Charset credentialsCharset;

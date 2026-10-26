@@ -31,7 +31,7 @@ import org.commonmark.node.Text;
 import org.commonmark.node.ThematicBreak;
 import org.commonmark.renderer.NodeRenderer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CoreTextContentNodeRenderer extends AbstractVisitor implements NodeRenderer {
     protected final TextContentNodeRendererContext context;
     private ListHolder listHolder;

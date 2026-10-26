@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.SortedMap;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformedSortedMap<K, V> extends TransformedMap<K, V> implements SortedMap<K, V> {
     private static final long serialVersionUID = -8751771676410385778L;
 

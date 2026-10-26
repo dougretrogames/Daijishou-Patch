@@ -5,7 +5,7 @@ import com.google.protobuf.Internal;
 import com.google.protobuf.ProtocolMessageEnum;
 import com.google.protobuf.RuntimeVersion;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public enum DateFormatChangeDateCategoryEnum implements ProtocolMessageEnum {
     YYYYMMMMDD(0),
     YYYYMMMM(1),
@@ -75,7 +75,7 @@ public enum DateFormatChangeDateCategoryEnum implements ProtocolMessageEnum {
         return internalValueMap;
     }
 
-    /* JADX INFO: renamed from: proto.DateFormatChangeDateCategoryEnum$1, reason: invalid class name */
+    /* INFO: renamed from: proto.DateFormatChangeDateCategoryEnum$1, reason: invalid class name */
     class AnonymousClass1 implements Internal.EnumLiteMap<DateFormatChangeDateCategoryEnum> {
         AnonymousClass1() {
         }

@@ -7,7 +7,7 @@ import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class HttpConnectProxiedSocketAddress extends ProxiedSocketAddress {
     private static final long serialVersionUID = 0;
 

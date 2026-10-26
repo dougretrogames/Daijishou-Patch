@@ -13,8 +13,8 @@ import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Ref;
 import kotlinx.coroutines.internal.ThreadContextKt;
 
-/* JADX INFO: compiled from: CoroutineContext.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: CoroutineContext.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000>\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a \u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u00032\u0006\u0010\b\u001a\u00020\u00032\u0006\u0010\t\u001a\u00020\nH\u0002\u001a8\u0010\u000b\u001a\u0002H\f\"\u0004\b\u0000\u0010\f2\n\u0010\r\u001a\u0006\u0012\u0002\b\u00030\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u00102\f\u0010\u0011\u001a\b\u0012\u0004\u0012\u0002H\f0\u0012H\u0080\b¢\u0006\u0002\u0010\u0013\u001a4\u0010\u0014\u001a\u0002H\f\"\u0004\b\u0000\u0010\f2\u0006\u0010\u0015\u001a\u00020\u00032\b\u0010\u000f\u001a\u0004\u0018\u00010\u00102\f\u0010\u0011\u001a\b\u0012\u0004\u0012\u0002H\f0\u0012H\u0080\b¢\u0006\u0002\u0010\u0016\u001a\f\u0010\u0017\u001a\u00020\n*\u00020\u0003H\u0002\u001a\u0014\u0010\u0018\u001a\u00020\u0003*\u00020\u00032\u0006\u0010\u0019\u001a\u00020\u0003H\u0007\u001a\u0014\u0010\u0018\u001a\u00020\u0003*\u00020\u001a2\u0006\u0010\u0015\u001a\u00020\u0003H\u0007\u001a\u0013\u0010\u001b\u001a\b\u0012\u0002\b\u0003\u0018\u00010\u001c*\u00020\u001dH\u0080\u0010\u001a(\u0010\u001e\u001a\b\u0012\u0002\b\u0003\u0018\u00010\u001c*\u0006\u0012\u0002\b\u00030\u000e2\u0006\u0010\u0015\u001a\u00020\u00032\b\u0010\u001f\u001a\u0004\u0018\u00010\u0010H\u0000\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u001a\u0010\u0002\u001a\u0004\u0018\u00010\u0001*\u00020\u00038@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u0004\u0010\u0005¨\u0006 "}, d2 = {"DEBUG_THREAD_NAME_SEPARATOR", "", "coroutineName", "Lkotlin/coroutines/CoroutineContext;", "getCoroutineName", "(Lkotlin/coroutines/CoroutineContext;)Ljava/lang/String;", "foldCopies", "originalContext", "appendContext", "isNewCoroutine", "", "withContinuationContext", ExifInterface.GPS_DIRECTION_TRUE, "continuation", "Lkotlin/coroutines/Continuation;", "countOrElement", "", "block", "Lkotlin/Function0;", "(Lkotlin/coroutines/Continuation;Ljava/lang/Object;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;", "withCoroutineContext", "context", "(Lkotlin/coroutines/CoroutineContext;Ljava/lang/Object;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;", "hasCopyableElements", "newCoroutineContext", "addedContext", "Lkotlinx/coroutines/CoroutineScope;", "undispatchedCompletion", "Lkotlinx/coroutines/UndispatchedCoroutine;", "Lkotlin/coroutines/jvm/internal/CoroutineStackFrame;", "updateUndispatchedCompletion", "oldValue", "kotlinx-coroutines-core"}, k = 2, mv = {1, 9, 0}, xi = 48)
 public final class CoroutineContextKt {
     private static final String DEBUG_THREAD_NAME_SEPARATOR = " @";
@@ -29,8 +29,8 @@ public final class CoroutineContextKt {
         return !hasCopyableElements(coroutineContext2) ? coroutineContext.plus(coroutineContext2) : foldCopies(coroutineContext, coroutineContext2, false);
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.CoroutineContextKt$hasCopyableElements$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: CoroutineContext.kt */
+    /* INFO: renamed from: kotlinx.coroutines.CoroutineContextKt$hasCopyableElements$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: CoroutineContext.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "result", "it", "Lkotlin/coroutines/CoroutineContext$Element;", "invoke", "(ZLkotlin/coroutines/CoroutineContext$Element;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class C03431 extends Lambda implements Function2<Boolean, CoroutineContext.Element, Boolean> {
         public static final C03431 INSTANCE = new C03431();
@@ -53,8 +53,8 @@ public final class CoroutineContextKt {
         return ((Boolean) coroutineContext.fold(false, C03431.INSTANCE)).booleanValue();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r4v6, types: [T, java.lang.Object] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r4v6, types: [T, java.lang.Object] */
     private static final CoroutineContext foldCopies(CoroutineContext coroutineContext, CoroutineContext coroutineContext2, boolean z) {
         boolean zHasCopyableElements = hasCopyableElements(coroutineContext);
         boolean zHasCopyableElements2 = hasCopyableElements(coroutineContext2);
@@ -70,8 +70,8 @@ public final class CoroutineContextKt {
         return coroutineContext3.plus((CoroutineContext) objectRef.element);
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.CoroutineContextKt$foldCopies$1, reason: invalid class name */
-    /* JADX INFO: compiled from: CoroutineContext.kt */
+    /* INFO: renamed from: kotlinx.coroutines.CoroutineContextKt$foldCopies$1, reason: invalid class name */
+    /* INFO: compiled from: CoroutineContext.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "Lkotlin/coroutines/CoroutineContext;", "result", "element", "Lkotlin/coroutines/CoroutineContext$Element;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function2<CoroutineContext, CoroutineContext.Element, CoroutineContext> {
         public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -98,7 +98,7 @@ public final class CoroutineContextKt {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:10:0x001e A[DONT_GENERATE] */
+    /* WARN: Code duplicated, block: B:10:0x001e A[DONT_GENERATE] */
     public static final <T> T withContinuationContext(Continuation<?> continuation, Object obj, Function0<? extends T> function0) {
         CoroutineContext context = continuation.getContext();
         Object objUpdateThreadContext = ThreadContextKt.updateThreadContext(context, obj);

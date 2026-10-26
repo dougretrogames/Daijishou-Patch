@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import java.util.Collection;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PreReceiveHookChain implements PreReceiveHook {
     private final int count;
     private final PreReceiveHook[] hooks;

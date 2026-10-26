@@ -6,8 +6,8 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlinx.coroutines.selects.SelectInstance;
 
-/* JADX INFO: compiled from: Mutex.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: Mutex.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 /* synthetic */ class MutexImpl$onLock$1 extends FunctionReferenceImpl implements Function3<MutexImpl, SelectInstance<?>, Object, Unit> {
     public static final MutexImpl$onLock$1 INSTANCE = new MutexImpl$onLock$1();
@@ -22,7 +22,7 @@ import kotlinx.coroutines.selects.SelectInstance;
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(MutexImpl mutexImpl, SelectInstance<?> selectInstance, Object obj) {
         mutexImpl.onLockRegFunction(selectInstance, obj);
     }

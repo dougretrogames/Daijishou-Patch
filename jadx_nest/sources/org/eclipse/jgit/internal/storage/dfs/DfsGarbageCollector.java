@@ -37,7 +37,7 @@ import org.eclipse.jgit.storage.pack.PackStatistics;
 import org.eclipse.jgit.util.SystemReader;
 import org.eclipse.jgit.util.io.CountingOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsGarbageCollector {
     private Set<ObjectId> allHeadsAndTags;
     private Set<ObjectId> allTags;

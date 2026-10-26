@@ -4,7 +4,7 @@ import android.webkit.WebView;
 import java.lang.reflect.InvocationHandler;
 import org.jspecify.annotations.NullMarked;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @NullMarked
 public interface WebViewProviderFactoryBoundaryInterface {
     public static final String MULTI_COOKIE_HEADER_NAME = "\u0000Set-Cookie-Multivalue\u0000";

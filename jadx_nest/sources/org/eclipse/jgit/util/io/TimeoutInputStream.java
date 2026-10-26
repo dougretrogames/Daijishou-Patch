@@ -7,7 +7,7 @@ import java.io.InterruptedIOException;
 import java.text.MessageFormat;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TimeoutInputStream extends FilterInputStream {
     private final InterruptTimer myTimer;
     private int timeout;

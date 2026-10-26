@@ -12,7 +12,7 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PassiveExpiringMap<K, V> extends AbstractMapDecorator<K, V> implements Serializable {
     private static final long serialVersionUID = 1;
     private final Map<Object, Long> expirationMap;
@@ -53,7 +53,7 @@ public class PassiveExpiringMap<K, V> extends AbstractMapDecorator<K, V> impleme
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static long validateAndConvertToMillis(long j, TimeUnit timeUnit) {
         Objects.requireNonNull(timeUnit, "timeUnit");
         return TimeUnit.MILLISECONDS.convert(j, timeUnit);

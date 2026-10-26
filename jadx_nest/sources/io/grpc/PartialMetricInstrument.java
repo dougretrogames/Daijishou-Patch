@@ -4,7 +4,7 @@ import com.google.common.collect.ImmutableList;
 import java.util.Collection;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 abstract class PartialMetricInstrument implements MetricInstrument {
     protected final String description;
     protected final boolean enableByDefault;

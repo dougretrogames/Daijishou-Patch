@@ -24,7 +24,7 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class ConnPoolByRoute extends AbstractConnPool {
     protected final ConnPerRoute connPerRoute;
@@ -139,7 +139,7 @@ public class ConnPoolByRoute extends AbstractConnPool {
         return new AnonymousClass1(new WaitingThreadAborter(), httpRoute, obj);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.conn.tsccm.ConnPoolByRoute$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.conn.tsccm.ConnPoolByRoute$1, reason: invalid class name */
     class AnonymousClass1 implements PoolEntryRequest {
         final /* synthetic */ WaitingThreadAborter val$aborter;
         final /* synthetic */ HttpRoute val$route;
@@ -363,11 +363,11 @@ public class ConnPoolByRoute extends AbstractConnPool {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:10:0x0038 A[Catch: all -> 0x0073, TryCatch #0 {all -> 0x0073, blocks: (B:4:0x0009, B:6:0x000f, B:8:0x0017, B:9:0x0033, B:21:0x006a, B:10:0x0038, B:12:0x0040, B:14:0x0048, B:15:0x004f, B:16:0x0058, B:18:0x0060), top: B:27:0x0009 }] */
-    /* JADX WARN: Code duplicated, block: B:12:0x0040 A[Catch: all -> 0x0073, TryCatch #0 {all -> 0x0073, blocks: (B:4:0x0009, B:6:0x000f, B:8:0x0017, B:9:0x0033, B:21:0x006a, B:10:0x0038, B:12:0x0040, B:14:0x0048, B:15:0x004f, B:16:0x0058, B:18:0x0060), top: B:27:0x0009 }] */
-    /* JADX WARN: Code duplicated, block: B:14:0x0048 A[Catch: all -> 0x0073, TryCatch #0 {all -> 0x0073, blocks: (B:4:0x0009, B:6:0x000f, B:8:0x0017, B:9:0x0033, B:21:0x006a, B:10:0x0038, B:12:0x0040, B:14:0x0048, B:15:0x004f, B:16:0x0058, B:18:0x0060), top: B:27:0x0009 }] */
-    /* JADX WARN: Code duplicated, block: B:16:0x0058 A[Catch: all -> 0x0073, TryCatch #0 {all -> 0x0073, blocks: (B:4:0x0009, B:6:0x000f, B:8:0x0017, B:9:0x0033, B:21:0x006a, B:10:0x0038, B:12:0x0040, B:14:0x0048, B:15:0x004f, B:16:0x0058, B:18:0x0060), top: B:27:0x0009 }] */
-    /* JADX WARN: Code duplicated, block: B:18:0x0060 A[Catch: all -> 0x0073, TryCatch #0 {all -> 0x0073, blocks: (B:4:0x0009, B:6:0x000f, B:8:0x0017, B:9:0x0033, B:21:0x006a, B:10:0x0038, B:12:0x0040, B:14:0x0048, B:15:0x004f, B:16:0x0058, B:18:0x0060), top: B:27:0x0009 }] */
+    /* WARN: Code duplicated, block: B:10:0x0038 A[Catch: all -> 0x0073, TryCatch #0 {all -> 0x0073, blocks: (B:4:0x0009, B:6:0x000f, B:8:0x0017, B:9:0x0033, B:21:0x006a, B:10:0x0038, B:12:0x0040, B:14:0x0048, B:15:0x004f, B:16:0x0058, B:18:0x0060), top: B:27:0x0009 }] */
+    /* WARN: Code duplicated, block: B:12:0x0040 A[Catch: all -> 0x0073, TryCatch #0 {all -> 0x0073, blocks: (B:4:0x0009, B:6:0x000f, B:8:0x0017, B:9:0x0033, B:21:0x006a, B:10:0x0038, B:12:0x0040, B:14:0x0048, B:15:0x004f, B:16:0x0058, B:18:0x0060), top: B:27:0x0009 }] */
+    /* WARN: Code duplicated, block: B:14:0x0048 A[Catch: all -> 0x0073, TryCatch #0 {all -> 0x0073, blocks: (B:4:0x0009, B:6:0x000f, B:8:0x0017, B:9:0x0033, B:21:0x006a, B:10:0x0038, B:12:0x0040, B:14:0x0048, B:15:0x004f, B:16:0x0058, B:18:0x0060), top: B:27:0x0009 }] */
+    /* WARN: Code duplicated, block: B:16:0x0058 A[Catch: all -> 0x0073, TryCatch #0 {all -> 0x0073, blocks: (B:4:0x0009, B:6:0x000f, B:8:0x0017, B:9:0x0033, B:21:0x006a, B:10:0x0038, B:12:0x0040, B:14:0x0048, B:15:0x004f, B:16:0x0058, B:18:0x0060), top: B:27:0x0009 }] */
+    /* WARN: Code duplicated, block: B:18:0x0060 A[Catch: all -> 0x0073, TryCatch #0 {all -> 0x0073, blocks: (B:4:0x0009, B:6:0x000f, B:8:0x0017, B:9:0x0033, B:21:0x006a, B:10:0x0038, B:12:0x0040, B:14:0x0048, B:15:0x004f, B:16:0x0058, B:18:0x0060), top: B:27:0x0009 }] */
     protected void notifyWaitingThread(RouteSpecificPool routeSpecificPool) {
         WaitingThread waitingThreadNextThread;
         this.poolLock.lock();

@@ -2,7 +2,7 @@ package androidx.core.internal.view;
 
 import android.view.Menu;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface SupportMenu extends Menu {
     public static final int CATEGORY_MASK = -65536;
     public static final int CATEGORY_SHIFT = 16;

@@ -6,7 +6,7 @@ import androidx.core.util.Preconditions;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class CompositeDateValidator implements CalendarConstraints.DateValidator {
     private static final int COMPARATOR_ALL_ID = 2;
     private static final int COMPARATOR_ANY_ID = 1;
@@ -31,7 +31,7 @@ public final class CompositeDateValidator implements CalendarConstraints.DateVal
         this(list, operator);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.CompositeDateValidator$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.CompositeDateValidator$1, reason: invalid class name */
     class AnonymousClass1 implements Operator {
         @Override // com.google.android.material.datepicker.CompositeDateValidator.Operator
         public int getId() {
@@ -52,7 +52,7 @@ public final class CompositeDateValidator implements CalendarConstraints.DateVal
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.CompositeDateValidator$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.CompositeDateValidator$2, reason: invalid class name */
     class AnonymousClass2 implements Operator {
         @Override // com.google.android.material.datepicker.CompositeDateValidator.Operator
         public int getId() {
@@ -86,12 +86,12 @@ public final class CompositeDateValidator implements CalendarConstraints.DateVal
         return new CompositeDateValidator(list, ANY_OPERATOR);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.CompositeDateValidator$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.CompositeDateValidator$3, reason: invalid class name */
     class AnonymousClass3 implements Parcelable.Creator<CompositeDateValidator> {
         AnonymousClass3() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public CompositeDateValidator createFromParcel(Parcel parcel) {
             ArrayList arrayList = parcel.readArrayList(CalendarConstraints.DateValidator.class.getClassLoader());
@@ -100,7 +100,7 @@ public final class CompositeDateValidator implements CalendarConstraints.DateVal
             return new CompositeDateValidator((List) Preconditions.checkNotNull(arrayList), operator, null);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public CompositeDateValidator[] newArray(int i) {
             return new CompositeDateValidator[i];

@@ -5,7 +5,7 @@ import androidx.core.graphics.Insets;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class ProtectionGroup implements SystemBarStateMonitor.Callback {
     private int mAnimationCount;
     private boolean mDisposed;

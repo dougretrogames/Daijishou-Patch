@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 import io.noties.markwon.R;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class AsyncDrawableScheduler {
     public static void schedule(TextView textView) {
         Integer num = (Integer) textView.getTag(R.id.markwon_drawables_scheduler_last_text_hashcode);
@@ -33,7 +33,7 @@ public abstract class AsyncDrawableScheduler {
         }
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.image.AsyncDrawableScheduler$1, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.image.AsyncDrawableScheduler$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnAttachStateChangeListener {
         final /* synthetic */ TextView val$textView;
 
@@ -94,7 +94,7 @@ public abstract class AsyncDrawableScheduler {
             this.previousBounds = new Rect(rect);
         }
 
-        /* JADX INFO: renamed from: io.noties.markwon.image.AsyncDrawableScheduler$DrawableCallbackImpl$1, reason: invalid class name */
+        /* INFO: renamed from: io.noties.markwon.image.AsyncDrawableScheduler$DrawableCallbackImpl$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             final /* synthetic */ Drawable val$who;
 

@@ -5,7 +5,7 @@ import androidx.vectordrawable.graphics.drawable.Animatable2Compat;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class IndeterminateAnimatorDelegate<T extends Animator> {
     protected final List<DrawingDelegate.ActiveIndicator> activeIndicators = new ArrayList();
     protected IndeterminateDrawable drawable;

@@ -2,7 +2,7 @@ package org.eclipse.jgit.errors;
 
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class TranslationBundleException extends RuntimeException {
     private static final long serialVersionUID = 1;
     private final Class bundleClass;

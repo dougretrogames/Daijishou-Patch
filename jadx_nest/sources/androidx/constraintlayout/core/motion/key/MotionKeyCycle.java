@@ -12,7 +12,7 @@ import java.util.Iterator;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionKeyCycle extends MotionKey {
     public static final int KEY_TYPE = 4;
     static final String NAME = "KeyCycle";
@@ -53,7 +53,7 @@ public class MotionKeyCycle extends MotionKey {
     }
 
     @Override // androidx.constraintlayout.core.motion.key.MotionKey
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public MotionKey mo3140clone() {
         return null;
     }
@@ -194,7 +194,7 @@ public class MotionKeyCycle extends MotionKey {
         return true;
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public float getValue(String str) {
         str.hashCode();
         byte b = -1;
@@ -304,7 +304,7 @@ public class MotionKeyCycle extends MotionKey {
         }
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     @Override // androidx.constraintlayout.core.motion.utils.TypedValues
     public int getId(String str) {
         byte b;

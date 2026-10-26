@@ -6,7 +6,7 @@ import org.apache.http.StatusLine;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicStatusLine implements StatusLine, Cloneable, Serializable {
     private static final long serialVersionUID = -2443303766890459269L;
     private final ProtocolVersion protoVersion;

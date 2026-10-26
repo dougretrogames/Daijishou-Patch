@@ -10,7 +10,7 @@ import org.apache.http.ProtocolException;
 import org.apache.http.entity.HttpEntityWrapper;
 import org.apache.http.protocol.HTTP;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class EntityEnclosingRequestWrapper extends RequestWrapper implements HttpEntityEnclosingRequest {
     private boolean consumed;

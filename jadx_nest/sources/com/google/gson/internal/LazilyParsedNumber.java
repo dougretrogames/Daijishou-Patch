@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectStreamException;
 import java.math.BigDecimal;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class LazilyParsedNumber extends Number {
     private final String value;
 

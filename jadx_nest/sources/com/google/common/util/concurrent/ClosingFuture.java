@@ -21,7 +21,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @DoNotMock("Use ClosingFuture.from(Futures.immediate*Future)")
 @ElementTypesAreNonnullByDefault
 public final class ClosingFuture<V> {
@@ -119,7 +119,7 @@ public final class ClosingFuture<V> {
         return closingFuture;
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$1, reason: invalid class name */
     class AnonymousClass1 implements FutureCallback<Closeable> {
         final /* synthetic */ Executor val$closingExecutor;
 
@@ -184,7 +184,7 @@ public final class ClosingFuture<V> {
         this.future = trustedListenableFutureTaskCreate;
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$2, reason: invalid class name */
     class AnonymousClass2 implements Callable<V> {
         final /* synthetic */ ClosingCallable val$callable;
 
@@ -212,7 +212,7 @@ public final class ClosingFuture<V> {
         this.future = trustedListenableFutureTaskCreate;
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$3, reason: invalid class name */
     class AnonymousClass3 implements AsyncCallable<V> {
         final /* synthetic */ AsyncClosingCallable val$callable;
 
@@ -246,8 +246,8 @@ public final class ClosingFuture<V> {
         return derive(this.future.transformAsync(new AnonymousClass4(function), executor));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [U] */
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$4, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [U] */
+    /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$4, reason: invalid class name */
     class AnonymousClass4<U> implements AsyncFunction<V, U> {
         final /* synthetic */ ClosingFunction val$function;
 
@@ -270,8 +270,8 @@ public final class ClosingFuture<V> {
         return derive(this.future.transformAsync(new AnonymousClass5(function), executor));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [U] */
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$5, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [U] */
+    /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$5, reason: invalid class name */
     class AnonymousClass5<U> implements AsyncFunction<V, U> {
         final /* synthetic */ AsyncClosingFunction val$function;
 
@@ -289,8 +289,8 @@ public final class ClosingFuture<V> {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [U] */
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$6, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [U] */
+    /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$6, reason: invalid class name */
     class AnonymousClass6<U> implements AsyncClosingFunction<V, U> {
         final /* synthetic */ AsyncFunction val$function;
 
@@ -309,7 +309,7 @@ public final class ClosingFuture<V> {
         return new AnonymousClass6(function);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public <X extends Throwable> ClosingFuture<V> catching(Class<X> exceptionType, ClosingFunction<? super X, ? extends V> fallback, Executor executor) {
         return catchingMoreGeneric(exceptionType, fallback, executor);
     }
@@ -319,8 +319,8 @@ public final class ClosingFuture<V> {
         return (ClosingFuture<V>) derive(this.future.catchingAsync(cls, new AnonymousClass7(closingFunction), executor));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [W, X] */
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$7, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [W, X] */
+    /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$7, reason: invalid class name */
     class AnonymousClass7<W, X> implements AsyncFunction<X, W> {
         final /* synthetic */ ClosingFunction val$fallback;
 
@@ -328,7 +328,7 @@ public final class ClosingFuture<V> {
             this.val$fallback = val$fallback;
         }
 
-        /* JADX WARN: Incorrect types in method signature: (TX;)Lcom/google/common/util/concurrent/ListenableFuture<TW;>; */
+        /* WARN: Incorrect types in method signature: (TX;)Lcom/google/common/util/concurrent/ListenableFuture<TW;>; */
         @Override // com.google.common.util.concurrent.AsyncFunction
         public ListenableFuture apply(Throwable exception) throws Exception {
             return ClosingFuture.this.closeables.applyClosingFunction(this.val$fallback, exception);
@@ -339,7 +339,7 @@ public final class ClosingFuture<V> {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public <X extends Throwable> ClosingFuture<V> catchingAsync(Class<X> exceptionType, AsyncClosingFunction<? super X, ? extends V> fallback, Executor executor) {
         return catchingAsyncMoreGeneric(exceptionType, fallback, executor);
     }
@@ -349,8 +349,8 @@ public final class ClosingFuture<V> {
         return (ClosingFuture<V>) derive(this.future.catchingAsync(cls, new AnonymousClass8(asyncClosingFunction), executor));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [W, X] */
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$8, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [W, X] */
+    /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$8, reason: invalid class name */
     class AnonymousClass8<W, X> implements AsyncFunction<X, W> {
         final /* synthetic */ AsyncClosingFunction val$fallback;
 
@@ -358,7 +358,7 @@ public final class ClosingFuture<V> {
             this.val$fallback = val$fallback;
         }
 
-        /* JADX WARN: Incorrect types in method signature: (TX;)Lcom/google/common/util/concurrent/ListenableFuture<TW;>; */
+        /* WARN: Incorrect types in method signature: (TX;)Lcom/google/common/util/concurrent/ListenableFuture<TW;>; */
         @Override // com.google.common.util.concurrent.AsyncFunction
         public ListenableFuture apply(Throwable exception) throws Exception {
             return ClosingFuture.this.closeables.applyAsyncClosingFunction(this.val$fallback, exception);
@@ -390,7 +390,7 @@ public final class ClosingFuture<V> {
         return this.future;
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$9, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$9, reason: invalid class name */
     class AnonymousClass9 implements Runnable {
         AnonymousClass9() {
         }
@@ -403,7 +403,7 @@ public final class ClosingFuture<V> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$11, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$11, reason: invalid class name */
     static /* synthetic */ class AnonymousClass11 {
         static final /* synthetic */ int[] $SwitchMap$com$google$common$util$concurrent$ClosingFuture$State;
 
@@ -455,7 +455,7 @@ public final class ClosingFuture<V> {
         this.future.addListener(new AnonymousClass10(consumer), executor);
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$10, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$10, reason: invalid class name */
     class AnonymousClass10 implements Runnable {
         final /* synthetic */ ValueAndCloserConsumer val$consumer;
 
@@ -469,7 +469,7 @@ public final class ClosingFuture<V> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <C, V extends C> void provideValueAndCloser(ValueAndCloserConsumer<C> consumer, ClosingFuture<V> closingFuture) {
         consumer.accept(new ValueAndCloser<>(closingFuture));
     }
@@ -483,7 +483,7 @@ public final class ClosingFuture<V> {
         return zCancel;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void close() {
         logger.get().log(Level.FINER, "closing {0}", this);
         this.closeables.close();
@@ -495,7 +495,7 @@ public final class ClosingFuture<V> {
         return closingFuture;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void becomeSubsumedInto(CloseableList otherCloseables) {
         checkAndUpdateState(State.OPEN, State.SUBSUMED);
         otherCloseables.add(this.closeables, MoreExecutors.directExecutor());
@@ -520,7 +520,7 @@ public final class ClosingFuture<V> {
             return (D) Futures.getDone(((ClosingFuture) closingFuture).future);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         @ParametricNullness
         public <V> V call(Combiner.CombiningCallable<V> combiner, CloseableList closeables) throws Exception {
             this.beingCalled = true;
@@ -533,7 +533,7 @@ public final class ClosingFuture<V> {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public <V> FluentFuture<V> callAsync(Combiner.AsyncCombiningCallable<V> combiner, CloseableList closeables) throws Exception {
             this.beingCalled = true;
             CloseableList closeableList = new CloseableList(null);
@@ -577,7 +577,7 @@ public final class ClosingFuture<V> {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner$1, reason: invalid class name */
         class AnonymousClass1 implements Callable<V> {
             final /* synthetic */ CombiningCallable val$combiningCallable;
 
@@ -602,7 +602,7 @@ public final class ClosingFuture<V> {
             return closingFuture;
         }
 
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner$2, reason: invalid class name */
         class AnonymousClass2 implements AsyncCallable<V> {
             final /* synthetic */ AsyncCombiningCallable val$combiningCallable;
 
@@ -661,8 +661,8 @@ public final class ClosingFuture<V> {
             this.future2 = future2;
         }
 
-        /* JADX INFO: Add missing generic type declarations: [U] */
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner2$1, reason: invalid class name */
+        /* INFO: Add missing generic type declarations: [U] */
+        /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner2$1, reason: invalid class name */
         class AnonymousClass1<U> implements Combiner.CombiningCallable<U> {
             final /* synthetic */ ClosingFunction2 val$function;
 
@@ -670,7 +670,7 @@ public final class ClosingFuture<V> {
                 this.val$function = val$function;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.util.concurrent.ClosingFuture.Combiner.CombiningCallable
             @ParametricNullness
             public U call(DeferredCloser deferredCloser, Peeker peeker) throws Exception {
@@ -686,8 +686,8 @@ public final class ClosingFuture<V> {
             return call(new AnonymousClass1(closingFunction2), executor);
         }
 
-        /* JADX INFO: Add missing generic type declarations: [U] */
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner2$2, reason: invalid class name */
+        /* INFO: Add missing generic type declarations: [U] */
+        /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner2$2, reason: invalid class name */
         class AnonymousClass2<U> implements Combiner.AsyncCombiningCallable<U> {
             final /* synthetic */ AsyncClosingFunction2 val$function;
 
@@ -695,7 +695,7 @@ public final class ClosingFuture<V> {
                 this.val$function = val$function;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.util.concurrent.ClosingFuture.Combiner.AsyncCombiningCallable
             public ClosingFuture<U> call(DeferredCloser closer, Peeker peeker) throws Exception {
                 return this.val$function.apply(closer, peeker.getDone(Combiner2.this.future1), peeker.getDone(Combiner2.this.future2));
@@ -736,8 +736,8 @@ public final class ClosingFuture<V> {
             this.future3 = future3;
         }
 
-        /* JADX INFO: Add missing generic type declarations: [U] */
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner3$1, reason: invalid class name */
+        /* INFO: Add missing generic type declarations: [U] */
+        /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner3$1, reason: invalid class name */
         class AnonymousClass1<U> implements Combiner.CombiningCallable<U> {
             final /* synthetic */ ClosingFunction3 val$function;
 
@@ -745,7 +745,7 @@ public final class ClosingFuture<V> {
                 this.val$function = val$function;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.util.concurrent.ClosingFuture.Combiner.CombiningCallable
             @ParametricNullness
             public U call(DeferredCloser deferredCloser, Peeker peeker) throws Exception {
@@ -761,8 +761,8 @@ public final class ClosingFuture<V> {
             return call(new AnonymousClass1(closingFunction3), executor);
         }
 
-        /* JADX INFO: Add missing generic type declarations: [U] */
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner3$2, reason: invalid class name */
+        /* INFO: Add missing generic type declarations: [U] */
+        /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner3$2, reason: invalid class name */
         class AnonymousClass2<U> implements Combiner.AsyncCombiningCallable<U> {
             final /* synthetic */ AsyncClosingFunction3 val$function;
 
@@ -770,7 +770,7 @@ public final class ClosingFuture<V> {
                 this.val$function = val$function;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.util.concurrent.ClosingFuture.Combiner.AsyncCombiningCallable
             public ClosingFuture<U> call(DeferredCloser closer, Peeker peeker) throws Exception {
                 return this.val$function.apply(closer, peeker.getDone(Combiner3.this.future1), peeker.getDone(Combiner3.this.future2), peeker.getDone(Combiner3.this.future3));
@@ -813,8 +813,8 @@ public final class ClosingFuture<V> {
             this.future4 = future4;
         }
 
-        /* JADX INFO: Add missing generic type declarations: [U] */
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner4$1, reason: invalid class name */
+        /* INFO: Add missing generic type declarations: [U] */
+        /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner4$1, reason: invalid class name */
         class AnonymousClass1<U> implements Combiner.CombiningCallable<U> {
             final /* synthetic */ ClosingFunction4 val$function;
 
@@ -822,7 +822,7 @@ public final class ClosingFuture<V> {
                 this.val$function = val$function;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.util.concurrent.ClosingFuture.Combiner.CombiningCallable
             @ParametricNullness
             public U call(DeferredCloser deferredCloser, Peeker peeker) throws Exception {
@@ -838,8 +838,8 @@ public final class ClosingFuture<V> {
             return call(new AnonymousClass1(closingFunction4), executor);
         }
 
-        /* JADX INFO: Add missing generic type declarations: [U] */
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner4$2, reason: invalid class name */
+        /* INFO: Add missing generic type declarations: [U] */
+        /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner4$2, reason: invalid class name */
         class AnonymousClass2<U> implements Combiner.AsyncCombiningCallable<U> {
             final /* synthetic */ AsyncClosingFunction4 val$function;
 
@@ -847,7 +847,7 @@ public final class ClosingFuture<V> {
                 this.val$function = val$function;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.util.concurrent.ClosingFuture.Combiner.AsyncCombiningCallable
             public ClosingFuture<U> call(DeferredCloser closer, Peeker peeker) throws Exception {
                 return this.val$function.apply(closer, peeker.getDone(Combiner4.this.future1), peeker.getDone(Combiner4.this.future2), peeker.getDone(Combiner4.this.future3), peeker.getDone(Combiner4.this.future4));
@@ -892,8 +892,8 @@ public final class ClosingFuture<V> {
             this.future5 = future5;
         }
 
-        /* JADX INFO: Add missing generic type declarations: [U] */
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner5$1, reason: invalid class name */
+        /* INFO: Add missing generic type declarations: [U] */
+        /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner5$1, reason: invalid class name */
         class AnonymousClass1<U> implements Combiner.CombiningCallable<U> {
             final /* synthetic */ ClosingFunction5 val$function;
 
@@ -901,7 +901,7 @@ public final class ClosingFuture<V> {
                 this.val$function = val$function;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.util.concurrent.ClosingFuture.Combiner.CombiningCallable
             @ParametricNullness
             public U call(DeferredCloser deferredCloser, Peeker peeker) throws Exception {
@@ -917,8 +917,8 @@ public final class ClosingFuture<V> {
             return call(new AnonymousClass1(closingFunction5), executor);
         }
 
-        /* JADX INFO: Add missing generic type declarations: [U] */
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner5$2, reason: invalid class name */
+        /* INFO: Add missing generic type declarations: [U] */
+        /* INFO: renamed from: com.google.common.util.concurrent.ClosingFuture$Combiner5$2, reason: invalid class name */
         class AnonymousClass2<U> implements Combiner.AsyncCombiningCallable<U> {
             final /* synthetic */ AsyncClosingFunction5 val$function;
 
@@ -926,7 +926,7 @@ public final class ClosingFuture<V> {
                 this.val$function = val$function;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.util.concurrent.ClosingFuture.Combiner.AsyncCombiningCallable
             public ClosingFuture<U> call(DeferredCloser closer, Peeker peeker) throws Exception {
                 return this.val$function.apply(closer, peeker.getDone(Combiner5.this.future1), peeker.getDone(Combiner5.this.future2), peeker.getDone(Combiner5.this.future3), peeker.getDone(Combiner5.this.future4), peeker.getDone(Combiner5.this.future5));
@@ -953,7 +953,7 @@ public final class ClosingFuture<V> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void closeQuietly(@CheckForNull final Closeable closeable, Executor executor) {
         if (closeable == null) {
             return;
@@ -978,7 +978,7 @@ public final class ClosingFuture<V> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void checkAndUpdateState(State oldState, State newState) {
         Preconditions.checkState(compareAndUpdateState(oldState, newState), "Expected state to be %s, but it was %s", oldState, newState);
     }
@@ -1002,7 +1002,7 @@ public final class ClosingFuture<V> {
             this();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         <V, U> ListenableFuture<U> applyClosingFunction(ClosingFunction<? super V, U> transformation, @ParametricNullness V input) throws Exception {
             CloseableList closeableList = new CloseableList();
             try {

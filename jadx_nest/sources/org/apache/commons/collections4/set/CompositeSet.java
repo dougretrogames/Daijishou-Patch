@@ -15,7 +15,7 @@ import org.apache.commons.collections4.iterators.EmptyIterator;
 import org.apache.commons.collections4.iterators.IteratorChain;
 import org.apache.commons.collections4.list.UnmodifiableList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CompositeSet<E> implements Set<E>, Serializable {
     private static final long serialVersionUID = 5185069727540378940L;
     private final List<Set<E>> all = new ArrayList();

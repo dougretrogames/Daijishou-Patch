@@ -5,7 +5,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.FunctorException;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class InvokerTransformer<T, R> implements Transformer<T, R> {
     private final Object[] iArgs;
     private final String iMethodName;

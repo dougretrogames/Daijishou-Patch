@@ -6,7 +6,7 @@ import java.util.Locale;
 import org.apache.http.util.Args;
 import org.apache.http.util.LangUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NTUserPrincipal implements Principal, Serializable {
     private static final long serialVersionUID = -6870169797924406894L;
     private final String domain;

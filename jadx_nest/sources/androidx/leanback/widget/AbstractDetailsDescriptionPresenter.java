@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.widget.TextView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class AbstractDetailsDescriptionPresenter extends Presenter {
     protected abstract void onBindDescription(ViewHolder viewHolder, Object obj);
 
@@ -55,7 +55,7 @@ public abstract class AbstractDetailsDescriptionPresenter extends Presenter {
             textView.addOnLayoutChangeListener(new AnonymousClass1());
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.AbstractDetailsDescriptionPresenter$ViewHolder$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.AbstractDetailsDescriptionPresenter$ViewHolder$1, reason: invalid class name */
         class AnonymousClass1 implements View.OnLayoutChangeListener {
             AnonymousClass1() {
             }
@@ -74,7 +74,7 @@ public abstract class AbstractDetailsDescriptionPresenter extends Presenter {
             this.view.getViewTreeObserver().addOnPreDrawListener(this.mPreDrawListener);
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.AbstractDetailsDescriptionPresenter$ViewHolder$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.AbstractDetailsDescriptionPresenter$ViewHolder$2, reason: invalid class name */
         class AnonymousClass2 implements ViewTreeObserver.OnPreDrawListener {
             AnonymousClass2() {
             }

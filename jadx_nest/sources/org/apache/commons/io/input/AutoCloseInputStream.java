@@ -5,7 +5,7 @@ import java.io.InputStream;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.function.IOIntConsumer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AutoCloseInputStream extends ProxyInputStream {
     /* synthetic */ AutoCloseInputStream(Builder builder, AnonymousClass1 anonymousClass1) throws IOException {
         this(builder);

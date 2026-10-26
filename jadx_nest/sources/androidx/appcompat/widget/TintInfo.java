@@ -3,7 +3,7 @@ package androidx.appcompat.widget;
 import android.content.res.ColorStateList;
 import android.graphics.PorterDuff;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TintInfo {
     public boolean mHasTintList;
     public boolean mHasTintMode;

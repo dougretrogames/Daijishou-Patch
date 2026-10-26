@@ -8,7 +8,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.internal.transport.parser.FirstWant;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class ProtocolV0Parser {
     private final TransferConfig transferConfig;
 

@@ -11,7 +11,7 @@ import java.util.List;
 import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class CharStreams {
     private static final int DEFAULT_BUF_SIZE = 2048;

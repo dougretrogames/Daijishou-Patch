@@ -24,7 +24,7 @@ import org.jsoup.nodes.TextNode;
 import org.jsoup.nodes.XmlDeclaration;
 import org.jsoup.select.Elements;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class XmlTreeBuilder extends TreeBuilder {
     static final String XmlnsKey = "xmlns";
     static final String XmlnsPrefix = "xmlns:";
@@ -82,7 +82,7 @@ public class XmlTreeBuilder extends TreeBuilder {
         return this.doc.childNodes();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // org.jsoup.parser.TreeBuilder
     public XmlTreeBuilder newInstance() {
         return new XmlTreeBuilder();
@@ -129,7 +129,7 @@ public class XmlTreeBuilder extends TreeBuilder {
         return true;
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.XmlTreeBuilder$1, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.XmlTreeBuilder$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$org$jsoup$parser$Token$TokenType;
 

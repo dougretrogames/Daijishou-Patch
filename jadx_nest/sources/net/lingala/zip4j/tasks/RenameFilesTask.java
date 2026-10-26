@@ -21,7 +21,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import net.lingala.zip4j.util.RawIO;
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RenameFilesTask extends AbstractModifyFileTask<RenameFilesTaskParameters> {
     private final HeaderWriter headerWriter;
     private final RawIO rawIO;
@@ -34,7 +34,7 @@ public class RenameFilesTask extends AbstractModifyFileTask<RenameFilesTaskParam
         this.rawIO = rawIO;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.tasks.AsyncZipTask
     public void executeTask(RenameFilesTaskParameters renameFilesTaskParameters, ProgressMonitor progressMonitor) throws IOException {
         RandomAccessFile randomAccessFile;
@@ -138,7 +138,7 @@ public class RenameFilesTask extends AbstractModifyFileTask<RenameFilesTaskParam
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.tasks.AsyncZipTask
     public long calculateTotalWork(RenameFilesTaskParameters renameFilesTaskParameters) {
         return this.zipModel.getZipFile().length();

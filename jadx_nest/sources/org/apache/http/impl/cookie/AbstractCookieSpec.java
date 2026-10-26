@@ -10,7 +10,7 @@ import org.apache.http.cookie.CookieSpec;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractCookieSpec implements CookieSpec {
     private final Map<String, CookieAttributeHandler> attribHandlerMap;
 

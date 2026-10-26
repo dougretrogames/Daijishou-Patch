@@ -25,7 +25,7 @@ import org.eclipse.jgit.treewalk.filter.PathFilter;
 import org.eclipse.jgit.treewalk.filter.PathFilterGroup;
 import org.eclipse.jgit.util.FileUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SubmoduleDeinitCommand extends GitCommand<Collection<SubmoduleDeinitResult>> {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$api$SubmoduleDeinitCommand$SubmoduleDeinitStatus;
     private boolean force;
@@ -37,7 +37,7 @@ public class SubmoduleDeinitCommand extends GitCommand<Collection<SubmoduleDeini
         FORCED,
         DIRTY;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static SubmoduleDeinitStatus[] valuesCustom() {
             SubmoduleDeinitStatus[] submoduleDeinitStatusArrValuesCustom = values();
             int length = submoduleDeinitStatusArrValuesCustom.length;
@@ -78,18 +78,18 @@ public class SubmoduleDeinitCommand extends GitCommand<Collection<SubmoduleDeini
         this.paths = new ArrayList();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v8, types: [java.lang.Throwable] */
-    /* JADX WARN: Type inference failed for: r1v13, types: [java.lang.String] */
-    /* JADX WARN: Type inference failed for: r1v16 */
-    /* JADX WARN: Type inference failed for: r1v17 */
-    /* JADX WARN: Type inference failed for: r1v18 */
-    /* JADX WARN: Type inference failed for: r1v19 */
-    /* JADX WARN: Type inference failed for: r1v5 */
-    /* JADX WARN: Type inference failed for: r1v6, types: [java.lang.Throwable] */
-    /* JADX WARN: Type inference failed for: r1v7, types: [java.lang.Throwable] */
-    /* JADX WARN: Type inference failed for: r1v8 */
-    /* JADX WARN: Type inference failed for: r1v9, types: [java.lang.Throwable] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v8, types: [java.lang.Throwable] */
+    /* WARN: Type inference failed for: r1v13, types: [java.lang.String] */
+    /* WARN: Type inference failed for: r1v16 */
+    /* WARN: Type inference failed for: r1v17 */
+    /* WARN: Type inference failed for: r1v18 */
+    /* WARN: Type inference failed for: r1v19 */
+    /* WARN: Type inference failed for: r1v5 */
+    /* WARN: Type inference failed for: r1v6, types: [java.lang.Throwable] */
+    /* WARN: Type inference failed for: r1v7, types: [java.lang.Throwable] */
+    /* WARN: Type inference failed for: r1v8 */
+    /* WARN: Type inference failed for: r1v9, types: [java.lang.Throwable] */
     @Override // org.eclipse.jgit.api.GitCommand, java.util.concurrent.Callable
     public Collection<SubmoduleDeinitResult> call() throws GitAPIException {
         checkCallable();

@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 import org.apache.commons.io.IORandomAccessFile;
 import org.apache.commons.io.build.AbstractOriginSupplier;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractOriginSupplier<T, B extends AbstractOriginSupplier<T, B>> extends AbstractSupplier<T, B> {
     private AbstractOrigin<?, ?> origin;
 

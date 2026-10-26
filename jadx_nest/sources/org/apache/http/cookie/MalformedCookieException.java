@@ -2,7 +2,7 @@ package org.apache.http.cookie;
 
 import org.apache.http.ProtocolException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MalformedCookieException extends ProtocolException {
     private static final long serialVersionUID = -6695462944287282185L;
 

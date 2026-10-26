@@ -18,7 +18,7 @@ import org.eclipse.jgit.util.RawParseUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SideBandInputStream extends InputStream {
     static final int CH_DATA = 1;
     static final int CH_ERROR = 3;

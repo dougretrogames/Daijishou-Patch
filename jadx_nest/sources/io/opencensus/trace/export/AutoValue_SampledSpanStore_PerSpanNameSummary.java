@@ -3,7 +3,7 @@ package io.opencensus.trace.export;
 import io.opencensus.trace.Status;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_SampledSpanStore_PerSpanNameSummary extends SampledSpanStore.PerSpanNameSummary {
     private final Map<Status.CanonicalCode, Integer> numbersOfErrorSampledSpans;
     private final Map<SampledSpanStore.LatencyBucketBoundaries, Integer> numbersOfLatencySampledSpans;

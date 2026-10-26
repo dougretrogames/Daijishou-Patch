@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.function.Predicate;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class WildcardFilter$$ExternalSyntheticLambda0 implements Predicate {
     public final /* synthetic */ File f$0;
 

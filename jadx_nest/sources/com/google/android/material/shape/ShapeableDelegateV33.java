@@ -4,7 +4,7 @@ import android.graphics.Outline;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ShapeableDelegateV33 extends ShapeableDelegate {
     ShapeableDelegateV33(View view) {
         initMaskOutlineProvider(view);
@@ -25,7 +25,7 @@ class ShapeableDelegateV33 extends ShapeableDelegate {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.shape.ShapeableDelegateV33$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.shape.ShapeableDelegateV33$1, reason: invalid class name */
     class AnonymousClass1 extends ViewOutlineProvider {
         AnonymousClass1() {
         }

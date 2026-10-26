@@ -2,7 +2,7 @@ package com.google.common.collect;
 
 import java.io.Serializable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class UsingToStringOrdering extends Ordering<Object> implements Serializable {
     static final UsingToStringOrdering INSTANCE = new UsingToStringOrdering();

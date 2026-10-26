@@ -5,7 +5,7 @@ import com.google.common.collect.ImmutableMap;
 import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ExecutionException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public interface LoadingCache<K, V> extends Cache<K, V>, Function<K, V> {
     @Override // com.google.common.base.Function

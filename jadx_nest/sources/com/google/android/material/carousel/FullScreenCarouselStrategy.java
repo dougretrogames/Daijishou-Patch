@@ -3,7 +3,7 @@ package com.google.android.material.carousel;
 import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FullScreenCarouselStrategy extends CarouselStrategy {
     @Override // com.google.android.material.carousel.CarouselStrategy
     KeylineState onFirstChildMeasuredWithMargins(Carousel carousel, View view) {

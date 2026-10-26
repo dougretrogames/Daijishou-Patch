@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.RandomAccess;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class BooleanArrayList extends AbstractProtobufList<Boolean> implements Internal.BooleanList, RandomAccess, PrimitiveNonBoxingCollection {
     private static final BooleanArrayList EMPTY_LIST = new BooleanArrayList(new boolean[0], 0, false);
     private boolean[] array;
@@ -67,7 +67,7 @@ final class BooleanArrayList extends AbstractProtobufList<Boolean> implements In
     }
 
     @Override // com.google.protobuf.Internal.ProtobufList, com.google.protobuf.Internal.BooleanList
-    /* JADX INFO: renamed from: mutableCopyWithCapacity */
+    /* INFO: renamed from: mutableCopyWithCapacity */
     public Internal.ProtobufList<Boolean> mutableCopyWithCapacity2(int capacity) {
         if (capacity < this.size) {
             throw new IllegalArgumentException();

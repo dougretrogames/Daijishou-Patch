@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class DaijishouDatabase_Impl extends DaijishouDatabase {
     private volatile EventDAO _eventDAO;
     private volatile PlatformDAO _platformDAO;
@@ -29,7 +29,7 @@ public final class DaijishouDatabase_Impl extends DaijishouDatabase {
     private volatile PlayableItemToGenrePairDAO _playableItemToGenrePairDAO;
     private volatile PlayerDAO _playerDAO;
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.DaijishouDatabase_Impl$1, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.DaijishouDatabase_Impl$1, reason: invalid class name */
     class AnonymousClass1 extends RoomOpenHelper.Delegate {
         @Override // androidx.room.RoomOpenHelper.Delegate
         public void onPostMigrate(final SupportSQLiteDatabase db) {

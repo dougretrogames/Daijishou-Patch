@@ -4,7 +4,7 @@ import android.content.UriMatcher;
 import android.net.Uri;
 import androidx.core.util.Predicate;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class UriMatcherCompat {
     private UriMatcherCompat() {
     }

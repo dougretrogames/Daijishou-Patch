@@ -25,14 +25,14 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Deferred;
 
-/* JADX INFO: compiled from: DaijishouDebugService.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouDebugService.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class DaijishouDebugService$DaijishouDebugServiceTcpClient$start$1 extends Lambda<Unit> implements Function0<Unit> {
     final /* synthetic */ DaijishouDebugService this$0;
     final /* synthetic */ DaijishouDebugService.DaijishouDebugServiceTcpClient this$1;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     DaijishouDebugService$DaijishouDebugServiceTcpClient$start$1(DaijishouDebugService daijishouDebugService, DaijishouDebugService.DaijishouDebugServiceTcpClient daijishouDebugServiceTcpClient) {
         super(0);
         this.this$0 = daijishouDebugService;
@@ -45,7 +45,7 @@ final class DaijishouDebugService$DaijishouDebugServiceTcpClient$start$1 extends
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2() {
         DaijishouApplication.WrappedLogger logger = this.this$0.getLogger();
         DaijishouDebugService.DaijishouDebugServiceTcpClient daijishouDebugServiceTcpClient = this.this$1;
@@ -96,8 +96,8 @@ final class DaijishouDebugService$DaijishouDebugServiceTcpClient$start$1 extends
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.DaijishouDebugService$DaijishouDebugServiceTcpClient$start$1$2, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouDebugService.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.DaijishouDebugService$DaijishouDebugServiceTcpClient$start$1$2, reason: invalid class name */
+    /* INFO: compiled from: DaijishouDebugService.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_debug_service.DaijishouDebugService$DaijishouDebugServiceTcpClient$start$1$2", f = "DaijishouDebugService.kt", i = {0}, l = {168}, m = "invokeSuspendImpl", n = {"$this$async"}, s = {"L$0"})
     static final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -110,7 +110,7 @@ final class DaijishouDebugService$DaijishouDebugServiceTcpClient$start$1 extends
         final /* synthetic */ DaijishouDebugService this$0;
         final /* synthetic */ DaijishouDebugService.DaijishouDebugServiceTcpClient this$1;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(ClientOperation clientOperation, DataInputStream dataInputStream, DataOutputStream dataOutputStream, DaijishouDebugService daijishouDebugService, byte b, DaijishouDebugService.DaijishouDebugServiceTcpClient daijishouDebugServiceTcpClient, Continuation<?> continuation) {
             super(2, continuation);
             this.$operation = clientOperation;

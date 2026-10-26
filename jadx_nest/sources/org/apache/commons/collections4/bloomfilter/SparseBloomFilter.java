@@ -8,7 +8,7 @@ import java.util.function.IntPredicate;
 import java.util.function.LongPredicate;
 import java.util.stream.Stream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class SparseBloomFilter implements BloomFilter<SparseBloomFilter> {
     private final TreeSet<Integer> indices;
     private final Shape shape;
@@ -29,7 +29,7 @@ public final class SparseBloomFilter implements BloomFilter<SparseBloomFilter> {
         this.indices = new TreeSet<>((SortedSet) sparseBloomFilter.indices);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean add(int i) {
         this.indices.add(Integer.valueOf(i));
         return true;

@@ -5,7 +5,7 @@ import com.google.errorprone.annotations.Immutable;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable
 @ElementTypesAreNonnullByDefault
 abstract class AbstractHashFunction implements HashFunction {

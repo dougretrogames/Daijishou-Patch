@@ -36,7 +36,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialCheckBox extends AppCompatCheckBox {
     public static final int STATE_CHECKED = 1;
     public static final int STATE_INDETERMINATE = 2;
@@ -82,7 +82,7 @@ public class MaterialCheckBox extends AppCompatCheckBox {
     private void updateIconTintIfNeeded() {
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.checkbox.MaterialCheckBox$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.checkbox.MaterialCheckBox$1, reason: invalid class name */
     class AnonymousClass1 extends Animatable2Compat.AnimationCallback {
         AnonymousClass1() {
         }
@@ -112,7 +112,7 @@ public class MaterialCheckBox extends AppCompatCheckBox {
         this(context, attributeSet, R.attr.checkboxStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public MaterialCheckBox(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -147,7 +147,7 @@ public class MaterialCheckBox extends AppCompatCheckBox {
         refreshButtonDrawable();
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$com-google-android-material-checkbox-MaterialCheckBox, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$com-google-android-material-checkbox-MaterialCheckBox, reason: not valid java name */
     /* synthetic */ void m3261xdf87d0bf() {
         this.buttonIconDrawable.jumpToCurrentState();
     }
@@ -552,18 +552,18 @@ public class MaterialCheckBox extends AppCompatCheckBox {
             return "MaterialCheckBox.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " CheckedState=" + getCheckedStateString() + "}";
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.checkbox.MaterialCheckBox$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.checkbox.MaterialCheckBox$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel, null);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];

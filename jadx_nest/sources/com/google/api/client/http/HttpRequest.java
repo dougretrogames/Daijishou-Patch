@@ -24,7 +24,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class HttpRequest {
     public static final int DEFAULT_NUMBER_OF_RETRIES = 10;
     public static final String USER_AGENT_SUFFIX;
@@ -312,76 +312,76 @@ public final class HttpRequest {
         return this;
     }
 
-    /* JADX WARN: Code duplicated, block: B:115:0x02e2 A[Catch: all -> 0x0325, TryCatch #1 {all -> 0x0325, blocks: (B:113:0x02dc, B:115:0x02e2, B:117:0x02e6, B:120:0x02ee, B:124:0x0300, B:126:0x0304, B:128:0x030e, B:131:0x0318, B:135:0x0321), top: B:172:0x02dc }] */
-    /* JADX WARN: Code duplicated, block: B:117:0x02e6 A[Catch: all -> 0x0325, TryCatch #1 {all -> 0x0325, blocks: (B:113:0x02dc, B:115:0x02e2, B:117:0x02e6, B:120:0x02ee, B:124:0x0300, B:126:0x0304, B:128:0x030e, B:131:0x0318, B:135:0x0321), top: B:172:0x02dc }] */
-    /* JADX WARN: Code duplicated, block: B:118:0x02eb  */
-    /* JADX WARN: Code duplicated, block: B:120:0x02ee A[Catch: all -> 0x0325, TryCatch #1 {all -> 0x0325, blocks: (B:113:0x02dc, B:115:0x02e2, B:117:0x02e6, B:120:0x02ee, B:124:0x0300, B:126:0x0304, B:128:0x030e, B:131:0x0318, B:135:0x0321), top: B:172:0x02dc }] */
-    /* JADX WARN: Code duplicated, block: B:122:0x02fc  */
-    /* JADX WARN: Code duplicated, block: B:123:0x02fe  */
-    /* JADX WARN: Code duplicated, block: B:135:0x0321 A[Catch: all -> 0x0325, TRY_ENTER, TRY_LEAVE, TryCatch #1 {all -> 0x0325, blocks: (B:113:0x02dc, B:115:0x02e2, B:117:0x02e6, B:120:0x02ee, B:124:0x0300, B:126:0x0304, B:128:0x030e, B:131:0x0318, B:135:0x0321), top: B:172:0x02dc }] */
-    /* JADX WARN: Code duplicated, block: B:141:0x032c A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:142:0x032e  */
-    /* JADX WARN: Code duplicated, block: B:143:0x0330  */
-    /* JADX WARN: Code duplicated, block: B:148:0x0338  */
-    /* JADX WARN: Code duplicated, block: B:149:0x033b  */
-    /* JADX WARN: Code duplicated, block: B:152:0x034c  */
-    /* JADX WARN: Code duplicated, block: B:154:0x0350  */
-    /* JADX WARN: Code duplicated, block: B:166:0x0375  */
-    /* JADX WARN: Code duplicated, block: B:167:0x0376 A[LOOP:0: B:10:0x0035->B:167:0x0376, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:172:0x02dc A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:177:0x0318 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:184:0x0336 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:32:0x00eb  */
-    /* JADX WARN: Code duplicated, block: B:34:0x00ef  */
-    /* JADX WARN: Code duplicated, block: B:35:0x00fa  */
-    /* JADX WARN: Code duplicated, block: B:38:0x0129  */
-    /* JADX WARN: Code duplicated, block: B:45:0x013b  */
-    /* JADX WARN: Code duplicated, block: B:48:0x0140  */
-    /* JADX WARN: Code duplicated, block: B:50:0x0148  */
-    /* JADX WARN: Code duplicated, block: B:51:0x015b  */
-    /* JADX WARN: Code duplicated, block: B:54:0x0165  */
-    /* JADX WARN: Code duplicated, block: B:55:0x016f  */
-    /* JADX WARN: Code duplicated, block: B:57:0x017f  */
-    /* JADX WARN: Code duplicated, block: B:59:0x0183  */
-    /* JADX WARN: Code duplicated, block: B:61:0x01a3  */
-    /* JADX WARN: Code duplicated, block: B:62:0x01b8  */
-    /* JADX WARN: Code duplicated, block: B:64:0x01c0  */
-    /* JADX WARN: Code duplicated, block: B:66:0x01da  */
-    /* JADX WARN: Code duplicated, block: B:69:0x01f4  */
-    /* JADX WARN: Code duplicated, block: B:70:0x020d  */
-    /* JADX WARN: Code duplicated, block: B:72:0x0215  */
-    /* JADX WARN: Code duplicated, block: B:74:0x0227  */
-    /* JADX WARN: Code duplicated, block: B:76:0x0235  */
-    /* JADX WARN: Code duplicated, block: B:78:0x023e  */
-    /* JADX WARN: Code duplicated, block: B:80:0x0251  */
-    /* JADX WARN: Code duplicated, block: B:85:0x0263  */
-    /* JADX WARN: Code duplicated, block: B:89:0x0285 A[Catch: all -> 0x02b1, IOException -> 0x02b4, TRY_LEAVE, TryCatch #3 {IOException -> 0x02b4, blocks: (B:87:0x027f, B:89:0x0285, B:93:0x02a7, B:95:0x02ad, B:96:0x02b0), top: B:171:0x027f, outer: #0 }] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v14, types: [java.lang.Throwable] */
-    /* JADX WARN: Type inference failed for: r0v16, types: [com.google.api.client.http.HttpResponseInterceptor] */
-    /* JADX WARN: Type inference failed for: r0v23 */
-    /* JADX WARN: Type inference failed for: r0v26 */
-    /* JADX WARN: Type inference failed for: r0v32 */
-    /* JADX WARN: Type inference failed for: r0v4 */
-    /* JADX WARN: Type inference failed for: r0v5, types: [com.google.api.client.http.HttpResponse] */
-    /* JADX WARN: Type inference failed for: r4v10, types: [com.google.api.client.http.HttpResponse] */
-    /* JADX WARN: Type inference failed for: r4v12 */
-    /* JADX WARN: Type inference failed for: r4v19, types: [java.lang.StringBuilder] */
-    /* JADX WARN: Type inference failed for: r4v9 */
-    /* JADX WARN: Type inference failed for: r5v25, types: [java.lang.String] */
-    /* JADX WARN: Type inference failed for: r5v28 */
-    /* JADX WARN: Type inference failed for: r5v30 */
-    /* JADX WARN: Type inference failed for: r5v8, types: [com.google.api.client.http.HttpUnsuccessfulResponseHandler] */
-    /* JADX WARN: Type inference failed for: r7v10, types: [com.google.api.client.http.LowLevelHttpRequest] */
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Code duplicated, block: B:115:0x02e2 A[Catch: all -> 0x0325, TryCatch #1 {all -> 0x0325, blocks: (B:113:0x02dc, B:115:0x02e2, B:117:0x02e6, B:120:0x02ee, B:124:0x0300, B:126:0x0304, B:128:0x030e, B:131:0x0318, B:135:0x0321), top: B:172:0x02dc }] */
+    /* WARN: Code duplicated, block: B:117:0x02e6 A[Catch: all -> 0x0325, TryCatch #1 {all -> 0x0325, blocks: (B:113:0x02dc, B:115:0x02e2, B:117:0x02e6, B:120:0x02ee, B:124:0x0300, B:126:0x0304, B:128:0x030e, B:131:0x0318, B:135:0x0321), top: B:172:0x02dc }] */
+    /* WARN: Code duplicated, block: B:118:0x02eb  */
+    /* WARN: Code duplicated, block: B:120:0x02ee A[Catch: all -> 0x0325, TryCatch #1 {all -> 0x0325, blocks: (B:113:0x02dc, B:115:0x02e2, B:117:0x02e6, B:120:0x02ee, B:124:0x0300, B:126:0x0304, B:128:0x030e, B:131:0x0318, B:135:0x0321), top: B:172:0x02dc }] */
+    /* WARN: Code duplicated, block: B:122:0x02fc  */
+    /* WARN: Code duplicated, block: B:123:0x02fe  */
+    /* WARN: Code duplicated, block: B:135:0x0321 A[Catch: all -> 0x0325, TRY_ENTER, TRY_LEAVE, TryCatch #1 {all -> 0x0325, blocks: (B:113:0x02dc, B:115:0x02e2, B:117:0x02e6, B:120:0x02ee, B:124:0x0300, B:126:0x0304, B:128:0x030e, B:131:0x0318, B:135:0x0321), top: B:172:0x02dc }] */
+    /* WARN: Code duplicated, block: B:141:0x032c A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:142:0x032e  */
+    /* WARN: Code duplicated, block: B:143:0x0330  */
+    /* WARN: Code duplicated, block: B:148:0x0338  */
+    /* WARN: Code duplicated, block: B:149:0x033b  */
+    /* WARN: Code duplicated, block: B:152:0x034c  */
+    /* WARN: Code duplicated, block: B:154:0x0350  */
+    /* WARN: Code duplicated, block: B:166:0x0375  */
+    /* WARN: Code duplicated, block: B:167:0x0376 A[LOOP:0: B:10:0x0035->B:167:0x0376, LOOP_END] */
+    /* WARN: Code duplicated, block: B:172:0x02dc A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:177:0x0318 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:184:0x0336 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:32:0x00eb  */
+    /* WARN: Code duplicated, block: B:34:0x00ef  */
+    /* WARN: Code duplicated, block: B:35:0x00fa  */
+    /* WARN: Code duplicated, block: B:38:0x0129  */
+    /* WARN: Code duplicated, block: B:45:0x013b  */
+    /* WARN: Code duplicated, block: B:48:0x0140  */
+    /* WARN: Code duplicated, block: B:50:0x0148  */
+    /* WARN: Code duplicated, block: B:51:0x015b  */
+    /* WARN: Code duplicated, block: B:54:0x0165  */
+    /* WARN: Code duplicated, block: B:55:0x016f  */
+    /* WARN: Code duplicated, block: B:57:0x017f  */
+    /* WARN: Code duplicated, block: B:59:0x0183  */
+    /* WARN: Code duplicated, block: B:61:0x01a3  */
+    /* WARN: Code duplicated, block: B:62:0x01b8  */
+    /* WARN: Code duplicated, block: B:64:0x01c0  */
+    /* WARN: Code duplicated, block: B:66:0x01da  */
+    /* WARN: Code duplicated, block: B:69:0x01f4  */
+    /* WARN: Code duplicated, block: B:70:0x020d  */
+    /* WARN: Code duplicated, block: B:72:0x0215  */
+    /* WARN: Code duplicated, block: B:74:0x0227  */
+    /* WARN: Code duplicated, block: B:76:0x0235  */
+    /* WARN: Code duplicated, block: B:78:0x023e  */
+    /* WARN: Code duplicated, block: B:80:0x0251  */
+    /* WARN: Code duplicated, block: B:85:0x0263  */
+    /* WARN: Code duplicated, block: B:89:0x0285 A[Catch: all -> 0x02b1, IOException -> 0x02b4, TRY_LEAVE, TryCatch #3 {IOException -> 0x02b4, blocks: (B:87:0x027f, B:89:0x0285, B:93:0x02a7, B:95:0x02ad, B:96:0x02b0), top: B:171:0x027f, outer: #0 }] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v14, types: [java.lang.Throwable] */
+    /* WARN: Type inference failed for: r0v16, types: [com.google.api.client.http.HttpResponseInterceptor] */
+    /* WARN: Type inference failed for: r0v23 */
+    /* WARN: Type inference failed for: r0v26 */
+    /* WARN: Type inference failed for: r0v32 */
+    /* WARN: Type inference failed for: r0v4 */
+    /* WARN: Type inference failed for: r0v5, types: [com.google.api.client.http.HttpResponse] */
+    /* WARN: Type inference failed for: r4v10, types: [com.google.api.client.http.HttpResponse] */
+    /* WARN: Type inference failed for: r4v12 */
+    /* WARN: Type inference failed for: r4v19, types: [java.lang.StringBuilder] */
+    /* WARN: Type inference failed for: r4v9 */
+    /* WARN: Type inference failed for: r5v25, types: [java.lang.String] */
+    /* WARN: Type inference failed for: r5v28 */
+    /* WARN: Type inference failed for: r5v30 */
+    /* WARN: Type inference failed for: r5v8, types: [com.google.api.client.http.HttpUnsuccessfulResponseHandler] */
+    /* WARN: Type inference failed for: r7v10, types: [com.google.api.client.http.LowLevelHttpRequest] */
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     public HttpResponse execute() throws IOException {
         StringBuilder sb;
@@ -886,12 +886,12 @@ public final class HttpRequest {
         return futureTask;
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.http.HttpRequest$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.http.HttpRequest$1, reason: invalid class name */
     class AnonymousClass1 implements Callable<HttpResponse> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public HttpResponse call() throws Exception {
             return HttpRequest.this.execute();

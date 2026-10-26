@@ -24,7 +24,7 @@ import org.apache.commons.collections4.iterators.AbstractUntypedIteratorDecorato
 import org.apache.commons.collections4.keyvalue.AbstractMapEntry;
 import org.apache.commons.collections4.list.UnmodifiableList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ListOrderedMap<K, V> extends AbstractMapDecorator<K, V> implements OrderedMap<K, V>, Serializable {
     private static final long serialVersionUID = 2728177751851003750L;
     private final List<K> insertOrder;
@@ -121,7 +121,7 @@ public class ListOrderedMap<K, V> extends AbstractMapDecorator<K, V> implements 
             return this.parent.containsKey(obj);
         }
 
-        /* JADX INFO: renamed from: org.apache.commons.collections4.map.ListOrderedMap$KeySetView$1, reason: invalid class name */
+        /* INFO: renamed from: org.apache.commons.collections4.map.ListOrderedMap$KeySetView$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractUntypedIteratorDecorator<Map.Entry<K, Object>, K> {
             AnonymousClass1(Iterator it) {
                 super(it);
@@ -293,7 +293,7 @@ public class ListOrderedMap<K, V> extends AbstractMapDecorator<K, V> implements 
             return this.parent.getValue(i);
         }
 
-        /* JADX INFO: renamed from: org.apache.commons.collections4.map.ListOrderedMap$ValuesView$1, reason: invalid class name */
+        /* INFO: renamed from: org.apache.commons.collections4.map.ListOrderedMap$ValuesView$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractUntypedIteratorDecorator<Map.Entry<Object, V>, V> {
             AnonymousClass1(Iterator it) {
                 super(it);

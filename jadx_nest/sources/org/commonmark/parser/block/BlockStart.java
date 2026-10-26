@@ -2,7 +2,7 @@ package org.commonmark.parser.block;
 
 import org.commonmark.internal.BlockStartImpl;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class BlockStart {
     public static BlockStart none() {
         return null;

@@ -39,7 +39,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ConstraintSet {
     private static final int ALPHA = 43;
     private static final int ANIMATE_CIRCLE_ANGLE_TO = 82;
@@ -486,18 +486,18 @@ public class ConstraintSet {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x0032  */
-    /* JADX WARN: Code duplicated, block: B:23:0x0036  */
-    /* JADX WARN: Code duplicated, block: B:25:0x003b  */
-    /* JADX WARN: Code duplicated, block: B:27:0x0040  */
-    /* JADX WARN: Code duplicated, block: B:29:0x0044  */
-    /* JADX WARN: Code duplicated, block: B:31:0x0048  */
-    /* JADX WARN: Code duplicated, block: B:33:0x004d  */
-    /* JADX WARN: Code duplicated, block: B:35:0x0052  */
-    /* JADX WARN: Code duplicated, block: B:37:0x0056  */
-    /* JADX WARN: Code duplicated, block: B:39:0x005a  */
-    /* JADX WARN: Code duplicated, block: B:41:0x0065  */
-    /* JADX WARN: Code duplicated, block: B:45:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:21:0x0032  */
+    /* WARN: Code duplicated, block: B:23:0x0036  */
+    /* WARN: Code duplicated, block: B:25:0x003b  */
+    /* WARN: Code duplicated, block: B:27:0x0040  */
+    /* WARN: Code duplicated, block: B:29:0x0044  */
+    /* WARN: Code duplicated, block: B:31:0x0048  */
+    /* WARN: Code duplicated, block: B:33:0x004d  */
+    /* WARN: Code duplicated, block: B:35:0x0052  */
+    /* WARN: Code duplicated, block: B:37:0x0056  */
+    /* WARN: Code duplicated, block: B:39:0x005a  */
+    /* WARN: Code duplicated, block: B:41:0x0065  */
+    /* WARN: Code duplicated, block: B:45:? A[RETURN, SYNTHETIC] */
     static void parseDimensionConstraints(Object obj, TypedArray typedArray, int i, int i2) {
         int dimensionPixelSize;
         boolean z;
@@ -1793,27 +1793,27 @@ public class ConstraintSet {
             return constraintAttribute2;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setStringValue(String str, String str2) {
             get(str, ConstraintAttribute.AttributeType.STRING_TYPE).setStringValue(str2);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setFloatValue(String str, float f) {
             get(str, ConstraintAttribute.AttributeType.FLOAT_TYPE).setFloatValue(f);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setIntValue(String str, int i) {
             get(str, ConstraintAttribute.AttributeType.INT_TYPE).setIntValue(i);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setColorValue(String str, int i) {
             get(str, ConstraintAttribute.AttributeType.COLOR_TYPE).setColorValue(i);
         }
 
-        /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+        /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
         public Constraint m3146clone() {
             Constraint constraint = new Constraint();
             constraint.layout.copyFrom(this.layout);
@@ -1825,7 +1825,7 @@ public class ConstraintSet {
             return constraint;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void fillFromConstraints(ConstraintHelper constraintHelper, int i, Constraints.LayoutParams layoutParams) {
             fillFromConstraints(i, layoutParams);
             if (constraintHelper instanceof Barrier) {
@@ -1837,7 +1837,7 @@ public class ConstraintSet {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void fillFromConstraints(int i, Constraints.LayoutParams layoutParams) {
             fillFrom(i, layoutParams);
             this.propertySet.alpha = layoutParams.alpha;
@@ -1855,7 +1855,7 @@ public class ConstraintSet {
             this.transform.applyElevation = layoutParams.applyElevation;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void fillFrom(int i, ConstraintLayout.LayoutParams layoutParams) {
             this.mViewId = i;
             this.layout.leftToLeft = layoutParams.leftToLeft;
@@ -2967,7 +2967,7 @@ public class ConstraintSet {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:19:0x0062  */
+    /* WARN: Code duplicated, block: B:19:0x0062  */
     public void removeFromVerticalChain(int i) {
         if (this.mConstraints.containsKey(Integer.valueOf(i))) {
             Constraint constraint = this.mConstraints.get(Integer.valueOf(i));
@@ -2991,7 +2991,7 @@ public class ConstraintSet {
         clear(i, 4);
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x0037  */
+    /* WARN: Code duplicated, block: B:15:0x0037  */
     public void removeFromHorizontalChain(int i) {
         Constraint constraint;
         if (!this.mConstraints.containsKey(Integer.valueOf(i)) || (constraint = this.mConstraints.get(Integer.valueOf(i))) == null) {
@@ -3239,9 +3239,9 @@ public class ConstraintSet {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:44:0x00a6 A[Catch: IOException -> 0x01ba, XmlPullParserException -> 0x01bf, TryCatch #2 {IOException -> 0x01ba, XmlPullParserException -> 0x01bf, blocks: (B:3:0x0004, B:78:0x01b4, B:12:0x0017, B:13:0x0025, B:15:0x002a, B:18:0x0033, B:26:0x004d, B:21:0x003c, B:24:0x0045, B:27:0x005b, B:31:0x006b, B:33:0x0073, B:35:0x007e, B:44:0x00a6, B:45:0x00ad, B:46:0x00c7, B:38:0x0087, B:40:0x008f, B:41:0x009c, B:47:0x00c8, B:49:0x00d0, B:50:0x00e1, B:53:0x00eb, B:54:0x00f6, B:55:0x0110, B:56:0x0111, B:59:0x011b, B:60:0x0126, B:61:0x0140, B:62:0x0141, B:64:0x0149, B:65:0x0153, B:68:0x015d, B:69:0x0167, B:70:0x0181, B:71:0x0182, B:74:0x018c, B:75:0x0196, B:76:0x01b0, B:77:0x01b1), top: B:85:0x0004 }] */
-    /* JADX WARN: Code duplicated, block: B:88:0x00ad A[SYNTHETIC] */
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Code duplicated, block: B:44:0x00a6 A[Catch: IOException -> 0x01ba, XmlPullParserException -> 0x01bf, TryCatch #2 {IOException -> 0x01ba, XmlPullParserException -> 0x01bf, blocks: (B:3:0x0004, B:78:0x01b4, B:12:0x0017, B:13:0x0025, B:15:0x002a, B:18:0x0033, B:26:0x004d, B:21:0x003c, B:24:0x0045, B:27:0x005b, B:31:0x006b, B:33:0x0073, B:35:0x007e, B:44:0x00a6, B:45:0x00ad, B:46:0x00c7, B:38:0x0087, B:40:0x008f, B:41:0x009c, B:47:0x00c8, B:49:0x00d0, B:50:0x00e1, B:53:0x00eb, B:54:0x00f6, B:55:0x0110, B:56:0x0111, B:59:0x011b, B:60:0x0126, B:61:0x0140, B:62:0x0141, B:64:0x0149, B:65:0x0153, B:68:0x015d, B:69:0x0167, B:70:0x0181, B:71:0x0182, B:74:0x018c, B:75:0x0196, B:76:0x01b0, B:77:0x01b1), top: B:85:0x0004 }] */
+    /* WARN: Code duplicated, block: B:88:0x00ad A[SYNTHETIC] */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public void load(Context context, XmlPullParser xmlPullParser) {
         Constraint constraintFillFromAttributeList;
         try {
@@ -3381,7 +3381,7 @@ public class ConstraintSet {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int lookupID(TypedArray typedArray, int i, int i2) {
         int resourceId = typedArray.getResourceId(i, i2);
         return resourceId == -1 ? typedArray.getInt(i, -1) : resourceId;
@@ -3718,7 +3718,7 @@ public class ConstraintSet {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void setDeltaValue(Constraint constraint, int i, float f) {
         if (i == 19) {
             constraint.layout.guidePercent = f;
@@ -3815,7 +3815,7 @@ public class ConstraintSet {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void setDeltaValue(Constraint constraint, int i, int i2) {
         if (i == 6) {
             constraint.layout.editorAbsoluteX = i2;
@@ -3988,7 +3988,7 @@ public class ConstraintSet {
         constraint.layout.mBarrierMargin = i2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void setDeltaValue(Constraint constraint, int i, String str) {
         if (i == 5) {
             constraint.layout.dimensionRatio = str;
@@ -4012,7 +4012,7 @@ public class ConstraintSet {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void setDeltaValue(Constraint constraint, int i, boolean z) {
         if (i == 44) {
             constraint.transform.applyElevation = z;

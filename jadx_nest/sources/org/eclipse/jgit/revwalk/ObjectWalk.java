@@ -17,7 +17,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.filter.ObjectFilter;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ObjectWalk extends RevWalk {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private static final int ID_SZ = 20;
@@ -44,7 +44,7 @@ public class ObjectWalk extends RevWalk {
         void visited(RevObject revObject);
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.revwalk.ObjectWalk$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.revwalk.ObjectWalk$1, reason: invalid class name */
     class AnonymousClass1 implements VisitationPolicy {
         AnonymousClass1() {
         }

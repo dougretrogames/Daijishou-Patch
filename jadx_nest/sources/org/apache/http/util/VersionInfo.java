@@ -8,7 +8,7 @@ import java.util.Properties;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class VersionInfo {
     public static final String PROPERTY_MODULE = "info.module";
     public static final String PROPERTY_RELEASE = "info.release";

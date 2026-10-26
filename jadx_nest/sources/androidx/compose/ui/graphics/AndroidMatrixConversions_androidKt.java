@@ -2,11 +2,11 @@ package androidx.compose.ui.graphics;
 
 import kotlin.Metadata;
 
-/* JADX INFO: compiled from: AndroidMatrixConversions.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AndroidMatrixConversions.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\u001a\u001c\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004ø\u0001\u0000¢\u0006\u0004\b\u0005\u0010\u0006\u001a\u001c\u0010\u0000\u001a\u00020\u0001*\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0002ø\u0001\u0000¢\u0006\u0004\b\u0007\u0010\b\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006\t"}, d2 = {"setFrom", "", "Landroid/graphics/Matrix;", "matrix", "Landroidx/compose/ui/graphics/Matrix;", "setFrom-EL8BTi8", "(Landroid/graphics/Matrix;[F)V", "setFrom-tU-YjHk", "([FLandroid/graphics/Matrix;)V", "ui-graphics_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class AndroidMatrixConversions_androidKt {
-    /* JADX INFO: renamed from: setFrom-tU-YjHk, reason: not valid java name */
+    /* INFO: renamed from: setFrom-tU-YjHk, reason: not valid java name */
     public static final void m401setFromtUYjHk(float[] fArr, android.graphics.Matrix matrix) {
         matrix.getValues(fArr);
         float f = fArr[0];
@@ -36,7 +36,7 @@ public final class AndroidMatrixConversions_androidKt {
         fArr[15] = f9;
     }
 
-    /* JADX INFO: renamed from: setFrom-EL8BTi8, reason: not valid java name */
+    /* INFO: renamed from: setFrom-EL8BTi8, reason: not valid java name */
     public static final void m400setFromEL8BTi8(android.graphics.Matrix matrix, float[] fArr) {
         float f = fArr[2];
         if (f == 0.0f) {

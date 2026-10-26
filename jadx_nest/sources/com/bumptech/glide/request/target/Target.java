@@ -5,7 +5,7 @@ import com.bumptech.glide.manager.LifecycleListener;
 import com.bumptech.glide.request.Request;
 import com.bumptech.glide.request.transition.Transition;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface Target<R> extends LifecycleListener {
     public static final int SIZE_ORIGINAL = Integer.MIN_VALUE;
 

@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class DirectedNetworkConnections<N, E> extends AbstractDirectedNetworkConnections<N, E> {
     DirectedNetworkConnections(Map<E, N> inEdgeMap, Map<E, N> outEdgeMap, int selfLoopCount) {

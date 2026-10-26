@@ -35,8 +35,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.TypeIntrinsics;
 
-/* JADX INFO: compiled from: Composition.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Composition.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000ò\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\"\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0019\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0015\b\u0000\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u0004:\u0002£\u0001B%\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\n\u0010\u0007\u001a\u0006\u0012\u0002\b\u00030\b\u0012\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n¢\u0006\u0002\u0010\u000bJ\b\u0010X\u001a\u00020\u0019H\u0002J\u001e\u0010Y\u001a\u00020\u00192\f\u0010Z\u001a\b\u0012\u0004\u0012\u00020*0)2\u0006\u0010[\u001a\u00020\u0012H\u0002J\b\u0010\\\u001a\u00020\u0019H\u0016J\u0010\u0010]\u001a\u00020\u00192\u0006\u0010\u0015\u001a\u00020\u0016H\u0002J\b\u0010^\u001a\u00020\u0019H\u0016J\b\u0010_\u001a\u00020\u0019H\u0016J\b\u0010`\u001a\u00020\u0019H\u0002J \u0010a\u001a\u00020\u00192\u0011\u0010b\u001a\r\u0012\u0004\u0012\u00020\u00190\u0018¢\u0006\u0002\b\u001aH\u0016¢\u0006\u0002\u0010\u001eJ \u0010c\u001a\u00020\u00192\u0011\u0010b\u001a\r\u0012\u0004\u0012\u00020\u00190\u0018¢\u0006\u0002\b\u001aH\u0002¢\u0006\u0002\u0010\u001eJ\b\u0010d\u001a\u00020\u0019H\u0016J3\u0010e\u001a\u0002Hf\"\u0004\b\u0000\u0010f2\b\u0010g\u001a\u0004\u0018\u00010\u00012\u0006\u0010h\u001a\u0002072\f\u0010i\u001a\b\u0012\u0004\u0012\u0002Hf0\u0018H\u0016¢\u0006\u0002\u0010jJ\b\u0010k\u001a\u00020\u0019H\u0016J\u0010\u0010l\u001a\u00020\u00192\u0006\u0010m\u001a\u00020nH\u0016J\b\u0010o\u001a\u00020\u0019H\u0002J\b\u0010p\u001a\u00020\u0019H\u0002J#\u0010q\u001a\u0004\u0018\u0001Hr\"\u0004\b\u0000\u0010r2\f\u0010s\u001a\b\u0012\u0004\u0012\u0002Hr0tH\u0016¢\u0006\u0002\u0010uJ\"\u0010v\u001a\u0002Hr\"\u0004\b\u0000\u0010r2\f\u0010i\u001a\b\u0012\u0004\u0012\u0002Hr0\u0018H\u0082\b¢\u0006\u0002\u0010wJK\u0010x\u001a\u0002Hr\"\u0004\b\u0000\u0010r25\u0010i\u001a1\u0012'\u0012%\u0012\u0004\u0012\u00020$\u0012\f\u0012\n\u0012\u0004\u0012\u00020*\u0018\u00010:09¢\u0006\f\bz\u0012\b\b{\u0012\u0004\b\b(\u0015\u0012\u0004\u0012\u0002Hr0yH\u0082\b¢\u0006\u0002\u0010|J&\u0010}\u001a\u00020\u00192\u001c\u0010~\u001a\u0018\u0012\u0014\u0012\u0012\u0012\u0005\u0012\u00030\u0080\u0001\u0012\u0007\u0012\u0005\u0018\u00010\u0080\u00010\u007f0#H\u0016J\u001e\u0010\u0081\u0001\u001a\u00030\u0082\u00012\u0007\u0010\u0083\u0001\u001a\u00020$2\t\u0010\u0084\u0001\u001a\u0004\u0018\u00010*H\u0016J\t\u0010\u0085\u0001\u001a\u00020\u0019H\u0016J(\u0010\u0086\u0001\u001a\u00030\u0082\u00012\u0007\u0010\u0083\u0001\u001a\u00020$2\b\u0010\u0087\u0001\u001a\u00030\u0088\u00012\t\u0010\u0084\u0001\u001a\u0004\u0018\u00010*H\u0002J\u000f\u0010\u0089\u0001\u001a\u00020\u00192\u0006\u0010s\u001a\u000207J\u0012\u0010\u008a\u0001\u001a\u00020\u00192\u0007\u0010\u008b\u0001\u001a\u00020*H\u0002J\u001a\u0010\u008c\u0001\u001a\u00030\u008d\u00012\b\u0010\u008e\u0001\u001a\u00030\u008f\u0001H\u0000¢\u0006\u0003\b\u0090\u0001J\f\u0010\u008e\u0001\u001a\u0005\u0018\u00010\u008f\u0001H\u0002J\u0017\u0010\u0091\u0001\u001a\u00020\u00122\f\u0010Z\u001a\b\u0012\u0004\u0012\u00020*0)H\u0016J\u0017\u0010\u0092\u0001\u001a\u00020\u00192\f\u0010i\u001a\b\u0012\u0004\u0012\u00020\u00190\u0018H\u0016J\t\u0010\u0093\u0001\u001a\u00020\u0012H\u0016J\u0012\u0010\u0094\u0001\u001a\u00020\u00192\u0007\u0010\u0083\u0001\u001a\u00020$H\u0016J\u0017\u0010\u0095\u0001\u001a\u00020\u00192\f\u0010Z\u001a\b\u0012\u0004\u0012\u00020*0)H\u0016J\u0012\u0010\u0096\u0001\u001a\u00020\u00192\u0007\u0010\u008b\u0001\u001a\u00020*H\u0016J\u0012\u0010\u0097\u0001\u001a\u00020\u00192\u0007\u0010\u008b\u0001\u001a\u00020*H\u0016J\u001b\u0010\u0098\u0001\u001a\u00020\u00192\n\u0010m\u001a\u0006\u0012\u0002\b\u00030/H\u0000¢\u0006\u0003\b\u0099\u0001J!\u0010\u009a\u0001\u001a\u00020\u00192\u0007\u0010\u0084\u0001\u001a\u00020*2\u0007\u0010\u0083\u0001\u001a\u00020$H\u0000¢\u0006\u0003\b\u009b\u0001J!\u0010\u009c\u0001\u001a\u00020\u00192\u0011\u0010b\u001a\r\u0012\u0004\u0012\u00020\u00190\u0018¢\u0006\u0002\b\u001aH\u0016¢\u0006\u0002\u0010\u001eJ!\u0010\u009d\u0001\u001a\u00020\u00192\u0011\u0010b\u001a\r\u0012\u0004\u0012\u00020\u00190\u0018¢\u0006\u0002\b\u001aH\u0016¢\u0006\u0002\u0010\u001eJ\u001d\u0010\u009e\u0001\u001a\u0016\u0012\u0004\u0012\u00020$\u0012\f\u0012\n\u0012\u0004\u0012\u00020*\u0018\u00010:09H\u0002J#\u0010\u009f\u0001\u001a\u0002Hr\"\u0004\b\u0000\u0010r2\f\u0010i\u001a\b\u0012\u0004\u0012\u0002Hr0\u0018H\u0082\b¢\u0006\u0002\u0010wJ\u001d\u0010 \u0001\u001a\u00020\u00122\u0007\u0010\u0083\u0001\u001a\u00020$2\t\u0010\u0084\u0001\u001a\u0004\u0018\u00010*H\u0002J\u0011\u0010¡\u0001\u001a\u00020\u00192\u0006\u0010S\u001a\u00020TH\u0002J\t\u0010¢\u0001\u001a\u00020\u0019H\u0016JE\u0010Y\u001a\u0016\u0012\u0004\u0012\u00020$\u0018\u00010\u000ej\n\u0012\u0004\u0012\u00020$\u0018\u0001`\u0010*\u0016\u0012\u0004\u0012\u00020$\u0018\u00010\u000ej\n\u0012\u0004\u0012\u00020$\u0018\u0001`\u00102\u0007\u0010\u008b\u0001\u001a\u00020*2\u0006\u0010[\u001a\u00020\u0012H\u0002R\u0010\u0010\f\u001a\u0004\u0018\u00010\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u001e\u0010\r\u001a\u0012\u0012\u0004\u0012\u00020\u000f0\u000ej\b\u0012\u0004\u0012\u00020\u000f`\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\u0007\u001a\u0006\u0012\u0002\b\u00030\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0011\u001a\u00020\u00128BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0013\u0010\u0014R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082\u0004¢\u0006\u0002\n\u0000R'\u0010\u0017\u001a\r\u0012\u0004\u0012\u00020\u00190\u0018¢\u0006\u0002\b\u001aX\u0086\u000e¢\u0006\u0010\n\u0002\u0010\u001f\u001a\u0004\b\u001b\u0010\u001c\"\u0004\b\u001d\u0010\u001eR\u000e\u0010 \u001a\u00020!X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\"\u001a\b\u0012\u0004\u0012\u00020$0#8AX\u0080\u0004¢\u0006\u0006\u001a\u0004\b%\u0010&R\u001e\u0010'\u001a\u0012\u0012\u0004\u0012\u00020$0\u000ej\b\u0012\u0004\u0012\u00020$`\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010(\u001a\b\u0012\u0004\u0012\u00020*0)8AX\u0080\u0004¢\u0006\u0006\u001a\u0004\b+\u0010,R\u0018\u0010-\u001a\f\u0012\b\u0012\u0006\u0012\u0002\b\u00030/0.X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u00100\u001a\u00020\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u00101\u001a\u00020\u00128VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b2\u0010\u0014R\u0014\u00103\u001a\u00020\u00128VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b4\u0010\u0014R\u0010\u00105\u001a\u0004\u0018\u00010\u0000X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00106\u001a\u000207X\u0082\u000e¢\u0006\u0002\n\u0000R\"\u00108\u001a\u0016\u0012\u0004\u0012\u00020$\u0012\f\u0012\n\u0012\u0004\u0012\u00020*\u0018\u00010:09X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010;\u001a\u00020\u00128VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b;\u0010\u0014R\u0014\u0010<\u001a\u00020\u00128VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b<\u0010\u0014R\u0011\u0010=\u001a\u00020\u0012¢\u0006\b\n\u0000\u001a\u0004\b=\u0010\u0014R\u000e\u0010>\u001a\u00020\u0016X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010?\u001a\u00020*X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010@\u001a\b\u0012\u0004\u0012\u00020$0.X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010A\u001a\b\u0012\u0004\u0012\u00020$0.X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010B\u001a\b\u0012\u0004\u0012\u00020*0)8AX\u0080\u0004¢\u0006\u0006\u001a\u0004\bC\u0010,R\u0014\u0010D\u001a\u00020EX\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\bF\u0010GR\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R \u0010H\u001a\u00020\u0012X\u0080\u000e¢\u0006\u0014\n\u0000\u0012\u0004\bI\u0010J\u001a\u0004\bK\u0010\u0014\"\u0004\bL\u0010MR\"\u0010N\u001a\u0016\u0012\u0006\u0012\u0004\u0018\u00010*0Oj\n\u0012\u0006\u0012\u0004\u0018\u00010*`PX\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\t\u001a\u00020\n8F¢\u0006\u0006\u001a\u0004\bQ\u0010RR\u001a\u0010S\u001a\u00020TX\u0080\u0004¢\u0006\u000e\n\u0000\u0012\u0004\bU\u0010J\u001a\u0004\bV\u0010W¨\u0006¤\u0001"}, d2 = {"Landroidx/compose/runtime/CompositionImpl;", "Landroidx/compose/runtime/ControlledComposition;", "Landroidx/compose/runtime/ReusableComposition;", "Landroidx/compose/runtime/RecomposeScopeOwner;", "Landroidx/compose/runtime/CompositionServices;", "parent", "Landroidx/compose/runtime/CompositionContext;", "applier", "Landroidx/compose/runtime/Applier;", "recomposeContext", "Lkotlin/coroutines/CoroutineContext;", "(Landroidx/compose/runtime/CompositionContext;Landroidx/compose/runtime/Applier;Lkotlin/coroutines/CoroutineContext;)V", "_recomposeContext", "abandonSet", "Ljava/util/HashSet;", "Landroidx/compose/runtime/RememberObserver;", "Lkotlin/collections/HashSet;", "areChildrenComposing", "", "getAreChildrenComposing", "()Z", "changes", "Landroidx/compose/runtime/changelist/ChangeList;", "composable", "Lkotlin/Function0;", "", "Landroidx/compose/runtime/Composable;", "getComposable", "()Lkotlin/jvm/functions/Function2;", "setComposable", "(Lkotlin/jvm/functions/Function2;)V", "Lkotlin/jvm/functions/Function2;", "composer", "Landroidx/compose/runtime/ComposerImpl;", "conditionalScopes", "", "Landroidx/compose/runtime/RecomposeScopeImpl;", "getConditionalScopes$runtime_release", "()Ljava/util/List;", "conditionallyInvalidatedScopes", "derivedStateDependencies", "", "", "getDerivedStateDependencies$runtime_release", "()Ljava/util/Set;", "derivedStates", "Landroidx/compose/runtime/collection/ScopeMap;", "Landroidx/compose/runtime/DerivedState;", "disposed", "hasInvalidations", "getHasInvalidations", "hasPendingChanges", "getHasPendingChanges", "invalidationDelegate", "invalidationDelegateGroup", "", "invalidations", "Landroidx/compose/runtime/collection/IdentityArrayMap;", "Landroidx/compose/runtime/collection/IdentityArraySet;", "isComposing", "isDisposed", "isRoot", "lateChanges", "lock", "observations", "observationsProcessed", "observedObjects", "getObservedObjects$runtime_release", "observerHolder", "Landroidx/compose/runtime/CompositionObserverHolder;", "getObserverHolder$runtime_release", "()Landroidx/compose/runtime/CompositionObserverHolder;", "pendingInvalidScopes", "getPendingInvalidScopes$runtime_release$annotations", "()V", "getPendingInvalidScopes$runtime_release", "setPendingInvalidScopes$runtime_release", "(Z)V", "pendingModifications", "Ljava/util/concurrent/atomic/AtomicReference;", "Landroidx/compose/runtime/AtomicReference;", "getRecomposeContext", "()Lkotlin/coroutines/CoroutineContext;", "slotTable", "Landroidx/compose/runtime/SlotTable;", "getSlotTable$runtime_release$annotations", "getSlotTable$runtime_release", "()Landroidx/compose/runtime/SlotTable;", "abandonChanges", "addPendingInvalidationsLocked", "values", "forgetConditionalScopes", "applyChanges", "applyChangesInLocked", "applyLateChanges", "changesApplied", "cleanUpDerivedStateObservations", "composeContent", "content", "composeInitial", "deactivate", "delegateInvalidations", "R", TypedValues.TransitionType.S_TO, "groupIndex", "block", "(Landroidx/compose/runtime/ControlledComposition;ILkotlin/jvm/functions/Function0;)Ljava/lang/Object;", "dispose", "disposeUnusedMovableContent", "state", "Landroidx/compose/runtime/MovableContentState;", "drainPendingModificationsForCompositionLocked", "drainPendingModificationsLocked", "getCompositionService", ExifInterface.GPS_DIRECTION_TRUE, "key", "Landroidx/compose/runtime/CompositionServiceKey;", "(Landroidx/compose/runtime/CompositionServiceKey;)Ljava/lang/Object;", "guardChanges", "(Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;", "guardInvalidationsLocked", "Lkotlin/Function1;", "Lkotlin/ParameterName;", "name", "(Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;", "insertMovableContent", "references", "Lkotlin/Pair;", "Landroidx/compose/runtime/MovableContentStateReference;", "invalidate", "Landroidx/compose/runtime/InvalidationResult;", "scope", "instance", "invalidateAll", "invalidateChecked", "anchor", "Landroidx/compose/runtime/Anchor;", "invalidateGroupsWithKey", "invalidateScopeOfLocked", "value", "observe", "Landroidx/compose/runtime/tooling/CompositionObserverHandle;", "observer", "Landroidx/compose/runtime/tooling/CompositionObserver;", "observe$runtime_release", "observesAnyOf", "prepareCompose", "recompose", "recomposeScopeReleased", "recordModificationsOf", "recordReadOf", "recordWriteOf", "removeDerivedStateObservation", "removeDerivedStateObservation$runtime_release", "removeObservation", "removeObservation$runtime_release", "setContent", "setContentWithReuse", "takeInvalidations", "trackAbandonedValues", "tryImminentInvalidation", "validateRecomposeScopeAnchors", "verifyConsistent", "RememberEventDispatcher", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class CompositionImpl implements ControlledComposition, ReusableComposition, RecomposeScopeOwner, CompositionServices {
     public static final int $stable = 8;
@@ -100,7 +100,7 @@ public final class CompositionImpl implements ControlledComposition, ReusableCom
         this(compositionContext, applier, (i & 4) != 0 ? null : coroutineContext);
     }
 
-    /* JADX INFO: renamed from: getSlotTable$runtime_release, reason: from getter */
+    /* INFO: renamed from: getSlotTable$runtime_release, reason: from getter */
     public final SlotTable getSlotTable() {
         return this.slotTable;
     }
@@ -117,7 +117,7 @@ public final class CompositionImpl implements ControlledComposition, ReusableCom
         return CollectionsKt.toList(this.conditionallyInvalidatedScopes);
     }
 
-    /* JADX INFO: renamed from: getPendingInvalidScopes$runtime_release, reason: from getter */
+    /* INFO: renamed from: getPendingInvalidScopes$runtime_release, reason: from getter */
     public final boolean getPendingInvalidScopes() {
         return this.pendingInvalidScopes;
     }
@@ -126,7 +126,7 @@ public final class CompositionImpl implements ControlledComposition, ReusableCom
         this.pendingInvalidScopes = z;
     }
 
-    /* JADX INFO: renamed from: getObserverHolder$runtime_release, reason: from getter */
+    /* INFO: renamed from: getObserverHolder$runtime_release, reason: from getter */
     public final CompositionObserverHolder getObserverHolder() {
         return this.observerHolder;
     }
@@ -136,7 +136,7 @@ public final class CompositionImpl implements ControlledComposition, ReusableCom
         return coroutineContext == null ? this.parent.getRecomposeCoroutineContext$runtime_release() : coroutineContext;
     }
 
-    /* JADX INFO: renamed from: isRoot, reason: from getter */
+    /* INFO: renamed from: isRoot, reason: from getter */
     public final boolean getIsRoot() {
         return this.isRoot;
     }
@@ -159,7 +159,7 @@ public final class CompositionImpl implements ControlledComposition, ReusableCom
     }
 
     @Override // androidx.compose.runtime.Composition
-    /* JADX INFO: renamed from: isDisposed, reason: from getter */
+    /* INFO: renamed from: isDisposed, reason: from getter */
     public boolean getDisposed() {
         return this.disposed;
     }
@@ -351,7 +351,7 @@ public final class CompositionImpl implements ControlledComposition, ReusableCom
         return z;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // androidx.compose.runtime.ControlledComposition
     public void recordModificationsOf(Set<? extends Object> values) {
         Object obj;
@@ -702,9 +702,9 @@ public final class CompositionImpl implements ControlledComposition, ReusableCom
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:20:0x005a A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:21:0x005c A[Catch: all -> 0x0068, LOOP:0: B:11:0x0025->B:21:0x005c, LOOP_END, TryCatch #0 {, blocks: (B:4:0x0003, B:6:0x0012, B:8:0x0016, B:11:0x0025, B:13:0x0035, B:15:0x0041, B:17:0x004a, B:18:0x0054, B:21:0x005c, B:22:0x005f, B:23:0x0064), top: B:29:0x0003 }] */
-    /* JADX WARN: Code duplicated, block: B:32:0x0064 A[EDGE_INSN: B:32:0x0064->B:23:0x0064 BREAK  A[LOOP:0: B:11:0x0025->B:21:0x005c], SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:20:0x005a A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:21:0x005c A[Catch: all -> 0x0068, LOOP:0: B:11:0x0025->B:21:0x005c, LOOP_END, TryCatch #0 {, blocks: (B:4:0x0003, B:6:0x0012, B:8:0x0016, B:11:0x0025, B:13:0x0035, B:15:0x0041, B:17:0x004a, B:18:0x0054, B:21:0x005c, B:22:0x005f, B:23:0x0064), top: B:29:0x0003 }] */
+    /* WARN: Code duplicated, block: B:32:0x0064 A[EDGE_INSN: B:32:0x0064->B:23:0x0064 BREAK  A[LOOP:0: B:11:0x0025->B:21:0x005c], SYNTHETIC] */
     @Override // androidx.compose.runtime.ControlledComposition
     public void recordWriteOf(Object value) {
         synchronized (this.lock) {
@@ -1265,7 +1265,7 @@ public final class CompositionImpl implements ControlledComposition, ReusableCom
         return observer;
     }
 
-    /* JADX INFO: compiled from: Composition.kt */
+    /* INFO: compiled from: Composition.kt */
     @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010#\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\b\b\u0002\u0018\u00002\u00020\u0001B\u0013\u0012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\u0002\u0010\u0005J\u0010\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\u0010\u001a\u00020\nH\u0016J\u0006\u0010\u0011\u001a\u00020\u000eJ\u0006\u0010\u0012\u001a\u00020\u000eJ\u0006\u0010\u0013\u001a\u00020\u000eJ\u0010\u0010\u0006\u001a\u00020\u000e2\u0006\u0010\u0010\u001a\u00020\u0004H\u0016J\u0010\u0010\t\u001a\u00020\u000e2\u0006\u0010\u0010\u001a\u00020\nH\u0016J\u0010\u0010\u000b\u001a\u00020\u000e2\u0006\u0010\u0010\u001a\u00020\u0004H\u0016J\u0016\u0010\u0014\u001a\u00020\u000e2\f\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u000e0\rH\u0016R\u0014\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\t\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010\u0007X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00040\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\f\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u000e0\r0\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0016"}, d2 = {"Landroidx/compose/runtime/CompositionImpl$RememberEventDispatcher;", "Landroidx/compose/runtime/RememberManager;", "abandoning", "", "Landroidx/compose/runtime/RememberObserver;", "(Ljava/util/Set;)V", "forgetting", "", "", "releasing", "Landroidx/compose/runtime/ComposeNodeLifecycleCallback;", "remembering", "sideEffects", "Lkotlin/Function0;", "", "deactivating", "instance", "dispatchAbandons", "dispatchRememberObservers", "dispatchSideEffects", "sideEffect", "effect", "runtime_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     private static final class RememberEventDispatcher implements RememberManager {
         private final Set<RememberObserver> abandoning;
@@ -1435,28 +1435,28 @@ public final class CompositionImpl implements ControlledComposition, ReusableCom
         this.composer.deactivate$runtime_release();
     }
 
-    /* JADX WARN: Code duplicated, block: B:103:0x0214 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:104:0x0216 A[LOOP:5: B:77:0x01b2->B:104:0x0216, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:117:0x024f  */
-    /* JADX WARN: Code duplicated, block: B:165:0x0334 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:166:0x0336 A[LOOP:9: B:149:0x02e2->B:166:0x0336, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:187:0x00b3 A[EDGE_INSN: B:187:0x00b3->B:30:0x00b3 BREAK  A[LOOP:1: B:16:0x0063->B:26:0x0095], SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:197:0x0223 A[EDGE_INSN: B:197:0x0223->B:106:0x0223 BREAK  A[LOOP:5: B:77:0x01b2->B:104:0x0216], SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:209:0x0343 A[EDGE_INSN: B:209:0x0343->B:168:0x0343 BREAK  A[LOOP:9: B:149:0x02e2->B:166:0x0336], SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:225:0x014a A[EDGE_INSN: B:225:0x014a->B:58:0x014a BREAK  A[LOOP:12: B:46:0x0110->B:56:0x013f], SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:25:0x0093 A[DONT_INVERT, PHI: r5
+    /* WARN: Code duplicated, block: B:103:0x0214 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:104:0x0216 A[LOOP:5: B:77:0x01b2->B:104:0x0216, LOOP_END] */
+    /* WARN: Code duplicated, block: B:117:0x024f  */
+    /* WARN: Code duplicated, block: B:165:0x0334 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:166:0x0336 A[LOOP:9: B:149:0x02e2->B:166:0x0336, LOOP_END] */
+    /* WARN: Code duplicated, block: B:187:0x00b3 A[EDGE_INSN: B:187:0x00b3->B:30:0x00b3 BREAK  A[LOOP:1: B:16:0x0063->B:26:0x0095], SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:197:0x0223 A[EDGE_INSN: B:197:0x0223->B:106:0x0223 BREAK  A[LOOP:5: B:77:0x01b2->B:104:0x0216], SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:209:0x0343 A[EDGE_INSN: B:209:0x0343->B:168:0x0343 BREAK  A[LOOP:9: B:149:0x02e2->B:166:0x0336], SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:225:0x014a A[EDGE_INSN: B:225:0x014a->B:58:0x014a BREAK  A[LOOP:12: B:46:0x0110->B:56:0x013f], SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:25:0x0093 A[DONT_INVERT, PHI: r5
   0x0093: PHI (r5v34 java.util.HashSet<androidx.compose.runtime.RecomposeScopeImpl>) = 
   (r5v33 java.util.HashSet<androidx.compose.runtime.RecomposeScopeImpl>)
   (r5v35 java.util.HashSet<androidx.compose.runtime.RecomposeScopeImpl>)
  binds: [B:17:0x006d, B:24:0x0091] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:26:0x0095 A[LOOP:1: B:16:0x0063->B:26:0x0095, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:55:0x013d A[DONT_INVERT, PHI: r5
+    /* WARN: Code duplicated, block: B:26:0x0095 A[LOOP:1: B:16:0x0063->B:26:0x0095, LOOP_END] */
+    /* WARN: Code duplicated, block: B:55:0x013d A[DONT_INVERT, PHI: r5
   0x013d: PHI (r5v3 java.util.HashSet<androidx.compose.runtime.RecomposeScopeImpl>) = 
   (r5v2 java.util.HashSet<androidx.compose.runtime.RecomposeScopeImpl>)
   (r5v4 java.util.HashSet<androidx.compose.runtime.RecomposeScopeImpl>)
  binds: [B:47:0x011a, B:54:0x013b] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:56:0x013f A[LOOP:12: B:46:0x0110->B:56:0x013f, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:96:0x0200  */
+    /* WARN: Code duplicated, block: B:56:0x013f A[LOOP:12: B:46:0x0110->B:56:0x013f, LOOP_END] */
+    /* WARN: Code duplicated, block: B:96:0x0200  */
     private final void addPendingInvalidationsLocked(Set<? extends Object> values, boolean forgetConditionalScopes) {
         long j;
         long j2;

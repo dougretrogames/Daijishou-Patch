@@ -7,7 +7,7 @@ import java.lang.reflect.Array;
 import java.text.DecimalFormat;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class TimeCycleSplineSet {
     protected static final int CURVE_OFFSET = 2;
     protected static final int CURVE_PERIOD = 1;
@@ -164,7 +164,7 @@ public abstract class TimeCycleSplineSet {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:22:0x0061  */
+    /* WARN: Code duplicated, block: B:22:0x0061  */
     public void setup(int i) {
         int i2 = this.mCount;
         if (i2 == 0) {

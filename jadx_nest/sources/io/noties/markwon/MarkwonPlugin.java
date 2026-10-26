@@ -6,7 +6,7 @@ import io.noties.markwon.core.MarkwonTheme;
 import org.commonmark.node.Node;
 import org.commonmark.parser.Parser;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public interface MarkwonPlugin {
 
     public interface Action<P extends MarkwonPlugin> {

@@ -6,8 +6,8 @@ import kotlin.jvm.functions.Function0;
 import kotlin.properties.PropertyDelegateProvider;
 import kotlin.reflect.KProperty;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class SavedStateHandleSaverKt$$ExternalSyntheticLambda0 implements PropertyDelegateProvider {
     public final /* synthetic */ SavedStateHandle f$0;
     public final /* synthetic */ Saver f$1;

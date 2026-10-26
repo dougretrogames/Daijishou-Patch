@@ -11,7 +11,7 @@ import org.eclipse.jgit.lib.MutableObjectId;
 import org.eclipse.jgit.lib.ObjectIdOwnerMap;
 import org.eclipse.jgit.lib.ObjectIdSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LazyObjectIdSetFile implements ObjectIdSet {
     private ObjectIdOwnerMap<Entry> set;
     private final File src;

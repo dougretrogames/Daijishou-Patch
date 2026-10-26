@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class LimitOffsetDataSource<T> extends PositionalDataSource<T> {
     private final String mCountQuery;
     private final RoomDatabase mDb;
@@ -48,7 +48,7 @@ public abstract class LimitOffsetDataSource<T> extends PositionalDataSource<T> {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.room.paging.LimitOffsetDataSource$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.room.paging.LimitOffsetDataSource$1, reason: invalid class name */
     class AnonymousClass1 extends InvalidationTracker.Observer {
         AnonymousClass1(String[] strArr) {
             super(strArr);

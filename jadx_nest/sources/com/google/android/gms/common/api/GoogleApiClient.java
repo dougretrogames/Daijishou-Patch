@@ -34,8 +34,8 @@ import java.util.WeakHashMap;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public abstract class GoogleApiClient {
     public static final String DEFAULT_ACCOUNT = "<<default account>>";
@@ -43,14 +43,14 @@ public abstract class GoogleApiClient {
     public static final int SIGN_IN_MODE_REQUIRED = 1;
     private static final Set zaa = Collections.newSetFromMap(new WeakHashMap());
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     @Deprecated
     public interface ConnectionCallbacks extends com.google.android.gms.common.api.internal.ConnectionCallbacks {
         public static final int CAUSE_NETWORK_LOST = 2;
         public static final int CAUSE_SERVICE_DISCONNECTED = 1;
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     @Deprecated
     public interface OnConnectionFailedListener extends com.google.android.gms.common.api.internal.OnConnectionFailedListener {
     }
@@ -163,7 +163,7 @@ public abstract class GoogleApiClient {
         throw new UnsupportedOperationException();
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     @Deprecated
     public static final class Builder {
         private Account zaa;

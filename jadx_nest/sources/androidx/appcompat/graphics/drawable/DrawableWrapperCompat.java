@@ -9,7 +9,7 @@ import android.graphics.Region;
 import android.graphics.drawable.Drawable;
 import androidx.core.graphics.drawable.DrawableCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DrawableWrapperCompat extends Drawable implements Drawable.Callback {
     private Drawable mDrawable;
 

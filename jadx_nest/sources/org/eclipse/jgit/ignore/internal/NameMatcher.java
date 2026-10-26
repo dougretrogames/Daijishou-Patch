@@ -1,6 +1,6 @@
 package org.eclipse.jgit.ignore.internal;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NameMatcher extends AbstractMatcher {
     final boolean beginning;
     final char slash;

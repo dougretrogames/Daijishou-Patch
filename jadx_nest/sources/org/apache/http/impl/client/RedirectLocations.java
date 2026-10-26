@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RedirectLocations extends AbstractList<Object> {
     private final Set<URI> unique = new HashSet();
     private final List<URI> all = new ArrayList();

@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class SolverVariable implements Comparable<SolverVariable> {
     private static final boolean DO_NOT_USE = false;
     private static final boolean INTERNAL_DEBUG = false;
@@ -27,7 +27,7 @@ public class SolverVariable implements Comparable<SolverVariable> {
     private static int sUniqueUnrestrictedId = 1;
     public float computedValue;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     public int f22id;
     public boolean inGoal;
     public boolean isFinalValue;

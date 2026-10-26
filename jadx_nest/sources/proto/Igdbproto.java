@@ -8,7 +8,7 @@ import com.google.protobuf.GeneratedMessage;
 import com.google.protobuf.RuntimeVersion;
 import com.google.protobuf.TimestampProto;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public final class Igdbproto {
     private static Descriptors.FileDescriptor descriptor;
     static final Descriptors.Descriptor internal_static_proto_AgeRatingContentDescriptionResult_descriptor;

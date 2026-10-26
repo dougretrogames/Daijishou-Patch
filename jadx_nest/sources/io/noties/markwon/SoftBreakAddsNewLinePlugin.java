@@ -2,13 +2,13 @@ package io.noties.markwon;
 
 import org.commonmark.node.SoftLineBreak;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class SoftBreakAddsNewLinePlugin extends AbstractMarkwonPlugin {
     public static SoftBreakAddsNewLinePlugin create() {
         return new SoftBreakAddsNewLinePlugin();
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.SoftBreakAddsNewLinePlugin$1, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.SoftBreakAddsNewLinePlugin$1, reason: invalid class name */
     class AnonymousClass1 implements MarkwonVisitor.NodeVisitor<SoftLineBreak> {
         AnonymousClass1() {
         }

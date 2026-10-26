@@ -5,8 +5,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import org.gradle.api.Action;
 
-/* JADX INFO: compiled from: ProtobufConfiguratorExts.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ProtobufConfiguratorExts.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(bv = {1, 0, 3}, k = 3, mv = {1, 1, 18})
 public final class ProtobufConfiguratorExtsKt$sam$i$org_gradle_api_Action$0 implements Action {
     private final /* synthetic */ Function1 function;

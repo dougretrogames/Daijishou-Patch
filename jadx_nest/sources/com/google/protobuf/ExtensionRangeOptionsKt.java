@@ -13,17 +13,17 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: ExtensionRangeOptionsKt.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ExtensionRangeOptionsKt.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\bÆ\u0002\u0018\u00002\u00020\u0001:\u0002\u000b\fB\u0007\b\u0002¢\u0006\u0002\u0010\u0002J*\u0010\u0003\u001a\u00020\u00042\u0017\u0010\u0005\u001a\u0013\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u0006¢\u0006\u0002\b\tH\u0087\bø\u0001\u0000¢\u0006\u0002\b\n\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006\r"}, d2 = {"Lcom/google/protobuf/ExtensionRangeOptionsKt;", "", "()V", "declaration", "Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions$Declaration;", "block", "Lkotlin/Function1;", "Lcom/google/protobuf/ExtensionRangeOptionsKt$DeclarationKt$Dsl;", "", "Lkotlin/ExtensionFunctionType;", "-initializedeclaration", "DeclarationKt", "Dsl", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class ExtensionRangeOptionsKt {
     public static final ExtensionRangeOptionsKt INSTANCE = new ExtensionRangeOptionsKt();
 
-    /* JADX INFO: compiled from: ExtensionRangeOptionsKt.kt */
+    /* INFO: compiled from: ExtensionRangeOptionsKt.kt */
     @Metadata(d1 = {"\u0000\u008a\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000f\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u001c\n\u0002\b\n\n\u0002\u0010\b\n\u0002\b\u0007\b\u0007\u0018\u0000 O2\u00020\u0001:\u0003OPQB\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u001f\u001a\u00020 H\u0001J\u0018\u0010!\u001a\u00020\"2\u0010\u0010#\u001a\f\u0012\u0004\u0012\u00020 \u0012\u0002\b\u00030$J\u0006\u0010%\u001a\u00020\"J\u0006\u0010&\u001a\u00020\"J\u001b\u0010'\u001a\u00020(2\u0010\u0010#\u001a\f\u0012\u0004\u0012\u00020 \u0012\u0002\b\u00030$H\u0086\u0002J,\u0010)\u001a\u0002H*\"\b\b\u0000\u0010**\u00020\u00012\u0012\u0010#\u001a\u000e\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u0002H*0$H\u0086\u0002¢\u0006\u0002\u0010+J>\u0010)\u001a\u000e\u0012\u0004\u0012\u0002H-\u0012\u0004\u0012\u00020 0,\"\b\b\u0000\u0010-*\u00020\u00012\u0018\u0010#\u001a\u0014\u0012\u0004\u0012\u00020 \u0012\n\u0012\b\u0012\u0004\u0012\u0002H-0.0$H\u0087\u0002¢\u0006\u0002\b/J\u0006\u00100\u001a\u00020(J\u0006\u00101\u001a\u00020(J4\u00102\u001a\u00020\"\"\b\b\u0000\u0010**\u0002032\u0012\u0010#\u001a\u000e\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u0002H*0$2\u0006\u0010\u000b\u001a\u0002H*H\u0086\n¢\u0006\u0002\u00104J:\u00102\u001a\u00020\"\"\u000e\b\u0000\u0010**\b\u0012\u0004\u0012\u0002H*052\u0012\u0010#\u001a\u000e\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u0002H*0$2\u0006\u0010\u000b\u001a\u0002H*H\u0086\n¢\u0006\u0002\u00106J%\u00102\u001a\u00020\"2\u0012\u0010#\u001a\u000e\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u0002070$2\u0006\u0010\u000b\u001a\u000207H\u0086\nJ1\u00108\u001a\u00020\"\"\b\b\u0000\u0010**\u00020\u00012\u0012\u0010#\u001a\u000e\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u0002H*0$2\u0006\u0010\u000b\u001a\u0002H*¢\u0006\u0002\u00109J%\u0010:\u001a\u00020\"*\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00062\u0006\u0010\u000b\u001a\u00020\u0007H\u0007¢\u0006\u0002\b;J%\u0010:\u001a\u00020\"*\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u00140\u00062\u0006\u0010\u000b\u001a\u00020\u0013H\u0007¢\u0006\u0002\b<J-\u0010:\u001a\u00020\"\"\b\b\u0000\u0010-*\u00020\u0001*\u000e\u0012\u0004\u0012\u0002H-\u0012\u0004\u0012\u00020 0,2\u0006\u0010\u000b\u001a\u0002H-¢\u0006\u0002\u0010=J+\u0010>\u001a\u00020\"*\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00062\f\u0010?\u001a\b\u0012\u0004\u0012\u00020\u00070@H\u0007¢\u0006\u0002\bAJ+\u0010>\u001a\u00020\"*\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u00140\u00062\f\u0010?\u001a\b\u0012\u0004\u0012\u00020\u00130@H\u0007¢\u0006\u0002\bBJ.\u0010>\u001a\u00020\"\"\b\b\u0000\u0010-*\u00020\u0001*\u000e\u0012\u0004\u0012\u0002H-\u0012\u0004\u0012\u00020 0,2\f\u0010?\u001a\b\u0012\u0004\u0012\u0002H-0@J\u001d\u0010!\u001a\u00020\"*\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u0006H\u0007¢\u0006\u0002\bCJ\u001d\u0010!\u001a\u00020\"*\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u00140\u0006H\u0007¢\u0006\u0002\bDJ\u0017\u0010!\u001a\u00020\"*\f\u0012\u0002\b\u0003\u0012\u0004\u0012\u00020 0,H\u0086\bJ&\u0010E\u001a\u00020\"*\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00062\u0006\u0010\u000b\u001a\u00020\u0007H\u0087\n¢\u0006\u0002\bFJ,\u0010E\u001a\u00020\"*\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00062\f\u0010?\u001a\b\u0012\u0004\u0012\u00020\u00070@H\u0087\n¢\u0006\u0002\bGJ&\u0010E\u001a\u00020\"*\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u00140\u00062\u0006\u0010\u000b\u001a\u00020\u0013H\u0087\n¢\u0006\u0002\bHJ,\u0010E\u001a\u00020\"*\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u00140\u00062\f\u0010?\u001a\b\u0012\u0004\u0012\u00020\u00130@H\u0087\n¢\u0006\u0002\bIJ0\u0010E\u001a\u00020\"\"\b\b\u0000\u0010-*\u00020\u0001*\u000e\u0012\u0004\u0012\u0002H-\u0012\u0004\u0012\u00020 0,2\u0006\u0010\u000b\u001a\u0002H-H\u0086\n¢\u0006\u0002\u0010=J1\u0010E\u001a\u00020\"\"\b\b\u0000\u0010-*\u00020\u0001*\u000e\u0012\u0004\u0012\u0002H-\u0012\u0004\u0012\u00020 0,2\f\u0010?\u001a\b\u0012\u0004\u0012\u0002H-0@H\u0086\nJ.\u00102\u001a\u00020\"*\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00062\u0006\u0010J\u001a\u00020K2\u0006\u0010\u000b\u001a\u00020\u0007H\u0087\u0002¢\u0006\u0002\bLJ.\u00102\u001a\u00020\"*\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u00140\u00062\u0006\u0010J\u001a\u00020K2\u0006\u0010\u000b\u001a\u00020\u0013H\u0087\u0002¢\u0006\u0002\bMJ8\u00102\u001a\u00020\"\"\b\b\u0000\u0010-*\u00020\u0001*\u000e\u0012\u0004\u0012\u0002H-\u0012\u0004\u0012\u00020 0,2\u0006\u0010J\u001a\u00020K2\u0006\u0010\u000b\u001a\u0002H-H\u0086\u0002¢\u0006\u0002\u0010NR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001d\u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00068F¢\u0006\u0006\u001a\u0004\b\t\u0010\nR$\u0010\r\u001a\u00020\f2\u0006\u0010\u000b\u001a\u00020\f8G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u001d\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u00140\u00068F¢\u0006\u0006\u001a\u0004\b\u0015\u0010\nR$\u0010\u0017\u001a\u00020\u00162\u0006\u0010\u000b\u001a\u00020\u00168G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u0018\u0010\u0019\"\u0004\b\u001a\u0010\u001bR\u0017\u0010\u001c\u001a\u0004\u0018\u00010\f*\u00020\u00008F¢\u0006\u0006\u001a\u0004\b\u001d\u0010\u001e¨\u0006R"}, d2 = {"Lcom/google/protobuf/ExtensionRangeOptionsKt$Dsl;", "", "_builder", "Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions$Builder;", "(Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions$Builder;)V", "declaration", "Lcom/google/protobuf/kotlin/DslList;", "Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions$Declaration;", "Lcom/google/protobuf/ExtensionRangeOptionsKt$Dsl$DeclarationProxy;", "getDeclaration", "()Lcom/google/protobuf/kotlin/DslList;", "value", "Lcom/google/protobuf/DescriptorProtos$FeatureSet;", "features", "getFeatures", "()Lcom/google/protobuf/DescriptorProtos$FeatureSet;", "setFeatures", "(Lcom/google/protobuf/DescriptorProtos$FeatureSet;)V", "uninterpretedOption", "Lcom/google/protobuf/DescriptorProtos$UninterpretedOption;", "Lcom/google/protobuf/ExtensionRangeOptionsKt$Dsl$UninterpretedOptionProxy;", "getUninterpretedOption", "Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions$VerificationState;", "verification", "getVerification", "()Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions$VerificationState;", "setVerification", "(Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions$VerificationState;)V", "featuresOrNull", "getFeaturesOrNull", "(Lcom/google/protobuf/ExtensionRangeOptionsKt$Dsl;)Lcom/google/protobuf/DescriptorProtos$FeatureSet;", "_build", "Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions;", "clear", "", "extension", "Lcom/google/protobuf/ExtensionLite;", "clearFeatures", "clearVerification", "contains", "", "get", ExifInterface.GPS_DIRECTION_TRUE, "(Lcom/google/protobuf/ExtensionLite;)Ljava/lang/Object;", "Lcom/google/protobuf/kotlin/ExtensionList;", ExifInterface.LONGITUDE_EAST, "", "-getRepeatedExtension", "hasFeatures", "hasVerification", "set", "Lcom/google/protobuf/MessageLite;", "(Lcom/google/protobuf/ExtensionLite;Lcom/google/protobuf/MessageLite;)V", "", "(Lcom/google/protobuf/ExtensionLite;Ljava/lang/Comparable;)V", "Lcom/google/protobuf/ByteString;", "setExtension", "(Lcom/google/protobuf/ExtensionLite;Ljava/lang/Object;)V", "add", "addDeclaration", "addUninterpretedOption", "(Lcom/google/protobuf/kotlin/ExtensionList;Ljava/lang/Object;)V", "addAll", "values", "", "addAllDeclaration", "addAllUninterpretedOption", "clearDeclaration", "clearUninterpretedOption", "plusAssign", "plusAssignDeclaration", "plusAssignAllDeclaration", "plusAssignUninterpretedOption", "plusAssignAllUninterpretedOption", ConfigConstants.CONFIG_INDEX_SECTION, "", "setDeclaration", "setUninterpretedOption", "(Lcom/google/protobuf/kotlin/ExtensionList;ILjava/lang/Object;)V", "Companion", "DeclarationProxy", "UninterpretedOptionProxy", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class Dsl {
 
-        /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+        /* INFO: renamed from: Companion, reason: from kotlin metadata */
         public static final Companion INSTANCE = new Companion(null);
         private final DescriptorProtos.ExtensionRangeOptions.Builder _builder;
 
@@ -35,7 +35,7 @@ public final class ExtensionRangeOptionsKt {
             this._builder = builder;
         }
 
-        /* JADX INFO: compiled from: ExtensionRangeOptionsKt.kt */
+        /* INFO: compiled from: ExtensionRangeOptionsKt.kt */
         @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0001¨\u0006\u0007"}, d2 = {"Lcom/google/protobuf/ExtensionRangeOptionsKt$Dsl$Companion;", "", "()V", "_create", "Lcom/google/protobuf/ExtensionRangeOptionsKt$Dsl;", "builder", "Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions$Builder;", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
         public static final class Companion {
             public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -57,7 +57,7 @@ public final class ExtensionRangeOptionsKt {
             return extensionRangeOptionsBuild;
         }
 
-        /* JADX INFO: compiled from: ExtensionRangeOptionsKt.kt */
+        /* INFO: compiled from: ExtensionRangeOptionsKt.kt */
         @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0003"}, d2 = {"Lcom/google/protobuf/ExtensionRangeOptionsKt$Dsl$UninterpretedOptionProxy;", "Lcom/google/protobuf/kotlin/DslProxy;", "()V", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
         public static final class UninterpretedOptionProxy extends DslProxy {
             private UninterpretedOptionProxy() {
@@ -105,7 +105,7 @@ public final class ExtensionRangeOptionsKt {
             this._builder.clearUninterpretedOption();
         }
 
-        /* JADX INFO: compiled from: ExtensionRangeOptionsKt.kt */
+        /* INFO: compiled from: ExtensionRangeOptionsKt.kt */
         @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0003"}, d2 = {"Lcom/google/protobuf/ExtensionRangeOptionsKt$Dsl$DeclarationProxy;", "Lcom/google/protobuf/kotlin/DslProxy;", "()V", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
         public static final class DeclarationProxy extends DslProxy {
             private DeclarationProxy() {
@@ -208,7 +208,7 @@ public final class ExtensionRangeOptionsKt {
             return extension2;
         }
 
-        /* JADX INFO: renamed from: -getRepeatedExtension, reason: not valid java name */
+        /* INFO: renamed from: -getRepeatedExtension, reason: not valid java name */
         public final /* synthetic */ ExtensionList m3398getRepeatedExtension(ExtensionLite extension) {
             Intrinsics.checkNotNullParameter(extension, "extension");
             Object extension2 = this._builder.getExtension(extension);
@@ -292,7 +292,7 @@ public final class ExtensionRangeOptionsKt {
     private ExtensionRangeOptionsKt() {
     }
 
-    /* JADX INFO: renamed from: -initializedeclaration, reason: not valid java name */
+    /* INFO: renamed from: -initializedeclaration, reason: not valid java name */
     public final DescriptorProtos.ExtensionRangeOptions.Declaration m3397initializedeclaration(Function1<? super DeclarationKt.Dsl, Unit> block) {
         Intrinsics.checkNotNullParameter(block, "block");
         DeclarationKt.Dsl.Companion companion = DeclarationKt.Dsl.INSTANCE;
@@ -303,16 +303,16 @@ public final class ExtensionRangeOptionsKt {
         return dsl_create._build();
     }
 
-    /* JADX INFO: compiled from: ExtensionRangeOptionsKt.kt */
+    /* INFO: compiled from: ExtensionRangeOptionsKt.kt */
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001\u0003B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0004"}, d2 = {"Lcom/google/protobuf/ExtensionRangeOptionsKt$DeclarationKt;", "", "()V", "Dsl", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class DeclarationKt {
         public static final DeclarationKt INSTANCE = new DeclarationKt();
 
-        /* JADX INFO: compiled from: ExtensionRangeOptionsKt.kt */
+        /* INFO: compiled from: ExtensionRangeOptionsKt.kt */
         @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\f\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u000b\b\u0007\u0018\u0000 +2\u00020\u0001:\u0001+B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u001e\u001a\u00020\u001fH\u0001J\u0006\u0010 \u001a\u00020!J\u0006\u0010\"\u001a\u00020!J\u0006\u0010#\u001a\u00020!J\u0006\u0010$\u001a\u00020!J\u0006\u0010%\u001a\u00020!J\u0006\u0010&\u001a\u00020\u0012J\u0006\u0010'\u001a\u00020\u0012J\u0006\u0010(\u001a\u00020\u0012J\u0006\u0010)\u001a\u00020\u0012J\u0006\u0010*\u001a\u00020\u0012R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R$\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u00068G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\b\u0010\t\"\u0004\b\n\u0010\u000bR$\u0010\r\u001a\u00020\f2\u0006\u0010\u0005\u001a\u00020\f8G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R$\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u0005\u001a\u00020\u00128G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u0014\u0010\u0015\"\u0004\b\u0016\u0010\u0017R$\u0010\u0018\u001a\u00020\u00122\u0006\u0010\u0005\u001a\u00020\u00128G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u0019\u0010\u0015\"\u0004\b\u001a\u0010\u0017R$\u0010\u001b\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u00068G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u001c\u0010\t\"\u0004\b\u001d\u0010\u000b¨\u0006,"}, d2 = {"Lcom/google/protobuf/ExtensionRangeOptionsKt$DeclarationKt$Dsl;", "", "_builder", "Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions$Declaration$Builder;", "(Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions$Declaration$Builder;)V", "value", "", "fullName", "getFullName", "()Ljava/lang/String;", "setFullName", "(Ljava/lang/String;)V", "", "number", "getNumber", "()I", "setNumber", "(I)V", "", "repeated", "getRepeated", "()Z", "setRepeated", "(Z)V", "reserved", "getReserved", "setReserved", "type", "getType", "setType", "_build", "Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions$Declaration;", "clearFullName", "", "clearNumber", "clearRepeated", "clearReserved", "clearType", "hasFullName", "hasNumber", "hasRepeated", "hasReserved", "hasType", "Companion", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
         public static final class Dsl {
 
-            /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+            /* INFO: renamed from: Companion, reason: from kotlin metadata */
             public static final Companion INSTANCE = new Companion(null);
             private final DescriptorProtos.ExtensionRangeOptions.Declaration.Builder _builder;
 
@@ -324,7 +324,7 @@ public final class ExtensionRangeOptionsKt {
                 this._builder = builder;
             }
 
-            /* JADX INFO: compiled from: ExtensionRangeOptionsKt.kt */
+            /* INFO: compiled from: ExtensionRangeOptionsKt.kt */
             @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0001¨\u0006\u0007"}, d2 = {"Lcom/google/protobuf/ExtensionRangeOptionsKt$DeclarationKt$Dsl$Companion;", "", "()V", "_create", "Lcom/google/protobuf/ExtensionRangeOptionsKt$DeclarationKt$Dsl;", "builder", "Lcom/google/protobuf/DescriptorProtos$ExtensionRangeOptions$Declaration$Builder;", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
             public static final class Companion {
                 public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {

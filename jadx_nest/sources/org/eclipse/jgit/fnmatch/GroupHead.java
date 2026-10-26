@@ -11,7 +11,7 @@ import org.apache.http.message.TokenParser;
 import org.eclipse.jgit.errors.InvalidPatternException;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class GroupHead extends AbstractHead {
     private static final Pattern REGEX_PATTERN = Pattern.compile("([^-][-][^-]|\\[[.:=].*?[.:=]\\])");
     private final List<CharacterPattern> characterClasses;
@@ -21,7 +21,7 @@ final class GroupHead extends AbstractHead {
         boolean matches(char c);
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     GroupHead(String str, String str2) throws InvalidPatternException {
         super(false);
         this.characterClasses = new ArrayList();

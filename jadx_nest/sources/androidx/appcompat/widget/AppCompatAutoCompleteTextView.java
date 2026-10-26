@@ -18,7 +18,7 @@ import androidx.core.view.TintableBackgroundView;
 import androidx.core.widget.TextViewCompat;
 import androidx.core.widget.TintableCompoundDrawablesView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AppCompatAutoCompleteTextView extends AutoCompleteTextView implements TintableBackgroundView, EmojiCompatConfigurationView, TintableCompoundDrawablesView {
     private static final int[] TINT_ATTRS = {R.attr.popupBackground};
     private final AppCompatEmojiEditTextHelper mAppCompatEmojiEditTextHelper;

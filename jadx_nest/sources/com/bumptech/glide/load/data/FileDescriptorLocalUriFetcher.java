@@ -7,7 +7,7 @@ import android.os.ParcelFileDescriptor;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FileDescriptorLocalUriFetcher extends LocalUriFetcher<ParcelFileDescriptor> {
     public FileDescriptorLocalUriFetcher(ContentResolver contentResolver, Uri uri) {
         super(contentResolver, uri);
@@ -17,8 +17,8 @@ public class FileDescriptorLocalUriFetcher extends LocalUriFetcher<ParcelFileDes
         super(contentResolver, uri, z);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* INFO: Access modifiers changed from: protected */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.load.data.LocalUriFetcher
     public ParcelFileDescriptor loadResource(Uri uri, ContentResolver contentResolver) throws FileNotFoundException {
         AssetFileDescriptor assetFileDescriptorOpenAssetFileDescriptor = openAssetFileDescriptor(uri);
@@ -28,7 +28,7 @@ public class FileDescriptorLocalUriFetcher extends LocalUriFetcher<ParcelFileDes
         return assetFileDescriptorOpenAssetFileDescriptor.getParcelFileDescriptor();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.bumptech.glide.load.data.LocalUriFetcher
     public void close(ParcelFileDescriptor parcelFileDescriptor) throws IOException {
         parcelFileDescriptor.close();

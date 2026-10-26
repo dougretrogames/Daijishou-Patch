@@ -2,7 +2,7 @@ package org.apache.commons.collections4.bloomfilter;
 
 import java.util.function.IntPredicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class IndexFilter {
     private final IntPredicate consumer;
     private final int size;

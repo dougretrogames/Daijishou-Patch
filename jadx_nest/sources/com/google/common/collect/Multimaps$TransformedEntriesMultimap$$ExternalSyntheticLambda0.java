@@ -2,8 +2,8 @@ package com.google.common.collect;
 
 import java.util.Collection;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class Multimaps$TransformedEntriesMultimap$$ExternalSyntheticLambda0 implements Maps.EntryTransformer {
     public final /* synthetic */ Multimaps.TransformedEntriesMultimap f$0;
 

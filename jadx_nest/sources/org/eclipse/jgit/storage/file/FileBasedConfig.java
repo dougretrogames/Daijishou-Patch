@@ -24,7 +24,7 @@ import org.eclipse.jgit.util.FileUtils;
 import org.eclipse.jgit.util.IO;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileBasedConfig extends StoredConfig {
     private final File configFile;
     private AtomicBoolean exists;
@@ -86,7 +86,7 @@ public class FileBasedConfig extends StoredConfig {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Boolean load(File file) throws Exception {
         String strDecode;
         FileSnapshot fileSnapshot = this.snapshot;

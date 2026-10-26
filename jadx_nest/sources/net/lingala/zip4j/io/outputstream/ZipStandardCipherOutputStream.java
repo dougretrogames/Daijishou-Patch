@@ -7,13 +7,13 @@ import net.lingala.zip4j.model.ZipParameters;
 import net.lingala.zip4j.util.Zip4jUtil;
 import okhttp3.internal.ws.WebSocketProtocol;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class ZipStandardCipherOutputStream extends CipherOutputStream<StandardEncrypter> {
     public ZipStandardCipherOutputStream(ZipEntryOutputStream zipEntryOutputStream, ZipParameters zipParameters, char[] cArr, boolean z) throws IOException {
         super(zipEntryOutputStream, zipParameters, cArr, z);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.io.outputstream.CipherOutputStream
     public StandardEncrypter initializeEncrypter(OutputStream outputStream, ZipParameters zipParameters, char[] cArr, boolean z) throws IOException {
         StandardEncrypter standardEncrypter = new StandardEncrypter(cArr, getEncryptionKey(zipParameters), z);

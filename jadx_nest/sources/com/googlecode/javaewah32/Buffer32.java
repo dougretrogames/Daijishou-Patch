@@ -1,6 +1,6 @@
 package com.googlecode.javaewah32;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 interface Buffer32 {
     void andLastWord(int i);
 

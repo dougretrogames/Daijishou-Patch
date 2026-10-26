@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Predicates {
     private Predicates() {
@@ -93,8 +93,8 @@ public final class Predicates {
         return new ContainsPatternPredicate(new JdkPattern(pattern));
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     static abstract class ObjectPredicate implements Predicate<Object> {
         public static final ObjectPredicate ALWAYS_TRUE = new AnonymousClass1("ALWAYS_TRUE", 0);
         public static final ObjectPredicate ALWAYS_FALSE = new AnonymousClass2("ALWAYS_FALSE", 1);
@@ -126,7 +126,7 @@ public final class Predicates {
             return (ObjectPredicate[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.base.Predicates$ObjectPredicate$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.base.Predicates$ObjectPredicate$1, reason: invalid class name */
         final enum AnonymousClass1 extends ObjectPredicate {
             @Override // com.google.common.base.Predicate
             public boolean apply(@CheckForNull Object o) {
@@ -143,7 +143,7 @@ public final class Predicates {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.base.Predicates$ObjectPredicate$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.base.Predicates$ObjectPredicate$2, reason: invalid class name */
         final enum AnonymousClass2 extends ObjectPredicate {
             @Override // com.google.common.base.Predicate
             public boolean apply(@CheckForNull Object o) {
@@ -160,7 +160,7 @@ public final class Predicates {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.base.Predicates$ObjectPredicate$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.base.Predicates$ObjectPredicate$3, reason: invalid class name */
         final enum AnonymousClass3 extends ObjectPredicate {
             @Override // com.google.common.base.Predicate
             public boolean apply(@CheckForNull Object o) {
@@ -177,7 +177,7 @@ public final class Predicates {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.base.Predicates$ObjectPredicate$4, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.base.Predicates$ObjectPredicate$4, reason: invalid class name */
         final enum AnonymousClass4 extends ObjectPredicate {
             @Override // com.google.common.base.Predicate
             public boolean apply(@CheckForNull Object o) {
@@ -303,7 +303,7 @@ public final class Predicates {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static String toStringHelper(String methodName, Iterable<?> components) {
         StringBuilder sbAppend = new StringBuilder("Predicates.").append(methodName).append('(');
         boolean z = true;

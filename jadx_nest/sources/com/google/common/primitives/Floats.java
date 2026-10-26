@@ -15,7 +15,7 @@ import java.util.RandomAccess;
 import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class Floats extends FloatsMethodsForWeb {
     public static final int BYTES = 4;
@@ -48,7 +48,7 @@ public final class Floats extends FloatsMethodsForWeb {
         return indexOf(array, target, 0, array.length);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int indexOf(float[] array, float target, int start, int end) {
         while (start < end) {
             if (array[start] == target) {
@@ -79,7 +79,7 @@ public final class Floats extends FloatsMethodsForWeb {
         return lastIndexOf(array, target, 0, array.length);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int lastIndexOf(float[] array, float target, int start, int end) {
         for (int i = end - 1; i >= start; i--) {
             if (array[i] == target) {
@@ -135,13 +135,13 @@ public final class Floats extends FloatsMethodsForWeb {
         private FloatConverter() {
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.base.Converter
         public Float doForward(String value) {
             return Float.valueOf(value);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.base.Converter
         public String doBackward(Float value) {
             return value.toString();

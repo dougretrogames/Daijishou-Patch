@@ -13,7 +13,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectIdOwnerMap;
 import org.eclipse.jgit.util.BlockList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BitmapIndexImpl implements BitmapIndex {
     private static final int EXTRA_BITS = 10240;
     final int indexObjectCount;
@@ -164,7 +164,7 @@ public class BitmapIndexImpl implements BitmapIndex {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final class CompressedBitmapBuilder implements BitmapIndex.BitmapBuilder {
         private final BitmapIndexImpl bitmapIndex;
         private ComboBitset bitset = new ComboBitset();
@@ -302,7 +302,7 @@ public class BitmapIndexImpl implements BitmapIndex {
             return new AnonymousClass1(this.bitmap.andNot(BitmapIndexImpl.ones(this.bitmapIndex.indexObjectCount)).intIterator(), ofObjectType(1), ofObjectType(2), ofObjectType(3), ofObjectType(4));
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.BitmapIndexImpl$CompressedBitmap$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.BitmapIndexImpl$CompressedBitmap$1, reason: invalid class name */
         class AnonymousClass1 implements Iterator<BitmapObject> {
             private IntIterator cached;
             private final BitmapObjectImpl out = new BitmapObjectImpl(null);

@@ -3,7 +3,7 @@ package org.apache.commons.io.input;
 import java.io.Reader;
 import java.util.function.IntPredicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CharacterFilterReader extends AbstractCharacterFilterReader {
     static /* synthetic */ boolean lambda$new$0(int i, int i2) {
         return i2 == i;

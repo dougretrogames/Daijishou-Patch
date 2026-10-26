@@ -6,7 +6,7 @@ import android.view.ContextThemeWrapper;
 import com.google.android.material.R;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ResourcesLoaderColorResourcesOverride implements ColorResourcesOverride {
     /* synthetic */ ResourcesLoaderColorResourcesOverride(AnonymousClass1 anonymousClass1) {
         this();

@@ -18,7 +18,7 @@ import androidx.core.view.accessibility.AccessibilityRecordCompat;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ExploreByTouchHelper extends AccessibilityDelegateCompat {
     private static final String DEFAULT_CLASS_NAME = "android.view.View";
     public static final int HOST_ID = -1;
@@ -107,8 +107,8 @@ public abstract class ExploreByTouchHelper extends AccessibilityDelegateCompat {
         return false;
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code duplicated, block: B:18:0x0036  */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Code duplicated, block: B:18:0x0036  */
     public final boolean dispatchKeyEvent(KeyEvent keyEvent) {
         int i = 0;
         if (keyEvent.getAction() != 1) {
@@ -176,7 +176,7 @@ public abstract class ExploreByTouchHelper extends AccessibilityDelegateCompat {
         obtainAccessibilityNodeInfo(i).getBoundsInParent(rect);
     }
 
-    /* JADX INFO: renamed from: androidx.customview.widget.ExploreByTouchHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.customview.widget.ExploreByTouchHelper$1, reason: invalid class name */
     class AnonymousClass1 implements FocusStrategy.BoundsAdapter<AccessibilityNodeInfoCompat> {
         AnonymousClass1() {
         }
@@ -187,7 +187,7 @@ public abstract class ExploreByTouchHelper extends AccessibilityDelegateCompat {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.customview.widget.ExploreByTouchHelper$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.customview.widget.ExploreByTouchHelper$2, reason: invalid class name */
     class AnonymousClass2 implements FocusStrategy.CollectionAdapter<SparseArrayCompat<AccessibilityNodeInfoCompat>, AccessibilityNodeInfoCompat> {
         AnonymousClass2() {
         }

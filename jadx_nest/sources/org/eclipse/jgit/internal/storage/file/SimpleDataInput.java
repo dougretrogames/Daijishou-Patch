@@ -6,7 +6,7 @@ import java.io.InputStream;
 import org.eclipse.jgit.util.IO;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class SimpleDataInput implements DataInput {
     private final byte[] buf = new byte[8];
     private final InputStream fd;

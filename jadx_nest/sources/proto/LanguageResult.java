@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public final class LanguageResult extends GeneratedMessage implements LanguageResultOrBuilder {
     private static final LanguageResult DEFAULT_INSTANCE;
     public static final int LANGUAGES_FIELD_NUMBER = 1;
@@ -138,18 +138,18 @@ public final class LanguageResult extends GeneratedMessage implements LanguageRe
         return DEFAULT_INSTANCE.toBuilder();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static Builder newBuilder(LanguageResult languageResult) {
         return (Builder) DEFAULT_INSTANCE.toBuilder().mergeFrom((Message) languageResult);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.protobuf.MessageLite, com.google.protobuf.Message
     public Builder toBuilder() {
         return this == DEFAULT_INSTANCE ? new Builder((LanguageResultIA) null) : (Builder) new Builder((LanguageResultIA) null).mergeFrom((Message) this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent builderParent) {
         return new Builder(builderParent, null);
@@ -439,7 +439,7 @@ public final class LanguageResult extends GeneratedMessage implements LanguageRe
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: proto.LanguageResult$1, reason: invalid class name */
+    /* INFO: renamed from: proto.LanguageResult$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<LanguageResult> {
         AnonymousClass1() {
         }

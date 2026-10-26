@@ -1,6 +1,6 @@
 package io.opencensus.metrics;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class LabelKey {
     public abstract String getDescription();
 

@@ -21,7 +21,7 @@ import java.util.List;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class GridLayout extends ViewGroup {
     public static final int ALIGN_BOUNDS = 0;
     public static final int ALIGN_MARGINS = 1;
@@ -72,7 +72,7 @@ public class GridLayout extends ViewGroup {
         return (i & 2) != 0;
     }
 
-    /* JADX INFO: renamed from: androidx.gridlayout.widget.GridLayout$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.gridlayout.widget.GridLayout$1, reason: invalid class name */
     class AnonymousClass1 implements Printer {
         @Override // android.util.Printer
         public void println(String str) {
@@ -427,7 +427,7 @@ public class GridLayout extends ViewGroup {
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup
     public LayoutParams generateDefaultLayoutParams() {
         return new LayoutParams();
@@ -438,7 +438,7 @@ public class GridLayout extends ViewGroup {
         return new LayoutParams(getContext(), attributeSet);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup
     public LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
         if (layoutParams instanceof LayoutParams) {
@@ -829,7 +829,7 @@ public class GridLayout extends ViewGroup {
             return arcArr2;
         }
 
-        /* JADX INFO: renamed from: androidx.gridlayout.widget.GridLayout$Axis$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.gridlayout.widget.GridLayout$Axis$1, reason: invalid class name */
         class AnonymousClass1 {
             Arc[][] arcsByVertex;
             int cursor;
@@ -1684,7 +1684,7 @@ public class GridLayout extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.gridlayout.widget.GridLayout$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.gridlayout.widget.GridLayout$2, reason: invalid class name */
     class AnonymousClass2 extends Alignment {
         @Override // androidx.gridlayout.widget.GridLayout.Alignment
         public int getAlignmentValue(View view, int i, int i2) {
@@ -1705,7 +1705,7 @@ public class GridLayout extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.gridlayout.widget.GridLayout$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.gridlayout.widget.GridLayout$3, reason: invalid class name */
     class AnonymousClass3 extends Alignment {
         @Override // androidx.gridlayout.widget.GridLayout.Alignment
         public int getAlignmentValue(View view, int i, int i2) {
@@ -1726,7 +1726,7 @@ public class GridLayout extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.gridlayout.widget.GridLayout$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.gridlayout.widget.GridLayout$4, reason: invalid class name */
     class AnonymousClass4 extends Alignment {
         @Override // androidx.gridlayout.widget.GridLayout.Alignment
         public int getAlignmentValue(View view, int i, int i2) {
@@ -1747,7 +1747,7 @@ public class GridLayout extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.gridlayout.widget.GridLayout$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.gridlayout.widget.GridLayout$5, reason: invalid class name */
     class AnonymousClass5 extends Alignment {
         final /* synthetic */ Alignment val$ltr;
         final /* synthetic */ Alignment val$rtl;
@@ -1777,7 +1777,7 @@ public class GridLayout extends ViewGroup {
         return new AnonymousClass5(alignment, alignment2);
     }
 
-    /* JADX INFO: renamed from: androidx.gridlayout.widget.GridLayout$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.gridlayout.widget.GridLayout$6, reason: invalid class name */
     class AnonymousClass6 extends Alignment {
         @Override // androidx.gridlayout.widget.GridLayout.Alignment
         public int getAlignmentValue(View view, int i, int i2) {
@@ -1798,7 +1798,7 @@ public class GridLayout extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.gridlayout.widget.GridLayout$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.gridlayout.widget.GridLayout$7, reason: invalid class name */
     class AnonymousClass7 extends Alignment {
         @Override // androidx.gridlayout.widget.GridLayout.Alignment
         int getGravityOffset(View view, int i) {
@@ -1820,7 +1820,7 @@ public class GridLayout extends ViewGroup {
             return baseline;
         }
 
-        /* JADX INFO: renamed from: androidx.gridlayout.widget.GridLayout$7$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.gridlayout.widget.GridLayout$7$1, reason: invalid class name */
         class AnonymousClass1 extends Bounds {
             private int size;
 
@@ -1861,7 +1861,7 @@ public class GridLayout extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.gridlayout.widget.GridLayout$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.gridlayout.widget.GridLayout$8, reason: invalid class name */
     class AnonymousClass8 extends Alignment {
         @Override // androidx.gridlayout.widget.GridLayout.Alignment
         public int getAlignmentValue(View view, int i, int i2) {

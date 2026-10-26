@@ -13,7 +13,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.FileUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileModeCache {
     private final Repository repo;
     private final CacheItem root = new CacheItem(FileMode.TREE);

@@ -4,7 +4,7 @@ import java.io.Serializable;
 import org.apache.commons.collections4.Factory;
 import org.apache.commons.collections4.FunctorException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ExceptionFactory<T> implements Factory<T>, Serializable {
     public static final Factory INSTANCE = new ExceptionFactory();
     private static final long serialVersionUID = 7179106032121985545L;

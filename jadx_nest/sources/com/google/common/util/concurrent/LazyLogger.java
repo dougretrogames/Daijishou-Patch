@@ -2,7 +2,7 @@ package com.google.common.util.concurrent;
 
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 final class LazyLogger {
     private volatile Logger logger;

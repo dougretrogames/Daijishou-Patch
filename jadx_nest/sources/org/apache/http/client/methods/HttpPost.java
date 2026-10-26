@@ -2,7 +2,7 @@ package org.apache.http.client.methods;
 
 import java.net.URI;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpPost extends HttpEntityEnclosingRequestBase {
     public static final String METHOD_NAME = "POST";
 

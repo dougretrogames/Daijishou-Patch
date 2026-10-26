@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.support.v4.media.session.MediaSessionCompat;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MediaBrowserCompatApi26 {
 
     interface SubscriptionCallback extends MediaBrowserCompatApi21.SubscriptionCallback {

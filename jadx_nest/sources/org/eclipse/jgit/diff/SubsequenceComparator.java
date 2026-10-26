@@ -2,7 +2,7 @@ package org.eclipse.jgit.diff;
 
 import org.eclipse.jgit.diff.Sequence;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class SubsequenceComparator<S extends Sequence> extends SequenceComparator<Subsequence<S>> {
     private final SequenceComparator<? super S> cmp;
 

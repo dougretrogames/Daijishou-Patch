@@ -10,7 +10,7 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.http.conn.DnsResolver;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class InMemoryDnsResolver implements DnsResolver {
     private final Log log = LogFactory.getLog(InMemoryDnsResolver.class);
     private final Map<String, InetAddress[]> dnsMap = new ConcurrentHashMap();

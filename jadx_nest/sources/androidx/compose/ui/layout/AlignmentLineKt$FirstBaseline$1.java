@@ -5,8 +5,8 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.math.MathKt;
 
-/* JADX INFO: compiled from: AlignmentLine.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AlignmentLine.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 /* synthetic */ class AlignmentLineKt$FirstBaseline$1 extends FunctionReferenceImpl implements Function2<Integer, Integer, Integer> {
     public static final AlignmentLineKt$FirstBaseline$1 INSTANCE = new AlignmentLineKt$FirstBaseline$1();

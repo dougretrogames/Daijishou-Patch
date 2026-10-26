@@ -53,18 +53,18 @@ import kotlin.jvm.internal.StringCompanionObject;
 import kotlinx.coroutines.Job;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: compiled from: AppsViewPagerFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: AppsViewPagerFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u008e\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 T2\u00020\u0001:\u0003STUB\u0005¢\u0006\u0002\u0010\u0002J\b\u0010@\u001a\u000202H\u0016J\u0012\u0010A\u001a\u00020B2\b\u0010C\u001a\u0004\u0018\u00010DH\u0016J&\u0010E\u001a\u0004\u0018\u00010F2\u0006\u0010G\u001a\u00020H2\b\u0010I\u001a\u0004\u0018\u00010J2\b\u0010C\u001a\u0004\u0018\u00010DH\u0017J\b\u0010K\u001a\u00020BH\u0016J \u0010L\u001a\u0002022\u0006\u0010M\u001a\u00020\r2\u0006\u0010N\u001a\u00020\r2\u0006\u0010O\u001a\u00020PH\u0016J\u0010\u0010Q\u001a\u00020B2\u0006\u0010R\u001a\u000200H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u001b\u0010\u0006\u001a\u00020\u00078BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\n\u0010\u000b\u001a\u0004\b\b\u0010\tR\u0014\u0010\f\u001a\u00020\rX\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u000e\u0010\u0010\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010\u0011\u001a\u00020\rX\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u000f\"\u0004\b\u0013\u0010\u0014R\u000e\u0010\u0015\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0016\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010\u0019\u001a\u00020\u0004X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR\u000e\u0010\u001c\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u001fX\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010 \u001a\b\u0012\u0004\u0012\u00020\u00040!X\u0082.¢\u0006\u0002\n\u0000R\u001b\u0010\"\u001a\u00020#8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b&\u0010\u000b\u001a\u0004\b$\u0010%R\u0014\u0010'\u001a\u00020\rX\u0096D¢\u0006\b\n\u0000\u001a\u0004\b(\u0010\u000fR\u000e\u0010)\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010*\u001a\u00020+X\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010,\u001a\u00060-R\u00020\u0000X\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010.\u001a\b\u0012\u0004\u0012\u0002000/X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u00101\u001a\u000202X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00103\u001a\u00020\u001fX\u0082.¢\u0006\u0002\n\u0000R\u0014\u00104\u001a\b\u0012\u0004\u0012\u00020\r0!X\u0082.¢\u0006\u0002\n\u0000R\u0014\u00105\u001a\b\u0012\u0004\u0012\u00020\u00040!X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00106\u001a\u000207X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00108\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00109\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010:\u001a\u000202X\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b;\u0010<\"\u0004\b=\u0010>R\u000e\u0010?\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000¨\u0006V"}, d2 = {"Lcom/magneticchen/daijishou/view_pager_fragments/AppsViewPagerFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/ViewPagerFragment;", "()V", "activitiesFormatString", "", "applicationInfoString", "appsViewModel", "Lcom/magneticchen/daijishou/view_models/AppsViewModel;", "getAppsViewModel", "()Lcom/magneticchen/daijishou/view_models/AppsViewModel;", "appsViewModel$delegate", "Lkotlin/Lazy;", "backButtonDescriptionStringId", "", "getBackButtonDescriptionStringId", "()I", "copiedString", "displayNameStringId", "getDisplayNameStringId", "setDisplayNameStringId", "(I)V", "flagAsGameFormatString", "flagAsNotGameFormatString", "gridLayoutManager", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouGridLayoutManager;", "id", "getId", "()Ljava/lang/String;", "isGameFormatString", "isNotGameFormatString", "modeButton", "Lcom/google/android/material/button/MaterialButton;", "modeNameStringList", "", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "getModel", "()Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "model$delegate", "nextFocusDown", "getNextFocusDown", "optionsString", "recyclerView", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;", "recyclerViewAdapter", "Lcom/magneticchen/daijishou/view_pager_fragments/AppsViewPagerFragment$AppsRecyclerViewAdapter;", "resolveInfoCollectionInRecyclerView", "", "Landroid/content/pm/ResolveInfo;", "scrollingOnBackPressed", "", "sortButton", "sortingTypeIconList", "sortingTypeStringList", "titleLayout", "Landroidx/constraintlayout/widget/ConstraintLayout;", "uninstallConfirmFormatString", "uninstallFormatString", "useDefaultWallpaper", "getUseDefaultWallpaper", "()Z", "setUseDefaultWallpaper", "(Z)V", "viewActivitiesString", "onBackPressed", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onDestroy", "onHotKeyPressed", "hotkeyCode", "keyCode", "keyEvent", "Landroid/view/KeyEvent;", "showResolveInfoOptions", "resolveInfo", "AppsRecyclerViewAdapter", "Companion", "ResolveInfoDiffUtilCallback", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class AppsViewPagerFragment extends ViewPagerFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final int appIconResolutionPx = 128;
     private String activitiesFormatString;
     private String applicationInfoString;
 
-    /* JADX INFO: renamed from: appsViewModel$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: appsViewModel$delegate, reason: from kotlin metadata */
     private final Lazy appsViewModel;
     private String copiedString;
     private String flagAsGameFormatString;
@@ -75,7 +75,7 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
     private MaterialButton modeButton;
     private List<String> modeNameStringList;
 
-    /* JADX INFO: renamed from: model$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: model$delegate, reason: from kotlin metadata */
     private final Lazy model;
     private String optionsString;
     private DaijishouRecyclerView recyclerView;
@@ -101,7 +101,7 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         this.appsViewModel = FragmentViewModelLazyKt.createViewModelLazy(appsViewPagerFragment, Reflection.getOrCreateKotlinClass(AppsViewModel.class), new AppsViewPagerFragment$special$$inlined$activityViewModels$default$4(appsViewPagerFragment), new AppsViewPagerFragment$special$$inlined$activityViewModels$default$5(null, appsViewPagerFragment), new AppsViewPagerFragment$special$$inlined$activityViewModels$default$6(appsViewPagerFragment));
     }
 
-    /* JADX INFO: compiled from: AppsViewPagerFragment.kt */
+    /* INFO: compiled from: AppsViewPagerFragment.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0005\u001a\u00020\u0006R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u0007"}, d2 = {"Lcom/magneticchen/daijishou/view_pager_fragments/AppsViewPagerFragment$Companion;", "", "()V", "appIconResolutionPx", "", "newInstance", "Lcom/magneticchen/daijishou/view_pager_fragments/AppsViewPagerFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -151,24 +151,24 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         this.useDefaultWallpaper = z;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final DaijishouViewModel getModel() {
         return (DaijishouViewModel) this.model.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final AppsViewModel getAppsViewModel() {
         return (AppsViewModel) this.appsViewModel.getValue();
     }
 
-    /* JADX INFO: compiled from: AppsViewPagerFragment.kt */
+    /* INFO: compiled from: AppsViewPagerFragment.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0018\u0002\b\u0086\u0004\u0018\u00002\u00020\u0001B!\u0012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003¢\u0006\u0002\u0010\u0006J\u0018\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\nH\u0016J\u0018\u0010\f\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u000b\u001a\u00020\nH\u0016J\b\u0010\r\u001a\u00020\nH\u0016J\b\u0010\u000e\u001a\u00020\nH\u0016R\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000f²\u0006\n\u0010\u0010\u001a\u00020\u0011X\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/view_pager_fragments/AppsViewPagerFragment$ResolveInfoDiffUtilCallback;", "Landroidx/recyclerview/widget/DiffUtil$Callback;", "oldList", "", "Landroid/content/pm/ResolveInfo;", "newList", "(Lcom/magneticchen/daijishou/view_pager_fragments/AppsViewPagerFragment;Ljava/util/List;Ljava/util/List;)V", "areContentsTheSame", "", "oldItemPosition", "", "newItemPosition", "areItemsTheSame", "getNewListSize", "getOldListSize", "app_release", "appsViewModel", "Lcom/magneticchen/daijishou/view_models/AppsViewModel;"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class ResolveInfoDiffUtilCallback extends DiffUtil.Callback {
         private final List<ResolveInfo> newList;
         private final List<ResolveInfo> oldList;
         final /* synthetic */ AppsViewPagerFragment this$0;
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public ResolveInfoDiffUtilCallback(AppsViewPagerFragment appsViewPagerFragment, List<ResolveInfo> oldList, List<ResolveInfo> newList) {
             Intrinsics.checkNotNullParameter(oldList, "oldList");
             Intrinsics.checkNotNullParameter(newList, "newList");
@@ -291,12 +291,12 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         return true;
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x001e  */
-    /* JADX WARN: Code duplicated, block: B:32:0x005c  */
-    /* JADX WARN: Code duplicated, block: B:34:0x0062  */
-    /* JADX WARN: Code duplicated, block: B:37:0x006d  */
-    /* JADX WARN: Code duplicated, block: B:38:0x0071  */
-    /* JADX WARN: Code duplicated, block: B:9:0x001a  */
+    /* WARN: Code duplicated, block: B:11:0x001e  */
+    /* WARN: Code duplicated, block: B:32:0x005c  */
+    /* WARN: Code duplicated, block: B:34:0x0062  */
+    /* WARN: Code duplicated, block: B:37:0x006d  */
+    /* WARN: Code duplicated, block: B:38:0x0071  */
+    /* WARN: Code duplicated, block: B:9:0x001a  */
     @Override // com.magneticchen.daijishou.abstract_fragment_classes.DaijishouFragment
     public boolean onBackPressed() {
         DaijishouRecyclerView daijishouRecyclerView;
@@ -386,7 +386,7 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         return !constraintLayout3.isFocused();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void showResolveInfoOptions(ResolveInfo resolveInfo) {
         String str;
         String str2;
@@ -453,8 +453,8 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         listSelectDialogFragmentNewInstance$default.show(getChildFragmentManager(), ListSelectDialogFragment.class.getName());
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.AppsViewPagerFragment$showResolveInfoOptions$1, reason: invalid class name */
-    /* JADX INFO: compiled from: AppsViewPagerFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.AppsViewPagerFragment$showResolveInfoOptions$1, reason: invalid class name */
+    /* INFO: compiled from: AppsViewPagerFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ CharSequence $appLabel;
@@ -464,7 +464,7 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         final /* synthetic */ String $resolveInfoStringId;
         final /* synthetic */ AppsViewPagerFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(String str, AppsViewPagerFragment appsViewPagerFragment, String str2, PackageManager packageManager, CharSequence charSequence, ListSelectDialogFragment listSelectDialogFragment) {
             super(1);
             this.$packageName = str;
@@ -522,15 +522,15 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
             this.$dialog.dismiss();
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.AppsViewPagerFragment$showResolveInfoOptions$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: AppsViewPagerFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.AppsViewPagerFragment$showResolveInfoOptions$1$2, reason: invalid class name */
+        /* INFO: compiled from: AppsViewPagerFragment.kt */
         @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "selectedActivityIndex", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass2 extends Lambda<Unit> implements Function1<Integer, Unit> {
             final /* synthetic */ ListSelectDialogFragment $activitiesDialog;
             final /* synthetic */ ArrayList<String> $activityNames;
             final /* synthetic */ AppsViewPagerFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(AppsViewPagerFragment appsViewPagerFragment, ArrayList<String> arrayList, ListSelectDialogFragment listSelectDialogFragment) {
                 super(1);
                 this.this$0 = appsViewPagerFragment;
@@ -564,18 +564,18 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         }
     }
 
-    /* JADX INFO: compiled from: AppsViewPagerFragment.kt */
+    /* INFO: compiled from: AppsViewPagerFragment.kt */
     @Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0082\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001 B\u0013\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004¢\u0006\u0002\u0010\u0005J\u0010\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u001aH\u0016J\"\u0010\u001b\u001a\f0\u001cR\b\u0012\u0004\u0012\u00020\u00020\u00012\u0006\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020\u001aH\u0016R\u001b\u0010\u0006\u001a\u00020\u00078BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\n\u0010\u000b\u001a\u0004\b\b\u0010\tR\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u001d\u0010\f\u001a\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000f0\r¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R-\u0010\u0012\u001a\u001e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000e0\u0013j\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u000e`\u0014¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016¨\u0006!"}, d2 = {"Lcom/magneticchen/daijishou/view_pager_fragments/AppsViewPagerFragment$AppsRecyclerViewAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Landroid/content/pm/ResolveInfo;", "packageResolveInfoList", "", "(Lcom/magneticchen/daijishou/view_pager_fragments/AppsViewPagerFragment;Ljava/util/List;)V", "appsViewModel", "Lcom/magneticchen/daijishou/view_models/AppsViewModel;", "getAppsViewModel", "()Lcom/magneticchen/daijishou/view_models/AppsViewModel;", "appsViewModel$delegate", "Lkotlin/Lazy;", "resolveInfoStringIdToBitmapCache", "Lcom/magneticchen/daijishou/utils/Utils$MaxSizeHashMap;", "", "Landroid/graphics/Bitmap;", "getResolveInfoStringIdToBitmapCache", "()Lcom/magneticchen/daijishou/utils/Utils$MaxSizeHashMap;", "resolveInfoStringIdToLabelCache", "Ljava/util/HashMap;", "Lkotlin/collections/HashMap;", "getResolveInfoStringIdToLabelCache", "()Ljava/util/HashMap;", "getItemId", "", "position", "", "onCreateViewHolder", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "parent", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     private final class AppsRecyclerViewAdapter extends DaijishouRecyclerView.Adapter<ResolveInfo> {
 
-        /* JADX INFO: renamed from: appsViewModel$delegate, reason: from kotlin metadata */
+        /* INFO: renamed from: appsViewModel$delegate, reason: from kotlin metadata */
         private final Lazy appsViewModel;
         private final List<ResolveInfo> packageResolveInfoList;
         private final Utils.MaxSizeHashMap<String, Bitmap> resolveInfoStringIdToBitmapCache;
         private final HashMap<String, String> resolveInfoStringIdToLabelCache;
         final /* synthetic */ AppsViewPagerFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public AppsRecyclerViewAdapter(AppsViewPagerFragment appsViewPagerFragment, List<ResolveInfo> packageResolveInfoList) {
             super(packageResolveInfoList, false, false, 6, null);
             Intrinsics.checkNotNullParameter(packageResolveInfoList, "packageResolveInfoList");
@@ -587,7 +587,7 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
             this.resolveInfoStringIdToLabelCache = getAppsViewModel().getResolveInfoStringIdToLabelCache();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final AppsViewModel getAppsViewModel() {
             return (AppsViewModel) this.appsViewModel.getValue();
         }
@@ -613,7 +613,7 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
             return this.packageResolveInfoList.get(position).activityInfo.hashCode();
         }
 
-        /* JADX INFO: compiled from: AppsViewPagerFragment.kt */
+        /* INFO: compiled from: AppsViewPagerFragment.kt */
         @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%2\u0006\u0010&\u001a\u00020\u0003H\u0016J\b\u0010'\u001a\u00020#H\u0016J\u0010\u0010(\u001a\u00020#2\u0006\u0010)\u001a\u00020\u001eH\u0016R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u001c\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R\u0011\u0010\u0015\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\nR\u001c\u0010\u0017\u001a\u0004\u0018\u00010\u0018X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u001a\"\u0004\b\u001b\u0010\u001cR\u001a\u0010\u001d\u001a\u00020\u001eX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001d\u0010\u001f\"\u0004\b \u0010!¨\u0006*"}, d2 = {"Lcom/magneticchen/daijishou/view_pager_fragments/AppsViewPagerFragment$AppsRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Landroid/content/pm/ResolveInfo;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/view_pager_fragments/AppsViewPagerFragment$AppsRecyclerViewAdapter;Landroid/view/View;)V", "appGamePadIconTextView", "Landroid/widget/TextView;", "getAppGamePadIconTextView", "()Landroid/widget/TextView;", "appIconImageView", "Landroid/widget/ImageView;", "getAppIconImageView", "()Landroid/widget/ImageView;", "appLabel", "", "getAppLabel", "()Ljava/lang/String;", "setAppLabel", "(Ljava/lang/String;)V", "appLabelView", "getAppLabelView", "drawableJob", "Lkotlinx/coroutines/Job;", "getDrawableJob", "()Lkotlinx/coroutines/Job;", "setDrawableJob", "(Lkotlinx/coroutines/Job;)V", "isGame", "", "()Z", "setGame", "(Z)V", "onBind", "", "position", "", "item", "onFocus", "onFocusClear", "isAbsoluteAdapterPositionValid", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<ResolveInfo>.ViewHolder {
             private final TextView appGamePadIconTextView;
@@ -624,7 +624,7 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
             private boolean isGame;
             final /* synthetic */ AppsRecyclerViewAdapter this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(AppsRecyclerViewAdapter appsRecyclerViewAdapter, View itemView) {
                 super(appsRecyclerViewAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");
@@ -669,7 +669,7 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
                 this.appLabel = str;
             }
 
-            /* JADX INFO: renamed from: isGame, reason: from getter */
+            /* INFO: renamed from: isGame, reason: from getter */
             public final boolean getIsGame() {
                 return this.isGame;
             }
@@ -921,7 +921,7 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$1(AppsViewPagerFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         DaijishouRecyclerView daijishouRecyclerView = this$0.recyclerView;
@@ -932,7 +932,7 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         daijishouRecyclerView.smoothScrollToPosition(0);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$2(AppsViewPagerFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.getAppsViewModel().toggleNextItemsMode();
@@ -951,7 +951,7 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         materialButton.setText(list.get(this$0.getAppsViewModel().getItemsMode()));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$3(AppsViewPagerFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.getAppsViewModel().toggleNextSortingMode();
@@ -981,13 +981,13 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         materialButton2.setIconResource(list.get(this$0.getAppsViewModel().getSortingMode()).intValue());
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.AppsViewPagerFragment$onCreateView$4, reason: invalid class name */
-    /* JADX INFO: compiled from: AppsViewPagerFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.AppsViewPagerFragment$onCreateView$4, reason: invalid class name */
+    /* INFO: compiled from: AppsViewPagerFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "resolveInfo", "Landroid/content/pm/ResolveInfo;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass4 extends Lambda<Unit> implements Function4<View, Integer, Long, ResolveInfo, Unit> {
         final /* synthetic */ FragmentActivity $activity;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass4(FragmentActivity fragmentActivity) {
             super(4);
             this.$activity = fragmentActivity;
@@ -1006,8 +1006,8 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.AppsViewPagerFragment$onCreateView$5, reason: invalid class name */
-    /* JADX INFO: compiled from: AppsViewPagerFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.AppsViewPagerFragment$onCreateView$5, reason: invalid class name */
+    /* INFO: compiled from: AppsViewPagerFragment.kt */
     @Metadata(d1 = {"\u0000\"\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0004\b\n\u0010\u000b"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "position", "", "<anonymous parameter 2>", "", "resolveInfo", "Landroid/content/pm/ResolveInfo;", "invoke", "(Landroid/view/View;IJLandroid/content/pm/ResolveInfo;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass5 extends Lambda<Boolean> implements Function4<View, Integer, Long, ResolveInfo, Boolean> {
         AnonymousClass5() {
@@ -1027,8 +1027,8 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.AppsViewPagerFragment$onCreateView$6, reason: invalid class name */
-    /* JADX INFO: compiled from: AppsViewPagerFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.AppsViewPagerFragment$onCreateView$6, reason: invalid class name */
+    /* INFO: compiled from: AppsViewPagerFragment.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/view_pager_fragments/AppsViewPagerFragment$onCreateView$6", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass6 extends RecyclerView.OnScrollListener {
         AnonymousClass6() {
@@ -1044,8 +1044,8 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.AppsViewPagerFragment$onCreateView$7, reason: invalid class name */
-    /* JADX INFO: compiled from: AppsViewPagerFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_pager_fragments.AppsViewPagerFragment$onCreateView$7, reason: invalid class name */
+    /* INFO: compiled from: AppsViewPagerFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "resolveInfoCollection", "", "Landroid/content/pm/ResolveInfo;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass7 extends Lambda<Unit> implements Function1<List<ResolveInfo>, Unit> {
         AnonymousClass7() {
@@ -1058,7 +1058,7 @@ public final class AppsViewPagerFragment extends ViewPagerFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<ResolveInfo> list) {
             DaijishouRecyclerView daijishouRecyclerView = null;
             AppsRecyclerViewAdapter appsRecyclerViewAdapter = null;

@@ -13,7 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ScrimInsetsFrameLayout extends FrameLayout {
     private boolean drawBottomInsetForeground;
     private boolean drawLeftInsetForeground;
@@ -48,7 +48,7 @@ public class ScrimInsetsFrameLayout extends FrameLayout {
         ViewCompat.setOnApplyWindowInsetsListener(this, new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.ScrimInsetsFrameLayout$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.ScrimInsetsFrameLayout$1, reason: invalid class name */
     class AnonymousClass1 implements OnApplyWindowInsetsListener {
         AnonymousClass1() {
         }

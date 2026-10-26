@@ -1,6 +1,6 @@
 package org.eclipse.jgit.lib;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class GitmoduleEntry {
     private final AnyObjectId blobId;
     private final AnyObjectId treeId;

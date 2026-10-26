@@ -6,7 +6,7 @@ import android.view.View;
 import android.widget.FrameLayout;
 import androidx.appcompat.app.AppCompatDialogFragment;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BottomSheetDialogFragment extends AppCompatDialogFragment {
     private boolean waitingForDismissAllowingStateLoss;
 
@@ -65,7 +65,7 @@ public class BottomSheetDialogFragment extends AppCompatDialogFragment {
         bottomSheetBehavior.setState(5);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void dismissAfterAnimation() {
         if (this.waitingForDismissAllowingStateLoss) {
             super.dismissAllowingStateLoss();

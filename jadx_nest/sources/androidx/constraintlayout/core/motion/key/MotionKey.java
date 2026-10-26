@@ -6,7 +6,7 @@ import androidx.constraintlayout.core.motion.utils.TypedValues;
 import java.util.HashMap;
 import java.util.HashSet;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class MotionKey implements TypedValues {
     public static final String ALPHA = "alpha";
     public static final String CUSTOM = "CUSTOM";
@@ -29,7 +29,7 @@ public abstract class MotionKey implements TypedValues {
     public abstract void addValues(HashMap<String, SplineSet> map);
 
     @Override // 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public abstract MotionKey mo3140clone();
 
     public abstract void getAttributeNames(HashSet<String> hashSet);

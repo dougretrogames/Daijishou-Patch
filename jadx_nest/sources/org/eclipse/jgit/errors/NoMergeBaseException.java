@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.text.MessageFormat;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NoMergeBaseException extends IOException {
     private static final long serialVersionUID = 1;
     private MergeBaseFailureReason reason;
@@ -14,7 +14,7 @@ public class NoMergeBaseException extends IOException {
         TOO_MANY_MERGE_BASES,
         CONFLICTS_DURING_MERGE_BASE_CALCULATION;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static MergeBaseFailureReason[] valuesCustom() {
             MergeBaseFailureReason[] mergeBaseFailureReasonArrValuesCustom = values();
             int length = mergeBaseFailureReasonArrValuesCustom.length;

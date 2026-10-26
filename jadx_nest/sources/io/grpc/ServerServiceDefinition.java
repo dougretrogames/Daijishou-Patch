@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ServerServiceDefinition {
     private final Map<String, ServerMethodDefinition<?, ?>> methods;
     private final ServiceDescriptor serviceDescriptor;

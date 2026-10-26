@@ -4,8 +4,8 @@ import java.util.Set;
 import java.util.function.Predicate;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class UploadPack$$ExternalSyntheticLambda23 implements Predicate {
     public final /* synthetic */ Set f$0;
 

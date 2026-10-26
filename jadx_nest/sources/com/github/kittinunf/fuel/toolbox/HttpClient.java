@@ -54,12 +54,12 @@ import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.http.protocol.HTTP;
 import org.eclipse.jgit.util.HttpSupport;
 
-/* JADX INFO: compiled from: HttpClient.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: HttpClient.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000 (2\u00020\u0001:\u0001(B-\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0005\u0012\u0006\u0010\u0007\u001a\u00020\b¢\u0006\u0002\u0010\tJ\u0019\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0017H\u0096@ø\u0001\u0000¢\u0006\u0002\u0010\u0018J\u001a\u0010\u0019\u001a\u0004\u0018\u00010\u001a2\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J\u0010\u0010\u001d\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0017H\u0002J\u001a\u0010\u001e\u001a\u00020\u001f2\u0006\u0010\u0016\u001a\u00020\u00172\b\u0010\u001b\u001a\u0004\u0018\u00010\u001cH\u0002J\u0010\u0010 \u001a\u00020\u001c2\u0006\u0010\u0016\u001a\u00020\u0017H\u0002J\u0010\u0010!\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0017H\u0016J\u0018\u0010\"\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J\u0018\u0010#\u001a\u00020\u001f2\u0006\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J\u0018\u0010$\u001a\u00020\u001f2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u0016\u001a\u00020\u0017H\u0002J\u0018\u0010%\u001a\u00020\u001f2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010&\u001a\u00020'H\u0002R\u001a\u0010\u0006\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u000b\"\u0004\b\f\u0010\rR\u001a\u0010\u0007\u001a\u00020\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u0010\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0004\u001a\u00020\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u000b\"\u0004\b\u0013\u0010\r\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006)"}, d2 = {"Lcom/github/kittinunf/fuel/toolbox/HttpClient;", "Lcom/github/kittinunf/fuel/core/Client;", "proxy", "Ljava/net/Proxy;", "useHttpCache", "", "decodeContent", "hook", "Lcom/github/kittinunf/fuel/core/Client$Hook;", "(Ljava/net/Proxy;ZZLcom/github/kittinunf/fuel/core/Client$Hook;)V", "getDecodeContent", "()Z", "setDecodeContent", "(Z)V", "getHook", "()Lcom/github/kittinunf/fuel/core/Client$Hook;", "setHook", "(Lcom/github/kittinunf/fuel/core/Client$Hook;)V", "getUseHttpCache", "setUseHttpCache", "awaitRequest", "Lcom/github/kittinunf/fuel/core/Response;", "request", "Lcom/github/kittinunf/fuel/core/Request;", "(Lcom/github/kittinunf/fuel/core/Request;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "dataStream", "Ljava/io/InputStream;", "connection", "Ljava/net/HttpURLConnection;", "doRequest", "ensureRequestActive", "", "establishConnection", "executeRequest", "retrieveResponse", "sendRequest", "setBodyIfDoOutput", "setDoOutput", "method", "Lcom/github/kittinunf/fuel/core/Method;", "Companion", "fuel"}, k = 1, mv = {1, 4, 0})
 public final class HttpClient implements Client {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final List<String> SUPPORTED_DECODING = CollectionsKt.listOf((Object[]) new String[]{HttpSupport.ENCODING_GZIP, "deflate; q=0.5"});
     private boolean decodeContent;
@@ -85,13 +85,13 @@ public final class HttpClient implements Client {
         }
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.toolbox.HttpClient$retrieveResponse$3, reason: invalid class name */
-    /* JADX INFO: compiled from: HttpClient.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.toolbox.HttpClient$retrieveResponse$3, reason: invalid class name */
+    /* INFO: compiled from: HttpClient.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\b\n\u0000\n\u0002\u0010\t\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass3 extends Lambda implements Function0<Long> {
         final /* synthetic */ Ref.ObjectRef $contentLength;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(Ref.ObjectRef objectRef) {
             super(0);
             this.$contentLength = objectRef;
@@ -102,8 +102,8 @@ public final class HttpClient implements Client {
             return Long.valueOf(invoke2());
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* WARN: Multi-variable type inference failed */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final long invoke2() {
             Long l = (Long) this.$contentLength.element;
             if (l != null) {
@@ -121,7 +121,7 @@ public final class HttpClient implements Client {
         this.hook = hook;
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public /* synthetic */ HttpClient(Proxy proxy, boolean z, boolean z2, Client.Hook hook, int i, DefaultConstructorMarker defaultConstructorMarker) {
         if ((i & 1) != 0) {
             proxy = null;
@@ -167,7 +167,7 @@ public final class HttpClient implements Client {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void ensureRequestActive(Request request, HttpURLConnection connection) throws InterruptedException {
         boolean zIsCancelled = CancellableRequestKt.isCancelled(request);
         if (!zIsCancelled) {
@@ -247,8 +247,8 @@ public final class HttpClient implements Client {
         connection.connect();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r2v13, types: [T, java.lang.Long] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r2v13, types: [T, java.lang.Long] */
     private final Response retrieveResponse(Request request, HttpURLConnection connection) throws InterruptedException, IOException {
         boolean z;
         String str;
@@ -326,19 +326,19 @@ public final class HttpClient implements Client {
         return new Response(url, responseCode, responseMessage, headersFrom, jLongValue, DefaultBody.Companion.from$default(DefaultBody.INSTANCE, new AnonymousClass2(progressInputStream), new AnonymousClass3(objectRef), null, 4, null));
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.toolbox.HttpClient$retrieveResponse$2, reason: invalid class name */
-    /* JADX INFO: compiled from: HttpClient.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.toolbox.HttpClient$retrieveResponse$2, reason: invalid class name */
+    /* INFO: compiled from: HttpClient.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Ljava/io/InputStream;", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass2 extends Lambda implements Function0<InputStream> {
         final /* synthetic */ ProgressInputStream $progressStream;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(ProgressInputStream progressInputStream) {
             super(0);
             this.$progressStream = progressInputStream;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final InputStream invoke() {
             FilterInputStream filterInputStream = this.$progressStream;
@@ -433,7 +433,7 @@ public final class HttpClient implements Client {
         }
     }
 
-    /* JADX INFO: compiled from: HttpClient.kt */
+    /* INFO: compiled from: HttpClient.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u0007H\u0002R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/github/kittinunf/fuel/toolbox/HttpClient$Companion;", "", "()V", "SUPPORTED_DECODING", "", "", "coerceMethod", "Lcom/github/kittinunf/fuel/core/Method;", "method", "fuel"}, k = 1, mv = {1, 4, 0})
     public static final class Companion {
         private Companion() {
@@ -443,7 +443,7 @@ public final class HttpClient implements Client {
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final Method coerceMethod(Method method) {
             return method == Method.PATCH ? Method.POST : method;
         }

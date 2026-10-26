@@ -4,7 +4,7 @@ import android.view.View;
 import androidx.core.math.MathUtils;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MultiBrowseCarouselStrategy extends CarouselStrategy {
     private int keylineCount = 0;
     private static final int[] SMALL_COUNTS = {1};

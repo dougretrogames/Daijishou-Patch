@@ -6,7 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Parcel;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MediaDescriptionCompatApi21 {
     public static String getMediaId(Object obj) {
         return ((MediaDescription) obj).getMediaId();

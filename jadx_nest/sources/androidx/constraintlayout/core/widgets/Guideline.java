@@ -4,7 +4,7 @@ import androidx.constraintlayout.core.LinearSystem;
 import androidx.constraintlayout.core.SolverVariable;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Guideline extends ConstraintWidget {
     public static final int HORIZONTAL = 0;
     public static final int RELATIVE_BEGIN = 1;
@@ -95,7 +95,7 @@ public class Guideline extends ConstraintWidget {
         return this.mMinimumPosition;
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.core.widgets.Guideline$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.core.widgets.Guideline$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$androidx$constraintlayout$core$widgets$ConstraintAnchor$Type;
 

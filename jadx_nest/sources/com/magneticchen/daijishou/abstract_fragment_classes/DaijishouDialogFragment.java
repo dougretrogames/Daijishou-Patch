@@ -40,8 +40,8 @@ import kotlin.jvm.internal.Reflection;
 import kotlinx.serialization.json.Json;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: DaijishouDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000¢\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\b&\u0018\u0000 ^2\u00020\u0001:\u0001^B\u0005¢\u0006\u0002\u0010\u0002J\u0010\u0010B\u001a\u00020C2\u0006\u0010D\u001a\u00020EH\u0002J\b\u0010F\u001a\u00020\u001cH\u0016J\u0012\u0010G\u001a\u00020C2\b\u0010H\u001a\u0004\u0018\u00010IH\u0016J\u0012\u0010J\u001a\u00020K2\b\u0010H\u001a\u0004\u0018\u00010IH\u0016J \u0010L\u001a\u00020C2\u0006\u0010M\u001a\u00020N2\u0006\u0010O\u001a\u00020N2\u0006\u0010P\u001a\u00020QH\u0016J\u0018\u0010R\u001a\u00020\u001c2\u0006\u0010O\u001a\u00020N2\u0006\u0010P\u001a\u00020QH\u0002J\b\u0010S\u001a\u00020CH\u0016J\b\u0010T\u001a\u00020CH\u0016J\u001a\u0010U\u001a\u00020C2\u0006\u0010V\u001a\u00020W2\b\u0010H\u001a\u0004\u0018\u00010IH\u0016J\u0018\u0010X\u001a\u00020C2\u0006\u0010Y\u001a\u00020Z2\b\b\u0002\u0010[\u001a\u00020\u001cJ\u000e\u0010\\\u001a\u00020C2\u0006\u0010]\u001a\u00020KR\u001a\u0010\u0003\u001a\u00020\u0004X\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u001a\u0010\t\u001a\u00020\nX\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u001a\u0010\u000f\u001a\u00020\u0010X\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R\u001a\u0010\u0015\u001a\u00020\u0016X\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR\u001a\u0010\u001b\u001a\u00020\u001cX\u0084\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001b\u0010\u001d\"\u0004\b\u001e\u0010\u001fR\u000e\u0010 \u001a\u00020\u001cX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\"X\u0082.¢\u0006\u0002\n\u0000R\u001e\u0010#\u001a\u00060$R\u00020%X\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b&\u0010'\"\u0004\b(\u0010)R\u001a\u0010*\u001a\u00020+X\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b,\u0010-\"\u0004\b.\u0010/R\u001a\u00100\u001a\u000201X\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b2\u00103\"\u0004\b4\u00105R\u001a\u00106\u001a\u000207X\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b8\u00109\"\u0004\b:\u0010;R\u001b\u0010<\u001a\u00020=8DX\u0084\u0084\u0002¢\u0006\f\n\u0004\b@\u0010A\u001a\u0004\b>\u0010?¨\u0006_²\u0006\n\u0010\u0003\u001a\u00020\u0004X\u008a\u0084\u0002²\u0006\n\u0010\t\u001a\u00020\nX\u008a\u0084\u0002²\u0006\n\u0010*\u001a\u00020+X\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "Landroidx/fragment/app/DialogFragment;", "()V", "daijishouLibrary", "Lcom/magneticchen/daijishou/view_models/DaijishouLibraryModel;", "getDaijishouLibrary", "()Lcom/magneticchen/daijishou/view_models/DaijishouLibraryModel;", "setDaijishouLibrary", "(Lcom/magneticchen/daijishou/view_models/DaijishouLibraryModel;)V", "daijishouSynchronization", "Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel;", "getDaijishouSynchronization", "()Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel;", "setDaijishouSynchronization", "(Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel;)V", "defaultSharedPreferences", "Landroid/content/SharedPreferences;", "getDefaultSharedPreferences", "()Landroid/content/SharedPreferences;", "setDefaultSharedPreferences", "(Landroid/content/SharedPreferences;)V", "dpToPxConverter", "Lcom/magneticchen/daijishou/utils/DpToPxConverter;", "getDpToPxConverter", "()Lcom/magneticchen/daijishou/utils/DpToPxConverter;", "setDpToPxConverter", "(Lcom/magneticchen/daijishou/utils/DpToPxConverter;)V", "isKioskMode", "", "()Z", "setKioskMode", "(Z)V", "isKioskModePreviously", "kioskModeLiveData", "Lcom/magneticchen/daijishou/live_data/SharedPreferenceBooleanLiveData;", "logger", "Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "Lcom/magneticchen/daijishou/DaijishouApplication;", "getLogger", "()Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "setLogger", "(Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;)V", "retroAchievements", "Lcom/magneticchen/daijishou/view_models/RetroAchievementsModel;", "getRetroAchievements", "()Lcom/magneticchen/daijishou/view_models/RetroAchievementsModel;", "setRetroAchievements", "(Lcom/magneticchen/daijishou/view_models/RetroAchievementsModel;)V", "retroAchievementsManager", "Lcom/magneticchen/daijishou/retro_achievements/RetroAchievementsManager;", "getRetroAchievementsManager", "()Lcom/magneticchen/daijishou/retro_achievements/RetroAchievementsManager;", "setRetroAchievementsManager", "(Lcom/magneticchen/daijishou/retro_achievements/RetroAchievementsManager;)V", "weakJson", "Lkotlinx/serialization/json/Json;", "getWeakJson", "()Lkotlinx/serialization/json/Json;", "setWeakJson", "(Lkotlinx/serialization/json/Json;)V", "widgetManager", "Lcom/magneticchen/daijishou/daijishou_widget/WidgetsManager;", "getWidgetManager", "()Lcom/magneticchen/daijishou/daijishou_widget/WidgetsManager;", "widgetManager$delegate", "Lkotlin/Lazy;", "hideSystemBars", "", ConfigConstants.CONFIG_KEY_WINDOW, "Landroid/view/Window;", "onBackPressed", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateDialog", "Landroid/app/Dialog;", "onHotKeyPressed", "hotkeyCode", "", "keyCode", "keyEvent", "Landroid/view/KeyEvent;", "onKeyListener", "onKioskMode", "onNoneKioskMode", "onViewCreated", "view", "Landroid/view/View;", "playSfx", "sfxId", "", "force", "setupDaijishouDialog", "dialog", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public abstract class DaijishouDialogFragment extends DialogFragment {
     public static final int FIRST_ADDITIONAL_HOTKEY = 3;
@@ -60,7 +60,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
     protected RetroAchievementsManager retroAchievementsManager;
     protected Json weakJson;
 
-    /* JADX INFO: renamed from: widgetManager$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: widgetManager$delegate, reason: from kotlin metadata */
     private final Lazy widgetManager = LazyKt.lazy(new DaijishouDialogFragment$widgetManager$2(this));
 
     public boolean onBackPressed() {
@@ -77,7 +77,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
     public void onNoneKioskMode() {
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public final DaijishouApplication.WrappedLogger getLogger() {
         DaijishouApplication.WrappedLogger wrappedLogger = this.logger;
         if (wrappedLogger != null) {
@@ -92,7 +92,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
         this.logger = wrappedLogger;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public final DaijishouLibraryModel getDaijishouLibrary() {
         DaijishouLibraryModel daijishouLibraryModel = this.daijishouLibrary;
         if (daijishouLibraryModel != null) {
@@ -107,7 +107,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
         this.daijishouLibrary = daijishouLibraryModel;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public final DaijishouSynchronizationModel getDaijishouSynchronization() {
         DaijishouSynchronizationModel daijishouSynchronizationModel = this.daijishouSynchronization;
         if (daijishouSynchronizationModel != null) {
@@ -122,7 +122,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
         this.daijishouSynchronization = daijishouSynchronizationModel;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public final RetroAchievementsManager getRetroAchievementsManager() {
         RetroAchievementsManager retroAchievementsManager = this.retroAchievementsManager;
         if (retroAchievementsManager != null) {
@@ -137,7 +137,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
         this.retroAchievementsManager = retroAchievementsManager;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public final WidgetsManager getWidgetManager() {
         return (WidgetsManager) this.widgetManager.getValue();
     }
@@ -156,7 +156,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
         this.retroAchievements = retroAchievementsModel;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public final SharedPreferences getDefaultSharedPreferences() {
         SharedPreferences sharedPreferences = this.defaultSharedPreferences;
         if (sharedPreferences != null) {
@@ -171,7 +171,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
         this.defaultSharedPreferences = sharedPreferences;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public final DpToPxConverter getDpToPxConverter() {
         DpToPxConverter dpToPxConverter = this.dpToPxConverter;
         if (dpToPxConverter != null) {
@@ -186,7 +186,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
         this.dpToPxConverter = dpToPxConverter;
     }
 
-    /* JADX INFO: renamed from: isKioskMode, reason: from getter */
+    /* INFO: renamed from: isKioskMode, reason: from getter */
     protected final boolean getIsKioskMode() {
         return this.isKioskMode;
     }
@@ -195,7 +195,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
         this.isKioskMode = z;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public final Json getWeakJson() {
         Json json = this.weakJson;
         if (json != null) {
@@ -277,7 +277,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
         window.getDecorView().setOnApplyWindowInsetsListener(new DaijishouDialogFragment$$ExternalSyntheticLambda1(insetsController));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final WindowInsets hideSystemBars$lambda$3(WindowInsetsControllerCompat windowInsetsControllerCompat, View view, WindowInsets windowInsets) {
         Intrinsics.checkNotNullParameter(view, "view");
         Intrinsics.checkNotNullParameter(windowInsets, "windowInsets");
@@ -336,7 +336,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
         dialog.setOnKeyListener(new DaijishouDialogFragment$$ExternalSyntheticLambda0(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean setupDaijishouDialog$lambda$4(DaijishouDialogFragment this$0, DialogInterface dialogInterface, int i, KeyEvent keyEvent) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNull(keyEvent);
@@ -350,8 +350,8 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
         return daijishouDialogFragment$onCreateDialog$dialog$1;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.DaijishouDialogFragment$onViewCreated$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.DaijishouDialogFragment$onViewCreated$1, reason: invalid class name */
+    /* INFO: compiled from: DaijishouDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         AnonymousClass1() {
@@ -364,7 +364,7 @@ public abstract class DaijishouDialogFragment extends DialogFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             DaijishouDialogFragment daijishouDialogFragment = DaijishouDialogFragment.this;
             Intrinsics.checkNotNull(bool);

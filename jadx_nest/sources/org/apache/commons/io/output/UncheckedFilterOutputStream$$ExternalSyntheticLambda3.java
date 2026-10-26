@@ -3,8 +3,8 @@ package org.apache.commons.io.output;
 import java.io.IOException;
 import org.apache.commons.io.function.IORunnable;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class UncheckedFilterOutputStream$$ExternalSyntheticLambda3 implements IORunnable {
     public final /* synthetic */ UncheckedFilterOutputStream f$0;
 

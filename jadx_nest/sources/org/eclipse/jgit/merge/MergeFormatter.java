@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import org.eclipse.jgit.diff.RawText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MergeFormatter {
     public void formatMerge(OutputStream outputStream, MergeResult<RawText> mergeResult, List<String> list, Charset charset) throws IOException {
         new MergeFormatterPass(outputStream, mergeResult, list, charset).formatMerge();

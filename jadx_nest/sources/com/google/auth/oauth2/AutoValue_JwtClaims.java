@@ -3,7 +3,7 @@ package com.google.auth.oauth2;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class AutoValue_JwtClaims extends JwtClaims {
     private static final long serialVersionUID = 4974444151019426702L;
     private final Map<String, String> additionalClaims;

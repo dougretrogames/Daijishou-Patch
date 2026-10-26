@@ -9,7 +9,7 @@ import net.lingala.zip4j.model.AESExtraDataRecord;
 import net.lingala.zip4j.model.LocalFileHeader;
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class AesCipherInputStream extends CipherInputStream<AESDecrypter> {
     private byte[] aes16ByteBlock;
     private int aes16ByteBlockPointer;
@@ -34,7 +34,7 @@ class AesCipherInputStream extends CipherInputStream<AESDecrypter> {
         this.aes16ByteBlockReadLength = 0;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.io.inputstream.CipherInputStream
     public AESDecrypter initializeDecrypter(LocalFileHeader localFileHeader, char[] cArr, boolean z) throws IOException {
         return new AESDecrypter(localFileHeader.getAesExtraDataRecord(), cArr, getSalt(localFileHeader), getPasswordVerifier(), z);

@@ -20,7 +20,7 @@ import okhttp3.OkHttpClient;
 import okhttp3.RequestBody;
 import okhttp3.ResponseBody;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public final class Retrofit {
     final HttpUrl baseUrl;
     final List<CallAdapter.Factory> callAdapterFactories;
@@ -50,7 +50,7 @@ public final class Retrofit {
         return (T) Proxy.newProxyInstance(cls.getClassLoader(), new Class[]{cls}, new AnonymousClass1(cls));
     }
 
-    /* JADX INFO: renamed from: retrofit2.Retrofit$1, reason: invalid class name */
+    /* INFO: renamed from: retrofit2.Retrofit$1, reason: invalid class name */
     class AnonymousClass1 implements InvocationHandler {
         private final Object[] emptyArgs = new Object[0];
         final /* synthetic */ Class val$service;

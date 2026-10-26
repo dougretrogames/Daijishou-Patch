@@ -25,7 +25,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.widget.TextViewCompat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class NavigationMenuItemView extends ForegroundLinearLayout implements MenuView.ItemView {
     private static final int[] CHECKED_STATE_SET = {R.attr.state_checked};
     private final AccessibilityDelegateCompat accessibilityDelegate;
@@ -54,7 +54,7 @@ public class NavigationMenuItemView extends ForegroundLinearLayout implements Me
         return true;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.NavigationMenuItemView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.NavigationMenuItemView$1, reason: invalid class name */
     class AnonymousClass1 extends AccessibilityDelegateCompat {
         AnonymousClass1() {
         }

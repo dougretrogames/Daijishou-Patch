@@ -9,7 +9,7 @@ import org.jsoup.internal.StringUtil;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Entities;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class Tokeniser {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private static final char[] notCharRefCharsSorted;

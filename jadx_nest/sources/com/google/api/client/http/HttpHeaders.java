@@ -29,7 +29,7 @@ import java.util.logging.Logger;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.util.HttpSupport;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class HttpHeaders extends GenericData {
 
     @Key("Accept")

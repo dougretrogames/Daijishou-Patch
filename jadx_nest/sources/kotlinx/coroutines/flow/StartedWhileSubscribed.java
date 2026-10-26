@@ -13,8 +13,8 @@ import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.functions.Function3;
 
-/* JADX INFO: compiled from: SharingStarted.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: SharingStarted.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\b\u0002\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003¢\u0006\u0002\u0010\u0005J\u001c\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\b0\u00072\f\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\nH\u0016J\u0013\u0010\f\u001a\u00020\r2\b\u0010\u000e\u001a\u0004\u0018\u00010\u000fH\u0096\u0002J\b\u0010\u0010\u001a\u00020\u000bH\u0017J\b\u0010\u0011\u001a\u00020\u0012H\u0016R\u000e\u0010\u0004\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0013"}, d2 = {"Lkotlinx/coroutines/flow/StartedWhileSubscribed;", "Lkotlinx/coroutines/flow/SharingStarted;", "stopTimeout", "", "replayExpiration", "(JJ)V", "command", "Lkotlinx/coroutines/flow/Flow;", "Lkotlinx/coroutines/flow/SharingCommand;", "subscriptionCount", "Lkotlinx/coroutines/flow/StateFlow;", "", "equals", "", "other", "", "hashCode", "toString", "", "kotlinx-coroutines-core"}, k = 1, mv = {1, 9, 0}, xi = 48)
 final class StartedWhileSubscribed implements SharingStarted {
     private final long replayExpiration;
@@ -31,8 +31,8 @@ final class StartedWhileSubscribed implements SharingStarted {
         }
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.flow.StartedWhileSubscribed$command$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SharingStarted.kt */
+    /* INFO: renamed from: kotlinx.coroutines.flow.StartedWhileSubscribed$command$1, reason: invalid class name */
+    /* INFO: compiled from: SharingStarted.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00030\u00022\u0006\u0010\u0004\u001a\u00020\u0005H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/flow/FlowCollector;", "Lkotlinx/coroutines/flow/SharingCommand;", "count", ""}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.coroutines.flow.StartedWhileSubscribed$command$1", f = "SharingStarted.kt", i = {1, 2, 3}, l = {174, 176, 178, 179, 181}, m = "invokeSuspend", n = {"$this$transformLatest", "$this$transformLatest", "$this$transformLatest"}, s = {"L$0", "L$0", "L$0"})
     static final class AnonymousClass1 extends SuspendLambda implements Function3<FlowCollector<? super SharingCommand>, Integer, Continuation<? super Unit>, Object> {
@@ -56,20 +56,20 @@ final class StartedWhileSubscribed implements SharingStarted {
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Code duplicated, block: B:26:0x0078  */
-        /* JADX WARN: Code duplicated, block: B:29:0x0088 A[PHI: r1
+        /* WARN: Code duplicated, block: B:26:0x0078  */
+        /* WARN: Code duplicated, block: B:29:0x0088 A[PHI: r1
   0x0088: PHI (r1v4 kotlinx.coroutines.flow.FlowCollector) = (r1v3 kotlinx.coroutines.flow.FlowCollector), (r1v9 kotlinx.coroutines.flow.FlowCollector) binds: [B:27:0x0085, B:13:0x0029] A[DONT_GENERATE, DONT_INLINE]] */
-        /* JADX WARN: Code duplicated, block: B:32:0x009c A[PHI: r1
+        /* WARN: Code duplicated, block: B:32:0x009c A[PHI: r1
   0x009c: PHI (r1v5 kotlinx.coroutines.flow.FlowCollector) = 
   (r1v3 kotlinx.coroutines.flow.FlowCollector)
   (r1v4 kotlinx.coroutines.flow.FlowCollector)
   (r1v11 kotlinx.coroutines.flow.FlowCollector)
  binds: [B:25:0x0076, B:30:0x0099, B:12:0x0020] A[DONT_GENERATE, DONT_INLINE]] */
-        /* JADX WARN: Code restructure failed: missing block: B:19:0x0055, code lost:
+        /* WARN: Code restructure failed: missing block: B:19:0x0055, code lost:
         
             if (r1.emit(kotlinx.coroutines.flow.SharingCommand.START, r9) == r0) goto L34;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:33:0x00aa, code lost:
+        /* WARN: Code restructure failed: missing block: B:33:0x00aa, code lost:
         
             if (r1.emit(kotlinx.coroutines.flow.SharingCommand.STOP_AND_RESET_REPLAY_CACHE, r9) == r0) goto L34;
          */
@@ -190,8 +190,8 @@ final class StartedWhileSubscribed implements SharingStarted {
         return FlowKt.distinctUntilChanged(FlowKt.dropWhile(FlowKt.transformLatest(subscriptionCount, new AnonymousClass1(null)), new AnonymousClass2(null)));
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.flow.StartedWhileSubscribed$command$2, reason: invalid class name */
-    /* JADX INFO: compiled from: SharingStarted.kt */
+    /* INFO: renamed from: kotlinx.coroutines.flow.StartedWhileSubscribed$command$2, reason: invalid class name */
+    /* INFO: compiled from: SharingStarted.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", "it", "Lkotlinx/coroutines/flow/SharingCommand;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.coroutines.flow.StartedWhileSubscribed$command$2", f = "SharingStarted.kt", i = {}, l = {}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass2 extends SuspendLambda implements Function2<SharingCommand, Continuation<? super Boolean>, Object> {

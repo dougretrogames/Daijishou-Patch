@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import com.google.android.material.circularreveal.CircularRevealFrameLayout;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class TransformationChildLayout extends CircularRevealFrameLayout {
     public TransformationChildLayout(Context context) {

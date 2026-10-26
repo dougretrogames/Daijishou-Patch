@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class RowHeaderPresenter extends Presenter {
     private final boolean mAnimateSelect;
     private final Paint mFontMeasurePaint;

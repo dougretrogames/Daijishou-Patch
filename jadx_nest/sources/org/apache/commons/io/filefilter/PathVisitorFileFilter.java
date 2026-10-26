@@ -11,7 +11,7 @@ import org.apache.commons.io.file.NoopPathVisitor;
 import org.apache.commons.io.file.PathUtils;
 import org.apache.commons.io.file.PathVisitor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PathVisitorFileFilter extends AbstractFileFilter {
     private final PathVisitor pathVisitor;
 
@@ -44,7 +44,7 @@ public class PathVisitorFileFilter extends AbstractFileFilter {
         return get(new PathVisitorFileFilter$$ExternalSyntheticLambda0(this, path, basicFileAttributes));
     }
 
-    /* JADX INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-PathVisitorFileFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-PathVisitorFileFilter, reason: not valid java name */
     /* synthetic */ FileVisitResult m5579xba762e63(Path path, BasicFileAttributes basicFileAttributes) throws IOException {
         return Files.isDirectory(path, new LinkOption[0]) ? this.pathVisitor.postVisitDirectory(path, null) : visitFile(path, basicFileAttributes);
     }

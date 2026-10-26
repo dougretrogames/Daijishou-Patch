@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.ObjectIdOwnerMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PackedObjectInfo extends ObjectIdOwnerMap.Entry {
     private int crc;
     private long fullSize;

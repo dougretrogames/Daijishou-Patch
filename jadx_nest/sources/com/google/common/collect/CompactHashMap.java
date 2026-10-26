@@ -23,7 +23,7 @@ import java.util.Set;
 import javax.annotation.CheckForNull;
 import kotlinx.coroutines.internal.LockFreeTaskQueueCore;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class CompactHashMap<K, V> extends AbstractMap<K, V> implements Serializable {
     static final double HASH_FLOODING_FPP = 0.001d;
@@ -138,7 +138,7 @@ class CompactHashMap<K, V> extends AbstractMap<K, V> implements Serializable {
         this.metadata = CompactHashing.maskCombine(this.metadata, 32 - Integer.numberOfLeadingZeros(mask), 31);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int hashTableMask() {
         return (1 << (this.metadata & 31)) - 1;
     }
@@ -254,7 +254,7 @@ class CompactHashMap<K, V> extends AbstractMap<K, V> implements Serializable {
         return i;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int indexOf(@CheckForNull Object key) {
         if (needsAllocArrays()) {
             return -1;
@@ -315,7 +315,7 @@ class CompactHashMap<K, V> extends AbstractMap<K, V> implements Serializable {
         return v;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Object removeHelper(@CheckForNull Object key) {
         if (needsAllocArrays()) {
             return NOT_FOUND;
@@ -498,7 +498,7 @@ class CompactHashMap<K, V> extends AbstractMap<K, V> implements Serializable {
         return new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.CompactHashMap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.CompactHashMap$1, reason: invalid class name */
     class AnonymousClass1 extends CompactHashMap<K, V>.Itr<K> {
         AnonymousClass1() {
             super(CompactHashMap.this, null);
@@ -591,13 +591,13 @@ class CompactHashMap<K, V> extends AbstractMap<K, V> implements Serializable {
         return new AnonymousClass2();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.CompactHashMap$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.CompactHashMap$2, reason: invalid class name */
     class AnonymousClass2 extends CompactHashMap<K, V>.Itr<Map.Entry<K, V>> {
         AnonymousClass2() {
             super(CompactHashMap.this, null);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.CompactHashMap.Itr
         public Map.Entry<K, V> getOutput(int entry) {
             return new MapEntry(entry);
@@ -727,7 +727,7 @@ class CompactHashMap<K, V> extends AbstractMap<K, V> implements Serializable {
         return new AnonymousClass3();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.CompactHashMap$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.CompactHashMap$3, reason: invalid class name */
     class AnonymousClass3 extends CompactHashMap<K, V>.Itr<V> {
         AnonymousClass3() {
             super(CompactHashMap.this, null);
@@ -794,7 +794,7 @@ class CompactHashMap<K, V> extends AbstractMap<K, V> implements Serializable {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void readObject(ObjectInputStream stream) throws ClassNotFoundException, IOException {
         stream.defaultReadObject();
         int i = stream.readInt();
@@ -807,32 +807,32 @@ class CompactHashMap<K, V> extends AbstractMap<K, V> implements Serializable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Object requireTable() {
         return java.util.Objects.requireNonNull(this.table);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int[] requireEntries() {
         return (int[]) java.util.Objects.requireNonNull(this.entries);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Object[] requireKeys() {
         return (Object[]) java.util.Objects.requireNonNull(this.keys);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Object[] requireValues() {
         return (Object[]) java.util.Objects.requireNonNull(this.values);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public K key(int i) {
         return (K) requireKeys()[i];
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public V value(int i) {
         return (V) requireValues()[i];
     }
@@ -845,7 +845,7 @@ class CompactHashMap<K, V> extends AbstractMap<K, V> implements Serializable {
         requireKeys()[i] = key;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void setValue(int i, V value) {
         requireValues()[i] = value;
     }

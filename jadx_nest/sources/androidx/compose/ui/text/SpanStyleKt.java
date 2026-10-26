@@ -31,8 +31,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: SpanStyle.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: SpanStyle.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000|\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\u001a\u001e\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\b2\u0006\u0010\n\u001a\u00020\b2\u0006\u0010\u000b\u001a\u00020\f\u001a+\u0010\r\u001a\u0002H\u000e\"\u0004\b\u0000\u0010\u000e2\u0006\u0010\u000f\u001a\u0002H\u000e2\u0006\u0010\u0010\u001a\u0002H\u000e2\u0006\u0010\u000b\u001a\u00020\fH\u0000¢\u0006\u0002\u0010\u0011\u001a&\u0010\u0012\u001a\u0004\u0018\u00010\u00132\b\u0010\t\u001a\u0004\u0018\u00010\u00132\b\u0010\n\u001a\u0004\u0018\u00010\u00132\u0006\u0010\u000b\u001a\u00020\fH\u0002\u001a*\u0010\u0014\u001a\u00020\u00052\u0006\u0010\u000f\u001a\u00020\u00052\u0006\u0010\u0010\u001a\u00020\u00052\u0006\u0010\u0015\u001a\u00020\fH\u0000ø\u0001\u0000¢\u0006\u0004\b\u0016\u0010\u0017\u001a\u0010\u0010\u0018\u001a\u00020\b2\u0006\u0010\u0019\u001a\u00020\bH\u0000\u001aÀ\u0001\u0010\u001a\u001a\u00020\b*\u00020\b2\u0006\u0010\u001b\u001a\u00020\u00012\b\u0010\u001c\u001a\u0004\u0018\u00010\u001d2\u0006\u0010\u001e\u001a\u00020\f2\u0006\u0010\u001f\u001a\u00020\u00052\b\u0010 \u001a\u0004\u0018\u00010!2\b\u0010\"\u001a\u0004\u0018\u00010#2\b\u0010$\u001a\u0004\u0018\u00010%2\b\u0010&\u001a\u0004\u0018\u00010'2\b\u0010(\u001a\u0004\u0018\u00010)2\u0006\u0010*\u001a\u00020\u00052\b\u0010+\u001a\u0004\u0018\u00010,2\b\u0010-\u001a\u0004\u0018\u00010.2\b\u0010/\u001a\u0004\u0018\u0001002\u0006\u00101\u001a\u00020\u00012\b\u00102\u001a\u0004\u0018\u0001032\b\u00104\u001a\u0004\u0018\u0001052\b\u00106\u001a\u0004\u0018\u00010\u00132\b\u00107\u001a\u0004\u0018\u000108H\u0000ø\u0001\u0000¢\u0006\u0004\b9\u0010:\u001a\u0018\u0010;\u001a\u0004\u0018\u00010\u0013*\u00020\b2\b\u0010<\u001a\u0004\u0018\u00010\u0013H\u0002\"\u0010\u0010\u0000\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0002\"\u0010\u0010\u0003\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0002\"\u0010\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0002\"\u0010\u0010\u0006\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0004\n\u0002\u0010\u0002\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006="}, d2 = {"DefaultBackgroundColor", "Landroidx/compose/ui/graphics/Color;", "J", "DefaultColor", "DefaultFontSize", "Landroidx/compose/ui/unit/TextUnit;", "DefaultLetterSpacing", "lerp", "Landroidx/compose/ui/text/SpanStyle;", "start", "stop", "fraction", "", "lerpDiscrete", ExifInterface.GPS_DIRECTION_TRUE, "a", "b", "(Ljava/lang/Object;Ljava/lang/Object;F)Ljava/lang/Object;", "lerpPlatformStyle", "Landroidx/compose/ui/text/PlatformSpanStyle;", "lerpTextUnitInheritable", "t", "lerpTextUnitInheritable-C3pnCVY", "(JJF)J", "resolveSpanStyleDefaults", "style", "fastMerge", TypedValues.Custom.S_COLOR, "brush", "Landroidx/compose/ui/graphics/Brush;", "alpha", "fontSize", "fontWeight", "Landroidx/compose/ui/text/font/FontWeight;", "fontStyle", "Landroidx/compose/ui/text/font/FontStyle;", "fontSynthesis", "Landroidx/compose/ui/text/font/FontSynthesis;", "fontFamily", "Landroidx/compose/ui/text/font/FontFamily;", "fontFeatureSettings", "", "letterSpacing", "baselineShift", "Landroidx/compose/ui/text/style/BaselineShift;", "textGeometricTransform", "Landroidx/compose/ui/text/style/TextGeometricTransform;", "localeList", "Landroidx/compose/ui/text/intl/LocaleList;", "background", "textDecoration", "Landroidx/compose/ui/text/style/TextDecoration;", "shadow", "Landroidx/compose/ui/graphics/Shadow;", "platformStyle", "drawStyle", "Landroidx/compose/ui/graphics/drawscope/DrawStyle;", "fastMerge-dSHsh3o", "(Landroidx/compose/ui/text/SpanStyle;JLandroidx/compose/ui/graphics/Brush;FJLandroidx/compose/ui/text/font/FontWeight;Landroidx/compose/ui/text/font/FontStyle;Landroidx/compose/ui/text/font/FontSynthesis;Landroidx/compose/ui/text/font/FontFamily;Ljava/lang/String;JLandroidx/compose/ui/text/style/BaselineShift;Landroidx/compose/ui/text/style/TextGeometricTransform;Landroidx/compose/ui/text/intl/LocaleList;JLandroidx/compose/ui/text/style/TextDecoration;Landroidx/compose/ui/graphics/Shadow;Landroidx/compose/ui/text/PlatformSpanStyle;Landroidx/compose/ui/graphics/drawscope/DrawStyle;)Landroidx/compose/ui/text/SpanStyle;", "mergePlatformStyle", "other", "ui-text_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class SpanStyleKt {
     private static final long DefaultFontSize = TextUnitKt.getSp(14);
@@ -44,7 +44,7 @@ public final class SpanStyleKt {
         return ((double) f) < 0.5d ? t : t2;
     }
 
-    /* JADX INFO: renamed from: lerpTextUnitInheritable-C3pnCVY, reason: not valid java name */
+    /* INFO: renamed from: lerpTextUnitInheritable-C3pnCVY, reason: not valid java name */
     public static final long m2348lerpTextUnitInheritableC3pnCVY(long j, long j2, float f) {
         if (TextUnitKt.m3093isUnspecifiedR2X_6o(j) || TextUnitKt.m3093isUnspecifiedR2X_6o(j2)) {
             return ((TextUnit) lerpDiscrete(TextUnit.m3065boximpl(j), TextUnit.m3065boximpl(j2), f)).getPackedValue();
@@ -109,8 +109,8 @@ public final class SpanStyleKt {
         return AndroidTextStyle_androidKt.lerp(platformSpanStyle, platformSpanStyle2, f);
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.text.SpanStyleKt$resolveSpanStyleDefaults$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SpanStyle.kt */
+    /* INFO: renamed from: androidx.compose.ui.text.SpanStyleKt$resolveSpanStyleDefaults$1, reason: invalid class name */
+    /* INFO: compiled from: SpanStyle.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Landroidx/compose/ui/text/style/TextForegroundStyle;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function0<TextForegroundStyle> {
         public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -119,7 +119,7 @@ public final class SpanStyleKt {
             super(0);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final TextForegroundStyle invoke() {
             return TextForegroundStyle.INSTANCE.m2797from8_81llA(SpanStyleKt.DefaultColor);
@@ -200,20 +200,20 @@ public final class SpanStyleKt {
         return spanStyle.getPlatformStyle().merge(platformSpanStyle);
     }
 
-    /* JADX WARN: Code duplicated, block: B:100:0x0185  */
-    /* JADX WARN: Code duplicated, block: B:101:0x0188  */
-    /* JADX WARN: Code duplicated, block: B:103:0x018e  */
-    /* JADX WARN: Code duplicated, block: B:105:0x0194  */
-    /* JADX WARN: Code duplicated, block: B:107:0x019a  */
-    /* JADX WARN: Code duplicated, block: B:108:0x019f  */
-    /* JADX WARN: Code duplicated, block: B:112:0x01ac  */
-    /* JADX WARN: Code duplicated, block: B:114:0x01b2  */
-    /* JADX WARN: Code duplicated, block: B:116:0x01b8  */
-    /* JADX WARN: Code duplicated, block: B:119:0x01c6  */
-    /* JADX WARN: Code duplicated, block: B:120:0x01cb  */
-    /* JADX WARN: Code duplicated, block: B:77:0x0133  */
-    /* JADX WARN: Code duplicated, block: B:78:0x013c  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0029 A[PHI: r11
+    /* WARN: Code duplicated, block: B:100:0x0185  */
+    /* WARN: Code duplicated, block: B:101:0x0188  */
+    /* WARN: Code duplicated, block: B:103:0x018e  */
+    /* WARN: Code duplicated, block: B:105:0x0194  */
+    /* WARN: Code duplicated, block: B:107:0x019a  */
+    /* WARN: Code duplicated, block: B:108:0x019f  */
+    /* WARN: Code duplicated, block: B:112:0x01ac  */
+    /* WARN: Code duplicated, block: B:114:0x01b2  */
+    /* WARN: Code duplicated, block: B:116:0x01b8  */
+    /* WARN: Code duplicated, block: B:119:0x01c6  */
+    /* WARN: Code duplicated, block: B:120:0x01cb  */
+    /* WARN: Code duplicated, block: B:77:0x0133  */
+    /* WARN: Code duplicated, block: B:78:0x013c  */
+    /* WARN: Code duplicated, block: B:7:0x0029 A[PHI: r11
   0x0029: PHI (r11v7 long) = 
   (r11v1 long)
   (r11v1 long)
@@ -228,17 +228,17 @@ public final class SpanStyleKt {
   (r11v1 long)
   (r11v8 long)
  binds: [B:35:0x009a, B:47:0x00cc, B:44:0x00c0, B:41:0x00b4, B:38:0x00a8, B:33:0x008c, B:28:0x007d, B:24:0x006b, B:21:0x0063, B:18:0x0057, B:15:0x004b, B:5:0x0026] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:81:0x014c  */
-    /* JADX WARN: Code duplicated, block: B:82:0x0151  */
-    /* JADX WARN: Code duplicated, block: B:86:0x015a  */
-    /* JADX WARN: Code duplicated, block: B:88:0x0160  */
-    /* JADX WARN: Code duplicated, block: B:89:0x0165  */
-    /* JADX WARN: Code duplicated, block: B:91:0x0169  */
-    /* JADX WARN: Code duplicated, block: B:92:0x016e  */
-    /* JADX WARN: Code duplicated, block: B:94:0x0172  */
-    /* JADX WARN: Code duplicated, block: B:95:0x0177  */
-    /* JADX WARN: Code duplicated, block: B:97:0x017b  */
-    /* JADX INFO: renamed from: fastMerge-dSHsh3o, reason: not valid java name */
+    /* WARN: Code duplicated, block: B:81:0x014c  */
+    /* WARN: Code duplicated, block: B:82:0x0151  */
+    /* WARN: Code duplicated, block: B:86:0x015a  */
+    /* WARN: Code duplicated, block: B:88:0x0160  */
+    /* WARN: Code duplicated, block: B:89:0x0165  */
+    /* WARN: Code duplicated, block: B:91:0x0169  */
+    /* WARN: Code duplicated, block: B:92:0x016e  */
+    /* WARN: Code duplicated, block: B:94:0x0172  */
+    /* WARN: Code duplicated, block: B:95:0x0177  */
+    /* WARN: Code duplicated, block: B:97:0x017b  */
+    /* INFO: renamed from: fastMerge-dSHsh3o, reason: not valid java name */
     public static final SpanStyle m2347fastMergedSHsh3o(SpanStyle spanStyle, long j, Brush brush, float f, long j2, FontWeight fontWeight, FontStyle fontStyle, FontSynthesis fontSynthesis, FontFamily fontFamily, String str, long j3, BaselineShift baselineShift, TextGeometricTransform textGeometricTransform, LocaleList localeList, long j4, TextDecoration textDecoration, Shadow shadow, PlatformSpanStyle platformSpanStyle, DrawStyle drawStyle) {
         long fontSize;
         TextGeometricTransform textGeometricTransform2;

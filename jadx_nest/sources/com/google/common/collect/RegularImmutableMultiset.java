@@ -5,7 +5,7 @@ import com.google.errorprone.annotations.concurrent.LazyInit;
 import java.io.Serializable;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class RegularImmutableMultiset<E> extends ImmutableMultiset<E> {
     static final RegularImmutableMultiset<Object> EMPTY = new RegularImmutableMultiset<>(ObjectCountHashMap.create());
@@ -107,7 +107,7 @@ class RegularImmutableMultiset<E> extends ImmutableMultiset<E> {
             }
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         Object readResolve() {
             ImmutableMultiset.Builder builder = new ImmutableMultiset.Builder(this.elements.length);
             int i = 0;

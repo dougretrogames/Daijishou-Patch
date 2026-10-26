@@ -2,7 +2,7 @@ package com.google.common.collect;
 
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class RegularImmutableSet<E> extends ImmutableSet<E> {
     static final RegularImmutableSet<Object> EMPTY;

@@ -4,10 +4,10 @@ import com.google.common.base.Preconditions;
 import com.google.common.collect.ImmutableMap;
 import java.util.concurrent.ExecutionException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ForwardingLoadingCache<K, V> extends ForwardingCache<K, V> implements LoadingCache<K, V> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.cache.ForwardingCache, com.google.common.collect.ForwardingObject
     public abstract LoadingCache<K, V> delegate();
 
@@ -46,7 +46,7 @@ public abstract class ForwardingLoadingCache<K, V> extends ForwardingCache<K, V>
             this.delegate = (LoadingCache) Preconditions.checkNotNull(delegate);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.cache.ForwardingLoadingCache, com.google.common.cache.ForwardingCache, com.google.common.collect.ForwardingObject
         public final LoadingCache<K, V> delegate() {
             return this.delegate;

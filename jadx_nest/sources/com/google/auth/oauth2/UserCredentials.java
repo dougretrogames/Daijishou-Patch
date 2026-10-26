@@ -22,7 +22,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class UserCredentials extends GoogleCredentials implements IdTokenProvider {
     private static final String GRANT_TYPE = "refresh_token";
     private static final String PARSE_ERROR_PREFIX = "Error parsing token refresh response. ";

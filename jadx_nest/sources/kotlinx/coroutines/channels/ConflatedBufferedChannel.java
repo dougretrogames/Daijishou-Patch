@@ -14,8 +14,8 @@ import kotlinx.coroutines.internal.OnUndeliveredElementKt;
 import kotlinx.coroutines.internal.UndeliveredElementException;
 import kotlinx.coroutines.selects.SelectInstance;
 
-/* JADX INFO: compiled from: ConflatedBufferedChannel.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: ConflatedBufferedChannel.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u000b\b\u0010\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u0002H\u00010\u0002B9\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\"\b\u0002\u0010\u0007\u001a\u001c\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00020\t\u0018\u00010\bj\n\u0012\u0004\u0012\u00028\u0000\u0018\u0001`\n¢\u0006\u0002\u0010\u000bJ\u001e\u0010\u000f\u001a\u00020\t2\n\u0010\u0010\u001a\u0006\u0012\u0002\b\u00030\u00112\b\u0010\u0012\u001a\u0004\u0018\u00010\u0013H\u0014J\u0016\u0010\u0014\u001a\u00020\t2\u0006\u0010\u0012\u001a\u00028\u0000H\u0096@¢\u0006\u0002\u0010\u0015J\u0018\u0010\u0016\u001a\u00020\r2\u0006\u0010\u0012\u001a\u00028\u0000H\u0090@¢\u0006\u0004\b\u0017\u0010\u0015J\r\u0010\u0018\u001a\u00020\rH\u0010¢\u0006\u0002\b\u0019J#\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\t0\u001b2\u0006\u0010\u0012\u001a\u00028\u0000H\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u001c\u0010\u001dJ+\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\t0\u001b2\u0006\u0010\u0012\u001a\u00028\u00002\u0006\u0010\u001f\u001a\u00020\rH\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b \u0010!J#\u0010\"\u001a\b\u0012\u0004\u0012\u00020\t0\u001b2\u0006\u0010\u0012\u001a\u00028\u0000H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b#\u0010\u001dJ+\u0010$\u001a\b\u0012\u0004\u0012\u00020\t0\u001b2\u0006\u0010\u0012\u001a\u00028\u00002\u0006\u0010\u001f\u001a\u00020\rH\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b%\u0010!R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\f\u001a\u00020\r8TX\u0094\u0004¢\u0006\u0006\u001a\u0004\b\f\u0010\u000eR\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0002\b!\n\u0005\b¡\u001e0\u0001¨\u0006&"}, d2 = {"Lkotlinx/coroutines/channels/ConflatedBufferedChannel;", ExifInterface.LONGITUDE_EAST, "Lkotlinx/coroutines/channels/BufferedChannel;", "capacity", "", "onBufferOverflow", "Lkotlinx/coroutines/channels/BufferOverflow;", "onUndeliveredElement", "Lkotlin/Function1;", "", "Lkotlinx/coroutines/internal/OnUndeliveredElement;", "(ILkotlinx/coroutines/channels/BufferOverflow;Lkotlin/jvm/functions/Function1;)V", "isConflatedDropOldest", "", "()Z", "registerSelectForSend", "select", "Lkotlinx/coroutines/selects/SelectInstance;", "element", "", "send", "(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "sendBroadcast", "sendBroadcast$kotlinx_coroutines_core", "shouldSendSuspend", "shouldSendSuspend$kotlinx_coroutines_core", "trySend", "Lkotlinx/coroutines/channels/ChannelResult;", "trySend-JP2dKIU", "(Ljava/lang/Object;)Ljava/lang/Object;", "trySendDropLatest", "isSendOp", "trySendDropLatest-Mj0NB7M", "(Ljava/lang/Object;Z)Ljava/lang/Object;", "trySendDropOldest", "trySendDropOldest-JP2dKIU", "trySendImpl", "trySendImpl-Mj0NB7M", "kotlinx-coroutines-core"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public class ConflatedBufferedChannel<E> extends BufferedChannel<E> {
     private final int capacity;
@@ -81,17 +81,17 @@ public class ConflatedBufferedChannel<E> extends BufferedChannel<E> {
     }
 
     @Override // kotlinx.coroutines.channels.BufferedChannel, kotlinx.coroutines.channels.SendChannel
-    /* JADX INFO: renamed from: trySend-JP2dKIU */
+    /* INFO: renamed from: trySend-JP2dKIU */
     public Object mo5255trySendJP2dKIU(E element) {
         return m5283trySendImplMj0NB7M(element, false);
     }
 
-    /* JADX INFO: renamed from: trySendImpl-Mj0NB7M, reason: not valid java name */
+    /* INFO: renamed from: trySendImpl-Mj0NB7M, reason: not valid java name */
     private final Object m5283trySendImplMj0NB7M(E element, boolean isSendOp) {
         return this.onBufferOverflow == BufferOverflow.DROP_LATEST ? m5281trySendDropLatestMj0NB7M(element, isSendOp) : m5282trySendDropOldestJP2dKIU(element);
     }
 
-    /* JADX INFO: renamed from: trySendDropLatest-Mj0NB7M, reason: not valid java name */
+    /* INFO: renamed from: trySendDropLatest-Mj0NB7M, reason: not valid java name */
     private final Object m5281trySendDropLatestMj0NB7M(E element, boolean isSendOp) {
         Function1<E, Unit> function1;
         UndeliveredElementException undeliveredElementExceptionCallUndeliveredElementCatchingException$default;
@@ -105,7 +105,7 @@ public class ConflatedBufferedChannel<E> extends BufferedChannel<E> {
         return ChannelResult.INSTANCE.m5280successJP2dKIU(Unit.INSTANCE);
     }
 
-    /* JADX INFO: renamed from: trySendDropOldest-JP2dKIU, reason: not valid java name */
+    /* INFO: renamed from: trySendDropOldest-JP2dKIU, reason: not valid java name */
     private final Object m5282trySendDropOldestJP2dKIU(E element) {
         Object obj = BufferedChannelKt.BUFFERED;
         ConflatedBufferedChannel<E> conflatedBufferedChannel = this;
@@ -161,7 +161,7 @@ public class ConflatedBufferedChannel<E> extends BufferedChannel<E> {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // kotlinx.coroutines.channels.BufferedChannel
     protected void registerSelectForSend(SelectInstance<?> select, Object element) {
         Object objMo5255trySendJP2dKIU = mo5255trySendJP2dKIU(element);

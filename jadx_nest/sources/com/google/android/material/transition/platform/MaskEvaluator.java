@@ -6,7 +6,7 @@ import android.graphics.RectF;
 import com.google.android.material.shape.ShapeAppearanceModel;
 import com.google.android.material.shape.ShapeAppearancePathProvider;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class MaskEvaluator {
     private ShapeAppearanceModel currentShapeAppearanceModel;
     private final Path path = new Path();

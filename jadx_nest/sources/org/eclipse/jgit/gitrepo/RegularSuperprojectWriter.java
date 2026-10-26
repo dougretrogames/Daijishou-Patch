@@ -13,7 +13,7 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class RegularSuperprojectWriter {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private ProgressMonitor monitor;

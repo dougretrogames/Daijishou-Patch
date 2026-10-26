@@ -12,8 +12,8 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
 
-/* JADX INFO: compiled from: YouTubePlayerBridge.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: YouTubePlayerBridge.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000J\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u000f\b\u0007\u0018\u0000 $2\u00020\u0001:\u0002$%B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0010\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0002J\u0010\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\nH\u0002J\u0010\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\nH\u0002J\u0010\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\nH\u0002J\b\u0010\u0014\u001a\u00020\u0015H\u0007J\u0010\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0010\u001a\u00020\nH\u0007J\u0010\u0010\u0018\u001a\u00020\u00172\u0006\u0010\t\u001a\u00020\nH\u0007J\u0010\u0010\u0019\u001a\u00020\u00172\u0006\u0010\r\u001a\u00020\nH\u0007J\b\u0010\u001a\u001a\u00020\u0015H\u0007J\u0010\u0010\u001b\u001a\u00020\u00172\u0006\u0010\u0013\u001a\u00020\nH\u0007J\u0010\u0010\u001c\u001a\u00020\u00172\u0006\u0010\u001d\u001a\u00020\nH\u0007J\u0010\u0010\u001e\u001a\u00020\u00172\u0006\u0010\u001d\u001a\u00020\nH\u0007J\u0010\u0010\u001f\u001a\u00020\u00152\u0006\u0010 \u001a\u00020\nH\u0007J\u0010\u0010!\u001a\u00020\u00172\u0006\u0010\"\u001a\u00020\nH\u0007J\b\u0010#\u001a\u00020\u0015H\u0007R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006&"}, d2 = {"Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/YouTubePlayerBridge;", "", "youTubePlayerOwner", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/YouTubePlayerBridge$YouTubePlayerBridgeCallbacks;", "(Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/YouTubePlayerBridge$YouTubePlayerBridgeCallbacks;)V", "mainThreadHandler", "Landroid/os/Handler;", "parsePlaybackQuality", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/PlayerConstants$PlaybackQuality;", "quality", "", "parsePlaybackRate", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/PlayerConstants$PlaybackRate;", "rate", "parsePlayerError", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/PlayerConstants$PlayerError;", "error", "parsePlayerState", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/PlayerConstants$PlayerState;", "state", "sendApiChange", "", "sendError", "", "sendPlaybackQualityChange", "sendPlaybackRateChange", "sendReady", "sendStateChange", "sendVideoCurrentTime", "seconds", "sendVideoDuration", "sendVideoId", "videoId", "sendVideoLoadedFraction", "fraction", "sendYouTubeIFrameAPIReady", "Companion", "YouTubePlayerBridgeCallbacks", "core_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class YouTubePlayerBridge {
     private static final String ERROR_HTML_5_PLAYER = "5";
@@ -45,7 +45,7 @@ public final class YouTubePlayerBridge {
     private final Handler mainThreadHandler;
     private final YouTubePlayerBridgeCallbacks youTubePlayerOwner;
 
-    /* JADX INFO: compiled from: YouTubePlayerBridge.kt */
+    /* INFO: compiled from: YouTubePlayerBridge.kt */
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u001e\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\bf\u0018\u00002\u00020\u0001J\b\u0010\u0007\u001a\u00020\bH&J\b\u0010\t\u001a\u00020\nH&R\u0018\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003X¦\u0004¢\u0006\u0006\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u000b"}, d2 = {"Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/YouTubePlayerBridge$YouTubePlayerBridgeCallbacks;", "", "listeners", "", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/listeners/YouTubePlayerListener;", "getListeners", "()Ljava/util/Collection;", "getInstance", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/YouTubePlayer;", "onYouTubeIFrameAPIReady", "", "core_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public interface YouTubePlayerBridgeCallbacks {
         YouTubePlayer getInstance();
@@ -61,7 +61,7 @@ public final class YouTubePlayerBridge {
         this.mainThreadHandler = new Handler(Looper.getMainLooper());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void sendYouTubeIFrameAPIReady$lambda$0(YouTubePlayerBridge this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.youTubePlayerOwner.onYouTubeIFrameAPIReady();
@@ -77,7 +77,7 @@ public final class YouTubePlayerBridge {
         return this.mainThreadHandler.post(new YouTubePlayerBridge$$ExternalSyntheticLambda7(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void sendReady$lambda$2(YouTubePlayerBridge this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Iterator<T> it = this$0.youTubePlayerOwner.getListeners().iterator();
@@ -92,7 +92,7 @@ public final class YouTubePlayerBridge {
         this.mainThreadHandler.post(new YouTubePlayerBridge$$ExternalSyntheticLambda10(this, parsePlayerState(state)));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void sendStateChange$lambda$4(YouTubePlayerBridge this$0, PlayerConstants.PlayerState playerState) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(playerState, "$playerState");
@@ -108,7 +108,7 @@ public final class YouTubePlayerBridge {
         this.mainThreadHandler.post(new YouTubePlayerBridge$$ExternalSyntheticLambda2(this, parsePlaybackQuality(quality)));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void sendPlaybackQualityChange$lambda$6(YouTubePlayerBridge this$0, PlayerConstants.PlaybackQuality playbackQuality) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(playbackQuality, "$playbackQuality");
@@ -124,7 +124,7 @@ public final class YouTubePlayerBridge {
         this.mainThreadHandler.post(new YouTubePlayerBridge$$ExternalSyntheticLambda4(this, parsePlaybackRate(rate)));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void sendPlaybackRateChange$lambda$8(YouTubePlayerBridge this$0, PlayerConstants.PlaybackRate playbackRate) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(playbackRate, "$playbackRate");
@@ -140,7 +140,7 @@ public final class YouTubePlayerBridge {
         this.mainThreadHandler.post(new YouTubePlayerBridge$$ExternalSyntheticLambda9(this, parsePlayerError(error)));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void sendError$lambda$10(YouTubePlayerBridge this$0, PlayerConstants.PlayerError playerError) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(playerError, "$playerError");
@@ -155,7 +155,7 @@ public final class YouTubePlayerBridge {
         return this.mainThreadHandler.post(new YouTubePlayerBridge$$ExternalSyntheticLambda6(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void sendApiChange$lambda$12(YouTubePlayerBridge this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Iterator<T> it = this$0.youTubePlayerOwner.getListeners().iterator();
@@ -174,7 +174,7 @@ public final class YouTubePlayerBridge {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void sendVideoCurrentTime$lambda$14(YouTubePlayerBridge this$0, float f) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Iterator<T> it = this$0.youTubePlayerOwner.getListeners().iterator();
@@ -196,7 +196,7 @@ public final class YouTubePlayerBridge {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void sendVideoDuration$lambda$16(YouTubePlayerBridge this$0, float f) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Iterator<T> it = this$0.youTubePlayerOwner.getListeners().iterator();
@@ -215,7 +215,7 @@ public final class YouTubePlayerBridge {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void sendVideoLoadedFraction$lambda$18(YouTubePlayerBridge this$0, float f) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Iterator<T> it = this$0.youTubePlayerOwner.getListeners().iterator();
@@ -230,7 +230,7 @@ public final class YouTubePlayerBridge {
         return this.mainThreadHandler.post(new YouTubePlayerBridge$$ExternalSyntheticLambda5(this, videoId));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void sendVideoId$lambda$20(YouTubePlayerBridge this$0, String videoId) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(videoId, "$videoId");

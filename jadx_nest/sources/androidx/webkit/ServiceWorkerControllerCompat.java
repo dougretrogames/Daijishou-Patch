@@ -2,7 +2,7 @@ package androidx.webkit;
 
 import androidx.webkit.internal.ServiceWorkerControllerImpl;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class ServiceWorkerControllerCompat {
     public abstract ServiceWorkerWebSettingsCompat getServiceWorkerWebSettings();
 

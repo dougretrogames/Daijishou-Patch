@@ -1,6 +1,6 @@
 package org.eclipse.jgit.diff;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class LowLevelDiffAlgorithm extends DiffAlgorithm {
     public abstract <S extends Sequence> void diffNonCommon(EditList editList, HashedSequenceComparator<S> hashedSequenceComparator, HashedSequence<S> hashedSequence, HashedSequence<S> hashedSequence2, Edit edit);
 

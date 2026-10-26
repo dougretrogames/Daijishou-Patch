@@ -6,7 +6,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectStreamClass;
 import java.lang.reflect.Proxy;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ClassLoaderObjectInputStream extends ObjectInputStream {
     private final ClassLoader classLoader;
 

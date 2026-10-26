@@ -12,7 +12,7 @@ import android.widget.OverScroller;
 import androidx.core.view.ViewCompat;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ViewDragHelper {
     private static final int BASE_SETTLE_DURATION = 256;
     public static final int DIRECTION_ALL = 3;
@@ -101,7 +101,7 @@ public class ViewDragHelper {
         public abstract boolean tryCaptureView(View view, int i);
     }
 
-    /* JADX INFO: renamed from: androidx.customview.widget.ViewDragHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.customview.widget.ViewDragHelper$1, reason: invalid class name */
     class AnonymousClass1 implements Interpolator {
         @Override // android.animation.TimeInterpolator
         public float getInterpolation(float f) {
@@ -113,7 +113,7 @@ public class ViewDragHelper {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.customview.widget.ViewDragHelper$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.customview.widget.ViewDragHelper$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -517,8 +517,8 @@ public class ViewDragHelper {
         return false;
     }
 
-    /* JADX WARN: Code duplicated, block: B:54:0x00e9  */
-    /* JADX WARN: Code duplicated, block: B:63:0x0101  */
+    /* WARN: Code duplicated, block: B:54:0x00e9  */
+    /* WARN: Code duplicated, block: B:63:0x0101  */
     public boolean shouldInterceptTouchEvent(MotionEvent motionEvent) {
         View viewFindTopChildUnder;
         int actionMasked = motionEvent.getActionMasked();
@@ -737,27 +737,27 @@ public class ViewDragHelper {
         clearMotionHistory(pointerId4);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v11 */
-    /* JADX WARN: Type inference failed for: r0v12 */
-    /* JADX WARN: Type inference failed for: r0v13 */
-    /* JADX WARN: Type inference failed for: r0v14 */
-    /* JADX WARN: Type inference failed for: r0v15 */
-    /* JADX WARN: Type inference failed for: r0v16 */
-    /* JADX WARN: Type inference failed for: r0v2 */
-    /* JADX WARN: Type inference failed for: r0v3 */
-    /* JADX WARN: Type inference failed for: r0v4, types: [int] */
-    /* JADX WARN: Type inference failed for: r3v3, types: [androidx.customview.widget.ViewDragHelper$Callback] */
-    /* JADX WARN: Type inference failed for: r4v2 */
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v11 */
+    /* WARN: Type inference failed for: r0v12 */
+    /* WARN: Type inference failed for: r0v13 */
+    /* WARN: Type inference failed for: r0v14 */
+    /* WARN: Type inference failed for: r0v15 */
+    /* WARN: Type inference failed for: r0v16 */
+    /* WARN: Type inference failed for: r0v2 */
+    /* WARN: Type inference failed for: r0v3 */
+    /* WARN: Type inference failed for: r0v4, types: [int] */
+    /* WARN: Type inference failed for: r3v3, types: [androidx.customview.widget.ViewDragHelper$Callback] */
+    /* WARN: Type inference failed for: r4v2 */
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     private void reportNewEdgeDrags(float f, float f2, int i) {
         int i2;

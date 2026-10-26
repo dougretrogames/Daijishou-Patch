@@ -9,7 +9,7 @@ import java.util.function.Predicate;
 import java.util.stream.Stream;
 import org.apache.commons.collections4.IteratorUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ExtendedIterator<T> implements IteratorOperations<T> {
     private final Iterator<? extends T> base;
     private final boolean throwOnRemove;

@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import java.security.MessageDigest;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CenterInside extends BitmapTransformation {
     private static final String ID = "com.bumptech.glide.load.resource.bitmap.CenterInside";
     private static final byte[] ID_BYTES = ID.getBytes(CHARSET);

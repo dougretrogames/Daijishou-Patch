@@ -7,7 +7,7 @@ import org.commonmark.node.Text;
 import org.commonmark.parser.delimiter.DelimiterProcessor;
 import org.commonmark.parser.delimiter.DelimiterRun;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class EmphasisDelimiterProcessor implements DelimiterProcessor {
     private final char delimiterChar;
 

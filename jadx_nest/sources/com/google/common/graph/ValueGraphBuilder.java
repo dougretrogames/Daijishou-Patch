@@ -3,10 +3,10 @@ package com.google.common.graph;
 import com.google.common.base.Optional;
 import com.google.common.base.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class ValueGraphBuilder<N, V> extends AbstractGraphBuilder<N> {
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private <N1 extends N, V1 extends V> ValueGraphBuilder<N1, V1> cast() {
         return this;
     }

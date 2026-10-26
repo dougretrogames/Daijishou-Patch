@@ -23,7 +23,7 @@ import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.io.MessageWriter;
 import org.eclipse.jgit.util.io.StreamCopyThread;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class TransportLocal extends Transport implements PackTransport {
     static final TransportProtocol PROTO_LOCAL = new AnonymousClass1();
     private final File remoteGitDir;
@@ -32,7 +32,7 @@ class TransportLocal extends Transport implements PackTransport {
     public void close() {
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.TransportLocal$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.TransportLocal$1, reason: invalid class name */
     class AnonymousClass1 extends TransportProtocol {
         AnonymousClass1() {
         }
@@ -124,7 +124,7 @@ class TransportLocal extends Transport implements PackTransport {
         return new InternalFetchConnection(this, new TransportLocal$$ExternalSyntheticLambda1(this), null, openRepo());
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-transport-TransportLocal, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-transport-TransportLocal, reason: not valid java name */
     /* synthetic */ UploadPack m5845lambda$0$orgeclipsejgittransportTransportLocal(Void r1, Repository repository) throws ServiceNotEnabledException, ServiceNotAuthorizedException {
         return createUploadPack(repository);
     }
@@ -138,7 +138,7 @@ class TransportLocal extends Transport implements PackTransport {
         return new InternalPushConnection(this, new TransportLocal$$ExternalSyntheticLambda0(this), null, openRepo());
     }
 
-    /* JADX INFO: renamed from: lambda$1$org-eclipse-jgit-transport-TransportLocal, reason: not valid java name */
+    /* INFO: renamed from: lambda$1$org-eclipse-jgit-transport-TransportLocal, reason: not valid java name */
     /* synthetic */ ReceivePack m5846lambda$1$orgeclipsejgittransportTransportLocal(Void r1, Repository repository) throws ServiceNotEnabledException, ServiceNotAuthorizedException {
         return createReceivePack(repository);
     }
@@ -147,7 +147,7 @@ class TransportLocal extends Transport implements PackTransport {
         return spawn(str, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Process spawn(String str, TransferConfig.ProtocolVersion protocolVersion) throws TransportException {
         try {
             ProcessBuilder processBuilderRunInShell = this.local.getFS().runInShell(str, new String[]{BranchConfig.LOCAL_REPOSITORY});
@@ -196,7 +196,7 @@ class TransportLocal extends Transport implements PackTransport {
             lsRefs(collection, strArr);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // org.eclipse.jgit.transport.BasePackFetchConnection, org.eclipse.jgit.transport.BasePackConnection, org.eclipse.jgit.transport.BaseConnection, org.eclipse.jgit.transport.Connection, java.lang.AutoCloseable
         public void close() {
             super.close();
@@ -238,7 +238,7 @@ class TransportLocal extends Transport implements PackTransport {
             readAdvertisedRefs();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // org.eclipse.jgit.transport.BasePackPushConnection, org.eclipse.jgit.transport.BasePackConnection, org.eclipse.jgit.transport.BaseConnection, org.eclipse.jgit.transport.Connection, java.lang.AutoCloseable
         public void close() {
             super.close();

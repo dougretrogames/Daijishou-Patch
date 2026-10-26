@@ -3,7 +3,7 @@ package androidx.core.content;
 import java.util.ArrayList;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MimeTypeFilter {
     private MimeTypeFilter() {
     }

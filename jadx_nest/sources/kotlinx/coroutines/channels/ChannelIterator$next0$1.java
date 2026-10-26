@@ -5,8 +5,8 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 
-/* JADX INFO: compiled from: Channel.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: Channel.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "kotlinx.coroutines.channels.ChannelIterator$DefaultImpls", f = "Channel.kt", i = {0}, l = {599}, m = "next", n = {"$this"}, s = {"L$0"})
 final class ChannelIterator$next0$1<E> extends ContinuationImpl {

@@ -7,7 +7,7 @@ import org.apache.http.auth.AuthSchemeProvider;
 import org.apache.http.params.HttpParams;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicSchemeFactory implements AuthSchemeFactory, AuthSchemeProvider {
     private final Charset charset;
 

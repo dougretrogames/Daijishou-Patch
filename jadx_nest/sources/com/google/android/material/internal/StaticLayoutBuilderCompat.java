@@ -8,7 +8,7 @@ import android.text.TextPaint;
 import android.text.TextUtils;
 import java.lang.reflect.Constructor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class StaticLayoutBuilderCompat {
     static final int DEFAULT_HYPHENATION_FREQUENCY = 1;
     static final float DEFAULT_LINE_SPACING_ADD = 0.0f;

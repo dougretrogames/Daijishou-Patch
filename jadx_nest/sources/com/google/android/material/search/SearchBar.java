@@ -42,7 +42,7 @@ import com.google.android.material.shape.MaterialShapeUtils;
 import com.google.android.material.shape.ShapeAppearanceModel;
 import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SearchBar extends Toolbar {
     private static final int DEFAULT_SCROLL_FLAGS = 53;
     private static final int DEF_STYLE_RES = R.style.Widget_Material3_SearchBar;
@@ -83,7 +83,7 @@ public class SearchBar extends Toolbar {
     public void setTitle(CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$com-google-android-material-search-SearchBar, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$com-google-android-material-search-SearchBar, reason: not valid java name */
     /* synthetic */ void m3310lambda$new$0$comgoogleandroidmaterialsearchSearchBar(boolean z) {
         setFocusableInTouchMode(z);
     }
@@ -96,7 +96,7 @@ public class SearchBar extends Toolbar {
         this(context, attributeSet, R.attr.materialSearchBarStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public SearchBar(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -149,7 +149,7 @@ public class SearchBar extends Toolbar {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchBar$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchBar$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnAttachStateChangeListener {
         AnonymousClass1() {
         }
@@ -499,7 +499,7 @@ public class SearchBar extends Toolbar {
         setOrClearDefaultScrollFlags();
     }
 
-    /* JADX INFO: renamed from: lambda$startOnLoadAnimation$1$com-google-android-material-search-SearchBar, reason: not valid java name */
+    /* INFO: renamed from: lambda$startOnLoadAnimation$1$com-google-android-material-search-SearchBar, reason: not valid java name */
     /* synthetic */ void m3311x58362b63() {
         this.searchBarAnimationHelper.startOnLoadAnimation(this);
     }
@@ -662,12 +662,12 @@ public class SearchBar extends Toolbar {
             super(parcelable);
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.search.SearchBar$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.search.SearchBar$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);

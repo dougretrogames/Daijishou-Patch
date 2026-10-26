@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class GapWorker implements Runnable {
     static final ThreadLocal<GapWorker> sGapWorker = new ThreadLocal<>();
     static Comparator<Task> sTaskComparator = new AnonymousClass1();
@@ -151,7 +151,7 @@ final class GapWorker implements Runnable {
         recyclerView.mPrefetchRegistry.setPrefetchVector(i, i2);
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.GapWorker$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.GapWorker$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<Task> {
         AnonymousClass1() {
         }

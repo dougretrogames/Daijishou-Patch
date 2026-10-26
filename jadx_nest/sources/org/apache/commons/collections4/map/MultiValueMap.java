@@ -20,7 +20,7 @@ import org.apache.commons.collections4.iterators.IteratorChain;
 import org.apache.commons.collections4.iterators.LazyIteratorChain;
 import org.apache.commons.collections4.iterators.TransformIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class MultiValueMap<K, V> extends AbstractMapDecorator<K, Object> implements MultiMap<K, V>, Serializable {
     private static final long serialVersionUID = -2214159910087182007L;
@@ -129,7 +129,7 @@ public class MultiValueMap<K, V> extends AbstractMapDecorator<K, Object> impleme
         this(new HashMap(), new ReflectionFactory(ArrayList.class));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     protected <C extends Collection<V>> MultiValueMap(Map<K, ? super C> map, Factory<C> factory) {
         super(map);
         if (factory == 0) {
@@ -183,7 +183,7 @@ public class MultiValueMap<K, V> extends AbstractMapDecorator<K, Object> impleme
         return new AnonymousClass1(this, new ArrayList(keySet()).iterator());
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.map.MultiValueMap$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.map.MultiValueMap$1, reason: invalid class name */
     class AnonymousClass1 extends LazyIteratorChain<Map.Entry<K, V>> {
         final /* synthetic */ MultiValueMap this$0;
         final /* synthetic */ Iterator val$keyIterator;
@@ -202,7 +202,7 @@ public class MultiValueMap<K, V> extends AbstractMapDecorator<K, Object> impleme
             return new TransformIterator(new ValuesIterator(next), new MultiValueMap$1$$ExternalSyntheticLambda0(this, next));
         }
 
-        /* JADX INFO: renamed from: org.apache.commons.collections4.map.MultiValueMap$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: org.apache.commons.collections4.map.MultiValueMap$1$1, reason: invalid class name and collision with other inner class name */
         class C00911 implements Map.Entry<K, V> {
             final /* synthetic */ AnonymousClass1 this$1;
             final /* synthetic */ Object val$input;
@@ -230,7 +230,7 @@ public class MultiValueMap<K, V> extends AbstractMapDecorator<K, Object> impleme
             }
         }
 
-        /* JADX INFO: renamed from: lambda$nextIterator$0$org-apache-commons-collections4-map-MultiValueMap$1, reason: not valid java name */
+        /* INFO: renamed from: lambda$nextIterator$0$org-apache-commons-collections4-map-MultiValueMap$1, reason: not valid java name */
         /* synthetic */ Map.Entry m5542xb3e34b93(Object obj, Object obj2) {
             return new C00911(this, obj, obj2);
         }
@@ -243,7 +243,7 @@ public class MultiValueMap<K, V> extends AbstractMapDecorator<K, Object> impleme
         return new ValuesIterator(obj);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.apache.commons.collections4.map.AbstractMapDecorator, java.util.Map, org.apache.commons.collections4.Put
     public Object put(K k, Object obj) {
         boolean zAdd;
@@ -266,7 +266,7 @@ public class MultiValueMap<K, V> extends AbstractMapDecorator<K, Object> impleme
         return null;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public boolean putAll(K k, Collection<V> collection) {
         if (collection == 0 || collection.isEmpty()) {
             return false;

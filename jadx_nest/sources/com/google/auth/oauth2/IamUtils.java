@@ -15,7 +15,7 @@ import com.google.common.io.BaseEncoding;
 import java.io.IOException;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class IamUtils {
     private static final String ID_TOKEN_URL_FORMAT = "https://iamcredentials.googleapis.com/v1/projects/-/serviceAccounts/%s:generateIdToken";
     private static final String PARSE_ERROR_MESSAGE = "Error parsing error message response. ";

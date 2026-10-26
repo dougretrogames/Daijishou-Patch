@@ -2,7 +2,7 @@ package androidx.transition;
 
 import androidx.core.util.Consumer;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface TransitionSeekController {
     void addOnProgressChangedListener(Consumer<TransitionSeekController> consumer);
 

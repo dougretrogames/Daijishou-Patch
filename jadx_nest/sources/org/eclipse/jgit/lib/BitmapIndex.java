@@ -4,7 +4,7 @@ import com.googlecode.javaewah.EWAHCompressedBitmap;
 import java.util.Iterator;
 import org.eclipse.jgit.internal.storage.file.PackBitmapIndex;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface BitmapIndex {
 
     public interface Bitmap extends Iterable<BitmapObject> {
@@ -59,7 +59,7 @@ public interface BitmapIndex {
 
         void onBitmapNotFound(AnyObjectId anyObjectId);
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.lib.BitmapIndex$BitmapLookupListener$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.lib.BitmapIndex$BitmapLookupListener$1, reason: invalid class name */
         class AnonymousClass1 implements BitmapLookupListener {
             @Override // org.eclipse.jgit.lib.BitmapIndex.BitmapLookupListener
             public void onBitmapFound(AnyObjectId anyObjectId) {

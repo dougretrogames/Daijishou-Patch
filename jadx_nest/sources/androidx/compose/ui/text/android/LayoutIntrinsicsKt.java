@@ -10,8 +10,8 @@ import java.util.PriorityQueue;
 import kotlin.Metadata;
 import kotlin.Pair;
 
-/* JADX INFO: compiled from: LayoutIntrinsics.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: LayoutIntrinsics.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u001c\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0004\u001a\u0018\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0000\u001a \u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00012\u0006\u0010\t\u001a\u00020\u00032\u0006\u0010\n\u001a\u00020\u0005H\u0002¨\u0006\u000b"}, d2 = {"minIntrinsicWidth", "", "text", "", "paint", "Landroid/text/TextPaint;", "shouldIncreaseMaxIntrinsic", "", "desiredWidth", "charSequence", "textPaint", "ui-text_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class LayoutIntrinsicsKt {
     public static final float minIntrinsicWidth(CharSequence charSequence, TextPaint textPaint) {
@@ -44,12 +44,12 @@ public final class LayoutIntrinsicsKt {
         return fMax;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final int minIntrinsicWidth$lambda$0(Pair pair, Pair pair2) {
         return (((Number) pair.getSecond()).intValue() - ((Number) pair.getFirst()).intValue()) - (((Number) pair2.getSecond()).intValue() - ((Number) pair2.getFirst()).intValue());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean shouldIncreaseMaxIntrinsic(float f, CharSequence charSequence, TextPaint textPaint) {
         if (f == 0.0f) {
             return false;

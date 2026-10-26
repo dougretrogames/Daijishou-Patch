@@ -13,7 +13,7 @@ import android.graphics.Shader;
 import android.util.AttributeSet;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class HorizontalGridView extends BaseGridView {
     private boolean mFadingHighEdge;
     private boolean mFadingLowEdge;

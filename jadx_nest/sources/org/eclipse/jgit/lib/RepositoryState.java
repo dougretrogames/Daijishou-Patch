@@ -2,9 +2,9 @@ package org.eclipse.jgit.lib;
 
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: loaded from: classes5.dex */
+/* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* WARN: Unknown enum class pattern. Please report as an issue! */
+/* INFO: loaded from: classes5.dex */
 public abstract class RepositoryState {
     public static final RepositoryState APPLY;
     public static final RepositoryState BARE;
@@ -54,7 +54,7 @@ public abstract class RepositoryState {
         super(str, i);
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$1, reason: invalid class name */
     final enum AnonymousClass1 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -123,7 +123,7 @@ public abstract class RepositoryState {
         ENUM$VALUES = new RepositoryState[]{anonymousClass1, anonymousClass2, anonymousClass3, anonymousClass4, anonymousClass5, anonymousClass6, anonymousClass7, anonymousClass8, anonymousClass9, anonymousClass10, anonymousClass11, anonymousClass12, anonymousClass13, anonymousClass14};
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$2, reason: invalid class name */
     final enum AnonymousClass2 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -160,7 +160,7 @@ public abstract class RepositoryState {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$3, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$3, reason: invalid class name */
     final enum AnonymousClass3 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -197,7 +197,7 @@ public abstract class RepositoryState {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$4, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$4, reason: invalid class name */
     final enum AnonymousClass4 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -234,7 +234,7 @@ public abstract class RepositoryState {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$5, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$5, reason: invalid class name */
     final enum AnonymousClass5 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -271,7 +271,7 @@ public abstract class RepositoryState {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$6, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$6, reason: invalid class name */
     final enum AnonymousClass6 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -308,7 +308,7 @@ public abstract class RepositoryState {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$7, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$7, reason: invalid class name */
     final enum AnonymousClass7 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -345,7 +345,7 @@ public abstract class RepositoryState {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$8, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$8, reason: invalid class name */
     final enum AnonymousClass8 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -382,7 +382,7 @@ public abstract class RepositoryState {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$9, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$9, reason: invalid class name */
     final enum AnonymousClass9 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -419,7 +419,7 @@ public abstract class RepositoryState {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$10, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$10, reason: invalid class name */
     final enum AnonymousClass10 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -456,7 +456,7 @@ public abstract class RepositoryState {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$11, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$11, reason: invalid class name */
     final enum AnonymousClass11 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -493,7 +493,7 @@ public abstract class RepositoryState {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$12, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$12, reason: invalid class name */
     final enum AnonymousClass12 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -530,7 +530,7 @@ public abstract class RepositoryState {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$13, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$13, reason: invalid class name */
     final enum AnonymousClass13 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {
@@ -567,7 +567,7 @@ public abstract class RepositoryState {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$14, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RepositoryState$14, reason: invalid class name */
     final enum AnonymousClass14 extends RepositoryState {
         @Override // org.eclipse.jgit.lib.RepositoryState
         public boolean canAmend() {

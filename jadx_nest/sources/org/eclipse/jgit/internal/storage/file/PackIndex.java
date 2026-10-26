@@ -19,7 +19,7 @@ import org.eclipse.jgit.util.IO;
 import org.eclipse.jgit.util.NB;
 import org.eclipse.jgit.util.io.SilentFileInputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface PackIndex extends Iterable<MutableEntry>, ObjectIdSet {
     long findCRC32(AnyObjectId anyObjectId) throws UnsupportedOperationException, MissingObjectException;
 

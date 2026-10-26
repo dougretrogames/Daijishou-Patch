@@ -1,7 +1,7 @@
 package androidx.core.view.insets;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class SystemBarStateMonitor$$ExternalSyntheticLambda1 implements Runnable {
     public final /* synthetic */ SystemBarStateMonitor f$0;
 

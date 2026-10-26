@@ -12,7 +12,7 @@ import org.apache.http.StatusLine;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.params.HttpParams;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class HttpResponseProxy implements CloseableHttpResponse {
     private final ConnectionHolder connHolder;
     private final HttpResponse original;

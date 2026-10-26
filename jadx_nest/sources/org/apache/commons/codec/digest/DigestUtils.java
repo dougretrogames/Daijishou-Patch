@@ -16,7 +16,7 @@ import java.security.NoSuchAlgorithmException;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.codec.binary.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DigestUtils {
     static final int BUFFER_SIZE = 1024;
     private final MessageDigest messageDigest;

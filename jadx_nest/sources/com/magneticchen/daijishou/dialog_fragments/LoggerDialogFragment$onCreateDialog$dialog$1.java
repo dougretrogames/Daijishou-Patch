@@ -7,24 +7,24 @@ import com.magneticchen.daijishou.daijishou_recycler_view.DaijishouRecyclerView;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: LoggerDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: LoggerDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0016¨\u0006\u0004"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/LoggerDialogFragment$onCreateDialog$dialog$1", "Landroid/app/Dialog;", "onBackPressed", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class LoggerDialogFragment$onCreateDialog$dialog$1 extends Dialog {
     final /* synthetic */ LoggerDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     LoggerDialogFragment$onCreateDialog$dialog$1(LoggerDialogFragment loggerDialogFragment, FragmentActivity fragmentActivity, int i) {
         super(fragmentActivity, i);
         this.this$0 = loggerDialogFragment;
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x0027  */
-    /* JADX WARN: Code duplicated, block: B:20:0x0045  */
-    /* JADX WARN: Code duplicated, block: B:22:0x0053  */
-    /* JADX WARN: Code duplicated, block: B:25:0x0064  */
-    /* JADX WARN: Code duplicated, block: B:26:0x0068  */
-    /* JADX WARN: Code duplicated, block: B:9:0x001f  */
+    /* WARN: Code duplicated, block: B:11:0x0027  */
+    /* WARN: Code duplicated, block: B:20:0x0045  */
+    /* WARN: Code duplicated, block: B:22:0x0053  */
+    /* WARN: Code duplicated, block: B:25:0x0064  */
+    /* WARN: Code duplicated, block: B:26:0x0068  */
+    /* WARN: Code duplicated, block: B:9:0x001f  */
     @Override // android.app.Dialog
     public void onBackPressed() {
         DaijishouRecyclerView daijishouRecyclerView;

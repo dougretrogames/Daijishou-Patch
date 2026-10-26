@@ -6,7 +6,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 final class ForwardingFluentFuture<V> extends FluentFuture<V> {
     private final ListenableFuture<V> delegate;

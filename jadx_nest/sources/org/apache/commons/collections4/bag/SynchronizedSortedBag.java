@@ -4,7 +4,7 @@ import java.util.Comparator;
 import org.apache.commons.collections4.Bag;
 import org.apache.commons.collections4.SortedBag;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SynchronizedSortedBag<E> extends SynchronizedBag<E> implements SortedBag<E> {
     private static final long serialVersionUID = 722374056718497858L;
 

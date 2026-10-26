@@ -15,7 +15,7 @@ import org.apache.commons.collections4.functors.UniquePredicate;
 import org.apache.commons.collections4.iterators.AbstractIteratorDecorator;
 import org.apache.commons.collections4.list.UnmodifiableList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ListOrderedSet<E> extends AbstractSerializableSetDecorator<E> {
     private static final long serialVersionUID = -228664372470420141L;
     private final List<E> setOrder;
@@ -212,7 +212,7 @@ public class ListOrderedSet<E> extends AbstractSerializableSetDecorator<E> {
         return zRetainAll;
     }
 
-    /* JADX INFO: renamed from: lambda$retainAll$0$org-apache-commons-collections4-set-ListOrderedSet, reason: not valid java name */
+    /* INFO: renamed from: lambda$retainAll$0$org-apache-commons-collections4-set-ListOrderedSet, reason: not valid java name */
     /* synthetic */ boolean m5549x583e3d8a(Object obj) {
         return !decorated().contains(obj);
     }

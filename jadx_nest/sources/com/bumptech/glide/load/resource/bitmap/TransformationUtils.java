@@ -24,7 +24,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class TransformationUtils {
     private static final Lock BITMAP_DRAWABLE_LOCK;
     private static final Paint CIRCLE_CROP_BITMAP_PAINT;
@@ -254,7 +254,7 @@ public final class TransformationUtils {
         return roundedCorners(bitmapPool, bitmap, new AnonymousClass1(i));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.resource.bitmap.TransformationUtils$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.resource.bitmap.TransformationUtils$1, reason: invalid class name */
     class AnonymousClass1 implements DrawRoundedCornerFn {
         final /* synthetic */ int val$roundingRadius;
 
@@ -273,7 +273,7 @@ public final class TransformationUtils {
         return roundedCorners(bitmapPool, bitmap, new AnonymousClass2(f, f2, f3, f4));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.resource.bitmap.TransformationUtils$2, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.resource.bitmap.TransformationUtils$2, reason: invalid class name */
     class AnonymousClass2 implements DrawRoundedCornerFn {
         final /* synthetic */ float val$bottomLeft;
         final /* synthetic */ float val$bottomRight;

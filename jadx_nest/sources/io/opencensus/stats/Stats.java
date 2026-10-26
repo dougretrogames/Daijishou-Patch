@@ -5,7 +5,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Stats {
     private static final Logger logger = Logger.getLogger(Stats.class.getName());
     private static final StatsComponent statsComponent = loadStatsComponent(StatsComponent.class.getClassLoader());

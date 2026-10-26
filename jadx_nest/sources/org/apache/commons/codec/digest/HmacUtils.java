@@ -13,7 +13,7 @@ import javax.crypto.spec.SecretKeySpec;
 import org.apache.commons.codec.binary.Hex;
 import org.apache.commons.codec.binary.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class HmacUtils {
     private static final int STREAM_BUFFER_LENGTH = 1024;
     private final Mac mac;

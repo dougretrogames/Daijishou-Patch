@@ -73,7 +73,7 @@ import org.eclipse.jgit.util.io.CountingOutputStream;
 import org.eclipse.jgit.util.io.EolStreamTypeUtil;
 import org.eclipse.jgit.util.sha1.SHA1;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PatchApplier {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$diff$DiffEntry$ChangeType = null;
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$patch$BinaryHunk$Type = null;
@@ -221,12 +221,12 @@ public class PatchApplier {
             return this.errors;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void addError(String str, String str2, @Nullable HunkHeader hunkHeader) {
             this.errors.add(new Error(str, str2, hunkHeader, false));
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void addErrorWithGitConflict(String str, String str2, @Nullable HunkHeader hunkHeader) {
             this.errors.add(new Error(str, str2, hunkHeader, true));
         }
@@ -375,8 +375,8 @@ public class PatchApplier {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:33:0x00b7  */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Code duplicated, block: B:33:0x00b7  */
+    /* WARN: Multi-variable type inference failed */
     private void apply(String str, DirCache dirCache, DirCacheBuilder dirCacheBuilder, @Nullable File file, FileHeader fileHeader, Result result) throws Throwable {
         CoreConfig.EolStreamType eolStreamType;
         boolean z;
@@ -759,7 +759,7 @@ public class PatchApplier {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x004f  */
+    /* WARN: Code duplicated, block: B:21:0x004f  */
     private boolean checkOid(ObjectId objectId, ObjectId objectId2, DiffEntry.ChangeType changeType, File file, String str, Result result) throws IOException {
         boolean zEquals;
         if (objectId2 != null) {

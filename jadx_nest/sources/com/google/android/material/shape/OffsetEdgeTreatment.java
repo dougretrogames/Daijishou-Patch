@@ -1,6 +1,6 @@
 package com.google.android.material.shape;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class OffsetEdgeTreatment extends EdgeTreatment {
     private final float offset;
     private final EdgeTreatment other;

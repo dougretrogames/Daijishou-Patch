@@ -1,6 +1,6 @@
 package androidx.constraintlayout.motion.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class OnSwipe {
     public static final int COMPLETE_MODE_CONTINUOUS_VELOCITY = 0;
     public static final int COMPLETE_MODE_SPRING = 1;

@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MemoryTokensStorage implements TokenStore {
     private final Map<String, String> tokensStorage = new HashMap();
 

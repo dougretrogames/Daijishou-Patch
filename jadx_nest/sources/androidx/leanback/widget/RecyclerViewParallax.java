@@ -5,14 +5,14 @@ import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class RecyclerViewParallax extends Parallax<ChildPositionProperty> {
     boolean mIsVertical;
     RecyclerView mRecylerView;
     RecyclerView.OnScrollListener mOnScrollListener = new AnonymousClass1();
     View.OnLayoutChangeListener mOnLayoutChangeListener = new AnonymousClass2();
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.RecyclerViewParallax$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.RecyclerViewParallax$1, reason: invalid class name */
     class AnonymousClass1 extends RecyclerView.OnScrollListener {
         AnonymousClass1() {
         }
@@ -23,7 +23,7 @@ public class RecyclerViewParallax extends Parallax<ChildPositionProperty> {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.RecyclerViewParallax$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.RecyclerViewParallax$2, reason: invalid class name */
     class AnonymousClass2 implements View.OnLayoutChangeListener {
         AnonymousClass2() {
         }

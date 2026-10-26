@@ -2,8 +2,8 @@ package com.google.android.material.carousel;
 
 import android.view.View;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class CarouselLayoutManager$$ExternalSyntheticLambda1 implements View.OnLayoutChangeListener {
     public final /* synthetic */ CarouselLayoutManager f$0;
 

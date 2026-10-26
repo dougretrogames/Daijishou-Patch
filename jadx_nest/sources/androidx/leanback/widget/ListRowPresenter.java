@@ -10,7 +10,7 @@ import androidx.leanback.transition.TransitionHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ListRowPresenter extends RowPresenter {
     private static final boolean DEBUG = false;
     private static final int DEFAULT_RECYCLED_POOL_SIZE = 24;
@@ -147,7 +147,7 @@ public class ListRowPresenter extends RowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.ListRowPresenter$SelectItemViewHolderTask$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.ListRowPresenter$SelectItemViewHolderTask$1, reason: invalid class name */
         class AnonymousClass1 implements ViewHolderTask {
             final Presenter.ViewHolderTask itemTask;
 
@@ -179,7 +179,7 @@ public class ListRowPresenter extends RowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.ListRowPresenter$ListRowPresenterItemBridgeAdapter$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.ListRowPresenter$ListRowPresenterItemBridgeAdapter$1, reason: invalid class name */
         class AnonymousClass1 implements View.OnClickListener {
             final /* synthetic */ ItemBridgeAdapter.ViewHolder val$viewHolder;
 
@@ -300,7 +300,7 @@ public class ListRowPresenter extends RowPresenter {
         viewHolder2.mGridView.setNumRows(this.mNumRows);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.ListRowPresenter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.ListRowPresenter$1, reason: invalid class name */
     class AnonymousClass1 implements OnChildSelectedListener {
         final /* synthetic */ ViewHolder val$rowViewHolder;
 
@@ -314,7 +314,7 @@ public class ListRowPresenter extends RowPresenter {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.ListRowPresenter$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.ListRowPresenter$2, reason: invalid class name */
     class AnonymousClass2 implements BaseGridView.OnUnhandledKeyListener {
         final /* synthetic */ ViewHolder val$rowViewHolder;
 

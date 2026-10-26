@@ -4,7 +4,7 @@ import org.jsoup.helper.Validate;
 import org.jsoup.internal.QuietAppendable;
 import org.jsoup.internal.StringUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TextNode extends LeafNode {
     public TextNode(String str) {
         super(str);

@@ -28,7 +28,7 @@ import androidx.core.view.NestedScrollingParentHelper;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ActionBarOverlayLayout extends ViewGroup implements DecorContentParent, NestedScrollingParent, NestedScrollingParent2, NestedScrollingParent3 {
     private static final int ACTION_BAR_ANIMATE_DELAY = 600;
     private static final String TAG = "ActionBarOverlayLayout";
@@ -103,7 +103,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements DecorContentPar
         return false;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ActionBarOverlayLayout$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ActionBarOverlayLayout$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }
@@ -121,7 +121,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements DecorContentPar
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ActionBarOverlayLayout$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ActionBarOverlayLayout$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -134,7 +134,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements DecorContentPar
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ActionBarOverlayLayout$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ActionBarOverlayLayout$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         AnonymousClass3() {
         }
@@ -327,7 +327,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements DecorContentPar
         return windowInsetsCompat.consumeDisplayCutout().consumeSystemWindowInsets().consumeStableInsets().toWindowInsets();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup
     public LayoutParams generateDefaultLayoutParams() {
         return new LayoutParams(-1, -1);
@@ -524,7 +524,7 @@ public class ActionBarOverlayLayout extends ViewGroup implements DecorContentPar
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private DecorToolbar getDecorToolbar(View view) {
         if (view instanceof DecorToolbar) {
             return (DecorToolbar) view;

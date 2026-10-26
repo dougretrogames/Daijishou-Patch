@@ -9,8 +9,8 @@ import java.util.logging.Logger;
 import libcore.io.Memory;
 import sun.misc.Unsafe;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 final class zzhj {
     static final boolean zza;
     private static final Unsafe zzb;
@@ -20,7 +20,7 @@ final class zzhj {
     private static final boolean zzf;
     private static final boolean zzg;
 
-    /* JADX WARN: Code duplicated, block: B:11:0x0038  */
+    /* WARN: Code duplicated, block: B:11:0x0038  */
     static {
         boolean z;
         boolean z2;
@@ -190,7 +190,7 @@ final class zzhj {
         return ((byte) ((zze.zza.getInt(obj, (-4) & j) >>> ((int) ((j & 3) << 3))) & 255)) != 0;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static boolean zzs(Class cls) {
         int i = zzds.zza;
         try {

@@ -17,7 +17,7 @@ import org.eclipse.jgit.storage.file.FileBasedConfig;
 import org.eclipse.jgit.submodule.SubmoduleWalk;
 import org.eclipse.jgit.treewalk.filter.PathFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SubmoduleAddCommand extends TransportCommand<SubmoduleAddCommand, Repository> {
     private ProgressMonitor monitor;
     private String name;

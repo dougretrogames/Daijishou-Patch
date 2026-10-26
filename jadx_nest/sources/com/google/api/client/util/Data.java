@@ -20,7 +20,7 @@ import java.util.TreeMap;
 import java.util.TreeSet;
 import java.util.concurrent.ConcurrentHashMap;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Data {
     public static final BigDecimal NULL_BIG_DECIMAL;
     public static final BigInteger NULL_BIG_INTEGER;
@@ -119,7 +119,7 @@ public class Data {
         return new DataMap(obj, false);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <T> T clone(T t) {
         T t2;
         if (t == 0 || isPrimitive(t.getClass())) {

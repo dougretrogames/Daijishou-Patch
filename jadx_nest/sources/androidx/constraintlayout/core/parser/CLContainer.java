@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CLContainer extends CLElement {
     ArrayList<CLElement> mElements;
 
@@ -282,7 +282,7 @@ public class CLContainer extends CLElement {
     }
 
     @Override // androidx.constraintlayout.core.parser.CLElement
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public CLContainer mo3141clone() {
         CLContainer cLContainer = (CLContainer) super.mo3141clone();
         ArrayList<CLElement> arrayList = new ArrayList<>(this.mElements.size());

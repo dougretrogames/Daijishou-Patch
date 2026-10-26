@@ -8,7 +8,7 @@ import android.os.RemoteException;
 import kotlin.text.Typography;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface IUnusedAppRestrictionsBackportService extends IInterface {
     public static final String DESCRIPTOR = "androidx$core$app$unusedapprestrictions$IUnusedAppRestrictionsBackportService".replace(Typography.dollar, FilenameUtils.EXTENSION_SEPARATOR);
 

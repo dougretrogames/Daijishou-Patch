@@ -4,7 +4,7 @@ import com.bumptech.glide.load.Key;
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MediaStoreSignature implements Key {
     private final long dateModified;
     private final String mimeType;

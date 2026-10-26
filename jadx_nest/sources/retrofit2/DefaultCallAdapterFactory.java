@@ -10,7 +10,7 @@ import javax.annotation.Nullable;
 import okhttp3.Request;
 import okio.Timeout;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 final class DefaultCallAdapterFactory extends CallAdapter.Factory {
 
     @Nullable
@@ -32,7 +32,7 @@ final class DefaultCallAdapterFactory extends CallAdapter.Factory {
         return new AnonymousClass1(Utils.getParameterUpperBound(0, (ParameterizedType) type), Utils.isAnnotationPresent(annotationArr, SkipCallbackExecutor.class) ? null : this.callbackExecutor);
     }
 
-    /* JADX INFO: renamed from: retrofit2.DefaultCallAdapterFactory$1, reason: invalid class name */
+    /* INFO: renamed from: retrofit2.DefaultCallAdapterFactory$1, reason: invalid class name */
     class AnonymousClass1 implements CallAdapter<Object, Call<?>> {
         final /* synthetic */ Executor val$executor;
         final /* synthetic */ Type val$responseType;
@@ -68,7 +68,7 @@ final class DefaultCallAdapterFactory extends CallAdapter.Factory {
             this.delegate.enqueue(new AnonymousClass1(callback));
         }
 
-        /* JADX INFO: renamed from: retrofit2.DefaultCallAdapterFactory$ExecutorCallbackCall$1, reason: invalid class name */
+        /* INFO: renamed from: retrofit2.DefaultCallAdapterFactory$ExecutorCallbackCall$1, reason: invalid class name */
         class AnonymousClass1 implements Callback<T> {
             final /* synthetic */ Callback val$callback;
 
@@ -81,7 +81,7 @@ final class DefaultCallAdapterFactory extends CallAdapter.Factory {
                 ExecutorCallbackCall.this.callbackExecutor.execute(new DefaultCallAdapterFactory$ExecutorCallbackCall$1$$ExternalSyntheticLambda0(this, this.val$callback, response));
             }
 
-            /* JADX INFO: renamed from: lambda$onResponse$0$retrofit2-DefaultCallAdapterFactory$ExecutorCallbackCall$1, reason: not valid java name */
+            /* INFO: renamed from: lambda$onResponse$0$retrofit2-DefaultCallAdapterFactory$ExecutorCallbackCall$1, reason: not valid java name */
             /* synthetic */ void m6577xddacc936(Callback callback, Response response) {
                 if (ExecutorCallbackCall.this.delegate.isCanceled()) {
                     callback.onFailure(ExecutorCallbackCall.this, new IOException("Canceled"));
@@ -90,7 +90,7 @@ final class DefaultCallAdapterFactory extends CallAdapter.Factory {
                 }
             }
 
-            /* JADX INFO: renamed from: lambda$onFailure$1$retrofit2-DefaultCallAdapterFactory$ExecutorCallbackCall$1, reason: not valid java name */
+            /* INFO: renamed from: lambda$onFailure$1$retrofit2-DefaultCallAdapterFactory$ExecutorCallbackCall$1, reason: not valid java name */
             /* synthetic */ void m6576x714e864(Callback callback, Throwable th) {
                 callback.onFailure(ExecutorCallbackCall.this, th);
             }

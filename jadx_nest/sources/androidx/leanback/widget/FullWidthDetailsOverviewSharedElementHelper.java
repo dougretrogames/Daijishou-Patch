@@ -9,7 +9,7 @@ import androidx.leanback.transition.TransitionHelper;
 import androidx.leanback.transition.TransitionListener;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FullWidthDetailsOverviewSharedElementHelper extends FullWidthDetailsOverviewRowPresenter.Listener {
     static final boolean DEBUG = false;
     private static final long DEFAULT_TIMEOUT = 5000;
@@ -78,7 +78,7 @@ public class FullWidthDetailsOverviewSharedElementHelper extends FullWidthDetail
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewSharedElementHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewSharedElementHelper$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -97,7 +97,7 @@ public class FullWidthDetailsOverviewSharedElementHelper extends FullWidthDetail
             FullWidthDetailsOverviewSharedElementHelper.this.startPostponedEnterTransitionInternal();
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewSharedElementHelper$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewSharedElementHelper$1$1, reason: invalid class name and collision with other inner class name */
         class C00141 extends TransitionListener {
             C00141() {
             }
@@ -113,7 +113,7 @@ public class FullWidthDetailsOverviewSharedElementHelper extends FullWidthDetail
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewSharedElementHelper$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.FullWidthDetailsOverviewSharedElementHelper$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }

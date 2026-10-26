@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Method extends GeneratedMessage implements MethodOrBuilder {
     private static final Method DEFAULT_INSTANCE;
     public static final int NAME_FIELD_NUMBER = 1;
@@ -350,7 +350,7 @@ public final class Method extends GeneratedMessage implements MethodOrBuilder {
         return this == DEFAULT_INSTANCE ? new Builder((AnonymousClass1) null) : new Builder((AnonymousClass1) null).mergeFrom(this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent parent) {
         return new Builder(parent, null);
@@ -1009,7 +1009,7 @@ public final class Method extends GeneratedMessage implements MethodOrBuilder {
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.Method$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.Method$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<Method> {
         AnonymousClass1() {
         }

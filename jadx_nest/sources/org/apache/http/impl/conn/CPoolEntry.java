@@ -8,7 +8,7 @@ import org.apache.http.conn.ManagedHttpClientConnection;
 import org.apache.http.conn.routing.HttpRoute;
 import org.apache.http.pool.PoolEntry;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class CPoolEntry extends PoolEntry<HttpRoute, ManagedHttpClientConnection> {
     private final Log log;
     private volatile boolean routeComplete;

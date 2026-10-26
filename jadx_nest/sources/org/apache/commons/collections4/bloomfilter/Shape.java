@@ -1,6 +1,6 @@
 package org.apache.commons.collections4.bloomfilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Shape {
     private static final double DENOMINATOR;
     private static final double LN_2;

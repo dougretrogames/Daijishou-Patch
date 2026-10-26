@@ -43,12 +43,12 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.MainCoroutineDispatcher;
 
-/* JADX INFO: compiled from: SplashScreenActivity.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: SplashScreenActivity.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0007\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u000b\u001a\u00020\fH\u0002J\u0010\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010H\u0002J\u000e\u0010\u0011\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u0010J\u0012\u0010\u0012\u001a\u00020\f2\b\u0010\u0013\u001a\u0004\u0018\u00010\u0014H\u0014J\b\u0010\u0015\u001a\u00020\fH\u0014R\u001b\u0010\u0003\u001a\u00020\u00048FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0005\u0010\u0006R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0016"}, d2 = {"Lcom/magneticchen/daijishou/activities/SplashScreenActivity;", "Lcom/magneticchen/daijishou/activities/abstract_classes/DaijishouAppCompatActivity;", "()V", "daijishouLibrarySynchronization", "Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel;", "getDaijishouLibrarySynchronization", "()Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel;", "daijishouLibrarySynchronization$delegate", "Lkotlin/Lazy;", "startTimestamp", "", "finishWithDelay", "", "isFirstInstall", "", "context", "Landroid/content/Context;", "isInstallFromUpdate", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onStart", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class SplashScreenActivity extends DaijishouAppCompatActivity {
 
-    /* JADX INFO: renamed from: daijishouLibrarySynchronization$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: daijishouLibrarySynchronization$delegate, reason: from kotlin metadata */
     private final Lazy daijishouLibrarySynchronization;
     private long startTimestamp;
 
@@ -109,8 +109,8 @@ public final class SplashScreenActivity extends DaijishouAppCompatActivity {
         LifecycleOwnerKt.getLifecycleScope(this).launchWhenStarted(new AnonymousClass1(textView2, this, this, null));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SplashScreenActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1, reason: invalid class name */
+    /* INFO: compiled from: SplashScreenActivity.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1", f = "SplashScreenActivity.kt", i = {}, l = {116, 119}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -119,7 +119,7 @@ public final class SplashScreenActivity extends DaijishouAppCompatActivity {
         int label;
         final /* synthetic */ SplashScreenActivity this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(TextView textView, SplashScreenActivity splashScreenActivity, SplashScreenActivity splashScreenActivity2, Continuation<?> continuation) {
             super(2, continuation);
             this.$descriptionTextView = textView;
@@ -145,8 +145,8 @@ public final class SplashScreenActivity extends DaijishouAppCompatActivity {
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: SplashScreenActivity.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: SplashScreenActivity.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$1", f = "SplashScreenActivity.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         static final class C00531 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -154,7 +154,7 @@ public final class SplashScreenActivity extends DaijishouAppCompatActivity {
             int label;
             final /* synthetic */ SplashScreenActivity this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             C00531(TextView textView, SplashScreenActivity splashScreenActivity, Continuation<?> continuation) {
                 super(2, continuation);
                 this.$descriptionTextView = textView;
@@ -216,8 +216,8 @@ public final class SplashScreenActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: SplashScreenActivity.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$2, reason: invalid class name */
+        /* INFO: compiled from: SplashScreenActivity.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$2", f = "SplashScreenActivity.kt", i = {}, l = {198}, m = "invokeSuspendImpl", n = {}, s = {})
         static final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -226,7 +226,7 @@ public final class SplashScreenActivity extends DaijishouAppCompatActivity {
             int label;
             final /* synthetic */ SplashScreenActivity this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(SplashScreenActivity splashScreenActivity, SplashScreenActivity splashScreenActivity2, TextView textView, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = splashScreenActivity;
@@ -272,8 +272,8 @@ public final class SplashScreenActivity extends DaijishouAppCompatActivity {
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: Access modifiers changed from: private */
-            /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+            /* INFO: Access modifiers changed from: private */
+            /* WARN: Code duplicated, block: B:7:0x0014  */
             public static final Object invokeSuspendImpl$finalize(SplashScreenActivity splashScreenActivity, TextView textView, Continuation<?> continuation) throws Throwable {
                 SplashScreenActivity$onCreate$1$2$finalize$1 splashScreenActivity$onCreate$1$2$finalize$1;
                 if (continuation instanceof SplashScreenActivity$onCreate$1$2$finalize$1) {
@@ -314,7 +314,7 @@ public final class SplashScreenActivity extends DaijishouAppCompatActivity {
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: Access modifiers changed from: private */
+            /* INFO: Access modifiers changed from: private */
             public static final void invokeSuspendImpl$finalize$launch(SplashScreenActivity splashScreenActivity) {
                 splashScreenActivity.setResult(-1);
                 splashScreenActivity.finishWithDelay();
@@ -433,7 +433,7 @@ public final class SplashScreenActivity extends DaijishouAppCompatActivity {
         ((DaijishouApplication) application).notifyServicesUpgradeChance();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void finishWithDelay() {
         long jCurrentTimeMillis = ((long) 1500) - (System.currentTimeMillis() - this.startTimestamp);
         if (jCurrentTimeMillis > 0) {
@@ -443,7 +443,7 @@ public final class SplashScreenActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void finishWithDelay$lambda$0(SplashScreenActivity this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.finish();

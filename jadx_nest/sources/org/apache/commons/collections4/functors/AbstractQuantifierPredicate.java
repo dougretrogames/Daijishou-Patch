@@ -3,7 +3,7 @@ package org.apache.commons.collections4.functors;
 import java.io.Serializable;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractQuantifierPredicate<T> extends AbstractPredicate<T> implements PredicateDecorator<T>, Serializable {
     private static final long serialVersionUID = -3094696765038308799L;
     protected final Predicate<? super T>[] iPredicates;

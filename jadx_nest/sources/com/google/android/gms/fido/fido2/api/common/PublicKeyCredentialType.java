@@ -3,15 +3,15 @@ package com.google.android.gms.fido.fido2.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public enum PublicKeyCredentialType implements Parcelable {
     PUBLIC_KEY("public-key");
 
     public static final Parcelable.Creator<PublicKeyCredentialType> CREATOR = new zzaq();
     private final String zzb = "public-key";
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class UnsupportedPublicKeyCredTypeException extends Exception {
         public UnsupportedPublicKeyCredTypeException(String str) {
             super(str);

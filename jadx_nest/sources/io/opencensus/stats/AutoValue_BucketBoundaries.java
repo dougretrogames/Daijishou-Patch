@@ -2,7 +2,7 @@ package io.opencensus.stats;
 
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_BucketBoundaries extends BucketBoundaries {
     private final List<Double> boundaries;
 

@@ -10,7 +10,7 @@ import org.apache.commons.collections4.comparators.NullComparator;
 import org.apache.commons.collections4.comparators.ReverseComparator;
 import org.apache.commons.collections4.comparators.TransformingComparator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ComparatorUtils {
     private static final Comparator[] EMPTY_COMPARATOR_ARRAY = new Comparator[0];
     public static final Comparator NATURAL_COMPARATOR = ComparableComparator.comparableComparator();

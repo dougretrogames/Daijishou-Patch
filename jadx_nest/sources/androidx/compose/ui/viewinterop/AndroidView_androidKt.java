@@ -37,14 +37,14 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: AndroidView.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AndroidView.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u001ay\u0010\u0007\u001a\u00020\u0003\"\b\b\u0000\u0010\b*\u00020\u00022\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u0002H\b0\u00012\b\b\u0002\u0010\u000b\u001a\u00020\f2\u0016\b\u0002\u0010\r\u001a\u0010\u0012\u0004\u0012\u0002H\b\u0012\u0004\u0012\u00020\u0003\u0018\u00010\u00012\u0014\b\u0002\u0010\u000e\u001a\u000e\u0012\u0004\u0012\u0002H\b\u0012\u0004\u0012\u00020\u00030\u00012\u0014\b\u0002\u0010\u000f\u001a\u000e\u0012\u0004\u0012\u0002H\b\u0012\u0004\u0012\u00020\u00030\u0001H\u0007¢\u0006\u0002\u0010\u0010\u001aK\u0010\u0007\u001a\u00020\u0003\"\b\b\u0000\u0010\b*\u00020\u00022\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u0002H\b0\u00012\b\b\u0002\u0010\u000b\u001a\u00020\f2\u0014\b\u0002\u0010\u000f\u001a\u000e\u0012\u0004\u0012\u0002H\b\u0012\u0004\u0012\u00020\u00030\u0001H\u0007¢\u0006\u0002\u0010\u0011\u001a1\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00140\u0013\"\b\b\u0000\u0010\b*\u00020\u00022\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u0002H\b0\u0001H\u0003¢\u0006\u0002\u0010\u0015\u001a\u001c\u0010\u0016\u001a\b\u0012\u0004\u0012\u0002H\b0\u0017\"\b\b\u0000\u0010\b*\u00020\u0002*\u00020\u0014H\u0002\u001a^\u0010\u0018\u001a\u00020\u0003\"\b\b\u0000\u0010\b*\u00020\u0002*\b\u0012\u0004\u0012\u00020\u00140\u00192\u0006\u0010\u000b\u001a\u00020\f2\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%H\u0002ø\u0001\u0000¢\u0006\u0004\b&\u0010'\"\"\u0010\u0000\u001a\u0013\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001¢\u0006\u0002\b\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006("}, d2 = {"NoOpUpdate", "Lkotlin/Function1;", "Landroid/view/View;", "", "Lkotlin/ExtensionFunctionType;", "getNoOpUpdate", "()Lkotlin/jvm/functions/Function1;", "AndroidView", ExifInterface.GPS_DIRECTION_TRUE, "factory", "Landroid/content/Context;", "modifier", "Landroidx/compose/ui/Modifier;", "onReset", "onRelease", ConfigConstants.CONFIG_KEY_UPDATE, "(Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V", "(Lkotlin/jvm/functions/Function1;Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;II)V", "createAndroidViewNodeFactory", "Lkotlin/Function0;", "Landroidx/compose/ui/node/LayoutNode;", "(Lkotlin/jvm/functions/Function1;Landroidx/compose/runtime/Composer;I)Lkotlin/jvm/functions/Function0;", "requireViewFactoryHolder", "Landroidx/compose/ui/viewinterop/ViewFactoryHolder;", "updateViewHolderParams", "Landroidx/compose/runtime/Updater;", "compositeKeyHash", "", "density", "Landroidx/compose/ui/unit/Density;", "lifecycleOwner", "Landroidx/lifecycle/LifecycleOwner;", "savedStateRegistryOwner", "Landroidx/savedstate/SavedStateRegistryOwner;", "layoutDirection", "Landroidx/compose/ui/unit/LayoutDirection;", "compositionLocalMap", "Landroidx/compose/runtime/CompositionLocalMap;", "updateViewHolderParams-6NefGtU", "(Landroidx/compose/runtime/Composer;Landroidx/compose/ui/Modifier;ILandroidx/compose/ui/unit/Density;Landroidx/lifecycle/LifecycleOwner;Landroidx/savedstate/SavedStateRegistryOwner;Landroidx/compose/ui/unit/LayoutDirection;Landroidx/compose/runtime/CompositionLocalMap;)V", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class AndroidView_androidKt {
     private static final Function1<View, Unit> NoOpUpdate = AndroidView_androidKt$NoOpUpdate$1.INSTANCE;
 
-    /* JADX INFO: renamed from: androidx.compose.ui.viewinterop.AndroidView_androidKt$AndroidView$1, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidView.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.viewinterop.AndroidView_androidKt$AndroidView$1, reason: invalid class name */
+    /* INFO: compiled from: AndroidView.android.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function2<Composer, Integer, Unit> {
         final /* synthetic */ int $$changed;
@@ -53,8 +53,8 @@ public final class AndroidView_androidKt {
         final /* synthetic */ Modifier $modifier;
         final /* synthetic */ Function1<T, Unit> $update;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(Function1<? super Context, ? extends T> function1, Modifier modifier, Function1<? super T, Unit> function2, int i, int i2) {
             super(2);
             this.$factory = function1;
@@ -75,8 +75,8 @@ public final class AndroidView_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.viewinterop.AndroidView_androidKt$AndroidView$4, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidView.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.viewinterop.AndroidView_androidKt$AndroidView$4, reason: invalid class name */
+    /* INFO: compiled from: AndroidView.android.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass4 extends Lambda implements Function2<Composer, Integer, Unit> {
         final /* synthetic */ int $$changed;
@@ -87,8 +87,8 @@ public final class AndroidView_androidKt {
         final /* synthetic */ Function1<T, Unit> $onReset;
         final /* synthetic */ Function1<T, Unit> $update;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass4(Function1<? super Context, ? extends T> function1, Modifier modifier, Function1<? super T, Unit> function2, Function1<? super T, Unit> function3, Function1<? super T, Unit> function4, int i, int i2) {
             super(2);
             this.$factory = function1;
@@ -165,40 +165,40 @@ public final class AndroidView_androidKt {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:101:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:26:0x0049  */
-    /* JADX WARN: Code duplicated, block: B:27:0x004c  */
-    /* JADX WARN: Code duplicated, block: B:29:0x0050  */
-    /* JADX WARN: Code duplicated, block: B:31:0x0058  */
-    /* JADX WARN: Code duplicated, block: B:32:0x005b  */
-    /* JADX WARN: Code duplicated, block: B:37:0x0065  */
-    /* JADX WARN: Code duplicated, block: B:38:0x0068  */
-    /* JADX WARN: Code duplicated, block: B:40:0x006c  */
-    /* JADX WARN: Code duplicated, block: B:42:0x0074  */
-    /* JADX WARN: Code duplicated, block: B:43:0x0077  */
-    /* JADX WARN: Code duplicated, block: B:48:0x0081  */
-    /* JADX WARN: Code duplicated, block: B:49:0x0084  */
-    /* JADX WARN: Code duplicated, block: B:51:0x008a  */
-    /* JADX WARN: Code duplicated, block: B:53:0x0092  */
-    /* JADX WARN: Code duplicated, block: B:54:0x0095  */
-    /* JADX WARN: Code duplicated, block: B:59:0x00a3  */
-    /* JADX WARN: Code duplicated, block: B:64:0x00b2 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:65:0x00b4  */
-    /* JADX WARN: Code duplicated, block: B:66:0x00b9  */
-    /* JADX WARN: Code duplicated, block: B:68:0x00bc  */
-    /* JADX WARN: Code duplicated, block: B:70:0x00c0  */
-    /* JADX WARN: Code duplicated, block: B:72:0x00c5  */
-    /* JADX WARN: Code duplicated, block: B:75:0x00ce  */
-    /* JADX WARN: Code duplicated, block: B:78:0x0138  */
-    /* JADX WARN: Code duplicated, block: B:80:0x015c  */
-    /* JADX WARN: Code duplicated, block: B:83:0x0168  */
-    /* JADX WARN: Code duplicated, block: B:84:0x0173  */
-    /* JADX WARN: Code duplicated, block: B:86:0x019c  */
-    /* JADX WARN: Code duplicated, block: B:88:0x01c0  */
-    /* JADX WARN: Code duplicated, block: B:91:0x01cc  */
-    /* JADX WARN: Code duplicated, block: B:92:0x01d7  */
-    /* JADX WARN: Code duplicated, block: B:96:0x01fe  */
-    /* JADX WARN: Code duplicated, block: B:99:0x0209  */
+    /* WARN: Code duplicated, block: B:101:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:26:0x0049  */
+    /* WARN: Code duplicated, block: B:27:0x004c  */
+    /* WARN: Code duplicated, block: B:29:0x0050  */
+    /* WARN: Code duplicated, block: B:31:0x0058  */
+    /* WARN: Code duplicated, block: B:32:0x005b  */
+    /* WARN: Code duplicated, block: B:37:0x0065  */
+    /* WARN: Code duplicated, block: B:38:0x0068  */
+    /* WARN: Code duplicated, block: B:40:0x006c  */
+    /* WARN: Code duplicated, block: B:42:0x0074  */
+    /* WARN: Code duplicated, block: B:43:0x0077  */
+    /* WARN: Code duplicated, block: B:48:0x0081  */
+    /* WARN: Code duplicated, block: B:49:0x0084  */
+    /* WARN: Code duplicated, block: B:51:0x008a  */
+    /* WARN: Code duplicated, block: B:53:0x0092  */
+    /* WARN: Code duplicated, block: B:54:0x0095  */
+    /* WARN: Code duplicated, block: B:59:0x00a3  */
+    /* WARN: Code duplicated, block: B:64:0x00b2 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:65:0x00b4  */
+    /* WARN: Code duplicated, block: B:66:0x00b9  */
+    /* WARN: Code duplicated, block: B:68:0x00bc  */
+    /* WARN: Code duplicated, block: B:70:0x00c0  */
+    /* WARN: Code duplicated, block: B:72:0x00c5  */
+    /* WARN: Code duplicated, block: B:75:0x00ce  */
+    /* WARN: Code duplicated, block: B:78:0x0138  */
+    /* WARN: Code duplicated, block: B:80:0x015c  */
+    /* WARN: Code duplicated, block: B:83:0x0168  */
+    /* WARN: Code duplicated, block: B:84:0x0173  */
+    /* WARN: Code duplicated, block: B:86:0x019c  */
+    /* WARN: Code duplicated, block: B:88:0x01c0  */
+    /* WARN: Code duplicated, block: B:91:0x01cc  */
+    /* WARN: Code duplicated, block: B:92:0x01d7  */
+    /* WARN: Code duplicated, block: B:96:0x01fe  */
+    /* WARN: Code duplicated, block: B:99:0x0209  */
     public static final <T extends View> void AndroidView(Function1<? super Context, ? extends T> function1, Modifier modifier, Function1<? super T, Unit> function2, Function1<? super T, Unit> function3, Function1<? super T, Unit> function4, Composer composer, int i, int i2) {
         int i3;
         Modifier modifier2;
@@ -3374,8 +3374,8 @@ public final class AndroidView_androidKt {
         return c01391;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.viewinterop.AndroidView_androidKt$createAndroidViewNodeFactory$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: AndroidView.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.viewinterop.AndroidView_androidKt$createAndroidViewNodeFactory$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: AndroidView.android.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "Landroidx/compose/ui/node/LayoutNode;", ExifInterface.GPS_DIRECTION_TRUE, "Landroid/view/View;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01391 extends Lambda implements Function0<LayoutNode> {
         final /* synthetic */ int $compositeKeyHash;
@@ -3385,8 +3385,8 @@ public final class AndroidView_androidKt {
         final /* synthetic */ CompositionContext $parentReference;
         final /* synthetic */ SaveableStateRegistry $stateRegistry;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C01391(Context context, Function1<? super Context, ? extends T> function1, CompositionContext compositionContext, SaveableStateRegistry saveableStateRegistry, int i, View view) {
             super(0);
             this.$context = context;
@@ -3397,7 +3397,7 @@ public final class AndroidView_androidKt {
             this.$ownerView = view;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final LayoutNode invoke() {
             Context context = this.$context;
@@ -3411,7 +3411,7 @@ public final class AndroidView_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: updateViewHolderParams-6NefGtU, reason: not valid java name */
+    /* INFO: renamed from: updateViewHolderParams-6NefGtU, reason: not valid java name */
     private static final <T extends View> void m3131updateViewHolderParams6NefGtU(Composer composer, Modifier modifier, int i, Density density, LifecycleOwner lifecycleOwner, SavedStateRegistryOwner savedStateRegistryOwner, LayoutDirection layoutDirection, CompositionLocalMap compositionLocalMap) {
         Updater.m67setimpl(composer, compositionLocalMap, ComposeUiNode.INSTANCE.getSetResolvedCompositionLocals());
         Updater.m67setimpl(composer, modifier, AndroidView_androidKt$updateViewHolderParams$1.INSTANCE);
@@ -3426,7 +3426,7 @@ public final class AndroidView_androidKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final <T extends View> ViewFactoryHolder<T> requireViewFactoryHolder(LayoutNode layoutNode) {
         AndroidViewHolder interopViewFactoryHolder = layoutNode.getInteropViewFactoryHolder();
         if (interopViewFactoryHolder == null) {

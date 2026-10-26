@@ -19,8 +19,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: ShortcutWidgetBuilder.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ShortcutWidgetBuilder.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u0000 *2\u00020\u0001:\u0001*B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u001a\u0010\u001b\u001a\u00020\u001c2\b\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\u0006\u0010\u001f\u001a\u00020\u0013H\u0016J.\u0010 \u001a\u00020!2\b\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\u0006\u0010\u001f\u001a\u00020\u00132\u0012\u0010\"\u001a\u000e\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020!0#H\u0016J\b\u0010%\u001a\u00020!H\u0016J2\u0010&\u001a\u00020!2\b\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\b\u0010'\u001a\u0004\u0018\u00010(2\u0014\u0010)\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u001c\u0012\u0004\u0012\u00020$0#H\u0016R\u0014\u0010\u0005\u001a\u00020\u0006X\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0014\u0010\t\u001a\u00020\nX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0014\u0010\r\u001a\u00020\u000eX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00130\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0014\u001a\u00020\u0006X\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\bR\u001a\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00180\u0017X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001a¨\u0006+"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/shortcut/ShortcutWidgetBuilder;", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetBuilder;", "application", "Lcom/magneticchen/daijishou/DaijishouApplication;", "(Lcom/magneticchen/daijishou/DaijishouApplication;)V", "widgetDescriptionStringId", "", "getWidgetDescriptionStringId", "()I", "widgetIcon", "Landroid/graphics/drawable/Drawable;", "getWidgetIcon", "()Landroid/graphics/drawable/Drawable;", "widgetId", "", "getWidgetId", "()Ljava/lang/String;", "widgetInstanceIdList", "", "", "widgetNameStringId", "getWidgetNameStringId", "widgetViewModelClass", "Ljava/lang/Class;", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetViewModel;", "getWidgetViewModelClass", "()Ljava/lang/Class;", "acquireWidgetInstance", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetInstance;", "activity", "Landroidx/appcompat/app/AppCompatActivity;", "widgetInstanceId", "requestWidgetInstanceRemoval", "", "callback", "Lkotlin/Function1;", "", "reset", "startWidgetInstanceCreation", "data", "", "submitWidgetInstance", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class ShortcutWidgetBuilder extends WidgetBuilder {
     public static final long SHORTCUT_APPS_PAGE_ID = 4;
@@ -39,7 +39,7 @@ public final class ShortcutWidgetBuilder extends WidgetBuilder {
     public void reset() {
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public ShortcutWidgetBuilder(DaijishouApplication application) {
         super(application);
         Intrinsics.checkNotNullParameter(application, "application");
@@ -86,15 +86,15 @@ public final class ShortcutWidgetBuilder extends WidgetBuilder {
         onCancelListener.show(activity.getSupportFragmentManager(), "shortcut_widget_create");
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.shortcut.ShortcutWidgetBuilder$startWidgetInstanceCreation$1, reason: invalid class name */
-    /* JADX INFO: compiled from: ShortcutWidgetBuilder.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.shortcut.ShortcutWidgetBuilder$startWidgetInstanceCreation$1, reason: invalid class name */
+    /* INFO: compiled from: ShortcutWidgetBuilder.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ Function1<? super WidgetInstance, Boolean> $submitWidgetInstance;
         final /* synthetic */ ShortcutWidgetBuilder this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(Function1<? super WidgetInstance, Boolean> function1, ShortcutWidgetBuilder shortcutWidgetBuilder) {
             super(1);
             this.$submitWidgetInstance = function1;
@@ -118,14 +118,14 @@ public final class ShortcutWidgetBuilder extends WidgetBuilder {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.shortcut.ShortcutWidgetBuilder$startWidgetInstanceCreation$2, reason: invalid class name */
-    /* JADX INFO: compiled from: ShortcutWidgetBuilder.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.shortcut.ShortcutWidgetBuilder$startWidgetInstanceCreation$2, reason: invalid class name */
+    /* INFO: compiled from: ShortcutWidgetBuilder.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda<Unit> implements Function0<Unit> {
         final /* synthetic */ Function1<? super WidgetInstance, Boolean> $submitWidgetInstance;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass2(Function1<? super WidgetInstance, Boolean> function1) {
             super(0);
             this.$submitWidgetInstance = function1;
@@ -137,7 +137,7 @@ public final class ShortcutWidgetBuilder extends WidgetBuilder {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             this.$submitWidgetInstance.invoke(null);
         }

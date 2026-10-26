@@ -22,7 +22,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class FontProvider {
     private static final LruCache<ProviderCacheKey, ProviderInfo> sProviderCache = new LruCache<>(2);
     private static final Comparator<byte[]> sByteArrayComparator = new FontProvider$$ExternalSyntheticLambda0();

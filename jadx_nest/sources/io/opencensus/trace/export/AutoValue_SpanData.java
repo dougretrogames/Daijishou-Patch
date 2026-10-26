@@ -9,7 +9,7 @@ import io.opencensus.trace.SpanId;
 import io.opencensus.trace.Status;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_SpanData extends SpanData {
     private final SpanData.TimedEvents<Annotation> annotations;
     private final SpanData.Attributes attributes;

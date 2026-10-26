@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BoundedIterator<E> implements Iterator<E> {
     private final Iterator<? extends E> iterator;
     private final long max;

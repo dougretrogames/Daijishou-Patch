@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable(containerOf = {"R", "C", ExifInterface.GPS_MEASUREMENT_INTERRUPTED})
 @ElementTypesAreNonnullByDefault
 final class SparseImmutableTable<R, C, V> extends RegularImmutableTable<R, C, V> {
@@ -16,7 +16,7 @@ final class SparseImmutableTable<R, C, V> extends RegularImmutableTable<R, C, V>
     private final ImmutableMap<C, ImmutableMap<R, V>> columnMap;
     private final ImmutableMap<R, ImmutableMap<C, V>> rowMap;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     SparseImmutableTable(ImmutableList<Table.Cell<R, C, V>> immutableList, ImmutableSet<R> immutableSet, ImmutableSet<C> immutableSet2) {
         ImmutableMap immutableMapIndexMap = Maps.indexMap(immutableSet);
         LinkedHashMap linkedHashMapNewLinkedHashMap = Maps.newLinkedHashMap();

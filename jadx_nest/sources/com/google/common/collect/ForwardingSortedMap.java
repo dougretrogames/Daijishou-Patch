@@ -6,10 +6,10 @@ import java.util.NoSuchElementException;
 import java.util.SortedMap;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ForwardingSortedMap<K, V> extends ForwardingMap<K, V> implements SortedMap<K, V> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingMap, com.google.common.collect.ForwardingObject
     public abstract SortedMap<K, V> delegate();
 
@@ -62,7 +62,7 @@ public abstract class ForwardingSortedMap<K, V> extends ForwardingMap<K, V> impl
         return comparator.compare(o1, o2);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.ForwardingMap
     protected boolean standardContainsKey(@CheckForNull Object key) {
         try {

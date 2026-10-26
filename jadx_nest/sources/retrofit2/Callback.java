@@ -1,6 +1,6 @@
 package retrofit2;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public interface Callback<T> {
     void onFailure(Call<T> call, Throwable th);
 

@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class Joiner {
     private final String separator;
@@ -93,11 +93,11 @@ public class Joiner {
         return join(iterable(first, second, rest));
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Joiner$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Joiner$1, reason: invalid class name */
     class AnonymousClass1 extends Joiner {
         final /* synthetic */ String val$nullText;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Joiner prototype, final String val$nullText) {
             super(prototype, null);
             this.val$nullText = val$nullText;
@@ -124,7 +124,7 @@ public class Joiner {
         return new AnonymousClass1(this, nullText);
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Joiner$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Joiner$2, reason: invalid class name */
     class AnonymousClass2 extends Joiner {
         AnonymousClass2(Joiner prototype) {
             super(prototype, null);
@@ -252,7 +252,7 @@ public class Joiner {
         return part instanceof CharSequence ? (CharSequence) part : part.toString();
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Joiner$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Joiner$3, reason: invalid class name */
     class AnonymousClass3 extends AbstractList<Object> {
         final /* synthetic */ Object val$first;
         final /* synthetic */ Object[] val$rest;

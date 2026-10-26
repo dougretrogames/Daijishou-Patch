@@ -1,6 +1,6 @@
 package com.bumptech.glide.integration.recyclerview;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class R {
 
     public static final class anim {

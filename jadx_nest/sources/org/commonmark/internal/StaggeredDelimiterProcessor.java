@@ -6,7 +6,7 @@ import org.commonmark.node.Text;
 import org.commonmark.parser.delimiter.DelimiterProcessor;
 import org.commonmark.parser.delimiter.DelimiterRun;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class StaggeredDelimiterProcessor implements DelimiterProcessor {
     private final char delim;
     private int minLength = 0;

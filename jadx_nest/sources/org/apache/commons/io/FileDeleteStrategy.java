@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileDeleteStrategy {
     private final String name;
     public static final FileDeleteStrategy NORMAL = new FileDeleteStrategy("Normal");

@@ -8,8 +8,8 @@ import kotlin.Metadata;
 import kotlin.annotation.AnnotationRetention;
 import kotlin.annotation.AnnotationTarget;
 
-/* JADX INFO: compiled from: SkipQueryVerification.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: SkipQueryVerification.kt */
+/* INFO: loaded from: classes3.dex */
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Metadata(d1 = {"\u0000\n\n\u0002\u0018\u0002\n\u0002\u0010\u001b\n\u0000\b\u0087\u0002\u0018\u00002\u00020\u0001B\u0000¨\u0006\u0002"}, d2 = {"Landroidx/room/SkipQueryVerification;", "", "room-common"}, k = 1, mv = {1, 8, 0}, xi = 48)
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.FUNCTION, AnnotationTarget.CLASS})

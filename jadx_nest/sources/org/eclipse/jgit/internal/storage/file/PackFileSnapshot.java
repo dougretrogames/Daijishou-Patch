@@ -8,7 +8,7 @@ import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.util.Equality;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PackFileSnapshot extends FileSnapshot {
     private static final ObjectId MISSING_CHECKSUM = ObjectId.zeroId();
     private AnyObjectId checksum;

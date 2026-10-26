@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Objects;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class NullIsTruePredicate<T> extends AbstractPredicate<T> implements PredicateDecorator<T>, Serializable {
     private static final long serialVersionUID = -7625133768987126273L;
     private final Predicate<? super T> iPredicate;

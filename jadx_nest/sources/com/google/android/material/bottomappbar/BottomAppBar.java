@@ -46,7 +46,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedBehavior {
     private static final int FAB_ALIGNMENT_ANIM_DURATION_DEFAULT = 300;
     private static final float FAB_ALIGNMENT_ANIM_EASING_MIDPOINT = 0.2f;
@@ -120,7 +120,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
     public void setTitle(CharSequence charSequence) {
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }
@@ -135,7 +135,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$2, reason: invalid class name */
     class AnonymousClass2 implements TransformationCallback<FloatingActionButton> {
         AnonymousClass2() {
         }
@@ -172,7 +172,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         this(context, attributeSet, R.attr.bottomAppBarStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public BottomAppBar(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -225,7 +225,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         ViewUtils.doOnApplyWindowInsets(this, attributeSet, i, i2, new AnonymousClass3());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$3, reason: invalid class name */
     class AnonymousClass3 implements ViewUtils.OnApplyWindowInsetsListener {
         AnonymousClass3() {
         }
@@ -302,7 +302,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void updateFabAnchorGravity(BottomAppBar bottomAppBar, View view) {
         CoordinatorLayout.LayoutParams layoutParams = (CoordinatorLayout.LayoutParams) view.getLayoutParams();
         layoutParams.anchorGravity = 17;
@@ -462,7 +462,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         arrayList.remove(animationListener);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void dispatchAnimationStart() {
         ArrayList<AnimationListener> arrayList;
         int i = this.animatingModeChangeCounter;
@@ -476,7 +476,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void dispatchAnimationEnd() {
         ArrayList<AnimationListener> arrayList;
         int i = this.animatingModeChangeCounter - 1;
@@ -529,7 +529,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         this.modeAnimator.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$4, reason: invalid class name */
     class AnonymousClass4 extends AnimatorListenerAdapter {
         AnonymousClass4() {
         }
@@ -546,7 +546,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public FloatingActionButton findDependentFab() {
         View viewFindDependentView = findDependentView();
         if (viewFindDependentView instanceof FloatingActionButton) {
@@ -555,7 +555,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public View findDependentView() {
         if (!(getParent() instanceof CoordinatorLayout)) {
             return null;
@@ -582,7 +582,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         floatingActionButtonFindDependentFab.hide(new AnonymousClass5(i));
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$5, reason: invalid class name */
     class AnonymousClass5 extends FloatingActionButton.OnVisibilityChangedListener {
         final /* synthetic */ int val$targetMode;
 
@@ -596,7 +596,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
             floatingActionButton.show(new AnonymousClass1());
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$5$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$5$1, reason: invalid class name */
         class AnonymousClass1 extends FloatingActionButton.OnVisibilityChangedListener {
             AnonymousClass1() {
             }
@@ -627,7 +627,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         return drawableWrap;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void maybeAnimateMenuView(int i, boolean z) {
         if (!ViewCompat.isLaidOut(this)) {
             this.menuAnimatingWithFabAlignmentMode = false;
@@ -651,7 +651,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         this.menuAnimator.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$6, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$6, reason: invalid class name */
     class AnonymousClass6 extends AnimatorListenerAdapter {
         AnonymousClass6() {
         }
@@ -691,7 +691,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$7, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$7, reason: invalid class name */
     class AnonymousClass7 extends AnimatorListenerAdapter {
         public boolean cancelled;
         final /* synthetic */ ActionMenuView val$actionMenuView;
@@ -729,7 +729,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         return viewFindDependentView != null ? (-((getMeasuredHeight() + getBottomInset()) - viewFindDependentView.getMeasuredHeight())) / 2 : 0;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public float getFabTranslationX(int i) {
         int measuredWidth;
         boolean zIsLayoutRtl = ViewUtils.isLayoutRtl(this);
@@ -746,7 +746,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         return ((getMeasuredWidth() / 2) - (i2 + measuredWidth)) * (zIsLayoutRtl ? -1 : 1);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public float getFabTranslationX() {
         return getFabTranslationX(this.fabAlignmentMode);
     }
@@ -765,7 +765,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         translateActionMenuView(actionMenuView, i, z, false);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$8, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$8, reason: invalid class name */
     class AnonymousClass8 implements Runnable {
         final /* synthetic */ ActionMenuView val$actionMenuView;
         final /* synthetic */ int val$fabAlignmentMode;
@@ -784,7 +784,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void translateActionMenuView(ActionMenuView actionMenuView, int i, boolean z, boolean z2) {
         AnonymousClass8 anonymousClass8 = new AnonymousClass8(actionMenuView, i, z);
         if (z2) {
@@ -822,7 +822,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         return measuredWidth - ((right + i3) + dimensionPixelOffset);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void cancelAnimations() {
         Animator animator = this.menuAnimator;
         if (animator != null) {
@@ -848,12 +848,12 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         setActionMenuViewPosition();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public BottomAppBarTopEdgeTreatment getTopEdgeTreatment() {
         return (BottomAppBarTopEdgeTreatment) this.materialShapeDrawable.getShapeAppearanceModel().getTopEdge();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void setCutoutStateAndTranslateFab() {
         getTopEdgeTreatment().setHorizontalOffset(getFabTranslationX());
         this.materialShapeDrawable.setInterpolation((this.fabAttached && isFabVisibleOrWillBeShown() && this.fabAnchorMode == 1) ? 1.0f : 0.0f);
@@ -864,7 +864,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void setActionMenuViewPosition() {
         ActionMenuView actionMenuView = getActionMenuView();
         if (actionMenuView == null || this.menuAnimator != null) {
@@ -878,14 +878,14 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void addFabAnimationListeners(FloatingActionButton floatingActionButton) {
         floatingActionButton.addOnHideAnimationListener(this.fabAnimationListener);
         floatingActionButton.addOnShowAnimationListener(new AnonymousClass9());
         floatingActionButton.addTransformationCallback(this.fabTransformationCallback);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$9, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$9, reason: invalid class name */
     class AnonymousClass9 extends AnimatorListenerAdapter {
         AnonymousClass9() {
         }
@@ -900,17 +900,17 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getBottomInset() {
         return this.bottomInset;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getRightInset() {
         return this.rightInset;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getLeftInset() {
         return this.leftInset;
     }
@@ -938,7 +938,7 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
         private int originalBottomMargin;
         private WeakReference<BottomAppBar> viewRef;
 
-        /* JADX INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$Behavior$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$Behavior$1, reason: invalid class name */
         class AnonymousClass1 implements View.OnLayoutChangeListener {
             AnonymousClass1() {
             }
@@ -1063,12 +1063,12 @@ public class BottomAppBar extends Toolbar implements CoordinatorLayout.AttachedB
             parcel.writeInt(this.fabAttached ? 1 : 0);
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.bottomappbar.BottomAppBar$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);

@@ -1,6 +1,6 @@
 package androidx.leanback.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class StaggeredGridDefault extends StaggeredGrid {
     StaggeredGridDefault() {
     }
@@ -85,8 +85,8 @@ final class StaggeredGridDefault extends StaggeredGrid {
         return Integer.MAX_VALUE;
     }
 
-    /* JADX WARN: Code duplicated, block: B:16:0x0036  */
-    /* JADX WARN: Code duplicated, block: B:30:0x0071  */
+    /* WARN: Code duplicated, block: B:16:0x0036  */
+    /* WARN: Code duplicated, block: B:30:0x0071  */
     @Override // androidx.leanback.widget.Grid
     public int findRowMax(boolean z, int i, int[] iArr) {
         int i2;
@@ -152,8 +152,8 @@ final class StaggeredGridDefault extends StaggeredGrid {
         return edge;
     }
 
-    /* JADX WARN: Code duplicated, block: B:16:0x0045  */
-    /* JADX WARN: Code duplicated, block: B:30:0x0070  */
+    /* WARN: Code duplicated, block: B:16:0x0045  */
+    /* WARN: Code duplicated, block: B:30:0x0070  */
     @Override // androidx.leanback.widget.Grid
     public int findRowMin(boolean z, int i, int[] iArr) {
         int size;

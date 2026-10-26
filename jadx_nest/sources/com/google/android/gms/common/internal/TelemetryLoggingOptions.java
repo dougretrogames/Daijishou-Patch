@@ -3,13 +3,13 @@ package com.google.android.gms.common.internal;
 import android.os.Bundle;
 import com.google.android.gms.common.api.Api;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public class TelemetryLoggingOptions implements Api.ApiOptions.Optional {
     public static final TelemetryLoggingOptions zaa = builder().build();
     private final String zab;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static class Builder {
         private String zaa;
 

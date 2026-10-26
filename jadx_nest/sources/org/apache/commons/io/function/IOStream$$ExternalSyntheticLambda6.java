@@ -2,8 +2,8 @@ package org.apache.commons.io.function;
 
 import java.util.function.Predicate;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class IOStream$$ExternalSyntheticLambda6 implements Predicate {
     public final /* synthetic */ IOPredicate f$0;
 

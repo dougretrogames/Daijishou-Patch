@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class BlockSource implements AutoCloseable {
     public void adviseSequentialRead(long j, long j2) {
     }
@@ -17,7 +17,7 @@ public abstract class BlockSource implements AutoCloseable {
 
     public abstract long size() throws IOException;
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.io.BlockSource$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.io.BlockSource$1, reason: invalid class name */
     class AnonymousClass1 extends BlockSource {
         private final /* synthetic */ byte[] val$content;
 
@@ -54,7 +54,7 @@ public abstract class BlockSource implements AutoCloseable {
         return from(fileInputStream.getChannel());
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.io.BlockSource$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.io.BlockSource$2, reason: invalid class name */
     class AnonymousClass2 extends BlockSource {
         private final /* synthetic */ FileChannel val$ch;
 

@@ -23,7 +23,7 @@ import org.eclipse.jgit.lib.internal.BooleanTriState;
 import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MergeTools {
     private final MergeToolConfig config;
     private final FS fs;
@@ -85,11 +85,11 @@ public class MergeTools {
         return Optional.of(merge(fileElement, fileElement2, fileElement3, fileElement4, file, tool));
     }
 
-    /* JADX WARN: Code duplicated, block: B:49:0x0088  */
-    /* JADX WARN: Code duplicated, block: B:51:0x008d  */
-    /* JADX WARN: Code duplicated, block: B:53:0x0095  */
-    /* JADX WARN: Code duplicated, block: B:55:0x009d  */
-    /* JADX WARN: Code duplicated, block: B:58:0x00a8 A[ADDED_TO_REGION] */
+    /* WARN: Code duplicated, block: B:49:0x0088  */
+    /* WARN: Code duplicated, block: B:51:0x008d  */
+    /* WARN: Code duplicated, block: B:53:0x0095  */
+    /* WARN: Code duplicated, block: B:55:0x009d  */
+    /* WARN: Code duplicated, block: B:58:0x00a8 A[ADDED_TO_REGION] */
     public FS.ExecutionResult merge(FileElement fileElement, FileElement fileElement2, FileElement fileElement3, FileElement fileElement4, File file, ExternalMergeTool externalMergeTool) throws Throwable {
         File file2;
         FS.ExecutionResult executionResult;

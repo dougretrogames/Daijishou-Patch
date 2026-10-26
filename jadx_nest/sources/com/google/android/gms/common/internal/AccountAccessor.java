@@ -5,8 +5,8 @@ import android.os.Binder;
 import android.os.RemoteException;
 import android.util.Log;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public class AccountAccessor extends IAccountAccessor.Stub {
     public static Account getAccountBinderSafe(IAccountAccessor iAccountAccessor) {
         if (iAccountAccessor == null) {

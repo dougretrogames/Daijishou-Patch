@@ -3,7 +3,7 @@ package androidx.transition;
 import android.os.Build;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewUtilsApi23 extends ViewUtilsApi22 {
     private static boolean sTryHiddenSetTransitionVisibility = true;
 

@@ -7,7 +7,7 @@ import java.util.TimeZone;
 import org.eclipse.jgit.lib.PersonIdent;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class GitDateFormatter {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$util$GitDateFormatter$Format;
     private DateFormat dateTimeInstance;
@@ -25,7 +25,7 @@ public class GitDateFormatter {
         LOCALE,
         LOCALELOCAL;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Format[] valuesCustom() {
             Format[] formatArrValuesCustom = values();
             int length = formatArrValuesCustom.length;

@@ -13,7 +13,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FileLoader<Data> implements ModelLoader<File, Data> {
     private static final String TAG = "FileLoader";
     private final FileOpener<Data> fileOpener;
@@ -54,7 +54,7 @@ public class FileLoader<Data> implements ModelLoader<File, Data> {
             this.opener = fileOpener;
         }
 
-        /* JADX WARN: Type inference failed for: r3v3, types: [Data, java.lang.Object] */
+        /* WARN: Type inference failed for: r3v3, types: [Data, java.lang.Object] */
         @Override // com.bumptech.glide.load.data.DataFetcher
         public void loadData(Priority priority, DataFetcher.DataCallback<? super Data> dataCallback) {
             try {
@@ -110,12 +110,12 @@ public class FileLoader<Data> implements ModelLoader<File, Data> {
 
     public static class StreamFactory extends Factory<InputStream> {
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.model.FileLoader$StreamFactory$1, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.load.model.FileLoader$StreamFactory$1, reason: invalid class name */
         class AnonymousClass1 implements FileOpener<InputStream> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // com.bumptech.glide.load.model.FileLoader.FileOpener
             public InputStream open(File file) throws FileNotFoundException {
                 return new FileInputStream(file);
@@ -139,12 +139,12 @@ public class FileLoader<Data> implements ModelLoader<File, Data> {
 
     public static class FileDescriptorFactory extends Factory<ParcelFileDescriptor> {
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.model.FileLoader$FileDescriptorFactory$1, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.load.model.FileLoader$FileDescriptorFactory$1, reason: invalid class name */
         class AnonymousClass1 implements FileOpener<ParcelFileDescriptor> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // com.bumptech.glide.load.model.FileLoader.FileOpener
             public ParcelFileDescriptor open(File file) throws FileNotFoundException {
                 return ParcelFileDescriptor.open(file, 268435456);

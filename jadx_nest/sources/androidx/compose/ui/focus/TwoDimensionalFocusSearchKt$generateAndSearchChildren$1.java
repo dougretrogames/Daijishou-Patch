@@ -5,8 +5,8 @@ import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: TwoDimensionalFocusSearch.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: TwoDimensionalFocusSearch.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\n¢\u0006\u0004\b\u0003\u0010\u0004"}, d2 = {"<anonymous>", "", "Landroidx/compose/ui/layout/BeyondBoundsLayout$BeyondBoundsScope;", "invoke", "(Landroidx/compose/ui/layout/BeyondBoundsLayout$BeyondBoundsScope;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 8, 0}, xi = 48)
 final class TwoDimensionalFocusSearchKt$generateAndSearchChildren$1 extends Lambda implements Function1<BeyondBoundsLayout.BeyondBoundsScope, Boolean> {
     final /* synthetic */ int $direction;
@@ -14,8 +14,8 @@ final class TwoDimensionalFocusSearchKt$generateAndSearchChildren$1 extends Lamb
     final /* synthetic */ Function1<FocusTargetNode, Boolean> $onFound;
     final /* synthetic */ FocusTargetNode $this_generateAndSearchChildren;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     TwoDimensionalFocusSearchKt$generateAndSearchChildren$1(FocusTargetNode focusTargetNode, FocusTargetNode focusTargetNode2, int i, Function1<? super FocusTargetNode, Boolean> function1) {
         super(1);
         this.$this_generateAndSearchChildren = focusTargetNode;

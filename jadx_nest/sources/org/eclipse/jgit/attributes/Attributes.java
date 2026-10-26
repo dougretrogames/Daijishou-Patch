@@ -8,7 +8,7 @@ import java.util.Map;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.lib.Constants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Attributes {
     private final Map<String, Attribute> map = new LinkedHashMap();
 

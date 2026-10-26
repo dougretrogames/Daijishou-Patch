@@ -1,6 +1,6 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class ExtensionRegistryFactory {
     static final Class<?> EXTENSION_REGISTRY_CLASS = reflectExtensionRegistry();
     static final String FULL_REGISTRY_CLASS_NAME = "com.google.protobuf.ExtensionRegistry";

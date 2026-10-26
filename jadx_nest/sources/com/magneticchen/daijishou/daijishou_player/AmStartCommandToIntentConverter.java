@@ -22,8 +22,8 @@ import kotlin.text.StringsKt;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: compiled from: AmStartCommandToIntentConverter.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: AmStartCommandToIntentConverter.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\bÀ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J(\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0018\u0010\u0007\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00060\t0\b¨\u0006\n"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_player/AmStartCommandToIntentConverter;", "", "()V", "createIntentByCommandArgs", "Landroid/content/Intent;", "arguments", "", "tokenReplaceList", "", "Lkotlin/Pair;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class AmStartCommandToIntentConverter {
     public static final AmStartCommandToIntentConverter INSTANCE = new AmStartCommandToIntentConverter();
@@ -31,8 +31,8 @@ public final class AmStartCommandToIntentConverter {
     private AmStartCommandToIntentConverter() {
     }
 
-    /* JADX WARN: Code duplicated, block: B:183:0x0571  */
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Code duplicated, block: B:183:0x0571  */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public final Intent createIntentByCommandArgs(String arguments, List<Pair<String, String>> tokenReplaceList) throws URISyntaxException {
         Intent intent;
         Intent uri;

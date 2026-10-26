@@ -4,7 +4,7 @@ import com.google.api.client.util.Key;
 import java.util.Collection;
 import java.util.Collections;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AuthorizationCodeRequestUrl extends AuthorizationRequestUrl {
 
     @Key("code_challenge")

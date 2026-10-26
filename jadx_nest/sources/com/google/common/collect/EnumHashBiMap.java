@@ -12,7 +12,7 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class EnumHashBiMap<K extends Enum<K>, V> extends AbstractBiMap<K, V> {
     private static final long serialVersionUID = 0;
@@ -74,7 +74,7 @@ public final class EnumHashBiMap<K extends Enum<K>, V> extends AbstractBiMap<K, 
         this.keyTypeOrObjectUnderJ2cl = keyType;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractBiMap
     public K checkKey(K key) {
         return (K) Preconditions.checkNotNull(key);

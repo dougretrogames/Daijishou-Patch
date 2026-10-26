@@ -8,7 +8,7 @@ import androidx.transition.Transition;
 import androidx.transition.TransitionValues;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TextScale extends Transition {
     private static final String PROPNAME_SCALE = "android:textscale:scale";
 
@@ -46,7 +46,7 @@ public class TextScale extends Transition {
         return valueAnimatorOfFloat;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.TextScale$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.TextScale$1, reason: invalid class name */
     class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
         final /* synthetic */ TextView val$view;
 

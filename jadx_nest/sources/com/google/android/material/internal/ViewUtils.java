@@ -21,7 +21,7 @@ import com.google.android.material.drawable.DrawableUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ViewUtils {
     public static final int EDGE_TO_EDGE_FLAGS = 768;
 
@@ -180,7 +180,7 @@ public class ViewUtils {
         doOnApplyWindowInsets(view, new AnonymousClass1(z, z2, z3, onApplyWindowInsetsListener));
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.ViewUtils$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.ViewUtils$1, reason: invalid class name */
     class AnonymousClass1 implements OnApplyWindowInsetsListener {
         final /* synthetic */ OnApplyWindowInsetsListener val$listener;
         final /* synthetic */ boolean val$paddingBottomSystemWindowInsets;
@@ -225,7 +225,7 @@ public class ViewUtils {
         requestApplyInsetsWhenAttached(view);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.ViewUtils$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.ViewUtils$2, reason: invalid class name */
     class AnonymousClass2 implements androidx.core.view.OnApplyWindowInsetsListener {
         final /* synthetic */ RelativePadding val$initialPadding;
         final /* synthetic */ OnApplyWindowInsetsListener val$listener;
@@ -249,7 +249,7 @@ public class ViewUtils {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.ViewUtils$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.ViewUtils$3, reason: invalid class name */
     class AnonymousClass3 implements View.OnAttachStateChangeListener {
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewDetachedFromWindow(View view) {

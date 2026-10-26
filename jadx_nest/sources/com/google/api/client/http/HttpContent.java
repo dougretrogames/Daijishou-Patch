@@ -4,7 +4,7 @@ import com.google.api.client.util.StreamingContent;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface HttpContent extends StreamingContent {
     long getLength() throws IOException;
 

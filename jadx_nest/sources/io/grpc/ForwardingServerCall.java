@@ -1,6 +1,6 @@
 package io.grpc;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ForwardingServerCall<ReqT, RespT> extends PartialForwardingServerCall<ReqT, RespT> {
     @Override // io.grpc.PartialForwardingServerCall
     protected abstract ServerCall<ReqT, RespT> delegate();

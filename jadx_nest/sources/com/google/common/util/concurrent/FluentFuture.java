@@ -9,7 +9,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @DoNotMock("Use FluentFuture.from(Futures.immediate*Future) or SettableFuture")
 @ElementTypesAreNonnullByDefault
 public abstract class FluentFuture<V> extends GwtFluentFutureCatchingSpecialization<V> {

@@ -10,8 +10,8 @@ import java.util.List;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public enum Transport implements ReflectedParcelable {
     BLUETOOTH_CLASSIC("bt"),
     BLUETOOTH_LOW_ENERGY("ble"),
@@ -23,7 +23,7 @@ public enum Transport implements ReflectedParcelable {
     public static final Parcelable.Creator<Transport> CREATOR = new zza();
     private final String zzb;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class UnsupportedTransportException extends Exception {
         public UnsupportedTransportException(String str) {
             super(str);

@@ -3,7 +3,7 @@ package androidx.transition;
 import android.graphics.Matrix;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewUtilsApi21 extends ViewUtilsApi19 {
     private static boolean sTryHiddenSetAnimationMatrix = true;
     private static boolean sTryHiddenTransformMatrixToGlobal = true;

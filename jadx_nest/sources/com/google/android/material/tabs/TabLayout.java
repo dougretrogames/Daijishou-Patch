@@ -60,7 +60,7 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ViewPager.DecorView
 public class TabLayout extends HorizontalScrollView {
     private static final int ANIMATION_DURATION = 300;
@@ -178,7 +178,7 @@ public class TabLayout extends HorizontalScrollView {
         this(context, attributeSet, R.attr.tabStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public TabLayout(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -924,7 +924,7 @@ public class TabLayout extends HorizontalScrollView {
         super.onDraw(canvas);
     }
 
-    /* JADX WARN: Code duplicated, block: B:36:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:36:? A[RETURN, SYNTHETIC] */
     @Override // android.widget.HorizontalScrollView, android.widget.FrameLayout, android.view.View
     protected void onMeasure(int i, int i2) {
         int iRound = Math.round(ViewUtils.dpToPx(getContext(), getDefaultHeight()));
@@ -1004,7 +1004,7 @@ public class TabLayout extends HorizontalScrollView {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.tabs.TabLayout$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.tabs.TabLayout$1, reason: invalid class name */
     class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
         AnonymousClass1() {
         }
@@ -1158,7 +1158,7 @@ public class TabLayout extends HorizontalScrollView {
         private int position = -1;
         private int labelVisibilityMode = 1;
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         private int f33id = -1;
 
         public Object getTag() {
@@ -1360,7 +1360,7 @@ public class TabLayout extends HorizontalScrollView {
             ViewCompat.setPointerIcon(this, PointerIconCompat.getSystemIcon(getContext(), PointerIconCompat.TYPE_HAND));
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void updateBackgroundDrawable(Context context) {
             GradientDrawable gradientDrawable;
             if (TabLayout.this.tabBackgroundResId != 0) {
@@ -1391,7 +1391,7 @@ public class TabLayout extends HorizontalScrollView {
             TabLayout.this.invalidate();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void drawBackground(Canvas canvas) {
             Drawable drawable = this.baseBackgroundDrawable;
             if (drawable != null) {
@@ -1619,7 +1619,7 @@ public class TabLayout extends HorizontalScrollView {
             return frameLayout;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public BadgeDrawable getOrCreateBadge() {
             if (this.badgeDrawable == null) {
                 this.badgeDrawable = BadgeDrawable.create(getContext());
@@ -1632,12 +1632,12 @@ public class TabLayout extends HorizontalScrollView {
             throw new IllegalStateException("Unable to create badge");
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public BadgeDrawable getBadge() {
             return this.badgeDrawable;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void removeBadge() {
             if (this.badgeAnchorView != null) {
                 tryRemoveBadgeFromAnchor();
@@ -1645,7 +1645,7 @@ public class TabLayout extends HorizontalScrollView {
             this.badgeDrawable = null;
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.tabs.TabLayout$TabView$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.tabs.TabLayout$TabView$1, reason: invalid class name */
         class AnonymousClass1 implements View.OnLayoutChangeListener {
             final /* synthetic */ View val$view;
 
@@ -1743,7 +1743,7 @@ public class TabLayout extends HorizontalScrollView {
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:27:0x0064  */
+        /* WARN: Code duplicated, block: B:27:0x0064  */
         private void updateTextAndIcon(TextView textView, ImageView imageView, boolean z) {
             boolean z2;
             Tab tab = this.tab;
@@ -1804,14 +1804,14 @@ public class TabLayout extends HorizontalScrollView {
             TooltipCompat.setTooltipText(this, text);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void tryUpdateBadgeDrawableBounds(View view) {
             if (hasBadgeDrawable() && view == this.badgeAnchorView) {
                 BadgeUtils.setBadgeDrawableBounds(this.badgeDrawable, view, getCustomParentForBadge(view));
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public boolean hasBadgeDrawable() {
             return this.badgeDrawable != null;
         }
@@ -1965,7 +1965,7 @@ public class TabLayout extends HorizontalScrollView {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void jumpIndicatorToSelectedPosition() {
             jumpIndicatorToPosition(TabLayout.this.getSelectedTabPosition());
         }
@@ -1978,7 +1978,7 @@ public class TabLayout extends HorizontalScrollView {
             jumpIndicatorToPosition(TabLayout.this.indicatorPosition);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void tweenIndicatorPosition(View view, View view2, float f) {
             if (view != null && view.getWidth() > 0) {
                 TabIndicatorInterpolator tabIndicatorInterpolator = TabLayout.this.tabIndicatorInterpolator;
@@ -2024,7 +2024,7 @@ public class TabLayout extends HorizontalScrollView {
             this.indicatorAnimator.addUpdateListener(anonymousClass1);
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.tabs.TabLayout$SlidingTabIndicator$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.tabs.TabLayout$SlidingTabIndicator$1, reason: invalid class name */
         class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
             final /* synthetic */ View val$currentView;
             final /* synthetic */ View val$targetView;

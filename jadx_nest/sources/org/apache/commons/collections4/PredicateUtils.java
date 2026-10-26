@@ -24,7 +24,7 @@ import org.apache.commons.collections4.functors.TransformerPredicate;
 import org.apache.commons.collections4.functors.TruePredicate;
 import org.apache.commons.collections4.functors.UniquePredicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PredicateUtils {
     public static <T> Predicate<T> allPredicate(Collection<? extends Predicate<? super T>> collection) {
         return AllPredicate.allPredicate(collection);

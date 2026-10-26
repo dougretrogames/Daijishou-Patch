@@ -36,7 +36,7 @@ import javax.annotation.CheckForNull;
 import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class ClassPath {
     private static final String CLASS_FILE_NAME_EXTENSION = ".class";

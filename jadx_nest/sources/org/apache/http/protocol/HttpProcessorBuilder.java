@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import org.apache.http.HttpRequestInterceptor;
 import org.apache.http.HttpResponseInterceptor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpProcessorBuilder {
     private ChainBuilder<HttpRequestInterceptor> requestChainBuilder;
     private ChainBuilder<HttpResponseInterceptor> responseChainBuilder;

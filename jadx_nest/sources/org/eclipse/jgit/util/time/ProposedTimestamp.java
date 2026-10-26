@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class ProposedTimestamp implements AutoCloseable {
     public abstract void blockUntil(Duration duration) throws InterruptedException, TimeoutException;
 

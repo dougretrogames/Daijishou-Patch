@@ -5,7 +5,7 @@ import java.util.Map;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class MessageFormatter {
     static final char DELIM_START = '{';
     static final char DELIM_STOP = '}';

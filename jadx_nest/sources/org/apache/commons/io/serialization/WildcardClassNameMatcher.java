@@ -2,7 +2,7 @@ package org.apache.commons.io.serialization;
 
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class WildcardClassNameMatcher implements ClassNameMatcher {
     private final String pattern;
 

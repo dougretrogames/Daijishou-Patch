@@ -15,7 +15,7 @@ import org.apache.commons.collections4.Bag;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.set.UnmodifiableSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractMapBag<E> implements Bag<E> {
     private transient Map<E, MutableInteger> map;
     private transient int modCount;
@@ -174,7 +174,7 @@ public abstract class AbstractMapBag<E> implements Bag<E> {
         return containsAll((Bag<?>) new HashBag((Collection) collection));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     protected void doReadObject(Map<E, MutableInteger> map, ObjectInputStream objectInputStream) throws IOException, ClassNotFoundException {
         this.map = map;
         int i = objectInputStream.readInt();

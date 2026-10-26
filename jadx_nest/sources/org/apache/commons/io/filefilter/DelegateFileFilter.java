@@ -6,7 +6,7 @@ import java.io.FilenameFilter;
 import java.io.Serializable;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DelegateFileFilter extends AbstractFileFilter implements Serializable {
     private static final long serialVersionUID = -8723373124984771318L;
     private final transient FileFilter fileFilter;

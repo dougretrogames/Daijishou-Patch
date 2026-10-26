@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.NavigableSet;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformedNavigableSet<E> extends TransformedSortedSet<E> implements NavigableSet<E> {
     private static final long serialVersionUID = 20150528;
 
@@ -33,7 +33,7 @@ public class TransformedNavigableSet<E> extends TransformedSortedSet<E> implemen
         return decorated().ceiling(e);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public NavigableSet<E> decorated() {
         return (NavigableSet) super.decorated();

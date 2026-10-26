@@ -2,7 +2,7 @@ package io.opencensus.trace.export;
 
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_RunningSpanStore_Summary extends RunningSpanStore.Summary {
     private final Map<String, RunningSpanStore.PerSpanNameSummary> perSpanNameSummary;
 

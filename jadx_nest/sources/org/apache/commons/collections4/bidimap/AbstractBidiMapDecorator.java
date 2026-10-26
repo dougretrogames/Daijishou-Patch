@@ -5,13 +5,13 @@ import org.apache.commons.collections4.BidiMap;
 import org.apache.commons.collections4.MapIterator;
 import org.apache.commons.collections4.map.AbstractMapDecorator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractBidiMapDecorator<K, V> extends AbstractMapDecorator<K, V> implements BidiMap<K, V> {
     protected AbstractBidiMapDecorator(BidiMap<K, V> bidiMap) {
         super(bidiMap);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.map.AbstractMapDecorator
     public BidiMap<K, V> decorated() {
         return (BidiMap) super.decorated();

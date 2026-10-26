@@ -7,7 +7,7 @@ import org.eclipse.jgit.errors.PackMismatchException;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class PackReverseIndexComputed implements PackReverseIndex {
     private final long bucketSize;
     private final PackIndex index;

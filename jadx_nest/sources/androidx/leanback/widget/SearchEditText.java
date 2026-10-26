@@ -7,7 +7,7 @@ import android.view.KeyEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class SearchEditText extends StreamingTextView {
     private static final boolean DEBUG = false;
     private static final String TAG = "SearchEditText";
@@ -67,7 +67,7 @@ public class SearchEditText extends StreamingTextView {
         return super.onKeyPreIme(i, keyEvent);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.SearchEditText$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.SearchEditText$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }

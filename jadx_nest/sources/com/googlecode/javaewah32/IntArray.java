@@ -2,7 +2,7 @@ package com.googlecode.javaewah32;
 
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class IntArray implements Buffer32, Cloneable {
     private static final int DEFAULT_BUFFER_SIZE = 4;
     private int actualSizeInWords;
@@ -143,7 +143,7 @@ class IntArray implements Buffer32, Cloneable {
     }
 
     @Override // com.googlecode.javaewah32.Buffer32
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public IntArray m3474clone() {
         IntArray intArray;
         CloneNotSupportedException e;

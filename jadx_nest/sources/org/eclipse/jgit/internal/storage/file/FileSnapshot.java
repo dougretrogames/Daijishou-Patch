@@ -16,7 +16,7 @@ import org.eclipse.jgit.util.FS;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileSnapshot {
     public static final FileSnapshot DIRTY;
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) FileSnapshot.class);
@@ -54,7 +54,7 @@ public class FileSnapshot {
         MISSING_FILE = new AnonymousClass1(Instant.EPOCH, Instant.EPOCH, 0L, Duration.ZERO, obj);
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.FileSnapshot$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.FileSnapshot$1, reason: invalid class name */
     class AnonymousClass1 extends FileSnapshot {
         AnonymousClass1(Instant instant, Instant instant2, long j, Duration duration, Object obj) {
             super(instant, instant2, j, duration, obj, null);
@@ -181,7 +181,7 @@ public class FileSnapshot {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:9:0x0016  */
+    /* WARN: Code duplicated, block: B:9:0x0016  */
     public boolean equals(FileSnapshot fileSnapshot) {
         boolean z;
         long j = this.size;

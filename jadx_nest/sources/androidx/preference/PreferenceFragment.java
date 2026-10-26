@@ -19,7 +19,7 @@ import androidx.core.content.res.TypedArrayUtils;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public abstract class PreferenceFragment extends Fragment implements PreferenceManager.OnPreferenceTreeClickListener, PreferenceManager.OnDisplayPreferenceDialogListener, PreferenceManager.OnNavigateToScreenListener, DialogPreference.TargetFragment {
 
@@ -64,7 +64,7 @@ public abstract class PreferenceFragment extends Fragment implements PreferenceM
     protected void onUnbindPreferences() {
     }
 
-    /* JADX INFO: renamed from: androidx.preference.PreferenceFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.PreferenceFragment$1, reason: invalid class name */
     class AnonymousClass1 extends Handler {
         AnonymousClass1() {
         }
@@ -78,7 +78,7 @@ public abstract class PreferenceFragment extends Fragment implements PreferenceM
         }
     }
 
-    /* JADX INFO: renamed from: androidx.preference.PreferenceFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.PreferenceFragment$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -370,7 +370,7 @@ public abstract class PreferenceFragment extends Fragment implements PreferenceM
         scrollToPreferenceInternal(preference, null);
     }
 
-    /* JADX INFO: renamed from: androidx.preference.PreferenceFragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.PreferenceFragment$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         final /* synthetic */ String val$key;
         final /* synthetic */ Preference val$preference;
@@ -380,7 +380,7 @@ public abstract class PreferenceFragment extends Fragment implements PreferenceM
             this.val$key = str;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.lang.Runnable
         public void run() {
             int preferenceAdapterPosition;

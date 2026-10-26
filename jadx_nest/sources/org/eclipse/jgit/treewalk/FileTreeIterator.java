@@ -12,7 +12,7 @@ import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.util.FS;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileTreeIterator extends WorkingTreeIterator {
     protected final File directory;
     protected final FileModeStrategy fileModeStrategy;
@@ -22,7 +22,7 @@ public class FileTreeIterator extends WorkingTreeIterator {
         FileMode getMode(File file, FS.Attributes attributes);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public FileTreeIterator(Repository repository) {
         FileModeStrategy fileModeStrategy;
         if (((WorkingTreeOptions) repository.getConfig().get(WorkingTreeOptions.KEY)).isDirNoGitLinks()) {

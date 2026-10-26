@@ -2,7 +2,7 @@ package org.apache.commons.collections4.bloomfilter;
 
 import java.util.function.LongBinaryOperator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class SetOperations {
     static /* synthetic */ long lambda$andCardinality$0(long j, long j2) {
         return j & j2;

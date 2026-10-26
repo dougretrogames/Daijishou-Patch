@@ -6,7 +6,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.ComparatorUtils;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformingComparator<I, O> implements Comparator<I>, Serializable {
     private static final long serialVersionUID = 3456940356043606220L;
     private final Comparator<O> decorated;

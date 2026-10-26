@@ -1,6 +1,6 @@
 package androidx.leanback.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ListRow extends Row {
     private final ObjectAdapter mAdapter;
     private CharSequence mContentDescription;

@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 import org.apache.commons.io.FileUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LastModifiedFileComparator extends AbstractFileComparator implements Serializable {
     public static final Comparator<File> LASTMODIFIED_COMPARATOR;
     public static final Comparator<File> LASTMODIFIED_REVERSE;

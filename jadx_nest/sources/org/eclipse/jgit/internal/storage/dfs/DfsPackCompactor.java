@@ -28,7 +28,7 @@ import org.eclipse.jgit.storage.pack.PackStatistics;
 import org.eclipse.jgit.util.BlockList;
 import org.eclipse.jgit.util.io.CountingOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsPackCompactor {
     private RevFlag added;
     private RevFlag isBase;
@@ -460,7 +460,7 @@ public class DfsPackCompactor {
         return reftableConfig2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class ObjectIdWithOffset extends ObjectId {
         final long offset;
 

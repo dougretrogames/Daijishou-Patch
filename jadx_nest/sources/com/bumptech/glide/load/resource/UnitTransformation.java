@@ -5,7 +5,7 @@ import com.bumptech.glide.load.Transformation;
 import com.bumptech.glide.load.engine.Resource;
 import java.security.MessageDigest;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class UnitTransformation<T> implements Transformation<T> {
     private static final Transformation<?> TRANSFORMATION = new UnitTransformation();
 

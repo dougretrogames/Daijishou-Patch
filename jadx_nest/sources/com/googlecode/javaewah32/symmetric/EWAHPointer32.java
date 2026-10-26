@@ -2,7 +2,7 @@ package com.googlecode.javaewah32.symmetric;
 
 import com.googlecode.javaewah32.IteratingBufferedRunningLengthWord32;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class EWAHPointer32 implements Comparable<EWAHPointer32> {
     private boolean dead;
     private int endrun;

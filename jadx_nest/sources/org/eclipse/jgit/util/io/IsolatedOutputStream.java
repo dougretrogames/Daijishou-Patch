@@ -16,7 +16,7 @@ import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IsolatedOutputStream extends OutputStream {
     private final ExecutorService copier = new ThreadPoolExecutor(1, 1, 0, TimeUnit.MILLISECONDS, new ArrayBlockingQueue(1), new NamedThreadFactory(null));
     private final OutputStream dst;
@@ -37,7 +37,7 @@ public class IsolatedOutputStream extends OutputStream {
         execute(new IsolatedOutputStream$$ExternalSyntheticLambda1(this, bArr, i, i2));
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-util-io-IsolatedOutputStream, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-util-io-IsolatedOutputStream, reason: not valid java name */
     /* synthetic */ Void m5863lambda$0$orgeclipsejgitutilioIsolatedOutputStream(byte[] bArr, int i, int i2) throws Exception {
         this.dst.write(bArr, i, i2);
         return null;
@@ -49,7 +49,7 @@ public class IsolatedOutputStream extends OutputStream {
         execute(new IsolatedOutputStream$$ExternalSyntheticLambda2(this));
     }
 
-    /* JADX INFO: renamed from: lambda$1$org-eclipse-jgit-util-io-IsolatedOutputStream, reason: not valid java name */
+    /* INFO: renamed from: lambda$1$org-eclipse-jgit-util-io-IsolatedOutputStream, reason: not valid java name */
     /* synthetic */ Void m5864lambda$1$orgeclipsejgitutilioIsolatedOutputStream() throws Exception {
         this.dst.flush();
         return null;
@@ -88,7 +88,7 @@ public class IsolatedOutputStream extends OutputStream {
         execute(new IsolatedOutputStream$$ExternalSyntheticLambda0(this));
     }
 
-    /* JADX INFO: renamed from: lambda$2$org-eclipse-jgit-util-io-IsolatedOutputStream, reason: not valid java name */
+    /* INFO: renamed from: lambda$2$org-eclipse-jgit-util-io-IsolatedOutputStream, reason: not valid java name */
     /* synthetic */ Void m5865lambda$2$orgeclipsejgitutilioIsolatedOutputStream() throws Exception {
         this.dst.close();
         return null;
@@ -116,7 +116,7 @@ public class IsolatedOutputStream extends OutputStream {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$3$org-eclipse-jgit-util-io-IsolatedOutputStream, reason: not valid java name */
+    /* INFO: renamed from: lambda$3$org-eclipse-jgit-util-io-IsolatedOutputStream, reason: not valid java name */
     /* synthetic */ Void m5866lambda$3$orgeclipsejgitutilioIsolatedOutputStream() throws Exception {
         this.dst.close();
         return null;

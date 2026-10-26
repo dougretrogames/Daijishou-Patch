@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class RegistryImpl implements MarkwonPlugin.Registry {
     private final List<MarkwonPlugin> origin;
     private final Set<MarkwonPlugin> pending = new HashSet(3);

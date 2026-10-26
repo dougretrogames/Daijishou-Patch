@@ -23,7 +23,7 @@ import org.apache.http.message.BufferedHeader;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RFC2965Spec extends RFC2109Spec {
     @Override // org.apache.http.impl.cookie.RFC2109Spec, org.apache.http.cookie.CookieSpec
     public int getVersion() {
@@ -34,7 +34,7 @@ public class RFC2965Spec extends RFC2109Spec {
         this((String[]) null, false);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public RFC2965Spec(String[] strArr, boolean z) {
         CommonCookieAttributeHandler[] commonCookieAttributeHandlerArr = new CommonCookieAttributeHandler[10];
         commonCookieAttributeHandlerArr[0] = new RFC2965VersionAttributeHandler();
@@ -50,7 +50,7 @@ public class RFC2965Spec extends RFC2109Spec {
         super(z, commonCookieAttributeHandlerArr);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.cookie.RFC2965Spec$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.cookie.RFC2965Spec$1, reason: invalid class name */
     class AnonymousClass1 extends BasicPathHandler {
         AnonymousClass1() {
         }

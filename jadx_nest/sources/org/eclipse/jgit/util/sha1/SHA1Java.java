@@ -10,7 +10,7 @@ import org.eclipse.jgit.util.SystemReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class SHA1Java extends SHA1 {
     private static final boolean DETECT_COLLISIONS;
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) SHA1Java.class);

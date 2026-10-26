@@ -2,7 +2,7 @@ package com.google.api.client.util;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ExponentialBackOff implements BackOff {
     public static final int DEFAULT_INITIAL_INTERVAL_MILLIS = 500;
     public static final int DEFAULT_MAX_ELAPSED_TIME_MILLIS = 900000;

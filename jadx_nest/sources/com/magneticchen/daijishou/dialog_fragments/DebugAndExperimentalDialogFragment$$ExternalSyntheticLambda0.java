@@ -2,8 +2,8 @@ package com.magneticchen.daijishou.dialog_fragments;
 
 import androidx.activity.result.ActivityResultCallback;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class DebugAndExperimentalDialogFragment$$ExternalSyntheticLambda0 implements ActivityResultCallback {
     public final /* synthetic */ DebugAndExperimentalDialogFragment f$0;
 

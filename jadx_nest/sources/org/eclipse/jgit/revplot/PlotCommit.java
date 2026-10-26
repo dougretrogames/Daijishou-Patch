@@ -5,7 +5,7 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.revplot.PlotLane;
 import org.eclipse.jgit.revwalk.RevCommit;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PlotCommit<L extends PlotLane> extends RevCommit {
     static final PlotCommit[] NO_CHILDREN = new PlotCommit[0];
     static final PlotLane[] NO_LANES = new PlotLane[0];

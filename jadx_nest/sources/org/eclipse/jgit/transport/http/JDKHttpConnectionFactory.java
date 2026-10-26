@@ -16,7 +16,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.internal.transport.http.DelegatingSSLSocketFactory;
 import org.eclipse.jgit.util.HttpSupport;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class JDKHttpConnectionFactory implements HttpConnectionFactory2 {
     @Override // org.eclipse.jgit.transport.http.HttpConnectionFactory
     public HttpConnection create(URL url) throws IOException {
@@ -33,7 +33,7 @@ public class JDKHttpConnectionFactory implements HttpConnectionFactory2 {
         return new JdkConnectionSession(null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class JdkConnectionSession implements HttpConnectionFactory2.GitSession {
         private SSLContext securityContext;
         private SSLSocketFactory socketFactory;
@@ -67,7 +67,7 @@ public class JDKHttpConnectionFactory implements HttpConnectionFactory2 {
             return jDKHttpConnection;
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.transport.http.JDKHttpConnectionFactory$JdkConnectionSession$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.transport.http.JDKHttpConnectionFactory$JdkConnectionSession$1, reason: invalid class name */
         class AnonymousClass1 extends DelegatingSSLSocketFactory {
             AnonymousClass1(SSLSocketFactory sSLSocketFactory) {
                 super(sSLSocketFactory);

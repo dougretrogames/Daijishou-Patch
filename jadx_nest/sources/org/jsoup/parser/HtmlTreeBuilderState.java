@@ -16,9 +16,9 @@ import org.jsoup.nodes.FormElement;
 import org.jsoup.nodes.Node;
 import org.jsoup.nodes.Range;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: loaded from: classes5.dex */
+/* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* WARN: Unknown enum class pattern. Please report as an issue! */
+/* INFO: loaded from: classes5.dex */
 abstract class HtmlTreeBuilderState {
     public static final HtmlTreeBuilderState Initial = new AnonymousClass1("Initial", 0);
     public static final HtmlTreeBuilderState BeforeHtml = new AnonymousClass2("BeforeHtml", 1);
@@ -49,7 +49,7 @@ abstract class HtmlTreeBuilderState {
 
     abstract boolean process(Token token, HtmlTreeBuilder htmlTreeBuilder);
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$1, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$1, reason: invalid class name */
     final enum AnonymousClass1 extends HtmlTreeBuilderState {
         AnonymousClass1(String str, int i) {
             super(str, i, null);
@@ -101,7 +101,7 @@ abstract class HtmlTreeBuilderState {
         return (HtmlTreeBuilderState[]) $VALUES.clone();
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$2, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$2, reason: invalid class name */
     final enum AnonymousClass2 extends HtmlTreeBuilderState {
         AnonymousClass2(String str, int i) {
             super(str, i, null);
@@ -143,7 +143,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$3, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$3, reason: invalid class name */
     final enum AnonymousClass3 extends HtmlTreeBuilderState {
         AnonymousClass3(String str, int i) {
             super(str, i, null);
@@ -184,7 +184,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$4, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$4, reason: invalid class name */
     final enum AnonymousClass4 extends HtmlTreeBuilderState {
         AnonymousClass4(String str, int i) {
             super(str, i, null);
@@ -282,7 +282,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$25, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$25, reason: invalid class name */
     static /* synthetic */ class AnonymousClass25 {
         static final /* synthetic */ int[] $SwitchMap$org$jsoup$parser$Token$TokenType;
 
@@ -316,7 +316,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$5, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$5, reason: invalid class name */
     final enum AnonymousClass5 extends HtmlTreeBuilderState {
         AnonymousClass5(String str, int i) {
             super(str, i, null);
@@ -356,7 +356,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$6, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$6, reason: invalid class name */
     final enum AnonymousClass6 extends HtmlTreeBuilderState {
         AnonymousClass6(String str, int i) {
             super(str, i, null);
@@ -432,7 +432,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$7, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$7, reason: invalid class name */
     final enum AnonymousClass7 extends HtmlTreeBuilderState {
         private static final int MaxStackScan = 24;
 
@@ -483,8 +483,8 @@ abstract class HtmlTreeBuilderState {
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:348:0x0554  */
-        /* JADX WARN: Code duplicated, block: B:377:0x05e0  */
+        /* WARN: Code duplicated, block: B:348:0x0554  */
+        /* WARN: Code duplicated, block: B:377:0x05e0  */
         private boolean inBodyStartTag(Token token, HtmlTreeBuilder htmlTreeBuilder) {
             byte b;
             Token.StartTag startTagAsStartTag = token.asStartTag();
@@ -1141,7 +1141,7 @@ abstract class HtmlTreeBuilderState {
             }
         }
 
-        /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+        /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
         private boolean inBodyEndTag(Token token, HtmlTreeBuilder htmlTreeBuilder) {
             Token.EndTag endTagAsEndTag = token.asEndTag();
             String strNormalName = endTagAsEndTag.normalName();
@@ -1401,18 +1401,18 @@ abstract class HtmlTreeBuilderState {
             return true;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX WARN: Type inference failed for: r10v1 */
-        /* JADX WARN: Type inference failed for: r10v2, types: [int] */
-        /* JADX WARN: Type inference failed for: r10v3, types: [int] */
-        /* JADX WARN: Type inference failed for: r19v0, types: [org.jsoup.parser.HtmlTreeBuilder] */
-        /* JADX WARN: Type inference failed for: r4v0 */
-        /* JADX WARN: Type inference failed for: r4v1, types: [boolean, int] */
-        /* JADX WARN: Type inference failed for: r4v2 */
-        /* JADX WARN: Type inference failed for: r4v3 */
-        /* JADX WARN: Type inference failed for: r4v6 */
-        /* JADX WARN: Type inference failed for: r4v9 */
-        /* JADX WARN: Type inference failed for: r6v3, types: [int] */
+        /* WARN: Multi-variable type inference failed */
+        /* WARN: Type inference failed for: r10v1 */
+        /* WARN: Type inference failed for: r10v2, types: [int] */
+        /* WARN: Type inference failed for: r10v3, types: [int] */
+        /* WARN: Type inference failed for: r19v0, types: [org.jsoup.parser.HtmlTreeBuilder] */
+        /* WARN: Type inference failed for: r4v0 */
+        /* WARN: Type inference failed for: r4v1, types: [boolean, int] */
+        /* WARN: Type inference failed for: r4v2 */
+        /* WARN: Type inference failed for: r4v3 */
+        /* WARN: Type inference failed for: r4v6 */
+        /* WARN: Type inference failed for: r4v9 */
+        /* WARN: Type inference failed for: r6v3, types: [int] */
         private boolean inBodyEndTagAdoption(Token token, HtmlTreeBuilder htmlTreeBuilder) {
             Element element;
             Element element2;
@@ -1542,7 +1542,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$8, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$8, reason: invalid class name */
     final enum AnonymousClass8 extends HtmlTreeBuilderState {
         AnonymousClass8(String str, int i) {
             super(str, i, null);
@@ -1572,7 +1572,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$9, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$9, reason: invalid class name */
     final enum AnonymousClass9 extends HtmlTreeBuilderState {
         AnonymousClass9(String str, int i) {
             super(str, i, null);
@@ -1695,7 +1695,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$10, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$10, reason: invalid class name */
     final enum AnonymousClass10 extends HtmlTreeBuilderState {
         AnonymousClass10(String str, int i) {
             super(str, i, null);
@@ -1737,7 +1737,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$11, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$11, reason: invalid class name */
     final enum AnonymousClass11 extends HtmlTreeBuilderState {
         AnonymousClass11(String str, int i) {
             super(str, i, null);
@@ -1782,7 +1782,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$12, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$12, reason: invalid class name */
     final enum AnonymousClass12 extends HtmlTreeBuilderState {
         AnonymousClass12(String str, int i) {
             super(str, i, null);
@@ -1857,7 +1857,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$13, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$13, reason: invalid class name */
     final enum AnonymousClass13 extends HtmlTreeBuilderState {
         AnonymousClass13(String str, int i) {
             super(str, i, null);
@@ -1924,7 +1924,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$14, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$14, reason: invalid class name */
     final enum AnonymousClass14 extends HtmlTreeBuilderState {
         AnonymousClass14(String str, int i) {
             super(str, i, null);
@@ -2003,7 +2003,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$15, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$15, reason: invalid class name */
     final enum AnonymousClass15 extends HtmlTreeBuilderState {
         AnonymousClass15(String str, int i) {
             super(str, i, null);
@@ -2066,7 +2066,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$16, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$16, reason: invalid class name */
     final enum AnonymousClass16 extends HtmlTreeBuilderState {
         AnonymousClass16(String str, int i) {
             super(str, i, null);
@@ -2177,7 +2177,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$17, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$17, reason: invalid class name */
     final enum AnonymousClass17 extends HtmlTreeBuilderState {
         AnonymousClass17(String str, int i) {
             super(str, i, null);
@@ -2204,7 +2204,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$18, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$18, reason: invalid class name */
     final enum AnonymousClass18 extends HtmlTreeBuilderState {
         AnonymousClass18(String str, int i) {
             super(str, i, null);
@@ -2279,7 +2279,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$19, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$19, reason: invalid class name */
     final enum AnonymousClass19 extends HtmlTreeBuilderState {
         AnonymousClass19(String str, int i) {
             super(str, i, null);
@@ -2327,7 +2327,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$20, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$20, reason: invalid class name */
     final enum AnonymousClass20 extends HtmlTreeBuilderState {
         AnonymousClass20(String str, int i) {
             super(str, i, null);
@@ -2385,7 +2385,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$21, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$21, reason: invalid class name */
     final enum AnonymousClass21 extends HtmlTreeBuilderState {
         AnonymousClass21(String str, int i) {
             super(str, i, null);
@@ -2423,7 +2423,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$22, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$22, reason: invalid class name */
     final enum AnonymousClass22 extends HtmlTreeBuilderState {
         AnonymousClass22(String str, int i) {
             super(str, i, null);
@@ -2451,7 +2451,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$23, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$23, reason: invalid class name */
     final enum AnonymousClass23 extends HtmlTreeBuilderState {
         AnonymousClass23(String str, int i) {
             super(str, i, null);
@@ -2477,13 +2477,13 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$24, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.HtmlTreeBuilderState$24, reason: invalid class name */
     final enum AnonymousClass24 extends HtmlTreeBuilderState {
         AnonymousClass24(String str, int i) {
             super(str, i, null);
         }
 
-        /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+        /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
         @Override // org.jsoup.parser.HtmlTreeBuilderState
         boolean process(Token token, HtmlTreeBuilder htmlTreeBuilder) {
             switch (AnonymousClass25.$SwitchMap$org$jsoup$parser$Token$TokenType[token.type.ordinal()]) {
@@ -2570,7 +2570,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void mergeAttributes(Token.StartTag startTag, Element element) {
         if (startTag.hasAttributes()) {
             for (Attribute attribute : startTag.attributes) {
@@ -2586,7 +2586,7 @@ abstract class HtmlTreeBuilderState {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean isWhitespace(Token token) {
         if (token.isCharacter()) {
             return StringUtil.isBlank(token.asCharacter().getData());
@@ -2594,7 +2594,7 @@ abstract class HtmlTreeBuilderState {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void HandleTextState(Token.StartTag startTag, HtmlTreeBuilder htmlTreeBuilder, TokeniserState tokeniserState) {
         if (tokeniserState != null) {
             htmlTreeBuilder.tokeniser.transition(tokeniserState);

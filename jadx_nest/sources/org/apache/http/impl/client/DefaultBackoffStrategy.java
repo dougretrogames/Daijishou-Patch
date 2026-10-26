@@ -5,7 +5,7 @@ import java.net.SocketTimeoutException;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ConnectionBackoffStrategy;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultBackoffStrategy implements ConnectionBackoffStrategy {
     @Override // org.apache.http.client.ConnectionBackoffStrategy
     public boolean shouldBackoff(Throwable th) {

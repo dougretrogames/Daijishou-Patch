@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.Set;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Preference implements Comparable<Preference> {
     private static final String CLIPBOARD_ID = "Preference";
     public static final int DEFAULT_ORDER = Integer.MAX_VALUE;
@@ -111,7 +111,7 @@ public class Preference implements Comparable<Preference> {
     protected void onSetInitialValue(Object obj) {
     }
 
-    /* JADX INFO: renamed from: androidx.preference.Preference$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.Preference$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         AnonymousClass1() {
         }
@@ -1053,18 +1053,18 @@ public class Preference implements Comparable<Preference> {
     public static class BaseSavedState extends AbsSavedState {
         public static final Parcelable.Creator<BaseSavedState> CREATOR = new AnonymousClass1();
 
-        /* JADX INFO: renamed from: androidx.preference.Preference$BaseSavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.preference.Preference$BaseSavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<BaseSavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public BaseSavedState createFromParcel(Parcel parcel) {
                 return new BaseSavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public BaseSavedState[] newArray(int i) {
                 return new BaseSavedState[i];

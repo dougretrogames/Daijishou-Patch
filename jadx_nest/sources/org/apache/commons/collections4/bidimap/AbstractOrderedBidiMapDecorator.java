@@ -3,13 +3,13 @@ package org.apache.commons.collections4.bidimap;
 import org.apache.commons.collections4.OrderedBidiMap;
 import org.apache.commons.collections4.OrderedMapIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractOrderedBidiMapDecorator<K, V> extends AbstractBidiMapDecorator<K, V> implements OrderedBidiMap<K, V> {
     protected AbstractOrderedBidiMapDecorator(OrderedBidiMap<K, V> orderedBidiMap) {
         super(orderedBidiMap);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.bidimap.AbstractBidiMapDecorator, org.apache.commons.collections4.map.AbstractMapDecorator
     public OrderedBidiMap<K, V> decorated() {
         return (OrderedBidiMap) super.decorated();

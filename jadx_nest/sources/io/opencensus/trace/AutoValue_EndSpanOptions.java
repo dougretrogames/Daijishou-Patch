@@ -2,7 +2,7 @@ package io.opencensus.trace;
 
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_EndSpanOptions extends EndSpanOptions {
     private final boolean sampleToLocalSpanStore;
     private final Status status;

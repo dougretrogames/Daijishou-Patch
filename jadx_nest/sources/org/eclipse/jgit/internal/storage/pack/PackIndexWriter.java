@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.List;
 import org.eclipse.jgit.transport.PackedObjectInfo;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface PackIndexWriter {
     void write(List<? extends PackedObjectInfo> list, byte[] bArr) throws IOException;
 }

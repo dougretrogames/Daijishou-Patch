@@ -7,7 +7,7 @@ import javax.annotation.meta.TypeQualifier;
 import javax.annotation.meta.TypeQualifierValidator;
 import javax.annotation.meta.When;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @TypeQualifier(applicableTo = Number.class)
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

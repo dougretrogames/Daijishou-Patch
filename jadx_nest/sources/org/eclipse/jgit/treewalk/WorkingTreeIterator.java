@@ -55,7 +55,7 @@ import org.eclipse.jgit.util.io.ByteBufferInputStream;
 import org.eclipse.jgit.util.io.EolStreamTypeUtil;
 import org.eclipse.jgit.util.sha1.SHA1;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class WorkingTreeIterator extends AbstractTreeIterator {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$lib$CoreConfig$AutoCRLF = null;
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$treewalk$WorkingTreeIterator$MetadataDiff = null;
@@ -87,7 +87,7 @@ public abstract class WorkingTreeIterator extends AbstractTreeIterator {
         SMUDGED,
         DIFFER_BY_TIMESTAMP;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static MetadataDiff[] valuesCustom() {
             MetadataDiff[] metadataDiffArrValuesCustom = values();
             int length = metadataDiffArrValuesCustom.length;

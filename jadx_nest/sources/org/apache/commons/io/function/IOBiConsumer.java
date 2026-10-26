@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Objects;
 import java.util.function.BiConsumer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @FunctionalInterface
 public interface IOBiConsumer<T, U> {
     void accept(T t, U u) throws IOException;

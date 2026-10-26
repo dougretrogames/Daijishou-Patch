@@ -2,7 +2,7 @@ package com.vdurmont.semver4j;
 
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class Range {
     protected final RangeOperator op;
     protected final Semver version;
@@ -20,7 +20,7 @@ public class Range {
         return isSatisfiedBy(new Semver(str, this.version.getType()));
     }
 
-    /* JADX INFO: renamed from: com.vdurmont.semver4j.Range$1, reason: invalid class name */
+    /* INFO: renamed from: com.vdurmont.semver4j.Range$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$vdurmont$semver4j$Range$RangeOperator;
 

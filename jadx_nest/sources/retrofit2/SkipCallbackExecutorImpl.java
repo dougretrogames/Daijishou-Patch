@@ -2,7 +2,7 @@ package retrofit2;
 
 import java.lang.annotation.Annotation;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 final class SkipCallbackExecutorImpl implements SkipCallbackExecutor {
     private static final SkipCallbackExecutor INSTANCE = new SkipCallbackExecutorImpl();
 

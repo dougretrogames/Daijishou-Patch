@@ -23,7 +23,7 @@ import javax.net.ssl.TrustManagerFactory;
 import javax.net.ssl.X509TrustManager;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class JsonWebSignature extends JsonWebToken {
     private final byte[] signatureBytes;
     private final byte[] signedContentBytes;

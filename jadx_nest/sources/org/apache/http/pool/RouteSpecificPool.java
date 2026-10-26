@@ -10,7 +10,7 @@ import org.apache.http.pool.PoolEntry;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class RouteSpecificPool<T, C, E extends PoolEntry<T, C>> {
     private final T route;
     private final Set<E> leased = new HashSet();

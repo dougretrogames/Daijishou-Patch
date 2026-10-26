@@ -7,7 +7,7 @@ import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class PackOutputStream extends CancellableDigestOutputStream {
     private final byte[] copyBuffer;
     private final byte[] headerBuffer;

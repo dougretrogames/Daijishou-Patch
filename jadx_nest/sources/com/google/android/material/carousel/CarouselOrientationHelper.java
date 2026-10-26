@@ -5,7 +5,7 @@ import android.graphics.RectF;
 import android.view.View;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class CarouselOrientationHelper {
     final int orientation;
 
@@ -53,7 +53,7 @@ abstract class CarouselOrientationHelper {
         throw new IllegalArgumentException("invalid orientation");
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.carousel.CarouselOrientationHelper$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.carousel.CarouselOrientationHelper$1, reason: invalid class name */
     class AnonymousClass1 extends CarouselOrientationHelper {
         final /* synthetic */ CarouselLayoutManager val$carouselLayoutManager;
 
@@ -62,7 +62,7 @@ abstract class CarouselOrientationHelper {
             return 0;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(int i, CarouselLayoutManager carouselLayoutManager) {
             super(i, null);
             this.val$carouselLayoutManager = carouselLayoutManager;
@@ -152,7 +152,7 @@ abstract class CarouselOrientationHelper {
         return new AnonymousClass1(1, carouselLayoutManager);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.carousel.CarouselOrientationHelper$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.carousel.CarouselOrientationHelper$2, reason: invalid class name */
     class AnonymousClass2 extends CarouselOrientationHelper {
         final /* synthetic */ CarouselLayoutManager val$carouselLayoutManager;
 
@@ -161,7 +161,7 @@ abstract class CarouselOrientationHelper {
             return 0;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(int i, CarouselLayoutManager carouselLayoutManager) {
             super(i, null);
             this.val$carouselLayoutManager = carouselLayoutManager;

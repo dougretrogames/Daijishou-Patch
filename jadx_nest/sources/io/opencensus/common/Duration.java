@@ -2,7 +2,7 @@ package io.opencensus.common;
 
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Duration implements Comparable<Duration> {
     public abstract int getNanos();
 

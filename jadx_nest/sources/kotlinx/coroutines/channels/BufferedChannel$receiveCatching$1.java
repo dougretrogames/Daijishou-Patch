@@ -6,8 +6,8 @@ import kotlin.coroutines.intrinsics.IntrinsicsKt;
 import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 
-/* JADX INFO: compiled from: BufferedChannel.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: BufferedChannel.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "kotlinx.coroutines.channels.BufferedChannel", f = "BufferedChannel.kt", i = {}, l = {739}, m = "receiveCatching-JP2dKIU$suspendImpl", n = {}, s = {})
 final class BufferedChannel$receiveCatching$1<E> extends ContinuationImpl {
@@ -15,7 +15,7 @@ final class BufferedChannel$receiveCatching$1<E> extends ContinuationImpl {
     /* synthetic */ Object result;
     final /* synthetic */ BufferedChannel<E> this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     BufferedChannel$receiveCatching$1(BufferedChannel<E> bufferedChannel, Continuation<? super BufferedChannel$receiveCatching$1> continuation) {
         super(continuation);
         this.this$0 = bufferedChannel;

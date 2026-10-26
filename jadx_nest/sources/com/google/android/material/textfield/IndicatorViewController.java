@@ -28,7 +28,7 @@ import com.google.android.material.resources.MaterialResources;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class IndicatorViewController {
     private static final int CAPTION_STATE_ERROR = 1;
     private static final int CAPTION_STATE_HELPER_TEXT = 2;
@@ -159,7 +159,7 @@ final class IndicatorViewController {
         indicatorViewController.textInputView.updateTextInputBoxState();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.textfield.IndicatorViewController$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.textfield.IndicatorViewController$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         final /* synthetic */ int val$captionToHide;
         final /* synthetic */ int val$captionToShow;
@@ -409,7 +409,7 @@ final class IndicatorViewController {
         this.helperTextEnabled = z;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.textfield.IndicatorViewController$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.textfield.IndicatorViewController$2, reason: invalid class name */
     class AnonymousClass2 extends View.AccessibilityDelegate {
         AnonymousClass2() {
         }

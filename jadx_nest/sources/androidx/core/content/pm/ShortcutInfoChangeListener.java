@@ -2,7 +2,7 @@ package androidx.core.content.pm;
 
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ShortcutInfoChangeListener {
     public void onAllShortcutsRemoved() {
     }

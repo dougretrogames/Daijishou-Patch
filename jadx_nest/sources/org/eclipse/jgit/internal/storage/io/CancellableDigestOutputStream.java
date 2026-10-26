@@ -8,7 +8,7 @@ import java.security.MessageDigest;
 import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.ProgressMonitor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CancellableDigestOutputStream extends OutputStream {
     public static final int BYTES_TO_WRITE_BEFORE_CANCEL_CHECK = 131072;
     private long count;

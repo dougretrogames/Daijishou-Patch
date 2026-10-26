@@ -16,7 +16,7 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements Serializable {
     private static final long serialVersionUID = 1;
@@ -78,7 +78,7 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
         return super.pollLastEntry();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractSortedMultiset, com.google.common.collect.SortedMultiset
     public /* bridge */ /* synthetic */ SortedMultiset subMultiset(@ParametricNullness Object fromElement, BoundType fromBoundType, @ParametricNullness Object toElement, BoundType toBoundType) {
         return super.subMultiset(fromElement, fromBoundType, toElement, toBoundType);
@@ -117,8 +117,8 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
         this.rootReference = new Reference<>(null);
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     private static abstract class Aggregate {
         public static final Aggregate SIZE = new AnonymousClass1("SIZE", 0);
         public static final Aggregate DISTINCT = new AnonymousClass2("DISTINCT", 1);
@@ -128,7 +128,7 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
 
         abstract long treeAggregate(@CheckForNull AvlNode<?> root);
 
-        /* JADX INFO: renamed from: com.google.common.collect.TreeMultiset$Aggregate$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.TreeMultiset$Aggregate$1, reason: invalid class name */
         final enum AnonymousClass1 extends Aggregate {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -168,7 +168,7 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
             return (Aggregate[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.TreeMultiset$Aggregate$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.TreeMultiset$Aggregate$2, reason: invalid class name */
         final enum AnonymousClass2 extends Aggregate {
             @Override // com.google.common.collect.TreeMultiset.Aggregate
             int nodeAggregate(AvlNode<?> node) {
@@ -225,7 +225,7 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
         return jTreeAggregate + jAggregateBelowRange;
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.TreeMultiset$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.TreeMultiset$4, reason: invalid class name */
     static /* synthetic */ class AnonymousClass4 {
         static final /* synthetic */ int[] $SwitchMap$com$google$common$collect$BoundType;
 
@@ -401,7 +401,7 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.TreeMultiset$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.TreeMultiset$1, reason: invalid class name */
     class AnonymousClass1 extends Multisets.AbstractEntry<E> {
         final /* synthetic */ AvlNode val$baseEntry;
 
@@ -422,12 +422,12 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Multiset.Entry<E> wrapEntry(final AvlNode<E> baseEntry) {
         return new AnonymousClass1(baseEntry);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @CheckForNull
     public AvlNode<E> firstNode() {
         AvlNode<E> avlNodeSucc;
@@ -453,7 +453,7 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
         return avlNodeSucc;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @CheckForNull
     public AvlNode<E> lastNode() {
         AvlNode<E> avlNodePred;
@@ -484,7 +484,7 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
         return Multisets.elementIterator(entryIterator());
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.TreeMultiset$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.TreeMultiset$2, reason: invalid class name */
     class AnonymousClass2 implements Iterator<Multiset.Entry<E>> {
 
         @CheckForNull
@@ -537,7 +537,7 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
         return new AnonymousClass2();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.TreeMultiset$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.TreeMultiset$3, reason: invalid class name */
     class AnonymousClass3 implements Iterator<Multiset.Entry<E>> {
 
         @CheckForNull
@@ -672,17 +672,17 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
             this.elemCount = 1;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public AvlNode<E> pred() {
             return (AvlNode) Objects.requireNonNull(this.pred);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public AvlNode<E> succ() {
             return (AvlNode) Objects.requireNonNull(this.succ);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         int count(Comparator<? super E> comparator, @ParametricNullness E e) {
             int iCompare = comparator.compare(e, getElement());
             if (iCompare < 0) {
@@ -721,7 +721,7 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         AvlNode<E> add(Comparator<? super E> comparator, @ParametricNullness E e, int count, int[] result) {
             int iCompare = comparator.compare(e, getElement());
             if (iCompare < 0) {
@@ -768,7 +768,7 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @CheckForNull
         AvlNode<E> remove(Comparator<? super E> comparator, @ParametricNullness E e, int count, int[] result) {
             int iCompare = comparator.compare(e, getElement());
@@ -818,7 +818,7 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @CheckForNull
         AvlNode<E> setCount(Comparator<? super E> comparator, @ParametricNullness E e, int count, int[] result) {
             int iCompare = comparator.compare(e, getElement());
@@ -869,7 +869,7 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @CheckForNull
         AvlNode<E> setCount(Comparator<? super E> comparator, @ParametricNullness E e, int expectedCount, int newCount, int[] result) {
             int iCompare = comparator.compare(e, getElement());
@@ -1056,8 +1056,8 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
             return ((AvlNode) node).height;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* INFO: Access modifiers changed from: private */
+        /* WARN: Multi-variable type inference failed */
         @CheckForNull
         public AvlNode<E> ceiling(Comparator<? super E> comparator, @ParametricNullness E e) {
             int iCompare = comparator.compare(e, getElement());
@@ -1076,8 +1076,8 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* INFO: Access modifiers changed from: private */
+        /* WARN: Multi-variable type inference failed */
         @CheckForNull
         public AvlNode<E> floor(Comparator<? super E> comparator, @ParametricNullness E e) {
             int iCompare = comparator.compare(e, getElement());
@@ -1110,13 +1110,13 @@ public final class TreeMultiset<E> extends AbstractSortedMultiset<E> implements 
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <T> void successor(AvlNode<T> a, AvlNode<T> b) {
         ((AvlNode) a).succ = b;
         ((AvlNode) b).pred = a;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <T> void successor(AvlNode<T> a, AvlNode<T> b, AvlNode<T> c) {
         successor(a, b);
         successor(b, c);

@@ -5,7 +5,7 @@ import java.util.BitSet;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import net.lingala.zip4j.crypto.PBKDF2.BinTools;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class CharMatcher implements Predicate<Character> {
     private static final int DISTINCT_CHARS = 65536;
@@ -146,11 +146,11 @@ public abstract class CharMatcher implements Predicate<Character> {
         return new AnonymousClass1(this, precomputedPositive(i, bitSet, string.endsWith(".negate()") ? string.substring(0, string.length() - ".negate()".length()) : string + ".negate()"), string);
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.CharMatcher$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.CharMatcher$1, reason: invalid class name */
     class AnonymousClass1 extends NegatedFastMatcher {
         final /* synthetic */ String val$description;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(final CharMatcher this$0, CharMatcher original, final String val$description) {
             super(original);
             this.val$description = val$description;
@@ -403,7 +403,7 @@ public abstract class CharMatcher implements Predicate<Character> {
         return super.toString();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static String showCharacter(char c) {
         char[] cArr = new char[6];
         cArr[0] = '\\';
@@ -1285,7 +1285,7 @@ public abstract class CharMatcher implements Predicate<Character> {
             return this.predicate.apply(Character.valueOf(c));
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.common.base.CharMatcher, com.google.common.base.Predicate
         public boolean apply(Character character) {
             return this.predicate.apply(Preconditions.checkNotNull(character));

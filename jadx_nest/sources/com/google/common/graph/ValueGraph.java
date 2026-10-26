@@ -3,7 +3,7 @@ package com.google.common.graph;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public interface ValueGraph<N, V> extends BaseGraph<N> {
     @Override // com.google.common.graph.BaseGraph, com.google.common.graph.Graph

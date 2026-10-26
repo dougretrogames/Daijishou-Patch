@@ -7,7 +7,7 @@ import org.apache.http.impl.io.EmptyInputStream;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicHttpEntity extends AbstractHttpEntity {
     private InputStream content;
     private long length = -1;

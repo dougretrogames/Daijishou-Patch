@@ -1,6 +1,6 @@
 package org.eclipse.jgit.lib;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class GpgConfig {
     private final boolean forceAnnotated;
     private final GpgFormat keyFormat;
@@ -19,7 +19,7 @@ public class GpgConfig {
 
         private final String configValue;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static GpgFormat[] valuesCustom() {
             GpgFormat[] gpgFormatArrValuesCustom = values();
             int length = gpgFormatArrValuesCustom.length;

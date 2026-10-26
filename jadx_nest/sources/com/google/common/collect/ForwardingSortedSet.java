@@ -6,10 +6,10 @@ import java.util.NoSuchElementException;
 import java.util.SortedSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ForwardingSortedSet<E> extends ForwardingSet<E> implements SortedSet<E> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
     public abstract SortedSet<E> delegate();
 
@@ -49,7 +49,7 @@ public abstract class ForwardingSortedSet<E> extends ForwardingSet<E> implements
         return delegate().tailSet(fromElement);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.ForwardingCollection
     protected boolean standardContains(@CheckForNull Object object) {
         try {
@@ -58,7 +58,7 @@ public abstract class ForwardingSortedSet<E> extends ForwardingSet<E> implements
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.ForwardingCollection
     protected boolean standardRemove(@CheckForNull Object object) {
         try {

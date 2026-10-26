@@ -4,8 +4,8 @@ import android.content.UriMatcher;
 import android.net.Uri;
 import androidx.core.util.Predicate;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class UriMatcherCompat$$ExternalSyntheticLambda0 implements Predicate {
     public final /* synthetic */ UriMatcher f$0;
 

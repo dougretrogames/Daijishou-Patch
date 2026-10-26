@@ -10,7 +10,7 @@ import org.apache.commons.codec.EncoderException;
 import org.apache.commons.codec.StringDecoder;
 import org.apache.commons.codec.StringEncoder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class QCodec extends RFC1522Codec implements StringEncoder, StringDecoder {
     private static final BitSet PRINTABLE_CHARS;
     private static final byte SPACE = 32;

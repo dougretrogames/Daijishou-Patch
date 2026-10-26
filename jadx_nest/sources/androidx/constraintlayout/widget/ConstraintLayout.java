@@ -25,7 +25,7 @@ import java.util.Iterator;
 import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ConstraintLayout extends ViewGroup {
     private static final boolean DEBUG = false;
     private static final boolean DEBUG_DRAW_CONSTRAINTS = false;
@@ -431,7 +431,7 @@ public class ConstraintLayout extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.widget.ConstraintLayout$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.widget.ConstraintLayout$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$androidx$constraintlayout$core$widgets$ConstraintWidget$DimensionBehaviour;
 
@@ -668,9 +668,9 @@ public class ConstraintLayout extends ViewGroup {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    /* JADX WARN: Code duplicated, block: B:75:0x0188  */
-    /* JADX WARN: Code duplicated, block: B:78:0x0191  */
+    /* INFO: Access modifiers changed from: protected */
+    /* WARN: Code duplicated, block: B:75:0x0188  */
+    /* WARN: Code duplicated, block: B:78:0x0191  */
     public void applyConstraintsFromLayoutParams(boolean z, View view, ConstraintWidget constraintWidget, LayoutParams layoutParams, SparseArray<ConstraintWidget> sparseArray) {
         ConstraintWidget constraintWidget2;
         ConstraintWidget constraintWidget3;
@@ -893,7 +893,7 @@ public class ConstraintLayout extends ViewGroup {
         this.mLayoutWidget.fillMetrics(metrics);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public void resolveSystem(ConstraintWidgetContainer constraintWidgetContainer, int i, int i2, int i3) {
         int i4;
         int mode = View.MeasureSpec.getMode(i2);
@@ -924,7 +924,7 @@ public class ConstraintLayout extends ViewGroup {
         constraintWidgetContainer.measure(i, mode, i8, mode2, i9, this.mLastMeasureWidth, this.mLastMeasureHeight, i4, iMax);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public void resolveMeasuredDimension(int i, int i2, int i3, int i4, boolean z, boolean z2) {
         int i5 = this.mMeasurer.mPaddingHeight;
         int iResolveSizeAndState = resolveSizeAndState(i3 + this.mMeasurer.mPaddingWidth, i, 0);
@@ -983,7 +983,7 @@ public class ConstraintLayout extends ViewGroup {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public boolean isRtl() {
         return (getContext().getApplicationInfo().flags & 4194304) != 0 && 1 == getLayoutDirection();
     }
@@ -994,12 +994,12 @@ public class ConstraintLayout extends ViewGroup {
         return iMax2 > 0 ? iMax2 : iMax;
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x0040 A[PHI: r3
+    /* WARN: Code duplicated, block: B:17:0x0040 A[PHI: r3
   0x0040: PHI (r3v4 androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour) = 
   (r3v3 androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour)
   (r3v0 androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour)
  binds: [B:20:0x004c, B:16:0x003e] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:6:0x001b A[PHI: r2
+    /* WARN: Code duplicated, block: B:6:0x001b A[PHI: r2
   0x001b: PHI (r2v4 androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour) = 
   (r2v3 androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour)
   (r2v0 androidx.constraintlayout.core.widgets.ConstraintWidget$DimensionBehaviour)
@@ -1115,7 +1115,7 @@ public class ConstraintLayout extends ViewGroup {
         return new LayoutParams(getContext(), attributeSet);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup
     public LayoutParams generateDefaultLayoutParams() {
         return new LayoutParams(-2, -2);
@@ -2085,16 +2085,16 @@ public class ConstraintLayout extends ViewGroup {
             this.helped = false;
         }
 
-        /* JADX WARN: Code duplicated, block: B:17:0x004a  */
-        /* JADX WARN: Code duplicated, block: B:20:0x0051  */
-        /* JADX WARN: Code duplicated, block: B:23:0x0058  */
-        /* JADX WARN: Code duplicated, block: B:26:0x005e  */
-        /* JADX WARN: Code duplicated, block: B:29:0x0064  */
-        /* JADX WARN: Code duplicated, block: B:38:0x007a  */
-        /* JADX WARN: Code duplicated, block: B:39:0x0082 A[DONT_INVERT] */
-        /* JADX WARN: Code duplicated, block: B:40:0x0084  */
-        /* JADX WARN: Code duplicated, block: B:41:0x008b A[DONT_INVERT] */
-        /* JADX WARN: Code duplicated, block: B:42:0x008d  */
+        /* WARN: Code duplicated, block: B:17:0x004a  */
+        /* WARN: Code duplicated, block: B:20:0x0051  */
+        /* WARN: Code duplicated, block: B:23:0x0058  */
+        /* WARN: Code duplicated, block: B:26:0x005e  */
+        /* WARN: Code duplicated, block: B:29:0x0064  */
+        /* WARN: Code duplicated, block: B:38:0x007a  */
+        /* WARN: Code duplicated, block: B:39:0x0082 A[DONT_INVERT] */
+        /* WARN: Code duplicated, block: B:40:0x0084  */
+        /* WARN: Code duplicated, block: B:41:0x008b A[DONT_INVERT] */
+        /* WARN: Code duplicated, block: B:42:0x008d  */
         @Override // android.view.ViewGroup.MarginLayoutParams, android.view.ViewGroup.LayoutParams
         public void resolveLayoutDirection(int i) {
             int i2;

@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 import okhttp3.Headers;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ResponseParamsProducer implements ParamsProducer {
     private final Map<MockResponse, ResponseParams> cache = new HashMap();
     private final ResponseParams defaults;

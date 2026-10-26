@@ -6,8 +6,8 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlinx.coroutines.selects.SelectInstance;
 
-/* JADX INFO: compiled from: JobSupport.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: JobSupport.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 /* synthetic */ class JobSupport$onAwaitInternal$1 extends FunctionReferenceImpl implements Function3<JobSupport, SelectInstance<?>, Object, Unit> {
     public static final JobSupport$onAwaitInternal$1 INSTANCE = new JobSupport$onAwaitInternal$1();
@@ -22,7 +22,7 @@ import kotlinx.coroutines.selects.SelectInstance;
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(JobSupport jobSupport, SelectInstance<?> selectInstance, Object obj) {
         jobSupport.onAwaitInternalRegFunc(selectInstance, obj);
     }

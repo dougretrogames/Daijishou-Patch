@@ -1,6 +1,6 @@
 package org.eclipse.jgit.lib;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CoreConfig {
     public static final boolean DEFAULT_COMMIT_GRAPH_ENABLE = false;
     public static final Config.SectionParser<CoreConfig> KEY = new CoreConfig$$ExternalSyntheticLambda0();
@@ -15,7 +15,7 @@ public class CoreConfig {
         TRUE,
         INPUT;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static AutoCRLF[] valuesCustom() {
             AutoCRLF[] autoCRLFArrValuesCustom = values();
             int length = autoCRLFArrValuesCustom.length;
@@ -29,7 +29,7 @@ public class CoreConfig {
         MINIMAL,
         DEFAULT;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static CheckStat[] valuesCustom() {
             CheckStat[] checkStatArrValuesCustom = values();
             int length = checkStatArrValuesCustom.length;
@@ -44,7 +44,7 @@ public class CoreConfig {
         LF,
         NATIVE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static EOL[] valuesCustom() {
             EOL[] eolArrValuesCustom = values();
             int length = eolArrValuesCustom.length;
@@ -61,7 +61,7 @@ public class CoreConfig {
         AUTO_LF,
         DIRECT;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static EolStreamType[] valuesCustom() {
             EolStreamType[] eolStreamTypeArrValuesCustom = values();
             int length = eolStreamTypeArrValuesCustom.length;
@@ -76,7 +76,7 @@ public class CoreConfig {
         TRUE,
         DOTGITONLY;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static HideDotFiles[] valuesCustom() {
             HideDotFiles[] hideDotFilesArrValuesCustom = values();
             int length = hideDotFilesArrValuesCustom.length;
@@ -91,7 +91,7 @@ public class CoreConfig {
         TRUE,
         ALWAYS;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static LogRefUpdates[] valuesCustom() {
             LogRefUpdates[] logRefUpdatesArrValuesCustom = values();
             int length = logRefUpdatesArrValuesCustom.length;
@@ -105,7 +105,7 @@ public class CoreConfig {
         FALSE,
         TRUE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static SymLinks[] valuesCustom() {
             SymLinks[] symLinksArrValuesCustom = values();
             int length = symLinksArrValuesCustom.length;
@@ -119,7 +119,7 @@ public class CoreConfig {
         ALWAYS,
         AFTER_OPEN;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static TrustLooseRefStat[] valuesCustom() {
             TrustLooseRefStat[] trustLooseRefStatArrValuesCustom = values();
             int length = trustLooseRefStatArrValuesCustom.length;
@@ -135,7 +135,7 @@ public class CoreConfig {
         AFTER_OPEN,
         UNSET;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static TrustPackedRefsStat[] valuesCustom() {
             TrustPackedRefsStat[] trustPackedRefsStatArrValuesCustom = values();
             int length = trustPackedRefsStatArrValuesCustom.length;
@@ -145,7 +145,7 @@ public class CoreConfig {
         }
     }
 
-    /* JADX INFO: renamed from: $r8$lambda$thbCEp4DVG-YBcSB7wQUdTxFoRw, reason: not valid java name */
+    /* INFO: renamed from: $r8$lambda$thbCEp4DVG-YBcSB7wQUdTxFoRw, reason: not valid java name */
     public static /* synthetic */ CoreConfig m5776$r8$lambda$thbCEp4DVGYBcSB7wQUdTxFoRw(Config config) {
         return new CoreConfig(config);
     }

@@ -30,7 +30,7 @@ import java.util.Map;
 import java.util.Set;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ShortcutInfoCompat {
     private static final String EXTRA_LOCUS_ID = "extraLocusId";
     private static final String EXTRA_LONG_LIVED = "extraLongLived";

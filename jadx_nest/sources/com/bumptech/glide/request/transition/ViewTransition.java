@@ -4,7 +4,7 @@ import android.content.Context;
 import android.view.View;
 import android.view.animation.Animation;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ViewTransition<R> implements Transition<R> {
     private final ViewTransitionAnimationFactory viewTransitionAnimationFactory;
 

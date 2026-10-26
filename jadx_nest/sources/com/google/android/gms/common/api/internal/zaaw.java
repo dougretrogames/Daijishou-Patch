@@ -20,8 +20,8 @@ import java.util.Set;
 import java.util.concurrent.Future;
 import java.util.concurrent.locks.Lock;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class zaaw implements zabf {
     private final zabi zaa;
     private final Lock zab;
@@ -55,7 +55,7 @@ public final class zaaw implements zabf {
         this.zac = context;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void zaA() {
         this.zam = false;
         this.zaa.zag.zad = Collections.emptySet();
@@ -95,7 +95,7 @@ public final class zaaw implements zabf {
         this.zaa.zah.zab(this.zai.isEmpty() ? null : this.zai);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void zaD(ConnectionResult connectionResult) {
         zaz();
         zaB(!connectionResult.hasResolution());
@@ -103,7 +103,7 @@ public final class zaaw implements zabf {
         this.zaa.zah.zaa(connectionResult);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void zaE(ConnectionResult connectionResult, Api api, boolean z) {
         int priority = api.zac().getPriority();
         if ((!z || connectionResult.hasResolution() || this.zad.getErrorResolutionIntent(connectionResult.getErrorCode()) != null) && (this.zae == null || priority < this.zaf)) {
@@ -114,7 +114,7 @@ public final class zaaw implements zabf {
         zabiVar.zab.put(api.zab(), connectionResult);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void zaF() {
         if (this.zah != 0) {
             return;
@@ -137,7 +137,7 @@ public final class zaaw implements zabf {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean zaG(int i) {
         if (this.zag == i) {
             return true;
@@ -150,7 +150,7 @@ public final class zaaw implements zabf {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean zaH() {
         int i = this.zah - 1;
         this.zah = i;
@@ -172,7 +172,7 @@ public final class zaaw implements zabf {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean zaI(ConnectionResult connectionResult) {
         return this.zal && !connectionResult.hasResolution();
     }
@@ -246,7 +246,7 @@ public final class zaaw implements zabf {
         throw new IllegalStateException("GoogleApiClient is not connected yet.");
     }
 
-    /* JADX WARN: Type inference failed for: r0v13, types: [com.google.android.gms.common.api.Api$Client, com.google.android.gms.signin.zae] */
+    /* WARN: Type inference failed for: r0v13, types: [com.google.android.gms.common.api.Api$Client, com.google.android.gms.signin.zae] */
     @Override // com.google.android.gms.common.api.internal.zabf
     public final void zad() {
         this.zaa.zab.clear();

@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class FragmentManagerState implements Parcelable {
     public static final Parcelable.Creator<FragmentManagerState> CREATOR = new AnonymousClass1();
     ArrayList<String> mActive;
@@ -53,18 +53,18 @@ final class FragmentManagerState implements Parcelable {
         parcel.writeTypedList(this.mLaunchedFragments);
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentManagerState$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentManagerState$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.Creator<FragmentManagerState> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public FragmentManagerState createFromParcel(Parcel parcel) {
             return new FragmentManagerState(parcel);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public FragmentManagerState[] newArray(int i) {
             return new FragmentManagerState[i];

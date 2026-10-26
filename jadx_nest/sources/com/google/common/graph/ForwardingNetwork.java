@@ -3,7 +3,7 @@ package com.google.common.graph;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class ForwardingNetwork<N, E> extends AbstractNetwork<N, E> {
     abstract Network<N, E> delegate();

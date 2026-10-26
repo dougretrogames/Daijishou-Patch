@@ -11,7 +11,7 @@ import androidx.appcompat.view.menu.SubMenuBuilder;
 import androidx.appcompat.widget.ActionBarContextView;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class StandaloneActionMode extends ActionMode implements MenuBuilder.Callback {
     private ActionMode.Callback mCallback;
     private Context mContext;

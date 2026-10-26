@@ -10,8 +10,8 @@ import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: ProduceState.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: ProduceState.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u00002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0011\n\u0002\b\u0003\u001an\u0010\u0000\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001a\u0002H\u00022\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u00052\b\u0010\u0007\u001a\u0004\u0018\u00010\u00052-\u0010\b\u001a)\b\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00020\n\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u00050\t¢\u0006\u0002\b\rH\u0007¢\u0006\u0002\u0010\u000e\u001ad\u0010\u0000\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001a\u0002H\u00022\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052\b\u0010\u0006\u001a\u0004\u0018\u00010\u00052-\u0010\b\u001a)\b\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00020\n\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u00050\t¢\u0006\u0002\b\rH\u0007¢\u0006\u0002\u0010\u000f\u001aZ\u0010\u0000\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001a\u0002H\u00022\b\u0010\u0004\u001a\u0004\u0018\u00010\u00052-\u0010\b\u001a)\b\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00020\n\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u00050\t¢\u0006\u0002\b\rH\u0007¢\u0006\u0002\u0010\u0010\u001ah\u0010\u0000\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001a\u0002H\u00022\u0016\u0010\u0011\u001a\f\u0012\b\b\u0001\u0012\u0004\u0018\u00010\u00050\u0012\"\u0004\u0018\u00010\u00052-\u0010\b\u001a)\b\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00020\n\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u00050\t¢\u0006\u0002\b\rH\u0007¢\u0006\u0002\u0010\u0013\u001aP\u0010\u0000\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001a\u0002H\u00022-\u0010\b\u001a)\b\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00020\n\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b\u0012\u0006\u0012\u0004\u0018\u00010\u00050\t¢\u0006\u0002\b\rH\u0007¢\u0006\u0002\u0010\u0014¨\u0006\u0015"}, d2 = {"produceState", "Landroidx/compose/runtime/State;", ExifInterface.GPS_DIRECTION_TRUE, "initialValue", "key1", "", "key2", "key3", "producer", "Lkotlin/Function2;", "Landroidx/compose/runtime/ProduceStateScope;", "Lkotlin/coroutines/Continuation;", "", "Lkotlin/ExtensionFunctionType;", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;", "(Ljava/lang/Object;Ljava/lang/Object;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;", "keys", "", "(Ljava/lang/Object;[Ljava/lang/Object;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;", "(Ljava/lang/Object;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)Landroidx/compose/runtime/State;", "runtime_release"}, k = 5, mv = {1, 8, 0}, xi = 48, xs = "androidx/compose/runtime/SnapshotStateKt")
 final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
     public static final <T> State<T> produceState(T t, Function2<? super ProduceStateScope<T>, ? super Continuation<? super Unit>, ? extends Object> function2, Composer composer, int i) {
@@ -37,8 +37,8 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
         return mutableState;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$1, reason: invalid class name */
-    /* JADX INFO: compiled from: ProduceState.kt */
+    /* INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$1, reason: invalid class name */
+    /* INFO: compiled from: ProduceState.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$1", f = "ProduceState.kt", i = {}, l = {83}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -47,8 +47,8 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
         private /* synthetic */ Object L$0;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(Function2<? super ProduceStateScope<T>, ? super Continuation<? super Unit>, ? extends Object> function2, MutableState<T> mutableState, Continuation<? super AnonymousClass1> continuation) {
             super(2, continuation);
             this.$producer = function2;
@@ -67,14 +67,14 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
             return ((AnonymousClass1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Type inference incomplete: some casts might be missing */
-        /*  JADX ERROR: JadxRuntimeException in pass: ModVisitor
-            jadx.core.utils.exceptions.JadxRuntimeException: Can't change immutable type java.lang.Object to androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$1 for r5v1 'this'  java.lang.Object
-            	at jadx.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
-            	at jadx.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
-            	at jadx.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
-            	at jadx.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
-            	at jadx.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
+        /* WARN: Type inference incomplete: some casts might be missing */
+        /* ERROR: decompilerRuntimeException in pass: ModVisitor
+            decompiler.core.utils.exceptions.decompilerRuntimeException: Can't change immutable type java.lang.Object to androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$1 for r5v1 'this'  java.lang.Object
+            	at decompiler.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
+            	at decompiler.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
+            	at decompiler.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
+            	at decompiler.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
+            	at decompiler.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final java.lang.Object invokeSuspend(java.lang.Object r6) {
@@ -136,8 +136,8 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
         return mutableState;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$2, reason: invalid class name */
-    /* JADX INFO: compiled from: ProduceState.kt */
+    /* INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$2, reason: invalid class name */
+    /* INFO: compiled from: ProduceState.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$2", f = "ProduceState.kt", i = {}, l = {116}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass2 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -146,8 +146,8 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
         private /* synthetic */ Object L$0;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass2(Function2<? super ProduceStateScope<T>, ? super Continuation<? super Unit>, ? extends Object> function2, MutableState<T> mutableState, Continuation<? super AnonymousClass2> continuation) {
             super(2, continuation);
             this.$producer = function2;
@@ -166,14 +166,14 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
             return ((AnonymousClass2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Type inference incomplete: some casts might be missing */
-        /*  JADX ERROR: JadxRuntimeException in pass: ModVisitor
-            jadx.core.utils.exceptions.JadxRuntimeException: Can't change immutable type java.lang.Object to androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$2 for r5v1 'this'  java.lang.Object
-            	at jadx.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
-            	at jadx.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
-            	at jadx.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
-            	at jadx.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
-            	at jadx.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
+        /* WARN: Type inference incomplete: some casts might be missing */
+        /* ERROR: decompilerRuntimeException in pass: ModVisitor
+            decompiler.core.utils.exceptions.decompilerRuntimeException: Can't change immutable type java.lang.Object to androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$2 for r5v1 'this'  java.lang.Object
+            	at decompiler.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
+            	at decompiler.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
+            	at decompiler.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
+            	at decompiler.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
+            	at decompiler.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final java.lang.Object invokeSuspend(java.lang.Object r6) {
@@ -235,8 +235,8 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
         return mutableState;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$3, reason: invalid class name */
-    /* JADX INFO: compiled from: ProduceState.kt */
+    /* INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$3, reason: invalid class name */
+    /* INFO: compiled from: ProduceState.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$3", f = "ProduceState.kt", i = {}, l = {150}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass3 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -245,8 +245,8 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
         private /* synthetic */ Object L$0;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass3(Function2<? super ProduceStateScope<T>, ? super Continuation<? super Unit>, ? extends Object> function2, MutableState<T> mutableState, Continuation<? super AnonymousClass3> continuation) {
             super(2, continuation);
             this.$producer = function2;
@@ -265,14 +265,14 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
             return ((AnonymousClass3) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Type inference incomplete: some casts might be missing */
-        /*  JADX ERROR: JadxRuntimeException in pass: ModVisitor
-            jadx.core.utils.exceptions.JadxRuntimeException: Can't change immutable type java.lang.Object to androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$3 for r5v1 'this'  java.lang.Object
-            	at jadx.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
-            	at jadx.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
-            	at jadx.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
-            	at jadx.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
-            	at jadx.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
+        /* WARN: Type inference incomplete: some casts might be missing */
+        /* ERROR: decompilerRuntimeException in pass: ModVisitor
+            decompiler.core.utils.exceptions.decompilerRuntimeException: Can't change immutable type java.lang.Object to androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$3 for r5v1 'this'  java.lang.Object
+            	at decompiler.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
+            	at decompiler.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
+            	at decompiler.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
+            	at decompiler.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
+            	at decompiler.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final java.lang.Object invokeSuspend(java.lang.Object r6) {
@@ -334,8 +334,8 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
         return mutableState;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$4, reason: invalid class name */
-    /* JADX INFO: compiled from: ProduceState.kt */
+    /* INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$4, reason: invalid class name */
+    /* INFO: compiled from: ProduceState.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$4", f = "ProduceState.kt", i = {}, l = {185}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass4 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -344,8 +344,8 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
         private /* synthetic */ Object L$0;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass4(Function2<? super ProduceStateScope<T>, ? super Continuation<? super Unit>, ? extends Object> function2, MutableState<T> mutableState, Continuation<? super AnonymousClass4> continuation) {
             super(2, continuation);
             this.$producer = function2;
@@ -364,14 +364,14 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
             return ((AnonymousClass4) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Type inference incomplete: some casts might be missing */
-        /*  JADX ERROR: JadxRuntimeException in pass: ModVisitor
-            jadx.core.utils.exceptions.JadxRuntimeException: Can't change immutable type java.lang.Object to androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$4 for r5v1 'this'  java.lang.Object
-            	at jadx.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
-            	at jadx.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
-            	at jadx.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
-            	at jadx.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
-            	at jadx.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
+        /* WARN: Type inference incomplete: some casts might be missing */
+        /* ERROR: decompilerRuntimeException in pass: ModVisitor
+            decompiler.core.utils.exceptions.decompilerRuntimeException: Can't change immutable type java.lang.Object to androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$4 for r5v1 'this'  java.lang.Object
+            	at decompiler.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
+            	at decompiler.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
+            	at decompiler.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
+            	at decompiler.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
+            	at decompiler.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final java.lang.Object invokeSuspend(java.lang.Object r6) {
@@ -433,8 +433,8 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
         return mutableState;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$5, reason: invalid class name */
-    /* JADX INFO: compiled from: ProduceState.kt */
+    /* INFO: renamed from: androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$5, reason: invalid class name */
+    /* INFO: compiled from: ProduceState.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$5", f = "ProduceState.kt", i = {}, l = {219}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass5 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -443,8 +443,8 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
         private /* synthetic */ Object L$0;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass5(Function2<? super ProduceStateScope<T>, ? super Continuation<? super Unit>, ? extends Object> function2, MutableState<T> mutableState, Continuation<? super AnonymousClass5> continuation) {
             super(2, continuation);
             this.$producer = function2;
@@ -463,14 +463,14 @@ final /* synthetic */ class SnapshotStateKt__ProduceStateKt {
             return ((AnonymousClass5) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Type inference incomplete: some casts might be missing */
-        /*  JADX ERROR: JadxRuntimeException in pass: ModVisitor
-            jadx.core.utils.exceptions.JadxRuntimeException: Can't change immutable type java.lang.Object to androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$5 for r5v1 'this'  java.lang.Object
-            	at jadx.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
-            	at jadx.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
-            	at jadx.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
-            	at jadx.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
-            	at jadx.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
+        /* WARN: Type inference incomplete: some casts might be missing */
+        /* ERROR: decompilerRuntimeException in pass: ModVisitor
+            decompiler.core.utils.exceptions.decompilerRuntimeException: Can't change immutable type java.lang.Object to androidx.compose.runtime.SnapshotStateKt__ProduceStateKt$produceState$5 for r5v1 'this'  java.lang.Object
+            	at decompiler.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
+            	at decompiler.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
+            	at decompiler.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
+            	at decompiler.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
+            	at decompiler.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final java.lang.Object invokeSuspend(java.lang.Object r6) {

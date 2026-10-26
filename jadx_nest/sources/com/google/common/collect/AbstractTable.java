@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractTable<R, C, V> implements Table<R, C, V> {
 
@@ -180,13 +180,13 @@ abstract class AbstractTable<R, C, V> implements Table<R, C, V> {
         return new Values();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.AbstractTable$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.AbstractTable$1, reason: invalid class name */
     class AnonymousClass1 extends TransformedIterator<Table.Cell<R, C, V>, V> {
         AnonymousClass1(final AbstractTable this$0, Iterator backingIterator) {
             super(backingIterator);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.TransformedIterator
         @ParametricNullness
         public V transform(Table.Cell<R, C, V> cell) {

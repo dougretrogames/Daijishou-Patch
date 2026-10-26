@@ -3,7 +3,7 @@ package io.opencensus.common;
 import java.util.TreeMap;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ServerStatsFieldEnums {
     private static final int TOTALSIZE = computeTotalSize();
 

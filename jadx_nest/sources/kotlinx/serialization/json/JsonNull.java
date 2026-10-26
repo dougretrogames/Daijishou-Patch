@@ -10,8 +10,8 @@ import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.Serializable;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: compiled from: JsonElement.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: JsonElement.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\bÇ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00000\u000bHÆ\u0001R\u0014\u0010\u0003\u001a\u00020\u0004X\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\b8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0007\u0010\t¨\u0006\f"}, d2 = {"Lkotlinx/serialization/json/JsonNull;", "Lkotlinx/serialization/json/JsonPrimitive;", "()V", "content", "", "getContent", "()Ljava/lang/String;", "isString", "", "()Z", "serializer", "Lkotlinx/serialization/KSerializer;", "kotlinx-serialization-json"}, k = 1, mv = {1, 9, 0}, xi = 48)
 @Serializable(with = JsonNullSerializer.class)
 public final class JsonNull extends JsonPrimitive {
@@ -20,13 +20,13 @@ public final class JsonNull extends JsonPrimitive {
     private static final /* synthetic */ Lazy<KSerializer<Object>> $cachedSerializer$delegate = LazyKt.lazy(LazyThreadSafetyMode.PUBLICATION, (Function0) AnonymousClass1.INSTANCE);
 
     @Override // kotlinx.serialization.json.JsonPrimitive
-    /* JADX INFO: renamed from: isString */
+    /* INFO: renamed from: isString */
     public boolean getIsString() {
         return false;
     }
 
-    /* JADX INFO: renamed from: kotlinx.serialization.json.JsonNull$1, reason: invalid class name */
-    /* JADX INFO: compiled from: JsonElement.kt */
+    /* INFO: renamed from: kotlinx.serialization.json.JsonNull$1, reason: invalid class name */
+    /* INFO: compiled from: JsonElement.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function0<KSerializer<Object>> {
         public static final AnonymousClass1 INSTANCE = new AnonymousClass1();

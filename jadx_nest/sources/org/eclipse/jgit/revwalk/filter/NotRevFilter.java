@@ -4,7 +4,7 @@ import java.io.IOException;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NotRevFilter extends RevFilter {
     private final RevFilter a;
 

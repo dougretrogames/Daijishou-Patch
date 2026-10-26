@@ -6,7 +6,7 @@ import java.io.RandomAccessFile;
 import java.nio.file.StandardOpenOption;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class RandomAccessFileOutputStream extends OutputStream {
     private final RandomAccessFile randomAccessFile;
 

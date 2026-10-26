@@ -7,11 +7,11 @@ import java.util.function.Predicate;
 import org.apache.commons.collections4.Unmodifiable;
 import org.apache.commons.collections4.iterators.UnmodifiableIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UnmodifiableSet<E> extends AbstractSerializableSetDecorator<E> implements Unmodifiable {
     private static final long serialVersionUID = 6499119872185240161L;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <E> Set<E> unmodifiableSet(Set<? extends E> set) {
         return set instanceof Unmodifiable ? set : new UnmodifiableSet(set);
     }

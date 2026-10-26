@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.math.BigInteger;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class UnsignedLong extends Number implements Comparable<UnsignedLong>, Serializable {
     private static final long UNSIGNED_MASK = Long.MAX_VALUE;

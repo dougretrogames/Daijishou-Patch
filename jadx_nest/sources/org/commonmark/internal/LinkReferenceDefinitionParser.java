@@ -7,7 +7,7 @@ import org.commonmark.internal.util.LinkScanner;
 import org.commonmark.internal.util.Parsing;
 import org.commonmark.node.LinkReferenceDefinition;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LinkReferenceDefinitionParser {
     private String destination;
     private StringBuilder label;
@@ -28,9 +28,9 @@ public class LinkReferenceDefinitionParser {
         PARAGRAPH
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code duplicated, block: B:20:0x0044 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:23:? A[LOOP:0: B:6:0x0015->B:23:?, LOOP_END, SYNTHETIC] */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Code duplicated, block: B:20:0x0044 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:23:? A[LOOP:0: B:6:0x0015->B:23:?, LOOP_END, SYNTHETIC] */
     public void parse(CharSequence charSequence) {
         if (this.paragraph.length() != 0) {
             this.paragraph.append('\n');
@@ -86,7 +86,7 @@ public class LinkReferenceDefinitionParser {
         }
     }
 
-    /* JADX INFO: renamed from: org.commonmark.internal.LinkReferenceDefinitionParser$1, reason: invalid class name */
+    /* INFO: renamed from: org.commonmark.internal.LinkReferenceDefinitionParser$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$org$commonmark$internal$LinkReferenceDefinitionParser$State;
 

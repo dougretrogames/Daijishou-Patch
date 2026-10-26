@@ -3,7 +3,7 @@ package org.apache.http.impl.execchain;
 import org.apache.http.HttpException;
 import org.apache.http.HttpResponse;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TunnelRefusedException extends HttpException {
     private static final long serialVersionUID = -8646722842745617323L;
     private final HttpResponse response;

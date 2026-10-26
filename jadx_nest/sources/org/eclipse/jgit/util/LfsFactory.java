@@ -17,7 +17,7 @@ import org.eclipse.jgit.treewalk.FileTreeIterator;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.filter.PathFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LfsFactory {
     private static LfsFactory instance = new LfsFactory();
 
@@ -67,12 +67,12 @@ public class LfsFactory {
         return getPrePushHook(repository, printStream);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v0 */
-    /* JADX WARN: Type inference failed for: r0v1, types: [java.lang.Throwable] */
-    /* JADX WARN: Type inference failed for: r0v4, types: [java.lang.String] */
-    /* JADX WARN: Type inference failed for: r0v5 */
-    /* JADX WARN: Type inference failed for: r3v2, types: [java.lang.Throwable] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v0 */
+    /* WARN: Type inference failed for: r0v1, types: [java.lang.Throwable] */
+    /* WARN: Type inference failed for: r0v4, types: [java.lang.String] */
+    /* WARN: Type inference failed for: r0v5 */
+    /* WARN: Type inference failed for: r3v2, types: [java.lang.Throwable] */
     public static Attributes getAttributesForPath(Repository repository, String str) throws IOException {
         Attributes attributes;
         ?? r0 = 0;
@@ -116,12 +116,12 @@ public class LfsFactory {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v0 */
-    /* JADX WARN: Type inference failed for: r0v1, types: [java.lang.Throwable] */
-    /* JADX WARN: Type inference failed for: r0v4, types: [java.lang.String] */
-    /* JADX WARN: Type inference failed for: r0v5 */
-    /* JADX WARN: Type inference failed for: r1v2, types: [java.lang.Throwable] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v0 */
+    /* WARN: Type inference failed for: r0v1, types: [java.lang.Throwable] */
+    /* WARN: Type inference failed for: r0v4, types: [java.lang.String] */
+    /* WARN: Type inference failed for: r0v5 */
+    /* WARN: Type inference failed for: r1v2, types: [java.lang.Throwable] */
     public static Attributes getAttributesForPath(Repository repository, String str, RevCommit revCommit) throws IOException {
         Attributes attributes;
         if (revCommit == null) {

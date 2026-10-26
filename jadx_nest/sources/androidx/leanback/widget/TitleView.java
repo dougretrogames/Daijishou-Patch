@@ -9,7 +9,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TitleView extends FrameLayout implements TitleViewAdapter.Provider {
     private int flags;
     private ImageView mBadgeView;
@@ -18,7 +18,7 @@ public class TitleView extends FrameLayout implements TitleViewAdapter.Provider 
     private TextView mTextView;
     private final TitleViewAdapter mTitleViewAdapter;
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.TitleView$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.TitleView$1, reason: invalid class name */
     class AnonymousClass1 extends TitleViewAdapter {
         AnonymousClass1() {
         }

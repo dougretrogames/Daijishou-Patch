@@ -3,7 +3,7 @@ package com.bumptech.glide.request.transition;
 import android.graphics.drawable.Drawable;
 import com.bumptech.glide.load.DataSource;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DrawableCrossFadeFactory implements TransitionFactory<Drawable> {
     private final int duration;
     private final boolean isCrossFadeEnabled;

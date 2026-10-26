@@ -5,8 +5,8 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.functions.Function0;
 
-/* JADX INFO: compiled from: Balloon.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: Balloon.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
 public final class Balloon$relayShowAlignRight$$inlined$relay$1 implements Function0<Unit> {
     final /* synthetic */ View $anchor$inlined;
@@ -31,7 +31,7 @@ public final class Balloon$relayShowAlignRight$$inlined$relay$1 implements Funct
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2() {
         OnBalloonDismissListener onBalloonDismissListener = this.$previousListener;
         if (onBalloonDismissListener != null) {

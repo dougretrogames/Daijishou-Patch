@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.SortedSet;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PredicatedSortedSet<E> extends PredicatedSet<E> implements SortedSet<E> {
     private static final long serialVersionUID = -9110948148132275052L;
 
@@ -21,7 +21,7 @@ public class PredicatedSortedSet<E> extends PredicatedSet<E> implements SortedSe
         return decorated().comparator();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.set.PredicatedSet, org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public SortedSet<E> decorated() {
         return (SortedSet) super.decorated();

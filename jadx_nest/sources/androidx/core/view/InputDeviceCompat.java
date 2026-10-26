@@ -1,6 +1,6 @@
 package androidx.core.view;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class InputDeviceCompat {
     public static final int SOURCE_ANY = -256;
     public static final int SOURCE_CLASS_BUTTON = 1;

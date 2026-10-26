@@ -21,14 +21,14 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class BackupAndRestoreSettingsNavFragment$onCreateView$4$1 extends Lambda<Unit> implements Function0<Unit> {
     final /* synthetic */ DaijishouApplication.WrappedLogger $logger;
     final /* synthetic */ BackupAndRestoreSettingsNavFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     BackupAndRestoreSettingsNavFragment$onCreateView$4$1(BackupAndRestoreSettingsNavFragment backupAndRestoreSettingsNavFragment, DaijishouApplication.WrappedLogger wrappedLogger) {
         super(0);
         this.this$0 = backupAndRestoreSettingsNavFragment;
@@ -41,8 +41,8 @@ final class BackupAndRestoreSettingsNavFragment$onCreateView$4$1 extends Lambda<
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$4$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$4$1$1, reason: invalid class name */
+    /* INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$4$1$1", f = "BackupAndRestoreSettingsNavFragment.kt", i = {}, l = {236, 237, 243}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -50,7 +50,7 @@ final class BackupAndRestoreSettingsNavFragment$onCreateView$4$1 extends Lambda<
         int label;
         final /* synthetic */ BackupAndRestoreSettingsNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(BackupAndRestoreSettingsNavFragment backupAndRestoreSettingsNavFragment, DaijishouApplication.WrappedLogger wrappedLogger, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = backupAndRestoreSettingsNavFragment;
@@ -75,11 +75,11 @@ final class BackupAndRestoreSettingsNavFragment$onCreateView$4$1 extends Lambda<
             }
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:20:0x0056, code lost:
+        /* WARN: Code restructure failed: missing block: B:20:0x0056, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$4$1.AnonymousClass1.C00721(r7.this$0, null), r7) == r0) goto L24;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:23:0x007e, code lost:
+        /* WARN: Code restructure failed: missing block: B:23:0x007e, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$4$1.AnonymousClass1.AnonymousClass2(r7.this$0, null), r7) == r0) goto L24;
          */
@@ -140,15 +140,15 @@ final class BackupAndRestoreSettingsNavFragment$onCreateView$4$1 extends Lambda<
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$4$1$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$4$1$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$4$1$1$1", f = "BackupAndRestoreSettingsNavFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         static final class C00721 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             int label;
             final /* synthetic */ BackupAndRestoreSettingsNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             C00721(BackupAndRestoreSettingsNavFragment backupAndRestoreSettingsNavFragment, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = backupAndRestoreSettingsNavFragment;
@@ -183,15 +183,15 @@ final class BackupAndRestoreSettingsNavFragment$onCreateView$4$1 extends Lambda<
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$4$1$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$4$1$1$2, reason: invalid class name */
+        /* INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.settings_nav_fragments.BackupAndRestoreSettingsNavFragment$onCreateView$4$1$1$2", f = "BackupAndRestoreSettingsNavFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         static final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             int label;
             final /* synthetic */ BackupAndRestoreSettingsNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(BackupAndRestoreSettingsNavFragment backupAndRestoreSettingsNavFragment, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = backupAndRestoreSettingsNavFragment;
@@ -227,7 +227,7 @@ final class BackupAndRestoreSettingsNavFragment$onCreateView$4$1 extends Lambda<
         }
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2() {
         Toast.makeText(this.this$0.requireContext(), this.this$0.getString(R.string.deleting_this_will_take_a_while), 0).show();
         BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this.this$0), Dispatchers.getIO(), null, new AnonymousClass1(this.this$0, this.$logger, null), 2, null);

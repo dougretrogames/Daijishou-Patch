@@ -11,7 +11,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import org.apache.commons.collections4.iterators.IteratorEnumeration;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SortedProperties extends Properties {
     private static final long serialVersionUID = 1;
 
@@ -24,7 +24,7 @@ public class SortedProperties extends Properties {
         return (Set) sortedKeys().map(new SortedProperties$$ExternalSyntheticLambda1(this)).collect(Collectors.toCollection(new SortedProperties$$ExternalSyntheticLambda2()));
     }
 
-    /* JADX INFO: renamed from: lambda$entrySet$0$org-apache-commons-collections4-properties-SortedProperties, reason: not valid java name */
+    /* INFO: renamed from: lambda$entrySet$0$org-apache-commons-collections4-properties-SortedProperties, reason: not valid java name */
     /* synthetic */ AbstractMap.SimpleEntry m5548x9fec02ac(String str) {
         return new AbstractMap.SimpleEntry(str, getProperty(str));
     }

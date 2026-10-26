@@ -18,8 +18,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Ref;
 
-/* JADX INFO: compiled from: WidgetGridNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: WidgetGridNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "resolveInfo", "Landroid/content/pm/ResolveInfo;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class WidgetGridNavFragment$onCreateView$8$3 extends Lambda<Unit> implements Function1<ResolveInfo, Unit> {
     final /* synthetic */ FragmentActivity $activity;
@@ -30,7 +30,7 @@ final class WidgetGridNavFragment$onCreateView$8$3 extends Lambda<Unit> implemen
     final /* synthetic */ Class<? extends WidgetBuilder> $widgetBuilder;
     final /* synthetic */ WidgetGridNavFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     WidgetGridNavFragment$onCreateView$8$3(FragmentActivity fragmentActivity, WidgetGridNavFragment widgetGridNavFragment, Class<? extends WidgetBuilder> cls, Context context, StaticResolveInfoCollectionDialogFragment staticResolveInfoCollectionDialogFragment, Lazy<AppsViewModel> lazy, Ref.BooleanRef booleanRef) {
         super(1);
         this.$activity = fragmentActivity;
@@ -48,7 +48,7 @@ final class WidgetGridNavFragment$onCreateView$8$3 extends Lambda<Unit> implemen
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(ResolveInfo resolveInfo) {
         Intrinsics.checkNotNullParameter(resolveInfo, "resolveInfo");
         String strResolveInfoToResolveInfoStringId = WidgetGridNavFragment.onCreateView$lambda$7$lambda$6(this.$appsViewModel$delegate).resolveInfoToResolveInfoStringId(resolveInfo);
@@ -71,15 +71,15 @@ final class WidgetGridNavFragment$onCreateView$8$3 extends Lambda<Unit> implemen
         this.$dialog.dismiss();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$8$3$1, reason: invalid class name */
-    /* JADX INFO: compiled from: WidgetGridNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$8$3$1, reason: invalid class name */
+    /* INFO: compiled from: WidgetGridNavFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "succeed", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ Ref.BooleanRef $canceled;
         final /* synthetic */ Context $context;
         final /* synthetic */ WidgetGridNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Ref.BooleanRef booleanRef, Context context, WidgetGridNavFragment widgetGridNavFragment) {
             super(1);
             this.$canceled = booleanRef;

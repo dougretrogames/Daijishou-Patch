@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class DefaultDateTypeAdapter<T extends Date> extends TypeAdapter<T> {
     private static final String SIMPLE_NAME = "DefaultDateTypeAdapter";
     private final List<DateFormat> dateFormats;
@@ -45,7 +45,7 @@ public final class DefaultDateTypeAdapter<T extends Date> extends TypeAdapter<T>
 
         protected abstract T deserialize(Date date);
 
-        /* JADX INFO: renamed from: com.google.gson.internal.bind.DefaultDateTypeAdapter$DateType$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.gson.internal.bind.DefaultDateTypeAdapter$DateType$1, reason: invalid class name */
         class AnonymousClass1 extends DateType<Date> {
             @Override // com.google.gson.internal.bind.DefaultDateTypeAdapter.DateType
             protected Date deserialize(Date date) {

@@ -5,7 +5,7 @@ import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.MutableObjectId;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class SHA1Native extends SHA1 {
     private final MessageDigest md = Constants.newMessageDigest();
 

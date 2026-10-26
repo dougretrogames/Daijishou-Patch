@@ -16,7 +16,7 @@ import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.WorkingTreeIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AttributesHandler {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$attributes$Attribute$State = null;
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$treewalk$TreeWalk$OperationType = null;

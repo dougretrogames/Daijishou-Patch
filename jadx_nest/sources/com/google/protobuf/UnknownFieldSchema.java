@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 abstract class UnknownFieldSchema<T, B> {
     abstract void addFixed32(B fields, int number, int value);

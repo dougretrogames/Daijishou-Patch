@@ -7,7 +7,7 @@ import java.util.function.LongPredicate;
 import java.util.function.Predicate;
 import org.apache.commons.collections4.bloomfilter.BloomFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LayeredBloomFilter<T extends BloomFilter<T>> implements BloomFilter<LayeredBloomFilter<T>>, BloomFilterExtractor {
     private final LayerManager<T> layerManager;
     private final Shape shape;
@@ -85,7 +85,7 @@ public class LayeredBloomFilter<T extends BloomFilter<T>> implements BloomFilter
         return bloomFilterExtractor.processBloomFilters(new LayeredBloomFilter$$ExternalSyntheticLambda0(this, new boolean[]{true}));
     }
 
-    /* JADX INFO: renamed from: lambda$contains$1$org-apache-commons-collections4-bloomfilter-LayeredBloomFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$contains$1$org-apache-commons-collections4-bloomfilter-LayeredBloomFilter, reason: not valid java name */
     /* synthetic */ boolean m5534x5565950b(boolean[] zArr, BloomFilter bloomFilter) {
         boolean zContains = contains(bloomFilter) & zArr[0];
         zArr[0] = zContains;

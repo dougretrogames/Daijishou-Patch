@@ -4,7 +4,7 @@ import android.graphics.Path;
 import android.util.Log;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class PathParser {
     private static final String LOGTAG = "PathParser";
 
@@ -129,8 +129,8 @@ public final class PathParser {
         }
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code duplicated, block: B:21:0x0035  */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Code duplicated, block: B:21:0x0035  */
     private static void extract(String str, int i, ExtractFloatResult extractFloatResult) {
         extractFloatResult.mEndWithNegOrDot = false;
         boolean z = false;
@@ -250,8 +250,8 @@ public final class PathParser {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
-        /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+        /* INFO: Access modifiers changed from: private */
+        /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
         public static void addCommand(Path path, float[] fArr, char c, char c2, float[] fArr2) {
             int i;
             int i2;

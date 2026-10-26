@@ -2,8 +2,8 @@ package com.google.android.gms.internal.fido;
 
 import java.math.RoundingMode;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 final /* synthetic */ class zzbg {
     static final /* synthetic */ int[] zza;
 

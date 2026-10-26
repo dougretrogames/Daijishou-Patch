@@ -11,7 +11,7 @@ import org.apache.http.conn.EofSensorInputStream;
 import org.apache.http.conn.EofSensorWatcher;
 import org.apache.http.entity.HttpEntityWrapper;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class ResponseEntityProxy extends HttpEntityWrapper implements EofSensorWatcher {
     private final ConnectionHolder connHolder;
 

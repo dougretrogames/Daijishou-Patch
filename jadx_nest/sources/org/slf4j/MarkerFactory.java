@@ -4,7 +4,7 @@ import org.slf4j.helpers.BasicMarkerFactory;
 import org.slf4j.helpers.Util;
 import org.slf4j.impl.StaticMarkerBinder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MarkerFactory {
     static IMarkerFactory MARKER_FACTORY;
 

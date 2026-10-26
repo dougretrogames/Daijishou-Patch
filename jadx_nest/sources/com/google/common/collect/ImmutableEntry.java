@@ -2,7 +2,7 @@ package com.google.common.collect;
 
 import java.io.Serializable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class ImmutableEntry<K, V> extends AbstractMapEntry<K, V> implements Serializable {
     private static final long serialVersionUID = 0;

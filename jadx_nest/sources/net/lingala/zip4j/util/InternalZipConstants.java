@@ -3,7 +3,7 @@ package net.lingala.zip4j.util;
 import java.io.File;
 import java.nio.charset.Charset;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class InternalZipConstants {
     public static final int AES_AUTH_LENGTH = 10;
     public static final int AES_BLOCK_SIZE = 16;

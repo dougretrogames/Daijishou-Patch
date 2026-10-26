@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 class ImmediateFuture<V> implements ListenableFuture<V> {
     static final ListenableFuture<?> NULL = new ImmediateFuture(null);

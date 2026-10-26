@@ -15,7 +15,7 @@ import com.google.android.material.internal.ThemeEnforcement;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class RangeSlider extends BaseSlider<RangeSlider, OnChangeListener, OnSliderTouchListener> {
     private float minSeparation;
     private int separationUnit;
@@ -550,18 +550,18 @@ public class RangeSlider extends BaseSlider<RangeSlider, OnChangeListener, OnSli
             parcel.writeInt(this.separationUnit);
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.slider.RangeSlider$RangeSliderState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.slider.RangeSlider$RangeSliderState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<RangeSliderState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public RangeSliderState createFromParcel(Parcel parcel) {
                 return new RangeSliderState(parcel, null);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public RangeSliderState[] newArray(int i) {
                 return new RangeSliderState[i];

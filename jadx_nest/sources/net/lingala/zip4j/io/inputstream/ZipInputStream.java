@@ -23,7 +23,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import net.lingala.zip4j.util.PasswordCallback;
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ZipInputStream extends InputStream {
     private boolean canSkipExtendedLocalFileHeader;
     private CRC32 crc32;
@@ -38,22 +38,22 @@ public class ZipInputStream extends InputStream {
     private boolean streamClosed;
     private Zip4jConfig zip4jConfig;
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ZipInputStream(InputStream inputStream) {
         this(inputStream, (char[]) null, (Charset) null);
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ZipInputStream(InputStream inputStream, Charset charset) {
         this(inputStream, (char[]) null, charset);
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ZipInputStream(InputStream inputStream, char[] cArr) {
         this(inputStream, cArr, (Charset) null);
     }
 
-    /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'this' call moved to the top of the method (can break code semantics) */
     public ZipInputStream(InputStream inputStream, PasswordCallback passwordCallback) {
         this(inputStream, passwordCallback, (Charset) null);
     }

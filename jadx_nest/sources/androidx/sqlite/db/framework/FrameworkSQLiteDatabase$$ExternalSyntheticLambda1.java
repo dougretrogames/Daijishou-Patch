@@ -6,8 +6,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteQuery;
 import kotlin.jvm.functions.Function4;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class FrameworkSQLiteDatabase$$ExternalSyntheticLambda1 implements SQLiteDatabase.CursorFactory {
     public final /* synthetic */ Function4 f$0;
 

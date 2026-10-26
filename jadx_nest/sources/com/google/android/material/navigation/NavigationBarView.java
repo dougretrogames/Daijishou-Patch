@@ -32,7 +32,7 @@ import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class NavigationBarView extends FrameLayout {
     public static final int LABEL_VISIBILITY_AUTO = -1;
     public static final int LABEL_VISIBILITY_LABELED = 1;
@@ -142,7 +142,7 @@ public abstract class NavigationBarView extends FrameLayout {
         navigationBarMenu.setCallback(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.navigation.NavigationBarView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.navigation.NavigationBarView$1, reason: invalid class name */
     class AnonymousClass1 implements MenuBuilder.Callback {
         @Override // androidx.appcompat.view.menu.MenuBuilder.Callback
         public void onMenuModeChange(MenuBuilder menuBuilder) {
@@ -433,12 +433,12 @@ public abstract class NavigationBarView extends FrameLayout {
             this.menuPresenterState = parcel.readBundle(classLoader);
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.navigation.NavigationBarView$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.navigation.NavigationBarView$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);

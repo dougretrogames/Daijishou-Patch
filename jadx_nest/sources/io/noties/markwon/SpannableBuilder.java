@@ -9,7 +9,7 @@ import java.util.Deque;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class SpannableBuilder implements Appendable, CharSequence {
     private final StringBuilder builder;
     private final Deque<Span> spans;

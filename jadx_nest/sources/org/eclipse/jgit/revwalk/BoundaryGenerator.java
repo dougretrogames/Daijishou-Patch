@@ -2,7 +2,7 @@ package org.eclipse.jgit.revwalk;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class BoundaryGenerator extends Generator {
     static final int UNINTERESTING = 4;
     Generator g;

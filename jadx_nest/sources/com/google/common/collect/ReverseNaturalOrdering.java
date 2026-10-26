@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.io.Serializable;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class ReverseNaturalOrdering extends Ordering<Comparable<?>> implements Serializable {
     static final ReverseNaturalOrdering INSTANCE = new ReverseNaturalOrdering();

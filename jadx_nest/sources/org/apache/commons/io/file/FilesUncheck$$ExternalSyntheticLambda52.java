@@ -5,8 +5,8 @@ import java.nio.file.LinkOption;
 import java.nio.file.Path;
 import org.apache.commons.io.function.IOTriFunction;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class FilesUncheck$$ExternalSyntheticLambda52 implements IOTriFunction {
     @Override // org.apache.commons.io.function.IOTriFunction
     public final Object apply(Object obj, Object obj2, Object obj3) {

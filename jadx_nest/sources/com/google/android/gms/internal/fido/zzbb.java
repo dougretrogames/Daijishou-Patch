@@ -4,8 +4,8 @@ import java.math.RoundingMode;
 import java.util.Arrays;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 final class zzbb {
     final int zza;
     final int zzb;
@@ -16,7 +16,7 @@ final class zzbb {
     private final byte[] zzg;
     private final boolean zzh;
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     zzbb(String str, char[] cArr) {
         byte[] bArr = new byte[128];
         Arrays.fill(bArr, (byte) -1);

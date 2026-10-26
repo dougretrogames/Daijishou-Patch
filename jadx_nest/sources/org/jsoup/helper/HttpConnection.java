@@ -49,7 +49,7 @@ import org.jsoup.nodes.Document;
 import org.jsoup.parser.Parser;
 import org.jsoup.parser.StreamParser;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpConnection implements Connection {
     public static final String CONTENT_ENCODING = "Content-Encoding";
     public static final String CONTENT_TYPE = "Content-Type";
@@ -378,7 +378,7 @@ public class HttpConnection implements Connection {
         return this;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static abstract class Base<T extends Connection.Base<T>> implements Connection.Base<T> {
         private static final URL UnsetUrl;
         Map<String, String> cookies;
@@ -1030,7 +1030,7 @@ public class HttpConnection implements Connection {
             return execute(request, null);
         }
 
-        /* JADX WARN: Code duplicated, block: B:77:0x019d A[Catch: IOException -> 0x01d4, all -> 0x01d7, TryCatch #1 {IOException -> 0x01d4, blocks: (B:24:0x008a, B:26:0x0090, B:28:0x0096, B:30:0x009c, B:31:0x00b0, B:33:0x00bf, B:35:0x00c8, B:36:0x00cc, B:41:0x00ec, B:47:0x00fc, B:49:0x0102, B:51:0x0108, B:53:0x0110, B:56:0x011d, B:57:0x012c, B:59:0x012f, B:61:0x013b, B:63:0x0141, B:64:0x0148, B:66:0x0154, B:68:0x015c, B:70:0x0168, B:75:0x0182, B:77:0x019d, B:72:0x016f, B:74:0x0177, B:78:0x01a9, B:45:0x00f6, B:84:0x01c2, B:85:0x01d3), top: B:100:0x008a }] */
+        /* WARN: Code duplicated, block: B:77:0x019d A[Catch: IOException -> 0x01d4, all -> 0x01d7, TryCatch #1 {IOException -> 0x01d4, blocks: (B:24:0x008a, B:26:0x0090, B:28:0x0096, B:30:0x009c, B:31:0x00b0, B:33:0x00bf, B:35:0x00c8, B:36:0x00cc, B:41:0x00ec, B:47:0x00fc, B:49:0x0102, B:51:0x0108, B:53:0x0110, B:56:0x011d, B:57:0x012c, B:59:0x012f, B:61:0x013b, B:63:0x0141, B:64:0x0148, B:66:0x0154, B:68:0x015c, B:70:0x0168, B:75:0x0182, B:77:0x019d, B:72:0x016f, B:74:0x0177, B:78:0x01a9, B:45:0x00f6, B:84:0x01c2, B:85:0x01d3), top: B:100:0x008a }] */
         static Response execute(Request request, Response response) throws IOException {
             InputStream inflaterInputStream;
             Validate.isTrue(request.executing.tryLock(), "Multiple threads were detected trying to execute the same request concurrently. Make sure to use Connection#newRequest() and do not share an executing request between threads.");
@@ -1461,7 +1461,7 @@ public class HttpConnection implements Connection {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean needsMultipart(Connection.Request request) {
         Iterator<Connection.KeyVal> it = request.data().iterator();
         while (it.hasNext()) {

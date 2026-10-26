@@ -5,7 +5,7 @@ import android.text.Spanned;
 import android.widget.TextView;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class TextViewSpan {
     private final WeakReference<TextView> reference;
 

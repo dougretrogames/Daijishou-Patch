@@ -2,7 +2,7 @@ package org.apache.commons.codec.digest;
 
 import org.apache.commons.codec.binary.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class MurmurHash2 {
     private static final int M32 = 1540483477;
     private static final long M64 = -4132994306676758123L;

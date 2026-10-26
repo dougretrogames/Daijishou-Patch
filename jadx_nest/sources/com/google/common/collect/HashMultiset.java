@@ -3,7 +3,7 @@ package com.google.common.collect;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class HashMultiset<E> extends AbstractMapBasedMultiset<E> {
     private static final long serialVersionUID = 0;

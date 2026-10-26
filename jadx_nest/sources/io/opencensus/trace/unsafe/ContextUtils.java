@@ -6,7 +6,7 @@ import io.opencensus.trace.BlankSpan;
 import io.opencensus.trace.Span;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @Deprecated
 public final class ContextUtils {
     private static final Context.Key<Span> CONTEXT_SPAN_KEY = Context.key("opencensus-trace-span-key");

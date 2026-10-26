@@ -10,7 +10,7 @@ import org.eclipse.jgit.errors.TransportException;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class TransportProtocol {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$transport$TransportProtocol$URIishField;
 
@@ -21,7 +21,7 @@ public abstract class TransportProtocol {
         PORT,
         PATH;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static URIishField[] valuesCustom() {
             URIishField[] uRIishFieldArrValuesCustom = values();
             int length = uRIishFieldArrValuesCustom.length;

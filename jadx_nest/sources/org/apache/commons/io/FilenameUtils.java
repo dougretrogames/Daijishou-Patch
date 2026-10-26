@@ -12,7 +12,7 @@ import java.util.stream.Stream;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FilenameUtils {
     private static final int BASE_16 = 16;
     private static final String EMPTY_STRING = "";

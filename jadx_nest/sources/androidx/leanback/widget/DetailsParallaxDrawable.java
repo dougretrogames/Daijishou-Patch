@@ -8,7 +8,7 @@ import android.util.TypedValue;
 import androidx.leanback.graphics.CompositeDrawable;
 import androidx.leanback.graphics.FitWidthBitmapDrawable;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DetailsParallaxDrawable extends CompositeDrawable {
     private Drawable mBottomDrawable;
 

@@ -7,7 +7,7 @@ import java.io.OutputStream;
 import java.util.Collection;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface FtpChannel {
 
     public interface DirEntry {

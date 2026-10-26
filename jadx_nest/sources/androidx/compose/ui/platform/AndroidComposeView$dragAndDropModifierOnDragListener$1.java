@@ -9,8 +9,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 
-/* JADX INFO: compiled from: AndroidComposeView.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AndroidComposeView.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 /* synthetic */ class AndroidComposeView$dragAndDropModifierOnDragListener$1 extends FunctionReferenceImpl implements Function3<DragAndDropTransferData, Size, Function1<? super DrawScope, ? extends Unit>, Boolean> {
     AndroidComposeView$dragAndDropModifierOnDragListener$1(Object obj) {
@@ -22,7 +22,7 @@ import kotlin.jvm.internal.FunctionReferenceImpl;
         return m2120invoke12SF9DM(dragAndDropTransferData, size.getPackedValue(), function1);
     }
 
-    /* JADX INFO: renamed from: invoke-12SF9DM, reason: not valid java name */
+    /* INFO: renamed from: invoke-12SF9DM, reason: not valid java name */
     public final Boolean m2120invoke12SF9DM(DragAndDropTransferData dragAndDropTransferData, long j, Function1<? super DrawScope, Unit> function1) {
         return Boolean.valueOf(((AndroidComposeView) this.receiver).m2118startDrag12SF9DM(dragAndDropTransferData, j, function1));
     }

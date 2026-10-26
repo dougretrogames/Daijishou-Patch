@@ -58,12 +58,12 @@ import kotlinx.coroutines.Job;
 import kotlinx.coroutines.JobKt;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: compiled from: EditPlatformDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: EditPlatformDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000`\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\u0018\u0000 %2\u00020\u00012\u00020\u0002:\u0001%B\u0005¢\u0006\u0002\u0010\u0003J\u0010\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001cH\u0002J\b\u0010\u001d\u001a\u00020\u001eH\u0002J\u0012\u0010\u001f\u001a\u00020 2\b\u0010!\u001a\u0004\u0018\u00010\"H\u0016J\b\u0010#\u001a\u00020\u001eH\u0016J\b\u0010$\u001a\u00020\u001eH\u0016R\u0014\u0010\u0004\u001a\u00020\u00058VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007R\u0016\u0010\b\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\n0\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u000b\u001a\u0010\u0012\f\u0012\n \r*\u0004\u0018\u00010\f0\f0\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\n0\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u000f\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\n0\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u0010\u001a\u0010\u0012\f\u0012\n \r*\u0004\u0018\u00010\f0\f0\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u0013\u001a\n\u0012\u0004\u0012\u00020\f\u0018\u00010\u0014X\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u0015\u001a\u0010\u0012\f\u0012\n \r*\u0004\u0018\u00010\f0\f0\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u0016\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\n0\u0017X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\fX\u0082D¢\u0006\u0002\n\u0000¨\u0006&"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/EditPlatformDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "Lkotlinx/coroutines/CoroutineScope;", "()V", "coroutineContext", "Lkotlin/coroutines/CoroutineContext;", "getCoroutineContext", "()Lkotlin/coroutines/CoroutineContext;", "importBoxArtsFromUriActivity", "Landroidx/activity/result/ActivityResultLauncher;", "Landroid/net/Uri;", "importDatFileFromUriActivity", "", "kotlin.jvm.PlatformType", "importSnapshotsFromUriActivity", "importTitlesFromUriActivity", "importXMLFileFromUriActivity", "job", "Lkotlinx/coroutines/Job;", "playerArrayAdapter", "Landroid/widget/ArrayAdapter;", "selectWallpaperActivity", "selectedWallpaperUriLiveData", "Landroidx/lifecycle/MutableLiveData;", "wallpaperDirectoryName", "deleteWallpaperOfPlatformEntity", "", "newPlatformEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "ensureWallpaperDirectory", "", "onCreateDialog", "Landroid/app/Dialog;", "savedInstanceState", "Landroid/os/Bundle;", "onDestroy", "onStart", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class EditPlatformDialogFragment extends DaijishouDialogFragment implements CoroutineScope {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public ActivityResultLauncher<Uri> importBoxArtsFromUriActivity;
     private ActivityResultLauncher<String> importDatFileFromUriActivity;
@@ -76,11 +76,11 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
     private final MutableLiveData<Uri> selectedWallpaperUriLiveData;
     public final String wallpaperDirectoryName;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$40(DialogInterface dialogInterface, int i) {
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$42(DialogInterface dialogInterface, int i) {
     }
 
@@ -112,7 +112,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         return Dispatchers.getMain().plus(this.job);
     }
 
-    /* JADX INFO: compiled from: EditPlatformDialogFragment.kt */
+    /* INFO: compiled from: EditPlatformDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006¨\u0006\u0007"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/EditPlatformDialogFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/dialog_fragments/EditPlatformDialogFragment;", "platformEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -131,7 +131,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void importBoxArtsFromUriActivity$lambda$1(EditPlatformDialogFragment this$0, Uri uri) {
         PlatformEntity platformEntity;
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -155,7 +155,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         this$0.getDaijishouSynchronization().importBoxArtsFromUriForPlatformId(platformEntity.getId(), uri, true, new EditPlatformDialogFragment$importBoxArtsFromUriActivity$1$1$1(this$0, progressDialogFragmentNewInstance$default));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void importSnapshotsFromUriActivity$lambda$3(EditPlatformDialogFragment this$0, Uri uri) {
         PlatformEntity platformEntity;
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -179,7 +179,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         this$0.getDaijishouSynchronization().importSnapshotsFromUriForPlatformId(platformEntity.getId(), uri, true, new EditPlatformDialogFragment$importSnapshotsFromUriActivity$1$1$1(this$0, progressDialogFragmentNewInstance$default));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void importTitlesFromUriActivity$lambda$5(EditPlatformDialogFragment this$0, Uri uri) {
         PlatformEntity platformEntity;
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -203,7 +203,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         this$0.getDaijishouSynchronization().importTitlesFromUriForPlatformId(platformEntity.getId(), uri, true, new EditPlatformDialogFragment$importTitlesFromUriActivity$1$1$1(this$0, progressDialogFragmentNewInstance$default));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void importDatFileFromUriActivity$lambda$7(EditPlatformDialogFragment this$0, Uri uri) {
         PlatformEntity platformEntity;
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -227,7 +227,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         this$0.getDaijishouSynchronization().importDatFilesFromUriForPlatformId(platformEntity.getId(), uri, true, new EditPlatformDialogFragment$importDatFileFromUriActivity$1$1$1(this$0, progressDialogFragmentNewInstance$default));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void importXMLFileFromUriActivity$lambda$9(EditPlatformDialogFragment this$0, Uri uri) {
         PlatformEntity platformEntity;
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -277,13 +277,13 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         Job.DefaultImpls.cancel$default(this.job, (CancellationException) null, 1, (Object) null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void selectWallpaperActivity$lambda$10(EditPlatformDialogFragment this$0, Uri uri) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.selectedWallpaperUriLiveData.setValue(uri);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void ensureWallpaperDirectory() {
         if (getContext() == null) {
             return;
@@ -649,7 +649,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         chipGroup.addView(chip);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$addRetroAchievementsConsoleId$lambda$18(List selectedRetroAchievementsConsoleIdList, long j, ChipGroup chipGroup, View view) {
         Intrinsics.checkNotNullParameter(selectedRetroAchievementsConsoleIdList, "$selectedRetroAchievementsConsoleIdList");
         selectedRetroAchievementsConsoleIdList.remove(Long.valueOf(j));
@@ -672,7 +672,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         chipGroup.addView(chip);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$addScraperSource$lambda$19(List selectedScraperSourceList, String scraperSourceText, ChipGroup chipGroup, View view) {
         Intrinsics.checkNotNullParameter(selectedScraperSourceList, "$selectedScraperSourceList");
         Intrinsics.checkNotNullParameter(scraperSourceText, "$scraperSourceText");
@@ -707,7 +707,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         chipGroup.addView(chip);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$addPlayer$lambda$22(List selectedPlayerIdList, long j, String str, ChipGroup chipGroup, EditPlatformDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(selectedPlayerIdList, "$selectedPlayerIdList");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -720,13 +720,13 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         chipGroup.removeView(view);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$addPlayer$lambda$23(EditPlatformDialogFragment this$0, long j, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         EditPlayerDialogFragment.INSTANCE.newInstance(this$0.getDaijishouLibrary().getPlayerByIdStatically(j)).show(this$0.getParentFragmentManager(), EditPlayerDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$setUseCustomBoxArtAspectRatio(SwitchMaterial switchMaterial, AutoCompleteTextView autoCompleteTextView, EditText editText, boolean z) {
         switchMaterial.setChecked(z);
         if (z) {
@@ -738,7 +738,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$setUseCustomScreenAspectRatio(SwitchMaterial switchMaterial, AutoCompleteTextView autoCompleteTextView, EditText editText, boolean z) {
         switchMaterial.setChecked(z);
         if (z) {
@@ -754,13 +754,13 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         editPlatformDialogFragment.selectWallpaperActivity.launch("image/*");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$24(EditPlatformDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         onCreateDialog$lambda$48$lambda$47$lambda$24$openFile(this$0);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$25(TextView textView, EditPlatformDialogFragment this$0, Ref.BooleanRef updateWallpaper, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(updateWallpaper, "$updateWallpaper");
@@ -768,7 +768,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         updateWallpaper.element = true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$26(AutoCompleteTextView autoCompleteTextView, List retroAchievementsConsoleIdTextList, EditPlatformDialogFragment this$0, List retroAchievementsConsoleIdList, List selectedRetroAchievementsConsoleIdList, Context context, ChipGroup chipGroup, View view) {
         Intrinsics.checkNotNullParameter(retroAchievementsConsoleIdTextList, "$retroAchievementsConsoleIdTextList");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -790,7 +790,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$27(AutoCompleteTextView autoCompleteTextView, List scraperSourceList, EditPlatformDialogFragment this$0, List selectedScraperSourceList, Context context, ChipGroup chipGroup, View view) {
         Intrinsics.checkNotNullParameter(scraperSourceList, "$scraperSourceList");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -808,7 +808,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$31(AutoCompleteTextView autoCompleteTextView, List playerEntityNameListWithIndex, EditPlatformDialogFragment this$0, List playerEntityIdList, List selectedPlayerIdList, Context context, ChipGroup chipGroup, View view) {
         Intrinsics.checkNotNullParameter(playerEntityNameListWithIndex, "$playerEntityNameListWithIndex");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -830,7 +830,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$34(EditPlatformDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         ListSelectDialogFragment.Companion companion = ListSelectDialogFragment.INSTANCE;
@@ -844,7 +844,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         ListSelectDialogFragment.Companion.newInstance$default(companion, string, CollectionsKt.arrayListOf(string2, string3, string4), null, false, 12, null).setOnSelectListener(new EditPlatformDialogFragment$onCreateDialog$1$1$13$1(this$0)).setOnCancelListener(EditPlatformDialogFragment$onCreateDialog$1$1$13$2.INSTANCE).show(this$0.getParentFragmentManager(), ListSelectDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$35(EditPlatformDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (Build.VERSION.SDK_INT >= 29) {
@@ -854,7 +854,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$36(EditPlatformDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (Build.VERSION.SDK_INT >= 29) {
@@ -864,7 +864,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$46(AlertDialog alertDialog, PlatformEntity platformEntity, EditPlatformDialogFragment this$0, Context context, EditText editText, EditText editText2, CheckBox checkBox, CheckBox checkBox2, EditText editText3, AutoCompleteTextView autoCompleteTextView, SwitchMaterial switchMaterial, AutoCompleteTextView autoCompleteTextView2, List boxArtAspectRatioTextList, EditText editText4, SwitchMaterial switchMaterial2, AutoCompleteTextView autoCompleteTextView3, List screenAspectRatioTextList, EditText editText5, List playerEntityNameListWithIndex, List playerEntityIdList, List selectedPlayerIdList, List selectedRetroAchievementsConsoleIdList, List selectedScraperSourceList, Ref.BooleanRef updateWallpaper, Ref.ObjectRef selectedWallpaperFile, DialogInterface dialogInterface) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(context, "$context");
@@ -886,7 +886,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         button.setOnClickListener(new EditPlatformDialogFragment$$ExternalSyntheticLambda16(editText, editText2, checkBox, checkBox2, editText3, autoCompleteTextView, switchMaterial, autoCompleteTextView2, boxArtAspectRatioTextList, editText4, switchMaterial2, autoCompleteTextView3, screenAspectRatioTextList, editText5, this$0, playerEntityNameListWithIndex, playerEntityIdList, selectedPlayerIdList, platformEntity, selectedRetroAchievementsConsoleIdList, selectedScraperSourceList, updateWallpaper, selectedWallpaperFile, alertDialog, context));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$46$lambda$44(PlatformEntity platformEntity, EditPlatformDialogFragment this$0, Context context, AlertDialog alertDialog, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(context, "$context");
@@ -907,7 +907,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$46$lambda$44$lambda$43$confirmAction(EditPlatformDialogFragment editPlatformDialogFragment, PlatformEntity platformEntity, AlertDialog alertDialog, Ref.BooleanRef booleanRef, Context context) {
         AcknowledgementDialogFragment.Companion companion = AcknowledgementDialogFragment.INSTANCE;
         String string = editPlatformDialogFragment.getString(R.string.delete_platform);
@@ -919,8 +919,8 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         AcknowledgementDialogFragment.Companion.newInstance$default(companion, string, str, null, null, null, 28, null).setOnAcknowledgedListener(new EditPlatformDialogFragment$onCreateDialog$1$1$20$1$1$confirmAction$1(alertDialog, editPlatformDialogFragment, platformEntity, booleanRef, context)).setOnCanceledListener(new EditPlatformDialogFragment$onCreateDialog$1$1$20$1$1$confirmAction$2(context, editPlatformDialogFragment)).show(editPlatformDialogFragment.getParentFragmentManager(), AcknowledgementDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Multi-variable type inference failed */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$46$lambda$45(EditText editText, EditText editText2, CheckBox checkBox, CheckBox checkBox2, EditText editText3, AutoCompleteTextView autoCompleteTextView, SwitchMaterial switchMaterial, AutoCompleteTextView autoCompleteTextView2, List boxArtAspectRatioTextList, EditText editText4, SwitchMaterial switchMaterial2, AutoCompleteTextView autoCompleteTextView3, List screenAspectRatioTextList, EditText editText5, EditPlatformDialogFragment this$0, List playerEntityNameListWithIndex, List playerEntityIdList, List selectedPlayerIdList, PlatformEntity platformEntity, List selectedRetroAchievementsConsoleIdList, List selectedScraperSourceList, Ref.BooleanRef updateWallpaper, Ref.ObjectRef selectedWallpaperFile, AlertDialog alertDialog, Context context, View view) {
         Intrinsics.checkNotNullParameter(boxArtAspectRatioTextList, "$boxArtAspectRatioTextList");
         Intrinsics.checkNotNullParameter(screenAspectRatioTextList, "$screenAspectRatioTextList");
@@ -1047,7 +1047,7 @@ public final class EditPlatformDialogFragment extends DaijishouDialogFragment im
         Toast.makeText(context, editPlatformDialogFragment.getString(platformEntity == null ? R.string.added_successfully : R.string.edited_successfully), 0).show();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateDialog$lambda$48$lambda$47$lambda$46$lambda$45$saveAndDismiss(PlatformEntity platformEntity, long j, EditPlatformDialogFragment editPlatformDialogFragment, AlertDialog alertDialog, Context context, PlatformEntity platformEntity2) {
         platformEntity.setId(j);
         editPlatformDialogFragment.getDaijishouLibrary().addPlatform(platformEntity);

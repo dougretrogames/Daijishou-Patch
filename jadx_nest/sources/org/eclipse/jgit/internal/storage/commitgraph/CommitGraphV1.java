@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.commitgraph;
 import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class CommitGraphV1 implements CommitGraph {
     private final GraphCommitData commitData;
     private final GraphChangedPathFilterData cpfData;

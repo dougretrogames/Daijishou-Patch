@@ -5,7 +5,7 @@ import com.google.api.client.util.ObjectParser;
 import com.google.api.client.util.Preconditions;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class TypedNotificationCallback<T> implements UnparsedNotificationCallback {
     private static final long serialVersionUID = 1;
 
@@ -15,7 +15,7 @@ public abstract class TypedNotificationCallback<T> implements UnparsedNotificati
 
     protected abstract void onNotification(StoredChannel storedChannel, TypedNotification<T> typedNotification) throws IOException;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.api.client.googleapis.notifications.UnparsedNotificationCallback
     public final void onNotification(StoredChannel storedChannel, UnparsedNotification unparsedNotification) throws IOException {
         TypedNotification typedNotification = new TypedNotification(unparsedNotification);

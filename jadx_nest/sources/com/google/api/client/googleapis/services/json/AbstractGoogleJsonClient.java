@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class AbstractGoogleJsonClient extends AbstractGoogleClient {
     protected AbstractGoogleJsonClient(Builder builder) {
         super(builder);

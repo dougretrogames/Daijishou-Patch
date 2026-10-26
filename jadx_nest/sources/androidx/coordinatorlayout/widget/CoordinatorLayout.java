@@ -47,7 +47,7 @@ import java.util.Map;
 import org.apache.commons.io.FilenameUtils;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CoordinatorLayout extends ViewGroup implements NestedScrollingParent2, NestedScrollingParent3 {
     static final Class<?>[] CONSTRUCTOR_PARAMS;
     static final int EVENT_NESTED_SCROLL = 1;
@@ -405,12 +405,12 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
         return zPerformIntercept;
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x002b A[PHI: r3
+    /* WARN: Code duplicated, block: B:11:0x002b A[PHI: r3
   0x002b: PHI (r3v4 boolean) = (r3v2 boolean), (r3v5 boolean) binds: [B:9:0x0022, B:5:0x0012] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:14:0x0031  */
-    /* JADX WARN: Code duplicated, block: B:15:0x0037 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:16:0x0039  */
-    /* JADX WARN: Code duplicated, block: B:18:0x004c  */
+    /* WARN: Code duplicated, block: B:14:0x0031  */
+    /* WARN: Code duplicated, block: B:15:0x0037 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:16:0x0039  */
+    /* WARN: Code duplicated, block: B:18:0x004c  */
     @Override // android.view.View
     public boolean onTouchEvent(MotionEvent motionEvent) {
         boolean zPerformIntercept;
@@ -486,7 +486,7 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
         return iArr[i];
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static Behavior parseBehavior(Context context, AttributeSet attributeSet, String str) {
         if (TextUtils.isEmpty(str)) {
             return null;
@@ -518,7 +518,7 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     LayoutParams getResolvedLayoutParams(View view) {
         LayoutParams layoutParams = (LayoutParams) view.getLayoutParams();
         if (!layoutParams.mBehaviorResolved) {
@@ -593,11 +593,11 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
         measureChildWithMargins(view, i, i2, i3, i4);
     }
 
-    /* JADX WARN: Code duplicated, block: B:37:0x00cd  */
-    /* JADX WARN: Code duplicated, block: B:40:0x00ff  */
-    /* JADX WARN: Code duplicated, block: B:43:0x010b  */
-    /* JADX WARN: Code duplicated, block: B:46:0x012b  */
-    /* JADX WARN: Code duplicated, block: B:47:0x012e  */
+    /* WARN: Code duplicated, block: B:37:0x00cd  */
+    /* WARN: Code duplicated, block: B:40:0x00ff  */
+    /* WARN: Code duplicated, block: B:43:0x010b  */
+    /* WARN: Code duplicated, block: B:46:0x012b  */
+    /* WARN: Code duplicated, block: B:47:0x012e  */
     @Override // android.view.View
     protected void onMeasure(int i, int i2) {
         int i3;
@@ -1043,7 +1043,7 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
         releaseTempRect(rectAcquireTempRect2);
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x0091  */
+    /* WARN: Code duplicated, block: B:13:0x0091  */
     @Override // android.view.ViewGroup
     protected boolean drawChild(Canvas canvas, View view, long j) {
         LayoutParams layoutParams = (LayoutParams) view.getLayoutParams();
@@ -1066,7 +1066,7 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
         return super.drawChild(canvas, view, j);
     }
 
-    /* JADX WARN: Code duplicated, block: B:46:0x00ca  */
+    /* WARN: Code duplicated, block: B:46:0x00ca  */
     final void onChildViewsChanged(int i) {
         int i2;
         Behavior behavior;
@@ -1361,7 +1361,7 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
         return new LayoutParams(getContext(), attributeSet);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup
     public LayoutParams generateLayoutParams(ViewGroup.LayoutParams layoutParams) {
         if (layoutParams instanceof LayoutParams) {
@@ -1373,7 +1373,7 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
         return new LayoutParams(layoutParams);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // android.view.ViewGroup
     public LayoutParams generateDefaultLayoutParams() {
         return new LayoutParams(-2, -2);
@@ -1550,7 +1550,7 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:6:0x0015  */
+    /* WARN: Code duplicated, block: B:6:0x0015  */
     @Override // android.view.ViewGroup, android.view.ViewParent, androidx.core.view.NestedScrollingParent
     public boolean onNestedFling(View view, float f, float f2, boolean z) {
         Behavior behavior;
@@ -1595,7 +1595,7 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
         return zOnNestedFling;
     }
 
-    /* JADX WARN: Code duplicated, block: B:6:0x0015  */
+    /* WARN: Code duplicated, block: B:6:0x0015  */
     @Override // android.view.ViewGroup, android.view.ViewParent, androidx.core.view.NestedScrollingParent
     public boolean onNestedPreFling(View view, float f, float f2) {
         Behavior behavior;
@@ -2171,7 +2171,7 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
         ViewCompat.setOnApplyWindowInsetsListener(this, null);
     }
 
-    /* JADX INFO: renamed from: androidx.coordinatorlayout.widget.CoordinatorLayout$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.coordinatorlayout.widget.CoordinatorLayout$1, reason: invalid class name */
     class AnonymousClass1 implements OnApplyWindowInsetsListener {
         AnonymousClass1() {
         }
@@ -2218,12 +2218,12 @@ public class CoordinatorLayout extends ViewGroup implements NestedScrollingParen
             parcel.writeParcelableArray(parcelableArr, i);
         }
 
-        /* JADX INFO: renamed from: androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.coordinatorlayout.widget.CoordinatorLayout$SavedState$1, reason: invalid class name */
         static class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);

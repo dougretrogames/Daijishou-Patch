@@ -5,7 +5,7 @@ import com.google.api.client.googleapis.notifications.UnparsedNotification;
 import com.google.api.client.googleapis.notifications.UnparsedNotificationCallback;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockUnparsedNotificationCallback implements UnparsedNotificationCallback {
     private static final long serialVersionUID = 0;
     private boolean wasCalled;

@@ -14,7 +14,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ThumbnailStreamOpener {
     private static final FileService DEFAULT_SERVICE = new FileService();
     private static final String TAG = "ThumbStreamOpener";
@@ -83,8 +83,8 @@ class ThumbnailStreamOpener {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:30:0x004b  */
-    /* JADX WARN: Not initialized variable reg: 3, insn: 0x0048: MOVE (r2 I:??[OBJECT, ARRAY]) = (r3 I:??[OBJECT, ARRAY]), block:B:28:0x0048 */
+    /* WARN: Code duplicated, block: B:30:0x004b  */
+    /* WARN: Not initialized variable reg: 3, insn: 0x0048: MOVE (r2 I:??[OBJECT, ARRAY]) = (r3 I:??[OBJECT, ARRAY]), block:B:28:0x0048 */
     private String getPath(Uri uri) throws Throwable {
         Cursor cursorQuery;
         Cursor cursor;

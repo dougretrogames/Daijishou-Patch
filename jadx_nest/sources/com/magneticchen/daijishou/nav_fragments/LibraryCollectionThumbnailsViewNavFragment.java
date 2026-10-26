@@ -83,12 +83,12 @@ import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.StringCompanionObject;
 
-/* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000ò\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010 \n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u0000 \u009f\u00012\u00020\u0001:\u0004\u009f\u0001 \u0001B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010}\u001a\u00020%H\u0016J\u0014\u0010~\u001a\u00020\u007f2\n\u0010\u0080\u0001\u001a\u0005\u0018\u00010\u0081\u0001H\u0016J.\u0010\u0082\u0001\u001a\u0005\u0018\u00010\u0083\u00012\b\u0010\u0084\u0001\u001a\u00030\u0085\u00012\n\u0010\u0086\u0001\u001a\u0005\u0018\u00010\u0087\u00012\n\u0010\u0080\u0001\u001a\u0005\u0018\u00010\u0081\u0001H\u0016J%\u0010\u0088\u0001\u001a\u00020%2\u0007\u0010\u0089\u0001\u001a\u00020\b2\u0007\u0010\u008a\u0001\u001a\u00020\b2\b\u0010\u008b\u0001\u001a\u00030\u008c\u0001H\u0016J\t\u0010\u008d\u0001\u001a\u00020\u007fH\u0016J\t\u0010\u008e\u0001\u001a\u00020\u007fH\u0016J\t\u0010\u008f\u0001\u001a\u00020\u007fH\u0016J\u001f\u0010\u0090\u0001\u001a\u00020\u007f2\b\u0010\u0091\u0001\u001a\u00030\u0083\u00012\n\u0010\u0080\u0001\u001a\u0005\u0018\u00010\u0081\u0001H\u0016J\t\u0010\u0092\u0001\u001a\u00020\u007fH\u0002J\t\u0010\u0093\u0001\u001a\u00020\u007fH\u0003J-\u0010\u0094\u0001\u001a\u00020\u007f2\u0007\u0010\u0095\u0001\u001a\u00020Q2\u0007\u0010\u0096\u0001\u001a\u00020Q2\u0007\u0010\u0097\u0001\u001a\u00020Q2\u0007\u0010\u0098\u0001\u001a\u00020QH\u0003J\t\u0010\u0099\u0001\u001a\u00020\u007fH\u0002J\t\u0010\u009a\u0001\u001a\u00020\u007fH\u0002J\t\u0010\u009b\u0001\u001a\u00020\u007fH\u0002J\u0015\u0010\u009c\u0001\u001a\u00020\u007f2\n\u0010\u009d\u0001\u001a\u0005\u0018\u00010\u009e\u0001H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010\u0007\u001a\u00020\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\t\u0010\n\"\u0004\b\u000b\u0010\fR\u001a\u0010\r\u001a\u00020\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\n\"\u0004\b\u000f\u0010\fR\u000e\u0010\u0010\u001a\u00020\u0011X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0011X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0011X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0011X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0018X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0018X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u0018X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u001eX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u001eX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020#X\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010$\u001a\u00020%X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b&\u0010'\"\u0004\b(\u0010)R\u000e\u0010*\u001a\u00020+X\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010,\u001a\u00020\u001eX\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b-\u0010.\"\u0004\b/\u00100R\u000e\u00101\u001a\u00020\u001eX\u0082.¢\u0006\u0002\n\u0000R\u000e\u00102\u001a\u00020%X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00103\u001a\u00020%X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00104\u001a\u00020%X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00105\u001a\u00020%X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00106\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00107\u001a\u000208X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00109\u001a\u00020:X\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010;\u001a\u00060<R\u00020\u0000X\u0082.¢\u0006\u0002\n\u0000R\u001b\u0010=\u001a\u00020>8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bA\u0010B\u001a\u0004\b?\u0010@R\u001b\u0010C\u001a\u00020D8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bG\u0010B\u001a\u0004\bE\u0010FR\u000e\u0010H\u001a\u00020IX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010J\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010K\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010L\u001a\b\u0012\u0004\u0012\u00020N0MX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010O\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010P\u001a\u00020QX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010R\u001a\b\u0012\u0004\u0012\u00020Q0SX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010T\u001a\u0004\u0018\u00010\bX\u0082\u000e¢\u0006\u0004\n\u0002\u0010UR\u000e\u0010V\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010W\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010X\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010Y\u001a\u00020%X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010Z\u001a\u00020#X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010[\u001a\u0004\u0018\u00010NX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\\\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010]\u001a\u0010\u0012\f\u0012\n `*\u0004\u0018\u00010_0_0^X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010a\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010b\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010c\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010d\u001a\u00020QX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010e\u001a\u00020\u001eX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010f\u001a\u00020\u001eX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010g\u001a\u00020\u001eX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010h\u001a\u00020\u001eX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010i\u001a\u00020jX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010k\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010l\u001a\b\u0012\u0004\u0012\u00020m0MX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010n\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010o\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u001e\u0010p\u001a\u0004\u0018\u00010\bX\u0086\u000e¢\u0006\u0010\n\u0002\u0010U\u001a\u0004\bq\u0010r\"\u0004\bs\u0010tR\u001e\u0010u\u001a\u0004\u0018\u00010\bX\u0086\u000e¢\u0006\u0010\n\u0002\u0010U\u001a\u0004\bv\u0010r\"\u0004\bw\u0010tR\u000e\u0010x\u001a\u00020yX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010z\u001a\u00020{X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010|\u001a\u00020{X\u0082.¢\u0006\u0002\n\u0000¨\u0006¡\u0001"}, d2 = {"Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionThumbnailsViewNavFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/PlatformNavFragment;", "()V", "addSyncTreesButton", "Lcom/google/android/material/chip/Chip;", "chipGroup", "Lcom/google/android/material/chip/ChipGroup;", "colorOnPrimary", "", "getColorOnPrimary", "()I", "setColorOnPrimary", "(I)V", "colorPrimary", "getColorPrimary", "setColorPrimary", "defaultChipBackgroundColors", "Landroid/content/res/ColorStateList;", "defaultChipTextColors", "defaultDownloadIconColors", "defaultMonoChipIconColors", "defaultThumbnailDrawable", "Landroid/graphics/drawable/BitmapDrawable;", "descriptionFirstString", "", "descriptionItemCountFormatString", "descriptionPlatformIndexFormatString", "descriptionSecondString", "descriptionThirdString", "fadeInAnimation", "Landroid/view/animation/Animation;", "fadeOutAnimation", "favoriteButton", "favoriteFormatString", "firstContainerLayout", "Landroidx/constraintlayout/widget/ConstraintLayout;", "hasRefreshedBefore", "", "getHasRefreshedBefore", "()Z", "setHasRefreshedBefore", "(Z)V", "horizontalScrollView", "Landroid/widget/HorizontalScrollView;", "imageViewAnimationIn", "getImageViewAnimationIn", "()Landroid/view/animation/Animation;", "setImageViewAnimationIn", "(Landroid/view/animation/Animation;)V", "imageViewAnimationOut", "isRefreshingAndUpdateThumbnail", "isRefreshingCurrentPlatform", "isRefreshingCurrentPlatformStatistic", "isRefreshingSyncStatus", "libraryChip", "libraryCollectionThumbnailsViewLayoutManager", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouLinearLayoutManager;", "libraryCollectionThumbnailsViewRecyclerView", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;", "libraryCollectionThumbnailsViewRecyclerViewAdapter", "Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionThumbnailsViewNavFragment$LibraryCollectionThumbnailsViewRecyclerViewAdapter;", "libraryViewModel", "Lcom/magneticchen/daijishou/view_models/LibraryViewModel;", "getLibraryViewModel", "()Lcom/magneticchen/daijishou/view_models/LibraryViewModel;", "libraryViewModel$delegate", "Lkotlin/Lazy;", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "getModel", "()Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "model$delegate", "navController", "Landroidx/navigation/NavController;", "newFormatString", "newlyAddedButton", "platformEntityList", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "platformFormatString", "platformId", "", "platformIdList", "", "previousSelectedPlatformIndex", "Ljava/lang/Integer;", "randomButton", "recentFormatString", "recentPlayedButton", "refocusOnScrolledToTop", "secondContainerLayout", "selectedPlatformEntity", "selectedPlatformIndex", "shareFileActivity", "Landroidx/activity/result/ActivityResultLauncher;", "Ljava/io/File;", "kotlin.jvm.PlatformType", "sharePlatformConfigString", "sharePlatformFavoriteItemsString", "shareString", "shortAnimationDuration", "slideInLeftAnimation", "slideInRightAnimation", "slideOutLeftAnimation", "slideOutRightAnimation", "smoothScroller", "Landroidx/recyclerview/widget/RecyclerView$SmoothScroller;", "syncString", "synchronizationOfPlatformList", "Lcom/magneticchen/daijishou/view_models/SynchronizationOfPlatform;", "syncingFormatString", "syncingString", "themeBackgroundColor", "getThemeBackgroundColor", "()Ljava/lang/Integer;", "setThemeBackgroundColor", "(Ljava/lang/Integer;)V", "themeTextColor", "getThemeTextColor", "setThemeTextColor", "title", "Landroid/widget/TextSwitcher;", "titleFirst", "Landroid/widget/TextView;", "titleSecond", "onBackPressed", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onHotKeyPressed", "hotkeyCode", "keyCode", "keyEvent", "Landroid/view/KeyEvent;", "onKioskMode", "onNoneKioskMode", "onStart", "onViewCreated", "view", "refreshChipGroupNavigation", "refreshCurrentPlatform", "refreshCurrentPlatformStatistic", "platformItemCount", "recentPlayedCount", "favoriteCount", "newlyAddedCount", "refreshSyncStatus", "switchNext", "switchPrevious", "updateLightDarkDecorations", "bitmap", "Landroid/graphics/Bitmap;", "Companion", "LibraryCollectionThumbnailsViewRecyclerViewAdapter", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNavFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public static final int PLATFORM_LIBRARY_GRID_VIEW_MODE = 1;
     public static final int PLATFORM_LIBRARY_LIST_VIEW_MODE = 0;
@@ -121,10 +121,10 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
     private DaijishouRecyclerView libraryCollectionThumbnailsViewRecyclerView;
     private LibraryCollectionThumbnailsViewRecyclerViewAdapter libraryCollectionThumbnailsViewRecyclerViewAdapter;
 
-    /* JADX INFO: renamed from: libraryViewModel$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: libraryViewModel$delegate, reason: from kotlin metadata */
     private final Lazy libraryViewModel;
 
-    /* JADX INFO: renamed from: model$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: model$delegate, reason: from kotlin metadata */
     private final Lazy model;
     private NavController navController;
     private String newFormatString;
@@ -183,7 +183,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         this.synchronizationOfPlatformList = new ArrayList();
     }
 
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u000b\u001a\u00020\fR\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u0016\u0010\b\u001a\n \n*\u0004\u0018\u00010\t0\tX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\r"}, d2 = {"Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionThumbnailsViewNavFragment$Companion;", "", "()V", "PLATFORM_LIBRARY_GRID_VIEW_MODE", "", "PLATFORM_LIBRARY_LIST_VIEW_MODE", "RECYCLER_VIEW_SCROLL_OFFSET", "", "typeface", "Landroid/graphics/Typeface;", "kotlin.jvm.PlatformType", "newInstance", "Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionThumbnailsViewNavFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -202,7 +202,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         typeface = Build.VERSION.SDK_INT >= 28 ? Typeface.create(null, Constants.semiBolderWeight, false) : Typeface.defaultFromStyle(1);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final LibraryViewModel getLibraryViewModel() {
         return (LibraryViewModel) this.libraryViewModel.getValue();
     }
@@ -342,10 +342,10 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         this.hasRefreshedBefore = z;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:74:0x014e  */
-    /* JADX WARN: Code duplicated, block: B:76:0x0152  */
-    /* JADX WARN: Code duplicated, block: B:79:0x015d  */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:74:0x014e  */
+    /* WARN: Code duplicated, block: B:76:0x0152  */
+    /* WARN: Code duplicated, block: B:79:0x015d  */
     public final void refreshCurrentPlatform() {
         TextSwitcher textSwitcher;
         TextSwitcher textSwitcher2;
@@ -610,7 +610,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         chipGroup2.requestLayout();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void refreshCurrentPlatformStatistic(long platformItemCount, long recentPlayedCount, long favoriteCount, long newlyAddedCount) {
         if (this.isRefreshingCurrentPlatformStatistic) {
             return;
@@ -727,7 +727,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         this.isRefreshingCurrentPlatformStatistic = false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void refreshSyncStatus() {
         if (this.isRefreshingSyncStatus) {
             return;
@@ -881,8 +881,8 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         this.hasRefreshedBefore = false;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreate$1, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreate$1, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0014¨\u0006\u0004"}, d2 = {"com/magneticchen/daijishou/nav_fragments/LibraryCollectionThumbnailsViewNavFragment$onCreate$1", "Landroidx/recyclerview/widget/LinearSmoothScroller;", "getHorizontalSnapPreference", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class AnonymousClass1 extends LinearSmoothScroller {
         @Override // androidx.recyclerview.widget.LinearSmoothScroller
@@ -1172,7 +1172,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         return viewInflate;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$7(LibraryCollectionThumbnailsViewNavFragment this$0, View view, int i, int i2, int i3, int i4) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (this$0.refocusOnScrolledToTop) {
@@ -1187,7 +1187,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$8(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1200,7 +1200,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$9(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1213,7 +1213,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$10(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1226,7 +1226,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$11(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1239,7 +1239,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$12(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1252,7 +1252,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$13(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1265,7 +1265,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$15(SharedPreferences platformLibrarySharedPreferences, LibraryCollectionThumbnailsViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(platformLibrarySharedPreferences, "$platformLibrarySharedPreferences");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -1311,7 +1311,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         navController.navigate(R.id.libraryCollectionThumbnailsViewToPlatformLibraryGridViewAction);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$16(LibraryCollectionThumbnailsViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         PlayableItemEntity playableItemRandomlyByAttachedPlatformIdStatically = this$0.getDaijishouLibrary().getPlayableItemRandomlyByAttachedPlatformIdStatically(this$0.getLibraryViewModel().getSelectedPlatformId());
@@ -1321,7 +1321,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         PlayableItemDetailDialogFragment.INSTANCE.newInstance(playableItemRandomlyByAttachedPlatformIdStatically).show(this$0.getParentFragmentManager(), PlayableItemDetailDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$17(LibraryCollectionThumbnailsViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         PickPlatformSyncTreeUrDialogFragment.Companion companion = PickPlatformSyncTreeUrDialogFragment.INSTANCE;
@@ -1330,29 +1330,29 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         companion.newInstance(platformEntity).show(this$0.getChildFragmentManager(), PickPlatformSyncTreeUrDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$18(AppCompatActivity activity, LibraryCollectionThumbnailsViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(activity, "$activity");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         ((MainActivity) activity).navigatePage("library", new LibraryPageSelectedParameters(2, this$0.platformId));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$19(AppCompatActivity activity, LibraryCollectionThumbnailsViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(activity, "$activity");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         ((MainActivity) activity).navigatePage("library", new LibraryPageSelectedParameters(1, this$0.platformId));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$20(AppCompatActivity activity, LibraryCollectionThumbnailsViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(activity, "$activity");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         ((MainActivity) activity).navigatePage("library", new LibraryPageSelectedParameters(3, this$0.platformId));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$14, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$14, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass14 extends Lambda<Unit> implements Function4<View, Integer, Long, PlatformEntity, Unit> {
         AnonymousClass14() {
@@ -1373,14 +1373,14 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$15, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$15, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "<anonymous parameter 3>", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass15 extends Lambda<Unit> implements Function4<View, Integer, Long, PlatformEntity, Unit> {
         final /* synthetic */ SharedPreferences $platformLibrarySharedPreferences;
         final /* synthetic */ LibraryCollectionThumbnailsViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass15(SharedPreferences sharedPreferences, LibraryCollectionThumbnailsViewNavFragment libraryCollectionThumbnailsViewNavFragment) {
             super(4);
             this.$platformLibrarySharedPreferences = sharedPreferences;
@@ -1422,8 +1422,8 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$16, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$16, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "newPlatformId", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Long;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass16 extends Lambda<Unit> implements Function1<Long, Unit> {
         AnonymousClass16() {
@@ -1436,7 +1436,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Long l) {
             LibraryCollectionThumbnailsViewNavFragment libraryCollectionThumbnailsViewNavFragment = LibraryCollectionThumbnailsViewNavFragment.this;
             Intrinsics.checkNotNull(l);
@@ -1448,8 +1448,8 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$17, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$17, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\t\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass17 extends Lambda<Unit> implements Function1<List<? extends Long>, Unit> {
         AnonymousClass17() {
@@ -1462,7 +1462,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<Long> list) {
             Intrinsics.checkNotNull(list);
             if (list.isEmpty()) {
@@ -1472,8 +1472,8 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$18, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$18, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "newPlatformEntityList", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass18 extends Lambda<Unit> implements Function1<List<? extends PlatformEntity>, Unit> {
         AnonymousClass18() {
@@ -1486,7 +1486,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<PlatformEntity> list) {
             LibraryCollectionThumbnailsViewNavFragment.this.platformEntityList.clear();
             List list2 = LibraryCollectionThumbnailsViewNavFragment.this.platformEntityList;
@@ -1533,8 +1533,8 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$19, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$19, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass19 extends Lambda<Unit> implements Function1<String, Unit> {
         AnonymousClass19() {
@@ -1547,7 +1547,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(String str) {
             NavController navController = null;
             if (Intrinsics.areEqual(str, "0")) {
@@ -1604,8 +1604,8 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$20, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$20, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "Lcom/magneticchen/daijishou/view_models/SynchronizationOfPlatform;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass20 extends Lambda<Unit> implements Function1<List<SynchronizationOfPlatform>, Unit> {
         AnonymousClass20() {
@@ -1618,7 +1618,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<SynchronizationOfPlatform> list) {
             LibraryCollectionThumbnailsViewNavFragment libraryCollectionThumbnailsViewNavFragment = LibraryCollectionThumbnailsViewNavFragment.this;
             Intrinsics.checkNotNull(list);
@@ -1627,8 +1627,8 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$21, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$21, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "id", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Long;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass21 extends Lambda<Unit> implements Function1<Long, Unit> {
         AnonymousClass21() {
@@ -1641,7 +1641,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Long l) {
             long j = LibraryCollectionThumbnailsViewNavFragment.this.platformId;
             if (l != null && l.longValue() == j) {
@@ -1650,13 +1650,13 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$22, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$22, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass22 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ Ref.BooleanRef $useAutoPlatformThemeColor;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass22(Ref.BooleanRef booleanRef) {
             super(1);
             this.$useAutoPlatformThemeColor = booleanRef;
@@ -1668,7 +1668,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             if (Intrinsics.areEqual(bool, Boolean.valueOf(this.$useAutoPlatformThemeColor.element))) {
                 return;
@@ -1679,14 +1679,14 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$23, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionThumbnailsViewNavFragment$onCreateView$23, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass23 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ Ref.BooleanRef $previousEnforcePlatformCardAspectRatio;
         final /* synthetic */ LibraryCollectionThumbnailsViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass23(Ref.BooleanRef booleanRef, LibraryCollectionThumbnailsViewNavFragment libraryCollectionThumbnailsViewNavFragment) {
             super(1);
             this.$previousEnforcePlatformCardAspectRatio = booleanRef;
@@ -1699,7 +1699,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             if (!Intrinsics.areEqual(Boolean.valueOf(this.$previousEnforcePlatformCardAspectRatio.element), bool)) {
                 this.this$0.requireView().invalidate();
@@ -1805,7 +1805,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         this.hasRefreshedBefore = false;
     }
 
-    /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+    /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
     @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u001eB\u001b\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\f\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00020\u0006¢\u0006\u0002\u0010\u0007J\u0010\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0010H\u0016J \u0010\u0018\u001a\n0\u0019R\u00060\u0000R\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u0010H\u0016R\u0011\u0010\u0003\u001a\u00020\u0004¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0015\u0010\n\u001a\u00060\u000bR\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0016\u0010\u000f\u001a\u00020\u00108\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u000e\u0010\u0013\u001a\u00020\u0014X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001f"}, d2 = {"Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionThumbnailsViewNavFragment$LibraryCollectionThumbnailsViewRecyclerViewAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "context", "Landroid/content/Context;", "itemList", "", "(Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionThumbnailsViewNavFragment;Landroid/content/Context;Ljava/util/List;)V", "getContext", "()Landroid/content/Context;", "theme", "Landroid/content/res/Resources$Theme;", "Landroid/content/res/Resources;", "getTheme", "()Landroid/content/res/Resources$Theme;", "themeTextColor", "", "getThemeTextColor", "()I", "typedValue", "Landroid/util/TypedValue;", "getItemId", "", "position", "onCreateViewHolder", "Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionThumbnailsViewNavFragment$LibraryCollectionThumbnailsViewRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionThumbnailsViewNavFragment;", "viewGroup", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class LibraryCollectionThumbnailsViewRecyclerViewAdapter extends DaijishouRecyclerView.Adapter<PlatformEntity> {
         private final Context context;
@@ -1814,7 +1814,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
         final /* synthetic */ LibraryCollectionThumbnailsViewNavFragment this$0;
         private final TypedValue typedValue;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public LibraryCollectionThumbnailsViewRecyclerViewAdapter(LibraryCollectionThumbnailsViewNavFragment libraryCollectionThumbnailsViewNavFragment, Context context, List<PlatformEntity> itemList) {
             super(itemList, true, false, 4, null);
             Intrinsics.checkNotNullParameter(context, "context");
@@ -1843,7 +1843,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
             return this.themeTextColor;
         }
 
-        /* JADX INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
+        /* INFO: compiled from: LibraryCollectionThumbnailsViewNavFragment.kt */
         @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\b\u0010\u0012\u001a\u00020\u0013H\u0002J\u0018\u0010\u0014\u001a\u00020\u00132\u0006\u0010\u0015\u001a\u00020\f2\u0006\u0010\u0016\u001a\u00020\u0003H\u0016J\b\u0010\u0017\u001a\u00020\u0013H\u0016J\u0010\u0010\u0018\u001a\u00020\u00132\u0006\u0010\u0019\u001a\u00020\u001aH\u0016J\b\u0010\u001b\u001a\u00020\u0013H\u0016J\b\u0010\u001c\u001a\u00020\u0013H\u0016J\b\u0010\u001d\u001a\u00020\u0013H\u0002R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001e"}, d2 = {"Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionThumbnailsViewNavFragment$LibraryCollectionThumbnailsViewRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionThumbnailsViewNavFragment$LibraryCollectionThumbnailsViewRecyclerViewAdapter;Landroid/view/View;)V", "background", "Lcom/google/android/material/card/MaterialCardView;", "baseStrokeColor", "Landroid/content/res/ColorStateList;", "baseStrokeWidth", "", "colorPrimary", "colorPrimaryColorStateList", "iconImageView", "Landroid/widget/ImageView;", "imageView", "highlight", "", "onBind", "position", "item", "onFocus", "onFocusClear", "isAbsoluteAdapterPositionValid", "", "onSelect", "onUnselect", "unHighlight", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<PlatformEntity>.ViewHolder {
             private final MaterialCardView background;
@@ -1855,7 +1855,7 @@ public final class LibraryCollectionThumbnailsViewNavFragment extends PlatformNa
             public final ImageView imageView;
             final /* synthetic */ LibraryCollectionThumbnailsViewRecyclerViewAdapter this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(LibraryCollectionThumbnailsViewRecyclerViewAdapter libraryCollectionThumbnailsViewRecyclerViewAdapter, View itemView) {
                 super(libraryCollectionThumbnailsViewRecyclerViewAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");

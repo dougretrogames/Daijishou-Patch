@@ -6,7 +6,7 @@ import kotlin.UninitializedPropertyAccessException;
 import org.apache.commons.io.FilenameUtils;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class Intrinsics {
     public static int compare(int i, int i2) {
         if (i < i2) {

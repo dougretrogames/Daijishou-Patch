@@ -38,8 +38,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: LayoutNode.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: LayoutNode.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000Ì\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0011\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0018\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0017\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u0007\n\u0002\b\f\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0016\n\u0002\u0018\u0002\n\u0002\b?\b\u0000\u0018\u0000 á\u00022\u00020\u00012\u00020\u00022\u00020\u00032\u00020\u00042\u00020\u00052\u00020\u00062\u00020\u0007:\bá\u0002â\u0002ã\u0002ä\u0002B\u0019\u0012\b\b\u0002\u0010\b\u001a\u00020\t\u0012\b\b\u0002\u0010\n\u001a\u00020\u000b¢\u0006\u0002\u0010\fJ\u001a\u0010å\u0001\u001a\u00030¶\u00012\b\u0010À\u0001\u001a\u00030µ\u0001H\u0000¢\u0006\u0003\bæ\u0001J\u0010\u0010ç\u0001\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\bè\u0001J\n\u0010é\u0001\u001a\u00030¶\u0001H\u0002J\u0014\u0010ê\u0001\u001a\u00030ë\u00012\b\b\u0002\u0010G\u001a\u00020\u000bH\u0002J\u0010\u0010ì\u0001\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\bí\u0001J\u0010\u0010î\u0001\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\bï\u0001J\u001a\u0010ð\u0001\u001a\u00030¶\u00012\b\u0010ñ\u0001\u001a\u00030ò\u0001H\u0000¢\u0006\u0003\bó\u0001J\"\u0010ô\u0001\u001a\u00030¶\u00012\u0015\u0010õ\u0001\u001a\u0010\u0012\u0004\u0012\u00020\u0000\u0012\u0005\u0012\u00030¶\u00010´\u0001H\u0086\bJ(\u0010ö\u0001\u001a\u00030¶\u00012\u001b\u0010õ\u0001\u001a\u0016\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\u0000\u0012\u0005\u0012\u00030¶\u00010÷\u0001H\u0086\bJ)\u0010ø\u0001\u001a\u00030¶\u00012\u0016\u0010õ\u0001\u001a\u0011\u0012\u0005\u0012\u00030ù\u0001\u0012\u0005\u0012\u00030¶\u00010´\u0001H\u0080\b¢\u0006\u0003\bú\u0001J(\u0010û\u0001\u001a\u00030¶\u00012\u0015\u0010õ\u0001\u001a\u0010\u0012\u0004\u0012\u00020\u0017\u0012\u0005\u0012\u00030¶\u00010´\u0001H\u0080\b¢\u0006\u0003\bü\u0001J\n\u0010ý\u0001\u001a\u00030¶\u0001H\u0016J\u0013\u0010þ\u0001\u001a\f\u0018\u00010ÿ\u0001j\u0005\u0018\u0001`\u0080\u0002H\u0017J\u0010\u0010\u0081\u0002\u001a\t\u0012\u0005\u0012\u00030\u0082\u00020$H\u0016J@\u0010\u0083\u0002\u001a\u00030¶\u00012\b\u0010\u0084\u0002\u001a\u00030\u0085\u00022\b\u0010\u0086\u0002\u001a\u00030\u0087\u00022\t\b\u0002\u0010\u0088\u0002\u001a\u00020\t2\t\b\u0002\u0010\u0089\u0002\u001a\u00020\tH\u0000ø\u0001\u0000¢\u0006\u0006\b\u008a\u0002\u0010\u008b\u0002J@\u0010\u008c\u0002\u001a\u00030¶\u00012\b\u0010\u0084\u0002\u001a\u00030\u0085\u00022\b\u0010\u008d\u0002\u001a\u00030\u0087\u00022\t\b\u0002\u0010\u0088\u0002\u001a\u00020\t2\t\b\u0002\u0010\u0089\u0002\u001a\u00020\tH\u0000ø\u0001\u0000¢\u0006\u0006\b\u008e\u0002\u0010\u008b\u0002J!\u0010P\u001a\u00030¶\u00012\u000f\u0010õ\u0001\u001a\n\u0012\u0005\u0012\u00030¶\u00010\u008f\u0002H\u0080\b¢\u0006\u0003\b\u0090\u0002J\"\u0010\u0091\u0002\u001a\u00030¶\u00012\u0007\u0010\u0092\u0002\u001a\u00020\u000b2\u0007\u0010\u0093\u0002\u001a\u00020\u0000H\u0000¢\u0006\u0003\b\u0094\u0002J\n\u0010\u0095\u0002\u001a\u00030¶\u0001H\u0002J\n\u0010\u0096\u0002\u001a\u00030¶\u0001H\u0002J\u0010\u0010\u0097\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\b\u0098\u0002J\u0010\u0010\u0099\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\b\u009a\u0002J\u0010\u0010\u009b\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\b\u009c\u0002J\u0010\u0010\u009d\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\b\u009e\u0002J\u0010\u0010\u009f\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\b \u0002J\u0013\u0010¡\u0002\u001a\u00030¶\u00012\t\b\u0002\u0010¢\u0002\u001a\u00020\tJ\n\u0010£\u0002\u001a\u00030¶\u0001H\u0002J \u0010¤\u0002\u001a\u00020\t2\f\b\u0002\u0010¥\u0002\u001a\u0005\u0018\u00010¦\u0002H\u0000ø\u0001\u0000¢\u0006\u0003\b§\u0002J\u0010\u0010¨\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\b©\u0002J\u0010\u0010ª\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\b«\u0002J\u0010\u0010¬\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\b\u00ad\u0002J\u0010\u0010®\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\b¯\u0002J\u0010\u0010°\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\b±\u0002J+\u0010²\u0002\u001a\u00030¶\u00012\u0007\u0010³\u0002\u001a\u00020\u000b2\u0007\u0010´\u0002\u001a\u00020\u000b2\u0007\u0010µ\u0002\u001a\u00020\u000bH\u0000¢\u0006\u0003\b¶\u0002J\u0013\u0010·\u0002\u001a\u00030¶\u00012\u0007\u0010¸\u0002\u001a\u00020\u0000H\u0002J\n\u0010¹\u0002\u001a\u00030¶\u0001H\u0016J\n\u0010º\u0002\u001a\u00030¶\u0001H\u0002J\n\u0010»\u0002\u001a\u00030¶\u0001H\u0016J\n\u0010¼\u0002\u001a\u00030¶\u0001H\u0016J\n\u0010½\u0002\u001a\u00030¶\u0001H\u0016J\u0010\u0010¾\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\b¿\u0002J\"\u0010À\u0002\u001a\u00030¶\u00012\u0007\u0010Á\u0002\u001a\u00020\u000b2\u0007\u0010Â\u0002\u001a\u00020\u000bH\u0000¢\u0006\u0003\bÃ\u0002J\n\u0010Ä\u0002\u001a\u00030¶\u0001H\u0002J \u0010Å\u0002\u001a\u00020\t2\f\b\u0002\u0010¥\u0002\u001a\u0005\u0018\u00010¦\u0002H\u0000ø\u0001\u0000¢\u0006\u0003\bÆ\u0002J\u0010\u0010Ç\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\bÈ\u0002J\"\u0010É\u0002\u001a\u00030¶\u00012\u0007\u0010\u0092\u0002\u001a\u00020\u000b2\u0007\u0010µ\u0002\u001a\u00020\u000bH\u0000¢\u0006\u0003\bÊ\u0002J\u0010\u0010Ë\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\bÌ\u0002J\u001b\u0010Í\u0002\u001a\u00030¶\u00012\t\b\u0002\u0010Î\u0002\u001a\u00020\tH\u0000¢\u0006\u0003\bÏ\u0002J&\u0010Ð\u0002\u001a\u00030¶\u00012\t\b\u0002\u0010Î\u0002\u001a\u00020\t2\t\b\u0002\u0010Ñ\u0002\u001a\u00020\tH\u0000¢\u0006\u0003\bÒ\u0002J\u001b\u0010Ó\u0002\u001a\u00030¶\u00012\t\b\u0002\u0010Î\u0002\u001a\u00020\tH\u0000¢\u0006\u0003\bÔ\u0002J&\u0010Õ\u0002\u001a\u00030¶\u00012\t\b\u0002\u0010Î\u0002\u001a\u00020\t2\t\b\u0002\u0010Ñ\u0002\u001a\u00020\tH\u0000¢\u0006\u0003\bÖ\u0002J\u0019\u0010×\u0002\u001a\u00030¶\u00012\u0007\u0010Ø\u0002\u001a\u00020\u0000H\u0000¢\u0006\u0003\bÙ\u0002J\n\u0010Ú\u0002\u001a\u00030¶\u0001H\u0002J\u0010\u0010Û\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\bÜ\u0002J\t\u0010Ý\u0002\u001a\u00020\tH\u0002J\n\u0010Þ\u0002\u001a\u00030ë\u0001H\u0016J\u0010\u0010ß\u0002\u001a\u00030¶\u0001H\u0000¢\u0006\u0003\bà\u0002R\u001a\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u00000\u000e8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0010R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00000\u0014X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0015\u001a\u0004\u0018\u00010\u0000X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0016\u001a\u0004\u0018\u00010\u0017X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u0018\u001a\n\u0012\u0004\u0012\u00020\u0000\u0018\u00010\u000eX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00000\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u001a\u001a\u00020\t8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u001b\u0010\u001cR$\u0010\u001d\u001a\u00020\t8\u0000@\u0000X\u0081\u000e¢\u0006\u0014\n\u0000\u0012\u0004\b\u001e\u0010\u001f\u001a\u0004\b \u0010\u001c\"\u0004\b!\u0010\"R\u001a\u0010#\u001a\b\u0012\u0004\u0012\u00020%0$8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b&\u0010'R\u001a\u0010(\u001a\b\u0012\u0004\u0012\u00020%0$8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b)\u0010'R\u001a\u0010*\u001a\b\u0012\u0004\u0012\u00020\u00000$8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b+\u0010'R\u0016\u0010,\u001a\u0004\u0018\u00010\u00128@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b-\u0010.R,\u00100\u001a\u00020\u000b2\u0006\u0010/\u001a\u00020\u000b8W@WX\u0097\u000e¢\u0006\u0014\n\u0000\u0012\u0004\b1\u0010\u001f\u001a\u0004\b2\u00103\"\u0004\b4\u00105R$\u00108\u001a\u0002072\u0006\u00106\u001a\u000207@VX\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b9\u0010:\"\u0004\b;\u0010<R\u0014\u0010=\u001a\u00020>8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b?\u0010@R$\u0010B\u001a\u00020A2\u0006\u00106\u001a\u00020A@VX\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bC\u0010D\"\u0004\bE\u0010FR\u001a\u0010G\u001a\u00020\u000bX\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bH\u00103\"\u0004\bI\u00105R\u001a\u0010J\u001a\b\u0012\u0004\u0012\u00020\u00000$8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\bK\u0010'R\u0014\u0010L\u001a\u00020\t8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\bM\u0010\u001cR\u0014\u0010N\u001a\u00020\u000b8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bO\u00103R\u000e\u0010P\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010Q\u001a\u00020\u00178@X\u0080\u0004¢\u0006\u0006\u001a\u0004\bR\u0010SR\u0016\u0010T\u001a\u0004\u0018\u00010\u00178BX\u0082\u0004¢\u0006\u0006\u001a\u0004\bU\u0010SR\u001a\u0010V\u001a\u00020\tX\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bW\u0010\u001c\"\u0004\bX\u0010\"R\"\u0010Y\u001a\n\u0018\u00010Zj\u0004\u0018\u0001`[X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\\\u0010]\"\u0004\b^\u0010_R\u0014\u0010`\u001a\u00020aX\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\bb\u0010cR\u001a\u0010d\u001a\u00020eX\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bf\u0010g\"\u0004\bh\u0010iR\u0014\u0010j\u001a\u00020\t8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bj\u0010\u001cR\u001e\u0010k\u001a\u00020\t2\u0006\u0010/\u001a\u00020\t@RX\u0096\u000e¢\u0006\b\n\u0000\u001a\u0004\bk\u0010\u001cR\u0014\u0010l\u001a\u00020\t8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bl\u0010\u001cR\u0011\u0010m\u001a\u00020\t8F¢\u0006\u0006\u001a\u0004\bm\u0010\u001cR\u0013\u0010n\u001a\u0004\u0018\u00010\t8F¢\u0006\u0006\u001a\u0004\bn\u0010oR\u0014\u0010p\u001a\u00020\t8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\bp\u0010\u001cR\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010q\u001a\u00020\tX\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\br\u0010\u001c\"\u0004\bs\u0010\"R\u0014\u0010t\u001a\u00020uX\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\bv\u0010wR$\u0010y\u001a\u00020x2\u0006\u00106\u001a\u00020x@VX\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bz\u0010{\"\u0004\b|\u0010}R\u0014\u0010~\u001a\u00020\t8@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u007f\u0010\u001cR\u0018\u0010\u0080\u0001\u001a\u00030\u0081\u00018@X\u0080\u0004¢\u0006\b\u001a\u0006\b\u0082\u0001\u0010\u0083\u0001R\u0016\u0010\u0084\u0001\u001a\u00020\t8@X\u0080\u0004¢\u0006\u0007\u001a\u0005\b\u0085\u0001\u0010\u001cR\u0016\u0010\u0086\u0001\u001a\u00020\t8@X\u0080\u0004¢\u0006\u0007\u001a\u0005\b\u0087\u0001\u0010\u001cR\u001e\u0010\u0088\u0001\u001a\t\u0018\u00010\u0089\u0001R\u00020u8@X\u0080\u0004¢\u0006\b\u001a\u0006\b\u008a\u0001\u0010\u008b\u0001R.\u0010\u008d\u0001\u001a\u0004\u0018\u00010\u00002\t\u0010\u008c\u0001\u001a\u0004\u0018\u00010\u0000@BX\u0080\u000e¢\u0006\u0012\n\u0000\u001a\u0006\b\u008e\u0001\u0010\u008f\u0001\"\u0006\b\u0090\u0001\u0010\u0091\u0001R\u0018\u0010\u0092\u0001\u001a\u00030\u0093\u00018@X\u0080\u0004¢\u0006\b\u001a\u0006\b\u0094\u0001\u0010\u0095\u0001R\u001c\u0010\u0096\u0001\u001a\u00070\u0097\u0001R\u00020u8@X\u0080\u0004¢\u0006\b\u001a\u0006\b\u0098\u0001\u0010\u0099\u0001R\u0016\u0010\u009a\u0001\u001a\u00020\t8@X\u0080\u0004¢\u0006\u0007\u001a\u0005\b\u009b\u0001\u0010\u001cR+\u0010\u009d\u0001\u001a\u00030\u009c\u00012\u0007\u00106\u001a\u00030\u009c\u0001@VX\u0096\u000e¢\u0006\u0012\n\u0000\u001a\u0006\b\u009e\u0001\u0010\u009f\u0001\"\u0006\b \u0001\u0010¡\u0001R\u0016\u0010¢\u0001\u001a\u00020e8@X\u0080\u0004¢\u0006\u0007\u001a\u0005\b£\u0001\u0010gR\u0016\u0010¤\u0001\u001a\u00020e8@X\u0080\u0004¢\u0006\u0007\u001a\u0005\b¥\u0001\u0010gR+\u0010§\u0001\u001a\u00030¦\u00012\u0007\u00106\u001a\u00030¦\u0001@VX\u0096\u000e¢\u0006\u0012\n\u0000\u001a\u0006\b¨\u0001\u0010©\u0001\"\u0006\bª\u0001\u0010«\u0001R\u001d\u0010¬\u0001\u001a\u00020\tX\u0080\u000e¢\u0006\u0010\n\u0000\u001a\u0005\b\u00ad\u0001\u0010\u001c\"\u0005\b®\u0001\u0010\"R\u0018\u0010¯\u0001\u001a\u00030°\u0001X\u0080\u0004¢\u0006\n\n\u0000\u001a\u0006\b±\u0001\u0010²\u0001R0\u0010³\u0001\u001a\u0013\u0012\u0005\u0012\u00030µ\u0001\u0012\u0005\u0012\u00030¶\u0001\u0018\u00010´\u0001X\u0080\u000e¢\u0006\u0012\n\u0000\u001a\u0006\b·\u0001\u0010¸\u0001\"\u0006\b¹\u0001\u0010º\u0001R0\u0010»\u0001\u001a\u0013\u0012\u0005\u0012\u00030µ\u0001\u0012\u0005\u0012\u00030¶\u0001\u0018\u00010´\u0001X\u0080\u000e¢\u0006\u0012\n\u0000\u001a\u0006\b¼\u0001\u0010¸\u0001\"\u0006\b½\u0001\u0010º\u0001R\u0016\u0010¾\u0001\u001a\u00020\u00178@X\u0080\u0004¢\u0006\u0007\u001a\u0005\b¿\u0001\u0010SR'\u0010À\u0001\u001a\u0005\u0018\u00010µ\u00012\t\u0010/\u001a\u0005\u0018\u00010µ\u0001@BX\u0080\u000e¢\u0006\n\n\u0000\u001a\u0006\bÁ\u0001\u0010Â\u0001R\u0019\u0010Ã\u0001\u001a\u0004\u0018\u00010\u00008@X\u0080\u0004¢\u0006\b\u001a\u0006\bÄ\u0001\u0010\u008f\u0001R\u0019\u0010Å\u0001\u001a\u0004\u0018\u00010\u00048VX\u0096\u0004¢\u0006\b\u001a\u0006\bÆ\u0001\u0010Ç\u0001R\u0016\u0010È\u0001\u001a\u00020\u000b8@X\u0080\u0004¢\u0006\u0007\u001a\u0005\bÉ\u0001\u00103R\u000f\u0010Ê\u0001\u001a\u00020eX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\n\u001a\u00020\u000bX\u0096\u000e¢\u0006\u0010\n\u0000\u001a\u0005\bË\u0001\u00103\"\u0005\bÌ\u0001\u00105R\"\u0010Í\u0001\u001a\u0005\u0018\u00010Î\u0001X\u0080\u000e¢\u0006\u0012\n\u0000\u001a\u0006\bÏ\u0001\u0010Ð\u0001\"\u0006\bÑ\u0001\u0010Ò\u0001R\u000f\u0010Ó\u0001\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R+\u0010Õ\u0001\u001a\u00030Ô\u00012\u0007\u00106\u001a\u00030Ô\u0001@VX\u0096\u000e¢\u0006\u0012\n\u0000\u001a\u0006\bÖ\u0001\u0010×\u0001\"\u0006\bØ\u0001\u0010Ù\u0001R\u000f\u0010Ú\u0001\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010Û\u0001\u001a\u00020\u000b8VX\u0096\u0004¢\u0006\u0007\u001a\u0005\bÜ\u0001\u00103R\u0018\u0010Ý\u0001\u001a\u00030Þ\u00018BX\u0082\u0004¢\u0006\b\u001a\u0006\bß\u0001\u0010à\u0001R#\u0010á\u0001\u001a\b\u0012\u0004\u0012\u00020\u00000\u000e8@X\u0081\u0004¢\u0006\u000e\u0012\u0005\bâ\u0001\u0010\u001f\u001a\u0005\bã\u0001\u0010\u0010R\u000f\u0010ä\u0001\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006å\u0002"}, d2 = {"Landroidx/compose/ui/node/LayoutNode;", "Landroidx/compose/runtime/ComposeNodeLifecycleCallback;", "Landroidx/compose/ui/layout/Remeasurement;", "Landroidx/compose/ui/node/OwnerScope;", "Landroidx/compose/ui/layout/LayoutInfo;", "Landroidx/compose/ui/node/ComposeUiNode;", "Landroidx/compose/ui/node/InteroperableComposeUiNode;", "Landroidx/compose/ui/node/Owner$OnLayoutCompletedListener;", "isVirtual", "", "semanticsId", "", "(ZI)V", "_children", "Landroidx/compose/runtime/collection/MutableVector;", "get_children$ui_release", "()Landroidx/compose/runtime/collection/MutableVector;", "_collapsedSemantics", "Landroidx/compose/ui/semantics/SemanticsConfiguration;", "_foldedChildren", "Landroidx/compose/ui/node/MutableVectorWithMutationTracking;", "_foldedParent", "_innerLayerCoordinator", "Landroidx/compose/ui/node/NodeCoordinator;", "_unfoldedChildren", "_zSortedChildren", "alignmentLinesRequired", "getAlignmentLinesRequired$ui_release", "()Z", "canMultiMeasure", "getCanMultiMeasure$ui_release$annotations", "()V", "getCanMultiMeasure$ui_release", "setCanMultiMeasure$ui_release", "(Z)V", "childLookaheadMeasurables", "", "Landroidx/compose/ui/layout/Measurable;", "getChildLookaheadMeasurables$ui_release", "()Ljava/util/List;", "childMeasurables", "getChildMeasurables$ui_release", "children", "getChildren$ui_release", "collapsedSemantics", "getCollapsedSemantics$ui_release", "()Landroidx/compose/ui/semantics/SemanticsConfiguration;", "<set-?>", "compositeKeyHash", "getCompositeKeyHash$annotations", "getCompositeKeyHash", "()I", "setCompositeKeyHash", "(I)V", "value", "Landroidx/compose/runtime/CompositionLocalMap;", "compositionLocalMap", "getCompositionLocalMap", "()Landroidx/compose/runtime/CompositionLocalMap;", "setCompositionLocalMap", "(Landroidx/compose/runtime/CompositionLocalMap;)V", "coordinates", "Landroidx/compose/ui/layout/LayoutCoordinates;", "getCoordinates", "()Landroidx/compose/ui/layout/LayoutCoordinates;", "Landroidx/compose/ui/unit/Density;", "density", "getDensity", "()Landroidx/compose/ui/unit/Density;", "setDensity", "(Landroidx/compose/ui/unit/Density;)V", ConfigConstants.CONFIG_KEY_DEPTH, "getDepth$ui_release", "setDepth$ui_release", "foldedChildren", "getFoldedChildren$ui_release", "hasFixedInnerContentConstraints", "getHasFixedInnerContentConstraints$ui_release", "height", "getHeight", "ignoreRemeasureRequests", "innerCoordinator", "getInnerCoordinator$ui_release", "()Landroidx/compose/ui/node/NodeCoordinator;", "innerLayerCoordinator", "getInnerLayerCoordinator", "innerLayerCoordinatorIsDirty", "getInnerLayerCoordinatorIsDirty$ui_release", "setInnerLayerCoordinatorIsDirty$ui_release", "interopViewFactoryHolder", "Landroidx/compose/ui/viewinterop/AndroidViewHolder;", "Landroidx/compose/ui/viewinterop/InteropViewFactoryHolder;", "getInteropViewFactoryHolder$ui_release", "()Landroidx/compose/ui/viewinterop/AndroidViewHolder;", "setInteropViewFactoryHolder$ui_release", "(Landroidx/compose/ui/viewinterop/AndroidViewHolder;)V", "intrinsicsPolicy", "Landroidx/compose/ui/node/IntrinsicsPolicy;", "getIntrinsicsPolicy$ui_release", "()Landroidx/compose/ui/node/IntrinsicsPolicy;", "intrinsicsUsageByParent", "Landroidx/compose/ui/node/LayoutNode$UsageByParent;", "getIntrinsicsUsageByParent$ui_release", "()Landroidx/compose/ui/node/LayoutNode$UsageByParent;", "setIntrinsicsUsageByParent$ui_release", "(Landroidx/compose/ui/node/LayoutNode$UsageByParent;)V", "isAttached", "isDeactivated", "isPlaced", "isPlacedByParent", "isPlacedInLookahead", "()Ljava/lang/Boolean;", "isValidOwnerScope", "isVirtualLookaheadRoot", "isVirtualLookaheadRoot$ui_release", "setVirtualLookaheadRoot$ui_release", "layoutDelegate", "Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;", "getLayoutDelegate$ui_release", "()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate;", "Landroidx/compose/ui/unit/LayoutDirection;", "layoutDirection", "getLayoutDirection", "()Landroidx/compose/ui/unit/LayoutDirection;", "setLayoutDirection", "(Landroidx/compose/ui/unit/LayoutDirection;)V", "layoutPending", "getLayoutPending$ui_release", "layoutState", "Landroidx/compose/ui/node/LayoutNode$LayoutState;", "getLayoutState$ui_release", "()Landroidx/compose/ui/node/LayoutNode$LayoutState;", "lookaheadLayoutPending", "getLookaheadLayoutPending$ui_release", "lookaheadMeasurePending", "getLookaheadMeasurePending$ui_release", "lookaheadPassDelegate", "Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;", "getLookaheadPassDelegate$ui_release", "()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$LookaheadPassDelegate;", "newRoot", "lookaheadRoot", "getLookaheadRoot$ui_release", "()Landroidx/compose/ui/node/LayoutNode;", "setLookaheadRoot", "(Landroidx/compose/ui/node/LayoutNode;)V", "mDrawScope", "Landroidx/compose/ui/node/LayoutNodeDrawScope;", "getMDrawScope$ui_release", "()Landroidx/compose/ui/node/LayoutNodeDrawScope;", "measurePassDelegate", "Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$MeasurePassDelegate;", "getMeasurePassDelegate$ui_release", "()Landroidx/compose/ui/node/LayoutNodeLayoutDelegate$MeasurePassDelegate;", "measurePending", "getMeasurePending$ui_release", "Landroidx/compose/ui/layout/MeasurePolicy;", "measurePolicy", "getMeasurePolicy", "()Landroidx/compose/ui/layout/MeasurePolicy;", "setMeasurePolicy", "(Landroidx/compose/ui/layout/MeasurePolicy;)V", "measuredByParent", "getMeasuredByParent$ui_release", "measuredByParentInLookahead", "getMeasuredByParentInLookahead$ui_release", "Landroidx/compose/ui/Modifier;", "modifier", "getModifier", "()Landroidx/compose/ui/Modifier;", "setModifier", "(Landroidx/compose/ui/Modifier;)V", "needsOnPositionedDispatch", "getNeedsOnPositionedDispatch$ui_release", "setNeedsOnPositionedDispatch$ui_release", "nodes", "Landroidx/compose/ui/node/NodeChain;", "getNodes$ui_release", "()Landroidx/compose/ui/node/NodeChain;", "onAttach", "Lkotlin/Function1;", "Landroidx/compose/ui/node/Owner;", "", "getOnAttach$ui_release", "()Lkotlin/jvm/functions/Function1;", "setOnAttach$ui_release", "(Lkotlin/jvm/functions/Function1;)V", "onDetach", "getOnDetach$ui_release", "setOnDetach$ui_release", "outerCoordinator", "getOuterCoordinator$ui_release", "owner", "getOwner$ui_release", "()Landroidx/compose/ui/node/Owner;", "parent", "getParent$ui_release", "parentInfo", "getParentInfo", "()Landroidx/compose/ui/layout/LayoutInfo;", "placeOrder", "getPlaceOrder$ui_release", "previousIntrinsicsUsageByParent", "getSemanticsId", "setSemanticsId", "subcompositionsState", "Landroidx/compose/ui/layout/LayoutNodeSubcompositionsState;", "getSubcompositionsState$ui_release", "()Landroidx/compose/ui/layout/LayoutNodeSubcompositionsState;", "setSubcompositionsState$ui_release", "(Landroidx/compose/ui/layout/LayoutNodeSubcompositionsState;)V", "unfoldedVirtualChildrenListDirty", "Landroidx/compose/ui/platform/ViewConfiguration;", "viewConfiguration", "getViewConfiguration", "()Landroidx/compose/ui/platform/ViewConfiguration;", "setViewConfiguration", "(Landroidx/compose/ui/platform/ViewConfiguration;)V", "virtualChildrenCount", "width", "getWidth", "zIndex", "", "getZIndex", "()F", "zSortedChildren", "getZSortedChildren$annotations", "getZSortedChildren", "zSortedChildrenInvalidated", "attach", "attach$ui_release", "clearSubtreeIntrinsicsUsage", "clearSubtreeIntrinsicsUsage$ui_release", "clearSubtreePlacementIntrinsicsUsage", "debugTreeToString", "", "detach", "detach$ui_release", "dispatchOnPositionedCallbacks", "dispatchOnPositionedCallbacks$ui_release", "draw", "canvas", "Landroidx/compose/ui/graphics/Canvas;", "draw$ui_release", "forEachChild", "block", "forEachChildIndexed", "Lkotlin/Function2;", "forEachCoordinator", "Landroidx/compose/ui/node/LayoutModifierNodeCoordinator;", "forEachCoordinator$ui_release", "forEachCoordinatorIncludingInner", "forEachCoordinatorIncludingInner$ui_release", "forceRemeasure", "getInteropView", "Landroid/view/View;", "Landroidx/compose/ui/viewinterop/InteropView;", "getModifierInfo", "Landroidx/compose/ui/layout/ModifierInfo;", "hitTest", "pointerPosition", "Landroidx/compose/ui/geometry/Offset;", "hitTestResult", "Landroidx/compose/ui/node/HitTestResult;", "isTouchEvent", "isInLayer", "hitTest-M_7yMNQ$ui_release", "(JLandroidx/compose/ui/node/HitTestResult;ZZ)V", "hitTestSemantics", "hitSemanticsEntities", "hitTestSemantics-M_7yMNQ$ui_release", "Lkotlin/Function0;", "ignoreRemeasureRequests$ui_release", "insertAt", ConfigConstants.CONFIG_INDEX_SECTION, "instance", "insertAt$ui_release", "invalidateFocusOnAttach", "invalidateFocusOnDetach", "invalidateLayer", "invalidateLayer$ui_release", "invalidateLayers", "invalidateLayers$ui_release", "invalidateMeasurements", "invalidateMeasurements$ui_release", "invalidateParentData", "invalidateParentData$ui_release", "invalidateSemantics", "invalidateSemantics$ui_release", "invalidateSubtree", "isRootOfInvalidation", "invalidateUnfoldedVirtualChildren", "lookaheadRemeasure", "constraints", "Landroidx/compose/ui/unit/Constraints;", "lookaheadRemeasure-_Sx5XlM$ui_release", "lookaheadReplace", "lookaheadReplace$ui_release", "markLayoutPending", "markLayoutPending$ui_release", "markLookaheadLayoutPending", "markLookaheadLayoutPending$ui_release", "markLookaheadMeasurePending", "markLookaheadMeasurePending$ui_release", "markMeasurePending", "markMeasurePending$ui_release", "move", TypedValues.TransitionType.S_FROM, TypedValues.TransitionType.S_TO, "count", "move$ui_release", "onChildRemoved", "child", "onDeactivate", "onDensityOrLayoutDirectionChanged", "onLayoutComplete", "onRelease", "onReuse", "onZSortedChildrenInvalidated", "onZSortedChildrenInvalidated$ui_release", "place", "x", "y", "place$ui_release", "recreateUnfoldedChildrenIfDirty", "remeasure", "remeasure-_Sx5XlM$ui_release", "removeAll", "removeAll$ui_release", "removeAt", "removeAt$ui_release", "replace", "replace$ui_release", "requestLookaheadRelayout", "forceRequest", "requestLookaheadRelayout$ui_release", "requestLookaheadRemeasure", "scheduleMeasureAndLayout", "requestLookaheadRemeasure$ui_release", "requestRelayout", "requestRelayout$ui_release", "requestRemeasure", "requestRemeasure$ui_release", "rescheduleRemeasureOrRelayout", "it", "rescheduleRemeasureOrRelayout$ui_release", "resetModifierState", "resetSubtreeIntrinsicsUsage", "resetSubtreeIntrinsicsUsage$ui_release", "shouldInvalidateParentLayer", "toString", "updateChildrenIfDirty", "updateChildrenIfDirty$ui_release", "Companion", "LayoutState", "NoIntrinsicsMeasurePolicy", "UsageByParent", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasurement, OwnerScope, LayoutInfo, ComposeUiNode, InteroperableComposeUiNode, Owner.OnLayoutCompletedListener {
     public static final int NotPlacedPlaceOrder = Integer.MAX_VALUE;
@@ -80,7 +80,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
     private int virtualChildrenCount;
     private boolean zSortedChildrenInvalidated;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public static final int $stable = 8;
     private static final NoIntrinsicsMeasurePolicy ErrorMeasurePolicy = new LayoutNode$Companion$ErrorMeasurePolicy$1();
@@ -88,7 +88,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
     private static final ViewConfiguration DummyViewConfiguration = new LayoutNode$Companion$DummyViewConfiguration$1();
     private static final Comparator<LayoutNode> ZComparator = new LayoutNode$$ExternalSyntheticLambda0();
 
-    /* JADX INFO: compiled from: LayoutNode.kt */
+    /* INFO: compiled from: LayoutNode.kt */
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0007\b\u0080\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006j\u0002\b\u0007¨\u0006\b"}, d2 = {"Landroidx/compose/ui/node/LayoutNode$LayoutState;", "", "(Ljava/lang/String;I)V", "Measuring", "LookaheadMeasuring", "LayingOut", "LookaheadLayingOut", "Idle", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public enum LayoutState {
         Measuring,
@@ -98,7 +98,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         Idle
     }
 
-    /* JADX INFO: compiled from: LayoutNode.kt */
+    /* INFO: compiled from: LayoutNode.kt */
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0005\b\u0080\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005¨\u0006\u0006"}, d2 = {"Landroidx/compose/ui/node/LayoutNode$UsageByParent;", "", "(Ljava/lang/String;I)V", "InMeasureBlock", "InLayoutBlock", "NotUsed", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public enum UsageByParent {
         InMeasureBlock,
@@ -106,7 +106,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         NotUsed
     }
 
-    /* JADX INFO: compiled from: LayoutNode.kt */
+    /* INFO: compiled from: LayoutNode.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     public /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -178,7 +178,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         this.compositeKeyHash = i;
     }
 
-    /* JADX INFO: renamed from: isVirtualLookaheadRoot$ui_release, reason: from getter */
+    /* INFO: renamed from: isVirtualLookaheadRoot$ui_release, reason: from getter */
     public final boolean getIsVirtualLookaheadRoot() {
         return this.isVirtualLookaheadRoot;
     }
@@ -187,7 +187,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         this.isVirtualLookaheadRoot = z;
     }
 
-    /* JADX INFO: renamed from: getLookaheadRoot$ui_release, reason: from getter */
+    /* INFO: renamed from: getLookaheadRoot$ui_release, reason: from getter */
     public final LayoutNode getLookaheadRoot() {
         return this.lookaheadRoot;
     }
@@ -322,12 +322,12 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return layoutNode;
     }
 
-    /* JADX INFO: renamed from: getOwner$ui_release, reason: from getter */
+    /* INFO: renamed from: getOwner$ui_release, reason: from getter */
     public final Owner getOwner() {
         return this.owner;
     }
 
-    /* JADX INFO: renamed from: getInteropViewFactoryHolder$ui_release, reason: from getter */
+    /* INFO: renamed from: getInteropViewFactoryHolder$ui_release, reason: from getter */
     public final AndroidViewHolder getInteropViewFactoryHolder() {
         return this.interopViewFactoryHolder;
     }
@@ -350,7 +350,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return this.owner != null;
     }
 
-    /* JADX INFO: renamed from: getDepth$ui_release, reason: from getter */
+    /* INFO: renamed from: getDepth$ui_release, reason: from getter */
     public final int getDepth() {
         return this.depth;
     }
@@ -484,8 +484,8 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         LayoutNodeKt.requireOwner(this).onSemanticsChange();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v2, types: [T, androidx.compose.ui.semantics.SemanticsConfiguration] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r1v2, types: [T, androidx.compose.ui.semantics.SemanticsConfiguration] */
     public final SemanticsConfiguration getCollapsedSemantics$ui_release() {
         if (!this.nodes.m1997hasH91voCI$ui_release(NodeKind.m2034constructorimpl(8)) || this._collapsedSemantics != null) {
             return this._collapsedSemantics;
@@ -681,7 +681,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return strSubstring;
     }
 
-    /* JADX INFO: compiled from: LayoutNode.kt */
+    /* INFO: compiled from: LayoutNode.kt */
     @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0001\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\b \u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\"\u0010\u0005\u001a\u00020\u0006*\u00020\u00072\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010\u000b\u001a\u00020\fH\u0016J\"\u0010\r\u001a\u00020\u0006*\u00020\u00072\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010\u000e\u001a\u00020\fH\u0016J\"\u0010\u000f\u001a\u00020\u0006*\u00020\u00072\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010\u000b\u001a\u00020\fH\u0016J\"\u0010\u0010\u001a\u00020\u0006*\u00020\u00072\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\n0\t2\u0006\u0010\u000e\u001a\u00020\fH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0011"}, d2 = {"Landroidx/compose/ui/node/LayoutNode$NoIntrinsicsMeasurePolicy;", "Landroidx/compose/ui/layout/MeasurePolicy;", "error", "", "(Ljava/lang/String;)V", "maxIntrinsicHeight", "", "Landroidx/compose/ui/layout/IntrinsicMeasureScope;", "measurables", "", "Landroidx/compose/ui/layout/IntrinsicMeasurable;", "width", "", "maxIntrinsicWidth", "height", "minIntrinsicHeight", "minIntrinsicWidth", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static abstract class NoIntrinsicsMeasurePolicy implements MeasurePolicy {
         public static final int $stable = 0;
@@ -711,22 +711,22 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
             return ((Number) m1966minIntrinsicWidth(intrinsicMeasureScope, (List<? extends IntrinsicMeasurable>) list, i)).intValue();
         }
 
-        /* JADX INFO: renamed from: minIntrinsicWidth, reason: collision with other method in class */
+        /* INFO: renamed from: minIntrinsicWidth, reason: collision with other method in class */
         public Void m1966minIntrinsicWidth(IntrinsicMeasureScope intrinsicMeasureScope, List<? extends IntrinsicMeasurable> list, int i) {
             throw new IllegalStateException(this.error.toString());
         }
 
-        /* JADX INFO: renamed from: minIntrinsicHeight, reason: collision with other method in class */
+        /* INFO: renamed from: minIntrinsicHeight, reason: collision with other method in class */
         public Void m1965minIntrinsicHeight(IntrinsicMeasureScope intrinsicMeasureScope, List<? extends IntrinsicMeasurable> list, int i) {
             throw new IllegalStateException(this.error.toString());
         }
 
-        /* JADX INFO: renamed from: maxIntrinsicWidth, reason: collision with other method in class */
+        /* INFO: renamed from: maxIntrinsicWidth, reason: collision with other method in class */
         public Void m1964maxIntrinsicWidth(IntrinsicMeasureScope intrinsicMeasureScope, List<? extends IntrinsicMeasurable> list, int i) {
             throw new IllegalStateException(this.error.toString());
         }
 
-        /* JADX INFO: renamed from: maxIntrinsicHeight, reason: collision with other method in class */
+        /* INFO: renamed from: maxIntrinsicHeight, reason: collision with other method in class */
         public Void m1963maxIntrinsicHeight(IntrinsicMeasureScope intrinsicMeasureScope, List<? extends IntrinsicMeasurable> list, int i) {
             throw new IllegalStateException(this.error.toString());
         }
@@ -747,7 +747,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         invalidateMeasurements$ui_release();
     }
 
-    /* JADX INFO: renamed from: getIntrinsicsPolicy$ui_release, reason: from getter */
+    /* INFO: renamed from: getIntrinsicsPolicy$ui_release, reason: from getter */
     public final IntrinsicsPolicy getIntrinsicsPolicy() {
         return this.intrinsicsPolicy;
     }
@@ -757,8 +757,8 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return this.density;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r3v6 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r3v6 */
     @Override // androidx.compose.ui.node.ComposeUiNode
     public void setDensity(Density density) {
         if (Intrinsics.areEqual(this.density, density)) {
@@ -834,8 +834,8 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return this.viewConfiguration;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r3v6 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r3v6 */
     @Override // androidx.compose.ui.node.ComposeUiNode
     public void setViewConfiguration(ViewConfiguration viewConfiguration) {
         if (Intrinsics.areEqual(this.viewConfiguration, viewConfiguration)) {
@@ -897,12 +897,12 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return this.compositionLocalMap;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r2v7 */
-    /*  JADX ERROR: NullPointerException in pass: PrepareForCodeGen
-        java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.RegisterArg.getSVar()" because "result" is null
-        	at jadx.core.dex.visitors.PrepareForCodeGen.removeInstructions(PrepareForCodeGen.java:118)
-        	at jadx.core.dex.visitors.PrepareForCodeGen.visit(PrepareForCodeGen.java:85)
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r2v7 */
+    /* ERROR: NullPointerException in pass: PrepareForCodeGen
+        java.lang.NullPointerException: Cannot invoke "decompiler.core.dex.instructions.args.RegisterArg.getSVar()" because "result" is null
+        	at decompiler.core.dex.visitors.PrepareForCodeGen.removeInstructions(PrepareForCodeGen.java:118)
+        	at decompiler.core.dex.visitors.PrepareForCodeGen.visit(PrepareForCodeGen.java:85)
         */
     @Override // androidx.compose.ui.node.ComposeUiNode
     public void setCompositionLocalMap(androidx.compose.runtime.CompositionLocalMap r10) {
@@ -1062,7 +1062,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return (lookaheadPassDelegate$ui_release == null || (measuredByParent$ui_release = lookaheadPassDelegate$ui_release.getMeasuredByParent()) == null) ? UsageByParent.NotUsed : measuredByParent$ui_release;
     }
 
-    /* JADX INFO: renamed from: getIntrinsicsUsageByParent$ui_release, reason: from getter */
+    /* INFO: renamed from: getIntrinsicsUsageByParent$ui_release, reason: from getter */
     public final UsageByParent getIntrinsicsUsageByParent() {
         return this.intrinsicsUsageByParent;
     }
@@ -1071,7 +1071,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         this.intrinsicsUsageByParent = usageByParent;
     }
 
-    /* JADX INFO: renamed from: getCanMultiMeasure$ui_release, reason: from getter */
+    /* INFO: renamed from: getCanMultiMeasure$ui_release, reason: from getter */
     public final boolean getCanMultiMeasure() {
         return this.canMultiMeasure;
     }
@@ -1080,7 +1080,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         this.canMultiMeasure = z;
     }
 
-    /* JADX INFO: renamed from: getNodes$ui_release, reason: from getter */
+    /* INFO: renamed from: getNodes$ui_release, reason: from getter */
     public final NodeChain getNodes() {
         return this.nodes;
     }
@@ -1089,7 +1089,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return this.nodes.getInnerCoordinator();
     }
 
-    /* JADX INFO: renamed from: getLayoutDelegate$ui_release, reason: from getter */
+    /* INFO: renamed from: getLayoutDelegate$ui_release, reason: from getter */
     public final LayoutNodeLayoutDelegate getLayoutDelegate() {
         return this.layoutDelegate;
     }
@@ -1102,7 +1102,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return getMeasurePassDelegate$ui_release().getZIndex();
     }
 
-    /* JADX INFO: renamed from: getSubcompositionsState$ui_release, reason: from getter */
+    /* INFO: renamed from: getSubcompositionsState$ui_release, reason: from getter */
     public final LayoutNodeSubcompositionsState getSubcompositionsState() {
         return this.subcompositionsState;
     }
@@ -1111,7 +1111,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         this.subcompositionsState = layoutNodeSubcompositionsState;
     }
 
-    /* JADX INFO: renamed from: getInnerLayerCoordinatorIsDirty$ui_release, reason: from getter */
+    /* INFO: renamed from: getInnerLayerCoordinatorIsDirty$ui_release, reason: from getter */
     public final boolean getInnerLayerCoordinatorIsDirty() {
         return this.innerLayerCoordinatorIsDirty;
     }
@@ -1202,7 +1202,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         this.onDetach = function1;
     }
 
-    /* JADX INFO: renamed from: getNeedsOnPositionedDispatch$ui_release, reason: from getter */
+    /* INFO: renamed from: getNeedsOnPositionedDispatch$ui_release, reason: from getter */
     public final boolean getNeedsOnPositionedDispatch() {
         return this.needsOnPositionedDispatch;
     }
@@ -1244,7 +1244,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         getOuterCoordinator$ui_release().draw(canvas);
     }
 
-    /* JADX INFO: renamed from: hitTest-M_7yMNQ$ui_release$default, reason: not valid java name */
+    /* INFO: renamed from: hitTest-M_7yMNQ$ui_release$default, reason: not valid java name */
     public static /* synthetic */ void m1953hitTestM_7yMNQ$ui_release$default(LayoutNode layoutNode, long j, HitTestResult hitTestResult, boolean z, boolean z2, int i, Object obj) {
         if ((i & 4) != 0) {
             z = false;
@@ -1256,12 +1256,12 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         layoutNode.m1957hitTestM_7yMNQ$ui_release(j, hitTestResult, z3, z2);
     }
 
-    /* JADX INFO: renamed from: hitTest-M_7yMNQ$ui_release, reason: not valid java name */
+    /* INFO: renamed from: hitTest-M_7yMNQ$ui_release, reason: not valid java name */
     public final void m1957hitTestM_7yMNQ$ui_release(long pointerPosition, HitTestResult hitTestResult, boolean isTouchEvent, boolean isInLayer) {
         getOuterCoordinator$ui_release().m2021hitTestYqVAtuI(NodeCoordinator.INSTANCE.getPointerInputSource(), getOuterCoordinator$ui_release().m2017fromParentPositionMKHz9U(pointerPosition), hitTestResult, isTouchEvent, isInLayer);
     }
 
-    /* JADX INFO: renamed from: hitTestSemantics-M_7yMNQ$ui_release$default, reason: not valid java name */
+    /* INFO: renamed from: hitTestSemantics-M_7yMNQ$ui_release$default, reason: not valid java name */
     public static /* synthetic */ void m1954hitTestSemanticsM_7yMNQ$ui_release$default(LayoutNode layoutNode, long j, HitTestResult hitTestResult, boolean z, boolean z2, int i, Object obj) {
         if ((i & 4) != 0) {
             z = true;
@@ -1272,7 +1272,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         layoutNode.m1958hitTestSemanticsM_7yMNQ$ui_release(j, hitTestResult, z, z2);
     }
 
-    /* JADX INFO: renamed from: hitTestSemantics-M_7yMNQ$ui_release, reason: not valid java name */
+    /* INFO: renamed from: hitTestSemantics-M_7yMNQ$ui_release, reason: not valid java name */
     public final void m1958hitTestSemanticsM_7yMNQ$ui_release(long pointerPosition, HitTestResult hitSemanticsEntities, boolean isTouchEvent, boolean isInLayer) {
         getOuterCoordinator$ui_release().m2021hitTestYqVAtuI(NodeCoordinator.INSTANCE.getSemanticsSource(), getOuterCoordinator$ui_release().m2017fromParentPositionMKHz9U(pointerPosition), hitSemanticsEntities, true, isInLayer);
     }
@@ -1445,8 +1445,8 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         owner.onRequestRelayout(this, true, forceRequest);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r4v6 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r4v6 */
     public final void dispatchOnPositionedCallbacks$ui_release() {
         if (getLayoutState$ui_release() != LayoutState.Idle || getLayoutPending$ui_release() || getMeasurePending$ui_release() || getIsDeactivated() || !isPlaced()) {
             return;
@@ -1507,7 +1507,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return this.nodes.getModifierInfo();
     }
 
-    /* JADX INFO: renamed from: lookaheadRemeasure-_Sx5XlM$ui_release$default, reason: not valid java name */
+    /* INFO: renamed from: lookaheadRemeasure-_Sx5XlM$ui_release$default, reason: not valid java name */
     public static /* synthetic */ boolean m1955lookaheadRemeasure_Sx5XlM$ui_release$default(LayoutNode layoutNode, Constraints constraints, int i, Object obj) {
         if ((i & 1) != 0) {
             constraints = layoutNode.layoutDelegate.m1974getLastLookaheadConstraintsDWUhwKw();
@@ -1515,7 +1515,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return layoutNode.m1959lookaheadRemeasure_Sx5XlM$ui_release(constraints);
     }
 
-    /* JADX INFO: renamed from: lookaheadRemeasure-_Sx5XlM$ui_release, reason: not valid java name */
+    /* INFO: renamed from: lookaheadRemeasure-_Sx5XlM$ui_release, reason: not valid java name */
     public final boolean m1959lookaheadRemeasure_Sx5XlM$ui_release(Constraints constraints) {
         if (constraints == null || this.lookaheadRoot == null) {
             return false;
@@ -1525,7 +1525,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return lookaheadPassDelegate$ui_release.m1977remeasureBRTryo0(constraints.getValue());
     }
 
-    /* JADX INFO: renamed from: remeasure-_Sx5XlM$ui_release$default, reason: not valid java name */
+    /* INFO: renamed from: remeasure-_Sx5XlM$ui_release$default, reason: not valid java name */
     public static /* synthetic */ boolean m1956remeasure_Sx5XlM$ui_release$default(LayoutNode layoutNode, Constraints constraints, int i, Object obj) {
         if ((i & 1) != 0) {
             constraints = layoutNode.layoutDelegate.m1973getLastConstraintsDWUhwKw();
@@ -1533,7 +1533,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         return layoutNode.m1960remeasure_Sx5XlM$ui_release(constraints);
     }
 
-    /* JADX INFO: renamed from: remeasure-_Sx5XlM$ui_release, reason: not valid java name */
+    /* INFO: renamed from: remeasure-_Sx5XlM$ui_release, reason: not valid java name */
     public final boolean m1960remeasure_Sx5XlM$ui_release(Constraints constraints) {
         if (constraints == null) {
             return false;
@@ -1579,12 +1579,12 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         layoutNode.invalidateSubtree(z);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r4v15 */
-    /*  JADX ERROR: NullPointerException in pass: PrepareForCodeGen
-        java.lang.NullPointerException: Cannot invoke "jadx.core.dex.instructions.args.RegisterArg.getSVar()" because "result" is null
-        	at jadx.core.dex.visitors.PrepareForCodeGen.removeInstructions(PrepareForCodeGen.java:118)
-        	at jadx.core.dex.visitors.PrepareForCodeGen.visit(PrepareForCodeGen.java:85)
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r4v15 */
+    /* ERROR: NullPointerException in pass: PrepareForCodeGen
+        java.lang.NullPointerException: Cannot invoke "decompiler.core.dex.instructions.args.RegisterArg.getSVar()" because "result" is null
+        	at decompiler.core.dex.visitors.PrepareForCodeGen.removeInstructions(PrepareForCodeGen.java:118)
+        	at decompiler.core.dex.visitors.PrepareForCodeGen.visit(PrepareForCodeGen.java:85)
         */
     public final void invalidateSubtree(boolean r11) {
         /*
@@ -1719,8 +1719,8 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r4v6 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r4v6 */
     @Override // androidx.compose.ui.node.Owner.OnLayoutCompletedListener
     public void onLayoutComplete() {
         NodeCoordinator innerCoordinator$ui_release = getInnerCoordinator$ui_release();
@@ -1851,7 +1851,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
     }
 
     @Override // androidx.compose.ui.layout.LayoutInfo
-    /* JADX INFO: renamed from: isDeactivated, reason: from getter */
+    /* INFO: renamed from: isDeactivated, reason: from getter */
     public boolean getIsDeactivated() {
         return this.isDeactivated;
     }
@@ -1914,7 +1914,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         }
     }
 
-    /* JADX INFO: compiled from: LayoutNode.kt */
+    /* INFO: compiled from: LayoutNode.kt */
     @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0080\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u001a\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0014\u0010\b\u001a\u00020\tX\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u000e\u0010\f\u001a\u00020\rX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u000fX\u0080T¢\u0006\u0002\n\u0000R\u001a\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00050\u0011X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013¨\u0006\u0014"}, d2 = {"Landroidx/compose/ui/node/LayoutNode$Companion;", "", "()V", "Constructor", "Lkotlin/Function0;", "Landroidx/compose/ui/node/LayoutNode;", "getConstructor$ui_release", "()Lkotlin/jvm/functions/Function0;", "DummyViewConfiguration", "Landroidx/compose/ui/platform/ViewConfiguration;", "getDummyViewConfiguration$ui_release", "()Landroidx/compose/ui/platform/ViewConfiguration;", "ErrorMeasurePolicy", "Landroidx/compose/ui/node/LayoutNode$NoIntrinsicsMeasurePolicy;", "NotPlacedPlaceOrder", "", "ZComparator", "Ljava/util/Comparator;", "getZComparator$ui_release", "()Ljava/util/Comparator;", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -1937,7 +1937,7 @@ public final class LayoutNode implements ComposeNodeLifecycleCallback, Remeasure
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final int ZComparator$lambda$39(LayoutNode layoutNode, LayoutNode layoutNode2) {
         if (layoutNode.getZIndex() == layoutNode2.getZIndex()) {
             return Intrinsics.compare(layoutNode.getPlaceOrder$ui_release(), layoutNode2.getPlaceOrder$ui_release());

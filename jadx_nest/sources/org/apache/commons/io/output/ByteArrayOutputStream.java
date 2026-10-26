@@ -5,9 +5,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ByteArrayOutputStream extends AbstractByteArrayOutputStream<ByteArrayOutputStream> {
-    /* JADX INFO: renamed from: $r8$lambda$6y4jQ-FsQ6NEye1Y_s5VEmsevM0, reason: not valid java name */
+    /* INFO: renamed from: $r8$lambda$6y4jQ-FsQ6NEye1Y_s5VEmsevM0, reason: not valid java name */
     public static /* synthetic */ ByteArrayInputStream m5622$r8$lambda$6y4jQFsQ6NEye1Y_s5VEmsevM0(byte[] bArr, int i, int i2) {
         return new ByteArrayInputStream(bArr, i, i2);
     }

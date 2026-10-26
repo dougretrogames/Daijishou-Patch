@@ -5,13 +5,13 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.Objects;
 import com.google.android.gms.common.internal.Preconditions;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class COSEAlgorithmIdentifier implements Parcelable {
     public static final Parcelable.Creator<COSEAlgorithmIdentifier> CREATOR = new zzp();
     private final Algorithm zza;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class UnsupportedAlgorithmIdentifierException extends Exception {
         public UnsupportedAlgorithmIdentifierException(int i) {
             super("Algorithm with COSE value " + i + " not supported");

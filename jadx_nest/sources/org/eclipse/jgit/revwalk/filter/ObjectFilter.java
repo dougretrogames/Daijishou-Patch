@@ -4,7 +4,7 @@ import java.io.IOException;
 import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.revwalk.ObjectWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class ObjectFilter {
     public static final ObjectFilter ALL = new AllFilter(null);
 

@@ -2,7 +2,7 @@ package org.eclipse.jgit.internal.diffmergetool;
 
 import org.eclipse.jgit.lib.internal.BooleanTriState;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UserDefinedMergeTool extends UserDefinedDiffTool implements ExternalMergeTool {
     private BooleanTriState trustExitCode;
 

@@ -9,7 +9,7 @@ import androidx.core.util.Preconditions;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class IntentCompat {
     public static final String ACTION_CREATE_REMINDER = "android.intent.action.CREATE_REMINDER";
     public static final String CATEGORY_LEANBACK_LAUNCHER = "android.intent.category.LEANBACK_LAUNCHER";

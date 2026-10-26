@@ -3,7 +3,7 @@ package androidx.constraintlayout.core.motion.utils;
 import java.util.Arrays;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TypedBundle {
     private static final int INITIAL_BOOLEAN = 4;
     private static final int INITIAL_FLOAT = 10;

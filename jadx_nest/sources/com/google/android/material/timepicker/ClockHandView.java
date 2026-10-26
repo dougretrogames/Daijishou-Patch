@@ -25,7 +25,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ClockHandView extends View {
     private static final int DEFAULT_ANIMATION_DURATION = 200;
     private boolean animatingOnTouchUp;
@@ -122,12 +122,12 @@ class ClockHandView extends View {
         this.rotationAnimator.start();
     }
 
-    /* JADX INFO: renamed from: lambda$setHandRotation$0$com-google-android-material-timepicker-ClockHandView, reason: not valid java name */
+    /* INFO: renamed from: lambda$setHandRotation$0$com-google-android-material-timepicker-ClockHandView, reason: not valid java name */
     /* synthetic */ void m3344xb17f7076(ValueAnimator valueAnimator) {
         setHandRotationInternal(((Float) valueAnimator.getAnimatedValue()).floatValue(), true);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.ClockHandView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.ClockHandView$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }

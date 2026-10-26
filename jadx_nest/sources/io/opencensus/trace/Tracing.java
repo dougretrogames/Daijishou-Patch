@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Tracing {
     private static final Logger logger = Logger.getLogger(Tracing.class.getName());
     private static final TraceComponent traceComponent = loadTraceComponent(TraceComponent.class.getClassLoader());

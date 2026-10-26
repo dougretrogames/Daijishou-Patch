@@ -60,8 +60,8 @@ import org.gradle.util.GradleVersion;
 import org.jetbrains.kotlin.gradle.dsl.KotlinAndroidProjectExtension;
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile;
 
-/* JADX INFO: compiled from: ProtobufPlugin.groovy */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ProtobufPlugin.groovy */
+/* INFO: loaded from: classes4.dex */
 public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
     private static /* synthetic */ SoftReference $callSiteArray;
     private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -193,7 +193,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         ((Project) reference.get()).afterEvaluate(new _apply_closure3(this, this));
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _apply_closure1 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -236,7 +236,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _apply_closure2 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -285,7 +285,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _apply_closure3 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -327,7 +327,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void doApply() {
         CallSite[] callSiteArr$getCallSiteArray = $getCallSiteArray();
         boolean zBooleanUnbox = DefaultTypeTransformation.booleanUnbox(callSiteArr$getCallSiteArray[0].call(Utils.class, this.project));
@@ -341,7 +341,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         callSiteArr$getCallSiteArray[9].call(this.project, new _doApply_closure8(this, this, reference));
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _doApply_closure4 extends Closure implements GeneratedClosure {
         private static /* synthetic */ SoftReference $callSiteArray;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -373,7 +373,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArray$createCallSiteArray.array;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public _doApply_closure4(Object obj, Object obj2) {
             super(obj, obj2);
             $getCallSiteArray();
@@ -399,7 +399,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _doApply_closure5 extends Closure implements GeneratedClosure {
         private static /* synthetic */ SoftReference $callSiteArray;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -428,7 +428,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArray$createCallSiteArray.array;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public _doApply_closure5(Object obj, Object obj2) {
             super(obj, obj2);
             $getCallSiteArray();
@@ -456,7 +456,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _doApply_closure6 extends Closure implements GeneratedClosure {
         private static /* synthetic */ SoftReference $callSiteArray;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -485,7 +485,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArray$createCallSiteArray.array;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public _doApply_closure6(Object obj, Object obj2, Reference reference, Reference reference2) {
             super(obj, obj2);
             $getCallSiteArray();
@@ -526,7 +526,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _doApply_closure7 extends Closure implements GeneratedClosure {
         private static /* synthetic */ SoftReference $callSiteArray;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -560,7 +560,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArray$createCallSiteArray.array;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public _doApply_closure7(Object obj, Object obj2, Reference reference) {
             super(obj, obj2);
             $getCallSiteArray();
@@ -593,7 +593,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _doApply_closure8 extends Closure implements GeneratedClosure {
         private static /* synthetic */ SoftReference $callSiteArray;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -631,7 +631,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArray$createCallSiteArray.array;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public _doApply_closure8(Object obj, Object obj2, Reference reference) {
             super(obj, obj2);
             $getCallSiteArray();
@@ -670,7 +670,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArr$getCallSiteArray[7].call(callSiteArr$getCallSiteArray[8].callGetProperty(callSiteArr$getCallSiteArray[9].callGetProperty(callSiteArr$getCallSiteArray[10].callGroovyObjectGetProperty(this))), callSiteArr$getCallSiteArray[11].callGroovyObjectGetProperty(this));
         }
 
-        /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+        /* INFO: compiled from: ProtobufPlugin.groovy */
         public final class _closure24 extends Closure implements GeneratedClosure {
             private static /* synthetic */ SoftReference $callSiteArray;
             private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -696,7 +696,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                 return callSiteArray$createCallSiteArray.array;
             }
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public _closure24(Object obj, Object obj2) {
                 super(obj, obj2);
                 $getCallSiteArray();
@@ -725,7 +725,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             }
         }
 
-        /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+        /* INFO: compiled from: ProtobufPlugin.groovy */
         public final class _closure25 extends Closure implements GeneratedClosure {
             private static /* synthetic */ SoftReference $callSiteArray;
             private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -751,7 +751,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                 return callSiteArray$createCallSiteArray.array;
             }
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public _closure25(Object obj, Object obj2) {
                 super(obj, obj2);
                 $getCallSiteArray();
@@ -785,7 +785,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         return (Configuration) ScriptBytecodeAdapter.castToType(this.project.getConfigurations().create(Utils.getConfigName(protoSourceSet.getName(), "protobuf"), new _createProtobufConfiguration_closure9(this, this)), Configuration.class);
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _createProtobufConfiguration_closure9 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -821,7 +821,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         return (Configuration) ScriptBytecodeAdapter.castToType(this.project.getConfigurations().create(Utils.getConfigName(protoSourceSet.getName(), "compileProtoPath"), new _createCompileProtoPathConfiguration_closure10(this, this, new Reference(this.project.getConfigurations().getByName(Utils.getConfigName(protoSourceSet.getName(), "compileOnly"))), new Reference(this.project.getConfigurations().getByName(Utils.getConfigName(protoSourceSet.getName(), "implementation"))))), Configuration.class);
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _createCompileProtoPathConfiguration_closure10 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -893,7 +893,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         collection.add(new _addTasksForSourceSet_closure13(this, this, reference5, reference, reference2, reference3, reference4));
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _addTasksForSourceSet_closure11 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -942,7 +942,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _addTasksForSourceSet_closure12 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -983,7 +983,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return (ProtoSourceSet) ScriptBytecodeAdapter.castToType(this.protoSourceSet.get(), ProtoSourceSet.class);
         }
 
-        /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+        /* INFO: compiled from: ProtobufPlugin.groovy */
         public final class _closure26 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -1018,7 +1018,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _addTasksForSourceSet_closure13 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -1093,7 +1093,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return null;
         }
 
-        /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+        /* INFO: compiled from: ProtobufPlugin.groovy */
         public final class _closure27 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -1134,7 +1134,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                 return (Provider) ScriptBytecodeAdapter.castToType(this.generateProtoTask.get(), Provider.class);
             }
 
-            /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+            /* INFO: compiled from: ProtobufPlugin.groovy */
             public final class _closure29 extends Closure implements GeneratedClosure {
                 private static /* synthetic */ ClassInfo $staticClassInfo;
                 public static transient /* synthetic */ boolean __$stMC;
@@ -1169,7 +1169,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             }
         }
 
-        /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+        /* INFO: compiled from: ProtobufPlugin.groovy */
         public final class _closure28 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -1246,7 +1246,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                 return DefaultGroovyMethods.each((Collection) ScriptBytecodeAdapter.castToType(InvokerHelper.invokeMethodSafe(((Provider) this.generateProtoTask.get()).get(), "getOutputSourceDirectories", new Object[0]), Collection.class), new _closure31(this, getThisObject(), reference));
             }
 
-            /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+            /* INFO: compiled from: ProtobufPlugin.groovy */
             public final class _closure30 extends Closure implements GeneratedClosure {
                 private static /* synthetic */ ClassInfo $staticClassInfo;
                 public static transient /* synthetic */ boolean __$stMC;
@@ -1284,7 +1284,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                 }
             }
 
-            /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+            /* INFO: compiled from: ProtobufPlugin.groovy */
             public final class _closure31 extends Closure implements GeneratedClosure {
                 private static /* synthetic */ ClassInfo $staticClassInfo;
                 public static transient /* synthetic */ boolean __$stMC;
@@ -1351,7 +1351,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         callSiteArr$getCallSiteArray[31].call(collection, new _addTasksForVariant_closure19(protobufPlugin, this, reference, reference5, reference4));
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _addTasksForVariant_closure14 extends Closure implements GeneratedClosure {
         private static /* synthetic */ SoftReference $callSiteArray;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -1380,7 +1380,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArray$createCallSiteArray.array;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public _addTasksForVariant_closure14(Object obj, Object obj2) {
             super(obj, obj2);
             $getCallSiteArray();
@@ -1410,7 +1410,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _addTasksForVariant_closure15 extends Closure implements GeneratedClosure {
         private static /* synthetic */ SoftReference $callSiteArray;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -1446,7 +1446,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArray$createCallSiteArray.array;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public _addTasksForVariant_closure15(Object obj, Object obj2, Reference reference, Reference reference2, Reference reference3) {
             super(obj, obj2);
             $getCallSiteArray();
@@ -1498,7 +1498,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _addTasksForVariant_closure16 extends Closure implements GeneratedClosure {
         private static /* synthetic */ SoftReference $callSiteArray;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -1530,7 +1530,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArray$createCallSiteArray.array;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public _addTasksForVariant_closure16(Object obj, Object obj2, Reference reference) {
             super(obj, obj2);
             $getCallSiteArray();
@@ -1565,7 +1565,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _addTasksForVariant_closure17 extends Closure implements GeneratedClosure {
         private static /* synthetic */ SoftReference $callSiteArray;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -1599,7 +1599,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArray$createCallSiteArray.array;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public _addTasksForVariant_closure17(Object obj, Object obj2, Reference reference, Reference reference2) {
             super(obj, obj2);
             $getCallSiteArray();
@@ -1637,7 +1637,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return this.variant.get();
         }
 
-        /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+        /* INFO: compiled from: ProtobufPlugin.groovy */
         public final class _closure32 extends Closure implements GeneratedClosure {
             private static /* synthetic */ SoftReference $callSiteArray;
             private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -1663,7 +1663,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                 return callSiteArray$createCallSiteArray.array;
             }
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public _closure32(Object obj, Object obj2) {
                 super(obj, obj2);
                 $getCallSiteArray();
@@ -1703,7 +1703,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _addTasksForVariant_closure18 extends Closure implements GeneratedClosure {
         private static /* synthetic */ SoftReference $callSiteArray;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -1731,7 +1731,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArray$createCallSiteArray.array;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public _addTasksForVariant_closure18(Object obj, Object obj2, Reference reference) {
             super(obj, obj2);
             $getCallSiteArray();
@@ -1762,7 +1762,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return (ProtoSourceSet) ScriptBytecodeAdapter.castToType(this.variantSourceSet.get(), ProtoSourceSet.class);
         }
 
-        /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+        /* INFO: compiled from: ProtobufPlugin.groovy */
         public final class _closure33 extends Closure implements GeneratedClosure {
             private static /* synthetic */ SoftReference $callSiteArray;
             private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -1788,7 +1788,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                 return callSiteArray$createCallSiteArray.array;
             }
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public _closure33(Object obj, Object obj2) {
                 super(obj, obj2);
                 $getCallSiteArray();
@@ -1823,7 +1823,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _addTasksForVariant_closure19 extends Closure implements GeneratedClosure {
         private static /* synthetic */ SoftReference $callSiteArray;
         private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -1858,7 +1858,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArray$createCallSiteArray.array;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public _addTasksForVariant_closure19(Object obj, Object obj2, Reference reference, Reference reference2, Reference reference3) {
             super(obj, obj2);
             $getCallSiteArray();
@@ -1909,7 +1909,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return callSiteArr$getCallSiteArray[4].call(callSiteArr$getCallSiteArray[5].callGetProperty(callSiteArr$getCallSiteArray[6].callGroovyObjectGetProperty(this)), "org.jetbrains.kotlin.android", new _closure34(this, getThisObject(), this.variant, this.variantSourceSet, this.generateProtoTask));
         }
 
-        /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+        /* INFO: compiled from: ProtobufPlugin.groovy */
         public final class _closure34 extends Closure implements GeneratedClosure {
             private static /* synthetic */ SoftReference $callSiteArray;
             private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -1947,7 +1947,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                 return callSiteArray$createCallSiteArray.array;
             }
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public _closure34(Object obj, Object obj2, Reference reference, Reference reference2, Reference reference3) {
                 super(obj, obj2);
                 $getCallSiteArray();
@@ -2000,7 +2000,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                 return callSiteArr$getCallSiteArray[8].call(callSiteArr$getCallSiteArray[9].callGroovyObjectGetProperty(this), new _closure36(this, getThisObject(), this.variant, this.generateProtoTask));
             }
 
-            /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+            /* INFO: compiled from: ProtobufPlugin.groovy */
             public final class _closure35 extends Closure implements GeneratedClosure {
                 private static /* synthetic */ SoftReference $callSiteArray;
                 private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -2030,7 +2030,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                     return callSiteArray$createCallSiteArray.array;
                 }
 
-                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                /* WARN: 'super' call moved to the top of the method (can break code semantics) */
                 public _closure35(Object obj, Object obj2, Reference reference) {
                     super(obj, obj2);
                     $getCallSiteArray();
@@ -2067,7 +2067,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                 }
             }
 
-            /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+            /* INFO: compiled from: ProtobufPlugin.groovy */
             public final class _closure36 extends Closure implements GeneratedClosure {
                 private static /* synthetic */ SoftReference $callSiteArray;
                 private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -2100,7 +2100,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                     return callSiteArray$createCallSiteArray.array;
                 }
 
-                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                /* WARN: 'super' call moved to the top of the method (can break code semantics) */
                 public _closure36(Object obj, Object obj2, Reference reference, Reference reference2) {
                     super(obj, obj2);
                     $getCallSiteArray();
@@ -2143,7 +2143,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                     return callSiteArr$getCallSiteArray[3].call(callSiteArr$getCallSiteArray[4].callGetProperty(callSiteArr$getCallSiteArray[5].callGroovyObjectGetProperty(this)), ShortTypeHandling.castToString(callSiteArr$getCallSiteArray[0].call(Utils.class, callSiteArr$getCallSiteArray[1].callGroovyObjectGetProperty(this), callSiteArr$getCallSiteArray[2].callGetProperty(this.variant.get()))), KotlinCompile.class, new _closure37(this, getThisObject(), this.generateProtoTask));
                 }
 
-                /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+                /* INFO: compiled from: ProtobufPlugin.groovy */
                 public final class _closure37 extends Closure implements GeneratedClosure {
                     private static /* synthetic */ SoftReference $callSiteArray;
                     private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -2174,7 +2174,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                         return callSiteArray$createCallSiteArray.array;
                     }
 
-                    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
                     public _closure37(Object obj, Object obj2, Reference reference) {
                         super(obj, obj2);
                         $getCallSiteArray();
@@ -2222,7 +2222,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         return taskProviderRegister;
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _addGenerateProtoTask_closure20 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -2304,7 +2304,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             return null;
         }
 
-        /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+        /* INFO: compiled from: ProtobufPlugin.groovy */
         public final class _closure38 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -2350,7 +2350,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
             }
         }
 
-        /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+        /* INFO: compiled from: ProtobufPlugin.groovy */
         public final class _closure39 extends Closure implements GeneratedClosure {
             private static /* synthetic */ Class $class$com$google$protobuf$gradle$CopyActionFacade;
             private static /* synthetic */ ClassInfo $staticClassInfo;
@@ -2441,7 +2441,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
                 return ((CopyActionFacade) this.copyActionFacade.get()).copy((Action) ScriptBytecodeAdapter.castToType(new _closure40(this, getThisObject(), this.it, reference, this.sourceSetName), Action.class));
             }
 
-            /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+            /* INFO: compiled from: ProtobufPlugin.groovy */
             public final class _closure40 extends Closure implements GeneratedClosure {
                 private static /* synthetic */ ClassInfo $staticClassInfo;
                 public static transient /* synthetic */ boolean __$stMC;
@@ -2496,7 +2496,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _addGenerateProtoTask_closure21 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -2534,7 +2534,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         return taskProviderRegister;
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _setupExtractProtosTask_closure22 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -2602,7 +2602,7 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         return taskProviderRegister;
     }
 
-    /* JADX INFO: compiled from: ProtobufPlugin.groovy */
+    /* INFO: compiled from: ProtobufPlugin.groovy */
     public final class _setupExtractIncludeProtosTask_closure23 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -2658,12 +2658,12 @@ public class ProtobufPlugin implements Plugin<Project>, GroovyObject {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public String getExtractedIncludeProtosDir(String str) {
         return ShortTypeHandling.castToString(new GStringImpl(new Object[]{this.project.getBuildDir(), str}, new String[]{"", "/extracted-include-protos/", ""}));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public String getExtractedProtosDir(String str) {
         return ShortTypeHandling.castToString(new GStringImpl(new Object[]{this.project.getBuildDir(), str}, new String[]{"", "/extracted-protos/", ""}));
     }

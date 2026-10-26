@@ -4,7 +4,7 @@ import java.util.List;
 import org.apache.commons.collections4.Equator;
 import org.apache.commons.collections4.functors.DefaultEquator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SequencesComparator<T> {
     private final Equator<? super T> equator;
     private final List<T> sequence1;
@@ -90,8 +90,8 @@ public class SequencesComparator<T> {
         return new Snake(i, i5, i2);
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x0051  */
-    /* JADX WARN: Code duplicated, block: B:49:0x00c8  */
+    /* WARN: Code duplicated, block: B:21:0x0051  */
+    /* WARN: Code duplicated, block: B:49:0x00c8  */
     private Snake getMiddleSnake(int i, int i2, int i3, int i4) {
         int i5;
         int i6;

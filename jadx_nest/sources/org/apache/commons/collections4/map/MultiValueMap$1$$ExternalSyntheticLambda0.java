@@ -2,8 +2,8 @@ package org.apache.commons.collections4.map;
 
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class MultiValueMap$1$$ExternalSyntheticLambda0 implements Transformer {
     public final /* synthetic */ MultiValueMap.AnonymousClass1 f$0;
     public final /* synthetic */ Object f$1;

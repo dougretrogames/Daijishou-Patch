@@ -3,8 +3,8 @@ package kotlin;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.CharsKt;
 
-/* JADX INFO: compiled from: UnsignedJVM.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: UnsignedJVM.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u00006\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0006\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\n\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0002\b\r\u001a\u0015\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\u0001¢\u0006\u0002\u0010\u0004\u001a\u0015\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0002\u001a\u00020\u0003H\u0001¢\u0006\u0002\u0010\u0007\u001a\u0016\u0010\b\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\tH\u0081\b¢\u0006\u0002\u0010\n\u001a\u0016\u0010\u000b\u001a\u00020\u00062\u0006\u0010\u0002\u001a\u00020\tH\u0081\b¢\u0006\u0002\u0010\f\u001a\u0018\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\u0010\u001a\u00020\u000eH\u0001\u001a\u001f\u0010\u0011\u001a\u00020\u00012\u0006\u0010\u000f\u001a\u00020\u00012\u0006\u0010\u0010\u001a\u00020\u0001H\u0001¢\u0006\u0004\b\u0012\u0010\u0013\u001a\u001f\u0010\u0014\u001a\u00020\u00012\u0006\u0010\u000f\u001a\u00020\u00012\u0006\u0010\u0010\u001a\u00020\u0001H\u0001¢\u0006\u0004\b\u0015\u0010\u0013\u001a\u0010\u0010\u0016\u001a\u00020\u00032\u0006\u0010\u0002\u001a\u00020\u000eH\u0001\u001a\u0011\u0010\u0017\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u000eH\u0081\b\u001a\u0011\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u0002\u001a\u00020\u000eH\u0081\b\u001a\u0011\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u0002\u001a\u00020\u000eH\u0081\b\u001a\u0019\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u0002\u001a\u00020\u000e2\u0006\u0010\u001c\u001a\u00020\u000eH\u0081\b\u001a\u0016\u0010\u001d\u001a\u00020\u00062\u0006\u0010\u0002\u001a\u00020\u000eH\u0081\b¢\u0006\u0002\u0010\u001e\u001a\u0018\u0010\u001f\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00192\u0006\u0010\u0010\u001a\u00020\u0019H\u0001\u001a\u001f\u0010 \u001a\u00020\u00062\u0006\u0010\u000f\u001a\u00020\u00062\u0006\u0010\u0010\u001a\u00020\u0006H\u0001¢\u0006\u0004\b!\u0010\"\u001a\u001f\u0010#\u001a\u00020\u00062\u0006\u0010\u000f\u001a\u00020\u00062\u0006\u0010\u0010\u001a\u00020\u0006H\u0001¢\u0006\u0004\b$\u0010\"\u001a\u0010\u0010%\u001a\u00020\u00032\u0006\u0010\u0002\u001a\u00020\u0019H\u0001\u001a\u0011\u0010&\u001a\u00020\t2\u0006\u0010\u0002\u001a\u00020\u0019H\u0081\b\u001a\u0011\u0010'\u001a\u00020\u001b2\u0006\u0010\u0002\u001a\u00020\u0019H\u0081\b\u001a\u0018\u0010'\u001a\u00020\u001b2\u0006\u0010\u0002\u001a\u00020\u00192\u0006\u0010\u001c\u001a\u00020\u000eH\u0000¨\u0006("}, d2 = {"doubleToUInt", "Lkotlin/UInt;", "value", "", "(D)I", "doubleToULong", "Lkotlin/ULong;", "(D)J", "floatToUInt", "", "(F)I", "floatToULong", "(F)J", "uintCompare", "", "v1", "v2", "uintDivide", "uintDivide-J1ME1BU", "(II)I", "uintRemainder", "uintRemainder-J1ME1BU", "uintToDouble", "uintToFloat", "uintToLong", "", "uintToString", "", "base", "uintToULong", "(I)J", "ulongCompare", "ulongDivide", "ulongDivide-eb3DHEI", "(JJ)J", "ulongRemainder", "ulongRemainder-eb3DHEI", "ulongToDouble", "ulongToFloat", "ulongToString", "kotlin-stdlib"}, k = 2, mv = {1, 9, 0}, xi = 48)
 public final class UnsignedKt {
     public static final double uintToDouble(int i) {
@@ -19,17 +19,17 @@ public final class UnsignedKt {
         return ((j >>> 11) * ((double) 2048)) + (j & 2047);
     }
 
-    /* JADX INFO: renamed from: uintRemainder-J1ME1BU, reason: not valid java name */
+    /* INFO: renamed from: uintRemainder-J1ME1BU, reason: not valid java name */
     public static final int m4104uintRemainderJ1ME1BU(int i, int i2) {
         return UInt.m3847constructorimpl((int) ((((long) i) & 4294967295L) % (((long) i2) & 4294967295L)));
     }
 
-    /* JADX INFO: renamed from: uintDivide-J1ME1BU, reason: not valid java name */
+    /* INFO: renamed from: uintDivide-J1ME1BU, reason: not valid java name */
     public static final int m4103uintDivideJ1ME1BU(int i, int i2) {
         return UInt.m3847constructorimpl((int) ((((long) i) & 4294967295L) / (((long) i2) & 4294967295L)));
     }
 
-    /* JADX INFO: renamed from: ulongDivide-eb3DHEI, reason: not valid java name */
+    /* INFO: renamed from: ulongDivide-eb3DHEI, reason: not valid java name */
     public static final long m4105ulongDivideeb3DHEI(long j, long j2) {
         if (j2 < 0) {
             return Long.compareUnsigned(j, j2) < 0 ? ULong.m3926constructorimpl(0L) : ULong.m3926constructorimpl(1L);
@@ -41,7 +41,7 @@ public final class UnsignedKt {
         return ULong.m3926constructorimpl(j3 + ((long) (Long.compareUnsigned(ULong.m3926constructorimpl(j - (j3 * j2)), ULong.m3926constructorimpl(j2)) < 0 ? 0 : 1)));
     }
 
-    /* JADX INFO: renamed from: ulongRemainder-eb3DHEI, reason: not valid java name */
+    /* INFO: renamed from: ulongRemainder-eb3DHEI, reason: not valid java name */
     public static final long m4106ulongRemaindereb3DHEI(long j, long j2) {
         if (j2 < 0) {
             return Long.compareUnsigned(j, j2) < 0 ? j : ULong.m3926constructorimpl(j - j2);

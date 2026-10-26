@@ -1,7 +1,7 @@
 package androidx.core.util;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class Predicate$$ExternalSyntheticLambda2 implements Predicate {
     public final /* synthetic */ Object f$0;
 

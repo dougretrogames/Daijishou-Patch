@@ -44,7 +44,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.http.protocol.HTTP;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class IconCompat extends CustomVersionedParcelable {
     private static final float ADAPTIVE_ICON_INSET_FACTOR = 0.25f;
     private static final int AMBIENT_SHADOW_ALPHA = 30;
@@ -290,7 +290,7 @@ public class IconCompat extends CustomVersionedParcelable {
         return Api23Impl.loadDrawable(toIcon(context), context);
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
     private Drawable loadDrawableInner(Context context) {
         switch (this.mType) {
             case 1:

@@ -20,14 +20,14 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class Api<O extends ApiOptions> {
     private final AbstractClientBuilder zaa;
     private final ClientKey zab;
     private final String zac;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static abstract class AbstractClientBuilder<T extends Client, O> extends BaseClientBuilder<T, O> {
         @Deprecated
         public T buildClient(Context context, Looper looper, ClientSettings clientSettings, O o, GoogleApiClient.ConnectionCallbacks connectionCallbacks, GoogleApiClient.OnConnectionFailedListener onConnectionFailedListener) {
@@ -39,33 +39,33 @@ public final class Api<O extends ApiOptions> {
         }
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public interface AnyClient {
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static class AnyClientKey<C extends AnyClient> {
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public interface ApiOptions {
         public static final NoOptions NO_OPTIONS = new NoOptions(null);
 
-        /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+        /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
         public interface HasAccountOptions extends HasOptions, NotRequiredOptions {
             Account getAccount();
         }
 
-        /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+        /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
         public interface HasGoogleSignInAccountOptions extends HasOptions {
             GoogleSignInAccount getGoogleSignInAccount();
         }
 
-        /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+        /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
         public interface HasOptions extends ApiOptions {
         }
 
-        /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+        /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
         public static final class NoOptions implements NotRequiredOptions {
             private NoOptions() {
             }
@@ -74,16 +74,16 @@ public final class Api<O extends ApiOptions> {
             }
         }
 
-        /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+        /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
         public interface NotRequiredOptions extends ApiOptions {
         }
 
-        /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+        /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
         public interface Optional extends HasOptions, NotRequiredOptions {
         }
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static abstract class BaseClientBuilder<T extends AnyClient, O> {
         public static final int API_PRIORITY_GAMES = 1;
         public static final int API_PRIORITY_OTHER = Integer.MAX_VALUE;
@@ -98,7 +98,7 @@ public final class Api<O extends ApiOptions> {
         }
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public interface Client extends AnyClient {
         void connect(BaseGmsClient.ConnectionProgressReportCallbacks connectionProgressReportCallbacks);
 
@@ -141,7 +141,7 @@ public final class Api<O extends ApiOptions> {
         boolean requiresSignIn();
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static final class ClientKey<C extends Client> extends AnyClientKey<C> {
     }
 

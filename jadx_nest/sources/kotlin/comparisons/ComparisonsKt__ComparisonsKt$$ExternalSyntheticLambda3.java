@@ -3,8 +3,8 @@ package kotlin.comparisons;
 import java.util.Comparator;
 import kotlin.jvm.functions.Function1;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class ComparisonsKt__ComparisonsKt$$ExternalSyntheticLambda3 implements Comparator {
     public final /* synthetic */ Function1[] f$0;
 

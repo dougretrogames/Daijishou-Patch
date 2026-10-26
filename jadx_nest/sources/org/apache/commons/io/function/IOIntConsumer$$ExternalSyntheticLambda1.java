@@ -2,8 +2,8 @@ package org.apache.commons.io.function;
 
 import java.io.IOException;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class IOIntConsumer$$ExternalSyntheticLambda1 implements IOIntConsumer {
     public final /* synthetic */ IOIntConsumer f$0;
     public final /* synthetic */ IOIntConsumer f$1;

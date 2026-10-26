@@ -4,7 +4,7 @@ import android.graphics.Outline;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ShapeableDelegateV22 extends ShapeableDelegate {
     private boolean canUseViewOutline = false;
     private float cornerRadius = 0.0f;
@@ -82,7 +82,7 @@ class ShapeableDelegateV22 extends ShapeableDelegate {
         return (shapeAppearanceModel.getTopLeftCorner() instanceof RoundedCornerTreatment) && (shapeAppearanceModel.getTopRightCorner() instanceof RoundedCornerTreatment) && (shapeAppearanceModel.getBottomLeftCorner() instanceof RoundedCornerTreatment) && (shapeAppearanceModel.getBottomRightCorner() instanceof RoundedCornerTreatment);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.shape.ShapeableDelegateV22$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.shape.ShapeableDelegateV22$1, reason: invalid class name */
     class AnonymousClass1 extends ViewOutlineProvider {
         AnonymousClass1() {
         }

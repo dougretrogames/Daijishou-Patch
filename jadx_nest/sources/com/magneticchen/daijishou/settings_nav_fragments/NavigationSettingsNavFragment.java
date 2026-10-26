@@ -15,8 +15,8 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 
-/* JADX INFO: compiled from: NavigationSettingsNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: NavigationSettingsNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0012\u0010\u0005\u001a\u00020\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\bH\u0016J\u001c\u0010\t\u001a\u00020\u00062\b\u0010\u0007\u001a\u0004\u0018\u00010\b2\b\u0010\n\u001a\u0004\u0018\u00010\u0004H\u0016J\b\u0010\u000b\u001a\u00020\u0006H\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000¨\u0006\f²\u0006\n\u0010\r\u001a\u00020\u000eX\u008a\u0084\u0002²\u0006\n\u0010\u000f\u001a\u00020\u0010X\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/settings_nav_fragments/NavigationSettingsNavFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouPreferenceFragmentCompat;", "()V", "titleString", "", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreatePreferences", "rootKey", "onStart", "app_release", "settingsModel", "Lcom/magneticchen/daijishou/view_models/SettingsViewModel;", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class NavigationSettingsNavFragment extends DaijishouPreferenceFragmentCompat {
     private String titleString;
@@ -53,12 +53,12 @@ public final class NavigationSettingsNavFragment extends DaijishouPreferenceFrag
         KeyDownDialogFragment.INSTANCE.newInstance(navigationSettingsNavFragment.getString(R.string.left_tab_hotkey)).setOnKeyDownListener(new NavigationSettingsNavFragment$onCreate$1$leftTabHotkey$1(navigationSettingsNavFragment, function0)).setOnClearedListener(new NavigationSettingsNavFragment$onCreate$1$leftTabHotkey$2(navigationSettingsNavFragment, function0)).setOnCanceledListener(new NavigationSettingsNavFragment$onCreate$1$leftTabHotkey$3(function0)).show(navigationSettingsNavFragment.getChildFragmentManager(), KeyDownDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreate$lambda$0$rightTabHotkey(NavigationSettingsNavFragment navigationSettingsNavFragment, Function0<Unit> function0) {
         KeyDownDialogFragment.INSTANCE.newInstance(navigationSettingsNavFragment.getString(R.string.right_tab_hotkey)).setOnKeyDownListener(new NavigationSettingsNavFragment$onCreate$1$rightTabHotkey$1(navigationSettingsNavFragment, function0)).setOnClearedListener(new NavigationSettingsNavFragment$onCreate$1$rightTabHotkey$2(navigationSettingsNavFragment, function0)).setOnCanceledListener(new NavigationSettingsNavFragment$onCreate$1$rightTabHotkey$3(function0)).show(navigationSettingsNavFragment.getChildFragmentManager(), KeyDownDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$0(NavigationSettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -70,12 +70,12 @@ public final class NavigationSettingsNavFragment extends DaijishouPreferenceFrag
         KeyDownDialogFragment.INSTANCE.newInstance(navigationSettingsNavFragment.getString(R.string.switching_previous_hotkey)).setOnKeyDownListener(new NavigationSettingsNavFragment$onCreate$2$previousHotkey$1(navigationSettingsNavFragment, function0)).setOnClearedListener(new NavigationSettingsNavFragment$onCreate$2$previousHotkey$2(navigationSettingsNavFragment, function0)).setOnCanceledListener(new NavigationSettingsNavFragment$onCreate$2$previousHotkey$3(function0)).show(navigationSettingsNavFragment.getChildFragmentManager(), KeyDownDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreate$lambda$1$nextHotkey(NavigationSettingsNavFragment navigationSettingsNavFragment, Function0<Unit> function0) {
         KeyDownDialogFragment.INSTANCE.newInstance(navigationSettingsNavFragment.getString(R.string.switching_next_hotkey)).setOnKeyDownListener(new NavigationSettingsNavFragment$onCreate$2$nextHotkey$1(navigationSettingsNavFragment, function0)).setOnClearedListener(new NavigationSettingsNavFragment$onCreate$2$nextHotkey$2(navigationSettingsNavFragment, function0)).setOnCanceledListener(new NavigationSettingsNavFragment$onCreate$2$nextHotkey$3(function0)).show(navigationSettingsNavFragment.getChildFragmentManager(), KeyDownDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$1(NavigationSettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -87,7 +87,7 @@ public final class NavigationSettingsNavFragment extends DaijishouPreferenceFrag
         KeyDownDialogFragment.INSTANCE.newInstance(navigationSettingsNavFragment.getString(R.string.search_hotkey_title)).setOnKeyDownListener(new NavigationSettingsNavFragment$onCreate$3$searchHotkey$1(navigationSettingsNavFragment, function0)).setOnClearedListener(new NavigationSettingsNavFragment$onCreate$3$searchHotkey$2(navigationSettingsNavFragment, function0)).setOnCanceledListener(new NavigationSettingsNavFragment$onCreate$3$searchHotkey$3(function0)).show(navigationSettingsNavFragment.getChildFragmentManager(), KeyDownDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$2(NavigationSettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -99,7 +99,7 @@ public final class NavigationSettingsNavFragment extends DaijishouPreferenceFrag
         KeyDownDialogFragment.INSTANCE.newInstance(navigationSettingsNavFragment.getString(R.string.first_additional_hotkey_title)).setOnKeyDownListener(new NavigationSettingsNavFragment$onCreate$4$firstAdditionalHotkey$1(navigationSettingsNavFragment, function0)).setOnClearedListener(new NavigationSettingsNavFragment$onCreate$4$firstAdditionalHotkey$2(navigationSettingsNavFragment, function0)).setOnCanceledListener(new NavigationSettingsNavFragment$onCreate$4$firstAdditionalHotkey$3(function0)).show(navigationSettingsNavFragment.getChildFragmentManager(), KeyDownDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$3(NavigationSettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -111,7 +111,7 @@ public final class NavigationSettingsNavFragment extends DaijishouPreferenceFrag
         KeyDownDialogFragment.INSTANCE.newInstance(navigationSettingsNavFragment.getString(R.string.second_additional_hotkey_title)).setOnKeyDownListener(new NavigationSettingsNavFragment$onCreate$5$secondAdditionalHotkey$1(navigationSettingsNavFragment, function0)).setOnClearedListener(new NavigationSettingsNavFragment$onCreate$5$secondAdditionalHotkey$2(navigationSettingsNavFragment, function0)).setOnCanceledListener(new NavigationSettingsNavFragment$onCreate$5$secondAdditionalHotkey$3(function0)).show(navigationSettingsNavFragment.getChildFragmentManager(), KeyDownDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$4(NavigationSettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");

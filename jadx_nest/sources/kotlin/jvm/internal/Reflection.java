@@ -18,7 +18,7 @@ import kotlin.reflect.KTypeParameter;
 import kotlin.reflect.KTypeProjection;
 import kotlin.reflect.KVariance;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class Reflection {
     private static final KClass[] EMPTY_K_CLASS_ARRAY;
     static final String REFLECTION_NOT_AVAILABLE = " (Kotlin reflection is not available)";

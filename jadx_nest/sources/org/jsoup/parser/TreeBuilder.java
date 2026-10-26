@@ -12,8 +12,8 @@ import org.jsoup.nodes.Node;
 import org.jsoup.nodes.Range;
 import org.jsoup.select.NodeVisitor;
 
-/* JADX INFO: Access modifiers changed from: package-private */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: Access modifiers changed from: package-private */
+/* INFO: loaded from: classes5.dex */
 public abstract class TreeBuilder {
     String baseUri;
     Token currentToken;

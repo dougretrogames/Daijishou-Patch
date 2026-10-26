@@ -2,8 +2,8 @@ package com.google.android.gms.auth.api.signin;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public final class GoogleSignInStatusCodes extends CommonStatusCodes {
     public static final int SIGN_IN_CANCELLED = 12501;

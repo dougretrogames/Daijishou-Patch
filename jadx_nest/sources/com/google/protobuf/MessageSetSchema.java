@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 final class MessageSetSchema<T> implements Schema<T> {
     private final MessageLite defaultInstance;
@@ -75,9 +75,9 @@ final class MessageSetSchema<T> implements Schema<T> {
         unknownFieldSchema.writeAsMessageSetTo(unknownFieldSchema.getFromMessage(message), writer);
     }
 
-    /* JADX WARN: Code duplicated, block: B:32:0x00c9  */
-    /* JADX WARN: Code duplicated, block: B:62:0x00cf A[EDGE_INSN: B:62:0x00cf->B:34:0x00cf BREAK  A[LOOP:1: B:17:0x006f->B:65:0x006f], SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Code duplicated, block: B:32:0x00c9  */
+    /* WARN: Code duplicated, block: B:62:0x00cf A[EDGE_INSN: B:62:0x00cf->B:34:0x00cf BREAK  A[LOOP:1: B:17:0x006f->B:65:0x006f], SYNTHETIC] */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.protobuf.Schema
     public void mergeFrom(T message, byte[] data, int position, int limit, ArrayDecoders.Registers registers) throws IOException {
         int iDecodeVarint32;
@@ -162,7 +162,7 @@ final class MessageSetSchema<T> implements Schema<T> {
         mergeFromHelper(this.unknownFieldSchema, this.extensionSchema, message, reader, extensionRegistry);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private <UT, UB, ET extends FieldSet.FieldDescriptorLite<ET>> void mergeFromHelper(UnknownFieldSchema<UT, UB> unknownFieldSchema, ExtensionSchema<ET> extensionSchema, T message, Reader reader, ExtensionRegistryLite extensionRegistry) throws Throwable {
         UnknownFieldSchema<UT, UB> unknownFieldSchema2;
         UB builderFromMessage = unknownFieldSchema.getBuilderFromMessage(message);
@@ -202,7 +202,7 @@ final class MessageSetSchema<T> implements Schema<T> {
         this.extensionSchema.makeImmutable(message);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private <UT, UB, ET extends FieldSet.FieldDescriptorLite<ET>> boolean parseMessageSetItemOrUnknownField(Reader reader, ExtensionRegistryLite extensionRegistry, ExtensionSchema<ET> extensionSchema, FieldSet<ET> extensions, UnknownFieldSchema<UT, UB> unknownFieldSchema, UB unknownFields) throws IOException {
         int tag = reader.getTag();
         if (tag != WireFormat.MESSAGE_SET_ITEM_TAG) {

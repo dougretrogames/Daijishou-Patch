@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.RandomAccess;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @Deprecated
 public class UnmodifiableLazyStringList extends AbstractList<String> implements LazyStringList, RandomAccess {
     private final LazyStringList list;
@@ -77,7 +77,7 @@ public class UnmodifiableLazyStringList extends AbstractList<String> implements 
         throw new UnsupportedOperationException();
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.UnmodifiableLazyStringList$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.UnmodifiableLazyStringList$1, reason: invalid class name */
     class AnonymousClass1 implements ListIterator<String> {
         ListIterator<String> iter;
         final /* synthetic */ int val$index;
@@ -138,7 +138,7 @@ public class UnmodifiableLazyStringList extends AbstractList<String> implements 
         return new AnonymousClass1(index);
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.UnmodifiableLazyStringList$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.UnmodifiableLazyStringList$2, reason: invalid class name */
     class AnonymousClass2 implements Iterator<String> {
         Iterator<String> iter;
 

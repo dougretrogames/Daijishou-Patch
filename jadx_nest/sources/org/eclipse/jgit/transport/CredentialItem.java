@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import java.util.Arrays;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class CredentialItem {
     private final String promptText;
     private final boolean valueSecure;

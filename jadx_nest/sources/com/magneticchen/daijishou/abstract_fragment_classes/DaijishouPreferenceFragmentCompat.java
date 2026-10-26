@@ -18,8 +18,8 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Reflection;
 
-/* JADX INFO: compiled from: DaijishouPreferenceFragmentCompat.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouPreferenceFragmentCompat.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\b&\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\b\u00101\u001a\u000200H\u0016J\u0012\u00102\u001a\u0002032\b\u00104\u001a\u0004\u0018\u000105H\u0016J\b\u00106\u001a\u000203H\u0016J\u001a\u00107\u001a\u0002032\u0006\u00108\u001a\u0002092\b\u00104\u001a\u0004\u0018\u000105H\u0016R\u001a\u0010\u0003\u001a\u00020\u0004X\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u001a\u0010\t\u001a\u00020\nX\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u001a\u0010\u000f\u001a\u00020\u0010X\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R\u001a\u0010\u0015\u001a\u00020\u0016X\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b\u0017\u0010\u0018\"\u0004\b\u0019\u0010\u001aR\u001a\u0010\u001b\u001a\u00020\u001cX\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b\u001d\u0010\u001e\"\u0004\b\u001f\u0010 R\u000e\u0010!\u001a\u00020\"X\u0082\u000e¢\u0006\u0002\n\u0000R\u001e\u0010#\u001a\u00060$R\u00020\u0004X\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b%\u0010&\"\u0004\b'\u0010(R\u001a\u0010)\u001a\u00020*X\u0084.¢\u0006\u000e\n\u0000\u001a\u0004\b+\u0010,\"\u0004\b-\u0010.R\u000e\u0010/\u001a\u000200X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006:²\u0006\n\u0010\t\u001a\u00020\nX\u008a\u0084\u0002²\u0006\n\u0010\u000f\u001a\u00020\u0010X\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouPreferenceFragmentCompat;", "Landroidx/preference/PreferenceFragmentCompat;", "()V", "application", "Lcom/magneticchen/daijishou/DaijishouApplication;", "getApplication", "()Lcom/magneticchen/daijishou/DaijishouApplication;", "setApplication", "(Lcom/magneticchen/daijishou/DaijishouApplication;)V", "daijishouLibrary", "Lcom/magneticchen/daijishou/view_models/DaijishouLibraryModel;", "getDaijishouLibrary", "()Lcom/magneticchen/daijishou/view_models/DaijishouLibraryModel;", "setDaijishouLibrary", "(Lcom/magneticchen/daijishou/view_models/DaijishouLibraryModel;)V", "daijishouSynchronization", "Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel;", "getDaijishouSynchronization", "()Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel;", "setDaijishouSynchronization", "(Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel;)V", "defaultSharedPreferences", "Landroid/content/SharedPreferences;", "getDefaultSharedPreferences", "()Landroid/content/SharedPreferences;", "setDefaultSharedPreferences", "(Landroid/content/SharedPreferences;)V", "dpToPxConverter", "Lcom/magneticchen/daijishou/utils/DpToPxConverter;", "getDpToPxConverter", "()Lcom/magneticchen/daijishou/utils/DpToPxConverter;", "setDpToPxConverter", "(Lcom/magneticchen/daijishou/utils/DpToPxConverter;)V", "lastFocusedPosition", "", "logger", "Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "getLogger", "()Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "setLogger", "(Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;)V", "retroAchievementsManager", "Lcom/magneticchen/daijishou/retro_achievements/RetroAchievementsManager;", "getRetroAchievementsManager", "()Lcom/magneticchen/daijishou/retro_achievements/RetroAchievementsManager;", "setRetroAchievementsManager", "(Lcom/magneticchen/daijishou/retro_achievements/RetroAchievementsManager;)V", "scrollingOnBackPressed", "", "onBackPressed", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onStop", "onViewCreated", "view", "Landroid/view/View;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public abstract class DaijishouPreferenceFragmentCompat extends PreferenceFragmentCompat {
     protected DaijishouApplication application;
@@ -142,8 +142,8 @@ public abstract class DaijishouPreferenceFragmentCompat extends PreferenceFragme
         return false;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.DaijishouPreferenceFragmentCompat$onBackPressed$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouPreferenceFragmentCompat.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.DaijishouPreferenceFragmentCompat$onBackPressed$1, reason: invalid class name */
+    /* INFO: compiled from: DaijishouPreferenceFragmentCompat.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/abstract_fragment_classes/DaijishouPreferenceFragmentCompat$onBackPressed$1", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass1 extends RecyclerView.OnScrollListener {
         AnonymousClass1() {
@@ -212,8 +212,8 @@ public abstract class DaijishouPreferenceFragmentCompat extends PreferenceFragme
         return lazy.getValue();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.DaijishouPreferenceFragmentCompat$onViewCreated$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouPreferenceFragmentCompat.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.DaijishouPreferenceFragmentCompat$onViewCreated$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouPreferenceFragmentCompat.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/abstract_fragment_classes/DaijishouPreferenceFragmentCompat$onViewCreated$1", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class C01991 extends RecyclerView.OnScrollListener {
         C01991() {
@@ -237,7 +237,7 @@ public abstract class DaijishouPreferenceFragmentCompat extends PreferenceFragme
         getListView().addOnLayoutChangeListener(new DaijishouPreferenceFragmentCompat$$ExternalSyntheticLambda0(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onViewCreated$lambda$2(DaijishouPreferenceFragmentCompat this$0, View view, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (!this$0.getListView().isFocused()) {

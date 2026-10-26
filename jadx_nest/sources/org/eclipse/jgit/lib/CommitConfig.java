@@ -18,7 +18,7 @@ import org.eclipse.jgit.util.IO;
 import org.eclipse.jgit.util.RawParseUtils;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CommitConfig {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$lib$CommitConfig$CleanupMode = null;
     private static final String CUT = " ------------------------ >8 ------------------------\n";
@@ -31,7 +31,7 @@ public class CommitConfig {
     private static final char[] COMMENT_CHARS = {'#', ';', '@', '!', Typography.dollar, '%', '^', Typography.amp, '|', AbstractJsonLexerKt.COLON};
     private static final Charset DEFAULT_COMMIT_MESSAGE_ENCODING = StandardCharsets.UTF_8;
 
-    /* JADX INFO: renamed from: $r8$lambda$i_uB7aSCdnGaHiqavg-VFoecJCM, reason: not valid java name */
+    /* INFO: renamed from: $r8$lambda$i_uB7aSCdnGaHiqavg-VFoecJCM, reason: not valid java name */
     public static /* synthetic */ CommitConfig m5770$r8$lambda$i_uB7aSCdnGaHiqavgVFoecJCM(Config config) {
         return new CommitConfig(config);
     }
@@ -73,7 +73,7 @@ public class CommitConfig {
         SCISSORS,
         DEFAULT;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static CleanupMode[] valuesCustom() {
             CleanupMode[] cleanupModeArrValuesCustom = values();
             int length = cleanupModeArrValuesCustom.length;

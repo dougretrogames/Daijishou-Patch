@@ -2,8 +2,8 @@ package com.magneticchen.daijishou.settings_nav_fragments;
 
 import androidx.preference.Preference;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class SettingsNavFragment$$ExternalSyntheticLambda1 implements Preference.OnPreferenceClickListener {
     public final /* synthetic */ SettingsNavFragment f$0;
 

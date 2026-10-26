@@ -28,7 +28,7 @@ import java.util.WeakHashMap;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ResourceManagerInternal {
     private static final boolean DEBUG = false;
     private static ResourceManagerInternal INSTANCE = null;

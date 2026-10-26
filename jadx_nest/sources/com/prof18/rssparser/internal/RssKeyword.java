@@ -4,8 +4,8 @@ import com.google.common.net.HttpHeaders;
 import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 
-/* JADX INFO: compiled from: RssKeyword.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: RssKeyword.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000¼\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b0\u0018\u00002\u00020\u0001:\n\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010B\u000f\b\u0004\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006\u0082\u0001*\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u001b\u001c\u001d\u001e\u001f !\"#$%&'()*+,-./0123456789:¨\u0006;"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword;", "", "value", "", "(Ljava/lang/String;)V", "getValue", "()Ljava/lang/String;", "Channel", "Description", "Href", "Image", "Item", "Itunes", HttpHeaders.LINK, "Rss", "Title", "Url", "Lcom/prof18/rssparser/internal/RssKeyword$Channel$Channel;", "Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$Category;", "Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$NewFeedUrl;", "Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$Owner;", "Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$OwnerEmail;", "Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$OwnerName;", "Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$Text;", "Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$Type;", "Lcom/prof18/rssparser/internal/RssKeyword$Channel$LastBuildDate;", "Lcom/prof18/rssparser/internal/RssKeyword$Channel$UpdatePeriod;", "Lcom/prof18/rssparser/internal/RssKeyword$Description;", "Lcom/prof18/rssparser/internal/RssKeyword$Href;", "Lcom/prof18/rssparser/internal/RssKeyword$Image;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Author;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Category;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Comments;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Content;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Enclosure;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Guid;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Item;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Itunes$Episode;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Itunes$EpisodeType;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Itunes$Season;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$MediaContent;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$News$Image;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$PubDate;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Source;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Thumb;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Thumbnail;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Time;", "Lcom/prof18/rssparser/internal/RssKeyword$Item$Type;", "Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Author;", "Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Duration;", "Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Explicit;", "Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Image;", "Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Keywords;", "Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Subtitle;", "Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Summary;", "Lcom/prof18/rssparser/internal/RssKeyword$Link;", "Lcom/prof18/rssparser/internal/RssKeyword$Rss;", "Lcom/prof18/rssparser/internal/RssKeyword$Title;", "Lcom/prof18/rssparser/internal/RssKeyword$Url;", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public abstract class RssKeyword {
     private final String value;
@@ -14,7 +14,7 @@ public abstract class RssKeyword {
         this(str);
     }
 
-    /* JADX INFO: compiled from: RssKeyword.kt */
+    /* INFO: compiled from: RssKeyword.kt */
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Rss;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class Rss extends RssKeyword {
         public static final Rss INSTANCE = new Rss();
@@ -50,7 +50,7 @@ public abstract class RssKeyword {
         return this.value;
     }
 
-    /* JADX INFO: compiled from: RssKeyword.kt */
+    /* INFO: compiled from: RssKeyword.kt */
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Title;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class Title extends RssKeyword {
         public static final Title INSTANCE = new Title();
@@ -78,7 +78,7 @@ public abstract class RssKeyword {
         }
     }
 
-    /* JADX INFO: compiled from: RssKeyword.kt */
+    /* INFO: compiled from: RssKeyword.kt */
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Image;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class Image extends RssKeyword {
         public static final Image INSTANCE = new Image();
@@ -106,7 +106,7 @@ public abstract class RssKeyword {
         }
     }
 
-    /* JADX INFO: compiled from: RssKeyword.kt */
+    /* INFO: compiled from: RssKeyword.kt */
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Link;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class Link extends RssKeyword {
         public static final Link INSTANCE = new Link();
@@ -134,7 +134,7 @@ public abstract class RssKeyword {
         }
     }
 
-    /* JADX INFO: compiled from: RssKeyword.kt */
+    /* INFO: compiled from: RssKeyword.kt */
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Href;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class Href extends RssKeyword {
         public static final Href INSTANCE = new Href();
@@ -162,7 +162,7 @@ public abstract class RssKeyword {
         }
     }
 
-    /* JADX INFO: compiled from: RssKeyword.kt */
+    /* INFO: compiled from: RssKeyword.kt */
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Url;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class Url extends RssKeyword {
         public static final Url INSTANCE = new Url();
@@ -190,7 +190,7 @@ public abstract class RssKeyword {
         }
     }
 
-    /* JADX INFO: compiled from: RssKeyword.kt */
+    /* INFO: compiled from: RssKeyword.kt */
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Description;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final /* data */ class Description extends RssKeyword {
         public static final Description INSTANCE = new Description();
@@ -218,12 +218,12 @@ public abstract class RssKeyword {
         }
     }
 
-    /* JADX INFO: compiled from: RssKeyword.kt */
+    /* INFO: compiled from: RssKeyword.kt */
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\t\bÆ\u0002\u0018\u00002\u00020\u0001:\u0007\u0003\u0004\u0005\u0006\u0007\b\tB\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\n"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Itunes;", "", "()V", "Author", "Duration", "Explicit", "Image", "Keywords", "Subtitle", "Summary", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Itunes {
         public static final Itunes INSTANCE = new Itunes();
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Author;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Author extends RssKeyword {
             public static final Author INSTANCE = new Author();
@@ -254,7 +254,7 @@ public abstract class RssKeyword {
         private Itunes() {
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Duration;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Duration extends RssKeyword {
             public static final Duration INSTANCE = new Duration();
@@ -282,7 +282,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Keywords;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Keywords extends RssKeyword {
             public static final Keywords INSTANCE = new Keywords();
@@ -310,7 +310,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Image;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Image extends RssKeyword {
             public static final Image INSTANCE = new Image();
@@ -338,7 +338,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Explicit;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Explicit extends RssKeyword {
             public static final Explicit INSTANCE = new Explicit();
@@ -366,7 +366,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Subtitle;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Subtitle extends RssKeyword {
             public static final Subtitle INSTANCE = new Subtitle();
@@ -394,7 +394,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Itunes$Summary;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Summary extends RssKeyword {
             public static final Summary INSTANCE = new Summary();
@@ -423,13 +423,13 @@ public abstract class RssKeyword {
         }
     }
 
-    /* JADX INFO: compiled from: RssKeyword.kt */
+    /* INFO: compiled from: RssKeyword.kt */
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0006\bÆ\u0002\u0018\u00002\u00020\u0001:\u0004\u0003\u0004\u0005\u0006B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0007"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Channel;", "", "()V", "Channel", "Itunes", "LastBuildDate", "UpdatePeriod", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Channel {
         public static final Channel INSTANCE = new Channel();
 
-        /* JADX INFO: renamed from: com.prof18.rssparser.internal.RssKeyword$Channel$Channel, reason: collision with other inner class name */
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: renamed from: com.prof18.rssparser.internal.RssKeyword$Channel$Channel, reason: collision with other inner class name */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Channel$Channel;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class C0082Channel extends RssKeyword {
             public static final C0082Channel INSTANCE = new C0082Channel();
@@ -460,7 +460,7 @@ public abstract class RssKeyword {
         private Channel() {
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Channel$UpdatePeriod;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class UpdatePeriod extends RssKeyword {
             public static final UpdatePeriod INSTANCE = new UpdatePeriod();
@@ -488,7 +488,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Channel$LastBuildDate;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class LastBuildDate extends RssKeyword {
             public static final LastBuildDate INSTANCE = new LastBuildDate();
@@ -516,12 +516,12 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\t\bÆ\u0002\u0018\u00002\u00020\u0001:\u0007\u0003\u0004\u0005\u0006\u0007\b\tB\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\n"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes;", "", "()V", "Category", "NewFeedUrl", "Owner", "OwnerEmail", "OwnerName", "Text", "Type", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final class Itunes {
             public static final Itunes INSTANCE = new Itunes();
 
-            /* JADX INFO: compiled from: RssKeyword.kt */
+            /* INFO: compiled from: RssKeyword.kt */
             @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$Category;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
             public static final /* data */ class Category extends RssKeyword {
                 public static final Category INSTANCE = new Category();
@@ -552,7 +552,7 @@ public abstract class RssKeyword {
             private Itunes() {
             }
 
-            /* JADX INFO: compiled from: RssKeyword.kt */
+            /* INFO: compiled from: RssKeyword.kt */
             @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$Owner;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
             public static final /* data */ class Owner extends RssKeyword {
                 public static final Owner INSTANCE = new Owner();
@@ -580,7 +580,7 @@ public abstract class RssKeyword {
                 }
             }
 
-            /* JADX INFO: compiled from: RssKeyword.kt */
+            /* INFO: compiled from: RssKeyword.kt */
             @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$OwnerName;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
             public static final /* data */ class OwnerName extends RssKeyword {
                 public static final OwnerName INSTANCE = new OwnerName();
@@ -608,7 +608,7 @@ public abstract class RssKeyword {
                 }
             }
 
-            /* JADX INFO: compiled from: RssKeyword.kt */
+            /* INFO: compiled from: RssKeyword.kt */
             @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$OwnerEmail;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
             public static final /* data */ class OwnerEmail extends RssKeyword {
                 public static final OwnerEmail INSTANCE = new OwnerEmail();
@@ -636,7 +636,7 @@ public abstract class RssKeyword {
                 }
             }
 
-            /* JADX INFO: compiled from: RssKeyword.kt */
+            /* INFO: compiled from: RssKeyword.kt */
             @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$Type;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
             public static final /* data */ class Type extends RssKeyword {
                 public static final Type INSTANCE = new Type();
@@ -664,7 +664,7 @@ public abstract class RssKeyword {
                 }
             }
 
-            /* JADX INFO: compiled from: RssKeyword.kt */
+            /* INFO: compiled from: RssKeyword.kt */
             @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$NewFeedUrl;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
             public static final /* data */ class NewFeedUrl extends RssKeyword {
                 public static final NewFeedUrl INSTANCE = new NewFeedUrl();
@@ -692,7 +692,7 @@ public abstract class RssKeyword {
                 }
             }
 
-            /* JADX INFO: compiled from: RssKeyword.kt */
+            /* INFO: compiled from: RssKeyword.kt */
             @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Channel$Itunes$Text;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
             public static final /* data */ class Text extends RssKeyword {
                 public static final Text INSTANCE = new Text();
@@ -722,13 +722,13 @@ public abstract class RssKeyword {
         }
     }
 
-    /* JADX INFO: compiled from: RssKeyword.kt */
+    /* INFO: compiled from: RssKeyword.kt */
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0012\bÆ\u0002\u0018\u00002\u00020\u0001:\u0010\u0003\u0004\u0005\u0006\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0013"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item;", "", "()V", "Author", "Category", "Comments", "Content", "Enclosure", "Guid", "Item", "Itunes", "MediaContent", "News", "PubDate", "Source", "Thumb", "Thumbnail", "Time", "Type", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Item {
         public static final Item INSTANCE = new Item();
 
-        /* JADX INFO: renamed from: com.prof18.rssparser.internal.RssKeyword$Item$Item, reason: collision with other inner class name */
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: renamed from: com.prof18.rssparser.internal.RssKeyword$Item$Item, reason: collision with other inner class name */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Item;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class C0083Item extends RssKeyword {
             public static final C0083Item INSTANCE = new C0083Item();
@@ -759,7 +759,7 @@ public abstract class RssKeyword {
         private Item() {
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Author;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Author extends RssKeyword {
             public static final Author INSTANCE = new Author();
@@ -787,7 +787,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Category;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Category extends RssKeyword {
             public static final Category INSTANCE = new Category();
@@ -815,7 +815,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Thumbnail;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Thumbnail extends RssKeyword {
             public static final Thumbnail INSTANCE = new Thumbnail();
@@ -843,7 +843,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$MediaContent;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class MediaContent extends RssKeyword {
             public static final MediaContent INSTANCE = new MediaContent();
@@ -871,7 +871,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Enclosure;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Enclosure extends RssKeyword {
             public static final Enclosure INSTANCE = new Enclosure();
@@ -899,7 +899,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Content;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Content extends RssKeyword {
             public static final Content INSTANCE = new Content();
@@ -927,7 +927,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$PubDate;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class PubDate extends RssKeyword {
             public static final PubDate INSTANCE = new PubDate();
@@ -955,7 +955,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Time;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Time extends RssKeyword {
             public static final Time INSTANCE = new Time();
@@ -983,7 +983,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Type;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Type extends RssKeyword {
             public static final Type INSTANCE = new Type();
@@ -1011,7 +1011,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Guid;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Guid extends RssKeyword {
             public static final Guid INSTANCE = new Guid();
@@ -1039,7 +1039,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Source;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Source extends RssKeyword {
             public static final Source INSTANCE = new Source();
@@ -1067,7 +1067,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Comments;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Comments extends RssKeyword {
             public static final Comments INSTANCE = new Comments();
@@ -1095,7 +1095,7 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Thumb;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final /* data */ class Thumb extends RssKeyword {
             public static final Thumb INSTANCE = new Thumb();
@@ -1123,12 +1123,12 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001\u0003B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0004"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$News;", "", "()V", "Image", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final class News {
             public static final News INSTANCE = new News();
 
-            /* JADX INFO: compiled from: RssKeyword.kt */
+            /* INFO: compiled from: RssKeyword.kt */
             @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$News$Image;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
             public static final /* data */ class Image extends RssKeyword {
                 public static final Image INSTANCE = new Image();
@@ -1160,12 +1160,12 @@ public abstract class RssKeyword {
             }
         }
 
-        /* JADX INFO: compiled from: RssKeyword.kt */
+        /* INFO: compiled from: RssKeyword.kt */
         @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0005\bÆ\u0002\u0018\u00002\u00020\u0001:\u0003\u0003\u0004\u0005B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0006"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Itunes;", "", "()V", "Episode", "EpisodeType", "Season", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final class Itunes {
             public static final Itunes INSTANCE = new Itunes();
 
-            /* JADX INFO: compiled from: RssKeyword.kt */
+            /* INFO: compiled from: RssKeyword.kt */
             @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Itunes$Episode;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
             public static final /* data */ class Episode extends RssKeyword {
                 public static final Episode INSTANCE = new Episode();
@@ -1196,7 +1196,7 @@ public abstract class RssKeyword {
             private Itunes() {
             }
 
-            /* JADX INFO: compiled from: RssKeyword.kt */
+            /* INFO: compiled from: RssKeyword.kt */
             @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Itunes$Season;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
             public static final /* data */ class Season extends RssKeyword {
                 public static final Season INSTANCE = new Season();
@@ -1224,7 +1224,7 @@ public abstract class RssKeyword {
                 }
             }
 
-            /* JADX INFO: compiled from: RssKeyword.kt */
+            /* INFO: compiled from: RssKeyword.kt */
             @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\bÆ\n\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0013\u0010\u0003\u001a\u00020\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006HÖ\u0003J\t\u0010\u0007\u001a\u00020\bHÖ\u0001J\t\u0010\t\u001a\u00020\nHÖ\u0001¨\u0006\u000b"}, d2 = {"Lcom/prof18/rssparser/internal/RssKeyword$Item$Itunes$EpisodeType;", "Lcom/prof18/rssparser/internal/RssKeyword;", "()V", "equals", "", "other", "", "hashCode", "", "toString", "", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
             public static final /* data */ class EpisodeType extends RssKeyword {
                 public static final EpisodeType INSTANCE = new EpisodeType();

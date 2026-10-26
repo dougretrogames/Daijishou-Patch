@@ -17,7 +17,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.collections4.OrderedIterator;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractLinkedListJava21<E> implements List<E> {
     transient Node<E> header;
     transient int modCount;
@@ -438,7 +438,7 @@ public abstract class AbstractLinkedListJava21<E> implements List<E> {
         return new LinkedSubListIterator(linkedSubList, i);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     protected void doReadObject(ObjectInputStream objectInputStream) throws IOException, ClassNotFoundException {
         init();
         int i = objectInputStream.readInt();

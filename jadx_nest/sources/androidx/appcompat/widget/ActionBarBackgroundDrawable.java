@@ -5,7 +5,7 @@ import android.graphics.ColorFilter;
 import android.graphics.Outline;
 import android.graphics.drawable.Drawable;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class ActionBarBackgroundDrawable extends Drawable {
     final ActionBarContainer mContainer;
 

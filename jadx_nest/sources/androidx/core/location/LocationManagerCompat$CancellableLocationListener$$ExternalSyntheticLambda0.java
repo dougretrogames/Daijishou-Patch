@@ -1,7 +1,7 @@
 package androidx.core.location;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class LocationManagerCompat$CancellableLocationListener$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ LocationManagerCompat.CancellableLocationListener f$0;
 

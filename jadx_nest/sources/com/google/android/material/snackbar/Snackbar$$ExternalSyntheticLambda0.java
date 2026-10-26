@@ -2,8 +2,8 @@ package com.google.android.material.snackbar;
 
 import android.view.View;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class Snackbar$$ExternalSyntheticLambda0 implements View.OnClickListener {
     public final /* synthetic */ Snackbar f$0;
     public final /* synthetic */ View.OnClickListener f$1;

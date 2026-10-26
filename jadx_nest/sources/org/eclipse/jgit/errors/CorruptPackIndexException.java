@@ -2,7 +2,7 @@ package org.eclipse.jgit.errors;
 
 import org.eclipse.jgit.annotations.Nullable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CorruptPackIndexException extends Exception {
     private static final long serialVersionUID = 1;
     private ErrorType errorType;
@@ -14,7 +14,7 @@ public class CorruptPackIndexException extends Exception {
         MISSING_OBJ,
         UNKNOWN_OBJ;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static ErrorType[] valuesCustom() {
             ErrorType[] errorTypeArrValuesCustom = values();
             int length = errorTypeArrValuesCustom.length;

@@ -16,7 +16,7 @@ import java.util.BitSet;
 import java.util.List;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager implements RecyclerView.SmoothScroller.ScrollVectorProvider {
     static final boolean DEBUG = false;
 
@@ -54,7 +54,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
     private boolean mSmoothScrollbarEnabled = true;
     private final Runnable mCheckForGapsRunnable = new AnonymousClass1();
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.StaggeredGridLayoutManager$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.StaggeredGridLayoutManager$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -149,21 +149,21 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         recyclerView.requestLayout();
     }
 
-    /* JADX WARN: Code duplicated, block: B:28:0x0063  */
-    /* JADX WARN: Code duplicated, block: B:31:0x0072 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:33:0x0075  */
-    /* JADX WARN: Code duplicated, block: B:36:0x0084 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:37:0x0086  */
-    /* JADX WARN: Code duplicated, block: B:39:0x0097  */
-    /* JADX WARN: Code duplicated, block: B:40:0x0099  */
-    /* JADX WARN: Code duplicated, block: B:42:0x009c  */
-    /* JADX WARN: Code duplicated, block: B:43:0x009e  */
-    /* JADX WARN: Code duplicated, block: B:51:0x00a1 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:52:0x00a1 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:53:0x00a1 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:55:0x00a2 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:56:0x00a2 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:57:0x00a2 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:28:0x0063  */
+    /* WARN: Code duplicated, block: B:31:0x0072 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:33:0x0075  */
+    /* WARN: Code duplicated, block: B:36:0x0084 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:37:0x0086  */
+    /* WARN: Code duplicated, block: B:39:0x0097  */
+    /* WARN: Code duplicated, block: B:40:0x0099  */
+    /* WARN: Code duplicated, block: B:42:0x009c  */
+    /* WARN: Code duplicated, block: B:43:0x009e  */
+    /* WARN: Code duplicated, block: B:51:0x00a1 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:52:0x00a1 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:53:0x00a1 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:55:0x00a2 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:56:0x00a2 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:57:0x00a2 A[SYNTHETIC] */
     View hasGapsToFix() {
         int i;
         View childAt;
@@ -424,7 +424,7 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:86:0x015f  */
+    /* WARN: Code duplicated, block: B:86:0x015f  */
     private void onLayoutChildren(RecyclerView.Recycler recycler, RecyclerView.State state, boolean z) {
         boolean z2;
         SavedState savedState;
@@ -1107,17 +1107,17 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         handleUpdate(i, i2, 4);
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x0025  */
-    /* JADX WARN: Code duplicated, block: B:17:0x0028 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:19:0x002b  */
-    /* JADX WARN: Code duplicated, block: B:20:0x0036  */
-    /* JADX WARN: Code duplicated, block: B:21:0x003c  */
-    /* JADX WARN: Code duplicated, block: B:24:0x0044  */
-    /* JADX WARN: Code duplicated, block: B:26:0x0048  */
-    /* JADX WARN: Code duplicated, block: B:27:0x004d  */
-    /* JADX WARN: Code duplicated, block: B:29:0x0053  */
-    /* JADX WARN: Code duplicated, block: B:31:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:32:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:15:0x0025  */
+    /* WARN: Code duplicated, block: B:17:0x0028 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:19:0x002b  */
+    /* WARN: Code duplicated, block: B:20:0x0036  */
+    /* WARN: Code duplicated, block: B:21:0x003c  */
+    /* WARN: Code duplicated, block: B:24:0x0044  */
+    /* WARN: Code duplicated, block: B:26:0x0048  */
+    /* WARN: Code duplicated, block: B:27:0x004d  */
+    /* WARN: Code duplicated, block: B:29:0x0053  */
+    /* WARN: Code duplicated, block: B:31:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:32:? A[RETURN, SYNTHETIC] */
     private void handleUpdate(int i, int i2, int i3) {
         int i4;
         int i5;
@@ -1175,19 +1175,19 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v1, types: [androidx.recyclerview.widget.StaggeredGridLayoutManager] */
-    /* JADX WARN: Type inference failed for: r0v2, types: [androidx.recyclerview.widget.StaggeredGridLayoutManager] */
-    /* JADX WARN: Type inference failed for: r0v3 */
-    /* JADX WARN: Type inference failed for: r0v4 */
-    /* JADX WARN: Type inference failed for: r0v5 */
-    /* JADX WARN: Type inference failed for: r0v6 */
-    /* JADX WARN: Type inference failed for: r5v0 */
-    /* JADX WARN: Type inference failed for: r5v1 */
-    /* JADX WARN: Type inference failed for: r5v6 */
-    /* JADX WARN: Type inference failed for: r8v0 */
-    /* JADX WARN: Type inference failed for: r8v1, types: [boolean, int] */
-    /* JADX WARN: Type inference failed for: r8v5 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v1, types: [androidx.recyclerview.widget.StaggeredGridLayoutManager] */
+    /* WARN: Type inference failed for: r0v2, types: [androidx.recyclerview.widget.StaggeredGridLayoutManager] */
+    /* WARN: Type inference failed for: r0v3 */
+    /* WARN: Type inference failed for: r0v4 */
+    /* WARN: Type inference failed for: r0v5 */
+    /* WARN: Type inference failed for: r0v6 */
+    /* WARN: Type inference failed for: r5v0 */
+    /* WARN: Type inference failed for: r5v1 */
+    /* WARN: Type inference failed for: r5v6 */
+    /* WARN: Type inference failed for: r8v0 */
+    /* WARN: Type inference failed for: r8v1, types: [boolean, int] */
+    /* WARN: Type inference failed for: r8v5 */
     private int fill(RecyclerView.Recycler recycler, LayoutState layoutState, RecyclerView.State state) {
         int i;
         int startAfterPadding;
@@ -2519,18 +2519,18 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
                 return "FullSpanItem{mPosition=" + this.mPosition + ", mGapDir=" + this.mGapDir + ", mHasUnwantedGapAfter=" + this.mHasUnwantedGapAfter + ", mGapPerSpan=" + Arrays.toString(this.mGapPerSpan) + AbstractJsonLexerKt.END_OBJ;
             }
 
-            /* JADX INFO: renamed from: androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem$1, reason: invalid class name */
+            /* INFO: renamed from: androidx.recyclerview.widget.StaggeredGridLayoutManager$LazySpanLookup$FullSpanItem$1, reason: invalid class name */
             class AnonymousClass1 implements Parcelable.Creator<FullSpanItem> {
                 AnonymousClass1() {
                 }
 
-                /* JADX WARN: Can't rename method to resolve collision */
+                /* WARN: Can't rename method to resolve collision */
                 @Override // android.os.Parcelable.Creator
                 public FullSpanItem createFromParcel(Parcel parcel) {
                     return new FullSpanItem(parcel);
                 }
 
-                /* JADX WARN: Can't rename method to resolve collision */
+                /* WARN: Can't rename method to resolve collision */
                 @Override // android.os.Parcelable.Creator
                 public FullSpanItem[] newArray(int i) {
                     return new FullSpanItem[i];
@@ -2629,18 +2629,18 @@ public class StaggeredGridLayoutManager extends RecyclerView.LayoutManager imple
             parcel.writeList(this.mFullSpanItems);
         }
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.StaggeredGridLayoutManager$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.StaggeredGridLayoutManager$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];

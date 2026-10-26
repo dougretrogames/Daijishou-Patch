@@ -5,7 +5,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import com.google.android.material.progressindicator.BaseProgressIndicatorSpec;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class DrawingDelegate<S extends BaseProgressIndicatorSpec> {
     S spec;
 

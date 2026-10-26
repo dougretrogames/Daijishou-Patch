@@ -60,7 +60,7 @@ import java.util.Objects;
 import java.util.WeakHashMap;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ViewCompat {
     public static final int ACCESSIBILITY_LIVE_REGION_ASSERTIVE = 2;
     public static final int ACCESSIBILITY_LIVE_REGION_NONE = 0;
@@ -1054,7 +1054,7 @@ public class ViewCompat {
         return getFallback(view).onReceiveContent(contentInfoCompat);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private static OnReceiveContentViewBehavior getFallback(View view) {
         if (view instanceof OnReceiveContentViewBehavior) {
             return (OnReceiveContentViewBehavior) view;
@@ -1180,7 +1180,7 @@ public class ViewCompat {
         return Api21Impl.dispatchNestedPreScroll(view, i, i2, iArr, iArr2);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static boolean startNestedScroll(View view, int i, int i2) {
         if (view instanceof NestedScrollingChild2) {
             return ((NestedScrollingChild2) view).startNestedScroll(i, i2);
@@ -1191,7 +1191,7 @@ public class ViewCompat {
         return false;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static void stopNestedScroll(View view, int i) {
         if (view instanceof NestedScrollingChild2) {
             ((NestedScrollingChild2) view).stopNestedScroll(i);
@@ -1200,7 +1200,7 @@ public class ViewCompat {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static boolean hasNestedScrollingParent(View view, int i) {
         if (view instanceof NestedScrollingChild2) {
             ((NestedScrollingChild2) view).hasNestedScrollingParent(i);
@@ -1212,7 +1212,7 @@ public class ViewCompat {
         return false;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static void dispatchNestedScroll(View view, int i, int i2, int i3, int i4, int[] iArr, int i5, int[] iArr2) {
         if (view instanceof NestedScrollingChild3) {
             ((NestedScrollingChild3) view).dispatchNestedScroll(i, i2, i3, i4, iArr, i5, iArr2);
@@ -1221,7 +1221,7 @@ public class ViewCompat {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static boolean dispatchNestedScroll(View view, int i, int i2, int i3, int i4, int[] iArr, int i5) {
         if (view instanceof NestedScrollingChild2) {
             return ((NestedScrollingChild2) view).dispatchNestedScroll(i, i2, i3, i4, iArr, i5);
@@ -1232,7 +1232,7 @@ public class ViewCompat {
         return false;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static boolean dispatchNestedPreScroll(View view, int i, int i2, int[] iArr, int[] iArr2, int i3) {
         if (view instanceof NestedScrollingChild2) {
             return ((NestedScrollingChild2) view).dispatchNestedPreScroll(i, i2, iArr, iArr2, i3);
@@ -1504,26 +1504,26 @@ public class ViewCompat {
         return bool != null && bool.booleanValue();
     }
 
-    /* JADX INFO: renamed from: androidx.core.view.ViewCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.view.ViewCompat$1, reason: invalid class name */
     class AnonymousClass1 extends AccessibilityViewProperty<Boolean> {
         AnonymousClass1(int i, Class cls, int i2) {
             super(i, cls, i2);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* INFO: Access modifiers changed from: package-private */
+        /* WARN: Can't rename method to resolve collision */
         @Override // androidx.core.view.ViewCompat.AccessibilityViewProperty
         public Boolean frameworkGet(View view) {
             return Boolean.valueOf(Api28Impl.isScreenReaderFocusable(view));
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // androidx.core.view.ViewCompat.AccessibilityViewProperty
         public void frameworkSet(View view, Boolean bool) {
             Api28Impl.setScreenReaderFocusable(view, bool.booleanValue());
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // androidx.core.view.ViewCompat.AccessibilityViewProperty
         public boolean shouldUpdate(Boolean bool, Boolean bool2) {
             return !booleanNullToFalseEquals(bool, bool2);
@@ -1547,26 +1547,26 @@ public class ViewCompat {
         return paneTitleProperty().get(view);
     }
 
-    /* JADX INFO: renamed from: androidx.core.view.ViewCompat$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.view.ViewCompat$2, reason: invalid class name */
     class AnonymousClass2 extends AccessibilityViewProperty<CharSequence> {
         AnonymousClass2(int i, Class cls, int i2, int i3) {
             super(i, cls, i2, i3);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* INFO: Access modifiers changed from: package-private */
+        /* WARN: Can't rename method to resolve collision */
         @Override // androidx.core.view.ViewCompat.AccessibilityViewProperty
         public CharSequence frameworkGet(View view) {
             return Api28Impl.getAccessibilityPaneTitle(view);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // androidx.core.view.ViewCompat.AccessibilityViewProperty
         public void frameworkSet(View view, CharSequence charSequence) {
             Api28Impl.setAccessibilityPaneTitle(view, charSequence);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // androidx.core.view.ViewCompat.AccessibilityViewProperty
         public boolean shouldUpdate(CharSequence charSequence, CharSequence charSequence2) {
             return !TextUtils.equals(charSequence, charSequence2);
@@ -1577,26 +1577,26 @@ public class ViewCompat {
         return new AnonymousClass2(R.id.tag_accessibility_pane_title, CharSequence.class, 8, 28);
     }
 
-    /* JADX INFO: renamed from: androidx.core.view.ViewCompat$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.view.ViewCompat$3, reason: invalid class name */
     class AnonymousClass3 extends AccessibilityViewProperty<CharSequence> {
         AnonymousClass3(int i, Class cls, int i2, int i3) {
             super(i, cls, i2, i3);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* INFO: Access modifiers changed from: package-private */
+        /* WARN: Can't rename method to resolve collision */
         @Override // androidx.core.view.ViewCompat.AccessibilityViewProperty
         public CharSequence frameworkGet(View view) {
             return Api30Impl.getStateDescription(view);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // androidx.core.view.ViewCompat.AccessibilityViewProperty
         public void frameworkSet(View view, CharSequence charSequence) {
             Api30Impl.setStateDescription(view, charSequence);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // androidx.core.view.ViewCompat.AccessibilityViewProperty
         public boolean shouldUpdate(CharSequence charSequence, CharSequence charSequence2) {
             return !TextUtils.equals(charSequence, charSequence2);
@@ -1616,26 +1616,26 @@ public class ViewCompat {
         accessibilityHeadingProperty().set(view, Boolean.valueOf(z));
     }
 
-    /* JADX INFO: renamed from: androidx.core.view.ViewCompat$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.view.ViewCompat$4, reason: invalid class name */
     class AnonymousClass4 extends AccessibilityViewProperty<Boolean> {
         AnonymousClass4(int i, Class cls, int i2) {
             super(i, cls, i2);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* INFO: Access modifiers changed from: package-private */
+        /* WARN: Can't rename method to resolve collision */
         @Override // androidx.core.view.ViewCompat.AccessibilityViewProperty
         public Boolean frameworkGet(View view) {
             return Boolean.valueOf(Api28Impl.isAccessibilityHeading(view));
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // androidx.core.view.ViewCompat.AccessibilityViewProperty
         public void frameworkSet(View view, Boolean bool) {
             Api28Impl.setAccessibilityHeading(view, bool.booleanValue());
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // androidx.core.view.ViewCompat.AccessibilityViewProperty
         public boolean shouldUpdate(Boolean bool, Boolean bool2) {
             return !booleanNullToFalseEquals(bool, bool2);
@@ -1977,7 +1977,7 @@ public class ViewCompat {
             return windowInsetsCompat;
         }
 
-        /* JADX INFO: renamed from: androidx.core.view.ViewCompat$Api21Impl$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.core.view.ViewCompat$Api21Impl$1, reason: invalid class name */
         class AnonymousClass1 implements View.OnApplyWindowInsetsListener {
             WindowInsetsCompat mLastInsets = null;
             final /* synthetic */ OnApplyWindowInsetsListener val$listener;

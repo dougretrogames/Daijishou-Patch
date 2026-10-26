@@ -9,7 +9,7 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class EndpointPairIterator<N> extends AbstractIterator<EndpointPair<N>> {
     private final BaseGraph<N> graph;
@@ -54,7 +54,7 @@ abstract class EndpointPairIterator<N> extends AbstractIterator<EndpointPair<N>>
             super(graph, null);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.AbstractIterator
         @CheckForNull
         public EndpointPair<N> computeNext() {
@@ -81,7 +81,7 @@ abstract class EndpointPairIterator<N> extends AbstractIterator<EndpointPair<N>>
             this.visitedNodes = Sets.newHashSetWithExpectedSize(graph.nodes().size() + 1);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.AbstractIterator
         @CheckForNull
         public EndpointPair<N> computeNext() {

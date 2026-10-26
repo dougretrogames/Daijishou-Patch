@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import org.eclipse.jgit.lib.CommitConfig$$ExternalSyntheticBackport0;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum DiffDriver {
     cpp(CommitConfig$$ExternalSyntheticBackport0.m(new Object[]{"^[ \\t]*[A-Za-z_][A-Za-z_0-9]*:\\s*($|/[/*])"}), CommitConfig$$ExternalSyntheticBackport0.m(new Object[]{"^((::\\s*)?[A-Za-z_].*)$"})),
     dts(CommitConfig$$ExternalSyntheticBackport0.m(new Object[]{";", "="}), CommitConfig$$ExternalSyntheticBackport0.m(new Object[]{"^[ \\t]*((/[ \\t]*\\{|&?[a-zA-Z_]).*)"})),
@@ -16,7 +16,7 @@ public enum DiffDriver {
     private final List<Pattern> matchPatterns;
     private final List<Pattern> negatePatterns;
 
-    /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+    /* INFO: renamed from: values, reason: to resolve conflict with enum method */
     public static DiffDriver[] valuesCustom() {
         DiffDriver[] diffDriverArrValuesCustom = values();
         int length = diffDriverArrValuesCustom.length;

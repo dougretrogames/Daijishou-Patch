@@ -1,6 +1,6 @@
 package org.eclipse.jgit.errors;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CommandFailedException extends Exception {
     private static final long serialVersionUID = 1;
     private int returnCode;

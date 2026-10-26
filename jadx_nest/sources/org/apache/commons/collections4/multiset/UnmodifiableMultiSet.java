@@ -12,11 +12,11 @@ import org.apache.commons.collections4.Unmodifiable;
 import org.apache.commons.collections4.iterators.UnmodifiableIterator;
 import org.apache.commons.collections4.set.UnmodifiableSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UnmodifiableMultiSet<E> extends AbstractMultiSetDecorator<E> implements Unmodifiable {
     private static final long serialVersionUID = 20150611;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <E> MultiSet<E> unmodifiableMultiSet(MultiSet<? extends E> multiSet) {
         return multiSet instanceof Unmodifiable ? multiSet : new UnmodifiableMultiSet(multiSet);
     }

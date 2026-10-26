@@ -6,7 +6,7 @@ import java.util.Arrays;
 import net.lingala.zip4j.util.InternalZipConstants;
 import org.eclipse.jgit.lib.Constants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class QuotedString {
     public static final GitPathStyle GIT_PATH = new GitPathStyle(true, null);
     public static final QuotedString GIT_PATH_MINIMAL = new GitPathStyle(false, null);

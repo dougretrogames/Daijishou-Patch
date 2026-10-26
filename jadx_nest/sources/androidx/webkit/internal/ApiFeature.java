@@ -7,7 +7,7 @@ import java.util.HashSet;
 import java.util.Set;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class ApiFeature implements ConditionallySupportedFeature {
     private static final Set<ApiFeature> sValues = new HashSet();
     private final String mInternalFeatureValue;

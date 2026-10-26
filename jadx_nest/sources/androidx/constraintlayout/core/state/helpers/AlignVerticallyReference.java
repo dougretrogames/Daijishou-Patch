@@ -5,7 +5,7 @@ import androidx.constraintlayout.core.state.HelperReference;
 import androidx.constraintlayout.core.state.State;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AlignVerticallyReference extends HelperReference {
     private float mBias;
 

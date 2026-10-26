@@ -5,7 +5,7 @@ import android.view.View;
 import com.google.android.material.R;
 import com.google.android.material.navigation.NavigationBarItemView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class NavigationRailItemView extends NavigationBarItemView {
     public NavigationRailItemView(Context context) {
         super(context);

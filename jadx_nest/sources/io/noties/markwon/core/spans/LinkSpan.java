@@ -6,7 +6,7 @@ import android.view.View;
 import io.noties.markwon.LinkResolver;
 import io.noties.markwon.core.MarkwonTheme;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class LinkSpan extends URLSpan {
     private final String link;
     private final LinkResolver resolver;

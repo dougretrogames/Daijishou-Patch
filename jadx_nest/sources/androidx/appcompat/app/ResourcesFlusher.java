@@ -7,7 +7,7 @@ import android.util.LongSparseArray;
 import java.lang.reflect.Field;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class ResourcesFlusher {
     private static final String TAG = "ResourcesFlusher";
     private static Field sDrawableCacheField;

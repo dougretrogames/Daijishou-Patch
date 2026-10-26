@@ -40,8 +40,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.StringCompanionObject;
 
-/* JADX INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u0018\u0000 $2\u00020\u0001:\u0001$B\u0005¢\u0006\u0002\u0010\u0002J\u0012\u0010\u0013\u001a\u0004\u0018\u00010\u00062\u0006\u0010\u0014\u001a\u00020\rH\u0002J\b\u0010\u0015\u001a\u00020\u0016H\u0016J\u0012\u0010\u0017\u001a\u00020\u00162\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019H\u0016J&\u0010\u001a\u001a\u0004\u0018\u00010\u001b2\u0006\u0010\u001c\u001a\u00020\u001d2\b\u0010\u001e\u001a\u0004\u0018\u00010\u001f2\b\u0010\u0018\u001a\u0004\u0018\u00010\u0019H\u0016J\b\u0010 \u001a\u00020\u0016H\u0016J\b\u0010!\u001a\u00020\u0016H\u0002J\b\u0010\"\u001a\u00020\u0016H\u0002J\b\u0010#\u001a\u00020\u0016H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\f\u001a\u0004\u0018\u00010\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\r0\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\nX\u0082.¢\u0006\u0002\n\u0000¨\u0006%"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetTodayFaceFragment;", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetFaceFragment;", "()V", "background", "Lcom/google/android/material/imageview/ShapeableImageView;", "backgroundBitmap", "Landroid/graphics/Bitmap;", "dataChangedBroadcastReceiver", "Lcom/magneticchen/daijishou/utils/DayChangedBroadcastReceiver;", "description", "Landroid/widget/TextView;", "itemCount", "latestEvent", "Lcom/magneticchen/daijishou/daijishou_library_db/EventEntity;", "recentEvents", "", "secondBackground", "secondBackgroundBitmap", "title", "getBitmapFromEvent", "eventEntity", "onClick", "", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onDestroy", "registerDateChangedBroadcast", "renewAndUpdateFace", "unregisterDateChangedBroadcast", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class ActivityWidgetTodayFaceFragment extends WidgetFaceFragment {
     public ShapeableImageView background;
@@ -55,13 +55,13 @@ public final class ActivityWidgetTodayFaceFragment extends WidgetFaceFragment {
     Bitmap secondBackgroundBitmap;
     public TextView title;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final HashMap<Long, Integer> widgetInstanceIdToTitle = MapsKt.hashMapOf(TuplesKt.to(4L, Integer.valueOf(R.string.widget_face_activity_today_you_have_played)), TuplesKt.to(5L, Integer.valueOf(R.string.widget_face_activity_today_you_have_viewed)));
     private static final HashMap<Long, Integer> widgetInstanceIdToDescription = MapsKt.hashMapOf(TuplesKt.to(4L, Integer.valueOf(R.string.widget_face_activity_today_you_have_played_today)), TuplesKt.to(5L, Integer.valueOf(R.string.widget_face_activity_today_you_have_viewed_today)));
     private static final HashMap<Long, Integer> widgetInstanceIdToDialogTitle = MapsKt.hashMapOf(TuplesKt.to(4L, Integer.valueOf(R.string.widget_face_activity_today_playable_items_played)), TuplesKt.to(5L, Integer.valueOf(R.string.widget_face_activity_today_playable_items_viewed)));
 
-    /* JADX INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
+    /* INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0005R-\u0010\u0003\u001a\u001e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004j\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0006`\u0007¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR-\u0010\n\u001a\u001e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004j\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0006`\u0007¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\tR-\u0010\f\u001a\u001e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00060\u0004j\u000e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u0006`\u0007¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\t¨\u0006\u0011"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetTodayFaceFragment$Companion;", "", "()V", "widgetInstanceIdToDescription", "Ljava/util/HashMap;", "", "", "Lkotlin/collections/HashMap;", "getWidgetInstanceIdToDescription", "()Ljava/util/HashMap;", "widgetInstanceIdToDialogTitle", "getWidgetInstanceIdToDialogTitle", "widgetInstanceIdToTitle", "getWidgetInstanceIdToTitle", "newInstance", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetTodayFaceFragment;", "widgetInstanceId", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -112,7 +112,7 @@ public final class ActivityWidgetTodayFaceFragment extends WidgetFaceFragment {
         fragmentActivityRequireActivity.unregisterReceiver(dayChangedBroadcastReceiver);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void renewAndUpdateFace() {
         long j = requireArguments().getLong("widgetInstanceId");
         int i = ((int) j) - 3;
@@ -147,7 +147,7 @@ public final class ActivityWidgetTodayFaceFragment extends WidgetFaceFragment {
         shapeableImageView.post(new ActivityWidgetTodayFaceFragment$$ExternalSyntheticLambda0(this, j));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void renewAndUpdateFace$lambda$0(ActivityWidgetTodayFaceFragment this$0, long j) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         LifecycleOwnerKt.getLifecycleScope(this$0).launchWhenStarted(new ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1(this$0, j, null));
@@ -178,14 +178,14 @@ public final class ActivityWidgetTodayFaceFragment extends WidgetFaceFragment {
         staticPlayableItemCollectionDialogFragmentNewInstance$default.show(getParentFragmentManager(), StaticPlayableItemCollectionDialogFragment.class.getName());
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$onClick$2, reason: invalid class name */
-    /* JADX INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$onClick$2, reason: invalid class name */
+    /* INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda<Unit> implements Function1<PlayableItemEntity, Unit> {
         final /* synthetic */ StaticPlayableItemCollectionDialogFragment $dialog;
         final /* synthetic */ ActivityWidgetTodayFaceFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(StaticPlayableItemCollectionDialogFragment staticPlayableItemCollectionDialogFragment, ActivityWidgetTodayFaceFragment activityWidgetTodayFaceFragment) {
             super(1);
             this.$dialog = staticPlayableItemCollectionDialogFragment;
@@ -198,7 +198,7 @@ public final class ActivityWidgetTodayFaceFragment extends WidgetFaceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(PlayableItemEntity it) {
             Intrinsics.checkNotNullParameter(it, "it");
             this.$dialog.dismiss();
@@ -209,8 +209,8 @@ public final class ActivityWidgetTodayFaceFragment extends WidgetFaceFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$onClick$3, reason: invalid class name */
-    /* JADX INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$onClick$3, reason: invalid class name */
+    /* INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass3 extends Lambda<Unit> implements Function1<PlayableItemEntity, Unit> {
         AnonymousClass3() {
@@ -223,14 +223,14 @@ public final class ActivityWidgetTodayFaceFragment extends WidgetFaceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(PlayableItemEntity it) {
             Intrinsics.checkNotNullParameter(it, "it");
             PlayableItemDetailDialogFragment.INSTANCE.newInstance(it).show(ActivityWidgetTodayFaceFragment.this.getParentFragmentManager(), PlayableItemDetailDialogFragment.class.getName());
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final Bitmap getBitmapFromEvent(EventEntity eventEntity) throws IOException {
         Long playableItemId;
         String snapshotPath;
@@ -282,8 +282,8 @@ public final class ActivityWidgetTodayFaceFragment extends WidgetFaceFragment {
         return null;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$onCreate$1, reason: invalid class name */
-    /* JADX INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$onCreate$1, reason: invalid class name */
+    /* INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
     @Metadata(d1 = {"\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0016¨\u0006\u0004"}, d2 = {"com/magneticchen/daijishou/daijishou_widget/widgets/activity/ActivityWidgetTodayFaceFragment$onCreate$1", "Lcom/magneticchen/daijishou/utils/DayChangedBroadcastReceiver;", "onDayChanged", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass1 extends DayChangedBroadcastReceiver {
         AnonymousClass1() {
@@ -370,8 +370,8 @@ public final class ActivityWidgetTodayFaceFragment extends WidgetFaceFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$onCreateView$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$onCreateView$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/EventEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02181 extends Lambda<Unit> implements Function1<EventEntity, Unit> {
         C02181() {
@@ -384,7 +384,7 @@ public final class ActivityWidgetTodayFaceFragment extends WidgetFaceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(EventEntity eventEntity) {
             if (Intrinsics.areEqual(ActivityWidgetTodayFaceFragment.this.latestEvent, eventEntity)) {
                 return;

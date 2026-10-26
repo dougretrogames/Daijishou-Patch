@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Queue;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ByteBufferGifDecoder implements ResourceDecoder<ByteBuffer, GifDrawable> {
     private static final GifDecoderFactory GIF_DECODER_FACTORY = new GifDecoderFactory();
     private static final GifHeaderParserPool PARSER_POOL = new GifHeaderParserPool();

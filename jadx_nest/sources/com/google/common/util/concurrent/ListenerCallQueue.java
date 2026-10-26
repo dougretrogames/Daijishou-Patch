@@ -12,7 +12,7 @@ import java.util.Queue;
 import java.util.concurrent.Executor;
 import java.util.logging.Level;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 final class ListenerCallQueue<L> {
     private static final LazyLogger logger = new LazyLogger(ListenerCallQueue.class);
@@ -96,16 +96,16 @@ final class ListenerCallQueue<L> {
             }
         }
 
-        /* JADX WARN: Bottom block not found for handler: all -> 0x005f */
-        /* JADX WARN: Code restructure failed: missing block: B:12:0x0020, code lost:
+        /* WARN: Bottom block not found for handler: all -> 0x005f */
+        /* WARN: Code restructure failed: missing block: B:12:0x0020, code lost:
         
             r2.call(r9.listener);
          */
-        /* JADX WARN: Code restructure failed: missing block: B:14:0x0026, code lost:
+        /* WARN: Code restructure failed: missing block: B:14:0x0026, code lost:
         
             r2 = move-exception;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:15:0x0027, code lost:
+        /* WARN: Code restructure failed: missing block: B:15:0x0027, code lost:
         
             com.google.common.util.concurrent.ListenerCallQueue.logger.get().log(java.util.logging.Level.SEVERE, "Exception while executing callback: " + r9.listener + " " + r3, (java.lang.Throwable) r2);
          */

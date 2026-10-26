@@ -8,7 +8,7 @@ import org.eclipse.jgit.diff.HistogramDiff;
 import org.eclipse.jgit.diff.Sequence;
 import org.eclipse.jgit.diff.SequenceComparator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class MergeAlgorithm {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$merge$ContentMergeStrategy;
     private static final Edit END_EDIT = new Edit(Integer.MAX_VALUE, Integer.MAX_VALUE);

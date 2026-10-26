@@ -5,7 +5,7 @@ import java.lang.Comparable;
 import java.lang.Number;
 import java.math.RoundingMode;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class ToDoubleRounder<X extends Number & Comparable<X>> {
     abstract X minus(X a, X b);
@@ -19,39 +19,39 @@ abstract class ToDoubleRounder<X extends Number & Comparable<X>> {
     ToDoubleRounder() {
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code duplicated, block: B:20:0x005a  */
-    /* JADX WARN: Code duplicated, block: B:22:0x0074  */
-    /* JADX WARN: Code duplicated, block: B:24:0x007a A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:25:0x007c  */
-    /* JADX WARN: Code duplicated, block: B:26:0x007e  */
-    /* JADX WARN: Code duplicated, block: B:29:0x0083  */
-    /* JADX WARN: Code duplicated, block: B:31:0x0089 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:33:0x008d  */
-    /* JADX WARN: Code duplicated, block: B:35:0x0092 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:37:0x0096  */
-    /* JADX WARN: Code duplicated, block: B:39:0x009b A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:41:0x009f  */
-    /* JADX WARN: Code duplicated, block: B:43:0x00a4 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:45:0x00a8  */
-    /* JADX WARN: Code duplicated, block: B:47:0x00ad A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:48:0x00af  */
-    /* JADX WARN: Code duplicated, block: B:51:0x00b9  */
-    /* JADX WARN: Code duplicated, block: B:52:0x00c0  */
-    /* JADX WARN: Code duplicated, block: B:55:0x00ca  */
-    /* JADX WARN: Code duplicated, block: B:59:0x00e6  */
-    /* JADX WARN: Code duplicated, block: B:61:0x00e9  */
-    /* JADX WARN: Code duplicated, block: B:63:0x00f4  */
-    /* JADX WARN: Code duplicated, block: B:65:0x00f7  */
-    /* JADX WARN: Code duplicated, block: B:67:0x00fa  */
-    /* JADX WARN: Code duplicated, block: B:70:0x0101  */
-    /* JADX WARN: Code duplicated, block: B:72:0x0107  */
-    /* JADX WARN: Code duplicated, block: B:75:0x010e  */
-    /* JADX WARN: Code duplicated, block: B:79:0x011d  */
-    /* JADX WARN: Code duplicated, block: B:81:0x0123 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:83:0x0126  */
-    /* JADX WARN: Code duplicated, block: B:85:0x012b A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:87:0x012e  */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Code duplicated, block: B:20:0x005a  */
+    /* WARN: Code duplicated, block: B:22:0x0074  */
+    /* WARN: Code duplicated, block: B:24:0x007a A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:25:0x007c  */
+    /* WARN: Code duplicated, block: B:26:0x007e  */
+    /* WARN: Code duplicated, block: B:29:0x0083  */
+    /* WARN: Code duplicated, block: B:31:0x0089 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:33:0x008d  */
+    /* WARN: Code duplicated, block: B:35:0x0092 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:37:0x0096  */
+    /* WARN: Code duplicated, block: B:39:0x009b A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:41:0x009f  */
+    /* WARN: Code duplicated, block: B:43:0x00a4 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:45:0x00a8  */
+    /* WARN: Code duplicated, block: B:47:0x00ad A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:48:0x00af  */
+    /* WARN: Code duplicated, block: B:51:0x00b9  */
+    /* WARN: Code duplicated, block: B:52:0x00c0  */
+    /* WARN: Code duplicated, block: B:55:0x00ca  */
+    /* WARN: Code duplicated, block: B:59:0x00e6  */
+    /* WARN: Code duplicated, block: B:61:0x00e9  */
+    /* WARN: Code duplicated, block: B:63:0x00f4  */
+    /* WARN: Code duplicated, block: B:65:0x00f7  */
+    /* WARN: Code duplicated, block: B:67:0x00fa  */
+    /* WARN: Code duplicated, block: B:70:0x0101  */
+    /* WARN: Code duplicated, block: B:72:0x0107  */
+    /* WARN: Code duplicated, block: B:75:0x010e  */
+    /* WARN: Code duplicated, block: B:79:0x011d  */
+    /* WARN: Code duplicated, block: B:81:0x0123 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:83:0x0126  */
+    /* WARN: Code duplicated, block: B:85:0x012b A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:87:0x012e  */
     final double roundToDouble(X x, RoundingMode mode) {
         Number x2;
         int iCompareTo;
@@ -283,7 +283,7 @@ abstract class ToDoubleRounder<X extends Number & Comparable<X>> {
         return dRoundToDoubleArbitrarily;
     }
 
-    /* JADX INFO: renamed from: com.google.common.math.ToDoubleRounder$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.math.ToDoubleRounder$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$java$math$RoundingMode;
 

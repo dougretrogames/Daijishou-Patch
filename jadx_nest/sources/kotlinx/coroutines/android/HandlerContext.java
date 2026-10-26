@@ -19,8 +19,8 @@ import kotlinx.coroutines.DisposableHandle;
 import kotlinx.coroutines.JobKt;
 import kotlinx.coroutines.NonDisposableHandle;
 
-/* JADX INFO: compiled from: HandlerDispatcher.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: HandlerDispatcher.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u00002\u00020\u00012\u00020\u0002B\u001b\b\u0016\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0006¢\u0006\u0002\u0010\u0007B!\b\u0002\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u0006\u0010\b\u001a\u00020\t¢\u0006\u0002\u0010\nJ\u001c\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\n\u0010\u0012\u001a\u00060\u0013j\u0002`\u0014H\u0002J\u001c\u0010\u0015\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\n\u0010\u0012\u001a\u00060\u0013j\u0002`\u0014H\u0016J\u0013\u0010\u0016\u001a\u00020\t2\b\u0010\u0017\u001a\u0004\u0018\u00010\u0018H\u0096\u0002J\b\u0010\u0019\u001a\u00020\u001aH\u0016J$\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\n\u0010\u0012\u001a\u00060\u0013j\u0002`\u00142\u0006\u0010\u0010\u001a\u00020\u0011H\u0016J\u0010\u0010\u001f\u001a\u00020\t2\u0006\u0010\u0010\u001a\u00020\u0011H\u0016J\u001e\u0010 \u001a\u00020\u000f2\u0006\u0010\u001d\u001a\u00020\u001e2\f\u0010!\u001a\b\u0012\u0004\u0012\u00020\u000f0\"H\u0016J\b\u0010#\u001a\u00020\u0006H\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u000b\u001a\u00020\u0000X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006$"}, d2 = {"Lkotlinx/coroutines/android/HandlerContext;", "Lkotlinx/coroutines/android/HandlerDispatcher;", "Lkotlinx/coroutines/Delay;", "handler", "Landroid/os/Handler;", "name", "", "(Landroid/os/Handler;Ljava/lang/String;)V", "invokeImmediately", "", "(Landroid/os/Handler;Ljava/lang/String;Z)V", "immediate", "getImmediate", "()Lkotlinx/coroutines/android/HandlerContext;", "cancelOnRejection", "", "context", "Lkotlin/coroutines/CoroutineContext;", "block", "Ljava/lang/Runnable;", "Lkotlinx/coroutines/Runnable;", "dispatch", "equals", "other", "", "hashCode", "", "invokeOnTimeout", "Lkotlinx/coroutines/DisposableHandle;", "timeMillis", "", "isDispatchNeeded", "scheduleResumeAfterDelay", "continuation", "Lkotlinx/coroutines/CancellableContinuation;", "toString", "kotlinx-coroutines-android"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class HandlerContext extends HandlerDispatcher implements Delay {
     private final Handler handler;
@@ -55,7 +55,7 @@ public final class HandlerContext extends HandlerDispatcher implements Delay {
     }
 
     @Override // kotlinx.coroutines.CoroutineDispatcher
-    /* JADX INFO: renamed from: dispatch */
+    /* INFO: renamed from: dispatch */
     public void mo5311dispatch(CoroutineContext context, Runnable block) {
         if (this.handler.post(block)) {
             return;
@@ -63,13 +63,13 @@ public final class HandlerContext extends HandlerDispatcher implements Delay {
         cancelOnRejection(context, block);
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.android.HandlerContext$scheduleResumeAfterDelay$1, reason: invalid class name */
-    /* JADX INFO: compiled from: HandlerDispatcher.kt */
+    /* INFO: renamed from: kotlinx.coroutines.android.HandlerContext$scheduleResumeAfterDelay$1, reason: invalid class name */
+    /* INFO: compiled from: HandlerDispatcher.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0003\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<Throwable, Unit> {
         final /* synthetic */ Runnable $block;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Runnable runnable) {
             super(1);
             this.$block = runnable;
@@ -81,7 +81,7 @@ public final class HandlerContext extends HandlerDispatcher implements Delay {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Throwable th) {
             HandlerContext.this.handler.removeCallbacks(this.$block);
         }
@@ -96,7 +96,7 @@ public final class HandlerContext extends HandlerDispatcher implements Delay {
         return NonDisposableHandle.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void invokeOnTimeout$lambda$2(HandlerContext handlerContext, Runnable runnable) {
         handlerContext.handler.removeCallbacks(runnable);
     }
@@ -132,7 +132,7 @@ public final class HandlerContext extends HandlerDispatcher implements Delay {
     }
 
     @Override // kotlinx.coroutines.Delay
-    /* JADX INFO: renamed from: scheduleResumeAfterDelay */
+    /* INFO: renamed from: scheduleResumeAfterDelay */
     public void mo5312scheduleResumeAfterDelay(long timeMillis, CancellableContinuation<? super Unit> continuation) {
         HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1 handlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1 = new HandlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1(continuation, this);
         if (this.handler.postDelayed(handlerContext$scheduleResumeAfterDelay$$inlined$Runnable$1, RangesKt.coerceAtMost(timeMillis, DurationKt.MAX_MILLIS))) {

@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DecodePath<DataType, ResourceType, Transcode> {
     private static final String TAG = "DecodePath";
     private final Class<DataType> dataClass;

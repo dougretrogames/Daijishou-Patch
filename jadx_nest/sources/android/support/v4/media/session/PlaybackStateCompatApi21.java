@@ -5,7 +5,7 @@ import android.os.Bundle;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class PlaybackStateCompatApi21 {
     public static int getState(Object obj) {
         return ((PlaybackState) obj).getState();

@@ -6,7 +6,7 @@ import com.bumptech.glide.load.engine.Resource;
 import com.bumptech.glide.load.resource.bytes.BytesResource;
 import java.io.ByteArrayOutputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BitmapBytesTranscoder implements ResourceTranscoder<Bitmap, byte[]> {
     private final Bitmap.CompressFormat compressFormat;
     private final int quality;

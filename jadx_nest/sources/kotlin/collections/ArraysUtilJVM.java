@@ -3,7 +3,7 @@ package kotlin.collections;
 import java.util.Arrays;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class ArraysUtilJVM {
     ArraysUtilJVM() {
     }

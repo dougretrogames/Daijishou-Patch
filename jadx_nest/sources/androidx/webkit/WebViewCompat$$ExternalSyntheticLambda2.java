@@ -3,8 +3,8 @@ package androidx.webkit;
 import android.os.Handler;
 import android.os.Looper;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class WebViewCompat$$ExternalSyntheticLambda2 implements WebViewCompat.WebViewStartUpCallback {
     public final /* synthetic */ WebViewCompat.WebViewStartUpCallback f$0;
 

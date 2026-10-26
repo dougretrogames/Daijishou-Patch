@@ -2,8 +2,8 @@ package org.eclipse.jgit.transport;
 
 import org.eclipse.jgit.lib.Config;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class DaemonService$$ExternalSyntheticLambda0 implements Config.SectionParser {
     public final /* synthetic */ DaemonService f$0;
     public final /* synthetic */ String f$1;

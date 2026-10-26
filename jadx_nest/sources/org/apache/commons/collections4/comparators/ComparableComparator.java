@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.lang.Comparable;
 import java.util.Comparator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ComparableComparator<E extends Comparable<? super E>> implements Comparator<E>, Serializable {
     public static final ComparableComparator INSTANCE = new ComparableComparator();
     private static final long serialVersionUID = -291439688585137865L;

@@ -3,7 +3,7 @@ package androidx.core.database;
 import android.database.CursorWindow;
 import android.os.Build;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class CursorWindowCompat {
     private CursorWindowCompat() {
     }

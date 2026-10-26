@@ -78,12 +78,12 @@ import java.net.URL;
 import java.nio.ByteBuffer;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class RegistryFactory {
     private RegistryFactory() {
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.RegistryFactory$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.RegistryFactory$1, reason: invalid class name */
     class AnonymousClass1 implements GlideSuppliers.GlideSupplier<Registry> {
         private boolean isInitializing;
         final /* synthetic */ AppGlideModule val$annotationGeneratedModule;
@@ -96,7 +96,7 @@ final class RegistryFactory {
             this.val$annotationGeneratedModule = appGlideModule;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.bumptech.glide.util.GlideSuppliers.GlideSupplier
         public Registry get() {
             if (this.isInitializing) {

@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FixedOrderComparator<T> implements Comparator<T>, Serializable {
     private static final long serialVersionUID = 82794675842863201L;
     private int counter;
@@ -25,7 +25,7 @@ public class FixedOrderComparator<T> implements Comparator<T>, Serializable {
     public FixedOrderComparator() {
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public FixedOrderComparator(List<T> list) {
         Iterator it = ((List) Objects.requireNonNull(list, "items")).iterator();
         while (it.hasNext()) {
@@ -33,7 +33,7 @@ public class FixedOrderComparator<T> implements Comparator<T>, Serializable {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public FixedOrderComparator(T... tArr) {
         for (Object obj : (Object[]) Objects.requireNonNull(tArr, "items")) {
             add(obj);

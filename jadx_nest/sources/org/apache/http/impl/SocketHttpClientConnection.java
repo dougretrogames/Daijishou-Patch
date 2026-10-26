@@ -17,7 +17,7 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class SocketHttpClientConnection extends AbstractHttpClientConnection implements HttpInetConnection {
     private volatile boolean open;
@@ -54,7 +54,7 @@ public class SocketHttpClientConnection extends AbstractHttpClientConnection imp
         return this.open;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public Socket getSocket() {
         return this.socket;
     }

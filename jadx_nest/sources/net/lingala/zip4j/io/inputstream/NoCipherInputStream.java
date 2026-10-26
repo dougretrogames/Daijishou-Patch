@@ -4,13 +4,13 @@ import java.io.IOException;
 import net.lingala.zip4j.crypto.Decrypter;
 import net.lingala.zip4j.model.LocalFileHeader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class NoCipherInputStream extends CipherInputStream<NoDecrypter> {
     public NoCipherInputStream(ZipEntryInputStream zipEntryInputStream, LocalFileHeader localFileHeader, char[] cArr, int i) throws IOException {
         super(zipEntryInputStream, localFileHeader, cArr, i, true);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.io.inputstream.CipherInputStream
     public NoDecrypter initializeDecrypter(LocalFileHeader localFileHeader, char[] cArr, boolean z) {
         return new NoDecrypter();

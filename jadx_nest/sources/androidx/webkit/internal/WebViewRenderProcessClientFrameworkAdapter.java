@@ -4,7 +4,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewRenderProcess;
 import android.webkit.WebViewRenderProcessClient;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebViewRenderProcessClientFrameworkAdapter extends WebViewRenderProcessClient {
     private final androidx.webkit.WebViewRenderProcessClient mWebViewRenderProcessClient;
 

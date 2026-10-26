@@ -7,7 +7,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import org.apache.http.entity.AbstractHttpEntity;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ContentEntity extends AbstractHttpEntity {
     private final long contentLength;
     private final StreamingContent streamingContent;

@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CompoundException extends Exception {
     private static final long serialVersionUID = 1;
     private final List<Throwable> causeList;

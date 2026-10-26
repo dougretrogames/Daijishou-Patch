@@ -1,6 +1,6 @@
 package com.google.android.material.shape;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class ShapePathModel extends ShapeAppearanceModel {
     @Deprecated

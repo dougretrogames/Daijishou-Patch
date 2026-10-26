@@ -4,7 +4,7 @@ import android.graphics.Path;
 import android.graphics.PointF;
 import android.transition.PathMotion;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MaterialArcMotion extends PathMotion {
     @Override // android.transition.PathMotion
     public Path getPath(float f, float f2, float f3, float f4) {

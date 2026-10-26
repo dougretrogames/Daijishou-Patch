@@ -10,8 +10,8 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: Brush.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Brush.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0007\u0018\u00002\u00020\u0001BA\b\u0000\u0012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003\u0012\u0010\b\u0002\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0003\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\b\u0012\b\b\u0002\u0010\n\u001a\u00020\u000b¢\u0006\u0002\u0010\fJ\u001e\u0010\u0013\u001a\u00060\u0014j\u0002`\u00152\u0006\u0010\u0016\u001a\u00020\u000fH\u0016ø\u0001\u0000¢\u0006\u0004\b\u0017\u0010\u0018J\u0013\u0010\u0019\u001a\u00020\u001a2\b\u0010\u001b\u001a\u0004\u0018\u00010\u001cH\u0096\u0002J\b\u0010\u001d\u001a\u00020\u001eH\u0016J\b\u0010\u001f\u001a\u00020 H\u0016R\u0014\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\t\u001a\u00020\bX\u0082\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\n\u0002\u0010\rR\u001a\u0010\u000e\u001a\u00020\u000f8VX\u0096\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011R\u0016\u0010\u0007\u001a\u00020\bX\u0082\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\n\u0002\u0010\rR\u0016\u0010\u0005\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\n\u001a\u00020\u000bX\u0082\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\n\u0002\u0010\u0012\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006!"}, d2 = {"Landroidx/compose/ui/graphics/LinearGradient;", "Landroidx/compose/ui/graphics/ShaderBrush;", "colors", "", "Landroidx/compose/ui/graphics/Color;", "stops", "", "start", "Landroidx/compose/ui/geometry/Offset;", "end", "tileMode", "Landroidx/compose/ui/graphics/TileMode;", "(Ljava/util/List;Ljava/util/List;JJILkotlin/jvm/internal/DefaultConstructorMarker;)V", "J", "intrinsicSize", "Landroidx/compose/ui/geometry/Size;", "getIntrinsicSize-NH-jbRc", "()J", "I", "createShader", "Landroid/graphics/Shader;", "Landroidx/compose/ui/graphics/Shader;", "size", "createShader-uvyYCjk", "(J)Landroid/graphics/Shader;", "equals", "", "other", "", "hashCode", "", "toString", "", "ui-graphics_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class LinearGradient extends ShaderBrush {
     private final List<Color> colors;
@@ -36,9 +36,9 @@ public final class LinearGradient extends ShaderBrush {
         this.tileMode = i;
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x0038  */
+    /* WARN: Code duplicated, block: B:11:0x0038  */
     @Override // androidx.compose.ui.graphics.Brush
-    /* JADX INFO: renamed from: getIntrinsicSize-NH-jbRc */
+    /* INFO: renamed from: getIntrinsicSize-NH-jbRc */
     public long getIntrinsicSize() {
         float fAbs;
         float fM289getXimpl = Offset.m289getXimpl(this.start);
@@ -64,7 +64,7 @@ public final class LinearGradient extends ShaderBrush {
     }
 
     @Override // androidx.compose.ui.graphics.ShaderBrush
-    /* JADX INFO: renamed from: createShader-uvyYCjk */
+    /* INFO: renamed from: createShader-uvyYCjk */
     public Shader mo499createShaderuvyYCjk(long size) {
         return ShaderKt.m846LinearGradientShaderVjE6UOU(OffsetKt.Offset(Offset.m289getXimpl(this.start) == Float.POSITIVE_INFINITY ? Size.m358getWidthimpl(size) : Offset.m289getXimpl(this.start), Offset.m290getYimpl(this.start) == Float.POSITIVE_INFINITY ? Size.m355getHeightimpl(size) : Offset.m290getYimpl(this.start)), OffsetKt.Offset(Offset.m289getXimpl(this.end) == Float.POSITIVE_INFINITY ? Size.m358getWidthimpl(size) : Offset.m289getXimpl(this.end), Offset.m290getYimpl(this.end) == Float.POSITIVE_INFINITY ? Size.m355getHeightimpl(size) : Offset.m290getYimpl(this.end)), this.colors, this.stops, this.tileMode);
     }

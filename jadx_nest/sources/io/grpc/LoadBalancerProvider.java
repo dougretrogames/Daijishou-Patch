@@ -4,7 +4,7 @@ import com.google.common.base.MoreObjects;
 import java.util.Map;
 import org.apache.commons.logging.LogFactory;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class LoadBalancerProvider extends LoadBalancer.Factory {
     private static final NameResolver.ConfigOrError UNKNOWN_CONFIG = NameResolver.ConfigOrError.fromConfig(new UnknownConfig());
 

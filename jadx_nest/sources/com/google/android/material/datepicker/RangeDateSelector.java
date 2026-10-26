@@ -22,7 +22,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class RangeDateSelector implements DateSelector<Pair<Long, Long>> {
     public static final Parcelable.Creator<RangeDateSelector> CREATOR = new AnonymousClass3();
     private CharSequence error;
@@ -71,7 +71,7 @@ public class RangeDateSelector implements DateSelector<Pair<Long, Long>> {
         this.selectedEndItem = pair.second != null ? Long.valueOf(UtcDates.canonicalYearMonthDay(pair.second.longValue())) : null;
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.google.android.material.datepicker.DateSelector
     public Pair<Long, Long> getSelection() {
         return new Pair<>(this.selectedStartItem, this.selectedEndItem);
@@ -212,13 +212,13 @@ public class RangeDateSelector implements DateSelector<Pair<Long, Long>> {
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.RangeDateSelector$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.RangeDateSelector$1, reason: invalid class name */
     class AnonymousClass1 extends DateFormatTextWatcher {
         final /* synthetic */ TextInputLayout val$endTextInput;
         final /* synthetic */ OnSelectionChangedListener val$listener;
         final /* synthetic */ TextInputLayout val$startTextInput;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(String str, DateFormat dateFormat, TextInputLayout textInputLayout, CalendarConstraints calendarConstraints, TextInputLayout textInputLayout2, TextInputLayout textInputLayout3, OnSelectionChangedListener onSelectionChangedListener) {
             super(str, dateFormat, textInputLayout, calendarConstraints);
             this.val$startTextInput = textInputLayout2;
@@ -239,13 +239,13 @@ public class RangeDateSelector implements DateSelector<Pair<Long, Long>> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.RangeDateSelector$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.RangeDateSelector$2, reason: invalid class name */
     class AnonymousClass2 extends DateFormatTextWatcher {
         final /* synthetic */ TextInputLayout val$endTextInput;
         final /* synthetic */ OnSelectionChangedListener val$listener;
         final /* synthetic */ TextInputLayout val$startTextInput;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(String str, DateFormat dateFormat, TextInputLayout textInputLayout, CalendarConstraints calendarConstraints, TextInputLayout textInputLayout2, TextInputLayout textInputLayout3, OnSelectionChangedListener onSelectionChangedListener) {
             super(str, dateFormat, textInputLayout, calendarConstraints);
             this.val$startTextInput = textInputLayout2;
@@ -266,7 +266,7 @@ public class RangeDateSelector implements DateSelector<Pair<Long, Long>> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void updateIfValidTextProposal(TextInputLayout textInputLayout, TextInputLayout textInputLayout2, OnSelectionChangedListener<Pair<Long, Long>> onSelectionChangedListener) {
         Long l = this.proposedTextStart;
         if (l == null || this.proposedTextEnd == null) {
@@ -308,12 +308,12 @@ public class RangeDateSelector implements DateSelector<Pair<Long, Long>> {
         textInputLayout2.setError(" ");
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.RangeDateSelector$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.RangeDateSelector$3, reason: invalid class name */
     class AnonymousClass3 implements Parcelable.Creator<RangeDateSelector> {
         AnonymousClass3() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public RangeDateSelector createFromParcel(Parcel parcel) {
             RangeDateSelector rangeDateSelector = new RangeDateSelector();
@@ -322,7 +322,7 @@ public class RangeDateSelector implements DateSelector<Pair<Long, Long>> {
             return rangeDateSelector;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public RangeDateSelector[] newArray(int i) {
             return new RangeDateSelector[i];

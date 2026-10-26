@@ -7,7 +7,7 @@ import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class GitCommand<T> implements Callable<T> {
     private AtomicBoolean callable = new AtomicBoolean(true);
     protected final Repository repo;

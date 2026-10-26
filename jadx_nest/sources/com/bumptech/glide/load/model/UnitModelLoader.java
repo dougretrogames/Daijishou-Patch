@@ -6,7 +6,7 @@ import com.bumptech.glide.load.Options;
 import com.bumptech.glide.load.data.DataFetcher;
 import com.bumptech.glide.signature.ObjectKey;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class UnitModelLoader<Model> implements ModelLoader<Model, Model> {
     private static final UnitModelLoader<?> INSTANCE = new UnitModelLoader<>();
 

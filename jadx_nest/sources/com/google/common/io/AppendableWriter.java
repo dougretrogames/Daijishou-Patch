@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.io.Writer;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class AppendableWriter extends Writer {
     private boolean closed;

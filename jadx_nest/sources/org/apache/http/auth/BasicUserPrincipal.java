@@ -6,7 +6,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.http.util.Args;
 import org.apache.http.util.LangUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class BasicUserPrincipal implements Principal, Serializable {
     private static final long serialVersionUID = -2266305184969850467L;
     private final String username;

@@ -3,8 +3,8 @@ package kotlin.streams.jdk8;
 import java.util.function.Supplier;
 import kotlin.sequences.Sequence;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class StreamsKt$$ExternalSyntheticLambda0 implements Supplier {
     public final /* synthetic */ Sequence f$0;
 

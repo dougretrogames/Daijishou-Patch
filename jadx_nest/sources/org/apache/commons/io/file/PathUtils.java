@@ -66,7 +66,7 @@ import org.apache.commons.io.function.IOFunction;
 import org.apache.commons.io.function.IOSupplier;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class PathUtils {
     private static final OpenOption[] OPEN_OPTIONS_TRUNCATE = {StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING};
     private static final OpenOption[] OPEN_OPTIONS_APPEND = {StandardOpenOption.CREATE, StandardOpenOption.APPEND};
@@ -82,7 +82,7 @@ public final class PathUtils {
     public static final OpenOption[] EMPTY_OPEN_OPTION_ARRAY = new OpenOption[0];
     public static final Path[] EMPTY_PATH_ARRAY = new Path[0];
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class RelativeSortedPaths {
         final boolean equals;
         final List<Path> relativeFileList1;
@@ -122,7 +122,7 @@ public final class PathUtils {
             return extractKey(separator, string).equals(extractKey(separator2, string2));
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         public static String extractKey(String str, String str2) {
             return str2.replaceAll("\\" + str, ">");
         }
@@ -162,7 +162,7 @@ public final class PathUtils {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static AccumulatorPathVisitor accumulate(Path path, int i, FileVisitOption[] fileVisitOptionArr) throws IOException {
         return (AccumulatorPathVisitor) visitFileTree(AccumulatorPathVisitor.builder().setDirectoryPostTransformer(new PathUtils$$ExternalSyntheticLambda4()).get(), path, toFileVisitOptionSet(fileVisitOptionArr), i);
     }
@@ -902,7 +902,7 @@ public final class PathUtils {
         return countDirectoryAsBigInteger(path).getByteCounter().getBigInteger();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Path stripTrailingSeparator(Path path) {
         String separator = path.getFileSystem().getSeparator();
         String fileNameString = getFileNameString(path);

@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Picker extends FrameLayout {
     private int mAlphaAnimDuration;
     private final OnChildViewHolderSelectedListener mColumnChangeListener;
@@ -340,7 +340,7 @@ public class Picker extends FrameLayout {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.picker.Picker$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.picker.Picker$1, reason: invalid class name */
     class AnonymousClass1 extends OnChildViewHolderSelectedListener {
         AnonymousClass1() {
         }

@@ -4,7 +4,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 abstract class ObjectsPool {
     private static final Rect RECT = new Rect();
     private static final RectF RECT_F = new RectF();

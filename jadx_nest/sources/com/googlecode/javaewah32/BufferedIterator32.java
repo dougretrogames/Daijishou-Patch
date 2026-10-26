@@ -2,7 +2,7 @@ package com.googlecode.javaewah32;
 
 import com.googlecode.javaewah.CloneableIterator;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class BufferedIterator32 implements IteratingRLW32, Cloneable {
     private IteratingBufferedRunningLengthWord32 iteratingBrlw;
     private CloneableIterator<EWAHIterator32> masterIterator;
@@ -89,7 +89,7 @@ public class BufferedIterator32 implements IteratingRLW32, Cloneable {
     }
 
     @Override // com.googlecode.javaewah32.IteratingRLW32
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public BufferedIterator32 m3470clone() throws CloneNotSupportedException {
         BufferedIterator32 bufferedIterator32 = (BufferedIterator32) super.clone();
         bufferedIterator32.iteratingBrlw = this.iteratingBrlw.m3470clone();

@@ -2,7 +2,7 @@ package androidx.dynamicanimation.animation;
 
 import android.util.FloatProperty;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class FloatPropertyCompat<T> {
     final String mPropertyName;
 
@@ -14,11 +14,11 @@ public abstract class FloatPropertyCompat<T> {
         this.mPropertyName = str;
     }
 
-    /* JADX INFO: renamed from: androidx.dynamicanimation.animation.FloatPropertyCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.dynamicanimation.animation.FloatPropertyCompat$1, reason: invalid class name */
     static class AnonymousClass1 extends FloatPropertyCompat<T> {
         final /* synthetic */ FloatProperty val$property;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(String str, FloatProperty floatProperty) {
             super(str);
             this.val$property = floatProperty;

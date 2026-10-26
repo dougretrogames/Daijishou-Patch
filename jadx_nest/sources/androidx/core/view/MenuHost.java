@@ -3,7 +3,7 @@ package androidx.core.view;
 import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleOwner;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface MenuHost {
     void addMenuProvider(MenuProvider menuProvider);
 

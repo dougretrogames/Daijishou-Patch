@@ -1,6 +1,6 @@
 package androidx.transition;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TransitionListenerAdapter implements Transition.TransitionListener {
     @Override // androidx.transition.Transition.TransitionListener
     public void onTransitionCancel(Transition transition) {

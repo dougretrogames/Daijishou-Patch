@@ -7,14 +7,14 @@ import android.os.RemoteException;
 import com.google.android.gms.fido.u2f.api.common.RegisterRequestParams;
 import com.google.android.gms.fido.u2f.api.common.SignRequestParams;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public final class zzw extends zza implements IInterface {
     zzw(IBinder iBinder) {
         super(iBinder, "com.google.android.gms.fido.u2f.internal.regular.IU2fAppService");
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public final void zzc(zzv zzvVar, RegisterRequestParams registerRequestParams) throws RemoteException {
         Parcel parcelZza = zza();
         int i = zzc.zza;
@@ -23,7 +23,7 @@ public final class zzw extends zza implements IInterface {
         zzb(1, parcelZza);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public final void zzd(zzv zzvVar, SignRequestParams signRequestParams) throws RemoteException {
         Parcel parcelZza = zza();
         int i = zzc.zza;

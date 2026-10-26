@@ -9,7 +9,7 @@ import org.commonmark.parser.block.BlockStart;
 import org.commonmark.parser.block.MatchedBlockParser;
 import org.commonmark.parser.block.ParserState;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ThematicBreakParser extends AbstractBlockParser {
     private final ThematicBreak block = new ThematicBreak();
 
@@ -35,7 +35,7 @@ public class ThematicBreakParser extends AbstractBlockParser {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean isThematicBreak(CharSequence charSequence, int i) {
         int length = charSequence.length();
         int i2 = 0;

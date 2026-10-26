@@ -5,7 +5,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.AtomicReference;
 import org.eclipse.jgit.internal.storage.pack.PackExt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class DfsBlockCacheStats implements DfsBlockCacheTable.BlockCacheStats {
     private final AtomicReference<AtomicLong[]> liveBytes;
     private final String name;

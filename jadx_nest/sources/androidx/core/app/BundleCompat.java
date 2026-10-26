@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.os.IBinder;
 import androidx.annotation.ReplaceWith;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public final class BundleCompat {
     private BundleCompat() {

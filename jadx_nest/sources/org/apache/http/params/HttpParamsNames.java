@@ -2,7 +2,7 @@ package org.apache.http.params;
 
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface HttpParamsNames {
     Set<String> getNames();

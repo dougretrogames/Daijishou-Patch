@@ -9,7 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DividerItemDecoration extends RecyclerView.ItemDecoration {
     private static final int[] ATTRS = {R.attr.listDivider};
     public static final int HORIZONTAL = 0;

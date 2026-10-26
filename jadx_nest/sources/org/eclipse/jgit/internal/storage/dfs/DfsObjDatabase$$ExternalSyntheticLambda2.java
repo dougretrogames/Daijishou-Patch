@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.util.List;
 import org.eclipse.jgit.internal.storage.pack.PackIndexWriter;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class DfsObjDatabase$$ExternalSyntheticLambda2 implements PackIndexWriter {
     public final /* synthetic */ DfsObjDatabase f$0;
     public final /* synthetic */ DfsPackDescription f$1;

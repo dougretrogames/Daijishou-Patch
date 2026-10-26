@@ -11,7 +11,7 @@ import java.io.OutputStream;
 import java.io.Serializable;
 import java.lang.reflect.InvocationTargetException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class IOUtils {
     @Deprecated
     public static void copy(InputStream inputStream, OutputStream outputStream) throws IOException {

@@ -2,12 +2,12 @@ package org.apache.commons.collections4.functors;
 
 import org.apache.commons.collections4.Closure;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ForClosure<T> implements Closure<T> {
     private final Closure<? super T> iClosure;
     private final int iCount;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <E> Closure<E> forClosure(int i, Closure<? super E> closure) {
         if (i <= 0 || closure == 0) {
             return NOPClosure.nopClosure();

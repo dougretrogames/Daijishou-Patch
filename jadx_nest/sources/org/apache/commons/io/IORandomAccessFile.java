@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.RandomAccessFile;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class IORandomAccessFile extends RandomAccessFile {
     private final File file;
     private final String mode;

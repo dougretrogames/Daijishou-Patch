@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class HashMultimap<K, V> extends HashMultimapGwtSerializationDependencies<K, V> {
     private static final int DEFAULT_VALUES_PER_KEY = 2;
@@ -76,7 +76,7 @@ public final class HashMultimap<K, V> extends HashMultimapGwtSerializationDepend
         return super.keys();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractSetMultimap, com.google.common.collect.AbstractMapBasedMultimap, com.google.common.collect.AbstractMultimap, com.google.common.collect.Multimap
     public /* bridge */ /* synthetic */ boolean put(@ParametricNullness Object key, @ParametricNullness Object value) {
         return super.put(key, value);
@@ -87,7 +87,7 @@ public final class HashMultimap<K, V> extends HashMultimapGwtSerializationDepend
         return super.putAll(multimap);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractMultimap, com.google.common.collect.Multimap
     public /* bridge */ /* synthetic */ boolean putAll(@ParametricNullness Object key, Iterable values) {
         return super.putAll(key, values);
@@ -152,7 +152,7 @@ public final class HashMultimap<K, V> extends HashMultimapGwtSerializationDepend
         putAll(multimap);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractSetMultimap, com.google.common.collect.AbstractMapBasedMultimap
     public Set<V> createCollection() {
         return Platform.newHashSetWithExpectedSize(this.expectedValuesPerKey);

@@ -9,7 +9,7 @@ import org.jsoup.helper.Validate;
 import org.jsoup.nodes.Element;
 import org.jsoup.parser.TokenQueue;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Selector {
     private Selector() {
     }

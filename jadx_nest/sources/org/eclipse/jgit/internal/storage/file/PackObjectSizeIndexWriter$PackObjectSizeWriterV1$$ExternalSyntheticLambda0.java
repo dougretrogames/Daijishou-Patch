@@ -2,8 +2,8 @@ package org.eclipse.jgit.internal.storage.file;
 
 import java.io.IOException;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class PackObjectSizeIndexWriter$PackObjectSizeWriterV1$$ExternalSyntheticLambda0 implements PackObjectSizeIndexWriter.PackObjectSizeWriterV1.IntEncoder {
     public final /* synthetic */ PackObjectSizeIndexWriter.PackObjectSizeWriterV1 f$0;
 

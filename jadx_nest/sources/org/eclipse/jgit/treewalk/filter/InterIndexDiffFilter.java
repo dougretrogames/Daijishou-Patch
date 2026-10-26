@@ -4,7 +4,7 @@ import org.eclipse.jgit.dircache.DirCacheEntry;
 import org.eclipse.jgit.dircache.DirCacheIterator;
 import org.eclipse.jgit.treewalk.TreeWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class InterIndexDiffFilter extends TreeFilter {
     public static final TreeFilter INSTANCE = new InterIndexDiffFilter();
     private static final int baseTree = 0;

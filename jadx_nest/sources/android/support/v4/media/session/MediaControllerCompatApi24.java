@@ -4,7 +4,7 @@ import android.media.session.MediaController;
 import android.net.Uri;
 import android.os.Bundle;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MediaControllerCompatApi24 {
 
     public static class TransportControls {

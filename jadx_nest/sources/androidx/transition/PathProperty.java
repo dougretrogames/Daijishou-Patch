@@ -5,7 +5,7 @@ import android.graphics.PathMeasure;
 import android.graphics.PointF;
 import android.util.Property;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class PathProperty<T> extends Property<T, Float> {
     private float mCurrentFraction;
     private final float mPathLength;
@@ -24,7 +24,7 @@ class PathProperty<T> extends Property<T, Float> {
         this.mPathLength = pathMeasure.getLength();
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // android.util.Property
     public Float get(T t) {
         return Float.valueOf(this.mCurrentFraction);

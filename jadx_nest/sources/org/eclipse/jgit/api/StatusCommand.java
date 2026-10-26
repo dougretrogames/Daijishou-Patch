@@ -14,7 +14,7 @@ import org.eclipse.jgit.treewalk.FileTreeIterator;
 import org.eclipse.jgit.treewalk.WorkingTreeIterator;
 import org.eclipse.jgit.treewalk.filter.PathFilterGroup;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StatusCommand extends GitCommand<Status> {
     private SubmoduleWalk.IgnoreSubmoduleMode ignoreSubmoduleMode;
     private List<String> paths;

@@ -5,8 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.magneticchen.daijishou.application_data.portables.MessageJson;
 import kotlin.jvm.functions.Function1;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class ForeverUpgradeScript$upgrade$2$$ExternalSyntheticLambda1 implements DialogInterface.OnClickListener {
     public final /* synthetic */ MessageJson f$0;
     public final /* synthetic */ Function1 f$1;

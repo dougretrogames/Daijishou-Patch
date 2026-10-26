@@ -39,7 +39,7 @@ import org.apache.http.protocol.BasicHttpContext;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class InternalHttpClient extends CloseableHttpClient implements Configurable {
     private final Lookup<AuthSchemeProvider> authSchemeRegistry;
     private final List<Closeable> closeables;
@@ -150,7 +150,7 @@ class InternalHttpClient extends CloseableHttpClient implements Configurable {
         throw new UnsupportedOperationException();
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.client.InternalHttpClient$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.client.InternalHttpClient$1, reason: invalid class name */
     class AnonymousClass1 implements ClientConnectionManager {
         AnonymousClass1() {
         }

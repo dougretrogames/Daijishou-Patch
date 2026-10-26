@@ -11,7 +11,7 @@ import java.util.function.Function;
 import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ImmutableBiMap<K, V> extends ImmutableMap<K, V> implements BiMap<K, V> {
     private static final long serialVersionUID = 912559;
@@ -174,7 +174,7 @@ public abstract class ImmutableBiMap<K, V> extends ImmutableMap<K, V> implements
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.ImmutableMap.Builder
         public Builder<K, V> combine(ImmutableMap.Builder<K, V> builder) {
             super.combine((ImmutableMap.Builder) builder);
@@ -230,7 +230,7 @@ public abstract class ImmutableBiMap<K, V> extends ImmutableMap<K, V> implements
         return inverse().keySet();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ImmutableMap
     public final ImmutableSet<V> createValues() {
         throw new AssertionError("should never be called");
@@ -250,7 +250,7 @@ public abstract class ImmutableBiMap<K, V> extends ImmutableMap<K, V> implements
             super(bimap);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.ImmutableMap.SerializedForm
         public Builder<K, V> makeBuilder(int size) {
             return new Builder<>(size);

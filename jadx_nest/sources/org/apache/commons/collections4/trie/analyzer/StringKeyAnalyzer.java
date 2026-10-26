@@ -2,7 +2,7 @@ package org.apache.commons.collections4.trie.analyzer;
 
 import org.apache.commons.collections4.trie.KeyAnalyzer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StringKeyAnalyzer extends KeyAnalyzer<String> {
     public static final StringKeyAnalyzer INSTANCE = new StringKeyAnalyzer();
     public static final int LENGTH = 16;

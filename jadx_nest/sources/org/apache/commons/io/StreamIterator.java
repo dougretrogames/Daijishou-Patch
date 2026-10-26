@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class StreamIterator<E> implements Iterator<E>, AutoCloseable {
     private boolean closed;
     private final Iterator<E> iterator;

@@ -1,6 +1,6 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class Android {
     private static boolean ASSUME_ANDROID;
     private static final boolean IS_ROBOLECTRIC;

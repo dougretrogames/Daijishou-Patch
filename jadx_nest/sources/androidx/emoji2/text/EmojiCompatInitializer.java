@@ -12,12 +12,12 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.ThreadPoolExecutor;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class EmojiCompatInitializer implements Initializer<Boolean> {
     private static final long STARTUP_THREAD_CREATION_DELAY_MS = 500;
     private static final String S_INITIALIZER_THREAD_NAME = "EmojiCompatInitializer";
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // androidx.startup.Initializer
     public Boolean create(Context context) {
         EmojiCompat.init(new BackgroundDefaultConfig(context));
@@ -30,7 +30,7 @@ public class EmojiCompatInitializer implements Initializer<Boolean> {
         lifecycle.addObserver(new AnonymousClass1(lifecycle));
     }
 
-    /* JADX INFO: renamed from: androidx.emoji2.text.EmojiCompatInitializer$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.emoji2.text.EmojiCompatInitializer$1, reason: invalid class name */
     class AnonymousClass1 implements DefaultLifecycleObserver {
         final /* synthetic */ Lifecycle val$lifecycle;
 
@@ -91,8 +91,8 @@ public class EmojiCompatInitializer implements Initializer<Boolean> {
             threadPoolExecutorCreateBackgroundPriorityExecutor.execute(new EmojiCompatInitializer$BackgroundDefaultLoader$$ExternalSyntheticLambda0(this, metadataRepoLoaderCallback, threadPoolExecutorCreateBackgroundPriorityExecutor));
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* JADX INFO: renamed from: doLoad, reason: merged with bridge method [inline-methods] */
+        /* INFO: Access modifiers changed from: package-private */
+        /* INFO: renamed from: doLoad, reason: merged with bridge method [inline-methods] */
         public void m3181x5cc8028a(EmojiCompat.MetadataRepoLoaderCallback metadataRepoLoaderCallback, ThreadPoolExecutor threadPoolExecutor) {
             try {
                 FontRequestEmojiCompatConfig fontRequestEmojiCompatConfigCreate = DefaultEmojiCompatConfig.create(this.mContext);
@@ -107,7 +107,7 @@ public class EmojiCompatInitializer implements Initializer<Boolean> {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.emoji2.text.EmojiCompatInitializer$BackgroundDefaultLoader$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.emoji2.text.EmojiCompatInitializer$BackgroundDefaultLoader$1, reason: invalid class name */
         class AnonymousClass1 extends EmojiCompat.MetadataRepoLoaderCallback {
             final /* synthetic */ ThreadPoolExecutor val$executor;
             final /* synthetic */ EmojiCompat.MetadataRepoLoaderCallback val$loaderCallback;

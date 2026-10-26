@@ -20,7 +20,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 import java.util.concurrent.FutureTask;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class PrecomputedTextCompat implements Spannable {
     private static final char LINE_FEED = '\n';
     private static Executor sExecutor;
@@ -236,7 +236,7 @@ public class PrecomputedTextCompat implements Spannable {
                 this.mText = charSequence;
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // java.util.concurrent.Callable
             public PrecomputedTextCompat call() throws Exception {
                 return PrecomputedTextCompat.create(this.mText, this.mParams);

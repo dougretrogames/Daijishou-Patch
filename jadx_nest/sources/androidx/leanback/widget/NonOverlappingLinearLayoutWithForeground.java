@@ -8,7 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class NonOverlappingLinearLayoutWithForeground extends LinearLayout {
     private static final int VERSION_M = 23;
     private Drawable mForeground;

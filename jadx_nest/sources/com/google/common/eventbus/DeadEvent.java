@@ -4,7 +4,7 @@ import androidx.core.app.NotificationCompat;
 import com.google.common.base.MoreObjects;
 import com.google.common.base.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class DeadEvent {
     private final Object event;

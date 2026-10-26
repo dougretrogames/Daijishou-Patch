@@ -7,7 +7,7 @@ import java.util.Map;
 import java.util.Objects;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable(containerOf = {"R", "C", ExifInterface.GPS_MEASUREMENT_INTERRUPTED})
 @ElementTypesAreNonnullByDefault
 final class DenseImmutableTable<R, C, V> extends RegularImmutableTable<R, C, V> {
@@ -92,7 +92,7 @@ final class DenseImmutableTable<R, C, V> extends RegularImmutableTable<R, C, V> 
             return getValue(num.intValue());
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.DenseImmutableTable$ImmutableArrayMap$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.DenseImmutableTable$ImmutableArrayMap$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<Map.Entry<K, V>> {
             private int index = -1;
             private final int maxIndex;
@@ -101,7 +101,7 @@ final class DenseImmutableTable<R, C, V> extends RegularImmutableTable<R, C, V> 
                 this.maxIndex = ImmutableArrayMap.this.keyToIndex().size();
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
             public Map.Entry<K, V> computeNext() {
@@ -213,7 +213,7 @@ final class DenseImmutableTable<R, C, V> extends RegularImmutableTable<R, C, V> 
             return DenseImmutableTable.this.rowKeyToIndex;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.DenseImmutableTable.ImmutableArrayMap
         public ImmutableMap<C, V> getValue(int keyIndex) {
             return new Row(keyIndex);
@@ -244,7 +244,7 @@ final class DenseImmutableTable<R, C, V> extends RegularImmutableTable<R, C, V> 
             return DenseImmutableTable.this.columnKeyToIndex;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.DenseImmutableTable.ImmutableArrayMap
         public ImmutableMap<R, V> getValue(int keyIndex) {
             return new Column(keyIndex);

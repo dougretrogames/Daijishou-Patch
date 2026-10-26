@@ -8,7 +8,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import kotlin.UShort;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MetadataListReader {
     private static final int EMJI_TAG = 1164798569;
     private static final int EMJI_TAG_DEPRECATED = 1701669481;

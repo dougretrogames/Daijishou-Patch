@@ -5,7 +5,7 @@ import com.google.protobuf.Internal;
 import com.google.protobuf.ProtocolMessageEnum;
 import com.google.protobuf.RuntimeVersion;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public enum CharacterSpeciesEnum implements ProtocolMessageEnum {
     CHARACTER_SPECIES_NULL(0),
     HUMAN(1),
@@ -70,7 +70,7 @@ public enum CharacterSpeciesEnum implements ProtocolMessageEnum {
         return internalValueMap;
     }
 
-    /* JADX INFO: renamed from: proto.CharacterSpeciesEnum$1, reason: invalid class name */
+    /* INFO: renamed from: proto.CharacterSpeciesEnum$1, reason: invalid class name */
     class AnonymousClass1 implements Internal.EnumLiteMap<CharacterSpeciesEnum> {
         AnonymousClass1() {
         }

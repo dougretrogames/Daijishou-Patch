@@ -3,8 +3,8 @@ package androidx.webkit.internal;
 import java.util.concurrent.Callable;
 import org.chromium.support_lib_boundary.WebViewNavigationBoundaryInterface;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class WebNavigationClientAdapter$$ExternalSyntheticLambda6 implements Callable {
     public final /* synthetic */ WebViewNavigationBoundaryInterface f$0;
 

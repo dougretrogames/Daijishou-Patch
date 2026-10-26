@@ -12,7 +12,7 @@ import com.google.android.material.navigation.NavigationBarMenuView;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BottomNavigationMenuView extends NavigationBarMenuView {
     private final int activeItemMaxWidth;
     private final int activeItemMinWidth;

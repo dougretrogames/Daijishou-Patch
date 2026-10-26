@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class ByteArraySet {
     private int grow;
     private Hasher hasher = new Hasher(null, 0);

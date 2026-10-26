@@ -8,7 +8,7 @@ import java.util.NavigableMap;
 import java.util.TreeMap;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class LruArrayPool implements ArrayPool {
     private static final int DEFAULT_SIZE = 4194304;
     static final int MAX_OVER_SIZE_MULTIPLE = 8;
@@ -216,7 +216,7 @@ public final class LruArrayPool implements ArrayPool {
             return key;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.bumptech.glide.load.engine.bitmap_recycle.BaseKeyPool
         public Key create() {
             return new Key(this);

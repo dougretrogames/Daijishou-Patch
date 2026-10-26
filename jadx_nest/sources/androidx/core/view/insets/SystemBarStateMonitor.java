@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class SystemBarStateMonitor {
     private int mColorHint;
     private final View mDetector;
@@ -47,11 +47,11 @@ class SystemBarStateMonitor {
         viewGroup.addView(anonymousClass1, 0);
     }
 
-    /* JADX INFO: renamed from: androidx.core.view.insets.SystemBarStateMonitor$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.view.insets.SystemBarStateMonitor$1, reason: invalid class name */
     class AnonymousClass1 extends View {
         final /* synthetic */ ViewGroup val$rootView;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Context context, ViewGroup viewGroup) {
             super(context);
             this.val$rootView = viewGroup;
@@ -70,7 +70,7 @@ class SystemBarStateMonitor {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$androidx-core-view-insets-SystemBarStateMonitor, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$androidx-core-view-insets-SystemBarStateMonitor, reason: not valid java name */
     /* synthetic */ WindowInsetsCompat m3176lambda$new$0$androidxcoreviewinsetsSystemBarStateMonitor(View view, WindowInsetsCompat windowInsetsCompat) {
         Insets insets = getInsets(windowInsetsCompat);
         Insets insetsIgnoringVisibility = getInsetsIgnoringVisibility(windowInsetsCompat);
@@ -84,7 +84,7 @@ class SystemBarStateMonitor {
         return windowInsetsCompat;
     }
 
-    /* JADX INFO: renamed from: androidx.core.view.insets.SystemBarStateMonitor$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.view.insets.SystemBarStateMonitor$2, reason: invalid class name */
     class AnonymousClass2 extends WindowInsetsAnimationCompat.Callback {
         private final HashMap<WindowInsetsAnimationCompat, Integer> mAnimationSidesMap;
 
@@ -170,7 +170,7 @@ class SystemBarStateMonitor {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Insets getInsets(WindowInsetsCompat windowInsetsCompat) {
         return Insets.min(windowInsetsCompat.getInsets(WindowInsetsCompat.Type.systemBars()), windowInsetsCompat.getInsets(WindowInsetsCompat.Type.tappableElement()));
     }
@@ -200,7 +200,7 @@ class SystemBarStateMonitor {
         this.mDetector.post(new SystemBarStateMonitor$$ExternalSyntheticLambda1(this));
     }
 
-    /* JADX INFO: renamed from: lambda$detachFromWindow$1$androidx-core-view-insets-SystemBarStateMonitor, reason: not valid java name */
+    /* INFO: renamed from: lambda$detachFromWindow$1$androidx-core-view-insets-SystemBarStateMonitor, reason: not valid java name */
     /* synthetic */ void m3175xf3edbe07() {
         ViewParent parent = this.mDetector.getParent();
         if (parent instanceof ViewGroup) {

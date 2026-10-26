@@ -3,7 +3,7 @@ package com.google.android.material.carousel;
 import android.content.Context;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class CarouselStrategy {
     private float smallSizeMax;
     private float smallSizeMin;

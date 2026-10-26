@@ -2,7 +2,7 @@ package com.bumptech.glide.load;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class HttpException extends IOException {
     public static final int UNKNOWN = -1;
     private static final long serialVersionUID = 1;

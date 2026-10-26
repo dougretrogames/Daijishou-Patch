@@ -2,7 +2,7 @@ package io.opencensus.metrics.export;
 
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Distribution_BucketOptions_ExplicitOptions extends Distribution.BucketOptions.ExplicitOptions {
     private final List<Double> bucketBoundaries;
 

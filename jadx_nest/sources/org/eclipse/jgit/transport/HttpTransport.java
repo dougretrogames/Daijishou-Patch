@@ -4,7 +4,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.transport.http.HttpConnectionFactory;
 import org.eclipse.jgit.transport.http.JDKHttpConnectionFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class HttpTransport extends Transport {
     protected static volatile HttpConnectionFactory connectionFactory = new JDKHttpConnectionFactory();
 

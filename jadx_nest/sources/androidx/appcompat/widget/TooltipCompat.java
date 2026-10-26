@@ -2,7 +2,7 @@ package androidx.appcompat.widget;
 
 import android.view.View;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TooltipCompat {
     public static void setTooltipText(View view, CharSequence charSequence) {
         Api26Impl.setTooltipText(view, charSequence);

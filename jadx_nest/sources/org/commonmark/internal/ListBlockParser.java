@@ -14,7 +14,7 @@ import org.commonmark.parser.block.BlockStart;
 import org.commonmark.parser.block.MatchedBlockParser;
 import org.commonmark.parser.block.ParserState;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ListBlockParser extends AbstractBlockParser {
     private final ListBlock block;
     private boolean hadBlankLine;
@@ -57,7 +57,7 @@ public class ListBlockParser extends AbstractBlockParser {
         return BlockContinue.atIndex(parserState.getIndex());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static ListData parseList(CharSequence charSequence, int i, int i2, boolean z) {
         boolean z2;
         ListMarkerData listMarker = parseListMarker(charSequence, i);
@@ -109,9 +109,9 @@ public class ListBlockParser extends AbstractBlockParser {
         return parseOrderedList(charSequence, i);
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x0026  */
-    /* JADX WARN: Code duplicated, block: B:19:0x002e  */
-    /* JADX WARN: Code duplicated, block: B:5:0x0009  */
+    /* WARN: Code duplicated, block: B:17:0x0026  */
+    /* WARN: Code duplicated, block: B:19:0x002e  */
+    /* WARN: Code duplicated, block: B:5:0x0009  */
     private static ListMarkerData parseOrderedList(CharSequence charSequence, int i) {
         int i2;
         int length = charSequence.length();
@@ -176,7 +176,7 @@ public class ListBlockParser extends AbstractBlockParser {
         return i >= charSequence.length() || (cCharAt = charSequence.charAt(i)) == '\t' || cCharAt == ' ';
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean listsMatch(ListBlock listBlock, ListBlock listBlock2) {
         if ((listBlock instanceof BulletList) && (listBlock2 instanceof BulletList)) {
             return equals(Character.valueOf(((BulletList) listBlock).getBulletMarker()), Character.valueOf(((BulletList) listBlock2).getBulletMarker()));

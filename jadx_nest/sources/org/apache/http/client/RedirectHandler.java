@@ -5,7 +5,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.ProtocolException;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface RedirectHandler {
     URI getLocationURI(HttpResponse httpResponse, HttpContext httpContext) throws ProtocolException;

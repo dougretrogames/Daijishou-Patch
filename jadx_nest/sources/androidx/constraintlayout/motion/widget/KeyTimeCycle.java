@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class KeyTimeCycle extends Key {
     public static final int KEY_TYPE = 3;
     static final String NAME = "KeyTimeCycle";
@@ -158,7 +158,7 @@ public class KeyTimeCycle extends Key {
         throw new IllegalArgumentException(" KeyTimeCycles do not support SplineSet");
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public void addTimeValues(HashMap<String, ViewTimeCycle> map) {
         for (String str : map.keySet()) {
             ViewTimeCycle viewTimeCycle = map.get(str);
@@ -284,7 +284,7 @@ public class KeyTimeCycle extends Key {
         }
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     @Override // androidx.constraintlayout.motion.widget.Key
     public void setValue(String str, Object obj) {
         str.hashCode();
@@ -462,7 +462,7 @@ public class KeyTimeCycle extends Key {
     }
 
     @Override // androidx.constraintlayout.motion.widget.Key
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public Key mo3143clone() {
         return new KeyTimeCycle().copy(this);
     }

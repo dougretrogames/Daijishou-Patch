@@ -14,7 +14,7 @@ import org.eclipse.jgit.util.FileUtils;
 import org.eclipse.jgit.util.GitDateParser;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class GcLog {
     private static final String LOG_EXPIRY_DEFAULT = "1.day.ago";
     private Instant gcLogExpire;

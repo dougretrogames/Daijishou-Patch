@@ -4,7 +4,7 @@ import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.view.animation.PathInterpolator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class GradientProtection extends Protection {
     private static final float[] ALPHAS;
     private int mColor;

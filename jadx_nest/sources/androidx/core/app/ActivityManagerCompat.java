@@ -3,7 +3,7 @@ package androidx.core.app;
 import android.app.ActivityManager;
 import androidx.annotation.ReplaceWith;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ActivityManagerCompat {
     private ActivityManagerCompat() {
     }

@@ -14,7 +14,7 @@ import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.KeyManager;
 import javax.net.ssl.TrustManager;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface HttpConnection {
     public static final int HTTP_11_MOVED_PERM = 308;
     public static final int HTTP_11_MOVED_TEMP = 307;

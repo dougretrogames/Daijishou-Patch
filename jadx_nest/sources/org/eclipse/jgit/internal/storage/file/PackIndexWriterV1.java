@@ -6,7 +6,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.transport.PackedObjectInfo;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PackIndexWriterV1 extends BasePackIndexWriter {
     static boolean canStore(PackedObjectInfo packedObjectInfo) {
         return (packedObjectInfo.getOffset() >>> 1) < 2147483647L;

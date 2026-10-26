@@ -4,7 +4,7 @@ import com.google.api.client.util.BackOff;
 import com.google.api.client.util.Preconditions;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockBackOff implements BackOff {
     private long backOffMillis;
     private int maxTries = 10;

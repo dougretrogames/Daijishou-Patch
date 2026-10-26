@@ -17,7 +17,7 @@ import org.apache.http.cookie.MalformedCookieException;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ResponseProcessCookies implements HttpResponseInterceptor {
     private final Log log = LogFactory.getLog(getClass());
 

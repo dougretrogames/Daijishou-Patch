@@ -5,7 +5,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.transport.URIish;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MissingBundlePrerequisiteException extends TransportException {
     private static final long serialVersionUID = 1;
 

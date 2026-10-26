@@ -21,7 +21,7 @@ import androidx.leanback.widget.SparseArrayObjectAdapter;
 import java.lang.ref.WeakReference;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class PlaybackControlGlue extends PlaybackGlue implements OnActionClickedListener, View.OnKeyListener {
     public static final int ACTION_CUSTOM_LEFT_FIRST = 1;
     public static final int ACTION_CUSTOM_RIGHT_FIRST = 4096;
@@ -161,7 +161,7 @@ public abstract class PlaybackControlGlue extends PlaybackGlue implements OnActi
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.PlaybackControlGlue$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.PlaybackControlGlue$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractDetailsDescriptionPresenter {
         AnonymousClass1() {
         }
@@ -179,7 +179,7 @@ public abstract class PlaybackControlGlue extends PlaybackGlue implements OnActi
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.PlaybackControlGlue$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.PlaybackControlGlue$2, reason: invalid class name */
     class AnonymousClass2 extends PlaybackControlsRowPresenter {
         AnonymousClass2(Presenter presenter) {
             super(presenter);
@@ -301,7 +301,7 @@ public abstract class PlaybackControlGlue extends PlaybackGlue implements OnActi
         return i == 4 || i == 111;
     }
 
-    /* JADX WARN: Code duplicated, block: B:24:0x003b  */
+    /* WARN: Code duplicated, block: B:24:0x003b  */
     boolean dispatchAction(Action action, KeyEvent keyEvent) {
         if (action == this.mPlayPauseAction) {
             boolean z = keyEvent == null || keyEvent.getKeyCode() == 85 || keyEvent.getKeyCode() == 126;

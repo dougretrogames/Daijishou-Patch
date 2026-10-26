@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.parser;
 
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CLArray extends CLContainer {
     public CLArray(char[] cArr) {
         super(cArr);

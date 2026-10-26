@@ -5,7 +5,7 @@ import org.apache.http.client.ServiceUnavailableRetryStrategy;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultServiceUnavailableRetryStrategy implements ServiceUnavailableRetryStrategy {
     private final int maxRetries;
     private final long retryInterval;

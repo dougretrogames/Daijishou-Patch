@@ -42,7 +42,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Drive extends AbstractGoogleJsonClient {
     public static final String DEFAULT_BASE_URL = "https://www.googleapis.com/drive/v3/";
     public static final String DEFAULT_BATCH_PATH = "batch/drive/v3";
@@ -103,67 +103,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: set$Xgafv, reason: merged with bridge method [inline-methods] */
             public DriveRequest<com.google.api.services.drive.model.About> set$Xgafv2(String str) {
                 return (Get) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setAccessToken, reason: merged with bridge method [inline-methods] */
             public DriveRequest<com.google.api.services.drive.model.About> setAccessToken2(String str) {
                 return (Get) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setAlt, reason: merged with bridge method [inline-methods] */
             public DriveRequest<com.google.api.services.drive.model.About> setAlt2(String str) {
                 return (Get) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setCallback, reason: merged with bridge method [inline-methods] */
             public DriveRequest<com.google.api.services.drive.model.About> setCallback2(String str) {
                 return (Get) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setFields, reason: merged with bridge method [inline-methods] */
             public DriveRequest<com.google.api.services.drive.model.About> setFields2(String str) {
                 return (Get) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setKey, reason: merged with bridge method [inline-methods] */
             public DriveRequest<com.google.api.services.drive.model.About> setKey2(String str) {
                 return (Get) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setOauthToken, reason: merged with bridge method [inline-methods] */
             public DriveRequest<com.google.api.services.drive.model.About> setOauthToken2(String str) {
                 return (Get) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setPrettyPrint, reason: merged with bridge method [inline-methods] */
             public DriveRequest<com.google.api.services.drive.model.About> setPrettyPrint2(Boolean bool) {
                 return (Get) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setQuotaUser, reason: merged with bridge method [inline-methods] */
             public DriveRequest<com.google.api.services.drive.model.About> setQuotaUser2(String str) {
                 return (Get) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setUploadType, reason: merged with bridge method [inline-methods] */
             public DriveRequest<com.google.api.services.drive.model.About> setUploadType2(String str) {
                 return (Get) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setUploadProtocol, reason: merged with bridge method [inline-methods] */
             public DriveRequest<com.google.api.services.drive.model.About> setUploadProtocol2(String str) {
                 return (Get) super.setUploadProtocol2(str);
             }
@@ -211,67 +211,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<App> set$Xgafv2(String str) {
                 return (Get) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<App> setAccessToken2(String str) {
                 return (Get) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<App> setAlt2(String str) {
                 return (Get) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<App> setCallback2(String str) {
                 return (Get) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<App> setFields2(String str) {
                 return (Get) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<App> setKey2(String str) {
                 return (Get) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<App> setOauthToken2(String str) {
                 return (Get) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<App> setPrettyPrint2(Boolean bool) {
                 return (Get) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<App> setQuotaUser2(String str) {
                 return (Get) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<App> setUploadType2(String str) {
                 return (Get) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<App> setUploadProtocol2(String str) {
                 return (Get) super.setUploadProtocol2(str);
             }
@@ -324,67 +324,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<AppList> set$Xgafv2(String str) {
                 return (List) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<AppList> setAccessToken2(String str) {
                 return (List) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<AppList> setAlt2(String str) {
                 return (List) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<AppList> setCallback2(String str) {
                 return (List) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<AppList> setFields2(String str) {
                 return (List) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<AppList> setKey2(String str) {
                 return (List) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<AppList> setOauthToken2(String str) {
                 return (List) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<AppList> setPrettyPrint2(Boolean bool) {
                 return (List) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<AppList> setQuotaUser2(String str) {
                 return (List) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<AppList> setUploadType2(String str) {
                 return (List) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<AppList> setUploadProtocol2(String str) {
                 return (List) super.setUploadProtocol2(str);
             }
@@ -467,67 +467,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<StartPageToken> set$Xgafv2(String str) {
                 return (GetStartPageToken) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<StartPageToken> setAccessToken2(String str) {
                 return (GetStartPageToken) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<StartPageToken> setAlt2(String str) {
                 return (GetStartPageToken) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<StartPageToken> setCallback2(String str) {
                 return (GetStartPageToken) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<StartPageToken> setFields2(String str) {
                 return (GetStartPageToken) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<StartPageToken> setKey2(String str) {
                 return (GetStartPageToken) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<StartPageToken> setOauthToken2(String str) {
                 return (GetStartPageToken) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<StartPageToken> setPrettyPrint2(Boolean bool) {
                 return (GetStartPageToken) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<StartPageToken> setQuotaUser2(String str) {
                 return (GetStartPageToken) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<StartPageToken> setUploadType2(String str) {
                 return (GetStartPageToken) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<StartPageToken> setUploadProtocol2(String str) {
                 return (GetStartPageToken) super.setUploadProtocol2(str);
             }
@@ -657,67 +657,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<ChangeList> set$Xgafv2(String str) {
                 return (List) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<ChangeList> setAccessToken2(String str) {
                 return (List) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<ChangeList> setAlt2(String str) {
                 return (List) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<ChangeList> setCallback2(String str) {
                 return (List) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<ChangeList> setFields2(String str) {
                 return (List) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<ChangeList> setKey2(String str) {
                 return (List) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<ChangeList> setOauthToken2(String str) {
                 return (List) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<ChangeList> setPrettyPrint2(Boolean bool) {
                 return (List) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<ChangeList> setQuotaUser2(String str) {
                 return (List) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<ChangeList> setUploadType2(String str) {
                 return (List) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<ChangeList> setUploadProtocol2(String str) {
                 return (List) super.setUploadProtocol2(str);
             }
@@ -967,67 +967,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Channel> set$Xgafv2(String str) {
                 return (Watch) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Channel> setAccessToken2(String str) {
                 return (Watch) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Channel> setAlt2(String str) {
                 return (Watch) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Channel> setCallback2(String str) {
                 return (Watch) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Channel> setFields2(String str) {
                 return (Watch) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Channel> setKey2(String str) {
                 return (Watch) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Channel> setOauthToken2(String str) {
                 return (Watch) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Channel> setPrettyPrint2(Boolean bool) {
                 return (Watch) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Channel> setQuotaUser2(String str) {
                 return (Watch) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Channel> setUploadType2(String str) {
                 return (Watch) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Channel> setUploadProtocol2(String str) {
                 return (Watch) super.setUploadProtocol2(str);
             }
@@ -1243,67 +1243,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Void> set$Xgafv2(String str) {
                 return (Stop) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Void> setAccessToken2(String str) {
                 return (Stop) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Void> setAlt2(String str) {
                 return (Stop) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Void> setCallback2(String str) {
                 return (Stop) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Void> setFields2(String str) {
                 return (Stop) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Void> setKey2(String str) {
                 return (Stop) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Void> setOauthToken2(String str) {
                 return (Stop) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Void> setPrettyPrint2(Boolean bool) {
                 return (Stop) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Void> setQuotaUser2(String str) {
                 return (Stop) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Void> setUploadType2(String str) {
                 return (Stop) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Void> setUploadProtocol2(String str) {
                 return (Stop) super.setUploadProtocol2(str);
             }
@@ -1343,67 +1343,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Comment> set$Xgafv2(String str) {
                 return (Create) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Comment> setAccessToken2(String str) {
                 return (Create) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Comment> setAlt2(String str) {
                 return (Create) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Comment> setCallback2(String str) {
                 return (Create) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Comment> setFields2(String str) {
                 return (Create) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Comment> setKey2(String str) {
                 return (Create) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Comment> setOauthToken2(String str) {
                 return (Create) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Comment> setPrettyPrint2(Boolean bool) {
                 return (Create) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Comment> setQuotaUser2(String str) {
                 return (Create) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Comment> setUploadType2(String str) {
                 return (Create) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Comment> setUploadProtocol2(String str) {
                 return (Create) super.setUploadProtocol2(str);
             }
@@ -1445,67 +1445,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Void> set$Xgafv2(String str) {
                 return (Delete) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Void> setAccessToken2(String str) {
                 return (Delete) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Void> setAlt2(String str) {
                 return (Delete) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Void> setCallback2(String str) {
                 return (Delete) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Void> setFields2(String str) {
                 return (Delete) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Void> setKey2(String str) {
                 return (Delete) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Void> setOauthToken2(String str) {
                 return (Delete) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Void> setPrettyPrint2(Boolean bool) {
                 return (Delete) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Void> setQuotaUser2(String str) {
                 return (Delete) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Void> setUploadType2(String str) {
                 return (Delete) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Void> setUploadProtocol2(String str) {
                 return (Delete) super.setUploadProtocol2(str);
             }
@@ -1569,67 +1569,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Comment> set$Xgafv2(String str) {
                 return (Get) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Comment> setAccessToken2(String str) {
                 return (Get) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Comment> setAlt2(String str) {
                 return (Get) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Comment> setCallback2(String str) {
                 return (Get) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Comment> setFields2(String str) {
                 return (Get) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Comment> setKey2(String str) {
                 return (Get) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Comment> setOauthToken2(String str) {
                 return (Get) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Comment> setPrettyPrint2(Boolean bool) {
                 return (Get) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Comment> setQuotaUser2(String str) {
                 return (Get) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Comment> setUploadType2(String str) {
                 return (Get) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Comment> setUploadProtocol2(String str) {
                 return (Get) super.setUploadProtocol2(str);
             }
@@ -1715,67 +1715,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<CommentList> set$Xgafv2(String str) {
                 return (List) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<CommentList> setAccessToken2(String str) {
                 return (List) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<CommentList> setAlt2(String str) {
                 return (List) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<CommentList> setCallback2(String str) {
                 return (List) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<CommentList> setFields2(String str) {
                 return (List) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<CommentList> setKey2(String str) {
                 return (List) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<CommentList> setOauthToken2(String str) {
                 return (List) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<CommentList> setPrettyPrint2(Boolean bool) {
                 return (List) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<CommentList> setQuotaUser2(String str) {
                 return (List) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<CommentList> setUploadType2(String str) {
                 return (List) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<CommentList> setUploadProtocol2(String str) {
                 return (List) super.setUploadProtocol2(str);
             }
@@ -1863,67 +1863,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Comment> set$Xgafv2(String str) {
                 return (Update) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Comment> setAccessToken2(String str) {
                 return (Update) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Comment> setAlt2(String str) {
                 return (Update) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Comment> setCallback2(String str) {
                 return (Update) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Comment> setFields2(String str) {
                 return (Update) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Comment> setKey2(String str) {
                 return (Update) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Comment> setOauthToken2(String str) {
                 return (Update) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Comment> setPrettyPrint2(Boolean bool) {
                 return (Update) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Comment> setQuotaUser2(String str) {
                 return (Update) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Comment> setUploadType2(String str) {
                 return (Update) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Comment> setUploadProtocol2(String str) {
                 return (Update) super.setUploadProtocol2(str);
             }
@@ -1979,67 +1979,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<com.google.api.services.drive.model.Drive> set$Xgafv2(String str) {
                 return (Create) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<com.google.api.services.drive.model.Drive> setAccessToken2(String str) {
                 return (Create) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<com.google.api.services.drive.model.Drive> setAlt2(String str) {
                 return (Create) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<com.google.api.services.drive.model.Drive> setCallback2(String str) {
                 return (Create) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<com.google.api.services.drive.model.Drive> setFields2(String str) {
                 return (Create) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<com.google.api.services.drive.model.Drive> setKey2(String str) {
                 return (Create) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<com.google.api.services.drive.model.Drive> setOauthToken2(String str) {
                 return (Create) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<com.google.api.services.drive.model.Drive> setPrettyPrint2(Boolean bool) {
                 return (Create) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<com.google.api.services.drive.model.Drive> setQuotaUser2(String str) {
                 return (Create) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<com.google.api.services.drive.model.Drive> setUploadType2(String str) {
                 return (Create) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<com.google.api.services.drive.model.Drive> setUploadProtocol2(String str) {
                 return (Create) super.setUploadProtocol2(str);
             }
@@ -2083,67 +2083,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Void> set$Xgafv2(String str) {
                 return (Delete) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Void> setAccessToken2(String str) {
                 return (Delete) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Void> setAlt2(String str) {
                 return (Delete) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Void> setCallback2(String str) {
                 return (Delete) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Void> setFields2(String str) {
                 return (Delete) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Void> setKey2(String str) {
                 return (Delete) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Void> setOauthToken2(String str) {
                 return (Delete) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Void> setPrettyPrint2(Boolean bool) {
                 return (Delete) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Void> setQuotaUser2(String str) {
                 return (Delete) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Void> setUploadType2(String str) {
                 return (Delete) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Void> setUploadProtocol2(String str) {
                 return (Delete) super.setUploadProtocol2(str);
             }
@@ -2228,67 +2228,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<com.google.api.services.drive.model.Drive> set$Xgafv2(String str) {
                 return (Get) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<com.google.api.services.drive.model.Drive> setAccessToken2(String str) {
                 return (Get) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<com.google.api.services.drive.model.Drive> setAlt2(String str) {
                 return (Get) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<com.google.api.services.drive.model.Drive> setCallback2(String str) {
                 return (Get) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<com.google.api.services.drive.model.Drive> setFields2(String str) {
                 return (Get) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<com.google.api.services.drive.model.Drive> setKey2(String str) {
                 return (Get) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<com.google.api.services.drive.model.Drive> setOauthToken2(String str) {
                 return (Get) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<com.google.api.services.drive.model.Drive> setPrettyPrint2(Boolean bool) {
                 return (Get) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<com.google.api.services.drive.model.Drive> setQuotaUser2(String str) {
                 return (Get) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<com.google.api.services.drive.model.Drive> setUploadType2(String str) {
                 return (Get) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<com.google.api.services.drive.model.Drive> setUploadProtocol2(String str) {
                 return (Get) super.setUploadProtocol2(str);
             }
@@ -2343,67 +2343,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<com.google.api.services.drive.model.Drive> set$Xgafv2(String str) {
                 return (Hide) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<com.google.api.services.drive.model.Drive> setAccessToken2(String str) {
                 return (Hide) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<com.google.api.services.drive.model.Drive> setAlt2(String str) {
                 return (Hide) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<com.google.api.services.drive.model.Drive> setCallback2(String str) {
                 return (Hide) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<com.google.api.services.drive.model.Drive> setFields2(String str) {
                 return (Hide) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<com.google.api.services.drive.model.Drive> setKey2(String str) {
                 return (Hide) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<com.google.api.services.drive.model.Drive> setOauthToken2(String str) {
                 return (Hide) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<com.google.api.services.drive.model.Drive> setPrettyPrint2(Boolean bool) {
                 return (Hide) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<com.google.api.services.drive.model.Drive> setQuotaUser2(String str) {
                 return (Hide) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<com.google.api.services.drive.model.Drive> setUploadType2(String str) {
                 return (Hide) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<com.google.api.services.drive.model.Drive> setUploadProtocol2(String str) {
                 return (Hide) super.setUploadProtocol2(str);
             }
@@ -2459,67 +2459,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<DriveList> set$Xgafv2(String str) {
                 return (List) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<DriveList> setAccessToken2(String str) {
                 return (List) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<DriveList> setAlt2(String str) {
                 return (List) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<DriveList> setCallback2(String str) {
                 return (List) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<DriveList> setFields2(String str) {
                 return (List) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<DriveList> setKey2(String str) {
                 return (List) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<DriveList> setOauthToken2(String str) {
                 return (List) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<DriveList> setPrettyPrint2(Boolean bool) {
                 return (List) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<DriveList> setQuotaUser2(String str) {
                 return (List) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<DriveList> setUploadType2(String str) {
                 return (List) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<DriveList> setUploadProtocol2(String str) {
                 return (List) super.setUploadProtocol2(str);
             }
@@ -2592,67 +2592,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<com.google.api.services.drive.model.Drive> set$Xgafv2(String str) {
                 return (Unhide) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<com.google.api.services.drive.model.Drive> setAccessToken2(String str) {
                 return (Unhide) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<com.google.api.services.drive.model.Drive> setAlt2(String str) {
                 return (Unhide) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<com.google.api.services.drive.model.Drive> setCallback2(String str) {
                 return (Unhide) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<com.google.api.services.drive.model.Drive> setFields2(String str) {
                 return (Unhide) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<com.google.api.services.drive.model.Drive> setKey2(String str) {
                 return (Unhide) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<com.google.api.services.drive.model.Drive> setOauthToken2(String str) {
                 return (Unhide) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<com.google.api.services.drive.model.Drive> setPrettyPrint2(Boolean bool) {
                 return (Unhide) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<com.google.api.services.drive.model.Drive> setQuotaUser2(String str) {
                 return (Unhide) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<com.google.api.services.drive.model.Drive> setUploadType2(String str) {
                 return (Unhide) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<com.google.api.services.drive.model.Drive> setUploadProtocol2(String str) {
                 return (Unhide) super.setUploadProtocol2(str);
             }
@@ -2693,67 +2693,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<com.google.api.services.drive.model.Drive> set$Xgafv2(String str) {
                 return (Update) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<com.google.api.services.drive.model.Drive> setAccessToken2(String str) {
                 return (Update) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<com.google.api.services.drive.model.Drive> setAlt2(String str) {
                 return (Update) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<com.google.api.services.drive.model.Drive> setCallback2(String str) {
                 return (Update) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<com.google.api.services.drive.model.Drive> setFields2(String str) {
                 return (Update) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<com.google.api.services.drive.model.Drive> setKey2(String str) {
                 return (Update) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<com.google.api.services.drive.model.Drive> setOauthToken2(String str) {
                 return (Update) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<com.google.api.services.drive.model.Drive> setPrettyPrint2(Boolean bool) {
                 return (Update) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<com.google.api.services.drive.model.Drive> setQuotaUser2(String str) {
                 return (Update) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<com.google.api.services.drive.model.Drive> setUploadType2(String str) {
                 return (Update) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<com.google.api.services.drive.model.Drive> setUploadProtocol2(String str) {
                 return (Update) super.setUploadProtocol2(str);
             }
@@ -2841,67 +2841,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<File> set$Xgafv2(String str) {
                 return (Copy) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<File> setAccessToken2(String str) {
                 return (Copy) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<File> setAlt2(String str) {
                 return (Copy) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<File> setCallback2(String str) {
                 return (Copy) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<File> setFields2(String str) {
                 return (Copy) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<File> setKey2(String str) {
                 return (Copy) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<File> setOauthToken2(String str) {
                 return (Copy) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<File> setPrettyPrint2(Boolean bool) {
                 return (Copy) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<File> setQuotaUser2(String str) {
                 return (Copy) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<File> setUploadType2(String str) {
                 return (Copy) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<File> setUploadProtocol2(String str) {
                 return (Copy) super.setUploadProtocol2(str);
             }
@@ -3086,67 +3086,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<File> set$Xgafv2(String str) {
                 return (Create) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<File> setAccessToken2(String str) {
                 return (Create) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<File> setAlt2(String str) {
                 return (Create) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<File> setCallback2(String str) {
                 return (Create) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<File> setFields2(String str) {
                 return (Create) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<File> setKey2(String str) {
                 return (Create) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<File> setOauthToken2(String str) {
                 return (Create) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<File> setPrettyPrint2(Boolean bool) {
                 return (Create) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<File> setQuotaUser2(String str) {
                 return (Create) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<File> setUploadType2(String str) {
                 return (Create) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<File> setUploadProtocol2(String str) {
                 return (Create) super.setUploadProtocol2(str);
             }
@@ -3313,67 +3313,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Void> set$Xgafv2(String str) {
                 return (Delete) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Void> setAccessToken2(String str) {
                 return (Delete) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Void> setAlt2(String str) {
                 return (Delete) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Void> setCallback2(String str) {
                 return (Delete) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Void> setFields2(String str) {
                 return (Delete) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Void> setKey2(String str) {
                 return (Delete) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Void> setOauthToken2(String str) {
                 return (Delete) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Void> setPrettyPrint2(Boolean bool) {
                 return (Delete) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Void> setQuotaUser2(String str) {
                 return (Delete) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Void> setUploadType2(String str) {
                 return (Delete) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Void> setUploadProtocol2(String str) {
                 return (Delete) super.setUploadProtocol2(str);
             }
@@ -3464,67 +3464,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Void> set$Xgafv2(String str) {
                 return (EmptyTrash) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Void> setAccessToken2(String str) {
                 return (EmptyTrash) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Void> setAlt2(String str) {
                 return (EmptyTrash) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Void> setCallback2(String str) {
                 return (EmptyTrash) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Void> setFields2(String str) {
                 return (EmptyTrash) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Void> setKey2(String str) {
                 return (EmptyTrash) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Void> setOauthToken2(String str) {
                 return (EmptyTrash) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Void> setPrettyPrint2(Boolean bool) {
                 return (EmptyTrash) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Void> setQuotaUser2(String str) {
                 return (EmptyTrash) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Void> setUploadType2(String str) {
                 return (EmptyTrash) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Void> setUploadProtocol2(String str) {
                 return (EmptyTrash) super.setUploadProtocol2(str);
             }
@@ -3614,67 +3614,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Void> set$Xgafv2(String str) {
                 return (Export) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Void> setAccessToken2(String str) {
                 return (Export) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Void> setAlt2(String str) {
                 return (Export) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Void> setCallback2(String str) {
                 return (Export) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Void> setFields2(String str) {
                 return (Export) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Void> setKey2(String str) {
                 return (Export) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Void> setOauthToken2(String str) {
                 return (Export) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Void> setPrettyPrint2(Boolean bool) {
                 return (Export) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Void> setQuotaUser2(String str) {
                 return (Export) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Void> setUploadType2(String str) {
                 return (Export) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Void> setUploadProtocol2(String str) {
                 return (Export) super.setUploadProtocol2(str);
             }
@@ -3736,67 +3736,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<GeneratedIds> set$Xgafv2(String str) {
                 return (GenerateIds) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<GeneratedIds> setAccessToken2(String str) {
                 return (GenerateIds) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<GeneratedIds> setAlt2(String str) {
                 return (GenerateIds) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<GeneratedIds> setCallback2(String str) {
                 return (GenerateIds) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<GeneratedIds> setFields2(String str) {
                 return (GenerateIds) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<GeneratedIds> setKey2(String str) {
                 return (GenerateIds) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<GeneratedIds> setOauthToken2(String str) {
                 return (GenerateIds) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<GeneratedIds> setPrettyPrint2(Boolean bool) {
                 return (GenerateIds) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<GeneratedIds> setQuotaUser2(String str) {
                 return (GenerateIds) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<GeneratedIds> setUploadType2(String str) {
                 return (GenerateIds) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<GeneratedIds> setUploadProtocol2(String str) {
                 return (GenerateIds) super.setUploadProtocol2(str);
             }
@@ -3898,67 +3898,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<File> set$Xgafv2(String str) {
                 return (Get) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<File> setAccessToken2(String str) {
                 return (Get) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<File> setAlt2(String str) {
                 return (Get) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<File> setCallback2(String str) {
                 return (Get) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<File> setFields2(String str) {
                 return (Get) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<File> setKey2(String str) {
                 return (Get) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<File> setOauthToken2(String str) {
                 return (Get) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<File> setPrettyPrint2(Boolean bool) {
                 return (Get) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<File> setQuotaUser2(String str) {
                 return (Get) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<File> setUploadType2(String str) {
                 return (Get) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<File> setUploadProtocol2(String str) {
                 return (Get) super.setUploadProtocol2(str);
             }
@@ -4116,67 +4116,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<FileList> set$Xgafv2(String str) {
                 return (List) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<FileList> setAccessToken2(String str) {
                 return (List) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<FileList> setAlt2(String str) {
                 return (List) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<FileList> setCallback2(String str) {
                 return (List) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<FileList> setFields2(String str) {
                 return (List) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<FileList> setKey2(String str) {
                 return (List) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<FileList> setOauthToken2(String str) {
                 return (List) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<FileList> setPrettyPrint2(Boolean bool) {
                 return (List) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<FileList> setQuotaUser2(String str) {
                 return (List) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<FileList> setUploadType2(String str) {
                 return (List) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<FileList> setUploadProtocol2(String str) {
                 return (List) super.setUploadProtocol2(str);
             }
@@ -4388,67 +4388,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<LabelList> set$Xgafv2(String str) {
                 return (ListLabels) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<LabelList> setAccessToken2(String str) {
                 return (ListLabels) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<LabelList> setAlt2(String str) {
                 return (ListLabels) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<LabelList> setCallback2(String str) {
                 return (ListLabels) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<LabelList> setFields2(String str) {
                 return (ListLabels) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<LabelList> setKey2(String str) {
                 return (ListLabels) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<LabelList> setOauthToken2(String str) {
                 return (ListLabels) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<LabelList> setPrettyPrint2(Boolean bool) {
                 return (ListLabels) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<LabelList> setQuotaUser2(String str) {
                 return (ListLabels) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<LabelList> setUploadType2(String str) {
                 return (ListLabels) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<LabelList> setUploadProtocol2(String str) {
                 return (ListLabels) super.setUploadProtocol2(str);
             }
@@ -4504,67 +4504,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<ModifyLabelsResponse> set$Xgafv2(String str) {
                 return (ModifyLabels) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<ModifyLabelsResponse> setAccessToken2(String str) {
                 return (ModifyLabels) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<ModifyLabelsResponse> setAlt2(String str) {
                 return (ModifyLabels) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<ModifyLabelsResponse> setCallback2(String str) {
                 return (ModifyLabels) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<ModifyLabelsResponse> setFields2(String str) {
                 return (ModifyLabels) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<ModifyLabelsResponse> setKey2(String str) {
                 return (ModifyLabels) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<ModifyLabelsResponse> setOauthToken2(String str) {
                 return (ModifyLabels) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<ModifyLabelsResponse> setPrettyPrint2(Boolean bool) {
                 return (ModifyLabels) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<ModifyLabelsResponse> setQuotaUser2(String str) {
                 return (ModifyLabels) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<ModifyLabelsResponse> setUploadType2(String str) {
                 return (ModifyLabels) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<ModifyLabelsResponse> setUploadProtocol2(String str) {
                 return (ModifyLabels) super.setUploadProtocol2(str);
             }
@@ -4645,67 +4645,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<File> set$Xgafv2(String str) {
                 return (Update) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<File> setAccessToken2(String str) {
                 return (Update) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<File> setAlt2(String str) {
                 return (Update) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<File> setCallback2(String str) {
                 return (Update) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<File> setFields2(String str) {
                 return (Update) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<File> setKey2(String str) {
                 return (Update) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<File> setOauthToken2(String str) {
                 return (Update) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<File> setPrettyPrint2(Boolean bool) {
                 return (Update) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<File> setQuotaUser2(String str) {
                 return (Update) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<File> setUploadType2(String str) {
                 return (Update) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<File> setUploadProtocol2(String str) {
                 return (Update) super.setUploadProtocol2(str);
             }
@@ -4888,67 +4888,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Channel> set$Xgafv2(String str) {
                 return (Watch) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Channel> setAccessToken2(String str) {
                 return (Watch) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Channel> setAlt2(String str) {
                 return (Watch) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Channel> setCallback2(String str) {
                 return (Watch) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Channel> setFields2(String str) {
                 return (Watch) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Channel> setKey2(String str) {
                 return (Watch) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Channel> setOauthToken2(String str) {
                 return (Watch) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Channel> setPrettyPrint2(Boolean bool) {
                 return (Watch) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Channel> setQuotaUser2(String str) {
                 return (Watch) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Channel> setUploadType2(String str) {
                 return (Watch) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Channel> setUploadProtocol2(String str) {
                 return (Watch) super.setUploadProtocol2(str);
             }
@@ -5092,67 +5092,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Permission> set$Xgafv2(String str) {
                 return (Create) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Permission> setAccessToken2(String str) {
                 return (Create) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Permission> setAlt2(String str) {
                 return (Create) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Permission> setCallback2(String str) {
                 return (Create) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Permission> setFields2(String str) {
                 return (Create) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Permission> setKey2(String str) {
                 return (Create) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Permission> setOauthToken2(String str) {
                 return (Create) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Permission> setPrettyPrint2(Boolean bool) {
                 return (Create) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Permission> setQuotaUser2(String str) {
                 return (Create) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Permission> setUploadType2(String str) {
                 return (Create) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Permission> setUploadProtocol2(String str) {
                 return (Create) super.setUploadProtocol2(str);
             }
@@ -5323,67 +5323,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Void> set$Xgafv2(String str) {
                 return (Delete) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Void> setAccessToken2(String str) {
                 return (Delete) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Void> setAlt2(String str) {
                 return (Delete) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Void> setCallback2(String str) {
                 return (Delete) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Void> setFields2(String str) {
                 return (Delete) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Void> setKey2(String str) {
                 return (Delete) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Void> setOauthToken2(String str) {
                 return (Delete) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Void> setPrettyPrint2(Boolean bool) {
                 return (Delete) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Void> setQuotaUser2(String str) {
                 return (Delete) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Void> setUploadType2(String str) {
                 return (Delete) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Void> setUploadProtocol2(String str) {
                 return (Delete) super.setUploadProtocol2(str);
             }
@@ -5504,67 +5504,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Permission> set$Xgafv2(String str) {
                 return (Get) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Permission> setAccessToken2(String str) {
                 return (Get) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Permission> setAlt2(String str) {
                 return (Get) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Permission> setCallback2(String str) {
                 return (Get) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Permission> setFields2(String str) {
                 return (Get) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Permission> setKey2(String str) {
                 return (Get) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Permission> setOauthToken2(String str) {
                 return (Get) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Permission> setPrettyPrint2(Boolean bool) {
                 return (Get) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Permission> setQuotaUser2(String str) {
                 return (Get) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Permission> setUploadType2(String str) {
                 return (Get) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Permission> setUploadProtocol2(String str) {
                 return (Get) super.setUploadProtocol2(str);
             }
@@ -5690,67 +5690,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<PermissionList> set$Xgafv2(String str) {
                 return (List) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<PermissionList> setAccessToken2(String str) {
                 return (List) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<PermissionList> setAlt2(String str) {
                 return (List) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<PermissionList> setCallback2(String str) {
                 return (List) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<PermissionList> setFields2(String str) {
                 return (List) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<PermissionList> setKey2(String str) {
                 return (List) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<PermissionList> setOauthToken2(String str) {
                 return (List) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<PermissionList> setPrettyPrint2(Boolean bool) {
                 return (List) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<PermissionList> setQuotaUser2(String str) {
                 return (List) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<PermissionList> setUploadType2(String str) {
                 return (List) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<PermissionList> setUploadProtocol2(String str) {
                 return (List) super.setUploadProtocol2(str);
             }
@@ -5885,67 +5885,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Permission> set$Xgafv2(String str) {
                 return (Update) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Permission> setAccessToken2(String str) {
                 return (Update) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Permission> setAlt2(String str) {
                 return (Update) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Permission> setCallback2(String str) {
                 return (Update) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Permission> setFields2(String str) {
                 return (Update) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Permission> setKey2(String str) {
                 return (Update) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Permission> setOauthToken2(String str) {
                 return (Update) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Permission> setPrettyPrint2(Boolean bool) {
                 return (Update) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Permission> setQuotaUser2(String str) {
                 return (Update) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Permission> setUploadType2(String str) {
                 return (Update) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Permission> setUploadProtocol2(String str) {
                 return (Update) super.setUploadProtocol2(str);
             }
@@ -6090,67 +6090,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Reply> set$Xgafv2(String str) {
                 return (Create) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Reply> setAccessToken2(String str) {
                 return (Create) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Reply> setAlt2(String str) {
                 return (Create) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Reply> setCallback2(String str) {
                 return (Create) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Reply> setFields2(String str) {
                 return (Create) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Reply> setKey2(String str) {
                 return (Create) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Reply> setOauthToken2(String str) {
                 return (Create) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Reply> setPrettyPrint2(Boolean bool) {
                 return (Create) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Reply> setQuotaUser2(String str) {
                 return (Create) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Reply> setUploadType2(String str) {
                 return (Create) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Reply> setUploadProtocol2(String str) {
                 return (Create) super.setUploadProtocol2(str);
             }
@@ -6205,67 +6205,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Void> set$Xgafv2(String str) {
                 return (Delete) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Void> setAccessToken2(String str) {
                 return (Delete) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Void> setAlt2(String str) {
                 return (Delete) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Void> setCallback2(String str) {
                 return (Delete) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Void> setFields2(String str) {
                 return (Delete) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Void> setKey2(String str) {
                 return (Delete) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Void> setOauthToken2(String str) {
                 return (Delete) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Void> setPrettyPrint2(Boolean bool) {
                 return (Delete) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Void> setQuotaUser2(String str) {
                 return (Delete) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Void> setUploadType2(String str) {
                 return (Delete) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Void> setUploadProtocol2(String str) {
                 return (Delete) super.setUploadProtocol2(str);
             }
@@ -6342,67 +6342,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Reply> set$Xgafv2(String str) {
                 return (Get) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Reply> setAccessToken2(String str) {
                 return (Get) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Reply> setAlt2(String str) {
                 return (Get) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Reply> setCallback2(String str) {
                 return (Get) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Reply> setFields2(String str) {
                 return (Get) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Reply> setKey2(String str) {
                 return (Get) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Reply> setOauthToken2(String str) {
                 return (Get) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Reply> setPrettyPrint2(Boolean bool) {
                 return (Get) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Reply> setQuotaUser2(String str) {
                 return (Get) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Reply> setUploadType2(String str) {
                 return (Get) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Reply> setUploadProtocol2(String str) {
                 return (Get) super.setUploadProtocol2(str);
             }
@@ -6498,67 +6498,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<ReplyList> set$Xgafv2(String str) {
                 return (List) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<ReplyList> setAccessToken2(String str) {
                 return (List) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<ReplyList> setAlt2(String str) {
                 return (List) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<ReplyList> setCallback2(String str) {
                 return (List) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<ReplyList> setFields2(String str) {
                 return (List) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<ReplyList> setKey2(String str) {
                 return (List) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<ReplyList> setOauthToken2(String str) {
                 return (List) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<ReplyList> setPrettyPrint2(Boolean bool) {
                 return (List) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<ReplyList> setQuotaUser2(String str) {
                 return (List) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<ReplyList> setUploadType2(String str) {
                 return (List) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<ReplyList> setUploadProtocol2(String str) {
                 return (List) super.setUploadProtocol2(str);
             }
@@ -6650,67 +6650,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Reply> set$Xgafv2(String str) {
                 return (Update) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Reply> setAccessToken2(String str) {
                 return (Update) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Reply> setAlt2(String str) {
                 return (Update) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Reply> setCallback2(String str) {
                 return (Update) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Reply> setFields2(String str) {
                 return (Update) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Reply> setKey2(String str) {
                 return (Update) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Reply> setOauthToken2(String str) {
                 return (Update) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Reply> setPrettyPrint2(Boolean bool) {
                 return (Update) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Reply> setQuotaUser2(String str) {
                 return (Update) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Reply> setUploadType2(String str) {
                 return (Update) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Reply> setUploadProtocol2(String str) {
                 return (Update) super.setUploadProtocol2(str);
             }
@@ -6779,67 +6779,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Void> set$Xgafv2(String str) {
                 return (Delete) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Void> setAccessToken2(String str) {
                 return (Delete) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Void> setAlt2(String str) {
                 return (Delete) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Void> setCallback2(String str) {
                 return (Delete) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Void> setFields2(String str) {
                 return (Delete) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Void> setKey2(String str) {
                 return (Delete) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Void> setOauthToken2(String str) {
                 return (Delete) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Void> setPrettyPrint2(Boolean bool) {
                 return (Delete) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Void> setQuotaUser2(String str) {
                 return (Delete) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Void> setUploadType2(String str) {
                 return (Delete) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Void> setUploadProtocol2(String str) {
                 return (Delete) super.setUploadProtocol2(str);
             }
@@ -6924,67 +6924,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Revision> set$Xgafv2(String str) {
                 return (Get) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Revision> setAccessToken2(String str) {
                 return (Get) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Revision> setAlt2(String str) {
                 return (Get) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Revision> setCallback2(String str) {
                 return (Get) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Revision> setFields2(String str) {
                 return (Get) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Revision> setKey2(String str) {
                 return (Get) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Revision> setOauthToken2(String str) {
                 return (Get) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Revision> setPrettyPrint2(Boolean bool) {
                 return (Get) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Revision> setQuotaUser2(String str) {
                 return (Get) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Revision> setUploadType2(String str) {
                 return (Get) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Revision> setUploadProtocol2(String str) {
                 return (Get) super.setUploadProtocol2(str);
             }
@@ -7064,67 +7064,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<RevisionList> set$Xgafv2(String str) {
                 return (List) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<RevisionList> setAccessToken2(String str) {
                 return (List) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<RevisionList> setAlt2(String str) {
                 return (List) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<RevisionList> setCallback2(String str) {
                 return (List) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<RevisionList> setFields2(String str) {
                 return (List) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<RevisionList> setKey2(String str) {
                 return (List) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<RevisionList> setOauthToken2(String str) {
                 return (List) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<RevisionList> setPrettyPrint2(Boolean bool) {
                 return (List) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<RevisionList> setQuotaUser2(String str) {
                 return (List) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<RevisionList> setUploadType2(String str) {
                 return (List) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<RevisionList> setUploadProtocol2(String str) {
                 return (List) super.setUploadProtocol2(str);
             }
@@ -7184,67 +7184,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Revision> set$Xgafv2(String str) {
                 return (Update) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Revision> setAccessToken2(String str) {
                 return (Update) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Revision> setAlt2(String str) {
                 return (Update) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Revision> setCallback2(String str) {
                 return (Update) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Revision> setFields2(String str) {
                 return (Update) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Revision> setKey2(String str) {
                 return (Update) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Revision> setOauthToken2(String str) {
                 return (Update) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Revision> setPrettyPrint2(Boolean bool) {
                 return (Update) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Revision> setQuotaUser2(String str) {
                 return (Update) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Revision> setUploadType2(String str) {
                 return (Update) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Revision> setUploadProtocol2(String str) {
                 return (Update) super.setUploadProtocol2(str);
             }
@@ -7300,67 +7300,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<TeamDrive> set$Xgafv2(String str) {
                 return (Create) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<TeamDrive> setAccessToken2(String str) {
                 return (Create) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<TeamDrive> setAlt2(String str) {
                 return (Create) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<TeamDrive> setCallback2(String str) {
                 return (Create) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<TeamDrive> setFields2(String str) {
                 return (Create) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<TeamDrive> setKey2(String str) {
                 return (Create) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<TeamDrive> setOauthToken2(String str) {
                 return (Create) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<TeamDrive> setPrettyPrint2(Boolean bool) {
                 return (Create) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<TeamDrive> setQuotaUser2(String str) {
                 return (Create) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<TeamDrive> setUploadType2(String str) {
                 return (Create) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<TeamDrive> setUploadProtocol2(String str) {
                 return (Create) super.setUploadProtocol2(str);
             }
@@ -7398,67 +7398,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<Void> set$Xgafv2(String str) {
                 return (Delete) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<Void> setAccessToken2(String str) {
                 return (Delete) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<Void> setAlt2(String str) {
                 return (Delete) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<Void> setCallback2(String str) {
                 return (Delete) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<Void> setFields2(String str) {
                 return (Delete) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<Void> setKey2(String str) {
                 return (Delete) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<Void> setOauthToken2(String str) {
                 return (Delete) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<Void> setPrettyPrint2(Boolean bool) {
                 return (Delete) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<Void> setQuotaUser2(String str) {
                 return (Delete) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<Void> setUploadType2(String str) {
                 return (Delete) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<Void> setUploadProtocol2(String str) {
                 return (Delete) super.setUploadProtocol2(str);
             }
@@ -7509,67 +7509,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<TeamDrive> set$Xgafv2(String str) {
                 return (Get) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<TeamDrive> setAccessToken2(String str) {
                 return (Get) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<TeamDrive> setAlt2(String str) {
                 return (Get) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<TeamDrive> setCallback2(String str) {
                 return (Get) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<TeamDrive> setFields2(String str) {
                 return (Get) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<TeamDrive> setKey2(String str) {
                 return (Get) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<TeamDrive> setOauthToken2(String str) {
                 return (Get) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<TeamDrive> setPrettyPrint2(Boolean bool) {
                 return (Get) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<TeamDrive> setQuotaUser2(String str) {
                 return (Get) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<TeamDrive> setUploadType2(String str) {
                 return (Get) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<TeamDrive> setUploadProtocol2(String str) {
                 return (Get) super.setUploadProtocol2(str);
             }
@@ -7642,67 +7642,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<TeamDriveList> set$Xgafv2(String str) {
                 return (List) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<TeamDriveList> setAccessToken2(String str) {
                 return (List) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<TeamDriveList> setAlt2(String str) {
                 return (List) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<TeamDriveList> setCallback2(String str) {
                 return (List) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<TeamDriveList> setFields2(String str) {
                 return (List) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<TeamDriveList> setKey2(String str) {
                 return (List) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<TeamDriveList> setOauthToken2(String str) {
                 return (List) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<TeamDriveList> setPrettyPrint2(Boolean bool) {
                 return (List) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<TeamDriveList> setQuotaUser2(String str) {
                 return (List) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<TeamDriveList> setUploadType2(String str) {
                 return (List) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<TeamDriveList> setUploadProtocol2(String str) {
                 return (List) super.setUploadProtocol2(str);
             }
@@ -7778,67 +7778,67 @@ public class Drive extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: set$Xgafv */
+            /* INFO: renamed from: set$Xgafv */
             public DriveRequest<TeamDrive> set$Xgafv2(String str) {
                 return (Update) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAccessToken */
+            /* INFO: renamed from: setAccessToken */
             public DriveRequest<TeamDrive> setAccessToken2(String str) {
                 return (Update) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setAlt */
+            /* INFO: renamed from: setAlt */
             public DriveRequest<TeamDrive> setAlt2(String str) {
                 return (Update) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setCallback */
+            /* INFO: renamed from: setCallback */
             public DriveRequest<TeamDrive> setCallback2(String str) {
                 return (Update) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setFields */
+            /* INFO: renamed from: setFields */
             public DriveRequest<TeamDrive> setFields2(String str) {
                 return (Update) super.setFields2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setKey */
+            /* INFO: renamed from: setKey */
             public DriveRequest<TeamDrive> setKey2(String str) {
                 return (Update) super.setKey2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setOauthToken */
+            /* INFO: renamed from: setOauthToken */
             public DriveRequest<TeamDrive> setOauthToken2(String str) {
                 return (Update) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setPrettyPrint */
+            /* INFO: renamed from: setPrettyPrint */
             public DriveRequest<TeamDrive> setPrettyPrint2(Boolean bool) {
                 return (Update) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setQuotaUser */
+            /* INFO: renamed from: setQuotaUser */
             public DriveRequest<TeamDrive> setQuotaUser2(String str) {
                 return (Update) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadType */
+            /* INFO: renamed from: setUploadType */
             public DriveRequest<TeamDrive> setUploadType2(String str) {
                 return (Update) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.drive.DriveRequest
-            /* JADX INFO: renamed from: setUploadProtocol */
+            /* INFO: renamed from: setUploadProtocol */
             public DriveRequest<TeamDrive> setUploadProtocol2(String str) {
                 return (Update) super.setUploadProtocol2(str);
             }

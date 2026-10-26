@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class JwtCredentials extends Credentials implements JwtProvider {
     private static final long CLOCK_SKEW = TimeUnit.MINUTES.toSeconds(5);
     private static final String JWT_ACCESS_PREFIX = "Bearer ";

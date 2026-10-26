@@ -26,7 +26,7 @@ import org.ietf.jgss.GSSManager;
 import org.ietf.jgss.GSSName;
 import org.ietf.jgss.Oid;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class GGSSchemeBase extends AuthSchemeBase {
     private final Base64 base64codec;
     private final Log log;
@@ -71,7 +71,7 @@ public abstract class GGSSchemeBase extends AuthSchemeBase {
         return generateGSSToken(bArr, oid, str, null);
     }
 
-    /* JADX INFO: Thrown type has an unknown type hierarchy: org.ietf.jgss.GSSException */
+    /* INFO: Thrown type has an unknown type hierarchy: org.ietf.jgss.GSSException */
     protected byte[] generateGSSToken(byte[] bArr, Oid oid, String str, Credentials credentials) throws GSSException {
         GSSManager manager = getManager();
         GSSContext gSSContextCreateGSSContext = createGSSContext(manager, oid, manager.createName("HTTP@" + str, GSSName.NT_HOSTBASED_SERVICE), credentials instanceof KerberosCredentials ? ((KerberosCredentials) credentials).getGSSCredential() : null);
@@ -99,7 +99,7 @@ public abstract class GGSSchemeBase extends AuthSchemeBase {
         return authenticate(credentials, httpRequest, null);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.auth.GGSSchemeBase$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.auth.GGSSchemeBase$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$org$apache$http$impl$auth$GGSSchemeBase$State;
 

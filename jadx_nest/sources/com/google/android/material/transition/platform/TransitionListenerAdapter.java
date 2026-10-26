@@ -2,7 +2,7 @@ package com.google.android.material.transition.platform;
 
 import android.transition.Transition;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class TransitionListenerAdapter implements Transition.TransitionListener {
     @Override // android.transition.Transition.TransitionListener
     public void onTransitionCancel(Transition transition) {

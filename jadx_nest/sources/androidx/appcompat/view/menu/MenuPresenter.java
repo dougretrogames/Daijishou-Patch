@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Parcelable;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface MenuPresenter {
 
     public interface Callback {

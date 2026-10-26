@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class RetroAchievementsDatabase_Impl extends RetroAchievementsDatabase {
     private volatile RetroAchievementsAchievementRecordDAO _retroAchievementsAchievementRecordDAO;
     private volatile RetroAchievementsCachedPlayableItemIdToGameIdSurjectionDAO _retroAchievementsCachedPlayableItemIdToGameIdSurjectionDAO;
@@ -30,7 +30,7 @@ public final class RetroAchievementsDatabase_Impl extends RetroAchievementsDatab
     private volatile RetroAchievementsUserProfileDAO _retroAchievementsUserProfileDAO;
     private volatile RetroAchievementsUserRankingDAO _retroAchievementsUserRankingDAO;
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsDatabase_Impl$1, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsDatabase_Impl$1, reason: invalid class name */
     class AnonymousClass1 extends RoomOpenHelper.Delegate {
         @Override // androidx.room.RoomOpenHelper.Delegate
         public void onPostMigrate(final SupportSQLiteDatabase db) {

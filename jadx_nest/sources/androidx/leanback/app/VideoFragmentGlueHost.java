@@ -3,7 +3,7 @@ package androidx.leanback.app;
 import android.view.SurfaceHolder;
 import androidx.leanback.media.SurfaceHolderGlueHost;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public class VideoFragmentGlueHost extends PlaybackFragmentGlueHost implements SurfaceHolderGlueHost {
     private final VideoFragment mFragment;

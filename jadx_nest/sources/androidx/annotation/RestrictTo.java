@@ -12,8 +12,8 @@ import kotlin.annotation.MustBeDocumented;
 import kotlin.enums.EnumEntries;
 import kotlin.enums.EnumEntriesKt;
 
-/* JADX INFO: compiled from: RestrictTo.jvm.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: RestrictTo.jvm.kt */
+/* INFO: loaded from: classes.dex */
 @Target({ElementType.ANNOTATION_TYPE, ElementType.TYPE, ElementType.METHOD, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.PACKAGE})
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.ANNOTATION_CLASS, AnnotationTarget.CLASS, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CONSTRUCTOR, AnnotationTarget.FIELD, AnnotationTarget.FILE})
 @Retention(RetentionPolicy.CLASS)
@@ -23,7 +23,7 @@ import kotlin.enums.EnumEntriesKt;
 @Documented
 public @interface RestrictTo {
 
-    /* JADX INFO: compiled from: RestrictTo.jvm.kt */
+    /* INFO: compiled from: RestrictTo.jvm.kt */
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\b\b\u0086\u0081\u0002\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006j\u0002\b\u0007j\u0002\b\b¨\u0006\t"}, d2 = {"Landroidx/annotation/RestrictTo$Scope;", "", "(Ljava/lang/String;I)V", "LIBRARY", "LIBRARY_GROUP", "LIBRARY_GROUP_PREFIX", "GROUP_ID", "TESTS", "SUBCLASSES", "annotation"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public enum Scope {
         LIBRARY,

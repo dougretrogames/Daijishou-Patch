@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RefComparator implements Comparator<Ref> {
     public static final RefComparator INSTANCE = new RefComparator();
 

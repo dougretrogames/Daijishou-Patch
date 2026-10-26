@@ -12,7 +12,7 @@ import org.apache.commons.collections4.Transformer;
 import org.apache.commons.collections4.functors.ConstantTransformer;
 import org.apache.commons.collections4.functors.FactoryTransformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultedMap<K, V> extends AbstractMapDecorator<K, V> implements Serializable {
     private static final long serialVersionUID = 19698628745827L;
     private final Transformer<? super K, ? extends V> value;

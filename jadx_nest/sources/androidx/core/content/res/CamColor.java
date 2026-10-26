@@ -2,7 +2,7 @@ package androidx.core.content.res;
 
 import androidx.core.graphics.ColorUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CamColor {
     private static final float CHROMA_SEARCH_ENDPOINT = 0.4f;
     private static final float DE_MAX = 1.0f;

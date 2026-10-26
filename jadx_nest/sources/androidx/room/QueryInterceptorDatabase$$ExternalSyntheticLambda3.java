@@ -1,7 +1,7 @@
 package androidx.room;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class QueryInterceptorDatabase$$ExternalSyntheticLambda3 implements Runnable {
     public final /* synthetic */ QueryInterceptorDatabase f$0;
     public final /* synthetic */ String f$1;

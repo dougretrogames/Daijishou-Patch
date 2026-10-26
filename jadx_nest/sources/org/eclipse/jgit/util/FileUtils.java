@@ -38,7 +38,7 @@ import org.eclipse.jgit.lib.Constants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileUtils {
     public static final int EMPTY_DIRECTORIES_ONLY = 16;
     public static final int IGNORE_ERRORS = 8;
@@ -149,8 +149,8 @@ public class FileUtils {
         rename(file, file2, StandardCopyOption.REPLACE_EXISTING);
     }
 
-    /* JADX WARN: Code duplicated, block: B:40:0x003d A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:42:0x000d A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:40:0x003d A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:42:0x000d A[SYNTHETIC] */
     public static void rename(File file, File file2, CopyOption... copyOptionArr) throws IOException {
         int i = FS.DETECTED.retryFailedLockFileCommit() ? 10 : 1;
         IOException e = null;

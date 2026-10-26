@@ -6,8 +6,8 @@ import com.google.android.gms.common.internal.Objects;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class AuthenticationExtensions extends AbstractSafeParcelable {
     public static final Parcelable.Creator<AuthenticationExtensions> CREATOR = new zzd();
     private final FidoAppIdExtension zza;
@@ -21,7 +21,7 @@ public class AuthenticationExtensions extends AbstractSafeParcelable {
     private final GoogleThirdPartyPaymentExtension zzi;
     private final zzai zzj;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static final class Builder {
         private FidoAppIdExtension zza;
         private UserVerificationMethodExtension zzb;

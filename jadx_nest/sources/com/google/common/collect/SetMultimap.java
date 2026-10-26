@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public interface SetMultimap<K, V> extends Multimap<K, V> {
     @Override // com.google.common.collect.Multimap, com.google.common.collect.ListMultimap

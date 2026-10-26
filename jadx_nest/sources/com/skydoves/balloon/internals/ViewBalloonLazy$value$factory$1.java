@@ -5,8 +5,8 @@ import kotlin.jvm.JvmClassMappingKt;
 import kotlin.jvm.internal.PropertyReference0Impl;
 import kotlin.reflect.KClass;
 
-/* JADX INFO: compiled from: ViewBalloonLazy.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ViewBalloonLazy.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
 /* synthetic */ class ViewBalloonLazy$value$factory$1 extends PropertyReference0Impl {
     ViewBalloonLazy$value$factory$1(Object obj) {

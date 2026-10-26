@@ -8,7 +8,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.transport.PackParser;
 import org.eclipse.jgit.util.sha1.SHA1;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class ObjectInserter implements AutoCloseable {
     private final SHA1 hasher = SHA1.newInstance();
     private byte[] tempBuffer;
@@ -97,7 +97,7 @@ public abstract class ObjectInserter implements AutoCloseable {
             return delegate().newPackParser(inputStream);
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.lib.ObjectInserter$Filter$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.lib.ObjectInserter$Filter$1, reason: invalid class name */
         class AnonymousClass1 extends ObjectReader.Filter {
             private final /* synthetic */ ObjectReader val$dr;
 

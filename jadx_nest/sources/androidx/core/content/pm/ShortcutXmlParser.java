@@ -16,7 +16,7 @@ import java.util.Set;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ShortcutXmlParser {
     private static final String ATTR_SHORTCUT_ID = "shortcutId";
     private static final Object GET_INSTANCE_LOCK = new Object();

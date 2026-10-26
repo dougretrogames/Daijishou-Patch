@@ -11,7 +11,7 @@ import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.util.References;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class ObjectBuilder {
     private static final byte[] hencoding = Constants.encodeASCII("encoding");
     private PersonIdent author;

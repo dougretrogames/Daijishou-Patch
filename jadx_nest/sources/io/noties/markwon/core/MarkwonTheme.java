@@ -9,7 +9,7 @@ import io.noties.markwon.utils.Dip;
 import java.util.Arrays;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class MarkwonTheme {
     protected static final int BLOCK_QUOTE_DEF_COLOR_ALPHA = 25;
     protected static final int CODE_DEF_BACKGROUND_COLOR_ALPHA = 25;

@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSmoothScroller;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class SmoothCalendarLayoutManager extends LinearLayoutManager {
     private static final float MILLISECONDS_PER_INCH = 100.0f;
 
@@ -14,7 +14,7 @@ class SmoothCalendarLayoutManager extends LinearLayoutManager {
         super(context, i, z);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.SmoothCalendarLayoutManager$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.SmoothCalendarLayoutManager$1, reason: invalid class name */
     class AnonymousClass1 extends LinearSmoothScroller {
         AnonymousClass1(Context context) {
             super(context);

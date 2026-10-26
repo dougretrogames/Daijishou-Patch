@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class RawDocumentFile extends DocumentFile {
     private File mFile;
 

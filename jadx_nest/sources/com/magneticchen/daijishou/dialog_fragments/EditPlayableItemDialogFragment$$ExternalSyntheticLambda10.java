@@ -4,8 +4,8 @@ import android.view.View;
 import com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity;
 import com.magneticchen.daijishou.daijishou_library_db.PlayableItemPreviewMediaIndex;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class EditPlayableItemDialogFragment$$ExternalSyntheticLambda10 implements View.OnClickListener {
     public final /* synthetic */ EditPlayableItemDialogFragment f$0;
     public final /* synthetic */ PlayableItemEntity f$1;

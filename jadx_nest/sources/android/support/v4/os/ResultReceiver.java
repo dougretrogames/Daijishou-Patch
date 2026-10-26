@@ -6,7 +6,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.RemoteException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ResultReceiver implements Parcelable {
     public static final Parcelable.Creator<ResultReceiver> CREATOR = new AnonymousClass1();
     final Handler mHandler;
@@ -91,18 +91,18 @@ public class ResultReceiver implements Parcelable {
         this.mReceiver = IResultReceiver.Stub.asInterface(parcel.readStrongBinder());
     }
 
-    /* JADX INFO: renamed from: android.support.v4.os.ResultReceiver$1, reason: invalid class name */
+    /* INFO: renamed from: android.support.v4.os.ResultReceiver$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.Creator<ResultReceiver> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public ResultReceiver createFromParcel(Parcel parcel) {
             return new ResultReceiver(parcel);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public ResultReceiver[] newArray(int i) {
             return new ResultReceiver[i];

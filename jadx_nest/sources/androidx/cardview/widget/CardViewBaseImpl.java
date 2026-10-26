@@ -7,7 +7,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.RectF;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class CardViewBaseImpl implements CardViewImpl {
     final RectF mCornerRect = new RectF();
 
@@ -18,7 +18,7 @@ class CardViewBaseImpl implements CardViewImpl {
     CardViewBaseImpl() {
     }
 
-    /* JADX INFO: renamed from: androidx.cardview.widget.CardViewBaseImpl$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.cardview.widget.CardViewBaseImpl$1, reason: invalid class name */
     class AnonymousClass1 implements RoundRectDrawableWithShadow.RoundRectHelper {
         AnonymousClass1() {
         }

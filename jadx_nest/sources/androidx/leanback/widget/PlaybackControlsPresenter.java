@@ -13,7 +13,7 @@ import android.widget.TextView;
 import androidx.leanback.util.MathUtil;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class PlaybackControlsPresenter extends ControlBarPresenter {
     private static int sChildMarginBigger;
     private static int sChildMarginBiggest;
@@ -61,7 +61,7 @@ class PlaybackControlsPresenter extends ControlBarPresenter {
             this.mTotalTimeMarginEnd = ((ViewGroup.MarginLayoutParams) textView2.getLayoutParams()).getMarginEnd();
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.PlaybackControlsPresenter$ViewHolder$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.PlaybackControlsPresenter$ViewHolder$1, reason: invalid class name */
         class AnonymousClass1 extends ObjectAdapter.DataObserver {
             final /* synthetic */ PlaybackControlsPresenter val$this$0;
 
@@ -109,7 +109,7 @@ class PlaybackControlsPresenter extends ControlBarPresenter {
             this.mMoreActionsDock.removeView(this.mMoreActionsViewHolder.view);
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.PlaybackControlsPresenter$ViewHolder$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.PlaybackControlsPresenter$ViewHolder$2, reason: invalid class name */
         class AnonymousClass2 implements View.OnClickListener {
             AnonymousClass2() {
             }

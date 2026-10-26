@@ -15,13 +15,13 @@ import java.util.RandomAccess;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Iterables {
     private Iterables() {
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <T> Iterable<T> unmodifiableIterable(final Iterable<? extends T> iterable) {
         Preconditions.checkNotNull(iterable);
         return ((iterable instanceof UnmodifiableIterable) || (iterable instanceof ImmutableCollection)) ? iterable : new UnmodifiableIterable(iterable, null);
@@ -196,8 +196,8 @@ public final class Iterables {
         return Iterators.frequency(iterable.iterator(), obj);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterables$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterables$1, reason: invalid class name */
     class AnonymousClass1<T> extends FluentIterable<T> {
         final /* synthetic */ Iterable val$iterable;
 
@@ -253,8 +253,8 @@ public final class Iterables {
         return new AnonymousClass2(iterable, size);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterables$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterables$2, reason: invalid class name */
     class AnonymousClass2<T> extends FluentIterable<List<T>> {
         final /* synthetic */ Iterable val$iterable;
         final /* synthetic */ int val$size;
@@ -276,8 +276,8 @@ public final class Iterables {
         return new AnonymousClass3(iterable, size);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterables$3, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterables$3, reason: invalid class name */
     class AnonymousClass3<T> extends FluentIterable<List<T>> {
         final /* synthetic */ Iterable val$iterable;
         final /* synthetic */ int val$size;
@@ -299,8 +299,8 @@ public final class Iterables {
         return new AnonymousClass4(unfiltered, retainIfTrue);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterables$4, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterables$4, reason: invalid class name */
     class AnonymousClass4<T> extends FluentIterable<T> {
         final /* synthetic */ Predicate val$retainIfTrue;
         final /* synthetic */ Iterable val$unfiltered;
@@ -354,8 +354,8 @@ public final class Iterables {
         return new AnonymousClass5(fromIterable, function);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterables$5, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterables$5, reason: invalid class name */
     class AnonymousClass5<T> extends FluentIterable<T> {
         final /* synthetic */ Iterable val$fromIterable;
         final /* synthetic */ Function val$function;
@@ -434,8 +434,8 @@ public final class Iterables {
         return new AnonymousClass6(iterable, numberToSkip);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterables$6, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterables$6, reason: invalid class name */
     class AnonymousClass6<T> extends FluentIterable<T> {
         final /* synthetic */ Iterable val$iterable;
         final /* synthetic */ int val$numberToSkip;
@@ -457,7 +457,7 @@ public final class Iterables {
             return new AnonymousClass1(this, it);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Iterables$6$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Iterables$6$1, reason: invalid class name */
         class AnonymousClass1 implements Iterator<T> {
             boolean atStart = true;
             final /* synthetic */ Iterator val$iterator;
@@ -493,8 +493,8 @@ public final class Iterables {
         return new AnonymousClass7(iterable, limitSize);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterables$7, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterables$7, reason: invalid class name */
     class AnonymousClass7<T> extends FluentIterable<T> {
         final /* synthetic */ Iterable val$iterable;
         final /* synthetic */ int val$limitSize;
@@ -515,8 +515,8 @@ public final class Iterables {
         return new AnonymousClass8(iterable);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterables$8, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterables$8, reason: invalid class name */
     class AnonymousClass8<T> extends FluentIterable<T> {
         final /* synthetic */ Iterable val$iterable;
 
@@ -552,8 +552,8 @@ public final class Iterables {
         return new UnmodifiableIterable(new AnonymousClass9(iterables, comparator), null);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.Iterables$9, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.Iterables$9, reason: invalid class name */
     class AnonymousClass9<T> extends FluentIterable<T> {
         final /* synthetic */ Comparator val$comparator;
         final /* synthetic */ Iterable val$iterables;

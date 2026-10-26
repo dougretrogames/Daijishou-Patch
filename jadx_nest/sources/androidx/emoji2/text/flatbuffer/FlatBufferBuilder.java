@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FlatBufferBuilder {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     ByteBuffer bb;

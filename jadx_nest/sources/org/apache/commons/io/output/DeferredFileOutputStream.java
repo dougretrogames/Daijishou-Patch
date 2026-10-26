@@ -13,7 +13,7 @@ import java.util.function.Supplier;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.file.PathUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DeferredFileOutputStream extends ThresholdingOutputStream {
     private boolean closed;
     private OutputStream currentOutputStream;
@@ -91,7 +91,7 @@ public class DeferredFileOutputStream extends ThresholdingOutputStream {
         throw new IllegalArgumentException("Initial buffer size must be at least 0.");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Path toPath(File file, Supplier<Path> supplier) {
         if (file != null) {
             return file.toPath();
@@ -102,7 +102,7 @@ public class DeferredFileOutputStream extends ThresholdingOutputStream {
         return supplier.get();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Path toPath(Path path, Supplier<Path> supplier) {
         if (path != null) {
             return path;

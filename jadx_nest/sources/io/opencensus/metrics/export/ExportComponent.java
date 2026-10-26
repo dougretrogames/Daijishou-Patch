@@ -1,6 +1,6 @@
 package io.opencensus.metrics.export;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ExportComponent {
     public abstract MetricProducerManager getMetricProducerManager();
 

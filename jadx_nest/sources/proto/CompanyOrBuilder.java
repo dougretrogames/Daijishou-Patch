@@ -6,7 +6,7 @@ import com.google.protobuf.Timestamp;
 import com.google.protobuf.TimestampOrBuilder;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public interface CompanyOrBuilder extends MessageOrBuilder {
     Timestamp getChangeDate();
 

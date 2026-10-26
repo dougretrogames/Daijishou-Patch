@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ProgressBar;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ContentLoadingProgressBar extends ProgressBar {
     private static final int MIN_DELAY_MS = 500;
     private static final int MIN_SHOW_TIME_MS = 500;
@@ -15,14 +15,14 @@ public class ContentLoadingProgressBar extends ProgressBar {
     boolean mPostedShow;
     long mStartTime;
 
-    /* JADX INFO: renamed from: lambda$new$0$androidx-core-widget-ContentLoadingProgressBar, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$androidx-core-widget-ContentLoadingProgressBar, reason: not valid java name */
     /* synthetic */ void m3179lambda$new$0$androidxcorewidgetContentLoadingProgressBar() {
         this.mPostedHide = false;
         this.mStartTime = -1L;
         setVisibility(8);
     }
 
-    /* JADX INFO: renamed from: lambda$new$1$androidx-core-widget-ContentLoadingProgressBar, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$1$androidx-core-widget-ContentLoadingProgressBar, reason: not valid java name */
     /* synthetic */ void m3180lambda$new$1$androidxcorewidgetContentLoadingProgressBar() {
         this.mPostedShow = false;
         if (this.mDismissed) {
@@ -67,7 +67,7 @@ public class ContentLoadingProgressBar extends ProgressBar {
         post(new ContentLoadingProgressBar$$ExternalSyntheticLambda3(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void hideOnUiThread() {
         this.mDismissed = true;
         removeCallbacks(this.mDelayedShow);
@@ -90,7 +90,7 @@ public class ContentLoadingProgressBar extends ProgressBar {
         post(new ContentLoadingProgressBar$$ExternalSyntheticLambda2(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void showOnUiThread() {
         this.mStartTime = -1L;
         this.mDismissed = false;

@@ -36,7 +36,7 @@ import java.util.Map;
 import java.util.Set;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class NotificationManagerCompat {
     public static final String ACTION_BIND_SIDE_CHANNEL = "android.support.BIND_NOTIFICATION_SIDE_CHANNEL";
     private static final String CHECK_OP_NO_THROW = "checkOpNoThrow";
@@ -597,7 +597,7 @@ public final class NotificationManagerCompat {
 
     private static class NotifyTask implements Task {
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         final int f24id;
         final Notification notif;
         final String packageName;
@@ -628,7 +628,7 @@ public final class NotificationManagerCompat {
     private static class CancelTask implements Task {
         final boolean all;
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         final int f23id;
         final String packageName;
         final String tag;

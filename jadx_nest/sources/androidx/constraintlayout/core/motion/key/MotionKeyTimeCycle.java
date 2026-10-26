@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionKeyTimeCycle extends MotionKey {
     public static final int KEY_TYPE = 3;
     static final String NAME = "KeyTimeCycle";
@@ -43,7 +43,7 @@ public class MotionKeyTimeCycle extends MotionKey {
         this.mCustom = new HashMap<>();
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public void addTimeValues(HashMap<String, TimeCycleSplineSet> map) {
         for (String str : map.keySet()) {
             TimeCycleSplineSet timeCycleSplineSet = map.get(str);
@@ -328,7 +328,7 @@ public class MotionKeyTimeCycle extends MotionKey {
     }
 
     @Override // androidx.constraintlayout.core.motion.key.MotionKey
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public MotionKey mo3140clone() {
         return new MotionKeyTimeCycle().copy((MotionKey) this);
     }

@@ -10,8 +10,8 @@ import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.PendingResult;
 import com.google.android.gms.common.api.Status;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class zbd implements GoogleSignInApi {
     private static final GoogleSignInOptions zba(GoogleApiClient googleApiClient) {
         return ((zbe) googleApiClient.getClient(Auth.zbb)).zba();

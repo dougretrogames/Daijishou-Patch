@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class Serialization {
     private Serialization() {
@@ -30,7 +30,7 @@ final class Serialization {
         populateMap(map, stream, stream.readInt());
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static <K, V> void populateMap(Map<K, V> map, ObjectInputStream stream, int size) throws IOException, ClassNotFoundException {
         for (int i = 0; i < size; i++) {
             map.put(stream.readObject(), stream.readObject());
@@ -49,7 +49,7 @@ final class Serialization {
         populateMultiset(multiset, stream, stream.readInt());
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static <E> void populateMultiset(Multiset<E> multiset, ObjectInputStream stream, int distinctElements) throws IOException, ClassNotFoundException {
         for (int i = 0; i < distinctElements; i++) {
             multiset.add(stream.readObject(), stream.readInt());
@@ -72,7 +72,7 @@ final class Serialization {
         populateMultimap(multimap, stream, stream.readInt());
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static <K, V> void populateMultimap(Multimap<K, V> multimap, ObjectInputStream stream, int distinctKeys) throws IOException, ClassNotFoundException {
         for (int i = 0; i < distinctKeys; i++) {
             Collection collection = multimap.get(stream.readObject());

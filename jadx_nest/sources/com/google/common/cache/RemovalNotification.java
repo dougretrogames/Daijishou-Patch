@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.util.AbstractMap;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class RemovalNotification<K, V> extends AbstractMap.SimpleImmutableEntry<K, V> {
     private static final long serialVersionUID = 0;

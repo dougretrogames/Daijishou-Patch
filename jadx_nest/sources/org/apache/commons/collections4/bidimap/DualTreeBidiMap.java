@@ -20,7 +20,7 @@ import org.apache.commons.collections4.ResettableIterator;
 import org.apache.commons.collections4.SortedBidiMap;
 import org.apache.commons.collections4.map.AbstractSortedMapDecorator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DualTreeBidiMap<K, V> extends AbstractDualBidiMap<K, V> implements SortedBidiMap<K, V>, Serializable {
     private static final long serialVersionUID = 721969328361809L;
     private final Comparator<? super K> comparator;
@@ -131,7 +131,7 @@ public class DualTreeBidiMap<K, V> extends AbstractDualBidiMap<K, V> implements 
             return decorated().normalMap.containsValue(obj);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // org.apache.commons.collections4.map.AbstractSortedMapDecorator, org.apache.commons.collections4.map.AbstractMapDecorator
         public DualTreeBidiMap<K, V> decorated() {
             return (DualTreeBidiMap) super.decorated();
@@ -193,7 +193,7 @@ public class DualTreeBidiMap<K, V> extends AbstractDualBidiMap<K, V> implements 
         return ((SortedMap) this.normalMap).comparator();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.bidimap.AbstractDualBidiMap
     public DualTreeBidiMap<V, K> createBidiMap(Map<V, K> map, Map<K, V> map2, BidiMap<K, V> bidiMap) {
         return new DualTreeBidiMap<>(map, map2, bidiMap);

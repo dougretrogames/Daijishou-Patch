@@ -1,7 +1,7 @@
 package org.eclipse.jgit.internal.storage.file;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class PackBitmapIndexV1$$ExternalSyntheticLambda1 implements PackBitmapIndex.SupplierWithIOException {
     public final /* synthetic */ PackIndex f$0;
 

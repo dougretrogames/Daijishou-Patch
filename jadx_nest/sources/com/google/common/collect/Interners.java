@@ -5,7 +5,7 @@ import com.google.common.base.Function;
 import com.google.common.base.Preconditions;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Interners {
     private Interners() {

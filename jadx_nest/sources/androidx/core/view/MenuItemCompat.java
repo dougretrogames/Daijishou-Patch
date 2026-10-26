@@ -8,7 +8,7 @@ import android.view.View;
 import androidx.annotation.ReplaceWith;
 import androidx.core.internal.view.SupportMenuItem;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MenuItemCompat {
 
     @Deprecated
@@ -92,7 +92,7 @@ public final class MenuItemCompat {
         return menuItem.isActionViewExpanded();
     }
 
-    /* JADX INFO: renamed from: androidx.core.view.MenuItemCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.view.MenuItemCompat$1, reason: invalid class name */
     class AnonymousClass1 implements MenuItem.OnActionExpandListener {
         final /* synthetic */ OnActionExpandListener val$listener;
 

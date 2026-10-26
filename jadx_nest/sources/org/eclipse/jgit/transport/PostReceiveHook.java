@@ -2,7 +2,7 @@ package org.eclipse.jgit.transport;
 
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface PostReceiveHook {
     public static final PostReceiveHook NULL = new PostReceiveHook$$ExternalSyntheticLambda0();
 

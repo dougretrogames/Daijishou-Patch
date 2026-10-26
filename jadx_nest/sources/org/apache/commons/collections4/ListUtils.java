@@ -19,7 +19,7 @@ import org.apache.commons.collections4.sequence.CommandVisitor;
 import org.apache.commons.collections4.sequence.EditScript;
 import org.apache.commons.collections4.sequence.SequencesComparator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ListUtils {
     public static <T> List<T> defaultIfNull(List<T> list, List<T> list2) {
         return list == null ? list2 : list;

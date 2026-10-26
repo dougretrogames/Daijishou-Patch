@@ -6,7 +6,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class GraphCommitData {
     private static final int[] NO_PARENTS = new int[0];
     private final int commitDataLength;

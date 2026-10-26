@@ -1,6 +1,6 @@
 package androidx.leanback.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class PageRow extends Row {
     @Override // androidx.leanback.widget.Row
     public final boolean isRenderedAsRowView() {

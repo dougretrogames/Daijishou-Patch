@@ -11,7 +11,7 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public final class AuthSchemeRegistry implements Lookup<AuthSchemeProvider> {
     private final ConcurrentHashMap<String, AuthSchemeFactory> registeredSchemes = new ConcurrentHashMap<>();
@@ -48,7 +48,7 @@ public final class AuthSchemeRegistry implements Lookup<AuthSchemeProvider> {
         this.registeredSchemes.putAll(map);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.auth.AuthSchemeRegistry$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.auth.AuthSchemeRegistry$1, reason: invalid class name */
     class AnonymousClass1 implements AuthSchemeProvider {
         final /* synthetic */ String val$name;
 

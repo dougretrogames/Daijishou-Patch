@@ -21,8 +21,8 @@ import java.io.PrintWriter;
 import java.util.Collections;
 import java.util.Set;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class NonGmsServiceBrokerClient implements Api.Client, ServiceConnection {
     private static final String zaa = "NonGmsServiceBrokerClient";
     private final String zab;
@@ -213,7 +213,7 @@ public final class NonGmsServiceBrokerClient implements Api.Client, ServiceConne
         this.zal = str;
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:7:0x001e, code lost:
+    /* WARN: Code restructure failed: missing block: B:7:0x001e, code lost:
     
         if (r6 != null) goto L8;
      */

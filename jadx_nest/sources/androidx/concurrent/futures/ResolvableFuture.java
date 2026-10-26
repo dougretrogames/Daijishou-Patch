@@ -2,7 +2,7 @@ package androidx.concurrent.futures;
 
 import com.google.common.util.concurrent.ListenableFuture;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ResolvableFuture<V> extends AbstractResolvableFuture<V> {
     public static <V> ResolvableFuture<V> create() {
         return new ResolvableFuture<>();

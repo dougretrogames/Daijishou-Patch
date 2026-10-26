@@ -6,7 +6,7 @@ import android.animation.ValueAnimator;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class FadeThroughProvider implements VisibilityAnimatorProvider {
     static final float FADE_THROUGH_THRESHOLD = 0.35f;
     private float progressThreshold = FADE_THROUGH_THRESHOLD;
@@ -38,7 +38,7 @@ public final class FadeThroughProvider implements VisibilityAnimatorProvider {
         return valueAnimatorOfFloat;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.platform.FadeThroughProvider$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.platform.FadeThroughProvider$1, reason: invalid class name */
     class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
         final /* synthetic */ float val$endFraction;
         final /* synthetic */ float val$endValue;
@@ -60,7 +60,7 @@ public final class FadeThroughProvider implements VisibilityAnimatorProvider {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.platform.FadeThroughProvider$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.platform.FadeThroughProvider$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         final /* synthetic */ float val$originalAlpha;
         final /* synthetic */ View val$view;

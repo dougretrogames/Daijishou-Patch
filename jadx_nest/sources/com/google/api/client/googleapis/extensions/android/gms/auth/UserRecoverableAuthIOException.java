@@ -3,7 +3,7 @@ package com.google.api.client.googleapis.extensions.android.gms.auth;
 import android.content.Intent;
 import com.google.android.gms.auth.UserRecoverableAuthException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class UserRecoverableAuthIOException extends GoogleAuthIOException {
     private static final long serialVersionUID = 1;
 

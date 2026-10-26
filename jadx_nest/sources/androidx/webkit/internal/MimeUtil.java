@@ -3,7 +3,7 @@ package androidx.webkit.internal;
 import com.google.common.base.Ascii;
 import java.net.URLConnection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class MimeUtil {
     MimeUtil() {
     }

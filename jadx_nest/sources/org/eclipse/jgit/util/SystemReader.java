@@ -33,7 +33,7 @@ import org.eclipse.jgit.util.time.MonotonicSystemClock;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class SystemReader {
     private static final SystemReader DEFAULT;
     private static final String GIT_TRACE_PERFORMANCE = "GIT_TRACE_PERFORMANCE";
@@ -115,7 +115,7 @@ public abstract class SystemReader {
             return new AnonymousClass1(config, null, fs);
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.util.SystemReader$Default$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.util.SystemReader$Default$1, reason: invalid class name */
         class AnonymousClass1 extends FileBasedConfig {
             @Override // org.eclipse.jgit.storage.file.FileBasedConfig
             public boolean isOutdated() {

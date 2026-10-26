@@ -18,8 +18,8 @@ import com.google.android.gms.common.internal.IAccountAccessor;
 import com.google.android.gms.common.internal.Preconditions;
 import com.google.android.gms.common.internal.zat;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public class SignInClientImpl extends GmsClient<zaf> implements com.google.android.gms.signin.zae {
     public static final /* synthetic */ int zaa = 0;
     private final boolean zab;
@@ -91,7 +91,7 @@ public class SignInClientImpl extends GmsClient<zaf> implements com.google.andro
         return this.zab;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.android.gms.signin.zae
     public final void zaa() {
         try {
@@ -106,7 +106,7 @@ public class SignInClientImpl extends GmsClient<zaf> implements com.google.andro
         connect(new BaseGmsClient.LegacyClientCallbackAdapter());
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.android.gms.signin.zae
     public final void zac(IAccountAccessor iAccountAccessor, boolean z) {
         try {
@@ -116,7 +116,7 @@ public class SignInClientImpl extends GmsClient<zaf> implements com.google.andro
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.android.gms.signin.zae
     public final void zad(zae zaeVar) {
         Preconditions.checkNotNull(zaeVar, "Expecting a valid ISignInCallbacks");

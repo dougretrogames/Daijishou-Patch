@@ -1,6 +1,6 @@
 package org.jsoup.internal;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class SharedConstants {
     public static final String AttrRangeKey = "jsoup.attrs";
     public static final int DefaultBufferSize = 8192;

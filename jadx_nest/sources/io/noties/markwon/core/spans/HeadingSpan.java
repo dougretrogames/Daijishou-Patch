@@ -10,7 +10,7 @@ import android.text.style.MetricAffectingSpan;
 import io.noties.markwon.core.MarkwonTheme;
 import io.noties.markwon.utils.LeadingMarginUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class HeadingSpan extends MetricAffectingSpan implements LeadingMarginSpan {
     private final int level;
     private final MarkwonTheme theme;

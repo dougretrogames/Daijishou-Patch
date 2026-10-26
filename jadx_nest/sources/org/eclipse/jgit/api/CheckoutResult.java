@@ -3,7 +3,7 @@ package org.eclipse.jgit.api;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CheckoutResult {
     public static final CheckoutResult ERROR_RESULT = new CheckoutResult(Status.ERROR, (List<String>) null);
     public static final CheckoutResult NOT_TRIED_RESULT = new CheckoutResult(Status.NOT_TRIED, (List<String>) null);
@@ -20,7 +20,7 @@ public class CheckoutResult {
         NONDELETED,
         ERROR;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Status[] valuesCustom() {
             Status[] statusArrValuesCustom = values();
             int length = statusArrValuesCustom.length;

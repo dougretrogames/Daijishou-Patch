@@ -8,12 +8,12 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
 
-/* JADX INFO: compiled from: FuelError.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: FuelError.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0003\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0012\n\u0002\b\u0007\n\u0002\u0010\u0011\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0016\u0018\u0000 \u001d2\u00060\u0001j\u0002`\u0002:\u0001\u001dB\u0019\b\u0000\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\b\b\u0002\u0010\u0005\u001a\u00020\u0006¢\u0006\u0002\u0010\u0007JA\u0010\u0014\u001a\u000e\u0012\u0006\b\u0001\u0012\u00020\u00160\u0015j\u0002`\u00172\u0012\u0010\u0018\u001a\u000e\u0012\u0006\b\u0001\u0012\u00020\u00160\u0015j\u0002`\u00172\u0012\u0010\u0019\u001a\u000e\u0012\u0006\b\u0001\u0012\u00020\u00160\u0015j\u0002`\u0017H\u0002¢\u0006\u0002\u0010\u001aJ\b\u0010\u001b\u001a\u00020\u001cH\u0016R\u0011\u0010\b\u001a\u00020\t8F¢\u0006\u0006\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\f\u001a\u00020\r8F¢\u0006\u0006\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\u0003\u001a\u00020\u00048F¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011R\u0011\u0010\u0005\u001a\u00020\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013¨\u0006\u001e"}, d2 = {"Lcom/github/kittinunf/fuel/core/FuelError;", "Ljava/lang/Exception;", "Lkotlin/Exception;", "exception", "", "response", "Lcom/github/kittinunf/fuel/core/Response;", "(Ljava/lang/Throwable;Lcom/github/kittinunf/fuel/core/Response;)V", "causedByInterruption", "", "getCausedByInterruption", "()Z", "errorData", "", "getErrorData", "()[B", "getException", "()Ljava/lang/Throwable;", "getResponse", "()Lcom/github/kittinunf/fuel/core/Response;", "buildRelativeStack", "", "Ljava/lang/StackTraceElement;", "Lcom/github/kittinunf/fuel/core/StackTrace;", "wrapped", "cause", "([Ljava/lang/StackTraceElement;[Ljava/lang/StackTraceElement;)[Ljava/lang/StackTraceElement;", "toString", "", "Companion", "fuel"}, k = 1, mv = {1, 4, 0})
 public class FuelError extends Exception {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private final Response response;
 
@@ -25,7 +25,7 @@ public class FuelError extends Exception {
         return this.response;
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public FuelError(Throwable exception, Response response) {
         super(exception.getMessage(), exception);
         Intrinsics.checkNotNullParameter(exception, "exception");
@@ -93,7 +93,7 @@ public class FuelError extends Exception {
         return (getException() instanceof InterruptedException) || (getException() instanceof InterruptedIOException);
     }
 
-    /* JADX INFO: compiled from: FuelError.kt */
+    /* INFO: compiled from: FuelError.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001e\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0003\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0018\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\b¨\u0006\t"}, d2 = {"Lcom/github/kittinunf/fuel/core/FuelError$Companion;", "", "()V", "wrap", "Lcom/github/kittinunf/fuel/core/FuelError;", "it", "", "response", "Lcom/github/kittinunf/fuel/core/Response;", "fuel"}, k = 1, mv = {1, 4, 0})
     public static final class Companion {
         private Companion() {

@@ -4,7 +4,7 @@ import java.util.Objects;
 import java.util.stream.BaseStream;
 import org.apache.commons.io.function.IOBaseStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class IOBaseStreamAdapter<T, S extends IOBaseStream<T, S, B>, B extends BaseStream<T, B>> implements IOBaseStream<T, S, B> {
     private final B delegate;
 

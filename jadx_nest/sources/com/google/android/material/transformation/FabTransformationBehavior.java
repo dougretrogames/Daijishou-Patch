@@ -37,7 +37,7 @@ import com.google.android.material.math.MathUtils;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public abstract class FabTransformationBehavior extends ExpandableTransformationBehavior {
     private float dependencyOriginalTranslationX;
@@ -112,7 +112,7 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         return animatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transformation.FabTransformationBehavior$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transformation.FabTransformationBehavior$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         final /* synthetic */ View val$child;
         final /* synthetic */ View val$dependency;
@@ -213,7 +213,7 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         list.add(objectAnimatorOfFloat2);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void createIconFadeAnimation(View view, View view2, boolean z, boolean z2, FabTransformationSpec fabTransformationSpec, List<Animator> list, List<Animator.AnimatorListener> list2) {
         ObjectAnimator objectAnimatorOfInt;
         if ((view2 instanceof CircularRevealWidget) && (view instanceof ImageView)) {
@@ -238,7 +238,7 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transformation.FabTransformationBehavior$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transformation.FabTransformationBehavior$2, reason: invalid class name */
     class AnonymousClass2 implements ValueAnimator.AnimatorUpdateListener {
         final /* synthetic */ View val$child;
 
@@ -252,7 +252,7 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transformation.FabTransformationBehavior$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transformation.FabTransformationBehavior$3, reason: invalid class name */
     class AnonymousClass3 extends AnimatorListenerAdapter {
         final /* synthetic */ CircularRevealWidget val$circularRevealChild;
         final /* synthetic */ Drawable val$icon;
@@ -273,7 +273,7 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void createExpansionAnimation(View view, View view2, boolean z, boolean z2, FabTransformationSpec fabTransformationSpec, float f, float f2, List<Animator> list, List<Animator.AnimatorListener> list2) {
         Animator animatorCreateCircularReveal;
         if (view2 instanceof CircularRevealWidget) {
@@ -308,7 +308,7 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transformation.FabTransformationBehavior$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transformation.FabTransformationBehavior$4, reason: invalid class name */
     class AnonymousClass4 extends AnimatorListenerAdapter {
         final /* synthetic */ CircularRevealWidget val$circularRevealChild;
 
@@ -324,7 +324,7 @@ public abstract class FabTransformationBehavior extends ExpandableTransformation
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void createColorAnimation(View view, View view2, boolean z, boolean z2, FabTransformationSpec fabTransformationSpec, List<Animator> list, List<Animator.AnimatorListener> list2) {
         ObjectAnimator objectAnimatorOfInt;
         if (view2 instanceof CircularRevealWidget) {

@@ -5,7 +5,7 @@ import androidx.constraintlayout.core.LinearSystem;
 import androidx.constraintlayout.core.SolverVariable;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Chain {
     private static final boolean DEBUG = false;
     public static final boolean USE_CHAIN_OPTIMIZATION = false;
@@ -32,37 +32,37 @@ public class Chain {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:198:0x036b  */
-    /* JADX WARN: Code duplicated, block: B:216:0x03c0  */
-    /* JADX WARN: Code duplicated, block: B:217:0x03c2  */
-    /* JADX WARN: Code duplicated, block: B:289:0x04f7  */
-    /* JADX WARN: Code duplicated, block: B:292:0x0502  */
-    /* JADX WARN: Code duplicated, block: B:293:0x0507  */
-    /* JADX WARN: Code duplicated, block: B:296:0x050d  */
-    /* JADX WARN: Code duplicated, block: B:297:0x0512  */
-    /* JADX WARN: Code duplicated, block: B:299:0x0516  */
-    /* JADX WARN: Code duplicated, block: B:29:0x004c A[PHI: r14 r15
+    /* WARN: Code duplicated, block: B:198:0x036b  */
+    /* WARN: Code duplicated, block: B:216:0x03c0  */
+    /* WARN: Code duplicated, block: B:217:0x03c2  */
+    /* WARN: Code duplicated, block: B:289:0x04f7  */
+    /* WARN: Code duplicated, block: B:292:0x0502  */
+    /* WARN: Code duplicated, block: B:293:0x0507  */
+    /* WARN: Code duplicated, block: B:296:0x050d  */
+    /* WARN: Code duplicated, block: B:297:0x0512  */
+    /* WARN: Code duplicated, block: B:299:0x0516  */
+    /* WARN: Code duplicated, block: B:29:0x004c A[PHI: r14 r15
   0x004c: PHI (r14v3 boolean) = (r14v1 boolean), (r14v33 boolean) binds: [B:28:0x004a, B:17:0x0037] A[DONT_GENERATE, DONT_INLINE]
   0x004c: PHI (r15v3 boolean) = (r15v1 boolean), (r15v8 boolean) binds: [B:28:0x004a, B:17:0x0037] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:301:0x051e  */
-    /* JADX WARN: Code duplicated, block: B:304:0x0528  */
-    /* JADX WARN: Code duplicated, block: B:30:0x004e A[PHI: r14 r15
+    /* WARN: Code duplicated, block: B:301:0x051e  */
+    /* WARN: Code duplicated, block: B:304:0x0528  */
+    /* WARN: Code duplicated, block: B:30:0x004e A[PHI: r14 r15
   0x004e: PHI (r14v30 boolean) = (r14v1 boolean), (r14v33 boolean) binds: [B:28:0x004a, B:17:0x0037] A[DONT_GENERATE, DONT_INLINE]
   0x004e: PHI (r15v5 boolean) = (r15v1 boolean), (r15v8 boolean) binds: [B:28:0x004a, B:17:0x0037] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v20, types: [androidx.constraintlayout.core.LinearSystem] */
-    /* JADX WARN: Type inference failed for: r0v21 */
-    /* JADX WARN: Type inference failed for: r0v5, types: [androidx.constraintlayout.core.LinearSystem] */
-    /* JADX WARN: Type inference failed for: r5v103 */
-    /* JADX WARN: Type inference failed for: r5v31 */
-    /* JADX WARN: Type inference failed for: r5v32 */
-    /* JADX WARN: Type inference failed for: r5v33, types: [androidx.constraintlayout.core.SolverVariable] */
-    /* JADX WARN: Type inference failed for: r5v36 */
-    /* JADX WARN: Type inference failed for: r7v1 */
-    /* JADX WARN: Type inference failed for: r7v2, types: [androidx.constraintlayout.core.widgets.ConstraintWidget] */
-    /* JADX WARN: Type inference failed for: r7v27 */
-    /* JADX WARN: Type inference failed for: r7v28 */
-    /* JADX WARN: Type inference failed for: r7v29 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v20, types: [androidx.constraintlayout.core.LinearSystem] */
+    /* WARN: Type inference failed for: r0v21 */
+    /* WARN: Type inference failed for: r0v5, types: [androidx.constraintlayout.core.LinearSystem] */
+    /* WARN: Type inference failed for: r5v103 */
+    /* WARN: Type inference failed for: r5v31 */
+    /* WARN: Type inference failed for: r5v32 */
+    /* WARN: Type inference failed for: r5v33, types: [androidx.constraintlayout.core.SolverVariable] */
+    /* WARN: Type inference failed for: r5v36 */
+    /* WARN: Type inference failed for: r7v1 */
+    /* WARN: Type inference failed for: r7v2, types: [androidx.constraintlayout.core.widgets.ConstraintWidget] */
+    /* WARN: Type inference failed for: r7v27 */
+    /* WARN: Type inference failed for: r7v28 */
+    /* WARN: Type inference failed for: r7v29 */
     static void applyChainConstraints(ConstraintWidgetContainer constraintWidgetContainer, LinearSystem linearSystem, int i, int i2, ChainHead chainHead) {
         boolean z;
         boolean z2;

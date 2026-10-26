@@ -17,7 +17,7 @@ import android.view.animation.DecelerateInterpolator;
 import androidx.core.view.GravityCompat;
 import androidx.leanback.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FadeAndShortSlide extends Visibility {
     private static final String PROPNAME_SCREEN_POSITION = "android:fadeAndShortSlideTransition:screenPosition";
     private float mDistance;
@@ -54,7 +54,7 @@ public class FadeAndShortSlide extends Visibility {
         return f >= 0.0f ? f : viewGroup.getHeight() / 4;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.FadeAndShortSlide$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.FadeAndShortSlide$1, reason: invalid class name */
     class AnonymousClass1 extends CalculateSlide {
         AnonymousClass1() {
         }
@@ -68,7 +68,7 @@ public class FadeAndShortSlide extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.FadeAndShortSlide$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.FadeAndShortSlide$2, reason: invalid class name */
     class AnonymousClass2 extends CalculateSlide {
         AnonymousClass2() {
         }
@@ -82,7 +82,7 @@ public class FadeAndShortSlide extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.FadeAndShortSlide$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.FadeAndShortSlide$3, reason: invalid class name */
     class AnonymousClass3 extends CalculateSlide {
         AnonymousClass3() {
         }
@@ -105,7 +105,7 @@ public class FadeAndShortSlide extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.FadeAndShortSlide$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.FadeAndShortSlide$4, reason: invalid class name */
     class AnonymousClass4 extends CalculateSlide {
         AnonymousClass4() {
         }
@@ -116,7 +116,7 @@ public class FadeAndShortSlide extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.FadeAndShortSlide$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.FadeAndShortSlide$5, reason: invalid class name */
     class AnonymousClass5 extends CalculateSlide {
         AnonymousClass5() {
         }
@@ -127,7 +127,7 @@ public class FadeAndShortSlide extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.FadeAndShortSlide$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.FadeAndShortSlide$6, reason: invalid class name */
     class AnonymousClass6 extends CalculateSlide {
         AnonymousClass6() {
         }

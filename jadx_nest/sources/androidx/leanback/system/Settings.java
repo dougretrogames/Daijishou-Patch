@@ -8,7 +8,7 @@ import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import androidx.leanback.widget.ShadowOverlayContainer;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Settings {
     private static final String ACTION_PARTNER_CUSTOMIZATION = "android.support.v17.leanback.action.PARTNER_CUSTOMIZATION";
     private static final boolean DEBUG = false;

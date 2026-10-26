@@ -29,7 +29,7 @@ import androidx.leanback.widget.RowPresenter;
 import androidx.leanback.widget.VerticalGridView;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DetailsSupportFragment extends BaseSupportFragment {
     static final boolean DEBUG = false;
     static final String TAG = "DetailsSupportFragment";
@@ -65,7 +65,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
     final SetSelectionRunnable mSetSelectionRunnable = new SetSelectionRunnable();
     final BaseOnItemViewSelectedListener<Object> mOnItemViewSelectedListener = new AnonymousClass7();
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$1, reason: invalid class name */
     class AnonymousClass1 extends StateMachine.State {
         AnonymousClass1(String str) {
             super(str);
@@ -84,7 +84,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
         slideOutGridView();
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$2, reason: invalid class name */
     class AnonymousClass2 extends StateMachine.State {
         AnonymousClass2(String str, boolean z, boolean z2) {
             super(str, z, z2);
@@ -96,7 +96,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$3, reason: invalid class name */
     class AnonymousClass3 extends StateMachine.State {
         AnonymousClass3(String str, boolean z, boolean z2) {
             super(str, z, z2);
@@ -119,7 +119,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$4, reason: invalid class name */
     class AnonymousClass4 extends StateMachine.State {
         AnonymousClass4(String str) {
             super(str);
@@ -131,7 +131,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$5, reason: invalid class name */
     class AnonymousClass5 extends StateMachine.State {
         AnonymousClass5(String str) {
             super(str);
@@ -163,7 +163,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$6, reason: invalid class name */
     class AnonymousClass6 extends StateMachine.State {
         AnonymousClass6(String str) {
             super(str);
@@ -278,7 +278,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$7, reason: invalid class name */
     class AnonymousClass7 implements BaseOnItemViewSelectedListener<Object> {
         AnonymousClass7() {
         }
@@ -374,7 +374,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
         return this.mRootView;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$8, reason: invalid class name */
     class AnonymousClass8 implements Runnable {
         AnonymousClass8() {
         }
@@ -385,7 +385,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$9, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$9, reason: invalid class name */
     class AnonymousClass9 extends ItemBridgeAdapter.AdapterListener {
         AnonymousClass9() {
         }
@@ -520,7 +520,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
         return fragmentFindFragmentById;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$10, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$10, reason: invalid class name */
     class AnonymousClass10 implements Runnable {
         AnonymousClass10() {
         }
@@ -667,7 +667,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
         this.mBackgroundDrawable = drawable;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$11, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$11, reason: invalid class name */
     class AnonymousClass11 implements BrowseFrameLayout.OnChildFocusListener {
         @Override // androidx.leanback.widget.BrowseFrameLayout.OnChildFocusListener
         public boolean onRequestFocusInDescendants(int i, Rect rect) {
@@ -704,7 +704,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
         this.mRootView.setOnDispatchKeyListener(new AnonymousClass13());
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$12, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$12, reason: invalid class name */
     class AnonymousClass12 implements BrowseFrameLayout.OnFocusSearchListener {
         AnonymousClass12() {
         }
@@ -724,7 +724,7 @@ public class DetailsSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$13, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsSupportFragment$13, reason: invalid class name */
     class AnonymousClass13 implements View.OnKeyListener {
         AnonymousClass13() {
         }

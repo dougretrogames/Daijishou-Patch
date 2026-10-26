@@ -5,7 +5,7 @@ import java.nio.charset.StandardCharsets;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class GpgSignature implements Serializable {
     private static final long serialVersionUID = 1;
     private byte[] signature;

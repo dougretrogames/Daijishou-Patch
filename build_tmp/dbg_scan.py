@@ -3,7 +3,7 @@ import re
 src = open(r'C:\Users\Douglas\Documents\Daijishou\jadx_nest\sources\com\magneticchen\daijishou\activities\SplashScreenActivity.java', encoding='utf-8', errors='replace').read()
 i = 0; n = len(src); depth = 0; stack = []; classes = []; pending = []
 class_re = re.compile(r'\b(?:class|interface|enum)\s+([A-Za-z_$][\w$]*)')
-ren = re.compile(r'/\* JADX INFO: renamed from: ([^,\s]+), reason:')
+ren = re.compile(r'/\* (?:JADX\s+)?INFO: renamed from: ([^,\s]+), reason:')
 while i < n:
     if src.startswith('/*', i):
         end = src.find('*/', i + 2)

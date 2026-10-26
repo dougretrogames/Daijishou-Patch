@@ -11,8 +11,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class RegisterRequestParams extends RequestParams {
     public static final Parcelable.Creator<RegisterRequestParams> CREATOR = new zzh();
@@ -26,7 +26,7 @@ public class RegisterRequestParams extends RequestParams {
     private final String zzg;
     private Set zzh;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static final class Builder {
         Integer zza;
         Double zzb;

@@ -11,7 +11,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import org.apache.http.message.TokenParser;
 import org.jsoup.helper.Validate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class StringUtil {
     private static final int InitBuilderSize = 1024;
     private static final int MaxBuilderSize = 8192;

@@ -14,7 +14,7 @@ import org.chromium.support_lib_boundary.WebViewStartUpCallbackBoundaryInterface
 import org.chromium.support_lib_boundary.WebViewStartUpResultBoundaryInterface;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebViewStartUpCallbackAdapter implements WebViewStartUpCallbackBoundaryInterface {
     private final WebViewCompat.WebViewStartUpCallback mWebViewStartUpCallback;
 
@@ -42,7 +42,7 @@ public class WebViewStartUpCallbackAdapter implements WebViewStartUpCallbackBoun
         }
     }
 
-    /* JADX INFO: renamed from: androidx.webkit.internal.WebViewStartUpCallbackAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.webkit.internal.WebViewStartUpCallbackAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements WebViewStartUpResult {
         private final List<BlockingStartUpLocation> mBlockingStartUpLocations;
         final /* synthetic */ WebViewStartUpResultBoundaryInterface val$result;

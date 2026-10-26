@@ -8,7 +8,7 @@ import java.util.Objects;
 import org.apache.commons.io.build.AbstractSupplier;
 import org.apache.commons.io.function.IOBiFunction;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class SimplePathVisitor extends SimpleFileVisitor<Path> implements PathVisitor {
     private final IOBiFunction<Path, IOException, FileVisitResult> visitFileFailedFunction;
 
@@ -29,7 +29,7 @@ public abstract class SimplePathVisitor extends SimpleFileVisitor<Path> implemen
         this.visitFileFailedFunction = new SimplePathVisitor$$ExternalSyntheticLambda0(this);
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$org-apache-commons-io-file-SimplePathVisitor, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$org-apache-commons-io-file-SimplePathVisitor, reason: not valid java name */
     /* synthetic */ FileVisitResult m5572lambda$new$0$orgapachecommonsiofileSimplePathVisitor(Object obj, IOException iOException) throws IOException {
         return super.visitFileFailed(obj, iOException);
     }
@@ -38,7 +38,7 @@ public abstract class SimplePathVisitor extends SimpleFileVisitor<Path> implemen
         this.visitFileFailedFunction = ((AbstractBuilder) abstractBuilder).visitFileFailedFunction != null ? ((AbstractBuilder) abstractBuilder).visitFileFailedFunction : new SimplePathVisitor$$ExternalSyntheticLambda1(this);
     }
 
-    /* JADX INFO: renamed from: lambda$new$1$org-apache-commons-io-file-SimplePathVisitor, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$1$org-apache-commons-io-file-SimplePathVisitor, reason: not valid java name */
     /* synthetic */ FileVisitResult m5573lambda$new$1$orgapachecommonsiofileSimplePathVisitor(Object obj, IOException iOException) throws IOException {
         return super.visitFileFailed(obj, iOException);
     }

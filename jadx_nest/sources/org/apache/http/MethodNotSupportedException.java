@@ -1,6 +1,6 @@
 package org.apache.http;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MethodNotSupportedException extends HttpException {
     private static final long serialVersionUID = 3365359036840171201L;
 

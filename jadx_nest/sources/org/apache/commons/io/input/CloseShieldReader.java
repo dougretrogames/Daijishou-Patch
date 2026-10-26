@@ -2,7 +2,7 @@ package org.apache.commons.io.input;
 
 import java.io.Reader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CloseShieldReader extends ProxyReader {
     public static CloseShieldReader wrap(Reader reader) {
         return new CloseShieldReader(reader);

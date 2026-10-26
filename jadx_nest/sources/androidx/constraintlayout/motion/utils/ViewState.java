@@ -2,7 +2,7 @@ package androidx.constraintlayout.motion.utils;
 
 import android.view.View;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ViewState {
     public int bottom;
     public int left;

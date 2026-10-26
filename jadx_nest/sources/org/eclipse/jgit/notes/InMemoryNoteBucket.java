@@ -1,6 +1,6 @@
 package org.eclipse.jgit.notes;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class InMemoryNoteBucket extends NoteBucket {
     NonNoteEntry nonNotes;
     final int prefixLen;

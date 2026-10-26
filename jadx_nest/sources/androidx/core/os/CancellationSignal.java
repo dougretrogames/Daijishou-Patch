@@ -1,6 +1,6 @@
 package androidx.core.os;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public final class CancellationSignal {
     private boolean mCancelInProgress;

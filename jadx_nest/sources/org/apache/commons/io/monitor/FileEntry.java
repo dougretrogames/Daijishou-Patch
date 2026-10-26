@@ -10,7 +10,7 @@ import java.util.Objects;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.file.attribute.FileTimes;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileEntry implements Serializable {
     static final FileEntry[] EMPTY_FILE_ENTRY_ARRAY = new FileEntry[0];
     private static final long serialVersionUID = -2505664948818681153L;

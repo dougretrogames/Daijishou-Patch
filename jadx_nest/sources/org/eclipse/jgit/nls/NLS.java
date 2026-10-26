@@ -4,7 +4,7 @@ import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NLS {
     public static final Locale ROOT_LOCALE = new Locale("", "", "");
     private static final InheritableThreadLocal<NLS> local = new InheritableThreadLocal<>();

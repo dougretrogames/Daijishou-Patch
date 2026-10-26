@@ -2,7 +2,7 @@ package io.opencensus.metrics;
 
 import io.opencensus.metrics.export.ExportComponent;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class MetricsComponent {
     public abstract ExportComponent getExportComponent();
 

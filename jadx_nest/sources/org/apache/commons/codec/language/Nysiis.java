@@ -4,7 +4,7 @@ import java.util.regex.Pattern;
 import org.apache.commons.codec.EncoderException;
 import org.apache.commons.codec.StringEncoder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Nysiis implements StringEncoder {
     private static final char SPACE = ' ';
     private static final int TRUE_LENGTH = 6;

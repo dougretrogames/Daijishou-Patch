@@ -7,8 +7,8 @@ import com.google.android.gms.common.internal.Preconditions;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class SavePasswordRequest extends AbstractSafeParcelable {
     public static final Parcelable.Creator<SavePasswordRequest> CREATOR = new zbp();
@@ -16,7 +16,7 @@ public class SavePasswordRequest extends AbstractSafeParcelable {
     private final String zbb;
     private final int zbc;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
     @Deprecated
     public static final class Builder {
         private SignInPassword zba;

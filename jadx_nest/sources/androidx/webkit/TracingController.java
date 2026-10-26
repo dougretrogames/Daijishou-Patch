@@ -4,7 +4,7 @@ import androidx.webkit.internal.TracingControllerImpl;
 import java.io.OutputStream;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class TracingController {
     public abstract boolean isTracing();
 

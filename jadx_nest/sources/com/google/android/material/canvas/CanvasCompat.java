@@ -3,7 +3,7 @@ package com.google.android.material.canvas;
 import android.graphics.Canvas;
 import android.graphics.RectF;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CanvasCompat {
 
     public interface CanvasOperation {

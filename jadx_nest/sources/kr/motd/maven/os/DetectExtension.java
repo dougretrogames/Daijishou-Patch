@@ -25,7 +25,7 @@ import org.codehaus.plexus.component.annotations.Component;
 import org.codehaus.plexus.logging.Logger;
 import org.codehaus.plexus.util.InterpolationFilterReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Component(hint = "detect-os", role = AbstractMavenLifecycleParticipant.class)
 public class DetectExtension extends AbstractMavenLifecycleParticipant {
     private final Detector detector;
@@ -37,7 +37,7 @@ public class DetectExtension extends AbstractMavenLifecycleParticipant {
         this.detector = new AnonymousClass1(logger);
     }
 
-    /* JADX INFO: renamed from: kr.motd.maven.os.DetectExtension$1, reason: invalid class name */
+    /* INFO: renamed from: kr.motd.maven.os.DetectExtension$1, reason: invalid class name */
     class AnonymousClass1 extends Detector {
         final /* synthetic */ Logger val$logger;
 
@@ -58,7 +58,7 @@ public class DetectExtension extends AbstractMavenLifecycleParticipant {
         }
     }
 
-    /* JADX INFO: Thrown type has an unknown type hierarchy: org.apache.maven.MavenExecutionException */
+    /* INFO: Thrown type has an unknown type hierarchy: org.apache.maven.MavenExecutionException */
     public void afterProjectsRead(MavenSession mavenSession) throws MavenExecutionException {
         Properties properties = new Properties();
         properties.putAll(mavenSession.getSystemProperties());

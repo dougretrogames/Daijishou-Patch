@@ -1,6 +1,6 @@
 package com.google.gson.stream;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public enum JsonToken {
     BEGIN_ARRAY,
     END_ARRAY,

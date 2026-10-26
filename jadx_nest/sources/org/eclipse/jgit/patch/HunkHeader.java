@@ -13,7 +13,7 @@ import org.eclipse.jgit.lib.AbbreviatedObjectId;
 import org.eclipse.jgit.util.MutableInteger;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HunkHeader {
     private EditList editList;
     int endOffset;
@@ -49,7 +49,7 @@ public class HunkHeader {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.patch.HunkHeader$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.patch.HunkHeader$1, reason: invalid class name */
     class AnonymousClass1 extends OldImage {
         private final /* synthetic */ FileHeader val$fh;
 

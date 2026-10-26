@@ -2,7 +2,7 @@ package androidx.vectordrawable.graphics.drawable;
 
 import android.animation.TypeEvaluator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ArgbEvaluator implements TypeEvaluator {
     private static final ArgbEvaluator sInstance = new ArgbEvaluator();
 

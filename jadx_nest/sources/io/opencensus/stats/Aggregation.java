@@ -3,7 +3,7 @@ package io.opencensus.stats;
 import io.opencensus.common.Function;
 import io.opencensus.internal.Utils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Aggregation {
     public abstract <T> T match(Function<? super Sum, T> function, Function<? super Count, T> function2, Function<? super Distribution, T> function3, Function<? super LastValue, T> function4, Function<? super Aggregation, T> function5);
 

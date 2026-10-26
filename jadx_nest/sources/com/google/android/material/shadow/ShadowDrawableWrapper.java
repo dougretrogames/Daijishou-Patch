@@ -14,7 +14,7 @@ import androidx.appcompat.graphics.drawable.DrawableWrapperCompat;
 import androidx.core.content.ContextCompat;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class ShadowDrawableWrapper extends DrawableWrapperCompat {
     static final double COS_45 = Math.cos(Math.toRadians(45.0d));
@@ -159,720 +159,720 @@ public class ShadowDrawableWrapper extends DrawableWrapperCompat {
         }
     }
 
-    /* JADX WARN: Failed to calculate best type for var: r12v4 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r12v4 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r12v4 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r12v4 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r12v5 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r12v5 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r12v5 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r12v5 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r13v0 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r13v0 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r13v0 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r13v0 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r14v0 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r14v0 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r14v0 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r14v0 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r15v0 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r15v0 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r15v0 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r15v0 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r19v0 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r19v0 ??, new type: android.graphics.Canvas
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r19v0 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r19v0 ??, new type: android.graphics.Canvas
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v1 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v1 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v1 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v1 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v10 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v10 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v10 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v10 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v11 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v11 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v11 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v11 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v12 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v12 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v12 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v12 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v15 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v15 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v15 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v15 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v16 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v16 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v16 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v16 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v2 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v2 ??, new type: android.graphics.RectF
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v2 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v2 ??, new type: android.graphics.RectF
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v20 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v20 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v20 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v20 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v21 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v21 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v21 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v21 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v25 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v25 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v25 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v25 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v26 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v26 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v26 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v26 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v29 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v29 ??, new type: android.graphics.RectF
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v29 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v29 ??, new type: android.graphics.RectF
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v3 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v3 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v3 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v3 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v30 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v30 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v30 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v30 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v33 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v33 ??, new type: android.graphics.RectF
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v33 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v33 ??, new type: android.graphics.RectF
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v34 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v34 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v34 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v34 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v37 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v37 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v37 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v37 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v38 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v38 ??, new type: android.graphics.RectF
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v38 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v38 ??, new type: android.graphics.RectF
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v39 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v39 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v39 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v39 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v4 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v4 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v4 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v4 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v6 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v6 ??, new type: android.graphics.RectF
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v6 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v6 ??, new type: android.graphics.RectF
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v7 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v7 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v7 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v7 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r2v8 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r2v8 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r2v8 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r2v8 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r3v2 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r3v2 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r3v2 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r3v2 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r3v3 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r3v3 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r3v3 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r3v3 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v10 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v10 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v10 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v10 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v13 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v13 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v13 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v13 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v14 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v14 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v14 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v14 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v17 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v17 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v17 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v17 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v18 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v18 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v18 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v18 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v21 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v21 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v21 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v21 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v22 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v22 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v22 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v22 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v25 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v25 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v25 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v25 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v27 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v27 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v27 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v27 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v29 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v29 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v29 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v29 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v30 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v30 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v30 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v30 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v31 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v31 ??, new type: android.graphics.RectF
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v31 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v31 ??, new type: android.graphics.RectF
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v32 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v32 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v32 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v32 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v33 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v33 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v33 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v33 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v5 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v5 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v5 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v5 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v6 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v6 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v6 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v6 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v7 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v7 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v7 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v7 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r4v9 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r4v9 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r4v9 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r4v9 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r5v2 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v2 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r5v2 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r5v2 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r5v3 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v3 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r5v3 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r5v3 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r5v4 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v4 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r5v4 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r5v4 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r5v6 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v6 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r5v6 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r5v6 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r5v7 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r5v7 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r5v7 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r5v7 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r6v1 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r6v1 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r6v1 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r6v1 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r8v0 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r8v0 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.calculateFromBounds(FixTypesVisitor.java:159)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.setBestType(FixTypesVisitor.java:136)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.deduceType(FixTypesVisitor.java:241)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryDeduceTypes(FixTypesVisitor.java:224)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Failed to calculate best type for var: r8v0 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r8v0 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.calculateFromBounds(FixTypesVisitor.java:159)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.setBestType(FixTypesVisitor.java:136)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.deduceType(FixTypesVisitor.java:241)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryDeduceTypes(FixTypesVisitor.java:224)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r8v0 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r8v0 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r8v0 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r8v0 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to calculate best type for var: r9v0 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r9v0 ??, new type: float
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
+    /* WARN: Failed to calculate best type for var: r9v0 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r9v0 ??, new type: float
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.calculateFromBounds(TypeInferenceVisitor.java:147)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setBestType(TypeInferenceVisitor.java:125)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$2(TypeInferenceVisitor.java:103)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:103)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /* JADX WARN: Failed to set immutable type for var: r19v0 ??
-    jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r19v0 ??, new type: android.graphics.Canvas
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-    	at jadx.core.dex.visitors.typeinference.TypeUpdate.applyWithWiderIgnSame(TypeUpdate.java:73)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.setImmutableType(TypeInferenceVisitor.java:111)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$1(TypeInferenceVisitor.java:102)
+    /* WARN: Failed to set immutable type for var: r19v0 ??
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r19v0 ??, new type: android.graphics.Canvas
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+    	at decompiler.core.dex.visitors.typeinference.TypeUpdate.applyWithWiderIgnSame(TypeUpdate.java:73)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.setImmutableType(TypeInferenceVisitor.java:111)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.lambda$runTypePropagation$1(TypeInferenceVisitor.java:102)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:102)
-    	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.runTypePropagation(TypeInferenceVisitor.java:102)
+    	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:75)
     Caused by: java.lang.NullPointerException
      */
-    /*  JADX ERROR: Types fix failed
-        jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r8v0 ??, new type: float
-        	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-        	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryPossibleTypes(FixTypesVisitor.java:186)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.deduceType(FixTypesVisitor.java:245)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryDeduceTypes(FixTypesVisitor.java:224)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* ERROR: Types fix failed
+        decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r8v0 ??, new type: float
+        	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+        	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryPossibleTypes(FixTypesVisitor.java:186)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.deduceType(FixTypesVisitor.java:245)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryDeduceTypes(FixTypesVisitor.java:224)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
         Caused by: java.lang.NullPointerException
         */
     private void drawShadow(android.graphics.Canvas r19) {

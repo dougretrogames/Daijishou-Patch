@@ -4,7 +4,7 @@ import java.io.IOException;
 import okhttp3.Request;
 import okio.Timeout;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public interface Call<T> extends Cloneable {
     void cancel();
 

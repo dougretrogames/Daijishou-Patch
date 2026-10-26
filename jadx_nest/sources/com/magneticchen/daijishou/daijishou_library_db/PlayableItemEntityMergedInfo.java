@@ -11,8 +11,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: PlayableItemEntity.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlayableItemEntity.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010!\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b5\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0087\b\u0018\u00002\u00020\u0001B\u0087\u0001\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007\u0012\b\b\u0002\u0010\b\u001a\u00020\t\u0012\b\b\u0002\u0010\n\u001a\u00020\t\u0012\b\b\u0002\u0010\u000b\u001a\u00020\t\u0012\b\b\u0002\u0010\f\u001a\u00020\t\u0012\b\b\u0002\u0010\r\u001a\u00020\t\u0012\b\b\u0002\u0010\u000e\u001a\u00020\t\u0012\b\b\u0002\u0010\u000f\u001a\u00020\u0010\u0012\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u0012\u0012\b\b\u0002\u0010\u0013\u001a\u00020\u0012¢\u0006\u0002\u0010\u0014J\u0010\u00107\u001a\u0004\u0018\u00010\u0003HÆ\u0003¢\u0006\u0002\u0010\u001aJ\t\u00108\u001a\u00020\u0010HÆ\u0003J\u000b\u00109\u001a\u0004\u0018\u00010\u0012HÆ\u0003J\t\u0010:\u001a\u00020\u0012HÆ\u0003J\u000f\u0010;\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005HÆ\u0003J\t\u0010<\u001a\u00020\u0007HÆ\u0003J\t\u0010=\u001a\u00020\tHÆ\u0003J\t\u0010>\u001a\u00020\tHÆ\u0003J\t\u0010?\u001a\u00020\tHÆ\u0003J\t\u0010@\u001a\u00020\tHÆ\u0003J\t\u0010A\u001a\u00020\tHÆ\u0003J\t\u0010B\u001a\u00020\tHÆ\u0003J\u0090\u0001\u0010C\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00072\b\b\u0002\u0010\b\u001a\u00020\t2\b\b\u0002\u0010\n\u001a\u00020\t2\b\b\u0002\u0010\u000b\u001a\u00020\t2\b\b\u0002\u0010\f\u001a\u00020\t2\b\b\u0002\u0010\r\u001a\u00020\t2\b\b\u0002\u0010\u000e\u001a\u00020\t2\b\b\u0002\u0010\u000f\u001a\u00020\u00102\n\b\u0002\u0010\u0011\u001a\u0004\u0018\u00010\u00122\b\b\u0002\u0010\u0013\u001a\u00020\u0012HÆ\u0001¢\u0006\u0002\u0010DJ\t\u0010E\u001a\u00020\u0010HÖ\u0001J\u0013\u0010F\u001a\u00020\t2\b\u0010G\u001a\u0004\u0018\u00010HHÖ\u0003J\t\u0010I\u001a\u00020\u0010HÖ\u0001J\t\u0010J\u001a\u00020\u0007HÖ\u0001J\u0019\u0010K\u001a\u00020L2\u0006\u0010M\u001a\u00020N2\u0006\u0010O\u001a\u00020\u0010HÖ\u0001R\u0016\u0010\n\u001a\u00020\t8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0016\u0010\f\u001a\u00020\t8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0016R\u0016\u0010\u000e\u001a\u00020\t8\u0006X\u0087\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0016R\"\u0010\u0002\u001a\u0004\u0018\u00010\u00038\u0006@\u0006X\u0087\u000e¢\u0006\u0010\n\u0002\u0010\u001d\u001a\u0004\b\u0019\u0010\u001a\"\u0004\b\u001b\u0010\u001cR\u001e\u0010\u0013\u001a\u00020\u00128\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001e\u0010\u001f\"\u0004\b \u0010!R$\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\"\u0010#\"\u0004\b$\u0010%R\u001e\u0010\b\u001a\u00020\t8\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b&\u0010\u0016\"\u0004\b'\u0010(R\u001e\u0010\u000b\u001a\u00020\t8\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b)\u0010\u0016\"\u0004\b*\u0010(R\u001e\u0010\r\u001a\u00020\t8\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b+\u0010\u0016\"\u0004\b,\u0010(R \u0010\u0011\u001a\u0004\u0018\u00010\u00128\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b-\u0010\u001f\"\u0004\b.\u0010!R\u001e\u0010\u0006\u001a\u00020\u00078\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b/\u00100\"\u0004\b1\u00102R\u001e\u0010\u000f\u001a\u00020\u00108\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b3\u00104\"\u0004\b5\u00106¨\u0006P"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntityMergedInfo;", "Landroid/os/Parcelable;", "disjointSetPrimaryPlayableItemId", "", "mergedDisjointSetPrimaryPlayableItemIds", "", "mergedName", "", "mergedIsFavorite", "", "defaultMergedIsFavorite", "mergedIsSearchable", "defaultMergedIsSearchable", "mergedIsVisible", "defaultMergedIsVisible", "mergedPlayedCount", "", "mergedLastPlayedTimestamp", "Ljava/util/Date;", "mergedAddedDateTimestamp", "(Ljava/lang/Long;Ljava/util/List;Ljava/lang/String;ZZZZZZILjava/util/Date;Ljava/util/Date;)V", "getDefaultMergedIsFavorite", "()Z", "getDefaultMergedIsSearchable", "getDefaultMergedIsVisible", "getDisjointSetPrimaryPlayableItemId", "()Ljava/lang/Long;", "setDisjointSetPrimaryPlayableItemId", "(Ljava/lang/Long;)V", "Ljava/lang/Long;", "getMergedAddedDateTimestamp", "()Ljava/util/Date;", "setMergedAddedDateTimestamp", "(Ljava/util/Date;)V", "getMergedDisjointSetPrimaryPlayableItemIds", "()Ljava/util/List;", "setMergedDisjointSetPrimaryPlayableItemIds", "(Ljava/util/List;)V", "getMergedIsFavorite", "setMergedIsFavorite", "(Z)V", "getMergedIsSearchable", "setMergedIsSearchable", "getMergedIsVisible", "setMergedIsVisible", "getMergedLastPlayedTimestamp", "setMergedLastPlayedTimestamp", "getMergedName", "()Ljava/lang/String;", "setMergedName", "(Ljava/lang/String;)V", "getMergedPlayedCount", "()I", "setMergedPlayedCount", "(I)V", "component1", "component10", "component11", "component12", "component2", "component3", "component4", "component5", "component6", "component7", "component8", "component9", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "(Ljava/lang/Long;Ljava/util/List;Ljava/lang/String;ZZZZZZILjava/util/Date;Ljava/util/Date;)Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntityMergedInfo;", "describeContents", "equals", "other", "", "hashCode", "toString", "writeToParcel", "", "parcel", "Landroid/os/Parcel;", "flags", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final /* data */ class PlayableItemEntityMergedInfo implements Parcelable {
     public static final Parcelable.Creator<PlayableItemEntityMergedInfo> CREATOR = new Creator();
@@ -29,10 +29,10 @@ public final /* data */ class PlayableItemEntityMergedInfo implements Parcelable
     private String mergedName;
     private int mergedPlayedCount;
 
-    /* JADX INFO: compiled from: PlayableItemEntity.kt */
+    /* INFO: compiled from: PlayableItemEntity.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     public static final class Creator implements Parcelable.Creator<PlayableItemEntityMergedInfo> {
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public final PlayableItemEntityMergedInfo createFromParcel(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
@@ -51,7 +51,7 @@ public final /* data */ class PlayableItemEntityMergedInfo implements Parcelable
             return new PlayableItemEntityMergedInfo(lValueOf, arrayList2, string, z, parcel.readInt() != 0, parcel.readInt() != 0 ? z : false, parcel.readInt() != 0 ? z : false, parcel.readInt() != 0 ? z : false, parcel.readInt() != 0 ? z : false, parcel.readInt(), (Date) parcel.readSerializable(), (Date) parcel.readSerializable());
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public final PlayableItemEntityMergedInfo[] newArray(int i) {
             return new PlayableItemEntityMergedInfo[i];
@@ -62,7 +62,7 @@ public final /* data */ class PlayableItemEntityMergedInfo implements Parcelable
         this(null, null, null, false, false, false, false, false, false, 0, null, null, 4095, null);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ PlayableItemEntityMergedInfo copy$default(PlayableItemEntityMergedInfo playableItemEntityMergedInfo, Long l, List list, String str, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, int i, Date date, Date date2, int i2, Object obj) {
         if ((i2 & 1) != 0) {
             l = playableItemEntityMergedInfo.disjointSetPrimaryPlayableItemId;
@@ -111,22 +111,22 @@ public final /* data */ class PlayableItemEntityMergedInfo implements Parcelable
         return playableItemEntityMergedInfo.copy(l, list, str, z, z10, z11, z8, z9, z7, i3, date3, date4);
     }
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    /* INFO: renamed from: component1, reason: from getter */
     public final Long getDisjointSetPrimaryPlayableItemId() {
         return this.disjointSetPrimaryPlayableItemId;
     }
 
-    /* JADX INFO: renamed from: component10, reason: from getter */
+    /* INFO: renamed from: component10, reason: from getter */
     public final int getMergedPlayedCount() {
         return this.mergedPlayedCount;
     }
 
-    /* JADX INFO: renamed from: component11, reason: from getter */
+    /* INFO: renamed from: component11, reason: from getter */
     public final Date getMergedLastPlayedTimestamp() {
         return this.mergedLastPlayedTimestamp;
     }
 
-    /* JADX INFO: renamed from: component12, reason: from getter */
+    /* INFO: renamed from: component12, reason: from getter */
     public final Date getMergedAddedDateTimestamp() {
         return this.mergedAddedDateTimestamp;
     }
@@ -135,37 +135,37 @@ public final /* data */ class PlayableItemEntityMergedInfo implements Parcelable
         return this.mergedDisjointSetPrimaryPlayableItemIds;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    /* INFO: renamed from: component3, reason: from getter */
     public final String getMergedName() {
         return this.mergedName;
     }
 
-    /* JADX INFO: renamed from: component4, reason: from getter */
+    /* INFO: renamed from: component4, reason: from getter */
     public final boolean getMergedIsFavorite() {
         return this.mergedIsFavorite;
     }
 
-    /* JADX INFO: renamed from: component5, reason: from getter */
+    /* INFO: renamed from: component5, reason: from getter */
     public final boolean getDefaultMergedIsFavorite() {
         return this.defaultMergedIsFavorite;
     }
 
-    /* JADX INFO: renamed from: component6, reason: from getter */
+    /* INFO: renamed from: component6, reason: from getter */
     public final boolean getMergedIsSearchable() {
         return this.mergedIsSearchable;
     }
 
-    /* JADX INFO: renamed from: component7, reason: from getter */
+    /* INFO: renamed from: component7, reason: from getter */
     public final boolean getDefaultMergedIsSearchable() {
         return this.defaultMergedIsSearchable;
     }
 
-    /* JADX INFO: renamed from: component8, reason: from getter */
+    /* INFO: renamed from: component8, reason: from getter */
     public final boolean getMergedIsVisible() {
         return this.mergedIsVisible;
     }
 
-    /* JADX INFO: renamed from: component9, reason: from getter */
+    /* INFO: renamed from: component9, reason: from getter */
     public final boolean getDefaultMergedIsVisible() {
         return this.defaultMergedIsVisible;
     }

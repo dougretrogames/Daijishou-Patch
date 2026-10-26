@@ -3,7 +3,7 @@ package com.google.android.material.progressindicator;
 import android.content.ContentResolver;
 import android.provider.Settings;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AnimatorDurationScaleProvider {
     private static float defaultSystemAnimatorDurationScale = 1.0f;
 

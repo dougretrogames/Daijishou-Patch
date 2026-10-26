@@ -12,7 +12,7 @@ import org.checkerframework.framework.qual.QualifierForLiterals;
 import org.checkerframework.framework.qual.SubtypeOf;
 import org.checkerframework.framework.qual.TypeUseLocation;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Target({})
 @QualifierForLiterals({LiteralKind.NULL})
 @Retention(RetentionPolicy.RUNTIME)

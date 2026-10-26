@@ -7,7 +7,7 @@ import android.view.inputmethod.InputConnection;
 import android.widget.EditText;
 import androidx.core.util.Preconditions;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class EmojiEditTextHelper {
     private int mEmojiReplaceStrategy;
     private final HelperInternal mHelper;

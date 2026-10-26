@@ -3,7 +3,7 @@ package androidx.webkit.internal;
 import androidx.webkit.WebViewCompat;
 import org.chromium.support_lib_boundary.VisualStateCallbackBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class VisualStateCallbackAdapter implements VisualStateCallbackBoundaryInterface {
     private final WebViewCompat.VisualStateCallback mVisualStateCallback;
 

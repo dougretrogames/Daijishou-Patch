@@ -1,6 +1,6 @@
 package androidx.emoji2.text.flatbuffer;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 interface ReadWriteBuf extends ReadBuf {
     @Override // androidx.emoji2.text.flatbuffer.ReadBuf
     int limit();

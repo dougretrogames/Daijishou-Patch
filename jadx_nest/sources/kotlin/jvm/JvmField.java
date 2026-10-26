@@ -10,8 +10,8 @@ import kotlin.annotation.AnnotationRetention;
 import kotlin.annotation.AnnotationTarget;
 import kotlin.annotation.MustBeDocumented;
 
-/* JADX INFO: compiled from: JvmPlatformAnnotations.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: JvmPlatformAnnotations.kt */
+/* INFO: loaded from: classes4.dex */
 @Target({ElementType.FIELD})
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.FIELD})
 @Retention(RetentionPolicy.CLASS)

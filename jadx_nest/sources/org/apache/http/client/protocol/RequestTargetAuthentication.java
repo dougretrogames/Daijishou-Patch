@@ -8,7 +8,7 @@ import org.apache.http.auth.AuthState;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class RequestTargetAuthentication extends RequestAuthenticationBase {
     @Override // org.apache.http.HttpRequestInterceptor

@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Graphs extends GraphsBridgeMethods {
 
@@ -74,7 +74,7 @@ public final class Graphs extends GraphsBridgeMethods {
         return graph.isDirected() || !Objects.equal(previousNode, nextNode);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <N> ImmutableGraph<N> transitiveClosure(Graph<N> graph) {
         ImmutableGraph.Builder<N1> builderImmutable = GraphBuilder.from(graph).allowsSelfLoops(true).immutable();
         if (graph.isDirected()) {
@@ -144,7 +144,7 @@ public final class Graphs extends GraphsBridgeMethods {
         return endpoints.isOrdered() ? EndpointPair.ordered(endpoints.target(), endpoints.source()) : endpoints;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class TransposedGraph<N> extends ForwardingGraph<N> {
         private final Graph<N> graph;
 
@@ -152,7 +152,7 @@ public final class Graphs extends GraphsBridgeMethods {
             this.graph = graph;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.graph.ForwardingGraph
         public Graph<N> delegate() {
             return this.graph;
@@ -168,7 +168,7 @@ public final class Graphs extends GraphsBridgeMethods {
             return delegate().predecessors((Object) node);
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.Graphs$TransposedGraph$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.graph.Graphs$TransposedGraph$1, reason: invalid class name */
         class AnonymousClass1 extends IncidentEdgeSet<N> {
             AnonymousClass1(BaseGraph graph, Object node) {
                 super(graph, node);
@@ -179,7 +179,7 @@ public final class Graphs extends GraphsBridgeMethods {
                 return Iterators.transform(TransposedGraph.this.delegate().incidentEdges(this.node).iterator(), new Graphs$TransposedGraph$1$$ExternalSyntheticLambda0(this));
             }
 
-            /* JADX INFO: renamed from: lambda$iterator$0$com-google-common-graph-Graphs$TransposedGraph$1, reason: not valid java name */
+            /* INFO: renamed from: lambda$iterator$0$com-google-common-graph-Graphs$TransposedGraph$1, reason: not valid java name */
             /* synthetic */ EndpointPair m3362x5749e417(EndpointPair endpointPair) {
                 return EndpointPair.of((Graph<?>) TransposedGraph.this.delegate(), endpointPair.nodeV(), endpointPair.nodeU());
             }
@@ -368,7 +368,7 @@ public final class Graphs extends GraphsBridgeMethods {
         return standardMutableGraph;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <N, V> MutableValueGraph<N, V> inducedSubgraph(ValueGraph<N, V> valueGraph, Iterable<? extends N> iterable) {
         MutableValueGraph mutableValueGraph;
         if (iterable instanceof Collection) {
@@ -424,7 +424,7 @@ public final class Graphs extends GraphsBridgeMethods {
         return mutableGraph;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <N, V> MutableValueGraph<N, V> copyOf(ValueGraph<N, V> valueGraph) {
         StandardMutableValueGraph standardMutableValueGraph = (MutableValueGraph<N, V>) ValueGraphBuilder.from(valueGraph).expectedNodeCount(valueGraph.nodes().size()).build();
         Iterator<N> it = valueGraph.nodes().iterator();

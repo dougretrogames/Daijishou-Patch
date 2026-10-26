@@ -4,8 +4,8 @@ import android.os.Bundle;
 import androidx.navigation.NavHostController;
 import androidx.savedstate.SavedStateRegistry;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class NavHostFragment$navHostController$2$$ExternalSyntheticLambda0 implements SavedStateRegistry.SavedStateProvider {
     public final /* synthetic */ NavHostController f$0;
 

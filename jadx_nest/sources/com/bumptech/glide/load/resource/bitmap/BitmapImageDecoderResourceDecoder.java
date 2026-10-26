@@ -12,7 +12,7 @@ import com.bumptech.glide.load.resource.DefaultOnHeaderDecodedListener;
 import java.io.IOException;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class BitmapImageDecoderResourceDecoder implements ResourceDecoder<ImageDecoder.Source, Bitmap> {
     private static final String TAG = "BitmapImageDecoder";
     private final BitmapPool bitmapPool = new BitmapPoolAdapter();

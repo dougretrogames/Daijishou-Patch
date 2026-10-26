@@ -7,7 +7,7 @@ import org.eclipse.jgit.internal.storage.file.FileRepository;
 import org.eclipse.jgit.lib.BaseRepositoryBuilder;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileRepositoryBuilder extends BaseRepositoryBuilder<FileRepositoryBuilder, Repository> {
     @Override // org.eclipse.jgit.lib.BaseRepositoryBuilder
     public Repository build() throws IOException {

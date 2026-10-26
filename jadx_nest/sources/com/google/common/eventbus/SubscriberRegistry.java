@@ -31,7 +31,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.CopyOnWriteArraySet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class SubscriberRegistry {
     private final EventBus bus;
@@ -84,7 +84,7 @@ final class SubscriberRegistry {
         return Iterators.concat(arrayListNewArrayListWithCapacity.iterator());
     }
 
-    /* JADX INFO: renamed from: com.google.common.eventbus.SubscriberRegistry$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.eventbus.SubscriberRegistry$1, reason: invalid class name */
     class AnonymousClass1 extends CacheLoader<Class<?>, ImmutableList<Method>> {
         AnonymousClass1() {
         }
@@ -114,7 +114,7 @@ final class SubscriberRegistry {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static ImmutableList<Method> getAnnotatedMethodsNotCached(Class<?> clazz) {
         Set setRawTypes = TypeToken.of((Class) clazz).getTypes().rawTypes();
         HashMap mapNewHashMap = Maps.newHashMap();
@@ -135,7 +135,7 @@ final class SubscriberRegistry {
         return ImmutableList.copyOf(mapNewHashMap.values());
     }
 
-    /* JADX INFO: renamed from: com.google.common.eventbus.SubscriberRegistry$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.eventbus.SubscriberRegistry$2, reason: invalid class name */
     class AnonymousClass2 extends CacheLoader<Class<?>, ImmutableSet<Class<?>>> {
         AnonymousClass2() {
         }

@@ -10,7 +10,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Logger;
 import java.util.regex.Pattern;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class AbstractDataStoreFactory implements DataStoreFactory {
     private static final Pattern ID_PATTERN;
     private final Lock lock = new ReentrantLock();

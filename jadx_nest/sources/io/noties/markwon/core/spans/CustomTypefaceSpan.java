@@ -4,7 +4,7 @@ import android.graphics.Typeface;
 import android.text.TextPaint;
 import android.text.style.MetricAffectingSpan;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class CustomTypefaceSpan extends MetricAffectingSpan {
     private final boolean mergeStyles;
     private final Typeface typeface;

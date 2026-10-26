@@ -31,13 +31,13 @@ import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Ref;
 import kotlin.math.MathKt;
 
-/* JADX INFO: compiled from: TextInputServiceAndroid.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: TextInputServiceAndroid.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000°\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u00002\u00020\u0001:\u0001RB\u0017\b\u0016\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006B'\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0005\u0012\u0006\u0010\b\u001a\u00020\t\u0012\b\b\u0002\u0010\n\u001a\u00020\u000b¢\u0006\u0002\u0010\fJ\u0010\u00102\u001a\u0004\u0018\u0001032\u0006\u00104\u001a\u000205J\b\u00106\u001a\u00020%H\u0016J\u0006\u00107\u001a\u00020\u0016J\u0010\u00108\u001a\u00020%2\u0006\u00109\u001a\u00020:H\u0017J\b\u0010;\u001a\u00020%H\u0002J\b\u0010<\u001a\u00020%H\u0002J\u0010\u0010=\u001a\u00020%2\u0006\u0010>\u001a\u00020/H\u0002J\u0010\u0010?\u001a\u00020%2\u0006\u0010@\u001a\u00020\u0016H\u0002J\b\u0010A\u001a\u00020%H\u0016J\b\u0010B\u001a\u00020%H\u0016JF\u0010B\u001a\u00020%2\u0006\u0010C\u001a\u00020)2\u0006\u0010\u001f\u001a\u00020 2\u0018\u0010!\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020$0#\u0012\u0004\u0012\u00020%0\"2\u0012\u0010&\u001a\u000e\u0012\u0004\u0012\u00020'\u0012\u0004\u0012\u00020%0\"H\u0016J\b\u0010D\u001a\u00020%H\u0016J\u001a\u0010E\u001a\u00020%2\b\u0010F\u001a\u0004\u0018\u00010)2\u0006\u0010G\u001a\u00020)H\u0016JD\u0010H\u001a\u00020%2\u0006\u0010I\u001a\u00020)2\u0006\u0010J\u001a\u00020K2\u0006\u0010L\u001a\u00020M2\u0012\u0010N\u001a\u000e\u0012\u0004\u0012\u00020O\u0012\u0004\u0012\u00020%0\"2\u0006\u0010P\u001a\u00020:2\u0006\u0010Q\u001a\u00020:H\u0016R\u001b\u0010\r\u001a\u00020\u000e8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0011\u0010\u0012\u001a\u0004\b\u000f\u0010\u0010R\u000e\u0010\u0013\u001a\u00020\u0014X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0017\u001a\u0004\u0018\u00010\u0018X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0019\u001a\u0004\u0018\u00010\u001aX\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\u001b\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u001e0\u001d0\u001cX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020 X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R \u0010!\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u00020$0#\u0012\u0004\u0012\u00020%0\"X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010&\u001a\u000e\u0012\u0004\u0012\u00020'\u0012\u0004\u0012\u00020%0\"X\u0082\u000e¢\u0006\u0002\n\u0000R\u001e\u0010*\u001a\u00020)2\u0006\u0010(\u001a\u00020)@BX\u0080\u000e¢\u0006\b\n\u0000\u001a\u0004\b+\u0010,R\u0014\u0010-\u001a\b\u0012\u0004\u0012\u00020/0.X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b0\u00101¨\u0006S"}, d2 = {"Landroidx/compose/ui/text/input/TextInputServiceAndroid;", "Landroidx/compose/ui/text/input/PlatformTextInputService;", "view", "Landroid/view/View;", "positionCalculator", "Landroidx/compose/ui/input/pointer/PositionCalculator;", "(Landroid/view/View;Landroidx/compose/ui/input/pointer/PositionCalculator;)V", "rootPositionCalculator", "inputMethodManager", "Landroidx/compose/ui/text/input/InputMethodManager;", "inputCommandProcessorExecutor", "Ljava/util/concurrent/Executor;", "(Landroid/view/View;Landroidx/compose/ui/input/pointer/PositionCalculator;Landroidx/compose/ui/text/input/InputMethodManager;Ljava/util/concurrent/Executor;)V", "baseInputConnection", "Landroid/view/inputmethod/BaseInputConnection;", "getBaseInputConnection", "()Landroid/view/inputmethod/BaseInputConnection;", "baseInputConnection$delegate", "Lkotlin/Lazy;", "cursorAnchorInfoController", "Landroidx/compose/ui/text/input/CursorAnchorInfoController;", "editorHasFocus", "", "focusedRect", "Landroid/graphics/Rect;", "frameCallback", "Ljava/lang/Runnable;", "ics", "", "Ljava/lang/ref/WeakReference;", "Landroidx/compose/ui/text/input/RecordingInputConnection;", "imeOptions", "Landroidx/compose/ui/text/input/ImeOptions;", "onEditCommand", "Lkotlin/Function1;", "", "Landroidx/compose/ui/text/input/EditCommand;", "", "onImeActionPerformed", "Landroidx/compose/ui/text/input/ImeAction;", "<set-?>", "Landroidx/compose/ui/text/input/TextFieldValue;", "state", "getState$ui_release", "()Landroidx/compose/ui/text/input/TextFieldValue;", "textInputCommandQueue", "Landroidx/compose/runtime/collection/MutableVector;", "Landroidx/compose/ui/text/input/TextInputServiceAndroid$TextInputCommand;", "getView", "()Landroid/view/View;", "createInputConnection", "Landroid/view/inputmethod/InputConnection;", "outAttrs", "Landroid/view/inputmethod/EditorInfo;", "hideSoftwareKeyboard", "isEditorFocused", "notifyFocusedRect", "rect", "Landroidx/compose/ui/geometry/Rect;", "processInputCommands", "restartInputImmediately", "sendInputCommand", "command", "setKeyboardVisibleImmediately", "visible", "showSoftwareKeyboard", "startInput", "value", "stopInput", "updateState", "oldValue", "newValue", "updateTextLayoutResult", "textFieldValue", "offsetMapping", "Landroidx/compose/ui/text/input/OffsetMapping;", "textLayoutResult", "Landroidx/compose/ui/text/TextLayoutResult;", "textFieldToRootTransform", "Landroidx/compose/ui/graphics/Matrix;", "innerTextFieldBounds", "decorationBoxBounds", "TextInputCommand", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class TextInputServiceAndroid implements PlatformTextInputService {
     public static final int $stable = 8;
 
-    /* JADX INFO: renamed from: baseInputConnection$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: baseInputConnection$delegate, reason: from kotlin metadata */
     private final Lazy baseInputConnection;
     private final CursorAnchorInfoController cursorAnchorInfoController;
     private boolean editorHasFocus;
@@ -53,7 +53,7 @@ public final class TextInputServiceAndroid implements PlatformTextInputService {
     private final MutableVector<TextInputCommand> textInputCommandQueue;
     private final View view;
 
-    /* JADX INFO: compiled from: TextInputServiceAndroid.android.kt */
+    /* INFO: compiled from: TextInputServiceAndroid.android.kt */
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0006\b\u0082\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006¨\u0006\u0007"}, d2 = {"Landroidx/compose/ui/text/input/TextInputServiceAndroid$TextInputCommand;", "", "(Ljava/lang/String;I)V", "StartInput", "StopInput", "ShowKeyboard", "HideKeyboard", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     private enum TextInputCommand {
         StartInput,
@@ -62,7 +62,7 @@ public final class TextInputServiceAndroid implements PlatformTextInputService {
         HideKeyboard
     }
 
-    /* JADX INFO: compiled from: TextInputServiceAndroid.android.kt */
+    /* INFO: compiled from: TextInputServiceAndroid.android.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     public /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -111,12 +111,12 @@ public final class TextInputServiceAndroid implements PlatformTextInputService {
         this(view, positionCalculator, inputMethodManager, (i & 8) != 0 ? TextInputServiceAndroid_androidKt.asExecutor(Choreographer.getInstance()) : executor);
     }
 
-    /* JADX INFO: renamed from: getState$ui_release, reason: from getter */
+    /* INFO: renamed from: getState$ui_release, reason: from getter */
     public final TextFieldValue getState() {
         return this.state;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final BaseInputConnection getBaseInputConnection() {
         return (BaseInputConnection) this.baseInputConnection.getValue();
     }
@@ -136,8 +136,8 @@ public final class TextInputServiceAndroid implements PlatformTextInputService {
         return recordingInputConnection;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.text.input.TextInputServiceAndroid$createInputConnection$1, reason: invalid class name */
-    /* JADX INFO: compiled from: TextInputServiceAndroid.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.text.input.TextInputServiceAndroid$createInputConnection$1, reason: invalid class name */
+    /* INFO: compiled from: TextInputServiceAndroid.android.kt */
     @Metadata(d1 = {"\u0000=\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0006*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0016\u0010\u0006\u001a\u00020\u00032\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\bH\u0016J\u001a\u0010\n\u001a\u00020\u00032\u0006\u0010\u000b\u001a\u00020\fH\u0016ø\u0001\u0000¢\u0006\u0004\b\r\u0010\u000eJ\u0010\u0010\u000f\u001a\u00020\u00032\u0006\u0010\u0010\u001a\u00020\u0011H\u0016J8\u0010\u0012\u001a\u00020\u00032\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u0016\u001a\u00020\u00142\u0006\u0010\u0017\u001a\u00020\u00142\u0006\u0010\u0018\u001a\u00020\u00142\u0006\u0010\u0019\u001a\u00020\u0014H\u0016\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006\u001a"}, d2 = {"androidx/compose/ui/text/input/TextInputServiceAndroid$createInputConnection$1", "Landroidx/compose/ui/text/input/InputEventCallback2;", "onConnectionClosed", "", "inputConnection", "Landroidx/compose/ui/text/input/RecordingInputConnection;", "onEditCommands", "editCommands", "", "Landroidx/compose/ui/text/input/EditCommand;", "onImeAction", "imeAction", "Landroidx/compose/ui/text/input/ImeAction;", "onImeAction-KlQnJC8", "(I)V", "onKeyEvent", NotificationCompat.CATEGORY_EVENT, "Landroid/view/KeyEvent;", "onRequestCursorAnchorInfo", "immediate", "", "monitor", "includeInsertionMarker", "includeCharacterBounds", "includeEditorBounds", "includeLineBounds", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class AnonymousClass1 implements InputEventCallback2 {
         AnonymousClass1() {
@@ -149,7 +149,7 @@ public final class TextInputServiceAndroid implements PlatformTextInputService {
         }
 
         @Override // androidx.compose.ui.text.input.InputEventCallback2
-        /* JADX INFO: renamed from: onImeAction-KlQnJC8 */
+        /* INFO: renamed from: onImeAction-KlQnJC8 */
         public void mo2575onImeActionKlQnJC8(int imeAction) {
             TextInputServiceAndroid.this.onImeActionPerformed.invoke(ImeAction.m2544boximpl(imeAction));
         }
@@ -176,7 +176,7 @@ public final class TextInputServiceAndroid implements PlatformTextInputService {
         }
     }
 
-    /* JADX INFO: renamed from: isEditorFocused, reason: from getter */
+    /* INFO: renamed from: isEditorFocused, reason: from getter */
     public final boolean getEditorHasFocus() {
         return this.editorHasFocus;
     }
@@ -196,8 +196,8 @@ public final class TextInputServiceAndroid implements PlatformTextInputService {
         sendInputCommand(TextInputCommand.StartInput);
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.text.input.TextInputServiceAndroid$stopInput$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: TextInputServiceAndroid.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.text.input.TextInputServiceAndroid$stopInput$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: TextInputServiceAndroid.android.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "it", "", "Landroidx/compose/ui/text/input/EditCommand;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01371 extends Lambda implements Function1<List<? extends EditCommand>, Unit> {
         public static final C01371 INSTANCE = new C01371();
@@ -206,7 +206,7 @@ public final class TextInputServiceAndroid implements PlatformTextInputService {
             super(1);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<? extends EditCommand> list) {
         }
 
@@ -226,8 +226,8 @@ public final class TextInputServiceAndroid implements PlatformTextInputService {
         sendInputCommand(TextInputCommand.StopInput);
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.text.input.TextInputServiceAndroid$stopInput$2, reason: invalid class name */
-    /* JADX INFO: compiled from: TextInputServiceAndroid.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.text.input.TextInputServiceAndroid$stopInput$2, reason: invalid class name */
+    /* INFO: compiled from: TextInputServiceAndroid.android.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "it", "Landroidx/compose/ui/text/input/ImeAction;", "invoke-KlQnJC8", "(I)V"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda implements Function1<ImeAction, Unit> {
         public static final AnonymousClass2 INSTANCE = new AnonymousClass2();
@@ -236,7 +236,7 @@ public final class TextInputServiceAndroid implements PlatformTextInputService {
             super(1);
         }
 
-        /* JADX INFO: renamed from: invoke-KlQnJC8, reason: not valid java name */
+        /* INFO: renamed from: invoke-KlQnJC8, reason: not valid java name */
         public final void m2624invokeKlQnJC8(int i) {
         }
 
@@ -266,13 +266,13 @@ public final class TextInputServiceAndroid implements PlatformTextInputService {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void sendInputCommand$lambda$1(TextInputServiceAndroid textInputServiceAndroid) {
         textInputServiceAndroid.frameCallback = null;
         textInputServiceAndroid.processInputCommands();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private final void processInputCommands() {
         Ref.ObjectRef objectRef = new Ref.ObjectRef();
         Ref.ObjectRef objectRef2 = new Ref.ObjectRef();
@@ -299,10 +299,10 @@ public final class TextInputServiceAndroid implements PlatformTextInputService {
         }
     }
 
-    /* JADX WARN: Type inference failed for: r2v0, types: [T, java.lang.Boolean] */
-    /* JADX WARN: Type inference failed for: r4v1, types: [T, java.lang.Boolean] */
-    /* JADX WARN: Type inference failed for: r4v2, types: [T, java.lang.Boolean] */
-    /* JADX WARN: Type inference failed for: r4v3, types: [T, java.lang.Boolean] */
+    /* WARN: Type inference failed for: r2v0, types: [T, java.lang.Boolean] */
+    /* WARN: Type inference failed for: r4v1, types: [T, java.lang.Boolean] */
+    /* WARN: Type inference failed for: r4v2, types: [T, java.lang.Boolean] */
+    /* WARN: Type inference failed for: r4v3, types: [T, java.lang.Boolean] */
     private static final void processInputCommands$applyToState(TextInputCommand textInputCommand, Ref.ObjectRef<Boolean> objectRef, Ref.ObjectRef<Boolean> objectRef2) {
         int i = WhenMappings.$EnumSwitchMapping$0[textInputCommand.ordinal()];
         if (i == 1) {

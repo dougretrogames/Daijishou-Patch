@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 import javax.annotation.Nullable;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Metadata {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     public static final String BINARY_HEADER_SUFFIX = "-bin";
@@ -58,7 +58,7 @@ public final class Metadata {
         byte[] toAsciiString(T t);
     }
 
-    /* JADX INFO: renamed from: io.grpc.Metadata$1, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.Metadata$1, reason: invalid class name */
     class AnonymousClass1 implements BinaryMarshaller<byte[]> {
         @Override // io.grpc.Metadata.BinaryMarshaller
         public byte[] parseBytes(byte[] bArr) {
@@ -74,7 +74,7 @@ public final class Metadata {
         }
     }
 
-    /* JADX INFO: renamed from: io.grpc.Metadata$2, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.Metadata$2, reason: invalid class name */
     class AnonymousClass2 implements AsciiMarshaller<String> {
         @Override // io.grpc.Metadata.AsciiMarshaller
         public String parseAsciiString(String str) {
@@ -103,7 +103,7 @@ public final class Metadata {
         this.namesAndValues = objArr;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public byte[] name(int i) {
         return (byte[]) this.namesAndValues[i * 2];
     }
@@ -140,7 +140,7 @@ public final class Metadata {
         return objValue instanceof byte[] ? objValue : ((LazyValue) objValue).toStream();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public <T> T valueAsT(int i, Key<T> key) {
         Object objValue = value(i);
         if (objValue instanceof byte[]) {
@@ -204,7 +204,7 @@ public final class Metadata {
             this.startIdx = i;
         }
 
-        /* JADX INFO: renamed from: io.grpc.Metadata$IterableAt$1, reason: invalid class name */
+        /* INFO: renamed from: io.grpc.Metadata$IterableAt$1, reason: invalid class name */
         class AnonymousClass1 implements Iterator<T> {
             private boolean hasNext = true;
             private int idx;
@@ -432,7 +432,7 @@ public final class Metadata {
         return sb.append(')').toString();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean bytesEqual(byte[] bArr, byte[] bArr2) {
         return Arrays.equals(bArr, bArr2);
     }
@@ -699,7 +699,7 @@ public final class Metadata {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte[] streamToBytes(InputStream inputStream) {
         try {
             return ByteStreams.toByteArray(inputStream);

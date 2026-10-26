@@ -19,15 +19,15 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Ref;
 
-/* JADX INFO: compiled from: ChoosePlayableItemFromLibraryDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ChoosePlayableItemFromLibraryDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\u0018\u0000 \u00052\u00020\u0001:\u0001\u0005B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u0003\u001a\u00020\u0004H\u0016¨\u0006\u0006"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/ChoosePlayableItemFromLibraryDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/PlayableItemCollectionDialogFragment;", "()V", "onStart", "", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class ChoosePlayableItemFromLibraryDialogFragment extends PlayableItemCollectionDialogFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
 
-    /* JADX INFO: compiled from: ChoosePlayableItemFromLibraryDialogFragment.kt */
+    /* INFO: compiled from: ChoosePlayableItemFromLibraryDialogFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002JD\u0010\u0003\u001a\u00020\u00042\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\b2\b\b\u0002\u0010\n\u001a\u00020\b2\b\b\u0002\u0010\u000b\u001a\u00020\b2\b\b\u0002\u0010\f\u001a\u00020\b¨\u0006\r"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/ChoosePlayableItemFromLibraryDialogFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/dialog_fragments/ChoosePlayableItemFromLibraryDialogFragment;", "title", "", "populateList", "", "itemFIOF", "withVisibility", "visibility", "doNotMerge", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -70,7 +70,7 @@ public final class ChoosePlayableItemFromLibraryDialogFragment extends PlayableI
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment, androidx.fragment.app.DialogFragment, androidx.fragment.app.Fragment
     public void onStart() {
         super.onStart();
@@ -98,7 +98,7 @@ public final class ChoosePlayableItemFromLibraryDialogFragment extends PlayableI
         ((DaijishouApplication) application).getDaijishouLibraryRepository().countAllPlayableItemsByVisibility(z3).observe(getViewLifecycleOwner(), new ChoosePlayableItemFromLibraryDialogFragment$sam$androidx_lifecycle_Observer$0(new AnonymousClass2(objectRef, z, this, z4, z2, z3)));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onStart$refreshItems(Ref.ObjectRef<String> objectRef, boolean z, ChoosePlayableItemFromLibraryDialogFragment choosePlayableItemFromLibraryDialogFragment, boolean z2, boolean z3, boolean z4) {
         if (Intrinsics.areEqual(objectRef.element, "") && !z) {
             choosePlayableItemFromLibraryDialogFragment.setPlayableItemCollection(CollectionsKt.emptyList());
@@ -113,8 +113,8 @@ public final class ChoosePlayableItemFromLibraryDialogFragment extends PlayableI
         choosePlayableItemFromLibraryDialogFragment.setPlayableItemCollection(DaijishouLibraryModel.searchPlayableItemsByKeyword$default(choosePlayableItemFromLibraryDialogFragment.getDaijishouLibrary(), objectRef.element, 64, false, z3, z4, 4, null));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.ChoosePlayableItemFromLibraryDialogFragment$onStart$1, reason: invalid class name */
-    /* JADX INFO: compiled from: ChoosePlayableItemFromLibraryDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.ChoosePlayableItemFromLibraryDialogFragment$onStart$1, reason: invalid class name */
+    /* INFO: compiled from: ChoosePlayableItemFromLibraryDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0016\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00052\u0006\u0010\u0007\u001a\u00020\u0005H\n¢\u0006\u0004\b\b\u0010\t"}, d2 = {"<anonymous>", "", "newCharSequence", "", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "<anonymous parameter 3>", "invoke", "(Ljava/lang/CharSequence;III)Ljava/lang/Boolean;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda<Boolean> implements Function4<CharSequence, Integer, Integer, Integer, Boolean> {
         final /* synthetic */ boolean $doNotMerge;
@@ -124,7 +124,7 @@ public final class ChoosePlayableItemFromLibraryDialogFragment extends PlayableI
         final /* synthetic */ boolean $withVisibility;
         final /* synthetic */ ChoosePlayableItemFromLibraryDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Ref.ObjectRef<String> objectRef, boolean z, ChoosePlayableItemFromLibraryDialogFragment choosePlayableItemFromLibraryDialogFragment, boolean z2, boolean z3, boolean z4) {
             super(4);
             this.$searchText = objectRef;
@@ -140,7 +140,7 @@ public final class ChoosePlayableItemFromLibraryDialogFragment extends PlayableI
             return invoke(charSequence, num.intValue(), num2.intValue(), num3.intValue());
         }
 
-        /* JADX WARN: Type inference failed for: r7v1, types: [T, java.lang.String] */
+        /* WARN: Type inference failed for: r7v1, types: [T, java.lang.String] */
         public final Boolean invoke(CharSequence charSequence, int i, int i2, int i3) {
             this.$searchText.element = String.valueOf(charSequence);
             ChoosePlayableItemFromLibraryDialogFragment.onStart$refreshItems(this.$searchText, this.$populateList, this.this$0, this.$doNotMerge, this.$withVisibility, this.$visibility);
@@ -148,8 +148,8 @@ public final class ChoosePlayableItemFromLibraryDialogFragment extends PlayableI
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.ChoosePlayableItemFromLibraryDialogFragment$onStart$2, reason: invalid class name */
-    /* JADX INFO: compiled from: ChoosePlayableItemFromLibraryDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.ChoosePlayableItemFromLibraryDialogFragment$onStart$2, reason: invalid class name */
+    /* INFO: compiled from: ChoosePlayableItemFromLibraryDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ boolean $doNotMerge;
@@ -159,7 +159,7 @@ public final class ChoosePlayableItemFromLibraryDialogFragment extends PlayableI
         final /* synthetic */ boolean $withVisibility;
         final /* synthetic */ ChoosePlayableItemFromLibraryDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(Ref.ObjectRef<String> objectRef, boolean z, ChoosePlayableItemFromLibraryDialogFragment choosePlayableItemFromLibraryDialogFragment, boolean z2, boolean z3, boolean z4) {
             super(1);
             this.$searchText = objectRef;
@@ -176,7 +176,7 @@ public final class ChoosePlayableItemFromLibraryDialogFragment extends PlayableI
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             ChoosePlayableItemFromLibraryDialogFragment.onStart$refreshItems(this.$searchText, this.$populateList, this.this$0, this.$doNotMerge, this.$withVisibility, this.$visibility);
         }

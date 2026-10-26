@@ -22,7 +22,7 @@ import java.util.function.Function;
 import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock("Use ImmutableMap.of or another implementation")
 @ElementTypesAreNonnullByDefault
 public abstract class ImmutableMap<K, V> implements Map<K, V>, Serializable {
@@ -415,7 +415,7 @@ public abstract class ImmutableMap<K, V> implements Map<K, V>, Serializable {
             return new ImmutableMapKeySet(this);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.ImmutableMap$IteratorBasedImmutableMap$1EntrySetImpl, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.ImmutableMap$IteratorBasedImmutableMap$1EntrySetImpl, reason: invalid class name */
         class C1EntrySetImpl extends ImmutableMapEntrySet<K, V> {
             C1EntrySetImpl() {
             }
@@ -525,7 +525,7 @@ public abstract class ImmutableMap<K, V> implements Map<K, V>, Serializable {
         return immutableSetCreateKeySet;
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ImmutableMap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ImmutableMap$1, reason: invalid class name */
     class AnonymousClass1 extends UnmodifiableIterator<K> {
         final /* synthetic */ UnmodifiableIterator val$entryIterator;
 
@@ -620,7 +620,7 @@ public abstract class ImmutableMap<K, V> implements Map<K, V>, Serializable {
             return ImmutableMap.this.isHashCodeFast();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.ImmutableMap$MapViewOfValuesAsSingletonSets$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.ImmutableMap$MapViewOfValuesAsSingletonSets$1, reason: invalid class name */
         class AnonymousClass1 extends UnmodifiableIterator<Map.Entry<K, ImmutableSet<V>>> {
             final /* synthetic */ Iterator val$backingIterator;
 
@@ -633,7 +633,7 @@ public abstract class ImmutableMap<K, V> implements Map<K, V>, Serializable {
                 return this.val$backingIterator.hasNext();
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.ImmutableMap$MapViewOfValuesAsSingletonSets$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: renamed from: com.google.common.collect.ImmutableMap$MapViewOfValuesAsSingletonSets$1$1, reason: invalid class name and collision with other inner class name */
             class C00371 extends AbstractMapEntry<K, ImmutableSet<V>> {
                 final /* synthetic */ Map.Entry val$backingEntry;
 
@@ -720,7 +720,7 @@ public abstract class ImmutableMap<K, V> implements Map<K, V>, Serializable {
             return builderMakeBuilder.buildOrThrow();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         final Object legacyReadResolve() {
             Object[] objArr = (Object[]) this.keys;
             Object[] objArr2 = (Object[]) this.values;

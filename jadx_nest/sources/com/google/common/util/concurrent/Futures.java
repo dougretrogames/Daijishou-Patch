@@ -21,7 +21,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import javax.annotation.CheckForNull;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class Futures extends GwtFuturesCatchingSpecialization {
     private Futures() {
@@ -98,8 +98,8 @@ public final class Futures extends GwtFuturesCatchingSpecialization {
         return new AnonymousClass1(input, function);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [O] */
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.Futures$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [O] */
+    /* INFO: renamed from: com.google.common.util.concurrent.Futures$1, reason: invalid class name */
     class AnonymousClass1<O> implements Future<O> {
         final /* synthetic */ Function val$function;
         final /* synthetic */ Future val$input;
@@ -191,7 +191,7 @@ public final class Futures extends GwtFuturesCatchingSpecialization {
             return new CombinedFuture(this.futures, this.allMustSucceed, executor, combiner);
         }
 
-        /* JADX INFO: renamed from: com.google.common.util.concurrent.Futures$FutureCombiner$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.util.concurrent.Futures$FutureCombiner$1, reason: invalid class name */
         class AnonymousClass1 implements Callable<Void> {
             final /* synthetic */ Runnable val$combiner;
 
@@ -327,7 +327,7 @@ public final class Futures extends GwtFuturesCatchingSpecialization {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class InCompletionOrderState<T> {
         private volatile int delegateIndex;
         private final AtomicInteger incompleteOutputCount;
@@ -347,7 +347,7 @@ public final class Futures extends GwtFuturesCatchingSpecialization {
             this.incompleteOutputCount = new AtomicInteger(inputFutures.length);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void recordOutputCancellation(boolean interruptIfRunning) {
             this.wasCancelled = true;
             if (!interruptIfRunning) {
@@ -356,7 +356,7 @@ public final class Futures extends GwtFuturesCatchingSpecialization {
             recordCompletion();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void recordInputCompletion(ImmutableList<AbstractFuture<T>> delegates, int inputFutureIndex) {
             ListenableFuture<? extends T> listenableFuture = (ListenableFuture) Objects.requireNonNull(this.inputFutures[inputFutureIndex]);
             this.inputFutures[inputFutureIndex] = null;

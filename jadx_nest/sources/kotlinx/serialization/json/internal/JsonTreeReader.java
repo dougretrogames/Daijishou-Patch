@@ -25,8 +25,8 @@ import kotlinx.serialization.json.JsonNull;
 import kotlinx.serialization.json.JsonObject;
 import kotlinx.serialization.json.JsonPrimitive;
 
-/* JADX INFO: compiled from: JsonTreeReader.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: JsonTreeReader.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\b\u0000\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0006\u0010\f\u001a\u00020\rJ\b\u0010\u000e\u001a\u00020\rH\u0002J\b\u0010\u000f\u001a\u00020\rH\u0002J\b\u0010\u0010\u001a\u00020\rH\u0002J\u0017\u0010\u0011\u001a\u00020\u00122\f\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\r0\u0014H\u0082\bJ\u0010\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\bH\u0002J\u001e\u0010\u0010\u001a\u00020\r*\u000e\u0012\u0004\u0012\u00020\u0019\u0012\u0004\u0012\u00020\r0\u0018H\u0082@¢\u0006\u0002\u0010\u001aR\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001b"}, d2 = {"Lkotlinx/serialization/json/internal/JsonTreeReader;", "", "configuration", "Lkotlinx/serialization/json/JsonConfiguration;", "lexer", "Lkotlinx/serialization/json/internal/AbstractJsonLexer;", "(Lkotlinx/serialization/json/JsonConfiguration;Lkotlinx/serialization/json/internal/AbstractJsonLexer;)V", "isLenient", "", "stackDepth", "", "trailingCommaAllowed", "read", "Lkotlinx/serialization/json/JsonElement;", "readArray", "readDeepRecursive", "readObject", "readObjectImpl", "Lkotlinx/serialization/json/JsonObject;", "reader", "Lkotlin/Function0;", "readValue", "Lkotlinx/serialization/json/JsonPrimitive;", "isString", "Lkotlin/DeepRecursiveScope;", "", "(Lkotlin/DeepRecursiveScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "kotlinx-serialization-json"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class JsonTreeReader {
     private final boolean isLenient;
@@ -34,8 +34,8 @@ public final class JsonTreeReader {
     private int stackDepth;
     private final boolean trailingCommaAllowed;
 
-    /* JADX INFO: renamed from: kotlinx.serialization.json.internal.JsonTreeReader$readObject$2, reason: invalid class name */
-    /* JADX INFO: compiled from: JsonTreeReader.kt */
+    /* INFO: renamed from: kotlinx.serialization.json.internal.JsonTreeReader$readObject$2, reason: invalid class name */
+    /* INFO: compiled from: JsonTreeReader.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.serialization.json.internal.JsonTreeReader", f = "JsonTreeReader.kt", i = {0, 0, 0, 0}, l = {24}, m = "readObject", n = {"$this$readObject", "this_$iv", "result$iv", "key$iv"}, s = {"L$0", "L$1", "L$2", "L$3"})
     static final class AnonymousClass2 extends ContinuationImpl {
@@ -66,23 +66,23 @@ public final class JsonTreeReader {
         this.trailingCommaAllowed = configuration.getAllowTrailingComma();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:19:0x006d  */
-    /* JADX WARN: Code duplicated, block: B:21:0x0071  */
-    /* JADX WARN: Code duplicated, block: B:22:0x0078  */
-    /* JADX WARN: Code duplicated, block: B:25:0x0096 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:26:0x0097  */
-    /* JADX WARN: Code duplicated, block: B:29:0x00b1 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:30:0x00b3  */
-    /* JADX WARN: Code duplicated, block: B:31:0x00b5  */
-    /* JADX WARN: Code duplicated, block: B:33:0x00c8  */
-    /* JADX WARN: Code duplicated, block: B:7:0x0018  */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:26:0x0097 -> B:27:0x00a1). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
-        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:19:0x006d  */
+    /* WARN: Code duplicated, block: B:21:0x0071  */
+    /* WARN: Code duplicated, block: B:22:0x0078  */
+    /* WARN: Code duplicated, block: B:25:0x0096 A[RETURN] */
+    /* WARN: Code duplicated, block: B:26:0x0097  */
+    /* WARN: Code duplicated, block: B:29:0x00b1 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:30:0x00b3  */
+    /* WARN: Code duplicated, block: B:31:0x00b5  */
+    /* WARN: Code duplicated, block: B:33:0x00c8  */
+    /* WARN: Code duplicated, block: B:7:0x0018  */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:26:0x0097 -> B:27:0x00a1). Please report as a decompilation issue!!! */
+    /* ERROR: decompilerOverflowException in pass: RegionMakerVisitor
+        decompiler.core.utils.exceptions.decompilerOverflowException: Regions stack size limit reached
+        	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public final java.lang.Object readObject(kotlin.DeepRecursiveScope<kotlin.Unit, kotlinx.serialization.json.JsonElement> r20, kotlin.coroutines.Continuation<? super kotlinx.serialization.json.JsonElement> r21) throws java.lang.Throwable {
         /*
@@ -124,7 +124,7 @@ public final class JsonTreeReader {
         return new JsonObject(linkedHashMap);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final JsonElement readArray() {
         byte bConsumeNextToken = this.lexer.consumeNextToken();
         if (this.lexer.peekNextToken() == 4) {
@@ -157,7 +157,7 @@ public final class JsonTreeReader {
         return new JsonArray(arrayList);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final JsonPrimitive readValue(boolean isString) {
         String strConsumeStringLenient;
         if (this.isLenient || !isString) {
@@ -196,8 +196,8 @@ public final class JsonTreeReader {
         return object;
     }
 
-    /* JADX INFO: renamed from: kotlinx.serialization.json.internal.JsonTreeReader$readDeepRecursive$1, reason: invalid class name */
-    /* JADX INFO: compiled from: JsonTreeReader.kt */
+    /* INFO: renamed from: kotlinx.serialization.json.internal.JsonTreeReader$readDeepRecursive$1, reason: invalid class name */
+    /* INFO: compiled from: JsonTreeReader.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00010\u00022\u0006\u0010\u0004\u001a\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "Lkotlinx/serialization/json/JsonElement;", "Lkotlin/DeepRecursiveScope;", "", "it"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.serialization.json.internal.JsonTreeReader$readDeepRecursive$1", f = "JsonTreeReader.kt", i = {}, l = {115}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass1 extends RestrictedSuspendLambda implements Function3<DeepRecursiveScope<Unit, JsonElement>, Unit, Continuation<? super JsonElement>, Object> {

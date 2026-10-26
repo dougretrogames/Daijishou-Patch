@@ -3,8 +3,8 @@ package com.google.android.gms.internal.fido;
 import java.util.Iterator;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 final class zzax extends zzau {
     static final zzax zza;
     private static final Object[] zzd;
@@ -80,7 +80,7 @@ final class zzax extends zzau {
     }
 
     @Override // com.google.android.gms.internal.fido.zzau, com.google.android.gms.internal.fido.zzaq
-    /* JADX INFO: renamed from: zzd */
+    /* INFO: renamed from: zzd */
     public final zzaz iterator() {
         return zzg().listIterator(0);
     }

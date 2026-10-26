@@ -19,18 +19,18 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: RequestTask.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: RequestTask.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0000\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\r\u0012\u0006\u0010\u0003\u001a\u00020\u0004¢\u0006\u0002\u0010\u0005J\b\u0010\u001a\u001a\u00020\u0002H\u0016J \u0010\u001b\u001a\u0012\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00020\u001cj\u0002`\u001d2\u0006\u0010\u0003\u001a\u00020\u0004H\u0002J\u0010\u0010\u001e\u001a\u00020\u00042\u0006\u0010\u0003\u001a\u00020\u0004H\u0002J \u0010\u001f\u001a\u00020\u00022\u0016\u0010 \u001a\u0012\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00020\u001cj\u0002`\u001dH\u0002R\u001b\u0010\u0006\u001a\u00020\u00078BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\n\u0010\u000b\u001a\u0004\b\b\u0010\tR\u001b\u0010\f\u001a\u00020\r8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0010\u0010\u000b\u001a\u0004\b\u000e\u0010\u000fR+\u0010\u0011\u001a\u0012\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00130\u0012j\u0002`\u00148BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0017\u0010\u000b\u001a\u0004\b\u0015\u0010\u0016R\u0014\u0010\u0003\u001a\u00020\u0004X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019¨\u0006!"}, d2 = {"Lcom/github/kittinunf/fuel/core/requests/RequestTask;", "Ljava/util/concurrent/Callable;", "Lcom/github/kittinunf/fuel/core/Response;", "request", "Lcom/github/kittinunf/fuel/core/Request;", "(Lcom/github/kittinunf/fuel/core/Request;)V", "client", "Lcom/github/kittinunf/fuel/core/Client;", "getClient", "()Lcom/github/kittinunf/fuel/core/Client;", "client$delegate", "Lkotlin/Lazy;", "executor", "Lcom/github/kittinunf/fuel/core/RequestExecutionOptions;", "getExecutor", "()Lcom/github/kittinunf/fuel/core/RequestExecutionOptions;", "executor$delegate", "interruptCallback", "Lkotlin/Function1;", "", "Lcom/github/kittinunf/fuel/core/InterruptCallback;", "getInterruptCallback", "()Lkotlin/jvm/functions/Function1;", "interruptCallback$delegate", "getRequest$fuel", "()Lcom/github/kittinunf/fuel/core/Request;", NotificationCompat.CATEGORY_CALL, "executeRequest", "Lkotlin/Pair;", "Lcom/github/kittinunf/fuel/core/requests/RequestTaskResult;", "prepareRequest", "prepareResponse", "result", "fuel"}, k = 1, mv = {1, 4, 0})
 public final class RequestTask implements Callable<Response> {
 
-    /* JADX INFO: renamed from: client$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: client$delegate, reason: from kotlin metadata */
     private final Lazy client;
 
-    /* JADX INFO: renamed from: executor$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: executor$delegate, reason: from kotlin metadata */
     private final Lazy executor;
 
-    /* JADX INFO: renamed from: interruptCallback$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: interruptCallback$delegate, reason: from kotlin metadata */
     private final Lazy interruptCallback;
     private final Request request;
 
@@ -38,7 +38,7 @@ public final class RequestTask implements Callable<Response> {
         return (Client) this.client.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final RequestExecutionOptions getExecutor() {
         return (RequestExecutionOptions) this.executor.getValue();
     }
@@ -55,7 +55,7 @@ public final class RequestTask implements Callable<Response> {
         this.client = LazyKt.lazy(new RequestTask$client$2(this));
     }
 
-    /* JADX INFO: renamed from: getRequest$fuel, reason: from getter */
+    /* INFO: renamed from: getRequest$fuel, reason: from getter */
     public final Request getRequest() {
         return this.request;
     }
@@ -122,7 +122,7 @@ public final class RequestTask implements Callable<Response> {
         return (Response) objM3752constructorimpl2;
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // java.util.concurrent.Callable
     public Response call() throws Throwable {
         Object objM3752constructorimpl;

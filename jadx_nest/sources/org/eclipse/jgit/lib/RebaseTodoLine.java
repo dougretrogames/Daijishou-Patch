@@ -7,7 +7,7 @@ import org.apache.http.cookie.ClientCookie;
 import org.eclipse.jgit.errors.IllegalTodoFileModification;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RebaseTodoLine {
     Action action;
     String comment;
@@ -25,7 +25,7 @@ public class RebaseTodoLine {
         private final String shortToken;
         private final String token;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Action[] valuesCustom() {
             Action[] actionArrValuesCustom = values();
             int length = actionArrValuesCustom.length;

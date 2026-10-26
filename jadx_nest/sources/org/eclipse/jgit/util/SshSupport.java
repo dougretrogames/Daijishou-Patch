@@ -12,15 +12,15 @@ import org.eclipse.jgit.transport.URIish;
 import org.eclipse.jgit.util.io.MessageWriter;
 import org.eclipse.jgit.util.io.StreamCopyThread;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SshSupport {
-    /* JADX WARN: Code duplicated, block: B:102:0x00d5 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:104:? A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:67:0x00eb A[Catch: IllegalThreadStateException -> 0x010a, TryCatch #1 {IllegalThreadStateException -> 0x010a, blocks: (B:65:0x00e5, B:67:0x00eb, B:68:0x0106), top: B:81:0x00e5 }] */
-    /* JADX WARN: Code duplicated, block: B:74:0x012c  */
-    /* JADX WARN: Code duplicated, block: B:81:0x00e5 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:96:0x00dd A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Code duplicated, block: B:102:0x00d5 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:104:? A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:67:0x00eb A[Catch: IllegalThreadStateException -> 0x010a, TryCatch #1 {IllegalThreadStateException -> 0x010a, blocks: (B:65:0x00e5, B:67:0x00eb, B:68:0x0106), top: B:81:0x00e5 }] */
+    /* WARN: Code duplicated, block: B:74:0x012c  */
+    /* WARN: Code duplicated, block: B:81:0x00e5 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:96:0x00dd A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Multi-variable type inference failed */
     public static String runSshCommand(URIish uRIish, @Nullable CredentialsProvider credentialsProvider, FS fs, String str, int i) throws Throwable {
         RemoteSession session;
         Process processExec;

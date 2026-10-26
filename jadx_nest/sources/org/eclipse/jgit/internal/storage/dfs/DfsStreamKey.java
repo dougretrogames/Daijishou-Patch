@@ -5,7 +5,7 @@ import java.util.Arrays;
 import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.internal.storage.pack.PackExt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class DfsStreamKey {
     final int hash;
     final int packExtPos;

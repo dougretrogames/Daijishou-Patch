@@ -1,6 +1,6 @@
 package org.apache.http.pool;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface ConnPoolControl<T> {
     int getDefaultMaxPerRoute();
 

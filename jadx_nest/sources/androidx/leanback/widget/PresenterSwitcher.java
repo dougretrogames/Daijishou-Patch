@@ -3,7 +3,7 @@ package androidx.leanback.widget;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class PresenterSwitcher {
     private Presenter mCurrentPresenter;
     private Presenter.ViewHolder mCurrentViewHolder;

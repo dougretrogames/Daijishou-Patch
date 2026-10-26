@@ -2,7 +2,7 @@ package org.eclipse.jgit.revwalk;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class RewriteGenerator extends Generator {
     private static final int DUPLICATE = 16;
     private static final int REWRITE = 8;

@@ -22,7 +22,7 @@ import org.apache.commons.collections4.MapIterator;
 import org.apache.commons.collections4.iterators.EmptyIterator;
 import org.apache.commons.collections4.iterators.EmptyMapIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AbstractHashedMap<K, V> extends AbstractMap<K, V> implements IterableMap<K, V> {
     protected static final int DEFAULT_CAPACITY = 16;
     protected static final float DEFAULT_LOAD_FACTOR = 0.75f;
@@ -431,7 +431,7 @@ public class AbstractHashedMap<K, V> extends AbstractMap<K, V> implements Iterab
         this.size = 0;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // java.util.AbstractMap
     public AbstractHashedMap<K, V> clone() {
         try {
@@ -520,7 +520,7 @@ public class AbstractHashedMap<K, V> extends AbstractMap<K, V> implements Iterab
         hashEntry.value = null;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     protected void doReadObject(ObjectInputStream objectInputStream) throws IOException, ClassNotFoundException {
         this.loadFactor = objectInputStream.readFloat();
         int i = objectInputStream.readInt();

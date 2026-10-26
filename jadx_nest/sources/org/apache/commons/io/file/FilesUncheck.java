@@ -26,7 +26,7 @@ import java.util.function.BiPredicate;
 import java.util.stream.Stream;
 import org.apache.commons.io.function.Uncheck;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class FilesUncheck {
     public static long copy(InputStream inputStream, Path path, CopyOption... copyOptionArr) {
         return ((Long) Uncheck.apply(new FilesUncheck$$ExternalSyntheticLambda55(), inputStream, path, copyOptionArr)).longValue();

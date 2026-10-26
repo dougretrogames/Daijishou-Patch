@@ -8,12 +8,12 @@ import kotlin.jvm.internal.FloatCompanionObject;
 import kotlin.jvm.internal.Intrinsics;
 import org.apache.http.protocol.HTTP;
 
-/* JADX INFO: compiled from: Connector.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Connector.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0014\n\u0002\b\b\n\u0002\u0010\u0007\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0016\u0018\u0000 \u001e2\u00020\u0001:\u0002\u001e\u001fB\u001f\b\u0010\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006¢\u0006\u0002\u0010\u0007B9\b\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\b\u001a\u00020\u0003\u0012\u0006\u0010\t\u001a\u00020\u0003\u0012\u0006\u0010\n\u001a\u00020\u0006\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\f¢\u0006\u0002\u0010\rJ \u0010\u000b\u001a\u00020\f2\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u0015H\u0007J\u0012\u0010\u000b\u001a\u00020\f2\b\b\u0001\u0010\u0018\u001a\u00020\fH\u0017J5\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u00152\u0006\u0010\u001b\u001a\u00020\u0015H\u0010ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u001c\u0010\u001dR\u0011\u0010\u0004\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0019\u0010\n\u001a\u00020\u0006ø\u0001\u0000ø\u0001\u0001¢\u0006\n\n\u0002\u0010\u0012\u001a\u0004\b\u0010\u0010\u0011R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u000fR\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006 "}, d2 = {"Landroidx/compose/ui/graphics/colorspace/Connector;", "", "source", "Landroidx/compose/ui/graphics/colorspace/ColorSpace;", "destination", "intent", "Landroidx/compose/ui/graphics/colorspace/RenderIntent;", "(Landroidx/compose/ui/graphics/colorspace/ColorSpace;Landroidx/compose/ui/graphics/colorspace/ColorSpace;ILkotlin/jvm/internal/DefaultConstructorMarker;)V", "transformSource", "transformDestination", "renderIntent", "transform", "", "(Landroidx/compose/ui/graphics/colorspace/ColorSpace;Landroidx/compose/ui/graphics/colorspace/ColorSpace;Landroidx/compose/ui/graphics/colorspace/ColorSpace;Landroidx/compose/ui/graphics/colorspace/ColorSpace;I[FLkotlin/jvm/internal/DefaultConstructorMarker;)V", "getDestination", "()Landroidx/compose/ui/graphics/colorspace/ColorSpace;", "getRenderIntent-uksYyKA", "()I", "I", "getSource", "r", "", "g", "b", "v", "transformToColor", "Landroidx/compose/ui/graphics/Color;", "a", "transformToColor-wmQWz5c$ui_graphics_release", "(FFFF)J", "Companion", "RgbConnector", "ui-graphics_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public class Connector {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE;
     private static final Connector OklabToSrgbPerceptual;
     private static final Connector SrgbIdentity;
@@ -50,7 +50,7 @@ public class Connector {
         return this.destination;
     }
 
-    /* JADX INFO: renamed from: getRenderIntent-uksYyKA, reason: not valid java name and from getter */
+    /* INFO: renamed from: getRenderIntent-uksYyKA, reason: not valid java name and from getter */
     public final int getRenderIntent() {
         return this.renderIntent;
     }
@@ -74,7 +74,7 @@ public class Connector {
         return this.transformDestination.fromXyz(xyz);
     }
 
-    /* JADX INFO: renamed from: transformToColor-wmQWz5c$ui_graphics_release, reason: not valid java name */
+    /* INFO: renamed from: transformToColor-wmQWz5c$ui_graphics_release, reason: not valid java name */
     public long mo952transformToColorwmQWz5c$ui_graphics_release(float r, float g, float b, float a) {
         long xy$ui_graphics_release = this.transformSource.toXy$ui_graphics_release(r, g, b);
         FloatCompanionObject floatCompanionObject = FloatCompanionObject.INSTANCE;
@@ -93,7 +93,7 @@ public class Connector {
         return this.transformDestination.mo948xyzaToColorJlNiLsg$ui_graphics_release(f2, f, z$ui_graphics_release, a, this.destination);
     }
 
-    /* JADX INFO: compiled from: Connector.kt */
+    /* INFO: compiled from: Connector.kt */
     @Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0014\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0006\b\u0000\u0018\u00002\u00020\u0001B\u001f\b\u0000\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006¢\u0006\u0002\u0010\u0007J*\u0010\n\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\u00032\u0006\u0010\f\u001a\u00020\u00032\u0006\u0010\u0005\u001a\u00020\u0006H\u0002ø\u0001\u0000¢\u0006\u0004\b\r\u0010\u000eJ\u0010\u0010\u000f\u001a\u00020\t2\u0006\u0010\u0010\u001a\u00020\tH\u0016J5\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u00142\u0006\u0010\u0016\u001a\u00020\u00142\u0006\u0010\u0017\u001a\u00020\u0014H\u0010ø\u0001\u0001ø\u0001\u0000¢\u0006\u0004\b\u0018\u0010\u0019R\u000e\u0010\u0004\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006\u001a"}, d2 = {"Landroidx/compose/ui/graphics/colorspace/Connector$RgbConnector;", "Landroidx/compose/ui/graphics/colorspace/Connector;", "mSource", "Landroidx/compose/ui/graphics/colorspace/Rgb;", "mDestination", "intent", "Landroidx/compose/ui/graphics/colorspace/RenderIntent;", "(Landroidx/compose/ui/graphics/colorspace/Rgb;Landroidx/compose/ui/graphics/colorspace/Rgb;ILkotlin/jvm/internal/DefaultConstructorMarker;)V", "mTransform", "", "computeTransform", "source", "destination", "computeTransform-YBCOT_4", "(Landroidx/compose/ui/graphics/colorspace/Rgb;Landroidx/compose/ui/graphics/colorspace/Rgb;I)[F", "transform", "v", "transformToColor", "Landroidx/compose/ui/graphics/Color;", "r", "", "g", "b", "a", "transformToColor-wmQWz5c$ui_graphics_release", "(FFFF)J", "ui-graphics_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class RgbConnector extends Connector {
         private final Rgb mDestination;
@@ -104,7 +104,7 @@ public class Connector {
             this(rgb, rgb2, i);
         }
 
-        /* JADX WARN: Illegal instructions before constructor call */
+        /* WARN: Illegal instructions before constructor call */
         private RgbConnector(Rgb rgb, Rgb rgb2, int i) {
             Rgb rgb3 = rgb;
             Rgb rgb4 = rgb2;
@@ -127,7 +127,7 @@ public class Connector {
         }
 
         @Override // androidx.compose.ui.graphics.colorspace.Connector
-        /* JADX INFO: renamed from: transformToColor-wmQWz5c$ui_graphics_release */
+        /* INFO: renamed from: transformToColor-wmQWz5c$ui_graphics_release */
         public long mo952transformToColorwmQWz5c$ui_graphics_release(float r, float g, float b, float a) {
             float fInvoke = (float) this.mSource.getEotfFunc().invoke(r);
             float fInvoke2 = (float) this.mSource.getEotfFunc().invoke(g);
@@ -135,7 +135,7 @@ public class Connector {
             return ColorKt.Color((float) this.mDestination.getOetfFunc().invoke(ColorSpaceKt.mul3x3Float3_0(this.mTransform, fInvoke, fInvoke2, fInvoke3)), (float) this.mDestination.getOetfFunc().invoke(ColorSpaceKt.mul3x3Float3_1(this.mTransform, fInvoke, fInvoke2, fInvoke3)), (float) this.mDestination.getOetfFunc().invoke(ColorSpaceKt.mul3x3Float3_2(this.mTransform, fInvoke, fInvoke2, fInvoke3)), a, this.mDestination);
         }
 
-        /* JADX INFO: renamed from: computeTransform-YBCOT_4, reason: not valid java name */
+        /* INFO: renamed from: computeTransform-YBCOT_4, reason: not valid java name */
         private final float[] m955computeTransformYBCOT_4(Rgb source, Rgb destination, int intent) {
             if (ColorSpaceKt.compare(source.getWhitePoint(), destination.getWhitePoint())) {
                 return ColorSpaceKt.mul3x3(destination.getInverseTransform(), source.getTransform());
@@ -165,7 +165,7 @@ public class Connector {
         }
     }
 
-    /* JADX INFO: compiled from: Connector.kt */
+    /* INFO: compiled from: Connector.kt */
     @Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0014\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\b\u0080\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J,\u0010\u000b\u001a\u0004\u0018\u00010\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u000e2\u0006\u0010\u0010\u001a\u00020\u0011H\u0002ø\u0001\u0000¢\u0006\u0004\b\u0012\u0010\u0013J\u0015\u0010\u0014\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u000eH\u0000¢\u0006\u0002\b\u0015R\u0014\u0010\u0003\u001a\u00020\u0004X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\u0004X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u0014\u0010\t\u001a\u00020\u0004X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u0006\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006\u0016"}, d2 = {"Landroidx/compose/ui/graphics/colorspace/Connector$Companion;", "", "()V", "OklabToSrgbPerceptual", "Landroidx/compose/ui/graphics/colorspace/Connector;", "getOklabToSrgbPerceptual$ui_graphics_release", "()Landroidx/compose/ui/graphics/colorspace/Connector;", "SrgbIdentity", "getSrgbIdentity$ui_graphics_release", "SrgbToOklabPerceptual", "getSrgbToOklabPerceptual$ui_graphics_release", "computeTransform", "", "source", "Landroidx/compose/ui/graphics/colorspace/ColorSpace;", "destination", "intent", "Landroidx/compose/ui/graphics/colorspace/RenderIntent;", "computeTransform-YBCOT_4", "(Landroidx/compose/ui/graphics/colorspace/ColorSpace;Landroidx/compose/ui/graphics/colorspace/ColorSpace;I)[F", HTTP.IDENTITY_CODING, "identity$ui_graphics_release", "ui-graphics_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -175,8 +175,8 @@ public class Connector {
         private Companion() {
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
-        /* JADX INFO: renamed from: computeTransform-YBCOT_4, reason: not valid java name */
+        /* INFO: Access modifiers changed from: private */
+        /* INFO: renamed from: computeTransform-YBCOT_4, reason: not valid java name */
         public final float[] m954computeTransformYBCOT_4(ColorSpace source, ColorSpace destination, int intent) {
             if (!RenderIntent.m959equalsimpl0(intent, RenderIntent.INSTANCE.m963getAbsoluteuksYyKA())) {
                 return null;

@@ -3,7 +3,7 @@ package io.opencensus.metrics;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_MetricOptions extends MetricOptions {
     private final Map<LabelKey, LabelValue> constantLabels;
     private final String description;

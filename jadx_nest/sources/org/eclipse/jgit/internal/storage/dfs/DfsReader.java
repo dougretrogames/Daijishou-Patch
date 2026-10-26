@@ -40,7 +40,7 @@ import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.util.BlockList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsReader extends ObjectReader implements ObjectReuseAsIs {
     private static final int MAX_RESOLVE_MATCHES = 256;
     private boolean avoidUnreachable;
@@ -224,10 +224,10 @@ public class DfsReader extends ObjectReader implements ObjectReuseAsIs {
         return i == 0 ? Long.signum(foundObject.offset - foundObject2.offset) : i;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class FoundObject<T extends ObjectId> {
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         final T f119id;
         final long offset;
         final DfsPackFile pack;
@@ -344,8 +344,8 @@ public class DfsReader extends ObjectReader implements ObjectReuseAsIs {
         return new AnonymousClass1(iterableEmptyList.iterator(), e);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.dfs.DfsReader$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.dfs.DfsReader$1, reason: invalid class name */
     class AnonymousClass1<T> implements AsyncObjectLoaderQueue<T> {
         private FoundObject<T> cur;
         private final /* synthetic */ IOException val$findAllError;
@@ -378,7 +378,7 @@ public class DfsReader extends ObjectReader implements ObjectReuseAsIs {
             throw iOException;
         }
 
-        /* JADX WARN: Incorrect return type in method signature: ()TT; */
+        /* WARN: Incorrect return type in method signature: ()TT; */
         @Override // org.eclipse.jgit.lib.AsyncObjectLoaderQueue
         public ObjectId getCurrent() {
             return this.cur.f119id;
@@ -411,8 +411,8 @@ public class DfsReader extends ObjectReader implements ObjectReuseAsIs {
         return new AnonymousClass2(iterableEmptyList.iterator(), e);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.dfs.DfsReader$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.dfs.DfsReader$2, reason: invalid class name */
     class AnonymousClass2<T> implements AsyncObjectSizeQueue<T> {
         private FoundObject<T> cur;
         private long sz;
@@ -451,7 +451,7 @@ public class DfsReader extends ObjectReader implements ObjectReuseAsIs {
             throw iOException;
         }
 
-        /* JADX WARN: Incorrect return type in method signature: ()TT; */
+        /* WARN: Incorrect return type in method signature: ()TT; */
         @Override // org.eclipse.jgit.lib.AsyncObjectSizeQueue
         public ObjectId getCurrent() {
             return this.cur.f119id;

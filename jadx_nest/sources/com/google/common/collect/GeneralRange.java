@@ -9,7 +9,7 @@ import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class GeneralRange<T> implements Serializable {
     private final Comparator<? super T> comparator;
@@ -87,7 +87,7 @@ final class GeneralRange<T> implements Serializable {
         return this.hasUpperBound;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     boolean isEmpty() {
         if (hasUpperBound() && tooLow(NullnessCasts.uncheckedCastNullableTToT(getUpperEndpoint()))) {
             return true;

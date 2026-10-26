@@ -7,7 +7,7 @@ import java.nio.CharBuffer;
 import java.util.Objects;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class CharSequenceReader extends Reader {
     private int mark;

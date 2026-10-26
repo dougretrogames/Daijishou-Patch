@@ -4,8 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import com.google.android.gms.internal.p001authapiphone.zzab;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
+/* INFO: loaded from: classes3.dex */
 public final class SmsRetriever {
     public static final String EXTRA_CONSENT_INTENT = "com.google.android.gms.auth.api.phone.EXTRA_CONSENT_INTENT";
     public static final String EXTRA_SIM_SUBSCRIPTION_ID = "com.google.android.gms.auth.api.phone.EXTRA_SIM_SUBSCRIPTION_ID";

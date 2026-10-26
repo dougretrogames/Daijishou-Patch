@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class MapRetrievalCache<K, V> extends MapIteratorCache<K, V> {
 
@@ -18,7 +18,7 @@ final class MapRetrievalCache<K, V> extends MapIteratorCache<K, V> {
         super(backingMap);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.MapIteratorCache
     @CheckForNull
     V get(Object key) {

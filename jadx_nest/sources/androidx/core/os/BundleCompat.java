@@ -9,7 +9,7 @@ import androidx.annotation.ReplaceWith;
 import java.io.Serializable;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class BundleCompat {
     private BundleCompat() {
     }

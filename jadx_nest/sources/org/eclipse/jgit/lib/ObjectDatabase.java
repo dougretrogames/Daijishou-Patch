@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class ObjectDatabase implements AutoCloseable {
     private static final Set<ObjectId> shallowCommits = Collections.emptySet();
 

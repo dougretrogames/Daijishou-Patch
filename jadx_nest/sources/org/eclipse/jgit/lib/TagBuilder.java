@@ -11,7 +11,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.revwalk.RevObject;
 import org.eclipse.jgit.util.References;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TagBuilder extends ObjectBuilder {
     private ObjectId object;
     private String tag;

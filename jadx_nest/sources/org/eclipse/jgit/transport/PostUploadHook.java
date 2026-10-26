@@ -2,7 +2,7 @@ package org.eclipse.jgit.transport;
 
 import org.eclipse.jgit.storage.pack.PackStatistics;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface PostUploadHook {
     public static final PostUploadHook NULL = new PostUploadHook$$ExternalSyntheticLambda0();
 

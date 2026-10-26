@@ -39,7 +39,7 @@ import java.text.SimpleDateFormat;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MaterialDatePicker<S> extends DialogFragment {
     private static final String CALENDAR_CONSTRAINTS_KEY = "CALENDAR_CONSTRAINTS_KEY";
     private static final String DATE_SELECTOR_KEY = "DATE_SELECTOR_KEY";
@@ -268,12 +268,12 @@ public final class MaterialDatePicker<S> extends DialogFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialDatePicker$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialDatePicker$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // android.view.View.OnClickListener
         public void onClick(View view) {
             Iterator it = MaterialDatePicker.this.onPositiveButtonClickListeners.iterator();
@@ -284,7 +284,7 @@ public final class MaterialDatePicker<S> extends DialogFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialDatePicker$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialDatePicker$2, reason: invalid class name */
     class AnonymousClass2 implements View.OnClickListener {
         AnonymousClass2() {
         }
@@ -363,7 +363,7 @@ public final class MaterialDatePicker<S> extends DialogFragment {
         this.edgeToEdgeEnabled = true;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialDatePicker$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialDatePicker$3, reason: invalid class name */
     class AnonymousClass3 implements OnApplyWindowInsetsListener {
         final /* synthetic */ View val$headerLayout;
         final /* synthetic */ int val$originalHeaderHeight;
@@ -418,7 +418,7 @@ public final class MaterialDatePicker<S> extends DialogFragment {
         this.pickerFragment.addOnSelectionChangedListener(new AnonymousClass4());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialDatePicker$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialDatePicker$4, reason: invalid class name */
     class AnonymousClass4 extends OnSelectionChangedListener<S> {
         AnonymousClass4() {
         }
@@ -445,7 +445,7 @@ public final class MaterialDatePicker<S> extends DialogFragment {
         this.headerToggleButton.setOnClickListener(new MaterialDatePicker$$ExternalSyntheticLambda0(this));
     }
 
-    /* JADX INFO: renamed from: lambda$initHeaderToggle$0$com-google-android-material-datepicker-MaterialDatePicker, reason: not valid java name */
+    /* INFO: renamed from: lambda$initHeaderToggle$0$com-google-android-material-datepicker-MaterialDatePicker, reason: not valid java name */
     /* synthetic */ void m3307x8a93f18a(View view) {
         this.confirmButton.setEnabled(getDateSelector().isSelectionComplete());
         this.headerToggleButton.toggle();
@@ -464,7 +464,7 @@ public final class MaterialDatePicker<S> extends DialogFragment {
         this.headerToggleButton.setContentDescription(string);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public DateSelector<S> getDateSelector() {
         if (this.dateSelector == null) {
             this.dateSelector = (DateSelector) getArguments().getParcelable(DATE_SELECTOR_KEY);

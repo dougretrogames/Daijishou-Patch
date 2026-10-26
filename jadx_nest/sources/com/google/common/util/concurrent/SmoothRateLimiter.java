@@ -3,7 +3,7 @@ package com.google.common.util.concurrent;
 import com.google.common.math.LongMath;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 abstract class SmoothRateLimiter extends RateLimiter {
     double maxPermits;

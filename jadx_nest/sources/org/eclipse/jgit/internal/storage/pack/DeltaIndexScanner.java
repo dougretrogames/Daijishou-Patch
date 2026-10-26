@@ -1,6 +1,6 @@
 package org.eclipse.jgit.internal.storage.pack;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class DeltaIndexScanner {
     final long[] entries;
     private int entryCnt;

@@ -9,7 +9,7 @@ import okhttp3.ResponseBody;
 import retrofit2.Converter;
 import retrofit2.Retrofit;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public final class GsonConverterFactory extends Converter.Factory {
     private final Gson gson;
 

@@ -5,7 +5,7 @@ import android.content.Context;
 import android.os.Binder;
 import android.os.Build;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class AppOpsManagerCompat {
     public static final int MODE_ALLOWED = 0;
     public static final int MODE_DEFAULT = 3;

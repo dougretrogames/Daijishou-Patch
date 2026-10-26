@@ -6,9 +6,9 @@ import java.util.Set;
 import org.apache.commons.collections4.SetUtils;
 import org.apache.commons.collections4.SetValuedMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractSetValuedMap<K, V> extends AbstractMultiValuedMap<K, V> implements SetValuedMap<K, V> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.multimap.AbstractMultiValuedMap
     public abstract Set<V> createCollection();
 
@@ -57,7 +57,7 @@ public abstract class AbstractSetValuedMap<K, V> extends AbstractMultiValuedMap<
         return SetUtils.emptyIfNull(getMap().remove(obj));
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // org.apache.commons.collections4.multimap.AbstractMultiValuedMap
     public Set<V> wrappedCollection(K k) {
         return new WrappedSet(k);

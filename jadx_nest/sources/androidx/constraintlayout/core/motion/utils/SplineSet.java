@@ -9,7 +9,7 @@ import java.text.DecimalFormat;
 import java.util.Arrays;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class SplineSet {
     private static final String TAG = "SplineSet";
     private int mCount;
@@ -61,7 +61,7 @@ public abstract class SplineSet {
         this.mCount = i2 + 1;
     }
 
-    /* JADX WARN: Code duplicated, block: B:19:0x0048  */
+    /* WARN: Code duplicated, block: B:19:0x0048  */
     public void setup(int i) {
         int i2 = this.mCount;
         if (i2 == 0) {

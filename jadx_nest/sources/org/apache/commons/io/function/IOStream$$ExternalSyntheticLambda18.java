@@ -5,8 +5,8 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.BiFunction;
 import java.util.function.Consumer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class IOStream$$ExternalSyntheticLambda18 implements Consumer {
     public final /* synthetic */ IOConsumer f$0;
     public final /* synthetic */ AtomicReference f$1;

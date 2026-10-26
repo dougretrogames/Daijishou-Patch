@@ -6,7 +6,7 @@ import androidx.core.text.ICUCompat;
 import java.util.Locale;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class LocaleListCompat {
     private static final LocaleListCompat sEmptyLocaleList = create(new Locale[0]);
     private final LocaleListInterface mImpl;

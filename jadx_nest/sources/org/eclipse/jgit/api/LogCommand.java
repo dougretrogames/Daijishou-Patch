@@ -26,7 +26,7 @@ import org.eclipse.jgit.treewalk.filter.PathFilter;
 import org.eclipse.jgit.treewalk.filter.PathFilterGroup;
 import org.eclipse.jgit.treewalk.filter.TreeFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LogCommand extends GitCommand<Iterable<RevCommit>> {
     private final List<TreeFilter> excludeTreeFilters;
     private int maxCount;

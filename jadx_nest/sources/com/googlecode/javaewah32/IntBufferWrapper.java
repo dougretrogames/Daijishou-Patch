@@ -2,7 +2,7 @@ package com.googlecode.javaewah32;
 
 import java.nio.IntBuffer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class IntBufferWrapper implements Buffer32, Cloneable {
     private int actualSizeInWords;
     private IntBuffer buffer;
@@ -131,7 +131,7 @@ final class IntBufferWrapper implements Buffer32, Cloneable {
     }
 
     @Override // com.googlecode.javaewah32.Buffer32
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public IntBufferWrapper m3475clone() throws CloneNotSupportedException {
         return new IntBufferWrapper(this.buffer, this.actualSizeInWords);
     }

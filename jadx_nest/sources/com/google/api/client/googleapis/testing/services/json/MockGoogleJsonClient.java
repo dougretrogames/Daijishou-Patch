@@ -6,7 +6,7 @@ import com.google.api.client.http.HttpRequestInitializer;
 import com.google.api.client.http.HttpTransport;
 import com.google.api.client.json.JsonFactory;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockGoogleJsonClient extends AbstractGoogleJsonClient {
     protected MockGoogleJsonClient(Builder builder) {
         super(builder);

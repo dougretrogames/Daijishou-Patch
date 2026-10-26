@@ -21,7 +21,7 @@ import java.util.function.ToIntFunction;
 import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Multisets {
     private Multisets() {
@@ -31,7 +31,7 @@ public final class Multisets {
         return CollectCollectors.toMultiset(elementFunction, countFunction, multisetSupplier);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <E> Multiset<E> unmodifiableMultiset(Multiset<? extends E> multiset) {
         return ((multiset instanceof UnmodifiableMultiset) || (multiset instanceof ImmutableMultiset)) ? multiset : new UnmodifiableMultiset((Multiset) Preconditions.checkNotNull(multiset));
     }
@@ -57,7 +57,7 @@ public final class Multisets {
             this.delegate = delegate;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingMultiset, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Multiset<E> delegate() {
             return this.delegate;
@@ -221,7 +221,7 @@ public final class Multisets {
             return Sets.filter(this.unfiltered.entrySet(), new AnonymousClass1());
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Multisets$FilteredMultiset$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Multisets$FilteredMultiset$1, reason: invalid class name */
         class AnonymousClass1 implements Predicate<Multiset.Entry<E>> {
             AnonymousClass1() {
             }
@@ -278,13 +278,13 @@ public final class Multisets {
         return new AnonymousClass1(multiset1, multiset2);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Multisets$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Multisets$1, reason: invalid class name */
     class AnonymousClass1<E> extends ViewMultiset<E> {
         final /* synthetic */ Multiset val$multiset1;
         final /* synthetic */ Multiset val$multiset2;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(final Multiset val$multiset1, final Multiset val$multiset2) {
             super(null);
             this.val$multiset1 = val$multiset1;
@@ -321,7 +321,7 @@ public final class Multisets {
             return new C00411(this.val$multiset1.entrySet().iterator(), this.val$multiset2.entrySet().iterator());
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Multisets$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.google.common.collect.Multisets$1$1, reason: invalid class name and collision with other inner class name */
         class C00411 extends AbstractIterator<Multiset.Entry<E>> {
             final /* synthetic */ Iterator val$iterator1;
             final /* synthetic */ Iterator val$iterator2;
@@ -331,7 +331,7 @@ public final class Multisets {
                 this.val$iterator2 = val$iterator2;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
             public Multiset.Entry<E> computeNext() {
@@ -358,13 +358,13 @@ public final class Multisets {
         return new AnonymousClass2(multiset1, multiset2);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Multisets$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Multisets$2, reason: invalid class name */
     class AnonymousClass2<E> extends ViewMultiset<E> {
         final /* synthetic */ Multiset val$multiset1;
         final /* synthetic */ Multiset val$multiset2;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(final Multiset val$multiset1, final Multiset val$multiset2) {
             super(null);
             this.val$multiset1 = val$multiset1;
@@ -395,7 +395,7 @@ public final class Multisets {
             return new AnonymousClass1(this.val$multiset1.entrySet().iterator());
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Multisets$2$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Multisets$2$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<Multiset.Entry<E>> {
             final /* synthetic */ Iterator val$iterator1;
 
@@ -403,7 +403,7 @@ public final class Multisets {
                 this.val$iterator1 = val$iterator1;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
             public Multiset.Entry<E> computeNext() {
@@ -426,13 +426,13 @@ public final class Multisets {
         return new AnonymousClass3(multiset1, multiset2);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Multisets$3, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Multisets$3, reason: invalid class name */
     class AnonymousClass3<E> extends ViewMultiset<E> {
         final /* synthetic */ Multiset val$multiset1;
         final /* synthetic */ Multiset val$multiset2;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(final Multiset val$multiset1, final Multiset val$multiset2) {
             super(null);
             this.val$multiset1 = val$multiset1;
@@ -474,7 +474,7 @@ public final class Multisets {
             return new AnonymousClass1(this.val$multiset1.entrySet().iterator(), this.val$multiset2.entrySet().iterator());
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Multisets$3$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Multisets$3$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<Multiset.Entry<E>> {
             final /* synthetic */ Iterator val$iterator1;
             final /* synthetic */ Iterator val$iterator2;
@@ -484,7 +484,7 @@ public final class Multisets {
                 this.val$iterator2 = val$iterator2;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
             public Multiset.Entry<E> computeNext() {
@@ -511,13 +511,13 @@ public final class Multisets {
         return new AnonymousClass4(multiset1, multiset2);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Multisets$4, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Multisets$4, reason: invalid class name */
     class AnonymousClass4<E> extends ViewMultiset<E> {
         final /* synthetic */ Multiset val$multiset1;
         final /* synthetic */ Multiset val$multiset2;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass4(final Multiset val$multiset1, final Multiset val$multiset2) {
             super(null);
             this.val$multiset1 = val$multiset1;
@@ -538,7 +538,7 @@ public final class Multisets {
             throw new UnsupportedOperationException();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Multisets$4$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Multisets$4$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<E> {
             final /* synthetic */ Iterator val$iterator1;
 
@@ -546,15 +546,15 @@ public final class Multisets {
                 this.val$iterator1 = val$iterator1;
             }
 
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+            /* WARN: Type inference fix 'apply assigned field type' failed
+            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+            	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+            	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+            	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
              */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
@@ -575,7 +575,7 @@ public final class Multisets {
             return new AnonymousClass1(this.val$multiset1.entrySet().iterator());
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Multisets$4$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Multisets$4$2, reason: invalid class name */
         class AnonymousClass2 extends AbstractIterator<Multiset.Entry<E>> {
             final /* synthetic */ Iterator val$iterator1;
 
@@ -583,7 +583,7 @@ public final class Multisets {
                 this.val$iterator1 = val$iterator1;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
             public Multiset.Entry<E> computeNext() {
@@ -794,14 +794,14 @@ public final class Multisets {
         return true;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: com.google.common.collect.Multisets$5, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: com.google.common.collect.Multisets$5, reason: invalid class name */
     class AnonymousClass5<E> extends TransformedIterator<Multiset.Entry<E>, E> {
         AnonymousClass5(Iterator backingIterator) {
             super(backingIterator);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.TransformedIterator
         @ParametricNullness
         public E transform(Multiset.Entry<E> entry) {
@@ -870,7 +870,7 @@ public final class Multisets {
             return false;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
         public boolean remove(@CheckForNull Object obj) {
             if (obj instanceof Multiset.Entry) {

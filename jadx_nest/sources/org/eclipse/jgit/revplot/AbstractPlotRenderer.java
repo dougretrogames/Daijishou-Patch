@@ -4,7 +4,7 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.revplot.PlotLane;
 import org.eclipse.jgit.revwalk.RevFlag;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractPlotRenderer<TLane extends PlotLane, TColor> {
     private static final int LANE_WIDTH = 14;
     private static final int LEFT_PAD = 2;

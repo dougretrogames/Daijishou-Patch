@@ -55,7 +55,7 @@ import org.apache.commons.collections4.iterators.ZippingIterator;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IteratorUtils {
     private static final String DEFAULT_TOSTRING_DELIMITER = ", ";
     public static final ResettableIterator EMPTY_ITERATOR = EmptyIterator.RESETTABLE_INSTANCE;
@@ -162,8 +162,8 @@ public class IteratorUtils {
         return new IteratorChain(it, it2);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.IteratorUtils$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.IteratorUtils$1, reason: invalid class name */
     class AnonymousClass1<E> extends LazyIteratorChain<E> {
         final /* synthetic */ Iterator val$iterators;
 

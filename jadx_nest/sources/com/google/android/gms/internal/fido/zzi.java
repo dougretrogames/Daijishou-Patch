@@ -5,8 +5,8 @@ import android.app.PendingIntent;
 import android.content.IntentSender;
 import com.google.android.gms.fido.fido2.Fido2PendingIntent;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public final class zzi implements Fido2PendingIntent {
     private final PendingIntent zza;

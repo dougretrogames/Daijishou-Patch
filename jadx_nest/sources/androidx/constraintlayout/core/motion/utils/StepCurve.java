@@ -4,7 +4,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import org.eclipse.jgit.transport.WalkEncryption;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class StepCurve extends Easing {
     private static final boolean DEBUG = false;
     MonotonicCurveFit mCurveFit;

@@ -5,8 +5,8 @@ import java.nio.file.Files;
 import java.nio.file.OpenOption;
 import org.apache.commons.io.function.IOSupplier;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class FileUtils$$ExternalSyntheticLambda0 implements IOSupplier {
     public final /* synthetic */ File f$0;
 

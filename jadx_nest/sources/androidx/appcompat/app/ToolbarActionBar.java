@@ -21,7 +21,7 @@ import androidx.core.util.Preconditions;
 import androidx.core.view.ViewCompat;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class ToolbarActionBar extends ActionBar {
     final DecorToolbar mDecorToolbar;
     private boolean mLastMenuVisibility;
@@ -73,7 +73,7 @@ class ToolbarActionBar extends ActionBar {
     public void setStackedBackgroundDrawable(Drawable drawable) {
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.ToolbarActionBar$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.ToolbarActionBar$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -84,7 +84,7 @@ class ToolbarActionBar extends ActionBar {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.ToolbarActionBar$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.ToolbarActionBar$2, reason: invalid class name */
     class AnonymousClass2 implements Toolbar.OnMenuItemClickListener {
         AnonymousClass2() {
         }

@@ -21,8 +21,8 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: LoggerDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: LoggerDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$7$onTextChanged$1", f = "LoggerDialogFragment.kt", i = {}, l = {332}, m = "invokeSuspendImpl", n = {}, s = {})
 final class LoggerDialogFragment$onCreateView$7$onTextChanged$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -32,7 +32,7 @@ final class LoggerDialogFragment$onCreateView$7$onTextChanged$1 extends com.magn
     int label;
     final /* synthetic */ LoggerDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     LoggerDialogFragment$onCreateView$7$onTextChanged$1(CharSequence charSequence, LoggerDialogFragment loggerDialogFragment, List<Logger.LogRecord> list, LoggerDialogFragment.SearchRecyclerViewAdapter searchRecyclerViewAdapter, Continuation<?> continuation) {
         super(2, continuation);
         this.$s = charSequence;
@@ -95,8 +95,8 @@ final class LoggerDialogFragment$onCreateView$7$onTextChanged$1 extends com.magn
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$7$onTextChanged$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: LoggerDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$7$onTextChanged$1$1, reason: invalid class name */
+    /* INFO: compiled from: LoggerDialogFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$7$onTextChanged$1$1", f = "LoggerDialogFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -107,7 +107,7 @@ final class LoggerDialogFragment$onCreateView$7$onTextChanged$1 extends com.magn
         int label;
         final /* synthetic */ LoggerDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(String str, LoggerDialogFragment loggerDialogFragment, List<Logger.LogRecord> list, List<Logger.LogRecord> list2, LoggerDialogFragment.SearchRecyclerViewAdapter searchRecyclerViewAdapter, Continuation<?> continuation) {
             super(2, continuation);
             this.$keyword = str;
@@ -135,7 +135,7 @@ final class LoggerDialogFragment$onCreateView$7$onTextChanged$1 extends com.magn
             }
         }
 
-        /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+        /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
         public final Object invokeSuspendImpl(Object obj) throws Exception {
             IntrinsicsKt.getCOROUTINE_SUSPENDED();
             if (this.label != 0) {

@@ -18,7 +18,7 @@ import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.StringUtils;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class InitCommand implements Callable<Git> {
     private boolean bare;
     private File directory;

@@ -49,7 +49,7 @@ import org.eclipse.jgit.util.io.EolStreamTypeUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DirCacheCheckout {
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) DirCacheCheckout.class);
     private static final int MAX_EXCEPTION_TEXT_SIZE = 10240;
@@ -900,10 +900,10 @@ public class DirCacheCheckout {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:37:0x0098 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:39:0x009e  */
-    /* JADX WARN: Code duplicated, block: B:57:0x009a A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:62:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:37:0x0098 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:39:0x009e  */
+    /* WARN: Code duplicated, block: B:57:0x009a A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:62:? A[RETURN, SYNTHETIC] */
     private static void runExternalFilterCommand(Repository repository, String str, CheckoutMetadata checkoutMetadata, StreamSupplier streamSupplier, OutputStream outputStream) throws Throwable {
         Throwable th;
         Exception exc;

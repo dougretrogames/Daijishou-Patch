@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ComparatorChain<E> implements Comparator<E>, Serializable {
     private static final long serialVersionUID = -721644942746081630L;
     private final List<Comparator<E>> comparatorChain;

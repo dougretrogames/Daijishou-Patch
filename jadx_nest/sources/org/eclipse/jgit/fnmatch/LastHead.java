@@ -2,7 +2,7 @@ package org.eclipse.jgit.fnmatch;
 
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class LastHead implements Head {
     static final Head INSTANCE = new LastHead();
 

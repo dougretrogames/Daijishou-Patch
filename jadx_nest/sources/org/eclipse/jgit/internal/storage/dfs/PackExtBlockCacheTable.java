@@ -13,7 +13,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.internal.storage.pack.PackExt;
 import org.eclipse.jgit.lib.CommitConfig$$ExternalSyntheticBackport0;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PackExtBlockCacheTable implements DfsBlockCacheTable {
     private final List<DfsBlockCacheTable> blockCacheTableList;
     private final DfsBlockCacheTable defaultBlockCacheTable;

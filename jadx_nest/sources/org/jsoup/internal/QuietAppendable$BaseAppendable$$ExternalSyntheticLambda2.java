@@ -2,8 +2,8 @@ package org.jsoup.internal;
 
 import java.io.IOException;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class QuietAppendable$BaseAppendable$$ExternalSyntheticLambda2 implements QuietAppendable.BaseAppendable.Action {
     public final /* synthetic */ QuietAppendable.BaseAppendable f$0;
     public final /* synthetic */ CharSequence f$1;

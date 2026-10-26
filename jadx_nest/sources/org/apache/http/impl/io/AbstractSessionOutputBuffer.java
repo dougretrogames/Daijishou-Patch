@@ -20,7 +20,7 @@ import org.apache.http.util.Args;
 import org.apache.http.util.ByteArrayBuffer;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public abstract class AbstractSessionOutputBuffer implements SessionOutputBuffer, BufferInfo {
     private static final byte[] CRLF = {Ascii.CR, 10};

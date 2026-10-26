@@ -20,7 +20,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class BatchUnparsedResponse {
     private final String boundary;
     private final InputStream inputStream;
@@ -98,7 +98,7 @@ final class BatchUnparsedResponse {
         checkForFinalBoundary(line2);
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.googleapis.batch.BatchUnparsedResponse$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.googleapis.batch.BatchUnparsedResponse$1, reason: invalid class name */
     class AnonymousClass1 extends FilterInputStream {
         @Override // java.io.FilterInputStream, java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
         public void close() {

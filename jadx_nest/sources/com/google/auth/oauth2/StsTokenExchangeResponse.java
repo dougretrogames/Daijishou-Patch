@@ -6,7 +6,7 @@ import java.util.Date;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class StsTokenExchangeResponse {
     private final AccessToken accessToken;
 

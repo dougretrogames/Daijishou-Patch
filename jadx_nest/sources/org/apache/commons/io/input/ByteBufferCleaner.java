@@ -5,7 +5,7 @@ import java.lang.reflect.Method;
 import java.nio.ByteBuffer;
 import org.eclipse.jgit.lib.Constants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class ByteBufferCleaner {
     private static final Cleaner INSTANCE = getCleaner();
 

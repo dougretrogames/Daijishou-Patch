@@ -13,7 +13,7 @@ import java.util.List;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class GsonParser extends JsonParser {
     private List<String> currentNameStack = new ArrayList();
     private String currentText;
@@ -188,7 +188,7 @@ class GsonParser extends JsonParser {
         return this.currentToken;
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.json.gson.GsonParser$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.json.gson.GsonParser$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$api$client$json$JsonToken;
         static final /* synthetic */ int[] $SwitchMap$com$google$gson$stream$JsonToken;

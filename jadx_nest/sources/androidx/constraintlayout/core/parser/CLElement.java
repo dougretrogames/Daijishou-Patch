@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Objects;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CLElement implements Cloneable {
     protected static int sBaseIndent = 2;
     protected static int sMaxLine = 80;
@@ -167,7 +167,7 @@ public class CLElement implements Cloneable {
     }
 
     @Override // 
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public CLElement mo3141clone() {
         try {
             return (CLElement) super.clone();

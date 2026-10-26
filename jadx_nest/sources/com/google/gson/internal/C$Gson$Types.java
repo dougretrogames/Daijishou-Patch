@@ -19,8 +19,8 @@ import java.util.Properties;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import okhttp3.HttpUrl;
 
-/* JADX INFO: renamed from: com.google.gson.internal.$Gson$Types, reason: invalid class name */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: renamed from: com.google.gson.internal.$Gson$Types, reason: invalid class name */
+/* INFO: loaded from: classes4.dex */
 public final class C$Gson$Types {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     static final Type[] EMPTY_TYPE_ARRAY = new Type[0];
@@ -218,36 +218,36 @@ public final class C$Gson$Types {
         return resolve(type, cls, type2, new HashMap());
     }
 
-    /* JADX WARN: Code duplicated, block: B:26:0x004b  */
-    /* JADX WARN: Code duplicated, block: B:28:0x004f  */
-    /* JADX WARN: Code duplicated, block: B:31:0x0061  */
-    /* JADX WARN: Code duplicated, block: B:32:0x0066  */
-    /* JADX WARN: Code duplicated, block: B:34:0x006c  */
-    /* JADX WARN: Code duplicated, block: B:36:0x0082  */
-    /* JADX WARN: Code duplicated, block: B:38:0x0090 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:39:0x0092  */
-    /* JADX WARN: Code duplicated, block: B:43:0x00a1  */
-    /* JADX WARN: Code duplicated, block: B:44:0x00aa  */
-    /* JADX WARN: Code duplicated, block: B:46:0x00ae  */
-    /* JADX WARN: Code duplicated, block: B:48:0x00bb  */
-    /* JADX WARN: Code duplicated, block: B:50:0x00c5 A[EDGE_INSN: B:50:0x00c5->B:56:0x00db BREAK  A[LOOP:0: B:3:0x0001->B:62:?]] */
-    /* JADX WARN: Code duplicated, block: B:51:0x00ca  */
-    /* JADX WARN: Code duplicated, block: B:65:0x009c A[SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r11v0, types: [java.lang.reflect.Type] */
-    /* JADX WARN: Type inference failed for: r11v1, types: [java.lang.reflect.Type] */
-    /* JADX WARN: Type inference failed for: r11v10, types: [java.lang.Object, java.lang.reflect.Type] */
-    /* JADX WARN: Type inference failed for: r11v12, types: [java.lang.reflect.Type] */
-    /* JADX WARN: Type inference failed for: r11v2, types: [java.lang.reflect.WildcardType] */
-    /* JADX WARN: Type inference failed for: r11v3, types: [java.lang.reflect.WildcardType] */
-    /* JADX WARN: Type inference failed for: r11v4, types: [java.lang.reflect.WildcardType] */
-    /* JADX WARN: Type inference failed for: r11v5, types: [java.lang.reflect.ParameterizedType] */
-    /* JADX WARN: Type inference failed for: r11v6, types: [java.lang.reflect.GenericArrayType] */
-    /* JADX WARN: Type inference failed for: r11v7 */
-    /* JADX WARN: Type inference failed for: r11v9 */
-    /* JADX WARN: Type inference failed for: r12v0, types: [java.util.Map, java.util.Map<java.lang.reflect.TypeVariable<?>, java.lang.reflect.Type>] */
-    /* JADX WARN: Type inference failed for: r1v17 */
-    /* JADX WARN: Type inference failed for: r1v19 */
+    /* WARN: Code duplicated, block: B:26:0x004b  */
+    /* WARN: Code duplicated, block: B:28:0x004f  */
+    /* WARN: Code duplicated, block: B:31:0x0061  */
+    /* WARN: Code duplicated, block: B:32:0x0066  */
+    /* WARN: Code duplicated, block: B:34:0x006c  */
+    /* WARN: Code duplicated, block: B:36:0x0082  */
+    /* WARN: Code duplicated, block: B:38:0x0090 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:39:0x0092  */
+    /* WARN: Code duplicated, block: B:43:0x00a1  */
+    /* WARN: Code duplicated, block: B:44:0x00aa  */
+    /* WARN: Code duplicated, block: B:46:0x00ae  */
+    /* WARN: Code duplicated, block: B:48:0x00bb  */
+    /* WARN: Code duplicated, block: B:50:0x00c5 A[EDGE_INSN: B:50:0x00c5->B:56:0x00db BREAK  A[LOOP:0: B:3:0x0001->B:62:?]] */
+    /* WARN: Code duplicated, block: B:51:0x00ca  */
+    /* WARN: Code duplicated, block: B:65:0x009c A[SYNTHETIC] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r11v0, types: [java.lang.reflect.Type] */
+    /* WARN: Type inference failed for: r11v1, types: [java.lang.reflect.Type] */
+    /* WARN: Type inference failed for: r11v10, types: [java.lang.Object, java.lang.reflect.Type] */
+    /* WARN: Type inference failed for: r11v12, types: [java.lang.reflect.Type] */
+    /* WARN: Type inference failed for: r11v2, types: [java.lang.reflect.WildcardType] */
+    /* WARN: Type inference failed for: r11v3, types: [java.lang.reflect.WildcardType] */
+    /* WARN: Type inference failed for: r11v4, types: [java.lang.reflect.WildcardType] */
+    /* WARN: Type inference failed for: r11v5, types: [java.lang.reflect.ParameterizedType] */
+    /* WARN: Type inference failed for: r11v6, types: [java.lang.reflect.GenericArrayType] */
+    /* WARN: Type inference failed for: r11v7 */
+    /* WARN: Type inference failed for: r11v9 */
+    /* WARN: Type inference failed for: r12v0, types: [java.util.Map, java.util.Map<java.lang.reflect.TypeVariable<?>, java.lang.reflect.Type>] */
+    /* WARN: Type inference failed for: r1v17 */
+    /* WARN: Type inference failed for: r1v19 */
     private static Type resolve(Type type, Class<?> cls, Type type2, Map<TypeVariable<?>, Type> map) {
         int i;
         Type[] lowerBounds;
@@ -441,8 +441,8 @@ public final class C$Gson$Types {
         C$Gson$Preconditions.checkArgument(((type instanceof Class) && ((Class) type).isPrimitive()) ? false : true);
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl */
-    /* JADX INFO: compiled from: $Gson$Types.java */
+    /* INFO: renamed from: com.google.gson.internal.$Gson$Types$ParameterizedTypeImpl */
+    /* INFO: compiled from: $Gson$Types.java */
     private static final class ParameterizedTypeImpl implements ParameterizedType, Serializable {
         private static final long serialVersionUID = 0;
         private final Type ownerType;
@@ -517,8 +517,8 @@ public final class C$Gson$Types {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.$Gson$Types$GenericArrayTypeImpl */
-    /* JADX INFO: compiled from: $Gson$Types.java */
+    /* INFO: renamed from: com.google.gson.internal.$Gson$Types$GenericArrayTypeImpl */
+    /* INFO: compiled from: $Gson$Types.java */
     private static final class GenericArrayTypeImpl implements GenericArrayType, Serializable {
         private static final long serialVersionUID = 0;
         private final Type componentType;
@@ -546,8 +546,8 @@ public final class C$Gson$Types {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.$Gson$Types$WildcardTypeImpl */
-    /* JADX INFO: compiled from: $Gson$Types.java */
+    /* INFO: renamed from: com.google.gson.internal.$Gson$Types$WildcardTypeImpl */
+    /* INFO: compiled from: $Gson$Types.java */
     private static final class WildcardTypeImpl implements WildcardType, Serializable {
         private static final long serialVersionUID = 0;
         private final Type lowerBound;

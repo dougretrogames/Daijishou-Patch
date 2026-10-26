@@ -5,7 +5,7 @@ import android.widget.FrameLayout;
 import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class FragmentViewHolder extends RecyclerView.ViewHolder {
     private FragmentViewHolder(FrameLayout frameLayout) {
         super(frameLayout);

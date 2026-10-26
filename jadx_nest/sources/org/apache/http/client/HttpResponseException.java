@@ -2,7 +2,7 @@ package org.apache.http.client;
 
 import org.apache.http.util.TextUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpResponseException extends ClientProtocolException {
     private static final long serialVersionUID = -7186627969477257933L;
     private final String reasonPhrase;

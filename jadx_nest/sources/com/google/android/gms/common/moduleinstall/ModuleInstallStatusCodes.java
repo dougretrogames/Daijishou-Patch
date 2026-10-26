@@ -2,8 +2,8 @@ package com.google.android.gms.common.moduleinstall;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class ModuleInstallStatusCodes extends CommonStatusCodes {
     public static final int INSUFFICIENT_STORAGE = 46003;
     public static final int MODULE_NOT_FOUND = 46002;

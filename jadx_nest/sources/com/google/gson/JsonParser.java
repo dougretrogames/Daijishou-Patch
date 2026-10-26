@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class JsonParser {
     @Deprecated
     public JsonParser() {

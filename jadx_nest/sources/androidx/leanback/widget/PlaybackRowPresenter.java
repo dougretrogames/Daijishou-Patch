@@ -2,7 +2,7 @@ package androidx.leanback.widget;
 
 import android.view.View;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class PlaybackRowPresenter extends RowPresenter {
     public void onReappear(RowPresenter.ViewHolder viewHolder) {
     }

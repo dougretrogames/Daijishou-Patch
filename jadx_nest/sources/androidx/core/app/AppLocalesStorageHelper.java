@@ -11,7 +11,7 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlSerializer;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AppLocalesStorageHelper {
     static final String APPLICATION_LOCALES_RECORD_FILE = "androidx.appcompat.app.AppCompatDelegate.application_locales_record_file";
     static final boolean DEBUG = false;
@@ -23,7 +23,7 @@ public class AppLocalesStorageHelper {
     private AppLocalesStorageHelper() {
     }
 
-    /* JADX WARN: Code duplicated, block: B:46:0x0043 A[EXC_TOP_SPLITTER, PHI: r1
+    /* WARN: Code duplicated, block: B:46:0x0043 A[EXC_TOP_SPLITTER, PHI: r1
   0x0043: PHI (r1v2 java.lang.String) = (r1v0 java.lang.String), (r1v4 java.lang.String) binds: [B:26:0x0050, B:20:0x0041] A[DONT_GENERATE, DONT_INLINE], SYNTHETIC] */
     public static String readLocales(Context context) {
         String attributeValue;
@@ -82,7 +82,7 @@ public class AppLocalesStorageHelper {
         return attributeValue;
     }
 
-    /* JADX WARN: Code duplicated, block: B:42:0x003f A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:42:0x003f A[EXC_TOP_SPLITTER, SYNTHETIC] */
     public static void persistLocales(Context context, String str) {
         synchronized (sAppLocaleStorageSync) {
             if (str.equals("")) {

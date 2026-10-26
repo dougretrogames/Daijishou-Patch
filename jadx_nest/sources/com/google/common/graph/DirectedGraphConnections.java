@@ -18,7 +18,7 @@ import java.util.Set;
 import java.util.concurrent.atomic.AtomicBoolean;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
     private static final Object PRED = new Object();
@@ -37,7 +37,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static abstract class NodeConnection<N> {
         final N node;
 
@@ -88,7 +88,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
         Preconditions.checkState(predecessorCount <= adjacentNodeValues.size() && successorCount <= adjacentNodeValues.size());
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.DirectedGraphConnections$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.DirectedGraphConnections$5, reason: invalid class name */
     static /* synthetic */ class AnonymousClass5 {
         static final /* synthetic */ int[] $SwitchMap$com$google$common$graph$ElementOrder$Type;
 
@@ -119,7 +119,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
         return new DirectedGraphConnections<>(new HashMap(4, 1.0f), arrayList, 0, 0);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     static <N, V> DirectedGraphConnections<N, V> ofImmutable(N thisNode, Iterable<EndpointPair<N>> incidentEdges, Function<N, V> successorNodeToValueFn) {
         Preconditions.checkNotNull(thisNode);
         Preconditions.checkNotNull(successorNodeToValueFn);
@@ -165,7 +165,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
         return new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.DirectedGraphConnections$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.DirectedGraphConnections$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractSet<N> {
         AnonymousClass1() {
         }
@@ -175,7 +175,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
             return new C00481(this, DirectedGraphConnections.this.orderedNodeConnections.iterator(), new HashSet());
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.DirectedGraphConnections$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.google.common.graph.DirectedGraphConnections$1$1, reason: invalid class name and collision with other inner class name */
         class C00481 extends AbstractIterator<N> {
             final /* synthetic */ Iterator val$nodeConnections;
             final /* synthetic */ Set val$seenNodes;
@@ -209,7 +209,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.DirectedGraphConnections$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.DirectedGraphConnections$2, reason: invalid class name */
     class AnonymousClass2 extends AbstractSet<N> {
         AnonymousClass2() {
         }
@@ -222,7 +222,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
             return new C00492(this, DirectedGraphConnections.this.orderedNodeConnections.iterator());
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.DirectedGraphConnections$2$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.graph.DirectedGraphConnections$2$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<N> {
             final /* synthetic */ Iterator val$entries;
 
@@ -243,7 +243,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.DirectedGraphConnections$2$2, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.google.common.graph.DirectedGraphConnections$2$2, reason: invalid class name and collision with other inner class name */
         class C00492 extends AbstractIterator<N> {
             final /* synthetic */ Iterator val$nodeConnections;
 
@@ -280,7 +280,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
         return new AnonymousClass2();
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.DirectedGraphConnections$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.DirectedGraphConnections$3, reason: invalid class name */
     class AnonymousClass3 extends AbstractSet<N> {
         AnonymousClass3() {
         }
@@ -293,7 +293,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
             return new AnonymousClass2(this, DirectedGraphConnections.this.orderedNodeConnections.iterator());
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.DirectedGraphConnections$3$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.graph.DirectedGraphConnections$3$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<N> {
             final /* synthetic */ Iterator val$entries;
 
@@ -314,7 +314,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.DirectedGraphConnections$3$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.graph.DirectedGraphConnections$3$2, reason: invalid class name */
         class AnonymousClass2 extends AbstractIterator<N> {
             final /* synthetic */ Iterator val$nodeConnections;
 
@@ -371,7 +371,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
         return EndpointPair.ordered(nodeConnection.node, obj);
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.DirectedGraphConnections$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.DirectedGraphConnections$4, reason: invalid class name */
     class AnonymousClass4 extends AbstractIterator<EndpointPair<N>> {
         final /* synthetic */ AtomicBoolean val$alreadySeenSelfLoop;
         final /* synthetic */ Iterator val$resultWithDoubleSelfLoop;
@@ -381,7 +381,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
             this.val$alreadySeenSelfLoop = val$alreadySeenSelfLoop;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.AbstractIterator
         @CheckForNull
         public EndpointPair<N> computeNext() {
@@ -395,7 +395,7 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.GraphConnections
     @CheckForNull
     public V value(N n) {
@@ -508,12 +508,12 @@ final class DirectedGraphConnections<N, V> implements GraphConnections<N, V> {
         return (V) obj;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean isPredecessor(@CheckForNull Object value) {
         return value == PRED || (value instanceof PredAndSucc);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean isSuccessor(@CheckForNull Object value) {
         return (value == PRED || value == null) ? false : true;
     }

@@ -3,7 +3,7 @@ package org.jsoup.internal;
 import java.io.IOException;
 import org.jsoup.SerializationException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class QuietAppendable {
     public abstract QuietAppendable append(char c);
 
@@ -14,7 +14,7 @@ public abstract class QuietAppendable {
     static final class BaseAppendable extends QuietAppendable {
         private final Appendable a;
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         @FunctionalInterface
         interface Action {
             void append() throws IOException;
@@ -42,7 +42,7 @@ public abstract class QuietAppendable {
             return quiet(new QuietAppendable$BaseAppendable$$ExternalSyntheticLambda2(this, charSequence));
         }
 
-        /* JADX INFO: renamed from: lambda$append$0$org-jsoup-internal-QuietAppendable$BaseAppendable, reason: not valid java name */
+        /* INFO: renamed from: lambda$append$0$org-jsoup-internal-QuietAppendable$BaseAppendable, reason: not valid java name */
         /* synthetic */ void m5867x7279193b(CharSequence charSequence) throws IOException {
             this.a.append(charSequence);
         }
@@ -52,7 +52,7 @@ public abstract class QuietAppendable {
             return quiet(new QuietAppendable$BaseAppendable$$ExternalSyntheticLambda0(this, c));
         }
 
-        /* JADX INFO: renamed from: lambda$append$1$org-jsoup-internal-QuietAppendable$BaseAppendable, reason: not valid java name */
+        /* INFO: renamed from: lambda$append$1$org-jsoup-internal-QuietAppendable$BaseAppendable, reason: not valid java name */
         /* synthetic */ void m5868xb60436fc(char c) throws IOException {
             this.a.append(c);
         }
@@ -62,7 +62,7 @@ public abstract class QuietAppendable {
             return quiet(new QuietAppendable$BaseAppendable$$ExternalSyntheticLambda1(this, cArr, i, i2));
         }
 
-        /* JADX INFO: renamed from: lambda$append$2$org-jsoup-internal-QuietAppendable$BaseAppendable, reason: not valid java name */
+        /* INFO: renamed from: lambda$append$2$org-jsoup-internal-QuietAppendable$BaseAppendable, reason: not valid java name */
         /* synthetic */ void m5869xf98f54bd(char[] cArr, int i, int i2) throws IOException {
             this.a.append(new String(cArr, i, i2));
         }

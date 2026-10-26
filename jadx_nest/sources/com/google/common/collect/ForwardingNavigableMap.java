@@ -8,10 +8,10 @@ import java.util.NoSuchElementException;
 import java.util.SortedMap;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ForwardingNavigableMap<K, V> extends ForwardingSortedMap<K, V> implements NavigableMap<K, V> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingSortedMap, com.google.common.collect.ForwardingMap, com.google.common.collect.ForwardingObject
     public abstract NavigableMap<K, V> delegate();
 
@@ -180,7 +180,7 @@ public abstract class ForwardingNavigableMap<K, V> extends ForwardingSortedMap<K
             return ForwardingNavigableMap.this;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.ForwardingNavigableMap$StandardDescendingMap$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.ForwardingNavigableMap$StandardDescendingMap$1, reason: invalid class name */
         class AnonymousClass1 implements Iterator<Map.Entry<K, V>> {
 
             @CheckForNull

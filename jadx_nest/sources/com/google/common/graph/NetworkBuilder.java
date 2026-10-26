@@ -3,14 +3,14 @@ package com.google.common.graph;
 import com.google.common.base.Optional;
 import com.google.common.base.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class NetworkBuilder<N, E> extends AbstractGraphBuilder<N> {
     boolean allowsParallelEdges;
     ElementOrder<? super E> edgeOrder;
     Optional<Integer> expectedEdgeCount;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private <N1 extends N, E1 extends E> NetworkBuilder<N1, E1> cast() {
         return this;
     }

@@ -3,7 +3,7 @@ package org.apache.commons.collections4.bloomfilter;
 import java.util.Objects;
 import org.apache.commons.collections4.bloomfilter.BloomFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface BloomFilter<T extends BloomFilter<T>> extends IndexExtractor, BitMapExtractor {
     public static final int SPARSE = 1;
 

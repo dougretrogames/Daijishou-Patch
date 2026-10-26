@@ -4,7 +4,7 @@ import org.apache.http.cookie.CookieSpec;
 import org.apache.http.cookie.CookieSpecProvider;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IgnoreSpecProvider implements CookieSpecProvider {
     private volatile CookieSpec cookieSpec;
 

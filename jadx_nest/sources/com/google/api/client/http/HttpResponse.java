@@ -18,7 +18,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class HttpResponse {
     private static final String CONTENT_ENCODING_GZIP = "gzip";
     private static final String CONTENT_ENCODING_XGZIP = "x-gzip";

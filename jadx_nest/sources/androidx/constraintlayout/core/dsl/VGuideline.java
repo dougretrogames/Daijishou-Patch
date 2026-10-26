@@ -1,6 +1,6 @@
 package androidx.constraintlayout.core.dsl;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class VGuideline extends Guideline {
     public VGuideline(String str) {
         super(str);

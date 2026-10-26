@@ -4,7 +4,7 @@ import android.graphics.PointF;
 import androidx.core.util.Preconditions;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class PathSegment {
     private final PointF mEnd;
     private final float mEndFraction;

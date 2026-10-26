@@ -10,7 +10,7 @@ import androidx.appcompat.R;
 import androidx.appcompat.app.AlertDialog;
 import androidx.core.view.PointerIconCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MenuDialogHelper implements DialogInterface.OnKeyListener, DialogInterface.OnClickListener, DialogInterface.OnDismissListener, MenuPresenter.Callback {
     private AlertDialog mDialog;
     private MenuBuilder mMenu;

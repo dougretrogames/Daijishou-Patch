@@ -28,7 +28,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
 import java.util.function.IntFunction;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AppCompatTextView extends TextView implements TintableBackgroundView, TintableCompoundDrawablesView, AutoSizeableTextView, EmojiCompatConfigurationView {
     private final AppCompatBackgroundHelper mBackgroundTintHelper;
     private AppCompatEmojiTextHelper mEmojiTextViewHelper;
@@ -90,8 +90,8 @@ public class AppCompatTextView extends TextView implements TintableBackgroundVie
             this.mPropertiesMapped = true;
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.AppCompatTextView$InspectionCompanion$1, reason: invalid class name */
-        /* JADX INFO: compiled from: AppCompatTextView$InspectionCompanion.java */
+        /* INFO: renamed from: androidx.appcompat.widget.AppCompatTextView$InspectionCompanion$1, reason: invalid class name */
+        /* INFO: compiled from: AppCompatTextView$InspectionCompanion.java */
         class AnonymousClass1 implements IntFunction<String> {
             AnonymousClass1() {
             }

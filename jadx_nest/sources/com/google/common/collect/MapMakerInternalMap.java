@@ -30,7 +30,7 @@ import java.util.concurrent.atomic.AtomicReferenceArray;
 import java.util.concurrent.locks.ReentrantLock;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segment<K, V, E, S>> extends AbstractMap<K, V> implements ConcurrentMap<K, V>, Serializable {
     static final int CONTAINS_VALUE_RETRIES = 3;
     static final int DRAIN_MAX = 16;
@@ -168,8 +168,8 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
         throw new AssertionError();
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     static abstract class Strength {
         public static final Strength STRONG = new AnonymousClass1("STRONG", 0);
         public static final Strength WEAK = new AnonymousClass2("WEAK", 1);
@@ -177,7 +177,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
 
         abstract Equivalence<Object> defaultEquivalence();
 
-        /* JADX INFO: renamed from: com.google.common.collect.MapMakerInternalMap$Strength$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.MapMakerInternalMap$Strength$1, reason: invalid class name */
         final enum AnonymousClass1 extends Strength {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -209,7 +209,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
             return (Strength[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.MapMakerInternalMap$Strength$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.MapMakerInternalMap$Strength$2, reason: invalid class name */
         final enum AnonymousClass2 extends Strength {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -813,7 +813,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.MapMakerInternalMap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.MapMakerInternalMap$1, reason: invalid class name */
     class AnonymousClass1 implements WeakValueReference<Object, Object, DummyInternalEntry> {
         @Override // com.google.common.collect.MapMakerInternalMap.WeakValueReference
         public void clear() {
@@ -867,7 +867,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
         return rehash(this.keyEquivalence.hash(key));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     void reclaimValue(WeakValueReference<K, V, E> weakValueReference) {
         InternalEntry entry = weakValueReference.getEntry();
         int hash = entry.getHash();
@@ -1159,7 +1159,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
             }
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         void expand() {
             AtomicReferenceArray<E> atomicReferenceArray = this.table;
             int length = atomicReferenceArray.length();
@@ -1505,7 +1505,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
     }
 
     static final class StrongKeyStrongValueSegment<K, V> extends Segment<K, V, StrongKeyStrongValueEntry<K, V>, StrongKeyStrongValueSegment<K, V>> {
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.MapMakerInternalMap.Segment
         public StrongKeyStrongValueSegment<K, V> self() {
             return this;
@@ -1525,7 +1525,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
     static final class StrongKeyWeakValueSegment<K, V> extends Segment<K, V, StrongKeyWeakValueEntry<K, V>, StrongKeyWeakValueSegment<K, V>> {
         private final ReferenceQueue<V> queueForValues;
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.MapMakerInternalMap.Segment
         public StrongKeyWeakValueSegment<K, V> self() {
             return this;
@@ -1577,7 +1577,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
     }
 
     static final class StrongKeyDummyValueSegment<K> extends Segment<K, MapMaker.Dummy, StrongKeyDummyValueEntry<K>, StrongKeyDummyValueSegment<K>> {
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.MapMakerInternalMap.Segment
         public StrongKeyDummyValueSegment<K> self() {
             return this;
@@ -1596,7 +1596,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
     static final class WeakKeyStrongValueSegment<K, V> extends Segment<K, V, WeakKeyStrongValueEntry<K, V>, WeakKeyStrongValueSegment<K, V>> {
         private final ReferenceQueue<K> queueForKeys;
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.MapMakerInternalMap.Segment
         public WeakKeyStrongValueSegment<K, V> self() {
             return this;
@@ -1632,7 +1632,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
         private final ReferenceQueue<K> queueForKeys;
         private final ReferenceQueue<V> queueForValues;
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.MapMakerInternalMap.Segment
         public WeakKeyWeakValueSegment<K, V> self() {
             return this;
@@ -1693,7 +1693,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
     static final class WeakKeyDummyValueSegment<K> extends Segment<K, MapMaker.Dummy, WeakKeyDummyValueEntry<K>, WeakKeyDummyValueSegment<K>> {
         private final ReferenceQueue<K> queueForKeys;
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.MapMakerInternalMap.Segment
         public WeakKeyDummyValueSegment<K> self() {
             return this;
@@ -1815,13 +1815,13 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
         return segmentFor(iHash).containsKey(key, iHash);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r10v0 */
-    /* JADX WARN: Type inference failed for: r10v1, types: [int] */
-    /* JADX WARN: Type inference failed for: r10v3 */
-    /* JADX WARN: Type inference failed for: r13v0 */
-    /* JADX WARN: Type inference failed for: r13v1, types: [int] */
-    /* JADX WARN: Type inference failed for: r13v3 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r10v0 */
+    /* WARN: Type inference failed for: r10v1, types: [int] */
+    /* WARN: Type inference failed for: r10v3 */
+    /* WARN: Type inference failed for: r13v0 */
+    /* WARN: Type inference failed for: r13v1, types: [int] */
+    /* WARN: Type inference failed for: r13v3 */
     @Override // java.util.AbstractMap, java.util.Map
     public boolean containsValue(@CheckForNull Object obj) {
         boolean z = false;
@@ -2301,7 +2301,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> ArrayList<E> toArrayList(Collection<E> c) {
         ArrayList<E> arrayList = new ArrayList<>(c.size());
         Iterators.addAll(arrayList, c.iterator());
@@ -2334,7 +2334,7 @@ class MapMakerInternalMap<K, V, E extends InternalEntry<K, V, E>, S extends Segm
             this.delegate = delegate;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingConcurrentMap, com.google.common.collect.ForwardingMap, com.google.common.collect.ForwardingObject
         public ConcurrentMap<K, V> delegate() {
             return this.delegate;

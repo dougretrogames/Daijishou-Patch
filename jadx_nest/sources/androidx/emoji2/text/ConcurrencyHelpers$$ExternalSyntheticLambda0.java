@@ -3,8 +3,8 @@ package androidx.emoji2.text;
 import android.os.Handler;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class ConcurrencyHelpers$$ExternalSyntheticLambda0 implements Executor {
     public final /* synthetic */ Handler f$0;
 

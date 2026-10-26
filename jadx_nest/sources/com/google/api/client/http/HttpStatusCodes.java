@@ -1,6 +1,6 @@
 package com.google.api.client.http;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class HttpStatusCodes {
     public static final int STATUS_CODE_ACCEPTED = 202;
     public static final int STATUS_CODE_BAD_GATEWAY = 502;

@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Metric {
     public abstract MetricDescriptor getMetricDescriptor();
 
@@ -63,7 +63,7 @@ public abstract class Metric {
         }
     }
 
-    /* JADX INFO: renamed from: io.opencensus.metrics.export.Metric$1, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.metrics.export.Metric$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$io$opencensus$metrics$export$MetricDescriptor$Type;
 

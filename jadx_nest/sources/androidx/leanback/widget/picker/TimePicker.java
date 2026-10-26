@@ -12,7 +12,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TimePicker extends Picker {
     private static final int AM_INDEX = 0;
     private static final int HOURS_IN_HALF_DAY = 12;

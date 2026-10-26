@@ -3,7 +3,7 @@ package androidx.fragment.app;
 import androidx.collection.SimpleArrayMap;
 import java.lang.reflect.InvocationTargetException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FragmentFactory {
     private static final SimpleArrayMap<ClassLoader, SimpleArrayMap<String, Class<?>>> sClassCacheMap = new SimpleArrayMap<>();
 

@@ -3,8 +3,8 @@ package com.google.common.graph;
 import com.google.common.base.Function;
 import java.util.Objects;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class ImmutableValueGraph$$ExternalSyntheticLambda0 implements Function {
     public final /* synthetic */ ValueGraph f$0;
     public final /* synthetic */ Object f$1;

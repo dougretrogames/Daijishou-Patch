@@ -2,7 +2,7 @@ package com.googlecode.javaewah.datastructure;
 
 import java.util.Comparator;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class PriorityQ<T> {
     final T[] a;
     final Comparator<T> comp;
@@ -42,7 +42,7 @@ public final class PriorityQ<T> {
         percolateDown(1);
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x003c  */
+    /* WARN: Code duplicated, block: B:17:0x003c  */
     private void percolateDown(int i) {
         T t = this.a[i];
         while (true) {

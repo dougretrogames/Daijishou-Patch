@@ -21,7 +21,7 @@ import okhttp3.ResponseBody;
 import okio.Buffer;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 final class Utils {
     static final Type[] EMPTY_TYPE_ARRAY = new Type[0];
     private static boolean checkForKotlinUnit = true;

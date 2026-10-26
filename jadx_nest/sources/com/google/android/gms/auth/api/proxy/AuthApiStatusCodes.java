@@ -2,8 +2,8 @@ package com.google.android.gms.auth.api.proxy;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public class AuthApiStatusCodes extends CommonStatusCodes {
     public static final int AUTH_API_ACCESS_FORBIDDEN = 3001;
     public static final int AUTH_API_CLIENT_ERROR = 3002;

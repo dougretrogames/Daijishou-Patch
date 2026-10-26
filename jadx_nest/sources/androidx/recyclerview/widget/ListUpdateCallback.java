@@ -1,6 +1,6 @@
 package androidx.recyclerview.widget;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface ListUpdateCallback {
     void onChanged(int i, int i2, Object obj);
 

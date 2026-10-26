@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.net.SocketAddress;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ManagedChannelProvider {
     protected abstract ManagedChannelBuilder<?> builderForAddress(String str, int i);
 

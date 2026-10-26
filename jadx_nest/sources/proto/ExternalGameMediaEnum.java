@@ -5,7 +5,7 @@ import com.google.protobuf.Internal;
 import com.google.protobuf.ProtocolMessageEnum;
 import com.google.protobuf.RuntimeVersion;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public enum ExternalGameMediaEnum implements ProtocolMessageEnum {
     EXTERNALGAME_MEDIA_NULL(0),
     EXTERNALGAME_DIGITAL(1),
@@ -55,7 +55,7 @@ public enum ExternalGameMediaEnum implements ProtocolMessageEnum {
         return internalValueMap;
     }
 
-    /* JADX INFO: renamed from: proto.ExternalGameMediaEnum$1, reason: invalid class name */
+    /* INFO: renamed from: proto.ExternalGameMediaEnum$1, reason: invalid class name */
     class AnonymousClass1 implements Internal.EnumLiteMap<ExternalGameMediaEnum> {
         AnonymousClass1() {
         }

@@ -21,20 +21,20 @@ import kotlin.text.MatchResult;
 import kotlin.text.Regex;
 import kotlin.text.StringsKt;
 
-/* JADX INFO: compiled from: DaijishouPlayerTemplate.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouPlayerTemplate.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000.\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\u0018\u0000 \u000f2\u00020\u0001:\u0001\u000fB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J \u0010\u0007\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n0\t0\b2\u0006\u0010\u000b\u001a\u00020\fJ\u0016\u0010\r\u001a\u00020\u000e2\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u000b\u001a\u00020\fR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006¨\u0006\u0010"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_player/DaijishouPlayerTemplate;", "", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "getContext", "()Landroid/content/Context;", "getTemplateTagsAndValuesFromUri", "", "Lkotlin/Pair;", "", "uri", "Landroid/net/Uri;", "isUriDaijishouPlayerTemplate", "", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class DaijishouPlayerTemplate {
     public static final String templateTagPrefix = "tags";
     private final Context context;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final Regex templateTagAndValueRegex = new Regex("^\\s*\\[([^]]+)]\\s+(.*)$");
     private static final Regex normalizingReplaceRegex = new Regex("[^0-9a-zA-Z\\s]+");
     private static final List<String> daijishouPlayerTemplateFirstLineList = CollectionsKt.listOf(new String[]{"# DPT", "# Daijishou Player Template"});
 
-    /* JADX INFO: compiled from: DaijishouPlayerTemplate.kt */
+    /* INFO: compiled from: DaijishouPlayerTemplate.kt */
     @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u0017\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0011\u0010\b\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0011\u0010\f\u001a\u00020\t¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000bR\u000e\u0010\u000e\u001a\u00020\u0005X\u0086T¢\u0006\u0002\n\u0000¨\u0006\u000f"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_player/DaijishouPlayerTemplate$Companion;", "", "()V", "daijishouPlayerTemplateFirstLineList", "", "", "getDaijishouPlayerTemplateFirstLineList", "()Ljava/util/List;", "normalizingReplaceRegex", "Lkotlin/text/Regex;", "getNormalizingReplaceRegex", "()Lkotlin/text/Regex;", "templateTagAndValueRegex", "getTemplateTagAndValueRegex", "templateTagPrefix", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {

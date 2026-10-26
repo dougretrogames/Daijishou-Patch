@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class UserAgentMetadataInternal {
     private static final String ARCHITECTURE = "ARCHITECTURE";
     private static final String BITNESS = "BITNESS";

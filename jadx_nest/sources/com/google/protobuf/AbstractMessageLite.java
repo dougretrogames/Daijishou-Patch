@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class AbstractMessageLite<MessageType extends AbstractMessageLite<MessageType, BuilderType>, BuilderType extends Builder<MessageType, BuilderType>> implements MessageLite {
     protected int memoizedHashCode = 0;
 
@@ -84,7 +84,7 @@ public abstract class AbstractMessageLite<MessageType extends AbstractMessageLit
         return "Serializing " + getClass().getName() + " to a " + target + " threw an IOException (should never happen).";
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public static void checkByteStringIsUtf8(ByteString byteString) throws IllegalArgumentException {
         if (!byteString.isValidUtf8()) {
             throw new IllegalArgumentException("Byte string is not UTF-8.");
@@ -97,7 +97,7 @@ public abstract class AbstractMessageLite<MessageType extends AbstractMessageLit
 
     public static abstract class Builder<MessageType extends AbstractMessageLite<MessageType, BuilderType>, BuilderType extends Builder<MessageType, BuilderType>> implements MessageLite.Builder {
         @Override // 
-        /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+        /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
         public abstract BuilderType mo3377clone();
 
         protected abstract BuilderType internalMergeFrom(MessageType message);

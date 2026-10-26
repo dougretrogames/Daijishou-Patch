@@ -10,7 +10,7 @@ import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 import androidx.core.view.accessibility.AccessibilityViewCommand;
 import androidx.customview.widget.ViewDragHelper;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.Behavior<V> {
     private static final float DEFAULT_ALPHA_END_DISTANCE = 0.5f;
     private static final float DEFAULT_ALPHA_START_DISTANCE = 0.0f;
@@ -117,7 +117,7 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.Beha
         return true;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.behavior.SwipeDismissBehavior$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.behavior.SwipeDismissBehavior$1, reason: invalid class name */
     class AnonymousClass1 extends ViewDragHelper.Callback {
         private static final int INVALID_POINTER_ID = -1;
         private int activePointerId = -1;
@@ -151,7 +151,7 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.Beha
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:10:0x001d  */
+        /* WARN: Code duplicated, block: B:10:0x001d  */
         @Override // androidx.customview.widget.ViewDragHelper.Callback
         public void onViewReleased(View view, float f, float f2) {
             int i;
@@ -305,7 +305,7 @@ public class SwipeDismissBehavior<V extends View> extends CoordinatorLayout.Beha
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.behavior.SwipeDismissBehavior$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.behavior.SwipeDismissBehavior$2, reason: invalid class name */
     class AnonymousClass2 implements AccessibilityViewCommand {
         AnonymousClass2() {
         }

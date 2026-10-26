@@ -21,7 +21,7 @@ import org.eclipse.jgit.util.QuotedString;
 import org.eclipse.jgit.util.RawParseUtils;
 import org.eclipse.jgit.util.TemporaryBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileHeader extends DiffEntry {
     final byte[] buf;
     int endOffset;
@@ -51,7 +51,7 @@ public class FileHeader extends DiffEntry {
         BINARY,
         GIT_BINARY;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static PatchType[] valuesCustom() {
             PatchType[] patchTypeArrValuesCustom = values();
             int length = patchTypeArrValuesCustom.length;

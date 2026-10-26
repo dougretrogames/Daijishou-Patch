@@ -3,7 +3,7 @@ package org.apache.commons.io.file;
 import java.math.BigInteger;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Counters {
 
     public interface Counter {

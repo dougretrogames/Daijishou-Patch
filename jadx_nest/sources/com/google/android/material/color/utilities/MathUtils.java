@@ -2,7 +2,7 @@ package com.google.android.material.color.utilities;
 
 import com.magneticchen.daijishou.application_data.Constants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MathUtils {
     public static double clampDouble(double d, double d2, double d3) {
         if (d3 < d) {

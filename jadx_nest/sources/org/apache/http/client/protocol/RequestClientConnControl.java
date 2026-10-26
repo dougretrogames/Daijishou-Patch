@@ -11,7 +11,7 @@ import org.apache.http.conn.routing.RouteInfo;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RequestClientConnControl implements HttpRequestInterceptor {
     private static final String PROXY_CONN_DIRECTIVE = "Proxy-Connection";
     private final Log log = LogFactory.getLog(getClass());

@@ -26,7 +26,7 @@ import java.util.ArrayList;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AnimatedVectorDrawableCompat extends VectorDrawableCommon implements Animatable2Compat {
     private static final String ANIMATED_VECTOR = "animated-vector";
     private static final boolean DBG_ANIMATION_VECTOR_DRAWABLE = false;
@@ -559,7 +559,7 @@ public class AnimatedVectorDrawableCompat extends VectorDrawableCommon implement
         }
     }
 
-    /* JADX INFO: renamed from: androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat$1, reason: invalid class name */
     class AnonymousClass1 implements Drawable.Callback {
         AnonymousClass1() {
         }
@@ -606,7 +606,7 @@ public class AnimatedVectorDrawableCompat extends VectorDrawableCommon implement
         this.mAnimatedVectorState.mAnimatorSet.addListener(this.mAnimatorListener);
     }
 
-    /* JADX INFO: renamed from: androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.vectordrawable.graphics.drawable.AnimatedVectorDrawableCompat$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         AnonymousClass2() {
         }

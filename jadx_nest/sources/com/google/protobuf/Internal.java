@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.RandomAccess;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Internal {
     private static final int DEFAULT_BUFFER_SIZE = 4096;
     public static final byte[] EMPTY_BYTE_ARRAY;
@@ -28,7 +28,7 @@ public final class Internal {
         boolean getBoolean(int index);
 
         @Override // com.google.protobuf.Internal.ProtobufList, com.google.protobuf.Internal.BooleanList
-        /* JADX INFO: renamed from: mutableCopyWithCapacity, reason: merged with bridge method [inline-methods] */
+        /* INFO: renamed from: mutableCopyWithCapacity, reason: merged with bridge method [inline-methods] */
         ProtobufList<Boolean> mutableCopyWithCapacity2(int capacity);
 
         boolean setBoolean(int index, boolean element);
@@ -40,7 +40,7 @@ public final class Internal {
         double getDouble(int index);
 
         @Override // com.google.protobuf.Internal.ProtobufList, com.google.protobuf.Internal.BooleanList
-        /* JADX INFO: renamed from: mutableCopyWithCapacity */
+        /* INFO: renamed from: mutableCopyWithCapacity */
         ProtobufList<Double> mutableCopyWithCapacity2(int capacity);
 
         double setDouble(int index, double element);
@@ -64,7 +64,7 @@ public final class Internal {
         float getFloat(int index);
 
         @Override // com.google.protobuf.Internal.ProtobufList, com.google.protobuf.Internal.BooleanList
-        /* JADX INFO: renamed from: mutableCopyWithCapacity */
+        /* INFO: renamed from: mutableCopyWithCapacity */
         ProtobufList<Float> mutableCopyWithCapacity2(int capacity);
 
         float setFloat(int index, float element);
@@ -76,7 +76,7 @@ public final class Internal {
         int getInt(int index);
 
         @Override // com.google.protobuf.Internal.ProtobufList, com.google.protobuf.Internal.BooleanList
-        /* JADX INFO: renamed from: mutableCopyWithCapacity */
+        /* INFO: renamed from: mutableCopyWithCapacity */
         ProtobufList<Integer> mutableCopyWithCapacity2(int capacity);
 
         int setInt(int index, int element);
@@ -88,7 +88,7 @@ public final class Internal {
         long getLong(int index);
 
         @Override // com.google.protobuf.Internal.ProtobufList, com.google.protobuf.Internal.BooleanList
-        /* JADX INFO: renamed from: mutableCopyWithCapacity */
+        /* INFO: renamed from: mutableCopyWithCapacity */
         ProtobufList<Long> mutableCopyWithCapacity2(int capacity);
 
         long setLong(int index, long element);
@@ -99,7 +99,7 @@ public final class Internal {
 
         void makeImmutable();
 
-        /* JADX INFO: renamed from: mutableCopyWithCapacity */
+        /* INFO: renamed from: mutableCopyWithCapacity */
         ProtobufList<E> mutableCopyWithCapacity2(int capacity);
     }
 
@@ -330,8 +330,8 @@ public final class Internal {
             B doForward(A object);
         }
 
-        /* JADX INFO: Add missing generic type declarations: [T] */
-        /* JADX INFO: renamed from: com.google.protobuf.Internal$MapAdapter$1, reason: invalid class name */
+        /* INFO: Add missing generic type declarations: [T] */
+        /* INFO: renamed from: com.google.protobuf.Internal$MapAdapter$1, reason: invalid class name */
         class AnonymousClass1<T> implements Converter<Integer, T> {
             final /* synthetic */ EnumLiteMap val$enumMap;
             final /* synthetic */ EnumLite val$unrecognizedValue;
@@ -341,14 +341,14 @@ public final class Internal {
                 this.val$unrecognizedValue = val$unrecognizedValue;
             }
 
-            /* JADX WARN: Incorrect return type in method signature: (Ljava/lang/Integer;)TT; */
+            /* WARN: Incorrect return type in method signature: (Ljava/lang/Integer;)TT; */
             @Override // com.google.protobuf.Internal.MapAdapter.Converter
             public EnumLite doForward(Integer value) {
                 EnumLite enumLiteFindValueByNumber = this.val$enumMap.findValueByNumber(value.intValue());
                 return enumLiteFindValueByNumber == null ? this.val$unrecognizedValue : enumLiteFindValueByNumber;
             }
 
-            /* JADX WARN: Incorrect types in method signature: (TT;)Ljava/lang/Integer; */
+            /* WARN: Incorrect types in method signature: (TT;)Ljava/lang/Integer; */
             @Override // com.google.protobuf.Internal.MapAdapter.Converter
             public Integer doBackward(EnumLite value) {
                 return Integer.valueOf(value.getNumber());
@@ -373,7 +373,7 @@ public final class Internal {
             return this.valueConverter.doForward(realvalue);
         }
 
-        /* JADX WARN: Type inference incomplete: some casts might be missing */
+        /* WARN: Type inference incomplete: some casts might be missing */
         @Override // java.util.AbstractMap, java.util.Map
         public V put(K k, V v) {
             RealValue realvaluePut = this.realMap.put(k, this.valueConverter.doBackward(v));

@@ -1,6 +1,6 @@
 package io.opencensus.metrics.data;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_AttachmentValue_AttachmentValueString extends AttachmentValue.AttachmentValueString {
     private final String value;
 

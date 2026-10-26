@@ -5,7 +5,7 @@ import java.io.OutputStream;
 import java.text.MessageFormat;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SideBandOutputStream extends OutputStream {
     public static final int CH_DATA = 1;
     public static final int CH_ERROR = 3;

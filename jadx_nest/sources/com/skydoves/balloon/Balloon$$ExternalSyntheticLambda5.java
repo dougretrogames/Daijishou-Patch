@@ -2,8 +2,8 @@ package com.skydoves.balloon;
 
 import android.widget.PopupWindow;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class Balloon$$ExternalSyntheticLambda5 implements PopupWindow.OnDismissListener {
     public final /* synthetic */ Balloon f$0;
     public final /* synthetic */ OnBalloonDismissListener f$1;

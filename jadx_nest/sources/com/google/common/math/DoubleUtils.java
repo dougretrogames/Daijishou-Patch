@@ -3,7 +3,7 @@ package com.google.common.math;
 import com.google.common.base.Preconditions;
 import java.math.BigInteger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class DoubleUtils {
     static final int EXPONENT_BIAS = 1023;

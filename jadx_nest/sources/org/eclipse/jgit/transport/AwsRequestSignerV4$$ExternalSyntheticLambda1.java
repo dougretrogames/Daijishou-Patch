@@ -5,8 +5,8 @@ import java.util.Map;
 import java.util.function.BiConsumer;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class AwsRequestSignerV4$$ExternalSyntheticLambda1 implements BiConsumer {
     public final /* synthetic */ Map f$0;
 

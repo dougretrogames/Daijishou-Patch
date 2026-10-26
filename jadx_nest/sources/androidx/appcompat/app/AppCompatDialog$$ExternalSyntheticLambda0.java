@@ -3,8 +3,8 @@ package androidx.appcompat.app;
 import android.view.KeyEvent;
 import androidx.core.view.KeyEventDispatcher;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class AppCompatDialog$$ExternalSyntheticLambda0 implements KeyEventDispatcher.Component {
     public final /* synthetic */ AppCompatDialog f$0;
 

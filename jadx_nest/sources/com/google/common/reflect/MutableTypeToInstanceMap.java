@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class MutableTypeToInstanceMap<B> extends ForwardingMap<TypeToken<? extends B>, B> implements TypeToInstanceMap<B> {
     private final Map<TypeToken<? extends B>, B> backingMap = Maps.newHashMap();
@@ -58,7 +58,7 @@ public final class MutableTypeToInstanceMap<B> extends ForwardingMap<TypeToken<?
         return UnmodifiableEntry.transformEntries(super.entrySet());
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingMap, com.google.common.collect.ForwardingObject
     public Map<TypeToken<? extends B>, B> delegate() {
         return this.backingMap;
@@ -74,16 +74,16 @@ public final class MutableTypeToInstanceMap<B> extends ForwardingMap<TypeToken<?
         return this.backingMap.get(typeToken);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class UnmodifiableEntry<K, V> extends ForwardingMapEntry<K, V> {
         private final Map.Entry<K, V> delegate;
 
-        /* JADX INFO: renamed from: $r8$lambda$PXRRP_NYxQ7IKAyO13H8YX2p-q0, reason: not valid java name */
+        /* INFO: renamed from: $r8$lambda$PXRRP_NYxQ7IKAyO13H8YX2p-q0, reason: not valid java name */
         public static /* synthetic */ UnmodifiableEntry m3363$r8$lambda$PXRRP_NYxQ7IKAyO13H8YX2pq0(Map.Entry entry) {
             return new UnmodifiableEntry(entry);
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.MutableTypeToInstanceMap$UnmodifiableEntry$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.MutableTypeToInstanceMap$UnmodifiableEntry$1, reason: invalid class name */
         class AnonymousClass1 extends ForwardingSet<Map.Entry<K, V>> {
             final /* synthetic */ Set val$entries;
 
@@ -91,7 +91,7 @@ public final class MutableTypeToInstanceMap<B> extends ForwardingMap<TypeToken<?
                 this.val$entries = val$entries;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
             public Set<Map.Entry<K, V>> delegate() {
                 return this.val$entries;
@@ -117,7 +117,7 @@ public final class MutableTypeToInstanceMap<B> extends ForwardingMap<TypeToken<?
             return new AnonymousClass1(entries);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static <K, V> Iterator<Map.Entry<K, V>> transformEntries(Iterator<Map.Entry<K, V>> entries) {
             return Iterators.transform(entries, new MutableTypeToInstanceMap$UnmodifiableEntry$$ExternalSyntheticLambda0());
         }
@@ -126,7 +126,7 @@ public final class MutableTypeToInstanceMap<B> extends ForwardingMap<TypeToken<?
             this.delegate = (Map.Entry) Preconditions.checkNotNull(delegate);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingMapEntry, com.google.common.collect.ForwardingObject
         public Map.Entry<K, V> delegate() {
             return this.delegate;

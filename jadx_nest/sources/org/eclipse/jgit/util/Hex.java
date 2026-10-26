@@ -4,7 +4,7 @@ import com.google.common.base.Ascii;
 import java.text.MessageFormat;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Hex {
     private static final char[] HEX = "0123456789abcdef".toCharArray();
 

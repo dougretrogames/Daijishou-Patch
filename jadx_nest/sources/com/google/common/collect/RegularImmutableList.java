@@ -3,7 +3,7 @@ package com.google.common.collect;
 import com.google.common.base.Preconditions;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class RegularImmutableList<E> extends ImmutableList<E> {
     static final ImmutableList<Object> EMPTY = new RegularImmutableList(new Object[0], 0);

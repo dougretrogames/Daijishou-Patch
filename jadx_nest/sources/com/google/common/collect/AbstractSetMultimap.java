@@ -6,12 +6,12 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractSetMultimap<K, V> extends AbstractMapBasedMultimap<K, V> implements SetMultimap<K, V> {
     private static final long serialVersionUID = 7431625294878419160L;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractMapBasedMultimap
     public abstract Set<V> createCollection();
 
@@ -19,7 +19,7 @@ abstract class AbstractSetMultimap<K, V> extends AbstractMapBasedMultimap<K, V> 
         super(map);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractMapBasedMultimap
     public Set<V> createUnmodifiableEmptyCollection() {
         return Collections.emptySet();

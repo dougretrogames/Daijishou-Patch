@@ -15,7 +15,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.api.PackRefsCommand;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class RefDatabase {
     public static final String ALL = "";
     public static final int MAX_SYMBOLIC_REF_DEPTH = 5;

@@ -6,14 +6,14 @@ import org.apache.http.io.SessionOutputBuffer;
 import org.apache.http.message.LineFormatter;
 import org.apache.http.params.HttpParams;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class HttpResponseWriter extends AbstractMessageWriter<HttpResponse> {
     public HttpResponseWriter(SessionOutputBuffer sessionOutputBuffer, LineFormatter lineFormatter, HttpParams httpParams) {
         super(sessionOutputBuffer, lineFormatter, httpParams);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.http.impl.io.AbstractMessageWriter
     public void writeHeadLine(HttpResponse httpResponse) throws IOException {
         this.lineFormatter.formatStatusLine(this.lineBuf, httpResponse.getStatusLine());

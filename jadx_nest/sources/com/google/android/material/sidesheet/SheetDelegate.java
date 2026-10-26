@@ -4,7 +4,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class SheetDelegate {
     abstract int calculateInnerMargin(ViewGroup.MarginLayoutParams marginLayoutParams);
 

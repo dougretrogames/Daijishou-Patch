@@ -1,6 +1,6 @@
 package org.apache.http.impl.auth;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UnsupportedDigestAlgorithmException extends RuntimeException {
     private static final long serialVersionUID = 319558534317118022L;
 

@@ -17,8 +17,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: FontListFontFamilyTypefaceAdapter.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: FontListFontFamilyTypefaceAdapter.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000^\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0000\u0018\u00002\u00020\u0001:\u0002\u001f B\u0005¢\u0006\u0002\u0010\u0002J#\u0010\r\u001a\u0004\u0018\u00010\u00042\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u0011ø\u0001\u0001ø\u0001\u0000¢\u0006\u0002\b\u0012J*\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\b\u0010\u0015\u001a\u0004\u0018\u00010\u00012\b\b\u0002\u0010\u0016\u001a\u00020\u0017JH\u0010\u0018\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0016\u001a\u00020\u00172\u001e\u0010\u0019\u001a\u001a\b\u0001\u0012\f\u0012\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u001b\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u001aH\u0086@¢\u0006\u0002\u0010\u001cJ+\u0010\u001d\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u000e\u0010\u0019\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00010\u001eH\u0086\bR\u0016\u0010\u0003\u001a\u00020\u0004X\u0082\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\n\u0002\u0010\u0005R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\b\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00040\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u00040\fX\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006!"}, d2 = {"Landroidx/compose/ui/text/font/AsyncTypefaceCache;", "", "()V", "PermanentFailure", "Landroidx/compose/ui/text/font/AsyncTypefaceCache$AsyncTypefaceResult;", "Ljava/lang/Object;", "cacheLock", "Landroidx/compose/ui/text/platform/SynchronizedObject;", "permanentCache", "Landroidx/compose/ui/text/caches/SimpleArrayMap;", "Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;", "resultCache", "Landroidx/compose/ui/text/caches/LruCache;", "get", "font", "Landroidx/compose/ui/text/font/Font;", "platformFontLoader", "Landroidx/compose/ui/text/font/PlatformFontLoader;", "get-1ASDuI8", "put", "", "result", "forever", "", "runCached", "block", "Lkotlin/Function1;", "Lkotlin/coroutines/Continuation;", "(Landroidx/compose/ui/text/font/Font;Landroidx/compose/ui/text/font/PlatformFontLoader;ZLkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "runCachedBlocking", "Lkotlin/Function0;", "AsyncTypefaceResult", "Key", "ui-text_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class AsyncTypefaceCache {
     public static final int $stable = 8;
@@ -27,8 +27,8 @@ public final class AsyncTypefaceCache {
     private final SimpleArrayMap<Key, AsyncTypefaceResult> permanentCache = new SimpleArrayMap<>(0, 1, null);
     private final SynchronizedObject cacheLock = Synchronization_jvmKt.createSynchronizedObject();
 
-    /* JADX INFO: renamed from: androidx.compose.ui.text.font.AsyncTypefaceCache$runCached$1, reason: invalid class name */
-    /* JADX INFO: compiled from: FontListFontFamilyTypefaceAdapter.kt */
+    /* INFO: renamed from: androidx.compose.ui.text.font.AsyncTypefaceCache$runCached$1, reason: invalid class name */
+    /* INFO: compiled from: FontListFontFamilyTypefaceAdapter.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.ui.text.font.AsyncTypefaceCache", f = "FontListFontFamilyTypefaceAdapter.kt", i = {0, 0, 0}, l = {398}, m = "runCached", n = {"this", "key", "forever"}, s = {"L$0", "L$1", "Z$0"})
     static final class AnonymousClass1 extends ContinuationImpl {
@@ -50,33 +50,33 @@ public final class AsyncTypefaceCache {
         }
     }
 
-    /* JADX INFO: compiled from: FontListFontFamilyTypefaceAdapter.kt */
+    /* INFO: compiled from: FontListFontFamilyTypefaceAdapter.kt */
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\t\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0003\b\u0081@\u0018\u00002\u00020\u0001B\u0011\u0012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0001¢\u0006\u0004\b\u0003\u0010\u0004J\u001a\u0010\u000b\u001a\u00020\u00062\b\u0010\f\u001a\u0004\u0018\u00010\u0001HÖ\u0003¢\u0006\u0004\b\r\u0010\u000eJ\u0010\u0010\u000f\u001a\u00020\u0010HÖ\u0001¢\u0006\u0004\b\u0011\u0010\u0012J\u0010\u0010\u0013\u001a\u00020\u0014HÖ\u0001¢\u0006\u0004\b\u0015\u0010\u0016R\u0011\u0010\u0005\u001a\u00020\u00068F¢\u0006\u0006\u001a\u0004\b\u0007\u0010\bR\u0013\u0010\u0002\u001a\u0004\u0018\u00010\u0001¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n\u0088\u0001\u0002¨\u0006\u0017"}, d2 = {"Landroidx/compose/ui/text/font/AsyncTypefaceCache$AsyncTypefaceResult;", "", "result", "constructor-impl", "(Ljava/lang/Object;)Ljava/lang/Object;", "isPermanentFailure", "", "isPermanentFailure-impl", "(Ljava/lang/Object;)Z", "getResult", "()Ljava/lang/Object;", "equals", "other", "equals-impl", "(Ljava/lang/Object;Ljava/lang/Object;)Z", "hashCode", "", "hashCode-impl", "(Ljava/lang/Object;)I", "toString", "", "toString-impl", "(Ljava/lang/Object;)Ljava/lang/String;", "ui-text_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     @JvmInline
     public static final class AsyncTypefaceResult {
         private final Object result;
 
-        /* JADX INFO: renamed from: box-impl, reason: not valid java name */
+        /* INFO: renamed from: box-impl, reason: not valid java name */
         public static final /* synthetic */ AsyncTypefaceResult m2449boximpl(Object obj) {
             return new AsyncTypefaceResult(obj);
         }
 
-        /* JADX INFO: renamed from: constructor-impl, reason: not valid java name */
+        /* INFO: renamed from: constructor-impl, reason: not valid java name */
         public static Object m2450constructorimpl(Object obj) {
             return obj;
         }
 
-        /* JADX INFO: renamed from: equals-impl, reason: not valid java name */
+        /* INFO: renamed from: equals-impl, reason: not valid java name */
         public static boolean m2451equalsimpl(Object obj, Object obj2) {
             return (obj2 instanceof AsyncTypefaceResult) && Intrinsics.areEqual(obj, ((AsyncTypefaceResult) obj2).m2456unboximpl());
         }
 
-        /* JADX INFO: renamed from: equals-impl0, reason: not valid java name */
+        /* INFO: renamed from: equals-impl0, reason: not valid java name */
         public static final boolean m2452equalsimpl0(Object obj, Object obj2) {
             return Intrinsics.areEqual(obj, obj2);
         }
 
-        /* JADX INFO: renamed from: hashCode-impl, reason: not valid java name */
+        /* INFO: renamed from: hashCode-impl, reason: not valid java name */
         public static int m2453hashCodeimpl(Object obj) {
             if (obj == null) {
                 return 0;
@@ -84,12 +84,12 @@ public final class AsyncTypefaceCache {
             return obj.hashCode();
         }
 
-        /* JADX INFO: renamed from: isPermanentFailure-impl, reason: not valid java name */
+        /* INFO: renamed from: isPermanentFailure-impl, reason: not valid java name */
         public static final boolean m2454isPermanentFailureimpl(Object obj) {
             return obj == null;
         }
 
-        /* JADX INFO: renamed from: toString-impl, reason: not valid java name */
+        /* INFO: renamed from: toString-impl, reason: not valid java name */
         public static String m2455toStringimpl(Object obj) {
             return "AsyncTypefaceResult(result=" + obj + ')';
         }
@@ -106,7 +106,7 @@ public final class AsyncTypefaceCache {
             return m2455toStringimpl(this.result);
         }
 
-        /* JADX INFO: renamed from: unbox-impl, reason: not valid java name */
+        /* INFO: renamed from: unbox-impl, reason: not valid java name */
         public final /* synthetic */ Object m2456unboximpl() {
             return this.result;
         }
@@ -120,7 +120,7 @@ public final class AsyncTypefaceCache {
         }
     }
 
-    /* JADX INFO: compiled from: FontListFontFamilyTypefaceAdapter.kt */
+    /* INFO: compiled from: FontListFontFamilyTypefaceAdapter.kt */
     @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\b\u0080\b\u0018\u00002\u00020\u0001B\u0017\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0001¢\u0006\u0002\u0010\u0005J\t\u0010\n\u001a\u00020\u0003HÆ\u0003J\u000b\u0010\u000b\u001a\u0004\u0018\u00010\u0001HÆ\u0003J\u001f\u0010\f\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0001HÆ\u0001J\u0013\u0010\r\u001a\u00020\u000e2\b\u0010\u000f\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0010\u001a\u00020\u0011HÖ\u0001J\t\u0010\u0012\u001a\u00020\u0013HÖ\u0001R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0007R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0001¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\t¨\u0006\u0014"}, d2 = {"Landroidx/compose/ui/text/font/AsyncTypefaceCache$Key;", "", "font", "Landroidx/compose/ui/text/font/Font;", "loaderKey", "(Landroidx/compose/ui/text/font/Font;Ljava/lang/Object;)V", "getFont", "()Landroidx/compose/ui/text/font/Font;", "getLoaderKey", "()Ljava/lang/Object;", "component1", "component2", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "", "toString", "", "ui-text_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final /* data */ class Key {
         public static final int $stable = 8;
@@ -137,12 +137,12 @@ public final class AsyncTypefaceCache {
             return key.copy(font, obj);
         }
 
-        /* JADX INFO: renamed from: component1, reason: from getter */
+        /* INFO: renamed from: component1, reason: from getter */
         public final Font getFont() {
             return this.font;
         }
 
-        /* JADX INFO: renamed from: component2, reason: from getter */
+        /* INFO: renamed from: component2, reason: from getter */
         public final Object getLoaderKey() {
             return this.loaderKey;
         }
@@ -210,7 +210,7 @@ public final class AsyncTypefaceCache {
         }
     }
 
-    /* JADX INFO: renamed from: get-1ASDuI8, reason: not valid java name */
+    /* INFO: renamed from: get-1ASDuI8, reason: not valid java name */
     public final AsyncTypefaceResult m2448get1ASDuI8(Font font, PlatformFontLoader platformFontLoader) {
         AsyncTypefaceResult asyncTypefaceResult;
         Key key = new Key(font, platformFontLoader.getCacheKey());
@@ -223,7 +223,7 @@ public final class AsyncTypefaceCache {
         return asyncTypefaceResult;
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public final Object runCached(Font font, PlatformFontLoader platformFontLoader, boolean z, Function1<? super Continuation<Object>, ? extends Object> function1, Continuation<Object> continuation) throws Throwable {
         AnonymousClass1 anonymousClass1;
         Key key;

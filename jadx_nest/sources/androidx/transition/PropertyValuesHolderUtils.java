@@ -6,7 +6,7 @@ import android.graphics.Path;
 import android.graphics.PointF;
 import android.util.Property;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class PropertyValuesHolderUtils {
     static PropertyValuesHolder ofPointF(Property<?, PointF> property, Path path) {
         return Api21Impl.ofObject(property, path);

@@ -10,7 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class StreamLocalUriFetcher extends LocalUriFetcher<InputStream> {
     private static final int ID_CONTACTS_CONTACT = 3;
     private static final int ID_CONTACTS_LOOKUP = 1;
@@ -38,8 +38,8 @@ public class StreamLocalUriFetcher extends LocalUriFetcher<InputStream> {
         super(contentResolver, uri, z);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* INFO: Access modifiers changed from: protected */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.load.data.LocalUriFetcher
     public InputStream loadResource(Uri uri, ContentResolver contentResolver) throws FileNotFoundException {
         InputStream inputStreamLoadResourceFromUri = loadResourceFromUri(uri, contentResolver);
@@ -89,7 +89,7 @@ public class StreamLocalUriFetcher extends LocalUriFetcher<InputStream> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.bumptech.glide.load.data.LocalUriFetcher
     public void close(InputStream inputStream) throws IOException {
         inputStream.close();

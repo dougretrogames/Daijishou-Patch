@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class LruCache<T, Y> {
     private final Map<T, Entry<Y>> cache = new LinkedHashMap(100, 0.75f, true);
     private long currentSize;

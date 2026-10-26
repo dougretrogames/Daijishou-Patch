@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import org.eclipse.jgit.util.Base85;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BinaryHunkOutputStream extends OutputStream {
     private static final int MAX_BYTES = 52;
     private final byte[] buffer = new byte[52];

@@ -16,7 +16,7 @@ import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.filter.NotIgnoredFilter;
 import org.eclipse.jgit.util.FS;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ExternalToolUtils {
     public static final String KEY_DIFF_TOOL = "difftool";
     public static final String KEY_MERGE_TOOL = "mergetool";

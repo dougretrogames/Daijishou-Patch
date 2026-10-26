@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class SimpleDataOutput implements DataOutput {
     private final byte[] buf = new byte[8];
     private final OutputStream fd;

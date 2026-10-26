@@ -6,7 +6,7 @@ import com.google.common.collect.UnmodifiableIterator;
 import java.util.Collection;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class StandardMutableNetwork<N, E> extends StandardNetwork<N, E> implements MutableNetwork<N, E> {
     StandardMutableNetwork(NetworkBuilder<? super N, ? super E> builder) {

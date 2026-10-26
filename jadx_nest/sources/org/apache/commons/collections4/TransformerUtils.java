@@ -19,7 +19,7 @@ import org.apache.commons.collections4.functors.PredicateTransformer;
 import org.apache.commons.collections4.functors.StringValueTransformer;
 import org.apache.commons.collections4.functors.SwitchTransformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformerUtils {
     public static <T> Transformer<T, T> asTransformer(Closure<? super T> closure) {
         return ClosureTransformer.closureTransformer(closure);

@@ -33,7 +33,7 @@ import com.bumptech.glide.util.Preconditions;
 import com.bumptech.glide.util.Util;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class BaseRequestOptions<T extends BaseRequestOptions<T>> implements Cloneable {
     private static final int DISK_CACHE_STRATEGY = 4;
     private static final int ERROR_ID = 32;
@@ -260,7 +260,7 @@ public abstract class BaseRequestOptions<T extends BaseRequestOptions<T>> implem
     }
 
     @Override // 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public T mo3252clone() {
         try {
             T t = (T) super.clone();
@@ -436,7 +436,7 @@ public abstract class BaseRequestOptions<T extends BaseRequestOptions<T>> implem
         return (T) transform(transformation, false);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     T transform(Transformation<Bitmap> transformation, boolean z) {
         if (this.isAutoCloneEnabled) {
             return (T) mo3252clone().transform(transformation, z);

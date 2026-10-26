@@ -1,6 +1,6 @@
 package co.infinum.retromock;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class RandomIterator<T> implements ResponseIterator<T> {
     private final RandomProvider randomProvider;
     private final T[] responses;

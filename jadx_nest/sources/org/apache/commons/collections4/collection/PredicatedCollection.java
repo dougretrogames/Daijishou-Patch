@@ -22,7 +22,7 @@ import org.apache.commons.collections4.multiset.PredicatedMultiSet;
 import org.apache.commons.collections4.queue.PredicatedQueue;
 import org.apache.commons.collections4.set.PredicatedSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PredicatedCollection<E> extends AbstractCollectionDecorator<E> {
     private static final long serialVersionUID = -5259182142076705162L;
     protected final Predicate<? super E> predicate;
@@ -151,7 +151,7 @@ public class PredicatedCollection<E> extends AbstractCollectionDecorator<E> {
         return decorated().addAll(collection);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public void validate(E e) {
         if (!this.predicate.test(e)) {
             throw new IllegalArgumentException("Cannot add Object '" + e + "' - Predicate '" + this.predicate + "' rejected it");

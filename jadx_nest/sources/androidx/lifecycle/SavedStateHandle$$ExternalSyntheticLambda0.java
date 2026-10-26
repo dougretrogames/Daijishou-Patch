@@ -3,8 +3,8 @@ package androidx.lifecycle;
 import android.os.Bundle;
 import androidx.savedstate.SavedStateRegistry;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class SavedStateHandle$$ExternalSyntheticLambda0 implements SavedStateRegistry.SavedStateProvider {
     public final /* synthetic */ SavedStateHandle f$0;
 

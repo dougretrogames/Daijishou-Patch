@@ -15,7 +15,7 @@ import androidx.leanback.widget.RowPresenter;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class PlaybackBannerControlGlue<T extends PlayerAdapter> extends PlaybackBaseControlGlue<T> {
     public static final int ACTION_CUSTOM_LEFT_FIRST = 1;
     public static final int ACTION_CUSTOM_RIGHT_FIRST = 4096;
@@ -139,7 +139,7 @@ public class PlaybackBannerControlGlue<T extends PlayerAdapter> extends Playback
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.PlaybackBannerControlGlue$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.PlaybackBannerControlGlue$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractDetailsDescriptionPresenter {
         AnonymousClass1() {
         }
@@ -157,7 +157,7 @@ public class PlaybackBannerControlGlue<T extends PlayerAdapter> extends Playback
         return new AnonymousClass2(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.PlaybackBannerControlGlue$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.PlaybackBannerControlGlue$2, reason: invalid class name */
     class AnonymousClass2 extends PlaybackControlsRowPresenter {
         AnonymousClass2(Presenter presenter) {
             super(presenter);
@@ -247,7 +247,7 @@ public class PlaybackBannerControlGlue<T extends PlayerAdapter> extends Playback
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:22:0x0036  */
+    /* WARN: Code duplicated, block: B:22:0x0036  */
     boolean dispatchAction(Action action, KeyEvent keyEvent) {
         if (action == this.mPlayPauseAction) {
             boolean z = keyEvent == null || keyEvent.getKeyCode() == 85 || keyEvent.getKeyCode() == 126;

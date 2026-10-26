@@ -6,9 +6,9 @@ import com.google.gson.stream.MalformedJsonException;
 import java.io.IOException;
 import java.math.BigDecimal;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: loaded from: classes4.dex */
+/* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* WARN: Unknown enum class pattern. Please report as an issue! */
+/* INFO: loaded from: classes4.dex */
 public abstract class ToNumberPolicy implements ToNumberStrategy {
     private static final /* synthetic */ ToNumberPolicy[] $VALUES;
     public static final ToNumberPolicy BIG_DECIMAL;
@@ -32,7 +32,7 @@ public abstract class ToNumberPolicy implements ToNumberStrategy {
         return (ToNumberPolicy[]) $VALUES.clone();
     }
 
-    /* JADX INFO: renamed from: com.google.gson.ToNumberPolicy$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.ToNumberPolicy$1, reason: invalid class name */
     final enum AnonymousClass1 extends ToNumberPolicy {
         AnonymousClass1(String str, int i) {
             super(str, i, null);
@@ -56,7 +56,7 @@ public abstract class ToNumberPolicy implements ToNumberStrategy {
         $VALUES = new ToNumberPolicy[]{anonymousClass1, anonymousClass2, anonymousClass3, anonymousClass4};
     }
 
-    /* JADX INFO: renamed from: com.google.gson.ToNumberPolicy$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.ToNumberPolicy$2, reason: invalid class name */
     final enum AnonymousClass2 extends ToNumberPolicy {
         AnonymousClass2(String str, int i) {
             super(str, i, null);
@@ -68,7 +68,7 @@ public abstract class ToNumberPolicy implements ToNumberStrategy {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.ToNumberPolicy$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.ToNumberPolicy$3, reason: invalid class name */
     final enum AnonymousClass3 extends ToNumberPolicy {
         AnonymousClass3(String str, int i) {
             super(str, i, null);
@@ -93,7 +93,7 @@ public abstract class ToNumberPolicy implements ToNumberStrategy {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.ToNumberPolicy$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.ToNumberPolicy$4, reason: invalid class name */
     final enum AnonymousClass4 extends ToNumberPolicy {
         AnonymousClass4(String str, int i) {
             super(str, i, null);

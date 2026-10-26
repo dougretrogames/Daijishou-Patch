@@ -6,7 +6,7 @@ import io.noties.markwon.core.MarkwonTheme;
 import org.commonmark.node.Node;
 import org.commonmark.parser.Parser;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class AbstractMarkwonPlugin implements MarkwonPlugin {
     @Override // io.noties.markwon.MarkwonPlugin
     public void afterRender(Node node, MarkwonVisitor markwonVisitor) {

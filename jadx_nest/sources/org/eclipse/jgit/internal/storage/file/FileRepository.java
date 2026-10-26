@@ -52,7 +52,7 @@ import org.eclipse.jgit.util.SystemReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileRepository extends Repository {
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) FileRepository.class);
     private static final String UNNAMED = "Unnamed repository; edit this file to name it for gitweb.";
@@ -112,7 +112,7 @@ public class FileRepository extends Repository {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x00d1  */
+    /* WARN: Code duplicated, block: B:17:0x00d1  */
     @Override // org.eclipse.jgit.lib.Repository
     public void create(boolean z) throws IOException {
         boolean z2;

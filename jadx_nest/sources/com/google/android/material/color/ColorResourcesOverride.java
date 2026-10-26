@@ -4,7 +4,7 @@ import android.content.Context;
 import android.os.Build;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface ColorResourcesOverride {
     boolean applyIfPossible(Context context, Map<Integer, Integer> map);
 

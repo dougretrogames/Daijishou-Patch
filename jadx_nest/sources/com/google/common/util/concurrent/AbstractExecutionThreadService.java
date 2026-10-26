@@ -6,7 +6,7 @@ import java.util.concurrent.TimeoutException;
 import java.util.logging.Level;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class AbstractExecutionThreadService implements Service {
     private static final LazyLogger logger = new LazyLogger(AbstractExecutionThreadService.class);
@@ -23,7 +23,7 @@ public abstract class AbstractExecutionThreadService implements Service {
     protected void triggerShutdown() {
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.AbstractExecutionThreadService$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.AbstractExecutionThreadService$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractService {
         AnonymousClass1() {
         }
@@ -33,12 +33,12 @@ public abstract class AbstractExecutionThreadService implements Service {
             MoreExecutors.renamingDecorator(AbstractExecutionThreadService.this.executor(), new AbstractExecutionThreadService$1$$ExternalSyntheticLambda0(this)).execute(new AbstractExecutionThreadService$1$$ExternalSyntheticLambda1(this));
         }
 
-        /* JADX INFO: renamed from: lambda$doStart$0$com-google-common-util-concurrent-AbstractExecutionThreadService$1, reason: not valid java name */
+        /* INFO: renamed from: lambda$doStart$0$com-google-common-util-concurrent-AbstractExecutionThreadService$1, reason: not valid java name */
         /* synthetic */ String m3365xa0f821c5() {
             return AbstractExecutionThreadService.this.serviceName();
         }
 
-        /* JADX INFO: renamed from: lambda$doStart$1$com-google-common-util-concurrent-AbstractExecutionThreadService$1, reason: not valid java name */
+        /* INFO: renamed from: lambda$doStart$1$com-google-common-util-concurrent-AbstractExecutionThreadService$1, reason: not valid java name */
         /* synthetic */ void m3366x3d661e24() {
             try {
                 AbstractExecutionThreadService.this.startUp();
@@ -84,7 +84,7 @@ public abstract class AbstractExecutionThreadService implements Service {
         return new AbstractExecutionThreadService$$ExternalSyntheticLambda0(this);
     }
 
-    /* JADX INFO: renamed from: lambda$executor$0$com-google-common-util-concurrent-AbstractExecutionThreadService, reason: not valid java name */
+    /* INFO: renamed from: lambda$executor$0$com-google-common-util-concurrent-AbstractExecutionThreadService, reason: not valid java name */
     /* synthetic */ void m3364xafeb5522(Runnable runnable) {
         MoreExecutors.newThread(serviceName(), runnable).start();
     }

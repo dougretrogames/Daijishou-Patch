@@ -6,7 +6,7 @@ import kotlin.text.Typography;
 import okio.Utf8;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public class XmlEscapers {
     private static final char MAX_ASCII_CONTROL_CHAR = 31;

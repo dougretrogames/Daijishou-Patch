@@ -1,7 +1,7 @@
 package com.google.common.util.concurrent;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class ExecutionSequencer$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ TrustedListenableFutureTask f$0;
     public final /* synthetic */ SettableFuture f$1;

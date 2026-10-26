@@ -4,8 +4,8 @@ import android.view.View;
 import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.internal.ViewUtils;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SearchView$$ExternalSyntheticLambda3 implements ViewUtils.OnApplyWindowInsetsListener {
     public final /* synthetic */ SearchView f$0;
 

@@ -7,7 +7,7 @@ import com.google.api.client.util.Preconditions;
 import java.util.Collection;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AuthorizationRequestUrl extends GenericUrl {
 
     @Key("client_id")

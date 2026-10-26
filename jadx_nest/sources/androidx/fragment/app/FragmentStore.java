@@ -12,7 +12,7 @@ import java.util.Iterator;
 import java.util.List;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class FragmentStore {
     private static final String TAG = "FragmentManager";
     private FragmentManagerViewModel mNonConfig;

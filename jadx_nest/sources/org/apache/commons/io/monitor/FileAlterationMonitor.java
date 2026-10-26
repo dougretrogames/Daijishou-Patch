@@ -13,7 +13,7 @@ import java.util.concurrent.ThreadFactory;
 import java.util.stream.Stream;
 import org.apache.commons.io.ThreadUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class FileAlterationMonitor implements Runnable {
     private static final FileAlterationObserver[] EMPTY_ARRAY = new FileAlterationObserver[0];
     private final long intervalMillis;

@@ -11,7 +11,7 @@ import org.apache.http.message.TokenParser;
 import org.eclipse.jgit.util.IO;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RebaseTodoFile {
     private Repository repo;
 

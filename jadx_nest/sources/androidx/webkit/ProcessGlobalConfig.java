@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.concurrent.atomic.AtomicReference;
 import org.chromium.support_lib_boundary.ProcessGlobalConfigConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ProcessGlobalConfig {
     String mCacheDirectoryBasePath;
     String mDataDirectoryBasePath;

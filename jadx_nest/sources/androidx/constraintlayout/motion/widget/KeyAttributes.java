@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class KeyAttributes extends Key {
     private static final boolean DEBUG = false;
     public static final int KEY_TYPE = 1;
@@ -158,7 +158,7 @@ public class KeyAttributes extends Key {
         }
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     @Override // androidx.constraintlayout.motion.widget.Key
     public void addValues(HashMap<String, ViewSpline> map) {
         for (String str : map.keySet()) {
@@ -298,7 +298,7 @@ public class KeyAttributes extends Key {
         }
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     @Override // androidx.constraintlayout.motion.widget.Key
     public void setValue(String str, Object obj) {
         str.hashCode();
@@ -595,7 +595,7 @@ public class KeyAttributes extends Key {
     }
 
     @Override // androidx.constraintlayout.motion.widget.Key
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public Key mo3143clone() {
         return new KeyAttributes().copy(this);
     }

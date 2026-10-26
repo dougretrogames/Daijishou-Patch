@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import java.io.UnsupportedEncodingException;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public enum ProtocolVersion implements Parcelable {
     UNKNOWN("UNKNOWN"),
@@ -15,7 +15,7 @@ public enum ProtocolVersion implements Parcelable {
     public static final Parcelable.Creator<ProtocolVersion> CREATOR = new zzf();
     private final String zzb;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class UnsupportedProtocolException extends Exception {
         public UnsupportedProtocolException(String str) {
             super(String.format("Protocol version %s not supported", str));

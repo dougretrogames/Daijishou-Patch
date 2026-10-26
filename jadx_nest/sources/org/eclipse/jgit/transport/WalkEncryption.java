@@ -28,7 +28,7 @@ import org.eclipse.jgit.storage.pack.PackConfig;
 import org.eclipse.jgit.util.Base64;
 import org.eclipse.jgit.util.Hex;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class WalkEncryption {
     static final String JETS3T_CRYPTO_ALG = "jets3t-crypto-alg";
     static final String JETS3T_CRYPTO_VER = "jets3t-crypto-ver";
@@ -341,7 +341,7 @@ abstract class WalkEncryption {
         }
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     static WalkEncryption instance(Properties properties) throws GeneralSecurityException {
         String property = properties.getProperty(AmazonS3.Keys.CRYPTO_ALG, "PBEWithMD5AndDES");
         String property2 = properties.getProperty(AmazonS3.Keys.CRYPTO_VER, "0");

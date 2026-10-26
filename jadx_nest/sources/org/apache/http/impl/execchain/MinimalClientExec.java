@@ -38,7 +38,7 @@ import org.apache.http.protocol.RequestUserAgent;
 import org.apache.http.util.Args;
 import org.apache.http.util.VersionInfo;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MinimalClientExec implements ClientExecChain {
     private final HttpClientConnectionManager connManager;
     private final HttpProcessor httpProcessor;
@@ -76,7 +76,7 @@ public class MinimalClientExec implements ClientExecChain {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:37:0x00b1  */
+    /* WARN: Code duplicated, block: B:37:0x00b1  */
     @Override // org.apache.http.impl.execchain.ClientExecChain
     public CloseableHttpResponse execute(HttpRoute httpRoute, HttpRequestWrapper httpRequestWrapper, HttpClientContext httpClientContext, HttpExecutionAware httpExecutionAware) throws HttpException, IOException {
         Object targetHost;

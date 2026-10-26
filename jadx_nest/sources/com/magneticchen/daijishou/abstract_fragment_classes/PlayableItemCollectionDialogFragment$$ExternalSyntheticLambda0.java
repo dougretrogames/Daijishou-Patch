@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.abstract_fragment_classes;
 import androidx.lifecycle.Observer;
 import com.magneticchen.daijishou.daijishou_library_db.PlatformEntity;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class PlayableItemCollectionDialogFragment$$ExternalSyntheticLambda0 implements Observer {
     public final /* synthetic */ PlayableItemCollectionDialogFragment f$0;
 

@@ -5,7 +5,7 @@ import com.google.protobuf.Internal;
 import com.google.protobuf.ProtocolMessageEnum;
 import com.google.protobuf.RuntimeVersion;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public enum PopularitySourcePopularitySourceEnum implements ProtocolMessageEnum {
     POPULARITYSOURCE_POPULARITY_SOURCE_NULL(0),
     IGDB(121),
@@ -50,7 +50,7 @@ public enum PopularitySourcePopularitySourceEnum implements ProtocolMessageEnum 
         return internalValueMap;
     }
 
-    /* JADX INFO: renamed from: proto.PopularitySourcePopularitySourceEnum$1, reason: invalid class name */
+    /* INFO: renamed from: proto.PopularitySourcePopularitySourceEnum$1, reason: invalid class name */
     class AnonymousClass1 implements Internal.EnumLiteMap<PopularitySourcePopularitySourceEnum> {
         AnonymousClass1() {
         }

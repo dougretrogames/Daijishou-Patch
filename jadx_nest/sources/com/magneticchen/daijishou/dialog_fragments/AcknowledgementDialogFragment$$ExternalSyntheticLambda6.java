@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.dialog_fragments;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class AcknowledgementDialogFragment$$ExternalSyntheticLambda6 implements DialogInterface.OnShowListener {
     public final /* synthetic */ String f$0;
     public final /* synthetic */ AcknowledgementDialogFragment f$1;

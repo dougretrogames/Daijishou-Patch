@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class MapIteratorCache<K, V> {
     private final Map<K, V> backingMap;
@@ -57,7 +57,7 @@ class MapIteratorCache<K, V> {
         return getIfCached(key) != null || this.backingMap.containsKey(key);
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.MapIteratorCache$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.MapIteratorCache$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractSet<K> {
         AnonymousClass1() {
         }
@@ -67,7 +67,7 @@ class MapIteratorCache<K, V> {
             return new C00501(MapIteratorCache.this.backingMap.entrySet().iterator());
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.MapIteratorCache$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.google.common.graph.MapIteratorCache$1$1, reason: invalid class name and collision with other inner class name */
         class C00501 extends UnmodifiableIterator<K> {
             final /* synthetic */ Iterator val$entryIterator;
 

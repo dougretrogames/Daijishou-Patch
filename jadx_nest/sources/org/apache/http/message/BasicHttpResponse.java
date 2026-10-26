@@ -10,7 +10,7 @@ import org.apache.http.StatusLine;
 import org.apache.http.util.Args;
 import org.apache.http.util.TextUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicHttpResponse extends AbstractHttpMessage implements HttpResponse {
     private int code;
     private HttpEntity entity;

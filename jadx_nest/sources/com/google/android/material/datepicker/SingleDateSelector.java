@@ -20,7 +20,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SingleDateSelector implements DateSelector<Long> {
     public static final Parcelable.Creator<SingleDateSelector> CREATOR = new AnonymousClass2();
     private CharSequence error;
@@ -37,7 +37,7 @@ public class SingleDateSelector implements DateSelector<Long> {
         this.selectedItem = Long.valueOf(j);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void clearSelection() {
         this.selectedItem = null;
     }
@@ -67,7 +67,7 @@ public class SingleDateSelector implements DateSelector<Long> {
         return arrayList;
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.google.android.material.datepicker.DateSelector
     public Long getSelection() {
         return this.selectedItem;
@@ -112,12 +112,12 @@ public class SingleDateSelector implements DateSelector<Long> {
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.SingleDateSelector$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.SingleDateSelector$1, reason: invalid class name */
     class AnonymousClass1 extends DateFormatTextWatcher {
         final /* synthetic */ TextInputLayout val$dateTextInput;
         final /* synthetic */ OnSelectionChangedListener val$listener;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(String str, DateFormat dateFormat, TextInputLayout textInputLayout, CalendarConstraints calendarConstraints, OnSelectionChangedListener onSelectionChangedListener, TextInputLayout textInputLayout2) {
             super(str, dateFormat, textInputLayout, calendarConstraints);
             this.val$listener = onSelectionChangedListener;
@@ -183,12 +183,12 @@ public class SingleDateSelector implements DateSelector<Long> {
         return R.string.mtrl_picker_date_header_title;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.SingleDateSelector$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.SingleDateSelector$2, reason: invalid class name */
     class AnonymousClass2 implements Parcelable.Creator<SingleDateSelector> {
         AnonymousClass2() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public SingleDateSelector createFromParcel(Parcel parcel) {
             SingleDateSelector singleDateSelector = new SingleDateSelector();
@@ -196,7 +196,7 @@ public class SingleDateSelector implements DateSelector<Long> {
             return singleDateSelector;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public SingleDateSelector[] newArray(int i) {
             return new SingleDateSelector[i];

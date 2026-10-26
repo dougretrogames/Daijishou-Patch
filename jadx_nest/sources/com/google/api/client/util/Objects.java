@@ -2,7 +2,7 @@ package com.google.api.client.util;
 
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Objects {
     public static boolean equal(Object obj, Object obj2) {
         return com.google.common.base.Objects.equal(obj, obj2);

@@ -8,7 +8,7 @@ import androidx.constraintlayout.widget.ConstraintSet;
 import java.util.HashMap;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DesignTool {
     private static final boolean DEBUG = false;
     private static final boolean DO_NOT_USE = false;

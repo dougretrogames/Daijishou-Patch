@@ -9,11 +9,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class AbstractMessage extends AbstractMessageLite implements Message {
     protected int memoizedSize = -1;
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public interface BuilderParent {
         void markDirty();
     }
@@ -222,7 +222,7 @@ public abstract class AbstractMessage extends AbstractMessageLite implements Mes
         }
 
         @Override // com.google.protobuf.AbstractMessageLite.Builder
-        /* JADX INFO: renamed from: clone */
+        /* INFO: renamed from: clone */
         public BuilderType mo3377clone() {
             throw new UnsupportedOperationException("clone() should be implemented in subclasses.");
         }
@@ -261,8 +261,8 @@ public abstract class AbstractMessage extends AbstractMessageLite implements Mes
             return MessageReflection.delimitWithCommas(findInitializationErrors());
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* INFO: Access modifiers changed from: protected */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.protobuf.AbstractMessageLite.Builder
         public BuilderType internalMergeFrom(AbstractMessageLite abstractMessageLite) {
             return (BuilderType) mergeFrom((Message) abstractMessageLite);

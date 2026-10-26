@@ -11,7 +11,7 @@ import net.lingala.zip4j.io.inputstream.ZipStandardSplitFileInputStream;
 import net.lingala.zip4j.model.FileHeader;
 import net.lingala.zip4j.model.ZipModel;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UnzipUtil {
     public static ZipInputStream createZipInputStream(ZipModel zipModel, FileHeader fileHeader, char[] cArr) throws IOException {
         SplitFileInputStream splitFileInputStreamCreateSplitInputStream;

@@ -66,8 +66,8 @@ import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.StringCompanionObject;
 
-/* JADX INFO: compiled from: WidgetGridNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: WidgetGridNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000µ\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002*\u0001&\u0018\u0000 V2\u00020\u0001:\u0001VB\u0005¢\u0006\u0002\u0010\u0002J\b\u0010>\u001a\u00020\u001bH\u0016J\u0012\u0010?\u001a\u00020@2\b\u0010A\u001a\u0004\u0018\u00010BH\u0016J&\u0010C\u001a\u0004\u0018\u00010\u00192\u0006\u0010D\u001a\u00020E2\b\u0010F\u001a\u0004\u0018\u00010G2\b\u0010A\u001a\u0004\u0018\u00010BH\u0016J\b\u0010H\u001a\u00020@H\u0016J \u0010I\u001a\u00020\u001b2\u0006\u0010J\u001a\u00020K2\u0006\u0010L\u001a\u00020K2\u0006\u0010M\u001a\u00020NH\u0016J\b\u0010O\u001a\u00020@H\u0016J\b\u0010P\u001a\u00020@H\u0016J\b\u0010Q\u001a\u00020@H\u0002J\u0014\u0010R\u001a\u00020@2\n\u0010S\u001a\u00060TR\u00020/H\u0002J\b\u0010U\u001a\u00020@H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u0007\u001a\u0004\u0018\u00010\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\fX\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010\u000e\u001a\u00020\u000fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u0011\"\u0004\b\u0012\u0010\u0013R\u001a\u0010\u0014\u001a\u00020\u000fX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0011\"\u0004\b\u0016\u0010\u0013R\u000e\u0010\u0017\u001a\u00020\fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082\u000e¢\u0006\u0002\n\u0000R\u001b\u0010\u001c\u001a\u00020\u001d8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b \u0010!\u001a\u0004\b\u001e\u0010\u001fR\u000e\u0010\"\u001a\u00020\u000fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u000fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u001bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010%\u001a\u00020&X\u0082\u0004¢\u0006\u0004\n\u0002\u0010'R\u000e\u0010(\u001a\u00020\u000fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020*X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020\u001bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010,\u001a\u00020\u000fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020\u000fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010.\u001a\u00020/X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00100\u001a\u000201X\u0082.¢\u0006\u0002\n\u0000R\u0014\u00102\u001a\b\u0012\u0004\u0012\u00020403X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u00105\u001a\u000206X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00107\u001a\u00020\u000fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u00108\u001a\u00020\u000fX\u0082.¢\u0006\u0002\n\u0000R\u001b\u00109\u001a\u00020:8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b=\u0010!\u001a\u0004\b;\u0010<¨\u0006W²\u0006\n\u0010X\u001a\u00020YX\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/nav_fragments/WidgetGridNavFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouFragment;", "()V", "addWidgetChip", "Lcom/google/android/material/chip/Chip;", "addWidgetChipPopupMenu", "Landroidx/appcompat/widget/PopupMenu;", "chipIconTint", "Landroid/content/res/ColorStateList;", "clockConstraintLayout", "Landroidx/constraintlayout/widget/ConstraintLayout;", "clockFirstTextView", "Landroid/widget/TextView;", "clockSecondTextView", "descriptionFirstString", "", "getDescriptionFirstString", "()Ljava/lang/String;", "setDescriptionFirstString", "(Ljava/lang/String;)V", "descriptionSecondString", "getDescriptionSecondString", "setDescriptionSecondString", "descriptionTextView", "divider", "Landroid/view/View;", "hasRegisteredTimeTickBroadcastReceiver", "", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "getModel", "()Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "model$delegate", "Lkotlin/Lazy;", "moveString", "removeString", "scrollingOnBackPressed", "timeTickBroadcastReceiver", "com/magneticchen/daijishou/nav_fragments/WidgetGridNavFragment$timeTickBroadcastReceiver$1", "Lcom/magneticchen/daijishou/nav_fragments/WidgetGridNavFragment$timeTickBroadcastReceiver$1;", "totalPlayableItemCountFormatString", "use24HourClockPreferenceLiveData", "Lcom/magneticchen/daijishou/live_data/SharedPreferenceBooleanLiveData;", "viewCreatedBefore", "widgetCreateCanceledString", "widgetCreatedSuccessfullyString", "widgetFaceRecyclerViewAdapter", "Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter;", "widgetGridLayoutManager", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouGridLayoutManager;", "widgetInstances", "", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetInstance;", "widgetRecyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "widgetRemoveCanceledString", "widgetRemovedSuccessfullyString", "widgetsManager", "Lcom/magneticchen/daijishou/daijishou_widget/WidgetsManager;", "getWidgetsManager", "()Lcom/magneticchen/daijishou/daijishou_widget/WidgetsManager;", "widgetsManager$delegate", "onBackPressed", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onDestroy", "onHotKeyPressed", "hotkeyCode", "", "keyCode", "keyEvent", "Landroid/view/KeyEvent;", "onKioskMode", "onNoneKioskMode", "registerTimeTickBroadcast", "showOptionsForViewHolder", "viewHolder", "Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter$WidgetViewHolder;", "unregisterTimeTickBroadcast", "Companion", "app_release", "appsViewModel", "Lcom/magneticchen/daijishou/view_models/AppsViewModel;"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class WidgetGridNavFragment extends DaijishouFragment {
     private static final IntentFilter timeTickIntentFilter;
@@ -81,7 +81,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
     private View divider;
     private boolean hasRegisteredTimeTickBroadcastReceiver;
 
-    /* JADX INFO: renamed from: model$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: model$delegate, reason: from kotlin metadata */
     private final Lazy model;
     private String moveString;
     private String removeString;
@@ -97,7 +97,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
     public String widgetRemoveCanceledString;
     public String widgetRemovedSuccessfullyString;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public static final SimpleDateFormat clockTimeFormat = new SimpleDateFormat("hh:mm", Locale.getDefault());
     public static final SimpleDateFormat clockTime24HourFormat = new SimpleDateFormat("HH:mm", Locale.getDefault());
@@ -108,7 +108,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
     private final WidgetGridNavFragment$timeTickBroadcastReceiver$1 timeTickBroadcastReceiver = new WidgetGridNavFragment$timeTickBroadcastReceiver$1(this);
     public final List<WidgetInstance> widgetInstances = new ArrayList();
 
-    /* JADX INFO: renamed from: widgetsManager$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: widgetsManager$delegate, reason: from kotlin metadata */
     private final Lazy widgetsManager = LazyKt.lazy(new WidgetGridNavFragment$widgetsManager$2(this));
 
     public WidgetGridNavFragment() {
@@ -116,7 +116,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         this.model = FragmentViewModelLazyKt.createViewModelLazy(widgetGridNavFragment, Reflection.getOrCreateKotlinClass(DaijishouViewModel.class), new WidgetGridNavFragment$special$$inlined$activityViewModels$default$1(widgetGridNavFragment), new WidgetGridNavFragment$special$$inlined$activityViewModels$default$2(null, widgetGridNavFragment), new WidgetGridNavFragment$special$$inlined$activityViewModels$default$3(widgetGridNavFragment));
     }
 
-    /* JADX INFO: compiled from: WidgetGridNavFragment.kt */
+    /* INFO: compiled from: WidgetGridNavFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\n\u001a\u00020\u000bR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, d2 = {"Lcom/magneticchen/daijishou/nav_fragments/WidgetGridNavFragment$Companion;", "", "()V", "clockTime24HourFormat", "Ljava/text/SimpleDateFormat;", "clockTimeAMPMFormat", "clockTimeFormat", "dateFormat", "timeTickIntentFilter", "Landroid/content/IntentFilter;", "newInstance", "Lcom/magneticchen/daijishou/nav_fragments/WidgetGridNavFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -139,7 +139,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         timeTickIntentFilter = intentFilter;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final DaijishouViewModel getModel() {
         return (DaijishouViewModel) this.model.getValue();
     }
@@ -162,7 +162,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         this.descriptionSecondString = str;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final WidgetsManager getWidgetsManager() {
         return (WidgetsManager) this.widgetsManager.getValue();
     }
@@ -284,12 +284,12 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         return true;
     }
 
-    /* JADX WARN: Code duplicated, block: B:18:0x0033  */
-    /* JADX WARN: Code duplicated, block: B:20:0x0037  */
-    /* JADX WARN: Code duplicated, block: B:32:0x0059  */
-    /* JADX WARN: Code duplicated, block: B:34:0x005f  */
-    /* JADX WARN: Code duplicated, block: B:37:0x006a  */
-    /* JADX WARN: Code duplicated, block: B:38:0x006e  */
+    /* WARN: Code duplicated, block: B:18:0x0033  */
+    /* WARN: Code duplicated, block: B:20:0x0037  */
+    /* WARN: Code duplicated, block: B:32:0x0059  */
+    /* WARN: Code duplicated, block: B:34:0x005f  */
+    /* WARN: Code duplicated, block: B:37:0x006a  */
+    /* WARN: Code duplicated, block: B:38:0x006e  */
     @Override // com.magneticchen.daijishou.abstract_fragment_classes.DaijishouFragment
     public boolean onBackPressed() {
         RecyclerView recyclerView;
@@ -392,7 +392,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void showOptionsForViewHolder(WidgetFaceRecyclerViewAdapter.WidgetViewHolder viewHolder) {
         FragmentActivity activity = getActivity();
         Intrinsics.checkNotNull(activity, "null cannot be cast to non-null type com.magneticchen.daijishou.activities.MainActivity");
@@ -437,7 +437,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         popupMenu.show();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean showOptionsForViewHolder$lambda$3(WidgetInstance widgetInstance, WidgetGridNavFragment this$0, WidgetFaceRecyclerViewAdapter.WidgetViewHolder viewHolder, WidgetsManager widgetsManager, MenuItem menuItem) {
         Intrinsics.checkNotNullParameter(widgetInstance, "$widgetInstance");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -679,7 +679,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$4(WidgetGridNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         RecyclerView recyclerView = this$0.widgetRecyclerView;
@@ -690,8 +690,8 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         recyclerView.smoothScrollToPosition(0);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$2, reason: invalid class name */
-    /* JADX INFO: compiled from: WidgetGridNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$2, reason: invalid class name */
+    /* INFO: compiled from: WidgetGridNavFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "position", "", "<anonymous parameter 2>", "", "widgetInstance", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetInstance;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass2 extends Lambda<Unit> implements Function4<View, Integer, Long, WidgetInstance, Unit> {
         AnonymousClass2() {
@@ -714,8 +714,8 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$3, reason: invalid class name */
-    /* JADX INFO: compiled from: WidgetGridNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$3, reason: invalid class name */
+    /* INFO: compiled from: WidgetGridNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u00060\u0003R\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\n¢\u0006\u0002\b\u0007"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter$WidgetViewHolder;", "Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter;", "position", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass3 extends Lambda<Unit> implements Function2<WidgetFaceRecyclerViewAdapter.WidgetViewHolder, Integer, Unit> {
         AnonymousClass3() {
@@ -743,8 +743,8 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$4, reason: invalid class name */
-    /* JADX INFO: compiled from: WidgetGridNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$4, reason: invalid class name */
+    /* INFO: compiled from: WidgetGridNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u00060\u0003R\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\n¢\u0006\u0002\b\u0007"}, d2 = {"<anonymous>", "", "viewHolder", "Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter$WidgetViewHolder;", "Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter;", "<anonymous parameter 1>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass4 extends Lambda<Unit> implements Function2<WidgetFaceRecyclerViewAdapter.WidgetViewHolder, Integer, Unit> {
         AnonymousClass4() {
@@ -763,8 +763,8 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$5, reason: invalid class name */
-    /* JADX INFO: compiled from: WidgetGridNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$5, reason: invalid class name */
+    /* INFO: compiled from: WidgetGridNavFragment.kt */
     @Metadata(d1 = {"\u0000\u001f\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J \u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u0007H\u0016¨\u0006\t"}, d2 = {"com/magneticchen/daijishou/nav_fragments/WidgetGridNavFragment$onCreateView$5", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrolled", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "dx", "", "dy", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass5 extends RecyclerView.OnScrollListener {
         AnonymousClass5() {
@@ -817,8 +817,8 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$6, reason: invalid class name */
-    /* JADX INFO: compiled from: WidgetGridNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$6, reason: invalid class name */
+    /* INFO: compiled from: WidgetGridNavFragment.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/nav_fragments/WidgetGridNavFragment$onCreateView$6", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass6 extends RecyclerView.OnScrollListener {
         AnonymousClass6() {
@@ -834,7 +834,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreateView$lambda$7(HashMap indexToWidgetBuilder, WidgetGridNavFragment this$0, FragmentActivity activity, Context context, MenuItem menuItem) {
         Intrinsics.checkNotNullParameter(indexToWidgetBuilder, "$indexToWidgetBuilder");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -868,12 +868,12 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final AppsViewModel onCreateView$lambda$7$lambda$6(Lazy<AppsViewModel> lazy) {
         return lazy.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$8(WidgetGridNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         PopupMenu popupMenu = this$0.addWidgetChipPopupMenu;
@@ -884,8 +884,8 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         popupMenu.show();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$10, reason: invalid class name */
-    /* JADX INFO: compiled from: WidgetGridNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$10, reason: invalid class name */
+    /* INFO: compiled from: WidgetGridNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass10 extends Lambda<Unit> implements Function1<Integer, Unit> {
         AnonymousClass10() {
@@ -898,7 +898,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             WidgetGridNavFragment widgetGridNavFragment = WidgetGridNavFragment.this;
             StringCompanionObject stringCompanionObject = StringCompanionObject.INSTANCE;
@@ -921,8 +921,8 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$11, reason: invalid class name */
-    /* JADX INFO: compiled from: WidgetGridNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$11, reason: invalid class name */
+    /* INFO: compiled from: WidgetGridNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetInstance;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass11 extends Lambda<Unit> implements Function1<List<? extends WidgetInstance>, Unit> {
         AnonymousClass11() {
@@ -935,7 +935,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<? extends WidgetInstance> list) {
             WidgetGridNavFragment.this.widgetInstances.clear();
             List list2 = WidgetGridNavFragment.this.widgetInstances;
@@ -950,8 +950,8 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$12, reason: invalid class name */
-    /* JADX INFO: compiled from: WidgetGridNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.WidgetGridNavFragment$onCreateView$12, reason: invalid class name */
+    /* INFO: compiled from: WidgetGridNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "use24HourClock", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass12 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         AnonymousClass12() {
@@ -964,7 +964,7 @@ public final class WidgetGridNavFragment extends DaijishouFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             SimpleDateFormat simpleDateFormat;
             Date date;

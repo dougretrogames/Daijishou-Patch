@@ -6,7 +6,7 @@ import java.nio.file.FileVisitResult;
 import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FalseFileFilter implements IOFileFilter, Serializable {
     public static final IOFileFilter FALSE;
     public static final IOFileFilter INSTANCE;

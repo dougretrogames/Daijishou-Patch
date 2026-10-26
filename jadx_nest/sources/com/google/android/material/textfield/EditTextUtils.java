@@ -2,7 +2,7 @@ package com.google.android.material.textfield;
 
 import android.widget.EditText;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class EditTextUtils {
     private EditTextUtils() {
     }

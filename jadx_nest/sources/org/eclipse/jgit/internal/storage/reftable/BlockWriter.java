@@ -13,7 +13,7 @@ import org.eclipse.jgit.util.IntList;
 import org.eclipse.jgit.util.LongList;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class BlockWriter {
     private final int blockLimitBytes;
     private final byte blockType;

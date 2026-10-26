@@ -2,7 +2,7 @@ package androidx.profileinstaller;
 
 import java.util.TreeMap;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class DexProfileData {
     final String apkName;
     int classSetSize;

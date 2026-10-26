@@ -3,8 +3,8 @@ package com.google.android.gms.tasks;
 import android.app.Activity;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-tasks@@18.1.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-tasks@@18.1.0 */
+/* INFO: loaded from: classes3.dex */
 public abstract class Task<TResult> {
     public Task<TResult> addOnCanceledListener(Activity activity, OnCanceledListener onCanceledListener) {
         throw new UnsupportedOperationException("addOnCanceledListener is not implemented.");

@@ -2,7 +2,7 @@ package androidx.leanback.graphics;
 
 import android.graphics.Rect;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class BoundsRule {
     public ValueRule bottom;
     public ValueRule left;

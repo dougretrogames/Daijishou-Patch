@@ -9,7 +9,7 @@ import java.util.concurrent.Executor;
 import javax.annotation.CheckForNull;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractTransformFuture<I, O, F, T> extends FluentFuture.TrustedFuture<O> implements Runnable {
 
@@ -45,7 +45,7 @@ abstract class AbstractTransformFuture<I, O, F, T> extends FluentFuture.TrustedF
         this.function = (F) Preconditions.checkNotNull(f);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // java.lang.Runnable
     public final void run() {
         ListenableFuture<? extends I> listenableFuture = this.inputFuture;
@@ -115,8 +115,8 @@ abstract class AbstractTransformFuture<I, O, F, T> extends FluentFuture.TrustedF
             super(inputFuture, function);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* INFO: Access modifiers changed from: package-private */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.common.util.concurrent.AbstractTransformFuture
         public ListenableFuture<? extends O> doTransform(AsyncFunction<? super I, ? extends O> function, @ParametricNullness I input) throws Exception {
             ListenableFuture<? extends O> listenableFutureApply = function.apply(input);
@@ -124,8 +124,8 @@ abstract class AbstractTransformFuture<I, O, F, T> extends FluentFuture.TrustedF
             return listenableFutureApply;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* INFO: Access modifiers changed from: package-private */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.common.util.concurrent.AbstractTransformFuture
         public void setResult(ListenableFuture<? extends O> result) {
             setFuture(result);
@@ -137,8 +137,8 @@ abstract class AbstractTransformFuture<I, O, F, T> extends FluentFuture.TrustedF
             super(inputFuture, function);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* INFO: Access modifiers changed from: package-private */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.common.util.concurrent.AbstractTransformFuture
         @ParametricNullness
         public O doTransform(Function<? super I, ? extends O> function, @ParametricNullness I input) {

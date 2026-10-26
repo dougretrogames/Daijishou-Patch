@@ -14,7 +14,7 @@ import java.util.Iterator;
 import java.util.Map;
 import kotlin.random.Random;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ActivityResultRegistry {
     private static final int INITIAL_REQUEST_CODE_VALUE = 65536;
     private static final String KEY_COMPONENT_ACTIVITY_LAUNCHED_KEYS = "KEY_COMPONENT_ACTIVITY_LAUNCHED_KEYS";
@@ -47,7 +47,7 @@ public abstract class ActivityResultRegistry {
         return new AnonymousClass2(str, activityResultContract);
     }
 
-    /* JADX INFO: renamed from: androidx.activity.result.ActivityResultRegistry$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.activity.result.ActivityResultRegistry$1, reason: invalid class name */
     class AnonymousClass1 implements LifecycleEventObserver {
         final /* synthetic */ ActivityResultCallback val$callback;
         final /* synthetic */ ActivityResultContract val$contract;
@@ -84,8 +84,8 @@ public abstract class ActivityResultRegistry {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [I] */
-    /* JADX INFO: renamed from: androidx.activity.result.ActivityResultRegistry$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [I] */
+    /* INFO: renamed from: androidx.activity.result.ActivityResultRegistry$2, reason: invalid class name */
     class AnonymousClass2<I> extends ActivityResultLauncher<I> {
         final /* synthetic */ ActivityResultContract val$contract;
         final /* synthetic */ String val$key;
@@ -121,7 +121,7 @@ public abstract class ActivityResultRegistry {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public final <I, O> ActivityResultLauncher<I> register(String str, ActivityResultContract<I, O> activityResultContract, ActivityResultCallback<O> activityResultCallback) {
         registerKey(str);
         this.mKeyToCallback.put(str, new CallbackAndContract<>(activityResultCallback, activityResultContract));
@@ -138,8 +138,8 @@ public abstract class ActivityResultRegistry {
         return new AnonymousClass3(str, activityResultContract);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [I] */
-    /* JADX INFO: renamed from: androidx.activity.result.ActivityResultRegistry$3, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [I] */
+    /* INFO: renamed from: androidx.activity.result.ActivityResultRegistry$3, reason: invalid class name */
     class AnonymousClass3<I> extends ActivityResultLauncher<I> {
         final /* synthetic */ ActivityResultContract val$contract;
         final /* synthetic */ String val$key;

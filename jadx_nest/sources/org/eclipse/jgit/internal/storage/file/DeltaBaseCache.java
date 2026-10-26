@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.file;
 import java.lang.ref.SoftReference;
 import org.eclipse.jgit.storage.file.WindowCacheConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class DeltaBaseCache {
     private static final int CACHE_SZ = 1024;
     static final SoftReference<Entry> DEAD = new SoftReference<>(null);

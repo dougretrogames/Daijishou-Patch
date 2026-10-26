@@ -1,6 +1,6 @@
 package io.opencensus.metrics;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_LabelKey extends LabelKey {
     private final String description;
     private final String key;

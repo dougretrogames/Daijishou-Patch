@@ -14,12 +14,12 @@ import org.gradle.api.artifacts.ModuleDependency;
 import org.gradle.api.artifacts.dsl.DependencyHandler;
 import org.gradle.kotlin.dsl.DependencyHandlerExtensionsKt;
 
-/* JADX INFO: compiled from: ProtobufDependencyConfiguration.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ProtobufDependencyConfiguration.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\u0018\u0000 \u00192\u00020\u0001:\u0001\u0019B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J9\u0010\u0007\u001a\u0002H\b\"\b\b\u0000\u0010\b*\u00020\t2\u0006\u0010\n\u001a\u0002H\b2\u0017\u0010\u000b\u001a\u0013\u0012\u0004\u0012\u0002H\b\u0012\u0004\u0012\u00020\r0\f¢\u0006\u0002\b\u000eH\u0086\u0002¢\u0006\u0002\u0010\u000fJ\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u00102\u0006\u0010\u0011\u001a\u00020\u0001H\u0086\u0002JI\u0010\u0007\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u00032\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0003H\u0086\u0002Jb\u0010\u0007\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00032\u0006\u0010\u0014\u001a\u00020\u00032\n\b\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00032\u0017\u0010\u000b\u001a\u0013\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\r0\f¢\u0006\u0002\b\u000eH\u0086\u0002J*\u0010\u0007\u001a\u00020\u00122\u0006\u0010\u0011\u001a\u00020\u00032\u0017\u0010\u000b\u001a\u0013\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\r0\f¢\u0006\u0002\b\u000eH\u0086\u0002R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001a"}, d2 = {"Lcom/google/protobuf/gradle/ProtobufDependencyHelper;", "", "configurationName", "", "dependencyHandler", "Lorg/gradle/api/artifacts/dsl/DependencyHandler;", "(Ljava/lang/String;Lorg/gradle/api/artifacts/dsl/DependencyHandler;)V", "invoke", ExifInterface.GPS_DIRECTION_TRUE, "Lorg/gradle/api/artifacts/ModuleDependency;", "dependency", "dependencyConfiguration", "Lkotlin/Function1;", "", "Lkotlin/ExtensionFunctionType;", "(Lorg/gradle/api/artifacts/ModuleDependency;Lkotlin/jvm/functions/Function1;)Lorg/gradle/api/artifacts/ModuleDependency;", "Lorg/gradle/api/artifacts/Dependency;", "dependencyNotation", "Lorg/gradle/api/artifacts/ExternalModuleDependency;", "group", "name", "version", "configuration", "classifier", "ext", "Companion", "protobuf-gradle-plugin"}, k = 1, mv = {1, 1, 18})
 public final class ProtobufDependencyHelper {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private final String configurationName;
     private final DependencyHandler dependencyHandler;
@@ -139,7 +139,7 @@ public final class ProtobufDependencyHelper {
         return dependency;
     }
 
-    /* JADX INFO: compiled from: ProtobufDependencyConfiguration.kt */
+    /* INFO: compiled from: ProtobufDependencyConfiguration.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001a\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0004J\u001d\u0010\u0005\u001a\u00020\u00032\u0006\u0010\u0006\u001a\u00020\u00022\n\u0010\u0007\u001a\u0006\u0012\u0002\b\u00030\bH\u0096\u0002¨\u0006\t"}, d2 = {"Lcom/google/protobuf/gradle/ProtobufDependencyHelper$Companion;", "Lkotlin/properties/ReadOnlyProperty;", "Lorg/gradle/api/artifacts/dsl/DependencyHandler;", "Lcom/google/protobuf/gradle/ProtobufDependencyHelper;", "()V", "getValue", "thisRef", "property", "Lkotlin/reflect/KProperty;", "protobuf-gradle-plugin"}, k = 1, mv = {1, 1, 18})
     public static final class Companion implements ReadOnlyProperty<DependencyHandler, ProtobufDependencyHelper> {
         private Companion() {
@@ -154,7 +154,7 @@ public final class ProtobufDependencyHelper {
             return getValue2(dependencyHandler, (KProperty<?>) kProperty);
         }
 
-        /* JADX INFO: renamed from: getValue, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: getValue, reason: avoid collision after fix types in other method */
         public ProtobufDependencyHelper getValue2(DependencyHandler thisRef, KProperty<?> property) {
             Intrinsics.checkParameterIsNotNull(thisRef, "thisRef");
             Intrinsics.checkParameterIsNotNull(property, "property");

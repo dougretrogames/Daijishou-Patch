@@ -3,8 +3,8 @@ package org.apache.commons.io.filefilter;
 import java.nio.file.Path;
 import org.apache.commons.io.function.IOSupplier;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class AgeFileFilter$$ExternalSyntheticLambda0 implements IOSupplier {
     public final /* synthetic */ AgeFileFilter f$0;
     public final /* synthetic */ Path f$1;

@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.Collection;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TokenRequest extends GenericData {
     HttpExecuteInterceptor clientAuthentication;
 
@@ -118,7 +118,7 @@ public class TokenRequest extends GenericData {
         throw TokenResponseException.from(this.jsonFactory, httpResponseExecute);
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.auth.oauth2.TokenRequest$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.auth.oauth2.TokenRequest$1, reason: invalid class name */
     class AnonymousClass1 implements HttpRequestInitializer {
         AnonymousClass1() {
         }
@@ -131,7 +131,7 @@ public class TokenRequest extends GenericData {
             httpRequest.setInterceptor(new C00321(httpRequest.getInterceptor()));
         }
 
-        /* JADX INFO: renamed from: com.google.api.client.auth.oauth2.TokenRequest$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.google.api.client.auth.oauth2.TokenRequest$1$1, reason: invalid class name and collision with other inner class name */
         class C00321 implements HttpExecuteInterceptor {
             final /* synthetic */ HttpExecuteInterceptor val$interceptor;
 

@@ -3,7 +3,7 @@ package androidx.constraintlayout.core.state;
 import androidx.constraintlayout.core.state.helpers.Facade;
 import androidx.constraintlayout.core.widgets.ConstraintWidget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface Reference {
     void apply();
 

@@ -6,7 +6,7 @@ import java.nio.file.FileVisitResult;
 import java.nio.file.Path;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DirectoryStreamFilter implements DirectoryStream.Filter<Path> {
     private final PathFilter pathFilter;
 

@@ -8,7 +8,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Comparator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class AnimateLayoutChangeDetector {
     private static final ViewGroup.MarginLayoutParams ZERO_MARGIN_LAYOUT_PARAMS;
     private LinearLayoutManager mLayoutManager;
@@ -81,7 +81,7 @@ final class AnimateLayoutChangeDetector {
         return i6 <= 0 && iArr[childCount - 1][1] >= i5 - i6;
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager2.widget.AnimateLayoutChangeDetector$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager2.widget.AnimateLayoutChangeDetector$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<int[]> {
         AnonymousClass1() {
         }

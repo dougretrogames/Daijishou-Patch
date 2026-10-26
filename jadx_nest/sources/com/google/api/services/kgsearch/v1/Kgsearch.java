@@ -16,7 +16,7 @@ import java.io.IOException;
 import java.util.List;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Kgsearch extends AbstractGoogleJsonClient {
     public static final String DEFAULT_BASE_URL = "https://kgsearch.googleapis.com/";
     public static final String DEFAULT_BATCH_PATH = "batch";
@@ -98,67 +98,67 @@ public class Kgsearch extends AbstractGoogleJsonClient {
             }
 
             @Override // com.google.api.services.kgsearch.v1.KgsearchRequest
-            /* JADX INFO: renamed from: set$Xgafv, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: set$Xgafv, reason: merged with bridge method [inline-methods] */
             public KgsearchRequest<SearchResponse> set$Xgafv2(String str) {
                 return (Search) super.set$Xgafv2(str);
             }
 
             @Override // com.google.api.services.kgsearch.v1.KgsearchRequest
-            /* JADX INFO: renamed from: setAccessToken, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setAccessToken, reason: merged with bridge method [inline-methods] */
             public KgsearchRequest<SearchResponse> setAccessToken2(String str) {
                 return (Search) super.setAccessToken2(str);
             }
 
             @Override // com.google.api.services.kgsearch.v1.KgsearchRequest
-            /* JADX INFO: renamed from: setAlt, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setAlt, reason: merged with bridge method [inline-methods] */
             public KgsearchRequest<SearchResponse> setAlt2(String str) {
                 return (Search) super.setAlt2(str);
             }
 
             @Override // com.google.api.services.kgsearch.v1.KgsearchRequest
-            /* JADX INFO: renamed from: setCallback, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setCallback, reason: merged with bridge method [inline-methods] */
             public KgsearchRequest<SearchResponse> setCallback2(String str) {
                 return (Search) super.setCallback2(str);
             }
 
             @Override // com.google.api.services.kgsearch.v1.KgsearchRequest
-            /* JADX INFO: renamed from: setFields, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setFields, reason: merged with bridge method [inline-methods] */
             public KgsearchRequest<SearchResponse> setFields2(String str) {
                 return (Search) super.setFields2(str);
             }
 
             @Override // com.google.api.services.kgsearch.v1.KgsearchRequest
-            /* JADX INFO: renamed from: setKey, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setKey, reason: merged with bridge method [inline-methods] */
             public KgsearchRequest<SearchResponse> setKey2(String str) {
                 return (Search) super.setKey2(str);
             }
 
             @Override // com.google.api.services.kgsearch.v1.KgsearchRequest
-            /* JADX INFO: renamed from: setOauthToken, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setOauthToken, reason: merged with bridge method [inline-methods] */
             public KgsearchRequest<SearchResponse> setOauthToken2(String str) {
                 return (Search) super.setOauthToken2(str);
             }
 
             @Override // com.google.api.services.kgsearch.v1.KgsearchRequest
-            /* JADX INFO: renamed from: setPrettyPrint, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setPrettyPrint, reason: merged with bridge method [inline-methods] */
             public KgsearchRequest<SearchResponse> setPrettyPrint2(Boolean bool) {
                 return (Search) super.setPrettyPrint2(bool);
             }
 
             @Override // com.google.api.services.kgsearch.v1.KgsearchRequest
-            /* JADX INFO: renamed from: setQuotaUser, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setQuotaUser, reason: merged with bridge method [inline-methods] */
             public KgsearchRequest<SearchResponse> setQuotaUser2(String str) {
                 return (Search) super.setQuotaUser2(str);
             }
 
             @Override // com.google.api.services.kgsearch.v1.KgsearchRequest
-            /* JADX INFO: renamed from: setUploadType, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setUploadType, reason: merged with bridge method [inline-methods] */
             public KgsearchRequest<SearchResponse> setUploadType2(String str) {
                 return (Search) super.setUploadType2(str);
             }
 
             @Override // com.google.api.services.kgsearch.v1.KgsearchRequest
-            /* JADX INFO: renamed from: setUploadProtocol, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: setUploadProtocol, reason: merged with bridge method [inline-methods] */
             public KgsearchRequest<SearchResponse> setUploadProtocol2(String str) {
                 return (Search) super.setUploadProtocol2(str);
             }

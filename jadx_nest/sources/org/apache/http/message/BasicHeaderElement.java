@@ -5,7 +5,7 @@ import org.apache.http.NameValuePair;
 import org.apache.http.util.Args;
 import org.apache.http.util.LangUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicHeaderElement implements HeaderElement, Cloneable {
     private final String name;
     private final NameValuePair[] parameters;

@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.Iterator;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class LexicographicalOrdering<T> extends Ordering<Iterable<T>> implements Serializable {
     private static final long serialVersionUID = 0;

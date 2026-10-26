@@ -15,7 +15,7 @@ import android.os.PowerManager;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public abstract class JobIntentService extends Service {
     static final boolean DEBUG = false;
@@ -259,7 +259,7 @@ public abstract class JobIntentService extends Service {
         CommandProcessor() {
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // android.os.AsyncTask
         public Void doInBackground(Void... voidArr) {
             while (true) {
@@ -272,13 +272,13 @@ public abstract class JobIntentService extends Service {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // android.os.AsyncTask
         public void onCancelled(Void r1) {
             JobIntentService.this.processorFinished();
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // android.os.AsyncTask
         public void onPostExecute(Void r1) {
             JobIntentService.this.processorFinished();

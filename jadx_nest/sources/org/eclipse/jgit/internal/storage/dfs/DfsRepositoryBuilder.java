@@ -7,7 +7,7 @@ import org.eclipse.jgit.internal.storage.dfs.DfsRepository;
 import org.eclipse.jgit.internal.storage.dfs.DfsRepositoryBuilder;
 import org.eclipse.jgit.lib.BaseRepositoryBuilder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class DfsRepositoryBuilder<B extends DfsRepositoryBuilder, R extends DfsRepository> extends BaseRepositoryBuilder<B, R> {
     private DfsReaderOptions readerOptions;
     private DfsRepositoryDescription repoDesc;

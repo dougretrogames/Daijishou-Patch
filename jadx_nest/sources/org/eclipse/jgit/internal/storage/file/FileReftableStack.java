@@ -31,7 +31,7 @@ import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.util.FileUtils;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileReftableStack implements AutoCloseable {
     private static long OVERHEAD = 91;
     private final Supplier<Config> configSupplier;
@@ -48,7 +48,7 @@ public class FileReftableStack implements AutoCloseable {
         void call(ReftableWriter reftableWriter) throws IOException;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class StackEntry {
         String name;
         ReftableReader reftableReader;

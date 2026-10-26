@@ -3,7 +3,7 @@ package org.eclipse.jgit.diff;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HistogramDiff extends LowLevelDiffAlgorithm {
     DiffAlgorithm fallback = MyersDiff.INSTANCE;
     int maxChainLength = 64;

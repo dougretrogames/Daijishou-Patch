@@ -1,6 +1,6 @@
 package io.opencensus.metrics.export;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Value_ValueDistribution extends Value.ValueDistribution {
     private final Distribution value;
 

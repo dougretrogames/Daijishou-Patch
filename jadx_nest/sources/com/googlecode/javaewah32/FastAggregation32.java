@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class FastAggregation32 {
     private FastAggregation32() {
     }
@@ -61,7 +61,7 @@ public final class FastAggregation32 {
         return eWAHCompressedBitmap32;
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$1, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<EWAHCompressedBitmap32> {
         AnonymousClass1() {
         }
@@ -111,7 +111,7 @@ public final class FastAggregation32 {
         return eWAHCompressedBitmap32;
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$2, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$2, reason: invalid class name */
     class AnonymousClass2 implements Comparator<EWAHCompressedBitmap32> {
         AnonymousClass2() {
         }
@@ -167,7 +167,7 @@ public final class FastAggregation32 {
         ((EWAHCompressedBitmap32) priorityQueue.poll()).orToContainer((EWAHCompressedBitmap32) priorityQueue.poll(), bitmapStorage32);
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$3, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$3, reason: invalid class name */
     class AnonymousClass3 implements Comparator<EWAHCompressedBitmap32> {
         AnonymousClass3() {
         }
@@ -178,7 +178,7 @@ public final class FastAggregation32 {
         }
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$4, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$4, reason: invalid class name */
     class AnonymousClass4 implements Comparator<EWAHCompressedBitmap32> {
         AnonymousClass4() {
         }
@@ -201,7 +201,7 @@ public final class FastAggregation32 {
         return (EWAHCompressedBitmap32) priorityQueue.poll();
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$5, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$5, reason: invalid class name */
     class AnonymousClass5 implements Comparator<EWAHCompressedBitmap32> {
         AnonymousClass5() {
         }
@@ -224,7 +224,7 @@ public final class FastAggregation32 {
         return (EWAHCompressedBitmap32) priorityQueue.poll();
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$6, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$6, reason: invalid class name */
     class AnonymousClass6 implements Comparator<EWAHCompressedBitmap32> {
         AnonymousClass6() {
         }
@@ -249,7 +249,7 @@ public final class FastAggregation32 {
         return (EWAHCompressedBitmap32) priorityQueue.poll();
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$7, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$7, reason: invalid class name */
     class AnonymousClass7 implements Comparator<EWAHCompressedBitmap32> {
         AnonymousClass7() {
         }
@@ -286,7 +286,7 @@ public final class FastAggregation32 {
         ((EWAHCompressedBitmap32) priorityQueue.poll()).xorToContainer((EWAHCompressedBitmap32) priorityQueue.poll(), bitmapStorage32);
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$8, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah32.FastAggregation32$8, reason: invalid class name */
     class AnonymousClass8 implements Comparator<EWAHCompressedBitmap32> {
         AnonymousClass8() {
         }

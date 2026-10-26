@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.Objects;
 import org.apache.commons.collections4.KeyValue;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultKeyValue<K, V> extends AbstractKeyValue<K, V> {
     public DefaultKeyValue() {
         super(null, null);

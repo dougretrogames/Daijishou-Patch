@@ -8,7 +8,7 @@ import java.io.FilterOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class LittleEndianDataOutputStream extends FilterOutputStream implements DataOutput {
     public LittleEndianDataOutputStream(OutputStream out) {

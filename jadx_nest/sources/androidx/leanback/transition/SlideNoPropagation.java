@@ -4,7 +4,7 @@ import android.content.Context;
 import android.transition.Slide;
 import android.util.AttributeSet;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class SlideNoPropagation extends Slide {
     public SlideNoPropagation() {
     }

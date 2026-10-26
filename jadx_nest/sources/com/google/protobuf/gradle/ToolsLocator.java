@@ -22,8 +22,8 @@ import org.gradle.api.NamedDomainObjectContainer;
 import org.gradle.api.Project;
 import org.gradle.api.artifacts.Configuration;
 
-/* JADX INFO: compiled from: ToolsLocator.groovy */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ToolsLocator.groovy */
+/* INFO: loaded from: classes4.dex */
 public class ToolsLocator implements GroovyObject {
     private static /* synthetic */ ClassInfo $staticClassInfo;
     private static /* synthetic */ ClassInfo $staticClassInfo$;
@@ -124,7 +124,7 @@ public class ToolsLocator implements GroovyObject {
         }
     }
 
-    /* JADX INFO: compiled from: ToolsLocator.groovy */
+    /* INFO: compiled from: ToolsLocator.groovy */
     public final class _resolveLocator_closure1 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;

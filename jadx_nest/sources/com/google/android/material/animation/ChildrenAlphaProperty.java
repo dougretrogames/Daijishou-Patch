@@ -4,7 +4,7 @@ import android.util.Property;
 import android.view.ViewGroup;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ChildrenAlphaProperty extends Property<ViewGroup, Float> {
     public static final Property<ViewGroup, Float> CHILDREN_ALPHA = new ChildrenAlphaProperty("childrenAlpha");
 

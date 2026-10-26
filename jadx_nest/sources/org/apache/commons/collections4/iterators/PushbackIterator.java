@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.Iterator;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PushbackIterator<E> implements Iterator<E> {
     private final Deque<E> items = new ArrayDeque();
     private final Iterator<? extends E> iterator;

@@ -100,8 +100,8 @@ import org.eclipse.jgit.lib.ConfigConstants;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouSynchronizationModel.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000ª\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000e\u0018\u0000 j2\u00020\u0001:\u0001jB\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J&\u0010-\u001a\u0004\u0018\u00010.2\u0006\u0010/\u001a\u0002002\f\u00101\u001a\b\u0012\u0004\u0012\u00020302H\u0082@¢\u0006\u0002\u00104J\u0016\u00105\u001a\u0002062\u0006\u00107\u001a\u00020.H\u0086@¢\u0006\u0002\u00108J\b\u00109\u001a\u000206H\u0002J\u0014\u0010:\u001a\b\u0012\u0004\u0012\u00020\t022\u0006\u0010;\u001a\u00020\tJ\u0018\u0010<\u001a\u0004\u0018\u00010.2\u0006\u0010/\u001a\u000200H\u0082@¢\u0006\u0002\u0010=J\u0014\u0010>\u001a\b\u0012\u0004\u0012\u00020.02H\u0086@¢\u0006\u0002\u0010?J\u001e\u0010@\u001a\n\u0012\u0004\u0012\u000203\u0018\u0001022\u0006\u00107\u001a\u00020.H\u0082@¢\u0006\u0002\u00108J8\u0010A\u001a\u0002062\u0006\u0010B\u001a\u00020\u00072\u0006\u0010C\u001a\u00020D2\b\b\u0002\u0010E\u001a\u00020\u00102\u0016\b\u0002\u0010F\u001a\u0010\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u000206\u0018\u00010GJ8\u0010H\u001a\u0002062\u0006\u0010B\u001a\u00020\u00072\u0006\u0010C\u001a\u00020D2\b\b\u0002\u0010E\u001a\u00020\u00102\u0016\b\u0002\u0010F\u001a\u0010\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u000206\u0018\u00010GJB\u0010I\u001a\u0002062\u0006\u0010B\u001a\u00020\u00072\u0006\u0010C\u001a\u00020D2\b\b\u0002\u0010E\u001a\u00020\u00102\b\b\u0002\u0010J\u001a\u0002002\u0016\b\u0002\u0010F\u001a\u0010\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u000206\u0018\u00010GJ8\u0010K\u001a\u0002062\u0006\u0010B\u001a\u00020\u00072\u0006\u0010C\u001a\u00020D2\b\b\u0002\u0010E\u001a\u00020\u00102\u0016\b\u0002\u0010F\u001a\u0010\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u000206\u0018\u00010GJ8\u0010L\u001a\u0002062\u0006\u0010B\u001a\u00020\u00072\u0006\u0010C\u001a\u00020D2\b\b\u0002\u0010E\u001a\u00020\u00102\u0016\b\u0002\u0010F\u001a\u0010\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u000206\u0018\u00010GJ8\u0010M\u001a\u0002062\u0006\u0010B\u001a\u00020\u00072\u0006\u0010C\u001a\u00020D2\b\b\u0002\u0010E\u001a\u00020\u00102\u0016\b\u0002\u0010F\u001a\u0010\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u000206\u0018\u00010GJ\u0010\u0010N\u001a\u0002002\u0006\u0010O\u001a\u00020PH\u0002J\b\u0010Q\u001a\u000206H\u0002J\u001e\u0010R\u001a\u0002062\u0006\u00107\u001a\u00020.2\u0006\u0010S\u001a\u000200H\u0082@¢\u0006\u0002\u0010TJ\u0018\u0010U\u001a\u0002062\u0006\u00107\u001a\u00020.2\b\b\u0002\u0010V\u001a\u00020\tJ\u0006\u0010W\u001a\u000206J\u0006\u0010X\u001a\u000206J\u0016\u0010Y\u001a\u0002062\u0006\u0010Z\u001a\u00020[2\u0006\u0010\\\u001a\u00020]J\u000e\u0010^\u001a\u0002062\u0006\u0010Z\u001a\u00020[J\u0016\u0010_\u001a\u0002062\u0006\u0010Z\u001a\u00020[2\u0006\u0010B\u001a\u00020\u0007J\u0018\u0010`\u001a\u00020\f2\u0006\u0010Z\u001a\u00020[2\u0006\u0010B\u001a\u00020\u0007H\u0002J\u0010\u0010a\u001a\u0002062\u0006\u0010O\u001a\u00020PH\u0002J\b\u0010b\u001a\u000206H\u0002J\b\u0010c\u001a\u000206H\u0002J\b\u0010d\u001a\u000206H\u0002J\u0006\u0010e\u001a\u000206J\b\u0010f\u001a\u000206H\u0002J\b\u0010g\u001a\u000206H\u0002J\u0006\u0010h\u001a\u000206J\u001a\u0010i\u001a\u0002062\u0012\u0010F\u001a\u000e\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u0002060GR\u0014\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\b\u001a\b\u0012\u0004\u0012\u00020\t0\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\n\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b0\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u0004¢\u0006\u0002\n\u0000R\u001a\u0010\u0014\u001a\u00020\u0015X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0016\u0010\u0017\"\u0004\b\u0018\u0010\u0019R\u0015\u0010\u001a\u001a\u00060\u001bR\u00020\u001c¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u000e\u0010\u001f\u001a\u00020\tX\u0082\u0004¢\u0006\u0002\n\u0000R\u0017\u0010 \u001a\b\u0012\u0004\u0012\u00020\u00070!8F¢\u0006\u0006\u001a\u0004\b\"\u0010#R\u0011\u0010$\u001a\u00020%¢\u0006\b\n\u0000\u001a\u0004\b&\u0010'R\u0017\u0010(\u001a\b\u0012\u0004\u0012\u00020\t0!8F¢\u0006\u0006\u001a\u0004\b)\u0010#R\u001d\u0010*\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\f0\u000b0!8F¢\u0006\u0006\u001a\u0004\b+\u0010#R\u000e\u0010,\u001a\u00020\u0010X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006k"}, d2 = {"Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel;", "Lcom/magneticchen/daijishou/view_models/abstract_view_models/DaijishouAndroidViewModel;", "application", "Landroid/app/Application;", "(Landroid/app/Application;)V", "_onSynchronizationFinishedLiveData", "Landroidx/lifecycle/MutableLiveData;", "", "_statusLiveData", "", "_synchronizationOfPlatformListLiveData", "", "Lcom/magneticchen/daijishou/view_models/SynchronizationOfPlatform;", "backupAndRestore", "Lcom/magneticchen/daijishou/backup_and_restore/BackupAndRestore;", "backupScheduledManually", "", "currentConcurrentSynchronizationOfPlatforms", "daijishouLibraryRepository", "Lcom/magneticchen/daijishou/repositories/DaijishouLibraryRepository;", "googleDrive", "Lcom/magneticchen/daijishou/google_drive/GoogleDrive;", "getGoogleDrive", "()Lcom/magneticchen/daijishou/google_drive/GoogleDrive;", "setGoogleDrive", "(Lcom/magneticchen/daijishou/google_drive/GoogleDrive;)V", "logger", "Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "Lcom/magneticchen/daijishou/DaijishouApplication;", "getLogger", "()Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "maxConcurrentSynchronizationOfPlatforms", "onSynchronizationFinishedLiveData", "Landroidx/lifecycle/LiveData;", "getOnSynchronizationFinishedLiveData", "()Landroidx/lifecycle/LiveData;", "scraper", "Lcom/magneticchen/daijishou/scraper/ScraperManager;", "getScraper", "()Lcom/magneticchen/daijishou/scraper/ScraperManager;", "statusLiveData", "getStatusLiveData", "synchronizationOfPlatformListLiveData", "getSynchronizationOfPlatformListLiveData", "updateEveryPlatform", "createAndUploadIndexForListOfBackupDataToGoogleDrive", "Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel$Companion$IndexOfListOfBackupData;", "indexFilename", "", "listOfBackupData", "", "Lcom/magneticchen/daijishou/backup_and_restore/BackupData;", "(Ljava/lang/String;Ljava/util/List;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "deleteListOfBackupDataByIndexFromGoogleDrive", "", "indexOfListOfBackupData", "(Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel$Companion$IndexOfListOfBackupData;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "finishSynchronization", "getBackupAndRestoreModulesNameStringIdsByPolicy", "policy", "getIndexByIndexFilenameFromGoogleDrive", "(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "getIndicesOfListOfBackupDataFromGoogleDrive", "(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "getListOfBackupDataByIndexFromGoogleDrive", "importBoxArtsFromUriForPlatformId", "platformId", "uri", "Landroid/net/Uri;", "replace", "callback", "Lkotlin/Function1;", "importDatFilesFromUriForPlatformId", "importPreviewMediaFromUriForPlatformId", "type", "importSnapshotsFromUriForPlatformId", "importTitlesFromUriForPlatformId", "importXMLFilesFromUriForPlatformId", "readTextFromXmlPullParser", "parser", "Lorg/xmlpull/v1/XmlPullParser;", "refreshLibrarySynchronization", "renameAndReplaceListOfBackupDataByIndexFromGoogleDrive", "name", "(Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel$Companion$IndexOfListOfBackupData;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "restoreFromIndexOfListOfBackupDataFromGoogleDrive", "restorePolicy", "scheduleBackup", "scheduleEveryPlatformUpdate", "scheduleScrapingOfPlayableItem", "activity", "Landroidx/appcompat/app/AppCompatActivity;", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "scheduleSynchronizationOfAllPlatforms", "scheduleSynchronizationOfPlatformByPlatformId", "setupAndAcquireSynchronizationOfPlatform", "skipTagForXmlPullParser", "startBackingUp", "startPreparingSynchronization", "startSyncing", "startSyncingIfNot", "startSyncingLibrary", "startUpdatingPlatforms", "stopSyncing", "updatePlatformsFromGitHub", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class DaijishouSynchronizationModel extends DaijishouAndroidViewModel {
     public static final String BACKUP_DATA_EXTENSION = ".backup";
@@ -131,12 +131,12 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
     private final ScraperManager scraper;
     private boolean updateEveryPlatform;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final Regex filenameWithoutExtensionRegex = new Regex("(.*)\\.[^.]+");
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$createAndUploadIndexForListOfBackupDataToGoogleDrive$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$createAndUploadIndexForListOfBackupDataToGoogleDrive$1, reason: invalid class name */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel", f = "DaijishouSynchronizationModel.kt", i = {0}, l = {472}, m = "createAndUploadIndexForListOfBackupDataToGoogleDrive", n = {"indexOfListOfBackupData"}, s = {"L$0"})
     final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -155,8 +155,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$deleteListOfBackupDataByIndexFromGoogleDrive$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$deleteListOfBackupDataByIndexFromGoogleDrive$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel", f = "DaijishouSynchronizationModel.kt", i = {0, 0, 1, 1, 2, 3}, l = {397, 398, 401, 402}, m = "deleteListOfBackupDataByIndexFromGoogleDrive", n = {"googleDrive", "filename", "googleDrive", "filename", "googleDrive", "googleDrive"}, s = {"L$0", "L$1", "L$0", "L$1", "L$0", "L$0"})
     final class C02801 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -177,8 +177,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$getIndexByIndexFilenameFromGoogleDrive$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$getIndexByIndexFilenameFromGoogleDrive$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel", f = "DaijishouSynchronizationModel.kt", i = {0, 0}, l = {422}, m = "getIndexByIndexFilenameFromGoogleDrive", n = {"this", "filename"}, s = {"L$0", "L$1"})
     final class C02811 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -198,8 +198,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$getIndicesOfListOfBackupDataFromGoogleDrive$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$getIndicesOfListOfBackupDataFromGoogleDrive$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel", f = "DaijishouSynchronizationModel.kt", i = {0, 0, 0, 1, 1, 1, 1}, l = {354, 357}, m = "getIndicesOfListOfBackupDataFromGoogleDrive", n = {"this", "result", "googleDrive", "this", "result", "googleDrive", "filename"}, s = {"L$0", "L$1", "L$2", "L$0", "L$1", "L$2", "L$4"})
     final class C02821 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -222,8 +222,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$getListOfBackupDataByIndexFromGoogleDrive$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$getListOfBackupDataByIndexFromGoogleDrive$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel", f = "DaijishouSynchronizationModel.kt", i = {0, 0, 0, 0, 0, 1, 1, 1, 1, 1}, l = {373, 376}, m = "getListOfBackupDataByIndexFromGoogleDrive", n = {"this", "indexOfListOfBackupData", "result", "googleDrive", "contentHashMapRandomIntChecksum", "this", "indexOfListOfBackupData", "result", "googleDrive", "contentHashMapRandomIntChecksum"}, s = {"L$0", "L$1", "L$2", "L$3", "L$4", "L$0", "L$1", "L$2", "L$3", "L$4"})
     final class C02831 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -247,8 +247,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$renameAndReplaceListOfBackupDataByIndexFromGoogleDrive$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$renameAndReplaceListOfBackupDataByIndexFromGoogleDrive$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel", f = "DaijishouSynchronizationModel.kt", i = {0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3}, l = {HttpStatus.SC_REQUEST_TIMEOUT, 409, 412, HttpStatus.SC_REQUEST_TOO_LONG}, m = "renameAndReplaceListOfBackupDataByIndexFromGoogleDrive", n = {"this", "indexOfListOfBackupData", "name", "googleDrive", "indexOfListOfBackupData", "name", "googleDrive", "indexOfListOfBackupData", "googleDrive", "filename", "indexOfListOfBackupData", "googleDrive", "filename"}, s = {"L$0", "L$1", "L$2", "L$3", "L$0", "L$1", "L$2", "L$0", "L$1", "L$2", "L$0", "L$1", "L$2"})
     final class C02871 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -270,7 +270,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u00020\u0001:\u0001\u0017B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u0011\u0010\u0013\u001a\u00020\u0014¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016¨\u0006\u0018"}, d2 = {"Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel$Companion;", "", "()V", "BACKUP_DATA_EXTENSION", "", "BACKUP_DATA_INDEX_EXTENSION", "BACKUP_INTERVAL_MS", "", "IS_BACKING_UP", "IS_DOWNLOADING_BACKUP_DATA", "IS_FINISHING", "IS_GENERATING_BACKUP_DATA", "IS_NOT_SYNCING", "IS_PREPARING_SYNCHRONIZATION", "IS_RESTORING", "IS_RESTORING_FROM_BACKUP_DATA", "IS_SYNCING_LIBRARY", "IS_UPDATING_PLATFORMS", "IS_UPLOADING_BACKUP_DATA", "filenameWithoutExtensionRegex", "Lkotlin/text/Regex;", "getFilenameWithoutExtensionRegex", "()Lkotlin/text/Regex;", "IndexOfListOfBackupData", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -280,12 +280,12 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         private Companion() {
         }
 
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0015\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 02\u00020\u0001:\u0002/0BQ\b\u0011\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012\u0006\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\u0003\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\u000b\u001a\u0004\u0018\u00010\u0005\u0012\b\u0010\f\u001a\u0004\u0018\u00010\r¢\u0006\u0002\u0010\u000eB?\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0005\u0012\b\b\u0002\u0010\u0007\u001a\u00020\b\u0012\b\b\u0002\u0010\t\u001a\u00020\u0003\u0012\u0006\u0010\n\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u0005¢\u0006\u0002\u0010\u000fJ\t\u0010\u001b\u001a\u00020\u0005HÆ\u0003J\t\u0010\u001c\u001a\u00020\u0005HÆ\u0003J\t\u0010\u001d\u001a\u00020\bHÆ\u0003J\t\u0010\u001e\u001a\u00020\u0003HÆ\u0003J\t\u0010\u001f\u001a\u00020\u0005HÆ\u0003J\u000b\u0010 \u001a\u0004\u0018\u00010\u0005HÆ\u0003JG\u0010!\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\u00032\b\b\u0002\u0010\n\u001a\u00020\u00052\n\b\u0002\u0010\u000b\u001a\u0004\u0018\u00010\u0005HÆ\u0001J\u0013\u0010\"\u001a\u00020#2\b\u0010$\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010%\u001a\u00020\u0003HÖ\u0001J\t\u0010&\u001a\u00020\u0005HÖ\u0001J&\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020\u00002\u0006\u0010*\u001a\u00020+2\u0006\u0010,\u001a\u00020-HÁ\u0001¢\u0006\u0002\b.R\u0011\u0010\t\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u001c\u0010\u000b\u001a\u0004\u0018\u00010\u0005X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0014\u0010\u0013\"\u0004\b\u0015\u0010\u0016R\u0011\u0010\n\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0013R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u0011\u0010\u0006\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0013¨\u00061"}, d2 = {"Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel$Companion$IndexOfListOfBackupData;", "", "seen1", "", "daijishouUUID", "", "title", "timestamp", "", "contentHashMapRandomIntChecksum", "signature", "filename", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(ILjava/lang/String;Ljava/lang/String;JILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(Ljava/lang/String;Ljava/lang/String;JILjava/lang/String;Ljava/lang/String;)V", "getContentHashMapRandomIntChecksum", "()I", "getDaijishouUUID", "()Ljava/lang/String;", "getFilename", "setFilename", "(Ljava/lang/String;)V", "getSignature", "getTimestamp", "()J", "getTitle", "component1", "component2", "component3", "component4", "component5", "component6", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$app_release", "$serializer", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         @Serializable
         public static final /* data */ class IndexOfListOfBackupData {
 
-            /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+            /* INFO: renamed from: Companion, reason: from kotlin metadata */
             public static final IndexOfListOfBackupDataCompanion INSTANCE = new IndexOfListOfBackupDataCompanion(null);
             private final int contentHashMapRandomIntChecksum;
             private final String daijishouUUID;
@@ -319,32 +319,32 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
                 return indexOfListOfBackupData.copy(str, str2, j2, i3, str3, str5);
             }
 
-            /* JADX INFO: renamed from: component1, reason: from getter */
+            /* INFO: renamed from: component1, reason: from getter */
             public final String getDaijishouUUID() {
                 return this.daijishouUUID;
             }
 
-            /* JADX INFO: renamed from: component2, reason: from getter */
+            /* INFO: renamed from: component2, reason: from getter */
             public final String getTitle() {
                 return this.title;
             }
 
-            /* JADX INFO: renamed from: component3, reason: from getter */
+            /* INFO: renamed from: component3, reason: from getter */
             public final long getTimestamp() {
                 return this.timestamp;
             }
 
-            /* JADX INFO: renamed from: component4, reason: from getter */
+            /* INFO: renamed from: component4, reason: from getter */
             public final int getContentHashMapRandomIntChecksum() {
                 return this.contentHashMapRandomIntChecksum;
             }
 
-            /* JADX INFO: renamed from: component5, reason: from getter */
+            /* INFO: renamed from: component5, reason: from getter */
             public final String getSignature() {
                 return this.signature;
             }
 
-            /* JADX INFO: renamed from: component6, reason: from getter */
+            /* INFO: renamed from: component6, reason: from getter */
             public final String getFilename() {
                 return this.filename;
             }
@@ -377,7 +377,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
                 return "IndexOfListOfBackupData(daijishouUUID=" + this.daijishouUUID + ", title=" + this.title + ", timestamp=" + this.timestamp + ", contentHashMapRandomIntChecksum=" + this.contentHashMapRandomIntChecksum + ", signature=" + this.signature + ", filename=" + this.filename + ")";
             }
 
-            /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+            /* INFO: compiled from: DaijishouSynchronizationModel.kt */
             @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel$Companion$IndexOfListOfBackupData$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel$Companion$IndexOfListOfBackupData;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
             public static final class IndexOfListOfBackupDataCompanion {
                 public /* synthetic */ IndexOfListOfBackupDataCompanion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -472,7 +472,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DaijishouSynchronizationModel(Application application) {
         super(application);
         Intrinsics.checkNotNullParameter(application, "application");
@@ -589,8 +589,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$updatePlatformsFromGitHub$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$updatePlatformsFromGitHub$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$updatePlatformsFromGitHub$1", f = "DaijishouSynchronizationModel.kt", i = {0}, l = {248, 252}, m = "invokeSuspendImpl", n = {"$this$launch"}, s = {"L$0"})
     final class C02921 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -600,8 +600,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         private /* synthetic */ Object L$0;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C02921(boolean z, Function1<? super Boolean, Unit> function1, CoroutineExceptionHandler coroutineExceptionHandler, Continuation<?> continuation) {
             super(2, continuation);
             this.$updateEveryPlatformThisCycle = z;
@@ -629,20 +629,20 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:22:0x00dc, code lost:
+        /* WARN: Code restructure failed: missing block: B:22:0x00dc, code lost:
         
             if (invokeSuspendImpl$checkNextPlatform(r5, r6, r17.this$0, r8, r17.$updateEveryPlatformThisCycle, r10, r11, r12, r13, r17.$callback, r17.$coroutineExceptionHandler, r17) == r2) goto L28;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:27:0x010b, code lost:
+        /* WARN: Code restructure failed: missing block: B:27:0x010b, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02921.C00801(r17.$callback, null), r17) == r2) goto L28;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:28:0x010d, code lost:
+        /* WARN: Code restructure failed: missing block: B:28:0x010d, code lost:
         
             return r2;
          */
-        /* JADX WARN: Type inference failed for: r0v15, types: [T, java.lang.Object] */
-        /* JADX WARN: Type inference failed for: r5v4, types: [T, com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexJson] */
+        /* WARN: Type inference failed for: r0v15, types: [T, java.lang.Object] */
+        /* WARN: Type inference failed for: r5v4, types: [T, com.magneticchen.daijishou.daijishou_library_db.portables.PlatformsIndexJson] */
 
         /*
             Code decompiled incorrectly, please refer to instructions dump.
@@ -710,25 +710,25 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
-        /* JADX WARN: Code duplicated, block: B:7:0x001a  */
-        /* JADX WARN: Code restructure failed: missing block: B:27:0x00c9, code lost:
+        /* INFO: Access modifiers changed from: private */
+        /* WARN: Code duplicated, block: B:7:0x001a  */
+        /* WARN: Code restructure failed: missing block: B:27:0x00c9, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(r0, r1, r12) == r13) goto L67;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:34:0x0101, code lost:
+        /* WARN: Code restructure failed: missing block: B:34:0x0101, code lost:
         
             if (invokeSuspendImpl$checkNextPlatform(r17, r18, r19, r20, r21, r22, r23, r24, r25, r26, r27, r12) == r13) goto L67;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:41:0x012f, code lost:
+        /* WARN: Code restructure failed: missing block: B:41:0x012f, code lost:
         
             if (invokeSuspendImpl$checkNextPlatform(r17, r18, r19, r20, r21, r22, r23, r24, r25, r26, r27, r12) == r13) goto L67;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:56:0x018e, code lost:
+        /* WARN: Code restructure failed: missing block: B:56:0x018e, code lost:
         
             if (invokeSuspendImpl$checkNextPlatform(r17, r18, r19, r20, r21, r9, r23, r24, r25, r26, r27, r12) == r13) goto L67;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:66:0x022b, code lost:
+        /* WARN: Code restructure failed: missing block: B:66:0x022b, code lost:
         
             if (invokeSuspendImpl$checkNextPlatform(r17, r18, r19, r20, r21, r22, r23, r24, r25, r26, r27, r14) == r13) goto L67;
          */
@@ -737,16 +737,16 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             To view partially-correct add '--show-bad-code' argument
         */
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$1", f = "DaijishouSynchronizationModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class C00801 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             final /* synthetic */ Function1<? super Boolean, Unit> $callback;
             int label;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             C00801(Function1<? super Boolean, Unit> function1, Continuation<?> continuation) {
                 super(2, continuation);
                 this.$callback = function1;
@@ -782,8 +782,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startUpdatingPlatforms$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startUpdatingPlatforms$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02911 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         C02911() {
@@ -806,7 +806,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         updatePlatformsFromGitHub(new C02911());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void refreshLibrarySynchronization() {
         Integer value = this._statusLiveData.getValue();
         Intrinsics.checkNotNull(value);
@@ -896,13 +896,13 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         return synchronizationOfPlatform;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$setupAndAcquireSynchronizationOfPlatform$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$setupAndAcquireSynchronizationOfPlatform$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0003\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "e", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02891 extends Lambda<Unit> implements Function1<Throwable, Unit> {
         final /* synthetic */ long $platformId;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02891(long j) {
             super(1);
             this.$platformId = j;
@@ -914,7 +914,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Throwable th) {
             if (th != null) {
                 DaijishouSynchronizationModel.this.getApplication().getLogger().debug(DaijishouSynchronizationModel.this, "Platform with id \"" + this.$platformId + "\" occurred error.");
@@ -929,8 +929,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$setupAndAcquireSynchronizationOfPlatform$2, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$setupAndAcquireSynchronizationOfPlatform$2, reason: invalid class name */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass2 extends Lambda<Unit> implements Function0<Unit> {
         AnonymousClass2() {
@@ -943,7 +943,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             Object value = DaijishouSynchronizationModel.this._synchronizationOfPlatformListLiveData.getValue();
             Intrinsics.checkNotNull(value);
@@ -951,25 +951,25 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void startSyncingLibrary() {
         this._statusLiveData.setValue(3);
         this._synchronizationOfPlatformListLiveData.getValue();
         refreshLibrarySynchronization();
     }
 
-    /* JADX WARN: Code duplicated, block: B:26:0x0093  */
-    /* JADX WARN: Code duplicated, block: B:31:0x00c9  */
-    /* JADX WARN: Code duplicated, block: B:34:0x00cf  */
-    /* JADX WARN: Code duplicated, block: B:38:0x00aa A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:40:? A[LOOP:0: B:24:0x008d->B:40:?, LOOP_END, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:31:0x00c9 -> B:32:0x00cb). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
-        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+    /* WARN: Code duplicated, block: B:26:0x0093  */
+    /* WARN: Code duplicated, block: B:31:0x00c9  */
+    /* WARN: Code duplicated, block: B:34:0x00cf  */
+    /* WARN: Code duplicated, block: B:38:0x00aa A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:40:? A[LOOP:0: B:24:0x008d->B:40:?, LOOP_END, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:31:0x00c9 -> B:32:0x00cb). Please report as a decompilation issue!!! */
+    /* ERROR: decompilerOverflowException in pass: RegionMakerVisitor
+        decompiler.core.utils.exceptions.decompilerOverflowException: Regions stack size limit reached
+        	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public final Object getIndicesOfListOfBackupDataFromGoogleDrive(Continuation<?> continuation) throws Throwable {
         C02821 c02821;
@@ -1065,20 +1065,20 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         return list;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:30:0x00b8  */
-    /* JADX WARN: Code duplicated, block: B:35:0x00f5  */
-    /* JADX WARN: Code duplicated, block: B:38:0x00ff A[Catch: Exception -> 0x004d, TRY_LEAVE, TryCatch #0 {Exception -> 0x004d, blocks: (B:13:0x0048, B:36:0x00fb, B:38:0x00ff), top: B:48:0x0048 }] */
-    /* JADX WARN: Code duplicated, block: B:46:0x0132  */
-    /* JADX WARN: Code duplicated, block: B:53:0x012a A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:56:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:35:0x00f5 -> B:36:0x00fb). Please report as a decompilation issue!!! */
-    /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-        jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
-        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:30:0x00b8  */
+    /* WARN: Code duplicated, block: B:35:0x00f5  */
+    /* WARN: Code duplicated, block: B:38:0x00ff A[Catch: Exception -> 0x004d, TRY_LEAVE, TryCatch #0 {Exception -> 0x004d, blocks: (B:13:0x0048, B:36:0x00fb, B:38:0x00ff), top: B:48:0x0048 }] */
+    /* WARN: Code duplicated, block: B:46:0x0132  */
+    /* WARN: Code duplicated, block: B:53:0x012a A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:56:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:35:0x00f5 -> B:36:0x00fb). Please report as a decompilation issue!!! */
+    /* ERROR: decompilerOverflowException in pass: RegionMakerVisitor
+        decompiler.core.utils.exceptions.decompilerOverflowException: Regions stack size limit reached
+        	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
         */
     public final java.lang.Object getListOfBackupDataByIndexFromGoogleDrive(com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.Companion.IndexOfListOfBackupData indexOfListOfBackupData, kotlin.coroutines.Continuation<?> continuation) throws java.lang.Throwable {
         C02831 c02831;
@@ -1186,14 +1186,14 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         return null;
     }
 
-    /* JADX WARN: Code duplicated, block: B:35:0x00a9  */
-    /* JADX WARN: Code duplicated, block: B:41:0x00dc  */
-    /* JADX WARN: Code duplicated, block: B:45:0x00eb  */
-    /* JADX WARN: Code duplicated, block: B:51:0x0107 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:53:? A[LOOP:0: B:43:0x00e5->B:53:?, LOOP_END, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:55:0x0107 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:57:? A[LOOP:1: B:33:0x00a3->B:57:?, LOOP_END, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:35:0x00a9  */
+    /* WARN: Code duplicated, block: B:41:0x00dc  */
+    /* WARN: Code duplicated, block: B:45:0x00eb  */
+    /* WARN: Code duplicated, block: B:51:0x0107 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:53:? A[LOOP:0: B:43:0x00e5->B:53:?, LOOP_END, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:55:0x0107 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:57:? A[LOOP:1: B:33:0x00a3->B:57:?, LOOP_END, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public final Object deleteListOfBackupDataByIndexFromGoogleDrive(Companion.IndexOfListOfBackupData indexOfListOfBackupData, Continuation<?> continuation) throws Throwable {
         C02801 c02801;
         GoogleDrive googleDrive;
@@ -1319,16 +1319,16 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:39:0x0104  */
-    /* JADX WARN: Code duplicated, block: B:43:0x011a  */
-    /* JADX WARN: Code duplicated, block: B:47:0x0143  */
-    /* JADX WARN: Code duplicated, block: B:7:0x001a  */
-    /* JADX WARN: Code restructure failed: missing block: B:44:0x013c, code lost:
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:39:0x0104  */
+    /* WARN: Code duplicated, block: B:43:0x011a  */
+    /* WARN: Code duplicated, block: B:47:0x0143  */
+    /* WARN: Code duplicated, block: B:7:0x001a  */
+    /* WARN: Code restructure failed: missing block: B:44:0x013c, code lost:
     
         if (com.magneticchen.daijishou.google_drive.GoogleDrive.renameFileByFileId$default(r11, r12, r13, false, r15, 4, null) == r3) goto L45;
      */
-    /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:44:0x013c -> B:46:0x013f). Please report as a decompilation issue!!! */
+    /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:44:0x013c -> B:46:0x013f). Please report as a decompilation issue!!! */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument
@@ -1450,8 +1450,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public final Object getIndexByIndexFilenameFromGoogleDrive(String str, Continuation<?> continuation) throws Throwable {
         C02811 c02811;
         DaijishouSynchronizationModel daijishouSynchronizationModel;
@@ -1527,8 +1527,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$restoreFromIndexOfListOfBackupDataFromGoogleDrive$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$restoreFromIndexOfListOfBackupDataFromGoogleDrive$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$restoreFromIndexOfListOfBackupDataFromGoogleDrive$1", f = "DaijishouSynchronizationModel.kt", i = {0, 1, 1, 2}, l = {438, 440, 443, 449, 453}, m = "invokeSuspendImpl", n = {"$this$launch", "$this$launch", "it", "$this$launch"}, s = {"L$0", "L$0", "L$2", "L$0"})
     final class C02881 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -1540,7 +1540,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         Object L$2;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02881(Companion.IndexOfListOfBackupData indexOfListOfBackupData, int i, Continuation<?> continuation) {
             super(2, continuation);
             this.$indexOfListOfBackupData = indexOfListOfBackupData;
@@ -1567,13 +1567,13 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:35:0x007d A[Catch: Exception -> 0x0058, TryCatch #2 {Exception -> 0x0058, blocks: (B:39:0x00a2, B:24:0x0054, B:33:0x0079, B:35:0x007d, B:42:0x00b5, B:43:0x00cf), top: B:58:0x0054 }] */
-        /* JADX WARN: Code duplicated, block: B:37:0x009e  */
-        /* JADX WARN: Code duplicated, block: B:38:0x00a0  */
-        /* JADX WARN: Code duplicated, block: B:41:0x00b4  */
-        /* JADX WARN: Code duplicated, block: B:42:0x00b5 A[Catch: Exception -> 0x0058, TryCatch #2 {Exception -> 0x0058, blocks: (B:39:0x00a2, B:24:0x0054, B:33:0x0079, B:35:0x007d, B:42:0x00b5, B:43:0x00cf), top: B:58:0x0054 }] */
-        /* JADX WARN: Code duplicated, block: B:49:0x0105  */
-        /* JADX WARN: Code restructure failed: missing block: B:50:0x011f, code lost:
+        /* WARN: Code duplicated, block: B:35:0x007d A[Catch: Exception -> 0x0058, TryCatch #2 {Exception -> 0x0058, blocks: (B:39:0x00a2, B:24:0x0054, B:33:0x0079, B:35:0x007d, B:42:0x00b5, B:43:0x00cf), top: B:58:0x0054 }] */
+        /* WARN: Code duplicated, block: B:37:0x009e  */
+        /* WARN: Code duplicated, block: B:38:0x00a0  */
+        /* WARN: Code duplicated, block: B:41:0x00b4  */
+        /* WARN: Code duplicated, block: B:42:0x00b5 A[Catch: Exception -> 0x0058, TryCatch #2 {Exception -> 0x0058, blocks: (B:39:0x00a2, B:24:0x0054, B:33:0x0079, B:35:0x007d, B:42:0x00b5, B:43:0x00cf), top: B:58:0x0054 }] */
+        /* WARN: Code duplicated, block: B:49:0x0105  */
+        /* WARN: Code restructure failed: missing block: B:50:0x011f, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02881.AnonymousClass3(r12.this$0, null), r12) == r1) goto L51;
          */
@@ -1734,8 +1734,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$restoreFromIndexOfListOfBackupDataFromGoogleDrive$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$restoreFromIndexOfListOfBackupDataFromGoogleDrive$1$2, reason: invalid class name */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$restoreFromIndexOfListOfBackupDataFromGoogleDrive$1$2", f = "DaijishouSynchronizationModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -1743,7 +1743,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             int label;
             final /* synthetic */ DaijishouSynchronizationModel this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(DaijishouSynchronizationModel daijishouSynchronizationModel, Exception exc, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = daijishouSynchronizationModel;
@@ -1779,15 +1779,15 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$restoreFromIndexOfListOfBackupDataFromGoogleDrive$1$3, reason: invalid class name */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$restoreFromIndexOfListOfBackupDataFromGoogleDrive$1$3, reason: invalid class name */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$restoreFromIndexOfListOfBackupDataFromGoogleDrive$1$3", f = "DaijishouSynchronizationModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass3 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             int label;
             final /* synthetic */ DaijishouSynchronizationModel this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass3(DaijishouSynchronizationModel daijishouSynchronizationModel, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = daijishouSynchronizationModel;
@@ -1823,8 +1823,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:7:0x0018  */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:7:0x0018  */
     public final Object createAndUploadIndexForListOfBackupDataToGoogleDrive(String str, List<BackupData> list, Continuation<?> continuation) throws Throwable {
         AnonymousClass1 anonymousClass1;
         Companion.IndexOfListOfBackupData indexOfListOfBackupData;
@@ -1904,8 +1904,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         finishSynchronization();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1", f = "DaijishouSynchronizationModel.kt", i = {0, 1, 1, 1, 2, 2, 2, 3, 3, 5}, l = {507, 512, 512, InputDeviceCompat.SOURCE_DPAD, 515, 521, 533, 535, 539, 541, 542}, m = "invokeSuspendImpl", n = {"$this$launch", "$this$launch", "listOfBackupData", "inProgressFilename", "$this$launch", "listOfBackupData", "inProgressFilename", "$this$launch", "listOfBackupData", "listOfBackupData"}, s = {"L$0", "L$0", "L$1", "L$2", "L$0", "L$1", "L$2", "L$0", "L$1", "L$0"})
     final class C02901 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -1916,7 +1916,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         Object L$2;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02901(Ref.ObjectRef<Companion.IndexOfListOfBackupData> objectRef, GoogleDrive googleDrive, Continuation<?> continuation) {
             super(2, continuation);
             this.$indexOfListOfBackupDataInProgress = objectRef;
@@ -1943,10 +1943,10 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:19:0x00a1  */
-        /* JADX WARN: Code duplicated, block: B:23:0x00d8  */
-        /* JADX WARN: Code duplicated, block: B:26:0x00e1  */
-        /* JADX WARN: Code duplicated, block: B:29:0x00f3 A[PHI: r1 r3 r4
+        /* WARN: Code duplicated, block: B:19:0x00a1  */
+        /* WARN: Code duplicated, block: B:23:0x00d8  */
+        /* WARN: Code duplicated, block: B:26:0x00e1  */
+        /* WARN: Code duplicated, block: B:29:0x00f3 A[PHI: r1 r3 r4
   0x00f3: PHI (r1v10 java.lang.String) = (r1v7 java.lang.String), (r1v7 java.lang.String), (r1v14 java.lang.String) binds: [B:25:0x00df, B:27:0x00f0, B:14:0x005c] A[DONT_GENERATE, DONT_INLINE]
   0x00f3: PHI (r3v12 java.util.List) = (r3v9 java.util.List), (r3v9 java.util.List), (r3v14 java.util.List) binds: [B:25:0x00df, B:27:0x00f0, B:14:0x005c] A[DONT_GENERATE, DONT_INLINE]
   0x00f3: PHI (r4v9 kotlinx.coroutines.CoroutineScope) = 
@@ -1954,40 +1954,40 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
   (r4v6 kotlinx.coroutines.CoroutineScope)
   (r4v11 kotlinx.coroutines.CoroutineScope)
  binds: [B:25:0x00df, B:27:0x00f0, B:14:0x005c] A[DONT_GENERATE, DONT_INLINE]] */
-        /* JADX WARN: Code duplicated, block: B:32:0x010a  */
-        /* JADX WARN: Code duplicated, block: B:35:0x0115  */
-        /* JADX WARN: Code duplicated, block: B:40:0x013b  */
-        /* JADX WARN: Code duplicated, block: B:43:0x017a  */
-        /* JADX WARN: Code duplicated, block: B:47:0x018c  */
-        /* JADX WARN: Code duplicated, block: B:53:0x0202 A[PHI: r8 r13
+        /* WARN: Code duplicated, block: B:32:0x010a  */
+        /* WARN: Code duplicated, block: B:35:0x0115  */
+        /* WARN: Code duplicated, block: B:40:0x013b  */
+        /* WARN: Code duplicated, block: B:43:0x017a  */
+        /* WARN: Code duplicated, block: B:47:0x018c  */
+        /* WARN: Code duplicated, block: B:53:0x0202 A[PHI: r8 r13
   0x0202: PHI (r8v6 com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1) = 
   (r8v1 com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1)
   (r8v7 com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1)
  binds: [B:51:0x01ff, B:9:0x0025] A[DONT_GENERATE, DONT_INLINE]
   0x0202: PHI (r13v36 java.lang.Object) = (r13v46 java.lang.Object), (r13v47 java.lang.Object) binds: [B:51:0x01ff, B:9:0x0025] A[DONT_GENERATE, DONT_INLINE]] */
-        /* JADX WARN: Code duplicated, block: B:55:0x0206  */
-        /* JADX WARN: Code duplicated, block: B:58:0x022e A[PHI: r8
+        /* WARN: Code duplicated, block: B:55:0x0206  */
+        /* WARN: Code duplicated, block: B:58:0x022e A[PHI: r8
   0x022e: PHI (r8v8 com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1) = 
   (r8v6 com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1)
   (r8v6 com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1)
   (r8v9 com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1)
  binds: [B:54:0x0204, B:56:0x022b, B:8:0x001f] A[DONT_GENERATE, DONT_INLINE]] */
-        /* JADX WARN: Code duplicated, block: B:61:0x0251 A[PHI: r8
+        /* WARN: Code duplicated, block: B:61:0x0251 A[PHI: r8
   0x0251: PHI (r8v10 com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1) = 
   (r8v8 com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1)
   (r8v11 com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1)
  binds: [B:59:0x024e, B:7:0x0019] A[DONT_GENERATE, DONT_INLINE]] */
-        /* JADX WARN: Code duplicated, block: B:66:0x026d A[SYNTHETIC] */
-        /* JADX WARN: Code duplicated, block: B:69:? A[LOOP:0: B:45:0x0186->B:69:?, LOOP_END, SYNTHETIC] */
-        /* JADX WARN: Code restructure failed: missing block: B:36:0x0134, code lost:
+        /* WARN: Code duplicated, block: B:66:0x026d A[SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:69:? A[LOOP:0: B:45:0x0186->B:69:?, LOOP_END, SYNTHETIC] */
+        /* WARN: Code restructure failed: missing block: B:36:0x0134, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02901.AnonymousClass2(r12.this$0, null), r12) == r0) goto L19;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:62:0x026b, code lost:
+        /* WARN: Code restructure failed: missing block: B:62:0x026b, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02901.AnonymousClass6(r8.this$0, null), r8) == r0) goto L63;
          */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
 
         /*
             Code decompiled incorrectly, please refer to instructions dump.
@@ -2291,15 +2291,15 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1$2, reason: invalid class name */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1$2", f = "DaijishouSynchronizationModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             int label;
             final /* synthetic */ DaijishouSynchronizationModel this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(DaijishouSynchronizationModel daijishouSynchronizationModel, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = daijishouSynchronizationModel;
@@ -2334,15 +2334,15 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1$3, reason: invalid class name */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1$3, reason: invalid class name */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1$3", f = "DaijishouSynchronizationModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass3 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             int label;
             final /* synthetic */ DaijishouSynchronizationModel this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass3(DaijishouSynchronizationModel daijishouSynchronizationModel, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = daijishouSynchronizationModel;
@@ -2377,15 +2377,15 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1$6, reason: invalid class name */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1$6, reason: invalid class name */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$startBackingUp$1$6", f = "DaijishouSynchronizationModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass6 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             int label;
             final /* synthetic */ DaijishouSynchronizationModel this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass6(DaijishouSynchronizationModel daijishouSynchronizationModel, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = daijishouSynchronizationModel;
@@ -2421,7 +2421,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void finishSynchronization() {
         this._statusLiveData.setValue(99);
         List<SynchronizationOfPlatform> value = this._synchronizationOfPlatformListLiveData.getValue();
@@ -2472,7 +2472,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         startSyncingIfNot();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void importBoxArtsFromUriForPlatformId$default(DaijishouSynchronizationModel daijishouSynchronizationModel, long j, Uri uri, boolean z, Function1 function1, int i, Object obj) {
         if ((i & 4) != 0) {
             z = true;
@@ -2489,7 +2489,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         importPreviewMediaFromUriForPlatformId(platformId, uri, replace, "box art", callback);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void importSnapshotsFromUriForPlatformId$default(DaijishouSynchronizationModel daijishouSynchronizationModel, long j, Uri uri, boolean z, Function1 function1, int i, Object obj) {
         if ((i & 4) != 0) {
             z = true;
@@ -2506,7 +2506,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         importPreviewMediaFromUriForPlatformId(platformId, uri, replace, "snapshot", callback);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void importTitlesFromUriForPlatformId$default(DaijishouSynchronizationModel daijishouSynchronizationModel, long j, Uri uri, boolean z, Function1 function1, int i, Object obj) {
         if ((i & 4) != 0) {
             z = true;
@@ -2523,7 +2523,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         importPreviewMediaFromUriForPlatformId(platformId, uri, replace, "title", callback);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void skipTagForXmlPullParser(XmlPullParser parser) throws XmlPullParserException, IOException {
         if (parser.getEventType() != 2) {
             throw new IllegalStateException();
@@ -2539,7 +2539,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final String readTextFromXmlPullParser(XmlPullParser parser) throws XmlPullParserException, IOException {
         if (parser.next() == 4) {
             String text = parser.getText();
@@ -2550,7 +2550,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         return "";
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void importDatFilesFromUriForPlatformId$default(DaijishouSynchronizationModel daijishouSynchronizationModel, long j, Uri uri, boolean z, Function1 function1, int i, Object obj) {
         if ((i & 4) != 0) {
             z = true;
@@ -2562,8 +2562,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         daijishouSynchronizationModel.importDatFilesFromUriForPlatformId(j, uri, z2, function1);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1", f = "DaijishouSynchronizationModel.kt", i = {}, l = {654, 726}, m = "invokeSuspendImpl", n = {}, s = {})
     final class C02841 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -2572,8 +2572,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         final /* synthetic */ Uri $uri;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C02841(long j, Uri uri, Function1<? super Boolean, Unit> function1, Continuation<?> continuation) {
             super(2, continuation);
             this.$platformId = j;
@@ -2599,11 +2599,11 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:61:0x01cb, code lost:
+        /* WARN: Code restructure failed: missing block: B:61:0x01cb, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02841.AnonymousClass4(r18.$callback, null), r18) == r1) goto L67;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:66:0x01e9, code lost:
+        /* WARN: Code restructure failed: missing block: B:66:0x01e9, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02841.C00771(r18.$callback, null), r18) == r1) goto L67;
          */
@@ -2712,16 +2712,16 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1$1", f = "DaijishouSynchronizationModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class C00771 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             final /* synthetic */ Function1<? super Boolean, Unit> $callback;
             int label;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             C00771(Function1<? super Boolean, Unit> function1, Continuation<?> continuation) {
                 super(2, continuation);
                 this.$callback = function1;
@@ -2760,8 +2760,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1$Game */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1$Game */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000#\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0011\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002*\u0001\u0000\b\u008a\b\u0018\u00002\u00020\u0001B)\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\u0006J\u000b\u0010\u000f\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u0010\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u0011\u001a\u0004\u0018\u00010\u0003HÆ\u0003J2\u0010\u0012\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0002\u0010\u0013J\u0013\u0010\u0014\u001a\u00020\u00152\b\u0010\u0016\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u0017\u001a\u00020\u0018HÖ\u0001J\t\u0010\u0019\u001a\u00020\u0003HÖ\u0001R\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0007\u0010\b\"\u0004\b\t\u0010\nR\u001c\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\b\"\u0004\b\f\u0010\nR\u001c\u0010\u0005\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\b\"\u0004\b\u000e\u0010\n¨\u0006\u001a"}, d2 = {"com/magneticchen/daijishou/view_models/DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1$Game", "", "name", "", "description", "romName", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "getDescription", "()Ljava/lang/String;", "setDescription", "(Ljava/lang/String;)V", "getName", "setName", "getRomName", "setRomName", "component1", "component2", "component3", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1$Game;", "equals", "", "other", "hashCode", "", "toString", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final /* data */ class Game {
             private String description;
@@ -2781,17 +2781,17 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
                 return game.copy(str, str2, str3);
             }
 
-            /* JADX INFO: renamed from: component1, reason: from getter */
+            /* INFO: renamed from: component1, reason: from getter */
             public final String getName() {
                 return this.name;
             }
 
-            /* JADX INFO: renamed from: component2, reason: from getter */
+            /* INFO: renamed from: component2, reason: from getter */
             public final String getDescription() {
                 return this.description;
             }
 
-            /* JADX INFO: renamed from: component3, reason: from getter */
+            /* INFO: renamed from: component3, reason: from getter */
             public final String getRomName() {
                 return this.romName;
             }
@@ -2850,16 +2850,16 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1$4, reason: invalid class name */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1$4, reason: invalid class name */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importDatFilesFromUriForPlatformId$1$4", f = "DaijishouSynchronizationModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass4 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             final /* synthetic */ Function1<? super Boolean, Unit> $callback;
             int label;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             AnonymousClass4(Function1<? super Boolean, Unit> function1, Continuation<?> continuation) {
                 super(2, continuation);
                 this.$callback = function1;
@@ -2898,7 +2898,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void importXMLFilesFromUriForPlatformId$default(DaijishouSynchronizationModel daijishouSynchronizationModel, long j, Uri uri, boolean z, Function1 function1, int i, Object obj) {
         if ((i & 4) != 0) {
             z = true;
@@ -2910,8 +2910,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         daijishouSynchronizationModel.importXMLFilesFromUriForPlatformId(j, uri, z2, function1);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1", f = "DaijishouSynchronizationModel.kt", i = {}, l = {745, 843}, m = "invokeSuspendImpl", n = {}, s = {})
     final class C02861 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -2920,8 +2920,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         final /* synthetic */ Uri $uri;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C02861(long j, Uri uri, Function1<? super Boolean, Unit> function1, Continuation<?> continuation) {
             super(2, continuation);
             this.$platformId = j;
@@ -2947,15 +2947,15 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:83:0x0288, code lost:
+        /* WARN: Code restructure failed: missing block: B:83:0x0288, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02861.AnonymousClass4(r26.$callback, null), r26) == r1) goto L89;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:88:0x02a7, code lost:
+        /* WARN: Code restructure failed: missing block: B:88:0x02a7, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02861.C00791(r26.$callback, null), r26) == r1) goto L89;
          */
-        /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+        /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
 
         /*
             Code decompiled incorrectly, please refer to instructions dump.
@@ -3104,16 +3104,16 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1$1", f = "DaijishouSynchronizationModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class C00791 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             final /* synthetic */ Function1<? super Boolean, Unit> $callback;
             int label;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             C00791(Function1<? super Boolean, Unit> function1, Continuation<?> continuation) {
                 super(2, continuation);
                 this.$callback = function1;
@@ -3152,8 +3152,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1$Game */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1$Game */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000/\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0013\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002*\u0001\u0000\b\u008a\b\u0018\u00002\u00020\u0001B9\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\u000e\b\u0002\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003¢\u0006\u0002\u0010\tJ\u000b\u0010\u0014\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000b\u0010\u0015\u001a\u0004\u0018\u00010\u0003HÆ\u0003J\u000f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006HÆ\u0003J\u000b\u0010\u0017\u001a\u0004\u0018\u00010\u0003HÆ\u0003JB\u0010\u0018\u001a\u00020\u00002\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\u000e\b\u0002\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u00062\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0003HÆ\u0001¢\u0006\u0002\u0010\u0019J\u0013\u0010\u001a\u001a\u00020\u001b2\b\u0010\u001c\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001d\u001a\u00020\u001eHÖ\u0001J\t\u0010\u001f\u001a\u00020\u0003HÖ\u0001R\u001c\u0010\u0004\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\n\u0010\u000b\"\u0004\b\f\u0010\rR\u0017\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u001c\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0010\u0010\u000b\"\u0004\b\u0011\u0010\rR\u001c\u0010\b\u001a\u0004\u0018\u00010\u0003X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0012\u0010\u000b\"\u0004\b\u0013\u0010\r¨\u0006 "}, d2 = {"com/magneticchen/daijishou/view_models/DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1$Game", "", "name", "", "desc", "genres", "", "Lcom/magneticchen/daijishou/daijishou_library_db/Genre;", "path", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;)V", "getDesc", "()Ljava/lang/String;", "setDesc", "(Ljava/lang/String;)V", "getGenres", "()Ljava/util/List;", "getName", "setName", "getPath", "setPath", "component1", "component2", "component3", "component4", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/lang/String;)Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1$Game;", "equals", "", "other", "hashCode", "", "toString", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final /* data */ class Game {
             private String desc;
@@ -3161,7 +3161,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             private String name;
             private String path;
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             public /* synthetic */ Game copy$default(Game game, String str, String str2, List list, String str3, int i, Object obj) {
                 if ((i & 1) != 0) {
                     str = game.name;
@@ -3178,12 +3178,12 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
                 return game.copy(str, str2, list, str3);
             }
 
-            /* JADX INFO: renamed from: component1, reason: from getter */
+            /* INFO: renamed from: component1, reason: from getter */
             public final String getName() {
                 return this.name;
             }
 
-            /* JADX INFO: renamed from: component2, reason: from getter */
+            /* INFO: renamed from: component2, reason: from getter */
             public final String getDesc() {
                 return this.desc;
             }
@@ -3192,7 +3192,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
                 return this.genres;
             }
 
-            /* JADX INFO: renamed from: component4, reason: from getter */
+            /* INFO: renamed from: component4, reason: from getter */
             public final String getPath() {
                 return this.path;
             }
@@ -3258,16 +3258,16 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1$4, reason: invalid class name */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1$4, reason: invalid class name */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importXMLFilesFromUriForPlatformId$1$4", f = "DaijishouSynchronizationModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass4 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             final /* synthetic */ Function1<? super Boolean, Unit> $callback;
             int label;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             AnonymousClass4(Function1<? super Boolean, Unit> function1, Continuation<?> continuation) {
                 super(2, continuation);
                 this.$callback = function1;
@@ -3306,8 +3306,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importPreviewMediaFromUriForPlatformId$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importPreviewMediaFromUriForPlatformId$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importPreviewMediaFromUriForPlatformId$1", f = "DaijishouSynchronizationModel.kt", i = {}, l = {853, 946}, m = "invokeSuspendImpl", n = {}, s = {})
     final class C02851 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -3318,8 +3318,8 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         private /* synthetic */ Object L$0;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C02851(long j, Uri uri, Function1<? super Boolean, Unit> function1, String str, Continuation<?> continuation) {
             super(2, continuation);
             this.$platformId = j;
@@ -3348,14 +3348,14 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:66:0x02e9  */
-        /* JADX WARN: Code duplicated, block: B:67:0x0317  */
-        /* JADX WARN: Code duplicated, block: B:69:0x031e  */
-        /* JADX WARN: Code restructure failed: missing block: B:13:0x0050, code lost:
+        /* WARN: Code duplicated, block: B:66:0x02e9  */
+        /* WARN: Code duplicated, block: B:67:0x0317  */
+        /* WARN: Code duplicated, block: B:69:0x031e  */
+        /* WARN: Code restructure failed: missing block: B:13:0x0050, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02851.C00781(r33.$callback, null), r33) == r2) goto L86;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:85:0x03cd, code lost:
+        /* WARN: Code restructure failed: missing block: B:85:0x03cd, code lost:
         
             if (kotlinx.coroutines.BuildersKt.withContext(kotlinx.coroutines.Dispatchers.getMain(), new com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel.C02851.AnonymousClass4(r33.$callback, null), r33) == r2) goto L86;
          */
@@ -3496,16 +3496,16 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importPreviewMediaFromUriForPlatformId$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importPreviewMediaFromUriForPlatformId$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importPreviewMediaFromUriForPlatformId$1$1", f = "DaijishouSynchronizationModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class C00781 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             final /* synthetic */ Function1<? super Boolean, Unit> $callback;
             int label;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             C00781(Function1<? super Boolean, Unit> function1, Continuation<?> continuation) {
                 super(2, continuation);
                 this.$callback = function1;
@@ -3544,16 +3544,16 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importPreviewMediaFromUriForPlatformId$1$4, reason: invalid class name */
-        /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importPreviewMediaFromUriForPlatformId$1$4, reason: invalid class name */
+        /* INFO: compiled from: DaijishouSynchronizationModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$importPreviewMediaFromUriForPlatformId$1$4", f = "DaijishouSynchronizationModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass4 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             final /* synthetic */ Function1<? super Boolean, Unit> $callback;
             int label;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             AnonymousClass4(Function1<? super Boolean, Unit> function1, Continuation<?> continuation) {
                 super(2, continuation);
                 this.$callback = function1;
@@ -3592,7 +3592,7 @@ public final class DaijishouSynchronizationModel extends DaijishouAndroidViewMod
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void importPreviewMediaFromUriForPlatformId$default(DaijishouSynchronizationModel daijishouSynchronizationModel, long j, Uri uri, boolean z, String str, Function1 function1, int i, Object obj) {
         if ((i & 4) != 0) {
             z = true;

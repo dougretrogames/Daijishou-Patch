@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import org.apache.commons.collections4.BidiMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DualHashBidiMap<K, V> extends AbstractDualBidiMap<K, V> implements Serializable {
     private static final long serialVersionUID = 721969328361808L;
 

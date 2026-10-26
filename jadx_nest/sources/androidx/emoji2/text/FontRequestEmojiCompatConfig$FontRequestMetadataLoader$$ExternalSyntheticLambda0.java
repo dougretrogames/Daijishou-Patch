@@ -1,7 +1,7 @@
 package androidx.emoji2.text;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class FontRequestEmojiCompatConfig$FontRequestMetadataLoader$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ FontRequestEmojiCompatConfig.FontRequestMetadataLoader f$0;
 

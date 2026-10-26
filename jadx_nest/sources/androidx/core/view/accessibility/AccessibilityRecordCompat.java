@@ -6,7 +6,7 @@ import android.view.accessibility.AccessibilityRecord;
 import androidx.annotation.ReplaceWith;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AccessibilityRecordCompat {
     private final AccessibilityRecord mRecord;
 

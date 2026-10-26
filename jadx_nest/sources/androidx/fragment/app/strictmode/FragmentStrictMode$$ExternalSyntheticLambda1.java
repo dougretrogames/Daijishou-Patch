@@ -1,7 +1,7 @@
 package androidx.fragment.app.strictmode;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class FragmentStrictMode$$ExternalSyntheticLambda1 implements Runnable {
     public final /* synthetic */ String f$0;
     public final /* synthetic */ Violation f$1;

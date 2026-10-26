@@ -3,8 +3,8 @@ package com.googlecode.javaewah;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-/* JADX INFO: compiled from: IteratorAggregation.java */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: IteratorAggregation.java */
+/* INFO: loaded from: classes4.dex */
 class BufferedAndIterator implements CloneableIterator<EWAHIterator> {
     EWAHCompressedBitmap buffer = new EWAHCompressedBitmap();
     final int bufferSize;
@@ -21,7 +21,7 @@ class BufferedAndIterator implements CloneableIterator<EWAHIterator> {
     }
 
     @Override // com.googlecode.javaewah.CloneableIterator
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public CloneableIterator<EWAHIterator> m3455clone() throws CloneNotSupportedException {
         BufferedAndIterator bufferedAndIterator = (BufferedAndIterator) super.clone();
         bufferedAndIterator.buffer = this.buffer.m3460clone();
@@ -29,7 +29,7 @@ class BufferedAndIterator implements CloneableIterator<EWAHIterator> {
         return bufferedAndIterator;
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.googlecode.javaewah.CloneableIterator
     public EWAHIterator next() {
         this.buffer.clear();

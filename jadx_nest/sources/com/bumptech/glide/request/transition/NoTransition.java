@@ -2,7 +2,7 @@ package com.bumptech.glide.request.transition;
 
 import com.bumptech.glide.load.DataSource;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class NoTransition<R> implements Transition<R> {
     static final NoTransition<?> NO_ANIMATION = new NoTransition<>();
     private static final TransitionFactory<?> NO_ANIMATION_FACTORY = new NoAnimationFactory();

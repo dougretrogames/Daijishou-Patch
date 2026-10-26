@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.file;
 import com.googlecode.javaewah.EWAHCompressedBitmap;
 import com.googlecode.javaewah.IntIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class InflatingBitSet {
     private static final long[] EMPTY = new long[0];
     private final EWAHCompressedBitmap bitmap;

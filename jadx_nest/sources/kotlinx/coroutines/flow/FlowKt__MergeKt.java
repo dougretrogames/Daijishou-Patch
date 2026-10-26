@@ -14,8 +14,8 @@ import kotlinx.coroutines.flow.internal.ChannelFlowTransformLatest;
 import kotlinx.coroutines.flow.internal.ChannelLimitedFlowMerge;
 import kotlinx.coroutines.internal.SystemPropsKt;
 
-/* JADX INFO: compiled from: Merge.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: Merge.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000T\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0011\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\b\n\u0002\u0010\u001c\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a7\u0010\t\u001a\b\u0012\u0004\u0012\u0002H\u000b0\n\"\u0004\b\u0000\u0010\u000b2\u001e\u0010\f\u001a\u0010\u0012\f\b\u0001\u0012\b\u0012\u0004\u0012\u0002H\u000b0\n0\r\"\b\u0012\u0004\u0012\u0002H\u000b0\n¢\u0006\u0002\u0010\u000e\u001ab\u0010\u000f\u001a\b\u0012\u0004\u0012\u0002H\u00100\n\"\u0004\b\u0000\u0010\u000b\"\u0004\b\u0001\u0010\u0010*\b\u0012\u0004\u0012\u0002H\u000b0\n27\u0010\u0011\u001a3\b\u0001\u0012\u0013\u0012\u0011H\u000b¢\u0006\f\b\u0013\u0012\b\b\u0014\u0012\u0004\b\b(\u0015\u0012\u0010\u0012\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00100\n0\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u00170\u0012H\u0007¢\u0006\u0002\u0010\u0018\u001ae\u0010\u0019\u001a\b\u0012\u0004\u0012\u0002H\u00100\n\"\u0004\b\u0000\u0010\u000b\"\u0004\b\u0001\u0010\u0010*\b\u0012\u0004\u0012\u0002H\u000b0\n29\b\u0005\u0010\u0011\u001a3\b\u0001\u0012\u0013\u0012\u0011H\u000b¢\u0006\f\b\u0013\u0012\b\b\u0014\u0012\u0004\b\b(\u0015\u0012\u0010\u0012\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00100\n0\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u00170\u0012H\u0087\b¢\u0006\u0002\u0010\u0018\u001al\u0010\u001a\u001a\b\u0012\u0004\u0012\u0002H\u00100\n\"\u0004\b\u0000\u0010\u000b\"\u0004\b\u0001\u0010\u0010*\b\u0012\u0004\u0012\u0002H\u000b0\n2\b\b\u0002\u0010\u001b\u001a\u00020\u000127\u0010\u0011\u001a3\b\u0001\u0012\u0013\u0012\u0011H\u000b¢\u0006\f\b\u0013\u0012\b\b\u0014\u0012\u0004\b\b(\u0015\u0012\u0010\u0012\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00100\n0\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u00170\u0012H\u0007¢\u0006\u0002\u0010\u001c\u001a$\u0010\u001d\u001a\b\u0012\u0004\u0012\u0002H\u000b0\n\"\u0004\b\u0000\u0010\u000b*\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u000b0\n0\nH\u0007\u001a.\u0010\u001e\u001a\b\u0012\u0004\u0012\u0002H\u000b0\n\"\u0004\b\u0000\u0010\u000b*\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u000b0\n0\n2\b\b\u0002\u0010\u001b\u001a\u00020\u0001H\u0007\u001a^\u0010\u001f\u001a\b\u0012\u0004\u0012\u0002H\u00100\n\"\u0004\b\u0000\u0010\u000b\"\u0004\b\u0001\u0010\u0010*\b\u0012\u0004\u0012\u0002H\u000b0\n23\b\u0001\u0010\u0011\u001a-\b\u0001\u0012\u0013\u0012\u0011H\u000b¢\u0006\f\b\u0013\u0012\b\b\u0014\u0012\u0004\b\b(\u0015\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00100\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u00170\u0012H\u0007¢\u0006\u0002\u0010\u0018\u001a\"\u0010\t\u001a\b\u0012\u0004\u0012\u0002H\u000b0\n\"\u0004\b\u0000\u0010\u000b*\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u000b0\n0 \u001ao\u0010!\u001a\b\u0012\u0004\u0012\u0002H\u00100\n\"\u0004\b\u0000\u0010\u000b\"\u0004\b\u0001\u0010\u0010*\b\u0012\u0004\u0012\u0002H\u000b0\n2D\b\u0001\u0010\u0011\u001a>\b\u0001\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00100#\u0012\u0013\u0012\u0011H\u000b¢\u0006\f\b\u0013\u0012\b\b\u0014\u0012\u0004\b\b(\u0015\u0012\n\u0012\b\u0012\u0004\u0012\u00020$0\u0016\u0012\u0006\u0012\u0004\u0018\u00010\u00170\"¢\u0006\u0002\b%H\u0007¢\u0006\u0002\u0010&\"\u001c\u0010\u0000\u001a\u00020\u00018\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0002\u0010\u0003\u001a\u0004\b\u0004\u0010\u0005\"\u0016\u0010\u0006\u001a\u00020\u00078\u0006X\u0087T¢\u0006\b\n\u0000\u0012\u0004\b\b\u0010\u0003¨\u0006'"}, d2 = {"DEFAULT_CONCURRENCY", "", "getDEFAULT_CONCURRENCY$annotations", "()V", "getDEFAULT_CONCURRENCY", "()I", "DEFAULT_CONCURRENCY_PROPERTY_NAME", "", "getDEFAULT_CONCURRENCY_PROPERTY_NAME$annotations", "merge", "Lkotlinx/coroutines/flow/Flow;", ExifInterface.GPS_DIRECTION_TRUE, "flows", "", "([Lkotlinx/coroutines/flow/Flow;)Lkotlinx/coroutines/flow/Flow;", "flatMapConcat", "R", "transform", "Lkotlin/Function2;", "Lkotlin/ParameterName;", "name", "value", "Lkotlin/coroutines/Continuation;", "", "(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;", "flatMapLatest", "flatMapMerge", "concurrency", "(Lkotlinx/coroutines/flow/Flow;ILkotlin/jvm/functions/Function2;)Lkotlinx/coroutines/flow/Flow;", "flattenConcat", "flattenMerge", "mapLatest", "", "transformLatest", "Lkotlin/Function3;", "Lkotlinx/coroutines/flow/FlowCollector;", "", "Lkotlin/ExtensionFunctionType;", "(Lkotlinx/coroutines/flow/Flow;Lkotlin/jvm/functions/Function3;)Lkotlinx/coroutines/flow/Flow;", "kotlinx-coroutines-core"}, k = 5, mv = {1, 9, 0}, xi = 48, xs = "kotlinx/coroutines/flow/FlowKt")
 final /* synthetic */ class FlowKt__MergeKt {
     private static final int DEFAULT_CONCURRENCY = SystemPropsKt.systemProp(FlowKt.DEFAULT_CONCURRENCY_PROPERTY_NAME, 16, 1, Integer.MAX_VALUE);
@@ -63,9 +63,9 @@ final /* synthetic */ class FlowKt__MergeKt {
         return new ChannelFlowTransformLatest(function3, flow, null, 0, null, 28, null);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [R, T] */
-    /* JADX INFO: renamed from: kotlinx.coroutines.flow.FlowKt__MergeKt$flatMapLatest$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Merge.kt */
+    /* INFO: Add missing generic type declarations: [R, T] */
+    /* INFO: renamed from: kotlinx.coroutines.flow.FlowKt__MergeKt$flatMapLatest$1, reason: invalid class name */
+    /* INFO: compiled from: Merge.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u0003*\b\u0012\u0004\u0012\u0002H\u00030\u00042\u0006\u0010\u0005\u001a\u0002H\u0002H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "R", "Lkotlinx/coroutines/flow/FlowCollector;", "it"}, k = 3, mv = {1, 9, 0}, xi = 176)
     @DebugMetadata(c = "kotlinx.coroutines.flow.FlowKt__MergeKt$flatMapLatest$1", f = "Merge.kt", i = {}, l = {189, 189}, m = "invokeSuspend", n = {}, s = {})
     public static final class AnonymousClass1<R, T> extends SuspendLambda implements Function3<FlowCollector<? super R>, T, Continuation<? super Unit>, Object> {
@@ -74,8 +74,8 @@ final /* synthetic */ class FlowKt__MergeKt {
         /* synthetic */ Object L$1;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         public AnonymousClass1(Function2<? super T, ? super Continuation<? super Flow<? extends R>>, ? extends Object> function2, Continuation<? super AnonymousClass1> continuation) {
             super(3, continuation);
             this.$transform = function2;
@@ -89,13 +89,13 @@ final /* synthetic */ class FlowKt__MergeKt {
             return anonymousClass1.invokeSuspend(Unit.INSTANCE);
         }
 
-        /*  JADX ERROR: JadxRuntimeException in pass: ModVisitor
-            jadx.core.utils.exceptions.JadxRuntimeException: Can't change immutable type java.lang.Object to kotlinx.coroutines.flow.FlowKt__MergeKt$flatMapLatest$1<R, T> for r5v1 'this'  java.lang.Object
-            	at jadx.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
-            	at jadx.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
-            	at jadx.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
-            	at jadx.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
-            	at jadx.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
+        /* ERROR: decompilerRuntimeException in pass: ModVisitor
+            decompiler.core.utils.exceptions.decompilerRuntimeException: Can't change immutable type java.lang.Object to kotlinx.coroutines.flow.FlowKt__MergeKt$flatMapLatest$1<R, T> for r5v1 'this'  java.lang.Object
+            	at decompiler.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
+            	at decompiler.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
+            	at decompiler.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
+            	at decompiler.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
+            	at decompiler.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final java.lang.Object invokeSuspend(java.lang.Object r6) {
@@ -150,13 +150,13 @@ final /* synthetic */ class FlowKt__MergeKt {
             throw new UnsupportedOperationException("Method not decompiled: kotlinx.coroutines.flow.FlowKt__MergeKt.AnonymousClass1.invokeSuspend(java.lang.Object):java.lang.Object");
         }
 
-        /*  JADX ERROR: JadxRuntimeException in pass: ModVisitor
-            jadx.core.utils.exceptions.JadxRuntimeException: Can't change immutable type java.lang.Object to kotlinx.coroutines.flow.FlowKt__MergeKt$flatMapLatest$1<R, T> for r2v1 'this'  java.lang.Object
-            	at jadx.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
-            	at jadx.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
-            	at jadx.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
-            	at jadx.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
-            	at jadx.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
+        /* ERROR: decompilerRuntimeException in pass: ModVisitor
+            decompiler.core.utils.exceptions.decompilerRuntimeException: Can't change immutable type java.lang.Object to kotlinx.coroutines.flow.FlowKt__MergeKt$flatMapLatest$1<R, T> for r2v1 'this'  java.lang.Object
+            	at decompiler.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
+            	at decompiler.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
+            	at decompiler.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
+            	at decompiler.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
+            	at decompiler.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
             */
         public final java.lang.Object invokeSuspend$$forInline(java.lang.Object r3) {
             /*
@@ -181,9 +181,9 @@ final /* synthetic */ class FlowKt__MergeKt {
         return FlowKt.transformLatest(flow, new AnonymousClass1(function2, null));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [R, T] */
-    /* JADX INFO: renamed from: kotlinx.coroutines.flow.FlowKt__MergeKt$mapLatest$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Merge.kt */
+    /* INFO: Add missing generic type declarations: [R, T] */
+    /* INFO: renamed from: kotlinx.coroutines.flow.FlowKt__MergeKt$mapLatest$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Merge.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u0003*\b\u0012\u0004\u0012\u0002H\u00030\u00042\u0006\u0010\u0005\u001a\u0002H\u0002H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "R", "Lkotlinx/coroutines/flow/FlowCollector;", "it"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.coroutines.flow.FlowKt__MergeKt$mapLatest$1", f = "Merge.kt", i = {}, l = {213, 213}, m = "invokeSuspend", n = {}, s = {})
     static final class C03881<R, T> extends SuspendLambda implements Function3<FlowCollector<? super R>, T, Continuation<? super Unit>, Object> {
@@ -192,8 +192,8 @@ final /* synthetic */ class FlowKt__MergeKt {
         /* synthetic */ Object L$1;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C03881(Function2<? super T, ? super Continuation<? super R>, ? extends Object> function2, Continuation<? super C03881> continuation) {
             super(3, continuation);
             this.$transform = function2;
@@ -207,13 +207,13 @@ final /* synthetic */ class FlowKt__MergeKt {
             return c03881.invokeSuspend(Unit.INSTANCE);
         }
 
-        /*  JADX ERROR: JadxRuntimeException in pass: ModVisitor
-            jadx.core.utils.exceptions.JadxRuntimeException: Can't change immutable type java.lang.Object to kotlinx.coroutines.flow.FlowKt__MergeKt$mapLatest$1<R, T> for r5v1 'this'  java.lang.Object
-            	at jadx.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
-            	at jadx.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
-            	at jadx.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
-            	at jadx.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
-            	at jadx.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
+        /* ERROR: decompilerRuntimeException in pass: ModVisitor
+            decompiler.core.utils.exceptions.decompilerRuntimeException: Can't change immutable type java.lang.Object to kotlinx.coroutines.flow.FlowKt__MergeKt$mapLatest$1<R, T> for r5v1 'this'  java.lang.Object
+            	at decompiler.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
+            	at decompiler.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
+            	at decompiler.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
+            	at decompiler.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
+            	at decompiler.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final java.lang.Object invokeSuspend(java.lang.Object r6) {

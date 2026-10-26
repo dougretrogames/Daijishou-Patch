@@ -13,7 +13,7 @@ import com.google.android.material.R;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class SlideDistanceProvider implements VisibilityAnimatorProvider {
     private static final int DEFAULT_DISTANCE = -1;
     private int slideDistance = -1;
@@ -115,7 +115,7 @@ public final class SlideDistanceProvider implements VisibilityAnimatorProvider {
         return objectAnimatorOfPropertyValuesHolder;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.platform.SlideDistanceProvider$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.platform.SlideDistanceProvider$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         final /* synthetic */ float val$originalTranslation;
         final /* synthetic */ View val$view;
@@ -137,7 +137,7 @@ public final class SlideDistanceProvider implements VisibilityAnimatorProvider {
         return objectAnimatorOfPropertyValuesHolder;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.platform.SlideDistanceProvider$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.platform.SlideDistanceProvider$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         final /* synthetic */ float val$originalTranslation;
         final /* synthetic */ View val$view;

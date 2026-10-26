@@ -19,7 +19,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class CharSource {
     public abstract Reader openStream() throws IOException;
@@ -285,7 +285,7 @@ public abstract class CharSource {
             return Optional.of(Long.valueOf(this.seq.length()));
         }
 
-        /* JADX INFO: renamed from: com.google.common.io.CharSource$CharSequenceCharSource$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.io.CharSource$CharSequenceCharSource$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIterator<String> {
             Iterator<String> lines;
 
@@ -293,7 +293,7 @@ public abstract class CharSource {
                 this.lines = CharSequenceCharSource.LINE_SPLITTER.split(CharSequenceCharSource.this.seq).iterator();
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
             public String computeNext() {

@@ -27,7 +27,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class FragmentStateAdapter extends RecyclerView.Adapter<FragmentViewHolder> implements StatefulAdapter {
     private static final long GRACE_WINDOW_TIME_MS = 10000;
     private static final String KEY_PREFIX_FRAGMENT = "f#";
@@ -221,7 +221,7 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
         this.mLifecycle.addObserver(new AnonymousClass1(fragmentViewHolder));
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements LifecycleEventObserver {
         final /* synthetic */ FragmentViewHolder val$holder;
 
@@ -241,7 +241,7 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
         }
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$2, reason: invalid class name */
     class AnonymousClass2 extends FragmentManager.FragmentLifecycleCallbacks {
         final /* synthetic */ FrameLayout val$container;
         final /* synthetic */ Fragment val$fragment;
@@ -387,7 +387,7 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
         scheduleGracePeriodEnd();
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         AnonymousClass3() {
         }
@@ -406,7 +406,7 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
         handler.postDelayed(anonymousClass3, GRACE_WINDOW_TIME_MS);
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$4, reason: invalid class name */
     class AnonymousClass4 implements LifecycleEventObserver {
         final /* synthetic */ Handler val$handler;
         final /* synthetic */ Runnable val$runnable;
@@ -459,7 +459,7 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
             FragmentStateAdapter.this.mLifecycle.addObserver(this.mLifecycleObserver);
         }
 
-        /* JADX INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$FragmentMaxLifecycleEnforcer$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$FragmentMaxLifecycleEnforcer$1, reason: invalid class name */
         class AnonymousClass1 extends ViewPager2.OnPageChangeCallback {
             AnonymousClass1() {
             }
@@ -475,7 +475,7 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
             }
         }
 
-        /* JADX INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$FragmentMaxLifecycleEnforcer$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$FragmentMaxLifecycleEnforcer$2, reason: invalid class name */
         class AnonymousClass2 extends DataSetChangeObserver {
             AnonymousClass2() {
                 super(null);
@@ -487,7 +487,7 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
             }
         }
 
-        /* JADX INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$FragmentMaxLifecycleEnforcer$3, reason: invalid class name */
+        /* INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$FragmentMaxLifecycleEnforcer$3, reason: invalid class name */
         class AnonymousClass3 implements LifecycleEventObserver {
             AnonymousClass3() {
             }
@@ -657,7 +657,7 @@ public abstract class FragmentStateAdapter extends RecyclerView.Adapter<Fragment
             void onPost();
         }
 
-        /* JADX INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$FragmentTransactionCallback$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.viewpager2.adapter.FragmentStateAdapter$FragmentTransactionCallback$1, reason: invalid class name */
         class AnonymousClass1 implements OnPostEventListener {
             @Override // androidx.viewpager2.adapter.FragmentStateAdapter.FragmentTransactionCallback.OnPostEventListener
             public void onPost() {

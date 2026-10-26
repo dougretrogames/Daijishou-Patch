@@ -3,7 +3,7 @@ package org.apache.http.conn.ssl;
 import javax.net.ssl.HostnameVerifier;
 import javax.net.ssl.SSLSession;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NoopHostnameVerifier implements HostnameVerifier {
     public static final NoopHostnameVerifier INSTANCE = new NoopHostnameVerifier();
 

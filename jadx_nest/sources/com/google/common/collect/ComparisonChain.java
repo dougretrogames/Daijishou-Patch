@@ -5,7 +5,7 @@ import com.google.common.primitives.Ints;
 import com.google.common.primitives.Longs;
 import java.util.Comparator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ComparisonChain {
     private static final ComparisonChain ACTIVE = new AnonymousClass1();
@@ -41,7 +41,7 @@ public abstract class ComparisonChain {
         return ACTIVE;
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ComparisonChain$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ComparisonChain$1, reason: invalid class name */
     class AnonymousClass1 extends ComparisonChain {
         @Override // com.google.common.collect.ComparisonChain
         public int result() {

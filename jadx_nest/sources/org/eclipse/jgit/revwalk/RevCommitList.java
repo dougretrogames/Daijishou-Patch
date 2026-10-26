@@ -5,7 +5,7 @@ import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.filter.RevFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RevCommitList<E extends RevCommit> extends RevObjectList<E> {
     private RevWalk walker;
 

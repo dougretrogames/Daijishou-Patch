@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.math.BigInteger;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class UnsignedInteger extends Number implements Comparable<UnsignedInteger> {
     private final int value;

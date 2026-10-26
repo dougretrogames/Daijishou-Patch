@@ -11,7 +11,7 @@ import android.util.Property;
 import android.view.View;
 import androidx.leanback.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class TranslationAnimationCreator {
     static Animator createAnimation(View view, TransitionValues transitionValues, int i, int i2, float f, float f2, float f3, float f4, TimeInterpolator timeInterpolator, Transition transition) {
         float f5 = f2;

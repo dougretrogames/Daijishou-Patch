@@ -5,7 +5,7 @@ import com.bumptech.glide.util.MultiClassKey;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ModelToResourceClassCache {
     private final AtomicReference<MultiClassKey> resourceClassKeyRef = new AtomicReference<>();
     private final ArrayMap<MultiClassKey, List<Class<?>>> registeredResourceClassCache = new ArrayMap<>();

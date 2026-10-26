@@ -39,7 +39,7 @@ import org.eclipse.jgit.lib.RepositoryCache;
 import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.FileUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ObjectDirectory extends FileObjectDatabase {
     private static final int RESOLVE_ABBREV_LIMIT = 256;
     private final AtomicReference<AlternateHandle[]> alternates;
@@ -444,7 +444,7 @@ public class ObjectDirectory extends FileObjectDatabase {
         return this.shallowCommitsIds;
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-file-ObjectDirectory, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-file-ObjectDirectory, reason: not valid java name */
     /* synthetic */ HashSet m5706lambda$0$orgeclipsejgitinternalstoragefileObjectDirectory(File file) throws Exception {
         FileSnapshot fileSnapshotSave = FileSnapshot.save(file);
         HashSet hashSet = new HashSet();
@@ -645,7 +645,7 @@ public class ObjectDirectory extends FileObjectDatabase {
     static class AlternateHandle {
         final ObjectDirectory db;
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         private Id f120id;
 
         static class Id {

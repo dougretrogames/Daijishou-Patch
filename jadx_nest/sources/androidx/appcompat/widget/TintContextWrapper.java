@@ -7,7 +7,7 @@ import android.content.res.Resources;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TintContextWrapper extends ContextWrapper {
     private static final Object CACHE_LOCK = new Object();
     private static ArrayList<WeakReference<TintContextWrapper>> sCache;

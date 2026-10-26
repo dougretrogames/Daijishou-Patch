@@ -18,15 +18,15 @@ import kotlin.text.Regex;
 import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.JsonKt;
 
-/* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "pos", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class LibraryCollectionWallpaperViewNavFragment$onCreateView$23$1$1 extends Lambda<Unit> implements Function1<Integer, Unit> {
     final /* synthetic */ Context $context;
     final /* synthetic */ PlatformEntity $platformEntity;
     final /* synthetic */ LibraryCollectionWallpaperViewNavFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     LibraryCollectionWallpaperViewNavFragment$onCreateView$23$1$1(LibraryCollectionWallpaperViewNavFragment libraryCollectionWallpaperViewNavFragment, PlatformEntity platformEntity, Context context) {
         super(1);
         this.this$0 = libraryCollectionWallpaperViewNavFragment;

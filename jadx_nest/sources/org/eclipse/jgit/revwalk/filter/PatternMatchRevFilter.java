@@ -8,7 +8,7 @@ import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class PatternMatchRevFilter extends RevFilter {
     private final Matcher compiledPattern;
     private final String patternText;

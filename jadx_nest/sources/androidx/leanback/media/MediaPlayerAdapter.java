@@ -8,7 +8,7 @@ import android.view.SurfaceHolder;
 import androidx.leanback.R;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MediaPlayerAdapter extends PlayerAdapter {
     long mBufferedProgress;
     boolean mBufferingStart;
@@ -43,7 +43,7 @@ public class MediaPlayerAdapter extends PlayerAdapter {
     protected void onSeekComplete() {
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -55,7 +55,7 @@ public class MediaPlayerAdapter extends PlayerAdapter {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$2, reason: invalid class name */
     class AnonymousClass2 implements MediaPlayer.OnPreparedListener {
         AnonymousClass2() {
         }
@@ -70,7 +70,7 @@ public class MediaPlayerAdapter extends PlayerAdapter {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$3, reason: invalid class name */
     class AnonymousClass3 implements MediaPlayer.OnCompletionListener {
         AnonymousClass3() {
         }
@@ -82,7 +82,7 @@ public class MediaPlayerAdapter extends PlayerAdapter {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$4, reason: invalid class name */
     class AnonymousClass4 implements MediaPlayer.OnBufferingUpdateListener {
         AnonymousClass4() {
         }
@@ -95,7 +95,7 @@ public class MediaPlayerAdapter extends PlayerAdapter {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$5, reason: invalid class name */
     class AnonymousClass5 implements MediaPlayer.OnVideoSizeChangedListener {
         AnonymousClass5() {
         }
@@ -106,7 +106,7 @@ public class MediaPlayerAdapter extends PlayerAdapter {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$6, reason: invalid class name */
     class AnonymousClass6 implements MediaPlayer.OnErrorListener {
         AnonymousClass6() {
         }
@@ -120,7 +120,7 @@ public class MediaPlayerAdapter extends PlayerAdapter {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$7, reason: invalid class name */
     class AnonymousClass7 implements MediaPlayer.OnSeekCompleteListener {
         AnonymousClass7() {
         }
@@ -131,7 +131,7 @@ public class MediaPlayerAdapter extends PlayerAdapter {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.MediaPlayerAdapter$8, reason: invalid class name */
     class AnonymousClass8 implements MediaPlayer.OnInfoListener {
         AnonymousClass8() {
         }
@@ -164,7 +164,7 @@ public class MediaPlayerAdapter extends PlayerAdapter {
         this.mContext = context;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // androidx.leanback.media.PlayerAdapter
     public void onAttachedToHost(PlaybackGlueHost playbackGlueHost) {
         if (playbackGlueHost instanceof SurfaceHolderGlueHost) {

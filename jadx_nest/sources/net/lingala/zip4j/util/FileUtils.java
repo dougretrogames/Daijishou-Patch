@@ -24,7 +24,7 @@ import net.lingala.zip4j.model.ZipParameters;
 import net.lingala.zip4j.progress.ProgressMonitor;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileUtils {
     public static final byte[] DEFAULT_POSIX_FILE_ATTRIBUTES = {0, 0, -92, -127};
     public static final byte[] DEFAULT_POSIX_FOLDER_ATTRIBUTES = {0, 0, -19, 65};
@@ -281,7 +281,7 @@ public class FileUtils {
         return name.substring(name.lastIndexOf(BranchConfig.LOCAL_REPOSITORY) + 1);
     }
 
-    /* JADX INFO: renamed from: net.lingala.zip4j.util.FileUtils$1, reason: invalid class name */
+    /* INFO: renamed from: net.lingala.zip4j.util.FileUtils$1, reason: invalid class name */
     class AnonymousClass1 implements FilenameFilter {
         final /* synthetic */ String val$zipFileNameWithoutExtension;
 

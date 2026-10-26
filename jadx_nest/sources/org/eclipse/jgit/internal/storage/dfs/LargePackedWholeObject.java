@@ -7,7 +7,7 @@ import org.eclipse.jgit.errors.LargeObjectException;
 import org.eclipse.jgit.lib.ObjectLoader;
 import org.eclipse.jgit.lib.ObjectStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class LargePackedWholeObject extends ObjectLoader {
     private final DfsObjDatabase db;
     private final int headerLength;

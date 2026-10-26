@@ -8,7 +8,7 @@ import java.util.Map;
 import org.chromium.support_lib_boundary.SpeculativeLoadingParametersBoundaryInterface;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SpeculativeLoadingParametersAdapter implements SpeculativeLoadingParametersBoundaryInterface {
     private final SpeculativeLoadingParameters mSpeculativeLoadingParameters;
 

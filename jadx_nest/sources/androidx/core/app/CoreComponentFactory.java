@@ -7,7 +7,7 @@ import android.content.BroadcastReceiver;
 import android.content.ContentProvider;
 import android.content.Intent;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CoreComponentFactory extends android.app.AppComponentFactory {
 
     public interface CompatWrapped {

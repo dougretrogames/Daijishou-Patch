@@ -6,7 +6,7 @@ import io.opencensus.stats.View;
 import java.util.Arrays;
 import java.util.Collections;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class HttpViewConstants {
     static final Aggregation COUNT;
     public static final View HTTP_CLIENT_COMPLETED_COUNT_VIEW;

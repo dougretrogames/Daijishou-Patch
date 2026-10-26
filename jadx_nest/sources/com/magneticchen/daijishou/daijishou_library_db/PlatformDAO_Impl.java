@@ -17,7 +17,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class PlatformDAO_Impl implements PlatformDAO {
     private final RoomDatabase __db;
     private final EntityDeletionOrUpdateAdapter<PlatformEntity> __deletionAdapterOfPlatformEntity;
@@ -34,7 +34,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         this.__preparedStmtOfUpdateWallpaperPathAll = new AnonymousClass4(__db);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$1, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$1, reason: invalid class name */
     class AnonymousClass1 extends EntityInsertionAdapter<PlatformEntity> {
         AnonymousClass1(RoomDatabase database) {
             super(database);
@@ -45,7 +45,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
             return "INSERT OR REPLACE INTO `PlatformEntity` (`id`,`unique_id`,`name`,`shortname`,`description`,`is_visible`,`scrape_preview_media`,`wallpaper_path`,`thumbnail_path`,`color_theme`,`color_on_theme`,`accept_filename_regex`,`default_player_id`,`player_id_list`,`scraper_source_list`,`box_art_aspect_ratio_id`,`use_custom_box_art_aspect_ratio`,`custom_box_art_aspect_ratio`,`screen_aspect_ratio_id`,`use_custom_screen_aspect_ratio`,`custom_screen_aspect_ratio`,`items_sync_tree_uri_list`,`retro_achievements_console_id_list`,`extra`) VALUES (nullif(?, 0),?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityInsertionAdapter
         public void bind(SupportSQLiteStatement supportSQLiteStatement, PlatformEntity platformEntity) {
             supportSQLiteStatement.bindLong(1, platformEntity.getId());
@@ -107,7 +107,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$2, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$2, reason: invalid class name */
     class AnonymousClass2 extends EntityDeletionOrUpdateAdapter<PlatformEntity> {
         AnonymousClass2(RoomDatabase database) {
             super(database);
@@ -118,14 +118,14 @@ public final class PlatformDAO_Impl implements PlatformDAO {
             return "DELETE FROM `PlatformEntity` WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final PlatformEntity entity) {
             statement.bindLong(1, entity.getId());
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$3, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$3, reason: invalid class name */
     class AnonymousClass3 extends EntityDeletionOrUpdateAdapter<PlatformEntity> {
         AnonymousClass3(RoomDatabase database) {
             super(database);
@@ -136,7 +136,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
             return "UPDATE OR ABORT `PlatformEntity` SET `id` = ?,`unique_id` = ?,`name` = ?,`shortname` = ?,`description` = ?,`is_visible` = ?,`scrape_preview_media` = ?,`wallpaper_path` = ?,`thumbnail_path` = ?,`color_theme` = ?,`color_on_theme` = ?,`accept_filename_regex` = ?,`default_player_id` = ?,`player_id_list` = ?,`scraper_source_list` = ?,`box_art_aspect_ratio_id` = ?,`use_custom_box_art_aspect_ratio` = ?,`custom_box_art_aspect_ratio` = ?,`screen_aspect_ratio_id` = ?,`use_custom_screen_aspect_ratio` = ?,`custom_screen_aspect_ratio` = ?,`items_sync_tree_uri_list` = ?,`retro_achievements_console_id_list` = ?,`extra` = ? WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(SupportSQLiteStatement supportSQLiteStatement, PlatformEntity platformEntity) {
             supportSQLiteStatement.bindLong(1, platformEntity.getId());
@@ -199,7 +199,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$4, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$4, reason: invalid class name */
     class AnonymousClass4 extends SharedSQLiteStatement {
         AnonymousClass4(RoomDatabase database) {
             super(database);
@@ -311,7 +311,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$5, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$5, reason: invalid class name */
     class AnonymousClass5 implements Callable<Integer> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -319,7 +319,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Integer call() throws Exception {
             Integer numValueOf = null;
@@ -357,7 +357,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$6, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$6, reason: invalid class name */
     class AnonymousClass6 implements Callable<List<Long>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -411,7 +411,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$7, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$7, reason: invalid class name */
     class AnonymousClass7 implements Callable<List<PlatformEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -633,7 +633,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$8, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$8, reason: invalid class name */
     class AnonymousClass8 implements Callable<List<PlatformEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -855,7 +855,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$9, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$9, reason: invalid class name */
     class AnonymousClass9 implements Callable<List<PlatformEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -1077,7 +1077,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$10, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$10, reason: invalid class name */
     class AnonymousClass10 implements Callable<List<PlatformEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -1306,7 +1306,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlatformEntity"}, false, new AnonymousClass11(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$11, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$11, reason: invalid class name */
     class AnonymousClass11 implements Callable<PlatformEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -1314,7 +1314,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlatformEntity call() throws Exception {
             PlatformEntity platformEntity;
@@ -1440,7 +1440,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlatformEntity"}, false, new AnonymousClass12(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$12, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$12, reason: invalid class name */
     class AnonymousClass12 implements Callable<PlatformEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -1448,7 +1448,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlatformEntity call() throws Exception {
             PlatformEntity platformEntity;
@@ -1574,7 +1574,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlatformEntity"}, false, new AnonymousClass13(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$13, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$13, reason: invalid class name */
     class AnonymousClass13 implements Callable<PlatformEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -1582,7 +1582,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public PlatformEntity call() throws Exception {
             PlatformEntity platformEntity;
@@ -1708,7 +1708,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlatformEntity"}, false, new AnonymousClass14(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$14, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$14, reason: invalid class name */
     class AnonymousClass14 implements Callable<List<PlatformEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -1933,7 +1933,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlatformEntity"}, false, new AnonymousClass15(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$15, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$15, reason: invalid class name */
     class AnonymousClass15 implements Callable<List<PlatformEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -2159,7 +2159,7 @@ public final class PlatformDAO_Impl implements PlatformDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"PlatformEntity"}, false, new AnonymousClass16(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$16, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.PlatformDAO_Impl$16, reason: invalid class name */
     class AnonymousClass16 implements Callable<List<PlatformEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 

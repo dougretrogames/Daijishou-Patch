@@ -5,7 +5,7 @@ import android.util.Property;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ParallaxEffect {
     final List<Parallax.PropertyMarkerValue> mMarkerValues = new ArrayList(2);
     final List<Float> mWeights = new ArrayList(2);

@@ -12,7 +12,7 @@ import org.eclipse.jgit.util.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class RefDirectoryRename extends RefRename {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$lib$RefUpdate$Result;
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) RefDirectoryRename.class);
@@ -87,26 +87,26 @@ class RefDirectoryRename extends RefRename {
         return this.refdb;
     }
 
-    /* JADX WARN: Code duplicated, block: B:38:0x00e2 A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
-    /* JADX WARN: Code duplicated, block: B:40:0x00eb A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
-    /* JADX WARN: Code duplicated, block: B:45:0x00ff A[Catch: all -> 0x0190, TRY_ENTER, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
-    /* JADX WARN: Code duplicated, block: B:47:0x0109 A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
-    /* JADX WARN: Code duplicated, block: B:49:0x0127 A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
-    /* JADX WARN: Code duplicated, block: B:54:0x0137 A[Catch: all -> 0x0190, TRY_ENTER, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
-    /* JADX WARN: Code duplicated, block: B:56:0x014b A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
-    /* JADX WARN: Code duplicated, block: B:58:0x0155 A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
-    /* JADX WARN: Code duplicated, block: B:61:0x0173 A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
-    /* JADX WARN: Code duplicated, block: B:66:0x0185 A[Catch: all -> 0x0190, TRY_ENTER, TRY_LEAVE, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v22, types: [org.eclipse.jgit.lib.RefUpdate$Result] */
-    /* JADX WARN: Type inference failed for: r0v26 */
-    /* JADX WARN: Type inference failed for: r0v27 */
-    /* JADX WARN: Type inference failed for: r0v28 */
-    /* JADX WARN: Type inference failed for: r0v29 */
-    /* JADX WARN: Type inference failed for: r0v30 */
-    /* JADX WARN: Type inference failed for: r0v31 */
-    /* JADX WARN: Type inference failed for: r0v32 */
-    /* JADX WARN: Type inference failed for: r0v5, types: [boolean] */
+    /* WARN: Code duplicated, block: B:38:0x00e2 A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
+    /* WARN: Code duplicated, block: B:40:0x00eb A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
+    /* WARN: Code duplicated, block: B:45:0x00ff A[Catch: all -> 0x0190, TRY_ENTER, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
+    /* WARN: Code duplicated, block: B:47:0x0109 A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
+    /* WARN: Code duplicated, block: B:49:0x0127 A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
+    /* WARN: Code duplicated, block: B:54:0x0137 A[Catch: all -> 0x0190, TRY_ENTER, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
+    /* WARN: Code duplicated, block: B:56:0x014b A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
+    /* WARN: Code duplicated, block: B:58:0x0155 A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
+    /* WARN: Code duplicated, block: B:61:0x0173 A[Catch: all -> 0x0190, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
+    /* WARN: Code duplicated, block: B:66:0x0185 A[Catch: all -> 0x0190, TRY_ENTER, TRY_LEAVE, TryCatch #2 {all -> 0x0190, blocks: (B:8:0x002f, B:14:0x005a, B:21:0x007b, B:23:0x0085, B:27:0x008f, B:29:0x0093, B:31:0x009b, B:35:0x00ac, B:36:0x00c7, B:38:0x00e2, B:40:0x00eb, B:41:0x00f0, B:45:0x00ff, B:47:0x0109, B:49:0x0127, B:50:0x012c, B:54:0x0137, B:56:0x014b, B:58:0x0155, B:59:0x015c, B:61:0x0173, B:62:0x0178, B:66:0x0185), top: B:89:0x002f, outer: #3 }] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v22, types: [org.eclipse.jgit.lib.RefUpdate$Result] */
+    /* WARN: Type inference failed for: r0v26 */
+    /* WARN: Type inference failed for: r0v27 */
+    /* WARN: Type inference failed for: r0v28 */
+    /* WARN: Type inference failed for: r0v29 */
+    /* WARN: Type inference failed for: r0v30 */
+    /* WARN: Type inference failed for: r0v31 */
+    /* WARN: Type inference failed for: r0v32 */
+    /* WARN: Type inference failed for: r0v5, types: [boolean] */
     @Override // org.eclipse.jgit.lib.RefRename
     protected RefUpdate.Result doRename() throws IOException {
         RefDirectory refDirectory;

@@ -52,7 +52,7 @@ import java.util.LinkedHashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SearchView extends FrameLayout implements CoordinatorLayout.AttachedBehavior, MaterialBackHandler {
     private static final int DEF_STYLE_RES = R.style.Widget_Material3_SearchView;
     private static final long TALKBACK_FOCUS_CHANGE_DELAY_MS = 100;
@@ -109,7 +109,7 @@ public class SearchView extends FrameLayout implements CoordinatorLayout.Attache
         this(context, attributeSet, R.attr.materialSearchViewStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public SearchView(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -296,7 +296,7 @@ public class SearchView extends FrameLayout implements CoordinatorLayout.Attache
         }
     }
 
-    /* JADX INFO: renamed from: lambda$setUpBackButton$1$com-google-android-material-search-SearchView, reason: not valid java name */
+    /* INFO: renamed from: lambda$setUpBackButton$1$com-google-android-material-search-SearchView, reason: not valid java name */
     /* synthetic */ void m3315x40e9b054(View view) {
         hide();
     }
@@ -306,13 +306,13 @@ public class SearchView extends FrameLayout implements CoordinatorLayout.Attache
         this.editText.addTextChangedListener(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: lambda$setUpClearButton$2$com-google-android-material-search-SearchView, reason: not valid java name */
+    /* INFO: renamed from: lambda$setUpClearButton$2$com-google-android-material-search-SearchView, reason: not valid java name */
     /* synthetic */ void m3316xf4a71c3b(View view) {
         clearText();
         requestFocusAndShowKeyboardIfNeeded();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchView$1, reason: invalid class name */
     class AnonymousClass1 implements TextWatcher {
         @Override // android.text.TextWatcher
         public void afterTextChanged(Editable editable) {
@@ -335,7 +335,7 @@ public class SearchView extends FrameLayout implements CoordinatorLayout.Attache
         this.contentContainer.setOnTouchListener(new SearchView$$ExternalSyntheticLambda8(this));
     }
 
-    /* JADX INFO: renamed from: lambda$setUpContentOnTouchListener$3$com-google-android-material-search-SearchView, reason: not valid java name */
+    /* INFO: renamed from: lambda$setUpContentOnTouchListener$3$com-google-android-material-search-SearchView, reason: not valid java name */
     /* synthetic */ boolean m3317x1cd2d198(View view, MotionEvent motionEvent) {
         if (!isAdjustNothingSoftInputMode()) {
             return false;
@@ -391,7 +391,7 @@ public class SearchView extends FrameLayout implements CoordinatorLayout.Attache
         ViewUtils.doOnApplyWindowInsets(this.toolbar, new SearchView$$ExternalSyntheticLambda3(this));
     }
 
-    /* JADX INFO: renamed from: lambda$setUpToolbarInsetListener$4$com-google-android-material-search-SearchView, reason: not valid java name */
+    /* INFO: renamed from: lambda$setUpToolbarInsetListener$4$com-google-android-material-search-SearchView, reason: not valid java name */
     /* synthetic */ WindowInsetsCompat m3319x7371bf54(View view, WindowInsetsCompat windowInsetsCompat, ViewUtils.RelativePadding relativePadding) {
         boolean zIsLayoutRtl = ViewUtils.isLayoutRtl(this.toolbar);
         this.toolbar.setPadding((zIsLayoutRtl ? relativePadding.end : relativePadding.start) + windowInsetsCompat.getSystemWindowInsetLeft(), relativePadding.top, (zIsLayoutRtl ? relativePadding.start : relativePadding.end) + windowInsetsCompat.getSystemWindowInsetRight(), relativePadding.bottom);
@@ -403,7 +403,7 @@ public class SearchView extends FrameLayout implements CoordinatorLayout.Attache
         ViewCompat.setOnApplyWindowInsetsListener(this.statusBarSpacer, new SearchView$$ExternalSyntheticLambda4(this));
     }
 
-    /* JADX INFO: renamed from: lambda$setUpStatusBarSpacerInsetListener$5$com-google-android-material-search-SearchView, reason: not valid java name */
+    /* INFO: renamed from: lambda$setUpStatusBarSpacerInsetListener$5$com-google-android-material-search-SearchView, reason: not valid java name */
     /* synthetic */ WindowInsetsCompat m3318x941b8403(View view, WindowInsetsCompat windowInsetsCompat) {
         int systemWindowInsetTop = windowInsetsCompat.getSystemWindowInsetTop();
         setUpStatusBarSpacer(systemWindowInsetTop);
@@ -446,7 +446,7 @@ public class SearchView extends FrameLayout implements CoordinatorLayout.Attache
         updateListeningForBackCallbacks(getCurrentTransitionState());
     }
 
-    /* JADX INFO: renamed from: lambda$setupWithSearchBar$7$com-google-android-material-search-SearchView, reason: not valid java name */
+    /* INFO: renamed from: lambda$setupWithSearchBar$7$com-google-android-material-search-SearchView, reason: not valid java name */
     /* synthetic */ void m3320x986696e6(View view) {
         show();
     }
@@ -674,7 +674,7 @@ public class SearchView extends FrameLayout implements CoordinatorLayout.Attache
         this.editText.postDelayed(new SearchView$$ExternalSyntheticLambda2(this), 100L);
     }
 
-    /* JADX INFO: renamed from: lambda$requestFocusAndShowKeyboard$8$com-google-android-material-search-SearchView, reason: not valid java name */
+    /* INFO: renamed from: lambda$requestFocusAndShowKeyboard$8$com-google-android-material-search-SearchView, reason: not valid java name */
     /* synthetic */ void m3314x2b2700d7() {
         if (this.editText.requestFocus()) {
             this.editText.sendAccessibilityEvent(8);
@@ -686,7 +686,7 @@ public class SearchView extends FrameLayout implements CoordinatorLayout.Attache
         this.editText.post(new SearchView$$ExternalSyntheticLambda10(this));
     }
 
-    /* JADX INFO: renamed from: lambda$clearFocusAndHideKeyboard$9$com-google-android-material-search-SearchView, reason: not valid java name */
+    /* INFO: renamed from: lambda$clearFocusAndHideKeyboard$9$com-google-android-material-search-SearchView, reason: not valid java name */
     /* synthetic */ void m3313xff5aa7db() {
         this.editText.clearFocus();
         SearchBar searchBar = this.searchBar;
@@ -797,12 +797,12 @@ public class SearchView extends FrameLayout implements CoordinatorLayout.Attache
             super(parcelable);
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.search.SearchView$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.search.SearchView$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);

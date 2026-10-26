@@ -17,13 +17,13 @@ import kotlin.Metadata;
 import kotlin.collections.CollectionsKt;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\"\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003*\u0002\u0000\u0004\b\n\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\nJ!\u0010\u0003\u001a\u00060\u0004R\u00020\u00002\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0016¢\u0006\u0002\u0010\t¨\u0006\u000b"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$adapter$1", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformThumbnailsPacksIndexPlatformThumbnailPackListItemJson;", "onCreateViewHolder", "com/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$adapter$1.ViewHolder", "viewGroup", "Landroid/view/ViewGroup;", "viewType", "", "(Landroid/view/ViewGroup;I)Lcom/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$adapter$1$ViewHolder;", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class DownloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$adapter$1 extends DaijishouRecyclerView.Adapter<PlatformThumbnailsPacksIndexPlatformThumbnailPackListItemJson> {
     final /* synthetic */ DownloadPlatformThumbnailsPackListDialogFragment this$0;
 
-    /* JADX INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
+    /* INFO: compiled from: DownloadPlatformThumbnailsPackListDialogFragment.kt */
     @Metadata(d1 = {"\u00009\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002*\u0001\u0000\b\u008a\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u0003H\u0016R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0011\u0010\u000b\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0011\u0010\u000f\u001a\u00020\f¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000e¨\u0006\u0016"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$adapter$1.ViewHolder", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/portables/PlatformThumbnailsPacksIndexPlatformThumbnailPackListItemJson;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/dialog_fragments/DownloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$adapter$1;Landroid/view/View;)V", "imageView", "Lcom/google/android/material/imageview/ShapeableImageView;", "getImageView", "()Lcom/google/android/material/imageview/ShapeableImageView;", "text1", "Landroid/widget/TextView;", "getText1", "()Landroid/widget/TextView;", "text2", "getText2", "onBind", "", "position", "", "item", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class ViewHolder extends DaijishouRecyclerView.Adapter<PlatformThumbnailsPacksIndexPlatformThumbnailPackListItemJson>.ViewHolder {
         private final ShapeableImageView imageView;
@@ -31,7 +31,7 @@ public final class DownloadPlatformThumbnailsPackListDialogFragment$onCreateDial
         private final TextView text2;
         final /* synthetic */ DownloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$adapter$1 this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public ViewHolder(DownloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$adapter$1 downloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$adapter$1, View itemView) {
             super(downloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$adapter$1, itemView);
             Intrinsics.checkNotNullParameter(itemView, "itemView");
@@ -76,7 +76,7 @@ public final class DownloadPlatformThumbnailsPackListDialogFragment$onCreateDial
         }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     DownloadPlatformThumbnailsPackListDialogFragment$onCreateDialog$adapter$1(DownloadPlatformThumbnailsPackListDialogFragment downloadPlatformThumbnailsPackListDialogFragment, List<PlatformThumbnailsPacksIndexPlatformThumbnailPackListItemJson> list) {
         super(list, false, false, 6, null);
         this.this$0 = downloadPlatformThumbnailsPackListDialogFragment;

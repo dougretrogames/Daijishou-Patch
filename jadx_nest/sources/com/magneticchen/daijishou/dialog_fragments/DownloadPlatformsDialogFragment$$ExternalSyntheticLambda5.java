@@ -5,8 +5,8 @@ import android.content.DialogInterface;
 import android.widget.ListView;
 import androidx.fragment.app.FragmentActivity;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class DownloadPlatformsDialogFragment$$ExternalSyntheticLambda5 implements DialogInterface.OnShowListener {
     public final /* synthetic */ AlertDialog f$0;
     public final /* synthetic */ DownloadPlatformsDialogFragment f$1;

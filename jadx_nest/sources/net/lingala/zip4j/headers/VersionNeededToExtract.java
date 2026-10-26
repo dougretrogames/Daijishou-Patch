@@ -1,6 +1,6 @@
 package net.lingala.zip4j.headers;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum VersionNeededToExtract {
     DEFAULT(10),
     DEFLATE_COMPRESSED(20),

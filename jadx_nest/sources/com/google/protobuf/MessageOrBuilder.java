@@ -3,7 +3,7 @@ package com.google.protobuf;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 public interface MessageOrBuilder extends MessageLiteOrBuilder {
     List<String> findInitializationErrors();

@@ -8,7 +8,7 @@ import java.util.SortedMap;
 import java.util.SortedSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class StandardRowSortedTable<R, C, V> extends StandardTable<R, C, V> implements RowSortedTable<R, C, V> {
     private static final long serialVersionUID = 0;
@@ -17,7 +17,7 @@ class StandardRowSortedTable<R, C, V> extends StandardTable<R, C, V> implements 
         super(backingMap, factory);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public SortedMap<R, Map<C, V>> sortedBackingMap() {
         return (SortedMap) this.backingMap;
     }
@@ -32,7 +32,7 @@ class StandardRowSortedTable<R, C, V> extends StandardTable<R, C, V> implements 
         return (SortedMap) super.rowMap();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.StandardTable
     public SortedMap<R, Map<C, V>> createRowMap() {
         return new RowSortedMap(this, null);
@@ -52,7 +52,7 @@ class StandardRowSortedTable<R, C, V> extends StandardTable<R, C, V> implements 
             return (SortedSet) super.keySet();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Maps.ViewCachingAbstractMap
         public SortedSet<R> createKeySet() {
             return new Maps.SortedKeySet(this);

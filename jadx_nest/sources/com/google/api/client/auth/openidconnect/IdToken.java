@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class IdToken extends JsonWebSignature {
     public IdToken(JsonWebSignature.Header header, Payload payload, byte[] bArr, byte[] bArr2) {
         super(header, payload, bArr, bArr2);

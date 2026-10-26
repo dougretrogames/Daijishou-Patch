@@ -25,7 +25,7 @@ import java.util.Collections;
 import org.apache.commons.codec.digest.MessageDigestAlgorithms;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AuthorizationCodeFlow {
     private final String authorizationServerEncodedUrl;
     private final HttpExecuteInterceptor clientAuthentication;
@@ -82,7 +82,7 @@ public class AuthorizationCodeFlow {
         return authorizationCodeRequestUrl;
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.auth.oauth2.AuthorizationCodeFlow$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.auth.oauth2.AuthorizationCodeFlow$1, reason: invalid class name */
     class AnonymousClass1 implements HttpExecuteInterceptor {
         AnonymousClass1() {
         }

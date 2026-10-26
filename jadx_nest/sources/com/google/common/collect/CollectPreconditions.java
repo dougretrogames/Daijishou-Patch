@@ -2,7 +2,7 @@ package com.google.common.collect;
 
 import com.google.common.base.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class CollectPreconditions {
     CollectPreconditions() {

@@ -16,7 +16,7 @@ import org.apache.http.message.ParserCursor;
 import org.apache.http.util.Args;
 import org.apache.http.util.TextUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LaxExpiresHandler extends AbstractCookieAttributeHandler implements CommonCookieAttributeHandler {
     private static final Pattern DAY_OF_MONTH_PATTERN;
     private static final BitSet DELIMS;
@@ -62,16 +62,16 @@ public class LaxExpiresHandler extends AbstractCookieAttributeHandler implements
         YEAR_PATTERN = Pattern.compile("^([0-9]{2,4})([^0-9].*)?$");
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x0072 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:16:0x0074 A[Catch: NumberFormatException -> 0x015b, TryCatch #0 {NumberFormatException -> 0x015b, blocks: (B:6:0x002e, B:8:0x0034, B:12:0x0048, B:14:0x0054, B:16:0x0074, B:18:0x0080, B:20:0x008e, B:22:0x009a, B:24:0x00b6, B:26:0x00c2), top: B:62:0x002e }] */
-    /* JADX WARN: Code duplicated, block: B:18:0x0080 A[Catch: NumberFormatException -> 0x015b, TryCatch #0 {NumberFormatException -> 0x015b, blocks: (B:6:0x002e, B:8:0x0034, B:12:0x0048, B:14:0x0054, B:16:0x0074, B:18:0x0080, B:20:0x008e, B:22:0x009a, B:24:0x00b6, B:26:0x00c2), top: B:62:0x002e }] */
-    /* JADX WARN: Code duplicated, block: B:19:0x008c A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:20:0x008e A[Catch: NumberFormatException -> 0x015b, TryCatch #0 {NumberFormatException -> 0x015b, blocks: (B:6:0x002e, B:8:0x0034, B:12:0x0048, B:14:0x0054, B:16:0x0074, B:18:0x0080, B:20:0x008e, B:22:0x009a, B:24:0x00b6, B:26:0x00c2), top: B:62:0x002e }] */
-    /* JADX WARN: Code duplicated, block: B:22:0x009a A[Catch: NumberFormatException -> 0x015b, TryCatch #0 {NumberFormatException -> 0x015b, blocks: (B:6:0x002e, B:8:0x0034, B:12:0x0048, B:14:0x0054, B:16:0x0074, B:18:0x0080, B:20:0x008e, B:22:0x009a, B:24:0x00b6, B:26:0x00c2), top: B:62:0x002e }] */
-    /* JADX WARN: Code duplicated, block: B:23:0x00b4 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:24:0x00b6 A[Catch: NumberFormatException -> 0x015b, TryCatch #0 {NumberFormatException -> 0x015b, blocks: (B:6:0x002e, B:8:0x0034, B:12:0x0048, B:14:0x0054, B:16:0x0074, B:18:0x0080, B:20:0x008e, B:22:0x009a, B:24:0x00b6, B:26:0x00c2), top: B:62:0x002e }] */
-    /* JADX WARN: Code duplicated, block: B:26:0x00c2 A[Catch: NumberFormatException -> 0x015b, TRY_LEAVE, TryCatch #0 {NumberFormatException -> 0x015b, blocks: (B:6:0x002e, B:8:0x0034, B:12:0x0048, B:14:0x0054, B:16:0x0074, B:18:0x0080, B:20:0x008e, B:22:0x009a, B:24:0x00b6, B:26:0x00c2), top: B:62:0x002e }] */
-    /* JADX WARN: Code duplicated, block: B:28:0x00ce  */
+    /* WARN: Code duplicated, block: B:15:0x0072 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:16:0x0074 A[Catch: NumberFormatException -> 0x015b, TryCatch #0 {NumberFormatException -> 0x015b, blocks: (B:6:0x002e, B:8:0x0034, B:12:0x0048, B:14:0x0054, B:16:0x0074, B:18:0x0080, B:20:0x008e, B:22:0x009a, B:24:0x00b6, B:26:0x00c2), top: B:62:0x002e }] */
+    /* WARN: Code duplicated, block: B:18:0x0080 A[Catch: NumberFormatException -> 0x015b, TryCatch #0 {NumberFormatException -> 0x015b, blocks: (B:6:0x002e, B:8:0x0034, B:12:0x0048, B:14:0x0054, B:16:0x0074, B:18:0x0080, B:20:0x008e, B:22:0x009a, B:24:0x00b6, B:26:0x00c2), top: B:62:0x002e }] */
+    /* WARN: Code duplicated, block: B:19:0x008c A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:20:0x008e A[Catch: NumberFormatException -> 0x015b, TryCatch #0 {NumberFormatException -> 0x015b, blocks: (B:6:0x002e, B:8:0x0034, B:12:0x0048, B:14:0x0054, B:16:0x0074, B:18:0x0080, B:20:0x008e, B:22:0x009a, B:24:0x00b6, B:26:0x00c2), top: B:62:0x002e }] */
+    /* WARN: Code duplicated, block: B:22:0x009a A[Catch: NumberFormatException -> 0x015b, TryCatch #0 {NumberFormatException -> 0x015b, blocks: (B:6:0x002e, B:8:0x0034, B:12:0x0048, B:14:0x0054, B:16:0x0074, B:18:0x0080, B:20:0x008e, B:22:0x009a, B:24:0x00b6, B:26:0x00c2), top: B:62:0x002e }] */
+    /* WARN: Code duplicated, block: B:23:0x00b4 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:24:0x00b6 A[Catch: NumberFormatException -> 0x015b, TryCatch #0 {NumberFormatException -> 0x015b, blocks: (B:6:0x002e, B:8:0x0034, B:12:0x0048, B:14:0x0054, B:16:0x0074, B:18:0x0080, B:20:0x008e, B:22:0x009a, B:24:0x00b6, B:26:0x00c2), top: B:62:0x002e }] */
+    /* WARN: Code duplicated, block: B:26:0x00c2 A[Catch: NumberFormatException -> 0x015b, TRY_LEAVE, TryCatch #0 {NumberFormatException -> 0x015b, blocks: (B:6:0x002e, B:8:0x0034, B:12:0x0048, B:14:0x0054, B:16:0x0074, B:18:0x0080, B:20:0x008e, B:22:0x009a, B:24:0x00b6, B:26:0x00c2), top: B:62:0x002e }] */
+    /* WARN: Code duplicated, block: B:28:0x00ce  */
     @Override // org.apache.http.cookie.CookieAttributeHandler
     public void parse(SetCookie setCookie, String str) throws MalformedCookieException {
         Matcher matcher;

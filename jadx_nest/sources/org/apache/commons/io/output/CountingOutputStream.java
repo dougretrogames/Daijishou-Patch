@@ -2,7 +2,7 @@ package org.apache.commons.io.output;
 
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CountingOutputStream extends ProxyOutputStream {
     private long count;
 

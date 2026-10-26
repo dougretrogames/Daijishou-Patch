@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.Objects;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ComparatorPredicate<T> extends AbstractPredicate<T> implements Serializable {
     private static final long serialVersionUID = -1863209236504077399L;
     private final Comparator<T> comparator;

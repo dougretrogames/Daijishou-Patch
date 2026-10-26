@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.List;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class TopKSelector<T> {
     private final T[] buffer;
@@ -143,7 +143,7 @@ final class TopKSelector<T> {
         tArr[j] = t;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     TopKSelector<T> combine(TopKSelector<T> other) {
         for (int i = 0; i < other.bufferSize; i++) {
             offer(NullnessCasts.uncheckedCastNullableTToT(other.buffer[i]));

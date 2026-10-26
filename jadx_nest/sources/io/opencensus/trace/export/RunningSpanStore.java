@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class RunningSpanStore {
     private static final RunningSpanStore NOOP_RUNNING_SPAN_STORE = new NoopRunningSpanStore(null);
 

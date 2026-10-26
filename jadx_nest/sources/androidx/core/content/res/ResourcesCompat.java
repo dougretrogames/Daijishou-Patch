@@ -22,7 +22,7 @@ import java.util.Iterator;
 import java.util.WeakHashMap;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ResourcesCompat {
     public static final int ID_NULL = 0;
     private static final String TAG = "ResourcesCompat";
@@ -189,10 +189,10 @@ public final class ResourcesCompat {
     }
 
     public static abstract class FontCallback {
-        /* JADX INFO: renamed from: onFontRetrievalFailed, reason: merged with bridge method [inline-methods] */
+        /* INFO: renamed from: onFontRetrievalFailed, reason: merged with bridge method [inline-methods] */
         public abstract void m3150xb24343b7(int i);
 
-        /* JADX INFO: renamed from: onFontRetrieved, reason: merged with bridge method [inline-methods] */
+        /* INFO: renamed from: onFontRetrieved, reason: merged with bridge method [inline-methods] */
         public abstract void m3151x46c88379(Typeface typeface);
 
         public final void callbackSuccessAsync(Typeface typeface, Handler handler) {
@@ -234,7 +234,7 @@ public final class ResourcesCompat {
         return typefaceLoadFont;
     }
 
-    /* JADX WARN: Code duplicated, block: B:44:0x00ae  */
+    /* WARN: Code duplicated, block: B:44:0x00ae  */
     private static Typeface loadFont(Context context, Resources resources, TypedValue typedValue, int i, int i2, FontCallback fontCallback, Handler handler, boolean z, boolean z2) {
         if (typedValue.string == null) {
             throw new Resources.NotFoundException("Resource \"" + resources.getResourceName(i) + "\" (" + Integer.toHexString(i) + ") is not a Font: " + typedValue);
@@ -369,7 +369,7 @@ public final class ResourcesCompat {
             private Api23Impl() {
             }
 
-            /* JADX WARN: Code duplicated, block: B:30:0x0027 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+            /* WARN: Code duplicated, block: B:30:0x0027 A[EXC_TOP_SPLITTER, SYNTHETIC] */
             static void rebase(Resources.Theme theme) {
                 Method method;
                 synchronized (sRebaseMethodLock) {

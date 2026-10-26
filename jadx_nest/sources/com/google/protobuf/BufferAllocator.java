@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 abstract class BufferAllocator {
     private static final BufferAllocator UNPOOLED = new AnonymousClass1();
@@ -14,7 +14,7 @@ abstract class BufferAllocator {
     BufferAllocator() {
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.BufferAllocator$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.BufferAllocator$1, reason: invalid class name */
     class AnonymousClass1 extends BufferAllocator {
         AnonymousClass1() {
         }

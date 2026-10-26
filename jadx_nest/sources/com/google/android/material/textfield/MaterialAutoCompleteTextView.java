@@ -31,7 +31,7 @@ import com.google.android.material.shape.MaterialShapeDrawable;
 import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialAutoCompleteTextView extends AppCompatAutoCompleteTextView {
     private static final int MAX_ITEMS_MEASURED = 15;
     private static final String SWITCH_ACCESS_ACTIVITY_NAME = "SwitchAccess";
@@ -81,7 +81,7 @@ public class MaterialAutoCompleteTextView extends AppCompatAutoCompleteTextView 
         typedArrayObtainStyledAttributes.recycle();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.textfield.MaterialAutoCompleteTextView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.textfield.MaterialAutoCompleteTextView$1, reason: invalid class name */
     class AnonymousClass1 implements AdapterView.OnItemClickListener {
         AnonymousClass1() {
         }
@@ -309,7 +309,7 @@ public class MaterialAutoCompleteTextView extends AppCompatAutoCompleteTextView 
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public <T extends ListAdapter & Filterable> void updateText(Object obj) {
         setText(convertSelectionToString(obj), false);
     }

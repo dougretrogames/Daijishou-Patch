@@ -14,8 +14,8 @@ import kotlinx.coroutines.CompletableDeferred;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.JobKt;
 
-/* JADX INFO: compiled from: Share.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: Share.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "kotlinx.coroutines.flow.FlowKt__ShareKt$launchSharingDeferred$1", f = "Share.kt", i = {}, l = {336}, m = "invokeSuspend", n = {}, s = {})
 final class FlowKt__ShareKt$launchSharingDeferred$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -24,8 +24,8 @@ final class FlowKt__ShareKt$launchSharingDeferred$1 extends SuspendLambda implem
     private /* synthetic */ Object L$0;
     int label;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     FlowKt__ShareKt$launchSharingDeferred$1(Flow<? extends T> flow, CompletableDeferred<StateFlow<T>> completableDeferred, Continuation<? super FlowKt__ShareKt$launchSharingDeferred$1> continuation) {
         super(2, continuation);
         this.$upstream = flow;
@@ -44,7 +44,7 @@ final class FlowKt__ShareKt$launchSharingDeferred$1 extends SuspendLambda implem
         return ((FlowKt__ShareKt$launchSharingDeferred$1) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
-    /* JADX WARN: Type inference incomplete: some casts might be missing */
+    /* WARN: Type inference incomplete: some casts might be missing */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Object invokeSuspend(Object obj) throws Throwable {
         Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();
@@ -73,8 +73,8 @@ final class FlowKt__ShareKt$launchSharingDeferred$1 extends SuspendLambda implem
         }
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.flow.FlowKt__ShareKt$launchSharingDeferred$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Share.kt */
+    /* INFO: renamed from: kotlinx.coroutines.flow.FlowKt__ShareKt$launchSharingDeferred$1$1, reason: invalid class name */
+    /* INFO: compiled from: Share.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001a\u0002H\u0002H\u008a@¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "value", "emit", "(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1<T> implements FlowCollector {
         final /* synthetic */ CoroutineScope $$this$launch;

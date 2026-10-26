@@ -3,7 +3,7 @@ package io.noties.markwon.utils;
 import android.graphics.Color;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ColorUtils {
     public static int applyAlpha(int i, int i2) {
         return (i & ViewCompat.MEASURED_SIZE_MASK) | (i2 << 24);

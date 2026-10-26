@@ -26,7 +26,7 @@ import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.StringUtils;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class OpenSshConfigFile implements SshConfigStore {
     private final File configFile;
     private final File home;
@@ -298,7 +298,7 @@ public class OpenSshConfigFile implements SshConfigStore {
         return sb.toString();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static File toFile(String str, File file) {
         if (!str.startsWith("~/")) {
             if (!str.startsWith("~" + File.separator)) {
@@ -327,9 +327,9 @@ public class OpenSshConfigFile implements SshConfigStore {
         return SshConstants.YES.equals(str) || "on".equals(str) || "true".equals(str);
     }
 
-    /* JADX WARN: Code duplicated, block: B:53:0x0086  */
-    /* JADX WARN: Code duplicated, block: B:54:0x0089  */
-    /* JADX WARN: Code duplicated, block: B:55:0x008c  */
+    /* WARN: Code duplicated, block: B:53:0x0086  */
+    /* WARN: Code duplicated, block: B:54:0x0089  */
+    /* WARN: Code duplicated, block: B:55:0x008c  */
     public static int timeSpec(String str) {
         int i;
         int i2;

@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.dialog_fragments;
 import android.view.View;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class DebugAndExperimentalDialogFragment$$ExternalSyntheticLambda9 implements View.OnClickListener {
     public final /* synthetic */ DebugAndExperimentalDialogFragment f$0;
     public final /* synthetic */ SwitchMaterial f$1;

@@ -1,6 +1,6 @@
 package com.google.protobuf.gradle;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class Preconditions {
     private Preconditions() {
     }

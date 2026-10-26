@@ -3,7 +3,7 @@ package com.google.android.material.timepicker;
 import android.text.InputFilter;
 import android.text.Spanned;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class MaxInputValidator implements InputFilter {
     private int max;
 

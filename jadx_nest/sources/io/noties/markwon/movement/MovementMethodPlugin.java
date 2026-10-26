@@ -8,7 +8,7 @@ import io.noties.markwon.AbstractMarkwonPlugin;
 import io.noties.markwon.MarkwonPlugin;
 import io.noties.markwon.core.CorePlugin;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class MovementMethodPlugin extends AbstractMarkwonPlugin {
     private final MovementMethod movementMethod;
 

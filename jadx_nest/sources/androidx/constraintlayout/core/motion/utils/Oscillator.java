@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.motion.utils;
 
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Oscillator {
     public static final int BOUNCE = 6;
     public static final int COS_WAVE = 5;

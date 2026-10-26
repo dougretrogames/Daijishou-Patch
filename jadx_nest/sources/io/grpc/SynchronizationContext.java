@@ -11,7 +11,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class SynchronizationContext implements Executor {
     private final Thread.UncaughtExceptionHandler uncaughtExceptionHandler;
     private final Queue<Runnable> queue = new ConcurrentLinkedQueue();
@@ -60,7 +60,7 @@ public final class SynchronizationContext implements Executor {
         Preconditions.checkState(Thread.currentThread() == this.drainingThread.get(), "Not called from the SynchronizationContext");
     }
 
-    /* JADX INFO: renamed from: io.grpc.SynchronizationContext$1, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.SynchronizationContext$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ ManagedRunnable val$runnable;
         final /* synthetic */ Runnable val$task;
@@ -89,7 +89,7 @@ public final class SynchronizationContext implements Executor {
         return schedule(runnable, TimeUtils.convertToNanos(duration), TimeUnit.NANOSECONDS, scheduledExecutorService);
     }
 
-    /* JADX INFO: renamed from: io.grpc.SynchronizationContext$2, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.SynchronizationContext$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         final /* synthetic */ long val$delay;
         final /* synthetic */ ManagedRunnable val$runnable;

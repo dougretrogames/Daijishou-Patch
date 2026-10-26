@@ -3,8 +3,8 @@ package androidx.compose.ui.graphics;
 import android.graphics.ColorSpace;
 import androidx.compose.ui.graphics.colorspace.DoubleFunction;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class ColorSpaceVerificationHelper$$ExternalSyntheticLambda3 implements DoubleFunction {
     public final /* synthetic */ ColorSpace f$0;
 

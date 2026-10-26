@@ -58,7 +58,7 @@ import org.eclipse.jgit.util.ChangeIdUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CommitCommand extends GitCommand<RevCommit> {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$lib$RefUpdate$Result;
     private static final Logger log = LoggerFactory.getLogger((Class<?>) CommitCommand.class);
@@ -403,7 +403,7 @@ public class CommitCommand extends GitCommand<RevCommit> {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:87:0x0182 A[PHI: r14 r17 r19
+    /* WARN: Code duplicated, block: B:87:0x0182 A[PHI: r14 r17 r19
   0x0182: PHI (r14v5 org.eclipse.jgit.lib.ObjectInserter) = 
   (r14v1 org.eclipse.jgit.lib.ObjectInserter)
   (r14v8 org.eclipse.jgit.lib.ObjectInserter)
@@ -412,7 +412,7 @@ public class CommitCommand extends GitCommand<RevCommit> {
  binds: [B:86:0x0180, B:64:0x0150, B:66:0x0156, B:68:0x0160] A[DONT_GENERATE, DONT_INLINE]
   0x0182: PHI (r17v7 int) = (r17v4 int), (r17v9 int), (r17v9 int), (r17v9 int) binds: [B:86:0x0180, B:64:0x0150, B:66:0x0156, B:68:0x0160] A[DONT_GENERATE, DONT_INLINE]
   0x0182: PHI (r19v6 boolean) = (r19v3 boolean), (r19v7 boolean), (r19v7 boolean), (r19v7 boolean) binds: [B:86:0x0180, B:64:0x0150, B:66:0x0156, B:68:0x0160] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:88:0x0184 A[PHI: r14 r17 r19 r21
+    /* WARN: Code duplicated, block: B:88:0x0184 A[PHI: r14 r17 r19 r21
   0x0184: PHI (r14v3 org.eclipse.jgit.lib.ObjectInserter) = 
   (r14v1 org.eclipse.jgit.lib.ObjectInserter)
   (r14v1 org.eclipse.jgit.lib.ObjectInserter)
@@ -422,20 +422,20 @@ public class CommitCommand extends GitCommand<RevCommit> {
   0x0184: PHI (r17v5 int) = (r17v4 int), (r17v4 int), (r17v9 int), (r17v9 int) binds: [B:85:0x017e, B:86:0x0180, B:63:0x014e, B:68:0x0160] A[DONT_GENERATE, DONT_INLINE]
   0x0184: PHI (r19v4 boolean) = (r19v3 boolean), (r19v3 boolean), (r19v7 boolean), (r19v7 boolean) binds: [B:85:0x017e, B:86:0x0180, B:63:0x014e, B:68:0x0160] A[DONT_GENERATE, DONT_INLINE]
   0x0184: PHI (r21v4 boolean) = (r21v3 boolean), (r21v3 boolean), (r21v5 boolean), (r21v5 boolean) binds: [B:85:0x017e, B:86:0x0180, B:63:0x014e, B:68:0x0160] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r10v6, types: [org.eclipse.jgit.treewalk.AbstractTreeIterator, org.eclipse.jgit.treewalk.FileTreeIterator] */
-    /* JADX WARN: Type inference failed for: r13v0 */
-    /* JADX WARN: Type inference failed for: r13v1, types: [java.lang.Object] */
-    /* JADX WARN: Type inference failed for: r13v2 */
-    /* JADX WARN: Type inference failed for: r13v3 */
-    /* JADX WARN: Type inference failed for: r13v5 */
-    /* JADX WARN: Type inference failed for: r15v1, types: [java.lang.String] */
-    /* JADX WARN: Type inference failed for: r18v0, types: [org.eclipse.jgit.api.CommitCommand] */
-    /* JADX WARN: Type inference failed for: r5v17 */
-    /* JADX WARN: Type inference failed for: r5v7 */
-    /* JADX WARN: Type inference failed for: r5v8, types: [org.eclipse.jgit.treewalk.AbstractTreeIterator, org.eclipse.jgit.treewalk.CanonicalTreeParser] */
-    /* JADX WARN: Type inference failed for: r6v0, types: [org.eclipse.jgit.treewalk.TreeWalk] */
-    /* JADX WARN: Type inference failed for: r8v0, types: [org.eclipse.jgit.treewalk.AbstractTreeIterator, org.eclipse.jgit.treewalk.FileTreeIterator] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r10v6, types: [org.eclipse.jgit.treewalk.AbstractTreeIterator, org.eclipse.jgit.treewalk.FileTreeIterator] */
+    /* WARN: Type inference failed for: r13v0 */
+    /* WARN: Type inference failed for: r13v1, types: [java.lang.Object] */
+    /* WARN: Type inference failed for: r13v2 */
+    /* WARN: Type inference failed for: r13v3 */
+    /* WARN: Type inference failed for: r13v5 */
+    /* WARN: Type inference failed for: r15v1, types: [java.lang.String] */
+    /* WARN: Type inference failed for: r18v0, types: [org.eclipse.jgit.api.CommitCommand] */
+    /* WARN: Type inference failed for: r5v17 */
+    /* WARN: Type inference failed for: r5v7 */
+    /* WARN: Type inference failed for: r5v8, types: [org.eclipse.jgit.treewalk.AbstractTreeIterator, org.eclipse.jgit.treewalk.CanonicalTreeParser] */
+    /* WARN: Type inference failed for: r6v0, types: [org.eclipse.jgit.treewalk.TreeWalk] */
+    /* WARN: Type inference failed for: r8v0, types: [org.eclipse.jgit.treewalk.AbstractTreeIterator, org.eclipse.jgit.treewalk.FileTreeIterator] */
     private DirCache createTemporaryIndex(ObjectId objectId, DirCache dirCache, RevWalk revWalk) throws Throwable {
         Throwable th;
         int i;

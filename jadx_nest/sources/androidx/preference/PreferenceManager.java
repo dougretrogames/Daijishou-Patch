@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.text.TextUtils;
 import androidx.core.content.ContextCompat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PreferenceManager {
     public static final String KEY_HAS_SET_DEFAULT_VALUES = "_has_set_default_values";
     private static final int STORAGE_DEFAULT = 0;

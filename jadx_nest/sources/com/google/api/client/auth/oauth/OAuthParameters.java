@@ -20,7 +20,7 @@ import java.util.Map;
 import kotlin.text.Typography;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class OAuthParameters implements HttpExecuteInterceptor, HttpRequestInitializer {
     public String callback;
     public String consumerKey;

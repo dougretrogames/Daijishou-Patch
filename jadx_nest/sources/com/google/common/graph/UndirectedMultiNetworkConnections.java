@@ -13,7 +13,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class UndirectedMultiNetworkConnections<N, E> extends AbstractUndirectedNetworkConnections<N, E> {
 
@@ -38,7 +38,7 @@ final class UndirectedMultiNetworkConnections<N, E> extends AbstractUndirectedNe
         return Collections.unmodifiableSet(adjacentNodesMultiset().elementSet());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Multiset<N> adjacentNodesMultiset() {
         Multiset<N> multiset = (Multiset) getReference(this.adjacentNodesReference);
         if (multiset != null) {
@@ -49,11 +49,11 @@ final class UndirectedMultiNetworkConnections<N, E> extends AbstractUndirectedNe
         return hashMultisetCreate;
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.UndirectedMultiNetworkConnections$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.UndirectedMultiNetworkConnections$1, reason: invalid class name */
     class AnonymousClass1 extends MultiEdgesConnecting<E> {
         final /* synthetic */ Object val$node;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Map outEdgeToNode, Object targetNode, final Object val$node) {
             super(outEdgeToNode, targetNode);
             this.val$node = val$node;

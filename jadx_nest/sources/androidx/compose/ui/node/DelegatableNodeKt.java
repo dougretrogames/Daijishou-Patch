@@ -12,8 +12,8 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: DelegatableNode.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: DelegatableNode.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000p\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0016\u001a\u001a\u0010\u0004\u001a\u00020\u0005*\b\u0012\u0004\u0012\u00020\u00070\u00062\u0006\u0010\b\u001a\u00020\u0007H\u0002\u001a5\u0010\t\u001a\n\u0012\u0004\u0012\u0002H\u000b\u0018\u00010\n\"\u0006\b\u0000\u0010\u000b\u0018\u0001*\u00020\u00022\f\u0010\f\u001a\b\u0012\u0004\u0012\u0002H\u000b0\rH\u0080\bø\u0001\u0000¢\u0006\u0004\b\u000e\u0010\u000f\u001a\u000e\u0010\u0010\u001a\u0004\u0018\u00010\u0011*\u00020\u0007H\u0000\u001aA\u0010\u0012\u001a\u00020\u0005\"\u0006\b\u0000\u0010\u000b\u0018\u0001*\u00020\u00072\f\u0010\u0013\u001a\b\u0012\u0004\u0012\u0002H\u000b0\r2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u0002H\u000b\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\bø\u0001\u0000¢\u0006\u0004\b\u0016\u0010\u0017\u001a\"\u0010\u0018\u001a\u00020\u0001*\u00020\u00022\n\u0010\f\u001a\u0006\u0012\u0002\b\u00030\rH\u0000ø\u0001\u0000¢\u0006\u0004\b\u0019\u0010\u001a\u001a\n\u0010\u001b\u001a\u00020\u0005*\u00020\u0002\u001a3\u0010\u001c\u001a\u0004\u0018\u0001H\u000b\"\n\b\u0000\u0010\u000b\u0018\u0001*\u00020\u001d*\u00020\u00022\f\u0010\f\u001a\b\u0012\u0004\u0012\u0002H\u000b0\rH\u0080\bø\u0001\u0000¢\u0006\u0004\b\u001e\u0010\u001f\u001a\u0016\u0010\u001c\u001a\u0004\u0018\u00010\u0007*\u00020\u00022\u0006\u0010 \u001a\u00020!H\u0000\u001a\u0016\u0010\"\u001a\u0004\u0018\u00010\u0007*\n\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0006H\u0002\u001a\"\u0010#\u001a\u00020$*\u00020\u00022\n\u0010\u0013\u001a\u0006\u0012\u0002\b\u00030\rH\u0000ø\u0001\u0000¢\u0006\u0004\b%\u0010&\u001a\n\u0010'\u001a\u00020(*\u00020\u0002\u001a\n\u0010)\u001a\u00020**\u00020\u0002\u001a\f\u0010+\u001a\u00020,*\u00020\u0002H\u0000\u001a\f\u0010-\u001a\u00020.*\u00020\u0002H\u0000\u001aK\u0010/\u001a\u00020\u0005\"\u0006\b\u0000\u0010\u000b\u0018\u0001*\u00020\u00022\f\u0010\f\u001a\b\u0012\u0004\u0012\u0002H\u000b0\r2\b\b\u0002\u00100\u001a\u00020\u00012\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u0002H\u000b\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\bø\u0001\u0000¢\u0006\u0004\b1\u00102\u001a3\u0010/\u001a\u00020\u0005*\u00020\u00022\u0006\u0010 \u001a\u00020!2\b\b\u0002\u00100\u001a\u00020\u00012\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\b\u001aA\u00103\u001a\u00020\u0005\"\u0006\b\u0000\u0010\u000b\u0018\u0001*\u00020\u00022\f\u0010\f\u001a\b\u0012\u0004\u0012\u0002H\u000b0\r2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u0002H\u000b\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\bø\u0001\u0000¢\u0006\u0004\b4\u00105\u001a)\u00103\u001a\u00020\u0005*\u00020\u00022\u0006\u0010 \u001a\u00020!2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\b\u001aA\u00106\u001a\u00020\u0005\"\u0006\b\u0000\u0010\u000b\u0018\u0001*\u00020\u00022\f\u0010\f\u001a\b\u0012\u0004\u0012\u0002H\u000b0\r2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u0002H\u000b\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\bø\u0001\u0000¢\u0006\u0004\b7\u00105\u001a)\u00106\u001a\u00020\u0005*\u00020\u00022\u0006\u0010 \u001a\u00020!2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\b\u001aA\u00108\u001a\u00020\u0005\"\u0006\b\u0000\u0010\u000b\u0018\u0001*\u00020\u00022\f\u0010\f\u001a\b\u0012\u0004\u0012\u0002H\u000b0\r2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u0002H\u000b\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\bø\u0001\u0000¢\u0006\u0004\b9\u00105\u001a)\u00108\u001a\u00020\u0005*\u00020\u00022\u0006\u0010 \u001a\u00020!2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\b\u001aM\u0010:\u001a\u00020\u0005\"\u0006\b\u0000\u0010\u000b\u0018\u0001*\u00020\u00022\f\u0010\f\u001a\b\u0012\u0004\u0012\u0002H\u000b0\r2\n\u0010;\u001a\u0006\u0012\u0002\b\u00030\r2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u0002H\u000b\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\bø\u0001\u0000¢\u0006\u0004\b<\u0010=\u001aA\u0010>\u001a\u00020\u0005\"\u0006\b\u0000\u0010\u000b\u0018\u0001*\u00020\u00022\f\u0010\f\u001a\b\u0012\u0004\u0012\u0002H\u000b0\r2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u0002H\u000b\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\bø\u0001\u0000¢\u0006\u0004\b?\u00105\u001aA\u0010@\u001a\u00020\u0005\"\u0006\b\u0000\u0010\u000b\u0018\u0001*\u00020\u00022\f\u0010\f\u001a\b\u0012\u0004\u0012\u0002H\u000b0\r2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u0002H\u000b\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\bø\u0001\u0000¢\u0006\u0004\bA\u00105\u001a)\u0010@\u001a\u00020\u0005*\u00020\u00022\u0006\u0010 \u001a\u00020!2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00050\u0015H\u0080\b\u001aA\u0010B\u001a\u00020\u0005\"\u0006\b\u0000\u0010\u000b\u0018\u0001*\u00020\u00022\f\u0010\f\u001a\b\u0012\u0004\u0012\u0002H\u000b0\r2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u0002H\u000b\u0012\u0004\u0012\u00020\u00010\u0015H\u0080\bø\u0001\u0000¢\u0006\u0004\bC\u00105\u001a)\u0010B\u001a\u00020\u0005*\u00020\u00022\u0006\u0010 \u001a\u00020!2\u0012\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00010\u0015H\u0080\b\"\u0018\u0010\u0000\u001a\u00020\u0001*\u00020\u00028@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u0000\u0010\u0003\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006D"}, d2 = {"isDelegationRoot", "", "Landroidx/compose/ui/node/DelegatableNode;", "(Landroidx/compose/ui/node/DelegatableNode;)Z", "addLayoutNodeChildren", "", "Landroidx/compose/runtime/collection/MutableVector;", "Landroidx/compose/ui/Modifier$Node;", "node", "ancestors", "", ExifInterface.GPS_DIRECTION_TRUE, "type", "Landroidx/compose/ui/node/NodeKind;", "ancestors-64DMado", "(Landroidx/compose/ui/node/DelegatableNode;I)Ljava/util/List;", "asLayoutModifierNode", "Landroidx/compose/ui/node/LayoutModifierNode;", "dispatchForKind", "kind", "block", "Lkotlin/Function1;", "dispatchForKind-6rFNWt0", "(Landroidx/compose/ui/Modifier$Node;ILkotlin/jvm/functions/Function1;)V", "has", "has-64DMado", "(Landroidx/compose/ui/node/DelegatableNode;I)Z", "invalidateSubtree", "nearestAncestor", "", "nearestAncestor-64DMado", "(Landroidx/compose/ui/node/DelegatableNode;I)Ljava/lang/Object;", "mask", "", "pop", "requireCoordinator", "Landroidx/compose/ui/node/NodeCoordinator;", "requireCoordinator-64DMado", "(Landroidx/compose/ui/node/DelegatableNode;I)Landroidx/compose/ui/node/NodeCoordinator;", "requireDensity", "Landroidx/compose/ui/unit/Density;", "requireLayoutDirection", "Landroidx/compose/ui/unit/LayoutDirection;", "requireLayoutNode", "Landroidx/compose/ui/node/LayoutNode;", "requireOwner", "Landroidx/compose/ui/node/Owner;", "visitAncestors", "includeSelf", "visitAncestors-Y-YKmho", "(Landroidx/compose/ui/node/DelegatableNode;IZLkotlin/jvm/functions/Function1;)V", "visitChildren", "visitChildren-6rFNWt0", "(Landroidx/compose/ui/node/DelegatableNode;ILkotlin/jvm/functions/Function1;)V", "visitLocalAncestors", "visitLocalAncestors-6rFNWt0", "visitLocalDescendants", "visitLocalDescendants-6rFNWt0", "visitSelfAndAncestors", "untilType", "visitSelfAndAncestors-5BbP62I", "(Landroidx/compose/ui/node/DelegatableNode;IILkotlin/jvm/functions/Function1;)V", "visitSelfAndChildren", "visitSelfAndChildren-6rFNWt0", "visitSubtree", "visitSubtree-6rFNWt0", "visitSubtreeIf", "visitSubtreeIf-6rFNWt0", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class DelegatableNodeKt {
     public static final boolean isDelegationRoot(DelegatableNode delegatableNode) {
@@ -112,7 +112,7 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void addLayoutNodeChildren(MutableVector<Modifier.Node> mutableVector, Modifier.Node node) {
         MutableVector<LayoutNode> mutableVector2 = requireLayoutNode(node).get_children$ui_release();
         int size = mutableVector2.getSize();
@@ -208,7 +208,7 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX INFO: renamed from: visitSelfAndAncestors-5BbP62I, reason: not valid java name */
+    /* INFO: renamed from: visitSelfAndAncestors-5BbP62I, reason: not valid java name */
     public static final /* synthetic */ <T> void m1937visitSelfAndAncestors5BbP62I(DelegatableNode delegatableNode, int i, int i2, Function1<? super T, Unit> function1) {
         NodeChain nodes;
         Modifier.Node node = delegatableNode.getNode();
@@ -270,7 +270,7 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX INFO: renamed from: visitSelfAndChildren-6rFNWt0, reason: not valid java name */
+    /* INFO: renamed from: visitSelfAndChildren-6rFNWt0, reason: not valid java name */
     public static final /* synthetic */ <T> void m1938visitSelfAndChildren6rFNWt0(DelegatableNode delegatableNode, int i, Function1<? super T, Unit> function1) {
         Modifier.Node node = delegatableNode.getNode();
         MutableVector mutableVector = null;
@@ -364,12 +364,12 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX INFO: renamed from: has-64DMado, reason: not valid java name */
+    /* INFO: renamed from: has-64DMado, reason: not valid java name */
     public static final boolean m1929has64DMado(DelegatableNode delegatableNode, int i) {
         return (delegatableNode.getNode().getAggregateChildKindSet() & i) != 0;
     }
 
-    /* JADX INFO: renamed from: requireCoordinator-64DMado, reason: not valid java name */
+    /* INFO: renamed from: requireCoordinator-64DMado, reason: not valid java name */
     public static final NodeCoordinator m1931requireCoordinator64DMado(DelegatableNode delegatableNode, int i) {
         NodeCoordinator coordinator = delegatableNode.getNode().getCoordinator();
         Intrinsics.checkNotNull(coordinator);
@@ -411,7 +411,7 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX INFO: renamed from: dispatchForKind-6rFNWt0, reason: not valid java name */
+    /* INFO: renamed from: dispatchForKind-6rFNWt0, reason: not valid java name */
     public static final /* synthetic */ <T> void m1928dispatchForKind6rFNWt0(Modifier.Node node, int i, Function1<? super T, Unit> function1) {
         MutableVector mutableVector = null;
         while (node != null) {
@@ -448,7 +448,7 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Modifier.Node pop(MutableVector<Modifier.Node> mutableVector) {
         if (mutableVector == null || mutableVector.isEmpty()) {
             return null;
@@ -456,7 +456,7 @@ public final class DelegatableNodeKt {
         return mutableVector.removeAt(mutableVector.getSize() - 1);
     }
 
-    /* JADX INFO: renamed from: visitLocalDescendants-6rFNWt0, reason: not valid java name */
+    /* INFO: renamed from: visitLocalDescendants-6rFNWt0, reason: not valid java name */
     public static final /* synthetic */ <T> void m1936visitLocalDescendants6rFNWt0(DelegatableNode delegatableNode, int i, Function1<? super T, Unit> function1) {
         if (!delegatableNode.getNode().getIsAttached()) {
             throw new IllegalStateException("visitLocalDescendants called on an unattached node".toString());
@@ -504,7 +504,7 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX INFO: renamed from: visitLocalAncestors-6rFNWt0, reason: not valid java name */
+    /* INFO: renamed from: visitLocalAncestors-6rFNWt0, reason: not valid java name */
     public static final /* synthetic */ <T> void m1935visitLocalAncestors6rFNWt0(DelegatableNode delegatableNode, int i, Function1<? super T, Unit> function1) {
         if (!delegatableNode.getNode().getIsAttached()) {
             throw new IllegalStateException("visitLocalAncestors called on an unattached node".toString());
@@ -549,7 +549,7 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX INFO: renamed from: visitAncestors-Y-YKmho, reason: not valid java name */
+    /* INFO: renamed from: visitAncestors-Y-YKmho, reason: not valid java name */
     public static final /* synthetic */ <T> void m1932visitAncestorsYYKmho(DelegatableNode delegatableNode, int i, boolean z, Function1<? super T, Unit> function1) {
         NodeChain nodes;
         if (!delegatableNode.getNode().getIsAttached()) {
@@ -604,7 +604,7 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX INFO: renamed from: visitAncestors-Y-YKmho$default, reason: not valid java name */
+    /* INFO: renamed from: visitAncestors-Y-YKmho$default, reason: not valid java name */
     public static /* synthetic */ void m1933visitAncestorsYYKmho$default(DelegatableNode delegatableNode, int i, boolean z, Function1 function1, int i2, Object obj) {
         NodeChain nodes;
         if ((i2 & 2) != 0) {
@@ -664,7 +664,7 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX INFO: renamed from: ancestors-64DMado, reason: not valid java name */
+    /* INFO: renamed from: ancestors-64DMado, reason: not valid java name */
     public static final /* synthetic */ <T> List<T> m1927ancestors64DMado(DelegatableNode delegatableNode, int i) {
         NodeChain nodes;
         if (!delegatableNode.getNode().getIsAttached()) {
@@ -724,7 +724,7 @@ public final class DelegatableNodeKt {
         return arrayList;
     }
 
-    /* JADX INFO: renamed from: nearestAncestor-64DMado, reason: not valid java name */
+    /* INFO: renamed from: nearestAncestor-64DMado, reason: not valid java name */
     public static final /* synthetic */ <T> T m1930nearestAncestor64DMado(DelegatableNode delegatableNode, int i) {
         NodeChain nodes;
         if (!delegatableNode.getNode().getIsAttached()) {
@@ -781,7 +781,7 @@ public final class DelegatableNodeKt {
         return null;
     }
 
-    /* JADX INFO: renamed from: visitSubtree-6rFNWt0, reason: not valid java name */
+    /* INFO: renamed from: visitSubtree-6rFNWt0, reason: not valid java name */
     public static final /* synthetic */ <T> void m1939visitSubtree6rFNWt0(DelegatableNode delegatableNode, int i, Function1<? super T, Unit> function1) {
         if (!delegatableNode.getNode().getIsAttached()) {
             throw new IllegalStateException("visitSubtree called on an unattached node".toString());
@@ -840,7 +840,7 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX INFO: renamed from: visitChildren-6rFNWt0, reason: not valid java name */
+    /* INFO: renamed from: visitChildren-6rFNWt0, reason: not valid java name */
     public static final /* synthetic */ <T> void m1934visitChildren6rFNWt0(DelegatableNode delegatableNode, int i, Function1<? super T, Unit> function1) {
         if (!delegatableNode.getNode().getIsAttached()) {
             throw new IllegalStateException("visitChildren called on an unattached node".toString());
@@ -900,7 +900,7 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX INFO: renamed from: visitSubtreeIf-6rFNWt0, reason: not valid java name */
+    /* INFO: renamed from: visitSubtreeIf-6rFNWt0, reason: not valid java name */
     public static final /* synthetic */ <T> void m1940visitSubtreeIf6rFNWt0(DelegatableNode delegatableNode, int i, Function1<? super T, Boolean> function1) {
         if (!delegatableNode.getNode().getIsAttached()) {
             throw new IllegalStateException("visitSubtreeIf called on an unattached node".toString());
@@ -964,7 +964,7 @@ public final class DelegatableNodeKt {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static final LayoutModifierNode asLayoutModifierNode(Modifier.Node node) {
         if ((NodeKind.m2034constructorimpl(2) & node.getKindSet()) != 0) {
             if (node instanceof LayoutModifierNode) {

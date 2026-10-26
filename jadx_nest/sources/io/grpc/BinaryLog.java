@@ -2,7 +2,7 @@ package io.grpc;
 
 import java.io.Closeable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class BinaryLog implements Closeable {
     public abstract Channel wrapChannel(Channel channel);
 

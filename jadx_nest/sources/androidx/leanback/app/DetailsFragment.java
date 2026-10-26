@@ -29,7 +29,7 @@ import androidx.leanback.widget.RowPresenter;
 import androidx.leanback.widget.VerticalGridView;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public class DetailsFragment extends BaseFragment {
     static final boolean DEBUG = false;
@@ -66,7 +66,7 @@ public class DetailsFragment extends BaseFragment {
     final SetSelectionRunnable mSetSelectionRunnable = new SetSelectionRunnable();
     final BaseOnItemViewSelectedListener<Object> mOnItemViewSelectedListener = new AnonymousClass7();
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$1, reason: invalid class name */
     class AnonymousClass1 extends StateMachine.State {
         AnonymousClass1(String str) {
             super(str);
@@ -85,7 +85,7 @@ public class DetailsFragment extends BaseFragment {
         slideOutGridView();
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$2, reason: invalid class name */
     class AnonymousClass2 extends StateMachine.State {
         AnonymousClass2(String str, boolean z, boolean z2) {
             super(str, z, z2);
@@ -97,7 +97,7 @@ public class DetailsFragment extends BaseFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$3, reason: invalid class name */
     class AnonymousClass3 extends StateMachine.State {
         AnonymousClass3(String str, boolean z, boolean z2) {
             super(str, z, z2);
@@ -120,7 +120,7 @@ public class DetailsFragment extends BaseFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$4, reason: invalid class name */
     class AnonymousClass4 extends StateMachine.State {
         AnonymousClass4(String str) {
             super(str);
@@ -132,7 +132,7 @@ public class DetailsFragment extends BaseFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$5, reason: invalid class name */
     class AnonymousClass5 extends StateMachine.State {
         AnonymousClass5(String str) {
             super(str);
@@ -164,7 +164,7 @@ public class DetailsFragment extends BaseFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$6, reason: invalid class name */
     class AnonymousClass6 extends StateMachine.State {
         AnonymousClass6(String str) {
             super(str);
@@ -279,7 +279,7 @@ public class DetailsFragment extends BaseFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$7, reason: invalid class name */
     class AnonymousClass7 implements BaseOnItemViewSelectedListener<Object> {
         AnonymousClass7() {
         }
@@ -375,7 +375,7 @@ public class DetailsFragment extends BaseFragment {
         return this.mRootView;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$8, reason: invalid class name */
     class AnonymousClass8 implements Runnable {
         AnonymousClass8() {
         }
@@ -386,7 +386,7 @@ public class DetailsFragment extends BaseFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$9, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$9, reason: invalid class name */
     class AnonymousClass9 extends ItemBridgeAdapter.AdapterListener {
         AnonymousClass9() {
         }
@@ -521,7 +521,7 @@ public class DetailsFragment extends BaseFragment {
         return fragmentFindFragmentById;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$10, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$10, reason: invalid class name */
     class AnonymousClass10 implements Runnable {
         AnonymousClass10() {
         }
@@ -668,7 +668,7 @@ public class DetailsFragment extends BaseFragment {
         this.mBackgroundDrawable = drawable;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$11, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$11, reason: invalid class name */
     class AnonymousClass11 implements BrowseFrameLayout.OnChildFocusListener {
         @Override // androidx.leanback.widget.BrowseFrameLayout.OnChildFocusListener
         public boolean onRequestFocusInDescendants(int i, Rect rect) {
@@ -705,7 +705,7 @@ public class DetailsFragment extends BaseFragment {
         this.mRootView.setOnDispatchKeyListener(new AnonymousClass13());
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$12, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$12, reason: invalid class name */
     class AnonymousClass12 implements BrowseFrameLayout.OnFocusSearchListener {
         AnonymousClass12() {
         }
@@ -725,7 +725,7 @@ public class DetailsFragment extends BaseFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsFragment$13, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsFragment$13, reason: invalid class name */
     class AnonymousClass13 implements View.OnKeyListener {
         AnonymousClass13() {
         }

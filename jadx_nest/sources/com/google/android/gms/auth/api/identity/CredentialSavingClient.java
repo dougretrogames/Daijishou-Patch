@@ -5,8 +5,8 @@ import com.google.android.gms.common.api.HasApiKey;
 import com.google.android.gms.common.api.Status;
 import com.google.android.gms.tasks.Task;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 public interface CredentialSavingClient extends HasApiKey<zbf> {
     Status getStatusFromIntent(Intent intent);
 

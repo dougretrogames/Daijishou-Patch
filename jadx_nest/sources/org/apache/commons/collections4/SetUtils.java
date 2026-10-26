@@ -23,7 +23,7 @@ import org.apache.commons.collections4.set.UnmodifiableNavigableSet;
 import org.apache.commons.collections4.set.UnmodifiableSet;
 import org.apache.commons.collections4.set.UnmodifiableSortedSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SetUtils {
     public static final SortedSet EMPTY_SORTED_SET = UnmodifiableSortedSet.unmodifiableSortedSet(new TreeSet());
 
@@ -61,8 +61,8 @@ public class SetUtils {
         return !set.contains(obj);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.SetUtils$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.SetUtils$1, reason: invalid class name */
     class AnonymousClass1<E> extends SetView<E> {
         final /* synthetic */ Predicate val$notContainedInB;
         final /* synthetic */ Set val$setA;
@@ -91,8 +91,8 @@ public class SetUtils {
         return new AnonymousClass2(set, set2, difference(set, set2), difference(set2, set));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.SetUtils$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.SetUtils$2, reason: invalid class name */
     class AnonymousClass2<E> extends SetView<E> {
         final /* synthetic */ SetView val$aMinusB;
         final /* synthetic */ SetView val$bMinusA;
@@ -165,8 +165,8 @@ public class SetUtils {
         return new AnonymousClass3(set, set2);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.SetUtils$3, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.SetUtils$3, reason: invalid class name */
     class AnonymousClass3<E> extends SetView<E> {
         final /* synthetic */ Set val$setA;
         final /* synthetic */ Set val$setB;
@@ -246,8 +246,8 @@ public class SetUtils {
         return new AnonymousClass4(set, set2, difference(set2, set));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [E] */
-    /* JADX INFO: renamed from: org.apache.commons.collections4.SetUtils$4, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [E] */
+    /* INFO: renamed from: org.apache.commons.collections4.SetUtils$4, reason: invalid class name */
     class AnonymousClass4<E> extends SetView<E> {
         final /* synthetic */ SetView val$bMinusA;
         final /* synthetic */ Set val$setA;

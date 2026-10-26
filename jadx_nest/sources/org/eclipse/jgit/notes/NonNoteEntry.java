@@ -6,7 +6,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.TreeFormatter;
 import org.eclipse.jgit.util.Paths;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class NonNoteEntry extends ObjectId {
     private final FileMode mode;
     private final byte[] name;

@@ -22,7 +22,7 @@ import com.google.android.material.shape.MaterialShapeDrawable;
 import com.google.android.material.shape.ShapeAppearanceModel;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class FloatingActionButtonImplLollipop extends FloatingActionButtonImpl {
     private StateListAnimator stateListAnimator;
 

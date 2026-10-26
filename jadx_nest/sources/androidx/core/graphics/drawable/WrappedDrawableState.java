@@ -5,7 +5,7 @@ import android.content.res.Resources;
 import android.graphics.PorterDuff;
 import android.graphics.drawable.Drawable;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class WrappedDrawableState extends Drawable.ConstantState {
     int mChangingConfigurations;
     Drawable.ConstantState mDrawableState;

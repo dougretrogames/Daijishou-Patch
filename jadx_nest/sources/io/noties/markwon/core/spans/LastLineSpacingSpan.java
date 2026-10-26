@@ -4,7 +4,7 @@ import android.graphics.Paint;
 import android.text.Spanned;
 import android.text.style.LineHeightSpan;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class LastLineSpacingSpan implements LineHeightSpan {
     private final int spacing;
 

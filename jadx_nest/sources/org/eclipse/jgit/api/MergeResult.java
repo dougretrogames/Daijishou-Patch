@@ -12,7 +12,7 @@ import org.eclipse.jgit.merge.MergeChunk;
 import org.eclipse.jgit.merge.MergeStrategy;
 import org.eclipse.jgit.merge.ResolveMerger;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MergeResult {
     private ObjectId base;
     private List<String> checkoutConflicts;
@@ -24,8 +24,8 @@ public class MergeResult {
     private ObjectId[] mergedCommits;
     private ObjectId newHead;
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     public static abstract class MergeStatus {
         public static final MergeStatus ABORTED;
         public static final MergeStatus ALREADY_UP_TO_DATE;
@@ -91,7 +91,7 @@ public class MergeResult {
             ENUM$VALUES = new MergeStatus[]{anonymousClass1, anonymousClass2, anonymousClass3, anonymousClass4, anonymousClass5, anonymousClass6, anonymousClass7, anonymousClass8, anonymousClass9, anonymousClass10, anonymousClass11, anonymousClass12};
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$1, reason: invalid class name */
         final enum AnonymousClass1 extends MergeStatus {
             @Override // org.eclipse.jgit.api.MergeResult.MergeStatus
             public boolean isSuccessful() {
@@ -108,7 +108,7 @@ public class MergeResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$2, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$2, reason: invalid class name */
         final enum AnonymousClass2 extends MergeStatus {
             @Override // org.eclipse.jgit.api.MergeResult.MergeStatus
             public boolean isSuccessful() {
@@ -125,7 +125,7 @@ public class MergeResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$3, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$3, reason: invalid class name */
         final enum AnonymousClass3 extends MergeStatus {
             @Override // org.eclipse.jgit.api.MergeResult.MergeStatus
             public boolean isSuccessful() {
@@ -142,7 +142,7 @@ public class MergeResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$4, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$4, reason: invalid class name */
         final enum AnonymousClass4 extends MergeStatus {
             @Override // org.eclipse.jgit.api.MergeResult.MergeStatus
             public boolean isSuccessful() {
@@ -159,7 +159,7 @@ public class MergeResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$5, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$5, reason: invalid class name */
         final enum AnonymousClass5 extends MergeStatus {
             @Override // org.eclipse.jgit.api.MergeResult.MergeStatus
             public boolean isSuccessful() {
@@ -176,7 +176,7 @@ public class MergeResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$6, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$6, reason: invalid class name */
         final enum AnonymousClass6 extends MergeStatus {
             @Override // org.eclipse.jgit.api.MergeResult.MergeStatus
             public boolean isSuccessful() {
@@ -193,7 +193,7 @@ public class MergeResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$7, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$7, reason: invalid class name */
         final enum AnonymousClass7 extends MergeStatus {
             @Override // org.eclipse.jgit.api.MergeResult.MergeStatus
             public boolean isSuccessful() {
@@ -210,7 +210,7 @@ public class MergeResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$8, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$8, reason: invalid class name */
         final enum AnonymousClass8 extends MergeStatus {
             @Override // org.eclipse.jgit.api.MergeResult.MergeStatus
             public boolean isSuccessful() {
@@ -227,7 +227,7 @@ public class MergeResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$9, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$9, reason: invalid class name */
         final enum AnonymousClass9 extends MergeStatus {
             @Override // org.eclipse.jgit.api.MergeResult.MergeStatus
             public boolean isSuccessful() {
@@ -244,7 +244,7 @@ public class MergeResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$10, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$10, reason: invalid class name */
         final enum AnonymousClass10 extends MergeStatus {
             @Override // org.eclipse.jgit.api.MergeResult.MergeStatus
             public boolean isSuccessful() {
@@ -261,7 +261,7 @@ public class MergeResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$11, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$11, reason: invalid class name */
         final enum AnonymousClass11 extends MergeStatus {
             @Override // org.eclipse.jgit.api.MergeResult.MergeStatus
             public boolean isSuccessful() {
@@ -278,7 +278,7 @@ public class MergeResult {
             }
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$12, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.api.MergeResult$MergeStatus$12, reason: invalid class name */
         final enum AnonymousClass12 extends MergeStatus {
             @Override // org.eclipse.jgit.api.MergeResult.MergeStatus
             public boolean isSuccessful() {

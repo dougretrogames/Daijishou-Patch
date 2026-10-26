@@ -64,7 +64,7 @@ import java.util.List;
 import java.util.Locale;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeListener<S>, T extends BaseOnSliderTouchListener<S>> extends View {
     private static final int DEFAULT_LABEL_ANIMATION_ENTER_DURATION = 83;
     private static final int DEFAULT_LABEL_ANIMATION_EXIT_DURATION = 117;
@@ -1056,7 +1056,7 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeL
         maybeCalculateTicksCoordinates();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void updateHaloHotspot() {
         if (shouldDrawCompatHalo() || getMeasuredWidth() <= 0) {
             return;
@@ -1157,8 +1157,8 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeL
         return isRtl() ? 1.0f - f3 : f3;
     }
 
-    /* JADX WARN: Code duplicated, block: B:34:0x009e  */
-    /* JADX WARN: Code duplicated, block: B:41:0x00b4 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:34:0x009e  */
+    /* WARN: Code duplicated, block: B:41:0x00b4 A[SYNTHETIC] */
     private void drawActiveTrack(Canvas canvas, int i, int i2) {
         int i3;
         float[] activeRange = getActiveRange();
@@ -1221,7 +1221,7 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeL
         canvas.drawLine(fValueToX, f5, f2, f5, this.activeTrackPaint);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.slider.BaseSlider$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.slider.BaseSlider$3, reason: invalid class name */
     static /* synthetic */ class AnonymousClass3 {
         static final /* synthetic */ int[] $SwitchMap$com$google$android$material$slider$BaseSlider$FullCornerDirection;
 
@@ -1251,12 +1251,12 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeL
         return this.thumbTrackGapSize > 0;
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x0041  */
-    /* JADX WARN: Code duplicated, block: B:15:0x0052  */
-    /* JADX WARN: Code duplicated, block: B:17:0x0073 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:18:0x0075  */
-    /* JADX WARN: Code duplicated, block: B:19:0x0089  */
-    /* JADX WARN: Code duplicated, block: B:20:0x0099  */
+    /* WARN: Code duplicated, block: B:13:0x0041  */
+    /* WARN: Code duplicated, block: B:15:0x0052  */
+    /* WARN: Code duplicated, block: B:17:0x0073 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:18:0x0075  */
+    /* WARN: Code duplicated, block: B:19:0x0089  */
+    /* WARN: Code duplicated, block: B:20:0x0099  */
     private void updateTrack(Canvas canvas, Paint paint, RectF rectF, FullCornerDirection fullCornerDirection) {
         int i;
         float fMax;
@@ -1430,8 +1430,8 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeL
         return this.forceDrawCompatHalo || !(getBackground() instanceof RippleDrawable);
     }
 
-    /* JADX WARN: Code duplicated, block: B:24:0x006f  */
-    /* JADX WARN: Code duplicated, block: B:37:0x00b5  */
+    /* WARN: Code duplicated, block: B:24:0x006f  */
+    /* WARN: Code duplicated, block: B:37:0x00b5  */
     @Override // android.view.View
     public boolean onTouchEvent(MotionEvent motionEvent) {
         MotionEvent motionEvent2;
@@ -1584,7 +1584,7 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeL
         return snapThumbToValue(this.activeThumbIdx, f);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean snapThumbToValue(int i, float f) {
         this.focusedThumbIdx = i;
         if (Math.abs(f - this.values.get(i).floatValue()) < THRESHOLD) {
@@ -1663,7 +1663,7 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeL
         return valueAnimatorOfFloat;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.slider.BaseSlider$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.slider.BaseSlider$1, reason: invalid class name */
     class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
         AnonymousClass1() {
         }
@@ -1679,7 +1679,7 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeL
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void updateLabels() {
         int i = this.labelBehavior;
         if (i == 0 || i == 1) {
@@ -1724,7 +1724,7 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeL
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.slider.BaseSlider$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.slider.BaseSlider$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         AnonymousClass2() {
         }
@@ -1760,7 +1760,7 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeL
         setValueForLabel(it.next(), this.values.get(this.focusedThumbIdx).floatValue());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public String formatValue(float f) {
         if (hasLabelFormatter()) {
             return this.formatter.getFormattedValue(f);
@@ -2011,7 +2011,7 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeL
         return f;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public float calculateStepIncrement(int i) {
         float fCalculateStepIncrement = calculateStepIncrement();
         float f = (this.valueTo - this.valueFrom) / fCalculateStepIncrement;
@@ -2135,18 +2135,18 @@ abstract class BaseSlider<S extends BaseSlider<S, L, T>, L extends BaseOnChangeL
             this(parcel);
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.slider.BaseSlider$SliderState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.slider.BaseSlider$SliderState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SliderState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SliderState createFromParcel(Parcel parcel) {
                 return new SliderState(parcel, null);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SliderState[] newArray(int i) {
                 return new SliderState[i];

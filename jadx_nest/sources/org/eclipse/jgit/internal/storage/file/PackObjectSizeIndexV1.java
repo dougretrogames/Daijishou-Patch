@@ -8,7 +8,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.CommitConfig$$ExternalSyntheticBackport0;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PackObjectSizeIndexV1 implements PackObjectSizeIndex {
     private static final byte BITS_24 = 24;
     private static final byte BITS_32 = 32;

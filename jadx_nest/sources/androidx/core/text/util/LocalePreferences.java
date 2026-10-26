@@ -12,7 +12,7 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class LocalePreferences {
     private static final String TAG = "LocalePreferences";
     private static final String[] WEATHER_FAHRENHEIT_COUNTRIES = {"BS", "BZ", "KY", "PR", "PW", "US"};
@@ -248,7 +248,7 @@ public final class LocalePreferences {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.text.util.LocalePreferences$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.text.util.LocalePreferences$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$android$icu$text$DateFormat$HourCycle;
 

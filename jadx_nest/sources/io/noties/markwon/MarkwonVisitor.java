@@ -3,7 +3,7 @@ package io.noties.markwon;
 import org.commonmark.node.Node;
 import org.commonmark.node.Visitor;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public interface MarkwonVisitor extends Visitor {
 
     public interface BlockHandler {

@@ -17,7 +17,7 @@ import org.apache.http.conn.ManagedClientConnection;
 import org.apache.http.conn.OperatedClientConnection;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public abstract class AbstractClientConnAdapter implements ManagedClientConnection, HttpContext {
     private final ClientConnectionManager connManager;

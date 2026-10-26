@@ -9,7 +9,7 @@ import com.google.api.client.util.Preconditions;
 import java.io.IOException;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ClientParametersAuthentication implements HttpRequestInitializer, HttpExecuteInterceptor {
     private final String clientId;
     private final String clientSecret;

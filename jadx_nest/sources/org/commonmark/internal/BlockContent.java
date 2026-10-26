@@ -1,6 +1,6 @@
 package org.commonmark.internal;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class BlockContent {
     private int lineCount;
     private final StringBuilder sb;

@@ -14,7 +14,7 @@ import android.util.StateSet;
 import androidx.core.graphics.ColorUtils;
 import com.google.android.material.color.MaterialColors;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class RippleUtils {
     static final String TRANSPARENT_DEFAULT_COLOR_WARNING = "Use a non-transparent color for the default color as it will be used to finish ripple animations.";
     public static final boolean USE_FRAMEWORK_RIPPLE = true;
@@ -89,7 +89,7 @@ public class RippleUtils {
         private RippleUtilsLollipop() {
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static Drawable createOvalRipple(Context context, int i) {
             GradientDrawable gradientDrawable = new GradientDrawable();
             gradientDrawable.setColor(-1);

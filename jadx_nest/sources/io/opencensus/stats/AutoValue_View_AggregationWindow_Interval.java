@@ -2,7 +2,7 @@ package io.opencensus.stats;
 
 import io.opencensus.common.Duration;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @Deprecated
 final class AutoValue_View_AggregationWindow_Interval extends View.AggregationWindow.Interval {
     private final Duration duration;

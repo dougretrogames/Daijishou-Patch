@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.util.Objects;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UnsynchronizedByteArrayInputStream extends InputStream {
     public static final int END_OF_STREAM = -1;
     private final byte[] data;

@@ -27,7 +27,7 @@ import org.eclipse.jgit.util.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LockFile {
     private FileSnapshot commitSnapshot;
     private boolean fsync;
@@ -116,7 +116,7 @@ public class LockFile {
         return this.haveLck;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public FileOutputStream getStream() throws IOException {
         return new FileOutputStream(this.lck, this.isAppend);
     }
@@ -265,7 +265,7 @@ public class LockFile {
         return new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.LockFile$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.LockFile$1, reason: invalid class name */
     class AnonymousClass1 extends OutputStream {
         private boolean closed;
         private OutputStream out;

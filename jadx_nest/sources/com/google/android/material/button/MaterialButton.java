@@ -40,7 +40,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialButton extends AppCompatButton implements Checkable, Shapeable {
     private static final int[] CHECKABLE_STATE_SET = {R.attr.state_checkable};
     private static final int[] CHECKED_STATE_SET = {R.attr.state_checked};
@@ -106,7 +106,7 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
         this(context, attributeSet, com.google.android.material.R.attr.materialButtonStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public MaterialButton(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -793,12 +793,12 @@ public class MaterialButton extends AppCompatButton implements Checkable, Shapea
             this.checked = parcel.readInt() == 1;
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.button.MaterialButton$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.button.MaterialButton$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);

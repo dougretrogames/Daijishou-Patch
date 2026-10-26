@@ -1,6 +1,6 @@
 package androidx.constraintlayout.core.dsl;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class HGuideline extends Guideline {
     public HGuideline(String str) {
         super(str);

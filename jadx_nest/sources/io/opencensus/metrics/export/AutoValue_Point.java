@@ -2,7 +2,7 @@ package io.opencensus.metrics.export;
 
 import io.opencensus.common.Timestamp;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Point extends Point {
     private final Timestamp timestamp;
     private final Value value;

@@ -5,7 +5,7 @@ import android.graphics.Path;
 import android.graphics.PointF;
 import android.graphics.RectF;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ShapeAppearancePathProvider {
     private final ShapePath[] cornerPaths = new ShapePath[4];
     private final Matrix[] cornerTransforms = new Matrix[4];

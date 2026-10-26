@@ -5,7 +5,7 @@ import android.os.Trace;
 import android.util.Log;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public final class TraceCompat {
     private static final String TAG = "TraceCompat";

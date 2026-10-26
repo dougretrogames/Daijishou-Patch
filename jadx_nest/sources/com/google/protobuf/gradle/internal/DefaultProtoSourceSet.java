@@ -14,8 +14,8 @@ import org.gradle.api.file.ConfigurableFileCollection;
 import org.gradle.api.file.SourceDirectorySet;
 import org.gradle.api.model.ObjectFactory;
 
-/* JADX INFO: compiled from: DefaultProtoSourceSet.groovy */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DefaultProtoSourceSet.groovy */
+/* INFO: loaded from: classes4.dex */
 public class DefaultProtoSourceSet implements ProtoSourceSet, GroovyObject {
     private static /* synthetic */ ClassInfo $staticClassInfo;
     private static /* synthetic */ ClassInfo $staticClassInfo$;
@@ -25,7 +25,7 @@ public class DefaultProtoSourceSet implements ProtoSourceSet, GroovyObject {
     private final String name;
     private final ConfigurableFileCollection output;
 
-    /* JADX INFO: renamed from: proto, reason: collision with root package name */
+    /* INFO: renamed from: proto, reason: collision with root package name */
     private final SourceDirectorySet f64proto;
 
     protected /* synthetic */ MetaClass $getStaticMetaClass() {

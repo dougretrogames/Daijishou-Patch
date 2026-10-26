@@ -14,7 +14,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.util.Hex;
 import org.eclipse.jgit.util.IO;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class PackReverseIndexV1 implements PackReverseIndex {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     static final int OID_VERSION_SHA1 = 1;

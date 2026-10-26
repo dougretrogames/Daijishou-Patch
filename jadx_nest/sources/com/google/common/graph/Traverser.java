@@ -13,7 +13,7 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock("Call forGraph or forTree, passing a lambda or a Graph with the desired edges (built with GraphBuilder)")
 @ElementTypesAreNonnullByDefault
 public abstract class Traverser<N> {
@@ -29,11 +29,11 @@ public abstract class Traverser<N> {
         this.successorFunction = (SuccessorsFunction) Preconditions.checkNotNull(successorFunction);
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.Traverser$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.Traverser$1, reason: invalid class name */
     class AnonymousClass1 extends Traverser<N> {
         final /* synthetic */ SuccessorsFunction val$graph;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(SuccessorsFunction successorFunction, final SuccessorsFunction val$graph) {
             super(successorFunction, null);
             this.val$graph = val$graph;
@@ -59,11 +59,11 @@ public abstract class Traverser<N> {
         return new AnonymousClass2(tree, tree);
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.Traverser$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.Traverser$2, reason: invalid class name */
     class AnonymousClass2 extends Traverser<N> {
         final /* synthetic */ SuccessorsFunction val$tree;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(SuccessorsFunction successorFunction, final SuccessorsFunction val$tree) {
             super(successorFunction, null);
             this.val$tree = val$tree;
@@ -79,7 +79,7 @@ public abstract class Traverser<N> {
         return breadthFirst((Iterable) ImmutableSet.of(startNode));
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.Traverser$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.Traverser$3, reason: invalid class name */
     class AnonymousClass3 implements Iterable<N> {
         final /* synthetic */ ImmutableSet val$validated;
 
@@ -101,7 +101,7 @@ public abstract class Traverser<N> {
         return depthFirstPreOrder((Iterable) ImmutableSet.of(startNode));
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.Traverser$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.Traverser$4, reason: invalid class name */
     class AnonymousClass4 implements Iterable<N> {
         final /* synthetic */ ImmutableSet val$validated;
 
@@ -123,7 +123,7 @@ public abstract class Traverser<N> {
         return depthFirstPostOrder((Iterable) ImmutableSet.of(startNode));
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.Traverser$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.Traverser$5, reason: invalid class name */
     class AnonymousClass5 implements Iterable<N> {
         final /* synthetic */ ImmutableSet val$validated;
 
@@ -160,11 +160,11 @@ public abstract class Traverser<N> {
             this.successorFunction = successorFunction;
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.Traverser$Traversal$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.graph.Traverser$Traversal$1, reason: invalid class name */
         class AnonymousClass1 extends Traversal<N> {
             final /* synthetic */ Set val$visited;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(SuccessorsFunction successorFunction, final Set val$visited) {
                 super(successorFunction);
                 this.val$visited = val$visited;
@@ -190,7 +190,7 @@ public abstract class Traverser<N> {
             return new AnonymousClass1(graph, new HashSet());
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.Traverser$Traversal$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.graph.Traverser$Traversal$2, reason: invalid class name */
         class AnonymousClass2 extends Traversal<N> {
             AnonymousClass2(SuccessorsFunction successorFunction) {
                 super(successorFunction);
@@ -226,7 +226,7 @@ public abstract class Traverser<N> {
             return new AnonymousClass3(arrayDeque, order);
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.Traverser$Traversal$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.graph.Traverser$Traversal$3, reason: invalid class name */
         class AnonymousClass3 extends AbstractIterator<N> {
             final /* synthetic */ Deque val$horizon;
             final /* synthetic */ InsertionOrder val$order;
@@ -236,15 +236,15 @@ public abstract class Traverser<N> {
                 this.val$order = val$order;
             }
 
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+            /* WARN: Type inference fix 'apply assigned field type' failed
+            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+            	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+            	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+            	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
              */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
@@ -270,7 +270,7 @@ public abstract class Traverser<N> {
             return new AnonymousClass4(arrayDeque2, arrayDeque);
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.Traverser$Traversal$4, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.graph.Traverser$Traversal$4, reason: invalid class name */
         class AnonymousClass4 extends AbstractIterator<N> {
             final /* synthetic */ Deque val$ancestorStack;
             final /* synthetic */ Deque val$horizon;
@@ -280,15 +280,15 @@ public abstract class Traverser<N> {
                 this.val$ancestorStack = val$ancestorStack;
             }
 
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+            /* WARN: Type inference fix 'apply assigned field type' failed
+            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+            	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+            	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+            	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
              */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
@@ -313,8 +313,8 @@ public abstract class Traverser<N> {
         }
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     private static abstract class InsertionOrder {
         public static final InsertionOrder FRONT = new AnonymousClass1("FRONT", 0);
         public static final InsertionOrder BACK = new AnonymousClass2("BACK", 1);
@@ -322,7 +322,7 @@ public abstract class Traverser<N> {
 
         abstract <T> void insertInto(Deque<T> deque, T value);
 
-        /* JADX INFO: renamed from: com.google.common.graph.Traverser$InsertionOrder$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.graph.Traverser$InsertionOrder$1, reason: invalid class name */
         final enum AnonymousClass1 extends InsertionOrder {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -354,7 +354,7 @@ public abstract class Traverser<N> {
             return (InsertionOrder[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.Traverser$InsertionOrder$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.graph.Traverser$InsertionOrder$2, reason: invalid class name */
         final enum AnonymousClass2 extends InsertionOrder {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);

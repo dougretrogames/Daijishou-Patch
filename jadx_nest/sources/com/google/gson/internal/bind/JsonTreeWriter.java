@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class JsonTreeWriter extends JsonWriter {
     private String pendingName;
     private JsonElement product;
@@ -24,7 +24,7 @@ public final class JsonTreeWriter extends JsonWriter {
     public void flush() throws IOException {
     }
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.JsonTreeWriter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.JsonTreeWriter$1, reason: invalid class name */
     class AnonymousClass1 extends Writer {
         AnonymousClass1() {
         }

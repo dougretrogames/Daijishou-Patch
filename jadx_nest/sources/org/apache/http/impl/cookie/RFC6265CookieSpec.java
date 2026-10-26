@@ -25,7 +25,7 @@ import org.apache.http.message.TokenParser;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RFC6265CookieSpec implements CookieSpec {
     private static final char COMMA_CHAR = ',';
     private static final char DQUOTE_CHAR = '\"';
@@ -74,7 +74,7 @@ public class RFC6265CookieSpec implements CookieSpec {
         return cookieOrigin.getHost();
     }
 
-    /* JADX WARN: Code duplicated, block: B:33:0x00fc  */
+    /* WARN: Code duplicated, block: B:33:0x00fc  */
     @Override // org.apache.http.cookie.CookieSpec
     public final List<Cookie> parse(Header header, CookieOrigin cookieOrigin) throws MalformedCookieException {
         CharArrayBuffer charArrayBuffer;

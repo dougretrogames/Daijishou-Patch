@@ -1,6 +1,6 @@
 package com.google.api.client.googleapis.notifications;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TypedNotification<T> extends AbstractNotification {
     private T content;
 

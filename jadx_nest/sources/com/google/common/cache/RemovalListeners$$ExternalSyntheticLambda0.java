@@ -1,7 +1,7 @@
 package com.google.common.cache;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class RemovalListeners$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ RemovalListener f$0;
     public final /* synthetic */ RemovalNotification f$1;

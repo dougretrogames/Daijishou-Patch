@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Objects;
 import org.apache.commons.collections4.iterators.SingletonIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FluentIterable<E> implements Iterable<E> {
     private final Iterable<E> iterable;
 

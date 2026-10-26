@@ -2,7 +2,7 @@ package org.eclipse.jgit.transport.resolver;
 
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ServiceNotAuthorizedException extends Exception {
     private static final long serialVersionUID = 1;
 

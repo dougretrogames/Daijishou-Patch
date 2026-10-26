@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.util.Comparator;
 import java.util.SortedSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class SortedIterables {
     private SortedIterables() {

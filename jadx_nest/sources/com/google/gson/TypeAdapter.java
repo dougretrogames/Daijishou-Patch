@@ -11,7 +11,7 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import java.io.Writer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class TypeAdapter<T> {
     public abstract T read(JsonReader jsonReader) throws IOException;
 
@@ -21,7 +21,7 @@ public abstract class TypeAdapter<T> {
         write(new JsonWriter(writer), t);
     }
 
-    /* JADX INFO: renamed from: com.google.gson.TypeAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.TypeAdapter$1, reason: invalid class name */
     class AnonymousClass1 extends TypeAdapter<T> {
         AnonymousClass1() {
         }

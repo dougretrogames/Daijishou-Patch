@@ -1,7 +1,7 @@
 package androidx.window.layout;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SidecarWindowBackend$WindowLayoutChangeCallbackWrapper$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ SidecarWindowBackend.WindowLayoutChangeCallbackWrapper f$0;
     public final /* synthetic */ WindowLayoutInfo f$1;

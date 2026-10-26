@@ -7,7 +7,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectInserter;
 import org.eclipse.jgit.lib.ObjectReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class NoteBucket {
     abstract int estimateSize(AnyObjectId anyObjectId, ObjectReader objectReader) throws IOException;
 

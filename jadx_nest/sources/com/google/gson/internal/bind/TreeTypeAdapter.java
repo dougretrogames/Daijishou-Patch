@@ -17,7 +17,7 @@ import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.lang.reflect.Type;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class TreeTypeAdapter<T> extends SerializationDelegatingTypeAdapter<T> {
     private final TreeTypeAdapter<T>.GsonContextImpl context;
     private volatile TypeAdapter<T> delegate;

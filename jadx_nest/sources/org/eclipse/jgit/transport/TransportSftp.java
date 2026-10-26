@@ -30,11 +30,11 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.lib.SymbolicRef;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransportSftp extends SshTransport implements WalkTransport {
     static final TransportProtocol PROTO_SFTP = new AnonymousClass1();
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.TransportSftp$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.TransportSftp$1, reason: invalid class name */
     class AnonymousClass1 extends TransportProtocol {
         @Override // org.eclipse.jgit.transport.TransportProtocol
         public int getDefaultPort() {
@@ -205,7 +205,7 @@ public class TransportSftp extends SshTransport implements WalkTransport {
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:16:0x0019 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:16:0x0019 A[EXC_TOP_SPLITTER, SYNTHETIC] */
         @Override // org.eclipse.jgit.transport.WalkRemoteObjectDatabase
         OutputStream writeFile(String str, ProgressMonitor progressMonitor, String str2) throws IOException {
             IOException e;
@@ -256,7 +256,7 @@ public class TransportSftp extends SshTransport implements WalkTransport {
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:20:0x0026 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:20:0x0026 A[EXC_TOP_SPLITTER, SYNTHETIC] */
         private void mkdir_p(String str) throws IOException {
             IOException e;
             int iLastIndexOf = str.lastIndexOf(47);

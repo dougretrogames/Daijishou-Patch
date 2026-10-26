@@ -3,8 +3,8 @@ package com.google.android.material.search;
 import android.animation.ValueAnimator;
 import android.graphics.Rect;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SearchViewAnimationHelper$$ExternalSyntheticLambda0 implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ SearchViewAnimationHelper f$0;
     public final /* synthetic */ float f$1;

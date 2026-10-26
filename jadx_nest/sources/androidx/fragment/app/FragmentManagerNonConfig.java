@@ -4,7 +4,7 @@ import androidx.lifecycle.ViewModelStore;
 import java.util.Collection;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public class FragmentManagerNonConfig {
     private final Map<String, FragmentManagerNonConfig> mChildNonConfigs;

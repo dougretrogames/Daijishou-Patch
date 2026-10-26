@@ -5,19 +5,19 @@ import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: BackupAndRestoreSettingsNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "Lcom/magneticchen/daijishou/google_drive/GoogleDrive;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class BackupAndRestoreSettingsNavFragment$googleDrive$2 extends Lambda<GoogleDrive> implements Function0<GoogleDrive> {
     final /* synthetic */ BackupAndRestoreSettingsNavFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     BackupAndRestoreSettingsNavFragment$googleDrive$2(BackupAndRestoreSettingsNavFragment backupAndRestoreSettingsNavFragment) {
         super(0);
         this.this$0 = backupAndRestoreSettingsNavFragment;
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // kotlin.jvm.functions.Function0
     public final GoogleDrive invoke() {
         return this.this$0.getApplication().getGoogleDrive();

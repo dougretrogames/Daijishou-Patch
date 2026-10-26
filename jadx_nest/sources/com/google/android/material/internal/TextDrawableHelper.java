@@ -7,7 +7,7 @@ import com.google.android.material.resources.TextAppearance;
 import com.google.android.material.resources.TextAppearanceFontCallback;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TextDrawableHelper {
     private TextAppearance textAppearance;
     private float textHeight;
@@ -25,7 +25,7 @@ public class TextDrawableHelper {
         void onTextSizeChange();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.TextDrawableHelper$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.TextDrawableHelper$1, reason: invalid class name */
     class AnonymousClass1 extends TextAppearanceFontCallback {
         AnonymousClass1() {
         }

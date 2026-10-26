@@ -6,7 +6,7 @@ import androidx.constraintlayout.core.widgets.Flow;
 import androidx.constraintlayout.core.widgets.HelperWidget;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FlowReference extends HelperReference {
     protected float mFirstHorizontalBias;
     protected int mFirstHorizontalStyle;

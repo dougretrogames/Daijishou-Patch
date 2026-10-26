@@ -21,7 +21,7 @@ import java.lang.ref.WeakReference;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialContainerTransformSharedElementCallback extends SharedElementCallback {
     private static WeakReference<View> capturedSharedElement;
     private Rect returnEndBounds;
@@ -35,7 +35,7 @@ public class MaterialContainerTransformSharedElementCallback extends SharedEleme
     }
 
     public static class ShapeableViewShapeProvider implements ShapeProvider {
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback.ShapeProvider
         public ShapeAppearanceModel provideShape(View view) {
             if (view instanceof Shapeable) {
@@ -140,7 +140,7 @@ public class MaterialContainerTransformSharedElementCallback extends SharedEleme
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback$1, reason: invalid class name */
     class AnonymousClass1 extends TransitionListenerAdapter {
         final /* synthetic */ Window val$window;
 
@@ -172,7 +172,7 @@ public class MaterialContainerTransformSharedElementCallback extends SharedEleme
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback$2, reason: invalid class name */
     class AnonymousClass2 extends TransitionListenerAdapter {
         final /* synthetic */ Activity val$activity;
 
@@ -192,7 +192,7 @@ public class MaterialContainerTransformSharedElementCallback extends SharedEleme
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.platform.MaterialContainerTransformSharedElementCallback$3, reason: invalid class name */
     class AnonymousClass3 extends TransitionListenerAdapter {
         final /* synthetic */ Window val$window;
 
@@ -206,7 +206,7 @@ public class MaterialContainerTransformSharedElementCallback extends SharedEleme
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void removeWindowBackground(Window window) {
         Drawable windowBackground = getWindowBackground(window);
         if (windowBackground == null) {
@@ -215,7 +215,7 @@ public class MaterialContainerTransformSharedElementCallback extends SharedEleme
         windowBackground.mutate().setColorFilter(BlendModeColorFilterCompat.createBlendModeColorFilterCompat(0, BlendModeCompat.CLEAR));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void restoreWindowBackground(Window window) {
         Drawable windowBackground = getWindowBackground(window);
         if (windowBackground == null) {

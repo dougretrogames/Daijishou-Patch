@@ -2,7 +2,7 @@ package org.jsoup.parser;
 
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Tag implements Cloneable {
     public static int Block = 4;
     public static int Data = 256;
@@ -179,7 +179,7 @@ public class Tag implements Cloneable {
         return this.tagName;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public Tag clone() {
         try {
             return (Tag) super.clone();

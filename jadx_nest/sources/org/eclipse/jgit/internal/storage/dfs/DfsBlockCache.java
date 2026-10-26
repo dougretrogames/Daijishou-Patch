@@ -6,7 +6,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.stream.LongStream;
 import org.eclipse.jgit.internal.storage.pack.PackExt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class DfsBlockCache {
     private static volatile DfsBlockCache cache;
     private final int blockSize;

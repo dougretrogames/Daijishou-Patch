@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class MapField<K, V> extends MapFieldReflectionAccessor implements MutabilityOracle {
     private final Converter<K, V> converter;
     private volatile boolean isMutable;
@@ -43,7 +43,7 @@ public class MapField<K, V> extends MapFieldReflectionAccessor implements Mutabi
             return this.defaultEntry.newBuilderForType().setKey(key).setValue(value).buildPartial();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.protobuf.MapField.Converter
         public void convertMessageToKeyAndValue(Message message, Map<K, V> map) {
             MapEntry mapEntry = (MapEntry) message;

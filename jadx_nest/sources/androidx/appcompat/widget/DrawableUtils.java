@@ -11,7 +11,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DrawableUtils {
     private static final int[] CHECKED_STATE_SET = {R.attr.state_checked};
     private static final int[] EMPTY_STATE_SET = new int[0];
@@ -81,8 +81,8 @@ public class DrawableUtils {
         private static final Field sRight;
         private static final Field sTop;
 
-        /* JADX WARN: Code duplicated, block: B:25:0x004b  */
-        /* JADX WARN: Code duplicated, block: B:26:0x0058  */
+        /* WARN: Code duplicated, block: B:25:0x004b  */
+        /* WARN: Code duplicated, block: B:26:0x0058  */
         static {
             Method method;
             Field field;

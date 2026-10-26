@@ -5,8 +5,8 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 
-/* JADX INFO: compiled from: Errors.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: Errors.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "kotlinx.coroutines.flow.FlowKt__ErrorsKt$catchImpl$2", f = "Errors.kt", i = {0}, l = {154}, m = "emit", n = {"this"}, s = {"L$0"})
 final class FlowKt__ErrorsKt$catchImpl$2$emit$1 extends ContinuationImpl {
@@ -15,14 +15,14 @@ final class FlowKt__ErrorsKt$catchImpl$2$emit$1 extends ContinuationImpl {
     /* synthetic */ Object result;
     final /* synthetic */ FlowKt__ErrorsKt.AnonymousClass2<T> this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     FlowKt__ErrorsKt$catchImpl$2$emit$1(FlowKt__ErrorsKt.AnonymousClass2<? super T> anonymousClass2, Continuation<? super FlowKt__ErrorsKt$catchImpl$2$emit$1> continuation) {
         super(continuation);
         this.this$0 = anonymousClass2;
     }
 
-    /* JADX WARN: Type inference incomplete: some casts might be missing */
+    /* WARN: Type inference incomplete: some casts might be missing */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final Object invokeSuspend(Object obj) {
         this.result = obj;

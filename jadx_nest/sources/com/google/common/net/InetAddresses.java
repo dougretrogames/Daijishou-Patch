@@ -19,7 +19,7 @@ import javax.annotation.CheckForNull;
 import kotlin.UShort;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class InetAddresses {
     private static final char IPV4_DELIMITER = '.';

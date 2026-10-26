@@ -11,9 +11,9 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: Add missing generic type declarations: [R] */
-/* JADX INFO: compiled from: SessionMutex.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: Add missing generic type declarations: [R] */
+/* INFO: compiled from: SessionMutex.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\b\n\u0002\b\u0003\n\u0002\u0018\u0002\u0010\u0000\u001a\u0002H\u0001\"\u0004\b\u0000\u0010\u0001\"\u0004\b\u0001\u0010\u0002*\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "R", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
 @DebugMetadata(c = "androidx.compose.ui.SessionMutex$withSessionCancellingPrevious$2", f = "SessionMutex.kt", i = {0, 1}, l = {66, 68}, m = "invokeSuspend", n = {"newSession", "newSession"}, s = {"L$0", "L$0"})
 final class SessionMutex$withSessionCancellingPrevious$2<R> extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super R>, Object> {
@@ -23,8 +23,8 @@ final class SessionMutex$withSessionCancellingPrevious$2<R> extends SuspendLambd
     private /* synthetic */ Object L$0;
     int label;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     SessionMutex$withSessionCancellingPrevious$2(Function1<? super CoroutineScope, ? extends T> function1, AtomicReference<SessionMutex.Session<T>> atomicReference, Function2<? super T, ? super Continuation<? super R>, ? extends Object> function2, Continuation<? super SessionMutex$withSessionCancellingPrevious$2> continuation) {
         super(2, continuation);
         this.$sessionInitializer = function1;
@@ -44,14 +44,14 @@ final class SessionMutex$withSessionCancellingPrevious$2<R> extends SuspendLambd
         return ((SessionMutex$withSessionCancellingPrevious$2) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
     }
 
-    /* JADX WARN: Type inference incomplete: some casts might be missing */
-    /*  JADX ERROR: JadxRuntimeException in pass: ModVisitor
-        jadx.core.utils.exceptions.JadxRuntimeException: Can't change immutable type java.lang.Object to androidx.compose.ui.SessionMutex$withSessionCancellingPrevious$2<R> for r7v1 'this'  java.lang.Object
-        	at jadx.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
-        	at jadx.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
-        	at jadx.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
-        	at jadx.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
-        	at jadx.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
+    /* WARN: Type inference incomplete: some casts might be missing */
+    /* ERROR: decompilerRuntimeException in pass: ModVisitor
+        decompiler.core.utils.exceptions.decompilerRuntimeException: Can't change immutable type java.lang.Object to androidx.compose.ui.SessionMutex$withSessionCancellingPrevious$2<R> for r7v1 'this'  java.lang.Object
+        	at decompiler.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
+        	at decompiler.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
+        	at decompiler.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
+        	at decompiler.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
+        	at decompiler.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
         */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final java.lang.Object invokeSuspend(java.lang.Object r8) {

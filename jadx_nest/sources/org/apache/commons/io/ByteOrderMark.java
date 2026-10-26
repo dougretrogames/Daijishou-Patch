@@ -7,7 +7,7 @@ import java.util.Objects;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ByteOrderMark implements Serializable {
     public static final char UTF_BOM = 65279;
     private static final long serialVersionUID = 1;

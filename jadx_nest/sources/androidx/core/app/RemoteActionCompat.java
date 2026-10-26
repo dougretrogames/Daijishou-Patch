@@ -8,7 +8,7 @@ import androidx.core.graphics.drawable.IconCompat;
 import androidx.core.util.Preconditions;
 import androidx.versionedparcelable.VersionedParcelable;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class RemoteActionCompat implements VersionedParcelable {
     public PendingIntent mActionIntent;
     public CharSequence mContentDescription;

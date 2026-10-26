@@ -18,7 +18,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ConstraintHelper extends View {
     protected static final String CHILD_TAG = "CONSTRAINT_LAYOUT_HELPER_CHILD";
     protected int mCount;

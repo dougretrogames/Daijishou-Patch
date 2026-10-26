@@ -10,7 +10,7 @@ import io.opencensus.trace.Span;
 import javax.annotation.Nullable;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 abstract class AbstractHttpHandler<Q, P> {
     final HttpExtractor<Q, P> extractor;
 

@@ -1,6 +1,6 @@
 package com.google.api.client.auth.oauth;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class OAuthGetTemporaryToken extends AbstractOAuthGetToken {
     public String callback;
 

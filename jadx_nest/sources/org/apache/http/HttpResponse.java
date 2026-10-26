@@ -2,7 +2,7 @@ package org.apache.http;
 
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface HttpResponse extends HttpMessage {
     HttpEntity getEntity();
 

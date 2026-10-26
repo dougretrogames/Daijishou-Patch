@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.IOCase;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RegexFileFilter extends AbstractFileFilter implements Serializable {
     private static final long serialVersionUID = 4269646126155225062L;
     private final transient Function<Path, String> pathToString;

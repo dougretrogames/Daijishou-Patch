@@ -8,7 +8,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FlexBuffersBuilder {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     public static final int BUILDER_FLAG_NONE = 0;
@@ -29,7 +29,7 @@ public class FlexBuffersBuilder {
     private final ArrayList<Value> stack;
     private final HashMap<String, Integer> stringPool;
 
-    /* JADX INFO: renamed from: androidx.emoji2.text.flatbuffer.FlexBuffersBuilder$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.emoji2.text.flatbuffer.FlexBuffersBuilder$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<Value> {
         AnonymousClass1() {
         }
@@ -430,7 +430,7 @@ public class FlexBuffersBuilder {
             return (byte) (i | (i2 << 2));
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static int paddingBytes(int i, int i2) {
             return ((~i) + 1) & (i2 - 1);
         }
@@ -499,12 +499,12 @@ public class FlexBuffersBuilder {
             return new Value(i, 3, 3, d);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public byte storedPackedType() {
             return storedPackedType(0);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public byte storedPackedType(int i) {
             return packedType(storedWidth(i), this.type);
         }
@@ -516,12 +516,12 @@ public class FlexBuffersBuilder {
             return this.minBitWidth;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public int elemWidth(int i, int i2) {
             return elemWidth(this.type, this.minBitWidth, this.iValue, i, i2);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static int elemWidth(int i, int i2, long j, int i3, int i4) {
             if (FlexBuffers.isTypeInline(i)) {
                 return i2;

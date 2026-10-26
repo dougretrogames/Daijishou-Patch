@@ -1,6 +1,6 @@
 package com.google.api.client.http;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class HttpMethods {
     public static final String CONNECT = "CONNECT";
     public static final String DELETE = "DELETE";

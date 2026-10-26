@@ -2,7 +2,7 @@ package androidx.leanback.widget;
 
 import android.util.SparseArray;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class SparseArrayObjectAdapter extends ObjectAdapter {
     private SparseArray<Object> mItems;
 

@@ -5,7 +5,7 @@ import java.io.OutputStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class LoggingStreamingContent implements StreamingContent {
     private final StreamingContent content;
     private final int contentLoggingLimit;

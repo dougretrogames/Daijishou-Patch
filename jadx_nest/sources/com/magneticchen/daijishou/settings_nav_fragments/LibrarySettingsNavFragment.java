@@ -37,8 +37,8 @@ import kotlin.jvm.internal.Reflection;
 import kotlinx.serialization.json.Json;
 import org.apache.commons.io.IOUtils;
 
-/* JADX INFO: compiled from: LibrarySettingsNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: LibrarySettingsNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0012\u0010\u0013\u001a\u00020\u00142\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016H\u0016J\u001c\u0010\u0017\u001a\u00020\u00142\b\u0010\u0015\u001a\u0004\u0018\u00010\u00162\b\u0010\u0018\u001a\u0004\u0018\u00010\u0004H\u0016J\b\u0010\u0019\u001a\u00020\u0014H\u0016J\u001a\u0010\u001a\u001a\u00020\u00142\u0006\u0010\u001b\u001a\u00020\u001c2\b\u0010\u0015\u001a\u0004\u0018\u00010\u0016H\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u001c\u0010\n\u001a\u0010\u0012\f\u0012\n \f*\u0004\u0018\u00010\u00040\u00040\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\r\u001a\u0010\u0012\f\u0012\n \f*\u0004\u0018\u00010\u00040\u00040\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0010\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u001c\u0010\u0011\u001a\u0010\u0012\f\u0012\n \f*\u0004\u0018\u00010\u00040\u00040\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000¨\u0006\u001d²\u0006\n\u0010\u001e\u001a\u00020\u001fX\u008a\u0084\u0002²\u0006\n\u0010 \u001a\u00020!X\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/settings_nav_fragments/LibrarySettingsNavFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouPreferenceFragmentCompat;", "()V", "areYouSureString", "", "canceledString", "clearAllDisjointedPlayableItemsWarningString", "clearedItemsFormatString", "clearedString", "disabledString", "importFavoritedItemsActivity", "Landroidx/activity/result/ActivityResultLauncher;", "kotlin.jvm.PlatformType", "importPlatformActivity", "notImportedString", "removeAllNewlyAddedPlayableItemsWarningString", "removeAllPlayableItemsPreviewMediaWarningString", "selectPegasusConfigActivity", "titleString", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreatePreferences", "rootKey", "onStart", "onViewCreated", "view", "Landroid/view/View;", "app_release", "settingsModel", "Lcom/magneticchen/daijishou/view_models/SettingsViewModel;", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmentCompat {
     private String areYouSureString;
@@ -67,7 +67,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         this.importFavoritedItemsActivity = activityResultLauncherRegisterForActivityResult3;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void selectPegasusConfigActivity$lambda$0(LibrarySettingsNavFragment this$0, Uri uri) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Context context = this$0.getContext();
@@ -89,7 +89,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void importPlatformActivity$lambda$1(LibrarySettingsNavFragment this$0, Uri uri) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Context context = this$0.getContext();
@@ -117,7 +117,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void importFavoritedItemsActivity$lambda$2(LibrarySettingsNavFragment this$0, Uri uri) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Context context = this$0.getContext();
@@ -218,7 +218,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         preferenceFindPreference13.setOnPreferenceClickListener(new LibrarySettingsNavFragment$$ExternalSyntheticLambda10(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$3(LibrarySettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -226,7 +226,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$4(LibrarySettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -237,7 +237,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$5(LibrarySettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -245,7 +245,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$6(LibrarySettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -260,7 +260,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$7(LibrarySettingsNavFragment this$0, Preference it) {
         String str;
         String str2;
@@ -285,7 +285,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$8(LibrarySettingsNavFragment this$0, Preference it) {
         String str;
         String str2;
@@ -310,7 +310,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$9(LibrarySettingsNavFragment this$0, Preference it) {
         String str;
         String str2;
@@ -335,7 +335,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$10(LibrarySettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -343,7 +343,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$11(LibrarySettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -351,7 +351,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$12(LibrarySettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -359,7 +359,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$13(LibrarySettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -371,7 +371,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$14(LibrarySettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -383,7 +383,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onCreate$lambda$15(LibrarySettingsNavFragment this$0, Preference it) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(it, "it");
@@ -400,7 +400,7 @@ public final class LibrarySettingsNavFragment extends DaijishouPreferenceFragmen
         getListView().addOnLayoutChangeListener(new LibrarySettingsNavFragment$$ExternalSyntheticLambda4(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onViewCreated$lambda$16(LibrarySettingsNavFragment this$0, View view, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (!this$0.getListView().isFocused()) {

@@ -7,7 +7,7 @@ import java.text.MessageFormat;
 import org.eclipse.jgit.errors.PackInvalidException;
 import org.eclipse.jgit.internal.storage.pack.PackExt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class BlockBasedFile {
     volatile int blockSize;
     final DfsBlockCache cache;
@@ -65,9 +65,9 @@ abstract class BlockBasedFile {
         return iBlockSize;
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x002b A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:22:0x002d  */
-    /* JADX WARN: Code duplicated, block: B:31:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:21:0x002b A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:22:0x002d  */
+    /* WARN: Code duplicated, block: B:31:? A[RETURN, SYNTHETIC] */
     DfsBlock getOrLoadBlock(long j, DfsReader dfsReader) throws Throwable {
         Throwable th;
         Throwable th2 = null;

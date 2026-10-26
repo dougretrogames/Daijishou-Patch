@@ -2,7 +2,7 @@ package org.eclipse.jgit.revwalk;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LIFORevQueue extends BlockRevQueue {
     private BlockRevQueue.Block head;
 

@@ -3,7 +3,7 @@ package io.noties.markwon.image.destination;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class ImageDestinationProcessorRelativeToAbsolute extends ImageDestinationProcessor {
     private final URL base;
 

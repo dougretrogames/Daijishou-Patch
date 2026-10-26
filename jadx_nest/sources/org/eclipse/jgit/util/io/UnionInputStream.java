@@ -6,12 +6,12 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UnionInputStream extends InputStream {
     private static final InputStream EOF = new AnonymousClass1();
     private final Deque<InputStream> streams = new ArrayDeque();
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.util.io.UnionInputStream$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.util.io.UnionInputStream$1, reason: invalid class name */
     class AnonymousClass1 extends InputStream {
         @Override // java.io.InputStream
         public int read() throws IOException {

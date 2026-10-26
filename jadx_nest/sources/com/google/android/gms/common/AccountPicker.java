@@ -8,11 +8,11 @@ import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class AccountPicker {
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
     public static class AccountChooserOptions {
         private Account zza;
         private boolean zzb;
@@ -30,7 +30,7 @@ public final class AccountPicker {
         private boolean zzn;
         private boolean zzo;
 
-        /* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+        /* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
         public static class Builder {
             private Account zza;
             private ArrayList zzb;

@@ -7,7 +7,7 @@ import org.apache.http.cookie.Cookie;
 import org.apache.http.cookie.CookieOrigin;
 import org.apache.http.cookie.MalformedCookieException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IgnoreSpec extends CookieSpecBase {
     @Override // org.apache.http.cookie.CookieSpec
     public int getVersion() {

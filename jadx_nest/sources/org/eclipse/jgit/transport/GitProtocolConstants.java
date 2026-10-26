@@ -1,6 +1,6 @@
 package org.eclipse.jgit.transport;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class GitProtocolConstants {
     public static final String CAPABILITY_ATOMIC = "atomic";
     public static final String CAPABILITY_DELETE_REFS = "delete-refs";
@@ -68,7 +68,7 @@ public final class GitProtocolConstants {
         CONTINUE,
         DETAILED;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static MultiAck[] valuesCustom() {
             MultiAck[] multiAckArrValuesCustom = values();
             int length = multiAckArrValuesCustom.length;

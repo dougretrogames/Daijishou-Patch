@@ -9,7 +9,7 @@ import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ByteArrayLoader<Data> implements ModelLoader<byte[], Data> {
     private final Converter<Data> converter;
 
@@ -71,7 +71,7 @@ public class ByteArrayLoader<Data> implements ModelLoader<byte[], Data> {
         public void teardown() {
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.model.ByteArrayLoader$ByteBufferFactory$1, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.load.model.ByteArrayLoader$ByteBufferFactory$1, reason: invalid class name */
         class AnonymousClass1 implements Converter<ByteBuffer> {
             AnonymousClass1() {
             }
@@ -98,12 +98,12 @@ public class ByteArrayLoader<Data> implements ModelLoader<byte[], Data> {
         public void teardown() {
         }
 
-        /* JADX INFO: renamed from: com.bumptech.glide.load.model.ByteArrayLoader$StreamFactory$1, reason: invalid class name */
+        /* INFO: renamed from: com.bumptech.glide.load.model.ByteArrayLoader$StreamFactory$1, reason: invalid class name */
         class AnonymousClass1 implements Converter<InputStream> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // com.bumptech.glide.load.model.ByteArrayLoader.Converter
             public InputStream convert(byte[] bArr) {
                 return new ByteArrayInputStream(bArr);

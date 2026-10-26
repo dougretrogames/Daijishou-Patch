@@ -7,7 +7,7 @@ import android.util.Log;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class RatingCompat implements Parcelable {
     public static final Parcelable.Creator<RatingCompat> CREATOR = new AnonymousClass1();
     public static final int RATING_3_STARS = 3;
@@ -53,18 +53,18 @@ public final class RatingCompat implements Parcelable {
         parcel.writeFloat(this.mRatingValue);
     }
 
-    /* JADX INFO: renamed from: android.support.v4.media.RatingCompat$1, reason: invalid class name */
+    /* INFO: renamed from: android.support.v4.media.RatingCompat$1, reason: invalid class name */
     static class AnonymousClass1 implements Parcelable.Creator<RatingCompat> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public RatingCompat createFromParcel(Parcel parcel) {
             return new RatingCompat(parcel.readInt(), parcel.readFloat());
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public RatingCompat[] newArray(int i) {
             return new RatingCompat[i];

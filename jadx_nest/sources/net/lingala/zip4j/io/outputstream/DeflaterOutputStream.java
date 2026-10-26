@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.zip.Deflater;
 import net.lingala.zip4j.model.enums.CompressionLevel;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class DeflaterOutputStream extends CompressedOutputStream {
     private byte[] buff;
     protected Deflater deflater;

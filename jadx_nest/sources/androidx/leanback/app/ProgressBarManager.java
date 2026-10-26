@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ProgressBarManager {
     private static final long DEFAULT_PROGRESS_BAR_DELAY = 1000;
     boolean mIsShowing;
@@ -19,7 +19,7 @@ public final class ProgressBarManager {
     boolean mEnableProgressBar = true;
     private Runnable runnable = new AnonymousClass1();
 
-    /* JADX INFO: renamed from: androidx.leanback.app.ProgressBarManager$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.ProgressBarManager$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }

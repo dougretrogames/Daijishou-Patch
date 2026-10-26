@@ -2,7 +2,7 @@ package com.google.auth.oauth2;
 
 import java.io.Serializable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ExternalAccountMetricsHandler implements Serializable {
     private static final String BYOID_METRICS_SECTION = "google-byoid-sdk";
     private static final String CONFIG_LIFETIME_KEY = "config-lifetime";

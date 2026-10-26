@@ -1,6 +1,6 @@
 package net.lingala.zip4j.util;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BitUtils {
     public static boolean isBitSet(byte b, int i) {
         return ((1 << i) & ((long) b)) != 0;

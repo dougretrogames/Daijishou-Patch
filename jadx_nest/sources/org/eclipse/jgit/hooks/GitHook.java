@@ -11,7 +11,7 @@ import org.eclipse.jgit.util.ProcessResult;
 import org.eclipse.jgit.util.SystemReader;
 import org.eclipse.jgit.util.io.TeeOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class GitHook<T> implements Callable<T> {
     private final OutputStream errorStream;
     private final OutputStream outputStream;

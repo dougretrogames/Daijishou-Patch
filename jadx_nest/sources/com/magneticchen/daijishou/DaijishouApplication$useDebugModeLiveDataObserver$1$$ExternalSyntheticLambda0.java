@@ -1,7 +1,7 @@
 package com.magneticchen.daijishou;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class DaijishouApplication$useDebugModeLiveDataObserver$1$$ExternalSyntheticLambda0 implements Thread.UncaughtExceptionHandler {
     public final /* synthetic */ DaijishouApplication f$0;
 

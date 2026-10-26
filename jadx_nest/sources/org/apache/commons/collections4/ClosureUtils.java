@@ -14,7 +14,7 @@ import org.apache.commons.collections4.functors.SwitchClosure;
 import org.apache.commons.collections4.functors.TransformerClosure;
 import org.apache.commons.collections4.functors.WhileClosure;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ClosureUtils {
     public static <E> Closure<E> asClosure(Transformer<? super E, ?> transformer) {
         return TransformerClosure.transformerClosure(transformer);

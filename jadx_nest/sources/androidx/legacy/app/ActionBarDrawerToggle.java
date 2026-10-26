@@ -20,7 +20,7 @@ import androidx.core.view.ViewCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public class ActionBarDrawerToggle implements DrawerLayout.DrawerListener {
     private static final int ID_HOME = 16908332;
@@ -66,7 +66,7 @@ public class ActionBarDrawerToggle implements DrawerLayout.DrawerListener {
         return context.getApplicationInfo().targetSdkVersion >= 21;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public ActionBarDrawerToggle(Activity activity, DrawerLayout drawerLayout, boolean z, int i, int i2, int i3) {
         this.mDrawerIndicatorEnabled = true;
         this.mActivity = activity;

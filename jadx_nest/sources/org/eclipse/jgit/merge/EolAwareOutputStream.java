@@ -3,7 +3,7 @@ package org.eclipse.jgit.merge;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class EolAwareOutputStream extends OutputStream {
     private boolean bol = true;
     private final OutputStream out;

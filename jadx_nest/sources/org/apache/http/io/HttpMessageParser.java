@@ -4,7 +4,7 @@ import java.io.IOException;
 import org.apache.http.HttpException;
 import org.apache.http.HttpMessage;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface HttpMessageParser<T extends HttpMessage> {
     T parse() throws HttpException, IOException;
 }

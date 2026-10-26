@@ -11,7 +11,7 @@ import org.eclipse.jgit.lib.ObjectInserter;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.TreeFormatter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class FanoutBucket extends InMemoryNoteBucket {
     private static final byte[] hexchar = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 97, 98, 99, 100, 101, 102};
     private int cnt;
@@ -62,7 +62,7 @@ class FanoutBucket extends InMemoryNoteBucket {
         return new AnonymousClass1(mutableObjectId, objectReader);
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.notes.FanoutBucket$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.notes.FanoutBucket$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<Note> {
         private int cell;
         private Iterator<Note> itr;
@@ -260,7 +260,7 @@ class FanoutBucket extends InMemoryNoteBucket {
         return this;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int cell(AnyObjectId anyObjectId) {
         return anyObjectId.getByte(this.prefixLen >> 1);
     }
@@ -302,7 +302,7 @@ class FanoutBucket extends InMemoryNoteBucket {
             return this.treeId;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public InMemoryNoteBucket load(AnyObjectId anyObjectId, ObjectReader objectReader) throws IOException {
             InMemoryNoteBucket inMemoryNoteBucket = NoteParser.parse(anyObjectId.abbreviate(FanoutBucket.this.prefixLen + 2), this.treeId, objectReader);
             FanoutBucket.this.table[FanoutBucket.this.cell(anyObjectId)] = inMemoryNoteBucket;

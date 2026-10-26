@@ -8,7 +8,7 @@ import javax.annotation.CheckReturnValue;
 import javax.annotation.Nullable;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class MethodDescriptor<ReqT, RespT> {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private final String fullMethodName;

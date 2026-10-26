@@ -7,7 +7,7 @@ import androidx.core.util.ObjectsCompat;
 import java.util.Arrays;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class CalendarConstraints implements Parcelable {
     public static final Parcelable.Creator<CalendarConstraints> CREATOR = new AnonymousClass1();
     private final Month end;
@@ -124,18 +124,18 @@ public final class CalendarConstraints implements Parcelable {
         return Arrays.hashCode(new Object[]{this.start, this.end, this.openAt, Integer.valueOf(this.firstDayOfWeek), this.validator});
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.CalendarConstraints$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.CalendarConstraints$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.Creator<CalendarConstraints> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public CalendarConstraints createFromParcel(Parcel parcel) {
             return new CalendarConstraints((Month) parcel.readParcelable(Month.class.getClassLoader()), (Month) parcel.readParcelable(Month.class.getClassLoader()), (DateValidator) parcel.readParcelable(DateValidator.class.getClassLoader()), (Month) parcel.readParcelable(Month.class.getClassLoader()), parcel.readInt(), null);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public CalendarConstraints[] newArray(int i) {
             return new CalendarConstraints[i];

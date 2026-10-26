@@ -4,7 +4,7 @@ import androidx.arch.core.internal.SafeIterableMap;
 import java.util.Iterator;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MediatorLiveData<T> extends MutableLiveData<T> {
     private SafeIterableMap<LiveData<?>, Source<?>> mSources;
 

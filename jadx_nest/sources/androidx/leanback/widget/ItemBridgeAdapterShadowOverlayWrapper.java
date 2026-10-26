@@ -2,7 +2,7 @@ package androidx.leanback.widget;
 
 import android.view.View;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ItemBridgeAdapterShadowOverlayWrapper extends ItemBridgeAdapter.Wrapper {
     private final ShadowOverlayHelper mHelper;
 

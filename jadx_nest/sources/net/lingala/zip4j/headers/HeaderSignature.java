@@ -1,6 +1,6 @@
 package net.lingala.zip4j.headers;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum HeaderSignature {
     LOCAL_FILE_HEADER(67324752),
     EXTRA_DATA_RECORD(134695760),

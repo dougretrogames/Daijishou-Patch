@@ -25,8 +25,8 @@ import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
 import kotlinx.coroutines.internal.ThreadContextKt;
 
-/* JADX INFO: compiled from: Combine.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: Combine.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u0003\"\u0004\b\u0002\u0010\u0004*\u00020\u0005H\u008a@"}, d2 = {"<anonymous>", "", "T1", "T2", "R", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1", f = "Combine.kt", i = {0, 0}, l = {123}, m = "invokeSuspend", n = {"second", "collectJob"}, s = {"L$0", "L$1"})
 final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -38,8 +38,8 @@ final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<Cor
     Object L$1;
     int label;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     CombineKt$zipImpl$1$1(Flow<? extends T2> flow, Flow<? extends T1> flow2, FlowCollector<? super R> flowCollector, Function3<? super T1, ? super T2, ? super Continuation<? super R>, ? extends Object> function3, Continuation<? super CombineKt$zipImpl$1$1> continuation) {
         super(2, continuation);
         this.$flow2 = flow;
@@ -125,13 +125,13 @@ final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<Cor
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Combine.kt */
+    /* INFO: renamed from: kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1$1, reason: invalid class name */
+    /* INFO: compiled from: Combine.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0010\u0003\n\u0000\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u0003\"\u0004\b\u0002\u0010\u00042\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006H\n¢\u0006\u0002\b\u0007"}, d2 = {"<anonymous>", "", "T1", "T2", "R", "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<Throwable, Unit> {
         final /* synthetic */ CompletableJob $collectJob;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(CompletableJob completableJob) {
             super(1);
             this.$collectJob = completableJob;
@@ -143,7 +143,7 @@ final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<Cor
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Throwable th) {
             if (this.$collectJob.isActive()) {
                 this.$collectJob.cancel((CancellationException) new AbortFlowException(this.$collectJob));
@@ -151,8 +151,8 @@ final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<Cor
         }
     }
 
-    /* JADX INFO: renamed from: kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1$2, reason: invalid class name */
-    /* JADX INFO: compiled from: Combine.kt */
+    /* INFO: renamed from: kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1$2, reason: invalid class name */
+    /* INFO: compiled from: Combine.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u0003\"\u0004\b\u0002\u0010\u00042\u0006\u0010\u0005\u001a\u00020\u0001H\u008a@"}, d2 = {"<anonymous>", "", "T1", "T2", "R", "it"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1$2", f = "Combine.kt", i = {}, l = {124}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass2 extends SuspendLambda implements Function2<Unit, Continuation<? super Unit>, Object> {
@@ -165,8 +165,8 @@ final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<Cor
         final /* synthetic */ Function3<T1, T2, Continuation<? super R>, Object> $transform;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass2(Flow<? extends T1> flow, CoroutineContext coroutineContext, Object obj, ReceiveChannel<? extends Object> receiveChannel, FlowCollector<? super R> flowCollector, Function3<? super T1, ? super T2, ? super Continuation<? super R>, ? extends Object> function3, CompletableJob completableJob, Continuation<? super AnonymousClass2> continuation) {
             super(2, continuation);
             this.$flow = flow;
@@ -188,8 +188,8 @@ final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<Cor
             return ((AnonymousClass2) create(unit, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX INFO: renamed from: kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1$2$1, reason: invalid class name */
-        /* JADX INFO: compiled from: Combine.kt */
+        /* INFO: renamed from: kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1$2$1, reason: invalid class name */
+        /* INFO: compiled from: Combine.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0006\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u0003\"\u0004\b\u0002\u0010\u00042\u0006\u0010\u0005\u001a\u0002H\u0002H\u008a@¢\u0006\u0004\b\u0006\u0010\u0007"}, d2 = {"<anonymous>", "", "T1", "T2", "R", "value", "emit", "(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass1<T> implements FlowCollector {
             final /* synthetic */ Object $cnt;
@@ -199,7 +199,7 @@ final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<Cor
             final /* synthetic */ FlowCollector<R> $this_unsafeFlow;
             final /* synthetic */ Function3<T1, T2, Continuation<? super R>, Object> $transform;
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             AnonymousClass1(CoroutineContext coroutineContext, Object obj, ReceiveChannel<? extends Object> receiveChannel, FlowCollector<? super R> flowCollector, Function3<? super T1, ? super T2, ? super Continuation<? super R>, ? extends Object> function3, CompletableJob completableJob) {
                 this.$scopeContext = coroutineContext;
                 this.$cnt = obj;
@@ -209,8 +209,8 @@ final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<Cor
                 this.$collectJob = completableJob;
             }
 
-            /* JADX INFO: renamed from: kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1$2$1$1, reason: invalid class name and collision with other inner class name */
-            /* JADX INFO: compiled from: Combine.kt */
+            /* INFO: renamed from: kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1$2$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: compiled from: Combine.kt */
             @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u0003\"\u0004\b\u0002\u0010\u00042\u0006\u0010\u0005\u001a\u00020\u0001H\u008a@"}, d2 = {"<anonymous>", "", "T1", "T2", "R", "it"}, k = 3, mv = {1, 9, 0}, xi = 48)
             @DebugMetadata(c = "kotlinx.coroutines.flow.internal.CombineKt$zipImpl$1$1$2$1$1", f = "Combine.kt", i = {}, l = {126, 129, 129}, m = "invokeSuspend", n = {}, s = {})
             static final class C00901 extends SuspendLambda implements Function2<Unit, Continuation<? super Unit>, Object> {
@@ -222,8 +222,8 @@ final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<Cor
                 Object L$0;
                 int label;
 
-                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-                /* JADX WARN: Multi-variable type inference failed */
+                /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+                /* WARN: Multi-variable type inference failed */
                 C00901(ReceiveChannel<? extends Object> receiveChannel, FlowCollector<? super R> flowCollector, Function3<? super T1, ? super T2, ? super Continuation<? super R>, ? extends Object> function3, T1 t1, CompletableJob completableJob, Continuation<? super C00901> continuation) {
                     super(2, continuation);
                     this.$second = receiveChannel;
@@ -243,23 +243,23 @@ final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<Cor
                     return ((C00901) create(unit, continuation)).invokeSuspend(Unit.INSTANCE);
                 }
 
-                /* JADX WARN: Code restructure failed: missing block: B:28:0x0076, code lost:
+                /* WARN: Code restructure failed: missing block: B:28:0x0076, code lost:
                 
                     if (r1.emit(r9, r8) == r0) goto L29;
                  */
-                /* JADX WARN: Multi-variable type inference failed */
-                /* JADX WARN: Type inference failed for: r1v5, types: [kotlinx.coroutines.flow.FlowCollector] */
-                /* JADX WARN: Type inference failed for: r1v8 */
-                /* JADX WARN: Type inference failed for: r1v9 */
-                /* JADX WARN: Type inference fix 'apply assigned field type' failed
-                java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-                	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-                	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-                	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-                	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-                	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-                	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-                	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+                /* WARN: Multi-variable type inference failed */
+                /* WARN: Type inference failed for: r1v5, types: [kotlinx.coroutines.flow.FlowCollector] */
+                /* WARN: Type inference failed for: r1v8 */
+                /* WARN: Type inference failed for: r1v9 */
+                /* WARN: Type inference fix 'apply assigned field type' failed
+                java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+                	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+                	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+                	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+                	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+                	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+                	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+                	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
                  */
                 @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
                 /*
@@ -346,7 +346,7 @@ final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<Cor
                 }
             }
 
-            /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+            /* WARN: Code duplicated, block: B:7:0x0014  */
             @Override // kotlinx.coroutines.flow.FlowCollector
             public final Object emit(T1 t1, Continuation<? super Unit> continuation) throws Throwable {
                 CombineKt$zipImpl$1$1$2$1$emit$1 combineKt$zipImpl$1$1$2$1$emit$1;
@@ -383,7 +383,7 @@ final class CombineKt$zipImpl$1$1 extends SuspendLambda implements Function2<Cor
             }
         }
 
-        /* JADX WARN: Type inference incomplete: some casts might be missing */
+        /* WARN: Type inference incomplete: some casts might be missing */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final Object invokeSuspend(Object obj) throws Throwable {
             Object coroutine_suspended = IntrinsicsKt.getCOROUTINE_SUSPENDED();

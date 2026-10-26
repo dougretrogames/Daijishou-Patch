@@ -4,13 +4,13 @@ import kotlin.Metadata;
 import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: RepeatableBody.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: RepeatableBody.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\b\n\u0000\n\u0002\u0010\t\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 4, 0})
 final class RepeatableBody$writeTo$1$2 extends Lambda implements Function0<Long> {
     final /* synthetic */ long $length;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     RepeatableBody$writeTo$1$2(long j) {
         super(0);
         this.$length = j;
@@ -21,7 +21,7 @@ final class RepeatableBody$writeTo$1$2 extends Lambda implements Function0<Long>
         return Long.valueOf(invoke2());
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final long invoke2() {
         return this.$length;
     }

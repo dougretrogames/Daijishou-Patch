@@ -17,7 +17,7 @@ import org.apache.http.config.SocketConfig;
 import org.apache.http.impl.DefaultBHttpServerConnection;
 import org.apache.http.protocol.HttpService;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpServer {
     private final HttpConnectionFactory<? extends DefaultBHttpServerConnection> connectionFactory;
     private final ExceptionLogger exceptionLogger;

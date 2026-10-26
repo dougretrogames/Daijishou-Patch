@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CircularRevealRelativeLayout extends RelativeLayout implements CircularRevealWidget {
     private final CircularRevealHelper helper;
 

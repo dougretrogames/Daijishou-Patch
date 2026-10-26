@@ -3,7 +3,7 @@ package com.google.common.escape;
 import com.google.common.base.Function;
 import com.google.errorprone.annotations.DoNotMock;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock("Use Escapers.nullEscaper() or another methods from the *Escapers classes")
 @ElementTypesAreNonnullByDefault
 public abstract class Escaper {

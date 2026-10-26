@@ -7,7 +7,7 @@ import java.util.Collection;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class CredentialAccessBoundary {
     private static final int RULES_SIZE_LIMIT = 10;
     private final List<AccessBoundaryRule> accessBoundaryRules;

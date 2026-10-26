@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PluggableAuthCredentialSource extends ExternalAccountCredentials.CredentialSource {
     static final String COMMAND_KEY = "command";
     static final int DEFAULT_EXECUTABLE_TIMEOUT_MS = 30000;

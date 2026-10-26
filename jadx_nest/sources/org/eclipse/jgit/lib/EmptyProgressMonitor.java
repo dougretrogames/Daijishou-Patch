@@ -1,6 +1,6 @@
 package org.eclipse.jgit.lib;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class EmptyProgressMonitor implements ProgressMonitor {
     @Override // org.eclipse.jgit.lib.ProgressMonitor
     public void beginTask(String str, int i) {

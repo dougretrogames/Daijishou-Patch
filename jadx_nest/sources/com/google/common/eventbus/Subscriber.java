@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 import java.util.concurrent.Executor;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class Subscriber {
     private EventBus bus;
@@ -37,7 +37,7 @@ class Subscriber {
         this.executor.execute(new Subscriber$$ExternalSyntheticLambda0(this, event));
     }
 
-    /* JADX INFO: renamed from: lambda$dispatchEvent$0$com-google-common-eventbus-Subscriber, reason: not valid java name */
+    /* INFO: renamed from: lambda$dispatchEvent$0$com-google-common-eventbus-Subscriber, reason: not valid java name */
     /* synthetic */ void m3352lambda$dispatchEvent$0$comgooglecommoneventbusSubscriber(Object obj) {
         try {
             invokeSubscriberMethod(obj);

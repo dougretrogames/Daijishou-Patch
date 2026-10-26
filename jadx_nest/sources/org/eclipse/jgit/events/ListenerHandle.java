@@ -2,7 +2,7 @@ package org.eclipse.jgit.events;
 
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ListenerHandle {
     final RepositoryListener listener;
     private final ListenerList parent;

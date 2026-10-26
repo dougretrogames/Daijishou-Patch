@@ -5,7 +5,7 @@ import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class RecyclableBufferedInputStream extends FilterInputStream {
     private volatile byte[] buf;
     private final ArrayPool byteArrayPool;

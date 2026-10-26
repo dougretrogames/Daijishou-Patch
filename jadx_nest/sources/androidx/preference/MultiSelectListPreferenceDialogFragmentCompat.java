@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MultiSelectListPreferenceDialogFragmentCompat extends PreferenceDialogFragmentCompat {
     private static final String SAVE_STATE_CHANGED = "MultiSelectListPreferenceDialogFragmentCompat.changed";
     private static final String SAVE_STATE_ENTRIES = "MultiSelectListPreferenceDialogFragmentCompat.entries";
@@ -72,7 +72,7 @@ public class MultiSelectListPreferenceDialogFragmentCompat extends PreferenceDia
         builder.setMultiChoiceItems(this.mEntries, zArr, new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: androidx.preference.MultiSelectListPreferenceDialogFragmentCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.MultiSelectListPreferenceDialogFragmentCompat$1, reason: invalid class name */
     class AnonymousClass1 implements DialogInterface.OnMultiChoiceClickListener {
         AnonymousClass1() {
         }

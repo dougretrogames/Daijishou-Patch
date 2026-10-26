@@ -24,7 +24,7 @@ import net.lingala.zip4j.util.FileUtils;
 import net.lingala.zip4j.util.InternalZipConstants;
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractAddFileToZipTask<T> extends AsyncZipTask<T> {
     private final HeaderWriter headerWriter;
     private final char[] password;

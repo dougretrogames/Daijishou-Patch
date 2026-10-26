@@ -2,8 +2,8 @@ package com.google.android.gms.dynamite;
 
 import android.os.Process;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 final class zza extends Thread {
     zza(ThreadGroup threadGroup, String str) {
         super(threadGroup, "GmsDynamite");

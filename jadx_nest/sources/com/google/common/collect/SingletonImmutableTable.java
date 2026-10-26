@@ -3,7 +3,7 @@ package com.google.common.collect;
 import com.google.common.base.Preconditions;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class SingletonImmutableTable<R, C, V> extends ImmutableTable<R, C, V> {
     final C singleColumnKey;
@@ -44,13 +44,13 @@ class SingletonImmutableTable<R, C, V> extends ImmutableTable<R, C, V> {
         return ImmutableMap.of(this.singleRowKey, ImmutableMap.of(this.singleColumnKey, (Object) this.singleValue));
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ImmutableTable, com.google.common.collect.AbstractTable
     public ImmutableSet<Table.Cell<R, C, V>> createCellSet() {
         return ImmutableSet.of(cellOf(this.singleRowKey, this.singleColumnKey, this.singleValue));
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ImmutableTable, com.google.common.collect.AbstractTable
     public ImmutableCollection<V> createValues() {
         return ImmutableSet.of(this.singleValue);

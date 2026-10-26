@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class TagContext {
     protected abstract Iterator<Tag> getIterator();
 

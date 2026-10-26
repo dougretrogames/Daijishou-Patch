@@ -28,7 +28,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class CascadingMenuPopup extends MenuPopup implements MenuPresenter, View.OnKeyListener, PopupWindow.OnDismissListener {
     static final int HORIZ_POSITION_LEFT = 0;
     static final int HORIZ_POSITION_RIGHT = 1;
@@ -84,7 +84,7 @@ final class CascadingMenuPopup extends MenuPopup implements MenuPresenter, View.
         return null;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.view.menu.CascadingMenuPopup$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.view.menu.CascadingMenuPopup$1, reason: invalid class name */
     class AnonymousClass1 implements ViewTreeObserver.OnGlobalLayoutListener {
         AnonymousClass1() {
         }
@@ -106,7 +106,7 @@ final class CascadingMenuPopup extends MenuPopup implements MenuPresenter, View.
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.view.menu.CascadingMenuPopup$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.view.menu.CascadingMenuPopup$2, reason: invalid class name */
     class AnonymousClass2 implements View.OnAttachStateChangeListener {
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewAttachedToWindow(View view) {
@@ -127,7 +127,7 @@ final class CascadingMenuPopup extends MenuPopup implements MenuPresenter, View.
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.view.menu.CascadingMenuPopup$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.view.menu.CascadingMenuPopup$3, reason: invalid class name */
     class AnonymousClass3 implements MenuItemHoverListener {
         AnonymousClass3() {
         }
@@ -159,7 +159,7 @@ final class CascadingMenuPopup extends MenuPopup implements MenuPresenter, View.
             CascadingMenuPopup.this.mSubMenuHoverHandler.postAtTime(new AnonymousClass1(i2 < CascadingMenuPopup.this.mShowingMenus.size() ? CascadingMenuPopup.this.mShowingMenus.get(i2) : null, menuItem, menuBuilder), menuBuilder, SystemClock.uptimeMillis() + 200);
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.view.menu.CascadingMenuPopup$3$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.view.menu.CascadingMenuPopup$3$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             final /* synthetic */ MenuItem val$item;
             final /* synthetic */ MenuBuilder val$menu;

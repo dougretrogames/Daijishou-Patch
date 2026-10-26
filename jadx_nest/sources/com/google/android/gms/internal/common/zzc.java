@@ -5,8 +5,8 @@ import android.os.IInterface;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class zzc {
     public static final /* synthetic */ int zza = 0;
     private static final ClassLoader zzb = zzc.class.getClassLoader();

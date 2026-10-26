@@ -3,7 +3,7 @@ package co.infinum.retromock;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class Preconditions {
     private Preconditions() {
     }

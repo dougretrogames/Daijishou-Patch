@@ -8,7 +8,7 @@ import java.util.zip.GZIPOutputStream;
 import org.apache.http.protocol.HTTP;
 import org.eclipse.jgit.util.HttpSupport;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public interface Codec extends Compressor, Decompressor {
 
     public static final class Gzip implements Codec {

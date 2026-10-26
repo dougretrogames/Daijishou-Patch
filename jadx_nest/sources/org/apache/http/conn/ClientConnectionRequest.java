@@ -2,7 +2,7 @@ package org.apache.http.conn;
 
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface ClientConnectionRequest {
     void abortRequest();

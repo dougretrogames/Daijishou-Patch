@@ -1,7 +1,7 @@
 package com.magneticchen.daijishou.dialog_fragments;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class PlayableItemDetailDialogFragment$$ExternalSyntheticLambda8 implements Runnable {
     public final /* synthetic */ PlayableItemDetailDialogFragment f$0;
 

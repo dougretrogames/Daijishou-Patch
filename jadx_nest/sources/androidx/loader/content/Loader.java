@@ -7,7 +7,7 @@ import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Loader<D> {
     private Context mContext;
     private int mId;

@@ -3,7 +3,7 @@ package com.google.android.material.internal;
 import android.animation.ValueAnimator;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FadeThroughUpdateListener implements ValueAnimator.AnimatorUpdateListener {
     private final float[] alphas = new float[2];
     private final View fadeInView;

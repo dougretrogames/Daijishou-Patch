@@ -10,7 +10,7 @@ import org.eclipse.jgit.transport.resolver.ServiceNotAuthorizedException;
 import org.eclipse.jgit.transport.resolver.ServiceNotEnabledException;
 import org.eclipse.jgit.transport.resolver.UploadPackFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class InternalFetchConnection<C> extends BasePackFetchConnection {
     private Thread worker;
 
@@ -32,14 +32,14 @@ class InternalFetchConnection<C> extends BasePackFetchConnection {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.InternalFetchConnection$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.InternalFetchConnection$1, reason: invalid class name */
     class AnonymousClass1 extends PipedInputStream {
         AnonymousClass1() {
             this.buffer = new byte[2952];
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.InternalFetchConnection$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.InternalFetchConnection$2, reason: invalid class name */
     class AnonymousClass2 extends Thread {
         private final /* synthetic */ PipedOutputStream val$in_w;
         private final /* synthetic */ PipedInputStream val$out_r;
@@ -47,7 +47,7 @@ class InternalFetchConnection<C> extends BasePackFetchConnection {
         private final /* synthetic */ Object val$req;
         private final /* synthetic */ UploadPackFactory val$uploadPackFactory;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(String str, PipedInputStream pipedInputStream, PipedOutputStream pipedOutputStream, Repository repository, UploadPackFactory uploadPackFactory, Object obj) {
             super(str);
             this.val$out_r = pipedInputStream;
@@ -57,7 +57,7 @@ class InternalFetchConnection<C> extends BasePackFetchConnection {
             this.val$req = obj;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.lang.Thread, java.lang.Runnable
         public void run() {
             PipedOutputStream pipedOutputStream;

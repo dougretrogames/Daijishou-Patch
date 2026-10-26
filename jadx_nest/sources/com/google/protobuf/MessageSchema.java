@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 import sun.misc.Unsafe;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 final class MessageSchema<T> implements Schema<T> {
     private static final int CHECK_INITIALIZED_BIT = 1024;
@@ -91,13 +91,13 @@ final class MessageSchema<T> implements Schema<T> {
         return newSchemaForMessageInfo((StructuralMessageInfo) messageInfo, newInstanceSchema, listFieldSchema, unknownFieldSchema, extensionSchema, mapFieldSchema);
     }
 
-    /* JADX WARN: Code duplicated, block: B:121:0x0250  */
-    /* JADX WARN: Code duplicated, block: B:122:0x0253  */
-    /* JADX WARN: Code duplicated, block: B:125:0x026a  */
-    /* JADX WARN: Code duplicated, block: B:126:0x026d  */
-    /* JADX WARN: Code duplicated, block: B:163:0x0325  */
-    /* JADX WARN: Code duplicated, block: B:178:0x0372  */
-    /* JADX WARN: Code duplicated, block: B:181:0x0380  */
+    /* WARN: Code duplicated, block: B:121:0x0250  */
+    /* WARN: Code duplicated, block: B:122:0x0253  */
+    /* WARN: Code duplicated, block: B:125:0x026a  */
+    /* WARN: Code duplicated, block: B:126:0x026d  */
+    /* WARN: Code duplicated, block: B:163:0x0325  */
+    /* WARN: Code duplicated, block: B:178:0x0372  */
+    /* WARN: Code duplicated, block: B:181:0x0380  */
     static <T> MessageSchema<T> newSchemaForRawMessageInfo(RawMessageInfo messageInfo, NewInstanceSchema newInstanceSchema, ListFieldSchema listFieldSchema, UnknownFieldSchema<?, ?> unknownFieldSchema, ExtensionSchema<?> extensionSchema, MapFieldSchema mapFieldSchema) {
         int i;
         int iCharAt;
@@ -731,19 +731,19 @@ final class MessageSchema<T> implements Schema<T> {
         return new MessageSchema<>(iArr, objArr, fieldNumber, fieldNumber2, messageInfo.getDefaultInstance(), messageInfo.getSyntax(), true, iArr4, checkInitialized.length, checkInitialized.length + iArr2.length, newInstanceSchema, listFieldSchema, unknownFieldSchema, extensionSchema, mapFieldSchema);
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x007a  */
-    /* JADX WARN: Code duplicated, block: B:22:0x007d  */
-    /* JADX WARN: Code duplicated, block: B:25:0x0084  */
-    /* JADX WARN: Code duplicated, block: B:28:0x009e  */
-    /* JADX WARN: Code duplicated, block: B:30:0x00aa  */
-    /* JADX WARN: Code duplicated, block: B:32:0x00af  */
-    /* JADX WARN: Code duplicated, block: B:34:0x00b5  */
-    /* JADX WARN: Code duplicated, block: B:36:0x00be A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:37:0x00c0  */
-    /* JADX WARN: Code duplicated, block: B:39:0x00c9  */
-    /* JADX WARN: Code duplicated, block: B:41:0x00cf  */
-    /* JADX WARN: Code duplicated, block: B:43:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:44:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:21:0x007a  */
+    /* WARN: Code duplicated, block: B:22:0x007d  */
+    /* WARN: Code duplicated, block: B:25:0x0084  */
+    /* WARN: Code duplicated, block: B:28:0x009e  */
+    /* WARN: Code duplicated, block: B:30:0x00aa  */
+    /* WARN: Code duplicated, block: B:32:0x00af  */
+    /* WARN: Code duplicated, block: B:34:0x00b5  */
+    /* WARN: Code duplicated, block: B:36:0x00be A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:37:0x00c0  */
+    /* WARN: Code duplicated, block: B:39:0x00c9  */
+    /* WARN: Code duplicated, block: B:41:0x00cf  */
+    /* WARN: Code duplicated, block: B:43:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:44:? A[RETURN, SYNTHETIC] */
     private static void storeFieldData(FieldInfo fi, int[] buffer, int bufferIndex, Object[] objects) {
         int iObjectFieldOffset;
         int iId;
@@ -1427,7 +1427,7 @@ final class MessageSchema<T> implements Schema<T> {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void mergeMessage(T targetParent, T sourceParent, int pos) {
         if (isFieldPresent(sourceParent, pos)) {
             long jOffset = offset(typeAndOffsetAt(pos));
@@ -1459,7 +1459,7 @@ final class MessageSchema<T> implements Schema<T> {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void mergeOneofMessage(T targetParent, T sourceParent, int pos) {
         int iNumberAt = numberAt(pos);
         if (isOneofPresent(sourceParent, iNumberAt, pos)) {
@@ -1492,8 +1492,8 @@ final class MessageSchema<T> implements Schema<T> {
         }
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code duplicated, block: B:246:0x054b A[PHI: r0 r1
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Code duplicated, block: B:246:0x054b A[PHI: r0 r1
   0x054b: PHI (r0v2 com.google.protobuf.MessageSchema<T>) = 
   (r0v1 com.google.protobuf.MessageSchema<T>)
   (r0v1 com.google.protobuf.MessageSchema<T>)
@@ -2219,8 +2219,8 @@ final class MessageSchema<T> implements Schema<T> {
         }
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code duplicated, block: B:7:0x0022  */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Code duplicated, block: B:7:0x0022  */
     private void writeFieldsInAscendingOrder(T message, Writer writer) throws IOException {
         Map.Entry<?, ?> entry;
         Iterator it;
@@ -2590,7 +2590,7 @@ final class MessageSchema<T> implements Schema<T> {
         messageSchema.writeUnknownInMessageTo(messageSchema.unknownFieldSchema, message, writer);
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0021  */
+    /* WARN: Code duplicated, block: B:7:0x0021  */
     private void writeFieldsInDescendingOrder(T message, Writer writer) throws IOException {
         Iterator itDescendingIterator;
         Map.Entry<?, ?> entry;
@@ -2920,12 +2920,12 @@ final class MessageSchema<T> implements Schema<T> {
         mergeFromHelper(this.unknownFieldSchema, this.extensionSchema, message, reader, extensionRegistry);
     }
 
-    /*  JADX ERROR: Type inference failed
-        jadx.core.utils.exceptions.JadxOverflowException: Type inference error: updates count limit reached with updateSeq = 19701. Try increasing type updates limit count.
-        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
-        	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:79)
+    /* ERROR: Type inference failed
+        decompiler.core.utils.exceptions.decompilerOverflowException: Type inference error: updates count limit reached with updateSeq = 19701. Try increasing type updates limit count.
+        	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+        	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:79)
         */
     private <UT, UB, ET extends com.google.protobuf.FieldSet.FieldDescriptorLite<ET>> void mergeFromHelper(com.google.protobuf.UnknownFieldSchema<UT, UB> r17, com.google.protobuf.ExtensionSchema<ET> r18, T r19, com.google.protobuf.Reader r20, com.google.protobuf.ExtensionRegistryLite r21) throws java.io.IOException {
         /*
@@ -2946,7 +2946,7 @@ final class MessageSchema<T> implements Schema<T> {
         return unknownFieldSetLiteNewInstance;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.MessageSchema$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.MessageSchema$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$FieldType;
 
@@ -3074,7 +3074,7 @@ final class MessageSchema<T> implements Schema<T> {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private <K, V> int decodeMapEntry(byte[] data, int position, int limit, MapEntryLite.Metadata<K, V> metadata, Map<K, V> target, ArrayDecoders.Registers registers) throws IOException {
         int iDecodeVarint32 = ArrayDecoders.decodeVarint32(data, position, registers);
         int i = registers.int1;
@@ -3115,7 +3115,7 @@ final class MessageSchema<T> implements Schema<T> {
         return i2;
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
     private int parseRepeatedField(T message, byte[] data, int position, int limit, int tag, int number, int wireType, int bufferPosition, long typeAndOffset, int fieldType, long fieldOffset, ArrayDecoders.Registers registers) throws IOException {
         int iDecodeVarint32List;
         Unsafe unsafe = UNSAFE;
@@ -3426,12 +3426,12 @@ final class MessageSchema<T> implements Schema<T> {
         return (Internal.EnumVerifier) this.objects[((pos / 3) * 2) + 1];
     }
 
-    /*  JADX ERROR: Type inference failed
-        jadx.core.utils.exceptions.JadxOverflowException: Type inference error: updates count limit reached with updateSeq = 12381. Try increasing type updates limit count.
-        	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-        	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-        	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
-        	at jadx.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:79)
+    /* ERROR: Type inference failed
+        decompiler.core.utils.exceptions.decompilerOverflowException: Type inference error: updates count limit reached with updateSeq = 12381. Try increasing type updates limit count.
+        	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+        	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+        	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+        	at decompiler.core.dex.visitors.typeinference.TypeInferenceVisitor.visit(TypeInferenceVisitor.java:79)
         */
     int parseMessage(T r27, byte[] r28, int r29, int r30, int r31, com.google.protobuf.ArrayDecoders.Registers r32) throws java.io.IOException {
         /*
@@ -3441,7 +3441,7 @@ final class MessageSchema<T> implements Schema<T> {
         throw new UnsupportedOperationException("Method not decompiled: com.google.protobuf.MessageSchema.parseMessage(java.lang.Object, byte[], int, int, int, com.google.protobuf.ArrayDecoders$Registers):int");
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private Object mutableMessageFieldForMerge(T message, int pos) {
         Schema messageFieldSchema = getMessageFieldSchema(pos);
         long jOffset = offset(typeAndOffsetAt(pos));
@@ -3464,7 +3464,7 @@ final class MessageSchema<T> implements Schema<T> {
         setFieldPresent(message, pos);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private Object mutableOneofMessageFieldForMerge(T message, int fieldNumber, int pos) {
         Schema messageFieldSchema = getMessageFieldSchema(pos);
         if (!isOneofPresent(message, fieldNumber, pos)) {
@@ -3491,10 +3491,10 @@ final class MessageSchema<T> implements Schema<T> {
         parseMessage(message, data, position, limit, 0, registers);
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x006a  */
-    /* JADX WARN: Code duplicated, block: B:27:0x0070  */
-    /* JADX WARN: Code duplicated, block: B:40:0x007d A[SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Code duplicated, block: B:25:0x006a  */
+    /* WARN: Code duplicated, block: B:27:0x0070  */
+    /* WARN: Code duplicated, block: B:40:0x007d A[SYNTHETIC] */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.protobuf.Schema
     public void makeImmutable(T message) {
         if (isMutable(message)) {
@@ -3617,9 +3617,9 @@ final class MessageSchema<T> implements Schema<T> {
         return ub;
     }
 
-    /* JADX WARN: Code duplicated, block: B:39:0x007c  */
-    /* JADX WARN: Code duplicated, block: B:58:0x0082 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:63:0x0094 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:39:0x007c  */
+    /* WARN: Code duplicated, block: B:58:0x0082 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:63:0x0094 A[SYNTHETIC] */
     @Override // com.google.protobuf.Schema
     public final boolean isInitialized(T message) {
         int i;
@@ -3676,12 +3676,12 @@ final class MessageSchema<T> implements Schema<T> {
         return !this.hasExtensions || this.extensionSchema.getExtensions(message).isInitialized();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private static boolean isInitialized(Object message, int typeAndOffset, Schema schema) {
         return schema.isInitialized(UnsafeUtil.getObject(message, offset(typeAndOffset)));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private <N> boolean isListInitialized(Object message, int typeAndOffset, int pos) {
         List list = (List) UnsafeUtil.getObject(message, offset(typeAndOffset));
         if (list.isEmpty()) {
@@ -3696,12 +3696,12 @@ final class MessageSchema<T> implements Schema<T> {
         return true;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r5v11 */
-    /* JADX WARN: Type inference failed for: r5v12 */
-    /* JADX WARN: Type inference failed for: r5v6 */
-    /* JADX WARN: Type inference failed for: r5v7 */
-    /* JADX WARN: Type inference failed for: r5v8, types: [com.google.protobuf.Schema] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r5v11 */
+    /* WARN: Type inference failed for: r5v12 */
+    /* WARN: Type inference failed for: r5v6 */
+    /* WARN: Type inference failed for: r5v7 */
+    /* WARN: Type inference failed for: r5v8, types: [com.google.protobuf.Schema] */
     private boolean isMapInitialized(T t, int i, int i2) {
         Map<?, ?> mapForMapData = this.mapFieldSchema.forMapData(UnsafeUtil.getObject(t, offset(i)));
         if (mapForMapData.isEmpty()) {

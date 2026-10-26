@@ -4,7 +4,7 @@ import android.graphics.Outline;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class ShadowHelperApi21 {
     static final ViewOutlineProvider sOutlineProvider = new AnonymousClass1();
 
@@ -17,7 +17,7 @@ class ShadowHelperApi21 {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.ShadowHelperApi21$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.ShadowHelperApi21$1, reason: invalid class name */
     class AnonymousClass1 extends ViewOutlineProvider {
         AnonymousClass1() {
         }

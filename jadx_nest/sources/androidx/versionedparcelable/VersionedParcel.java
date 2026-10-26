@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class VersionedParcel {
     private static final int EX_BAD_PARCELABLE = -2;
     private static final int EX_ILLEGAL_ARGUMENT = -3;
@@ -547,7 +547,7 @@ public abstract class VersionedParcel {
         writeArray(tArr);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     protected <T> void writeArray(T[] tArr) {
         if (tArr == 0) {
             writeInt(-1);
@@ -636,7 +636,7 @@ public abstract class VersionedParcel {
         versionedParcelCreateSubParcel.closeField();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void writeVersionedParcelableCreator(VersionedParcelable versionedParcelable) {
         try {
             writeString(findParcelClass(versionedParcelable.getClass()).getName());
@@ -668,7 +668,7 @@ public abstract class VersionedParcel {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public void writeException(Exception exc, int i) {
         int i2;
         setOutputField(i);
@@ -842,7 +842,7 @@ public abstract class VersionedParcel {
         return s;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public <K, V> Map<K, V> readMap(Map<K, V> map, int i) {
         if (!readField(i)) {
             return map;
@@ -935,7 +935,7 @@ public abstract class VersionedParcel {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.versionedparcelable.VersionedParcel$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.versionedparcelable.VersionedParcel$1, reason: invalid class name */
     class AnonymousClass1 extends ObjectInputStream {
         AnonymousClass1(InputStream inputStream) {
             super(inputStream);
@@ -993,7 +993,7 @@ public abstract class VersionedParcel {
         return declaredMethod;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private Method getWriteMethod(Class cls) throws IllegalAccessException, NoSuchMethodException, ClassNotFoundException {
         Method method = this.mWriteCache.get(cls.getName());
         if (method != null) {

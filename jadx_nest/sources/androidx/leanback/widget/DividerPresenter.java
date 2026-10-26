@@ -3,7 +3,7 @@ package androidx.leanback.widget;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DividerPresenter extends Presenter {
     private final int mLayoutResourceId;
 

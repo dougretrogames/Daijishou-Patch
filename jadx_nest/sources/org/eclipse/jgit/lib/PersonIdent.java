@@ -16,7 +16,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.util.SystemReader;
 import org.eclipse.jgit.util.time.ProposedTimestamp;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PersonIdent implements Serializable {
     private static final DateTimeFormatter OFFSET_FORMATTER = DateTimeFormatter.ofPattern("Z", Locale.US);
     private static final long serialVersionUID = 1;

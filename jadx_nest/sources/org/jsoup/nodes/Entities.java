@@ -15,7 +15,7 @@ import org.jsoup.internal.StringUtil;
 import org.jsoup.parser.CharacterReader;
 import org.jsoup.parser.Parser;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Entities {
     private static final int BaseCount = 106;
     static final int ForAttribute = 2;
@@ -45,19 +45,19 @@ public class Entities {
         return true;
     }
 
-    /* JADX WARN: Enum visitor error
-    jadx.core.utils.exceptions.JadxRuntimeException: Can't remove SSA var: r0v1 org.jsoup.nodes.Entities$EscapeMode, still in use, count: 1, list:
+    /* WARN: Enum visitor error
+    decompiler.core.utils.exceptions.decompilerRuntimeException: Can't remove SSA var: r0v1 org.jsoup.nodes.Entities$EscapeMode, still in use, count: 1, list:
   (r0v1 org.jsoup.nodes.Entities$EscapeMode) from 0x0033: IGET (r0v1 org.jsoup.nodes.Entities$EscapeMode) A[WRAPPED] org.jsoup.nodes.Entities.EscapeMode.nameKeys java.lang.String[]
-    	at jadx.core.utils.InsnRemover.removeSsaVar(InsnRemover.java:164)
-    	at jadx.core.utils.InsnRemover.unbindResult(InsnRemover.java:129)
-    	at jadx.core.utils.InsnRemover.lambda$unbindInsns$1(InsnRemover.java:101)
+    	at decompiler.core.utils.InsnRemover.removeSsaVar(InsnRemover.java:164)
+    	at decompiler.core.utils.InsnRemover.unbindResult(InsnRemover.java:129)
+    	at decompiler.core.utils.InsnRemover.lambda$unbindInsns$1(InsnRemover.java:101)
     	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-    	at jadx.core.utils.InsnRemover.unbindInsns(InsnRemover.java:100)
-    	at jadx.core.utils.InsnRemover.removeAllAndUnbind(InsnRemover.java:257)
-    	at jadx.core.dex.visitors.EnumVisitor.convertToEnum(EnumVisitor.java:187)
-    	at jadx.core.dex.visitors.EnumVisitor.visit(EnumVisitor.java:102)
+    	at decompiler.core.utils.InsnRemover.unbindInsns(InsnRemover.java:100)
+    	at decompiler.core.utils.InsnRemover.removeAllAndUnbind(InsnRemover.java:257)
+    	at decompiler.core.dex.visitors.EnumVisitor.convertToEnum(EnumVisitor.java:187)
+    	at decompiler.core.dex.visitors.EnumVisitor.visit(EnumVisitor.java:102)
      */
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
     public static final class EscapeMode {
         xhtml(EntitiesData.xmlPoints, 4),
         base(EntitiesData.basePoints, 106),
@@ -182,14 +182,14 @@ public class Entities {
         doEscape(str, quietAppendable, outputSettings.escapeMode(), outputSettings.charset(), i);
     }
 
-    /*  JADX ERROR: Types fix failed
-        jadx.core.utils.exceptions.JadxRuntimeException: Type update failed for variable: r13v5 ??, new type: java.lang.Object
-        	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
-        	at jadx.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryPossibleTypes(FixTypesVisitor.java:186)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.deduceType(FixTypesVisitor.java:245)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryDeduceTypes(FixTypesVisitor.java:224)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* ERROR: Types fix failed
+        decompiler.core.utils.exceptions.decompilerRuntimeException: Type update failed for variable: r13v5 ??, new type: java.lang.Object
+        	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:109)
+        	at decompiler.core.dex.visitors.typeinference.TypeUpdate.apply(TypeUpdate.java:59)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryPossibleTypes(FixTypesVisitor.java:186)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.deduceType(FixTypesVisitor.java:245)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryDeduceTypes(FixTypesVisitor.java:224)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
         Caused by: java.lang.NullPointerException
         */
     private static void doEscape(java.lang.String r11, org.jsoup.internal.QuietAppendable r12, org.jsoup.nodes.Entities.EscapeMode r13, java.nio.charset.Charset r14, int r15) {
@@ -381,7 +381,7 @@ public class Entities {
         return Parser.unescapeEntities(str, z);
     }
 
-    /* JADX INFO: renamed from: org.jsoup.nodes.Entities$1, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.nodes.Entities$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$org$jsoup$nodes$Entities$CoreCharset;
 
@@ -437,7 +437,7 @@ public class Entities {
         return charsetEncoderNewEncoder;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void load(EscapeMode escapeMode, String str, int i) {
         int i2;
         escapeMode.nameKeys = new String[i];

@@ -22,7 +22,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class DrawableUtils {
     public static final int INTRINSIC_SIZE = -1;
     private static final int UNSPECIFIED_HEIGHT = -1;

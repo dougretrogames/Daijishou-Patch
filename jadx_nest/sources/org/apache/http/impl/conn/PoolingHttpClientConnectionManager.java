@@ -43,7 +43,7 @@ import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PoolingHttpClientConnectionManager implements HttpClientConnectionManager, ConnPoolControl<HttpRoute>, Closeable {
     private final ConfigData configData;
     private final HttpClientConnectionOperator connectionOperator;
@@ -151,7 +151,7 @@ public class PoolingHttpClientConnectionManager implements HttpClientConnectionM
         return sb.toString();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public SocketConfig resolveSocketConfig(HttpHost httpHost) {
         SocketConfig socketConfig = this.configData.getSocketConfig(httpHost);
         if (socketConfig == null) {
@@ -170,7 +170,7 @@ public class PoolingHttpClientConnectionManager implements HttpClientConnectionM
         return new AnonymousClass1(this.pool.lease(httpRoute, obj, null), httpRoute);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.conn.PoolingHttpClientConnectionManager$1, reason: invalid class name */
     class AnonymousClass1 implements ConnectionRequest {
         final /* synthetic */ Future val$future;
         final /* synthetic */ HttpRoute val$route;
@@ -319,7 +319,7 @@ public class PoolingHttpClientConnectionManager implements HttpClientConnectionM
         }
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.conn.PoolingHttpClientConnectionManager$2, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.conn.PoolingHttpClientConnectionManager$2, reason: invalid class name */
     class AnonymousClass2 implements PoolEntryCallback<HttpRoute, ManagedHttpClientConnection> {
         AnonymousClass2() {
         }

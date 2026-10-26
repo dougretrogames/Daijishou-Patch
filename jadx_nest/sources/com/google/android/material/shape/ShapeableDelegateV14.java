@@ -2,7 +2,7 @@ package com.google.android.material.shape;
 
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ShapeableDelegateV14 extends ShapeableDelegate {
     @Override // com.google.android.material.shape.ShapeableDelegate
     boolean shouldUseCompatClipping() {

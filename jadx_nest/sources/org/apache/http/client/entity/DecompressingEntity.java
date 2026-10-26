@@ -8,7 +8,7 @@ import org.apache.http.HttpEntity;
 import org.apache.http.entity.HttpEntityWrapper;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DecompressingEntity extends HttpEntityWrapper {
     private static final int BUFFER_SIZE = 2048;
     private InputStream content;

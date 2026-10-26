@@ -12,7 +12,7 @@ import android.view.inputmethod.InputConnection;
 import java.util.Arrays;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class EmojiProcessor {
     private static final int ACTION_ADVANCE_BOTH = 1;
     private static final int ACTION_ADVANCE_END = 2;
@@ -119,27 +119,27 @@ final class EmojiProcessor {
         return ((EmojiProcessLookupCallback) process(charSequence, Math.max(0, i - 16), Math.min(charSequence.length(), i + 16), Integer.MAX_VALUE, true, new EmojiProcessLookupCallback(i))).end;
     }
 
-    /* JADX WARN: Code duplicated, block: B:27:0x004d A[Catch: all -> 0x002c, TryCatch #2 {all -> 0x002c, blocks: (B:6:0x000c, B:9:0x0011, B:11:0x0015, B:13:0x0024, B:21:0x003c, B:23:0x0046, B:25:0x0049, B:27:0x004d, B:29:0x0059, B:30:0x005c, B:40:0x0079), top: B:70:0x000c }] */
-    /* JADX WARN: Code duplicated, block: B:29:0x0059 A[Catch: all -> 0x002c, TryCatch #2 {all -> 0x002c, blocks: (B:6:0x000c, B:9:0x0011, B:11:0x0015, B:13:0x0024, B:21:0x003c, B:23:0x0046, B:25:0x0049, B:27:0x004d, B:29:0x0059, B:30:0x005c, B:40:0x0079), top: B:70:0x000c }] */
-    /* JADX WARN: Code duplicated, block: B:64:0x00bc  */
-    /* JADX WARN: Code duplicated, block: B:73:? A[SYNTHETIC] */
-    /* JADX WARN: Code restructure failed: missing block: B:51:0x00a7, code lost:
+    /* WARN: Code duplicated, block: B:27:0x004d A[Catch: all -> 0x002c, TryCatch #2 {all -> 0x002c, blocks: (B:6:0x000c, B:9:0x0011, B:11:0x0015, B:13:0x0024, B:21:0x003c, B:23:0x0046, B:25:0x0049, B:27:0x004d, B:29:0x0059, B:30:0x005c, B:40:0x0079), top: B:70:0x000c }] */
+    /* WARN: Code duplicated, block: B:29:0x0059 A[Catch: all -> 0x002c, TryCatch #2 {all -> 0x002c, blocks: (B:6:0x000c, B:9:0x0011, B:11:0x0015, B:13:0x0024, B:21:0x003c, B:23:0x0046, B:25:0x0049, B:27:0x004d, B:29:0x0059, B:30:0x005c, B:40:0x0079), top: B:70:0x000c }] */
+    /* WARN: Code duplicated, block: B:64:0x00bc  */
+    /* WARN: Code duplicated, block: B:73:? A[SYNTHETIC] */
+    /* WARN: Code restructure failed: missing block: B:51:0x00a7, code lost:
     
         if (r1 != false) goto L52;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:52:0x00a9, code lost:
+    /* WARN: Code restructure failed: missing block: B:52:0x00a9, code lost:
     
         ((androidx.emoji2.text.SpannableBuilder) r3).endBatchEdit();
      */
-    /* JADX WARN: Code restructure failed: missing block: B:53:0x00af, code lost:
+    /* WARN: Code restructure failed: missing block: B:53:0x00af, code lost:
     
         return r3;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:57:0x00b3, code lost:
+    /* WARN: Code restructure failed: missing block: B:57:0x00b3, code lost:
     
         if (r1 != false) goto L52;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:59:0x00b6, code lost:
+    /* WARN: Code restructure failed: missing block: B:59:0x00b6, code lost:
     
         return r3;
      */
@@ -596,7 +596,7 @@ final class EmojiProcessor {
             return true;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // androidx.emoji2.text.EmojiProcessor.EmojiProcessCallback
         public UnprecomputeTextOnModificationSpannable getResult() {
             return this.spannable;
@@ -608,7 +608,7 @@ final class EmojiProcessor {
         public int start = -1;
         public int end = -1;
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // androidx.emoji2.text.EmojiProcessor.EmojiProcessCallback
         public EmojiProcessLookupCallback getResult() {
             return this;
@@ -633,7 +633,7 @@ final class EmojiProcessor {
     private static class MarkExclusionCallback implements EmojiProcessCallback<MarkExclusionCallback> {
         private final String mExclusion;
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // androidx.emoji2.text.EmojiProcessor.EmojiProcessCallback
         public MarkExclusionCallback getResult() {
             return this;

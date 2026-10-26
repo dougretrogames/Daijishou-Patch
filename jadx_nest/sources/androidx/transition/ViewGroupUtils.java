@@ -5,7 +5,7 @@ import android.view.ViewGroup;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewGroupUtils {
     private static Method sGetChildDrawingOrderMethod = null;
     private static boolean sGetChildDrawingOrderMethodFetched = false;

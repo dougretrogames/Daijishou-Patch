@@ -17,7 +17,7 @@ import org.apache.commons.io.Charsets;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.input.XmlStreamReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class XmlStreamWriter extends Writer {
     private static final int BUFFER_SIZE = 8192;
     private Charset charset;

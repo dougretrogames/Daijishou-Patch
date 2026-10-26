@@ -19,7 +19,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class ConcurrentHashMultiset<E> extends AbstractMultiset<E> implements Serializable {
     private static final long serialVersionUID = 1;
@@ -95,7 +95,7 @@ public final class ConcurrentHashMultiset<E> extends AbstractMultiset<E> impleme
         return (T[]) snapshot().toArray(tArr);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private List<E> snapshot() {
         ArrayList arrayListNewArrayListWithExpectedSize = Lists.newArrayListWithExpectedSize(size());
         for (Multiset.Entry entry : entrySet()) {
@@ -258,7 +258,7 @@ public final class ConcurrentHashMultiset<E> extends AbstractMultiset<E> impleme
         return false;
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ConcurrentHashMultiset$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ConcurrentHashMultiset$1, reason: invalid class name */
     class AnonymousClass1 extends ForwardingSet<E> {
         final /* synthetic */ Set val$delegate;
 
@@ -266,7 +266,7 @@ public final class ConcurrentHashMultiset<E> extends AbstractMultiset<E> impleme
             this.val$delegate = val$delegate;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingSet, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
         public Set<E> delegate() {
             return this.val$delegate;
@@ -319,7 +319,7 @@ public final class ConcurrentHashMultiset<E> extends AbstractMultiset<E> impleme
         return this.countMap.isEmpty();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ConcurrentHashMultiset$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ConcurrentHashMultiset$2, reason: invalid class name */
     class AnonymousClass2 extends AbstractIterator<Multiset.Entry<E>> {
         private final Iterator<Map.Entry<E, AtomicInteger>> mapEntries;
 
@@ -327,7 +327,7 @@ public final class ConcurrentHashMultiset<E> extends AbstractMultiset<E> impleme
             this.mapEntries = ConcurrentHashMultiset.this.countMap.entrySet().iterator();
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.AbstractIterator
         @CheckForNull
         public Multiset.Entry<E> computeNext() {
@@ -347,7 +347,7 @@ public final class ConcurrentHashMultiset<E> extends AbstractMultiset<E> impleme
         return new AnonymousClass3(new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ConcurrentHashMultiset$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ConcurrentHashMultiset$3, reason: invalid class name */
     class AnonymousClass3 extends ForwardingIterator<Multiset.Entry<E>> {
 
         @CheckForNull
@@ -358,7 +358,7 @@ public final class ConcurrentHashMultiset<E> extends AbstractMultiset<E> impleme
             this.val$readOnlyIterator = val$readOnlyIterator;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.ForwardingIterator, com.google.common.collect.ForwardingObject
         public Iterator<Multiset.Entry<E>> delegate() {
             return this.val$readOnlyIterator;
@@ -398,7 +398,7 @@ public final class ConcurrentHashMultiset<E> extends AbstractMultiset<E> impleme
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.AbstractMultiset.EntrySet, com.google.common.collect.Multisets.EntrySet
         public ConcurrentHashMultiset<E> multiset() {
             return ConcurrentHashMultiset.this;

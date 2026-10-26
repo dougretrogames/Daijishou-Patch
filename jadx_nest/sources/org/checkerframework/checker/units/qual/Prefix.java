@@ -1,6 +1,6 @@
 package org.checkerframework.checker.units.qual;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum Prefix {
     yotta,
     zetta,

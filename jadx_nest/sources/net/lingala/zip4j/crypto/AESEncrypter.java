@@ -6,7 +6,7 @@ import net.lingala.zip4j.crypto.engine.AESEngine;
 import net.lingala.zip4j.exception.ZipException;
 import net.lingala.zip4j.model.enums.AesKeyStrength;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AESEncrypter implements Encrypter {
     private AESEngine aesEngine;
     private final byte[] counterBlock;

@@ -21,7 +21,7 @@ import org.jsoup.select.Evaluator;
 import org.jsoup.select.NodeVisitor;
 import org.jsoup.select.Selector;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StreamParser implements Closeable {
     private Document document;
     private final ElementIterator it;

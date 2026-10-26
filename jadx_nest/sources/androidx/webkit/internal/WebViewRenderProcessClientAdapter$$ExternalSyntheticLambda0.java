@@ -4,8 +4,8 @@ import android.webkit.WebView;
 import androidx.webkit.WebViewRenderProcess;
 import androidx.webkit.WebViewRenderProcessClient;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class WebViewRenderProcessClientAdapter$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ WebViewRenderProcessClient f$0;
     public final /* synthetic */ WebView f$1;

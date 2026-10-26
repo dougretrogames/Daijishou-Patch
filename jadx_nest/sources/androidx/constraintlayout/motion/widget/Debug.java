@@ -12,7 +12,7 @@ import java.nio.CharBuffer;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Debug {
     public static void logStack(String str, String str2, int i) {
         StackTraceElement[] stackTrace = new Throwable().getStackTrace();

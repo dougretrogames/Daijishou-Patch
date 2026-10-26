@@ -10,7 +10,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.util.EntityUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 class CloseableHttpResponseProxy implements InvocationHandler {
     private static final Constructor<?> CONSTRUCTOR;

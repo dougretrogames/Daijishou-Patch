@@ -20,7 +20,7 @@ import com.google.android.material.shape.AbsoluteCornerSize;
 import com.google.android.material.shape.CornerSize;
 import com.google.android.material.shape.ShapeAppearanceModel;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class TransitionUtils {
     static final int NO_ATTR_RES_ID = 0;
     static final int NO_DURATION = -1;
@@ -130,7 +130,7 @@ class TransitionUtils {
         return f3 > f2 ? shapeAppearanceModel2 : transformCornerSizes(shapeAppearanceModel, shapeAppearanceModel2, rectF, new AnonymousClass1(rectF, rectF2, f, f2, f3));
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transition.TransitionUtils$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transition.TransitionUtils$1, reason: invalid class name */
     class AnonymousClass1 implements CornerSizeBinaryOperator {
         final /* synthetic */ RectF val$endBounds;
         final /* synthetic */ float val$endFraction;

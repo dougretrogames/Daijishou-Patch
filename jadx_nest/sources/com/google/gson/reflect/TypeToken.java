@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.Objects;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class TypeToken<T> {
     private final int hashCode;
     private final Class<? super T> rawType;
@@ -82,13 +82,13 @@ public class TypeToken<T> {
         return isAssignableFrom(typeToken.getType());
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v0, types: [java.lang.reflect.Type] */
-    /* JADX WARN: Type inference failed for: r1v10 */
-    /* JADX WARN: Type inference failed for: r1v3, types: [java.lang.Class] */
-    /* JADX WARN: Type inference failed for: r1v5, types: [java.lang.reflect.Type] */
-    /* JADX WARN: Type inference failed for: r1v8, types: [java.lang.reflect.Type] */
-    /* JADX WARN: Type inference failed for: r1v9 */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r1v0, types: [java.lang.reflect.Type] */
+    /* WARN: Type inference failed for: r1v10 */
+    /* WARN: Type inference failed for: r1v3, types: [java.lang.Class] */
+    /* WARN: Type inference failed for: r1v5, types: [java.lang.reflect.Type] */
+    /* WARN: Type inference failed for: r1v8, types: [java.lang.reflect.Type] */
+    /* WARN: Type inference failed for: r1v9 */
     private static boolean isAssignableFrom(Type type, GenericArrayType genericArrayType) {
         Type genericComponentType = genericArrayType.getGenericComponentType();
         if (!(genericComponentType instanceof ParameterizedType)) {

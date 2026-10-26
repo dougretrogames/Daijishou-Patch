@@ -3,7 +3,7 @@ package org.jsoup.nodes;
 import org.jsoup.internal.QuietAppendable;
 import org.jsoup.parser.Tag;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class PseudoTextElement extends Element {
     @Override // org.jsoup.nodes.Element, org.jsoup.nodes.Node

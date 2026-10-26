@@ -5,7 +5,7 @@ import java.util.Objects;
 import org.eclipse.jgit.lib.BranchConfig;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class Semver implements Comparable<Semver> {
     private final String build;
     private final Integer major;
@@ -149,7 +149,7 @@ public class Semver implements Comparable<Semver> {
         return requirement.isSatisfiedBy(this);
     }
 
-    /* JADX INFO: renamed from: com.vdurmont.semver4j.Semver$1, reason: invalid class name */
+    /* INFO: renamed from: com.vdurmont.semver4j.Semver$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$vdurmont$semver4j$Semver$SemverType;
 

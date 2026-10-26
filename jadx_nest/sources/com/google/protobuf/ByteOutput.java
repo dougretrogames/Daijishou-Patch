@@ -3,7 +3,7 @@ package com.google.protobuf;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ByteOutput {
     public abstract void write(byte value) throws IOException;
 

@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import org.eclipse.jgit.lib.Config;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UrlConfig {
     private static final String KEY_INSTEADOF = "insteadof";
     private static final String KEY_PUSHINSTEADOF = "pushinsteadof";

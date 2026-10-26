@@ -5,7 +5,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReferenceMap<K, V> extends AbstractReferenceMap<K, V> implements Serializable {
     private static final long serialVersionUID = 1555089888138299607L;
 

@@ -8,7 +8,7 @@ import android.content.ContentProvider;
 import android.content.Intent;
 import java.lang.reflect.InvocationTargetException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AppComponentFactory extends android.app.AppComponentFactory {
     @Override // android.app.AppComponentFactory
     public final Activity instantiateActivity(ClassLoader classLoader, String str, Intent intent) throws IllegalAccessException, InstantiationException, ClassNotFoundException {

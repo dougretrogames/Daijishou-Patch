@@ -3,7 +3,7 @@ package io.opencensus.common;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Timestamp implements Comparable<Timestamp> {
     public abstract int getNanos();
 

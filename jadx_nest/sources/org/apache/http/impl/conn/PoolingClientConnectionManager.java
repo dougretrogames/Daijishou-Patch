@@ -21,7 +21,7 @@ import org.apache.http.pool.PoolStats;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class PoolingClientConnectionManager implements ClientConnectionManager, ConnPoolControl<HttpRoute> {
     private final DnsResolver dnsResolver;
@@ -116,7 +116,7 @@ public class PoolingClientConnectionManager implements ClientConnectionManager, 
         return new AnonymousClass1(this.pool.lease(httpRoute, obj));
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.conn.PoolingClientConnectionManager$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.conn.PoolingClientConnectionManager$1, reason: invalid class name */
     class AnonymousClass1 implements ClientConnectionRequest {
         final /* synthetic */ Future val$future;
 
@@ -159,13 +159,13 @@ public class PoolingClientConnectionManager implements ClientConnectionManager, 
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:24:0x004c A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:25:0x004e  */
-    /* JADX WARN: Code duplicated, block: B:26:0x0050 A[Catch: all -> 0x00d4, TryCatch #0 {all -> 0x00d4, blocks: (B:12:0x0026, B:14:0x002c, B:16:0x0032, B:19:0x0037, B:21:0x003f, B:22:0x0046, B:27:0x0052, B:31:0x0063, B:33:0x007d, B:26:0x0050), top: B:45:0x0026, outer: #2, inners: #1 }] */
-    /* JADX WARN: Code duplicated, block: B:29:0x005d  */
-    /* JADX WARN: Code duplicated, block: B:31:0x0063 A[Catch: all -> 0x00d4, TryCatch #0 {all -> 0x00d4, blocks: (B:12:0x0026, B:14:0x002c, B:16:0x0032, B:19:0x0037, B:21:0x003f, B:22:0x0046, B:27:0x0052, B:31:0x0063, B:33:0x007d, B:26:0x0050), top: B:45:0x0026, outer: #2, inners: #1 }] */
-    /* JADX WARN: Code duplicated, block: B:32:0x007b  */
-    /* JADX WARN: Code duplicated, block: B:36:0x00ae A[Catch: all -> 0x00df, TryCatch #2 {, blocks: (B:8:0x001e, B:10:0x0024, B:34:0x009d, B:36:0x00ae, B:37:0x00d2, B:40:0x00d5, B:41:0x00de, B:12:0x0026, B:14:0x002c, B:16:0x0032, B:19:0x0037, B:21:0x003f, B:22:0x0046, B:27:0x0052, B:31:0x0063, B:33:0x007d, B:26:0x0050), top: B:49:0x001e, inners: #0 }] */
+    /* WARN: Code duplicated, block: B:24:0x004c A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:25:0x004e  */
+    /* WARN: Code duplicated, block: B:26:0x0050 A[Catch: all -> 0x00d4, TryCatch #0 {all -> 0x00d4, blocks: (B:12:0x0026, B:14:0x002c, B:16:0x0032, B:19:0x0037, B:21:0x003f, B:22:0x0046, B:27:0x0052, B:31:0x0063, B:33:0x007d, B:26:0x0050), top: B:45:0x0026, outer: #2, inners: #1 }] */
+    /* WARN: Code duplicated, block: B:29:0x005d  */
+    /* WARN: Code duplicated, block: B:31:0x0063 A[Catch: all -> 0x00d4, TryCatch #0 {all -> 0x00d4, blocks: (B:12:0x0026, B:14:0x002c, B:16:0x0032, B:19:0x0037, B:21:0x003f, B:22:0x0046, B:27:0x0052, B:31:0x0063, B:33:0x007d, B:26:0x0050), top: B:45:0x0026, outer: #2, inners: #1 }] */
+    /* WARN: Code duplicated, block: B:32:0x007b  */
+    /* WARN: Code duplicated, block: B:36:0x00ae A[Catch: all -> 0x00df, TryCatch #2 {, blocks: (B:8:0x001e, B:10:0x0024, B:34:0x009d, B:36:0x00ae, B:37:0x00d2, B:40:0x00d5, B:41:0x00de, B:12:0x0026, B:14:0x002c, B:16:0x0032, B:19:0x0037, B:21:0x003f, B:22:0x0046, B:27:0x0052, B:31:0x0063, B:33:0x007d, B:26:0x0050), top: B:49:0x001e, inners: #0 }] */
     @Override // org.apache.http.conn.ClientConnectionManager
     public void releaseConnection(ManagedClientConnection managedClientConnection, long j, TimeUnit timeUnit) {
         TimeUnit timeUnit2;

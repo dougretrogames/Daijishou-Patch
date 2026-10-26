@@ -5,7 +5,7 @@ import android.os.Looper;
 import android.os.Message;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class SnackbarManager {
     private static final int LONG_DURATION_MS = 2750;
     static final int MSG_TIMEOUT = 0;
@@ -32,7 +32,7 @@ class SnackbarManager {
     private SnackbarManager() {
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.SnackbarManager$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.SnackbarManager$1, reason: invalid class name */
     class AnonymousClass1 implements Handler.Callback {
         AnonymousClass1() {
         }

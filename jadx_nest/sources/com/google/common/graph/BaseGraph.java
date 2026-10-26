@@ -2,7 +2,7 @@ package com.google.common.graph;
 
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 interface BaseGraph<N> extends SuccessorsFunction<N>, PredecessorsFunction<N> {
     Set<N> adjacentNodes(N node);

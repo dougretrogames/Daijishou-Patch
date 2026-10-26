@@ -6,7 +6,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class ExtensionRegistry extends ExtensionRegistryLite {
     static final ExtensionRegistry EMPTY_REGISTRY = new ExtensionRegistry(true);
     private final Map<String, ExtensionInfo> immutableExtensionsByName;
@@ -176,7 +176,7 @@ public class ExtensionRegistry extends ExtensionRegistryLite {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.ExtensionRegistry$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.ExtensionRegistry$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$Extension$ExtensionType;
 

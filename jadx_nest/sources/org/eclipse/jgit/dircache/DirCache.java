@@ -44,7 +44,7 @@ import org.eclipse.jgit.util.NB;
 import org.eclipse.jgit.util.TemporaryBuffer;
 import org.eclipse.jgit.util.io.SilentFileInputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DirCache {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$dircache$DirCache$DirCacheVersion = null;
     private static final int EXT_TREE = 1414677829;
@@ -183,8 +183,8 @@ public class DirCache {
         this.tree = null;
     }
 
-    /* JADX WARN: Code duplicated, block: B:30:0x0047  */
-    /* JADX WARN: Code duplicated, block: B:33:0x0053  */
+    /* WARN: Code duplicated, block: B:30:0x0047  */
+    /* WARN: Code duplicated, block: B:33:0x0053  */
     public void read() throws IOException {
         File file = this.liveFile;
         if (file == null) {
@@ -743,7 +743,7 @@ public class DirCache {
 
         private final int version;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static DirCacheVersion[] valuesCustom() {
             DirCacheVersion[] dirCacheVersionArrValuesCustom = values();
             int length = dirCacheVersionArrValuesCustom.length;
@@ -783,7 +783,7 @@ public class DirCache {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class DirCacheConfig {
         private final DirCacheVersion indexVersion;
         private final boolean skipHash;

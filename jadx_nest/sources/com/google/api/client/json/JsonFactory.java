@@ -9,7 +9,7 @@ import java.io.Writer;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class JsonFactory {
     public abstract JsonGenerator createJsonGenerator(OutputStream outputStream, Charset charset) throws IOException;
 

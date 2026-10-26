@@ -5,16 +5,16 @@ import java.util.Map;
 import java.util.Set;
 import org.slf4j.spi.MDCAdapter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicMDCAdapter implements MDCAdapter {
     private InheritableThreadLocal<Map<String, String>> inheritableThreadLocal = new AnonymousClass1();
 
-    /* JADX INFO: renamed from: org.slf4j.helpers.BasicMDCAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: org.slf4j.helpers.BasicMDCAdapter$1, reason: invalid class name */
     class AnonymousClass1 extends InheritableThreadLocal<Map<String, String>> {
         AnonymousClass1() {
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // java.lang.InheritableThreadLocal
         public Map<String, String> childValue(Map<String, String> map) {
             if (map == null) {

@@ -6,7 +6,7 @@ import org.apache.http.HttpRequest;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpCoreContext implements HttpContext {
     public static final String HTTP_CONNECTION = "http.connection";
     public static final String HTTP_REQUEST = "http.request";

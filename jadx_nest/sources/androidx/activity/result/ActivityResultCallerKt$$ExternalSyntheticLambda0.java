@@ -2,8 +2,8 @@ package androidx.activity.result;
 
 import kotlin.jvm.functions.Function1;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class ActivityResultCallerKt$$ExternalSyntheticLambda0 implements ActivityResultCallback {
     public final /* synthetic */ Function1 f$0;
 

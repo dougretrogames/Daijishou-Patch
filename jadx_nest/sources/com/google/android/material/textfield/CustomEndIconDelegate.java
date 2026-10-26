@@ -1,6 +1,6 @@
 package com.google.android.material.textfield;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class CustomEndIconDelegate extends EndIconDelegate {
     CustomEndIconDelegate(EndCompoundLayout endCompoundLayout) {
         super(endCompoundLayout);

@@ -2,8 +2,8 @@ package androidx.core.location;
 
 import java.util.concurrent.Executor;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class LocationManagerCompat$GpsStatusTransport$$ExternalSyntheticLambda3 implements Runnable {
     public final /* synthetic */ LocationManagerCompat.GpsStatusTransport f$0;
     public final /* synthetic */ Executor f$1;

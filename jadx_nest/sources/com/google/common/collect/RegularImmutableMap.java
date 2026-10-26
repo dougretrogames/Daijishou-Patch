@@ -8,7 +8,7 @@ import java.util.Objects;
 import javax.annotation.CheckForNull;
 import kotlin.UShort;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class RegularImmutableMap<K, V> extends ImmutableMap<K, V> {
     private static final byte ABSENT = -1;
@@ -310,7 +310,7 @@ final class RegularImmutableMap<K, V> extends ImmutableMap<K, V> {
             return asList().copyIntoArray(dst, offset);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.RegularImmutableMap$EntrySet$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.RegularImmutableMap$EntrySet$1, reason: invalid class name */
         class AnonymousClass1 extends ImmutableList<Map.Entry<K, V>> {
             @Override // com.google.common.collect.ImmutableCollection
             public boolean isPartialView() {

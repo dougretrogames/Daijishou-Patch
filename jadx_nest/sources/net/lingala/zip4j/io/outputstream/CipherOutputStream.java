@@ -5,7 +5,7 @@ import java.io.OutputStream;
 import net.lingala.zip4j.crypto.Encrypter;
 import net.lingala.zip4j.model.ZipParameters;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class CipherOutputStream<T extends Encrypter> extends OutputStream {
     private T encrypter;
     private ZipEntryOutputStream zipEntryOutputStream;

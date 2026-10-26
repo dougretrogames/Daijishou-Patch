@@ -5,7 +5,7 @@ import androidx.webkit.WebViewMediaIntegrityApiStatusConfig;
 import java.util.Set;
 import org.chromium.support_lib_boundary.WebSettingsBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebSettingsAdapter {
     private final WebSettingsBoundaryInterface mBoundaryInterface;
 

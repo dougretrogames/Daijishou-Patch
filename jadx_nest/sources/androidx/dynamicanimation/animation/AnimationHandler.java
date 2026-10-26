@@ -7,7 +7,7 @@ import android.view.Choreographer;
 import androidx.collection.SimpleArrayMap;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class AnimationHandler {
     private static final long FRAME_DELAY_MS = 10;
     public static final ThreadLocal<AnimationHandler> sAnimatorHandler = new ThreadLocal<>();
@@ -125,7 +125,7 @@ class AnimationHandler {
         private final Choreographer mChoreographer;
         private final Choreographer.FrameCallback mChoreographerCallback;
 
-        /* JADX INFO: renamed from: androidx.dynamicanimation.animation.AnimationHandler$FrameCallbackProvider16$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.dynamicanimation.animation.AnimationHandler$FrameCallbackProvider16$1, reason: invalid class name */
         class AnonymousClass1 implements Choreographer.FrameCallback {
             AnonymousClass1() {
             }
@@ -153,7 +153,7 @@ class AnimationHandler {
         long mLastFrameTime;
         private final Runnable mRunnable;
 
-        /* JADX INFO: renamed from: androidx.dynamicanimation.animation.AnimationHandler$FrameCallbackProvider14$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.dynamicanimation.animation.AnimationHandler$FrameCallbackProvider14$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             AnonymousClass1() {
             }

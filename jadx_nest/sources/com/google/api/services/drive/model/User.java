@@ -3,7 +3,7 @@ package com.google.api.services.drive.model;
 import com.google.api.client.json.GenericJson;
 import com.google.api.client.util.Key;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class User extends GenericJson {
 
     @Key

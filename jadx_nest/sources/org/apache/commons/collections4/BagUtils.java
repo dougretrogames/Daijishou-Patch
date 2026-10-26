@@ -12,7 +12,7 @@ import org.apache.commons.collections4.bag.TreeBag;
 import org.apache.commons.collections4.bag.UnmodifiableBag;
 import org.apache.commons.collections4.bag.UnmodifiableSortedBag;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BagUtils {
     public static final Bag EMPTY_BAG = UnmodifiableBag.unmodifiableBag(new HashBag());
     public static final Bag EMPTY_SORTED_BAG = UnmodifiableSortedBag.unmodifiableSortedBag(new TreeBag());

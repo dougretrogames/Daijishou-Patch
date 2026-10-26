@@ -21,12 +21,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class DateTypeAdapter extends TypeAdapter<Date> {
     public static final TypeAdapterFactory FACTORY = new AnonymousClass1();
     private final List<DateFormat> dateFormats;
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.DateTypeAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.DateTypeAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements TypeAdapterFactory {
         AnonymousClass1() {
         }

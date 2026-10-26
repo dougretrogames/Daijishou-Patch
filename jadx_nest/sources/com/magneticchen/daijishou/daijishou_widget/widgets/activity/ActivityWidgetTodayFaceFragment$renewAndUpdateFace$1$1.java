@@ -21,8 +21,8 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1", f = "ActivityWidgetTodayFaceFragment.kt", i = {}, l = {161, 164}, m = "invokeSuspendImpl", n = {}, s = {})
 final class ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -30,7 +30,7 @@ final class ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1 extends com.m
     int label;
     final /* synthetic */ ActivityWidgetTodayFaceFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1(ActivityWidgetTodayFaceFragment activityWidgetTodayFaceFragment, long j, Continuation<?> continuation) {
         super(2, continuation);
         this.this$0 = activityWidgetTodayFaceFragment;
@@ -191,8 +191,8 @@ final class ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1 extends com.m
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$1, reason: invalid class name */
+    /* INFO: compiled from: ActivityWidgetTodayFaceFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_widget.widgets.activity.ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1$1", f = "ActivityWidgetTodayFaceFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -200,7 +200,7 @@ final class ActivityWidgetTodayFaceFragment$renewAndUpdateFace$1$1 extends com.m
         int label;
         final /* synthetic */ ActivityWidgetTodayFaceFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(ActivityWidgetTodayFaceFragment activityWidgetTodayFaceFragment, long j, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = activityWidgetTodayFaceFragment;

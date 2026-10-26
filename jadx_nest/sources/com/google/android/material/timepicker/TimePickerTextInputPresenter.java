@@ -20,7 +20,7 @@ import com.google.android.material.internal.ViewUtils;
 import java.lang.reflect.Field;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class TimePickerTextInputPresenter implements TimePickerView.OnSelectionChange, TimePickerPresenter {
     private final TimePickerTextInputKeyController controller;
     private final EditText hourEditText;
@@ -33,7 +33,7 @@ class TimePickerTextInputPresenter implements TimePickerView.OnSelectionChange, 
     private final TextWatcher minuteTextWatcher = new AnonymousClass1();
     private final TextWatcher hourTextWatcher = new AnonymousClass2();
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.TimePickerTextInputPresenter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.TimePickerTextInputPresenter$1, reason: invalid class name */
     class AnonymousClass1 extends TextWatcherAdapter {
         AnonymousClass1() {
         }
@@ -51,7 +51,7 @@ class TimePickerTextInputPresenter implements TimePickerView.OnSelectionChange, 
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.TimePickerTextInputPresenter$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.TimePickerTextInputPresenter$2, reason: invalid class name */
     class AnonymousClass2 extends TextWatcherAdapter {
         AnonymousClass2() {
         }
@@ -99,7 +99,7 @@ class TimePickerTextInputPresenter implements TimePickerView.OnSelectionChange, 
         initialize();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.TimePickerTextInputPresenter$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.TimePickerTextInputPresenter$3, reason: invalid class name */
     class AnonymousClass3 implements View.OnClickListener {
         AnonymousClass3() {
         }
@@ -110,11 +110,11 @@ class TimePickerTextInputPresenter implements TimePickerView.OnSelectionChange, 
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.TimePickerTextInputPresenter$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.TimePickerTextInputPresenter$4, reason: invalid class name */
     class AnonymousClass4 extends ClickActionDelegate {
         final /* synthetic */ TimeModel val$time;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass4(Context context, int i, TimeModel timeModel) {
             super(context, i);
             this.val$time = timeModel;
@@ -127,11 +127,11 @@ class TimePickerTextInputPresenter implements TimePickerView.OnSelectionChange, 
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.TimePickerTextInputPresenter$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.TimePickerTextInputPresenter$5, reason: invalid class name */
     class AnonymousClass5 extends ClickActionDelegate {
         final /* synthetic */ TimeModel val$time;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass5(Context context, int i, TimeModel timeModel) {
             super(context, i);
             this.val$time = timeModel;
@@ -180,7 +180,7 @@ class TimePickerTextInputPresenter implements TimePickerView.OnSelectionChange, 
         updateSelection();
     }
 
-    /* JADX INFO: renamed from: lambda$setupPeriodToggle$0$com-google-android-material-timepicker-TimePickerTextInputPresenter, reason: not valid java name */
+    /* INFO: renamed from: lambda$setupPeriodToggle$0$com-google-android-material-timepicker-TimePickerTextInputPresenter, reason: not valid java name */
     /* synthetic */ void m3346xf2085e95(MaterialButtonToggleGroup materialButtonToggleGroup, int i, boolean z) {
         if (z) {
             this.time.setPeriod(i == R.id.material_clock_period_pm_button ? 1 : 0);

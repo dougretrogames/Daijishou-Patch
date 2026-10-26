@@ -1,6 +1,6 @@
 package androidx.constraintlayout.core.dsl;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class OnSwipe {
     public static final int FLAG_DISABLE_POST_SCROLL = 1;
     public static final int FLAG_DISABLE_SCROLL = 2;

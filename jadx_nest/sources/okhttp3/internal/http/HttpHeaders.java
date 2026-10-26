@@ -27,8 +27,8 @@ import okio.ByteString;
 import org.apache.http.message.BasicHeaderValueFormatter;
 import org.apache.http.protocol.HTTP;
 
-/* JADX INFO: compiled from: HttpHeaders.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: HttpHeaders.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000R\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0005\n\u0000\u001a\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0007\u001a\u0018\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\b*\u00020\n2\u0006\u0010\u000b\u001a\u00020\f\u001a\n\u0010\r\u001a\u00020\u0004*\u00020\u0006\u001a\u001a\u0010\u000e\u001a\u00020\u000f*\u00020\u00102\f\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\t0\u0012H\u0002\u001a\u000e\u0010\u0013\u001a\u0004\u0018\u00010\f*\u00020\u0010H\u0002\u001a\u000e\u0010\u0014\u001a\u0004\u0018\u00010\f*\u00020\u0010H\u0002\u001a\u001a\u0010\u0015\u001a\u00020\u000f*\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\n\u001a\f\u0010\u001a\u001a\u00020\u0004*\u00020\u0010H\u0002\u001a\u0014\u0010\u001b\u001a\u00020\u0004*\u00020\u00102\u0006\u0010\u001c\u001a\u00020\u001dH\u0002\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u001e"}, d2 = {"QUOTED_STRING_DELIMITERS", "Lokio/ByteString;", "TOKEN_DELIMITERS", "hasBody", "", "response", "Lokhttp3/Response;", "parseChallenges", "", "Lokhttp3/Challenge;", "Lokhttp3/Headers;", "headerName", "", "promisesBody", "readChallengeHeader", "", "Lokio/Buffer;", "result", "", "readQuotedString", "readToken", "receiveHeaders", "Lokhttp3/CookieJar;", "url", "Lokhttp3/HttpUrl;", "headers", "skipCommasAndWhitespace", "startsWith", "prefix", "", "okhttp"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class HttpHeaders {
     private static final ByteString QUOTED_STRING_DELIMITERS = ByteString.INSTANCE.encodeUtf8(BasicHeaderValueFormatter.UNSAFE_CHARS);
@@ -51,10 +51,10 @@ public final class HttpHeaders {
         return arrayList;
     }
 
-    /* JADX WARN: Code duplicated, block: B:27:0x008b  */
-    /* JADX WARN: Code duplicated, block: B:35:0x009e  */
-    /* JADX WARN: Code duplicated, block: B:36:0x00a3  */
-    /* JADX WARN: Code duplicated, block: B:59:0x00c2 A[EDGE_INSN: B:59:0x00c2->B:48:0x00c2 BREAK  A[LOOP:2: B:22:0x0079->B:47:0x00c0], SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:27:0x008b  */
+    /* WARN: Code duplicated, block: B:35:0x009e  */
+    /* WARN: Code duplicated, block: B:36:0x00a3  */
+    /* WARN: Code duplicated, block: B:59:0x00c2 A[EDGE_INSN: B:59:0x00c2->B:48:0x00c2 BREAK  A[LOOP:2: B:22:0x0079->B:47:0x00c0], SYNTHETIC] */
     private static final void readChallengeHeader(Buffer buffer, List<Challenge> list) throws EOFException {
         String token;
         while (true) {

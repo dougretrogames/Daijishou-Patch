@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class HttpRequestContent extends AbstractHttpContent {
     private static final String HTTP_VERSION = "HTTP/1.1";
     static final String NEWLINE = "\r\n";

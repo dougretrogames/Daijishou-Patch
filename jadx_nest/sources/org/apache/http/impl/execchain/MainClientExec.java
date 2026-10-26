@@ -43,7 +43,7 @@ import org.apache.http.protocol.RequestTargetHost;
 import org.apache.http.util.Args;
 import org.apache.http.util.EntityUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MainClientExec implements ClientExecChain {
     private final HttpAuthenticator authenticator;
     private final HttpClientConnectionManager connManager;
@@ -83,10 +83,10 @@ public class MainClientExec implements ClientExecChain {
         this(httpRequestExecutor, httpClientConnectionManager, connectionReuseStrategy, connectionKeepAliveStrategy, new ImmutableHttpProcessor(new RequestTargetHost()), authenticationStrategy, authenticationStrategy2, userTokenHandler);
     }
 
-    /* JADX WARN: Code duplicated, block: B:196:0x035e  */
-    /* JADX WARN: Code duplicated, block: B:199:0x0367  */
-    /* JADX WARN: Code duplicated, block: B:203:0x0374  */
-    /* JADX WARN: Code duplicated, block: B:206:0x037d  */
+    /* WARN: Code duplicated, block: B:196:0x035e  */
+    /* WARN: Code duplicated, block: B:199:0x0367  */
+    /* WARN: Code duplicated, block: B:203:0x0374  */
+    /* WARN: Code duplicated, block: B:206:0x037d  */
     @Override // org.apache.http.impl.execchain.ClientExecChain
     public CloseableHttpResponse execute(HttpRoute httpRoute, HttpRequestWrapper httpRequestWrapper, HttpClientContext httpClientContext, HttpExecutionAware httpExecutionAware) throws HttpException, IOException {
         AuthState authState;
@@ -476,8 +476,8 @@ public class MainClientExec implements ClientExecChain {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:29:0x00c4 A[LOOP:0: B:3:0x000d->B:29:0x00c4, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:34:0x00c3 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:29:0x00c4 A[LOOP:0: B:3:0x000d->B:29:0x00c4, LOOP_END] */
+    /* WARN: Code duplicated, block: B:34:0x00c3 A[SYNTHETIC] */
     void establishRoute(AuthState authState, HttpClientConnection httpClientConnection, HttpRoute httpRoute, HttpRequest httpRequest, HttpClientContext httpClientContext) throws HttpException, IOException {
         HttpClientContext httpClientContext2;
         HttpRoute httpRoute2;

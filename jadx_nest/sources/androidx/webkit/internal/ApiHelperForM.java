@@ -11,7 +11,7 @@ import androidx.webkit.WebMessageCompat;
 import androidx.webkit.WebMessagePortCompat;
 import androidx.webkit.WebViewCompat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ApiHelperForM {
     private ApiHelperForM() {
     }
@@ -24,7 +24,7 @@ public class ApiHelperForM {
         webMessagePort.close();
     }
 
-    /* JADX INFO: renamed from: androidx.webkit.internal.ApiHelperForM$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.webkit.internal.ApiHelperForM$1, reason: invalid class name */
     class AnonymousClass1 extends WebMessagePort.WebMessageCallback {
         final /* synthetic */ WebMessagePortCompat.WebMessageCallbackCompat val$callback;
 
@@ -42,7 +42,7 @@ public class ApiHelperForM {
         webMessagePort.setWebMessageCallback(new AnonymousClass1(webMessageCallbackCompat));
     }
 
-    /* JADX INFO: renamed from: androidx.webkit.internal.ApiHelperForM$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.webkit.internal.ApiHelperForM$2, reason: invalid class name */
     class AnonymousClass2 extends WebMessagePort.WebMessageCallback {
         final /* synthetic */ WebMessagePortCompat.WebMessageCallbackCompat val$callback;
 
@@ -84,7 +84,7 @@ public class ApiHelperForM {
         return webSettings.getOffscreenPreRaster();
     }
 
-    /* JADX INFO: renamed from: androidx.webkit.internal.ApiHelperForM$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.webkit.internal.ApiHelperForM$3, reason: invalid class name */
     class AnonymousClass3 extends WebView.VisualStateCallback {
         final /* synthetic */ WebViewCompat.VisualStateCallback val$callback;
 

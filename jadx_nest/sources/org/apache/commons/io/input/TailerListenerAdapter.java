@@ -1,6 +1,6 @@
 package org.apache.commons.io.input;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TailerListenerAdapter implements TailerListener {
     public void endOfFileReached() {
     }

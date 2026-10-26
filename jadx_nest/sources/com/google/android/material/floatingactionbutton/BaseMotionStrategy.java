@@ -14,7 +14,7 @@ import com.google.android.material.animation.MotionSpec;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class BaseMotionStrategy implements MotionStrategy {
     private final Context context;
     private MotionSpec defaultMotionSpec;
@@ -115,7 +115,7 @@ abstract class BaseMotionStrategy implements MotionStrategy {
         return animatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.floatingactionbutton.BaseMotionStrategy$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.floatingactionbutton.BaseMotionStrategy$1, reason: invalid class name */
     class AnonymousClass1 extends Property<ExtendedFloatingActionButton, Float> {
         AnonymousClass1(Class cls, String str) {
             super(cls, str);

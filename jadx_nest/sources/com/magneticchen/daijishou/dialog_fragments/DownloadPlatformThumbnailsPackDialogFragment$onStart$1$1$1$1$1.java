@@ -11,14 +11,14 @@ import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: DownloadPlatformThumbnailsPackDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DownloadPlatformThumbnailsPackDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1$1$1 extends Lambda<Unit> implements Function0<Unit> {
     final /* synthetic */ String $platformThumbnailPackUrlString;
     final /* synthetic */ DownloadPlatformThumbnailsPackDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1$1$1(DownloadPlatformThumbnailsPackDialogFragment downloadPlatformThumbnailsPackDialogFragment, String str) {
         super(0);
         this.this$0 = downloadPlatformThumbnailsPackDialogFragment;
@@ -31,7 +31,7 @@ final class DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1$1$1 exten
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2() {
         this.this$0.getDefaultSharedPreferences().edit().putString(StringPreference.SELECTED_PLATFORM_THUMBNAILS_PACK_URL_STRING.getKey(), this.$platformThumbnailPackUrlString).apply();
         this.this$0.setCancelable(false);
@@ -70,13 +70,13 @@ final class DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1$1$1 exten
         this.this$0.getDaijishouLibrary().applyPlatformPreviewMediaPackIndexJsonToAllPlatforms(this.$platformThumbnailPackUrlString, 1, new AnonymousClass1(this.this$0));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1$1$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DownloadPlatformThumbnailsPackDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformThumbnailsPackDialogFragment$onStart$1$1$1$1$1$1, reason: invalid class name */
+    /* INFO: compiled from: DownloadPlatformThumbnailsPackDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "finished", "", "progress", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda<Unit> implements Function2<Boolean, Integer, Unit> {
         final /* synthetic */ DownloadPlatformThumbnailsPackDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(DownloadPlatformThumbnailsPackDialogFragment downloadPlatformThumbnailsPackDialogFragment) {
             super(2);
             this.this$0 = downloadPlatformThumbnailsPackDialogFragment;

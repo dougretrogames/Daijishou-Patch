@@ -18,7 +18,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 import javax.annotation.CheckForNull;
 import kotlin.text.Typography;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class TypeResolver {
     private final TypeTable typeTable;
@@ -53,7 +53,7 @@ public final class TypeResolver {
         return new TypeResolver(this.typeTable.where(mappings));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void populateTypeMappings(Map<TypeVariableKey, Type> mappings, Type from, Type to) {
         if (from.equals(to)) {
             return;
@@ -61,7 +61,7 @@ public final class TypeResolver {
         new AnonymousClass1(mappings, to).visit(from);
     }
 
-    /* JADX INFO: renamed from: com.google.common.reflect.TypeResolver$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.reflect.TypeResolver$1, reason: invalid class name */
     class AnonymousClass1 extends TypeVisitor {
         final /* synthetic */ Map val$mappings;
         final /* synthetic */ Type val$to;
@@ -154,7 +154,7 @@ public final class TypeResolver {
         return types;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Type[] resolveTypes(Type[] types) {
         Type[] typeArr = new Type[types.length];
         for (int i = 0; i < types.length; i++) {
@@ -176,7 +176,7 @@ public final class TypeResolver {
         return Types.newParameterizedTypeWithOwner(ownerType == null ? null : resolveType(ownerType), (Class) resolveType(type.getRawType()), resolveTypes(type.getActualTypeArguments()));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <T> T expectArgument(Class<T> type, Object arg) {
         try {
             return type.cast(arg);
@@ -208,7 +208,7 @@ public final class TypeResolver {
             return new TypeTable(builder.buildOrThrow());
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.TypeResolver$TypeTable$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.TypeResolver$TypeTable$1, reason: invalid class name */
         class AnonymousClass1 extends TypeTable {
             final /* synthetic */ TypeTable val$unguarded;
             final /* synthetic */ TypeVariable val$var;
@@ -307,7 +307,7 @@ public final class TypeResolver {
     private static class WildcardCapturer {
         static final WildcardCapturer INSTANCE = new WildcardCapturer();
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         private final AtomicInteger f52id;
 
         /* synthetic */ WildcardCapturer(AtomicInteger atomicInteger, AnonymousClass1 anonymousClass1) {
@@ -351,11 +351,11 @@ public final class TypeResolver {
             return Types.newArtificialTypeVariable(WildcardCapturer.class, "capture#" + this.f52id.incrementAndGet() + "-of ? extends " + Joiner.on(Typography.amp).join(upperBounds), upperBounds);
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.TypeResolver$WildcardCapturer$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.TypeResolver$WildcardCapturer$1, reason: invalid class name */
         class AnonymousClass1 extends WildcardCapturer {
             final /* synthetic */ TypeVariable val$typeParam;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(final WildcardCapturer this$0, AtomicInteger id2, final TypeVariable val$typeParam) {
                 super(id2, null);
                 this.val$typeParam = val$typeParam;

@@ -3,8 +3,8 @@ package androidx.compose.runtime;
 import kotlin.Metadata;
 import kotlin.reflect.KProperty;
 
-/* JADX INFO: compiled from: SnapshotLongState.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: SnapshotLongState.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"androidx/compose/runtime/SnapshotLongStateKt__SnapshotLongStateKt"}, k = 4, mv = {1, 8, 0}, xi = 48)
 public final class SnapshotLongStateKt {
     public static final long getValue(LongState longState, Object obj, KProperty<?> kProperty) {

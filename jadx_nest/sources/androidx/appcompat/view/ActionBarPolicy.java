@@ -6,7 +6,7 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import androidx.appcompat.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ActionBarPolicy {
     private Context mContext;
 

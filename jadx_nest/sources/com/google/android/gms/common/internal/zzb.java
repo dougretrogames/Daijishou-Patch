@@ -6,12 +6,12 @@ import android.os.Message;
 import android.util.Log;
 import com.google.android.gms.common.ConnectionResult;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 final class zzb extends com.google.android.gms.internal.common.zzi {
     final /* synthetic */ BaseGmsClient zza;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public zzb(BaseGmsClient baseGmsClient, Looper looper) {
         super(looper);
         this.zza = baseGmsClient;

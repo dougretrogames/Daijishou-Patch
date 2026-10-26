@@ -3,7 +3,7 @@ package androidx.leanback.app;
 import androidx.leanback.widget.ObjectAdapter;
 import androidx.leanback.widget.Row;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class ListRowDataAdapter extends ObjectAdapter {
     public static final int ON_CHANGED = 16;
     public static final int ON_ITEM_RANGE_CHANGED = 2;

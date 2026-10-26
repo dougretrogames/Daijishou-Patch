@@ -13,14 +13,14 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.ranges.IntRange;
 
-/* JADX INFO: compiled from: StaticClientCommandDefinition.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: StaticClientCommandDefinition.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Lcom/magneticchen/daijishou/daijishou_debug_service/passive_protocol/ClientOperation;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class StaticClientCommandDefinition$operationInstances$2 extends Lambda<List<? extends ClientOperation>> implements Function0<List<? extends ClientOperation>> {
     final /* synthetic */ HashMap<Byte, ClientOperation> $operationCodeToInstanceHashMap;
     final /* synthetic */ StaticClientCommandDefinition this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     StaticClientCommandDefinition$operationInstances$2(StaticClientCommandDefinition staticClientCommandDefinition, HashMap<Byte, ClientOperation> map) {
         super(0);
         this.this$0 = staticClientCommandDefinition;

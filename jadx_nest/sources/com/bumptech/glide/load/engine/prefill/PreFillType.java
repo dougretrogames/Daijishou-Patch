@@ -4,7 +4,7 @@ import android.graphics.Bitmap;
 import com.bumptech.glide.util.Preconditions;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class PreFillType {
     static final Bitmap.Config DEFAULT_CONFIG = Bitmap.Config.RGB_565;
     private final Bitmap.Config config;

@@ -3,7 +3,7 @@ package org.apache.commons.io.output;
 import java.util.Objects;
 import org.apache.commons.io.function.Uncheck;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class UncheckedAppendableImpl implements UncheckedAppendable {
     private final Appendable appendable;
 

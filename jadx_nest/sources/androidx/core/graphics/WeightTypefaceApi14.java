@@ -8,7 +8,7 @@ import androidx.collection.LongSparseArray;
 import androidx.core.content.res.FontResourcesParserCompat;
 import java.lang.reflect.Field;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class WeightTypefaceApi14 {
     private static final String NATIVE_INSTANCE_FIELD = "native_instance";
     private static final String TAG = "WeightTypeface";

@@ -21,7 +21,7 @@ import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Asserts;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public abstract class AbstractAuthenticationHandler implements AuthenticationHandler {
     private static final List<String> DEFAULT_SCHEME_PRIORITY = Collections.unmodifiableList(Arrays.asList("Negotiate", "NTLM", "Digest", "Basic"));
@@ -65,8 +65,8 @@ public abstract class AbstractAuthenticationHandler implements AuthenticationHan
         return getAuthPreferences();
     }
 
-    /* JADX WARN: Code duplicated, block: B:26:0x00c2 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:27:0x00c3  */
+    /* WARN: Code duplicated, block: B:26:0x00c2 A[RETURN] */
+    /* WARN: Code duplicated, block: B:27:0x00c3  */
     @Override // org.apache.http.client.AuthenticationHandler
     public AuthScheme selectScheme(Map<String, Header> map, HttpResponse httpResponse, HttpContext httpContext) throws AuthenticationException {
         AuthScheme authScheme;

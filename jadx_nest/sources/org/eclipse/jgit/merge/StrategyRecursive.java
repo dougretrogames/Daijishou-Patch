@@ -4,7 +4,7 @@ import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.ObjectInserter;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StrategyRecursive extends StrategyResolve {
     @Override // org.eclipse.jgit.merge.StrategyResolve, org.eclipse.jgit.merge.ThreeWayMergeStrategy, org.eclipse.jgit.merge.MergeStrategy
     public ThreeWayMerger newMerger(Repository repository) {

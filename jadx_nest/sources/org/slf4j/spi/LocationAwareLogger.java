@@ -3,7 +3,7 @@ package org.slf4j.spi;
 import org.slf4j.Logger;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface LocationAwareLogger extends Logger {
     public static final int DEBUG_INT = 10;
     public static final int ERROR_INT = 40;

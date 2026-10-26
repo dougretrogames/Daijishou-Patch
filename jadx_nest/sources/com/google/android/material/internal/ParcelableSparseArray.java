@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.SparseArray;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ParcelableSparseArray extends SparseArray<Parcelable> implements Parcelable {
     public static final Parcelable.Creator<ParcelableSparseArray> CREATOR = new AnonymousClass1();
 
@@ -40,12 +40,12 @@ public class ParcelableSparseArray extends SparseArray<Parcelable> implements Pa
         parcel.writeParcelableArray(parcelableArr, i);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.ParcelableSparseArray$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.ParcelableSparseArray$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.ClassLoaderCreator<ParcelableSparseArray> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.ClassLoaderCreator
         public ParcelableSparseArray createFromParcel(Parcel parcel, ClassLoader classLoader) {
             return new ParcelableSparseArray(parcel, classLoader);

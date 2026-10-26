@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UnsynchronizedBufferedInputStream extends UnsynchronizedFilterInputStream {
     protected volatile byte[] buffer;
     protected int count;

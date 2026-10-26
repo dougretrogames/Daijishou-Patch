@@ -2,7 +2,7 @@ package com.googlecode.javaewah;
 
 import java.nio.LongBuffer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class LongBufferWrapper implements Buffer, Cloneable {
     private int actualSizeInWords;
     private LongBuffer buffer;
@@ -131,7 +131,7 @@ final class LongBufferWrapper implements Buffer, Cloneable {
     }
 
     @Override // com.googlecode.javaewah.Buffer
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public LongBufferWrapper m3465clone() throws CloneNotSupportedException {
         return new LongBufferWrapper(this.buffer, this.actualSizeInWords);
     }

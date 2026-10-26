@@ -12,7 +12,7 @@ import androidx.core.view.ViewCompat;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class MonthsPagerAdapter extends RecyclerView.Adapter<ViewHolder> {
     private final CalendarConstraints calendarConstraints;
     private final DateSelector<?> dateSelector;
@@ -81,7 +81,7 @@ class MonthsPagerAdapter extends RecyclerView.Adapter<ViewHolder> {
         materialCalendarGridView.setOnItemClickListener(new AnonymousClass1(materialCalendarGridView));
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MonthsPagerAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MonthsPagerAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements AdapterView.OnItemClickListener {
         final /* synthetic */ MaterialCalendarGridView val$monthGrid;
 

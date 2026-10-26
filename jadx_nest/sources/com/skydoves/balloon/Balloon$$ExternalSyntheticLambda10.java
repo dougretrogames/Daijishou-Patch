@@ -4,8 +4,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import kotlin.jvm.functions.Function2;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class Balloon$$ExternalSyntheticLambda10 implements Function2 {
     public final /* synthetic */ View f$0;
     public final /* synthetic */ Balloon f$1;

@@ -2,8 +2,8 @@ package com.magneticchen.daijishou.activities.abstract_classes;
 
 import android.content.SharedPreferences;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class DaijishouAppCompatActivity$$ExternalSyntheticLambda1 implements SharedPreferences.OnSharedPreferenceChangeListener {
     public final /* synthetic */ DaijishouAppCompatActivity f$0;
 

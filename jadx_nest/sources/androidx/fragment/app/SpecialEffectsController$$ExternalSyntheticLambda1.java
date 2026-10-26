@@ -1,7 +1,7 @@
 package androidx.fragment.app;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class SpecialEffectsController$$ExternalSyntheticLambda1 implements Runnable {
     public final /* synthetic */ SpecialEffectsController f$0;
     public final /* synthetic */ SpecialEffectsController.FragmentStateManagerOperation f$1;

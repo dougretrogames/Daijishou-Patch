@@ -2,7 +2,7 @@ package io.opencensus.stats;
 
 import io.opencensus.common.Timestamp;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @Deprecated
 final class AutoValue_ViewData_AggregationWindowData_CumulativeData extends ViewData.AggregationWindowData.CumulativeData {
     private final Timestamp end;

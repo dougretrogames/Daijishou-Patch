@@ -8,7 +8,7 @@ import android.text.TextUtils;
 import android.util.Log;
 import org.eclipse.jgit.lib.CommitConfig$$ExternalSyntheticBackport0;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class DocumentsContractApi19 {
     private static final int FLAG_VIRTUAL_DOCUMENT = 512;
     private static final String TAG = "DocumentFile";

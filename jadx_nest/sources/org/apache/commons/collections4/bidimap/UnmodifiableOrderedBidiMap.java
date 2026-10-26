@@ -9,11 +9,11 @@ import org.apache.commons.collections4.iterators.UnmodifiableOrderedMapIterator;
 import org.apache.commons.collections4.map.UnmodifiableEntrySet;
 import org.apache.commons.collections4.set.UnmodifiableSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UnmodifiableOrderedBidiMap<K, V> extends AbstractOrderedBidiMapDecorator<K, V> implements Unmodifiable {
     private UnmodifiableOrderedBidiMap<V, K> inverse;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <K, V> OrderedBidiMap<K, V> unmodifiableOrderedBidiMap(OrderedBidiMap<? extends K, ? extends V> orderedBidiMap) {
         return orderedBidiMap instanceof Unmodifiable ? orderedBidiMap : new UnmodifiableOrderedBidiMap(orderedBidiMap);
     }
@@ -37,7 +37,7 @@ public final class UnmodifiableOrderedBidiMap<K, V> extends AbstractOrderedBidiM
         return inverseOrderedBidiMap();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public OrderedBidiMap<V, K> inverseOrderedBidiMap() {
         if (this.inverse == null) {
             UnmodifiableOrderedBidiMap<V, K> unmodifiableOrderedBidiMap = new UnmodifiableOrderedBidiMap<>(decorated().inverseBidiMap());

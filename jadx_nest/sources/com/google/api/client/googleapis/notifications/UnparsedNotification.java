@@ -2,7 +2,7 @@ package com.google.api.client.googleapis.notifications;
 
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class UnparsedNotification extends AbstractNotification {
     private InputStream contentStream;
     private String contentType;

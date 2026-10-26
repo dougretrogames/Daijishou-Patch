@@ -1,6 +1,6 @@
 package io.noties.markwon;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public interface RenderProps {
     <T> void clear(Prop<T> prop);
 

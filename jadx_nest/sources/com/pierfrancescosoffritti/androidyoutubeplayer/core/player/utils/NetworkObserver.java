@@ -12,8 +12,8 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: NetworkObserver.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: NetworkObserver.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u00002\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\b\u0000\u0018\u00002\u00020\u0001:\u0001\u0013B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0006\u0010\u000e\u001a\u00020\u000fJ\u0010\u0010\u0010\u001a\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0003J\u0010\u0010\u0011\u001a\u00020\u000f2\u0006\u0010\u0002\u001a\u00020\u0003H\u0002J\u0006\u0010\u0012\u001a\u00020\u000fR\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u0017\u0010\u0005\u001a\b\u0012\u0004\u0012\u00020\u00070\u0006¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0010\u0010\n\u001a\u0004\u0018\u00010\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\f\u001a\u0004\u0018\u00010\rX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0014"}, d2 = {"Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/utils/NetworkObserver;", "", "context", "Landroid/content/Context;", "(Landroid/content/Context;)V", "listeners", "", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/utils/NetworkObserver$Listener;", "getListeners", "()Ljava/util/List;", "networkBroadcastReceiver", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/utils/NetworkBroadcastReceiver;", "networkCallback", "Landroid/net/ConnectivityManager$NetworkCallback;", "destroy", "", "doObserveNetwork", "doObserveNetworkLegacy", "observeNetwork", "Listener", "core_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class NetworkObserver {
     private final Context context;
@@ -21,7 +21,7 @@ public final class NetworkObserver {
     private NetworkBroadcastReceiver networkBroadcastReceiver;
     private ConnectivityManager.NetworkCallback networkCallback;
 
-    /* JADX INFO: compiled from: NetworkObserver.kt */
+    /* INFO: compiled from: NetworkObserver.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\bf\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H&J\b\u0010\u0004\u001a\u00020\u0003H&¨\u0006\u0005"}, d2 = {"Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/utils/NetworkObserver$Listener;", "", "onNetworkAvailable", "", "onNetworkUnavailable", "core_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public interface Listener {
         void onNetworkAvailable();
@@ -64,8 +64,8 @@ public final class NetworkObserver {
         ((ConnectivityManager) systemService).registerDefaultNetworkCallback(networkObserver$doObserveNetwork$callback$1);
     }
 
-    /* JADX INFO: renamed from: com.pierfrancescosoffritti.androidyoutubeplayer.core.player.utils.NetworkObserver$doObserveNetworkLegacy$1, reason: invalid class name */
-    /* JADX INFO: compiled from: NetworkObserver.kt */
+    /* INFO: renamed from: com.pierfrancescosoffritti.androidyoutubeplayer.core.player.utils.NetworkObserver$doObserveNetworkLegacy$1, reason: invalid class name */
+    /* INFO: compiled from: NetworkObserver.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function0<Unit> {
         AnonymousClass1() {
@@ -78,7 +78,7 @@ public final class NetworkObserver {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             Iterator<T> it = NetworkObserver.this.getListeners().iterator();
             while (it.hasNext()) {
@@ -87,8 +87,8 @@ public final class NetworkObserver {
         }
     }
 
-    /* JADX INFO: renamed from: com.pierfrancescosoffritti.androidyoutubeplayer.core.player.utils.NetworkObserver$doObserveNetworkLegacy$2, reason: invalid class name */
-    /* JADX INFO: compiled from: NetworkObserver.kt */
+    /* INFO: renamed from: com.pierfrancescosoffritti.androidyoutubeplayer.core.player.utils.NetworkObserver$doObserveNetworkLegacy$2, reason: invalid class name */
+    /* INFO: compiled from: NetworkObserver.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda implements Function0<Unit> {
         AnonymousClass2() {
@@ -101,7 +101,7 @@ public final class NetworkObserver {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             Iterator<T> it = NetworkObserver.this.getListeners().iterator();
             while (it.hasNext()) {

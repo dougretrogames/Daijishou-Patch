@@ -15,7 +15,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.NoSuchElementException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class RopeByteString extends ByteString {
     static final int[] minLengthByDepth = {1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, TypedValues.MotionType.TYPE_QUANTIZE_MOTIONSTEPS, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040, 1346269, 2178309, 3524578, 5702887, 9227465, 14930352, 24157817, 39088169, 63245986, 102334155, 165580141, 267914296, 433494437, 701408733, 1134903170, 1836311903, Integer.MAX_VALUE};
     private static final long serialVersionUID = 1;
@@ -105,7 +105,7 @@ final class RopeByteString extends ByteString {
         return this.totalLength;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.RopeByteString$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.RopeByteString$1, reason: invalid class name */
     class AnonymousClass1 extends ByteString.AbstractByteIterator {
         ByteString.ByteIterator current = nextPiece();
         final PieceIterator pieces;
@@ -114,7 +114,7 @@ final class RopeByteString extends ByteString {
             this.pieces = new PieceIterator(RopeByteString.this, null);
         }
 
-        /* JADX WARN: Type inference failed for: r0v5, types: [com.google.protobuf.ByteString$ByteIterator] */
+        /* WARN: Type inference failed for: r0v5, types: [com.google.protobuf.ByteString$ByteIterator] */
         private ByteString.ByteIterator nextPiece() {
             if (this.pieces.hasNext()) {
                 return this.pieces.next().iterator();
@@ -142,7 +142,7 @@ final class RopeByteString extends ByteString {
     }
 
     @Override // com.google.protobuf.ByteString, java.lang.Iterable
-    /* JADX INFO: renamed from: iterator */
+    /* INFO: renamed from: iterator */
     public Iterator<Byte> iterator2() {
         return new AnonymousClass1();
     }
@@ -382,7 +382,7 @@ final class RopeByteString extends ByteString {
             this();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public ByteString balance(ByteString left, ByteString right) {
             doBalance(left);
             doBalance(right);
@@ -483,7 +483,7 @@ final class RopeByteString extends ByteString {
             return this.next != null;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.Iterator
         public ByteString.LeafByteString next() {
             ByteString.LeafByteString leafByteString = this.next;

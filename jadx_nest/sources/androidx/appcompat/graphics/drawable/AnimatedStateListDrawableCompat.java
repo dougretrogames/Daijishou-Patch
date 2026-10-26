@@ -27,7 +27,7 @@ import java.io.IOException;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AnimatedStateListDrawableCompat extends StateListDrawableCompat implements TintAwareDrawable {
     private static final String ELEMENT_ITEM = "item";
     private static final String ELEMENT_TRANSITION = "transition";
@@ -399,7 +399,7 @@ public class AnimatedStateListDrawableCompat extends StateListDrawableCompat imp
         return this;
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // androidx.appcompat.graphics.drawable.StateListDrawableCompat, androidx.appcompat.graphics.drawable.DrawableContainerCompat
     public AnimatedStateListState cloneConstantState() {
         return new AnimatedStateListState(this.mState, this, null);

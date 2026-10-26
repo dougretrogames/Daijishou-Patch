@@ -7,7 +7,7 @@ import org.apache.commons.codec.StringEncoder;
 import org.apache.http.message.TokenParser;
 import org.eclipse.jgit.transport.WalkEncryption;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MatchRatingApproachEncoder implements StringEncoder {
     private static final String[] DOUBLE_CONSONANT = {"BB", "CC", "DD", "FF", "GG", "HH", "JJ", "KK", "LL", "MM", "NN", "PP", "QQ", "RR", "SS", "TT", "VV", "WW", "XX", "YY", "ZZ"};
     private static final String EMPTY = "";

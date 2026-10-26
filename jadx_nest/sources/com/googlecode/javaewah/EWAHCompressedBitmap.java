@@ -16,7 +16,7 @@ import java.util.Iterator;
 import java.util.List;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class EWAHCompressedBitmap implements Cloneable, Externalizable, Iterable<Integer>, BitmapStorage, LogicalElement<EWAHCompressedBitmap> {
     public static final boolean ADJUST_CONTAINER_SIZE_WHEN_AGGREGATING = true;
     public static final int WORD_IN_BITS = 64;
@@ -303,7 +303,7 @@ public final class EWAHCompressedBitmap implements Cloneable, Externalizable, It
         this.rlw.position = 0;
     }
 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public EWAHCompressedBitmap m3460clone() throws CloneNotSupportedException {
         EWAHCompressedBitmap eWAHCompressedBitmap = new EWAHCompressedBitmap(this.buffer.m3465clone());
         eWAHCompressedBitmap.sizeInBits = this.sizeInBits;
@@ -481,7 +481,7 @@ public final class EWAHCompressedBitmap implements Cloneable, Externalizable, It
         return new ChunkIteratorImpl(getEWAHIterator(), this.sizeInBits);
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.EWAHCompressedBitmap$1, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.EWAHCompressedBitmap$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<Integer> {
         private final IntIterator under;
 
@@ -494,7 +494,7 @@ public final class EWAHCompressedBitmap implements Cloneable, Externalizable, It
             return this.under.hasNext();
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.Iterator
         public Integer next() {
             return Integer.valueOf(this.under.next());

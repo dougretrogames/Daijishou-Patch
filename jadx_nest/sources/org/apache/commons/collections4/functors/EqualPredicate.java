@@ -5,7 +5,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.Equator;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class EqualPredicate<T> extends AbstractPredicate<T> implements Serializable {
     private static final long serialVersionUID = 5633766978029907089L;
     private final Equator<T> equator;

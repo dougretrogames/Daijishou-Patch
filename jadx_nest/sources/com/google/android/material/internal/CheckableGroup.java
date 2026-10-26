@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CheckableGroup<T extends MaterialCheckable<T>> {
     private final Map<Integer, T> checkables = new HashMap();
     private final Set<Integer> checkedIds = new HashSet();
@@ -46,7 +46,7 @@ public class CheckableGroup<T extends MaterialCheckable<T>> {
         this.onCheckedStateChangeListener = onCheckedStateChangeListener;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public void addCheckable(T t) {
         this.checkables.put(Integer.valueOf(t.getId()), t);
         if (t.isChecked()) {
@@ -55,7 +55,7 @@ public class CheckableGroup<T extends MaterialCheckable<T>> {
         t.setInternalOnCheckedChangeListener(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.CheckableGroup$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.CheckableGroup$1, reason: invalid class name */
     class AnonymousClass1 implements MaterialCheckable.OnCheckedChangeListener<T> {
         AnonymousClass1() {
         }
@@ -131,7 +131,7 @@ public class CheckableGroup<T extends MaterialCheckable<T>> {
         return arrayList;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean checkInternal(MaterialCheckable<T> materialCheckable) {
         int id2 = materialCheckable.getId();
         if (this.checkedIds.contains(Integer.valueOf(id2))) {
@@ -148,7 +148,7 @@ public class CheckableGroup<T extends MaterialCheckable<T>> {
         return zAdd;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean uncheckInternal(MaterialCheckable<T> materialCheckable, boolean z) {
         int id2 = materialCheckable.getId();
         if (!this.checkedIds.contains(Integer.valueOf(id2))) {
@@ -165,7 +165,7 @@ public class CheckableGroup<T extends MaterialCheckable<T>> {
         return zRemove;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void onCheckedStateChanged() {
         OnCheckedStateChangeListener onCheckedStateChangeListener = this.onCheckedStateChangeListener;
         if (onCheckedStateChangeListener != null) {

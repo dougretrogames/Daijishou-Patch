@@ -11,7 +11,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.transport.PackedObjectInfo;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class PackReverseIndexWriter {
     private static final int DEFAULT_VERSION = 1;
     protected final DataOutput dataOutput;

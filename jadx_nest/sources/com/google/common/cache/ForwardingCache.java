@@ -9,10 +9,10 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ExecutionException;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ForwardingCache<K, V> extends ForwardingObject implements Cache<K, V> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingObject
     public abstract Cache<K, V> delegate();
 
@@ -87,7 +87,7 @@ public abstract class ForwardingCache<K, V> extends ForwardingObject implements 
             this.delegate = (Cache) Preconditions.checkNotNull(delegate);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.cache.ForwardingCache, com.google.common.collect.ForwardingObject
         public final Cache<K, V> delegate() {
             return this.delegate;

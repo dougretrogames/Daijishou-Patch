@@ -6,7 +6,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.Factory;
 import org.apache.commons.collections4.FunctorException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class InstantiateFactory<T> implements Factory<T> {
     private final Object[] iArgs;
     private final Class<T> iClassToInstantiate;

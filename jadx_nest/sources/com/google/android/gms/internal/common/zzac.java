@@ -10,8 +10,8 @@ import java.util.Spliterators;
 import javax.annotation.CheckForNull;
 import org.jspecify.nullness.NullMarked;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock("Use ImmutableList.of or another implementation")
 @NullMarked
 public abstract class zzac extends AbstractCollection implements Serializable {
@@ -83,7 +83,7 @@ public abstract class zzac extends AbstractCollection implements Serializable {
     }
 
     @Override // java.util.AbstractCollection, java.util.Collection, java.lang.Iterable
-    /* JADX INFO: renamed from: zze, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: zze, reason: merged with bridge method [inline-methods] */
     public abstract zzaj iterator();
 
     abstract boolean zzf();

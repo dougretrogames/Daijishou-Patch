@@ -1,6 +1,6 @@
 package org.apache.http.cookie;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface SM {
     public static final String COOKIE = "Cookie";
     public static final String COOKIE2 = "Cookie2";

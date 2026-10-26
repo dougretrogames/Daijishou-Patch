@@ -3,7 +3,7 @@ package org.apache.commons.codec.language;
 import androidx.exifinterface.media.ExifInterface;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Caverphone1 extends AbstractCaverphone {
     private static final String SIX_1 = "111111";
 

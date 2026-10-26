@@ -1,6 +1,6 @@
 package org.eclipse.jgit.revwalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class EndGenerator extends Generator {
     static final EndGenerator INSTANCE = new EndGenerator();
 

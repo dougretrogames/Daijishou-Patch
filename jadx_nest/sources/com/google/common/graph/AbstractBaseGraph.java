@@ -13,7 +13,7 @@ import java.util.Iterator;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractBaseGraph<N> implements BaseGraph<N> {
     AbstractBaseGraph() {
@@ -29,7 +29,7 @@ abstract class AbstractBaseGraph<N> implements BaseGraph<N> {
         return jDegree >>> 1;
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.AbstractBaseGraph$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.AbstractBaseGraph$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractSet<EndpointPair<N>> {
         AnonymousClass1() {
         }
@@ -76,7 +76,7 @@ abstract class AbstractBaseGraph<N> implements BaseGraph<N> {
         return (Set<EndpointPair<N>>) nodeInvalidatableSet(new AnonymousClass2(this, this, n), n);
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.AbstractBaseGraph$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.AbstractBaseGraph$2, reason: invalid class name */
     class AnonymousClass2 extends IncidentEdgeSet<N> {
         AnonymousClass2(final AbstractBaseGraph this$0, BaseGraph graph, Object node) {
             super(graph, node);
@@ -90,17 +90,17 @@ abstract class AbstractBaseGraph<N> implements BaseGraph<N> {
             return Iterators.unmodifiableIterator(Iterators.transform(this.graph.adjacentNodes(this.node).iterator(), new AbstractBaseGraph$2$$ExternalSyntheticLambda2(this)));
         }
 
-        /* JADX INFO: renamed from: lambda$iterator$0$com-google-common-graph-AbstractBaseGraph$2, reason: not valid java name */
+        /* INFO: renamed from: lambda$iterator$0$com-google-common-graph-AbstractBaseGraph$2, reason: not valid java name */
         /* synthetic */ EndpointPair m3355lambda$iterator$0$comgooglecommongraphAbstractBaseGraph$2(Object obj) {
             return EndpointPair.ordered(obj, this.node);
         }
 
-        /* JADX INFO: renamed from: lambda$iterator$1$com-google-common-graph-AbstractBaseGraph$2, reason: not valid java name */
+        /* INFO: renamed from: lambda$iterator$1$com-google-common-graph-AbstractBaseGraph$2, reason: not valid java name */
         /* synthetic */ EndpointPair m3356lambda$iterator$1$comgooglecommongraphAbstractBaseGraph$2(Object obj) {
             return EndpointPair.ordered(this.node, obj);
         }
 
-        /* JADX INFO: renamed from: lambda$iterator$2$com-google-common-graph-AbstractBaseGraph$2, reason: not valid java name */
+        /* INFO: renamed from: lambda$iterator$2$com-google-common-graph-AbstractBaseGraph$2, reason: not valid java name */
         /* synthetic */ EndpointPair m3357lambda$iterator$2$comgooglecommongraphAbstractBaseGraph$2(Object obj) {
             return EndpointPair.unordered(this.node, obj);
         }
@@ -155,7 +155,7 @@ abstract class AbstractBaseGraph<N> implements BaseGraph<N> {
         return InvalidatableSet.of((Set) set, (Supplier<Boolean>) new AbstractBaseGraph$$ExternalSyntheticLambda2(this, node), (Supplier<String>) new AbstractBaseGraph$$ExternalSyntheticLambda3(node));
     }
 
-    /* JADX INFO: renamed from: lambda$nodeInvalidatableSet$0$com-google-common-graph-AbstractBaseGraph, reason: not valid java name */
+    /* INFO: renamed from: lambda$nodeInvalidatableSet$0$com-google-common-graph-AbstractBaseGraph, reason: not valid java name */
     /* synthetic */ Boolean m3353xbbd68347(Object obj) {
         return Boolean.valueOf(nodes().contains(obj));
     }
@@ -164,7 +164,7 @@ abstract class AbstractBaseGraph<N> implements BaseGraph<N> {
         return InvalidatableSet.of((Set) set, (Supplier<Boolean>) new AbstractBaseGraph$$ExternalSyntheticLambda0(this, nodeU, nodeV), (Supplier<String>) new AbstractBaseGraph$$ExternalSyntheticLambda1(nodeU, nodeV));
     }
 
-    /* JADX INFO: renamed from: lambda$nodePairInvalidatableSet$2$com-google-common-graph-AbstractBaseGraph, reason: not valid java name */
+    /* INFO: renamed from: lambda$nodePairInvalidatableSet$2$com-google-common-graph-AbstractBaseGraph, reason: not valid java name */
     /* synthetic */ Boolean m3354xe4abd43(Object obj, Object obj2) {
         return Boolean.valueOf(nodes().contains(obj) && nodes().contains(obj2));
     }

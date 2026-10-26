@@ -7,7 +7,7 @@ import android.os.Message;
 import android.util.Log;
 import java.lang.reflect.InvocationTargetException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class HandlerCompat {
     private static final String TAG = "HandlerCompat";
 

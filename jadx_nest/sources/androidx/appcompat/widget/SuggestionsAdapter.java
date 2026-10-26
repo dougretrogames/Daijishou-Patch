@@ -30,7 +30,7 @@ import java.util.List;
 import java.util.WeakHashMap;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class SuggestionsAdapter extends ResourceCursorAdapter implements View.OnClickListener {
     private static final boolean DBG = false;
     static final int INVALID_INDEX = -1;

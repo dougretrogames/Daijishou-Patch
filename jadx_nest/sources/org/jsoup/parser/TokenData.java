@@ -2,7 +2,7 @@ package org.jsoup.parser;
 
 import org.jsoup.internal.StringUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class TokenData {
     private StringBuilder builder;
     private String value;

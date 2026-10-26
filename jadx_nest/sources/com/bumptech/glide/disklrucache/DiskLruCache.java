@@ -26,7 +26,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class DiskLruCache implements Closeable {
     static final long ANY_SEQUENCE_NUMBER = -1;
     private static final String CLEAN = "CLEAN";
@@ -53,7 +53,7 @@ public final class DiskLruCache implements Closeable {
     final ThreadPoolExecutor executorService = new ThreadPoolExecutor(0, 1, 60, TimeUnit.SECONDS, new LinkedBlockingQueue(), new DiskLruCacheThreadFactory(null));
     private final Callable<Void> cleanupCallable = new AnonymousClass1();
 
-    /* JADX INFO: renamed from: com.bumptech.glide.disklrucache.DiskLruCache$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.disklrucache.DiskLruCache$1, reason: invalid class name */
     class AnonymousClass1 implements Callable<Void> {
         AnonymousClass1() {
         }
@@ -211,7 +211,7 @@ public final class DiskLruCache implements Closeable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public synchronized void rebuildJournal() throws IOException {
         Writer writer = this.journalWriter;
         if (writer != null) {
@@ -307,7 +307,7 @@ public final class DiskLruCache implements Closeable {
         return edit(str, -1L);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public synchronized Editor edit(String str, long j) throws IOException {
         checkNotClosed();
         Entry entry = this.lruEntries.get(str);
@@ -347,7 +347,7 @@ public final class DiskLruCache implements Closeable {
         return this.size;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public synchronized void completeEdit(Editor editor, boolean z) throws IOException {
         Entry entry = editor.entry;
         if (entry.currentEditor != editor) {
@@ -407,7 +407,7 @@ public final class DiskLruCache implements Closeable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean journalRebuildRequired() {
         int i = this.redundantOpCount;
         return i >= 2000 && i >= this.lruEntries.size();
@@ -470,7 +470,7 @@ public final class DiskLruCache implements Closeable {
         this.journalWriter = null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void trimToSize() throws IOException {
         while (this.size > this.maxSize) {
             remove(this.lruEntries.entrySet().iterator().next().getKey());
@@ -482,7 +482,7 @@ public final class DiskLruCache implements Closeable {
         Util.deleteContents(this.directory);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static String inputStreamToString(InputStream inputStream) throws IOException {
         return Util.readFully(new InputStreamReader(inputStream, Util.UTF_8));
     }
@@ -669,7 +669,7 @@ public final class DiskLruCache implements Closeable {
             return sb.toString();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setLengths(String[] strArr) throws IOException {
             if (strArr.length != DiskLruCache.this.valueCount) {
                 throw invalidLengths(strArr);

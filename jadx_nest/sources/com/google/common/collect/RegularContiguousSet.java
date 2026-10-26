@@ -9,7 +9,7 @@ import java.util.Collection;
 import java.util.Objects;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class RegularContiguousSet<C extends Comparable> extends ContiguousSet<C> {
     private static final long serialVersionUID = 0;
@@ -37,13 +37,13 @@ final class RegularContiguousSet<C extends Comparable> extends ContiguousSet<C> 
         return new EmptyContiguousSet(this.domain);
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ContiguousSet, com.google.common.collect.ImmutableSortedSet
     public ContiguousSet<C> headSetImpl(C toElement, boolean inclusive) {
         return intersectionInCurrentDomain(Range.upTo(toElement, BoundType.forBoolean(inclusive)));
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ContiguousSet, com.google.common.collect.ImmutableSortedSet
     public ContiguousSet<C> subSetImpl(C fromElement, boolean fromInclusive, C toElement, boolean toInclusive) {
         if (fromElement.compareTo(toElement) == 0 && !fromInclusive && !toInclusive) {
@@ -52,7 +52,7 @@ final class RegularContiguousSet<C extends Comparable> extends ContiguousSet<C> 
         return intersectionInCurrentDomain(Range.range(fromElement, BoundType.forBoolean(fromInclusive), toElement, BoundType.forBoolean(toInclusive)));
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ContiguousSet, com.google.common.collect.ImmutableSortedSet
     public ContiguousSet<C> tailSetImpl(C fromElement, boolean inclusive) {
         return intersectionInCurrentDomain(Range.downTo(fromElement, BoundType.forBoolean(inclusive)));
@@ -66,7 +66,7 @@ final class RegularContiguousSet<C extends Comparable> extends ContiguousSet<C> 
         return (int) this.domain.distance(first(), (Comparable) Objects.requireNonNull(target));
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.RegularContiguousSet$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.RegularContiguousSet$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractSequentialIterator<C> {
         final C last;
 
@@ -75,7 +75,7 @@ final class RegularContiguousSet<C extends Comparable> extends ContiguousSet<C> 
             this.last = (C) RegularContiguousSet.this.last();
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.AbstractSequentialIterator
         @CheckForNull
         public C computeNext(C c) {
@@ -91,7 +91,7 @@ final class RegularContiguousSet<C extends Comparable> extends ContiguousSet<C> 
         return new AnonymousClass1(first());
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.RegularContiguousSet$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.RegularContiguousSet$2, reason: invalid class name */
     class AnonymousClass2 extends AbstractSequentialIterator<C> {
         final C first;
 
@@ -100,7 +100,7 @@ final class RegularContiguousSet<C extends Comparable> extends ContiguousSet<C> 
             this.first = (C) RegularContiguousSet.this.first();
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.AbstractSequentialIterator
         @CheckForNull
         public C computeNext(C c) {
@@ -116,7 +116,7 @@ final class RegularContiguousSet<C extends Comparable> extends ContiguousSet<C> 
         return new AnonymousClass2(last());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean equalsOrThrow(Comparable<?> left, @CheckForNull Comparable<?> right) {
         return right != null && Range.compareOrThrow(left, right) == 0;
     }
@@ -131,12 +131,12 @@ final class RegularContiguousSet<C extends Comparable> extends ContiguousSet<C> 
         return (C) Objects.requireNonNull(this.range.upperBound.greatestValueBelow(this.domain));
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.RegularContiguousSet$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.RegularContiguousSet$3, reason: invalid class name */
     class AnonymousClass3 extends ImmutableAsList<C> {
         AnonymousClass3() {
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.ImmutableAsList
         public ImmutableSortedSet<C> delegateCollection() {
             return RegularContiguousSet.this;

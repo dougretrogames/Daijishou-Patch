@@ -3,7 +3,7 @@ package org.eclipse.jgit.diff;
 import org.eclipse.jgit.diff.Sequence;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class HistogramDiffIndex<S extends Sequence> {
     private static final int MAX_CNT = 255;
     private static final int MAX_PTR = 268435455;

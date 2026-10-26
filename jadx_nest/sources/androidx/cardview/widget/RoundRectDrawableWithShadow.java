@@ -14,7 +14,7 @@ import android.graphics.Shader;
 import android.graphics.drawable.Drawable;
 import androidx.cardview.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class RoundRectDrawableWithShadow extends Drawable {
     private static final double COS_45 = Math.cos(Math.toRadians(45.0d));
     private static final float SHADOW_MULTIPLIER = 1.5f;

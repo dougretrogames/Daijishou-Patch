@@ -7,7 +7,7 @@ import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.EncoderException;
 import org.apache.commons.codec.binary.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class RFC1522Codec {
     protected static final String POSTFIX = "?=";
     protected static final String PREFIX = "=?";

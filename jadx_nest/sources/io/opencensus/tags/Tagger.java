@@ -2,7 +2,7 @@ package io.opencensus.tags;
 
 import io.opencensus.common.Scope;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Tagger {
     public abstract TagContextBuilder currentBuilder();
 

@@ -5,7 +5,7 @@ import java.security.Principal;
 import org.apache.http.util.Args;
 import org.apache.http.util.LangUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UsernamePasswordCredentials implements Credentials, Serializable {
     private static final long serialVersionUID = 243343858802739403L;
     private final String password;

@@ -35,7 +35,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionController {
     static final int BOUNCE = 4;
     private static final boolean DEBUG = false;
@@ -933,7 +933,7 @@ public class MotionController {
         motionController.mQuantizeMotionInterpolator = getInterpolator(motionController.mView.getContext(), parameters.motion.mQuantizeInterpolatorType, parameters.motion.mQuantizeInterpolatorString, parameters.motion.mQuantizeInterpolatorID);
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.motion.widget.MotionController$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.motion.widget.MotionController$1, reason: invalid class name */
     class AnonymousClass1 implements Interpolator {
         final /* synthetic */ Easing val$easing;
 

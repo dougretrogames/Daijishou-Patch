@@ -5,7 +5,7 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import org.apache.commons.logging.LogFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ServletContextCleaner implements ServletContextListener {
     private static final Class[] RELEASE_SIGNATURE;
     static /* synthetic */ Class class$java$lang$ClassLoader;

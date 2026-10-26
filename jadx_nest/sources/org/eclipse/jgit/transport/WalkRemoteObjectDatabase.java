@@ -23,7 +23,7 @@ import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.util.IO;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class WalkRemoteObjectDatabase {
     static final String INFO_PACKS = "info/packs";
     static final String INFO_REFS = "../info/refs";

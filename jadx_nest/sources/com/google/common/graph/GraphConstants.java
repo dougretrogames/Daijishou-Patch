@@ -1,6 +1,6 @@
 package com.google.common.graph;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class GraphConstants {
     static final int DEFAULT_EDGE_COUNT = 20;

@@ -4,7 +4,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class CleanupService {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private static CleanupService INSTANCE;
@@ -55,7 +55,7 @@ public final class CleanupService {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-internal-util-CleanupService, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-internal-util-CleanupService, reason: not valid java name */
     /* synthetic */ void m5768lambda$0$orgeclipsejgitinternalutilCleanupService(Runnable runnable) {
         try {
             runnable.run();

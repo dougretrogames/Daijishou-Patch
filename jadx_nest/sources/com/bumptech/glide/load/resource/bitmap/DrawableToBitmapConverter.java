@@ -11,12 +11,12 @@ import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPoolAdapter;
 import java.util.concurrent.locks.Lock;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class DrawableToBitmapConverter {
     private static final BitmapPool NO_RECYCLE_BITMAP_POOL = new AnonymousClass1();
     private static final String TAG = "DrawableToBitmap";
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.resource.bitmap.DrawableToBitmapConverter$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.resource.bitmap.DrawableToBitmapConverter$1, reason: invalid class name */
     class AnonymousClass1 extends BitmapPoolAdapter {
         @Override // com.bumptech.glide.load.engine.bitmap_recycle.BitmapPoolAdapter, com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool
         public void put(Bitmap bitmap) {

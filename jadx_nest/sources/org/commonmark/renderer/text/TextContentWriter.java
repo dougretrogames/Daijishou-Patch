@@ -4,7 +4,7 @@ import java.io.IOException;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TextContentWriter {
     private final Appendable buffer;
     private char lastChar;

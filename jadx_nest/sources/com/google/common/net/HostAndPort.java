@@ -11,7 +11,7 @@ import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable
 @ElementTypesAreNonnullByDefault
 public final class HostAndPort implements Serializable {
@@ -61,9 +61,9 @@ public final class HostAndPort implements Serializable {
         return hostAndPortFromString;
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x0042  */
-    /* JADX WARN: Code duplicated, block: B:19:0x004a  */
-    /* JADX WARN: Code duplicated, block: B:22:0x0055  */
+    /* WARN: Code duplicated, block: B:17:0x0042  */
+    /* WARN: Code duplicated, block: B:19:0x004a  */
+    /* WARN: Code duplicated, block: B:22:0x0055  */
     public static HostAndPort fromString(String hostPortString) {
         boolean z;
         String strSubstring;

@@ -2,7 +2,7 @@ package org.chromium.support_lib_boundary.util;
 
 import org.jspecify.annotations.NullMarked;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @NullMarked
 public class Features {
     public static final String ALGORITHMIC_DARKENING = "ALGORITHMIC_DARKENING";

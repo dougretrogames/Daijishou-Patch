@@ -6,7 +6,7 @@ import java.net.Socket;
 import javax.net.ssl.SSLSocket;
 import javax.net.ssl.SSLSocketFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class DelegatingSSLSocketFactory extends SSLSocketFactory {
     private final SSLSocketFactory delegate;
 

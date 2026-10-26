@@ -1,6 +1,6 @@
 package androidx.palette.graphics;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Target {
     public static final Target DARK_MUTED;
     public static final Target DARK_VIBRANT;

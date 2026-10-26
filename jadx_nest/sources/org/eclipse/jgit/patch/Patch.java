@@ -9,7 +9,7 @@ import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.util.RawParseUtils;
 import org.eclipse.jgit.util.TemporaryBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Patch {
     static final byte[] DIFF_GIT = Constants.encodeASCII("diff --git ");
     private static final byte[] DIFF_CC = Constants.encodeASCII("diff --cc ");

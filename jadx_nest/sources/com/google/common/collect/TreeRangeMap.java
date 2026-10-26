@@ -17,7 +17,7 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, V> {
     private static final RangeMap<Comparable<?>, Object> EMPTY_SUB_RANGE_MAP = new AnonymousClass1();
@@ -96,7 +96,7 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
         this.entriesByLowerBound.put(range.lowerBound, new RangeMapEntry(range, value));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.RangeMap
     public void putCoalescing(Range<K> range, V value) {
         if (this.entriesByLowerBound.isEmpty()) {
@@ -106,8 +106,8 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Type inference incomplete: some casts might be missing */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Type inference incomplete: some casts might be missing */
     public Range<K> coalescedRange(Range<K> range, V v) {
         return coalesce(coalesce(range, v, this.entriesByLowerBound.lowerEntry((Cut<K>) range.lowerBound)), v, this.entriesByLowerBound.floorEntry((Cut<K>) range.upperBound));
     }
@@ -142,7 +142,7 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
         this.entriesByLowerBound.put(lowerBound, new RangeMapEntry(lowerBound, upperBound, value));
     }
 
-    /* JADX WARN: Type inference incomplete: some casts might be missing */
+    /* WARN: Type inference incomplete: some casts might be missing */
     @Override // com.google.common.collect.RangeMap
     public void remove(Range<K> range) {
         if (range.isEmpty()) {
@@ -220,12 +220,12 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
         return subRange.equals(Range.all()) ? this : new SubRangeMap(subRange);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public RangeMap<K, V> emptySubRangeMap() {
         return EMPTY_SUB_RANGE_MAP;
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.TreeRangeMap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.TreeRangeMap$1, reason: invalid class name */
     class AnonymousClass1 implements RangeMap<Comparable<?>, Object> {
         @Override // com.google.common.collect.RangeMap
         public void clear() {
@@ -373,16 +373,16 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
             TreeRangeMap.this.remove(this.subRange);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Multi-variable type inference failed */
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         @Override // com.google.common.collect.RangeMap
         public void remove(Range<K> range) {
@@ -391,16 +391,16 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
             }
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Multi-variable type inference failed */
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         @Override // com.google.common.collect.RangeMap
         public RangeMap<K, V> subRangeMap(Range<K> range) {
@@ -415,7 +415,7 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
             return new SubRangeMapAsMap();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.TreeRangeMap$SubRangeMap$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.TreeRangeMap$SubRangeMap$1, reason: invalid class name */
         class AnonymousClass1 extends TreeRangeMap<K, V>.SubRangeMap.SubRangeMapAsMap {
             AnonymousClass1() {
                 super();
@@ -429,7 +429,7 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
                 return new C00461(TreeRangeMap.this.entriesByLowerBound.headMap(SubRangeMap.this.subRange.upperBound, false).descendingMap().values().iterator());
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.TreeRangeMap$SubRangeMap$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: renamed from: com.google.common.collect.TreeRangeMap$SubRangeMap$1$1, reason: invalid class name and collision with other inner class name */
             class C00461 extends AbstractIterator<Map.Entry<Range<K>, V>> {
                 final /* synthetic */ Iterator val$backingItr;
 
@@ -437,7 +437,7 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
                     this.val$backingItr = val$backingItr;
                 }
 
-                /* JADX INFO: Access modifiers changed from: protected */
+                /* INFO: Access modifiers changed from: protected */
                 @Override // com.google.common.collect.AbstractIterator
                 @CheckForNull
                 public Map.Entry<Range<K>, V> computeNext() {
@@ -485,15 +485,15 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
                 return get(key) != null;
             }
 
-            /* JADX WARN: Type inference fix 'apply assigned field type' failed
-            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-            	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-            	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-            	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-            	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+            /* WARN: Type inference fix 'apply assigned field type' failed
+            java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+            	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+            	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+            	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+            	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
              */
             @Override // java.util.AbstractMap, java.util.Map
             @CheckForNull
@@ -535,7 +535,7 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
                 SubRangeMap.this.clear();
             }
 
-            /* JADX INFO: Access modifiers changed from: private */
+            /* INFO: Access modifiers changed from: private */
             public boolean removeEntryIf(Predicate<? super Map.Entry<Range<K>, V>> predicate) {
                 ArrayList arrayListNewArrayList = Lists.newArrayList();
                 for (Map.Entry<Range<K>, V> entry : entrySet()) {
@@ -550,7 +550,7 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
                 return !arrayListNewArrayList.isEmpty();
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.TreeRangeMap$SubRangeMap$SubRangeMapAsMap$1, reason: invalid class name */
+            /* INFO: renamed from: com.google.common.collect.TreeRangeMap$SubRangeMap$SubRangeMapAsMap$1, reason: invalid class name */
             class AnonymousClass1 extends Maps.KeySet<Range<K>, V> {
                 AnonymousClass1(Map map) {
                     super(map);
@@ -572,7 +572,7 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
                 return new AnonymousClass1(this);
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2, reason: invalid class name */
+            /* INFO: renamed from: com.google.common.collect.TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2, reason: invalid class name */
             class AnonymousClass2 extends Maps.EntrySet<Range<K>, V> {
                 AnonymousClass2() {
                 }
@@ -615,7 +615,7 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
                 return new AnonymousClass3(TreeRangeMap.this.entriesByLowerBound.tailMap((Cut) MoreObjects.firstNonNull((Cut) TreeRangeMap.this.entriesByLowerBound.floorKey(SubRangeMap.this.subRange.lowerBound), SubRangeMap.this.subRange.lowerBound), true).values().iterator());
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.TreeRangeMap$SubRangeMap$SubRangeMapAsMap$3, reason: invalid class name */
+            /* INFO: renamed from: com.google.common.collect.TreeRangeMap$SubRangeMap$SubRangeMapAsMap$3, reason: invalid class name */
             class AnonymousClass3 extends AbstractIterator<Map.Entry<Range<K>, V>> {
                 final /* synthetic */ Iterator val$backingItr;
 
@@ -623,7 +623,7 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
                     this.val$backingItr = val$backingItr;
                 }
 
-                /* JADX INFO: Access modifiers changed from: protected */
+                /* INFO: Access modifiers changed from: protected */
                 @Override // com.google.common.collect.AbstractIterator
                 @CheckForNull
                 public Map.Entry<Range<K>, V> computeNext() {
@@ -641,7 +641,7 @@ public final class TreeRangeMap<K extends Comparable, V> implements RangeMap<K, 
                 }
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.TreeRangeMap$SubRangeMap$SubRangeMapAsMap$4, reason: invalid class name */
+            /* INFO: renamed from: com.google.common.collect.TreeRangeMap$SubRangeMap$SubRangeMapAsMap$4, reason: invalid class name */
             class AnonymousClass4 extends Maps.Values<Range<K>, V> {
                 AnonymousClass4(Map map) {
                     super(map);

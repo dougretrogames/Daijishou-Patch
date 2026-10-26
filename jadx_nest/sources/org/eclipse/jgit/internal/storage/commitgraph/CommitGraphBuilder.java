@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.commitgraph;
 import java.text.MessageFormat;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class CommitGraphBuilder {
     private byte[] bloomFilterData;
     private byte[] bloomFilterIndex;

@@ -1,6 +1,6 @@
 package com.googlecode.javaewah32;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class NonEmptyVirtualStorage32 implements BitmapStorage32 {
     private static final NonEmptyException nonEmptyException = new NonEmptyException();
 

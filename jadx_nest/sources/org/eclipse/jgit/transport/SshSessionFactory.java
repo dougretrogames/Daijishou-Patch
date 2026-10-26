@@ -7,7 +7,7 @@ import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class SshSessionFactory {
     public abstract RemoteSession getSession(URIish uRIish, CredentialsProvider credentialsProvider, FS fs, int i) throws TransportException;
 

@@ -11,7 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ViewData {
     public abstract Map<List<TagValue>, AggregationData> getAggregationMap();
 
@@ -38,7 +38,7 @@ public abstract class ViewData {
         return (ViewData) aggregationWindowData.match(new AnonymousClass1(view, map2), new AnonymousClass2(view, map2), Functions.throwAssertionError());
     }
 
-    /* JADX INFO: renamed from: io.opencensus.stats.ViewData$1, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.stats.ViewData$1, reason: invalid class name */
     class AnonymousClass1 implements Function<AggregationWindowData.CumulativeData, ViewData> {
         final /* synthetic */ Map val$deepCopy;
         final /* synthetic */ View val$view;
@@ -54,7 +54,7 @@ public abstract class ViewData {
         }
     }
 
-    /* JADX INFO: renamed from: io.opencensus.stats.ViewData$2, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.stats.ViewData$2, reason: invalid class name */
     class AnonymousClass2 implements Function<AggregationWindowData.IntervalData, ViewData> {
         final /* synthetic */ Map val$deepCopy;
         final /* synthetic */ View val$view;
@@ -80,12 +80,12 @@ public abstract class ViewData {
         return createInternal(view, Collections.unmodifiableMap(map2), AggregationWindowData.CumulativeData.create(timestamp, timestamp2), timestamp, timestamp2);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static ViewData createInternal(View view, Map<List<TagValue>, AggregationData> map, AggregationWindowData aggregationWindowData, Timestamp timestamp, Timestamp timestamp2) {
         return new AutoValue_ViewData(view, map, aggregationWindowData, timestamp, timestamp2);
     }
 
-    /* JADX INFO: renamed from: io.opencensus.stats.ViewData$3, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.stats.ViewData$3, reason: invalid class name */
     class AnonymousClass3 implements Function<View.AggregationWindow.Cumulative, Void> {
         final /* synthetic */ AggregationWindowData val$windowData;
 
@@ -105,7 +105,7 @@ public abstract class ViewData {
         aggregationWindow.match(new AnonymousClass3(aggregationWindowData), new AnonymousClass4(aggregationWindowData), Functions.throwAssertionError());
     }
 
-    /* JADX INFO: renamed from: io.opencensus.stats.ViewData$4, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.stats.ViewData$4, reason: invalid class name */
     class AnonymousClass4 implements Function<View.AggregationWindow.Interval, Void> {
         final /* synthetic */ AggregationWindowData val$windowData;
 
@@ -121,7 +121,7 @@ public abstract class ViewData {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void throwIfWindowMismatch(boolean z, View.AggregationWindow aggregationWindow, AggregationWindowData aggregationWindowData) {
         if (!z) {
             throw new IllegalArgumentException(createErrorMessageForWindow(aggregationWindow, aggregationWindowData));
@@ -132,7 +132,7 @@ public abstract class ViewData {
         return "AggregationWindow and AggregationWindowData types mismatch. AggregationWindow: " + aggregationWindow.getClass().getSimpleName() + " AggregationWindowData: " + aggregationWindowData.getClass().getSimpleName();
     }
 
-    /* JADX INFO: renamed from: io.opencensus.stats.ViewData$5, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.stats.ViewData$5, reason: invalid class name */
     class AnonymousClass5 implements Function<Aggregation.Sum, Void> {
         final /* synthetic */ Aggregation val$aggregation;
         final /* synthetic */ AggregationData val$aggregationData;
@@ -144,7 +144,7 @@ public abstract class ViewData {
             this.val$aggregation = aggregation;
         }
 
-        /* JADX INFO: renamed from: io.opencensus.stats.ViewData$5$1, reason: invalid class name */
+        /* INFO: renamed from: io.opencensus.stats.ViewData$5$1, reason: invalid class name */
         class AnonymousClass1 implements Function<Measure.MeasureDouble, Void> {
             AnonymousClass1() {
             }
@@ -162,7 +162,7 @@ public abstract class ViewData {
             return null;
         }
 
-        /* JADX INFO: renamed from: io.opencensus.stats.ViewData$5$2, reason: invalid class name */
+        /* INFO: renamed from: io.opencensus.stats.ViewData$5$2, reason: invalid class name */
         class AnonymousClass2 implements Function<Measure.MeasureLong, Void> {
             AnonymousClass2() {
             }
@@ -179,7 +179,7 @@ public abstract class ViewData {
         aggregation.match(new AnonymousClass5(measure, aggregationData, aggregation), new AnonymousClass6(aggregationData, aggregation), new AnonymousClass7(aggregationData, aggregation), new AnonymousClass8(measure, aggregationData, aggregation), new AnonymousClass9(aggregationData, aggregation));
     }
 
-    /* JADX INFO: renamed from: io.opencensus.stats.ViewData$6, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.stats.ViewData$6, reason: invalid class name */
     class AnonymousClass6 implements Function<Aggregation.Count, Void> {
         final /* synthetic */ Aggregation val$aggregation;
         final /* synthetic */ AggregationData val$aggregationData;
@@ -197,7 +197,7 @@ public abstract class ViewData {
         }
     }
 
-    /* JADX INFO: renamed from: io.opencensus.stats.ViewData$7, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.stats.ViewData$7, reason: invalid class name */
     class AnonymousClass7 implements Function<Aggregation.Distribution, Void> {
         final /* synthetic */ Aggregation val$aggregation;
         final /* synthetic */ AggregationData val$aggregationData;
@@ -215,7 +215,7 @@ public abstract class ViewData {
         }
     }
 
-    /* JADX INFO: renamed from: io.opencensus.stats.ViewData$8, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.stats.ViewData$8, reason: invalid class name */
     class AnonymousClass8 implements Function<Aggregation.LastValue, Void> {
         final /* synthetic */ Aggregation val$aggregation;
         final /* synthetic */ AggregationData val$aggregationData;
@@ -227,7 +227,7 @@ public abstract class ViewData {
             this.val$aggregation = aggregation;
         }
 
-        /* JADX INFO: renamed from: io.opencensus.stats.ViewData$8$1, reason: invalid class name */
+        /* INFO: renamed from: io.opencensus.stats.ViewData$8$1, reason: invalid class name */
         class AnonymousClass1 implements Function<Measure.MeasureDouble, Void> {
             AnonymousClass1() {
             }
@@ -245,7 +245,7 @@ public abstract class ViewData {
             return null;
         }
 
-        /* JADX INFO: renamed from: io.opencensus.stats.ViewData$8$2, reason: invalid class name */
+        /* INFO: renamed from: io.opencensus.stats.ViewData$8$2, reason: invalid class name */
         class AnonymousClass2 implements Function<Measure.MeasureLong, Void> {
             AnonymousClass2() {
             }
@@ -258,7 +258,7 @@ public abstract class ViewData {
         }
     }
 
-    /* JADX INFO: renamed from: io.opencensus.stats.ViewData$9, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.stats.ViewData$9, reason: invalid class name */
     class AnonymousClass9 implements Function<Aggregation, Void> {
         final /* synthetic */ Aggregation val$aggregation;
         final /* synthetic */ AggregationData val$aggregationData;
@@ -279,7 +279,7 @@ public abstract class ViewData {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void throwIfAggregationMismatch(boolean z, Aggregation aggregation, AggregationData aggregationData) {
         if (!z) {
             throw new IllegalArgumentException(createErrorMessageForAggregation(aggregation, aggregationData));

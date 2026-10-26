@@ -8,7 +8,7 @@ import org.eclipse.jgit.errors.InvalidPatternException;
 import org.eclipse.jgit.ignore.IMatcher;
 import org.eclipse.jgit.ignore.internal.PathMatcher;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AttributesRule {
     private static final String ATTRIBUTES_SPLIT_REGEX = "[ \t\r]";
     private final List<Attribute> attributes;

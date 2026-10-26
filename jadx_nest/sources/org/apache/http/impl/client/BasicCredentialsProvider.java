@@ -7,7 +7,7 @@ import org.apache.http.auth.Credentials;
 import org.apache.http.client.CredentialsProvider;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicCredentialsProvider implements CredentialsProvider {
     private final ConcurrentHashMap<AuthScope, Credentials> credMap = new ConcurrentHashMap<>();
 

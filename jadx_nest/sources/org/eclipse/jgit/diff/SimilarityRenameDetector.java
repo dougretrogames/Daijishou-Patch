@@ -14,7 +14,7 @@ import org.eclipse.jgit.lib.ObjectLoader;
 import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.storage.pack.PackConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class SimilarityRenameDetector {
     private static final int BITS_PER_INDEX = 28;
     private static final int INDEX_MASK = 268435455;

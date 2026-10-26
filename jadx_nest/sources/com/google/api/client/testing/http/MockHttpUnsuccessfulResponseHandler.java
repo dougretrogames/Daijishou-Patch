@@ -5,7 +5,7 @@ import com.google.api.client.http.HttpResponse;
 import com.google.api.client.http.HttpUnsuccessfulResponseHandler;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockHttpUnsuccessfulResponseHandler implements HttpUnsuccessfulResponseHandler {
     private boolean isCalled;
     private boolean successfullyHandleResponse;

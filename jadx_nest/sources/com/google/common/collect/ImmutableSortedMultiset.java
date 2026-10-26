@@ -17,7 +17,7 @@ import java.util.function.ToIntFunction;
 import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ImmutableSortedMultiset<E> extends ImmutableMultiset<E> implements SortedMultiset<E> {
     private static final long serialVersionUID = 912559;
@@ -53,8 +53,8 @@ public abstract class ImmutableSortedMultiset<E> extends ImmutableMultiset<E> im
         return multiset;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Multi-variable type inference failed */
     public static <T, E> void mapAndAdd(T t, Multiset<E> multiset, Function<? super T, ? extends E> elementFunction, ToIntFunction<? super T> countFunction) {
         multiset.add(Preconditions.checkNotNull(elementFunction.apply(t)), countFunction.applyAsInt(t));
     }
@@ -63,32 +63,32 @@ public abstract class ImmutableSortedMultiset<E> extends ImmutableMultiset<E> im
         return (ImmutableSortedMultiset<E>) RegularImmutableSortedMultiset.NATURAL_EMPTY_MULTISET;
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
     public static ImmutableSortedMultiset of(Comparable element) {
         return new RegularImmutableSortedMultiset((RegularImmutableSortedSet) ImmutableSortedSet.of(element), new long[]{0, 1}, 0, 1);
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
     public static ImmutableSortedMultiset of(Comparable e1, Comparable e2) {
         return copyOf(Ordering.natural(), Arrays.asList(e1, e2));
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
     public static ImmutableSortedMultiset of(Comparable e1, Comparable e2, Comparable e3) {
         return copyOf(Ordering.natural(), Arrays.asList(e1, e2, e3));
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
     public static ImmutableSortedMultiset of(Comparable e1, Comparable e2, Comparable e3, Comparable e4) {
         return copyOf(Ordering.natural(), Arrays.asList(e1, e2, e3, e4));
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;TE;TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
     public static ImmutableSortedMultiset of(Comparable e1, Comparable e2, Comparable e3, Comparable e4, Comparable e5) {
         return copyOf(Ordering.natural(), Arrays.asList(e1, e2, e3, e4, e5));
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;TE;TE;TE;[TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>(TE;TE;TE;TE;TE;TE;[TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
     public static ImmutableSortedMultiset of(Comparable e1, Comparable e2, Comparable e3, Comparable e4, Comparable e5, Comparable e6, Comparable... remaining) {
         ArrayList arrayListNewArrayListWithCapacity = Lists.newArrayListWithCapacity(remaining.length + 6);
         Collections.addAll(arrayListNewArrayListWithCapacity, e1, e2, e3, e4, e5, e6);
@@ -96,7 +96,7 @@ public abstract class ImmutableSortedMultiset<E> extends ImmutableMultiset<E> im
         return copyOf(Ordering.natural(), arrayListNewArrayListWithCapacity);
     }
 
-    /* JADX WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>([TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
+    /* WARN: Incorrect types in method signature: <E::Ljava/lang/Comparable<-TE;>;>([TE;)Lcom/google/common/collect/ImmutableSortedMultiset<TE;>; */
     public static ImmutableSortedMultiset copyOf(Comparable[] elements) {
         return copyOf(Ordering.natural(), Arrays.asList(elements));
     }
@@ -128,7 +128,7 @@ public abstract class ImmutableSortedMultiset<E> extends ImmutableMultiset<E> im
         return copyOfSortedEntries(sortedMultiset.comparator(), Lists.newArrayList(sortedMultiset.entrySet()));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> ImmutableSortedMultiset<E> copyOfSortedEntries(Comparator<? super E> comparator, Collection<Multiset.Entry<E>> entries) {
         if (entries.isEmpty()) {
             return emptyMultiset(comparator);
@@ -188,7 +188,7 @@ public abstract class ImmutableSortedMultiset<E> extends ImmutableMultiset<E> im
         throw new UnsupportedOperationException();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.SortedMultiset
     public ImmutableSortedMultiset<E> subMultiset(E lowerBound, BoundType lowerBoundType, E upperBound, BoundType upperBoundType) {
         Preconditions.checkArgument(comparator().compare(lowerBound, upperBound) <= 0, "Expected lowerBound <= upperBound but %s > %s", lowerBound, upperBound);

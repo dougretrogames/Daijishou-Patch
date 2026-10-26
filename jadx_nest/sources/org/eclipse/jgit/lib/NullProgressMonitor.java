@@ -1,6 +1,6 @@
 package org.eclipse.jgit.lib;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NullProgressMonitor implements ProgressMonitor {
     public static final NullProgressMonitor INSTANCE = new NullProgressMonitor();
 

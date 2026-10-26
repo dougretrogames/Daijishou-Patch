@@ -5,7 +5,7 @@ import android.view.View;
 import android.view.autofill.AutofillId;
 import android.view.contentcapture.ContentCaptureSession;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ViewCompatShims {
     public static final int IMPORTANT_FOR_CONTENT_CAPTURE_AUTO = 0;
     public static final int IMPORTANT_FOR_CONTENT_CAPTURE_NO = 2;

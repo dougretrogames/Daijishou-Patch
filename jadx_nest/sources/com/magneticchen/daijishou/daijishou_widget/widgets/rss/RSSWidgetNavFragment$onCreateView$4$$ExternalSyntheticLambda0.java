@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.daijishou_widget.widgets.rss;
 import android.view.View;
 import com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceEntity;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class RSSWidgetNavFragment$onCreateView$4$$ExternalSyntheticLambda0 implements View.OnClickListener {
     public final /* synthetic */ RSSWidgetNavFragment f$0;
     public final /* synthetic */ RSSWidgetInstanceEntity f$1;

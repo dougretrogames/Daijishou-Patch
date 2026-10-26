@@ -6,7 +6,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HashedMap<K, V> extends AbstractHashedMap<K, V> implements Serializable, Cloneable {
     private static final long serialVersionUID = -1788199231038721040L;
 

@@ -17,7 +17,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class SimpleTimeLimiter implements TimeLimiter {
     private final ExecutorService executor;
@@ -40,7 +40,7 @@ public final class SimpleTimeLimiter implements TimeLimiter {
         return (T) newProxy(cls, new AnonymousClass1(t, j, timeUnit, findInterruptibleMethods(cls)));
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.SimpleTimeLimiter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.SimpleTimeLimiter$1, reason: invalid class name */
     class AnonymousClass1 implements InvocationHandler {
         final /* synthetic */ Set val$interruptibleMethods;
         final /* synthetic */ Object val$target;
@@ -73,7 +73,7 @@ public final class SimpleTimeLimiter implements TimeLimiter {
         return interfaceType.cast(Proxy.newProxyInstance(interfaceType.getClassLoader(), new Class[]{interfaceType}, handler));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @ParametricNullness
     public <T> T callWithTimeout(Callable<T> callable, long j, TimeUnit timeUnit, boolean z) throws Exception {
         Preconditions.checkNotNull(callable);
@@ -176,7 +176,7 @@ public final class SimpleTimeLimiter implements TimeLimiter {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Exception throwCause(Exception e, boolean combineStackTraces) throws Exception {
         Throwable cause = e.getCause();
         if (cause == null) {

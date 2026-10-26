@@ -10,7 +10,7 @@ import org.apache.commons.io.FilenameUtils;
 import org.eclipse.jgit.lib.internal.WorkQueue;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class BatchingProgressMonitor implements ProgressMonitor {
     private static boolean performanceTrace = SystemReader.getInstance().isPerformanceTraceEnabled();
     private long delayStartTime;

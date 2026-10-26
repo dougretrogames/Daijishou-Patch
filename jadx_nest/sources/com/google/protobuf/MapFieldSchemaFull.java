@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class MapFieldSchemaFull implements MapFieldSchema {
     MapFieldSchemaFull() {
     }

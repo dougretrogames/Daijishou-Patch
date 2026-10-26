@@ -9,11 +9,11 @@ import net.lingala.zip4j.model.Zip4jConfig;
 import net.lingala.zip4j.model.ZipModel;
 import net.lingala.zip4j.progress.ProgressMonitor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SetCommentTask extends AsyncZipTask<SetCommentTaskTaskParameters> {
     private final ZipModel zipModel;
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.tasks.AsyncZipTask
     public long calculateTotalWork(SetCommentTaskTaskParameters setCommentTaskTaskParameters) {
         return 0L;
@@ -24,7 +24,7 @@ public class SetCommentTask extends AsyncZipTask<SetCommentTaskTaskParameters> {
         this.zipModel = zipModel;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.tasks.AsyncZipTask
     public void executeTask(SetCommentTaskTaskParameters setCommentTaskTaskParameters, ProgressMonitor progressMonitor) throws IOException {
         if (setCommentTaskTaskParameters.comment == null) {

@@ -13,7 +13,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.util.IO;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PackIndexV1 implements PackIndex {
     private static final int IDX_HDR_LEN = 1024;
     private static final int RECORD_SIZE = 24;

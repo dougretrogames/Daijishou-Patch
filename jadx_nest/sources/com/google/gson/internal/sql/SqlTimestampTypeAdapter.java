@@ -10,12 +10,12 @@ import java.io.IOException;
 import java.sql.Timestamp;
 import java.util.Date;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class SqlTimestampTypeAdapter extends TypeAdapter<Timestamp> {
     static final TypeAdapterFactory FACTORY = new AnonymousClass1();
     private final TypeAdapter<Date> dateTypeAdapter;
 
-    /* JADX INFO: renamed from: com.google.gson.internal.sql.SqlTimestampTypeAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.sql.SqlTimestampTypeAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements TypeAdapterFactory {
         AnonymousClass1() {
         }

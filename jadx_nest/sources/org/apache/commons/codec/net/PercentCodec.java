@@ -7,7 +7,7 @@ import org.apache.commons.codec.BinaryEncoder;
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.EncoderException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PercentCodec implements BinaryEncoder, BinaryDecoder {
     private static final byte ESCAPE_CHAR = 37;
     private final BitSet alwaysEncodeChars;

@@ -3,7 +3,7 @@ package io.opencensus.resource;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Resource extends Resource {
     private final Map<String, String> labels;
     private final String type;

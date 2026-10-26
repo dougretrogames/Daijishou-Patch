@@ -15,7 +15,7 @@ import java.util.Set;
 import javax.net.ssl.KeyManager;
 import javax.net.ssl.TrustManager;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class TlsServerCredentials extends ServerCredentials {
     private final byte[] certificateChain;
     private final ClientAuth clientAuth;

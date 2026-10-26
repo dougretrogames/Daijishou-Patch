@@ -2,8 +2,8 @@ package org.apache.commons.collections4.iterators;
 
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class ExtendedIterator$$ExternalSyntheticLambda1 implements Predicate {
     public final /* synthetic */ java.util.function.Predicate f$0;
 

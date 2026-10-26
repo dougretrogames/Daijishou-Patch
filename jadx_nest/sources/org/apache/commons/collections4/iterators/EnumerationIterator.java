@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Enumeration;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EnumerationIterator<E> implements Iterator<E> {
     private final Collection<? super E> collection;
     private Enumeration<? extends E> enumeration;

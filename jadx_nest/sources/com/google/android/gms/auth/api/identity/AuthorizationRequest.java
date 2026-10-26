@@ -12,8 +12,8 @@ import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 import java.util.List;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 public class AuthorizationRequest extends AbstractSafeParcelable implements ReflectedParcelable {
     public static final Parcelable.Creator<AuthorizationRequest> CREATOR = new zbb();
     private final List zba;
@@ -27,7 +27,7 @@ public class AuthorizationRequest extends AbstractSafeParcelable implements Refl
     private final Bundle zbi;
     private final boolean zbj;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
     public static final class Builder {
         private List zba;
         private String zbb;
@@ -116,7 +116,7 @@ public class AuthorizationRequest extends AbstractSafeParcelable implements Refl
         }
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
     public enum ResourceParameter {
         ACCOUNT_SELECTION_TOKEN("account_selection_token"),
         ACCOUNT_SELECTION_STATE("account_selection_state");

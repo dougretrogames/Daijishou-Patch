@@ -12,7 +12,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ColorContrast {
     private static final float HIGH_CONTRAST_THRESHOLD = 0.6666667f;
     private static final float MEDIUM_CONTRAST_THRESHOLD = 0.33333334f;
@@ -42,8 +42,8 @@ public class ColorContrast {
         return Build.VERSION.SDK_INT >= 34;
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x0031 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:14:0x0032 A[RETURN] */
+    /* WARN: Code duplicated, block: B:13:0x0031 A[RETURN] */
+    /* WARN: Code duplicated, block: B:14:0x0032 A[RETURN] */
     private static int getContrastThemeOverlayResourceId(Context context, ColorContrastOptions colorContrastOptions) {
         UiModeManager uiModeManager = (UiModeManager) context.getSystemService("uimode");
         if (isContrastAvailable() && uiModeManager != null) {
@@ -112,7 +112,7 @@ public class ColorContrast {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.color.ColorContrast$ColorContrastActivityLifecycleCallbacks$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.color.ColorContrast$ColorContrastActivityLifecycleCallbacks$1, reason: invalid class name */
         class AnonymousClass1 implements UiModeManager.ContrastChangeListener {
             AnonymousClass1() {
             }

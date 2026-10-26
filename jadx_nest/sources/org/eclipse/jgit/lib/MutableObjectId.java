@@ -8,7 +8,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.util.NB;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MutableObjectId extends AnyObjectId {
     public MutableObjectId() {
     }

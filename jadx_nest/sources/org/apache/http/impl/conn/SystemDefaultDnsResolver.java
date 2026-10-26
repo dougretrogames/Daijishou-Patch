@@ -4,7 +4,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import org.apache.http.conn.DnsResolver;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SystemDefaultDnsResolver implements DnsResolver {
     public static final SystemDefaultDnsResolver INSTANCE = new SystemDefaultDnsResolver();
 

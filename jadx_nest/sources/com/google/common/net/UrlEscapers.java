@@ -2,7 +2,7 @@ package com.google.common.net;
 
 import com.google.common.escape.Escaper;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class UrlEscapers {
     static final String URL_FORM_PARAMETER_OTHER_SAFE_CHARS = "-_.*";

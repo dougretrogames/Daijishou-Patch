@@ -3,7 +3,7 @@ package org.apache.commons.io.file;
 import java.util.stream.Stream;
 import org.apache.commons.io.IOUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum StandardDeleteOption implements DeleteOption {
     OVERRIDE_READ_ONLY;
 

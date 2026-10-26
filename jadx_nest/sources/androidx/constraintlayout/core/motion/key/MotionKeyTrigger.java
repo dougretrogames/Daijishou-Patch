@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionKeyTrigger extends MotionKey {
     public static final String CROSS = "CROSS";
     public static final int KEY_TYPE = 5;
@@ -127,7 +127,7 @@ public class MotionKeyTrigger extends MotionKey {
     }
 
     @Override // androidx.constraintlayout.core.motion.key.MotionKey
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public MotionKey mo3140clone() {
         return new MotionKeyTrigger().copy((MotionKey) this);
     }

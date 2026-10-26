@@ -4,10 +4,10 @@ import java.util.NoSuchElementException;
 import java.util.Queue;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ForwardingQueue<E> extends ForwardingCollection<E> implements Queue<E> {
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
     public abstract Queue<E> delegate();
 

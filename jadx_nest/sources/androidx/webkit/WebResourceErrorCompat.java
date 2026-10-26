@@ -3,7 +3,7 @@ package androidx.webkit;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class WebResourceErrorCompat {
 
     @Retention(RetentionPolicy.SOURCE)

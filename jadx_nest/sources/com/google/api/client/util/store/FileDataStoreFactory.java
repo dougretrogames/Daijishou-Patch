@@ -25,7 +25,7 @@ import java.util.HashSet;
 import java.util.Locale;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FileDataStoreFactory extends AbstractDataStoreFactory {
     private static final boolean IS_WINDOWS;
     private final File dataDirectory;

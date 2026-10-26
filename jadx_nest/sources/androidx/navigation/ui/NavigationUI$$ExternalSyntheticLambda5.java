@@ -4,8 +4,8 @@ import android.view.MenuItem;
 import androidx.navigation.NavController;
 import com.google.android.material.navigation.NavigationView;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class NavigationUI$$ExternalSyntheticLambda5 implements NavigationView.OnNavigationItemSelectedListener {
     public final /* synthetic */ NavController f$0;
     public final /* synthetic */ NavigationView f$1;

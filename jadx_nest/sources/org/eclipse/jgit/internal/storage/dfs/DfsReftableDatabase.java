@@ -22,7 +22,7 @@ import org.eclipse.jgit.transport.ReceiveCommand;
 import org.eclipse.jgit.util.RefList;
 import org.eclipse.jgit.util.RefMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsReftableDatabase extends DfsRefDatabase {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$transport$ReceiveCommand$Result;
     private DfsReader ctx;
@@ -101,7 +101,7 @@ public class DfsReftableDatabase extends DfsRefDatabase {
         return iArr2;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.dfs.DfsReftableDatabase$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.dfs.DfsReftableDatabase$1, reason: invalid class name */
     class AnonymousClass1 extends ReftableDatabase {
         AnonymousClass1() {
         }

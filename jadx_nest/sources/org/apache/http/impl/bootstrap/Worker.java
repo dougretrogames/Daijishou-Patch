@@ -7,7 +7,7 @@ import org.apache.http.protocol.BasicHttpContext;
 import org.apache.http.protocol.HttpCoreContext;
 import org.apache.http.protocol.HttpService;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class Worker implements Runnable {
     private final HttpServerConnection conn;
     private final ExceptionLogger exceptionLogger;

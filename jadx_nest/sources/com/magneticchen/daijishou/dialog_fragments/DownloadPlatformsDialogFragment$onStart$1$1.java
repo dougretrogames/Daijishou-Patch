@@ -24,8 +24,8 @@ import kotlinx.coroutines.Dispatchers;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.json.Json;
 
-/* JADX INFO: compiled from: DownloadPlatformsDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DownloadPlatformsDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onStart$1$1", f = "DownloadPlatformsDialogFragment.kt", i = {}, l = {75, 93}, m = "invokeSuspendImpl", n = {}, s = {})
 final class DownloadPlatformsDialogFragment$onStart$1$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -34,7 +34,7 @@ final class DownloadPlatformsDialogFragment$onStart$1$1 extends com.magneticchen
     int label;
     final /* synthetic */ DownloadPlatformsDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     DownloadPlatformsDialogFragment$onStart$1$1(DownloadPlatformsDialogFragment downloadPlatformsDialogFragment, FragmentActivity fragmentActivity, Dialog dialog, Continuation<?> continuation) {
         super(2, continuation);
         this.this$0 = downloadPlatformsDialogFragment;
@@ -118,8 +118,8 @@ final class DownloadPlatformsDialogFragment$onStart$1$1 extends com.magneticchen
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onStart$1$1$2, reason: invalid class name */
-    /* JADX INFO: compiled from: DownloadPlatformsDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onStart$1$1$2, reason: invalid class name */
+    /* INFO: compiled from: DownloadPlatformsDialogFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.DownloadPlatformsDialogFragment$onStart$1$1$2", f = "DownloadPlatformsDialogFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -127,7 +127,7 @@ final class DownloadPlatformsDialogFragment$onStart$1$1 extends com.magneticchen
         int label;
         final /* synthetic */ DownloadPlatformsDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(DownloadPlatformsDialogFragment downloadPlatformsDialogFragment, Exception exc, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = downloadPlatformsDialogFragment;

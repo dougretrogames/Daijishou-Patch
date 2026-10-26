@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Field extends GeneratedMessage implements FieldOrBuilder {
     public static final int CARDINALITY_FIELD_NUMBER = 2;
     private static final Field DEFAULT_INSTANCE;
@@ -212,7 +212,7 @@ public final class Field extends GeneratedMessage implements FieldOrBuilder {
             return internalValueMap;
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.Field$Kind$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.Field$Kind$1, reason: invalid class name */
         class AnonymousClass1 implements Internal.EnumLiteMap<Kind> {
             AnonymousClass1() {
             }
@@ -321,7 +321,7 @@ public final class Field extends GeneratedMessage implements FieldOrBuilder {
             return internalValueMap;
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.Field$Cardinality$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.Field$Cardinality$1, reason: invalid class name */
         class AnonymousClass1 implements Internal.EnumLiteMap<Cardinality> {
             AnonymousClass1() {
             }
@@ -699,7 +699,7 @@ public final class Field extends GeneratedMessage implements FieldOrBuilder {
         return this == DEFAULT_INSTANCE ? new Builder((AnonymousClass1) null) : new Builder((AnonymousClass1) null).mergeFrom(this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent parent) {
         return new Builder(parent, null);
@@ -1511,7 +1511,7 @@ public final class Field extends GeneratedMessage implements FieldOrBuilder {
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.Field$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.Field$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<Field> {
         AnonymousClass1() {
         }

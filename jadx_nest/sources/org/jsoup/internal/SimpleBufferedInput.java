@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import org.jsoup.helper.Validate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class SimpleBufferedInput extends FilterInputStream {
     static final SoftPool<byte[]> BufferPool = new SoftPool<>(new SimpleBufferedInput$$ExternalSyntheticLambda0());
     static final int BufferSize = 8192;

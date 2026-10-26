@@ -8,7 +8,7 @@ import androidx.activity.BackEventCompat;
 import androidx.core.view.animation.PathInterpolatorCompat;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class MaterialBackAnimationHelper<V extends View> {
     private static final int CANCEL_DURATION_DEFAULT = 100;
     private static final int HIDE_DURATION_MAX_DEFAULT = 300;

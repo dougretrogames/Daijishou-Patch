@@ -11,7 +11,7 @@ import androidx.core.os.CancellationSignal;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class FragmentTransitionCompat21 extends FragmentTransitionImpl {
     FragmentTransitionCompat21() {
     }
@@ -62,7 +62,7 @@ class FragmentTransitionCompat21 extends FragmentTransitionImpl {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentTransitionCompat21$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentTransitionCompat21$1, reason: invalid class name */
     class AnonymousClass1 extends Transition.EpicenterCallback {
         final /* synthetic */ Rect val$epicenter;
 
@@ -121,7 +121,7 @@ class FragmentTransitionCompat21 extends FragmentTransitionImpl {
         return transitionSet;
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentTransitionCompat21$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentTransitionCompat21$2, reason: invalid class name */
     class AnonymousClass2 implements Transition.TransitionListener {
         final /* synthetic */ ArrayList val$exitingViews;
         final /* synthetic */ View val$fragmentView;
@@ -209,7 +209,7 @@ class FragmentTransitionCompat21 extends FragmentTransitionImpl {
         return false;
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentTransitionCompat21$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentTransitionCompat21$3, reason: invalid class name */
     class AnonymousClass3 implements Transition.TransitionListener {
         final /* synthetic */ Object val$enterTransition;
         final /* synthetic */ ArrayList val$enteringViews;
@@ -266,7 +266,7 @@ class FragmentTransitionCompat21 extends FragmentTransitionImpl {
         ((Transition) obj).addListener(new AnonymousClass3(obj2, arrayList, obj3, arrayList2, obj4, arrayList3));
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentTransitionCompat21$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentTransitionCompat21$4, reason: invalid class name */
     class AnonymousClass4 implements Transition.TransitionListener {
         final /* synthetic */ Runnable val$transitionCompleteRunnable;
 
@@ -352,7 +352,7 @@ class FragmentTransitionCompat21 extends FragmentTransitionImpl {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentTransitionCompat21$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentTransitionCompat21$5, reason: invalid class name */
     class AnonymousClass5 extends Transition.EpicenterCallback {
         final /* synthetic */ Rect val$epicenter;
 

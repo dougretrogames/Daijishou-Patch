@@ -4,7 +4,7 @@ import android.graphics.drawable.Drawable;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class ThumbnailImageViewTarget<T> extends ImageViewTarget<T> {
     protected abstract Drawable getDrawable(T t);
 

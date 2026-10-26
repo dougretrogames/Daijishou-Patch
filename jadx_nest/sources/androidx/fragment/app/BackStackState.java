@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class BackStackState implements Parcelable {
     public static final Parcelable.Creator<BackStackState> CREATOR = new AnonymousClass1();
     final List<String> mFragments;
@@ -68,18 +68,18 @@ class BackStackState implements Parcelable {
         parcel.writeTypedList(this.mTransactions);
     }
 
-    /* JADX INFO: renamed from: androidx.fragment.app.BackStackState$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.BackStackState$1, reason: invalid class name */
     class AnonymousClass1 implements Parcelable.Creator<BackStackState> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public BackStackState createFromParcel(Parcel parcel) {
             return new BackStackState(parcel);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public BackStackState[] newArray(int i) {
             return new BackStackState[i];

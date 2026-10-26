@@ -6,8 +6,8 @@ import android.util.Log;
 import androidx.core.content.PermissionChecker;
 import javax.annotation.Nullable;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 final class zzco implements zzcl {
     private static zzco zza;
 
@@ -51,7 +51,7 @@ final class zzco implements zzcl {
 
     @Override // com.google.android.gms.internal.auth.zzcl
     @Nullable
-    /* JADX INFO: renamed from: zzc, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: zzc, reason: merged with bridge method [inline-methods] */
     public final String zzb(String str) {
         Context context = this.zzb;
         if (context != null && !zzcc.zza(context)) {

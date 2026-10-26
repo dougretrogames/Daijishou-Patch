@@ -5,7 +5,7 @@ import java.util.Hashtable;
 import org.apache.commons.logging.impl.LogFactoryImpl;
 import org.apache.commons.logging.impl.NoOpLog;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LogSource {
     protected static boolean jdk14IsAvailable;
     protected static boolean log4jIsAvailable;

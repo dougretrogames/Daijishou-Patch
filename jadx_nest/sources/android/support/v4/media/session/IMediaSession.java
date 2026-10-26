@@ -15,7 +15,7 @@ import android.text.TextUtils;
 import android.view.KeyEvent;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface IMediaSession extends IInterface {
     void addQueueItem(MediaDescriptionCompat mediaDescriptionCompat) throws RemoteException;
 

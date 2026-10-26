@@ -1,6 +1,6 @@
 package org.apache.http.client.config;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class AuthSchemes {
     public static final String BASIC = "Basic";
     public static final String CREDSSP = "CredSSP";

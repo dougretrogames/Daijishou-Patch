@@ -7,7 +7,7 @@ import org.eclipse.jgit.revwalk.filter.AndRevFilter;
 import org.eclipse.jgit.revwalk.filter.RevFilter;
 import org.eclipse.jgit.treewalk.filter.TreeFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class StartGenerator extends Generator {
     private final RevWalk walker;
 
@@ -21,11 +21,11 @@ class StartGenerator extends Generator {
         this.walker = revWalk;
     }
 
-    /* JADX WARN: Code duplicated, block: B:65:0x0125  */
-    /* JADX WARN: Code duplicated, block: B:67:0x012d  */
-    /* JADX WARN: Code duplicated, block: B:69:0x0134  */
-    /* JADX WARN: Code duplicated, block: B:70:0x0136  */
-    /* JADX WARN: Code duplicated, block: B:72:0x013c  */
+    /* WARN: Code duplicated, block: B:65:0x0125  */
+    /* WARN: Code duplicated, block: B:67:0x012d  */
+    /* WARN: Code duplicated, block: B:69:0x0134  */
+    /* WARN: Code duplicated, block: B:70:0x0136  */
+    /* WARN: Code duplicated, block: B:72:0x013c  */
     @Override // org.eclipse.jgit.revwalk.Generator
     RevCommit next() throws IOException {
         DateRevQueue dateRevQueueNewDateRevQueue;

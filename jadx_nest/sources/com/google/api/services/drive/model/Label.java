@@ -4,13 +4,13 @@ import com.google.api.client.json.GenericJson;
 import com.google.api.client.util.Key;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Label extends GenericJson {
 
     @Key
     private Map<String, LabelField> fields;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     @Key
     private String f45id;
 

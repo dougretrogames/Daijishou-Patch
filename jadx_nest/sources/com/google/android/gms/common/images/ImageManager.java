@@ -21,8 +21,8 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.concurrent.ExecutorService;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class ImageManager {
     private static final Object zaa = new Object();
     private static final HashSet zab = new HashSet();
@@ -35,8 +35,8 @@ public final class ImageManager {
     private final Map zai = new HashMap();
     private final Map zaj = new HashMap();
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     final class ImageReceiver extends ResultReceiver {
         private final Uri zab;
         private final ArrayList zac;
@@ -74,7 +74,7 @@ public final class ImageManager {
         }
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public interface OnImageLoadedListener {
         void onImageLoaded(Uri uri, Drawable drawable, boolean z);
     }

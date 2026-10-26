@@ -6,7 +6,7 @@ import android.net.Uri;
 import java.io.File;
 import java.net.URL;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 interface ModelTypes<T> {
     T load(Bitmap bitmap);
 

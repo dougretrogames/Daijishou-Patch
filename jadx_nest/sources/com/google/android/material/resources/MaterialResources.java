@@ -9,7 +9,7 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.widget.TintTypedArray;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialResources {
     private static final float FONT_SCALE_1_3 = 1.3f;
     private static final float FONT_SCALE_2_0 = 2.0f;

@@ -11,7 +11,7 @@ import org.eclipse.jgit.diff.RenameDetector;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.treewalk.filter.PathFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FilteredRenameDetector {
     private final RenameDetector renameDetector;
 

@@ -1,6 +1,6 @@
 package com.google.android.material.math;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MathUtils {
     public static final float DEFAULT_EPSILON = 1.0E-4f;
 

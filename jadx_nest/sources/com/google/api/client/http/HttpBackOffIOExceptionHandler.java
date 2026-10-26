@@ -6,7 +6,7 @@ import com.google.api.client.util.Preconditions;
 import com.google.api.client.util.Sleeper;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class HttpBackOffIOExceptionHandler implements HttpIOExceptionHandler {
     private final BackOff backOff;
     private Sleeper sleeper = Sleeper.DEFAULT;

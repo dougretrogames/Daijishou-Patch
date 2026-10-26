@@ -8,7 +8,7 @@ import org.apache.commons.collections4.FluentIterable;
 import org.apache.commons.collections4.MultiValuedMap;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformedMultiValuedMap<K, V> extends AbstractMultiValuedMapDecorator<K, V> {
     private static final long serialVersionUID = 20150612;
     private final Transformer<? super K, ? extends K> keyTransformer;

@@ -3,12 +3,12 @@ package org.apache.commons.collections4.iterators;
 import java.util.Iterator;
 import org.apache.commons.collections4.ResettableIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EmptyIterator<E> extends AbstractEmptyIterator<E> {
     public static final Iterator INSTANCE;
     public static final ResettableIterator RESETTABLE_INSTANCE;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.apache.commons.collections4.iterators.AbstractEmptyIterator
     @Deprecated
     public /* bridge */ /* synthetic */ void add(Object obj) {
@@ -55,7 +55,7 @@ public class EmptyIterator<E> extends AbstractEmptyIterator<E> {
         super.reset();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.apache.commons.collections4.iterators.AbstractEmptyIterator
     public /* bridge */ /* synthetic */ void set(Object obj) {
         super.set(obj);

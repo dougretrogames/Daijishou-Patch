@@ -14,7 +14,7 @@ import org.eclipse.jgit.lib.RefUpdate;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RemoteRefUpdate {
     private ObjectId expectedOldObjectId;
     private boolean fastForward;
@@ -40,7 +40,7 @@ public class RemoteRefUpdate {
         AWAITING_REPORT,
         OK;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Status[] valuesCustom() {
             Status[] statusArrValuesCustom = values();
             int length = statusArrValuesCustom.length;
@@ -50,7 +50,7 @@ public class RemoteRefUpdate {
         }
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public RemoteRefUpdate(Repository repository, String str, String str2, boolean z, String str3, ObjectId objectId) throws IOException {
         ObjectId objectIdZeroId;
         if (str != null) {
@@ -114,7 +114,7 @@ public class RemoteRefUpdate {
         this.status = Status.NOT_ATTEMPTED;
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public RemoteRefUpdate(RemoteRefUpdate remoteRefUpdate, ObjectId objectId) throws IOException {
         Repository repository = remoteRefUpdate.localDb;
         String str = remoteRefUpdate.srcRef;

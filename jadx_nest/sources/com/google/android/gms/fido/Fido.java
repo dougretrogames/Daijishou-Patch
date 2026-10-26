@@ -9,8 +9,8 @@ import com.google.android.gms.fido.u2f.U2fApiClient;
 import com.google.android.gms.internal.fido.zzaa;
 import com.google.android.gms.internal.fido.zzab;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class Fido {
     public static final String FIDO2_KEY_CREDENTIAL_EXTRA = "FIDO2_CREDENTIAL_EXTRA";
 

@@ -2,8 +2,8 @@ package com.google.android.gms.internal.fido;
 
 import java.math.RoundingMode;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public final class zzbh {
     public static int zzb(int i, RoundingMode roundingMode) {
         if (i <= 0) {

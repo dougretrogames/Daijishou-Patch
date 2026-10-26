@@ -3,7 +3,7 @@ package androidx.constraintlayout.core.widgets.analyzer;
 import androidx.constraintlayout.core.widgets.ConstraintWidget;
 import androidx.constraintlayout.core.widgets.Guideline;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class GuidelineReference extends WidgetRun {
     @Override // androidx.constraintlayout.core.widgets.analyzer.WidgetRun
     boolean supportsWrapComputation() {

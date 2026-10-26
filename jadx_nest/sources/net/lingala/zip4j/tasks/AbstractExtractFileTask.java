@@ -20,7 +20,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import net.lingala.zip4j.util.UnzipUtil;
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractExtractFileTask<T> extends AsyncZipTask<T> {
     private final UnzipParameters unzipParameters;
     private final ZipModel zipModel;
@@ -80,7 +80,7 @@ public abstract class AbstractExtractFileTask<T> extends AsyncZipTask<T> {
         return BitUtils.isBitSet(externalFileAttributes[3], 5);
     }
 
-    /* JADX WARN: Code duplicated, block: B:18:0x002d  */
+    /* WARN: Code duplicated, block: B:18:0x002d  */
     private void unzipFile(ZipInputStream zipInputStream, File file, ProgressMonitor progressMonitor, byte[] bArr) throws Exception {
         try {
             FileOutputStream fileOutputStream = new FileOutputStream(file);

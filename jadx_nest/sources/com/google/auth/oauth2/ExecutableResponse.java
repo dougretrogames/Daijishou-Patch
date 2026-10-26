@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 import java.time.Instant;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ExecutableResponse {
     private static final String SAML_SUBJECT_TOKEN_TYPE = "urn:ietf:params:oauth:token-type:saml2";
 

@@ -31,7 +31,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.BitSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialShapeDrawable extends Drawable implements TintAwareDrawable, Shapeable {
     public static final int SHADOW_COMPAT_MODE_ALWAYS = 2;
     public static final int SHADOW_COMPAT_MODE_DEFAULT = 0;
@@ -153,7 +153,7 @@ public class MaterialShapeDrawable extends Drawable implements TintAwareDrawable
         this.pathShadowListener = new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.shape.MaterialShapeDrawable$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.shape.MaterialShapeDrawable$1, reason: invalid class name */
     class AnonymousClass1 implements ShapeAppearancePathProvider.PathListener {
         AnonymousClass1() {
         }
@@ -688,7 +688,7 @@ public class MaterialShapeDrawable extends Drawable implements TintAwareDrawable
         this.pathProvider.calculatePath(shapeAppearanceModelWithTransformedCornerSizes, this.drawableState.interpolation, getBoundsInsetByStroke(), this.pathInsetByStroke);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.shape.MaterialShapeDrawable$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.shape.MaterialShapeDrawable$2, reason: invalid class name */
     class AnonymousClass2 implements ShapeAppearanceModel.CornerSizeUnaryOperator {
         final /* synthetic */ float val$strokeInsetLength;
 
@@ -844,7 +844,7 @@ public class MaterialShapeDrawable extends Drawable implements TintAwareDrawable
         return this.drawableState.shapeAppearanceModel.isRoundRect(getBoundsAsRectF());
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public static class MaterialShapeDrawableState extends Drawable.ConstantState {
         int alpha;
         ColorFilter colorFilter;

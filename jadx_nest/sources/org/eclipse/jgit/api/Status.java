@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import org.eclipse.jgit.lib.IndexDiff;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Status {
     private final boolean clean;
     private final IndexDiff diff;

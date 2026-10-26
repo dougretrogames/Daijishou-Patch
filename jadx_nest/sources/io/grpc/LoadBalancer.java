@@ -15,7 +15,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class LoadBalancer {
     private int recursionCount;
     public static final Attributes.Key<Map<String, ?>> ATTR_HEALTH_CHECKING_CONFIG = Attributes.Key.create("internal:health-checking-config");
@@ -58,7 +58,7 @@ public abstract class LoadBalancer {
 
     public abstract void shutdown();
 
-    /* JADX INFO: renamed from: io.grpc.LoadBalancer$1, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.LoadBalancer$1, reason: invalid class name */
     class AnonymousClass1 extends SubchannelPicker {
         AnonymousClass1() {
         }
@@ -189,7 +189,7 @@ public abstract class LoadBalancer {
 
         public abstract MethodDescriptor<?, ?> getMethodDescriptor();
 
-        /* JADX INFO: renamed from: io.grpc.LoadBalancer$PickSubchannelArgs$1, reason: invalid class name */
+        /* INFO: renamed from: io.grpc.LoadBalancer$PickSubchannelArgs$1, reason: invalid class name */
         class AnonymousClass1 implements PickDetailsConsumer {
             AnonymousClass1() {
             }
@@ -366,7 +366,7 @@ public abstract class LoadBalancer {
             Builder() {
             }
 
-            /* JADX INFO: Access modifiers changed from: private */
+            /* INFO: Access modifiers changed from: private */
             public Builder copyCustomOptions(Object[][] objArr) {
                 Object[][] objArr2 = (Object[][]) Array.newInstance((Class<?>) Object.class, objArr.length, 2);
                 this.customOptions = objArr2;
@@ -526,7 +526,7 @@ public abstract class LoadBalancer {
             throw new UnsupportedOperationException();
         }
 
-        /* JADX INFO: renamed from: io.grpc.LoadBalancer$Helper$1, reason: invalid class name */
+        /* INFO: renamed from: io.grpc.LoadBalancer$Helper$1, reason: invalid class name */
         class AnonymousClass1 implements MetricRecorder {
             AnonymousClass1() {
             }
@@ -548,7 +548,7 @@ public abstract class LoadBalancer {
             throw new UnsupportedOperationException("Not implemented");
         }
 
-        /* JADX WARN: Code duplicated, block: B:7:0x000f  */
+        /* WARN: Code duplicated, block: B:7:0x000f  */
         public final EquivalentAddressGroup getAddresses() {
             boolean z;
             List<EquivalentAddressGroup> allAddresses = getAllAddresses();

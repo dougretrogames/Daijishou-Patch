@@ -5,8 +5,8 @@ import androidx.core.graphics.ColorUtils;
 import androidx.drawerlayout.widget.DrawerLayout;
 import com.google.android.material.animation.AnimationUtils;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class DrawerLayoutUtils$$ExternalSyntheticLambda0 implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ DrawerLayout f$0;
 

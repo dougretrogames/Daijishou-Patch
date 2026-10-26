@@ -14,7 +14,7 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.http.conn.util.InetAddressUtils;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public abstract class AbstractVerifier implements X509HostnameVerifier {
     static final String[] BAD_COUNTRY_2LDS;

@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.nio.ByteBuffer;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Struct extends GeneratedMessage implements StructOrBuilder {
     private static final Struct DEFAULT_INSTANCE;
     public static final int FIELDS_FIELD_NUMBER = 1;
@@ -57,7 +57,7 @@ public final class Struct extends GeneratedMessage implements StructOrBuilder {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public MapField<String, Value> internalGetFields() {
         MapField<String, Value> mapField = this.fields_;
         return mapField == null ? MapField.emptyMapField(FieldsDefaultEntryHolder.defaultEntry) : mapField;
@@ -234,7 +234,7 @@ public final class Struct extends GeneratedMessage implements StructOrBuilder {
         return this == DEFAULT_INSTANCE ? new Builder((AnonymousClass1) null) : new Builder((AnonymousClass1) null).mergeFrom(this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent parent) {
         return new Builder(parent, null);
@@ -522,7 +522,7 @@ public final class Struct extends GeneratedMessage implements StructOrBuilder {
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.Struct$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.Struct$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<Struct> {
         AnonymousClass1() {
         }

@@ -7,9 +7,9 @@ import kotlin.coroutines.jvm.internal.DebugMetadata;
 import kotlin.coroutines.jvm.internal.SuspendLambda;
 import kotlin.jvm.functions.Function3;
 
-/* JADX INFO: Add missing generic type declarations: [R] */
-/* JADX INFO: compiled from: Zip.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: Add missing generic type declarations: [R] */
+/* INFO: compiled from: Zip.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000\u0018\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0011\n\u0002\u0010\u0000\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u0003\"\u0004\b\u0002\u0010\u0004*\b\u0012\u0004\u0012\u0002H\u00040\u00052\u000e\u0010\u0006\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\b0\u0007H\u008a@"}, d2 = {"<anonymous>", "", "T1", "T2", "R", "Lkotlinx/coroutines/flow/FlowCollector;", "it", "", ""}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "kotlinx.coroutines.flow.FlowKt__ZipKt$combine$1$1", f = "Zip.kt", i = {}, l = {29, 29}, m = "invokeSuspend", n = {}, s = {})
 final class FlowKt__ZipKt$combine$1$1<R> extends SuspendLambda implements Function3<FlowCollector<? super R>, Object[], Continuation<? super Unit>, Object> {
@@ -18,8 +18,8 @@ final class FlowKt__ZipKt$combine$1$1<R> extends SuspendLambda implements Functi
     /* synthetic */ Object L$1;
     int label;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     FlowKt__ZipKt$combine$1$1(Function3<? super T1, ? super T2, ? super Continuation<? super R>, ? extends Object> function3, Continuation<? super FlowKt__ZipKt$combine$1$1> continuation) {
         super(3, continuation);
         this.$transform = function3;
@@ -33,14 +33,14 @@ final class FlowKt__ZipKt$combine$1$1<R> extends SuspendLambda implements Functi
         return flowKt__ZipKt$combine$1$1.invokeSuspend(Unit.INSTANCE);
     }
 
-    /* JADX WARN: Type inference incomplete: some casts might be missing */
-    /*  JADX ERROR: JadxRuntimeException in pass: ModVisitor
-        jadx.core.utils.exceptions.JadxRuntimeException: Can't change immutable type java.lang.Object to kotlinx.coroutines.flow.FlowKt__ZipKt$combine$1$1<R> for r6v1 'this'  java.lang.Object
-        	at jadx.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
-        	at jadx.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
-        	at jadx.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
-        	at jadx.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
-        	at jadx.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
+    /* WARN: Type inference incomplete: some casts might be missing */
+    /* ERROR: decompilerRuntimeException in pass: ModVisitor
+        decompiler.core.utils.exceptions.decompilerRuntimeException: Can't change immutable type java.lang.Object to kotlinx.coroutines.flow.FlowKt__ZipKt$combine$1$1<R> for r6v1 'this'  java.lang.Object
+        	at decompiler.core.dex.instructions.args.SSAVar.setType(SSAVar.java:114)
+        	at decompiler.core.dex.instructions.args.RegisterArg.setType(RegisterArg.java:52)
+        	at decompiler.core.dex.visitors.ModVisitor.removeCheckCast(ModVisitor.java:417)
+        	at decompiler.core.dex.visitors.ModVisitor.replaceStep(ModVisitor.java:152)
+        	at decompiler.core.dex.visitors.ModVisitor.visit(ModVisitor.java:96)
         */
     @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
     public final java.lang.Object invokeSuspend(java.lang.Object r7) {

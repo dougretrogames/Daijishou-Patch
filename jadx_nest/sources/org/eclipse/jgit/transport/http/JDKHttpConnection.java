@@ -23,7 +23,7 @@ import javax.net.ssl.TrustManager;
 import org.eclipse.jgit.internal.transport.http.DelegatingSSLSocketFactory;
 import org.eclipse.jgit.util.HttpSupport;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class JDKHttpConnection implements HttpConnection {
     HttpURLConnection wrappedUrlConnection;
 
@@ -171,7 +171,7 @@ public class JDKHttpConnection implements HttpConnection {
         ((HttpsURLConnection) this.wrappedUrlConnection).setSSLSocketFactory(new AnonymousClass1(sSLContext.getSocketFactory()));
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.http.JDKHttpConnection$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.http.JDKHttpConnection$1, reason: invalid class name */
     class AnonymousClass1 extends DelegatingSSLSocketFactory {
         AnonymousClass1(SSLSocketFactory sSLSocketFactory) {
             super(sSLSocketFactory);

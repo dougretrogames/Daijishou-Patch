@@ -6,7 +6,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AndRevFilter extends RevFilter {
     public static RevFilter create(RevFilter revFilter, RevFilter revFilter2) {
         if (revFilter == ALL) {

@@ -7,7 +7,7 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffColorFilter;
 import android.os.Build;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class BlendModeColorFilterCompat {
     public static ColorFilter createBlendModeColorFilterCompat(int i, BlendModeCompat blendModeCompat) {
         if (Build.VERSION.SDK_INT >= 29) {

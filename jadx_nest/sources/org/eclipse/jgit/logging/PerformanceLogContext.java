@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PerformanceLogContext {
     private static final PerformanceLogContext INSTANCE = new PerformanceLogContext();
     private static final ThreadLocal<List<PerformanceLogRecord>> eventRecords = ThreadLocal.withInitial(new PerformanceLogContext$$ExternalSyntheticLambda0());

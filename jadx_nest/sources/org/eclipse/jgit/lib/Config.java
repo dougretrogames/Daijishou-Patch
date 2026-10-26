@@ -26,7 +26,7 @@ import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.RawParseUtils;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Config {
     private static final TypedConfigGetter DEFAULT_GETTER;
     private static final String[] EMPTY_STRING_ARRAY = new String[0];
@@ -87,7 +87,7 @@ public class Config {
         typedGetter = typedConfigGetter;
     }
 
-    /* JADX WARN: Code duplicated, block: B:36:0x0085  */
+    /* WARN: Code duplicated, block: B:36:0x0085  */
     static String escapeValue(String str) {
         if (str.isEmpty()) {
             return "";
@@ -184,16 +184,16 @@ public class Config {
         return typedGetter.getBoolean(this, str, str2, str3, z);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$ArrayArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$ArrayArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     public <T extends Enum<?>> T getEnum(String str, String str2, String str3, T t) {
         return (T) typedGetter.getEnum(this, (Enum[]) allValuesOf(t), str, str2, str3, t);
@@ -747,8 +747,8 @@ public class Config {
         return sb.toString();
     }
 
-    /* JADX WARN: Code duplicated, block: B:62:0x00b8  */
-    /* JADX WARN: Code duplicated, block: B:63:0x00be  */
+    /* WARN: Code duplicated, block: B:62:0x00b8  */
+    /* WARN: Code duplicated, block: B:63:0x00be  */
     private static String readValue(StringReader stringReader) throws ConfigInvalidException {
         Object unicodeLiteral;
         StringBuilder sb = new StringBuilder();

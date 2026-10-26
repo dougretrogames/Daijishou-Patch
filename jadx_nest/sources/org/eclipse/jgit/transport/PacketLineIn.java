@@ -14,7 +14,7 @@ import org.eclipse.jgit.util.RawParseUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PacketLineIn {
     private final InputStream in;
     private long limit;
@@ -30,7 +30,7 @@ public class PacketLineIn {
         ACK_COMMON,
         ACK_READY;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static AckNackResult[] valuesCustom() {
             AckNackResult[] ackNackResultArrValuesCustom = values();
             int length = ackNackResultArrValuesCustom.length;
@@ -237,7 +237,7 @@ public class PacketLineIn {
             this.current = packetLineIn.readString();
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.transport.PacketLineIn$PacketLineInIterator$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.transport.PacketLineIn$PacketLineInIterator$1, reason: invalid class name */
         class AnonymousClass1 implements Iterator<String> {
             AnonymousClass1() {
             }

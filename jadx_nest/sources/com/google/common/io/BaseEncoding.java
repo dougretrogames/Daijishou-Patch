@@ -15,7 +15,7 @@ import java.util.Objects;
 import javax.annotation.CheckForNull;
 import net.lingala.zip4j.crypto.PBKDF2.BinTools;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class BaseEncoding {
     private static final BaseEncoding BASE64 = new Base64Encoding("base64()", "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/", '=');
@@ -78,7 +78,7 @@ public abstract class BaseEncoding {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.io.BaseEncoding$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.io.BaseEncoding$1, reason: invalid class name */
     class AnonymousClass1 extends ByteSink {
         final /* synthetic */ CharSink val$encodedSink;
 
@@ -120,7 +120,7 @@ public abstract class BaseEncoding {
         return extract(bArr, decodeTo(bArr, charSequenceTrimTrailingPadding));
     }
 
-    /* JADX INFO: renamed from: com.google.common.io.BaseEncoding$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.io.BaseEncoding$2, reason: invalid class name */
     class AnonymousClass2 extends ByteSource {
         final /* synthetic */ CharSource val$encodedSource;
 
@@ -382,7 +382,7 @@ public abstract class BaseEncoding {
             return this.alphabet.charsPerChunk * IntMath.divide(bytes, this.alphabet.bytesPerChunk, RoundingMode.CEILING);
         }
 
-        /* JADX INFO: renamed from: com.google.common.io.BaseEncoding$StandardBaseEncoding$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.io.BaseEncoding$StandardBaseEncoding$1, reason: invalid class name */
         class AnonymousClass1 extends OutputStream {
             final /* synthetic */ Writer val$out;
             int bitBuffer = 0;
@@ -530,7 +530,7 @@ public abstract class BaseEncoding {
             return i2;
         }
 
-        /* JADX INFO: renamed from: com.google.common.io.BaseEncoding$StandardBaseEncoding$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.io.BaseEncoding$StandardBaseEncoding$2, reason: invalid class name */
         class AnonymousClass2 extends InputStream {
             final /* synthetic */ Reader val$reader;
             int bitBuffer = 0;
@@ -825,7 +825,7 @@ public abstract class BaseEncoding {
         return new AnonymousClass3(delegate, toIgnore);
     }
 
-    /* JADX INFO: renamed from: com.google.common.io.BaseEncoding$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.io.BaseEncoding$3, reason: invalid class name */
     class AnonymousClass3 extends Reader {
         final /* synthetic */ Reader val$delegate;
         final /* synthetic */ String val$toIgnore;
@@ -865,7 +865,7 @@ public abstract class BaseEncoding {
         return new AnonymousClass4(afterEveryChars, delegate, separator);
     }
 
-    /* JADX INFO: renamed from: com.google.common.io.BaseEncoding$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.io.BaseEncoding$4, reason: invalid class name */
     class AnonymousClass4 implements Appendable {
         int charsUntilSeparator;
         final /* synthetic */ int val$afterEveryChars;
@@ -901,7 +901,7 @@ public abstract class BaseEncoding {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.io.BaseEncoding$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.io.BaseEncoding$5, reason: invalid class name */
     class AnonymousClass5 extends Writer {
         final /* synthetic */ Writer val$delegate;
         final /* synthetic */ Appendable val$separatingAppendable;

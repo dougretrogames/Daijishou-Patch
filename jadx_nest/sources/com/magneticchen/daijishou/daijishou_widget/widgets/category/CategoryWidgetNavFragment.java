@@ -70,15 +70,15 @@ import kotlin.text.Regex;
 import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: CategoryWidgetNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000Ò\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010!\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010 \n\u0002\b\u0007\u0018\u0000 k2\u00020\u0001:\u0002jkB\u0005¢\u0006\u0002\u0010\u0002J\b\u0010N\u001a\u00020AH\u0016J\u0012\u0010O\u001a\u00020P2\b\u0010Q\u001a\u0004\u0018\u00010RH\u0016J&\u0010S\u001a\u0004\u0018\u00010T2\u0006\u0010U\u001a\u00020V2\b\u0010W\u001a\u0004\u0018\u00010X2\b\u0010Q\u001a\u0004\u0018\u00010RH\u0017J \u0010Y\u001a\u00020A2\u0006\u0010Z\u001a\u00020\u000e2\u0006\u0010[\u001a\u00020\u000e2\u0006\u0010\\\u001a\u00020]H\u0016J\u001a\u0010^\u001a\u00020P2\u0006\u0010_\u001a\u00020%2\b\b\u0002\u0010`\u001a\u00020AH\u0002J\u0010\u0010a\u001a\u00020P2\u0006\u0010b\u001a\u00020\u0013H\u0002J\u0016\u0010c\u001a\u00020P2\f\u0010d\u001a\b\u0012\u0004\u0012\u00020\u00130eH\u0004J&\u0010f\u001a\u00020P\"\u0004\b\u0000\u0010g*\b\u0012\u0004\u0012\u0002Hg0#2\u0006\u0010h\u001a\u00020\u000e2\u0006\u0010i\u001a\u00020\u000eR\u001b\u0010\u0003\u001a\u00020\u00048BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0007\u0010\b\u001a\u0004\b\u0005\u0010\u0006R\u000e\u0010\t\u001a\u00020\nX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010\r\u001a\u00020\u000e8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u000f\u001a\u00020\u000e8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u0010\u001a\u00020\u000e8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u0012\u0010\u0011\u001a\u00020\u000e8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u0012\u001a\u0004\u0018\u00010\u0013X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0014\u0010\u0015\"\u0004\b\u0016\u0010\u0017R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082.¢\u0006\u0002\n\u0000R*\u0010\u001c\u001a\u001e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u001e0\u001dj\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u001e`\u001fX\u0082.¢\u0006\u0002\n\u0000R*\u0010 \u001a\u001e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\n0\u001dj\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\n`\u001fX\u0082.¢\u0006\u0002\n\u0000R*\u0010!\u001a\u001e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u00130\u001dj\u000e\u0012\u0004\u0012\u00020\u000e\u0012\u0004\u0012\u00020\u0013`\u001fX\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010\"\u001a\b\u0012\u0004\u0012\u00020\u00130#X\u0082\u0004¢\u0006\u0002\n\u0000R*\u0010$\u001a\u001e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020%0\u001dj\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020%`\u001fX\u0082\u0004¢\u0006\u0002\n\u0000R*\u0010&\u001a\u001e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u00130\u001dj\u000e\u0012\u0004\u0012\u00020\u0013\u0012\u0004\u0012\u00020\u0013`\u001fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020(X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020*X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020,X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020.X\u0082\u000e¢\u0006\u0002\n\u0000R\u001b\u0010/\u001a\u0002008BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b3\u0010\b\u001a\u0004\b1\u00102R\u000e\u00104\u001a\u00020\u0013X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00105\u001a\u00020\u0013X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00106\u001a\u00020%X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00107\u001a\u00020\nX\u0082.¢\u0006\u0002\n\u0000R\u000e\u00108\u001a\u00020\u0013X\u0082.¢\u0006\u0002\n\u0000R*\u00109\u001a\u001e\u0012\u0004\u0012\u00020.\u0012\u0004\u0012\u00020\u00130\u001dj\u000e\u0012\u0004\u0012\u00020.\u0012\u0004\u0012\u00020\u0013`\u001fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010:\u001a\b\u0012\u0004\u0012\u00020;0#X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010<\u001a\u00020=X\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010>\u001a\u00060?R\u00020\u0000X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010@\u001a\u00020AX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010B\u001a\u0004\u0018\u00010%X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010C\u001a\u00020\u0013X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010D\u001a\u00020EX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010F\u001a\u00020GX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010H\u001a\u00020\u001bX\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010I\u001a\u00020AX\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bJ\u0010K\"\u0004\bL\u0010M¨\u0006l"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetNavFragment;", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetNavFragment;", "()V", "categoryWidgetViewModel", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetViewModel;", "getCategoryWidgetViewModel", "()Lcom/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetViewModel;", "categoryWidgetViewModel$delegate", "Lkotlin/Lazy;", "chipColorStateList", "Landroid/content/res/ColorStateList;", "chipGroup", "Lcom/google/android/material/chip/ChipGroup;", "colorHighlight", "", "colorOnHighlight", "colorOnPrimary", "colorPrimary", "currentGenreId", "", "getCurrentGenreId", "()Ljava/lang/String;", "setCurrentGenreId", "(Ljava/lang/String;)V", "emptyLayout", "Landroid/widget/LinearLayout;", "emptyTextView", "Landroid/widget/TextView;", "filterModeIconHashMap", "Ljava/util/HashMap;", "Landroid/graphics/drawable/Drawable;", "Lkotlin/collections/HashMap;", "filterModeIconTintHashMap", "filterModeTitleStringHashMap", "genreIdList", "", "genreIdToChipHashMap", "Lcom/google/android/material/chip/Chip;", "genreIdToNameHashMap", "gridLayoutManager", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouGridLayoutManager;", "horizontalScrollView", "Landroid/widget/HorizontalScrollView;", "iconImageView", "Landroid/widget/ImageView;", "lastToggleGenreTimeMillis", "", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "getModel", "()Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "model$delegate", "noItemsFormatString", "noItemsString", "overviewChip", "overviewColorStateList", "overviewString", "platformIdToShortnameHashMap", "playableItemEntityList", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "recyclerViewAdapter", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetNavFragment$CategoryWidgetRecyclerViewAdapter;", "scrollingOnBackPressed", "", "selectedChip", "setToFilterModeFormatString", "strokeWidth", "", "titleLayout", "Landroidx/constraintlayout/widget/ConstraintLayout;", "titleTextView", "useDefaultWallpaper", "getUseDefaultWallpaper", "()Z", "setUseDefaultWallpaper", "(Z)V", "onBackPressed", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onHotKeyPressed", "hotkeyCode", "keyCode", "keyEvent", "Landroid/view/KeyEvent;", "selectChip", "chip", "smoothScroll", "updateDimensionRatio", "dimensionRatio", "updateGenres", "genreIds", "", "move", ExifInterface.GPS_DIRECTION_TRUE, TypedValues.TransitionType.S_FROM, TypedValues.TransitionType.S_TO, "CategoryWidgetRecyclerViewAdapter", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class CategoryWidgetNavFragment extends WidgetNavFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
 
-    /* JADX INFO: renamed from: categoryWidgetViewModel$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: categoryWidgetViewModel$delegate, reason: from kotlin metadata */
     private final Lazy categoryWidgetViewModel;
     private ColorStateList chipColorStateList;
     private ChipGroup chipGroup;
@@ -92,7 +92,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
     private HorizontalScrollView horizontalScrollView;
     private ImageView iconImageView;
 
-    /* JADX INFO: renamed from: model$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: model$delegate, reason: from kotlin metadata */
     private final Lazy model;
     public String noItemsFormatString;
     public String noItemsString;
@@ -119,7 +119,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
     private int colorOnHighlight = -1;
     private long lastToggleGenreTimeMillis = System.currentTimeMillis();
 
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0003\u001a\u00020\u0004¨\u0006\u0005"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetNavFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetNavFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -157,12 +157,12 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         this.useDefaultWallpaper = z;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final DaijishouViewModel getModel() {
         return (DaijishouViewModel) this.model.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final CategoryWidgetViewModel getCategoryWidgetViewModel() {
         return (CategoryWidgetViewModel) this.categoryWidgetViewModel.getValue();
     }
@@ -175,18 +175,18 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         this.currentGenreId = str;
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x0021  */
-    /* JADX WARN: Code duplicated, block: B:32:0x005f  */
-    /* JADX WARN: Code duplicated, block: B:34:0x0065  */
-    /* JADX WARN: Code duplicated, block: B:37:0x0070  */
-    /* JADX WARN: Code duplicated, block: B:40:0x007e  */
-    /* JADX WARN: Code duplicated, block: B:42:0x0082  */
-    /* JADX WARN: Code duplicated, block: B:45:0x008f  */
-    /* JADX WARN: Code duplicated, block: B:46:0x0093  */
-    /* JADX WARN: Code duplicated, block: B:48:0x0098  */
-    /* JADX WARN: Code duplicated, block: B:50:0x009c  */
-    /* JADX WARN: Code duplicated, block: B:51:0x00a0  */
-    /* JADX WARN: Code duplicated, block: B:9:0x001d  */
+    /* WARN: Code duplicated, block: B:11:0x0021  */
+    /* WARN: Code duplicated, block: B:32:0x005f  */
+    /* WARN: Code duplicated, block: B:34:0x0065  */
+    /* WARN: Code duplicated, block: B:37:0x0070  */
+    /* WARN: Code duplicated, block: B:40:0x007e  */
+    /* WARN: Code duplicated, block: B:42:0x0082  */
+    /* WARN: Code duplicated, block: B:45:0x008f  */
+    /* WARN: Code duplicated, block: B:46:0x0093  */
+    /* WARN: Code duplicated, block: B:48:0x0098  */
+    /* WARN: Code duplicated, block: B:50:0x009c  */
+    /* WARN: Code duplicated, block: B:51:0x00a0  */
+    /* WARN: Code duplicated, block: B:9:0x001d  */
     @Override // com.magneticchen.daijishou.abstract_fragment_classes.DaijishouFragment
     public boolean onBackPressed() {
         RecyclerView recyclerView;
@@ -452,7 +452,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void updateDimensionRatio(String dimensionRatio) {
         CategoryWidgetRecyclerViewAdapter categoryWidgetRecyclerViewAdapter = this.recyclerViewAdapter;
         RecyclerView recyclerView = null;
@@ -482,20 +482,20 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         recyclerView.requestLayout();
     }
 
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001)B\u0013\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004¢\u0006\u0002\u0010\u0005J\u0010\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\"H\u0016J \u0010#\u001a\n0$R\u00060\u0000R\u00020%2\u0006\u0010&\u001a\u00020'2\u0006\u0010(\u001a\u00020\"H\u0016R\u0011\u0010\u0006\u001a\u00020\u0007¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR$\u0010\f\u001a\u00020\u000b2\u0006\u0010\n\u001a\u00020\u000b@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010R\u001a\u0010\u0011\u001a\u00020\u0012X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016R\u001b\u0010\u0017\u001a\u00020\u00188FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u001b\u0010\u001c\u001a\u0004\b\u0019\u0010\u001aR\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u001d\u001a\u0004\u0018\u00010\u001eX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006*"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetNavFragment$CategoryWidgetRecyclerViewAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "playableItemEntityList", "", "(Lcom/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetNavFragment;Ljava/util/List;)V", "cachedBitmapLoader", "Lcom/magneticchen/daijishou/cache/CachedBitmapLoader;", "getCachedBitmapLoader", "()Lcom/magneticchen/daijishou/cache/CachedBitmapLoader;", "value", "", "dimensionRatio", "getDimensionRatio", "()Ljava/lang/String;", "setDimensionRatio", "(Ljava/lang/String;)V", "dimensionRatioHasChanged", "", "getDimensionRatioHasChanged", "()Z", "setDimensionRatioHasChanged", "(Z)V", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "getModel", "()Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "model$delegate", "Lkotlin/Lazy;", "textColorsBackup", "Landroid/content/res/ColorStateList;", "getItemId", "", "position", "", "onCreateViewHolder", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetNavFragment$CategoryWidgetRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetNavFragment;", "parent", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class CategoryWidgetRecyclerViewAdapter extends DaijishouRecyclerView.Adapter<PlayableItemEntity> {
         private final CachedBitmapLoader cachedBitmapLoader;
         private String dimensionRatio;
         private boolean dimensionRatioHasChanged;
 
-        /* JADX INFO: renamed from: model$delegate, reason: from kotlin metadata */
+        /* INFO: renamed from: model$delegate, reason: from kotlin metadata */
         private final Lazy model;
         private final List<PlayableItemEntity> playableItemEntityList;
         private ColorStateList textColorsBackup;
         final /* synthetic */ CategoryWidgetNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public CategoryWidgetRecyclerViewAdapter(CategoryWidgetNavFragment categoryWidgetNavFragment, List<PlayableItemEntity> playableItemEntityList) {
             super(playableItemEntityList, true, false, 4, null);
             Intrinsics.checkNotNullParameter(playableItemEntityList, "playableItemEntityList");
@@ -547,7 +547,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
             return new ViewHolder(this, viewInflate);
         }
 
-        /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+        /* INFO: compiled from: CategoryWidgetNavFragment.kt */
         @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0003H\u0016J\b\u0010\u0014\u001a\u00020\u0015H\u0016J\b\u0010\u0016\u001a\u00020\u0010H\u0016J\u0010\u0010\u0017\u001a\u00020\u00102\u0006\u0010\u0018\u001a\u00020\u0015H\u0016R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\rX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0019"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetNavFragment$CategoryWidgetRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetNavFragment$CategoryWidgetRecyclerViewAdapter;Landroid/view/View;)V", "backgroundSet", "Landroidx/constraintlayout/widget/ConstraintLayout;", "imageView", "Landroid/widget/ImageView;", "placeholder", "platformTextView", "Landroid/widget/TextView;", "textView", "onBind", "", "position", "", "item", "onClick", "", "onFocus", "onFocusClear", "isAbsoluteAdapterPositionValid", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<PlayableItemEntity>.ViewHolder {
             private ConstraintLayout backgroundSet;
@@ -557,7 +557,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
             private TextView textView;
             final /* synthetic */ CategoryWidgetRecyclerViewAdapter this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(CategoryWidgetRecyclerViewAdapter categoryWidgetRecyclerViewAdapter, View itemView) {
                 super(categoryWidgetRecyclerViewAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");
@@ -781,7 +781,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         horizontalScrollView.post(new CategoryWidgetNavFragment$$ExternalSyntheticLambda2(smoothScroll, this, chip));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void selectChip$lambda$3(boolean z, CategoryWidgetNavFragment this$0, Chip chip) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(chip, "$chip");
@@ -915,7 +915,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void updateGenres$lambda$6$lambda$4(CategoryWidgetNavFragment this$0, Chip chip, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(chip, "$chip");
@@ -1106,19 +1106,19 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$7(CategoryWidgetNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.getCategoryWidgetViewModel().toggleFilterMode();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$2, reason: invalid class name */
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$2, reason: invalid class name */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass2 extends Lambda<Unit> implements Function4<View, Integer, Long, PlayableItemEntity, Unit> {
         final /* synthetic */ FragmentActivity $activity;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(FragmentActivity fragmentActivity) {
             super(4);
             this.$activity = fragmentActivity;
@@ -1137,14 +1137,14 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$3, reason: invalid class name */
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$3, reason: invalid class name */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\"\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0004\b\n\u0010\u000b"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke", "(Landroid/view/View;IJLcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass3 extends Lambda<Boolean> implements Function4<View, Integer, Long, PlayableItemEntity, Boolean> {
         final /* synthetic */ FragmentActivity $activity;
         final /* synthetic */ CategoryWidgetNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(FragmentActivity fragmentActivity, CategoryWidgetNavFragment categoryWidgetNavFragment) {
             super(4);
             this.$activity = fragmentActivity;
@@ -1167,8 +1167,8 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$4, reason: invalid class name */
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$4, reason: invalid class name */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass4 extends Lambda<Unit> implements Function4<View, Integer, Long, PlayableItemEntity, Unit> {
         AnonymousClass4() {
@@ -1187,8 +1187,8 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$5, reason: invalid class name */
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$5, reason: invalid class name */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/daijishou_widget/widgets/category/CategoryWidgetNavFragment$onCreateView$5", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass5 extends RecyclerView.OnScrollListener {
         AnonymousClass5() {
@@ -1204,8 +1204,8 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$7, reason: invalid class name */
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$7, reason: invalid class name */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass7 extends Lambda<Unit> implements Function1<List<? extends PlatformEntity>, Unit> {
         AnonymousClass7() {
@@ -1218,7 +1218,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<PlatformEntity> list) {
             Intrinsics.checkNotNull(list);
             CategoryWidgetNavFragment categoryWidgetNavFragment = CategoryWidgetNavFragment.this;
@@ -1228,7 +1228,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$9(CategoryWidgetNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Chip chip = this$0.overviewChip;
@@ -1239,14 +1239,14 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         selectChip$default(this$0, chip, false, 2, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$9, reason: invalid class name */
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$9, reason: invalid class name */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "genreIds", "", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass9 extends Lambda<Unit> implements Function1<List<? extends String>, Unit> {
         final /* synthetic */ Ref.BooleanRef $firstTime;
         final /* synthetic */ CategoryWidgetNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass9(Ref.BooleanRef booleanRef, CategoryWidgetNavFragment categoryWidgetNavFragment) {
             super(1);
             this.$firstTime = booleanRef;
@@ -1259,7 +1259,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<String> list) {
             if (this.$firstTime.element) {
                 this.$firstTime.element = false;
@@ -1271,19 +1271,19 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$refreshPlayableItems(CategoryWidgetNavFragment categoryWidgetNavFragment, List<PlayableItemEntity> list) {
         BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(categoryWidgetNavFragment), Dispatchers.getIO(), null, new CategoryWidgetNavFragment$onCreateView$refreshPlayableItems$1(categoryWidgetNavFragment, list, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$10, reason: invalid class name */
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$10, reason: invalid class name */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass10 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ Ref.BooleanRef $oldPref;
         final /* synthetic */ CategoryWidgetNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass10(Ref.BooleanRef booleanRef, CategoryWidgetNavFragment categoryWidgetNavFragment) {
             super(1);
             this.$oldPref = booleanRef;
@@ -1296,7 +1296,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             if (Intrinsics.areEqual(Boolean.valueOf(this.$oldPref.element), bool)) {
                 return;
@@ -1311,8 +1311,8 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$12, reason: invalid class name */
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$12, reason: invalid class name */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass12 extends Lambda<Unit> implements Function1<String, Unit> {
         AnonymousClass12() {
@@ -1325,7 +1325,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(String str) {
             CategoryWidgetRecyclerViewAdapter categoryWidgetRecyclerViewAdapter = CategoryWidgetNavFragment.this.recyclerViewAdapter;
             if (categoryWidgetRecyclerViewAdapter == null) {
@@ -1343,8 +1343,8 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$13, reason: invalid class name */
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$13, reason: invalid class name */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "playableItems", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass13 extends Lambda<Unit> implements Function1<List<? extends PlayableItemEntity>, Unit> {
         AnonymousClass13() {
@@ -1357,7 +1357,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<PlayableItemEntity> list) {
             CategoryWidgetNavFragment categoryWidgetNavFragment = CategoryWidgetNavFragment.this;
             Intrinsics.checkNotNull(list);
@@ -1365,8 +1365,8 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$14, reason: invalid class name */
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$14, reason: invalid class name */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass14 extends Lambda<Unit> implements Function1<Integer, Unit> {
         AnonymousClass14() {
@@ -1379,7 +1379,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             ImageView imageView = CategoryWidgetNavFragment.this.iconImageView;
             if (imageView == null) {
@@ -1435,8 +1435,8 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$15, reason: invalid class name */
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$15, reason: invalid class name */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass15 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         AnonymousClass15() {
@@ -1449,7 +1449,7 @@ public final class CategoryWidgetNavFragment extends WidgetNavFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             CategoryWidgetRecyclerViewAdapter categoryWidgetRecyclerViewAdapter = CategoryWidgetNavFragment.this.recyclerViewAdapter;
             if (categoryWidgetRecyclerViewAdapter == null) {

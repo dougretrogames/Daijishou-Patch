@@ -1,6 +1,6 @@
 package net.lingala.zip4j.model;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DigitalSignature extends ZipHeader {
     private String signatureData;
     private int sizeOfData;

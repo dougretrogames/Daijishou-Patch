@@ -1,6 +1,6 @@
 package androidx.leanback.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface FocusHighlight {
     public static final int ZOOM_FACTOR_LARGE = 3;
     public static final int ZOOM_FACTOR_MEDIUM = 2;

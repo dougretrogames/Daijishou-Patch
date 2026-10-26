@@ -7,7 +7,7 @@ import org.eclipse.jgit.transport.PackLock;
 import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.FileUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PackLockImpl implements PackLock {
     private final File keepFile;
 

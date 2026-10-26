@@ -28,7 +28,7 @@ import java.util.Date;
 import java.util.Map;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GdchCredentials extends GoogleCredentials {
     private static final int DEFAULT_LIFETIME_IN_SECONDS = 3600;
     private static final String PARSE_ERROR_PREFIX = "Error parsing token refresh response. ";

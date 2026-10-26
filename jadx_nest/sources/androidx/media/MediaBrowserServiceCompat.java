@@ -31,7 +31,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class MediaBrowserServiceCompat extends Service {
     private static final float EPSILON = 1.0E-5f;
     public static final String KEY_MEDIA_ITEM = "media_item";
@@ -110,7 +110,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             return null;
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplBase$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplBase$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             final /* synthetic */ MediaSessionCompat.Token val$token;
 
@@ -138,7 +138,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompat.this.mHandler.post(new AnonymousClass1(token));
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplBase$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplBase$2, reason: invalid class name */
         class AnonymousClass2 implements Runnable {
             final /* synthetic */ Bundle val$options;
             final /* synthetic */ String val$parentId;
@@ -162,7 +162,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompat.this.mHandler.post(new AnonymousClass2(str, bundle));
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplBase$3, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplBase$3, reason: invalid class name */
         class AnonymousClass3 implements Runnable {
             final /* synthetic */ Bundle val$options;
             final /* synthetic */ String val$parentId;
@@ -242,7 +242,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             return MediaBrowserServiceCompatApi21.onBind(this.mServiceObj, intent);
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             final /* synthetic */ MediaSessionCompat.Token val$token;
 
@@ -314,17 +314,17 @@ public abstract class MediaBrowserServiceCompat extends Service {
             return new MediaBrowserServiceCompatApi21.BrowserRoot(browserRootOnGetRoot.getRootId(), extras);
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$2, reason: invalid class name */
         class AnonymousClass2 extends Result<List<MediaBrowserCompat.MediaItem>> {
             final /* synthetic */ MediaBrowserServiceCompatApi21.ResultWrapper val$resultWrapper;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(Object obj, MediaBrowserServiceCompatApi21.ResultWrapper resultWrapper) {
                 super(obj);
                 this.val$resultWrapper = resultWrapper;
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // androidx.media.MediaBrowserServiceCompat.Result
             public void onResultSent(List<MediaBrowserCompat.MediaItem> list) {
                 ArrayList arrayList;
@@ -356,7 +356,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompatApi21.notifyChildrenChanged(this.mServiceObj, str);
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$3, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$3, reason: invalid class name */
         class AnonymousClass3 implements Runnable {
             final /* synthetic */ Bundle val$options;
             final /* synthetic */ String val$parentId;
@@ -379,7 +379,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompat.this.mHandler.post(new AnonymousClass3(str, bundle));
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$4, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi21$4, reason: invalid class name */
         class AnonymousClass4 implements Runnable {
             final /* synthetic */ Bundle val$options;
             final /* synthetic */ String val$parentId;
@@ -451,17 +451,17 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompatApi21.onCreate(this.mServiceObj);
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi23$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi23$1, reason: invalid class name */
         class AnonymousClass1 extends Result<MediaBrowserCompat.MediaItem> {
             final /* synthetic */ MediaBrowserServiceCompatApi21.ResultWrapper val$resultWrapper;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(Object obj, MediaBrowserServiceCompatApi21.ResultWrapper resultWrapper) {
                 super(obj);
                 this.val$resultWrapper = resultWrapper;
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // androidx.media.MediaBrowserServiceCompat.Result
             public void onResultSent(MediaBrowserCompat.MediaItem mediaItem) {
                 if (mediaItem == null) {
@@ -496,17 +496,17 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompatApi21.onCreate(this.mServiceObj);
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi26$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$MediaBrowserServiceImplApi26$1, reason: invalid class name */
         class AnonymousClass1 extends Result<List<MediaBrowserCompat.MediaItem>> {
             final /* synthetic */ MediaBrowserServiceCompatApi26.ResultWrapper val$resultWrapper;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(Object obj, MediaBrowserServiceCompatApi26.ResultWrapper resultWrapper) {
                 super(obj);
                 this.val$resultWrapper = resultWrapper;
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // androidx.media.MediaBrowserServiceCompat.Result
             public void onResultSent(List<MediaBrowserCompat.MediaItem> list) {
                 ArrayList arrayList;
@@ -660,7 +660,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             this.callbacks = serviceCallbacks;
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ConnectionRecord$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ConnectionRecord$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             AnonymousClass1() {
             }
@@ -771,7 +771,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompat.this.mHandler.postOrRun(new AnonymousClass1(serviceCallbacks, str, i, i2, bundle));
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             final /* synthetic */ ServiceCallbacks val$callbacks;
             final /* synthetic */ int val$pid;
@@ -818,7 +818,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$2, reason: invalid class name */
         class AnonymousClass2 implements Runnable {
             final /* synthetic */ ServiceCallbacks val$callbacks;
 
@@ -839,7 +839,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompat.this.mHandler.postOrRun(new AnonymousClass2(serviceCallbacks));
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$3, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$3, reason: invalid class name */
         class AnonymousClass3 implements Runnable {
             final /* synthetic */ ServiceCallbacks val$callbacks;
             final /* synthetic */ String val$id;
@@ -868,7 +868,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompat.this.mHandler.postOrRun(new AnonymousClass3(serviceCallbacks, str, iBinder, bundle));
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$4, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$4, reason: invalid class name */
         class AnonymousClass4 implements Runnable {
             final /* synthetic */ ServiceCallbacks val$callbacks;
             final /* synthetic */ String val$id;
@@ -905,7 +905,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompat.this.mHandler.postOrRun(new AnonymousClass5(serviceCallbacks, str, resultReceiver));
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$5, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$5, reason: invalid class name */
         class AnonymousClass5 implements Runnable {
             final /* synthetic */ ServiceCallbacks val$callbacks;
             final /* synthetic */ String val$mediaId;
@@ -928,7 +928,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$6, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$6, reason: invalid class name */
         class AnonymousClass6 implements Runnable {
             final /* synthetic */ ServiceCallbacks val$callbacks;
             final /* synthetic */ int val$pid;
@@ -962,7 +962,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompat.this.mHandler.postOrRun(new AnonymousClass6(serviceCallbacks, str, i, i2, bundle));
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$7, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$7, reason: invalid class name */
         class AnonymousClass7 implements Runnable {
             final /* synthetic */ ServiceCallbacks val$callbacks;
 
@@ -991,7 +991,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompat.this.mHandler.postOrRun(new AnonymousClass8(serviceCallbacks, str, bundle, resultReceiver));
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$8, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$8, reason: invalid class name */
         class AnonymousClass8 implements Runnable {
             final /* synthetic */ ServiceCallbacks val$callbacks;
             final /* synthetic */ Bundle val$extras;
@@ -1023,7 +1023,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             MediaBrowserServiceCompat.this.mHandler.postOrRun(new AnonymousClass9(serviceCallbacks, str, bundle, resultReceiver));
         }
 
-        /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$9, reason: invalid class name */
+        /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$ServiceBinderImpl$9, reason: invalid class name */
         class AnonymousClass9 implements Runnable {
             final /* synthetic */ String val$action;
             final /* synthetic */ ServiceCallbacks val$callbacks;
@@ -1257,14 +1257,14 @@ public abstract class MediaBrowserServiceCompat extends Service {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$1, reason: invalid class name */
     class AnonymousClass1 extends Result<List<MediaBrowserCompat.MediaItem>> {
         final /* synthetic */ ConnectionRecord val$connection;
         final /* synthetic */ Bundle val$notifyChildrenChangedOptions;
         final /* synthetic */ String val$parentId;
         final /* synthetic */ Bundle val$subscribeOptions;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Object obj, ConnectionRecord connectionRecord, String str, Bundle bundle, Bundle bundle2) {
             super(obj);
             this.val$connection = connectionRecord;
@@ -1273,7 +1273,7 @@ public abstract class MediaBrowserServiceCompat extends Service {
             this.val$notifyChildrenChangedOptions = bundle2;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // androidx.media.MediaBrowserServiceCompat.Result
         public void onResultSent(List<MediaBrowserCompat.MediaItem> list) {
             if (MediaBrowserServiceCompat.this.mConnections.get(this.val$connection.callbacks.asBinder()) != this.val$connection) {
@@ -1327,17 +1327,17 @@ public abstract class MediaBrowserServiceCompat extends Service {
         return list.subList(i3, size);
     }
 
-    /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$2, reason: invalid class name */
     class AnonymousClass2 extends Result<MediaBrowserCompat.MediaItem> {
         final /* synthetic */ ResultReceiver val$receiver;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(Object obj, ResultReceiver resultReceiver) {
             super(obj);
             this.val$receiver = resultReceiver;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // androidx.media.MediaBrowserServiceCompat.Result
         public void onResultSent(MediaBrowserCompat.MediaItem mediaItem) {
             if ((getFlags() & 2) != 0) {
@@ -1360,17 +1360,17 @@ public abstract class MediaBrowserServiceCompat extends Service {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$3, reason: invalid class name */
     class AnonymousClass3 extends Result<List<MediaBrowserCompat.MediaItem>> {
         final /* synthetic */ ResultReceiver val$receiver;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(Object obj, ResultReceiver resultReceiver) {
             super(obj);
             this.val$receiver = resultReceiver;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // androidx.media.MediaBrowserServiceCompat.Result
         public void onResultSent(List<MediaBrowserCompat.MediaItem> list) {
             if ((getFlags() & 4) != 0 || list == null) {
@@ -1393,17 +1393,17 @@ public abstract class MediaBrowserServiceCompat extends Service {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.media.MediaBrowserServiceCompat$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.media.MediaBrowserServiceCompat$4, reason: invalid class name */
     class AnonymousClass4 extends Result<Bundle> {
         final /* synthetic */ ResultReceiver val$receiver;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass4(Object obj, ResultReceiver resultReceiver) {
             super(obj);
             this.val$receiver = resultReceiver;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // androidx.media.MediaBrowserServiceCompat.Result
         public void onResultSent(Bundle bundle) {
             this.val$receiver.send(0, bundle);

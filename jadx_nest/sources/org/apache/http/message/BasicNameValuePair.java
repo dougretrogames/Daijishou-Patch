@@ -5,7 +5,7 @@ import org.apache.http.NameValuePair;
 import org.apache.http.util.Args;
 import org.apache.http.util.LangUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicNameValuePair implements NameValuePair, Cloneable, Serializable {
     private static final long serialVersionUID = -6437800749411518984L;
     private final String name;

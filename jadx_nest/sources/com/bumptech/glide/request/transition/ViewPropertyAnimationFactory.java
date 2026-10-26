@@ -2,7 +2,7 @@ package com.bumptech.glide.request.transition;
 
 import com.bumptech.glide.load.DataSource;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ViewPropertyAnimationFactory<R> implements TransitionFactory<R> {
     private ViewPropertyTransition<R> animation;
     private final ViewPropertyTransition.Animator animator;

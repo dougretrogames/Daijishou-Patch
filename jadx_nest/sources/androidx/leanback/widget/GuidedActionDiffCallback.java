@@ -2,7 +2,7 @@ package androidx.leanback.widget;
 
 import android.text.TextUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class GuidedActionDiffCallback extends DiffCallback<GuidedAction> {
     static final GuidedActionDiffCallback sInstance = new GuidedActionDiffCallback();
 

@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class FragmentManagerViewModel extends ViewModel {
     private static final ViewModelProvider.Factory FACTORY = new AnonymousClass1();
     private static final String TAG = "FragmentManager";
@@ -22,7 +22,7 @@ final class FragmentManagerViewModel extends ViewModel {
     private boolean mHasSavedSnapshot = false;
     private boolean mIsStateSaved = false;
 
-    /* JADX INFO: renamed from: androidx.fragment.app.FragmentManagerViewModel$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.fragment.app.FragmentManagerViewModel$1, reason: invalid class name */
     class AnonymousClass1 implements ViewModelProvider.Factory {
         AnonymousClass1() {
         }

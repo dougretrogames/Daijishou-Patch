@@ -15,7 +15,7 @@ import org.eclipse.jgit.revwalk.ObjectReachabilityChecker;
 import org.eclipse.jgit.revwalk.ObjectWalk;
 import org.eclipse.jgit.revwalk.RevObject;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BitmappedObjectReachabilityChecker implements ObjectReachabilityChecker {
     private final ObjectWalk walk;
 

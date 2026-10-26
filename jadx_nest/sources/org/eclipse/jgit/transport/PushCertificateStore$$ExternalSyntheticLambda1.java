@@ -2,8 +2,8 @@ package org.eclipse.jgit.transport;
 
 import java.util.Iterator;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class PushCertificateStore$$ExternalSyntheticLambda1 implements Iterable {
     public final /* synthetic */ PushCertificateStore f$0;
     public final /* synthetic */ String f$1;

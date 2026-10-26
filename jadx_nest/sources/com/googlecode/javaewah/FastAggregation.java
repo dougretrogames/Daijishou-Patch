@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class FastAggregation {
     private FastAggregation() {
     }
@@ -61,7 +61,7 @@ public final class FastAggregation {
         return eWAHCompressedBitmap;
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.FastAggregation$1, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.FastAggregation$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<EWAHCompressedBitmap> {
         AnonymousClass1() {
         }
@@ -111,7 +111,7 @@ public final class FastAggregation {
         return eWAHCompressedBitmap;
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.FastAggregation$2, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.FastAggregation$2, reason: invalid class name */
     class AnonymousClass2 implements Comparator<EWAHCompressedBitmap> {
         AnonymousClass2() {
         }
@@ -155,13 +155,13 @@ public final class FastAggregation {
         bitmapStorage.setSizeInBitsWithinLastWord(iSizeInBits);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.googlecode.javaewah.FastAggregation$3, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.googlecode.javaewah.FastAggregation$3, reason: invalid class name */
     class AnonymousClass3<T> implements Comparator<T> {
         AnonymousClass3() {
         }
 
-        /* JADX WARN: Incorrect types in method signature: (TT;TT;)I */
+        /* WARN: Incorrect types in method signature: (TT;TT;)I */
         @Override // java.util.Comparator
         public int compare(LogicalElement logicalElement, LogicalElement logicalElement2) {
             return logicalElement.sizeInBytes() - logicalElement2.sizeInBytes();
@@ -189,7 +189,7 @@ public final class FastAggregation {
         ((EWAHCompressedBitmap) priorityQueue.poll()).orToContainer((EWAHCompressedBitmap) priorityQueue.poll(), bitmapStorage);
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.FastAggregation$4, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.FastAggregation$4, reason: invalid class name */
     class AnonymousClass4 implements Comparator<EWAHCompressedBitmap> {
         AnonymousClass4() {
         }
@@ -200,7 +200,7 @@ public final class FastAggregation {
         }
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.FastAggregation$5, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.FastAggregation$5, reason: invalid class name */
     class AnonymousClass5 implements Comparator<EWAHCompressedBitmap> {
         AnonymousClass5() {
         }
@@ -223,7 +223,7 @@ public final class FastAggregation {
         return (EWAHCompressedBitmap) priorityQueue.poll();
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.FastAggregation$6, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.FastAggregation$6, reason: invalid class name */
     class AnonymousClass6 implements Comparator<EWAHCompressedBitmap> {
         AnonymousClass6() {
         }
@@ -246,7 +246,7 @@ public final class FastAggregation {
         return (EWAHCompressedBitmap) priorityQueue.poll();
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.FastAggregation$7, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.FastAggregation$7, reason: invalid class name */
     class AnonymousClass7 implements Comparator<EWAHCompressedBitmap> {
         AnonymousClass7() {
         }
@@ -271,7 +271,7 @@ public final class FastAggregation {
         return (EWAHCompressedBitmap) priorityQueue.poll();
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.FastAggregation$8, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.FastAggregation$8, reason: invalid class name */
     class AnonymousClass8 implements Comparator<EWAHCompressedBitmap> {
         AnonymousClass8() {
         }
@@ -296,13 +296,13 @@ public final class FastAggregation {
         return (EWAHCompressedBitmap) priorityQueue.poll();
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.googlecode.javaewah.FastAggregation$9, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.googlecode.javaewah.FastAggregation$9, reason: invalid class name */
     class AnonymousClass9<T> implements Comparator<T> {
         AnonymousClass9() {
         }
 
-        /* JADX WARN: Incorrect types in method signature: (TT;TT;)I */
+        /* WARN: Incorrect types in method signature: (TT;TT;)I */
         @Override // java.util.Comparator
         public int compare(LogicalElement logicalElement, LogicalElement logicalElement2) {
             return logicalElement.sizeInBytes() - logicalElement2.sizeInBytes();
@@ -330,7 +330,7 @@ public final class FastAggregation {
         ((EWAHCompressedBitmap) priorityQueue.poll()).xorToContainer((EWAHCompressedBitmap) priorityQueue.poll(), bitmapStorage);
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.FastAggregation$10, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.FastAggregation$10, reason: invalid class name */
     class AnonymousClass10 implements Comparator<EWAHCompressedBitmap> {
         AnonymousClass10() {
         }

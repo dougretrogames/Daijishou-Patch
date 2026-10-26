@@ -5,7 +5,7 @@ import java.util.SortedMap;
 import org.apache.commons.collections4.Factory;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LazySortedMap<K, V> extends LazyMap<K, V> implements SortedMap<K, V> {
     private static final long serialVersionUID = 2715322183617658933L;
 

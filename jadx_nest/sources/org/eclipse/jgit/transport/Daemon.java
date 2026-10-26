@@ -24,7 +24,7 @@ import org.eclipse.jgit.transport.resolver.ServiceNotAuthorizedException;
 import org.eclipse.jgit.transport.resolver.ServiceNotEnabledException;
 import org.eclipse.jgit.transport.resolver.UploadPackFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Daemon {
     private static final int BACKLOG = 5;
     public static final int DEFAULT_PORT = 9418;
@@ -51,7 +51,7 @@ public class Daemon {
         this.services = new DaemonService[]{new AnonymousClass1("upload-pack", "uploadpack"), new AnonymousClass2("receive-pack", "receivepack")};
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-transport-Daemon, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-transport-Daemon, reason: not valid java name */
     /* synthetic */ UploadPack m5803lambda$0$orgeclipsejgittransportDaemon(DaemonClient daemonClient, Repository repository) throws ServiceNotEnabledException, ServiceNotAuthorizedException {
         UploadPack uploadPack = new UploadPack(repository);
         uploadPack.setTimeout(getTimeout());
@@ -59,7 +59,7 @@ public class Daemon {
         return uploadPack;
     }
 
-    /* JADX INFO: renamed from: lambda$1$org-eclipse-jgit-transport-Daemon, reason: not valid java name */
+    /* INFO: renamed from: lambda$1$org-eclipse-jgit-transport-Daemon, reason: not valid java name */
     /* synthetic */ ReceivePack m5804lambda$1$orgeclipsejgittransportDaemon(DaemonClient daemonClient, Repository repository) throws ServiceNotEnabledException, ServiceNotAuthorizedException {
         ReceivePack receivePack = new ReceivePack(repository);
         InetAddress remoteAddress = daemonClient.getRemoteAddress();
@@ -72,7 +72,7 @@ public class Daemon {
         return receivePack;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.Daemon$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.Daemon$1, reason: invalid class name */
     class AnonymousClass1 extends DaemonService {
         AnonymousClass1(String str, String str2) {
             super(str, str2);
@@ -91,7 +91,7 @@ public class Daemon {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.Daemon$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.Daemon$2, reason: invalid class name */
     class AnonymousClass2 extends DaemonService {
         AnonymousClass2(String str, String str2) {
             super(str, str2);
@@ -160,7 +160,7 @@ public class Daemon {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     class Acceptor extends Thread {
         private final ServerSocket listenSocket;
         private final AtomicBoolean running;
@@ -171,7 +171,7 @@ public class Daemon {
             this.listenSocket = serverSocket;
         }
 
-        /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-transport-Daemon$Acceptor, reason: not valid java name */
+        /* INFO: renamed from: lambda$0$org-eclipse-jgit-transport-Daemon$Acceptor, reason: not valid java name */
         /* synthetic */ void m5805lambda$0$orgeclipsejgittransportDaemon$Acceptor(Thread thread, Throwable th) {
             terminate();
         }
@@ -228,7 +228,7 @@ public class Daemon {
         acceptor.start();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public synchronized void clearThread() {
         this.acceptThread = null;
     }
@@ -265,12 +265,12 @@ public class Daemon {
         new AnonymousClass3(this.processors, "Git-Daemon-Client " + remoteSocketAddress.toString(), socket, daemonClient).start();
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.Daemon$3, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.Daemon$3, reason: invalid class name */
     class AnonymousClass3 extends Thread {
         private final /* synthetic */ DaemonClient val$dc;
         private final /* synthetic */ Socket val$s;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(ThreadGroup threadGroup, String str, Socket socket, DaemonClient daemonClient) {
             super(threadGroup, str);
             this.val$s = socket;

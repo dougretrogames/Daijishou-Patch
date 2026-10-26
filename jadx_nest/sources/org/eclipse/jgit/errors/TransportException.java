@@ -3,7 +3,7 @@ package org.eclipse.jgit.errors;
 import java.io.IOException;
 import org.eclipse.jgit.transport.URIish;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransportException extends IOException {
     private static final long serialVersionUID = 1;
 

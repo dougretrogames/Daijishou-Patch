@@ -2,7 +2,7 @@ package io.opencensus.tags;
 
 import io.opencensus.tags.propagation.TagPropagationComponent;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class TagsComponent {
     public abstract TaggingState getState();
 

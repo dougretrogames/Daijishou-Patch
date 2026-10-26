@@ -14,7 +14,7 @@ import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BlameCommand extends GitCommand<BlameResult> {
     private DiffAlgorithm diffAlgorithm;
     private Boolean followFileRenames;

@@ -5,7 +5,7 @@ import java.util.Iterator;
 import org.eclipse.jgit.errors.IncorrectObjectTypeException;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class DepthGenerator extends Generator {
     private final RevFlag DEEPEN_NOT;
     private final RevFlag REINTERESTING;
@@ -15,7 +15,7 @@ class DepthGenerator extends Generator {
     private final FIFORevQueue pending;
     private final RevWalk walk;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     DepthGenerator(DepthWalk depthWalk, Generator generator) throws IOException {
         super(generator.firstParent);
         FIFORevQueue fIFORevQueue = new FIFORevQueue(this.firstParent);
@@ -81,7 +81,7 @@ class DepthGenerator extends Generator {
         this.pending.shareFreeList(blockRevQueue);
     }
 
-    /* JADX WARN: Code duplicated, block: B:42:0x007b  */
+    /* WARN: Code duplicated, block: B:42:0x007b  */
     @Override // org.eclipse.jgit.revwalk.Generator
     RevCommit next() throws IOException {
         boolean z;

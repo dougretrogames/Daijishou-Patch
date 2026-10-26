@@ -15,7 +15,7 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializable {
     private static final long serialVersionUID = 0;
@@ -134,7 +134,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
         return v;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Map<R, V> removeColumn(@CheckForNull Object obj) {
         LinkedHashMap linkedHashMap = new LinkedHashMap();
         Iterator<Map.Entry<R, Map<C, V>>> it = this.backingMap.entrySet().iterator();
@@ -151,12 +151,12 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
         return linkedHashMap;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean containsMapping(@CheckForNull Object rowKey, @CheckForNull Object columnKey, @CheckForNull Object value) {
         return value != null && value.equals(get(rowKey, columnKey));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean removeMapping(@CheckForNull Object rowKey, @CheckForNull Object columnKey, @CheckForNull Object value) {
         if (!containsMapping(rowKey, columnKey, value)) {
             return false;
@@ -347,7 +347,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
             return new AnonymousClass1(map.entrySet().iterator());
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.StandardTable$Row$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.StandardTable$Row$1, reason: invalid class name */
         class AnonymousClass1 implements Iterator<Map.Entry<C, V>> {
             final /* synthetic */ Iterator val$iterator;
 
@@ -372,7 +372,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.StandardTable$Row$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.StandardTable$Row$2, reason: invalid class name */
         class AnonymousClass2 extends ForwardingMapEntry<C, V> {
             final /* synthetic */ Map.Entry val$entry;
 
@@ -380,13 +380,13 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
                 this.val$entry = val$entry;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.ForwardingMapEntry, com.google.common.collect.ForwardingObject
             public Map.Entry<C, V> delegate() {
                 return this.val$entry;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.collect.ForwardingMapEntry, java.util.Map.Entry
             public V setValue(V v) {
                 return (V) super.setValue(Preconditions.checkNotNull(v));
@@ -531,7 +531,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
                 this();
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractIterator
             @CheckForNull
             public Map.Entry<R, V> computeNext() {
@@ -544,7 +544,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
                 return endOfData();
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.StandardTable$Column$EntrySetIterator$1EntryImpl, reason: invalid class name */
+            /* INFO: renamed from: com.google.common.collect.StandardTable$Column$EntrySetIterator$1EntryImpl, reason: invalid class name */
             class C1EntryImpl extends AbstractMapEntry<R, V> {
                 final /* synthetic */ Map.Entry val$entry;
 
@@ -562,7 +562,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
                     return (V) ((Map) this.val$entry.getValue()).get(Column.this.columnKey);
                 }
 
-                /* JADX WARN: Multi-variable type inference failed */
+                /* WARN: Multi-variable type inference failed */
                 @Override // com.google.common.collect.AbstractMapEntry, java.util.Map.Entry
                 public V setValue(V v) {
                     return (V) NullnessCasts.uncheckedCastNullableTToT(((Map) this.val$entry.getValue()).put(Column.this.columnKey, Preconditions.checkNotNull(v)));
@@ -784,7 +784,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
             return StandardTable.this.containsRow(key);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.AbstractMap, java.util.Map
         @CheckForNull
         public Map<C, V> get(@CheckForNull Object key) {
@@ -822,7 +822,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
                 return Maps.asMapEntryIterator(StandardTable.this.backingMap.keySet(), new AnonymousClass1());
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.StandardTable$RowMap$EntrySet$1, reason: invalid class name */
+            /* INFO: renamed from: com.google.common.collect.StandardTable$RowMap$EntrySet$1, reason: invalid class name */
             class AnonymousClass1 implements Function<R, Map<C, V>> {
                 AnonymousClass1() {
                 }
@@ -881,7 +881,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
             this();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.AbstractMap, java.util.Map
         @CheckForNull
         public Map<R, V> get(@CheckForNull Object key) {
@@ -934,7 +934,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
                 return Maps.asMapEntryIterator(StandardTable.this.columnKeySet(), new AnonymousClass1());
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.StandardTable$ColumnMap$ColumnMapEntrySet$1, reason: invalid class name */
+            /* INFO: renamed from: com.google.common.collect.StandardTable$ColumnMap$ColumnMapEntrySet$1, reason: invalid class name */
             class AnonymousClass1 implements Function<C, Map<R, V>> {
                 AnonymousClass1() {
                 }
@@ -977,7 +977,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
                 return Sets.removeAllImpl(this, c.iterator());
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.collect.Sets.ImprovedAbstractSet, java.util.AbstractCollection, java.util.Collection, java.util.Set
             public boolean retainAll(Collection<?> c) {
                 Preconditions.checkNotNull(c);
@@ -1008,7 +1008,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
                 return false;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.collect.Maps.Values, java.util.AbstractCollection, java.util.Collection
             public boolean removeAll(Collection<?> c) {
                 Preconditions.checkNotNull(c);
@@ -1022,7 +1022,7 @@ class StandardTable<R, C, V> extends AbstractTable<R, C, V> implements Serializa
                 return z;
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.collect.Maps.Values, java.util.AbstractCollection, java.util.Collection
             public boolean retainAll(Collection<?> c) {
                 Preconditions.checkNotNull(c);

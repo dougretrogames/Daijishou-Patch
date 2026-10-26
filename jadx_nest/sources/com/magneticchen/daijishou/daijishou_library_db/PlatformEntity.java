@@ -12,8 +12,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: PlatformEntity.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlatformEntity.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010!\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b]\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0087\b\u0018\u0000 \u0083\u00012\u00020\u0001:\u0002\u0083\u0001B\u009d\u0002\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0005\u0012\b\b\u0002\u0010\u0007\u001a\u00020\u0005\u0012\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\t\u001a\u00020\n\u0012\b\b\u0002\u0010\u000b\u001a\u00020\n\u0012\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u0005\u0012\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f\u0012\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u000f\u0012\b\b\u0002\u0010\u0011\u001a\u00020\u0005\u0012\b\b\u0002\u0010\u0012\u001a\u00020\u0003\u0012\u000e\b\u0002\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00030\u0014\u0012\u000e\b\u0002\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00050\u0014\u0012\b\b\u0002\u0010\u0016\u001a\u00020\u000f\u0012\b\b\u0002\u0010\u0017\u001a\u00020\n\u0012\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u0005\u0012\b\b\u0002\u0010\u0019\u001a\u00020\u000f\u0012\b\b\u0002\u0010\u001a\u001a\u00020\n\u0012\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u0005\u0012\u000e\b\u0002\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001d0\u0014\u0012\u000e\b\u0002\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\u00030\u0014\u0012\b\b\u0002\u0010\u001f\u001a\u00020\u0005¢\u0006\u0002\u0010 J\t\u0010]\u001a\u00020\u0003HÆ\u0003J\u0010\u0010^\u001a\u0004\u0018\u00010\u000fHÆ\u0003¢\u0006\u0002\u0010*J\u0010\u0010_\u001a\u0004\u0018\u00010\u000fHÆ\u0003¢\u0006\u0002\u0010*J\t\u0010`\u001a\u00020\u0005HÆ\u0003J\t\u0010a\u001a\u00020\u0003HÆ\u0003J\u000f\u0010b\u001a\b\u0012\u0004\u0012\u00020\u00030\u0014HÆ\u0003J\u000f\u0010c\u001a\b\u0012\u0004\u0012\u00020\u00050\u0014HÆ\u0003J\t\u0010d\u001a\u00020\u000fHÆ\u0003J\t\u0010e\u001a\u00020\nHÆ\u0003J\u000b\u0010f\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010g\u001a\u00020\u000fHÆ\u0003J\u000b\u0010h\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010i\u001a\u00020\nHÆ\u0003J\u000b\u0010j\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000f\u0010k\u001a\b\u0012\u0004\u0012\u00020\u001d0\u0014HÆ\u0003J\u000f\u0010l\u001a\b\u0012\u0004\u0012\u00020\u00030\u0014HÆ\u0003J\t\u0010m\u001a\u00020\u0005HÆ\u0003J\t\u0010n\u001a\u00020\u0005HÆ\u0003J\t\u0010o\u001a\u00020\u0005HÆ\u0003J\u000b\u0010p\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\t\u0010q\u001a\u00020\nHÆ\u0003J\t\u0010r\u001a\u00020\nHÆ\u0003J\u000b\u0010s\u001a\u0004\u0018\u00010\u0005HÆ\u0003J\u000b\u0010t\u001a\u0004\u0018\u00010\u0005HÆ\u0003J¦\u0002\u0010u\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\n\b\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00052\b\b\u0002\u0010\u0007\u001a\u00020\u00052\n\b\u0002\u0010\b\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\t\u001a\u00020\n2\b\b\u0002\u0010\u000b\u001a\u00020\n2\n\b\u0002\u0010\f\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\r\u001a\u0004\u0018\u00010\u00052\n\b\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u000f2\n\b\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u000f2\b\b\u0002\u0010\u0011\u001a\u00020\u00052\b\b\u0002\u0010\u0012\u001a\u00020\u00032\u000e\b\u0002\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00030\u00142\u000e\b\u0002\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00050\u00142\b\b\u0002\u0010\u0016\u001a\u00020\u000f2\b\b\u0002\u0010\u0017\u001a\u00020\n2\n\b\u0002\u0010\u0018\u001a\u0004\u0018\u00010\u00052\b\b\u0002\u0010\u0019\u001a\u00020\u000f2\b\b\u0002\u0010\u001a\u001a\u00020\n2\n\b\u0002\u0010\u001b\u001a\u0004\u0018\u00010\u00052\u000e\b\u0002\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001d0\u00142\u000e\b\u0002\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\u00030\u00142\b\b\u0002\u0010\u001f\u001a\u00020\u0005HÆ\u0001¢\u0006\u0002\u0010vJ\u0006\u0010w\u001a\u00020\u0000J\t\u0010x\u001a\u00020\u000fHÖ\u0001J\u0013\u0010y\u001a\u00020\n2\b\u0010z\u001a\u0004\u0018\u00010{HÖ\u0003J\t\u0010|\u001a\u00020\u000fHÖ\u0001J\t\u0010}\u001a\u00020\u0005HÖ\u0001J\u001c\u0010~\u001a\u00020\u007f2\b\u0010\u0080\u0001\u001a\u00030\u0081\u00012\u0007\u0010\u0082\u0001\u001a\u00020\u000fHÖ\u0001R\u001e\u0010\u0011\u001a\u00020\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\"\"\u0004\b#\u0010$R\u001e\u0010\u0016\u001a\u00020\u000f8\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b%\u0010&\"\u0004\b'\u0010(R\"\u0010\u0010\u001a\u0004\u0018\u00010\u000f8\u0006@\u0006X\u0087\u000e¢\u0006\u0010\n\u0002\u0010-\u001a\u0004\b)\u0010*\"\u0004\b+\u0010,R\"\u0010\u000e\u001a\u0004\u0018\u00010\u000f8\u0006@\u0006X\u0087\u000e¢\u0006\u0010\n\u0002\u0010-\u001a\u0004\b.\u0010*\"\u0004\b/\u0010,R \u0010\u0018\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b0\u0010\"\"\u0004\b1\u0010$R \u0010\u001b\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b2\u0010\"\"\u0004\b3\u0010$R\u001e\u0010\u0012\u001a\u00020\u00038\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b4\u00105\"\u0004\b6\u00107R \u0010\b\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b8\u0010\"\"\u0004\b9\u0010$R\u001e\u0010\u001f\u001a\u00020\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b:\u0010\"\"\u0004\b;\u0010$R\u001e\u0010\u0002\u001a\u00020\u00038\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b<\u00105\"\u0004\b=\u00107R\u001e\u0010\t\u001a\u00020\n8\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\t\u0010>\"\u0004\b?\u0010@R$\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001d0\u00148\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bA\u0010B\"\u0004\bC\u0010DR\u001e\u0010\u0006\u001a\u00020\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bE\u0010\"\"\u0004\bF\u0010$R$\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00030\u00148\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bG\u0010B\"\u0004\bH\u0010DR$\u0010\u001e\u001a\b\u0012\u0004\u0012\u00020\u00030\u00148\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bI\u0010B\"\u0004\bJ\u0010DR\u001e\u0010\u000b\u001a\u00020\n8\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bK\u0010>\"\u0004\bL\u0010@R$\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00050\u00148\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bM\u0010B\"\u0004\bN\u0010DR\u001e\u0010\u0019\u001a\u00020\u000f8\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bO\u0010&\"\u0004\bP\u0010(R\u001e\u0010\u0007\u001a\u00020\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bQ\u0010\"\"\u0004\bR\u0010$R \u0010\r\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bS\u0010\"\"\u0004\bT\u0010$R \u0010\u0004\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bU\u0010\"\"\u0004\bV\u0010$R\u001e\u0010\u0017\u001a\u00020\n8\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bW\u0010>\"\u0004\bX\u0010@R\u001e\u0010\u001a\u001a\u00020\n8\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bY\u0010>\"\u0004\bZ\u0010@R \u0010\f\u001a\u0004\u0018\u00010\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b[\u0010\"\"\u0004\b\\\u0010$¨\u0006\u0084\u0001"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "Landroid/os/Parcelable;", "id", "", "uniqueId", "", "name", "shortname", "description", "isVisible", "", "scrapePreviewMedia", "wallpaperPath", "thumbnailPath", "colorTheme", "", "colorOnTheme", "acceptedFilenameRegex", "defaultPlayerId", "playerIdList", "", "scraperSourceList", "boxArtAspectRatioId", "useCustomBoxArtAspectRatio", "customBoxArtAspectRatio", "screenAspectRatioId", "useCustomScreenAspectRatio", "customScreenAspectRatio", "itemsSyncTreeUriList", "Landroid/net/Uri;", "retroAchievementsConsoleIdList", "extra", "(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;JLjava/util/List;Ljava/util/List;IZLjava/lang/String;IZLjava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/String;)V", "getAcceptedFilenameRegex", "()Ljava/lang/String;", "setAcceptedFilenameRegex", "(Ljava/lang/String;)V", "getBoxArtAspectRatioId", "()I", "setBoxArtAspectRatioId", "(I)V", "getColorOnTheme", "()Ljava/lang/Integer;", "setColorOnTheme", "(Ljava/lang/Integer;)V", "Ljava/lang/Integer;", "getColorTheme", "setColorTheme", "getCustomBoxArtAspectRatio", "setCustomBoxArtAspectRatio", "getCustomScreenAspectRatio", "setCustomScreenAspectRatio", "getDefaultPlayerId", "()J", "setDefaultPlayerId", "(J)V", "getDescription", "setDescription", "getExtra", "setExtra", "getId", "setId", "()Z", "setVisible", "(Z)V", "getItemsSyncTreeUriList", "()Ljava/util/List;", "setItemsSyncTreeUriList", "(Ljava/util/List;)V", "getName", "setName", "getPlayerIdList", "setPlayerIdList", "getRetroAchievementsConsoleIdList", "setRetroAchievementsConsoleIdList", "getScrapePreviewMedia", "setScrapePreviewMedia", "getScraperSourceList", "setScraperSourceList", "getScreenAspectRatioId", "setScreenAspectRatioId", "getShortname", "setShortname", "getThumbnailPath", "setThumbnailPath", "getUniqueId", "setUniqueId", "getUseCustomBoxArtAspectRatio", "setUseCustomBoxArtAspectRatio", "getUseCustomScreenAspectRatio", "setUseCustomScreenAspectRatio", "getWallpaperPath", "setWallpaperPath", "component1", "component10", "component11", "component12", "component13", "component14", "component15", "component16", "component17", "component18", "component19", "component2", "component20", "component21", "component22", "component23", "component24", "component3", "component4", "component5", "component6", "component7", "component8", "component9", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;JLjava/util/List;Ljava/util/List;IZLjava/lang/String;IZLjava/lang/String;Ljava/util/List;Ljava/util/List;Ljava/lang/String;)Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "copyAndResetDatabaseAndDeviceDependentValues", "describeContents", "equals", "other", "", "hashCode", "toString", "writeToParcel", "", "parcel", "Landroid/os/Parcel;", "flags", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final /* data */ class PlatformEntity implements Parcelable {
     public static final int ICON_PREVIEW_MEDIA = 2;
@@ -45,10 +45,10 @@ public final /* data */ class PlatformEntity implements Parcelable {
     private String wallpaperPath;
     public static final Parcelable.Creator<PlatformEntity> CREATOR = new Creator();
 
-    /* JADX INFO: compiled from: PlatformEntity.kt */
+    /* INFO: compiled from: PlatformEntity.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     public static final class Creator implements Parcelable.Creator<PlatformEntity> {
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public final PlatformEntity createFromParcel(Parcel parcel) {
             Parcel parcel2 = parcel;
@@ -99,7 +99,7 @@ public final /* data */ class PlatformEntity implements Parcelable {
             return new PlatformEntity(j, string, string2, string3, string4, z, z2, string5, string6, numValueOf, numValueOf2, string7, j2, arrayList2, arrayListCreateStringArrayList, i3, z3, string8, i4, z4, string9, arrayList4, arrayList5, parcel.readString());
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public final PlatformEntity[] newArray(int i) {
             return new PlatformEntity[i];
@@ -110,7 +110,7 @@ public final /* data */ class PlatformEntity implements Parcelable {
         this(0L, null, null, null, null, false, false, null, null, null, null, null, 0L, null, null, 0, false, null, 0, false, null, null, null, null, ViewCompat.MEASURED_SIZE_MASK, null);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ PlatformEntity copy$default(PlatformEntity platformEntity, long j, String str, String str2, String str3, String str4, boolean z, boolean z2, String str5, String str6, Integer num, Integer num2, String str7, long j2, List list, List list2, int i, boolean z3, String str8, int i2, boolean z4, String str9, List list3, List list4, String str10, int i3, Object obj) {
         String str11;
         List list5;
@@ -147,27 +147,27 @@ public final /* data */ class PlatformEntity implements Parcelable {
         return platformEntity.copy(j3, str12, str13, str14, str15, z5, z6, str16, str17, num3, num4, str18, j4, list6, list7, i4, z7, str19, i5, z8, str20, list8, list5, str11);
     }
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    /* INFO: renamed from: component1, reason: from getter */
     public final long getId() {
         return this.id;
     }
 
-    /* JADX INFO: renamed from: component10, reason: from getter */
+    /* INFO: renamed from: component10, reason: from getter */
     public final Integer getColorTheme() {
         return this.colorTheme;
     }
 
-    /* JADX INFO: renamed from: component11, reason: from getter */
+    /* INFO: renamed from: component11, reason: from getter */
     public final Integer getColorOnTheme() {
         return this.colorOnTheme;
     }
 
-    /* JADX INFO: renamed from: component12, reason: from getter */
+    /* INFO: renamed from: component12, reason: from getter */
     public final String getAcceptedFilenameRegex() {
         return this.acceptedFilenameRegex;
     }
 
-    /* JADX INFO: renamed from: component13, reason: from getter */
+    /* INFO: renamed from: component13, reason: from getter */
     public final long getDefaultPlayerId() {
         return this.defaultPlayerId;
     }
@@ -180,37 +180,37 @@ public final /* data */ class PlatformEntity implements Parcelable {
         return this.scraperSourceList;
     }
 
-    /* JADX INFO: renamed from: component16, reason: from getter */
+    /* INFO: renamed from: component16, reason: from getter */
     public final int getBoxArtAspectRatioId() {
         return this.boxArtAspectRatioId;
     }
 
-    /* JADX INFO: renamed from: component17, reason: from getter */
+    /* INFO: renamed from: component17, reason: from getter */
     public final boolean getUseCustomBoxArtAspectRatio() {
         return this.useCustomBoxArtAspectRatio;
     }
 
-    /* JADX INFO: renamed from: component18, reason: from getter */
+    /* INFO: renamed from: component18, reason: from getter */
     public final String getCustomBoxArtAspectRatio() {
         return this.customBoxArtAspectRatio;
     }
 
-    /* JADX INFO: renamed from: component19, reason: from getter */
+    /* INFO: renamed from: component19, reason: from getter */
     public final int getScreenAspectRatioId() {
         return this.screenAspectRatioId;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    /* INFO: renamed from: component2, reason: from getter */
     public final String getUniqueId() {
         return this.uniqueId;
     }
 
-    /* JADX INFO: renamed from: component20, reason: from getter */
+    /* INFO: renamed from: component20, reason: from getter */
     public final boolean getUseCustomScreenAspectRatio() {
         return this.useCustomScreenAspectRatio;
     }
 
-    /* JADX INFO: renamed from: component21, reason: from getter */
+    /* INFO: renamed from: component21, reason: from getter */
     public final String getCustomScreenAspectRatio() {
         return this.customScreenAspectRatio;
     }
@@ -223,42 +223,42 @@ public final /* data */ class PlatformEntity implements Parcelable {
         return this.retroAchievementsConsoleIdList;
     }
 
-    /* JADX INFO: renamed from: component24, reason: from getter */
+    /* INFO: renamed from: component24, reason: from getter */
     public final String getExtra() {
         return this.extra;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    /* INFO: renamed from: component3, reason: from getter */
     public final String getName() {
         return this.name;
     }
 
-    /* JADX INFO: renamed from: component4, reason: from getter */
+    /* INFO: renamed from: component4, reason: from getter */
     public final String getShortname() {
         return this.shortname;
     }
 
-    /* JADX INFO: renamed from: component5, reason: from getter */
+    /* INFO: renamed from: component5, reason: from getter */
     public final String getDescription() {
         return this.description;
     }
 
-    /* JADX INFO: renamed from: component6, reason: from getter */
+    /* INFO: renamed from: component6, reason: from getter */
     public final boolean getIsVisible() {
         return this.isVisible;
     }
 
-    /* JADX INFO: renamed from: component7, reason: from getter */
+    /* INFO: renamed from: component7, reason: from getter */
     public final boolean getScrapePreviewMedia() {
         return this.scrapePreviewMedia;
     }
 
-    /* JADX INFO: renamed from: component8, reason: from getter */
+    /* INFO: renamed from: component8, reason: from getter */
     public final String getWallpaperPath() {
         return this.wallpaperPath;
     }
 
-    /* JADX INFO: renamed from: component9, reason: from getter */
+    /* INFO: renamed from: component9, reason: from getter */
     public final String getThumbnailPath() {
         return this.thumbnailPath;
     }

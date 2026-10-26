@@ -2,8 +2,8 @@ package com.google.android.gms.tasks;
 
 import java.util.concurrent.Executor;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-tasks@@18.1.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-tasks@@18.1.0 */
+/* INFO: loaded from: classes3.dex */
 final class zzp<TResult, TContinuationResult> implements OnSuccessListener<TContinuationResult>, OnFailureListener, OnCanceledListener, zzq {
     private final Executor zza;
     private final SuccessContinuation zzb;

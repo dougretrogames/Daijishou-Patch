@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EofSensorInputStream extends InputStream implements ConnectionReleaseTrigger {
     private final EofSensorWatcher eofWatcher;
     private boolean selfClosed;

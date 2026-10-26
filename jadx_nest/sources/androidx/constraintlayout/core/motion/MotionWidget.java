@@ -5,7 +5,7 @@ import androidx.constraintlayout.core.state.WidgetFrame;
 import androidx.constraintlayout.core.widgets.ConstraintWidget;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionWidget implements TypedValues {
     public static final int FILL_PARENT = -1;
     public static final int GONE_UNSET = Integer.MIN_VALUE;

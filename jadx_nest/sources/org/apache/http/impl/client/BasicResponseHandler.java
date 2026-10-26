@@ -5,7 +5,7 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.EntityUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicResponseHandler extends AbstractResponseHandler<String> {
     @Override // org.apache.http.impl.client.AbstractResponseHandler
     public String handleEntity(HttpEntity httpEntity) throws IOException {

@@ -5,7 +5,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import androidx.appcompat.app.AppCompatViewInflater;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class LeanbackAppCompatViewInflater extends AppCompatViewInflater {
     @Override // androidx.appcompat.app.AppCompatViewInflater
     protected View createView(Context context, String str, AttributeSet attributeSet) {

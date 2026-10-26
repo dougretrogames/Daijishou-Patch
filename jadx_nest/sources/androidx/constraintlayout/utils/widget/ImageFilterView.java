@@ -19,7 +19,7 @@ import androidx.appcompat.content.res.AppCompatResources;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.constraintlayout.widget.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ImageFilterView extends AppCompatImageView {
     private Drawable mAltDrawable;
     private float mCrossfade;
@@ -513,7 +513,7 @@ public class ImageFilterView extends AppCompatImageView {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.utils.widget.ImageFilterView$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.utils.widget.ImageFilterView$1, reason: invalid class name */
     class AnonymousClass1 extends ViewOutlineProvider {
         AnonymousClass1() {
         }
@@ -563,7 +563,7 @@ public class ImageFilterView extends AppCompatImageView {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.utils.widget.ImageFilterView$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.utils.widget.ImageFilterView$2, reason: invalid class name */
     class AnonymousClass2 extends ViewOutlineProvider {
         AnonymousClass2() {
         }

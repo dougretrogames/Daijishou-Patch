@@ -37,16 +37,16 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Reflection;
 
-/* JADX INFO: compiled from: AppShortcutWidgetFaceFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: AppShortcutWidgetFaceFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000h\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u0000 )2\u00020\u0001:\u0001)B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u001c\u001a\u00020\u001dH\u0002J\b\u0010\u001e\u001a\u00020\u001dH\u0016J\u0012\u0010\u001f\u001a\u00020\u001d2\b\u0010 \u001a\u0004\u0018\u00010!H\u0016J&\u0010\"\u001a\u0004\u0018\u00010#2\u0006\u0010$\u001a\u00020%2\b\u0010&\u001a\u0004\u0018\u00010'2\b\u0010 \u001a\u0004\u0018\u00010!H\u0016J\b\u0010(\u001a\u00020\u001dH\u0002R\u0010\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u001b\u0010\u0005\u001a\u00020\u00068BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\t\u0010\n\u001a\u0004\b\u0007\u0010\bR\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u0014X\u0082\u000e¢\u0006\u0002\n\u0000R\u001f\u0010\u0015\u001a\u0010\u0012\f\u0012\n \u0017*\u0004\u0018\u00010\u00140\u00140\u0016¢\u0006\b\n\u0000\u001a\u0004\b\u0018\u0010\u0019R\u000e\u0010\u001a\u001a\u00020\u001bX\u0082.¢\u0006\u0002\n\u0000¨\u0006*²\u0006\n\u0010\u0005\u001a\u00020\u0006X\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/app_shortcut/AppShortcutWidgetFaceFragment;", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetFaceFragment;", "()V", "appShortcutWidgetInstanceEntity", "Lcom/magneticchen/daijishou/daijishou_widget/widget_db/AppShortcutWidgetInstanceEntity;", "appsViewModel", "Lcom/magneticchen/daijishou/view_models/AppsViewModel;", "getAppsViewModel", "()Lcom/magneticchen/daijishou/view_models/AppsViewModel;", "appsViewModel$delegate", "Lkotlin/Lazy;", "cachedBitmap", "Landroid/graphics/Bitmap;", "imageView", "Landroid/widget/ImageView;", "lastUpdateTimestamp", "", "resolveInfo", "Landroid/content/pm/ResolveInfo;", "resolveInfoStringId", "", "selectImageActivity", "Landroidx/activity/result/ActivityResultLauncher;", "kotlin.jvm.PlatformType", "getSelectImageActivity", "()Landroidx/activity/result/ActivityResultLauncher;", "title", "Landroid/widget/TextView;", "ensureWallpaperDirectory", "", "onClick", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "updateFace", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class AppShortcutWidgetFaceFragment extends WidgetFaceFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private AppShortcutWidgetInstanceEntity appShortcutWidgetInstanceEntity;
 
-    /* JADX INFO: renamed from: appsViewModel$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: appsViewModel$delegate, reason: from kotlin metadata */
     private final Lazy appsViewModel;
     private Bitmap cachedBitmap;
     private ImageView imageView;
@@ -64,7 +64,7 @@ public final class AppShortcutWidgetFaceFragment extends WidgetFaceFragment {
         this.selectImageActivity = activityResultLauncherRegisterForActivityResult;
     }
 
-    /* JADX INFO: compiled from: AppShortcutWidgetFaceFragment.kt */
+    /* INFO: compiled from: AppShortcutWidgetFaceFragment.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006¨\u0006\u0007"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widgets/app_shortcut/AppShortcutWidgetFaceFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/app_shortcut/AppShortcutWidgetFaceFragment;", "widgetInstanceId", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -83,7 +83,7 @@ public final class AppShortcutWidgetFaceFragment extends WidgetFaceFragment {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final AppsViewModel getAppsViewModel() {
         return (AppsViewModel) this.appsViewModel.getValue();
     }
@@ -92,7 +92,7 @@ public final class AppShortcutWidgetFaceFragment extends WidgetFaceFragment {
         return this.selectImageActivity;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void selectImageActivity$lambda$1(AppShortcutWidgetFaceFragment this$0, Uri uri) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         long j = this$0.requireArguments().getLong("widgetInstanceId");
@@ -143,7 +143,7 @@ public final class AppShortcutWidgetFaceFragment extends WidgetFaceFragment {
         file.mkdirs();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void updateFace() {
         ResolveInfo resolveInfo = this.resolveInfo;
         if (resolveInfo != null) {
@@ -199,8 +199,8 @@ public final class AppShortcutWidgetFaceFragment extends WidgetFaceFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.app_shortcut.AppShortcutWidgetFaceFragment$onCreateView$2, reason: invalid class name */
-    /* JADX INFO: compiled from: AppShortcutWidgetFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.app_shortcut.AppShortcutWidgetFaceFragment$onCreateView$2, reason: invalid class name */
+    /* INFO: compiled from: AppShortcutWidgetFaceFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/daijishou_widget/widget_db/AppShortcutWidgetInstanceEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass2 extends Lambda<Unit> implements Function1<AppShortcutWidgetInstanceEntity, Unit> {
         AnonymousClass2() {
@@ -213,7 +213,7 @@ public final class AppShortcutWidgetFaceFragment extends WidgetFaceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(AppShortcutWidgetInstanceEntity appShortcutWidgetInstanceEntity) {
             String resolveInfoStringId;
             Date lastUpdateTimestamp;
@@ -233,8 +233,8 @@ public final class AppShortcutWidgetFaceFragment extends WidgetFaceFragment {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.app_shortcut.AppShortcutWidgetFaceFragment$onCreateView$3, reason: invalid class name */
-    /* JADX INFO: compiled from: AppShortcutWidgetFaceFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.app_shortcut.AppShortcutWidgetFaceFragment$onCreateView$3, reason: invalid class name */
+    /* INFO: compiled from: AppShortcutWidgetFaceFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "Landroid/content/pm/ResolveInfo;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass3 extends Lambda<Unit> implements Function1<List<ResolveInfo>, Unit> {
         AnonymousClass3() {
@@ -247,7 +247,7 @@ public final class AppShortcutWidgetFaceFragment extends WidgetFaceFragment {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<ResolveInfo> list) {
             AppShortcutWidgetFaceFragment.this.updateFace();
         }

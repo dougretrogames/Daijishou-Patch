@@ -2,8 +2,8 @@ package org.eclipse.jgit.revwalk;
 
 import java.util.function.Predicate;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class DateRevPriorityQueue$$ExternalSyntheticLambda4 implements Predicate {
     public final /* synthetic */ int f$0;
 

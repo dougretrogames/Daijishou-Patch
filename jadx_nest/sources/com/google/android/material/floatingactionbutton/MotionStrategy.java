@@ -5,7 +5,7 @@ import android.animation.AnimatorSet;
 import com.google.android.material.animation.MotionSpec;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 interface MotionStrategy {
     void addAnimationListener(Animator.AnimatorListener animatorListener);
 

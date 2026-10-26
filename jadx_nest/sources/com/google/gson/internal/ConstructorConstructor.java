@@ -30,7 +30,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.ConcurrentNavigableMap;
 import java.util.concurrent.ConcurrentSkipListMap;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ConstructorConstructor {
     private final Map<Type, InstanceCreator<?>> instanceCreators;
     private final List<ReflectionAccessFilter> reflectionFilters;
@@ -87,8 +87,8 @@ public final class ConstructorConstructor {
         return new AnonymousClass4("Unable to create instance of " + rawType + "; ReflectionAccessFilter does not permit using reflection or Unsafe. Register an InstanceCreator or a TypeAdapter for this type or adjust the access filter to allow using reflection.");
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$1, reason: invalid class name */
     class AnonymousClass1<T> implements ObjectConstructor<T> {
         final /* synthetic */ Type val$type;
         final /* synthetic */ InstanceCreator val$typeCreator;
@@ -104,8 +104,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$2, reason: invalid class name */
     class AnonymousClass2<T> implements ObjectConstructor<T> {
         final /* synthetic */ InstanceCreator val$rawTypeCreator;
         final /* synthetic */ Type val$type;
@@ -121,8 +121,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$3, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$3, reason: invalid class name */
     class AnonymousClass3<T> implements ObjectConstructor<T> {
         final /* synthetic */ String val$exceptionMessage;
 
@@ -136,8 +136,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$4, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$4, reason: invalid class name */
     class AnonymousClass4<T> implements ObjectConstructor<T> {
         final /* synthetic */ String val$message;
 
@@ -151,8 +151,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$5, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$5, reason: invalid class name */
     class AnonymousClass5<T> implements ObjectConstructor<T> {
         final /* synthetic */ Type val$type;
 
@@ -184,8 +184,8 @@ public final class ConstructorConstructor {
         return null;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$6, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$6, reason: invalid class name */
     class AnonymousClass6<T> implements ObjectConstructor<T> {
         final /* synthetic */ Type val$type;
 
@@ -226,8 +226,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$7, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$7, reason: invalid class name */
     class AnonymousClass7<T> implements ObjectConstructor<T> {
         final /* synthetic */ String val$message;
 
@@ -241,8 +241,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$8, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$8, reason: invalid class name */
     class AnonymousClass8<T> implements ObjectConstructor<T> {
         final /* synthetic */ String val$exceptionMessage;
 
@@ -256,8 +256,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$9, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$9, reason: invalid class name */
     class AnonymousClass9<T> implements ObjectConstructor<T> {
         final /* synthetic */ Constructor val$constructor;
 
@@ -310,8 +310,8 @@ public final class ConstructorConstructor {
         return new AnonymousClass18();
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$10, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$10, reason: invalid class name */
     class AnonymousClass10<T> implements ObjectConstructor<T> {
         AnonymousClass10() {
         }
@@ -322,8 +322,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$11, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$11, reason: invalid class name */
     class AnonymousClass11<T> implements ObjectConstructor<T> {
         AnonymousClass11() {
         }
@@ -334,8 +334,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$12, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$12, reason: invalid class name */
     class AnonymousClass12<T> implements ObjectConstructor<T> {
         AnonymousClass12() {
         }
@@ -346,8 +346,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$13, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$13, reason: invalid class name */
     class AnonymousClass13<T> implements ObjectConstructor<T> {
         AnonymousClass13() {
         }
@@ -358,8 +358,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$14, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$14, reason: invalid class name */
     class AnonymousClass14<T> implements ObjectConstructor<T> {
         AnonymousClass14() {
         }
@@ -370,8 +370,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$15, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$15, reason: invalid class name */
     class AnonymousClass15<T> implements ObjectConstructor<T> {
         AnonymousClass15() {
         }
@@ -382,8 +382,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$16, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$16, reason: invalid class name */
     class AnonymousClass16<T> implements ObjectConstructor<T> {
         AnonymousClass16() {
         }
@@ -394,8 +394,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$17, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$17, reason: invalid class name */
     class AnonymousClass17<T> implements ObjectConstructor<T> {
         AnonymousClass17() {
         }
@@ -406,8 +406,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$18, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$18, reason: invalid class name */
     class AnonymousClass18<T> implements ObjectConstructor<T> {
         AnonymousClass18() {
         }
@@ -418,8 +418,8 @@ public final class ConstructorConstructor {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$19, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$19, reason: invalid class name */
     class AnonymousClass19<T> implements ObjectConstructor<T> {
         final /* synthetic */ Class val$rawType;
 
@@ -444,8 +444,8 @@ public final class ConstructorConstructor {
         return new AnonymousClass20("Unable to create instance of " + cls + "; usage of JDK Unsafe is disabled. Registering an InstanceCreator or a TypeAdapter for this type, adding a no-args constructor, or enabling usage of JDK Unsafe may fix this problem.");
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.ConstructorConstructor$20, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.ConstructorConstructor$20, reason: invalid class name */
     class AnonymousClass20<T> implements ObjectConstructor<T> {
         final /* synthetic */ String val$exceptionMessage;
 

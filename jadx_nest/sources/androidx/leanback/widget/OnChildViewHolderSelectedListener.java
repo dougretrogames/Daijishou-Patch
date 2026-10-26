@@ -2,7 +2,7 @@ package androidx.leanback.widget;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class OnChildViewHolderSelectedListener {
     public void onChildViewHolderSelected(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, int i, int i2) {
     }

@@ -14,7 +14,7 @@ import android.widget.ViewFlipper;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class AbstractMediaItemPresenter extends RowPresenter {
     public static final int PLAY_STATE_INITIAL = 0;
     public static final int PLAY_STATE_PAUSED = 1;
@@ -121,7 +121,7 @@ public abstract class AbstractMediaItemPresenter extends RowPresenter {
             this.mMediaItemPlayingView = viewInflate.findViewById(androidx.leanback.R.id.playing);
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.AbstractMediaItemPresenter$ViewHolder$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.AbstractMediaItemPresenter$ViewHolder$1, reason: invalid class name */
         class AnonymousClass1 implements View.OnClickListener {
             AnonymousClass1() {
             }
@@ -136,7 +136,7 @@ public abstract class AbstractMediaItemPresenter extends RowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.AbstractMediaItemPresenter$ViewHolder$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.AbstractMediaItemPresenter$ViewHolder$2, reason: invalid class name */
         class AnonymousClass2 implements View.OnFocusChangeListener {
             AnonymousClass2() {
             }
@@ -184,7 +184,7 @@ public abstract class AbstractMediaItemPresenter extends RowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.AbstractMediaItemPresenter$ViewHolder$3, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.AbstractMediaItemPresenter$ViewHolder$3, reason: invalid class name */
         class AnonymousClass3 implements View.OnFocusChangeListener {
             AnonymousClass3() {
             }
@@ -196,7 +196,7 @@ public abstract class AbstractMediaItemPresenter extends RowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.AbstractMediaItemPresenter$ViewHolder$4, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.AbstractMediaItemPresenter$ViewHolder$4, reason: invalid class name */
         class AnonymousClass4 implements View.OnClickListener {
             final /* synthetic */ int val$actionIndex;
             final /* synthetic */ Presenter.ViewHolder val$actionViewHolder;
@@ -429,7 +429,7 @@ public abstract class AbstractMediaItemPresenter extends RowPresenter {
         return valueAnimatorOfFloat;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.AbstractMediaItemPresenter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.AbstractMediaItemPresenter$1, reason: invalid class name */
     class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
         final /* synthetic */ float val$deltaLeft;
         final /* synthetic */ float val$deltaWidth;

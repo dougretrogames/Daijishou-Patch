@@ -9,7 +9,7 @@ import java.util.Set;
 import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class FetchV0Request extends FetchRequest {
     FetchV0Request(Set<ObjectId> set, int i, Set<ObjectId> set2, FilterSpec filterSpec, Set<String> set3, int i2, List<String> list, @Nullable String str, @Nullable String str2) {
         super(set, i, set2, filterSpec, set3, i2, list, str, str2);

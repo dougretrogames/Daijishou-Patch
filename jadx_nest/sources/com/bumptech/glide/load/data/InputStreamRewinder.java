@@ -5,7 +5,7 @@ import com.bumptech.glide.load.resource.bitmap.RecyclableBufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class InputStreamRewinder implements DataRewinder<InputStream> {
     private static final int MARK_READ_LIMIT = 5242880;
     private final RecyclableBufferedInputStream bufferedStream;
@@ -16,7 +16,7 @@ public final class InputStreamRewinder implements DataRewinder<InputStream> {
         recyclableBufferedInputStream.mark(MARK_READ_LIMIT);
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.load.data.DataRewinder
     public InputStream rewindAndGet() throws IOException {
         this.bufferedStream.reset();

@@ -9,7 +9,7 @@ import org.slf4j.ILoggerFactory;
 import org.slf4j.Logger;
 import org.slf4j.event.SubstituteLoggingEvent;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SubstituteLoggerFactory implements ILoggerFactory {
     boolean postInitialization = false;
     final Map<String, SubstituteLogger> loggers = new HashMap();

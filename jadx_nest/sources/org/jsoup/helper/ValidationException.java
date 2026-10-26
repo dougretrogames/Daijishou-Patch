@@ -2,7 +2,7 @@ package org.jsoup.helper;
 
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ValidationException extends IllegalArgumentException {
     public static final String Validator = Validate.class.getName();
 

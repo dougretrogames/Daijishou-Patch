@@ -4,7 +4,7 @@ import android.view.View;
 import android.widget.ListPopupWindow;
 import androidx.annotation.ReplaceWith;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ListPopupWindowCompat {
     private ListPopupWindowCompat() {
     }

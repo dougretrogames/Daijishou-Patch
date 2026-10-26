@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Collector {
     private Collector() {
     }

@@ -1,6 +1,6 @@
 package com.bumptech.glide.request;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ThumbnailRequestCoordinator implements RequestCoordinator, Request {
     private volatile Request full;
     private boolean isRunningDuringBegin;

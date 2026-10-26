@@ -4,7 +4,7 @@ import android.graphics.Path;
 import android.view.animation.Interpolator;
 import android.view.animation.PathInterpolator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class PathInterpolatorCompat {
     private PathInterpolatorCompat() {
     }

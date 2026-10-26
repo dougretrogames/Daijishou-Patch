@@ -5,7 +5,7 @@ import android.os.Build;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class CanvasUtils {
     private static Method sInorderBarrierMethod;
     private static boolean sOrderMethodsFetched;

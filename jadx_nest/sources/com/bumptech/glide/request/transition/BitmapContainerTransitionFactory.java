@@ -5,7 +5,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import com.bumptech.glide.load.DataSource;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class BitmapContainerTransitionFactory<R> implements TransitionFactory<R> {
     private final TransitionFactory<Drawable> realFactory;
 

@@ -7,8 +7,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 import javax.annotation.meta.TypeQualifierDefault;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 @Target({ElementType.TYPE, ElementType.PACKAGE})
 @TypeQualifierDefault({ElementType.METHOD, ElementType.PARAMETER})
 @Documented

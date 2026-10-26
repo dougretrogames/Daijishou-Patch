@@ -7,7 +7,7 @@ import org.eclipse.jgit.lib.FileMode;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NameConflictTreeWalk extends TreeWalk {
     private static final int TREE_MODE = FileMode.TREE.getBits();
     private boolean allTreesNamesMatchFastMinRef;

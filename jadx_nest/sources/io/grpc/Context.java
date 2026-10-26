@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class Context {
     static final int CONTEXT_DEPTH_WARN_THRESH = 1000;
     final CancellableContext cancellableAncestor;
@@ -237,7 +237,7 @@ public class Context {
         }
     }
 
-    /* JADX INFO: renamed from: io.grpc.Context$1, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.Context$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ Runnable val$r;
 
@@ -260,8 +260,8 @@ public class Context {
         return new AnonymousClass1(runnable);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [C] */
-    /* JADX INFO: renamed from: io.grpc.Context$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [C] */
+    /* INFO: renamed from: io.grpc.Context$2, reason: invalid class name */
     class AnonymousClass2<C> implements Callable<C> {
         final /* synthetic */ Callable val$c;
 
@@ -284,7 +284,7 @@ public class Context {
         return new AnonymousClass2(callable);
     }
 
-    /* JADX INFO: renamed from: io.grpc.Context$1FixedContextExecutor, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.Context$1FixedContextExecutor, reason: invalid class name */
     final class C1FixedContextExecutor implements Executor {
         final /* synthetic */ Executor val$e;
 
@@ -302,7 +302,7 @@ public class Context {
         return new C1FixedContextExecutor(executor);
     }
 
-    /* JADX INFO: renamed from: io.grpc.Context$1CurrentContextExecutor, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.Context$1CurrentContextExecutor, reason: invalid class name */
     final class C1CurrentContextExecutor implements Executor {
         final /* synthetic */ Executor val$e;
 
@@ -349,7 +349,7 @@ public class Context {
             this.uncancellableSurrogate = new Context(this, this.keyValueEntries, null);
         }
 
-        /* JADX INFO: renamed from: io.grpc.Context$CancellableContext$1CancelOnExpiration, reason: invalid class name */
+        /* INFO: renamed from: io.grpc.Context$CancellableContext$1CancelOnExpiration, reason: invalid class name */
         final class C1CancelOnExpiration implements Runnable {
             C1CancelOnExpiration() {
             }
@@ -364,7 +364,7 @@ public class Context {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setUpDeadlineCancellation(Deadline deadline, ScheduledExecutorService scheduledExecutorService) {
             if (!deadline.isExpired()) {
                 synchronized (this) {
@@ -392,7 +392,7 @@ public class Context {
             addListenerInternal(new ExecutableListener(executor, cancellationListener, this));
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void addListenerInternal(ExecutableListener executableListener) {
             synchronized (this) {
                 if (isCancelled()) {
@@ -414,7 +414,7 @@ public class Context {
             }
         }
 
-        /* JADX INFO: renamed from: io.grpc.Context$CancellableContext$1, reason: invalid class name */
+        /* INFO: renamed from: io.grpc.Context$CancellableContext$1, reason: invalid class name */
         class AnonymousClass1 implements CancellationListener {
             AnonymousClass1() {
             }
@@ -430,7 +430,7 @@ public class Context {
             removeListenerInternal(cancellationListener, this);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void removeListenerInternal(CancellationListener cancellationListener, Context context) {
             synchronized (this) {
                 ArrayList<ExecutableListener> arrayList = this.listeners;

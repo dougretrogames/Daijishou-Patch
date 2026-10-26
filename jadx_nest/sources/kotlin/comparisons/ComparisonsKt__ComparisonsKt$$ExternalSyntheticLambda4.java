@@ -2,8 +2,8 @@ package kotlin.comparisons;
 
 import java.util.Comparator;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class ComparisonsKt__ComparisonsKt$$ExternalSyntheticLambda4 implements Comparator {
     public final /* synthetic */ Comparator f$0;
 

@@ -13,21 +13,21 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ProfileInstallerInitializer implements Initializer<Result> {
     private static final int DELAY_MS = 5000;
 
     public static class Result {
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // androidx.startup.Initializer
     public Result create(Context context) {
         Choreographer.getInstance().postFrameCallback(new ProfileInstallerInitializer$$ExternalSyntheticLambda0(this, context.getApplicationContext()));
         return new Result();
     }
 
-    /* JADX INFO: renamed from: lambda$create$0$androidx-profileinstaller-ProfileInstallerInitializer, reason: not valid java name */
+    /* INFO: renamed from: lambda$create$0$androidx-profileinstaller-ProfileInstallerInitializer, reason: not valid java name */
     /* synthetic */ void m3227x451635a(Context context, long j) {
         installAfterDelay(context);
     }
@@ -47,7 +47,7 @@ public class ProfileInstallerInitializer implements Initializer<Result> {
         return Collections.emptyList();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void writeInBackground(Context context) {
         new ThreadPoolExecutor(0, 1, 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue()).execute(new ProfileInstallerInitializer$$ExternalSyntheticLambda2(context));
     }

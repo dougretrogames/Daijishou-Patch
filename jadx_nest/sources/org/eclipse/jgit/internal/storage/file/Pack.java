@@ -55,7 +55,7 @@ import org.eclipse.jgit.util.RawParseUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Pack implements Iterable<PackIndex.MutableEntry> {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) Pack.class);
@@ -139,7 +139,7 @@ public class Pack implements Iterable<PackIndex.MutableEntry> {
         return this.packFile;
     }
 
-    /* JADX INFO: renamed from: getIndex, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: getIndex, reason: merged with bridge method [inline-methods] */
     public PackIndex m5707lambda$1$orgeclipsejgitinternalstoragefilePack() throws IOException {
         return idx();
     }
@@ -232,14 +232,14 @@ public class Pack implements Iterable<PackIndex.MutableEntry> {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:151:0x02e7  */
-    /* JADX WARN: Code duplicated, block: B:153:0x02ed  */
-    /* JADX WARN: Code duplicated, block: B:169:0x013b A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:64:0x012f  */
-    /* JADX WARN: Code duplicated, block: B:68:0x0145  */
-    /* JADX WARN: Code duplicated, block: B:72:0x0155  */
-    /* JADX WARN: Code duplicated, block: B:82:0x0197 A[Catch: IOException -> 0x0052, DataFormatException -> 0x01d1, TRY_ENTER, TryCatch #2 {IOException -> 0x0052, blocks: (B:19:0x003f, B:22:0x0047, B:91:0x01e2, B:66:0x013b, B:82:0x0197, B:83:0x01bc, B:29:0x005b, B:30:0x0061, B:32:0x0073, B:33:0x007b, B:36:0x0082), top: B:155:0x003b }] */
-    /* JADX WARN: Code duplicated, block: B:88:0x01d6  */
+    /* WARN: Code duplicated, block: B:151:0x02e7  */
+    /* WARN: Code duplicated, block: B:153:0x02ed  */
+    /* WARN: Code duplicated, block: B:169:0x013b A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:64:0x012f  */
+    /* WARN: Code duplicated, block: B:68:0x0145  */
+    /* WARN: Code duplicated, block: B:72:0x0155  */
+    /* WARN: Code duplicated, block: B:82:0x0197 A[Catch: IOException -> 0x0052, DataFormatException -> 0x01d1, TRY_ENTER, TryCatch #2 {IOException -> 0x0052, blocks: (B:19:0x003f, B:22:0x0047, B:91:0x01e2, B:66:0x013b, B:82:0x0197, B:83:0x01bc, B:29:0x005b, B:30:0x0061, B:32:0x0073, B:33:0x007b, B:36:0x0082), top: B:155:0x003b }] */
+    /* WARN: Code duplicated, block: B:88:0x01d6  */
     private void copyAsIs2(PackOutputStream packOutputStream, LocalObjectToPack localObjectToPack, boolean z, WindowCursor windowCursor) throws StoredObjectRepresentationNotAvailableException, IOException {
         byte[] bArr;
         int i;

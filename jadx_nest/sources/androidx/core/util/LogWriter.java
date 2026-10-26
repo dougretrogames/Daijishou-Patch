@@ -3,7 +3,7 @@ package androidx.core.util;
 import android.util.Log;
 import java.io.Writer;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public class LogWriter extends Writer {
     private StringBuilder mBuilder = new StringBuilder(128);

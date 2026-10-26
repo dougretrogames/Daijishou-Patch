@@ -5,7 +5,7 @@ import java.net.URLDecoder;
 import java.nio.charset.StandardCharsets;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class CharEscapers {
     private static final Escaper APPLICATION_X_WWW_FORM_URLENCODED = new PercentEscaper(PercentEscaper.SAFECHARS_URLENCODER, true);
     private static final Escaper URI_ESCAPER = new PercentEscaper(PercentEscaper.SAFECHARS_URLENCODER, false);

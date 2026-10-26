@@ -7,7 +7,7 @@ import com.google.api.client.json.JsonObjectParser;
 import com.google.auth.http.HttpTransportFactory;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class UrlIdentityPoolSubjectTokenSupplier implements IdentityPoolSubjectTokenSupplier {
     private static final long serialVersionUID = 4964578313468011844L;
     private final IdentityPoolCredentialSource credentialSource;

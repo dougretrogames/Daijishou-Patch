@@ -12,7 +12,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class SampledSpanStore {
     public abstract Collection<SpanData> getErrorSampledSpans(ErrorFilter errorFilter);
 

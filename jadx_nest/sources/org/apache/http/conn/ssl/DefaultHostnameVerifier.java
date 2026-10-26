@@ -27,7 +27,7 @@ import org.apache.http.conn.util.InetAddressUtils;
 import org.apache.http.conn.util.PublicSuffixMatcher;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class DefaultHostnameVerifier implements HostnameVerifier {
     private final Log log;
     private final PublicSuffixMatcher publicSuffixMatcher;
@@ -89,7 +89,7 @@ public final class DefaultHostnameVerifier implements HostnameVerifier {
         matchCN(str, strExtractCN, this.publicSuffixMatcher);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.conn.ssl.DefaultHostnameVerifier$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.conn.ssl.DefaultHostnameVerifier$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$org$apache$http$conn$ssl$DefaultHostnameVerifier$HostNameType;
 

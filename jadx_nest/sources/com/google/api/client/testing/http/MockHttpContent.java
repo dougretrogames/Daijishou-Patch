@@ -5,7 +5,7 @@ import com.google.api.client.util.Preconditions;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockHttpContent implements HttpContent {
     private String type;
     private long length = -1;

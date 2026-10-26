@@ -4,7 +4,7 @@ import android.graphics.drawable.Animatable;
 import android.graphics.drawable.Animatable2;
 import android.graphics.drawable.Drawable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface Animatable2Compat extends Animatable {
     void clearAnimationCallbacks();
 
@@ -21,7 +21,7 @@ public interface Animatable2Compat extends Animatable {
         public void onAnimationStart(Drawable drawable) {
         }
 
-        /* JADX INFO: renamed from: androidx.vectordrawable.graphics.drawable.Animatable2Compat$AnimationCallback$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.vectordrawable.graphics.drawable.Animatable2Compat$AnimationCallback$1, reason: invalid class name */
         class AnonymousClass1 extends Animatable2.AnimationCallback {
             AnonymousClass1() {
             }

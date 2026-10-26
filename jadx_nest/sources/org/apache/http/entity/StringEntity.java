@@ -10,7 +10,7 @@ import java.nio.charset.UnsupportedCharsetException;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StringEntity extends AbstractHttpEntity implements Cloneable {
     protected final byte[] content;
 

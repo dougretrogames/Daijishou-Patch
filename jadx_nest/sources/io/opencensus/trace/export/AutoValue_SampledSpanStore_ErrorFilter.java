@@ -3,7 +3,7 @@ package io.opencensus.trace.export;
 import io.opencensus.trace.Status;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_SampledSpanStore_ErrorFilter extends SampledSpanStore.ErrorFilter {
     private final Status.CanonicalCode canonicalCode;
     private final int maxSpansToReturn;

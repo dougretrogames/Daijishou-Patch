@@ -2,7 +2,7 @@ package androidx.core.content.res;
 
 import java.lang.reflect.Array;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class GrowingArrayUtils {
     public static int growSize(int i) {
         if (i <= 4) {

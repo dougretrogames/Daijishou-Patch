@@ -21,7 +21,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class QMediaStoreUriLoader<DataT> implements ModelLoader<Uri, DataT> {
     private final Context context;
     private final Class<DataT> dataClass;

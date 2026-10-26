@@ -2,7 +2,7 @@ package org.eclipse.jgit.revwalk;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class TopoNonIntermixSortGenerator extends Generator {
     private static final int TOPO_QUEUED = 64;
     private final int outputType;

@@ -7,7 +7,7 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.TreeMap;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 class StandardNetwork<N, E> extends AbstractNetwork<N, E> {
     private final boolean allowsParallelEdges;

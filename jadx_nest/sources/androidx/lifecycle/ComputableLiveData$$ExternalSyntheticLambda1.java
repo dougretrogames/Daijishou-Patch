@@ -1,7 +1,7 @@
 package androidx.lifecycle;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class ComputableLiveData$$ExternalSyntheticLambda1 implements Runnable {
     public final /* synthetic */ ComputableLiveData f$0;
 

@@ -66,7 +66,7 @@ import org.eclipse.jgit.util.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RefDirectory extends RefDatabase {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$lib$CoreConfig$TrustPackedRefsStat = null;
     static final /* synthetic */ boolean $assertionsDisabled = false;
@@ -99,7 +99,7 @@ public class RefDirectory extends RefDatabase {
         LooseRef peel(ObjectIdRef objectIdRef);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private RefList<Ref> upcast(RefList<? extends Ref> refList) {
         return refList;
     }
@@ -314,7 +314,7 @@ public class RefDirectory extends RefDatabase {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.eclipse.jgit.lib.RefDatabase
     public Map<String, Ref> getRefs(String str) throws IOException {
         RefList<LooseRef> refList = this.looseRefs.get();
@@ -781,7 +781,7 @@ public class RefDirectory extends RefDatabase {
         newLogWriter(z).log(refUpdate, str, z2);
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:17:0x0041, code lost:
+    /* WARN: Code restructure failed: missing block: B:17:0x0041, code lost:
     
         if (r0 == null) goto L24;
      */
@@ -841,15 +841,15 @@ public class RefDirectory extends RefDatabase {
         throw new UnsupportedOperationException("Method not decompiled: org.eclipse.jgit.internal.storage.file.RefDirectory.resolve(org.eclipse.jgit.lib.Ref, int, java.lang.String, org.eclipse.jgit.util.RefList, org.eclipse.jgit.util.RefList):org.eclipse.jgit.lib.Ref");
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:12:0x002c, code lost:
+    /* WARN: Code restructure failed: missing block: B:12:0x002c, code lost:
     
         if (r0.snapshot.isModified(r3.packedRefsFile) != false) goto L23;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:21:0x004e, code lost:
+    /* WARN: Code restructure failed: missing block: B:21:0x004e, code lost:
     
         if (r0.snapshot.isModified(r3.packedRefsFile) == false) goto L22;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:22:0x0050, code lost:
+    /* WARN: Code restructure failed: missing block: B:22:0x0050, code lost:
     
         return r0;
      */
@@ -931,7 +931,7 @@ public class RefDirectory extends RefDatabase {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$2$org-eclipse-jgit-internal-storage-file-RefDirectory, reason: not valid java name */
+    /* INFO: renamed from: lambda$2$org-eclipse-jgit-internal-storage-file-RefDirectory, reason: not valid java name */
     /* synthetic */ PackedRefList m5724lambda$2$orgeclipsejgitinternalstoragefileRefDirectory(File file) throws Exception {
         FileSnapshot fileSnapshotSave = FileSnapshot.save(file);
         MessageDigest messageDigestNewMessageDigest = Constants.newMessageDigest();
@@ -1013,14 +1013,14 @@ public class RefDirectory extends RefDatabase {
         return new StringBuilder(i2 - i).append((CharSequence) str, i, i2).toString();
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.RefDirectory$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.RefDirectory$1, reason: invalid class name */
     class AnonymousClass1 extends RefWriter {
         private final /* synthetic */ boolean val$changed;
         private final /* synthetic */ LockFile val$lck;
         private final /* synthetic */ PackedRefList val$oldPackedList;
         private final /* synthetic */ RefList val$refs;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(RefList refList, LockFile lockFile, RefList refList2, PackedRefList packedRefList, boolean z) {
             super((RefList<Ref>) refList);
             this.val$lck = lockFile;
@@ -1153,7 +1153,7 @@ public class RefDirectory extends RefDatabase {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.RefDirectory$1LooseItems, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.RefDirectory$1LooseItems, reason: invalid class name */
     class C1LooseItems {
         final byte[] buf;
         final FileSnapshot snapshot;
@@ -1164,7 +1164,7 @@ public class RefDirectory extends RefDatabase {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$3$org-eclipse-jgit-internal-storage-file-RefDirectory, reason: not valid java name */
+    /* INFO: renamed from: lambda$3$org-eclipse-jgit-internal-storage-file-RefDirectory, reason: not valid java name */
     /* synthetic */ C1LooseItems m5725lambda$3$orgeclipsejgitinternalstoragefileRefDirectory(File file) throws Exception {
         return new C1LooseItems(FileSnapshot.save(file), IO.readSome(file, 4096));
     }
@@ -1327,7 +1327,7 @@ public class RefDirectory extends RefDatabase {
 
     static class PackedRefList extends RefList<Ref> {
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         private final ObjectId f122id;
         private final FileSnapshot snapshot;
 

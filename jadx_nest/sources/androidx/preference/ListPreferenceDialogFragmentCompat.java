@@ -4,7 +4,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import androidx.appcompat.app.AlertDialog;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ListPreferenceDialogFragmentCompat extends PreferenceDialogFragmentCompat {
     private static final String SAVE_STATE_ENTRIES = "ListPreferenceDialogFragment.entries";
     private static final String SAVE_STATE_ENTRY_VALUES = "ListPreferenceDialogFragment.entryValues";
@@ -58,7 +58,7 @@ public class ListPreferenceDialogFragmentCompat extends PreferenceDialogFragment
         builder.setPositiveButton((CharSequence) null, (DialogInterface.OnClickListener) null);
     }
 
-    /* JADX INFO: renamed from: androidx.preference.ListPreferenceDialogFragmentCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.ListPreferenceDialogFragmentCompat$1, reason: invalid class name */
     class AnonymousClass1 implements DialogInterface.OnClickListener {
         AnonymousClass1() {
         }

@@ -44,7 +44,7 @@ import org.eclipse.jgit.util.FileUtils;
 import org.eclipse.jgit.util.RefList;
 import org.eclipse.jgit.util.RefMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileReftableDatabase extends RefDatabase {
     private final FileRepository fileRepository;
     private final ReftableDatabase reftableDatabase;
@@ -65,12 +65,12 @@ public class FileReftableDatabase extends RefDatabase {
         this.reftableDatabase = new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-file-FileReftableDatabase, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-file-FileReftableDatabase, reason: not valid java name */
     /* synthetic */ void m5687x15fe7d06() {
         this.fileRepository.fireEvent(new RefsChangedEvent());
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.FileReftableDatabase$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.FileReftableDatabase$1, reason: invalid class name */
     class AnonymousClass1 extends ReftableDatabase {
         AnonymousClass1() {
         }
@@ -81,7 +81,7 @@ public class FileReftableDatabase extends RefDatabase {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$1$org-eclipse-jgit-internal-storage-file-FileReftableDatabase, reason: not valid java name */
+    /* INFO: renamed from: lambda$1$org-eclipse-jgit-internal-storage-file-FileReftableDatabase, reason: not valid java name */
     /* synthetic */ Config m5688xd0741d87() {
         return this.fileRepository.getConfig();
     }
@@ -120,7 +120,7 @@ public class FileReftableDatabase extends RefDatabase {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public ReentrantLock getLock() {
         return this.reftableDatabase.getLock();
     }
@@ -221,7 +221,7 @@ public class FileReftableDatabase extends RefDatabase {
         return new SymbolicRef(ref.getName(), recreate(ref.getTarget(), ref2, z), z ? ref.getUpdateIndex() : -1L);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     class FileRefRename extends RefRename {
         FileRefRename(RefUpdate refUpdate, RefUpdate refUpdate2) {
             super(refUpdate, refUpdate2);
@@ -291,7 +291,7 @@ public class FileReftableDatabase extends RefDatabase {
         FileUtils.mkdir(new File(this.fileRepository.getCommonDirectory(), "reftable"), true);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean addReftable(FileReftableStack.Writer writer) throws IOException {
         if (!this.reftableStack.addReftable(writer)) {
             this.reftableStack.reload();
@@ -302,7 +302,7 @@ public class FileReftableDatabase extends RefDatabase {
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     class FileReftableBatchRefUpdate extends ReftableBatchRefUpdate {
         FileReftableBatchRefUpdate(FileReftableDatabase fileReftableDatabase, Repository repository) {
             super(fileReftableDatabase, fileReftableDatabase.reftableDatabase, fileReftableDatabase.getLock(), repository);
@@ -320,13 +320,13 @@ public class FileReftableDatabase extends RefDatabase {
             }
         }
 
-        /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-file-FileReftableDatabase$FileReftableBatchRefUpdate, reason: not valid java name */
+        /* INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-file-FileReftableDatabase$FileReftableBatchRefUpdate, reason: not valid java name */
         /* synthetic */ void m5689xc260f837(List list, List list2, ReftableWriter reftableWriter) throws IOException {
             write(reftableWriter, list, list2);
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     class FileReftableRefUpdate extends RefUpdate {
         private Ref dstRef;
         private RevWalk rw;
@@ -374,7 +374,7 @@ public class FileReftableDatabase extends RefDatabase {
             return true;
         }
 
-        /* JADX WARN: Code duplicated, block: B:9:0x003c  */
+        /* WARN: Code duplicated, block: B:9:0x003c  */
         void writeUpdate(ReftableWriter reftableWriter) throws IOException {
             Ref peeledNonTag;
             if (this.rw == null || ObjectId.zeroId().equals((AnyObjectId) getNewObjectId())) {
@@ -470,7 +470,7 @@ public class FileReftableDatabase extends RefDatabase {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void writeConvertTable(Repository repository, ReftableWriter reftableWriter, boolean z) throws IOException {
         List<Ref> refs = repository.getRefDatabase().getRefs();
         int iMax = 0;
@@ -543,7 +543,7 @@ public class FileReftableDatabase extends RefDatabase {
         return new ObjectIdRef.PeeledNonTag(Ref.Storage.PACKED, ref.getName(), objectId);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static FileReftableDatabase convertFrom(FileRepository fileRepository, boolean z) throws IOException {
         File file = null;
         Object[] objArr = 0;

@@ -5,13 +5,13 @@ import kotlin.Metadata;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: Rect.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Rect.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u0007\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\u000b\n\u0002\b\u000f\n\u0002\u0018\u0002\n\u0002\b\u001b\n\u0002\u0010\b\n\u0002\b\b\n\u0002\u0010\u000e\n\u0002\b\u0007\b\u0087\b\u0018\u0000 Y2\u00020\u0001:\u0001YB%\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003¢\u0006\u0002\u0010\u0007J\t\u0010<\u001a\u00020\u0003HÆ\u0003J\t\u0010=\u001a\u00020\u0003HÆ\u0003J\t\u0010>\u001a\u00020\u0003HÆ\u0003J\t\u0010?\u001a\u00020\u0003HÆ\u0003J\u001b\u0010@\u001a\u00020\u001e2\u0006\u0010A\u001a\u00020\rH\u0086\u0002ø\u0001\u0000¢\u0006\u0004\bB\u0010CJ1\u0010D\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\b\b\u0002\u0010\u0004\u001a\u00020\u00032\b\b\u0002\u0010\u0005\u001a\u00020\u00032\b\b\u0002\u0010\u0006\u001a\u00020\u0003HÆ\u0001J\u0010\u0010E\u001a\u00020\u00002\u0006\u0010F\u001a\u00020\u0003H\u0007J\u0013\u0010G\u001a\u00020\u001e2\b\u0010H\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010I\u001a\u00020JHÖ\u0001J\u0010\u0010K\u001a\u00020\u00002\u0006\u0010F\u001a\u00020\u0003H\u0007J\u0010\u0010L\u001a\u00020\u00002\u0006\u0010H\u001a\u00020\u0000H\u0007J(\u0010L\u001a\u00020\u00002\u0006\u0010M\u001a\u00020\u00032\u0006\u0010N\u001a\u00020\u00032\u0006\u0010O\u001a\u00020\u00032\u0006\u0010P\u001a\u00020\u0003H\u0007J\u000e\u0010Q\u001a\u00020\u001e2\u0006\u0010H\u001a\u00020\u0000J\b\u0010R\u001a\u00020SH\u0016J\u001a\u0010T\u001a\u00020\u00002\u0006\u0010A\u001a\u00020\rH\u0007ø\u0001\u0000¢\u0006\u0004\bU\u0010VJ\u0018\u0010T\u001a\u00020\u00002\u0006\u0010W\u001a\u00020\u00032\u0006\u0010X\u001a\u00020\u0003H\u0007R\u001c\u0010\u0006\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\b\u0010\t\u001a\u0004\b\n\u0010\u000bR\u0017\u0010\f\u001a\u00020\r8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u000e\u0010\u000fR\u0017\u0010\u0010\u001a\u00020\r8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0011\u0010\u000fR\u0017\u0010\u0012\u001a\u00020\r8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0013\u0010\u000fR\u0017\u0010\u0014\u001a\u00020\r8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0015\u0010\u000fR\u0017\u0010\u0016\u001a\u00020\r8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0017\u0010\u000fR\u0017\u0010\u0018\u001a\u00020\r8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b\u0019\u0010\u000fR\u001a\u0010\u001a\u001a\u00020\u00038FX\u0087\u0004¢\u0006\f\u0012\u0004\b\u001b\u0010\t\u001a\u0004\b\u001c\u0010\u000bR\u001a\u0010\u001d\u001a\u00020\u001e8FX\u0087\u0004¢\u0006\f\u0012\u0004\b\u001f\u0010\t\u001a\u0004\b\u001d\u0010 R\u001a\u0010!\u001a\u00020\u001e8FX\u0087\u0004¢\u0006\f\u0012\u0004\b\"\u0010\t\u001a\u0004\b!\u0010 R\u001a\u0010#\u001a\u00020\u001e8FX\u0087\u0004¢\u0006\f\u0012\u0004\b$\u0010\t\u001a\u0004\b#\u0010 R\u001c\u0010\u0002\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b%\u0010\t\u001a\u0004\b&\u0010\u000bR\u0011\u0010'\u001a\u00020\u00038F¢\u0006\u0006\u001a\u0004\b(\u0010\u000bR\u0011\u0010)\u001a\u00020\u00038F¢\u0006\u0006\u001a\u0004\b*\u0010\u000bR\u001c\u0010\u0005\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b+\u0010\t\u001a\u0004\b,\u0010\u000bR \u0010-\u001a\u00020.8FX\u0087\u0004ø\u0001\u0000ø\u0001\u0001¢\u0006\f\u0012\u0004\b/\u0010\t\u001a\u0004\b0\u0010\u000fR\u001c\u0010\u0004\u001a\u00020\u00038\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b1\u0010\t\u001a\u0004\b2\u0010\u000bR\u0017\u00103\u001a\u00020\r8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b4\u0010\u000fR\u0017\u00105\u001a\u00020\r8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b6\u0010\u000fR\u0017\u00107\u001a\u00020\r8Fø\u0001\u0000ø\u0001\u0001¢\u0006\u0006\u001a\u0004\b8\u0010\u000fR\u001a\u00109\u001a\u00020\u00038FX\u0087\u0004¢\u0006\f\u0012\u0004\b:\u0010\t\u001a\u0004\b;\u0010\u000b\u0082\u0002\u000b\n\u0005\b¡\u001e0\u0001\n\u0002\b!¨\u0006Z"}, d2 = {"Landroidx/compose/ui/geometry/Rect;", "", "left", "", "top", "right", "bottom", "(FFFF)V", "getBottom$annotations", "()V", "getBottom", "()F", "bottomCenter", "Landroidx/compose/ui/geometry/Offset;", "getBottomCenter-F1C5BW0", "()J", "bottomLeft", "getBottomLeft-F1C5BW0", "bottomRight", "getBottomRight-F1C5BW0", "center", "getCenter-F1C5BW0", "centerLeft", "getCenterLeft-F1C5BW0", "centerRight", "getCenterRight-F1C5BW0", "height", "getHeight$annotations", "getHeight", "isEmpty", "", "isEmpty$annotations", "()Z", "isFinite", "isFinite$annotations", "isInfinite", "isInfinite$annotations", "getLeft$annotations", "getLeft", "maxDimension", "getMaxDimension", "minDimension", "getMinDimension", "getRight$annotations", "getRight", "size", "Landroidx/compose/ui/geometry/Size;", "getSize-NH-jbRc$annotations", "getSize-NH-jbRc", "getTop$annotations", "getTop", "topCenter", "getTopCenter-F1C5BW0", "topLeft", "getTopLeft-F1C5BW0", "topRight", "getTopRight-F1C5BW0", "width", "getWidth$annotations", "getWidth", "component1", "component2", "component3", "component4", "contains", TypedValues.CycleType.S_WAVE_OFFSET, "contains-k-4lQ0M", "(J)Z", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "deflate", "delta", "equals", "other", "hashCode", "", "inflate", "intersect", "otherLeft", "otherTop", "otherRight", "otherBottom", "overlaps", "toString", "", "translate", "translate-k-4lQ0M", "(J)Landroidx/compose/ui/geometry/Rect;", "translateX", "translateY", "Companion", "ui-geometry_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final /* data */ class Rect {
     public static final int $stable = 0;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final Rect Zero = new Rect(0.0f, 0.0f, 0.0f, 0.0f);
     private final float bottom;
@@ -47,7 +47,7 @@ public final /* data */ class Rect {
     public static /* synthetic */ void getRight$annotations() {
     }
 
-    /* JADX INFO: renamed from: getSize-NH-jbRc$annotations, reason: not valid java name */
+    /* INFO: renamed from: getSize-NH-jbRc$annotations, reason: not valid java name */
     public static /* synthetic */ void m314getSizeNHjbRc$annotations() {
     }
 
@@ -66,22 +66,22 @@ public final /* data */ class Rect {
     public static /* synthetic */ void isInfinite$annotations() {
     }
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    /* INFO: renamed from: component1, reason: from getter */
     public final float getLeft() {
         return this.left;
     }
 
-    /* JADX INFO: renamed from: component2, reason: from getter */
+    /* INFO: renamed from: component2, reason: from getter */
     public final float getTop() {
         return this.top;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    /* INFO: renamed from: component3, reason: from getter */
     public final float getRight() {
         return this.right;
     }
 
-    /* JADX INFO: renamed from: component4, reason: from getter */
+    /* INFO: renamed from: component4, reason: from getter */
     public final float getBottom() {
         return this.bottom;
     }
@@ -128,7 +128,7 @@ public final /* data */ class Rect {
         return this.bottom;
     }
 
-    /* JADX INFO: compiled from: Rect.kt */
+    /* INFO: compiled from: Rect.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u001c\u0010\u0003\u001a\u00020\u00048\u0006X\u0087\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\u0005\u0010\u0002\u001a\u0004\b\u0006\u0010\u0007¨\u0006\b"}, d2 = {"Landroidx/compose/ui/geometry/Rect$Companion;", "", "()V", "Zero", "Landroidx/compose/ui/geometry/Rect;", "getZero$annotations", "getZero", "()Landroidx/compose/ui/geometry/Rect;", "ui-geometry_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -154,7 +154,7 @@ public final /* data */ class Rect {
         return this.bottom - this.top;
     }
 
-    /* JADX INFO: renamed from: getSize-NH-jbRc, reason: not valid java name */
+    /* INFO: renamed from: getSize-NH-jbRc, reason: not valid java name */
     public final long m322getSizeNHjbRc() {
         return SizeKt.Size(getWidth(), getHeight());
     }
@@ -184,7 +184,7 @@ public final /* data */ class Rect {
         return this.left >= this.right || this.top >= this.bottom;
     }
 
-    /* JADX INFO: renamed from: translate-k-4lQ0M, reason: not valid java name */
+    /* INFO: renamed from: translate-k-4lQ0M, reason: not valid java name */
     public final Rect m326translatek4lQ0M(long offset) {
         return new Rect(this.left + Offset.m289getXimpl(offset), this.top + Offset.m290getYimpl(offset), this.right + Offset.m289getXimpl(offset), this.bottom + Offset.m290getYimpl(offset));
     }
@@ -221,52 +221,52 @@ public final /* data */ class Rect {
         return Math.max(Math.abs(getWidth()), Math.abs(getHeight()));
     }
 
-    /* JADX INFO: renamed from: getTopLeft-F1C5BW0, reason: not valid java name */
+    /* INFO: renamed from: getTopLeft-F1C5BW0, reason: not valid java name */
     public final long m324getTopLeftF1C5BW0() {
         return OffsetKt.Offset(this.left, this.top);
     }
 
-    /* JADX INFO: renamed from: getTopCenter-F1C5BW0, reason: not valid java name */
+    /* INFO: renamed from: getTopCenter-F1C5BW0, reason: not valid java name */
     public final long m323getTopCenterF1C5BW0() {
         return OffsetKt.Offset(this.left + (getWidth() / 2.0f), this.top);
     }
 
-    /* JADX INFO: renamed from: getTopRight-F1C5BW0, reason: not valid java name */
+    /* INFO: renamed from: getTopRight-F1C5BW0, reason: not valid java name */
     public final long m325getTopRightF1C5BW0() {
         return OffsetKt.Offset(this.right, this.top);
     }
 
-    /* JADX INFO: renamed from: getCenterLeft-F1C5BW0, reason: not valid java name */
+    /* INFO: renamed from: getCenterLeft-F1C5BW0, reason: not valid java name */
     public final long m320getCenterLeftF1C5BW0() {
         return OffsetKt.Offset(this.left, this.top + (getHeight() / 2.0f));
     }
 
-    /* JADX INFO: renamed from: getCenter-F1C5BW0, reason: not valid java name */
+    /* INFO: renamed from: getCenter-F1C5BW0, reason: not valid java name */
     public final long m319getCenterF1C5BW0() {
         return OffsetKt.Offset(this.left + (getWidth() / 2.0f), this.top + (getHeight() / 2.0f));
     }
 
-    /* JADX INFO: renamed from: getCenterRight-F1C5BW0, reason: not valid java name */
+    /* INFO: renamed from: getCenterRight-F1C5BW0, reason: not valid java name */
     public final long m321getCenterRightF1C5BW0() {
         return OffsetKt.Offset(this.right, this.top + (getHeight() / 2.0f));
     }
 
-    /* JADX INFO: renamed from: getBottomLeft-F1C5BW0, reason: not valid java name */
+    /* INFO: renamed from: getBottomLeft-F1C5BW0, reason: not valid java name */
     public final long m317getBottomLeftF1C5BW0() {
         return OffsetKt.Offset(this.left, this.bottom);
     }
 
-    /* JADX INFO: renamed from: getBottomCenter-F1C5BW0, reason: not valid java name */
+    /* INFO: renamed from: getBottomCenter-F1C5BW0, reason: not valid java name */
     public final long m316getBottomCenterF1C5BW0() {
         return OffsetKt.Offset(this.left + (getWidth() / 2.0f), this.bottom);
     }
 
-    /* JADX INFO: renamed from: getBottomRight-F1C5BW0, reason: not valid java name */
+    /* INFO: renamed from: getBottomRight-F1C5BW0, reason: not valid java name */
     public final long m318getBottomRightF1C5BW0() {
         return OffsetKt.Offset(this.right, this.bottom);
     }
 
-    /* JADX INFO: renamed from: contains-k-4lQ0M, reason: not valid java name */
+    /* INFO: renamed from: contains-k-4lQ0M, reason: not valid java name */
     public final boolean m315containsk4lQ0M(long offset) {
         return Offset.m289getXimpl(offset) >= this.left && Offset.m289getXimpl(offset) < this.right && Offset.m290getYimpl(offset) >= this.top && Offset.m290getYimpl(offset) < this.bottom;
     }

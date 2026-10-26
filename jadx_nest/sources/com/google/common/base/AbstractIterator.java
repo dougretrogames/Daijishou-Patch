@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractIterator<T> implements Iterator<T> {
 
@@ -31,7 +31,7 @@ abstract class AbstractIterator<T> implements Iterator<T> {
         return null;
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.AbstractIterator$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.AbstractIterator$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$common$base$AbstractIterator$State;
 

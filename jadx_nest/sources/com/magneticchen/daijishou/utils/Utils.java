@@ -68,8 +68,8 @@ import kotlinx.serialization.json.Json;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.IOUtils;
 
-/* JADX INFO: compiled from: Utils.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: Utils.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u009e\u0001\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010!\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\bÆ\u0002\u0018\u00002\u00020\u0001:\u0002MNB\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u0004\u0018\u00010\u00042\u0006\u0010\u0005\u001a\u00020\u0004J\u0010\u0010\u0006\u001a\u0004\u0018\u00010\u00042\u0006\u0010\u0005\u001a\u00020\u0004J\u000e\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nJ\u001e\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u0012J\u000e\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0005\u001a\u00020\u0004J\u0018\u0010\u0015\u001a\u0004\u0018\u00010\u00122\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u0016\u001a\u00020\u0010J\u000e\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u0012J\u000e\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001dJ*\u0010\u001e\u001a\u0014\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\n0\u001f2\u0006\u0010 \u001a\u00020!2\b\b\u0002\u0010\"\u001a\u00020\u0018J\u0010\u0010#\u001a\u0004\u0018\u00010\u00122\u0006\u0010$\u001a\u00020%J\u0010\u0010&\u001a\u0004\u0018\u00010'2\u0006\u0010$\u001a\u00020%J\u000e\u0010(\u001a\u00020\u00122\u0006\u0010)\u001a\u00020*J\u0010\u0010+\u001a\u0004\u0018\u00010\u00122\u0006\u0010$\u001a\u00020%J\u0010\u0010,\u001a\u0004\u0018\u00010\u00122\u0006\u0010$\u001a\u00020%J \u0010-\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010.\u001a\u00020/2\b\u0010 \u001a\u0004\u0018\u00010!JC\u00100\u001a\u00020\u001b2\u0006\u0010 \u001a\u00020!2\n\b\u0002\u00101\u001a\u0004\u0018\u00010\n2\n\b\u0002\u00102\u001a\u0004\u0018\u00010\n2\n\b\u0002\u00103\u001a\u0004\u0018\u00010\n2\n\b\u0002\u00104\u001a\u0004\u0018\u00010\n¢\u0006\u0002\u00105J\u0010\u00106\u001a\u00020\u001b2\b\u0010\r\u001a\u0004\u0018\u00010\u000eJ\u0010\u00107\u001a\u0004\u0018\u00010\u00042\u0006\u00108\u001a\u00020\u0014J\u000e\u00109\u001a\u00020\u00122\u0006\u0010:\u001a\u00020\u0012J\u000e\u0010;\u001a\u00020\u00122\u0006\u0010<\u001a\u00020=J\u0018\u0010>\u001a\u00020\u00122\u0006\u0010?\u001a\u00020*2\b\b\u0002\u0010@\u001a\u00020\u001bJ2\u0010A\u001a\u00020\f2\u0006\u0010.\u001a\u00020B2\u0006\u0010C\u001a\u00020\u00182\u0006\u0010D\u001a\u00020\u00182\b\b\u0002\u0010E\u001a\u00020*2\b\b\u0002\u0010F\u001a\u00020\u001bJ.\u0010G\u001a\u001a\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u0010\u0012\u0004\u0012\u00020\u00120\u001f0H2\u0006\u0010I\u001a\u00020J2\u0006\u0010K\u001a\u00020\u0010J\u0012\u0010L\u001a\u00020**\u00020J2\u0006\u0010\u0016\u001a\u00020\u0010¨\u0006O"}, d2 = {"Lcom/magneticchen/daijishou/utils/Utils;", "", "()V", "atEndOfDay", "Ljava/util/Date;", "date", "atStartOfDay", "colorToColorStateList", "Landroid/content/res/ColorStateList;", TypedValues.Custom.S_COLOR, "", "copyFile", "", "context", "Landroid/content/Context;", "sourceUri", "Landroid/net/Uri;", "destinationFilename", "", "dateToLocalDateTime", "Ljava/time/LocalDateTime;", "detectMimeType", "uri", "dimensionRatioToFloat", "", "dimensionRatio", "dismissAllDialogs", "", "manager", "Landroidx/fragment/app/FragmentManager;", "getBitmapThemeColors", "Lkotlin/Triple;", "bitmap", "Landroid/graphics/Bitmap;", "luminance", "getBoxArtPath", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "getPlayableItemPreviewMediaIndex", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemPreviewMediaIndex;", "getRelativeTimeString", "timestamp", "", "getSnapshotPath", "getTitlePath", "imageViewAnimatedChange", "v", "Landroid/widget/ImageView;", "isBitmapDark", "left", "top", "right", "bottom", "(Landroid/graphics/Bitmap;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)Z", "isNetworkAvailable", "localDateTimeToDate", "localDateTime", "readEntireTextFromURL", "urlString", "readTextFromBufferedReader", "buffIn", "Ljava/io/BufferedReader;", "readableFileSize", "size", "use1024", "scaleView", "Landroid/view/View;", "startScale", "endScale", TypedValues.TransitionType.S_DURATION, "focusFix", "traverseDirectoryEntries", "", "contentResolver", "Landroid/content/ContentResolver;", "rootUri", "getFileSize", "GridSpacingItemDecoration", "MaxSizeHashMap", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class Utils {
     public static final Utils INSTANCE = new Utils();
@@ -146,8 +146,8 @@ public final class Utils {
         v.startAnimation(animationLoadAnimation);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.utils.Utils$imageViewAnimatedChange$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Utils.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.utils.Utils$imageViewAnimatedChange$1, reason: invalid class name */
+    /* INFO: compiled from: Utils.kt */
     @Metadata(d1 = {"\u0000\u0019\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0007\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/utils/Utils$imageViewAnimatedChange$1", "Landroid/view/animation/Animation$AnimationListener;", "onAnimationEnd", "", "animation", "Landroid/view/animation/Animation;", "onAnimationRepeat", "onAnimationStart", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class AnonymousClass1 implements Animation.AnimationListener {
         final /* synthetic */ Animation $animIn;
@@ -204,7 +204,7 @@ public final class Utils {
         return localDateTimeOfInstant;
     }
 
-    /* JADX WARN: Type inference failed for: r2v1, types: [java.time.ZonedDateTime] */
+    /* WARN: Type inference failed for: r2v1, types: [java.time.ZonedDateTime] */
     public final Date localDateTimeToDate(LocalDateTime localDateTime) {
         Intrinsics.checkNotNullParameter(localDateTime, "localDateTime");
         return Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
@@ -235,8 +235,8 @@ public final class Utils {
         v.startAnimation(scaleAnimation);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.utils.Utils$scaleView$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Utils.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.utils.Utils$scaleView$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Utils.kt */
     @Metadata(d1 = {"\u0000\u0019\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0012\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u0016J\u0012\u0010\u0006\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u0016J\u0012\u0010\u0007\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/utils/Utils$scaleView$1", "Landroid/view/animation/Animation$AnimationListener;", "onAnimationEnd", "", "animation", "Landroid/view/animation/Animation;", "onAnimationRepeat", "onAnimationStart", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class AnimationAnimationListenerC02741 implements Animation.AnimationListener {
         final /* synthetic */ float $endScale;
@@ -262,9 +262,9 @@ public final class Utils {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:40:0x0075 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:41:0x0077 A[Catch: IOException -> 0x0073, TRY_LEAVE, TryCatch #3 {IOException -> 0x0073, blocks: (B:37:0x006f, B:41:0x0077), top: B:47:0x006f }] */
-    /* JADX WARN: Code duplicated, block: B:47:0x006f A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:40:0x0075 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:41:0x0077 A[Catch: IOException -> 0x0073, TRY_LEAVE, TryCatch #3 {IOException -> 0x0073, blocks: (B:37:0x006f, B:41:0x0077), top: B:47:0x006f }] */
+    /* WARN: Code duplicated, block: B:47:0x006f A[EXC_TOP_SPLITTER, SYNTHETIC] */
     public final void copyFile(Context context, Uri sourceUri, String destinationFilename) throws Throwable {
         BufferedOutputStream bufferedOutputStream;
         Intrinsics.checkNotNullParameter(context, "context");
@@ -384,7 +384,7 @@ public final class Utils {
         return arrayList;
     }
 
-    /* JADX INFO: compiled from: Utils.kt */
+    /* INFO: compiled from: Utils.kt */
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010&\n\u0000\u0018\u0000*\u0004\b\u0000\u0010\u0001*\u0004\b\u0001\u0010\u00022\u000e\u0012\u0004\u0012\u0002H\u0001\u0012\u0004\u0012\u0002H\u00020\u0003B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u001e\u0010\u0007\u001a\u00020\b2\u0014\u0010\t\u001a\u0010\u0012\u0004\u0012\u00028\u0000\u0012\u0004\u0012\u00028\u0001\u0018\u00010\nH\u0014R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000b"}, d2 = {"Lcom/magneticchen/daijishou/utils/Utils$MaxSizeHashMap;", "K", ExifInterface.GPS_MEASUREMENT_INTERRUPTED, "Ljava/util/LinkedHashMap;", "maxSize", "", "(I)V", "removeEldestEntry", "", "eldest", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class MaxSizeHashMap<K, V> extends LinkedHashMap<K, V> {
         private final int maxSize;
@@ -399,7 +399,7 @@ public final class Utils {
         }
     }
 
-    /* JADX INFO: compiled from: Utils.kt */
+    /* INFO: compiled from: Utils.kt */
     @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B-\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0006\u0012\u0006\u0010\u0007\u001a\u00020\u0006\u0012\u0006\u0010\b\u001a\u00020\u0006¢\u0006\u0002\u0010\tJ(\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u0013H\u0016R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0014"}, d2 = {"Lcom/magneticchen/daijishou/utils/Utils$GridSpacingItemDecoration;", "Landroidx/recyclerview/widget/RecyclerView$ItemDecoration;", "spanCount", "", "spacing", "includeEdge", "", "onlyEdge", "topBottomEdge", "(IIZZZ)V", "getItemOffsets", "", "outRect", "Landroid/graphics/Rect;", "view", "Landroid/view/View;", "parent", "Landroidx/recyclerview/widget/RecyclerView;", "state", "Landroidx/recyclerview/widget/RecyclerView$State;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class GridSpacingItemDecoration extends RecyclerView.ItemDecoration {
         private final boolean includeEdge;

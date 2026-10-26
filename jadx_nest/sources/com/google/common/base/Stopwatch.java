@@ -2,7 +2,7 @@ package com.google.common.base;
 
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Stopwatch {
     private long elapsedNanos;
@@ -95,7 +95,7 @@ public final class Stopwatch {
         return TimeUnit.NANOSECONDS;
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Stopwatch$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Stopwatch$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$java$util$concurrent$TimeUnit;
 

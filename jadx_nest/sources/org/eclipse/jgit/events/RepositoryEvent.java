@@ -4,7 +4,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.events.RepositoryListener;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class RepositoryEvent<T extends RepositoryListener> {
     private Repository repository;
 

@@ -11,11 +11,11 @@ import org.apache.commons.collections4.map.UnmodifiableEntrySet;
 import org.apache.commons.collections4.map.UnmodifiableSortedMap;
 import org.apache.commons.collections4.set.UnmodifiableSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UnmodifiableSortedBidiMap<K, V> extends AbstractSortedBidiMapDecorator<K, V> implements Unmodifiable {
     private UnmodifiableSortedBidiMap<V, K> inverse;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <K, V> SortedBidiMap<K, V> unmodifiableSortedBidiMap(SortedBidiMap<K, ? extends V> sortedBidiMap) {
         return sortedBidiMap instanceof Unmodifiable ? sortedBidiMap : new UnmodifiableSortedBidiMap(sortedBidiMap);
     }
@@ -39,7 +39,7 @@ public final class UnmodifiableSortedBidiMap<K, V> extends AbstractSortedBidiMap
         return UnmodifiableSortedMap.unmodifiableSortedMap(decorated().headMap(k));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.apache.commons.collections4.bidimap.AbstractSortedBidiMapDecorator, org.apache.commons.collections4.bidimap.AbstractOrderedBidiMapDecorator, org.apache.commons.collections4.bidimap.AbstractBidiMapDecorator, org.apache.commons.collections4.BidiMap
     public SortedBidiMap<V, K> inverseBidiMap() {
         if (this.inverse == null) {

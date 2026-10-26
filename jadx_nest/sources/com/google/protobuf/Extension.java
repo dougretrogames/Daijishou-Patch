@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import com.google.protobuf.MessageLite;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Extension<ContainingType extends MessageLite, Type> extends ExtensionLite<ContainingType, Type> {
 
     protected enum ExtensionType {

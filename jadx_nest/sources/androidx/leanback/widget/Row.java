@@ -1,6 +1,6 @@
 package androidx.leanback.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Row {
     private static final int FLAG_ID_USE_HEADER = 1;
     private static final int FLAG_ID_USE_ID = 0;

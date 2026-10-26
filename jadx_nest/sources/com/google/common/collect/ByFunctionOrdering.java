@@ -6,7 +6,7 @@ import com.google.common.base.Preconditions;
 import java.io.Serializable;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class ByFunctionOrdering<F, T> extends Ordering<F> implements Serializable {
     private static final long serialVersionUID = 0;

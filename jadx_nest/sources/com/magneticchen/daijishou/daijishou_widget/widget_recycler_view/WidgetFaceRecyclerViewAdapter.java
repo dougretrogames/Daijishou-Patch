@@ -47,12 +47,12 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
 
-/* JADX INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000¬\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0012\u0018\u0000 h2\b\u0012\u0004\u0012\u00020\u00020\u00012\u00020\u0003:\u0004hijkB\u001b\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\f\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00020\u0007¢\u0006\u0002\u0010\bJ\"\u00107\u001a\u00020&2\n\u00108\u001a\u00060%R\u00020\u00002\u0006\u00109\u001a\u00020:2\u0006\u0010;\u001a\u00020<J\u0006\u0010=\u001a\u00020&J\u0010\u0010>\u001a\u00020\n2\u0006\u0010?\u001a\u00020@H\u0002J\u0010\u0010A\u001a\u00020&2\u0006\u0010B\u001a\u00020 H\u0002J\b\u0010C\u001a\u00020&H\u0002J\u0010\u0010D\u001a\u00020\u001a2\u0006\u0010B\u001a\u00020 H\u0002J\u0010\u0010E\u001a\u00020@2\u0006\u0010B\u001a\u00020 H\u0016J\u0010\u0010F\u001a\u00020\n2\u0006\u0010?\u001a\u00020@H\u0002J\u0017\u0010G\u001a\u0004\u0018\u00010@2\u0006\u0010H\u001a\u00020 H\u0002¢\u0006\u0002\u0010IJ\u0010\u0010J\u001a\u00020&2\u0006\u0010+\u001a\u00020,H\u0017J\u001c\u0010K\u001a\u00060%R\u00020\u00002\u0006\u0010L\u001a\u00020M2\u0006\u0010N\u001a\u00020 H\u0016J\u0010\u0010O\u001a\u00020&2\u0006\u0010+\u001a\u00020,H\u0017J\u001a\u0010P\u001a\u00020\n2\u0010\u00108\u001a\f0QR\b\u0012\u0004\u0012\u00020\u00020\u0001H\u0016J\u001a\u0010R\u001a\u00020&2\u0010\u00108\u001a\f0QR\b\u0012\u0004\u0012\u00020\u00020\u0001H\u0016J\u001a\u0010S\u001a\u00020&2\u0010\u00108\u001a\f0QR\b\u0012\u0004\u0012\u00020\u00020\u0001H\u0016J\u0012\u0010T\u001a\u00020&2\n\u00108\u001a\u00060%R\u00020\u0000J\u0010\u0010U\u001a\u00020&2\u0006\u0010?\u001a\u00020@H\u0002J.\u0010V\u001a\u00020&2\n\u0010W\u001a\u00060%R\u00020\u00002\u0018\u0010/\u001a\u0014\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020&0$H\u0002J\u0010\u0010X\u001a\u00020&2\u0006\u0010Y\u001a\u00020ZH\u0016J\b\u0010[\u001a\u00020ZH\u0016J\b\u0010\\\u001a\u00020&H\u0002J$\u0010]\u001a\u00020&2\n\u00108\u001a\u00060%R\u00020\u00002\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010;\u001a\u00020<H\u0002J\u0010\u0010^\u001a\u00020&2\u0006\u0010_\u001a\u00020\nH\u0016J\u0010\u0010`\u001a\u00020&2\u0006\u0010a\u001a\u00020\nH\u0002J$\u0010b\u001a\u00020&2\u001c\u0010#\u001a\u0018\u0012\b\u0012\u00060%R\u00020\u0000\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020&0$J*\u0010c\u001a\u00020&2\"\u0010'\u001a\u001e\u0012\b\u0012\u00060%R\u00020\u0000\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020&0(J$\u0010d\u001a\u00020&2\u001c\u0010)\u001a\u0018\u0012\b\u0012\u00060%R\u00020\u0000\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020&0$J$\u0010e\u001a\u00020&2\u001c\u0010*\u001a\u0018\u0012\b\u0012\u00060%R\u00020\u0000\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020&0$J\u0010\u0010f\u001a\u00020&2\b\u00104\u001a\u0004\u0018\u000105J\u0006\u0010g\u001a\u00020\nR\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\r\u001a\u00020\nX\u0096\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013R\u000e\u0010\u0014\u001a\u00020\u0015X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0016\u001a\b\u0018\u00010\u0017R\u00020\u0000X\u0082\u000e¢\u0006\u0002\n\u0000R\u0019\u0010\u0018\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u001a0\u0019¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u000e\u0010\u001d\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u001f\u001a\b\u0012\u0004\u0012\u00020 0\u0019X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\"X\u0082\u0004¢\u0006\u0002\n\u0000R&\u0010#\u001a\u001a\u0012\b\u0012\u00060%R\u00020\u0000\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020&\u0018\u00010$X\u0082\u000e¢\u0006\u0002\n\u0000R,\u0010'\u001a \u0012\b\u0012\u00060%R\u00020\u0000\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020&\u0018\u00010(X\u0082\u000e¢\u0006\u0002\n\u0000R&\u0010)\u001a\u001a\u0012\b\u0012\u00060%R\u00020\u0000\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020&\u0018\u00010$X\u0082\u000e¢\u0006\u0002\n\u0000R&\u0010*\u001a\u001a\u0012\b\u0012\u00060%R\u00020\u0000\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020&\u0018\u00010$X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010+\u001a\u0004\u0018\u00010,X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020 X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010.\u001a\b\u0018\u00010%R\u00020\u0000X\u0082\u000e¢\u0006\u0002\n\u0000R\"\u0010/\u001a\u0016\u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020 \u0012\u0004\u0012\u00020&\u0018\u00010$X\u0082\u000e¢\u0006\u0002\n\u0000R\u0011\u00100\u001a\u00020\n8F¢\u0006\u0006\u001a\u0004\b1\u0010\u000fR\u0016\u00102\u001a\n\u0012\u0006\u0012\u0004\u0018\u0001030\u0019X\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u00104\u001a\u0004\u0018\u000105X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u00106\u001a\u0004\u0018\u000105X\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00020\u0007X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006l"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetInstance;", "Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/StatefulAdapter;", "fragment", "Landroidx/fragment/app/Fragment;", "widgetInstances", "", "(Landroidx/fragment/app/Fragment;Ljava/util/List;)V", "_requestMovingViewHolderPositionMode", "", "dpToPxConverter", "Lcom/magneticchen/daijishou/utils/DpToPxConverter;", "enforceSelectionInSelectableMode", "getEnforceSelectionInSelectableMode", "()Z", "setEnforceSelectionInSelectableMode", "(Z)V", "getFragment", "()Landroidx/fragment/app/Fragment;", "fragmentManager", "Landroidx/fragment/app/FragmentManager;", "fragmentMaxLifecycleEnforcer", "Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter$FragmentMaxLifecycleEnforcer;", "fragments", "Landroidx/collection/LongSparseArray;", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetFaceFragment;", "getFragments", "()Landroidx/collection/LongSparseArray;", "hasStaleFragments", "isInGracePeriod", "itemIdToViewHolder", "", "lifecycle", "Landroidx/lifecycle/Lifecycle;", "onWidgetClickListener", "Lkotlin/Function2;", "Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter$WidgetViewHolder;", "", "onWidgetFocusChangeListener", "Lkotlin/Function3;", "onWidgetLongClickListener", "onWidgetSelectListener", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "requestMovingViewHolderFromPosition", "requestMovingViewHolderFromPositionViewHolder", "requestMovingViewHolderPositionCallback", "requestMovingViewHolderPositionMode", "getRequestMovingViewHolderPositionMode", "savedStates", "Landroidx/fragment/app/Fragment$SavedState;", "strokeColorTheme", "Landroid/content/res/ColorStateList;", "textColor", "addViewToContainer", "holder", "v", "Landroid/view/View;", "container", "Landroidx/fragment/app/FragmentContainerView;", "cancelMovingPosition", "containsItem", "itemId", "", "ensureFragment", "position", "gcFragments", "getFragmentAtPosition", "getItemId", "isFragmentViewBound", "itemForViewHolder", "viewHolderId", "(I)Ljava/lang/Long;", "onAttachedToRecyclerView", "onCreateViewHolder", "parent", "Landroid/view/ViewGroup;", "viewType", "onDetachedFromRecyclerView", "onFailedToRecycleView", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "onViewAttachedToWindow", "onViewRecycled", "placeFragmentInViewHolder", "removeFragment", "requestMovingViewHolderPosition", "viewHolder", "restoreState", "savedState", "Landroid/os/Parcelable;", "saveState", "scheduleGracePeriodEnd", "scheduleViewAttach", "setHasStableIds", "hasStableIds", "setItemViewsFocusableInTouchMode", "focusable", "setOnWidgetClickListener", "setOnWidgetFocusChangeListener", "setOnWidgetLongClickListener", "setOnWidgetSelectListener", "setStrokeColorTheme", "shouldDelayFragmentTransactions", "Companion", "DataSetChangeObserver", "FragmentMaxLifecycleEnforcer", "WidgetViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.Adapter<WidgetInstance> implements StatefulAdapter {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final long GRACE_WINDOW_TIME_MS = 10000;
     private static final String KEY_PREFIX_FRAGMENT = "f#";
@@ -91,7 +91,7 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         return this.fragment;
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public WidgetFaceRecyclerViewAdapter(Fragment fragment, List<WidgetInstance> widgetInstances) {
         super(widgetInstances, true, false);
         Intrinsics.checkNotNullParameter(fragment, "fragment");
@@ -126,7 +126,7 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         this.enforceSelectionInSelectableMode = z;
     }
 
-    /* JADX INFO: renamed from: getRequestMovingViewHolderPositionMode, reason: from getter */
+    /* INFO: renamed from: getRequestMovingViewHolderPositionMode, reason: from getter */
     public final boolean get_requestMovingViewHolderPositionMode() {
         return this._requestMovingViewHolderPositionMode;
     }
@@ -159,7 +159,7 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         this.onWidgetFocusChangeListener = onWidgetFocusChangeListener;
     }
 
-    /* JADX INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
+    /* INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
     @Metadata(d1 = {"\u0000v\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0002\b\u0004\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\u0015\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007¢\u0006\u0002\u0010\bJ\b\u0010%\u001a\u00020&H\u0002J\b\u0010'\u001a\u00020&H\u0002J\u0018\u0010(\u001a\u00020&2\u0006\u0010)\u001a\u00020\u00122\u0006\u0010*\u001a\u00020\u0003H\u0016J\b\u0010+\u001a\u00020,H\u0016J\b\u0010-\u001a\u00020&H\u0016J\u0010\u0010.\u001a\u00020&2\u0006\u0010/\u001a\u00020,H\u0016J\b\u00100\u001a\u00020,H\u0016J \u00101\u001a\u00020&2\u0018\u00102\u001a\u0014\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020\u0012\u0012\u0004\u0012\u00020&03J\b\u00104\u001a\u00020&H\u0002J&\u00105\u001a\u00020&2\u0006\u00106\u001a\u00020,2\n\b\u0002\u00107\u001a\u0004\u0018\u0001082\n\b\u0002\u00109\u001a\u0004\u0018\u000108J\b\u0010:\u001a\u00020&H\u0002J\b\u0010;\u001a\u00020&H\u0002R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000f\u001a\u0004\u0018\u00010\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0014X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0016\u001a\n \u0017*\u0004\u0018\u00010\u00100\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u001a\u001a\u00020\u001b¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u001dR\u000e\u0010\u001e\u001a\u00020\u000eX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020\u0019X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\"X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\"X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006<"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter$WidgetViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_widget/abstract_widget_classes/WidgetInstance;", "adapter", "Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter;Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter;Landroid/view/View;)V", "getAdapter", "()Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter;", "background", "Lcom/google/android/material/card/MaterialCardView;", "baseElevation", "", "baseStrokeColor", "Landroid/content/res/ColorStateList;", "baseStrokeWidth", "", "container", "Landroidx/constraintlayout/widget/ConstraintLayout;", "defaultStrokeColorTheme", "defaultTextColor", "kotlin.jvm.PlatformType", "descriptionTextView", "Landroid/widget/TextView;", "fragmentContainer", "Landroidx/fragment/app/FragmentContainerView;", "getFragmentContainer", "()Landroidx/fragment/app/FragmentContainerView;", "highlightElevation", "highlightStrokeWidth", "nameTextView", "placeholderImageView", "Landroid/widget/ImageView;", "selectedImageView", "strokeColorTheme", "hideFragment", "", "highlight", "onBind", "position", "item", "onClick", "", "onFocus", "onFocusClear", "isAbsoluteAdapterPositionValid", "onLongClick", "requestMovingPosition", "requestMovingViewHolderPositionCallback", "Lkotlin/Function2;", "semiHighlight", "setDescriptionMode", "moveMode", "title", "", "description", "showFragment", "unHighlight", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class WidgetViewHolder extends DaijishouRecyclerView.Adapter<WidgetInstance>.ViewHolder {
         private final WidgetFaceRecyclerViewAdapter adapter;
@@ -180,7 +180,7 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         private final int strokeColorTheme;
         final /* synthetic */ WidgetFaceRecyclerViewAdapter this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public WidgetViewHolder(WidgetFaceRecyclerViewAdapter widgetFaceRecyclerViewAdapter, WidgetFaceRecyclerViewAdapter adapter, View itemView) {
             super(widgetFaceRecyclerViewAdapter, itemView);
             Intrinsics.checkNotNullParameter(adapter, "adapter");
@@ -413,7 +413,7 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void gcFragments() {
         if (!this.hasStaleFragments || shouldDelayFragmentTransactions()) {
             return;
@@ -490,15 +490,15 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         handler.postDelayed(widgetFaceRecyclerViewAdapter$$ExternalSyntheticLambda0, GRACE_WINDOW_TIME_MS);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void scheduleGracePeriodEnd$lambda$0(WidgetFaceRecyclerViewAdapter this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.isInGracePeriod = false;
         this$0.gcFragments();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_recycler_view.WidgetFaceRecyclerViewAdapter$scheduleGracePeriodEnd$1, reason: invalid class name */
-    /* JADX INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_recycler_view.WidgetFaceRecyclerViewAdapter$scheduleGracePeriodEnd$1, reason: invalid class name */
+    /* INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter$scheduleGracePeriodEnd$1", "Landroidx/lifecycle/LifecycleEventObserver;", "onStateChanged", "", "source", "Landroidx/lifecycle/LifecycleOwner;", NotificationCompat.CATEGORY_EVENT, "Landroidx/lifecycle/Lifecycle$Event;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class AnonymousClass1 implements LifecycleEventObserver {
         final /* synthetic */ Handler $handler;
@@ -520,7 +520,7 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final Long itemForViewHolder(int viewHolderId) {
         int size = this.itemIdToViewHolder.size();
         Long lValueOf = null;
@@ -535,7 +535,7 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         return lValueOf;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void ensureFragment(int position) {
         long itemId = getItemId(position);
         if (this.fragments.containsKey(itemId)) {
@@ -546,8 +546,8 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         this.fragments.put(itemId, fragmentAtPosition);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_recycler_view.WidgetFaceRecyclerViewAdapter$scheduleViewAttach$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_recycler_view.WidgetFaceRecyclerViewAdapter$scheduleViewAttach$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
     @Metadata(d1 = {"\u0000)\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J*\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\b\u0010\n\u001a\u0004\u0018\u00010\u000bH\u0016¨\u0006\f"}, d2 = {"com/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter$scheduleViewAttach$1", "Landroidx/fragment/app/FragmentManager$FragmentLifecycleCallbacks;", "onFragmentViewCreated", "", "fm", "Landroidx/fragment/app/FragmentManager;", "f", "Landroidx/fragment/app/Fragment;", "v", "Landroid/view/View;", "savedInstanceState", "Landroid/os/Bundle;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class C02131 extends FragmentManager.FragmentLifecycleCallbacks {
         final /* synthetic */ FragmentContainerView $container;
@@ -599,7 +599,7 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         container.addView(v);
     }
 
-    /* JADX INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
+    /* INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
     @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\b\u0080\u0004\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0010\u001a\u00020\u00062\u0006\u0010\u000b\u001a\u00020\fH\u0002J\u000e\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u000b\u001a\u00020\fJ\u000e\u0010\u0013\u001a\u00020\u00122\u0006\u0010\u000b\u001a\u00020\fJ\u000e\u0010\u0014\u001a\u00020\u00122\u0006\u0010\u0015\u001a\u00020\u0016R\u0010\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0007\u001a\u0004\u0018\u00010\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\t\u001a\u0004\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u000b\u001a\u0004\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\r\u001a\b\u0012\u0004\u0012\u00020\u000f0\u000eX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0017"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter$FragmentMaxLifecycleEnforcer;", "", "(Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter;)V", "dataObserver", "Landroidx/recyclerview/widget/RecyclerView$AdapterDataObserver;", "gridLayoutManager", "Landroidx/recyclerview/widget/GridLayoutManager;", "lifecycleObserver", "Landroidx/lifecycle/LifecycleEventObserver;", "onScrollListener", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "visibleItemIdList", "", "", "inferGridLayoutManager", "register", "", "unregister", "updateFragmentMaxLifecycle", "dataSetChanged", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class FragmentMaxLifecycleEnforcer {
         private RecyclerView.AdapterDataObserver dataObserver;
@@ -714,8 +714,8 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
     @Metadata(d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\u0006\b\"\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u0003\u001a\u00020\u0004H&J\u0018\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u0007H\u0016J\"\u0010\u0005\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u00072\b\u0010\t\u001a\u0004\u0018\u00010\nH\u0016J\u0018\u0010\u000b\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u0007H\u0016J \u0010\f\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u00072\u0006\u0010\u000e\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u0007H\u0016J\u0018\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\u0007H\u0016¨\u0006\u0010"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter$DataSetChangeObserver;", "Landroidx/recyclerview/widget/RecyclerView$AdapterDataObserver;", "()V", "onChanged", "", "onItemRangeChanged", "positionStart", "", "itemCount", "payload", "", "onItemRangeInserted", "onItemRangeMoved", "fromPosition", "toPosition", "onItemRangeRemoved", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     static abstract class DataSetChangeObserver extends RecyclerView.AdapterDataObserver {
         @Override // androidx.recyclerview.widget.RecyclerView.AdapterDataObserver
@@ -904,8 +904,8 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         this.lifecycle.addObserver(new AnonymousClass2(holder));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_recycler_view.WidgetFaceRecyclerViewAdapter$placeFragmentInViewHolder$2, reason: invalid class name */
-    /* JADX INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_recycler_view.WidgetFaceRecyclerViewAdapter$placeFragmentInViewHolder$2, reason: invalid class name */
+    /* INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter$placeFragmentInViewHolder$2", "Landroidx/lifecycle/LifecycleEventObserver;", "onStateChanged", "", "source", "Landroidx/lifecycle/LifecycleOwner;", NotificationCompat.CATEGORY_EVENT, "Landroidx/lifecycle/Lifecycle$Event;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass2 implements LifecycleEventObserver {
         final /* synthetic */ WidgetViewHolder $holder;
@@ -947,7 +947,7 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void setItemViewsFocusableInTouchMode(boolean focusable) {
         RecyclerView recyclerView = this.recyclerView;
         if (recyclerView != null) {
@@ -966,7 +966,7 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void requestMovingViewHolderPosition(WidgetViewHolder viewHolder, Function2<? super Integer, ? super Integer, Unit> requestMovingViewHolderPositionCallback) {
         if (this._requestMovingViewHolderPositionMode) {
             throw new IllegalStateException("Moving view holder position has already requested.".toString());
@@ -1006,7 +1006,7 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         }
     }
 
-    /* JADX INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
+    /* INFO: compiled from: WidgetFaceRecyclerViewAdapter.kt */
     @Metadata(d1 = {"\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0003\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0018\u0010\b\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u00062\u0006\u0010\n\u001a\u00020\u0004H\u0002J\u0018\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u0006H\u0002J\u0018\u0010\u000e\u001a\u00020\u00042\u0006\u0010\r\u001a\u00020\u00062\u0006\u0010\t\u001a\u00020\u0006H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0006X\u0082T¢\u0006\u0002\n\u0000¨\u0006\u000f"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widget_recycler_view/WidgetFaceRecyclerViewAdapter$Companion;", "", "()V", "GRACE_WINDOW_TIME_MS", "", "KEY_PREFIX_FRAGMENT", "", "KEY_PREFIX_STATE", "createKey", "prefix", "id", "isValidKey", "", "key", "parseIdFromKey", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -1016,17 +1016,17 @@ public final class WidgetFaceRecyclerViewAdapter extends DaijishouRecyclerView.A
         private Companion() {
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final String createKey(String prefix, long id2) {
             return prefix + id2;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final boolean isValidKey(String key, String prefix) {
             return StringsKt.startsWith$default(key, prefix, false, 2, (Object) null) && key.length() > prefix.length();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public final long parseIdFromKey(String key, String prefix) {
             String strSubstring = key.substring(prefix.length());
             Intrinsics.checkNotNullExpressionValue(strSubstring, "substring(...)");

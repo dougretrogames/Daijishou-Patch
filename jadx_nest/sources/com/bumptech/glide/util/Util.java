@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Queue;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Util {
     private static final int HASH_ACCUMULATOR = 17;
     private static final int HASH_MULTIPLIER = 31;
@@ -87,7 +87,7 @@ public final class Util {
         return i2;
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.util.Util$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.util.Util$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$android$graphics$Bitmap$Config;
 

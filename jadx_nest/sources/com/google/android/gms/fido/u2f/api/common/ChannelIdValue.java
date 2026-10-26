@@ -8,8 +8,8 @@ import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class ChannelIdValue extends AbstractSafeParcelable {
     private final ChannelIdValueType zza;
@@ -20,7 +20,7 @@ public class ChannelIdValue extends AbstractSafeParcelable {
     public static final ChannelIdValue UNAVAILABLE = new ChannelIdValue("unavailable");
     public static final ChannelIdValue UNUSED = new ChannelIdValue("unused");
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public enum ChannelIdValueType implements Parcelable {
         ABSENT(0),
         STRING(1),
@@ -44,7 +44,7 @@ public class ChannelIdValue extends AbstractSafeParcelable {
         }
     }
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class UnsupportedChannelIdValueTypeException extends Exception {
         public UnsupportedChannelIdValueTypeException(int i) {
             super(String.format("ChannelIdValueType %s not supported", Integer.valueOf(i)));

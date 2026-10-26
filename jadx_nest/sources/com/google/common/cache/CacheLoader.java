@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.Map;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class CacheLoader<K, V> {
     public abstract V load(K key) throws Exception;
@@ -56,7 +56,7 @@ public abstract class CacheLoader<K, V> {
         return loader.new AnonymousClass1(executor);
     }
 
-    /* JADX INFO: renamed from: com.google.common.cache.CacheLoader$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.cache.CacheLoader$1, reason: invalid class name */
     class AnonymousClass1 extends CacheLoader<K, V> {
         final /* synthetic */ Executor val$executor;
 

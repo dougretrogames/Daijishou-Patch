@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 import javax.annotation.CheckForNull;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class FinalizableReferenceQueue implements Closeable {
     private static final String FINALIZER_CLASS_NAME = "com.google.common.base.internal.Finalizer";
@@ -53,7 +53,7 @@ public class FinalizableReferenceQueue implements Closeable {
         cleanUp();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     void cleanUp() {
         if (this.threadStarted) {
             return;

@@ -7,11 +7,11 @@ import org.apache.http.HttpResponse;
 import org.apache.http.TokenIterator;
 import org.apache.http.message.BasicTokenIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultConnectionReuseStrategy implements ConnectionReuseStrategy {
     public static final DefaultConnectionReuseStrategy INSTANCE = new DefaultConnectionReuseStrategy();
 
-    /* JADX WARN: Code restructure failed: missing block: B:32:0x0092, code lost:
+    /* WARN: Code restructure failed: missing block: B:32:0x0092, code lost:
     
         if (java.lang.Long.parseLong(r11[0].getValue()) < 0) goto L33;
      */

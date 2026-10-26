@@ -5,7 +5,7 @@ import java.nio.ByteBuffer;
 import java.util.Set;
 import org.apache.commons.codec.digest.MurmurHash3;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ChangedPathFilter {
     public static final int BITS_PER_ENTRY = 10;
     public static final int PATH_HASH_COUNT = 7;

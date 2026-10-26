@@ -3,7 +3,7 @@ package androidx.arch.core.internal;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FastSafeIterableMap<K, V> extends SafeIterableMap<K, V> {
     private final HashMap<K, SafeIterableMap.Entry<K, V>> mHashMap = new HashMap<>();
 

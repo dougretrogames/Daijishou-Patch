@@ -3,8 +3,8 @@ package com.google.android.gms.internal.auth;
 import com.google.common.base.Ascii;
 import okio.Utf8;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 final class zzhk {
     static /* bridge */ /* synthetic */ void zza(byte b, byte b2, byte b3, byte b4, char[] cArr, int i) throws zzfb {
         if (zze(b2) || (((b << Ascii.FS) + (b2 + 112)) >> 30) != 0 || zze(b3) || zze(b4)) {
@@ -30,11 +30,11 @@ final class zzhk {
         return b > -65;
     }
 
-    /* JADX WARN: Code duplicated, block: B:10:0x0013 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:11:0x0015  */
-    /* JADX WARN: Code duplicated, block: B:12:0x0016 A[PHI: r2
+    /* WARN: Code duplicated, block: B:10:0x0013 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:11:0x0015  */
+    /* WARN: Code duplicated, block: B:12:0x0016 A[PHI: r2
   0x0016: PHI (r2v3 byte) = (r2v2 byte), (r2v9 byte) binds: [B:9:0x0011, B:11:0x0015] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:14:0x001c  */
+    /* WARN: Code duplicated, block: B:14:0x001c  */
     static /* bridge */ /* synthetic */ void zzb(byte b, byte b2, byte b3, char[] cArr, int i) throws zzfb {
         if (!zze(b2)) {
             if (b != -32) {

@@ -4,7 +4,7 @@ import java.util.Set;
 import org.apache.commons.collections4.Bag;
 import org.apache.commons.collections4.collection.AbstractCollectionDecorator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractBagDecorator<E> extends AbstractCollectionDecorator<E> implements Bag<E> {
     private static final long serialVersionUID = -3768146017343785417L;
 
@@ -20,7 +20,7 @@ public abstract class AbstractBagDecorator<E> extends AbstractCollectionDecorato
         return decorated().add(e, i);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public Bag<E> decorated() {
         return (Bag) super.decorated();

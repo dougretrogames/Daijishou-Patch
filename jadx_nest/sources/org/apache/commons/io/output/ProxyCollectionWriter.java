@@ -5,7 +5,7 @@ import java.io.Writer;
 import java.util.Collection;
 import org.apache.commons.io.IOUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ProxyCollectionWriter extends FilterCollectionWriter {
     protected void afterWrite(int i) throws IOException {
     }

@@ -14,8 +14,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import org.apache.commons.codec.language.bm.Languages;
 
-/* JADX INFO: compiled from: Result.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: Result.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000F\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0010 \n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a>\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002\"\f\b\u0001\u0010\u0003*\u00060\u0004j\u0002`\u0005*\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u00062\u0012\u0010\u0007\u001a\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u00020\u00010\b\u001a6\u0010\t\u001a\u00020\n\"\f\b\u0000\u0010\u0003*\u00060\u0004j\u0002`\u0005*\f\u0012\u0002\b\u0003\u0012\u0004\u0012\u0002H\u00030\u00062\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u0002H\u0003\u0012\u0004\u0012\u00020\n0\b\u001aN\u0010\f\u001a\u0018\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u000e0\r\u0012\u0002\b\u00030\u0006\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u000e*\f\u0012\u0004\u0012\u0002H\u0002\u0012\u0002\b\u00030\u00062\u0016\u0010\u000f\u001a\u0012\u0012\u000e\u0012\f\u0012\u0004\u0012\u0002H\u000e\u0012\u0002\b\u00030\u00060\u0010\u001ab\u0010\u0011\u001a\u000e\u0012\u0004\u0012\u0002H\u000e\u0012\u0004\u0012\u0002H\u00030\u0006\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u000e\"\f\b\u0002\u0010\u0003*\u00060\u0004j\u0002`\u0005*\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u00062\u001e\u0010\u0012\u001a\u001a\u0012\u0004\u0012\u0002H\u0002\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\u000e\u0012\u0004\u0012\u0002H\u00030\u00060\bH\u0086\bø\u0001\u0000\u001ad\u0010\u0013\u001a\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00140\u0006\"\u0004\b\u0000\u0010\u0002\"\f\b\u0001\u0010\u0003*\u00060\u0004j\u0002`\u0005\"\f\b\u0002\u0010\u0014*\u00060\u0004j\u0002`\u0005*\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u00062\u001e\u0010\u0012\u001a\u001a\u0012\u0004\u0012\u0002H\u0003\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00140\u00060\b\u001a$\u0010\u0015\u001a\u0004\u0018\u0001H\u0016\"\u0006\b\u0000\u0010\u0016\u0018\u0001*\n\u0012\u0002\b\u0003\u0012\u0002\b\u00030\u0006H\u0086\b¢\u0006\u0002\u0010\u0017\u001aI\u0010\u0018\u001a\u0002H\u0002\"\u0004\b\u0000\u0010\u0002\"\f\b\u0001\u0010\u0003*\u00060\u0004j\u0002`\u0005*\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u00062\u0012\u0010\u0019\u001a\u000e\u0012\u0004\u0012\u0002H\u0003\u0012\u0004\u0012\u0002H\u00020\bH\u0086\fø\u0001\u0000¢\u0006\u0002\u0010\u001a\u001a1\u0010\u001b\u001a\u0004\u0018\u0001H\u0002\"\u0004\b\u0000\u0010\u0002\"\f\b\u0001\u0010\u0003*\u00060\u0004j\u0002`\u0005*\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u0006¢\u0006\u0002\u0010\u0017\u001aB\u0010\u001c\u001a\u0014\u0012\n\u0012\b\u0012\u0004\u0012\u0002H\u00020\u001d\u0012\u0004\u0012\u0002H\u00030\u0006\"\u0004\b\u0000\u0010\u0002\"\f\b\u0001\u0010\u0003*\u00060\u0004j\u0002`\u0005*\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u00060\u001d\u001aV\u0010\u001e\u001a\u000e\u0012\u0004\u0012\u0002H\u000e\u0012\u0004\u0012\u0002H\u00030\u0006\"\u0004\b\u0000\u0010\u0002\"\u0004\b\u0001\u0010\u000e\"\f\b\u0002\u0010\u0003*\u00060\u0004j\u0002`\u0005*\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u00062\u0012\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u000e0\bH\u0086\bø\u0001\u0000\u001aX\u0010\u001f\u001a\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00140\u0006\"\u0004\b\u0000\u0010\u0002\"\f\b\u0001\u0010\u0003*\u00060\u0004j\u0002`\u0005\"\f\b\u0002\u0010\u0014*\u00060\u0004j\u0002`\u0005*\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u00062\u0012\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u0002H\u0003\u0012\u0004\u0012\u0002H\u00140\b\u001aP\u0010 \u001a\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u0006\"\u0004\b\u0000\u0010\u0002\"\f\b\u0001\u0010\u0003*\u00060\u0004j\u0002`\u0005*\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u00062\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u0002H\u0003\u0012\u0004\u0012\u00020\n0\bH\u0086\bø\u0001\u0000\u001a@\u0010!\u001a\b\u0012\u0004\u0012\u0002H\u00020\"\"\u0004\b\u0000\u0010\u0002\"\f\b\u0001\u0010\u0003*\u00060\u0004j\u0002`\u0005*\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u0002H\u00030\u00062\u0006\u0010\u0019\u001a\u0002H\u0002H\u0086\u0004¢\u0006\u0002\u0010#\u001a.\u0010$\u001a\u00020\n\"\u0004\b\u0000\u0010\u0002*\f\u0012\u0004\u0012\u0002H\u0002\u0012\u0002\b\u00030\u00062\u0012\u0010\u000b\u001a\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u00020\n0\b\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006%"}, d2 = {Languages.ANY, "", ExifInterface.GPS_MEASUREMENT_INTERRUPTED, ExifInterface.LONGITUDE_EAST, "Ljava/lang/Exception;", "Lkotlin/Exception;", "Lcom/github/kittinunf/result/Result;", "predicate", "Lkotlin/Function1;", "failure", "", "f", "fanout", "Lkotlin/Pair;", "U", "other", "Lkotlin/Function0;", "flatMap", "transform", "flatMapError", "E2", "getAs", "X", "(Lcom/github/kittinunf/result/Result;)Ljava/lang/Object;", "getOrElse", "fallback", "(Lcom/github/kittinunf/result/Result;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;", "getOrNull", "lift", "", "map", "mapError", "onError", "or", "Lcom/github/kittinunf/result/Result$Success;", "(Lcom/github/kittinunf/result/Result;Ljava/lang/Object;)Lcom/github/kittinunf/result/Result$Success;", "success", "result"}, k = 2, mv = {1, 4, 0})
 public final class ResultKt {
     public static final /* synthetic */ <X> X getAs(Result<?, ?> getAs) {
@@ -61,7 +61,7 @@ public final class ResultKt {
         throw new NoWhenBranchMatchedException();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static final <V, U, E extends Exception> Result<U, E> map(Result<? extends V, ? extends E> map, Function1<? super V, ? extends U> transform) {
         Intrinsics.checkNotNullParameter(map, "$this$map");
         Intrinsics.checkNotNullParameter(transform, "transform");
@@ -78,7 +78,7 @@ public final class ResultKt {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static final <V, U, E extends Exception> Result<U, E> flatMap(Result<? extends V, ? extends E> flatMap, Function1<? super V, ? extends Result<? extends U, ? extends E>> transform) {
         Intrinsics.checkNotNullParameter(flatMap, "$this$flatMap");
         Intrinsics.checkNotNullParameter(transform, "transform");
@@ -119,7 +119,7 @@ public final class ResultKt {
         throw new NoWhenBranchMatchedException();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static final <V, E extends Exception> Result<V, E> onError(Result<? extends V, ? extends E> onError, Function1<? super E, Unit> f) {
         Intrinsics.checkNotNullParameter(onError, "$this$onError");
         Intrinsics.checkNotNullParameter(f, "f");
@@ -149,7 +149,7 @@ public final class ResultKt {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static final <V, E extends Exception> Result<List<V>, E> lift(List<? extends Result<? extends V, ? extends E>> lift) {
         Result.Failure failure;
         Intrinsics.checkNotNullParameter(lift, "$this$lift");

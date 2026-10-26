@@ -4,7 +4,7 @@ import androidx.constraintlayout.core.state.HelperReference;
 import androidx.constraintlayout.core.state.State;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ChainReference extends HelperReference {
     protected float mBias;
     private HashMap<String, Float> mMapPostGoneMargin;

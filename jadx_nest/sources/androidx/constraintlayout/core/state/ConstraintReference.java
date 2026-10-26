@@ -8,7 +8,7 @@ import androidx.constraintlayout.core.widgets.ConstraintWidget;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ConstraintReference implements Reference {
     private float mCircularAngle;
     private float mCircularDistance;
@@ -600,7 +600,7 @@ public class ConstraintReference implements Reference {
         return marginGone(this.mState.convertDimension(obj));
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.core.state.ConstraintReference$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.core.state.ConstraintReference$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$androidx$constraintlayout$core$state$State$Constraint;
 

@@ -91,7 +91,7 @@ import org.eclipse.jgit.util.SystemReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class GC {
     private static final int DEFAULT_AUTOLIMIT = 6700;
     private static final int DEFAULT_AUTOPACKLIMIT = 50;
@@ -140,17 +140,17 @@ public class GC {
         return CompletableFuture.supplyAsync(new GC$$ExternalSyntheticLambda11(this, gcLog), executor());
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-file-GC, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-file-GC, reason: not valid java name */
     /* synthetic */ Collection m5696lambda$0$orgeclipsejgitinternalstoragefileGC(GcLog gcLog) {
         try {
             try {
@@ -284,7 +284,7 @@ public class GC {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void prunePack(PackFile packFile) {
         try {
             removeOldPack(packFile.create(PackExt.PACK), 6);
@@ -648,15 +648,15 @@ public class GC {
         return hashSet;
     }
 
-    /* JADX WARN: Code duplicated, block: B:67:0x00e9 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:69:0x00ef  */
-    /* JADX WARN: Code duplicated, block: B:73:0x00f4  */
-    /* JADX WARN: Code duplicated, block: B:79:0x00eb A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:93:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r9v0, types: [java.util.Set, java.util.Set<? extends org.eclipse.jgit.lib.ObjectId>] */
-    /* JADX WARN: Type inference failed for: r9v1 */
-    /* JADX WARN: Type inference failed for: r9v2, types: [java.io.File] */
+    /* WARN: Code duplicated, block: B:67:0x00e9 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:69:0x00ef  */
+    /* WARN: Code duplicated, block: B:73:0x00f4  */
+    /* WARN: Code duplicated, block: B:79:0x00eb A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:93:? A[RETURN, SYNTHETIC] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r9v0, types: [java.util.Set, java.util.Set<? extends org.eclipse.jgit.lib.ObjectId>] */
+    /* WARN: Type inference failed for: r9v1 */
+    /* WARN: Type inference failed for: r9v2, types: [java.io.File] */
     void writeCommitGraph(Set<? extends ObjectId> set) throws IOException {
         Throwable th;
         if (!((CoreConfig) this.repo.getConfig().get(CoreConfig.KEY)).enableCommitGraph() || this.repo.getObjectDatabase().getShallowCommits().size() > 0) {
@@ -837,8 +837,8 @@ public class GC {
         return ref.getName().startsWith(Constants.R_TAGS);
     }
 
-    /* JADX WARN: Code duplicated, block: B:28:0x0071 A[Catch: all -> 0x0075, TRY_ENTER, TryCatch #1 {all -> 0x0075, blocks: (B:3:0x001d, B:8:0x0036, B:28:0x0071, B:29:0x0074, B:4:0x002a, B:5:0x002e, B:22:0x0068, B:24:0x006c), top: B:38:0x001d, inners: #3 }] */
-    /* JADX WARN: Code duplicated, block: B:51:? A[Catch: all -> 0x0075, SYNTHETIC, TRY_LEAVE, TryCatch #1 {all -> 0x0075, blocks: (B:3:0x001d, B:8:0x0036, B:28:0x0071, B:29:0x0074, B:4:0x002a, B:5:0x002e, B:22:0x0068, B:24:0x006c), top: B:38:0x001d, inners: #3 }] */
+    /* WARN: Code duplicated, block: B:28:0x0071 A[Catch: all -> 0x0075, TRY_ENTER, TryCatch #1 {all -> 0x0075, blocks: (B:3:0x001d, B:8:0x0036, B:28:0x0071, B:29:0x0074, B:4:0x002a, B:5:0x002e, B:22:0x0068, B:24:0x006c), top: B:38:0x001d, inners: #3 }] */
+    /* WARN: Code duplicated, block: B:51:? A[Catch: all -> 0x0075, SYNTHETIC, TRY_LEAVE, TryCatch #1 {all -> 0x0075, blocks: (B:3:0x001d, B:8:0x0036, B:28:0x0071, B:29:0x0074, B:4:0x002a, B:5:0x002e, B:22:0x0068, B:24:0x006c), top: B:38:0x001d, inners: #3 }] */
     private void deleteEmptyRefsFolders() throws Throwable {
         Path pathResolve = this.repo.getCommonDirectory().toPath().resolve(Constants.R_REFS);
         Instant instantMinus = Instant.now().minus(30L, (TemporalUnit) ChronoUnit.SECONDS);
@@ -899,8 +899,8 @@ public class GC {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: canBeSafelyDeleted, reason: merged with bridge method [inline-methods] */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: renamed from: canBeSafelyDeleted, reason: merged with bridge method [inline-methods] */
     public boolean m5697lambda$5$orgeclipsejgitinternalstoragefileGC(Path path, Instant instant) {
         try {
             return Files.getLastModifiedTime(path, new LinkOption[0]).toInstant().isBefore(instant);
@@ -910,7 +910,7 @@ public class GC {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void deleteDir(Path path) {
         Throwable th = null;
         try {
@@ -938,12 +938,12 @@ public class GC {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean isDirectory(Path path) {
         return path.toFile().isDirectory();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void delete(Path path) {
         try {
             Files.delete(path);
@@ -953,7 +953,7 @@ public class GC {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Optional<PackFile> toPackFileWithValidExt(Path path) {
         try {
             PackFile packFile = new PackFile(path.toFile());
@@ -1164,10 +1164,10 @@ public class GC {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r11v1 */
-    /* JADX WARN: Type inference failed for: r11v10 */
-    /* JADX WARN: Type inference failed for: r11v2, types: [java.io.File] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r11v1 */
+    /* WARN: Type inference failed for: r11v10 */
+    /* WARN: Type inference failed for: r11v2, types: [java.io.File] */
     private Pack writePack(Set<? extends ObjectId> set, Set<? extends ObjectId> set2, Set<ObjectId> set3, Set<ObjectId> set4, Set<ObjectId> set5, List<ObjectIdSet> list, boolean z) throws Throwable {
         Throwable th;
         ?? r11;
@@ -1755,7 +1755,7 @@ public class GC {
         return this.repo.getConfig().getInt(ConfigConstants.CONFIG_GC_SECTION, "auto", DEFAULT_AUTOLIMIT);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     class PidLock implements AutoCloseable {
         private static final String GC_PID = "gc.pid";
         private FileChannel channel;

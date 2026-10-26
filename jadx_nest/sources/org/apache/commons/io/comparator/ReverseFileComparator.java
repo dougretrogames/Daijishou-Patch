@@ -6,7 +6,7 @@ import java.util.Comparator;
 import java.util.Objects;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class ReverseFileComparator extends AbstractFileComparator implements Serializable {
     private static final long serialVersionUID = -4808255005272229056L;
     private final Comparator<File> delegate;

@@ -12,7 +12,7 @@ import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 import org.apache.http.util.LangUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class RouteSpecificPool {
     protected final ConnPerRoute connPerRoute;
@@ -34,7 +34,7 @@ public class RouteSpecificPool {
         this.numEntries = 0;
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.conn.tsccm.RouteSpecificPool$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.conn.tsccm.RouteSpecificPool$1, reason: invalid class name */
     class AnonymousClass1 implements ConnPerRoute {
         AnonymousClass1() {
         }

@@ -6,7 +6,7 @@ import android.view.MenuItem;
 import androidx.annotation.ReplaceWith;
 import androidx.core.internal.view.SupportMenu;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MenuCompat {
     @ReplaceWith(expression = "item.setShowAsAction(actionEnum)")
     @Deprecated

@@ -11,7 +11,7 @@ import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.function.IOIntConsumer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ThrottledInputStream extends CountingInputStream {
     private final double maxBytesPerSecond;
     private final long startTime;
@@ -54,19 +54,19 @@ public final class ThrottledInputStream extends CountingInputStream {
             return this.maxBytesPerSecond;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public Builder setMaxBytes(long j, ChronoUnit chronoUnit) {
             setMaxBytes(j, chronoUnit.getDuration());
             return (Builder) asThis();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         Builder setMaxBytes(long j, Duration duration) {
             setMaxBytesPerSecond((((Duration) Objects.requireNonNull(duration, TypedValues.TransitionType.S_DURATION)).toMillis() / 1000.0d) * j);
             return (Builder) asThis();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         private Builder setMaxBytesPerSecond(double d) {
             if (d <= 0.0d) {
                 throw new IllegalArgumentException("Bandwidth " + d + " must be > 0.");

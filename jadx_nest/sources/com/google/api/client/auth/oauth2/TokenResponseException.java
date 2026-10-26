@@ -11,7 +11,7 @@ import com.google.api.client.util.StringUtils;
 import com.google.api.client.util.Strings;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TokenResponseException extends HttpResponseException {
     private static final long serialVersionUID = 4020689092957439244L;
     private final transient TokenErrorResponse details;

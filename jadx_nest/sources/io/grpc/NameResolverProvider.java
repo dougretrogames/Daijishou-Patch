@@ -5,7 +5,7 @@ import java.net.SocketAddress;
 import java.util.Collection;
 import java.util.Collections;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class NameResolverProvider extends NameResolver.Factory {
     protected abstract boolean isAvailable();
 

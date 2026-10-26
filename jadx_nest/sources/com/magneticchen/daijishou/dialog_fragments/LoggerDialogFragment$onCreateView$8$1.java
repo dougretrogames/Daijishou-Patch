@@ -19,8 +19,8 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: LoggerDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: LoggerDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$8$1", f = "LoggerDialogFragment.kt", i = {}, l = {378, 379}, m = "invokeSuspendImpl", n = {}, s = {})
 final class LoggerDialogFragment$onCreateView$8$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -29,7 +29,7 @@ final class LoggerDialogFragment$onCreateView$8$1 extends com.magneticchen.daiji
     int label;
     final /* synthetic */ LoggerDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     LoggerDialogFragment$onCreateView$8$1(LoggerDialogFragment loggerDialogFragment, TextInputEditText textInputEditText, Lazy<DaijishouConsoleViewModel> lazy, Continuation<?> continuation) {
         super(2, continuation);
         this.this$0 = loggerDialogFragment;
@@ -81,15 +81,15 @@ final class LoggerDialogFragment$onCreateView$8$1 extends com.magneticchen.daiji
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$8$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: LoggerDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$8$1$1, reason: invalid class name */
+    /* INFO: compiled from: LoggerDialogFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.LoggerDialogFragment$onCreateView$8$1$1", f = "LoggerDialogFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
         int label;
         final /* synthetic */ LoggerDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(LoggerDialogFragment loggerDialogFragment, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = loggerDialogFragment;

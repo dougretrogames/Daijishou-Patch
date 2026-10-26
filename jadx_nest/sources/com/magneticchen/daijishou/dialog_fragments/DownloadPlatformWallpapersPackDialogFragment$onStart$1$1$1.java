@@ -27,8 +27,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.StringCompanionObject;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: DownloadPlatformWallpapersPackDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DownloadPlatformWallpapersPackDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.DownloadPlatformWallpapersPackDialogFragment$onStart$1$1$1", f = "DownloadPlatformWallpapersPackDialogFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
 final class DownloadPlatformWallpapersPackDialogFragment$onStart$1$1$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -38,7 +38,7 @@ final class DownloadPlatformWallpapersPackDialogFragment$onStart$1$1$1 extends c
     int label;
     final /* synthetic */ DownloadPlatformWallpapersPackDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     DownloadPlatformWallpapersPackDialogFragment$onStart$1$1$1(PlatformWallpapersPackIndexJson platformWallpapersPackIndexJson, DownloadPlatformWallpapersPackDialogFragment downloadPlatformWallpapersPackDialogFragment, Dialog dialog, String str, Continuation<?> continuation) {
         super(2, continuation);
         this.$it = platformWallpapersPackIndexJson;
@@ -141,7 +141,7 @@ final class DownloadPlatformWallpapersPackDialogFragment$onStart$1$1$1 extends c
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void invokeSuspendImpl$lambda$0(DownloadPlatformWallpapersPackDialogFragment downloadPlatformWallpapersPackDialogFragment, String str, View view) {
         AcknowledgementDialogFragment.Companion.newInstance$default(AcknowledgementDialogFragment.INSTANCE, downloadPlatformWallpapersPackDialogFragment.getString(R.string.are_you_sure), downloadPlatformWallpapersPackDialogFragment.getString(R.string.replace_wallpaper_warning), null, null, null, 28, null).setOnAcknowledgedListener(new DownloadPlatformWallpapersPackDialogFragment$onStart$1$1$1$1$1(downloadPlatformWallpapersPackDialogFragment, str)).setOnCanceledListener(DownloadPlatformWallpapersPackDialogFragment$onStart$1$1$1$1$2.INSTANCE).show(downloadPlatformWallpapersPackDialogFragment.getParentFragmentManager(), AcknowledgementDialogFragment.class.getName());
     }

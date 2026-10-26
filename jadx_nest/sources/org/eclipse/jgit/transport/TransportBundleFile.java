@@ -14,7 +14,7 @@ import org.eclipse.jgit.lib.BranchConfig;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.util.FS;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class TransportBundleFile extends Transport implements TransportBundle {
     static final TransportProtocol PROTO_BUNDLE = new AnonymousClass1();
     private final File bundle;
@@ -23,7 +23,7 @@ class TransportBundleFile extends Transport implements TransportBundle {
     public void close() {
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.TransportBundleFile$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.TransportBundleFile$1, reason: invalid class name */
     class AnonymousClass1 extends TransportProtocol {
         private final String[] schemeNames;
         private final Set<String> schemeSet;

@@ -4,12 +4,12 @@ import android.graphics.Shader;
 import android.os.Build;
 import kotlin.Metadata;
 
-/* JADX INFO: compiled from: AndroidTileMode.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AndroidTileMode.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0016\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\u001a\u0014\u0010\u0000\u001a\u00020\u0001*\u00020\u0002ø\u0001\u0000¢\u0006\u0004\b\u0003\u0010\u0004\u001a\u0014\u0010\u0005\u001a\u00020\u0006*\u00020\u0002ø\u0001\u0000¢\u0006\u0004\b\u0007\u0010\b\u001a\u000f\u0010\t\u001a\u00020\u0002*\u00020\u0006¢\u0006\u0002\u0010\n\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006\u000b"}, d2 = {"isSupported", "", "Landroidx/compose/ui/graphics/TileMode;", "isSupported-0vamqd0", "(I)Z", "toAndroidTileMode", "Landroid/graphics/Shader$TileMode;", "toAndroidTileMode-0vamqd0", "(I)Landroid/graphics/Shader$TileMode;", "toComposeTileMode", "(Landroid/graphics/Shader$TileMode;)I", "ui-graphics_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class AndroidTileMode_androidKt {
 
-    /* JADX INFO: compiled from: AndroidTileMode.android.kt */
+    /* INFO: compiled from: AndroidTileMode.android.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     public /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -32,12 +32,12 @@ public final class AndroidTileMode_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: isSupported-0vamqd0, reason: not valid java name */
+    /* INFO: renamed from: isSupported-0vamqd0, reason: not valid java name */
     public static final boolean m434isSupported0vamqd0(int i) {
         return Build.VERSION.SDK_INT >= 31 || !TileMode.m900equalsimpl0(i, TileMode.INSTANCE.m905getDecal3opZhB0());
     }
 
-    /* JADX INFO: renamed from: toAndroidTileMode-0vamqd0, reason: not valid java name */
+    /* INFO: renamed from: toAndroidTileMode-0vamqd0, reason: not valid java name */
     public static final Shader.TileMode m435toAndroidTileMode0vamqd0(int i) {
         if (TileMode.m900equalsimpl0(i, TileMode.INSTANCE.m904getClamp3opZhB0())) {
             return Shader.TileMode.CLAMP;

@@ -10,17 +10,17 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: FeatureSetDefaultsKt.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: FeatureSetDefaultsKt.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\bÆ\u0002\u0018\u00002\u00020\u0001:\u0002\u000b\fB\u0007\b\u0002¢\u0006\u0002\u0010\u0002J*\u0010\u0003\u001a\u00020\u00042\u0017\u0010\u0005\u001a\u0013\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u0006¢\u0006\u0002\b\tH\u0087\bø\u0001\u0000¢\u0006\u0002\b\n\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006\r"}, d2 = {"Lcom/google/protobuf/FeatureSetDefaultsKt;", "", "()V", "featureSetEditionDefault", "Lcom/google/protobuf/DescriptorProtos$FeatureSetDefaults$FeatureSetEditionDefault;", "block", "Lkotlin/Function1;", "Lcom/google/protobuf/FeatureSetDefaultsKt$FeatureSetEditionDefaultKt$Dsl;", "", "Lkotlin/ExtensionFunctionType;", "-initializefeatureSetEditionDefault", "Dsl", "FeatureSetEditionDefaultKt", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class FeatureSetDefaultsKt {
     public static final FeatureSetDefaultsKt INSTANCE = new FeatureSetDefaultsKt();
 
-    /* JADX INFO: compiled from: FeatureSetDefaultsKt.kt */
+    /* INFO: compiled from: FeatureSetDefaultsKt.kt */
     @Metadata(d1 = {"\u0000P\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010\u001c\n\u0002\b\b\n\u0002\u0010\b\n\u0002\b\u0004\b\u0007\u0018\u0000 ,2\u00020\u0001:\u0002,-B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0015\u001a\u00020\u0016H\u0001J\u0006\u0010\u0017\u001a\u00020\u0018J\u0006\u0010\u0019\u001a\u00020\u0018J\u0006\u0010\u001a\u001a\u00020\u001bJ\u0006\u0010\u001c\u001a\u00020\u001bJ%\u0010\u001d\u001a\u00020\u0018*\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00062\u0006\u0010\u000b\u001a\u00020\u0007H\u0007¢\u0006\u0002\b\u001eJ+\u0010\u001f\u001a\u00020\u0018*\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00062\f\u0010 \u001a\b\u0012\u0004\u0012\u00020\u00070!H\u0007¢\u0006\u0002\b\"J\u001d\u0010#\u001a\u00020\u0018*\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u0006H\u0007¢\u0006\u0002\b$J&\u0010%\u001a\u00020\u0018*\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00062\u0006\u0010\u000b\u001a\u00020\u0007H\u0087\n¢\u0006\u0002\b&J,\u0010%\u001a\u00020\u0018*\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00062\f\u0010 \u001a\b\u0012\u0004\u0012\u00020\u00070!H\u0087\n¢\u0006\u0002\b'J.\u0010(\u001a\u00020\u0018*\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00062\u0006\u0010)\u001a\u00020*2\u0006\u0010\u000b\u001a\u00020\u0007H\u0087\u0002¢\u0006\u0002\b+R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u001d\u0010\u0005\u001a\u000e\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\b0\u00068F¢\u0006\u0006\u001a\u0004\b\t\u0010\nR$\u0010\r\u001a\u00020\f2\u0006\u0010\u000b\u001a\u00020\f8G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R$\u0010\u0012\u001a\u00020\f2\u0006\u0010\u000b\u001a\u00020\f8G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u0013\u0010\u000f\"\u0004\b\u0014\u0010\u0011¨\u0006."}, d2 = {"Lcom/google/protobuf/FeatureSetDefaultsKt$Dsl;", "", "_builder", "Lcom/google/protobuf/DescriptorProtos$FeatureSetDefaults$Builder;", "(Lcom/google/protobuf/DescriptorProtos$FeatureSetDefaults$Builder;)V", "defaults", "Lcom/google/protobuf/kotlin/DslList;", "Lcom/google/protobuf/DescriptorProtos$FeatureSetDefaults$FeatureSetEditionDefault;", "Lcom/google/protobuf/FeatureSetDefaultsKt$Dsl$DefaultsProxy;", "getDefaults", "()Lcom/google/protobuf/kotlin/DslList;", "value", "Lcom/google/protobuf/DescriptorProtos$Edition;", "maximumEdition", "getMaximumEdition", "()Lcom/google/protobuf/DescriptorProtos$Edition;", "setMaximumEdition", "(Lcom/google/protobuf/DescriptorProtos$Edition;)V", "minimumEdition", "getMinimumEdition", "setMinimumEdition", "_build", "Lcom/google/protobuf/DescriptorProtos$FeatureSetDefaults;", "clearMaximumEdition", "", "clearMinimumEdition", "hasMaximumEdition", "", "hasMinimumEdition", "add", "addDefaults", "addAll", "values", "", "addAllDefaults", "clear", "clearDefaults", "plusAssign", "plusAssignDefaults", "plusAssignAllDefaults", "set", ConfigConstants.CONFIG_INDEX_SECTION, "", "setDefaults", "Companion", "DefaultsProxy", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class Dsl {
 
-        /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+        /* INFO: renamed from: Companion, reason: from kotlin metadata */
         public static final Companion INSTANCE = new Companion(null);
         private final DescriptorProtos.FeatureSetDefaults.Builder _builder;
 
@@ -32,7 +32,7 @@ public final class FeatureSetDefaultsKt {
             this._builder = builder;
         }
 
-        /* JADX INFO: compiled from: FeatureSetDefaultsKt.kt */
+        /* INFO: compiled from: FeatureSetDefaultsKt.kt */
         @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0001¨\u0006\u0007"}, d2 = {"Lcom/google/protobuf/FeatureSetDefaultsKt$Dsl$Companion;", "", "()V", "_create", "Lcom/google/protobuf/FeatureSetDefaultsKt$Dsl;", "builder", "Lcom/google/protobuf/DescriptorProtos$FeatureSetDefaults$Builder;", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
         public static final class Companion {
             public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -54,7 +54,7 @@ public final class FeatureSetDefaultsKt {
             return featureSetDefaultsBuild;
         }
 
-        /* JADX INFO: compiled from: FeatureSetDefaultsKt.kt */
+        /* INFO: compiled from: FeatureSetDefaultsKt.kt */
         @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0003"}, d2 = {"Lcom/google/protobuf/FeatureSetDefaultsKt$Dsl$DefaultsProxy;", "Lcom/google/protobuf/kotlin/DslProxy;", "()V", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
         public static final class DefaultsProxy extends DslProxy {
             private DefaultsProxy() {
@@ -144,7 +144,7 @@ public final class FeatureSetDefaultsKt {
     private FeatureSetDefaultsKt() {
     }
 
-    /* JADX INFO: renamed from: -initializefeatureSetEditionDefault, reason: not valid java name */
+    /* INFO: renamed from: -initializefeatureSetEditionDefault, reason: not valid java name */
     public final DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault m3400initializefeatureSetEditionDefault(Function1<? super FeatureSetEditionDefaultKt.Dsl, Unit> block) {
         Intrinsics.checkNotNullParameter(block, "block");
         FeatureSetEditionDefaultKt.Dsl.Companion companion = FeatureSetEditionDefaultKt.Dsl.INSTANCE;
@@ -155,16 +155,16 @@ public final class FeatureSetDefaultsKt {
         return dsl_create._build();
     }
 
-    /* JADX INFO: compiled from: FeatureSetDefaultsKt.kt */
+    /* INFO: compiled from: FeatureSetDefaultsKt.kt */
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\bÆ\u0002\u0018\u00002\u00020\u0001:\u0001\u0003B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0004"}, d2 = {"Lcom/google/protobuf/FeatureSetDefaultsKt$FeatureSetEditionDefaultKt;", "", "()V", "Dsl", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
     public static final class FeatureSetEditionDefaultKt {
         public static final FeatureSetEditionDefaultKt INSTANCE = new FeatureSetEditionDefaultKt();
 
-        /* JADX INFO: compiled from: FeatureSetDefaultsKt.kt */
+        /* INFO: compiled from: FeatureSetDefaultsKt.kt */
         @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0004\b\u0007\u0018\u0000 $2\u00020\u0001:\u0001$B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u001a\u001a\u00020\u001bH\u0001J\u0006\u0010\u001c\u001a\u00020\u001dJ\u0006\u0010\u001e\u001a\u00020\u001dJ\u0006\u0010\u001f\u001a\u00020\u001dJ\u0006\u0010 \u001a\u00020!J\u0006\u0010\"\u001a\u00020!J\u0006\u0010#\u001a\u00020!R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R$\u0010\u0007\u001a\u00020\u00062\u0006\u0010\u0005\u001a\u00020\u00068G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\b\u0010\t\"\u0004\b\n\u0010\u000bR$\u0010\r\u001a\u00020\f2\u0006\u0010\u0005\u001a\u00020\f8G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u000e\u0010\u000f\"\u0004\b\u0010\u0010\u0011R$\u0010\u0012\u001a\u00020\f2\u0006\u0010\u0005\u001a\u00020\f8G@GX\u0086\u000e¢\u0006\f\u001a\u0004\b\u0013\u0010\u000f\"\u0004\b\u0014\u0010\u0011R\u0017\u0010\u0015\u001a\u0004\u0018\u00010\f*\u00020\u00008F¢\u0006\u0006\u001a\u0004\b\u0016\u0010\u0017R\u0017\u0010\u0018\u001a\u0004\u0018\u00010\f*\u00020\u00008F¢\u0006\u0006\u001a\u0004\b\u0019\u0010\u0017¨\u0006%"}, d2 = {"Lcom/google/protobuf/FeatureSetDefaultsKt$FeatureSetEditionDefaultKt$Dsl;", "", "_builder", "Lcom/google/protobuf/DescriptorProtos$FeatureSetDefaults$FeatureSetEditionDefault$Builder;", "(Lcom/google/protobuf/DescriptorProtos$FeatureSetDefaults$FeatureSetEditionDefault$Builder;)V", "value", "Lcom/google/protobuf/DescriptorProtos$Edition;", "edition", "getEdition", "()Lcom/google/protobuf/DescriptorProtos$Edition;", "setEdition", "(Lcom/google/protobuf/DescriptorProtos$Edition;)V", "Lcom/google/protobuf/DescriptorProtos$FeatureSet;", "fixedFeatures", "getFixedFeatures", "()Lcom/google/protobuf/DescriptorProtos$FeatureSet;", "setFixedFeatures", "(Lcom/google/protobuf/DescriptorProtos$FeatureSet;)V", "overridableFeatures", "getOverridableFeatures", "setOverridableFeatures", "fixedFeaturesOrNull", "getFixedFeaturesOrNull", "(Lcom/google/protobuf/FeatureSetDefaultsKt$FeatureSetEditionDefaultKt$Dsl;)Lcom/google/protobuf/DescriptorProtos$FeatureSet;", "overridableFeaturesOrNull", "getOverridableFeaturesOrNull", "_build", "Lcom/google/protobuf/DescriptorProtos$FeatureSetDefaults$FeatureSetEditionDefault;", "clearEdition", "", "clearFixedFeatures", "clearOverridableFeatures", "hasEdition", "", "hasFixedFeatures", "hasOverridableFeatures", "Companion", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
         public static final class Dsl {
 
-            /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+            /* INFO: renamed from: Companion, reason: from kotlin metadata */
             public static final Companion INSTANCE = new Companion(null);
             private final DescriptorProtos.FeatureSetDefaults.FeatureSetEditionDefault.Builder _builder;
 
@@ -176,7 +176,7 @@ public final class FeatureSetDefaultsKt {
                 this._builder = builder;
             }
 
-            /* JADX INFO: compiled from: FeatureSetDefaultsKt.kt */
+            /* INFO: compiled from: FeatureSetDefaultsKt.kt */
             @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u0006H\u0001¨\u0006\u0007"}, d2 = {"Lcom/google/protobuf/FeatureSetDefaultsKt$FeatureSetEditionDefaultKt$Dsl$Companion;", "", "()V", "_create", "Lcom/google/protobuf/FeatureSetDefaultsKt$FeatureSetEditionDefaultKt$Dsl;", "builder", "Lcom/google/protobuf/DescriptorProtos$FeatureSetDefaults$FeatureSetEditionDefault$Builder;", "java_kotlin-well_known_protos_kotlin"}, k = 1, mv = {1, 8, 0}, xi = 48)
             public static final class Companion {
                 public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {

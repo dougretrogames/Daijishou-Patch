@@ -13,7 +13,7 @@ import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.revwalk.RevTree;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class BaseSearch {
     private static final int M_BLOB = FileMode.REGULAR_FILE.getBits();
     private static final int M_TREE = FileMode.TREE.getBits();

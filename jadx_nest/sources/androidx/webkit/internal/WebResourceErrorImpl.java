@@ -7,7 +7,7 @@ import java.lang.reflect.Proxy;
 import org.chromium.support_lib_boundary.WebResourceErrorBoundaryInterface;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebResourceErrorImpl extends WebResourceErrorCompat {
     private WebResourceErrorBoundaryInterface mBoundaryInterface;
     private WebResourceError mFrameworksImpl;

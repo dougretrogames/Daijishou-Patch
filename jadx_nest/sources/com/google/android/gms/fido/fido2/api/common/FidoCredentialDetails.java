@@ -8,8 +8,8 @@ import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelableSerializer;
 import java.util.Arrays;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class FidoCredentialDetails extends AbstractSafeParcelable {
     public static final Parcelable.Creator<FidoCredentialDetails> CREATOR = new zzy();
     private final String zza;

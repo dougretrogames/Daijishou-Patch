@@ -4,7 +4,7 @@ import java.lang.reflect.InvocationTargetException;
 import org.apache.commons.collections4.FunctorException;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class InstantiateTransformer<T> implements Transformer<Class<? extends T>, T> {
     private static final Transformer NO_ARG_INSTANCE = new InstantiateTransformer();
     private final Object[] iArgs;

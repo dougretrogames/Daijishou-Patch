@@ -31,8 +31,8 @@ import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.TypeIntrinsics;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: Wrapper.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: Wrapper.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0002\u0018\u00002\u00020\u00012\u00020\u00022\u00020\u0003B\u0015\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0001¢\u0006\u0002\u0010\u0007J\b\u0010\u0019\u001a\u00020\u0012H\u0016J#\u0010\u001a\u001a\u0004\u0018\u0001H\u001b\"\u0004\b\u0000\u0010\u001b2\f\u0010\u001c\u001a\b\u0012\u0004\u0012\u0002H\u001b0\u001dH\u0016¢\u0006\u0002\u0010\u001eJ\u0018\u0010\u001f\u001a\u00020\u00122\u0006\u0010 \u001a\u00020!2\u0006\u0010\"\u001a\u00020#H\u0016J \u0010$\u001a\u00020\u00122\u0011\u0010%\u001a\r\u0012\u0004\u0012\u00020\u00120\u0011¢\u0006\u0002\b\u0013H\u0016¢\u0006\u0002\u0010&R\u0010\u0010\b\u001a\u0004\u0018\u00010\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\f\u001a\u00020\u000b8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\r\u0010\u000eR\u0014\u0010\u000f\u001a\u00020\u000b8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u000eR\u001b\u0010\u0010\u001a\r\u0012\u0004\u0012\u00020\u00120\u0011¢\u0006\u0002\b\u0013X\u0082\u000e¢\u0006\u0004\n\u0002\u0010\u0014R\u0011\u0010\u0006\u001a\u00020\u0001¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\u0016R\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018¨\u0006'"}, d2 = {"Landroidx/compose/ui/platform/WrappedComposition;", "Landroidx/compose/runtime/Composition;", "Landroidx/lifecycle/LifecycleEventObserver;", "Landroidx/compose/runtime/CompositionServices;", "owner", "Landroidx/compose/ui/platform/AndroidComposeView;", "original", "(Landroidx/compose/ui/platform/AndroidComposeView;Landroidx/compose/runtime/Composition;)V", "addedToLifecycle", "Landroidx/lifecycle/Lifecycle;", "disposed", "", "hasInvalidations", "getHasInvalidations", "()Z", "isDisposed", "lastContent", "Lkotlin/Function0;", "", "Landroidx/compose/runtime/Composable;", "Lkotlin/jvm/functions/Function2;", "getOriginal", "()Landroidx/compose/runtime/Composition;", "getOwner", "()Landroidx/compose/ui/platform/AndroidComposeView;", "dispose", "getCompositionService", ExifInterface.GPS_DIRECTION_TRUE, "key", "Landroidx/compose/runtime/CompositionServiceKey;", "(Landroidx/compose/runtime/CompositionServiceKey;)Ljava/lang/Object;", "onStateChanged", "source", "Landroidx/lifecycle/LifecycleOwner;", NotificationCompat.CATEGORY_EVENT, "Landroidx/lifecycle/Lifecycle$Event;", "setContent", "content", "(Lkotlin/jvm/functions/Function2;)V", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 final class WrappedComposition implements Composition, LifecycleEventObserver, CompositionServices {
     private Lifecycle addedToLifecycle;
@@ -54,14 +54,14 @@ final class WrappedComposition implements Composition, LifecycleEventObserver, C
         return this.original;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.platform.WrappedComposition$setContent$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Wrapper.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.platform.WrappedComposition$setContent$1, reason: invalid class name */
+    /* INFO: compiled from: Wrapper.android.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Landroidx/compose/ui/platform/AndroidComposeView$ViewTreeOwners;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<AndroidComposeView.ViewTreeOwners, Unit> {
         final /* synthetic */ Function2<Composer, Integer, Unit> $content;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(Function2<? super Composer, ? super Integer, Unit> function2) {
             super(1);
             this.$content = function2;
@@ -73,7 +73,7 @@ final class WrappedComposition implements Composition, LifecycleEventObserver, C
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(AndroidComposeView.ViewTreeOwners viewTreeOwners) {
             if (WrappedComposition.this.disposed) {
                 return;
@@ -88,15 +88,15 @@ final class WrappedComposition implements Composition, LifecycleEventObserver, C
             }
         }
 
-        /* JADX INFO: renamed from: androidx.compose.ui.platform.WrappedComposition$setContent$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: Wrapper.android.kt */
+        /* INFO: renamed from: androidx.compose.ui.platform.WrappedComposition$setContent$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: Wrapper.android.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\u000b¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "(Landroidx/compose/runtime/Composer;I)V"}, k = 3, mv = {1, 8, 0}, xi = 48)
         static final class C00041 extends Lambda implements Function2<Composer, Integer, Unit> {
             final /* synthetic */ Function2<Composer, Integer, Unit> $content;
             final /* synthetic */ WrappedComposition this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             C00041(WrappedComposition wrappedComposition, Function2<? super Composer, ? super Integer, Unit> function2) {
                 super(2);
                 this.this$0 = wrappedComposition;
@@ -138,15 +138,15 @@ final class WrappedComposition implements Composition, LifecycleEventObserver, C
                 composer.skipToGroupEnd();
             }
 
-            /* JADX INFO: renamed from: androidx.compose.ui.platform.WrappedComposition$setContent$1$1$1, reason: invalid class name and collision with other inner class name */
-            /* JADX INFO: compiled from: Wrapper.android.kt */
+            /* INFO: renamed from: androidx.compose.ui.platform.WrappedComposition$setContent$1$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: compiled from: Wrapper.android.kt */
             @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
             @DebugMetadata(c = "androidx.compose.ui.platform.WrappedComposition$setContent$1$1$1", f = "Wrapper.android.kt", i = {}, l = {136}, m = "invokeSuspend", n = {}, s = {})
             static final class C00051 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
                 int label;
                 final /* synthetic */ WrappedComposition this$0;
 
-                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+                /* WARN: 'super' call moved to the top of the method (can break code semantics) */
                 C00051(WrappedComposition wrappedComposition, Continuation<? super C00051> continuation) {
                     super(2, continuation);
                     this.this$0 = wrappedComposition;
@@ -182,15 +182,15 @@ final class WrappedComposition implements Composition, LifecycleEventObserver, C
                 }
             }
 
-            /* JADX INFO: renamed from: androidx.compose.ui.platform.WrappedComposition$setContent$1$1$2, reason: invalid class name */
-            /* JADX INFO: compiled from: Wrapper.android.kt */
+            /* INFO: renamed from: androidx.compose.ui.platform.WrappedComposition$setContent$1$1$2, reason: invalid class name */
+            /* INFO: compiled from: Wrapper.android.kt */
             @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\u000b¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "(Landroidx/compose/runtime/Composer;I)V"}, k = 3, mv = {1, 8, 0}, xi = 48)
             static final class AnonymousClass2 extends Lambda implements Function2<Composer, Integer, Unit> {
                 final /* synthetic */ Function2<Composer, Integer, Unit> $content;
                 final /* synthetic */ WrappedComposition this$0;
 
-                /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-                /* JADX WARN: Multi-variable type inference failed */
+                /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+                /* WARN: Multi-variable type inference failed */
                 AnonymousClass2(WrappedComposition wrappedComposition, Function2<? super Composer, ? super Integer, Unit> function2) {
                     super(2);
                     this.this$0 = wrappedComposition;
@@ -245,7 +245,7 @@ final class WrappedComposition implements Composition, LifecycleEventObserver, C
     }
 
     @Override // androidx.compose.runtime.Composition
-    /* JADX INFO: renamed from: isDisposed */
+    /* INFO: renamed from: isDisposed */
     public boolean getDisposed() {
         return this.original.getDisposed();
     }

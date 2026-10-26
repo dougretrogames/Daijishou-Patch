@@ -10,7 +10,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.MapIterator;
 import org.apache.commons.collections4.keyvalue.MultiKey;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MultiKeyMap<K, V> extends AbstractMapDecorator<MultiKey<? extends K>, V> implements Serializable, Cloneable {
     private static final long serialVersionUID = -1788199231038721040L;
 
@@ -113,7 +113,7 @@ public class MultiKeyMap<K, V> extends AbstractMapDecorator<MultiKey<? extends K
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.map.AbstractMapDecorator
     public AbstractHashedMap<MultiKey<? extends K>, V> decorated() {
         return (AbstractHashedMap) super.decorated();
@@ -377,14 +377,14 @@ public class MultiKeyMap<K, V> extends AbstractMapDecorator<MultiKey<? extends K
         return null;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.apache.commons.collections4.map.AbstractMapDecorator, java.util.Map, org.apache.commons.collections4.Put
     public V put(MultiKey<? extends K> multiKey, V v) {
         checkKey(multiKey);
         return (V) super.put(multiKey, v);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.apache.commons.collections4.map.AbstractMapDecorator, java.util.Map, org.apache.commons.collections4.Put
     public void putAll(Map<? extends MultiKey<? extends K>, ? extends V> map) {
         Iterator it = map.keySet().iterator();

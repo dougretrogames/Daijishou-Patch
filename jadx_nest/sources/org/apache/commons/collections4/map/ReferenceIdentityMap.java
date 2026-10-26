@@ -6,7 +6,7 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.lang.ref.Reference;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReferenceIdentityMap<K, V> extends AbstractReferenceMap<K, V> implements Serializable {
     private static final long serialVersionUID = -1266190134568365852L;
 

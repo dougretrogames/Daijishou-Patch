@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface SshConfigStore {
     public static final HostConfig EMPTY_CONFIG = new AnonymousClass1();
 
@@ -22,7 +22,7 @@ public interface SshConfigStore {
 
     HostConfig lookupDefault(String str, int i, String str2);
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.SshConfigStore$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.SshConfigStore$1, reason: invalid class name */
     class AnonymousClass1 implements HostConfig {
         @Override // org.eclipse.jgit.transport.SshConfigStore.HostConfig
         public String getValue(String str) {

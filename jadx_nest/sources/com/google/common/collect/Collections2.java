@@ -18,7 +18,7 @@ import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.io.FileUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Collections2 {
     private Collections2() {
@@ -305,7 +305,7 @@ public final class Collections2 {
             this.comparator = comparator;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.AbstractIterator
         @CheckForNull
         public List<E> computeNext() {
@@ -409,7 +409,7 @@ public final class Collections2 {
             this.j = Integer.MAX_VALUE;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.collect.AbstractIterator
         @CheckForNull
         public List<E> computeNext() {
@@ -457,7 +457,7 @@ public final class Collections2 {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean isPermutation(List<?> first, List<?> second) {
         if (first.size() != second.size()) {
             return false;

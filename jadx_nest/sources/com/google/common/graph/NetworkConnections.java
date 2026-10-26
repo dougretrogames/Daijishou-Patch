@@ -3,7 +3,7 @@ package com.google.common.graph;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 interface NetworkConnections<N, E> {
     void addInEdge(E edge, N node, boolean isSelfLoop);

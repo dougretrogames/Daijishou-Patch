@@ -16,11 +16,11 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class AbstractNetwork<N, E> implements Network<N, E> {
 
-    /* JADX INFO: renamed from: com.google.common.graph.AbstractNetwork$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.AbstractNetwork$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractGraph<N> {
         AnonymousClass1() {
         }
@@ -38,7 +38,7 @@ public abstract class AbstractNetwork<N, E> implements Network<N, E> {
             return new C00471();
         }
 
-        /* JADX INFO: renamed from: com.google.common.graph.AbstractNetwork$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.google.common.graph.AbstractNetwork$1$1, reason: invalid class name and collision with other inner class name */
         class C00471 extends AbstractSet<EndpointPair<N>> {
             C00471() {
             }
@@ -48,7 +48,7 @@ public abstract class AbstractNetwork<N, E> implements Network<N, E> {
                 return Iterators.transform(AbstractNetwork.this.edges().iterator(), new AbstractNetwork$1$1$$ExternalSyntheticLambda0(this));
             }
 
-            /* JADX INFO: renamed from: lambda$iterator$0$com-google-common-graph-AbstractNetwork$1$1, reason: not valid java name */
+            /* INFO: renamed from: lambda$iterator$0$com-google-common-graph-AbstractNetwork$1$1, reason: not valid java name */
             /* synthetic */ EndpointPair m3361lambda$iterator$0$comgooglecommongraphAbstractNetwork$1$1(Object obj) {
                 return AbstractNetwork.this.incidentNodes(obj);
             }
@@ -58,7 +58,7 @@ public abstract class AbstractNetwork<N, E> implements Network<N, E> {
                 return AbstractNetwork.this.edges().size();
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // java.util.AbstractCollection, java.util.Collection, java.util.Set
             public boolean contains(@CheckForNull Object obj) {
                 if (!(obj instanceof EndpointPair)) {
@@ -153,7 +153,7 @@ public abstract class AbstractNetwork<N, E> implements Network<N, E> {
         return edgesConnecting(endpoints.nodeU(), endpoints.nodeV());
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.AbstractNetwork$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.AbstractNetwork$2, reason: invalid class name */
     class AnonymousClass2 implements Predicate<E> {
         final /* synthetic */ Object val$nodePresent;
         final /* synthetic */ Object val$nodeToCheck;
@@ -163,7 +163,7 @@ public abstract class AbstractNetwork<N, E> implements Network<N, E> {
             this.val$nodeToCheck = val$nodeToCheck;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.common.base.Predicate
         public boolean apply(E e) {
             return AbstractNetwork.this.incidentNodes(e).adjacentNode(this.val$nodePresent).equals(this.val$nodeToCheck);
@@ -245,7 +245,7 @@ public abstract class AbstractNetwork<N, E> implements Network<N, E> {
         return InvalidatableSet.of((Set) set, (Supplier<Boolean>) new AbstractNetwork$$ExternalSyntheticLambda4(this, edge), (Supplier<String>) new AbstractNetwork$$ExternalSyntheticLambda5(edge));
     }
 
-    /* JADX INFO: renamed from: lambda$edgeInvalidatableSet$0$com-google-common-graph-AbstractNetwork, reason: not valid java name */
+    /* INFO: renamed from: lambda$edgeInvalidatableSet$0$com-google-common-graph-AbstractNetwork, reason: not valid java name */
     /* synthetic */ Boolean m3358xa0c212f3(Object obj) {
         return Boolean.valueOf(edges().contains(obj));
     }
@@ -254,7 +254,7 @@ public abstract class AbstractNetwork<N, E> implements Network<N, E> {
         return InvalidatableSet.of((Set) set, (Supplier<Boolean>) new AbstractNetwork$$ExternalSyntheticLambda0(this, node), (Supplier<String>) new AbstractNetwork$$ExternalSyntheticLambda1(node));
     }
 
-    /* JADX INFO: renamed from: lambda$nodeInvalidatableSet$2$com-google-common-graph-AbstractNetwork, reason: not valid java name */
+    /* INFO: renamed from: lambda$nodeInvalidatableSet$2$com-google-common-graph-AbstractNetwork, reason: not valid java name */
     /* synthetic */ Boolean m3359xe136d8fa(Object obj) {
         return Boolean.valueOf(nodes().contains(obj));
     }
@@ -263,7 +263,7 @@ public abstract class AbstractNetwork<N, E> implements Network<N, E> {
         return InvalidatableSet.of((Set) set, (Supplier<Boolean>) new AbstractNetwork$$ExternalSyntheticLambda2(this, nodeU, nodeV), (Supplier<String>) new AbstractNetwork$$ExternalSyntheticLambda3(nodeU, nodeV));
     }
 
-    /* JADX INFO: renamed from: lambda$nodePairInvalidatableSet$4$com-google-common-graph-AbstractNetwork, reason: not valid java name */
+    /* INFO: renamed from: lambda$nodePairInvalidatableSet$4$com-google-common-graph-AbstractNetwork, reason: not valid java name */
     /* synthetic */ Boolean m3360xa62961f6(Object obj, Object obj2) {
         return Boolean.valueOf(nodes().contains(obj) && nodes().contains(obj2));
     }

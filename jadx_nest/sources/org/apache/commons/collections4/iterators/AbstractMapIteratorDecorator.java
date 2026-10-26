@@ -3,7 +3,7 @@ package org.apache.commons.collections4.iterators;
 import java.util.Objects;
 import org.apache.commons.collections4.MapIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AbstractMapIteratorDecorator<K, V> implements MapIterator<K, V> {
     private final MapIterator<K, V> iterator;
 

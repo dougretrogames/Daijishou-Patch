@@ -7,7 +7,7 @@ import java.util.concurrent.RunnableFuture;
 import javax.annotation.CheckForNull;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 class TrustedListenableFutureTask<V> extends FluentFuture.TrustedFuture<V> implements RunnableFuture<V> {
 
@@ -109,13 +109,13 @@ class TrustedListenableFutureTask<V> extends FluentFuture.TrustedFuture<V> imple
             return TrustedListenableFutureTask.this.isDone();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.util.concurrent.InterruptibleTask
         public ListenableFuture<V> runInterruptibly() throws Exception {
             return (ListenableFuture) Preconditions.checkNotNull(this.callable.call(), "AsyncCallable.call returned null instead of a Future. Did you mean to return immediateFuture(null)? %s", this.callable);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.util.concurrent.InterruptibleTask
         public void afterRanInterruptiblySuccess(ListenableFuture<V> result) {
             TrustedListenableFutureTask.this.setFuture(result);

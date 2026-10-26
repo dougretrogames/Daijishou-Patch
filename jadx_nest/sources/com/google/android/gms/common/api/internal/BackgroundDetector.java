@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class BackgroundDetector implements Application.ActivityLifecycleCallbacks, ComponentCallbacks2 {
     private static final BackgroundDetector zza = new BackgroundDetector();
     private final AtomicBoolean zzb = new AtomicBoolean();
@@ -20,7 +20,7 @@ public final class BackgroundDetector implements Application.ActivityLifecycleCa
     private final ArrayList zzd = new ArrayList();
     private boolean zze = false;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
     public interface BackgroundStateChangeListener {
         void onBackgroundStateChanged(boolean z);
     }

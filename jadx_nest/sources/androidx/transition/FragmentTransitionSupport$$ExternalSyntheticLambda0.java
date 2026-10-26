@@ -2,8 +2,8 @@ package androidx.transition;
 
 import androidx.core.os.CancellationSignal;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class FragmentTransitionSupport$$ExternalSyntheticLambda0 implements CancellationSignal.OnCancelListener {
     public final /* synthetic */ Runnable f$0;
     public final /* synthetic */ Transition f$1;

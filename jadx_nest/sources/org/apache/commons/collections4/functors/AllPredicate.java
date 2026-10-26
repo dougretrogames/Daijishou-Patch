@@ -3,7 +3,7 @@ package org.apache.commons.collections4.functors;
 import java.util.Collection;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class AllPredicate<T> extends AbstractQuantifierPredicate<T> {
     private static final long serialVersionUID = -3094696765038308799L;
 

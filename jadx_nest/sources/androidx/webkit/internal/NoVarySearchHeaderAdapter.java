@@ -4,7 +4,7 @@ import androidx.webkit.NoVarySearchHeader;
 import java.util.List;
 import org.chromium.support_lib_boundary.NoVarySearchDataBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class NoVarySearchHeaderAdapter implements NoVarySearchDataBoundaryInterface {
     private final NoVarySearchHeader mImpl;
 

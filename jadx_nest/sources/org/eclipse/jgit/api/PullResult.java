@@ -2,7 +2,7 @@ package org.eclipse.jgit.api;
 
 import org.eclipse.jgit.transport.FetchResult;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PullResult {
     private final FetchResult fetchResult;
     private final String fetchedFrom;

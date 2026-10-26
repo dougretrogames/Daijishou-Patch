@@ -5,7 +5,7 @@ import java.io.Serializable;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ProtocolVersion implements Serializable, Cloneable {
     private static final long serialVersionUID = 8950662842175091068L;
     protected final int major;

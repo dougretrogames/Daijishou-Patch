@@ -11,7 +11,7 @@ import com.skydoves.balloon.R;
 import com.skydoves.balloon.radius.RadiusLayout;
 import com.skydoves.balloon.vectortext.VectorTextView;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class BalloonLayoutBodyBinding implements ViewBinding {
     public final FrameLayout balloon;
     public final ImageView balloonArrow;

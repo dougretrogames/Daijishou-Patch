@@ -14,8 +14,8 @@ import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
 import kotlinx.coroutines.flow.FlowKt;
 
-/* JADX INFO: compiled from: WindowInfoTrackerImpl.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: WindowInfoTrackerImpl.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(d1 = {"\u0000*\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u0000 \f2\u00020\u0001:\u0001\fB\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0016\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\b2\u0006\u0010\n\u001a\u00020\u000bH\u0016R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\r"}, d2 = {"Landroidx/window/layout/WindowInfoTrackerImpl;", "Landroidx/window/layout/WindowInfoTracker;", "windowMetricsCalculator", "Landroidx/window/layout/WindowMetricsCalculator;", "windowBackend", "Landroidx/window/layout/WindowBackend;", "(Landroidx/window/layout/WindowMetricsCalculator;Landroidx/window/layout/WindowBackend;)V", "windowLayoutInfo", "Lkotlinx/coroutines/flow/Flow;", "Landroidx/window/layout/WindowLayoutInfo;", "activity", "Landroid/app/Activity;", "Companion", "window_release"}, k = 1, mv = {1, 6, 0}, xi = 48)
 public final class WindowInfoTrackerImpl implements WindowInfoTracker {
     private static final int BUFFER_CAPACITY = 10;
@@ -29,8 +29,8 @@ public final class WindowInfoTrackerImpl implements WindowInfoTracker {
         this.windowBackend = windowBackend;
     }
 
-    /* JADX INFO: renamed from: androidx.window.layout.WindowInfoTrackerImpl$windowLayoutInfo$1, reason: invalid class name */
-    /* JADX INFO: compiled from: WindowInfoTrackerImpl.kt */
+    /* INFO: renamed from: androidx.window.layout.WindowInfoTrackerImpl$windowLayoutInfo$1, reason: invalid class name */
+    /* INFO: compiled from: WindowInfoTrackerImpl.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\b\u0012\u0004\u0012\u00020\u00030\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/flow/FlowCollector;", "Landroidx/window/layout/WindowLayoutInfo;"}, k = 3, mv = {1, 6, 0}, xi = 48)
     @DebugMetadata(c = "androidx.window.layout.WindowInfoTrackerImpl$windowLayoutInfo$1", f = "WindowInfoTrackerImpl.kt", i = {0, 0, 1, 1}, l = {54, 55}, m = "invokeSuspend", n = {"$this$flow", ServiceSpecificExtraArgs.CastExtraArgs.LISTENER, "$this$flow", ServiceSpecificExtraArgs.CastExtraArgs.LISTENER}, s = {"L$0", "L$1", "L$0", "L$1"})
     static final class AnonymousClass1 extends SuspendLambda implements Function2<FlowCollector<? super WindowLayoutInfo>, Continuation<? super Unit>, Object> {
@@ -40,7 +40,7 @@ public final class WindowInfoTrackerImpl implements WindowInfoTracker {
         Object L$2;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Activity activity, Continuation<? super AnonymousClass1> continuation) {
             super(2, continuation);
             this.$activity = activity;
@@ -58,15 +58,15 @@ public final class WindowInfoTrackerImpl implements WindowInfoTracker {
             return ((AnonymousClass1) create(flowCollector, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Code duplicated, block: B:18:0x0072  */
-        /* JADX WARN: Code duplicated, block: B:19:0x0073  */
-        /* JADX WARN: Code duplicated, block: B:22:0x007e A[Catch: all -> 0x00a2, TRY_LEAVE, TryCatch #0 {all -> 0x00a2, blocks: (B:7:0x001a, B:16:0x0061, B:20:0x0076, B:22:0x007e, B:12:0x0033, B:15:0x005d), top: B:30:0x0008 }] */
-        /* JADX WARN: Code duplicated, block: B:25:0x0096  */
-        /* JADX WARN: Code restructure failed: missing block: B:23:0x0093, code lost:
+        /* WARN: Code duplicated, block: B:18:0x0072  */
+        /* WARN: Code duplicated, block: B:19:0x0073  */
+        /* WARN: Code duplicated, block: B:22:0x007e A[Catch: all -> 0x00a2, TRY_LEAVE, TryCatch #0 {all -> 0x00a2, blocks: (B:7:0x001a, B:16:0x0061, B:20:0x0076, B:22:0x007e, B:12:0x0033, B:15:0x005d), top: B:30:0x0008 }] */
+        /* WARN: Code duplicated, block: B:25:0x0096  */
+        /* WARN: Code restructure failed: missing block: B:23:0x0093, code lost:
         
             if (r5.emit((androidx.window.layout.WindowLayoutInfo) r1.next(), r9) == r0) goto L24;
          */
-        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:23:0x0093 -> B:8:0x001d). Please report as a decompilation issue!!! */
+        /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:23:0x0093 -> B:8:0x001d). Please report as a decompilation issue!!! */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         /*
             Code decompiled incorrectly, please refer to instructions dump.
@@ -170,8 +170,8 @@ public final class WindowInfoTrackerImpl implements WindowInfoTracker {
             throw new UnsupportedOperationException("Method not decompiled: androidx.window.layout.WindowInfoTrackerImpl.AnonymousClass1.invokeSuspend(java.lang.Object):java.lang.Object");
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
-        /* JADX INFO: renamed from: invokeSuspend$lambda-0, reason: not valid java name */
+        /* INFO: Access modifiers changed from: private */
+        /* INFO: renamed from: invokeSuspend$lambda-0, reason: not valid java name */
         public static final void m3250invokeSuspend$lambda0(Channel channel, WindowLayoutInfo info) {
             Intrinsics.checkNotNullExpressionValue(info, "info");
             channel.mo5255trySendJP2dKIU(info);

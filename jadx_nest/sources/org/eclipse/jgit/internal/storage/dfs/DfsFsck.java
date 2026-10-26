@@ -21,7 +21,7 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.revwalk.ObjectWalk;
 import org.eclipse.jgit.revwalk.RevObject;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsFsck {
     private boolean connectivityOnly;
     private ObjectChecker objChecker = new ObjectChecker();
@@ -46,8 +46,8 @@ public class DfsFsck {
         return fsckError;
     }
 
-    /* JADX WARN: Code duplicated, block: B:33:0x0058 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:66:0x005a A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:33:0x0058 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:66:0x005a A[EXC_TOP_SPLITTER, SYNTHETIC] */
     private void checkPacks(ProgressMonitor progressMonitor, FsckError fsckError) throws IOException {
         ProgressMonitor progressMonitor2;
         FsckError fsckError2;

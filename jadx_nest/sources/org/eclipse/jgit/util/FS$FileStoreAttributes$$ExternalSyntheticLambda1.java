@@ -2,8 +2,8 @@ package org.eclipse.jgit.util;
 
 import java.nio.file.FileStore;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class FS$FileStoreAttributes$$ExternalSyntheticLambda1 implements Runnable {
     public final /* synthetic */ FileStore f$0;
     public final /* synthetic */ FS.FileStoreAttributes f$1;

@@ -32,7 +32,7 @@ import org.eclipse.jgit.treewalk.filter.PathFilter;
 import org.eclipse.jgit.treewalk.filter.TreeFilter;
 import org.eclipse.jgit.util.FS;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SubmoduleWalk implements AutoCloseable {
     private RepositoryBuilderFactory factory;
     private Config modulesConfig;
@@ -49,7 +49,7 @@ public class SubmoduleWalk implements AutoCloseable {
         UNTRACKED,
         NONE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static IgnoreSubmoduleMode[] valuesCustom() {
             IgnoreSubmoduleMode[] ignoreSubmoduleModeArrValuesCustom = values();
             int length = ignoreSubmoduleModeArrValuesCustom.length;

@@ -3,7 +3,7 @@ package com.google.android.material.carousel;
 import androidx.core.math.MathUtils;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class Arrangement {
     private static final float MEDIUM_ITEM_FLEX_PERCENTAGE = 0.1f;
     final float cost;

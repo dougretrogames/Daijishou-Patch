@@ -14,7 +14,7 @@ import com.google.android.material.internal.ViewUtils;
 import com.google.android.material.navigation.NavigationBarMenuView;
 import com.google.android.material.navigation.NavigationBarView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BottomNavigationView extends NavigationBarView {
     private static final int MAX_ITEM_COUNT = 5;
 
@@ -66,7 +66,7 @@ public class BottomNavigationView extends NavigationBarView {
         ViewUtils.doOnApplyWindowInsets(this, new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomnavigation.BottomNavigationView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomnavigation.BottomNavigationView$1, reason: invalid class name */
     class AnonymousClass1 implements ViewUtils.OnApplyWindowInsetsListener {
         AnonymousClass1() {
         }

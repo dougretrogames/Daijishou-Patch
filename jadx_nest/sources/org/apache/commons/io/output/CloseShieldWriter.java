@@ -2,7 +2,7 @@ package org.apache.commons.io.output;
 
 import java.io.Writer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CloseShieldWriter extends ProxyWriter {
     public static CloseShieldWriter wrap(Writer writer) {
         return new CloseShieldWriter(writer);

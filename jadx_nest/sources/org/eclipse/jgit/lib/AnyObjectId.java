@@ -8,7 +8,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.util.NB;
 import org.eclipse.jgit.util.References;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AnyObjectId implements Comparable<AnyObjectId> {
     private static final byte[] hexbyte = {48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 97, 98, 99, 100, 101, 102};
     private static final char[] hexchar = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'};

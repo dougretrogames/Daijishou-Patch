@@ -28,7 +28,7 @@ import org.apache.commons.collections4.keyvalue.UnmodifiableMapEntry;
 import org.apache.commons.collections4.multiset.AbstractMultiSet;
 import org.apache.commons.collections4.multiset.UnmodifiableMultiSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractMultiValuedMap<K, V> implements MultiValuedMap<K, V> {
     private transient AbstractMultiValuedMap<K, V>.AsMap asMapView;
     private transient AbstractMultiValuedMap<K, V>.EntryValues entryValuesView;
@@ -81,7 +81,7 @@ public abstract class AbstractMultiValuedMap<K, V> implements MultiValuedMap<K, 
                 super(it);
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // org.apache.commons.collections4.iterators.AbstractIteratorDecorator, java.util.Iterator
             public Map.Entry<K, Collection<V>> next() {
                 Object key = ((Map.Entry) super.next()).getKey();
@@ -154,7 +154,7 @@ public abstract class AbstractMultiValuedMap<K, V> implements MultiValuedMap<K, 
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     final class EntryValues extends AbstractCollection<Map.Entry<K, V>> {
         private EntryValues() {
         }
@@ -163,7 +163,7 @@ public abstract class AbstractMultiValuedMap<K, V> implements MultiValuedMap<K, 
             this();
         }
 
-        /* JADX INFO: renamed from: org.apache.commons.collections4.multimap.AbstractMultiValuedMap$EntryValues$1, reason: invalid class name */
+        /* INFO: renamed from: org.apache.commons.collections4.multimap.AbstractMultiValuedMap$EntryValues$1, reason: invalid class name */
         class AnonymousClass1 extends LazyIteratorChain<Map.Entry<K, V>> {
             final Iterator<K> keyIterator;
             final Collection<K> keysCol;
@@ -183,7 +183,7 @@ public abstract class AbstractMultiValuedMap<K, V> implements MultiValuedMap<K, 
                 return new TransformIterator(new ValuesIterator(next), new AbstractMultiValuedMap$EntryValues$1$$ExternalSyntheticLambda0(this, next));
             }
 
-            /* JADX INFO: renamed from: lambda$nextIterator$0$org-apache-commons-collections4-multimap-AbstractMultiValuedMap$EntryValues$1, reason: not valid java name */
+            /* INFO: renamed from: lambda$nextIterator$0$org-apache-commons-collections4-multimap-AbstractMultiValuedMap$EntryValues$1, reason: not valid java name */
             /* synthetic */ Map.Entry m5544x8ddfe9cc(Object obj, Object obj2) {
                 return new MultiValuedMapEntry(obj, obj2);
             }
@@ -216,7 +216,7 @@ public abstract class AbstractMultiValuedMap<K, V> implements MultiValuedMap<K, 
                 this();
             }
 
-            /* JADX INFO: renamed from: org.apache.commons.collections4.multimap.AbstractMultiValuedMap$KeysMultiSet$MapEntryTransformer$1, reason: invalid class name */
+            /* INFO: renamed from: org.apache.commons.collections4.multimap.AbstractMultiValuedMap$KeysMultiSet$MapEntryTransformer$1, reason: invalid class name */
             class AnonymousClass1 extends AbstractMultiSet.AbstractEntry<K> {
                 final /* synthetic */ MapEntryTransformer this$2;
                 final /* synthetic */ Map.Entry val$mapEntry;
@@ -582,7 +582,7 @@ public abstract class AbstractMultiValuedMap<K, V> implements MultiValuedMap<K, 
         return values().contains(obj);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     protected void doReadObject(ObjectInputStream objectInputStream) throws IOException, ClassNotFoundException {
         int i = objectInputStream.readInt();
         for (int i2 = 0; i2 < i; i2++) {
@@ -729,7 +729,7 @@ public abstract class AbstractMultiValuedMap<K, V> implements MultiValuedMap<K, 
         return zRemove;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     protected void setMap(Map<K, ? extends Collection<V>> map) {
         this.map = map;
     }

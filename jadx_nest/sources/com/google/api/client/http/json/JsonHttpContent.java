@@ -9,7 +9,7 @@ import com.google.api.client.util.Preconditions;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class JsonHttpContent extends AbstractHttpContent {
     private final Object data;
     private final JsonFactory jsonFactory;

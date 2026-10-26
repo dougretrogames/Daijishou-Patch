@@ -6,8 +6,8 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.Preconditions;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelable;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public class DataBufferSafeParcelable<T extends SafeParcelable> extends AbstractDataBuffer<T> {
     private static final String[] zaa = {"data"};
     private final Parcelable.Creator zab;

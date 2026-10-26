@@ -4,7 +4,7 @@ import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.eclipse.jgit.lib.CoreConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class WorkingTreeOptions {
     public static final Config.SectionParser<WorkingTreeOptions> KEY = new WorkingTreeOptions$$ExternalSyntheticLambda0();
     private final CoreConfig.AutoCRLF autoCRLF;

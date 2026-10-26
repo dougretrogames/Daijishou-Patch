@@ -93,7 +93,7 @@ import kotlin.time.DurationKt;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.xmlpull.v1.XmlPullParser;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Callback, LayoutInflater.Factory2 {
     static final String EXCEPTION_HANDLER_MESSAGE_SUFFIX = ". If the resource you are trying to use is a vector resource, you may be referencing it in an unsupported way. See AppCompatDelegate.setCompatVectorFromResourcesEnabled() for more info.";
     private static boolean sInstalledExceptionHandler;
@@ -167,7 +167,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
     void onSubDecorInstalled(ViewGroup viewGroup) {
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$1, reason: invalid class name */
     class AnonymousClass1 implements Thread.UncaughtExceptionHandler {
         final /* synthetic */ Thread.UncaughtExceptionHandler val$defHandler;
 
@@ -193,7 +193,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -251,7 +251,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         AppCompatDrawableManager.preload();
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x002c  */
+    /* WARN: Code duplicated, block: B:13:0x002c  */
     @Override // androidx.appcompat.app.AppCompatDelegate
     public void setOnBackInvokedDispatcher(OnBackInvokedDispatcher onBackInvokedDispatcher) {
         OnBackInvokedCallback onBackInvokedCallback;
@@ -511,7 +511,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         this.mAppCompatWindowCallback.bypassOnContentChanged(this.mWindow.getCallback());
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x0045  */
+    /* WARN: Code duplicated, block: B:15:0x0045  */
     @Override // androidx.appcompat.app.AppCompatDelegate
     public void onDestroy() {
         if (this.mHost instanceof Activity) {
@@ -704,7 +704,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         return viewGroup;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$3, reason: invalid class name */
     class AnonymousClass3 implements OnApplyWindowInsetsListener {
         AnonymousClass3() {
         }
@@ -720,7 +720,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$4, reason: invalid class name */
     class AnonymousClass4 implements FitWindowsViewGroup.OnFitSystemWindowsListener {
         AnonymousClass4() {
         }
@@ -731,7 +731,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$5, reason: invalid class name */
     class AnonymousClass5 implements ContentFrameLayout.OnAttachListener {
         @Override // androidx.appcompat.widget.ContentFrameLayout.OnAttachListener
         public void onAttachedFromWindow() {
@@ -1024,7 +1024,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         return this.mActionMode;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$6, reason: invalid class name */
     class AnonymousClass6 implements Runnable {
         AnonymousClass6() {
         }
@@ -1044,7 +1044,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
             AppCompatDelegateImpl.this.mActionModeView.setVisibility(0);
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$6$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$6$1, reason: invalid class name */
         class AnonymousClass1 extends ViewPropertyAnimatorListenerAdapter {
             AnonymousClass1() {
             }
@@ -1063,7 +1063,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$7, reason: invalid class name */
     class AnonymousClass7 extends ViewPropertyAnimatorListenerAdapter {
         AnonymousClass7() {
         }
@@ -1193,7 +1193,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         return false;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // androidx.appcompat.app.AppCompatDelegate
     public View createView(View view, String str, Context context, AttributeSet attributeSet) {
         boolean z;
@@ -1285,8 +1285,8 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         return null;
     }
 
-    /* JADX WARN: Code duplicated, block: B:65:0x00f5  */
-    /* JADX WARN: Code duplicated, block: B:71:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:65:0x00f5  */
+    /* WARN: Code duplicated, block: B:71:? A[RETURN, SYNTHETIC] */
     private void openPanel(PanelFeatureState panelFeatureState, KeyEvent keyEvent) {
         int i;
         ViewGroup.LayoutParams layoutParams;
@@ -1564,7 +1564,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         return preparePanel(panelState, keyEvent);
     }
 
-    /* JADX WARN: Code duplicated, block: B:34:0x0062  */
+    /* WARN: Code duplicated, block: B:34:0x0062  */
     private boolean onKeyUpPanel(int i, KeyEvent keyEvent) {
         boolean zPreparePanel;
         DecorContentParent decorContentParent;
@@ -1986,7 +1986,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         return configuration2;
     }
 
-    /* JADX WARN: Code duplicated, block: B:36:0x008c  */
+    /* WARN: Code duplicated, block: B:36:0x008c  */
     private boolean updateAppConfiguration(int i, LocaleListCompat localeListCompat, boolean z) {
         boolean z2;
         Configuration configurationCreateOverrideAppConfiguration = createOverrideAppConfiguration(this.mContext, i, localeListCompat, null, false);
@@ -2061,7 +2061,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void updateActivityConfiguration(Configuration configuration) {
         Activity activity = (Activity) this.mHost;
         if (activity instanceof LifecycleOwner) {
@@ -2157,7 +2157,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
             AppCompatDelegateImpl.this.updateBackInvokedCallbackState();
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$ActionModeCallbackWrapperV9$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$ActionModeCallbackWrapperV9$1, reason: invalid class name */
         class AnonymousClass1 extends ViewPropertyAnimatorListenerAdapter {
             AnonymousClass1() {
             }
@@ -2390,12 +2390,12 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
                 return savedState;
             }
 
-            /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$PanelFeatureState$SavedState$1, reason: invalid class name */
+            /* INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$PanelFeatureState$SavedState$1, reason: invalid class name */
             class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
                 AnonymousClass1() {
                 }
 
-                /* JADX WARN: Can't rename method to resolve collision */
+                /* WARN: Can't rename method to resolve collision */
                 @Override // android.os.Parcelable.ClassLoaderCreator
                 public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                     return SavedState.readFromParcel(parcel, classLoader);
@@ -2613,7 +2613,7 @@ class AppCompatDelegateImpl extends AppCompatDelegate implements MenuBuilder.Cal
             AppCompatDelegateImpl.this.mContext.registerReceiver(this.mReceiver, intentFilterCreateIntentFilterForBroadcastReceiver);
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.app.AppCompatDelegateImpl$AutoNightModeManager$1, reason: invalid class name */
         class AnonymousClass1 extends BroadcastReceiver {
             AnonymousClass1() {
             }

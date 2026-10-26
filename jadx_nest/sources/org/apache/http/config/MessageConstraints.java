@@ -3,7 +3,7 @@ package org.apache.http.config;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MessageConstraints implements Cloneable {
     public static final MessageConstraints DEFAULT = new Builder().build();
     private final int maxHeaderCount;
@@ -22,7 +22,7 @@ public class MessageConstraints implements Cloneable {
         return this.maxHeaderCount;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public MessageConstraints clone() throws CloneNotSupportedException {
         return (MessageConstraints) super.clone();
     }

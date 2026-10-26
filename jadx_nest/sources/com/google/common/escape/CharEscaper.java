@@ -3,7 +3,7 @@ package com.google.common.escape;
 import com.google.common.base.Preconditions;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class CharEscaper extends Escaper {
     private static final int DEST_PAD_MULTIPLIER = 2;

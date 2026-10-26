@@ -7,8 +7,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.FunctionAdapter;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 final class PlayableItemDetailDialogFragment$sam$androidx_lifecycle_Observer$0 implements Observer, FunctionAdapter {
     private final /* synthetic */ Function1 function;

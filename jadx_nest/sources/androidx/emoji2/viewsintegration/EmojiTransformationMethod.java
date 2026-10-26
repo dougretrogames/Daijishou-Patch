@@ -5,7 +5,7 @@ import android.text.method.TransformationMethod;
 import android.view.View;
 import androidx.emoji2.text.EmojiCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class EmojiTransformationMethod implements TransformationMethod {
     private final TransformationMethod mTransformationMethod;
 

@@ -7,7 +7,7 @@ import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.ObjectInserter;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class MergeStrategy {
     public static final MergeStrategy OURS;
     public static final ThreeWayMergeStrategy RECURSIVE;

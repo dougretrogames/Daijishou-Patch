@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.Map;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class Chain extends Helper {
     protected static final Map<Style, String> styleMap;
     private Style mStyle;

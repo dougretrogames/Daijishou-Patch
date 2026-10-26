@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import java.util.concurrent.Executor;
 import org.chromium.support_lib_boundary.TracingControllerBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TracingControllerImpl extends TracingController {
     private TracingControllerBoundaryInterface mBoundaryInterface;
     private android.webkit.TracingController mFrameworksImpl;

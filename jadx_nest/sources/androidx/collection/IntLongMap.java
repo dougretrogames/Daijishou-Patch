@@ -12,8 +12,8 @@ import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.codec.language.bm.Languages;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: IntLongMap.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: IntLongMap.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000h\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0007\n\u0002\u0010\u0015\n\u0002\b\u0002\n\u0002\u0010\u0016\n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\b\u000b\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\r\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001B\u0007\b\u0004¢\u0006\u0002\u0010\u0002J&\u0010\u0015\u001a\u00020\u00162\u0018\u0010\u0017\u001a\u0014\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u0019\u0012\u0004\u0012\u00020\u00160\u0018H\u0086\bø\u0001\u0000J\u0006\u0010\u001a\u001a\u00020\u0016J&\u0010\u001a\u001a\u00020\u00162\u0018\u0010\u0017\u001a\u0014\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u0019\u0012\u0004\u0012\u00020\u00160\u0018H\u0086\bø\u0001\u0000J\u0011\u0010\u001b\u001a\u00020\u00162\u0006\u0010\u001c\u001a\u00020\u0004H\u0086\u0002J\u000e\u0010\u001d\u001a\u00020\u00162\u0006\u0010\u001c\u001a\u00020\u0004J\u000e\u0010\u001e\u001a\u00020\u00162\u0006\u0010\u001f\u001a\u00020\u0019J\u0006\u0010 \u001a\u00020\u0004J&\u0010 \u001a\u00020\u00042\u0018\u0010\u0017\u001a\u0014\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u0019\u0012\u0004\u0012\u00020\u00160\u0018H\u0086\bø\u0001\u0000J\u0013\u0010!\u001a\u00020\u00162\b\u0010\"\u001a\u0004\u0018\u00010\u0001H\u0096\u0002J\u0010\u0010#\u001a\u00020\u00042\u0006\u0010\u001c\u001a\u00020\u0004H\u0001JD\u0010$\u001a\u00020%26\u0010&\u001a2\u0012\u0013\u0012\u00110\u0004¢\u0006\f\b'\u0012\b\b(\u0012\u0004\b\b(\u001c\u0012\u0013\u0012\u00110\u0019¢\u0006\f\b'\u0012\b\b(\u0012\u0004\b\b(\u001f\u0012\u0004\u0012\u00020%0\u0018H\u0086\bø\u0001\u0000J/\u0010)\u001a\u00020%2!\u0010&\u001a\u001d\u0012\u0013\u0012\u00110\u0004¢\u0006\f\b'\u0012\b\b(\u0012\u0004\b\b(+\u0012\u0004\u0012\u00020%0*H\u0081\bø\u0001\u0000J/\u0010,\u001a\u00020%2!\u0010&\u001a\u001d\u0012\u0013\u0012\u00110\u0004¢\u0006\f\b'\u0012\b\b(\u0012\u0004\b\b(\u001c\u0012\u0004\u0012\u00020%0*H\u0086\bø\u0001\u0000J/\u0010-\u001a\u00020%2!\u0010&\u001a\u001d\u0012\u0013\u0012\u00110\u0019¢\u0006\f\b'\u0012\b\b(\u0012\u0004\b\b(\u001f\u0012\u0004\u0012\u00020%0*H\u0086\bø\u0001\u0000J\u0011\u0010.\u001a\u00020\u00192\u0006\u0010\u001c\u001a\u00020\u0004H\u0086\u0002J\u0016\u0010/\u001a\u00020\u00192\u0006\u0010\u001c\u001a\u00020\u00042\u0006\u00100\u001a\u00020\u0019J\"\u00101\u001a\u00020\u00192\u0006\u0010\u001c\u001a\u00020\u00042\f\u00100\u001a\b\u0012\u0004\u0012\u00020\u001902H\u0086\bø\u0001\u0000J\b\u00103\u001a\u00020\u0004H\u0016J\u0006\u00104\u001a\u00020\u0016J\u0006\u00105\u001a\u00020\u0016J:\u00106\u001a\u0002072\b\b\u0002\u00108\u001a\u0002092\b\b\u0002\u0010:\u001a\u0002092\b\b\u0002\u0010;\u001a\u0002092\b\b\u0002\u0010<\u001a\u00020\u00042\b\b\u0002\u0010=\u001a\u000209H\u0007Jx\u00106\u001a\u0002072\b\b\u0002\u00108\u001a\u0002092\b\b\u0002\u0010:\u001a\u0002092\b\b\u0002\u0010;\u001a\u0002092\b\b\u0002\u0010<\u001a\u00020\u00042\b\b\u0002\u0010=\u001a\u00020928\b\u0004\u0010>\u001a2\u0012\u0013\u0012\u00110\u0004¢\u0006\f\b'\u0012\b\b(\u0012\u0004\b\b(\u001c\u0012\u0013\u0012\u00110\u0019¢\u0006\f\b'\u0012\b\b(\u0012\u0004\b\b(\u001f\u0012\u0004\u0012\u0002090\u0018H\u0087\bø\u0001\u0000J\u0006\u0010?\u001a\u00020\u0016J\b\u0010@\u001a\u000207H\u0016R\u0018\u0010\u0003\u001a\u00020\u00048\u0000@\u0000X\u0081\u000e¢\u0006\b\n\u0000\u0012\u0004\b\u0005\u0010\u0002R\u0018\u0010\u0006\u001a\u00020\u00048\u0000@\u0000X\u0081\u000e¢\u0006\b\n\u0000\u0012\u0004\b\u0007\u0010\u0002R\u0011\u0010\b\u001a\u00020\u00048F¢\u0006\u0006\u001a\u0004\b\t\u0010\nR\u0018\u0010\u000b\u001a\u00020\f8\u0000@\u0000X\u0081\u000e¢\u0006\b\n\u0000\u0012\u0004\b\r\u0010\u0002R\u0018\u0010\u000e\u001a\u00020\u000f8\u0000@\u0000X\u0081\u000e¢\u0006\b\n\u0000\u0012\u0004\b\u0010\u0010\u0002R\u0011\u0010\u0011\u001a\u00020\u00048F¢\u0006\u0006\u001a\u0004\b\u0012\u0010\nR\u0018\u0010\u0013\u001a\u00020\u000f8\u0000@\u0000X\u0081\u000e¢\u0006\b\n\u0000\u0012\u0004\b\u0014\u0010\u0002\u0082\u0001\u0001A\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006B"}, d2 = {"Landroidx/collection/IntLongMap;", "", "()V", "_capacity", "", "get_capacity$collection$annotations", "_size", "get_size$collection$annotations", "capacity", "getCapacity", "()I", "keys", "", "getKeys$annotations", "metadata", "", "getMetadata$annotations", "size", "getSize", "values", "getValues$annotations", "all", "", "predicate", "Lkotlin/Function2;", "", Languages.ANY, "contains", "key", "containsKey", "containsValue", "value", "count", "equals", "other", "findKeyIndex", "forEach", "", "block", "Lkotlin/ParameterName;", "name", "forEachIndexed", "Lkotlin/Function1;", ConfigConstants.CONFIG_INDEX_SECTION, "forEachKey", "forEachValue", "get", "getOrDefault", "defaultValue", "getOrElse", "Lkotlin/Function0;", "hashCode", "isEmpty", "isNotEmpty", "joinToString", "", "separator", "", "prefix", "postfix", "limit", "truncated", "transform", "none", "toString", "Landroidx/collection/MutableIntLongMap;", "collection"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public abstract class IntLongMap {
     public int _capacity;
@@ -76,12 +76,12 @@ public abstract class IntLongMap {
         this.values = LongSetKt.getEmptyLongArray();
     }
 
-    /* JADX INFO: renamed from: getCapacity, reason: from getter */
+    /* INFO: renamed from: getCapacity, reason: from getter */
     public final int get_capacity() {
         return this._capacity;
     }
 
-    /* JADX INFO: renamed from: getSize, reason: from getter */
+    /* INFO: renamed from: getSize, reason: from getter */
     public final int get_size() {
         return this._size;
     }
@@ -414,10 +414,10 @@ public abstract class IntLongMap {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:20:0x009b A[DONT_INVERT, PHI: r12
+    /* WARN: Code duplicated, block: B:20:0x009b A[DONT_INVERT, PHI: r12
   0x009b: PHI (r12v2 int) = (r12v1 int), (r12v3 int) binds: [B:6:0x004c, B:19:0x0099] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:21:0x009d A[LOOP:0: B:5:0x003a->B:21:0x009d, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:27:0x00a4 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:21:0x009d A[LOOP:0: B:5:0x003a->B:21:0x009d, LOOP_END] */
+    /* WARN: Code duplicated, block: B:27:0x00a4 A[SYNTHETIC] */
     public final String joinToString(CharSequence separator, CharSequence prefix, CharSequence postfix, int limit, CharSequence truncated, Function2<? super Integer, ? super Long, ? extends CharSequence> transform) {
         CharSequence separator2 = separator;
         Intrinsics.checkNotNullParameter(separator2, "separator");
@@ -484,9 +484,9 @@ public abstract class IntLongMap {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x0062 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:26:0x0064 A[LOOP:0: B:14:0x0027->B:26:0x0064, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:30:0x0067 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:25:0x0062 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:26:0x0064 A[LOOP:0: B:14:0x0027->B:26:0x0064, LOOP_END] */
+    /* WARN: Code duplicated, block: B:30:0x0067 A[SYNTHETIC] */
     public boolean equals(Object other) {
         if (other == this) {
             return true;
@@ -622,9 +622,9 @@ public abstract class IntLongMap {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x005e A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:18:0x0060 A[LOOP:0: B:5:0x0016->B:18:0x0060, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:21:0x0063 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:17:0x005e A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:18:0x0060 A[LOOP:0: B:5:0x0016->B:18:0x0060, LOOP_END] */
+    /* WARN: Code duplicated, block: B:21:0x0063 A[SYNTHETIC] */
     public final boolean any(Function2<? super Integer, ? super Long, Boolean> predicate) {
         Intrinsics.checkNotNullParameter(predicate, "predicate");
         int[] iArr = this.keys;
@@ -694,9 +694,9 @@ public abstract class IntLongMap {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x0041 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:18:0x0043 A[LOOP:0: B:5:0x000b->B:18:0x0043, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:21:0x0046 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:17:0x0041 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:18:0x0043 A[LOOP:0: B:5:0x000b->B:18:0x0043, LOOP_END] */
+    /* WARN: Code duplicated, block: B:21:0x0046 A[SYNTHETIC] */
     public final boolean containsValue(long value) {
         long[] jArr = this.values;
         long[] jArr2 = this.metadata;
@@ -785,10 +785,10 @@ public abstract class IntLongMap {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:20:0x0098 A[DONT_INVERT, PHI: r12
+    /* WARN: Code duplicated, block: B:20:0x0098 A[DONT_INVERT, PHI: r12
   0x0098: PHI (r12v2 int) = (r12v1 int), (r12v3 int) binds: [B:6:0x0049, B:19:0x0096] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:21:0x009a A[LOOP:0: B:5:0x0037->B:21:0x009a, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:27:0x00a1 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:21:0x009a A[LOOP:0: B:5:0x0037->B:21:0x009a, LOOP_END] */
+    /* WARN: Code duplicated, block: B:27:0x00a1 A[SYNTHETIC] */
     public final String joinToString(CharSequence charSequence, CharSequence prefix, CharSequence postfix, int i, Function2<? super Integer, ? super Long, ? extends CharSequence> transform) {
         CharSequence separator = charSequence;
         Intrinsics.checkNotNullParameter(separator, "separator");
@@ -854,10 +854,10 @@ public abstract class IntLongMap {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:20:0x0097 A[DONT_INVERT, PHI: r12
+    /* WARN: Code duplicated, block: B:20:0x0097 A[DONT_INVERT, PHI: r12
   0x0097: PHI (r12v2 int) = (r12v1 int), (r12v3 int) binds: [B:6:0x0049, B:19:0x0095] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:21:0x0099 A[LOOP:0: B:5:0x0037->B:21:0x0099, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:27:0x00a0 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:21:0x0099 A[LOOP:0: B:5:0x0037->B:21:0x0099, LOOP_END] */
+    /* WARN: Code duplicated, block: B:27:0x00a0 A[SYNTHETIC] */
     public final String joinToString(CharSequence charSequence, CharSequence prefix, CharSequence postfix, Function2<? super Integer, ? super Long, ? extends CharSequence> transform) {
         CharSequence separator = charSequence;
         Intrinsics.checkNotNullParameter(separator, "separator");
@@ -923,10 +923,10 @@ public abstract class IntLongMap {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:20:0x0094 A[DONT_INVERT, PHI: r12
+    /* WARN: Code duplicated, block: B:20:0x0094 A[DONT_INVERT, PHI: r12
   0x0094: PHI (r12v2 int) = (r12v1 int), (r12v3 int) binds: [B:6:0x0046, B:19:0x0092] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:21:0x0096 A[LOOP:0: B:5:0x0034->B:21:0x0096, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:27:0x009d A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:21:0x0096 A[LOOP:0: B:5:0x0034->B:21:0x0096, LOOP_END] */
+    /* WARN: Code duplicated, block: B:27:0x009d A[SYNTHETIC] */
     public final String joinToString(CharSequence charSequence, CharSequence prefix, Function2<? super Integer, ? super Long, ? extends CharSequence> transform) {
         CharSequence separator = charSequence;
         Intrinsics.checkNotNullParameter(separator, "separator");
@@ -991,10 +991,10 @@ public abstract class IntLongMap {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x0093 A[PHI: r12
+    /* WARN: Code duplicated, block: B:21:0x0093 A[PHI: r12
   0x0093: PHI (r12v2 int) = (r12v1 int), (r12v3 int) binds: [B:6:0x0043, B:20:0x0091] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:23:0x0097 A[LOOP:0: B:5:0x0030->B:23:0x0097, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:29:0x009c A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:23:0x0097 A[LOOP:0: B:5:0x0030->B:23:0x0097, LOOP_END] */
+    /* WARN: Code duplicated, block: B:29:0x009c A[SYNTHETIC] */
     public final String joinToString(CharSequence separator, Function2<? super Integer, ? super Long, ? extends CharSequence> transform) {
         Intrinsics.checkNotNullParameter(separator, "separator");
         Intrinsics.checkNotNullParameter(transform, "transform");
@@ -1056,10 +1056,10 @@ public abstract class IntLongMap {
         return string;
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x0090 A[PHI: r12
+    /* WARN: Code duplicated, block: B:21:0x0090 A[PHI: r12
   0x0090: PHI (r12v2 int) = (r12v1 int), (r12v3 int) binds: [B:6:0x0040, B:20:0x008e] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:23:0x0094 A[LOOP:0: B:5:0x002d->B:23:0x0094, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:29:0x0099 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:23:0x0094 A[LOOP:0: B:5:0x002d->B:23:0x0094, LOOP_END] */
+    /* WARN: Code duplicated, block: B:29:0x0099 A[SYNTHETIC] */
     public final String joinToString(Function2<? super Integer, ? super Long, ? extends CharSequence> transform) {
         Intrinsics.checkNotNullParameter(transform, "transform");
         StringBuilder sb = new StringBuilder();

@@ -5,7 +5,7 @@ import org.jsoup.internal.StringUtil;
 import org.jsoup.parser.Tag;
 import org.jsoup.select.NodeVisitor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class Printer implements NodeVisitor {
     final QuietAppendable accum;
     final Node root;

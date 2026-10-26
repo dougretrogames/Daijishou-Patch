@@ -7,7 +7,7 @@ import java.util.concurrent.locks.Lock;
 import org.eclipse.jgit.lib.ReflogEntry;
 import org.eclipse.jgit.lib.ReflogReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReftableReflogReader implements ReflogReader {
     private final Lock lock;
     private final String refname;

@@ -15,7 +15,7 @@ import java.util.RandomAccess;
 import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class Ints extends IntsMethodsForWeb {
     public static final int BYTES = 4;
@@ -68,7 +68,7 @@ public final class Ints extends IntsMethodsForWeb {
         return indexOf(array, target, 0, array.length);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int indexOf(int[] array, int target, int start, int end) {
         while (start < end) {
             if (array[start] == target) {
@@ -99,7 +99,7 @@ public final class Ints extends IntsMethodsForWeb {
         return lastIndexOf(array, target, 0, array.length);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int lastIndexOf(int[] array, int target, int start, int end) {
         for (int i = end - 1; i >= start; i--) {
             if (array[i] == target) {
@@ -168,13 +168,13 @@ public final class Ints extends IntsMethodsForWeb {
         private IntConverter() {
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.base.Converter
         public Integer doForward(String value) {
             return Integer.decode(value);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.base.Converter
         public String doBackward(Integer value) {
             return value.toString();

@@ -1,7 +1,7 @@
 package com.google.common.util.concurrent;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class AbstractExecutionThreadService$1$$ExternalSyntheticLambda1 implements Runnable {
     public final /* synthetic */ AbstractExecutionThreadService.AnonymousClass1 f$0;
 

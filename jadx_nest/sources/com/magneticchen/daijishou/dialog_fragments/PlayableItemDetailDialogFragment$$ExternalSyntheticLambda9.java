@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.dialog_fragments;
 import android.view.View;
 import androidx.fragment.app.FragmentActivity;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class PlayableItemDetailDialogFragment$$ExternalSyntheticLambda9 implements View.OnClickListener {
     public final /* synthetic */ PlayableItemDetailDialogFragment f$0;
     public final /* synthetic */ FragmentActivity f$1;

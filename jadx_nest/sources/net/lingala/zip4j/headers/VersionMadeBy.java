@@ -1,6 +1,6 @@
 package net.lingala.zip4j.headers;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum VersionMadeBy {
     SPECIFICATION_VERSION((byte) 51),
     WINDOWS((byte) 0),

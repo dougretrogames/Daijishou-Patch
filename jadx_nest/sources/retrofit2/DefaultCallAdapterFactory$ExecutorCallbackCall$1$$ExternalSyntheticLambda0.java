@@ -1,7 +1,7 @@
 package retrofit2;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes6.dex */
 public final /* synthetic */ class DefaultCallAdapterFactory$ExecutorCallbackCall$1$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ DefaultCallAdapterFactory.ExecutorCallbackCall.AnonymousClass1 f$0;
     public final /* synthetic */ Callback f$1;

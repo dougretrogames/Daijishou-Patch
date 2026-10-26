@@ -3,7 +3,7 @@ package io.opencensus.trace;
 import io.opencensus.internal.Utils;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class BigendianEncoding {
     private static final String ALPHABET = "0123456789abcdef";
     private static final int ASCII_CHARACTERS = 128;

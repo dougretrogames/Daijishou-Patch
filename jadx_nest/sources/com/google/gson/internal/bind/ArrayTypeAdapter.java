@@ -14,13 +14,13 @@ import java.lang.reflect.GenericArrayType;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ArrayTypeAdapter<E> extends TypeAdapter<Object> {
     public static final TypeAdapterFactory FACTORY = new AnonymousClass1();
     private final Class<E> componentType;
     private final TypeAdapter<E> componentTypeAdapter;
 
-    /* JADX INFO: renamed from: com.google.gson.internal.bind.ArrayTypeAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.internal.bind.ArrayTypeAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements TypeAdapterFactory {
         AnonymousClass1() {
         }

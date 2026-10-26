@@ -8,7 +8,7 @@ import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicLong;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class ThreadFactoryBuilder {
 
@@ -71,7 +71,7 @@ public final class ThreadFactoryBuilder {
         return new AnonymousClass1(threadFactoryDefaultThreadFactory, str, str != null ? new AtomicLong(0L) : null, bool, num, uncaughtExceptionHandler);
     }
 
-    /* JADX INFO: renamed from: com.google.common.util.concurrent.ThreadFactoryBuilder$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.util.concurrent.ThreadFactoryBuilder$1, reason: invalid class name */
     class AnonymousClass1 implements ThreadFactory {
         final /* synthetic */ ThreadFactory val$backingThreadFactory;
         final /* synthetic */ AtomicLong val$count;
@@ -113,7 +113,7 @@ public final class ThreadFactoryBuilder {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static String format(String format, Object... args) {
         return String.format(Locale.ROOT, format, args);
     }

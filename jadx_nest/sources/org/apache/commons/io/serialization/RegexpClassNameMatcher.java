@@ -3,7 +3,7 @@ package org.apache.commons.io.serialization;
 import java.util.Objects;
 import java.util.regex.Pattern;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class RegexpClassNameMatcher implements ClassNameMatcher {
     private final Pattern pattern;
 

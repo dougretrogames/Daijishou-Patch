@@ -4,7 +4,7 @@ import org.apache.http.ConnectionReuseStrategy;
 import org.apache.http.HttpResponse;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NoConnectionReuseStrategy implements ConnectionReuseStrategy {
     public static final NoConnectionReuseStrategy INSTANCE = new NoConnectionReuseStrategy();
 

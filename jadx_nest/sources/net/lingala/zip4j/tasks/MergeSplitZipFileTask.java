@@ -18,7 +18,7 @@ import net.lingala.zip4j.progress.ProgressMonitor;
 import net.lingala.zip4j.util.RawIO;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MergeSplitZipFileTask extends AsyncZipTask<MergeSplitZipFileTaskParameters> {
     private final RawIO rawIO;
     private final ZipModel zipModel;
@@ -29,10 +29,10 @@ public class MergeSplitZipFileTask extends AsyncZipTask<MergeSplitZipFileTaskPar
         this.zipModel = zipModel;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    /* JADX WARN: Bottom block not found for handler: all -> 0x00b7 */
-    /* JADX WARN: Code duplicated, block: B:102:? A[Catch: all -> 0x00b7, SYNTHETIC, TRY_LEAVE, TryCatch #7 {, blocks: (B:32:0x009a, B:46:0x00b6, B:45:0x00b3, B:42:0x00ae), top: B:89:0x009a, inners: #0 }] */
-    /* JADX WARN: Code duplicated, block: B:77:0x00ae A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* INFO: Access modifiers changed from: protected */
+    /* WARN: Bottom block not found for handler: all -> 0x00b7 */
+    /* WARN: Code duplicated, block: B:102:? A[Catch: all -> 0x00b7, SYNTHETIC, TRY_LEAVE, TryCatch #7 {, blocks: (B:32:0x009a, B:46:0x00b6, B:45:0x00b3, B:42:0x00ae), top: B:89:0x009a, inners: #0 }] */
+    /* WARN: Code duplicated, block: B:77:0x00ae A[EXC_TOP_SPLITTER, SYNTHETIC] */
     @Override // net.lingala.zip4j.tasks.AsyncZipTask
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -46,7 +46,7 @@ public class MergeSplitZipFileTask extends AsyncZipTask<MergeSplitZipFileTaskPar
         throw new UnsupportedOperationException("Method not decompiled: net.lingala.zip4j.tasks.MergeSplitZipFileTask.executeTask(net.lingala.zip4j.tasks.MergeSplitZipFileTask$MergeSplitZipFileTaskParameters, net.lingala.zip4j.progress.ProgressMonitor):void");
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.tasks.AsyncZipTask
     public long calculateTotalWork(MergeSplitZipFileTaskParameters mergeSplitZipFileTaskParameters) {
         long length = 0;

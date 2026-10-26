@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.util.List;
 import org.eclipse.jgit.internal.storage.reftable.ReftableWriter;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class FileReftableDatabase$FileReftableBatchRefUpdate$$ExternalSyntheticLambda0 implements FileReftableStack.Writer {
     public final /* synthetic */ FileReftableDatabase.FileReftableBatchRefUpdate f$0;
     public final /* synthetic */ List f$1;

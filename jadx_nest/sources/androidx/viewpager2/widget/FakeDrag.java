@@ -6,7 +6,7 @@ import android.view.VelocityTracker;
 import android.view.ViewConfiguration;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class FakeDrag {
     private int mActualDraggedDistance;
     private long mFakeDragBeginTime;

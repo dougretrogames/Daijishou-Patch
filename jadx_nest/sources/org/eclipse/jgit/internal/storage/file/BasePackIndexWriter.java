@@ -13,7 +13,7 @@ import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.transport.PackedObjectInfo;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class BasePackIndexWriter implements PackIndexWriter {
     protected static final byte[] TOC = {-1, 116, 79, 99};
     protected List<? extends PackedObjectInfo> entries;

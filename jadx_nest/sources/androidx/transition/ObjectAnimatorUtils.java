@@ -6,7 +6,7 @@ import android.graphics.Path;
 import android.graphics.PointF;
 import android.util.Property;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ObjectAnimatorUtils {
     static <T> ObjectAnimator ofPointF(T t, Property<T, PointF> property, Path path) {
         return Api21Impl.ofObject(t, property, path);

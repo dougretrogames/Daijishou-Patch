@@ -2,7 +2,7 @@ package net.lingala.zip4j.crypto.PBKDF2;
 
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PBKDF2Engine {
     private PBKDF2Parameters parameters;
     private PRF prf;

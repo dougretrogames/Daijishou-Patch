@@ -1,6 +1,6 @@
 package com.googlecode.javaewah;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class RunningLengthWord implements Cloneable {
     public static final int LARGEST_LITERAL_COUNT = Integer.MAX_VALUE;
     public static final long LARGEST_RUNNING_LENGTH_COUNT = 4294967295L;
@@ -80,7 +80,7 @@ public final class RunningLengthWord implements Cloneable {
         return "running bit = " + getRunningBit() + " running length = " + getRunningLength() + " number of lit. words " + getNumberOfLiteralWords();
     }
 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public RunningLengthWord m3466clone() throws CloneNotSupportedException {
         return (RunningLengthWord) super.clone();
     }

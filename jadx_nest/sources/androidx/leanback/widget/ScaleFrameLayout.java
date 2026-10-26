@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ScaleFrameLayout extends FrameLayout {
     private static final int DEFAULT_CHILD_GRAVITY = 8388659;
     private float mChildScale;
@@ -71,8 +71,8 @@ public class ScaleFrameLayout extends FrameLayout {
         return zAddViewInLayout;
     }
 
-    /* JADX WARN: Code duplicated, block: B:31:0x00c6  */
-    /* JADX WARN: Code duplicated, block: B:39:0x00da  */
+    /* WARN: Code duplicated, block: B:31:0x00c6  */
+    /* WARN: Code duplicated, block: B:39:0x00da  */
     @Override // android.widget.FrameLayout, android.view.ViewGroup, android.view.View
     protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
         float pivotX;

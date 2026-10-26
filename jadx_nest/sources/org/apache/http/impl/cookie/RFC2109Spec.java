@@ -16,7 +16,7 @@ import org.apache.http.message.BufferedHeader;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RFC2109Spec extends CookieSpecBase {
     static final String[] DATE_PATTERNS = {"EEE, dd MMM yyyy HH:mm:ss zzz", "EEE, dd-MMM-yy HH:mm:ss zzz", "EEE MMM d HH:mm:ss yyyy"};
     private final boolean oneHeader;
@@ -31,7 +31,7 @@ public class RFC2109Spec extends CookieSpecBase {
         return null;
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.cookie.RFC2109Spec$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.cookie.RFC2109Spec$1, reason: invalid class name */
     class AnonymousClass1 extends BasicPathHandler {
         AnonymousClass1() {
         }
@@ -44,7 +44,7 @@ public class RFC2109Spec extends CookieSpecBase {
         }
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public RFC2109Spec(String[] strArr, boolean z) {
         CommonCookieAttributeHandler[] commonCookieAttributeHandlerArr = new CommonCookieAttributeHandler[7];
         commonCookieAttributeHandlerArr[0] = new RFC2109VersionHandler();

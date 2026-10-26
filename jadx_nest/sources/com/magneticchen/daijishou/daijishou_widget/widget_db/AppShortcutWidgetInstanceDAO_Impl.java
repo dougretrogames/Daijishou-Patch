@@ -17,7 +17,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidgetInstanceDAO {
     private final RoomDatabase __db;
     private final EntityDeletionOrUpdateAdapter<AppShortcutWidgetInstanceEntity> __deletionAdapterOfAppShortcutWidgetInstanceEntity;
@@ -34,7 +34,7 @@ public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidge
         this.__preparedStmtOfDeleteById = new AnonymousClass4(__db);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$1, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$1, reason: invalid class name */
     class AnonymousClass1 extends EntityInsertionAdapter<AppShortcutWidgetInstanceEntity> {
         AnonymousClass1(RoomDatabase database) {
             super(database);
@@ -45,7 +45,7 @@ public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidge
             return "INSERT OR ABORT INTO `AppShortcutWidgetInstanceEntity` (`id`,`resolve_info_string_id`,`alternative_image_path`,`last_update_timestamp`) VALUES (nullif(?, 0),?,?,?)";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityInsertionAdapter
         public void bind(final SupportSQLiteStatement statement, final AppShortcutWidgetInstanceEntity entity) {
             statement.bindLong(1, entity.getId());
@@ -68,7 +68,7 @@ public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidge
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$2, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$2, reason: invalid class name */
     class AnonymousClass2 extends EntityDeletionOrUpdateAdapter<AppShortcutWidgetInstanceEntity> {
         AnonymousClass2(RoomDatabase database) {
             super(database);
@@ -79,14 +79,14 @@ public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidge
             return "DELETE FROM `AppShortcutWidgetInstanceEntity` WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final AppShortcutWidgetInstanceEntity entity) {
             statement.bindLong(1, entity.getId());
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$3, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$3, reason: invalid class name */
     class AnonymousClass3 extends EntityDeletionOrUpdateAdapter<AppShortcutWidgetInstanceEntity> {
         AnonymousClass3(RoomDatabase database) {
             super(database);
@@ -97,7 +97,7 @@ public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidge
             return "UPDATE OR ABORT `AppShortcutWidgetInstanceEntity` SET `id` = ?,`resolve_info_string_id` = ?,`alternative_image_path` = ?,`last_update_timestamp` = ? WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final AppShortcutWidgetInstanceEntity entity) {
             statement.bindLong(1, entity.getId());
@@ -121,7 +121,7 @@ public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidge
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$4, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$4, reason: invalid class name */
     class AnonymousClass4 extends SharedSQLiteStatement {
         AnonymousClass4(RoomDatabase database) {
             super(database);
@@ -205,7 +205,7 @@ public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidge
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$5, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$5, reason: invalid class name */
     class AnonymousClass5 implements Callable<Integer> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -213,7 +213,7 @@ public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidge
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Integer call() throws Exception {
             Integer numValueOf = null;
@@ -251,7 +251,7 @@ public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidge
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$6, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$6, reason: invalid class name */
     class AnonymousClass6 implements Callable<List<AppShortcutWidgetInstanceEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -334,7 +334,7 @@ public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidge
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"AppShortcutWidgetInstanceEntity"}, false, new AnonymousClass7(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$7, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO_Impl$7, reason: invalid class name */
     class AnonymousClass7 implements Callable<AppShortcutWidgetInstanceEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -342,7 +342,7 @@ public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidge
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public AppShortcutWidgetInstanceEntity call() throws Exception {
             AppShortcutWidgetInstanceEntity appShortcutWidgetInstanceEntity = null;
@@ -379,15 +379,15 @@ public final class AppShortcutWidgetInstanceDAO_Impl implements AppShortcutWidge
         }
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     @Override // com.magneticchen.daijishou.daijishou_widget.widget_db.AppShortcutWidgetInstanceDAO
     public AppShortcutWidgetInstanceEntity selectByIdStatically(long j) {

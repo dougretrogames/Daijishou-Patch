@@ -4,12 +4,12 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.RectF;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class CardViewApi17Impl extends CardViewBaseImpl {
     CardViewApi17Impl() {
     }
 
-    /* JADX INFO: renamed from: androidx.cardview.widget.CardViewApi17Impl$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.cardview.widget.CardViewApi17Impl$1, reason: invalid class name */
     class AnonymousClass1 implements RoundRectDrawableWithShadow.RoundRectHelper {
         AnonymousClass1() {
         }

@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Map;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class JwtClaims implements Serializable {
     private static final long serialVersionUID = 4974444151019426702L;
 

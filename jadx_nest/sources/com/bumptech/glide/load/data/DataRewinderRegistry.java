@@ -4,12 +4,12 @@ import com.bumptech.glide.util.Preconditions;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DataRewinderRegistry {
     private static final DataRewinder.Factory<?> DEFAULT_FACTORY = new AnonymousClass1();
     private final Map<Class<?>, DataRewinder.Factory<?>> rewinders = new HashMap();
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.data.DataRewinderRegistry$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.data.DataRewinderRegistry$1, reason: invalid class name */
     class AnonymousClass1 implements DataRewinder.Factory<Object> {
         AnonymousClass1() {
         }

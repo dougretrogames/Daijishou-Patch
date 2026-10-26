@@ -4,7 +4,7 @@ import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicLong;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MonotonicSystemClock implements MonotonicClock {
     private static final AtomicLong before = new AtomicLong();
 
@@ -21,7 +21,7 @@ public class MonotonicSystemClock implements MonotonicClock {
         return jMax;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.util.time.MonotonicSystemClock$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.util.time.MonotonicSystemClock$1, reason: invalid class name */
     class AnonymousClass1 extends ProposedTimestamp {
         private final /* synthetic */ long val$u;
 

@@ -10,7 +10,7 @@ import org.apache.commons.collections4.Put;
 import org.apache.commons.collections4.Transformer;
 import org.apache.commons.collections4.map.LinkedMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformedSplitMap<J, K, U, V> extends AbstractIterableGetMapDecorator<K, V> implements Put<J, U>, Serializable {
     private static final long serialVersionUID = 5966875321133456994L;
     private final Transformer<? super J, ? extends K> keyTransformer;
@@ -54,7 +54,7 @@ public class TransformedSplitMap<J, K, U, V> extends AbstractIterableGetMapDecor
         return this.keyTransformer.apply(j);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     protected Map<K, V> transformMap(Map<? extends J, ? extends U> map) {
         if (map.isEmpty()) {
             return map;

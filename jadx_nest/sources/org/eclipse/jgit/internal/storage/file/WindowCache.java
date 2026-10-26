@@ -20,7 +20,7 @@ import org.eclipse.jgit.storage.file.WindowCacheConfig;
 import org.eclipse.jgit.storage.file.WindowCacheStats;
 import org.eclipse.jgit.util.Monitoring;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class WindowCache {
     private static volatile WindowCache cache;
     private static final Random rng = new Random();
@@ -266,7 +266,7 @@ public class WindowCache {
         cache.removeAll(pack);
     }
 
-    /* JADX WARN: Code duplicated, block: B:10:0x0048 A[PHI: r3
+    /* WARN: Code duplicated, block: B:10:0x0048 A[PHI: r3
   0x0048: PHI (r3v8 int) = (r3v5 int), (r3v6 int) binds: [B:9:0x0046, B:12:0x004b] A[DONT_GENERATE, DONT_INLINE]] */
     private WindowCache(WindowCacheConfig windowCacheConfig) {
         CleanupQueue softCleanupQueue;
@@ -387,7 +387,7 @@ public class WindowCache {
         return softRef;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void clear(PageRef<ByteWindow> pageRef) {
         this.statsRecorder.recordOpenBytes(pageRef.getPack(), -pageRef.getSize());
         this.statsRecorder.recordEvictions(1);
@@ -549,7 +549,7 @@ public class WindowCache {
         this.queue.gc();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int slot(Pack pack, long j) {
         return (hash(pack.hash, j) >>> 1) % this.tableSize;
     }
@@ -558,7 +558,7 @@ public class WindowCache {
         return this.locks[(hash(pack.hash, j) >>> 1) % this.locks.length];
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Entry clean(Entry entry) {
         while (entry != null && entry.dead) {
             entry.ref.kill();

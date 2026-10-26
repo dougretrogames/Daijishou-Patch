@@ -7,7 +7,7 @@ import androidx.collection.SimpleArrayMap;
 import androidx.core.internal.view.SupportMenuItem;
 import androidx.core.internal.view.SupportSubMenu;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 abstract class BaseMenuWrapper {
     final Context mContext;
     private SimpleArrayMap<SupportMenuItem, MenuItem> mMenuItems;

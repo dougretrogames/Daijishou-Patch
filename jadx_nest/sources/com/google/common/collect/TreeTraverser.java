@@ -8,13 +8,13 @@ import java.util.Iterator;
 import java.util.Queue;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 @Deprecated
 public abstract class TreeTraverser<T> {
     public abstract Iterable<T> children(T root);
 
-    /* JADX INFO: renamed from: com.google.common.collect.TreeTraverser$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.TreeTraverser$1, reason: invalid class name */
     class AnonymousClass1 extends TreeTraverser<T> {
         final /* synthetic */ Function val$nodeToChildrenFunction;
 
@@ -34,7 +34,7 @@ public abstract class TreeTraverser<T> {
         return new AnonymousClass1(nodeToChildrenFunction);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.TreeTraverser$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.TreeTraverser$2, reason: invalid class name */
     class AnonymousClass2 extends FluentIterable<T> {
         final /* synthetic */ Object val$root;
 
@@ -42,7 +42,7 @@ public abstract class TreeTraverser<T> {
             this.val$root = val$root;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.lang.Iterable
         public UnmodifiableIterator<T> iterator() {
             return TreeTraverser.this.preOrderIterator(this.val$root);
@@ -73,15 +73,15 @@ public abstract class TreeTraverser<T> {
             return !this.stack.isEmpty();
         }
 
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         @Override // java.util.Iterator
         public T next() {
@@ -98,7 +98,7 @@ public abstract class TreeTraverser<T> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.TreeTraverser$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.TreeTraverser$3, reason: invalid class name */
     class AnonymousClass3 extends FluentIterable<T> {
         final /* synthetic */ Object val$root;
 
@@ -106,7 +106,7 @@ public abstract class TreeTraverser<T> {
             this.val$root = val$root;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.lang.Iterable
         public UnmodifiableIterator<T> iterator() {
             return TreeTraverser.this.postOrderIterator(this.val$root);
@@ -162,7 +162,7 @@ public abstract class TreeTraverser<T> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.TreeTraverser$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.TreeTraverser$4, reason: invalid class name */
     class AnonymousClass4 extends FluentIterable<T> {
         final /* synthetic */ Object val$root;
 

@@ -12,7 +12,7 @@ import com.google.api.client.util.Preconditions;
 import java.io.IOException;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GoogleAuthorizationCodeTokenRequest extends AuthorizationCodeTokenRequest {
     @Override // com.google.api.client.auth.oauth2.AuthorizationCodeTokenRequest, com.google.api.client.auth.oauth2.TokenRequest
     public /* bridge */ /* synthetic */ AuthorizationCodeTokenRequest setScopes(Collection collection) {

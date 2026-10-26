@@ -6,7 +6,7 @@ import org.apache.http.HttpHost;
 import org.apache.http.params.HttpAbstractParamBean;
 import org.apache.http.params.HttpParams;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class ClientParamBean extends HttpAbstractParamBean {
     public ClientParamBean(HttpParams httpParams) {

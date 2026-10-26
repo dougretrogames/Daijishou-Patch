@@ -56,7 +56,7 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>> {
     public static final int ANIMATION_MODE_FADE = 1;
     public static final int ANIMATION_MODE_SLIDE = 0;
@@ -134,7 +134,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
     public @interface Duration {
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$1, reason: invalid class name */
     class AnonymousClass1 implements Handler.Callback {
         AnonymousClass1() {
         }
@@ -154,7 +154,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -226,7 +226,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         this.animationSlideInterpolator = MotionUtils.resolveThemeInterpolator(context, R.attr.motionEasingEmphasizedInterpolator, DEFAULT_ANIMATION_SLIDE_INTERPOLATOR);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$3, reason: invalid class name */
     class AnonymousClass3 implements OnApplyWindowInsetsListener {
         AnonymousClass3() {
         }
@@ -241,7 +241,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$4, reason: invalid class name */
     class AnonymousClass4 extends AccessibilityDelegateCompat {
         AnonymousClass4() {
         }
@@ -263,7 +263,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void updateMargins() {
         ViewGroup.LayoutParams layoutParams = this.view.getLayoutParams();
         if (!(layoutParams instanceof ViewGroup.MarginLayoutParams)) {
@@ -433,7 +433,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         return SnackbarManager.getInstance().isCurrentOrNext(this.managerCallback);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$5, reason: invalid class name */
     class AnonymousClass5 implements SnackbarManager.Callback {
         AnonymousClass5() {
         }
@@ -485,7 +485,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$6, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$6, reason: invalid class name */
     class AnonymousClass6 implements Runnable {
         AnonymousClass6() {
         }
@@ -514,7 +514,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         onViewShown();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getViewAbsoluteBottom() {
         int[] iArr = new int[2];
         this.view.getLocationInWindow(iArr);
@@ -536,7 +536,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$7, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$7, reason: invalid class name */
     class AnonymousClass7 implements SwipeDismissBehavior.OnDismissListener {
         AnonymousClass7() {
         }
@@ -559,7 +559,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void recalculateAndUpdateMargins() {
         this.extraBottomMarginAnchorView = calculateBottomMarginForAnchorView();
         updateMargins();
@@ -577,7 +577,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         return (iArr2[1] + this.targetParent.getHeight()) - i;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$8, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$8, reason: invalid class name */
     class AnonymousClass8 implements Runnable {
         AnonymousClass8() {
         }
@@ -610,7 +610,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void startFadeInAnimation() {
         ValueAnimator alphaAnimator = getAlphaAnimator(0.0f, 1.0f);
         ValueAnimator scaleAnimator = getScaleAnimator(ANIMATION_SCALE_FROM_VALUE, 1.0f);
@@ -621,7 +621,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         animatorSet.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$9, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$9, reason: invalid class name */
     class AnonymousClass9 extends AnimatorListenerAdapter {
         AnonymousClass9() {
         }
@@ -639,7 +639,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         alphaAnimator.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$10, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$10, reason: invalid class name */
     class AnonymousClass10 extends AnimatorListenerAdapter {
         final /* synthetic */ int val$event;
 
@@ -660,7 +660,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         return valueAnimatorOfFloat;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$11, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$11, reason: invalid class name */
     class AnonymousClass11 implements ValueAnimator.AnimatorUpdateListener {
         AnonymousClass11() {
         }
@@ -678,7 +678,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         return valueAnimatorOfFloat;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$12, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$12, reason: invalid class name */
     class AnonymousClass12 implements ValueAnimator.AnimatorUpdateListener {
         AnonymousClass12() {
         }
@@ -691,7 +691,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void startSlideInAnimation() {
         int translationYBottom = getTranslationYBottom();
         if (USE_OFFSET_API) {
@@ -708,7 +708,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         valueAnimator.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$13, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$13, reason: invalid class name */
     class AnonymousClass13 extends AnimatorListenerAdapter {
         AnonymousClass13() {
         }
@@ -724,7 +724,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$14, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$14, reason: invalid class name */
     class AnonymousClass14 implements ValueAnimator.AnimatorUpdateListener {
         private int previousAnimatedIntValue;
         final /* synthetic */ int val$translationYBottom;
@@ -756,7 +756,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         valueAnimator.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$15, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$15, reason: invalid class name */
     class AnonymousClass15 extends AnimatorListenerAdapter {
         final /* synthetic */ int val$event;
 
@@ -775,7 +775,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$16, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$16, reason: invalid class name */
     class AnonymousClass16 implements ValueAnimator.AnimatorUpdateListener {
         private int previousAnimatedIntValue = 0;
 
@@ -855,7 +855,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         private Rect originalMargins;
         ShapeAppearanceModel shapeAppearanceModel;
 
-        /* JADX INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$SnackbarBaseLayout$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.snackbar.BaseTransientBottomBar$SnackbarBaseLayout$1, reason: invalid class name */
         class AnonymousClass1 implements View.OnTouchListener {
             @Override // android.view.View.OnTouchListener
             public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -1024,7 +1024,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
             this.addingToTargetParent = false;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setBaseTransientBottomBar(BaseTransientBottomBar<?> baseTransientBottomBar) {
             this.baseTransientBottomBar = baseTransientBottomBar;
         }
@@ -1046,14 +1046,14 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static MaterialShapeDrawable createMaterialShapeDrawableBackground(int i, ShapeAppearanceModel shapeAppearanceModel) {
         MaterialShapeDrawable materialShapeDrawable = new MaterialShapeDrawable(shapeAppearanceModel);
         materialShapeDrawable.setFillColor(ColorStateList.valueOf(i));
         return materialShapeDrawable;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static GradientDrawable createGradientDrawableBackground(int i, Resources resources) {
         float dimension = resources.getDimension(R.dimen.mtrl_snackbar_background_corner_radius);
         GradientDrawable gradientDrawable = new GradientDrawable();
@@ -1066,7 +1066,7 @@ public abstract class BaseTransientBottomBar<B extends BaseTransientBottomBar<B>
     public static class Behavior extends SwipeDismissBehavior<View> {
         private final BehaviorDelegate delegate = new BehaviorDelegate(this);
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setBaseTransientBottomBar(BaseTransientBottomBar<?> baseTransientBottomBar) {
             this.delegate.setBaseTransientBottomBar(baseTransientBottomBar);
         }

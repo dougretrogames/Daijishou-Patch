@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface SignatureVerifier {
 
     public enum TrustLevel {
@@ -15,7 +15,7 @@ public interface SignatureVerifier {
         FULL,
         ULTIMATE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static TrustLevel[] valuesCustom() {
             TrustLevel[] trustLevelArrValuesCustom = values();
             int length = trustLevelArrValuesCustom.length;

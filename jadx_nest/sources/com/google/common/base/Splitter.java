@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Splitter {
     private final int limit;
@@ -42,7 +42,7 @@ public final class Splitter {
         return new Splitter(new AnonymousClass1(separatorMatcher));
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Splitter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Splitter$1, reason: invalid class name */
     class AnonymousClass1 implements Strategy {
         final /* synthetic */ CharMatcher val$separatorMatcher;
 
@@ -50,7 +50,7 @@ public final class Splitter {
             this.val$separatorMatcher = val$separatorMatcher;
         }
 
-        /* JADX INFO: renamed from: com.google.common.base.Splitter$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.google.common.base.Splitter$1$1, reason: invalid class name and collision with other inner class name */
         class C00361 extends SplittingIterator {
             @Override // com.google.common.base.Splitter.SplittingIterator
             int separatorEnd(int separatorPosition) {
@@ -81,7 +81,7 @@ public final class Splitter {
         return new Splitter(new AnonymousClass2(separator));
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Splitter$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Splitter$2, reason: invalid class name */
     class AnonymousClass2 implements Strategy {
         final /* synthetic */ String val$separator;
 
@@ -89,7 +89,7 @@ public final class Splitter {
             this.val$separator = val$separator;
         }
 
-        /* JADX INFO: renamed from: com.google.common.base.Splitter$2$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.base.Splitter$2$1, reason: invalid class name */
         class AnonymousClass1 extends SplittingIterator {
             AnonymousClass1(Splitter splitter, CharSequence toSplit) {
                 super(splitter, toSplit);
@@ -131,7 +131,7 @@ public final class Splitter {
         return new Splitter(new AnonymousClass3(separatorPattern));
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Splitter$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Splitter$3, reason: invalid class name */
     class AnonymousClass3 implements Strategy {
         final /* synthetic */ CommonPattern val$separatorPattern;
 
@@ -139,11 +139,11 @@ public final class Splitter {
             this.val$separatorPattern = val$separatorPattern;
         }
 
-        /* JADX INFO: renamed from: com.google.common.base.Splitter$3$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.base.Splitter$3$1, reason: invalid class name */
         class AnonymousClass1 extends SplittingIterator {
             final /* synthetic */ CommonMatcher val$matcher;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(final AnonymousClass3 this$0, Splitter splitter, CharSequence toSplit, final CommonMatcher val$matcher) {
                 super(splitter, toSplit);
                 this.val$matcher = val$matcher;
@@ -178,7 +178,7 @@ public final class Splitter {
         return new Splitter(new AnonymousClass4(length));
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Splitter$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Splitter$4, reason: invalid class name */
     class AnonymousClass4 implements Strategy {
         final /* synthetic */ int val$length;
 
@@ -186,7 +186,7 @@ public final class Splitter {
             this.val$length = val$length;
         }
 
-        /* JADX INFO: renamed from: com.google.common.base.Splitter$4$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.base.Splitter$4$1, reason: invalid class name */
         class AnonymousClass1 extends SplittingIterator {
             @Override // com.google.common.base.Splitter.SplittingIterator
             public int separatorEnd(int separatorPosition) {
@@ -236,7 +236,7 @@ public final class Splitter {
         return new AnonymousClass5(sequence);
     }
 
-    /* JADX INFO: renamed from: com.google.common.base.Splitter$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.base.Splitter$5, reason: invalid class name */
     class AnonymousClass5 implements Iterable<String> {
         final /* synthetic */ CharSequence val$sequence;
 
@@ -254,7 +254,7 @@ public final class Splitter {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Iterator<String> splittingIterator(CharSequence sequence) {
         return this.strategy.iterator(this, sequence);
     }
@@ -328,7 +328,7 @@ public final class Splitter {
             this.toSplit = toSplit;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.base.AbstractIterator
         @CheckForNull
         public String computeNext() {

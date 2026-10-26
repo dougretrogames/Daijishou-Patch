@@ -12,8 +12,8 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: Deserializable.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: Deserializable.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001a\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003\"\u000e\b\u0001\u0010\u0004*\b\u0012\u0004\u0012\u0002H\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\n¢\u0006\u0002\b\b"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "response", "Lcom/github/kittinunf/fuel/core/Response;", "invoke"}, k = 3, mv = {1, 4, 0})
 final class DeserializableKt$response$asyncRequest$1 extends Lambda implements Function1<Response, Unit> {
     final /* synthetic */ Deserializable $deserializable;
@@ -21,7 +21,7 @@ final class DeserializableKt$response$asyncRequest$1 extends Lambda implements F
     final /* synthetic */ Function3 $success;
     final /* synthetic */ Request $this_response;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     DeserializableKt$response$asyncRequest$1(Request request, Deserializable deserializable, Function3 function3, Function3 function4) {
         super(1);
         this.$this_response = request;
@@ -36,20 +36,20 @@ final class DeserializableKt$response$asyncRequest$1 extends Lambda implements F
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(Response response) {
         Intrinsics.checkNotNullParameter(response, "response");
         this.$this_response.getExecutionOptions().callback(new AnonymousClass1(Result.INSTANCE.of(new DeserializableKt$response$asyncRequest$1$deliverable$1(this, response)), response));
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$asyncRequest$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$asyncRequest$1$1, reason: invalid class name */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003\"\u000e\b\u0001\u0010\u0004*\b\u0012\u0004\u0012\u0002H\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass1 extends Lambda implements Function0<Unit> {
         final /* synthetic */ Result $deliverable;
         final /* synthetic */ Response $response;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Result result, Response response) {
             super(0);
             this.$deliverable = result;
@@ -62,7 +62,7 @@ final class DeserializableKt$response$asyncRequest$1 extends Lambda implements F
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             Result result = this.$deliverable;
             if (result instanceof Result.Success) {

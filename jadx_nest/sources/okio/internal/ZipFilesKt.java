@@ -31,8 +31,8 @@ import okio.Okio;
 import okio.Path;
 import okio.ZipFileSystem;
 
-/* JADX INFO: compiled from: ZipFiles.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: ZipFiles.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000j\n\u0000\n\u0002\u0010\b\n\u0002\b\t\n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010$\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\u001a\"\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020\u00150\u00132\f\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00150\u0017H\u0002\u001a\u001f\u0010\u0018\u001a\u0004\u0018\u00010\u000b2\u0006\u0010\u0019\u001a\u00020\u00012\u0006\u0010\u001a\u001a\u00020\u0001H\u0002¢\u0006\u0002\u0010\u001b\u001a.\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\u00142\u0006\u0010\u001f\u001a\u00020 2\u0014\b\u0002\u0010!\u001a\u000e\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020#0\"H\u0000\u001a\f\u0010$\u001a\u00020\u0015*\u00020%H\u0000\u001a\f\u0010&\u001a\u00020'*\u00020%H\u0002\u001a.\u0010(\u001a\u00020)*\u00020%2\u0006\u0010*\u001a\u00020\u00012\u0018\u0010+\u001a\u0014\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020)0,H\u0002\u001a\u0014\u0010-\u001a\u00020.*\u00020%2\u0006\u0010/\u001a\u00020.H\u0000\u001a\u0018\u00100\u001a\u0004\u0018\u00010.*\u00020%2\b\u0010/\u001a\u0004\u0018\u00010.H\u0002\u001a\u0014\u00101\u001a\u00020'*\u00020%2\u0006\u00102\u001a\u00020'H\u0002\u001a\f\u00103\u001a\u00020)*\u00020%H\u0000\"\u000e\u0010\u0000\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0002\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0003\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0004\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0005\u001a\u00020\u0001X\u0080T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0006\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\u0007\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\b\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\t\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\n\u001a\u00020\u000bX\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\f\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u000e\u0010\r\u001a\u00020\u0001X\u0082T¢\u0006\u0002\n\u0000\"\u0018\u0010\u000e\u001a\u00020\u000f*\u00020\u00018BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\u0010\u0010\u0011¨\u00064"}, d2 = {"BIT_FLAG_ENCRYPTED", "", "BIT_FLAG_UNSUPPORTED_MASK", "CENTRAL_FILE_HEADER_SIGNATURE", "COMPRESSION_METHOD_DEFLATED", "COMPRESSION_METHOD_STORED", "END_OF_CENTRAL_DIRECTORY_SIGNATURE", "HEADER_ID_EXTENDED_TIMESTAMP", "HEADER_ID_ZIP64_EXTENDED_INFO", "LOCAL_FILE_HEADER_SIGNATURE", "MAX_ZIP_ENTRY_AND_ARCHIVE_SIZE", "", "ZIP64_EOCD_RECORD_SIGNATURE", "ZIP64_LOCATOR_SIGNATURE", "hex", "", "getHex", "(I)Ljava/lang/String;", "buildIndex", "", "Lokio/Path;", "Lokio/internal/ZipEntry;", "entries", "", "dosDateTimeToEpochMillis", "date", "time", "(II)Ljava/lang/Long;", "openZip", "Lokio/ZipFileSystem;", "zipPath", "fileSystem", "Lokio/FileSystem;", "predicate", "Lkotlin/Function1;", "", "readEntry", "Lokio/BufferedSource;", "readEocdRecord", "Lokio/internal/EocdRecord;", "readExtra", "", "extraSize", "block", "Lkotlin/Function2;", "readLocalHeader", "Lokio/FileMetadata;", "basicMetadata", "readOrSkipLocalHeader", "readZip64EocdRecord", "regularRecord", "skipLocalHeader", "okio"}, k = 2, mv = {1, 9, 0}, xi = 48)
 public final class ZipFilesKt {
     private static final int BIT_FLAG_ENCRYPTED = 1;
@@ -48,9 +48,9 @@ public final class ZipFilesKt {
     private static final int ZIP64_EOCD_RECORD_SIGNATURE = 101075792;
     private static final int ZIP64_LOCATOR_SIGNATURE = 117853008;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
-    /* JADX INFO: renamed from: okio.internal.ZipFilesKt$openZip$1, reason: invalid class name */
-    /* JADX INFO: compiled from: ZipFiles.kt */
+    /* INFO: Access modifiers changed from: package-private */
+    /* INFO: renamed from: okio.internal.ZipFilesKt$openZip$1, reason: invalid class name */
+    /* INFO: compiled from: ZipFiles.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "it", "Lokio/internal/ZipEntry;", "invoke", "(Lokio/internal/ZipEntry;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     public static final class AnonymousClass1 extends Lambda implements Function1<ZipEntry, Boolean> {
         public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -251,8 +251,8 @@ public final class ZipFilesKt {
         return new ZipEntry(Path.Companion.get$default(Path.INSTANCE, InternalZipConstants.ZIP_FILE_SEPARATOR, false, 1, (Object) null).resolve(utf8), StringsKt.endsWith$default(utf8, InternalZipConstants.ZIP_FILE_SEPARATOR, false, 2, (Object) null), bufferedSource.readUtf8(shortLe5), intLe2, longRef.element, longRef2.element, shortLe2, lDosDateTimeToEpochMillis, longRef3.element);
     }
 
-    /* JADX INFO: renamed from: okio.internal.ZipFilesKt$readEntry$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: ZipFiles.kt */
+    /* INFO: renamed from: okio.internal.ZipFilesKt$readEntry$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: ZipFiles.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "headerId", "", "dataSize", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class C04171 extends Lambda implements Function2<Integer, Long, Unit> {
         final /* synthetic */ Ref.LongRef $compressedSize;
@@ -262,7 +262,7 @@ public final class ZipFilesKt {
         final /* synthetic */ Ref.LongRef $size;
         final /* synthetic */ BufferedSource $this_readEntry;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C04171(Ref.BooleanRef booleanRef, long j, Ref.LongRef longRef, BufferedSource bufferedSource, Ref.LongRef longRef2, Ref.LongRef longRef3) {
             super(2);
             this.$hasZip64Extra = booleanRef;
@@ -360,7 +360,7 @@ public final class ZipFilesKt {
         return orSkipLocalHeader;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private static final FileMetadata readOrSkipLocalHeader(BufferedSource bufferedSource, FileMetadata fileMetadata) throws IOException {
         Ref.ObjectRef objectRef = new Ref.ObjectRef();
         objectRef.element = fileMetadata != null ? fileMetadata.getLastModifiedAtMillis() : 0;
@@ -388,8 +388,8 @@ public final class ZipFilesKt {
         return new FileMetadata(fileMetadata.getIsRegularFile(), fileMetadata.getIsDirectory(), null, fileMetadata.getSize(), (Long) objectRef3.element, (Long) objectRef.element, (Long) objectRef2.element, null, 128, null);
     }
 
-    /* JADX INFO: renamed from: okio.internal.ZipFilesKt$readOrSkipLocalHeader$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: ZipFiles.kt */
+    /* INFO: renamed from: okio.internal.ZipFilesKt$readOrSkipLocalHeader$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: ZipFiles.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "headerId", "", "dataSize", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class C04181 extends Lambda implements Function2<Integer, Long, Unit> {
         final /* synthetic */ Ref.ObjectRef<Long> $createdAtMillis;
@@ -397,7 +397,7 @@ public final class ZipFilesKt {
         final /* synthetic */ Ref.ObjectRef<Long> $lastModifiedAtMillis;
         final /* synthetic */ BufferedSource $this_readOrSkipLocalHeader;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C04181(BufferedSource bufferedSource, Ref.ObjectRef<Long> objectRef, Ref.ObjectRef<Long> objectRef2, Ref.ObjectRef<Long> objectRef3) {
             super(2);
             this.$this_readOrSkipLocalHeader = bufferedSource;
@@ -412,9 +412,9 @@ public final class ZipFilesKt {
             return Unit.INSTANCE;
         }
 
-        /* JADX WARN: Type inference failed for: r0v13, types: [T, java.lang.Long] */
-        /* JADX WARN: Type inference failed for: r10v11, types: [T, java.lang.Long] */
-        /* JADX WARN: Type inference failed for: r11v3, types: [T, java.lang.Long] */
+        /* WARN: Type inference failed for: r0v13, types: [T, java.lang.Long] */
+        /* WARN: Type inference failed for: r10v11, types: [T, java.lang.Long] */
+        /* WARN: Type inference failed for: r11v3, types: [T, java.lang.Long] */
         public final void invoke(int i, long j) throws IOException {
             if (i == ZipFilesKt.HEADER_ID_EXTENDED_TIMESTAMP) {
                 if (j < 1) {

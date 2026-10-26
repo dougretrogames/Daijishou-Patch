@@ -15,7 +15,7 @@ import javax.net.ssl.HttpsURLConnection;
 import org.jsoup.Connection;
 import org.jsoup.internal.Functions;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class UrlConnectionExecutor extends RequestExecutor {
     HttpURLConnection conn;
 

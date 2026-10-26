@@ -20,7 +20,7 @@ import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GifDrawable extends Drawable implements GifFrameLoader.FrameCallback, Animatable, Animatable2Compat {
     private static final int GRAVITY = 119;
     public static final int LOOP_FOREVER = -1;
@@ -207,7 +207,7 @@ public class GifDrawable extends Drawable implements GifFrameLoader.FrameCallbac
         return this.paint;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private Drawable.Callback findCallback() {
         Drawable.Callback callback = getCallback();
         while (callback instanceof Drawable) {

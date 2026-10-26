@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class GhostViewPlatform implements GhostView {
     private static final String TAG = "GhostViewApi21";
     private static Method sAddGhostMethod;

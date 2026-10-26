@@ -5,7 +5,7 @@ import java.util.Locale;
 import java.util.regex.Pattern;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class Platform {
     private static final PatternCompiler patternCompiler = loadPatternCompiler();

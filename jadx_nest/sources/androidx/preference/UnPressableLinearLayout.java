@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class UnPressableLinearLayout extends LinearLayout {
     @Override // android.view.ViewGroup, android.view.View
     protected void dispatchSetPressed(boolean z) {

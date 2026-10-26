@@ -11,7 +11,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class BitSet implements Cloneable, Iterable<Integer>, Externalizable, WordArray {
     static final long serialVersionUID = 7997698588986878754L;
     long[] data;
@@ -95,7 +95,7 @@ public class BitSet implements Cloneable, Iterable<Integer>, Externalizable, Wor
         }
     }
 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public BitSet m3467clone() {
         try {
             BitSet bitSet = (BitSet) super.clone();
@@ -169,7 +169,7 @@ public class BitSet implements Cloneable, Iterable<Integer>, Externalizable, Wor
         return (int) word;
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.datastructure.BitSet$1, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.datastructure.BitSet$1, reason: invalid class name */
     class AnonymousClass1 implements IntIterator {
         private int i;
         private int j;
@@ -196,7 +196,7 @@ public class BitSet implements Cloneable, Iterable<Integer>, Externalizable, Wor
         return new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.datastructure.BitSet$2, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.datastructure.BitSet$2, reason: invalid class name */
     class AnonymousClass2 implements Iterator<Integer> {
         private int i;
         private int j;
@@ -210,7 +210,7 @@ public class BitSet implements Cloneable, Iterable<Integer>, Externalizable, Wor
             return this.i >= 0;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.Iterator
         public Integer next() {
             int i = this.i;
@@ -389,7 +389,7 @@ public class BitSet implements Cloneable, Iterable<Integer>, Externalizable, Wor
         jArr[i2] = jArr[i2] & (~(1 << (i % 64)));
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.datastructure.BitSet$3, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.datastructure.BitSet$3, reason: invalid class name */
     class AnonymousClass3 implements IntIterator {
         private int i;
         private int j;

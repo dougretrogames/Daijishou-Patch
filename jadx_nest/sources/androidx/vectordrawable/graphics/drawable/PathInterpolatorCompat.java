@@ -13,7 +13,7 @@ import androidx.core.graphics.PathParser;
 import org.apache.commons.collections4.CollectionUtils;
 import org.xmlpull.v1.XmlPullParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PathInterpolatorCompat implements Interpolator {
     public static final double EPSILON = 1.0E-5d;
     public static final int MAX_NUM_POINTS = 3000;

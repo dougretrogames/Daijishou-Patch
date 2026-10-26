@@ -1,6 +1,6 @@
 package io.opencensus.tags.propagation;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class TagContextSerializationException extends Exception {
     private static final long serialVersionUID = 0;
 

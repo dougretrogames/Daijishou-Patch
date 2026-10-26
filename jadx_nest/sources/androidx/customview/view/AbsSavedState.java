@@ -3,7 +3,7 @@ package androidx.customview.view;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class AbsSavedState implements Parcelable {
     private final Parcelable mSuperState;
     public static final AbsSavedState EMPTY_STATE = new AnonymousClass1();
@@ -14,7 +14,7 @@ public abstract class AbsSavedState implements Parcelable {
         return 0;
     }
 
-    /* JADX INFO: renamed from: androidx.customview.view.AbsSavedState$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.customview.view.AbsSavedState$1, reason: invalid class name */
     class AnonymousClass1 extends AbsSavedState {
         AnonymousClass1() {
             super((AnonymousClass1) null);
@@ -54,12 +54,12 @@ public abstract class AbsSavedState implements Parcelable {
         parcel.writeParcelable(this.mSuperState, i);
     }
 
-    /* JADX INFO: renamed from: androidx.customview.view.AbsSavedState$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.customview.view.AbsSavedState$2, reason: invalid class name */
     class AnonymousClass2 implements Parcelable.ClassLoaderCreator<AbsSavedState> {
         AnonymousClass2() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.ClassLoaderCreator
         public AbsSavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
             if (parcel.readParcelable(classLoader) != null) {

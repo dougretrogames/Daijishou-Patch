@@ -2,7 +2,7 @@ package org.apache.http.conn.routing;
 
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicRouteDirector implements HttpRouteDirector {
     @Override // org.apache.http.conn.routing.HttpRouteDirector
     public int nextStep(RouteInfo routeInfo, RouteInfo routeInfo2) {

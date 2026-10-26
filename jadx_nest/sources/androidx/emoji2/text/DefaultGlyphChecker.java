@@ -3,7 +3,7 @@ package androidx.emoji2.text;
 import android.text.TextPaint;
 import androidx.core.graphics.PaintCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class DefaultGlyphChecker implements EmojiCompat.GlyphChecker {
     private static final int PAINT_TEXT_SIZE = 10;
     private static final ThreadLocal<StringBuilder> sStringBuilder = new ThreadLocal<>();

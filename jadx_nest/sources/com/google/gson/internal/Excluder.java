@@ -18,7 +18,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Excluder implements TypeAdapterFactory, Cloneable {
     public static final Excluder DEFAULT = new Excluder();
     private static final double IGNORE_VERSIONS = -1.0d;
@@ -29,8 +29,8 @@ public final class Excluder implements TypeAdapterFactory, Cloneable {
     private List<ExclusionStrategy> serializationStrategies = Collections.emptyList();
     private List<ExclusionStrategy> deserializationStrategies = Collections.emptyList();
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: Access modifiers changed from: protected */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public Excluder m3376clone() {
         try {
             return (Excluder) super.clone();
@@ -93,8 +93,8 @@ public final class Excluder implements TypeAdapterFactory, Cloneable {
         return null;
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.gson.internal.Excluder$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.gson.internal.Excluder$1, reason: invalid class name */
     class AnonymousClass1<T> extends TypeAdapter<T> {
         private TypeAdapter<T> delegate;
         final /* synthetic */ Gson val$gson;

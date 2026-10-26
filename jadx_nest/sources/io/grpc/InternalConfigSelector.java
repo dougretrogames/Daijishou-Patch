@@ -4,7 +4,7 @@ import androidx.core.app.NotificationCompat;
 import com.google.common.base.Preconditions;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class InternalConfigSelector {
     public static final Attributes.Key<InternalConfigSelector> KEY = Attributes.Key.create("internal:io.grpc.config-selector");
 

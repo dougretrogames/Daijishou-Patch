@@ -2,8 +2,8 @@ package androidx.preference;
 
 import androidx.fragment.app.FragmentManager;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class PreferenceHeaderFragmentCompat$$ExternalSyntheticLambda0 implements FragmentManager.OnBackStackChangedListener {
     public final /* synthetic */ PreferenceHeaderFragmentCompat f$0;
 

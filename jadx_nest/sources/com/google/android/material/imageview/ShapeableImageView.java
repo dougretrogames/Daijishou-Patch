@@ -24,7 +24,7 @@ import com.google.android.material.shape.ShapeAppearancePathProvider;
 import com.google.android.material.shape.Shapeable;
 import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ShapeableImageView extends AppCompatImageView implements Shapeable {
     private static final int DEF_STYLE_RES = R.style.Widget_MaterialComponents_ShapeableImageView;
     private static final int UNDEFINED_PADDING = Integer.MIN_VALUE;
@@ -55,7 +55,7 @@ public class ShapeableImageView extends AppCompatImageView implements Shapeable 
         this(context, attributeSet, 0);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public ShapeableImageView(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);

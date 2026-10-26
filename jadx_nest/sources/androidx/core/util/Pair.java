@@ -1,6 +1,6 @@
 package androidx.core.util;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Pair<F, S> {
     public final F first;
     public final S second;

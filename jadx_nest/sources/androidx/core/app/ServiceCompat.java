@@ -6,7 +6,7 @@ import android.os.Build;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ServiceCompat {
     private static final int FOREGROUND_SERVICE_TYPE_ALLOWED_SINCE_Q = 255;
     private static final int FOREGROUND_SERVICE_TYPE_ALLOWED_SINCE_U = 1073745919;

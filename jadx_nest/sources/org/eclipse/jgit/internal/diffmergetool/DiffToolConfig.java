@@ -7,7 +7,7 @@ import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.eclipse.jgit.lib.internal.BooleanTriState;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DiffToolConfig {
     public static final Config.SectionParser<DiffToolConfig> KEY = new DiffToolConfig$$ExternalSyntheticLambda0();
     private final String guiToolName;
@@ -16,7 +16,7 @@ public class DiffToolConfig {
     private final Map<String, ExternalDiffTool> tools;
     private final BooleanTriState trustExitCode;
 
-    /* JADX INFO: renamed from: $r8$lambda$TMdPLj_8iJfmylvCnT_aCZ3Sd-s, reason: not valid java name */
+    /* INFO: renamed from: $r8$lambda$TMdPLj_8iJfmylvCnT_aCZ3Sd-s, reason: not valid java name */
     public static /* synthetic */ DiffToolConfig m5659$r8$lambda$TMdPLj_8iJfmylvCnT_aCZ3Sds(Config config) {
         return new DiffToolConfig(config);
     }

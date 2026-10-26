@@ -7,7 +7,7 @@ import org.apache.commons.codec.StringEncoder;
 import org.apache.commons.codec.binary.StringUtils;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DoubleMetaphone implements StringEncoder {
     private static final String VOWELS = "AEIOUY";
     private int maxCodeLen = 4;
@@ -176,29 +176,29 @@ public class DoubleMetaphone implements StringEncoder {
         return doubleMetaphone(str, false);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v0, types: [boolean] */
-    /* JADX WARN: Type inference failed for: r1v1, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v10, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v11, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v12, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v13, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v14, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v15, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v16, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v17 */
-    /* JADX WARN: Type inference failed for: r1v18, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v19, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v2, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v3 */
-    /* JADX WARN: Type inference failed for: r1v4, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v5, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v6, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v7, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v8, types: [int] */
-    /* JADX WARN: Type inference failed for: r1v9, types: [int] */
-    /* JADX WARN: Type inference failed for: r7v0, types: [org.apache.commons.codec.language.DoubleMetaphone] */
-    /* JADX WARN: Type inference failed for: r8v1, types: [java.lang.String] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r1v0, types: [boolean] */
+    /* WARN: Type inference failed for: r1v1, types: [int] */
+    /* WARN: Type inference failed for: r1v10, types: [int] */
+    /* WARN: Type inference failed for: r1v11, types: [int] */
+    /* WARN: Type inference failed for: r1v12, types: [int] */
+    /* WARN: Type inference failed for: r1v13, types: [int] */
+    /* WARN: Type inference failed for: r1v14, types: [int] */
+    /* WARN: Type inference failed for: r1v15, types: [int] */
+    /* WARN: Type inference failed for: r1v16, types: [int] */
+    /* WARN: Type inference failed for: r1v17 */
+    /* WARN: Type inference failed for: r1v18, types: [int] */
+    /* WARN: Type inference failed for: r1v19, types: [int] */
+    /* WARN: Type inference failed for: r1v2, types: [int] */
+    /* WARN: Type inference failed for: r1v3 */
+    /* WARN: Type inference failed for: r1v4, types: [int] */
+    /* WARN: Type inference failed for: r1v5, types: [int] */
+    /* WARN: Type inference failed for: r1v6, types: [int] */
+    /* WARN: Type inference failed for: r1v7, types: [int] */
+    /* WARN: Type inference failed for: r1v8, types: [int] */
+    /* WARN: Type inference failed for: r1v9, types: [int] */
+    /* WARN: Type inference failed for: r7v0, types: [org.apache.commons.codec.language.DoubleMetaphone] */
+    /* WARN: Type inference failed for: r8v1, types: [java.lang.String] */
     public String doubleMetaphone(String str, boolean z) {
         int i;
         ?? CleanInput = cleanInput(str);
@@ -508,9 +508,9 @@ public class DoubleMetaphone implements StringEncoder {
         return i + 2;
     }
 
-    /* JADX WARN: Code duplicated, block: B:20:0x0058  */
-    /* JADX WARN: Code duplicated, block: B:22:0x005f  */
-    /* JADX WARN: Code duplicated, block: B:23:0x0063  */
+    /* WARN: Code duplicated, block: B:20:0x0058  */
+    /* WARN: Code duplicated, block: B:22:0x005f  */
+    /* WARN: Code duplicated, block: B:23:0x0063  */
     private int handleJ(String str, DoubleMetaphoneResult doubleMetaphoneResult, int i, boolean z) {
         if (contains(str, i, 4, "JOSE") || contains(str, 0, 4, "SAN ")) {
             if ((i == 0 && charAt(str, i + 4) == ' ') || str.length() == 4 || contains(str, 0, 4, "SAN ")) {

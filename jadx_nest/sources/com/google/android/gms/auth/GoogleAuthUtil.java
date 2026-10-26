@@ -11,8 +11,8 @@ import com.google.android.gms.common.internal.Preconditions;
 import java.io.IOException;
 import java.util.List;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public final class GoogleAuthUtil extends zzl {
     public static final int CHANGE_TYPE_ACCOUNT_ADDED = 1;
     public static final int CHANGE_TYPE_ACCOUNT_REMOVED = 2;

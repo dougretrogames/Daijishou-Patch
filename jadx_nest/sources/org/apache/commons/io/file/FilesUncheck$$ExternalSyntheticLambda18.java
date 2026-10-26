@@ -6,8 +6,8 @@ import java.nio.file.Path;
 import java.util.function.BiPredicate;
 import org.apache.commons.io.function.IOQuadFunction;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class FilesUncheck$$ExternalSyntheticLambda18 implements IOQuadFunction {
     @Override // org.apache.commons.io.function.IOQuadFunction
     public final Object apply(Object obj, Object obj2, Object obj3, Object obj4) {

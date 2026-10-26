@@ -3,7 +3,7 @@ package org.apache.commons.collections4.iterators;
 import java.util.NoSuchElementException;
 import org.apache.commons.collections4.ResettableIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ObjectArrayIterator<E> implements ResettableIterator<E> {
     final E[] array;
     final int endIndex;

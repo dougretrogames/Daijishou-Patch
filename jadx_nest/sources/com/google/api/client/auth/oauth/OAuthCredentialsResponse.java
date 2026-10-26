@@ -2,7 +2,7 @@ package com.google.api.client.auth.oauth;
 
 import com.google.api.client.util.Key;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class OAuthCredentialsResponse {
 
     @Key("oauth_callback_confirmed")

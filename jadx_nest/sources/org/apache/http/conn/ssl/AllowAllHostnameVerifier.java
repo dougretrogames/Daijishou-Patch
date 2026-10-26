@@ -1,6 +1,6 @@
 package org.apache.http.conn.ssl;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class AllowAllHostnameVerifier extends AbstractVerifier {
     public static final AllowAllHostnameVerifier INSTANCE = new AllowAllHostnameVerifier();

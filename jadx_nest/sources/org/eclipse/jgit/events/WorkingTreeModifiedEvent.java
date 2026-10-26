@@ -4,7 +4,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class WorkingTreeModifiedEvent extends RepositoryEvent<WorkingTreeModifiedListener> {
     private Collection<String> deleted;
     private Collection<String> modified;

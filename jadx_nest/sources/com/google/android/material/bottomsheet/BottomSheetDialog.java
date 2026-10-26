@@ -27,7 +27,7 @@ import com.google.android.material.internal.ViewUtils;
 import com.google.android.material.motion.MaterialBackOrchestrator;
 import com.google.android.material.shape.MaterialShapeDrawable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BottomSheetDialog extends AppCompatDialog {
     private MaterialBackOrchestrator backOrchestrator;
     private BottomSheetBehavior<FrameLayout> behavior;
@@ -228,7 +228,7 @@ public class BottomSheetDialog extends AppCompatDialog {
         return this.container;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDialog$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDialog$1, reason: invalid class name */
     class AnonymousClass1 implements OnApplyWindowInsetsListener {
         AnonymousClass1() {
         }
@@ -247,7 +247,7 @@ public class BottomSheetDialog extends AppCompatDialog {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDialog$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDialog$2, reason: invalid class name */
     class AnonymousClass2 implements View.OnClickListener {
         AnonymousClass2() {
         }
@@ -260,7 +260,7 @@ public class BottomSheetDialog extends AppCompatDialog {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDialog$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDialog$3, reason: invalid class name */
     class AnonymousClass3 extends AccessibilityDelegateCompat {
         AnonymousClass3() {
         }
@@ -286,7 +286,7 @@ public class BottomSheetDialog extends AppCompatDialog {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDialog$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDialog$4, reason: invalid class name */
     class AnonymousClass4 implements View.OnTouchListener {
         @Override // android.view.View.OnTouchListener
         public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -334,7 +334,7 @@ public class BottomSheetDialog extends AppCompatDialog {
         this.behavior.removeBottomSheetCallback(this.bottomSheetCallback);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDialog$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDialog$5, reason: invalid class name */
     class AnonymousClass5 extends BottomSheetBehavior.BottomSheetCallback {
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.BottomSheetCallback
         public void onSlide(View view, float f) {

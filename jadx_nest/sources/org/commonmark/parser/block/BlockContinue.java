@@ -2,7 +2,7 @@ package org.commonmark.parser.block;
 
 import org.commonmark.internal.BlockContinueImpl;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BlockContinue {
     public static BlockContinue none() {
         return null;

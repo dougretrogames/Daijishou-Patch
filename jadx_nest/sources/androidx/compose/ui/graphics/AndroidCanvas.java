@@ -11,8 +11,8 @@ import kotlin.Metadata;
 import kotlin.Unit;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: AndroidCanvas.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AndroidCanvas.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000ª\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0007\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0010 \n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0014\n\u0002\b\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0001\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\"\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u0013H\u0016ø\u0001\u0000¢\u0006\u0004\b\u0014\u0010\u0015J:\u0010\u0016\u001a\u00020\u000f2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u001a\u001a\u00020\u00182\u0006\u0010\u001b\u001a\u00020\u00182\u0006\u0010\u0012\u001a\u00020\u0013H\u0016ø\u0001\u0000¢\u0006\u0004\b\u001c\u0010\u001dJ\u001a\u0010\u001e\u001a\u00020\u000f2\u0006\u0010\u001f\u001a\u00020 H\u0016ø\u0001\u0000¢\u0006\u0004\b!\u0010\"J\b\u0010#\u001a\u00020\u000fH\u0016JH\u0010$\u001a\u00020\u000f2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u001a\u001a\u00020\u00182\u0006\u0010\u001b\u001a\u00020\u00182\u0006\u0010%\u001a\u00020\u00182\u0006\u0010&\u001a\u00020\u00182\u0006\u0010'\u001a\u00020(2\u0006\u0010)\u001a\u00020*H\u0016J*\u0010+\u001a\u00020\u000f2\u0006\u0010,\u001a\u00020-2\u0006\u0010.\u001a\u00020\u00182\u0006\u0010)\u001a\u00020*H\u0016ø\u0001\u0000¢\u0006\u0004\b/\u00100J*\u00101\u001a\u00020\u000f2\u0006\u00102\u001a\u0002032\u0006\u00104\u001a\u00020-2\u0006\u0010)\u001a\u00020*H\u0016ø\u0001\u0000¢\u0006\u0004\b5\u00106JB\u00107\u001a\u00020\u000f2\u0006\u00102\u001a\u0002032\u0006\u00108\u001a\u0002092\u0006\u0010:\u001a\u00020;2\u0006\u0010<\u001a\u0002092\u0006\u0010=\u001a\u00020;2\u0006\u0010)\u001a\u00020*H\u0016ø\u0001\u0000¢\u0006\u0004\b>\u0010?J*\u0010@\u001a\u00020\u000f2\u0006\u0010A\u001a\u00020-2\u0006\u0010B\u001a\u00020-2\u0006\u0010)\u001a\u00020*H\u0016ø\u0001\u0000¢\u0006\u0004\bC\u0010DJ&\u0010E\u001a\u00020\u000f2\f\u0010F\u001a\b\u0012\u0004\u0012\u00020-0G2\u0006\u0010)\u001a\u00020*2\u0006\u0010H\u001a\u00020IH\u0002J0\u0010J\u001a\u00020\u000f2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u001a\u001a\u00020\u00182\u0006\u0010\u001b\u001a\u00020\u00182\u0006\u0010)\u001a\u00020*H\u0016J\u0018\u0010K\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010)\u001a\u00020*H\u0016J0\u0010L\u001a\u00020\u000f2\u0006\u0010M\u001a\u00020N2\f\u0010F\u001a\b\u0012\u0004\u0012\u00020-0G2\u0006\u0010)\u001a\u00020*H\u0016ø\u0001\u0000¢\u0006\u0004\bO\u0010PJ\u001e\u0010L\u001a\u00020\u000f2\f\u0010F\u001a\b\u0012\u0004\u0012\u00020-0G2\u0006\u0010)\u001a\u00020*H\u0002J \u0010Q\u001a\u00020\u000f2\u0006\u0010F\u001a\u00020R2\u0006\u0010)\u001a\u00020*2\u0006\u0010H\u001a\u00020IH\u0002J*\u0010S\u001a\u00020\u000f2\u0006\u0010M\u001a\u00020N2\u0006\u0010F\u001a\u00020R2\u0006\u0010)\u001a\u00020*H\u0016ø\u0001\u0000¢\u0006\u0004\bT\u0010UJ \u0010S\u001a\u00020\u000f2\u0006\u0010F\u001a\u00020R2\u0006\u0010)\u001a\u00020*2\u0006\u0010H\u001a\u00020IH\u0002J0\u0010V\u001a\u00020\u000f2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u001a\u001a\u00020\u00182\u0006\u0010\u001b\u001a\u00020\u00182\u0006\u0010)\u001a\u00020*H\u0016J@\u0010W\u001a\u00020\u000f2\u0006\u0010\u0017\u001a\u00020\u00182\u0006\u0010\u0019\u001a\u00020\u00182\u0006\u0010\u001a\u001a\u00020\u00182\u0006\u0010\u001b\u001a\u00020\u00182\u0006\u0010X\u001a\u00020\u00182\u0006\u0010Y\u001a\u00020\u00182\u0006\u0010)\u001a\u00020*H\u0016J*\u0010Z\u001a\u00020\u000f2\u0006\u0010[\u001a\u00020\\2\u0006\u0010]\u001a\u00020^2\u0006\u0010)\u001a\u00020*H\u0016ø\u0001\u0000¢\u0006\u0004\b_\u0010`J\b\u0010a\u001a\u00020\u000fH\u0016J\b\u0010b\u001a\u00020\u000fH\u0016J\u0010\u0010c\u001a\u00020\u000f2\u0006\u0010d\u001a\u00020\u0018H\u0016J\b\u0010e\u001a\u00020\u000fH\u0016J\u0018\u0010f\u001a\u00020\u000f2\u0006\u0010g\u001a\u00020h2\u0006\u0010)\u001a\u00020*H\u0016J\u0018\u0010i\u001a\u00020\u000f2\u0006\u0010j\u001a\u00020\u00182\u0006\u0010k\u001a\u00020\u0018H\u0016J\u0018\u0010l\u001a\u00020\u000f2\u0006\u0010j\u001a\u00020\u00182\u0006\u0010k\u001a\u00020\u0018H\u0016J\u0018\u0010m\u001a\u00020\u000f2\u0006\u0010n\u001a\u00020\u00182\u0006\u0010o\u001a\u00020\u0018H\u0016J\u0014\u0010p\u001a\u00020q*\u00020\u0013ø\u0001\u0000¢\u0006\u0004\br\u0010sR\u0010\u0010\u0003\u001a\u0004\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R(\u0010\u0005\u001a\u00060\u0006j\u0002`\u00078\u0000@\u0000X\u0081\u000e¢\u0006\u0014\n\u0000\u0012\u0004\b\b\u0010\u0002\u001a\u0004\b\t\u0010\n\"\u0004\b\u000b\u0010\fR\u0010\u0010\r\u001a\u0004\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006t"}, d2 = {"Landroidx/compose/ui/graphics/AndroidCanvas;", "Landroidx/compose/ui/graphics/Canvas;", "()V", "dstRect", "Landroid/graphics/Rect;", "internalCanvas", "Landroid/graphics/Canvas;", "Landroidx/compose/ui/graphics/NativeCanvas;", "getInternalCanvas$annotations", "getInternalCanvas", "()Landroid/graphics/Canvas;", "setInternalCanvas", "(Landroid/graphics/Canvas;)V", "srcRect", "clipPath", "", "path", "Landroidx/compose/ui/graphics/Path;", "clipOp", "Landroidx/compose/ui/graphics/ClipOp;", "clipPath-mtrdD-E", "(Landroidx/compose/ui/graphics/Path;I)V", "clipRect", "left", "", "top", "right", "bottom", "clipRect-N_I0leg", "(FFFFI)V", "concat", "matrix", "Landroidx/compose/ui/graphics/Matrix;", "concat-58bKbWc", "([F)V", "disableZ", "drawArc", "startAngle", "sweepAngle", "useCenter", "", "paint", "Landroidx/compose/ui/graphics/Paint;", "drawCircle", "center", "Landroidx/compose/ui/geometry/Offset;", "radius", "drawCircle-9KIMszo", "(JFLandroidx/compose/ui/graphics/Paint;)V", "drawImage", "image", "Landroidx/compose/ui/graphics/ImageBitmap;", "topLeftOffset", "drawImage-d-4ec7I", "(Landroidx/compose/ui/graphics/ImageBitmap;JLandroidx/compose/ui/graphics/Paint;)V", "drawImageRect", "srcOffset", "Landroidx/compose/ui/unit/IntOffset;", "srcSize", "Landroidx/compose/ui/unit/IntSize;", "dstOffset", "dstSize", "drawImageRect-HPBpro0", "(Landroidx/compose/ui/graphics/ImageBitmap;JJJJLandroidx/compose/ui/graphics/Paint;)V", "drawLine", "p1", "p2", "drawLine-Wko1d7g", "(JJLandroidx/compose/ui/graphics/Paint;)V", "drawLines", "points", "", "stepBy", "", "drawOval", "drawPath", "drawPoints", "pointMode", "Landroidx/compose/ui/graphics/PointMode;", "drawPoints-O7TthRY", "(ILjava/util/List;Landroidx/compose/ui/graphics/Paint;)V", "drawRawLines", "", "drawRawPoints", "drawRawPoints-O7TthRY", "(I[FLandroidx/compose/ui/graphics/Paint;)V", "drawRect", "drawRoundRect", "radiusX", "radiusY", "drawVertices", "vertices", "Landroidx/compose/ui/graphics/Vertices;", "blendMode", "Landroidx/compose/ui/graphics/BlendMode;", "drawVertices-TPEHhCM", "(Landroidx/compose/ui/graphics/Vertices;ILandroidx/compose/ui/graphics/Paint;)V", "enableZ", "restore", "rotate", "degrees", "save", "saveLayer", "bounds", "Landroidx/compose/ui/geometry/Rect;", "scale", "sx", "sy", "skew", "translate", "dx", "dy", "toRegionOp", "Landroid/graphics/Region$Op;", "toRegionOp--7u2Bmg", "(I)Landroid/graphics/Region$Op;", "ui-graphics_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class AndroidCanvas implements Canvas {
     private Rect dstRect;
@@ -66,7 +66,7 @@ public final class AndroidCanvas implements Canvas {
     }
 
     @Override // androidx.compose.ui.graphics.Canvas
-    /* JADX INFO: renamed from: concat-58bKbWc, reason: not valid java name */
+    /* INFO: renamed from: concat-58bKbWc, reason: not valid java name */
     public void mo385concat58bKbWc(float[] matrix) {
         if (MatrixKt.m786isIdentity58bKbWc(matrix)) {
             return;
@@ -77,13 +77,13 @@ public final class AndroidCanvas implements Canvas {
     }
 
     @Override // androidx.compose.ui.graphics.Canvas
-    /* JADX INFO: renamed from: clipRect-N_I0leg, reason: not valid java name */
+    /* INFO: renamed from: clipRect-N_I0leg, reason: not valid java name */
     public void mo384clipRectN_I0leg(float left, float top, float right, float bottom, int clipOp) {
         this.internalCanvas.clipRect(left, top, right, bottom, m393toRegionOp7u2Bmg(clipOp));
     }
 
     @Override // androidx.compose.ui.graphics.Canvas
-    /* JADX INFO: renamed from: clipPath-mtrdD-E, reason: not valid java name */
+    /* INFO: renamed from: clipPath-mtrdD-E, reason: not valid java name */
     public void mo383clipPathmtrdDE(Path path, int clipOp) {
         android.graphics.Canvas canvas = this.internalCanvas;
         if (path instanceof AndroidPath) {
@@ -93,13 +93,13 @@ public final class AndroidCanvas implements Canvas {
         throw new UnsupportedOperationException("Unable to obtain android.graphics.Path");
     }
 
-    /* JADX INFO: renamed from: toRegionOp--7u2Bmg, reason: not valid java name */
+    /* INFO: renamed from: toRegionOp--7u2Bmg, reason: not valid java name */
     public final Region.Op m393toRegionOp7u2Bmg(int i) {
         return ClipOp.m514equalsimpl0(i, ClipOp.INSTANCE.m518getDifferencertfAjoo()) ? Region.Op.DIFFERENCE : Region.Op.INTERSECT;
     }
 
     @Override // androidx.compose.ui.graphics.Canvas
-    /* JADX INFO: renamed from: drawLine-Wko1d7g, reason: not valid java name */
+    /* INFO: renamed from: drawLine-Wko1d7g, reason: not valid java name */
     public void mo389drawLineWko1d7g(long p1, long p2, Paint paint) {
         this.internalCanvas.drawLine(Offset.m289getXimpl(p1), Offset.m290getYimpl(p1), Offset.m289getXimpl(p2), Offset.m290getYimpl(p2), paint.getInternalPaint());
     }
@@ -120,7 +120,7 @@ public final class AndroidCanvas implements Canvas {
     }
 
     @Override // androidx.compose.ui.graphics.Canvas
-    /* JADX INFO: renamed from: drawCircle-9KIMszo, reason: not valid java name */
+    /* INFO: renamed from: drawCircle-9KIMszo, reason: not valid java name */
     public void mo386drawCircle9KIMszo(long center, float radius, Paint paint) {
         this.internalCanvas.drawCircle(Offset.m289getXimpl(center), Offset.m290getYimpl(center), radius, paint.getInternalPaint());
     }
@@ -141,13 +141,13 @@ public final class AndroidCanvas implements Canvas {
     }
 
     @Override // androidx.compose.ui.graphics.Canvas
-    /* JADX INFO: renamed from: drawImage-d-4ec7I, reason: not valid java name */
+    /* INFO: renamed from: drawImage-d-4ec7I, reason: not valid java name */
     public void mo387drawImaged4ec7I(ImageBitmap image, long topLeftOffset, Paint paint) {
         this.internalCanvas.drawBitmap(AndroidImageBitmap_androidKt.asAndroidBitmap(image), Offset.m289getXimpl(topLeftOffset), Offset.m290getYimpl(topLeftOffset), paint.getInternalPaint());
     }
 
     @Override // androidx.compose.ui.graphics.Canvas
-    /* JADX INFO: renamed from: drawImageRect-HPBpro0, reason: not valid java name */
+    /* INFO: renamed from: drawImageRect-HPBpro0, reason: not valid java name */
     public void mo388drawImageRectHPBpro0(ImageBitmap image, long srcOffset, long srcSize, long dstOffset, long dstSize, Paint paint) {
         if (this.srcRect == null) {
             this.srcRect = new Rect();
@@ -173,7 +173,7 @@ public final class AndroidCanvas implements Canvas {
     }
 
     @Override // androidx.compose.ui.graphics.Canvas
-    /* JADX INFO: renamed from: drawPoints-O7TthRY, reason: not valid java name */
+    /* INFO: renamed from: drawPoints-O7TthRY, reason: not valid java name */
     public void mo390drawPointsO7TthRY(int pointMode, List<Offset> points, Paint paint) {
         if (PointMode.m831equalsimpl0(pointMode, PointMode.INSTANCE.m835getLinesr_lszbg())) {
             drawLines(points, paint, 2);
@@ -208,7 +208,7 @@ public final class AndroidCanvas implements Canvas {
     }
 
     @Override // androidx.compose.ui.graphics.Canvas
-    /* JADX INFO: renamed from: drawRawPoints-O7TthRY, reason: not valid java name */
+    /* INFO: renamed from: drawRawPoints-O7TthRY, reason: not valid java name */
     public void mo391drawRawPointsO7TthRY(int pointMode, float[] points, Paint paint) {
         if (points.length % 2 != 0) {
             throw new IllegalArgumentException("points must have an even number of values");
@@ -246,7 +246,7 @@ public final class AndroidCanvas implements Canvas {
     }
 
     @Override // androidx.compose.ui.graphics.Canvas
-    /* JADX INFO: renamed from: drawVertices-TPEHhCM, reason: not valid java name */
+    /* INFO: renamed from: drawVertices-TPEHhCM, reason: not valid java name */
     public void mo392drawVerticesTPEHhCM(Vertices vertices, int blendMode, Paint paint) {
         this.internalCanvas.drawVertices(AndroidVertexMode_androidKt.m436toAndroidVertexModeJOOmi9M(vertices.getVertexMode()), vertices.getPositions().length, vertices.getPositions(), 0, vertices.getTextureCoordinates(), 0, vertices.getColors(), 0, vertices.getIndices(), 0, vertices.getIndices().length, paint.getInternalPaint());
     }

@@ -2,7 +2,7 @@ package org.apache.commons.codec.digest;
 
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum HmacAlgorithms {
     HMAC_MD5("HmacMD5"),
     HMAC_SHA_1(InternalZipConstants.AES_MAC_ALGORITHM),

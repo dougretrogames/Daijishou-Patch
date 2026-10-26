@@ -12,7 +12,7 @@ import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.constraintlayout.widget.R;
 import androidx.constraintlayout.widget.VirtualLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Flow extends VirtualLayout {
     public static final int CHAIN_PACKED = 2;
     public static final int CHAIN_SPREAD = 0;

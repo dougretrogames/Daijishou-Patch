@@ -12,7 +12,7 @@ import kotlin.text.Typography;
 import org.jsoup.Connection;
 import org.jsoup.internal.StringUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class UrlBuilder {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private static final String unsafeCharacters = "<>\"{}|\\^[]`";
@@ -74,7 +74,7 @@ final class UrlBuilder {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:20:0x0058  */
+    /* WARN: Code duplicated, block: B:20:0x0058  */
     private static void appendToAscii(String str, boolean z, StringBuilder sb) throws UnsupportedEncodingException {
         int i = 0;
         while (i < str.length()) {

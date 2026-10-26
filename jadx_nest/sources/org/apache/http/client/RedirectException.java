@@ -2,7 +2,7 @@ package org.apache.http.client;
 
 import org.apache.http.ProtocolException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RedirectException extends ProtocolException {
     private static final long serialVersionUID = 4418824536372559326L;
 

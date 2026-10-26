@@ -11,7 +11,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FrameMetricsAggregator {
     public static final int ANIMATION_DURATION = 256;
     public static final int ANIMATION_INDEX = 8;
@@ -105,7 +105,7 @@ public class FrameMetricsAggregator {
             this.mTrackingFlags = i;
         }
 
-        /* JADX INFO: renamed from: androidx.core.app.FrameMetricsAggregator$FrameMetricsApi24Impl$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.core.app.FrameMetricsAggregator$FrameMetricsApi24Impl$1, reason: invalid class name */
         class AnonymousClass1 implements Window.OnFrameMetricsAvailableListener {
             AnonymousClass1() {
             }

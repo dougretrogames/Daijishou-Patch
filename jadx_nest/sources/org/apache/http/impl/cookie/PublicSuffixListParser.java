@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.Reader;
 import org.apache.http.conn.util.PublicSuffixList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class PublicSuffixListParser {
     private final PublicSuffixFilter filter;

@@ -1,6 +1,6 @@
 package org.eclipse.jgit.transport;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class SshConstants {
     public static final String ADD_KEYS_TO_AGENT = "AddKeysToAgent";
     public static final String BATCH_MODE = "BatchMode";

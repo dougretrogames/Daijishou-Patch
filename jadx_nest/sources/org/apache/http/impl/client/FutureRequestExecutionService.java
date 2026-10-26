@@ -10,7 +10,7 @@ import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.concurrent.FutureCallback;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FutureRequestExecutionService implements Closeable {
     private final ExecutorService executorService;
     private final HttpClient httpclient;

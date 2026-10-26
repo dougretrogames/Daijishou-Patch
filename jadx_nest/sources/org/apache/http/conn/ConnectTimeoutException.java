@@ -6,7 +6,7 @@ import java.net.InetAddress;
 import java.util.Arrays;
 import org.apache.http.HttpHost;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ConnectTimeoutException extends InterruptedIOException {
     private static final long serialVersionUID = -4816682903149535989L;
     private final HttpHost host;

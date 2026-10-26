@@ -1,6 +1,6 @@
 package org.commonmark.node;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LinkReferenceDefinition extends Node {
     private String destination;
     private String label;

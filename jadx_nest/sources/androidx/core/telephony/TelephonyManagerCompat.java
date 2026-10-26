@@ -5,7 +5,7 @@ import android.telephony.TelephonyManager;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TelephonyManagerCompat {
     private static Method sGetDeviceIdMethod;
     private static Method sGetSubIdMethod;

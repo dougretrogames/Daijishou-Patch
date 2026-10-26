@@ -10,7 +10,7 @@ import java.util.Iterator;
 import java.util.SortedSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable(containerOf = {"C"})
 @ElementTypesAreNonnullByDefault
 public final class Range<C extends Comparable> extends RangeGwtSerializationDependencies implements Predicate<C>, Serializable {
@@ -57,7 +57,7 @@ public final class Range<C extends Comparable> extends RangeGwtSerializationDepe
         return create(Cut.belowAll(), Cut.aboveValue(endpoint));
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.Range$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.Range$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$common$collect$BoundType;
 

@@ -28,7 +28,7 @@ import net.lingala.zip4j.util.InternalZipConstants;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ViewTransition {
     static final int ANTICIPATE = 6;
     static final int BOUNCE = 4;
@@ -143,7 +143,7 @@ public class ViewTransition {
         return new AnticipateInterpolator();
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.motion.widget.ViewTransition$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.motion.widget.ViewTransition$1, reason: invalid class name */
     class AnonymousClass1 implements Interpolator {
         final /* synthetic */ Easing val$easing;
 
@@ -157,8 +157,8 @@ public class ViewTransition {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:32:0x0093 A[Catch: IOException -> 0x00d1, XmlPullParserException -> 0x00d6, TryCatch #2 {IOException -> 0x00d1, XmlPullParserException -> 0x00d6, blocks: (B:3:0x002a, B:33:0x00cb, B:11:0x0039, B:14:0x0045, B:15:0x004d, B:32:0x0093, B:17:0x0051, B:22:0x0062, B:20:0x005a, B:23:0x006a, B:25:0x0070, B:26:0x0074, B:28:0x007c, B:29:0x0084, B:31:0x008c), top: B:40:0x002a }] */
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Code duplicated, block: B:32:0x0093 A[Catch: IOException -> 0x00d1, XmlPullParserException -> 0x00d6, TryCatch #2 {IOException -> 0x00d1, XmlPullParserException -> 0x00d6, blocks: (B:3:0x002a, B:33:0x00cb, B:11:0x0039, B:14:0x0045, B:15:0x004d, B:32:0x0093, B:17:0x0051, B:22:0x0062, B:20:0x005a, B:23:0x006a, B:25:0x0070, B:26:0x0074, B:28:0x007c, B:29:0x0084, B:31:0x008c), top: B:40:0x002a }] */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     ViewTransition(Context context, XmlPullParser xmlPullParser) {
         this.mContext = context;
         try {
@@ -475,7 +475,7 @@ public class ViewTransition {
         motionLayout.transitionToEnd(new ViewTransition$$ExternalSyntheticLambda0(this, viewArr));
     }
 
-    /* JADX INFO: renamed from: lambda$applyTransition$0$androidx-constraintlayout-motion-widget-ViewTransition, reason: not valid java name */
+    /* INFO: renamed from: lambda$applyTransition$0$androidx-constraintlayout-motion-widget-ViewTransition, reason: not valid java name */
     /* synthetic */ void m3144x14d7500(View[] viewArr) {
         if (this.mSetsTag != -1) {
             for (View view : viewArr) {

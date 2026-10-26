@@ -29,7 +29,7 @@ import com.google.android.material.shape.MaterialShapeDrawable;
 import com.google.android.material.shape.RoundedCornerTreatment;
 import com.google.android.material.shape.ShapeAppearanceModel;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class MaterialCardViewHelper {
     private static final float CARD_VIEW_SHADOW_MULTIPLIER = 1.5f;
     private static final int CHECKED_ICON_LAYER_INDEX = 2;
@@ -221,7 +221,7 @@ class MaterialCardViewHelper {
         this.iconAnimator.start();
     }
 
-    /* JADX INFO: renamed from: lambda$animateCheckedIcon$0$com-google-android-material-card-MaterialCardViewHelper, reason: not valid java name */
+    /* INFO: renamed from: lambda$animateCheckedIcon$0$com-google-android-material-card-MaterialCardViewHelper, reason: not valid java name */
     /* synthetic */ void m3258xa4d79c2b(ValueAnimator valueAnimator) {
         float fFloatValue = ((Float) valueAnimator.getAnimatedValue()).floatValue();
         this.checkedIcon.setAlpha((int) (255.0f * fFloatValue));
@@ -447,7 +447,7 @@ class MaterialCardViewHelper {
         return new AnonymousClass1(drawable, iCeil, iCeil2, iCeil, iCeil2);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.card.MaterialCardViewHelper$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.card.MaterialCardViewHelper$1, reason: invalid class name */
     class AnonymousClass1 extends InsetDrawable {
         @Override // android.graphics.drawable.Drawable
         public int getMinimumHeight() {

@@ -54,7 +54,7 @@ import java.util.logging.Logger;
 import javax.annotation.CheckForNull;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> {
     static final int CONTAINS_VALUE_RETRIES = 3;
     static final int DRAIN_MAX = 16;
@@ -345,8 +345,8 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
         return this.valueStrength != Strength.STRONG;
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     static abstract class Strength {
         public static final Strength STRONG = new AnonymousClass1("STRONG", 0);
         public static final Strength SOFT = new AnonymousClass2("SOFT", 1);
@@ -377,7 +377,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             return (Strength[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$Strength$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$Strength$1, reason: invalid class name */
         final enum AnonymousClass1 extends Strength {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -397,7 +397,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$Strength$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$Strength$2, reason: invalid class name */
         final enum AnonymousClass2 extends Strength {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -417,7 +417,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$Strength$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$Strength$3, reason: invalid class name */
         final enum AnonymousClass3 extends Strength {
             AnonymousClass3(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -438,8 +438,8 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
         }
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     static abstract class EntryFactory {
         private static final /* synthetic */ EntryFactory[] $VALUES;
         static final int ACCESS_MASK = 1;
@@ -457,7 +457,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
 
         abstract <K, V> ReferenceEntry<K, V> newEntry(Segment<K, V> segment, K key, int hash, @CheckForNull ReferenceEntry<K, V> next);
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$1, reason: invalid class name */
         final enum AnonymousClass1 extends EntryFactory {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -510,7 +510,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             factories = new EntryFactory[]{anonymousClass1, anonymousClass2, anonymousClass3, anonymousClass4, anonymousClass5, anonymousClass6, anonymousClass7, anonymousClass8};
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$2, reason: invalid class name */
         final enum AnonymousClass2 extends EntryFactory {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -529,7 +529,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$3, reason: invalid class name */
         final enum AnonymousClass3 extends EntryFactory {
             AnonymousClass3(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -548,7 +548,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$4, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$4, reason: invalid class name */
         final enum AnonymousClass4 extends EntryFactory {
             AnonymousClass4(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -568,7 +568,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$5, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$5, reason: invalid class name */
         final enum AnonymousClass5 extends EntryFactory {
             AnonymousClass5(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -580,7 +580,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$6, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$6, reason: invalid class name */
         final enum AnonymousClass6 extends EntryFactory {
             AnonymousClass6(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -599,7 +599,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$7, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$7, reason: invalid class name */
         final enum AnonymousClass7 extends EntryFactory {
             AnonymousClass7(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -618,7 +618,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$8, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$EntryFactory$8, reason: invalid class name */
         final enum AnonymousClass8 extends EntryFactory {
             AnonymousClass8(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -638,7 +638,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             }
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         static EntryFactory getFactory(Strength strength, boolean z, boolean z2) {
             return factories[((strength == Strength.WEAK ? (char) 4 : (char) 0) | (z ? 1 : 0) ? 1 : 0) | (z2 ? 2 : 0)];
         }
@@ -662,7 +662,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.cache.LocalCache$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.cache.LocalCache$1, reason: invalid class name */
     class AnonymousClass1 implements ValueReference<Object, Object> {
         @Override // com.google.common.cache.LocalCache.ValueReference
         public ValueReference<Object, Object> copyFor(ReferenceQueue<Object> queue, @CheckForNull Object value, ReferenceEntry<Object, Object> entry) {
@@ -808,7 +808,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
         return NullEntry.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.google.common.cache.LocalCache$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.cache.LocalCache$2, reason: invalid class name */
     class AnonymousClass2 extends AbstractQueue<Object> {
         @Override // java.util.Queue
         public boolean offer(Object o) {
@@ -1502,16 +1502,16 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
         return segmentFor(original.getHash()).copyEntry(original, newNext);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$PrimitiveArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$PrimitiveArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     ValueReference<K, V> newValueReference(ReferenceEntry<K, V> entry, V value, int weight) {
         return this.valueStrength.referenceValue(segmentFor(entry.getHash()), entry, Preconditions.checkNotNull(value), weight);
@@ -1650,16 +1650,16 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             this.table = newTable;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$PrimitiveArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Multi-variable type inference failed */
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$PrimitiveArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         ReferenceEntry<K, V> newEntry(K key, int hash, @CheckForNull ReferenceEntry<K, V> next) {
             return this.map.entryFactory.newEntry(this, Preconditions.checkNotNull(key), hash, next);
@@ -1885,8 +1885,8 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             return listenableFutureLoadFuture;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX INFO: renamed from: lambda$loadAsync$0$com-google-common-cache-LocalCache$Segment, reason: not valid java name */
+        /* WARN: Multi-variable type inference failed */
+        /* INFO: renamed from: lambda$loadAsync$0$com-google-common-cache-LocalCache$Segment, reason: not valid java name */
         /* synthetic */ void m3349lambda$loadAsync$0$comgooglecommoncacheLocalCache$Segment(Object obj, int i, LoadingValueReference loadingValueReference, ListenableFuture listenableFuture) {
             try {
                 getAndRecordStats(obj, i, loadingValueReference, listenableFuture);
@@ -2960,8 +2960,8 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             }
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX INFO: renamed from: lambda$loadFuture$0$com-google-common-cache-LocalCache$LoadingValueReference, reason: not valid java name */
+        /* WARN: Multi-variable type inference failed */
+        /* INFO: renamed from: lambda$loadFuture$0$com-google-common-cache-LocalCache$LoadingValueReference, reason: not valid java name */
         /* synthetic */ Object m3348x59597480(Object obj) {
             set(obj);
             return obj;
@@ -2992,7 +2992,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
         WriteQueue() {
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$WriteQueue$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$WriteQueue$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractReferenceEntry<K, V> {
             ReferenceEntry<K, V> nextWrite = this;
             ReferenceEntry<K, V> previousWrite = this;
@@ -3106,13 +3106,13 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$WriteQueue$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$WriteQueue$2, reason: invalid class name */
         class AnonymousClass2 extends AbstractSequentialIterator<ReferenceEntry<K, V>> {
             AnonymousClass2(ReferenceEntry firstOrNull) {
                 super(firstOrNull);
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractSequentialIterator
             @CheckForNull
             public ReferenceEntry<K, V> computeNext(ReferenceEntry<K, V> previous) {
@@ -3136,7 +3136,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
         AccessQueue() {
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$AccessQueue$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$AccessQueue$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractReferenceEntry<K, V> {
             ReferenceEntry<K, V> nextAccess = this;
             ReferenceEntry<K, V> previousAccess = this;
@@ -3250,13 +3250,13 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$AccessQueue$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$AccessQueue$2, reason: invalid class name */
         class AnonymousClass2 extends AbstractSequentialIterator<ReferenceEntry<K, V>> {
             AnonymousClass2(ReferenceEntry firstOrNull) {
                 super(firstOrNull);
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // com.google.common.collect.AbstractSequentialIterator
             @CheckForNull
             public ReferenceEntry<K, V> computeNext(ReferenceEntry<K, V> previous) {
@@ -3353,7 +3353,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
         return get(key, this.defaultLoader);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     ImmutableMap<K, V> getAllPresent(Iterable<?> keys) {
         ImmutableMap.Builder builder = ImmutableMap.builder();
         int i = 0;
@@ -3372,7 +3372,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
         return builder.buildKeepingLast();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     ImmutableMap<K, V> getAll(Iterable<? extends K> keys) throws ExecutionException {
         LinkedHashMap linkedHashMapNewLinkedHashMap = Maps.newLinkedHashMap();
         LinkedHashSet linkedHashSetNewLinkedHashSet = Sets.newLinkedHashSet();
@@ -3419,7 +3419,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:39:0x00bd  */
+    /* WARN: Code duplicated, block: B:39:0x00bd  */
     @CheckForNull
     Map<K, V> loadAll(Set<? extends K> set, CacheLoader<? super K, V> cacheLoader) throws Throwable {
         Preconditions.checkNotNull(cacheLoader);
@@ -3509,7 +3509,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
         return segmentFor(iHash).containsKey(key, iHash);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // java.util.AbstractMap, java.util.Map
     public boolean containsValue(@CheckForNull Object obj) {
         int i = 0;
@@ -3903,7 +3903,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> ArrayList<E> toArrayList(Collection<E> c) {
         ArrayList<E> arrayList = new ArrayList<>(c.size());
         Iterators.addAll(arrayList, c.iterator());
@@ -4075,7 +4075,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             return this.delegate;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.cache.ForwardingCache, com.google.common.collect.ForwardingObject
         public Cache<K, V> delegate() {
             return this.delegate;
@@ -4155,7 +4155,7 @@ class LocalCache<K, V> extends AbstractMap<K, V> implements ConcurrentMap<K, V> 
             return this.localCache.get(key, new AnonymousClass1(this, valueLoader));
         }
 
-        /* JADX INFO: renamed from: com.google.common.cache.LocalCache$LocalManualCache$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.cache.LocalCache$LocalManualCache$1, reason: invalid class name */
         class AnonymousClass1 extends CacheLoader<Object, V> {
             final /* synthetic */ Callable val$valueLoader;
 

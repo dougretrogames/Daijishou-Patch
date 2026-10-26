@@ -36,7 +36,7 @@ import java.util.Collection;
 import java.util.Collections;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class GoogleCredential extends Credential {
     static final String SERVICE_ACCOUNT_FILE_TYPE = "service_account";

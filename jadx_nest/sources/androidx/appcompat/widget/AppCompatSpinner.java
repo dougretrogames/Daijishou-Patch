@@ -34,7 +34,7 @@ import androidx.appcompat.view.menu.ShowableListMenu;
 import androidx.core.util.ObjectsCompat;
 import androidx.core.view.TintableBackgroundView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AppCompatSpinner extends Spinner implements TintableBackgroundView {
     private static final int[] ATTRS_ANDROID_SPINNERMODE = {R.attr.spinnerMode};
     private static final int MAX_ITEMS_MEASURED = 15;
@@ -123,10 +123,10 @@ public class AppCompatSpinner extends Spinner implements TintableBackgroundView 
         this(context, attributeSet, i, i2, null);
     }
 
-    /* JADX WARN: Code duplicated, block: B:16:0x0051 A[PHI: r10 r11
+    /* WARN: Code duplicated, block: B:16:0x0051 A[PHI: r10 r11
   0x0051: PHI (r10v2 int) = (r10v0 int), (r10v4 int) binds: [B:24:0x0062, B:15:0x004f] A[DONT_GENERATE, DONT_INLINE]
   0x0051: PHI (r11v6 android.content.res.TypedArray) = (r11v5 android.content.res.TypedArray), (r11v8 android.content.res.TypedArray) binds: [B:24:0x0062, B:15:0x004f] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public AppCompatSpinner(Context context, AttributeSet attributeSet, int i, int i2, Resources.Theme theme) throws Throwable {
         TypedArray typedArrayObtainStyledAttributes;
         super(context, attributeSet, i);
@@ -206,11 +206,11 @@ public class AppCompatSpinner extends Spinner implements TintableBackgroundView 
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.AppCompatSpinner$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.AppCompatSpinner$1, reason: invalid class name */
     class AnonymousClass1 extends ForwardingListener {
         final /* synthetic */ DropdownPopup val$popup;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(View view, DropdownPopup dropdownPopup) {
             super(view);
             this.val$popup = dropdownPopup;
@@ -508,7 +508,7 @@ public class AppCompatSpinner extends Spinner implements TintableBackgroundView 
         viewTreeObserver.addOnGlobalLayoutListener(new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.AppCompatSpinner$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.AppCompatSpinner$2, reason: invalid class name */
     class AnonymousClass2 implements ViewTreeObserver.OnGlobalLayoutListener {
         AnonymousClass2() {
         }
@@ -544,18 +544,18 @@ public class AppCompatSpinner extends Spinner implements TintableBackgroundView 
             parcel.writeByte(this.mShowDropdown ? (byte) 1 : (byte) 0);
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.AppCompatSpinner$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.widget.AppCompatSpinner$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];
@@ -805,7 +805,7 @@ public class AppCompatSpinner extends Spinner implements TintableBackgroundView 
             setOnItemClickListener(new AnonymousClass1(AppCompatSpinner.this));
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.AppCompatSpinner$DropdownPopup$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.widget.AppCompatSpinner$DropdownPopup$1, reason: invalid class name */
         class AnonymousClass1 implements AdapterView.OnItemClickListener {
             final /* synthetic */ AppCompatSpinner val$this$0;
 
@@ -895,7 +895,7 @@ public class AppCompatSpinner extends Spinner implements TintableBackgroundView 
             setOnDismissListener(new AnonymousClass3(anonymousClass2));
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.AppCompatSpinner$DropdownPopup$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.widget.AppCompatSpinner$DropdownPopup$2, reason: invalid class name */
         class AnonymousClass2 implements ViewTreeObserver.OnGlobalLayoutListener {
             AnonymousClass2() {
             }
@@ -912,7 +912,7 @@ public class AppCompatSpinner extends Spinner implements TintableBackgroundView 
             }
         }
 
-        /* JADX INFO: renamed from: androidx.appcompat.widget.AppCompatSpinner$DropdownPopup$3, reason: invalid class name */
+        /* INFO: renamed from: androidx.appcompat.widget.AppCompatSpinner$DropdownPopup$3, reason: invalid class name */
         class AnonymousClass3 implements PopupWindow.OnDismissListener {
             final /* synthetic */ ViewTreeObserver.OnGlobalLayoutListener val$layoutListener;
 

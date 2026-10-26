@@ -6,7 +6,7 @@ import io.opencensus.tags.TagMetadata;
 import io.opencensus.trace.Span;
 import java.util.concurrent.atomic.AtomicLong;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class HttpRequestContext {
     static final long INVALID_STARTTIME = -1;
     static final TagMetadata METADATA_NO_PROPAGATION = TagMetadata.create(TagMetadata.TagTtl.NO_PROPAGATION);

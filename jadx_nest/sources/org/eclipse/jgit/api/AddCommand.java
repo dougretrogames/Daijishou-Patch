@@ -27,7 +27,7 @@ import org.eclipse.jgit.treewalk.filter.IndexDiffFilter;
 import org.eclipse.jgit.treewalk.filter.PathFilterGroup;
 import org.eclipse.jgit.treewalk.filter.TreeFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AddCommand extends GitCommand<DirCache> {
     private List<String> filepatterns;
     private boolean renormalize;
@@ -52,19 +52,19 @@ public class AddCommand extends GitCommand<DirCache> {
         return this;
     }
 
-    /* JADX WARN: Code duplicated, block: B:118:0x01ae  */
-    /* JADX WARN: Code duplicated, block: B:119:0x01b0 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:120:0x01b2 A[Catch: all -> 0x01b6, TRY_ENTER, TryCatch #2 {all -> 0x01b6, blocks: (B:28:0x0091, B:124:0x01ba, B:125:0x01bd, B:120:0x01b2), top: B:153:0x0014 }] */
-    /* JADX WARN: Code duplicated, block: B:124:0x01ba A[Catch: all -> 0x01b6, TryCatch #2 {all -> 0x01b6, blocks: (B:28:0x0091, B:124:0x01ba, B:125:0x01bd, B:120:0x01b2), top: B:153:0x0014 }] */
-    /* JADX WARN: Code duplicated, block: B:129:0x01c2 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:159:0x01c4 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:205:? A[Catch: all -> 0x01b6, SYNTHETIC, TRY_LEAVE, TryCatch #2 {all -> 0x01b6, blocks: (B:28:0x0091, B:124:0x01ba, B:125:0x01bd, B:120:0x01b2), top: B:153:0x0014 }] */
-    /* JADX WARN: Code duplicated, block: B:206:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r1v12 */
-    /* JADX WARN: Type inference failed for: r1v3, types: [java.lang.Throwable, org.eclipse.jgit.dircache.DirCache] */
-    /* JADX WARN: Type inference failed for: r1v7, types: [java.lang.Throwable] */
-    /* JADX WARN: Type inference failed for: r1v8 */
+    /* WARN: Code duplicated, block: B:118:0x01ae  */
+    /* WARN: Code duplicated, block: B:119:0x01b0 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:120:0x01b2 A[Catch: all -> 0x01b6, TRY_ENTER, TryCatch #2 {all -> 0x01b6, blocks: (B:28:0x0091, B:124:0x01ba, B:125:0x01bd, B:120:0x01b2), top: B:153:0x0014 }] */
+    /* WARN: Code duplicated, block: B:124:0x01ba A[Catch: all -> 0x01b6, TryCatch #2 {all -> 0x01b6, blocks: (B:28:0x0091, B:124:0x01ba, B:125:0x01bd, B:120:0x01b2), top: B:153:0x0014 }] */
+    /* WARN: Code duplicated, block: B:129:0x01c2 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:159:0x01c4 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:205:? A[Catch: all -> 0x01b6, SYNTHETIC, TRY_LEAVE, TryCatch #2 {all -> 0x01b6, blocks: (B:28:0x0091, B:124:0x01ba, B:125:0x01bd, B:120:0x01b2), top: B:153:0x0014 }] */
+    /* WARN: Code duplicated, block: B:206:? A[RETURN, SYNTHETIC] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r1v12 */
+    /* WARN: Type inference failed for: r1v3, types: [java.lang.Throwable, org.eclipse.jgit.dircache.DirCache] */
+    /* WARN: Type inference failed for: r1v7, types: [java.lang.Throwable] */
+    /* WARN: Type inference failed for: r1v8 */
     @Override // org.eclipse.jgit.api.GitCommand, java.util.concurrent.Callable
     public DirCache call() throws Throwable {
         if (this.filepatterns.isEmpty()) {

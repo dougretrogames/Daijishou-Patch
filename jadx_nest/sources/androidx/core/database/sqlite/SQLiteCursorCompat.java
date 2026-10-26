@@ -3,7 +3,7 @@ package androidx.core.database.sqlite;
 import android.database.sqlite.SQLiteCursor;
 import android.os.Build;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class SQLiteCursorCompat {
     private SQLiteCursorCompat() {
     }

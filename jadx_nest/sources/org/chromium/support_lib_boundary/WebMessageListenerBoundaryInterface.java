@@ -5,7 +5,7 @@ import android.webkit.WebView;
 import java.lang.reflect.InvocationHandler;
 import org.jspecify.annotations.NullMarked;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @NullMarked
 public interface WebMessageListenerBoundaryInterface extends FeatureFlagHolderBoundaryInterface {
     void onPostMessage(WebView webView, InvocationHandler invocationHandler, Uri uri, boolean z, InvocationHandler invocationHandler2);

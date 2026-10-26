@@ -23,13 +23,13 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: LibrarySettingsNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: LibrarySettingsNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class LibrarySettingsNavFragment$onCreate$5$1 extends Lambda<Unit> implements Function0<Unit> {
     final /* synthetic */ LibrarySettingsNavFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     LibrarySettingsNavFragment$onCreate$5$1(LibrarySettingsNavFragment librarySettingsNavFragment) {
         super(0);
         this.this$0 = librarySettingsNavFragment;
@@ -41,15 +41,15 @@ final class LibrarySettingsNavFragment$onCreate$5$1 extends Lambda<Unit> impleme
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2() {
         ProgressDialogFragment progressDialogFragmentNewInstance$default = ProgressDialogFragment.Companion.newInstance$default(ProgressDialogFragment.INSTANCE, null, null, 3, null);
         progressDialogFragmentNewInstance$default.show(this.this$0.getParentFragmentManager(), ProgressDialogFragment.class.getName());
         BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this.this$0), Dispatchers.getIO(), null, new AnonymousClass1(this.this$0, progressDialogFragmentNewInstance$default, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.LibrarySettingsNavFragment$onCreate$5$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: LibrarySettingsNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.LibrarySettingsNavFragment$onCreate$5$1$1, reason: invalid class name */
+    /* INFO: compiled from: LibrarySettingsNavFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.settings_nav_fragments.LibrarySettingsNavFragment$onCreate$5$1$1", f = "LibrarySettingsNavFragment.kt", i = {}, l = {234}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -57,7 +57,7 @@ final class LibrarySettingsNavFragment$onCreate$5$1 extends Lambda<Unit> impleme
         int label;
         final /* synthetic */ LibrarySettingsNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(LibrarySettingsNavFragment librarySettingsNavFragment, ProgressDialogFragment progressDialogFragment, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = librarySettingsNavFragment;
@@ -101,8 +101,8 @@ final class LibrarySettingsNavFragment$onCreate$5$1 extends Lambda<Unit> impleme
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.LibrarySettingsNavFragment$onCreate$5$1$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: LibrarySettingsNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.settings_nav_fragments.LibrarySettingsNavFragment$onCreate$5$1$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: LibrarySettingsNavFragment.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.settings_nav_fragments.LibrarySettingsNavFragment$onCreate$5$1$1$1", f = "LibrarySettingsNavFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         static final class C00731 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -111,7 +111,7 @@ final class LibrarySettingsNavFragment$onCreate$5$1 extends Lambda<Unit> impleme
             int label;
             final /* synthetic */ LibrarySettingsNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             C00731(ProgressDialogFragment progressDialogFragment, LibrarySettingsNavFragment librarySettingsNavFragment, int i, Continuation<?> continuation) {
                 super(2, continuation);
                 this.$progressDialogFragment = progressDialogFragment;

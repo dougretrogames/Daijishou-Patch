@@ -2,7 +2,7 @@ package com.google.auth.oauth2;
 
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AwsSecurityCredentials {
     private final String accessKeyId;
     private final String secretAccessKey;

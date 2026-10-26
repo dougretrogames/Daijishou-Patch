@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.dialog_fragments;
 import android.net.Uri;
 import androidx.activity.result.ActivityResultCallback;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class PickPlatformSyncTreeUrDialogFragment$$ExternalSyntheticLambda8 implements ActivityResultCallback {
     public final /* synthetic */ PickPlatformSyncTreeUrDialogFragment f$0;
 

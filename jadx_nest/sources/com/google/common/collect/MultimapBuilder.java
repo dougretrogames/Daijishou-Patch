@@ -16,7 +16,7 @@ import java.util.SortedSet;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class MultimapBuilder<K0, V0> {
     private static final int DEFAULT_EXPECTED_KEYS = 8;
@@ -34,7 +34,7 @@ public abstract class MultimapBuilder<K0, V0> {
         return hashKeys(8);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.MultimapBuilder$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.MultimapBuilder$1, reason: invalid class name */
     class AnonymousClass1 extends MultimapBuilderWithKeys<Object> {
         final /* synthetic */ int val$expectedKeys;
 
@@ -57,7 +57,7 @@ public abstract class MultimapBuilder<K0, V0> {
         return linkedHashKeys(8);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.MultimapBuilder$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.MultimapBuilder$2, reason: invalid class name */
     class AnonymousClass2 extends MultimapBuilderWithKeys<Object> {
         final /* synthetic */ int val$expectedKeys;
 
@@ -80,7 +80,7 @@ public abstract class MultimapBuilder<K0, V0> {
         return treeKeys(Ordering.natural());
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.MultimapBuilder$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.MultimapBuilder$3, reason: invalid class name */
     class AnonymousClass3 extends MultimapBuilderWithKeys<K0> {
         final /* synthetic */ Comparator val$comparator;
 
@@ -99,7 +99,7 @@ public abstract class MultimapBuilder<K0, V0> {
         return new AnonymousClass3(comparator);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.MultimapBuilder$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.MultimapBuilder$4, reason: invalid class name */
     class AnonymousClass4 extends MultimapBuilderWithKeys<K0> {
         final /* synthetic */ Class val$keyClass;
 
@@ -208,7 +208,7 @@ public abstract class MultimapBuilder<K0, V0> {
             return arrayListValues(2);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$1, reason: invalid class name */
         class AnonymousClass1 extends ListMultimapBuilder<K0, Object> {
             final /* synthetic */ int val$expectedValuesPerKey;
 
@@ -227,7 +227,7 @@ public abstract class MultimapBuilder<K0, V0> {
             return new AnonymousClass1(expectedValuesPerKey);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$2, reason: invalid class name */
         class AnonymousClass2 extends ListMultimapBuilder<K0, Object> {
             AnonymousClass2() {
             }
@@ -246,7 +246,7 @@ public abstract class MultimapBuilder<K0, V0> {
             return hashSetValues(2);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$3, reason: invalid class name */
         class AnonymousClass3 extends SetMultimapBuilder<K0, Object> {
             final /* synthetic */ int val$expectedValuesPerKey;
 
@@ -269,7 +269,7 @@ public abstract class MultimapBuilder<K0, V0> {
             return linkedHashSetValues(2);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$4, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$4, reason: invalid class name */
         class AnonymousClass4 extends SetMultimapBuilder<K0, Object> {
             final /* synthetic */ int val$expectedValuesPerKey;
 
@@ -292,7 +292,7 @@ public abstract class MultimapBuilder<K0, V0> {
             return treeSetValues(Ordering.natural());
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$5, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$5, reason: invalid class name */
         class AnonymousClass5 extends SortedSetMultimapBuilder<K0, V0> {
             final /* synthetic */ Comparator val$comparator;
 
@@ -311,7 +311,7 @@ public abstract class MultimapBuilder<K0, V0> {
             return new AnonymousClass5(comparator);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$6, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.MultimapBuilder$MultimapBuilderWithKeys$6, reason: invalid class name */
         class AnonymousClass6 extends SetMultimapBuilder<K0, V0> {
             final /* synthetic */ Class val$valueClass;
 

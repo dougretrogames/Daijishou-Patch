@@ -6,8 +6,8 @@ import kotlin.Metadata;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: DecodeStream.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: DecodeStream.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u001c\n\u0002\b\u0002\u001a2\u0010\u0005\u001a\u00020\u0002*\u00020\u00022\u0006\u0010\u0006\u001a\u00020\u00032\u001e\b\u0002\u0010\u0007\u001a\u0018\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00020\u0001j\u0002`\u0004\u001a8\u0010\u0005\u001a\u00020\u0002*\u00020\u00022\f\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00030\t2\u001e\b\u0002\u0010\u0007\u001a\u0018\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00020\u0001j\u0002`\u0004\"$\u0010\u0000\u001a\u0018\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00020\u0001j\u0002`\u0004X\u0082\u0004¢\u0006\u0002\n\u0000*0\b\u0002\u0010\n\"\u0014\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00020\u00012\u0014\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00020\u0001¨\u0006\u000b"}, d2 = {"UNSUPPORTED_DECODE_ENCODING", "Lkotlin/Function2;", "Ljava/io/InputStream;", "", "Lcom/github/kittinunf/fuel/util/DecodeFallbackCallback;", "decode", "encoding", "unsupported", "encodings", "", "DecodeFallbackCallback", "fuel"}, k = 2, mv = {1, 4, 0})
 public final class DecodeStreamKt {
     private static final Function2<InputStream, String, InputStream> UNSUPPORTED_DECODE_ENCODING = DecodeStreamKt$UNSUPPORTED_DECODE_ENCODING$1.INSTANCE;
@@ -19,19 +19,19 @@ public final class DecodeStreamKt {
         return decode(inputStream, str, (Function2<? super InputStream, ? super String, ? extends InputStream>) function2);
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:19:0x0056, code lost:
+    /* WARN: Code restructure failed: missing block: B:19:0x0056, code lost:
     
         if (r0.equals(org.apache.http.protocol.HTTP.CHUNK_CODING) != false) goto L30;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:26:0x006f, code lost:
+    /* WARN: Code restructure failed: missing block: B:26:0x006f, code lost:
     
         if (r0.equals("") != false) goto L30;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:29:0x0078, code lost:
+    /* WARN: Code restructure failed: missing block: B:29:0x0078, code lost:
     
         if (r0.equals(org.apache.http.protocol.HTTP.IDENTITY_CODING) != false) goto L30;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:30:0x007a, code lost:
+    /* WARN: Code restructure failed: missing block: B:30:0x007a, code lost:
     
         return r3;
      */

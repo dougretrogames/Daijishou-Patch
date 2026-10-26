@@ -3,7 +3,7 @@ package io.opencensus.trace.export;
 import io.opencensus.trace.AttributeValue;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_SpanData_Attributes extends SpanData.Attributes {
     private final Map<String, AttributeValue> attributeMap;
     private final int droppedAttributesCount;

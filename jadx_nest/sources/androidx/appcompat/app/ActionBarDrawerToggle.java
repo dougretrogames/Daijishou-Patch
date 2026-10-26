@@ -14,7 +14,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ActionBarDrawerToggle implements DrawerLayout.DrawerListener {
     private final Delegate mActivityImpl;
     private final int mCloseDrawerContentDescRes;
@@ -56,7 +56,7 @@ public class ActionBarDrawerToggle implements DrawerLayout.DrawerListener {
         this(activity, toolbar, drawerLayout, null, i, i2);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     ActionBarDrawerToggle(Activity activity, Toolbar toolbar, DrawerLayout drawerLayout, DrawerArrowDrawable drawerArrowDrawable, int i, int i2) {
         this.mDrawerSlideAnimationEnabled = true;
         this.mDrawerIndicatorEnabled = true;
@@ -80,7 +80,7 @@ public class ActionBarDrawerToggle implements DrawerLayout.DrawerListener {
         this.mHomeAsUpIndicator = getThemeUpIndicator();
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.app.ActionBarDrawerToggle$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.app.ActionBarDrawerToggle$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         AnonymousClass1() {
         }

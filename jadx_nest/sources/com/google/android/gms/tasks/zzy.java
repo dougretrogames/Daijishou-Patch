@@ -1,7 +1,7 @@
 package com.google.android.gms.tasks;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-tasks@@18.1.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-tasks@@18.1.0 */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class zzy implements OnCompleteListener {
     public final /* synthetic */ com.google.android.gms.internal.tasks.zza zza;
     public final /* synthetic */ TaskCompletionSource zzb;

@@ -2,8 +2,8 @@ package androidx.lifecycle;
 
 import kotlinx.coroutines.channels.ProducerScope;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class LifecycleKt$eventFlow$1$$ExternalSyntheticLambda0 implements LifecycleEventObserver {
     public final /* synthetic */ ProducerScope f$0;
 

@@ -3,7 +3,7 @@ package org.eclipse.jgit.lib;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class FileMode {
     public static final int TYPE_FILE = 32768;
     public static final int TYPE_MASK = 61440;
@@ -27,7 +27,7 @@ public abstract class FileMode {
 
     public abstract boolean equals(int i);
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.FileMode$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.FileMode$1, reason: invalid class name */
     class AnonymousClass1 extends FileMode {
         @Override // org.eclipse.jgit.lib.FileMode
         public boolean equals(int i) {
@@ -39,7 +39,7 @@ public abstract class FileMode {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.FileMode$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.FileMode$2, reason: invalid class name */
     class AnonymousClass2 extends FileMode {
         @Override // org.eclipse.jgit.lib.FileMode
         public boolean equals(int i) {
@@ -51,7 +51,7 @@ public abstract class FileMode {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.FileMode$3, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.FileMode$3, reason: invalid class name */
     class AnonymousClass3 extends FileMode {
         @Override // org.eclipse.jgit.lib.FileMode
         public boolean equals(int i) {
@@ -63,7 +63,7 @@ public abstract class FileMode {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.FileMode$4, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.FileMode$4, reason: invalid class name */
     class AnonymousClass4 extends FileMode {
         @Override // org.eclipse.jgit.lib.FileMode
         public boolean equals(int i) {
@@ -75,7 +75,7 @@ public abstract class FileMode {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.FileMode$5, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.FileMode$5, reason: invalid class name */
     class AnonymousClass5 extends FileMode {
         @Override // org.eclipse.jgit.lib.FileMode
         public boolean equals(int i) {
@@ -87,7 +87,7 @@ public abstract class FileMode {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.FileMode$6, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.FileMode$6, reason: invalid class name */
     class AnonymousClass6 extends FileMode {
         @Override // org.eclipse.jgit.lib.FileMode
         public boolean equals(int i) {
@@ -123,11 +123,11 @@ public abstract class FileMode {
         return new AnonymousClass7(i, -1, i);
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.FileMode$7, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.FileMode$7, reason: invalid class name */
     class AnonymousClass7 extends FileMode {
         private final /* synthetic */ int val$bits;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass7(int i, int i2, int i3) {
             super(i, i2, null);
             this.val$bits = i3;

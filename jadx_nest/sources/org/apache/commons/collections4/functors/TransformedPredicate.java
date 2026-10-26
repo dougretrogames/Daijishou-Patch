@@ -5,7 +5,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.Predicate;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class TransformedPredicate<T> extends AbstractPredicate<T> implements PredicateDecorator<T>, Serializable {
     private static final long serialVersionUID = -5596090919668315834L;
     private final Predicate<? super T> iPredicate;

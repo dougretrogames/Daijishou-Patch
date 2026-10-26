@@ -6,7 +6,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.Closure;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SwitchClosure<T> implements Closure<T>, Serializable {
     private static final long serialVersionUID = 3518477308466486130L;
     private final Closure<? super T>[] iClosures;
@@ -31,7 +31,7 @@ public class SwitchClosure<T> implements Closure<T>, Serializable {
         return new SwitchClosure(false, predicateArr, closureArr, closureRemove);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <E> Closure<E> switchClosure(Predicate<? super E>[] predicateArr, Closure<? super E>[] closureArr, Closure<? super E> closure) {
         FunctorUtils.validate(predicateArr);
         FunctorUtils.validate(closureArr);

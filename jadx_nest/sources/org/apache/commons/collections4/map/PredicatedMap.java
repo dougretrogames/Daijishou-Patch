@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Set;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PredicatedMap<K, V> extends AbstractInputCheckedMapDecorator<K, V> implements Serializable {
     private static final long serialVersionUID = 7412622456128415156L;
     protected final Predicate<? super K> keyPredicate;

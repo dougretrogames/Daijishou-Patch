@@ -9,7 +9,7 @@ import java.util.TreeMap;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class MessageReflection {
 
     interface MergeTarget {
@@ -803,8 +803,8 @@ class MessageReflection {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:26:0x006b  */
-    /* JADX WARN: Code duplicated, block: B:29:0x006f  */
+    /* WARN: Code duplicated, block: B:26:0x006b  */
+    /* WARN: Code duplicated, block: B:29:0x006f  */
     static boolean mergeFieldFrom(CodedInputStream input, UnknownFieldSet.Builder unknownFields, ExtensionRegistryLite extensionRegistry, Descriptors.Descriptor type, MergeTarget target, int tag) throws IOException {
         Message message;
         boolean z;
@@ -911,7 +911,7 @@ class MessageReflection {
         return true;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.MessageReflection$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.MessageReflection$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$Descriptors$FieldDescriptor$Type;
 

@@ -7,7 +7,7 @@ import java.util.NoSuchElementException;
 import java.util.SortedSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class SortedMultisets {
     private SortedMultisets() {
@@ -20,7 +20,7 @@ final class SortedMultisets {
             this.multiset = multiset;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Multisets.ElementSet
         public final SortedMultiset<E> multiset() {
             return this.multiset;
@@ -131,7 +131,7 @@ final class SortedMultisets {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> E getElementOrThrow(@CheckForNull Multiset.Entry<E> entry) {
         if (entry == null) {
             throw new NoSuchElementException();
@@ -139,7 +139,7 @@ final class SortedMultisets {
         return entry.getElement();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @CheckForNull
     public static <E> E getElementOrNull(@CheckForNull Multiset.Entry<E> entry) {
         if (entry == null) {

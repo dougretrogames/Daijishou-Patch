@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.ReentrantLock;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ThreadSafeProgressMonitor implements ProgressMonitor {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private final ProgressMonitor pm;

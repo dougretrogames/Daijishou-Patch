@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 abstract class TypeCapture<T> {
     TypeCapture() {

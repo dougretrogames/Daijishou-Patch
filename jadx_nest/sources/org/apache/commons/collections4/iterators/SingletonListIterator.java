@@ -3,7 +3,7 @@ package org.apache.commons.collections4.iterators;
 import java.util.NoSuchElementException;
 import org.apache.commons.collections4.ResettableListIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SingletonListIterator<E> implements ResettableListIterator<E> {
     private boolean beforeFirst = true;
     private boolean nextCalled;

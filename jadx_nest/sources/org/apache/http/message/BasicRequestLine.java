@@ -6,7 +6,7 @@ import org.apache.http.RequestLine;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicRequestLine implements RequestLine, Cloneable, Serializable {
     private static final long serialVersionUID = 2810581718468737193L;
     private final String method;

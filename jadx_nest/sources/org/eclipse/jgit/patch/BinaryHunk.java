@@ -3,7 +3,7 @@ package org.eclipse.jgit.patch;
 import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BinaryHunk {
     int endOffset;
     private final FileHeader file;
@@ -17,7 +17,7 @@ public class BinaryHunk {
         LITERAL_DEFLATED,
         DELTA_DEFLATED;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Type[] valuesCustom() {
             Type[] typeArrValuesCustom = values();
             int length = typeArrValuesCustom.length;

@@ -2,8 +2,8 @@ package com.google.android.material.textfield;
 
 import android.view.View;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class DropdownMenuEndIconDelegate$$ExternalSyntheticLambda4 implements View.OnFocusChangeListener {
     public final /* synthetic */ DropdownMenuEndIconDelegate f$0;
 

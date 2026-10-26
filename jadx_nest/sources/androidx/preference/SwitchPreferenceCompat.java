@@ -10,7 +10,7 @@ import android.widget.CompoundButton;
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.core.content.res.TypedArrayUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SwitchPreferenceCompat extends TwoStatePreference {
     private final Listener mListener;
     private CharSequence mSwitchOff;
@@ -86,7 +86,7 @@ public class SwitchPreferenceCompat extends TwoStatePreference {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void syncSwitchView(View view) {
         boolean z = view instanceof SwitchCompat;
         if (z) {

@@ -4,7 +4,7 @@ import com.google.errorprone.annotations.DoNotMock;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock("Use GraphBuilder to create a real instance")
 @ElementTypesAreNonnullByDefault
 public interface Graph<N> extends BaseGraph<N> {

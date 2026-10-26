@@ -1,7 +1,7 @@
 package androidx.compose.ui.graphics.colorspace;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class Rgb$$ExternalSyntheticLambda5 implements DoubleFunction {
     @Override // androidx.compose.ui.graphics.colorspace.DoubleFunction
     public final double invoke(double d) {

@@ -11,7 +11,7 @@ import androidx.constraintlayout.widget.R;
 import androidx.constraintlayout.widget.VirtualLayout;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CircularFlow extends VirtualLayout {
     private static final String TAG = "CircularFlow";
     private static float sDefaultAngle;

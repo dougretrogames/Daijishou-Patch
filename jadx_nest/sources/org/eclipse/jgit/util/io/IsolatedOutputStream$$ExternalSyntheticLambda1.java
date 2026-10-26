@@ -2,8 +2,8 @@ package org.eclipse.jgit.util.io;
 
 import java.util.concurrent.Callable;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class IsolatedOutputStream$$ExternalSyntheticLambda1 implements Callable {
     public final /* synthetic */ IsolatedOutputStream f$0;
     public final /* synthetic */ byte[] f$1;

@@ -18,12 +18,12 @@ import kotlin.Metadata;
 import kotlin.NoWhenBranchMatchedException;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: TextViewExtension.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: TextViewExtension.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000:\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u001a\u0014\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u0003\u001a\u00020\u0004H\u0000\u001a\u0012\u0010\u0005\u001a\u0004\u0018\u00010\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0002\u001a\u0014\u0010\t\u001a\u00020\u0001*\u00020\n2\u0006\u0010\u000b\u001a\u00020\fH\u0000\u001a\u0014\u0010\r\u001a\u00020\u0001*\u00020\u00022\u0006\u0010\u000e\u001a\u00020\u000fH\u0000\"\u0019\u0010\u0010\u001a\u00020\u0011*\u00020\u00028À\u0002X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u0012\u0010\u0013¨\u0006\u0014"}, d2 = {"applyTextForm", "", "Landroid/widget/TextView;", "textForm", "Lcom/skydoves/balloon/TextForm;", "fromHtml", "Landroid/text/Spanned;", "text", "", "applyIconForm", "Lcom/skydoves/balloon/vectortext/VectorTextView;", "iconForm", "Lcom/skydoves/balloon/IconForm;", "applyDrawable", "vectorTextViewParams", "Lcom/skydoves/balloon/vectortext/VectorTextViewParams;", "sumOfCompoundPadding", "", "getSumOfCompoundPadding", "(Landroid/widget/TextView;)I", "balloon_release"}, k = 2, mv = {2, 0, 0}, xi = 48)
 public final class TextViewExtensionKt {
 
-    /* JADX INFO: compiled from: TextViewExtension.kt */
+    /* INFO: compiled from: TextViewExtension.kt */
     @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
     public /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -129,9 +129,9 @@ public final class TextViewExtensionKt {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:35:0x00c9  */
-    /* JADX WARN: Code duplicated, block: B:46:0x00fe  */
-    /* JADX WARN: Code duplicated, block: B:57:0x0133  */
+    /* WARN: Code duplicated, block: B:35:0x00c9  */
+    /* WARN: Code duplicated, block: B:46:0x00fe  */
+    /* WARN: Code duplicated, block: B:57:0x0133  */
     public static final /* synthetic */ void applyDrawable(TextView textView, VectorTextViewParams vectorTextViewParams) {
         Drawable drawableTint;
         Drawable drawableTint2;

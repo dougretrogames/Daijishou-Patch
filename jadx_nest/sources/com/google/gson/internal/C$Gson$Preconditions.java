@@ -1,7 +1,7 @@
 package com.google.gson.internal;
 
-/* JADX INFO: renamed from: com.google.gson.internal.$Gson$Preconditions, reason: invalid class name */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: renamed from: com.google.gson.internal.$Gson$Preconditions, reason: invalid class name */
+/* INFO: loaded from: classes4.dex */
 public final class C$Gson$Preconditions {
     private C$Gson$Preconditions() {
         throw new UnsupportedOperationException();

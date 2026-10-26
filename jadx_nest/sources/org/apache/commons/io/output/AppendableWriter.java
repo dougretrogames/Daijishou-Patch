@@ -5,7 +5,7 @@ import java.io.Writer;
 import java.lang.Appendable;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AppendableWriter<T extends Appendable> extends Writer {
     private final T appendable;
 

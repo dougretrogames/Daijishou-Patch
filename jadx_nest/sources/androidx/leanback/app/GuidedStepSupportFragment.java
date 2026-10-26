@@ -30,7 +30,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class GuidedStepSupportFragment extends Fragment implements GuidedActionAdapter.FocusListener {
     private static final boolean DEBUG = false;
     private static final String ENTRY_NAME_ENTRANCE = "GuidedStepEntrance";
@@ -480,15 +480,15 @@ public class GuidedStepSupportFragment extends Fragment implements GuidedActionA
         super.onDestroyView();
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     @Override // androidx.fragment.app.Fragment
     public View onCreateView(LayoutInflater layoutInflater, ViewGroup viewGroup, Bundle bundle) {
@@ -544,7 +544,7 @@ public class GuidedStepSupportFragment extends Fragment implements GuidedActionA
         return guidedStepRootLayout;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.GuidedStepSupportFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.GuidedStepSupportFragment$1, reason: invalid class name */
     class AnonymousClass1 implements GuidedActionAdapter.EditListener {
         AnonymousClass1() {
         }
@@ -570,7 +570,7 @@ public class GuidedStepSupportFragment extends Fragment implements GuidedActionA
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.GuidedStepSupportFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.GuidedStepSupportFragment$2, reason: invalid class name */
     class AnonymousClass2 implements GuidedActionAdapter.ClickListener {
         AnonymousClass2() {
         }
@@ -586,7 +586,7 @@ public class GuidedStepSupportFragment extends Fragment implements GuidedActionA
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.GuidedStepSupportFragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.GuidedStepSupportFragment$3, reason: invalid class name */
     class AnonymousClass3 implements GuidedActionAdapter.ClickListener {
         AnonymousClass3() {
         }
@@ -597,7 +597,7 @@ public class GuidedStepSupportFragment extends Fragment implements GuidedActionA
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.GuidedStepSupportFragment$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.GuidedStepSupportFragment$4, reason: invalid class name */
     class AnonymousClass4 implements GuidedActionAdapter.ClickListener {
         AnonymousClass4() {
         }

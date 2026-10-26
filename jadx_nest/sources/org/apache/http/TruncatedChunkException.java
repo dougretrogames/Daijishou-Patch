@@ -1,6 +1,6 @@
 package org.apache.http;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TruncatedChunkException extends MalformedChunkCodingException {
     private static final long serialVersionUID = -23506263930279460L;
 

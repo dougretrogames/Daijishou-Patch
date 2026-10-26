@@ -8,7 +8,7 @@ import androidx.versionedparcelable.VersionedParcelable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AudioAttributesCompat implements VersionedParcelable {
     static final String AUDIO_ATTRIBUTES_CONTENT_TYPE = "androidx.media.audio_attrs.CONTENT_TYPE";
     static final String AUDIO_ATTRIBUTES_FLAGS = "androidx.media.audio_attrs.FLAGS";
@@ -253,7 +253,7 @@ public class AudioAttributesCompat implements VersionedParcelable {
             return setInternalLegacyStreamType(i);
         }
 
-        /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+        /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
         Builder setInternalLegacyStreamType(int i) {
             switch (i) {
                 case 0:

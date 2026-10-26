@@ -6,9 +6,9 @@ import org.apache.http.message.TokenParser;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.DocumentType;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: loaded from: classes5.dex */
+/* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* WARN: Unknown enum class pattern. Please report as an issue! */
+/* INFO: loaded from: classes5.dex */
 abstract class TokeniserState {
     private static final char eof = 65535;
     static final char nullChar = 0;
@@ -88,7 +88,7 @@ abstract class TokeniserState {
 
     abstract void read(Tokeniser tokeniser, CharacterReader characterReader);
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$1, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$1, reason: invalid class name */
     final enum AnonymousClass1 extends TokeniserState {
         AnonymousClass1(String str, int i) {
             super(str, i, null);
@@ -136,7 +136,7 @@ abstract class TokeniserState {
         return (TokeniserState[]) $VALUES.clone();
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$2, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$2, reason: invalid class name */
     final enum AnonymousClass2 extends TokeniserState {
         AnonymousClass2(String str, int i) {
             super(str, i, null);
@@ -148,7 +148,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$3, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$3, reason: invalid class name */
     final enum AnonymousClass3 extends TokeniserState {
         AnonymousClass3(String str, int i) {
             super(str, i, null);
@@ -177,7 +177,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$4, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$4, reason: invalid class name */
     final enum AnonymousClass4 extends TokeniserState {
         AnonymousClass4(String str, int i) {
             super(str, i, null);
@@ -189,7 +189,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$5, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$5, reason: invalid class name */
     final enum AnonymousClass5 extends TokeniserState {
         AnonymousClass5(String str, int i) {
             super(str, i, null);
@@ -201,7 +201,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$6, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$6, reason: invalid class name */
     final enum AnonymousClass6 extends TokeniserState {
         AnonymousClass6(String str, int i) {
             super(str, i, null);
@@ -213,7 +213,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$7, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$7, reason: invalid class name */
     final enum AnonymousClass7 extends TokeniserState {
         AnonymousClass7(String str, int i) {
             super(str, i, null);
@@ -234,7 +234,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$8, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$8, reason: invalid class name */
     final enum AnonymousClass8 extends TokeniserState {
         AnonymousClass8(String str, int i) {
             super(str, i, null);
@@ -272,7 +272,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$9, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$9, reason: invalid class name */
     final enum AnonymousClass9 extends TokeniserState {
         AnonymousClass9(String str, int i) {
             super(str, i, null);
@@ -299,7 +299,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$10, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$10, reason: invalid class name */
     final enum AnonymousClass10 extends TokeniserState {
         AnonymousClass10(String str, int i) {
             super(str, i, null);
@@ -335,7 +335,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$11, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$11, reason: invalid class name */
     final enum AnonymousClass11 extends TokeniserState {
         AnonymousClass11(String str, int i) {
             super(str, i, null);
@@ -357,7 +357,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$12, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$12, reason: invalid class name */
     final enum AnonymousClass12 extends TokeniserState {
         AnonymousClass12(String str, int i) {
             super(str, i, null);
@@ -377,7 +377,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$13, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$13, reason: invalid class name */
     final enum AnonymousClass13 extends TokeniserState {
         AnonymousClass13(String str, int i) {
             super(str, i, null);
@@ -431,7 +431,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$14, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$14, reason: invalid class name */
     final enum AnonymousClass14 extends TokeniserState {
         AnonymousClass14(String str, int i) {
             super(str, i, null);
@@ -449,7 +449,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$15, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$15, reason: invalid class name */
     final enum AnonymousClass15 extends TokeniserState {
         AnonymousClass15(String str, int i) {
             super(str, i, null);
@@ -461,7 +461,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$16, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$16, reason: invalid class name */
     final enum AnonymousClass16 extends TokeniserState {
         AnonymousClass16(String str, int i) {
             super(str, i, null);
@@ -473,7 +473,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$17, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$17, reason: invalid class name */
     final enum AnonymousClass17 extends TokeniserState {
         AnonymousClass17(String str, int i) {
             super(str, i, null);
@@ -502,7 +502,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$18, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$18, reason: invalid class name */
     final enum AnonymousClass18 extends TokeniserState {
         AnonymousClass18(String str, int i) {
             super(str, i, null);
@@ -514,7 +514,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$19, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$19, reason: invalid class name */
     final enum AnonymousClass19 extends TokeniserState {
         AnonymousClass19(String str, int i) {
             super(str, i, null);
@@ -526,7 +526,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$20, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$20, reason: invalid class name */
     final enum AnonymousClass20 extends TokeniserState {
         AnonymousClass20(String str, int i) {
             super(str, i, null);
@@ -543,7 +543,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$21, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$21, reason: invalid class name */
     final enum AnonymousClass21 extends TokeniserState {
         AnonymousClass21(String str, int i) {
             super(str, i, null);
@@ -560,7 +560,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$22, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$22, reason: invalid class name */
     final enum AnonymousClass22 extends TokeniserState {
         AnonymousClass22(String str, int i) {
             super(str, i, null);
@@ -589,7 +589,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$23, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$23, reason: invalid class name */
     final enum AnonymousClass23 extends TokeniserState {
         AnonymousClass23(String str, int i) {
             super(str, i, null);
@@ -619,7 +619,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$24, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$24, reason: invalid class name */
     final enum AnonymousClass24 extends TokeniserState {
         AnonymousClass24(String str, int i) {
             super(str, i, null);
@@ -655,7 +655,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$25, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$25, reason: invalid class name */
     final enum AnonymousClass25 extends TokeniserState {
         AnonymousClass25(String str, int i) {
             super(str, i, null);
@@ -681,7 +681,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$26, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$26, reason: invalid class name */
     final enum AnonymousClass26 extends TokeniserState {
         AnonymousClass26(String str, int i) {
             super(str, i, null);
@@ -701,7 +701,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$27, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$27, reason: invalid class name */
     final enum AnonymousClass27 extends TokeniserState {
         AnonymousClass27(String str, int i) {
             super(str, i, null);
@@ -713,7 +713,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$28, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$28, reason: invalid class name */
     final enum AnonymousClass28 extends TokeniserState {
         AnonymousClass28(String str, int i) {
             super(str, i, null);
@@ -725,7 +725,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$29, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$29, reason: invalid class name */
     final enum AnonymousClass29 extends TokeniserState {
         AnonymousClass29(String str, int i) {
             super(str, i, null);
@@ -753,7 +753,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$30, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$30, reason: invalid class name */
     final enum AnonymousClass30 extends TokeniserState {
         AnonymousClass30(String str, int i) {
             super(str, i, null);
@@ -782,7 +782,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$31, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$31, reason: invalid class name */
     final enum AnonymousClass31 extends TokeniserState {
         AnonymousClass31(String str, int i) {
             super(str, i, null);
@@ -817,7 +817,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$32, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$32, reason: invalid class name */
     final enum AnonymousClass32 extends TokeniserState {
         AnonymousClass32(String str, int i) {
             super(str, i, null);
@@ -835,7 +835,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$33, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$33, reason: invalid class name */
     final enum AnonymousClass33 extends TokeniserState {
         AnonymousClass33(String str, int i) {
             super(str, i, null);
@@ -847,7 +847,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$34, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$34, reason: invalid class name */
     final enum AnonymousClass34 extends TokeniserState {
         AnonymousClass34(String str, int i) {
             super(str, i, null);
@@ -901,7 +901,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$35, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$35, reason: invalid class name */
     final enum AnonymousClass35 extends TokeniserState {
         AnonymousClass35(String str, int i) {
             super(str, i, null);
@@ -950,7 +950,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$36, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$36, reason: invalid class name */
     final enum AnonymousClass36 extends TokeniserState {
         AnonymousClass36(String str, int i) {
             super(str, i, null);
@@ -1005,7 +1005,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$37, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$37, reason: invalid class name */
     final enum AnonymousClass37 extends TokeniserState {
         AnonymousClass37(String str, int i) {
             super(str, i, null);
@@ -1067,7 +1067,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$38, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$38, reason: invalid class name */
     final enum AnonymousClass38 extends TokeniserState {
         AnonymousClass38(String str, int i) {
             super(str, i, null);
@@ -1112,7 +1112,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$39, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$39, reason: invalid class name */
     final enum AnonymousClass39 extends TokeniserState {
         AnonymousClass39(String str, int i) {
             super(str, i, null);
@@ -1157,7 +1157,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$40, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$40, reason: invalid class name */
     final enum AnonymousClass40 extends TokeniserState {
         AnonymousClass40(String str, int i) {
             super(str, i, null);
@@ -1220,7 +1220,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$41, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$41, reason: invalid class name */
     final enum AnonymousClass41 extends TokeniserState {
         AnonymousClass41(String str, int i) {
             super(str, i, null);
@@ -1254,7 +1254,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$42, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$42, reason: invalid class name */
     final enum AnonymousClass42 extends TokeniserState {
         AnonymousClass42(String str, int i) {
             super(str, i, null);
@@ -1278,7 +1278,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$43, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$43, reason: invalid class name */
     final enum AnonymousClass43 extends TokeniserState {
         AnonymousClass43(String str, int i) {
             super(str, i, null);
@@ -1296,7 +1296,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$44, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$44, reason: invalid class name */
     final enum AnonymousClass44 extends TokeniserState {
         AnonymousClass44(String str, int i) {
             super(str, i, null);
@@ -1327,7 +1327,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$45, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$45, reason: invalid class name */
     final enum AnonymousClass45 extends TokeniserState {
         AnonymousClass45(String str, int i) {
             super(str, i, null);
@@ -1347,7 +1347,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$46, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$46, reason: invalid class name */
     final enum AnonymousClass46 extends TokeniserState {
         AnonymousClass46(String str, int i) {
             super(str, i, null);
@@ -1381,7 +1381,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$47, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$47, reason: invalid class name */
     final enum AnonymousClass47 extends TokeniserState {
         AnonymousClass47(String str, int i) {
             super(str, i, null);
@@ -1415,7 +1415,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$48, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$48, reason: invalid class name */
     final enum AnonymousClass48 extends TokeniserState {
         AnonymousClass48(String str, int i) {
             super(str, i, null);
@@ -1442,7 +1442,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$49, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$49, reason: invalid class name */
     final enum AnonymousClass49 extends TokeniserState {
         AnonymousClass49(String str, int i) {
             super(str, i, null);
@@ -1472,7 +1472,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$50, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$50, reason: invalid class name */
     final enum AnonymousClass50 extends TokeniserState {
         AnonymousClass50(String str, int i) {
             super(str, i, null);
@@ -1509,7 +1509,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$51, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$51, reason: invalid class name */
     final enum AnonymousClass51 extends TokeniserState {
         AnonymousClass51(String str, int i) {
             super(str, i, null);
@@ -1543,7 +1543,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$52, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$52, reason: invalid class name */
     final enum AnonymousClass52 extends TokeniserState {
         AnonymousClass52(String str, int i) {
             super(str, i, null);
@@ -1573,7 +1573,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$53, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$53, reason: invalid class name */
     final enum AnonymousClass53 extends TokeniserState {
         AnonymousClass53(String str, int i) {
             super(str, i, null);
@@ -1613,7 +1613,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$54, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$54, reason: invalid class name */
     final enum AnonymousClass54 extends TokeniserState {
         AnonymousClass54(String str, int i) {
             super(str, i, null);
@@ -1653,7 +1653,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$55, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$55, reason: invalid class name */
     final enum AnonymousClass55 extends TokeniserState {
         AnonymousClass55(String str, int i) {
             super(str, i, null);
@@ -1691,7 +1691,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$56, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$56, reason: invalid class name */
     final enum AnonymousClass56 extends TokeniserState {
         AnonymousClass56(String str, int i) {
             super(str, i, null);
@@ -1734,7 +1734,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$57, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$57, reason: invalid class name */
     final enum AnonymousClass57 extends TokeniserState {
         AnonymousClass57(String str, int i) {
             super(str, i, null);
@@ -1774,7 +1774,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$58, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$58, reason: invalid class name */
     final enum AnonymousClass58 extends TokeniserState {
         AnonymousClass58(String str, int i) {
             super(str, i, null);
@@ -1810,7 +1810,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$59, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$59, reason: invalid class name */
     final enum AnonymousClass59 extends TokeniserState {
         AnonymousClass59(String str, int i) {
             super(str, i, null);
@@ -1846,7 +1846,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$60, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$60, reason: invalid class name */
     final enum AnonymousClass60 extends TokeniserState {
         AnonymousClass60(String str, int i) {
             super(str, i, null);
@@ -1887,7 +1887,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$61, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$61, reason: invalid class name */
     final enum AnonymousClass61 extends TokeniserState {
         AnonymousClass61(String str, int i) {
             super(str, i, null);
@@ -1927,7 +1927,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$62, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$62, reason: invalid class name */
     final enum AnonymousClass62 extends TokeniserState {
         AnonymousClass62(String str, int i) {
             super(str, i, null);
@@ -1970,7 +1970,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$63, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$63, reason: invalid class name */
     final enum AnonymousClass63 extends TokeniserState {
         AnonymousClass63(String str, int i) {
             super(str, i, null);
@@ -2010,7 +2010,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$64, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$64, reason: invalid class name */
     final enum AnonymousClass64 extends TokeniserState {
         AnonymousClass64(String str, int i) {
             super(str, i, null);
@@ -2046,7 +2046,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$65, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$65, reason: invalid class name */
     final enum AnonymousClass65 extends TokeniserState {
         AnonymousClass65(String str, int i) {
             super(str, i, null);
@@ -2082,7 +2082,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$66, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$66, reason: invalid class name */
     final enum AnonymousClass66 extends TokeniserState {
         AnonymousClass66(String str, int i) {
             super(str, i, null);
@@ -2111,7 +2111,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$67, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$67, reason: invalid class name */
     final enum AnonymousClass67 extends TokeniserState {
         AnonymousClass67(String str, int i) {
             super(str, i, null);
@@ -2133,7 +2133,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: renamed from: org.jsoup.parser.TokeniserState$68, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.parser.TokeniserState$68, reason: invalid class name */
     final enum AnonymousClass68 extends TokeniserState {
         AnonymousClass68(String str, int i) {
             super(str, i, null);
@@ -2149,7 +2149,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void handleDataEndTag(Tokeniser tokeniser, CharacterReader characterReader, TokeniserState tokeniserState) {
         if (characterReader.matchesAsciiAlpha()) {
             String strConsumeTagName = characterReader.consumeTagName();
@@ -2180,7 +2180,7 @@ abstract class TokeniserState {
         tokeniser.transition(tokeniserState);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void readRawData(Tokeniser tokeniser, CharacterReader characterReader, TokeniserState tokeniserState, TokeniserState tokeniserState2) {
         char cCurrent = characterReader.current();
         if (cCurrent == 0) {
@@ -2196,7 +2196,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void readCharRef(Tokeniser tokeniser, TokeniserState tokeniserState) {
         int[] iArrConsumeCharacterReference = tokeniser.consumeCharacterReference(null, false);
         if (iArrConsumeCharacterReference == null) {
@@ -2207,7 +2207,7 @@ abstract class TokeniserState {
         tokeniser.transition(tokeniserState);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void readEndTag(Tokeniser tokeniser, CharacterReader characterReader, TokeniserState tokeniserState, TokeniserState tokeniserState2) {
         if (characterReader.matchesAsciiAlpha()) {
             tokeniser.createTagPending(false);
@@ -2218,7 +2218,7 @@ abstract class TokeniserState {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void handleDataDoubleEscapeTag(Tokeniser tokeniser, CharacterReader characterReader, TokeniserState tokeniserState, TokeniserState tokeniserState2) {
         if (characterReader.matchesAsciiAlpha()) {
             String strConsumeLetterSequence = characterReader.consumeLetterSequence();

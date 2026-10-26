@@ -3,7 +3,7 @@ package com.google.auth.oauth2;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class AwsRequestSignature {
     private String authorizationHeader;
     private AwsSecurityCredentials awsSecurityCredentials;

@@ -24,7 +24,7 @@ import androidx.interpolator.view.animation.FastOutLinearInInterpolator;
 import androidx.leanback.R;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class BackgroundManager {
     private static final int CHANGE_BG_DELAY_MS = 500;
     static final boolean DEBUG = false;
@@ -368,7 +368,7 @@ public final class BackgroundManager {
         return translucentLayerDrawable;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BackgroundManager$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BackgroundManager$1, reason: invalid class name */
     class AnonymousClass1 implements Animator.AnimatorListener {
         final Runnable mRunnable = new RunnableC00111();
 
@@ -384,7 +384,7 @@ public final class BackgroundManager {
         public void onAnimationStart(Animator animator) {
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.app.BackgroundManager$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: androidx.leanback.app.BackgroundManager$1$1, reason: invalid class name and collision with other inner class name */
         class RunnableC00111 implements Runnable {
             RunnableC00111() {
             }
@@ -407,7 +407,7 @@ public final class BackgroundManager {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BackgroundManager$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BackgroundManager$2, reason: invalid class name */
     class AnonymousClass2 implements ValueAnimator.AnimatorUpdateListener {
         AnonymousClass2() {
         }
@@ -823,7 +823,7 @@ public final class BackgroundManager {
     }
 
     static class EmptyDrawable extends BitmapDrawable {
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         EmptyDrawable(Resources resources) {
             super(resources, null);
         }

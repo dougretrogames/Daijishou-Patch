@@ -5,7 +5,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.util.FS;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class SshTransport extends TcpTransport {
     private SshSessionFactory sch;
     private RemoteSession sock;

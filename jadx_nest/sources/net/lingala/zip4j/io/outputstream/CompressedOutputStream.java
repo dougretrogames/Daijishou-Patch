@@ -3,7 +3,7 @@ package net.lingala.zip4j.io.outputstream;
 import java.io.IOException;
 import java.io.OutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class CompressedOutputStream extends OutputStream {
     private CipherOutputStream<?> cipherOutputStream;
 

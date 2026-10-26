@@ -5,7 +5,7 @@ import org.apache.http.HttpResponse;
 import org.apache.http.io.SessionOutputBuffer;
 import org.apache.http.message.LineFormatter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultHttpResponseWriter extends AbstractMessageWriter<HttpResponse> {
     public DefaultHttpResponseWriter(SessionOutputBuffer sessionOutputBuffer, LineFormatter lineFormatter) {
         super(sessionOutputBuffer, lineFormatter);
@@ -15,7 +15,7 @@ public class DefaultHttpResponseWriter extends AbstractMessageWriter<HttpRespons
         super(sessionOutputBuffer, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.http.impl.io.AbstractMessageWriter
     public void writeHeadLine(HttpResponse httpResponse) throws IOException {
         this.lineFormatter.formatStatusLine(this.lineBuf, httpResponse.getStatusLine());

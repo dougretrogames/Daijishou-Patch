@@ -15,7 +15,7 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpRequestWrapper extends AbstractHttpMessage implements HttpUriRequest {
     private final String method;
     private final HttpRequest original;

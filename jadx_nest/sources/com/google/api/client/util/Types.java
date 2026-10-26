@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.NoSuchElementException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Types {
     public static ParameterizedType getSuperParameterizedType(Type type, Class<?> cls) {
         Class<?> cls2;
@@ -208,8 +208,8 @@ public class Types {
         return new AnonymousClass1(obj);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.api.client.util.Types$1, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.api.client.util.Types$1, reason: invalid class name */
     static class AnonymousClass1<T> implements Iterable<T> {
         final /* synthetic */ Object val$value;
 
@@ -217,7 +217,7 @@ public class Types {
             this.val$value = obj;
         }
 
-        /* JADX INFO: renamed from: com.google.api.client.util.Types$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.google.api.client.util.Types$1$1, reason: invalid class name and collision with other inner class name */
         class C00331 implements Iterator<T> {
             int index = 0;
             final int length;

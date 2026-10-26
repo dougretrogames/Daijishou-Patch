@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class ClientInterceptors {
     private static final ClientCall<Object, Object> NOOP_CALL = new AnonymousClass2();
 
@@ -37,7 +37,7 @@ public class ClientInterceptors {
         return channel;
     }
 
-    /* JADX INFO: renamed from: io.grpc.ClientInterceptors$1, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.ClientInterceptors$1, reason: invalid class name */
     class AnonymousClass1 implements ClientInterceptor {
         final /* synthetic */ ClientInterceptor val$interceptor;
         final /* synthetic */ MethodDescriptor.Marshaller val$reqMarshaller;
@@ -54,8 +54,8 @@ public class ClientInterceptors {
             return new C00841(this.val$interceptor.interceptCall(methodDescriptor.toBuilder(this.val$reqMarshaller, this.val$respMarshaller).build(), callOptions, channel), methodDescriptor);
         }
 
-        /* JADX INFO: Add missing generic type declarations: [ReqT, RespT] */
-        /* JADX INFO: renamed from: io.grpc.ClientInterceptors$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: Add missing generic type declarations: [ReqT, RespT] */
+        /* INFO: renamed from: io.grpc.ClientInterceptors$1$1, reason: invalid class name and collision with other inner class name */
         class C00841<ReqT, RespT> extends PartialForwardingClientCall<ReqT, RespT> {
             final /* synthetic */ MethodDescriptor val$method;
             final /* synthetic */ ClientCall val$wrappedCall;
@@ -65,8 +65,8 @@ public class ClientInterceptors {
                 this.val$method = methodDescriptor;
             }
 
-            /* JADX INFO: Add missing generic type declarations: [WRespT] */
-            /* JADX INFO: renamed from: io.grpc.ClientInterceptors$1$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: Add missing generic type declarations: [WRespT] */
+            /* INFO: renamed from: io.grpc.ClientInterceptors$1$1$1, reason: invalid class name and collision with other inner class name */
             class C00851<WRespT> extends PartialForwardingClientCallListener<WRespT> {
                 final /* synthetic */ ClientCall.Listener val$responseListener;
 
@@ -90,7 +90,7 @@ public class ClientInterceptors {
                 this.val$wrappedCall.start(new C00851(listener), metadata);
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // io.grpc.ClientCall
             public void sendMessage(ReqT reqt) {
                 this.val$wrappedCall.sendMessage(AnonymousClass1.this.val$reqMarshaller.parse(this.val$method.getRequestMarshaller().stream(reqt)));
@@ -131,7 +131,7 @@ public class ClientInterceptors {
         }
     }
 
-    /* JADX INFO: renamed from: io.grpc.ClientInterceptors$2, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.ClientInterceptors$2, reason: invalid class name */
     class AnonymousClass2 extends ClientCall<Object, Object> {
         @Override // io.grpc.ClientCall
         public void cancel(String str, Throwable th) {

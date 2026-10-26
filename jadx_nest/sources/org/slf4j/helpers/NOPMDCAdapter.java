@@ -3,7 +3,7 @@ package org.slf4j.helpers;
 import java.util.Map;
 import org.slf4j.spi.MDCAdapter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NOPMDCAdapter implements MDCAdapter {
     @Override // org.slf4j.spi.MDCAdapter
     public void clear() {

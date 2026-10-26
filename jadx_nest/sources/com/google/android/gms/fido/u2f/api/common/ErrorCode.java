@@ -3,8 +3,8 @@ package com.google.android.gms.fido.u2f.api.common;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public enum ErrorCode implements Parcelable {
     OK(0),

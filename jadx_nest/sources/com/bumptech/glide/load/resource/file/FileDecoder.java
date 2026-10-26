@@ -5,7 +5,7 @@ import com.bumptech.glide.load.ResourceDecoder;
 import com.bumptech.glide.load.engine.Resource;
 import java.io.File;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FileDecoder implements ResourceDecoder<File, File> {
     @Override // com.bumptech.glide.load.ResourceDecoder
     public boolean handles(File file, Options options) {

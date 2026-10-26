@@ -28,7 +28,7 @@ import com.google.android.material.R;
 import com.google.android.material.resources.MaterialResources;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ClockFaceView extends RadialViewGroup implements ClockHandView.OnRotateListener {
     private static final float EPSILON = 0.001f;
     private static final int INITIAL_CAPACITY = 12;
@@ -90,7 +90,7 @@ class ClockFaceView extends RadialViewGroup implements ClockHandView.OnRotateLis
         this.clockSize = resources.getDimensionPixelSize(R.dimen.material_clock_size);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.ClockFaceView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.ClockFaceView$1, reason: invalid class name */
     class AnonymousClass1 implements ViewTreeObserver.OnPreDrawListener {
         AnonymousClass1() {
         }
@@ -106,7 +106,7 @@ class ClockFaceView extends RadialViewGroup implements ClockHandView.OnRotateLis
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.ClockFaceView$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.ClockFaceView$2, reason: invalid class name */
     class AnonymousClass2 extends AccessibilityDelegateCompat {
         AnonymousClass2() {
         }

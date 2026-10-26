@@ -3,7 +3,7 @@ package androidx.webkit.internal;
 import androidx.webkit.SpeculativeLoadingConfig;
 import org.chromium.support_lib_boundary.SpeculativeLoadingConfigBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SpeculativeLoadingConfigAdapter implements SpeculativeLoadingConfigBoundaryInterface {
     private final SpeculativeLoadingConfig mSpeculativeLoadingConfig;
 

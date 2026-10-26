@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 abstract class MaterialVisibility<P extends VisibilityAnimatorProvider> extends Visibility {
     private final List<VisibilityAnimatorProvider> additionalAnimatorProviders = new ArrayList();
     private final P primaryAnimatorProvider;

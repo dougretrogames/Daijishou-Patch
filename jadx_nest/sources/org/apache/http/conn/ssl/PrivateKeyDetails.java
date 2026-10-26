@@ -5,7 +5,7 @@ import java.util.Arrays;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public final class PrivateKeyDetails {
     private final X509Certificate[] certChain;

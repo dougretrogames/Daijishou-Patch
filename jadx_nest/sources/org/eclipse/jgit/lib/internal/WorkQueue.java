@@ -4,12 +4,12 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledThreadPoolExecutor;
 import java.util.concurrent.ThreadFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class WorkQueue {
     private static final ScheduledThreadPoolExecutor executor;
     static final Object executorKiller;
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.internal.WorkQueue$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.internal.WorkQueue$1, reason: invalid class name */
     class AnonymousClass1 implements ThreadFactory {
         private final ThreadFactory baseFactory = Executors.defaultThreadFactory();
 
@@ -37,7 +37,7 @@ public class WorkQueue {
         executorKiller = new AnonymousClass2();
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.internal.WorkQueue$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.internal.WorkQueue$2, reason: invalid class name */
     class AnonymousClass2 {
         AnonymousClass2() {
         }

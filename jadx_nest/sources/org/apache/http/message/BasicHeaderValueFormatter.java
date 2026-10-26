@@ -5,7 +5,7 @@ import org.apache.http.NameValuePair;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicHeaderValueFormatter implements HeaderValueFormatter {
 
     @Deprecated

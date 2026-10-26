@@ -6,7 +6,7 @@ import com.google.common.base.Objects;
 import com.google.common.base.Preconditions;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class StatusOr<T> {
     private final Status status;
     private final T value;

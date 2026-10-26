@@ -5,7 +5,7 @@ import java.util.Objects;
 import java.util.function.IntPredicate;
 import java.util.function.LongPredicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class SimpleBloomFilter implements BloomFilter<SimpleBloomFilter> {
     private final long[] bitMap;
     private int cardinality;
@@ -61,7 +61,7 @@ public final class SimpleBloomFilter implements BloomFilter<SimpleBloomFilter> {
         return indexExtractor.processIndices(new SimpleBloomFilter$$ExternalSyntheticLambda0(this));
     }
 
-    /* JADX INFO: renamed from: lambda$contains$0$org-apache-commons-collections4-bloomfilter-SimpleBloomFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$contains$0$org-apache-commons-collections4-bloomfilter-SimpleBloomFilter, reason: not valid java name */
     /* synthetic */ boolean m5535x76995088(int i) {
         return BitMaps.contains(this.bitMap, i);
     }
@@ -99,7 +99,7 @@ public final class SimpleBloomFilter implements BloomFilter<SimpleBloomFilter> {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$merge$2$org-apache-commons-collections4-bloomfilter-SimpleBloomFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$merge$2$org-apache-commons-collections4-bloomfilter-SimpleBloomFilter, reason: not valid java name */
     /* synthetic */ boolean m5536x2a80fc9(int[] iArr, long j) {
         long[] jArr = this.bitMap;
         int i = iArr[0];
@@ -133,7 +133,7 @@ public final class SimpleBloomFilter implements BloomFilter<SimpleBloomFilter> {
         return true;
     }
 
-    /* JADX INFO: renamed from: lambda$merge$3$org-apache-commons-collections4-bloomfilter-SimpleBloomFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$merge$3$org-apache-commons-collections4-bloomfilter-SimpleBloomFilter, reason: not valid java name */
     /* synthetic */ boolean m5537xf637940a(int i) {
         if (i < 0 || i >= this.shape.getNumberOfBits()) {
             throw new IllegalArgumentException(String.format("IndexExtractor should only send values in the range[0,%s)", Integer.valueOf(this.shape.getNumberOfBits())));

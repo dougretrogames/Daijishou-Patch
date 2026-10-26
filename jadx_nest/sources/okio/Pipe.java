@@ -12,8 +12,8 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: Pipe.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: Pipe.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0006\u0010)\u001a\u00020*J\u000e\u0010+\u001a\u00020*2\u0006\u0010\u001f\u001a\u00020\u0014J\r\u0010\u001f\u001a\u00020\u0014H\u0007¢\u0006\u0002\b,J\r\u0010#\u001a\u00020$H\u0007¢\u0006\u0002\b-J&\u0010.\u001a\u00020**\u00020\u00142\u0017\u0010/\u001a\u0013\u0012\u0004\u0012\u00020\u0014\u0012\u0004\u0012\u00020*00¢\u0006\u0002\b1H\u0082\bR\u0014\u0010\u0005\u001a\u00020\u0006X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u001a\u0010\t\u001a\u00020\nX\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u0011\u0010\u000f\u001a\u00020\u0010¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u001c\u0010\u0013\u001a\u0004\u0018\u00010\u0014X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R\u0011\u0010\u0019\u001a\u00020\u001a¢\u0006\b\n\u0000\u001a\u0004\b\u001b\u0010\u001cR\u0014\u0010\u0002\u001a\u00020\u0003X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u001eR\u0013\u0010\u001f\u001a\u00020\u00148G¢\u0006\b\n\u0000\u001a\u0004\b\u001f\u0010\u0016R\u001a\u0010 \u001a\u00020\nX\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b!\u0010\f\"\u0004\b\"\u0010\u000eR\u0013\u0010#\u001a\u00020$8G¢\u0006\b\n\u0000\u001a\u0004\b#\u0010%R\u001a\u0010&\u001a\u00020\nX\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b'\u0010\f\"\u0004\b(\u0010\u000e¨\u00062"}, d2 = {"Lokio/Pipe;", "", "maxBufferSize", "", "(J)V", "buffer", "Lokio/Buffer;", "getBuffer$okio", "()Lokio/Buffer;", "canceled", "", "getCanceled$okio", "()Z", "setCanceled$okio", "(Z)V", "condition", "Ljava/util/concurrent/locks/Condition;", "getCondition", "()Ljava/util/concurrent/locks/Condition;", "foldedSink", "Lokio/Sink;", "getFoldedSink$okio", "()Lokio/Sink;", "setFoldedSink$okio", "(Lokio/Sink;)V", "lock", "Ljava/util/concurrent/locks/ReentrantLock;", "getLock", "()Ljava/util/concurrent/locks/ReentrantLock;", "getMaxBufferSize$okio", "()J", "sink", "sinkClosed", "getSinkClosed$okio", "setSinkClosed$okio", "source", "Lokio/Source;", "()Lokio/Source;", "sourceClosed", "getSourceClosed$okio", "setSourceClosed$okio", "cancel", "", "fold", "-deprecated_sink", "-deprecated_source", "forward", "block", "Lkotlin/Function1;", "Lkotlin/ExtensionFunctionType;", "okio"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class Pipe {
     private final Buffer buffer = new Buffer();
@@ -41,17 +41,17 @@ public final class Pipe {
         this.source = new C04131();
     }
 
-    /* JADX INFO: renamed from: getMaxBufferSize$okio, reason: from getter */
+    /* INFO: renamed from: getMaxBufferSize$okio, reason: from getter */
     public final long getMaxBufferSize() {
         return this.maxBufferSize;
     }
 
-    /* JADX INFO: renamed from: getBuffer$okio, reason: from getter */
+    /* INFO: renamed from: getBuffer$okio, reason: from getter */
     public final Buffer getBuffer() {
         return this.buffer;
     }
 
-    /* JADX INFO: renamed from: getCanceled$okio, reason: from getter */
+    /* INFO: renamed from: getCanceled$okio, reason: from getter */
     public final boolean getCanceled() {
         return this.canceled;
     }
@@ -60,7 +60,7 @@ public final class Pipe {
         this.canceled = z;
     }
 
-    /* JADX INFO: renamed from: getSinkClosed$okio, reason: from getter */
+    /* INFO: renamed from: getSinkClosed$okio, reason: from getter */
     public final boolean getSinkClosed() {
         return this.sinkClosed;
     }
@@ -69,7 +69,7 @@ public final class Pipe {
         this.sinkClosed = z;
     }
 
-    /* JADX INFO: renamed from: getSourceClosed$okio, reason: from getter */
+    /* INFO: renamed from: getSourceClosed$okio, reason: from getter */
     public final boolean getSourceClosed() {
         return this.sourceClosed;
     }
@@ -78,7 +78,7 @@ public final class Pipe {
         this.sourceClosed = z;
     }
 
-    /* JADX INFO: renamed from: getFoldedSink$okio, reason: from getter */
+    /* INFO: renamed from: getFoldedSink$okio, reason: from getter */
     public final Sink getFoldedSink() {
         return this.foldedSink;
     }
@@ -95,8 +95,8 @@ public final class Pipe {
         return this.condition;
     }
 
-    /* JADX INFO: renamed from: okio.Pipe$sink$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Pipe.kt */
+    /* INFO: renamed from: okio.Pipe$sink$1, reason: invalid class name */
+    /* INFO: compiled from: Pipe.kt */
     @Metadata(d1 = {"\u0000%\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\b\u0010\u0004\u001a\u00020\u0005H\u0016J\b\u0010\u0006\u001a\u00020\u0005H\u0016J\b\u0010\u0002\u001a\u00020\u0003H\u0016J\u0018\u0010\u0007\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\f"}, d2 = {"okio/Pipe$sink$1", "Lokio/Sink;", "timeout", "Lokio/Timeout;", "close", "", "flush", "write", "source", "Lokio/Buffer;", "byteCount", "", "okio"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class AnonymousClass1 implements Sink {
         private final Timeout timeout = new Timeout();
@@ -326,7 +326,7 @@ public final class Pipe {
         }
 
         @Override // okio.Sink
-        /* JADX INFO: renamed from: timeout, reason: from getter */
+        /* INFO: renamed from: timeout, reason: from getter */
         public Timeout getTimeout() {
             return this.timeout;
         }
@@ -336,8 +336,8 @@ public final class Pipe {
         return this.sink;
     }
 
-    /* JADX INFO: renamed from: okio.Pipe$source$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Pipe.kt */
+    /* INFO: renamed from: okio.Pipe$source$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Pipe.kt */
     @Metadata(d1 = {"\u0000%\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\b\u0010\u0004\u001a\u00020\u0005H\u0016J\u0018\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u0007H\u0016J\b\u0010\u0002\u001a\u00020\u0003H\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000b"}, d2 = {"okio/Pipe$source$1", "Lokio/Source;", "timeout", "Lokio/Timeout;", "close", "", "read", "", "sink", "Lokio/Buffer;", "byteCount", "okio"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class C04131 implements Source {
         private final Timeout timeout = new Timeout();
@@ -393,7 +393,7 @@ public final class Pipe {
         }
 
         @Override // okio.Source
-        /* JADX INFO: renamed from: timeout, reason: from getter */
+        /* INFO: renamed from: timeout, reason: from getter */
         public Timeout getTimeout() {
             return this.timeout;
         }
@@ -496,13 +496,13 @@ public final class Pipe {
     }
 
     @Deprecated(level = DeprecationLevel.ERROR, message = "moved to val", replaceWith = @ReplaceWith(expression = "sink", imports = {}))
-    /* JADX INFO: renamed from: -deprecated_sink, reason: not valid java name and from getter */
+    /* INFO: renamed from: -deprecated_sink, reason: not valid java name and from getter */
     public final Sink getSink() {
         return this.sink;
     }
 
     @Deprecated(level = DeprecationLevel.ERROR, message = "moved to val", replaceWith = @ReplaceWith(expression = "source", imports = {}))
-    /* JADX INFO: renamed from: -deprecated_source, reason: not valid java name and from getter */
+    /* INFO: renamed from: -deprecated_source, reason: not valid java name and from getter */
     public final Source getSource() {
         return this.source;
     }

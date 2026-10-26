@@ -47,8 +47,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.text.StringsKt;
 
-/* JADX INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000À\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\r\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010 \n\u0002\b\u0007\b&\u0018\u00002\u00020\u0001:\u0001VB\u0005¢\u0006\u0002\u0010\u0002J\b\u00102\u001a\u00020\u0010H\u0016J&\u00103\u001a\u0004\u0018\u0001042\u0006\u00105\u001a\u0002062\b\u00107\u001a\u0004\u0018\u0001082\b\u00109\u001a\u0004\u0018\u00010:H\u0016J\u0010\u0010;\u001a\u00020\u00192\u0006\u0010<\u001a\u00020=H\u0016J\u001e\u0010>\u001a\u00020\u00192\u0006\u0010?\u001a\u00020!2\u0006\u0010@\u001a\u00020!2\u0006\u0010A\u001a\u00020BJ\b\u0010C\u001a\u00020\u0019H\u0016J\u001a\u0010D\u001a\u00020\u00192\u0006\u0010E\u001a\u0002042\b\u00109\u001a\u0004\u0018\u00010:H\u0016J\u000e\u0010F\u001a\u00020\u00192\u0006\u0010G\u001a\u00020\bJ\u0006\u0010H\u001a\u00020\u0019J\u0010\u0010I\u001a\u00020\u00192\b\u0010\u0005\u001a\u0004\u0018\u00010\u0006J\u001a\u0010J\u001a\u00020\u00002\u0012\u0010\u0016\u001a\u000e\u0012\u0004\u0012\u00020\u0018\u0012\u0004\u0012\u00020\u00190\u0017J\u0014\u0010K\u001a\u00020\u00002\f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u00190\u001bJ\u001a\u0010L\u001a\u00020\u00002\u0012\u0010\u001c\u001a\u000e\u0012\u0004\u0012\u00020\u0018\u0012\u0004\u0012\u00020\u00190\u0017J\u001a\u0010M\u001a\u00020\u00002\u0012\u0010\u001d\u001a\u000e\u0012\u0004\u0012\u00020\u0018\u0012\u0004\u0012\u00020\u00190\u0017J.\u0010N\u001a\u00020\u00002&\u0010\u001e\u001a\"\u0012\u0006\u0012\u0004\u0018\u00010 \u0012\u0004\u0012\u00020!\u0012\u0004\u0012\u00020!\u0012\u0004\u0012\u00020!\u0012\u0004\u0012\u00020\u00100\u001fJ\u0014\u0010O\u001a\u00020\u00192\f\u0010&\u001a\b\u0012\u0004\u0012\u00020\u00180PJ\u0016\u0010Q\u001a\u00020\u00192\f\u0010&\u001a\b\u0012\u0004\u0012\u00020\u00180PH\u0002J\u000e\u0010R\u001a\u00020\u00002\u0006\u0010S\u001a\u00020\bJ\u000e\u0010T\u001a\u00020\u00002\u0006\u0010U\u001a\u00020\bR\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u0005\u001a\u0004\u0018\u00010\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0018\u0010\t\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0006\u0018\u00010\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u0018\u0010\u000b\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0006\u0018\u00010\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010\u000f\u001a\u00020\u0010X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u0012\"\u0004\b\u0013\u0010\u0014R\u0010\u0010\u0015\u001a\u0004\u0018\u00010\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u0016\u001a\u0010\u0012\u0004\u0012\u00020\u0018\u0012\u0004\u0012\u00020\u0019\u0018\u00010\u0017X\u0082\u000e¢\u0006\u0002\n\u0000R\u0016\u0010\u001a\u001a\n\u0012\u0004\u0012\u00020\u0019\u0018\u00010\u001bX\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u001c\u001a\u0010\u0012\u0004\u0012\u00020\u0018\u0012\u0004\u0012\u00020\u0019\u0018\u00010\u0017X\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010\u001d\u001a\u0010\u0012\u0004\u0012\u00020\u0018\u0012\u0004\u0012\u00020\u0019\u0018\u00010\u0017X\u0082\u000e¢\u0006\u0002\n\u0000R0\u0010\u001e\u001a$\u0012\u0006\u0012\u0004\u0018\u00010 \u0012\u0004\u0012\u00020!\u0012\u0004\u0012\u00020!\u0012\u0004\u0012\u00020!\u0012\u0004\u0012\u00020\u0010\u0018\u00010\u001fX\u0082\u000e¢\u0006\u0002\n\u0000R*\u0010\"\u001a\u001e\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\b0#j\u000e\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020\b`%X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010&\u001a\b\u0012\u0004\u0012\u00020\u00180'X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010(\u001a\b\u0012\u0004\u0012\u00020\u00180'X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020*X\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010+\u001a\u00060,R\u00020\u0000X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010-\u001a\u00020\u0010X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010.\u001a\u00020/X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00100\u001a\u000201X\u0082.¢\u0006\u0002\n\u0000¨\u0006W"}, d2 = {"Lcom/magneticchen/daijishou/abstract_fragment_classes/PlayableItemCollectionDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "()V", "backButton", "Landroidx/constraintlayout/widget/ConstraintLayout;", "currentPlatformEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "currentPlatformEntityDimensionRatio", "", "currentPlatformEntityLiveData", "Landroidx/lifecycle/LiveData;", "currentPlatformEntityLiveDataObserver", "Landroidx/lifecycle/Observer;", "gridLayoutManager", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouGridLayoutManager;", "itemFIOF", "", "getItemFIOF", "()Z", "setItemFIOF", "(Z)V", "lastSearchText", "onClickListener", "Lkotlin/Function1;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "", "onDialogDismissedListener", "Lkotlin/Function0;", "onLongClickListener", "onSelectListener", "onTextChangedListener", "Lkotlin/Function4;", "", "", "platformIdToShortnameHashMap", "Ljava/util/HashMap;", "", "Lkotlin/collections/HashMap;", "playableItemCollection", "", "playableItemCollectionInRecyclerView", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "recyclerViewAdapter", "Lcom/magneticchen/daijishou/abstract_fragment_classes/PlayableItemCollectionDialogFragment$GridRecyclerViewAdapter;", "scrollingOnBackPressed", "textInputEditText", "Lcom/google/android/material/textfield/TextInputEditText;", "textInputLayout", "Lcom/google/android/material/textfield/TextInputLayout;", "onBackPressed", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "savedInstanceState", "Landroid/os/Bundle;", "onDismiss", "dialog", "Landroid/content/DialogInterface;", "onHotKeyPressed", "hotkeyCode", "keyCode", "keyEvent", "Landroid/view/KeyEvent;", "onStart", "onViewCreated", "view", "refreshSearchItemsByKeyword", "keyword", "resetPlayableItemCollectionInRecyclerView", "setCurrentPlatform", "setOnClickListener", "setOnDialogDismissedListener", "setOnLongClickListener", "setOnSelectListener", "setOnTextChangedListener", "setPlayableItemCollection", "", "setPlayableItemCollectionInRecyclerView", "setSearchText", "text", "setTitle", "title", "GridRecyclerViewAdapter", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public abstract class PlayableItemCollectionDialogFragment extends DaijishouDialogFragment {
     private ConstraintLayout backButton;
@@ -222,7 +222,7 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void setCurrentPlatform$lambda$7$lambda$6(PlayableItemCollectionDialogFragment this$0, PlatformEntity platformEntity) {
         String customBoxArtAspectRatio;
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -278,18 +278,18 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
         setPlayableItemCollectionInRecyclerView(arrayList);
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x001b  */
-    /* JADX WARN: Code duplicated, block: B:20:0x0036  */
-    /* JADX WARN: Code duplicated, block: B:22:0x003d  */
-    /* JADX WARN: Code duplicated, block: B:25:0x004a  */
-    /* JADX WARN: Code duplicated, block: B:28:0x0058  */
-    /* JADX WARN: Code duplicated, block: B:30:0x005c  */
-    /* JADX WARN: Code duplicated, block: B:33:0x0069  */
-    /* JADX WARN: Code duplicated, block: B:34:0x006d  */
-    /* JADX WARN: Code duplicated, block: B:36:0x0072  */
-    /* JADX WARN: Code duplicated, block: B:38:0x0076  */
-    /* JADX WARN: Code duplicated, block: B:39:0x007a  */
-    /* JADX WARN: Code duplicated, block: B:9:0x0017  */
+    /* WARN: Code duplicated, block: B:11:0x001b  */
+    /* WARN: Code duplicated, block: B:20:0x0036  */
+    /* WARN: Code duplicated, block: B:22:0x003d  */
+    /* WARN: Code duplicated, block: B:25:0x004a  */
+    /* WARN: Code duplicated, block: B:28:0x0058  */
+    /* WARN: Code duplicated, block: B:30:0x005c  */
+    /* WARN: Code duplicated, block: B:33:0x0069  */
+    /* WARN: Code duplicated, block: B:34:0x006d  */
+    /* WARN: Code duplicated, block: B:36:0x0072  */
+    /* WARN: Code duplicated, block: B:38:0x0076  */
+    /* WARN: Code duplicated, block: B:39:0x007a  */
+    /* WARN: Code duplicated, block: B:9:0x0017  */
     @Override // com.magneticchen.daijishou.abstract_fragment_classes.DaijishouDialogFragment
     public boolean onBackPressed() {
         RecyclerView recyclerView;
@@ -614,8 +614,8 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment$onCreateView$1, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment$onCreateView$1, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function4<View, Integer, Long, PlayableItemEntity, Unit> {
         AnonymousClass1() {
@@ -638,8 +638,8 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment$onCreateView$2, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment$onCreateView$2, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000\"\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0004\b\n\u0010\u000b"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke", "(Landroid/view/View;IJLcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass2 extends Lambda<Boolean> implements Function4<View, Integer, Long, PlayableItemEntity, Boolean> {
         AnonymousClass2() {
@@ -662,8 +662,8 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment$onCreateView$3, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment$onCreateView$3, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass3 extends Lambda<Unit> implements Function4<View, Integer, Long, PlayableItemEntity, Unit> {
         AnonymousClass3() {
@@ -685,8 +685,8 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment$onCreateView$4, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment$onCreateView$4, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/abstract_fragment_classes/PlayableItemCollectionDialogFragment$onCreateView$4", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass4 extends RecyclerView.OnScrollListener {
         AnonymousClass4() {
@@ -702,14 +702,14 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$9(PlayableItemCollectionDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.requireDialog().onBackPressed();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment$onCreateView$7, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment$onCreateView$7, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000%\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0010\b\n\u0002\b\u0005*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0012\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u0016J*\u0010\u0006\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\t2\u0006\u0010\u000b\u001a\u00020\tH\u0016J*\u0010\f\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\r\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\tH\u0016¨\u0006\u000e"}, d2 = {"com/magneticchen/daijishou/abstract_fragment_classes/PlayableItemCollectionDialogFragment$onCreateView$7", "Landroid/text/TextWatcher;", "afterTextChanged", "", "s", "Landroid/text/Editable;", "beforeTextChanged", "", "start", "", "count", "after", "onTextChanged", "before", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass7 implements TextWatcher {
         @Override // android.text.TextWatcher
@@ -740,7 +740,7 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$11(PlayableItemCollectionDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         TextInputEditText textInputEditText = this$0.textInputEditText;
@@ -754,8 +754,8 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment$onCreateView$10, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.abstract_fragment_classes.PlayableItemCollectionDialogFragment$onCreateView$10, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "allPlatforms", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass10 extends Lambda<Unit> implements Function1<List<? extends PlatformEntity>, Unit> {
         AnonymousClass10() {
@@ -768,7 +768,7 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<PlatformEntity> list) {
             Intrinsics.checkNotNull(list);
             PlayableItemCollectionDialogFragment playableItemCollectionDialogFragment = PlayableItemCollectionDialogFragment.this;
@@ -778,13 +778,13 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
         }
     }
 
-    /* JADX INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
+    /* INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
     @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0016B\u0013\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004¢\u0006\u0002\u0010\u0005J\u0010\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J\u001a\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\b\u0010\u000e\u001a\u0004\u0018\u00010\u000fH\u0002J \u0010\u0010\u001a\n0\u0011R\u00060\u0000R\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\tH\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0017"}, d2 = {"Lcom/magneticchen/daijishou/abstract_fragment_classes/PlayableItemCollectionDialogFragment$GridRecyclerViewAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "playableItemEntityList", "", "(Lcom/magneticchen/daijishou/abstract_fragment_classes/PlayableItemCollectionDialogFragment;Ljava/util/List;)V", "getItemId", "", "position", "", "imageViewAnimatedChange", "", "v", "Landroid/widget/ImageView;", "bitmap", "Landroid/graphics/Bitmap;", "onCreateViewHolder", "Lcom/magneticchen/daijishou/abstract_fragment_classes/PlayableItemCollectionDialogFragment$GridRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/PlayableItemCollectionDialogFragment;", "parent", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class GridRecyclerViewAdapter extends DaijishouRecyclerView.Adapter<PlayableItemEntity> {
         private final List<PlayableItemEntity> playableItemEntityList;
         final /* synthetic */ PlayableItemCollectionDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public GridRecyclerViewAdapter(PlayableItemCollectionDialogFragment playableItemCollectionDialogFragment, List<PlayableItemEntity> playableItemEntityList) {
             super(playableItemEntityList, false, false, 6, null);
             Intrinsics.checkNotNullParameter(playableItemEntityList, "playableItemEntityList");
@@ -809,7 +809,7 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
             v.startAnimation(animationLoadAnimation);
         }
 
-        /* JADX INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
+        /* INFO: compiled from: PlayableItemCollectionDialogFragment.kt */
         @Metadata(d1 = {"\u0000D\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0010\u000b\n\u0000\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\u000f\u001a\u00020\u00102\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0003H\u0016J\b\u0010\u0014\u001a\u00020\u0010H\u0016J\u0010\u0010\u0015\u001a\u00020\u00102\u0006\u0010\u0016\u001a\u00020\u0017H\u0016R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\rX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000e\u001a\u00020\rX\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\u0018"}, d2 = {"Lcom/magneticchen/daijishou/abstract_fragment_classes/PlayableItemCollectionDialogFragment$GridRecyclerViewAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/abstract_fragment_classes/PlayableItemCollectionDialogFragment$GridRecyclerViewAdapter;Landroid/view/View;)V", "backgroundSet", "Landroidx/constraintlayout/widget/ConstraintLayout;", "imageView", "Landroid/widget/ImageView;", "placeholder", "platformTextView", "Landroid/widget/TextView;", "textView", "onBind", "", "position", "", "item", "onFocus", "onFocusClear", "isAbsoluteAdapterPositionValid", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<PlayableItemEntity>.ViewHolder {
             private ConstraintLayout backgroundSet;
@@ -819,7 +819,7 @@ public abstract class PlayableItemCollectionDialogFragment extends DaijishouDial
             private TextView textView;
             final /* synthetic */ GridRecyclerViewAdapter this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(GridRecyclerViewAdapter gridRecyclerViewAdapter, View itemView) {
                 super(gridRecyclerViewAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");

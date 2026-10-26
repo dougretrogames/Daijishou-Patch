@@ -12,8 +12,8 @@ import kotlin.annotation.MustBeDocumented;
 import kotlin.annotation.Repeatable;
 import kotlin.jvm.internal.RepeatableContainer;
 
-/* JADX INFO: compiled from: RequiresExtension.jvm.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: RequiresExtension.jvm.kt */
+/* INFO: loaded from: classes.dex */
 @Target({ElementType.TYPE, ElementType.METHOD, ElementType.CONSTRUCTOR, ElementType.FIELD, ElementType.PACKAGE})
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.ANNOTATION_CLASS, AnnotationTarget.CLASS, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CONSTRUCTOR, AnnotationTarget.FIELD, AnnotationTarget.FILE})
 @Retention(RetentionPolicy.CLASS)
@@ -25,7 +25,7 @@ import kotlin.jvm.internal.RepeatableContainer;
 @java.lang.annotation.Repeatable(Container.class)
 public @interface RequiresExtension {
 
-    /* JADX INFO: compiled from: RequiresExtension.jvm.kt */
+    /* INFO: compiled from: RequiresExtension.jvm.kt */
     @Target({ElementType.TYPE, ElementType.FIELD, ElementType.METHOD, ElementType.CONSTRUCTOR, ElementType.ANNOTATION_TYPE})
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.ANNOTATION_CLASS, AnnotationTarget.CLASS, AnnotationTarget.FUNCTION, AnnotationTarget.PROPERTY_GETTER, AnnotationTarget.PROPERTY_SETTER, AnnotationTarget.CONSTRUCTOR, AnnotationTarget.FIELD, AnnotationTarget.FILE})

@@ -1,6 +1,6 @@
 package org.jsoup.parser;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ParseError {
     private final String cursorPos;
     private final String errorMsg;

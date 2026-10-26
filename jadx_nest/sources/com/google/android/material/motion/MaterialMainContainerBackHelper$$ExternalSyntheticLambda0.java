@@ -3,8 +3,8 @@ package com.google.android.material.motion;
 import android.animation.ValueAnimator;
 import com.google.android.material.internal.ClippableRoundedCornerLayout;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class MaterialMainContainerBackHelper$$ExternalSyntheticLambda0 implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ ClippableRoundedCornerLayout f$0;
 

@@ -15,7 +15,7 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultHttpRequestParser extends AbstractMessageParser<HttpRequest> {
     private final CharArrayBuffer lineBuf;
     private final HttpRequestFactory requestFactory;
@@ -41,7 +41,7 @@ public class DefaultHttpRequestParser extends AbstractMessageParser<HttpRequest>
         this(sessionInputBuffer, (LineParser) null, (HttpRequestFactory) null, MessageConstraints.DEFAULT);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.http.impl.io.AbstractMessageParser
     public HttpRequest parseHead(SessionInputBuffer sessionInputBuffer) throws HttpException, ParseException, IOException {
         this.lineBuf.clear();

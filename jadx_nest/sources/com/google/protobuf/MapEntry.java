@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.Map;
 import java.util.TreeMap;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class MapEntry<K, V> extends AbstractMessage {
     private volatile int cachedSerializedSize;
     private final K key;
@@ -22,7 +22,7 @@ public final class MapEntry<K, V> extends AbstractMessage {
         this(metadata, obj, obj2);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class Metadata<K, V> extends MapEntryLite.Metadata<K, V> {
         public final Descriptors.Descriptor descriptor;
         public final Parser<MapEntry<K, V>> parser;
@@ -33,7 +33,7 @@ public final class MapEntry<K, V> extends AbstractMessage {
             this.parser = new AnonymousClass1();
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.MapEntry$Metadata$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.MapEntry$Metadata$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractParser<MapEntry<K, V>> {
             AnonymousClass1() {
             }
@@ -256,7 +256,7 @@ public final class MapEntry<K, V> extends AbstractMessage {
         return this.metadata.descriptor;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.protobuf.MessageOrBuilder
     public Map<Descriptors.FieldDescriptor, Object> getAllFields() {
         TreeMap treeMap = new TreeMap();
@@ -400,7 +400,7 @@ public final class MapEntry<K, V> extends AbstractMessage {
             return ((Message) this.value).newBuilderForType();
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.protobuf.Message.Builder
         public Builder<K, V> setField(Descriptors.FieldDescriptor field, Object value) {
             checkFieldDescriptor(field);
@@ -452,7 +452,7 @@ public final class MapEntry<K, V> extends AbstractMessage {
             return MapEntry.isInitialized(this.metadata, this.value);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.protobuf.MessageOrBuilder
         public Map<Descriptors.FieldDescriptor, Object> getAllFields() {
             TreeMap treeMap = new TreeMap();
@@ -493,13 +493,13 @@ public final class MapEntry<K, V> extends AbstractMessage {
         }
 
         @Override // com.google.protobuf.AbstractMessage.Builder, com.google.protobuf.AbstractMessageLite.Builder
-        /* JADX INFO: renamed from: clone */
+        /* INFO: renamed from: clone */
         public Builder<K, V> mo3377clone() {
             return new Builder<>(this.metadata, this.key, this.value, this.hasKey, this.hasValue);
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <V> boolean isInitialized(Metadata metadata, V value) {
         if (metadata.valueType.getJavaType() == WireFormat.JavaType.MESSAGE) {
             return ((MessageLite) value).isInitialized();

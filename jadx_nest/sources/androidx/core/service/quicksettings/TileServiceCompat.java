@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.service.quicksettings.TileService;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TileServiceCompat {
     private static TileServiceWrapper sTileServiceWrapper;
 

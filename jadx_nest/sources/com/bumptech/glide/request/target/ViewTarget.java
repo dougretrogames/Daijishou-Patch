@@ -18,7 +18,7 @@ import java.util.Iterator;
 import java.util.List;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public abstract class ViewTarget<T extends View, Z> extends BaseTarget<Z> {
     private static final String TAG = "ViewTarget";
@@ -52,7 +52,7 @@ public abstract class ViewTarget<T extends View, Z> extends BaseTarget<Z> {
         return this;
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.request.target.ViewTarget$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.request.target.ViewTarget$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnAttachStateChangeListener {
         AnonymousClass1() {
         }

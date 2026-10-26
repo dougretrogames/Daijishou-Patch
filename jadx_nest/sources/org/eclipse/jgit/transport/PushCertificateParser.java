@@ -13,7 +13,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.util.IO;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PushCertificateParser {
     static final String BEGIN_SIGNATURE = "-----BEGIN PGP SIGNATURE-----";
     static final String END_CERT = "push-cert-end";

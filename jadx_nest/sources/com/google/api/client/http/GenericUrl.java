@@ -20,7 +20,7 @@ import java.util.Set;
 import kotlin.text.Typography;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GenericUrl extends GenericData {
     private static final Escaper URI_FRAGMENT_ESCAPER = new PercentEscaper("=&-_.!~*'()@:$,;/?:");
     private String fragment;

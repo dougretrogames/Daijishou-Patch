@@ -3,7 +3,7 @@ package androidx.emoji2.text.flatbuffer;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MetadataItem extends Table {
     public static void ValidateVersion() {
         Constants.FLATBUFFERS_1_12_0();

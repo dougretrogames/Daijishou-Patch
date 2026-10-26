@@ -2,7 +2,7 @@ package androidx.emoji2.text.flatbuffer;
 
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class IntVector extends BaseVector {
     public IntVector __assign(int i, ByteBuffer byteBuffer) {
         __reset(i, 4, byteBuffer);

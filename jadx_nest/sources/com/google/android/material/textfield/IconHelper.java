@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat;
 import com.google.android.material.internal.CheckableImageButton;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class IconHelper {
     static void setCompatRippleBackgroundIfNeeded(CheckableImageButton checkableImageButton) {
     }

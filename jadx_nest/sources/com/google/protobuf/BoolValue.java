@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class BoolValue extends GeneratedMessage implements BoolValueOrBuilder {
     private static final BoolValue DEFAULT_INSTANCE;
     private static final Parser<BoolValue> PARSER;
@@ -170,7 +170,7 @@ public final class BoolValue extends GeneratedMessage implements BoolValueOrBuil
         return this == DEFAULT_INSTANCE ? new Builder((AnonymousClass1) null) : new Builder((AnonymousClass1) null).mergeFrom(this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent parent) {
         return new Builder(parent, null);
@@ -329,7 +329,7 @@ public final class BoolValue extends GeneratedMessage implements BoolValueOrBuil
         return newBuilder().setValue(value).build();
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.BoolValue$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.BoolValue$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<BoolValue> {
         AnonymousClass1() {
         }

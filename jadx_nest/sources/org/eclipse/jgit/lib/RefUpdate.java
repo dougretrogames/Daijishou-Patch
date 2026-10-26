@@ -10,7 +10,7 @@ import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.transport.PushCertificate;
 import org.eclipse.jgit.util.References;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class RefUpdate {
     private boolean detachingSymbolicRef;
     private ObjectId expValue;
@@ -40,7 +40,7 @@ public abstract class RefUpdate {
         REJECTED_MISSING_OBJECT,
         REJECTED_OTHER_REASON;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Result[] valuesCustom() {
             Result[] resultArrValuesCustom = values();
             int length = resultArrValuesCustom.length;
@@ -217,7 +217,7 @@ public abstract class RefUpdate {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RefUpdate$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RefUpdate$1, reason: invalid class name */
     class AnonymousClass1 extends Store {
         AnonymousClass1() {
             super(null);
@@ -279,7 +279,7 @@ public abstract class RefUpdate {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.lib.RefUpdate$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.lib.RefUpdate$2, reason: invalid class name */
     class AnonymousClass2 extends Store {
         AnonymousClass2() {
             super(null);

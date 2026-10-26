@@ -12,7 +12,7 @@ import org.commonmark.node.Node;
 import org.commonmark.renderer.NodeRenderer;
 import org.commonmark.renderer.Renderer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HtmlRenderer implements Renderer {
     private final List<AttributeProviderFactory> attributeProviderFactories;
     private final boolean escapeHtml;
@@ -39,7 +39,7 @@ public class HtmlRenderer implements Renderer {
         arrayList.add(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: org.commonmark.renderer.html.HtmlRenderer$1, reason: invalid class name */
+    /* INFO: renamed from: org.commonmark.renderer.html.HtmlRenderer$1, reason: invalid class name */
     class AnonymousClass1 implements HtmlNodeRendererFactory {
         AnonymousClass1() {
         }

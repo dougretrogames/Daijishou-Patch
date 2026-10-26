@@ -3,7 +3,7 @@ package org.apache.http.conn.scheme;
 import java.io.IOException;
 import java.net.Socket;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 class LayeredSocketFactoryAdaptor extends SocketFactoryAdaptor implements LayeredSocketFactory {
     private final LayeredSchemeSocketFactory factory;

@@ -3,8 +3,8 @@ package org.jsoup.nodes;
 import java.util.concurrent.atomic.AtomicBoolean;
 import org.jsoup.select.NodeFilter;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class Element$$ExternalSyntheticLambda5 implements NodeFilter {
     public final /* synthetic */ AtomicBoolean f$0;
 

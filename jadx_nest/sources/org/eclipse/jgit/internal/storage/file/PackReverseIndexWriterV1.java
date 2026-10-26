@@ -6,7 +6,7 @@ import java.util.List;
 import org.eclipse.jgit.transport.PackedObjectInfo;
 import org.eclipse.jgit.util.IntList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class PackReverseIndexWriterV1 extends PackReverseIndexWriter {
     private static final int DEFAULT_OID_VERSION = 1;
 

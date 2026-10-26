@@ -3,7 +3,7 @@ package net.jodah.expiringmap;
 import java.util.concurrent.TimeUnit;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ExpiringValue<V> {
     private static final long UNSET_DURATION = -1;
     private final long duration;

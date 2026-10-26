@@ -1,6 +1,6 @@
 package org.eclipse.jgit.api;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SubmoduleDeinitResult {
     private String path;
     private SubmoduleDeinitCommand.SubmoduleDeinitStatus status;

@@ -1,6 +1,6 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class TextFormatEscaper {
 
     private interface ByteSequence {
@@ -61,7 +61,7 @@ final class TextFormatEscaper {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.TextFormatEscaper$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.TextFormatEscaper$1, reason: invalid class name */
     class AnonymousClass1 implements ByteSequence {
         final /* synthetic */ ByteString val$input;
 
@@ -84,7 +84,7 @@ final class TextFormatEscaper {
         return escapeBytes(new AnonymousClass1(input));
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.TextFormatEscaper$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.TextFormatEscaper$2, reason: invalid class name */
     class AnonymousClass2 implements ByteSequence {
         final /* synthetic */ byte[] val$input;
 

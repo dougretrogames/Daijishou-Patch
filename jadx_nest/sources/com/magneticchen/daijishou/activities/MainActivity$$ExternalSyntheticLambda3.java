@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.activities;
 import android.view.View;
 import kotlin.Lazy;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class MainActivity$$ExternalSyntheticLambda3 implements View.OnClickListener {
     public final /* synthetic */ MainActivity f$0;
     public final /* synthetic */ Lazy f$1;

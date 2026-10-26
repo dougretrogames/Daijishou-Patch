@@ -2,7 +2,7 @@ package io.opencensus.metrics.export;
 
 import io.opencensus.common.Timestamp;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Point {
     public abstract Timestamp getTimestamp();
 

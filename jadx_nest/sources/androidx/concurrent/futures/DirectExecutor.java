@@ -2,7 +2,7 @@ package androidx.concurrent.futures;
 
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public enum DirectExecutor implements Executor {
     INSTANCE;
 

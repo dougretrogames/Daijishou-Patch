@@ -111,14 +111,14 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Dispatchers;
 import net.jodah.expiringmap.ExpiringMap;
 
-/* JADX INFO: compiled from: MainActivity.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: MainActivity.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000ø\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010!\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0019\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001:\u0002\u0088\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0010\u0010P\u001a\u00020Q2\u0006\u0010R\u001a\u00020SH\u0014J\u0016\u0010T\u001a\u00020Q2\u0006\u0010U\u001a\u00020D2\u0006\u0010V\u001a\u00020\u001eJ\b\u0010W\u001a\u00020QH\u0002J\b\u0010X\u001a\u00020QH\u0002J\u0012\u0010Y\u001a\u00020Q2\n\b\u0002\u0010Z\u001a\u0004\u0018\u00010'J\b\u0010[\u001a\u00020QH\u0002J\u0010\u0010\\\u001a\u00020\u00042\u0006\u0010]\u001a\u00020^H\u0016J$\u0010_\u001a\u00020\u00042\f\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001e0\u001d2\f\u0010`\u001a\b\u0012\u0004\u0012\u00020\u001e0aH\u0002J\u000e\u0010b\u001a\u00020Q2\u0006\u0010R\u001a\u00020SJ\u0018\u0010c\u001a\u00020Q2\u0006\u0010d\u001a\u00020D2\b\u0010e\u001a\u0004\u0018\u00010/J\b\u0010f\u001a\u00020QH\u0002J\b\u0010g\u001a\u00020QH\u0016J\u0010\u0010h\u001a\u00020Q2\u0006\u0010i\u001a\u00020jH\u0016J\u0012\u0010k\u001a\u00020Q2\b\u00102\u001a\u0004\u0018\u000103H\u0014J\b\u0010l\u001a\u00020QH\u0014J\u0018\u0010m\u001a\u00020\u00042\u0006\u0010n\u001a\u00020\u001e2\u0006\u0010o\u001a\u00020^H\u0016J\u001a\u0010p\u001a\u00020\u00042\u0006\u0010n\u001a\u00020\u001e2\b\u0010o\u001a\u0004\u0018\u00010^H\u0016J\u0010\u0010q\u001a\u00020Q2\u0006\u0010r\u001a\u00020<H\u0014J\b\u0010s\u001a\u00020QH\u0014J\b\u0010t\u001a\u00020QH\u0014J\b\u0010u\u001a\u00020QH\u0014J\u0010\u0010v\u001a\u00020Q2\u0006\u0010w\u001a\u00020\u001eH\u0016J\u0010\u0010x\u001a\u00020Q2\u0006\u0010y\u001a\u00020\u0004H\u0016J\b\u0010z\u001a\u00020QH\u0002J\b\u0010{\u001a\u00020QH\u0002J\b\u0010|\u001a\u00020QH\u0002J\b\u0010}\u001a\u00020QH\u0002J\b\u0010~\u001a\u00020QH\u0002J\u0010\u0010\u007f\u001a\u00020Q2\u0006\u0010>\u001a\u00020?H\u0002J\t\u0010\u0080\u0001\u001a\u00020QH\u0002J\u0013\u0010\u0081\u0001\u001a\u00020Q2\n\b\u0002\u0010Z\u001a\u0004\u0018\u00010'J\u0013\u0010\u0082\u0001\u001a\u00020Q2\b\u0010\u0083\u0001\u001a\u00030\u0084\u0001H\u0002J\u001c\u0010\u0085\u0001\u001a\u00020Q2\n\b\u0002\u0010Z\u001a\u0004\u0018\u00010'2\u0007\u0010\u0086\u0001\u001a\u00020\u0004J\u0011\u0010\u0087\u0001\u001a\u00020S2\u0006\u0010R\u001a\u00020SH\u0002R\u001a\u0010\u0003\u001a\u00020\u0004X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0005\u0010\u0006\"\u0004\b\u0007\u0010\bR\u000e\u0010\t\u001a\u00020\nX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u001b\u0010\u0010\u001a\u00020\u00118BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0012\u0010\u0013R\u000e\u0010\u0016\u001a\u00020\u0017X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\u0019\u001a\u00020\u0004X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u0006\"\u0004\b\u001a\u0010\bR\u000e\u0010\u001b\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u0018\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u001e0\u001d8\u0002@\u0002X\u0083\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020 X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\"X\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010#\u001a\u00060$R\u00020\u0000X\u0082.¢\u0006\u0002\n\u0000R\u001e\u0010%\u001a\u0012\u0012\u0004\u0012\u00020'0&j\b\u0012\u0004\u0012\u00020'`(X\u0082\u0004¢\u0006\u0002\n\u0000R\u001b\u0010)\u001a\u00020*8FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b-\u0010\u0015\u001a\u0004\b+\u0010,R\u0010\u0010.\u001a\u0004\u0018\u00010/X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00100\u001a\u000201X\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u00102\u001a\u0004\u0018\u000103X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b4\u00105\"\u0004\b6\u00107R\u000e\u00108\u001a\u000209X\u0082\u000e¢\u0006\u0002\n\u0000R\u001c\u0010:\u001a\u0010\u0012\f\u0012\n =*\u0004\u0018\u00010<0<0;X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010>\u001a\u00020?X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010@\u001a\u0004\u0018\u00010AX\u0082\u000e¢\u0006\u0002\n\u0000R1\u0010B\u001a\"\u0012\u0004\u0012\u00020D\u0012\u0006\u0012\u0004\u0018\u00010E0Cj\u0010\u0012\u0004\u0012\u00020D\u0012\u0006\u0012\u0004\u0018\u00010E`F¢\u0006\b\n\u0000\u001a\u0004\bG\u0010HR\u000e\u0010I\u001a\u00020JX\u0082\u000e¢\u0006\u0002\n\u0000R\u001b\u0010K\u001a\u00020L8FX\u0086\u0084\u0002¢\u0006\f\n\u0004\bO\u0010\u0015\u001a\u0004\bM\u0010N¨\u0006\u0089\u0001²\u0006\f\u0010\u008a\u0001\u001a\u00030\u008b\u0001X\u008a\u0084\u0002²\u0006\f\u0010\u008c\u0001\u001a\u00030\u008d\u0001X\u008a\u0084\u0002²\u0006\f\u0010\u008a\u0001\u001a\u00030\u008b\u0001X\u008a\u0084\u0002²\u0006\f\u0010\u008a\u0001\u001a\u00030\u008b\u0001X\u008a\u0084\u0002²\u0006\f\u0010\u008a\u0001\u001a\u00030\u008b\u0001X\u008a\u0084\u0002²\u0006\f\u0010\u008e\u0001\u001a\u00030\u008d\u0001X\u008a\u0084\u0002²\u0006\f\u0010\u008e\u0001\u001a\u00030\u008d\u0001X\u008a\u0084\u0002"}, d2 = {"Lcom/magneticchen/daijishou/activities/MainActivity;", "Lcom/magneticchen/daijishou/activities/abstract_classes/DaijishouAppCompatActivity;", "()V", "androidPDialogFixStopKeyDispatching", "", "getAndroidPDialogFixStopKeyDispatching", "()Z", "setAndroidPDialogFixStopKeyDispatching", "(Z)V", "appsFragmentInstance", "Lcom/magneticchen/daijishou/view_pager_fragments/AppsViewPagerFragment;", "clockTime24HourFormat", "Ljava/text/SimpleDateFormat;", "clockTimeFormat", "defaultWallpaperImageUri", "Landroid/net/Uri;", "doubleTapBarsDetector", "Landroid/view/GestureDetector;", "getDoubleTapBarsDetector", "()Landroid/view/GestureDetector;", "doubleTapBarsDetector$delegate", "Lkotlin/Lazy;", "imageSwitcher", "Landroid/widget/ImageSwitcher;", "isCreated", "isUsingDefaultWallpaper", "setUsingDefaultWallpaper", "isWallpaperEmpty", "keyDownList", "", "", "lastKeyDownTimeMillis", "", "mainViewPager", "Landroidx/leanback/tab/LeanbackViewPager;", "mainViewPagerAdapter", "Lcom/magneticchen/daijishou/activities/MainActivity$ScreenSlidePagerAdapter;", "mainViewPagerFragmentInstances", "Ljava/util/ArrayList;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/ViewPagerFragment;", "Lkotlin/collections/ArrayList;", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "getModel", "()Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "model$delegate", "pageSelectedParameters", "", "platformsFragmentInstance", "Lcom/magneticchen/daijishou/view_pager_fragments/LibraryViewPagerFragment;", "savedInstanceState", "Landroid/os/Bundle;", "getSavedInstanceState", "()Landroid/os/Bundle;", "setSavedInstanceState", "(Landroid/os/Bundle;)V", "settingsFragmentInstance", "Lcom/magneticchen/daijishou/view_pager_fragments/SettingsViewPagerFragment;", "startForResult", "Landroidx/activity/result/ActivityResultLauncher;", "Landroid/content/Intent;", "kotlin.jvm.PlatformType", "tabLayout", "Landroidx/leanback/tab/LeanbackTabLayout;", "timeTickBroadcastReceiver", "Landroid/content/BroadcastReceiver;", "viewPagerFragmentIdToBitmapHashMap", "Ljava/util/HashMap;", "", "Landroid/graphics/Bitmap;", "Lkotlin/collections/HashMap;", "getViewPagerFragmentIdToBitmapHashMap", "()Ljava/util/HashMap;", "widgetsFragmentInstance", "Lcom/magneticchen/daijishou/view_pager_fragments/WidgetsViewPagerFragment;", "widgetsManager", "Lcom/magneticchen/daijishou/daijishou_widget/WidgetsManager;", "getWidgetsManager", "()Lcom/magneticchen/daijishou/daijishou_widget/WidgetsManager;", "widgetsManager$delegate", "attachBaseContext", "", "context", "Landroid/content/Context;", "changeViewPagerFragmentDisplayNameStringId", "id", "newDisplayNameStringId", "checkSyncEntirelyOnStart", "checkUpdateEveryPlatformsOnStart", "clearWallpaperImage", "fromViewPagerFragment", "destroyClock", "dispatchKeyEvent", NotificationCompat.CATEGORY_EVENT, "Landroid/view/KeyEvent;", "equalsComboKeys", "comboKeys", "", "lockScreenViaAccessibility", "navigatePage", "pageId", "parameters", "onAttachLockScreenListener", "onBackPressedCallback", "onConfigurationChanged", "newConfig", "Landroid/content/res/Configuration;", "onCreate", "onDestroy", "onKeyDown", "keyCode", "keyEvent", "onKeyUp", "onNewIntent", "intent", "onPause", "onResume", "onStart", "onTrimMemory", "level", "onWindowFocusChanged", "hasFocus", "setupABButton", "setupBattery", "setupClock", "setupConnection", "setupLocale", "setupTabLayout", "startCreating", "switchWallpaperImage", "updateLocale", "localeToSwitchTo", "Ljava/util/Locale;", "useDefaultWallpaper", "forceRefresh", "wrapScaledContext", "ScreenSlidePagerAdapter", "app_release", "daijishouLibrary", "Lcom/magneticchen/daijishou/view_models/DaijishouLibraryModel;", "daijishouLibrarySynchronization", "Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel;", "daijishouSynchronizationModel"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class MainActivity extends DaijishouAppCompatActivity {
     private boolean androidPDialogFixStopKeyDispatching;
     private Uri defaultWallpaperImageUri;
 
-    /* JADX INFO: renamed from: doubleTapBarsDetector$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: doubleTapBarsDetector$delegate, reason: from kotlin metadata */
     private final Lazy doubleTapBarsDetector;
     private ImageSwitcher imageSwitcher;
     private boolean isCreated;
@@ -126,7 +126,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
     private LeanbackViewPager mainViewPager;
     private ScreenSlidePagerAdapter mainViewPagerAdapter;
 
-    /* JADX INFO: renamed from: model$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: model$delegate, reason: from kotlin metadata */
     private final Lazy model;
     private Object pageSelectedParameters;
     private Bundle savedInstanceState;
@@ -145,7 +145,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
     private final SimpleDateFormat clockTimeFormat = new SimpleDateFormat("hh:mm aa", Locale.getDefault());
     private final SimpleDateFormat clockTime24HourFormat = new SimpleDateFormat("HH:mm", Locale.getDefault());
 
-    /* JADX INFO: renamed from: widgetsManager$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: widgetsManager$delegate, reason: from kotlin metadata */
     private final Lazy widgetsManager = LazyKt.lazy(new MainActivity$widgetsManager$2(this));
 
     public MainActivity() {
@@ -158,7 +158,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         this.viewPagerFragmentIdToBitmapHashMap = new HashMap<>();
     }
 
-    /* JADX INFO: renamed from: isUsingDefaultWallpaper, reason: from getter */
+    /* INFO: renamed from: isUsingDefaultWallpaper, reason: from getter */
     public final boolean getIsUsingDefaultWallpaper() {
         return this.isUsingDefaultWallpaper;
     }
@@ -191,7 +191,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         this.savedInstanceState = bundle;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void startForResult$lambda$0(MainActivity this$0, ActivityResult result) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(result, "result");
@@ -388,7 +388,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         runOnUiThread(new MainActivity$$ExternalSyntheticLambda9(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void useDefaultWallpaper$lambda$3(MainActivity this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         ImageSwitcher imageSwitcher = this$0.imageSwitcher;
@@ -425,7 +425,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         imageSwitcher2.showNext();
     }
 
-    /* JADX WARN: Type inference failed for: r5v3, types: [T, java.lang.String] */
+    /* WARN: Type inference failed for: r5v3, types: [T, java.lang.String] */
     private final void startCreating() {
         if (this.isCreated) {
             return;
@@ -525,24 +525,24 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         return lazy.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final DaijishouSynchronizationModel startCreating$lambda$5(Lazy<DaijishouSynchronizationModel> lazy) {
         return lazy.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void startCreating$lambda$6(MainActivity this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.startActivity(new Intent("android.settings.WIRELESS_SETTINGS"));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void startCreating$lambda$7(MainActivity this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         SearchPlayableItemDialogFragment.INSTANCE.newInstance().show(this$0.getSupportFragmentManager(), (String) null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void startCreating$lambda$8(MainActivity this$0, Lazy daijishouLibrarySynchronization$delegate, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(daijishouLibrarySynchronization$delegate, "$daijishouLibrarySynchronization$delegate");
@@ -556,13 +556,13 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         SynchronizationStatusDialogFragment.INSTANCE.newInstance().show(this$0.getSupportFragmentManager(), SynchronizationStatusDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void startCreating$lambda$9(MainActivity this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         LoggerDialogFragment.INSTANCE.newInstance().show(this$0.getSupportFragmentManager(), LoggerDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final View startCreating$lambda$10(MainActivity this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         ImageView imageView = new ImageView(this$0.getApplicationContext());
@@ -571,8 +571,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         return imageView;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$6, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$6, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000!\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0002\b\u0003*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J \u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u00052\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u0005H\u0016J\u0010\u0010\u000b\u001a\u00020\u00032\u0006\u0010\u0007\u001a\u00020\u0005H\u0016¨\u0006\f"}, d2 = {"com/magneticchen/daijishou/activities/MainActivity$startCreating$6", "Landroidx/viewpager/widget/ViewPager$OnPageChangeListener;", "onPageScrollStateChanged", "", "state", "", "onPageScrolled", "position", "positionOffset", "", "positionOffsetPixels", "onPageSelected", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass6 implements ViewPager.OnPageChangeListener {
         final /* synthetic */ LeanbackTabLayout $tabLayout;
@@ -640,13 +640,13 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$7, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$7, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass7 extends Lambda<Unit> implements Function1<String, Unit> {
         final /* synthetic */ TextView $tips;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass7(TextView textView) {
             super(1);
             this.$tips = textView;
@@ -658,21 +658,21 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(String str) {
             this.$tips.setText(str);
             this.$tips.setSelected(true);
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$8, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$8, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass8 extends Lambda<Unit> implements Function1<String, Unit> {
         final /* synthetic */ Ref.ObjectRef<String> $oldScaleUI;
         final /* synthetic */ MainActivity this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass8(Ref.ObjectRef<String> objectRef, MainActivity mainActivity) {
             super(1);
             this.$oldScaleUI = objectRef;
@@ -685,8 +685,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* WARN: Multi-variable type inference failed */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(String str) {
             if (Intrinsics.areEqual(str, this.$oldScaleUI.element)) {
                 return;
@@ -696,14 +696,14 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$9, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$9, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass9 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ float $originalAlpha;
         final /* synthetic */ ConstraintLayout $rootLayout;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass9(ConstraintLayout constraintLayout, float f) {
             super(1);
             this.$rootLayout = constraintLayout;
@@ -716,7 +716,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             PlaidColorUtils plaidColorUtils = PlaidColorUtils.INSTANCE;
             Context baseContext = MainActivity.this.getBaseContext();
@@ -747,15 +747,15 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$10, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$10, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass10 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ Lazy<DaijishouSynchronizationModel> $daijishouLibrarySynchronization$delegate;
         final /* synthetic */ ConstraintLayout $debugButtonLayout;
         final /* synthetic */ ConstraintLayout $syncAndBackupButtonLayout;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass10(ConstraintLayout constraintLayout, ConstraintLayout constraintLayout2, Lazy<DaijishouSynchronizationModel> lazy) {
             super(1);
             this.$debugButtonLayout = constraintLayout;
@@ -769,7 +769,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             Intrinsics.checkNotNull(bool);
             int i = bool.booleanValue() ? 0 : 8;
@@ -787,14 +787,14 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$11, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$11, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass11 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ Lazy<DaijishouSynchronizationModel> $daijishouLibrarySynchronization$delegate;
         final /* synthetic */ ConstraintLayout $syncAndBackupButtonLayout;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass11(ConstraintLayout constraintLayout, Lazy<DaijishouSynchronizationModel> lazy) {
             super(1);
             this.$syncAndBackupButtonLayout = constraintLayout;
@@ -807,7 +807,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             Integer value = MainActivity.startCreating$lambda$5(this.$daijishouLibrarySynchronization$delegate).getStatusLiveData().getValue();
             int i = 0;
@@ -827,13 +827,13 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$12, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$12, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass12 extends Lambda<Unit> implements Function1<String, Unit> {
         final /* synthetic */ LeanbackViewPager $viewPager;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass12(LeanbackViewPager leanbackViewPager) {
             super(1);
             this.$viewPager = leanbackViewPager;
@@ -845,7 +845,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(String str) {
             ArrayList arrayList = MainActivity.this.mainViewPagerFragmentInstances;
             LeanbackViewPager leanbackViewPager = this.$viewPager;
@@ -863,15 +863,15 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$13, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$13, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass13 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ ScreenSlidePagerAdapter $pagerAdapter;
         final /* synthetic */ LeanbackTabLayout $tabLayout;
         final /* synthetic */ LeanbackViewPager $viewPager;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass13(ScreenSlidePagerAdapter screenSlidePagerAdapter, LeanbackTabLayout leanbackTabLayout, LeanbackViewPager leanbackViewPager) {
             super(1);
             this.$pagerAdapter = screenSlidePagerAdapter;
@@ -885,7 +885,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             if (!bool.booleanValue()) {
                 ArrayList arrayList = MainActivity.this.mainViewPagerFragmentInstances;
@@ -936,8 +936,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$13$1, reason: invalid class name */
-        /* JADX INFO: compiled from: MainActivity.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$13$1, reason: invalid class name */
+        /* INFO: compiled from: MainActivity.kt */
         @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "viewPagerFragment", "Lcom/magneticchen/daijishou/abstract_fragment_classes/ViewPagerFragment;", "invoke", "(Lcom/magneticchen/daijishou/abstract_fragment_classes/ViewPagerFragment;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         final class AnonymousClass1 extends Lambda<Boolean> implements Function1<ViewPagerFragment, Boolean> {
             public final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -955,15 +955,15 @@ public final class MainActivity extends DaijishouAppCompatActivity {
 
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$14, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$14, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass14 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ ScreenSlidePagerAdapter $pagerAdapter;
         final /* synthetic */ LeanbackTabLayout $tabLayout;
         final /* synthetic */ LeanbackViewPager $viewPager;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass14(ScreenSlidePagerAdapter screenSlidePagerAdapter, LeanbackTabLayout leanbackTabLayout, LeanbackViewPager leanbackViewPager) {
             super(1);
             this.$pagerAdapter = screenSlidePagerAdapter;
@@ -977,7 +977,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             Intrinsics.checkNotNull(bool);
             if (bool.booleanValue()) {
@@ -1033,8 +1033,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$14$1, reason: invalid class name */
-        /* JADX INFO: compiled from: MainActivity.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$14$1, reason: invalid class name */
+        /* INFO: compiled from: MainActivity.kt */
         @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", "viewPagerFragment", "Lcom/magneticchen/daijishou/abstract_fragment_classes/ViewPagerFragment;", "invoke", "(Lcom/magneticchen/daijishou/abstract_fragment_classes/ViewPagerFragment;)Ljava/lang/Boolean;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         final class AnonymousClass1 extends Lambda<Boolean> implements Function1<ViewPagerFragment, Boolean> {
             public final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -1052,8 +1052,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
 
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$15, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$15, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass15 extends Lambda<Unit> implements Function1<Integer, Unit> {
         AnonymousClass15() {
@@ -1066,7 +1066,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             if (num != null && num.intValue() == -1) {
                 MainActivity.this.defaultWallpaperImageUri = null;
@@ -1080,8 +1080,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$16, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$16, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass16 extends Lambda<Unit> implements Function1<Integer, Unit> {
         AnonymousClass16() {
@@ -1094,7 +1094,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             if (MainActivity.this.getDefaultSharedPreferences().getBoolean(BooleanPreference.HAS_STORE_REVIEWED.getKey(), BooleanPreference.HAS_STORE_REVIEWED.getDefaultValue())) {
                 return;
@@ -1106,13 +1106,13 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$16$1, reason: invalid class name */
-        /* JADX INFO: compiled from: MainActivity.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$16$1, reason: invalid class name */
+        /* INFO: compiled from: MainActivity.kt */
         @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         final class AnonymousClass1 extends Lambda<Unit> implements Function0<Unit> {
             final /* synthetic */ MainActivity this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(MainActivity mainActivity) {
                 super(0);
                 this.this$0 = mainActivity;
@@ -1124,20 +1124,20 @@ public final class MainActivity extends DaijishouAppCompatActivity {
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2() {
                 this.this$0.startActivity(new Intent("android.intent.action.VIEW", Uri.parse(Constants.storeReviewLink)));
                 Toast.makeText(this.this$0.getApplicationContext(), "Thanks for your review!", 0).show();
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$16$2, reason: invalid class name */
-        /* JADX INFO: compiled from: MainActivity.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$16$2, reason: invalid class name */
+        /* INFO: compiled from: MainActivity.kt */
         @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         final class AnonymousClass2 extends Lambda<Unit> implements Function0<Unit> {
             final /* synthetic */ MainActivity this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(MainActivity mainActivity) {
                 super(0);
                 this.this$0 = mainActivity;
@@ -1149,15 +1149,15 @@ public final class MainActivity extends DaijishouAppCompatActivity {
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2() {
                 Toast.makeText(this.this$0.getApplicationContext(), "Sorry to bother you. The message will not show up again!", 0).show();
             }
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$17, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$startCreating$17, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass17 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ ImageView $backupImageView;
@@ -1166,7 +1166,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         final /* synthetic */ ObjectAnimator $syncAndBackupButtonLayoutAnimator;
         final /* synthetic */ ImageView $syncImageView;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass17(ConstraintLayout constraintLayout, Ref.IntRef intRef, ImageView imageView, ImageView imageView2, ObjectAnimator objectAnimator) {
             super(1);
             this.$syncAndBackupButtonLayout = constraintLayout;
@@ -1182,7 +1182,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             int i = (num == null || num.intValue() != 0 || MainActivity.this.getDefaultSharedPreferences().getBoolean(BooleanPreference.USE_DEBUG_MODE.getKey(), BooleanPreference.USE_DEBUG_MODE.getDefaultValue()) || MainActivity.this.getDefaultSharedPreferences().getBoolean(BooleanPreference.ALWAYS_SHOW_SYNC_ICON.getKey(), BooleanPreference.ALWAYS_SHOW_SYNC_ICON.getDefaultValue())) ? 0 : 8;
             if (i == this.$syncAndBackupButtonLayout.getVisibility()) {
@@ -1376,7 +1376,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         findViewById(R.id.coordinatorLayout).setOnTouchListener(new MainActivity$$ExternalSyntheticLambda7(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onAttachLockScreenListener$lambda$21(MainActivity this$0, View view, MotionEvent motionEvent) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.getDoubleTapBarsDetector().onTouchEvent(motionEvent);
@@ -1386,7 +1386,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final boolean onAttachLockScreenListener$lambda$22(MainActivity this$0, View view, MotionEvent motionEvent) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.getDoubleTapBarsDetector().onTouchEvent(motionEvent);
@@ -1405,8 +1405,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$checkSyncEntirelyOnStart$1, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$checkSyncEntirelyOnStart$1, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function0<Unit> {
         AnonymousClass1() {
@@ -1423,20 +1423,20 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return lazy.getValue();
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             MainActivity mainActivity = MainActivity.this;
             invoke$lambda$0(new ViewModelLazy(Reflection.getOrCreateKotlinClass(DaijishouSynchronizationModel.class), new MainActivity$checkSyncEntirelyOnStart$1$invoke$$inlined$viewModels$default$2(mainActivity), new MainActivity$checkSyncEntirelyOnStart$1$invoke$$inlined$viewModels$default$1(mainActivity), new MainActivity$checkSyncEntirelyOnStart$1$invoke$$inlined$viewModels$default$3(null, mainActivity))).scheduleSynchronizationOfAllPlatforms(MainActivity.this);
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$checkSyncEntirelyOnStart$2, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$checkSyncEntirelyOnStart$2, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass2 extends Lambda<Unit> implements Function0<Unit> {
         final /* synthetic */ String $syncEntirelyOnStartCancelHint;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(String str) {
             super(0);
             this.$syncEntirelyOnStartCancelHint = str;
@@ -1448,7 +1448,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             Toast.makeText(MainActivity.this, this.$syncEntirelyOnStartCancelHint, 0).show();
         }
@@ -1463,8 +1463,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$checkUpdateEveryPlatformsOnStart$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$checkUpdateEveryPlatformsOnStart$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02001 extends Lambda<Unit> implements Function0<Unit> {
         C02001() {
@@ -1481,20 +1481,20 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return lazy.getValue();
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             MainActivity mainActivity = MainActivity.this;
             invoke$lambda$0(new ViewModelLazy(Reflection.getOrCreateKotlinClass(DaijishouSynchronizationModel.class), new MainActivity$checkUpdateEveryPlatformsOnStart$1$invoke$$inlined$viewModels$default$2(mainActivity), new MainActivity$checkUpdateEveryPlatformsOnStart$1$invoke$$inlined$viewModels$default$1(mainActivity), new MainActivity$checkUpdateEveryPlatformsOnStart$1$invoke$$inlined$viewModels$default$3(null, mainActivity))).scheduleEveryPlatformUpdate();
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$checkUpdateEveryPlatformsOnStart$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$checkUpdateEveryPlatformsOnStart$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02012 extends Lambda<Unit> implements Function0<Unit> {
         final /* synthetic */ String $updateEveryPlatformOnStartCancelHint;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02012(String str) {
             super(0);
             this.$updateEveryPlatformOnStartCancelHint = str;
@@ -1506,7 +1506,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             Toast.makeText(MainActivity.this, this.$updateEveryPlatformOnStartCancelHint, 0).show();
         }
@@ -1534,7 +1534,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         destroyClock();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void updateLocale(Locale localeToSwitchTo) {
         Resources resources = getApplicationContext().getResources();
         Configuration configuration = resources.getConfiguration();
@@ -1550,14 +1550,14 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         new SharedPreferenceBooleanLiveData(getDefaultSharedPreferences(), "swap_a_b_buttons", false).observe(this, new MainActivity$sam$androidx_lifecycle_Observer$0(new C02021((TextView) findViewById(R.id.select_icon_text_view), (TextView) findViewById(R.id.back_icon_text_view))));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupABButton$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupABButton$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class C02021 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ TextView $backIconTextView;
         final /* synthetic */ TextView $selectIconTextView;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02021(TextView textView, TextView textView2) {
             super(1);
             this.$selectIconTextView = textView;
@@ -1570,7 +1570,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             Intrinsics.checkNotNull(bool);
             if (bool.booleanValue()) {
@@ -1599,8 +1599,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         connectionLiveData.observe(this, new MainActivity$sam$androidx_lifecycle_Observer$0(new C02061(connectionLiveData, this, imageView, drawable3, drawable2, drawable)));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupConnection$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupConnection$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "isConnected", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class C02061 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ ImageView $connectionImageView;
@@ -1610,7 +1610,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         final /* synthetic */ Drawable $connectionOnDrawable;
         final /* synthetic */ MainActivity this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02061(ConnectionLiveData connectionLiveData, MainActivity mainActivity, ImageView imageView, Drawable drawable, Drawable drawable2, Drawable drawable3) {
             super(1);
             this.$connectionLiveData = connectionLiveData;
@@ -1627,7 +1627,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             if (num != null) {
                 ConnectionLiveData connectionLiveData = this.$connectionLiveData;
@@ -1671,14 +1671,14 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         registerReceiver(c02052, intentFilter);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupClock$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupClock$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "use24HourClock", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class C02041 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ TextView $clockTextView;
         final /* synthetic */ MainActivity this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02041(TextView textView, MainActivity mainActivity) {
             super(1);
             this.$clockTextView = textView;
@@ -1691,7 +1691,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             SimpleDateFormat simpleDateFormat;
             Date date;
@@ -1708,8 +1708,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupClock$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupClock$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/activities/MainActivity$setupClock$2", "Landroid/content/BroadcastReceiver;", "onReceive", "", "ctx", "Landroid/content/Context;", "intent", "Landroid/content/Intent;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class C02052 extends BroadcastReceiver {
         final /* synthetic */ TextView $clockTextView;
@@ -1760,8 +1760,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         batteryLiveData.observe(this, new MainActivity$sam$androidx_lifecycle_Observer$0(new C02031(ContextCompat.getColor(mainActivity, R.color.battery_plugged), 15, ContextCompat.getColor(mainActivity, R.color.battery_lowest), 20, ContextCompat.getColor(mainActivity, R.color.battery_low), i)));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupBattery$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupBattery$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/live_data/BatteryInfo;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02031 extends Lambda<Unit> implements Function1<BatteryInfo, Unit> {
         final /* synthetic */ int $batteryLowColor;
@@ -1771,7 +1771,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         final /* synthetic */ int $lowestBatteryThreshold;
         final /* synthetic */ int $themeTextColor;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02031(int i, int i2, int i3, int i4, int i5, int i6) {
             super(1);
             this.$batteryPluggedColor = i;
@@ -1788,7 +1788,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(BatteryInfo batteryInfo) {
             TextView textView = (TextView) MainActivity.this.findViewById(R.id.battery_text_view);
             int percent = batteryInfo.getPercent();
@@ -1809,8 +1809,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         new SharedPreferenceStringLiveData(getDefaultSharedPreferences(), "locale", "default").observe(this, new MainActivity$sam$androidx_lifecycle_Observer$0(new C02071()));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupLocale$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupLocale$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "localeString", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02071 extends Lambda<Unit> implements Function1<String, Unit> {
         C02071() {
@@ -1823,8 +1823,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return Unit.INSTANCE;
         }
 
-        /* JADX WARN: Code duplicated, block: B:23:0x005f  */
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* WARN: Code duplicated, block: B:23:0x005f  */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(String str) {
             Locale ENGLISH;
             Locale locale = MainActivity.this.getResources().getConfiguration().getLocales().get(0);
@@ -1865,7 +1865,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void setupTabLayout(LeanbackTabLayout tabLayout) {
         int tabCount = tabLayout.getTabCount();
         for (int i = 0; i < tabCount; i++) {
@@ -1913,7 +1913,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         tabLayout.addOnTabSelectedListener((TabLayout.OnTabSelectedListener) new AnonymousClass4());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void setupTabLayout$lambda$26(MainActivity this$0, int i, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         LeanbackViewPager leanbackViewPager = this$0.mainViewPager;
@@ -1936,8 +1936,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupTabLayout$4, reason: invalid class name */
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.MainActivity$setupTabLayout$4, reason: invalid class name */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000\u0019\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0012\u0010\u0002\u001a\u00020\u00032\b\u0010\u0004\u001a\u0004\u0018\u00010\u0005H\u0016J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0007\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/activities/MainActivity$setupTabLayout$4", "Lcom/google/android/material/tabs/TabLayout$OnTabSelectedListener;", "onTabReselected", "", "tab", "Lcom/google/android/material/tabs/TabLayout$Tab;", "onTabSelected", "onTabUnselected", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class AnonymousClass4 implements TabLayout.OnTabSelectedListener {
         @Override // com.google.android.material.tabs.TabLayout.BaseOnTabSelectedListener
@@ -2236,7 +2236,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
         }
     }
 
-    /* JADX INFO: compiled from: MainActivity.kt */
+    /* INFO: compiled from: MainActivity.kt */
     @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\f\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0000\n\u0002\b\u0005\n\u0002\u0010\r\n\u0002\b\u0003\b\u0082\u0004\u0018\u00002\u00020\u0001B-\u0012\u0016\u0010\u0002\u001a\u0012\u0012\u0004\u0012\u00020\u00040\u0003j\b\u0012\u0004\u0012\u00020\u0004`\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u0012\u0006\u0010\b\u001a\u00020\t¢\u0006\u0002\u0010\nJ\u0006\u0010\u0015\u001a\u00020\u0016J \u0010\u0017\u001a\u00020\u00162\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\t2\u0006\u0010\u001b\u001a\u00020\u001cH\u0016J\b\u0010\u001d\u001a\u00020\tH\u0016J\u0010\u0010\u001e\u001a\u00020\u00042\u0006\u0010\u001a\u001a\u00020\tH\u0016J\u0010\u0010\u001f\u001a\u00020\t2\u0006\u0010 \u001a\u00020\u001cH\u0016J\u0010\u0010!\u001a\u00020\"2\u0006\u0010\u001a\u001a\u00020\tH\u0016J \u0010#\u001a\u00020\u00162\u0006\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\t2\u0006\u0010$\u001a\u00020\u001cH\u0016R\u001c\u0010\u000b\u001a\u0004\u0018\u00010\u0004X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\f\u0010\r\"\u0004\b\u000e\u0010\u000fR\u001c\u0010\u0010\u001a\u0004\u0018\u00010\u0004X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\r\"\u0004\b\u0012\u0010\u000fR!\u0010\u0002\u001a\u0012\u0012\u0004\u0012\u00020\u00040\u0003j\b\u0012\u0004\u0012\u00020\u0004`\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014¨\u0006%"}, d2 = {"Lcom/magneticchen/daijishou/activities/MainActivity$ScreenSlidePagerAdapter;", "Landroidx/fragment/app/FragmentStatePagerAdapter;", "viewPagers", "Ljava/util/ArrayList;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/ViewPagerFragment;", "Lkotlin/collections/ArrayList;", "fm", "Landroidx/fragment/app/FragmentManager;", "behavior", "", "(Lcom/magneticchen/daijishou/activities/MainActivity;Ljava/util/ArrayList;Landroidx/fragment/app/FragmentManager;I)V", "currentFragment", "getCurrentFragment", "()Lcom/magneticchen/daijishou/abstract_fragment_classes/ViewPagerFragment;", "setCurrentFragment", "(Lcom/magneticchen/daijishou/abstract_fragment_classes/ViewPagerFragment;)V", "lastPage", "getLastPage", "setLastPage", "getViewPagers", "()Ljava/util/ArrayList;", "applyPageSelectedParametersToCurrentPage", "", "destroyItem", "container", "Landroid/view/ViewGroup;", "position", "object", "", "getCount", "getItem", "getItemPosition", "obj", "getPageTitle", "", "setPrimaryItem", "fragment", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     private final class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
         private ViewPagerFragment currentFragment;
@@ -2250,7 +2250,7 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             return -2;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public ScreenSlidePagerAdapter(MainActivity mainActivity, ArrayList<ViewPagerFragment> viewPagers, FragmentManager fm, int i) {
             super(fm, i);
             Intrinsics.checkNotNullParameter(viewPagers, "viewPagers");
@@ -2317,8 +2317,8 @@ public final class MainActivity extends DaijishouAppCompatActivity {
             this.this$0.pageSelectedParameters = null;
         }
 
-        /* JADX WARN: Code duplicated, block: B:34:0x0107  */
-        /* JADX WARN: Code duplicated, block: B:36:0x0112  */
+        /* WARN: Code duplicated, block: B:34:0x0107  */
+        /* WARN: Code duplicated, block: B:36:0x0112  */
         @Override // androidx.fragment.app.FragmentStatePagerAdapter, androidx.viewpager.widget.PagerAdapter
         public void setPrimaryItem(ViewGroup container, int position, Object fragment) {
             View view;

@@ -5,7 +5,7 @@ import java.util.ConcurrentModificationException;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class CompositeOnPageChangeCallback extends ViewPager2.OnPageChangeCallback {
     private final List<ViewPager2.OnPageChangeCallback> mCallbacks;
 

@@ -1,6 +1,6 @@
 package org.apache.commons.collections4;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface Equator<T> {
     boolean equate(T t, T t2);
 

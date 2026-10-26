@@ -1,6 +1,6 @@
 package org.apache.http.client.params;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public final class CookiePolicy {
     public static final String BEST_MATCH = "best-match";

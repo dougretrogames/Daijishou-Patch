@@ -4,8 +4,8 @@ import android.animation.ValueAnimator;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SideSheetBehavior$$ExternalSyntheticLambda2 implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ SideSheetBehavior f$0;
     public final /* synthetic */ ViewGroup.MarginLayoutParams f$1;

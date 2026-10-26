@@ -21,7 +21,7 @@ import java.util.SortedMap;
 import java.util.SortedSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class Synchronized {
     private Synchronized() {
@@ -56,7 +56,7 @@ final class Synchronized {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> Collection<E> collection(Collection<E> collection, @CheckForNull Object mutex) {
         return new SynchronizedCollection(collection, mutex, null);
     }
@@ -72,7 +72,7 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedObject
         public Collection<E> delegate() {
             return (Collection) super.delegate();
@@ -193,7 +193,7 @@ final class Synchronized {
             super(delegate, mutex, null);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedCollection, com.google.common.collect.Synchronized.SynchronizedObject
         public Set<E> delegate() {
             return (Set) super.delegate();
@@ -220,7 +220,7 @@ final class Synchronized {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> SortedSet<E> sortedSet(SortedSet<E> set, @CheckForNull Object mutex) {
         return new SynchronizedSortedSet(set, mutex);
     }
@@ -232,7 +232,7 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedSet, com.google.common.collect.Synchronized.SynchronizedCollection, com.google.common.collect.Synchronized.SynchronizedObject
         public SortedSet<E> delegate() {
             return (SortedSet) super.delegate();
@@ -291,7 +291,7 @@ final class Synchronized {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> List<E> list(List<E> list, @CheckForNull Object mutex) {
         if (list instanceof RandomAccess) {
             return new SynchronizedRandomAccessList(list, mutex);
@@ -306,7 +306,7 @@ final class Synchronized {
             super(delegate, mutex, null);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedCollection, com.google.common.collect.Synchronized.SynchronizedObject
         public List<E> delegate() {
             return (List) super.delegate();
@@ -439,7 +439,7 @@ final class Synchronized {
             super(delegate, mutex, null);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedCollection, com.google.common.collect.Synchronized.SynchronizedObject
         public Multiset<E> delegate() {
             return (Multiset) super.delegate();
@@ -558,7 +558,7 @@ final class Synchronized {
         @CheckForNull
         transient Collection<V> valuesCollection;
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedObject
         public Multimap<K, V> delegate() {
             return (Multimap) super.delegate();
@@ -773,7 +773,7 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedMultimap, com.google.common.collect.Synchronized.SynchronizedObject
         public ListMultimap<K, V> delegate() {
             return (ListMultimap) super.delegate();
@@ -821,7 +821,7 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedMultimap, com.google.common.collect.Synchronized.SynchronizedObject
         public SetMultimap<K, V> delegate() {
             return (SetMultimap) super.delegate();
@@ -878,7 +878,7 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedSetMultimap, com.google.common.collect.Synchronized.SynchronizedMultimap, com.google.common.collect.Synchronized.SynchronizedObject
         public SortedSetMultimap<K, V> delegate() {
             return (SortedSetMultimap) super.delegate();
@@ -922,7 +922,7 @@ final class Synchronized {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> Collection<E> typePreservingCollection(Collection<E> collection, @CheckForNull Object mutex) {
         if (collection instanceof SortedSet) {
             return sortedSet((SortedSet) collection, mutex);
@@ -936,7 +936,7 @@ final class Synchronized {
         return collection(collection, mutex);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> Set<E> typePreservingSet(Set<E> set, @CheckForNull Object mutex) {
         if (set instanceof SortedSet) {
             return sortedSet((SortedSet) set, mutex);
@@ -951,13 +951,13 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Synchronized$SynchronizedAsMapEntries$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Synchronized$SynchronizedAsMapEntries$1, reason: invalid class name */
         class AnonymousClass1 extends TransformedIterator<Map.Entry<K, Collection<V>>, Map.Entry<K, Collection<V>>> {
             AnonymousClass1(Iterator backingIterator) {
                 super(backingIterator);
             }
 
-            /* JADX INFO: renamed from: com.google.common.collect.Synchronized$SynchronizedAsMapEntries$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: renamed from: com.google.common.collect.Synchronized$SynchronizedAsMapEntries$1$1, reason: invalid class name and collision with other inner class name */
             class C00451 extends ForwardingMapEntry<K, Collection<V>> {
                 final /* synthetic */ Map.Entry val$entry;
 
@@ -965,7 +965,7 @@ final class Synchronized {
                     this.val$entry = val$entry;
                 }
 
-                /* JADX INFO: Access modifiers changed from: protected */
+                /* INFO: Access modifiers changed from: protected */
                 @Override // com.google.common.collect.ForwardingMapEntry, com.google.common.collect.ForwardingObject
                 public Map.Entry<K, Collection<V>> delegate() {
                     return this.val$entry;
@@ -977,7 +977,7 @@ final class Synchronized {
                 }
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // com.google.common.collect.TransformedIterator
             public Map.Entry<K, Collection<V>> transform(final Map.Entry<K, Collection<V>> entry) {
                 return new C00451(entry);
@@ -1085,7 +1085,7 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedObject
         public Map<K, V> delegate() {
             return (Map) super.delegate();
@@ -1236,7 +1236,7 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedMap, com.google.common.collect.Synchronized.SynchronizedObject
         public SortedMap<K, V> delegate() {
             return (SortedMap) super.delegate();
@@ -1317,7 +1317,7 @@ final class Synchronized {
             this.inverse = inverse;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedMap, com.google.common.collect.Synchronized.SynchronizedObject
         public BiMap<K, V> delegate() {
             return (BiMap) super.delegate();
@@ -1419,13 +1419,13 @@ final class Synchronized {
             super(delegate, mutex, null);
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Synchronized$SynchronizedAsMapValues$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Synchronized$SynchronizedAsMapValues$1, reason: invalid class name */
         class AnonymousClass1 extends TransformedIterator<Collection<V>, Collection<V>> {
             AnonymousClass1(Iterator backingIterator) {
                 super(backingIterator);
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // com.google.common.collect.TransformedIterator
             public Collection<V> transform(Collection<V> from) {
                 return Synchronized.typePreservingCollection(from, SynchronizedAsMapValues.this.mutex);
@@ -1448,7 +1448,7 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedSortedSet, com.google.common.collect.Synchronized.SynchronizedSet, com.google.common.collect.Synchronized.SynchronizedCollection, com.google.common.collect.Synchronized.SynchronizedObject
         public NavigableSet<E> delegate() {
             return (NavigableSet) super.delegate();
@@ -1607,7 +1607,7 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedSortedMap, com.google.common.collect.Synchronized.SynchronizedMap, com.google.common.collect.Synchronized.SynchronizedObject
         public NavigableMap<K, V> delegate() {
             return (NavigableMap) super.delegate();
@@ -1820,7 +1820,7 @@ final class Synchronized {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @CheckForNull
     public static <K, V> Map.Entry<K, V> nullableSynchronizedEntry(@CheckForNull Map.Entry<K, V> entry, @CheckForNull Object mutex) {
         if (entry == null) {
@@ -1836,7 +1836,7 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedObject
         public Map.Entry<K, V> delegate() {
             return (Map.Entry) super.delegate();
@@ -1899,7 +1899,7 @@ final class Synchronized {
             super(delegate, mutex, null);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedCollection, com.google.common.collect.Synchronized.SynchronizedObject
         public Queue<E> delegate() {
             return (Queue) super.delegate();
@@ -1964,7 +1964,7 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedQueue, com.google.common.collect.Synchronized.SynchronizedCollection, com.google.common.collect.Synchronized.SynchronizedObject
         public Deque<E> delegate() {
             return (Deque) super.delegate();
@@ -2131,7 +2131,7 @@ final class Synchronized {
             super(delegate, mutex);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.Synchronized.SynchronizedObject
         public Table<R, C, V> delegate() {
             return (Table) super.delegate();
@@ -2298,7 +2298,7 @@ final class Synchronized {
             return map;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Synchronized$SynchronizedTable$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Synchronized$SynchronizedTable$1, reason: invalid class name */
         class AnonymousClass1 implements Function<Map<C, V>, Map<C, V>> {
             AnonymousClass1() {
             }
@@ -2318,7 +2318,7 @@ final class Synchronized {
             return map;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.Synchronized$SynchronizedTable$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.Synchronized$SynchronizedTable$2, reason: invalid class name */
         class AnonymousClass2 implements Function<Map<R, V>, Map<R, V>> {
             AnonymousClass2() {
             }

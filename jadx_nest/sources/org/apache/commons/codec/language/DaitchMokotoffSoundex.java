@@ -15,7 +15,7 @@ import org.apache.commons.codec.Resources;
 import org.apache.commons.codec.StringEncoder;
 import org.eclipse.jgit.transport.WalkEncryption;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DaitchMokotoffSoundex implements StringEncoder {
     private static final String COMMENT = "//";
     private static final String DOUBLE_QUOTE = "\"";
@@ -91,7 +91,7 @@ public class DaitchMokotoffSoundex implements StringEncoder {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class Rule {
         private final String pattern;
         private final String[] replacementAtStart;
@@ -255,7 +255,7 @@ public class DaitchMokotoffSoundex implements StringEncoder {
         return String.join("|", soundex(str, true));
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x003b  */
+    /* WARN: Code duplicated, block: B:13:0x003b  */
     private String[] soundex(String str, boolean z) {
         String str2;
         String str3;

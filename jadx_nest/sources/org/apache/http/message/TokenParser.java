@@ -3,7 +3,7 @@ package org.apache.http.message;
 import java.util.BitSet;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TokenParser {
     public static final char CR = '\r';
     public static final char DQUOTE = '\"';

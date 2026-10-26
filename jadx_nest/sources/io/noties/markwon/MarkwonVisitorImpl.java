@@ -28,7 +28,7 @@ import org.commonmark.node.StrongEmphasis;
 import org.commonmark.node.Text;
 import org.commonmark.node.ThematicBreak;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class MarkwonVisitorImpl implements MarkwonVisitor {
     private final MarkwonVisitor.BlockHandler blockHandler;
     private final SpannableBuilder builder;

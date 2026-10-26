@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class LifecycleLifecycle implements Lifecycle, LifecycleObserver {
     private final androidx.lifecycle.Lifecycle lifecycle;
     private final Set<LifecycleListener> lifecycleListeners = new HashSet();

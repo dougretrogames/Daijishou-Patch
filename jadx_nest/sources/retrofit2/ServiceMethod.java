@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 abstract class ServiceMethod<T> {
     @Nullable
     abstract T invoke(Object obj, Object[] objArr);

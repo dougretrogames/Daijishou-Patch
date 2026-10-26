@@ -17,7 +17,7 @@ import org.apache.http.util.Args;
 import org.apache.http.util.TextUtils;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class URIUtils {
     public static final EnumSet<UriFlag> NO_FLAGS = EnumSet.noneOf(UriFlag.class);
     public static final EnumSet<UriFlag> DROP_FRAGMENT = EnumSet.of(UriFlag.DROP_FRAGMENT);

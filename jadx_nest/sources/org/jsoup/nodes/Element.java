@@ -38,7 +38,7 @@ import org.jsoup.select.NodeVisitor;
 import org.jsoup.select.Nodes;
 import org.jsoup.select.Selector;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Element extends Node implements Iterable<Element> {
     private static final String childElsKey = "jsoup.childEls";
     private static final String childElsMod = "jsoup.childElsMod";
@@ -830,7 +830,7 @@ public class Element extends Node implements Iterable<Element> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void appendNormalisedText(StringBuilder sb, TextNode textNode) {
         String wholeText = textNode.getWholeText();
         if (preserveWhitespace(textNode.parentNode) || (textNode instanceof CDataNode)) {
@@ -1089,7 +1089,7 @@ public class Element extends Node implements Iterable<Element> {
         return new Element(tag, strBaseUri, attributes != null ? attributes.clone() : null);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.jsoup.nodes.Node
     public Element doClone(Node node) {
         Element element = (Element) super.doClone(node);

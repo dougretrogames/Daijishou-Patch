@@ -23,7 +23,7 @@ import com.google.android.material.button.MaterialButton;
 import java.util.Calendar;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MaterialCalendar<S> extends PickerFragment<S> {
     private static final String CALENDAR_CONSTRAINTS_KEY = "CALENDAR_CONSTRAINTS_KEY";
     private static final String CURRENT_MONTH_KEY = "CURRENT_MONTH_KEY";
@@ -145,7 +145,7 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$1, reason: invalid class name */
     class AnonymousClass1 extends AccessibilityDelegateCompat {
         AnonymousClass1() {
         }
@@ -157,11 +157,11 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$2, reason: invalid class name */
     class AnonymousClass2 extends SmoothCalendarLayoutManager {
         final /* synthetic */ int val$orientation;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(Context context, int i, boolean z, int i2) {
             super(context, i, z);
             this.val$orientation = i2;
@@ -179,12 +179,12 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$3, reason: invalid class name */
     class AnonymousClass3 implements OnDayClickListener {
         AnonymousClass3() {
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.android.material.datepicker.MaterialCalendar.OnDayClickListener
         public void onDayClick(long j) {
             if (MaterialCalendar.this.calendarConstraints.getDateValidator().isValid(j)) {
@@ -205,7 +205,7 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         ViewCompat.setAccessibilityDelegate(this.recyclerView, new AnonymousClass4());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$4, reason: invalid class name */
     class AnonymousClass4 extends AccessibilityDelegateCompat {
         AnonymousClass4() {
         }
@@ -217,7 +217,7 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$5, reason: invalid class name */
     class AnonymousClass5 extends RecyclerView.ItemDecoration {
         private final Calendar startItem = UtcDates.getUtcCalendar();
         private final Calendar endItem = UtcDates.getUtcCalendar();
@@ -353,7 +353,7 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         this.monthPrev.setOnClickListener(new AnonymousClass10(monthsPagerAdapter));
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$6, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$6, reason: invalid class name */
     class AnonymousClass6 extends AccessibilityDelegateCompat {
         AnonymousClass6() {
         }
@@ -371,7 +371,7 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$7, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$7, reason: invalid class name */
     class AnonymousClass7 extends RecyclerView.OnScrollListener {
         final /* synthetic */ MaterialButton val$monthDropSelect;
         final /* synthetic */ MonthsPagerAdapter val$monthsPagerAdapter;
@@ -401,7 +401,7 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$8, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$8, reason: invalid class name */
     class AnonymousClass8 implements View.OnClickListener {
         AnonymousClass8() {
         }
@@ -412,7 +412,7 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$9, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$9, reason: invalid class name */
     class AnonymousClass9 implements View.OnClickListener {
         final /* synthetic */ MonthsPagerAdapter val$monthsPagerAdapter;
 
@@ -429,7 +429,7 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$10, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$10, reason: invalid class name */
     class AnonymousClass10 implements View.OnClickListener {
         final /* synthetic */ MonthsPagerAdapter val$monthsPagerAdapter;
 
@@ -446,7 +446,7 @@ public final class MaterialCalendar<S> extends PickerFragment<S> {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$11, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.MaterialCalendar$11, reason: invalid class name */
     class AnonymousClass11 implements Runnable {
         final /* synthetic */ int val$position;
 

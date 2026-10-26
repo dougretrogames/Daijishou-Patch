@@ -2,7 +2,7 @@ package io.noties.markwon.image;
 
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class ImageSize {
     public final Dimension height;
     public final Dimension width;

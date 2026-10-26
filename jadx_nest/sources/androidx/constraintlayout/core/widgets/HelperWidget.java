@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class HelperWidget extends ConstraintWidget implements Helper {
     public ConstraintWidget[] mWidgets = new ConstraintWidget[4];
     public int mWidgetsCount = 0;

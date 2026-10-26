@@ -7,15 +7,15 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Ref;
 
-/* JADX INFO: compiled from: DragAndDropNode.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: DragAndDropNode.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004¨\u0006\u0005"}, d2 = {"<anonymous>", "Landroidx/compose/ui/node/TraversableNode$Companion$TraverseDescendantsAction;", "child", "Landroidx/compose/ui/node/TraversableNode;", "invoke", "androidx/compose/ui/draganddrop/DragAndDropNode$Companion$firstChildOrNull$1"}, k = 3, mv = {1, 8, 0}, xi = 48)
 public final class DragAndDropNode$onMoved$$inlined$firstChildOrNull$1 extends Lambda implements Function1<TraversableNode, TraversableNode.Companion.TraverseDescendantsAction> {
     final /* synthetic */ DragAndDropEvent $event$inlined;
     final /* synthetic */ Ref.ObjectRef $match;
     final /* synthetic */ DragAndDropNode this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public DragAndDropNode$onMoved$$inlined$firstChildOrNull$1(Ref.ObjectRef objectRef, DragAndDropNode dragAndDropNode, DragAndDropEvent dragAndDropEvent) {
         super(1);
         this.$match = objectRef;
@@ -23,7 +23,7 @@ public final class DragAndDropNode$onMoved$$inlined$firstChildOrNull$1 extends L
         this.$event$inlined = dragAndDropEvent;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // kotlin.jvm.functions.Function1
     public final TraversableNode.Companion.TraverseDescendantsAction invoke(TraversableNode traversableNode) {
         if (traversableNode instanceof DragAndDropModifierNode) {

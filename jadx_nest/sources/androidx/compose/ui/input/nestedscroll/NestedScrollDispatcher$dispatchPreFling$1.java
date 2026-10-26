@@ -5,8 +5,8 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 
-/* JADX INFO: compiled from: NestedScrollModifier.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: NestedScrollModifier.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 @DebugMetadata(c = "androidx.compose.ui.input.nestedscroll.NestedScrollDispatcher", f = "NestedScrollModifier.kt", i = {}, l = {206}, m = "dispatchPreFling-QWom1Mo", n = {}, s = {})
 final class NestedScrollDispatcher$dispatchPreFling$1 extends ContinuationImpl {
@@ -14,7 +14,7 @@ final class NestedScrollDispatcher$dispatchPreFling$1 extends ContinuationImpl {
     /* synthetic */ Object result;
     final /* synthetic */ NestedScrollDispatcher this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     NestedScrollDispatcher$dispatchPreFling$1(NestedScrollDispatcher nestedScrollDispatcher, Continuation<? super NestedScrollDispatcher$dispatchPreFling$1> continuation) {
         super(continuation);
         this.this$0 = nestedScrollDispatcher;

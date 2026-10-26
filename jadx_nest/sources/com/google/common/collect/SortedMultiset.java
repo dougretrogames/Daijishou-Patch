@@ -6,7 +6,7 @@ import java.util.NavigableSet;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public interface SortedMultiset<E> extends SortedMultisetBridge<E>, SortedIterable<E> {
     Comparator<? super E> comparator();

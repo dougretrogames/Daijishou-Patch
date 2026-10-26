@@ -57,7 +57,7 @@ import com.google.android.material.shape.ShapeableDelegate;
 import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class NavigationView extends ScrimInsetsFrameLayout implements MaterialBackHandler {
     private static final int PRESENTER_NAVIGATION_VIEW_ID = 1;
     private final DrawerLayout.DrawerListener backDrawerListener;
@@ -84,7 +84,7 @@ public class NavigationView extends ScrimInsetsFrameLayout implements MaterialBa
         boolean onNavigationItemSelected(MenuItem menuItem);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.navigation.NavigationView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.navigation.NavigationView$1, reason: invalid class name */
     class AnonymousClass1 extends DrawerLayout.SimpleDrawerListener {
         AnonymousClass1() {
         }
@@ -117,7 +117,7 @@ public class NavigationView extends ScrimInsetsFrameLayout implements MaterialBa
         this(context, attributeSet, com.google.android.material.R.attr.navigationViewStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public NavigationView(Context context, AttributeSet attributeSet, int i) {
         ColorStateList colorStateListCreateDefaultColorStateList;
         int i2;
@@ -235,7 +235,7 @@ public class NavigationView extends ScrimInsetsFrameLayout implements MaterialBa
         setupInsetScrimsListener();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.navigation.NavigationView$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.navigation.NavigationView$2, reason: invalid class name */
     class AnonymousClass2 implements MenuBuilder.Callback {
         @Override // androidx.appcompat.view.menu.MenuBuilder.Callback
         public void onMenuModeChange(MenuBuilder menuBuilder) {
@@ -285,7 +285,7 @@ public class NavigationView extends ScrimInsetsFrameLayout implements MaterialBa
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void maybeClearCornerSizeAnimationForDrawerLayout() {
         if (!this.drawerLayoutCornerSizeBackAnimationEnabled || this.drawerLayoutCornerSize == 0) {
             return;
@@ -384,7 +384,7 @@ public class NavigationView extends ScrimInsetsFrameLayout implements MaterialBa
         this.shapeableDelegate.maybeClip(canvas, new NavigationView$$ExternalSyntheticLambda0(this));
     }
 
-    /* JADX INFO: renamed from: lambda$dispatchDraw$0$com-google-android-material-navigation-NavigationView, reason: not valid java name */
+    /* INFO: renamed from: lambda$dispatchDraw$0$com-google-android-material-navigation-NavigationView, reason: not valid java name */
     /* synthetic */ void m3309xb790515(Canvas canvas) {
         super.dispatchDraw(canvas);
     }
@@ -646,7 +646,7 @@ public class NavigationView extends ScrimInsetsFrameLayout implements MaterialBa
         return new ColorStateList(new int[][]{iArr, CHECKED_STATE_SET, EMPTY_STATE_SET}, new int[]{colorStateList.getColorForState(iArr, defaultColor), i2, defaultColor});
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.navigation.NavigationView$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.navigation.NavigationView$3, reason: invalid class name */
     class AnonymousClass3 implements ViewTreeObserver.OnGlobalLayoutListener {
         AnonymousClass3() {
         }
@@ -700,12 +700,12 @@ public class NavigationView extends ScrimInsetsFrameLayout implements MaterialBa
             parcel.writeBundle(this.menuState);
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.navigation.NavigationView$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.navigation.NavigationView$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);

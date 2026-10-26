@@ -1,6 +1,6 @@
 package androidx.constraintlayout.core.state;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface CoreMotionScene {
     String getConstraintSet(int i);
 

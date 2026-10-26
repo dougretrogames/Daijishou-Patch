@@ -4,8 +4,8 @@ import org.apache.commons.io.function.IOFunction;
 import org.apache.commons.io.output.ThresholdingOutputStream;
 import org.apache.commons.io.output.UnsynchronizedByteArrayOutputStream;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class IOUtils$$ExternalSyntheticLambda7 implements IOFunction {
     public final /* synthetic */ UnsynchronizedByteArrayOutputStream f$0;
 

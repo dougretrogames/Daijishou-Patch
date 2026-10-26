@@ -23,7 +23,7 @@ import org.eclipse.jgit.util.FileUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class LooseObjects {
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) LooseObjects.class);
     private static final int MAX_LOOSE_OBJECT_STALE_READ_ATTEMPTS = 5;

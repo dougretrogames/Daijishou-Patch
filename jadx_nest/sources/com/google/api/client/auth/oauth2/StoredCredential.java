@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class StoredCredential implements Serializable {
     public static final String DEFAULT_DATA_STORE_ID = "StoredCredential";
     private static final long serialVersionUID = 1;

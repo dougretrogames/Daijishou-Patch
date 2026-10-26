@@ -14,14 +14,14 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.functions.Function2;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: AndroidDialog.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AndroidDialog.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\u000b¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "(Landroidx/compose/runtime/Composer;I)V"}, k = 3, mv = {1, 8, 0}, xi = 48)
 final class AndroidDialog_androidKt$Dialog$dialog$1$1$1 extends Lambda implements Function2<Composer, Integer, Unit> {
     final /* synthetic */ State<Function2<Composer, Integer, Unit>> $currentContent$delegate;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     AndroidDialog_androidKt$Dialog$dialog$1$1$1(State<? extends Function2<? super Composer, ? super Integer, Unit>> state) {
         super(2);
         this.$currentContent$delegate = state;
@@ -33,8 +33,8 @@ final class AndroidDialog_androidKt$Dialog$dialog$1$1$1 extends Lambda implement
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$Dialog$dialog$1$1$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidDialog.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$Dialog$dialog$1$1$1$1, reason: invalid class name */
+    /* INFO: compiled from: AndroidDialog.android.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Landroidx/compose/ui/semantics/SemanticsPropertyReceiver;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<SemanticsPropertyReceiver, Unit> {
         public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -49,7 +49,7 @@ final class AndroidDialog_androidKt$Dialog$dialog$1$1$1 extends Lambda implement
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(SemanticsPropertyReceiver semanticsPropertyReceiver) {
             SemanticsPropertiesKt.dialog(semanticsPropertyReceiver);
         }
@@ -71,14 +71,14 @@ final class AndroidDialog_androidKt$Dialog$dialog$1$1$1 extends Lambda implement
         composer.skipToGroupEnd();
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$Dialog$dialog$1$1$1$2, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidDialog.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidDialog_androidKt$Dialog$dialog$1$1$1$2, reason: invalid class name */
+    /* INFO: compiled from: AndroidDialog.android.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\u000b¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "(Landroidx/compose/runtime/Composer;I)V"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda implements Function2<Composer, Integer, Unit> {
         final /* synthetic */ State<Function2<Composer, Integer, Unit>> $currentContent$delegate;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass2(State<? extends Function2<? super Composer, ? super Integer, Unit>> state) {
             super(2);
             this.$currentContent$delegate = state;

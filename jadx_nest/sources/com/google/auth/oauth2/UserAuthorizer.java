@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Map;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class UserAuthorizer {
     static final URI DEFAULT_CALLBACK_URI = URI.create("/oauth2callback");
     private final String FETCH_TOKEN_ERROR;

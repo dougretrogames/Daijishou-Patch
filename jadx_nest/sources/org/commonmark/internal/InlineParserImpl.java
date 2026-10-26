@@ -32,7 +32,7 @@ import org.commonmark.parser.InlineParserContext;
 import org.commonmark.parser.delimiter.DelimiterProcessor;
 import org.eclipse.jgit.transport.WalkEncryption;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class InlineParserImpl implements InlineParser {
     private static final String ASCII_PUNCTUATION = "!\"#\\$%&'\\(\\)\\*\\+,\\-\\./:;<=>\\?@\\[\\\\\\]\\^_`\\{\\|\\}~";
     private static final String CDATA = "<!\\[CDATA\\[[\\s\\S]*?\\]\\]>";
@@ -347,7 +347,7 @@ public class InlineParserImpl implements InlineParser {
         return text("!");
     }
 
-    /* JADX WARN: Code duplicated, block: B:35:0x00a8  */
+    /* WARN: Code duplicated, block: B:35:0x00a8  */
     private Node parseCloseBracket() {
         boolean z;
         String destination;

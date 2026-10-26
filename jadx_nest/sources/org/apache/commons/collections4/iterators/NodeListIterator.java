@@ -6,7 +6,7 @@ import java.util.Objects;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NodeListIterator implements Iterator<Node> {
     private int index;
     private final NodeList nodeList;

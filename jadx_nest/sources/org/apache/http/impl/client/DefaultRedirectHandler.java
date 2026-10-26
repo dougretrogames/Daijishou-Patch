@@ -18,7 +18,7 @@ import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class DefaultRedirectHandler implements RedirectHandler {
     private static final String REDIRECT_LOCATIONS = "http.protocol.redirect-locations";

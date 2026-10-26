@@ -8,7 +8,7 @@ import org.apache.http.HeaderIterator;
 import org.apache.http.HttpResponse;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpOptions extends HttpRequestBase {
     public static final String METHOD_NAME = "OPTIONS";
 

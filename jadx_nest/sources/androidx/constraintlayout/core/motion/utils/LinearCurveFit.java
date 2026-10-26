@@ -1,6 +1,6 @@
 package androidx.constraintlayout.core.motion.utils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class LinearCurveFit extends CurveFit {
     private static final String TAG = "LinearCurveFit";
     private boolean mExtrapolate = true;
@@ -263,7 +263,7 @@ public class LinearCurveFit extends CurveFit {
         return 0.0d;
     }
 
-    /* JADX WARN: Code duplicated, block: B:4:0x000f A[PHI: r4
+    /* WARN: Code duplicated, block: B:4:0x000f A[PHI: r4
   0x000f: PHI (r4v5 double) = (r4v0 double), (r4v2 double) binds: [B:3:0x000d, B:6:0x0017] A[DONT_GENERATE, DONT_INLINE]] */
     @Override // androidx.constraintlayout.core.motion.utils.CurveFit
     public void getSlope(double d, double[] dArr) {
@@ -296,7 +296,7 @@ public class LinearCurveFit extends CurveFit {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:4:0x000a A[PHI: r3
+    /* WARN: Code duplicated, block: B:4:0x000a A[PHI: r3
   0x000a: PHI (r3v4 double) = (r3v0 double), (r3v2 double) binds: [B:3:0x0008, B:6:0x0012] A[DONT_GENERATE, DONT_INLINE]] */
     @Override // androidx.constraintlayout.core.motion.utils.CurveFit
     public double getSlope(double d, int i) {

@@ -12,7 +12,7 @@ import org.eclipse.jgit.lib.Constants;
 import org.eclipse.jgit.lib.FileMode;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CombinedFileHeader extends FileHeader {
     private static final byte[] MODE = Constants.encodeASCII("mode ");
     private AbbreviatedObjectId[] oldIds;

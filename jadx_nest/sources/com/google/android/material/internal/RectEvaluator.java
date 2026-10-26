@@ -3,7 +3,7 @@ package com.google.android.material.internal;
 import android.animation.TypeEvaluator;
 import android.graphics.Rect;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class RectEvaluator implements TypeEvaluator<Rect> {
     private final Rect rect;
 

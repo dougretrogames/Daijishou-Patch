@@ -11,8 +11,8 @@ import com.google.android.gms.common.internal.ClientSettings;
 import com.google.android.gms.common.internal.Preconditions;
 import java.util.Set;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class zact extends com.google.android.gms.signin.internal.zac implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
     private static final Api.AbstractClientBuilder zaa = com.google.android.gms.signin.zad.zac;
     private final Context zab;
@@ -71,7 +71,7 @@ public final class zact extends com.google.android.gms.signin.internal.zac imple
         this.zac.post(new zacr(this, zakVar));
     }
 
-    /* JADX WARN: Type inference failed for: r0v3, types: [com.google.android.gms.common.api.Api$Client, com.google.android.gms.signin.zae] */
+    /* WARN: Type inference failed for: r0v3, types: [com.google.android.gms.common.api.Api$Client, com.google.android.gms.signin.zae] */
     public final void zae(zacs zacsVar) {
         com.google.android.gms.signin.zae zaeVar = this.zag;
         if (zaeVar != null) {

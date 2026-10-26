@@ -24,7 +24,7 @@ import org.apache.commons.collections4.functors.TruePredicate;
 import org.apache.commons.collections4.iterators.CollatingIterator;
 import org.apache.commons.collections4.iterators.PermutationIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CollectionUtils {
     public static final String COLON = ":";
     public static final String COMMA = ",";
@@ -67,7 +67,7 @@ public class CollectionUtils {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class EquatorWrapper<O> {
         private final Equator<? super O> equator;
         private final O object;

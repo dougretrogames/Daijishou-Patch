@@ -11,7 +11,7 @@ import org.apache.http.HttpVersion;
 import org.apache.http.ProtocolVersion;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ResponseConnControl implements HttpResponseInterceptor {
     @Override // org.apache.http.HttpResponseInterceptor
     public void process(HttpResponse httpResponse, HttpContext httpContext) throws HttpException, IOException {

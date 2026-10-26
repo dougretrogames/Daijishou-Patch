@@ -28,7 +28,7 @@ import org.apache.http.protocol.HTTP;
 import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class URLEncodedUtils {
     public static final String CONTENT_TYPE = "application/x-www-form-urlencoded";
     private static final String NAME_VALUE_SEPARATOR = "=";
@@ -220,7 +220,7 @@ public class URLEncodedUtils {
         return parse(charArrayBuffer, charset, cArr);
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x0066  */
+    /* WARN: Code duplicated, block: B:15:0x0066  */
     public static List<NameValuePair> parse(CharArrayBuffer charArrayBuffer, Charset charset, char... cArr) {
         String token;
         Args.notNull(charArrayBuffer, "Char array buffer");

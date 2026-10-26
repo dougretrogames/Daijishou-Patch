@@ -5,7 +5,7 @@ import android.view.View;
 import android.widget.EditText;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class PasswordToggleEndIconDelegate extends EndIconDelegate {
     private EditText editText;
     private int iconResId;
@@ -16,7 +16,7 @@ class PasswordToggleEndIconDelegate extends EndIconDelegate {
         return true;
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$com-google-android-material-textfield-PasswordToggleEndIconDelegate, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$com-google-android-material-textfield-PasswordToggleEndIconDelegate, reason: not valid java name */
     /* synthetic */ void m3342x4cc26475(View view) {
         EditText editText = this.editText;
         if (editText == null) {

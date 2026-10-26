@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock("Use ImmutableMultimap, HashMultimap, or another implementation")
 @ElementTypesAreNonnullByDefault
 public interface Multimap<K, V> {

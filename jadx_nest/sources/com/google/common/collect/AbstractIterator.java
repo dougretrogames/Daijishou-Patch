@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.util.NoSuchElementException;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class AbstractIterator<T> extends UnmodifiableIterator<T> {
 
@@ -31,7 +31,7 @@ public abstract class AbstractIterator<T> extends UnmodifiableIterator<T> {
         return null;
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.AbstractIterator$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.AbstractIterator$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$common$collect$AbstractIterator$State;
 

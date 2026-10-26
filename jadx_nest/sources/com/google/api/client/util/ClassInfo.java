@@ -13,7 +13,7 @@ import java.util.TreeSet;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ClassInfo {
     private static final ConcurrentMap<Class<?>, ClassInfo> CACHE = new ConcurrentHashMap();
     private static final ConcurrentMap<Class<?>, ClassInfo> CACHE_IGNORE_CASE = new ConcurrentHashMap();
@@ -110,7 +110,7 @@ public final class ClassInfo {
         this.names = listUnmodifiableList;
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.util.ClassInfo$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.util.ClassInfo$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<String> {
         AnonymousClass1() {
         }

@@ -4,8 +4,8 @@ import java.util.function.Predicate;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.Node;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class Evaluator$$ExternalSyntheticLambda0 implements Predicate {
     public final /* synthetic */ Evaluator f$0;
     public final /* synthetic */ Element f$1;

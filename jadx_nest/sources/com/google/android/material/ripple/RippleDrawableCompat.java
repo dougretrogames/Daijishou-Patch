@@ -11,7 +11,7 @@ import com.google.android.material.shape.MaterialShapeDrawable;
 import com.google.android.material.shape.ShapeAppearanceModel;
 import com.google.android.material.shape.Shapeable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class RippleDrawableCompat extends Drawable implements Shapeable, TintAwareDrawable {
     private RippleDrawableCompatState drawableState;
 

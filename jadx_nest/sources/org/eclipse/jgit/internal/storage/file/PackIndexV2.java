@@ -16,7 +16,7 @@ import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.util.IO;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PackIndexV2 implements PackIndex {
     private static final int FANOUT = 256;
     private static final long IS_O64 = 2147483648L;

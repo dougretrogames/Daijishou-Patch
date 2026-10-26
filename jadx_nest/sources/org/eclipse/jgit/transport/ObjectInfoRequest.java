@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.List;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ObjectInfoRequest {
     private final List<ObjectId> objectIDs;
 

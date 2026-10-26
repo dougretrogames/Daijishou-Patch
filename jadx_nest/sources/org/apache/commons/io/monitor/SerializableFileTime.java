@@ -10,7 +10,7 @@ import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.file.attribute.FileTimes;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class SerializableFileTime implements Serializable {
     static final SerializableFileTime EPOCH = new SerializableFileTime(FileTimes.EPOCH);
     private static final long serialVersionUID = 1;

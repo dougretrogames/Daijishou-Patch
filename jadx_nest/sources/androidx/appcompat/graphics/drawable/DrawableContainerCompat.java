@@ -12,7 +12,7 @@ import android.os.SystemClock;
 import android.util.SparseArray;
 import androidx.core.graphics.drawable.DrawableCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DrawableContainerCompat extends Drawable implements Drawable.Callback {
     private static final boolean DEBUG = false;
     private static final boolean DEFAULT_DITHER = true;
@@ -445,7 +445,7 @@ public class DrawableContainerCompat extends Drawable implements Drawable.Callba
         return true;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.graphics.drawable.DrawableContainerCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.graphics.drawable.DrawableContainerCompat$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -492,13 +492,13 @@ public class DrawableContainerCompat extends Drawable implements Drawable.Callba
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:14:0x003f  */
-    /* JADX WARN: Code duplicated, block: B:16:0x0045  */
-    /* JADX WARN: Code duplicated, block: B:18:0x0049  */
-    /* JADX WARN: Code duplicated, block: B:19:0x0052  */
-    /* JADX WARN: Code duplicated, block: B:20:0x0065  */
-    /* JADX WARN: Code duplicated, block: B:23:0x006a A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:26:? A[ADDED_TO_REGION, RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:14:0x003f  */
+    /* WARN: Code duplicated, block: B:16:0x0045  */
+    /* WARN: Code duplicated, block: B:18:0x0049  */
+    /* WARN: Code duplicated, block: B:19:0x0052  */
+    /* WARN: Code duplicated, block: B:20:0x0065  */
+    /* WARN: Code duplicated, block: B:23:0x006a A[ADDED_TO_REGION] */
+    /* WARN: Code duplicated, block: B:26:? A[ADDED_TO_REGION, RETURN, SYNTHETIC] */
     void animate(boolean z) {
         boolean z2;
         Drawable drawable;

@@ -2,8 +2,8 @@ package okhttp3.internal;
 
 import java.util.concurrent.ThreadFactory;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class Util$$ExternalSyntheticLambda1 implements ThreadFactory {
     public final /* synthetic */ String f$0;
     public final /* synthetic */ boolean f$1;

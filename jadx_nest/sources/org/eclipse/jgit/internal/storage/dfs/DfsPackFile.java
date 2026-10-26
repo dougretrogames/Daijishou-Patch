@@ -39,7 +39,7 @@ import org.eclipse.jgit.lib.ObjectLoader;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.util.LongList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class DfsPackFile extends BlockBasedFile {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     public static final PackBitmapIndexLoader DEFAULT_BITMAP_LOADER = new StreamPackBitmapIndexLoader(null);
@@ -105,7 +105,7 @@ public final class DfsPackFile extends BlockBasedFile {
         return idx(dfsReader);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public PackIndex idx(DfsReader dfsReader) throws IOException {
         if (this.index != null) {
             return this.index;
@@ -160,7 +160,7 @@ public final class DfsPackFile extends BlockBasedFile {
         return this.bitmapIndex;
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-dfs-DfsPackFile, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-dfs-DfsPackFile, reason: not valid java name */
     /* synthetic */ DfsBlockCache.Ref m5672lambda$0$orgeclipsejgitinternalstoragedfsDfsPackFile(AtomicBoolean atomicBoolean, DfsReader dfsReader, DfsStreamKey dfsStreamKey) throws IOException {
         atomicBoolean.set(false);
         return loadBitmapIndex(dfsReader, dfsStreamKey);
@@ -187,7 +187,7 @@ public final class DfsPackFile extends BlockBasedFile {
         return this.commitGraph;
     }
 
-    /* JADX INFO: renamed from: lambda$1$org-eclipse-jgit-internal-storage-dfs-DfsPackFile, reason: not valid java name */
+    /* INFO: renamed from: lambda$1$org-eclipse-jgit-internal-storage-dfs-DfsPackFile, reason: not valid java name */
     /* synthetic */ DfsBlockCache.Ref m5673lambda$1$orgeclipsejgitinternalstoragedfsDfsPackFile(AtomicBoolean atomicBoolean, DfsReader dfsReader, DfsStreamKey dfsStreamKey) throws IOException {
         atomicBoolean.set(false);
         return loadCommitGraph(dfsReader, dfsStreamKey);
@@ -234,7 +234,7 @@ public final class DfsPackFile extends BlockBasedFile {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$2$org-eclipse-jgit-internal-storage-dfs-DfsPackFile, reason: not valid java name */
+    /* INFO: renamed from: lambda$2$org-eclipse-jgit-internal-storage-dfs-DfsPackFile, reason: not valid java name */
     /* synthetic */ DfsBlockCache.Ref m5674lambda$2$orgeclipsejgitinternalstoragedfsDfsPackFile(AtomicBoolean atomicBoolean, DfsReader dfsReader, DfsStreamKey dfsStreamKey) throws IOException {
         atomicBoolean.set(false);
         return loadObjectSizeIndex(dfsReader, dfsStreamKey);
@@ -374,13 +374,13 @@ public final class DfsPackFile extends BlockBasedFile {
         return ByteBuffer.wrap(copyBuffer, 0, iBlockSize);
     }
 
-    /* JADX WARN: Code duplicated, block: B:131:0x0137 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:58:0x012e  */
-    /* JADX WARN: Code duplicated, block: B:62:0x0141  */
-    /* JADX WARN: Code duplicated, block: B:64:0x014e  */
-    /* JADX WARN: Code duplicated, block: B:74:0x0195 A[Catch: IOException -> 0x01d4, DataFormatException -> 0x01d9, TRY_ENTER, TryCatch #6 {IOException -> 0x01d4, DataFormatException -> 0x01d9, blocks: (B:60:0x0137, B:74:0x0195, B:75:0x01b9), top: B:131:0x0137 }] */
-    /* JADX WARN: Code duplicated, block: B:78:0x01d2 A[LOOP:5: B:75:0x01b9->B:78:0x01d2, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:83:0x01de  */
+    /* WARN: Code duplicated, block: B:131:0x0137 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:58:0x012e  */
+    /* WARN: Code duplicated, block: B:62:0x0141  */
+    /* WARN: Code duplicated, block: B:64:0x014e  */
+    /* WARN: Code duplicated, block: B:74:0x0195 A[Catch: IOException -> 0x01d4, DataFormatException -> 0x01d9, TRY_ENTER, TryCatch #6 {IOException -> 0x01d4, DataFormatException -> 0x01d9, blocks: (B:60:0x0137, B:74:0x0195, B:75:0x01b9), top: B:131:0x0137 }] */
+    /* WARN: Code duplicated, block: B:78:0x01d2 A[LOOP:5: B:75:0x01b9->B:78:0x01d2, LOOP_END] */
+    /* WARN: Code duplicated, block: B:83:0x01de  */
     void copyAsIs(PackOutputStream packOutputStream, DfsObjectToPack dfsObjectToPack, boolean z, DfsReader dfsReader) throws StoredObjectRepresentationNotAvailableException, IOException {
         byte[] bArr;
         long j;
@@ -717,17 +717,17 @@ public final class DfsPackFile extends BlockBasedFile {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:136:0x0160 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:137:0x0151 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:138:0x0166 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:54:0x0116  */
-    /* JADX WARN: Code duplicated, block: B:56:0x011d  */
-    /* JADX WARN: Code duplicated, block: B:57:0x011f A[Catch: DataFormatException -> 0x01c0, TryCatch #5 {DataFormatException -> 0x01c0, blocks: (B:60:0x012e, B:62:0x013c, B:66:0x0148, B:67:0x014a, B:69:0x0151, B:73:0x015a, B:74:0x015f, B:75:0x0160, B:76:0x0165, B:77:0x0166, B:78:0x016b, B:57:0x011f, B:59:0x0123, B:79:0x016c, B:80:0x0171, B:40:0x00bd, B:43:0x00ca, B:45:0x00d6, B:48:0x00e3, B:51:0x010a, B:81:0x0172, B:83:0x017b, B:85:0x0184, B:87:0x018a, B:96:0x01a8), top: B:118:0x00bd, inners: #1 }] */
-    /* JADX WARN: Code duplicated, block: B:59:0x0123 A[Catch: DataFormatException -> 0x01c0, TryCatch #5 {DataFormatException -> 0x01c0, blocks: (B:60:0x012e, B:62:0x013c, B:66:0x0148, B:67:0x014a, B:69:0x0151, B:73:0x015a, B:74:0x015f, B:75:0x0160, B:76:0x0165, B:77:0x0166, B:78:0x016b, B:57:0x011f, B:59:0x0123, B:79:0x016c, B:80:0x0171, B:40:0x00bd, B:43:0x00ca, B:45:0x00d6, B:48:0x00e3, B:51:0x010a, B:81:0x0172, B:83:0x017b, B:85:0x0184, B:87:0x018a, B:96:0x01a8), top: B:118:0x00bd, inners: #1 }] */
-    /* JADX WARN: Code duplicated, block: B:62:0x013c A[Catch: DataFormatException -> 0x01c0, TRY_LEAVE, TryCatch #5 {DataFormatException -> 0x01c0, blocks: (B:60:0x012e, B:62:0x013c, B:66:0x0148, B:67:0x014a, B:69:0x0151, B:73:0x015a, B:74:0x015f, B:75:0x0160, B:76:0x0165, B:77:0x0166, B:78:0x016b, B:57:0x011f, B:59:0x0123, B:79:0x016c, B:80:0x0171, B:40:0x00bd, B:43:0x00ca, B:45:0x00d6, B:48:0x00e3, B:51:0x010a, B:81:0x0172, B:83:0x017b, B:85:0x0184, B:87:0x018a, B:96:0x01a8), top: B:118:0x00bd, inners: #1 }] */
-    /* JADX WARN: Code duplicated, block: B:65:0x0147  */
-    /* JADX WARN: Code duplicated, block: B:71:0x0157 A[LOOP:3: B:55:0x011b->B:71:0x0157, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:79:0x016c A[Catch: DataFormatException -> 0x01c0, TryCatch #5 {DataFormatException -> 0x01c0, blocks: (B:60:0x012e, B:62:0x013c, B:66:0x0148, B:67:0x014a, B:69:0x0151, B:73:0x015a, B:74:0x015f, B:75:0x0160, B:76:0x0165, B:77:0x0166, B:78:0x016b, B:57:0x011f, B:59:0x0123, B:79:0x016c, B:80:0x0171, B:40:0x00bd, B:43:0x00ca, B:45:0x00d6, B:48:0x00e3, B:51:0x010a, B:81:0x0172, B:83:0x017b, B:85:0x0184, B:87:0x018a, B:96:0x01a8), top: B:118:0x00bd, inners: #1 }] */
+    /* WARN: Code duplicated, block: B:136:0x0160 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:137:0x0151 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:138:0x0166 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:54:0x0116  */
+    /* WARN: Code duplicated, block: B:56:0x011d  */
+    /* WARN: Code duplicated, block: B:57:0x011f A[Catch: DataFormatException -> 0x01c0, TryCatch #5 {DataFormatException -> 0x01c0, blocks: (B:60:0x012e, B:62:0x013c, B:66:0x0148, B:67:0x014a, B:69:0x0151, B:73:0x015a, B:74:0x015f, B:75:0x0160, B:76:0x0165, B:77:0x0166, B:78:0x016b, B:57:0x011f, B:59:0x0123, B:79:0x016c, B:80:0x0171, B:40:0x00bd, B:43:0x00ca, B:45:0x00d6, B:48:0x00e3, B:51:0x010a, B:81:0x0172, B:83:0x017b, B:85:0x0184, B:87:0x018a, B:96:0x01a8), top: B:118:0x00bd, inners: #1 }] */
+    /* WARN: Code duplicated, block: B:59:0x0123 A[Catch: DataFormatException -> 0x01c0, TryCatch #5 {DataFormatException -> 0x01c0, blocks: (B:60:0x012e, B:62:0x013c, B:66:0x0148, B:67:0x014a, B:69:0x0151, B:73:0x015a, B:74:0x015f, B:75:0x0160, B:76:0x0165, B:77:0x0166, B:78:0x016b, B:57:0x011f, B:59:0x0123, B:79:0x016c, B:80:0x0171, B:40:0x00bd, B:43:0x00ca, B:45:0x00d6, B:48:0x00e3, B:51:0x010a, B:81:0x0172, B:83:0x017b, B:85:0x0184, B:87:0x018a, B:96:0x01a8), top: B:118:0x00bd, inners: #1 }] */
+    /* WARN: Code duplicated, block: B:62:0x013c A[Catch: DataFormatException -> 0x01c0, TRY_LEAVE, TryCatch #5 {DataFormatException -> 0x01c0, blocks: (B:60:0x012e, B:62:0x013c, B:66:0x0148, B:67:0x014a, B:69:0x0151, B:73:0x015a, B:74:0x015f, B:75:0x0160, B:76:0x0165, B:77:0x0166, B:78:0x016b, B:57:0x011f, B:59:0x0123, B:79:0x016c, B:80:0x0171, B:40:0x00bd, B:43:0x00ca, B:45:0x00d6, B:48:0x00e3, B:51:0x010a, B:81:0x0172, B:83:0x017b, B:85:0x0184, B:87:0x018a, B:96:0x01a8), top: B:118:0x00bd, inners: #1 }] */
+    /* WARN: Code duplicated, block: B:65:0x0147  */
+    /* WARN: Code duplicated, block: B:71:0x0157 A[LOOP:3: B:55:0x011b->B:71:0x0157, LOOP_END] */
+    /* WARN: Code duplicated, block: B:79:0x016c A[Catch: DataFormatException -> 0x01c0, TryCatch #5 {DataFormatException -> 0x01c0, blocks: (B:60:0x012e, B:62:0x013c, B:66:0x0148, B:67:0x014a, B:69:0x0151, B:73:0x015a, B:74:0x015f, B:75:0x0160, B:76:0x0165, B:77:0x0166, B:78:0x016b, B:57:0x011f, B:59:0x0123, B:79:0x016c, B:80:0x0171, B:40:0x00bd, B:43:0x00ca, B:45:0x00d6, B:48:0x00e3, B:51:0x010a, B:81:0x0172, B:83:0x017b, B:85:0x0184, B:87:0x018a, B:96:0x01a8), top: B:118:0x00bd, inners: #1 }] */
     ObjectLoader load(DfsReader dfsReader, long j) throws IOException {
         long j2;
         DfsPackFile dfsPackFile;
@@ -1298,7 +1298,7 @@ public final class DfsPackFile extends BlockBasedFile {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static InputStream alignTo8kBlocks(ReadableChannel readableChannel) {
         InputStream inputStreamNewInputStream = Channels.newInputStream(readableChannel);
         int iBlockSize = readableChannel.blockSize();
@@ -1328,7 +1328,7 @@ public final class DfsPackFile extends BlockBasedFile {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class StreamPackBitmapIndexLoader implements PackBitmapIndexLoader {
         /* synthetic */ StreamPackBitmapIndexLoader(DfsPackFileIA dfsPackFileIA) {
             this();
@@ -1422,7 +1422,7 @@ public final class DfsPackFile extends BlockBasedFile {
             return (PackIndex) (orLoadRef.get() != null ? orLoadRef.get() : atomicReference.get());
         }
 
-        /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-dfs-DfsPackFile$CachedStreamPackIndexes, reason: not valid java name */
+        /* INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-dfs-DfsPackFile$CachedStreamPackIndexes, reason: not valid java name */
         /* synthetic */ DfsBlockCache.Ref m5675x68f10ae(DfsReader dfsReader, AtomicReference atomicReference, DfsStreamKey dfsStreamKey) throws IOException {
             RefWithSize<PackIndex> refWithSizeLoadPackIndex = loadPackIndex(dfsReader, this.desc);
             atomicReference.set(refWithSizeLoadPackIndex.ref);
@@ -1500,7 +1500,7 @@ public final class DfsPackFile extends BlockBasedFile {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class RefWithSize<V> {
         final V ref;
         final long size;

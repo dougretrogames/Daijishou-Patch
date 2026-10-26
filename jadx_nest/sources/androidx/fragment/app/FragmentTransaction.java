@@ -10,7 +10,7 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class FragmentTransaction {
     static final int OP_ADD = 1;
     static final int OP_ATTACH = 7;

@@ -10,8 +10,8 @@ import com.google.android.gms.fido.common.Transport;
 import java.util.Arrays;
 import java.util.List;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class PublicKeyCredentialDescriptor extends AbstractSafeParcelable {
     private final PublicKeyCredentialType zzb;
     private final byte[] zzc;
@@ -19,7 +19,7 @@ public class PublicKeyCredentialDescriptor extends AbstractSafeParcelable {
     private static final com.google.android.gms.internal.fido.zzau zza = com.google.android.gms.internal.fido.zzau.zzi(com.google.android.gms.internal.fido.zzh.zza, com.google.android.gms.internal.fido.zzh.zzb);
     public static final Parcelable.Creator<PublicKeyCredentialDescriptor> CREATOR = new zzam();
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class UnsupportedPubKeyCredDescriptorException extends Exception {
         public UnsupportedPubKeyCredDescriptorException(String str) {
             super(str);

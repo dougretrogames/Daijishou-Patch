@@ -5,7 +5,7 @@ import java.util.Map;
 import javax.annotation.CheckForNull;
 import kotlin.jvm.internal.CharCompanionObject;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ArrayBasedCharEscaper extends CharEscaper {
     private final char[][] replacements;

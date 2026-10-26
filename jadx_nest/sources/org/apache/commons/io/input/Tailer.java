@@ -26,7 +26,7 @@ import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.file.PathUtils;
 import org.apache.commons.io.file.attribute.FileTimes;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Tailer implements Runnable, AutoCloseable {
     private static final Charset DEFAULT_CHARSET = Charset.defaultCharset();
     private static final int DEFAULT_DELAY_MILLIS = 1000;
@@ -77,7 +77,7 @@ public class Tailer implements Runnable, AutoCloseable {
             return setOrigin((AbstractOrigin<?, ?>) abstractOrigin);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static Thread newDaemonThread(Runnable runnable) {
             Thread thread = new Thread(runnable, "commons-io-tailer");
             thread.setDaemon(true);
@@ -216,43 +216,43 @@ public class Tailer implements Runnable, AutoCloseable {
         return new Builder();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Deprecated
     public static Tailer create(File file, Charset charset, TailerListener tailerListener, long j, boolean z, boolean z2, int i) {
         return ((Builder) builder().setFile(file)).setTailerListener(tailerListener).setCharset(charset).setDelayDuration(Duration.ofMillis(j)).setTailFromEnd(z).setReOpen(z2).setBufferSize(i).get();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Deprecated
     public static Tailer create(File file, TailerListener tailerListener) {
         return ((Builder) builder().setFile(file)).setTailerListener(tailerListener).get();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Deprecated
     public static Tailer create(File file, TailerListener tailerListener, long j) {
         return ((Builder) builder().setFile(file)).setTailerListener(tailerListener).setDelayDuration(Duration.ofMillis(j)).get();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Deprecated
     public static Tailer create(File file, TailerListener tailerListener, long j, boolean z) {
         return ((Builder) builder().setFile(file)).setTailerListener(tailerListener).setDelayDuration(Duration.ofMillis(j)).setTailFromEnd(z).get();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Deprecated
     public static Tailer create(File file, TailerListener tailerListener, long j, boolean z, boolean z2) {
         return ((Builder) builder().setFile(file)).setTailerListener(tailerListener).setDelayDuration(Duration.ofMillis(j)).setTailFromEnd(z).setReOpen(z2).get();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Deprecated
     public static Tailer create(File file, TailerListener tailerListener, long j, boolean z, boolean z2, int i) {
         return ((Builder) builder().setFile(file)).setTailerListener(tailerListener).setDelayDuration(Duration.ofMillis(j)).setTailFromEnd(z).setReOpen(z2).setBufferSize(i).get();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Deprecated
     public static Tailer create(File file, TailerListener tailerListener, long j, boolean z, int i) {
         return ((Builder) builder().setFile(file)).setTailerListener(tailerListener).setDelayDuration(Duration.ofMillis(j)).setTailFromEnd(z).setBufferSize(i).get();

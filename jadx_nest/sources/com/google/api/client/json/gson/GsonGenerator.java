@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class GsonGenerator extends JsonGenerator {
     private final GsonFactory factory;
     private final JsonWriter writer;

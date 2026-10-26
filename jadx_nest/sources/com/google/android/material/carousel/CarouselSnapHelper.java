@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.LinearSmoothScroller;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.SnapHelper;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CarouselSnapHelper extends SnapHelper {
     private static final float HORIZONTAL_SNAP_SPEED = 100.0f;
     private static final float VERTICAL_SNAP_SPEED = 50.0f;
@@ -34,7 +34,7 @@ public class CarouselSnapHelper extends SnapHelper {
         return calculateDistanceToSnap(layoutManager, view, false);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int[] calculateDistanceToSnap(RecyclerView.LayoutManager layoutManager, View view, boolean z) {
         if (!(layoutManager instanceof CarouselLayoutManager)) {
             return new int[]{0, 0};
@@ -128,7 +128,7 @@ public class CarouselSnapHelper extends SnapHelper {
         return i2 > 0;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private boolean isReverseLayout(RecyclerView.LayoutManager layoutManager) {
         PointF pointFComputeScrollVectorForPosition;
         int itemCount = layoutManager.getItemCount();
@@ -138,11 +138,11 @@ public class CarouselSnapHelper extends SnapHelper {
         return pointFComputeScrollVectorForPosition.x < 0.0f || pointFComputeScrollVectorForPosition.y < 0.0f;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.carousel.CarouselSnapHelper$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.carousel.CarouselSnapHelper$1, reason: invalid class name */
     class AnonymousClass1 extends LinearSmoothScroller {
         final /* synthetic */ RecyclerView.LayoutManager val$layoutManager;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Context context, RecyclerView.LayoutManager layoutManager) {
             super(context);
             this.val$layoutManager = layoutManager;

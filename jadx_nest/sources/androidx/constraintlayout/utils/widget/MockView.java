@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import androidx.constraintlayout.widget.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MockView extends View {
     private int mDiagonalsColor;
     private boolean mDrawDiagonals;

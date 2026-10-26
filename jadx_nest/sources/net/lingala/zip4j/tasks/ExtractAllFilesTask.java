@@ -11,7 +11,7 @@ import net.lingala.zip4j.model.ZipModel;
 import net.lingala.zip4j.progress.ProgressMonitor;
 import net.lingala.zip4j.util.UnzipUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ExtractAllFilesTask extends AbstractExtractFileTask<ExtractAllFilesTaskParameters> {
     private final char[] password;
     private SplitFileInputStream splitInputStream;
@@ -21,11 +21,11 @@ public class ExtractAllFilesTask extends AbstractExtractFileTask<ExtractAllFiles
         this.password = cArr;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    /* JADX WARN: Code duplicated, block: B:41:0x007f  */
-    /* JADX WARN: Code duplicated, block: B:43:0x006c A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:59:? A[Catch: all -> 0x0076, SYNTHETIC, TRY_LEAVE, TryCatch #1 {all -> 0x0076, blocks: (B:34:0x0075, B:33:0x0072, B:20:0x005c, B:29:0x006c), top: B:45:0x0000, inners: #0 }] */
-    /* JADX WARN: Code duplicated, block: B:61:? A[SYNTHETIC] */
+    /* INFO: Access modifiers changed from: protected */
+    /* WARN: Code duplicated, block: B:41:0x007f  */
+    /* WARN: Code duplicated, block: B:43:0x006c A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:59:? A[Catch: all -> 0x0076, SYNTHETIC, TRY_LEAVE, TryCatch #1 {all -> 0x0076, blocks: (B:34:0x0075, B:33:0x0072, B:20:0x005c, B:29:0x006c), top: B:45:0x0000, inners: #0 }] */
+    /* WARN: Code duplicated, block: B:61:? A[SYNTHETIC] */
     @Override // net.lingala.zip4j.tasks.AsyncZipTask
     public void executeTask(ExtractAllFilesTaskParameters extractAllFilesTaskParameters, ProgressMonitor progressMonitor) throws Throwable {
         ExtractAllFilesTask extractAllFilesTask;
@@ -107,7 +107,7 @@ public class ExtractAllFilesTask extends AbstractExtractFileTask<ExtractAllFiles
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // net.lingala.zip4j.tasks.AsyncZipTask
     public long calculateTotalWork(ExtractAllFilesTaskParameters extractAllFilesTaskParameters) {
         return HeaderUtil.getTotalUncompressedSizeOfAllFileHeaders(getZipModel().getCentralDirectory().getFileHeaders());

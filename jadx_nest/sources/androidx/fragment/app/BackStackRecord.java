@@ -5,7 +5,7 @@ import androidx.lifecycle.Lifecycle;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class BackStackRecord extends FragmentTransaction implements FragmentManager.BackStackEntry, FragmentManager.OpGenerator {
     private static final String TAG = "FragmentManager";
     boolean mBeingSaved;
@@ -451,7 +451,7 @@ final class BackStackRecord extends FragmentTransaction implements FragmentManag
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:34:0x00b8  */
+    /* WARN: Code duplicated, block: B:34:0x00b8  */
     Fragment expandOps(ArrayList<Fragment> arrayList, Fragment fragment) {
         Fragment fragment2 = fragment;
         int i = 0;
@@ -514,8 +514,8 @@ final class BackStackRecord extends FragmentTransaction implements FragmentManag
         return fragment2;
     }
 
-    /* JADX WARN: Code duplicated, block: B:13:0x0027  */
-    /* JADX WARN: Code duplicated, block: B:14:0x002d  */
+    /* WARN: Code duplicated, block: B:13:0x0027  */
+    /* WARN: Code duplicated, block: B:14:0x002d  */
     Fragment trackAddedFragmentsInPop(ArrayList<Fragment> arrayList, Fragment fragment) {
         for (int size = this.mOps.size() - 1; size >= 0; size--) {
             FragmentTransaction.Op op = this.mOps.get(size);

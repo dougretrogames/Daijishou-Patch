@@ -8,7 +8,7 @@ import com.bumptech.glide.load.Options;
 import java.io.InputStream;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ResourceUriLoader<DataT> implements ModelLoader<Uri, DataT> {
     private static final int INVALID_RESOURCE_ID = 0;
     private static final String TAG = "ResourceUriLoader";

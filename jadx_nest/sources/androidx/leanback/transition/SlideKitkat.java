@@ -17,7 +17,7 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
 import androidx.leanback.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class SlideKitkat extends Visibility {
     private static final String TAG = "SlideKitkat";
     private CalculateSlide mSlideCalculator;
@@ -69,7 +69,7 @@ class SlideKitkat extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.SlideKitkat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.SlideKitkat$1, reason: invalid class name */
     class AnonymousClass1 extends CalculateSlideHorizontal {
         AnonymousClass1() {
         }
@@ -80,7 +80,7 @@ class SlideKitkat extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.SlideKitkat$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.SlideKitkat$2, reason: invalid class name */
     class AnonymousClass2 extends CalculateSlideVertical {
         AnonymousClass2() {
         }
@@ -91,7 +91,7 @@ class SlideKitkat extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.SlideKitkat$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.SlideKitkat$3, reason: invalid class name */
     class AnonymousClass3 extends CalculateSlideHorizontal {
         AnonymousClass3() {
         }
@@ -102,7 +102,7 @@ class SlideKitkat extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.SlideKitkat$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.SlideKitkat$4, reason: invalid class name */
     class AnonymousClass4 extends CalculateSlideVertical {
         AnonymousClass4() {
         }
@@ -113,7 +113,7 @@ class SlideKitkat extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.SlideKitkat$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.SlideKitkat$5, reason: invalid class name */
     class AnonymousClass5 extends CalculateSlideHorizontal {
         AnonymousClass5() {
         }
@@ -127,7 +127,7 @@ class SlideKitkat extends Visibility {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.SlideKitkat$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.SlideKitkat$6, reason: invalid class name */
     class AnonymousClass6 extends CalculateSlideHorizontal {
         AnonymousClass6() {
         }

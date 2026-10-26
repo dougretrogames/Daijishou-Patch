@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.Objects;
 import org.apache.commons.io.function.Uncheck;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SequenceReader extends Reader {
     private Reader reader;
     private final Iterator<? extends Reader> readers;
@@ -27,7 +27,7 @@ public class SequenceReader extends Reader {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Reader nextReader() throws IOException {
         Reader reader = this.reader;
         if (reader != null) {

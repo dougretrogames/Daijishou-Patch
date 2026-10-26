@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.parser;
 
 import androidx.core.os.EnvironmentCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CLParsingException extends Exception {
     private final String mElementClass;
     private final int mLineNumber;

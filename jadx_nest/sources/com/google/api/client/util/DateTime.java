@@ -12,7 +12,7 @@ import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.codec.language.Soundex;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class DateTime implements Serializable {
     private static final long serialVersionUID = 1;
     private final boolean dateOnly;
@@ -200,12 +200,12 @@ public final class DateTime implements Serializable {
             this.tzShift = num;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public DateTime toDateTime() {
             return new DateTime(!this.timeGiven, TimeUnit.SECONDS.toMillis(this.seconds) + TimeUnit.NANOSECONDS.toMillis(this.nanos), this.tzShift);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public SecondsAndNanos toSecondsAndNanos() {
             return new SecondsAndNanos(this.seconds, this.nanos, null);
         }

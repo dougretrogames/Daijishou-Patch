@@ -13,7 +13,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class ActivityRecreator {
     private static final String LOG_TAG = "ActivityRecreator";
     protected static final Class<?> activityThreadClass;
@@ -73,7 +73,7 @@ final class ActivityRecreator {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.app.ActivityRecreator$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.app.ActivityRecreator$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ LifecycleCheckCallbacks val$callbacks;
         final /* synthetic */ Object val$token;
@@ -89,7 +89,7 @@ final class ActivityRecreator {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.app.ActivityRecreator$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.app.ActivityRecreator$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         final /* synthetic */ Application val$application;
         final /* synthetic */ LifecycleCheckCallbacks val$callbacks;
@@ -173,7 +173,7 @@ final class ActivityRecreator {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.app.ActivityRecreator$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.app.ActivityRecreator$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         final /* synthetic */ Object val$activityThread;
         final /* synthetic */ Object val$token;

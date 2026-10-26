@@ -4,7 +4,7 @@ import android.app.Dialog;
 import android.os.Build;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DialogCompat {
     private DialogCompat() {
     }

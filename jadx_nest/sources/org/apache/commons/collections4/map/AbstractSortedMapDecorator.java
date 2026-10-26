@@ -10,7 +10,7 @@ import org.apache.commons.collections4.IterableSortedMap;
 import org.apache.commons.collections4.OrderedMapIterator;
 import org.apache.commons.collections4.iterators.ListIteratorWrapper;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractSortedMapDecorator<K, V> extends AbstractMapDecorator<K, V> implements IterableSortedMap<K, V> {
 
     protected static class SortedMapIterator<K, V> extends EntrySetToMapIteratorAdapter<K, V> implements OrderedMapIterator<K, V> {
@@ -48,7 +48,7 @@ public abstract class AbstractSortedMapDecorator<K, V> extends AbstractMapDecora
         return decorated().comparator();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.map.AbstractMapDecorator
     public SortedMap<K, V> decorated() {
         return (SortedMap) super.decorated();

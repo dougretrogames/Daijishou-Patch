@@ -4,7 +4,7 @@ import java.util.Comparator;
 import org.apache.commons.collections4.Predicate;
 import org.apache.commons.collections4.SortedBag;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PredicatedSortedBag<E> extends PredicatedBag<E> implements SortedBag<E> {
     private static final long serialVersionUID = 3448581314086406616L;
 
@@ -21,7 +21,7 @@ public class PredicatedSortedBag<E> extends PredicatedBag<E> implements SortedBa
         return decorated().comparator();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.bag.PredicatedBag, org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public SortedBag<E> decorated() {
         return (SortedBag) super.decorated();

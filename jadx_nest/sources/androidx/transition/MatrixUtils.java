@@ -3,11 +3,11 @@ package androidx.transition;
 import android.graphics.Matrix;
 import android.graphics.RectF;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class MatrixUtils {
     static final Matrix IDENTITY_MATRIX = new AnonymousClass1();
 
-    /* JADX INFO: renamed from: androidx.transition.MatrixUtils$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.transition.MatrixUtils$1, reason: invalid class name */
     class AnonymousClass1 extends Matrix {
         AnonymousClass1() {
         }

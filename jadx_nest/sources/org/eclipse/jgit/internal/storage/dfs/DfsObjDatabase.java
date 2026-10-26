@@ -25,7 +25,7 @@ import org.eclipse.jgit.lib.ObjectDatabase;
 import org.eclipse.jgit.lib.ObjectInserter;
 import org.eclipse.jgit.util.io.CountingOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class DfsObjDatabase extends ObjectDatabase {
     private static final PackList NO_PACKS = new AnonymousClass1(new DfsPackFile[0], new DfsReftable[0]);
     private DfsReaderOptions readerOptions;
@@ -45,7 +45,7 @@ public abstract class DfsObjDatabase extends ObjectDatabase {
 
     protected abstract DfsOutputStream writeFile(DfsPackDescription dfsPackDescription, PackExt packExt) throws IOException;
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.dfs.DfsObjDatabase$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.internal.storage.dfs.DfsObjDatabase$1, reason: invalid class name */
     class AnonymousClass1 extends PackList {
         @Override // org.eclipse.jgit.internal.storage.dfs.DfsObjDatabase.PackList
         void clearDirty() {
@@ -75,7 +75,7 @@ public abstract class DfsObjDatabase extends ObjectDatabase {
 
         public static final Comparator<PackSource> DEFAULT_COMPARATOR = new ComparatorBuilder().add(INSERT, RECEIVE).add(COMPACT).add(GC).add(GC_REST).add(UNREACHABLE_GARBAGE).build();
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static PackSource[] valuesCustom() {
             PackSource[] packSourceArrValuesCustom = values();
             int length = packSourceArrValuesCustom.length;
@@ -101,7 +101,7 @@ public abstract class DfsObjDatabase extends ObjectDatabase {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         static class PackSourceComparator implements Comparator<PackSource> {
             private final Map<PackSource, Integer> ranks;
 
@@ -125,7 +125,7 @@ public abstract class DfsObjDatabase extends ObjectDatabase {
                 return (String) Arrays.stream(PackSource.valuesCustom()).map(new DfsObjDatabase$PackSource$PackSourceComparator$$ExternalSyntheticLambda0(this)).collect(Collectors.joining(", ", getClass().getSimpleName() + "{", "}"));
             }
 
-            /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-dfs-DfsObjDatabase$PackSource$PackSourceComparator, reason: not valid java name */
+            /* INFO: renamed from: lambda$0$org-eclipse-jgit-internal-storage-dfs-DfsObjDatabase$PackSource$PackSourceComparator, reason: not valid java name */
             /* synthetic */ String m5669xb8130950(PackSource packSource) {
                 return String.valueOf(packSource) + "=" + String.valueOf(this.ranks.get(packSource));
             }
@@ -409,7 +409,7 @@ public abstract class DfsObjDatabase extends ObjectDatabase {
         return new DfsObjDatabase$$ExternalSyntheticLambda0(this, dfsPackDescription);
     }
 
-    /* JADX INFO: renamed from: lambda$1$org-eclipse-jgit-internal-storage-dfs-DfsObjDatabase, reason: not valid java name */
+    /* INFO: renamed from: lambda$1$org-eclipse-jgit-internal-storage-dfs-DfsObjDatabase, reason: not valid java name */
     /* synthetic */ void m5667lambda$1$orgeclipsejgitinternalstoragedfsDfsObjDatabase(DfsPackDescription dfsPackDescription, PackBitmapIndexBuilder packBitmapIndexBuilder, byte[] bArr) throws IOException {
         Throwable th = null;
         try {
@@ -440,7 +440,7 @@ public abstract class DfsObjDatabase extends ObjectDatabase {
         return new DfsObjDatabase$$ExternalSyntheticLambda2(this, dfsPackDescription, i);
     }
 
-    /* JADX INFO: renamed from: lambda$2$org-eclipse-jgit-internal-storage-dfs-DfsObjDatabase, reason: not valid java name */
+    /* INFO: renamed from: lambda$2$org-eclipse-jgit-internal-storage-dfs-DfsObjDatabase, reason: not valid java name */
     /* synthetic */ void m5668lambda$2$orgeclipsejgitinternalstoragedfsDfsObjDatabase(DfsPackDescription dfsPackDescription, int i, List list, byte[] bArr) throws IOException {
         Throwable th = null;
         try {

@@ -3,8 +3,8 @@ package org.apache.commons.io.input;
 import org.apache.commons.io.function.IOConsumer;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class XmlStreamReader$$ExternalSyntheticLambda0 implements IOConsumer {
     public final /* synthetic */ StringBuilder f$0;
 

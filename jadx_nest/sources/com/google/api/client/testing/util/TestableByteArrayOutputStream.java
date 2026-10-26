@@ -3,7 +3,7 @@ package com.google.api.client.testing.util;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TestableByteArrayOutputStream extends ByteArrayOutputStream {
     private boolean closed;
 

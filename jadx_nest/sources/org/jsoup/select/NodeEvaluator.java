@@ -7,7 +7,7 @@ import org.jsoup.nodes.Element;
 import org.jsoup.nodes.LeafNode;
 import org.jsoup.nodes.Node;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class NodeEvaluator extends Evaluator {
     abstract boolean evaluateMatch(Node node);
 
@@ -20,7 +20,7 @@ abstract class NodeEvaluator extends Evaluator {
     }
 
     @Override // org.jsoup.select.Evaluator
-    /* JADX INFO: renamed from: matches */
+    /* INFO: renamed from: matches */
     public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
         return evaluateMatch(element2);
     }

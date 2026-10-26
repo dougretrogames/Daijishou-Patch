@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import org.eclipse.jgit.lib.ProgressMonitor;
 import org.eclipse.jgit.transport.BundleWriter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsBundleWriter {
     public static void writeEntireRepositoryAsBundle(ProgressMonitor progressMonitor, OutputStream outputStream, DfsRepository dfsRepository) throws IOException {
         BundleWriter bundleWriter = new BundleWriter(dfsRepository);

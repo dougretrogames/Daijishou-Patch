@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class PlaybackStateCompat implements Parcelable {
     public static final long ACTION_FAST_FORWARD = 64;
     public static final long ACTION_PAUSE = 2;
@@ -284,18 +284,18 @@ public final class PlaybackStateCompat implements Parcelable {
         return this.mStateObj;
     }
 
-    /* JADX INFO: renamed from: android.support.v4.media.session.PlaybackStateCompat$1, reason: invalid class name */
+    /* INFO: renamed from: android.support.v4.media.session.PlaybackStateCompat$1, reason: invalid class name */
     static class AnonymousClass1 implements Parcelable.Creator<PlaybackStateCompat> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public PlaybackStateCompat createFromParcel(Parcel parcel) {
             return new PlaybackStateCompat(parcel);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public PlaybackStateCompat[] newArray(int i) {
             return new PlaybackStateCompat[i];
@@ -356,18 +356,18 @@ public final class PlaybackStateCompat implements Parcelable {
             return objNewInstance;
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.session.PlaybackStateCompat$CustomAction$1, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.session.PlaybackStateCompat$CustomAction$1, reason: invalid class name */
         static class AnonymousClass1 implements Parcelable.Creator<CustomAction> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public CustomAction createFromParcel(Parcel parcel) {
                 return new CustomAction(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public CustomAction[] newArray(int i) {
                 return new CustomAction[i];

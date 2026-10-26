@@ -40,7 +40,7 @@ import kotlin.jvm.internal.markers.KMutableMap;
 import kotlin.jvm.internal.markers.KMutableSet;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class TypeIntrinsics {
     private static <T extends Throwable> T sanitizeStackTrace(T t) {
         return (T) Intrinsics.sanitizeStackTrace(t, TypeIntrinsics.class.getName());

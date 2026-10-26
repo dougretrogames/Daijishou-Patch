@@ -18,7 +18,7 @@ import android.widget.TextView;
 import androidx.appcompat.R;
 import androidx.appcompat.widget.TintTypedArray;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ListMenuItemView extends LinearLayout implements MenuView.ItemView, AbsListView.SelectionBoundsAdjuster {
     private static final String TAG = "ListMenuItemView";
     private Drawable mBackground;

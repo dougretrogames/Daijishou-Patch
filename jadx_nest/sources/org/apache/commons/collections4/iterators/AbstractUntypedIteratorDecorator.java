@@ -3,7 +3,7 @@ package org.apache.commons.collections4.iterators;
 import java.util.Iterator;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractUntypedIteratorDecorator<I, O> implements Iterator<O> {
     private final Iterator<I> iterator;
 

@@ -4,7 +4,7 @@ import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.TypeVariable;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public enum FieldType {
     DOUBLE(0, Collection.SCALAR, JavaType.DOUBLE),
     FLOAT(1, Collection.SCALAR, JavaType.FLOAT),
@@ -63,7 +63,7 @@ public enum FieldType {
     private final Collection collection;
     private final Class<?> elementType;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     private final int f62id;
     private final JavaType javaType;
     private final boolean primitiveScalar;
@@ -90,7 +90,7 @@ public enum FieldType {
         this.primitiveScalar = (collection != Collection.SCALAR || (i = AnonymousClass1.$SwitchMap$com$google$protobuf$JavaType[javaType.ordinal()]) == 1 || i == 2 || i == 3) ? false : true;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.FieldType$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.FieldType$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$FieldType$Collection;
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$JavaType;

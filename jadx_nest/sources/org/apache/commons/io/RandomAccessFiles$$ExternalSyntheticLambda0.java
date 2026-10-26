@@ -3,8 +3,8 @@ package org.apache.commons.io;
 import java.io.RandomAccessFile;
 import org.apache.commons.io.function.IOTriFunction;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class RandomAccessFiles$$ExternalSyntheticLambda0 implements IOTriFunction {
     public final /* synthetic */ RandomAccessFile f$0;
 

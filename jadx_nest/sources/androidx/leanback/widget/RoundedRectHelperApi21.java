@@ -5,7 +5,7 @@ import android.util.SparseArray;
 import android.view.View;
 import android.view.ViewOutlineProvider;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class RoundedRectHelperApi21 {
     private static final int MAX_CACHED_PROVIDER = 32;
     private static SparseArray<ViewOutlineProvider> sRoundedRectProvider;

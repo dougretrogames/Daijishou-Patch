@@ -3,7 +3,7 @@ package io.grpc;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class ThreadLocalContextStorage extends Context.Storage {
     private static final Logger log = Logger.getLogger(ThreadLocalContextStorage.class.getName());
     static final ThreadLocal<Context> localContext = new ThreadLocal<>();

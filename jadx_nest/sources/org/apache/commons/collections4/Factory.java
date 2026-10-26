@@ -2,7 +2,7 @@ package org.apache.commons.collections4;
 
 import java.util.function.Supplier;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface Factory<T> extends Supplier<T> {
     T create();

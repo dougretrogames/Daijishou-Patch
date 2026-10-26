@@ -1,6 +1,6 @@
 package androidx.leanback.widget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class WindowAlignment {
     public final Axis horizontal;
     private Axis mMainAxis;
@@ -167,11 +167,11 @@ final class WindowAlignment {
             return f2 != -1.0f ? i3 - ((int) ((this.mSize * f2) / 100.0f)) : i3;
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:11:0x0027, code lost:
+        /* WARN: Code restructure failed: missing block: B:11:0x0027, code lost:
         
             r4.mMinScroll = r4.mMinEdge - r4.mPaddingMin;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:21:0x0048, code lost:
+        /* WARN: Code restructure failed: missing block: B:21:0x0048, code lost:
         
             r4.mMaxScroll = (r4.mMaxEdge - r4.mPaddingMin) - r5;
          */

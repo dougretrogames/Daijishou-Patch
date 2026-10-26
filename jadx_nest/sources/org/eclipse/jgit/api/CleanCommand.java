@@ -16,7 +16,7 @@ import org.eclipse.jgit.util.FS;
 import org.eclipse.jgit.util.FileUtils;
 import org.eclipse.jgit.util.Paths;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CleanCommand extends GitCommand<Set<String>> {
     private boolean directories;
     private boolean dryRun;

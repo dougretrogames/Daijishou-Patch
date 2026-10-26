@@ -2,7 +2,7 @@ package com.google.api.client.util;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface BackOff {
     public static final long STOP = -1;
     public static final BackOff ZERO_BACKOFF = new AnonymousClass1();
@@ -12,7 +12,7 @@ public interface BackOff {
 
     void reset() throws IOException;
 
-    /* JADX INFO: renamed from: com.google.api.client.util.BackOff$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.util.BackOff$1, reason: invalid class name */
     static class AnonymousClass1 implements BackOff {
         @Override // com.google.api.client.util.BackOff
         public long nextBackOffMillis() throws IOException {
@@ -27,7 +27,7 @@ public interface BackOff {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.util.BackOff$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.util.BackOff$2, reason: invalid class name */
     static class AnonymousClass2 implements BackOff {
         @Override // com.google.api.client.util.BackOff
         public long nextBackOffMillis() throws IOException {

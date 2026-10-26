@@ -5,7 +5,7 @@ import android.webkit.WebSettings;
 import java.lang.reflect.InvocationHandler;
 import org.jspecify.annotations.NullMarked;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @NullMarked
 public interface WebkitToCompatConverterBoundaryInterface {
     InvocationHandler convertCookieManager(Object obj);

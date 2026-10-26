@@ -12,7 +12,7 @@ import android.view.ViewConfiguration;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PagerTabStrip extends PagerTitleStrip {
     private static final int FULL_UNDERLINE_HEIGHT = 1;
     private static final int INDICATOR_HEIGHT = 3;
@@ -74,7 +74,7 @@ public class PagerTabStrip extends PagerTitleStrip {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager.widget.PagerTabStrip$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager.widget.PagerTabStrip$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         AnonymousClass1() {
         }
@@ -85,7 +85,7 @@ public class PagerTabStrip extends PagerTitleStrip {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager.widget.PagerTabStrip$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager.widget.PagerTabStrip$2, reason: invalid class name */
     class AnonymousClass2 implements View.OnClickListener {
         AnonymousClass2() {
         }

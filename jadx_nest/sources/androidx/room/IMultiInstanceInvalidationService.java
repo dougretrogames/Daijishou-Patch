@@ -8,7 +8,7 @@ import android.os.RemoteException;
 import kotlin.text.Typography;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface IMultiInstanceInvalidationService extends IInterface {
     public static final String DESCRIPTOR = "androidx$room$IMultiInstanceInvalidationService".replace(Typography.dollar, FilenameUtils.EXTENSION_SEPARATOR);
 

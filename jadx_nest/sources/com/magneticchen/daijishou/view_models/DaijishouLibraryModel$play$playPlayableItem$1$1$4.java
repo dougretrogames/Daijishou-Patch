@@ -20,8 +20,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Ref;
 
-/* JADX INFO: compiled from: DaijishouLibraryModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouLibraryModel.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class DaijishouLibraryModel$play$playPlayableItem$1$1$4 extends Lambda<Unit> implements Function0<Unit> {
     final /* synthetic */ AppCompatActivity $appCompatActivity;
@@ -35,8 +35,8 @@ final class DaijishouLibraryModel$play$playPlayableItem$1$1$4 extends Lambda<Uni
     final /* synthetic */ Ref.ObjectRef<PlayerEntity> $playerEntityToBeUsed;
     final /* synthetic */ DaijishouLibraryModel this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     DaijishouLibraryModel$play$playPlayableItem$1$1$4(PlatformEntity platformEntity, DaijishouLibraryModel daijishouLibraryModel, AppCompatActivity appCompatActivity, List<ResolveInfo> list, PlayableItemEntity playableItemEntity, Ref.ObjectRef<PlayerEntity> objectRef, String str, Function1<? super Boolean, Unit> function1, Context context, boolean z) {
         super(0);
         this.$platformEntity = platformEntity;
@@ -57,7 +57,7 @@ final class DaijishouLibraryModel$play$playPlayableItem$1$1$4 extends Lambda<Uni
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2() {
         String lowerCase;
         List<Long> playerIdList = this.$platformEntity.getPlayerIdList();
@@ -94,8 +94,8 @@ final class DaijishouLibraryModel$play$playPlayableItem$1$1$4 extends Lambda<Uni
         ListSelectDialogFragment.Companion.newInstance$default(ListSelectDialogFragment.INSTANCE, this.this$0.getApplication().getString(R.string.available_players), arrayList2, null, false, 12, null).setOnSelectListener(new AnonymousClass2(arrayList, this.$playableItemEntity, this.this$0, this.$platformEntity, this.$playerEntityToBeUsed, this.$appCompatActivity, this.$packageNameToBeUsed, this.$callback, this.$context, this.$isUriDaijishouPlayerTemplate)).setOnCancelListener(new AnonymousClass3(this.$callback)).show(this.$appCompatActivity.getSupportFragmentManager(), ListSelectDialogFragment.class.getName());
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$play$playPlayableItem$1$1$4$2, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouLibraryModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$play$playPlayableItem$1$1$4$2, reason: invalid class name */
+    /* INFO: compiled from: DaijishouLibraryModel.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda<Unit> implements Function1<Integer, Unit> {
         final /* synthetic */ AppCompatActivity $appCompatActivity;
@@ -109,8 +109,8 @@ final class DaijishouLibraryModel$play$playPlayableItem$1$1$4 extends Lambda<Uni
         final /* synthetic */ Ref.ObjectRef<PlayerEntity> $playerEntityToBeUsed;
         final /* synthetic */ DaijishouLibraryModel this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass2(List<PlayerEntity> list, PlayableItemEntity playableItemEntity, DaijishouLibraryModel daijishouLibraryModel, PlatformEntity platformEntity, Ref.ObjectRef<PlayerEntity> objectRef, AppCompatActivity appCompatActivity, String str, Function1<? super Boolean, Unit> function1, Context context, boolean z) {
             super(1);
             this.$playerEntityList = list;
@@ -135,7 +135,7 @@ final class DaijishouLibraryModel$play$playPlayableItem$1$1$4 extends Lambda<Uni
             return Unit.INSTANCE;
         }
 
-        /* JADX WARN: Type inference failed for: r10v2, types: [T, com.magneticchen.daijishou.daijishou_library_db.PlayerEntity] */
+        /* WARN: Type inference failed for: r10v2, types: [T, com.magneticchen.daijishou.daijishou_library_db.PlayerEntity] */
         public final void invoke(int i) {
             PlayerEntity playerEntity = this.$playerEntityList.get(i);
             if (this.$playableItemEntity.getUseCustomPlayer()) {
@@ -150,14 +150,14 @@ final class DaijishouLibraryModel$play$playPlayableItem$1$1$4 extends Lambda<Uni
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$play$playPlayableItem$1$1$4$3, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouLibraryModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouLibraryModel$play$playPlayableItem$1$1$4$3, reason: invalid class name */
+    /* INFO: compiled from: DaijishouLibraryModel.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass3 extends Lambda<Unit> implements Function0<Unit> {
         final /* synthetic */ Function1<? super Boolean, Unit> $callback;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass3(Function1<? super Boolean, Unit> function1) {
             super(0);
             this.$callback = function1;
@@ -169,7 +169,7 @@ final class DaijishouLibraryModel$play$playPlayableItem$1$1$4 extends Lambda<Uni
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             Function1<? super Boolean, Unit> function1 = this.$callback;
             if (function1 != null) {

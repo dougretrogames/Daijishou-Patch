@@ -11,7 +11,7 @@ import java.time.Instant;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class FileTimes {
     private static final long HUNDRED = 100;
     private static final BigDecimal HUNDRED_BD;

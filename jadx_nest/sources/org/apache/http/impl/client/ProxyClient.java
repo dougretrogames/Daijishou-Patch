@@ -43,7 +43,7 @@ import org.apache.http.protocol.RequestUserAgent;
 import org.apache.http.util.Args;
 import org.apache.http.util.EntityUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ProxyClient {
     private final AuthSchemeRegistry authSchemeRegistry;
     private final org.apache.http.impl.auth.HttpAuthenticator authenticator;

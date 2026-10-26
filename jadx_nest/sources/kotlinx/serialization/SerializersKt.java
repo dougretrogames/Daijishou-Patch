@@ -12,7 +12,7 @@ import kotlin.reflect.KClassifier;
 import kotlin.reflect.KType;
 import kotlinx.serialization.modules.SerializersModule;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"kotlinx/serialization/SerializersKt__SerializersJvmKt", "kotlinx/serialization/SerializersKt__SerializersKt"}, k = 4, mv = {1, 9, 0}, xi = 48)
 public final class SerializersKt {
     public static final KSerializer<?> noCompiledSerializer(String str) {

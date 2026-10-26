@@ -6,9 +6,9 @@ import org.apache.commons.codec.language.Soundex;
 import org.apache.commons.io.FilenameUtils;
 import org.apache.http.message.TokenParser;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: loaded from: classes4.dex */
+/* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* WARN: Unknown enum class pattern. Please report as an issue! */
+/* INFO: loaded from: classes4.dex */
 public abstract class FieldNamingPolicy implements FieldNamingStrategy {
     private static final /* synthetic */ FieldNamingPolicy[] $VALUES;
     public static final FieldNamingPolicy IDENTITY;
@@ -35,7 +35,7 @@ public abstract class FieldNamingPolicy implements FieldNamingStrategy {
         return (FieldNamingPolicy[]) $VALUES.clone();
     }
 
-    /* JADX INFO: renamed from: com.google.gson.FieldNamingPolicy$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.FieldNamingPolicy$1, reason: invalid class name */
     final enum AnonymousClass1 extends FieldNamingPolicy {
         AnonymousClass1(String str, int i) {
             super(str, i, null);
@@ -65,7 +65,7 @@ public abstract class FieldNamingPolicy implements FieldNamingStrategy {
         $VALUES = new FieldNamingPolicy[]{anonymousClass1, anonymousClass2, anonymousClass3, anonymousClass4, anonymousClass5, anonymousClass6, anonymousClass7};
     }
 
-    /* JADX INFO: renamed from: com.google.gson.FieldNamingPolicy$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.FieldNamingPolicy$2, reason: invalid class name */
     final enum AnonymousClass2 extends FieldNamingPolicy {
         AnonymousClass2(String str, int i) {
             super(str, i, null);
@@ -77,7 +77,7 @@ public abstract class FieldNamingPolicy implements FieldNamingStrategy {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.FieldNamingPolicy$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.FieldNamingPolicy$3, reason: invalid class name */
     final enum AnonymousClass3 extends FieldNamingPolicy {
         AnonymousClass3(String str, int i) {
             super(str, i, null);
@@ -89,7 +89,7 @@ public abstract class FieldNamingPolicy implements FieldNamingStrategy {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.FieldNamingPolicy$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.FieldNamingPolicy$4, reason: invalid class name */
     final enum AnonymousClass4 extends FieldNamingPolicy {
         AnonymousClass4(String str, int i) {
             super(str, i, null);
@@ -101,7 +101,7 @@ public abstract class FieldNamingPolicy implements FieldNamingStrategy {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.FieldNamingPolicy$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.FieldNamingPolicy$5, reason: invalid class name */
     final enum AnonymousClass5 extends FieldNamingPolicy {
         AnonymousClass5(String str, int i) {
             super(str, i, null);
@@ -113,7 +113,7 @@ public abstract class FieldNamingPolicy implements FieldNamingStrategy {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.FieldNamingPolicy$6, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.FieldNamingPolicy$6, reason: invalid class name */
     final enum AnonymousClass6 extends FieldNamingPolicy {
         AnonymousClass6(String str, int i) {
             super(str, i, null);
@@ -125,7 +125,7 @@ public abstract class FieldNamingPolicy implements FieldNamingStrategy {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.FieldNamingPolicy$7, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.FieldNamingPolicy$7, reason: invalid class name */
     final enum AnonymousClass7 extends FieldNamingPolicy {
         AnonymousClass7(String str, int i) {
             super(str, i, null);

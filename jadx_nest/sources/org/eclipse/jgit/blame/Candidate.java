@@ -18,7 +18,7 @@ import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.treewalk.filter.PathFilter;
 import org.eclipse.jgit.util.LfsFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class Candidate {
     Candidate queueNext;
     Region regionList;
@@ -92,11 +92,11 @@ class Candidate {
         blame(editList, this, candidate);
     }
 
-    /* JADX WARN: Code duplicated, block: B:32:0x0089  */
-    /* JADX WARN: Code duplicated, block: B:36:0x00a0  */
-    /* JADX WARN: Code duplicated, block: B:38:0x0094 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:42:0x00a3 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:44:0x004d A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:32:0x0089  */
+    /* WARN: Code duplicated, block: B:36:0x00a0  */
+    /* WARN: Code duplicated, block: B:38:0x0094 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:42:0x00a3 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:44:0x004d A[SYNTHETIC] */
     private static void blame(EditList editList, Candidate candidate, Candidate candidate2) {
         int i;
         Region region;

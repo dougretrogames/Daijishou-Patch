@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class AbstractMediaListHeaderPresenter extends RowPresenter {
     private int mBackgroundColor;
     private boolean mBackgroundColorSet;

@@ -12,8 +12,8 @@ import com.google.android.gms.common.internal.zzah;
 import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public final class GoogleServices {
     private static final Object zza = new Object();

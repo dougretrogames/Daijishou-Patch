@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ItemBridgeAdapter extends RecyclerView.Adapter implements FacetProviderAdapter {
     static final boolean DEBUG = false;
     static final String TAG = "ItemBridgeAdapter";
@@ -133,7 +133,7 @@ public class ItemBridgeAdapter extends RecyclerView.Adapter implements FacetProv
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.ItemBridgeAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.ItemBridgeAdapter$1, reason: invalid class name */
     class AnonymousClass1 extends ObjectAdapter.DataObserver {
         AnonymousClass1() {
         }

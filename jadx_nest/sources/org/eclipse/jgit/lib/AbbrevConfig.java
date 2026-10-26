@@ -4,7 +4,7 @@ import java.text.MessageFormat;
 import org.eclipse.jgit.api.errors.InvalidConfigurationException;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class AbbrevConfig {
     public static final int MIN_ABBREV = 4;
     public static final AbbrevConfig NO = new AbbrevConfig(40);

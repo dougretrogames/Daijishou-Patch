@@ -10,7 +10,7 @@ import org.eclipse.jgit.lib.StoredConfig;
 import org.eclipse.jgit.transport.RemoteConfig;
 import org.eclipse.jgit.transport.URIish;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RemoteSetUrlCommand extends GitCommand<RemoteConfig> {
     private String remoteName;
     private URIish remoteUri;
@@ -20,7 +20,7 @@ public class RemoteSetUrlCommand extends GitCommand<RemoteConfig> {
         FETCH,
         PUSH;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static UriType[] valuesCustom() {
             UriType[] uriTypeArrValuesCustom = values();
             int length = uriTypeArrValuesCustom.length;

@@ -4,7 +4,7 @@ import com.google.protobuf.GeneratedMessage;
 import com.google.protobuf.GeneratedMessage.Builder;
 import com.google.protobuf.MessageOrBuilder;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class SingleFieldBuilder<MType extends GeneratedMessage, BType extends GeneratedMessage.Builder, IType extends MessageOrBuilder> implements AbstractMessage.BuilderParent {
     private BType builder;
     private boolean isClean;
@@ -59,7 +59,7 @@ public class SingleFieldBuilder<MType extends GeneratedMessage, BType extends Ge
         return this;
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x000f  */
+    /* WARN: Code duplicated, block: B:7:0x000f  */
     public SingleFieldBuilder<MType, BType, IType> mergeFrom(MType value) {
         if (this.builder == null) {
             Message message = this.message;

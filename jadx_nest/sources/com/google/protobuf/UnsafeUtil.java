@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import sun.misc.Unsafe;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class UnsafeUtil {
     private static final long BOOLEAN_ARRAY_BASE_OFFSET;
     private static final long BOOLEAN_ARRAY_INDEX_SCALE;
@@ -262,7 +262,7 @@ final class UnsafeUtil {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.UnsafeUtil$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.UnsafeUtil$1, reason: invalid class name */
     class AnonymousClass1 implements PrivilegedExceptionAction<Unsafe> {
         AnonymousClass1() {
         }
@@ -333,7 +333,7 @@ final class UnsafeUtil {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static java.lang.reflect.Field bufferAddressField() {
         java.lang.reflect.Field field;
         if (Android.isOnAndroidDevice() && (field = field(Buffer.class, "effectiveDirectAddress")) != null) {
@@ -879,17 +879,17 @@ final class UnsafeUtil {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte getByteBigEndian(Object target, long offset) {
         return (byte) ((getInt(target, (-4) & offset) >>> ((int) (((~offset) & 3) << 3))) & 255);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static byte getByteLittleEndian(Object target, long offset) {
         return (byte) ((getInt(target, (-4) & offset) >>> ((int) ((offset & 3) << 3))) & 255);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void putByteBigEndian(Object target, long offset, byte value) {
         long j = (-4) & offset;
         int i = getInt(target, j);
@@ -897,34 +897,34 @@ final class UnsafeUtil {
         putInt(target, j, ((255 & value) << i2) | (i & (~(255 << i2))));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void putByteLittleEndian(Object target, long offset, byte value) {
         long j = (-4) & offset;
         int i = (((int) offset) & 3) << 3;
         putInt(target, j, ((255 & value) << i) | (getInt(target, j) & (~(255 << i))));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean getBooleanBigEndian(Object target, long offset) {
         return getByteBigEndian(target, offset) != 0;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean getBooleanLittleEndian(Object target, long offset) {
         return getByteLittleEndian(target, offset) != 0;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void putBooleanBigEndian(Object obj, long j, boolean z) {
         putByteBigEndian(obj, j, z ? (byte) 1 : (byte) 0);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void putBooleanLittleEndian(Object obj, long j, boolean z) {
         putByteLittleEndian(obj, j, z ? (byte) 1 : (byte) 0);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void logMissingMethod(Throwable e) {
         Logger.getLogger(UnsafeUtil.class.getName()).log(Level.WARNING, "platform method missing - proto runtime falling back to safer methods: " + e);
     }

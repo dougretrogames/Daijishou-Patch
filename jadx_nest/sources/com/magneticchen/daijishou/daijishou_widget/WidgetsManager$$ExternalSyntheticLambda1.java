@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.daijishou_widget;
 import java.util.function.BiConsumer;
 import kotlin.jvm.functions.Function2;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class WidgetsManager$$ExternalSyntheticLambda1 implements BiConsumer {
     public final /* synthetic */ Function2 f$0;
 

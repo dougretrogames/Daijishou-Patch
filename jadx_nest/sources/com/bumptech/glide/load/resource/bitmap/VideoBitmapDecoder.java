@@ -5,7 +5,7 @@ import android.os.ParcelFileDescriptor;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class VideoBitmapDecoder extends VideoDecoder<ParcelFileDescriptor> {
     public VideoBitmapDecoder(Context context) {

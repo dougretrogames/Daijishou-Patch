@@ -16,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class OpenCensusUtils {
 
     @Nullable
@@ -118,7 +118,7 @@ public class OpenCensusUtils {
         span.addMessageEvent(MessageEvent.builder(type, idGenerator.getAndIncrement()).setUncompressedMessageSize(j).build());
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.http.OpenCensusUtils$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.http.OpenCensusUtils$1, reason: invalid class name */
     static class AnonymousClass1 extends TextFormat.Setter<HttpHeaders> {
         AnonymousClass1() {
         }

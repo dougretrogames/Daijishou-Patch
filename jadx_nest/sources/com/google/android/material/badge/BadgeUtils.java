@@ -17,7 +17,7 @@ import com.google.android.material.R;
 import com.google.android.material.internal.ParcelableSparseArray;
 import com.google.android.material.internal.ToolbarUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BadgeUtils {
     private static final String LOG_TAG = "BadgeUtils";
     public static final boolean USE_COMPAT_PARENT = false;
@@ -49,7 +49,7 @@ public class BadgeUtils {
         attachBadgeDrawable(badgeDrawable, toolbar, i, null);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.badge.BadgeUtils$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.badge.BadgeUtils$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ BadgeDrawable val$badgeDrawable;
         final /* synthetic */ FrameLayout val$customBadgeParent;
@@ -78,7 +78,7 @@ public class BadgeUtils {
         toolbar.post(new AnonymousClass1(toolbar, i, badgeDrawable, frameLayout));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void attachBadgeContentDescription(BadgeDrawable badgeDrawable, View view) {
         if (Build.VERSION.SDK_INT >= 29 && ViewCompat.hasAccessibilityDelegate(view)) {
             ViewCompat.setAccessibilityDelegate(view, new AnonymousClass2(view.getAccessibilityDelegate(), badgeDrawable));
@@ -87,11 +87,11 @@ public class BadgeUtils {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.badge.BadgeUtils$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.badge.BadgeUtils$2, reason: invalid class name */
     class AnonymousClass2 extends AccessibilityDelegateCompat {
         final /* synthetic */ BadgeDrawable val$badgeDrawable;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(View.AccessibilityDelegate accessibilityDelegate, BadgeDrawable badgeDrawable) {
             super(accessibilityDelegate);
             this.val$badgeDrawable = badgeDrawable;
@@ -104,7 +104,7 @@ public class BadgeUtils {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.badge.BadgeUtils$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.badge.BadgeUtils$3, reason: invalid class name */
     class AnonymousClass3 extends AccessibilityDelegateCompat {
         final /* synthetic */ BadgeDrawable val$badgeDrawable;
 
@@ -152,7 +152,7 @@ public class BadgeUtils {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.badge.BadgeUtils$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.badge.BadgeUtils$4, reason: invalid class name */
     class AnonymousClass4 extends AccessibilityDelegateCompat {
         AnonymousClass4(View.AccessibilityDelegate accessibilityDelegate) {
             super(accessibilityDelegate);

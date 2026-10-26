@@ -5,7 +5,7 @@ import java.util.Iterator;
 import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.ObjectIdOwnerMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class BasePackBitmapIndex implements PackBitmapIndex {
     private final ObjectIdOwnerMap<StoredBitmap> bitmaps;
 

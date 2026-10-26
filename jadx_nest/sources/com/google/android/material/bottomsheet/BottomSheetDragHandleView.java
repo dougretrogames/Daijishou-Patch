@@ -15,7 +15,7 @@ import androidx.core.view.accessibility.AccessibilityViewCommand;
 import com.google.android.material.R;
 import com.google.android.material.theme.overlay.MaterialThemeOverlay;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BottomSheetDragHandleView extends AppCompatImageView implements AccessibilityManager.AccessibilityStateChangeListener {
     private static final int DEF_STYLE_RES = R.style.Widget_Material3_BottomSheet_DragHandle;
     private final AccessibilityManager accessibilityManager;
@@ -28,7 +28,7 @@ public class BottomSheetDragHandleView extends AppCompatImageView implements Acc
     private final String clickToExpandActionLabel;
     private boolean interactable;
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDragHandleView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDragHandleView$1, reason: invalid class name */
     class AnonymousClass1 extends BottomSheetBehavior.BottomSheetCallback {
         @Override // com.google.android.material.bottomsheet.BottomSheetBehavior.BottomSheetCallback
         public void onSlide(View view, float f) {
@@ -62,7 +62,7 @@ public class BottomSheetDragHandleView extends AppCompatImageView implements Acc
         ViewCompat.setAccessibilityDelegate(this, new AnonymousClass2());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDragHandleView$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.bottomsheet.BottomSheetDragHandleView$2, reason: invalid class name */
     class AnonymousClass2 extends AccessibilityDelegateCompat {
         AnonymousClass2() {
         }
@@ -118,7 +118,7 @@ public class BottomSheetDragHandleView extends AppCompatImageView implements Acc
         updateInteractableState();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void onBottomSheetStateChanged(int i) {
         if (i == 4) {
             this.clickToExpand = true;
@@ -128,7 +128,7 @@ public class BottomSheetDragHandleView extends AppCompatImageView implements Acc
         ViewCompat.replaceAccessibilityAction(this, AccessibilityNodeInfoCompat.AccessibilityActionCompat.ACTION_CLICK, this.clickToExpand ? this.clickToExpandActionLabel : this.clickToCollapseActionLabel, new BottomSheetDragHandleView$$ExternalSyntheticLambda0(this));
     }
 
-    /* JADX INFO: renamed from: lambda$onBottomSheetStateChanged$0$com-google-android-material-bottomsheet-BottomSheetDragHandleView, reason: not valid java name */
+    /* INFO: renamed from: lambda$onBottomSheetStateChanged$0$com-google-android-material-bottomsheet-BottomSheetDragHandleView, reason: not valid java name */
     /* synthetic */ boolean m3257xa7b4c95f(View view, AccessibilityViewCommand.CommandArguments commandArguments) {
         return expandOrCollapseBottomSheetIfPossible();
     }
@@ -139,7 +139,7 @@ public class BottomSheetDragHandleView extends AppCompatImageView implements Acc
         setClickable(this.interactable);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean expandOrCollapseBottomSheetIfPossible() {
         boolean z = false;
         if (!this.interactable) {

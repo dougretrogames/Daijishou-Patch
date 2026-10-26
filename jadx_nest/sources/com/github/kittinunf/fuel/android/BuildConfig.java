@@ -1,6 +1,6 @@
 package com.github.kittinunf.fuel.android;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class BuildConfig {
     public static final String APPLICATION_ID = "com.github.kittinunf.fuel.android";
     public static final String BUILD_TYPE = "release";

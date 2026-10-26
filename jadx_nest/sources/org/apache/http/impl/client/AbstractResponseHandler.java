@@ -8,7 +8,7 @@ import org.apache.http.client.HttpResponseException;
 import org.apache.http.client.ResponseHandler;
 import org.apache.http.util.EntityUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractResponseHandler<T> implements ResponseHandler<T> {
     public abstract T handleEntity(HttpEntity httpEntity) throws IOException;
 

@@ -1,6 +1,6 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 final class MapFieldSchemas {
     private static final MapFieldSchema FULL_SCHEMA = loadSchemaForFullRuntime();

@@ -10,7 +10,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class Calls {
     static <T> Call<T> defer(Callable<Call<T>> callable) {
         return new DeferredCall(callable);

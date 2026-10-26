@@ -12,7 +12,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FS_Win32_Cygwin extends FS_Win32 {
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) FS_Win32_Cygwin.class);
     private static String cygpath;

@@ -5,7 +5,7 @@ import com.google.api.client.util.StringUtils;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ByteArrayContent extends AbstractInputStreamContent {
     private final byte[] byteArray;
     private final int length;

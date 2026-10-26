@@ -5,7 +5,7 @@ import com.google.protobuf.MessageOrBuilder;
 import com.google.protobuf.Timestamp;
 import com.google.protobuf.TimestampOrBuilder;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public interface ReleaseDateOrBuilder extends MessageOrBuilder {
     DateFormatChangeDateCategoryEnum getCategory();
 

@@ -5,7 +5,7 @@ import io.opencensus.tags.TagValue;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_ViewData extends ViewData {
     private final Map<List<TagValue>, AggregationData> aggregationMap;
     private final Timestamp end;

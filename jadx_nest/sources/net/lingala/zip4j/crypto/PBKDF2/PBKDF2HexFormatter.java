@@ -2,7 +2,7 @@ package net.lingala.zip4j.crypto.PBKDF2;
 
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PBKDF2HexFormatter {
     PBKDF2HexFormatter() {
     }

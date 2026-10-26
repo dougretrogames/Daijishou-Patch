@@ -3,7 +3,7 @@ package com.google.api.client.testing.http;
 import com.google.api.client.util.Clock;
 import java.util.concurrent.atomic.AtomicLong;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FixedClock implements Clock {
     private AtomicLong currentTime;
 

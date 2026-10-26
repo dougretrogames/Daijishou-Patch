@@ -41,7 +41,7 @@ import org.eclipse.jgit.revwalk.filter.RevFilter;
 import org.eclipse.jgit.util.StringUtils;
 import org.eclipse.jgit.util.TemporaryBuffer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class BasePackFetchConnection extends BasePackConnection implements FetchConnection {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$transport$PacketLineIn$AckNackResult = null;
     private static final int MAX_HAVES = 256;
@@ -481,14 +481,14 @@ public abstract class BasePackFetchConnection extends BasePackConnection impleme
         collection.stream().map(new BasePackFetchConnection$$ExternalSyntheticLambda3()).filter(new BasePackFetchConnection$$ExternalSyntheticLambda4()).forEach(new BasePackFetchConnection$$ExternalSyntheticLambda5(this));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static ObjectId getRefObjectId(Ref ref) {
         ObjectId peeledObjectId = ref.getPeeledObjectId();
         return peeledObjectId == null ? ref.getObjectId() : peeledObjectId;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX INFO: renamed from: markReachable, reason: merged with bridge method [inline-methods] */
+    /* INFO: Access modifiers changed from: private */
+    /* INFO: renamed from: markReachable, reason: merged with bridge method [inline-methods] */
     public void m5801lambda$6$orgeclipsejgittransportBasePackFetchConnection(ObjectId objectId) {
         try {
             RevCommit commit = this.walk.parseCommit(objectId);
@@ -699,7 +699,7 @@ public abstract class BasePackFetchConnection extends BasePackConnection impleme
         this.walk.setRevFilter(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.BasePackFetchConnection$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.BasePackFetchConnection$1, reason: invalid class name */
     class AnonymousClass1 extends RevFilter {
         @Override // org.eclipse.jgit.revwalk.filter.RevFilter
         public RevFilter clone() {

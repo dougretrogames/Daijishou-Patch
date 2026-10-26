@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Functions {
     private static final Function ListFunction = new Functions$$ExternalSyntheticLambda0();
     private static final Function SetFunction = new Functions$$ExternalSyntheticLambda1();

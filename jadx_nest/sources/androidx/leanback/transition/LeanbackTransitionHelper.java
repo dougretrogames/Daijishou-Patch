@@ -3,7 +3,7 @@ package androidx.leanback.transition;
 import android.content.Context;
 import androidx.leanback.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class LeanbackTransitionHelper {
     public static Object loadTitleInTransition(Context context) {
         return TransitionHelper.loadTransition(context, R.transition.lb_title_in);

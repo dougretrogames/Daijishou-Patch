@@ -5,7 +5,7 @@ import androidx.constraintlayout.core.motion.utils.Easing;
 import java.util.Arrays;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionPaths implements Comparable<MotionPaths> {
     public static final int CARTESIAN = 0;
     public static final boolean DEBUG = false;

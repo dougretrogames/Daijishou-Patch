@@ -9,7 +9,7 @@ import org.apache.commons.collections4.MultiMap;
 import org.apache.commons.collections4.Transformer;
 import org.apache.commons.collections4.map.MultiValueMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IndexedCollection<K, C> extends AbstractCollectionDecorator<C> {
     private static final long serialVersionUID = -5512610452568370038L;
     private final MultiMap<K, C> index;
@@ -89,7 +89,7 @@ public class IndexedCollection<K, C> extends AbstractCollectionDecorator<C> {
         return (C) collection.iterator().next();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public void reindex() {
         this.index.clear();
         Iterator it = decorated().iterator();
@@ -98,7 +98,7 @@ public class IndexedCollection<K, C> extends AbstractCollectionDecorator<C> {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator, java.util.Collection, org.apache.commons.collections4.Bag
     public boolean remove(Object obj) {
         boolean zRemove = super.remove(obj);

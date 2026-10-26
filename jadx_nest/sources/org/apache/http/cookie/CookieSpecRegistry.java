@@ -11,7 +11,7 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public final class CookieSpecRegistry implements Lookup<CookieSpecProvider> {
     private final ConcurrentHashMap<String, CookieSpecFactory> registeredSpecs = new ConcurrentHashMap<>();
@@ -52,7 +52,7 @@ public final class CookieSpecRegistry implements Lookup<CookieSpecProvider> {
         this.registeredSpecs.putAll(map);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.cookie.CookieSpecRegistry$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.cookie.CookieSpecRegistry$1, reason: invalid class name */
     class AnonymousClass1 implements CookieSpecProvider {
         final /* synthetic */ String val$name;
 

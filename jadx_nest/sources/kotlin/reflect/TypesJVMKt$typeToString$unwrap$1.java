@@ -5,8 +5,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: TypesJVM.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: TypesJVM.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 /* synthetic */ class TypesJVMKt$typeToString$unwrap$1 extends FunctionReferenceImpl implements Function1<Class<?>, Class<?>> {
     public static final TypesJVMKt$typeToString$unwrap$1 INSTANCE = new TypesJVMKt$typeToString$unwrap$1();

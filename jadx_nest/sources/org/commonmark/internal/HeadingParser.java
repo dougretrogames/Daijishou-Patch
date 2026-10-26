@@ -12,7 +12,7 @@ import org.commonmark.parser.block.BlockStart;
 import org.commonmark.parser.block.MatchedBlockParser;
 import org.commonmark.parser.block.ParserState;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HeadingParser extends AbstractBlockParser {
     private final Heading block;
     private final String content;
@@ -60,7 +60,7 @@ public class HeadingParser extends AbstractBlockParser {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static HeadingParser getAtxHeading(CharSequence charSequence, int i) {
         int iSkip = Parsing.skip('#', charSequence, i, charSequence.length()) - i;
         if (iSkip == 0 || iSkip > 6) {
@@ -83,7 +83,7 @@ public class HeadingParser extends AbstractBlockParser {
         return new HeadingParser(iSkip, charSequence.subSequence(i2, iSkipSpaceTabBackwards + 1).toString());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int getSetextHeadingLevel(CharSequence charSequence, int i) {
         char cCharAt = charSequence.charAt(i);
         if (cCharAt != '-') {

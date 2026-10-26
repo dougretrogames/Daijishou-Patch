@@ -3,7 +3,7 @@ package androidx.webkit.internal;
 import java.util.Objects;
 import org.chromium.support_lib_boundary.WebMessagePayloadBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebMessagePayloadAdapter implements WebMessagePayloadBoundaryInterface {
     private final byte[] mArrayBuffer;
     private final String mString;

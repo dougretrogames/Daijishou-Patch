@@ -24,7 +24,7 @@ import org.eclipse.jgit.util.MutableInteger;
 import org.eclipse.jgit.util.NB;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DirCacheEntry {
     private static final int ASSUME_VALID = 128;
     private static final int EXTENDED = 64;

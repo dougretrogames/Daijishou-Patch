@@ -3,7 +3,7 @@ package androidx.constraintlayout.core.state;
 import java.util.HashMap;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Registry {
     private static final Registry sRegistry = new Registry();
     private HashMap<String, RegistryCallback> mCallbacks = new HashMap<>();

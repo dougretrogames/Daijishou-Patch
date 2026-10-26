@@ -1,6 +1,6 @@
 package net.lingala.zip4j.progress;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ProgressMonitor {
     private boolean cancelAllTasks;
     private Task currentTask;

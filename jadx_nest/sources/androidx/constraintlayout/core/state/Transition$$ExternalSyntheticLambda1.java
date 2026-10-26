@@ -1,7 +1,7 @@
 package androidx.constraintlayout.core.state;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class Transition$$ExternalSyntheticLambda1 implements Interpolator {
     @Override // androidx.constraintlayout.core.state.Interpolator
     public final float getInterpolation(float f) {

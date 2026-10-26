@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class IdTokenCredentials extends OAuth2Credentials {
     private static final long serialVersionUID = -2133257318957588431L;
     private IdTokenProvider idTokenProvider;

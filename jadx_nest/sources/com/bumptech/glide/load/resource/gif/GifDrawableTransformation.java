@@ -9,7 +9,7 @@ import com.bumptech.glide.load.resource.bitmap.BitmapResource;
 import com.bumptech.glide.util.Preconditions;
 import java.security.MessageDigest;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GifDrawableTransformation implements Transformation<GifDrawable> {
     private final Transformation<Bitmap> wrapped;
 

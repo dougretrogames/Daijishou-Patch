@@ -93,12 +93,12 @@ import kotlin.jvm.internal.Ref;
 import kotlin.jvm.internal.Reflection;
 import kotlin.jvm.internal.StringCompanionObject;
 
-/* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0090\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010 \n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0018\u0018\u0000 ²\u00012\u00020\u0001:\u0002²\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0016\u0010\u008a\u0001\u001a\u00030\u008b\u00012\n\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u008d\u0001H\u0002J\t\u0010\u008e\u0001\u001a\u000200H\u0016J\u0016\u0010\u008f\u0001\u001a\u00030\u008b\u00012\n\u0010\u0090\u0001\u001a\u0005\u0018\u00010\u0091\u0001H\u0016J-\u0010\u0092\u0001\u001a\u0004\u0018\u00010K2\b\u0010\u0093\u0001\u001a\u00030\u0094\u00012\n\u0010\u0095\u0001\u001a\u0005\u0018\u00010\u0096\u00012\n\u0010\u0090\u0001\u001a\u0005\u0018\u00010\u0091\u0001H\u0016J%\u0010\u0097\u0001\u001a\u0002002\u0007\u0010\u0098\u0001\u001a\u00020\b2\u0007\u0010\u0099\u0001\u001a\u00020\b2\b\u0010\u009a\u0001\u001a\u00030\u009b\u0001H\u0016J\n\u0010\u009c\u0001\u001a\u00030\u008b\u0001H\u0016J\n\u0010\u009d\u0001\u001a\u00030\u008b\u0001H\u0016J\u001f\u0010\u009e\u0001\u001a\u00030\u008b\u00012\u0007\u0010\u009f\u0001\u001a\u00020K2\n\u0010\u0090\u0001\u001a\u0005\u0018\u00010\u0091\u0001H\u0016J\u0015\u0010 \u0001\u001a\u00030\u008b\u00012\t\u0010¡\u0001\u001a\u0004\u0018\u00010SH\u0002J\n\u0010¢\u0001\u001a\u00030\u008b\u0001H\u0002J\n\u0010£\u0001\u001a\u00030\u008b\u0001H\u0003J.\u0010¤\u0001\u001a\u00030\u008b\u00012\u0007\u0010¥\u0001\u001a\u00020V2\u0007\u0010¦\u0001\u001a\u00020V2\u0007\u0010§\u0001\u001a\u00020V2\u0007\u0010¨\u0001\u001a\u00020VH\u0003J\n\u0010©\u0001\u001a\u00030\u008b\u0001H\u0002J\u0019\u0010ª\u0001\u001a\u00030\u008b\u00012\r\u0010«\u0001\u001a\b\u0012\u0004\u0012\u00020S0XH\u0002J\n\u0010¬\u0001\u001a\u00030\u008b\u0001H\u0002J\n\u0010\u00ad\u0001\u001a\u00030\u008b\u0001H\u0002J\u0016\u0010®\u0001\u001a\u00030\u008b\u00012\n\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u008d\u0001H\u0002J,\u0010¯\u0001\u001a\u00030\u008b\u00012\n\u0010\u008c\u0001\u001a\u0005\u0018\u00010\u008d\u00012\t\b\u0002\u0010°\u0001\u001a\u0002002\t\b\u0002\u0010±\u0001\u001a\u000200H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010\u0007\u001a\u00020\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\t\u0010\n\"\u0004\b\u000b\u0010\fR\u001a\u0010\r\u001a\u00020\bX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u000e\u0010\n\"\u0004\b\u000f\u0010\fR\u000e\u0010\u0010\u001a\u00020\u0011X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0011X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0013\u001a\u00020\u0011X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0011X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0019\u001a\u00020\u001aX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001d\u001a\u00020\u001aX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u001aX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001f\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020!X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020!X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020&X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020(X\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010)\u001a\u00020!X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b*\u0010+\"\u0004\b,\u0010-R\u000e\u0010.\u001a\u00020!X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010/\u001a\u000200X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00101\u001a\u000200X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00102\u001a\u000200X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00103\u001a\u000200X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u00104\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00105\u001a\u000206X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00107\u001a\u000208X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00109\u001a\u00020:X\u0082.¢\u0006\u0002\n\u0000R\u001b\u0010;\u001a\u00020<8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b?\u0010@\u001a\u0004\b=\u0010>R\u001b\u0010A\u001a\u00020B8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bE\u0010@\u001a\u0004\bC\u0010DR\u000e\u0010F\u001a\u00020GX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010H\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010I\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010J\u001a\u00020KX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010L\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010M\u001a\u00020NX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010O\u001a\u00020PX\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010Q\u001a\b\u0012\u0004\u0012\u00020S0RX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010T\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010U\u001a\u00020VX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010W\u001a\b\u0012\u0004\u0012\u00020V0XX\u0082\u000e¢\u0006\u0002\n\u0000R\u0012\u0010Y\u001a\u0004\u0018\u00010\bX\u0082\u000e¢\u0006\u0004\n\u0002\u0010ZR\u000e\u0010[\u001a\u00020KX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\\\u001a\u00020]X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010^\u001a\u00020_X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010`\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010a\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010b\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010c\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010d\u001a\u000200X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010e\u001a\u00020&X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010f\u001a\u0004\u0018\u00010SX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010g\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010h\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u001c\u0010i\u001a\u0010\u0012\f\u0012\n l*\u0004\u0018\u00010k0k0jX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010m\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010n\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010o\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010p\u001a\u00020VX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010q\u001a\u00020!X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010r\u001a\u00020!X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010s\u001a\u00020!X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010t\u001a\u00020!X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010u\u001a\u00020vX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010w\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010x\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010y\u001a\b\u0012\u0004\u0012\u00020z0RX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010{\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010|\u001a\u00020\u001aX\u0082.¢\u0006\u0002\n\u0000R \u0010}\u001a\u0004\u0018\u00010\bX\u0086\u000e¢\u0006\u0012\n\u0002\u0010Z\u001a\u0004\b~\u0010\u007f\"\u0006\b\u0080\u0001\u0010\u0081\u0001R\"\u0010\u0082\u0001\u001a\u0004\u0018\u00010\bX\u0086\u000e¢\u0006\u0013\n\u0002\u0010Z\u001a\u0005\b\u0083\u0001\u0010\u007f\"\u0006\b\u0084\u0001\u0010\u0081\u0001R\u0010\u0010\u0085\u0001\u001a\u00030\u0086\u0001X\u0082.¢\u0006\u0002\n\u0000R\u000f\u0010\u0087\u0001\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000f\u0010\u0088\u0001\u001a\u00020\u0018X\u0082.¢\u0006\u0002\n\u0000R\u000f\u0010\u0089\u0001\u001a\u00020&X\u0082.¢\u0006\u0002\n\u0000¨\u0006³\u0001"}, d2 = {"Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionWallpaperViewNavFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/PlatformNavFragment;", "()V", "addSyncTreesButton", "Lcom/google/android/material/chip/Chip;", "chipGroup", "Lcom/google/android/material/chip/ChipGroup;", "colorOnPrimary", "", "getColorOnPrimary", "()I", "setColorOnPrimary", "(I)V", "colorPrimary", "getColorPrimary", "setColorPrimary", "defaultChipBackgroundColors", "Landroid/content/res/ColorStateList;", "defaultChipTextColors", "defaultDownloadIconColors", "defaultMonoChipIconColors", "defaultWallpaperDrawable", "Landroid/graphics/drawable/BitmapDrawable;", "description", "Landroid/widget/TextView;", "descriptionFirstString", "", "descriptionItemsCountFormatString", "descriptionPlatformIndexFormatString", "descriptionSecondString", "descriptionThirdString", "editButton", "fadeInAnimation", "Landroid/view/animation/Animation;", "fadeOutAnimation", "favoriteButton", "favoriteFormatString", "fullScreenGrad", "Lcom/google/android/material/imageview/ShapeableImageView;", "horizontalScrollView", "Landroid/widget/HorizontalScrollView;", "imageViewAnimationIn", "getImageViewAnimationIn", "()Landroid/view/animation/Animation;", "setImageViewAnimationIn", "(Landroid/view/animation/Animation;)V", "imageViewAnimationOut", "isRefreshingAndUpdateWallpaper", "", "isRefreshingCurrentPlatform", "isRefreshingCurrentPlatformStatistic", "isRefreshingSyncStatus", "libraryChip", "libraryCollectionWallpaperViewLayoutManager", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouLinearLayoutManager;", "libraryCollectionWallpaperViewRecyclerView", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;", "libraryCollectionWallpaperViewRecyclerViewAdapter", "Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionWallpaperViewRecyclerViewAdapter;", "libraryViewModel", "Lcom/magneticchen/daijishou/view_models/LibraryViewModel;", "getLibraryViewModel", "()Lcom/magneticchen/daijishou/view_models/LibraryViewModel;", "libraryViewModel$delegate", "Lkotlin/Lazy;", "model", "Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "getModel", "()Lcom/magneticchen/daijishou/view_models/DaijishouViewModel;", "model$delegate", "navController", "Landroidx/navigation/NavController;", "newFormatString", "newlyAddedButton", "nextView", "Landroid/view/View;", "noItemString", "platformCardLayout", "Lcom/magneticchen/daijishou/views/PlatformCardLayout;", "platformDownloadButton", "Lcom/google/android/material/button/MaterialButton;", "platformEntityList", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "platformFormatString", "platformId", "", "platformIdList", "", "previousSelectedPlatformIndex", "Ljava/lang/Integer;", "previousView", "progressBar", "Landroid/widget/ProgressBar;", "progressBarLayout", "Landroidx/constraintlayout/widget/ConstraintLayout;", "progressStatus", "randomButton", "recentFormatString", "recentPlayedButton", "refocusOnScrolledToTop", "secondWallpaper", "selectedPlatformEntity", "selectedPlatformIndex", "shareButton", "shareFileActivity", "Landroidx/activity/result/ActivityResultLauncher;", "Ljava/io/File;", "kotlin.jvm.PlatformType", "sharePlatformConfigString", "sharePlatformFavoriteItemsString", "shareString", "shortAnimationDuration", "slideInLeftAnimation", "slideInRightAnimation", "slideOutLeftAnimation", "slideOutRightAnimation", "smoothScroller", "Landroidx/recyclerview/widget/RecyclerView$SmoothScroller;", "syncButton", "syncString", "synchronizationOfPlatformList", "Lcom/magneticchen/daijishou/view_models/SynchronizationOfPlatform;", "syncingFormatString", "syncingString", "themeBackgroundColor", "getThemeBackgroundColor", "()Ljava/lang/Integer;", "setThemeBackgroundColor", "(Ljava/lang/Integer;)V", "themeTextColor", "getThemeTextColor", "setThemeTextColor", "title", "Landroid/widget/TextSwitcher;", "titleFirst", "titleSecond", "wallpaper", "imageViewAnimatedChange", "", "bitmap", "Landroid/graphics/Bitmap;", "onBackPressed", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onHotKeyPressed", "hotkeyCode", "keyCode", "keyEvent", "Landroid/view/KeyEvent;", "onKioskMode", "onNoneKioskMode", "onViewCreated", "view", "refreshAndUpdateWallpaper", "platformEntity", "refreshChipGroupNavigation", "refreshCurrentPlatform", "refreshCurrentPlatformStatistic", "platformItemCount", "recentPlayedCount", "favoriteCount", "newlyAddedCount", "refreshSyncStatus", "setPlatformList", "newPlatformEntityList", "switchNext", "switchPrevious", "updateLightDarkDecorations", "updateWallpaper", "autoThemeColor", "onlyUpdateColor", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNavFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     public static final int PLATFORM_LIBRARY_GRID_VIEW_MODE = 1;
     public static final int PLATFORM_LIBRARY_LIST_VIEW_MODE = 0;
@@ -132,10 +132,10 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
     private DaijishouRecyclerView libraryCollectionWallpaperViewRecyclerView;
     private LibraryCollectionWallpaperViewRecyclerViewAdapter libraryCollectionWallpaperViewRecyclerViewAdapter;
 
-    /* JADX INFO: renamed from: libraryViewModel$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: libraryViewModel$delegate, reason: from kotlin metadata */
     private final Lazy libraryViewModel;
 
-    /* JADX INFO: renamed from: model$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: model$delegate, reason: from kotlin metadata */
     private final Lazy model;
     private NavController navController;
     private String newFormatString;
@@ -199,7 +199,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         this.synchronizationOfPlatformList = new ArrayList();
     }
 
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u000b\u001a\u00020\fR\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0086T¢\u0006\u0002\n\u0000R\u0016\u0010\b\u001a\n \n*\u0004\u0018\u00010\t0\tX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\r"}, d2 = {"Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionWallpaperViewNavFragment$Companion;", "", "()V", "PLATFORM_LIBRARY_GRID_VIEW_MODE", "", "PLATFORM_LIBRARY_LIST_VIEW_MODE", "RECYCLER_VIEW_SCROLL_OFFSET", "", "typeface", "Landroid/graphics/Typeface;", "kotlin.jvm.PlatformType", "newInstance", "Lcom/magneticchen/daijishou/nav_fragments/LibraryCollectionWallpaperViewNavFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -218,7 +218,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         typeface = Build.VERSION.SDK_INT >= 28 ? Typeface.create(null, Constants.semiBolderWeight, false) : Typeface.defaultFromStyle(1);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final LibraryViewModel getLibraryViewModel() {
         return (LibraryViewModel) this.libraryViewModel.getValue();
     }
@@ -392,7 +392,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void switchPrevious() {
         LibraryCollectionWallpaperViewRecyclerViewAdapter libraryCollectionWallpaperViewRecyclerViewAdapter = this.libraryCollectionWallpaperViewRecyclerViewAdapter;
         Chip chip = null;
@@ -447,7 +447,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         chip.requestFocus();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void switchNext() {
         LibraryCollectionWallpaperViewRecyclerViewAdapter libraryCollectionWallpaperViewRecyclerViewAdapter = this.libraryCollectionWallpaperViewRecyclerViewAdapter;
         Chip chip = null;
@@ -499,7 +499,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         chip.requestFocus();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void refreshAndUpdateWallpaper(PlatformEntity platformEntity) {
         LibraryCollectionWallpaperViewNavFragment libraryCollectionWallpaperViewNavFragment;
         if (this.isRefreshingAndUpdateWallpaper) {
@@ -525,8 +525,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         libraryCollectionWallpaperViewNavFragment.isRefreshingAndUpdateWallpaper = false;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$refreshAndUpdateWallpaper$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$refreshAndUpdateWallpaper$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "bitmap", "Landroid/graphics/Bitmap;", "<anonymous parameter 1>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02471 extends Lambda<Unit> implements Function2<Bitmap, Boolean, Unit> {
         C02471() {
@@ -546,8 +546,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$refreshAndUpdateWallpaper$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$refreshAndUpdateWallpaper$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "e", "Ljava/lang/Exception;", "Lkotlin/Exception;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02482 extends Lambda<Unit> implements Function1<Exception, Unit> {
         C02482() {
@@ -560,17 +560,17 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Exception e) {
             Intrinsics.checkNotNullParameter(e, "e");
             LibraryCollectionWallpaperViewNavFragment.this.getLogger().warn(LibraryCollectionWallpaperViewNavFragment.this, ExceptionsKt.stackTraceToString(e));
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Code duplicated, block: B:65:0x0169  */
-    /* JADX WARN: Code duplicated, block: B:67:0x016d  */
-    /* JADX WARN: Code duplicated, block: B:70:0x0178  */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Code duplicated, block: B:65:0x0169  */
+    /* WARN: Code duplicated, block: B:67:0x016d  */
+    /* WARN: Code duplicated, block: B:70:0x0178  */
     public final void refreshCurrentPlatform() {
         TextSwitcher textSwitcher;
         TextSwitcher textSwitcher2;
@@ -754,8 +754,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         this.isRefreshingCurrentPlatform = false;
     }
 
-    /* JADX WARN: Code duplicated, block: B:24:0x0076  */
-    /* JADX WARN: Code duplicated, block: B:26:0x007a  */
+    /* WARN: Code duplicated, block: B:24:0x0076  */
+    /* WARN: Code duplicated, block: B:26:0x007a  */
     private final void refreshChipGroupNavigation() {
         Chip chip;
         ArrayList arrayList = new ArrayList();
@@ -851,7 +851,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         chipGroup2.requestLayout();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void refreshCurrentPlatformStatistic(long platformItemCount, long recentPlayedCount, long favoriteCount, long newlyAddedCount) {
         if (this.isRefreshingCurrentPlatformStatistic) {
             return;
@@ -974,7 +974,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         this.isRefreshingCurrentPlatformStatistic = false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void refreshSyncStatus() {
         String str;
         String str2;
@@ -1186,8 +1186,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         getImageViewAnimationIn().setDuration(60L);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreate$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreate$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0011\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\b\u0010\u0002\u001a\u00020\u0003H\u0014¨\u0006\u0004"}, d2 = {"com/magneticchen/daijishou/nav_fragments/LibraryCollectionWallpaperViewNavFragment$onCreate$1", "Landroidx/recyclerview/widget/LinearSmoothScroller;", "getHorizontalSnapPreference", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class C02461 extends LinearSmoothScroller {
         @Override // androidx.recyclerview.widget.LinearSmoothScroller
@@ -1631,7 +1631,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         return viewInflate;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$7(LibraryCollectionWallpaperViewNavFragment this$0, View view, int i, int i2, int i3, int i4) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (this$0.refocusOnScrolledToTop) {
@@ -1654,7 +1654,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$8(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1667,7 +1667,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$9(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1680,7 +1680,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$10(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1693,7 +1693,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$11(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1706,7 +1706,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$12(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1719,7 +1719,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$13(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1732,7 +1732,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$14(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1745,7 +1745,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$15(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1758,7 +1758,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$16(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -1771,20 +1771,20 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$17(LibraryCollectionWallpaperViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.switchNext();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$18(LibraryCollectionWallpaperViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.switchPrevious();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$13, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$13, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass13 extends Lambda<Unit> implements Function0<Unit> {
         AnonymousClass13() {
@@ -1797,14 +1797,14 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             LibraryCollectionWallpaperViewNavFragment.this.switchNext();
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$14, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$14, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass14 extends Lambda<Unit> implements Function0<Unit> {
         AnonymousClass14() {
@@ -1817,26 +1817,26 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             LibraryCollectionWallpaperViewNavFragment.this.switchPrevious();
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$19(LibraryCollectionWallpaperViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         DownloadPlatformsDialogFragment.INSTANCE.newInstance().show(this$0.getChildFragmentManager(), DownloadPlatformsDialogFragment.class.getName());
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$16, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$16, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass16 extends Lambda<Unit> implements Function0<Unit> {
         final /* synthetic */ SharedPreferences $platformLibrarySharedPreferences;
         final /* synthetic */ LibraryCollectionWallpaperViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass16(SharedPreferences sharedPreferences, LibraryCollectionWallpaperViewNavFragment libraryCollectionWallpaperViewNavFragment) {
             super(0);
             this.$platformLibrarySharedPreferences = sharedPreferences;
@@ -1849,7 +1849,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             int i = this.$platformLibrarySharedPreferences.getInt("view_mode", 0);
             LibraryCollectionWallpaperViewNavFragment libraryCollectionWallpaperViewNavFragment = this.this$0;
@@ -1895,7 +1895,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$21(SharedPreferences platformLibrarySharedPreferences, LibraryCollectionWallpaperViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(platformLibrarySharedPreferences, "$platformLibrarySharedPreferences");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
@@ -1941,7 +1941,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         navController.navigate(R.id.libraryCollectionWallpaperViewToPlatformLibraryGridViewAction);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$22(LibraryCollectionWallpaperViewNavFragment this$0, Context context, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(context, "$context");
@@ -1958,7 +1958,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         PlayableItemDetailDialogFragment.INSTANCE.newInstance(playableItemRandomlyByAttachedPlatformIdAndVisibilityStatically$default).show(this$0.getParentFragmentManager(), PlayableItemDetailDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$23(LibraryCollectionWallpaperViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         DaijishouSynchronizationModel daijishouSynchronization = this$0.getDaijishouSynchronization();
@@ -1967,28 +1967,28 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         daijishouSynchronization.scheduleSynchronizationOfPlatformByPlatformId((AppCompatActivity) fragmentActivityRequireActivity, this$0.getLibraryViewModel().getSelectedPlatformId());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$24(AppCompatActivity activity, LibraryCollectionWallpaperViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(activity, "$activity");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         ((MainActivity) activity).navigatePage("library", new LibraryPageSelectedParameters(2, this$0.platformId));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$25(AppCompatActivity activity, LibraryCollectionWallpaperViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(activity, "$activity");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         ((MainActivity) activity).navigatePage("library", new LibraryPageSelectedParameters(1, this$0.platformId));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$26(AppCompatActivity activity, LibraryCollectionWallpaperViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(activity, "$activity");
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         ((MainActivity) activity).navigatePage("library", new LibraryPageSelectedParameters(3, this$0.platformId));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$28(LibraryCollectionWallpaperViewNavFragment this$0, Context context, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(context, "$context");
@@ -2019,7 +2019,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$29(LibraryCollectionWallpaperViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         PickPlatformSyncTreeUrDialogFragment.Companion companion = PickPlatformSyncTreeUrDialogFragment.INSTANCE;
@@ -2028,14 +2028,14 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         companion.newInstance(platformEntity).show(this$0.getChildFragmentManager(), PickPlatformSyncTreeUrDialogFragment.class.getName());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$30(LibraryCollectionWallpaperViewNavFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         EditPlatformDialogFragment.INSTANCE.newInstance(this$0.getDaijishouLibrary().getPlatformByIdStatically(this$0.platformId)).show(this$0.getChildFragmentManager(), "edit_platform");
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$26, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$26, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass26 extends Lambda<Unit> implements Function4<View, Integer, Long, PlatformEntity, Unit> {
         AnonymousClass26() {
@@ -2056,14 +2056,14 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$27, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$27, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "<anonymous parameter 3>", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass27 extends Lambda<Unit> implements Function4<View, Integer, Long, PlatformEntity, Unit> {
         final /* synthetic */ SharedPreferences $platformLibrarySharedPreferences;
         final /* synthetic */ LibraryCollectionWallpaperViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass27(SharedPreferences sharedPreferences, LibraryCollectionWallpaperViewNavFragment libraryCollectionWallpaperViewNavFragment) {
             super(4);
             this.$platformLibrarySharedPreferences = sharedPreferences;
@@ -2105,8 +2105,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$28, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$28, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "newPlatformId", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Long;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass28 extends Lambda<Unit> implements Function1<Long, Unit> {
         AnonymousClass28() {
@@ -2119,7 +2119,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Long l) {
             LibraryCollectionWallpaperViewNavFragment.this.getLogger().debug(LibraryCollectionWallpaperViewNavFragment.this, "newPlatformId: " + l);
             LibraryCollectionWallpaperViewNavFragment libraryCollectionWallpaperViewNavFragment = LibraryCollectionWallpaperViewNavFragment.this;
@@ -2132,8 +2132,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$29, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$29, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\t\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass29 extends Lambda<Unit> implements Function1<List<? extends Long>, Unit> {
         AnonymousClass29() {
@@ -2146,7 +2146,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<Long> list) {
             Intrinsics.checkNotNull(list);
             if (list.isEmpty()) {
@@ -2156,14 +2156,14 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$30, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$30, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass30 extends Lambda<Unit> implements Function1<List<? extends PlatformEntity>, Unit> {
         final /* synthetic */ Ref.BooleanRef $firstTime;
         final /* synthetic */ LibraryCollectionWallpaperViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass30(Ref.BooleanRef booleanRef, LibraryCollectionWallpaperViewNavFragment libraryCollectionWallpaperViewNavFragment) {
             super(1);
             this.$firstTime = booleanRef;
@@ -2176,7 +2176,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<PlatformEntity> list) {
             if (this.$firstTime.element) {
                 this.$firstTime.element = false;
@@ -2188,8 +2188,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$31, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$31, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass31 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         AnonymousClass31() {
@@ -2202,7 +2202,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             if (LibraryCollectionWallpaperViewNavFragment.this.selectedPlatformEntity != null) {
                 Intrinsics.checkNotNull(bool);
@@ -2229,8 +2229,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$32, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$32, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass32 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         AnonymousClass32() {
@@ -2243,7 +2243,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             TextSwitcher textSwitcher = LibraryCollectionWallpaperViewNavFragment.this.title;
             if (textSwitcher == null) {
@@ -2255,8 +2255,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$33, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$33, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass33 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         AnonymousClass33() {
@@ -2269,7 +2269,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             TextView textView = LibraryCollectionWallpaperViewNavFragment.this.description;
             if (textView == null) {
@@ -2281,8 +2281,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$34, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$34, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass34 extends Lambda<Unit> implements Function1<String, Unit> {
         AnonymousClass34() {
@@ -2295,7 +2295,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(String str) {
             NavController navController = null;
             if (Intrinsics.areEqual(str, "1")) {
@@ -2352,8 +2352,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$35, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$35, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass35 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         AnonymousClass35() {
@@ -2366,7 +2366,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             Chip chip = LibraryCollectionWallpaperViewNavFragment.this.shareButton;
             if (chip == null) {
@@ -2377,8 +2377,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$36, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$36, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "Lcom/magneticchen/daijishou/view_models/SynchronizationOfPlatform;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass36 extends Lambda<Unit> implements Function1<List<SynchronizationOfPlatform>, Unit> {
         AnonymousClass36() {
@@ -2391,7 +2391,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<SynchronizationOfPlatform> list) {
             LibraryCollectionWallpaperViewNavFragment libraryCollectionWallpaperViewNavFragment = LibraryCollectionWallpaperViewNavFragment.this;
             Intrinsics.checkNotNull(list);
@@ -2400,8 +2400,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$37, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$37, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "id", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Long;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass37 extends Lambda<Unit> implements Function1<Long, Unit> {
         AnonymousClass37() {
@@ -2414,7 +2414,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Long l) {
             long j = LibraryCollectionWallpaperViewNavFragment.this.platformId;
             if (l != null && l.longValue() == j) {
@@ -2423,14 +2423,14 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$38, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$38, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass38 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ Ref.BooleanRef $useAutoPlatformThemeColor;
         final /* synthetic */ LibraryCollectionWallpaperViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass38(Ref.BooleanRef booleanRef, LibraryCollectionWallpaperViewNavFragment libraryCollectionWallpaperViewNavFragment) {
             super(1);
             this.$useAutoPlatformThemeColor = booleanRef;
@@ -2443,7 +2443,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             if (Intrinsics.areEqual(bool, Boolean.valueOf(this.$useAutoPlatformThemeColor.element))) {
                 return;
@@ -2456,14 +2456,14 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$39, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$onCreateView$39, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass39 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         final /* synthetic */ Ref.BooleanRef $previousEnforcePlatformCardAspectRatio;
         final /* synthetic */ LibraryCollectionWallpaperViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass39(Ref.BooleanRef booleanRef, LibraryCollectionWallpaperViewNavFragment libraryCollectionWallpaperViewNavFragment) {
             super(1);
             this.$previousEnforcePlatformCardAspectRatio = booleanRef;
@@ -2476,7 +2476,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             if (!Intrinsics.areEqual(Boolean.valueOf(this.$previousEnforcePlatformCardAspectRatio.element), bool)) {
                 this.this$0.requireView().invalidate();
@@ -2630,7 +2630,7 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         textView.setShadowLayer(libraryCollectionWallpaperViewNavFragment.getDpToPxConverter().convert(2.0f), 0.0f, libraryCollectionWallpaperViewNavFragment.getDpToPxConverter().convert(1.0f), colorStateList2.getDefaultColor());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void setPlatformList(List<PlatformEntity> newPlatformEntityList) {
         this.platformEntityList.clear();
         this.platformEntityList.addAll(newPlatformEntityList);
@@ -2940,8 +2940,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         updateLightDarkDecorations(bitmap);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$imageViewAnimatedChange$1, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$imageViewAnimatedChange$1, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0019\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0007\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/nav_fragments/LibraryCollectionWallpaperViewNavFragment$imageViewAnimatedChange$1", "Landroid/view/animation/Animation$AnimationListener;", "onAnimationEnd", "", "animation", "Landroid/view/animation/Animation;", "onAnimationRepeat", "onAnimationStart", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class AnonymousClass1 implements Animation.AnimationListener {
         @Override // android.view.animation.Animation.AnimationListener
@@ -3032,8 +3032,8 @@ public final class LibraryCollectionWallpaperViewNavFragment extends PlatformNav
         shapeableImageView.startAnimation(getImageViewAnimationIn());
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$imageViewAnimatedChange$2, reason: invalid class name */
-    /* JADX INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.LibraryCollectionWallpaperViewNavFragment$imageViewAnimatedChange$2, reason: invalid class name */
+    /* INFO: compiled from: LibraryCollectionWallpaperViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\u0019\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0006\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016J\u0010\u0010\u0007\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/nav_fragments/LibraryCollectionWallpaperViewNavFragment$imageViewAnimatedChange$2", "Landroid/view/animation/Animation$AnimationListener;", "onAnimationEnd", "", "animation", "Landroid/view/animation/Animation;", "onAnimationRepeat", "onAnimationStart", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass2 implements Animation.AnimationListener {
         @Override // android.view.animation.Animation.AnimationListener

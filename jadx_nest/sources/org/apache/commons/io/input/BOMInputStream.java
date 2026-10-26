@@ -11,7 +11,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.function.IOIntConsumer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BOMInputStream extends ProxyInputStream {
     private static final Comparator<ByteOrderMark> ByteOrderMarkLengthComparator = Comparator.comparing(new BOMInputStream$$ExternalSyntheticLambda1()).reversed();
     private final List<ByteOrderMark> bomList;
@@ -143,7 +143,7 @@ public class BOMInputStream extends ProxyInputStream {
         this.in.mark(i);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean matches(ByteOrderMark byteOrderMark) {
         return byteOrderMark.matches(this.firstBytes);
     }

@@ -1,6 +1,6 @@
 package androidx.webkit;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PrefetchNetworkException extends PrefetchException {
     public static final int NO_HTTP_RESPONSE_STATUS_CODE = 0;
     public final int httpResponseStatusCode;

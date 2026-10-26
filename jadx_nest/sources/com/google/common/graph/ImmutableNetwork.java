@@ -9,11 +9,11 @@ import com.google.errorprone.annotations.Immutable;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable(containerOf = {"N", ExifInterface.LONGITUDE_EAST})
 @ElementTypesAreNonnullByDefault
 public final class ImmutableNetwork<N, E> extends StandardNetwork<N, E> {
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardNetwork, com.google.common.graph.Network
     public /* bridge */ /* synthetic */ Set adjacentNodes(Object node) {
         return super.adjacentNodes(node);
@@ -39,25 +39,25 @@ public final class ImmutableNetwork<N, E> extends StandardNetwork<N, E> {
         return super.edges();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardNetwork, com.google.common.graph.AbstractNetwork, com.google.common.graph.Network
     public /* bridge */ /* synthetic */ Set edgesConnecting(Object nodeU, Object nodeV) {
         return super.edgesConnecting(nodeU, nodeV);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardNetwork, com.google.common.graph.Network
     public /* bridge */ /* synthetic */ Set inEdges(Object node) {
         return super.inEdges(node);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardNetwork, com.google.common.graph.Network
     public /* bridge */ /* synthetic */ Set incidentEdges(Object node) {
         return super.incidentEdges(node);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardNetwork, com.google.common.graph.Network
     public /* bridge */ /* synthetic */ EndpointPair incidentNodes(Object edge) {
         return super.incidentNodes(edge);
@@ -78,19 +78,19 @@ public final class ImmutableNetwork<N, E> extends StandardNetwork<N, E> {
         return super.nodes();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardNetwork, com.google.common.graph.Network
     public /* bridge */ /* synthetic */ Set outEdges(Object node) {
         return super.outEdges(node);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardNetwork, com.google.common.graph.Network, com.google.common.graph.PredecessorsFunction, com.google.common.graph.Graph
     public /* bridge */ /* synthetic */ Set predecessors(Object node) {
         return super.predecessors(node);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardNetwork, com.google.common.graph.Network, com.google.common.graph.SuccessorsFunction, com.google.common.graph.Graph
     public /* bridge */ /* synthetic */ Set successors(Object node) {
         return super.successors(node);

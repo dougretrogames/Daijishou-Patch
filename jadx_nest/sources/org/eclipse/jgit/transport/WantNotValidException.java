@@ -5,7 +5,7 @@ import org.eclipse.jgit.errors.PackProtocolException;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.AnyObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class WantNotValidException extends PackProtocolException {
     private static final long serialVersionUID = 1;
 

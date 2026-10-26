@@ -10,7 +10,7 @@ import com.bumptech.glide.load.data.StreamAssetPathFetcher;
 import com.bumptech.glide.signature.ObjectKey;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AssetUriLoader<Data> implements ModelLoader<Uri, Data> {
     private static final String ASSET_PATH_SEGMENT = "android_asset";
     private static final String ASSET_PREFIX = "file:///android_asset/";

@@ -11,7 +11,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class UndirectedGraphConnections<N, V> implements GraphConnections<N, V> {
     private final Map<N, V> adjacentNodeValues;
@@ -20,7 +20,7 @@ final class UndirectedGraphConnections<N, V> implements GraphConnections<N, V> {
         this.adjacentNodeValues = (Map) Preconditions.checkNotNull(adjacentNodeValues);
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.UndirectedGraphConnections$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.UndirectedGraphConnections$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$common$graph$ElementOrder$Type;
 

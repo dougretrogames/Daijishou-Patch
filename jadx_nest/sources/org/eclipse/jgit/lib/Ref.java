@@ -2,7 +2,7 @@ package org.eclipse.jgit.lib;
 
 import org.eclipse.jgit.annotations.Nullable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface Ref {
     public static final long UNDEFINED_UPDATE_INDEX = -1;
 
@@ -34,7 +34,7 @@ public interface Ref {
         private final boolean loose;
         private final boolean packed;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Storage[] valuesCustom() {
             Storage[] storageArrValuesCustom = values();
             int length = storageArrValuesCustom.length;

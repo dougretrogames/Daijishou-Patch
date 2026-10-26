@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.parser;
 
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class CLObject extends CLContainer implements Iterable<CLKey> {
     public CLObject(char[] cArr) {
         super(cArr);
@@ -69,7 +69,7 @@ public class CLObject extends CLContainer implements Iterable<CLKey> {
             return this.mIndex < this.mObject.size();
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.Iterator
         public CLKey next() {
             CLKey cLKey = (CLKey) this.mObject.mElements.get(this.mIndex);
@@ -79,7 +79,7 @@ public class CLObject extends CLContainer implements Iterable<CLKey> {
     }
 
     @Override // androidx.constraintlayout.core.parser.CLContainer, androidx.constraintlayout.core.parser.CLElement
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public CLObject mo3141clone() {
         return (CLObject) super.mo3141clone();
     }

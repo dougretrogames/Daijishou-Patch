@@ -2,7 +2,7 @@ package com.google.api.client.util;
 
 import com.google.common.io.BaseEncoding;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class Base64 {
     private static final BaseEncoding BASE64_DECODER = BaseEncoding.base64().withSeparator("\n", 64);

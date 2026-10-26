@@ -8,7 +8,7 @@ import com.bumptech.glide.load.Options;
 import java.io.File;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class StringLoader<Data> implements ModelLoader<String, Data> {
     private final ModelLoader<Uri, Data> uriLoader;
 

@@ -22,19 +22,19 @@ import kotlin.jvm.functions.Function0;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: StaticClientCommandDefinition.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: StaticClientCommandDefinition.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\b\u0006\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b&\u0018\u00002\u00020\u0001B1\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\"\u0010\u0004\u001a\u001e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u00070\u0005j\u000e\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0007`\b¢\u0006\u0002\u0010\tJ\u001e\u0010\u0019\u001a\u00020\u001a2\u0006\u0010\u001b\u001a\u00020\u001c2\u0006\u0010\u001d\u001a\u00020\u001eH\u0096@¢\u0006\u0002\u0010\u001fR\u0018\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00060\u000bX¦\u0004¢\u0006\u0006\u001a\u0004\b\f\u0010\rR\u0012\u0010\u000e\u001a\u00020\u0006X¦\u0004¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0010R\u001b\u0010\u0011\u001a\u00020\u00128VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u0014\u0010\u0015\u001a\u0004\b\u0011\u0010\u0013R!\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00070\u000b8FX\u0086\u0084\u0002¢\u0006\f\n\u0004\b\u0018\u0010\u0015\u001a\u0004\b\u0017\u0010\r¨\u0006 "}, d2 = {"Lcom/magneticchen/daijishou/daijishou_debug_service/passive_protocol/deprecated/StaticClientCommandDefinition;", "Lcom/magneticchen/daijishou/daijishou_debug_service/passive_protocol/deprecated/ClientCommandDefinition;", "application", "Lcom/magneticchen/daijishou/DaijishouApplication;", "operationCodeToInstanceHashMap", "Ljava/util/HashMap;", "", "Lcom/magneticchen/daijishou/daijishou_debug_service/passive_protocol/ClientOperation;", "Lkotlin/collections/HashMap;", "(Lcom/magneticchen/daijishou/DaijishouApplication;Ljava/util/HashMap;)V", "definedOperations", "", "getDefinedOperations", "()Ljava/util/List;", "headerByteCode", "getHeaderByteCode", "()B", "isMainActivityRequired", "", "()Z", "isMainActivityRequired$delegate", "Lkotlin/Lazy;", "operationInstances", "getOperationInstances", "operationInstances$delegate", "handleDataStreams", "", "dataInputStream", "Ljava/io/DataInputStream;", "dataOutputStream", "Ljava/io/DataOutputStream;", "(Ljava/io/DataInputStream;Ljava/io/DataOutputStream;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public abstract class StaticClientCommandDefinition extends ClientCommandDefinition {
 
-    /* JADX INFO: renamed from: isMainActivityRequired$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: isMainActivityRequired$delegate, reason: from kotlin metadata */
     private final Lazy isMainActivityRequired;
 
-    /* JADX INFO: renamed from: operationInstances$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: operationInstances$delegate, reason: from kotlin metadata */
     private final Lazy operationInstances;
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.deprecated.StaticClientCommandDefinition$handleDataStreams$1, reason: invalid class name */
-    /* JADX INFO: compiled from: StaticClientCommandDefinition.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.deprecated.StaticClientCommandDefinition$handleDataStreams$1, reason: invalid class name */
+    /* INFO: compiled from: StaticClientCommandDefinition.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.deprecated.StaticClientCommandDefinition", f = "StaticClientCommandDefinition.kt", i = {0, 0}, l = {51}, m = "handleDataStreams$suspendImpl", n = {"dataInputStream", "dataOutputStream"}, s = {"L$0", "L$1"})
     final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -69,7 +69,7 @@ public abstract class StaticClientCommandDefinition extends ClientCommandDefinit
         }
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public StaticClientCommandDefinition(DaijishouApplication application, HashMap<Byte, ClientOperation> operationCodeToInstanceHashMap) {
         super(application, operationCodeToInstanceHashMap);
         Intrinsics.checkNotNullParameter(application, "application");
@@ -78,15 +78,15 @@ public abstract class StaticClientCommandDefinition extends ClientCommandDefinit
         this.operationInstances = LazyKt.lazy(new StaticClientCommandDefinition$operationInstances$2(this, operationCodeToInstanceHashMap));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.deprecated.StaticClientCommandDefinition$isMainActivityRequired$2, reason: invalid class name */
-    /* JADX INFO: compiled from: StaticClientCommandDefinition.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_debug_service.passive_protocol.deprecated.StaticClientCommandDefinition$isMainActivityRequired$2, reason: invalid class name */
+    /* INFO: compiled from: StaticClientCommandDefinition.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "()Ljava/lang/Boolean;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass2 extends Lambda<Boolean> implements Function0<Boolean> {
         AnonymousClass2() {
             super(0);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // kotlin.jvm.functions.Function0
         public final Boolean invoke() {
             List<ClientOperation> operationInstances = StaticClientCommandDefinition.this.getOperationInstances();
@@ -111,7 +111,7 @@ public abstract class StaticClientCommandDefinition extends ClientCommandDefinit
         return (List) this.operationInstances.getValue();
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     static /* synthetic */ Object handleDataStreams$suspendImpl(StaticClientCommandDefinition staticClientCommandDefinition, DataInputStream dataInputStream, DataOutputStream dataOutputStream, Continuation<?> continuation) throws Throwable {
         AnonymousClass1 anonymousClass1;
         Iterator it;

@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationHandler;
 import java.util.concurrent.Executor;
 import org.chromium.support_lib_boundary.WebViewRendererClientBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebViewRenderProcessClientAdapter implements WebViewRendererClientBoundaryInterface {
     private static final String[] sSupportedFeatures = {"WEB_VIEW_RENDERER_CLIENT_BASIC_USAGE"};
     private final Executor mExecutor;

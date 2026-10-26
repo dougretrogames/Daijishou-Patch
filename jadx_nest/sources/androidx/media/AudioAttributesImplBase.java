@@ -3,7 +3,7 @@ package androidx.media;
 import android.os.Bundle;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class AudioAttributesImplBase implements AudioAttributesImpl {
     int mContentType;
     int mFlags;

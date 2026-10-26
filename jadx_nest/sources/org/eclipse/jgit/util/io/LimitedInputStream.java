@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class LimitedInputStream extends FilterInputStream {
     private long left;
     protected final long limit;

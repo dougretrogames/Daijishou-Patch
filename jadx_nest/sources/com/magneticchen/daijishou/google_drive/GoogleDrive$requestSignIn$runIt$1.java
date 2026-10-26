@@ -5,8 +5,8 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 
-/* JADX INFO: compiled from: GoogleDrive.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: GoogleDrive.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.google_drive.GoogleDrive", f = "GoogleDrive.kt", i = {0, 1, 1}, l = {150, 543}, m = "requestSignIn$runIt", n = {"this$0", "this$0", "$this$withLock_u24default$iv"}, s = {"L$0", "L$0", "L$1"})
 final class GoogleDrive$requestSignIn$runIt$1 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {

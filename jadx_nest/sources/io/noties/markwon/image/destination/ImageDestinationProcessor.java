@@ -1,6 +1,6 @@
 package io.noties.markwon.image.destination;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class ImageDestinationProcessor {
     public abstract String process(String str);
 

@@ -5,8 +5,8 @@ import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final class Batch extends BasePendingResult<BatchResult> {
     private int zae;
     private boolean zaf;
@@ -14,7 +14,7 @@ public final class Batch extends BasePendingResult<BatchResult> {
     private final PendingResult[] zah;
     private final Object zai;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static final class Builder {
         private final List zaa = new ArrayList();
         private final GoogleApiClient zab;

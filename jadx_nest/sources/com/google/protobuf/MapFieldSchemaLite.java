@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 class MapFieldSchemaLite implements MapFieldSchema {
     MapFieldSchemaLite() {

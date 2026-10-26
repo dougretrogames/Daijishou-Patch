@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.daijishou_widget.widgets.pin_and_play;
 import android.net.Uri;
 import androidx.activity.result.ActivityResultCallback;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class PinAndPlayWidgetFaceFragment$$ExternalSyntheticLambda0 implements ActivityResultCallback {
     public final /* synthetic */ PinAndPlayWidgetFaceFragment f$0;
 

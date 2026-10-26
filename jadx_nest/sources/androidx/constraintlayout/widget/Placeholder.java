@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import androidx.constraintlayout.core.widgets.ConstraintWidget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Placeholder extends View {
     private View mContent;
     private int mContentId;

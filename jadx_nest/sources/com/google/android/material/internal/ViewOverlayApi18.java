@@ -4,7 +4,7 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.ViewOverlay;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ViewOverlayApi18 implements ViewOverlayImpl {
     private final ViewOverlay viewOverlay;
 

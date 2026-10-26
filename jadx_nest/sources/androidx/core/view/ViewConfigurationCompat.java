@@ -13,7 +13,7 @@ import androidx.core.util.Supplier;
 import java.lang.reflect.Method;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ViewConfigurationCompat {
     private static final int NO_FLING_MAX_VELOCITY = Integer.MIN_VALUE;
     private static final int NO_FLING_MIN_VELOCITY = Integer.MAX_VALUE;

@@ -6,14 +6,14 @@ import android.animation.ValueAnimator;
 import android.util.StateSet;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class StateListAnimator {
     private final ArrayList<Tuple> tuples = new ArrayList<>();
     private Tuple lastMatch = null;
     ValueAnimator runningAnimator = null;
     private final Animator.AnimatorListener animationListener = new AnonymousClass1();
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.StateListAnimator$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.StateListAnimator$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }

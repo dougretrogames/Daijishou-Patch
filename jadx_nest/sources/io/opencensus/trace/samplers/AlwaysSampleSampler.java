@@ -8,7 +8,7 @@ import io.opencensus.trace.TraceId;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AlwaysSampleSampler extends Sampler {
     @Override // io.opencensus.trace.Sampler
     public boolean shouldSample(@Nullable SpanContext spanContext, @Nullable Boolean bool, TraceId traceId, SpanId spanId, String str, List<Span> list) {

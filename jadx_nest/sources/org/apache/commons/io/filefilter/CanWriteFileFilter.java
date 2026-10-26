@@ -7,7 +7,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.attribute.BasicFileAttributes;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CanWriteFileFilter extends AbstractFileFilter implements Serializable {
     public static final IOFileFilter CANNOT_WRITE;
     public static final IOFileFilter CAN_WRITE;

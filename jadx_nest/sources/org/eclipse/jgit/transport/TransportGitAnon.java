@@ -19,7 +19,7 @@ import org.eclipse.jgit.errors.TransportException;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class TransportGitAnon extends TcpTransport implements PackTransport {
     static final int GIT_PORT = 9418;
     static final TransportProtocol PROTO_GIT = new AnonymousClass1();
@@ -28,7 +28,7 @@ class TransportGitAnon extends TcpTransport implements PackTransport {
     public void close() {
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.TransportGitAnon$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.TransportGitAnon$1, reason: invalid class name */
     class AnonymousClass1 extends TransportProtocol {
         @Override // org.eclipse.jgit.transport.TransportProtocol
         public int getDefaultPort() {

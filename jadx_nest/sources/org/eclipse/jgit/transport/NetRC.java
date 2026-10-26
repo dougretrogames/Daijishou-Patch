@@ -16,7 +16,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.eclipse.jgit.util.FS;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NetRC {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$transport$NetRC$State = null;
     static final String DEFAULT_ENTRY = "default";
@@ -35,7 +35,7 @@ public class NetRC {
         ACCOUNT,
         MACDEF;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static State[] valuesCustom() {
             State[] stateArrValuesCustom = values();
             int length = stateArrValuesCustom.length;
@@ -96,7 +96,7 @@ public class NetRC {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.NetRC$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.NetRC$1, reason: invalid class name */
     class AnonymousClass1 extends TreeMap<String, State> {
         private static final long serialVersionUID = -4285910831814853334L;
 

@@ -6,7 +6,7 @@ import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.function.IOBiConsumer;
 import org.apache.commons.io.function.IOIntConsumer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BoundedInputStream extends ProxyInputStream {
     private long count;
     private long mark;

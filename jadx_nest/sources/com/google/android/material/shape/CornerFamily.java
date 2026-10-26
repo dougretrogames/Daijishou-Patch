@@ -3,7 +3,7 @@ package com.google.android.material.shape;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Retention(RetentionPolicy.SOURCE)
 public @interface CornerFamily {
     public static final int CUT = 1;

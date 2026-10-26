@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class ContextHandleUtils {
     private static final Logger LOGGER = Logger.getLogger(ContextHandleUtils.class.getName());
     private static final ContextManager CONTEXT_MANAGER = loadContextManager(ContextManager.class.getClassLoader());

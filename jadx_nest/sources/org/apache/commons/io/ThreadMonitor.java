@@ -2,7 +2,7 @@ package org.apache.commons.io;
 
 import java.time.Duration;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class ThreadMonitor implements Runnable {
     private final Thread thread;
     private final Duration timeout;

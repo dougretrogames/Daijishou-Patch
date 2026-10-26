@@ -9,7 +9,7 @@ import java.util.Map;
 import java.util.WeakHashMap;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Enums {
     private static final Map<Class<? extends Enum<?>>, Map<String, WeakReference<? extends Enum<?>>>> enumConstantCache = new WeakHashMap();
@@ -64,13 +64,13 @@ public final class Enums {
             this.enumClass = (Class) Preconditions.checkNotNull(enumClass);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.base.Converter
         public T doForward(String str) {
             return (T) Enum.valueOf(this.enumClass, str);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.common.base.Converter
         public String doBackward(T enumValue) {
             return enumValue.name();

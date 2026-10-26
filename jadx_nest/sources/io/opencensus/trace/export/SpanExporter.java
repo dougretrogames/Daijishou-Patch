@@ -2,7 +2,7 @@ package io.opencensus.trace.export;
 
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class SpanExporter {
     private static final SpanExporter NOOP_SPAN_EXPORTER = new NoopSpanExporter(null);
 

@@ -4,7 +4,7 @@ import android.os.Build;
 import android.view.View;
 import android.view.Window;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class WindowCompat {
     public static final int FEATURE_ACTION_BAR = 8;
     public static final int FEATURE_ACTION_BAR_OVERLAY = 9;

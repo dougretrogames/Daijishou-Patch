@@ -1,7 +1,7 @@
 package com.google.android.gms.common.internal;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public final class Constants {
     public static final String ACTION_LOAD_IMAGE = "com.google.android.gms.common.images.LOAD_IMAGE";
     public static final String EXTRA_PRIORITY = "com.google.android.gms.extras.priority";

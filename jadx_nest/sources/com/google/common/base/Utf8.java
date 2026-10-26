@@ -1,6 +1,6 @@
 package com.google.common.base;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Utf8 {
     public static int encodedLength(CharSequence sequence) {

@@ -7,7 +7,7 @@ import io.noties.markwon.core.CoreProps;
 import io.noties.markwon.core.spans.BulletListItemSpan;
 import io.noties.markwon.core.spans.OrderedListItemSpan;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class ListItemSpanFactory implements SpanFactory {
     @Override // io.noties.markwon.SpanFactory
     public Object getSpans(MarkwonConfiguration markwonConfiguration, RenderProps renderProps) {

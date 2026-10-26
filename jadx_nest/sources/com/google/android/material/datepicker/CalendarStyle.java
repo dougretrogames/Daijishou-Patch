@@ -8,7 +8,7 @@ import com.google.android.material.R;
 import com.google.android.material.resources.MaterialAttributes;
 import com.google.android.material.resources.MaterialResources;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class CalendarStyle {
     final CalendarItemStyle day;
     final CalendarItemStyle invalidDay;

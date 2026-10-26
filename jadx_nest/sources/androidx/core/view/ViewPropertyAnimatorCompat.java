@@ -7,7 +7,7 @@ import android.view.ViewPropertyAnimator;
 import android.view.animation.Interpolator;
 import java.lang.ref.WeakReference;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ViewPropertyAnimatorCompat {
     private final WeakReference<View> mView;
 
@@ -301,7 +301,7 @@ public final class ViewPropertyAnimatorCompat {
         return this;
     }
 
-    /* JADX INFO: renamed from: androidx.core.view.ViewPropertyAnimatorCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.view.ViewPropertyAnimatorCompat$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         final /* synthetic */ ViewPropertyAnimatorListener val$listener;
         final /* synthetic */ View val$view;

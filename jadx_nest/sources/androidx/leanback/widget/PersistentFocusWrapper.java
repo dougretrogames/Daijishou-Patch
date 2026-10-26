@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class PersistentFocusWrapper extends FrameLayout {
     private static final boolean DEBUG = false;
     private static final String TAG = "PersistentFocusWrapper";
@@ -110,18 +110,18 @@ class PersistentFocusWrapper extends FrameLayout {
             parcel.writeInt(this.mSelectedPosition);
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.PersistentFocusWrapper$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.PersistentFocusWrapper$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];

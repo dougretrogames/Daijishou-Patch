@@ -2,7 +2,7 @@ package com.googlecode.javaewah32;
 
 import com.googlecode.javaewah.IntIterator;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class IntIteratorOverIteratingRLW32 implements IntIterator {
     private boolean hasNext;
     private int literalPosition;

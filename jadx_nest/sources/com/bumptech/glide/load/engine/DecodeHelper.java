@@ -18,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class DecodeHelper<Transcode> {
     private DecodeJob.DiskCacheProvider diskCacheProvider;
     private DiskCacheStrategy diskCacheStrategy;
@@ -42,7 +42,7 @@ final class DecodeHelper<Transcode> {
     DecodeHelper() {
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     <R> void init(GlideContext glideContext, Object obj, Key key, int i, int i2, DiskCacheStrategy diskCacheStrategy, Class<?> cls, Class<R> cls2, Priority priority, Options options, Map<Class<?>, Transformation<?>> map, boolean z, boolean z2, DecodeJob.DiskCacheProvider diskCacheProvider) {
         this.glideContext = glideContext;
         this.model = obj;
@@ -124,7 +124,7 @@ final class DecodeHelper<Transcode> {
         return this.glideContext.getRegistry().getRegisteredResourceClasses(this.model.getClass(), this.resourceClass, this.transcodeClass);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     boolean hasLoadPath(Class<?> cls) {
         return getLoadPath(cls) != null;
     }

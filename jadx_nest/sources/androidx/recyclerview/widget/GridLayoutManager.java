@@ -19,7 +19,7 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.TreeMap;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GridLayoutManager extends LinearLayoutManager {
     private static final boolean DEBUG = false;
     public static final int DEFAULT_SPAN_COUNT = -1;
@@ -1029,18 +1029,18 @@ public class GridLayoutManager extends LinearLayoutManager {
             return spanGroupIndex;
         }
 
-        /* JADX WARN: Code duplicated, block: B:12:0x0024  */
-        /* JADX WARN: Code duplicated, block: B:14:0x002b  */
-        /* JADX WARN: Code duplicated, block: B:15:0x002d A[DONT_INVERT] */
-        /* JADX WARN: Code duplicated, block: B:16:0x002f  */
-        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:14:0x002b -> B:17:0x0030). Please report as a decompilation issue!!! */
-        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:15:0x002d -> B:17:0x0030). Please report as a decompilation issue!!! */
-        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:16:0x002f -> B:17:0x0030). Please report as a decompilation issue!!! */
-        /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-            jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
-            	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-            	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-            	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+        /* WARN: Code duplicated, block: B:12:0x0024  */
+        /* WARN: Code duplicated, block: B:14:0x002b  */
+        /* WARN: Code duplicated, block: B:15:0x002d A[DONT_INVERT] */
+        /* WARN: Code duplicated, block: B:16:0x002f  */
+        /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:14:0x002b -> B:17:0x0030). Please report as a decompilation issue!!! */
+        /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:15:0x002d -> B:17:0x0030). Please report as a decompilation issue!!! */
+        /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:16:0x002f -> B:17:0x0030). Please report as a decompilation issue!!! */
+        /* ERROR: decompilerOverflowException in pass: RegionMakerVisitor
+            decompiler.core.utils.exceptions.decompilerOverflowException: Regions stack size limit reached
+            	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+            	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+            	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
             */
         public int getSpanIndex(int r6, int r7) {
             /*
@@ -1139,9 +1139,9 @@ public class GridLayoutManager extends LinearLayoutManager {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:72:0x00ff  */
-    /* JADX WARN: Code duplicated, block: B:73:0x0115  */
-    /* JADX WARN: Code restructure failed: missing block: B:56:0x00d7, code lost:
+    /* WARN: Code duplicated, block: B:72:0x00ff  */
+    /* WARN: Code duplicated, block: B:73:0x0115  */
+    /* WARN: Code restructure failed: missing block: B:56:0x00d7, code lost:
     
         if (r13 == (r2 > r15)) goto L47;
      */

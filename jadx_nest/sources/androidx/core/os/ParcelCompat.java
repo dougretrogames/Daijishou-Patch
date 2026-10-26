@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ParcelCompat {
     public static boolean readBoolean(Parcel parcel) {
         return parcel.readInt() != 0;
@@ -88,7 +88,7 @@ public final class ParcelCompat {
         return (Parcelable.Creator<T>) Api30Impl.readParcelableCreator(parcel, classLoader);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Deprecated
     public static <T> T[] readParcelableArray(Parcel parcel, ClassLoader classLoader, Class<T> cls) {
         if (Build.VERSION.SDK_INT >= 34) {

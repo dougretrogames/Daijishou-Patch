@@ -4,8 +4,8 @@ import android.net.Uri;
 import androidx.activity.result.ActivityResultCallback;
 import java.io.FileNotFoundException;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class ImageBlockWidgetFaceFragment$$ExternalSyntheticLambda0 implements ActivityResultCallback {
     public final /* synthetic */ ImageBlockWidgetFaceFragment f$0;
 

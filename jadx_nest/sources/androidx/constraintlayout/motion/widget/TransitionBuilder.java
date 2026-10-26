@@ -2,7 +2,7 @@ package androidx.constraintlayout.motion.widget;
 
 import androidx.constraintlayout.widget.ConstraintSet;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TransitionBuilder {
     private static final String TAG = "TransitionBuilder";
 

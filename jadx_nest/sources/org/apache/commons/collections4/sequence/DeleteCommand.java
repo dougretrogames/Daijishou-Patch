@@ -1,6 +1,6 @@
 package org.apache.commons.collections4.sequence;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DeleteCommand<T> extends EditCommand<T> {
     public DeleteCommand(T t) {
         super(t);

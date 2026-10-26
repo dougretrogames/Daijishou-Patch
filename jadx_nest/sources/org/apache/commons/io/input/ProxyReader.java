@@ -6,7 +6,7 @@ import java.io.Reader;
 import java.nio.CharBuffer;
 import org.apache.commons.io.IOUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class ProxyReader extends FilterReader {
     protected void afterRead(int i) throws IOException {
     }

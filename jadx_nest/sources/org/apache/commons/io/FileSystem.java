@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Locale;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum FileSystem {
     GENERIC(4096, false, false, Integer.MAX_VALUE, Integer.MAX_VALUE, new int[]{0}, new String[0], false, false, '/'),
     LINUX(8192, true, true, 255, 4096, new int[]{0, 47}, new String[0], false, false, '/'),
@@ -163,7 +163,7 @@ public enum FileSystem {
         return this.caseSensitive;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean isIllegalFileNameChar(int i) {
         return Arrays.binarySearch(this.illegalFileNameChars, i) >= 0;
     }
@@ -203,7 +203,7 @@ public enum FileSystem {
         return new String(array, 0, array.length);
     }
 
-    /* JADX INFO: renamed from: lambda$toLegalFileName$0$org-apache-commons-io-FileSystem, reason: not valid java name */
+    /* INFO: renamed from: lambda$toLegalFileName$0$org-apache-commons-io-FileSystem, reason: not valid java name */
     /* synthetic */ int m5550lambda$toLegalFileName$0$orgapachecommonsioFileSystem(char c, int i) {
         return isIllegalFileNameChar(i) ? c : i;
     }

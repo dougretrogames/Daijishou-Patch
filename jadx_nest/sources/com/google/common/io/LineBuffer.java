@@ -2,7 +2,7 @@ package com.google.common.io;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class LineBuffer {
     private StringBuilder line = new StringBuilder();
@@ -13,7 +13,7 @@ abstract class LineBuffer {
     LineBuffer() {
     }
 
-    /* JADX WARN: Code duplicated, block: B:12:0x001a  */
+    /* WARN: Code duplicated, block: B:12:0x001a  */
     protected void add(char[] cbuf, int off, int len) throws IOException {
         int i;
         if (!this.sawReturn || len <= 0) {

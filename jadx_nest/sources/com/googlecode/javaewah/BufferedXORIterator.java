@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-/* JADX INFO: compiled from: IteratorAggregation.java */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: IteratorAggregation.java */
+/* INFO: loaded from: classes4.dex */
 class BufferedXORIterator implements CloneableIterator<EWAHIterator> {
     EWAHCompressedBitmap buffer = new EWAHCompressedBitmap();
     long[] hardbitmap;
@@ -17,7 +17,7 @@ class BufferedXORIterator implements CloneableIterator<EWAHIterator> {
     }
 
     @Override // com.googlecode.javaewah.CloneableIterator
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] and merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] and merged with bridge method [inline-methods] */
     public CloneableIterator<EWAHIterator> m3459clone() throws CloneNotSupportedException {
         BufferedXORIterator bufferedXORIterator = (BufferedXORIterator) super.clone();
         bufferedXORIterator.buffer = this.buffer.m3460clone();
@@ -31,7 +31,7 @@ class BufferedXORIterator implements CloneableIterator<EWAHIterator> {
         return !this.ll.isEmpty();
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.googlecode.javaewah.CloneableIterator
     public EWAHIterator next() {
         this.buffer.clear();

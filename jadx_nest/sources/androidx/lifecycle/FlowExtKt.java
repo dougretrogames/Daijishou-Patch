@@ -17,14 +17,14 @@ import kotlinx.coroutines.flow.Flow;
 import kotlinx.coroutines.flow.FlowCollector;
 import kotlinx.coroutines.flow.FlowKt;
 
-/* JADX INFO: compiled from: FlowExt.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: FlowExt.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0016\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a.\u0010\u0000\u001a\b\u0012\u0004\u0012\u0002H\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00020\u00012\u0006\u0010\u0003\u001a\u00020\u00042\b\b\u0002\u0010\u0005\u001a\u00020\u0006¨\u0006\u0007"}, d2 = {"flowWithLifecycle", "Lkotlinx/coroutines/flow/Flow;", ExifInterface.GPS_DIRECTION_TRUE, "lifecycle", "Landroidx/lifecycle/Lifecycle;", "minActiveState", "Landroidx/lifecycle/Lifecycle$State;", "lifecycle-runtime_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class FlowExtKt {
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: androidx.lifecycle.FlowExtKt$flowWithLifecycle$1, reason: invalid class name */
-    /* JADX INFO: compiled from: FlowExt.kt */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: androidx.lifecycle.FlowExtKt$flowWithLifecycle$1, reason: invalid class name */
+    /* INFO: compiled from: FlowExt.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\b\u0012\u0004\u0012\u0002H\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/channels/ProducerScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.lifecycle.FlowExtKt$flowWithLifecycle$1", f = "FlowExt.kt", i = {0}, l = {91}, m = "invokeSuspend", n = {"$this$callbackFlow"}, s = {"L$0"})
     static final class AnonymousClass1<T> extends SuspendLambda implements Function2<ProducerScope<? super T>, Continuation<? super Unit>, Object> {
@@ -34,8 +34,8 @@ public final class FlowExtKt {
         private /* synthetic */ Object L$0;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(Lifecycle lifecycle, Lifecycle.State state, Flow<? extends T> flow, Continuation<? super AnonymousClass1> continuation) {
             super(2, continuation);
             this.$lifecycle = lifecycle;
@@ -55,8 +55,8 @@ public final class FlowExtKt {
             return ((AnonymousClass1) create(producerScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX INFO: renamed from: androidx.lifecycle.FlowExtKt$flowWithLifecycle$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: FlowExt.kt */
+        /* INFO: renamed from: androidx.lifecycle.FlowExtKt$flowWithLifecycle$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: FlowExt.kt */
         @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u0002*\u00020\u0003H\u008a@"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
         @DebugMetadata(c = "androidx.lifecycle.FlowExtKt$flowWithLifecycle$1$1", f = "FlowExt.kt", i = {}, l = {92}, m = "invokeSuspend", n = {}, s = {})
         static final class C00151 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -64,8 +64,8 @@ public final class FlowExtKt {
             final /* synthetic */ Flow<T> $this_flowWithLifecycle;
             int label;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             C00151(Flow<? extends T> flow, ProducerScope<? super T> producerScope, Continuation<? super C00151> continuation) {
                 super(2, continuation);
                 this.$this_flowWithLifecycle = flow;
@@ -101,13 +101,13 @@ public final class FlowExtKt {
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: androidx.lifecycle.FlowExtKt$flowWithLifecycle$1$1$1, reason: invalid class name and collision with other inner class name */
-            /* JADX INFO: compiled from: FlowExt.kt */
+            /* INFO: renamed from: androidx.lifecycle.FlowExtKt$flowWithLifecycle$1$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: compiled from: FlowExt.kt */
             @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\u0010\u0000\u001a\u00020\u0001\"\u0004\b\u0000\u0010\u00022\u0006\u0010\u0003\u001a\u0002H\u0002H\u008a@¢\u0006\u0004\b\u0004\u0010\u0005"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "it", "emit", "(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;"}, k = 3, mv = {1, 8, 0}, xi = 48)
             static final class C00161<T> implements FlowCollector {
                 final /* synthetic */ ProducerScope<T> $$this$callbackFlow;
 
-                /* JADX WARN: Multi-variable type inference failed */
+                /* WARN: Multi-variable type inference failed */
                 C00161(ProducerScope<? super T> producerScope) {
                     this.$$this$callbackFlow = producerScope;
                 }

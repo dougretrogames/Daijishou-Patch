@@ -17,7 +17,7 @@ import androidx.leanback.widget.Row;
 import androidx.leanback.widget.RowPresenter;
 import androidx.leanback.widget.VerticalGridPresenter;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class VerticalGridSupportFragment extends BaseSupportFragment {
     static final boolean DEBUG = false;
     static final String TAG = "VerticalGF";
@@ -32,7 +32,7 @@ public class VerticalGridSupportFragment extends BaseSupportFragment {
     private final OnItemViewSelectedListener mViewSelectedListener = new AnonymousClass2();
     private final OnChildLaidOutListener mChildLaidOutListener = new AnonymousClass3();
 
-    /* JADX INFO: renamed from: androidx.leanback.app.VerticalGridSupportFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.VerticalGridSupportFragment$1, reason: invalid class name */
     class AnonymousClass1 extends StateMachine.State {
         AnonymousClass1(String str) {
             super(str);
@@ -81,7 +81,7 @@ public class VerticalGridSupportFragment extends BaseSupportFragment {
         return this.mAdapter;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.VerticalGridSupportFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.VerticalGridSupportFragment$2, reason: invalid class name */
     class AnonymousClass2 implements OnItemViewSelectedListener {
         AnonymousClass2() {
         }
@@ -95,7 +95,7 @@ public class VerticalGridSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.VerticalGridSupportFragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.VerticalGridSupportFragment$3, reason: invalid class name */
     class AnonymousClass3 implements OnChildLaidOutListener {
         AnonymousClass3() {
         }
@@ -157,7 +157,7 @@ public class VerticalGridSupportFragment extends BaseSupportFragment {
         return viewGroup2;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.VerticalGridSupportFragment$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.VerticalGridSupportFragment$4, reason: invalid class name */
     class AnonymousClass4 implements Runnable {
         AnonymousClass4() {
         }

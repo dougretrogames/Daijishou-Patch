@@ -3,8 +3,8 @@ package androidx.fragment.app;
 import androidx.core.app.MultiWindowModeChangedInfo;
 import androidx.core.util.Consumer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class FragmentManager$$ExternalSyntheticLambda2 implements Consumer {
     public final /* synthetic */ FragmentManager f$0;
 

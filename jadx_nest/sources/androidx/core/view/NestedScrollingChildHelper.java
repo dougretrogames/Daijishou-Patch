@@ -3,7 +3,7 @@ package androidx.core.view;
 import android.view.View;
 import android.view.ViewParent;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class NestedScrollingChildHelper {
     private boolean mIsNestedScrollingEnabled;
     private ViewParent mNestedScrollingParentNonTouch;

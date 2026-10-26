@@ -11,7 +11,7 @@ import org.commonmark.parser.block.BlockStart;
 import org.commonmark.parser.block.MatchedBlockParser;
 import org.commonmark.parser.block.ParserState;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FencedCodeBlockParser extends AbstractBlockParser {
     private final FencedCodeBlock block;
     private String firstLine;
@@ -78,7 +78,7 @@ public class FencedCodeBlockParser extends AbstractBlockParser {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static FencedCodeBlockParser checkOpener(CharSequence charSequence, int i, int i2) {
         int length = charSequence.length();
         int i3 = 0;

@@ -5,7 +5,7 @@ import android.transition.TransitionValues;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MaterialElevationScale extends MaterialVisibility<ScaleProvider> {
     private static final float DEFAULT_SCALE = 0.85f;
     private final boolean growing;

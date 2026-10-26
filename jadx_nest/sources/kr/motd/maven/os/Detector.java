@@ -20,7 +20,7 @@ import java.util.regex.Pattern;
 import org.apache.commons.codec.language.Soundex;
 import org.eclipse.jgit.transport.WalkEncryption;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class Detector {
     public static final String DETECTED_ARCH = "os.detected.arch";
     public static final String DETECTED_BITNESS = "os.detected.bitness";
@@ -357,7 +357,7 @@ public abstract class Detector {
 
     private static class LinuxRelease {
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         final String f105id;
         final Collection<String> like;
         final String version;

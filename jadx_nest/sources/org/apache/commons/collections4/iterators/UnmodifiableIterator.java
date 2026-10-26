@@ -4,11 +4,11 @@ import java.util.Iterator;
 import java.util.Objects;
 import org.apache.commons.collections4.Unmodifiable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UnmodifiableIterator<E> implements Iterator<E>, Unmodifiable {
     private final Iterator<? extends E> iterator;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <E> Iterator<E> unmodifiableIterator(Iterator<? extends E> it) {
         Objects.requireNonNull(it, "iterator");
         return it instanceof Unmodifiable ? it : new UnmodifiableIterator(it);

@@ -11,7 +11,7 @@ import java.util.Calendar;
 import java.util.Iterator;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class YearGridAdapter extends RecyclerView.Adapter<ViewHolder> {
     private final MaterialCalendar<?> materialCalendar;
 
@@ -52,7 +52,7 @@ class YearGridAdapter extends RecyclerView.Adapter<ViewHolder> {
         viewHolder.textView.setOnClickListener(createYearClickListener(yearForPosition));
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.datepicker.YearGridAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.datepicker.YearGridAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         final /* synthetic */ int val$year;
 

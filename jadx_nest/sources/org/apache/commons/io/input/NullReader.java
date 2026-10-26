@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.Reader;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NullReader extends Reader {
     public static final NullReader INSTANCE = new NullReader();
     private boolean eof;

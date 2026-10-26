@@ -22,7 +22,7 @@ import org.eclipse.jgit.transport.PackParser;
 import org.eclipse.jgit.transport.PackedObjectInfo;
 import org.eclipse.jgit.util.NB;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ObjectDirectoryPackParser extends PackParser {
     private final CRC32 crc;
     private final FileObjectDatabase db;
@@ -317,7 +317,7 @@ public class ObjectDirectoryPackParser extends PackParser {
         }
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x00e7 */
+    /* WARN: Bottom block not found for handler: all -> 0x00e7 */
     /*
         Code decompiled incorrectly, please refer to instructions dump.
         To view partially-correct add '--show-bad-code' argument

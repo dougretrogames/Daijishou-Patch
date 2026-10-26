@@ -11,7 +11,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CloudShellCredentials extends GoogleCredentials {
     private static final int ACCESS_TOKEN_INDEX = 2;
     protected static final String GET_AUTH_TOKEN_REQUEST = "2\n[]";

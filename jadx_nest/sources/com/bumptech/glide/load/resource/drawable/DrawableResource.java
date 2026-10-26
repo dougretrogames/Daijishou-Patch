@@ -7,7 +7,7 @@ import com.bumptech.glide.load.engine.Resource;
 import com.bumptech.glide.load.resource.gif.GifDrawable;
 import com.bumptech.glide.util.Preconditions;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class DrawableResource<T extends Drawable> implements Resource<T>, Initializable {
     protected final T drawable;
 

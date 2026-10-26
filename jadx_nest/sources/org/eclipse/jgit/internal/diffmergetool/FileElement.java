@@ -8,7 +8,7 @@ import java.util.Map;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileElement {
     private final String path;
     private InputStream stream;
@@ -23,7 +23,7 @@ public class FileElement {
         BASE,
         BACKUP;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Type[] valuesCustom() {
             Type[] typeArrValuesCustom = values();
             int length = typeArrValuesCustom.length;

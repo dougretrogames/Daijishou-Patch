@@ -18,7 +18,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements RetroAchievementsUserIndependentGameRecordDAO {
     private final RoomDatabase __db;
     private final EntityDeletionOrUpdateAdapter<RetroAchievementsUserIndependentGameRecordEntity> __deletionAdapterOfRetroAchievementsUserIndependentGameRecordEntity;
@@ -35,7 +35,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
         this.__preparedStmtOfDeleteByConsoleId = new AnonymousClass4(__db);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$1, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$1, reason: invalid class name */
     class AnonymousClass1 extends EntityInsertionAdapter<RetroAchievementsUserIndependentGameRecordEntity> {
         AnonymousClass1(RoomDatabase database) {
             super(database);
@@ -46,7 +46,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
             return "INSERT OR REPLACE INTO `RetroAchievementsUserIndependentGameRecordEntity` (`id`,`name`,`url`,`image_url`,`forum_topic_id`,`console_id`,`console_name`,`achievements_count`,`points`,`date_modified`,`last_updated_timestamp`) VALUES (?,?,?,?,?,?,?,?,?,?,?)";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityInsertionAdapter
         public void bind(final SupportSQLiteStatement statement, final RetroAchievementsUserIndependentGameRecordEntity entity) {
             statement.bindLong(1, entity.getId());
@@ -97,7 +97,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$2, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$2, reason: invalid class name */
     class AnonymousClass2 extends EntityDeletionOrUpdateAdapter<RetroAchievementsUserIndependentGameRecordEntity> {
         AnonymousClass2(RoomDatabase database) {
             super(database);
@@ -108,14 +108,14 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
             return "DELETE FROM `RetroAchievementsUserIndependentGameRecordEntity` WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final RetroAchievementsUserIndependentGameRecordEntity entity) {
             statement.bindLong(1, entity.getId());
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$3, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$3, reason: invalid class name */
     class AnonymousClass3 extends EntityDeletionOrUpdateAdapter<RetroAchievementsUserIndependentGameRecordEntity> {
         AnonymousClass3(RoomDatabase database) {
             super(database);
@@ -126,7 +126,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
             return "UPDATE OR ABORT `RetroAchievementsUserIndependentGameRecordEntity` SET `id` = ?,`name` = ?,`url` = ?,`image_url` = ?,`forum_topic_id` = ?,`console_id` = ?,`console_name` = ?,`achievements_count` = ?,`points` = ?,`date_modified` = ?,`last_updated_timestamp` = ? WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final RetroAchievementsUserIndependentGameRecordEntity entity) {
             statement.bindLong(1, entity.getId());
@@ -178,7 +178,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$4, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$4, reason: invalid class name */
     class AnonymousClass4 extends SharedSQLiteStatement {
         AnonymousClass4(RoomDatabase database) {
             super(database);
@@ -287,7 +287,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$5, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$5, reason: invalid class name */
     class AnonymousClass5 implements Callable<Integer> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -295,7 +295,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Integer call() throws Exception {
             Integer numValueOf = null;
@@ -340,7 +340,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"RetroAchievementsUserIndependentGameRecordEntity"}, false, new AnonymousClass6(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$6, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$6, reason: invalid class name */
     class AnonymousClass6 implements Callable<RetroAchievementsUserIndependentGameRecordEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -348,7 +348,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public RetroAchievementsUserIndependentGameRecordEntity call() throws Exception {
             RetroAchievementsUserIndependentGameRecordEntity retroAchievementsUserIndependentGameRecordEntity = null;
@@ -393,15 +393,15 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
         }
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     @Override // com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO
     public RetroAchievementsUserIndependentGameRecordEntity selectByIdStatically(long j) {
@@ -462,7 +462,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"RetroAchievementsUserIndependentGameRecordEntity"}, false, new AnonymousClass7(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$7, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$7, reason: invalid class name */
     class AnonymousClass7 implements Callable<List<RetroAchievementsUserIndependentGameRecordEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -470,7 +470,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.concurrent.Callable
         public List<RetroAchievementsUserIndependentGameRecordEntity> call() throws Exception {
             String str = null;
@@ -550,7 +550,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"RetroAchievementsUserIndependentGameRecordEntity"}, false, new AnonymousClass8(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$8, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$8, reason: invalid class name */
     class AnonymousClass8 implements Callable<List<RetroAchievementsUserIndependentGameRecordEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -558,7 +558,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.concurrent.Callable
         public List<RetroAchievementsUserIndependentGameRecordEntity> call() throws Exception {
             String str = null;
@@ -629,7 +629,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"RetroAchievementsUserIndependentGameRecordEntity"}, false, new AnonymousClass9(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$9, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$9, reason: invalid class name */
     class AnonymousClass9 implements Callable<RetroAchievementsUserIndependentGameRecordEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -637,7 +637,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public RetroAchievementsUserIndependentGameRecordEntity call() throws Exception {
             RetroAchievementsUserIndependentGameRecordEntity retroAchievementsUserIndependentGameRecordEntity = null;
@@ -682,15 +682,15 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
         }
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     @Override // com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO
     public RetroAchievementsUserIndependentGameRecordEntity selectFirstByConsoleIdStatically(long j) {
@@ -743,7 +743,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"RetroAchievementsUserIndependentGameRecordEntity"}, false, new AnonymousClass10(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$10, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$10, reason: invalid class name */
     class AnonymousClass10 implements Callable<List<RetroAchievementsUserIndependentGameRecordEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -751,7 +751,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.concurrent.Callable
         public List<RetroAchievementsUserIndependentGameRecordEntity> call() throws Exception {
             String str = null;
@@ -825,7 +825,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"RetroAchievementsUserIndependentGameRecordEntity"}, false, new AnonymousClass11(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$11, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.retro_achievements.retro_achievements_db.RetroAchievementsUserIndependentGameRecordDAO_Impl$11, reason: invalid class name */
     class AnonymousClass11 implements Callable<List<RetroAchievementsUserIndependentGameRecordEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -833,7 +833,7 @@ public final class RetroAchievementsUserIndependentGameRecordDAO_Impl implements
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.util.concurrent.Callable
         public List<RetroAchievementsUserIndependentGameRecordEntity> call() throws Exception {
             String str = null;

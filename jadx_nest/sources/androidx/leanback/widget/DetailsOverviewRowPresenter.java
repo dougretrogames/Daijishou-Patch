@@ -14,7 +14,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public class DetailsOverviewRowPresenter extends RowPresenter {
     static final boolean DEBUG = false;
@@ -47,7 +47,7 @@ public class DetailsOverviewRowPresenter extends RowPresenter {
             viewHolder.getPresenter().setOnClickListener(viewHolder.getViewHolder(), new AnonymousClass1(viewHolder));
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$ActionsItemBridgeAdapter$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$ActionsItemBridgeAdapter$1, reason: invalid class name */
         class AnonymousClass1 implements View.OnClickListener {
             final /* synthetic */ ItemBridgeAdapter.ViewHolder val$ibvh;
 
@@ -106,7 +106,7 @@ public class DetailsOverviewRowPresenter extends RowPresenter {
         boolean mShowMoreRight;
         final Runnable mUpdateDrawableCallback;
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$ViewHolder$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$ViewHolder$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             AnonymousClass1() {
             }
@@ -117,7 +117,7 @@ public class DetailsOverviewRowPresenter extends RowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$ViewHolder$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$ViewHolder$2, reason: invalid class name */
         class AnonymousClass2 extends DetailsOverviewRow.Listener {
             AnonymousClass2() {
             }
@@ -157,7 +157,7 @@ public class DetailsOverviewRowPresenter extends RowPresenter {
             this.mNumItems = 0;
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$ViewHolder$3, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$ViewHolder$3, reason: invalid class name */
         class AnonymousClass3 implements View.OnLayoutChangeListener {
             AnonymousClass3() {
             }
@@ -168,7 +168,7 @@ public class DetailsOverviewRowPresenter extends RowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$ViewHolder$4, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$ViewHolder$4, reason: invalid class name */
         class AnonymousClass4 implements OnChildSelectedListener {
             AnonymousClass4() {
             }
@@ -199,7 +199,7 @@ public class DetailsOverviewRowPresenter extends RowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$ViewHolder$5, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$ViewHolder$5, reason: invalid class name */
         class AnonymousClass5 extends RecyclerView.OnScrollListener {
             @Override // androidx.recyclerview.widget.RecyclerView.OnScrollListener
             public void onScrollStateChanged(RecyclerView recyclerView, int i) {
@@ -353,7 +353,7 @@ public class DetailsOverviewRowPresenter extends RowPresenter {
         viewHolder.mActionsRow.setOnUnhandledKeyListener(new AnonymousClass1(viewHolder));
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.DetailsOverviewRowPresenter$1, reason: invalid class name */
     class AnonymousClass1 implements BaseGridView.OnUnhandledKeyListener {
         final /* synthetic */ ViewHolder val$vh;
 
@@ -383,7 +383,7 @@ public class DetailsOverviewRowPresenter extends RowPresenter {
         return 0;
     }
 
-    /* JADX WARN: Code duplicated, block: B:17:0x0064  */
+    /* WARN: Code duplicated, block: B:17:0x0064  */
     void bindImageDrawable(ViewHolder viewHolder) {
         boolean z;
         DetailsOverviewSharedElementHelper detailsOverviewSharedElementHelper;

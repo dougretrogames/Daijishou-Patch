@@ -4,7 +4,7 @@ import com.google.api.client.util.Preconditions;
 import java.net.URI;
 import org.apache.http.client.methods.HttpEntityEnclosingRequestBase;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class HttpExtensionMethod extends HttpEntityEnclosingRequestBase {
     private final String methodName;
 

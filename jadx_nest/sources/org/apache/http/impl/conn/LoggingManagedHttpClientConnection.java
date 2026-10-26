@@ -15,7 +15,7 @@ import org.apache.http.entity.ContentLengthStrategy;
 import org.apache.http.io.HttpMessageParserFactory;
 import org.apache.http.io.HttpMessageWriterFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class LoggingManagedHttpClientConnection extends DefaultManagedHttpClientConnection {
     private final Log headerLog;
     private final Log log;

@@ -2,8 +2,8 @@ package androidx.compose.ui.text.input;
 
 import android.view.Choreographer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class TextInputServiceAndroid_androidKt$$ExternalSyntheticLambda0 implements Choreographer.FrameCallback {
     public final /* synthetic */ Runnable f$0;
 

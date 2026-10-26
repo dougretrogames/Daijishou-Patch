@@ -3,7 +3,7 @@ package androidx.core.view;
 import android.view.WindowInsetsAnimationController;
 import androidx.core.graphics.Insets;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class WindowInsetsAnimationControllerCompat {
     private final Impl mImpl;
 

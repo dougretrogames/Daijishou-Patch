@@ -12,7 +12,7 @@ import net.lingala.zip4j.model.enums.RandomAccessFileMode;
 import net.lingala.zip4j.util.FileUtils;
 import net.lingala.zip4j.util.RawIO;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SplitOutputStream extends OutputStream implements OutputStreamWithSplitZipSupport {
     private long bytesWrittenForThisPart;
     private int currSplitFileCounter;

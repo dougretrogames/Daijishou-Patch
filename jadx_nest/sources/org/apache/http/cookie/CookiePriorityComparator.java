@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.Date;
 import org.apache.http.impl.cookie.BasicClientCookie;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CookiePriorityComparator implements Comparator<Cookie> {
     public static final CookiePriorityComparator INSTANCE = new CookiePriorityComparator();
 

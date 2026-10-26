@@ -2,7 +2,7 @@ package org.apache.commons.collections4;
 
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface OrderedIterator<E> extends Iterator<E> {
     boolean hasPrevious();
 

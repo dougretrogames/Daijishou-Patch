@@ -7,8 +7,8 @@ import com.google.android.gms.common.internal.Preconditions;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class GetSignInIntentRequest extends AbstractSafeParcelable {
     public static final Parcelable.Creator<GetSignInIntentRequest> CREATOR = new zbi();
@@ -19,7 +19,7 @@ public class GetSignInIntentRequest extends AbstractSafeParcelable {
     private final boolean zbe;
     private final int zbf;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-auth@@21.3.0 */
     public static final class Builder {
         private String zba;
         private String zbb;

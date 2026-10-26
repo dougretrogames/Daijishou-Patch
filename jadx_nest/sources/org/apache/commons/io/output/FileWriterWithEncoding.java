@@ -13,7 +13,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FileWriterWithEncoding extends ProxyWriter {
     /* synthetic */ FileWriterWithEncoding(OutputStreamWriter outputStreamWriter, AnonymousClass1 anonymousClass1) {
         this(outputStreamWriter);
@@ -50,7 +50,7 @@ public class FileWriterWithEncoding extends ProxyWriter {
         return new Builder();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static OutputStreamWriter initWriter(File file, Object obj, boolean z) throws Exception {
         Objects.requireNonNull(file, "file");
         boolean zExists = file.exists();

@@ -14,8 +14,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Ref;
 
-/* JADX INFO: compiled from: DaijishouConsoleViewModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouConsoleViewModel.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class DaijishouConsoleViewModel$commands$8$execute$3$1 extends Lambda<Unit> implements Function1<PlayableItemEntity, Unit> {
     final /* synthetic */ AppCompatActivity $activity;
@@ -23,8 +23,8 @@ final class DaijishouConsoleViewModel$commands$8$execute$3$1 extends Lambda<Unit
     final /* synthetic */ ChoosePlayableItemFromLibraryDialogFragment $dialog;
     final /* synthetic */ Ref.BooleanRef $selected;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     DaijishouConsoleViewModel$commands$8$execute$3$1(Ref.BooleanRef booleanRef, Continuation<?> continuation, AppCompatActivity appCompatActivity, ChoosePlayableItemFromLibraryDialogFragment choosePlayableItemFromLibraryDialogFragment) {
         super(1);
         this.$selected = booleanRef;
@@ -39,7 +39,7 @@ final class DaijishouConsoleViewModel$commands$8$execute$3$1 extends Lambda<Unit
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(PlayableItemEntity it) {
         Intrinsics.checkNotNullParameter(it, "it");
         this.$selected.element = true;

@@ -1,6 +1,6 @@
 package org.apache.http.client.params;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface ClientPNames {
     public static final String ALLOW_CIRCULAR_REDIRECTS = "http.protocol.allow-circular-redirects";

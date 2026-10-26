@@ -1,6 +1,6 @@
 package io.opencensus.internal;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class StringUtils {
     private static boolean isPrintableChar(char c) {
         return c >= ' ' && c <= '~';

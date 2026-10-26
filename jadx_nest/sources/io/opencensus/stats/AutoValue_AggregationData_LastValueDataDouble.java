@@ -1,6 +1,6 @@
 package io.opencensus.stats;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_AggregationData_LastValueDataDouble extends AggregationData.LastValueDataDouble {
     private final double lastValue;
 

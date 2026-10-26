@@ -3,7 +3,7 @@ package org.apache.commons.collections4.bloomfilter;
 import java.util.Objects;
 import java.util.function.IntPredicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EnhancedDoubleHasher implements Hasher {
     private final long increment;
     private final long initial;
@@ -48,7 +48,7 @@ public class EnhancedDoubleHasher implements Hasher {
         return new AnonymousClass1(this, shape);
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.bloomfilter.EnhancedDoubleHasher$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.bloomfilter.EnhancedDoubleHasher$1, reason: invalid class name */
     class AnonymousClass1 implements IndexExtractor {
         final /* synthetic */ EnhancedDoubleHasher this$0;
         final /* synthetic */ Shape val$shape;

@@ -11,7 +11,7 @@ import org.apache.http.client.methods.HttpHead;
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 class DefaultRedirectStrategyAdaptor implements RedirectStrategy {
     private final RedirectHandler handler;

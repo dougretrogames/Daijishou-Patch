@@ -23,7 +23,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class WindowInsetsAnimationCompat {
     private static final boolean DEBUG = false;
     private static final String TAG = "WindowInsetsAnimCompat";
@@ -335,7 +335,7 @@ public final class WindowInsetsAnimationCompat {
                 return Impl21.forwardToViewIfNeeded(view, windowInsets);
             }
 
-            /* JADX INFO: renamed from: androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener$1, reason: invalid class name */
+            /* INFO: renamed from: androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener$1, reason: invalid class name */
             class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
                 final /* synthetic */ WindowInsetsAnimationCompat val$anim;
                 final /* synthetic */ int val$animationMask;
@@ -358,7 +358,7 @@ public final class WindowInsetsAnimationCompat {
                 }
             }
 
-            /* JADX INFO: renamed from: androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener$2, reason: invalid class name */
+            /* INFO: renamed from: androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener$2, reason: invalid class name */
             class AnonymousClass2 extends AnimatorListenerAdapter {
                 final /* synthetic */ WindowInsetsAnimationCompat val$anim;
                 final /* synthetic */ View val$v;
@@ -375,7 +375,7 @@ public final class WindowInsetsAnimationCompat {
                 }
             }
 
-            /* JADX INFO: renamed from: androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener$3, reason: invalid class name */
+            /* INFO: renamed from: androidx.core.view.WindowInsetsAnimationCompat$Impl21$Impl21OnApplyWindowInsetsListener$3, reason: invalid class name */
             class AnonymousClass3 implements Runnable {
                 final /* synthetic */ WindowInsetsAnimationCompat val$anim;
                 final /* synthetic */ BoundsCompat val$animationBounds;

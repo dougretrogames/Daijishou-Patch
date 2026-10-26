@@ -10,7 +10,7 @@ import org.jsoup.internal.StringUtil;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.LeafNode;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class CombiningEvaluator extends Evaluator {
     int cost;
     final ArrayList<Evaluator> evaluators;
@@ -84,7 +84,7 @@ public abstract class CombiningEvaluator extends Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             for (int i = 0; i < this.num; i++) {
                 if (!this.sortedEvaluators.get(i).m5878lambda$asPredicate$0$orgjsoupselectEvaluator(element, element2)) {
@@ -127,7 +127,7 @@ public abstract class CombiningEvaluator extends Evaluator {
         }
 
         @Override // org.jsoup.select.Evaluator
-        /* JADX INFO: renamed from: matches */
+        /* INFO: renamed from: matches */
         public boolean m5878lambda$asPredicate$0$orgjsoupselectEvaluator(Element element, Element element2) {
             for (int i = 0; i < this.num; i++) {
                 if (this.sortedEvaluators.get(i).m5878lambda$asPredicate$0$orgjsoupselectEvaluator(element, element2)) {

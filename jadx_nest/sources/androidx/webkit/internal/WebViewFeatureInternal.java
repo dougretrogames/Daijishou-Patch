@@ -12,7 +12,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import org.chromium.support_lib_boundary.util.Features;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebViewFeatureInternal {
     public static final ApiFeature.M VISUAL_STATE_CALLBACK = new ApiFeature.M("VISUAL_STATE_CALLBACK", "VISUAL_STATE_CALLBACK");
     public static final ApiFeature.M OFF_SCREEN_PRERASTER = new ApiFeature.M("OFF_SCREEN_PRERASTER", "OFF_SCREEN_PRERASTER");
@@ -92,7 +92,7 @@ public class WebViewFeatureInternal {
     public static final ApiFeature.NoFramework PAYMENT_REQUEST = new ApiFeature.NoFramework("PAYMENT_REQUEST", "PAYMENT_REQUEST");
     public static final ApiFeature.NoFramework WEBVIEW_BUILDER = new ApiFeature.NoFramework("WEBVIEW_BUILDER", "WEBVIEW_BUILDER");
 
-    /* JADX INFO: renamed from: androidx.webkit.internal.WebViewFeatureInternal$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.webkit.internal.WebViewFeatureInternal$1, reason: invalid class name */
     class AnonymousClass1 extends ApiFeature.T {
         private final Pattern mVersionPattern;
 
@@ -116,7 +116,7 @@ public class WebViewFeatureInternal {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.webkit.internal.WebViewFeatureInternal$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.webkit.internal.WebViewFeatureInternal$2, reason: invalid class name */
     class AnonymousClass2 extends ApiFeature.NoFramework {
         AnonymousClass2(String str, String str2) {
             super(str, str2);
@@ -131,7 +131,7 @@ public class WebViewFeatureInternal {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.webkit.internal.WebViewFeatureInternal$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.webkit.internal.WebViewFeatureInternal$3, reason: invalid class name */
     class AnonymousClass3 extends ApiFeature.NoFramework {
         AnonymousClass3(String str, String str2) {
             super(str, str2);

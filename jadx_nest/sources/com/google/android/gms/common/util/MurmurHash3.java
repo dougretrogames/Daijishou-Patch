@@ -2,8 +2,8 @@ package com.google.android.gms.common.util;
 
 import androidx.collection.ScatterMapKt;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public class MurmurHash3 {
     private MurmurHash3() {
     }

@@ -11,7 +11,7 @@ import java.util.IdentityHashMap;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ConcatAdapterController implements NestedAdapterWrapper.Callback {
     private final ConcatAdapter mConcatAdapter;
     private final ConcatAdapter.Config.StableIdMode mStableIdMode;

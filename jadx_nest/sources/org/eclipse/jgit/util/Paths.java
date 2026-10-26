@@ -2,7 +2,7 @@ package org.eclipse.jgit.util;
 
 import org.eclipse.jgit.lib.FileMode;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Paths {
     private static int lastPathChar(int i) {
         return (i & FileMode.TYPE_MASK) == 16384 ? 47 : 0;

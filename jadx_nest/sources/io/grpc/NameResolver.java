@@ -16,7 +16,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.ScheduledExecutorService;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class NameResolver {
 
     public static abstract class Factory {
@@ -55,7 +55,7 @@ public abstract class NameResolver {
         }
     }
 
-    /* JADX INFO: renamed from: io.grpc.NameResolver$1, reason: invalid class name */
+    /* INFO: renamed from: io.grpc.NameResolver$1, reason: invalid class name */
     class AnonymousClass1 extends Listener2 {
         final /* synthetic */ Listener val$listener;
 
@@ -463,7 +463,7 @@ public abstract class NameResolver {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @Nullable
     public static IdentityHashMap<Args.Key<?>, Object> cloneCustomArgs(@Nullable IdentityHashMap<Args.Key<?>, Object> identityHashMap) {
         if (identityHashMap != null) {

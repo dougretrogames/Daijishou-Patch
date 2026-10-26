@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.RatingBar;
 import androidx.appcompat.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AppCompatRatingBar extends RatingBar {
     private final AppCompatProgressBarHelper mAppCompatProgressBarHelper;
 

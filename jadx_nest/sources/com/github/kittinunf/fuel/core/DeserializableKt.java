@@ -24,13 +24,13 @@ import kotlin.jvm.functions.Function3;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: Deserializable.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: Deserializable.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000p\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a[\u0010\u0000\u001a\u001a\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u0002H\u00040\u0002\u0012\u0004\u0012\u00020\u00050\u0001\"\b\b\u0000\u0010\u0004*\u00020\u0006\"\u000e\b\u0001\u0010\u0007*\b\u0012\u0004\u0012\u0002H\u00040\b2\u0012\u0010\t\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00050\u00012\u0006\u0010\n\u001a\u0002H\u0007H\u0002¢\u0006\u0002\u0010\u000b\u001a7\u0010\f\u001a\u0002H\u0004\"\b\b\u0000\u0010\u0004*\u00020\u0006\"\u000e\b\u0001\u0010\u0007*\b\u0012\u0004\u0012\u0002H\u00040\b*\u00020\r2\u0006\u0010\n\u001a\u0002H\u0007H\u0086@ø\u0001\u0000¢\u0006\u0002\u0010\u000e\u001aS\u0010\u000f\u001a\u001e\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u0002H\u00040\u0010j\b\u0012\u0004\u0012\u0002H\u0004`\u0011\"\b\b\u0000\u0010\u0004*\u00020\u0006\"\u000e\b\u0001\u0010\u0007*\b\u0012\u0004\u0012\u0002H\u00040\b*\u00020\r2\u0006\u0010\n\u001a\u0002H\u0007H\u0086@ø\u0001\u0000¢\u0006\u0002\u0010\u000e\u001a_\u0010\u0012\u001a*\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\u0004\u0012\u0004\u0012\u00020\u00050\u00010\u0010j\b\u0012\u0004\u0012\u0002H\u0004`\u0013\"\b\b\u0000\u0010\u0004*\u00020\u0006\"\u000e\b\u0001\u0010\u0007*\b\u0012\u0004\u0012\u0002H\u00040\b*\u00020\r2\u0006\u0010\n\u001a\u0002H\u0007H\u0086@ø\u0001\u0000¢\u0006\u0002\u0010\u000e\u001aC\u0010\u0014\u001a\u000e\u0012\u0004\u0012\u0002H\u0004\u0012\u0004\u0012\u00020\u00050\u0001\"\b\b\u0000\u0010\u0004*\u00020\u0006\"\u000e\b\u0001\u0010\u0007*\b\u0012\u0004\u0012\u0002H\u00040\b*\u00020\r2\u0006\u0010\n\u001a\u0002H\u0007H\u0086@ø\u0001\u0000¢\u0006\u0002\u0010\u000e\u001a\u0015\u0010\u0015\u001a\u00020\u0016*\u00020\rH\u0086@ø\u0001\u0000¢\u0006\u0002\u0010\u0017\u001aY\u0010\u0018\u001a*\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\u0004\u0012\u0004\u0012\u00020\u00050\u00010\u0010j\b\u0012\u0004\u0012\u0002H\u0004`\u0013\"\b\b\u0000\u0010\u0004*\u00020\u0006\"\u000e\b\u0001\u0010\u0007*\b\u0012\u0004\u0012\u0002H\u00040\b*\u00020\r2\u0006\u0010\n\u001a\u0002H\u0007¢\u0006\u0002\u0010\u0019\u001as\u0010\u0018\u001a\u00020\u001a\"\b\b\u0000\u0010\u0004*\u00020\u0006\"\u000e\b\u0001\u0010\u0007*\b\u0012\u0004\u0012\u0002H\u00040\b*\u00020\r2\u0006\u0010\n\u001a\u0002H\u00072\u001e\u0010\u001b\u001a\u001a\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u0002H\u0004\u0012\u0004\u0012\u00020\u00160\u001c2\u001e\u0010\u001d\u001a\u001a\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\u00160\u001cH\u0002¢\u0006\u0002\u0010\u001e\u001a?\u0010\u0018\u001a\u00020\u001a\"\b\b\u0000\u0010\u0004*\u00020\u0006\"\u000e\b\u0001\u0010\u0007*\b\u0012\u0004\u0012\u0002H\u00040\b*\u00020\r2\u0006\u0010\n\u001a\u0002H\u00072\f\u0010\u001f\u001a\b\u0012\u0004\u0012\u0002H\u00040 ¢\u0006\u0002\u0010!\u001a?\u0010\u0018\u001a\u00020\u001a\"\b\b\u0000\u0010\u0004*\u00020\u0006\"\u000e\b\u0001\u0010\u0007*\b\u0012\u0004\u0012\u0002H\u00040\b*\u00020\r2\u0006\u0010\n\u001a\u0002H\u00072\f\u0010\u001f\u001a\b\u0012\u0004\u0012\u0002H\u00040\"¢\u0006\u0002\u0010#\u001ag\u0010\u0018\u001a\u00020\u001a\"\b\b\u0000\u0010\u0004*\u00020\u0006\"\u000e\b\u0001\u0010\u0007*\b\u0012\u0004\u0012\u0002H\u00040\b*\u00020\r2\u0006\u0010\n\u001a\u0002H\u000724\u0010\u001f\u001a0\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\u0004\u0012\u0004\u0012\u00020\u00050\u0001\u0012\u0004\u0012\u00020\u00160\u001cj\b\u0012\u0004\u0012\u0002H\u0004`$¢\u0006\u0002\u0010%\u001a[\u0010\u0018\u001a\u00020\u001a\"\b\b\u0000\u0010\u0004*\u00020\u0006\"\u000e\b\u0001\u0010\u0007*\b\u0012\u0004\u0012\u0002H\u00040\b*\u00020\r2\u0006\u0010\n\u001a\u0002H\u00072(\u0010\u001f\u001a$\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\u0004\u0012\u0004\u0012\u00020\u00050\u0001\u0012\u0004\u0012\u00020\u00160&j\b\u0012\u0004\u0012\u0002H\u0004`'¢\u0006\u0002\u0010(\u001a2\u0010)\u001a*\u0012\u0004\u0012\u00020\r\u0012\u0004\u0012\u00020\u0003\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0016\u0012\u0004\u0012\u00020\u00050\u00010\u0010j\b\u0012\u0004\u0012\u00020\u0016`\u0013*\u00020\r\u0082\u0002\u0004\n\u0002\b\u0019¨\u0006*"}, d2 = {"serializeFor", "Lcom/github/kittinunf/result/Result;", "Lkotlin/Pair;", "Lcom/github/kittinunf/fuel/core/Response;", ExifInterface.GPS_DIRECTION_TRUE, "Lcom/github/kittinunf/fuel/core/FuelError;", "", "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "result", "deserializable", "(Lcom/github/kittinunf/result/Result;Lcom/github/kittinunf/fuel/core/Deserializable;)Lcom/github/kittinunf/result/Result;", "await", "Lcom/github/kittinunf/fuel/core/Request;", "(Lcom/github/kittinunf/fuel/core/Request;Lcom/github/kittinunf/fuel/core/Deserializable;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "awaitResponse", "Lkotlin/Triple;", "Lcom/github/kittinunf/fuel/core/ResponseOf;", "awaitResponseResult", "Lcom/github/kittinunf/fuel/core/ResponseResultOf;", "awaitResult", "awaitUnit", "", "(Lcom/github/kittinunf/fuel/core/Request;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "response", "(Lcom/github/kittinunf/fuel/core/Request;Lcom/github/kittinunf/fuel/core/Deserializable;)Lkotlin/Triple;", "Lcom/github/kittinunf/fuel/core/requests/CancellableRequest;", "success", "Lkotlin/Function3;", "failure", "(Lcom/github/kittinunf/fuel/core/Request;Lcom/github/kittinunf/fuel/core/Deserializable;Lkotlin/jvm/functions/Function3;Lkotlin/jvm/functions/Function3;)Lcom/github/kittinunf/fuel/core/requests/CancellableRequest;", "handler", "Lcom/github/kittinunf/fuel/core/Handler;", "(Lcom/github/kittinunf/fuel/core/Request;Lcom/github/kittinunf/fuel/core/Deserializable;Lcom/github/kittinunf/fuel/core/Handler;)Lcom/github/kittinunf/fuel/core/requests/CancellableRequest;", "Lcom/github/kittinunf/fuel/core/ResponseHandler;", "(Lcom/github/kittinunf/fuel/core/Request;Lcom/github/kittinunf/fuel/core/Deserializable;Lcom/github/kittinunf/fuel/core/ResponseHandler;)Lcom/github/kittinunf/fuel/core/requests/CancellableRequest;", "Lcom/github/kittinunf/fuel/core/ResponseResultHandler;", "(Lcom/github/kittinunf/fuel/core/Request;Lcom/github/kittinunf/fuel/core/Deserializable;Lkotlin/jvm/functions/Function3;)Lcom/github/kittinunf/fuel/core/requests/CancellableRequest;", "Lkotlin/Function1;", "Lcom/github/kittinunf/fuel/core/ResultHandler;", "(Lcom/github/kittinunf/fuel/core/Request;Lcom/github/kittinunf/fuel/core/Deserializable;Lkotlin/jvm/functions/Function1;)Lcom/github/kittinunf/fuel/core/requests/CancellableRequest;", "responseUnit", "fuel"}, k = 2, mv = {1, 4, 0})
 public final class DeserializableKt {
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$await$1, reason: invalid class name */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$await$1, reason: invalid class name */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001a\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0001\"\u000e\b\u0001\u0010\u0003*\b\u0012\u0004\u0012\u0002H\u00020\u0004*\u00020\u00052\u0006\u0010\u0006\u001a\u0002H\u00032\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u0002H\u00020\bH\u0086@"}, d2 = {"await", "", ExifInterface.GPS_DIRECTION_TRUE, "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "Lcom/github/kittinunf/fuel/core/Request;", "deserializable", "continuation", "Lkotlin/coroutines/Continuation;"}, k = 3, mv = {1, 4, 0})
     @DebugMetadata(c = "com.github.kittinunf.fuel.core.DeserializableKt", f = "Deserializable.kt", i = {0, 0}, l = {233}, m = "await", n = {"$this$await", "deserializable"}, s = {"L$0", "L$1"})
     static final class AnonymousClass1 extends ContinuationImpl {
@@ -51,8 +51,8 @@ public final class DeserializableKt {
         }
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$awaitResponse$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$awaitResponse$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000&\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0001\"\u000e\b\u0001\u0010\u0003*\b\u0012\u0004\u0012\u0002H\u00020\u0004*\u00020\u00052\u0006\u0010\u0006\u001a\u0002H\u00032(\u0010\u0007\u001a$\u0012 \u0012\u001e\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u0002H\u00020\tj\b\u0012\u0004\u0012\u0002H\u0002`\u000b0\bH\u0086@"}, d2 = {"awaitResponse", "", ExifInterface.GPS_DIRECTION_TRUE, "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "Lcom/github/kittinunf/fuel/core/Request;", "deserializable", "continuation", "Lkotlin/coroutines/Continuation;", "Lkotlin/Triple;", "Lcom/github/kittinunf/fuel/core/Response;", "Lcom/github/kittinunf/fuel/core/ResponseOf;"}, k = 3, mv = {1, 4, 0})
     @DebugMetadata(c = "com.github.kittinunf.fuel.core.DeserializableKt", f = "Deserializable.kt", i = {0, 0}, l = {256}, m = "awaitResponse", n = {"$this$awaitResponse", "deserializable"}, s = {"L$0", "L$1"})
     static final class C01871 extends ContinuationImpl {
@@ -73,8 +73,8 @@ public final class DeserializableKt {
         }
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$awaitResponseResult$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$awaitResponseResult$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000.\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0001\"\u000e\b\u0001\u0010\u0003*\b\u0012\u0004\u0012\u0002H\u00020\u0004*\u00020\u00052\u0006\u0010\u0006\u001a\u0002H\u000324\u0010\u0007\u001a0\u0012,\u0012*\u0012\u0004\u0012\u00020\u0005\u0012\u0004\u0012\u00020\n\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u00020\f0\u000b0\tj\b\u0012\u0004\u0012\u0002H\u0002`\r0\bH\u0086@"}, d2 = {"awaitResponseResult", "", ExifInterface.GPS_DIRECTION_TRUE, "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "Lcom/github/kittinunf/fuel/core/Request;", "deserializable", "continuation", "Lkotlin/coroutines/Continuation;", "Lkotlin/Triple;", "Lcom/github/kittinunf/fuel/core/Response;", "Lcom/github/kittinunf/result/Result;", "Lcom/github/kittinunf/fuel/core/FuelError;", "Lcom/github/kittinunf/fuel/core/ResponseResultOf;"}, k = 3, mv = {1, 4, 0})
     @DebugMetadata(c = "com.github.kittinunf.fuel.core.DeserializableKt", f = "Deserializable.kt", i = {0, 0}, l = {276}, m = "awaitResponseResult", n = {"$this$awaitResponseResult", "deserializable"}, s = {"L$0", "L$1"})
     static final class C01881 extends ContinuationImpl {
@@ -95,8 +95,8 @@ public final class DeserializableKt {
         }
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$awaitResult$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$awaitResult$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\"\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0001\"\u000e\b\u0001\u0010\u0003*\b\u0012\u0004\u0012\u0002H\u00020\u0004*\u00020\u00052\u0006\u0010\u0006\u001a\u0002H\u00032\u0018\u0010\u0007\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u0002H\u0002\u0012\u0004\u0012\u00020\n0\t0\bH\u0086@"}, d2 = {"awaitResult", "", ExifInterface.GPS_DIRECTION_TRUE, "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "Lcom/github/kittinunf/fuel/core/Request;", "deserializable", "continuation", "Lkotlin/coroutines/Continuation;", "Lcom/github/kittinunf/result/Result;", "Lcom/github/kittinunf/fuel/core/FuelError;"}, k = 3, mv = {1, 4, 0})
     @DebugMetadata(c = "com.github.kittinunf.fuel.core.DeserializableKt", f = "Deserializable.kt", i = {0, 0}, l = {267}, m = "awaitResult", n = {"$this$awaitResult", "deserializable"}, s = {"L$0", "L$1"})
     static final class C01891 extends ContinuationImpl {
@@ -117,27 +117,27 @@ public final class DeserializableKt {
         }
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\"\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003\"\u000e\b\u0001\u0010\u0004*\b\u0012\u0004\u0012\u0002H\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u0002H\u0002H\n¢\u0006\u0004\b\u000b\u0010\f"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "request", "Lcom/github/kittinunf/fuel/core/Request;", "response", "Lcom/github/kittinunf/fuel/core/Response;", "value", "invoke", "(Lcom/github/kittinunf/fuel/core/Request;Lcom/github/kittinunf/fuel/core/Response;Ljava/lang/Object;)V"}, k = 3, mv = {1, 4, 0})
     static final class C01901<T> extends Lambda implements Function3<Request, Response, T, Unit> {
         final /* synthetic */ Function3 $handler;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01901(Function3 function3) {
             super(3);
             this.$handler = function3;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Unit invoke(Request request, Response response, Object obj) {
             invoke2(request, response, obj);
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Request request, Response response, T value) {
             Intrinsics.checkNotNullParameter(request, "request");
             Intrinsics.checkNotNullParameter(response, "response");
@@ -146,13 +146,13 @@ public final class DeserializableKt {
         }
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$2, reason: invalid class name */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$2, reason: invalid class name */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000&\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003\"\u000e\b\u0001\u0010\u0004*\b\u0012\u0004\u0012\u0002H\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\n¢\u0006\u0002\b\f"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "request", "Lcom/github/kittinunf/fuel/core/Request;", "response", "Lcom/github/kittinunf/fuel/core/Response;", "error", "Lcom/github/kittinunf/fuel/core/FuelError;", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass2 extends Lambda implements Function3<Request, Response, FuelError, Unit> {
         final /* synthetic */ Function3 $handler;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(Function3 function3) {
             super(3);
             this.$handler = function3;
@@ -164,7 +164,7 @@ public final class DeserializableKt {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Request request, Response response, FuelError error) {
             Intrinsics.checkNotNullParameter(request, "request");
             Intrinsics.checkNotNullParameter(response, "response");
@@ -180,27 +180,27 @@ public final class DeserializableKt {
         return response(response, deserializable, new C01901(handler), new AnonymousClass2(handler));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$3, reason: invalid class name */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$3, reason: invalid class name */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\"\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003\"\u000e\b\u0001\u0010\u0004*\b\u0012\u0004\u0012\u0002H\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u0002H\u0002H\n¢\u0006\u0004\b\u000b\u0010\f"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "<anonymous parameter 0>", "Lcom/github/kittinunf/fuel/core/Request;", "<anonymous parameter 1>", "Lcom/github/kittinunf/fuel/core/Response;", "value", "invoke", "(Lcom/github/kittinunf/fuel/core/Request;Lcom/github/kittinunf/fuel/core/Response;Ljava/lang/Object;)V"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass3<T> extends Lambda implements Function3<Request, Response, T, Unit> {
         final /* synthetic */ Function1 $handler;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(Function1 function1) {
             super(3);
             this.$handler = function1;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Unit invoke(Request request, Response response, Object obj) {
             invoke2(request, response, obj);
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Request request, Response response, T value) {
             Intrinsics.checkNotNullParameter(request, "<anonymous parameter 0>");
             Intrinsics.checkNotNullParameter(response, "<anonymous parameter 1>");
@@ -209,13 +209,13 @@ public final class DeserializableKt {
         }
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$4, reason: invalid class name */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$4, reason: invalid class name */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000&\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003\"\u000e\b\u0001\u0010\u0004*\b\u0012\u0004\u0012\u0002H\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\n¢\u0006\u0002\b\f"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "<anonymous parameter 0>", "Lcom/github/kittinunf/fuel/core/Request;", "<anonymous parameter 1>", "Lcom/github/kittinunf/fuel/core/Response;", "error", "Lcom/github/kittinunf/fuel/core/FuelError;", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass4 extends Lambda implements Function3<Request, Response, FuelError, Unit> {
         final /* synthetic */ Function1 $handler;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass4(Function1 function1) {
             super(3);
             this.$handler = function1;
@@ -227,7 +227,7 @@ public final class DeserializableKt {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Request request, Response response, FuelError error) {
             Intrinsics.checkNotNullParameter(request, "<anonymous parameter 0>");
             Intrinsics.checkNotNullParameter(response, "<anonymous parameter 1>");
@@ -243,27 +243,27 @@ public final class DeserializableKt {
         return response(response, deserializable, new AnonymousClass3(handler), new AnonymousClass4(handler));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$5, reason: invalid class name */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$5, reason: invalid class name */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\"\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003\"\u000e\b\u0001\u0010\u0004*\b\u0012\u0004\u0012\u0002H\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u0002H\u0002H\n¢\u0006\u0004\b\u000b\u0010\f"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "request", "Lcom/github/kittinunf/fuel/core/Request;", "response", "Lcom/github/kittinunf/fuel/core/Response;", "value", "invoke", "(Lcom/github/kittinunf/fuel/core/Request;Lcom/github/kittinunf/fuel/core/Response;Ljava/lang/Object;)V"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass5<T> extends Lambda implements Function3<Request, Response, T, Unit> {
         final /* synthetic */ ResponseHandler $handler;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass5(ResponseHandler responseHandler) {
             super(3);
             this.$handler = responseHandler;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Unit invoke(Request request, Response response, Object obj) {
             invoke2(request, response, obj);
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Request request, Response response, T value) {
             Intrinsics.checkNotNullParameter(request, "request");
             Intrinsics.checkNotNullParameter(response, "response");
@@ -272,13 +272,13 @@ public final class DeserializableKt {
         }
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$6, reason: invalid class name */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$6, reason: invalid class name */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000&\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003\"\u000e\b\u0001\u0010\u0004*\b\u0012\u0004\u0012\u0002H\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\n¢\u0006\u0002\b\f"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "request", "Lcom/github/kittinunf/fuel/core/Request;", "response", "Lcom/github/kittinunf/fuel/core/Response;", "error", "Lcom/github/kittinunf/fuel/core/FuelError;", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass6 extends Lambda implements Function3<Request, Response, FuelError, Unit> {
         final /* synthetic */ ResponseHandler $handler;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass6(ResponseHandler responseHandler) {
             super(3);
             this.$handler = responseHandler;
@@ -290,7 +290,7 @@ public final class DeserializableKt {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Request request, Response response, FuelError error) {
             Intrinsics.checkNotNullParameter(request, "request");
             Intrinsics.checkNotNullParameter(response, "response");
@@ -306,27 +306,27 @@ public final class DeserializableKt {
         return response(response, deserializable, new AnonymousClass5(handler), new AnonymousClass6(handler));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$7, reason: invalid class name */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$7, reason: invalid class name */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\"\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003\"\u000e\b\u0001\u0010\u0004*\b\u0012\u0004\u0012\u0002H\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u0002H\u0002H\n¢\u0006\u0004\b\u000b\u0010\f"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "<anonymous parameter 0>", "Lcom/github/kittinunf/fuel/core/Request;", "<anonymous parameter 1>", "Lcom/github/kittinunf/fuel/core/Response;", "value", "invoke", "(Lcom/github/kittinunf/fuel/core/Request;Lcom/github/kittinunf/fuel/core/Response;Ljava/lang/Object;)V"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass7<T> extends Lambda implements Function3<Request, Response, T, Unit> {
         final /* synthetic */ Handler $handler;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass7(Handler handler) {
             super(3);
             this.$handler = handler;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // kotlin.jvm.functions.Function3
         public /* bridge */ /* synthetic */ Unit invoke(Request request, Response response, Object obj) {
             invoke2(request, response, obj);
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Request request, Response response, T value) {
             Intrinsics.checkNotNullParameter(request, "<anonymous parameter 0>");
             Intrinsics.checkNotNullParameter(response, "<anonymous parameter 1>");
@@ -335,13 +335,13 @@ public final class DeserializableKt {
         }
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$8, reason: invalid class name */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$response$8, reason: invalid class name */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000&\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003\"\u000e\b\u0001\u0010\u0004*\b\u0012\u0004\u0012\u0002H\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000bH\n¢\u0006\u0002\b\f"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "<anonymous parameter 0>", "Lcom/github/kittinunf/fuel/core/Request;", "<anonymous parameter 1>", "Lcom/github/kittinunf/fuel/core/Response;", "error", "Lcom/github/kittinunf/fuel/core/FuelError;", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass8 extends Lambda implements Function3<Request, Response, FuelError, Unit> {
         final /* synthetic */ Handler $handler;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass8(Handler handler) {
             super(3);
             this.$handler = handler;
@@ -353,7 +353,7 @@ public final class DeserializableKt {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Request request, Response response, FuelError error) {
             Intrinsics.checkNotNullParameter(request, "<anonymous parameter 0>");
             Intrinsics.checkNotNullParameter(response, "<anonymous parameter 1>");
@@ -416,7 +416,7 @@ public final class DeserializableKt {
         return CancellableRequest.INSTANCE.enableFor(request, request.getExecutionOptions().submit(new RequestTaskCallbacks(request, null, new DeserializableKt$response$asyncRequest$1(request, u, function3, function4), new DeserializableKt$response$asyncRequest$2(request, function4), 2, null)));
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public static final <T, U extends Deserializable<? extends T>> Object await(Request request, U u, Continuation<? super T> continuation) throws Throwable {
         AnonymousClass1 anonymousClass1;
         Object objM3752constructorimpl;
@@ -471,7 +471,7 @@ public final class DeserializableKt {
         return objAwait == IntrinsicsKt.getCOROUTINE_SUSPENDED() ? objAwait : Unit.INSTANCE;
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public static final <T, U extends Deserializable<? extends T>> Object awaitResponse(Request request, U u, Continuation<? super Triple<? extends Request, Response, ? extends T>> continuation) throws Throwable {
         C01871 c01871;
         Object objM3752constructorimpl;
@@ -522,7 +522,7 @@ public final class DeserializableKt {
         return objM3752constructorimpl;
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public static final <T, U extends Deserializable<? extends T>> Object awaitResult(Request request, U u, Continuation<? super Result<? extends T, ? extends FuelError>> continuation) throws Throwable {
         C01891 c01891;
         if (continuation instanceof C01891) {
@@ -569,7 +569,7 @@ public final class DeserializableKt {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     public static final <T, U extends Deserializable<? extends T>> Object awaitResponseResult(Request request, U u, Continuation<? super Triple<? extends Request, Response, ? extends Result<? extends T, ? extends FuelError>>> continuation) throws Throwable {
         C01881 c01881;
         Response response;
@@ -628,13 +628,13 @@ public final class DeserializableKt {
         return new Triple(request, response, failureError);
     }
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$serializeFor$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: Deserializable.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.DeserializableKt$serializeFor$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: Deserializable.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u001e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003\"\u000e\b\u0001\u0010\u0004*\b\u0012\u0004\u0012\u0002H\u00020\u00052\n\u0010\u0006\u001a\u00060\u0007j\u0002`\bH\n¢\u0006\u0002\b\t"}, d2 = {"<anonymous>", "Lcom/github/kittinunf/fuel/core/FuelError;", ExifInterface.GPS_DIRECTION_TRUE, "", "U", "Lcom/github/kittinunf/fuel/core/Deserializable;", "it", "Ljava/lang/Exception;", "Lkotlin/Exception;", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class C01912 extends Lambda implements Function1<Exception, FuelError> {
         final /* synthetic */ Result $result;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C01912(Result result) {
             super(1);
             this.$result = result;

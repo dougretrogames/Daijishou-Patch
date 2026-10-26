@@ -6,8 +6,8 @@ import com.google.android.gms.common.internal.Objects;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class AuthenticatorSelectionCriteria extends AbstractSafeParcelable {
     public static final Parcelable.Creator<AuthenticatorSelectionCriteria> CREATOR = new zzm();
     private final Attachment zza;
@@ -15,7 +15,7 @@ public class AuthenticatorSelectionCriteria extends AbstractSafeParcelable {
     private final zzay zzc;
     private final ResidentKeyRequirement zzd;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class Builder {
         private Attachment zza;
         private Boolean zzb;

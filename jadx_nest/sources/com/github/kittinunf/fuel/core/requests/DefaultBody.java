@@ -22,18 +22,18 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.Charsets;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: DefaultBody.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: DefaultBody.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\u000e\n\u0002\b\u0007\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u0012\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\b\u0018\u0000 .2\u00020\u0001:\u0001.B;\u0012\u0012\b\u0002\u0010\u0002\u001a\f\u0012\u0004\u0012\u00020\u00040\u0003j\u0002`\u0005\u0012\u0016\b\u0002\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0003j\u0004\u0018\u0001`\b\u0012\b\b\u0002\u0010\t\u001a\u00020\n¢\u0006\u0002\u0010\u000bJ\u0012\u0010\u0017\u001a\u00020\u00182\b\u0010\u0019\u001a\u0004\u0018\u00010\u0018H\u0016J\u0018\u0010\u001a\u001a\f\u0012\u0004\u0012\u00020\u00040\u0003j\u0002`\u0005HÀ\u0003¢\u0006\u0002\b\u001bJ\u0017\u0010\u001c\u001a\u0010\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0003j\u0004\u0018\u0001`\bHÂ\u0003J\t\u0010\u001d\u001a\u00020\nHÆ\u0003J?\u0010\u001e\u001a\u00020\u00002\u0012\b\u0002\u0010\u0002\u001a\f\u0012\u0004\u0012\u00020\u00040\u0003j\u0002`\u00052\u0016\b\u0002\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0003j\u0004\u0018\u0001`\b2\b\b\u0002\u0010\t\u001a\u00020\nHÆ\u0001J\u0013\u0010\u001f\u001a\u00020 2\b\u0010!\u001a\u0004\u0018\u00010\"HÖ\u0003J\t\u0010#\u001a\u00020$HÖ\u0001J\b\u0010%\u001a\u00020 H\u0016J\b\u0010&\u001a\u00020 H\u0016J\b\u0010'\u001a\u00020(H\u0016J\b\u0010)\u001a\u00020\u0004H\u0016J\t\u0010*\u001a\u00020\u0018HÖ\u0001J\u0010\u0010+\u001a\u00020\u00072\u0006\u0010,\u001a\u00020-H\u0016R\u001c\u0010\u0006\u001a\u0010\u0012\u0004\u0012\u00020\u0007\u0018\u00010\u0003j\u0004\u0018\u0001`\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0011\u0010\t\u001a\u00020\n¢\u0006\b\n\u0000\u001a\u0004\b\f\u0010\rR\u001d\u0010\u000e\u001a\u0004\u0018\u00010\u00078VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u0011\u0010\u0012\u001a\u0004\b\u000f\u0010\u0010R$\u0010\u0002\u001a\f\u0012\u0004\u0012\u00020\u00040\u0003j\u0002`\u0005X\u0080\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u0014\"\u0004\b\u0015\u0010\u0016¨\u0006/"}, d2 = {"Lcom/github/kittinunf/fuel/core/requests/DefaultBody;", "Lcom/github/kittinunf/fuel/core/Body;", "openStream", "Lkotlin/Function0;", "Ljava/io/InputStream;", "Lcom/github/kittinunf/fuel/core/BodySource;", "calculateLength", "", "Lcom/github/kittinunf/fuel/core/BodyLength;", "charset", "Ljava/nio/charset/Charset;", "(Lkotlin/jvm/functions/Function0;Lkotlin/jvm/functions/Function0;Ljava/nio/charset/Charset;)V", "getCharset", "()Ljava/nio/charset/Charset;", "length", "getLength", "()Ljava/lang/Long;", "length$delegate", "Lkotlin/Lazy;", "getOpenStream$fuel", "()Lkotlin/jvm/functions/Function0;", "setOpenStream$fuel", "(Lkotlin/jvm/functions/Function0;)V", "asString", "", "contentType", "component1", "component1$fuel", "component2", "component3", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "", "hashCode", "", "isConsumed", "isEmpty", "toByteArray", "", "toStream", "toString", "writeTo", "outputStream", "Ljava/io/OutputStream;", "Companion", "fuel"}, k = 1, mv = {1, 4, 0})
 public final /* data */ class DefaultBody implements Body {
     private Function0<Long> calculateLength;
     private final Charset charset;
 
-    /* JADX INFO: renamed from: length$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: length$delegate, reason: from kotlin metadata */
     private final Lazy length;
     private Function0<? extends InputStream> openStream;
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final Function0<ByteArrayInputStream> EMPTY_STREAM = DefaultBody$Companion$EMPTY_STREAM$1.INSTANCE;
     private static final Function0 CONSUMED_STREAM = DefaultBody$Companion$CONSUMED_STREAM$1.INSTANCE;
@@ -46,7 +46,7 @@ public final /* data */ class DefaultBody implements Body {
         return this.calculateLength;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ DefaultBody copy$default(DefaultBody defaultBody, Function0 function0, Function0 function1, Charset charset, int i, Object obj) {
         if ((i & 1) != 0) {
             function0 = defaultBody.openStream;
@@ -64,7 +64,7 @@ public final /* data */ class DefaultBody implements Body {
         return this.openStream;
     }
 
-    /* JADX INFO: renamed from: component3, reason: from getter */
+    /* INFO: renamed from: component3, reason: from getter */
     public final Charset getCharset() {
         return this.charset;
     }
@@ -118,7 +118,7 @@ public final /* data */ class DefaultBody implements Body {
         return Body.DefaultImpls.asRepeatable(this);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public /* synthetic */ DefaultBody(Function0 function0, Function0 function1, Charset charset, int i, DefaultConstructorMarker defaultConstructorMarker) {
         function0 = (i & 1) != 0 ? EMPTY_STREAM : function0;
         if ((i & 2) != 0) {
@@ -223,7 +223,7 @@ public final /* data */ class DefaultBody implements Body {
         return this.openStream == CONSUMED_STREAM;
     }
 
-    /* JADX INFO: compiled from: DefaultBody.kt */
+    /* INFO: compiled from: DefaultBody.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u0001\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J8\u0010\b\u001a\u00020\t2\u0010\u0010\n\u001a\f\u0012\u0004\u0012\u00020\u000b0\u0004j\u0002`\f2\u0014\u0010\r\u001a\u0010\u0012\u0004\u0012\u00020\u000e\u0018\u00010\u0004j\u0004\u0018\u0001`\u000f2\b\b\u0002\u0010\u0010\u001a\u00020\u0011R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\b\u0012\u0004\u0012\u00020\u00070\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0012"}, d2 = {"Lcom/github/kittinunf/fuel/core/requests/DefaultBody$Companion;", "", "()V", "CONSUMED_STREAM", "Lkotlin/Function0;", "", "EMPTY_STREAM", "Ljava/io/ByteArrayInputStream;", TypedValues.TransitionType.S_FROM, "Lcom/github/kittinunf/fuel/core/requests/DefaultBody;", "openStream", "Ljava/io/InputStream;", "Lcom/github/kittinunf/fuel/core/BodySource;", "calculateLength", "", "Lcom/github/kittinunf/fuel/core/BodyLength;", "charset", "Ljava/nio/charset/Charset;", "fuel"}, k = 1, mv = {1, 4, 0})
     public static final class Companion {
         private Companion() {

@@ -9,7 +9,7 @@ import org.slf4j.event.EventRecodingLogger;
 import org.slf4j.event.LoggingEvent;
 import org.slf4j.event.SubstituteLoggingEvent;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SubstituteLogger implements Logger {
     private volatile Logger _delegate;
     private final boolean createdPostInitialization;

@@ -5,7 +5,7 @@ import androidx.constraintlayout.core.state.State;
 import androidx.constraintlayout.core.utils.GridCore;
 import androidx.constraintlayout.core.widgets.HelperWidget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class GridReference extends HelperReference {
     private static final String SPANS_RESPECT_WIDGET_ORDER_STRING = "spansrespectwidgetorder";
     private static final String SUB_GRID_BY_COL_ROW_STRING = "subgridbycolrow";

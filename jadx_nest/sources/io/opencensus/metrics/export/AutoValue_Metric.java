@@ -2,7 +2,7 @@ package io.opencensus.metrics.export;
 
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_Metric extends Metric {
     private final MetricDescriptor metricDescriptor;
     private final List<TimeSeries> timeSeriesList;

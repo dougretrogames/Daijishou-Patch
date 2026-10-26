@@ -32,7 +32,7 @@ import java.util.logging.Logger;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ComputeEngineCredentials extends GoogleCredentials implements ServiceAccountSigner, IdTokenProvider {
     static final int COMPUTE_PING_CONNECTION_TIMEOUT_MS = 500;
     static final String DEFAULT_METADATA_SERVER_URL = "http://metadata.google.internal";

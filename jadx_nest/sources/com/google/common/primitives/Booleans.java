@@ -13,7 +13,7 @@ import java.util.RandomAccess;
 import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class Booleans {
     public static int compare(boolean a, boolean b) {
@@ -74,7 +74,7 @@ public final class Booleans {
         return indexOf(array, target, 0, array.length);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int indexOf(boolean[] array, boolean target, int start, int end) {
         while (start < end) {
             if (array[start] == target) {
@@ -105,7 +105,7 @@ public final class Booleans {
         return lastIndexOf(array, target, 0, array.length);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int lastIndexOf(boolean[] array, boolean target, int start, int end) {
         for (int i = end - 1; i >= start; i--) {
             if (array[i] == target) {

@@ -7,7 +7,7 @@ import org.apache.http.message.TokenParser;
 import org.commonmark.node.Node;
 import org.commonmark.node.Visitor;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class DumpNodes {
 
     public interface NodeProcessor {
@@ -28,7 +28,7 @@ public abstract class DumpNodes {
         return sb.toString();
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.utils.DumpNodes$1, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.utils.DumpNodes$1, reason: invalid class name */
     class AnonymousClass1 implements InvocationHandler {
         final /* synthetic */ StringBuilder val$builder;
         final /* synthetic */ Indent val$indent;
@@ -87,7 +87,7 @@ public abstract class DumpNodes {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void visitChildren(Visitor visitor, Node node) {
         Node firstChild = node.getFirstChild();
         while (firstChild != null) {

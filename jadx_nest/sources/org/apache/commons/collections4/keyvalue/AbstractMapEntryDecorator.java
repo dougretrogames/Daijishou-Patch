@@ -4,7 +4,7 @@ import java.util.Map;
 import java.util.Objects;
 import org.apache.commons.collections4.KeyValue;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractMapEntryDecorator<K, V> implements Map.Entry<K, V>, KeyValue<K, V> {
     private final Map.Entry<K, V> entry;
 

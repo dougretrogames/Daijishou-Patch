@@ -21,7 +21,7 @@ import org.apache.commons.collections4.OrderedMapIterator;
 import org.apache.commons.collections4.iterators.EmptyOrderedMapIterator;
 import org.apache.commons.collections4.keyvalue.UnmodifiableMapEntry;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> implements OrderedBidiMap<K, V>, Serializable {
     private static final long serialVersionUID = 721969328361807L;
     private transient Set<Map.Entry<K, V>> entrySet;
@@ -468,7 +468,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
             this.value = v;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void copyColor(Node<K, V> node, DataElement dataElement) {
             this.blackColor[dataElement.ordinal()] = node.blackColor[dataElement.ordinal()];
         }
@@ -485,7 +485,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
             return Objects.equals(getKey(), entry.getKey()) && Objects.equals(getValue(), entry.getValue());
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public Object getData(DataElement dataElement) {
             int iOrdinal = dataElement.ordinal();
             if (iOrdinal == 0) {
@@ -502,17 +502,17 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
             return this.key;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public Node<K, V> getLeft(DataElement dataElement) {
             return this.leftNode[dataElement.ordinal()];
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public Node<K, V> getParent(DataElement dataElement) {
             return this.parentNode[dataElement.ordinal()];
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public Node<K, V> getRight(DataElement dataElement) {
             return this.rightNode[dataElement.ordinal()];
         }
@@ -531,47 +531,47 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
             return this.hashCodeValue;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public boolean isBlack(DataElement dataElement) {
             return this.blackColor[dataElement.ordinal()];
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public boolean isLeftChild(DataElement dataElement) {
             return this.parentNode[dataElement.ordinal()] != null && this.parentNode[dataElement.ordinal()].leftNode[dataElement.ordinal()] == this;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public boolean isRed(DataElement dataElement) {
             return !this.blackColor[dataElement.ordinal()];
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public boolean isRightChild(DataElement dataElement) {
             return this.parentNode[dataElement.ordinal()] != null && this.parentNode[dataElement.ordinal()].rightNode[dataElement.ordinal()] == this;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setBlack(DataElement dataElement) {
             this.blackColor[dataElement.ordinal()] = true;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setLeft(Node<K, V> node, DataElement dataElement) {
             this.leftNode[dataElement.ordinal()] = node;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setParent(Node<K, V> node, DataElement dataElement) {
             this.parentNode[dataElement.ordinal()] = node;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setRed(DataElement dataElement) {
             this.blackColor[dataElement.ordinal()] = false;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setRight(Node<K, V> node, DataElement dataElement) {
             this.rightNode[dataElement.ordinal()] = node;
         }
@@ -581,7 +581,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
             throw new UnsupportedOperationException("Map.Entry.setValue is not supported");
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void swapColors(Node<K, V> node, DataElement dataElement) {
             boolean[] zArr = this.blackColor;
             int iOrdinal = dataElement.ordinal();
@@ -670,7 +670,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void checkKey(Object obj) {
         checkNonNullComparable(obj, DataElement.KEY);
     }
@@ -680,7 +680,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         checkValue(obj2);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void checkNonNullComparable(Object obj, DataElement dataElement) {
         Objects.requireNonNull(obj, Objects.toString(dataElement));
         if (!(obj instanceof Comparable)) {
@@ -755,7 +755,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean doEquals(Object obj, DataElement dataElement) {
         if (obj == this) {
             return true;
@@ -781,7 +781,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int doHashCode(DataElement dataElement) {
         int iHashCode = 0;
         if (this.nodeCount > 0) {
@@ -793,7 +793,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         return iHashCode;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void doPut(K k, V v) {
         checkKeyAndValue(k, v);
         doRemoveKey(k);
@@ -837,7 +837,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void doRedBlackDelete(Node<K, V> node) {
         for (DataElement dataElement : DataElement.values()) {
             if (node.getLeft(dataElement) != null && node.getRight(dataElement) != null) {
@@ -979,7 +979,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         makeBlack(this.rootNode[dataElement.ordinal()], dataElement);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public V doRemoveKey(Object obj) {
         Node<K, V> nodeLookupKey = lookupKey(obj);
         if (nodeLookupKey == null) {
@@ -989,7 +989,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         return (V) nodeLookupKey.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public K doRemoveValue(Object obj) {
         Node<K, V> nodeLookupValue = lookupValue(obj);
         if (nodeLookupValue == null) {
@@ -999,7 +999,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         return (K) nodeLookupValue.getKey();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public String doToString(DataElement dataElement) {
         if (this.nodeCount == 0) {
             return "{}";
@@ -1105,7 +1105,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         return node.getRight(dataElement);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Node<K, V> greatestNode(Node<K, V> node, DataElement dataElement) {
         if (node != null) {
             while (node.getRight(dataElement) != null) {
@@ -1181,7 +1181,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         return (K) greatestNode(this.rootNode[DataElement.KEY.ordinal()], DataElement.KEY).getKey();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Node<K, V> leastNode(Node<K, V> node, DataElement dataElement) {
         if (node != null) {
             while (node.getLeft(dataElement) != null) {
@@ -1191,7 +1191,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         return node;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public <T extends Comparable<T>> Node<K, V> lookup(Object obj, DataElement dataElement) {
         Node<K, V> left = this.rootNode[dataElement.ordinal()];
         while (left != null) {
@@ -1204,12 +1204,12 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Node<K, V> lookupKey(Object obj) {
         return lookup(obj, DataElement.KEY);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Node<K, V> lookupValue(Object obj) {
         return lookup(obj, DataElement.VALUE);
     }
@@ -1226,7 +1226,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         this.modifications++;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Node<K, V> nextGreater(Node<K, V> node, DataElement dataElement) {
         if (node == null) {
             return null;
@@ -1257,7 +1257,7 @@ public class TreeBidiMap<K extends Comparable<K>, V extends Comparable<V>> imple
         return (K) nodeNextGreater.getKey();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Node<K, V> nextSmaller(Node<K, V> node, DataElement dataElement) {
         if (node == null) {
             return null;

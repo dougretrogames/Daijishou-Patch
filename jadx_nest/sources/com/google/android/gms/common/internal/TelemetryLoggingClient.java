@@ -6,8 +6,8 @@ import com.google.errorprone.annotations.DoNotMock;
 import com.google.errorprone.annotations.RestrictedInheritance;
 import com.google.errorprone.annotations.ResultIgnorabilityUnspecified;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 @DoNotMock("Use canonical fakes instead. go/cheezhead-testing-methodology")
 @RestrictedInheritance(allowedOnPath = ".*java.*/com/google/android/gms.*", explanation = "Use canonical fakes instead.", link = "go/gmscore-restrictedinheritance")
 public interface TelemetryLoggingClient extends HasApiKey<TelemetryLoggingOptions> {

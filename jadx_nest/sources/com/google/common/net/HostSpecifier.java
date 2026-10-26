@@ -5,7 +5,7 @@ import java.net.InetAddress;
 import java.text.ParseException;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class HostSpecifier {
     private final String canonicalForm;

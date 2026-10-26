@@ -26,12 +26,12 @@ import kotlinx.serialization.json.internal.WriteMode;
 import kotlinx.serialization.modules.SerializersModule;
 import kotlinx.serialization.modules.SerializersModuleBuildersKt;
 
-/* JADX INFO: compiled from: Json.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: Json.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000H\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u0000 %2\u00020\u0001:\u0001%B\u0017\b\u0004\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J'\u0010\u0011\u001a\u0002H\u0012\"\u0004\b\u0000\u0010\u00122\f\u0010\u0013\u001a\b\u0012\u0004\u0012\u0002H\u00120\u00142\u0006\u0010\u0015\u001a\u00020\u0016¢\u0006\u0002\u0010\u0017J \u0010\u0018\u001a\u0002H\u0012\"\u0006\b\u0000\u0010\u0012\u0018\u00012\b\b\u0001\u0010\u0019\u001a\u00020\u001aH\u0086\b¢\u0006\u0002\u0010\u001bJ)\u0010\u0018\u001a\u0002H\u0012\"\u0004\b\u0000\u0010\u00122\f\u0010\u0013\u001a\b\u0012\u0004\u0012\u0002H\u00120\u00142\b\b\u0001\u0010\u0019\u001a\u00020\u001a¢\u0006\u0002\u0010\u001cJ'\u0010\u001d\u001a\u00020\u0016\"\u0004\b\u0000\u0010\u00122\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u0002H\u00120\u001f2\u0006\u0010 \u001a\u0002H\u0012¢\u0006\u0002\u0010!J'\u0010\"\u001a\u00020\u001a\"\u0004\b\u0000\u0010\u00122\f\u0010\u001e\u001a\b\u0012\u0004\u0012\u0002H\u00120\u001f2\u0006\u0010 \u001a\u0002H\u0012¢\u0006\u0002\u0010#J\u0010\u0010$\u001a\u00020\u00162\b\b\u0001\u0010\u0019\u001a\u00020\u001aR\u001c\u0010\u0007\u001a\u00020\b8\u0000X\u0081\u0004¢\u0006\u000e\n\u0000\u0012\u0004\b\t\u0010\n\u001a\u0004\b\u000b\u0010\fR\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u0014\u0010\u0004\u001a\u00020\u0005X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010\u0082\u0001\u0002&'¨\u0006("}, d2 = {"Lkotlinx/serialization/json/Json;", "Lkotlinx/serialization/StringFormat;", "configuration", "Lkotlinx/serialization/json/JsonConfiguration;", "serializersModule", "Lkotlinx/serialization/modules/SerializersModule;", "(Lkotlinx/serialization/json/JsonConfiguration;Lkotlinx/serialization/modules/SerializersModule;)V", "_schemaCache", "Lkotlinx/serialization/json/internal/DescriptorSchemaCache;", "get_schemaCache$kotlinx_serialization_json$annotations", "()V", "get_schemaCache$kotlinx_serialization_json", "()Lkotlinx/serialization/json/internal/DescriptorSchemaCache;", "getConfiguration", "()Lkotlinx/serialization/json/JsonConfiguration;", "getSerializersModule", "()Lkotlinx/serialization/modules/SerializersModule;", "decodeFromJsonElement", ExifInterface.GPS_DIRECTION_TRUE, "deserializer", "Lkotlinx/serialization/DeserializationStrategy;", "element", "Lkotlinx/serialization/json/JsonElement;", "(Lkotlinx/serialization/DeserializationStrategy;Lkotlinx/serialization/json/JsonElement;)Ljava/lang/Object;", "decodeFromString", TypedValues.Custom.S_STRING, "", "(Ljava/lang/String;)Ljava/lang/Object;", "(Lkotlinx/serialization/DeserializationStrategy;Ljava/lang/String;)Ljava/lang/Object;", "encodeToJsonElement", "serializer", "Lkotlinx/serialization/SerializationStrategy;", "value", "(Lkotlinx/serialization/SerializationStrategy;Ljava/lang/Object;)Lkotlinx/serialization/json/JsonElement;", "encodeToString", "(Lkotlinx/serialization/SerializationStrategy;Ljava/lang/Object;)Ljava/lang/String;", "parseToJsonElement", Profile.DEFAULT_PROFILE_NAME, "Lkotlinx/serialization/json/Json$Default;", "Lkotlinx/serialization/json/JsonImpl;", "kotlinx-serialization-json"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public abstract class Json implements StringFormat {
 
-    /* JADX INFO: renamed from: Default, reason: from kotlin metadata */
+    /* INFO: renamed from: Default, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private final DescriptorSchemaCache _schemaCache;
     private final JsonConfiguration configuration;
@@ -60,13 +60,13 @@ public abstract class Json implements StringFormat {
         return this.serializersModule;
     }
 
-    /* JADX INFO: renamed from: get_schemaCache$kotlinx_serialization_json, reason: from getter */
+    /* INFO: renamed from: get_schemaCache$kotlinx_serialization_json, reason: from getter */
     public final DescriptorSchemaCache get_schemaCache() {
         return this._schemaCache;
     }
 
-    /* JADX INFO: renamed from: kotlinx.serialization.json.Json$Default, reason: from kotlin metadata */
-    /* JADX INFO: compiled from: Json.kt */
+    /* INFO: renamed from: kotlinx.serialization.json.Json$Default, reason: from kotlin metadata */
+    /* INFO: compiled from: Json.kt */
     @Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0087\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0003"}, d2 = {"Lkotlinx/serialization/json/Json$Default;", "Lkotlinx/serialization/json/Json;", "()V", "kotlinx-serialization-json"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion extends Json {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {

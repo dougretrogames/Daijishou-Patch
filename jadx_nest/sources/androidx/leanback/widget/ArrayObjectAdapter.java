@@ -8,7 +8,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ArrayObjectAdapter extends ObjectAdapter {
     private static final Boolean DEBUG = false;
     private static final String TAG = "ArrayObjectAdapter";
@@ -144,7 +144,7 @@ public class ArrayObjectAdapter extends ObjectAdapter {
         this.mOldItems.clear();
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.ArrayObjectAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.ArrayObjectAdapter$1, reason: invalid class name */
     class AnonymousClass1 extends DiffUtil.Callback {
         final /* synthetic */ DiffCallback val$callback;
         final /* synthetic */ List val$itemList;
@@ -180,7 +180,7 @@ public class ArrayObjectAdapter extends ObjectAdapter {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.ArrayObjectAdapter$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.ArrayObjectAdapter$2, reason: invalid class name */
     class AnonymousClass2 implements ListUpdateCallback {
         AnonymousClass2() {
         }

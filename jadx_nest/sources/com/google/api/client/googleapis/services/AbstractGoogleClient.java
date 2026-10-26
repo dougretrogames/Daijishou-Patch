@@ -18,7 +18,7 @@ import java.util.regex.Pattern;
 import net.lingala.zip4j.util.InternalZipConstants;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class AbstractGoogleClient {
     private static final String GOOGLE_CLOUD_UNIVERSE_DOMAIN = "GOOGLE_CLOUD_UNIVERSE_DOMAIN";
     private static final Logger logger = Logger.getLogger(AbstractGoogleClient.class.getName());

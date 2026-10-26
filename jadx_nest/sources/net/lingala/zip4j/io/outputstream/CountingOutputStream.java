@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import net.lingala.zip4j.exception.ZipException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CountingOutputStream extends OutputStream implements OutputStreamWithSplitZipSupport {
     private long numberOfBytesWritten = 0;
     private OutputStream outputStream;

@@ -11,7 +11,7 @@ import org.apache.commons.codec.language.Soundex;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class ISO8601Utils {
     private static final String UTC_ID = "UTC";
     private static final TimeZone TIMEZONE_UTC = TimeZone.getTimeZone(UTC_ID);

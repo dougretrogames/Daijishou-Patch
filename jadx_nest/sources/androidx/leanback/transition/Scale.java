@@ -7,7 +7,7 @@ import android.transition.TransitionValues;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class Scale extends Transition {
     private static final String PROPNAME_SCALE = "android:leanback:scale";
 
@@ -40,7 +40,7 @@ class Scale extends Transition {
         return valueAnimatorOfFloat;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.Scale$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.Scale$1, reason: invalid class name */
     class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
         final /* synthetic */ View val$view;
 

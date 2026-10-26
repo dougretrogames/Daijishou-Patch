@@ -10,7 +10,7 @@ import java.io.StringReader;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class JsonStreamParser implements Iterator<JsonElement> {
     private final Object lock;
     private final JsonReader parser;
@@ -26,7 +26,7 @@ public final class JsonStreamParser implements Iterator<JsonElement> {
         this.lock = new Object();
     }
 
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* WARN: Can't rename method to resolve collision */
     @Override // java.util.Iterator
     public JsonElement next() throws JsonParseException {
         if (!hasNext()) {

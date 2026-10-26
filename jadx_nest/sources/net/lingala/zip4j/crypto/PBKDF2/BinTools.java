@@ -1,6 +1,6 @@
 package net.lingala.zip4j.crypto.PBKDF2;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class BinTools {
     public static final String hex = "0123456789ABCDEF";
 

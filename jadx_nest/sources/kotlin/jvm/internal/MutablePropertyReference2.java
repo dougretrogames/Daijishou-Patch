@@ -4,7 +4,7 @@ import kotlin.reflect.KCallable;
 import kotlin.reflect.KMutableProperty2;
 import kotlin.reflect.KProperty2;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class MutablePropertyReference2 extends MutablePropertyReference implements KMutableProperty2 {
     public MutablePropertyReference2() {
     }

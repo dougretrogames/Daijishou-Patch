@@ -16,7 +16,7 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class IntentSanitizer {
     private static final String TAG = "IntentSanitizer";
     private boolean mAllowAnyComponent;
@@ -440,9 +440,9 @@ public class IntentSanitizer {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:38:0x00bc A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:39:0x00be  */
-    /* JADX WARN: Code duplicated, block: B:40:0x00cd  */
+    /* WARN: Code duplicated, block: B:38:0x00bc A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:39:0x00be  */
+    /* WARN: Code duplicated, block: B:40:0x00cd  */
     static void sanitizeClipData(Intent intent, Intent intent2, Predicate<ClipData> predicate, boolean z, Predicate<Uri> predicate2, Consumer<String> consumer) {
         CharSequence text;
         Uri uri;

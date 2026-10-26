@@ -7,14 +7,14 @@ import java.io.OutputStream;
 import java.util.zip.GZIPOutputStream;
 import org.eclipse.jgit.util.HttpSupport;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GZipEncoding implements HttpEncoding {
     @Override // com.google.api.client.http.HttpEncoding
     public String getName() {
         return HttpSupport.ENCODING_GZIP;
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.http.GZipEncoding$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.http.GZipEncoding$1, reason: invalid class name */
     class AnonymousClass1 extends BufferedOutputStream {
         AnonymousClass1(OutputStream outputStream) {
             super(outputStream);

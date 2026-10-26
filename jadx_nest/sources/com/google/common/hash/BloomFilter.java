@@ -18,7 +18,7 @@ import java.io.Serializable;
 import java.math.RoundingMode;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class BloomFilter<T> implements Predicate<T>, Serializable {
     private static final long serialVersionUID = 912559;

@@ -9,7 +9,7 @@ import org.apache.http.entity.HttpEntityWrapper;
 import org.apache.http.util.Args;
 import org.apache.http.util.EntityUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class BasicManagedEntity extends HttpEntityWrapper implements ConnectionReleaseTrigger, EofSensorWatcher {
     protected final boolean attemptReuse;

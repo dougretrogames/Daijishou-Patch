@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ContentInfoCompat {
     public static final int FLAG_CONVERT_TO_PLAIN_TEXT = 1;
     public static final int SOURCE_APP = 0;

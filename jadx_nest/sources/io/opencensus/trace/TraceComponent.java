@@ -6,7 +6,7 @@ import io.opencensus.trace.config.TraceConfig;
 import io.opencensus.trace.export.ExportComponent;
 import io.opencensus.trace.propagation.PropagationComponent;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class TraceComponent {
     public abstract Clock getClock();
 

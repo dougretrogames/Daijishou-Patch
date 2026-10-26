@@ -2,7 +2,7 @@ package androidx.constraintlayout.core.widgets;
 
 import androidx.constraintlayout.core.LinearSystem;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Optimizer {
     static final int FLAG_CHAIN_DANGLING = 1;
     static final int FLAG_RECOMPUTE_BOUNDS = 2;

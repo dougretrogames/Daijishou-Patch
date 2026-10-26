@@ -3,7 +3,7 @@ package androidx.recyclerview.widget;
 import android.graphics.Rect;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class OrientationHelper {
     public static final int HORIZONTAL = 0;
     private static final int INVALID_SIZE = Integer.MIN_VALUE;
@@ -77,7 +77,7 @@ public abstract class OrientationHelper {
         throw new IllegalArgumentException("invalid orientation");
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.OrientationHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.OrientationHelper$1, reason: invalid class name */
     class AnonymousClass1 extends OrientationHelper {
         AnonymousClass1(RecyclerView.LayoutManager layoutManager) {
             super(layoutManager, null);
@@ -167,7 +167,7 @@ public abstract class OrientationHelper {
         return new AnonymousClass1(layoutManager);
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.OrientationHelper$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.OrientationHelper$2, reason: invalid class name */
     class AnonymousClass2 extends OrientationHelper {
         AnonymousClass2(RecyclerView.LayoutManager layoutManager) {
             super(layoutManager, null);

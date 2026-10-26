@@ -2,7 +2,7 @@ package com.googlecode.javaewah32;
 
 import com.googlecode.javaewah.ChunkIterator;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class ChunkIteratorImpl32 implements ChunkIterator {
     private final Buffer32 buffer;
     private final EWAHIterator32 ewahIter;

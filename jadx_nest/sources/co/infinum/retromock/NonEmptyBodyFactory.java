@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import javax.annotation.Nonnull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class NonEmptyBodyFactory implements BodyFactory {
     private final BodyFactory bodyFactory;
 
@@ -22,7 +22,7 @@ public class NonEmptyBodyFactory implements BodyFactory {
         return this.bodyFactory.create(str);
     }
 
-    /* JADX INFO: renamed from: co.infinum.retromock.NonEmptyBodyFactory$1, reason: invalid class name */
+    /* INFO: renamed from: co.infinum.retromock.NonEmptyBodyFactory$1, reason: invalid class name */
     class AnonymousClass1 extends InputStream {
         @Override // java.io.InputStream
         public int read() throws IOException {

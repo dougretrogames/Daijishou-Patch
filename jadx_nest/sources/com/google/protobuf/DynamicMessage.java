@@ -9,7 +9,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class DynamicMessage extends AbstractMessage {
     private final FieldSet<Descriptors.FieldDescriptor> fields;
     private int memoizedSize = -1;
@@ -189,7 +189,7 @@ public final class DynamicMessage extends AbstractMessage {
         return newBuilderForType().mergeFrom((Message) this);
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.DynamicMessage$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.DynamicMessage$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<DynamicMessage> {
         AnonymousClass1() {
         }
@@ -414,7 +414,7 @@ public final class DynamicMessage extends AbstractMessage {
             return buildPartial();
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public DynamicMessage buildParsed() throws InvalidProtocolBufferException {
             if (!isInitialized()) {
                 Descriptors.Descriptor descriptor = this.type;
@@ -445,7 +445,7 @@ public final class DynamicMessage extends AbstractMessage {
         }
 
         @Override // com.google.protobuf.AbstractMessage.Builder, com.google.protobuf.AbstractMessageLite.Builder
-        /* JADX INFO: renamed from: clone */
+        /* INFO: renamed from: clone */
         public Builder mo3377clone() {
             Builder builder = new Builder(this.type);
             builder.fields.mergeFrom(this.fields.build());
@@ -696,7 +696,7 @@ public final class DynamicMessage extends AbstractMessage {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.DynamicMessage$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.DynamicMessage$2, reason: invalid class name */
     static /* synthetic */ class AnonymousClass2 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$Descriptors$FieldDescriptor$Type;
 

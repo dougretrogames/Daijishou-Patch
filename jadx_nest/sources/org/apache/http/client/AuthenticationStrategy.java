@@ -10,7 +10,7 @@ import org.apache.http.auth.AuthScheme;
 import org.apache.http.auth.MalformedChallengeException;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface AuthenticationStrategy {
     void authFailed(HttpHost httpHost, AuthScheme authScheme, HttpContext httpContext);
 

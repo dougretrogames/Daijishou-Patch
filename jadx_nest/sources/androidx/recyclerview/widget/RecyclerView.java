@@ -69,7 +69,7 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.io.FilenameUtils;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class RecyclerView extends ViewGroup implements ScrollingView, NestedScrollingChild2, NestedScrollingChild3 {
     static final int DEFAULT_ORIENTATION = 1;
     static final boolean DISPATCH_TEMP_DETACH = false;
@@ -268,7 +268,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         sVerboseLoggingEnabled = z;
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.RecyclerView$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.RecyclerView$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -288,7 +288,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.RecyclerView$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.RecyclerView$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -302,7 +302,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.RecyclerView$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.RecyclerView$3, reason: invalid class name */
     class AnonymousClass3 implements Interpolator {
         @Override // android.animation.TimeInterpolator
         public float getInterpolation(float f) {
@@ -314,7 +314,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.RecyclerView$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.RecyclerView$4, reason: invalid class name */
     class AnonymousClass4 implements ViewInfoStore.ProcessCallback {
         AnonymousClass4() {
         }
@@ -348,7 +348,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.RecyclerView$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.RecyclerView$5, reason: invalid class name */
     class AnonymousClass5 implements DifferentialMotionFlingTarget {
         AnonymousClass5() {
         }
@@ -564,7 +564,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         return str.contains(BranchConfig.LOCAL_REPOSITORY) ? str : RecyclerView.class.getPackage().getName() + FilenameUtils.EXTENSION_SEPARATOR + str;
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.RecyclerView$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.RecyclerView$6, reason: invalid class name */
     class AnonymousClass6 implements ChildHelper.Callback {
         AnonymousClass6() {
         }
@@ -674,7 +674,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         this.mChildHelper = new ChildHelper(new AnonymousClass6());
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.RecyclerView$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.RecyclerView$7, reason: invalid class name */
     class AnonymousClass7 implements AdapterHelper.Callback {
         AnonymousClass7() {
         }
@@ -1668,8 +1668,8 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         return fling(i, i2, 0, Integer.MAX_VALUE);
     }
 
-    /* JADX WARN: Code duplicated, block: B:39:0x0076  */
-    /* JADX WARN: Code duplicated, block: B:57:0x00b8  */
+    /* WARN: Code duplicated, block: B:39:0x0076  */
+    /* WARN: Code duplicated, block: B:57:0x00b8  */
     private boolean fling(int i, int i2, int i3, int i4) {
         int iMax;
         int i5;
@@ -1766,7 +1766,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         return false;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void startNestedScrollForType(int i) {
         boolean zCanScrollHorizontally = this.mLayout.canScrollHorizontally();
         int i2 = zCanScrollHorizontally;
@@ -1831,10 +1831,10 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         return this.mMaxFlingVelocity;
     }
 
-    /* JADX WARN: Code duplicated, block: B:12:0x0040  */
-    /* JADX WARN: Code duplicated, block: B:13:0x0056  */
-    /* JADX WARN: Code duplicated, block: B:15:0x005a  */
-    /* JADX WARN: Code duplicated, block: B:16:0x0071  */
+    /* WARN: Code duplicated, block: B:12:0x0040  */
+    /* WARN: Code duplicated, block: B:13:0x0056  */
+    /* WARN: Code duplicated, block: B:15:0x005a  */
+    /* WARN: Code duplicated, block: B:16:0x0071  */
     private void pullGlows(float f, float f2, float f3, float f4) {
         boolean z;
         boolean z2 = true;
@@ -2032,7 +2032,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         return this.mEdgeEffectFactory;
     }
 
-    /* JADX WARN: Code duplicated, block: B:28:0x0043  */
+    /* WARN: Code duplicated, block: B:28:0x0043  */
     @Override // android.view.ViewGroup, android.view.ViewParent
     public View focusSearch(View view, int i) {
         View viewOnFocusSearchFailed;
@@ -2185,7 +2185,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         return super.onRequestFocusInDescendants(i, rect);
     }
 
-    /* JADX WARN: Code duplicated, block: B:21:0x0053  */
+    /* WARN: Code duplicated, block: B:21:0x0053  */
     @Override // android.view.ViewGroup, android.view.View
     protected void onAttachedToWindow() {
         float refreshRate;
@@ -2436,7 +2436,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         super.requestDisallowInterceptTouchEvent(z);
     }
 
-    /* JADX WARN: Code duplicated, block: B:47:0x00de A[PHI: r1
+    /* WARN: Code duplicated, block: B:47:0x00de A[PHI: r1
   0x00de: PHI (r1v46 int) = (r1v26 int), (r1v50 int) binds: [B:41:0x00c7, B:45:0x00da] A[DONT_GENERATE, DONT_INLINE]] */
     @Override // android.view.View
     public boolean onTouchEvent(MotionEvent motionEvent) {
@@ -3615,9 +3615,9 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
         return viewHolder;
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x002a  */
-    /* JADX WARN: Code duplicated, block: B:17:0x0034  */
-    /* JADX WARN: Code duplicated, block: B:22:0x0036 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:15:0x002a  */
+    /* WARN: Code duplicated, block: B:17:0x0034  */
+    /* WARN: Code duplicated, block: B:22:0x0036 A[SYNTHETIC] */
     ViewHolder findViewHolderForPosition(int i, boolean z) {
         int unfilteredChildCount = this.mChildHelper.getUnfilteredChildCount();
         ViewHolder viewHolder = null;
@@ -4391,23 +4391,23 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
             return tryGetViewHolderForPositionByDeadline(i, z, Long.MAX_VALUE).itemView;
         }
 
-        /* JADX WARN: Code duplicated, block: B:102:0x020d  */
-        /* JADX WARN: Code duplicated, block: B:110:0x0249  */
-        /* JADX WARN: Code duplicated, block: B:111:0x0257  */
-        /* JADX WARN: Code duplicated, block: B:113:0x025f  */
-        /* JADX WARN: Code duplicated, block: B:114:0x026d  */
-        /* JADX WARN: Code duplicated, block: B:117:0x0273 A[ADDED_TO_REGION] */
-        /* JADX WARN: Code duplicated, block: B:119:0x0276  */
-        /* JADX WARN: Code duplicated, block: B:18:0x0037 A[DONT_INVERT] */
-        /* JADX WARN: Code duplicated, block: B:19:0x0039  */
-        /* JADX WARN: Code duplicated, block: B:21:0x0043  */
-        /* JADX WARN: Code duplicated, block: B:22:0x004e  */
-        /* JADX WARN: Code duplicated, block: B:24:0x0054  */
-        /* JADX WARN: Code duplicated, block: B:27:0x005c  */
-        /* JADX WARN: Code duplicated, block: B:29:0x005f  */
-        /* JADX WARN: Code duplicated, block: B:86:0x01c6  */
-        /* JADX WARN: Code duplicated, block: B:92:0x01f4  */
-        /* JADX WARN: Code duplicated, block: B:94:0x01fa  */
+        /* WARN: Code duplicated, block: B:102:0x020d  */
+        /* WARN: Code duplicated, block: B:110:0x0249  */
+        /* WARN: Code duplicated, block: B:111:0x0257  */
+        /* WARN: Code duplicated, block: B:113:0x025f  */
+        /* WARN: Code duplicated, block: B:114:0x026d  */
+        /* WARN: Code duplicated, block: B:117:0x0273 A[ADDED_TO_REGION] */
+        /* WARN: Code duplicated, block: B:119:0x0276  */
+        /* WARN: Code duplicated, block: B:18:0x0037 A[DONT_INVERT] */
+        /* WARN: Code duplicated, block: B:19:0x0039  */
+        /* WARN: Code duplicated, block: B:21:0x0043  */
+        /* WARN: Code duplicated, block: B:22:0x004e  */
+        /* WARN: Code duplicated, block: B:24:0x0054  */
+        /* WARN: Code duplicated, block: B:27:0x005c  */
+        /* WARN: Code duplicated, block: B:29:0x005f  */
+        /* WARN: Code duplicated, block: B:86:0x01c6  */
+        /* WARN: Code duplicated, block: B:92:0x01f4  */
+        /* WARN: Code duplicated, block: B:94:0x01fa  */
         ViewHolder tryGetViewHolderForPositionByDeadline(int i, boolean z, long j) {
             ViewHolder viewHolderCreateViewHolder;
             boolean z2;
@@ -5180,7 +5180,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
             }
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public final void bindViewHolder(VH vh, int i) {
             boolean z = vh.mBindingAdapter == null;
             if (z) {
@@ -5499,7 +5499,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
             this.mItemPrefetchEnabled = true;
         }
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.RecyclerView$LayoutManager$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.RecyclerView$LayoutManager$1, reason: invalid class name */
         class AnonymousClass1 implements ViewBoundsCheck.Callback {
             AnonymousClass1() {
             }
@@ -5530,7 +5530,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
             }
         }
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.RecyclerView$LayoutManager$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.RecyclerView$LayoutManager$2, reason: invalid class name */
         class AnonymousClass2 implements ViewBoundsCheck.Callback {
             AnonymousClass2() {
             }
@@ -6181,8 +6181,8 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:6:0x000d  */
-        /* JADX WARN: Code duplicated, block: B:8:0x0011 A[PHI: r3
+        /* WARN: Code duplicated, block: B:6:0x000d  */
+        /* WARN: Code duplicated, block: B:8:0x0011 A[PHI: r3
   0x0011: PHI (r3v3 int) = (r3v0 int), (r3v2 int), (r3v0 int) binds: [B:7:0x000f, B:11:0x0016, B:4:0x000a] A[DONT_GENERATE, DONT_INLINE]] */
         @Deprecated
         public static int getChildMeasureSpec(int i, int i2, int i3, boolean z) {
@@ -6209,9 +6209,9 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
             return View.MeasureSpec.makeMeasureSpec(i3, i5);
         }
 
-        /* JADX WARN: Code duplicated, block: B:12:0x001c  */
-        /* JADX WARN: Code duplicated, block: B:14:0x0020  */
-        /* JADX WARN: Code duplicated, block: B:21:0x002f  */
+        /* WARN: Code duplicated, block: B:12:0x001c  */
+        /* WARN: Code duplicated, block: B:14:0x0020  */
+        /* WARN: Code duplicated, block: B:21:0x002f  */
         public static int getChildMeasureSpec(int i, int i2, int i3, int i4, boolean z) {
             int iMax = Math.max(0, i - i3);
             if (z) {
@@ -6514,7 +6514,7 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
             return performAccessibilityAction(this.mRecyclerView.mRecycler, this.mRecyclerView.mState, i, bundle);
         }
 
-        /* JADX WARN: Code duplicated, block: B:28:0x008c A[PHI: r11
+        /* WARN: Code duplicated, block: B:28:0x008c A[PHI: r11
   0x008c: PHI (r11v8 int) = (r11v5 int), (r11v21 int) binds: [B:26:0x007f, B:19:0x0057] A[DONT_GENERATE, DONT_INLINE]] */
         public boolean performAccessibilityAction(Recycler recycler, State state, int i, Bundle bundle) {
             int paddingTop;
@@ -7530,12 +7530,12 @@ public class RecyclerView extends ViewGroup implements ScrollingView, NestedScro
             this.mLayoutState = savedState.mLayoutState;
         }
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.RecyclerView$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.RecyclerView$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);

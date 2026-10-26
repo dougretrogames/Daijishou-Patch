@@ -14,7 +14,7 @@ import org.apache.commons.collections4.collection.AbstractCollectionDecorator;
 import org.apache.commons.collections4.iterators.AbstractIteratorDecorator;
 import org.apache.commons.collections4.keyvalue.AbstractMapEntryDecorator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractDualBidiMap<K, V> implements BidiMap<K, V> {
     transient Set<Map.Entry<K, V>> entrySet;
     transient BidiMap<V, K> inverseBidiMap;

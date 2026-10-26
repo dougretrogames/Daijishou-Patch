@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Collection;
 import org.eclipse.jgit.annotations.Nullable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface CachedPackUriProvider {
     @Nullable
     PackInfo getInfo(CachedPack cachedPack, Collection<String> collection) throws IOException;

@@ -2,7 +2,7 @@ package androidx.recyclerview.widget;
 
 import androidx.collection.LongSparseArray;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 interface StableIdStorage {
 
     public interface StableIdLookup {
@@ -14,7 +14,7 @@ interface StableIdStorage {
     public static class NoStableIdStorage implements StableIdStorage {
         private final StableIdLookup mNoIdLookup = new AnonymousClass1();
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.StableIdStorage$NoStableIdStorage$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.StableIdStorage$NoStableIdStorage$1, reason: invalid class name */
         class AnonymousClass1 implements StableIdLookup {
             @Override // androidx.recyclerview.widget.StableIdStorage.StableIdLookup
             public long localToGlobal(long j) {
@@ -34,7 +34,7 @@ interface StableIdStorage {
     public static class SharedPoolStableIdStorage implements StableIdStorage {
         private final StableIdLookup mSameIdLookup = new AnonymousClass1();
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.StableIdStorage$SharedPoolStableIdStorage$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.StableIdStorage$SharedPoolStableIdStorage$1, reason: invalid class name */
         class AnonymousClass1 implements StableIdLookup {
             @Override // androidx.recyclerview.widget.StableIdStorage.StableIdLookup
             public long localToGlobal(long j) {

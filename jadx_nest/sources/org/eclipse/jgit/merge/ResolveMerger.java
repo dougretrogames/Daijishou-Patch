@@ -59,7 +59,7 @@ import org.eclipse.jgit.util.LfsFactory;
 import org.eclipse.jgit.util.TemporaryBuffer;
 import org.eclipse.jgit.util.io.EolStreamTypeUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ResolveMerger extends ThreeWayMerger {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$merge$ContentMergeStrategy = null;
     private static final Attributes NO_ATTRIBUTES = new Attributes(new Attribute[0]);
@@ -89,7 +89,7 @@ public class ResolveMerger extends ThreeWayMerger {
         DIRTY_WORKTREE,
         COULD_NOT_DELETE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static MergeFailureReason[] valuesCustom() {
             MergeFailureReason[] mergeFailureReasonArrValuesCustom = values();
             int length = mergeFailureReasonArrValuesCustom.length;
@@ -482,48 +482,48 @@ public class ResolveMerger extends ThreeWayMerger {
         this.workTreeUpdater.deleteFile(str, new File(nonNullRepo().getWorkTree(), str), this.workTreeUpdater.detectCheckoutStreamType(attributes), this.tw.getSmudgeCommand(attributes));
     }
 
-    /* JADX WARN: Code duplicated, block: B:155:0x02e1  */
-    /* JADX WARN: Code duplicated, block: B:160:0x02fa A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:161:0x02fc  */
-    /* JADX WARN: Code duplicated, block: B:163:0x030a  */
-    /* JADX WARN: Code duplicated, block: B:165:0x030f  */
-    /* JADX WARN: Code duplicated, block: B:167:0x0316  */
-    /* JADX WARN: Code duplicated, block: B:168:0x032b  */
-    /* JADX WARN: Code duplicated, block: B:169:0x032f  */
-    /* JADX WARN: Code duplicated, block: B:171:0x0341 A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:173:0x0347  */
-    /* JADX WARN: Code duplicated, block: B:175:0x0358  */
-    /* JADX WARN: Code duplicated, block: B:177:0x036b  */
-    /* JADX WARN: Code duplicated, block: B:179:0x036f  */
-    /* JADX WARN: Code duplicated, block: B:192:0x03a3 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:193:0x03a5  */
-    /* JADX WARN: Code duplicated, block: B:194:0x03c7  */
-    /* JADX WARN: Code duplicated, block: B:196:0x03d0  */
-    /* JADX WARN: Code duplicated, block: B:197:0x03d2  */
-    /* JADX WARN: Code duplicated, block: B:199:0x03d5  */
-    /* JADX WARN: Code duplicated, block: B:208:0x0403  */
-    /* JADX WARN: Code duplicated, block: B:210:0x0408 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:211:0x040a  */
-    /* JADX WARN: Code duplicated, block: B:212:0x040e  */
-    /* JADX WARN: Code duplicated, block: B:214:0x0414 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:215:0x0415  */
-    /* JADX WARN: Code duplicated, block: B:217:0x0428  */
-    /* JADX WARN: Code duplicated, block: B:218:0x0432  */
-    /* JADX WARN: Code duplicated, block: B:219:0x043e  */
-    /* JADX WARN: Code duplicated, block: B:221:0x0444  */
-    /* JADX WARN: Code duplicated, block: B:223:0x044a A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:224:0x044b  */
-    /* JADX WARN: Code duplicated, block: B:226:0x0451 A[ADDED_TO_REGION] */
-    /* JADX WARN: Code duplicated, block: B:242:0x03e3 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:79:0x015b  */
-    /* JADX WARN: Code duplicated, block: B:81:0x0165 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:82:0x0167  */
-    /* JADX WARN: Code duplicated, block: B:84:0x016a  */
-    /* JADX WARN: Code duplicated, block: B:86:0x0170  */
-    /* JADX WARN: Code duplicated, block: B:89:0x0186  */
-    /* JADX WARN: Code duplicated, block: B:92:0x019c  */
-    /* JADX WARN: Code duplicated, block: B:95:0x01ba  */
-    /* JADX WARN: Code duplicated, block: B:97:0x01c0 A[RETURN] */
+    /* WARN: Code duplicated, block: B:155:0x02e1  */
+    /* WARN: Code duplicated, block: B:160:0x02fa A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:161:0x02fc  */
+    /* WARN: Code duplicated, block: B:163:0x030a  */
+    /* WARN: Code duplicated, block: B:165:0x030f  */
+    /* WARN: Code duplicated, block: B:167:0x0316  */
+    /* WARN: Code duplicated, block: B:168:0x032b  */
+    /* WARN: Code duplicated, block: B:169:0x032f  */
+    /* WARN: Code duplicated, block: B:171:0x0341 A[ADDED_TO_REGION] */
+    /* WARN: Code duplicated, block: B:173:0x0347  */
+    /* WARN: Code duplicated, block: B:175:0x0358  */
+    /* WARN: Code duplicated, block: B:177:0x036b  */
+    /* WARN: Code duplicated, block: B:179:0x036f  */
+    /* WARN: Code duplicated, block: B:192:0x03a3 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:193:0x03a5  */
+    /* WARN: Code duplicated, block: B:194:0x03c7  */
+    /* WARN: Code duplicated, block: B:196:0x03d0  */
+    /* WARN: Code duplicated, block: B:197:0x03d2  */
+    /* WARN: Code duplicated, block: B:199:0x03d5  */
+    /* WARN: Code duplicated, block: B:208:0x0403  */
+    /* WARN: Code duplicated, block: B:210:0x0408 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:211:0x040a  */
+    /* WARN: Code duplicated, block: B:212:0x040e  */
+    /* WARN: Code duplicated, block: B:214:0x0414 A[RETURN] */
+    /* WARN: Code duplicated, block: B:215:0x0415  */
+    /* WARN: Code duplicated, block: B:217:0x0428  */
+    /* WARN: Code duplicated, block: B:218:0x0432  */
+    /* WARN: Code duplicated, block: B:219:0x043e  */
+    /* WARN: Code duplicated, block: B:221:0x0444  */
+    /* WARN: Code duplicated, block: B:223:0x044a A[RETURN] */
+    /* WARN: Code duplicated, block: B:224:0x044b  */
+    /* WARN: Code duplicated, block: B:226:0x0451 A[ADDED_TO_REGION] */
+    /* WARN: Code duplicated, block: B:242:0x03e3 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:79:0x015b  */
+    /* WARN: Code duplicated, block: B:81:0x0165 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:82:0x0167  */
+    /* WARN: Code duplicated, block: B:84:0x016a  */
+    /* WARN: Code duplicated, block: B:86:0x0170  */
+    /* WARN: Code duplicated, block: B:89:0x0186  */
+    /* WARN: Code duplicated, block: B:92:0x019c  */
+    /* WARN: Code duplicated, block: B:95:0x01ba  */
+    /* WARN: Code duplicated, block: B:97:0x01c0 A[RETURN] */
     protected boolean processEntry(CanonicalTreeParser canonicalTreeParser, CanonicalTreeParser canonicalTreeParser2, CanonicalTreeParser canonicalTreeParser3, DirCacheBuildIterator dirCacheBuildIterator, WorkingTreeIterator workingTreeIterator, boolean z, Attributes[] attributesArr) throws Throwable {
         DirCacheEntry dirCacheEntry;
         DirCacheEntry dirCacheEntry2;
@@ -1194,15 +1194,15 @@ public class ResolveMerger extends ThreeWayMerger {
         return z;
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$ArrayArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$ArrayArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     private void updateIndex(CanonicalTreeParser canonicalTreeParser, CanonicalTreeParser canonicalTreeParser2, CanonicalTreeParser canonicalTreeParser3, MergeResult<RawText> mergeResult, Attributes attributes) throws Throwable {
         Throwable th;
@@ -1263,7 +1263,7 @@ public class ResolveMerger extends ThreeWayMerger {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x0018 A[RETURN] */
+    /* WARN: Code duplicated, block: B:11:0x0018 A[RETURN] */
     private int mergeFileModes(int i, int i2, int i3) {
         if (i2 != i3) {
             if (i == i2) {
@@ -1353,7 +1353,7 @@ public class ResolveMerger extends ThreeWayMerger {
         this.attributesNodeProvider = attributesNodeProvider;
     }
 
-    /* JADX WARN: Code duplicated, block: B:19:0x007c A[DONT_GENERATE] */
+    /* WARN: Code duplicated, block: B:19:0x007c A[DONT_GENERATE] */
     protected boolean mergeTrees(AbstractTreeIterator abstractTreeIterator, RevTree revTree, RevTree revTree2, boolean z) throws IOException {
         WorkTreeUpdater workTreeUpdaterCreateWorkTreeUpdater;
         try {

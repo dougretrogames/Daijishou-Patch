@@ -32,8 +32,8 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: CategoryWidgetNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$refreshPlayableItems$1", f = "CategoryWidgetNavFragment.kt", i = {}, l = {629}, m = "invokeSuspendImpl", n = {}, s = {})
 final class CategoryWidgetNavFragment$onCreateView$refreshPlayableItems$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -41,7 +41,7 @@ final class CategoryWidgetNavFragment$onCreateView$refreshPlayableItems$1 extend
     int label;
     final /* synthetic */ CategoryWidgetNavFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     CategoryWidgetNavFragment$onCreateView$refreshPlayableItems$1(CategoryWidgetNavFragment categoryWidgetNavFragment, List<PlayableItemEntity> list, Continuation<?> continuation) {
         super(2, continuation);
         this.this$0 = categoryWidgetNavFragment;
@@ -114,8 +114,8 @@ final class CategoryWidgetNavFragment$onCreateView$refreshPlayableItems$1 extend
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$refreshPlayableItems$1$5, reason: invalid class name */
-    /* JADX INFO: compiled from: CategoryWidgetNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$refreshPlayableItems$1$5, reason: invalid class name */
+    /* INFO: compiled from: CategoryWidgetNavFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.daijishou_widget.widgets.category.CategoryWidgetNavFragment$onCreateView$refreshPlayableItems$1$5", f = "CategoryWidgetNavFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass5 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -125,7 +125,7 @@ final class CategoryWidgetNavFragment$onCreateView$refreshPlayableItems$1 extend
         int label;
         final /* synthetic */ CategoryWidgetNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass5(CategoryWidgetNavFragment categoryWidgetNavFragment, float f, List<PlayableItemEntity> list, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = categoryWidgetNavFragment;
@@ -153,8 +153,8 @@ final class CategoryWidgetNavFragment$onCreateView$refreshPlayableItems$1 extend
             }
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX WARN: Type inference failed for: r15v2, types: [T, com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity] */
+        /* WARN: Multi-variable type inference failed */
+        /* WARN: Type inference failed for: r15v2, types: [T, com.magneticchen.daijishou.daijishou_library_db.PlayableItemEntity] */
         public final Object invokeSuspendImpl(Object obj) throws Throwable {
             IntrinsicsKt.getCOROUTINE_SUSPENDED();
             if (this.label == 0) {

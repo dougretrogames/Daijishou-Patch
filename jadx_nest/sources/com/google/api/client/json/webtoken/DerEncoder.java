@@ -4,7 +4,7 @@ import com.google.api.client.util.Preconditions;
 import java.math.BigInteger;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DerEncoder {
     private static byte DER_TAG_ASN1_INTEGER = 2;
     private static byte DER_TAG_SIGNATURE_OBJECT = 48;

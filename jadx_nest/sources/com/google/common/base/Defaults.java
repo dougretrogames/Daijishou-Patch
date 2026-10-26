@@ -2,7 +2,7 @@ package com.google.common.base;
 
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Defaults {
     private static final Double DOUBLE_DEFAULT = Double.valueOf(0.0d);

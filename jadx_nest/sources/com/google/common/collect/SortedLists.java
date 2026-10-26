@@ -6,14 +6,14 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.RandomAccess;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class SortedLists {
     private SortedLists() {
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     static abstract class KeyPresentBehavior {
         public static final KeyPresentBehavior ANY_PRESENT = new AnonymousClass1("ANY_PRESENT", 0);
         public static final KeyPresentBehavior LAST_PRESENT = new AnonymousClass2("LAST_PRESENT", 1);
@@ -44,7 +44,7 @@ final class SortedLists {
             return (KeyPresentBehavior[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.SortedLists$KeyPresentBehavior$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.SortedLists$KeyPresentBehavior$1, reason: invalid class name */
         final enum AnonymousClass1 extends KeyPresentBehavior {
             @Override // com.google.common.collect.SortedLists.KeyPresentBehavior
             <E> int resultIndex(Comparator<? super E> comparator, @ParametricNullness E key, List<? extends E> list, int foundIndex) {
@@ -56,13 +56,13 @@ final class SortedLists {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.SortedLists$KeyPresentBehavior$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.SortedLists$KeyPresentBehavior$2, reason: invalid class name */
         final enum AnonymousClass2 extends KeyPresentBehavior {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.collect.SortedLists.KeyPresentBehavior
             <E> int resultIndex(Comparator<? super E> comparator, @ParametricNullness E e, List<? extends E> list, int i) {
                 int size = list.size() - 1;
@@ -78,13 +78,13 @@ final class SortedLists {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.SortedLists$KeyPresentBehavior$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.SortedLists$KeyPresentBehavior$3, reason: invalid class name */
         final enum AnonymousClass3 extends KeyPresentBehavior {
             AnonymousClass3(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
             }
 
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: Multi-variable type inference failed */
             @Override // com.google.common.collect.SortedLists.KeyPresentBehavior
             <E> int resultIndex(Comparator<? super E> comparator, @ParametricNullness E e, List<? extends E> list, int i) {
                 int i2 = 0;
@@ -100,7 +100,7 @@ final class SortedLists {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.SortedLists$KeyPresentBehavior$4, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.SortedLists$KeyPresentBehavior$4, reason: invalid class name */
         final enum AnonymousClass4 extends KeyPresentBehavior {
             AnonymousClass4(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -112,7 +112,7 @@ final class SortedLists {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.SortedLists$KeyPresentBehavior$5, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.SortedLists$KeyPresentBehavior$5, reason: invalid class name */
         final enum AnonymousClass5 extends KeyPresentBehavior {
             AnonymousClass5(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -125,8 +125,8 @@ final class SortedLists {
         }
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     static abstract class KeyAbsentBehavior {
         public static final KeyAbsentBehavior NEXT_LOWER = new AnonymousClass1("NEXT_LOWER", 0);
         public static final KeyAbsentBehavior NEXT_HIGHER = new AnonymousClass2("NEXT_HIGHER", 1);
@@ -155,7 +155,7 @@ final class SortedLists {
             return (KeyAbsentBehavior[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.SortedLists$KeyAbsentBehavior$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.SortedLists$KeyAbsentBehavior$1, reason: invalid class name */
         final enum AnonymousClass1 extends KeyAbsentBehavior {
             @Override // com.google.common.collect.SortedLists.KeyAbsentBehavior
             int resultIndex(int higherIndex) {
@@ -167,7 +167,7 @@ final class SortedLists {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.SortedLists$KeyAbsentBehavior$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.SortedLists$KeyAbsentBehavior$2, reason: invalid class name */
         final enum AnonymousClass2 extends KeyAbsentBehavior {
             @Override // com.google.common.collect.SortedLists.KeyAbsentBehavior
             public int resultIndex(int higherIndex) {
@@ -179,7 +179,7 @@ final class SortedLists {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.SortedLists$KeyAbsentBehavior$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.SortedLists$KeyAbsentBehavior$3, reason: invalid class name */
         final enum AnonymousClass3 extends KeyAbsentBehavior {
             @Override // com.google.common.collect.SortedLists.KeyAbsentBehavior
             public int resultIndex(int higherIndex) {

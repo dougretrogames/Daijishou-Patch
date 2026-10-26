@@ -16,14 +16,14 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.jvm.internal.Reflection;
 
-/* JADX INFO: compiled from: AppShortcutWidgetInstance.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: AppShortcutWidgetInstance.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "activity", "Landroidx/appcompat/app/AppCompatActivity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class AppShortcutWidgetInstance$actions$1 extends Lambda<Unit> implements Function1<AppCompatActivity, Unit> {
     final /* synthetic */ WidgetBuilder $widgetBuilder;
     final /* synthetic */ long $widgetInstanceId;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     AppShortcutWidgetInstance$actions$1(WidgetBuilder widgetBuilder, long j) {
         super(1);
         this.$widgetBuilder = widgetBuilder;
@@ -36,12 +36,12 @@ final class AppShortcutWidgetInstance$actions$1 extends Lambda<Unit> implements 
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final AppsViewModel invoke$lambda$0(Lazy<AppsViewModel> lazy) {
         return lazy.getValue();
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(AppCompatActivity activity) {
         Intrinsics.checkNotNullParameter(activity, "activity");
         AppCompatActivity appCompatActivity = activity;
@@ -50,8 +50,8 @@ final class AppShortcutWidgetInstance$actions$1 extends Lambda<Unit> implements 
         staticResolveInfoCollectionDialogFragmentNewInstance$default.setOnClickListener(new AnonymousClass1(activity, this.$widgetBuilder, this.$widgetInstanceId, staticResolveInfoCollectionDialogFragmentNewInstance$default, viewModelLazy)).show(activity.getSupportFragmentManager(), StaticResolveInfoCollectionDialogFragment.class.getName());
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.app_shortcut.AppShortcutWidgetInstance$actions$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: AppShortcutWidgetInstance.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widgets.app_shortcut.AppShortcutWidgetInstance$actions$1$1, reason: invalid class name */
+    /* INFO: compiled from: AppShortcutWidgetInstance.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Landroid/content/pm/ResolveInfo;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda<Unit> implements Function1<ResolveInfo, Unit> {
         final /* synthetic */ AppCompatActivity $activity;
@@ -60,7 +60,7 @@ final class AppShortcutWidgetInstance$actions$1 extends Lambda<Unit> implements 
         final /* synthetic */ WidgetBuilder $widgetBuilder;
         final /* synthetic */ long $widgetInstanceId;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(AppCompatActivity appCompatActivity, WidgetBuilder widgetBuilder, long j, StaticResolveInfoCollectionDialogFragment staticResolveInfoCollectionDialogFragment, Lazy<AppsViewModel> lazy) {
             super(1);
             this.$activity = appCompatActivity;
@@ -76,7 +76,7 @@ final class AppShortcutWidgetInstance$actions$1 extends Lambda<Unit> implements 
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(ResolveInfo it) {
             Intrinsics.checkNotNullParameter(it, "it");
             String strResolveInfoToResolveInfoStringId = AppShortcutWidgetInstance$actions$1.invoke$lambda$0(this.$appsViewModel$delegate).resolveInfoToResolveInfoStringId(it);

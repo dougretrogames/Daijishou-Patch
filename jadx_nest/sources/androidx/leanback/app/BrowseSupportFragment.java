@@ -35,7 +35,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class BrowseSupportFragment extends BaseSupportFragment {
     private static final String CURRENT_SELECTED_POSITION = "currentSelectedPosition";
     static final boolean DEBUG = false;
@@ -122,7 +122,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         MainFragmentRowsAdapter getMainFragmentRowsAdapter();
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$1, reason: invalid class name */
     class AnonymousClass1 extends StateMachine.State {
         AnonymousClass1(String str) {
             super(str);
@@ -371,7 +371,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x003b  */
+    /* WARN: Code duplicated, block: B:25:0x003b  */
     private boolean createMainFragment(ObjectAdapter objectAdapter, int i) {
         Object obj;
         boolean z = false;
@@ -508,7 +508,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         this.mAdapter.setPresenterSelector(new AnonymousClass2(presenterSelector, invisibleRowPresenter, presenterArr));
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$2, reason: invalid class name */
     class AnonymousClass2 extends PresenterSelector {
         final /* synthetic */ PresenterSelector val$adapterPresenter;
         final /* synthetic */ Presenter[] val$allPresenters;
@@ -657,7 +657,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         final /* synthetic */ boolean val$withHeaders;
 
@@ -691,7 +691,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         return this.mHeadersSupportFragment.isScrolling() || this.mMainFragmentAdapter.isScrolling();
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$4, reason: invalid class name */
     class AnonymousClass4 implements BrowseFrameLayout.OnFocusSearchListener {
         AnonymousClass4() {
         }
@@ -729,7 +729,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         return (objectAdapter == null || objectAdapter.size() == 0) ? false : true;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$5, reason: invalid class name */
     class AnonymousClass5 implements BrowseFrameLayout.OnChildFocusListener {
         AnonymousClass5() {
         }
@@ -876,7 +876,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$6, reason: invalid class name */
     class AnonymousClass6 implements Runnable {
         AnonymousClass6() {
         }
@@ -887,7 +887,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$7, reason: invalid class name */
     class AnonymousClass7 implements Runnable {
         AnonymousClass7() {
         }
@@ -898,7 +898,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$8, reason: invalid class name */
     class AnonymousClass8 implements Runnable {
         AnonymousClass8() {
         }
@@ -915,7 +915,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         TransitionHelper.addTransitionListener(objLoadTransition, new AnonymousClass9());
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$9, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$9, reason: invalid class name */
     class AnonymousClass9 extends TransitionListener {
         @Override // androidx.leanback.transition.TransitionListener
         public void onTransitionStart(Object obj) {
@@ -1048,7 +1048,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         this.mScaleFrameLayout.setChildScale(f);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$10, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$10, reason: invalid class name */
     class AnonymousClass10 implements HeadersSupportFragment.OnHeaderClickedListener {
         AnonymousClass10() {
         }
@@ -1079,7 +1079,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$11, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$11, reason: invalid class name */
     class AnonymousClass11 implements HeadersSupportFragment.OnHeaderViewSelectedListener {
         AnonymousClass11() {
         }
@@ -1129,7 +1129,7 @@ public class BrowseSupportFragment extends BaseSupportFragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$12, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BrowseSupportFragment$12, reason: invalid class name */
     class AnonymousClass12 extends RecyclerView.OnScrollListener {
         AnonymousClass12() {
         }

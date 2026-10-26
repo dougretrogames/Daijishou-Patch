@@ -26,8 +26,8 @@ import kotlinx.serialization.json.Json;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpStatus;
 
-/* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1", f = "PlatformLibraryListViewNavFragment.kt", i = {0}, l = {315, HttpStatus.SC_UNSUPPORTED_MEDIA_TYPE}, m = "invokeSuspendImpl", n = {"$this$launch"}, s = {"L$0"})
 final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -38,7 +38,7 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
     int label;
     final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     PlatformLibraryListViewNavFragment$refreshPreview$1$1(PlayableItemEntity playableItemEntity, PlayableItemEntity playableItemEntity2, PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment, int i, Continuation<?> continuation) {
         super(2, continuation);
         this.$it = playableItemEntity;
@@ -110,8 +110,8 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1, reason: invalid class name */
+    /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1", f = "PlatformLibraryListViewNavFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -122,7 +122,7 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
         int label;
         final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(int i, PlayableItemPreviewMediaIndex playableItemPreviewMediaIndex, PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment, PlayableItemEntity playableItemEntity, Continuation<?> continuation) {
             super(2, continuation);
             this.$previewMode = i;
@@ -236,13 +236,13 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
         @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "bitmap", "Landroid/graphics/Bitmap;", "<anonymous parameter 1>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class C00631 extends Lambda<Unit> implements Function2<Bitmap, Boolean, Unit> {
             final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             C00631(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment) {
                 super(2);
                 this.this$0 = platformLibraryListViewNavFragment;
@@ -260,14 +260,14 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$2, reason: invalid class name */
+        /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
         @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "e", "Ljava/lang/Exception;", "Lkotlin/Exception;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass2 extends Lambda<Unit> implements Function1<Exception, Unit> {
             final /* synthetic */ CoroutineScope $$this$withContext;
             final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment, CoroutineScope coroutineScope) {
                 super(1);
                 this.this$0 = platformLibraryListViewNavFragment;
@@ -280,7 +280,7 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Exception e) {
                 Intrinsics.checkNotNullParameter(e, "e");
                 this.this$0.getLogger().warn(this.$$this$withContext, ExceptionsKt.stackTraceToString(e));
@@ -291,13 +291,13 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$3, reason: invalid class name */
-        /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$3, reason: invalid class name */
+        /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
         @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "bitmap", "Landroid/graphics/Bitmap;", "<anonymous parameter 1>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass3 extends Lambda<Unit> implements Function2<Bitmap, Boolean, Unit> {
             final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass3(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment) {
                 super(2);
                 this.this$0 = platformLibraryListViewNavFragment;
@@ -315,14 +315,14 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$4, reason: invalid class name */
-        /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$4, reason: invalid class name */
+        /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
         @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "e", "Ljava/lang/Exception;", "Lkotlin/Exception;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass4 extends Lambda<Unit> implements Function1<Exception, Unit> {
             final /* synthetic */ CoroutineScope $$this$withContext;
             final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass4(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment, CoroutineScope coroutineScope) {
                 super(1);
                 this.this$0 = platformLibraryListViewNavFragment;
@@ -335,7 +335,7 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Exception e) {
                 Intrinsics.checkNotNullParameter(e, "e");
                 this.this$0.getLogger().warn(this.$$this$withContext, ExceptionsKt.stackTraceToString(e));
@@ -346,13 +346,13 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$5, reason: invalid class name */
-        /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$5, reason: invalid class name */
+        /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
         @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "bitmap", "Landroid/graphics/Bitmap;", "<anonymous parameter 1>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass5 extends Lambda<Unit> implements Function2<Bitmap, Boolean, Unit> {
             final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass5(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment) {
                 super(2);
                 this.this$0 = platformLibraryListViewNavFragment;
@@ -370,14 +370,14 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$6, reason: invalid class name */
-        /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$6, reason: invalid class name */
+        /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
         @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "e", "Ljava/lang/Exception;", "Lkotlin/Exception;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass6 extends Lambda<Unit> implements Function1<Exception, Unit> {
             final /* synthetic */ CoroutineScope $$this$withContext;
             final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass6(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment, CoroutineScope coroutineScope) {
                 super(1);
                 this.this$0 = platformLibraryListViewNavFragment;
@@ -390,7 +390,7 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Exception e) {
                 Intrinsics.checkNotNullParameter(e, "e");
                 this.this$0.getLogger().warn(this.$$this$withContext, ExceptionsKt.stackTraceToString(e));
@@ -401,13 +401,13 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$7, reason: invalid class name */
-        /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$7, reason: invalid class name */
+        /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
         @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "bitmap", "Landroid/graphics/Bitmap;", "<anonymous parameter 1>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass7 extends Lambda<Unit> implements Function2<Bitmap, Boolean, Unit> {
             final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass7(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment) {
                 super(2);
                 this.this$0 = platformLibraryListViewNavFragment;
@@ -425,14 +425,14 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$8, reason: invalid class name */
-        /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$8, reason: invalid class name */
+        /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
         @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "e", "Ljava/lang/Exception;", "Lkotlin/Exception;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass8 extends Lambda<Unit> implements Function1<Exception, Unit> {
             final /* synthetic */ CoroutineScope $$this$withContext;
             final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass8(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment, CoroutineScope coroutineScope) {
                 super(1);
                 this.this$0 = platformLibraryListViewNavFragment;
@@ -445,7 +445,7 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Exception e) {
                 Intrinsics.checkNotNullParameter(e, "e");
                 this.this$0.getLogger().warn(this.$$this$withContext, ExceptionsKt.stackTraceToString(e));
@@ -456,13 +456,13 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$9, reason: invalid class name */
-        /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$9, reason: invalid class name */
+        /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
         @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "bitmap", "Landroid/graphics/Bitmap;", "<anonymous parameter 1>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass9 extends Lambda<Unit> implements Function2<Bitmap, Boolean, Unit> {
             final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass9(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment) {
                 super(2);
                 this.this$0 = platformLibraryListViewNavFragment;
@@ -480,14 +480,14 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$10, reason: invalid class name */
-        /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$10, reason: invalid class name */
+        /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
         @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "e", "Ljava/lang/Exception;", "Lkotlin/Exception;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass10 extends Lambda<Unit> implements Function1<Exception, Unit> {
             final /* synthetic */ CoroutineScope $$this$withContext;
             final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass10(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment, CoroutineScope coroutineScope) {
                 super(1);
                 this.this$0 = platformLibraryListViewNavFragment;
@@ -500,7 +500,7 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Exception e) {
                 Intrinsics.checkNotNullParameter(e, "e");
                 this.this$0.getLogger().warn(this.$$this$withContext, ExceptionsKt.stackTraceToString(e));
@@ -511,13 +511,13 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$11, reason: invalid class name */
-        /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$11, reason: invalid class name */
+        /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
         @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "bitmap", "Landroid/graphics/Bitmap;", "<anonymous parameter 1>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass11 extends Lambda<Unit> implements Function2<Bitmap, Boolean, Unit> {
             final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass11(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment) {
                 super(2);
                 this.this$0 = platformLibraryListViewNavFragment;
@@ -535,14 +535,14 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
             }
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$12, reason: invalid class name */
-        /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$1$12, reason: invalid class name */
+        /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
         @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "e", "Ljava/lang/Exception;", "Lkotlin/Exception;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
         static final class AnonymousClass12 extends Lambda<Unit> implements Function1<Exception, Unit> {
             final /* synthetic */ CoroutineScope $$this$withContext;
             final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass12(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment, CoroutineScope coroutineScope) {
                 super(1);
                 this.this$0 = platformLibraryListViewNavFragment;
@@ -555,7 +555,7 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Exception e) {
                 Intrinsics.checkNotNullParameter(e, "e");
                 this.this$0.getLogger().warn(this.$$this$withContext, ExceptionsKt.stackTraceToString(e));
@@ -567,15 +567,15 @@ final class PlatformLibraryListViewNavFragment$refreshPreview$1$1 extends com.ma
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$2, reason: invalid class name */
-    /* JADX INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$2, reason: invalid class name */
+    /* INFO: compiled from: PlatformLibraryListViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.nav_fragments.PlatformLibraryListViewNavFragment$refreshPreview$1$1$2", f = "PlatformLibraryListViewNavFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
         int label;
         final /* synthetic */ PlatformLibraryListViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(PlatformLibraryListViewNavFragment platformLibraryListViewNavFragment, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = platformLibraryListViewNavFragment;

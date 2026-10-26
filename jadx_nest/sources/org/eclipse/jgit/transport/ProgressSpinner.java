@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.codec.language.Soundex;
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ProgressSpinner {
     private static final long MIN_REFRESH_MILLIS = 500;
     private static final char[] STATES = {Soundex.SILENT_MARKER, '\\', '|', '/'};

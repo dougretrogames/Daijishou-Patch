@@ -5,7 +5,7 @@ import org.apache.http.cookie.CookieAttributeHandler;
 import org.apache.http.cookie.CookieOrigin;
 import org.apache.http.cookie.MalformedCookieException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractCookieAttributeHandler implements CookieAttributeHandler {
     @Override // org.apache.http.cookie.CookieAttributeHandler
     public boolean match(Cookie cookie, CookieOrigin cookieOrigin) {

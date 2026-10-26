@@ -3,8 +3,8 @@ package com.google.android.material.search;
 import android.animation.Animator;
 import com.google.android.material.animation.AnimatableView;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SearchBarAnimationHelper$$ExternalSyntheticLambda2 implements AnimatableView.Listener {
     public final /* synthetic */ Animator f$0;
 

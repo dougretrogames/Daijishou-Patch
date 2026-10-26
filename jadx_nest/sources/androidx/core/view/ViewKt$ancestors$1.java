@@ -5,8 +5,8 @@ import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.FunctionReferenceImpl;
 
-/* JADX INFO: compiled from: View.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: View.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 /* synthetic */ class ViewKt$ancestors$1 extends FunctionReferenceImpl implements Function1<ViewParent, ViewParent> {
     public static final ViewKt$ancestors$1 INSTANCE = new ViewKt$ancestors$1();

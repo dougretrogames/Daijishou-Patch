@@ -15,7 +15,7 @@ import java.util.function.ToIntFunction;
 import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ImmutableMultiset<E> extends ImmutableMultisetGwtSerializationDependencies<E> implements Multiset<E> {
     private static final long serialVersionUID = 912559;
@@ -100,7 +100,7 @@ public abstract class ImmutableMultiset<E> extends ImmutableMultisetGwtSerializa
         return new Builder().add((Object[]) elements).build();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     public static <E> ImmutableMultiset<E> copyFromEntries(Collection<? extends Multiset.Entry<? extends E>> entries) {
         Builder builder = new Builder(entries.size());
         for (Multiset.Entry<? extends E> entry : entries) {
@@ -112,7 +112,7 @@ public abstract class ImmutableMultiset<E> extends ImmutableMultisetGwtSerializa
     ImmutableMultiset() {
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.ImmutableMultiset$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.ImmutableMultiset$1, reason: invalid class name */
     class AnonymousClass1 extends UnmodifiableIterator<E> {
 
         @CheckForNull
@@ -242,7 +242,7 @@ public abstract class ImmutableMultiset<E> extends ImmutableMultisetGwtSerializa
             return ImmutableMultiset.this.isPartialView();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.IndexedImmutableSet
         public Multiset.Entry<E> get(int index) {
             return ImmutableMultiset.this.getEntry(index);
@@ -349,15 +349,15 @@ public abstract class ImmutableMultiset<E> extends ImmutableMultisetGwtSerializa
             return this;
         }
 
-        /* JADX WARN: Type inference fix 'apply assigned field type' failed
-        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$PrimitiveArg
-        	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-        	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-        	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-        	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+        /* WARN: Type inference fix 'apply assigned field type' failed
+        java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$PrimitiveArg
+        	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+        	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+        	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+        	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
          */
         public Builder<E> setCount(E e, int i) {
             Objects.requireNonNull(this.contents);
@@ -378,7 +378,7 @@ public abstract class ImmutableMultiset<E> extends ImmutableMultisetGwtSerializa
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.common.collect.ImmutableCollection.Builder
         public Builder<E> addAll(Iterable<? extends E> elements) {
             Objects.requireNonNull(this.contents);

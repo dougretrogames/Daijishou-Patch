@@ -6,7 +6,7 @@ import java.util.function.Function;
 import java.util.function.Supplier;
 import org.apache.commons.io.function.Erase;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BrokenOutputStream extends OutputStream {
     public static final BrokenOutputStream INSTANCE = new BrokenOutputStream();
     private final Function<String, Throwable> exceptionFunction;

@@ -2,7 +2,7 @@ package io.opencensus.internal;
 
 import io.opencensus.common.Scope;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class NoopScope implements Scope {
     private static final Scope INSTANCE = new NoopScope();
 

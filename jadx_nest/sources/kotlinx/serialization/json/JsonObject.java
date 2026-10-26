@@ -18,13 +18,13 @@ import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import kotlinx.serialization.json.internal.StringOpsKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: compiled from: JsonElement.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: JsonElement.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010$\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\"\n\u0002\u0010&\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u001e\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010\u0000\n\u0002\b\u0006\b\u0007\u0018\u0000 !2\u00020\u00012\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00010\u0002:\u0001!B\u0019\u0012\u0012\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00010\u0002¢\u0006\u0002\u0010\u0005J\u0011\u0010\u0015\u001a\u00020\u00162\u0006\u0010\u0017\u001a\u00020\u0003H\u0096\u0001J\u0011\u0010\u0018\u001a\u00020\u00162\u0006\u0010\u0019\u001a\u00020\u0001H\u0096\u0001J\u0013\u0010\u001a\u001a\u00020\u00162\b\u0010\u001b\u001a\u0004\u0018\u00010\u001cH\u0096\u0002J\u0013\u0010\u001d\u001a\u0004\u0018\u00010\u00012\u0006\u0010\u0017\u001a\u00020\u0003H\u0096\u0003J\b\u0010\u001e\u001a\u00020\u000eH\u0016J\t\u0010\u001f\u001a\u00020\u0016H\u0096\u0001J\b\u0010 \u001a\u00020\u0003H\u0016R\u001a\u0010\u0004\u001a\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00010\u0002X\u0082\u0004¢\u0006\u0002\n\u0000R$\u0010\u0006\u001a\u0014\u0012\u0010\u0012\u000e\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00010\b0\u0007X\u0096\u0005¢\u0006\u0006\u001a\u0004\b\t\u0010\nR\u0018\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00030\u0007X\u0096\u0005¢\u0006\u0006\u001a\u0004\b\f\u0010\nR\u0012\u0010\r\u001a\u00020\u000eX\u0096\u0005¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0010R\u0018\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00010\u0012X\u0096\u0005¢\u0006\u0006\u001a\u0004\b\u0013\u0010\u0014¨\u0006\""}, d2 = {"Lkotlinx/serialization/json/JsonObject;", "Lkotlinx/serialization/json/JsonElement;", "", "", "content", "(Ljava/util/Map;)V", "entries", "", "", "getEntries", "()Ljava/util/Set;", "keys", "getKeys", "size", "", "getSize", "()I", "values", "", "getValues", "()Ljava/util/Collection;", "containsKey", "", "key", "containsValue", "value", "equals", "other", "", "get", "hashCode", "isEmpty", "toString", "Companion", "kotlinx-serialization-json"}, k = 1, mv = {1, 9, 0}, xi = 48)
 @Serializable(with = JsonObjectSerializer.class)
 public final class JsonObject extends JsonElement implements Map<String, JsonElement>, KMappedMarker {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private final Map<String, JsonElement> content;
 
@@ -38,7 +38,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    /* JADX INFO: renamed from: compute, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: compute, reason: avoid collision after fix types in other method */
     public JsonElement compute2(String str, BiFunction<? super String, ? super JsonElement, ? extends JsonElement> biFunction) {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
@@ -48,7 +48,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    /* JADX INFO: renamed from: computeIfAbsent, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: computeIfAbsent, reason: avoid collision after fix types in other method */
     public JsonElement computeIfAbsent2(String str, Function<? super String, ? extends JsonElement> function) {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
@@ -58,7 +58,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    /* JADX INFO: renamed from: computeIfPresent, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: computeIfPresent, reason: avoid collision after fix types in other method */
     public JsonElement computeIfPresent2(String str, BiFunction<? super String, ? super JsonElement, ? extends JsonElement> biFunction) {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
@@ -104,7 +104,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    /* JADX INFO: renamed from: merge, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: merge, reason: avoid collision after fix types in other method */
     public JsonElement merge2(String str, JsonElement jsonElement, BiFunction<? super JsonElement, ? super JsonElement, ? extends JsonElement> biFunction) {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
@@ -114,7 +114,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    /* JADX INFO: renamed from: put, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: put, reason: avoid collision after fix types in other method */
     public JsonElement put2(String str, JsonElement jsonElement) {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
@@ -129,7 +129,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    /* JADX INFO: renamed from: putIfAbsent, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: putIfAbsent, reason: avoid collision after fix types in other method */
     public JsonElement putIfAbsent2(String str, JsonElement jsonElement) {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
@@ -149,7 +149,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    /* JADX INFO: renamed from: replace, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: replace, reason: avoid collision after fix types in other method */
     public JsonElement replace2(String str, JsonElement jsonElement) {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
@@ -159,7 +159,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    /* JADX INFO: renamed from: replace, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: replace, reason: avoid collision after fix types in other method */
     public boolean replace2(String str, JsonElement jsonElement, JsonElement jsonElement2) {
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
@@ -169,7 +169,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
         throw new UnsupportedOperationException("Operation is not supported for read-only collection");
     }
 
-    /* JADX INFO: compiled from: JsonElement.kt */
+    /* INFO: compiled from: JsonElement.kt */
     @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lkotlinx/serialization/json/JsonObject$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lkotlinx/serialization/json/JsonObject;", "kotlinx-serialization-json"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -214,7 +214,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
     }
 
     @Override // java.util.Map
-    /* JADX INFO: renamed from: get, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: get, reason: avoid collision after fix types in other method */
     public final /* bridge */ JsonElement get2(Object obj) {
         if (obj instanceof String) {
             return get((String) obj);
@@ -237,8 +237,8 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
         return getValues();
     }
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     public JsonObject(Map<String, ? extends JsonElement> content) {
         super(null);
         Intrinsics.checkNotNullParameter(content, "content");
@@ -255,8 +255,8 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
         return this.content.hashCode();
     }
 
-    /* JADX INFO: renamed from: kotlinx.serialization.json.JsonObject$toString$1, reason: invalid class name */
-    /* JADX INFO: compiled from: JsonElement.kt */
+    /* INFO: renamed from: kotlinx.serialization.json.JsonObject$toString$1, reason: invalid class name */
+    /* INFO: compiled from: JsonElement.kt */
     @Metadata(d1 = {"\u0000\u0016\n\u0000\n\u0002\u0010\r\n\u0000\n\u0002\u0010&\n\u0002\u0010\u000e\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0012\u0010\u0002\u001a\u000e\u0012\u0004\u0012\u00020\u0004\u0012\u0004\u0012\u00020\u00050\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "<name for destructuring parameter 0>", "", "", "Lkotlinx/serialization/json/JsonElement;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<Map.Entry<? extends String, ? extends JsonElement>, CharSequence> {
         public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -270,7 +270,7 @@ public final class JsonObject extends JsonElement implements Map<String, JsonEle
             return invoke2((Map.Entry<String, ? extends JsonElement>) entry);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final CharSequence invoke2(Map.Entry<String, ? extends JsonElement> entry) {
             Intrinsics.checkNotNullParameter(entry, "<name for destructuring parameter 0>");
             String key = entry.getKey();

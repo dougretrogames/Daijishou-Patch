@@ -5,7 +5,7 @@ import java.util.Set;
 import java.util.SortedMap;
 import java.util.SortedSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractSortedKeySortedSetMultimap<K, V> extends AbstractSortedSetMultimap<K, V> {
     AbstractSortedKeySortedSetMultimap(SortedMap<K, Collection<V>> map) {
@@ -17,7 +17,7 @@ abstract class AbstractSortedKeySortedSetMultimap<K, V> extends AbstractSortedSe
         return (SortedMap) super.asMap();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractMapBasedMultimap
     public SortedMap<K, Collection<V>> backingMap() {
         return (SortedMap) super.backingMap();

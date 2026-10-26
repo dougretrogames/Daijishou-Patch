@@ -5,7 +5,7 @@ import java.io.OutputStream;
 import org.apache.commons.io.function.IOConsumer;
 import org.apache.commons.io.function.IOFunction;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ThresholdingOutputStream extends OutputStream {
     private static final IOFunction<ThresholdingOutputStream, OutputStream> NOOP_OS_GETTER = new ThresholdingOutputStream$$ExternalSyntheticLambda0();
     private final IOFunction<ThresholdingOutputStream, OutputStream> outputStreamGetter;

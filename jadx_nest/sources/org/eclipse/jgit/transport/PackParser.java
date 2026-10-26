@@ -39,7 +39,7 @@ import org.eclipse.jgit.util.LongMap;
 import org.eclipse.jgit.util.NB;
 import org.eclipse.jgit.util.sha1.SHA1;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class PackParser {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$transport$PackParser$Source = null;
     private static final int BUFFER_SIZE = 8192;
@@ -84,7 +84,7 @@ public abstract class PackParser {
         INPUT,
         DATABASE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Source[] valuesCustom() {
             Source[] sourceArrValuesCustom = values();
             int length = sourceArrValuesCustom.length;
@@ -1124,7 +1124,7 @@ public abstract class PackParser {
         byte[] data;
         final UnresolvedDelta delta;
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         ObjectId f124id;
         UnresolvedDelta nextChild;
         DeltaVisit parent;

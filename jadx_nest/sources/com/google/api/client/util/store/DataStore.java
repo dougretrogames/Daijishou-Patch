@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Collection;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface DataStore<V extends Serializable> {
     DataStore<V> clear() throws IOException;
 

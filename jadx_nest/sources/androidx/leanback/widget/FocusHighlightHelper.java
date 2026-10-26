@@ -10,7 +10,7 @@ import android.view.animation.Interpolator;
 import androidx.leanback.graphics.ColorOverlayDimmer;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class FocusHighlightHelper {
     static boolean isValidZoomIndex(int i) {
         return i == 0 || getResId(i) > 0;

@@ -4,7 +4,7 @@ import com.google.api.client.util.ExponentialBackOff;
 import com.google.api.client.util.NanoClock;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class ExponentialBackOffPolicy implements BackOffPolicy {
     public static final int DEFAULT_INITIAL_INTERVAL_MILLIS = 500;

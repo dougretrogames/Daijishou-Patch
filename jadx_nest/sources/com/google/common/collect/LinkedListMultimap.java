@@ -18,7 +18,7 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements ListMultimap<K, V>, Serializable {
     private static final long serialVersionUID = 0;
@@ -67,7 +67,7 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
         return super.putAll(multimap);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.AbstractMultimap, com.google.common.collect.Multimap
     public /* bridge */ /* synthetic */ boolean putAll(@ParametricNullness Object key, Iterable values) {
         return super.putAll(key, values);
@@ -168,7 +168,7 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
         putAll(multimap);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Node<K, V> addNode(@ParametricNullness K key, @ParametricNullness V value, @CheckForNull Node<K, V> nextSibling) {
         Node<K, V> node = new Node<>(key, value);
         if (this.head == null) {
@@ -215,7 +215,7 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
         return node;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void removeNode(Node<K, V> node) {
         if (node.previous != null) {
             node.previous.next = node.next;
@@ -247,7 +247,7 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
         this.size--;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void removeAllNodes(@ParametricNullness K key) {
         Iterators.clear(new ValueForKeyIterator(key));
     }
@@ -621,7 +621,7 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
         return Collections.unmodifiableList(Lists.newArrayList(new ValueForKeyIterator(key)));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.collect.Multimap, com.google.common.collect.ListMultimap
     public List<V> removeAll(@CheckForNull Object key) {
         List<V> copy = getCopy(key);
@@ -638,7 +638,7 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
         this.modCount++;
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.LinkedListMultimap$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.LinkedListMultimap$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractSequentialList<V> {
         final /* synthetic */ Object val$key;
 
@@ -666,7 +666,7 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
         return new AnonymousClass1(key);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.LinkedListMultimap$1KeySetImpl, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.LinkedListMultimap$1KeySetImpl, reason: invalid class name */
     class C1KeySetImpl extends Sets.ImprovedAbstractSet<K> {
         C1KeySetImpl() {
         }
@@ -707,7 +707,7 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
         return (List) super.values();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.LinkedListMultimap$1ValuesImpl, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.LinkedListMultimap$1ValuesImpl, reason: invalid class name */
     class C1ValuesImpl extends AbstractSequentialList<V> {
         C1ValuesImpl() {
         }
@@ -717,17 +717,17 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
             return LinkedListMultimap.this.size;
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.LinkedListMultimap$1ValuesImpl$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.LinkedListMultimap$1ValuesImpl$1, reason: invalid class name */
         class AnonymousClass1 extends TransformedListIterator<Map.Entry<K, V>, V> {
             final /* synthetic */ NodeIterator val$nodeItr;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(final C1ValuesImpl this$1, ListIterator backingIterator, final NodeIterator val$nodeItr) {
                 super(backingIterator);
                 this.val$nodeItr = val$nodeItr;
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // com.google.common.collect.TransformedIterator
             @ParametricNullness
             public V transform(Map.Entry<K, V> entry) {
@@ -747,7 +747,7 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractMultimap
     public List<V> createValues() {
         return new C1ValuesImpl();
@@ -758,7 +758,7 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
         return (List) super.entries();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.LinkedListMultimap$1EntriesImpl, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.LinkedListMultimap$1EntriesImpl, reason: invalid class name */
     class C1EntriesImpl extends AbstractSequentialList<Map.Entry<K, V>> {
         C1EntriesImpl() {
         }
@@ -774,7 +774,7 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.AbstractMultimap
     public List<Map.Entry<K, V>> createEntries() {
         return new C1EntriesImpl();
@@ -799,7 +799,7 @@ public class LinkedListMultimap<K, V> extends AbstractMultimap<K, V> implements 
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void readObject(ObjectInputStream stream) throws ClassNotFoundException, IOException {
         stream.defaultReadObject();
         this.keyToKeyList = CompactLinkedHashMap.create();

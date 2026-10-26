@@ -16,7 +16,7 @@ import org.commonmark.node.Node;
 import org.commonmark.parser.block.BlockParserFactory;
 import org.commonmark.parser.delimiter.DelimiterProcessor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Parser {
     private final List<BlockParserFactory> blockParserFactories;
     private final List<DelimiterProcessor> delimiterProcessors;
@@ -131,13 +131,13 @@ public class Parser {
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public InlineParserFactory getInlineParserFactory() {
             InlineParserFactory inlineParserFactory = this.inlineParserFactory;
             return inlineParserFactory != null ? inlineParserFactory : new AnonymousClass1();
         }
 
-        /* JADX INFO: renamed from: org.commonmark.parser.Parser$Builder$1, reason: invalid class name */
+        /* INFO: renamed from: org.commonmark.parser.Parser$Builder$1, reason: invalid class name */
         class AnonymousClass1 implements InlineParserFactory {
             AnonymousClass1() {
             }

@@ -19,19 +19,19 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.text.StringsKt;
 
-/* JADX INFO: compiled from: RedirectionInterceptor.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: RedirectionInterceptor.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000$\n\u0000\n\u0002\u0010 \n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u001a>\u0010\u0003\u001a2\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00070\u0005\u0012\u0016\u0012\u0014\u0012\u0004\u0012\u00020\u0006\u0012\u0004\u0012\u00020\u0007\u0012\u0004\u0012\u00020\u00070\u00050\u00042\u0006\u0010\b\u001a\u00020\t\"\u0014\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\n"}, d2 = {"redirectStatusWithGets", "", "", "redirectResponseInterceptor", "Lkotlin/Function1;", "Lkotlin/Function2;", "Lcom/github/kittinunf/fuel/core/Request;", "Lcom/github/kittinunf/fuel/core/Response;", "manager", "Lcom/github/kittinunf/fuel/core/FuelManager;", "fuel"}, k = 2, mv = {1, 4, 0})
 public final class RedirectionInterceptorKt {
     private static final List<Integer> redirectStatusWithGets = CollectionsKt.listOf((Object[]) new Integer[]{301, 302, 303});
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.interceptors.RedirectionInterceptorKt$redirectResponseInterceptor$1, reason: invalid class name */
-    /* JADX INFO: compiled from: RedirectionInterceptor.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.core.interceptors.RedirectionInterceptorKt$redirectResponseInterceptor$1, reason: invalid class name */
+    /* INFO: compiled from: RedirectionInterceptor.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0012\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u0014\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u00012\u0018\u0010\u0004\u001a\u0014\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u00030\u0001H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "Lkotlin/Function2;", "Lcom/github/kittinunf/fuel/core/Request;", "Lcom/github/kittinunf/fuel/core/Response;", "next", "invoke"}, k = 3, mv = {1, 4, 0})
     static final class AnonymousClass1 extends Lambda implements Function1<Function2<? super Request, ? super Response, ? extends Response>, Function2<? super Request, ? super Response, ? extends Response>> {
         final /* synthetic */ FuelManager $manager;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(FuelManager fuelManager) {
             super(1);
             this.$manager = fuelManager;
@@ -42,13 +42,13 @@ public final class RedirectionInterceptorKt {
             return invoke2((Function2<? super Request, ? super Response, Response>) function2);
         }
 
-        /* JADX INFO: renamed from: com.github.kittinunf.fuel.core.interceptors.RedirectionInterceptorKt$redirectResponseInterceptor$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: RedirectionInterceptor.kt */
+        /* INFO: renamed from: com.github.kittinunf.fuel.core.interceptors.RedirectionInterceptorKt$redirectResponseInterceptor$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: RedirectionInterceptor.kt */
         @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0010\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "Lcom/github/kittinunf/fuel/core/Response;", "request", "Lcom/github/kittinunf/fuel/core/Request;", "response", "invoke"}, k = 3, mv = {1, 4, 0})
         static final class C00311 extends Lambda implements Function2<Request, Response, Response> {
             final /* synthetic */ Function2 $next;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             C00311(Function2 function2) {
                 super(2);
                 this.$next = function2;
@@ -86,7 +86,7 @@ public final class RedirectionInterceptorKt {
             }
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final Function2<Request, Response, Response> invoke2(Function2<? super Request, ? super Response, Response> next) {
             Intrinsics.checkNotNullParameter(next, "next");
             return new C00311(next);

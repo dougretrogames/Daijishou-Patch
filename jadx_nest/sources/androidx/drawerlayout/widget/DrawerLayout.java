@@ -35,7 +35,7 @@ import androidx.customview.widget.ViewDragHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DrawerLayout extends ViewGroup implements Openable {
     private static final String ACCESSIBILITY_CLASS_NAME = "androidx.drawerlayout.widget.DrawerLayout";
     private static final boolean ALLOW_EDGE_LOCK = false;
@@ -128,7 +128,7 @@ public class DrawerLayout extends ViewGroup implements Openable {
         sEdgeSizeUsingSystemGestureInsets = Build.VERSION.SDK_INT >= 29;
     }
 
-    /* JADX INFO: renamed from: androidx.drawerlayout.widget.DrawerLayout$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.drawerlayout.widget.DrawerLayout$1, reason: invalid class name */
     class AnonymousClass1 implements AccessibilityViewCommand {
         AnonymousClass1() {
         }
@@ -215,7 +215,7 @@ public class DrawerLayout extends ViewGroup implements Openable {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.drawerlayout.widget.DrawerLayout$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.drawerlayout.widget.DrawerLayout$2, reason: invalid class name */
     class AnonymousClass2 implements View.OnApplyWindowInsetsListener {
         AnonymousClass2() {
         }
@@ -970,7 +970,7 @@ public class DrawerLayout extends ViewGroup implements Openable {
         return ((absoluteGravity & 3) == 0 && (absoluteGravity & 5) == 0) ? false : true;
     }
 
-    /* JADX WARN: Code duplicated, block: B:12:0x0031  */
+    /* WARN: Code duplicated, block: B:12:0x0031  */
     @Override // android.view.ViewGroup
     public boolean onInterceptTouchEvent(MotionEvent motionEvent) {
         boolean z;
@@ -1022,7 +1022,7 @@ public class DrawerLayout extends ViewGroup implements Openable {
         return false;
     }
 
-    /* JADX WARN: Code duplicated, block: B:19:0x005a  */
+    /* WARN: Code duplicated, block: B:19:0x005a  */
     @Override // android.view.View
     public boolean onTouchEvent(MotionEvent motionEvent) {
         boolean z;
@@ -1429,12 +1429,12 @@ public class DrawerLayout extends ViewGroup implements Openable {
             parcel.writeInt(this.lockModeEnd);
         }
 
-        /* JADX INFO: renamed from: androidx.drawerlayout.widget.DrawerLayout$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.drawerlayout.widget.DrawerLayout$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);
@@ -1462,7 +1462,7 @@ public class DrawerLayout extends ViewGroup implements Openable {
             return false;
         }
 
-        /* JADX INFO: renamed from: androidx.drawerlayout.widget.DrawerLayout$ViewDragCallback$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.drawerlayout.widget.DrawerLayout$ViewDragCallback$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             AnonymousClass1() {
             }

@@ -3,7 +3,7 @@ package org.apache.commons.collections4.sequence;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReplacementsFinder<T> implements CommandVisitor<T> {
     private final ReplacementsHandler<T> handler;
     private final List<T> pendingInsertions = new ArrayList();

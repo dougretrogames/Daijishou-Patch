@@ -3,7 +3,7 @@ package io.grpc;
 import com.google.common.io.BaseEncoding;
 import java.nio.charset.Charset;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class InternalMetadata {
     public static final Charset US_ASCII = Charset.forName("US-ASCII");
     public static final BaseEncoding BASE64_ENCODING_OMIT_PADDING = Metadata.BASE64_ENCODING_OMIT_PADDING;

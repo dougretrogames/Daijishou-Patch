@@ -27,7 +27,7 @@ import androidx.constraintlayout.widget.R;
 import androidx.core.view.GravityCompat;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionLabel extends View implements FloatLayout {
     private static final int MONOSPACE = 3;
     private static final int SANS = 1;
@@ -682,7 +682,7 @@ public class MotionLabel extends View implements FloatLayout {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.utils.widget.MotionLabel$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.utils.widget.MotionLabel$1, reason: invalid class name */
     class AnonymousClass1 extends ViewOutlineProvider {
         AnonymousClass1() {
         }
@@ -732,7 +732,7 @@ public class MotionLabel extends View implements FloatLayout {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.utils.widget.MotionLabel$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.utils.widget.MotionLabel$2, reason: invalid class name */
     class AnonymousClass2 extends ViewOutlineProvider {
         AnonymousClass2() {
         }

@@ -38,7 +38,7 @@ import org.apache.http.io.SessionOutputBuffer;
 import org.apache.http.util.Args;
 import org.apache.http.util.NetUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BHttpConnectionBase implements HttpInetConnection {
     private final HttpConnectionMetricsImpl connMetrics;
     private final SessionInputBufferImpl inBuffer;
@@ -107,7 +107,7 @@ public class BHttpConnectionBase implements HttpInetConnection {
         return this.socketHolder.get() != null;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public Socket getSocket() {
         return this.socketHolder.get();
     }

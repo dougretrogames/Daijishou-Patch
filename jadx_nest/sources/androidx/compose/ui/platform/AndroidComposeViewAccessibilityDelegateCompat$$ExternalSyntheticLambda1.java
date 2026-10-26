@@ -1,7 +1,7 @@
 package androidx.compose.ui.platform;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class AndroidComposeViewAccessibilityDelegateCompat$$ExternalSyntheticLambda1 implements android.view.accessibility.AccessibilityManager.TouchExplorationStateChangeListener {
     public final /* synthetic */ AndroidComposeViewAccessibilityDelegateCompat f$0;
 

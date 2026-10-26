@@ -2,7 +2,7 @@ package org.eclipse.jgit.ignore.internal;
 
 import org.eclipse.jgit.ignore.IMatcher;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractMatcher implements IMatcher {
     final boolean dirOnly;
     final String pattern;

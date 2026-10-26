@@ -4,20 +4,20 @@ import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class FileDescriptorAssetPathFetcher extends AssetPathFetcher<AssetFileDescriptor> {
     public FileDescriptorAssetPathFetcher(AssetManager assetManager, String str) {
         super(assetManager, str);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
-    /* JADX WARN: Can't rename method to resolve collision */
+    /* INFO: Access modifiers changed from: protected */
+    /* WARN: Can't rename method to resolve collision */
     @Override // com.bumptech.glide.load.data.AssetPathFetcher
     public AssetFileDescriptor loadResource(AssetManager assetManager, String str) throws IOException {
         return assetManager.openFd(str);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.bumptech.glide.load.data.AssetPathFetcher
     public void close(AssetFileDescriptor assetFileDescriptor) throws IOException {
         assetFileDescriptor.close();

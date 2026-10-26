@@ -7,7 +7,7 @@ import com.google.android.material.R;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class LinearProgressIndicator extends BaseProgressIndicator<LinearProgressIndicatorSpec> {
     public static final int DEF_STYLE_RES = R.style.Widget_MaterialComponents_LinearProgressIndicator;
     public static final int INDETERMINATE_ANIMATION_TYPE_CONTIGUOUS = 0;
@@ -38,7 +38,7 @@ public class LinearProgressIndicator extends BaseProgressIndicator<LinearProgres
         initializeDrawables();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.android.material.progressindicator.BaseProgressIndicator
     public LinearProgressIndicatorSpec createSpec(Context context, AttributeSet attributeSet) {
         return new LinearProgressIndicatorSpec(context, attributeSet);

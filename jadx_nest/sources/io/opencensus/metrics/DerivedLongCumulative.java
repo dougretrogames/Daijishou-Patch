@@ -4,7 +4,7 @@ import io.opencensus.common.ToLongFunction;
 import io.opencensus.internal.Utils;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class DerivedLongCumulative {
     public abstract void clear();
 

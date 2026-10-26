@@ -7,7 +7,7 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable
 @ElementTypesAreNonnullByDefault
 final class Murmur3_128HashFunction extends AbstractHashFunction implements Serializable {
@@ -81,7 +81,7 @@ final class Murmur3_128HashFunction extends AbstractHashFunction implements Seri
             this.h2 = ((Long.rotateLeft(jMixK2, 31) + this.h1) * 5) + 944331445;
         }
 
-        /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+        /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
         @Override // com.google.common.hash.AbstractStreamingHasher
         protected void processRemaining(ByteBuffer bb) {
             long j;

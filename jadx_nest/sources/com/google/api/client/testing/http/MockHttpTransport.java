@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockHttpTransport extends HttpTransport {
     private MockLowLevelHttpRequest lowLevelHttpRequest;
     private MockLowLevelHttpResponse lowLevelHttpResponse;

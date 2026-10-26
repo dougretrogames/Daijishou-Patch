@@ -3,7 +3,7 @@ package androidx.webkit.internal;
 import java.util.concurrent.Executor;
 import org.chromium.support_lib_boundary.WebStorageBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebStorageAdapter implements WebStorageBoundaryInterface {
     final WebStorageBoundaryInterface mImpl;
 

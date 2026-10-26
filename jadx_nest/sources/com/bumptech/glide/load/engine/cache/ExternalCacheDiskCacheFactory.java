@@ -3,7 +3,7 @@ package com.bumptech.glide.load.engine.cache;
 import android.content.Context;
 import java.io.File;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public final class ExternalCacheDiskCacheFactory extends DiskLruCacheFactory {
     public ExternalCacheDiskCacheFactory(Context context) {
@@ -14,7 +14,7 @@ public final class ExternalCacheDiskCacheFactory extends DiskLruCacheFactory {
         this(context, DiskCache.Factory.DEFAULT_DISK_CACHE_DIR, i);
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.cache.ExternalCacheDiskCacheFactory$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.cache.ExternalCacheDiskCacheFactory$1, reason: invalid class name */
     class AnonymousClass1 implements DiskLruCacheFactory.CacheDirectoryGetter {
         final /* synthetic */ Context val$context;
         final /* synthetic */ String val$diskCacheName;

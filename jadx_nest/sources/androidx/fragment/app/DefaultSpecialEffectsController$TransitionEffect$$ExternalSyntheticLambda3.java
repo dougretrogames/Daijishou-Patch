@@ -2,8 +2,8 @@ package androidx.fragment.app;
 
 import kotlin.jvm.internal.Ref;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class DefaultSpecialEffectsController$TransitionEffect$$ExternalSyntheticLambda3 implements Runnable {
     public final /* synthetic */ Ref.ObjectRef f$0;
 

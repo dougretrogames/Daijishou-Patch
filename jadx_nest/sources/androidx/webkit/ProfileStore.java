@@ -4,7 +4,7 @@ import androidx.webkit.internal.ProfileStoreImpl;
 import androidx.webkit.internal.WebViewFeatureInternal;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface ProfileStore {
     boolean deleteProfile(String str);
 

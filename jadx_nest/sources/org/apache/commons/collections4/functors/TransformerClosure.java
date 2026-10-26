@@ -4,7 +4,7 @@ import java.io.Serializable;
 import org.apache.commons.collections4.Closure;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformerClosure<T> implements Closure<T>, Serializable {
     private static final long serialVersionUID = -5194992589193388969L;
     private final Transformer<? super T, ?> iTransformer;

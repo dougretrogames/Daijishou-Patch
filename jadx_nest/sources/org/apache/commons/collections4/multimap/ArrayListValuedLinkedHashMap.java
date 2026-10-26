@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.Map;
 import org.apache.commons.collections4.MultiValuedMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ArrayListValuedLinkedHashMap<K, V> extends AbstractListValuedMap<K, V> implements Serializable {
     private static final int DEFAULT_INITIAL_LIST_CAPACITY = 3;
     private static final int DEFAULT_INITIAL_MAP_CAPACITY = 16;
@@ -41,7 +41,7 @@ public class ArrayListValuedLinkedHashMap<K, V> extends AbstractListValuedMap<K,
         super.putAll(multiValuedMap);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.multimap.AbstractListValuedMap, org.apache.commons.collections4.multimap.AbstractMultiValuedMap
     public ArrayList<V> createCollection() {
         return new ArrayList<>(this.initialListCapacity);

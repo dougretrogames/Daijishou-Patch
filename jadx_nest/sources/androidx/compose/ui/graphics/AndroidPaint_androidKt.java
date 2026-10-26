@@ -5,12 +5,12 @@ import android.graphics.Shader;
 import android.os.Build;
 import kotlin.Metadata;
 
-/* JADX INFO: compiled from: AndroidPaint.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AndroidPaint.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000n\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\n\u001a\u0006\u0010\u0000\u001a\u00020\u0001\u001a\b\u0010\u0002\u001a\u00020\u0003H\u0000\u001a\n\u0010\u0004\u001a\u00020\u0001*\u00020\u0003\u001a\u0010\u0010\u0005\u001a\u00020\u0006*\u00060\u0003j\u0002`\u0007H\u0000\u001a\u0010\u0010\b\u001a\u00020\t*\u00060\u0003j\u0002`\u0007H\u0000\u001a\u0015\u0010\n\u001a\u00020\u000b*\u00060\u0003j\u0002`\u0007H\u0000¢\u0006\u0002\u0010\f\u001a\u0015\u0010\r\u001a\u00020\u000e*\u00060\u0003j\u0002`\u0007H\u0000¢\u0006\u0002\u0010\u000f\u001a\u0015\u0010\u0010\u001a\u00020\u0011*\u00060\u0003j\u0002`\u0007H\u0000¢\u0006\u0002\u0010\u000f\u001a\u0015\u0010\u0012\u001a\u00020\u0013*\u00060\u0003j\u0002`\u0007H\u0000¢\u0006\u0002\u0010\u000f\u001a\u0010\u0010\u0014\u001a\u00020\u0006*\u00060\u0003j\u0002`\u0007H\u0000\u001a\u0010\u0010\u0015\u001a\u00020\u0006*\u00060\u0003j\u0002`\u0007H\u0000\u001a\u0015\u0010\u0016\u001a\u00020\u0017*\u00060\u0003j\u0002`\u0007H\u0000¢\u0006\u0002\u0010\u000f\u001a\u0018\u0010\u0018\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\u0006\u0010\u001a\u001a\u00020\u0006H\u0000\u001a\u0018\u0010\u001b\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\u0006\u0010\u001a\u001a\u00020\tH\u0000\u001a\"\u0010\u001c\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\u0006\u0010\u001d\u001a\u00020\u001eH\u0000ø\u0001\u0000¢\u0006\u0004\b\u001f\u0010 \u001a\"\u0010!\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\u0006\u0010\u001a\u001a\u00020\u000bH\u0000ø\u0001\u0000¢\u0006\u0004\b\"\u0010#\u001a\u001a\u0010$\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\b\u0010\u001a\u001a\u0004\u0018\u00010%H\u0000\u001a\"\u0010&\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\u0006\u0010\u001a\u001a\u00020\u000eH\u0000ø\u0001\u0000¢\u0006\u0004\b'\u0010 \u001a\u001a\u0010(\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\b\u0010\u001a\u001a\u0004\u0018\u00010)H\u0000\u001a \u0010*\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\u000e\u0010\u001a\u001a\n\u0018\u00010+j\u0004\u0018\u0001`,H\u0000\u001a\"\u0010-\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\u0006\u0010\u001a\u001a\u00020\u0011H\u0000ø\u0001\u0000¢\u0006\u0004\b.\u0010 \u001a\"\u0010/\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\u0006\u0010\u001a\u001a\u00020\u0013H\u0000ø\u0001\u0000¢\u0006\u0004\b0\u0010 \u001a\u0018\u00101\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\u0006\u0010\u001a\u001a\u00020\u0006H\u0000\u001a\u0018\u00102\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\u0006\u0010\u001a\u001a\u00020\u0006H\u0000\u001a\"\u00103\u001a\u00020\u0019*\u00060\u0003j\u0002`\u00072\u0006\u0010\u001a\u001a\u00020\u0017H\u0000ø\u0001\u0000¢\u0006\u0004\b4\u0010 *\n\u00105\"\u00020\u00032\u00020\u0003\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u00066"}, d2 = {"Paint", "Landroidx/compose/ui/graphics/Paint;", "makeNativePaint", "Landroid/graphics/Paint;", "asComposePaint", "getNativeAlpha", "", "Landroidx/compose/ui/graphics/NativePaint;", "getNativeAntiAlias", "", "getNativeColor", "Landroidx/compose/ui/graphics/Color;", "(Landroid/graphics/Paint;)J", "getNativeFilterQuality", "Landroidx/compose/ui/graphics/FilterQuality;", "(Landroid/graphics/Paint;)I", "getNativeStrokeCap", "Landroidx/compose/ui/graphics/StrokeCap;", "getNativeStrokeJoin", "Landroidx/compose/ui/graphics/StrokeJoin;", "getNativeStrokeMiterLimit", "getNativeStrokeWidth", "getNativeStyle", "Landroidx/compose/ui/graphics/PaintingStyle;", "setNativeAlpha", "", "value", "setNativeAntiAlias", "setNativeBlendMode", "mode", "Landroidx/compose/ui/graphics/BlendMode;", "setNativeBlendMode-GB0RdKg", "(Landroid/graphics/Paint;I)V", "setNativeColor", "setNativeColor-4WTKRHQ", "(Landroid/graphics/Paint;J)V", "setNativeColorFilter", "Landroidx/compose/ui/graphics/ColorFilter;", "setNativeFilterQuality", "setNativeFilterQuality-50PEsBU", "setNativePathEffect", "Landroidx/compose/ui/graphics/PathEffect;", "setNativeShader", "Landroid/graphics/Shader;", "Landroidx/compose/ui/graphics/Shader;", "setNativeStrokeCap", "setNativeStrokeCap-CSYIeUk", "setNativeStrokeJoin", "setNativeStrokeJoin-kLtJ_vA", "setNativeStrokeMiterLimit", "setNativeStrokeWidth", "setNativeStyle", "setNativeStyle--5YerkU", "NativePaint", "ui-graphics_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class AndroidPaint_androidKt {
 
-    /* JADX INFO: compiled from: AndroidPaint.android.kt */
+    /* INFO: compiled from: AndroidPaint.android.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     public /* synthetic */ class WhenMappings {
         public static final /* synthetic */ int[] $EnumSwitchMapping$0;
@@ -67,7 +67,7 @@ public final class AndroidPaint_androidKt {
         return new android.graphics.Paint(7);
     }
 
-    /* JADX INFO: renamed from: setNativeBlendMode-GB0RdKg, reason: not valid java name */
+    /* INFO: renamed from: setNativeBlendMode-GB0RdKg, reason: not valid java name */
     public static final void m414setNativeBlendModeGB0RdKg(android.graphics.Paint paint, int i) {
         if (Build.VERSION.SDK_INT >= 29) {
             WrapperVerificationHelperMethods.INSTANCE.m934setBlendModeGB0RdKg(paint, i);
@@ -100,12 +100,12 @@ public final class AndroidPaint_androidKt {
         return ColorKt.Color(paint.getColor());
     }
 
-    /* JADX INFO: renamed from: setNativeColor-4WTKRHQ, reason: not valid java name */
+    /* INFO: renamed from: setNativeColor-4WTKRHQ, reason: not valid java name */
     public static final void m415setNativeColor4WTKRHQ(android.graphics.Paint paint, long j) {
         paint.setColor(ColorKt.m584toArgb8_81llA(j));
     }
 
-    /* JADX INFO: renamed from: setNativeStyle--5YerkU, reason: not valid java name */
+    /* INFO: renamed from: setNativeStyle--5YerkU, reason: not valid java name */
     public static final void m419setNativeStyle5YerkU(android.graphics.Paint paint, int i) {
         paint.setStyle(PaintingStyle.m794equalsimpl0(i, PaintingStyle.INSTANCE.m799getStrokeTiuSbCo()) ? android.graphics.Paint.Style.STROKE : android.graphics.Paint.Style.FILL);
     }
@@ -141,7 +141,7 @@ public final class AndroidPaint_androidKt {
         return StrokeCap.INSTANCE.m884getButtKaPHkGw();
     }
 
-    /* JADX INFO: renamed from: setNativeStrokeCap-CSYIeUk, reason: not valid java name */
+    /* INFO: renamed from: setNativeStrokeCap-CSYIeUk, reason: not valid java name */
     public static final void m417setNativeStrokeCapCSYIeUk(android.graphics.Paint paint, int i) {
         android.graphics.Paint.Cap cap;
         if (StrokeCap.m880equalsimpl0(i, StrokeCap.INSTANCE.m886getSquareKaPHkGw())) {
@@ -169,7 +169,7 @@ public final class AndroidPaint_androidKt {
         return StrokeJoin.INSTANCE.m895getMiterLxFBmk8();
     }
 
-    /* JADX INFO: renamed from: setNativeStrokeJoin-kLtJ_vA, reason: not valid java name */
+    /* INFO: renamed from: setNativeStrokeJoin-kLtJ_vA, reason: not valid java name */
     public static final void m418setNativeStrokeJoinkLtJ_vA(android.graphics.Paint paint, int i) {
         android.graphics.Paint.Join join;
         if (StrokeJoin.m890equalsimpl0(i, StrokeJoin.INSTANCE.m895getMiterLxFBmk8())) {
@@ -197,7 +197,7 @@ public final class AndroidPaint_androidKt {
         return FilterQuality.INSTANCE.m631getLowfv9h1I();
     }
 
-    /* JADX INFO: renamed from: setNativeFilterQuality-50PEsBU, reason: not valid java name */
+    /* INFO: renamed from: setNativeFilterQuality-50PEsBU, reason: not valid java name */
     public static final void m416setNativeFilterQuality50PEsBU(android.graphics.Paint paint, int i) {
         paint.setFilterBitmap(!FilterQuality.m626equalsimpl0(i, FilterQuality.INSTANCE.m633getNonefv9h1I()));
     }

@@ -5,7 +5,7 @@ import com.bumptech.glide.load.Options;
 import com.bumptech.glide.load.ResourceDecoder;
 import com.bumptech.glide.load.engine.Resource;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class UnitDrawableDecoder implements ResourceDecoder<Drawable, Drawable> {
     @Override // com.bumptech.glide.load.ResourceDecoder
     public boolean handles(Drawable drawable, Options options) {

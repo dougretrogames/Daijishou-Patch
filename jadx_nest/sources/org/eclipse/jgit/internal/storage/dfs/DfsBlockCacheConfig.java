@@ -22,7 +22,7 @@ import org.eclipse.jgit.internal.storage.pack.PackExt;
 import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsBlockCacheConfig {
     public static final int DEFAULT_CACHE_HOT_MAX = 1;
     static final String DEFAULT_NAME = "<default>";
@@ -62,7 +62,7 @@ public class DfsBlockCacheConfig {
         print("", "  ", printWriter);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void print(String str, String str2, PrintWriter printWriter) {
         if (!this.name.isEmpty() || !this.packExtCacheConfigurations.isEmpty()) {
             printWriter.println(str + "Name: " + (this.name.isEmpty() ? DEFAULT_NAME : this.name));
@@ -184,7 +184,7 @@ public class DfsBlockCacheConfig {
         return this;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void fromConfig(String str, String str2, Config config) {
         long j = config.getLong(str, str2, ConfigConstants.CONFIG_KEY_BLOCK_LIMIT, getBlockLimit());
         int i = config.getInt(str, str2, ConfigConstants.CONFIG_KEY_BLOCK_SIZE, getBlockSize());
@@ -264,7 +264,7 @@ public class DfsBlockCacheConfig {
             this.packExtCacheConfiguration.setCacheHotMap((Map) streamFilter.collect(Collectors.toUnmodifiableMap(functionIdentity, new DfsBlockCacheConfig$DfsBlockCachePackExtConfig$$ExternalSyntheticLambda1(map))));
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static DfsBlockCachePackExtConfig fromConfig(Config config, String str, String str2) {
             String string = config.getString(str, str2, ConfigConstants.CONFIG_KEY_PACK_EXTENSIONS);
             if (string == null) {

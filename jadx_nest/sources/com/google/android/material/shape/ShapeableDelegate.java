@@ -7,7 +7,7 @@ import android.os.Build;
 import android.view.View;
 import com.google.android.material.canvas.CanvasCompat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class ShapeableDelegate {
     ShapeAppearanceModel shapeAppearanceModel;
     boolean forceCompatClippingEnabled = false;

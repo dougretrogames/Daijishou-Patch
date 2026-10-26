@@ -8,11 +8,11 @@ import com.google.errorprone.annotations.Immutable;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable(containerOf = {"N", ExifInterface.GPS_MEASUREMENT_INTERRUPTED})
 @ElementTypesAreNonnullByDefault
 public final class ImmutableValueGraph<N, V> extends StandardValueGraph<N, V> {
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardValueGraph, com.google.common.graph.BaseGraph, com.google.common.graph.Graph
     public /* bridge */ /* synthetic */ Set adjacentNodes(Object node) {
         return super.adjacentNodes(node);
@@ -23,14 +23,14 @@ public final class ImmutableValueGraph<N, V> extends StandardValueGraph<N, V> {
         return super.allowsSelfLoops();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardValueGraph, com.google.common.graph.ValueGraph
     @CheckForNull
     public /* bridge */ /* synthetic */ Object edgeValueOrDefault(EndpointPair endpoints, @CheckForNull Object defaultValue) {
         return super.edgeValueOrDefault(endpoints, defaultValue);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardValueGraph, com.google.common.graph.ValueGraph
     @CheckForNull
     public /* bridge */ /* synthetic */ Object edgeValueOrDefault(Object nodeU, Object nodeV, @CheckForNull Object defaultValue) {
@@ -42,13 +42,13 @@ public final class ImmutableValueGraph<N, V> extends StandardValueGraph<N, V> {
         return super.hasEdgeConnecting(endpoints);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardValueGraph, com.google.common.graph.AbstractValueGraph, com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ boolean hasEdgeConnecting(Object nodeU, Object nodeV) {
         return super.hasEdgeConnecting(nodeU, nodeV);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardValueGraph, com.google.common.graph.AbstractValueGraph, com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ Set incidentEdges(Object node) {
         return super.incidentEdges(node);
@@ -69,13 +69,13 @@ public final class ImmutableValueGraph<N, V> extends StandardValueGraph<N, V> {
         return super.nodes();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardValueGraph, com.google.common.graph.BaseGraph, com.google.common.graph.PredecessorsFunction, com.google.common.graph.Graph
     public /* bridge */ /* synthetic */ Set predecessors(Object node) {
         return super.predecessors(node);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.StandardValueGraph, com.google.common.graph.BaseGraph, com.google.common.graph.SuccessorsFunction, com.google.common.graph.Graph
     public /* bridge */ /* synthetic */ Set successors(Object node) {
         return super.successors(node);

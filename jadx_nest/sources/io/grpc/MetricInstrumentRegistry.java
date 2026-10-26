@@ -8,7 +8,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class MetricInstrumentRegistry {
     static final int INITIAL_INSTRUMENT_CAPACITY = 5;
     private static MetricInstrumentRegistry instance;

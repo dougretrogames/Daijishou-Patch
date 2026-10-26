@@ -13,7 +13,7 @@ import android.view.animation.LinearInterpolator;
 import androidx.leanback.R;
 import androidx.leanback.widget.Parallax;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ParallaxTransition extends Visibility {
     static Interpolator sInterpolator = new LinearInterpolator();
 
@@ -35,7 +35,7 @@ public class ParallaxTransition extends Visibility {
         return valueAnimatorOfFloat;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.transition.ParallaxTransition$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.transition.ParallaxTransition$1, reason: invalid class name */
     class AnonymousClass1 implements ValueAnimator.AnimatorUpdateListener {
         final /* synthetic */ Parallax val$source;
 

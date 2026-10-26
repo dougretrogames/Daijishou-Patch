@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Map;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Functions {
     private Functions() {
@@ -187,7 +187,7 @@ public final class Functions {
             this.predicate = (Predicate) Preconditions.checkNotNull(predicate);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.common.base.Function
         public Boolean apply(@ParametricNullness T t) {
             return Boolean.valueOf(this.predicate.apply(t));

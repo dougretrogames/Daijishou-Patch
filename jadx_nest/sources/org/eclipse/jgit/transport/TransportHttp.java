@@ -80,7 +80,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransportHttp extends HttpTransport implements WalkTransport, PackTransport {
     private static final String SVC_RECEIVE_PACK = "git-receive-pack";
     private static final String SVC_UPLOAD_PACK = "git-upload-pack";
@@ -108,7 +108,7 @@ public class TransportHttp extends HttpTransport implements WalkTransport, PackT
         UNSPECIFIED,
         GZIP;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static AcceptEncoding[] valuesCustom() {
             AcceptEncoding[] acceptEncodingArrValuesCustom = values();
             int length = acceptEncodingArrValuesCustom.length;
@@ -118,7 +118,7 @@ public class TransportHttp extends HttpTransport implements WalkTransport, PackT
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.TransportHttp$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.TransportHttp$1, reason: invalid class name */
     class AnonymousClass1 extends TransportProtocol {
         private final String[] schemeNames;
         private final Set<String> schemeSet;
@@ -165,7 +165,7 @@ public class TransportHttp extends HttpTransport implements WalkTransport, PackT
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.TransportHttp$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.TransportHttp$2, reason: invalid class name */
     class AnonymousClass2 extends TransportProtocol {
         @Override // org.eclipse.jgit.transport.TransportProtocol
         public int getDefaultPort() {
@@ -217,7 +217,7 @@ public class TransportHttp extends HttpTransport implements WalkTransport, PackT
         this.factory = HttpTransport.getConnectionFactory();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public URL toURL(URIish uRIish) throws MalformedURLException {
         String string = uRIish.toString();
         if (!string.endsWith(InternalZipConstants.ZIP_FILE_SEPARATOR)) {
@@ -256,7 +256,7 @@ public class TransportHttp extends HttpTransport implements WalkTransport, PackT
         this.useSmartHttp = z;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private FetchConnection getConnection(HttpConnection httpConnection, InputStream inputStream, String str, Collection<RefSpec> collection, String... strArr) throws IOException {
         BaseConnection baseConnectionNewDumbConnection;
         if (isSmartHttp(httpConnection, str)) {
@@ -301,10 +301,10 @@ public class TransportHttp extends HttpTransport implements WalkTransport, PackT
         return openFetch(Collections.emptyList(), new String[0]);
     }
 
-    /* JADX WARN: Code duplicated, block: B:35:0x003e A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:60:0x0040 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:67:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Unreachable blocks removed: 2, instructions: 2 */
+    /* WARN: Code duplicated, block: B:35:0x003e A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:60:0x0040 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:67:? A[RETURN, SYNTHETIC] */
+    /* WARN: Unreachable blocks removed: 2, instructions: 2 */
     @Override // org.eclipse.jgit.transport.Transport
     public FetchConnection openFetch(Collection<RefSpec> collection, String... strArr) throws Throwable {
         IOException iOException;
@@ -529,7 +529,7 @@ public class TransportHttp extends HttpTransport implements WalkTransport, PackT
         return Collections.unmodifiableMap(this.headers);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public NoRemoteRepositoryException createNotFoundException(URIish uRIish, URL url, String str) {
         String str2;
         if (str != null && !str.isEmpty()) {
@@ -733,7 +733,7 @@ public class TransportHttp extends HttpTransport implements WalkTransport, PackT
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void handleSslFailure(Throwable th) throws TransportException {
         if (this.sslFailure || !trustInsecureSslConnection(th.getCause())) {
             throw new TransportException(this.uri, MessageFormat.format(JGitText.get().sslFailureExceptionMessage, this.currentUri.setPass(null)), th);
@@ -794,15 +794,15 @@ public class TransportHttp extends HttpTransport implements WalkTransport, PackT
         }
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     private void updateSslVerifyUser(boolean z) {
         try {
@@ -812,7 +812,7 @@ public class TransportHttp extends HttpTransport implements WalkTransport, PackT
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public URIish redirect(URL url, String str, String str2, int i) throws TransportException {
         if (str == null || str.isEmpty()) {
             throw new TransportException(this.uri, MessageFormat.format(JGitText.get().redirectLocationMissing, this.baseUrl));
@@ -1036,7 +1036,7 @@ public class TransportHttp extends HttpTransport implements WalkTransport, PackT
         return ("application/x-" + str + "-advertisement").equals(httpConnection.getContentType());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public boolean isGzipContent(HttpConnection httpConnection) {
         return HttpSupport.ENCODING_GZIP.equals(httpConnection.getHeaderField("Content-Encoding")) || HttpSupport.ENCODING_X_GZIP.equals(httpConnection.getHeaderField("Content-Encoding"));
     }
@@ -1438,11 +1438,11 @@ public class TransportHttp extends HttpTransport implements WalkTransport, PackT
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:121:0x023a  */
-        /* JADX WARN: Code duplicated, block: B:151:0x0155 A[SYNTHETIC] */
-        /* JADX WARN: Code duplicated, block: B:158:0x0247 A[SYNTHETIC] */
-        /* JADX WARN: Code duplicated, block: B:68:0x0120 A[DONT_INVERT] */
-        /* JADX WARN: Code duplicated, block: B:69:0x0122 A[Catch: IOException -> 0x0165, SSLHandshakeException -> 0x0169, InterruptedIOException -> 0x025a, InterruptedIOException | SocketException -> 0x025c, TryCatch #15 {SSLHandshakeException -> 0x0169, IOException -> 0x0165, blocks: (B:66:0x0118, B:69:0x0122, B:72:0x012e, B:74:0x0140, B:75:0x0145, B:76:0x0154, B:77:0x0155, B:78:0x0164), top: B:146:0x0118 }] */
+        /* WARN: Code duplicated, block: B:121:0x023a  */
+        /* WARN: Code duplicated, block: B:151:0x0155 A[SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:158:0x0247 A[SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:68:0x0120 A[DONT_INVERT] */
+        /* WARN: Code duplicated, block: B:69:0x0122 A[Catch: IOException -> 0x0165, SSLHandshakeException -> 0x0169, InterruptedIOException -> 0x025a, InterruptedIOException | SocketException -> 0x025c, TryCatch #15 {SSLHandshakeException -> 0x0169, IOException -> 0x0165, blocks: (B:66:0x0118, B:69:0x0122, B:72:0x012e, B:74:0x0140, B:75:0x0145, B:76:0x0154, B:77:0x0155, B:78:0x0164), top: B:146:0x0118 }] */
         void sendRequest() throws Throwable {
             Throwable th;
             Throwable th2;

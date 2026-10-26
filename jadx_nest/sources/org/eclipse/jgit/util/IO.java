@@ -13,7 +13,7 @@ import java.util.List;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.util.io.SilentFileInputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IO {
     public static final byte[] readFully(File file) throws IOException {
         return readFully(file, Integer.MAX_VALUE);
@@ -39,12 +39,12 @@ public class IO {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v0 */
-    /* JADX WARN: Type inference failed for: r0v1, types: [java.lang.Throwable] */
-    /* JADX WARN: Type inference failed for: r0v4, types: [java.lang.String] */
-    /* JADX WARN: Type inference failed for: r0v5 */
-    /* JADX WARN: Type inference failed for: r4v2, types: [java.lang.Throwable] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v0 */
+    /* WARN: Type inference failed for: r0v1, types: [java.lang.Throwable] */
+    /* WARN: Type inference failed for: r0v4, types: [java.lang.String] */
+    /* WARN: Type inference failed for: r0v5 */
+    /* WARN: Type inference failed for: r4v2, types: [java.lang.Throwable] */
     public static final byte[] readFully(File file, int i) throws IOException {
         ?? r0 = 0;
         r0 = 0;

@@ -8,7 +8,7 @@ import java.util.regex.PatternSyntaxException;
 import javax.annotation.meta.TypeQualifierValidator;
 import javax.annotation.meta.When;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @Syntax("RegEx")
 @Documented
 @Retention(RetentionPolicy.RUNTIME)

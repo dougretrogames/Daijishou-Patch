@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Attributes {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     public static final Attributes EMPTY;
@@ -129,7 +129,7 @@ public final class Attributes {
             return this.newdata;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         public <T> Builder set(Key<T> key, T t) {
             data(1).put(key, t);
             return this;

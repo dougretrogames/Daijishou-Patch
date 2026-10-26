@@ -14,7 +14,7 @@ import javax.crypto.Mac;
 import kotlin.Metadata;
 import kotlin.jvm.functions.Function1;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"okio/Okio__JvmOkioKt", "okio/Okio__OkioKt"}, k = 4, mv = {1, 9, 0}, xi = 48)
 public final class Okio {
     public static final Sink appendingSink(File file) throws FileNotFoundException {

@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Iterator;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class ReverseOrdering<T> extends Ordering<T> implements Serializable {
     private static final long serialVersionUID = 0;

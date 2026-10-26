@@ -13,7 +13,7 @@ import org.commonmark.parser.block.BlockStart;
 import org.commonmark.parser.block.MatchedBlockParser;
 import org.commonmark.parser.block.ParserState;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IndentedCodeBlockParser extends AbstractBlockParser {
     private final IndentedCodeBlock block = new IndentedCodeBlock();
     private final List<CharSequence> lines = new ArrayList();

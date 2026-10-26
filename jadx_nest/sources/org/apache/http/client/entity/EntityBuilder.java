@@ -16,7 +16,7 @@ import org.apache.http.entity.InputStreamEntity;
 import org.apache.http.entity.SerializableEntity;
 import org.apache.http.entity.StringEntity;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EntityBuilder {
     private byte[] binary;
     private boolean chunked;

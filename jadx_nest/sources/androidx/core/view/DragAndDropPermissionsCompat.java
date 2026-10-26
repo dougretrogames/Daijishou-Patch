@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.view.DragAndDropPermissions;
 import android.view.DragEvent;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class DragAndDropPermissionsCompat {
     private final DragAndDropPermissions mDragAndDropPermissions;
 

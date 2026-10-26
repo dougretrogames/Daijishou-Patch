@@ -13,7 +13,7 @@ import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.RefComparator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RefList<T extends Ref> implements Iterable<Ref> {
     private static final RefList<Ref> EMPTY = new RefList<>(new Ref[0], 0);
     final int cnt;
@@ -33,7 +33,7 @@ public class RefList<T extends Ref> implements Iterable<Ref> {
         this.cnt = refList.cnt;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.util.RefList$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.util.RefList$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<Ref> {
         private int idx;
 
@@ -273,7 +273,7 @@ public class RefList<T extends Ref> implements Iterable<Ref> {
             Arrays.sort(this.list, 0, this.size, RefComparator.INSTANCE);
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         void dedupe(BinaryOperator<T> binaryOperator) {
             if (this.size == 0) {
                 return;

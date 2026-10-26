@@ -4,11 +4,11 @@ import com.google.api.client.googleapis.services.AbstractGoogleClientRequest;
 import com.google.api.client.googleapis.services.CommonGoogleClientRequestInitializer;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CommonGoogleJsonClientRequestInitializer extends CommonGoogleClientRequestInitializer {
 
     public static class Builder extends CommonGoogleClientRequestInitializer.Builder {
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.api.client.googleapis.services.CommonGoogleClientRequestInitializer.Builder
         public Builder self() {
             return this;

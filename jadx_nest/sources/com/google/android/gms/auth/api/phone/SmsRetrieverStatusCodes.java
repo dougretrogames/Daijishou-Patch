@@ -2,8 +2,8 @@ package com.google.android.gms.auth.api.phone;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-api-phone@@18.0.2 */
+/* INFO: loaded from: classes3.dex */
 public final class SmsRetrieverStatusCodes extends CommonStatusCodes {
     public static final int API_NOT_AVAILABLE = 36501;
     public static final int PLATFORM_NOT_SUPPORTED = 36500;

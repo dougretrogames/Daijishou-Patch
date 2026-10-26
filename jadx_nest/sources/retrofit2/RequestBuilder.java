@@ -15,7 +15,7 @@ import okhttp3.RequestBody;
 import okio.Buffer;
 import okio.BufferedSink;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 final class RequestBuilder {
     private static final String PATH_SEGMENT_ALWAYS_ENCODE_SET = " \"<>^`{}|\\?#";
     private final HttpUrl baseUrl;
@@ -226,7 +226,7 @@ final class RequestBuilder {
         }
 
         @Override // okhttp3.RequestBody
-        /* JADX INFO: renamed from: contentType */
+        /* INFO: renamed from: contentType */
         public MediaType getContentType() {
             return this.contentType;
         }

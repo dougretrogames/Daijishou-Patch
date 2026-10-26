@@ -13,7 +13,7 @@ import javax.annotation.CheckForNull;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import okhttp3.HttpUrl;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 @Immutable
 public final class ImmutableDoubleArray implements Serializable {
@@ -336,7 +336,7 @@ public final class ImmutableDoubleArray implements Serializable {
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean areEqual(double a, double b) {
         return Double.doubleToLongBits(a) == Double.doubleToLongBits(b);
     }

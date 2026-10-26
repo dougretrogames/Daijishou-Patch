@@ -6,7 +6,7 @@ import java.lang.ref.SoftReference;
 import java.nio.ByteBuffer;
 import java.nio.channels.WritableByteChannel;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class ByteBufferWriter {
     private static final ThreadLocal<SoftReference<byte[]>> BUFFER = new ThreadLocal<>();
     private static final float BUFFER_REALLOCATION_THRESHOLD = 0.5f;

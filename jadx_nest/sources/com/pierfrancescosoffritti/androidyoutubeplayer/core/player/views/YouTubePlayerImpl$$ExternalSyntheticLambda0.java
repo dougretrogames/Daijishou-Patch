@@ -3,8 +3,8 @@ package com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views;
 import android.webkit.WebView;
 import java.util.List;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class YouTubePlayerImpl$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ WebView f$0;
     public final /* synthetic */ String f$1;

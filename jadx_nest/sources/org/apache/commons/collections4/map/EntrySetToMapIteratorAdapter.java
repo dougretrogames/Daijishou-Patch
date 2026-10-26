@@ -6,7 +6,7 @@ import java.util.Set;
 import org.apache.commons.collections4.MapIterator;
 import org.apache.commons.collections4.ResettableIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EntrySetToMapIteratorAdapter<K, V> implements MapIterator<K, V>, ResettableIterator<K> {
     transient Map.Entry<K, V> entry;
     final Set<Map.Entry<K, V>> entrySet;

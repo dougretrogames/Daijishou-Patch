@@ -30,15 +30,15 @@ import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.MainCoroutineDispatcher;
 import kotlinx.serialization.json.Json;
 
-/* JADX INFO: compiled from: ForeverUpgradeScript.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ForeverUpgradeScript.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J*\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0012\u0010\u000f\u001a\u000e\u0012\u0004\u0012\u00020\u0011\u0012\u0004\u0012\u00020\f0\u0010H\u0096@¢\u0006\u0002\u0010\u0012R\u0014\u0010\u0003\u001a\u00020\u0004X\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\bX\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\t\u0010\n¨\u0006\u0013"}, d2 = {"Lcom/magneticchen/daijishou/upgrade_scripts/ForeverUpgradeScript;", "Lcom/magneticchen/daijishou/upgrade_scripts/UpgradeScript;", "()V", "toVersion", "", "getToVersion", "()I", "upgradeDescription", "", "getUpgradeDescription", "()Ljava/lang/String;", "upgrade", "", "appCompatActivity", "Landroidx/appcompat/app/AppCompatActivity;", "callback", "Lkotlin/Function1;", "", "(Landroidx/appcompat/app/AppCompatActivity;Lkotlin/jvm/functions/Function1;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class ForeverUpgradeScript extends UpgradeScript {
     private final String upgradeDescription = "Checking messages";
     private final int toVersion = 999999999;
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.upgrade_scripts.ForeverUpgradeScript$upgrade$1, reason: invalid class name */
-    /* JADX INFO: compiled from: ForeverUpgradeScript.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.upgrade_scripts.ForeverUpgradeScript$upgrade$1, reason: invalid class name */
+    /* INFO: compiled from: ForeverUpgradeScript.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.upgrade_scripts.ForeverUpgradeScript", f = "ForeverUpgradeScript.kt", i = {0}, l = {57}, m = "upgrade", n = {"callback"}, s = {"L$0"})
     final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouContinuationImpl {
@@ -67,7 +67,7 @@ public final class ForeverUpgradeScript extends UpgradeScript {
         return this.toVersion;
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code duplicated, block: B:7:0x0014  */
     @Override // com.magneticchen.daijishou.upgrade_scripts.UpgradeScript
     public Object upgrade(AppCompatActivity appCompatActivity, Function1<? super Boolean, Unit> function1, Continuation<?> continuation) {
         AnonymousClass1 anonymousClass1;
@@ -135,8 +135,8 @@ public final class ForeverUpgradeScript extends UpgradeScript {
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.upgrade_scripts.ForeverUpgradeScript$upgrade$2, reason: invalid class name */
-    /* JADX INFO: compiled from: ForeverUpgradeScript.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.upgrade_scripts.ForeverUpgradeScript$upgrade$2, reason: invalid class name */
+    /* INFO: compiled from: ForeverUpgradeScript.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.upgrade_scripts.ForeverUpgradeScript$upgrade$2", f = "ForeverUpgradeScript.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -147,8 +147,8 @@ public final class ForeverUpgradeScript extends UpgradeScript {
         final /* synthetic */ int $version;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass2(Ref.IntRef intRef, MessagesIndexJson messagesIndexJson, Function1<? super Boolean, Unit> function1, int i, AppCompatActivity appCompatActivity, Continuation<?> continuation) {
             super(2, continuation);
             this.$index = intRef;
@@ -242,7 +242,7 @@ public final class ForeverUpgradeScript extends UpgradeScript {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static final void invokeSuspendImpl$nextMessage$lambda$1(MessageJson messageJson, AppCompatActivity appCompatActivity, Ref.IntRef intRef, MessagesIndexJson messagesIndexJson, Function1 function1, int i, DialogInterface dialogInterface, int i2) {
             String acknowledgmentLink = messageJson.getAcknowledgmentLink();
             if (acknowledgmentLink != null) {
@@ -251,7 +251,7 @@ public final class ForeverUpgradeScript extends UpgradeScript {
             invokeSuspendImpl$nextMessage(intRef, messagesIndexJson, function1, i, appCompatActivity);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static final void invokeSuspendImpl$nextMessage$lambda$4$lambda$3(MessageJson messageJson, Function1 function1, AppCompatActivity appCompatActivity, DialogInterface dialogInterface, int i) {
             String cancelLink = messageJson.getCancelLink();
             if (cancelLink != null) {
@@ -260,7 +260,7 @@ public final class ForeverUpgradeScript extends UpgradeScript {
             function1.invoke(false);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static final void invokeSuspendImpl$nextMessage$lambda$7$lambda$6(MessageJson messageJson, AppCompatActivity appCompatActivity, Ref.IntRef intRef, MessagesIndexJson messagesIndexJson, Function1 function1, int i, DialogInterface dialogInterface, int i2) {
             String neutralLink = messageJson.getNeutralLink();
             if (neutralLink != null) {

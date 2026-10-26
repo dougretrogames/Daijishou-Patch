@@ -10,15 +10,15 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlin.ranges.IntRange;
 
-/* JADX INFO: compiled from: AmbiguousColumnResolver.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: AmbiguousColumnResolver.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0010\b\n\u0000\u0010\u0000\u001a\u00020\u00012\f\u0010\u0002\u001a\b\u0012\u0004\u0012\u00020\u00040\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "indices", "", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
 final class AmbiguousColumnResolver$resolve$1$2 extends Lambda implements Function1<List<? extends Integer>, Unit> {
     final /* synthetic */ int $mappingIndex;
     final /* synthetic */ List<List<AmbiguousColumnResolver.Match>> $mappingMatches;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     AmbiguousColumnResolver$resolve$1$2(List<? extends List<AmbiguousColumnResolver.Match>> list, int i) {
         super(1);
         this.$mappingMatches = list;
@@ -31,7 +31,7 @@ final class AmbiguousColumnResolver$resolve$1$2 extends Lambda implements Functi
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(List<Integer> indices) {
         Intrinsics.checkNotNullParameter(indices, "indices");
         List<Integer> list = indices;

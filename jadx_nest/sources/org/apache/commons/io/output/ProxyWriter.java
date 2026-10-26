@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.Writer;
 import org.apache.commons.io.IOUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ProxyWriter extends FilterWriter {
     protected void afterWrite(int i) throws IOException {
     }

@@ -10,7 +10,7 @@ import java.util.TreeMap;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SizeConfigStrategy implements LruPoolStrategy {
     private static final Bitmap.Config[] ALPHA_8_IN_CONFIGS;
     private static final Bitmap.Config[] ARGB_4444_IN_CONFIGS;
@@ -136,7 +136,7 @@ public class SizeConfigStrategy implements LruPoolStrategy {
             return key;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.bumptech.glide.load.engine.bitmap_recycle.BaseKeyPool
         public Key create() {
             return new Key(this);
@@ -212,7 +212,7 @@ public class SizeConfigStrategy implements LruPoolStrategy {
         return new Bitmap.Config[]{config};
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.bitmap_recycle.SizeConfigStrategy$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.bitmap_recycle.SizeConfigStrategy$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$android$graphics$Bitmap$Config;
 

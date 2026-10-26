@@ -8,7 +8,7 @@ import java.io.Writer;
 import java.nio.charset.StandardCharsets;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MessageWriter extends Writer {
     private final ByteArrayOutputStream buf = new ByteArrayOutputStream();
     private final OutputStreamWriter enc = new OutputStreamWriter(getRawStream(), StandardCharsets.UTF_8);

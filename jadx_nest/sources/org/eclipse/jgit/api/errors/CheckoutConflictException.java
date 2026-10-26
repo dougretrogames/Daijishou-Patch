@@ -3,7 +3,7 @@ package org.eclipse.jgit.api.errors;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CheckoutConflictException extends GitAPIException {
     private static final long serialVersionUID = 1;
     private List<String> conflictingPaths;

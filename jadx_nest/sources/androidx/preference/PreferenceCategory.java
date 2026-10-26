@@ -5,7 +5,7 @@ import android.os.Build;
 import android.util.AttributeSet;
 import androidx.core.content.res.TypedArrayUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class PreferenceCategory extends PreferenceGroup {
     @Override // androidx.preference.Preference
     public boolean isEnabled() {

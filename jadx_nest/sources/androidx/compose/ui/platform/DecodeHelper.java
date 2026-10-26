@@ -20,8 +20,8 @@ import kotlin.Metadata;
 import kotlin.ULong;
 import kotlin.collections.CollectionsKt;
 
-/* JADX INFO: compiled from: AndroidClipboardManager.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AndroidClipboardManager.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000|\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0005\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0007\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0000\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\b\u0010\u0007\u001a\u00020\bH\u0002J\u0015\u0010\t\u001a\u00020\nH\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u000b\u0010\fJ\b\u0010\r\u001a\u00020\u000eH\u0002J\u0013\u0010\u000f\u001a\u00020\u0010ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u0011\u0010\u0012J\b\u0010\u0013\u001a\u00020\u0014H\u0002J\u0013\u0010\u0015\u001a\u00020\u0016ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u0017\u0010\u0018J\u0013\u0010\u0019\u001a\u00020\u001aø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b\u001b\u0010\u0018J\u0006\u0010\u001c\u001a\u00020\u001dJ\b\u0010\u001e\u001a\u00020\bH\u0002J\b\u0010\u001f\u001a\u00020 H\u0002J\u0006\u0010!\u001a\u00020\"J\n\u0010#\u001a\u0004\u0018\u00010\u0003H\u0002J\b\u0010$\u001a\u00020%H\u0002J\b\u0010&\u001a\u00020'H\u0002J\u0013\u0010(\u001a\u00020)ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b*\u0010\u0012J\u0015\u0010+\u001a\u00020,H\u0002ø\u0001\u0000ø\u0001\u0001¢\u0006\u0004\b-\u0010\u0012R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000\u0082\u0002\u000b\n\u0002\b!\n\u0005\b¡\u001e0\u0001¨\u0006."}, d2 = {"Landroidx/compose/ui/platform/DecodeHelper;", "", TypedValues.Custom.S_STRING, "", "(Ljava/lang/String;)V", "parcel", "Landroid/os/Parcel;", "dataAvailable", "", "decodeBaselineShift", "Landroidx/compose/ui/text/style/BaselineShift;", "decodeBaselineShift-y9eOQZs", "()F", "decodeByte", "", "decodeColor", "Landroidx/compose/ui/graphics/Color;", "decodeColor-0d7_KjU", "()J", "decodeFloat", "", "decodeFontStyle", "Landroidx/compose/ui/text/font/FontStyle;", "decodeFontStyle-_-LCdwA", "()I", "decodeFontSynthesis", "Landroidx/compose/ui/text/font/FontSynthesis;", "decodeFontSynthesis-GVVA2EU", "decodeFontWeight", "Landroidx/compose/ui/text/font/FontWeight;", "decodeInt", "decodeShadow", "Landroidx/compose/ui/graphics/Shadow;", "decodeSpanStyle", "Landroidx/compose/ui/text/SpanStyle;", "decodeString", "decodeTextDecoration", "Landroidx/compose/ui/text/style/TextDecoration;", "decodeTextGeometricTransform", "Landroidx/compose/ui/text/style/TextGeometricTransform;", "decodeTextUnit", "Landroidx/compose/ui/unit/TextUnit;", "decodeTextUnit-XSAIIZE", "decodeULong", "Lkotlin/ULong;", "decodeULong-s-VKNKU", "ui_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 public final class DecodeHelper {
     public static final int $stable = 8;
@@ -125,12 +125,12 @@ public final class DecodeHelper {
         return mutableSpanStyle.toSpanStyle();
     }
 
-    /* JADX INFO: renamed from: decodeColor-0d7_KjU, reason: not valid java name */
+    /* INFO: renamed from: decodeColor-0d7_KjU, reason: not valid java name */
     public final long m2141decodeColor0d7_KjU() {
         return Color.m526constructorimpl(m2140decodeULongsVKNKU());
     }
 
-    /* JADX INFO: renamed from: decodeTextUnit-XSAIIZE, reason: not valid java name */
+    /* INFO: renamed from: decodeTextUnit-XSAIIZE, reason: not valid java name */
     public final long m2144decodeTextUnitXSAIIZE() {
         long jM3109getUnspecifiedUIouoOA;
         byte bDecodeByte = decodeByte();
@@ -151,7 +151,7 @@ public final class DecodeHelper {
         return new FontWeight(decodeInt());
     }
 
-    /* JADX INFO: renamed from: decodeFontStyle-_-LCdwA, reason: not valid java name */
+    /* INFO: renamed from: decodeFontStyle-_-LCdwA, reason: not valid java name */
     public final int m2142decodeFontStyle_LCdwA() {
         byte bDecodeByte = decodeByte();
         if (bDecodeByte == 0) {
@@ -163,7 +163,7 @@ public final class DecodeHelper {
         return FontStyle.INSTANCE.m2499getNormal_LCdwA();
     }
 
-    /* JADX INFO: renamed from: decodeFontSynthesis-GVVA2EU, reason: not valid java name */
+    /* INFO: renamed from: decodeFontSynthesis-GVVA2EU, reason: not valid java name */
     public final int m2143decodeFontSynthesisGVVA2EU() {
         byte bDecodeByte = decodeByte();
         if (bDecodeByte == 0) {
@@ -181,7 +181,7 @@ public final class DecodeHelper {
         return FontSynthesis.INSTANCE.m2510getNoneGVVA2EU();
     }
 
-    /* JADX INFO: renamed from: decodeBaselineShift-y9eOQZs, reason: not valid java name */
+    /* INFO: renamed from: decodeBaselineShift-y9eOQZs, reason: not valid java name */
     private final float m2139decodeBaselineShifty9eOQZs() {
         return BaselineShift.m2661constructorimpl(decodeFloat());
     }
@@ -218,7 +218,7 @@ public final class DecodeHelper {
         return this.parcel.readInt();
     }
 
-    /* JADX INFO: renamed from: decodeULong-s-VKNKU, reason: not valid java name */
+    /* INFO: renamed from: decodeULong-s-VKNKU, reason: not valid java name */
     private final long m2140decodeULongsVKNKU() {
         return ULong.m3926constructorimpl(this.parcel.readLong());
     }

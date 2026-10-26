@@ -4,8 +4,8 @@ import java.io.InputStream;
 import org.eclipse.jgit.dircache.DirCacheCheckout;
 import org.eclipse.jgit.treewalk.FileTreeIterator;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class PatchApplier$$ExternalSyntheticLambda3 implements DirCacheCheckout.StreamSupplier {
     public final /* synthetic */ FileTreeIterator f$0;
 

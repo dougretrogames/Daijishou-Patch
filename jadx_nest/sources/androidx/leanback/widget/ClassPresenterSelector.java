@@ -3,7 +3,7 @@ package androidx.leanback.widget;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ClassPresenterSelector extends PresenterSelector {
     private final ArrayList<Presenter> mPresenters = new ArrayList<>();
     private final HashMap<Class<?>, Object> mClassMap = new HashMap<>();

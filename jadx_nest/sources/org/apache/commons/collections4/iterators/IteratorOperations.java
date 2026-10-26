@@ -10,13 +10,13 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.function.Supplier;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface IteratorOperations<E> extends Iterator<E> {
     static /* synthetic */ HashSet $r8$lambda$j35xzDqY00kBEc7DMQyJC7sG_u4() {
         return new HashSet();
     }
 
-    /* JADX INFO: renamed from: $r8$lambda$wBZ5N9SAmxJLRX-vx8hIUeo_fgc, reason: not valid java name */
+    /* INFO: renamed from: $r8$lambda$wBZ5N9SAmxJLRX-vx8hIUeo_fgc, reason: not valid java name */
     static /* synthetic */ ArrayList m5539$r8$lambda$wBZ5N9SAmxJLRXvx8hIUeo_fgc() {
         return new ArrayList();
     }

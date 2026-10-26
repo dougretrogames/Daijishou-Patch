@@ -3,7 +3,7 @@ package com.google.api.client.http;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class LowLevelHttpResponse {
     public void disconnect() throws IOException {
     }

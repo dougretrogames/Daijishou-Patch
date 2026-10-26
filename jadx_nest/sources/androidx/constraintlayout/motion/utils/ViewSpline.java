@@ -14,7 +14,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ViewSpline extends SplineSet {
     private static final String TAG = "ViewSpline";
 
@@ -24,7 +24,7 @@ public abstract class ViewSpline extends SplineSet {
         return new CustomSet(str, sparseArray);
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     public static ViewSpline makeSpline(String str) {
         str.hashCode();
         byte b = -1;

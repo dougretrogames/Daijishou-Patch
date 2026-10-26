@@ -7,7 +7,7 @@ import java.io.PushbackInputStream;
 import java.util.zip.DataFormatException;
 import java.util.zip.Inflater;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class InflaterInputStream extends DecompressedInputStream {
     private byte[] buff;
     private Inflater inflater;

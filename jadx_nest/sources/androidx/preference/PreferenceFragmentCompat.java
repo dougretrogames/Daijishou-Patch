@@ -19,7 +19,7 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class PreferenceFragmentCompat extends Fragment implements PreferenceManager.OnPreferenceTreeClickListener, PreferenceManager.OnDisplayPreferenceDialogListener, PreferenceManager.OnNavigateToScreenListener, DialogPreference.TargetFragment {
     public static final String ARG_PREFERENCE_ROOT = "androidx.preference.PreferenceFragmentCompat.PREFERENCE_ROOT";
     private static final String DIALOG_FRAGMENT_TAG = "androidx.preference.PreferenceFragment.DIALOG";
@@ -60,7 +60,7 @@ public abstract class PreferenceFragmentCompat extends Fragment implements Prefe
     protected void onUnbindPreferences() {
     }
 
-    /* JADX INFO: renamed from: androidx.preference.PreferenceFragmentCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.PreferenceFragmentCompat$1, reason: invalid class name */
     class AnonymousClass1 extends Handler {
         AnonymousClass1(Looper looper) {
             super(looper);
@@ -75,7 +75,7 @@ public abstract class PreferenceFragmentCompat extends Fragment implements Prefe
         }
     }
 
-    /* JADX INFO: renamed from: androidx.preference.PreferenceFragmentCompat$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.PreferenceFragmentCompat$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -386,7 +386,7 @@ public abstract class PreferenceFragmentCompat extends Fragment implements Prefe
         scrollToPreferenceInternal(preference, null);
     }
 
-    /* JADX INFO: renamed from: androidx.preference.PreferenceFragmentCompat$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.PreferenceFragmentCompat$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         final /* synthetic */ String val$key;
         final /* synthetic */ Preference val$preference;
@@ -396,7 +396,7 @@ public abstract class PreferenceFragmentCompat extends Fragment implements Prefe
             this.val$key = str;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.lang.Runnable
         public void run() {
             int preferenceAdapterPosition;

@@ -5,7 +5,7 @@ import com.google.android.material.sidesheet.SheetCallback;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 interface Sheet<C extends SheetCallback> extends MaterialBackHandler {
     public static final int EDGE_LEFT = 1;
     public static final int EDGE_RIGHT = 0;

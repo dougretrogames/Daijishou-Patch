@@ -17,7 +17,7 @@ import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.lib.ReflogReader;
 import org.eclipse.jgit.transport.ReceiveCommand;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class ReftableDatabase {
     private final ReentrantLock lock = new ReentrantLock(true);
     private Reftable mergedTables;

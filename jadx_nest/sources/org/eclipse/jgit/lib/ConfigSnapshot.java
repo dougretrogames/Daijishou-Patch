@@ -14,7 +14,7 @@ import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class ConfigSnapshot {
     final ConfigSnapshot baseState;
     final Map<Object, Object> cache = new ConcurrentHashMap(16, 0.75f, 1);
@@ -150,7 +150,7 @@ class ConfigSnapshot {
         return arrayList;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int compare2(String str, String str2, String str3, String str4, String str5, String str6) {
         int iCompareWithCase;
         int iCompareIgnoreCase = StringUtils.compareIgnoreCase(str, str4);
@@ -237,7 +237,7 @@ class ConfigSnapshot {
             return this.names.containsKey(str) || this.names.containsKey(StringUtils.toLowerCase(str));
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.lib.ConfigSnapshot$CaseFoldingSet$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.lib.ConfigSnapshot$CaseFoldingSet$1, reason: invalid class name */
         class AnonymousClass1 implements Iterator<String> {
             private final /* synthetic */ Iterator val$i;
 

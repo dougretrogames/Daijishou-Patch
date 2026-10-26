@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockTokenServerTransport extends MockHttpTransport {
     static final String EXPECTED_GRANT_TYPE = "urn:ietf:params:oauth:grant-type:jwt-bearer";
     private static final String LEGACY_TOKEN_SERVER_URL = "https://accounts.google.com/o/oauth2/token";
@@ -64,7 +64,7 @@ public class MockTokenServerTransport extends MockHttpTransport {
         return super.buildRequest(str, str2);
     }
 
-    /* JADX INFO: renamed from: com.google.api.client.googleapis.testing.auth.oauth2.MockTokenServerTransport$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.googleapis.testing.auth.oauth2.MockTokenServerTransport$1, reason: invalid class name */
     class AnonymousClass1 extends MockLowLevelHttpRequest {
         AnonymousClass1(String str) {
             super(str);

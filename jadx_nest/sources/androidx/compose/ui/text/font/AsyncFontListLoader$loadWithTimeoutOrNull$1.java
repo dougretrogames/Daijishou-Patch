@@ -5,8 +5,8 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 
-/* JADX INFO: compiled from: FontListFontFamilyTypefaceAdapter.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: FontListFontFamilyTypefaceAdapter.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 @DebugMetadata(c = "androidx.compose.ui.text.font.AsyncFontListLoader", f = "FontListFontFamilyTypefaceAdapter.kt", i = {0}, l = {304}, m = "loadWithTimeoutOrNull$ui_text_release", n = {"$this$loadWithTimeoutOrNull"}, s = {"L$0"})
 final class AsyncFontListLoader$loadWithTimeoutOrNull$1 extends ContinuationImpl {
@@ -15,7 +15,7 @@ final class AsyncFontListLoader$loadWithTimeoutOrNull$1 extends ContinuationImpl
     /* synthetic */ Object result;
     final /* synthetic */ AsyncFontListLoader this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     AsyncFontListLoader$loadWithTimeoutOrNull$1(AsyncFontListLoader asyncFontListLoader, Continuation<? super AsyncFontListLoader$loadWithTimeoutOrNull$1> continuation) {
         super(continuation);
         this.this$0 = asyncFontListLoader;

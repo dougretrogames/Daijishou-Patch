@@ -3,7 +3,7 @@ package org.apache.commons.io.function;
 import java.io.IOException;
 import java.util.function.UnaryOperator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @FunctionalInterface
 public interface IOUnaryOperator<T> extends IOFunction<T, T> {
     static /* synthetic */ Object lambda$identity$0(Object obj) throws IOException {

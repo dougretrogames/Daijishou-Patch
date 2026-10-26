@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.util.function.Supplier;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Uncheck {
     public static <T, U> void accept(IOBiConsumer<T, U> iOBiConsumer, T t, U u) {
         try {

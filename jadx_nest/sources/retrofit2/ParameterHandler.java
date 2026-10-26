@@ -10,19 +10,19 @@ import javax.annotation.Nullable;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 abstract class ParameterHandler<T> {
     abstract void apply(RequestBuilder requestBuilder, @Nullable T t) throws IOException;
 
     ParameterHandler() {
     }
 
-    /* JADX INFO: renamed from: retrofit2.ParameterHandler$1, reason: invalid class name */
+    /* INFO: renamed from: retrofit2.ParameterHandler$1, reason: invalid class name */
     class AnonymousClass1 extends ParameterHandler<Iterable<T>> {
         AnonymousClass1() {
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // retrofit2.ParameterHandler
         public void apply(RequestBuilder requestBuilder, @Nullable Iterable<T> iterable) throws IOException {
             if (iterable == null) {
@@ -39,12 +39,12 @@ abstract class ParameterHandler<T> {
         return new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: retrofit2.ParameterHandler$2, reason: invalid class name */
+    /* INFO: renamed from: retrofit2.ParameterHandler$2, reason: invalid class name */
     class AnonymousClass2 extends ParameterHandler<Object> {
         AnonymousClass2() {
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // retrofit2.ParameterHandler
         void apply(RequestBuilder requestBuilder, @Nullable Object obj) throws IOException {
             if (obj == null) {
@@ -176,7 +176,7 @@ abstract class ParameterHandler<T> {
             this.encoded = z;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // retrofit2.ParameterHandler
         public void apply(RequestBuilder requestBuilder, @Nullable Map<String, T> map) throws IOException {
             if (map == null) {
@@ -213,7 +213,7 @@ abstract class ParameterHandler<T> {
             this.allowUnsafeNonAsciiValues = z;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // retrofit2.ParameterHandler
         public void apply(RequestBuilder requestBuilder, @Nullable Map<String, T> map) throws IOException {
             if (map == null) {
@@ -242,7 +242,7 @@ abstract class ParameterHandler<T> {
             this.p = i;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // retrofit2.ParameterHandler
         public void apply(RequestBuilder requestBuilder, @Nullable okhttp3.Headers headers) {
             if (headers == null) {
@@ -286,7 +286,7 @@ abstract class ParameterHandler<T> {
             this.encoded = z;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // retrofit2.ParameterHandler
         public void apply(RequestBuilder requestBuilder, @Nullable Map<String, T> map) throws IOException {
             if (map == null) {
@@ -342,7 +342,7 @@ abstract class ParameterHandler<T> {
         private RawPart() {
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // retrofit2.ParameterHandler
         public void apply(RequestBuilder requestBuilder, @Nullable MultipartBody.Part part) {
             if (part != null) {
@@ -364,7 +364,7 @@ abstract class ParameterHandler<T> {
             this.transferEncoding = str;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // retrofit2.ParameterHandler
         public void apply(RequestBuilder requestBuilder, @Nullable Map<String, T> map) throws IOException {
             if (map == null) {

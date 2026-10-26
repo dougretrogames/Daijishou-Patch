@@ -2,7 +2,7 @@ package org.eclipse.jgit.diff;
 
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EditList extends ArrayList<Edit> {
     private static final long serialVersionUID = 1;
 

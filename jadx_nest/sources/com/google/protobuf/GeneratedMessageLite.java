@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageLite<MessageType, BuilderType>, BuilderType extends Builder<MessageType, BuilderType>> extends AbstractMessageLite<MessageType, BuilderType> {
     private static final int MEMOIZED_SERIALIZED_SIZE_MASK = Integer.MAX_VALUE;
     private static final int MUTABLE_FLAG_MASK = Integer.MIN_VALUE;
@@ -306,7 +306,7 @@ public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageL
         }
 
         @Override // com.google.protobuf.AbstractMessageLite.Builder
-        /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+        /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
         public BuilderType mo3377clone() {
             BuilderType buildertype = (BuilderType) getDefaultInstanceForType().newBuilderForType();
             buildertype.instance = (MessageType) buildPartial();
@@ -331,7 +331,7 @@ public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageL
             throw newUninitializedMessageException(messagetype);
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // com.google.protobuf.AbstractMessageLite.Builder
         public BuilderType internalMergeFrom(MessageType messagetype) {
             return (BuilderType) mergeFrom((GeneratedMessageLite) messagetype);
@@ -420,7 +420,7 @@ public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageL
             return parseExtension(input, extensionRegistry, extensionRegistry.findLiteExtensionByNumber(defaultInstance, tagFieldNumber), tag, tagFieldNumber);
         }
 
-        /* JADX WARN: Code duplicated, block: B:4:0x0008  */
+        /* WARN: Code duplicated, block: B:4:0x0008  */
         private boolean parseExtension(CodedInputStream input, ExtensionRegistryLite extensionRegistry, GeneratedExtension<?, ?> extension, int tag, int fieldNumber) throws IOException {
             boolean z;
             boolean z2;
@@ -659,7 +659,7 @@ public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageL
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.GeneratedMessageLite$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.GeneratedMessageLite$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$JavaType;
 
@@ -826,7 +826,7 @@ public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageL
             return this.enumTypeMap;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // com.google.protobuf.FieldSet.FieldDescriptorLite
         public MessageLite.Builder internalMergeFrom(MessageLite.Builder to, MessageLite from) {
             return ((Builder) to).mergeFrom((GeneratedMessageLite) from);
@@ -990,7 +990,7 @@ public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageL
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <MessageType extends ExtendableMessage<MessageType, BuilderType>, BuilderType extends ExtendableBuilder<MessageType, BuilderType>, T> GeneratedExtension<MessageType, T> checkIsLite(ExtensionLite<MessageType, T> extension) {
         if (!extension.isLite()) {
             throw new IllegalArgumentException("Expected a lite extension.");
@@ -1017,7 +1017,7 @@ public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageL
         return IntArrayList.emptyList();
     }
 
-    /* JADX WARN: Type inference failed for: r1v1, types: [com.google.protobuf.Internal$IntList] */
+    /* WARN: Type inference failed for: r1v1, types: [com.google.protobuf.Internal$IntList] */
     protected static Internal.IntList mutableCopy(Internal.IntList list) {
         int size = list.size();
         return list.mutableCopyWithCapacity2(size == 0 ? 10 : size * 2);
@@ -1027,7 +1027,7 @@ public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageL
         return LongArrayList.emptyList();
     }
 
-    /* JADX WARN: Type inference failed for: r1v1, types: [com.google.protobuf.Internal$LongList] */
+    /* WARN: Type inference failed for: r1v1, types: [com.google.protobuf.Internal$LongList] */
     protected static Internal.LongList mutableCopy(Internal.LongList list) {
         int size = list.size();
         return list.mutableCopyWithCapacity2(size == 0 ? 10 : size * 2);
@@ -1037,7 +1037,7 @@ public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageL
         return FloatArrayList.emptyList();
     }
 
-    /* JADX WARN: Type inference failed for: r1v1, types: [com.google.protobuf.Internal$FloatList] */
+    /* WARN: Type inference failed for: r1v1, types: [com.google.protobuf.Internal$FloatList] */
     protected static Internal.FloatList mutableCopy(Internal.FloatList list) {
         int size = list.size();
         return list.mutableCopyWithCapacity2(size == 0 ? 10 : size * 2);
@@ -1047,7 +1047,7 @@ public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageL
         return DoubleArrayList.emptyList();
     }
 
-    /* JADX WARN: Type inference failed for: r1v1, types: [com.google.protobuf.Internal$DoubleList] */
+    /* WARN: Type inference failed for: r1v1, types: [com.google.protobuf.Internal$DoubleList] */
     protected static Internal.DoubleList mutableCopy(Internal.DoubleList list) {
         int size = list.size();
         return list.mutableCopyWithCapacity2(size == 0 ? 10 : size * 2);
@@ -1057,7 +1057,7 @@ public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageL
         return BooleanArrayList.emptyList();
     }
 
-    /* JADX WARN: Type inference failed for: r1v1, types: [com.google.protobuf.Internal$BooleanList] */
+    /* WARN: Type inference failed for: r1v1, types: [com.google.protobuf.Internal$BooleanList] */
     protected static Internal.BooleanList mutableCopy(Internal.BooleanList list) {
         int size = list.size();
         return list.mutableCopyWithCapacity2(size == 0 ? 10 : size * 2);
@@ -1118,7 +1118,7 @@ public abstract class GeneratedMessageLite<MessageType extends GeneratedMessageL
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <T extends GeneratedMessageLite<T, ?>> T parsePartialFrom(T t, byte[] bArr, int i, int i2, ExtensionRegistryLite extensionRegistryLite) throws InvalidProtocolBufferException {
         T t2 = (T) t.newMutableInstance();
         try {

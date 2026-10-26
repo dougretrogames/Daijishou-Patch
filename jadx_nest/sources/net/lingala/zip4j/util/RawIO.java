@@ -7,7 +7,7 @@ import java.io.RandomAccessFile;
 import java.util.Arrays;
 import net.lingala.zip4j.exception.ZipException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RawIO {
     private final byte[] shortBuff = new byte[2];
     private final byte[] intBuff = new byte[4];

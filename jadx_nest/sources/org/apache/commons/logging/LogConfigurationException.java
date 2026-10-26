@@ -1,6 +1,6 @@
 package org.apache.commons.logging;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LogConfigurationException extends RuntimeException {
     private static final long serialVersionUID = 8486587136871052495L;
     protected Throwable cause;

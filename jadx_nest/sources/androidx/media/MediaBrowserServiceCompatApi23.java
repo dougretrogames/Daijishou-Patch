@@ -5,7 +5,7 @@ import android.media.browse.MediaBrowser;
 import android.os.Parcel;
 import android.service.media.MediaBrowserService;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class MediaBrowserServiceCompatApi23 {
 
     public interface ServiceCompatProxy extends MediaBrowserServiceCompatApi21.ServiceCompatProxy {

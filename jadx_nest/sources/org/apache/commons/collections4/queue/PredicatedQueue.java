@@ -4,7 +4,7 @@ import java.util.Queue;
 import org.apache.commons.collections4.Predicate;
 import org.apache.commons.collections4.collection.PredicatedCollection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PredicatedQueue<E> extends PredicatedCollection<E> implements Queue<E> {
     private static final long serialVersionUID = 2307609000539943581L;
 
@@ -16,7 +16,7 @@ public class PredicatedQueue<E> extends PredicatedCollection<E> implements Queue
         super(queue, predicate);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public Queue<E> decorated() {
         return (Queue) super.decorated();

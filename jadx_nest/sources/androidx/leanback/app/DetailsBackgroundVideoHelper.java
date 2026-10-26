@@ -9,7 +9,7 @@ import androidx.leanback.widget.Parallax;
 import androidx.leanback.widget.ParallaxEffect;
 import androidx.leanback.widget.ParallaxTarget;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class DetailsBackgroundVideoHelper {
     private static final long BACKGROUND_CROSS_FADE_DURATION = 500;
     private static final long CROSSFADE_DELAY = 1000;
@@ -42,7 +42,7 @@ final class DetailsBackgroundVideoHelper {
         this.mDetailsParallax.updateValues();
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsBackgroundVideoHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsBackgroundVideoHelper$1, reason: invalid class name */
     class AnonymousClass1 extends ParallaxTarget {
         AnonymousClass1() {
         }
@@ -118,7 +118,7 @@ final class DetailsBackgroundVideoHelper {
         this.mDetailsParallax.getRecyclerView().postDelayed(new AnonymousClass2(), 1000L);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsBackgroundVideoHelper$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsBackgroundVideoHelper$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -175,7 +175,7 @@ final class DetailsBackgroundVideoHelper {
         this.mBackgroundAnimator.start();
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsBackgroundVideoHelper$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsBackgroundVideoHelper$3, reason: invalid class name */
     class AnonymousClass3 implements ValueAnimator.AnimatorUpdateListener {
         AnonymousClass3() {
         }
@@ -186,7 +186,7 @@ final class DetailsBackgroundVideoHelper {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.DetailsBackgroundVideoHelper$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.DetailsBackgroundVideoHelper$4, reason: invalid class name */
     class AnonymousClass4 implements Animator.AnimatorListener {
         @Override // android.animation.Animator.AnimatorListener
         public void onAnimationCancel(Animator animator) {

@@ -3,7 +3,7 @@ package com.google.api.client.util;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public final class Charsets {
     public static final Charset UTF_8 = StandardCharsets.UTF_8;

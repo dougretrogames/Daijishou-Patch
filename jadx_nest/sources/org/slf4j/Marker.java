@@ -3,7 +3,7 @@ package org.slf4j;
 import java.io.Serializable;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface Marker extends Serializable {
     public static final String ANY_MARKER = "*";
     public static final String ANY_NON_NULL_MARKER = "+";

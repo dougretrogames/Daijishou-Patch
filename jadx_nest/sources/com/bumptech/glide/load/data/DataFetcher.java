@@ -3,7 +3,7 @@ package com.bumptech.glide.load.data;
 import com.bumptech.glide.Priority;
 import com.bumptech.glide.load.DataSource;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface DataFetcher<T> {
 
     public interface DataCallback<T> {

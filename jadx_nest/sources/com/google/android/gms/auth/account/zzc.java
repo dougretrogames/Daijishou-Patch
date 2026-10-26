@@ -5,8 +5,8 @@ import android.os.IBinder;
 import android.os.Parcel;
 import android.os.RemoteException;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public final class zzc extends com.google.android.gms.internal.auth.zza implements zze {
     zzc(IBinder iBinder) {
         super(iBinder, "com.google.android.gms.auth.account.IWorkAccountService");

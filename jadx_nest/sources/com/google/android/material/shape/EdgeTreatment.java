@@ -1,6 +1,6 @@
 package com.google.android.material.shape;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class EdgeTreatment {
     boolean forceIntersection() {
         return false;

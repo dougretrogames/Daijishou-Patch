@@ -33,7 +33,7 @@ import org.jsoup.parser.StreamParser;
 import org.jsoup.select.Evaluator;
 import org.jsoup.select.Selector;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class DataUtil {
     public static final Charset UTF_8;
     static final int boundaryLength = 32;
@@ -159,7 +159,7 @@ public final class DataUtil {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:33:0x008f  */
+    /* WARN: Code duplicated, block: B:33:0x008f  */
     static CharsetDoc detectCharset(ControllableInputStream controllableInputStream, String str, String str2, Parser parser) throws IOException {
         XmlDeclaration xmlDeclarationAsXmlDeclaration;
         String strDetectCharsetFromBom = detectCharsetFromBom(controllableInputStream);

@@ -5,7 +5,7 @@ import java.nio.LongBuffer;
 import java.util.Iterator;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class ImmutableBitSet implements Cloneable, Iterable<Integer>, WordArray {
     private LongBuffer data;
 
@@ -34,7 +34,7 @@ public class ImmutableBitSet implements Cloneable, Iterable<Integer>, WordArray 
         return iBitCount;
     }
 
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public ImmutableBitSet m3468clone() {
         try {
             ImmutableBitSet immutableBitSet = (ImmutableBitSet) super.clone();
@@ -87,7 +87,7 @@ public class ImmutableBitSet implements Cloneable, Iterable<Integer>, WordArray 
         return (int) j;
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.datastructure.ImmutableBitSet$1, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.datastructure.ImmutableBitSet$1, reason: invalid class name */
     class AnonymousClass1 implements IntIterator {
         private int i;
         private int j;
@@ -114,7 +114,7 @@ public class ImmutableBitSet implements Cloneable, Iterable<Integer>, WordArray 
         return new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.datastructure.ImmutableBitSet$2, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.datastructure.ImmutableBitSet$2, reason: invalid class name */
     class AnonymousClass2 implements Iterator<Integer> {
         private int i;
         private int j;
@@ -128,7 +128,7 @@ public class ImmutableBitSet implements Cloneable, Iterable<Integer>, WordArray 
             return this.i >= 0;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.Iterator
         public Integer next() {
             int i = this.i;
@@ -205,7 +205,7 @@ public class ImmutableBitSet implements Cloneable, Iterable<Integer>, WordArray 
         return this.data.limit() * 64;
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah.datastructure.ImmutableBitSet$3, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah.datastructure.ImmutableBitSet$3, reason: invalid class name */
     class AnonymousClass3 implements IntIterator {
         private int i;
         private int j;

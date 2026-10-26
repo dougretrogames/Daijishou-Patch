@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class RequestFutureTarget<R> implements FutureTarget<R>, RequestListener<R> {
     private static final Waiter DEFAULT_WAITER = new Waiter();
     private final boolean assertBackgroundThread;

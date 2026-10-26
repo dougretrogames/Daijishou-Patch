@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.SortedSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class FluentIterable<E> implements Iterable<E> {
     private final Optional<Iterable<E>> iterableDelegate;
@@ -38,11 +38,11 @@ public abstract class FluentIterable<E> implements Iterable<E> {
         return new AnonymousClass1(iterable, iterable);
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.FluentIterable$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.FluentIterable$1, reason: invalid class name */
     class AnonymousClass1 extends FluentIterable<E> {
         final /* synthetic */ Iterable val$iterable;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Iterable iterable, final Iterable val$iterable) {
             super(iterable);
             this.val$iterable = val$iterable;
@@ -80,8 +80,8 @@ public abstract class FluentIterable<E> implements Iterable<E> {
         return concatNoDefensiveCopy((Iterable[]) Arrays.copyOf(inputs, inputs.length));
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.FluentIterable$2, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.FluentIterable$2, reason: invalid class name */
     class AnonymousClass2<T> extends FluentIterable<T> {
         final /* synthetic */ Iterable val$inputs;
 
@@ -107,8 +107,8 @@ public abstract class FluentIterable<E> implements Iterable<E> {
         return new AnonymousClass3(inputs);
     }
 
-    /* JADX INFO: Add missing generic type declarations: [T] */
-    /* JADX INFO: renamed from: com.google.common.collect.FluentIterable$3, reason: invalid class name */
+    /* INFO: Add missing generic type declarations: [T] */
+    /* INFO: renamed from: com.google.common.collect.FluentIterable$3, reason: invalid class name */
     class AnonymousClass3<T> extends FluentIterable<T> {
         final /* synthetic */ Iterable[] val$inputs;
 
@@ -121,7 +121,7 @@ public abstract class FluentIterable<E> implements Iterable<E> {
             return Iterators.concat(new AnonymousClass1(this.val$inputs.length));
         }
 
-        /* JADX INFO: renamed from: com.google.common.collect.FluentIterable$3$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.collect.FluentIterable$3$1, reason: invalid class name */
         class AnonymousClass1 extends AbstractIndexedListIterator<Iterator<? extends T>> {
             AnonymousClass1(int size) {
                 super(size);
@@ -190,7 +190,7 @@ public abstract class FluentIterable<E> implements Iterable<E> {
         return from(Iterables.transform(getDelegate(), function));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public <T> FluentIterable<T> transformAndConcat(Function<? super E, ? extends Iterable<? extends T>> function) {
         return concat(transform(function));
     }

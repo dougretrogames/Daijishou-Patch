@@ -121,12 +121,12 @@ import kotlinx.coroutines.Dispatchers;
 import kotlinx.serialization.json.Json;
 import org.apache.commons.io.IOUtils;
 
-/* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0080\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0000\n\u0002\u0010 \n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u000e\n\u0002\u0010\t\n\u0002\b\u001d\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\f\n\u0002\u0018\u0002\n\u0002\b\u0005\u0018\u0000 ·\u00012\u00020\u0001:\u0004·\u0001¸\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0010\u0010\u0094\u0001\u001a\u00020\u00042\u0007\u0010\u0095\u0001\u001a\u00020VJ\u0013\u0010\u0096\u0001\u001a\u00020\u00132\b\u0010\u0097\u0001\u001a\u00030\u0098\u0001H\u0002J\u0015\u0010\u0099\u0001\u001a\u00030\u009a\u00012\t\u0010\u009b\u0001\u001a\u0004\u0018\u00010\u0004H\u0002J\u0015\u0010\u009c\u0001\u001a\u00030\u009a\u00012\t\u0010\u009b\u0001\u001a\u0004\u0018\u00010\u0004H\u0002J\u0012\u0010\u009d\u0001\u001a\u00030\u009a\u00012\u0006\u0010F\u001a\u00020GH\u0002J\t\u0010\u009e\u0001\u001a\u00020\u001dH\u0016J\u0016\u0010\u009f\u0001\u001a\u00030\u009a\u00012\n\u0010 \u0001\u001a\u0005\u0018\u00010¡\u0001H\u0016J.\u0010¢\u0001\u001a\u0005\u0018\u00010£\u00012\b\u0010¤\u0001\u001a\u00030¥\u00012\n\u0010¦\u0001\u001a\u0005\u0018\u00010§\u00012\n\u0010 \u0001\u001a\u0005\u0018\u00010¡\u0001H\u0016J\n\u0010¨\u0001\u001a\u00030\u009a\u0001H\u0016J\n\u0010©\u0001\u001a\u00030\u009a\u0001H\u0016J\n\u0010ª\u0001\u001a\u00030\u009a\u0001H\u0016J\n\u0010«\u0001\u001a\u00030\u009a\u0001H\u0016J \u0010¬\u0001\u001a\u00030\u009a\u00012\b\u0010\u00ad\u0001\u001a\u00030£\u00012\n\u0010 \u0001\u001a\u0005\u0018\u00010¡\u0001H\u0016J\u0013\u0010®\u0001\u001a\u00030\u009a\u00012\u0007\u0010¯\u0001\u001a\u00020\u0004H\u0002J\n\u0010°\u0001\u001a\u00030\u009a\u0001H\u0002J\n\u0010±\u0001\u001a\u00030\u009a\u0001H\u0002J\u0012\u0010²\u0001\u001a\u00030\u009a\u00012\b\u0010³\u0001\u001a\u00030´\u0001J\u0012\u0010µ\u0001\u001a\u00030\u009a\u00012\u0006\u0010F\u001a\u00020GH\u0002J\n\u0010¶\u0001\u001a\u00030\u009a\u0001H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\n\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0014\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u00040\rX\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u000e\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u000fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0012\u001a\u00020\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u0016X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0017\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0018\u001a\u00020\u0019X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001a\u001a\u00020\u0016X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0013X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001c\u001a\u00020\u001dX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001e\u001a\u00020\u001fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010 \u001a\u00020\u001fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010!\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\"\u001a\u00020\u0016X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010#\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010$\u001a\u00020\u001dX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010%\u001a\u00020&X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010'\u001a\u00020(X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010)\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010*\u001a\u00020\u001dX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010+\u001a\u00020(X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010,\u001a\u00020\u001dX\u0082\u000e¢\u0006\u0002\n\u0000R\u001b\u0010-\u001a\u00020\u001d8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b0\u00101\u001a\u0004\b.\u0010/R\u000e\u00102\u001a\u00020\u001fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u00103\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u000e\u00104\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u001b\u00105\u001a\u0002068BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b9\u00101\u001a\u0004\b7\u00108R\u000e\u0010:\u001a\u00020\u001fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010;\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010<\u001a\u00020\u0016X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010=\u001a\u00020\u0004X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010>\u001a\u00020\u0016X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010?\u001a\u00020\u001fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010@\u001a\u00020\u001dX\u0082\u000e¢\u0006\u0002\n\u0000R\u001b\u0010A\u001a\u00020B8BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bE\u00101\u001a\u0004\bC\u0010DR\u000e\u0010F\u001a\u00020GX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010H\u001a\u00020\u001dX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010I\u001a\u00020\u001fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010J\u001a\u00020\u001fX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010K\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010L\u001a\u00020\u001dX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010M\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010N\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010O\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010P\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u001b\u0010Q\u001a\u00020\u00048BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bT\u00101\u001a\u0004\bR\u0010SR\u0012\u0010U\u001a\u0004\u0018\u00010VX\u0082\u000e¢\u0006\u0004\n\u0002\u0010WR\u001b\u0010X\u001a\u00020\u00048BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bZ\u00101\u001a\u0004\bY\u0010SR\u001b\u0010[\u001a\u00020\u00048BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b]\u00101\u001a\u0004\b\\\u0010SR\u001b\u0010^\u001a\u00020\u00048BX\u0082\u0084\u0002¢\u0006\f\n\u0004\b`\u00101\u001a\u0004\b_\u0010SR\u001b\u0010a\u001a\u00020\u00048BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bc\u00101\u001a\u0004\bb\u0010SR\u001b\u0010d\u001a\u00020\u00048BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bf\u00101\u001a\u0004\be\u0010SR\u001b\u0010g\u001a\u00020\u00048BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bi\u00101\u001a\u0004\bh\u0010SR\u001b\u0010j\u001a\u00020\u00048BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bl\u00101\u001a\u0004\bk\u0010SR\u001b\u0010m\u001a\u00020\u00048BX\u0082\u0084\u0002¢\u0006\f\n\u0004\bo\u00101\u001a\u0004\bn\u0010SR\u001b\u0010p\u001a\u00020\u00048BX\u0082\u0084\u0002¢\u0006\f\n\u0004\br\u00101\u001a\u0004\bq\u0010SR\u0010\u0010s\u001a\u0004\u0018\u00010tX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010u\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010v\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010w\u001a\u00020xX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010y\u001a\u00020\u001dX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010z\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010{\u001a\u00020|X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010}\u001a\u00020\u0016X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010~\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u007f\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000f\u0010\u0080\u0001\u001a\u00020\bX\u0082.¢\u0006\u0002\n\u0000R\u0015\u0010\u0081\u0001\u001a\b\u0012\u0004\u0012\u00020\u00040\rX\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u0082\u0001\u001a\u00030\u0083\u0001X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u0084\u0001\u001a\u00030\u0085\u0001X\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010\u0086\u0001\u001a\u00070\u0087\u0001R\u00020\u0000X\u0082.¢\u0006\u0002\n\u0000R\u0010\u0010\u0088\u0001\u001a\u00030\u0089\u0001X\u0082.¢\u0006\u0002\n\u0000R\u0016\u0010\u008a\u0001\u001a\t\u0012\u0004\u0012\u00020G0\u008b\u0001X\u0082\u0004¢\u0006\u0002\n\u0000R\u000f\u0010\u008c\u0001\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u000f\u0010\u008d\u0001\u001a\u00020\u0016X\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010\u008e\u0001\u001a\u0005\u0018\u00010\u008f\u0001X\u0082\u000e¢\u0006\u0002\n\u0000R\u000f\u0010\u0090\u0001\u001a\u00020\u000bX\u0082\u000e¢\u0006\u0002\n\u0000R\u0010\u0010\u0091\u0001\u001a\u00030\u0092\u0001X\u0082.¢\u0006\u0002\n\u0000R\u0011\u0010\u0093\u0001\u001a\u0004\u0018\u00010\u0004X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006¹\u0001"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "()V", "addFavoriteString", "", "background", "Landroid/widget/ImageView;", "backgroundSetLayout", "Landroidx/constraintlayout/widget/ConstraintLayout;", "boxArtAspectRatio", "boxArtAspectRatioFloat", "", "boxArtAspectRatioList", "", "colorIconThemeTintList", "Landroid/content/res/ColorStateList;", "colorOnThemeTintList", "colorThemeTintList", "connectionType", "", "descriptionFormatString", "descriptionTextView", "Landroid/widget/TextView;", "detailContainerLayout", "detailScrollView", "Landroid/widget/ScrollView;", "detailTextView", "displayHeightPixels", "doPlaying", "", "editButton", "Lcom/google/android/material/chip/Chip;", "favoriteButton", "favoriteImageView", "genresTextView", "gradientImageView", "hasPlayed", "horizontalScrollView", "Landroid/widget/HorizontalScrollView;", "isFavoriteDrawable", "Landroid/graphics/drawable/Drawable;", "isFavoriteString", "isLoadingYoutube", "isNotFavoriteDrawable", "makePreviewVideoSounds", "mergePlayableItems", "getMergePlayableItems", "()Z", "mergePlayableItems$delegate", "Lkotlin/Lazy;", "newlyButton", "newlyImageView", "noneString", "pinAndPlayWidget", "Lcom/magneticchen/daijishou/daijishou_widget/widgets/pin_and_play/PinAndPlayWidgetBuilder;", "getPinAndPlayWidget", "()Lcom/magneticchen/daijishou/daijishou_widget/widgets/pin_and_play/PinAndPlayWidgetBuilder;", "pinAndPlayWidget$delegate", "pinButton", "placeholder", "platformDescriptionTextView", "platformName", "platformTextView", "playButton", "playPreviewVideo", "playableItemDetailViewModel", "Lcom/magneticchen/daijishou/view_models/PlayableItemDetailViewModel;", "getPlayableItemDetailViewModel", "()Lcom/magneticchen/daijishou/view_models/PlayableItemDetailViewModel;", "playableItemDetailViewModel$delegate", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "playableItemViewedEventRegistered", "previewVideoButton", "recentButton", "recentImageView", "refocusOnScrolledToTop", "retroAchievementsDescriptionFormatString", "retroAchievementsDescriptionNewFormatString", "retroAchievementsDescriptionWithPlayerCountFormatString", "retroAchievementsDescriptionWithRatingFormatString", "retroAchievementsGame0PlayerString", "getRetroAchievementsGame0PlayerString", "()Ljava/lang/String;", "retroAchievementsGame0PlayerString$delegate", "retroAchievementsGameId", "", "Ljava/lang/Long;", "retroAchievementsGameMoreThen1024PlayersString", "getRetroAchievementsGameMoreThen1024PlayersString", "retroAchievementsGameMoreThen1024PlayersString$delegate", "retroAchievementsGameMoreThen128PlayersString", "getRetroAchievementsGameMoreThen128PlayersString", "retroAchievementsGameMoreThen128PlayersString$delegate", "retroAchievementsGameMoreThen16284PlayersString", "getRetroAchievementsGameMoreThen16284PlayersString", "retroAchievementsGameMoreThen16284PlayersString$delegate", "retroAchievementsGameMoreThen2048PlayersString", "getRetroAchievementsGameMoreThen2048PlayersString", "retroAchievementsGameMoreThen2048PlayersString$delegate", "retroAchievementsGameMoreThen256PlayersString", "getRetroAchievementsGameMoreThen256PlayersString", "retroAchievementsGameMoreThen256PlayersString$delegate", "retroAchievementsGameMoreThen4096PlayersString", "getRetroAchievementsGameMoreThen4096PlayersString", "retroAchievementsGameMoreThen4096PlayersString$delegate", "retroAchievementsGameMoreThen512PlayersString", "getRetroAchievementsGameMoreThen512PlayersString", "retroAchievementsGameMoreThen512PlayersString$delegate", "retroAchievementsGameMoreThen64PlayersString", "getRetroAchievementsGameMoreThen64PlayersString", "retroAchievementsGameMoreThen64PlayersString$delegate", "retroAchievementsGameMoreThen8192PlayersString", "getRetroAchievementsGameMoreThen8192PlayersString", "retroAchievementsGameMoreThen8192PlayersString$delegate", "retroAchievementsGameRecord", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "retroAchievementsLoginRequiredDetailString", "retroAchievementsLoginRequiredWitEmojiString", "retroAchievementsNextRefreshDate", "Ljava/util/Date;", "retroAchievementsRefreshing", "retroAchievementsRefreshingString", "retroAchievementsSharedPreferences", "Landroid/content/SharedPreferences;", "retroAchievementsTextView", "retroAchievementsUnavailableString", "retroAchievementsUnavailableWithEmojiString", "root", "screenAspectRatioList", "similarItemsLayout", "Landroid/widget/LinearLayout;", "similarItemsRecyclerView", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;", "similarItemsRecyclerViewAdapter", "Lcom/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment$SimilarListAdapter;", "similarItemsRecyclerViewLayoutManager", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouLinearLayoutManager;", "similarPlayableItemList", "", "thumbnail", "titleTextView", "youTubePlayer", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/YouTubePlayer;", "youTubePlayerCurrentSecond", "youtubePlayerView", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/views/YouTubePlayerView;", "youtubeVideoId", "getPlayerCountLabel", "playerCount", "getScreenHeight", "activity", "Landroid/app/Activity;", "loadBackground", "", "pathName", "loadBoxArt", "loadYoutube", "onBackPressed", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onKioskMode", "onNoneKioskMode", "onResume", "onStart", "onViewCreated", "view", "playYoutubeVideo", "id", "refreshDimensionRatioHeight", "refreshPinButton", "refreshPlatform", "platform", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "refreshPlayableItem", "stopYoutubeVideo", "Companion", "SimilarListAdapter", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private static final Typeface typeface;
     private String addFavoriteString;
@@ -163,7 +163,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
     private TextView platformTextView;
     private Chip playButton;
 
-    /* JADX INFO: renamed from: playableItemDetailViewModel$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: playableItemDetailViewModel$delegate, reason: from kotlin metadata */
     private final Lazy playableItemDetailViewModel;
     public PlayableItemEntity playableItemEntity;
     private boolean playableItemViewedEventRegistered;
@@ -206,40 +206,40 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
     private float boxArtAspectRatioFloat = 1.0f;
     private String platformName = "";
 
-    /* JADX INFO: renamed from: pinAndPlayWidget$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: pinAndPlayWidget$delegate, reason: from kotlin metadata */
     private final Lazy pinAndPlayWidget = LazyKt.lazy(new PlayableItemDetailDialogFragment$pinAndPlayWidget$2(this));
 
-    /* JADX INFO: renamed from: mergePlayableItems$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: mergePlayableItems$delegate, reason: from kotlin metadata */
     private final Lazy mergePlayableItems = LazyKt.lazy(new PlayableItemDetailDialogFragment$mergePlayableItems$2(this));
 
-    /* JADX INFO: renamed from: retroAchievementsGame0PlayerString$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: retroAchievementsGame0PlayerString$delegate, reason: from kotlin metadata */
     private final Lazy retroAchievementsGame0PlayerString = LazyKt.lazy(new PlayableItemDetailDialogFragment$retroAchievementsGame0PlayerString$2(this));
 
-    /* JADX INFO: renamed from: retroAchievementsGameMoreThen64PlayersString$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: retroAchievementsGameMoreThen64PlayersString$delegate, reason: from kotlin metadata */
     private final Lazy retroAchievementsGameMoreThen64PlayersString = LazyKt.lazy(new PlayableItemDetailDialogFragment$retroAchievementsGameMoreThen64PlayersString$2(this));
 
-    /* JADX INFO: renamed from: retroAchievementsGameMoreThen128PlayersString$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: retroAchievementsGameMoreThen128PlayersString$delegate, reason: from kotlin metadata */
     private final Lazy retroAchievementsGameMoreThen128PlayersString = LazyKt.lazy(new PlayableItemDetailDialogFragment$retroAchievementsGameMoreThen128PlayersString$2(this));
 
-    /* JADX INFO: renamed from: retroAchievementsGameMoreThen256PlayersString$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: retroAchievementsGameMoreThen256PlayersString$delegate, reason: from kotlin metadata */
     private final Lazy retroAchievementsGameMoreThen256PlayersString = LazyKt.lazy(new PlayableItemDetailDialogFragment$retroAchievementsGameMoreThen256PlayersString$2(this));
 
-    /* JADX INFO: renamed from: retroAchievementsGameMoreThen512PlayersString$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: retroAchievementsGameMoreThen512PlayersString$delegate, reason: from kotlin metadata */
     private final Lazy retroAchievementsGameMoreThen512PlayersString = LazyKt.lazy(new PlayableItemDetailDialogFragment$retroAchievementsGameMoreThen512PlayersString$2(this));
 
-    /* JADX INFO: renamed from: retroAchievementsGameMoreThen1024PlayersString$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: retroAchievementsGameMoreThen1024PlayersString$delegate, reason: from kotlin metadata */
     private final Lazy retroAchievementsGameMoreThen1024PlayersString = LazyKt.lazy(new PlayableItemDetailDialogFragment$retroAchievementsGameMoreThen1024PlayersString$2(this));
 
-    /* JADX INFO: renamed from: retroAchievementsGameMoreThen2048PlayersString$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: retroAchievementsGameMoreThen2048PlayersString$delegate, reason: from kotlin metadata */
     private final Lazy retroAchievementsGameMoreThen2048PlayersString = LazyKt.lazy(new PlayableItemDetailDialogFragment$retroAchievementsGameMoreThen2048PlayersString$2(this));
 
-    /* JADX INFO: renamed from: retroAchievementsGameMoreThen4096PlayersString$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: retroAchievementsGameMoreThen4096PlayersString$delegate, reason: from kotlin metadata */
     private final Lazy retroAchievementsGameMoreThen4096PlayersString = LazyKt.lazy(new PlayableItemDetailDialogFragment$retroAchievementsGameMoreThen4096PlayersString$2(this));
 
-    /* JADX INFO: renamed from: retroAchievementsGameMoreThen8192PlayersString$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: retroAchievementsGameMoreThen8192PlayersString$delegate, reason: from kotlin metadata */
     private final Lazy retroAchievementsGameMoreThen8192PlayersString = LazyKt.lazy(new PlayableItemDetailDialogFragment$retroAchievementsGameMoreThen8192PlayersString$2(this));
 
-    /* JADX INFO: renamed from: retroAchievementsGameMoreThen16284PlayersString$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: retroAchievementsGameMoreThen16284PlayersString$delegate, reason: from kotlin metadata */
     private final Lazy retroAchievementsGameMoreThen16284PlayersString = LazyKt.lazy(new PlayableItemDetailDialogFragment$retroAchievementsGameMoreThen16284PlayersString$2(this));
 
     public PlayableItemDetailDialogFragment() {
@@ -247,7 +247,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         this.playableItemDetailViewModel = FragmentViewModelLazyKt.createViewModelLazy(playableItemDetailDialogFragment, Reflection.getOrCreateKotlinClass(PlayableItemDetailViewModel.class), new PlayableItemDetailDialogFragment$special$$inlined$activityViewModels$default$1(playableItemDetailDialogFragment), new PlayableItemDetailDialogFragment$special$$inlined$activityViewModels$default$2(null, playableItemDetailDialogFragment), new PlayableItemDetailDialogFragment$special$$inlined$activityViewModels$default$3(playableItemDetailDialogFragment));
     }
 
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000e\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tR\u0016\u0010\u0003\u001a\n \u0005*\u0004\u0018\u00010\u00040\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\n"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment$Companion;", "", "()V", "typeface", "Landroid/graphics/Typeface;", "kotlin.jvm.PlatformType", "newInstance", "Lcom/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment;", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -374,8 +374,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         cachedBitmapLoaderTaskLoad.into(imageView);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadBoxArt$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadBoxArt$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "bitmap", "Landroid/graphics/Bitmap;", "<anonymous parameter 1>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02231 extends Lambda<Unit> implements Function2<Bitmap, Boolean, Unit> {
         C02231() {
@@ -554,8 +554,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadBoxArt$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadBoxArt$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "e", "Ljava/lang/Exception;", "Lkotlin/Exception;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class C02242 extends Lambda<Unit> implements Function1<Exception, Unit> {
         C02242() {
@@ -568,7 +568,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Exception e) {
             Intrinsics.checkNotNullParameter(e, "e");
             PlayableItemDetailDialogFragment.this.getLogger().warn(PlayableItemDetailDialogFragment.this, ExceptionsKt.stackTraceToString(e));
@@ -616,8 +616,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         cachedBitmapLoaderTaskLoad.into(imageView);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadBackground$1, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadBackground$1, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "bitmap", "Landroid/graphics/Bitmap;", "<anonymous parameter 1>", "", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function2<Bitmap, Boolean, Unit> {
         AnonymousClass1() {
@@ -641,8 +641,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadBackground$2, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadBackground$2, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\n\u0010\u0002\u001a\u00060\u0003j\u0002`\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "e", "Ljava/lang/Exception;", "Lkotlin/Exception;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass2 extends Lambda<Unit> implements Function1<Exception, Unit> {
         AnonymousClass2() {
@@ -655,7 +655,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Exception e) {
             Intrinsics.checkNotNullParameter(e, "e");
             PlayableItemDetailDialogFragment.this.getLogger().warn(PlayableItemDetailDialogFragment.this, ExceptionsKt.stackTraceToString(e));
@@ -668,7 +668,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void stopYoutubeVideo() {
         this.doPlaying = false;
         this.hasPlayed = false;
@@ -703,7 +703,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         chip.setVisibility(8);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void playYoutubeVideo(String id2) {
         YouTubePlayer youTubePlayer;
         this.youtubeVideoId = id2;
@@ -744,7 +744,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         youTubePlayer.loadVideo(id2, 90.0f);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void loadYoutube(PlayableItemEntity playableItemEntity) {
         if (this.isLoadingYoutube) {
             return;
@@ -754,15 +754,15 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         BuildersKt.launch$default(LifecycleOwnerKt.getLifecycleScope(this), Dispatchers.getIO(), null, new C02251(playableItemEntity, null), 2, null);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadYoutube$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadYoutube$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadYoutube$1", f = "PlayableItemDetailDialogFragment.kt", i = {}, l = {375}, m = "invokeSuspendImpl", n = {}, s = {})
     final class C02251 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
         final /* synthetic */ PlayableItemEntity $playableItemEntity;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         C02251(PlayableItemEntity playableItemEntity, Continuation<?> continuation) {
             super(2, continuation);
             this.$playableItemEntity = playableItemEntity;
@@ -818,15 +818,15 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadYoutube$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadYoutube$1$2, reason: invalid class name */
+        /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$loadYoutube$1$2", f = "PlayableItemDetailDialogFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
             int label;
             final /* synthetic */ PlayableItemDetailDialogFragment this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(PlayableItemDetailDialogFragment playableItemDetailDialogFragment, Continuation<?> continuation) {
                 super(2, continuation);
                 this.this$0 = playableItemDetailDialogFragment;
@@ -1015,7 +1015,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         return displayMetrics.heightPixels;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final void refreshPlayableItem(PlayableItemEntity playableItemEntity) throws IOException {
         PlayableItemEntity playableItemEntity2;
         PlayableItemPreviewMediaIndex playableItemPreviewMediaIndex;
@@ -1488,7 +1488,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         return retroAchievementsGameMoreThen16284PlayersString;
     }
 
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u0010B\u0013\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004¢\u0006\u0002\u0010\u0005J\u0010\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J \u0010\n\u001a\n0\u000bR\u00060\u0000R\u00020\f2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010\u000f\u001a\u00020\tH\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0011"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment$SimilarListAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "playableItemEntityList", "", "(Lcom/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment;Ljava/util/List;)V", "getItemId", "", "position", "", "onCreateViewHolder", "Lcom/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment$SimilarListAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment;", "viewGroup", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class SimilarListAdapter extends DaijishouRecyclerView.Adapter<PlayableItemEntity> {
         private final List<PlayableItemEntity> playableItemEntityList;
@@ -1499,7 +1499,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return position;
         }
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public SimilarListAdapter(PlayableItemDetailDialogFragment playableItemDetailDialogFragment, List<PlayableItemEntity> playableItemEntityList) {
             super(playableItemEntityList, false, false, 6, null);
             Intrinsics.checkNotNullParameter(playableItemEntityList, "playableItemEntityList");
@@ -1507,7 +1507,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             this.playableItemEntityList = playableItemEntityList;
         }
 
-        /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+        /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
         @Metadata(d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\u000e\u001a\u00020\u000f2\u0006\u0010\u0010\u001a\u00020\u00112\u0006\u0010\u0012\u001a\u00020\u0003H\u0016R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\f\u001a\u00020\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0013"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment$SimilarListAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment$SimilarListAdapter;Landroid/view/View;)V", "favoriteImageView", "Landroid/widget/ImageView;", "firstLine", "Landroid/widget/TextView;", "newlyImageView", "recentImageView", "secondLine", "onBind", "", "position", "", "item", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<PlayableItemEntity>.ViewHolder {
             private final ImageView favoriteImageView;
@@ -1517,7 +1517,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             private final TextView secondLine;
             final /* synthetic */ SimilarListAdapter this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(SimilarListAdapter similarListAdapter, View itemView) {
                 super(similarListAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");
@@ -2110,7 +2110,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         return viewInflate;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$5(PlayableItemDetailDialogFragment this$0, View view, int i, int i2, int i3, int i4) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         if (this$0.refocusOnScrolledToTop) {
@@ -2133,8 +2133,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$2, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$2, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000'\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016J\u0018\u0010\b\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\t\u001a\u00020\nH\u0016J\u0018\u0010\u000b\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\f\u001a\u00020\u0007H\u0016¨\u0006\r"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment$onCreateView$2", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/listeners/AbstractYouTubePlayerListener;", "onCurrentSecond", "", "youTubePlayer", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/YouTubePlayer;", "second", "", "onStateChange", "state", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/PlayerConstants$PlayerState;", "onVideoDuration", TypedValues.TransitionType.S_DURATION, "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class C02262 extends AbstractYouTubePlayerListener {
         C02262() {
@@ -2179,8 +2179,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$3, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$3, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0017\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0010\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0016¨\u0006\u0006"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment$onCreateView$3", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/listeners/YouTubePlayerCallback;", "onYouTubePlayer", "", "youTubePlayer", "Lcom/pierfrancescosoffritti/androidyoutubeplayer/core/player/YouTubePlayer;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass3 implements YouTubePlayerCallback {
         AnonymousClass3() {
@@ -2197,8 +2197,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$4, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$4, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/PlayableItemDetailDialogFragment$onCreateView$4", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass4 extends RecyclerView.OnScrollListener {
         AnonymousClass4() {
@@ -2237,7 +2237,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$6(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -2250,7 +2250,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$7(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -2263,7 +2263,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$8(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -2276,7 +2276,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$9(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -2289,7 +2289,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$10(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -2302,7 +2302,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$11(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -2315,7 +2315,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$12(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -2328,7 +2328,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$13(View view, boolean z) {
         if (z) {
             Utils utils = Utils.INSTANCE;
@@ -2341,7 +2341,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$14(PlayableItemDetailDialogFragment this$0, FragmentActivity activity, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(activity, "$activity");
@@ -2355,7 +2355,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         daijishouLibrary.play(fragmentActivity, playableItemEntity, PlayableItemDetailDialogFragment$onCreateView$13$1.INSTANCE);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$17(PlayableItemDetailDialogFragment this$0, FragmentActivity activity, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(activity, "$activity");
@@ -2377,7 +2377,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$18(PlayableItemDetailDialogFragment this$0, FragmentActivity activity, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(activity, "$activity");
@@ -2391,7 +2391,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         daijishouLibrary.play(fragmentActivity, playableItemEntity, PlayableItemDetailDialogFragment$onCreateView$15$1.INSTANCE);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$19(PlayableItemDetailDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         DaijishouLibraryModel daijishouLibrary = this$0.getDaijishouLibrary();
@@ -2403,7 +2403,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         daijishouLibrary.toggleIsPlayableItemFavorite(playableItemEntity);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$20(PlayableItemDetailDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         PlayableItemEntity playableItemEntity = null;
@@ -2475,13 +2475,13 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         this$0.refreshPinButton();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$21(PlayableItemDetailDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.startActivity(new Intent("android.intent.action.VIEW", Uri.parse("https://www.youtube.com/watch?v=" + this$0.youtubeVideoId + "&t=" + ((int) this$0.youTubePlayerCurrentSecond))));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$22(PlayableItemDetailDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         DaijishouLibraryModel daijishouLibrary = this$0.getDaijishouLibrary();
@@ -2496,7 +2496,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         daijishouLibrary.editPlayableItem(fragmentActivity, playableItemEntity);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$23(PlayableItemDetailDialogFragment this$0, View view) throws UnsupportedEncodingException {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         PlayableItemEntity playableItemEntity = this$0.playableItemEntity;
@@ -2521,8 +2521,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         this$0.startActivity(new Intent("android.intent.action.VIEW", Uri.parse("https://www.google.com/search?q=" + strEncode + "&hl=" + UtilsKt.getLanguageAndCountry(locale))));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$21, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$21, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000 \n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\n¢\u0006\u0002\b\n"}, d2 = {"<anonymous>", "", "<anonymous parameter 0>", "Landroid/view/View;", "<anonymous parameter 1>", "", "<anonymous parameter 2>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass21 extends Lambda<Unit> implements Function4<View, Integer, Long, PlayableItemEntity, Unit> {
         AnonymousClass21() {
@@ -2543,14 +2543,14 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$22, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$22, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "playableItemEntity", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass22 extends Lambda<Unit> implements Function1<PlayableItemEntity, Unit> {
         final /* synthetic */ Ref.BooleanRef $loadingDataFirstTime;
         final /* synthetic */ PlayableItemDetailDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass22(Ref.BooleanRef booleanRef, PlayableItemDetailDialogFragment playableItemDetailDialogFragment) {
             super(1);
             this.$loadingDataFirstTime = booleanRef;
@@ -2567,7 +2567,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(PlayableItemEntity playableItemEntity) throws IOException {
             if (!this.$loadingDataFirstTime.element) {
                 Integer value = this.this$0.getDaijishouSynchronization().getStatusLiveData().getValue();
@@ -2581,14 +2581,14 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$24, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$24, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass24 extends Lambda<Unit> implements Function1<PlatformEntity, Unit> {
         final /* synthetic */ Ref.BooleanRef $loadingPlatformDataFirstTime;
         final /* synthetic */ PlayableItemDetailDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass24(Ref.BooleanRef booleanRef, PlayableItemDetailDialogFragment playableItemDetailDialogFragment) {
             super(1);
             this.$loadingPlatformDataFirstTime = booleanRef;
@@ -2601,7 +2601,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(PlatformEntity platformEntity) {
             if (this.$loadingPlatformDataFirstTime.element) {
                 this.$loadingPlatformDataFirstTime.element = false;
@@ -2613,8 +2613,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$25, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$25, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass25 extends Lambda<Unit> implements Function1<String, Unit> {
         AnonymousClass25() {
@@ -2627,7 +2627,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(String str) {
             TextView textView = null;
             if (str == null) {
@@ -2662,8 +2662,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$26, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$26, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0018\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\u0010\u000e\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012>\u0010\u0002\u001a:\u0012\u0006\u0012\u0004\u0018\u00010\u0004\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0012\u0006\u0012\u0004\u0018\u00010\u0005 \u0006*\u001c\u0012\u0006\u0012\u0004\u0018\u00010\u0004\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0012\u0006\u0012\u0004\u0018\u00010\u0005\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0007"}, d2 = {"<anonymous>", "", "it", "Lkotlin/Triple;", "", "", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass26 extends Lambda<Unit> implements Function1<Triple<? extends Boolean, ? extends String, ? extends String>, Unit> {
         AnonymousClass26() {
@@ -2676,7 +2676,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Triple<Boolean, String, String> triple) {
             TextView textView = PlayableItemDetailDialogFragment.this.retroAchievementsTextView;
             if (textView == null) {
@@ -2687,13 +2687,13 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$27, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$27, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/retro_achievements/retro_achievements_db/RetroAchievementsGameRecordEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass27 extends Lambda<Unit> implements Function1<RetroAchievementsGameRecordEntity, Unit> {
         final /* synthetic */ Ref.ObjectRef<String> $webApiKey;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass27(Ref.ObjectRef<String> objectRef) {
             super(1);
             this.$webApiKey = objectRef;
@@ -2705,7 +2705,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(RetroAchievementsGameRecordEntity retroAchievementsGameRecordEntity) {
             String str;
             PlayableItemDetailDialogFragment.this.retroAchievementsGameRecord = retroAchievementsGameRecordEntity;
@@ -2776,8 +2776,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$28, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$28, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass28 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         AnonymousClass28() {
@@ -2790,7 +2790,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             PlayableItemEntity playableItemEntity = PlayableItemDetailDialogFragment.this.playableItemEntity;
             TextView textView = null;
@@ -2809,8 +2809,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$29, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$29, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass29 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         AnonymousClass29() {
@@ -2823,7 +2823,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             PlayableItemDetailDialogFragment playableItemDetailDialogFragment = PlayableItemDetailDialogFragment.this;
             Intrinsics.checkNotNull(bool);
@@ -2839,8 +2839,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$30, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$30, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Boolean;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass30 extends Lambda<Unit> implements Function1<Boolean, Unit> {
         AnonymousClass30() {
@@ -2853,7 +2853,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Boolean bool) {
             PlayableItemDetailDialogFragment playableItemDetailDialogFragment = PlayableItemDetailDialogFragment.this;
             Intrinsics.checkNotNull(bool);
@@ -2873,8 +2873,8 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$31, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.PlayableItemDetailDialogFragment$onCreateView$31, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "hasConnection", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass31 extends Lambda<Unit> implements Function1<Integer, Unit> {
         AnonymousClass31() {
@@ -2887,7 +2887,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             int i = PlayableItemDetailDialogFragment.this.connectionType;
             if (num != null && i == num.intValue()) {
@@ -2953,7 +2953,7 @@ public final class PlayableItemDetailDialogFragment extends DaijishouDialogFragm
         new Handler(Looper.getMainLooper()).postDelayed(new PlayableItemDetailDialogFragment$$ExternalSyntheticLambda8(this), getResources().getInteger(android.R.integer.config_shortAnimTime));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onViewCreated$lambda$26(PlayableItemDetailDialogFragment this$0) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         ConstraintLayout constraintLayout = this$0.backgroundSetLayout;

@@ -5,7 +5,7 @@ import java.nio.file.FileVisitResult;
 import java.nio.file.Path;
 import org.apache.commons.io.function.IOBiFunction;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NoopPathVisitor extends SimplePathVisitor {
     public static final NoopPathVisitor INSTANCE = new NoopPathVisitor();
 

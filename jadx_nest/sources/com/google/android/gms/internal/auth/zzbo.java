@@ -11,8 +11,8 @@ import com.google.android.gms.common.api.GoogleApi;
 import com.google.android.gms.common.api.internal.TaskApiCall;
 import com.google.android.gms.tasks.Task;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public final class zzbo extends GoogleApi implements ProxyClient {
     public zzbo(Activity activity, AuthProxyOptions authProxyOptions) {
         super(activity, AuthProxy.API, authProxyOptions == null ? AuthProxyOptions.zza : authProxyOptions, GoogleApi.Settings.DEFAULT_SETTINGS);

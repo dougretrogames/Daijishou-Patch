@@ -62,14 +62,14 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 import kotlinx.coroutines.CoroutineScope;
 
-/* JADX INFO: compiled from: AndroidPopup.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AndroidPopup.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000^\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001aU\u0010\u0005\u001a\u00020\u00062\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\n2\u0010\b\u0002\u0010\u000b\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\f2\b\b\u0002\u0010\r\u001a\u00020\u000e2\u0011\u0010\u000f\u001a\r\u0012\u0004\u0012\u00020\u00060\f¢\u0006\u0002\b\u0010H\u0007ø\u0001\u0000¢\u0006\u0004\b\u0011\u0010\u0012\u001aD\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0013\u001a\u00020\u00142\u0010\b\u0002\u0010\u000b\u001a\n\u0012\u0004\u0012\u00020\u0006\u0018\u00010\f2\b\b\u0002\u0010\r\u001a\u00020\u000e2\u0011\u0010\u000f\u001a\r\u0012\u0004\u0012\u00020\u00060\f¢\u0006\u0002\b\u0010H\u0007¢\u0006\u0002\u0010\u0015\u001a(\u0010\u0016\u001a\u00020\u00062\u0006\u0010\u0017\u001a\u00020\u00022\u0011\u0010\u000f\u001a\r\u0012\u0004\u0012\u00020\u00060\f¢\u0006\u0002\b\u0010H\u0001¢\u0006\u0002\u0010\u0018\u001a+\u0010\u0019\u001a\u00020\u00062\u0006\u0010\u001a\u001a\u00020\u001b2\u0013\b\b\u0010\u000f\u001a\r\u0012\u0004\u0012\u00020\u00060\f¢\u0006\u0002\b\u0010H\u0083\b¢\u0006\u0002\u0010\u001c\u001a\u001c\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u001f\u001a\u00020 2\n\b\u0002\u0010!\u001a\u0004\u0018\u00010\u0002H\u0007\u001a\f\u0010\"\u001a\u00020\u001e*\u00020 H\u0000\u001a\f\u0010#\u001a\u00020$*\u00020%H\u0002\"\u001a\u0010\u0000\u001a\b\u0012\u0004\u0012\u00020\u00020\u0001X\u0080\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0003\u0010\u0004\u0082\u0002\u0007\n\u0005\b¡\u001e0\u0001¨\u0006&²\u0006\u0015\u0010'\u001a\r\u0012\u0004\u0012\u00020\u00060\f¢\u0006\u0002\b\u0010X\u008a\u0084\u0002"}, d2 = {"LocalPopupTestTag", "Landroidx/compose/runtime/ProvidableCompositionLocal;", "", "getLocalPopupTestTag", "()Landroidx/compose/runtime/ProvidableCompositionLocal;", "Popup", "", "alignment", "Landroidx/compose/ui/Alignment;", TypedValues.CycleType.S_WAVE_OFFSET, "Landroidx/compose/ui/unit/IntOffset;", "onDismissRequest", "Lkotlin/Function0;", "properties", "Landroidx/compose/ui/window/PopupProperties;", "content", "Landroidx/compose/runtime/Composable;", "Popup-K5zGePQ", "(Landroidx/compose/ui/Alignment;JLkotlin/jvm/functions/Function0;Landroidx/compose/ui/window/PopupProperties;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V", "popupPositionProvider", "Landroidx/compose/ui/window/PopupPositionProvider;", "(Landroidx/compose/ui/window/PopupPositionProvider;Lkotlin/jvm/functions/Function0;Landroidx/compose/ui/window/PopupProperties;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;II)V", "PopupTestTag", "tag", "(Ljava/lang/String;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V", "SimpleStack", "modifier", "Landroidx/compose/ui/Modifier;", "(Landroidx/compose/ui/Modifier;Lkotlin/jvm/functions/Function2;Landroidx/compose/runtime/Composer;I)V", "isPopupLayout", "", "view", "Landroid/view/View;", "testTag", "isFlagSecureEnabled", "toIntBounds", "Landroidx/compose/ui/unit/IntRect;", "Landroid/graphics/Rect;", "ui_release", "currentContent"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class AndroidPopup_androidKt {
     private static final ProvidableCompositionLocal<String> LocalPopupTestTag = CompositionLocalKt.compositionLocalOf$default(null, AndroidPopup_androidKt$LocalPopupTestTag$1.INSTANCE, 1, null);
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$1, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidPopup.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$1, reason: invalid class name */
+    /* INFO: compiled from: AndroidPopup.android.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function2<Composer, Integer, Unit> {
         final /* synthetic */ int $$changed;
@@ -80,8 +80,8 @@ public final class AndroidPopup_androidKt {
         final /* synthetic */ Function0<Unit> $onDismissRequest;
         final /* synthetic */ PopupProperties $properties;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(Alignment alignment, long j, Function0<Unit> function0, PopupProperties popupProperties, Function2<? super Composer, ? super Integer, Unit> function2, int i, int i2) {
             super(2);
             this.$alignment = alignment;
@@ -104,8 +104,8 @@ public final class AndroidPopup_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$9, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidPopup.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$9, reason: invalid class name */
+    /* INFO: compiled from: AndroidPopup.android.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass9 extends Lambda implements Function2<Composer, Integer, Unit> {
         final /* synthetic */ int $$changed;
@@ -115,8 +115,8 @@ public final class AndroidPopup_androidKt {
         final /* synthetic */ PopupPositionProvider $popupPositionProvider;
         final /* synthetic */ PopupProperties $properties;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass9(PopupPositionProvider popupPositionProvider, Function0<Unit> function0, PopupProperties popupProperties, Function2<? super Composer, ? super Integer, Unit> function2, int i, int i2) {
             super(2);
             this.$popupPositionProvider = popupPositionProvider;
@@ -138,16 +138,16 @@ public final class AndroidPopup_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$PopupTestTag$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: AndroidPopup.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$PopupTestTag$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: AndroidPopup.android.kt */
     @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
     static final class C01421 extends Lambda implements Function2<Composer, Integer, Unit> {
         final /* synthetic */ int $$changed;
         final /* synthetic */ Function2<Composer, Integer, Unit> $content;
         final /* synthetic */ String $tag;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         C01421(String str, Function2<? super Composer, ? super Integer, Unit> function2, int i) {
             super(2);
             this.$tag = str;
@@ -166,37 +166,37 @@ public final class AndroidPopup_androidKt {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:26:0x004e  */
-    /* JADX WARN: Code duplicated, block: B:27:0x0051  */
-    /* JADX WARN: Code duplicated, block: B:29:0x0055  */
-    /* JADX WARN: Code duplicated, block: B:31:0x005d  */
-    /* JADX WARN: Code duplicated, block: B:32:0x0060  */
-    /* JADX WARN: Code duplicated, block: B:37:0x006a  */
-    /* JADX WARN: Code duplicated, block: B:38:0x006d  */
-    /* JADX WARN: Code duplicated, block: B:40:0x0071  */
-    /* JADX WARN: Code duplicated, block: B:42:0x0079  */
-    /* JADX WARN: Code duplicated, block: B:43:0x007c  */
-    /* JADX WARN: Code duplicated, block: B:48:0x0086  */
-    /* JADX WARN: Code duplicated, block: B:49:0x0089  */
-    /* JADX WARN: Code duplicated, block: B:51:0x008f  */
-    /* JADX WARN: Code duplicated, block: B:53:0x0097  */
-    /* JADX WARN: Code duplicated, block: B:54:0x009a  */
-    /* JADX WARN: Code duplicated, block: B:59:0x00a8  */
-    /* JADX WARN: Code duplicated, block: B:64:0x00b8 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:65:0x00ba  */
-    /* JADX WARN: Code duplicated, block: B:66:0x00c1  */
-    /* JADX WARN: Code duplicated, block: B:68:0x00c4  */
-    /* JADX WARN: Code duplicated, block: B:69:0x00ca  */
-    /* JADX WARN: Code duplicated, block: B:72:0x00ce  */
-    /* JADX WARN: Code duplicated, block: B:74:0x00d1  */
-    /* JADX WARN: Code duplicated, block: B:75:0x00e7  */
-    /* JADX WARN: Code duplicated, block: B:78:0x00ee  */
-    /* JADX WARN: Code duplicated, block: B:81:0x0112  */
-    /* JADX WARN: Code duplicated, block: B:83:0x011a  */
-    /* JADX WARN: Code duplicated, block: B:86:0x013a  */
-    /* JADX WARN: Code duplicated, block: B:90:0x0147  */
-    /* JADX WARN: Code duplicated, block: B:92:? A[RETURN, SYNTHETIC] */
-    /* JADX INFO: renamed from: Popup-K5zGePQ, reason: not valid java name */
+    /* WARN: Code duplicated, block: B:26:0x004e  */
+    /* WARN: Code duplicated, block: B:27:0x0051  */
+    /* WARN: Code duplicated, block: B:29:0x0055  */
+    /* WARN: Code duplicated, block: B:31:0x005d  */
+    /* WARN: Code duplicated, block: B:32:0x0060  */
+    /* WARN: Code duplicated, block: B:37:0x006a  */
+    /* WARN: Code duplicated, block: B:38:0x006d  */
+    /* WARN: Code duplicated, block: B:40:0x0071  */
+    /* WARN: Code duplicated, block: B:42:0x0079  */
+    /* WARN: Code duplicated, block: B:43:0x007c  */
+    /* WARN: Code duplicated, block: B:48:0x0086  */
+    /* WARN: Code duplicated, block: B:49:0x0089  */
+    /* WARN: Code duplicated, block: B:51:0x008f  */
+    /* WARN: Code duplicated, block: B:53:0x0097  */
+    /* WARN: Code duplicated, block: B:54:0x009a  */
+    /* WARN: Code duplicated, block: B:59:0x00a8  */
+    /* WARN: Code duplicated, block: B:64:0x00b8 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:65:0x00ba  */
+    /* WARN: Code duplicated, block: B:66:0x00c1  */
+    /* WARN: Code duplicated, block: B:68:0x00c4  */
+    /* WARN: Code duplicated, block: B:69:0x00ca  */
+    /* WARN: Code duplicated, block: B:72:0x00ce  */
+    /* WARN: Code duplicated, block: B:74:0x00d1  */
+    /* WARN: Code duplicated, block: B:75:0x00e7  */
+    /* WARN: Code duplicated, block: B:78:0x00ee  */
+    /* WARN: Code duplicated, block: B:81:0x0112  */
+    /* WARN: Code duplicated, block: B:83:0x011a  */
+    /* WARN: Code duplicated, block: B:86:0x013a  */
+    /* WARN: Code duplicated, block: B:90:0x0147  */
+    /* WARN: Code duplicated, block: B:92:? A[RETURN, SYNTHETIC] */
+    /* INFO: renamed from: Popup-K5zGePQ, reason: not valid java name */
     public static final void m3134PopupK5zGePQ(Alignment alignment, long j, Function0<Unit> function0, PopupProperties popupProperties, Function2<? super Composer, ? super Integer, Unit> function2, Composer composer, int i, int i2) {
         Alignment alignment2;
         int i3;
@@ -1799,33 +1799,33 @@ public final class AndroidPopup_androidKt {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:26:0x004b  */
-    /* JADX WARN: Code duplicated, block: B:27:0x004e  */
-    /* JADX WARN: Code duplicated, block: B:29:0x0052  */
-    /* JADX WARN: Code duplicated, block: B:31:0x005a  */
-    /* JADX WARN: Code duplicated, block: B:32:0x005d  */
-    /* JADX WARN: Code duplicated, block: B:37:0x0067  */
-    /* JADX WARN: Code duplicated, block: B:38:0x006a  */
-    /* JADX WARN: Code duplicated, block: B:40:0x006e  */
-    /* JADX WARN: Code duplicated, block: B:42:0x0074  */
-    /* JADX WARN: Code duplicated, block: B:43:0x0077  */
-    /* JADX WARN: Code duplicated, block: B:47:0x0081  */
-    /* JADX WARN: Code duplicated, block: B:51:0x0090 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:52:0x0092  */
-    /* JADX WARN: Code duplicated, block: B:53:0x0095  */
-    /* JADX WARN: Code duplicated, block: B:55:0x0099  */
-    /* JADX WARN: Code duplicated, block: B:56:0x00af  */
-    /* JADX WARN: Code duplicated, block: B:59:0x00b7  */
-    /* JADX WARN: Code duplicated, block: B:62:0x014b  */
-    /* JADX WARN: Code duplicated, block: B:63:0x0178  */
-    /* JADX WARN: Code duplicated, block: B:66:0x01f1  */
-    /* JADX WARN: Code duplicated, block: B:69:0x01fd  */
-    /* JADX WARN: Code duplicated, block: B:70:0x0201  */
-    /* JADX WARN: Code duplicated, block: B:73:0x0226  */
-    /* JADX WARN: Code duplicated, block: B:75:0x0234  */
-    /* JADX WARN: Code duplicated, block: B:78:0x0271  */
-    /* JADX WARN: Code duplicated, block: B:82:0x027e  */
-    /* JADX WARN: Code duplicated, block: B:84:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:26:0x004b  */
+    /* WARN: Code duplicated, block: B:27:0x004e  */
+    /* WARN: Code duplicated, block: B:29:0x0052  */
+    /* WARN: Code duplicated, block: B:31:0x005a  */
+    /* WARN: Code duplicated, block: B:32:0x005d  */
+    /* WARN: Code duplicated, block: B:37:0x0067  */
+    /* WARN: Code duplicated, block: B:38:0x006a  */
+    /* WARN: Code duplicated, block: B:40:0x006e  */
+    /* WARN: Code duplicated, block: B:42:0x0074  */
+    /* WARN: Code duplicated, block: B:43:0x0077  */
+    /* WARN: Code duplicated, block: B:47:0x0081  */
+    /* WARN: Code duplicated, block: B:51:0x0090 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:52:0x0092  */
+    /* WARN: Code duplicated, block: B:53:0x0095  */
+    /* WARN: Code duplicated, block: B:55:0x0099  */
+    /* WARN: Code duplicated, block: B:56:0x00af  */
+    /* WARN: Code duplicated, block: B:59:0x00b7  */
+    /* WARN: Code duplicated, block: B:62:0x014b  */
+    /* WARN: Code duplicated, block: B:63:0x0178  */
+    /* WARN: Code duplicated, block: B:66:0x01f1  */
+    /* WARN: Code duplicated, block: B:69:0x01fd  */
+    /* WARN: Code duplicated, block: B:70:0x0201  */
+    /* WARN: Code duplicated, block: B:73:0x0226  */
+    /* WARN: Code duplicated, block: B:75:0x0234  */
+    /* WARN: Code duplicated, block: B:78:0x0271  */
+    /* WARN: Code duplicated, block: B:82:0x027e  */
+    /* WARN: Code duplicated, block: B:84:? A[RETURN, SYNTHETIC] */
     public static final void Popup(PopupPositionProvider popupPositionProvider, Function0<Unit> function0, PopupProperties popupProperties, Function2<? super Composer, ? super Integer, Unit> function2, Composer composer, int i, int i2) {
         int i3;
         Function0<Unit> function1;
@@ -2638,8 +2638,8 @@ public final class AndroidPopup_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$2, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidPopup.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$2, reason: invalid class name */
+    /* INFO: compiled from: AndroidPopup.android.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "Landroidx/compose/runtime/DisposableEffectResult;", "Landroidx/compose/runtime/DisposableEffectScope;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda implements Function1<DisposableEffectScope, DisposableEffectResult> {
         final /* synthetic */ LayoutDirection $layoutDirection;
@@ -2648,7 +2648,7 @@ public final class AndroidPopup_androidKt {
         final /* synthetic */ PopupProperties $properties;
         final /* synthetic */ String $testTag;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(PopupLayout popupLayout, Function0<Unit> function0, PopupProperties popupProperties, String str, LayoutDirection layoutDirection) {
             super(1);
             this.$popupLayout = popupLayout;
@@ -2666,8 +2666,8 @@ public final class AndroidPopup_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$3, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidPopup.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$3, reason: invalid class name */
+    /* INFO: compiled from: AndroidPopup.android.kt */
     @Metadata(d1 = {"\u0000\b\n\u0000\n\u0002\u0010\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0002\b\u0002"}, d2 = {"<anonymous>", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass3 extends Lambda implements Function0<Unit> {
         final /* synthetic */ LayoutDirection $layoutDirection;
@@ -2676,7 +2676,7 @@ public final class AndroidPopup_androidKt {
         final /* synthetic */ PopupProperties $properties;
         final /* synthetic */ String $testTag;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass3(PopupLayout popupLayout, Function0<Unit> function0, PopupProperties popupProperties, String str, LayoutDirection layoutDirection) {
             super(0);
             this.$popupLayout = popupLayout;
@@ -2692,20 +2692,20 @@ public final class AndroidPopup_androidKt {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2() {
             this.$popupLayout.updateParameters(this.$onDismissRequest, this.$properties, this.$testTag, this.$layoutDirection);
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$4, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidPopup.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$4, reason: invalid class name */
+    /* INFO: compiled from: AndroidPopup.android.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "Landroidx/compose/runtime/DisposableEffectResult;", "Landroidx/compose/runtime/DisposableEffectScope;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass4 extends Lambda implements Function1<DisposableEffectScope, DisposableEffectResult> {
         final /* synthetic */ PopupLayout $popupLayout;
         final /* synthetic */ PopupPositionProvider $popupPositionProvider;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass4(PopupLayout popupLayout, PopupPositionProvider popupPositionProvider) {
             super(1);
             this.$popupLayout = popupLayout;
@@ -2720,8 +2720,8 @@ public final class AndroidPopup_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$5, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidPopup.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$5, reason: invalid class name */
+    /* INFO: compiled from: AndroidPopup.android.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     @DebugMetadata(c = "androidx.compose.ui.window.AndroidPopup_androidKt$Popup$5", f = "AndroidPopup.android.kt", i = {0}, l = {303}, m = "invokeSuspend", n = {"$this$LaunchedEffect"}, s = {"L$0"})
     static final class AnonymousClass5 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super Unit>, Object> {
@@ -2729,7 +2729,7 @@ public final class AndroidPopup_androidKt {
         private /* synthetic */ Object L$0;
         int label;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass5(PopupLayout popupLayout, Continuation<? super AnonymousClass5> continuation) {
             super(2, continuation);
             this.$popupLayout = popupLayout;
@@ -2747,14 +2747,14 @@ public final class AndroidPopup_androidKt {
             return ((AnonymousClass5) create(coroutineScope, continuation)).invokeSuspend(Unit.INSTANCE);
         }
 
-        /* JADX WARN: Code duplicated, block: B:11:0x0029  */
-        /* JADX WARN: Code duplicated, block: B:13:0x003a A[RETURN] */
-        /* JADX WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:12:0x0038 -> B:14:0x003b). Please report as a decompilation issue!!! */
-        /*  JADX ERROR: JadxOverflowException in pass: RegionMakerVisitor
-            jadx.core.utils.exceptions.JadxOverflowException: Regions stack size limit reached
-            	at jadx.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
-            	at jadx.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
-            	at jadx.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
+        /* WARN: Code duplicated, block: B:11:0x0029  */
+        /* WARN: Code duplicated, block: B:13:0x003a A[RETURN] */
+        /* WARN: Unsupported multi-entry loop pattern (BACK_EDGE: B:12:0x0038 -> B:14:0x003b). Please report as a decompilation issue!!! */
+        /* ERROR: decompilerOverflowException in pass: RegionMakerVisitor
+            decompiler.core.utils.exceptions.decompilerOverflowException: Regions stack size limit reached
+            	at decompiler.core.utils.ErrorsCounter.addError(ErrorsCounter.java:59)
+            	at decompiler.core.utils.ErrorsCounter.error(ErrorsCounter.java:31)
+            	at decompiler.core.dex.attributes.nodes.NotificationAttrNode.addError(NotificationAttrNode.java:19)
             */
         @Override // kotlin.coroutines.jvm.internal.BaseContinuationImpl
         public final java.lang.Object invokeSuspend(java.lang.Object r5) {
@@ -2802,8 +2802,8 @@ public final class AndroidPopup_androidKt {
             throw new UnsupportedOperationException("Method not decompiled: androidx.compose.ui.window.AndroidPopup_androidKt.AnonymousClass5.invokeSuspend(java.lang.Object):java.lang.Object");
         }
 
-        /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$5$1, reason: invalid class name */
-        /* JADX INFO: compiled from: AndroidPopup.android.kt */
+        /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$5$1, reason: invalid class name */
+        /* INFO: compiled from: AndroidPopup.android.kt */
         @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
         static final class AnonymousClass1 extends Lambda implements Function1<Long, Unit> {
             public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -2823,13 +2823,13 @@ public final class AndroidPopup_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$7, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidPopup.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$7, reason: invalid class name */
+    /* INFO: compiled from: AndroidPopup.android.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "childCoordinates", "Landroidx/compose/ui/layout/LayoutCoordinates;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass7 extends Lambda implements Function1<LayoutCoordinates, Unit> {
         final /* synthetic */ PopupLayout $popupLayout;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass7(PopupLayout popupLayout) {
             super(1);
             this.$popupLayout = popupLayout;
@@ -2841,7 +2841,7 @@ public final class AndroidPopup_androidKt {
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(LayoutCoordinates layoutCoordinates) {
             LayoutCoordinates parentLayoutCoordinates = layoutCoordinates.getParentLayoutCoordinates();
             Intrinsics.checkNotNull(parentLayoutCoordinates);
@@ -2849,8 +2849,8 @@ public final class AndroidPopup_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$8, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidPopup.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$8, reason: invalid class name */
+    /* INFO: compiled from: AndroidPopup.android.kt */
     @Metadata(d1 = {"\u0000\u001e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\n¢\u0006\u0004\b\b\u0010\t"}, d2 = {"<anonymous>", "Landroidx/compose/ui/layout/MeasureResult;", "Landroidx/compose/ui/layout/MeasureScope;", "<anonymous parameter 0>", "", "Landroidx/compose/ui/layout/Measurable;", "<anonymous parameter 1>", "Landroidx/compose/ui/unit/Constraints;", "measure-3p2s80s", "(Landroidx/compose/ui/layout/MeasureScope;Ljava/util/List;J)Landroidx/compose/ui/layout/MeasureResult;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass8 implements MeasurePolicy {
         final /* synthetic */ LayoutDirection $layoutDirection;
@@ -2861,8 +2861,8 @@ public final class AndroidPopup_androidKt {
             this.$layoutDirection = layoutDirection;
         }
 
-        /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$8$1, reason: invalid class name */
-        /* JADX INFO: compiled from: AndroidPopup.android.kt */
+        /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$Popup$8$1, reason: invalid class name */
+        /* INFO: compiled from: AndroidPopup.android.kt */
         @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Landroidx/compose/ui/layout/Placeable$PlacementScope;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
         static final class AnonymousClass1 extends Lambda implements Function1<Placeable.PlacementScope, Unit> {
             public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -2871,7 +2871,7 @@ public final class AndroidPopup_androidKt {
                 super(1);
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Placeable.PlacementScope placementScope) {
             }
 
@@ -2883,7 +2883,7 @@ public final class AndroidPopup_androidKt {
         }
 
         @Override // androidx.compose.ui.layout.MeasurePolicy
-        /* JADX INFO: renamed from: measure-3p2s80s */
+        /* INFO: renamed from: measure-3p2s80s */
         public final MeasureResult mo1841measure3p2s80s(MeasureScope measureScope, List<? extends Measurable> list, long j) {
             this.$popupLayout.setParentLayoutDirection(this.$layoutDirection);
             return MeasureScope.layout$default(measureScope, 0, 0, null, AnonymousClass1.INSTANCE, 4, null);
@@ -2923,14 +2923,14 @@ public final class AndroidPopup_androidKt {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$SimpleStack$1, reason: invalid class name and case insensitive filesystem */
-    /* JADX INFO: compiled from: AndroidPopup.android.kt */
+    /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$SimpleStack$1, reason: invalid class name and case insensitive filesystem */
+    /* INFO: compiled from: AndroidPopup.android.kt */
     @Metadata(d1 = {"\u0000\u001e\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u00022\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u00042\u0006\u0010\u0006\u001a\u00020\u0007H\n¢\u0006\u0004\b\b\u0010\t"}, d2 = {"<anonymous>", "Landroidx/compose/ui/layout/MeasureResult;", "Landroidx/compose/ui/layout/MeasureScope;", "measurables", "", "Landroidx/compose/ui/layout/Measurable;", "constraints", "Landroidx/compose/ui/unit/Constraints;", "measure-3p2s80s", "(Landroidx/compose/ui/layout/MeasureScope;Ljava/util/List;J)Landroidx/compose/ui/layout/MeasureResult;"}, k = 3, mv = {1, 8, 0}, xi = 48)
     public static final class C01431 implements MeasurePolicy {
         public static final C01431 INSTANCE = new C01431();
 
-        /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$SimpleStack$1$1, reason: invalid class name and collision with other inner class name */
-        /* JADX INFO: compiled from: AndroidPopup.android.kt */
+        /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$SimpleStack$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: compiled from: AndroidPopup.android.kt */
         @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Landroidx/compose/ui/layout/Placeable$PlacementScope;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
         public static final class C00091 extends Lambda implements Function1<Placeable.PlacementScope, Unit> {
             public static final C00091 INSTANCE = new C00091();
@@ -2939,7 +2939,7 @@ public final class AndroidPopup_androidKt {
                 super(1);
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Placeable.PlacementScope placementScope) {
             }
 
@@ -2951,7 +2951,7 @@ public final class AndroidPopup_androidKt {
         }
 
         @Override // androidx.compose.ui.layout.MeasurePolicy
-        /* JADX INFO: renamed from: measure-3p2s80s */
+        /* INFO: renamed from: measure-3p2s80s */
         public final MeasureResult mo1841measure3p2s80s(MeasureScope measureScope, List<? extends Measurable> list, long j) {
             int i;
             int i2;
@@ -2992,13 +2992,13 @@ public final class AndroidPopup_androidKt {
             return MeasureScope.layout$default(measureScope, i, i2, null, new AnonymousClass3(arrayList2), 4, null);
         }
 
-        /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$SimpleStack$1$2, reason: invalid class name */
-        /* JADX INFO: compiled from: AndroidPopup.android.kt */
+        /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$SimpleStack$1$2, reason: invalid class name */
+        /* INFO: compiled from: AndroidPopup.android.kt */
         @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Landroidx/compose/ui/layout/Placeable$PlacementScope;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
         public static final class AnonymousClass2 extends Lambda implements Function1<Placeable.PlacementScope, Unit> {
             final /* synthetic */ Placeable $p;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public AnonymousClass2(Placeable placeable) {
                 super(1);
                 this.$p = placeable;
@@ -3010,20 +3010,20 @@ public final class AndroidPopup_androidKt {
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Placeable.PlacementScope placementScope) {
                 Placeable.PlacementScope.placeRelative$default(placementScope, this.$p, 0, 0, 0.0f, 4, null);
             }
         }
 
-        /* JADX INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$SimpleStack$1$3, reason: invalid class name */
-        /* JADX INFO: compiled from: AndroidPopup.android.kt */
+        /* INFO: renamed from: androidx.compose.ui.window.AndroidPopup_androidKt$SimpleStack$1$3, reason: invalid class name */
+        /* INFO: compiled from: AndroidPopup.android.kt */
         @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Landroidx/compose/ui/layout/Placeable$PlacementScope;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
         public static final class AnonymousClass3 extends Lambda implements Function1<Placeable.PlacementScope, Unit> {
             final /* synthetic */ List<Placeable> $placeables;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-            /* JADX WARN: Multi-variable type inference failed */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: Multi-variable type inference failed */
             public AnonymousClass3(List<? extends Placeable> list) {
                 super(1);
                 this.$placeables = list;
@@ -3035,7 +3035,7 @@ public final class AndroidPopup_androidKt {
                 return Unit.INSTANCE;
             }
 
-            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
             public final void invoke2(Placeable.PlacementScope placementScope) {
                 int lastIndex = CollectionsKt.getLastIndex(this.$placeables);
                 if (lastIndex < 0) {
@@ -3098,7 +3098,7 @@ public final class AndroidPopup_androidKt {
         return (layoutParams2 == null || (layoutParams2.flags & 8192) == 0) ? false : true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final IntRect toIntBounds(Rect rect) {
         return new IntRect(rect.left, rect.top, rect.right, rect.bottom);
     }
@@ -3117,7 +3117,7 @@ public final class AndroidPopup_androidKt {
         return false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Function2<Composer, Integer, Unit> Popup$lambda$1(State<? extends Function2<? super Composer, ? super Integer, Unit>> state) {
         return (Function2) state.getValue();
     }

@@ -15,8 +15,8 @@ import kotlin.jvm.internal.Intrinsics;
 import kotlin.text.StringsKt;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: compiled from: Encoding.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: Encoding.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u00002\u00020\u0001BG\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\n\b\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u0012$\b\u0002\u0010\u0007\u001a\u001e\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0006\u0012\u0004\u0018\u00010\n0\t\u0018\u00010\bj\u0004\u0018\u0001`\u000b¢\u0006\u0002\u0010\fJ\u0010\u0010\u001e\u001a\u00020\u001f2\u0006\u0010 \u001a\u00020\u0005H\u0002R\u0013\u0010\u0006\u001a\u0004\u0018\u00010\u0005¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000RB\u0010\u0011\u001a6\u0012\u0004\u0012\u00020\u0003\u0012\u0004\u0012\u00020\u0005\u0012 \u0012\u001e\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0006\u0012\u0004\u0018\u00010\n0\t\u0018\u00010\bj\u0004\u0018\u0001`\u000b\u0012\u0004\u0012\u00020\u00130\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R-\u0010\u0007\u001a\u001e\u0012\u0012\u0012\u0010\u0012\u0004\u0012\u00020\u0005\u0012\u0006\u0012\u0004\u0018\u00010\n0\t\u0018\u00010\bj\u0004\u0018\u0001`\u000b¢\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u001b\u0010\u0018\u001a\u00020\u00138VX\u0096\u0084\u0002¢\u0006\f\n\u0004\b\u001b\u0010\u001c\u001a\u0004\b\u0019\u0010\u001aR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u000e¨\u0006!"}, d2 = {"Lcom/github/kittinunf/fuel/core/Encoding;", "Lcom/github/kittinunf/fuel/core/RequestFactory$RequestConvertible;", "httpMethod", "Lcom/github/kittinunf/fuel/core/Method;", "urlString", "", "baseUrlString", "parameters", "", "Lkotlin/Pair;", "", "Lcom/github/kittinunf/fuel/core/Parameters;", "(Lcom/github/kittinunf/fuel/core/Method;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)V", "getBaseUrlString", "()Ljava/lang/String;", "defaultHeaders", "Lcom/github/kittinunf/fuel/core/Headers;", "encoder", "Lkotlin/Function3;", "Lcom/github/kittinunf/fuel/core/Request;", "getHttpMethod", "()Lcom/github/kittinunf/fuel/core/Method;", "getParameters", "()Ljava/util/List;", "request", "getRequest", "()Lcom/github/kittinunf/fuel/core/Request;", "request$delegate", "Lkotlin/Lazy;", "getUrlString", "createUrl", "Ljava/net/URL;", "path", "fuel"}, k = 1, mv = {1, 4, 0})
 public final class Encoding implements RequestFactory.RequestConvertible {
     private final String baseUrlString;
@@ -25,7 +25,7 @@ public final class Encoding implements RequestFactory.RequestConvertible {
     private final Method httpMethod;
     private final List<Pair<String, Object>> parameters;
 
-    /* JADX INFO: renamed from: request$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: request$delegate, reason: from kotlin metadata */
     private final Lazy request;
     private final String urlString;
 
@@ -34,7 +34,7 @@ public final class Encoding implements RequestFactory.RequestConvertible {
         return (Request) this.request.getValue();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public Encoding(Method httpMethod, String urlString, String str, List<? extends Pair<String, ? extends Object>> list) {
         Intrinsics.checkNotNullParameter(httpMethod, "httpMethod");
         Intrinsics.checkNotNullParameter(urlString, "urlString");
@@ -55,7 +55,7 @@ public final class Encoding implements RequestFactory.RequestConvertible {
         return this.urlString;
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public /* synthetic */ Encoding(Method method, String str, String str2, List list, int i, DefaultConstructorMarker defaultConstructorMarker) {
         if ((i & 4) != 0) {
             str2 = null;
@@ -74,7 +74,7 @@ public final class Encoding implements RequestFactory.RequestConvertible {
         return this.parameters;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final URL createUrl(String path) {
         URL url;
         URI uri;

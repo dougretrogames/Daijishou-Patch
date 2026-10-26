@@ -8,7 +8,7 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class RegularImmutableTable<R, C, V> extends ImmutableTable<R, C, V> {
     abstract Table.Cell<R, C, V> getCell(int iterationIndex);
@@ -21,7 +21,7 @@ abstract class RegularImmutableTable<R, C, V> extends ImmutableTable<R, C, V> {
     RegularImmutableTable() {
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ImmutableTable, com.google.common.collect.AbstractTable
     public final ImmutableSet<Table.Cell<R, C, V>> createCellSet() {
         return isEmpty() ? ImmutableSet.of() : new CellSet(this, null);
@@ -45,7 +45,7 @@ abstract class RegularImmutableTable<R, C, V> extends ImmutableTable<R, C, V> {
             return RegularImmutableTable.this.size();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.IndexedImmutableSet
         public Table.Cell<R, C, V> get(int index) {
             return RegularImmutableTable.this.getCell(index);
@@ -69,7 +69,7 @@ abstract class RegularImmutableTable<R, C, V> extends ImmutableTable<R, C, V> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ImmutableTable, com.google.common.collect.AbstractTable
     public final ImmutableCollection<V> createValues() {
         return isEmpty() ? ImmutableList.of() : new Values(this, null);

@@ -2,8 +2,8 @@ package org.eclipse.jgit.internal.transport.ssh;
 
 import java.util.function.Consumer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class OpenSshConfigFile$$ExternalSyntheticLambda1 implements Consumer {
     public final /* synthetic */ String f$0;
     public final /* synthetic */ OpenSshConfigFile.HostEntry f$1;

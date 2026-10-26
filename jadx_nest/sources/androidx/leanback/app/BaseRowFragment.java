@@ -14,7 +14,7 @@ import androidx.leanback.widget.Row;
 import androidx.leanback.widget.VerticalGridView;
 import androidx.recyclerview.widget.RecyclerView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 abstract class BaseRowFragment extends Fragment {
     private static final String CURRENT_SELECTED_POSITION = "currentSelectedPosition";
@@ -35,7 +35,7 @@ abstract class BaseRowFragment extends Fragment {
     BaseRowFragment() {
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.BaseRowFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.BaseRowFragment$1, reason: invalid class name */
     class AnonymousClass1 extends OnChildViewHolderSelectedListener {
         AnonymousClass1() {
         }

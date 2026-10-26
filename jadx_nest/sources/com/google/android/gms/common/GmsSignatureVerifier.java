@@ -4,8 +4,8 @@ import com.google.android.gms.internal.common.zzag;
 import com.google.errorprone.annotations.RestrictedInheritance;
 import java.util.HashMap;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 @RestrictedInheritance(allowedOnPath = ".*javatests/com/google/android/gmscore/integ/client/common/robolectric/.*", explanation = "Sub classing of GMS Core's APIs are restricted to testing fakes.", link = "go/gmscore-restrictedinheritance")
 public class GmsSignatureVerifier {
     private static final zzab zza;

@@ -1,6 +1,6 @@
 package org.eclipse.jgit.revwalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class BlockObjQueue {
     private BlockFreeList free = new BlockFreeList();
     private Block head;

@@ -14,7 +14,7 @@ import org.eclipse.jgit.revwalk.RevSort;
 import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.revwalk.filter.RevFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BitmappedReachabilityChecker implements ReachabilityChecker {
     private final RevWalk walk;
 
@@ -46,7 +46,7 @@ public class BitmappedReachabilityChecker implements ReachabilityChecker {
         return Optional.of((RevCommit) arrayList.get(0));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class ReachedFilter extends RevFilter {
         private final BitmapIndex.BitmapBuilder reached;
         private final BitmapIndex repoBitmaps;

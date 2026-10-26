@@ -2,7 +2,7 @@ package org.apache.http.auth;
 
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class AuthOption {
     private final AuthScheme authScheme;
     private final Credentials creds;

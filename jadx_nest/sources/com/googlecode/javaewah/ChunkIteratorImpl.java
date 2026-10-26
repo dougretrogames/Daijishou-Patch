@@ -1,6 +1,6 @@
 package com.googlecode.javaewah;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class ChunkIteratorImpl implements ChunkIterator {
     private final Buffer buffer;
     private final EWAHIterator ewahIter;

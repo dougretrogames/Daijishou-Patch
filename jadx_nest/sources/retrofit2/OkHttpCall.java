@@ -13,7 +13,7 @@ import okio.Okio;
 import okio.Source;
 import okio.Timeout;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 final class OkHttpCall<T> implements Call<T> {
     private final Object[] args;
     private final okhttp3.Call.Factory callFactory;
@@ -120,7 +120,7 @@ final class OkHttpCall<T> implements Call<T> {
         call.enqueue(new AnonymousClass1(callback));
     }
 
-    /* JADX INFO: renamed from: retrofit2.OkHttpCall$1, reason: invalid class name */
+    /* INFO: renamed from: retrofit2.OkHttpCall$1, reason: invalid class name */
     class AnonymousClass1 implements okhttp3.Callback {
         final /* synthetic */ Callback val$callback;
 
@@ -250,19 +250,19 @@ final class OkHttpCall<T> implements Call<T> {
         }
 
         @Override // okhttp3.ResponseBody
-        /* JADX INFO: renamed from: contentType */
+        /* INFO: renamed from: contentType */
         public MediaType get$contentType() {
             return this.contentType;
         }
 
         @Override // okhttp3.ResponseBody
-        /* JADX INFO: renamed from: contentLength */
+        /* INFO: renamed from: contentLength */
         public long getContentLength() {
             return this.contentLength;
         }
 
         @Override // okhttp3.ResponseBody
-        /* JADX INFO: renamed from: source */
+        /* INFO: renamed from: source */
         public BufferedSource getBodySource() {
             throw new IllegalStateException("Cannot read raw response body of a converted body.");
         }
@@ -280,7 +280,7 @@ final class OkHttpCall<T> implements Call<T> {
             this.delegateSource = Okio.buffer(new AnonymousClass1(responseBody.getBodySource()));
         }
 
-        /* JADX INFO: renamed from: retrofit2.OkHttpCall$ExceptionCatchingResponseBody$1, reason: invalid class name */
+        /* INFO: renamed from: retrofit2.OkHttpCall$ExceptionCatchingResponseBody$1, reason: invalid class name */
         class AnonymousClass1 extends ForwardingSource {
             AnonymousClass1(Source source) {
                 super(source);
@@ -298,19 +298,19 @@ final class OkHttpCall<T> implements Call<T> {
         }
 
         @Override // okhttp3.ResponseBody
-        /* JADX INFO: renamed from: contentType */
+        /* INFO: renamed from: contentType */
         public MediaType get$contentType() {
             return this.delegate.get$contentType();
         }
 
         @Override // okhttp3.ResponseBody
-        /* JADX INFO: renamed from: contentLength */
+        /* INFO: renamed from: contentLength */
         public long getContentLength() {
             return this.delegate.getContentLength();
         }
 
         @Override // okhttp3.ResponseBody
-        /* JADX INFO: renamed from: source */
+        /* INFO: renamed from: source */
         public BufferedSource getBodySource() {
             return this.delegateSource;
         }

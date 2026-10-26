@@ -1,6 +1,6 @@
 package org.eclipse.jgit.transport;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class InternalHttpServerGlue {
     public static void setPeerUserAgent(UploadPack uploadPack, String str) {
         uploadPack.userAgent = str;

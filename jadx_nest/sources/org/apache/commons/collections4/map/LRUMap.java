@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Map;
 import org.apache.commons.collections4.BoundedMap;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LRUMap<K, V> extends AbstractLinkedMap<K, V> implements BoundedMap<K, V>, Serializable, Cloneable {
     protected static final int DEFAULT_MAX_SIZE = 100;
     private static final long serialVersionUID = -612114643488955218L;

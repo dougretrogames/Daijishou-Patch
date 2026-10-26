@@ -1,6 +1,6 @@
 package com.prof18.rssparser;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class R {
     private R() {
     }

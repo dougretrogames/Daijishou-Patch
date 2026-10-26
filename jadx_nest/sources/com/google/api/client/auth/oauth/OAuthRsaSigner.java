@@ -6,7 +6,7 @@ import com.google.api.client.util.StringUtils;
 import java.security.GeneralSecurityException;
 import java.security.PrivateKey;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class OAuthRsaSigner implements OAuthSigner {
     public PrivateKey privateKey;
 

@@ -23,7 +23,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CarouselLayoutManager extends RecyclerView.LayoutManager implements Carousel, RecyclerView.SmoothScroller.ScrollVectorProvider {
     public static final int ALIGNMENT_CENTER = 1;
     public static final int ALIGNMENT_START = 0;
@@ -59,7 +59,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         return true;
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$com-google-android-material-carousel-CarouselLayoutManager, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$com-google-android-material-carousel-CarouselLayoutManager, reason: not valid java name */
     /* synthetic */ void m3259x2ff337cb(View view, int i, int i2, int i3, int i4, int i5, int i6, int i7, int i8) {
         if (i == i5 && i2 == i6 && i3 == i7 && i4 == i8) {
             return;
@@ -237,7 +237,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         return i + i2;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void refreshKeylineState() {
         this.keylineStateList = null;
         requestLayout();
@@ -496,7 +496,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         return AnimationUtils.lerp(keylineRange.leftOrTop.maskedItemSize, keylineRange.rightOrBottom.maskedItemSize, keylineRange.leftOrTop.locOffset, keylineRange.rightOrBottom.locOffset, f);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void updateChildMaskForLocation(View view, float f, KeylineRange keylineRange) {
         if (view instanceof Maskable) {
             float fLerp = AnimationUtils.lerp(keylineRange.leftOrTop.mask, keylineRange.rightOrBottom.mask, keylineRange.leftOrTop.loc, keylineRange.rightOrBottom.loc, f);
@@ -539,7 +539,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         view.measure(getChildMeasureSpec(getWidth(), getWidthMode(), getPaddingLeft() + getPaddingRight() + layoutParams.leftMargin + layoutParams.rightMargin + i3, (int) itemSize, canScrollHorizontally()), getChildMeasureSpec(getHeight(), getHeightMode(), getPaddingTop() + getPaddingBottom() + layoutParams.topMargin + layoutParams.bottomMargin + i4, (int) itemSize2, canScrollVertically()));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getParentLeft() {
         return this.orientationHelper.getParentLeft();
     }
@@ -548,7 +548,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         return this.orientationHelper.getParentStart();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getParentRight() {
         return this.orientationHelper.getParentRight();
     }
@@ -557,12 +557,12 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         return this.orientationHelper.getParentEnd();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getParentTop() {
         return this.orientationHelper.getParentTop();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int getParentBottom() {
         return this.orientationHelper.getParentBottom();
     }
@@ -670,7 +670,7 @@ public class CarouselLayoutManager extends RecyclerView.LayoutManager implements
         requestLayout();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.carousel.CarouselLayoutManager$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.carousel.CarouselLayoutManager$1, reason: invalid class name */
     class AnonymousClass1 extends LinearSmoothScroller {
         AnonymousClass1(Context context) {
             super(context);

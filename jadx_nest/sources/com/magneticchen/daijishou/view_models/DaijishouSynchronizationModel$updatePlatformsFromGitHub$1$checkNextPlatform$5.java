@@ -20,8 +20,8 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 import kotlinx.serialization.json.Json;
 
-/* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouSynchronizationModel.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
 final class DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$5 extends Lambda<Unit> implements Function1<PlatformEntity, Unit> {
     final /* synthetic */ CoroutineScope $$this$launch;
@@ -37,8 +37,8 @@ final class DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextP
     final /* synthetic */ Json $weakJson;
     final /* synthetic */ DaijishouSynchronizationModel this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: Multi-variable type inference failed */
     DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$5(DaijishouSynchronizationModel daijishouSynchronizationModel, CoroutineScope coroutineScope, String str, CoroutineExceptionHandler coroutineExceptionHandler, Ref.IntRef intRef, PlatformsIndexJson platformsIndexJson, Ref.IntRef intRef2, boolean z, Ref.ObjectRef<PlatformsIndexJson> objectRef, Json json, String str2, Function1<? super Boolean, Unit> function1) {
         super(1);
         this.this$0 = daijishouSynchronizationModel;
@@ -61,8 +61,8 @@ final class DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextP
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$5$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouSynchronizationModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$5$1, reason: invalid class name */
+    /* INFO: compiled from: DaijishouSynchronizationModel.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.view_models.DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextPlatform$5$1", f = "DaijishouSynchronizationModel.kt", i = {}, l = {240}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -79,8 +79,8 @@ final class DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextP
         int label;
         final /* synthetic */ DaijishouSynchronizationModel this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: Multi-variable type inference failed */
         AnonymousClass1(Ref.IntRef intRef, PlatformsIndexJson platformsIndexJson, DaijishouSynchronizationModel daijishouSynchronizationModel, Ref.IntRef intRef2, boolean z, Ref.ObjectRef<PlatformsIndexJson> objectRef, Json json, String str, CoroutineScope coroutineScope, Function1<? super Boolean, Unit> function1, CoroutineExceptionHandler coroutineExceptionHandler, Continuation<?> continuation) {
             super(2, continuation);
             this.$index = intRef;
@@ -133,7 +133,7 @@ final class DaijishouSynchronizationModel$updatePlatformsFromGitHub$1$checkNextP
         }
     }
 
-    /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+    /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
     public final void invoke2(PlatformEntity platformEntity) {
         this.this$0.getApplication().getLogger().debug(this.$$this$launch, "Platform with uniqueId \"" + this.$platformUniqueId + "\" updated.");
         BuildersKt.launch$default(ViewModelKt.getViewModelScope(this.this$0), Dispatchers.getIO().plus(this.$coroutineExceptionHandler), null, new AnonymousClass1(this.$index, this.$platformsIndexJson, this.this$0, this.$platformUpdatedCount, this.$updateEveryPlatformThisCycle, this.$previousPlatformsIndexJson, this.$weakJson, this.$baseUri, this.$$this$launch, this.$callback, this.$coroutineExceptionHandler, null), 2, null);

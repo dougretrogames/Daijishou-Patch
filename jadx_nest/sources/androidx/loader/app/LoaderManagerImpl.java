@@ -15,7 +15,7 @@ import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.lang.reflect.Modifier;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class LoaderManagerImpl extends LoaderManager {
     static boolean DEBUG = false;
     private static final String TAG = "LoaderManager";
@@ -85,7 +85,7 @@ class LoaderManagerImpl extends LoaderManager {
             return (!hasActiveObservers() || (loaderObserver = this.mObserver) == null || loaderObserver.hasDeliveredData()) ? false : true;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // androidx.lifecycle.LiveData
         public void removeObserver(Observer<? super D> observer) {
             super.removeObserver(observer);
@@ -227,7 +227,7 @@ class LoaderManagerImpl extends LoaderManager {
         private SparseArrayCompat<LoaderInfo> mLoaders = new SparseArrayCompat<>();
         private boolean mCreatingLoader = false;
 
-        /* JADX INFO: renamed from: androidx.loader.app.LoaderManagerImpl$LoaderViewModel$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.loader.app.LoaderManagerImpl$LoaderViewModel$1, reason: invalid class name */
         static class AnonymousClass1 implements ViewModelProvider.Factory {
             AnonymousClass1() {
             }

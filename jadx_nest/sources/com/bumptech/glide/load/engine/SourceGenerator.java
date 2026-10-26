@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class SourceGenerator implements DataFetcherGenerator, DataFetcherGenerator.FetcherReadyCallback {
     private static final String TAG = "SourceGenerator";
     private final DataFetcherGenerator.FetcherReadyCallback cb;
@@ -67,7 +67,7 @@ class SourceGenerator implements DataFetcherGenerator, DataFetcherGenerator.Fetc
         this.loadData.fetcher.loadData(this.helper.getPriority(), new AnonymousClass1(loadData));
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.engine.SourceGenerator$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.engine.SourceGenerator$1, reason: invalid class name */
     class AnonymousClass1 implements DataFetcher.DataCallback<Object> {
         final /* synthetic */ ModelLoader.LoadData val$toStart;
 

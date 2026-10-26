@@ -7,7 +7,7 @@ import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.errors.PackProtocolException;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FirstWant {
     private static final String AGENT_PREFIX = "agent=";
     private static final String SESSION_ID_PREFIX = "session-id=";

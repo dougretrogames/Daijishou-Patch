@@ -4,7 +4,7 @@ import com.google.common.base.Preconditions;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractHasher implements Hasher {
     AbstractHasher() {

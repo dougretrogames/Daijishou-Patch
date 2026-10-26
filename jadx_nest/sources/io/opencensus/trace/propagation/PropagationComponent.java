@@ -1,6 +1,6 @@
 package io.opencensus.trace.propagation;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class PropagationComponent {
     private static final PropagationComponent NOOP_PROPAGATION_COMPONENT = new NoopPropagationComponent(null);
 

@@ -3,7 +3,7 @@ package org.apache.http.protocol;
 import org.apache.http.HttpRequest;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UriHttpRequestHandlerMapper implements HttpRequestHandlerMapper {
     private final UriPatternMatcher<HttpRequestHandler> matcher;
 

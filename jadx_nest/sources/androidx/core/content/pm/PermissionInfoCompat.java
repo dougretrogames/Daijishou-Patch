@@ -5,7 +5,7 @@ import android.os.Build;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class PermissionInfoCompat {
 
     @Retention(RetentionPolicy.SOURCE)

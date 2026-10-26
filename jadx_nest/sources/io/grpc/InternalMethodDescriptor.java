@@ -3,7 +3,7 @@ package io.grpc;
 import androidx.core.app.NotificationCompat;
 import com.google.common.base.Preconditions;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class InternalMethodDescriptor {
     private final InternalKnownTransport transport;
 

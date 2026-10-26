@@ -8,7 +8,7 @@ import android.os.Parcelable;
 import android.support.v4.media.session.MediaSessionCompat;
 import android.text.TextUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MediaDescriptionCompat implements Parcelable {
     public static final long BT_FOLDER_TYPE_ALBUMS = 2;
     public static final long BT_FOLDER_TYPE_ARTISTS = 3;
@@ -161,18 +161,18 @@ public final class MediaDescriptionCompat implements Parcelable {
         return mediaDescriptionCompatBuild;
     }
 
-    /* JADX INFO: renamed from: android.support.v4.media.MediaDescriptionCompat$1, reason: invalid class name */
+    /* INFO: renamed from: android.support.v4.media.MediaDescriptionCompat$1, reason: invalid class name */
     static class AnonymousClass1 implements Parcelable.Creator<MediaDescriptionCompat> {
         AnonymousClass1() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public MediaDescriptionCompat createFromParcel(Parcel parcel) {
             return MediaDescriptionCompat.fromMediaDescription(MediaDescriptionCompatApi21.fromParcel(parcel));
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public MediaDescriptionCompat[] newArray(int i) {
             return new MediaDescriptionCompat[i];

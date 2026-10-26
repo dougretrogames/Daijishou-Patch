@@ -18,7 +18,7 @@ import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StashCreateCommand extends GitCommand<RevCommit> {
     private static final String MSG_INDEX = "index on {0}: {1} {2}";
     private static final String MSG_UNTRACKED = "untracked files on {0}: {1} {2}";
@@ -123,35 +123,35 @@ public class StashCreateCommand extends GitCommand<RevCommit> {
         }
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x0377 */
-    /* JADX WARN: Code duplicated, block: B:104:0x024b A[Catch: all -> 0x0331, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
-    /* JADX WARN: Code duplicated, block: B:113:0x026e A[Catch: all -> 0x0331, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
-    /* JADX WARN: Code duplicated, block: B:116:0x02a8 A[Catch: all -> 0x0331, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
-    /* JADX WARN: Code duplicated, block: B:120:0x02b3 A[Catch: all -> 0x0331, LOOP:2: B:117:0x02ac->B:120:0x02b3, LOOP_END, TRY_LEAVE, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
-    /* JADX WARN: Code duplicated, block: B:124:0x02d4 A[Catch: all -> 0x0351, TRY_ENTER, TRY_LEAVE, TryCatch #8 {all -> 0x0351, blocks: (B:5:0x0023, B:83:0x0192, B:124:0x02d4), top: B:198:0x0023 }] */
-    /* JADX WARN: Code duplicated, block: B:127:0x02f0 A[Catch: all -> 0x036c, TRY_ENTER, TRY_LEAVE, TryCatch #6 {all -> 0x036c, blocks: (B:3:0x000f, B:86:0x019a, B:127:0x02f0), top: B:197:0x000f }] */
-    /* JADX WARN: Code duplicated, block: B:130:0x02f9  */
-    /* JADX WARN: Code duplicated, block: B:132:0x0305  */
-    /* JADX WARN: Code duplicated, block: B:134:0x0316 A[Catch: all -> 0x0331, LOOP:3: B:105:0x0253->B:134:0x0316, LOOP_END, TRY_LEAVE, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
-    /* JADX WARN: Code duplicated, block: B:136:0x0322 A[LOOP:0: B:21:0x00a8->B:136:0x0322, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:160:0x0355 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:177:0x0370 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:179:0x0375  */
-    /* JADX WARN: Code duplicated, block: B:188:0x038c A[REMOVE] */
-    /* JADX WARN: Code duplicated, block: B:190:0x0372 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:208:0x0357 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:211:0x018b A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:221:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:223:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:81:0x018d A[Catch: all -> 0x033d, TRY_ENTER, TRY_LEAVE, TryCatch #15 {all -> 0x033d, blocks: (B:6:0x0029, B:81:0x018d, B:122:0x02cf), top: B:210:0x0029 }] */
-    /* JADX WARN: Code duplicated, block: B:83:0x0192 A[Catch: all -> 0x0351, TRY_ENTER, TRY_LEAVE, TryCatch #8 {all -> 0x0351, blocks: (B:5:0x0023, B:83:0x0192, B:124:0x02d4), top: B:198:0x0023 }] */
-    /* JADX WARN: Code duplicated, block: B:86:0x019a A[Catch: all -> 0x036c, TRY_ENTER, TRY_LEAVE, TryCatch #6 {all -> 0x036c, blocks: (B:3:0x000f, B:86:0x019a, B:127:0x02f0), top: B:197:0x000f }] */
-    /* JADX WARN: Code duplicated, block: B:89:0x01a3  */
-    /* JADX WARN: Code duplicated, block: B:90:0x01af A[ORIG_RETURN, RETURN] */
-    /* JADX WARN: Code duplicated, block: B:92:0x01b1 A[Catch: all -> 0x0331, TRY_ENTER, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
-    /* JADX WARN: Code duplicated, block: B:94:0x01ef A[Catch: all -> 0x0331, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
-    /* JADX WARN: Code duplicated, block: B:98:0x022f A[Catch: all -> 0x0331, LOOP:1: B:95:0x01fb->B:98:0x022f, LOOP_END, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
-    /* JADX WARN: Code duplicated, block: B:99:0x023e  */
+    /* WARN: Bottom block not found for handler: all -> 0x0377 */
+    /* WARN: Code duplicated, block: B:104:0x024b A[Catch: all -> 0x0331, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
+    /* WARN: Code duplicated, block: B:113:0x026e A[Catch: all -> 0x0331, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
+    /* WARN: Code duplicated, block: B:116:0x02a8 A[Catch: all -> 0x0331, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
+    /* WARN: Code duplicated, block: B:120:0x02b3 A[Catch: all -> 0x0331, LOOP:2: B:117:0x02ac->B:120:0x02b3, LOOP_END, TRY_LEAVE, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
+    /* WARN: Code duplicated, block: B:124:0x02d4 A[Catch: all -> 0x0351, TRY_ENTER, TRY_LEAVE, TryCatch #8 {all -> 0x0351, blocks: (B:5:0x0023, B:83:0x0192, B:124:0x02d4), top: B:198:0x0023 }] */
+    /* WARN: Code duplicated, block: B:127:0x02f0 A[Catch: all -> 0x036c, TRY_ENTER, TRY_LEAVE, TryCatch #6 {all -> 0x036c, blocks: (B:3:0x000f, B:86:0x019a, B:127:0x02f0), top: B:197:0x000f }] */
+    /* WARN: Code duplicated, block: B:130:0x02f9  */
+    /* WARN: Code duplicated, block: B:132:0x0305  */
+    /* WARN: Code duplicated, block: B:134:0x0316 A[Catch: all -> 0x0331, LOOP:3: B:105:0x0253->B:134:0x0316, LOOP_END, TRY_LEAVE, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
+    /* WARN: Code duplicated, block: B:136:0x0322 A[LOOP:0: B:21:0x00a8->B:136:0x0322, LOOP_END] */
+    /* WARN: Code duplicated, block: B:160:0x0355 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:177:0x0370 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:179:0x0375  */
+    /* WARN: Code duplicated, block: B:188:0x038c A[REMOVE] */
+    /* WARN: Code duplicated, block: B:190:0x0372 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:208:0x0357 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:211:0x018b A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:221:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:223:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:81:0x018d A[Catch: all -> 0x033d, TRY_ENTER, TRY_LEAVE, TryCatch #15 {all -> 0x033d, blocks: (B:6:0x0029, B:81:0x018d, B:122:0x02cf), top: B:210:0x0029 }] */
+    /* WARN: Code duplicated, block: B:83:0x0192 A[Catch: all -> 0x0351, TRY_ENTER, TRY_LEAVE, TryCatch #8 {all -> 0x0351, blocks: (B:5:0x0023, B:83:0x0192, B:124:0x02d4), top: B:198:0x0023 }] */
+    /* WARN: Code duplicated, block: B:86:0x019a A[Catch: all -> 0x036c, TRY_ENTER, TRY_LEAVE, TryCatch #6 {all -> 0x036c, blocks: (B:3:0x000f, B:86:0x019a, B:127:0x02f0), top: B:197:0x000f }] */
+    /* WARN: Code duplicated, block: B:89:0x01a3  */
+    /* WARN: Code duplicated, block: B:90:0x01af A[ORIG_RETURN, RETURN] */
+    /* WARN: Code duplicated, block: B:92:0x01b1 A[Catch: all -> 0x0331, TRY_ENTER, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
+    /* WARN: Code duplicated, block: B:94:0x01ef A[Catch: all -> 0x0331, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
+    /* WARN: Code duplicated, block: B:98:0x022f A[Catch: all -> 0x0331, LOOP:1: B:95:0x01fb->B:98:0x022f, LOOP_END, TryCatch #7 {all -> 0x0331, blocks: (B:78:0x0185, B:92:0x01b1, B:94:0x01ef, B:95:0x01fb, B:97:0x0201, B:100:0x023f, B:102:0x0245, B:111:0x0266, B:113:0x026e, B:114:0x0271, B:116:0x02a8, B:117:0x02ac, B:120:0x02b3, B:104:0x024b, B:105:0x0253, B:107:0x0259, B:108:0x025d, B:110:0x0263, B:133:0x0306, B:134:0x0316, B:98:0x022f, B:47:0x011d, B:56:0x014f, B:76:0x017d, B:57:0x0153, B:70:0x016c, B:72:0x0170), top: B:199:0x0185 }] */
+    /* WARN: Code duplicated, block: B:99:0x023e  */
     @Override // org.eclipse.jgit.api.GitCommand, java.util.concurrent.Callable
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -165,11 +165,11 @@ public class StashCreateCommand extends GitCommand<RevCommit> {
         throw new UnsupportedOperationException("Method not decompiled: org.eclipse.jgit.api.StashCreateCommand.call():org.eclipse.jgit.revwalk.RevCommit");
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.api.StashCreateCommand$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.api.StashCreateCommand$1, reason: invalid class name */
     class AnonymousClass1 extends DirCacheEditor.PathEdit {
         private final /* synthetic */ DirCacheEntry val$entry;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(DirCacheEntry dirCacheEntry, DirCacheEntry dirCacheEntry2) {
             super(dirCacheEntry);
             this.val$entry = dirCacheEntry2;

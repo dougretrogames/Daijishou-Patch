@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class LinearSystem {
     public static long ARRAY_ROW_CREATION = 0;
     public static final boolean DEBUG = false;
@@ -431,7 +431,7 @@ public class LinearSystem {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:41:0x009c  */
+    /* WARN: Code duplicated, block: B:41:0x009c  */
     public void addConstraint(ArrayRow arrayRow) {
         SolverVariable solverVariablePickPivot;
         if (arrayRow == null) {

@@ -2,7 +2,7 @@ package org.apache.http.conn.util;
 
 import org.apache.http.message.TokenParser;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DnsUtils {
     private static boolean isUpper(char c) {
         return c >= 'A' && c <= 'Z';

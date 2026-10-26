@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import androidx.core.os.EnvironmentCompat;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UserAgent {
     private static volatile String userAgent = computeUserAgent();
 

@@ -14,8 +14,8 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: SplashScreenActivity.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: SplashScreenActivity.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$2$nextUpgrade$5", f = "SplashScreenActivity.kt", i = {}, l = {192}, m = "invokeSuspendImpl", n = {}, s = {})
 final class SplashScreenActivity$onCreate$1$2$nextUpgrade$5 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -26,7 +26,7 @@ final class SplashScreenActivity$onCreate$1$2$nextUpgrade$5 extends com.magnetic
     int label;
     final /* synthetic */ SplashScreenActivity this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     SplashScreenActivity$onCreate$1$2$nextUpgrade$5(Ref.IntRef intRef, int i, SplashScreenActivity splashScreenActivity, SplashScreenActivity splashScreenActivity2, TextView textView, Continuation<?> continuation) {
         super(2, continuation);
         this.$index = intRef;
@@ -50,8 +50,8 @@ final class SplashScreenActivity$onCreate$1$2$nextUpgrade$5 extends com.magnetic
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$2$nextUpgrade$5$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SplashScreenActivity.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$2$nextUpgrade$5$1, reason: invalid class name */
+    /* INFO: compiled from: SplashScreenActivity.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.activities.SplashScreenActivity$onCreate$1$2$nextUpgrade$5$1", f = "SplashScreenActivity.kt", i = {}, l = {193}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -62,7 +62,7 @@ final class SplashScreenActivity$onCreate$1$2$nextUpgrade$5 extends com.magnetic
         int label;
         final /* synthetic */ SplashScreenActivity this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(Ref.IntRef intRef, int i, SplashScreenActivity splashScreenActivity, SplashScreenActivity splashScreenActivity2, TextView textView, Continuation<?> continuation) {
             super(2, continuation);
             this.$index = intRef;

@@ -5,7 +5,7 @@ import java.net.HttpURLConnection;
 import java.net.Proxy;
 import java.net.URL;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DefaultConnectionFactory implements ConnectionFactory {
     private final Proxy proxy;
 

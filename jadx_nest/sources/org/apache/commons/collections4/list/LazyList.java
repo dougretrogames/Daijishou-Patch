@@ -5,7 +5,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.Factory;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LazyList<E> extends AbstractSerializableListDecorator<E> {
     private static final long serialVersionUID = -3677737457567429713L;
     private final Factory<? extends E> factory;

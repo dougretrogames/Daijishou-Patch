@@ -3,7 +3,7 @@ package org.commonmark.internal;
 import org.commonmark.parser.block.BlockParser;
 import org.commonmark.parser.block.BlockStart;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BlockStartImpl extends BlockStart {
     private final BlockParser[] blockParsers;
     private int newIndex = -1;

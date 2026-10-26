@@ -1,6 +1,6 @@
 package io.grpc;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class InsecureChannelCredentials extends ChannelCredentials {
     @Override // io.grpc.ChannelCredentials
     public ChannelCredentials withoutBearerTokens() {

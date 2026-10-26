@@ -13,7 +13,7 @@ import androidx.dynamicanimation.animation.SpringForce;
 import androidx.vectordrawable.graphics.drawable.Animatable2Compat;
 import com.google.android.material.progressindicator.BaseProgressIndicatorSpec;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class DeterminateDrawable<S extends BaseProgressIndicatorSpec> extends DrawableWithAnimatedVisibilityChange {
     static final float GAP_RAMP_DOWN_THRESHOLD = 0.01f;
     private static final FloatPropertyCompat<DeterminateDrawable<?>> INDICATOR_LENGTH_IN_LEVEL = new AnonymousClass1("indicatorLevel");
@@ -210,12 +210,12 @@ public final class DeterminateDrawable<S extends BaseProgressIndicatorSpec> exte
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public float getIndicatorFraction() {
         return this.activeIndicator.endFraction;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void setIndicatorFraction(float f) {
         this.activeIndicator.endFraction = f;
         invalidateSelf();
@@ -229,7 +229,7 @@ public final class DeterminateDrawable<S extends BaseProgressIndicatorSpec> exte
         this.drawingDelegate = drawingDelegate;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.progressindicator.DeterminateDrawable$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.progressindicator.DeterminateDrawable$1, reason: invalid class name */
     class AnonymousClass1 extends FloatPropertyCompat<DeterminateDrawable<?>> {
         AnonymousClass1(String str) {
             super(str);

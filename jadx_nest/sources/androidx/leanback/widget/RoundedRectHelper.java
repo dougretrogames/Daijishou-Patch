@@ -2,7 +2,7 @@ package androidx.leanback.widget;
 
 import android.view.View;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class RoundedRectHelper {
     static boolean supportsRoundedCorner() {
         return true;

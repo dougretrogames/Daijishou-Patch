@@ -10,7 +10,7 @@ import net.lingala.zip4j.model.ZipModel;
 import net.lingala.zip4j.util.InternalZipConstants;
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HeaderUtil {
     public static FileHeader getFileHeader(ZipModel zipModel, String str) throws ZipException {
         FileHeader fileHeaderWithExactMatch = getFileHeaderWithExactMatch(zipModel, str);

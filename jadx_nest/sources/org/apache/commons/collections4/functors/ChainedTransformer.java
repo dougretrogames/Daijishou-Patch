@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Objects;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ChainedTransformer<T> implements Transformer<T, T>, Serializable {
     private static final Transformer[] EMPTY_TRANSFORMER_ARRAY = new Transformer[0];
     private static final long serialVersionUID = 3514945074733160196L;

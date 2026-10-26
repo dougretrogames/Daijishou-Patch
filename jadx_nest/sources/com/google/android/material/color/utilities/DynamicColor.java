@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.function.Function;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class DynamicColor {
     public final Function<DynamicScheme, DynamicColor> background;
     public final ContrastCurve contrastCurve;
@@ -205,8 +205,8 @@ public final class DynamicColor {
         return d;
     }
 
-    /* JADX WARN: Code duplicated, block: B:23:0x0044 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:24:0x0045 A[RETURN] */
+    /* WARN: Code duplicated, block: B:23:0x0044 A[RETURN] */
+    /* WARN: Code duplicated, block: B:24:0x0045 A[RETURN] */
     public static double foregroundTone(double d, double d2) {
         double dLighterUnsafe = Contrast.lighterUnsafe(d, d2);
         double dDarkerUnsafe = Contrast.darkerUnsafe(d, d2);

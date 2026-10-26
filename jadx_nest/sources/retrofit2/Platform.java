@@ -3,7 +3,7 @@ package retrofit2;
 import java.util.concurrent.Executor;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 final class Platform {
     static final BuiltInFactories builtInFactories;
 

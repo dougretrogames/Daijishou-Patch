@@ -13,7 +13,7 @@ import org.apache.http.message.BasicRequestLine;
 import org.apache.http.params.HttpProtocolParams;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class RequestWrapper extends AbstractHttpMessage implements HttpUriRequest {
     private int execCount;

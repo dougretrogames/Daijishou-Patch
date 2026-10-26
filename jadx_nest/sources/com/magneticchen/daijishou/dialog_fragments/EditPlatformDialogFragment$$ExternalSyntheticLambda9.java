@@ -5,8 +5,8 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import com.google.android.material.switchmaterial.SwitchMaterial;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class EditPlatformDialogFragment$$ExternalSyntheticLambda9 implements CompoundButton.OnCheckedChangeListener {
     public final /* synthetic */ SwitchMaterial f$0;
     public final /* synthetic */ AutoCompleteTextView f$1;

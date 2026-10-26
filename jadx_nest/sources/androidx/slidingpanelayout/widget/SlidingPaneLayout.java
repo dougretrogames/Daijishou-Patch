@@ -41,7 +41,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class SlidingPaneLayout extends ViewGroup implements Openable {
     private static final String ACCESSIBILITY_CLASS_NAME = "androidx.slidingpanelayout.widget.SlidingPaneLayout";
     public static final int LOCK_MODE_LOCKED = 3;
@@ -113,7 +113,7 @@ public class SlidingPaneLayout extends ViewGroup implements Openable {
         return this.mLockMode;
     }
 
-    /* JADX INFO: renamed from: androidx.slidingpanelayout.widget.SlidingPaneLayout$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.slidingpanelayout.widget.SlidingPaneLayout$1, reason: invalid class name */
     class AnonymousClass1 implements FoldingFeatureObserver.OnFoldingFeatureChangeListener {
         AnonymousClass1() {
         }
@@ -490,9 +490,9 @@ public class SlidingPaneLayout extends ViewGroup implements Openable {
         return View.MeasureSpec.makeMeasureSpec(view.getMeasuredHeight(), 1073741824);
     }
 
-    /* JADX WARN: Code duplicated, block: B:42:0x00a9  */
-    /* JADX WARN: Code duplicated, block: B:43:0x00af  */
-    /* JADX WARN: Code duplicated, block: B:51:0x00da  */
+    /* WARN: Code duplicated, block: B:42:0x00a9  */
+    /* WARN: Code duplicated, block: B:43:0x00af  */
+    /* WARN: Code duplicated, block: B:51:0x00da  */
     @Override // android.view.ViewGroup, android.view.View
     protected void onLayout(boolean z, int i, int i2, int i3, int i4) {
         int i5;
@@ -1148,12 +1148,12 @@ public class SlidingPaneLayout extends ViewGroup implements Openable {
             parcel.writeInt(this.mLockMode);
         }
 
-        /* JADX INFO: renamed from: androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.slidingpanelayout.widget.SlidingPaneLayout$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, null);

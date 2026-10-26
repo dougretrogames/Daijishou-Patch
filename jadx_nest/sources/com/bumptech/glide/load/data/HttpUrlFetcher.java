@@ -16,7 +16,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class HttpUrlFetcher implements DataFetcher<InputStream> {
     static final HttpUrlConnectionFactory DEFAULT_CONNECTION_FACTORY = new DefaultHttpUrlConnectionFactory();
     static final int INVALID_STATUS_CODE = -1;

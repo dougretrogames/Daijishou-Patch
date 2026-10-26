@@ -14,7 +14,7 @@ import java.util.SortedSet;
 import java.util.stream.Collector;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ImmutableSet<E> extends ImmutableCollection<E> implements Set<E> {
     private static final int CUTOFF = 751619276;
@@ -26,7 +26,7 @@ public abstract class ImmutableSet<E> extends ImmutableCollection<E> implements 
     @LazyInit
     private transient ImmutableList<E> asList;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static boolean shouldTrim(int actualUnique, int expectedUnique) {
         return actualUnique < (expectedUnique >> 1) + (expectedUnique >> 2);
     }
@@ -81,7 +81,7 @@ public abstract class ImmutableSet<E> extends ImmutableCollection<E> implements 
         return construct(length, objArr);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <E> ImmutableSet<E> construct(int n, Object... elements) {
         if (n == 0) {
             return of();
@@ -329,7 +329,7 @@ public abstract class ImmutableSet<E> extends ImmutableCollection<E> implements 
             return this;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         Builder<E> combine(Builder<E> other) {
             if (this.hashTable != null) {
                 for (int i = 0; i < other.size; i++) {

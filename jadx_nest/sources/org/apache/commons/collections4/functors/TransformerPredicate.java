@@ -6,7 +6,7 @@ import org.apache.commons.collections4.FunctorException;
 import org.apache.commons.collections4.Predicate;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class TransformerPredicate<T> extends AbstractPredicate<T> implements Serializable {
     private static final long serialVersionUID = -2407966402920578741L;
     private final Transformer<? super T, Boolean> iTransformer;

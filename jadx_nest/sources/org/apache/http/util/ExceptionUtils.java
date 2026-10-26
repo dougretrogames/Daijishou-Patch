@@ -2,7 +2,7 @@ package org.apache.http.util;
 
 import java.lang.reflect.Method;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public final class ExceptionUtils {
     private static final Method INIT_CAUSE_METHOD = getInitCauseMethod();

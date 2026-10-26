@@ -4,8 +4,8 @@ import java.io.IOException;
 import java.nio.file.Path;
 import org.apache.commons.io.function.IOBiFunction;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class SimplePathVisitor$$ExternalSyntheticLambda1 implements IOBiFunction {
     public final /* synthetic */ SimplePathVisitor f$0;
 

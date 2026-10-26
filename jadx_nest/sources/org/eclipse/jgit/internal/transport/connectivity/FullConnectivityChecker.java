@@ -19,7 +19,7 @@ import org.eclipse.jgit.revwalk.RevTree;
 import org.eclipse.jgit.transport.ConnectivityChecker;
 import org.eclipse.jgit.transport.ReceiveCommand;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class FullConnectivityChecker implements ConnectivityChecker {
     @Override // org.eclipse.jgit.transport.ConnectivityChecker
     public void checkConnectivity(ConnectivityChecker.ConnectivityCheckInfo connectivityCheckInfo, Set<ObjectId> set, ProgressMonitor progressMonitor) throws IOException {

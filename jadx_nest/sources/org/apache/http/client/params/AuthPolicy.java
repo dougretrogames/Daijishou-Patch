@@ -1,6 +1,6 @@
 package org.apache.http.client.params;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public final class AuthPolicy {
     public static final String BASIC = "Basic";

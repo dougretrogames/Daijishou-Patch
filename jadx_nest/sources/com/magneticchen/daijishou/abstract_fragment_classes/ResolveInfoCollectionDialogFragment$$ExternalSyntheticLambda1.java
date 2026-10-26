@@ -2,8 +2,8 @@ package com.magneticchen.daijishou.abstract_fragment_classes;
 
 import android.view.View;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class ResolveInfoCollectionDialogFragment$$ExternalSyntheticLambda1 implements View.OnClickListener {
     public final /* synthetic */ ResolveInfoCollectionDialogFragment f$0;
 

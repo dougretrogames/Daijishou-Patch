@@ -7,7 +7,7 @@ import java.util.zip.DataFormatException;
 import java.util.zip.Inflater;
 import org.eclipse.jgit.internal.storage.pack.PackOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class DfsBlock {
     private final byte[] block;
     final long end;

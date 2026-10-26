@@ -10,7 +10,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class WidgetGroup {
     private static final boolean DEBUG = false;
     static int sCount;

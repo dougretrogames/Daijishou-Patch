@@ -53,7 +53,7 @@ import org.eclipse.jgit.util.io.LimitedInputStream;
 import org.eclipse.jgit.util.io.TimeoutInputStream;
 import org.eclipse.jgit.util.io.TimeoutOutputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReceivePack {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$transport$ReceiveCommand$Result;
     private StringBuilder advertiseError;
@@ -161,7 +161,7 @@ public class ReceivePack {
         return iArr2;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.ReceivePack$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.ReceivePack$1, reason: invalid class name */
     class AnonymousClass1 implements ReceiveCommandErrorHandler {
         AnonymousClass1() {
         }
@@ -193,7 +193,7 @@ public class ReceivePack {
         this.postReceive = PostReceiveHook.NULL;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class ReceiveConfig {
         final boolean allowCreates = true;
         final boolean allowDeletes;
@@ -858,7 +858,7 @@ public class ReceivePack {
         return this.maxPackSizeLimit >= 0 ? new AnonymousClass2(inputStream, this.maxPackSizeLimit) : inputStream;
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.ReceivePack$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.ReceivePack$2, reason: invalid class name */
     class AnonymousClass2 extends LimitedInputStream {
         AnonymousClass2(InputStream inputStream, long j) {
             super(inputStream, j);
@@ -886,15 +886,15 @@ public class ReceivePack {
         }
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     private void checkConnectivity() throws IOException {
         NullProgressMonitor nullProgressMonitor = NullProgressMonitor.INSTANCE;
@@ -1039,7 +1039,7 @@ public class ReceivePack {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.ReceivePack$3, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.ReceivePack$3, reason: invalid class name */
     class AnonymousClass3 extends Reporter {
         AnonymousClass3() {
         }
@@ -1054,7 +1054,7 @@ public class ReceivePack {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void sendStatusReport(Throwable th) throws IOException {
         AnonymousClass3 anonymousClass3 = new AnonymousClass3();
         try {

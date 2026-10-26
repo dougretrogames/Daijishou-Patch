@@ -2,7 +2,7 @@ package org.slf4j.event;
 
 import org.slf4j.Marker;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface LoggingEvent {
     Object[] getArgumentArray();
 

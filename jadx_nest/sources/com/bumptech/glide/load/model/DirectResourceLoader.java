@@ -14,7 +14,7 @@ import com.bumptech.glide.signature.ObjectKey;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class DirectResourceLoader<DataT> implements ModelLoader<Integer, DataT> {
     private final Context context;
     private final ResourceOpener<DataT> resourceOpener;
@@ -72,7 +72,7 @@ public final class DirectResourceLoader<DataT> implements ModelLoader<Integer, D
             this.context = context;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.bumptech.glide.load.model.DirectResourceLoader.ResourceOpener
         public AssetFileDescriptor open(Resources.Theme theme, Resources resources, int i) {
             return resources.openRawResourceFd(i);
@@ -110,7 +110,7 @@ public final class DirectResourceLoader<DataT> implements ModelLoader<Integer, D
             return new DirectResourceLoader(this.context, this);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.bumptech.glide.load.model.DirectResourceLoader.ResourceOpener
         public InputStream open(Resources.Theme theme, Resources resources, int i) {
             return resources.openRawResource(i);
@@ -142,7 +142,7 @@ public final class DirectResourceLoader<DataT> implements ModelLoader<Integer, D
             this.context = context;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.bumptech.glide.load.model.DirectResourceLoader.ResourceOpener
         public Drawable open(Resources.Theme theme, Resources resources, int i) {
             return DrawableDecoderCompat.getDrawable(this.context, i, theme);
@@ -177,7 +177,7 @@ public final class DirectResourceLoader<DataT> implements ModelLoader<Integer, D
             this.resourceId = i;
         }
 
-        /* JADX WARN: Type inference failed for: r4v3, types: [DataT, java.lang.Object] */
+        /* WARN: Type inference failed for: r4v3, types: [DataT, java.lang.Object] */
         @Override // com.bumptech.glide.load.data.DataFetcher
         public void loadData(Priority priority, DataFetcher.DataCallback<? super DataT> dataCallback) {
             try {

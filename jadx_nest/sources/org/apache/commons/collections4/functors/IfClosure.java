@@ -5,7 +5,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.Closure;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IfClosure<T> implements Closure<T>, Serializable {
     private static final long serialVersionUID = 3518477308466486130L;
     private final Closure<? super T> iFalseClosure;

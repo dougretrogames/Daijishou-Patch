@@ -7,7 +7,7 @@ import org.eclipse.jgit.lib.RefUpdate;
 import org.eclipse.jgit.lib.ReflogEntry;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class RefDirectoryUpdate extends RefUpdate {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$lib$RefUpdate$Result;
     private final RefDirectory database;
@@ -80,7 +80,7 @@ class RefDirectoryUpdate extends RefUpdate {
         this.database = refDirectory;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.eclipse.jgit.lib.RefUpdate
     public RefDirectory getRefDatabase() {
         return this.database;

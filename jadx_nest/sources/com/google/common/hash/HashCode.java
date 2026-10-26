@@ -7,7 +7,7 @@ import com.google.common.primitives.UnsignedInts;
 import java.io.Serializable;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class HashCode {
     private static final char[] hexDigits = "0123456789abcdef".toCharArray();

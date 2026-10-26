@@ -12,8 +12,8 @@ import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialCreationO
 import com.google.android.gms.fido.fido2.api.common.PublicKeyCredentialRequestOptions;
 import com.google.android.gms.tasks.Task;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public class Fido2ApiClient extends GoogleApi<Api.ApiOptions.NoOptions> {
     private static final Api.ClientKey zza;
     private static final Api zzb;

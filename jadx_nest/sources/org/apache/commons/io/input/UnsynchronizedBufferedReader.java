@@ -3,7 +3,7 @@ package org.apache.commons.io.input;
 import java.io.IOException;
 import java.io.Reader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UnsynchronizedBufferedReader extends UnsynchronizedReader {
     private static final char NUL = 0;
     private char[] buf;
@@ -53,8 +53,8 @@ public class UnsynchronizedBufferedReader extends UnsynchronizedReader {
         super.close();
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x0025 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:16:0x0027  */
+    /* WARN: Code duplicated, block: B:15:0x0025 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:16:0x0027  */
     private int fillBuf() throws IOException {
         int i = this.mark;
         if (i != -1) {

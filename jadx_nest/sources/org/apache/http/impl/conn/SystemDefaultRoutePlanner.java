@@ -12,7 +12,7 @@ import org.apache.http.HttpRequest;
 import org.apache.http.conn.SchemePortResolver;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SystemDefaultRoutePlanner extends DefaultRoutePlanner {
     private final ProxySelector proxySelector;
 
@@ -66,7 +66,7 @@ public class SystemDefaultRoutePlanner extends DefaultRoutePlanner {
         return proxy == null ? Proxy.NO_PROXY : proxy;
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.conn.SystemDefaultRoutePlanner$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.conn.SystemDefaultRoutePlanner$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$java$net$Proxy$Type;
 

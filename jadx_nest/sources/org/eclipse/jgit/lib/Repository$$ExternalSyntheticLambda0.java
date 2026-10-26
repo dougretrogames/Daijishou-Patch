@@ -3,8 +3,8 @@ package org.eclipse.jgit.lib;
 import org.eclipse.jgit.events.IndexChangedEvent;
 import org.eclipse.jgit.events.IndexChangedListener;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class Repository$$ExternalSyntheticLambda0 implements IndexChangedListener {
     public final /* synthetic */ Repository f$0;
 

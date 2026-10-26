@@ -10,7 +10,7 @@ import androidx.webkit.internal.WebViewGlueCommunicator;
 import java.io.FileNotFoundException;
 import org.chromium.support_lib_boundary.DropDataContentProviderBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class DropDataContentProvider extends ContentProvider {
     DropDataContentProviderBoundaryInterface mImpl;
 

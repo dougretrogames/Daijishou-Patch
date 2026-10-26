@@ -5,7 +5,7 @@ import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.ViewConfiguration;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DifferentialMotionFlingController {
     private final Context mContext;
     private final int[] mFlingVelocityThresholds;
@@ -80,7 +80,7 @@ public class DifferentialMotionFlingController {
         return true;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void calculateFlingVelocityThresholds(Context context, int[] iArr, MotionEvent motionEvent, int i) {
         ViewConfiguration viewConfiguration = ViewConfiguration.get(context);
         iArr[0] = ViewConfigurationCompat.getScaledMinimumFlingVelocity(context, viewConfiguration, motionEvent.getDeviceId(), i, motionEvent.getSource());
@@ -94,7 +94,7 @@ public class DifferentialMotionFlingController {
         return this.mVelocityProvider.getCurrentVelocity(this.mVelocityTracker, motionEvent, i);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static float getCurrentVelocity(VelocityTracker velocityTracker, MotionEvent motionEvent, int i) {
         VelocityTrackerCompat.addMovement(velocityTracker, motionEvent);
         VelocityTrackerCompat.computeCurrentVelocity(velocityTracker, 1000);

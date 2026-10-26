@@ -34,7 +34,7 @@ import java.util.List;
 import java.util.Map;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MediaBrowserCompat {
     public static final String CUSTOM_ACTION_DOWNLOAD = "android.support.v4.media.action.DOWNLOAD";
     public static final String CUSTOM_ACTION_REMOVE_DOWNLOADED_FILE = "android.support.v4.media.action.REMOVE_DOWNLOADED_FILE";
@@ -263,18 +263,18 @@ public final class MediaBrowserCompat {
             return sb.toString();
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaItem$1, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaItem$1, reason: invalid class name */
         static class AnonymousClass1 implements Parcelable.Creator<MediaItem> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public MediaItem createFromParcel(Parcel parcel) {
                 return new MediaItem(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public MediaItem[] newArray(int i) {
                 return new MediaItem[i];
@@ -524,7 +524,7 @@ public final class MediaBrowserCompat {
             this.mHandler.post(new AnonymousClass1());
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$1, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             AnonymousClass1() {
             }
@@ -565,7 +565,7 @@ public final class MediaBrowserCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$2, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$2, reason: invalid class name */
         class AnonymousClass2 implements Runnable {
             AnonymousClass2() {
             }
@@ -719,7 +719,7 @@ public final class MediaBrowserCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$3, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$3, reason: invalid class name */
         class AnonymousClass3 implements Runnable {
             final /* synthetic */ ItemCallback val$cb;
             final /* synthetic */ String val$mediaId;
@@ -735,7 +735,7 @@ public final class MediaBrowserCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$4, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$4, reason: invalid class name */
         class AnonymousClass4 implements Runnable {
             final /* synthetic */ ItemCallback val$cb;
             final /* synthetic */ String val$mediaId;
@@ -764,7 +764,7 @@ public final class MediaBrowserCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$5, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$5, reason: invalid class name */
         class AnonymousClass5 implements Runnable {
             final /* synthetic */ SearchCallback val$callback;
             final /* synthetic */ Bundle val$extras;
@@ -797,7 +797,7 @@ public final class MediaBrowserCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$6, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$6, reason: invalid class name */
         class AnonymousClass6 implements Runnable {
             final /* synthetic */ String val$action;
             final /* synthetic */ CustomActionCallback val$callback;
@@ -951,7 +951,7 @@ public final class MediaBrowserCompat {
             MediaServiceConnection() {
             }
 
-            /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection$1, reason: invalid class name */
+            /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection$1, reason: invalid class name */
             class AnonymousClass1 implements Runnable {
                 final /* synthetic */ IBinder val$binder;
                 final /* synthetic */ ComponentName val$name;
@@ -994,7 +994,7 @@ public final class MediaBrowserCompat {
                 postOrRun(new AnonymousClass1(componentName, iBinder));
             }
 
-            /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection$2, reason: invalid class name */
+            /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplBase$MediaServiceConnection$2, reason: invalid class name */
             class AnonymousClass2 implements Runnable {
                 final /* synthetic */ ComponentName val$name;
 
@@ -1216,7 +1216,7 @@ public final class MediaBrowserCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$1, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             final /* synthetic */ ItemCallback val$cb;
             final /* synthetic */ String val$mediaId;
@@ -1232,7 +1232,7 @@ public final class MediaBrowserCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$2, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$2, reason: invalid class name */
         class AnonymousClass2 implements Runnable {
             final /* synthetic */ ItemCallback val$cb;
             final /* synthetic */ String val$mediaId;
@@ -1248,7 +1248,7 @@ public final class MediaBrowserCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$3, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$3, reason: invalid class name */
         class AnonymousClass3 implements Runnable {
             final /* synthetic */ ItemCallback val$cb;
             final /* synthetic */ String val$mediaId;
@@ -1282,7 +1282,7 @@ public final class MediaBrowserCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$4, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$4, reason: invalid class name */
         class AnonymousClass4 implements Runnable {
             final /* synthetic */ SearchCallback val$callback;
             final /* synthetic */ Bundle val$extras;
@@ -1300,7 +1300,7 @@ public final class MediaBrowserCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$5, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$5, reason: invalid class name */
         class AnonymousClass5 implements Runnable {
             final /* synthetic */ SearchCallback val$callback;
             final /* synthetic */ Bundle val$extras;
@@ -1339,7 +1339,7 @@ public final class MediaBrowserCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$6, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$6, reason: invalid class name */
         class AnonymousClass6 implements Runnable {
             final /* synthetic */ String val$action;
             final /* synthetic */ CustomActionCallback val$callback;
@@ -1357,7 +1357,7 @@ public final class MediaBrowserCompat {
             }
         }
 
-        /* JADX INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$7, reason: invalid class name */
+        /* INFO: renamed from: android.support.v4.media.MediaBrowserCompat$MediaBrowserImplApi21$7, reason: invalid class name */
         class AnonymousClass7 implements Runnable {
             final /* synthetic */ String val$action;
             final /* synthetic */ CustomActionCallback val$callback;

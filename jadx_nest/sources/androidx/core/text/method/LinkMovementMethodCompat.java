@@ -2,14 +2,14 @@ package androidx.core.text.method;
 
 import android.text.method.LinkMovementMethod;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class LinkMovementMethodCompat extends LinkMovementMethod {
     private static LinkMovementMethodCompat sInstance;
 
     private LinkMovementMethodCompat() {
     }
 
-    /* JADX WARN: Code restructure failed: missing block: B:15:0x004d, code lost:
+    /* WARN: Code restructure failed: missing block: B:15:0x004d, code lost:
     
         if (r0 <= r2.getLineRight(r1)) goto L18;
      */

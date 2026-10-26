@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.SortedMap;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PredicatedSortedMap<K, V> extends PredicatedMap<K, V> implements SortedMap<K, V> {
     private static final long serialVersionUID = 3359846175935304332L;
 

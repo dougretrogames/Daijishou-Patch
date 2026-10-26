@@ -1,6 +1,6 @@
 package org.commonmark.internal.renderer.text;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class ListHolder {
     private static final String INDENT_DEFAULT = "   ";
     private static final String INDENT_EMPTY = "";

@@ -44,7 +44,7 @@ import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.AtomicLongArray;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Gson {
     static final boolean DEFAULT_COMPLEX_MAP_KEYS = false;
     static final String DEFAULT_DATE_PATTERN = null;
@@ -194,7 +194,7 @@ public final class Gson {
         return new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: com.google.gson.Gson$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.Gson$1, reason: invalid class name */
     class AnonymousClass1 extends TypeAdapter<Number> {
         AnonymousClass1() {
         }
@@ -227,7 +227,7 @@ public final class Gson {
         return new AnonymousClass2();
     }
 
-    /* JADX INFO: renamed from: com.google.gson.Gson$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.Gson$2, reason: invalid class name */
     class AnonymousClass2 extends TypeAdapter<Number> {
         AnonymousClass2() {
         }
@@ -269,12 +269,12 @@ public final class Gson {
         return new AnonymousClass3();
     }
 
-    /* JADX INFO: renamed from: com.google.gson.Gson$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.Gson$3, reason: invalid class name */
     class AnonymousClass3 extends TypeAdapter<Number> {
         AnonymousClass3() {
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // com.google.gson.TypeAdapter
         public Number read(JsonReader jsonReader) throws IOException {
             if (jsonReader.peek() == JsonToken.NULL) {
@@ -294,7 +294,7 @@ public final class Gson {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.gson.Gson$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.Gson$4, reason: invalid class name */
     class AnonymousClass4 extends TypeAdapter<AtomicLong> {
         final /* synthetic */ TypeAdapter val$longAdapter;
 
@@ -317,7 +317,7 @@ public final class Gson {
         return new AnonymousClass4(typeAdapter).nullSafe();
     }
 
-    /* JADX INFO: renamed from: com.google.gson.Gson$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.gson.Gson$5, reason: invalid class name */
     class AnonymousClass5 extends TypeAdapter<AtomicLongArray> {
         final /* synthetic */ TypeAdapter val$longAdapter;
 

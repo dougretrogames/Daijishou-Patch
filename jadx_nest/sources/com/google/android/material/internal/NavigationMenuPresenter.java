@@ -28,7 +28,7 @@ import androidx.recyclerview.widget.RecyclerViewAccessibilityDelegate;
 import com.google.android.material.R;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class NavigationMenuPresenter implements MenuPresenter {
     public static final int NO_TEXT_APPEARANCE_SET = 0;
     private static final String STATE_ADAPTER = "android:menu:adapter";
@@ -42,7 +42,7 @@ public class NavigationMenuPresenter implements MenuPresenter {
     LinearLayout headerLayout;
     ColorStateList iconTintList;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     private int f31id;
     Drawable itemBackground;
     RippleDrawable itemForeground;
@@ -436,7 +436,7 @@ public class NavigationMenuPresenter implements MenuPresenter {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.internal.NavigationMenuPresenter$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.internal.NavigationMenuPresenter$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         AnonymousClass1() {
         }
@@ -564,7 +564,7 @@ public class NavigationMenuPresenter implements MenuPresenter {
             ViewCompat.setAccessibilityDelegate(view, new AnonymousClass1(i, z));
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.internal.NavigationMenuPresenter$NavigationMenuAdapter$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.internal.NavigationMenuPresenter$NavigationMenuAdapter$1, reason: invalid class name */
         class AnonymousClass1 extends AccessibilityDelegateCompat {
             final /* synthetic */ boolean val$isHeader;
             final /* synthetic */ int val$position;
@@ -581,7 +581,7 @@ public class NavigationMenuPresenter implements MenuPresenter {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public int adjustItemPositionForA11yDelegate(int i) {
             int i2 = i;
             for (int i3 = 0; i3 < i; i3++) {

@@ -73,8 +73,8 @@ import kotlinx.serialization.json.Json;
 import kotlinx.serialization.json.JsonKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: compiled from: DaijishouApplication.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouApplication.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0086\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0014\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u001e\u0018\u00002\u00020\u00012\u00020\u0002:\u0002Â\u0001B\u0005¢\u0006\u0002\u0010\u0003J\t\u0010ª\u0001\u001a\u00020%H\u0002J\u0007\u0010«\u0001\u001a\u00020%J\t\u0010¬\u0001\u001a\u00020%H\u0016J\t\u0010\u00ad\u0001\u001a\u00020%H\u0016J\t\u0010®\u0001\u001a\u00020%H\u0016J\u0012\u0010¯\u0001\u001a\u00020%2\u0007\u0010°\u0001\u001a\u00020\tH\u0016J\u0012\u0010±\u0001\u001a\u00020%2\t\b\u0002\u0010²\u0001\u001a\u00020ZJ\u001b\u0010³\u0001\u001a\u00020%2\u0007\u0010´\u0001\u001a\u00020<2\t\b\u0002\u0010²\u0001\u001a\u00020ZJ\u001b\u0010µ\u0001\u001a\u00020<2\u0007\u0010¶\u0001\u001a\u00020<2\t\b\u0002\u0010·\u0001\u001a\u00020ZJ\u0012\u0010¸\u0001\u001a\u00020<2\u0007\u0010¹\u0001\u001a\u00020<H\u0002J\t\u0010º\u0001\u001a\u00020%H\u0002J\t\u0010»\u0001\u001a\u00020%H\u0002J\t\u0010¼\u0001\u001a\u00020%H\u0002J\u0007\u0010½\u0001\u001a\u00020%J\t\u0010¾\u0001\u001a\u00020%H\u0002J\u0007\u0010¿\u0001\u001a\u00020%J\u001b\u0010À\u0001\u001a\u00020%2\u0007\u0010¹\u0001\u001a\u00020<2\u0007\u0010Á\u0001\u001a\u00020<H\u0002R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010\b\u001a\u0004\u0018\u00010\tX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\nR\u001a\u0010\u000b\u001a\u00020\fX\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010R\u000e\u0010\u0011\u001a\u00020\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u0012\u0010\u0013\u001a\u0004\u0018\u00010\tX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\nR\u000e\u0010\u0014\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u0011\u0010\u0015\u001a\u00020\u0016¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u0011\u0010\u0019\u001a\u00020\u0016¢\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u0018R\u0011\u0010\u001b\u001a\u00020\u0016¢\u0006\b\n\u0000\u001a\u0004\b\u001c\u0010\u0018R\u0011\u0010\u001d\u001a\u00020\u0016¢\u0006\b\n\u0000\u001a\u0004\b\u001e\u0010\u0018R\u0011\u0010\u001f\u001a\u00020\u0016¢\u0006\b\n\u0000\u001a\u0004\b \u0010\u0018R\u000e\u0010!\u001a\u00020\"X\u0082.¢\u0006\u0002\n\u0000R\u001a\u0010#\u001a\u000e\u0012\u0004\u0012\u00020\t\u0012\u0004\u0012\u00020%0$X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010&\u001a\u00020\tX\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010'\u001a\u00020(X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b)\u0010*\"\u0004\b+\u0010,R\u0017\u0010-\u001a\b\u0012\u0004\u0012\u00020/0.¢\u0006\b\n\u0000\u001a\u0004\b0\u00101R\u001a\u00102\u001a\u000203X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b4\u00105\"\u0004\b6\u00107R\u0017\u00108\u001a\b\u0012\u0004\u0012\u0002090.¢\u0006\b\n\u0000\u001a\u0004\b:\u00101R\u001a\u0010;\u001a\u00020<X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b=\u0010>\"\u0004\b?\u0010@R\u001a\u0010A\u001a\u00020BX\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\bC\u0010D\"\u0004\bE\u0010FR\u001a\u0010G\u001a\u00020HX\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\bI\u0010J\"\u0004\bK\u0010LR\u001a\u0010M\u001a\u00020NX\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\bO\u0010P\"\u0004\bQ\u0010RR\u001a\u0010S\u001a\u00020TX\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\bU\u0010V\"\u0004\bW\u0010XR\u000e\u0010Y\u001a\u00020ZX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010[\u001a\u00020ZX\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\\\u001a\u00020]X\u0086.¢\u0006\u000e\n\u0000\u001a\u0004\b^\u0010_\"\u0004\b`\u0010aR\u001a\u0010b\u001a\u00020\tX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bc\u0010d\"\u0004\be\u0010fR\u001a\u0010g\u001a\u00020ZX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bh\u0010i\"\u0004\bj\u0010kR\u001a\u0010l\u001a\u00020ZX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\bl\u0010i\"\u0004\bm\u0010kR\u001b\u0010n\u001a\u00020Z8FX\u0086\u0084\u0002¢\u0006\f\n\u0004\bo\u0010p\u001a\u0004\bn\u0010iR\u000e\u0010q\u001a\u00020rX\u0082\u0004¢\u0006\u0002\n\u0000R\u0015\u0010s\u001a\u00060tR\u00020\u0000¢\u0006\b\n\u0000\u001a\u0004\bu\u0010vR\u001c\u0010w\u001a\u0004\u0018\u00010xX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\by\u0010z\"\u0004\b{\u0010|R\u000e\u0010}\u001a\u00020ZX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010~\u001a\u00020\u007fX\u0082.¢\u0006\u0002\n\u0000R\u001b\u0010\u0080\u0001\u001a\u000e\u0012\u0004\u0012\u00020Z\u0012\u0004\u0012\u00020%0$X\u0082\u0004¢\u0006\u0002\n\u0000R\u0015\u0010\u0081\u0001\u001a\u00030\u0082\u0001¢\u0006\n\n\u0000\u001a\u0006\b\u0083\u0001\u0010\u0084\u0001R \u0010\u0085\u0001\u001a\u00030\u0086\u0001X\u0086.¢\u0006\u0012\n\u0000\u001a\u0006\b\u0087\u0001\u0010\u0088\u0001\"\u0006\b\u0089\u0001\u0010\u008a\u0001R \u0010\u008b\u0001\u001a\u00030\u008c\u0001X\u0086.¢\u0006\u0012\n\u0000\u001a\u0006\b\u008d\u0001\u0010\u008e\u0001\"\u0006\b\u008f\u0001\u0010\u0090\u0001R\u000f\u0010\u0091\u0001\u001a\u00020\u0007X\u0082.¢\u0006\u0002\n\u0000R\u0013\u0010\u0092\u0001\u001a\u0004\u0018\u00010\tX\u0082\u000e¢\u0006\u0004\n\u0002\u0010\nR/\u0010\u0093\u0001\u001a\"\u0012\u0004\u0012\u00020<\u0012\u0005\u0012\u00030\u0095\u00010\u0094\u0001j\u0010\u0012\u0004\u0012\u00020<\u0012\u0005\u0012\u00030\u0095\u0001`\u0096\u0001X\u0082\u0004¢\u0006\u0002\n\u0000R \u0010\u0097\u0001\u001a\u00030\u0098\u0001X\u0086\u000e¢\u0006\u0012\n\u0000\u001a\u0006\b\u0099\u0001\u0010\u009a\u0001\"\u0006\b\u009b\u0001\u0010\u009c\u0001R\u000f\u0010\u009d\u0001\u001a\u00020ZX\u0082\u000e¢\u0006\u0002\n\u0000R\u000f\u0010\u009e\u0001\u001a\u00020\u007fX\u0082.¢\u0006\u0002\n\u0000R\u001b\u0010\u009f\u0001\u001a\u000e\u0012\u0004\u0012\u00020Z\u0012\u0004\u0012\u00020%0$X\u0082\u0004¢\u0006\u0002\n\u0000R\u0015\u0010 \u0001\u001a\u00030¡\u0001¢\u0006\n\n\u0000\u001a\u0006\b¢\u0001\u0010£\u0001R \u0010¤\u0001\u001a\u00030¥\u0001X\u0086.¢\u0006\u0012\n\u0000\u001a\u0006\b¦\u0001\u0010§\u0001\"\u0006\b¨\u0001\u0010©\u0001¨\u0006Ã\u0001"}, d2 = {"Lcom/magneticchen/daijishou/DaijishouApplication;", "Landroid/app/Application;", "Landroidx/lifecycle/LifecycleObserver;", "()V", "audioAttributes", "Landroid/media/AudioAttributes;", "backButtonSoundIdPreferenceLiveData", "Lcom/magneticchen/daijishou/live_data/SharedPreferenceStringLiveData;", "backPressedSFX", "", "Ljava/lang/Integer;", "backupAndRestore", "Lcom/magneticchen/daijishou/backup_and_restore/BackupAndRestore;", "getBackupAndRestore", "()Lcom/magneticchen/daijishou/backup_and_restore/BackupAndRestore;", "setBackupAndRestore", "(Lcom/magneticchen/daijishou/backup_and_restore/BackupAndRestore;)V", "bitmapLoaderDispatcher", "Lkotlinx/coroutines/ExecutorCoroutineDispatcher;", "buttonPressedSFX", "buttonSoundIdPreferenceLiveData", "cachedBoxArtBitmapLoader", "Lcom/magneticchen/daijishou/cache/CachedBitmapLoader;", "getCachedBoxArtBitmapLoader", "()Lcom/magneticchen/daijishou/cache/CachedBitmapLoader;", "cachedPlatformThumbnailBitmapLoader", "getCachedPlatformThumbnailBitmapLoader", "cachedPlatformWallpaperBitmapLoader", "getCachedPlatformWallpaperBitmapLoader", "cachedSnapshotBitmapLoader", "getCachedSnapshotBitmapLoader", "cachedTitleBitmapLoader", "getCachedTitleBitmapLoader", "connectionLiveData", "Lcom/magneticchen/daijishou/live_data/ConnectionLiveData;", "connectionLiveDataObserver", "Lkotlin/Function1;", "", "connectionType", "creationTime", "", "getCreationTime", "()J", "setCreationTime", "(J)V", "daijishouDebugServiceLauncher", "Lcom/magneticchen/daijishou/activities/abstract_classes/DaijishouServiceLauncher;", "Lcom/magneticchen/daijishou/daijishou_debug_service/DaijishouDebugService;", "getDaijishouDebugServiceLauncher", "()Lcom/magneticchen/daijishou/activities/abstract_classes/DaijishouServiceLauncher;", "daijishouLibraryRepository", "Lcom/magneticchen/daijishou/repositories/DaijishouLibraryRepository;", "getDaijishouLibraryRepository", "()Lcom/magneticchen/daijishou/repositories/DaijishouLibraryRepository;", "setDaijishouLibraryRepository", "(Lcom/magneticchen/daijishou/repositories/DaijishouLibraryRepository;)V", "daijishouMainServiceLauncher", "Lcom/magneticchen/daijishou/activities/DaijishouMainService;", "getDaijishouMainServiceLauncher", "daijishouUUID", "", "getDaijishouUUID", "()Ljava/lang/String;", "setDaijishouUUID", "(Ljava/lang/String;)V", "daijishouUriHandler", "Lcom/magneticchen/daijishou/daijishou_uri/DaijishouUriHandler;", "getDaijishouUriHandler", "()Lcom/magneticchen/daijishou/daijishou_uri/DaijishouUriHandler;", "setDaijishouUriHandler", "(Lcom/magneticchen/daijishou/daijishou_uri/DaijishouUriHandler;)V", "daijishouWidgetRepository", "Lcom/magneticchen/daijishou/repositories/DaijishouWidgetRepository;", "getDaijishouWidgetRepository", "()Lcom/magneticchen/daijishou/repositories/DaijishouWidgetRepository;", "setDaijishouWidgetRepository", "(Lcom/magneticchen/daijishou/repositories/DaijishouWidgetRepository;)V", "defaultSharedPreferences", "Landroid/content/SharedPreferences;", "getDefaultSharedPreferences", "()Landroid/content/SharedPreferences;", "setDefaultSharedPreferences", "(Landroid/content/SharedPreferences;)V", "dpToPxConverter", "Lcom/magneticchen/daijishou/utils/DpToPxConverter;", "getDpToPxConverter", "()Lcom/magneticchen/daijishou/utils/DpToPxConverter;", "setDpToPxConverter", "(Lcom/magneticchen/daijishou/utils/DpToPxConverter;)V", "firstTime", "", "forcingSingleSfxSound", "googleDrive", "Lcom/magneticchen/daijishou/google_drive/GoogleDrive;", "getGoogleDrive", "()Lcom/magneticchen/daijishou/google_drive/GoogleDrive;", "setGoogleDrive", "(Lcom/magneticchen/daijishou/google_drive/GoogleDrive;)V", "homeKeyPressedCountSinceLeave", "getHomeKeyPressedCountSinceLeave", "()I", "setHomeKeyPressedCountSinceLeave", "(I)V", "initialized", "getInitialized", "()Z", "setInitialized", "(Z)V", "isInitializing", "setInitializing", "isProbablyRunningOnEmulator", "isProbablyRunningOnEmulator$delegate", "Lkotlin/Lazy;", "lifecycleEventObserver", "Landroidx/lifecycle/LifecycleEventObserver;", "logger", "Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "getLogger", "()Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "mainActivity", "Lcom/magneticchen/daijishou/activities/MainActivity;", "getMainActivity", "()Lcom/magneticchen/daijishou/activities/MainActivity;", "setMainActivity", "(Lcom/magneticchen/daijishou/activities/MainActivity;)V", "makeButtonSound", "makeButtonSoundPreferenceLiveData", "Lcom/magneticchen/daijishou/live_data/SharedPreferenceBooleanLiveData;", "makeButtonSoundPreferenceLiveDataObserver", "retroAchievementsManager", "Lcom/magneticchen/daijishou/retro_achievements/RetroAchievementsManager;", "getRetroAchievementsManager", "()Lcom/magneticchen/daijishou/retro_achievements/RetroAchievementsManager;", "retroAchievementsRepository", "Lcom/magneticchen/daijishou/repositories/RetroAchievementsRepository;", "getRetroAchievementsRepository", "()Lcom/magneticchen/daijishou/repositories/RetroAchievementsRepository;", "setRetroAchievementsRepository", "(Lcom/magneticchen/daijishou/repositories/RetroAchievementsRepository;)V", "scraperManager", "Lcom/magneticchen/daijishou/scraper/ScraperManager;", "getScraperManager", "()Lcom/magneticchen/daijishou/scraper/ScraperManager;", "setScraperManager", "(Lcom/magneticchen/daijishou/scraper/ScraperManager;)V", "selectButtonSoundIdPreferenceLiveData", "selectPressedSFX", "sfxMediaPlayersHashMap", "Ljava/util/HashMap;", "Landroid/media/MediaPlayer;", "Lkotlin/collections/HashMap;", "soundpool", "Landroid/media/SoundPool;", "getSoundpool", "()Landroid/media/SoundPool;", "setSoundpool", "(Landroid/media/SoundPool;)V", "useDebugMode", "useDebugModeLiveData", "useDebugModeLiveDataObserver", "weakJson", "Lkotlinx/serialization/json/Json;", "getWeakJson", "()Lkotlinx/serialization/json/Json;", "widgetsManager", "Lcom/magneticchen/daijishou/daijishou_widget/WidgetsManager;", "getWidgetsManager", "()Lcom/magneticchen/daijishou/daijishou_widget/WidgetsManager;", "setWidgetsManager", "(Lcom/magneticchen/daijishou/daijishou_widget/WidgetsManager;)V", "muteUntilNotForcingSingleSfxSound", "notifyServicesUpgradeChance", "onCreate", "onLowMemory", "onTerminate", "onTrimMemory", "level", "playReachBoundSfx", "force", "playSfx", "sfxId", "prettifyTitle", "title", "showDiscIndex", "readFromFile", "filename", "setupMainActivity", "setupSounds", "setupStetho", "setupUUID", "startServices", "stopAllServices", "writeToFile", "data", "WrappedLogger", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class DaijishouApplication extends Application implements LifecycleObserver {
     private final AudioAttributes audioAttributes;
@@ -106,7 +106,7 @@ public final class DaijishouApplication extends Application implements Lifecycle
     private boolean initialized;
     private boolean isInitializing;
 
-    /* JADX INFO: renamed from: isProbablyRunningOnEmulator$delegate, reason: from kotlin metadata */
+    /* INFO: renamed from: isProbablyRunningOnEmulator$delegate, reason: from kotlin metadata */
     private final Lazy isProbablyRunningOnEmulator;
     private final LifecycleEventObserver lifecycleEventObserver;
     private MainActivity mainActivity;
@@ -455,7 +455,7 @@ public final class DaijishouApplication extends Application implements Lifecycle
         }
     }
 
-    /* JADX INFO: compiled from: DaijishouApplication.kt */
+    /* INFO: compiled from: DaijishouApplication.kt */
     @Metadata(d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0002\b\u0007\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\u0004\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0014\u001a\u00020\u0015J\u0016\u0010\u0016\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u00012\u0006\u0010\u0018\u001a\u00020\u0005J\u0016\u0010\u0019\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u00012\u0006\u0010\u0018\u001a\u00020\u0005J\u0016\u0010\u001a\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u00012\u0006\u0010\u0018\u001a\u00020\u0005J \u0010\u001b\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u00012\u0006\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u0018\u001a\u00020\u0005H\u0002J\u0016\u0010\u001e\u001a\u00020\u00152\u0006\u0010\u0017\u001a\u00020\u00012\u0006\u0010\u0018\u001a\u00020\u0005R\u0019\u0010\u0003\u001a\n\u0012\u0004\u0012\u00020\u0005\u0018\u00010\u00048F¢\u0006\u0006\u001a\u0004\b\u0006\u0010\u0007R\u001b\u0010\b\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\n\u0018\u00010\t8F¢\u0006\u0006\u001a\u0004\b\u000b\u0010\fR\u0019\u0010\r\u001a\n\u0012\u0004\u0012\u00020\n\u0018\u00010\u000e8F¢\u0006\u0006\u001a\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0011\u001a\u00020\u0005X\u0086D¢\u0006\b\n\u0000\u001a\u0004\b\u0012\u0010\u0013¨\u0006\u001f"}, d2 = {"Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "", "(Lcom/magneticchen/daijishou/DaijishouApplication;)V", "components", "Ljava/util/SortedSet;", "", "getComponents", "()Ljava/util/SortedSet;", "latestLogRecordLiveData", "Landroidx/lifecycle/LiveData;", "Lcom/magneticchen/daijishou/logger/Logger$LogRecord;", "getLatestLogRecordLiveData", "()Landroidx/lifecycle/LiveData;", org.eclipse.jgit.lib.Constants.LOGS, "", "getLogs", "()Ljava/util/List;", "tag", "getTag", "()Ljava/lang/String;", "clear", "", "debug", "fromComponent", "message", "error", "info", "printLog", "LoggerCode", "", "warn", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class WrappedLogger {
         private final String tag = "daijishou_logger_offline";
@@ -584,7 +584,7 @@ public final class DaijishouApplication extends Application implements Lifecycle
         this.initialized = z;
     }
 
-    /* JADX INFO: renamed from: isInitializing, reason: from getter */
+    /* INFO: renamed from: isInitializing, reason: from getter */
     public final boolean getIsInitializing() {
         return this.isInitializing;
     }
@@ -597,8 +597,8 @@ public final class DaijishouApplication extends Application implements Lifecycle
         return ((Boolean) this.isProbablyRunningOnEmulator.getValue()).booleanValue();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.DaijishouApplication$isProbablyRunningOnEmulator$2, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouApplication.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.DaijishouApplication$isProbablyRunningOnEmulator$2, reason: invalid class name */
+    /* INFO: compiled from: DaijishouApplication.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u0001H\n¢\u0006\u0004\b\u0002\u0010\u0003"}, d2 = {"<anonymous>", "", "invoke", "()Ljava/lang/Boolean;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda<Boolean> implements Function0<Boolean> {
         public static final AnonymousClass2 INSTANCE = new AnonymousClass2();
@@ -607,23 +607,23 @@ public final class DaijishouApplication extends Application implements Lifecycle
             super(0);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
-        /* JADX WARN: Code duplicated, block: B:14:0x0050  */
-        /* JADX WARN: Code duplicated, block: B:16:0x005d  */
-        /* JADX WARN: Code duplicated, block: B:18:0x006a  */
-        /* JADX WARN: Code duplicated, block: B:20:0x0075  */
-        /* JADX WARN: Code duplicated, block: B:22:0x0082  */
-        /* JADX WARN: Code duplicated, block: B:24:0x008d  */
-        /* JADX WARN: Code duplicated, block: B:26:0x009a  */
-        /* JADX WARN: Code duplicated, block: B:28:0x00a7  */
-        /* JADX WARN: Code duplicated, block: B:30:0x00b9  */
-        /* JADX WARN: Code duplicated, block: B:32:0x00ca  */
-        /* JADX WARN: Code duplicated, block: B:34:0x00db  */
-        /* JADX WARN: Code duplicated, block: B:40:0x0102  */
-        /* JADX WARN: Code duplicated, block: B:42:0x0111  */
-        /* JADX WARN: Code duplicated, block: B:44:0x011e  */
-        /* JADX WARN: Code duplicated, block: B:46:0x012b  */
-        /* JADX WARN: Code duplicated, block: B:49:0x0134  */
+        /* WARN: Can't rename method to resolve collision */
+        /* WARN: Code duplicated, block: B:14:0x0050  */
+        /* WARN: Code duplicated, block: B:16:0x005d  */
+        /* WARN: Code duplicated, block: B:18:0x006a  */
+        /* WARN: Code duplicated, block: B:20:0x0075  */
+        /* WARN: Code duplicated, block: B:22:0x0082  */
+        /* WARN: Code duplicated, block: B:24:0x008d  */
+        /* WARN: Code duplicated, block: B:26:0x009a  */
+        /* WARN: Code duplicated, block: B:28:0x00a7  */
+        /* WARN: Code duplicated, block: B:30:0x00b9  */
+        /* WARN: Code duplicated, block: B:32:0x00ca  */
+        /* WARN: Code duplicated, block: B:34:0x00db  */
+        /* WARN: Code duplicated, block: B:40:0x0102  */
+        /* WARN: Code duplicated, block: B:42:0x0111  */
+        /* WARN: Code duplicated, block: B:44:0x011e  */
+        /* WARN: Code duplicated, block: B:46:0x012b  */
+        /* WARN: Code duplicated, block: B:49:0x0134  */
         @Override // kotlin.jvm.functions.Function0
         public final Boolean invoke() {
             String FINGERPRINT;
@@ -1845,7 +1845,7 @@ public final class DaijishouApplication extends Application implements Lifecycle
         return this.retroAchievementsManager;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void lifecycleEventObserver$lambda$2(DaijishouApplication this$0, LifecycleOwner source, Lifecycle.Event event) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(source, "source");
@@ -1901,7 +1901,7 @@ public final class DaijishouApplication extends Application implements Lifecycle
         mediaPlayer.start();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void playSfx$lambda$5$lambda$4(DaijishouApplication this$0, MediaPlayer mediaPlayer) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.forcingSingleSfxSound = false;
@@ -1993,8 +1993,8 @@ public final class DaijishouApplication extends Application implements Lifecycle
         super.onCreate();
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.DaijishouApplication$onCreate$1, reason: invalid class name */
-    /* JADX INFO: compiled from: DaijishouApplication.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.DaijishouApplication$onCreate$1, reason: invalid class name */
+    /* INFO: compiled from: DaijishouApplication.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010 \n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function1<List<? extends PlatformEntity>, Unit> {
         AnonymousClass1() {
@@ -2007,7 +2007,7 @@ public final class DaijishouApplication extends Application implements Lifecycle
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<PlatformEntity> list) {
             Intrinsics.checkNotNull(list);
             List<PlatformEntity> list2 = list;

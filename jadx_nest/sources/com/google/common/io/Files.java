@@ -34,7 +34,7 @@ import javax.annotation.CheckForNull;
 import net.lingala.zip4j.util.InternalZipConstants;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Files {
     private static final SuccessorsFunction<File> FILE_TREE = new AnonymousClass2();
@@ -250,7 +250,7 @@ public final class Files {
         return (List) asCharSource(file, charset).readLines(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: com.google.common.io.Files$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.io.Files$1, reason: invalid class name */
     class AnonymousClass1 implements LineProcessor<List<String>> {
         final List<String> result = Lists.newArrayList();
 
@@ -374,7 +374,7 @@ public final class Files {
         return Traverser.forTree(FILE_TREE);
     }
 
-    /* JADX INFO: renamed from: com.google.common.io.Files$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.io.Files$2, reason: invalid class name */
     class AnonymousClass2 implements SuccessorsFunction<File> {
         AnonymousClass2() {
         }
@@ -397,14 +397,14 @@ public final class Files {
         return FilePredicate.IS_FILE;
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     private static abstract class FilePredicate implements Predicate<File> {
         public static final FilePredicate IS_DIRECTORY = new AnonymousClass1("IS_DIRECTORY", 0);
         public static final FilePredicate IS_FILE = new AnonymousClass2("IS_FILE", 1);
         private static final /* synthetic */ FilePredicate[] $VALUES = $values();
 
-        /* JADX INFO: renamed from: com.google.common.io.Files$FilePredicate$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.io.Files$FilePredicate$1, reason: invalid class name */
         final enum AnonymousClass1 extends FilePredicate {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -441,7 +441,7 @@ public final class Files {
             return (FilePredicate[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.io.Files$FilePredicate$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.io.Files$FilePredicate$2, reason: invalid class name */
         final enum AnonymousClass2 extends FilePredicate {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);

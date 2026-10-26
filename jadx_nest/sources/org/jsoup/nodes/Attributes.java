@@ -22,7 +22,7 @@ import org.jsoup.internal.SharedConstants;
 import org.jsoup.internal.StringUtil;
 import org.jsoup.parser.ParseSettings;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Attributes implements Iterable<Attribute>, Cloneable {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private static final String EmptyString = "";
@@ -170,7 +170,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
         return this;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void remove(int i) {
         Validate.isFalse(i >= this.size);
         int i2 = (this.size - i) - 1;
@@ -270,7 +270,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
         return this;
     }
 
-    /* JADX INFO: renamed from: org.jsoup.nodes.Attributes$1, reason: invalid class name */
+    /* INFO: renamed from: org.jsoup.nodes.Attributes$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<Attribute> {
         static final /* synthetic */ boolean $assertionsDisabled = false;
         int expectedSize;
@@ -512,7 +512,7 @@ public class Attributes implements Iterable<Attribute>, Cloneable {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static String dataKey(String str) {
         return dataPrefix + str;
     }

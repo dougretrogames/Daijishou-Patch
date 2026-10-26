@@ -2,7 +2,7 @@ package androidx.transition;
 
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class VelocityTracker1D {
     private static final int ASSUME_POINTER_MOVE_STOPPED_MILLIS = 40;
     private static final int HISTORY_SIZE = 20;

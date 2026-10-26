@@ -26,7 +26,7 @@ import org.apache.commons.codec.digest.MessageDigestAlgorithms;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class AwsRequestSigner {
     private static final String AWS_REQUEST_TYPE = "aws4_request";
     private static final String HASHING_ALGORITHM = "AWS4-HMAC-SHA256";

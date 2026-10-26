@@ -1,6 +1,6 @@
 package org.apache.http.params;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface HttpParams {
     HttpParams copy();

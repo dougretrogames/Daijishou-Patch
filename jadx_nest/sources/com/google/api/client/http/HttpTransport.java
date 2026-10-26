@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class HttpTransport {
     static final Logger LOGGER = Logger.getLogger(HttpTransport.class.getName());
     private static final String[] SUPPORTED_METHODS;

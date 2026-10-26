@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.nio.ByteBuffer;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable
 @ElementTypesAreNonnullByDefault
 final class SipHashFunction extends AbstractHashFunction implements Serializable {

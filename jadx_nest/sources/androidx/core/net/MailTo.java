@@ -7,7 +7,7 @@ import java.util.Locale;
 import java.util.Map;
 import kotlin.text.Typography;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MailTo {
     private static final String BCC = "bcc";
     private static final String BODY = "body";

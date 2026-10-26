@@ -8,7 +8,7 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DetailsOverviewRow extends Row {
     private ObjectAdapter mActionsAdapter;
     private PresenterSelector mDefaultActionPresenter;

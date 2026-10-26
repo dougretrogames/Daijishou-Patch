@@ -5,7 +5,7 @@ import org.eclipse.jgit.diff.RawText;
 import org.eclipse.jgit.lib.PersonIdent;
 import org.eclipse.jgit.revwalk.RevCommit;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BlameResult {
     private BlameGenerator generator;
     private int lastLength;

@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class Enum extends GeneratedMessage implements EnumOrBuilder {
     private static final Enum DEFAULT_INSTANCE;
     public static final int EDITION_FIELD_NUMBER = 6;
@@ -358,7 +358,7 @@ public final class Enum extends GeneratedMessage implements EnumOrBuilder {
         return this == DEFAULT_INSTANCE ? new Builder((AnonymousClass1) null) : new Builder((AnonymousClass1) null).mergeFrom(this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent parent) {
         return new Builder(parent, null);
@@ -1270,7 +1270,7 @@ public final class Enum extends GeneratedMessage implements EnumOrBuilder {
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.Enum$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.Enum$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<Enum> {
         AnonymousClass1() {
         }

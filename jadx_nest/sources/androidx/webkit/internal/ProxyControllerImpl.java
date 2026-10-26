@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.concurrent.Executor;
 import org.chromium.support_lib_boundary.ProxyControllerBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ProxyControllerImpl extends ProxyController {
     private ProxyControllerBoundaryInterface mBoundaryInterface;
 

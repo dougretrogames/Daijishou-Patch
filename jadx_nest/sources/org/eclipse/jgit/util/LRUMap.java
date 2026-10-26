@@ -3,7 +3,7 @@ package org.eclipse.jgit.util;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LRUMap<K, V> extends LinkedHashMap<K, V> {
     private static final long serialVersionUID = 4329609127403759486L;
     private final int limit;

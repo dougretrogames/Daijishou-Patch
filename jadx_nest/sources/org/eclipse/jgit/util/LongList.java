@@ -4,7 +4,7 @@ import java.util.Arrays;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LongList {
     private int count;
     private long[] entries;

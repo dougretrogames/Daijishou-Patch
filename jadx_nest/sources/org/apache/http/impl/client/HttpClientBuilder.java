@@ -89,7 +89,7 @@ import org.apache.http.ssl.SSLContexts;
 import org.apache.http.util.TextUtils;
 import org.apache.http.util.VersionInfo;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpClientBuilder {
     private boolean authCachingDisabled;
     private Lookup<AuthSchemeProvider> authSchemeRegistry;
@@ -728,7 +728,7 @@ public class HttpClientBuilder {
         return new InternalHttpClient(clientExecChainDecorateProtocolExec, httpClientConnectionManager, httpRoutePlanner, lookupCreateDefault, lookupBuild, basicCookieStore, basicCredentialsProvider, requestConfig, arrayList3);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.client.HttpClientBuilder$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.client.HttpClientBuilder$1, reason: invalid class name */
     class AnonymousClass1 implements Closeable {
         final /* synthetic */ IdleConnectionEvictor val$connectionEvictor;
 
@@ -747,7 +747,7 @@ public class HttpClientBuilder {
         }
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.client.HttpClientBuilder$2, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.client.HttpClientBuilder$2, reason: invalid class name */
     class AnonymousClass2 implements Closeable {
         final /* synthetic */ HttpClientConnectionManager val$cm;
 

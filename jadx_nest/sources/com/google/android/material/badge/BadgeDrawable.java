@@ -27,7 +27,7 @@ import java.lang.ref.WeakReference;
 import java.text.NumberFormat;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BadgeDrawable extends Drawable implements TextDrawableHelper.TextDrawableDelegate {
     public static final int BADGE_CONTENT_NOT_TRUNCATED = -2;
     static final int BADGE_RADIUS_NOT_SPECIFIED = -1;
@@ -210,7 +210,7 @@ public class BadgeDrawable extends Drawable implements TextDrawableHelper.TextDr
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.badge.BadgeDrawable$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.badge.BadgeDrawable$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ View val$anchorView;
         final /* synthetic */ FrameLayout val$frameLayout;

@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 import org.apache.commons.io.IOCase;
 import org.apache.commons.io.file.PathUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SuffixFileFilter extends AbstractFileFilter implements Serializable {
     private static final long serialVersionUID = -3389157631240246157L;
     private final IOCase ioCase;
@@ -66,7 +66,7 @@ public class SuffixFileFilter extends AbstractFileFilter implements Serializable
         return Stream.of((Object[]) this.suffixes).anyMatch(new SuffixFileFilter$$ExternalSyntheticLambda0(this, str));
     }
 
-    /* JADX INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-SuffixFileFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-SuffixFileFilter, reason: not valid java name */
     /* synthetic */ boolean m5582xab06a59f(String str, String str2) {
         return this.ioCase.checkEndsWith(str, str2);
     }

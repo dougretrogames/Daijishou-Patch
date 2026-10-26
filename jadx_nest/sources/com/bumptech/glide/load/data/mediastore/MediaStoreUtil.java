@@ -8,7 +8,7 @@ import android.os.ext.SdkExtensions;
 import android.provider.MediaStore;
 import java.io.FileNotFoundException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MediaStoreUtil {
     private static final int MINI_THUMB_HEIGHT = 384;
     private static final int MINI_THUMB_WIDTH = 512;

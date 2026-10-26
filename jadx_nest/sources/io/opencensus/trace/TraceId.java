@@ -4,7 +4,7 @@ import io.opencensus.internal.Utils;
 import java.util.Random;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class TraceId implements Comparable<TraceId> {
     private static final int BASE16_SIZE = 32;
     public static final TraceId INVALID = new TraceId(0, 0);

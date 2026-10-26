@@ -3,7 +3,7 @@ package com.google.api.client.http;
 import com.google.api.client.util.Preconditions;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class BasicAuthentication implements HttpRequestInitializer, HttpExecuteInterceptor {
     private final String password;
     private final String username;

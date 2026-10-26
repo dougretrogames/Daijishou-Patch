@@ -30,8 +30,8 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: PlayableItemDetailViewModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlayableItemDetailViewModel.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000Z\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u0016\u0010 \u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u001f0\u00162\u0006\u0010!\u001a\u00020\u001fR\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\bX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082\u0004¢\u0006\u0002\n\u0000R\u0015\u0010\u000b\u001a\u00060\fR\u00020\r¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0017\u0010\u0010\u001a\b\u0012\u0004\u0012\u00020\u00120\u0011¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014R\u0018\u0010\u0015\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u0012\u0018\u00010\u0016X\u0082\u000e¢\u0006\u0002\n\u0000R\u0011\u0010\u0017\u001a\u00020\u0018¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001aR\u0017\u0010\u001b\u001a\b\u0012\u0004\u0012\u00020\u001c0\u0011¢\u0006\b\n\u0000\u001a\u0004\b\u001d\u0010\u0014R\u0018\u0010\u001e\u001a\f\u0012\u0006\u0012\u0004\u0018\u00010\u001f\u0018\u00010\u0016X\u0082\u000e¢\u0006\u0002\n\u0000¨\u0006\""}, d2 = {"Lcom/magneticchen/daijishou/view_models/PlayableItemDetailViewModel;", "Lcom/magneticchen/daijishou/view_models/abstract_view_models/DaijishouAndroidViewModel;", "application", "Landroid/app/Application;", "(Landroid/app/Application;)V", "connectionLiveData", "Lcom/magneticchen/daijishou/live_data/ConnectionLiveData;", "connectionType", "", "daijishouLibraryRepository", "Lcom/magneticchen/daijishou/repositories/DaijishouLibraryRepository;", "logger", "Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "Lcom/magneticchen/daijishou/DaijishouApplication;", "getLogger", "()Lcom/magneticchen/daijishou/DaijishouApplication$WrappedLogger;", "platformEntityLiveData", "Landroidx/lifecycle/MediatorLiveData;", "Lcom/magneticchen/daijishou/daijishou_library_db/PlatformEntity;", "getPlatformEntityLiveData", "()Landroidx/lifecycle/MediatorLiveData;", "platformLiveDataSource", "Landroidx/lifecycle/LiveData;", "scraper", "Lcom/magneticchen/daijishou/scraper/ScraperManager;", "getScraper", "()Lcom/magneticchen/daijishou/scraper/ScraperManager;", "selectedPlayableItemDescriptionLiveData", "", "getSelectedPlayableItemDescriptionLiveData", "selectedPlayableItemLiveDataSource", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "selectedPlayableItem", "selectedPlayableItemEntity", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class PlayableItemDetailViewModel extends DaijishouAndroidViewModel {
     private final ConnectionLiveData connectionLiveData;
@@ -44,7 +44,7 @@ public final class PlayableItemDetailViewModel extends DaijishouAndroidViewModel
     private final MediatorLiveData<String> selectedPlayableItemDescriptionLiveData;
     private LiveData<PlayableItemEntity> selectedPlayableItemLiveDataSource;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     public PlayableItemDetailViewModel(Application application) {
         super(application);
         Intrinsics.checkNotNullParameter(application, "application");
@@ -102,8 +102,8 @@ public final class PlayableItemDetailViewModel extends DaijishouAndroidViewModel
         return playableItemById;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.PlayableItemDetailViewModel$selectedPlayableItem$4, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailViewModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.PlayableItemDetailViewModel$selectedPlayableItem$4, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailViewModel.kt */
     @Metadata(d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u00012\b\u0010\u0002\u001a\u0004\u0018\u00010\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "it", "Lcom/magneticchen/daijishou/daijishou_library_db/PlayableItemEntity;", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     static final class AnonymousClass4 extends Lambda<Unit> implements Function1<PlayableItemEntity, Unit> {
         final /* synthetic */ Long $attachPlatformId;
@@ -111,7 +111,7 @@ public final class PlayableItemDetailViewModel extends DaijishouAndroidViewModel
         final /* synthetic */ PlayableItemEntity $selectedPlayableItemEntity;
         final /* synthetic */ PlayableItemDetailViewModel this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass4(Ref.LongRef longRef, PlayableItemEntity playableItemEntity, PlayableItemDetailViewModel playableItemDetailViewModel, Long l) {
             super(1);
             this.$previousLoadedPlayableItemId = longRef;
@@ -126,7 +126,7 @@ public final class PlayableItemDetailViewModel extends DaijishouAndroidViewModel
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(PlayableItemEntity playableItemEntity) {
             if (this.$previousLoadedPlayableItemId.element == this.$selectedPlayableItemEntity.getId()) {
                 return;
@@ -151,8 +151,8 @@ public final class PlayableItemDetailViewModel extends DaijishouAndroidViewModel
             this.this$0.getSelectedPlayableItemDescriptionLiveData().postValue(this.this$0.getApplication().getString(R.string.no_internet_connection));
         }
 
-        /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.PlayableItemDetailViewModel$selectedPlayableItem$4$2, reason: invalid class name */
-        /* JADX INFO: compiled from: PlayableItemDetailViewModel.kt */
+        /* INFO: renamed from: com.magneticchen.daijishou.view_models.PlayableItemDetailViewModel$selectedPlayableItem$4$2, reason: invalid class name */
+        /* INFO: compiled from: PlayableItemDetailViewModel.kt */
         @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
         @DebugMetadata(c = "com.magneticchen.daijishou.view_models.PlayableItemDetailViewModel$selectedPlayableItem$4$2", f = "PlayableItemDetailViewModel.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
         static final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -163,7 +163,7 @@ public final class PlayableItemDetailViewModel extends DaijishouAndroidViewModel
             int label;
             final /* synthetic */ PlayableItemDetailViewModel this$0;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass2(Long l, PlayableItemDetailViewModel playableItemDetailViewModel, PlayableItemEntity playableItemEntity, Ref.LongRef longRef, Continuation<?> continuation) {
                 super(2, continuation);
                 this.$attachPlatformId = l;
@@ -230,8 +230,8 @@ public final class PlayableItemDetailViewModel extends DaijishouAndroidViewModel
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.view_models.PlayableItemDetailViewModel$1, reason: invalid class name */
-    /* JADX INFO: compiled from: PlayableItemDetailViewModel.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.view_models.PlayableItemDetailViewModel$1, reason: invalid class name */
+    /* INFO: compiled from: PlayableItemDetailViewModel.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass1 extends Lambda<Unit> implements Function1<Integer, Unit> {
         AnonymousClass1() {
@@ -244,7 +244,7 @@ public final class PlayableItemDetailViewModel extends DaijishouAndroidViewModel
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             PlayableItemDetailViewModel playableItemDetailViewModel = PlayableItemDetailViewModel.this;
             Intrinsics.checkNotNull(num);

@@ -2,7 +2,7 @@ package androidx.core.os;
 
 import android.os.Message;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class MessageCompat {
     private static boolean sTryIsAsynchronous = true;
     private static boolean sTrySetAsynchronous = true;

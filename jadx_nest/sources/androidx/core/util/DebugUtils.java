@@ -2,7 +2,7 @@ package androidx.core.util;
 
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DebugUtils {
     public static void buildShortClassTag(Object obj, StringBuilder sb) {
         int iLastIndexOf;

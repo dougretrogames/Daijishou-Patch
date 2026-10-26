@@ -10,7 +10,7 @@ import java.util.NoSuchElementException;
 import java.util.Objects;
 import org.apache.commons.collections4.list.UnmodifiableList;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CollatingIterator<E> implements Iterator<E> {
     private Comparator<? super E> comparator;
     private final List<Iterator<? extends E>> iterators;

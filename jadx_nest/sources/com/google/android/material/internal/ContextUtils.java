@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ContextUtils {
     public static Activity getActivity(Context context) {
         while (context instanceof ContextWrapper) {

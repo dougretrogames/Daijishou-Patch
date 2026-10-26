@@ -2,7 +2,7 @@ package io.grpc;
 
 import com.google.common.base.Preconditions;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class CompositeChannelCredentials extends ChannelCredentials {
     private final CallCredentials callCredentials;
     private final ChannelCredentials channelCredentials;

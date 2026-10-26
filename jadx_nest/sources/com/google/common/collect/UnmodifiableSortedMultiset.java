@@ -5,7 +5,7 @@ import java.util.Comparator;
 import java.util.NavigableSet;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class UnmodifiableSortedMultiset<E> extends Multisets.UnmodifiableMultiset<E> implements SortedMultiset<E> {
     private static final long serialVersionUID = 0;
@@ -18,7 +18,7 @@ final class UnmodifiableSortedMultiset<E> extends Multisets.UnmodifiableMultiset
         super(delegate);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.common.collect.Multisets.UnmodifiableMultiset, com.google.common.collect.ForwardingMultiset, com.google.common.collect.ForwardingCollection, com.google.common.collect.ForwardingObject
     public SortedMultiset<E> delegate() {
         return (SortedMultiset) super.delegate();
@@ -29,7 +29,7 @@ final class UnmodifiableSortedMultiset<E> extends Multisets.UnmodifiableMultiset
         return delegate().comparator();
     }
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.Multisets.UnmodifiableMultiset
     public NavigableSet<E> createElementSet() {
         return Sets.unmodifiableNavigableSet(delegate().elementSet());

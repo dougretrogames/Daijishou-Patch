@@ -3,7 +3,7 @@ package androidx.media;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class VolumeProviderCompat {
     public static final int VOLUME_CONTROL_ABSOLUTE = 2;
     public static final int VOLUME_CONTROL_FIXED = 0;
@@ -69,7 +69,7 @@ public abstract class VolumeProviderCompat {
         return this.mVolumeProviderObj;
     }
 
-    /* JADX INFO: renamed from: androidx.media.VolumeProviderCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.media.VolumeProviderCompat$1, reason: invalid class name */
     class AnonymousClass1 implements VolumeProviderCompatApi21.Delegate {
         AnonymousClass1() {
         }

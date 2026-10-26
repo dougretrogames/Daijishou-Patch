@@ -31,7 +31,7 @@ import org.eclipse.jgit.lib.ObjectLoader;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.ProgressMonitor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class WindowCursor extends ObjectReader implements ObjectReuseAsIs {
     private DeltaBaseCache baseCache;
 

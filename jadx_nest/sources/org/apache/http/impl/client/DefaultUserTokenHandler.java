@@ -11,7 +11,7 @@ import org.apache.http.client.protocol.HttpClientContext;
 import org.apache.http.conn.ManagedHttpClientConnection;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultUserTokenHandler implements UserTokenHandler {
     public static final DefaultUserTokenHandler INSTANCE = new DefaultUserTokenHandler();
 

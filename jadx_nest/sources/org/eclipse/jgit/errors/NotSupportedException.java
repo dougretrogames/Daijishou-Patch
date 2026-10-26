@@ -2,7 +2,7 @@ package org.eclipse.jgit.errors;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NotSupportedException extends IOException {
     private static final long serialVersionUID = 1;
 

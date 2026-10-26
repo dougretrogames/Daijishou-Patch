@@ -1,6 +1,6 @@
 package androidx.constraintlayout.core.motion.utils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class StopLogicEngine implements StopEngine {
     private static final float EPSILON = 1.0E-5f;
     private boolean mBackwards = false;

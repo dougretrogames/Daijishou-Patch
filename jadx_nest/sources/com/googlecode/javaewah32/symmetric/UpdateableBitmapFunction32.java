@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class UpdateableBitmapFunction32 {
     EWAHPointer32[] rw = new EWAHPointer32[0];
     int hammingWeight = 0;
@@ -23,12 +23,12 @@ public abstract class UpdateableBitmapFunction32 {
         return this.litwlist.cardinality();
     }
 
-    /* JADX INFO: renamed from: com.googlecode.javaewah32.symmetric.UpdateableBitmapFunction32$1, reason: invalid class name */
+    /* INFO: renamed from: com.googlecode.javaewah32.symmetric.UpdateableBitmapFunction32$1, reason: invalid class name */
     class AnonymousClass1 implements Iterable<EWAHPointer32> {
         AnonymousClass1() {
         }
 
-        /* JADX INFO: renamed from: com.googlecode.javaewah32.symmetric.UpdateableBitmapFunction32$1$1, reason: invalid class name and collision with other inner class name */
+        /* INFO: renamed from: com.googlecode.javaewah32.symmetric.UpdateableBitmapFunction32$1$1, reason: invalid class name and collision with other inner class name */
         class C00521 implements Iterator<EWAHPointer32> {
             int k;
 
@@ -41,7 +41,7 @@ public abstract class UpdateableBitmapFunction32 {
                 return this.k >= 0;
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // java.util.Iterator
             public EWAHPointer32 next() {
                 EWAHPointer32 eWAHPointer32 = UpdateableBitmapFunction32.this.rw[this.k];

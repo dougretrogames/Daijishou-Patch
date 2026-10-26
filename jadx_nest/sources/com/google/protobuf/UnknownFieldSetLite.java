@@ -3,7 +3,7 @@ package com.google.protobuf;
 import java.io.IOException;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class UnknownFieldSetLite {
     private static final UnknownFieldSetLite DEFAULT_INSTANCE = new UnknownFieldSetLite(0, new int[0], new Object[0], false);
     private static final int MIN_CAPACITY = 8;

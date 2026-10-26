@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 import java.util.logging.Level;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AggregateFutureState<OutputT> extends AbstractFuture.TrustedFuture<OutputT> {
     private static final AtomicHelper ATOMIC_HELPER;

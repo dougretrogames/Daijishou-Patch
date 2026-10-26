@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public class SelfDestructiveThread {
     private static final int MSG_DESTRUCTION = 0;
@@ -28,7 +28,7 @@ public class SelfDestructiveThread {
         void onReply(T t);
     }
 
-    /* JADX INFO: renamed from: androidx.core.provider.SelfDestructiveThread$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.provider.SelfDestructiveThread$1, reason: invalid class name */
     class AnonymousClass1 implements Handler.Callback {
         AnonymousClass1() {
         }
@@ -85,7 +85,7 @@ public class SelfDestructiveThread {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.provider.SelfDestructiveThread$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.provider.SelfDestructiveThread$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         final /* synthetic */ Callable val$callable;
         final /* synthetic */ Handler val$calleeHandler;
@@ -108,7 +108,7 @@ public class SelfDestructiveThread {
             this.val$calleeHandler.post(new AnonymousClass1(objCall));
         }
 
-        /* JADX INFO: renamed from: androidx.core.provider.SelfDestructiveThread$2$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.core.provider.SelfDestructiveThread$2$1, reason: invalid class name */
         class AnonymousClass1 implements Runnable {
             final /* synthetic */ Object val$result;
 
@@ -159,7 +159,7 @@ public class SelfDestructiveThread {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.provider.SelfDestructiveThread$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.provider.SelfDestructiveThread$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         final /* synthetic */ Callable val$callable;
         final /* synthetic */ Condition val$cond;

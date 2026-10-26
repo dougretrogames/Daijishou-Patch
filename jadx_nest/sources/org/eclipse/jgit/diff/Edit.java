@@ -2,7 +2,7 @@ package org.eclipse.jgit.diff;
 
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Edit {
     int beginA;
     int beginB;
@@ -15,7 +15,7 @@ public class Edit {
         REPLACE,
         EMPTY;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Type[] valuesCustom() {
             Type[] typeArrValuesCustom = values();
             int length = typeArrValuesCustom.length;

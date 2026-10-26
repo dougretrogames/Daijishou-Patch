@@ -17,7 +17,7 @@ import java.util.List;
 import org.apache.commons.codec.language.Soundex;
 import org.eclipse.jgit.lib.CommitConfig$$ExternalSyntheticBackport0;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class TypefaceCompat {
     public static final boolean DOWNLOADABLE_FALLBACK_DEBUG = false;
     public static final boolean DOWNLOADABLE_FONT_TRACING = true;

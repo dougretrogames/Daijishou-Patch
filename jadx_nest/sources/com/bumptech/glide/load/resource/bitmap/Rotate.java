@@ -6,7 +6,7 @@ import com.bumptech.glide.util.Util;
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Rotate extends BitmapTransformation {
     private static final String ID = "com.bumptech.glide.load.resource.bitmap.Rotate";
     private static final byte[] ID_BYTES = ID.getBytes(CHARSET);

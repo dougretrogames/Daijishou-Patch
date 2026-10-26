@@ -3,7 +3,7 @@ package org.apache.http.client.methods;
 import java.net.URI;
 import org.apache.http.HttpRequest;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface HttpUriRequest extends HttpRequest {
     void abort() throws UnsupportedOperationException;
 

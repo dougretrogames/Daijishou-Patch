@@ -9,7 +9,7 @@ import androidx.viewpager.widget.ViewPager;
 import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class LeanbackTabLayout extends TabLayout {
     final AdapterDataSetObserver mAdapterDataSetObserver;
     ViewPager mViewPager;

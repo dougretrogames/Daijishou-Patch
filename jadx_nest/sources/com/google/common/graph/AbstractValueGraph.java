@@ -5,10 +5,10 @@ import java.util.Map;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class AbstractValueGraph<N, V> extends AbstractBaseGraph<N> implements ValueGraph<N, V> {
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ int degree(Object node) {
         return super.degree(node);
@@ -24,13 +24,13 @@ public abstract class AbstractValueGraph<N, V> extends AbstractBaseGraph<N> impl
         return super.hasEdgeConnecting(endpoints);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ boolean hasEdgeConnecting(Object nodeU, Object nodeV) {
         return super.hasEdgeConnecting(nodeU, nodeV);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ int inDegree(Object node) {
         return super.inDegree(node);
@@ -41,19 +41,19 @@ public abstract class AbstractValueGraph<N, V> extends AbstractBaseGraph<N> impl
         return super.incidentEdgeOrder();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ Set incidentEdges(Object node) {
         return super.incidentEdges(node);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.common.graph.AbstractBaseGraph, com.google.common.graph.BaseGraph
     public /* bridge */ /* synthetic */ int outDegree(Object node) {
         return super.outDegree(node);
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.AbstractValueGraph$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.AbstractValueGraph$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractGraph<N> {
         AnonymousClass1() {
         }

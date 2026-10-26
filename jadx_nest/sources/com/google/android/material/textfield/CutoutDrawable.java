@@ -10,7 +10,7 @@ import android.view.View;
 import com.google.android.material.shape.MaterialShapeDrawable;
 import com.google.android.material.shape.ShapeAppearanceModel;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class CutoutDrawable extends MaterialShapeDrawable {
     CutoutDrawableState drawableState;
 
@@ -25,7 +25,7 @@ class CutoutDrawable extends MaterialShapeDrawable {
         return create(new CutoutDrawableState(shapeAppearanceModel, new RectF(), null));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static CutoutDrawable create(CutoutDrawableState cutoutDrawableState) {
         return new ImplApi18(cutoutDrawableState);
     }

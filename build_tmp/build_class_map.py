@@ -1,7 +1,7 @@
 import os, re, json
 
 ROOT = r'C:\Users\Douglas\Documents\Daijishou\jadx_nest\sources\com\magneticchen\daijishou'
-renamed_re = re.compile(r'/\* JADX INFO: renamed from: ([^,\s]+), reason:')
+renamed_re = re.compile(r'/\* (?:JADX\s+)?INFO: renamed from: ([^,\s]+), reason:')
 class_re = re.compile(r'\b(?:class|interface|enum)\s+([A-Za-z_$][\w$]*)')
 stub_re = re.compile(r'Method not decompiled: ([A-Za-z0-9_$.]+)\.[A-Za-z_$][\w$]*\(')
 

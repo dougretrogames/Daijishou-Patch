@@ -8,7 +8,7 @@ import java.math.RoundingMode;
 import okhttp3.internal.connection.RealConnection;
 import org.apache.http.HttpStatus;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class LongMath {
     static final long FLOOR_SQRT_MAX_LONG = 3037000499L;
@@ -62,7 +62,7 @@ public final class LongMath {
         return 1 << (63 - Long.numberOfLeadingZeros(x));
     }
 
-    /* JADX INFO: renamed from: com.google.common.math.LongMath$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.math.LongMath$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$java$math$RoundingMode;
 
@@ -225,7 +225,7 @@ public final class LongMath {
         }
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
     public static long divide(long p, long q, RoundingMode mode) {
         Preconditions.checkNotNull(mode);
         long j = p / q;
@@ -533,8 +533,8 @@ public final class LongMath {
         throw new AssertionError();
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     private static abstract class MillerRabinTester {
         public static final MillerRabinTester SMALL = new AnonymousClass1("SMALL", 0);
         public static final MillerRabinTester LARGE = new AnonymousClass2("LARGE", 1);
@@ -564,7 +564,7 @@ public final class LongMath {
             return (MillerRabinTester[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.math.LongMath$MillerRabinTester$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.math.LongMath$MillerRabinTester$1, reason: invalid class name */
         final enum AnonymousClass1 extends MillerRabinTester {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -581,7 +581,7 @@ public final class LongMath {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.math.LongMath$MillerRabinTester$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.math.LongMath$MillerRabinTester$2, reason: invalid class name */
         final enum AnonymousClass2 extends MillerRabinTester {
             private long plusMod(long a, long b, long m) {
                 long j = a + b;

@@ -68,7 +68,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TextInputLayout extends LinearLayout implements ViewTreeObserver.OnGlobalLayoutListener {
     public static final int BOX_BACKGROUND_FILLED = 1;
     public static final int BOX_BACKGROUND_NONE = 0;
@@ -199,7 +199,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         this(context, attributeSet, R.attr.textInputStyle);
     }
 
-    /* JADX WARN: Illegal instructions before constructor call */
+    /* WARN: Illegal instructions before constructor call */
     public TextInputLayout(Context context, AttributeSet attributeSet, int i) {
         int i2 = DEF_STYLE_RES;
         super(MaterialThemeOverlay.wrap(context, attributeSet, i, i2), attributeSet, i);
@@ -377,7 +377,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         }
     }
 
-    /* JADX INFO: renamed from: lambda$onGlobalLayout$1$com-google-android-material-textfield-TextInputLayout, reason: not valid java name */
+    /* INFO: renamed from: lambda$onGlobalLayout$1$com-google-android-material-textfield-TextInputLayout, reason: not valid java name */
     /* synthetic */ void m3343xa47602b9() {
         this.editText.requestLayout();
     }
@@ -860,7 +860,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         updateLabelState(false, true);
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.textfield.TextInputLayout$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.textfield.TextInputLayout$1, reason: invalid class name */
     class AnonymousClass1 implements TextWatcher {
         int previousLineCount;
         final /* synthetic */ EditText val$editText;
@@ -1404,7 +1404,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         updatePlaceholderText(editText == null ? null : editText.getText());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void updatePlaceholderText(Editable editable) {
         if (this.lengthCounter.countLength(editable) == 0 && !this.hintExpanded) {
             showPlaceholderText();
@@ -1803,12 +1803,12 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
             return "TextInputLayout.SavedState{" + Integer.toHexString(System.identityHashCode(this)) + " error=" + ((Object) this.error) + "}";
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.textfield.TextInputLayout$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.textfield.TextInputLayout$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);
@@ -1851,7 +1851,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         requestLayout();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.textfield.TextInputLayout$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.textfield.TextInputLayout$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -2220,7 +2220,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:19:0x0062  */
+    /* WARN: Code duplicated, block: B:19:0x0062  */
     boolean updateDummyDrawables() {
         boolean z;
         if (this.editText == null) {
@@ -2583,7 +2583,7 @@ public class TextInputLayout extends LinearLayout implements ViewTreeObserver.On
         this.animator.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.textfield.TextInputLayout$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.textfield.TextInputLayout$3, reason: invalid class name */
     class AnonymousClass3 implements ValueAnimator.AnimatorUpdateListener {
         AnonymousClass3() {
         }

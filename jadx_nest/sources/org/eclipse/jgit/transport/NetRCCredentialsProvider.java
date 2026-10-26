@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.errors.UnsupportedCredentialItem;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NetRCCredentialsProvider extends CredentialsProvider {
     NetRC netrc = new NetRC();
 

@@ -26,7 +26,7 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class UrlEncodedParser implements ObjectParser {
     public static final String CONTENT_TYPE = "application/x-www-form-urlencoded";
     public static final String MEDIA_TYPE = new HttpMediaType("application/x-www-form-urlencoded").setCharsetParameter(StandardCharsets.UTF_8).build();

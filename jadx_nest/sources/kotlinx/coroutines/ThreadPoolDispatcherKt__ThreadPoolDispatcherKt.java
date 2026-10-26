@@ -6,8 +6,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 import kotlin.Metadata;
 import org.apache.commons.codec.language.Soundex;
 
-/* JADX INFO: compiled from: ThreadPoolDispatcher.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: ThreadPoolDispatcher.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000e\n\u0000\u001a\u0018\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u0005H\u0007¨\u0006\u0006"}, d2 = {"newFixedThreadPoolContext", "Lkotlinx/coroutines/ExecutorCoroutineDispatcher;", "nThreads", "", "name", "", "kotlinx-coroutines-core"}, k = 5, mv = {1, 9, 0}, xi = 48, xs = "kotlinx/coroutines/ThreadPoolDispatcherKt")
 final /* synthetic */ class ThreadPoolDispatcherKt__ThreadPoolDispatcherKt {
     public static final ExecutorCoroutineDispatcher newFixedThreadPoolContext(int i, String str) {
@@ -17,7 +17,7 @@ final /* synthetic */ class ThreadPoolDispatcherKt__ThreadPoolDispatcherKt {
         return ExecutorsKt.from((ExecutorService) Executors.newScheduledThreadPool(i, new ThreadPoolDispatcherKt__ThreadPoolDispatcherKt$$ExternalSyntheticLambda0(i, str, new AtomicInteger())));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Thread newFixedThreadPoolContext$lambda$1$ThreadPoolDispatcherKt__ThreadPoolDispatcherKt(int i, String str, AtomicInteger atomicInteger, Runnable runnable) {
         if (i != 1) {
             str = str + Soundex.SILENT_MARKER + atomicInteger.incrementAndGet();

@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat;
 import com.google.android.material.expandable.ExpandableWidget;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public abstract class ExpandableBehavior extends CoordinatorLayout.Behavior<View> {
     private static final int STATE_COLLAPSED = 2;
@@ -44,7 +44,7 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.Behavior<View
         return false;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.transformation.ExpandableBehavior$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.transformation.ExpandableBehavior$1, reason: invalid class name */
     class AnonymousClass1 implements ViewTreeObserver.OnPreDrawListener {
         final /* synthetic */ View val$child;
         final /* synthetic */ ExpandableWidget val$dep;
@@ -56,7 +56,7 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.Behavior<View
             this.val$dep = expandableWidget;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // android.view.ViewTreeObserver.OnPreDrawListener
         public boolean onPreDraw() {
             this.val$child.getViewTreeObserver().removeOnPreDrawListener(this);
@@ -69,7 +69,7 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.Behavior<View
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // androidx.coordinatorlayout.widget.CoordinatorLayout.Behavior
     public boolean onDependentViewChanged(CoordinatorLayout coordinatorLayout, View view, View view2) {
         ExpandableWidget expandableWidget = (ExpandableWidget) view2;
@@ -80,7 +80,7 @@ public abstract class ExpandableBehavior extends CoordinatorLayout.Behavior<View
         return onExpandedStateChange((View) expandableWidget, view, expandableWidget.isExpanded(), true);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     protected ExpandableWidget findExpandableWidget(CoordinatorLayout coordinatorLayout, View view) {
         List<View> dependencies = coordinatorLayout.getDependencies(view);
         int size = dependencies.size();

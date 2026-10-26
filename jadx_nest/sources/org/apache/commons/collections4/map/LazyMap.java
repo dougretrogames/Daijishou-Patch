@@ -10,7 +10,7 @@ import org.apache.commons.collections4.Factory;
 import org.apache.commons.collections4.Transformer;
 import org.apache.commons.collections4.functors.FactoryTransformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LazyMap<K, V> extends AbstractMapDecorator<K, V> implements Serializable {
     private static final long serialVersionUID = 7990956402564206740L;
     protected final Transformer<? super K, ? extends V> factory;

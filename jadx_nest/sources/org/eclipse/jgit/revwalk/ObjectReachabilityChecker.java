@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Optional;
 import java.util.stream.Stream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface ObjectReachabilityChecker {
     Optional<RevObject> areAllReachable(Collection<RevObject> collection, Stream<RevObject> stream) throws IOException;
 }

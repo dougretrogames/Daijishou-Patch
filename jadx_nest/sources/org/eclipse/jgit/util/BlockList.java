@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BlockList<T> extends AbstractList<T> {
     private static final int BLOCK_BITS = 10;
     private static final int BLOCK_MASK = 1023;
@@ -24,7 +24,7 @@ public class BlockList<T> extends AbstractList<T> {
         return i >>> 10;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public BlockList() {
         T[][] tArr = (T[][]) newDirectory(256);
         this.directory = tArr;
@@ -32,7 +32,7 @@ public class BlockList<T> extends AbstractList<T> {
         this.tailBlock = this.directory[0];
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public BlockList(int i) {
         int directoryIndex = toDirectoryIndex(i);
         T[][] tArr = (T[][]) newDirectory(((i & BLOCK_MASK) != 0 || directoryIndex == 0) ? directoryIndex + 1 : directoryIndex);

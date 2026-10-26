@@ -14,7 +14,7 @@ import androidx.fragment.app.FragmentTransaction;
 import java.util.List;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class LinearLayoutManager extends RecyclerView.LayoutManager implements ItemTouchHelper.ViewDropHandler, RecyclerView.SmoothScroller.ScrollVectorProvider {
     static final boolean DEBUG = false;
     public static final int HORIZONTAL = 0;
@@ -1007,7 +1007,7 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements I
         return i - layoutState.mAvailable;
     }
 
-    /* JADX WARN: Code duplicated, block: B:42:0x00bf  */
+    /* WARN: Code duplicated, block: B:42:0x00bf  */
     void layoutChunk(RecyclerView.Recycler recycler, RecyclerView.State state, LayoutState layoutState, LayoutChunkResult layoutChunkResult) {
         int decoratedMeasurementInOther;
         int i;
@@ -1127,8 +1127,8 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements I
         return findOneVisibleChild(getChildCount() - 1, -1, z, z2);
     }
 
-    /* JADX WARN: Code duplicated, block: B:33:0x0073  */
-    /* JADX WARN: Code duplicated, block: B:35:0x0077  */
+    /* WARN: Code duplicated, block: B:33:0x0073  */
+    /* WARN: Code duplicated, block: B:35:0x0077  */
     View findReferenceChild(RecyclerView.Recycler recycler, RecyclerView.State state, boolean z, boolean z2) {
         int i;
         int childCount;
@@ -1502,18 +1502,18 @@ public class LinearLayoutManager extends RecyclerView.LayoutManager implements I
             parcel.writeInt(this.mAnchorLayoutFromEnd ? 1 : 0);
         }
 
-        /* JADX INFO: renamed from: androidx.recyclerview.widget.LinearLayoutManager$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.recyclerview.widget.LinearLayoutManager$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.Creator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState createFromParcel(Parcel parcel) {
                 return new SavedState(parcel);
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.Creator
             public SavedState[] newArray(int i) {
                 return new SavedState[i];

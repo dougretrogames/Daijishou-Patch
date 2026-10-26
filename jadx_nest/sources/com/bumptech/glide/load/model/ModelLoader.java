@@ -7,7 +7,7 @@ import com.bumptech.glide.util.Preconditions;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public interface ModelLoader<Model, Data> {
     LoadData<Data> buildLoadData(Model model, int i, int i2, Options options);
 

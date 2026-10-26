@@ -2,7 +2,7 @@ package org.apache.commons.io;
 
 import java.nio.ByteOrder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ByteOrderParser {
     public static ByteOrder parseByteOrder(String str) {
         if (ByteOrder.BIG_ENDIAN.toString().equals(str)) {

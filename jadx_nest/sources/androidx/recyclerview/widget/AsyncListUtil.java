@@ -4,7 +4,7 @@ import android.util.Log;
 import android.util.SparseBooleanArray;
 import android.util.SparseIntArray;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AsyncListUtil<T> {
     static final boolean DEBUG = false;
     static final String TAG = "AsyncListUtil";
@@ -132,7 +132,7 @@ public class AsyncListUtil<T> {
         backgroundCallback.updateRange(i4, i5, iArr7[0], iArr7[1], this.mScrollHint);
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.AsyncListUtil$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.AsyncListUtil$1, reason: invalid class name */
     class AnonymousClass1 implements ThreadUtil.MainThreadCallback<T> {
         AnonymousClass1() {
         }
@@ -198,7 +198,7 @@ public class AsyncListUtil<T> {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.recyclerview.widget.AsyncListUtil$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.recyclerview.widget.AsyncListUtil$2, reason: invalid class name */
     class AnonymousClass2 implements ThreadUtil.BackgroundCallback<T> {
         private int mFirstRequiredTileStart;
         private int mGeneration;

@@ -4,7 +4,7 @@ import java.io.FilterInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MarkEnforcingInputStream extends FilterInputStream {
     private static final int END_OF_STREAM = -1;
     private static final int UNSET = Integer.MIN_VALUE;

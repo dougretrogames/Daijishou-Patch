@@ -2,8 +2,8 @@ package org.apache.commons.io;
 
 import java.util.function.Supplier;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class IOCase$$ExternalSyntheticLambda1 implements Supplier {
     public final /* synthetic */ String f$0;
 

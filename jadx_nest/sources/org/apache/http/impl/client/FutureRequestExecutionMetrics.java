@@ -3,7 +3,7 @@ package org.apache.http.impl.client;
 import java.util.concurrent.atomic.AtomicLong;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class FutureRequestExecutionMetrics {
     private final AtomicLong activeConnections = new AtomicLong();
     private final AtomicLong scheduledConnections = new AtomicLong();

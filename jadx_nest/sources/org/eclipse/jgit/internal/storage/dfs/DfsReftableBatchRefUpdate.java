@@ -17,7 +17,7 @@ import org.eclipse.jgit.internal.storage.reftable.ReftableWriter;
 import org.eclipse.jgit.lib.Ref;
 import org.eclipse.jgit.transport.ReceiveCommand;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsReftableBatchRefUpdate extends ReftableBatchRefUpdate {
     private static final int AVG_BYTES = 36;
     private final DfsObjDatabase odb;

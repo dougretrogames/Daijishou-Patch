@@ -10,7 +10,7 @@ import java.net.Socket;
 import java.util.LinkedList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class CloudShellCredential extends GoogleCredential {
     private static final int ACCESS_TOKEN_INDEX = 2;

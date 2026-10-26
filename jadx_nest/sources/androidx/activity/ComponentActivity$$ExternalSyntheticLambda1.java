@@ -2,8 +2,8 @@ package androidx.activity;
 
 import kotlin.jvm.functions.Function0;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class ComponentActivity$$ExternalSyntheticLambda1 implements Function0 {
     public final /* synthetic */ ComponentActivity f$0;
 

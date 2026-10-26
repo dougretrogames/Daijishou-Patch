@@ -1,6 +1,6 @@
 package org.apache.http.params;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface CoreConnectionPNames {
     public static final String CONNECTION_TIMEOUT = "http.connection.timeout";

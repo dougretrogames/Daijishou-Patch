@@ -9,14 +9,14 @@ import java.io.Serializable;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class StoredChannel implements Serializable {
     public static final String DEFAULT_DATA_STORE_ID = "StoredChannel";
     private static final long serialVersionUID = 1;
     private String clientToken;
     private Long expiration;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     private final String f34id;
     private final Lock lock;
     private final UnparsedNotificationCallback notificationCallback;

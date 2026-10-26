@@ -1,6 +1,6 @@
 package org.apache.http.concurrent;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface FutureCallback<T> {
     void cancelled();
 

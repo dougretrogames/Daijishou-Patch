@@ -46,7 +46,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class NotificationCompat {
     public static final int BADGE_ICON_LARGE = 2;
     public static final int BADGE_ICON_NONE = 0;
@@ -346,7 +346,7 @@ public class NotificationCompat {
             this.mAllowSystemGeneratedContextualActions = true;
         }
 
-        /* JADX WARN: 'this' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'this' call moved to the top of the method (can break code semantics) */
         @Deprecated
         public Builder(Context context) {
             this(context, (String) null);
@@ -1090,18 +1090,18 @@ public class NotificationCompat {
             }
         }
 
-        /* JADX WARN: Code duplicated, block: B:34:0x011c  */
-        /* JADX WARN: Code duplicated, block: B:36:0x012b  */
-        /* JADX WARN: Code duplicated, block: B:38:0x013b  */
-        /* JADX WARN: Code duplicated, block: B:40:0x0151  */
-        /* JADX WARN: Code duplicated, block: B:43:0x0162  */
-        /* JADX WARN: Code duplicated, block: B:45:0x0168  */
-        /* JADX WARN: Code duplicated, block: B:47:0x0191  */
-        /* JADX WARN: Code duplicated, block: B:48:0x019b  */
-        /* JADX WARN: Code duplicated, block: B:49:0x01ae  */
-        /* JADX WARN: Code duplicated, block: B:52:0x01b3  */
-        /* JADX WARN: Code duplicated, block: B:53:0x01b5  */
-        /* JADX WARN: Code duplicated, block: B:57:0x01be  */
+        /* WARN: Code duplicated, block: B:34:0x011c  */
+        /* WARN: Code duplicated, block: B:36:0x012b  */
+        /* WARN: Code duplicated, block: B:38:0x013b  */
+        /* WARN: Code duplicated, block: B:40:0x0151  */
+        /* WARN: Code duplicated, block: B:43:0x0162  */
+        /* WARN: Code duplicated, block: B:45:0x0168  */
+        /* WARN: Code duplicated, block: B:47:0x0191  */
+        /* WARN: Code duplicated, block: B:48:0x019b  */
+        /* WARN: Code duplicated, block: B:49:0x01ae  */
+        /* WARN: Code duplicated, block: B:52:0x01b3  */
+        /* WARN: Code duplicated, block: B:53:0x01b5  */
+        /* WARN: Code duplicated, block: B:57:0x01be  */
         public RemoteViews applyStandardTemplate(boolean z, int i, boolean z2) {
             boolean z3;
             boolean z4;
@@ -2970,7 +2970,7 @@ public class NotificationCompat {
                 return builder;
             }
 
-            /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
             public WearableExtender m3147clone() {
                 WearableExtender wearableExtender = new WearableExtender();
                 wearableExtender.mFlags = this.mFlags;
@@ -3256,7 +3256,7 @@ public class NotificationCompat {
             return Api20Impl.build(builderCreateBuilder);
         }
 
-        /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+        /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
         public WearableExtender m3148clone() {
             WearableExtender wearableExtender = new WearableExtender();
             wearableExtender.mActions = new ArrayList<>(this.mActions);

@@ -1,8 +1,8 @@
 package com.google.common.cache;
 
-/* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-/* JADX WARN: Unknown enum class pattern. Please report as an issue! */
-/* JADX INFO: loaded from: classes3.dex */
+/* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+/* WARN: Unknown enum class pattern. Please report as an issue! */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class RemovalCause {
     public static final RemovalCause EXPLICIT = new AnonymousClass1("EXPLICIT", 0);
@@ -34,7 +34,7 @@ public abstract class RemovalCause {
         this(str, i);
     }
 
-    /* JADX INFO: renamed from: com.google.common.cache.RemovalCause$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.cache.RemovalCause$1, reason: invalid class name */
     final enum AnonymousClass1 extends RemovalCause {
         @Override // com.google.common.cache.RemovalCause
         boolean wasEvicted() {
@@ -46,7 +46,7 @@ public abstract class RemovalCause {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.cache.RemovalCause$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.cache.RemovalCause$2, reason: invalid class name */
     final enum AnonymousClass2 extends RemovalCause {
         @Override // com.google.common.cache.RemovalCause
         boolean wasEvicted() {
@@ -58,7 +58,7 @@ public abstract class RemovalCause {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.cache.RemovalCause$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.cache.RemovalCause$3, reason: invalid class name */
     final enum AnonymousClass3 extends RemovalCause {
         @Override // com.google.common.cache.RemovalCause
         boolean wasEvicted() {
@@ -70,7 +70,7 @@ public abstract class RemovalCause {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.cache.RemovalCause$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.cache.RemovalCause$4, reason: invalid class name */
     final enum AnonymousClass4 extends RemovalCause {
         @Override // com.google.common.cache.RemovalCause
         boolean wasEvicted() {
@@ -82,7 +82,7 @@ public abstract class RemovalCause {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.cache.RemovalCause$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.cache.RemovalCause$5, reason: invalid class name */
     final enum AnonymousClass5 extends RemovalCause {
         @Override // com.google.common.cache.RemovalCause
         boolean wasEvicted() {

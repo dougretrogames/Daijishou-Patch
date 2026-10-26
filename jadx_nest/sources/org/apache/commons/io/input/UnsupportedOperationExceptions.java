@@ -1,6 +1,6 @@
 package org.apache.commons.io.input;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class UnsupportedOperationExceptions {
     private static final String MARK_RESET = "mark/reset";
 

@@ -8,7 +8,7 @@ import java.util.Map;
 import java.util.Set;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformedMap<K, V> extends AbstractInputCheckedMapDecorator<K, V> implements Serializable {
     private static final long serialVersionUID = 7023152376788900464L;
     protected final Transformer<? super K, ? extends K> keyTransformer;
@@ -69,7 +69,7 @@ public class TransformedMap<K, V> extends AbstractInputCheckedMapDecorator<K, V>
         return transformer == null ? k : transformer.apply(k);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     protected Map<K, V> transformMap(Map<? extends K, ? extends V> map) {
         if (map.isEmpty()) {
             return map;

@@ -23,7 +23,7 @@ import androidx.core.widget.TextViewCompat;
 import java.lang.ref.WeakReference;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class AppCompatTextHelper {
     private static final int MONOSPACE = 3;
     private static final int SANS = 1;
@@ -257,14 +257,14 @@ class AppCompatTextHelper {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.AppCompatTextHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.AppCompatTextHelper$1, reason: invalid class name */
     class AnonymousClass1 extends ResourcesCompat.FontCallback {
         final /* synthetic */ int val$fontWeight;
         final /* synthetic */ int val$style;
         final /* synthetic */ WeakReference val$textViewWeak;
 
         @Override // androidx.core.content.res.ResourcesCompat.FontCallback
-        /* JADX INFO: renamed from: onFontRetrievalFailed */
+        /* INFO: renamed from: onFontRetrievalFailed */
         public void m3150xb24343b7(int i) {
         }
 
@@ -275,7 +275,7 @@ class AppCompatTextHelper {
         }
 
         @Override // androidx.core.content.res.ResourcesCompat.FontCallback
-        /* JADX INFO: renamed from: onFontRetrieved */
+        /* INFO: renamed from: onFontRetrieved */
         public void m3151x46c88379(Typeface typeface) {
             int i;
             if (Build.VERSION.SDK_INT >= 28 && (i = this.val$fontWeight) != -1) {
@@ -299,7 +299,7 @@ class AppCompatTextHelper {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.AppCompatTextHelper$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.AppCompatTextHelper$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         final /* synthetic */ int val$style;
         final /* synthetic */ TextView val$textView;

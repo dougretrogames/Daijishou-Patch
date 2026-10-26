@@ -4,7 +4,7 @@ import io.opencensus.trace.Status;
 import javax.annotation.Nullable;
 import org.apache.http.HttpStatus;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class HttpTraceUtil {
     private static final Status STATUS_100 = Status.UNKNOWN.withDescription("Continue");
     private static final Status STATUS_101 = Status.UNKNOWN.withDescription("Switching Protocols");

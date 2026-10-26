@@ -2,7 +2,7 @@ package com.google.common.util.concurrent;
 
 import java.util.concurrent.Executor;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 enum DirectExecutor implements Executor {
     INSTANCE;

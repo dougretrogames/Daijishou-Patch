@@ -4,7 +4,7 @@ import android.content.Context;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class PlaybackGlue {
     private final Context mContext;
     private PlaybackGlueHost mPlaybackGlueHost;
@@ -90,7 +90,7 @@ public abstract class PlaybackGlue {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.PlaybackGlue$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.PlaybackGlue$1, reason: invalid class name */
     class AnonymousClass1 extends PlayerCallback {
         AnonymousClass1() {
         }
@@ -118,7 +118,7 @@ public abstract class PlaybackGlue {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.PlaybackGlue$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.PlaybackGlue$2, reason: invalid class name */
     class AnonymousClass2 extends PlaybackGlueHost.HostCallback {
         AnonymousClass2() {
         }

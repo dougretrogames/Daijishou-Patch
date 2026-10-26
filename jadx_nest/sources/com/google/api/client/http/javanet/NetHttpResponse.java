@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class NetHttpResponse extends LowLevelHttpResponse {
     private final HttpURLConnection connection;
     private final ArrayList<String> headerNames;

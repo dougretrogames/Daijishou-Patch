@@ -7,7 +7,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.widget.FrameLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class BrowseFrameLayout extends FrameLayout {
     private OnFocusSearchListener mListener;
     private OnChildFocusListener mOnChildFocusListener;

@@ -8,7 +8,7 @@ import java.math.BigInteger;
 import java.util.NoSuchElementException;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class DiscreteDomain<C extends Comparable> {
     final boolean supportsFastOffset;
@@ -57,7 +57,7 @@ public abstract class DiscreteDomain<C extends Comparable> {
             return Integer.valueOf(iIntValue - 1);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.DiscreteDomain
         public Integer offset(Integer origin, long distance) {
             CollectPreconditions.checkNonnegative(distance, "distance");
@@ -120,7 +120,7 @@ public abstract class DiscreteDomain<C extends Comparable> {
             return Long.valueOf(jLongValue - 1);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.DiscreteDomain
         public Long offset(Long origin, long distance) {
             CollectPreconditions.checkNonnegative(distance, "distance");
@@ -186,7 +186,7 @@ public abstract class DiscreteDomain<C extends Comparable> {
             return value.subtract(BigInteger.ONE);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.DiscreteDomain
         public BigInteger offset(BigInteger origin, long distance) {
             CollectPreconditions.checkNonnegative(distance, "distance");

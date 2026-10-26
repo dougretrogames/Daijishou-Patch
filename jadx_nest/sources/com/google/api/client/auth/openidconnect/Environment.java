@@ -1,6 +1,6 @@
 package com.google.api.client.auth.openidconnect;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class Environment {
     Environment() {
     }

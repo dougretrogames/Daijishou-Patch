@@ -2,7 +2,7 @@ package net.lingala.zip4j.tasks;
 
 import net.lingala.zip4j.model.Zip4jConfig;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractZipTaskParameters {
     protected Zip4jConfig zip4jConfig;
 

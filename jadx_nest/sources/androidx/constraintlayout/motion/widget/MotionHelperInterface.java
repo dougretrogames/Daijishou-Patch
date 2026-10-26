@@ -4,7 +4,7 @@ import android.graphics.Canvas;
 import android.view.View;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface MotionHelperInterface extends Animatable, MotionLayout.TransitionListener {
     boolean isDecorator();
 

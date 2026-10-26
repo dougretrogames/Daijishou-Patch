@@ -3,7 +3,7 @@ package org.eclipse.jgit.diff;
 import java.util.Iterator;
 import org.eclipse.jgit.diff.Sequence;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class Subsequence<S extends Sequence> extends Sequence {
     final S base;
     final int begin;

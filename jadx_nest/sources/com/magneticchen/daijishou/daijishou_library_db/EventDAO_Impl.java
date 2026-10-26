@@ -19,7 +19,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class EventDAO_Impl implements EventDAO {
     private final RoomDatabase __db;
     private final EntityDeletionOrUpdateAdapter<EventEntity> __deletionAdapterOfEventEntity;
@@ -44,7 +44,7 @@ public final class EventDAO_Impl implements EventDAO {
         this.__preparedStmtOfDeleteAllByPlayerId = new AnonymousClass8(__db);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$1, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$1, reason: invalid class name */
     class AnonymousClass1 extends EntityInsertionAdapter<EventEntity> {
         AnonymousClass1(RoomDatabase database) {
             super(database);
@@ -55,7 +55,7 @@ public final class EventDAO_Impl implements EventDAO {
             return "INSERT OR REPLACE INTO `EventEntity` (`id`,`event`,`timestamp`,`playable_item_id`,`platform_id`,`player_id`,`parcelable`,`extra`) VALUES (nullif(?, 0),?,?,?,?,?,?,?)";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityInsertionAdapter
         public void bind(final SupportSQLiteStatement statement, final EventEntity entity) {
             statement.bindLong(1, entity.getId());
@@ -91,7 +91,7 @@ public final class EventDAO_Impl implements EventDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$2, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$2, reason: invalid class name */
     class AnonymousClass2 extends EntityDeletionOrUpdateAdapter<EventEntity> {
         AnonymousClass2(RoomDatabase database) {
             super(database);
@@ -102,14 +102,14 @@ public final class EventDAO_Impl implements EventDAO {
             return "DELETE FROM `EventEntity` WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final EventEntity entity) {
             statement.bindLong(1, entity.getId());
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$3, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$3, reason: invalid class name */
     class AnonymousClass3 extends EntityDeletionOrUpdateAdapter<EventEntity> {
         AnonymousClass3(RoomDatabase database) {
             super(database);
@@ -120,7 +120,7 @@ public final class EventDAO_Impl implements EventDAO {
             return "UPDATE OR ABORT `EventEntity` SET `id` = ?,`event` = ?,`timestamp` = ?,`playable_item_id` = ?,`platform_id` = ?,`player_id` = ?,`parcelable` = ?,`extra` = ? WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final EventEntity entity) {
             statement.bindLong(1, entity.getId());
@@ -157,7 +157,7 @@ public final class EventDAO_Impl implements EventDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$4, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$4, reason: invalid class name */
     class AnonymousClass4 extends SharedSQLiteStatement {
         AnonymousClass4(RoomDatabase database) {
             super(database);
@@ -169,7 +169,7 @@ public final class EventDAO_Impl implements EventDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$5, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$5, reason: invalid class name */
     class AnonymousClass5 extends SharedSQLiteStatement {
         AnonymousClass5(RoomDatabase database) {
             super(database);
@@ -181,7 +181,7 @@ public final class EventDAO_Impl implements EventDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$6, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$6, reason: invalid class name */
     class AnonymousClass6 extends SharedSQLiteStatement {
         AnonymousClass6(RoomDatabase database) {
             super(database);
@@ -193,7 +193,7 @@ public final class EventDAO_Impl implements EventDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$7, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$7, reason: invalid class name */
     class AnonymousClass7 extends SharedSQLiteStatement {
         AnonymousClass7(RoomDatabase database) {
             super(database);
@@ -205,7 +205,7 @@ public final class EventDAO_Impl implements EventDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$8, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$8, reason: invalid class name */
     class AnonymousClass8 extends SharedSQLiteStatement {
         AnonymousClass8(RoomDatabase database) {
             super(database);
@@ -400,7 +400,7 @@ public final class EventDAO_Impl implements EventDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$9, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$9, reason: invalid class name */
     class AnonymousClass9 implements Callable<Integer> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -408,7 +408,7 @@ public final class EventDAO_Impl implements EventDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Integer call() throws Exception {
             Integer numValueOf = null;
@@ -446,7 +446,7 @@ public final class EventDAO_Impl implements EventDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$10, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$10, reason: invalid class name */
     class AnonymousClass10 implements Callable<List<Long>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -500,7 +500,7 @@ public final class EventDAO_Impl implements EventDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$11, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$11, reason: invalid class name */
     class AnonymousClass11 implements Callable<List<EventEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -590,7 +590,7 @@ public final class EventDAO_Impl implements EventDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$12, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$12, reason: invalid class name */
     class AnonymousClass12 implements Callable<EventEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -598,7 +598,7 @@ public final class EventDAO_Impl implements EventDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public EventEntity call() throws Exception {
             EventEntity eventEntity = null;
@@ -695,7 +695,7 @@ public final class EventDAO_Impl implements EventDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"EventEntity"}, false, new AnonymousClass13(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$13, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$13, reason: invalid class name */
     class AnonymousClass13 implements Callable<List<EventEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -795,7 +795,7 @@ public final class EventDAO_Impl implements EventDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"EventEntity"}, false, new AnonymousClass14(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$14, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_library_db.EventDAO_Impl$14, reason: invalid class name */
     class AnonymousClass14 implements Callable<EventEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -803,7 +803,7 @@ public final class EventDAO_Impl implements EventDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public EventEntity call() throws Exception {
             EventEntity eventEntity = null;

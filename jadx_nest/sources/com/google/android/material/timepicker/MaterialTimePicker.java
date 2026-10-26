@@ -27,7 +27,7 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MaterialTimePicker extends DialogFragment implements TimePickerView.OnDoubleTapListener {
     public static final int INPUT_MODE_CLOCK = 0;
     static final String INPUT_MODE_EXTRA = "TIME_PICKER_INPUT_MODE";
@@ -63,7 +63,7 @@ public final class MaterialTimePicker extends DialogFragment implements TimePick
     private int inputMode = 0;
     private int overrideThemeResId = 0;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static MaterialTimePicker newInstance(Builder builder) {
         MaterialTimePicker materialTimePicker = new MaterialTimePicker();
         Bundle bundle = new Bundle();
@@ -216,7 +216,7 @@ public final class MaterialTimePicker extends DialogFragment implements TimePick
         return viewGroup2;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.MaterialTimePicker$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.MaterialTimePicker$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         AnonymousClass1() {
         }
@@ -231,7 +231,7 @@ public final class MaterialTimePicker extends DialogFragment implements TimePick
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.MaterialTimePicker$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.MaterialTimePicker$2, reason: invalid class name */
     class AnonymousClass2 implements View.OnClickListener {
         AnonymousClass2() {
         }
@@ -246,7 +246,7 @@ public final class MaterialTimePicker extends DialogFragment implements TimePick
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.timepicker.MaterialTimePicker$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.timepicker.MaterialTimePicker$3, reason: invalid class name */
     class AnonymousClass3 implements View.OnClickListener {
         AnonymousClass3() {
         }
@@ -268,7 +268,7 @@ public final class MaterialTimePicker extends DialogFragment implements TimePick
         }
     }
 
-    /* JADX INFO: renamed from: lambda$onViewCreated$0$com-google-android-material-timepicker-MaterialTimePicker, reason: not valid java name */
+    /* INFO: renamed from: lambda$onViewCreated$0$com-google-android-material-timepicker-MaterialTimePicker, reason: not valid java name */
     /* synthetic */ void m3345xac73da03() {
         TimePickerPresenter timePickerPresenter = this.activePresenter;
         if (timePickerPresenter instanceof TimePickerTextInputPresenter) {
@@ -320,7 +320,7 @@ public final class MaterialTimePicker extends DialogFragment implements TimePick
         this.timePickerTextInputPresenter.resetChecked();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void updateInputMode(MaterialButton materialButton) {
         if (materialButton == null || this.timePickerView == null || this.textInputStub == null) {
             return;

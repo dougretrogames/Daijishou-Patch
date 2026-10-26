@@ -12,7 +12,7 @@ import javax.annotation.Nullable;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class DecompressorRegistry {
     static final Joiner ACCEPT_ENCODING_JOINER = Joiner.on(AbstractJsonLexerKt.COMMA);
     private static final DecompressorRegistry DEFAULT_INSTANCE = emptyInstance().with(new Codec.Gzip(), true).with(Codec.Identity.NONE, false);

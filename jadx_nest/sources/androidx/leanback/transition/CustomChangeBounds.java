@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import java.util.HashMap;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class CustomChangeBounds extends ChangeBounds {
     int mDefaultStartDelay;
     final HashMap<View, Integer> mViewStartDelays = new HashMap<>();

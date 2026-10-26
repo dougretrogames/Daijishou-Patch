@@ -8,8 +8,8 @@ import kotlin.Unit;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: HttpClient.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: HttpClient.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u000e\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\t\n\u0000\u0010\u0000\u001a\u00020\u00012\u0006\u0010\u0002\u001a\u00020\u0003H\n¢\u0006\u0002\b\u0004"}, d2 = {"<anonymous>", "", "writtenBytes", "", "invoke"}, k = 3, mv = {1, 4, 0})
 final class HttpClient$setBodyIfDoOutput$outputStream$1 extends Lambda implements Function1<Long, Unit> {
     final /* synthetic */ HttpURLConnection $connection;
@@ -17,7 +17,7 @@ final class HttpClient$setBodyIfDoOutput$outputStream$1 extends Lambda implement
     final /* synthetic */ Long $totalBytes;
     final /* synthetic */ HttpClient this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     HttpClient$setBodyIfDoOutput$outputStream$1(HttpClient httpClient, Request request, Long l, HttpURLConnection httpURLConnection) {
         super(1);
         this.this$0 = httpClient;

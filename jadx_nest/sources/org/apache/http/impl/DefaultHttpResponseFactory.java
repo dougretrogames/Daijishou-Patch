@@ -11,7 +11,7 @@ import org.apache.http.message.BasicStatusLine;
 import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DefaultHttpResponseFactory implements HttpResponseFactory {
     public static final DefaultHttpResponseFactory INSTANCE = new DefaultHttpResponseFactory();
     protected final ReasonPhraseCatalog reasonCatalog;

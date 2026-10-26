@@ -19,7 +19,7 @@ import java.io.IOException;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AnimationUtilsCompat {
     public static Interpolator loadInterpolator(Context context, int i) throws Resources.NotFoundException {
         return AnimationUtils.loadInterpolator(context, i);

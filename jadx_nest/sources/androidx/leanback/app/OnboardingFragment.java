@@ -27,7 +27,7 @@ import androidx.leanback.R;
 import androidx.leanback.widget.PagingIndicator;
 import java.util.ArrayList;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public abstract class OnboardingFragment extends Fragment {
     private static final boolean DEBUG = false;
@@ -102,7 +102,7 @@ public abstract class OnboardingFragment extends Fragment {
         return -1;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.OnboardingFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.OnboardingFragment$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnClickListener {
         AnonymousClass1() {
         }
@@ -119,7 +119,7 @@ public abstract class OnboardingFragment extends Fragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.OnboardingFragment$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.OnboardingFragment$2, reason: invalid class name */
     class AnonymousClass2 implements View.OnKeyListener {
         AnonymousClass2() {
         }
@@ -243,7 +243,7 @@ public abstract class OnboardingFragment extends Fragment {
         onLogoAnimationFinished();
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.OnboardingFragment$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.OnboardingFragment$3, reason: invalid class name */
     class AnonymousClass3 implements ViewTreeObserver.OnPreDrawListener {
         AnonymousClass3() {
         }
@@ -405,7 +405,7 @@ public abstract class OnboardingFragment extends Fragment {
         return true;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.OnboardingFragment$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.OnboardingFragment$4, reason: invalid class name */
     class AnonymousClass4 extends AnimatorListenerAdapter {
         final /* synthetic */ Context val$context;
 
@@ -505,7 +505,7 @@ public abstract class OnboardingFragment extends Fragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.OnboardingFragment$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.OnboardingFragment$5, reason: invalid class name */
     class AnonymousClass5 extends AnimatorListenerAdapter {
         AnonymousClass5() {
         }
@@ -584,7 +584,7 @@ public abstract class OnboardingFragment extends Fragment {
         onPageChanged(onboardingFragment.mCurrentPageIndex, i);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.OnboardingFragment$6, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.OnboardingFragment$6, reason: invalid class name */
     class AnonymousClass6 extends AnimatorListenerAdapter {
         final /* synthetic */ int val$currentPageIndex;
 
@@ -599,7 +599,7 @@ public abstract class OnboardingFragment extends Fragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.OnboardingFragment$7, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.OnboardingFragment$7, reason: invalid class name */
     class AnonymousClass7 extends AnimatorListenerAdapter {
         AnonymousClass7() {
         }
@@ -610,7 +610,7 @@ public abstract class OnboardingFragment extends Fragment {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.app.OnboardingFragment$8, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.app.OnboardingFragment$8, reason: invalid class name */
     class AnonymousClass8 extends AnimatorListenerAdapter {
         AnonymousClass8() {
         }

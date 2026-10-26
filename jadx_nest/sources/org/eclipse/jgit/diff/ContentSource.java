@@ -13,7 +13,7 @@ import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.treewalk.WorkingTreeIterator;
 import org.eclipse.jgit.treewalk.filter.PathFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class ContentSource {
     public void close() {
     }
@@ -96,7 +96,7 @@ public abstract class ContentSource {
             return new AnonymousClass1(this.ptr.getEntryContentLength());
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.diff.ContentSource$WorkingTreeSource$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.diff.ContentSource$WorkingTreeSource$1, reason: invalid class name */
         class AnonymousClass1 extends ObjectLoader {
             private final /* synthetic */ long val$entrySize;
 

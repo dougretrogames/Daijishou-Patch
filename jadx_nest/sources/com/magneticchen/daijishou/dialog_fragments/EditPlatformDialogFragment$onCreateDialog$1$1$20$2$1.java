@@ -24,8 +24,8 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: compiled from: EditPlatformDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: EditPlatformDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.EditPlatformDialogFragment$onCreateDialog$1$1$20$2$1", f = "EditPlatformDialogFragment.kt", i = {}, l = {798}, m = "invokeSuspendImpl", n = {}, s = {})
 final class EditPlatformDialogFragment$onCreateDialog$1$1$20$2$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -39,7 +39,7 @@ final class EditPlatformDialogFragment$onCreateDialog$1$1$20$2$1 extends com.mag
     int label;
     final /* synthetic */ EditPlatformDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     EditPlatformDialogFragment$onCreateDialog$1$1$20$2$1(Context context, EditPlatformDialogFragment editPlatformDialogFragment, long j, File file, PlatformEntity platformEntity, AlertDialog alertDialog, PlatformEntity platformEntity2, Continuation<?> continuation) {
         super(2, continuation);
         this.$context = context;
@@ -100,8 +100,8 @@ final class EditPlatformDialogFragment$onCreateDialog$1$1$20$2$1 extends com.mag
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.EditPlatformDialogFragment$onCreateDialog$1$1$20$2$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: EditPlatformDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.EditPlatformDialogFragment$onCreateDialog$1$1$20$2$1$1, reason: invalid class name */
+    /* INFO: compiled from: EditPlatformDialogFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.EditPlatformDialogFragment$onCreateDialog$1$1$20$2$1$1", f = "EditPlatformDialogFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -113,7 +113,7 @@ final class EditPlatformDialogFragment$onCreateDialog$1$1$20$2$1 extends com.mag
         int label;
         final /* synthetic */ EditPlatformDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(PlatformEntity platformEntity, long j, EditPlatformDialogFragment editPlatformDialogFragment, AlertDialog alertDialog, Context context, PlatformEntity platformEntity2, Continuation<?> continuation) {
             super(2, continuation);
             this.$newPlatformEntity = platformEntity;

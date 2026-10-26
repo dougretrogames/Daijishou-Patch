@@ -7,7 +7,7 @@ import android.graphics.drawable.Drawable;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ShadowOverlayHelper {
     public static final int SHADOW_DYNAMIC = 3;
     public static final int SHADOW_NONE = 1;
@@ -236,7 +236,7 @@ public final class ShadowOverlayHelper {
         return view.getTag(androidx.leanback.R.id.lb_shadow_impl);
     }
 
-    /* JADX WARN: Code duplicated, block: B:5:0x0007 A[PHI: r0
+    /* WARN: Code duplicated, block: B:5:0x0007 A[PHI: r0
   0x0007: PHI (r0v4 float) = (r0v0 float), (r0v1 float) binds: [B:4:0x0005, B:7:0x000d] A[DONT_GENERATE, DONT_INLINE]] */
     static void setShadowFocusLevel(Object obj, int i, float f) {
         if (obj != null) {

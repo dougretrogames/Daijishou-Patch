@@ -16,7 +16,7 @@ import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.revwalk.RevObject;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReceiveCommand {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$lib$RefUpdate$Result;
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$transport$ReceiveCommand$Type;
@@ -46,7 +46,7 @@ public class ReceiveCommand {
         LOCK_FAILURE,
         OK;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Result[] valuesCustom() {
             Result[] resultArrValuesCustom = values();
             int length = resultArrValuesCustom.length;
@@ -62,7 +62,7 @@ public class ReceiveCommand {
         UPDATE_NONFASTFORWARD,
         DELETE;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Type[] valuesCustom() {
             Type[] typeArrValuesCustom = values();
             int length = typeArrValuesCustom.length;

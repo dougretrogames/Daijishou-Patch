@@ -6,7 +6,7 @@ import android.view.KeyEvent;
 import android.view.MotionEvent;
 import androidx.viewpager.widget.ViewPager;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class LeanbackViewPager extends ViewPager {
     private boolean mEnableKeyEvent;
     private boolean mTouchEnabled;

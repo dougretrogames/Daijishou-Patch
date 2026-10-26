@@ -5,7 +5,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.apache.http.conn.routing.HttpRoute;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public final class ConnPerRouteBean implements ConnPerRoute {
     public static final int DEFAULT_MAX_CONNECTIONS_PER_ROUTE = 2;

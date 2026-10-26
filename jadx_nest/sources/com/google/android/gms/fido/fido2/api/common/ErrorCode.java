@@ -4,8 +4,8 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import java.util.Locale;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 public enum ErrorCode implements Parcelable {
     NOT_SUPPORTED_ERR(9),
     INVALID_STATE_ERR(11),
@@ -23,7 +23,7 @@ public enum ErrorCode implements Parcelable {
     public static final Parcelable.Creator<ErrorCode> CREATOR = new zzw();
     private final int zzb;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class UnsupportedErrorCodeException extends Exception {
         public UnsupportedErrorCodeException(int i) {
             super(String.format(Locale.US, "Error code %d is not supported", Integer.valueOf(i)));

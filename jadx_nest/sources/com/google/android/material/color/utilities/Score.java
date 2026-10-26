@@ -8,7 +8,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Score {
     private static final int BLUE_500 = -12417548;
     private static final double CUTOFF_CHROMA = 5.0d;

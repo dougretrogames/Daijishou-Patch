@@ -37,7 +37,7 @@ import org.eclipse.jgit.treewalk.AbstractTreeIterator;
 import org.eclipse.jgit.treewalk.FileTreeIterator;
 import org.eclipse.jgit.treewalk.TreeWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StashApplyCommand extends GitCommand<ObjectId> {
     private static final String DEFAULT_REF = "stash@{0}";
     private ContentMergeStrategy contentStrategy;
@@ -80,14 +80,14 @@ public class StashApplyCommand extends GitCommand<ObjectId> {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:107:0x0208 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:117:0x021b A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:119:? A[Catch: all -> 0x020c, SYNTHETIC, TRY_LEAVE, TryCatch #5 {all -> 0x020c, blocks: (B:87:0x0210, B:88:0x0213, B:83:0x0208), top: B:107:0x0208 }] */
-    /* JADX WARN: Code duplicated, block: B:120:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:81:0x0204  */
-    /* JADX WARN: Code duplicated, block: B:82:0x0206 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:87:0x0210 A[Catch: all -> 0x020c, TryCatch #5 {all -> 0x020c, blocks: (B:87:0x0210, B:88:0x0213, B:83:0x0208), top: B:107:0x0208 }] */
-    /* JADX WARN: Code duplicated, block: B:93:0x0219 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:107:0x0208 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:117:0x021b A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:119:? A[Catch: all -> 0x020c, SYNTHETIC, TRY_LEAVE, TryCatch #5 {all -> 0x020c, blocks: (B:87:0x0210, B:88:0x0213, B:83:0x0208), top: B:107:0x0208 }] */
+    /* WARN: Code duplicated, block: B:120:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:81:0x0204  */
+    /* WARN: Code duplicated, block: B:82:0x0206 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:87:0x0210 A[Catch: all -> 0x020c, TryCatch #5 {all -> 0x020c, blocks: (B:87:0x0210, B:88:0x0213, B:83:0x0208), top: B:107:0x0208 }] */
+    /* WARN: Code duplicated, block: B:93:0x0219 A[DONT_INVERT] */
     @Override // org.eclipse.jgit.api.GitCommand, java.util.concurrent.Callable
     public ObjectId call() throws Throwable {
         Throwable th;
@@ -322,9 +322,9 @@ public class StashApplyCommand extends GitCommand<ObjectId> {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:43:0x00b7 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:64:0x00b9 A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:73:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:43:0x00b7 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:64:0x00b9 A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:73:? A[RETURN, SYNTHETIC] */
     private void resetUntracked(RevTree revTree) throws Throwable {
         Throwable th;
         Throwable th2;

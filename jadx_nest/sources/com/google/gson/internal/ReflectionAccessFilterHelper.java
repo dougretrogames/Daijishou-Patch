@@ -6,7 +6,7 @@ import java.lang.reflect.Method;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class ReflectionAccessFilterHelper {
     private ReflectionAccessFilterHelper() {
     }
@@ -76,11 +76,11 @@ public class ReflectionAccessFilterHelper {
             INSTANCE = anonymousClass1;
         }
 
-        /* JADX INFO: renamed from: com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker$1, reason: invalid class name */
         class AnonymousClass1 extends AccessChecker {
             final /* synthetic */ Method val$canAccessMethod;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(Method method) {
                 super(null);
                 this.val$canAccessMethod = method;
@@ -96,7 +96,7 @@ public class ReflectionAccessFilterHelper {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker$2, reason: invalid class name */
         class AnonymousClass2 extends AccessChecker {
             @Override // com.google.gson.internal.ReflectionAccessFilterHelper.AccessChecker
             public boolean canAccess(AccessibleObject accessibleObject, Object obj) {

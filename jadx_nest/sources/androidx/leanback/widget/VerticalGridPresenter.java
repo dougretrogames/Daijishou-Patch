@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import androidx.leanback.system.Settings;
 import androidx.leanback.transition.TransitionHelper;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class VerticalGridPresenter extends Presenter {
     private static final boolean DEBUG = false;
     private static final String TAG = "GridPresenter";
@@ -43,7 +43,7 @@ public class VerticalGridPresenter extends Presenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.VerticalGridPresenter$VerticalGridItemBridgeAdapter$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.VerticalGridPresenter$VerticalGridItemBridgeAdapter$1, reason: invalid class name */
         class AnonymousClass1 implements View.OnClickListener {
             final /* synthetic */ ItemBridgeAdapter.ViewHolder val$itemViewHolder;
 
@@ -190,7 +190,7 @@ public class VerticalGridPresenter extends Presenter {
         viewHolder.getGridView().setOnChildSelectedListener(new AnonymousClass1(viewHolder));
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.VerticalGridPresenter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.VerticalGridPresenter$1, reason: invalid class name */
     class AnonymousClass1 implements OnChildSelectedListener {
         final /* synthetic */ ViewHolder val$gridViewHolder;
 

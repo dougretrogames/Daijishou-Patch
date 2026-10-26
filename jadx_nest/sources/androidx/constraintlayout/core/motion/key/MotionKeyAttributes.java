@@ -9,7 +9,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionKeyAttributes extends MotionKey {
     private static final boolean DEBUG = false;
     public static final int KEY_TYPE = 1;
@@ -34,7 +34,7 @@ public class MotionKeyAttributes extends MotionKey {
     private float mProgress = Float.NaN;
 
     @Override // androidx.constraintlayout.core.motion.key.MotionKey
-    /* JADX INFO: renamed from: clone */
+    /* INFO: renamed from: clone */
     public MotionKey mo3140clone() {
         return null;
     }
@@ -96,7 +96,7 @@ public class MotionKeyAttributes extends MotionKey {
         }
     }
 
-    /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+    /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
     @Override // androidx.constraintlayout.core.motion.key.MotionKey
     public void addValues(HashMap<String, SplineSet> map) {
         for (String str : map.keySet()) {

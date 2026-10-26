@@ -5,7 +5,7 @@ import java.util.Collection;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.http.HttpHost;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RequestConfig implements Cloneable {
     public static final RequestConfig DEFAULT = new Builder().build();
     private final boolean authenticationEnabled;
@@ -124,7 +124,7 @@ public class RequestConfig implements Cloneable {
         return this.normalizeUri;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public RequestConfig clone() throws CloneNotSupportedException {
         return (RequestConfig) super.clone();
     }

@@ -3,7 +3,7 @@ package org.eclipse.jgit.util;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IntList {
     private int count;
     private int[] entries;

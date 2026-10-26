@@ -10,7 +10,7 @@ import org.apache.http.entity.HttpEntityWrapper;
 import org.apache.http.message.BasicHeader;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class GzipCompressingEntity extends HttpEntityWrapper {
     private static final String GZIP_CODEC = "gzip";
 

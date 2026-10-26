@@ -28,7 +28,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class GlideBuilder {
     private GlideExecutor animationExecutor;
     private ArrayPool arrayPool;
@@ -72,7 +72,7 @@ public final class GlideBuilder {
         return this;
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.GlideBuilder$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.GlideBuilder$1, reason: invalid class name */
     class AnonymousClass1 implements Glide.RequestOptionsFactory {
         AnonymousClass1() {
         }
@@ -123,7 +123,7 @@ public final class GlideBuilder {
         return this;
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.GlideBuilder$2, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.GlideBuilder$2, reason: invalid class name */
     class AnonymousClass2 implements Glide.RequestOptionsFactory {
         final /* synthetic */ RequestOptions val$requestOptions;
 

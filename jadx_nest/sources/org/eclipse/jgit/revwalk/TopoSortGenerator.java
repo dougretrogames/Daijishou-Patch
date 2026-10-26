@@ -2,7 +2,7 @@ package org.eclipse.jgit.revwalk;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class TopoSortGenerator extends Generator {
     private static final int TOPO_DELAY = 32;
     private final int outputType;

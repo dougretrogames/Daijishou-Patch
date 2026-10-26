@@ -3,7 +3,7 @@ package com.google.protobuf;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 public interface Message extends MessageLite, MessageOrBuilder {
 
@@ -20,7 +20,7 @@ public interface Message extends MessageLite, MessageOrBuilder {
 
         Builder clearOneof(Descriptors.OneofDescriptor oneof);
 
-        /* JADX INFO: renamed from: clone */
+        /* INFO: renamed from: clone */
         Builder m3448clone();
 
         @Override // com.google.protobuf.MessageOrBuilder

@@ -13,7 +13,7 @@ import java.util.ListIterator;
 import java.util.Map;
 import java.util.TreeMap;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class UnknownFieldSet implements MessageLite {
     private final TreeMap<Integer, Field> fields;
     private static final UnknownFieldSet defaultInstance = new UnknownFieldSet(new TreeMap());
@@ -212,7 +212,7 @@ public final class UnknownFieldSet implements MessageLite {
         private Builder() {
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static Builder create() {
             return new Builder();
         }
@@ -248,7 +248,7 @@ public final class UnknownFieldSet implements MessageLite {
         }
 
         @Override // com.google.protobuf.MessageLite.Builder, com.google.protobuf.Message.Builder
-        /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+        /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
         public Builder m3448clone() {
             Builder builderNewBuilder = UnknownFieldSet.newBuilder();
             for (Map.Entry<Integer, Field.Builder> entry : this.fieldBuilders.entrySet()) {
@@ -627,7 +627,7 @@ public final class UnknownFieldSet implements MessageLite {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void writeAsMessageSetExtensionTo(int fieldNumber, Writer writer) throws IOException {
             if (writer.fieldOrder() == Writer.FieldOrder.DESCENDING) {
                 List<ByteString> list = this.lengthDelimited;
@@ -658,12 +658,12 @@ public final class UnknownFieldSet implements MessageLite {
             private Builder() {
             }
 
-            /* JADX INFO: Access modifiers changed from: private */
+            /* INFO: Access modifiers changed from: private */
             public static Builder create() {
                 return new Builder();
             }
 
-            /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+            /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
             public Builder m3449clone() {
                 Field field = new Field(null);
                 if (this.result.varint == null) {

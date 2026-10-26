@@ -6,7 +6,7 @@ import javax.net.ssl.SSLSession;
 import org.apache.http.HttpClientConnection;
 import org.apache.http.HttpInetConnection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface ManagedHttpClientConnection extends HttpClientConnection, HttpInetConnection {
     void bind(Socket socket) throws IOException;
 

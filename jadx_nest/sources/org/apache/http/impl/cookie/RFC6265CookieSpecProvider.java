@@ -8,7 +8,7 @@ import org.apache.http.cookie.CookieSpecProvider;
 import org.apache.http.cookie.MalformedCookieException;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RFC6265CookieSpecProvider implements CookieSpecProvider {
     private final CompatibilityLevel compatibilityLevel;
     private volatile CookieSpec cookieSpec;
@@ -52,7 +52,7 @@ public class RFC6265CookieSpecProvider implements CookieSpecProvider {
         return this.cookieSpec;
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.cookie.RFC6265CookieSpecProvider$2, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.cookie.RFC6265CookieSpecProvider$2, reason: invalid class name */
     static /* synthetic */ class AnonymousClass2 {
         static final /* synthetic */ int[] $SwitchMap$org$apache$http$impl$cookie$RFC6265CookieSpecProvider$CompatibilityLevel;
 
@@ -70,7 +70,7 @@ public class RFC6265CookieSpecProvider implements CookieSpecProvider {
         }
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.cookie.RFC6265CookieSpecProvider$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.cookie.RFC6265CookieSpecProvider$1, reason: invalid class name */
     class AnonymousClass1 extends BasicPathHandler {
         @Override // org.apache.http.impl.cookie.BasicPathHandler, org.apache.http.cookie.CookieAttributeHandler
         public void validate(Cookie cookie, CookieOrigin cookieOrigin) throws MalformedCookieException {

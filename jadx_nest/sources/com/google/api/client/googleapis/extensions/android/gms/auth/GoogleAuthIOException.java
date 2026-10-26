@@ -4,7 +4,7 @@ import com.google.android.gms.auth.GoogleAuthException;
 import com.google.api.client.util.Preconditions;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GoogleAuthIOException extends IOException {
     private static final long serialVersionUID = 1;
 

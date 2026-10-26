@@ -15,7 +15,7 @@ import androidx.core.graphics.drawable.DrawableCompat;
 import androidx.core.internal.view.SupportMenuItem;
 import androidx.core.view.ActionProvider;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ActionMenuItem implements SupportMenuItem {
     private static final int CHECKABLE = 1;
     private static final int CHECKED = 2;

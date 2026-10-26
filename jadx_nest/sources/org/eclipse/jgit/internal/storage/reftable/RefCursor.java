@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.reftable;
 import java.io.IOException;
 import org.eclipse.jgit.lib.Ref;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class RefCursor implements AutoCloseable {
     @Override // java.lang.AutoCloseable
     public abstract void close();

@@ -8,7 +8,7 @@ import com.bumptech.glide.RequestManager;
 import com.bumptech.glide.request.Request;
 import com.bumptech.glide.request.transition.Transition;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class PreloadTarget<Z> extends CustomTarget<Z> {
     private static final Handler HANDLER = new Handler(Looper.getMainLooper(), new AnonymousClass1());
     private static final int MESSAGE_CLEAR = 1;
@@ -18,7 +18,7 @@ public final class PreloadTarget<Z> extends CustomTarget<Z> {
     public void onLoadCleared(Drawable drawable) {
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.request.target.PreloadTarget$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.request.target.PreloadTarget$1, reason: invalid class name */
     class AnonymousClass1 implements Handler.Callback {
         AnonymousClass1() {
         }

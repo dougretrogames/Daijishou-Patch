@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public final class CollectionMembershipType extends GeneratedMessage implements CollectionMembershipTypeOrBuilder {
     public static final int ALLOWED_COLLECTION_TYPE_FIELD_NUMBER = 4;
     public static final int CHECKSUM_FIELD_NUMBER = 7;
@@ -256,18 +256,18 @@ public final class CollectionMembershipType extends GeneratedMessage implements 
         return DEFAULT_INSTANCE.toBuilder();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static Builder newBuilder(CollectionMembershipType collectionMembershipType) {
         return (Builder) DEFAULT_INSTANCE.toBuilder().mergeFrom((Message) collectionMembershipType);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.protobuf.MessageLite, com.google.protobuf.Message
     public Builder toBuilder() {
         return this == DEFAULT_INSTANCE ? new Builder((CollectionMembershipTypeIA) null) : (Builder) new Builder((CollectionMembershipTypeIA) null).mergeFrom((Message) this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent builderParent) {
         return new Builder(builderParent, null);
@@ -884,7 +884,7 @@ public final class CollectionMembershipType extends GeneratedMessage implements 
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: proto.CollectionMembershipType$1, reason: invalid class name */
+    /* INFO: renamed from: proto.CollectionMembershipType$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<CollectionMembershipType> {
         AnonymousClass1() {
         }

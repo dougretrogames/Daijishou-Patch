@@ -46,7 +46,7 @@ import org.eclipse.jgit.revwalk.RevWalk;
 import org.eclipse.jgit.treewalk.TreeWalk;
 import org.eclipse.jgit.util.FileUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class WalkFetchConnection extends BaseFetchConnection {
     private final RevFlag COMPLETE;
     private final RevFlag IN_WORK_QUEUE;
@@ -75,7 +75,7 @@ class WalkFetchConnection extends BaseFetchConnection {
         return true;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     WalkFetchConnection(WalkTransport walkTransport, WalkRemoteObjectDatabase walkRemoteObjectDatabase) {
         Transport transport = (Transport) walkTransport;
         Repository repository = transport.local;
@@ -609,7 +609,7 @@ class WalkFetchConnection extends BaseFetchConnection {
             }
         }
 
-        /* JADX WARN: Bottom block not found for handler: all -> 0x00c7 */
+        /* WARN: Bottom block not found for handler: all -> 0x00c7 */
         /*
             Code decompiled incorrectly, please refer to instructions dump.
             To view partially-correct add '--show-bad-code' argument

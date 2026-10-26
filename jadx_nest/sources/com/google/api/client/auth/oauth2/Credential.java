@@ -22,7 +22,7 @@ import java.util.concurrent.locks.ReentrantLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Credential implements HttpExecuteInterceptor, HttpRequestInitializer, HttpUnsuccessfulResponseHandler {
     static final Logger LOGGER = Logger.getLogger(Credential.class.getName());
     private String accessToken;
@@ -60,7 +60,7 @@ public class Credential implements HttpExecuteInterceptor, HttpRequestInitialize
         this.clock = (Clock) Preconditions.checkNotNull(builder.clock);
     }
 
-    /* JADX WARN: Code duplicated, block: B:12:0x0026 A[Catch: all -> 0x002e, TRY_ENTER, TRY_LEAVE, TryCatch #0 {all -> 0x002e, blocks: (B:3:0x0005, B:6:0x000f, B:12:0x0026, B:8:0x0019), top: B:17:0x0005 }] */
+    /* WARN: Code duplicated, block: B:12:0x0026 A[Catch: all -> 0x002e, TRY_ENTER, TRY_LEAVE, TryCatch #0 {all -> 0x002e, blocks: (B:3:0x0005, B:6:0x000f, B:12:0x0026, B:8:0x0019), top: B:17:0x0005 }] */
     @Override // com.google.api.client.http.HttpExecuteInterceptor
     public void intercept(HttpRequest httpRequest) throws IOException {
         this.lock.lock();

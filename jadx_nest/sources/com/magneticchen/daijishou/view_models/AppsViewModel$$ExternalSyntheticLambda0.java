@@ -3,8 +3,8 @@ package com.magneticchen.daijishou.view_models;
 import android.app.Activity;
 import android.content.pm.ResolveInfo;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class AppsViewModel$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ ResolveInfo f$0;
     public final /* synthetic */ Activity f$1;

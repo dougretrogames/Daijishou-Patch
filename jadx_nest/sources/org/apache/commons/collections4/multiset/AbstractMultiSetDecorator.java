@@ -4,7 +4,7 @@ import java.util.Set;
 import org.apache.commons.collections4.MultiSet;
 import org.apache.commons.collections4.collection.AbstractCollectionDecorator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractMultiSetDecorator<E> extends AbstractCollectionDecorator<E> implements MultiSet<E> {
     private static final long serialVersionUID = 20150610;
 
@@ -20,7 +20,7 @@ public abstract class AbstractMultiSetDecorator<E> extends AbstractCollectionDec
         return decorated().add(e, i);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public MultiSet<E> decorated() {
         return (MultiSet) super.decorated();

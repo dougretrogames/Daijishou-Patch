@@ -2,7 +2,7 @@ package org.apache.commons.io.input;
 
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CloseShieldInputStream extends ProxyInputStream {
     public static InputStream systemIn(InputStream inputStream) {
         return inputStream == System.in ? wrap(inputStream) : inputStream;

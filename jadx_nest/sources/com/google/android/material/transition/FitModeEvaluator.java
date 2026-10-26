@@ -2,7 +2,7 @@ package com.google.android.material.transition;
 
 import android.graphics.RectF;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 interface FitModeEvaluator {
     void applyMask(RectF rectF, float f, FitModeResult fitModeResult);
 

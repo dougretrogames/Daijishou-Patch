@@ -3,7 +3,7 @@ package org.apache.commons.io.input;
 import java.io.IOException;
 import java.io.Reader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BoundedReader extends Reader {
     private static final int INVALID = -1;
     private int charsRead;

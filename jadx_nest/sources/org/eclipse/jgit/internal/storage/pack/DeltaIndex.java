@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DeltaIndex {
     static final int BLKSZ = 16;
     private static final int MAX_CHAIN_LENGTH = 64;
@@ -105,19 +105,19 @@ public class DeltaIndex {
         encode(outputStream, bArr, 0);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r13v3, types: [int] */
-    /* JADX WARN: Type inference failed for: r14v0 */
-    /* JADX WARN: Type inference failed for: r14v1 */
-    /* JADX WARN: Type inference failed for: r14v2, types: [int] */
-    /* JADX WARN: Type inference failed for: r14v3 */
-    /* JADX WARN: Type inference failed for: r14v4 */
-    /* JADX WARN: Type inference failed for: r14v5 */
-    /* JADX WARN: Type inference failed for: r14v6 */
-    /* JADX WARN: Type inference failed for: r14v7 */
-    /* JADX WARN: Type inference failed for: r4v12 */
-    /* JADX WARN: Type inference failed for: r4v8 */
-    /* JADX WARN: Type inference failed for: r4v9, types: [int] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r13v3, types: [int] */
+    /* WARN: Type inference failed for: r14v0 */
+    /* WARN: Type inference failed for: r14v1 */
+    /* WARN: Type inference failed for: r14v2, types: [int] */
+    /* WARN: Type inference failed for: r14v3 */
+    /* WARN: Type inference failed for: r14v4 */
+    /* WARN: Type inference failed for: r14v5 */
+    /* WARN: Type inference failed for: r14v6 */
+    /* WARN: Type inference failed for: r14v7 */
+    /* WARN: Type inference failed for: r4v12 */
+    /* WARN: Type inference failed for: r4v8 */
+    /* WARN: Type inference failed for: r4v9, types: [int] */
     public boolean encode(OutputStream outputStream, byte[] bArr, int i) throws IOException {
         int i2;
         int i3;

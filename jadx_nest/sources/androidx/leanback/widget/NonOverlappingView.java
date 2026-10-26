@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class NonOverlappingView extends View {
     @Override // android.view.View
     public boolean hasOverlappingRendering() {

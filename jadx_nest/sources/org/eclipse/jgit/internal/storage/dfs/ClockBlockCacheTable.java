@@ -15,7 +15,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.internal.storage.pack.PackExt;
 import org.eclipse.jgit.lib.CommitConfig$$ExternalSyntheticBackport0;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class ClockBlockCacheTable implements DfsBlockCacheTable {
     private final int blockSize;
     private DfsBlockCache.Ref clockHand;
@@ -366,7 +366,7 @@ final class ClockBlockCacheTable implements DfsBlockCacheTable {
             this.ref = ref;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static HashEntry clean(HashEntry hashEntry) {
             while (hashEntry != null && hashEntry.ref.next == null) {
                 hashEntry = hashEntry.next;

@@ -10,7 +10,7 @@ import android.widget.TextView;
 import io.noties.markwon.core.MarkwonTheme;
 import io.noties.markwon.utils.LeadingMarginUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class OrderedListItemSpan implements LeadingMarginSpan {
     private int margin;
     private final String number;

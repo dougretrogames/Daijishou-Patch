@@ -10,7 +10,7 @@ import androidx.constraintlayout.core.widgets.Guideline;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Direct {
     private static final boolean APPLY_MATCH_PARENT = false;
     private static final boolean DEBUG = false;
@@ -487,34 +487,34 @@ public class Direct {
         return true;
     }
 
-    /* JADX WARN: Code duplicated, block: B:100:0x01cd  */
-    /* JADX WARN: Code duplicated, block: B:104:0x01e1  */
-    /* JADX WARN: Code duplicated, block: B:106:0x01e5  */
-    /* JADX WARN: Code duplicated, block: B:107:0x01e7  */
-    /* JADX WARN: Code duplicated, block: B:109:0x01ed A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:110:0x01ef A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:111:0x01f1 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:112:0x01f3  */
-    /* JADX WARN: Code duplicated, block: B:113:0x0214  */
-    /* JADX WARN: Code duplicated, block: B:115:0x0235 A[RETURN] */
-    /* JADX WARN: Code duplicated, block: B:117:0x0238 A[ORIG_RETURN, RETURN] */
-    /* JADX WARN: Code duplicated, block: B:75:0x0126 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:76:0x0128  */
-    /* JADX WARN: Code duplicated, block: B:77:0x012d  */
-    /* JADX WARN: Code duplicated, block: B:80:0x013b  */
-    /* JADX WARN: Code duplicated, block: B:81:0x0144  */
-    /* JADX WARN: Code duplicated, block: B:84:0x0155 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:85:0x0157  */
-    /* JADX WARN: Code duplicated, block: B:87:0x015e  */
-    /* JADX WARN: Code duplicated, block: B:89:0x0166 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:90:0x0168  */
-    /* JADX WARN: Code duplicated, block: B:91:0x0173  */
-    /* JADX WARN: Code duplicated, block: B:93:0x0182  */
-    /* JADX WARN: Code duplicated, block: B:95:0x018d  */
-    /* JADX WARN: Code duplicated, block: B:96:0x01a2  */
-    /* JADX WARN: Type inference failed for: r6v10 */
-    /* JADX WARN: Type inference failed for: r6v21 */
-    /* JADX WARN: Type inference failed for: r6v7, types: [boolean, int] */
+    /* WARN: Code duplicated, block: B:100:0x01cd  */
+    /* WARN: Code duplicated, block: B:104:0x01e1  */
+    /* WARN: Code duplicated, block: B:106:0x01e5  */
+    /* WARN: Code duplicated, block: B:107:0x01e7  */
+    /* WARN: Code duplicated, block: B:109:0x01ed A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:110:0x01ef A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:111:0x01f1 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:112:0x01f3  */
+    /* WARN: Code duplicated, block: B:113:0x0214  */
+    /* WARN: Code duplicated, block: B:115:0x0235 A[RETURN] */
+    /* WARN: Code duplicated, block: B:117:0x0238 A[ORIG_RETURN, RETURN] */
+    /* WARN: Code duplicated, block: B:75:0x0126 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:76:0x0128  */
+    /* WARN: Code duplicated, block: B:77:0x012d  */
+    /* WARN: Code duplicated, block: B:80:0x013b  */
+    /* WARN: Code duplicated, block: B:81:0x0144  */
+    /* WARN: Code duplicated, block: B:84:0x0155 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:85:0x0157  */
+    /* WARN: Code duplicated, block: B:87:0x015e  */
+    /* WARN: Code duplicated, block: B:89:0x0166 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:90:0x0168  */
+    /* WARN: Code duplicated, block: B:91:0x0173  */
+    /* WARN: Code duplicated, block: B:93:0x0182  */
+    /* WARN: Code duplicated, block: B:95:0x018d  */
+    /* WARN: Code duplicated, block: B:96:0x01a2  */
+    /* WARN: Type inference failed for: r6v10 */
+    /* WARN: Type inference failed for: r6v21 */
+    /* WARN: Type inference failed for: r6v7, types: [boolean, int] */
     public static boolean solveChain(ConstraintWidgetContainer constraintWidgetContainer, LinearSystem linearSystem, int i, int i2, ChainHead chainHead, boolean z, boolean z2, boolean z3) {
         int i3;
         int margin;

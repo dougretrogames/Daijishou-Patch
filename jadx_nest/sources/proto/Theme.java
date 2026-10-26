@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public final class Theme extends GeneratedMessage implements ThemeOrBuilder {
     public static final int CHECKSUM_FIELD_NUMBER = 7;
     public static final int CREATED_AT_FIELD_NUMBER = 2;
@@ -264,18 +264,18 @@ public final class Theme extends GeneratedMessage implements ThemeOrBuilder {
         return DEFAULT_INSTANCE.toBuilder();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static Builder newBuilder(Theme theme) {
         return (Builder) DEFAULT_INSTANCE.toBuilder().mergeFrom((Message) theme);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.protobuf.MessageLite, com.google.protobuf.Message
     public Builder toBuilder() {
         return this == DEFAULT_INSTANCE ? new Builder((ThemeIA) null) : (Builder) new Builder((ThemeIA) null).mergeFrom((Message) this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent builderParent) {
         return new Builder(builderParent, null);
@@ -830,7 +830,7 @@ public final class Theme extends GeneratedMessage implements ThemeOrBuilder {
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: proto.Theme$1, reason: invalid class name */
+    /* INFO: renamed from: proto.Theme$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<Theme> {
         AnonymousClass1() {
         }

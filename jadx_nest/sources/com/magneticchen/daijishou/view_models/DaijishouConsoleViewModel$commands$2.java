@@ -17,8 +17,8 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.Dispatchers;
 import kotlinx.coroutines.MainCoroutineDispatcher;
 
-/* JADX INFO: compiled from: DaijishouConsoleViewModel.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: DaijishouConsoleViewModel.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000+\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J&\u0010\b\u001a\u00020\t2\u0006\u0010\n\u001a\u00020\u000b2\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\u0003H\u0096@¢\u0006\u0002\u0010\u000fR\u0014\u0010\u0002\u001a\u00020\u0003X\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0004\u0010\u0005R\u0014\u0010\u0006\u001a\u00020\u0003X\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\u0005¨\u0006\u0010²\u0006\n\u0010\u0011\u001a\u00020\u0012X\u008a\u0084\u0002²\u0006\n\u0010\u0011\u001a\u00020\u0012X\u008a\u0084\u0002²\u0006\n\u0010\u0011\u001a\u00020\u0012X\u008a\u0084\u0002²\u0006\n\u0010\u0011\u001a\u00020\u0012X\u008a\u0084\u0002²\u0006\n\u0010\u0011\u001a\u00020\u0012X\u008a\u0084\u0002"}, d2 = {"com/magneticchen/daijishou/view_models/DaijishouConsoleViewModel$commands$2", "Lcom/magneticchen/daijishou/view_models/DaijishouConsoleViewModel$Companion$Command;", "description", "", "getDescription", "()Ljava/lang/String;", "startWith", "getStartWith", "execute", "Lcom/magneticchen/daijishou/view_models/DaijishouConsoleViewModel$Companion$CommandResult;", "activity", "Landroidx/appcompat/app/AppCompatActivity;", "application", "Lcom/magneticchen/daijishou/DaijishouApplication;", "command", "(Landroidx/appcompat/app/AppCompatActivity;Lcom/magneticchen/daijishou/DaijishouApplication;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "app_release", "daijishouSynchronizationModel", "Lcom/magneticchen/daijishou/view_models/DaijishouSynchronizationModel;"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class DaijishouConsoleViewModel$commands$2 extends DaijishouConsoleViewModel.Companion.Command {
     private final String startWith = "\\library ";
@@ -37,16 +37,16 @@ public final class DaijishouConsoleViewModel$commands$2 extends DaijishouConsole
         return this.description;
     }
 
-    /* JADX WARN: Code duplicated, block: B:7:0x0014  */
-    /* JADX WARN: Code restructure failed: missing block: B:104:0x0337, code lost:
+    /* WARN: Code duplicated, block: B:7:0x0014  */
+    /* WARN: Code restructure failed: missing block: B:104:0x0337, code lost:
     
         if (kotlinx.coroutines.BuildersKt.withContext(r11, r12, r1) == r2) goto L105;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:65:0x01b1, code lost:
+    /* WARN: Code restructure failed: missing block: B:65:0x01b1, code lost:
     
         if (kotlinx.coroutines.BuildersKt.withContext(r12, r13, r1) == r2) goto L105;
      */
-    /* JADX WARN: Code restructure failed: missing block: B:76:0x0216, code lost:
+    /* WARN: Code restructure failed: missing block: B:76:0x0216, code lost:
     
         if (kotlinx.coroutines.BuildersKt.withContext(r11, r12, r1) == r2) goto L105;
      */
@@ -166,12 +166,12 @@ public final class DaijishouConsoleViewModel$commands$2 extends DaijishouConsole
         return DaijishouConsoleViewModel.INSTANCE.getUnsupportedCommandResult();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final DaijishouSynchronizationModel execute$lambda$0(Lazy<DaijishouSynchronizationModel> lazy) {
         return lazy.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final DaijishouSynchronizationModel execute$lambda$1(Lazy<DaijishouSynchronizationModel> lazy) {
         return lazy.getValue();
     }
@@ -184,7 +184,7 @@ public final class DaijishouConsoleViewModel$commands$2 extends DaijishouConsole
         return lazy.getValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final DaijishouSynchronizationModel execute$lambda$4(Lazy<DaijishouSynchronizationModel> lazy) {
         return lazy.getValue();
     }

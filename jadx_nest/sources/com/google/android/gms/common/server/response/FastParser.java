@@ -18,8 +18,8 @@ import java.util.Stack;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import okio.internal.Buffer;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public class FastParser<T extends FastJsonResponse> {
     private static final char[] zaa = {AbstractJsonLexerKt.UNICODE_ESC, 'l', 'l'};
     private static final char[] zab = {'r', AbstractJsonLexerKt.UNICODE_ESC, 'e'};
@@ -42,7 +42,7 @@ public class FastParser<T extends FastJsonResponse> {
     private final StringBuilder zas = new StringBuilder(1024);
     private final Stack zat = new Stack();
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+    /* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
     public static class ParseException extends Exception {
         public ParseException(String str) {
             super(str);
@@ -105,7 +105,7 @@ public class FastParser<T extends FastJsonResponse> {
         return (char) 0;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final double zaj(BufferedReader bufferedReader) throws ParseException, IOException {
         int iZam = zam(bufferedReader, this.zaq);
         if (iZam == 0) {
@@ -114,7 +114,7 @@ public class FastParser<T extends FastJsonResponse> {
         return Double.parseDouble(new String(this.zaq, 0, iZam));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final float zak(BufferedReader bufferedReader) throws ParseException, IOException {
         int iZam = zam(bufferedReader, this.zaq);
         if (iZam == 0) {
@@ -123,7 +123,7 @@ public class FastParser<T extends FastJsonResponse> {
         return Float.parseFloat(new String(this.zaq, 0, iZam));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final int zal(BufferedReader bufferedReader) throws ParseException, IOException {
         int i;
         int i2;
@@ -231,7 +231,7 @@ public class FastParser<T extends FastJsonResponse> {
         throw new ParseException("Unexpected EOF");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final long zan(BufferedReader bufferedReader) throws ParseException, IOException {
         long j;
         int i;
@@ -287,7 +287,7 @@ public class FastParser<T extends FastJsonResponse> {
         throw new ParseException("No digits to parse");
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final String zao(BufferedReader bufferedReader) throws ParseException, IOException {
         return zap(bufferedReader, this.zap, this.zar, null);
     }
@@ -430,7 +430,7 @@ public class FastParser<T extends FastJsonResponse> {
         throw new ParseException("Unexpected token " + cZai4);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final BigDecimal zas(BufferedReader bufferedReader) throws ParseException, IOException {
         int iZam = zam(bufferedReader, this.zaq);
         if (iZam == 0) {
@@ -439,7 +439,7 @@ public class FastParser<T extends FastJsonResponse> {
         return new BigDecimal(new String(this.zaq, 0, iZam));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final BigInteger zat(BufferedReader bufferedReader) throws ParseException, IOException {
         int iZam = zam(bufferedReader, this.zaq);
         if (iZam == 0) {
@@ -550,7 +550,7 @@ public class FastParser<T extends FastJsonResponse> {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public final boolean zay(BufferedReader bufferedReader, boolean z) throws ParseException, IOException {
         char cZai = zai(bufferedReader);
         if (cZai == '\"') {
@@ -574,11 +574,11 @@ public class FastParser<T extends FastJsonResponse> {
         throw new ParseException("Unexpected token: " + cZai);
     }
 
-    /* JADX WARN: Code duplicated, block: B:108:0x024f  */
-    /* JADX WARN: Code duplicated, block: B:129:0x0266 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:130:0x0252 A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:131:0x024d A[SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Code duplicated, block: B:108:0x024f  */
+    /* WARN: Code duplicated, block: B:129:0x0266 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:130:0x0252 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:131:0x024d A[SYNTHETIC] */
+    /* WARN: Multi-variable type inference failed */
     @ResultIgnorabilityUnspecified
     private final boolean zaz(BufferedReader bufferedReader, FastJsonResponse fastJsonResponse) throws ParseException, IOException {
         int i;

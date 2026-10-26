@@ -8,7 +8,7 @@ import org.apache.commons.collections4.IterableGet;
 import org.apache.commons.collections4.MapIterator;
 import org.apache.commons.collections4.map.EntrySetToMapIteratorAdapter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AbstractIterableGetMapDecorator<K, V> implements IterableGet<K, V> {
     transient Map<K, V> map;
 

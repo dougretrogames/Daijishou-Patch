@@ -3,7 +3,7 @@ package io.opencensus.trace;
 import java.util.Arrays;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class SpanContext {
     public static final SpanContext INVALID;
     private static final Tracestate TRACESTATE_DEFAULT;

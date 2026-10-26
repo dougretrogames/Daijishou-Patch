@@ -4,7 +4,7 @@ import java.io.Serializable;
 import org.apache.commons.collections4.FunctorException;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ExceptionPredicate<T> extends AbstractPredicate<T> implements Serializable {
     public static final Predicate INSTANCE = new ExceptionPredicate();
     private static final long serialVersionUID = 7179106032121985545L;

@@ -15,7 +15,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogConfigurationException;
 import org.apache.commons.logging.LogFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LogFactoryImpl extends LogFactory {
     public static final String ALLOW_FLAWED_CONTEXT_PROPERTY = "org.apache.commons.logging.Log.allowFlawedContext";
     public static final String ALLOW_FLAWED_DISCOVERY_PROPERTY = "org.apache.commons.logging.Log.allowFlawedDiscovery";
@@ -218,7 +218,7 @@ public class LogFactoryImpl extends LogFactory {
         }
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.logging.impl.LogFactoryImpl$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.logging.impl.LogFactoryImpl$1, reason: invalid class name */
     final class AnonymousClass1 implements PrivilegedAction {
         AnonymousClass1() {
         }
@@ -233,7 +233,7 @@ public class LogFactoryImpl extends LogFactory {
         return (ClassLoader) AccessController.doPrivileged(new AnonymousClass1());
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.logging.impl.LogFactoryImpl$2, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.logging.impl.LogFactoryImpl$2, reason: invalid class name */
     final class AnonymousClass2 implements PrivilegedAction {
         private final /* synthetic */ String val$def;
         private final /* synthetic */ String val$key;
@@ -253,7 +253,7 @@ public class LogFactoryImpl extends LogFactory {
         return (String) AccessController.doPrivileged(new AnonymousClass2(str, str2));
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.logging.impl.LogFactoryImpl$3, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.logging.impl.LogFactoryImpl$3, reason: invalid class name */
     class AnonymousClass3 implements PrivilegedAction {
         private final /* synthetic */ ClassLoader val$cl;
 
@@ -435,8 +435,8 @@ public class LogFactoryImpl extends LogFactory {
         return systemProperty != null ? systemProperty.trim() : systemProperty;
     }
 
-    /* JADX WARN: Code duplicated, block: B:42:0x0168 A[LOOP:0: B:6:0x0030->B:42:0x0168, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:72:0x01d0 A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:42:0x0168 A[LOOP:0: B:6:0x0030->B:42:0x0168, LOOP_END] */
+    /* WARN: Code duplicated, block: B:72:0x01d0 A[SYNTHETIC] */
     private Log createLogFromClass(String str, String str2, boolean z) throws LogConfigurationException {
         Log log;
         Class<?> cls;

@@ -2,7 +2,7 @@ package org.apache.commons.io.output;
 
 import java.io.PrintStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class NullPrintStream extends PrintStream {
     public static final NullPrintStream INSTANCE;
 

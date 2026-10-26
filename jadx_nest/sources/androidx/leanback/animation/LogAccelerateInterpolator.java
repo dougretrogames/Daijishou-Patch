@@ -2,7 +2,7 @@ package androidx.leanback.animation;
 
 import android.animation.TimeInterpolator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class LogAccelerateInterpolator implements TimeInterpolator {
     int mBase;
     int mDrift;

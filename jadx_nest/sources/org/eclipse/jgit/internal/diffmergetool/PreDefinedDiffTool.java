@@ -1,6 +1,6 @@
 package org.eclipse.jgit.internal.diffmergetool;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PreDefinedDiffTool extends UserDefinedDiffTool {
     public PreDefinedDiffTool(String str, String str2, String str3) {
         super(str, str2, str3);

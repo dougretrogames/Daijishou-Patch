@@ -7,7 +7,7 @@ import android.view.View;
 import androidx.collection.LruCache;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class ViewsStateBundle {
     private static final int LIMIT_DEFAULT = 100;
     private static final int UNLIMITED = Integer.MAX_VALUE;

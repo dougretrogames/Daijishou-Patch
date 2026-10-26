@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import java.util.Collection;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface PreUploadHook {
     public static final PreUploadHook NULL = new AnonymousClass1();
 
@@ -13,7 +13,7 @@ public interface PreUploadHook {
 
     void onSendPack(UploadPack uploadPack, Collection<? extends ObjectId> collection, Collection<? extends ObjectId> collection2) throws ServiceMayNotContinueException;
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.PreUploadHook$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.PreUploadHook$1, reason: invalid class name */
     class AnonymousClass1 implements PreUploadHook {
         @Override // org.eclipse.jgit.transport.PreUploadHook
         public void onBeginNegotiateRound(UploadPack uploadPack, Collection<? extends ObjectId> collection, int i) throws ServiceMayNotContinueException {

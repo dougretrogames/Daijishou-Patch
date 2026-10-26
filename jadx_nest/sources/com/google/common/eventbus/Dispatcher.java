@@ -7,7 +7,7 @@ import java.util.Objects;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class Dispatcher {
     abstract void dispatch(Object event, Iterator<Subscriber> subscribers);
@@ -40,25 +40,25 @@ abstract class Dispatcher {
             this();
         }
 
-        /* JADX INFO: renamed from: com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher$1, reason: invalid class name */
         class AnonymousClass1 extends ThreadLocal<Queue<Event>> {
             AnonymousClass1(final PerThreadQueuedDispatcher this$0) {
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // java.lang.ThreadLocal
             public Queue<Event> initialValue() {
                 return Queues.newArrayDeque();
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.eventbus.Dispatcher$PerThreadQueuedDispatcher$2, reason: invalid class name */
         class AnonymousClass2 extends ThreadLocal<Boolean> {
             AnonymousClass2(final PerThreadQueuedDispatcher this$0) {
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* INFO: Access modifiers changed from: protected */
+            /* WARN: Can't rename method to resolve collision */
             @Override // java.lang.ThreadLocal
             public Boolean initialValue() {
                 return false;

@@ -14,7 +14,7 @@ import java.util.concurrent.Executor;
 import org.chromium.support_lib_boundary.ProfileBoundaryInterface;
 import org.chromium.support_lib_boundary.util.BoundaryInterfaceReflectionUtil;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ProfileImpl implements Profile {
     private final ProfileBoundaryInterface mProfileImpl;
 

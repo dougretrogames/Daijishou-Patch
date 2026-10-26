@@ -3,7 +3,7 @@ package io.opencensus.common;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ServerStatsEncoding {
     public static final byte CURRENT_VERSION = 0;
 
@@ -58,7 +58,7 @@ public final class ServerStatsEncoding {
         }
     }
 
-    /* JADX INFO: renamed from: io.opencensus.common.ServerStatsEncoding$1, reason: invalid class name */
+    /* INFO: renamed from: io.opencensus.common.ServerStatsEncoding$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$io$opencensus$common$ServerStatsFieldEnums$Id;
 

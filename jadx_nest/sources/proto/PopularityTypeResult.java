@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes6.dex */
+/* INFO: loaded from: classes6.dex */
 public final class PopularityTypeResult extends GeneratedMessage implements PopularityTypeResultOrBuilder {
     private static final PopularityTypeResult DEFAULT_INSTANCE;
     private static final Parser<PopularityTypeResult> PARSER;
@@ -138,18 +138,18 @@ public final class PopularityTypeResult extends GeneratedMessage implements Popu
         return DEFAULT_INSTANCE.toBuilder();
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static Builder newBuilder(PopularityTypeResult popularityTypeResult) {
         return (Builder) DEFAULT_INSTANCE.toBuilder().mergeFrom((Message) popularityTypeResult);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // com.google.protobuf.MessageLite, com.google.protobuf.Message
     public Builder toBuilder() {
         return this == DEFAULT_INSTANCE ? new Builder((PopularityTypeResultIA) null) : (Builder) new Builder((PopularityTypeResultIA) null).mergeFrom((Message) this);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // com.google.protobuf.AbstractMessage
     public Builder newBuilderForType(AbstractMessage.BuilderParent builderParent) {
         return new Builder(builderParent, null);
@@ -439,7 +439,7 @@ public final class PopularityTypeResult extends GeneratedMessage implements Popu
         return DEFAULT_INSTANCE;
     }
 
-    /* JADX INFO: renamed from: proto.PopularityTypeResult$1, reason: invalid class name */
+    /* INFO: renamed from: proto.PopularityTypeResult$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractParser<PopularityTypeResult> {
         AnonymousClass1() {
         }

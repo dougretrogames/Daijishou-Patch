@@ -36,7 +36,7 @@ import org.eclipse.jgit.util.QuotedString;
 import org.eclipse.jgit.util.RawParseUtils;
 import org.eclipse.jgit.util.io.EolStreamTypeUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TreeWalk implements AutoCloseable, AttributesProvider {
     private static final AbstractTreeIterator[] NO_TREES = new AbstractTreeIterator[0];
     private boolean advance;
@@ -63,7 +63,7 @@ public class TreeWalk implements AutoCloseable, AttributesProvider {
         CHECKOUT_OP,
         CHECKIN_OP;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static OperationType[] valuesCustom() {
             OperationType[] operationTypeArrValuesCustom = values();
             int length = operationTypeArrValuesCustom.length;
@@ -244,12 +244,12 @@ public class TreeWalk implements AutoCloseable, AttributesProvider {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$0$org-eclipse-jgit-treewalk-TreeWalk, reason: not valid java name */
+    /* INFO: renamed from: lambda$0$org-eclipse-jgit-treewalk-TreeWalk, reason: not valid java name */
     /* synthetic */ CanonicalTreeParser m5853lambda$0$orgeclipsejgittreewalkTreeWalk() {
         return (CanonicalTreeParser) getTree(CanonicalTreeParser.class);
     }
 
-    /* JADX INFO: renamed from: lambda$1$org-eclipse-jgit-treewalk-TreeWalk, reason: not valid java name */
+    /* INFO: renamed from: lambda$1$org-eclipse-jgit-treewalk-TreeWalk, reason: not valid java name */
     /* synthetic */ CanonicalTreeParser m5854lambda$1$orgeclipsejgittreewalkTreeWalk(int i) {
         AbstractTreeIterator abstractTreeIterator = this.trees[i];
         if (abstractTreeIterator instanceof CanonicalTreeParser) {
@@ -312,7 +312,7 @@ public class TreeWalk implements AutoCloseable, AttributesProvider {
         this.headIndex = -1;
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x0055  */
+    /* WARN: Code duplicated, block: B:25:0x0055  */
     public void reset(AnyObjectId... anyObjectIdArr) throws IOException {
         AbstractTreeIterator[] abstractTreeIteratorArr = this.trees;
         int length = abstractTreeIteratorArr.length;

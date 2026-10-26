@@ -3,7 +3,7 @@ package org.eclipse.jgit.revwalk;
 import java.io.IOException;
 import org.eclipse.jgit.annotations.Nullable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DateRevQueue extends AbstractRevQueue {
     private static final int REBUILD_INDEX_COUNT = 1000;
     private int first;

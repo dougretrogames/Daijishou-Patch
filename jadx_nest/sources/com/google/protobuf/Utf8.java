@@ -4,7 +4,7 @@ import com.google.common.base.Ascii;
 import java.nio.ByteBuffer;
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class Utf8 {
     private static final long ASCII_MASK_LONG = -9187201950435737472L;
     static final int COMPLETE = 0;
@@ -13,7 +13,7 @@ final class Utf8 {
     private static final int UNSAFE_COUNT_ASCII_THRESHOLD = 16;
     private static final Processor processor;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int incompleteStateFor(int byte1) {
         if (byte1 > -12) {
             return -1;
@@ -21,7 +21,7 @@ final class Utf8 {
         return byte1;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int incompleteStateFor(int byte1, int byte2) {
         if (byte1 > -12 || byte2 > -65) {
             return -1;
@@ -29,7 +29,7 @@ final class Utf8 {
         return byte1 ^ (byte2 << 8);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int incompleteStateFor(int byte1, int byte2, int byte3) {
         if (byte1 > -12 || byte2 > -65 || byte3 > -65) {
             return -1;
@@ -59,7 +59,7 @@ final class Utf8 {
         return processor.partialIsValidUtf8(state, bytes, index, limit);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int incompleteStateFor(byte[] bytes, int index, int limit) {
         byte b = bytes[index - 1];
         int i = limit - index;
@@ -75,7 +75,7 @@ final class Utf8 {
         throw new AssertionError();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int incompleteStateFor(final ByteBuffer buffer, final int byte1, final int index, final int remaining) {
         if (remaining == 0) {
             return incompleteStateFor(byte1);
@@ -162,7 +162,7 @@ final class Utf8 {
         processor.encodeUtf8(in, out);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int estimateConsecutiveAscii(ByteBuffer buffer, int index, int limit) {
         int i = limit - 7;
         int i2 = index;
@@ -207,15 +207,15 @@ final class Utf8 {
             return partialIsValidUtf8Default(state, buffer, index, limit);
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:10:0x0017, code lost:
+        /* WARN: Code restructure failed: missing block: B:10:0x0017, code lost:
         
             if (r8.get(r9) > (-65)) goto L13;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:31:0x004c, code lost:
+        /* WARN: Code restructure failed: missing block: B:31:0x004c, code lost:
         
             if (r8.get(r9) > (-65)) goto L32;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:52:0x008f, code lost:
+        /* WARN: Code restructure failed: missing block: B:52:0x008f, code lost:
         
             if (r8.get(r7) > (-65)) goto L53;
          */
@@ -544,15 +544,15 @@ final class Utf8 {
         SafeProcessor() {
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:10:0x0015, code lost:
+        /* WARN: Code restructure failed: missing block: B:10:0x0015, code lost:
         
             if (r8[r9] > (-65)) goto L13;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:31:0x0046, code lost:
+        /* WARN: Code restructure failed: missing block: B:31:0x0046, code lost:
         
             if (r8[r9] > (-65)) goto L32;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:52:0x0083, code lost:
+        /* WARN: Code restructure failed: missing block: B:52:0x0083, code lost:
         
             if (r8[r7] > (-65)) goto L53;
          */
@@ -877,11 +877,11 @@ final class Utf8 {
             return UnsafeUtil.hasUnsafeArrayOperations() && UnsafeUtil.hasUnsafeByteBufferOperations();
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:35:0x0058, code lost:
+        /* WARN: Code restructure failed: missing block: B:35:0x0058, code lost:
         
             if (com.google.protobuf.UnsafeUtil.getByte(r12, r0) > (-65)) goto L38;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:58:0x009e, code lost:
+        /* WARN: Code restructure failed: missing block: B:58:0x009e, code lost:
         
             if (com.google.protobuf.UnsafeUtil.getByte(r12, r0) > (-65)) goto L59;
          */
@@ -1017,15 +1017,15 @@ final class Utf8 {
             throw new UnsupportedOperationException("Method not decompiled: com.google.protobuf.Utf8.UnsafeProcessor.partialIsValidUtf8(int, byte[], int, int):int");
         }
 
-        /* JADX WARN: Code restructure failed: missing block: B:14:0x002d, code lost:
+        /* WARN: Code restructure failed: missing block: B:14:0x002d, code lost:
         
             if (com.google.protobuf.UnsafeUtil.getByte(r0) > (-65)) goto L17;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:35:0x0061, code lost:
+        /* WARN: Code restructure failed: missing block: B:35:0x0061, code lost:
         
             if (com.google.protobuf.UnsafeUtil.getByte(r0) > (-65)) goto L36;
          */
-        /* JADX WARN: Code restructure failed: missing block: B:56:0x00a3, code lost:
+        /* WARN: Code restructure failed: missing block: B:56:0x00a3, code lost:
         
             if (com.google.protobuf.UnsafeUtil.getByte(r0) > (-65)) goto L57;
          */
@@ -1513,17 +1513,17 @@ final class Utf8 {
             return b > -65;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static boolean isOneByte(byte b) {
             return b >= 0;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static boolean isThreeBytes(byte b) {
             return b < -16;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static boolean isTwoBytes(byte b) {
             return b < -32;
         }
@@ -1539,12 +1539,12 @@ final class Utf8 {
         private DecodeUtil() {
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static void handleOneByte(byte byte1, char[] resultArr, int resultPos) {
             resultArr[resultPos] = (char) byte1;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static void handleTwoBytes(byte byte1, byte byte2, char[] resultArr, int resultPos) throws InvalidProtocolBufferException {
             if (byte1 < -62 || isNotTrailingByte(byte2)) {
                 throw InvalidProtocolBufferException.invalidUtf8();
@@ -1552,7 +1552,7 @@ final class Utf8 {
             resultArr[resultPos] = (char) (((byte1 & Ascii.US) << 6) | trailingByteValue(byte2));
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static void handleThreeBytes(byte byte1, byte byte2, byte byte3, char[] resultArr, int resultPos) throws InvalidProtocolBufferException {
             if (isNotTrailingByte(byte2) || ((byte1 == -32 && byte2 < -96) || ((byte1 == -19 && byte2 >= -96) || isNotTrailingByte(byte3)))) {
                 throw InvalidProtocolBufferException.invalidUtf8();
@@ -1560,7 +1560,7 @@ final class Utf8 {
             resultArr[resultPos] = (char) (((byte1 & Ascii.SI) << 12) | (trailingByteValue(byte2) << 6) | trailingByteValue(byte3));
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static void handleFourBytes(byte byte1, byte byte2, byte byte3, byte byte4, char[] resultArr, int resultPos) throws InvalidProtocolBufferException {
             if (isNotTrailingByte(byte2) || (((byte1 << Ascii.FS) + (byte2 + 112)) >> 30) != 0 || isNotTrailingByte(byte3) || isNotTrailingByte(byte4)) {
                 throw InvalidProtocolBufferException.invalidUtf8();

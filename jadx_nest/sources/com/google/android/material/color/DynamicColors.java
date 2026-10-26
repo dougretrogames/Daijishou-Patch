@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DynamicColors {
     private static final DeviceSupportCondition DEFAULT_DEVICE_SUPPORT_CONDITION;
     private static final Map<String, DeviceSupportCondition> DYNAMIC_COLOR_SUPPORTED_BRANDS;
@@ -80,7 +80,7 @@ public class DynamicColors {
         TAG = "DynamicColors";
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.color.DynamicColors$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.color.DynamicColors$1, reason: invalid class name */
     class AnonymousClass1 implements DeviceSupportCondition {
         @Override // com.google.android.material.color.DynamicColors.DeviceSupportCondition
         public boolean isSupported() {
@@ -91,7 +91,7 @@ public class DynamicColors {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.color.DynamicColors$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.color.DynamicColors$2, reason: invalid class name */
     class AnonymousClass2 implements DeviceSupportCondition {
         private Long version;
 

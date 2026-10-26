@@ -5,7 +5,7 @@ import java.io.Reader;
 import java.util.function.Supplier;
 import org.apache.commons.io.function.Erase;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BrokenReader extends Reader {
     public static final BrokenReader INSTANCE = new BrokenReader();
     private final Supplier<Throwable> exceptionSupplier;

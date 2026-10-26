@@ -3,7 +3,7 @@ package androidx.appcompat.widget;
 import android.view.MenuItem;
 import androidx.appcompat.view.menu.MenuBuilder;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public interface MenuItemHoverListener {
     void onItemHoverEnter(MenuBuilder menuBuilder, MenuItem menuItem);
 

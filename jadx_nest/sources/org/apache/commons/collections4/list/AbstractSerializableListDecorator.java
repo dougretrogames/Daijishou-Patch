@@ -6,7 +6,7 @@ import java.io.ObjectOutputStream;
 import java.util.Collection;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractSerializableListDecorator<E> extends AbstractListDecorator<E> {
     private static final long serialVersionUID = 2684959196747496299L;
 

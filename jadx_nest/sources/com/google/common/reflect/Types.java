@@ -33,7 +33,7 @@ import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 import okhttp3.HttpUrl;
 import org.apache.commons.io.FilenameUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 final class Types {
     private static final Joiner COMMA_JOINER = Joiner.on(", ").useForNull(AbstractJsonLexerKt.NULL);
@@ -66,8 +66,8 @@ final class Types {
         return new ParameterizedTypeImpl(ClassOwnership.JVM_BEHAVIOR.getOwnerType(rawType), rawType, arguments);
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     private static abstract class ClassOwnership {
         public static final ClassOwnership OWNED_BY_ENCLOSING_CLASS = new AnonymousClass1("OWNED_BY_ENCLOSING_CLASS", 0);
         public static final ClassOwnership LOCAL_CLASS_HAS_NO_OWNER = new AnonymousClass2("LOCAL_CLASS_HAS_NO_OWNER", 1);
@@ -77,7 +77,7 @@ final class Types {
         @CheckForNull
         abstract Class<?> getOwnerType(Class<?> rawType);
 
-        /* JADX INFO: renamed from: com.google.common.reflect.Types$ClassOwnership$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.Types$ClassOwnership$1, reason: invalid class name */
         final enum AnonymousClass1 extends ClassOwnership {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -110,7 +110,7 @@ final class Types {
             return (ClassOwnership[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.Types$ClassOwnership$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.Types$ClassOwnership$2, reason: invalid class name */
         final enum AnonymousClass2 extends ClassOwnership {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -126,13 +126,13 @@ final class Types {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.Types$ClassOwnership$1LocalClass, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.Types$ClassOwnership$1LocalClass, reason: invalid class name */
         class C1LocalClass<T> {
             C1LocalClass() {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.Types$ClassOwnership$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.Types$ClassOwnership$3, reason: invalid class name */
         class AnonymousClass3 extends C1LocalClass<String> {
             AnonymousClass3() {
             }
@@ -176,7 +176,7 @@ final class Types {
         return (Type) atomicReference.get();
     }
 
-    /* JADX INFO: renamed from: com.google.common.reflect.Types$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.reflect.Types$1, reason: invalid class name */
     class AnonymousClass1 extends TypeVisitor {
         final /* synthetic */ AtomicReference val$result;
 
@@ -205,7 +205,7 @@ final class Types {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @CheckForNull
     public static Type subtypeOfComponentType(Type[] bounds) {
         for (Type type : bounds) {
@@ -460,17 +460,17 @@ final class Types {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Type[] toArray(Collection<Type> types) {
         return (Type[]) types.toArray(new Type[0]);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Iterable<Type> filterUpperBounds(Iterable<Type> bounds) {
         return Iterables.filter(bounds, Predicates.not(Predicates.equalTo(Object.class)));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static void disallowPrimitiveType(Type[] types, String usedAs) {
         for (Type type : types) {
             if (type instanceof Class) {
@@ -484,8 +484,8 @@ final class Types {
         return Array.newInstance(componentType, 0).getClass();
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     static abstract class JavaVersion {
         private static final /* synthetic */ JavaVersion[] $VALUES;
         static final JavaVersion CURRENT;
@@ -502,13 +502,13 @@ final class Types {
 
         abstract Type usedInGenericType(Type type);
 
-        /* JADX INFO: renamed from: com.google.common.reflect.Types$JavaVersion$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.Types$JavaVersion$1, reason: invalid class name */
         final enum AnonymousClass1 extends JavaVersion {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
             }
 
-            /* JADX INFO: Access modifiers changed from: package-private */
+            /* INFO: Access modifiers changed from: package-private */
             @Override // com.google.common.reflect.Types.JavaVersion
             public GenericArrayType newArrayType(Type componentType) {
                 return new GenericArrayTypeImpl(componentType);
@@ -571,7 +571,7 @@ final class Types {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.Types$JavaVersion$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.Types$JavaVersion$2, reason: invalid class name */
         final enum AnonymousClass2 extends JavaVersion {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -591,7 +591,7 @@ final class Types {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.Types$JavaVersion$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.Types$JavaVersion$3, reason: invalid class name */
         final enum AnonymousClass3 extends JavaVersion {
             AnonymousClass3(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -621,7 +621,7 @@ final class Types {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.Types$JavaVersion$4, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.Types$JavaVersion$4, reason: invalid class name */
         final enum AnonymousClass4 extends JavaVersion {
             @Override // com.google.common.reflect.Types.JavaVersion
             boolean jdkTypeDuplicatesOwnerName() {
@@ -648,13 +648,13 @@ final class Types {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.Types$JavaVersion$5, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.Types$JavaVersion$5, reason: invalid class name */
         class AnonymousClass5 extends TypeCapture<Map.Entry<String, int[][]>> {
             AnonymousClass5() {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.reflect.Types$JavaVersion$6, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.reflect.Types$JavaVersion$6, reason: invalid class name */
         class AnonymousClass6 extends TypeCapture<int[]> {
             AnonymousClass6() {
             }

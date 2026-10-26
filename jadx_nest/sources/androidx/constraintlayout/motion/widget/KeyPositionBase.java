@@ -4,7 +4,7 @@ import android.graphics.RectF;
 import android.view.View;
 import java.util.HashSet;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 abstract class KeyPositionBase extends Key {
     protected static final float SELECTION_SLOPE = 20.0f;
     int mCurveFit = UNSET;

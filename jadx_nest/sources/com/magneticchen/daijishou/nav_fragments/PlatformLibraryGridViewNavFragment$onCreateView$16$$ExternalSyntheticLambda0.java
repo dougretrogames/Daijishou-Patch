@@ -4,8 +4,8 @@ import android.content.SharedPreferences;
 import android.view.View;
 import com.google.android.material.chip.Chip;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class PlatformLibraryGridViewNavFragment$onCreateView$16$$ExternalSyntheticLambda0 implements View.OnClickListener {
     public final /* synthetic */ PlatformLibraryGridViewNavFragment f$0;
     public final /* synthetic */ Chip f$1;

@@ -2,7 +2,7 @@ package co.infinum.retromock;
 
 import java.util.concurrent.ThreadLocalRandom;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class ThreadLocalRandomProvider implements RandomProvider {
     ThreadLocalRandomProvider() {
     }

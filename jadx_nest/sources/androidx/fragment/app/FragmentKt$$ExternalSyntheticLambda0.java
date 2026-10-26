@@ -3,8 +3,8 @@ package androidx.fragment.app;
 import android.os.Bundle;
 import kotlin.jvm.functions.Function2;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class FragmentKt$$ExternalSyntheticLambda0 implements FragmentResultListener {
     public final /* synthetic */ Function2 f$0;
 

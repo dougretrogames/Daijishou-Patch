@@ -3,7 +3,7 @@ package androidx.constraintlayout.core;
 import java.util.Arrays;
 import java.util.Comparator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class PriorityGoalRow extends ArrayRow {
     private static final boolean DEBUG = false;
     private static final float EPSILON = 1.0E-4f;
@@ -140,7 +140,7 @@ public class PriorityGoalRow extends ArrayRow {
         return this.mNumGoals == 0;
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x002e  */
+    /* WARN: Code duplicated, block: B:15:0x002e  */
     @Override // androidx.constraintlayout.core.ArrayRow, androidx.constraintlayout.core.LinearSystem.Row
     public SolverVariable getPivotCandidate(LinearSystem linearSystem, boolean[] zArr) {
         int i = -1;
@@ -204,7 +204,7 @@ public class PriorityGoalRow extends ArrayRow {
         solverVariable.addToRow(this);
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.core.PriorityGoalRow$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.core.PriorityGoalRow$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<SolverVariable> {
         AnonymousClass1() {
         }
@@ -215,7 +215,7 @@ public class PriorityGoalRow extends ArrayRow {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void removeGoal(SolverVariable solverVariable) {
         int i = 0;
         while (i < this.mNumGoals) {

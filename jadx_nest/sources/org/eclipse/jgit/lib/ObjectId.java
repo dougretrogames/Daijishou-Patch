@@ -10,7 +10,7 @@ import org.eclipse.jgit.errors.InvalidObjectIdException;
 import org.eclipse.jgit.util.NB;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ObjectId extends AnyObjectId implements Serializable {
     private static final ObjectId ZEROID;
     private static final String ZEROID_STR;

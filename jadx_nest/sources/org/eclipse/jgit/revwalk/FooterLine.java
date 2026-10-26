@@ -7,7 +7,7 @@ import java.util.List;
 import kotlin.text.Typography;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class FooterLine {
     private final byte[] buffer;
     private final Charset enc;

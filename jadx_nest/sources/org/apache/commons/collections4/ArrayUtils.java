@@ -1,6 +1,6 @@
 package org.apache.commons.collections4;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class ArrayUtils {
     static boolean contains(Object[] objArr, Object obj) {
         return indexOf(objArr, obj) != -1;

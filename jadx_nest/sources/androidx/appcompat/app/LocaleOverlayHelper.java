@@ -5,7 +5,7 @@ import androidx.core.os.LocaleListCompat;
 import java.util.LinkedHashSet;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class LocaleOverlayHelper {
     private LocaleOverlayHelper() {
     }

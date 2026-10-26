@@ -1,6 +1,6 @@
 package androidx.constraintlayout.core.motion.key;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionConstraintSet {
     private static final String ERROR_MESSAGE = "XML parser error must be within a Constraint ";
     private static final int INTERNAL_MATCH_CONSTRAINT = -3;

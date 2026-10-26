@@ -3,8 +3,8 @@ package androidx.fragment.app;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class DefaultSpecialEffectsController$AnimationEffect$onCommit$1$$ExternalSyntheticLambda0 implements Runnable {
     public final /* synthetic */ ViewGroup f$0;
     public final /* synthetic */ View f$1;

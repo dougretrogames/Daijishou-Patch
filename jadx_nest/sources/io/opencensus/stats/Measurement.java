@@ -2,7 +2,7 @@ package io.opencensus.stats;
 
 import io.opencensus.common.Function;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class Measurement {
     public abstract Measure getMeasure();
 

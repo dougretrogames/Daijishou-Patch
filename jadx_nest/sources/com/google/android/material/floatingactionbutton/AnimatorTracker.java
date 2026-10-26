@@ -2,7 +2,7 @@ package com.google.android.material.floatingactionbutton;
 
 import android.animation.Animator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class AnimatorTracker {
     private Animator currentAnimator;
 

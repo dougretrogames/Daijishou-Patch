@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class DriveScopes {
     public static final String DRIVE = "https://www.googleapis.com/auth/drive";
     public static final String DRIVE_APPDATA = "https://www.googleapis.com/auth/drive.appdata";

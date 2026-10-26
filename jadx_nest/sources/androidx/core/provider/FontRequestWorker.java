@@ -17,7 +17,7 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import org.eclipse.jgit.lib.CommitConfig$$ExternalSyntheticBackport0;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class FontRequestWorker {
     static final LruCache<String, Typeface> sTypefaceCache = new LruCache<>(16);
     private static final ExecutorService DEFAULT_EXECUTOR_SERVICE = RequestExecutor.createDefaultExecutor("fonts-androidx", 10, MediaPlayerGlue.FAST_FORWARD_REWIND_STEP);
@@ -53,7 +53,7 @@ class FontRequestWorker {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.provider.FontRequestWorker$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.provider.FontRequestWorker$1, reason: invalid class name */
     class AnonymousClass1 implements Callable<TypefaceResult> {
         final /* synthetic */ Context val$context;
         final /* synthetic */ String val$id;
@@ -67,7 +67,7 @@ class FontRequestWorker {
             this.val$style = i;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public TypefaceResult call() {
             return FontRequestWorker.getFontSync(this.val$id, this.val$context, CommitConfig$$ExternalSyntheticBackport0.m(new Object[]{this.val$request}), this.val$style);
@@ -101,7 +101,7 @@ class FontRequestWorker {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.provider.FontRequestWorker$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.provider.FontRequestWorker$2, reason: invalid class name */
     class AnonymousClass2 implements Consumer<TypefaceResult> {
         final /* synthetic */ CallbackWrapper val$callback;
 
@@ -118,7 +118,7 @@ class FontRequestWorker {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.provider.FontRequestWorker$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.provider.FontRequestWorker$3, reason: invalid class name */
     class AnonymousClass3 implements Callable<TypefaceResult> {
         final /* synthetic */ Context val$context;
         final /* synthetic */ String val$id;
@@ -132,7 +132,7 @@ class FontRequestWorker {
             this.val$style = i;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public TypefaceResult call() {
             try {
@@ -143,7 +143,7 @@ class FontRequestWorker {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.core.provider.FontRequestWorker$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.provider.FontRequestWorker$4, reason: invalid class name */
     class AnonymousClass4 implements Consumer<TypefaceResult> {
         final /* synthetic */ String val$id;
 

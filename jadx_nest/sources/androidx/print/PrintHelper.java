@@ -27,7 +27,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class PrintHelper {
     public static final int COLOR_MODE_COLOR = 2;
     public static final int COLOR_MODE_MONOCHROME = 1;
@@ -172,7 +172,7 @@ public final class PrintHelper {
             this.mFittingMode = i;
         }
 
-        /* JADX WARN: Bottom block not found for handler: all -> 0x0048 */
+        /* WARN: Bottom block not found for handler: all -> 0x0048 */
         @Override // android.print.PrintDocumentAdapter
         /*
             Code decompiled incorrectly, please refer to instructions dump.
@@ -229,7 +229,7 @@ public final class PrintHelper {
             throw new UnsupportedOperationException("Method not decompiled: androidx.print.PrintHelper.PrintUriAdapter.onLayout(android.print.PrintAttributes, android.print.PrintAttributes, android.os.CancellationSignal, android.print.PrintDocumentAdapter$LayoutResultCallback, android.os.Bundle):void");
         }
 
-        /* JADX INFO: renamed from: androidx.print.PrintHelper$PrintUriAdapter$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.print.PrintHelper$PrintUriAdapter$1, reason: invalid class name */
         class AnonymousClass1 extends AsyncTask<Uri, Boolean, Bitmap> {
             final /* synthetic */ CancellationSignal val$cancellationSignal;
             final /* synthetic */ PrintDocumentAdapter.LayoutResultCallback val$layoutResultCallback;
@@ -243,7 +243,7 @@ public final class PrintHelper {
                 this.val$layoutResultCallback = layoutResultCallback;
             }
 
-            /* JADX INFO: renamed from: androidx.print.PrintHelper$PrintUriAdapter$1$1, reason: invalid class name and collision with other inner class name */
+            /* INFO: renamed from: androidx.print.PrintHelper$PrintUriAdapter$1$1, reason: invalid class name and collision with other inner class name */
             class C00211 implements CancellationSignal.OnCancelListener {
                 C00211() {
                 }
@@ -260,7 +260,7 @@ public final class PrintHelper {
                 this.val$cancellationSignal.setOnCancelListener(new C00211());
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // android.os.AsyncTask
             public Bitmap doInBackground(Uri... uriArr) {
                 try {
@@ -270,8 +270,8 @@ public final class PrintHelper {
                 }
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
-            /* JADX WARN: Code duplicated, block: B:19:0x0046  */
+            /* INFO: Access modifiers changed from: protected */
+            /* WARN: Code duplicated, block: B:19:0x0046  */
             @Override // android.os.AsyncTask
             public void onPostExecute(Bitmap bitmap) {
                 Bitmap bitmapCreateBitmap;
@@ -300,7 +300,7 @@ public final class PrintHelper {
                 PrintUriAdapter.this.mLoadBitmap = null;
             }
 
-            /* JADX INFO: Access modifiers changed from: protected */
+            /* INFO: Access modifiers changed from: protected */
             @Override // android.os.AsyncTask
             public void onCancelled(Bitmap bitmap) {
                 this.val$layoutResultCallback.onLayoutCancelled();
@@ -375,7 +375,7 @@ public final class PrintHelper {
         new AnonymousClass1(cancellationSignal, IS_MIN_MARGINS_HANDLING_CORRECT ? printAttributes : copyAttributes(printAttributes).setMinMargins(new PrintAttributes.Margins(0, 0, 0, 0)).build(), bitmap, printAttributes, i, parcelFileDescriptor, writeResultCallback).execute(new Void[0]);
     }
 
-    /* JADX INFO: renamed from: androidx.print.PrintHelper$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.print.PrintHelper$1, reason: invalid class name */
     class AnonymousClass1 extends AsyncTask<Void, Void, Throwable> {
         final /* synthetic */ PrintAttributes val$attributes;
         final /* synthetic */ Bitmap val$bitmap;
@@ -395,7 +395,7 @@ public final class PrintHelper {
             this.val$writeResultCallback = writeResultCallback;
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // android.os.AsyncTask
         public Throwable doInBackground(Void... voidArr) {
             RectF rectF;
@@ -450,7 +450,7 @@ public final class PrintHelper {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // android.os.AsyncTask
         public void onPostExecute(Throwable th) {
             if (this.val$cancellationSignal.isCanceled()) {

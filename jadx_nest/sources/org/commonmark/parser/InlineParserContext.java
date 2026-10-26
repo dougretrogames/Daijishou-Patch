@@ -4,7 +4,7 @@ import java.util.List;
 import org.commonmark.node.LinkReferenceDefinition;
 import org.commonmark.parser.delimiter.DelimiterProcessor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface InlineParserContext {
     List<DelimiterProcessor> getCustomDelimiterProcessors();
 

@@ -1,11 +1,11 @@
 package com.google.protobuf;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @CheckReturnValue
 final class OneofInfo {
     private final java.lang.reflect.Field caseField;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     private final int f63id;
     private final java.lang.reflect.Field valueField;
 

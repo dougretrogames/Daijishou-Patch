@@ -23,7 +23,7 @@ import net.lingala.zip4j.util.RawIO;
 import net.lingala.zip4j.util.Zip4jUtil;
 import okhttp3.internal.ws.WebSocketProtocol;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HeaderWriter {
     private static final short AES_EXTRA_DATA_RECORD_SIZE = 11;
     private static final short ZIP64_EXTRA_DATA_RECORD_SIZE_FH = 28;
@@ -127,11 +127,11 @@ public class HeaderWriter {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x003f A[Catch: all -> 0x00b8, TRY_ENTER, TRY_LEAVE, TryCatch #1 {all -> 0x00b8, blocks: (B:5:0x0009, B:28:0x00a3, B:15:0x003f, B:18:0x004d, B:21:0x005b, B:27:0x008e, B:26:0x007f), top: B:47:0x0009 }] */
-    /* JADX WARN: Code duplicated, block: B:17:0x0045 A[Catch: all -> 0x003a, TRY_ENTER, TRY_LEAVE, TryCatch #2 {all -> 0x003a, blocks: (B:9:0x0028, B:17:0x0045, B:20:0x0053, B:24:0x006b), top: B:49:0x0028 }] */
-    /* JADX WARN: Code duplicated, block: B:20:0x0053 A[Catch: all -> 0x003a, TRY_ENTER, TRY_LEAVE, TryCatch #2 {all -> 0x003a, blocks: (B:9:0x0028, B:17:0x0045, B:20:0x0053, B:24:0x006b), top: B:49:0x0028 }] */
-    /* JADX WARN: Code duplicated, block: B:24:0x006b A[Catch: all -> 0x003a, TRY_ENTER, TRY_LEAVE, TryCatch #2 {all -> 0x003a, blocks: (B:9:0x0028, B:17:0x0045, B:20:0x0053, B:24:0x006b), top: B:49:0x0028 }] */
-    /* JADX WARN: Code duplicated, block: B:26:0x007f A[Catch: all -> 0x00b8, TRY_ENTER, TryCatch #1 {all -> 0x00b8, blocks: (B:5:0x0009, B:28:0x00a3, B:15:0x003f, B:18:0x004d, B:21:0x005b, B:27:0x008e, B:26:0x007f), top: B:47:0x0009 }] */
+    /* WARN: Code duplicated, block: B:15:0x003f A[Catch: all -> 0x00b8, TRY_ENTER, TRY_LEAVE, TryCatch #1 {all -> 0x00b8, blocks: (B:5:0x0009, B:28:0x00a3, B:15:0x003f, B:18:0x004d, B:21:0x005b, B:27:0x008e, B:26:0x007f), top: B:47:0x0009 }] */
+    /* WARN: Code duplicated, block: B:17:0x0045 A[Catch: all -> 0x003a, TRY_ENTER, TRY_LEAVE, TryCatch #2 {all -> 0x003a, blocks: (B:9:0x0028, B:17:0x0045, B:20:0x0053, B:24:0x006b), top: B:49:0x0028 }] */
+    /* WARN: Code duplicated, block: B:20:0x0053 A[Catch: all -> 0x003a, TRY_ENTER, TRY_LEAVE, TryCatch #2 {all -> 0x003a, blocks: (B:9:0x0028, B:17:0x0045, B:20:0x0053, B:24:0x006b), top: B:49:0x0028 }] */
+    /* WARN: Code duplicated, block: B:24:0x006b A[Catch: all -> 0x003a, TRY_ENTER, TRY_LEAVE, TryCatch #2 {all -> 0x003a, blocks: (B:9:0x0028, B:17:0x0045, B:20:0x0053, B:24:0x006b), top: B:49:0x0028 }] */
+    /* WARN: Code duplicated, block: B:26:0x007f A[Catch: all -> 0x00b8, TRY_ENTER, TryCatch #1 {all -> 0x00b8, blocks: (B:5:0x0009, B:28:0x00a3, B:15:0x003f, B:18:0x004d, B:21:0x005b, B:27:0x008e, B:26:0x007f), top: B:47:0x0009 }] */
     public void finalizeZipFile(ZipModel zipModel, OutputStream outputStream, Charset charset) throws Throwable {
         Throwable th;
         if (zipModel == null || outputStream == null) {
@@ -217,9 +217,9 @@ public class HeaderWriter {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:15:0x003b A[Catch: all -> 0x008a, TRY_ENTER, TRY_LEAVE, TryCatch #3 {all -> 0x008a, blocks: (B:5:0x0009, B:22:0x0075, B:15:0x003b, B:18:0x0049, B:21:0x0057), top: B:45:0x0009 }] */
-    /* JADX WARN: Code duplicated, block: B:17:0x0041 A[Catch: all -> 0x0037, TRY_ENTER, TRY_LEAVE, TryCatch #1 {all -> 0x0037, blocks: (B:9:0x0025, B:17:0x0041, B:20:0x004f), top: B:41:0x0025 }] */
-    /* JADX WARN: Code duplicated, block: B:20:0x004f A[Catch: all -> 0x0037, TRY_ENTER, TRY_LEAVE, TryCatch #1 {all -> 0x0037, blocks: (B:9:0x0025, B:17:0x0041, B:20:0x004f), top: B:41:0x0025 }] */
+    /* WARN: Code duplicated, block: B:15:0x003b A[Catch: all -> 0x008a, TRY_ENTER, TRY_LEAVE, TryCatch #3 {all -> 0x008a, blocks: (B:5:0x0009, B:22:0x0075, B:15:0x003b, B:18:0x0049, B:21:0x0057), top: B:45:0x0009 }] */
+    /* WARN: Code duplicated, block: B:17:0x0041 A[Catch: all -> 0x0037, TRY_ENTER, TRY_LEAVE, TryCatch #1 {all -> 0x0037, blocks: (B:9:0x0025, B:17:0x0041, B:20:0x004f), top: B:41:0x0025 }] */
+    /* WARN: Code duplicated, block: B:20:0x004f A[Catch: all -> 0x0037, TRY_ENTER, TRY_LEAVE, TryCatch #1 {all -> 0x0037, blocks: (B:9:0x0025, B:17:0x0041, B:20:0x004f), top: B:41:0x0025 }] */
     public void finalizeZipFileWithoutValidations(ZipModel zipModel, OutputStream outputStream, Charset charset) throws Throwable {
         Throwable th;
         if (zipModel == null || outputStream == null) {
@@ -374,7 +374,7 @@ public class HeaderWriter {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void processHeaderData(ZipModel zipModel, OutputStream outputStream) throws IOException {
         int currentSplitFileCounter;
         if (outputStream instanceof OutputStreamWithSplitZipSupport) {

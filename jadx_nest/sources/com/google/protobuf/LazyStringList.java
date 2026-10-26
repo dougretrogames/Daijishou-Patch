@@ -3,7 +3,7 @@ package com.google.protobuf;
 import java.util.Collection;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public interface LazyStringList extends ProtocolStringList {
     void add(ByteString element);
 

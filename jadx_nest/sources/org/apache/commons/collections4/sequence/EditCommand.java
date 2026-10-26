@@ -1,6 +1,6 @@
 package org.apache.commons.collections4.sequence;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class EditCommand<T> {
     private final T object;
 

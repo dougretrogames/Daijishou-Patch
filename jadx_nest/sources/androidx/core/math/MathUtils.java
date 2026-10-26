@@ -1,6 +1,6 @@
 package androidx.core.math;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MathUtils {
     public static double clamp(double d, double d2, double d3) {
         if (d < d2) {

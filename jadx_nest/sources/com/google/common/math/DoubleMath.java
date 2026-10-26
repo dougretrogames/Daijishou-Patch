@@ -6,7 +6,7 @@ import java.math.BigInteger;
 import java.math.RoundingMode;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class DoubleMath {
     static final int MAX_FACTORIAL = 170;
@@ -49,7 +49,7 @@ public final class DoubleMath {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.math.DoubleMath$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.math.DoubleMath$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$java$math$RoundingMode;
 
@@ -126,9 +126,9 @@ public final class DoubleMath {
         return Math.log(x) / LN_2;
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code duplicated, block: B:29:0x006a  */
-    /* JADX WARN: Code duplicated, block: B:31:? A[RETURN, SYNTHETIC] */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Code duplicated, block: B:29:0x006a  */
+    /* WARN: Code duplicated, block: B:31:? A[RETURN, SYNTHETIC] */
     public static int log2(double x, RoundingMode mode) {
         boolean zIsPowerOfTwo;
         boolean z = false;

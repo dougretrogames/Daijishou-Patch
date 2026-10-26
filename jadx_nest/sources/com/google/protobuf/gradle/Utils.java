@@ -22,8 +22,8 @@ import org.gradle.plugins.ide.idea.GenerateIdeaModule;
 import org.gradle.plugins.ide.idea.model.IdeaModel;
 import org.gradle.util.GradleVersion;
 
-/* JADX INFO: compiled from: Utils.groovy */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: Utils.groovy */
+/* INFO: loaded from: classes4.dex */
 public class Utils implements GroovyObject {
     private static /* synthetic */ ClassInfo $staticClassInfo = null;
     private static /* synthetic */ ClassInfo $staticClassInfo$ = null;
@@ -102,7 +102,7 @@ public class Utils implements GroovyObject {
         return ((Project) reference.get()).getPlugins().hasPlugin(ANDROID_BASE_PLUGIN_ID) || DefaultGroovyMethods.any(ANDROID_PLUGIN_IDS, new _isAndroidProject_closure1(Utils.class, Utils.class, reference));
     }
 
-    /* JADX INFO: compiled from: Utils.groovy */
+    /* INFO: compiled from: Utils.groovy */
     public final class _isAndroidProject_closure1 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -148,7 +148,7 @@ public class Utils implements GroovyObject {
         return ScriptBytecodeAdapter.compareEqual(str, "test") || str.toLowerCase().contains("androidtest") || str.toLowerCase().contains("unittest");
     }
 
-    /* JADX INFO: compiled from: Utils.groovy */
+    /* INFO: compiled from: Utils.groovy */
     public final class _addToIdeSources_closure2 extends Closure implements GeneratedClosure {
         private static /* synthetic */ ClassInfo $staticClassInfo;
         public static transient /* synthetic */ boolean __$stMC;
@@ -227,7 +227,7 @@ public class Utils implements GroovyObject {
             return DefaultGroovyMethods.each(((Project) this.project.get()).getTasks().withType(GenerateIdeaModule.class), new _closure3(this, getThisObject(), this.f));
         }
 
-        /* JADX INFO: compiled from: Utils.groovy */
+        /* INFO: compiled from: Utils.groovy */
         public final class _closure3 extends Closure implements GeneratedClosure {
             private static /* synthetic */ ClassInfo $staticClassInfo;
             public static transient /* synthetic */ boolean __$stMC;
@@ -272,7 +272,7 @@ public class Utils implements GroovyObject {
                 return ((GenerateIdeaModule) obj).doFirst(new _closure4(this, getThisObject(), this.f));
             }
 
-            /* JADX INFO: compiled from: Utils.groovy */
+            /* INFO: compiled from: Utils.groovy */
             public final class _closure4 extends Closure implements GeneratedClosure {
                 private static /* synthetic */ ClassInfo $staticClassInfo;
                 public static transient /* synthetic */ boolean __$stMC;

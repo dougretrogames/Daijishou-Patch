@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.List;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class ServiceDescriptor {
     private final Collection<MethodDescriptor<?, ?>> methods;
     private final String name;
@@ -87,7 +87,7 @@ public final class ServiceDescriptor {
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public Builder addAllMethods(Collection<MethodDescriptor<?, ?>> collection) {
             this.methods.addAll(collection);
             return this;

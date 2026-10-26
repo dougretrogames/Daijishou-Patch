@@ -16,7 +16,7 @@ import org.jsoup.parser.ParseSettings;
 import org.jsoup.select.NodeFilter;
 import org.jsoup.select.NodeVisitor;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class Node implements Cloneable {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     static final List<Node> EmptyNodes = Collections.emptyList();

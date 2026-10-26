@@ -10,8 +10,8 @@ import kotlin.jvm.JvmStatic;
 import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: AndroidColorSpace.android.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: AndroidColorSpace.android.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u0000\u0018\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\bÃ\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\f\u0010\u0003\u001a\u00020\u0004*\u00020\u0005H\u0007J\f\u0010\u0006\u001a\u00020\u0005*\u00020\u0004H\u0007¨\u0006\u0007"}, d2 = {"Landroidx/compose/ui/graphics/ColorSpaceVerificationHelper;", "", "()V", "androidColorSpace", "Landroid/graphics/ColorSpace;", "Landroidx/compose/ui/graphics/colorspace/ColorSpace;", "composeColorSpace", "ui-graphics_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 final class ColorSpaceVerificationHelper {
     public static final ColorSpaceVerificationHelper INSTANCE = new ColorSpaceVerificationHelper();
@@ -85,12 +85,12 @@ final class ColorSpaceVerificationHelper {
         return ColorSpace.get(ColorSpace.Named.SRGB);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final double androidColorSpace$lambda$0(Function1 function1, double d) {
         return ((Number) function1.invoke(Double.valueOf(d))).doubleValue();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final double androidColorSpace$lambda$1(Function1 function1, double d) {
         return ((Number) function1.invoke(Double.valueOf(d))).doubleValue();
     }
@@ -163,12 +163,12 @@ final class ColorSpaceVerificationHelper {
         return srgb;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final double composeColorSpace$lambda$2(ColorSpace colorSpace, double d) {
         return ((ColorSpace.Rgb) colorSpace).getOetf().applyAsDouble(d);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final double composeColorSpace$lambda$3(ColorSpace colorSpace, double d) {
         return ((ColorSpace.Rgb) colorSpace).getEotf().applyAsDouble(d);
     }

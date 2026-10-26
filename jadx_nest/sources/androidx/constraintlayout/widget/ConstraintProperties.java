@@ -3,7 +3,7 @@ package androidx.constraintlayout.widget;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ConstraintProperties {
     public static final int BASELINE = 5;
     public static final int BOTTOM = 4;

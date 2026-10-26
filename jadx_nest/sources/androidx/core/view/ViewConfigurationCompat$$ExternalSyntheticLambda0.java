@@ -3,8 +3,8 @@ package androidx.core.view;
 import android.view.ViewConfiguration;
 import androidx.core.util.Supplier;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class ViewConfigurationCompat$$ExternalSyntheticLambda0 implements Supplier {
     public final /* synthetic */ ViewConfiguration f$0;
 

@@ -3,7 +3,7 @@ package androidx.core.os;
 import android.content.Context;
 import android.os.UserManager;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class UserManagerCompat {
     private UserManagerCompat() {
     }

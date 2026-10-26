@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class Barrier extends Helper {
     private Constraint.Side mDirection;
     private int mMargin;

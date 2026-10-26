@@ -10,8 +10,8 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: PlaylistWidgetInstanceEntity.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlaylistWidgetInstanceEntity.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000>\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0010!\n\u0002\u0010\u000e\n\u0002\b!\n\u0002\u0010\b\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0087\b\u0018\u00002\u00020\u0001Bo\u0012\b\b\u0002\u0010\u0002\u001a\u00020\u0003\u0012\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005\u0012\u000e\b\u0002\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005\u0012\u000e\b\u0002\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005\u0012\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005\u0012\u000e\b\u0002\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005¢\u0006\u0002\u0010\fJ\t\u0010\u001f\u001a\u00020\u0003HÆ\u0003J\u000f\u0010 \u001a\b\u0012\u0004\u0012\u00020\u00060\u0005HÆ\u0003J\u000f\u0010!\u001a\b\u0012\u0004\u0012\u00020\u00060\u0005HÆ\u0003J\u000f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005HÆ\u0003J\u000f\u0010#\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005HÆ\u0003J\u000f\u0010$\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005HÆ\u0003J\u000f\u0010%\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005HÆ\u0003Js\u0010&\u001a\u00020\u00002\b\b\u0002\u0010\u0002\u001a\u00020\u00032\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\u000e\b\u0002\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u00052\u000e\b\u0002\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00030\u00052\u000e\b\u0002\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00030\u00052\u000e\b\u0002\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00030\u00052\u000e\b\u0002\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005HÆ\u0001J\t\u0010'\u001a\u00020(HÖ\u0001J\u0013\u0010)\u001a\u00020*2\b\u0010+\u001a\u0004\u0018\u00010,HÖ\u0003J\t\u0010-\u001a\u00020(HÖ\u0001J\t\u0010.\u001a\u00020\u0006HÖ\u0001J\u0019\u0010/\u001a\u0002002\u0006\u00101\u001a\u0002022\u0006\u00103\u001a\u00020(HÖ\u0001R$\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010R$\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u00030\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0011\u0010\u000e\"\u0004\b\u0012\u0010\u0010R$\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\u00030\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0013\u0010\u000e\"\u0004\b\u0014\u0010\u0010R\u001e\u0010\u0002\u001a\u00020\u00038\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0016\"\u0004\b\u0017\u0010\u0018R$\u0010\b\u001a\b\u0012\u0004\u0012\u00020\u00030\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u000e\"\u0004\b\u001a\u0010\u0010R$\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00060\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001b\u0010\u000e\"\u0004\b\u001c\u0010\u0010R$\u0010\n\u001a\b\u0012\u0004\u0012\u00020\u00030\u00058\u0006@\u0006X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001d\u0010\u000e\"\u0004\b\u001e\u0010\u0010¨\u00064"}, d2 = {"Lcom/magneticchen/daijishou/daijishou_widget/widget_db/PlaylistWidgetInstanceEntity;", "Landroid/os/Parcelable;", "id", "", "whitelistedKeywordList", "", "", "blacklistedKeywordList", "selectedPlatformIdList", "blacklistedPlatformIdList", "whitelistedPlayableItemIdList", "blacklistedPlayableItemIdList", "(JLjava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V", "getBlacklistedKeywordList", "()Ljava/util/List;", "setBlacklistedKeywordList", "(Ljava/util/List;)V", "getBlacklistedPlatformIdList", "setBlacklistedPlatformIdList", "getBlacklistedPlayableItemIdList", "setBlacklistedPlayableItemIdList", "getId", "()J", "setId", "(J)V", "getSelectedPlatformIdList", "setSelectedPlatformIdList", "getWhitelistedKeywordList", "setWhitelistedKeywordList", "getWhitelistedPlayableItemIdList", "setWhitelistedPlayableItemIdList", "component1", "component2", "component3", "component4", "component5", "component6", "component7", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "describeContents", "", "equals", "", "other", "", "hashCode", "toString", "writeToParcel", "", "parcel", "Landroid/os/Parcel;", "flags", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final /* data */ class PlaylistWidgetInstanceEntity implements Parcelable {
     public static final Parcelable.Creator<PlaylistWidgetInstanceEntity> CREATOR = new Creator();
@@ -23,10 +23,10 @@ public final /* data */ class PlaylistWidgetInstanceEntity implements Parcelable
     private List<String> whitelistedKeywordList;
     private List<Long> whitelistedPlayableItemIdList;
 
-    /* JADX INFO: compiled from: PlaylistWidgetInstanceEntity.kt */
+    /* INFO: compiled from: PlaylistWidgetInstanceEntity.kt */
     @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
     public static final class Creator implements Parcelable.Creator<PlaylistWidgetInstanceEntity> {
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public final PlaylistWidgetInstanceEntity createFromParcel(Parcel parcel) {
             Intrinsics.checkNotNullParameter(parcel, "parcel");
@@ -59,7 +59,7 @@ public final /* data */ class PlaylistWidgetInstanceEntity implements Parcelable
             return new PlaylistWidgetInstanceEntity(j, arrayListCreateStringArrayList, arrayListCreateStringArrayList2, arrayList2, arrayList4, arrayList6, arrayList7);
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // android.os.Parcelable.Creator
         public final PlaylistWidgetInstanceEntity[] newArray(int i) {
             return new PlaylistWidgetInstanceEntity[i];
@@ -70,7 +70,7 @@ public final /* data */ class PlaylistWidgetInstanceEntity implements Parcelable
         this(0L, null, null, null, null, null, null, 127, null);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ PlaylistWidgetInstanceEntity copy$default(PlaylistWidgetInstanceEntity playlistWidgetInstanceEntity, long j, List list, List list2, List list3, List list4, List list5, List list6, int i, Object obj) {
         if ((i & 1) != 0) {
             j = playlistWidgetInstanceEntity.id;
@@ -94,7 +94,7 @@ public final /* data */ class PlaylistWidgetInstanceEntity implements Parcelable
         return playlistWidgetInstanceEntity.copy(j2, list7, list8, list9, list4, (i & 32) != 0 ? playlistWidgetInstanceEntity.whitelistedPlayableItemIdList : list5, (i & 64) != 0 ? playlistWidgetInstanceEntity.blacklistedPlayableItemIdList : list6);
     }
 
-    /* JADX INFO: renamed from: component1, reason: from getter */
+    /* INFO: renamed from: component1, reason: from getter */
     public final long getId() {
         return this.id;
     }

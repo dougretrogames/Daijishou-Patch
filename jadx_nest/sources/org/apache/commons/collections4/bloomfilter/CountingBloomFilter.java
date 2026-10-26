@@ -2,7 +2,7 @@ package org.apache.commons.collections4.bloomfilter;
 
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface CountingBloomFilter extends BloomFilter<CountingBloomFilter>, CellExtractor {
     boolean add(CellExtractor cellExtractor);
 

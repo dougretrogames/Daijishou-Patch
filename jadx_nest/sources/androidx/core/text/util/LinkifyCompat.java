@@ -21,7 +21,7 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class LinkifyCompat {
     private static final String[] EMPTY_STRING = new String[0];
     private static final Comparator<LinkSpec> COMPARATOR = new LinkifyCompat$$ExternalSyntheticLambda0();
@@ -316,7 +316,7 @@ public final class LinkifyCompat {
     private LinkifyCompat() {
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class LinkSpec {
         int end;
         URLSpan frameworkAddedSpan;

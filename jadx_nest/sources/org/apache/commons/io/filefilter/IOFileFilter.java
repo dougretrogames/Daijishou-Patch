@@ -9,7 +9,7 @@ import java.nio.file.PathMatcher;
 import java.nio.file.attribute.BasicFileAttributes;
 import org.apache.commons.io.file.PathFilter;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public interface IOFileFilter extends FileFilter, FilenameFilter, PathFilter, PathMatcher {
     public static final String[] EMPTY_STRING_ARRAY = new String[0];
 

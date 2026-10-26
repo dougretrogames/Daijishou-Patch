@@ -12,7 +12,7 @@ import java.io.OutputStream;
 import java.util.Objects;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class FileBackedOutputStream extends OutputStream {
 
@@ -66,7 +66,7 @@ public final class FileBackedOutputStream extends OutputStream {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.io.FileBackedOutputStream$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.io.FileBackedOutputStream$1, reason: invalid class name */
     class AnonymousClass1 extends ByteSource {
         AnonymousClass1() {
         }
@@ -85,7 +85,7 @@ public final class FileBackedOutputStream extends OutputStream {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.io.FileBackedOutputStream$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.io.FileBackedOutputStream$2, reason: invalid class name */
     class AnonymousClass2 extends ByteSource {
         AnonymousClass2() {
         }
@@ -100,7 +100,7 @@ public final class FileBackedOutputStream extends OutputStream {
         return this.source;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public synchronized InputStream openInputStream() throws IOException {
         if (this.file != null) {
             return new FileInputStream(this.file);

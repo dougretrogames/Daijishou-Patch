@@ -24,7 +24,7 @@ import java.io.InputStream;
 import java.util.Arrays;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MediaHttpUploader {
     public static final String CONTENT_LENGTH_HEADER = "X-Upload-Content-Length";
     public static final String CONTENT_TYPE_HEADER = "X-Upload-Content-Type";

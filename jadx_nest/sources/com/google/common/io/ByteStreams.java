@@ -23,7 +23,7 @@ import java.util.Arrays;
 import java.util.Queue;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class ByteStreams {
     private static final int BUFFER_SIZE = 8192;
@@ -485,7 +485,7 @@ public final class ByteStreams {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.io.ByteStreams$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.io.ByteStreams$1, reason: invalid class name */
     class AnonymousClass1 extends OutputStream {
         @Override // java.io.OutputStream
         public void write(int b) {

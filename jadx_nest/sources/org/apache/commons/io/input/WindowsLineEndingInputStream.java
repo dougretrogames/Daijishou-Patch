@@ -3,7 +3,7 @@ package org.apache.commons.io.input;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class WindowsLineEndingInputStream extends InputStream {
     private boolean atEos;
     private boolean atSlashCr;

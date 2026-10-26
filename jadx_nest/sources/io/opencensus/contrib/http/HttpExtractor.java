@@ -2,7 +2,7 @@ package io.opencensus.contrib.http;
 
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class HttpExtractor<Q, P> {
     @Nullable
     public abstract String getHost(Q q);

@@ -3,7 +3,7 @@ package com.bumptech.glide.load;
 import com.bumptech.glide.util.Preconditions;
 import java.security.MessageDigest;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Option<T> {
     private static final CacheKeyUpdater<Object> EMPTY_UPDATER = new AnonymousClass1();
     private final CacheKeyUpdater<T> cacheKeyUpdater;
@@ -15,7 +15,7 @@ public final class Option<T> {
         void update(byte[] bArr, T t, MessageDigest messageDigest);
     }
 
-    /* JADX INFO: renamed from: com.bumptech.glide.load.Option$1, reason: invalid class name */
+    /* INFO: renamed from: com.bumptech.glide.load.Option$1, reason: invalid class name */
     class AnonymousClass1 implements CacheKeyUpdater<Object> {
         @Override // com.bumptech.glide.load.Option.CacheKeyUpdater
         public void update(byte[] bArr, Object obj, MessageDigest messageDigest) {

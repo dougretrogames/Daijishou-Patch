@@ -15,14 +15,14 @@ import org.apache.commons.codec.Resources;
 import org.eclipse.jgit.transport.RefSpec;
 import org.eclipse.jgit.transport.WalkEncryption;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Lang {
     private static final Map<NameType, Lang> LANGS = new EnumMap(NameType.class);
     private static final String LANGUAGE_RULES_RN = "/org/apache/commons/codec/language/bm/%s_lang.txt";
     private final Languages languages;
     private final List<LangRule> rules;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class LangRule {
         private final boolean acceptOnMatch;
         private final Set<String> languages;

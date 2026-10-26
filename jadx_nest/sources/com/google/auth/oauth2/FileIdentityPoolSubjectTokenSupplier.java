@@ -14,7 +14,7 @@ import java.nio.file.Files;
 import java.nio.file.LinkOption;
 import java.nio.file.Paths;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class FileIdentityPoolSubjectTokenSupplier implements IdentityPoolSubjectTokenSupplier {
     private final IdentityPoolCredentialSource credentialSource;
     private final long serialVersionUID = 2475549052347431992L;

@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PreUploadHookChain implements PreUploadHook {
     private final List<PreUploadHook> hooks;
 

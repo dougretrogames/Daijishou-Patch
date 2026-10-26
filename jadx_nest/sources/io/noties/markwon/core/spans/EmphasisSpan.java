@@ -3,7 +3,7 @@ package io.noties.markwon.core.spans;
 import android.text.TextPaint;
 import android.text.style.MetricAffectingSpan;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class EmphasisSpan extends MetricAffectingSpan {
     @Override // android.text.style.MetricAffectingSpan
     public void updateMeasureState(TextPaint textPaint) {

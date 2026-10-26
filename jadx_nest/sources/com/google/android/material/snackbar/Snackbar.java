@@ -18,7 +18,7 @@ import android.widget.TextView;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class Snackbar extends BaseTransientBottomBar<Snackbar> {
     private static final int[] SNACKBAR_BUTTON_STYLE_ATTR = {R.attr.snackbarButtonStyle};
     private static final int[] SNACKBAR_CONTENT_STYLE_ATTRS = {R.attr.snackbarButtonStyle, R.attr.snackbarTextViewStyle};
@@ -160,7 +160,7 @@ public class Snackbar extends BaseTransientBottomBar<Snackbar> {
         return this;
     }
 
-    /* JADX INFO: renamed from: lambda$setAction$0$com-google-android-material-snackbar-Snackbar, reason: not valid java name */
+    /* INFO: renamed from: lambda$setAction$0$com-google-android-material-snackbar-Snackbar, reason: not valid java name */
     /* synthetic */ void m3329lambda$setAction$0$comgoogleandroidmaterialsnackbarSnackbar(View.OnClickListener onClickListener, View view) {
         onClickListener.onClick(view);
         dispatchDismiss(1);

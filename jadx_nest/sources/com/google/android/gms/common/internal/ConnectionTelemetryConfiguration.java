@@ -5,8 +5,8 @@ import android.os.Parcelable;
 import com.google.android.gms.common.internal.safeparcel.AbstractSafeParcelable;
 import com.google.android.gms.common.internal.safeparcel.SafeParcelWriter;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 public class ConnectionTelemetryConfiguration extends AbstractSafeParcelable {
     public static final Parcelable.Creator<ConnectionTelemetryConfiguration> CREATOR = new zzm();
     private final RootTelemetryConfiguration zza;

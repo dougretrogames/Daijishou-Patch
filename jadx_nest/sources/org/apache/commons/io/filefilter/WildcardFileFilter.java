@@ -13,7 +13,7 @@ import org.apache.commons.io.IOCase;
 import org.apache.commons.io.build.AbstractSupplier;
 import org.apache.commons.io.file.PathUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class WildcardFileFilter extends AbstractFileFilter implements Serializable {
     private static final long serialVersionUID = -7426486598995782105L;
     private final IOCase ioCase;
@@ -52,7 +52,7 @@ public class WildcardFileFilter extends AbstractFileFilter implements Serializab
         return new Builder();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static <T> T requireWildcards(T t) {
         return (T) Objects.requireNonNull(t, "wildcards");
     }
@@ -111,7 +111,7 @@ public class WildcardFileFilter extends AbstractFileFilter implements Serializab
         return Stream.of((Object[]) this.wildcards).anyMatch(new WildcardFileFilter$$ExternalSyntheticLambda0(this, str));
     }
 
-    /* JADX INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-WildcardFileFilter, reason: not valid java name */
+    /* INFO: renamed from: lambda$accept$0$org-apache-commons-io-filefilter-WildcardFileFilter, reason: not valid java name */
     /* synthetic */ boolean m5583xf9a09e68(String str, String str2) {
         return FilenameUtils.wildcardMatch(str, str2, this.ioCase);
     }

@@ -2,7 +2,7 @@ package com.googlecode.javaewah;
 
 import java.util.Arrays;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class LongArray implements Buffer, Cloneable {
     private static final int DEFAULT_BUFFER_SIZE = 4;
     private int actualSizeInWords;
@@ -143,7 +143,7 @@ final class LongArray implements Buffer, Cloneable {
     }
 
     @Override // com.googlecode.javaewah.Buffer
-    /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+    /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
     public LongArray m3464clone() {
         LongArray longArray;
         CloneNotSupportedException e;

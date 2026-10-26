@@ -20,8 +20,8 @@ import kotlinx.coroutines.BuildersKt;
 import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 
-/* JADX INFO: compiled from: SearchPlayableItemDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: SearchPlayableItemDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.SearchPlayableItemDialogFragment$onCreateView$4$onTextChanged$1", f = "SearchPlayableItemDialogFragment.kt", i = {}, l = {235}, m = "invokeSuspendImpl", n = {}, s = {})
 final class SearchPlayableItemDialogFragment$onCreateView$4$onTextChanged$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -31,7 +31,7 @@ final class SearchPlayableItemDialogFragment$onCreateView$4$onTextChanged$1 exte
     int label;
     final /* synthetic */ SearchPlayableItemDialogFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     SearchPlayableItemDialogFragment$onCreateView$4$onTextChanged$1(CharSequence charSequence, SearchPlayableItemDialogFragment searchPlayableItemDialogFragment, List<PlayableItemEntity> list, SearchPlayableItemDialogFragment.SearchRecyclerViewAdapter searchRecyclerViewAdapter, Continuation<?> continuation) {
         super(2, continuation);
         this.$s = charSequence;
@@ -82,8 +82,8 @@ final class SearchPlayableItemDialogFragment$onCreateView$4$onTextChanged$1 exte
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.SearchPlayableItemDialogFragment$onCreateView$4$onTextChanged$1$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SearchPlayableItemDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.SearchPlayableItemDialogFragment$onCreateView$4$onTextChanged$1$1, reason: invalid class name */
+    /* INFO: compiled from: SearchPlayableItemDialogFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.dialog_fragments.SearchPlayableItemDialogFragment$onCreateView$4$onTextChanged$1$1", f = "SearchPlayableItemDialogFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -94,7 +94,7 @@ final class SearchPlayableItemDialogFragment$onCreateView$4$onTextChanged$1 exte
         int label;
         final /* synthetic */ SearchPlayableItemDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(String str, SearchPlayableItemDialogFragment searchPlayableItemDialogFragment, List<PlayableItemEntity> list, List<PlayableItemEntity> list2, SearchPlayableItemDialogFragment.SearchRecyclerViewAdapter searchRecyclerViewAdapter, Continuation<?> continuation) {
             super(2, continuation);
             this.$keyword = str;
@@ -122,7 +122,7 @@ final class SearchPlayableItemDialogFragment$onCreateView$4$onTextChanged$1 exte
             }
         }
 
-        /* JADX WARN: Failed to restore switch over string. Please report as a decompilation issue */
+        /* WARN: Failed to restore switch over string. Please report as a decompilation issue */
         public final Object invokeSuspendImpl(Object obj) throws Exception {
             IntrinsicsKt.getCOROUTINE_SUSPENDED();
             if (this.label != 0) {

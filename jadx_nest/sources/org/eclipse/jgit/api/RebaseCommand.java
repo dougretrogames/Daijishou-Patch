@@ -62,7 +62,7 @@ import org.eclipse.jgit.util.FileUtils;
 import org.eclipse.jgit.util.IO;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RebaseCommand extends GitCommand<RebaseResult> {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$api$CherryPickResult$CherryPickStatus = null;
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$api$RebaseCommand$Operation = null;
@@ -124,7 +124,7 @@ public class RebaseCommand extends GitCommand<RebaseResult> {
         ABORT,
         PROCESS_STEPS;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Operation[] valuesCustom() {
             Operation[] operationArrValuesCustom = values();
             int length = operationArrValuesCustom.length;
@@ -355,9 +355,9 @@ public class RebaseCommand extends GitCommand<RebaseResult> {
         this.rebaseState = new RebaseState(repository.getDirectory());
     }
 
-    /* JADX WARN: Code duplicated, block: B:20:0x004f A[Catch: IOException -> 0x01cf, CheckoutConflictException -> 0x01da, TRY_LEAVE, TryCatch #1 {CheckoutConflictException -> 0x01da, blocks: (B:3:0x001e, B:45:0x00f0, B:47:0x00f8, B:49:0x00ff, B:51:0x0105, B:53:0x0128, B:55:0x0130, B:58:0x014a, B:60:0x0158, B:61:0x015b, B:64:0x0161, B:66:0x0164, B:68:0x016a, B:69:0x0170, B:71:0x0182, B:73:0x0193, B:75:0x0199, B:76:0x01a9, B:77:0x01b0, B:79:0x01b6, B:81:0x01bf, B:15:0x003d, B:18:0x0045, B:19:0x004e, B:20:0x004f, B:21:0x0057, B:24:0x0064, B:23:0x0062, B:25:0x007f, B:27:0x0086, B:33:0x00c5, B:35:0x00cd, B:38:0x00d2, B:40:0x00d8, B:41:0x00da, B:43:0x00e6, B:29:0x009a, B:31:0x00b4), top: B:92:0x001e }] */
-    /* JADX WARN: Code duplicated, block: B:29:0x009a A[Catch: IOException -> 0x01cf, CheckoutConflictException -> 0x01da, TryCatch #1 {CheckoutConflictException -> 0x01da, blocks: (B:3:0x001e, B:45:0x00f0, B:47:0x00f8, B:49:0x00ff, B:51:0x0105, B:53:0x0128, B:55:0x0130, B:58:0x014a, B:60:0x0158, B:61:0x015b, B:64:0x0161, B:66:0x0164, B:68:0x016a, B:69:0x0170, B:71:0x0182, B:73:0x0193, B:75:0x0199, B:76:0x01a9, B:77:0x01b0, B:79:0x01b6, B:81:0x01bf, B:15:0x003d, B:18:0x0045, B:19:0x004e, B:20:0x004f, B:21:0x0057, B:24:0x0064, B:23:0x0062, B:25:0x007f, B:27:0x0086, B:33:0x00c5, B:35:0x00cd, B:38:0x00d2, B:40:0x00d8, B:41:0x00da, B:43:0x00e6, B:29:0x009a, B:31:0x00b4), top: B:92:0x001e }] */
-    /* JADX WARN: Code duplicated, block: B:31:0x00b4 A[Catch: IOException -> 0x01cf, CheckoutConflictException -> 0x01da, TryCatch #1 {CheckoutConflictException -> 0x01da, blocks: (B:3:0x001e, B:45:0x00f0, B:47:0x00f8, B:49:0x00ff, B:51:0x0105, B:53:0x0128, B:55:0x0130, B:58:0x014a, B:60:0x0158, B:61:0x015b, B:64:0x0161, B:66:0x0164, B:68:0x016a, B:69:0x0170, B:71:0x0182, B:73:0x0193, B:75:0x0199, B:76:0x01a9, B:77:0x01b0, B:79:0x01b6, B:81:0x01bf, B:15:0x003d, B:18:0x0045, B:19:0x004e, B:20:0x004f, B:21:0x0057, B:24:0x0064, B:23:0x0062, B:25:0x007f, B:27:0x0086, B:33:0x00c5, B:35:0x00cd, B:38:0x00d2, B:40:0x00d8, B:41:0x00da, B:43:0x00e6, B:29:0x009a, B:31:0x00b4), top: B:92:0x001e }] */
+    /* WARN: Code duplicated, block: B:20:0x004f A[Catch: IOException -> 0x01cf, CheckoutConflictException -> 0x01da, TRY_LEAVE, TryCatch #1 {CheckoutConflictException -> 0x01da, blocks: (B:3:0x001e, B:45:0x00f0, B:47:0x00f8, B:49:0x00ff, B:51:0x0105, B:53:0x0128, B:55:0x0130, B:58:0x014a, B:60:0x0158, B:61:0x015b, B:64:0x0161, B:66:0x0164, B:68:0x016a, B:69:0x0170, B:71:0x0182, B:73:0x0193, B:75:0x0199, B:76:0x01a9, B:77:0x01b0, B:79:0x01b6, B:81:0x01bf, B:15:0x003d, B:18:0x0045, B:19:0x004e, B:20:0x004f, B:21:0x0057, B:24:0x0064, B:23:0x0062, B:25:0x007f, B:27:0x0086, B:33:0x00c5, B:35:0x00cd, B:38:0x00d2, B:40:0x00d8, B:41:0x00da, B:43:0x00e6, B:29:0x009a, B:31:0x00b4), top: B:92:0x001e }] */
+    /* WARN: Code duplicated, block: B:29:0x009a A[Catch: IOException -> 0x01cf, CheckoutConflictException -> 0x01da, TryCatch #1 {CheckoutConflictException -> 0x01da, blocks: (B:3:0x001e, B:45:0x00f0, B:47:0x00f8, B:49:0x00ff, B:51:0x0105, B:53:0x0128, B:55:0x0130, B:58:0x014a, B:60:0x0158, B:61:0x015b, B:64:0x0161, B:66:0x0164, B:68:0x016a, B:69:0x0170, B:71:0x0182, B:73:0x0193, B:75:0x0199, B:76:0x01a9, B:77:0x01b0, B:79:0x01b6, B:81:0x01bf, B:15:0x003d, B:18:0x0045, B:19:0x004e, B:20:0x004f, B:21:0x0057, B:24:0x0064, B:23:0x0062, B:25:0x007f, B:27:0x0086, B:33:0x00c5, B:35:0x00cd, B:38:0x00d2, B:40:0x00d8, B:41:0x00da, B:43:0x00e6, B:29:0x009a, B:31:0x00b4), top: B:92:0x001e }] */
+    /* WARN: Code duplicated, block: B:31:0x00b4 A[Catch: IOException -> 0x01cf, CheckoutConflictException -> 0x01da, TryCatch #1 {CheckoutConflictException -> 0x01da, blocks: (B:3:0x001e, B:45:0x00f0, B:47:0x00f8, B:49:0x00ff, B:51:0x0105, B:53:0x0128, B:55:0x0130, B:58:0x014a, B:60:0x0158, B:61:0x015b, B:64:0x0161, B:66:0x0164, B:68:0x016a, B:69:0x0170, B:71:0x0182, B:73:0x0193, B:75:0x0199, B:76:0x01a9, B:77:0x01b0, B:79:0x01b6, B:81:0x01bf, B:15:0x003d, B:18:0x0045, B:19:0x004e, B:20:0x004f, B:21:0x0057, B:24:0x0064, B:23:0x0062, B:25:0x007f, B:27:0x0086, B:33:0x00c5, B:35:0x00cd, B:38:0x00d2, B:40:0x00d8, B:41:0x00da, B:43:0x00e6, B:29:0x009a, B:31:0x00b4), top: B:92:0x001e }] */
     @Override // org.eclipse.jgit.api.GitCommand, java.util.concurrent.Callable
     public RebaseResult call() throws GitAPIException {
         Status statusCall;
@@ -1697,12 +1697,12 @@ public class RebaseCommand extends GitCommand<RebaseResult> {
             return RawParseUtils.decode(fully, 0, RawParseUtils.prevLF(fully, fully.length) + 1);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static String readFile(File file, String str) throws IOException {
             return readFile(new File(file, str));
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static void createFile(File file, String str, String str2) throws IOException {
             File file2 = new File(file, str);
             Throwable th = null;
@@ -1725,7 +1725,7 @@ public class RebaseCommand extends GitCommand<RebaseResult> {
             }
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public static void appendToFile(File file, String str) throws IOException {
             Throwable th = null;
             try {

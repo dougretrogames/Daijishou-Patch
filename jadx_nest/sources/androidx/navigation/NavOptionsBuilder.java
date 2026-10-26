@@ -11,8 +11,8 @@ import kotlin.jvm.internal.Reflection;
 import kotlin.reflect.KClass;
 import kotlin.text.StringsKt;
 
-/* JADX INFO: compiled from: NavOptionsBuilder.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: NavOptionsBuilder.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0006\n\u0002\u0010\b\n\u0002\b\t\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0010\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0007\u0018\u00002\u00020\u0001B\u0005¢\u0006\u0002\u0010\u0002J\u001f\u0010-\u001a\u00020.2\u0017\u0010/\u001a\u0013\u0012\u0004\u0012\u000201\u0012\u0004\u0012\u00020.00¢\u0006\u0002\b2J\r\u00103\u001a\u000204H\u0000¢\u0006\u0002\b5J8\u0010\u000e\u001a\u00020.\"\b\b\u0000\u00106*\u00020\u00012\u0006\u00107\u001a\u0002H62\u0019\b\u0002\u00108\u001a\u0013\u0012\u0004\u0012\u000209\u0012\u0004\u0012\u00020.00¢\u0006\u0002\b2¢\u0006\u0002\u0010:J3\u0010\u000e\u001a\u00020.\"\n\b\u0000\u00106\u0018\u0001*\u00020\u00012\u0019\b\n\u00108\u001a\u0013\u0012\u0004\u0012\u000209\u0012\u0004\u0012\u00020.00¢\u0006\u0002\b2H\u0086\bø\u0001\u0000J+\u0010\u000e\u001a\u00020.2\b\b\u0001\u0010;\u001a\u00020\r2\u0019\b\u0002\u00108\u001a\u0013\u0012\u0004\u0012\u000209\u0012\u0004\u0012\u00020.00¢\u0006\u0002\b2J)\u0010\u000e\u001a\u00020.2\u0006\u00107\u001a\u00020\u00172\u0019\b\u0002\u00108\u001a\u0013\u0012\u0004\u0012\u000209\u0012\u0004\u0012\u00020.00¢\u0006\u0002\b2J9\u0010\u000e\u001a\u00020.\"\b\b\u0000\u00106*\u00020\u00012\f\u0010<\u001a\b\u0012\u0004\u0012\u0002H60\u001d2\u0017\u00108\u001a\u0013\u0012\u0004\u0012\u000209\u0012\u0004\u0012\u00020.00¢\u0006\u0002\b2H\u0007R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000R\u001a\u0010\u0007\u001a\u00020\u0006X\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\b\u0010\t\"\u0004\b\n\u0010\u000bR*\u0010\u000e\u001a\u00020\r2\u0006\u0010\f\u001a\u00020\r8F@GX\u0087\u000e¢\u0006\u0012\u0012\u0004\b\u000f\u0010\u0002\u001a\u0004\b\u0010\u0010\u0011\"\u0004\b\u0012\u0010\u0013R&\u0010\u0014\u001a\u00020\r2\u0006\u0010\f\u001a\u00020\r8\u0006@@X\u0087\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0015\u0010\u0011\"\u0004\b\u0016\u0010\u0013R(\u0010\u0018\u001a\u0004\u0018\u00010\u00172\b\u0010\f\u001a\u0004\u0018\u00010\u0017@BX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u0019\u0010\u001a\"\u0004\b\u001b\u0010\u001cR2\u0010\u001e\u001a\b\u0012\u0002\b\u0003\u0018\u00010\u001d2\f\u0010\f\u001a\b\u0012\u0002\b\u0003\u0018\u00010\u001d8F@BX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b\u001f\u0010 \"\u0004\b!\u0010\"R*\u0010#\u001a\u0004\u0018\u00010\u00012\b\u0010\f\u001a\u0004\u0018\u00010\u00018F@BX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b$\u0010%\"\u0004\b&\u0010'R&\u0010)\u001a\u00020\u00062\u0006\u0010(\u001a\u00020\u00068F@FX\u0086\u000e¢\u0006\u000e\n\u0000\u001a\u0004\b*\u0010\t\"\u0004\b+\u0010\u000bR\u000e\u0010,\u001a\u00020\u0006X\u0082\u000e¢\u0006\u0002\n\u0000\u0082\u0002\u0007\n\u0005\b\u009920\u0001¨\u0006="}, d2 = {"Landroidx/navigation/NavOptionsBuilder;", "", "()V", "builder", "Landroidx/navigation/NavOptions$Builder;", "inclusive", "", "launchSingleTop", "getLaunchSingleTop", "()Z", "setLaunchSingleTop", "(Z)V", "value", "", "popUpTo", "getPopUpTo$annotations", "getPopUpTo", "()I", "setPopUpTo", "(I)V", "popUpToId", "getPopUpToId", "setPopUpToId$navigation_common_release", "", "popUpToRoute", "getPopUpToRoute", "()Ljava/lang/String;", "setPopUpToRoute", "(Ljava/lang/String;)V", "Lkotlin/reflect/KClass;", "popUpToRouteClass", "getPopUpToRouteClass", "()Lkotlin/reflect/KClass;", "setPopUpToRouteClass", "(Lkotlin/reflect/KClass;)V", "popUpToRouteObject", "getPopUpToRouteObject", "()Ljava/lang/Object;", "setPopUpToRouteObject", "(Ljava/lang/Object;)V", "<set-?>", "restoreState", "getRestoreState", "setRestoreState", "saveState", "anim", "", "animBuilder", "Lkotlin/Function1;", "Landroidx/navigation/AnimBuilder;", "Lkotlin/ExtensionFunctionType;", "build", "Landroidx/navigation/NavOptions;", "build$navigation_common_release", ExifInterface.GPS_DIRECTION_TRUE, "route", "popUpToBuilder", "Landroidx/navigation/PopUpToBuilder;", "(Ljava/lang/Object;Lkotlin/jvm/functions/Function1;)V", "id", "klass", "navigation-common_release"}, k = 1, mv = {1, 8, 0}, xi = 48)
 @NavOptionsDsl
 public final class NavOptionsBuilder {
@@ -55,7 +55,7 @@ public final class NavOptionsBuilder {
         this.inclusive = false;
     }
 
-    /* JADX INFO: renamed from: getPopUpTo, reason: from getter */
+    /* INFO: renamed from: getPopUpTo, reason: from getter */
     public final int getPopUpToId() {
         return this.popUpToId;
     }
@@ -101,8 +101,8 @@ public final class NavOptionsBuilder {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavOptionsBuilder$popUpTo$1, reason: invalid class name */
-    /* JADX INFO: compiled from: NavOptionsBuilder.kt */
+    /* INFO: renamed from: androidx.navigation.NavOptionsBuilder$popUpTo$1, reason: invalid class name */
+    /* INFO: compiled from: NavOptionsBuilder.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Landroidx/navigation/PopUpToBuilder;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass1 extends Lambda implements Function1<PopUpToBuilder, Unit> {
         public static final AnonymousClass1 INSTANCE = new AnonymousClass1();
@@ -111,7 +111,7 @@ public final class NavOptionsBuilder {
             super(1);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(PopUpToBuilder popUpToBuilder) {
             Intrinsics.checkNotNullParameter(popUpToBuilder, "$this$null");
         }
@@ -123,7 +123,7 @@ public final class NavOptionsBuilder {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void popUpTo$default(NavOptionsBuilder navOptionsBuilder, int i, Function1 function1, int i2, Object obj) {
         if ((i2 & 2) != 0) {
             function1 = AnonymousClass1.INSTANCE;
@@ -141,8 +141,8 @@ public final class NavOptionsBuilder {
         this.saveState = popUpToBuilder2.getSaveState();
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavOptionsBuilder$popUpTo$2, reason: invalid class name */
-    /* JADX INFO: compiled from: NavOptionsBuilder.kt */
+    /* INFO: renamed from: androidx.navigation.NavOptionsBuilder$popUpTo$2, reason: invalid class name */
+    /* INFO: compiled from: NavOptionsBuilder.kt */
     @Metadata(d1 = {"\u0000\f\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\n¢\u0006\u0002\b\u0003"}, d2 = {"<anonymous>", "", "Landroidx/navigation/PopUpToBuilder;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass2 extends Lambda implements Function1<PopUpToBuilder, Unit> {
         public static final AnonymousClass2 INSTANCE = new AnonymousClass2();
@@ -151,7 +151,7 @@ public final class NavOptionsBuilder {
             super(1);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(PopUpToBuilder popUpToBuilder) {
             Intrinsics.checkNotNullParameter(popUpToBuilder, "$this$null");
         }
@@ -163,7 +163,7 @@ public final class NavOptionsBuilder {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void popUpTo$default(NavOptionsBuilder navOptionsBuilder, String str, Function1 function1, int i, Object obj) {
         if ((i & 2) != 0) {
             function1 = AnonymousClass2.INSTANCE;
@@ -182,8 +182,8 @@ public final class NavOptionsBuilder {
         this.saveState = popUpToBuilder2.getSaveState();
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavOptionsBuilder$popUpTo$3, reason: invalid class name */
-    /* JADX INFO: compiled from: NavOptionsBuilder.kt */
+    /* INFO: renamed from: androidx.navigation.NavOptionsBuilder$popUpTo$3, reason: invalid class name */
+    /* INFO: compiled from: NavOptionsBuilder.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\n\b\u0000\u0010\u0002\u0018\u0001*\u00020\u0003*\u00020\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "Landroidx/navigation/PopUpToBuilder;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 176)
     public static final class AnonymousClass3 extends Lambda implements Function1<PopUpToBuilder, Unit> {
         public static final AnonymousClass3 INSTANCE = new AnonymousClass3();
@@ -192,7 +192,7 @@ public final class NavOptionsBuilder {
             super(1);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(PopUpToBuilder popUpToBuilder) {
             Intrinsics.checkNotNullParameter(popUpToBuilder, "$this$null");
         }
@@ -204,7 +204,7 @@ public final class NavOptionsBuilder {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void popUpTo$default(NavOptionsBuilder navOptionsBuilder, Function1 popUpToBuilder, int i, Object obj) {
         if ((i & 1) != 0) {
             popUpToBuilder = AnonymousClass3.INSTANCE;
@@ -232,8 +232,8 @@ public final class NavOptionsBuilder {
         this.saveState = popUpToBuilder2.getSaveState();
     }
 
-    /* JADX INFO: renamed from: androidx.navigation.NavOptionsBuilder$popUpTo$4, reason: invalid class name */
-    /* JADX INFO: compiled from: NavOptionsBuilder.kt */
+    /* INFO: renamed from: androidx.navigation.NavOptionsBuilder$popUpTo$4, reason: invalid class name */
+    /* INFO: compiled from: NavOptionsBuilder.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u0000\n\u0002\u0018\u0002\n\u0000\u0010\u0000\u001a\u00020\u0001\"\b\b\u0000\u0010\u0002*\u00020\u0003*\u00020\u0004H\n¢\u0006\u0002\b\u0005"}, d2 = {"<anonymous>", "", ExifInterface.GPS_DIRECTION_TRUE, "", "Landroidx/navigation/PopUpToBuilder;", "invoke"}, k = 3, mv = {1, 8, 0}, xi = 48)
     static final class AnonymousClass4 extends Lambda implements Function1<PopUpToBuilder, Unit> {
         public static final AnonymousClass4 INSTANCE = new AnonymousClass4();
@@ -242,7 +242,7 @@ public final class NavOptionsBuilder {
             super(1);
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(PopUpToBuilder popUpToBuilder) {
             Intrinsics.checkNotNullParameter(popUpToBuilder, "$this$null");
         }
@@ -254,7 +254,7 @@ public final class NavOptionsBuilder {
         }
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static /* synthetic */ void popUpTo$default(NavOptionsBuilder navOptionsBuilder, Object obj, Function1 function1, int i, Object obj2) {
         if ((i & 2) != 0) {
             function1 = AnonymousClass4.INSTANCE;

@@ -28,7 +28,7 @@ import androidx.core.view.ActionProvider;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.accessibility.AccessibilityNodeInfoCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ActivityChooserView extends ViewGroup implements ActivityChooserModel.ActivityChooserModelClient {
     private final View mActivityChooserContent;
     private final Drawable mActivityChooserContentBackground;
@@ -49,7 +49,7 @@ public class ActivityChooserView extends ViewGroup implements ActivityChooserMod
     private final ViewTreeObserver.OnGlobalLayoutListener mOnGlobalLayoutListener;
     ActionProvider mProvider;
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ActivityChooserView$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ActivityChooserView$1, reason: invalid class name */
     class AnonymousClass1 extends DataSetObserver {
         AnonymousClass1() {
         }
@@ -67,7 +67,7 @@ public class ActivityChooserView extends ViewGroup implements ActivityChooserMod
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ActivityChooserView$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ActivityChooserView$2, reason: invalid class name */
     class AnonymousClass2 implements ViewTreeObserver.OnGlobalLayoutListener {
         AnonymousClass2() {
         }
@@ -131,7 +131,7 @@ public class ActivityChooserView extends ViewGroup implements ActivityChooserMod
         this.mListPopupMaxWidth = Math.max(resources.getDisplayMetrics().widthPixels / 2, resources.getDimensionPixelSize(R.dimen.abc_config_prefDialogWidth));
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ActivityChooserView$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ActivityChooserView$3, reason: invalid class name */
     class AnonymousClass3 extends View.AccessibilityDelegate {
         AnonymousClass3() {
         }
@@ -143,7 +143,7 @@ public class ActivityChooserView extends ViewGroup implements ActivityChooserMod
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ActivityChooserView$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ActivityChooserView$4, reason: invalid class name */
     class AnonymousClass4 extends ForwardingListener {
         AnonymousClass4(View view) {
             super(view);
@@ -167,7 +167,7 @@ public class ActivityChooserView extends ViewGroup implements ActivityChooserMod
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.widget.ActivityChooserView$5, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.widget.ActivityChooserView$5, reason: invalid class name */
     class AnonymousClass5 extends DataSetObserver {
         AnonymousClass5() {
         }
@@ -209,19 +209,19 @@ public class ActivityChooserView extends ViewGroup implements ActivityChooserMod
         return true;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r0v15 */
-    /* JADX WARN: Type inference failed for: r0v6 */
-    /* JADX WARN: Type inference failed for: r0v7, types: [boolean, int] */
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r0v15 */
+    /* WARN: Type inference failed for: r0v6 */
+    /* WARN: Type inference failed for: r0v7, types: [boolean, int] */
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     void showPopupUnchecked(int i) {
         if (this.mAdapter.getDataModel() == null) {

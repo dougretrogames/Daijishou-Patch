@@ -6,7 +6,7 @@ import androidx.constraintlayout.core.widgets.ConstraintWidgetContainer;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ChainRun extends WidgetRun {
     private int mChainStyle;
     ArrayList<WidgetRun> mWidgets;

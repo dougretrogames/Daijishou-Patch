@@ -3,8 +3,8 @@ package com.skydoves.balloon;
 import android.view.View;
 import kotlin.Metadata;
 
-/* JADX INFO: compiled from: BalloonExtension.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: BalloonExtension.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(k = 3, mv = {2, 0, 0}, xi = 48)
 public final class BalloonExtensionKt$showAlignRight$$inlined$balloon$1 implements Runnable {
     final /* synthetic */ Balloon $balloon$inlined;

@@ -9,7 +9,7 @@ import org.apache.http.HttpRequestInterceptor;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.protocol.HttpContext;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RequestAcceptEncoding implements HttpRequestInterceptor {
     private final String acceptEncoding;
 

@@ -7,7 +7,7 @@ import com.google.api.client.http.HttpTransport;
 import com.google.api.client.json.JsonFactory;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ClientCredentialsTokenRequest extends TokenRequest {
     @Override // com.google.api.client.auth.oauth2.TokenRequest
     public /* bridge */ /* synthetic */ TokenRequest setResponseClass(Class cls) {

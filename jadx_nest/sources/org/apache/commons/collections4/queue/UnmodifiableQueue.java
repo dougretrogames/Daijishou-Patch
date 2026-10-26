@@ -10,11 +10,11 @@ import java.util.function.Predicate;
 import org.apache.commons.collections4.Unmodifiable;
 import org.apache.commons.collections4.iterators.UnmodifiableIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class UnmodifiableQueue<E> extends AbstractQueueDecorator<E> implements Unmodifiable {
     private static final long serialVersionUID = 1832948656215393357L;
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public static <E> Queue<E> unmodifiableQueue(Queue<? extends E> queue) {
         return queue instanceof Unmodifiable ? queue : new UnmodifiableQueue(queue);
     }

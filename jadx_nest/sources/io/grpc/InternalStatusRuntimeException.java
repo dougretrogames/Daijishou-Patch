@@ -2,7 +2,7 @@ package io.grpc;
 
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class InternalStatusRuntimeException extends StatusRuntimeException {
     private static final long serialVersionUID = 0;
 

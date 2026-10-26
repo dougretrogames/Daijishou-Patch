@@ -2,7 +2,7 @@ package org.commonmark.internal;
 
 import org.commonmark.parser.block.BlockContinue;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BlockContinueImpl extends BlockContinue {
     private final boolean finalize;
     private final int newColumn;

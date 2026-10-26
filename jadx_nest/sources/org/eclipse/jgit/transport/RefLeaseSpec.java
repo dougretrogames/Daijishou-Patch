@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import java.io.Serializable;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RefLeaseSpec implements Serializable {
     private static final long serialVersionUID = 1;
     private final String expected;

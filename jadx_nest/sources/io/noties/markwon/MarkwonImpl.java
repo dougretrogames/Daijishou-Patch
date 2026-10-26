@@ -11,7 +11,7 @@ import java.util.Locale;
 import org.commonmark.node.Node;
 import org.commonmark.parser.Parser;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 class MarkwonImpl extends Markwon {
     private final TextView.BufferType bufferType;
     private final MarkwonConfiguration configuration;
@@ -84,7 +84,7 @@ class MarkwonImpl extends Markwon {
         }
     }
 
-    /* JADX INFO: renamed from: io.noties.markwon.MarkwonImpl$1, reason: invalid class name */
+    /* INFO: renamed from: io.noties.markwon.MarkwonImpl$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ TextView val$textView;
 

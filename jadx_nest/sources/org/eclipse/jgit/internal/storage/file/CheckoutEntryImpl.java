@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.file;
 import org.eclipse.jgit.lib.CheckoutEntry;
 import org.eclipse.jgit.lib.ReflogEntry;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CheckoutEntryImpl implements CheckoutEntry {
     static final String CHECKOUT_MOVING_FROM = "checkout: moving from ";
     private String from;

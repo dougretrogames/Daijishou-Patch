@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class CircleImageView extends ImageView {
     private static final int FILL_SHADOW_COLOR = 1023410176;
     private static final int KEY_SHADOW_COLOR = 503316480;

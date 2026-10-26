@@ -2,7 +2,7 @@ package org.eclipse.jgit.lib;
 
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class UserConfig {
     public static final Config.SectionParser<UserConfig> KEY = new UserConfig$$ExternalSyntheticLambda0();
     private String authorEmail;
@@ -14,7 +14,7 @@ public class UserConfig {
     private boolean isCommitterEmailImplicit;
     private boolean isCommitterNameImplicit;
 
-    /* JADX INFO: renamed from: $r8$lambda$UAchCGY9SNlM-qqBVFIXeOChkiw, reason: not valid java name */
+    /* INFO: renamed from: $r8$lambda$UAchCGY9SNlM-qqBVFIXeOChkiw, reason: not valid java name */
     public static /* synthetic */ UserConfig m5780$r8$lambda$UAchCGY9SNlMqqBVFIXeOChkiw(Config config) {
         return new UserConfig(config);
     }

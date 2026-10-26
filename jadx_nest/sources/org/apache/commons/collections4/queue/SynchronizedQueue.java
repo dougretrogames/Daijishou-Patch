@@ -3,7 +3,7 @@ package org.apache.commons.collections4.queue;
 import java.util.Queue;
 import org.apache.commons.collections4.collection.SynchronizedCollection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SynchronizedQueue<E> extends SynchronizedCollection<E> implements Queue<E> {
     private static final long serialVersionUID = 1;
 
@@ -19,7 +19,7 @@ public class SynchronizedQueue<E> extends SynchronizedCollection<E> implements Q
         super(queue, obj);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.collection.SynchronizedCollection
     public Queue<E> decorated() {
         return (Queue) super.decorated();

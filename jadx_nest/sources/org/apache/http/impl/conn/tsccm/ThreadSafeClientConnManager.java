@@ -18,7 +18,7 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.util.Args;
 import org.apache.http.util.Asserts;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public class ThreadSafeClientConnManager implements ClientConnectionManager {
     protected final ClientConnectionOperator connOperator;
@@ -94,7 +94,7 @@ public class ThreadSafeClientConnManager implements ClientConnectionManager {
         return new AnonymousClass1(this.pool.requestPoolEntry(httpRoute, obj), httpRoute);
     }
 
-    /* JADX INFO: renamed from: org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.http.impl.conn.tsccm.ThreadSafeClientConnManager$1, reason: invalid class name */
     class AnonymousClass1 implements ClientConnectionRequest {
         final /* synthetic */ PoolEntryRequest val$poolRequest;
         final /* synthetic */ HttpRoute val$route;
@@ -119,9 +119,9 @@ public class ThreadSafeClientConnManager implements ClientConnectionManager {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:45:0x00a8 A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:46:0x00aa A[Catch: all -> 0x00c2, TryCatch #1 {, blocks: (B:10:0x001e, B:12:0x0027, B:19:0x0038, B:22:0x0046, B:23:0x004e, B:24:0x0055, B:25:0x005c, B:40:0x0099, B:43:0x009c, B:46:0x00aa, B:47:0x00b2, B:48:0x00b9, B:49:0x00c1, B:34:0x0076, B:37:0x0084, B:38:0x008c, B:39:0x0093, B:14:0x0029, B:16:0x002f, B:18:0x0035), top: B:54:0x001e, inners: #4 }] */
-    /* JADX WARN: Code duplicated, block: B:47:0x00b2 A[Catch: all -> 0x00c2, TryCatch #1 {, blocks: (B:10:0x001e, B:12:0x0027, B:19:0x0038, B:22:0x0046, B:23:0x004e, B:24:0x0055, B:25:0x005c, B:40:0x0099, B:43:0x009c, B:46:0x00aa, B:47:0x00b2, B:48:0x00b9, B:49:0x00c1, B:34:0x0076, B:37:0x0084, B:38:0x008c, B:39:0x0093, B:14:0x0029, B:16:0x002f, B:18:0x0035), top: B:54:0x001e, inners: #4 }] */
+    /* WARN: Code duplicated, block: B:45:0x00a8 A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:46:0x00aa A[Catch: all -> 0x00c2, TryCatch #1 {, blocks: (B:10:0x001e, B:12:0x0027, B:19:0x0038, B:22:0x0046, B:23:0x004e, B:24:0x0055, B:25:0x005c, B:40:0x0099, B:43:0x009c, B:46:0x00aa, B:47:0x00b2, B:48:0x00b9, B:49:0x00c1, B:34:0x0076, B:37:0x0084, B:38:0x008c, B:39:0x0093, B:14:0x0029, B:16:0x002f, B:18:0x0035), top: B:54:0x001e, inners: #4 }] */
+    /* WARN: Code duplicated, block: B:47:0x00b2 A[Catch: all -> 0x00c2, TryCatch #1 {, blocks: (B:10:0x001e, B:12:0x0027, B:19:0x0038, B:22:0x0046, B:23:0x004e, B:24:0x0055, B:25:0x005c, B:40:0x0099, B:43:0x009c, B:46:0x00aa, B:47:0x00b2, B:48:0x00b9, B:49:0x00c1, B:34:0x0076, B:37:0x0084, B:38:0x008c, B:39:0x0093, B:14:0x0029, B:16:0x002f, B:18:0x0035), top: B:54:0x001e, inners: #4 }] */
     @Override // org.apache.http.conn.ClientConnectionManager
     public void releaseConnection(ManagedClientConnection managedClientConnection, long j, TimeUnit timeUnit) {
         long j2;

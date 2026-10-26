@@ -22,7 +22,7 @@ import com.google.android.material.shape.MarkerEdgeTreatment;
 import com.google.android.material.shape.MaterialShapeDrawable;
 import com.google.android.material.shape.OffsetEdgeTreatment;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawableHelper.TextDrawableDelegate {
     private static final int DEFAULT_STYLE = R.style.Widget_MaterialComponents_Tooltip;
     private static final int DEFAULT_THEME_ATTR = R.attr.tooltipStyle;
@@ -45,7 +45,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
     private float tooltipScaleX;
     private float tooltipScaleY;
 
-    /* JADX INFO: renamed from: com.google.android.material.tooltip.TooltipDrawable$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.tooltip.TooltipDrawable$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnLayoutChangeListener {
         AnonymousClass1() {
         }
@@ -240,7 +240,7 @@ public class TooltipDrawable extends MaterialShapeDrawable implements TextDrawab
         invalidateSelf();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void updateLocationOnScreen(View view) {
         int[] iArr = new int[2];
         view.getLocationOnScreen(iArr);

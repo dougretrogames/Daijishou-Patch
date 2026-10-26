@@ -3,7 +3,7 @@ package org.apache.commons.collections4.trie;
 import java.io.Serializable;
 import java.util.Comparator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class KeyAnalyzer<K> implements Comparator<K>, Serializable {
     public static final int EQUAL_BIT_KEY = -2;
     public static final int NULL_BIT_KEY = -1;

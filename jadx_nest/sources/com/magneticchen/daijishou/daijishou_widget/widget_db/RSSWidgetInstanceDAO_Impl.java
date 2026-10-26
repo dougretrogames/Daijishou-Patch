@@ -17,7 +17,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Callable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
     private final RoomDatabase __db;
     private final EntityDeletionOrUpdateAdapter<RSSWidgetInstanceEntity> __deletionAdapterOfRSSWidgetInstanceEntity;
@@ -34,7 +34,7 @@ public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
         this.__preparedStmtOfDeleteById = new AnonymousClass4(__db);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$1, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$1, reason: invalid class name */
     class AnonymousClass1 extends EntityInsertionAdapter<RSSWidgetInstanceEntity> {
         AnonymousClass1(RoomDatabase database) {
             super(database);
@@ -45,7 +45,7 @@ public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
             return "INSERT OR ABORT INTO `RSSWidgetInstanceEntity` (`id`,`url`,`last_update_timestamp`) VALUES (nullif(?, 0),?,?)";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityInsertionAdapter
         public void bind(final SupportSQLiteStatement statement, final RSSWidgetInstanceEntity entity) {
             statement.bindLong(1, entity.getId());
@@ -63,7 +63,7 @@ public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$2, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$2, reason: invalid class name */
     class AnonymousClass2 extends EntityDeletionOrUpdateAdapter<RSSWidgetInstanceEntity> {
         AnonymousClass2(RoomDatabase database) {
             super(database);
@@ -74,14 +74,14 @@ public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
             return "DELETE FROM `RSSWidgetInstanceEntity` WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final RSSWidgetInstanceEntity entity) {
             statement.bindLong(1, entity.getId());
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$3, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$3, reason: invalid class name */
     class AnonymousClass3 extends EntityDeletionOrUpdateAdapter<RSSWidgetInstanceEntity> {
         AnonymousClass3(RoomDatabase database) {
             super(database);
@@ -92,7 +92,7 @@ public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
             return "UPDATE OR ABORT `RSSWidgetInstanceEntity` SET `id` = ?,`url` = ?,`last_update_timestamp` = ? WHERE `id` = ?";
         }
 
-        /* JADX INFO: Access modifiers changed from: protected */
+        /* INFO: Access modifiers changed from: protected */
         @Override // androidx.room.EntityDeletionOrUpdateAdapter
         public void bind(final SupportSQLiteStatement statement, final RSSWidgetInstanceEntity entity) {
             statement.bindLong(1, entity.getId());
@@ -111,7 +111,7 @@ public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$4, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$4, reason: invalid class name */
     class AnonymousClass4 extends SharedSQLiteStatement {
         AnonymousClass4(RoomDatabase database) {
             super(database);
@@ -195,7 +195,7 @@ public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$5, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$5, reason: invalid class name */
     class AnonymousClass5 implements Callable<Integer> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -203,7 +203,7 @@ public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public Integer call() throws Exception {
             Integer numValueOf = null;
@@ -241,7 +241,7 @@ public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$6, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$6, reason: invalid class name */
     class AnonymousClass6 implements Callable<List<RSSWidgetInstanceEntity>> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -320,7 +320,7 @@ public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
         return this.__db.getInvalidationTracker().createLiveData(new String[]{"RSSWidgetInstanceEntity"}, false, new AnonymousClass7(roomSQLiteQueryAcquire));
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$7, reason: invalid class name */
+    /* INFO: renamed from: com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO_Impl$7, reason: invalid class name */
     class AnonymousClass7 implements Callable<RSSWidgetInstanceEntity> {
         final /* synthetic */ RoomSQLiteQuery val$_statement;
 
@@ -328,7 +328,7 @@ public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
             this.val$_statement = val$_statement;
         }
 
-        /* JADX WARN: Can't rename method to resolve collision */
+        /* WARN: Can't rename method to resolve collision */
         @Override // java.util.concurrent.Callable
         public RSSWidgetInstanceEntity call() throws Exception {
             RSSWidgetInstanceEntity rSSWidgetInstanceEntity = null;
@@ -363,15 +363,15 @@ public final class RSSWidgetInstanceDAO_Impl implements RSSWidgetInstanceDAO {
         }
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$UnknownArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$UnknownArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     @Override // com.magneticchen.daijishou.daijishou_widget.widget_db.RSSWidgetInstanceDAO
     public RSSWidgetInstanceEntity selectByIdStatically(long j) {

@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class WeakHashtable extends Hashtable {
     private static final int MAX_CHANGES_BEFORE_PURGE = 100;
     private static final int PARTIAL_PURGE_COUNT = 10;
@@ -56,7 +56,7 @@ public final class WeakHashtable extends Hashtable {
         return new AnonymousClass1(super.keys());
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.logging.impl.WeakHashtable$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.logging.impl.WeakHashtable$1, reason: invalid class name */
     class AnonymousClass1 implements Enumeration {
         private final /* synthetic */ Enumeration val$enumer;
 
@@ -271,7 +271,7 @@ public final class WeakHashtable extends Hashtable {
             return this.hashCode;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public Object getValue() {
             return this.reference.get();
         }
@@ -302,7 +302,7 @@ public final class WeakHashtable extends Hashtable {
             this.referenced = referenced;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public Referenced getReferenced() {
             return this.referenced;
         }

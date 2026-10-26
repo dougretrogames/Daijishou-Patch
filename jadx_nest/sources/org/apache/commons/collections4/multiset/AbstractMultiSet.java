@@ -12,7 +12,7 @@ import java.util.Set;
 import org.apache.commons.collections4.IteratorUtils;
 import org.apache.commons.collections4.MultiSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractMultiSet<E> extends AbstractCollection<E> implements MultiSet<E> {
     private transient Set<MultiSet.Entry<E>> entrySet;
     private transient Set<E> uniqueSet;
@@ -21,7 +21,7 @@ public abstract class AbstractMultiSet<E> extends AbstractCollection<E> implemen
 
     protected abstract int uniqueElements();
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public static abstract class AbstractEntry<E> implements MultiSet.Entry<E> {
         @Override // org.apache.commons.collections4.MultiSet.Entry
         public boolean equals(Object obj) {
@@ -210,7 +210,7 @@ public abstract class AbstractMultiSet<E> extends AbstractCollection<E> implemen
         return IteratorUtils.transformedIterator(entrySet().iterator(), new AbstractMultiSet$$ExternalSyntheticLambda0());
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     protected void doReadObject(ObjectInputStream objectInputStream) throws IOException, ClassNotFoundException {
         int i = objectInputStream.readInt();
         for (int i2 = 0; i2 < i; i2++) {

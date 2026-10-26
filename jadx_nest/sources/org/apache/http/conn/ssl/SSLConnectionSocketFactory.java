@@ -27,7 +27,7 @@ import org.apache.http.protocol.HttpContext;
 import org.apache.http.util.Args;
 import org.apache.http.util.TextUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SSLConnectionSocketFactory implements LayeredConnectionSocketFactory {
     public static final String SSL = "SSL";
     public static final String SSLV2 = "SSLv2";

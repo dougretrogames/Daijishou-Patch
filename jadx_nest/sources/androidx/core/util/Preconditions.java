@@ -3,7 +3,7 @@ package androidx.core.util;
 import android.text.TextUtils;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class Preconditions {
     public static void checkArgument(boolean z) {
         if (!z) {

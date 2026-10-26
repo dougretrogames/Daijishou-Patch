@@ -47,7 +47,7 @@ import org.eclipse.jgit.util.TemporaryBuffer;
 import org.eclipse.jgit.util.io.CountingOutputStream;
 import org.eclipse.jgit.util.sha1.SHA1;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DfsInserter extends ObjectInserter {
     private static final int INDEX_VERSION = 2;
     DfsBlockCache cache;
@@ -686,7 +686,7 @@ public class DfsInserter extends ObjectInserter {
 
     private class StreamLoader extends ObjectLoader {
 
-        /* JADX INFO: renamed from: id, reason: collision with root package name */
+        /* INFO: renamed from: id, reason: collision with root package name */
         private final ObjectId f118id;
         private final long pos;
         private final long size;
@@ -719,11 +719,11 @@ public class DfsInserter extends ObjectInserter {
             return new AnonymousClass1(this.type, this.size, new BufferedInputStream(new InflaterInputStream(DfsInserter.this.new ReadBackStream(this.pos), dfsReaderNewReader.inflater(), 8192), 8192), dfsReaderNewReader);
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.dfs.DfsInserter$StreamLoader$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.internal.storage.dfs.DfsInserter$StreamLoader$1, reason: invalid class name */
         class AnonymousClass1 extends ObjectStream.Filter {
             private final /* synthetic */ DfsReader val$ctx;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             AnonymousClass1(int i, long j, InputStream inputStream, DfsReader dfsReader) {
                 super(i, j, inputStream);
                 this.val$ctx = dfsReader;

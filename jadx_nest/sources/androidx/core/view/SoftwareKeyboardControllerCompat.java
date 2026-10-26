@@ -8,7 +8,7 @@ import android.view.WindowInsetsController;
 import android.view.inputmethod.InputMethodManager;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class SoftwareKeyboardControllerCompat {
     private final Impl mImpl;
 
@@ -44,7 +44,7 @@ public final class SoftwareKeyboardControllerCompat {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class Impl20 extends Impl {
         private final View mView;
 
@@ -81,7 +81,7 @@ public final class SoftwareKeyboardControllerCompat {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static class Impl30 extends Impl20 {
         private View mView;
         private WindowInsetsController mWindowInsetsController;

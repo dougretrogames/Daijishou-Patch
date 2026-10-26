@@ -3,7 +3,7 @@ package org.eclipse.jgit.transport;
 import java.text.MessageFormat;
 import org.eclipse.jgit.internal.JGitText;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum TagOpt {
     AUTO_FOLLOW(""),
     NO_TAGS("--no-tags"),
@@ -11,7 +11,7 @@ public enum TagOpt {
 
     private final String option;
 
-    /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+    /* INFO: renamed from: values, reason: to resolve conflict with enum method */
     public static TagOpt[] valuesCustom() {
         TagOpt[] tagOptArrValuesCustom = values();
         int length = tagOptArrValuesCustom.length;

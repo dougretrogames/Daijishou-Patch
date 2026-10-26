@@ -2,7 +2,7 @@ package com.google.protobuf;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class WireFormat {
     static final int FIXED32_SIZE = 4;
     static final int FIXED64_SIZE = 8;
@@ -62,8 +62,8 @@ public final class WireFormat {
         }
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     public static class FieldType {
         private static final /* synthetic */ FieldType[] $VALUES;
         public static final FieldType BOOL;
@@ -143,7 +143,7 @@ public final class WireFormat {
             $VALUES = new FieldType[]{fieldType, fieldType2, fieldType3, fieldType4, fieldType5, fieldType6, fieldType7, fieldType8, anonymousClass1, anonymousClass2, anonymousClass3, anonymousClass4, fieldType9, fieldType10, fieldType11, fieldType12, fieldType13, fieldType14};
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.WireFormat$FieldType$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.WireFormat$FieldType$1, reason: invalid class name */
         final enum AnonymousClass1 extends FieldType {
             @Override // com.google.protobuf.WireFormat.FieldType
             public boolean isPackable() {
@@ -155,7 +155,7 @@ public final class WireFormat {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.WireFormat$FieldType$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.WireFormat$FieldType$2, reason: invalid class name */
         final enum AnonymousClass2 extends FieldType {
             @Override // com.google.protobuf.WireFormat.FieldType
             public boolean isPackable() {
@@ -167,7 +167,7 @@ public final class WireFormat {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.WireFormat$FieldType$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.WireFormat$FieldType$3, reason: invalid class name */
         final enum AnonymousClass3 extends FieldType {
             @Override // com.google.protobuf.WireFormat.FieldType
             public boolean isPackable() {
@@ -179,7 +179,7 @@ public final class WireFormat {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.WireFormat$FieldType$4, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.WireFormat$FieldType$4, reason: invalid class name */
         final enum AnonymousClass4 extends FieldType {
             @Override // com.google.protobuf.WireFormat.FieldType
             public boolean isPackable() {
@@ -206,8 +206,8 @@ public final class WireFormat {
         }
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     static abstract class Utf8Validation {
         private static final /* synthetic */ Utf8Validation[] $VALUES;
         public static final Utf8Validation LAZY;
@@ -232,7 +232,7 @@ public final class WireFormat {
             return (Utf8Validation[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.WireFormat$Utf8Validation$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.WireFormat$Utf8Validation$1, reason: invalid class name */
         final enum AnonymousClass1 extends Utf8Validation {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -254,7 +254,7 @@ public final class WireFormat {
             $VALUES = new Utf8Validation[]{anonymousClass1, anonymousClass2, anonymousClass3};
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.WireFormat$Utf8Validation$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.WireFormat$Utf8Validation$2, reason: invalid class name */
         final enum AnonymousClass2 extends Utf8Validation {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -266,7 +266,7 @@ public final class WireFormat {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.protobuf.WireFormat$Utf8Validation$3, reason: invalid class name */
+        /* INFO: renamed from: com.google.protobuf.WireFormat$Utf8Validation$3, reason: invalid class name */
         final enum AnonymousClass3 extends Utf8Validation {
             AnonymousClass3(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -279,7 +279,7 @@ public final class WireFormat {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.protobuf.WireFormat$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.protobuf.WireFormat$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$com$google$protobuf$WireFormat$FieldType;
 

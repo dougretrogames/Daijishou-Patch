@@ -3,7 +3,7 @@ package com.google.android.material.color.utilities;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class TonalPalette {
     Map<Integer, Integer> cache = new HashMap();
     double chroma;

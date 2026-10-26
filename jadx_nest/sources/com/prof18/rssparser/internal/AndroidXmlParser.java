@@ -26,8 +26,8 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
-/* JADX INFO: compiled from: AndroidXmlParser.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: AndroidXmlParser.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000,\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0000\u0018\u00002\u00020\u0001B\u0019\u0012\n\b\u0002\u0010\u0002\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0010\u0010\u0007\u001a\u00020\b2\u0006\u0010\t\u001a\u00020\nH\u0016J\u0016\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\bH\u0096@¢\u0006\u0002\u0010\u000eR\u0010\u0010\u0002\u001a\u0004\u0018\u00010\u0003X\u0082\u0004¢\u0006\u0002\n\u0000R\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u000f"}, d2 = {"Lcom/prof18/rssparser/internal/AndroidXmlParser;", "Lcom/prof18/rssparser/internal/XmlParser;", "charset", "Ljava/nio/charset/Charset;", "dispatcher", "Lkotlinx/coroutines/CoroutineDispatcher;", "(Ljava/nio/charset/Charset;Lkotlinx/coroutines/CoroutineDispatcher;)V", "generateParserInputFromString", "Lcom/prof18/rssparser/internal/ParserInput;", "rawRssFeed", "", "parseXML", "Lcom/prof18/rssparser/model/RssChannel;", "input", "(Lcom/prof18/rssparser/internal/ParserInput;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;", "rssparser_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class AndroidXmlParser implements XmlParser {
     private final Charset charset;
@@ -43,8 +43,8 @@ public final class AndroidXmlParser implements XmlParser {
         this((i & 1) != 0 ? null : charset, coroutineDispatcher);
     }
 
-    /* JADX INFO: renamed from: com.prof18.rssparser.internal.AndroidXmlParser$parseXML$2, reason: invalid class name */
-    /* JADX INFO: compiled from: AndroidXmlParser.kt */
+    /* INFO: renamed from: com.prof18.rssparser.internal.AndroidXmlParser$parseXML$2, reason: invalid class name */
+    /* INFO: compiled from: AndroidXmlParser.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "Lcom/prof18/rssparser/model/RssChannel;", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.prof18.rssparser.internal.AndroidXmlParser$parseXML$2", f = "AndroidXmlParser.kt", i = {}, l = {}, m = "invokeSuspend", n = {}, s = {})
     static final class AnonymousClass2 extends SuspendLambda implements Function2<CoroutineScope, Continuation<? super RssChannel>, Object> {
@@ -53,7 +53,7 @@ public final class AndroidXmlParser implements XmlParser {
         int label;
         final /* synthetic */ AndroidXmlParser this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(ParserInput parserInput, AndroidXmlParser androidXmlParser, Continuation<? super AnonymousClass2> continuation) {
             super(2, continuation);
             this.$input = parserInput;

@@ -3,7 +3,7 @@ package com.google.common.math;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public class BigDecimalMath {
     private BigDecimalMath() {
@@ -19,25 +19,25 @@ public class BigDecimalMath {
         private BigDecimalToDoubleRounder() {
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.math.ToDoubleRounder
         public double roundToDoubleArbitrarily(BigDecimal bigDecimal) {
             return bigDecimal.doubleValue();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.math.ToDoubleRounder
         public int sign(BigDecimal bigDecimal) {
             return bigDecimal.signum();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.math.ToDoubleRounder
         public BigDecimal toX(double d, RoundingMode mode) {
             return new BigDecimal(d);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.math.ToDoubleRounder
         public BigDecimal minus(BigDecimal a, BigDecimal b) {
             return a.subtract(b);

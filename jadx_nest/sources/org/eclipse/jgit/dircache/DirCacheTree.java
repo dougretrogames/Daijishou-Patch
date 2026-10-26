@@ -14,7 +14,7 @@ import org.eclipse.jgit.lib.TreeFormatter;
 import org.eclipse.jgit.util.MutableInteger;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DirCacheTree {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private int childCnt;
@@ -22,7 +22,7 @@ public class DirCacheTree {
     byte[] encodedName;
     private int entrySpan;
 
-    /* JADX INFO: renamed from: id, reason: collision with root package name */
+    /* INFO: renamed from: id, reason: collision with root package name */
     private ObjectId f114id;
     private DirCacheTree parent;
     private static final byte[] NO_NAME = new byte[0];

@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class ShapePath {
     protected static final float ANGLE_LEFT = 180.0f;
     private static final float ANGLE_UP = 270.0f;
@@ -148,7 +148,7 @@ public class ShapePath {
         return new AnonymousClass1(new ArrayList(this.shadowCompatOperations), new Matrix(matrix));
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.shape.ShapePath$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.shape.ShapePath$1, reason: invalid class name */
     class AnonymousClass1 extends ShadowCompatOperation {
         final /* synthetic */ List val$operations;
         final /* synthetic */ Matrix val$transformCopy;
@@ -399,7 +399,7 @@ public class ShapePath {
             return this.endX;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setEndX(float f) {
             this.endX = f;
         }
@@ -408,7 +408,7 @@ public class ShapePath {
             return this.controlY;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setControlY(float f) {
             this.controlY = f;
         }
@@ -417,7 +417,7 @@ public class ShapePath {
             return this.endY;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setEndY(float f) {
             this.endY = f;
         }
@@ -426,7 +426,7 @@ public class ShapePath {
             return this.controlX;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setControlX(float f) {
             this.controlX = f;
         }
@@ -471,22 +471,22 @@ public class ShapePath {
             path.transform(matrix);
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public float getLeft() {
             return this.left;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public float getTop() {
             return this.top;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public float getRight() {
             return this.right;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public float getBottom() {
             return this.bottom;
         }
@@ -507,22 +507,22 @@ public class ShapePath {
             this.bottom = f;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public float getStartAngle() {
             return this.startAngle;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public float getSweepAngle() {
             return this.sweepAngle;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setStartAngle(float f) {
             this.startAngle = f;
         }
 
-        /* JADX INFO: Access modifiers changed from: private */
+        /* INFO: Access modifiers changed from: private */
         public void setSweepAngle(float f) {
             this.sweepAngle = f;
         }

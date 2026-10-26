@@ -5,8 +5,8 @@ import kotlin.coroutines.Continuation;
 import kotlin.coroutines.jvm.internal.ContinuationImpl;
 import kotlin.coroutines.jvm.internal.DebugMetadata;
 
-/* JADX INFO: compiled from: NestedScrollNode.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: NestedScrollNode.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 @DebugMetadata(c = "androidx.compose.ui.input.nestedscroll.NestedScrollNode", f = "NestedScrollNode.kt", i = {0, 0, 1}, l = {98, 99}, m = "onPreFling-QWom1Mo", n = {"this", "available", "parentPreConsumed"}, s = {"L$0", "J$0", "J$0"})
 final class NestedScrollNode$onPreFling$1 extends ContinuationImpl {
@@ -16,7 +16,7 @@ final class NestedScrollNode$onPreFling$1 extends ContinuationImpl {
     /* synthetic */ Object result;
     final /* synthetic */ NestedScrollNode this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     NestedScrollNode$onPreFling$1(NestedScrollNode nestedScrollNode, Continuation<? super NestedScrollNode$onPreFling$1> continuation) {
         super(continuation);
         this.this$0 = nestedScrollNode;

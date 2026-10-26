@@ -11,7 +11,7 @@ import java.net.SocketAddress;
 import java.net.SocketException;
 import java.net.SocketImpl;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class DatagramSocketWrapper extends Socket {
     DatagramSocketWrapper(DatagramSocket datagramSocket, FileDescriptor fileDescriptor) throws SocketException {
         super(new DatagramSocketImplWrapper(datagramSocket, fileDescriptor));

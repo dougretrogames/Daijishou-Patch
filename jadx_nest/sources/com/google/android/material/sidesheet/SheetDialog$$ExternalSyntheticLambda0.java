@@ -2,8 +2,8 @@ package com.google.android.material.sidesheet;
 
 import android.view.View;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class SheetDialog$$ExternalSyntheticLambda0 implements View.OnClickListener {
     public final /* synthetic */ SheetDialog f$0;
 

@@ -16,8 +16,8 @@ import com.google.android.gms.common.api.internal.GoogleApiManager;
 import com.google.android.gms.common.internal.Preconditions;
 import org.eclipse.jgit.lib.BranchConfig;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public class GoogleApiActivity extends Activity implements DialogInterface.OnCancelListener {
     protected int zaa = 0;
 

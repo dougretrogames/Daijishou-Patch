@@ -9,7 +9,7 @@ import org.eclipse.jgit.errors.TransportException;
 import org.eclipse.jgit.internal.JGitText;
 import org.eclipse.jgit.lib.Ref;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class BaseConnection implements Connection {
     private Map<String, Ref> advertisedRefs = Collections.emptyMap();
     private Writer messageWriter;

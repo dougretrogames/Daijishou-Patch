@@ -10,7 +10,7 @@ import androidx.activity.BackEventCompat;
 import java.util.Objects;
 import kotlin.time.DurationKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MaterialBackOrchestrator {
     private final BackCallbackDelegate backCallbackDelegate;
     private final MaterialBackHandler backHandler;
@@ -77,7 +77,7 @@ public final class MaterialBackOrchestrator {
             this();
         }
 
-        /* JADX INFO: renamed from: com.google.android.material.motion.MaterialBackOrchestrator$Api34BackCallbackDelegate$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.android.material.motion.MaterialBackOrchestrator$Api34BackCallbackDelegate$1, reason: invalid class name */
         class AnonymousClass1 implements OnBackAnimationCallback {
             final /* synthetic */ MaterialBackHandler val$backHandler;
 

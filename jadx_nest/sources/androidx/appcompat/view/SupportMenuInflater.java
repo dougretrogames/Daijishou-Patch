@@ -31,7 +31,7 @@ import java.lang.reflect.Method;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class SupportMenuInflater extends MenuInflater {
     static final Class<?>[] ACTION_PROVIDER_CONSTRUCTOR_SIGNATURE;
     static final Class<?>[] ACTION_VIEW_CONSTRUCTOR_SIGNATURE;

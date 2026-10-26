@@ -6,7 +6,7 @@ import io.opencensus.trace.ContextManager;
 import io.opencensus.trace.Span;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class ContextManagerImpl implements ContextManager {
     @Override // io.opencensus.trace.ContextManager
     public ContextHandle currentContext() {

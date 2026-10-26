@@ -11,7 +11,7 @@ import java.nio.charset.CoderResult;
 import java.nio.charset.CodingErrorAction;
 import org.jsoup.helper.Validate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SimpleStreamReader extends Reader {
     static final /* synthetic */ boolean $assertionsDisabled = false;
     private ByteBuffer byteBuf;

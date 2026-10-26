@@ -2,7 +2,7 @@ package net.lingala.zip4j.crypto.engine;
 
 import net.lingala.zip4j.util.Zip4jUtil;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ZipCryptoEngine {
     private static final int[] CRC_TABLE = new int[256];
     private final int[] keys = new int[3];

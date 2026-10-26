@@ -6,7 +6,7 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import javax.annotation.meta.TypeQualifierDefault;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @TypeQualifierDefault({ElementType.PARAMETER})
 @Nullable
 @Documented

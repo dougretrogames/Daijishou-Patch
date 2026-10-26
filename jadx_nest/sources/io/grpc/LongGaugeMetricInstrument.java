@@ -2,7 +2,7 @@ package io.grpc;
 
 import java.util.List;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public final class LongGaugeMetricInstrument extends PartialMetricInstrument implements CallbackMetricInstrument {
     @Override // io.grpc.PartialMetricInstrument, io.grpc.MetricInstrument
     public /* bridge */ /* synthetic */ String getDescription() {

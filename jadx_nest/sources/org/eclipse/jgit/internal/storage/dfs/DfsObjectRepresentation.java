@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.dfs;
 import org.eclipse.jgit.internal.storage.pack.StoredObjectRepresentation;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class DfsObjectRepresentation extends StoredObjectRepresentation {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$internal$storage$dfs$DfsObjDatabase$PackSource;
     ObjectId baseId;

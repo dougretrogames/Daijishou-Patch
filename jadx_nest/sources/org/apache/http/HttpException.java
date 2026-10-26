@@ -2,7 +2,7 @@ package org.apache.http;
 
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpException extends Exception {
     private static final int FIRST_VALID_CHAR = 32;
     private static final long serialVersionUID = -5437299376222011036L;

@@ -1,6 +1,6 @@
 package org.eclipse.jgit.util;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class RawCharSequence implements CharSequence {
     public static final RawCharSequence EMPTY = new RawCharSequence(null, 0, 0);
     final byte[] buffer;

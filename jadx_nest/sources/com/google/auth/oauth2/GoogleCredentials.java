@@ -19,7 +19,7 @@ import java.util.Map;
 import java.util.Objects;
 import javax.annotation.Nullable;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class GoogleCredentials extends OAuth2Credentials implements QuotaProjectIdProvider {
     static final String GDCH_SERVICE_ACCOUNT_FILE_TYPE = "gdch_service_account";
     static final String QUOTA_PROJECT_ID_HEADER_KEY = "x-goog-user-project";

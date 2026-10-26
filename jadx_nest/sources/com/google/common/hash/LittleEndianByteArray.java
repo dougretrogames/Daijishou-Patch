@@ -7,7 +7,7 @@ import java.security.AccessController;
 import java.security.PrivilegedActionException;
 import sun.misc.Unsafe;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 final class LittleEndianByteArray {
     static final /* synthetic */ boolean $assertionsDisabled = false;
@@ -44,9 +44,9 @@ final class LittleEndianByteArray {
         return byteArray instanceof UnsafeByteArray;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* INFO: Access modifiers changed from: private */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     static abstract class UnsafeByteArray implements LittleEndianBytes {
         private static final int BYTE_ARRAY_BASE_OFFSET;
         private static final Unsafe theUnsafe;
@@ -74,7 +74,7 @@ final class LittleEndianByteArray {
             return (UnsafeByteArray[]) $VALUES.clone();
         }
 
-        /* JADX INFO: renamed from: com.google.common.hash.LittleEndianByteArray$UnsafeByteArray$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.hash.LittleEndianByteArray$UnsafeByteArray$1, reason: invalid class name */
         final enum AnonymousClass1 extends UnsafeByteArray {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -100,7 +100,7 @@ final class LittleEndianByteArray {
             }
         }
 
-        /* JADX INFO: renamed from: com.google.common.hash.LittleEndianByteArray$UnsafeByteArray$2, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.hash.LittleEndianByteArray$UnsafeByteArray$2, reason: invalid class name */
         final enum AnonymousClass2 extends UnsafeByteArray {
             AnonymousClass2(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);
@@ -141,13 +141,13 @@ final class LittleEndianByteArray {
         }
     }
 
-    /* JADX WARN: Failed to restore enum class, 'enum' modifier and super class removed */
-    /* JADX WARN: Unknown enum class pattern. Please report as an issue! */
+    /* WARN: Failed to restore enum class, 'enum' modifier and super class removed */
+    /* WARN: Unknown enum class pattern. Please report as an issue! */
     private static abstract class JavaLittleEndianBytes implements LittleEndianBytes {
         public static final JavaLittleEndianBytes INSTANCE = new AnonymousClass1("INSTANCE", 0);
         private static final /* synthetic */ JavaLittleEndianBytes[] $VALUES = $values();
 
-        /* JADX INFO: renamed from: com.google.common.hash.LittleEndianByteArray$JavaLittleEndianBytes$1, reason: invalid class name */
+        /* INFO: renamed from: com.google.common.hash.LittleEndianByteArray$JavaLittleEndianBytes$1, reason: invalid class name */
         final enum AnonymousClass1 extends JavaLittleEndianBytes {
             AnonymousClass1(String $enum$name, int $enum$ordinal) {
                 super($enum$name, $enum$ordinal, null);

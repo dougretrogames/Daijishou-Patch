@@ -3,7 +3,7 @@ package com.bumptech.glide.request;
 import com.bumptech.glide.load.DataSource;
 import com.bumptech.glide.request.target.Target;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public abstract class ExperimentalRequestListener<ResourceT> implements RequestListener<ResourceT> {
     public void onRequestStarted(Object obj) {

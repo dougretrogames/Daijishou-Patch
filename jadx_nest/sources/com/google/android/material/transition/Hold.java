@@ -7,7 +7,7 @@ import android.view.ViewGroup;
 import androidx.transition.TransitionValues;
 import androidx.transition.Visibility;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Hold extends Visibility {
     @Override // androidx.transition.Visibility
     public Animator onAppear(ViewGroup viewGroup, View view, TransitionValues transitionValues, TransitionValues transitionValues2) {

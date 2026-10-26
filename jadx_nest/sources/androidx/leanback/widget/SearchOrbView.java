@@ -17,7 +17,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import androidx.core.view.ViewCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class SearchOrbView extends FrameLayout implements View.OnClickListener {
     private boolean mAttachedToWindow;
     private boolean mColorAnimationEnabled;
@@ -63,12 +63,12 @@ public class SearchOrbView extends FrameLayout implements View.OnClickListener {
         }
     }
 
-    /* JADX INFO: renamed from: lambda$new$0$androidx-leanback-widget-SearchOrbView, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$0$androidx-leanback-widget-SearchOrbView, reason: not valid java name */
     /* synthetic */ void m3202lambda$new$0$androidxleanbackwidgetSearchOrbView(ValueAnimator valueAnimator) {
         setOrbViewColor(((Integer) valueAnimator.getAnimatedValue()).intValue());
     }
 
-    /* JADX INFO: renamed from: lambda$new$1$androidx-leanback-widget-SearchOrbView, reason: not valid java name */
+    /* INFO: renamed from: lambda$new$1$androidx-leanback-widget-SearchOrbView, reason: not valid java name */
     /* synthetic */ void m3203lambda$new$1$androidxleanbackwidgetSearchOrbView(ValueAnimator valueAnimator) {
         setSearchOrbZ(valueAnimator.getAnimatedFraction());
     }

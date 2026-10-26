@@ -15,12 +15,12 @@ import android.view.animation.Transformation;
 import androidx.core.view.OneShotPreDrawListener;
 import androidx.fragment.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class FragmentAnim {
     private FragmentAnim() {
     }
 
-    /* JADX WARN: Code duplicated, block: B:34:0x0075 A[Catch: RuntimeException -> 0x007b, TRY_LEAVE, TryCatch #2 {RuntimeException -> 0x007b, blocks: (B:32:0x006f, B:34:0x0075), top: B:45:0x006f }] */
+    /* WARN: Code duplicated, block: B:34:0x0075 A[Catch: RuntimeException -> 0x007b, TRY_LEAVE, TryCatch #2 {RuntimeException -> 0x007b, blocks: (B:32:0x006f, B:34:0x0075), top: B:45:0x006f }] */
     static AnimationOrAnimator loadAnimation(Context context, Fragment fragment, boolean z, boolean z2) {
         Animator animatorLoadAnimator;
         int nextTransition = fragment.getNextTransition();

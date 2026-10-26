@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Queue;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ExceptionPassthroughInputStream extends InputStream {
     private static final Queue<ExceptionPassthroughInputStream> POOL = Util.createQueue(0);
     private IOException exception;

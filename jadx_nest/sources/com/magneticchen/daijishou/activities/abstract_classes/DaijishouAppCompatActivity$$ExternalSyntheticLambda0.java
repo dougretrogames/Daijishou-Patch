@@ -4,8 +4,8 @@ import android.view.View;
 import android.view.WindowInsets;
 import androidx.core.view.WindowInsetsControllerCompat;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class DaijishouAppCompatActivity$$ExternalSyntheticLambda0 implements View.OnApplyWindowInsetsListener {
     public final /* synthetic */ WindowInsetsControllerCompat f$0;
 

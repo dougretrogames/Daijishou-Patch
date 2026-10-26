@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Objects;
 import org.apache.commons.collections4.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class InstanceofPredicate extends AbstractPredicate<Object> implements Serializable {
     private static final long serialVersionUID = -6682656911025165584L;
     private final Class<?> iType;

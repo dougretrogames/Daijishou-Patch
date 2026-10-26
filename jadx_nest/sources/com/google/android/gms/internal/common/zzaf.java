@@ -4,8 +4,8 @@ import java.util.List;
 import javax.annotation.CheckForNull;
 import org.eclipse.jgit.lib.ConfigConstants;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-basement@@18.3.0 */
+/* INFO: loaded from: classes3.dex */
 final class zzaf extends zzag {
     final transient int zza;
     final transient int zzb;
@@ -55,7 +55,7 @@ final class zzaf extends zzag {
     }
 
     @Override // com.google.android.gms.internal.common.zzag
-    /* JADX INFO: renamed from: zzh */
+    /* INFO: renamed from: zzh */
     public final zzag subList(int i, int i2) {
         zzs.zzc(i, i2, this.zzb);
         int i3 = this.zza;

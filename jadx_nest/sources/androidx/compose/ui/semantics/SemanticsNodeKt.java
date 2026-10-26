@@ -13,12 +13,12 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.Intrinsics;
 import okhttp3.internal.http2.Http2Connection;
 
-/* JADX INFO: compiled from: SemanticsNode.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: SemanticsNode.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(d1 = {"\u00002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u000b\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\u0018\u0010\n\u001a\u00020\u00072\u0006\u0010\u000b\u001a\u00020\u00022\u0006\u0010\f\u001a\u00020\rH\u0000\u001a\"\u0010\n\u001a\u00020\u00072\u0006\u0010\u000e\u001a\u00020\u00012\u0006\u0010\f\u001a\u00020\r2\b\b\u0002\u0010\u000b\u001a\u00020\u0002H\u0000\u001a\f\u0010\u000f\u001a\u00020\u0010*\u00020\u0007H\u0002\u001a\"\u0010\u0011\u001a\u0004\u0018\u00010\u0002*\u00020\u00022\u0012\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\r0\u0013H\u0000\u001a\f\u0010\u0014\u001a\u00020\u0010*\u00020\u0007H\u0002\"\u001a\u0010\u0000\u001a\u0004\u0018\u00010\u0001*\u00020\u00028@X\u0080\u0004¢\u0006\u0006\u001a\u0004\b\u0003\u0010\u0004\"\u001a\u0010\u0005\u001a\u0004\u0018\u00010\u0006*\u00020\u00078BX\u0082\u0004¢\u0006\u0006\u001a\u0004\b\b\u0010\t¨\u0006\u0015"}, d2 = {"outerMergingSemantics", "Landroidx/compose/ui/node/SemanticsModifierNode;", "Landroidx/compose/ui/node/LayoutNode;", "getOuterMergingSemantics", "(Landroidx/compose/ui/node/LayoutNode;)Landroidx/compose/ui/node/SemanticsModifierNode;", "role", "Landroidx/compose/ui/semantics/Role;", "Landroidx/compose/ui/semantics/SemanticsNode;", "getRole", "(Landroidx/compose/ui/semantics/SemanticsNode;)Landroidx/compose/ui/semantics/Role;", "SemanticsNode", "layoutNode", "mergingEnabled", "", "outerSemanticsNode", "contentDescriptionFakeNodeId", "", "findClosestParentNode", "selector", "Lkotlin/Function1;", "roleFakeNodeId", "ui_release"}, k = 2, mv = {1, 8, 0}, xi = 48)
 public final class SemanticsNodeKt {
-    /* JADX WARN: Code duplicated, block: B:39:0x0079 A[LOOP:0: B:5:0x0016->B:39:0x0079, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:44:0x007e A[EDGE_INSN: B:44:0x007e->B:40:0x007e BREAK  A[LOOP:0: B:5:0x0016->B:39:0x0079], SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:39:0x0079 A[LOOP:0: B:5:0x0016->B:39:0x0079, LOOP_END] */
+    /* WARN: Code duplicated, block: B:44:0x007e A[EDGE_INSN: B:44:0x007e->B:40:0x007e BREAK  A[LOOP:0: B:5:0x0016->B:39:0x0079], SYNTHETIC] */
     public static final SemanticsNode SemanticsNode(LayoutNode layoutNode, boolean z) {
         NodeChain nodes = layoutNode.getNodes();
         int iM2034constructorimpl = NodeKind.m2034constructorimpl(8);
@@ -95,8 +95,8 @@ public final class SemanticsNodeKt {
         return new SemanticsNode(node, z, layoutNode, collapsedSemantics$ui_release);
     }
 
-    /* JADX WARN: Code duplicated, block: B:41:0x0082 A[LOOP:0: B:5:0x0016->B:41:0x0082, LOOP_END] */
-    /* JADX WARN: Code duplicated, block: B:46:0x0087 A[EDGE_INSN: B:46:0x0087->B:42:0x0087 BREAK  A[LOOP:0: B:5:0x0016->B:41:0x0082], SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:41:0x0082 A[LOOP:0: B:5:0x0016->B:41:0x0082, LOOP_END] */
+    /* WARN: Code duplicated, block: B:46:0x0087 A[EDGE_INSN: B:46:0x0087->B:42:0x0087 BREAK  A[LOOP:0: B:5:0x0016->B:41:0x0082], SYNTHETIC] */
     public static final SemanticsModifierNode getOuterMergingSemantics(LayoutNode layoutNode) {
         NodeChain nodes = layoutNode.getNodes();
         int iM2034constructorimpl = NodeKind.m2034constructorimpl(8);
@@ -163,17 +163,17 @@ public final class SemanticsNodeKt {
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final Role getRole(SemanticsNode semanticsNode) {
         return (Role) SemanticsConfigurationKt.getOrNull(semanticsNode.getUnmergedConfig(), SemanticsProperties.INSTANCE.getRole());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final int contentDescriptionFakeNodeId(SemanticsNode semanticsNode) {
         return semanticsNode.getId() + 2000000000;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final int roleFakeNodeId(SemanticsNode semanticsNode) {
         return semanticsNode.getId() + Http2Connection.DEGRADED_PONG_TIMEOUT_NS;
     }

@@ -3,7 +3,7 @@ package androidx.recyclerview.widget;
 import android.graphics.PointF;
 import android.view.View;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class LinearSnapHelper extends SnapHelper {
     private static final float INVALID_DISTANCE = 1.0f;
     private OrientationHelper mHorizontalHelper;
@@ -25,7 +25,7 @@ public class LinearSnapHelper extends SnapHelper {
         return iArr;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     @Override // androidx.recyclerview.widget.SnapHelper
     public int findTargetSnapPosition(RecyclerView.LayoutManager layoutManager, int i, int i2) {
         int itemCount;

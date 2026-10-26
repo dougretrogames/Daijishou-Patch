@@ -4,7 +4,7 @@ import io.noties.markwon.MarkwonConfiguration;
 import io.noties.markwon.RenderProps;
 import io.noties.markwon.SpanFactory;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class ImageSpanFactory implements SpanFactory {
     @Override // io.noties.markwon.SpanFactory
     public Object getSpans(MarkwonConfiguration markwonConfiguration, RenderProps renderProps) {

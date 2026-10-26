@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Comparator;
 import org.apache.commons.collections4.ComparatorUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReverseComparator<E> implements Comparator<E>, Serializable {
     private static final long serialVersionUID = 2858887242028539265L;
     private final Comparator<? super E> comparator;

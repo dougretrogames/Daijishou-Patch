@@ -11,7 +11,7 @@ import org.eclipse.jgit.transport.resolver.ReceivePackFactory;
 import org.eclipse.jgit.transport.resolver.ServiceNotAuthorizedException;
 import org.eclipse.jgit.transport.resolver.ServiceNotEnabledException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class InternalPushConnection<C> extends BasePackPushConnection {
     private Thread worker;
 
@@ -33,7 +33,7 @@ class InternalPushConnection<C> extends BasePackPushConnection {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.InternalPushConnection$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.InternalPushConnection$1, reason: invalid class name */
     class AnonymousClass1 extends Thread {
         private final /* synthetic */ PipedOutputStream val$in_w;
         private final /* synthetic */ PipedInputStream val$out_r;
@@ -41,7 +41,7 @@ class InternalPushConnection<C> extends BasePackPushConnection {
         private final /* synthetic */ Repository val$remote;
         private final /* synthetic */ Object val$req;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(String str, PipedInputStream pipedInputStream, PipedOutputStream pipedOutputStream, Repository repository, ReceivePackFactory receivePackFactory, Object obj) {
             super(str);
             this.val$out_r = pipedInputStream;
@@ -51,7 +51,7 @@ class InternalPushConnection<C> extends BasePackPushConnection {
             this.val$req = obj;
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         @Override // java.lang.Thread, java.lang.Runnable
         public void run() {
             PipedOutputStream pipedOutputStream;

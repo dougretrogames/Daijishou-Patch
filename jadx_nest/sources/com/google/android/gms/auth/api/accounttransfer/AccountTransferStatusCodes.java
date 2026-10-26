@@ -2,8 +2,8 @@ package com.google.android.gms.auth.api.accounttransfer;
 
 import com.google.android.gms.common.api.CommonStatusCodes;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 public final class AccountTransferStatusCodes extends CommonStatusCodes {
     public static final int CHALLENGE_NOT_ALLOWED = 20503;
     public static final int INVALID_REQUEST = 20502;

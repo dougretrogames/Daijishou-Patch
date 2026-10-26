@@ -10,8 +10,8 @@ import kotlin.annotation.AnnotationRetention;
 import kotlin.annotation.AnnotationTarget;
 import kotlin.annotation.MustBeDocumented;
 
-/* JADX INFO: compiled from: JsAnnotationsH.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: JsAnnotationsH.kt */
+/* INFO: loaded from: classes4.dex */
 @Target({ElementType.TYPE, ElementType.METHOD})
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.CLASS, AnnotationTarget.FUNCTION})
 @Retention(RetentionPolicy.CLASS)

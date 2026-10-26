@@ -3,7 +3,7 @@ package com.google.common.io;
 import com.google.errorprone.annotations.DoNotMock;
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 @DoNotMock("Implement it normally")
 public interface ByteProcessor<T> {

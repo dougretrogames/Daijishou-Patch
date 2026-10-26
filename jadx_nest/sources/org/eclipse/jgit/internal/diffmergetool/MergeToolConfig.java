@@ -7,7 +7,7 @@ import org.eclipse.jgit.lib.Config;
 import org.eclipse.jgit.lib.ConfigConstants;
 import org.eclipse.jgit.lib.internal.BooleanTriState;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MergeToolConfig {
     public static final Config.SectionParser<MergeToolConfig> KEY = new MergeToolConfig$$ExternalSyntheticLambda0();
     private final String guiToolName;

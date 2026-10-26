@@ -1,7 +1,7 @@
 package com.google.android.gms.common.api.internal;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class zacb implements Runnable {
     public final /* synthetic */ ListenerHolder zaa;
     public final /* synthetic */ ListenerHolder.Notifier zab;

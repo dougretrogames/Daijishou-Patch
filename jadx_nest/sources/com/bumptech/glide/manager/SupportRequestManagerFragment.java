@@ -3,7 +3,7 @@ package com.bumptech.glide.manager;
 import androidx.fragment.app.Fragment;
 import com.bumptech.glide.RequestManager;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class SupportRequestManagerFragment extends Fragment {
     @Deprecated

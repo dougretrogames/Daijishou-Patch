@@ -14,7 +14,7 @@ import com.google.android.material.radiobutton.MaterialRadioButton;
 import com.google.android.material.textfield.MaterialAutoCompleteTextView;
 import com.google.android.material.textview.MaterialTextView;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MaterialComponentsViewInflater extends AppCompatViewInflater {
     @Override // androidx.appcompat.app.AppCompatViewInflater
     protected AppCompatButton createButton(Context context, AttributeSet attributeSet) {

@@ -5,12 +5,12 @@ import java.lang.Comparable;
 import java.util.NoSuchElementException;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class ContiguousSet<C extends Comparable> extends ImmutableSortedSet<C> {
     final DiscreteDomain<C> domain;
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ImmutableSortedSet
     public abstract ContiguousSet<C> headSetImpl(C toElement, boolean inclusive);
 
@@ -20,11 +20,11 @@ public abstract class ContiguousSet<C extends Comparable> extends ImmutableSorte
 
     public abstract Range<C> range(BoundType lowerBoundType, BoundType upperBoundType);
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ImmutableSortedSet
     public abstract ContiguousSet<C> subSetImpl(C fromElement, boolean fromInclusive, C toElement, boolean toInclusive);
 
-    /* JADX INFO: Access modifiers changed from: package-private */
+    /* INFO: Access modifiers changed from: package-private */
     @Override // com.google.common.collect.ImmutableSortedSet
     public abstract ContiguousSet<C> tailSetImpl(C fromElement, boolean inclusive);
 

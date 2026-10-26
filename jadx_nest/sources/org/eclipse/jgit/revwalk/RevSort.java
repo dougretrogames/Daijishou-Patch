@@ -1,6 +1,6 @@
 package org.eclipse.jgit.revwalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum RevSort {
     NONE,
     COMMIT_TIME_DESC,
@@ -9,7 +9,7 @@ public enum RevSort {
     REVERSE,
     BOUNDARY;
 
-    /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+    /* INFO: renamed from: values, reason: to resolve conflict with enum method */
     public static RevSort[] valuesCustom() {
         RevSort[] revSortArrValuesCustom = values();
         int length = revSortArrValuesCustom.length;

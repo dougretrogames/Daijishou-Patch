@@ -16,7 +16,7 @@ import java.util.Set;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AbstractMemoryDataStore<V extends Serializable> extends AbstractDataStore<V> {
     protected HashMap<String, byte[]> keyValueMap;
     private final Lock lock;

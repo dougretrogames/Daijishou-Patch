@@ -21,7 +21,7 @@ import org.eclipse.jgit.lib.SignatureVerifiers;
 import org.eclipse.jgit.revwalk.RevObject;
 import org.eclipse.jgit.revwalk.RevWalk;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class VerifySignatureCommand extends GitCommand<Map<String, VerificationResult>> {
     private GpgConfig config;
     private VerifyMode mode;
@@ -32,7 +32,7 @@ public class VerifySignatureCommand extends GitCommand<Map<String, VerificationR
         COMMITS,
         TAGS;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static VerifyMode[] valuesCustom() {
             VerifyMode[] verifyModeArrValuesCustom = values();
             int length = verifyModeArrValuesCustom.length;

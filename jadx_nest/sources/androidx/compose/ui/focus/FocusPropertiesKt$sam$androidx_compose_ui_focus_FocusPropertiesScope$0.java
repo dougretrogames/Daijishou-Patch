@@ -6,8 +6,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.FunctionAdapter;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: compiled from: FocusProperties.kt */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: FocusProperties.kt */
+/* INFO: loaded from: classes.dex */
 @Metadata(k = 3, mv = {1, 8, 0}, xi = 48)
 final class FocusPropertiesKt$sam$androidx_compose_ui_focus_FocusPropertiesScope$0 implements FocusPropertiesScope, FunctionAdapter {
     private final /* synthetic */ Function1 function;

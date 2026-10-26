@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.Set;
 import java.util.SortedSet;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public abstract class AbstractSortedSetDecorator<E> extends AbstractSetDecorator<E> implements SortedSet<E> {
     private static final long serialVersionUID = -3462240946294214398L;
 
@@ -20,7 +20,7 @@ public abstract class AbstractSortedSetDecorator<E> extends AbstractSetDecorator
         return decorated().comparator();
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // org.apache.commons.collections4.set.AbstractSetDecorator, org.apache.commons.collections4.collection.AbstractCollectionDecorator
     public SortedSet<E> decorated() {
         return (SortedSet) super.decorated();

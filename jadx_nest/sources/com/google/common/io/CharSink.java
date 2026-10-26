@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.Iterator;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class CharSink {
     public abstract Writer openStream() throws IOException;

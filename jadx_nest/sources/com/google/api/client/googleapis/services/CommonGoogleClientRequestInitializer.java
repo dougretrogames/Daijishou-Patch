@@ -2,7 +2,7 @@ package com.google.api.client.googleapis.services;
 
 import java.io.IOException;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class CommonGoogleClientRequestInitializer implements GoogleClientRequestInitializer {
     private static final String REQUEST_REASON_HEADER_NAME = "X-Goog-Request-Reason";
     private static final String USER_PROJECT_HEADER_NAME = "X-Goog-User-Project";

@@ -3,7 +3,7 @@ package org.apache.http.util;
 import java.io.Serializable;
 import okio.Utf8;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class ByteArrayBuffer implements Serializable {
     private static final long serialVersionUID = 4359112959524048036L;
     private byte[] buffer;

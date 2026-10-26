@@ -6,7 +6,7 @@ import com.google.api.client.http.HttpContent;
 import com.google.api.client.http.HttpHeaders;
 import com.google.common.base.Strings;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockGoogleClientRequest<T> extends AbstractGoogleClientRequest<T> {
     public MockGoogleClientRequest(AbstractGoogleClient abstractGoogleClient, String str, String str2, HttpContent httpContent, Class<T> cls) {
         this(abstractGoogleClient, str, str2, httpContent, cls, null);

@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Objects;
 import org.eclipse.jgit.annotations.Nullable;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class LsRefsV2Request {
 
     @Nullable

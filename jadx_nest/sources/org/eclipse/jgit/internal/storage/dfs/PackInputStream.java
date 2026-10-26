@@ -3,7 +3,7 @@ package org.eclipse.jgit.internal.storage.dfs;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class PackInputStream extends InputStream {
     final DfsReader ctx;
     private final DfsPackFile pack;

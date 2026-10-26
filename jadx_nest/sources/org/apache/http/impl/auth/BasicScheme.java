@@ -18,7 +18,7 @@ import org.apache.http.util.Args;
 import org.apache.http.util.CharArrayBuffer;
 import org.apache.http.util.EncodingUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class BasicScheme extends RFC2617Scheme {
     private static final long serialVersionUID = -1931571557597830536L;
     private boolean complete;

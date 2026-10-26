@@ -5,7 +5,7 @@ import android.os.Build;
 import android.view.View;
 import android.view.ViewGroup;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class GhostViewUtils {
     static GhostView addGhost(View view, ViewGroup viewGroup, Matrix matrix) {
         if (Build.VERSION.SDK_INT == 28) {

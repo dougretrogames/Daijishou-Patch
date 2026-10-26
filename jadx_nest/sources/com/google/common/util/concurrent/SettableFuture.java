@@ -1,6 +1,6 @@
 package com.google.common.util.concurrent;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public final class SettableFuture<V> extends AbstractFuture.TrustedFuture<V> {
     public static <V> SettableFuture<V> create() {

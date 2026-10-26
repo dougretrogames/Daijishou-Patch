@@ -11,8 +11,8 @@ import android.widget.HeaderViewListAdapter;
 import android.widget.ListAdapter;
 import android.widget.PopupWindow;
 
-/* JADX INFO: Access modifiers changed from: package-private */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: Access modifiers changed from: package-private */
+/* INFO: loaded from: classes.dex */
 public abstract class MenuPopup implements ShowableListMenu, MenuPresenter, AdapterView.OnItemClickListener {
     private Rect mEpicenterBounds;
 

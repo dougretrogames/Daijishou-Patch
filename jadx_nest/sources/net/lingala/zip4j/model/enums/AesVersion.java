@@ -2,7 +2,7 @@ package net.lingala.zip4j.model.enums;
 
 import net.lingala.zip4j.exception.ZipException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum AesVersion {
     ONE(1),
     TWO(2);

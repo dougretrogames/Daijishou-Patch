@@ -5,7 +5,7 @@ import com.google.errorprone.annotations.Immutable;
 import java.nio.ByteBuffer;
 import java.nio.charset.Charset;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Immutable
 @ElementTypesAreNonnullByDefault
 abstract class AbstractCompositeHashFunction extends AbstractHashFunction {
@@ -42,7 +42,7 @@ abstract class AbstractCompositeHashFunction extends AbstractHashFunction {
         return fromHashers(hasherArr);
     }
 
-    /* JADX INFO: renamed from: com.google.common.hash.AbstractCompositeHashFunction$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.hash.AbstractCompositeHashFunction$1, reason: invalid class name */
     class AnonymousClass1 implements Hasher {
         final /* synthetic */ Hasher[] val$hashers;
 

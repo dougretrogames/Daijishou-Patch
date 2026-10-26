@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EditScript<T> {
     private final List<EditCommand<T>> commands = new ArrayList();
     private int lcsLength = 0;

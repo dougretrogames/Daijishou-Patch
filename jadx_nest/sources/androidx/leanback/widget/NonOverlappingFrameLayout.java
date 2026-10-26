@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.FrameLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class NonOverlappingFrameLayout extends FrameLayout {
     @Override // android.view.View
     public boolean hasOverlappingRendering() {

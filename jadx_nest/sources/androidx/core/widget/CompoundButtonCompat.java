@@ -6,7 +6,7 @@ import android.graphics.drawable.Drawable;
 import android.widget.CompoundButton;
 import java.lang.reflect.Field;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class CompoundButtonCompat {
     private static final String TAG = "CompoundButtonCompat";
     private static Field sButtonDrawableField;

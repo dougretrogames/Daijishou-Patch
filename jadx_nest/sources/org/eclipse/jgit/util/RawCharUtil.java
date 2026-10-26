@@ -1,6 +1,6 @@
 package org.eclipse.jgit.util;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RawCharUtil {
     private static final boolean[] WHITESPACE;
 

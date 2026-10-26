@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.util.Arrays;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class PlaybackTransportRowPresenter extends PlaybackRowPresenter {
     Presenter mDescriptionPresenter;
     OnActionClickedListener mOnActionClickedListener;
@@ -63,7 +63,7 @@ public class PlaybackTransportRowPresenter extends PlaybackRowPresenter {
         final TextView mTotalTime;
         long mTotalTimeInMs;
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$ViewHolder$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$ViewHolder$1, reason: invalid class name */
         class AnonymousClass1 extends PlaybackControlsRow.OnPlaybackProgressCallback {
             AnonymousClass1() {
             }
@@ -141,15 +141,15 @@ public class PlaybackTransportRowPresenter extends PlaybackRowPresenter {
             this.mSeekClient.onSeekPositionChanged(j3);
         }
 
-        /* JADX WARN: Code duplicated, block: B:30:0x0085 A[ADDED_TO_REGION, LOOP:0: B:30:0x0085->B:31:0x0087, LOOP_START, PHI: r7
+        /* WARN: Code duplicated, block: B:30:0x0085 A[ADDED_TO_REGION, LOOP:0: B:30:0x0085->B:31:0x0087, LOOP_START, PHI: r7
   0x0085: PHI (r7v13 int) = (r7v12 int), (r7v14 int) binds: [B:29:0x0083, B:31:0x0087] A[DONT_GENERATE, DONT_INLINE]] */
-        /* JADX WARN: Code duplicated, block: B:31:0x0087 A[LOOP:0: B:30:0x0085->B:31:0x0087, LOOP_END] */
-        /* JADX WARN: Code duplicated, block: B:32:0x0091 A[ADDED_TO_REGION, LOOP:3: B:32:0x0091->B:33:0x0093, LOOP_START, PHI: r5
+        /* WARN: Code duplicated, block: B:31:0x0087 A[LOOP:0: B:30:0x0085->B:31:0x0087, LOOP_END] */
+        /* WARN: Code duplicated, block: B:32:0x0091 A[ADDED_TO_REGION, LOOP:3: B:32:0x0091->B:33:0x0093, LOOP_START, PHI: r5
   0x0091: PHI (r5v9 int) = (r5v8 int), (r5v10 int) binds: [B:29:0x0083, B:33:0x0093] A[DONT_GENERATE, DONT_INLINE]] */
-        /* JADX WARN: Code duplicated, block: B:33:0x0093 A[LOOP:3: B:32:0x0091->B:33:0x0093, LOOP_END] */
-        /* JADX WARN: Code duplicated, block: B:36:0x00a5 A[LOOP:1: B:34:0x009d->B:36:0x00a5, LOOP_END] */
-        /* JADX WARN: Code duplicated, block: B:39:0x00b2 A[LOOP:2: B:38:0x00b0->B:39:0x00b2, LOOP_END] */
-        /* JADX WARN: Code duplicated, block: B:44:0x00ad A[EDGE_INSN: B:44:0x00ad->B:37:0x00ad BREAK  A[LOOP:1: B:34:0x009d->B:36:0x00a5], SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:33:0x0093 A[LOOP:3: B:32:0x0091->B:33:0x0093, LOOP_END] */
+        /* WARN: Code duplicated, block: B:36:0x00a5 A[LOOP:1: B:34:0x009d->B:36:0x00a5, LOOP_END] */
+        /* WARN: Code duplicated, block: B:39:0x00b2 A[LOOP:2: B:38:0x00b0->B:39:0x00b2, LOOP_END] */
+        /* WARN: Code duplicated, block: B:44:0x00ad A[EDGE_INSN: B:44:0x00ad->B:37:0x00ad BREAK  A[LOOP:1: B:34:0x009d->B:36:0x00a5], SYNTHETIC] */
         void updateThumbsInSeek(int i, boolean z) {
             int iMin;
             int i2;
@@ -239,7 +239,7 @@ public class PlaybackTransportRowPresenter extends PlaybackRowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$ViewHolder$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$ViewHolder$2, reason: invalid class name */
         class AnonymousClass2 extends PlaybackSeekDataProvider.ResultCallback {
             AnonymousClass2() {
             }
@@ -301,7 +301,7 @@ public class PlaybackTransportRowPresenter extends PlaybackRowPresenter {
             this.mThumbsBar = (ThumbsBar) view.findViewById(androidx.leanback.R.id.thumbs_row);
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$ViewHolder$3, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$ViewHolder$3, reason: invalid class name */
         class AnonymousClass3 implements View.OnClickListener {
             final /* synthetic */ PlaybackTransportRowPresenter val$this$0;
 
@@ -315,7 +315,7 @@ public class PlaybackTransportRowPresenter extends PlaybackRowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$ViewHolder$4, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$ViewHolder$4, reason: invalid class name */
         class AnonymousClass4 implements View.OnKeyListener {
             final /* synthetic */ PlaybackTransportRowPresenter val$this$0;
 
@@ -377,7 +377,7 @@ public class PlaybackTransportRowPresenter extends PlaybackRowPresenter {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$ViewHolder$5, reason: invalid class name */
+        /* INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$ViewHolder$5, reason: invalid class name */
         class AnonymousClass5 extends SeekBar.AccessibilitySeekListener {
             final /* synthetic */ PlaybackTransportRowPresenter val$this$0;
 
@@ -555,7 +555,7 @@ public class PlaybackTransportRowPresenter extends PlaybackRowPresenter {
         sb.append(j5);
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$1, reason: invalid class name */
     class AnonymousClass1 implements ControlBarPresenter.OnControlSelectedListener {
         AnonymousClass1() {
         }
@@ -572,7 +572,7 @@ public class PlaybackTransportRowPresenter extends PlaybackRowPresenter {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$2, reason: invalid class name */
     class AnonymousClass2 implements ControlBarPresenter.OnControlClickedListener {
         AnonymousClass2() {
         }
@@ -687,7 +687,7 @@ public class PlaybackTransportRowPresenter extends PlaybackRowPresenter {
         ((PlaybackTransportRowView) viewHolder.view.findViewById(androidx.leanback.R.id.transport_row)).setOnUnhandledKeyListener(new AnonymousClass3(viewHolder));
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.PlaybackTransportRowPresenter$3, reason: invalid class name */
     class AnonymousClass3 implements PlaybackTransportRowView.OnUnhandledKeyListener {
         final /* synthetic */ ViewHolder val$vh;
 

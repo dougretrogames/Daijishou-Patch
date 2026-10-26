@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import org.eclipse.jgit.lib.Constants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DeltaEncoder {
     private static final int MAX_COPY_CMD_SIZE = 8;
     private static final int MAX_INSERT_DATA_SIZE = 127;

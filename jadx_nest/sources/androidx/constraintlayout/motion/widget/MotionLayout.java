@@ -51,7 +51,7 @@ import java.util.Iterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MotionLayout extends ConstraintLayout implements NestedScrollingParent3 {
     private static final boolean DEBUG = false;
     public static final int DEBUG_SHOW_NONE = 0;
@@ -689,7 +689,7 @@ public class MotionLayout extends ConstraintLayout implements NestedScrollingPar
         this.mScene = null;
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.motion.widget.MotionLayout$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.motion.widget.MotionLayout$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -894,7 +894,7 @@ public class MotionLayout extends ConstraintLayout implements NestedScrollingPar
         invalidate();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void setupMotionViews() {
         int childCount = getChildCount();
         this.mModel.build();
@@ -1011,10 +1011,10 @@ public class MotionLayout extends ConstraintLayout implements NestedScrollingPar
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:19:0x003b  */
-    /* JADX WARN: Code duplicated, block: B:32:0x00a3  */
-    /* JADX WARN: Code duplicated, block: B:35:0x00ac  */
-    /* JADX WARN: Code duplicated, block: B:36:0x00c4  */
+    /* WARN: Code duplicated, block: B:19:0x003b  */
+    /* WARN: Code duplicated, block: B:32:0x00a3  */
+    /* WARN: Code duplicated, block: B:35:0x00ac  */
+    /* WARN: Code duplicated, block: B:36:0x00c4  */
     public void touchAnimateTo(int i, float f, float f2) {
         float f3;
         if (this.mScene == null || this.mTransitionLastPosition == f) {
@@ -1257,7 +1257,7 @@ public class MotionLayout extends ConstraintLayout implements NestedScrollingPar
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.motion.widget.MotionLayout$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.motion.widget.MotionLayout$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         AnonymousClass2() {
         }
@@ -1520,7 +1520,7 @@ public class MotionLayout extends ConstraintLayout implements NestedScrollingPar
             }
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
+        /* WARN: Multi-variable type inference failed */
         private void setupConstraintWidget(ConstraintWidgetContainer constraintWidgetContainer, ConstraintSet constraintSet) {
             SparseArray<ConstraintWidget> sparseArray = new SparseArray<>();
             Constraints.LayoutParams layoutParams = new Constraints.LayoutParams(-2, -2);
@@ -1705,12 +1705,12 @@ public class MotionLayout extends ConstraintLayout implements NestedScrollingPar
             motionLayout3.resolveSystem(constraintWidgetContainer3, optimizationLevel, i5, i);
         }
 
-        /* JADX WARN: Code duplicated, block: B:24:0x00e7  */
-        /* JADX WARN: Code duplicated, block: B:26:0x00ef  */
-        /* JADX WARN: Code duplicated, block: B:27:0x0107  */
-        /* JADX WARN: Code duplicated, block: B:29:0x010d  */
-        /* JADX WARN: Code duplicated, block: B:40:0x0141 A[SYNTHETIC] */
-        /* JADX WARN: Code duplicated, block: B:42:0x0141 A[SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:24:0x00e7  */
+        /* WARN: Code duplicated, block: B:26:0x00ef  */
+        /* WARN: Code duplicated, block: B:27:0x0107  */
+        /* WARN: Code duplicated, block: B:29:0x010d  */
+        /* WARN: Code duplicated, block: B:40:0x0141 A[SYNTHETIC] */
+        /* WARN: Code duplicated, block: B:42:0x0141 A[SYNTHETIC] */
         public void build() {
             String str;
             ConstraintWidget widget;
@@ -1785,7 +1785,7 @@ public class MotionLayout extends ConstraintLayout implements NestedScrollingPar
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Rect toRect(ConstraintWidget constraintWidget) {
         this.mTempRect.top = constraintWidget.getY();
         this.mTempRect.left = constraintWidget.getX();
@@ -1958,7 +1958,7 @@ public class MotionLayout extends ConstraintLayout implements NestedScrollingPar
         }
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.motion.widget.MotionLayout$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.motion.widget.MotionLayout$3, reason: invalid class name */
     class AnonymousClass3 implements Runnable {
         final /* synthetic */ View val$target;
 
@@ -2401,21 +2401,21 @@ public class MotionLayout extends ConstraintLayout implements NestedScrollingPar
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:117:0x01b7  */
-    /* JADX WARN: Code duplicated, block: B:127:0x01e4  */
-    /* JADX WARN: Code duplicated, block: B:129:0x01ea  */
-    /* JADX WARN: Code duplicated, block: B:143:0x0218  */
-    /* JADX WARN: Code duplicated, block: B:180:0x018c A[SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:62:0x00e2 A[PHI: r3
+    /* WARN: Code duplicated, block: B:117:0x01b7  */
+    /* WARN: Code duplicated, block: B:127:0x01e4  */
+    /* WARN: Code duplicated, block: B:129:0x01ea  */
+    /* WARN: Code duplicated, block: B:143:0x0218  */
+    /* WARN: Code duplicated, block: B:180:0x018c A[SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:62:0x00e2 A[PHI: r3
   0x00e2: PHI (r3v50 float) = (r3v49 float), (r3v51 float), (r3v51 float) binds: [B:47:0x00ae, B:58:0x00d6, B:60:0x00da] A[DONT_GENERATE, DONT_INLINE]] */
-    /* JADX WARN: Code duplicated, block: B:72:0x0110  */
-    /* JADX WARN: Code duplicated, block: B:74:0x0117  */
-    /* JADX WARN: Code duplicated, block: B:86:0x0135  */
-    /* JADX WARN: Code duplicated, block: B:89:0x014c  */
-    /* JADX WARN: Code duplicated, block: B:90:0x014f  */
-    /* JADX WARN: Code duplicated, block: B:93:0x0159  */
-    /* JADX WARN: Code duplicated, block: B:96:0x0170  */
-    /* JADX WARN: Code duplicated, block: B:98:0x017f  */
+    /* WARN: Code duplicated, block: B:72:0x0110  */
+    /* WARN: Code duplicated, block: B:74:0x0117  */
+    /* WARN: Code duplicated, block: B:86:0x0135  */
+    /* WARN: Code duplicated, block: B:89:0x014c  */
+    /* WARN: Code duplicated, block: B:90:0x014f  */
+    /* WARN: Code duplicated, block: B:93:0x0159  */
+    /* WARN: Code duplicated, block: B:96:0x0170  */
+    /* WARN: Code duplicated, block: B:98:0x017f  */
     void evaluate(boolean z) {
         boolean z2;
         char c;
@@ -2988,7 +2988,7 @@ public class MotionLayout extends ConstraintLayout implements NestedScrollingPar
         setState(TransitionState.MOVING);
     }
 
-    /* JADX INFO: renamed from: androidx.constraintlayout.motion.widget.MotionLayout$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.constraintlayout.motion.widget.MotionLayout$4, reason: invalid class name */
     class AnonymousClass4 implements Runnable {
         AnonymousClass4() {
         }

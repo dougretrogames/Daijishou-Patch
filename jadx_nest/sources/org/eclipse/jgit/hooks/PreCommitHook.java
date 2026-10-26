@@ -5,7 +5,7 @@ import java.io.PrintStream;
 import org.eclipse.jgit.api.errors.AbortedByHookException;
 import org.eclipse.jgit.lib.Repository;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PreCommitHook extends GitHook<Void> {
     public static final String NAME = "pre-commit";
 

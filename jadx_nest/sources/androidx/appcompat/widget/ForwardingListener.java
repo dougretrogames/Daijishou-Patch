@@ -7,7 +7,7 @@ import android.view.ViewConfiguration;
 import android.view.ViewParent;
 import androidx.appcompat.view.menu.ShowableListMenu;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class ForwardingListener implements View.OnTouchListener, View.OnAttachStateChangeListener {
     private int mActivePointerId;
     private Runnable mDisallowIntercept;
@@ -82,7 +82,7 @@ public abstract class ForwardingListener implements View.OnTouchListener, View.O
         return true;
     }
 
-    /* JADX WARN: Code duplicated, block: B:20:0x003d  */
+    /* WARN: Code duplicated, block: B:20:0x003d  */
     private boolean onTouchObserved(MotionEvent motionEvent) {
         View view = this.mSrc;
         if (!view.isEnabled()) {

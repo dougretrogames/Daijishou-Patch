@@ -34,7 +34,7 @@ import com.google.android.material.internal.ViewUtils;
 import com.google.android.material.motion.MaterialMainContainerBackHelper;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class SearchViewAnimationHelper {
     private static final float CONTENT_FROM_SCALE = 0.95f;
     private static final long HIDE_CLEAR_BUTTON_ALPHA_DURATION_MS = 42;
@@ -117,14 +117,14 @@ class SearchViewAnimationHelper {
         this.rootView.post(new SearchViewAnimationHelper$$ExternalSyntheticLambda2(this));
     }
 
-    /* JADX INFO: renamed from: lambda$startShowAnimationExpand$0$com-google-android-material-search-SearchViewAnimationHelper, reason: not valid java name */
+    /* INFO: renamed from: lambda$startShowAnimationExpand$0$com-google-android-material-search-SearchViewAnimationHelper, reason: not valid java name */
     /* synthetic */ void m3322x94743afc() {
         AnimatorSet expandCollapseAnimatorSet = getExpandCollapseAnimatorSet(true);
         expandCollapseAnimatorSet.addListener(new AnonymousClass1());
         expandCollapseAnimatorSet.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchViewAnimationHelper$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchViewAnimationHelper$1, reason: invalid class name */
     class AnonymousClass1 extends AnimatorListenerAdapter {
         AnonymousClass1() {
         }
@@ -154,7 +154,7 @@ class SearchViewAnimationHelper {
         return expandCollapseAnimatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchViewAnimationHelper$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchViewAnimationHelper$2, reason: invalid class name */
     class AnonymousClass2 extends AnimatorListenerAdapter {
         AnonymousClass2() {
         }
@@ -184,7 +184,7 @@ class SearchViewAnimationHelper {
         this.rootView.post(new SearchViewAnimationHelper$$ExternalSyntheticLambda5(this));
     }
 
-    /* JADX INFO: renamed from: lambda$startShowAnimationTranslate$1$com-google-android-material-search-SearchViewAnimationHelper, reason: not valid java name */
+    /* INFO: renamed from: lambda$startShowAnimationTranslate$1$com-google-android-material-search-SearchViewAnimationHelper, reason: not valid java name */
     /* synthetic */ void m3323x4df249eb() {
         ClippableRoundedCornerLayout clippableRoundedCornerLayout = this.rootView;
         clippableRoundedCornerLayout.setTranslationY(clippableRoundedCornerLayout.getHeight());
@@ -193,7 +193,7 @@ class SearchViewAnimationHelper {
         translateAnimatorSet.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchViewAnimationHelper$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchViewAnimationHelper$3, reason: invalid class name */
     class AnonymousClass3 extends AnimatorListenerAdapter {
         AnonymousClass3() {
         }
@@ -223,7 +223,7 @@ class SearchViewAnimationHelper {
         return translateAnimatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchViewAnimationHelper$4, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchViewAnimationHelper$4, reason: invalid class name */
     class AnonymousClass4 extends AnimatorListenerAdapter {
         AnonymousClass4() {
         }
@@ -268,7 +268,7 @@ class SearchViewAnimationHelper {
         return animatorSet;
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.search.SearchViewAnimationHelper$5, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.search.SearchViewAnimationHelper$5, reason: invalid class name */
     class AnonymousClass5 extends AnimatorListenerAdapter {
         final /* synthetic */ boolean val$show;
 
@@ -288,7 +288,7 @@ class SearchViewAnimationHelper {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void setContentViewsAlpha(float f) {
         this.clearButton.setAlpha(f);
         this.divider.setAlpha(f);
@@ -332,7 +332,7 @@ class SearchViewAnimationHelper {
         return valueAnimatorOfObject;
     }
 
-    /* JADX INFO: renamed from: lambda$getRootViewAnimator$2$com-google-android-material-search-SearchViewAnimationHelper, reason: not valid java name */
+    /* INFO: renamed from: lambda$getRootViewAnimator$2$com-google-android-material-search-SearchViewAnimationHelper, reason: not valid java name */
     /* synthetic */ void m3321xa183b80f(float f, float f2, Rect rect, ValueAnimator valueAnimator) {
         this.rootView.updateClipBoundsAndCornerRadius(rect, AnimationUtils.lerp(f, f2, valueAnimator.getAnimatedFraction()));
     }
@@ -546,15 +546,15 @@ class SearchViewAnimationHelper {
         this.backHelper.startBackProgress(backEventCompat, this.searchBar);
     }
 
-    /* JADX WARN: Type inference fix 'apply assigned field type' failed
-    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class jadx.core.dex.instructions.args.ArgType$PrimitiveArg
-    	at jadx.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
-    	at jadx.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
-    	at jadx.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
-    	at jadx.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
+    /* WARN: Type inference fix 'apply assigned field type' failed
+    java.lang.UnsupportedOperationException: ArgType.getObject(), call class: class decompiler.core.dex.instructions.args.ArgType$PrimitiveArg
+    	at decompiler.core.dex.instructions.args.ArgType.getObject(ArgType.java:596)
+    	at decompiler.core.dex.attributes.nodes.ClassTypeVarsAttr.getTypeVarsMapFor(ClassTypeVarsAttr.java:35)
+    	at decompiler.core.dex.nodes.utils.TypeUtils.replaceClassGenerics(TypeUtils.java:177)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.insertExplicitUseCast(FixTypesVisitor.java:397)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.tryFieldTypeWithNewCasts(FixTypesVisitor.java:359)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.applyFieldType(FixTypesVisitor.java:309)
+    	at decompiler.core.dex.visitors.typeinference.FixTypesVisitor.visit(FixTypesVisitor.java:94)
      */
     public void updateBackProgress(BackEventCompat backEventCompat) {
         if (backEventCompat.getProgress() <= 0.0f) {

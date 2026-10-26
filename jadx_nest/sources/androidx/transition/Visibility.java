@@ -12,7 +12,7 @@ import androidx.core.content.res.TypedArrayUtils;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class Visibility extends Transition {
     public static final int MODE_IN = 1;
     public static final int MODE_OUT = 2;
@@ -188,7 +188,7 @@ public abstract class Visibility extends Transition {
         return onAppear(viewGroup, transitionValues2.view, transitionValues, transitionValues2);
     }
 
-    /* JADX WARN: Code duplicated, block: B:25:0x003b  */
+    /* WARN: Code duplicated, block: B:25:0x003b  */
     public Animator onDisappear(ViewGroup viewGroup, TransitionValues transitionValues, int i, TransitionValues transitionValues2, int i2) {
         View view;
         boolean z;

@@ -3,8 +3,8 @@ package kotlinx.coroutines.android;
 import android.view.Choreographer;
 import kotlinx.coroutines.CancellableContinuation;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class HandlerDispatcherKt$$ExternalSyntheticLambda0 implements Choreographer.FrameCallback {
     public final /* synthetic */ CancellableContinuation f$0;
 

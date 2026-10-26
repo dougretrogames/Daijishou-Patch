@@ -13,7 +13,7 @@ import java.util.Objects;
 import java.util.Queue;
 import org.apache.commons.collections4.BoundedCollection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CircularFifoQueue<E> extends AbstractCollection<E> implements Queue<E>, BoundedCollection<E>, Serializable {
     private static final long serialVersionUID = -8423413834657610406L;
     private transient E[] elements;
@@ -73,7 +73,7 @@ public class CircularFifoQueue<E> extends AbstractCollection<E> implements Queue
         Arrays.fill(this.elements, (Object) null);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int decrement(int i) {
         int i2 = i - 1;
         return i2 < 0 ? this.maxElements - 1 : i2;
@@ -95,7 +95,7 @@ public class CircularFifoQueue<E> extends AbstractCollection<E> implements Queue
         return this.elements[(this.start + i) % this.maxElements];
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public int increment(int i) {
         int i2 = i + 1;
         if (i2 >= this.maxElements) {
@@ -113,7 +113,7 @@ public class CircularFifoQueue<E> extends AbstractCollection<E> implements Queue
         return size() == 0;
     }
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.queue.CircularFifoQueue$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.queue.CircularFifoQueue$1, reason: invalid class name */
     class AnonymousClass1 implements Iterator<E> {
         private int index;
         private boolean isFirst;

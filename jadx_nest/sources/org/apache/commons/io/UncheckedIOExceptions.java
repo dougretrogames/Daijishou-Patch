@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class UncheckedIOExceptions {
     public static UncheckedIOException create(Object obj) {
         String string = Objects.toString(obj);

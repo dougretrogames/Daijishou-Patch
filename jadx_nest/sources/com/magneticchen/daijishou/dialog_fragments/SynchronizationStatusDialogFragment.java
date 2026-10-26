@@ -39,12 +39,12 @@ import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlin.jvm.internal.Lambda;
 
-/* JADX INFO: compiled from: SynchronizationStatusDialogFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: SynchronizationStatusDialogFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0007\u0018\u0000 %2\u00020\u0001:\u0002%&B\u0005¢\u0006\u0002\u0010\u0002J\b\u0010\u0016\u001a\u00020\fH\u0016J\u0012\u0010\u0017\u001a\u00020\u00182\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aH\u0016J&\u0010\u001b\u001a\u0004\u0018\u00010\u001c2\u0006\u0010\u001d\u001a\u00020\u001e2\b\u0010\u001f\u001a\u0004\u0018\u00010 2\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aH\u0016J\b\u0010!\u001a\u00020\u0018H\u0016J\b\u0010\"\u001a\u00020\u0018H\u0016J\u001a\u0010#\u001a\u00020\u00182\u0006\u0010$\u001a\u00020\u001c2\b\u0010\u0019\u001a\u0004\u0018\u00010\u001aH\u0016R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0006X\u0082.¢\u0006\u0002\n\u0000R\u0012\u0010\u0007\u001a\u00060\bR\u00020\u0000X\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\fX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u000eX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u000f\u001a\u00020\u0010X\u0082.¢\u0006\u0002\n\u0000R\u0014\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00130\u0012X\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u0014\u001a\u00020\nX\u0082.¢\u0006\u0002\n\u0000R\u000e\u0010\u0015\u001a\u00020\u000eX\u0082.¢\u0006\u0002\n\u0000¨\u0006'"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/SynchronizationStatusDialogFragment;", "Lcom/magneticchen/daijishou/abstract_fragment_classes/DaijishouDialogFragment;", "()V", "progressBar", "Landroid/widget/ProgressBar;", "recyclerView", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView;", "recyclerViewAdapter", "Lcom/magneticchen/daijishou/dialog_fragments/SynchronizationStatusDialogFragment$SynchronizationOfPlatformListAdapter;", "root", "Landroidx/constraintlayout/widget/ConstraintLayout;", "scrollingOnBackPressed", "", "subtitleTextView", "Landroid/widget/TextView;", "syncChip", "Lcom/google/android/material/chip/Chip;", "synchronizationOfPlatformList", "", "Lcom/magneticchen/daijishou/view_models/SynchronizationOfPlatform;", "titleLayout", "titleTextView", "onBackPressed", "onCreate", "", "savedInstanceState", "Landroid/os/Bundle;", "onCreateView", "Landroid/view/View;", "inflater", "Landroid/view/LayoutInflater;", "container", "Landroid/view/ViewGroup;", "onResume", "onStart", "onViewCreated", "view", "Companion", "SynchronizationOfPlatformListAdapter", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class SynchronizationStatusDialogFragment extends DaijishouDialogFragment {
 
-    /* JADX INFO: renamed from: Companion, reason: from kotlin metadata */
+    /* INFO: renamed from: Companion, reason: from kotlin metadata */
     public static final Companion INSTANCE = new Companion(null);
     private ProgressBar progressBar;
     private DaijishouRecyclerView recyclerView;
@@ -57,11 +57,11 @@ public final class SynchronizationStatusDialogFragment extends DaijishouDialogFr
     private ConstraintLayout titleLayout;
     private TextView titleTextView;
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onViewCreated$lambda$2() {
     }
 
-    /* JADX INFO: compiled from: SynchronizationStatusDialogFragment.kt */
+    /* INFO: compiled from: SynchronizationStatusDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0012\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0003\u001a\u00020\u0004¨\u0006\u0005"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/SynchronizationStatusDialogFragment$Companion;", "", "()V", "newInstance", "Lcom/magneticchen/daijishou/dialog_fragments/SynchronizationStatusDialogFragment;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public static final class Companion {
         public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -78,12 +78,12 @@ public final class SynchronizationStatusDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x001e  */
-    /* JADX WARN: Code duplicated, block: B:32:0x005c  */
-    /* JADX WARN: Code duplicated, block: B:34:0x0062  */
-    /* JADX WARN: Code duplicated, block: B:37:0x006d  */
-    /* JADX WARN: Code duplicated, block: B:38:0x0071  */
-    /* JADX WARN: Code duplicated, block: B:9:0x001a  */
+    /* WARN: Code duplicated, block: B:11:0x001e  */
+    /* WARN: Code duplicated, block: B:32:0x005c  */
+    /* WARN: Code duplicated, block: B:34:0x0062  */
+    /* WARN: Code duplicated, block: B:37:0x006d  */
+    /* WARN: Code duplicated, block: B:38:0x0071  */
+    /* WARN: Code duplicated, block: B:9:0x001a  */
     @Override // com.magneticchen.daijishou.abstract_fragment_classes.DaijishouDialogFragment
     public boolean onBackPressed() {
         DaijishouRecyclerView daijishouRecyclerView;
@@ -174,13 +174,13 @@ public final class SynchronizationStatusDialogFragment extends DaijishouDialogFr
         return !constraintLayout2.isFocused();
     }
 
-    /* JADX INFO: compiled from: SynchronizationStatusDialogFragment.kt */
+    /* INFO: compiled from: SynchronizationStatusDialogFragment.kt */
     @Metadata(d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010 \n\u0002\b\u0002\n\u0002\u0010\t\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u0086\u0004\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001:\u0001\u000fB\u0013\u0012\f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004¢\u0006\u0002\u0010\u0005J\u0010\u0010\u0006\u001a\u00020\u00072\u0006\u0010\b\u001a\u00020\tH\u0016J\"\u0010\n\u001a\f0\u000bR\b\u0012\u0004\u0012\u00020\u00020\u00012\u0006\u0010\f\u001a\u00020\r2\u0006\u0010\u000e\u001a\u00020\tH\u0016R\u0014\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00020\u0004X\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0010"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/SynchronizationStatusDialogFragment$SynchronizationOfPlatformListAdapter;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/view_models/SynchronizationOfPlatform;", "synchronizationOfPlatformList", "", "(Lcom/magneticchen/daijishou/dialog_fragments/SynchronizationStatusDialogFragment;Ljava/util/List;)V", "getItemId", "", "position", "", "onCreateViewHolder", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "viewGroup", "Landroid/view/ViewGroup;", "viewType", "ViewHolder", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class SynchronizationOfPlatformListAdapter extends DaijishouRecyclerView.Adapter<SynchronizationOfPlatform> {
         private final List<SynchronizationOfPlatform> synchronizationOfPlatformList;
         final /* synthetic */ SynchronizationStatusDialogFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         public SynchronizationOfPlatformListAdapter(SynchronizationStatusDialogFragment synchronizationStatusDialogFragment, List<SynchronizationOfPlatform> synchronizationOfPlatformList) {
             super(synchronizationOfPlatformList, false, false, 6, null);
             Intrinsics.checkNotNullParameter(synchronizationOfPlatformList, "synchronizationOfPlatformList");
@@ -193,7 +193,7 @@ public final class SynchronizationStatusDialogFragment extends DaijishouDialogFr
             return this.synchronizationOfPlatformList.get(position).getPlatformId();
         }
 
-        /* JADX INFO: compiled from: SynchronizationStatusDialogFragment.kt */
+        /* INFO: compiled from: SynchronizationStatusDialogFragment.kt */
         @Metadata(d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0006\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\b\u0086\u0004\u0018\u00002\f0\u0001R\b\u0012\u0004\u0012\u00020\u00030\u0002B\r\u0012\u0006\u0010\u0004\u001a\u00020\u0005¢\u0006\u0002\u0010\u0006J\u0018\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0016\u001a\u00020\u0003H\u0016R\u0016\u0010\u0007\u001a\n \t*\u0004\u0018\u00010\b0\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\n\u001a\n \t*\u0004\u0018\u00010\b0\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000b\u001a\n \t*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\r\u001a\n \t*\u0004\u0018\u00010\b0\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000e\u001a\n \t*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u000f\u001a\n \t*\u0004\u0018\u00010\b0\bX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0010\u001a\n \t*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000R\u0016\u0010\u0011\u001a\n \t*\u0004\u0018\u00010\f0\fX\u0082\u0004¢\u0006\u0002\n\u0000¨\u0006\u0017"}, d2 = {"Lcom/magneticchen/daijishou/dialog_fragments/SynchronizationStatusDialogFragment$SynchronizationOfPlatformListAdapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter$ViewHolder;", "Lcom/magneticchen/daijishou/daijishou_recycler_view/DaijishouRecyclerView$Adapter;", "Lcom/magneticchen/daijishou/view_models/SynchronizationOfPlatform;", "itemView", "Landroid/view/View;", "(Lcom/magneticchen/daijishou/dialog_fragments/SynchronizationStatusDialogFragment$SynchronizationOfPlatformListAdapter;Landroid/view/View;)V", "addingToLibraryImageView", "Landroid/widget/ImageView;", "kotlin.jvm.PlatformType", "completedImageView", "firstLine", "Landroid/widget/TextView;", "scrapingImageView", "secondLine", "syncingImageView", "thirdLine", "timestamp", "onBind", "", "position", "", "item", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public final class ViewHolder extends DaijishouRecyclerView.Adapter<SynchronizationOfPlatform>.ViewHolder {
             private final ImageView addingToLibraryImageView;
@@ -206,7 +206,7 @@ public final class SynchronizationStatusDialogFragment extends DaijishouDialogFr
             final /* synthetic */ SynchronizationOfPlatformListAdapter this$0;
             private final TextView timestamp;
 
-            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* WARN: 'super' call moved to the top of the method (can break code semantics) */
             public ViewHolder(SynchronizationOfPlatformListAdapter synchronizationOfPlatformListAdapter, View itemView) {
                 super(synchronizationOfPlatformListAdapter, itemView);
                 Intrinsics.checkNotNullParameter(itemView, "itemView");
@@ -351,8 +351,8 @@ public final class SynchronizationStatusDialogFragment extends DaijishouDialogFr
         return viewInflate;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.SynchronizationStatusDialogFragment$onCreateView$1, reason: invalid class name */
-    /* JADX INFO: compiled from: SynchronizationStatusDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.SynchronizationStatusDialogFragment$onCreateView$1, reason: invalid class name */
+    /* INFO: compiled from: SynchronizationStatusDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u001d\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0000*\u0001\u0000\b\n\u0018\u00002\u00020\u0001J\u0018\u0010\u0002\u001a\u00020\u00032\u0006\u0010\u0004\u001a\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0007H\u0016¨\u0006\b"}, d2 = {"com/magneticchen/daijishou/dialog_fragments/SynchronizationStatusDialogFragment$onCreateView$1", "Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;", "onScrollStateChanged", "", "recyclerView", "Landroidx/recyclerview/widget/RecyclerView;", "newState", "", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     public final class AnonymousClass1 extends RecyclerView.OnScrollListener {
         AnonymousClass1() {
@@ -368,21 +368,21 @@ public final class SynchronizationStatusDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$0(SynchronizationStatusDialogFragment this$0, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         this$0.requireDialog().onBackPressed();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static final void onCreateView$lambda$1(SynchronizationStatusDialogFragment this$0, FragmentActivity activity, View view) {
         Intrinsics.checkNotNullParameter(this$0, "this$0");
         Intrinsics.checkNotNullParameter(activity, "$activity");
         this$0.getDaijishouSynchronization().scheduleSynchronizationOfAllPlatforms((AppCompatActivity) activity);
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.SynchronizationStatusDialogFragment$onCreateView$4, reason: invalid class name */
-    /* JADX INFO: compiled from: SynchronizationStatusDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.SynchronizationStatusDialogFragment$onCreateView$4, reason: invalid class name */
+    /* INFO: compiled from: SynchronizationStatusDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0010\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0003\u0010\u0000\u001a\u00020\u00012\u000e\u0010\u0002\u001a\n \u0004*\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0004\b\u0005\u0010\u0006"}, d2 = {"<anonymous>", "", "it", "", "kotlin.jvm.PlatformType", "invoke", "(Ljava/lang/Integer;)V"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass4 extends Lambda<Unit> implements Function1<Integer, Unit> {
         AnonymousClass4() {
@@ -395,7 +395,7 @@ public final class SynchronizationStatusDialogFragment extends DaijishouDialogFr
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(Integer num) {
             SynchronizationStatusDialogFragment synchronizationStatusDialogFragment;
             int i;
@@ -514,8 +514,8 @@ public final class SynchronizationStatusDialogFragment extends DaijishouDialogFr
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.SynchronizationStatusDialogFragment$onCreateView$5, reason: invalid class name */
-    /* JADX INFO: compiled from: SynchronizationStatusDialogFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.dialog_fragments.SynchronizationStatusDialogFragment$onCreateView$5, reason: invalid class name */
+    /* INFO: compiled from: SynchronizationStatusDialogFragment.kt */
     @Metadata(d1 = {"\u0000\u0014\n\u0000\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010!\n\u0002\u0018\u0002\n\u0002\b\u0002\u0010\u0000\u001a\u00020\u00012\u001a\u0010\u0002\u001a\u0016\u0012\u0004\u0012\u00020\u0004 \u0005*\n\u0012\u0004\u0012\u00020\u0004\u0018\u00010\u00030\u0003H\n¢\u0006\u0002\b\u0006"}, d2 = {"<anonymous>", "", "it", "", "Lcom/magneticchen/daijishou/view_models/SynchronizationOfPlatform;", "kotlin.jvm.PlatformType", "invoke"}, k = 3, mv = {1, 9, 0}, xi = 48)
     final class AnonymousClass5 extends Lambda<Unit> implements Function1<List<SynchronizationOfPlatform>, Unit> {
         AnonymousClass5() {
@@ -528,7 +528,7 @@ public final class SynchronizationStatusDialogFragment extends DaijishouDialogFr
             return Unit.INSTANCE;
         }
 
-        /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+        /* INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
         public final void invoke2(List<SynchronizationOfPlatform> list) {
             Intrinsics.checkNotNull(list);
             List<SynchronizationOfPlatform> list2 = list;

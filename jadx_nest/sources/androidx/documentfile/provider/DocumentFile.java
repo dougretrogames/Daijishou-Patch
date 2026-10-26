@@ -5,7 +5,7 @@ import android.net.Uri;
 import android.provider.DocumentsContract;
 import java.io.File;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public abstract class DocumentFile {
     static final String TAG = "DocumentFile";
     private final DocumentFile mParent;

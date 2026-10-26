@@ -2,8 +2,8 @@ package org.apache.commons.io.function;
 
 import java.util.function.BiConsumer;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes5.dex */
 public final /* synthetic */ class IOBiConsumer$$ExternalSyntheticLambda1 implements BiConsumer {
     public final /* synthetic */ IOBiConsumer f$0;
 

@@ -1,6 +1,6 @@
 package org.slf4j.event;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EventConstants {
     public static final int DEBUG_INT = 10;
     public static final int ERROR_INT = 40;

@@ -8,7 +8,7 @@ import org.eclipse.jgit.internal.JGitText;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FastIgnoreRule {
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) FastIgnoreRule.class);
     public static final char PATH_SEPARATOR = '/';

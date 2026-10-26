@@ -6,7 +6,7 @@ import android.view.ViewGroup;
 import androidx.transition.TransitionValues;
 import com.google.android.material.R;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class MaterialFadeThrough extends MaterialVisibility<FadeThroughProvider> {
     private static final float DEFAULT_START_SCALE = 0.92f;
     private static final int DEFAULT_THEMED_DURATION_ATTR = R.attr.motionDurationLong1;

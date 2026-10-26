@@ -1,6 +1,6 @@
 package io.opencensus.trace.config;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public abstract class TraceConfig {
     private static final NoopTraceConfig NOOP_TRACE_CONFIG = new NoopTraceConfig(null);
 

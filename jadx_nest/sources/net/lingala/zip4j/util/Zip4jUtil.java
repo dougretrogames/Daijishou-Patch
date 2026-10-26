@@ -10,7 +10,7 @@ import net.lingala.zip4j.exception.ZipException;
 import net.lingala.zip4j.model.AbstractFileHeader;
 import net.lingala.zip4j.model.enums.CompressionMethod;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class Zip4jUtil {
     private static final long DOSTIME_BEFORE_1980 = 2162688;
     private static final int MAX_RAW_READ_FULLY_RETRY_ATTEMPTS = 15;

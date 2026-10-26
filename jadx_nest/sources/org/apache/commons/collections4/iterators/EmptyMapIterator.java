@@ -2,7 +2,7 @@ package org.apache.commons.collections4.iterators;
 
 import org.apache.commons.collections4.MapIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class EmptyMapIterator<K, V> extends AbstractEmptyMapIterator<K, V> implements MapIterator<K, V> {
     public static final MapIterator INSTANCE = new EmptyMapIterator();
 

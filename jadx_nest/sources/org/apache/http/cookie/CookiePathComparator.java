@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Comparator;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CookiePathComparator implements Serializable, Comparator<Cookie> {
     public static final CookiePathComparator INSTANCE = new CookiePathComparator();
     private static final long serialVersionUID = 7523645369616405818L;

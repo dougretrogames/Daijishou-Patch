@@ -6,7 +6,7 @@ import org.apache.http.io.BufferInfo;
 import org.apache.http.io.SessionInputBuffer;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IdentityInputStream extends InputStream {
     private boolean closed = false;
     private final SessionInputBuffer in;

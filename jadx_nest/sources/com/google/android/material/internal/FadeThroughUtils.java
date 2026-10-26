@@ -1,6 +1,6 @@
 package com.google.android.material.internal;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class FadeThroughUtils {
     static final float THRESHOLD_ALPHA = 0.5f;
 

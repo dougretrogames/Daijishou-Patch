@@ -9,7 +9,7 @@ import java.util.Set;
 import org.eclipse.jgit.annotations.Nullable;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class FetchV2Request extends FetchRequest {
     private final boolean doneReceived;
     private final List<String> packfileUriProtocols;
@@ -167,19 +167,19 @@ public final class FetchV2Request extends FetchRequest {
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         public Builder setAgent(@Nullable String str) {
             this.agent = str;
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         public Builder setClientSID(@Nullable String str) {
             this.clientSID = str;
             return this;
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         public Builder addServerOption(String str) {
             this.serverOptions.add(str);
             return this;

@@ -9,7 +9,7 @@ import com.bumptech.glide.load.engine.Resource;
 import com.bumptech.glide.util.Preconditions;
 import java.security.MessageDigest;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class BitmapDrawableTransformation implements Transformation<BitmapDrawable> {
     private final Transformation<Drawable> wrapped;
@@ -27,7 +27,7 @@ public class BitmapDrawableTransformation implements Transformation<BitmapDrawab
         return convertToBitmapDrawableResource(this.wrapped.transform(context, convertToDrawableResource(resource), i, i2));
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private static Resource<BitmapDrawable> convertToBitmapDrawableResource(Resource<Drawable> resource) {
         if (resource.get() instanceof BitmapDrawable) {
             return resource;

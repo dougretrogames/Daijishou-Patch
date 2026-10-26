@@ -10,7 +10,7 @@ import java.nio.file.attribute.BasicFileAttributes;
 import java.util.Arrays;
 import java.util.Objects;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class DeletingPathVisitor extends CountingPathVisitor {
     private final LinkOption[] linkOptions;
     private final boolean overrideReadOnly;

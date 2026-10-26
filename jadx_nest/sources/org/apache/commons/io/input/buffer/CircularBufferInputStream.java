@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.util.Objects;
 import org.apache.commons.io.IOUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CircularBufferInputStream extends FilterInputStream {
     protected final CircularByteBuffer buffer;
     protected final int bufferSize;

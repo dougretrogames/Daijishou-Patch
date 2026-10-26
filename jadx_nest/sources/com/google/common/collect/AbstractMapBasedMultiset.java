@@ -11,7 +11,7 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractMapBasedMultiset<E> extends AbstractMultiset<E> implements Serializable {
     private static final long serialVersionUID = 0;
@@ -162,7 +162,7 @@ abstract class AbstractMapBasedMultiset<E> extends AbstractMultiset<E> implement
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.AbstractMapBasedMultiset$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.AbstractMapBasedMultiset$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractMapBasedMultiset<E>.Itr<E> {
         AnonymousClass1() {
             super();
@@ -180,13 +180,13 @@ abstract class AbstractMapBasedMultiset<E> extends AbstractMultiset<E> implement
         return new AnonymousClass1();
     }
 
-    /* JADX INFO: renamed from: com.google.common.collect.AbstractMapBasedMultiset$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.collect.AbstractMapBasedMultiset$2, reason: invalid class name */
     class AnonymousClass2 extends AbstractMapBasedMultiset<E>.Itr<Multiset.Entry<E>> {
         AnonymousClass2() {
             super();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.collect.AbstractMapBasedMultiset.Itr
         public Multiset.Entry<E> result(int entryIndex) {
             return AbstractMapBasedMultiset.this.backingMap.getEntry(entryIndex);

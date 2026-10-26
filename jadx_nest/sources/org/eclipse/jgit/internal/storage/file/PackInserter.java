@@ -50,7 +50,7 @@ import org.eclipse.jgit.util.NB;
 import org.eclipse.jgit.util.io.CountingOutputStream;
 import org.eclipse.jgit.util.sha1.SHA1;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class PackInserter extends ObjectInserter {
     private static final int INDEX_VERSION = 2;
     private Inflater cachedInflater;
@@ -154,7 +154,7 @@ public class PackInserter extends ObjectInserter {
         packStream.write(packStream.hdrBuf, 0, writePackHeader(this.packOut.hdrBuf, 1));
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static int writePackHeader(byte[] bArr, int i) {
         System.arraycopy(Constants.PACK_SIGNATURE, 0, bArr, 0, 4);
         NB.encodeInt32(bArr, 4, 2);
@@ -307,7 +307,7 @@ public class PackInserter extends ObjectInserter {
         this.packOut = null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public Inflater inflater() {
         Inflater inflater = this.cachedInflater;
         if (inflater == null) {
@@ -580,7 +580,7 @@ public class PackInserter extends ObjectInserter {
                 return new ObjectStream.Filter(this.type, this.size, new BufferedInputStream(new InflaterInputStream(new AnonymousClass1(Channels.newInputStream(PackInserter.this.packOut.file.getChannel())), PackInserter.this.inflater(), length), length));
             }
 
-            /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.file.PackInserter$Reader$StreamLoader$1, reason: invalid class name */
+            /* INFO: renamed from: org.eclipse.jgit.internal.storage.file.PackInserter$Reader$StreamLoader$1, reason: invalid class name */
             class AnonymousClass1 extends FilterInputStream {
                 @Override // java.io.FilterInputStream, java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
                 public void close() {

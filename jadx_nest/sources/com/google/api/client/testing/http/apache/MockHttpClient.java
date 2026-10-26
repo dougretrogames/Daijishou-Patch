@@ -23,11 +23,11 @@ import org.apache.http.protocol.HttpContext;
 import org.apache.http.protocol.HttpProcessor;
 import org.apache.http.protocol.HttpRequestExecutor;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class MockHttpClient extends DefaultHttpClient {
     int responseCode;
 
-    /* JADX INFO: renamed from: com.google.api.client.testing.http.apache.MockHttpClient$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.api.client.testing.http.apache.MockHttpClient$1, reason: invalid class name */
     class AnonymousClass1 implements RequestDirector {
         AnonymousClass1() {
         }

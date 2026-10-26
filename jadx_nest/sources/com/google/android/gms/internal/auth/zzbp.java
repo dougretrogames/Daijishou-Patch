@@ -2,8 +2,8 @@ package com.google.android.gms.internal.auth;
 
 import com.google.android.gms.auth.api.proxy.ProxyResponse;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-auth-base@@18.0.10 */
+/* INFO: loaded from: classes3.dex */
 final class zzbp extends zzbd {
     final /* synthetic */ zzbq zza;
 

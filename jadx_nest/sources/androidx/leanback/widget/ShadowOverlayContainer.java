@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class ShadowOverlayContainer extends FrameLayout {
     public static final int SHADOW_DYNAMIC = 3;
     public static final int SHADOW_NONE = 1;

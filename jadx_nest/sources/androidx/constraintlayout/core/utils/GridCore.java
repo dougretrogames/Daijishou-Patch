@@ -10,7 +10,7 @@ import java.util.HashSet;
 import java.util.Set;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class GridCore extends VirtualLayout {
     private static final int DEFAULT_SIZE = 3;
     public static final int HORIZONTAL = 0;
@@ -176,7 +176,7 @@ public class GridCore extends VirtualLayout {
         }
     }
 
-    /* JADX WARN: Code duplicated, block: B:23:0x0066  */
+    /* WARN: Code duplicated, block: B:23:0x0066  */
     private void arrangeWidgets() {
         int[][] iArr;
         int i;

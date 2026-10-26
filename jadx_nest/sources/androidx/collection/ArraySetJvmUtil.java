@@ -2,7 +2,7 @@ package androidx.collection;
 
 import java.lang.reflect.Array;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 class ArraySetJvmUtil {
     private ArraySetJvmUtil() {
     }

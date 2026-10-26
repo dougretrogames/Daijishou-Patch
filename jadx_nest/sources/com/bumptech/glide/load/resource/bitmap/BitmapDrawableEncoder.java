@@ -9,7 +9,7 @@ import com.bumptech.glide.load.engine.Resource;
 import com.bumptech.glide.load.engine.bitmap_recycle.BitmapPool;
 import java.io.File;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BitmapDrawableEncoder implements ResourceEncoder<BitmapDrawable> {
     private final BitmapPool bitmapPool;
     private final ResourceEncoder<Bitmap> encoder;

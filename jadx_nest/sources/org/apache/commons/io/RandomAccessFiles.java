@@ -6,7 +6,7 @@ import java.nio.channels.SeekableByteChannel;
 import java.util.Objects;
 import org.apache.commons.io.channels.FileChannels;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RandomAccessFiles {
     public static boolean contentEquals(RandomAccessFile randomAccessFile, RandomAccessFile randomAccessFile2) throws IOException {
         if (Objects.equals(randomAccessFile, randomAccessFile2)) {

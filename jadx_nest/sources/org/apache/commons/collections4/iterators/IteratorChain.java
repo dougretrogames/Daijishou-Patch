@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.Objects;
 import java.util.Queue;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IteratorChain<E> implements Iterator<E> {
     private Iterator<? extends E> currentIterator;
     private boolean isLocked;

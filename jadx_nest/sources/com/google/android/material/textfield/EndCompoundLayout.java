@@ -33,7 +33,7 @@ import com.google.android.material.resources.MaterialResources;
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class EndCompoundLayout extends LinearLayout {
     private final AccessibilityManager accessibilityManager;
     private EditText editText;
@@ -59,7 +59,7 @@ class EndCompoundLayout extends LinearLayout {
     final TextInputLayout textInputLayout;
     private AccessibilityManagerCompat.TouchExplorationStateChangeListener touchExplorationStateChangeListener;
 
-    /* JADX INFO: renamed from: com.google.android.material.textfield.EndCompoundLayout$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.textfield.EndCompoundLayout$1, reason: invalid class name */
     class AnonymousClass1 extends TextWatcherAdapter {
         AnonymousClass1() {
         }
@@ -75,7 +75,7 @@ class EndCompoundLayout extends LinearLayout {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.textfield.EndCompoundLayout$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.textfield.EndCompoundLayout$2, reason: invalid class name */
     class AnonymousClass2 implements TextInputLayout.OnEditTextAttachedListener {
         AnonymousClass2() {
         }
@@ -136,7 +136,7 @@ class EndCompoundLayout extends LinearLayout {
         addOnAttachStateChangeListener(new AnonymousClass3());
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.textfield.EndCompoundLayout$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.textfield.EndCompoundLayout$3, reason: invalid class name */
     class AnonymousClass3 implements View.OnAttachStateChangeListener {
         AnonymousClass3() {
         }
@@ -329,7 +329,7 @@ class EndCompoundLayout extends LinearLayout {
         endIconDelegate.tearDown();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void addTouchExplorationStateChangeListenerIfNeeded() {
         if (this.touchExplorationStateChangeListener == null || this.accessibilityManager == null || !ViewCompat.isAttachedToWindow(this)) {
             return;
@@ -337,7 +337,7 @@ class EndCompoundLayout extends LinearLayout {
         AccessibilityManagerCompat.addTouchExplorationStateChangeListener(this.accessibilityManager, this.touchExplorationStateChangeListener);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void removeTouchExplorationStateChangeListenerIfNeeded() {
         AccessibilityManager accessibilityManager;
         AccessibilityManagerCompat.TouchExplorationStateChangeListener touchExplorationStateChangeListener = this.touchExplorationStateChangeListener;
@@ -366,7 +366,7 @@ class EndCompoundLayout extends LinearLayout {
         IconHelper.setIconOnLongClickListener(this.errorIconView, onLongClickListener);
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void setOnFocusChangeListenersIfNeeded(EndIconDelegate endIconDelegate) {
         if (this.editText == null) {
             return;

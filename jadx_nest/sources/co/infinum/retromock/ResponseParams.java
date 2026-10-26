@@ -3,7 +3,7 @@ package co.infinum.retromock;
 import javax.annotation.Nullable;
 import okhttp3.Headers;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ResponseParams {
     private final RetromockBodyFactory bodyFactory;
     private final int code;
@@ -115,7 +115,7 @@ final class ResponseParams {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @Nullable
     public static String contentTypeInternal(Headers headers) {
         String str = headers.get("Content-Type");
@@ -125,7 +125,7 @@ final class ResponseParams {
         return null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static long contentLengthInternal(Headers headers) {
         String str = headers.get("Content-Length");
         if (str == null) {

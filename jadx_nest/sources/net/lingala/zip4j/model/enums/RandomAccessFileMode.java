@@ -1,6 +1,6 @@
 package net.lingala.zip4j.model.enums;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public enum RandomAccessFileMode {
     READ("r"),
     WRITE("rw");

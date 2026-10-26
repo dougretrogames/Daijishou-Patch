@@ -3,7 +3,7 @@ package org.apache.http.impl.client;
 import java.util.concurrent.FutureTask;
 import org.apache.http.client.methods.HttpUriRequest;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class HttpRequestFutureTask<V> extends FutureTask<V> {
     private final HttpRequestTaskCallable<V> callable;
     private final HttpUriRequest request;

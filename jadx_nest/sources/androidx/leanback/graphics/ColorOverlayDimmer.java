@@ -8,7 +8,7 @@ import android.graphics.Paint;
 import android.view.View;
 import androidx.leanback.R;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class ColorOverlayDimmer {
     private final float mActiveLevel;
     private int mAlpha;

@@ -1,6 +1,6 @@
 package org.eclipse.jgit.ignore.internal;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class WildMatcher extends AbstractMatcher {
     static final String WILDMATCH = "**";
     static final String WILDMATCH2 = "/**";

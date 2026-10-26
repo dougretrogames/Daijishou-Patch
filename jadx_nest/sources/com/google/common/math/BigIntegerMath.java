@@ -7,7 +7,7 @@ import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class BigIntegerMath {
     static final int SQRT2_PRECOMPUTE_THRESHOLD = 256;
@@ -28,8 +28,8 @@ public final class BigIntegerMath {
         return x.signum() > 0 && x.getLowestSetBit() == x.bitLength() - 1;
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
-    /* JADX WARN: Code duplicated, block: B:20:0x0051 A[RETURN] */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Code duplicated, block: B:20:0x0051 A[RETURN] */
     public static int log2(BigInteger x, RoundingMode mode) {
         MathPreconditions.checkPositive("x", (BigInteger) Preconditions.checkNotNull(x));
         int iBitLength = x.bitLength();
@@ -63,7 +63,7 @@ public final class BigIntegerMath {
         }
     }
 
-    /* JADX INFO: renamed from: com.google.common.math.BigIntegerMath$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.math.BigIntegerMath$1, reason: invalid class name */
     static /* synthetic */ class AnonymousClass1 {
         static final /* synthetic */ int[] $SwitchMap$java$math$RoundingMode;
 
@@ -159,7 +159,7 @@ public final class BigIntegerMath {
         }
     }
 
-    /* JADX WARN: Can't fix incorrect switch cases order, some code will duplicate */
+    /* WARN: Can't fix incorrect switch cases order, some code will duplicate */
     public static BigInteger sqrt(BigInteger x, RoundingMode mode) {
         MathPreconditions.checkNonNegative("x", x);
         if (fitsInLong(x)) {
@@ -225,25 +225,25 @@ public final class BigIntegerMath {
         private BigIntegerToDoubleRounder() {
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.math.ToDoubleRounder
         public double roundToDoubleArbitrarily(BigInteger bigInteger) {
             return DoubleUtils.bigToDouble(bigInteger);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.math.ToDoubleRounder
         public int sign(BigInteger bigInteger) {
             return bigInteger.signum();
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.math.ToDoubleRounder
         public BigInteger toX(double d, RoundingMode mode) {
             return DoubleMath.roundToBigInteger(d, mode);
         }
 
-        /* JADX INFO: Access modifiers changed from: package-private */
+        /* INFO: Access modifiers changed from: package-private */
         @Override // com.google.common.math.ToDoubleRounder
         public BigInteger minus(BigInteger a, BigInteger b) {
             return a.subtract(b);

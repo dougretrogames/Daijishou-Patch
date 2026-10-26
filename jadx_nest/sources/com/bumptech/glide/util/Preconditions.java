@@ -3,7 +3,7 @@ package com.bumptech.glide.util;
 import android.text.TextUtils;
 import java.util.Collection;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Preconditions {
     private Preconditions() {
     }

@@ -3,7 +3,7 @@ package org.apache.http.config;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class SocketConfig implements Cloneable {
     public static final SocketConfig DEFAULT = new Builder().build();
     private final int backlogSize;
@@ -58,7 +58,7 @@ public class SocketConfig implements Cloneable {
         return this.backlogSize;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     public SocketConfig clone() throws CloneNotSupportedException {
         return (SocketConfig) super.clone();
     }

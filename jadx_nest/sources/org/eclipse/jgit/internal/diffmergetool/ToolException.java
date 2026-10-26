@@ -5,7 +5,7 @@ import org.eclipse.jgit.util.SystemReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ToolException extends Exception {
     private static final Logger LOG = LoggerFactory.getLogger((Class<?>) ToolException.class);
     private static final long serialVersionUID = 1;

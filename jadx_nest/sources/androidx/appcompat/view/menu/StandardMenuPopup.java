@@ -17,7 +17,7 @@ import android.widget.TextView;
 import androidx.appcompat.R;
 import androidx.appcompat.widget.MenuPopupWindow;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 final class StandardMenuPopup extends MenuPopup implements PopupWindow.OnDismissListener, AdapterView.OnItemClickListener, MenuPresenter, View.OnKeyListener {
     private static final int ITEM_LAYOUT = R.layout.abc_popup_menu_item_layout;
     private final MenuAdapter mAdapter;
@@ -59,7 +59,7 @@ final class StandardMenuPopup extends MenuPopup implements PopupWindow.OnDismiss
         return null;
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.view.menu.StandardMenuPopup$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.view.menu.StandardMenuPopup$1, reason: invalid class name */
     class AnonymousClass1 implements ViewTreeObserver.OnGlobalLayoutListener {
         AnonymousClass1() {
         }
@@ -78,7 +78,7 @@ final class StandardMenuPopup extends MenuPopup implements PopupWindow.OnDismiss
         }
     }
 
-    /* JADX INFO: renamed from: androidx.appcompat.view.menu.StandardMenuPopup$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.appcompat.view.menu.StandardMenuPopup$2, reason: invalid class name */
     class AnonymousClass2 implements View.OnAttachStateChangeListener {
         @Override // android.view.View.OnAttachStateChangeListener
         public void onViewAttachedToWindow(View view) {

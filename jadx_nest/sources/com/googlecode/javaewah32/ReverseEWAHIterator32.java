@@ -2,7 +2,7 @@ package com.googlecode.javaewah32;
 
 import java.util.Stack;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class ReverseEWAHIterator32 {
     private int pointer = 0;
     private Stack<Integer> positions;

@@ -2,7 +2,7 @@ package androidx.recyclerview.widget;
 
 import java.util.List;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class OpReorderer {
     final Callback mCallback;
 
@@ -143,14 +143,14 @@ class OpReorderer {
         list.set(i2, updateOp);
     }
 
-    /* JADX WARN: Code duplicated, block: B:11:0x002f  */
-    /* JADX WARN: Code duplicated, block: B:12:0x0035  */
-    /* JADX WARN: Code duplicated, block: B:14:0x003e  */
-    /* JADX WARN: Code duplicated, block: B:17:0x005d  */
-    /* JADX WARN: Code duplicated, block: B:18:0x0061  */
-    /* JADX WARN: Code duplicated, block: B:20:0x006b  */
-    /* JADX WARN: Code duplicated, block: B:22:0x0070  */
-    /* JADX WARN: Code duplicated, block: B:24:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:11:0x002f  */
+    /* WARN: Code duplicated, block: B:12:0x0035  */
+    /* WARN: Code duplicated, block: B:14:0x003e  */
+    /* WARN: Code duplicated, block: B:17:0x005d  */
+    /* WARN: Code duplicated, block: B:18:0x0061  */
+    /* WARN: Code duplicated, block: B:20:0x006b  */
+    /* WARN: Code duplicated, block: B:22:0x0070  */
+    /* WARN: Code duplicated, block: B:24:? A[RETURN, SYNTHETIC] */
     void swapMoveUpdate(List<AdapterHelper.UpdateOp> list, int i, AdapterHelper.UpdateOp updateOp, int i2, AdapterHelper.UpdateOp updateOp2) {
         AdapterHelper.UpdateOp updateOpObtainUpdateOp;
         AdapterHelper.UpdateOp updateOpObtainUpdateOp2 = null;

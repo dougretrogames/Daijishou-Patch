@@ -4,7 +4,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class ListPreferenceDialogFragment extends PreferenceDialogFragment {
     private static final String SAVE_STATE_ENTRIES = "ListPreferenceDialogFragment.entries";
@@ -64,7 +64,7 @@ public class ListPreferenceDialogFragment extends PreferenceDialogFragment {
         builder.setPositiveButton((CharSequence) null, (DialogInterface.OnClickListener) null);
     }
 
-    /* JADX INFO: renamed from: androidx.preference.ListPreferenceDialogFragment$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.preference.ListPreferenceDialogFragment$1, reason: invalid class name */
     class AnonymousClass1 implements DialogInterface.OnClickListener {
         AnonymousClass1() {
         }

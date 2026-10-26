@@ -8,7 +8,7 @@ import java.security.Signature;
 import javax.crypto.Cipher;
 import javax.crypto.Mac;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 @Deprecated
 public class FingerprintManagerCompat {
     private final Context mContext;
@@ -69,7 +69,7 @@ public class FingerprintManagerCompat {
         return Api23Impl.unwrapCryptoObject(cryptoObject);
     }
 
-    /* JADX INFO: renamed from: androidx.core.hardware.fingerprint.FingerprintManagerCompat$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.core.hardware.fingerprint.FingerprintManagerCompat$1, reason: invalid class name */
     class AnonymousClass1 extends FingerprintManager.AuthenticationCallback {
         final /* synthetic */ AuthenticationCallback val$callback;
 

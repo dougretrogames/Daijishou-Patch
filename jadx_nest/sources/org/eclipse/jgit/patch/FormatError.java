@@ -4,7 +4,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 import org.eclipse.jgit.util.RawParseUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class FormatError {
     private final byte[] buf;
     private final String message;
@@ -15,7 +15,7 @@ public class FormatError {
         WARNING,
         ERROR;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static Severity[] valuesCustom() {
             Severity[] severityArrValuesCustom = values();
             int length = severityArrValuesCustom.length;

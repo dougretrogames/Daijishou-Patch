@@ -4,7 +4,7 @@ import java.security.SecureRandom;
 import net.lingala.zip4j.crypto.engine.ZipCryptoEngine;
 import net.lingala.zip4j.exception.ZipException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class StandardEncrypter implements Encrypter {
     private byte[] headerBytes;
     private final ZipCryptoEngine zipCryptoEngine = new ZipCryptoEngine();

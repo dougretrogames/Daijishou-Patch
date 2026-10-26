@@ -1,6 +1,6 @@
 package org.apache.http.conn.params;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 public interface ConnRoutePNames {
     public static final String DEFAULT_PROXY = "http.route.default-proxy";

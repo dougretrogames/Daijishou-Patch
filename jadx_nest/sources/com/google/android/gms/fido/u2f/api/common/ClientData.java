@@ -4,8 +4,8 @@ import com.google.android.gms.common.internal.Preconditions;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+/* INFO: loaded from: classes3.dex */
 @Deprecated
 public class ClientData {
     public static final String KEY_CHALLENGE = "challenge";
@@ -19,7 +19,7 @@ public class ClientData {
     private final String zzc;
     private final ChannelIdValue zzd;
 
-    /* JADX INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
+    /* INFO: compiled from: com.google.android.gms:play-services-fido@@20.0.1 */
     public static class Builder implements Cloneable {
         private String zza;
         private String zzb;
@@ -45,7 +45,7 @@ public class ClientData {
             return new ClientData(this.zza, this.zzb, this.zzc, this.zzd);
         }
 
-        /* JADX INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
+        /* INFO: renamed from: clone, reason: merged with bridge method [inline-methods] */
         public Builder m3254clone() {
             return new Builder(this.zza, this.zzb, this.zzc, this.zzd);
         }

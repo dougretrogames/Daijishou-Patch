@@ -4,7 +4,7 @@ import android.content.Context;
 import android.content.res.loader.ResourcesLoader;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 final class ResourcesLoaderUtils {
     static boolean isColorResource(int i) {
         return 28 <= i && i <= 31;

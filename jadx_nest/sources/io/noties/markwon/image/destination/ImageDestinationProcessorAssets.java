@@ -3,7 +3,7 @@ package io.noties.markwon.image.destination;
 import android.net.Uri;
 import android.text.TextUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 public class ImageDestinationProcessorAssets extends ImageDestinationProcessor {
     static final String BASE = "file:///android_asset/";
     static final String MOCK = "https://android.asset/";

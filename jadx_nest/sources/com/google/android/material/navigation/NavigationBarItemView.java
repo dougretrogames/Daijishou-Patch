@@ -32,7 +32,7 @@ import com.google.android.material.motion.MotionUtils;
 import com.google.android.material.resources.MaterialResources;
 import com.google.android.material.ripple.RippleUtils;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public abstract class NavigationBarItemView extends FrameLayout implements MenuView.ItemView {
     private static final int INVALID_ITEM_POSITION = -1;
     private ValueAnimator activeIndicatorAnimator;
@@ -123,7 +123,7 @@ public abstract class NavigationBarItemView extends FrameLayout implements MenuV
         }
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.navigation.NavigationBarItemView$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.navigation.NavigationBarItemView$1, reason: invalid class name */
     class AnonymousClass1 implements View.OnLayoutChangeListener {
         AnonymousClass1() {
         }
@@ -239,7 +239,7 @@ public abstract class NavigationBarItemView extends FrameLayout implements MenuV
         post(new AnonymousClass2(i));
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.navigation.NavigationBarItemView$2, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.navigation.NavigationBarItemView$2, reason: invalid class name */
     class AnonymousClass2 implements Runnable {
         final /* synthetic */ int val$width;
 
@@ -261,7 +261,7 @@ public abstract class NavigationBarItemView extends FrameLayout implements MenuV
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void setActiveIndicatorProgress(float f, float f2) {
         View view = this.activeIndicatorView;
         if (view != null) {
@@ -288,7 +288,7 @@ public abstract class NavigationBarItemView extends FrameLayout implements MenuV
         this.activeIndicatorAnimator.start();
     }
 
-    /* JADX INFO: renamed from: com.google.android.material.navigation.NavigationBarItemView$3, reason: invalid class name */
+    /* INFO: renamed from: com.google.android.material.navigation.NavigationBarItemView$3, reason: invalid class name */
     class AnonymousClass3 implements ValueAnimator.AnimatorUpdateListener {
         final /* synthetic */ float val$newProgress;
 
@@ -613,7 +613,7 @@ public abstract class NavigationBarItemView extends FrameLayout implements MenuV
         updateActiveIndicatorLayoutParams(getWidth());
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void updateActiveIndicatorLayoutParams(int i) {
         if (this.activeIndicatorView == null || i <= 0) {
             return;
@@ -696,7 +696,7 @@ public abstract class NavigationBarItemView extends FrameLayout implements MenuV
         return this.badgeDrawable != null;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public void tryUpdateBadgeBounds(View view) {
         if (hasBadge()) {
             BadgeUtils.setBadgeDrawableBounds(this.badgeDrawable, view, getCustomParentForBadge(view));

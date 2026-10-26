@@ -5,7 +5,7 @@ import java.util.Objects;
 import org.apache.commons.collections4.Predicate;
 import org.apache.commons.collections4.Transformer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class IfTransformer<T, R> implements Transformer<T, R>, Serializable {
     private static final long serialVersionUID = 8069309411242014252L;
     private final Transformer<? super T, ? extends R> iFalseTransformer;

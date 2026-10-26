@@ -43,7 +43,7 @@ import org.eclipse.jgit.revwalk.RevWalkUtils;
 import org.eclipse.jgit.treewalk.FileTreeIterator;
 import org.eclipse.jgit.util.StringUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class MergeCommand extends GitCommand<MergeResult> {
     private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$lib$RefUpdate$Result;
     private Boolean commit;
@@ -60,7 +60,7 @@ public class MergeCommand extends GitCommand<MergeResult> {
         MERGE,
         DIFF3;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static ConflictStyle[] valuesCustom() {
             ConflictStyle[] conflictStyleArrValuesCustom = values();
             int length = conflictStyleArrValuesCustom.length;
@@ -135,7 +135,7 @@ public class MergeCommand extends GitCommand<MergeResult> {
 
         private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$api$MergeCommand$FastForwardMode$Merge;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static FastForwardMode[] valuesCustom() {
             FastForwardMode[] fastForwardModeArrValuesCustom = values();
             int length = fastForwardModeArrValuesCustom.length;
@@ -186,7 +186,7 @@ public class MergeCommand extends GitCommand<MergeResult> {
 
             private static volatile /* synthetic */ int[] $SWITCH_TABLE$org$eclipse$jgit$api$MergeCommand$FastForwardMode;
 
-            /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+            /* INFO: renamed from: values, reason: to resolve conflict with enum method */
             public static Merge[] valuesCustom() {
                 Merge[] mergeArrValuesCustom = values();
                 int length = mergeArrValuesCustom.length;
@@ -248,12 +248,12 @@ public class MergeCommand extends GitCommand<MergeResult> {
         this.monitor = NullProgressMonitor.INSTANCE;
     }
 
-    /* JADX WARN: Code duplicated, block: B:123:0x03ed A[DONT_INVERT] */
-    /* JADX WARN: Code duplicated, block: B:142:0x03ef A[EXC_TOP_SPLITTER, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:145:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r2v0, types: [java.lang.String] */
-    /* JADX WARN: Type inference failed for: r2v1 */
+    /* WARN: Code duplicated, block: B:123:0x03ed A[DONT_INVERT] */
+    /* WARN: Code duplicated, block: B:142:0x03ef A[EXC_TOP_SPLITTER, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:145:? A[RETURN, SYNTHETIC] */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r2v0, types: [java.lang.String] */
+    /* WARN: Type inference failed for: r2v1 */
     @Override // org.eclipse.jgit.api.GitCommand, java.util.concurrent.Callable
     public MergeResult call() throws Throwable {
         boolean zMerge;

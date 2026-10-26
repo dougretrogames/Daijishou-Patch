@@ -4,7 +4,7 @@ import java.util.Locale;
 import org.apache.commons.collections4.CollectionUtils;
 import org.eclipse.jgit.lib.Constants;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class FooterKey {
     private final String name;
     final byte[] raw;

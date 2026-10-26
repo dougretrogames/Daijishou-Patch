@@ -15,7 +15,7 @@ import androidx.core.view.TintableBackgroundView;
 import androidx.core.widget.TintableCompoundButton;
 import androidx.core.widget.TintableCompoundDrawablesView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class AppCompatRadioButton extends RadioButton implements TintableCompoundButton, TintableBackgroundView, EmojiCompatConfigurationView, TintableCompoundDrawablesView {
     private AppCompatEmojiTextHelper mAppCompatEmojiTextHelper;
     private final AppCompatBackgroundHelper mBackgroundTintHelper;

@@ -8,7 +8,7 @@ import org.eclipse.jgit.lib.AnyObjectId;
 import org.eclipse.jgit.lib.ObjectChecker;
 import org.eclipse.jgit.lib.ObjectId;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CorruptObjectException extends IOException {
     private static final long serialVersionUID = 1;
     private ObjectChecker.ErrorType errorType;

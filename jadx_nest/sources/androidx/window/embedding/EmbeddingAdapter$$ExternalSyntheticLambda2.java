@@ -4,8 +4,8 @@ import android.util.Pair;
 import java.util.Set;
 import java.util.function.Predicate;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class EmbeddingAdapter$$ExternalSyntheticLambda2 implements Predicate {
     public final /* synthetic */ EmbeddingAdapter f$0;
     public final /* synthetic */ Set f$1;

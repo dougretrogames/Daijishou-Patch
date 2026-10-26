@@ -2,7 +2,7 @@ package org.apache.commons.codec.language.bm;
 
 import org.apache.commons.codec.CharEncoding;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 final class ResourceConstants {
     static final String CMT = "//";
     static final String ENCODING = CharEncoding.UTF_8;

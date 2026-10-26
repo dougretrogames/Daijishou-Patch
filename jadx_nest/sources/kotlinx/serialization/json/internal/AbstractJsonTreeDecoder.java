@@ -30,8 +30,8 @@ import kotlinx.serialization.json.JsonObject;
 import kotlinx.serialization.json.JsonPrimitive;
 import kotlinx.serialization.modules.SerializersModule;
 
-/* JADX INFO: compiled from: TreeJsonDecoder.kt */
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: compiled from: TreeJsonDecoder.kt */
+/* INFO: loaded from: classes5.dex */
 @Metadata(d1 = {"\u0000Â\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0005\n\u0000\n\u0002\u0010\f\n\u0000\n\u0002\u0010\u0006\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u0007\n\u0002\b\u0004\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u0001\n\u0000\n\u0002\u0010\n\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b2\u0018\u00002\u00020\u00012\u00020\u0002B\u0017\b\u0004\u0012\u0006\u0010\u0003\u001a\u00020\u0004\u0012\u0006\u0010\u0005\u001a\u00020\u0006¢\u0006\u0002\u0010\u0007J\u0010\u0010\u0012\u001a\u00020\u00132\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0018\u0010\u0016\u001a\u00020\u00172\u0006\u0010\u0018\u001a\u00020\u00172\u0006\u0010\u0019\u001a\u00020\u0017H\u0014J\u0010\u0010\u001a\u001a\u00020\u00062\u0006\u0010\u001b\u001a\u00020\u0017H$J\b\u0010\u001c\u001a\u00020\u0006H\u0004J\u0010\u0010\u001d\u001a\u00020\u001e2\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\b\u0010\u001f\u001a\u00020\u0006H\u0016J\b\u0010 \u001a\u00020!H\u0016J!\u0010\"\u001a\u0002H#\"\u0004\b\u0000\u0010#2\f\u0010$\u001a\b\u0012\u0004\u0012\u0002H#0%H\u0016¢\u0006\u0002\u0010&J\u0010\u0010'\u001a\u00020!2\u0006\u0010\u001b\u001a\u00020\u0017H\u0014J\u0010\u0010(\u001a\u00020)2\u0006\u0010\u001b\u001a\u00020\u0017H\u0014J\u0010\u0010*\u001a\u00020+2\u0006\u0010\u001b\u001a\u00020\u0017H\u0014J\u0010\u0010,\u001a\u00020-2\u0006\u0010\u001b\u001a\u00020\u0017H\u0014J\u0018\u0010.\u001a\u00020/2\u0006\u0010\u001b\u001a\u00020\u00172\u0006\u00100\u001a\u00020\u0015H\u0014J\u0010\u00101\u001a\u0002022\u0006\u0010\u001b\u001a\u00020\u0017H\u0014J\u0018\u00103\u001a\u00020\u001e2\u0006\u0010\u001b\u001a\u00020\u00172\u0006\u00104\u001a\u00020\u0015H\u0014J\u0010\u00105\u001a\u00020/2\u0006\u0010\u001b\u001a\u00020\u0017H\u0014J\u0010\u00106\u001a\u0002072\u0006\u0010\u001b\u001a\u00020\u0017H\u0014J\u0010\u00108\u001a\u00020!2\u0006\u0010\u001b\u001a\u00020\u0017H\u0014J\u0012\u00109\u001a\u0004\u0018\u00010:2\u0006\u0010\u001b\u001a\u00020\u0017H\u0014J\u0010\u0010;\u001a\u00020<2\u0006\u0010\u001b\u001a\u00020\u0017H\u0014J\u0010\u0010=\u001a\u00020\u00172\u0006\u0010\u001b\u001a\u00020\u0017H\u0014J\u0010\u0010>\u001a\u00020?2\u0006\u0010\u0014\u001a\u00020\u0015H\u0016J\u0010\u0010@\u001a\u00020A2\u0006\u0010\u001b\u001a\u00020\u0017H\u0004J\u0010\u0010B\u001a\u00020:2\u0006\u0010C\u001a\u00020\u0017H\u0002J\u0014\u0010D\u001a\u00020E*\u00020A2\u0006\u0010F\u001a\u00020\u0017H\u0002J?\u0010C\u001a\u0002H#\"\b\b\u0000\u0010#*\u00020G*\u00020A2\u0006\u0010C\u001a\u00020\u00172\u0019\u0010H\u001a\u0015\u0012\u0004\u0012\u00020A\u0012\u0006\u0012\u0004\u0018\u0001H#0I¢\u0006\u0002\bJH\u0082\b¢\u0006\u0002\u0010KR\u0010\u0010\b\u001a\u00020\t8\u0004X\u0085\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0003\u001a\u00020\u0004X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u0014\u0010\f\u001a\u00020\r8VX\u0096\u0004¢\u0006\u0006\u001a\u0004\b\u000e\u0010\u000fR\u0014\u0010\u0005\u001a\u00020\u0006X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011\u0082\u0001\u0003LMN¨\u0006O"}, d2 = {"Lkotlinx/serialization/json/internal/AbstractJsonTreeDecoder;", "Lkotlinx/serialization/internal/NamedValueDecoder;", "Lkotlinx/serialization/json/JsonDecoder;", "json", "Lkotlinx/serialization/json/Json;", "value", "Lkotlinx/serialization/json/JsonElement;", "(Lkotlinx/serialization/json/Json;Lkotlinx/serialization/json/JsonElement;)V", "configuration", "Lkotlinx/serialization/json/JsonConfiguration;", "getJson", "()Lkotlinx/serialization/json/Json;", "serializersModule", "Lkotlinx/serialization/modules/SerializersModule;", "getSerializersModule", "()Lkotlinx/serialization/modules/SerializersModule;", "getValue", "()Lkotlinx/serialization/json/JsonElement;", "beginStructure", "Lkotlinx/serialization/encoding/CompositeDecoder;", "descriptor", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "composeName", "", "parentName", "childName", "currentElement", "tag", "currentObject", "decodeInline", "Lkotlinx/serialization/encoding/Decoder;", "decodeJsonElement", "decodeNotNullMark", "", "decodeSerializableValue", ExifInterface.GPS_DIRECTION_TRUE, "deserializer", "Lkotlinx/serialization/DeserializationStrategy;", "(Lkotlinx/serialization/DeserializationStrategy;)Ljava/lang/Object;", "decodeTaggedBoolean", "decodeTaggedByte", "", "decodeTaggedChar", "", "decodeTaggedDouble", "", "decodeTaggedEnum", "", "enumDescriptor", "decodeTaggedFloat", "", "decodeTaggedInline", "inlineDescriptor", "decodeTaggedInt", "decodeTaggedLong", "", "decodeTaggedNotNullMark", "decodeTaggedNull", "", "decodeTaggedShort", "", "decodeTaggedString", "endStructure", "", "getPrimitiveValue", "Lkotlinx/serialization/json/JsonPrimitive;", "unparsedPrimitive", TreeJsonEncoderKt.PRIMITIVE_TAG, "asLiteral", "Lkotlinx/serialization/json/JsonLiteral;", "type", "", "block", "Lkotlin/Function1;", "Lkotlin/ExtensionFunctionType;", "(Lkotlinx/serialization/json/JsonPrimitive;Ljava/lang/String;Lkotlin/jvm/functions/Function1;)Ljava/lang/Object;", "Lkotlinx/serialization/json/internal/JsonPrimitiveDecoder;", "Lkotlinx/serialization/json/internal/JsonTreeDecoder;", "Lkotlinx/serialization/json/internal/JsonTreeListDecoder;", "kotlinx-serialization-json"}, k = 1, mv = {1, 9, 0}, xi = 48)
 abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements JsonDecoder {
     protected final JsonConfiguration configuration;
@@ -51,7 +51,7 @@ abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements Json
 
     protected abstract JsonElement currentElement(String tag);
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public Void decodeTaggedNull(String tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
@@ -158,7 +158,7 @@ abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements Json
         throw JsonExceptionsKt.JsonDecodingException(-1, "Expected JsonPrimitive at " + tag + ", found " + jsonElementCurrentElement, currentObject().toString());
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public int decodeTaggedEnum(String tag, SerialDescriptor enumDescriptor) {
         Intrinsics.checkNotNullParameter(tag, "tag");
@@ -166,14 +166,14 @@ abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements Json
         return JsonNamesMapKt.getJsonNameIndexOrThrow$default(enumDescriptor, getJson(), getPrimitiveValue(tag).getContent(), null, 4, null);
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public boolean decodeTaggedNotNullMark(String tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
         return currentElement(tag) != JsonNull.INSTANCE;
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public boolean decodeTaggedBoolean(String tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
@@ -190,7 +190,7 @@ abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements Json
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public byte decodeTaggedByte(String tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
@@ -208,7 +208,7 @@ abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements Json
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public short decodeTaggedShort(String tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
@@ -226,7 +226,7 @@ abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements Json
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public int decodeTaggedInt(String tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
@@ -238,7 +238,7 @@ abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements Json
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public long decodeTaggedLong(String tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
@@ -250,7 +250,7 @@ abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements Json
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public float decodeTaggedFloat(String tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
@@ -269,7 +269,7 @@ abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements Json
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public double decodeTaggedDouble(String tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
@@ -288,7 +288,7 @@ abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements Json
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public char decodeTaggedChar(String tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
@@ -318,7 +318,7 @@ abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements Json
         throw JsonExceptionsKt.JsonDecodingException(-1, "Failed to parse literal as '" + primitive + "' value", currentObject().toString());
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public String decodeTaggedString(String tag) {
         Intrinsics.checkNotNullParameter(tag, "tag");
@@ -340,7 +340,7 @@ abstract class AbstractJsonTreeDecoder extends NamedValueDecoder implements Json
         throw JsonExceptionsKt.JsonDecodingException(-1, "Unexpected 'null' literal when non-nullable " + str + " was expected");
     }
 
-    /* JADX INFO: Access modifiers changed from: protected */
+    /* INFO: Access modifiers changed from: protected */
     @Override // kotlinx.serialization.internal.TaggedDecoder
     public Decoder decodeTaggedInline(String tag, SerialDescriptor inlineDescriptor) {
         Intrinsics.checkNotNullParameter(tag, "tag");

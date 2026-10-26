@@ -30,7 +30,7 @@ import org.eclipse.jgit.storage.pack.PackConfig;
 import org.eclipse.jgit.util.BlockList;
 import org.eclipse.jgit.util.SystemReader;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class PackWriterBitmapPreparer {
     private static final int DAY_IN_SECONDS = 86400;
     private static final int DISTANCE_THRESHOLD = 2000;
@@ -69,18 +69,18 @@ class PackWriterBitmapPreparer {
         this.inactiveBranchTimestamp = (SystemReader.getInstance().getCurrentTime() / 1000) - (((long) packConfig.getBitmapInactiveBranchAgeInDays()) * 86400);
     }
 
-    /* JADX WARN: Code duplicated, block: B:107:0x0271  */
-    /* JADX WARN: Multi-variable type inference failed */
-    /* JADX WARN: Type inference failed for: r16v0 */
-    /* JADX WARN: Type inference failed for: r28v1 */
-    /* JADX WARN: Type inference failed for: r28v2 */
-    /* JADX WARN: Type inference failed for: r2v11 */
-    /* JADX WARN: Type inference failed for: r2v12 */
-    /* JADX WARN: Type inference failed for: r2v13 */
-    /* JADX WARN: Type inference failed for: r2v16 */
-    /* JADX WARN: Type inference failed for: r2v17 */
-    /* JADX WARN: Type inference failed for: r2v29 */
-    /* JADX WARN: Type inference failed for: r6v22 */
+    /* WARN: Code duplicated, block: B:107:0x0271  */
+    /* WARN: Multi-variable type inference failed */
+    /* WARN: Type inference failed for: r16v0 */
+    /* WARN: Type inference failed for: r28v1 */
+    /* WARN: Type inference failed for: r28v2 */
+    /* WARN: Type inference failed for: r2v11 */
+    /* WARN: Type inference failed for: r2v12 */
+    /* WARN: Type inference failed for: r2v13 */
+    /* WARN: Type inference failed for: r2v16 */
+    /* WARN: Type inference failed for: r2v17 */
+    /* WARN: Type inference failed for: r2v29 */
+    /* WARN: Type inference failed for: r6v22 */
     Collection<BitmapCommit> selectCommits(int i, Set<? extends ObjectId> set) throws IOException {
         Throwable th;
         int i2;
@@ -399,7 +399,7 @@ class PackWriterBitmapPreparer {
             this.reusedCommits = list2;
         }
 
-        /* JADX INFO: renamed from: org.eclipse.jgit.internal.storage.pack.PackWriterBitmapPreparer$CommitSelectionHelper$1, reason: invalid class name */
+        /* INFO: renamed from: org.eclipse.jgit.internal.storage.pack.PackWriterBitmapPreparer$CommitSelectionHelper$1, reason: invalid class name */
         class AnonymousClass1 implements Iterator<RevCommit> {
             int pos;
 

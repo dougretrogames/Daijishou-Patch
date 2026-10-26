@@ -10,7 +10,7 @@ import java.io.InputStream;
 import java.util.zip.GZIPInputStream;
 import net.lingala.zip4j.util.InternalZipConstants;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class AssetHelper {
     public static final String DEFAULT_MIME_TYPE = "text/plain";
     private final Context mContext;

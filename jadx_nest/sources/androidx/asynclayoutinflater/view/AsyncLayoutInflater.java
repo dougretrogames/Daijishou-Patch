@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 import androidx.core.util.Pools;
 import java.util.concurrent.ArrayBlockingQueue;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public final class AsyncLayoutInflater {
     private static final String TAG = "AsyncLayoutInflater";
     LayoutInflater mInflater;
@@ -39,7 +39,7 @@ public final class AsyncLayoutInflater {
         this.mInflateThread.enqueue(inflateRequestObtainRequest);
     }
 
-    /* JADX INFO: renamed from: androidx.asynclayoutinflater.view.AsyncLayoutInflater$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.asynclayoutinflater.view.AsyncLayoutInflater$1, reason: invalid class name */
     class AnonymousClass1 implements Handler.Callback {
         AnonymousClass1() {
         }

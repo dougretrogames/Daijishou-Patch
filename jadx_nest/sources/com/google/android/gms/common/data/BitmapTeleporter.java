@@ -19,8 +19,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public class BitmapTeleporter extends AbstractSafeParcelable implements ReflectedParcelable {
     public static final Parcelable.Creator<BitmapTeleporter> CREATOR = new zaa();
     final int zaa;

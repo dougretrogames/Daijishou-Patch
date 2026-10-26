@@ -16,7 +16,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Locale;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class DatePicker extends Picker {
     private static final int[] DATE_FIELDS = {5, 2, 1};
     private static final String DATE_FORMAT = "MM/dd/yyyy";
@@ -320,7 +320,7 @@ public class DatePicker extends Picker {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.widget.picker.DatePicker$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.widget.picker.DatePicker$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         final /* synthetic */ boolean val$animation;
 

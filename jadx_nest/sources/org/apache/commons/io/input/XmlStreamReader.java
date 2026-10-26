@@ -27,7 +27,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 import org.apache.commons.io.function.IOConsumer;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class XmlStreamReader extends Reader {
     private static final ByteOrderMark[] BOMS;
     private static final Pattern CHARSET_PATTERN;
@@ -243,7 +243,7 @@ public class XmlStreamReader extends Reader {
         this(((URL) Objects.requireNonNull(url, "url")).openConnection(), (String) null);
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     public XmlStreamReader(URLConnection uRLConnection, String str) throws IOException {
         Objects.requireNonNull(uRLConnection, "urlConnection");
         this.defaultEncoding = str;
@@ -340,11 +340,11 @@ public class XmlStreamReader extends Reader {
         this.reader.close();
     }
 
-    /* JADX WARN: Code duplicated, block: B:18:0x0042  */
-    /* JADX WARN: Code duplicated, block: B:20:0x0048  */
-    /* JADX WARN: Code duplicated, block: B:22:0x004c  */
-    /* JADX WARN: Code duplicated, block: B:28:? A[RETURN, SYNTHETIC] */
-    /* JADX WARN: Code duplicated, block: B:29:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:18:0x0042  */
+    /* WARN: Code duplicated, block: B:20:0x0048  */
+    /* WARN: Code duplicated, block: B:22:0x004c  */
+    /* WARN: Code duplicated, block: B:28:? A[RETURN, SYNTHETIC] */
+    /* WARN: Code duplicated, block: B:29:? A[RETURN, SYNTHETIC] */
     private String doLenientDetection(String str, XmlStreamReaderException xmlStreamReaderException) throws IOException {
         XmlStreamReader xmlStreamReader;
         String xmlEncoding;

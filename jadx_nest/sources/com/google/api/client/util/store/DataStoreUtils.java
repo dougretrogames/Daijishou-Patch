@@ -3,7 +3,7 @@ package com.google.api.client.util.store;
 import java.io.IOException;
 import kotlinx.serialization.json.internal.AbstractJsonLexerKt;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class DataStoreUtils {
     public static String toString(DataStore<?> dataStore) {
         try {

@@ -9,7 +9,7 @@ import java.util.concurrent.TimeoutException;
 import javax.annotation.CheckForNull;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 final class TimeoutFuture<V> extends FluentFuture.TrustedFuture<V> {
 

@@ -1,6 +1,6 @@
 package io.opencensus.trace.export;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 final class AutoValue_SampledSpanStore_LatencyFilter extends SampledSpanStore.LatencyFilter {
     private final long latencyLowerNs;
     private final long latencyUpperNs;

@@ -2,7 +2,7 @@ package org.apache.http.impl.io;
 
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class EmptyInputStream extends InputStream {
     public static final EmptyInputStream INSTANCE = new EmptyInputStream();
 

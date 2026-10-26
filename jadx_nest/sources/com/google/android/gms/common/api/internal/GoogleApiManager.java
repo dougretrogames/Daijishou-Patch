@@ -33,8 +33,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import org.checkerframework.checker.initialization.qual.NotOnlyInitialized;
 
-/* JADX INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: com.google.android.gms:play-services-base@@18.4.0 */
+/* INFO: loaded from: classes3.dex */
 public class GoogleApiManager implements Handler.Callback {
     public static final Status zaa = new Status(4, "Sign-out occurred while this API call was in progress.");
     private static final Status zab = new Status(4, "The user must be signed in to make this API call.");
@@ -82,7 +82,7 @@ public class GoogleApiManager implements Handler.Callback {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Status zaF(ApiKey apiKey, ConnectionResult connectionResult) {
         return new Status(connectionResult, "API: " + apiKey.zaa() + " is not available on this device. Connection failed with: " + String.valueOf(connectionResult));
     }
@@ -152,12 +152,12 @@ public class GoogleApiManager implements Handler.Callback {
         return googleApiManager;
     }
 
-    /* JADX WARN: Code duplicated, block: B:63:0x01ea  */
-    /* JADX WARN: Code duplicated, block: B:65:0x01f0  */
-    /* JADX WARN: Code duplicated, block: B:66:0x021e  */
-    /* JADX WARN: Code duplicated, block: B:67:0x022b  */
-    /* JADX WARN: Instruction removed from duplicated block: B:65:0x01f0, please report this as an issue */
-    /* JADX WARN: Instruction removed from duplicated block: B:67:0x022b, please report this as an issue */
+    /* WARN: Code duplicated, block: B:63:0x01ea  */
+    /* WARN: Code duplicated, block: B:65:0x01f0  */
+    /* WARN: Code duplicated, block: B:66:0x021e  */
+    /* WARN: Code duplicated, block: B:67:0x022b  */
+    /* WARN: Instruction removed from duplicated block: B:65:0x01f0, please report this as an issue */
+    /* WARN: Instruction removed from duplicated block: B:67:0x022b, please report this as an issue */
     @Override // android.os.Handler.Callback
     public final boolean handleMessage(Message message) {
         zabq zabqVar = null;

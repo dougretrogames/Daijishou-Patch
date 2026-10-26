@@ -4,7 +4,7 @@ import java.util.Queue;
 import org.apache.commons.collections4.Transformer;
 import org.apache.commons.collections4.collection.TransformedCollection;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TransformedQueue<E> extends TransformedCollection<E> implements Queue<E> {
     private static final long serialVersionUID = -7901091318986132033L;
 

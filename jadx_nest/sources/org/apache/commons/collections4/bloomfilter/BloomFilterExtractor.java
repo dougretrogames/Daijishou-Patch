@@ -7,12 +7,12 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @FunctionalInterface
 public interface BloomFilterExtractor {
     boolean processBloomFilters(Predicate<BloomFilter> predicate);
 
-    /* JADX INFO: renamed from: org.apache.commons.collections4.bloomfilter.BloomFilterExtractor$1, reason: invalid class name */
+    /* INFO: renamed from: org.apache.commons.collections4.bloomfilter.BloomFilterExtractor$1, reason: invalid class name */
     class AnonymousClass1 implements BloomFilterExtractor {
         final /* synthetic */ BloomFilter[] val$filters;
 

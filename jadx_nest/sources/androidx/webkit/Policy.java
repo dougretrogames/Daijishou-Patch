@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import org.chromium.support_lib_boundary.WebViewBuilderBoundaryInterface;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Policy {
     private final List<ConfigRunnable> mBehaviors;
 

@@ -3,7 +3,7 @@ package com.google.common.base;
 import java.util.Arrays;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 public final class Objects extends ExtraObjectsMethodsForWeb {
     private Objects() {

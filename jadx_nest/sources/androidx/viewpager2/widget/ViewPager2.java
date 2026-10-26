@@ -25,7 +25,7 @@ import androidx.viewpager2.adapter.StatefulAdapter;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class ViewPager2 extends ViewGroup {
     public static final int OFFSCREEN_PAGE_LIMIT_DEFAULT = -1;
     public static final int ORIENTATION_HORIZONTAL = 0;
@@ -82,7 +82,7 @@ public final class ViewPager2 extends ViewGroup {
     public @interface ScrollState {
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager2.widget.ViewPager2$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager2.widget.ViewPager2$1, reason: invalid class name */
     class AnonymousClass1 extends DataSetChangeObserver {
         AnonymousClass1() {
             super(null);
@@ -196,7 +196,7 @@ public final class ViewPager2 extends ViewGroup {
         attachViewToParent(recyclerView, 0, recyclerView.getLayoutParams());
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager2.widget.ViewPager2$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager2.widget.ViewPager2$2, reason: invalid class name */
     class AnonymousClass2 extends OnPageChangeCallback {
         AnonymousClass2() {
         }
@@ -217,7 +217,7 @@ public final class ViewPager2 extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager2.widget.ViewPager2$3, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager2.widget.ViewPager2$3, reason: invalid class name */
     class AnonymousClass3 extends OnPageChangeCallback {
         AnonymousClass3() {
         }
@@ -231,7 +231,7 @@ public final class ViewPager2 extends ViewGroup {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.viewpager2.widget.ViewPager2$4, reason: invalid class name */
+    /* INFO: renamed from: androidx.viewpager2.widget.ViewPager2$4, reason: invalid class name */
     class AnonymousClass4 implements RecyclerView.OnChildAttachStateChangeListener {
         @Override // androidx.recyclerview.widget.RecyclerView.OnChildAttachStateChangeListener
         public void onChildViewDetachedFromWindow(View view) {
@@ -304,7 +304,7 @@ public final class ViewPager2 extends ViewGroup {
         this.mPendingAdapterState = savedState.mAdapterState;
     }
 
-    /* JADX WARN: Multi-variable type inference failed */
+    /* WARN: Multi-variable type inference failed */
     private void restorePendingState() {
         RecyclerView.Adapter adapter;
         if (this.mPendingCurrentItem == -1 || (adapter = getAdapter()) == 0) {
@@ -370,12 +370,12 @@ public final class ViewPager2 extends ViewGroup {
             parcel.writeParcelable(this.mAdapterState, i);
         }
 
-        /* JADX INFO: renamed from: androidx.viewpager2.widget.ViewPager2$SavedState$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.viewpager2.widget.ViewPager2$SavedState$1, reason: invalid class name */
         class AnonymousClass1 implements Parcelable.ClassLoaderCreator<SavedState> {
             AnonymousClass1() {
             }
 
-            /* JADX WARN: Can't rename method to resolve collision */
+            /* WARN: Can't rename method to resolve collision */
             @Override // android.os.Parcelable.ClassLoaderCreator
             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
                 return new SavedState(parcel, classLoader);
@@ -940,7 +940,7 @@ public final class ViewPager2 extends ViewGroup {
             this.mActionPageBackward = new AnonymousClass2();
         }
 
-        /* JADX INFO: renamed from: androidx.viewpager2.widget.ViewPager2$PageAwareAccessibilityProvider$1, reason: invalid class name */
+        /* INFO: renamed from: androidx.viewpager2.widget.ViewPager2$PageAwareAccessibilityProvider$1, reason: invalid class name */
         class AnonymousClass1 implements AccessibilityViewCommand {
             AnonymousClass1() {
             }
@@ -952,7 +952,7 @@ public final class ViewPager2 extends ViewGroup {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.viewpager2.widget.ViewPager2$PageAwareAccessibilityProvider$2, reason: invalid class name */
+        /* INFO: renamed from: androidx.viewpager2.widget.ViewPager2$PageAwareAccessibilityProvider$2, reason: invalid class name */
         class AnonymousClass2 implements AccessibilityViewCommand {
             AnonymousClass2() {
             }
@@ -973,7 +973,7 @@ public final class ViewPager2 extends ViewGroup {
             }
         }
 
-        /* JADX INFO: renamed from: androidx.viewpager2.widget.ViewPager2$PageAwareAccessibilityProvider$3, reason: invalid class name */
+        /* INFO: renamed from: androidx.viewpager2.widget.ViewPager2$PageAwareAccessibilityProvider$3, reason: invalid class name */
         class AnonymousClass3 extends DataSetChangeObserver {
             AnonymousClass3() {
                 super(null);

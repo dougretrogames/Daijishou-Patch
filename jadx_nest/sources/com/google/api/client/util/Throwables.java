@@ -1,6 +1,6 @@
 package com.google.api.client.util;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public final class Throwables {
     public static RuntimeException propagate(Throwable th) {
         return com.google.common.base.Throwables.propagate(th);

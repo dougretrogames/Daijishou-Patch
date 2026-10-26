@@ -6,7 +6,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 import org.apache.commons.collections4.CollectionUtils;
 
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: loaded from: classes4.dex */
 @ElementTypesAreNonnullByDefault
 public abstract class AbstractIdleService implements Service {
     private final Supplier<String> threadNameSupplier = new ThreadNameSupplier(this, null);
@@ -30,7 +30,7 @@ public abstract class AbstractIdleService implements Service {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     final class DelegateService extends AbstractService {
         private DelegateService() {
         }
@@ -44,7 +44,7 @@ public abstract class AbstractIdleService implements Service {
             MoreExecutors.renamingDecorator(AbstractIdleService.this.executor(), (Supplier<String>) AbstractIdleService.this.threadNameSupplier).execute(new AbstractIdleService$DelegateService$$ExternalSyntheticLambda1(this));
         }
 
-        /* JADX INFO: renamed from: lambda$doStart$0$com-google-common-util-concurrent-AbstractIdleService$DelegateService, reason: not valid java name */
+        /* INFO: renamed from: lambda$doStart$0$com-google-common-util-concurrent-AbstractIdleService$DelegateService, reason: not valid java name */
         /* synthetic */ void m3368x2ed323e8() {
             try {
                 AbstractIdleService.this.startUp();
@@ -60,7 +60,7 @@ public abstract class AbstractIdleService implements Service {
             MoreExecutors.renamingDecorator(AbstractIdleService.this.executor(), (Supplier<String>) AbstractIdleService.this.threadNameSupplier).execute(new AbstractIdleService$DelegateService$$ExternalSyntheticLambda0(this));
         }
 
-        /* JADX INFO: renamed from: lambda$doStop$1$com-google-common-util-concurrent-AbstractIdleService$DelegateService, reason: not valid java name */
+        /* INFO: renamed from: lambda$doStop$1$com-google-common-util-concurrent-AbstractIdleService$DelegateService, reason: not valid java name */
         /* synthetic */ void m3369xb13e6319() {
             try {
                 AbstractIdleService.this.shutDown();
@@ -84,7 +84,7 @@ public abstract class AbstractIdleService implements Service {
         return new AbstractIdleService$$ExternalSyntheticLambda0(this);
     }
 
-    /* JADX INFO: renamed from: lambda$executor$0$com-google-common-util-concurrent-AbstractIdleService, reason: not valid java name */
+    /* INFO: renamed from: lambda$executor$0$com-google-common-util-concurrent-AbstractIdleService, reason: not valid java name */
     /* synthetic */ void m3367xc998c392(Runnable runnable) {
         MoreExecutors.newThread(this.threadNameSupplier.get(), runnable).start();
     }

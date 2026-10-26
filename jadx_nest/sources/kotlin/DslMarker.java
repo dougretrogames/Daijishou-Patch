@@ -9,8 +9,8 @@ import kotlin.annotation.AnnotationRetention;
 import kotlin.annotation.AnnotationTarget;
 import kotlin.annotation.MustBeDocumented;
 
-/* JADX INFO: compiled from: Annotations.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: Annotations.kt */
+/* INFO: loaded from: classes4.dex */
 @Target({ElementType.ANNOTATION_TYPE})
 @kotlin.annotation.Target(allowedTargets = {AnnotationTarget.ANNOTATION_CLASS})
 @Retention(RetentionPolicy.CLASS)

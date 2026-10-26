@@ -2,7 +2,7 @@ package org.apache.http.client.utils;
 
 import java.lang.reflect.InvocationTargetException;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class CloneUtils {
     public static <T> T cloneObject(T t) throws CloneNotSupportedException {
         if (t == null) {

@@ -2,7 +2,7 @@ package androidx.core.os;
 
 import androidx.core.util.ObjectsCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class OperationCanceledException extends RuntimeException {
     public OperationCanceledException() {
         this(null);

@@ -10,7 +10,7 @@ import com.google.android.material.R;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class HarmonizedColors {
     private static final String TAG = "HarmonizedColors";
 

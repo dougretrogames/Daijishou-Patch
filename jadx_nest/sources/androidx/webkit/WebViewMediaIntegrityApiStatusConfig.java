@@ -3,7 +3,7 @@ package androidx.webkit;
 import java.util.HashMap;
 import java.util.Map;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class WebViewMediaIntegrityApiStatusConfig {
     public static final int WEBVIEW_MEDIA_INTEGRITY_API_DISABLED = 0;
     public static final int WEBVIEW_MEDIA_INTEGRITY_API_ENABLED = 2;

@@ -1,6 +1,6 @@
 package androidx.recyclerview.widget;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 public class BatchingListUpdateCallback implements ListUpdateCallback {
     private static final int TYPE_ADD = 1;
     private static final int TYPE_CHANGE = 3;

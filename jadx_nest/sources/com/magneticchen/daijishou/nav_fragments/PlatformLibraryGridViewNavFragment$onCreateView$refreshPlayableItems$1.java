@@ -35,8 +35,8 @@ import kotlinx.coroutines.CoroutineScope;
 import kotlinx.coroutines.Dispatchers;
 import com.magneticchen.daijishou.application_data.Constants;
 
-/* JADX INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
+/* INFO: loaded from: classes4.dex */
 @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
 @DebugMetadata(c = "com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1", f = "PlatformLibraryGridViewNavFragment.kt", i = {0, 1, 2}, l = {581, 594, TypedValues.MotionType.TYPE_ANIMATE_CIRCLEANGLE_TO, 632}, m = "invokeSuspendImpl", n = {"playableItemsToBeAdded", "playableItemsToBeAdded", "playableItemsToBeAdded"}, s = {"L$0", "L$0", "L$0"})
 final class PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -46,7 +46,7 @@ final class PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems
     int label;
     final /* synthetic */ PlatformLibraryGridViewNavFragment this$0;
 
-    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    /* WARN: 'super' call moved to the top of the method (can break code semantics) */
     PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1(PlatformLibraryGridViewNavFragment platformLibraryGridViewNavFragment, List<PlayableItemEntity> list, SharedPreferences sharedPreferences, Continuation<?> continuation) {
         super(2, continuation);
         this.this$0 = platformLibraryGridViewNavFragment;
@@ -180,15 +180,15 @@ final class PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems
         return Unit.INSTANCE;
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$2, reason: invalid class name */
-    /* JADX INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$2, reason: invalid class name */
+    /* INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$2", f = "PlatformLibraryGridViewNavFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass2 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
         int label;
         final /* synthetic */ PlatformLibraryGridViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass2(PlatformLibraryGridViewNavFragment platformLibraryGridViewNavFragment, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = platformLibraryGridViewNavFragment;
@@ -257,15 +257,15 @@ final class PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$4, reason: invalid class name */
-    /* JADX INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$4, reason: invalid class name */
+    /* INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$4", f = "PlatformLibraryGridViewNavFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass4 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
         int label;
         final /* synthetic */ PlatformLibraryGridViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass4(PlatformLibraryGridViewNavFragment platformLibraryGridViewNavFragment, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = platformLibraryGridViewNavFragment;
@@ -334,15 +334,15 @@ final class PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$6, reason: invalid class name */
-    /* JADX INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$6, reason: invalid class name */
+    /* INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$6", f = "PlatformLibraryGridViewNavFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass6 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
         int label;
         final /* synthetic */ PlatformLibraryGridViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass6(PlatformLibraryGridViewNavFragment platformLibraryGridViewNavFragment, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = platformLibraryGridViewNavFragment;
@@ -411,8 +411,8 @@ final class PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems
         }
     }
 
-    /* JADX INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$8, reason: invalid class name */
-    /* JADX INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
+    /* INFO: renamed from: com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$8, reason: invalid class name */
+    /* INFO: compiled from: PlatformLibraryGridViewNavFragment.kt */
     @Metadata(d1 = {"\u0000\n\n\u0000\n\u0002\u0010\u0002\n\u0002\u0018\u0002\u0010\u0000\u001a\u00020\u0001*\u00020\u0002H\u008a@"}, d2 = {"<anonymous>", "", "Lkotlinx/coroutines/CoroutineScope;"}, k = 3, mv = {1, 9, 0}, xi = 48)
     @DebugMetadata(c = "com.magneticchen.daijishou.nav_fragments.PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems$1$8", f = "PlatformLibraryGridViewNavFragment.kt", i = {}, l = {}, m = "invokeSuspendImpl", n = {}, s = {})
     static final class AnonymousClass8 extends com.magneticchen.daijishou.support.DaijishouSuspendLambda implements Function2<CoroutineScope, Continuation<?>, Object> {
@@ -421,7 +421,7 @@ final class PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems
         int label;
         final /* synthetic */ PlatformLibraryGridViewNavFragment this$0;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass8(PlatformLibraryGridViewNavFragment platformLibraryGridViewNavFragment, List<PlayableItemEntity> list, SharedPreferences sharedPreferences, Continuation<?> continuation) {
             super(2, continuation);
             this.this$0 = platformLibraryGridViewNavFragment;
@@ -447,8 +447,8 @@ final class PlatformLibraryGridViewNavFragment$onCreateView$refreshPlayableItems
             }
         }
 
-        /* JADX WARN: Multi-variable type inference failed */
-        /* JADX WARN: Type inference failed for: r8v10, types: [T, com.google.android.material.chip.Chip] */
+        /* WARN: Multi-variable type inference failed */
+        /* WARN: Type inference failed for: r8v10, types: [T, com.google.android.material.chip.Chip] */
         public final Object invokeSuspendImpl(Object obj) throws Throwable {
             IntrinsicsKt.getCOROUTINE_SUSPENDED();
             if (this.label == 0) {

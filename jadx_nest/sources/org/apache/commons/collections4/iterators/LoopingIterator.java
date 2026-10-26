@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
 import java.util.Objects;
 import org.apache.commons.collections4.ResettableIterator;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class LoopingIterator<E> implements ResettableIterator<E> {
     private final Collection<? extends E> collection;
     private Iterator<? extends E> iterator;

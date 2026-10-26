@@ -9,7 +9,7 @@ import org.apache.http.conn.routing.HttpRoute;
 import org.apache.http.conn.routing.RouteTracker;
 import org.apache.http.pool.PoolEntry;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 @Deprecated
 class HttpPoolEntry extends PoolEntry<HttpRoute, OperatedClientConnection> {
     private final Log log;

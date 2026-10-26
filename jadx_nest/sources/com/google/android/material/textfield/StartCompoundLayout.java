@@ -24,7 +24,7 @@ import com.google.android.material.internal.CheckableImageButton;
 import com.google.android.material.internal.ViewUtils;
 import com.google.android.material.resources.MaterialResources;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 class StartCompoundLayout extends LinearLayout {
     private boolean hintExpanded;
     private CharSequence prefixText;

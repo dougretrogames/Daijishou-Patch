@@ -9,7 +9,7 @@ import android.support.v4.media.MediaMetadataCompat;
 import android.support.v4.media.session.MediaControllerCompat;
 import android.support.v4.media.session.PlaybackStateCompat;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class MediaControllerAdapter extends PlayerAdapter {
     private static final boolean DEBUG = false;
     private static final String TAG = "MediaControllerAdapter";
@@ -40,7 +40,7 @@ public class MediaControllerAdapter extends PlayerAdapter {
         return 16;
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.MediaControllerAdapter$1, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.MediaControllerAdapter$1, reason: invalid class name */
     class AnonymousClass1 implements Runnable {
         AnonymousClass1() {
         }
@@ -52,7 +52,7 @@ public class MediaControllerAdapter extends PlayerAdapter {
         }
     }
 
-    /* JADX INFO: renamed from: androidx.leanback.media.MediaControllerAdapter$2, reason: invalid class name */
+    /* INFO: renamed from: androidx.leanback.media.MediaControllerAdapter$2, reason: invalid class name */
     class AnonymousClass2 extends MediaControllerCompat.Callback {
         AnonymousClass2() {
         }

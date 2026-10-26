@@ -3,8 +3,8 @@ package com.google.android.material.internal;
 import android.animation.ValueAnimator;
 import android.graphics.Rect;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes3.dex */
 public final /* synthetic */ class ExpandCollapseAnimationHelper$$ExternalSyntheticLambda0 implements ValueAnimator.AnimatorUpdateListener {
     public final /* synthetic */ ExpandCollapseAnimationHelper f$0;
     public final /* synthetic */ Rect f$1;

@@ -12,7 +12,7 @@ import org.apache.commons.logging.LogFactory;
 import org.apache.http.Consts;
 import org.apache.http.util.Args;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public final class PublicSuffixMatcherLoader {
     private static volatile PublicSuffixMatcher DEFAULT_INSTANCE;
 

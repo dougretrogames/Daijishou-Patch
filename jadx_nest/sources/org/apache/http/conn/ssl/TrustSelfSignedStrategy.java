@@ -3,7 +3,7 @@ package org.apache.http.conn.ssl;
 import java.security.cert.CertificateException;
 import java.security.cert.X509Certificate;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class TrustSelfSignedStrategy implements TrustStrategy {
     public static final TrustSelfSignedStrategy INSTANCE = new TrustSelfSignedStrategy();
 

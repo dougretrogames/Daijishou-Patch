@@ -3,7 +3,7 @@ package org.apache.http.impl.bootstrap;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.atomic.AtomicLong;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class ThreadFactoryImpl implements ThreadFactory {
     private final AtomicLong count;
     private final ThreadGroup group;

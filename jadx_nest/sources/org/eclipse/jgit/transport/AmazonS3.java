@@ -60,7 +60,7 @@ import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 import org.xml.sax.helpers.DefaultHandler;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class AmazonS3 {
     private static final String AWS_API_V2 = "2";
     private static final String AWS_API_V4 = "4";
@@ -312,7 +312,7 @@ public class AmazonS3 {
         throw maxAttempts(JGitText.get().s3ActionWriting, str2);
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.transport.AmazonS3$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.transport.AmazonS3$1, reason: invalid class name */
     class AnonymousClass1 extends TemporaryBuffer.LocalFile {
         private final /* synthetic */ String val$bucket;
         private final /* synthetic */ String val$key;
@@ -320,7 +320,7 @@ public class AmazonS3 {
         private final /* synthetic */ ProgressMonitor val$monitor;
         private final /* synthetic */ String val$monitorTask;
 
-        /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+        /* WARN: 'super' call moved to the top of the method (can break code semantics) */
         AnonymousClass1(File file, String str, String str2, MessageDigest messageDigest, ProgressMonitor progressMonitor, String str3) {
             super(file);
             this.val$bucket = str;
@@ -557,7 +557,7 @@ public class AmazonS3 {
         }
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     static final class KeyInfo {
         private final long lastModifiedSecs;
         private final String name;

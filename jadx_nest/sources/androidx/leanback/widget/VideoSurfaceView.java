@@ -4,7 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.SurfaceView;
 
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: loaded from: classes.dex */
 public class VideoSurfaceView extends SurfaceView {
     @Override // android.view.View
     public void setTransitionVisibility(int i) {

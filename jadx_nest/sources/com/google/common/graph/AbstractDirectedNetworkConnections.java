@@ -13,7 +13,7 @@ import java.util.Objects;
 import java.util.Set;
 import javax.annotation.CheckForNull;
 
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: loaded from: classes3.dex */
 @ElementTypesAreNonnullByDefault
 abstract class AbstractDirectedNetworkConnections<N, E> implements NetworkConnections<N, E> {
     final Map<E, N> inEdgeMap;
@@ -32,7 +32,7 @@ abstract class AbstractDirectedNetworkConnections<N, E> implements NetworkConnec
         return Sets.union(predecessors(), successors());
     }
 
-    /* JADX INFO: renamed from: com.google.common.graph.AbstractDirectedNetworkConnections$1, reason: invalid class name */
+    /* INFO: renamed from: com.google.common.graph.AbstractDirectedNetworkConnections$1, reason: invalid class name */
     class AnonymousClass1 extends AbstractSet<E> {
         AnonymousClass1() {
         }

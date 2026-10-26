@@ -9,15 +9,15 @@ import java.io.Reader;
 import kotlin.Metadata;
 import kotlin.jvm.internal.Intrinsics;
 
-/* JADX INFO: Add missing generic type declarations: [T] */
-/* JADX INFO: compiled from: FuelGson.kt */
-/* JADX INFO: loaded from: classes3.dex */
+/* INFO: Add missing generic type declarations: [T] */
+/* INFO: compiled from: FuelGson.kt */
+/* INFO: loaded from: classes3.dex */
 @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u0015\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002*\u0001\u0000\b\n\u0018\u00002\b\u0012\u0004\u0012\u00028\u00000\u0001J\u0017\u0010\u0002\u001a\u0004\u0018\u00018\u00002\u0006\u0010\u0003\u001a\u00020\u0004H\u0016¢\u0006\u0002\u0010\u0005¨\u0006\u0006¸\u0006\u0000"}, d2 = {"com/github/kittinunf/fuel/gson/FuelGsonKt$gsonDeserializer$1", "Lcom/github/kittinunf/fuel/core/ResponseDeserializable;", "deserialize", "reader", "Ljava/io/Reader;", "(Ljava/io/Reader;)Ljava/lang/Object;", "fuel-gson"}, k = 1, mv = {1, 4, 0})
 public final class FuelGsonKt$responseObject$$inlined$gsonDeserializer$3<T> implements ResponseDeserializable<T> {
     final /* synthetic */ Gson $gson;
 
-    /* JADX INFO: renamed from: com.github.kittinunf.fuel.gson.FuelGsonKt$responseObject$$inlined$gsonDeserializer$3$1, reason: invalid class name */
-    /* JADX INFO: compiled from: FuelGson.kt */
+    /* INFO: renamed from: com.github.kittinunf.fuel.gson.FuelGsonKt$responseObject$$inlined$gsonDeserializer$3$1, reason: invalid class name */
+    /* INFO: compiled from: FuelGson.kt */
     @Metadata(bv = {1, 0, 3}, d1 = {"\u0000\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000*\u0001\u0000\b\n\u0018\u00002\b\u0012\u0004\u0012\u00028\u00000\u0001¨\u0006\u0002¸\u0006\u0000"}, d2 = {"com/github/kittinunf/fuel/gson/FuelGsonKt$gsonDeserializer$1$deserialize$1", "Lcom/google/gson/reflect/TypeToken;", "fuel-gson"}, k = 1, mv = {1, 4, 0})
     public static final class AnonymousClass1 extends TypeToken<T> {
     }

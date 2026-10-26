@@ -17,7 +17,7 @@ import net.lingala.zip4j.model.ZipModel;
 import net.lingala.zip4j.progress.ProgressMonitor;
 import net.lingala.zip4j.util.FileUtils;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 abstract class AbstractModifyFileTask<T> extends AsyncZipTask<T> {
     AbstractModifyFileTask(AsyncZipTask.AsyncTaskParameters asyncTaskParameters) {
         super(asyncTaskParameters);
@@ -69,7 +69,7 @@ abstract class AbstractModifyFileTask<T> extends AsyncZipTask<T> {
         return arrayList;
     }
 
-    /* JADX INFO: renamed from: net.lingala.zip4j.tasks.AbstractModifyFileTask$1, reason: invalid class name */
+    /* INFO: renamed from: net.lingala.zip4j.tasks.AbstractModifyFileTask$1, reason: invalid class name */
     class AnonymousClass1 implements Comparator<FileHeader> {
         AnonymousClass1() {
         }

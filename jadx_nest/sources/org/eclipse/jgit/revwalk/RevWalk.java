@@ -30,7 +30,7 @@ import org.eclipse.jgit.revwalk.filter.RevFilter;
 import org.eclipse.jgit.treewalk.filter.TreeFilter;
 import org.eclipse.jgit.util.References;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class RevWalk implements Iterable<RevCommit>, AutoCloseable {
     private static final int APP_FLAGS = -256;
     private static final int MB = 1048576;
@@ -68,7 +68,7 @@ public class RevWalk implements Iterable<RevCommit>, AutoCloseable {
         RETURN_ON_FIRST_NOT_FOUND,
         EVALUATE_ALL;
 
-        /* JADX INFO: renamed from: values, reason: to resolve conflict with enum method */
+        /* INFO: renamed from: values, reason: to resolve conflict with enum method */
         public static GetMergedIntoStrategy[] valuesCustom() {
             GetMergedIntoStrategy[] getMergedIntoStrategyArrValuesCustom = values();
             int length = getMergedIntoStrategyArrValuesCustom.length;
@@ -489,7 +489,7 @@ public class RevWalk implements Iterable<RevCommit>, AutoCloseable {
         return revObject;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public RevObject parseNew(AnyObjectId anyObjectId, ObjectLoader objectLoader) throws LargeObjectException, IOException {
         RevObject revObject;
         int type = objectLoader.getType();
@@ -565,7 +565,7 @@ public class RevWalk implements Iterable<RevCommit>, AutoCloseable {
         return new AnonymousClass2(it, this.reader.open(arrayList, z));
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.revwalk.RevWalk$1, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.revwalk.RevWalk$1, reason: invalid class name */
     class AnonymousClass1 implements AsyncRevObjectQueue {
         private final /* synthetic */ Iterator val$objItr;
 
@@ -591,7 +591,7 @@ public class RevWalk implements Iterable<RevCommit>, AutoCloseable {
         }
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.revwalk.RevWalk$2, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.revwalk.RevWalk$2, reason: invalid class name */
     class AnonymousClass2 implements AsyncRevObjectQueue {
         private final /* synthetic */ AsyncObjectLoaderQueue val$lItr;
         private final /* synthetic */ Iterator val$objItr;
@@ -794,7 +794,7 @@ public class RevWalk implements Iterable<RevCommit>, AutoCloseable {
         this.shallowCommitsInitialized = false;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     @Nullable
     public RevCommit nextForIterator() {
         try {
@@ -809,7 +809,7 @@ public class RevWalk implements Iterable<RevCommit>, AutoCloseable {
         return new AnonymousClass3(nextForIterator());
     }
 
-    /* JADX INFO: renamed from: org.eclipse.jgit.revwalk.RevWalk$3, reason: invalid class name */
+    /* INFO: renamed from: org.eclipse.jgit.revwalk.RevWalk$3, reason: invalid class name */
     class AnonymousClass3 implements Iterator<RevCommit> {
         RevCommit next;
 

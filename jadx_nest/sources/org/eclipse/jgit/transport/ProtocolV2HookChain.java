@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ProtocolV2HookChain implements ProtocolV2Hook {
     private final List<? extends ProtocolV2Hook> hooks;
 

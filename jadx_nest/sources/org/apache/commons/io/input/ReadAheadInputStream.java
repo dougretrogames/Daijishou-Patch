@@ -14,7 +14,7 @@ import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.ReentrantLock;
 import org.apache.commons.io.build.AbstractStreamBuilder;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 public class ReadAheadInputStream extends FilterInputStream {
     private static final ThreadLocal<byte[]> BYTE_ARRAY_1 = ThreadLocal.withInitial(new ReadAheadInputStream$$ExternalSyntheticLambda2());
     private ByteBuffer activeBuffer;
@@ -64,14 +64,14 @@ public class ReadAheadInputStream extends FilterInputStream {
         return new Builder();
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static Thread newDaemonThread(Runnable runnable) {
         Thread thread = new Thread(runnable, "commons-io-read-ahead");
         thread.setDaemon(true);
         return thread;
     }
 
-    /* JADX INFO: Access modifiers changed from: private */
+    /* INFO: Access modifiers changed from: private */
     public static ExecutorService newExecutorService() {
         return Executors.newSingleThreadExecutor(new ReadAheadInputStream$$ExternalSyntheticLambda1());
     }
@@ -123,7 +123,7 @@ public class ReadAheadInputStream extends FilterInputStream {
         }
     }
 
-    /* JADX WARN: Bottom block not found for handler: all -> 0x003a */
+    /* WARN: Bottom block not found for handler: all -> 0x003a */
     @Override // java.io.FilterInputStream, java.io.InputStream, java.io.Closeable, java.lang.AutoCloseable
     /*
         Code decompiled incorrectly, please refer to instructions dump.
@@ -282,17 +282,17 @@ public class ReadAheadInputStream extends FilterInputStream {
         }
     }
 
-    /* JADX WARN: Failed to analyze thrown exceptions
+    /* WARN: Failed to analyze thrown exceptions
     java.util.ConcurrentModificationException
     	at java.base/java.util.ArrayList$Itr.checkForComodification(ArrayList.java:1095)
     	at java.base/java.util.ArrayList$Itr.next(ArrayList.java:1049)
-    	at jadx.core.dex.visitors.MethodThrowsVisitor.processInstructions(MethodThrowsVisitor.java:117)
-    	at jadx.core.dex.visitors.MethodThrowsVisitor.visit(MethodThrowsVisitor.java:68)
-    	at jadx.core.dex.visitors.MethodThrowsVisitor.checkInsn(MethodThrowsVisitor.java:178)
-    	at jadx.core.dex.visitors.MethodThrowsVisitor.processInstructions(MethodThrowsVisitor.java:131)
-    	at jadx.core.dex.visitors.MethodThrowsVisitor.visit(MethodThrowsVisitor.java:68)
+    	at decompiler.core.dex.visitors.MethodThrowsVisitor.processInstructions(MethodThrowsVisitor.java:117)
+    	at decompiler.core.dex.visitors.MethodThrowsVisitor.visit(MethodThrowsVisitor.java:68)
+    	at decompiler.core.dex.visitors.MethodThrowsVisitor.checkInsn(MethodThrowsVisitor.java:178)
+    	at decompiler.core.dex.visitors.MethodThrowsVisitor.processInstructions(MethodThrowsVisitor.java:131)
+    	at decompiler.core.dex.visitors.MethodThrowsVisitor.visit(MethodThrowsVisitor.java:68)
      */
-    /* JADX INFO: renamed from: lambda$readAsync$1$org-apache-commons-io-input-ReadAheadInputStream, reason: not valid java name */
+    /* INFO: renamed from: lambda$readAsync$1$org-apache-commons-io-input-ReadAheadInputStream, reason: not valid java name */
     /* synthetic */ void m5587x982106fc(byte[] bArr) {
         this.stateChangeLock.lock();
         try {

@@ -3,7 +3,7 @@ package org.apache.http.client.entity;
 import java.io.IOException;
 import java.io.InputStream;
 
-/* JADX INFO: loaded from: classes5.dex */
+/* INFO: loaded from: classes5.dex */
 class LazyDecompressingInputStream extends InputStream {
     private final InputStreamFactory inputStreamFactory;
     private final InputStream wrappedStream;

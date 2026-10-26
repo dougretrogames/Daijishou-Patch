@@ -4,8 +4,8 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.widget.EditText;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes4.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes4.dex */
 public final /* synthetic */ class EditIndexUriDialogFragment$$ExternalSyntheticLambda5 implements DialogInterface.OnShowListener {
     public final /* synthetic */ AlertDialog f$0;
     public final /* synthetic */ EditText f$1;

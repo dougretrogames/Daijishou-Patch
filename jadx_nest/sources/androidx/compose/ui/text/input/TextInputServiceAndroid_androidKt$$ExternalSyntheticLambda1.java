@@ -3,8 +3,8 @@ package androidx.compose.ui.text.input;
 import android.view.Choreographer;
 import java.util.concurrent.Executor;
 
-/* JADX INFO: compiled from: D8$$SyntheticClass */
-/* JADX INFO: loaded from: classes.dex */
+/* INFO: compiled from: D8$$SyntheticClass */
+/* INFO: loaded from: classes.dex */
 public final /* synthetic */ class TextInputServiceAndroid_androidKt$$ExternalSyntheticLambda1 implements Executor {
     public final /* synthetic */ Choreographer f$0;
 
