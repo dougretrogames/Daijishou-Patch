@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.SortedSet;
@@ -20,28 +21,31 @@ import kotlin.DeprecationLevel;
 import kotlin.ExceptionsKt;
 import kotlin.Metadata;
 import kotlin.ReplaceWith;
+import kotlin.Unit;
 import kotlin.collections.CollectionsKt;
 import kotlin.collections.SetsKt;
+import kotlin.comparisons.ComparisonsKt;
 import kotlin.jvm.JvmStatic;
+import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.DefaultConstructorMarker;
 import kotlin.jvm.internal.Intrinsics;
 import kotlinx.serialization.KSerializer;
 import kotlinx.serialization.Serializable;
+import kotlinx.serialization.StringFormat;
 import kotlinx.serialization.descriptors.SerialDescriptor;
 import kotlinx.serialization.encoding.CompositeEncoder;
 import kotlinx.serialization.internal.ArrayListSerializer;
 import kotlinx.serialization.internal.PluginExceptionsKt;
 import kotlinx.serialization.internal.SerializationConstructorMarker;
 import kotlinx.serialization.json.Json;
+import kotlinx.serialization.json.JsonBuilder;
 import kotlinx.serialization.json.JsonKt;
-import org.apache.commons.collections4.CollectionUtils;
-import org.eclipse.jgit.lib.ConfigConstants;
-import org.eclipse.jgit.lib.Constants;
 
-/* INFO: compiled from: Logger.kt */
-/* INFO: loaded from: classes4.dex */
-@Metadata(d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010!\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\n\n\u0002\u0010\b\n\u0002\b\n\u0018\u0000 02\u00020\u0001:\u000201B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u000e\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\fJ\u0006\u0010\u001f\u001a\u00020\u001dJ\u0016\u0010 \u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020\fJ\u0016\u0010#\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020\fJ\u0016\u0010$\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020\fJ\u000e\u0010%\u001a\u00020\u001d2\u0006\u0010\"\u001a\u00020\fJ \u0010&\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\u00012\u0006\u0010'\u001a\u00020(2\u0006\u0010\"\u001a\u00020\fH\u0002J\u0010\u0010)\u001a\u00020\f2\u0006\u0010\u001e\u001a\u00020\fH\u0002J\u0018\u0010*\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\f2\b\b\u0002\u0010+\u001a\u00020(J\u0006\u0010,\u001a\u00020\u001dJ\u0016\u0010-\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020\fJ\u0018\u0010.\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\f2\u0006\u0010/\u001a\u00020\fH\u0002R\u0016\u0010\u0005\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0017\u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000b¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u0019\u0010\u0011\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u00128F¢\u0006\u0006\u001a\u0004\b\u0013\u0010\u0014R\u0017\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00070\u0016¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u000e\u0010\u0019\u001a\u00020\u001aX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000¨\u00062"}, d2 = {"Lcom/magneticchen/daijishou/logger/Logger;", "", "application", "Landroid/app/Service;", "(Landroid/app/Service;)V", "_latestLogRecordLiveData", "Landroidx/lifecycle/MutableLiveData;", "Lcom/magneticchen/daijishou/logger/Logger$LogRecord;", "getApplication", "()Landroid/app/Service;", "components", "Ljava/util/SortedSet;", "", "getComponents", "()Ljava/util/SortedSet;", "json", "Lkotlinx/serialization/json/Json;", "latestLogRecordLiveData", "Landroidx/lifecycle/LiveData;", "getLatestLogRecordLiveData", "()Landroidx/lifecycle/LiveData;", Constants.LOGS, "", "getLogs", "()Ljava/util/List;", "previousTimestamp", "", "weakJson", "appendLogsFromFile", "", "filename", "clear", "debug", "fromComponent", "message", "error", "info", "logger", "printLog", "LoggerCode", "", "readFromFile", "saveLogsToFile", "length", "trim", "warn", "writeToFile", "data", "Companion", "LogRecord", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+/* JADX INFO: compiled from: Logger.kt */
+/* JADX INFO: loaded from: C:\Users\dfukuoka\Downloads\Daijishou\Daijishou\build_tmp\dex181_classes4.dex */
+@Metadata(d1 = {"\u0000X\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010!\n\u0002\b\u0003\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0002\b\n\n\u0002\u0010\b\n\u0002\b\t\u0018\u0000 /2\u00020\u0001:\u0002/0B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u000e\u0010\u001c\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\fJ\u0006\u0010\u001f\u001a\u00020\u001dJ\u0016\u0010 \u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020\fJ\u0016\u0010#\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020\fJ\u0016\u0010$\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020\fJ\u000e\u0010%\u001a\u00020\u001d2\u0006\u0010\"\u001a\u00020\fJ \u0010&\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\u00012\u0006\u0010'\u001a\u00020(2\u0006\u0010\"\u001a\u00020\fH\u0002J\u0010\u0010)\u001a\u00020\f2\u0006\u0010\u001e\u001a\u00020\fH\u0002J\u0018\u0010*\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\f2\b\b\u0002\u0010+\u001a\u00020(J\u0016\u0010,\u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\u00012\u0006\u0010\"\u001a\u00020\fJ\u0018\u0010-\u001a\u00020\u001d2\u0006\u0010\u001e\u001a\u00020\f2\u0006\u0010.\u001a\u00020\fH\u0002R\u0016\u0010\u0005\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u0006X\u0082\u0004¢\u0006\u0002\n\u0000R\u0011\u0010\u0002\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\b\u0010\tR\u0017\u0010\n\u001a\b\u0012\u0004\u0012\u00020\f0\u000b¢\u0006\b\n\u0000\u001a\u0004\b\r\u0010\u000eR\u000e\u0010\u000f\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000R\u0019\u0010\u0011\u001a\n\u0012\u0006\u0012\u0004\u0018\u00010\u00070\u00128F¢\u0006\u0006\u001a\u0004\b\u0013\u0010\u0014R\u0017\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u00070\u0016¢\u0006\b\n\u0000\u001a\u0004\b\u0017\u0010\u0018R\u000e\u0010\u0019\u001a\u00020\u001aX\u0082\u000e¢\u0006\u0002\n\u0000R\u000e\u0010\u001b\u001a\u00020\u0010X\u0082\u0004¢\u0006\u0002\n\u0000¨\u00061"}, d2 = {"Lcom/magneticchen/daijishou/logger/Logger;", "", "application", "Landroid/app/Service;", "(Landroid/app/Service;)V", "_latestLogRecordLiveData", "Landroidx/lifecycle/MutableLiveData;", "Lcom/magneticchen/daijishou/logger/Logger$LogRecord;", "getApplication", "()Landroid/app/Service;", "components", "Ljava/util/SortedSet;", "", "getComponents", "()Ljava/util/SortedSet;", "json", "Lkotlinx/serialization/json/Json;", "latestLogRecordLiveData", "Landroidx/lifecycle/LiveData;", "getLatestLogRecordLiveData", "()Landroidx/lifecycle/LiveData;", "logs", "", "getLogs", "()Ljava/util/List;", "previousTimestamp", "", "weakJson", "appendLogsFromFile", "", "filename", "clear", "debug", "fromComponent", "message", "error", "info", "logger", "printLog", "LoggerCode", "", "readFromFile", "saveLogsToFile", "length", "warn", "writeToFile", "data", "Companion", "LogRecord", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
 public final class Logger {
+    public static final Companion Companion = new Companion(null);
     public static final int DEBUG_LOG_RECORD_TYPE = 1;
     public static final int ERROR_LOG_RECORD_TYPE = 3;
     public static final int INFO_LOG_RECORD_TYPE = 0;
@@ -57,31 +61,62 @@ public final class Logger {
     private long previousTimestamp;
     private final Json weakJson;
 
-    public final void trim() {
+    /* JADX INFO: compiled from: Logger.kt */
+    @Metadata(d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\nX\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u000b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006\f"}, d2 = {"Lcom/magneticchen/daijishou/logger/Logger$Companion;", "", "()V", "DEBUG_LOG_RECORD_TYPE", "", "ERROR_LOG_RECORD_TYPE", "INFO_LOG_RECORD_TYPE", "LOGGER_LOG_RECORD_TYPE", "MESSAGE_MAX_SIZE", "TAG", "", "WARN_LOG_RECORD_TYPE", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
     }
 
     public Logger(Service application) {
         Intrinsics.checkNotNullParameter(application, "application");
         this.application = application;
         this.previousTimestamp = System.currentTimeMillis();
-        this.weakJson = JsonKt.Json$default(null, Logger$weakJson$1.INSTANCE, 1, null);
-        this.json = JsonKt.Json$default(null, Logger$json$1.INSTANCE, 1, null);
+        this.weakJson = JsonKt.Json$default((Json) null, new Function1<JsonBuilder, Unit>() { // from class: com.magneticchen.daijishou.logger.Logger$weakJson$1
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Unit invoke(JsonBuilder jsonBuilder) {
+                invoke2(jsonBuilder);
+                return Unit.INSTANCE;
+            }
+
+            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            public final void invoke2(JsonBuilder Json) {
+                Intrinsics.checkNotNullParameter(Json, "$this$Json");
+                Json.setIgnoreUnknownKeys(true);
+            }
+        }, 1, (Object) null);
+        this.json = JsonKt.Json$default((Json) null, new Function1<JsonBuilder, Unit>() { // from class: com.magneticchen.daijishou.logger.Logger$json$1
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Unit invoke(JsonBuilder jsonBuilder) {
+                invoke2(jsonBuilder);
+                return Unit.INSTANCE;
+            }
+
+            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            public final void invoke2(JsonBuilder Json) {
+                Intrinsics.checkNotNullParameter(Json, "$this$Json");
+                Json.setPrettyPrint(true);
+                Json.setEncodeDefaults(true);
+            }
+        }, 1, (Object) null);
         this.logs = new ArrayList();
         this.components = SetsKt.sortedSetOf(new String[0]);
-        this._latestLogRecordLiveData = new MutableLiveData<>(null);
+        this._latestLogRecordLiveData = new MutableLiveData<LogRecord>((LogRecord) null);
     }
 
     public final Service getApplication() {
         return this.application;
     }
 
-    /* INFO: compiled from: Logger.kt */
-    @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 (2\u00020\u0001:\u0002'(B=\b\u0011\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0002\u0010\fB+\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\b¢\u0006\u0002\u0010\rJ\t\u0010\u0015\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0017\u001a\u00020\bHÆ\u0003J\t\u0010\u0018\u001a\u00020\bHÆ\u0003J1\u0010\u0019\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\bHÆ\u0001J\u0013\u0010\u001a\u001a\u00020\u001b2\b\u0010\u001c\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001d\u001a\u00020\u0003HÖ\u0001J\t\u0010\u001e\u001a\u00020\bHÖ\u0001J&\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u00002\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%HÁ\u0001¢\u0006\u0002\b&R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\t\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000fR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014¨\u0006)"}, d2 = {"Lcom/magneticchen/daijishou/logger/Logger$LogRecord;", "", "seen1", "", "timestamp", "", "type", "fromComponent", "", "message", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IJILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(JILjava/lang/String;Ljava/lang/String;)V", "getFromComponent", "()Ljava/lang/String;", "getMessage", "getTimestamp", "()J", "getType", "()I", "component1", "component2", "component3", "component4", ConfigConstants.CONFIG_RENAMELIMIT_COPY, "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$app_release", "$serializer", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+    /* JADX INFO: compiled from: Logger.kt */
+    @Metadata(d1 = {"\u0000F\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\b\n\u0000\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0004\n\u0002\u0010\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0004\b\u0087\b\u0018\u0000 (2\u00020\u0001:\u0002'(B=\b\u0011\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\b\u0010\u0007\u001a\u0004\u0018\u00010\b\u0012\b\u0010\t\u001a\u0004\u0018\u00010\b\u0012\b\u0010\n\u001a\u0004\u0018\u00010\u000b¢\u0006\u0002\u0010\fB+\u0012\b\b\u0002\u0010\u0004\u001a\u00020\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0003\u0012\b\b\u0002\u0010\u0007\u001a\u00020\b\u0012\u0006\u0010\t\u001a\u00020\b¢\u0006\u0002\u0010\rJ\t\u0010\u0015\u001a\u00020\u0005HÆ\u0003J\t\u0010\u0016\u001a\u00020\u0003HÆ\u0003J\t\u0010\u0017\u001a\u00020\bHÆ\u0003J\t\u0010\u0018\u001a\u00020\bHÆ\u0003J1\u0010\u0019\u001a\u00020\u00002\b\b\u0002\u0010\u0004\u001a\u00020\u00052\b\b\u0002\u0010\u0006\u001a\u00020\u00032\b\b\u0002\u0010\u0007\u001a\u00020\b2\b\b\u0002\u0010\t\u001a\u00020\bHÆ\u0001J\u0013\u0010\u001a\u001a\u00020\u001b2\b\u0010\u001c\u001a\u0004\u0018\u00010\u0001HÖ\u0003J\t\u0010\u001d\u001a\u00020\u0003HÖ\u0001J\t\u0010\u001e\u001a\u00020\bHÖ\u0001J&\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020\u00002\u0006\u0010\"\u001a\u00020#2\u0006\u0010$\u001a\u00020%HÁ\u0001¢\u0006\u0002\b&R\u0011\u0010\u0007\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\t\u001a\u00020\b¢\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u000fR\u0011\u0010\u0004\u001a\u00020\u0005¢\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0011\u0010\u0006\u001a\u00020\u0003¢\u0006\b\n\u0000\u001a\u0004\b\u0013\u0010\u0014¨\u0006)"}, d2 = {"Lcom/magneticchen/daijishou/logger/Logger$LogRecord;", "", "seen1", "", "timestamp", "", "type", "fromComponent", "", "message", "serializationConstructorMarker", "Lkotlinx/serialization/internal/SerializationConstructorMarker;", "(IJILjava/lang/String;Ljava/lang/String;Lkotlinx/serialization/internal/SerializationConstructorMarker;)V", "(JILjava/lang/String;Ljava/lang/String;)V", "getFromComponent", "()Ljava/lang/String;", "getMessage", "getTimestamp", "()J", "getType", "()I", "component1", "component2", "component3", "component4", "copy", "equals", "", "other", "hashCode", "toString", "write$Self", "", "self", "output", "Lkotlinx/serialization/encoding/CompositeEncoder;", "serialDesc", "Lkotlinx/serialization/descriptors/SerialDescriptor;", "write$Self$app_release", "$serializer", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
     @Serializable
-    public static final /* data */ class LogRecord {
-
-        /* INFO: renamed from: Companion, reason: from kotlin metadata */
-        public static final Companion INSTANCE = new Companion(null);
+    public static final class LogRecord {
+        public static final Companion Companion = new Companion(null);
         private final String fromComponent;
         private final String message;
         private final long timestamp;
@@ -106,40 +141,36 @@ public final class Logger {
             return logRecord.copy(j2, i3, str3, str2);
         }
 
-        /* INFO: renamed from: component1, reason: from getter */
-        public final long getTimestamp() {
+        public final long component1() {
             return this.timestamp;
         }
 
-        /* INFO: renamed from: component2, reason: from getter */
-        public final int getType() {
+        public final int component2() {
             return this.type;
         }
 
-        /* INFO: renamed from: component3, reason: from getter */
-        public final String getFromComponent() {
+        public final String component3() {
             return this.fromComponent;
         }
 
-        /* INFO: renamed from: component4, reason: from getter */
-        public final String getMessage() {
+        public final String component4() {
             return this.message;
         }
 
-        public final LogRecord copy(long timestamp, int type, String fromComponent, String message) {
+        public final LogRecord copy(long j, int i, String fromComponent, String message) {
             Intrinsics.checkNotNullParameter(fromComponent, "fromComponent");
             Intrinsics.checkNotNullParameter(message, "message");
-            return new LogRecord(timestamp, type, fromComponent, message);
+            return new LogRecord(j, i, fromComponent, message);
         }
 
-        public boolean equals(Object other) {
-            if (this == other) {
+        public boolean equals(Object obj) {
+            if (this == obj) {
                 return true;
             }
-            if (!(other instanceof LogRecord)) {
+            if (!(obj instanceof LogRecord)) {
                 return false;
             }
-            LogRecord logRecord = (LogRecord) other;
+            LogRecord logRecord = (LogRecord) obj;
             return this.timestamp == logRecord.timestamp && this.type == logRecord.type && Intrinsics.areEqual(this.fromComponent, logRecord.fromComponent) && Intrinsics.areEqual(this.message, logRecord.message);
         }
 
@@ -151,7 +182,7 @@ public final class Logger {
             return "LogRecord(timestamp=" + this.timestamp + ", type=" + this.type + ", fromComponent=" + this.fromComponent + ", message=" + this.message + ")";
         }
 
-        /* INFO: compiled from: Logger.kt */
+        /* JADX INFO: compiled from: Logger.kt */
         @Metadata(d1 = {"\u0000\u0016\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u000f\u0010\u0003\u001a\b\u0012\u0004\u0012\u00020\u00050\u0004HÆ\u0001¨\u0006\u0006"}, d2 = {"Lcom/magneticchen/daijishou/logger/Logger$LogRecord$Companion;", "", "()V", "serializer", "Lkotlinx/serialization/KSerializer;", "Lcom/magneticchen/daijishou/logger/Logger$LogRecord;", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
         public static final class Companion {
             public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
@@ -195,26 +226,38 @@ public final class Logger {
         }
 
         @JvmStatic
-        public static final /* synthetic */ void write$Self$app_release(LogRecord self, CompositeEncoder output, SerialDescriptor serialDesc) {
-            if (output.shouldEncodeElementDefault(serialDesc, 0) || self.timestamp != 0) {
-                output.encodeLongElement(serialDesc, 0, self.timestamp);
+        public static final /* synthetic */ void write$Self$app_release(LogRecord logRecord, CompositeEncoder compositeEncoder, SerialDescriptor serialDescriptor) {
+            if (compositeEncoder.shouldEncodeElementDefault(serialDescriptor, 0) || logRecord.timestamp != 0) {
+                compositeEncoder.encodeLongElement(serialDescriptor, 0, logRecord.timestamp);
             }
-            if (output.shouldEncodeElementDefault(serialDesc, 1) || self.type != -1) {
-                output.encodeIntElement(serialDesc, 1, self.type);
+            if (compositeEncoder.shouldEncodeElementDefault(serialDescriptor, 1) || logRecord.type != -1) {
+                compositeEncoder.encodeIntElement(serialDescriptor, 1, logRecord.type);
             }
-            if (output.shouldEncodeElementDefault(serialDesc, 2) || !Intrinsics.areEqual(self.fromComponent, "Unknown")) {
-                output.encodeStringElement(serialDesc, 2, self.fromComponent);
+            if (compositeEncoder.shouldEncodeElementDefault(serialDescriptor, 2) || !Intrinsics.areEqual(logRecord.fromComponent, "Unknown")) {
+                compositeEncoder.encodeStringElement(serialDescriptor, 2, logRecord.fromComponent);
             }
-            output.encodeStringElement(serialDesc, 3, self.message);
+            compositeEncoder.encodeStringElement(serialDescriptor, 3, logRecord.message);
         }
 
+        public final long getTimestamp() {
+            return this.timestamp;
+        }
 
+        public final int getType() {
+            return this.type;
+        }
 
         public /* synthetic */ LogRecord(long j, int i, String str, String str2, int i2, DefaultConstructorMarker defaultConstructorMarker) {
             this((i2 & 1) != 0 ? 0L : j, (i2 & 2) != 0 ? -1 : i, (i2 & 4) != 0 ? "Unknown" : str, str2);
         }
 
+        public final String getFromComponent() {
+            return this.fromComponent;
+        }
 
+        public final String getMessage() {
+            return this.message;
+        }
     }
 
     public final List<LogRecord> getLogs() {
@@ -229,23 +272,23 @@ public final class Logger {
         return this._latestLogRecordLiveData;
     }
 
-    private final void writeToFile(String filename, String data) {
+    private final void writeToFile(String str, String str2) {
         Context applicationContext = this.application.getApplicationContext();
         Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
         try {
-            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(applicationContext.openFileOutput(filename, 0));
-            outputStreamWriter.write(data);
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(applicationContext.openFileOutput(str, 0));
+            outputStreamWriter.write(str2);
             outputStreamWriter.close();
         } catch (IOException e) {
             throw new IllegalStateException(("File write failed: " + e).toString());
         }
     }
 
-    private final String readFromFile(String filename) {
+    private final String readFromFile(String str) {
         Context applicationContext = this.application.getApplicationContext();
         Intrinsics.checkNotNullExpressionValue(applicationContext, "getApplicationContext(...)");
         try {
-            FileInputStream fileInputStreamOpenFileInput = applicationContext.openFileInput(filename);
+            FileInputStream fileInputStreamOpenFileInput = applicationContext.openFileInput(str);
             Intrinsics.checkNotNullExpressionValue(fileInputStreamOpenFileInput, "openFileInput(...)");
             FileInputStream fileInputStream = fileInputStreamOpenFileInput;
             BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fileInputStream));
@@ -268,9 +311,9 @@ public final class Logger {
         }
     }
 
-    private final void printLog(Object fromComponent, int LoggerCode, String message) {
-        String str;
-        String simpleName = fromComponent instanceof String ? (String) fromComponent : fromComponent.getClass().getSimpleName();
+    private final void printLog(Object obj, int i, String str) {
+        String str2;
+        String simpleName = obj instanceof String ? (String) obj : obj.getClass().getSimpleName();
         long jCurrentTimeMillis = System.currentTimeMillis();
         long j = this.previousTimestamp;
         if (jCurrentTimeMillis <= j) {
@@ -279,34 +322,34 @@ public final class Logger {
         long j2 = jCurrentTimeMillis;
         this.previousTimestamp = j2;
         Intrinsics.checkNotNull(simpleName);
-        if (message.length() > 4096) {
-            String strSubstring = message.substring(0, 4093);
+        if (str.length() > 4096) {
+            String strSubstring = str.substring(0, 4093);
             Intrinsics.checkNotNullExpressionValue(strSubstring, "substring(...)");
-            str = strSubstring + "...";
+            str2 = strSubstring + "...";
         } else {
-            str = message;
+            str2 = str;
         }
-        LogRecord logRecord = new LogRecord(j2, LoggerCode, simpleName, str);
+        LogRecord logRecord = new LogRecord(j2, i, simpleName, str2);
         this.logs.add(logRecord);
         this.components.add(simpleName);
         this._latestLogRecordLiveData.postValue(logRecord);
-        if (LoggerCode == -1) {
-            Log.i(TAG, CollectionUtils.DEFAULT_TOSTRING_PREFIX + simpleName + "] " + message);
+        if (i == -1) {
+            Log.i(TAG, "[" + simpleName + "] " + str);
             return;
         }
-        if (LoggerCode == 0) {
-            Log.i(TAG, CollectionUtils.DEFAULT_TOSTRING_PREFIX + simpleName + "] " + message);
+        if (i == 0) {
+            Log.i(TAG, "[" + simpleName + "] " + str);
             return;
         }
-        if (LoggerCode == 1) {
-            Log.d(TAG, CollectionUtils.DEFAULT_TOSTRING_PREFIX + simpleName + "] " + message);
-        } else if (LoggerCode == 2) {
-            Log.w(TAG, CollectionUtils.DEFAULT_TOSTRING_PREFIX + simpleName + "] " + message);
+        if (i == 1) {
+            Log.d(TAG, "[" + simpleName + "] " + str);
+        } else if (i == 2) {
+            Log.w(TAG, "[" + simpleName + "] " + str);
         } else {
-            if (LoggerCode != 3) {
+            if (i != 3) {
                 return;
             }
-            Log.e(TAG, CollectionUtils.DEFAULT_TOSTRING_PREFIX + simpleName + "] " + message);
+            Log.e(TAG, "[" + simpleName + "] " + str);
         }
     }
 
@@ -317,7 +360,7 @@ public final class Logger {
             Json json = this.weakJson;
             String fromFile = readFromFile(filename);
             json.getSerializersModule();
-            List list = (List) json.decodeFromString(new ArrayListSerializer(LogRecord.INSTANCE.serializer()), fromFile);
+            List list = (List) json.decodeFromString(new ArrayListSerializer(LogRecord.Companion.serializer()), fromFile);
             this.logs.addAll(list);
             SortedSet<String> sortedSet = this.components;
             List list2 = list;
@@ -329,7 +372,13 @@ public final class Logger {
             sortedSet.addAll(CollectionsKt.toSet(arrayList));
             List<LogRecord> list3 = this.logs;
             if (list3.size() > 1) {
-                CollectionsKt.sortWith(list3, new Logger$appendLogsFromFile$$inlined$sortBy$1());
+                CollectionsKt.sortWith(list3, new Comparator() { // from class: com.magneticchen.daijishou.logger.Logger$appendLogsFromFile$$inlined$sortBy$1
+                    /* JADX WARN: Multi-variable type inference failed */
+                    @Override // java.util.Comparator
+                    public final int compare(Object t, Object t2) {
+                        return ComparisonsKt.compareValues(Long.valueOf(((Logger.LogRecord) t).getTimestamp()), Long.valueOf(((Logger.LogRecord) t2).getTimestamp()));
+                    }
+                });
             }
             MutableLiveData<LogRecord> mutableLiveData = this._latestLogRecordLiveData;
             if (this.logs.isEmpty()) {
@@ -352,13 +401,13 @@ public final class Logger {
         logger.saveLogsToFile(str, i);
     }
 
-    public final void saveLogsToFile(String filename, int length) {
+    public final void saveLogsToFile(String filename, int i) {
         Intrinsics.checkNotNullParameter(filename, "filename");
         try {
-            Json json = this.json;
-            List listTakeLast = CollectionsKt.takeLast(this.logs, length);
-            json.getSerializersModule();
-            writeToFile(filename, json.encodeToString(new ArrayListSerializer(LogRecord.INSTANCE.serializer()), listTakeLast));
+            StringFormat stringFormat = this.json;
+            List listTakeLast = CollectionsKt.takeLast(this.logs, i);
+            stringFormat.getSerializersModule();
+            writeToFile(filename, stringFormat.encodeToString(new ArrayListSerializer(LogRecord.Companion.serializer()), listTakeLast));
         } catch (Exception e) {
             logger("Save logs to file. error.");
             error(this, ExceptionsKt.stackTraceToString(e));
@@ -397,7 +446,7 @@ public final class Logger {
     public final void clear() {
         this.logs.clear();
         this.components.clear();
-        this._latestLogRecordLiveData.postValue(null);
+        this._latestLogRecordLiveData.postValue((LogRecord) null);
         logger("Logger cleared.");
     }
 }

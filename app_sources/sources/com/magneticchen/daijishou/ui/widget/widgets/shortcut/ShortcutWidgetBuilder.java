@@ -1,0 +1,142 @@
+package com.magneticchen.daijishou.ui.widget.widgets.shortcut;
+
+import android.graphics.drawable.Drawable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import com.magneticchen.daijishou.DaijishouApplication;
+import com.magneticchen.daijishou.R;
+import com.magneticchen.daijishou.data.db.entity.WidgetId;
+import com.magneticchen.daijishou.ui.fragments.dialog.ListSelectDialogFragment;
+import com.magneticchen.daijishou.ui.widget.abstract_widget_classes.WidgetBuilder;
+import com.magneticchen.daijishou.ui.widget.abstract_widget_classes.WidgetInstance;
+import com.magneticchen.daijishou.ui.widget.abstract_widget_classes.WidgetViewModel;
+import java.util.List;
+import kotlin.Metadata;
+import kotlin.Unit;
+import kotlin.collections.CollectionsKt;
+import kotlin.jvm.functions.Function0;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+import kotlin.jvm.internal.Intrinsics;
+
+/* JADX INFO: compiled from: ShortcutWidgetBuilder.kt */
+/* JADX INFO: loaded from: C:\Users\dfukuoka\Downloads\Daijishou\Daijishou\build_tmp\dex181_classes4.dex */
+@Metadata(d1 = {"\u0000j\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010 \n\u0002\u0010\t\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u0000 *2\u00020\u0001:\u0001*B\r\u0012\u0006\u0010\u0002\u001a\u00020\u0003¢\u0006\u0002\u0010\u0004J\u001a\u0010\u001b\u001a\u00020\u001c2\b\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\u0006\u0010\u001f\u001a\u00020\u0013H\u0016J.\u0010 \u001a\u00020!2\b\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\u0006\u0010\u001f\u001a\u00020\u00132\u0012\u0010\"\u001a\u000e\u0012\u0004\u0012\u00020$\u0012\u0004\u0012\u00020!0#H\u0016J\b\u0010%\u001a\u00020!H\u0016J2\u0010&\u001a\u00020!2\b\u0010\u001d\u001a\u0004\u0018\u00010\u001e2\b\u0010'\u001a\u0004\u0018\u00010(2\u0014\u0010)\u001a\u0010\u0012\u0006\u0012\u0004\u0018\u00010\u001c\u0012\u0004\u0012\u00020$0#H\u0016R\u0014\u0010\u0005\u001a\u00020\u0006X\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0007\u0010\bR\u0014\u0010\t\u001a\u00020\nX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000b\u0010\fR\u0014\u0010\r\u001a\u00020\u000eX\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00130\u0012X\u0082\u0004¢\u0006\u0002\n\u0000R\u0014\u0010\u0014\u001a\u00020\u0006X\u0096D¢\u0006\b\n\u0000\u001a\u0004\b\u0015\u0010\bR\u001a\u0010\u0016\u001a\b\u0012\u0004\u0012\u00020\u00180\u0017X\u0096\u0004¢\u0006\b\n\u0000\u001a\u0004\b\u0019\u0010\u001a¨\u0006+"}, d2 = {"Lcom/magneticchen/daijishou/ui/widget/widgets/shortcut/ShortcutWidgetBuilder;", "Lcom/magneticchen/daijishou/ui/widget/abstract_widget_classes/WidgetBuilder;", "application", "Lcom/magneticchen/daijishou/DaijishouApplication;", "(Lcom/magneticchen/daijishou/DaijishouApplication;)V", "widgetDescriptionStringId", "", "getWidgetDescriptionStringId", "()I", "widgetIcon", "Landroid/graphics/drawable/Drawable;", "getWidgetIcon", "()Landroid/graphics/drawable/Drawable;", "widgetId", "", "getWidgetId", "()Ljava/lang/String;", "widgetInstanceIdList", "", "", "widgetNameStringId", "getWidgetNameStringId", "widgetViewModelClass", "Ljava/lang/Class;", "Lcom/magneticchen/daijishou/ui/widget/abstract_widget_classes/WidgetViewModel;", "getWidgetViewModelClass", "()Ljava/lang/Class;", "acquireWidgetInstance", "Lcom/magneticchen/daijishou/ui/widget/abstract_widget_classes/WidgetInstance;", "activity", "Landroidx/appcompat/app/AppCompatActivity;", "widgetInstanceId", "requestWidgetInstanceRemoval", "", "callback", "Lkotlin/Function1;", "", "reset", "startWidgetInstanceCreation", "data", "", "submitWidgetInstance", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+public final class ShortcutWidgetBuilder extends WidgetBuilder {
+    public static final Companion Companion = new Companion(null);
+    public static final long SHORTCUT_APPS_PAGE_ID = 4;
+    public static final long SHORTCUT_CONTINUE_PAGE_ID = 2;
+    public static final long SHORTCUT_HIGHLIGHT_PAGE_ID = 3;
+    public static final long SHORTCUT_PLATFORMS_PAGE_ID = 1;
+    public static final long SHORTCUT_SETTINGS_PAGE_ID = 5;
+    private final int widgetDescriptionStringId;
+    private final Drawable widgetIcon;
+    private final String widgetId;
+    private final List<Long> widgetInstanceIdList;
+    private final int widgetNameStringId;
+    private final Class<WidgetViewModel> widgetViewModelClass;
+
+    @Override // com.magneticchen.daijishou.ui.widget.abstract_widget_classes.WidgetBuilder
+    public void reset() {
+    }
+
+    /* JADX INFO: compiled from: ShortcutWidgetBuilder.kt */
+    @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0005\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0086T¢\u0006\u0002\n\u0000¨\u0006\t"}, d2 = {"Lcom/magneticchen/daijishou/ui/widget/widgets/shortcut/ShortcutWidgetBuilder$Companion;", "", "()V", "SHORTCUT_APPS_PAGE_ID", "", "SHORTCUT_CONTINUE_PAGE_ID", "SHORTCUT_HIGHLIGHT_PAGE_ID", "SHORTCUT_PLATFORMS_PAGE_ID", "SHORTCUT_SETTINGS_PAGE_ID", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+    }
+
+    /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+    public ShortcutWidgetBuilder(DaijishouApplication application) {
+        super(application);
+        Intrinsics.checkNotNullParameter(application, "application");
+        Drawable drawable = ContextCompat.getDrawable(application.getApplicationContext(), R.drawable.ic_dice);
+        Intrinsics.checkNotNull(drawable);
+        this.widgetIcon = drawable;
+        this.widgetNameStringId = R.string.shortcut_widget_name;
+        this.widgetDescriptionStringId = R.string.shortcut_widget_description;
+        this.widgetId = WidgetId.SHORTCUT.getId();
+        this.widgetViewModelClass = ShortcutWidgetViewModel.class;
+        this.widgetInstanceIdList = CollectionsKt.listOf((Object[]) new Long[]{1L, 2L, 3L, 4L, 5L});
+    }
+
+    @Override // com.magneticchen.daijishou.ui.widget.abstract_widget_classes.WidgetBuilder
+    public Drawable getWidgetIcon() {
+        return this.widgetIcon;
+    }
+
+    @Override // com.magneticchen.daijishou.ui.widget.abstract_widget_classes.WidgetBuilder
+    public int getWidgetNameStringId() {
+        return this.widgetNameStringId;
+    }
+
+    @Override // com.magneticchen.daijishou.ui.widget.abstract_widget_classes.WidgetBuilder
+    public int getWidgetDescriptionStringId() {
+        return this.widgetDescriptionStringId;
+    }
+
+    @Override // com.magneticchen.daijishou.ui.widget.abstract_widget_classes.WidgetBuilder
+    public String getWidgetId() {
+        return this.widgetId;
+    }
+
+    @Override // com.magneticchen.daijishou.ui.widget.abstract_widget_classes.WidgetBuilder
+    public Class<WidgetViewModel> getWidgetViewModelClass() {
+        return this.widgetViewModelClass;
+    }
+
+    @Override // com.magneticchen.daijishou.ui.widget.abstract_widget_classes.WidgetBuilder
+    public void startWidgetInstanceCreation(AppCompatActivity appCompatActivity, Object obj, final Function1<? super WidgetInstance, Boolean> submitWidgetInstance) {
+        Intrinsics.checkNotNullParameter(submitWidgetInstance, "submitWidgetInstance");
+        ListSelectDialogFragment onCancelListener = ListSelectDialogFragment.Companion.newInstance$default(ListSelectDialogFragment.Companion, "Shortcut of", CollectionsKt.arrayListOf("Platforms page", "Continue page", "Highlight page", "Apps page", "Settings page"), null, true, 4, null).setOnSelectListener(new Function1<Integer, Unit>() { // from class: com.magneticchen.daijishou.ui.widget.widgets.shortcut.ShortcutWidgetBuilder.startWidgetInstanceCreation.1
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* JADX WARN: Multi-variable type inference failed */
+            
+
+            @Override // kotlin.jvm.functions.Function1
+            public /* bridge */ /* synthetic */ Unit invoke(Integer num) {
+                invoke(num.intValue());
+                return Unit.INSTANCE;
+            }
+
+            public final void invoke(int i) {
+                Function1<WidgetInstance, Boolean> function1 = submitWidgetInstance;
+                ShortcutWidgetBuilder shortcutWidgetBuilder = this;
+                function1.invoke(new ShortcutWidgetInstance(shortcutWidgetBuilder, ((Number) shortcutWidgetBuilder.widgetInstanceIdList.get(i)).longValue()));
+            }
+        }).setOnCancelListener(new Function0<Unit>() { // from class: com.magneticchen.daijishou.ui.widget.widgets.shortcut.ShortcutWidgetBuilder.startWidgetInstanceCreation.2
+            /* JADX WARN: 'super' call moved to the top of the method (can break code semantics) */
+            /* JADX WARN: Multi-variable type inference failed */
+            
+
+            @Override // kotlin.jvm.functions.Function0
+            public /* bridge */ /* synthetic */ Unit invoke() {
+                invoke2();
+                return Unit.INSTANCE;
+            }
+
+            /* JADX INFO: renamed from: invoke, reason: avoid collision after fix types in other method */
+            public final void invoke2() {
+                submitWidgetInstance.invoke(null);
+            }
+        });
+        Intrinsics.checkNotNull(appCompatActivity);
+        onCancelListener.show(appCompatActivity.getSupportFragmentManager(), "shortcut_widget_create");
+    }
+
+    @Override // com.magneticchen.daijishou.ui.widget.abstract_widget_classes.WidgetBuilder
+    public WidgetInstance acquireWidgetInstance(AppCompatActivity appCompatActivity, long j) {
+        return new ShortcutWidgetInstance(this, j);
+    }
+
+    @Override // com.magneticchen.daijishou.ui.widget.abstract_widget_classes.WidgetBuilder
+    public void requestWidgetInstanceRemoval(AppCompatActivity appCompatActivity, long j, Function1<? super Boolean, Unit> callback) {
+        Intrinsics.checkNotNullParameter(callback, "callback");
+        callback.invoke(true);
+    }
+}

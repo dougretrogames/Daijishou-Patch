@@ -7,8 +7,8 @@ import kotlin.jvm.functions.Function1;
 import kotlin.jvm.internal.FunctionAdapter;
 import kotlin.jvm.internal.Intrinsics;
 
-/* INFO: compiled from: DaijishouApplication.kt */
-/* INFO: loaded from: classes4.dex */
+/* JADX INFO: compiled from: DaijishouApplication.kt */
+/* JADX INFO: loaded from: C:\Users\dfukuoka\Downloads\Daijishou\Daijishou\build_tmp\dex181_classes4.dex */
 @Metadata(k = 3, mv = {1, 9, 0}, xi = 48)
 final class DaijishouApplication$sam$androidx_lifecycle_Observer$0 implements Observer, FunctionAdapter {
     private final /* synthetic */ Function1 function;
@@ -34,7 +34,6 @@ final class DaijishouApplication$sam$androidx_lifecycle_Observer$0 implements Ob
         return getFunctionDelegate().hashCode();
     }
 
-    @Override // androidx.lifecycle.Observer
     public final /* synthetic */ void onChanged(Object obj) {
         this.function.invoke(obj);
     }

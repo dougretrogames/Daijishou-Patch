@@ -1,0 +1,36 @@
+package com.magneticchen.daijishou.ui.fragments.settings;
+
+import androidx.navigation.ActionOnlyNavDirections;
+import androidx.navigation.NavDirections;
+import com.magneticchen.daijishou.R;
+import kotlin.Metadata;
+import kotlin.jvm.internal.DefaultConstructorMarker;
+
+/* JADX INFO: compiled from: LibrarySettingsNavFragmentDirections.kt */
+/* JADX INFO: loaded from: C:\Users\dfukuoka\Downloads\Daijishou\Daijishou\build_tmp\dex181_classes4.dex */
+@Metadata(d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\u0018\u0000 \u00032\u00020\u0001:\u0001\u0003B\u0007\b\u0002¢\u0006\u0002\u0010\u0002¨\u0006\u0004"}, d2 = {"Lcom/magneticchen/daijishou/ui/fragments/settings/LibrarySettingsNavFragmentDirections;", "", "()V", "Companion", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+public final class LibrarySettingsNavFragmentDirections {
+    public static final Companion Companion = new Companion(null);
+
+    /* JADX INFO: compiled from: LibrarySettingsNavFragmentDirections.kt */
+    @Metadata(d1 = {"\u0000\u0014\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002¢\u0006\u0002\u0010\u0002J\u0006\u0010\u0003\u001a\u00020\u0004J\u0006\u0010\u0005\u001a\u00020\u0004¨\u0006\u0006"}, d2 = {"Lcom/magneticchen/daijishou/ui/fragments/settings/LibrarySettingsNavFragmentDirections$Companion;", "", "()V", "playersAndPlatformsSettingsToPlatformsListAction", "Landroidx/navigation/NavDirections;", "playersAndPlatformsSettingsToPlayersListAction", "app_release"}, k = 1, mv = {1, 9, 0}, xi = 48)
+    public static final class Companion {
+        public /* synthetic */ Companion(DefaultConstructorMarker defaultConstructorMarker) {
+            this();
+        }
+
+        private Companion() {
+        }
+
+        public final NavDirections playersAndPlatformsSettingsToPlayersListAction() {
+            return new ActionOnlyNavDirections(R.id.playersAndPlatformsSettingsToPlayersListAction);
+        }
+
+        public final NavDirections playersAndPlatformsSettingsToPlatformsListAction() {
+            return new ActionOnlyNavDirections(R.id.playersAndPlatformsSettingsToPlatformsListAction);
+        }
+    }
+
+    private LibrarySettingsNavFragmentDirections() {
+    }
+}

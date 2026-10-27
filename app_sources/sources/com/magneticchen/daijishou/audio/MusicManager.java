@@ -11,8 +11,6 @@ import android.os.Looper;
 import android.util.Log;
 import androidx.documentfile.provider.DocumentFile;
 import androidx.preference.PreferenceManager;
-import com.magneticchen.daijishou.DaijishouApplication;
-import com.magneticchen.daijishou.daijishou_library_db.PlatformEntity;
 import java.io.File;
 import java.security.SecureRandom;
 import java.util.ArrayList;
@@ -55,6 +53,24 @@ public class MusicManager {
     public void init(Context context) {
         if (context != null && appContext == null) {
             appContext = context.getApplicationContext();
+            try {
+                SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(appContext);
+                prefs.registerOnSharedPreferenceChangeListener(new SharedPreferences.OnSharedPreferenceChangeListener() {
+                    @Override
+                    public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+                        if (PREF_KEY_PLAY_MUSIC.equals(key)) {
+                            boolean enabled = sharedPreferences.getBoolean(PREF_KEY_PLAY_MUSIC, true);
+                            if (enabled) {
+                                startRandomTrack(appContext);
+                            } else {
+                                stop();
+                            }
+                        }
+                    }
+                });
+            } catch (Throwable t) {
+                Log.w(TAG, "Error registering pref listener", t);
+            }
         }
     }
 
@@ -275,28 +291,28 @@ public class MusicManager {
             return;
         }
 
-        // 1. Scan configured platform sync URIs
-        if (appContext instanceof DaijishouApplication) {
-            DaijishouApplication app = (DaijishouApplication) appContext;
-            try {
-                if (app.getDaijishouLibraryRepository() != null) {
-                    List<PlatformEntity> platforms = app.getDaijishouLibraryRepository().getAllPlatformsStatically();
-                    if (platforms != null) {
-                        for (PlatformEntity platform : platforms) {
-                            List<Uri> syncUris = platform.getItemsSyncTreeUriList();
-                            if (syncUris != null) {
-                                for (Uri uri : syncUris) {
-                                    scanUriForMusic(uri, foundUris);
-                                }
+        // 1. Scan configured platform sync URIs via reflection
+        try {
+            java.lang.reflect.Method getRepo = appContext.getClass().getMethod("getDaijishouLibraryRepository");
+            Object repo = getRepo.invoke(appContext);
+            if (repo != null) {
+                java.lang.reflect.Method getPlatforms = repo.getClass().getMethod("getAllPlatformsStatically");
+                java.util.List<?> platforms = (java.util.List<?>) getPlatforms.invoke(repo);
+                if (platforms != null) {
+                    for (Object platform : platforms) {
+                        java.lang.reflect.Method getUris = platform.getClass().getMethod("getItemsSyncTreeUriList");
+                        java.util.List<Uri> syncUris = (java.util.List<Uri>) getUris.invoke(platform);
+                        if (syncUris != null) {
+                            for (Uri uri : syncUris) {
+                                scanUriForMusic(uri, foundUris);
                             }
                         }
                     }
                 }
-            } catch (Throwable t) {
-                Log.w(TAG, "Failed to read platform sync URIs", t);
             }
+        } catch (Throwable t) {
+            Log.w(TAG, "Failed to read platform sync URIs", t);
         }
-
         // 2. Scan standard external storage ROM locations
         try {
             File ext = Environment.getExternalStorageDirectory();
