@@ -406,3 +406,26 @@ guarda do compilador — **não** implemente; apenas mantenha a assinatura.
 - [x] P2 — Expansão da matriz de testes com fluxos externos e validação master suite 100% verde (CONCLUÍDO).
 - [x] Higienização completa de referências de decompilador em comentários (CONCLUÍDO).
 - [x] Tradução completa de interface para 10 idiomas + pt-BR com termos técnicos preservados (CONCLUÍDO).
+
+---
+
+## 13. Atualização v1.8.1 (Codebase 426) & Melhorias
+
+- **Base de Código 1.8.1 Integrada:**
+  - Código-fonte completo extraído via JADX e atualizado na pasta `app_sources/sources/` (579 arquivos atualizados e versionados).
+  - Recursos e Smali decodificados e montados com **Apktool 3.0.3** com suporte completo a Android 15 (`targetSdkVersion 35`).
+- **Compatibilidade Retroativa com `minSdkVersion 24` (Android 7.0+):**
+  - Desugaring via D8 com flag `--min-api 24`.
+  - Pasta de ícones adaptativos reestruturada para `res/mipmap-anydpi-v26`, permitindo compilação no aapt2 para API 24 sem colisão de recursos.
+  - Manifesto e badging formalmente alinhados com `minSdkVersion 24`.
+- **Esquemas de Assinatura Múltipla (v1, v2 e v3):**
+  - Assinado simultaneamente com v1 (JAR Signing legado com `MANIFEST.MF`, `.SF` e `.RSA`), v2 e v3, garantindo instalação sem erros em dispositivos Android legados e modernos.
+- **Correção do Cálculo da Bateria:**
+  - Ajustado `BatteryInfo.smali` para o cálculo proporcional `(level / scale) * 100` e consumo imediato do sticky intent em `BatteryLiveData.smali`.
+- **Sistema de Reprodução de Músicas:**
+  - Implementado `MusicManager.java` com varredura em `roms/music/`, `ROMs/music/` e `MediaStore`.
+  - Corrigido listener de preferências para referência forte, garantindo início imediato de uma nova música aleatória ao reativar o botão de reprodução nas configurações de Vídeo e Sons.
+  - Ícone de nota musical ♪ adicionado ao lado da opção de preferências.
+- **Script de Automação:**
+  - Script [`build_release_v181.ps1`](file:///c:/Users/dfukuoka/Downloads/Daijishou/Daijishou/build_release_v181.ps1) criado para reproduzir todo o processo de forma determinística.
+
