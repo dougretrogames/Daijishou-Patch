@@ -1,6 +1,10 @@
 package com.magneticchen.daijishou.audio;
 
 import android.content.Context;
+import android.content.ContentUris;
+import android.database.Cursor;
+import android.provider.MediaStore;
+
 import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
@@ -39,6 +43,7 @@ public class MusicManager {
     private boolean isPaused = false;
     private Context appContext;
     private Uri lastPlayedUri;
+    private SharedPreferences.OnSharedPreferenceChangeListener prefListener;
 
     private MusicManager() {
     }
@@ -49,17 +54,36 @@ public class MusicManager {
         }
         return sInstance;
     }
+    public static synchronized MusicManager getInstance(Context context) {
+        if (sInstance == null) {
+            sInstance = new MusicManager();
+        }
+        if (context != null) {
+            sInstance.init(context);
+        }
+        return sInstance;
+    }
+
+    public void start() {
+        if (isPaused && mediaPlayer != null) {
+            resume(appContext);
+        } else {
+            play(appContext);
+        }
+    }
 
     public void init(Context context) {
         if (context != null && appContext == null) {
             appContext = context.getApplicationContext();
             try {
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(appContext);
-                prefs.registerOnSharedPreferenceChangeListener(new SharedPreferences.OnSharedPreferenceChangeListener() {
+                prefListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
                     @Override
                     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+                        Log.i(TAG, "onSharedPreferenceChanged: " + key);
                         if (PREF_KEY_PLAY_MUSIC.equals(key)) {
                             boolean enabled = sharedPreferences.getBoolean(PREF_KEY_PLAY_MUSIC, true);
+                            Log.i(TAG, "play_music changed to " + enabled);
                             if (enabled) {
                                 startRandomTrack(appContext);
                             } else {
@@ -67,7 +91,8 @@ public class MusicManager {
                             }
                         }
                     }
-                });
+                };
+                prefs.registerOnSharedPreferenceChangeListener(prefListener);
             } catch (Throwable t) {
                 Log.w(TAG, "Error registering pref listener", t);
             }
@@ -85,6 +110,7 @@ public class MusicManager {
 
     public void play(Context context) {
         init(context);
+        Log.i(TAG, "play() called, enabled=" + isPlayMusicEnabled(context));
         if (!isPlayMusicEnabled(context)) {
             stop();
             return;
@@ -211,6 +237,7 @@ public class MusicManager {
                     @Override
                     public void run() {
                         isScanning = false;
+                        Log.i(TAG, "Scan complete. Found " + foundUris.size() + " music tracks.");
                         fullPlaylist.clear();
                         fullPlaylist.addAll(foundUris);
                         currentQueue.clear();
@@ -269,6 +296,7 @@ public class MusicManager {
                     return true;
                 }
             });
+            Log.i(TAG, "Playing music track: " + trackUri);
             mediaPlayer = player;
             mediaPlayer.start();
             isPaused = false;
@@ -313,10 +341,22 @@ public class MusicManager {
         } catch (Throwable t) {
             Log.w(TAG, "Failed to read platform sync URIs", t);
         }
+        try {
+            SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(appContext);
+            String customUri = prefs.getString("music_playlist_uri", null);
+            if (customUri != null && !customUri.isEmpty()) {
+                scanUriForMusic(Uri.parse(customUri), foundUris);
+            }
+        } catch (Throwable t) {
+            Log.w(TAG, "Failed to scan custom music_playlist_uri", t);
+        }
+        scanMediaStore(foundUris);
         // 2. Scan standard external storage ROM locations
         try {
             File ext = Environment.getExternalStorageDirectory();
             if (ext != null && ext.isDirectory()) {
+                scanDirectoryForMusic(new File(ext, "Music"), foundUris);
+                scanDirectoryForMusic(new File(ext, "music"), foundUris);
                 String[] commonDirs = new String[]{
                     "ROMs", "roms", "Roms", "RetroArch/roms", "Emulation/roms"
                 };
@@ -433,4 +473,38 @@ public class MusicManager {
             || lower.endsWith(".mid")
             || lower.endsWith(".midi");
     }
+
+    private void scanMediaStore(Set<Uri> foundUris) {
+        if (appContext == null) {
+            return;
+        }
+        try {
+            Uri collection = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+            String[] projection = new String[]{
+                MediaStore.Audio.Media._ID,
+                MediaStore.Audio.Media.DATA
+            };
+            Cursor cursor = appContext.getContentResolver().query(collection, projection, null, null, null);
+            if (cursor != null) {
+                int idCol = cursor.getColumnIndexOrThrow(MediaStore.Audio.Media._ID);
+                int dataCol = cursor.getColumnIndex(MediaStore.Audio.Media.DATA);
+                while (cursor.moveToNext()) {
+                    long id = cursor.getLong(idCol);
+                    String data = dataCol >= 0 ? cursor.getString(dataCol) : null;
+                    if (data != null) {
+                        String lower = data.toLowerCase(Locale.ROOT);
+                        if (lower.contains("/music") || lower.contains("/roms") || lower.contains("/retroarch")) {
+                            foundUris.add(ContentUris.withAppendedId(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, id));
+                        }
+                    } else {
+                        foundUris.add(ContentUris.withAppendedId(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, id));
+                    }
+                }
+                cursor.close();
+            }
+        } catch (Throwable t) {
+            Log.w(TAG, "Failed to scan MediaStore", t);
+        }
+    }
+
 }
