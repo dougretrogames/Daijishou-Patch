@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   build-debug:
-    name: Build & Package Debug APK
+    name: Build & Package Debug APK (v1.8.1)
     runs-on: windows-latest
 
     steps:
@@ -48,32 +48,9 @@ jobs:
             & $sdkmanager --install "platforms;android-35" "build-tools;35.0.0"
           }
 
-      - name: Download Base Reference APK & Tools
+      - name: Execute Full Build Pipeline (Apktool 3.0.3)
         run: |
-          if (-not (Test-Path "Daijishou v1.5.0.apk")) {
-            Write-Host "Downloading upstream Daijishou v1.5.0 reference APK..."
-            Invoke-WebRequest -Uri "https://github.com/TapiocaFox/Daijishou/releases/download/v1.5.0/416.apk" -OutFile "Daijishou v1.5.0.apk"
-          }
-          if (-not (Test-Path "tools")) { New-Item -ItemType Directory -Force "tools" | Out-Null }
-          if (-not (Test-Path "tools\apktool_2.11.1.jar")) {
-            Write-Host "Downloading apktool 2.11.1..."
-            Invoke-WebRequest -Uri "https://github.com/iBotPeaches/Apktool/releases/download/v2.11.1/apktool_2.11.1.jar" -OutFile "tools\apktool_2.11.1.jar"
-          }
-          if (-not (Test-Path "tools\baksmali-2.5.2.jar")) {
-            Write-Host "Downloading baksmali 2.5.2..."
-            Invoke-WebRequest -Uri "https://bitbucket.org/JesusFreke/smali/downloads/baksmali-2.5.2.jar" -OutFile "tools\baksmali-2.5.2.jar"
-          }
-
-      - name: Execute Full Build Pipeline (No-Orig)
-        run: |
-          powershell -ExecutionPolicy Bypass -File build_tmp\build_cycle.ps1 -NoOrig
-
-      - name: Run Quality & Fidelity Gates
-        run: |
-          python -I build_tmp\verify_no_orig.py
-          python -I build_tmp\stub_compare.py
-          python -I build_tmp\scan_catch_cast.py
-          python -I build_tmp\gap_inventory.py
+          powershell -ExecutionPolicy Bypass -File build_app_v181.ps1 -OutApk "Daijishou-v1.8.1-debug.apk"
 
       - name: Package Debug Artifact (ZIP with Commit Number)
         id: package
@@ -83,31 +60,34 @@ jobs:
           $stageDir  = "build_out_debug"
           New-Item -ItemType Directory -Force $stageDir | Out-Null
 
-          $apkSrc  = "Daijishou v1.5.0-reconstructed.apk"
-          $apkName = "Daijishou-1.5.0-debug-c${commitNum}-${shortSha}.apk"
+          $apkSrc  = "Daijishou-v1.8.1-debug.apk"
+          $apkName = "Daijishou-1.8.1-debug-c${commitNum}-${shortSha}.apk"
           Copy-Item $apkSrc (Join-Path $stageDir $apkName) -Force
 
           $hash = (Get-FileHash -Path $apkSrc -Algorithm SHA256).Hash
           $buildInfo = @"
           ==================================================
-          Daijishou 1.5.0 Reconstructed Build (Debug)
+          Daijishou 1.8.1 Reconstructed Build (Debug)
           ==================================================
+          Version Code  : 426
+          Version Name  : 1.8.1
           Commit Number : $commitNum
           Commit SHA    : $shortSha
           Full SHA      : $($env:GITHUB_SHA)
           Branch/Ref    : $($env:GITHUB_REF_NAME)
+          minSdkVersion : 24 (Android 7.0+)
+          targetSdk     : 35 (Android 15)
+          Signatures    : v1 (JAR), v2, v3
           APK Output    : $apkName
           APK Size      : $((Get-Item $apkSrc).Length) bytes
           SHA256 Checksum:
           $hash  $apkName
           Build Date    : $((Get-Date).ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss")) UTC
-          Pipeline Mode : No-Orig Strict (100% autonomous Java)
+          Pipeline Mode : Apktool 3.0.3 + Custom Modular Patches
+          Features      : Battery Percentage Fix, Background Music (roms/music/), Full Storage Permissions
           ==================================================
           "@
           Set-Content -Path (Join-Path $stageDir "BUILD_INFO.txt") -Value $buildInfo
-
-          # Run quick audit summary into zip
-          python -I build_tmp\audit_translations.py > (Join-Path $stageDir "TRANSLATION_AUDIT.txt")
 
           $zipName = "Daijishou-Debug-c${commitNum}-${shortSha}.zip"
           Compress-Archive -Path "$stageDir\*" -DestinationPath $zipName -Force

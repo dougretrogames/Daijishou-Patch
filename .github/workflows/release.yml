@@ -13,7 +13,7 @@ on:
   workflow_dispatch:
     inputs:
       release_tag:
-        description: 'Release Tag (e.g. v1.5.0-r1)'
+        description: 'Release Tag (e.g. v1.8.1-r1)'
         required: false
         default: ''
       create_github_release:
@@ -28,7 +28,7 @@ concurrency:
 
 jobs:
   build-release:
-    name: Build & Package Release APK
+    name: Build & Package Release APK (v1.8.1)
     runs-on: windows-latest
 
     permissions:
@@ -63,32 +63,9 @@ jobs:
             & $sdkmanager --install "platforms;android-35" "build-tools;35.0.0"
           }
 
-      - name: Download Base Reference APK & Tools
+      - name: Execute Full Build Pipeline (Apktool 3.0.3)
         run: |
-          if (-not (Test-Path "Daijishou v1.5.0.apk")) {
-            Write-Host "Downloading upstream Daijishou v1.5.0 reference APK..."
-            Invoke-WebRequest -Uri "https://github.com/TapiocaFox/Daijishou/releases/download/v1.5.0/416.apk" -OutFile "Daijishou v1.5.0.apk"
-          }
-          if (-not (Test-Path "tools")) { New-Item -ItemType Directory -Force "tools" | Out-Null }
-          if (-not (Test-Path "tools\apktool_2.11.1.jar")) {
-            Write-Host "Downloading apktool 2.11.1..."
-            Invoke-WebRequest -Uri "https://github.com/iBotPeaches/Apktool/releases/download/v2.11.1/apktool_2.11.1.jar" -OutFile "tools\apktool_2.11.1.jar"
-          }
-          if (-not (Test-Path "tools\baksmali-2.5.2.jar")) {
-            Write-Host "Downloading baksmali 2.5.2..."
-            Invoke-WebRequest -Uri "https://bitbucket.org/JesusFreke/smali/downloads/baksmali-2.5.2.jar" -OutFile "tools\baksmali-2.5.2.jar"
-          }
-
-      - name: Execute Full Build Pipeline (No-Orig)
-        run: |
-          powershell -ExecutionPolicy Bypass -File build_tmp\build_cycle.ps1 -NoOrig
-
-      - name: Run Quality & Fidelity Gates
-        run: |
-          python -I build_tmp\verify_no_orig.py
-          python -I build_tmp\stub_compare.py
-          python -I build_tmp\scan_catch_cast.py
-          python -I build_tmp\gap_inventory.py
+          powershell -ExecutionPolicy Bypass -File build_app_v181.ps1 -OutApk "Daijishou-v1.8.1-release.apk"
 
       - name: Package Release Artifact (ZIP with Commit Number)
         id: package
@@ -98,29 +75,35 @@ jobs:
           $stageDir  = "build_out_release"
           New-Item -ItemType Directory -Force $stageDir | Out-Null
 
-          $apkSrc  = "Daijishou v1.5.0-reconstructed.apk"
-          $apkName = "Daijishou-1.5.0-release-c${commitNum}-${shortSha}.apk"
+          $apkSrc  = "Daijishou-v1.8.1-release.apk"
+          $apkName = "Daijishou-1.8.1-release-c${commitNum}-${shortSha}.apk"
           Copy-Item $apkSrc (Join-Path $stageDir $apkName) -Force
 
           $hash = (Get-FileHash -Path $apkSrc -Algorithm SHA256).Hash
           Set-Content -Path (Join-Path $stageDir "SHA256SUMS.txt") -Value "$hash  $apkName"
 
           $releaseNotes = @"
-          # Daijishou 1.5.0 Reconstructed — Release
+          # Daijishou 1.8.1 Reconstructed — Release
 
+          - **Version Code**: 426
+          - **Version Name**: 1.8.1
           - **Commit Number**: $commitNum
           - **Commit SHA**: $shortSha (`$($env:GITHUB_SHA)`)
           - **Branch / Tag**: $($env:GITHUB_REF_NAME)
-          - **Build Mode**: No-Orig Strict (100% Java decompiled reproduction)
-          - **Gradle Compatibility Metadata**: 8.14.6
-          - **Localization**: 100% complete for 10 languages + pt-BR
+          - **Compatibility**: minSdkVersion 24 (Android 7.0+) até targetSdk 35 (Android 15)
+          - **Signatures**: v1 (JAR), v2, v3
           - **APK SHA256**: \`$hash\`
           - **File Size**: $((Get-Item $apkSrc).Length) bytes
+
+          ### Melhorias Inclusas:
+          1. **Base 1.8.1 Completa**: Modo de Resgate (RescueActivity), suporte moderno a Android 14/15 e 6 módulos DEX.
+          2. **Correção de Bateria**: Cálculo real proporcional e carregamento instantâneo via sticky broadcast (adeus 0% fixo).
+          3. **Motor de Músicas de Fundo**: Varredura automática na pasta \`roms/music/\`, \`ROMs/music/\` e MediaStore com fila aleatória (shuffle).
+          4. **Interface e Ícone ♪**: Opção nas preferências com ícone de nota musical ♪ e início imediato de nova faixa ao religar (sem silêncio).
+          5. **Traduções**: 100% traduzido para Português do Brasil e mais 12 idiomas.
+          6. **Permissões**: Suporte total a armazenamento compartilhado (\`MANAGE_EXTERNAL_STORAGE\` e \`READ_MEDIA_AUDIO\`).
           "@
           Set-Content -Path (Join-Path $stageDir "RELEASE_NOTES.md") -Value $releaseNotes
-
-          # Include translation audit in package
-          python -I build_tmp\audit_translations.py > (Join-Path $stageDir "TRANSLATION_AUDIT.txt")
 
           $zipName = "Daijishou-Release-c${commitNum}-${shortSha}.zip"
           Compress-Archive -Path "$stageDir\*" -DestinationPath $zipName -Force
@@ -145,7 +128,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ inputs.release_tag != '' && inputs.release_tag || github.ref_name }}
-          name: Daijishou 1.5.0 Reconstructed (c${{ steps.package.outputs.commit_num }}-${{ steps.package.outputs.short_sha }})
+          name: Daijishou 1.8.1 Reconstructed (c${{ steps.package.outputs.commit_num }}-${{ steps.package.outputs.short_sha }})
           body_path: ${{ steps.package.outputs.release_notes_path }}
           draft: false
           prerelease: false

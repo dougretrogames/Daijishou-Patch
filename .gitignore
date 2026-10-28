@@ -1,16 +1,20 @@
-# artefatos de build (scripts e dependências essenciais versionados)
+# artefatos de build (scripts e dependÃªncias essenciais versionados)
 build_tmp/*
 !build_tmp/*.py
 !build_tmp/*.ps1
 !build_tmp/*.md
 !build_tmp/lib4.apk
+!base_apk/*.apk
+!patches_181/**
 !build_tmp/debug.keystore
 
-# compilação e dex
+# compilaÃ§Ã£o e dex
 nest_classes*/
 app_dex*/
 *.apk
 !build_tmp/lib4.apk
+!base_apk/*.apk
+!patches_181/**
 *.idsig
 *.dex
 *.jar
@@ -21,7 +25,7 @@ app_dex*/
 *.args
 nest_errors*.txt
 
-# árvores descompactadas (apenas jars_compile é versionado)
+# Ã¡rvores descompactadas (apenas jars_compile Ã© versionado)
 jadx-1.5.6/
 jadx_noanon/
 smali/
@@ -36,7 +40,7 @@ try_cfr/
 try_cfr_classes/
 app_sources/resources/
 
-# evidência de teste (regenerável)
+# evidÃªncia de teste (regenerÃ¡vel)
 avd_tests/**/*.png
 avd_tests/**/*.xml
 avd_tests/**/*.txt
@@ -44,3 +48,5 @@ avd_tests/**/*.txt
 # sistema
 Thumbs.db
 desktop.ini
+
+!patches_181/**

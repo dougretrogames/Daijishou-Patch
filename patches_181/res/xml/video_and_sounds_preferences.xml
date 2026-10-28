@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/preview_video_title">
+        <SwitchPreferenceCompat android:icon="@drawable/ic_baseline_ondemand_video_24" android:title="@string/play_preview_video_title" android:key="play_preview_video" android:summary="@string/play_preview_video_summary" android:defaultValue="true" />
+        <SwitchPreferenceCompat android:icon="@drawable/ic_baseline_music_video_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/make_preview_video_sounds_title" android:key="make_preview_video_sounds" android:summary="@string/make_preview_video_sounds_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/button_sounds_title">
+        <SwitchPreferenceCompat android:icon="@drawable/ic_baseline_music_note_24" android:title="@string/make_button_sound_title" android:key="make_button_sound" android:summary="@string/make_button_sound_summary" android:defaultValue="true" />
+        <SwitchPreferenceCompat android:icon="@drawable/ic_baseline_music_off_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/disable_b_button_sound_title" android:key="disable_b_button_sound" android:summary="@string/disable_b_button_sound_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/music_category_title">
+        <SwitchPreferenceCompat android:icon="@drawable/ic_baseline_music_note_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/play_music_title" android:key="play_music" android:summary="@string/play_music_summary" android:defaultValue="true" />
+        <Preference android:icon="@drawable/ic_baseline_drive_file_move_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="Import Music Playlist" android:key="import_playlist_button" android:summary="Select a directory to play music from." />
+    </PreferenceCategory>
+</PreferenceScreen>
