@@ -1189,4 +1189,14 @@ an item."</string>
     <string name="play_music_title">Play music</string>
     <string name="play_music_summary">"Play background music found in the 'music' folder where the ROMs are located."</string>
     <string name="music_category_title">Music</string>
+    <string name="arcade_mode">Arcade mode</string>
+    <string name="arcade_settings_category">Arcade Mode</string>
+    <string name="arcade_scroll_direction_title">Arcade systems orientation</string>
+    <string name="arcade_scroll_direction_summary">Choose between horizontal carousel or vertical list.</string>
+    <string name="arcade_android_apps_filter_title">Android Apps platform</string>
+    <string name="arcade_android_apps_filter_summary">Show all applications or only detected games in Android Apps system.</string>
+    <string name="arcade_legend_select">Start</string>
+    <string name="arcade_legend_back">Back</string>
+    <string name="arcade_legend_menu">Menu</string>
+    <string name="arcade_android_apps_title">Android Apps</string>
 </resources>

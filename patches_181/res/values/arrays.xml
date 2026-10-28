@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="box_art_aspect_ratio_array">
+        <item>1:1</item>
+        <item>4:3</item>
+        <item>3:4</item>
+        <item>48:65</item>
+        <item>57:40</item>
+        <item>112:192</item>
+        <item>134:192</item>
+    </string-array>
+    <string-array name="box_art_aspect_ratio_description_array">
+        <item>square</item>
+        <item>tv/n64</item>
+        <item>tv(Vertical)</item>
+        <item>nes</item>
+        <item>snes</item>
+        <item>psp</item>
+        <item>ps2</item>
+    </string-array>
+    <string-array name="dark_mode_array">
+        <item>Follow system</item>
+        <item>Dark</item>
+        <item>Light</item>
+    </string-array>
+    <string-array name="dark_mode_value_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="extension_start_mode_array">
+        <item>Start normally with dependencies and dependants</item>
+        <item>Start only with dependencies</item>
+    </string-array>
+    <string-array name="extension_start_mode_value_array">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="home_page_id_display_name_array">
+        <item>Library</item>
+        <item>Widgets</item>
+        <item>Apps</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="home_page_id_value_array">
+        <item>library</item>
+        <item>widgets</item>
+        <item>apps</item>
+        <item>settings</item>
+    </string-array>
+    <string-array name="library_collection_view_mode_array">
+        <item>Wallpaper mode</item>
+        <item>Thumbnails mode</item>
+        <item>WebView mode</item>
+        <item>Arcade mode</item>
+    </string-array>
+    <string-array name="library_collection_view_mode_value_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="music_configuration_array">
+        <item>Disabled</item>
+        <item>Play Shuffled</item>
+        <item>Play Alphabetically</item>
+        <item>Play Numerically</item>
+    </string-array>
+    <string-array name="music_configuration_value_array">
+        <item>disabled</item>
+        <item>shuffled</item>
+        <item>alphabetical</item>
+        <item>numerical</item>
+    </string-array>
+    <array name="progress_colors">
+        <item>@color/light_blue_600</item>
+        <item>@color/pink_600</item>
+        <item>@color/amber_600</item>
+    </array>
+    <integer-array name="retro_achievements_console_id_array">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+        <item>36</item>
+        <item>37</item>
+        <item>38</item>
+        <item>39</item>
+        <item>40</item>
+        <item>41</item>
+        <item>42</item>
+        <item>43</item>
+        <item>44</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+        <item>49</item>
+        <item>50</item>
+        <item>51</item>
+        <item>52</item>
+        <item>53</item>
+        <item>54</item>
+        <item>55</item>
+        <item>56</item>
+        <item>57</item>
+        <item>58</item>
+        <item>59</item>
+        <item>60</item>
+        <item>61</item>
+        <item>62</item>
+        <item>63</item>
+        <item>64</item>
+        <item>65</item>
+        <item>66</item>
+        <item>67</item>
+        <item>68</item>
+        <item>69</item>
+        <item>70</item>
+        <item>71</item>
+        <item>72</item>
+        <item>73</item>
+        <item>74</item>
+        <item>75</item>
+        <item>76</item>
+        <item>77</item>
+        <item>78</item>
+        <item>79</item>
+        <item>80</item>
+        <item>102</item>
+    </integer-array>
+    <string-array name="retro_achievements_console_id_description_array">
+        <item>Genesis/Mega Drive</item>
+        <item>Nintendo 64</item>
+        <item>SNES/Super Famicom</item>
+        <item>Game Boy</item>
+        <item>Game Boy Advance</item>
+        <item>Game Boy Color</item>
+        <item>NES/Famicom</item>
+        <item>PC Engine/TurboGrafx-16</item>
+        <item>Sega CD</item>
+        <item>32X</item>
+        <item>Master System</item>
+        <item>PlayStation</item>
+        <item>Atari Lynx</item>
+        <item>Neo Geo Pocket</item>
+        <item>Game Gear</item>
+        <item>GameCube</item>
+        <item>Atari Jaguar</item>
+        <item>Nintendo DS</item>
+        <item>Wii</item>
+        <item>Wii U</item>
+        <item>PlayStation 2</item>
+        <item>Xbox</item>
+        <item>Magnavox Odyssey 2</item>
+        <item>Pokemon Mini</item>
+        <item>Atari 2600</item>
+        <item>DOS</item>
+        <item>Arcade</item>
+        <item>Virtual Boy</item>
+        <item>MSX</item>
+        <item>Commodore 64</item>
+        <item>ZX81</item>
+        <item>Oric</item>
+        <item>SG-1000</item>
+        <item>VIC-20</item>
+        <item>Amiga</item>
+        <item>Atari ST</item>
+        <item>Amstrad CPC</item>
+        <item>Apple II</item>
+        <item>Saturn</item>
+        <item>Dreamcast</item>
+        <item>PlayStation Portable</item>
+        <item>Philips CD-i</item>
+        <item>3DO Interactive Multiplayer</item>
+        <item>ColecoVision</item>
+        <item>Intellivision</item>
+        <item>Vectrex</item>
+        <item>PC-8000/8800</item>
+        <item>PC-9800</item>
+        <item>PC-FX</item>
+        <item>Atari 5200</item>
+        <item>Atari 7800</item>
+        <item>Sharp X68000</item>
+        <item>WonderSwan</item>
+        <item>Cassette Vision</item>
+        <item>Super Cassette Vision</item>
+        <item>Neo Geo CD</item>
+        <item>Fairchild Channel F</item>
+        <item>FM Towns</item>
+        <item>ZX Spectrum</item>
+        <item>Game &amp; Watch</item>
+        <item>Nokia N-Gage</item>
+        <item>Nintendo 3DS</item>
+        <item>Watara Supervision</item>
+        <item>Sharp X1</item>
+        <item>TIC-80</item>
+        <item>Thomson TO8</item>
+        <item>PC-6000</item>
+        <item>Sega Pico</item>
+        <item>Mega Duck</item>
+        <item>Zeebo</item>
+        <item>Arduboy</item>
+        <item>WASM-4</item>
+        <item>Arcadia 2001</item>
+        <item>Interton VC 4000</item>
+        <item>Elektor TV Games Computer</item>
+        <item>PC Engine CD/TurboGrafx-CD</item>
+        <item>Atari Jaguar CD</item>
+        <item>Nintendo DSi</item>
+        <item>TI-83</item>
+        <item>Uzebox</item>
+        <item>Standalone</item>
+    </string-array>
+    <string-array name="scale_ui_array">
+        <item>0.8</item>
+        <item>0.85</item>
+        <item>0.9</item>
+        <item>0.925</item>
+        <item>0.95</item>
+        <item>0.975</item>
+        <item>Default</item>
+        <item>1.025</item>
+        <item>1.05</item>
+        <item>1.075</item>
+        <item>1.1</item>
+        <item>1.15</item>
+        <item>1.2</item>
+        <item>1.25</item>
+    </string-array>
+    <string-array name="scale_ui_value_array">
+        <item>0.8</item>
+        <item>0.85</item>
+        <item>0.9</item>
+        <item>0.925</item>
+        <item>0.95</item>
+        <item>0.975</item>
+        <item>1</item>
+        <item>1.025</item>
+        <item>1.05</item>
+        <item>1.075</item>
+        <item>1.1</item>
+        <item>1.15</item>
+        <item>1.2</item>
+        <item>1.25</item>
+    </string-array>
+    <string-array name="scraper_source_array">
+        <item>RAW:PICO-8</item>
+        <item>ARCADE_ITALIA:MAME</item>
+        <item>LIBRETRO:Amstrad - CPC</item>
+        <item>LIBRETRO:Atari - 2600</item>
+        <item>LIBRETRO:Atari - 5200</item>
+        <item>LIBRETRO:Atari - 7800</item>
+        <item>LIBRETRO:Atari - Jaguar</item>
+        <item>LIBRETRO:Atari - Lynx</item>
+        <item>LIBRETRO:Atari - ST</item>
+        <item>LIBRETRO:Bandai - WonderSwan</item>
+        <item>LIBRETRO:Bandai - WonderSwan Color</item>
+        <item>LIBRETRO:Cannonball</item>
+        <item>LIBRETRO:Casio - Loopy</item>
+        <item>LIBRETRO:Casio - PV-1000</item>
+        <item>LIBRETRO:Cave Story</item>
+        <item>LIBRETRO:ChaiLove</item>
+        <item>LIBRETRO:Coleco - ColecoVision</item>
+        <item>LIBRETRO:Commodore - 64</item>
+        <item>LIBRETRO:Commodore - Amiga</item>
+        <item>LIBRETRO:Commodore - Plus-4</item>
+        <item>LIBRETRO:Commodore - VIC-20</item>
+        <item>LIBRETRO:DOOM</item>
+        <item>LIBRETRO:DOS</item>
+        <item>LIBRETRO:Dinothawr</item>
+        <item>LIBRETRO:Emerson - Arcadia 2001</item>
+        <item>LIBRETRO:Entex - Adventure Vision</item>
+        <item>LIBRETRO:Epoch - Super Cassette Vision</item>
+        <item>LIBRETRO:FBNeo - Arcade Games</item>
+        <item>LIBRETRO:Fairchild - Channel F</item>
+        <item>LIBRETRO:Flashback</item>
+        <item>LIBRETRO:Funtech - Super Acan</item>
+        <item>LIBRETRO:GCE - Vectrex</item>
+        <item>LIBRETRO:GamePark - GP32</item>
+        <item>LIBRETRO:Handheld Electronic Game</item>
+        <item>LIBRETRO:Hartung - Game Master</item>
+        <item>"LIBRETRO:Jump 'n Bump"</item>
+        <item>LIBRETRO:LeapFrog - Leapster Learning Game System</item>
+        <item>LIBRETRO:LowRes NX</item>
+        <item>LIBRETRO:Lutro</item>
+        <item>LIBRETRO:MAME</item>
+        <item>LIBRETRO:Magnavox - Odyssey2</item>
+        <item>LIBRETRO:Mattel - Intellivision</item>
+        <item>LIBRETRO:Microsoft - MSX</item>
+        <item>LIBRETRO:Microsoft - MSX2</item>
+        <item>LIBRETRO:Microsoft - Xbox</item>
+        <item>LIBRETRO:Microsoft - Xbox 360</item>
+        <item>LIBRETRO:MrBoom</item>
+        <item>LIBRETRO:NEC - PC Engine - TurboGrafx 16</item>
+        <item>LIBRETRO:NEC - PC Engine CD - TurboGrafx-CD</item>
+        <item>LIBRETRO:NEC - PC Engine SuperGrafx</item>
+        <item>LIBRETRO:NEC - PC-98</item>
+        <item>LIBRETRO:NEC - PC-FX</item>
+        <item>LIBRETRO:Nintendo - Family Computer Disk System</item>
+        <item>LIBRETRO:Nintendo - Game Boy</item>
+        <item>LIBRETRO:Nintendo - Game Boy Advance</item>
+        <item>LIBRETRO:Nintendo - Game Boy Color</item>
+        <item>LIBRETRO:Nintendo - GameCube</item>
+        <item>LIBRETRO:Nintendo - Nintendo 3DS</item>
+        <item>LIBRETRO:Nintendo - Nintendo 3DS (Digital)</item>
+        <item>LIBRETRO:Nintendo - Nintendo 64</item>
+        <item>LIBRETRO:Nintendo - Nintendo 64DD</item>
+        <item>LIBRETRO:Nintendo - Nintendo DS</item>
+        <item>LIBRETRO:Nintendo - Nintendo DSi</item>
+        <item>LIBRETRO:Nintendo - Nintendo Entertainment System</item>
+        <item>LIBRETRO:Nintendo - Pokemon Mini</item>
+        <item>LIBRETRO:Nintendo - Satellaview</item>
+        <item>LIBRETRO:Nintendo - Sufami Turbo</item>
+        <item>LIBRETRO:Nintendo - Super Nintendo Entertainment System</item>
+        <item>LIBRETRO:Nintendo - Virtual Boy</item>
+        <item>LIBRETRO:Nintendo - Wii</item>
+        <item>LIBRETRO:Nintendo - Wii U</item>
+        <item>LIBRETRO:Philips - Videopac+</item>
+        <item>LIBRETRO:Quake</item>
+        <item>LIBRETRO:Quake II</item>
+        <item>LIBRETRO:Quake III</item>
+        <item>LIBRETRO:Quake III</item>
+        <item>LIBRETRO:Quake III</item>
+        <item>LIBRETRO:RCA - Studio II</item>
+        <item>LIBRETRO:RPG Maker</item>
+        <item>LIBRETRO:Rick Dangerous</item>
+        <item>LIBRETRO:SNK - Neo Geo</item>
+        <item>LIBRETRO:SNK - Neo Geo CD</item>
+        <item>LIBRETRO:SNK - Neo Geo Pocket</item>
+        <item>LIBRETRO:SNK - Neo Geo Pocket Color</item>
+        <item>LIBRETRO:ScummVM</item>
+        <item>LIBRETRO:Sega - 32X</item>
+        <item>LIBRETRO:Sega - Dreamcast</item>
+        <item>LIBRETRO:Sega - Game Gear</item>
+        <item>LIBRETRO:Sega - Master System - Mark III</item>
+        <item>LIBRETRO:Sega - Mega Drive - Genesis</item>
+        <item>LIBRETRO:Sega - Mega-CD - Sega CD</item>
+        <item>LIBRETRO:Sega - PICO</item>
+        <item>LIBRETRO:Sega - SG-1000</item>
+        <item>LIBRETRO:Sega - Saturn</item>
+        <item>LIBRETRO:Sharp - X68000</item>
+        <item>LIBRETRO:Sinclair - ZX 81</item>
+        <item>LIBRETRO:Sinclair - ZX Spectrum</item>
+        <item>LIBRETRO:Sony - PlayStation</item>
+        <item>LIBRETRO:Sony - PlayStation 2</item>
+        <item>LIBRETRO:Sony - PlayStation 3</item>
+        <item>LIBRETRO:Sony - PlayStation 3 (Downloadable)</item>
+        <item>LIBRETRO:Sony - PlayStation 4</item>
+        <item>LIBRETRO:Sony - PlayStation Portable</item>
+        <item>LIBRETRO:Sony - PlayStation Vita</item>
+        <item>LIBRETRO:TIC-80</item>
+        <item>LIBRETRO:The 3DO Company - 3DO</item>
+        <item>LIBRETRO:Thomson - MOTO</item>
+        <item>LIBRETRO:Tiger - Game.com</item>
+        <item>LIBRETRO:Tomb Raider</item>
+        <item>LIBRETRO:VTech - CreatiVision</item>
+        <item>LIBRETRO:VTech - V.Smile</item>
+        <item>LIBRETRO:Watara - Supervision</item>
+        <item>LIBRETRO:Wolfenstein 3D</item>
+    </string-array>
+    <string-array name="screen_aspect_ratio_array">
+        <item>1:1</item>
+        <item>4:3</item>
+        <item>10:9</item>
+        <item>3:2</item>
+        <item>30:17</item>
+        <item>2:3</item>
+        <item>16:9</item>
+    </string-array>
+    <string-array name="screen_aspect_ratio_description_array">
+        <item>square</item>
+        <item>dc/n64/nds/ps1</item>
+        <item>gb/gbc/gg/nes/snes</item>
+        <item>gba</item>
+        <item>psp</item>
+        <item>nds double screen</item>
+        <item>HD standard</item>
+    </string-array>
+    <string-array name="screen_lock_gesture_array">
+        <item>Disabled</item>
+        <item>Top bar only</item>
+        <item>Bottom bar only</item>
+        <item>Both bottom &amp; top bar</item>
+    </string-array>
+    <string-array name="screen_lock_gesture_value_array">
+        <item>disabled</item>
+        <item>top</item>
+        <item>bottom</item>
+        <item>both</item>
+    </string-array>
+    <string-array name="theme_color_display_array">
+        <item>Purple</item>
+        <item>Yellow</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Pink</item>
+        <item>BlueGrey</item>
+        <item>BlueGrey (Monotonic)</item>
+        <item>Grey</item>
+        <item>Grey (Monotonic)</item>
+        <item>Green</item>
+        <item>Super Green</item>
+    </string-array>
+    <string-array name="theme_color_value_array">
+        <item>purple</item>
+        <item>yellow</item>
+        <item>red</item>
+        <item>blue</item>
+        <item>pink</item>
+        <item>blue_grey</item>
+        <item>blue_grey_monotonic</item>
+        <item>grey</item>
+        <item>grey_monotonic</item>
+        <item>green</item>
+        <item>super_green</item>
+    </string-array>
+    <string-array name="arcade_scroll_direction_array">
+        <item>Horizontal (Carrossel)</item>
+        <item>Vertical (Lista)</item>
+    </string-array>
+    <string-array name="arcade_scroll_direction_value_array">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="arcade_android_apps_filter_array">
+        <item>Todos os aplicativos</item>
+        <item>Apenas jogos detectados</item>
+        <item>Ocultar sistema Android</item>
+    </string-array>
+    <string-array name="arcade_android_apps_filter_value_array">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

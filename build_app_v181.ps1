@@ -79,43 +79,64 @@ if (Test-Path $oldMipmap) {
 
 # Copiar smalis patcheados (bateria e MainActivity)
 Copy-Item -Path "patches_181/smali_classes4/*" -Destination (Join-Path $WorkDir "smali_classes4") -Recurse -Force
+if (Test-Path "patches_181/smali_classes7") {
+    $destSmali7 = Join-Path $WorkDir "smali_classes7"
+    if (-not (Test-Path $destSmali7)) { New-Item -ItemType Directory -Force -Path $destSmali7 | Out-Null }
+    Copy-Item -Path "patches_181/smali_classes7/*" -Destination $destSmali7 -Recurse -Force
+}
 
-# 6. Compilar MusicManager com javac + d8 (--min-api 24)
-Write-Host "`n[3/5] Compilando MusicManager com javac e d8 (min-api 24)..."
-$audioClassesDir = "build_tmp/audio_classes"
-if (Test-Path $audioClassesDir) { Remove-Item -Recurse -Force $audioClassesDir }
-New-Item -ItemType Directory -Force -Path $audioClassesDir | Out-Null
+# 6. Compilar MusicManager e Arcade com javac + d8 (--min-api 24)
+Write-Host "`n[3/5] Compilando MusicManager e Arcade com javac e d8 (min-api 24)..."
+$customClassesDir = "build_tmp/custom_classes"
+if (Test-Path $customClassesDir) { Remove-Item -Recurse -Force $customClassesDir }
+New-Item -ItemType Directory -Force -Path $customClassesDir | Out-Null
 
-$audioSrcs = @(
+$customSrcs = @(
     "app_sources/sources/com/magneticchen/daijishou/audio/MusicManager.java",
     "app_sources/sources/com/magneticchen/daijishou/audio/MusicStrings.java"
 )
+$arcadeSrcs = Get-ChildItem -Path "app_sources/sources/com/magneticchen/daijishou/arcade/*.java" -ErrorAction SilentlyContinue | ForEach-Object { $_.FullName }
+if ($arcadeSrcs) { $customSrcs += $arcadeSrcs }
 
 $jars = (Resolve-Path "reconstructed/jars_compile/*" -ErrorAction SilentlyContinue) -join ";"
 $cp = if ($jars) { "$jars;$androidJar" } else { $androidJar }
 
-& $javac -nowarn -proc:none -source 8 -target 8 -bootclasspath $androidJar -cp $cp -d $audioClassesDir $audioSrcs
+& $javac -nowarn -proc:none -source 8 -target 8 -bootclasspath $androidJar -cp $cp -d $customClassesDir $customSrcs
 
-$audioDexDir = "build_tmp/audio_dex"
-if (Test-Path $audioDexDir) { Remove-Item -Recurse -Force $audioDexDir }
-New-Item -ItemType Directory -Force -Path $audioDexDir | Out-Null
+$customDexDir = "build_tmp/custom_dex"
+if (Test-Path $customDexDir) { Remove-Item -Recurse -Force $customDexDir }
+New-Item -ItemType Directory -Force -Path $customDexDir | Out-Null
 
-$classFiles = Get-ChildItem -Path $audioClassesDir -Filter "*.class" -Recurse | ForEach-Object { $_.FullName }
-& $d8 --release --output $audioDexDir --min-api 24 $classFiles
+$classFiles = Get-ChildItem -Path $customClassesDir -Filter "*.class" -Recurse | ForEach-Object { $_.FullName }
+& $d8 --release --output $customDexDir --min-api 24 $classFiles
 
-# Desmontar classes.dex do audio e copiar smalis para smali_classes4
-$dummyZip = "build_tmp/audio_dummy.zip"
+# Desmontar classes.dex e copiar smalis para smali_classes4
+$dummyZip = "build_tmp/custom_dummy.zip"
 if (Test-Path $dummyZip) { Remove-Item -Force $dummyZip }
-Compress-Archive -Path (Join-Path $audioDexDir "classes.dex") -DestinationPath $dummyZip -Force
+Compress-Archive -Path (Join-Path $customDexDir "classes.dex") -DestinationPath $dummyZip -Force
 
-$audioSmaliDir = "build_tmp/audio_smali_apktool"
-if (Test-Path $audioSmaliDir) { Remove-Item -Recurse -Force $audioSmaliDir }
-java -jar $ApktoolJar d $dummyZip -o $audioSmaliDir -f -r
+$customSmaliDir = "build_tmp/custom_smali_apktool"
+if (Test-Path $customSmaliDir) { Remove-Item -Recurse -Force $customSmaliDir }
+java -jar $ApktoolJar d $dummyZip -o $customSmaliDir -f -r
 
-$destSmaliAudio = Join-Path $WorkDir "smali_classes4/com/magneticchen/daijishou/audio"
-if (-not (Test-Path $destSmaliAudio)) { New-Item -ItemType Directory -Force -Path $destSmaliAudio | Out-Null }
-Get-ChildItem -Path (Join-Path $audioSmaliDir "smali/com/magneticchen/daijishou/audio") | ForEach-Object {
-    Copy-Item -Path $_.FullName -Destination $destSmaliAudio -Force
+# Copiar smalis de audio
+$srcAudio = Join-Path $customSmaliDir "smali/com/magneticchen/daijishou/audio"
+if (Test-Path $srcAudio) {
+    $destSmaliAudio = Join-Path $WorkDir "smali_classes4/com/magneticchen/daijishou/audio"
+    if (-not (Test-Path $destSmaliAudio)) { New-Item -ItemType Directory -Force -Path $destSmaliAudio | Out-Null }
+    Get-ChildItem -Path $srcAudio | ForEach-Object {
+        Copy-Item -Path $_.FullName -Destination $destSmaliAudio -Force
+    }
+}
+
+# Copiar smalis de arcade para smali_classes7
+$srcArcade = Join-Path $customSmaliDir "smali/com/magneticchen/daijishou/arcade"
+if (Test-Path $srcArcade) {
+    $destSmaliArcade = Join-Path $WorkDir "smali_classes7/com/magneticchen/daijishou/arcade"
+    if (-not (Test-Path $destSmaliArcade)) { New-Item -ItemType Directory -Force -Path $destSmaliArcade | Out-Null }
+    Get-ChildItem -Path $srcArcade | ForEach-Object {
+        Copy-Item -Path $_.FullName -Destination $destSmaliArcade -Force
+    }
 }
 
 # 7. Compilar APK com Apktool 3.0.3
@@ -123,6 +144,9 @@ Write-Host "`n[4/5] Recompilando APK com Apktool 3.0.3..."
 $patchedApk = "build_tmp/daijishou_181_patched.apk"
 if (Test-Path $patchedApk) { Remove-Item -Force $patchedApk }
 java -jar $ApktoolJar b $WorkDir -o $patchedApk
+if ($LASTEXITCODE -ne 0 -or -not (Test-Path $patchedApk)) {
+    throw "Apktool build falhou!"
+}
 
 # 8. Alinhamento e Assinatura
 Write-Host "`n[5/5] Executando zipalign e apksigner (v1, v2 e v3 habilitados para minSdk 24)..."

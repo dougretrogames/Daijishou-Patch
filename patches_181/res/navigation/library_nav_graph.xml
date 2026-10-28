@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation android:id="@id/nav_graph" app:startDestination="@id/platformEmptyNavFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <fragment android:label="libraryCollectionWallpaperViewNavFragment" android:name="com.magneticchen.daijishou.ui.fragments.nav.LibraryCollectionWallpaperViewNavFragment" android:id="@id/libraryCollectionWallpaperViewNavFragment">
+        <action android:id="@id/libraryCollectionWallpaperViewToPlatformEmptyAction" app:destination="@id/platformEmptyNavFragment" app:popUpTo="@id/libraryCollectionWallpaperViewNavFragment" app:popUpToInclusive="false" />
+        <action android:id="@id/libraryCollectionWallpaperViewToPlatformLibraryListViewAction" app:destination="@id/platformLibraryListViewNavFragment" app:enterAnim="@anim/fade_in_faster" />
+        <action android:id="@id/libraryCollectionWallpaperViewToPlatformLibraryGridViewAction" app:destination="@id/platformLibraryGridViewNavFragment" app:enterAnim="@anim/fade_in_faster" />
+        <action android:id="@id/libraryCollectionWallpaperViewToLibraryCollectionThumbnailsViewAction" app:destination="@id/libraryCollectionThumbnailsViewNavFragment" />
+        <action android:id="@id/libraryCollectionWallpaperViewToLibraryCollectionWebViewViewAction" app:destination="@id/libraryCollectionWebViewViewNavFragment" />
+    </fragment>
+    <fragment android:label="libraryCollectionThumbnailsViewNavFragment" android:name="com.magneticchen.daijishou.ui.fragments.nav.LibraryCollectionThumbnailsViewNavFragment" android:id="@id/libraryCollectionThumbnailsViewNavFragment">
+        <action android:id="@id/libraryCollectionThumbnailsViewToPlatformEmptyAction" app:destination="@id/platformEmptyNavFragment" app:popUpTo="@id/libraryCollectionThumbnailsViewNavFragment" app:popUpToInclusive="false" />
+        <action android:id="@id/libraryCollectionThumbnailsViewToPlatformLibraryListViewAction" app:destination="@id/platformLibraryListViewNavFragment" app:enterAnim="@anim/fade_in_faster" />
+        <action android:id="@id/libraryCollectionThumbnailsViewToPlatformLibraryGridViewAction" app:destination="@id/platformLibraryGridViewNavFragment" app:enterAnim="@anim/fade_in_faster" />
+        <action android:id="@id/libraryCollectionThumbnailsViewToLibraryCollectionWallpaperViewAction" app:destination="@id/libraryCollectionWallpaperViewNavFragment" />
+        <action android:id="@id/libraryCollectionThumbnailsViewToLibraryCollectionWebViewViewAction" app:destination="@id/libraryCollectionWebViewViewNavFragment" />
+    </fragment>
+    <fragment android:label="platformEmptyNavFragment" android:name="com.magneticchen.daijishou.ui.fragments.nav.PlatformEmptyNavFragment" android:id="@id/platformEmptyNavFragment">
+        <action android:id="@id/platformEmptyToLibraryCollectionWallpaperViewAction" app:destination="@id/libraryCollectionWallpaperViewNavFragment" app:popUpTo="@id/platformEmptyNavFragment" app:popUpToInclusive="false" />
+        <action android:id="@id/platformEmptyToLibraryCollectionThumbnailsViewAction" app:destination="@id/libraryCollectionThumbnailsViewNavFragment" />
+        <action android:id="@id/platformEmptyToLibraryCollectionWebViewViewAction" app:destination="@id/libraryCollectionWebViewViewNavFragment" />
+        <action android:id="@+id/platformEmptyToArcadeAction" app:destination="@id/arcadeSelectSystemFragment" />
+    </fragment>
+    <fragment android:label="platformLibraryListViewNavFragment" android:name="com.magneticchen.daijishou.ui.fragments.nav.PlatformLibraryListViewNavFragment" android:id="@id/platformLibraryListViewNavFragment">
+        <action android:id="@id/platformLibraryListToPlatformLibraryGridAction" app:destination="@id/platformLibraryGridViewNavFragment" app:enterAnim="@android:anim/fade_in" app:popUpTo="@id/libraryCollectionWallpaperViewNavFragment" />
+    </fragment>
+    <fragment android:label="PlatformLibraryGridViewNavFragment" android:name="com.magneticchen.daijishou.ui.fragments.nav.PlatformLibraryGridViewNavFragment" android:id="@id/platformLibraryGridViewNavFragment">
+        <action android:id="@id/platformLibraryGridToPlatformLibraryListAction" app:destination="@id/platformLibraryListViewNavFragment" app:enterAnim="@android:anim/fade_in" app:popUpTo="@id/libraryCollectionWallpaperViewNavFragment" />
+    </fragment>
+    <fragment android:label="LibraryCollectionWebViewViewNavFragment" android:name="com.magneticchen.daijishou.ui.fragments.nav.LibraryCollectionWebViewViewNavFragment" android:id="@id/libraryCollectionWebViewViewNavFragment">
+        <action android:id="@id/libraryCollectionWebViewViewToLibraryCollectionWallpaperViewAction" app:destination="@id/libraryCollectionWallpaperViewNavFragment" />
+        <action android:id="@id/libraryCollectionWebViewViewToLibraryCollectionThumbnailsViewAction" app:destination="@id/libraryCollectionThumbnailsViewNavFragment" />
+        <action android:id="@id/libraryCollectionWebViewViewToPlatformEmptyAction" app:destination="@id/platformEmptyNavFragment" />
+        <action android:id="@id/libraryCollectionWebViewViewToPlatformLibraryGridViewAction" app:destination="@id/platformLibraryGridViewNavFragment" app:enterAnim="@anim/fade_in_faster" />
+        <action android:id="@id/libraryCollectionWebViewViewToPlatformLibraryListViewAction" app:destination="@id/platformLibraryListViewNavFragment" app:enterAnim="@anim/fade_in_faster" />
+    </fragment>
+    <fragment android:label="arcadeSelectSystemFragment" android:name="com.magneticchen.daijishou.arcade.ArcadeSelectSystemFragment" android:id="@+id/arcadeSelectSystemFragment">
+        <action android:id="@+id/arcadeToPlatformEmptyAction" app:destination="@id/platformEmptyNavFragment" app:popUpTo="@+id/arcadeSelectSystemFragment" app:popUpToInclusive="false" />
+        <action android:id="@+id/arcadeToPlatformLibraryListViewAction" app:destination="@id/platformLibraryListViewNavFragment" app:enterAnim="@anim/fade_in_faster" />
+        <action android:id="@+id/arcadeToPlatformLibraryGridViewAction" app:destination="@id/platformLibraryGridViewNavFragment" app:enterAnim="@anim/fade_in_faster" />
+    </fragment>
+</navigation>

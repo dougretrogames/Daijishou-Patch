@@ -1092,4 +1092,14 @@
     <string name="music_settings_title">Músicas</string>
     <string name="play_music_title">Reproduzir músicas</string>
     <string name="play_music_summary">"Reproduzir músicas de fundo encontradas na pasta 'music' de onde as roms estão localizadas."</string>
+    <string name="arcade_mode">Modo Arcade</string>
+    <string name="arcade_settings_category">Modo Arcade</string>
+    <string name="arcade_scroll_direction_title">Orientação dos Sistemas Arcade</string>
+    <string name="arcade_scroll_direction_summary">Escolha entre rolagem horizontal em carrossel ou vertical.</string>
+    <string name="arcade_android_apps_filter_title">Plataforma Android Apps</string>
+    <string name="arcade_android_apps_filter_summary">Exibir todos os aplicativos ou apenas jogos detectados no sistema Android Apps.</string>
+    <string name="arcade_legend_select">A: Iniciar</string>
+    <string name="arcade_legend_back">B: Voltar</string>
+    <string name="arcade_legend_menu">X: Menu</string>
+    <string name="arcade_android_apps_title">Android Apps</string>
 </resources>
