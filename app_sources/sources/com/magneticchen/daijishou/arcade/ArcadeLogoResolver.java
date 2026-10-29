@@ -69,6 +69,24 @@ public class ArcadeLogoResolver {
             }
         }
 
+        if (item.getId() == -996L || "tools".equalsIgnoreCase(item.getShortname()) || "settings".equalsIgnoreCase(item.getShortname())) {
+            File toolsLogo = findSpecialLogoFile("clearlogo_tools.png");
+            if (toolsLogo != null && toolsLogo.exists()) {
+                loadInto(context, toolsLogo, logoView, fallbackTitle);
+                return;
+            }
+            File toolsSn = findSpecialLogoFile("tools.png");
+            if (toolsSn != null && toolsSn.exists()) {
+                loadInto(context, toolsSn, logoView, fallbackTitle);
+                return;
+            }
+            int resId = ArcadeRes.getDrawable(context, "arcade_clearlogo_tools");
+            if (resId != 0) {
+                loadInto(context, resId, logoView, fallbackTitle);
+                return;
+            }
+        }
+
         // 2. Look for clearlogo files on local storage (2-Jogos, Daijishou, etc.)
         File clearlogoFile = findClearlogoFile(context, item.getShortname());
         if (clearlogoFile != null && clearlogoFile.exists()) {

@@ -344,6 +344,9 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
 
         List<ArcadeItem> items = new ArrayList<>();
 
+        // Virtual "Coleções" (matching user's reference image!)
+        items.add(new ArcadeItem(-997L, "Coleções", "collections", null, null, false));
+
         // Virtual "TODOS OS JOGOS" system item (matching user's reference image!)
         items.add(new ArcadeItem(-998L, "Todos os Jogos", "all_games", null, null, false));
 
@@ -402,12 +405,17 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             items.add(new ArcadeItem(-999L, appsTitle, "android", null, null, true));
         }
 
+        // Virtual "Configurações" System (matching user's request for Tools / clearlogo_tools.png)
+        items.add(new ArcadeItem(-996L, "Configurações", "tools", null, null, false));
+
         adapter.setItems(items);
 
         if (!items.isEmpty()) {
             long prevId = getSelectedPlatformIdFromVm();
             int targetPos = adapter.getPositionOfPlatform(prevId);
-            if (targetPos < 0) targetPos = 0;
+            if (targetPos < 0) {
+                targetPos = (items.size() > 1) ? 1 : 0; // Default to "Todos os Jogos"
+            }
 
             final int initialPos = targetPos;
             systemsRecyclerView.post(new Runnable() {
@@ -458,6 +466,10 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                 headerSubtitle.setText("Android Launcher");
             } else if (item.getId() == -998L) {
                 headerSubtitle.setText("Biblioteca Completa");
+            } else if (item.getId() == -997L) {
+                headerSubtitle.setText("Coleções Especiais");
+            } else if (item.getId() == -996L) {
+                headerSubtitle.setText("Configurações do Sistema");
             } else {
                 headerSubtitle.setText(item.getShortname().toUpperCase());
             }
@@ -475,6 +487,26 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
 
     private void launchSelectedSystem() {
         if (currentlyFocusedItem == null) return;
+
+        // When "Configurações" / Tools is selected, immediately open Settings!
+        if (currentlyFocusedItem.getId() == -996L || "tools".equalsIgnoreCase(currentlyFocusedItem.getShortname())) {
+            Activity act = getActivity();
+            if (act != null) {
+                try {
+                    Method navMethod = act.getClass().getMethod("navigatePage", String.class, Object.class);
+                    navMethod.invoke(act, "settings", null);
+                } catch (Throwable t) {
+                    t.printStackTrace();
+                }
+            }
+            return;
+        }
+
+        // When "Coleções" is selected, open collections dialog
+        if (currentlyFocusedItem.getId() == -997L || "collections".equalsIgnoreCase(currentlyFocusedItem.getShortname())) {
+            openCollectionsDialog();
+            return;
+        }
 
         // When "Apps" system is selected, open embedded Apps Grid right inside Arcade!
         if (currentlyFocusedItem.isAndroidApps()) {
@@ -509,6 +541,40 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         } else if (actionGrid != 0) {
             navController.navigate(actionGrid);
         }
+    }
+
+    private void openCollectionsDialog() {
+        Context context = getContext();
+        if (context == null) return;
+        final String[] collections = new String[] {
+            "Alex Kidd", "Art of Fighting", "Batman", "Bomberman",
+            "Castlevania", "Crash Bandicoot", "Dragon Ball Z", "Donkey Kong",
+            "Double Dragon", "Fatal Fury", "Final Fight", "Kirby",
+            "The King of Fighters", "Mario", "Marvel", "Mega Man",
+            "Metal Slug", "Mortal Kombat", "Pac-Man", "Pokémon",
+            "Resident Evil", "Samurai Shodown", "Sonic", "Spider-Man",
+            "Street Fighter", "Streets of Rage", "TMNT", "The Legend of Zelda"
+        };
+        new AlertDialog.Builder(context)
+            .setTitle("Coleções")
+            .setItems(collections, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    try {
+                        Class<?> searchClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.SearchPlayableItemDialogFragment");
+                        Class<?> companionClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.SearchPlayableItemDialogFragment$Companion");
+                        java.lang.reflect.Field compField = searchClass.getField("Companion");
+                        Object companion = compField.get(null);
+                        Method newInst = companionClass.getMethod("newInstance");
+                        androidx.fragment.app.DialogFragment dFrag = (androidx.fragment.app.DialogFragment) newInst.invoke(companion);
+                        dFrag.show(getParentFragmentManager(), "SearchPlayableItemDialogFragment");
+                    } catch (Throwable t) {
+                        t.printStackTrace();
+                    }
+                }
+            })
+            .setNegativeButton("Fechar", null)
+            .show();
     }
 
     // --- Embedded Android Apps Grid ---
@@ -680,9 +746,18 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             if (f2.exists()) return f2.getAbsolutePath();
         }
 
+        if (item.getId() == -996L || "tools".equalsIgnoreCase(item.getShortname()) || "settings".equalsIgnoreCase(item.getShortname())) {
+            File f = new File(storage, "2-Jogos/background_tools.png");
+            if (f.exists()) return f.getAbsolutePath();
+            File fJpg = new File(storage, "2-Jogos/background_tools.jpg");
+            if (fJpg.exists()) return fJpg.getAbsolutePath();
+        }
+
         if (item.getId() == -997L || "collections".equalsIgnoreCase(item.getShortname()) || "colecoes".equalsIgnoreCase(item.getShortname())) {
             File f = new File(storage, "2-Jogos/background_collections.png");
             if (f.exists()) return f.getAbsolutePath();
+            File fJpg = new File(storage, "2-Jogos/background_collections.jpg");
+            if (fJpg.exists()) return fJpg.getAbsolutePath();
         }
 
         // 2. 2-Jogos system backgrounds: 2-Jogos/{shortname}/media/background.png
@@ -893,7 +968,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                             java.lang.reflect.Field compField = dfClass.getField("Companion");
                             Object companion = compField.get(null);
                             Method newInst = companionClass.getMethod("newInstance", String.class);
-                            String clearlogosUrl = "https://raw.githubusercontent.com/dougretrogames/Daijishou/main/themes/platform_thumbnails_packs/clearlogos/";
+                            String clearlogosUrl = "https://raw.githubusercontent.com/dougretrogames/Daijishou-Patch/main/themes/platform_thumbnails_packs/clearlogos/";
                             androidx.fragment.app.DialogFragment dFrag = (androidx.fragment.app.DialogFragment) newInst.invoke(companion, clearlogosUrl);
                             dFrag.show(getParentFragmentManager(), "DownloadPlatformThumbnailsPackDialogFragment");
                         } catch (Throwable t) {
