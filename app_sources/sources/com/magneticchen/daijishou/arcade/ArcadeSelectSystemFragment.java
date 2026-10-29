@@ -230,6 +230,22 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         loadAndPopulatePlatforms();
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 9924 && resultCode == Activity.RESULT_OK && data != null) {
+            android.net.Uri uri = data.getData();
+            if (uri != null && getActivity() != null) {
+                ArcadeBackupImporter.importFromUri(getActivity(), uri, new Runnable() {
+                    @Override
+                    public void run() {
+                        loadAndPopulatePlatforms();
+                    }
+                });
+            }
+        }
+    }
+
     private void setupAppsRecyclerView() {
         Context context = requireContext();
         int spanCount = getResources().getConfiguration().orientation == android.content.res.Configuration.ORIENTATION_LANDSCAPE ? 6 : 4;
@@ -938,6 +954,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
 
         CharSequence[] options = new CharSequence[] {
             (strSwitch != 0) ? getString(strSwitch) : "Alternar para Interface Mobile (Original)",
+            "📥 Importar Backup do ARC Browser (.tar)",
             "Baixar Pacote de Clearlogos (GitHub)",
             "Baixar Temas e Papéis de Parede (GitHub)",
             "Baixar Pacotes de Miniaturas (GitHub)",
@@ -961,6 +978,14 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                             act.recreate();
                         }
                     } else if (which == 1) {
+                        // Import ARC Browser backup (.tar)
+                        ArcadeBackupImporter.promptOrAutoImport(ArcadeSelectSystemFragment.this, new Runnable() {
+                            @Override
+                            public void run() {
+                                loadAndPopulatePlatforms();
+                            }
+                        });
+                    } else if (which == 2) {
                         // Directly download Clearlogos pack from GitHub
                         try {
                             Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformThumbnailsPackDialogFragment");
@@ -974,7 +999,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                         } catch (Throwable t) {
                             t.printStackTrace();
                         }
-                    } else if (which == 2) {
+                    } else if (which == 3) {
                         // Download Wallpapers / Themes
                         try {
                             Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformWallpapersPackListDialogFragment");
@@ -983,7 +1008,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                         } catch (Throwable t) {
                             t.printStackTrace();
                         }
-                    } else if (which == 3) {
+                    } else if (which == 4) {
                         // Download Thumbnails list
                         try {
                             Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformThumbnailsPackListDialogFragment");
@@ -992,7 +1017,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                         } catch (Throwable t) {
                             t.printStackTrace();
                         }
-                    } else if (which == 4 || which == 5) {
+                    } else if (which == 5 || which == 6) {
                         Activity act = getActivity();
                         if (act != null) {
                             try {
@@ -1002,9 +1027,9 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                                 t.printStackTrace();
                             }
                         }
-                    } else if (which == 6) {
-                        toggleOrientation();
                     } else if (which == 7) {
+                        toggleOrientation();
+                    } else if (which == 8) {
                         loadAndPopulatePlatforms();
                     }
                 }

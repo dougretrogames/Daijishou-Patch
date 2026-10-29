@@ -107,8 +107,10 @@ $customDexDir = "build_tmp/custom_dex"
 if (Test-Path $customDexDir) { Remove-Item -Recurse -Force $customDexDir }
 New-Item -ItemType Directory -Force -Path $customDexDir | Out-Null
 
-$classFiles = Get-ChildItem -Path $customClassesDir -Filter "*.class" -Recurse | ForEach-Object { $_.FullName }
-& $d8 --release --output $customDexDir --min-api 24 $classFiles
+$customJar = "build_tmp/custom_classes.jar"
+if (Test-Path $customJar) { Remove-Item -Force $customJar }
+jar cf $customJar -C $customClassesDir .
+& $d8 --release --output $customDexDir --min-api 24 $customJar
 
 # Desmontar classes.dex e copiar smalis para smali_classes4
 $dummyZip = "build_tmp/custom_dummy.zip"
