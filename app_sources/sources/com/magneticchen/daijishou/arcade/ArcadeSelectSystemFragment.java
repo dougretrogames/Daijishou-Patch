@@ -54,6 +54,17 @@ import java.util.List;
 
 public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystemAdapter.OnSystemActionListener, ArcadeAppAdapter.OnAppActionListener {
 
+    private static ArcadeSelectSystemFragment activeInstance = null;
+
+    public static ArcadeSelectSystemFragment getActiveInstance() {
+        return activeInstance;
+    }
+
+    public boolean isAppsGridOpen() {
+        return isAppsGridOpen;
+    }
+
+
     private View rootView;
     private ImageView wallpaperView1;
     private ImageView wallpaperView2;
@@ -103,9 +114,8 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                     closeAppsGrid();
                     return;
                 }
-                setEnabled(false);
                 if (getActivity() != null) {
-                    getActivity().onBackPressed();
+                    getActivity().moveTaskToBack(true);
                 }
             }
         });
@@ -142,43 +152,91 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
 
         setupAppsRecyclerView();
 
+        activeInstance = this;
+
+        // Setup Clock in native bar
+        int clockId = ArcadeRes.getId(context, "arcade_clock_text_view");
+        TextView clockView = (clockId != 0) ? (TextView) rootView.findViewById(clockId) : null;
+        if (clockView != null) {
+            try {
+                java.text.DateFormat df = android.text.format.DateFormat.getTimeFormat(context);
+                clockView.setText(df.format(new java.util.Date()));
+            } catch (Throwable ignored) {}
+        }
+
+        // Setup Tips / Marquee in native bar
+        int tipsId = ArcadeRes.getId(context, "arcade_tips_text_view");
+        TextView tipsView = (tipsId != 0) ? (TextView) rootView.findViewById(tipsId) : null;
+        if (tipsView != null) {
+            tipsView.setText("Daijishō retro launcher");
+            tipsView.setSelected(true);
+        }
+
+        // Setup swap A/B buttons if enabled
+        SharedPreferences prefsLocal = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean swapAB = prefsLocal.getBoolean("swap_a_b_buttons", false);
+        int aBadgeId = ArcadeRes.getId(context, "arcade_legend_btn_a_badge");
+        TextView aBadge = (aBadgeId != 0) ? (TextView) rootView.findViewById(aBadgeId) : null;
+        if (aBadge != null) {
+            aBadge.setText(swapAB ? "B" : "A");
+        }
+        int bBadgeId = ArcadeRes.getId(context, "arcade_back_icon_text_view");
+        TextView bBadge = (bBadgeId != 0) ? (TextView) rootView.findViewById(bBadgeId) : null;
+        if (bBadge != null) {
+            bBadge.setText(swapAB ? "A" : "B");
+        }
+
         // Setup controller legend bar click actions
         View btnX = rootView.findViewById(ArcadeRes.getId(context, "arcade_btn_action_x"));
         View btnA = rootView.findViewById(ArcadeRes.getId(context, "arcade_btn_action_a"));
         View btnB = rootView.findViewById(ArcadeRes.getId(context, "arcade_btn_action_b"));
 
+        View.OnClickListener xListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openArcadeMenu();
+            }
+        };
         if (btnX != null) {
-            btnX.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    openArcadeMenu();
-                }
-            });
+            btnX.setClickable(true);
+            btnX.setFocusable(true);
+            btnX.setOnClickListener(xListener);
         }
+        if (legendMenuText != null) legendMenuText.setOnClickListener(xListener);
+
+        View.OnClickListener aListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isAppsGridOpen) {
+                    // Launch app from click handled by item listener
+                } else {
+                    launchSelectedSystem();
+                }
+            }
+        };
         if (btnA != null) {
-            btnA.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (isAppsGridOpen) {
-                        // Launch app from click handled by item listener
-                    } else {
-                        launchSelectedSystem();
-                    }
-                }
-            });
+            btnA.setClickable(true);
+            btnA.setFocusable(true);
+            btnA.setOnClickListener(aListener);
         }
+        if (legendSelectText != null) legendSelectText.setOnClickListener(aListener);
+
+        View.OnClickListener bListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (isAppsGridOpen) {
+                    closeAppsGrid();
+                } else if (getActivity() != null) {
+                    getActivity().moveTaskToBack(true);
+                }
+            }
+        };
         if (btnB != null) {
-            btnB.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (isAppsGridOpen) {
-                        closeAppsGrid();
-                    } else if (getActivity() != null) {
-                        getActivity().onBackPressed();
-                    }
-                }
-            });
+            btnB.setClickable(true);
+            btnB.setFocusable(true);
+            btnB.setOnClickListener(bListener);
         }
+        if (legendBackText != null) legendBackText.setOnClickListener(bListener);
 
         // Determine orientation from preferences
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
@@ -617,7 +675,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         loadInstalledApps();
     }
 
-    private void closeAppsGrid() {
+    public void closeAppsGrid() {
         isAppsGridOpen = false;
 
         if (appsContainer != null) {
@@ -1053,4 +1111,13 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         setupRecyclerView(isVerticalOrientation);
         loadAndPopulatePlatforms();
     }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        if (activeInstance == this) {
+            activeInstance = null;
+        }
+    }
+
 }

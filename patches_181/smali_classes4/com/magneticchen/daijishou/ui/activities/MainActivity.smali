@@ -4578,6 +4578,15 @@
 .method public onBackPressedCallback()V
     .locals 4
 
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->handleBackPressed(Landroid/app/Activity;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_arcade_back
+
+    return-void
+
+    :cond_arcade_back
     .line 594
     invoke-direct {p0}, Lcom/magneticchen/daijishou/ui/activities/MainActivity;->getMainViewPagerAdapter()Lcom/magneticchen/daijishou/ui/activities/MainActivity$ScreenSlidePagerAdapter;
 

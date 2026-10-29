@@ -307,6 +307,19 @@ public class ArcadeUIController {
                 if (bgId != 0) {
                     window.setBackgroundDrawableResource(bgId);
                 }
+                View decor = window.getDecorView();
+                if (decor != null) {
+                    int parentPanelId = context.getResources().getIdentifier("parentPanel", "id", "android");
+                    if (parentPanelId != 0) {
+                        View pp = decor.findViewById(parentPanelId);
+                        if (pp != null) pp.setBackground(null);
+                    }
+                    int contentPanelId = context.getResources().getIdentifier("contentPanel", "id", "android");
+                    if (contentPanelId != 0) {
+                        View cp = decor.findViewById(contentPanelId);
+                        if (cp != null) cp.setBackground(null);
+                    }
+                }
             }
             ListView listView = dialog.getListView();
             if (listView != null) {
@@ -314,11 +327,16 @@ public class ArcadeUIController {
                 if (selId != 0) {
                     listView.setSelector(selId);
                 }
+                listView.setDivider(new android.graphics.drawable.ColorDrawable(0x229C27B0));
+                listView.setDividerHeight(1);
             }
             int titleId = context.getResources().getIdentifier("alertTitle", "id", "android");
             if (titleId != 0) {
                 TextView tv = dialog.findViewById(titleId);
-                if (tv != null) tv.setTextColor(0xFFFFFFFF);
+                if (tv != null) {
+                    tv.setTextColor(0xFFFFFFFF);
+                    tv.setTypeface(android.graphics.Typeface.DEFAULT_BOLD);
+                }
             }
             int msgId = context.getResources().getIdentifier("message", "id", "android");
             if (msgId != 0) {
@@ -335,4 +353,32 @@ public class ArcadeUIController {
             t.printStackTrace();
         }
     }
+    public static boolean handleBackPressed(Activity activity) {
+        if (activity == null || !isArcadeMode(activity)) {
+            return false;
+        }
+        try {
+            ArcadeSelectSystemFragment activeArcade = ArcadeSelectSystemFragment.getActiveInstance();
+            if (activeArcade != null && activeArcade.isAppsGridOpen()) {
+                activeArcade.closeAppsGrid();
+                return true;
+            }
+
+            if (activity instanceof androidx.fragment.app.FragmentActivity) {
+                androidx.fragment.app.FragmentManager fm = ((androidx.fragment.app.FragmentActivity) activity).getSupportFragmentManager();
+                if (fm.getBackStackEntryCount() > 0) {
+                    fm.popBackStack();
+                    return true;
+                }
+            }
+
+            // On the root screen of Arcade mode, minimize app to Android Home, avoiding getting stuck in other tabs
+            activity.moveTaskToBack(true);
+            return true;
+        } catch (Throwable t) {
+            t.printStackTrace();
+        }
+        return false;
+    }
+
 }

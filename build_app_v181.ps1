@@ -145,7 +145,14 @@ if (Test-Path $srcArcade) {
 Write-Host "`n[4/5] Recompilando APK com Apktool 3.0.3..."
 $patchedApk = "build_tmp/daijishou_181_patched.apk"
 if (Test-Path $patchedApk) { Remove-Item -Force $patchedApk }
-java -jar $ApktoolJar b $WorkDir -o $patchedApk
+
+# Forcar recompilacao completa de recursos limpando o cache de build do Apktool
+$buildCache = Join-Path $WorkDir "build"
+if (Test-Path $buildCache) {
+    Remove-Item -Recurse -Force $buildCache
+}
+
+java -jar $ApktoolJar b $WorkDir -o $patchedApk -f
 if ($LASTEXITCODE -ne 0 -or -not (Test-Path $patchedApk)) {
     throw "Apktool build falhou!"
 }
