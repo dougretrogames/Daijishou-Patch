@@ -863,6 +863,9 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
 
         CharSequence[] options = new CharSequence[] {
             (strSwitch != 0) ? getString(strSwitch) : "Alternar para Interface Mobile (Original)",
+            "Baixar Pacote de Clearlogos (GitHub)",
+            "Baixar Temas e Papéis de Parede (GitHub)",
+            "Baixar Pacotes de Miniaturas (GitHub)",
             (strAppearance != 0) ? getString(strAppearance) : "Configurações de Aparência",
             (strSettings != 0) ? getString(strSettings) : "Configurações Gerais",
             (strOrientation != 0) ? getString(strOrientation) : "Alternar Orientação (Horizontal / Vertical)",
@@ -882,7 +885,39 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                             ArcadeUIController.applyUIMode(act);
                             act.recreate();
                         }
-                    } else if (which == 1 || which == 2) {
+                    } else if (which == 1) {
+                        // Directly download Clearlogos pack from GitHub
+                        try {
+                            Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformThumbnailsPackDialogFragment");
+                            Class<?> companionClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformThumbnailsPackDialogFragment$Companion");
+                            java.lang.reflect.Field compField = dfClass.getField("Companion");
+                            Object companion = compField.get(null);
+                            Method newInst = companionClass.getMethod("newInstance", String.class);
+                            String clearlogosUrl = "https://raw.githubusercontent.com/dougretrogames/Daijishou/main/themes/platform_thumbnails_packs/clearlogos/";
+                            androidx.fragment.app.DialogFragment dFrag = (androidx.fragment.app.DialogFragment) newInst.invoke(companion, clearlogosUrl);
+                            dFrag.show(getParentFragmentManager(), "DownloadPlatformThumbnailsPackDialogFragment");
+                        } catch (Throwable t) {
+                            t.printStackTrace();
+                        }
+                    } else if (which == 2) {
+                        // Download Wallpapers / Themes
+                        try {
+                            Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformWallpapersPackListDialogFragment");
+                            androidx.fragment.app.DialogFragment dFrag = (androidx.fragment.app.DialogFragment) dfClass.newInstance();
+                            dFrag.show(getParentFragmentManager(), "DownloadPlatformWallpapersPackListDialogFragment");
+                        } catch (Throwable t) {
+                            t.printStackTrace();
+                        }
+                    } else if (which == 3) {
+                        // Download Thumbnails list
+                        try {
+                            Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformThumbnailsPackListDialogFragment");
+                            androidx.fragment.app.DialogFragment dFrag = (androidx.fragment.app.DialogFragment) dfClass.newInstance();
+                            dFrag.show(getParentFragmentManager(), "DownloadPlatformThumbnailsPackListDialogFragment");
+                        } catch (Throwable t) {
+                            t.printStackTrace();
+                        }
+                    } else if (which == 4 || which == 5) {
                         Activity act = getActivity();
                         if (act != null) {
                             try {
@@ -892,9 +927,9 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                                 t.printStackTrace();
                             }
                         }
-                    } else if (which == 3) {
+                    } else if (which == 6) {
                         toggleOrientation();
-                    } else if (which == 4) {
+                    } else if (which == 7) {
                         loadAndPopulatePlatforms();
                     }
                 }
