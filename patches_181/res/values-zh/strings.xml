@@ -1129,4 +1129,27 @@ URI Authority: %s"</string>
     <string name="v7_preference_on">已开启</string>
     <string name="play_music_title">播放音乐</string>
     <string name="play_music_summary">"播放ROM所在目录中'music'文件夹下的背景音乐。"</string>
+    <string name="arcade_mode">街机模式</string>
+    <string name="arcade_settings_category">街机模式</string>
+    <string name="ui_interface_mode_category">界面模式</string>
+    <string name="ui_interface_mode_title">主界面</string>
+    <string name="ui_interface_mode_summary">在街机界面（针对手柄优化的全屏界面）与移动界面（原版）之间进行选择。</string>
+    <string name="ui_interface_mode_arcade">街机界面</string>
+    <string name="ui_interface_mode_mobile_original">移动界面（原版）</string>
+    <string name="arcade_scroll_direction_title">街机系统排列方向</string>
+    <string name="arcade_scroll_direction_summary">在横向轮播或纵向列表之间选择。</string>
+    <string name="arcade_android_apps_filter_title">Android应用平台</string>
+    <string name="arcade_android_apps_filter_summary">显示所有已安装应用或仅显示检测到的游戏。</string>
+    <string name="arcade_legend_select">选择</string>
+    <string name="arcade_legend_back">返回</string>
+    <string name="arcade_legend_menu">选项</string>
+    <string name="arcade_legend_start">开始</string>
+    <string name="arcade_android_apps_title">应用</string>
+    <string name="arcade_menu_switch_to_mobile">切换至移动界面（原版）</string>
+    <string name="arcade_menu_appearance">外观设置</string>
+    <string name="arcade_menu_settings">通用设置</string>
+    <string name="arcade_menu_toggle_orientation">切换方向（横向 / 纵向）</string>
+    <string name="arcade_menu_reload_systems">重新加载系统</string>
+    <string name="arcade_menu_title">街机菜单</string>
+    <string name="arcade_menu_close">关闭</string>
 </resources>

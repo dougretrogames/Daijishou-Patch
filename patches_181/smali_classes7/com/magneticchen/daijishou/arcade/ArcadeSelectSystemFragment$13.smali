@@ -56,7 +56,7 @@
         }
     .end annotation
 
-    .line 673
+    .line 741
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
     iput-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->val$incomingView:Landroid/widget/ImageView;
@@ -103,62 +103,26 @@
         }
     .end annotation
 
-    .line 681
+    .line 749
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->val$incomingView:Landroid/widget/ImageView;
 
     const/4 p2, 0x0
 
     invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setAlpha(F)V
 
-    .line 682
+    .line 750
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->val$incomingView:Landroid/widget/ImageView;
 
     const/4 p2, 0x0
 
     invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 683
+    .line 751
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->val$incomingView:Landroid/widget/ImageView;
 
     invoke-virtual {p1}, Landroid/widget/ImageView;->bringToFront()V
 
-    .line 684
-    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
-
-    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$1500(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/view/View;->bringToFront()V
-
-    .line 685
-    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
-
-    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$600(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/RecyclerView;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->bringToFront()V
-
-    .line 686
-    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
-
-    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$900(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
-
-    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$900(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/view/View;->bringToFront()V
-
-    .line 687
-    :cond_0
+    .line 752
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
     invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$1600(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
@@ -167,7 +131,43 @@
 
     invoke-virtual {p1}, Landroid/view/View;->bringToFront()V
 
-    .line 689
+    .line 753
+    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
+
+    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$700(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/RecyclerView;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->bringToFront()V
+
+    .line 754
+    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
+
+    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$1000(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
+
+    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$1000(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/view/View;->bringToFront()V
+
+    .line 755
+    :cond_0
+    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
+
+    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$1700(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/view/View;->bringToFront()V
+
+    .line 757
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->val$incomingView:Landroid/widget/ImageView;
 
     invoke-virtual {p1}, Landroid/widget/ImageView;->animate()Landroid/view/ViewPropertyAnimator;
@@ -176,14 +176,14 @@
 
     const/high16 p3, 0x3f800000    # 1.0f
 
-    .line 690
+    .line 758
     invoke-virtual {p1, p3}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p1
 
     const-wide/16 p3, 0x12c
 
-    .line 691
+    .line 759
     invoke-virtual {p1, p3, p4}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p1
@@ -192,12 +192,12 @@
 
     invoke-direct {p3, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13$1;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;)V
 
-    .line 692
+    .line 760
     invoke-virtual {p1, p3}, Landroid/view/ViewPropertyAnimator;->withEndAction(Ljava/lang/Runnable;)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p0
 
-    .line 700
+    .line 768
     invoke-virtual {p0}, Landroid/view/ViewPropertyAnimator;->start()V
 
     return p2
@@ -222,7 +222,7 @@
         }
     .end annotation
 
-    .line 673
+    .line 741
     check-cast p1, Landroid/graphics/drawable/Drawable;
 
     invoke-virtual/range {p0 .. p5}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->onResourceReady(Landroid/graphics/drawable/Drawable;Ljava/lang/Object;Lcom/bumptech/glide/request/target/Target;Lcom/bumptech/glide/load/DataSource;Z)Z

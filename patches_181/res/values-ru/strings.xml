@@ -194,4 +194,27 @@
     <string name="template_percent">Процентов: %1$d.</string>
     <string name="v7_preference_off">ВЫКЛ.</string>
     <string name="v7_preference_on">ВКЛ.</string>
+    <string name="arcade_mode">Режим Аркады</string>
+    <string name="arcade_settings_category">Режим Аркады</string>
+    <string name="ui_interface_mode_category">Режим интерфейса</string>
+    <string name="ui_interface_mode_title">Основной интерфейс</string>
+    <string name="ui_interface_mode_summary">Выберите между интерфейсом Аркады (полноэкранный для геймпада) или мобильным интерфейсом (Оригинал).</string>
+    <string name="ui_interface_mode_arcade">Интерфейс Аркады</string>
+    <string name="ui_interface_mode_mobile_original">Мобильный интерфейс (Оригинал)</string>
+    <string name="arcade_scroll_direction_title">Ориентация систем Аркады</string>
+    <string name="arcade_scroll_direction_summary">Выберите между горизонтальной каруселью или вертикальным списком.</string>
+    <string name="arcade_android_apps_filter_title">Платформа приложений Android</string>
+    <string name="arcade_android_apps_filter_summary">Показывать все приложения или только обнаруженные игры.</string>
+    <string name="arcade_legend_select">ВЫБРАТЬ</string>
+    <string name="arcade_legend_back">НАЗАД</string>
+    <string name="arcade_legend_menu">ОПЦИИ</string>
+    <string name="arcade_legend_start">СТАРТ</string>
+    <string name="arcade_android_apps_title">Приложения</string>
+    <string name="arcade_menu_switch_to_mobile">Переключиться на Мобильный интерфейс (Оригинал)</string>
+    <string name="arcade_menu_appearance">Настройки внешнего вида</string>
+    <string name="arcade_menu_settings">Общие настройки</string>
+    <string name="arcade_menu_toggle_orientation">Сменить ориентацию (Горизонтальная / Вертикальная)</string>
+    <string name="arcade_menu_reload_systems">Перезагрузить системы</string>
+    <string name="arcade_menu_title">Меню Аркады</string>
+    <string name="arcade_menu_close">Закрыть</string>
 </resources>

@@ -88,7 +88,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         @Override
         public void run() {
             if (currentlyFocusedItem != null) {
-                displayWallpaper(currentlyFocusedItem.getWallpaperPath());
+                displayWallpaper(resolveWallpaperPath(currentlyFocusedItem));
             }
         }
     };
@@ -656,11 +656,78 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         // App focus changed in grid
     }
 
+    private String resolveWallpaperPath(ArcadeItem item) {
+        if (item == null) return null;
+        Context context = getContext();
+        if (context == null) return item.getWallpaperPath();
+
+        // 1. Explicit path assigned to the item
+        String path = item.getWallpaperPath();
+        if (path != null && !path.trim().isEmpty()) {
+            try {
+                if (path.startsWith("file://")) {
+                    File f = new File(java.net.URI.create(path).getPath());
+                    if (f.exists()) return f.getAbsolutePath();
+                } else if (path.startsWith("/")) {
+                    File f = new File(path);
+                    if (f.exists()) return f.getAbsolutePath();
+                } else {
+                    return path;
+                }
+            } catch (Exception ignored) {
+                return path;
+            }
+        }
+
+        // 2. Check platform_wallpapers in app internal storage (by id or shortname)
+        try {
+            File internalDir = new File(context.getFilesDir(), "platform_wallpapers");
+            if (internalDir.exists() && internalDir.isDirectory()) {
+                if (item.getId() > 0) {
+                    File byIdPng = new File(internalDir, item.getId() + ".png");
+                    if (byIdPng.exists()) return byIdPng.getAbsolutePath();
+                    File byIdJpg = new File(internalDir, item.getId() + ".jpg");
+                    if (byIdJpg.exists()) return byIdJpg.getAbsolutePath();
+                }
+                if (item.getShortname() != null) {
+                    File bySnPng = new File(internalDir, item.getShortname() + ".png");
+                    if (bySnPng.exists()) return bySnPng.getAbsolutePath();
+                    File bySnJpg = new File(internalDir, item.getShortname() + ".jpg");
+                    if (bySnJpg.exists()) return bySnJpg.getAbsolutePath();
+                }
+            }
+        } catch (Exception ignored) {}
+
+        // 3. Check external storage /sdcard/Daijishou/wallpapers/
+        try {
+            File extDir = new File(android.os.Environment.getExternalStorageDirectory(), "Daijishou/wallpapers");
+            if (extDir.exists() && item.getShortname() != null) {
+                File extPng = new File(extDir, item.getShortname() + ".png");
+                if (extPng.exists()) return extPng.getAbsolutePath();
+                File extJpg = new File(extDir, item.getShortname() + ".jpg");
+                if (extJpg.exists()) return extJpg.getAbsolutePath();
+            }
+        } catch (Exception ignored) {}
+
+        // 4. Global Daijishou wallpaper fallback
+        try {
+            File globalWp = new File(context.getFilesDir(), "wallpaper");
+            if (globalWp.exists()) {
+                return globalWp.getAbsolutePath();
+            }
+        } catch (Exception ignored) {}
+
+        return null;
+    }
+
     private void displayWallpaper(String wallpaperPath) {
         if (!isAdded() || getContext() == null) return;
 
         final ImageView incomingView = (activeWallpaperIndex == 0) ? wallpaperView2 : wallpaperView1;
         final ImageView outgoingView = (activeWallpaperIndex == 0) ? wallpaperView1 : wallpaperView2;
+
+        incomingView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+        outgoingView.setScaleType(ImageView.ScaleType.CENTER_CROP);
 
         if (wallpaperPath == null || wallpaperPath.isEmpty()) {
             outgoingView.animate().alpha(0.0f).setDuration(250).start();
@@ -670,6 +737,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         Glide.with(this)
             .load(wallpaperPath)
             .centerCrop()
+            .dontAnimate()
             .listener(new RequestListener<Drawable>() {
                 @Override
                 public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
@@ -708,21 +776,29 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         Context context = getContext();
         if (context == null) return;
 
+        int strSwitch = ArcadeRes.getString(context, "arcade_menu_switch_to_mobile");
+        int strAppearance = ArcadeRes.getString(context, "arcade_menu_appearance");
+        int strSettings = ArcadeRes.getString(context, "arcade_menu_settings");
+        int strOrientation = ArcadeRes.getString(context, "arcade_menu_toggle_orientation");
+        int strReload = ArcadeRes.getString(context, "arcade_menu_reload_systems");
+        int strMenuTitle = ArcadeRes.getString(context, "arcade_menu_title");
+        int strClose = ArcadeRes.getString(context, "arcade_menu_close");
+
         CharSequence[] options = new CharSequence[] {
-            "Alternar para Interface Original do Daijishō",
-            "Configurações de Aparência",
-            "Configurações Gerais",
-            "Alternar Orientação (Horizontal / Vertical)",
-            "Recarregar Sistemas"
+            (strSwitch != 0) ? getString(strSwitch) : "Alternar para Interface Mobile (Original)",
+            (strAppearance != 0) ? getString(strAppearance) : "Configurações de Aparência",
+            (strSettings != 0) ? getString(strSettings) : "Configurações Gerais",
+            (strOrientation != 0) ? getString(strOrientation) : "Alternar Orientação (Horizontal / Vertical)",
+            (strReload != 0) ? getString(strReload) : "Recarregar Sistemas"
         };
 
         new AlertDialog.Builder(context)
-            .setTitle("Menu Arcade")
+            .setTitle((strMenuTitle != 0) ? getString(strMenuTitle) : "Menu Arcade")
             .setItems(options, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
                     if (which == 0) {
-                        // Switch to Original Interface
+                        // Switch to Mobile Interface (Original)
                         ArcadeUIController.setInterfaceMode(context, "original");
                         Activity act = getActivity();
                         if (act != null) {
@@ -746,7 +822,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                     }
                 }
             })
-            .setNegativeButton("Fechar", null)
+            .setNegativeButton((strClose != 0) ? getString(strClose) : "Fechar", null)
             .show();
     }
 

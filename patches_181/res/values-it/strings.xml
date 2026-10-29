@@ -1131,4 +1131,27 @@ Se ti piace, lascia una recensione per Daijishō su Google Play Store!"</string>
     <string name="widgets_page_subtitle_implementation_title">Sottotitolo della pagina Widget</string>
     <string name="play_music_title">Riproduci musica</string>
     <string name="play_music_summary">"Riproduci la musica di sottofondo trovata nella cartella 'music' in cui si trovano le ROM."</string>
+    <string name="arcade_mode">Modalità Arcade</string>
+    <string name="arcade_settings_category">Modalità Arcade</string>
+    <string name="ui_interface_mode_category">Modalità interfaccia</string>
+    <string name="ui_interface_mode_title">Interfaccia principale</string>
+    <string name="ui_interface_mode_summary">Scegli tra l\'Interfaccia Arcade (a schermo intero per controller) o l\'Interfaccia Mobile (Originale).</string>
+    <string name="ui_interface_mode_arcade">Interfaccia Arcade</string>
+    <string name="ui_interface_mode_mobile_original">Interfaccia Mobile (Originale)</string>
+    <string name="arcade_scroll_direction_title">Orientamento dei sistemi Arcade</string>
+    <string name="arcade_scroll_direction_summary">Scegli tra carosello orizzontale o elenco verticale.</string>
+    <string name="arcade_android_apps_filter_title">Piattaforma App Android</string>
+    <string name="arcade_android_apps_filter_summary">Mostra tutte le applicazioni o solo i giochi rilevati.</string>
+    <string name="arcade_legend_select">SELEZIONA</string>
+    <string name="arcade_legend_back">INDIETRO</string>
+    <string name="arcade_legend_menu">OPZIONI</string>
+    <string name="arcade_legend_start">AVVIA</string>
+    <string name="arcade_android_apps_title">App</string>
+    <string name="arcade_menu_switch_to_mobile">Passa all\'Interfaccia Mobile (Originale)</string>
+    <string name="arcade_menu_appearance">Impostazioni aspetto</string>
+    <string name="arcade_menu_settings">Impostazioni generali</string>
+    <string name="arcade_menu_toggle_orientation">Cambia orientamento (Orizzontale / Verticale)</string>
+    <string name="arcade_menu_reload_systems">Ricarica sistemi</string>
+    <string name="arcade_menu_title">Menu Arcade</string>
+    <string name="arcade_menu_close">Chiudi</string>
 </resources>

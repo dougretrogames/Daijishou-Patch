@@ -1133,4 +1133,27 @@ Google Play 스토어에서 Daijishō 가 마음에 든다면 리뷰를 남겨�
     <string name="widgets_page_subtitle_implementation_title">위젯 페이지 부제목</string>
     <string name="play_music_title">음악 재생</string>
     <string name="play_music_summary">"ROM이 있는 위치의 'music' 폴더에 있는 배경 음악을 재생합니다。"</string>
+    <string name="arcade_mode">아케이드 모드</string>
+    <string name="arcade_settings_category">아케이드 모드</string>
+    <string name="ui_interface_mode_category">인터페이스 모드</string>
+    <string name="ui_interface_mode_title">기본 인터페이스</string>
+    <string name="ui_interface_mode_summary">아케이드 인터페이스(컨트롤러 중심 전체 화면) 또는 모바일 인터페이스 (오리지널) 중에서 선택합니다.</string>
+    <string name="ui_interface_mode_arcade">아케이드 인터페이스</string>
+    <string name="ui_interface_mode_mobile_original">모바일 인터페이스 (오리지널)</string>
+    <string name="arcade_scroll_direction_title">아케이드 시스템 방향</string>
+    <string name="arcade_scroll_direction_summary">가로 회전목마 또는 세로 목록 중에서 선택합니다.</string>
+    <string name="arcade_android_apps_filter_title">Android 앱 플랫폼</string>
+    <string name="arcade_android_apps_filter_summary">모든 앱 또는 감지된 게임만 표시합니다.</string>
+    <string name="arcade_legend_select">선택</string>
+    <string name="arcade_legend_back">뒤로</string>
+    <string name="arcade_legend_menu">옵션</string>
+    <string name="arcade_legend_start">시작</string>
+    <string name="arcade_android_apps_title">앱</string>
+    <string name="arcade_menu_switch_to_mobile">모바일 인터페이스 (오리지널)로 전환</string>
+    <string name="arcade_menu_appearance">화면 설정</string>
+    <string name="arcade_menu_settings">일반 설정</string>
+    <string name="arcade_menu_toggle_orientation">방향 전환 (가로 / 세로)</string>
+    <string name="arcade_menu_reload_systems">시스템 다시 불러오기</string>
+    <string name="arcade_menu_title">아케이드 메뉴</string>
+    <string name="arcade_menu_close">닫기</string>
 </resources>

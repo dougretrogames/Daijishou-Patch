@@ -194,4 +194,27 @@
     <string name="template_percent">%1$d procent.</string>
     <string name="v7_preference_off">UIT</string>
     <string name="v7_preference_on">AAN</string>
+    <string name="arcade_mode">Arcade-modus</string>
+    <string name="arcade_settings_category">Arcade-modus</string>
+    <string name="ui_interface_mode_category">Interfacemodus</string>
+    <string name="ui_interface_mode_title">Hoofdinterface</string>
+    <string name="ui_interface_mode_summary">Kies tussen de Arcade-interface (volledig scherm voor controllers) of Mobiele interface (origineel).</string>
+    <string name="ui_interface_mode_arcade">Arcade-interface</string>
+    <string name="ui_interface_mode_mobile_original">Mobiele interface (origineel)</string>
+    <string name="arcade_scroll_direction_title">Oriëntatie Arcade-systemen</string>
+    <string name="arcade_scroll_direction_summary">Kies tussen horizontale carrousel of verticale lijst.</string>
+    <string name="arcade_android_apps_filter_title">Android Apps-platform</string>
+    <string name="arcade_android_apps_filter_summary">Alle apps weergeven of alleen gedetecteerde games.</string>
+    <string name="arcade_legend_select">SELECTEREN</string>
+    <string name="arcade_legend_back">TERUG</string>
+    <string name="arcade_legend_menu">OPTIES</string>
+    <string name="arcade_legend_start">START</string>
+    <string name="arcade_android_apps_title">Apps</string>
+    <string name="arcade_menu_switch_to_mobile">Overschakelen naar Mobiele interface (origineel)</string>
+    <string name="arcade_menu_appearance">Uiterlijkinstellingen</string>
+    <string name="arcade_menu_settings">Algemene instellingen</string>
+    <string name="arcade_menu_toggle_orientation">Oriëntatie wisselen (Horizontaal / Verticaal)</string>
+    <string name="arcade_menu_reload_systems">Systemen opnieuw laden</string>
+    <string name="arcade_menu_title">Arcade-menu</string>
+    <string name="arcade_menu_close">Sluiten</string>
 </resources>

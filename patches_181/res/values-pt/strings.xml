@@ -1047,4 +1047,27 @@ Por favor, deixe um comentário para Daijishō na Google Play Store se você gos
     <string name="searchview_clear_text_content_description">Limpar texto</string>
     <string name="play_music_title">Reproduzir músicas</string>
     <string name="play_music_summary">"Reproduzir músicas de fundo encontradas na pasta 'music' de onde as roms estão localizadas."</string>
+    <string name="arcade_mode">Modo Arcade</string>
+    <string name="arcade_settings_category">Modo Arcade</string>
+    <string name="ui_interface_mode_category">Modo de Interface</string>
+    <string name="ui_interface_mode_title">Interface Principal</string>
+    <string name="ui_interface_mode_summary">Escolha entre a Interface Arcade (tela cheia com foco em controles) ou a Interface Mobile (Original).</string>
+    <string name="ui_interface_mode_arcade">Interface Arcade</string>
+    <string name="ui_interface_mode_mobile_original">Interface Mobile (Original)</string>
+    <string name="arcade_scroll_direction_title">Orientação dos Sistemas Arcade</string>
+    <string name="arcade_scroll_direction_summary">Escolha entre carrossel horizontal ou lista vertical de sistemas.</string>
+    <string name="arcade_android_apps_filter_title">Plataforma Android Apps</string>
+    <string name="arcade_android_apps_filter_summary">Exibir todos os aplicativos instalados ou apenas jogos na lista Android.</string>
+    <string name="arcade_legend_select">SELECIONAR</string>
+    <string name="arcade_legend_back">VOLTAR</string>
+    <string name="arcade_legend_menu">OPÇÕES</string>
+    <string name="arcade_legend_start">INICIAR</string>
+    <string name="arcade_android_apps_title">Apps</string>
+    <string name="arcade_menu_switch_to_mobile">Alternar para Interface Mobile (Original)</string>
+    <string name="arcade_menu_appearance">Configurações de Aparência</string>
+    <string name="arcade_menu_settings">Configurações Gerais</string>
+    <string name="arcade_menu_toggle_orientation">Alternar Orientação (Horizontal / Vertical)</string>
+    <string name="arcade_menu_reload_systems">Recarregar Sistemas</string>
+    <string name="arcade_menu_title">Menu Arcade</string>
+    <string name="arcade_menu_close">Fechar</string>
 </resources>

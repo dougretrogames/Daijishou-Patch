@@ -194,4 +194,27 @@
     <string name="template_percent">%1$d في المئة.</string>
     <string name="v7_preference_off">إيقاف</string>
     <string name="v7_preference_on">مفعّلة</string>
+    <string name="arcade_mode">وضع الآركيد</string>
+    <string name="arcade_settings_category">وضع الآركيد</string>
+    <string name="ui_interface_mode_category">وضع الواجهة</string>
+    <string name="ui_interface_mode_title">الواجهة الرئيسية</string>
+    <string name="ui_interface_mode_summary">اختر بين واجهة الآركيد (ملء الشاشة لأجهزة التحكم) أو واجهة الهاتف (الأصلية).</string>
+    <string name="ui_interface_mode_arcade">واجهة الآركيد</string>
+    <string name="ui_interface_mode_mobile_original">واجهة الهاتف (الأصلية)</string>
+    <string name="arcade_scroll_direction_title">اتجاه أنظمة الآركيد</string>
+    <string name="arcade_scroll_direction_summary">اختر بين العرض الأفقي أو القائمة الرأسية.</string>
+    <string name="arcade_android_apps_filter_title">منصة تطبيقات Android</string>
+    <string name="arcade_android_apps_filter_summary">عرض جميع التطبيقات أو الألعاب المكتشفة فقط.</string>
+    <string name="arcade_legend_select">تحديد</string>
+    <string name="arcade_legend_back">رجوع</string>
+    <string name="arcade_legend_menu">خيارات</string>
+    <string name="arcade_legend_start">بدء</string>
+    <string name="arcade_android_apps_title">تطبيقات</string>
+    <string name="arcade_menu_switch_to_mobile">التبديل إلى واجهة الهاتف (الأصلية)</string>
+    <string name="arcade_menu_appearance">إعدادات المظهر</string>
+    <string name="arcade_menu_settings">الإعدادات العامة</string>
+    <string name="arcade_menu_toggle_orientation">تبديل الاتجاه (أفقي / رأسي)</string>
+    <string name="arcade_menu_reload_systems">إعادة تحميل الأنظمة</string>
+    <string name="arcade_menu_title">قائمة الآركيد</string>
+    <string name="arcade_menu_close">إغلاق</string>
 </resources>

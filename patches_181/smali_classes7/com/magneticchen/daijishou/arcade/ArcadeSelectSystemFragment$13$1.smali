@@ -33,7 +33,7 @@
         }
     .end annotation
 
-    .line 692
+    .line 760
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13$1;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public run()V
     .locals 2
 
-    .line 695
+    .line 763
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13$1;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;
 
     iget-object v0, v0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->val$outgoingView:Landroid/widget/ImageView;
@@ -55,7 +55,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 696
+    .line 764
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13$1;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;
 
     iget-object v0, v0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->val$outgoingView:Landroid/widget/ImageView;
@@ -64,7 +64,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setAlpha(F)V
 
-    .line 697
+    .line 765
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13$1;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;
 
     iget-object v0, v0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
@@ -73,7 +73,7 @@
 
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$1700(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)I
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$1800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)I
 
     move-result p0
 
@@ -87,7 +87,7 @@
     const/4 p0, 0x0
 
     :goto_0
-    invoke-static {v0, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$1702(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;I)I
+    invoke-static {v0, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$1802(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;I)I
 
     return-void
 .end method

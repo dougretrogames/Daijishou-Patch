@@ -194,4 +194,27 @@
     <string name="template_percent">%1$d protsenti.</string>
     <string name="v7_preference_off">VÄLJAS</string>
     <string name="v7_preference_on">SEES</string>
+    <string name="arcade_mode">Arkaadirežiim</string>
+    <string name="arcade_settings_category">Arkaadirežiim</string>
+    <string name="ui_interface_mode_category">Liideserežiim</string>
+    <string name="ui_interface_mode_title">Põhiliides</string>
+    <string name="ui_interface_mode_summary">Valige mänguautomaadi liidese (täisekraan juhtpuldi jaoks) või mobiililiidese (algne) vahel.</string>
+    <string name="ui_interface_mode_arcade">Mänguautomaadi liides</string>
+    <string name="ui_interface_mode_mobile_original">Mobiililiides (algne)</string>
+    <string name="arcade_scroll_direction_title">Arkaadisüsteemide paigutus</string>
+    <string name="arcade_scroll_direction_summary">Valige horisontaalse karusselli või vertikaalse loendi vahel.</string>
+    <string name="arcade_android_apps_filter_title">Androidi rakenduste platvorm</string>
+    <string name="arcade_android_apps_filter_summary">Kuva kõik rakendused või ainult tuvastatud mängud.</string>
+    <string name="arcade_legend_select">VALI</string>
+    <string name="arcade_legend_back">TAGASI</string>
+    <string name="arcade_legend_menu">VALIKUD</string>
+    <string name="arcade_legend_start">ALUSTA</string>
+    <string name="arcade_android_apps_title">Rakendused</string>
+    <string name="arcade_menu_switch_to_mobile">Lülitu mobiililiidesele (algne)</string>
+    <string name="arcade_menu_appearance">Välimuse seaded</string>
+    <string name="arcade_menu_settings">Üldseaded</string>
+    <string name="arcade_menu_toggle_orientation">Muuda suunda (Horisontaalne / Vertikaalne)</string>
+    <string name="arcade_menu_reload_systems">Laadi süsteemid uuesti</string>
+    <string name="arcade_menu_title">Arkaadimenüü</string>
+    <string name="arcade_menu_close">Sulge</string>
 </resources>

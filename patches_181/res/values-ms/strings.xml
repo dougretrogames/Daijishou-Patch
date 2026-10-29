@@ -194,4 +194,27 @@
     <string name="template_percent">Peratus %1$d.</string>
     <string name="v7_preference_off">MATI</string>
     <string name="v7_preference_on">HIDUP</string>
+    <string name="arcade_mode">Mod Arked</string>
+    <string name="arcade_settings_category">Mod Arked</string>
+    <string name="ui_interface_mode_category">Mod Antara Muka</string>
+    <string name="ui_interface_mode_title">Antara Muka Utama</string>
+    <string name="ui_interface_mode_summary">Pilih antara Antara Muka Arked (skrin penuh untuk alat kawalan) atau Antara Muka Mudah Alih (Asal).</string>
+    <string name="ui_interface_mode_arcade">Antara Muka Arked</string>
+    <string name="ui_interface_mode_mobile_original">Antara Muka Mudah Alih (Asal)</string>
+    <string name="arcade_scroll_direction_title">Orientasi sistem Arked</string>
+    <string name="arcade_scroll_direction_summary">Pilih antara karusel mendatar atau senarai menegak.</string>
+    <string name="arcade_android_apps_filter_title">Platform Aplikasi Android</string>
+    <string name="arcade_android_apps_filter_summary">Tunjukkan semua aplikasi atau hanya permainan yang dikesan.</string>
+    <string name="arcade_legend_select">PILIH</string>
+    <string name="arcade_legend_back">KEMBALI</string>
+    <string name="arcade_legend_menu">PILIHAN</string>
+    <string name="arcade_legend_start">MULA</string>
+    <string name="arcade_android_apps_title">Aplikasi</string>
+    <string name="arcade_menu_switch_to_mobile">Tukar ke Antara Muka Mudah Alih (Asal)</string>
+    <string name="arcade_menu_appearance">Tetapan Rupa</string>
+    <string name="arcade_menu_settings">Tetapan Umum</string>
+    <string name="arcade_menu_toggle_orientation">Tukar Orientasi (Mendatar / Menegak)</string>
+    <string name="arcade_menu_reload_systems">Muat Semula Sistem</string>
+    <string name="arcade_menu_title">Menu Arked</string>
+    <string name="arcade_menu_close">Tutup</string>
 </resources>

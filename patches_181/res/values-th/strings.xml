@@ -194,4 +194,27 @@
     <string name="template_percent">%1$d เปอร์เซ็นต์</string>
     <string name="v7_preference_off">ปิด</string>
     <string name="v7_preference_on">เปิด</string>
+    <string name="arcade_mode">โหมดอาร์เคด</string>
+    <string name="arcade_settings_category">โหมดอาร์เคด</string>
+    <string name="ui_interface_mode_category">โหมดอินเทอร์เฟซ</string>
+    <string name="ui_interface_mode_title">อินเทอร์เฟซหลัก</string>
+    <string name="ui_interface_mode_summary">เลือกระหว่างอินเทอร์เฟซอาร์เคด (เต็มหน้าจอสำหรับคอนโทรลเลอร์) หรืออินเทอร์เฟซมือถือ (ดั้งเดิม)</string>
+    <string name="ui_interface_mode_arcade">อินเทอร์เฟซอาร์เคด</string>
+    <string name="ui_interface_mode_mobile_original">อินเทอร์เฟซมือถือ (ดั้งเดิม)</string>
+    <string name="arcade_scroll_direction_title">การจัดวางระบบอาร์เคด</string>
+    <string name="arcade_scroll_direction_summary">เลือกระหว่างภาพหมุนแนวนอนหรือรายการแนวตั้ง</string>
+    <string name="arcade_android_apps_filter_title">แพลตฟอร์มแอป Android</string>
+    <string name="arcade_android_apps_filter_summary">แสดงแอปทั้งหมดหรือเฉพาะเกมที่ตรวจพบ</string>
+    <string name="arcade_legend_select">เลือก</string>
+    <string name="arcade_legend_back">กลับ</string>
+    <string name="arcade_legend_menu">ตัวเลือก</string>
+    <string name="arcade_legend_start">เริ่ม</string>
+    <string name="arcade_android_apps_title">แอป</string>
+    <string name="arcade_menu_switch_to_mobile">สลับไปยังอินเทอร์เฟซมือถือ (ดั้งเดิม)</string>
+    <string name="arcade_menu_appearance">การตั้งค่าลักษณะที่ปรากฏ</string>
+    <string name="arcade_menu_settings">การตั้งค่าทั่วไป</string>
+    <string name="arcade_menu_toggle_orientation">สลับการวางแนว (แนวนอน / แนวตั้ง)</string>
+    <string name="arcade_menu_reload_systems">โหลดระบบใหม่</string>
+    <string name="arcade_menu_title">เมนูอาร์เคด</string>
+    <string name="arcade_menu_close">ปิด</string>
 </resources>

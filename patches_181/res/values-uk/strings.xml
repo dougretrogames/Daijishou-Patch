@@ -194,4 +194,27 @@
     <string name="template_percent">Відсотків: %1$d.</string>
     <string name="v7_preference_off">ВИМКНЕНО</string>
     <string name="v7_preference_on">УВІМКНЕНО</string>
+    <string name="arcade_mode">Режим Аркади</string>
+    <string name="arcade_settings_category">Режим Аркади</string>
+    <string name="ui_interface_mode_category">Режим інтерфейсу</string>
+    <string name="ui_interface_mode_title">Основний інтерфейс</string>
+    <string name="ui_interface_mode_summary">Оберіть між Аркадним інтерфейсом (повноекранний для геймпада) або Мобільним інтерфейсом (Оригінал).</string>
+    <string name="ui_interface_mode_arcade">Аркадний інтерфейс</string>
+    <string name="ui_interface_mode_mobile_original">Мобільний інтерфейс (Оригінал)</string>
+    <string name="arcade_scroll_direction_title">Орієнтація систем Аркади</string>
+    <string name="arcade_scroll_direction_summary">Виберіть між горизонтальною каруселлю або вертикальним списком.</string>
+    <string name="arcade_android_apps_filter_title">Платформа додатків Android</string>
+    <string name="arcade_android_apps_filter_summary">Показувати всі додатки або лише виявлені ігри.</string>
+    <string name="arcade_legend_select">ВИБРАТИ</string>
+    <string name="arcade_legend_back">НАЗАД</string>
+    <string name="arcade_legend_menu">ОПЦІЇ</string>
+    <string name="arcade_legend_start">СТАРТ</string>
+    <string name="arcade_android_apps_title">Додатки</string>
+    <string name="arcade_menu_switch_to_mobile">Перемкнутися на Мобільний інтерфейс (Оригінал)</string>
+    <string name="arcade_menu_appearance">Налаштування вигляду</string>
+    <string name="arcade_menu_settings">Загальні налаштування</string>
+    <string name="arcade_menu_toggle_orientation">Змінити орієнтацію (Горизонтальна / Вертикальна)</string>
+    <string name="arcade_menu_reload_systems">Перезавантажити системи</string>
+    <string name="arcade_menu_title">Меню Аркади</string>
+    <string name="arcade_menu_close">Закрити</string>
 </resources>

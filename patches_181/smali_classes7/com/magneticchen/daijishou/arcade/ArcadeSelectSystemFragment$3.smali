@@ -49,7 +49,7 @@
     .line 151
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$3;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$400(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$500(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
 
     return-void
 .end method

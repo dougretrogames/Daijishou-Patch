@@ -1131,4 +1131,27 @@ URI प्राधिकरण: %s"</string>
     <string name="widgets_page_subtitle_implementation_title">Widgets पृष्ठ उपशीर्षक</string>
     <string name="play_music_title">संगीत चलाएं</string>
     <string name="play_music_summary">"जहां ROM स्थित हैं वहां 'music' फ़ोल्डर में मिलने वाला बैकग्राउंड संगीत चलाएं।"</string>
+    <string name="arcade_mode">आर्केड मोड</string>
+    <string name="arcade_settings_category">आर्केड मोड</string>
+    <string name="ui_interface_mode_category">इंटरफ़ेस मोड</string>
+    <string name="ui_interface_mode_title">मुख्य इंटरफ़ेस</string>
+    <string name="ui_interface_mode_summary">आर्केड इंटरफ़ेस (नियंत्रक के लिए पूर्ण स्क्रीन) या मोबाइल इंटरफ़ेस (मूल) के बीच चयन करें।</string>
+    <string name="ui_interface_mode_arcade">आर्केड इंटरफ़ेस</string>
+    <string name="ui_interface_mode_mobile_original">मोबाइल इंटरफ़ेस (मूल)</string>
+    <string name="arcade_scroll_direction_title">आर्केड सिस्टम का ओरिएंटेशन</string>
+    <string name="arcade_scroll_direction_summary">क्षैतिज कैरोसेल या लंबवत सूची के बीच चयन करें।</string>
+    <string name="arcade_android_apps_filter_title">Android ऐप्स प्लेटफ़ॉर्म</string>
+    <string name="arcade_android_apps_filter_summary">सभी ऐप्स या केवल खोजी गई गेम दिखाएं।</string>
+    <string name="arcade_legend_select">चुनें</string>
+    <string name="arcade_legend_back">वापस</string>
+    <string name="arcade_legend_menu">विकल्प</string>
+    <string name="arcade_legend_start">शुरू</string>
+    <string name="arcade_android_apps_title">ऐप्स</string>
+    <string name="arcade_menu_switch_to_mobile">मोबाइल इंटरफ़ेस (मूल) पर स्विच करें</string>
+    <string name="arcade_menu_appearance">दिखावट सेटिंग्स</string>
+    <string name="arcade_menu_settings">सामान्य सेटिंग्स</string>
+    <string name="arcade_menu_toggle_orientation">दिशा बदलें (क्षैतिज / लंबवत)</string>
+    <string name="arcade_menu_reload_systems">सिस्टम पुनः लोड करें</string>
+    <string name="arcade_menu_title">आर्केड मेनू</string>
+    <string name="arcade_menu_close">बंद करें</string>
 </resources>

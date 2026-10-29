@@ -1193,7 +1193,7 @@ an item."</string>
     <string name="arcade_settings_category">Arcade Mode</string>
     <string name="ui_interface_mode_category">Interface Mode</string>
     <string name="ui_interface_mode_title">Main Interface</string>
-    <string name="ui_interface_mode_summary">Choose between Arcade Interface (fullscreen edge-to-edge controller UI) or Original Daijishō Interface.</string>
+    <string name="ui_interface_mode_summary">Choose between Arcade Interface (fullscreen edge-to-edge controller UI) or Mobile Interface (Original).</string>
     <string name="arcade_scroll_direction_title">Arcade systems orientation</string>
     <string name="arcade_scroll_direction_summary">Choose between horizontal carousel or vertical list.</string>
     <string name="arcade_android_apps_filter_title">Android Apps platform</string>
@@ -1203,4 +1203,13 @@ an item."</string>
     <string name="arcade_legend_menu">OPTIONS</string>
     <string name="arcade_legend_start">START</string>
     <string name="arcade_android_apps_title">Apps</string>
+    <string name="ui_interface_mode_arcade">Arcade Interface</string>
+    <string name="ui_interface_mode_mobile_original">Mobile Interface (Original)</string>
+    <string name="arcade_menu_switch_to_mobile">Switch to Mobile Interface (Original)</string>
+    <string name="arcade_menu_appearance">Appearance Settings</string>
+    <string name="arcade_menu_settings">General Settings</string>
+    <string name="arcade_menu_toggle_orientation">Toggle Orientation (Horizontal / Vertical)</string>
+    <string name="arcade_menu_reload_systems">Reload Systems</string>
+    <string name="arcade_menu_title">Arcade Menu</string>
+    <string name="arcade_menu_close">Close</string>
 </resources>

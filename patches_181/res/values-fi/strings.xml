@@ -194,4 +194,27 @@
     <string name="template_percent">%1$d prosenttia</string>
     <string name="v7_preference_off">POIS KÄYTÖSTÄ</string>
     <string name="v7_preference_on">KÄYTÖSSÄ</string>
+    <string name="arcade_mode">Pelikoketila</string>
+    <string name="arcade_settings_category">Pelikoketila</string>
+    <string name="ui_interface_mode_category">Käyttöliittymätila</string>
+    <string name="ui_interface_mode_title">Pääkäyttöliittymä</string>
+    <string name="ui_interface_mode_summary">Valitse pelikonekäyttöliittymän (koko näyttö ohjaimille) tai mobiilikäyttöliittymän (alkuperäinen) välillä.</string>
+    <string name="ui_interface_mode_arcade">Pelikonekäyttöliittymä</string>
+    <string name="ui_interface_mode_mobile_original">Mobiilikäyttöliittymä (alkuperäinen)</string>
+    <string name="arcade_scroll_direction_title">Pelikonejärjestelmien suunta</string>
+    <string name="arcade_scroll_direction_summary">Valitse vaakasuuntaisen karusellin tai pystysuuntaisen luettelon välillä.</string>
+    <string name="arcade_android_apps_filter_title">Android-sovellusten alusta</string>
+    <string name="arcade_android_apps_filter_summary">Näytä kaikki sovellukset tai vain havaitut pelit.</string>
+    <string name="arcade_legend_select">VALITSE</string>
+    <string name="arcade_legend_back">TAKAISIN</string>
+    <string name="arcade_legend_menu">VALINNAT</string>
+    <string name="arcade_legend_start">KÄYNNISTÄ</string>
+    <string name="arcade_android_apps_title">Sovellukset</string>
+    <string name="arcade_menu_switch_to_mobile">Vaihda mobiilikäyttöliittymään (alkuperäinen)</string>
+    <string name="arcade_menu_appearance">Ulkoasuasetukset</string>
+    <string name="arcade_menu_settings">Yleiset asetukset</string>
+    <string name="arcade_menu_toggle_orientation">Vaihda suuntaa (Vaaka / Pysty)</string>
+    <string name="arcade_menu_reload_systems">Lataa järjestelmät uudelleen</string>
+    <string name="arcade_menu_title">Pelikonevalikko</string>
+    <string name="arcade_menu_close">Sulje</string>
 </resources>

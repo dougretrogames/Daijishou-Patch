@@ -194,4 +194,27 @@
     <string name="template_percent">%1$d persen.</string>
     <string name="v7_preference_off">NONAKTIF</string>
     <string name="v7_preference_on">AKTIF</string>
+    <string name="arcade_mode">Mode Arkade</string>
+    <string name="arcade_settings_category">Mode Arkade</string>
+    <string name="ui_interface_mode_category">Mode Antarmuka</string>
+    <string name="ui_interface_mode_title">Antarmuka Utama</string>
+    <string name="ui_interface_mode_summary">Pilih antara Antarmuka Arkade (layar penuh untuk pengontrol) atau Antarmuka Seluler (Asli).</string>
+    <string name="ui_interface_mode_arcade">Antarmuka Arkade</string>
+    <string name="ui_interface_mode_mobile_original">Antarmuka Seluler (Asli)</string>
+    <string name="arcade_scroll_direction_title">Orientasi sistem Arkade</string>
+    <string name="arcade_scroll_direction_summary">Pilih antara korsel horizontal atau daftar vertikal.</string>
+    <string name="arcade_android_apps_filter_title">Platform Aplikasi Android</string>
+    <string name="arcade_android_apps_filter_summary">Tampilkan semua aplikasi atau hanya game yang terdeteksi.</string>
+    <string name="arcade_legend_select">PILIH</string>
+    <string name="arcade_legend_back">KEMBALI</string>
+    <string name="arcade_legend_menu">OPSI</string>
+    <string name="arcade_legend_start">MULAI</string>
+    <string name="arcade_android_apps_title">Aplikasi</string>
+    <string name="arcade_menu_switch_to_mobile">Beralih ke Antarmuka Seluler (Asli)</string>
+    <string name="arcade_menu_appearance">Pengaturan Tampilan</string>
+    <string name="arcade_menu_settings">Pengaturan Umum</string>
+    <string name="arcade_menu_toggle_orientation">Beralih Orientasi (Horizontal / Vertikal)</string>
+    <string name="arcade_menu_reload_systems">Muat Ulang Sistem</string>
+    <string name="arcade_menu_title">Menu Arkade</string>
+    <string name="arcade_menu_close">Tutup</string>
 </resources>

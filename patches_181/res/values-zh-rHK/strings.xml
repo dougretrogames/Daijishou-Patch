@@ -194,4 +194,27 @@
     <string name="template_percent">百分之 %1$d。</string>
     <string name="v7_preference_off">關閉</string>
     <string name="v7_preference_on">開啟</string>
+    <string name="arcade_mode">街機模式</string>
+    <string name="arcade_settings_category">街機模式</string>
+    <string name="ui_interface_mode_category">介面模式</string>
+    <string name="ui_interface_mode_title">主介面</string>
+    <string name="ui_interface_mode_summary">在街機介面（針對手把最佳化的全螢幕介面）與行動介面（原版）之間進行選擇。</string>
+    <string name="ui_interface_mode_arcade">街機介面</string>
+    <string name="ui_interface_mode_mobile_original">行動介面（原版）</string>
+    <string name="arcade_scroll_direction_title">街機系統排列方向</string>
+    <string name="arcade_scroll_direction_summary">在橫向輪播或縱向清單之間選擇。</string>
+    <string name="arcade_android_apps_filter_title">Android應用程式平台</string>
+    <string name="arcade_android_apps_filter_summary">顯示所有已安裝應用程式或僅顯示偵測到的遊戲。</string>
+    <string name="arcade_legend_select">選擇</string>
+    <string name="arcade_legend_back">返回</string>
+    <string name="arcade_legend_menu">選項</string>
+    <string name="arcade_legend_start">開始</string>
+    <string name="arcade_android_apps_title">應用程式</string>
+    <string name="arcade_menu_switch_to_mobile">切換至行動介面（原版）</string>
+    <string name="arcade_menu_appearance">外觀設定</string>
+    <string name="arcade_menu_settings">一般設定</string>
+    <string name="arcade_menu_toggle_orientation">切換方向（橫向 / 縱向）</string>
+    <string name="arcade_menu_reload_systems">重新載入系統</string>
+    <string name="arcade_menu_title">街機選單</string>
+    <string name="arcade_menu_close">關閉</string>
 </resources>

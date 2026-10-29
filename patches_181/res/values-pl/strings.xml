@@ -194,4 +194,27 @@
     <string name="template_percent">%1$d procent.</string>
     <string name="v7_preference_off">WYŁ.</string>
     <string name="v7_preference_on">WŁ.</string>
+    <string name="arcade_mode">Tryb Arcade</string>
+    <string name="arcade_settings_category">Tryb Arcade</string>
+    <string name="ui_interface_mode_category">Tryb interfejsu</string>
+    <string name="ui_interface_mode_title">Główny interfejs</string>
+    <string name="ui_interface_mode_summary">Wybierz między interfejsem Arcade (pełnoekranowy dla kontrolera) a interfejsem mobilnym (oryginalnym).</string>
+    <string name="ui_interface_mode_arcade">Interfejs Arcade</string>
+    <string name="ui_interface_mode_mobile_original">Interfejs mobilny (oryginalny)</string>
+    <string name="arcade_scroll_direction_title">Orientacja systemów Arcade</string>
+    <string name="arcade_scroll_direction_summary">Wybierz między karuzelą poziomą a listą pionową.</string>
+    <string name="arcade_android_apps_filter_title">Platforma aplikacji Android</string>
+    <string name="arcade_android_apps_filter_summary">Pokaż wszystkie aplikacje lub tylko wykryte gry.</string>
+    <string name="arcade_legend_select">WYBIERZ</string>
+    <string name="arcade_legend_back">WSTECZ</string>
+    <string name="arcade_legend_menu">OPCJE</string>
+    <string name="arcade_legend_start">START</string>
+    <string name="arcade_android_apps_title">Aplikacje</string>
+    <string name="arcade_menu_switch_to_mobile">Przełącz na interfejs mobilny (oryginalny)</string>
+    <string name="arcade_menu_appearance">Ustawienia wyglądu</string>
+    <string name="arcade_menu_settings">Ustawienia ogólne</string>
+    <string name="arcade_menu_toggle_orientation">Zmień orientację (Pozioma / Pionowa)</string>
+    <string name="arcade_menu_reload_systems">Przeładuj systemy</string>
+    <string name="arcade_menu_title">Menu Arcade</string>
+    <string name="arcade_menu_close">Zamknij</string>
 </resources>

@@ -99,4 +99,27 @@
     <string name="template_percent">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‏‏‎‏‎‎‏‎‏‎‎‎‎‏‏‏‎‏‎‎‏‎‏‏‏‎‏‏‏‏‏‎‎‎‏‎‏‏‎‏‏‏‎‏‏‏‎‏‏‏‎‎‎‎‎‏‎‎‏‏‎‏‏‏‎‎‏‎‎‏‏‎%1$d‎‏‎‎‏‏‏‎ percent.‎‏‎‎‏‎</string>
     <string name="v7_preference_off">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‏‏‎‏‎‏‎‏‏‏‎‎‏‎‏‎‎‎‏‎‏‏‎‎‏‏‎‎‏‎‏‏‏‎‏‎‎‎‏‎‏‎‎‏‏‏‎‏‏‏‏‎‏‏‏‎‏‎‏‏‏‎‎‏‏‎OFF‎‏‎‎‏‎</string>
     <string name="v7_preference_on">‎‏‎‎‎‎‎‏‎‏‏‏‎‎‎‎‎‎‏‎‎‏‎‎‎‎‏‏‏‏‎‎‏‏‎‎‏‏‏‏‏‎‎‎‏‎‎‏‏‎‏‎‏‏‎‎‏‏‏‎‏‎‏‎‏‏‎‎‏‏‏‎‎‏‎‎‏‏‎‏‏‎‎‏‏‏‏‎‏‏‎ON‎‏‎‎‏‎</string>
+    <string name="arcade_mode">Arcade mode</string>
+    <string name="arcade_settings_category">Arcade Mode</string>
+    <string name="ui_interface_mode_category">Interface Mode</string>
+    <string name="ui_interface_mode_title">Main Interface</string>
+    <string name="ui_interface_mode_summary">Choose between Arcade Interface (fullscreen edge-to-edge controller UI) or Mobile Interface (Original).</string>
+    <string name="ui_interface_mode_arcade">Arcade Interface</string>
+    <string name="ui_interface_mode_mobile_original">Mobile Interface (Original)</string>
+    <string name="arcade_scroll_direction_title">Arcade systems orientation</string>
+    <string name="arcade_scroll_direction_summary">Choose between horizontal carousel or vertical list.</string>
+    <string name="arcade_android_apps_filter_title">Android Apps platform</string>
+    <string name="arcade_android_apps_filter_summary">Show all applications or only detected games in Android Apps system.</string>
+    <string name="arcade_legend_select">SELECT</string>
+    <string name="arcade_legend_back">BACK</string>
+    <string name="arcade_legend_menu">OPTIONS</string>
+    <string name="arcade_legend_start">START</string>
+    <string name="arcade_android_apps_title">Apps</string>
+    <string name="arcade_menu_switch_to_mobile">Switch to Mobile Interface (Original)</string>
+    <string name="arcade_menu_appearance">Appearance Settings</string>
+    <string name="arcade_menu_settings">General Settings</string>
+    <string name="arcade_menu_toggle_orientation">Toggle Orientation (Horizontal / Vertical)</string>
+    <string name="arcade_menu_reload_systems">Reload Systems</string>
+    <string name="arcade_menu_title">Arcade Menu</string>
+    <string name="arcade_menu_close">Close</string>
 </resources>

@@ -194,4 +194,27 @@
     <string name="template_percent">Yüzde %1$d.</string>
     <string name="v7_preference_off">KAPALI</string>
     <string name="v7_preference_on">AÇIK</string>
+    <string name="arcade_mode">Arcade modu</string>
+    <string name="arcade_settings_category">Arcade Modu</string>
+    <string name="ui_interface_mode_category">Arayüz Modu</string>
+    <string name="ui_interface_mode_title">Ana Arayüz</string>
+    <string name="ui_interface_mode_summary">Arcade Arayüzü (oyun kolu odaklı tam ekran) veya Mobil Arayüz (Orijinal) arasında seçim yapın.</string>
+    <string name="ui_interface_mode_arcade">Arcade Arayüzü</string>
+    <string name="ui_interface_mode_mobile_original">Mobil Arayüz (Orijinal)</string>
+    <string name="arcade_scroll_direction_title">Arcade sistemleri yönü</string>
+    <string name="arcade_scroll_direction_summary">Yatay döngü veya dikey liste arasında seçim yapın.</string>
+    <string name="arcade_android_apps_filter_title">Android Uygulamaları platformu</string>
+    <string name="arcade_android_apps_filter_summary">Tüm uygulamaları veya yalnızca algılanan oyunları göster.</string>
+    <string name="arcade_legend_select">SEÇ</string>
+    <string name="arcade_legend_back">GERİ</string>
+    <string name="arcade_legend_menu">SEÇENEKLER</string>
+    <string name="arcade_legend_start">BAŞLAT</string>
+    <string name="arcade_android_apps_title">Uygulamalar</string>
+    <string name="arcade_menu_switch_to_mobile">Mobil Arayüze (Orijinal) Geç</string>
+    <string name="arcade_menu_appearance">Görünüm Ayarları</string>
+    <string name="arcade_menu_settings">Genel Ayarlar</string>
+    <string name="arcade_menu_toggle_orientation">Yönü Değiştir (Yatay / Dikey)</string>
+    <string name="arcade_menu_reload_systems">Sistemleri Yeniden Yükle</string>
+    <string name="arcade_menu_title">Arcade Menüsü</string>
+    <string name="arcade_menu_close">Kapat</string>
 </resources>

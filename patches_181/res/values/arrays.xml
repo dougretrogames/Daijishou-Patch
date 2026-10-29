@@ -465,8 +465,8 @@
         <item>2</item>
     </string-array>
     <string-array name="ui_interface_mode_array">
-        <item>Interface Arcade (Tela Cheia)</item>
-        <item>Interface Original do Daijishō</item>
+        <item>@string/ui_interface_mode_arcade</item>
+        <item>@string/ui_interface_mode_mobile_original</item>
     </string-array>
     <string-array name="ui_interface_mode_value_array">
         <item>arcade</item>

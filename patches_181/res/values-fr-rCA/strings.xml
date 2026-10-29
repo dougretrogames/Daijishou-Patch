@@ -194,4 +194,27 @@
     <string name="template_percent">%1$d pour cent.</string>
     <string name="v7_preference_off">DÉSACTIVÉ</string>
     <string name="v7_preference_on">ACTIVÉ</string>
+    <string name="arcade_mode">Mode Arcade</string>
+    <string name="arcade_settings_category">Mode Arcade</string>
+    <string name="ui_interface_mode_category">Mode d\'interface</string>
+    <string name="ui_interface_mode_title">Interface principale</string>
+    <string name="ui_interface_mode_summary">Choisissez entre l\'Interface Arcade (plein écran orientée manette) ou l\'Interface Mobile (Originale).</string>
+    <string name="ui_interface_mode_arcade">Interface Arcade</string>
+    <string name="ui_interface_mode_mobile_original">Interface Mobile (Originale)</string>
+    <string name="arcade_scroll_direction_title">Orientation des systèmes Arcade</string>
+    <string name="arcade_scroll_direction_summary">Choisissez entre un carrousel horizontal ou une liste verticale.</string>
+    <string name="arcade_android_apps_filter_title">Plateforme Applications Android</string>
+    <string name="arcade_android_apps_filter_summary">Afficher toutes les applications ou seulement les jeux détectés.</string>
+    <string name="arcade_legend_select">SÉLECTIONNER</string>
+    <string name="arcade_legend_back">RETOUR</string>
+    <string name="arcade_legend_menu">OPTIONS</string>
+    <string name="arcade_legend_start">DÉMARRER</string>
+    <string name="arcade_android_apps_title">Applications</string>
+    <string name="arcade_menu_switch_to_mobile">Passer à l\'Interface Mobile (Originale)</string>
+    <string name="arcade_menu_appearance">Paramètres d\'apparence</string>
+    <string name="arcade_menu_settings">Paramètres généraux</string>
+    <string name="arcade_menu_toggle_orientation">Changer l\'orientation (Horizontal / Vertical)</string>
+    <string name="arcade_menu_reload_systems">Recharger les systèmes</string>
+    <string name="arcade_menu_title">Menu Arcade</string>
+    <string name="arcade_menu_close">Fermer</string>
 </resources>

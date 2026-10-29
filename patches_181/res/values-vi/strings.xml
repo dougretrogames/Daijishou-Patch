@@ -194,4 +194,27 @@
     <string name="template_percent">%1$d%%.</string>
     <string name="v7_preference_off">TẮT</string>
     <string name="v7_preference_on">BẬT</string>
+    <string name="arcade_mode">Chế độ Arcade</string>
+    <string name="arcade_settings_category">Chế độ Arcade</string>
+    <string name="ui_interface_mode_category">Chế độ giao diện</string>
+    <string name="ui_interface_mode_title">Giao diện chính</string>
+    <string name="ui_interface_mode_summary">Chọn giữa Giao diện Arcade (toàn màn hình cho tay cầm) hoặc Giao diện di động (Gốc).</string>
+    <string name="ui_interface_mode_arcade">Giao diện Arcade</string>
+    <string name="ui_interface_mode_mobile_original">Giao diện di động (Gốc)</string>
+    <string name="arcade_scroll_direction_title">Hướng sắp xếp hệ máy Arcade</string>
+    <string name="arcade_scroll_direction_summary">Chọn giữa băng chuyền ngang hoặc danh sách dọc.</string>
+    <string name="arcade_android_apps_filter_title">Nền tảng ứng dụng Android</string>
+    <string name="arcade_android_apps_filter_summary">Hiển thị tất cả ứng dụng hoặc chỉ các trò chơi được phát hiện.</string>
+    <string name="arcade_legend_select">CHỌN</string>
+    <string name="arcade_legend_back">QUAY LẠI</string>
+    <string name="arcade_legend_menu">TÙY CHỌN</string>
+    <string name="arcade_legend_start">BẮT ĐẦU</string>
+    <string name="arcade_android_apps_title">Ứng dụng</string>
+    <string name="arcade_menu_switch_to_mobile">Chuyển sang Giao diện di động (Gốc)</string>
+    <string name="arcade_menu_appearance">Cài đặt giao diện</string>
+    <string name="arcade_menu_settings">Cài đặt chung</string>
+    <string name="arcade_menu_toggle_orientation">Chuyển hướng (Ngang / Dọc)</string>
+    <string name="arcade_menu_reload_systems">Tải lại hệ máy</string>
+    <string name="arcade_menu_title">Menu Arcade</string>
+    <string name="arcade_menu_close">Đóng</string>
 </resources>

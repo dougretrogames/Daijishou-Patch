@@ -1132,4 +1132,27 @@ gesehen."</string>
     <string name="widgets_page_subtitle_implementation_title">Untertitel der Widgets-Seite</string>
     <string name="play_music_title">Musik abspielen</string>
     <string name="play_music_summary">"Hintergrundmusik aus dem Ordner 'music' am Speicherort der ROMs abspielen."</string>
+    <string name="arcade_mode">Arcade-Modus</string>
+    <string name="arcade_settings_category">Arcade-Modus</string>
+    <string name="ui_interface_mode_category">Oberflächenmodus</string>
+    <string name="ui_interface_mode_title">Hauptoberfläche</string>
+    <string name="ui_interface_mode_summary">Wählen Sie zwischen Arcade-Oberfläche (Vollbild für Controller) oder Mobiler Benutzeroberfläche (Original).</string>
+    <string name="ui_interface_mode_arcade">Arcade-Oberfläche</string>
+    <string name="ui_interface_mode_mobile_original">Mobile Benutzeroberfläche (Original)</string>
+    <string name="arcade_scroll_direction_title">Ausrichtung der Arcade-Systeme</string>
+    <string name="arcade_scroll_direction_summary">Wählen Sie zwischen horizontalem Karussell oder vertikaler Liste.</string>
+    <string name="arcade_android_apps_filter_title">Android-Apps-Plattform</string>
+    <string name="arcade_android_apps_filter_summary">Alle Anwendungen oder nur erkannte Spiele anzeigen.</string>
+    <string name="arcade_legend_select">WÄHLEN</string>
+    <string name="arcade_legend_back">ZURÜCK</string>
+    <string name="arcade_legend_menu">OPTIONEN</string>
+    <string name="arcade_legend_start">START</string>
+    <string name="arcade_android_apps_title">Apps</string>
+    <string name="arcade_menu_switch_to_mobile">Zu Mobiler Benutzeroberfläche (Original) wechseln</string>
+    <string name="arcade_menu_appearance">Darstellungseinstellungen</string>
+    <string name="arcade_menu_settings">Allgemeine Einstellungen</string>
+    <string name="arcade_menu_toggle_orientation">Ausrichtung umschalten (Horizontal / Vertikal)</string>
+    <string name="arcade_menu_reload_systems">Systeme neu laden</string>
+    <string name="arcade_menu_title">Arcade-Menü</string>
+    <string name="arcade_menu_close">Schließen</string>
 </resources>

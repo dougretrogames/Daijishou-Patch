@@ -194,4 +194,27 @@
     <string name="template_percent">%1$d procent.</string>
     <string name="v7_preference_off">AV</string>
     <string name="v7_preference_on">PÅ</string>
+    <string name="arcade_mode">Arkadläge</string>
+    <string name="arcade_settings_category">Arkadläge</string>
+    <string name="ui_interface_mode_category">Gränssnittsläge</string>
+    <string name="ui_interface_mode_title">Huvudgränssnitt</string>
+    <string name="ui_interface_mode_summary">Välj mellan Arkadgränssnitt (helskärm för handkontroller) eller Mobilgränssnitt (original).</string>
+    <string name="ui_interface_mode_arcade">Arkadgränssnitt</string>
+    <string name="ui_interface_mode_mobile_original">Mobilgränssnitt (original)</string>
+    <string name="arcade_scroll_direction_title">Riktning för arkadsystem</string>
+    <string name="arcade_scroll_direction_summary">Välj mellan horisontell karusell eller vertikal lista.</string>
+    <string name="arcade_android_apps_filter_title">Android-appar plattform</string>
+    <string name="arcade_android_apps_filter_summary">Visa alla appar eller endast upptäckta spel.</string>
+    <string name="arcade_legend_select">VÄLJ</string>
+    <string name="arcade_legend_back">TILLBAKA</string>
+    <string name="arcade_legend_menu">ALTERNATIV</string>
+    <string name="arcade_legend_start">STARTA</string>
+    <string name="arcade_android_apps_title">Appar</string>
+    <string name="arcade_menu_switch_to_mobile">Växla till Mobilgränssnitt (original)</string>
+    <string name="arcade_menu_appearance">Utseendeinställningar</string>
+    <string name="arcade_menu_settings">Allmänna inställningar</string>
+    <string name="arcade_menu_toggle_orientation">Växla orientering (Horisontell / Vertikal)</string>
+    <string name="arcade_menu_reload_systems">Ladda om system</string>
+    <string name="arcade_menu_title">Arkadmeny</string>
+    <string name="arcade_menu_close">Stäng</string>
 </resources>

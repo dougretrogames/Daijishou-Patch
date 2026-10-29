@@ -43,7 +43,7 @@
         }
     .end annotation
 
-    .line 721
+    .line 797
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
     iput-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;->val$context:Landroid/content/Context;
@@ -60,14 +60,14 @@
 
     if-nez p2, :cond_0
 
-    .line 726
+    .line 802
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;->val$context:Landroid/content/Context;
 
     const-string p2, "original"
 
     invoke-static {p1, p2}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->setInterfaceMode(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 727
+    .line 803
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -76,10 +76,10 @@
 
     if-eqz p0, :cond_4
 
-    .line 729
+    .line 805
     invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->applyUIMode(Landroid/app/Activity;)V
 
-    .line 730
+    .line 806
     invoke-virtual {p0}, Landroid/app/Activity;->recreate()V
 
     return-void
@@ -100,10 +100,10 @@
 
     if-ne p2, p1, :cond_2
 
-    .line 743
+    .line 819
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$1800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$1900(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
 
     return-void
 
@@ -112,14 +112,14 @@
 
     if-ne p2, p1, :cond_4
 
-    .line 745
+    .line 821
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$1900(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$2000(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
 
     return-void
 
-    .line 733
+    .line 809
     :cond_3
     :goto_0
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
@@ -130,7 +130,7 @@
 
     if-eqz p0, :cond_4
 
-    .line 736
+    .line 812
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -154,7 +154,7 @@
 
     move-result-object p1
 
-    .line 737
+    .line 813
     const-string p2, "settings"
 
     const/4 v0, 0x0
@@ -172,7 +172,7 @@
     :catchall_0
     move-exception p0
 
-    .line 739
+    .line 815
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_4

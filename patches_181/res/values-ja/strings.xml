@@ -1131,4 +1131,27 @@ URI Authority: %s"</string>
     <string name="widgets_page_subtitle_implementation_title">Widgetsページのサブタイトル</string>
     <string name="play_music_title">音楽を再生</string>
     <string name="play_music_summary">ROMがある場所の「music」フォルダー内のBGMを再生します。</string>
+    <string name="arcade_mode">アーケードモード</string>
+    <string name="arcade_settings_category">アーケードモード</string>
+    <string name="ui_interface_mode_category">インターフェースモード</string>
+    <string name="ui_interface_mode_title">メインインターフェース</string>
+    <string name="ui_interface_mode_summary">アーケードインターフェース（コントローラー向け全画面）またはモバイルインターフェース（オリジナル）を選択します。</string>
+    <string name="ui_interface_mode_arcade">アーケードインターフェース</string>
+    <string name="ui_interface_mode_mobile_original">モバイルインターフェース（オリジナル）</string>
+    <string name="arcade_scroll_direction_title">アーケードシステムの向き</string>
+    <string name="arcade_scroll_direction_summary">水平カルーセルまたは垂直リストから選択します。</string>
+    <string name="arcade_android_apps_filter_title">Androidアプリプラットフォーム</string>
+    <string name="arcade_android_apps_filter_summary">すべてのアプリを表示するか、検出されたゲームのみを表示します。</string>
+    <string name="arcade_legend_select">選択</string>
+    <string name="arcade_legend_back">戻る</string>
+    <string name="arcade_legend_menu">オプション</string>
+    <string name="arcade_legend_start">開始</string>
+    <string name="arcade_android_apps_title">アプリ</string>
+    <string name="arcade_menu_switch_to_mobile">モバイルインターフェース（オリジナル）に切り替え</string>
+    <string name="arcade_menu_appearance">外観設定</string>
+    <string name="arcade_menu_settings">一般設定</string>
+    <string name="arcade_menu_toggle_orientation">向きの切り替え（水平 / 垂直）</string>
+    <string name="arcade_menu_reload_systems">システムを再読み込み</string>
+    <string name="arcade_menu_title">アーケードメニュー</string>
+    <string name="arcade_menu_close">閉じる</string>
 </resources>

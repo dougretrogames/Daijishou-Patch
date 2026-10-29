@@ -194,4 +194,27 @@
     <string name="template_percent">%1$d százalék.</string>
     <string name="v7_preference_off">KI</string>
     <string name="v7_preference_on">BE</string>
+    <string name="arcade_mode">Játéktermi mód</string>
+    <string name="arcade_settings_category">Játéktermi mód</string>
+    <string name="ui_interface_mode_category">Felület mód</string>
+    <string name="ui_interface_mode_title">Fő felület</string>
+    <string name="ui_interface_mode_summary">Válasszon a Játéktermi felület (teljes képernyő vezérlőkhöz) és a Mobil felület (eredeti) között.</string>
+    <string name="ui_interface_mode_arcade">Játéktermi felület</string>
+    <string name="ui_interface_mode_mobile_original">Mobil felület (eredeti)</string>
+    <string name="arcade_scroll_direction_title">Rendszerek iránya</string>
+    <string name="arcade_scroll_direction_summary">Válasszon vízszintes körhinta vagy függőleges lista között.</string>
+    <string name="arcade_android_apps_filter_title">Android alkalmazások platform</string>
+    <string name="arcade_android_apps_filter_summary">Minden alkalmazás vagy csak felismert játékok megjelenítése.</string>
+    <string name="arcade_legend_select">KIVÁLASZTÁS</string>
+    <string name="arcade_legend_back">VISSZA</string>
+    <string name="arcade_legend_menu">OPCIÓK</string>
+    <string name="arcade_legend_start">INDÍTÁS</string>
+    <string name="arcade_android_apps_title">Alkalmazások</string>
+    <string name="arcade_menu_switch_to_mobile">Váltás a Mobil felületre (eredeti)</string>
+    <string name="arcade_menu_appearance">Megjelenési beállítások</string>
+    <string name="arcade_menu_settings">Általános beállítások</string>
+    <string name="arcade_menu_toggle_orientation">Irány váltása (Vízszintes / Függőleges)</string>
+    <string name="arcade_menu_reload_systems">Rendszerek újratöltése</string>
+    <string name="arcade_menu_title">Játéktermi menü</string>
+    <string name="arcade_menu_close">Bezárás</string>
 </resources>

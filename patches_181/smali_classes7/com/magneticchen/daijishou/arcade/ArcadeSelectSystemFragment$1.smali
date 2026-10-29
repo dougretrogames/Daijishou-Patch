@@ -62,11 +62,11 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getWallpaperPath()Ljava/lang/String;
+    invoke-static {p0, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$100(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Lcom/magneticchen/daijishou/arcade/ArcadeItem;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {p0, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$100(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$200(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Ljava/lang/String;)V
 
     :cond_0
     return-void
