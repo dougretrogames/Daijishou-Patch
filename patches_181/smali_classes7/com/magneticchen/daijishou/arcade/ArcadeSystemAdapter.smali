@@ -136,32 +136,24 @@
 .method private applyItemVisuals(Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;ZZ)V
     .locals 2
 
+    const/high16 v0, 0x3f800000    # 1.0f
+
     if-eqz p2, :cond_0
 
-    const v0, 0x3f8f5c29    # 1.12f
+    move v1, v0
 
     goto :goto_0
 
     :cond_0
-    const v0, 0x3f59999a    # 0.85f
+    const v1, 0x3f0ccccd    # 0.55f
 
     :goto_0
     if-eqz p2, :cond_1
 
-    const/high16 v1, 0x3f800000    # 1.0f
-
-    goto :goto_1
-
-    :cond_1
-    const v1, 0x3ee66666    # 0.45f
-
-    :goto_1
-    if-eqz p2, :cond_2
-
     .line 143
     iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->focusedBadgeDrawable:Landroid/graphics/drawable/Drawable;
 
-    if-eqz p2, :cond_3
+    if-eqz p2, :cond_2
 
     .line 144
     iget-object p2, p1, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;->cardRoot:Landroid/widget/FrameLayout;
@@ -182,19 +174,19 @@
 
     invoke-virtual {p2, p0}, Landroid/widget/FrameLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    goto :goto_2
+    goto :goto_1
 
     .line 147
-    :cond_2
+    :cond_1
     iget-object p0, p1, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;->cardRoot:Landroid/widget/FrameLayout;
 
     const/4 p2, 0x0
 
     invoke-virtual {p0, p2}, Landroid/widget/FrameLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    :cond_3
-    :goto_2
-    if-eqz p3, :cond_4
+    :cond_2
+    :goto_1
+    if-eqz p3, :cond_3
 
     .line 151
     iget-object p0, p1, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;->itemView:Landroid/view/View;
@@ -218,7 +210,7 @@
 
     move-result-object p0
 
-    const-wide/16 p1, 0xb4
+    const-wide/16 p1, 0x78
 
     .line 155
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
@@ -231,7 +223,7 @@
     return-void
 
     .line 158
-    :cond_4
+    :cond_3
     iget-object p0, p1, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setScaleX(F)V

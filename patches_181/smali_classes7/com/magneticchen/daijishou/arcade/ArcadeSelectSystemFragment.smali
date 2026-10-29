@@ -138,7 +138,16 @@
     return-object p0
 .end method
 
-.method static synthetic access$1000(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
+.method static synthetic access$1000(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
+    .locals 0
+
+    .line 55
+    iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->adapter:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
+
+    return-object p0
+.end method
+
+.method static synthetic access$1100(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
     .locals 0
 
     .line 55
@@ -147,7 +156,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$1100(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/RecyclerView;
+.method static synthetic access$1200(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/RecyclerView;
     .locals 0
 
     .line 55
@@ -156,7 +165,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$1202(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Ljava/util/List;)Ljava/util/List;
+.method static synthetic access$1302(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
     .line 55
@@ -165,7 +174,7 @@
     return-object p1
 .end method
 
-.method static synthetic access$1300(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/widget/ProgressBar;
+.method static synthetic access$1400(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/widget/ProgressBar;
     .locals 0
 
     .line 55
@@ -174,7 +183,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$1400(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Lcom/magneticchen/daijishou/arcade/ArcadeAppAdapter;
+.method static synthetic access$1500(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Lcom/magneticchen/daijishou/arcade/ArcadeAppAdapter;
     .locals 0
 
     .line 55
@@ -183,7 +192,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$1500(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/widget/TextView;
+.method static synthetic access$1600(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/widget/TextView;
     .locals 0
 
     .line 55
@@ -192,7 +201,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$1600(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
+.method static synthetic access$1700(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
     .locals 0
 
     .line 55
@@ -201,7 +210,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$1700(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
+.method static synthetic access$1800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
     .locals 0
 
     .line 55
@@ -210,7 +219,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$1800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)I
+.method static synthetic access$1900(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)I
     .locals 0
 
     .line 55
@@ -219,22 +228,13 @@
     return p0
 .end method
 
-.method static synthetic access$1802(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;I)I
+.method static synthetic access$1902(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;I)I
     .locals 0
 
     .line 55
     iput p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->activeWallpaperIndex:I
 
     return p1
-.end method
-
-.method static synthetic access$1900(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
-    .locals 0
-
-    .line 55
-    invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->toggleOrientation()V
-
-    return-void
 .end method
 
 .method static synthetic access$200(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Ljava/lang/String;)V
@@ -250,7 +250,7 @@
     .locals 0
 
     .line 55
-    invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->loadAndPopulatePlatforms()V
+    invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->toggleOrientation()V
 
     return-void
 .end method
@@ -291,7 +291,16 @@
     return-void
 .end method
 
-.method static synthetic access$700(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/RecyclerView;
+.method static synthetic access$700(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
+    .locals 0
+
+    .line 55
+    invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->loadAndPopulatePlatforms()V
+
+    return-void
+.end method
+
+.method static synthetic access$800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/RecyclerView;
     .locals 0
 
     .line 55
@@ -300,20 +309,11 @@
     return-object p0
 .end method
 
-.method static synthetic access$800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/LinearSnapHelper;
+.method static synthetic access$900(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/LinearSnapHelper;
     .locals 0
 
     .line 55
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->snapHelper:Landroidx/recyclerview/widget/LinearSnapHelper;
-
-    return-object p0
-.end method
-
-.method static synthetic access$900(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
-    .locals 0
-
-    .line 55
-    iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->adapter:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
     return-object p0
 .end method
@@ -323,15 +323,15 @@
 
     const/4 v0, 0x0
 
-    .line 535
+    .line 621
     iput-boolean v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->isAppsGridOpen:Z
 
-    .line 537
+    .line 623
     iget-object v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsContainer:Landroid/view/View;
 
     if-eqz v1, :cond_0
 
-    .line 538
+    .line 624
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
     move-result-object v1
@@ -348,24 +348,24 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$10;
+    new-instance v2, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$12;
 
-    invoke-direct {v2, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$10;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
+    invoke-direct {v2, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$12;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
 
     invoke-virtual {v1, v2}, Landroid/view/ViewPropertyAnimator;->withEndAction(Ljava/lang/Runnable;)Landroid/view/ViewPropertyAnimator;
 
     move-result-object v1
 
-    .line 543
+    .line 629
     invoke-virtual {v1}, Landroid/view/ViewPropertyAnimator;->start()V
 
-    .line 546
+    .line 632
     :cond_0
     iget-object v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerLayout:Landroid/view/View;
 
     if-eqz v1, :cond_2
 
-    .line 547
+    .line 633
     iget-boolean v2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->isVerticalOrientation:Z
 
     if-eqz v2, :cond_1
@@ -380,21 +380,21 @@
     :goto_0
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 549
+    .line 635
     :cond_2
     iget-object v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     if-eqz v1, :cond_3
 
-    .line 550
+    .line 636
     invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->setVisibility(I)V
 
-    .line 551
+    .line 637
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->requestFocus()Z
 
-    .line 554
+    .line 640
     :cond_3
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->legendSelectText:Landroid/widget/TextView;
 
@@ -416,7 +416,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 555
+    .line 641
     :cond_4
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->legendBackText:Landroid/widget/TextView;
 
@@ -438,7 +438,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 556
+    .line 642
     :cond_5
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->legendMenuText:Landroid/widget/TextView;
 
@@ -467,7 +467,7 @@
 .method private displayWallpaper(Ljava/lang/String;)V
     .locals 3
 
-    .line 724
+    .line 896
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->isAdded()Z
 
     move-result v0
@@ -482,7 +482,7 @@
 
     goto :goto_3
 
-    .line 726
+    .line 898
     :cond_0
     iget v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->activeWallpaperIndex:I
 
@@ -498,7 +498,7 @@
     :goto_0
     if-nez v0, :cond_2
 
-    .line 727
+    .line 899
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->wallpaperView1:Landroid/widget/ImageView;
 
     goto :goto_1
@@ -506,20 +506,20 @@
     :cond_2
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->wallpaperView2:Landroid/widget/ImageView;
 
-    .line 729
+    .line 901
     :goto_1
     sget-object v2, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 730
+    .line 902
     sget-object v2, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     if-eqz p1, :cond_4
 
-    .line 732
+    .line 904
     invoke-virtual {p1}, Ljava/lang/String;->isEmpty()Z
 
     move-result v2
@@ -528,46 +528,46 @@
 
     goto :goto_2
 
-    .line 737
+    .line 909
     :cond_3
     invoke-static {p0}, Lcom/bumptech/glide/Glide;->with(Landroidx/fragment/app/Fragment;)Lcom/bumptech/glide/RequestManager;
 
     move-result-object v2
 
-    .line 738
+    .line 910
     invoke-virtual {v2, p1}, Lcom/bumptech/glide/RequestManager;->load(Ljava/lang/String;)Lcom/bumptech/glide/RequestBuilder;
 
     move-result-object p1
 
-    .line 739
+    .line 911
     invoke-virtual {p1}, Lcom/bumptech/glide/RequestBuilder;->centerCrop()Lcom/bumptech/glide/request/BaseRequestOptions;
 
     move-result-object p1
 
     check-cast p1, Lcom/bumptech/glide/RequestBuilder;
 
-    .line 740
+    .line 912
     invoke-virtual {p1}, Lcom/bumptech/glide/RequestBuilder;->dontAnimate()Lcom/bumptech/glide/request/BaseRequestOptions;
 
     move-result-object p1
 
     check-cast p1, Lcom/bumptech/glide/RequestBuilder;
 
-    new-instance v2, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;
+    new-instance v2, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$15;
 
-    invoke-direct {v2, p0, v1, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Landroid/widget/ImageView;Landroid/widget/ImageView;)V
+    invoke-direct {v2, p0, v1, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$15;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Landroid/widget/ImageView;Landroid/widget/ImageView;)V
 
-    .line 741
+    .line 913
     invoke-virtual {p1, v2}, Lcom/bumptech/glide/RequestBuilder;->listener(Lcom/bumptech/glide/request/RequestListener;)Lcom/bumptech/glide/RequestBuilder;
 
     move-result-object p0
 
-    .line 772
+    .line 944
     invoke-virtual {p0, v1}, Lcom/bumptech/glide/RequestBuilder;->into(Landroid/widget/ImageView;)Lcom/bumptech/glide/request/target/ViewTarget;
 
     return-void
 
-    .line 733
+    .line 905
     :cond_4
     :goto_2
     invoke-virtual {v0}, Landroid/widget/ImageView;->animate()Landroid/view/ViewPropertyAnimator;
@@ -596,7 +596,7 @@
 .method private getSelectedPlatformIdFromVm()J
     .locals 4
 
-    .line 429
+    .line 456
     :try_start_0
     const-string v0, "com.magneticchen.daijishou.ui.model.LibraryViewModel"
 
@@ -610,7 +610,7 @@
 
     move-result-object v0
 
-    .line 430
+    .line 457
     new-instance v1, Landroidx/lifecycle/ViewModelProvider;
 
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
@@ -623,7 +623,7 @@
 
     move-result-object p0
 
-    .line 431
+    .line 458
     const-string v1, "getSelectedPlatformId"
 
     const/4 v2, 0x0
@@ -634,19 +634,19 @@
 
     move-result-object v0
 
-    .line 432
+    .line 459
     new-array v1, v2, [Ljava/lang/Object;
 
     invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 433
+    .line 460
     instance-of v0, p0, Ljava/lang/Long;
 
     if-eqz v0, :cond_0
 
-    .line 434
+    .line 461
     check-cast p0, Ljava/lang/Long;
 
     invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
@@ -664,149 +664,647 @@
     return-wide v0
 .end method
 
-.method private launchSelectedSystem()V
-    .locals 5
+.method private getShortnameAliases(Ljava/lang/String;)[Ljava/lang/String;
+    .locals 8
 
-    .line 477
-    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->currentlyFocusedItem:Lcom/magneticchen/daijishou/arcade/ArcadeItem;
+    .line 864
+    invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
-    if-nez v0, :cond_0
+    move-result-object p0
 
-    goto :goto_0
+    .line 865
+    const-string p1, "genesis"
 
-    .line 480
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const-string v1, "megadrive"
+
+    const/4 v2, 0x2
+
+    const/4 v3, 0x3
+
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
+
+    if-nez v0, :cond_11
+
+    invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto/16 :goto_8
+
+    .line 868
     :cond_0
-    invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->isAndroidApps()Z
+    const-string p1, "gc"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const-string v1, "gamecube"
+
+    if-nez v0, :cond_10
+
+    invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 481
-    invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->openAppsGrid()V
+    goto/16 :goto_7
 
-    return-void
+    .line 871
+    :cond_1
+    const-string p1, "master"
 
-    .line 486
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const-string v1, "mastersystem"
+
+    if-nez v0, :cond_f
+
+    invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    goto/16 :goto_6
+
+    .line 874
+    :cond_2
+    const-string p1, "tg16"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const-string v1, "pce"
+
+    const-string v6, "pcengine"
+
+    const/4 v7, 0x4
+
+    if-nez v0, :cond_e
+
+    invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_e
+
+    invoke-virtual {v6, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    goto/16 :goto_5
+
+    .line 877
+    :cond_3
+    const-string p1, "tgcd"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const-string v1, "pcecd"
+
+    const-string v6, "pcenginecd"
+
+    if-nez v0, :cond_d
+
+    invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_d
+
+    invoke-virtual {v6, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_4
+
+    goto/16 :goto_4
+
+    .line 880
+    :cond_4
+    const-string p1, "coleco"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const-string v1, "colecovision"
+
+    if-nez v0, :cond_c
+
+    invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_5
+
+    goto/16 :goto_3
+
+    .line 883
+    :cond_5
+    const-string p1, "wsc"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    const-string v1, "ws"
+
+    const-string v6, "wswanc"
+
+    if-nez v0, :cond_b
+
+    invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_b
+
+    invoke-virtual {v6, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    goto :goto_2
+
+    .line 886
+    :cond_6
+    const-string p1, "arcade"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_a
+
+    const-string p1, "mame"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_a
+
+    const-string p1, "fbneo"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_7
+
+    goto :goto_1
+
+    .line 889
+    :cond_7
+    const-string p1, "android"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_9
+
+    const-string p1, "apps"
+
+    invoke-virtual {p1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_8
+
+    goto :goto_0
+
+    .line 892
+    :cond_8
+    new-array p1, v4, [Ljava/lang/String;
+
+    aput-object p0, p1, v5
+
+    return-object p1
+
+    .line 890
+    :cond_9
+    :goto_0
+    new-array p1, v3, [Ljava/lang/String;
+
+    aput-object p0, p1, v5
+
+    const-string p0, "apps"
+
+    aput-object p0, p1, v4
+
+    const-string p0, "android"
+
+    aput-object p0, p1, v2
+
+    return-object p1
+
+    .line 887
+    :cond_a
+    :goto_1
+    new-array p1, v7, [Ljava/lang/String;
+
+    aput-object p0, p1, v5
+
+    const-string p0, "arcade"
+
+    aput-object p0, p1, v4
+
+    const-string p0, "mame"
+
+    aput-object p0, p1, v2
+
+    const-string p0, "fbneo"
+
+    aput-object p0, p1, v3
+
+    return-object p1
+
+    .line 884
+    :cond_b
+    :goto_2
+    new-array v0, v7, [Ljava/lang/String;
+
+    aput-object p0, v0, v5
+
+    aput-object v6, v0, v4
+
+    aput-object p1, v0, v2
+
+    aput-object v1, v0, v3
+
+    return-object v0
+
+    .line 881
+    :cond_c
+    :goto_3
+    new-array v0, v3, [Ljava/lang/String;
+
+    aput-object p0, v0, v5
+
+    aput-object v1, v0, v4
+
+    aput-object p1, v0, v2
+
+    return-object v0
+
+    .line 878
+    :cond_d
+    :goto_4
+    new-array v0, v7, [Ljava/lang/String;
+
+    aput-object p0, v0, v5
+
+    aput-object v6, v0, v4
+
+    aput-object p1, v0, v2
+
+    aput-object v1, v0, v3
+
+    return-object v0
+
+    .line 875
+    :cond_e
+    :goto_5
+    new-array v0, v7, [Ljava/lang/String;
+
+    aput-object p0, v0, v5
+
+    aput-object v6, v0, v4
+
+    aput-object p1, v0, v2
+
+    aput-object v1, v0, v3
+
+    return-object v0
+
+    .line 872
+    :cond_f
+    :goto_6
+    new-array v0, v3, [Ljava/lang/String;
+
+    aput-object p0, v0, v5
+
+    aput-object p1, v0, v4
+
+    aput-object v1, v0, v2
+
+    return-object v0
+
+    .line 869
+    :cond_10
+    :goto_7
+    new-array v0, v3, [Ljava/lang/String;
+
+    aput-object p0, v0, v5
+
+    aput-object p1, v0, v4
+
+    aput-object v1, v0, v2
+
+    return-object v0
+
+    .line 866
+    :cond_11
+    :goto_8
+    new-array v0, v3, [Ljava/lang/String;
+
+    aput-object p0, v0, v5
+
+    aput-object p1, v0, v4
+
+    aput-object v1, v0, v2
+
+    return-object v0
+.end method
+
+.method private launchSelectedSystem()V
+    .locals 8
+
+    .line 508
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->currentlyFocusedItem:Lcom/magneticchen/daijishou/arcade/ArcadeItem;
+
+    if-nez v0, :cond_0
+
+    goto/16 :goto_2
+
+    .line 511
+    :cond_0
+    invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
+
+    move-result-wide v0
+
+    const-wide/16 v2, -0x3e4
+
+    cmp-long v0, v0, v2
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x2
+
+    const/4 v3, 0x0
+
+    if-eqz v0, :cond_7
+
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->currentlyFocusedItem:Lcom/magneticchen/daijishou/arcade/ArcadeItem;
+
+    invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v4, "tools"
+
+    invoke-virtual {v4, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    goto/16 :goto_1
+
+    .line 525
     :cond_1
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->currentlyFocusedItem:Lcom/magneticchen/daijishou/arcade/ArcadeItem;
 
     invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
 
-    move-result-wide v0
+    move-result-wide v4
 
-    const-wide/16 v2, -0x3e6
+    const-wide/16 v6, -0x3e5
 
-    cmp-long v2, v0, v2
+    cmp-long v0, v4, v6
 
-    const/4 v3, 0x1
+    if-eqz v0, :cond_6
 
-    if-nez v2, :cond_2
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->currentlyFocusedItem:Lcom/magneticchen/daijishou/arcade/ArcadeItem;
 
-    .line 489
-    iget-object v2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->adapter:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
-
-    invoke-virtual {v2}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->getItemCount()I
-
-    move-result v2
-
-    const/4 v4, 0x2
-
-    if-le v2, v4, :cond_2
-
-    .line 490
-    iget-object v2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->adapter:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
-
-    invoke-virtual {v2, v3}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->getItem(I)Lcom/magneticchen/daijishou/arcade/ArcadeItem;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_2
-
-    .line 491
-    invoke-virtual {v2}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->isAndroidApps()Z
-
-    move-result v4
-
-    if-nez v4, :cond_2
-
-    .line 492
-    invoke-virtual {v2}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
-
-    move-result-wide v0
-
-    .line 497
-    :cond_2
-    invoke-direct {p0, v0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->setSelectedPlatformIdInVm(J)V
-
-    .line 499
-    invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->requireContext()Landroid/content/Context;
-
-    move-result-object v2
-
-    .line 500
-    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
 
     move-result-object v0
 
-    const/4 v1, 0x0
+    const-string v4, "collections"
 
-    invoke-virtual {v2, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object v0
-
-    .line 501
-    const-string v1, "view_mode"
-
-    invoke-interface {v0, v1, v3}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
+    invoke-virtual {v4, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
-    .line 503
+    if-eqz v0, :cond_2
+
+    goto :goto_0
+
+    .line 531
+    :cond_2
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->currentlyFocusedItem:Lcom/magneticchen/daijishou/arcade/ArcadeItem;
+
+    invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->isAndroidApps()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 532
+    invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->openAppsGrid()V
+
+    return-void
+
+    .line 537
+    :cond_3
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->currentlyFocusedItem:Lcom/magneticchen/daijishou/arcade/ArcadeItem;
+
+    invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
+
+    move-result-wide v4
+
+    const-wide/16 v6, -0x3e6
+
+    cmp-long v0, v4, v6
+
+    if-nez v0, :cond_4
+
+    .line 540
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->adapter:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
+
+    invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->getItemCount()I
+
+    move-result v0
+
+    if-le v0, v2, :cond_4
+
+    .line 541
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->adapter:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
+
+    invoke-virtual {v0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->getItem(I)Lcom/magneticchen/daijishou/arcade/ArcadeItem;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
+    .line 542
+    invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->isAndroidApps()Z
+
+    move-result v1
+
+    if-nez v1, :cond_4
+
+    .line 543
+    invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
+
+    move-result-wide v4
+
+    .line 548
+    :cond_4
+    invoke-direct {p0, v4, v5}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->setSelectedPlatformIdInVm(J)V
+
+    .line 550
+    invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->requireContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 551
+    invoke-static {v4, v5}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1, v3}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v1
+
+    .line 553
+    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v1
+
+    const-string v2, "view_mode"
+
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+
+    move-result-object v1
+
+    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+    .line 555
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     invoke-static {p0}, Landroidx/navigation/Navigation;->findNavController(Landroid/view/View;)Landroidx/navigation/NavController;
 
     move-result-object p0
 
-    .line 504
+    .line 556
     const-string v1, "arcadeToPlatformLibraryGridViewAction"
 
-    invoke-static {v2, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getId(Landroid/content/Context;Ljava/lang/String;)I
+    invoke-static {v0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getId(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v1
 
-    .line 505
-    const-string v3, "arcadeToPlatformLibraryListViewAction"
+    .line 557
+    const-string v2, "arcadeToPlatformLibraryListViewAction"
 
-    invoke-static {v2, v3}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getId(Landroid/content/Context;Ljava/lang/String;)I
+    invoke-static {v0, v2}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getId(Landroid/content/Context;Ljava/lang/String;)I
 
-    move-result v2
+    move-result v0
 
-    if-nez v0, :cond_3
+    if-eqz v0, :cond_5
 
-    if-eqz v2, :cond_3
-
-    .line 508
-    invoke-virtual {p0, v2}, Landroidx/navigation/NavController;->navigate(I)V
+    .line 560
+    invoke-virtual {p0, v0}, Landroidx/navigation/NavController;->navigate(I)V
 
     return-void
 
-    :cond_3
-    if-eqz v1, :cond_4
+    :cond_5
+    if-eqz v1, :cond_8
 
-    .line 510
+    .line 562
     invoke-virtual {p0, v1}, Landroidx/navigation/NavController;->navigate(I)V
 
-    :cond_4
+    return-void
+
+    .line 526
+    :cond_6
     :goto_0
+    invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->openCollectionsDialog()V
+
+    return-void
+
+    .line 512
+    :cond_7
+    :goto_1
+    invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_8
+
+    .line 515
+    :try_start_0
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v0
+
+    const-string v4, "navigatePage"
+
+    new-array v2, v2, [Ljava/lang/Class;
+
+    const-class v5, Ljava/lang/String;
+
+    aput-object v5, v2, v3
+
+    const-class v3, Ljava/lang/Object;
+
+    aput-object v3, v2, v1
+
+    invoke-virtual {v0, v4, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v0
+
+    .line 516
+    const-string v1, "settings"
+
+    const/4 v2, 0x0
+
+    filled-new-array {v1, v2}, [Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    return-void
+
+    :catchall_0
+    move-exception p0
+
+    .line 518
+    invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    :cond_8
+    :goto_2
     return-void
 .end method
 
 .method private loadAndPopulatePlatforms()V
-    .locals 14
+    .locals 15
 
-    .line 342
+    .line 361
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -815,24 +1313,24 @@
 
     goto/16 :goto_8
 
-    .line 345
+    .line 364
     :cond_0
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 348
+    .line 367
     new-instance v3, Lcom/magneticchen/daijishou/arcade/ArcadeItem;
 
     const/4 v9, 0x0
 
     const/4 v10, 0x0
 
-    const-wide/16 v4, -0x3e6
+    const-wide/16 v4, -0x3e5
 
-    const-string v6, "Todos os Jogos"
+    const-string v6, "Cole\u00e7\u00f5es"
 
-    const-string v7, "all_games"
+    const-string v7, "collections"
 
     const/4 v8, 0x0
 
@@ -840,60 +1338,79 @@
 
     invoke-interface {v2, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 350
+    .line 370
+    new-instance v4, Lcom/magneticchen/daijishou/arcade/ArcadeItem;
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    const-wide/16 v5, -0x3e6
+
+    const-string v7, "Todos os Jogos"
+
+    const-string v8, "all_games"
+
+    invoke-direct/range {v4 .. v11}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;-><init>(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+
+    invoke-interface {v2, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 372
     const-string v0, "Daijishou.db"
 
     invoke-virtual {v1, v0}, Landroid/content/Context;->getDatabasePath(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
-    .line 351
+    .line 373
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v3
 
-    const/4 v4, 0x0
+    const/4 v4, 0x1
+
+    const/4 v5, 0x0
 
     if-eqz v3, :cond_9
 
     const/4 v3, 0x0
 
-    .line 355
+    .line 377
     :try_start_0
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0, v3, v4}, Landroid/database/sqlite/SQLiteDatabase;->openDatabase(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)Landroid/database/sqlite/SQLiteDatabase;
+    invoke-static {v0, v3, v5}, Landroid/database/sqlite/SQLiteDatabase;->openDatabase(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)Landroid/database/sqlite/SQLiteDatabase;
 
-    move-result-object v5
+    move-result-object v6
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 356
+    .line 378
     :try_start_1
     const-string v0, "SELECT count(*) FROM PlatformEntity"
 
-    invoke-virtual {v5, v0, v3}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-virtual {v6, v0, v3}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 358
+    .line 380
     invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
 
-    move-result v6
+    move-result v7
 
-    if-eqz v6, :cond_1
+    if-eqz v7, :cond_1
 
-    .line 359
-    invoke-interface {v0, v4}, Landroid/database/Cursor;->getInt(I)I
+    .line 381
+    invoke-interface {v0, v5}, Landroid/database/Cursor;->getInt(I)I
 
-    move-result v6
+    move-result v7
 
-    .line 360
+    .line 382
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
@@ -902,31 +1419,31 @@
     goto :goto_0
 
     :cond_1
-    move v6, v4
+    move v7, v5
 
     :goto_0
-    if-nez v6, :cond_2
+    if-nez v7, :cond_2
 
-    .line 365
+    .line 387
     :try_start_2
     const-string v0, "INSERT INTO PlatformEntity (name, shortname, is_visible, scrape_preview_media, accept_filename_regex, default_player_id, player_id_list, scraper_source_list, box_art_aspect_ratio_id, use_custom_box_art_aspect_ratio, screen_aspect_ratio_id, use_custom_screen_aspect_ratio, items_sync_tree_uri_list, retro_achievements_console_id_list, position, extra) VALUES (\'Super Nintendo Entertainment System\', \'snes\', 1, 0, \'.*\', 0, \'[]\', \'[]\', 0, 0, 0, 0, \'[]\', \'[]\', 0, \'{}\')"
 
-    invoke-virtual {v5, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    invoke-virtual {v6, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 366
+    .line 388
     const-string v0, "INSERT INTO PlatformEntity (name, shortname, is_visible, scrape_preview_media, accept_filename_regex, default_player_id, player_id_list, scraper_source_list, box_art_aspect_ratio_id, use_custom_box_art_aspect_ratio, screen_aspect_ratio_id, use_custom_screen_aspect_ratio, items_sync_tree_uri_list, retro_achievements_console_id_list, position, extra) VALUES (\'Game Boy Advance\', \'gba\', 1, 0, \'.*\', 0, \'[]\', \'[]\', 0, 0, 0, 0, \'[]\', \'[]\', 1, \'{}\')"
 
-    invoke-virtual {v5, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    invoke-virtual {v6, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 367
+    .line 389
     const-string v0, "INSERT INTO PlatformEntity (name, shortname, is_visible, scrape_preview_media, accept_filename_regex, default_player_id, player_id_list, scraper_source_list, box_art_aspect_ratio_id, use_custom_box_art_aspect_ratio, screen_aspect_ratio_id, use_custom_screen_aspect_ratio, items_sync_tree_uri_list, retro_achievements_console_id_list, position, extra) VALUES (\'Sony PlayStation\', \'psx\', 1, 0, \'.*\', 0, \'[]\', \'[]\', 0, 0, 0, 0, \'[]\', \'[]\', 2, \'{}\')"
 
-    invoke-virtual {v5, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    invoke-virtual {v6, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 368
+    .line 390
     const-string v0, "INSERT INTO PlatformEntity (name, shortname, is_visible, scrape_preview_media, accept_filename_regex, default_player_id, player_id_list, scraper_source_list, box_art_aspect_ratio_id, use_custom_box_art_aspect_ratio, screen_aspect_ratio_id, use_custom_screen_aspect_ratio, items_sync_tree_uri_list, retro_achievements_console_id_list, position, extra) VALUES (\'Sega Genesis\', \'genesis\', 1, 0, \'.*\', 0, \'[]\', \'[]\', 0, 0, 0, 0, \'[]\', \'[]\', 3, \'{}\')"
 
-    invoke-virtual {v5, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+    invoke-virtual {v6, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
@@ -936,72 +1453,70 @@
     :catch_0
     move-exception v0
 
-    .line 370
+    .line 392
     :try_start_3
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 374
+    .line 396
     :cond_2
     :goto_1
     const-string v0, "SELECT id, name, shortname, wallpaper_path, thumbnail_path FROM PlatformEntity WHERE is_visible = 1 ORDER BY shortname COLLATE NOCASE ASC"
 
-    invoke-virtual {v5, v0, v3}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+    invoke-virtual {v6, v0, v3}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v3
 
     if-eqz v3, :cond_4
 
-    .line 378
+    .line 400
     invoke-interface {v3}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 380
+    .line 402
     :cond_3
-    invoke-interface {v3, v4}, Landroid/database/Cursor;->getLong(I)J
+    invoke-interface {v3, v5}, Landroid/database/Cursor;->getLong(I)J
 
-    move-result-wide v7
+    move-result-wide v8
 
-    const/4 v0, 0x1
-
-    .line 381
-    invoke-interface {v3, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v9
-
-    const/4 v0, 0x2
-
-    .line 382
-    invoke-interface {v3, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    .line 403
+    invoke-interface {v3, v4}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v10
 
-    const/4 v0, 0x3
+    const/4 v0, 0x2
 
-    .line 383
+    .line 404
     invoke-interface {v3, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v11
 
-    const/4 v0, 0x4
+    const/4 v0, 0x3
 
-    .line 384
+    .line 405
     invoke-interface {v3, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v12
 
-    .line 385
-    new-instance v6, Lcom/magneticchen/daijishou/arcade/ArcadeItem;
+    const/4 v0, 0x4
 
-    const/4 v13, 0x0
+    .line 406
+    invoke-interface {v3, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
-    invoke-direct/range {v6 .. v13}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;-><init>(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    move-result-object v13
 
-    invoke-interface {v2, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    .line 407
+    new-instance v7, Lcom/magneticchen/daijishou/arcade/ArcadeItem;
 
-    .line 386
+    const/4 v14, 0x0
+
+    invoke-direct/range {v7 .. v14}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;-><init>(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+
+    invoke-interface {v2, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 408
     invoke-interface {v3}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result v0
@@ -1014,11 +1529,11 @@
     :cond_4
     if-eqz v3, :cond_5
 
-    .line 391
+    .line 413
     invoke-interface {v3}, Landroid/database/Cursor;->close()V
 
     :cond_5
-    if-eqz v5, :cond_9
+    if-eqz v6, :cond_9
 
     goto :goto_3
 
@@ -1032,16 +1547,16 @@
 
     move-object p0, v0
 
-    move-object v5, v3
+    move-object v6, v3
 
     goto :goto_4
 
     :catch_2
     move-exception v0
 
-    move-object v5, v3
+    move-object v6, v3
 
-    .line 389
+    .line 411
     :goto_2
     :try_start_4
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
@@ -1050,15 +1565,15 @@
 
     if-eqz v3, :cond_6
 
-    .line 391
+    .line 413
     invoke-interface {v3}, Landroid/database/Cursor;->close()V
 
     :cond_6
-    if-eqz v5, :cond_9
+    if-eqz v6, :cond_9
 
-    .line 392
+    .line 414
     :goto_3
-    invoke-virtual {v5}, Landroid/database/sqlite/SQLiteDatabase;->close()V
+    invoke-virtual {v6}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     goto :goto_5
 
@@ -1070,36 +1585,36 @@
     :goto_4
     if-eqz v3, :cond_7
 
-    .line 391
+    .line 413
     invoke-interface {v3}, Landroid/database/Cursor;->close()V
 
     :cond_7
-    if-eqz v5, :cond_8
+    if-eqz v6, :cond_8
 
-    .line 392
-    invoke-virtual {v5}, Landroid/database/sqlite/SQLiteDatabase;->close()V
+    .line 414
+    invoke-virtual {v6}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 393
+    .line 415
     :cond_8
     throw p0
 
-    .line 397
+    .line 419
     :cond_9
     :goto_5
     invoke-static {v1}, Landroidx/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
-    .line 398
+    .line 420
     const-string v3, "arcade_android_apps_filter"
 
-    const-string v5, "0"
+    const-string v6, "0"
 
-    invoke-interface {v0, v3, v5}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-interface {v0, v3, v6}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 399
+    .line 421
     const-string v3, "2"
 
     invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1108,7 +1623,7 @@
 
     if-nez v0, :cond_b
 
-    .line 400
+    .line 422
     const-string v0, "arcade_android_apps_title"
 
     invoke-static {v1, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getString(Landroid/content/Context;Ljava/lang/String;)I
@@ -1117,7 +1632,7 @@
 
     if-eqz v0, :cond_a
 
-    .line 401
+    .line 423
     invoke-virtual {p0, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -1128,68 +1643,97 @@
     const-string v0, "Apps"
 
     :goto_6
-    move-object v8, v0
+    move-object v9, v0
 
-    .line 402
-    new-instance v5, Lcom/magneticchen/daijishou/arcade/ArcadeItem;
+    .line 424
+    new-instance v6, Lcom/magneticchen/daijishou/arcade/ArcadeItem;
+
+    const/4 v12, 0x0
+
+    const/4 v13, 0x1
+
+    const-wide/16 v7, -0x3e7
+
+    const-string v10, "android"
 
     const/4 v11, 0x0
 
-    const/4 v12, 0x1
+    invoke-direct/range {v6 .. v13}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;-><init>(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    const-wide/16 v6, -0x3e7
+    invoke-interface {v2, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    const-string v9, "android"
-
-    const/4 v10, 0x0
-
-    invoke-direct/range {v5 .. v12}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;-><init>(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
-
-    invoke-interface {v2, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    .line 405
+    .line 428
     :cond_b
+    new-instance v7, Lcom/magneticchen/daijishou/arcade/ArcadeItem;
+
+    const/4 v13, 0x0
+
+    const/4 v14, 0x0
+
+    const-wide/16 v8, -0x3e4
+
+    const-string v10, "Configura\u00e7\u00f5es"
+
+    const-string v11, "tools"
+
+    const/4 v12, 0x0
+
+    invoke-direct/range {v7 .. v14}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;-><init>(JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+
+    invoke-interface {v2, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    .line 430
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->adapter:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
     invoke-virtual {v0, v2}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->setItems(Ljava/util/List;)V
 
-    .line 407
+    .line 432
     invoke-interface {v2}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
 
-    if-nez v0, :cond_d
+    if-nez v0, :cond_e
 
-    .line 408
+    .line 433
     invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getSelectedPlatformIdFromVm()J
 
     move-result-wide v0
 
-    .line 409
-    iget-object v2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->adapter:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
+    .line 434
+    iget-object v3, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->adapter:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
-    invoke-virtual {v2, v0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->getPositionOfPlatform(J)I
+    invoke-virtual {v3, v0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->getPositionOfPlatform(J)I
 
     move-result v0
 
-    if-gez v0, :cond_c
+    if-gez v0, :cond_d
+
+    .line 436
+    invoke-interface {v2}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    if-le v0, v4, :cond_c
 
     goto :goto_7
 
     :cond_c
-    move v4, v0
+    move v4, v5
 
-    .line 413
     :goto_7
-    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
+    move v0, v4
 
-    new-instance v1, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;
-
-    invoke-direct {v1, p0, v4}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;I)V
-
-    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->post(Ljava/lang/Runnable;)Z
-
+    .line 440
     :cond_d
+    iget-object v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
+
+    new-instance v2, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$10;
+
+    invoke-direct {v2, p0, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$10;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;I)V
+
+    invoke-virtual {v1, v2}, Landroidx/recyclerview/widget/RecyclerView;->post(Ljava/lang/Runnable;)Z
+
+    :cond_e
     :goto_8
     return-void
 .end method
@@ -1197,7 +1741,7 @@
 .method private loadInstalledApps()V
     .locals 3
 
-    .line 560
+    .line 646
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->cachedAppList:Ljava/util/List;
 
     if-eqz v0, :cond_1
@@ -1208,19 +1752,19 @@
 
     if-nez v0, :cond_1
 
-    .line 561
+    .line 647
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appAdapter:Lcom/magneticchen/daijishou/arcade/ArcadeAppAdapter;
 
     iget-object v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->cachedAppList:Ljava/util/List;
 
     invoke-virtual {v0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeAppAdapter;->setItems(Ljava/util/List;)V
 
-    .line 562
+    .line 648
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsCountText:Landroid/widget/TextView;
 
     if-eqz v0, :cond_0
 
-    .line 563
+    .line 649
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1247,19 +1791,19 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 565
+    .line 651
     :cond_0
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
-    new-instance v1, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$11;
+    new-instance v1, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;
 
-    invoke-direct {v1, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$11;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
+    invoke-direct {v1, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$13;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
 
     invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->post(Ljava/lang/Runnable;)Z
 
     return-void
 
-    .line 574
+    .line 660
     :cond_1
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsLoading:Landroid/widget/ProgressBar;
 
@@ -1269,11 +1813,11 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
-    .line 576
+    .line 662
     :cond_2
-    new-instance v0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$12;
+    new-instance v0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;
 
-    invoke-direct {v0, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$12;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
+    invoke-direct {v0, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
 
     invoke-static {v0}, Landroid/os/AsyncTask;->execute(Ljava/lang/Runnable;)V
 
@@ -1285,10 +1829,10 @@
 
     const/4 v0, 0x1
 
-    .line 516
+    .line 602
     iput-boolean v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->isAppsGridOpen:Z
 
-    .line 518
+    .line 604
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerLayout:Landroid/view/View;
 
     const/16 v1, 0x8
@@ -1297,7 +1841,7 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 519
+    .line 605
     :cond_0
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
@@ -1305,7 +1849,7 @@
 
     invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setVisibility(I)V
 
-    .line 521
+    .line 607
     :cond_1
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsContainer:Landroid/view/View;
 
@@ -1313,17 +1857,17 @@
 
     const/4 v1, 0x0
 
-    .line 522
+    .line 608
     invoke-virtual {v0, v1}, Landroid/view/View;->setAlpha(F)V
 
-    .line 523
+    .line 609
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsContainer:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 524
+    .line 610
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsContainer:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
@@ -1344,7 +1888,7 @@
 
     invoke-virtual {v0}, Landroid/view/ViewPropertyAnimator;->start()V
 
-    .line 527
+    .line 613
     :cond_2
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->legendSelectText:Landroid/widget/TextView;
 
@@ -1354,7 +1898,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 528
+    .line 614
     :cond_3
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->legendBackText:Landroid/widget/TextView;
 
@@ -1364,7 +1908,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 529
+    .line 615
     :cond_4
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->legendMenuText:Landroid/widget/TextView;
 
@@ -1374,7 +1918,7 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 531
+    .line 617
     :cond_5
     invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->loadInstalledApps()V
 
@@ -1384,7 +1928,7 @@
 .method private openArcadeMenu()V
     .locals 10
 
-    .line 776
+    .line 948
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1393,7 +1937,7 @@
 
     return-void
 
-    .line 779
+    .line 951
     :cond_0
     const-string v1, "arcade_menu_switch_to_mobile"
 
@@ -1401,56 +1945,56 @@
 
     move-result v1
 
-    .line 780
+    .line 952
     const-string v2, "arcade_menu_appearance"
 
     invoke-static {v0, v2}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getString(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v2
 
-    .line 781
+    .line 953
     const-string v3, "arcade_menu_settings"
 
     invoke-static {v0, v3}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getString(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v3
 
-    .line 782
+    .line 954
     const-string v4, "arcade_menu_toggle_orientation"
 
     invoke-static {v0, v4}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getString(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v4
 
-    .line 783
+    .line 955
     const-string v5, "arcade_menu_reload_systems"
 
     invoke-static {v0, v5}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getString(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v5
 
-    .line 784
+    .line 956
     const-string v6, "arcade_menu_title"
 
     invoke-static {v0, v6}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getString(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v6
 
-    .line 785
+    .line 957
     const-string v7, "arcade_menu_close"
 
     invoke-static {v0, v7}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getString(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v7
 
-    const/4 v8, 0x5
+    const/16 v8, 0x9
 
-    .line 787
+    .line 959
     new-array v8, v8, [Ljava/lang/CharSequence;
 
     if-eqz v1, :cond_1
 
-    .line 788
+    .line 960
     invoke-virtual {p0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -1465,9 +2009,33 @@
 
     aput-object v1, v8, v9
 
+    const/4 v1, 0x1
+
+    const-string v9, "Importar Backup do ARC Browser (.tar)"
+
+    aput-object v9, v8, v1
+
+    const/4 v1, 0x2
+
+    const-string v9, "Baixar Pacote de Clearlogos (GitHub)"
+
+    aput-object v9, v8, v1
+
+    const/4 v1, 0x3
+
+    const-string v9, "Baixar Temas e Pap\u00e9is de Parede (GitHub)"
+
+    aput-object v9, v8, v1
+
+    const/4 v1, 0x4
+
+    const-string v9, "Baixar Pacotes de Miniaturas (GitHub)"
+
+    aput-object v9, v8, v1
+
     if-eqz v2, :cond_2
 
-    .line 789
+    .line 965
     invoke-virtual {p0, v2}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -1478,13 +2046,13 @@
     const-string v1, "Configura\u00e7\u00f5es de Apar\u00eancia"
 
     :goto_1
-    const/4 v2, 0x1
+    const/4 v2, 0x5
 
     aput-object v1, v8, v2
 
     if-eqz v3, :cond_3
 
-    .line 790
+    .line 966
     invoke-virtual {p0, v3}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -1495,13 +2063,13 @@
     const-string v1, "Configura\u00e7\u00f5es Gerais"
 
     :goto_2
-    const/4 v2, 0x2
+    const/4 v2, 0x6
 
     aput-object v1, v8, v2
 
     if-eqz v4, :cond_4
 
-    .line 791
+    .line 967
     invoke-virtual {p0, v4}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -1512,13 +2080,13 @@
     const-string v1, "Alternar Orienta\u00e7\u00e3o (Horizontal / Vertical)"
 
     :goto_3
-    const/4 v2, 0x3
+    const/4 v2, 0x7
 
     aput-object v1, v8, v2
 
     if-eqz v5, :cond_5
 
-    .line 792
+    .line 968
     invoke-virtual {p0, v5}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -1529,18 +2097,18 @@
     const-string v1, "Recarregar Sistemas"
 
     :goto_4
-    const/4 v2, 0x4
+    const/16 v2, 0x8
 
     aput-object v1, v8, v2
 
-    .line 795
+    .line 971
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v1, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     if-eqz v6, :cond_6
 
-    .line 796
+    .line 972
     invoke-virtual {p0, v6}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v2
@@ -1555,18 +2123,18 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;
+    new-instance v2, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$16;
 
-    invoke-direct {v2, p0, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Landroid/content/Context;)V
+    invoke-direct {v2, p0, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$16;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Landroid/content/Context;)V
 
-    .line 797
+    .line 973
     invoke-virtual {v1, v8, v2}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
     if-eqz v7, :cond_7
 
-    .line 825
+    .line 1041
     invoke-virtual {p0, v7}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getString(I)Ljava/lang/String;
 
     move-result-object p0
@@ -1583,16 +2151,238 @@
 
     move-result-object p0
 
-    .line 826
+    .line 1042
+    invoke-virtual {p0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+
+    return-void
+.end method
+
+.method private openCollectionsDialog()V
+    .locals 4
+
+    .line 567
+    invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    :cond_0
+    const/16 v1, 0x1c
+
+    .line 569
+    new-array v1, v1, [Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    const-string v3, "Alex Kidd"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x1
+
+    const-string v3, "Art of Fighting"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x2
+
+    const-string v3, "Batman"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x3
+
+    const-string v3, "Bomberman"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x4
+
+    const-string v3, "Castlevania"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x5
+
+    const-string v3, "Crash Bandicoot"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x6
+
+    const-string v3, "Dragon Ball Z"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x7
+
+    const-string v3, "Donkey Kong"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x8
+
+    const-string v3, "Double Dragon"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x9
+
+    const-string v3, "Fatal Fury"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0xa
+
+    const-string v3, "Final Fight"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0xb
+
+    const-string v3, "Kirby"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0xc
+
+    const-string v3, "The King of Fighters"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0xd
+
+    const-string v3, "Mario"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0xe
+
+    const-string v3, "Marvel"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0xf
+
+    const-string v3, "Mega Man"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x10
+
+    const-string v3, "Metal Slug"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x11
+
+    const-string v3, "Mortal Kombat"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x12
+
+    const-string v3, "Pac-Man"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x13
+
+    const-string v3, "Pok\u00e9mon"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x14
+
+    const-string v3, "Resident Evil"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x15
+
+    const-string v3, "Samurai Shodown"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x16
+
+    const-string v3, "Sonic"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x17
+
+    const-string v3, "Spider-Man"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x18
+
+    const-string v3, "Street Fighter"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x19
+
+    const-string v3, "Streets of Rage"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x1a
+
+    const-string v3, "TMNT"
+
+    aput-object v3, v1, v2
+
+    const/16 v2, 0x1b
+
+    const-string v3, "The Legend of Zelda"
+
+    aput-object v3, v1, v2
+
+    .line 578
+    new-instance v2, Landroid/app/AlertDialog$Builder;
+
+    invoke-direct {v2, v0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+
+    const-string v0, "Cole\u00e7\u00f5es"
+
+    .line 579
+    invoke-virtual {v2, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object v0
+
+    new-instance v2, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$11;
+
+    invoke-direct {v2, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$11;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
+
+    .line 580
+    invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object p0
+
+    const-string v0, "Fechar"
+
+    const/4 v1, 0x0
+
+    .line 596
+    invoke-virtual {p0, v0, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+
+    move-result-object p0
+
+    .line 597
     invoke-virtual {p0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
 
     return-void
 .end method
 
 .method private resolveWallpaperPath(Lcom/magneticchen/daijishou/arcade/ArcadeItem;)Ljava/lang/String;
-    .locals 8
+    .locals 11
 
-    .line 660
+    .line 746
     const-string v0, ".jpg"
 
     const-string v1, ".png"
@@ -1603,99 +2393,104 @@
 
     return-object v2
 
-    .line 661
+    .line 747
     :cond_0
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getContext()Landroid/content/Context;
 
-    move-result-object p0
+    move-result-object v3
 
-    if-nez p0, :cond_1
+    if-nez v3, :cond_1
 
-    .line 662
+    .line 748
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getWallpaperPath()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 665
+    .line 750
     :cond_1
-    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getWallpaperPath()Ljava/lang/String;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_4
-
-    .line 666
-    invoke-virtual {v3}, Ljava/lang/String;->trim()Ljava/lang/String;
+    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v4
 
-    invoke-virtual {v4}, Ljava/lang/String;->isEmpty()Z
-
-    move-result v4
-
-    if-nez v4, :cond_4
-
-    .line 668
-    :try_start_0
-    const-string v4, "file://"
-
-    invoke-virtual {v3, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_2
-
-    .line 669
-    new-instance v4, Ljava/io/File;
-
-    invoke-static {v3}, Ljava/net/URI;->create(Ljava/lang/String;)Ljava/net/URI;
+    .line 753
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getWallpaperPath()Ljava/lang/String;
 
     move-result-object v5
-
-    invoke-virtual {v5}, Ljava/net/URI;->getPath()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-direct {v4, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    .line 670
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
-
-    move-result v5
 
     if-eqz v5, :cond_4
 
-    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    .line 754
+    invoke-virtual {v5}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v6}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v6
+
+    if-nez v6, :cond_4
+
+    .line 756
+    :try_start_0
+    const-string v6, "file://"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_2
+
+    .line 757
+    new-instance v6, Ljava/io/File;
+
+    invoke-static {v5}, Ljava/net/URI;->create(Ljava/lang/String;)Ljava/net/URI;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/net/URI;->getPath()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-direct {v6, v7}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+
+    .line 758
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_4
+
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 671
+    .line 759
     :cond_2
-    const-string v4, "/"
+    const-string v6, "/"
 
-    invoke-virtual {v3, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    invoke-virtual {v5, v6}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
-    move-result v4
+    move-result v6
 
-    if-eqz v4, :cond_3
+    if-eqz v6, :cond_3
 
-    .line 672
-    new-instance v4, Ljava/io/File;
+    .line 760
+    new-instance v6, Ljava/io/File;
 
-    invoke-direct {v4, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 673
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+    .line 761
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
-    move-result v5
+    move-result v7
 
-    if-eqz v5, :cond_4
+    if-eqz v7, :cond_4
 
-    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p0
     :try_end_0
@@ -1705,202 +2500,202 @@
 
     :catch_0
     :cond_3
-    return-object v3
+    return-object v5
 
-    .line 684
+    .line 772
     :cond_4
     :try_start_1
-    new-instance v3, Ljava/io/File;
+    new-instance v5, Ljava/io/File;
 
-    invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
+    invoke-virtual {v3}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
-    move-result-object v4
+    move-result-object v6
 
-    const-string v5, "platform_wallpapers"
+    const-string v7, "platform_wallpapers"
 
-    invoke-direct {v3, v4, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-direct {v5, v6, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 685
-    invoke-virtual {v3}, Ljava/io/File;->exists()Z
+    .line 773
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
 
-    move-result v4
+    move-result v6
 
-    if-eqz v4, :cond_8
+    if-eqz v6, :cond_8
 
-    invoke-virtual {v3}, Ljava/io/File;->isDirectory()Z
+    invoke-virtual {v5}, Ljava/io/File;->isDirectory()Z
 
-    move-result v4
+    move-result v6
 
-    if-eqz v4, :cond_8
+    if-eqz v6, :cond_8
 
-    .line 686
-    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
-
-    move-result-wide v4
-
-    const-wide/16 v6, 0x0
-
-    cmp-long v4, v4, v6
-
-    if-lez v4, :cond_6
-
-    .line 687
-    new-instance v4, Ljava/io/File;
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
-
+    .line 774
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
 
     move-result-wide v6
 
-    invoke-virtual {v5, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    const-wide/16 v8, 0x0
 
-    move-result-object v5
+    cmp-long v6, v6, v8
 
-    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-lez v6, :cond_6
 
-    move-result-object v5
+    .line 775
+    new-instance v6, Ljava/io/File;
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {v4, v3, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
 
-    .line 688
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+    move-result-wide v8
 
-    move-result v5
+    invoke-virtual {v7, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    if-eqz v5, :cond_5
+    move-result-object v7
 
-    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-direct {v6, v5, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 776
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_5
+
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 689
+    .line 777
     :cond_5
-    new-instance v4, Ljava/io/File;
+    new-instance v6, Ljava/io/File;
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
 
-    move-result-wide v6
+    move-result-wide v8
 
-    invoke-virtual {v5, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8, v9}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v7
 
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v7
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v7
 
-    invoke-direct {v4, v3, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-direct {v6, v5, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 690
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+    .line 778
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
-    move-result v5
+    move-result v7
 
-    if-eqz v5, :cond_6
+    if-eqz v7, :cond_6
 
-    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 692
+    .line 780
     :cond_6
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
 
-    move-result-object v4
+    move-result-object v6
 
-    if-eqz v4, :cond_8
+    if-eqz v6, :cond_8
 
-    .line 693
-    new-instance v4, Ljava/io/File;
+    .line 781
+    new-instance v6, Ljava/io/File;
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v8
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v7
 
-    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v7
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v7
 
-    invoke-direct {v4, v3, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-direct {v6, v5, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 694
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+    .line 782
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
-    move-result v5
+    move-result v7
 
-    if-eqz v5, :cond_7
+    if-eqz v7, :cond_7
 
-    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 695
+    .line 783
     :cond_7
-    new-instance v4, Ljava/io/File;
+    new-instance v6, Ljava/io/File;
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    new-instance v7, Ljava/lang/StringBuilder;
 
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
 
-    move-result-object v6
+    move-result-object v8
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v7
 
-    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object v5
+    move-result-object v7
 
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v7
 
-    invoke-direct {v4, v3, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-direct {v6, v5, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 696
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+    .line 784
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
-    move-result v3
+    move-result v5
 
-    if-eqz v3, :cond_8
+    if-eqz v5, :cond_8
 
-    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p0
     :try_end_1
@@ -1908,105 +2703,428 @@
 
     return-object p0
 
-    .line 703
+    .line 790
     :catch_1
     :cond_8
-    :try_start_2
-    new-instance v3, Ljava/io/File;
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
 
-    invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
+    move-result-wide v5
 
-    move-result-object v4
+    const-wide/16 v7, -0x3e6
 
-    const-string v5, "Daijishou/wallpapers"
+    cmp-long v5, v5, v7
 
-    invoke-direct {v3, v4, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    if-eqz v5, :cond_9
 
-    .line 704
-    invoke-virtual {v3}, Ljava/io/File;->exists()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_a
-
-    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_a
-
-    .line 705
-    new-instance v4, Ljava/io/File;
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v5, "all_games"
 
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
 
     move-result-object v6
 
-    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    move-result-object v5
+    move-result v5
 
-    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-eqz v5, :cond_b
 
-    move-result-object v1
+    .line 791
+    :cond_9
+    new-instance v5, Ljava/io/File;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const-string v6, "2-Jogos/background_allsystems.png"
 
-    move-result-object v1
+    invoke-direct {v5, v4, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    invoke-direct {v4, v3, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    .line 792
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
 
-    .line 706
-    invoke-virtual {v4}, Ljava/io/File;->exists()Z
+    move-result v6
 
-    move-result v1
+    if-eqz v6, :cond_a
 
-    if-eqz v1, :cond_9
-
-    invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 707
-    :cond_9
-    new-instance v1, Ljava/io/File;
+    .line 793
+    :cond_a
+    new-instance v5, Ljava/io/File;
 
-    new-instance v4, Ljava/lang/StringBuilder;
+    const-string v6, "2-Jogos/background_allsystems.jpg"
 
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
+    invoke-direct {v5, v4, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 794
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_b
+
+    invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 797
+    :cond_b
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->isAndroidApps()Z
+
+    move-result v5
+
+    if-nez v5, :cond_c
+
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
+
+    move-result-wide v5
+
+    const-wide/16 v7, -0x3e7
+
+    cmp-long v5, v5, v7
+
+    if-eqz v5, :cond_c
+
+    const-string v5, "android"
 
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v6
 
-    invoke-virtual {v4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    move-result-object p1
+    move-result v5
 
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-nez v5, :cond_c
 
-    move-result-object p1
+    const-string v5, "apps"
 
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v6
 
-    invoke-direct {v1, v3, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
-    .line 708
-    invoke-virtual {v1}, Ljava/io/File;->exists()Z
+    move-result v5
 
-    move-result p1
+    if-eqz v5, :cond_f
 
-    if-eqz p1, :cond_a
+    .line 798
+    :cond_c
+    new-instance v5, Ljava/io/File;
 
-    invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    const-string v6, "2-Jogos/apps/media/background.png"
+
+    invoke-direct {v5, v4, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 799
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_d
+
+    invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 800
+    :cond_d
+    new-instance v5, Ljava/io/File;
+
+    const-string v6, "2-Jogos/apps/media/background.jpg"
+
+    invoke-direct {v5, v4, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 801
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_e
+
+    invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 802
+    :cond_e
+    new-instance v5, Ljava/io/File;
+
+    const-string v6, "2-Jogos/background_apps.png"
+
+    invoke-direct {v5, v4, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 803
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_f
+
+    invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 806
+    :cond_f
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
+
+    move-result-wide v5
+
+    const-wide/16 v7, -0x3e4
+
+    cmp-long v5, v5, v7
+
+    if-eqz v5, :cond_10
+
+    const-string v5, "tools"
+
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_10
+
+    const-string v5, "settings"
+
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_12
+
+    .line 807
+    :cond_10
+    new-instance v5, Ljava/io/File;
+
+    const-string v6, "2-Jogos/background_tools.png"
+
+    invoke-direct {v5, v4, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 808
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_11
+
+    invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 809
+    :cond_11
+    new-instance v5, Ljava/io/File;
+
+    const-string v6, "2-Jogos/background_tools.jpg"
+
+    invoke-direct {v5, v4, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 810
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_12
+
+    invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 813
+    :cond_12
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
+
+    move-result-wide v5
+
+    const-wide/16 v7, -0x3e5
+
+    cmp-long v5, v5, v7
+
+    if-eqz v5, :cond_13
+
+    const-string v5, "collections"
+
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_13
+
+    const-string v5, "colecoes"
+
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_15
+
+    .line 814
+    :cond_13
+    new-instance v5, Ljava/io/File;
+
+    const-string v6, "2-Jogos/background_collections.png"
+
+    invoke-direct {v5, v4, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 815
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_14
+
+    invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 816
+    :cond_14
+    new-instance v5, Ljava/io/File;
+
+    const-string v6, "2-Jogos/background_collections.jpg"
+
+    invoke-direct {v5, v4, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 817
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_15
+
+    invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 822
+    :cond_15
+    :try_start_2
+    new-instance v5, Ljava/io/File;
+
+    const-string v6, "Daijishou/wallpapers"
+
+    invoke-direct {v5, v4, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 823
+    invoke-virtual {v5}, Ljava/io/File;->exists()Z
+
+    move-result v6
+
+    if-eqz v6, :cond_17
+
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
+
+    move-result-object v6
+
+    if-eqz v6, :cond_17
+
+    .line 824
+    new-instance v6, Ljava/io/File;
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-direct {v6, v5, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 825
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_16
+
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 826
+    :cond_16
+    new-instance v6, Ljava/io/File;
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
+
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v6, v5, v0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 827
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_17
+
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p0
     :try_end_2
@@ -2014,29 +3132,300 @@
 
     return-object p0
 
-    .line 714
+    .line 832
     :catch_2
-    :cond_a
-    :try_start_3
-    new-instance p1, Ljava/io/File;
+    :cond_17
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
 
-    invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
+    move-result-object v0
+
+    if-eqz v0, :cond_1c
+
+    .line 833
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getShortnameAliases(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p0
 
+    .line 834
+    array-length p1, p0
+
+    const/4 v0, 0x0
+
+    :goto_0
+    if-ge v0, p1, :cond_1c
+
+    aget-object v5, p0, v0
+
+    .line 835
+    new-instance v6, Ljava/io/File;
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    const-string v8, "2-Jogos"
+
+    invoke-direct {v7, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    sget-object v9, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    sget-object v9, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string v9, "media"
+
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    sget-object v10, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string v10, "background.png"
+
+    invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-direct {v6, v4, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 836
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_18
+
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 837
+    :cond_18
+    new-instance v6, Ljava/io/File;
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    sget-object v10, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    sget-object v10, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v7, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    sget-object v9, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string v9, "background.jpg"
+
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-direct {v6, v4, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 838
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_19
+
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 839
+    :cond_19
+    new-instance v6, Ljava/io/File;
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    sget-object v9, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string v9, "background_"
+
+    invoke-virtual {v7, v9}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-direct {v6, v4, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 840
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+
+    move-result v7
+
+    if-eqz v7, :cond_1a
+
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 841
+    :cond_1a
+    new-instance v6, Ljava/io/File;
+
+    new-instance v7, Ljava/lang/StringBuilder;
+
+    invoke-direct {v7, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    sget-object v8, Ljava/io/File;->separator:Ljava/lang/String;
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    const-string v8, "collection_"
+
+    invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v7
+
+    invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    const-string v7, "_background.png"
+
+    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-direct {v6, v4, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 842
+    invoke-virtual {v6}, Ljava/io/File;->exists()Z
+
+    move-result v5
+
+    if-eqz v5, :cond_1b
+
+    invoke-virtual {v6}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_1b
+    add-int/lit8 v0, v0, 0x1
+
+    goto/16 :goto_0
+
+    .line 847
+    :cond_1c
+    new-instance p0, Ljava/io/File;
+
+    const-string p1, "2-Jogos/default_background.png"
+
+    invoke-direct {p0, v4, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 848
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1d
+
+    .line 849
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 854
+    :cond_1d
+    :try_start_3
+    new-instance p0, Ljava/io/File;
+
+    invoke-virtual {v3}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
+
+    move-result-object p1
+
     const-string v0, "wallpaper"
 
-    invoke-direct {p1, p0, v0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+    invoke-direct {p0, p1, v0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 715
-    invoke-virtual {p1}, Ljava/io/File;->exists()Z
+    .line 855
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
-    move-result p0
+    move-result p1
 
-    if-eqz p0, :cond_b
+    if-eqz p1, :cond_1e
 
-    .line 716
-    invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
+    .line 856
+    invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p0
     :try_end_3
@@ -2045,14 +3434,14 @@
     return-object p0
 
     :catch_3
-    :cond_b
+    :cond_1e
     return-object v2
 .end method
 
 .method private setSelectedPlatformIdInVm(J)V
     .locals 5
 
-    .line 442
+    .line 469
     :try_start_0
     const-string v0, "com.magneticchen.daijishou.ui.model.LibraryViewModel"
 
@@ -2066,7 +3455,7 @@
 
     move-result-object v0
 
-    .line 443
+    .line 470
     new-instance v1, Landroidx/lifecycle/ViewModelProvider;
 
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
@@ -2079,7 +3468,7 @@
 
     move-result-object p0
 
-    .line 444
+    .line 471
     const-string v1, "setSelectedPlatformId"
 
     const/4 v2, 0x1
@@ -2096,7 +3485,7 @@
 
     move-result-object v0
 
-    .line 445
+    .line 472
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -2116,12 +3505,12 @@
 .method private setupAppsRecyclerView()V
     .locals 3
 
-    .line 234
+    .line 253
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->requireContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 235
+    .line 254
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -2143,25 +3532,25 @@
     :cond_0
     const/4 v1, 0x4
 
-    .line 236
+    .line 255
     :goto_0
     new-instance v2, Landroidx/recyclerview/widget/GridLayoutManager;
 
     invoke-direct {v2, v0, v1}, Landroidx/recyclerview/widget/GridLayoutManager;-><init>(Landroid/content/Context;I)V
 
-    .line 237
+    .line 256
     iget-object v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v1, v2}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
 
-    .line 239
+    .line 258
     new-instance v1, Lcom/magneticchen/daijishou/arcade/ArcadeAppAdapter;
 
     invoke-direct {v1, v0, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeAppAdapter;-><init>(Landroid/content/Context;Lcom/magneticchen/daijishou/arcade/ArcadeAppAdapter$OnAppActionListener;)V
 
     iput-object v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appAdapter:Lcom/magneticchen/daijishou/arcade/ArcadeAppAdapter;
 
-    .line 240
+    .line 259
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
@@ -2172,36 +3561,36 @@
 .method private setupRecyclerView(Z)V
     .locals 7
 
-    .line 244
+    .line 263
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->requireContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 246
+    .line 265
     new-instance v1, Landroidx/recyclerview/widget/LinearLayoutManager;
 
     const/4 v2, 0x0
 
     invoke-direct {v1, v0, p1, v2}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(Landroid/content/Context;IZ)V
 
-    .line 247
+    .line 266
     iget-object v3, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v3, v1}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
 
-    .line 249
+    .line 268
     new-instance v3, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
     invoke-direct {v3, v0, p1, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;-><init>(Landroid/content/Context;ZLcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$OnSystemActionListener;)V
 
     iput-object v3, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->adapter:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
-    .line 250
+    .line 269
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0, v3}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$Adapter;)V
 
-    .line 252
+    .line 271
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -2212,7 +3601,7 @@
 
     iget v0, v0, Landroid/util/DisplayMetrics;->density:F
 
-    .line 253
+    .line 272
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
@@ -2223,7 +3612,7 @@
 
     iget v3, v3, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    .line 256
+    .line 275
     iget-object v4, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerLayout:Landroid/view/View;
 
     if-eqz v4, :cond_1
@@ -2237,11 +3626,11 @@
     :cond_0
     move v5, v2
 
-    .line 257
+    .line 276
     :goto_0
     invoke-virtual {v4, v5}, Landroid/view/View;->setVisibility(I)V
 
-    .line 261
+    .line 280
     :cond_1
     iget-object v4, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
@@ -2249,39 +3638,39 @@
 
     move-result-object v4
 
-    .line 262
+    .line 281
     instance-of v5, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
 
     if-eqz v5, :cond_6
 
-    .line 263
+    .line 282
     check-cast v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
 
     const/4 v5, -0x1
 
     if-eqz p1, :cond_3
 
-    const/high16 v6, 0x439b0000    # 310.0f
+    const/high16 v6, 0x43610000    # 225.0f
 
     mul-float/2addr v6, v0
 
     float-to-int v6, v6
 
-    .line 266
+    .line 285
     iput v6, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->width:I
 
-    .line 267
+    .line 286
     iput v2, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->height:I
 
-    .line 268
+    .line 287
     iput v2, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->topToTop:I
 
-    .line 269
+    .line 288
     iget-object v6, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->legendBar:Landroid/view/View;
 
     if-eqz v6, :cond_2
 
-    .line 270
+    .line 289
     invoke-virtual {v6}, Landroid/view/View;->getId()I
 
     move-result v6
@@ -2290,32 +3679,32 @@
 
     goto :goto_1
 
-    .line 272
+    .line 291
     :cond_2
     iput v2, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->bottomToBottom:I
 
-    .line 274
+    .line 293
     :goto_1
     iput v2, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->endToEnd:I
 
-    .line 275
+    .line 294
     iput v5, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->startToStart:I
 
-    const/high16 v5, 0x42100000    # 36.0f
+    const/high16 v5, 0x41400000    # 12.0f
 
     mul-float/2addr v5, v0
 
     float-to-int v5, v5
 
-    .line 276
+    .line 295
     iput v5, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->rightMargin:I
 
-    .line 277
+    .line 296
     iput v2, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->leftMargin:I
 
     goto :goto_2
 
-    .line 279
+    .line 298
     :cond_3
     iput v2, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->width:I
 
@@ -2325,93 +3714,93 @@
 
     float-to-int v6, v6
 
-    .line 280
+    .line 299
     iput v6, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->height:I
 
-    .line 281
+    .line 300
     iput v5, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->topToTop:I
 
-    .line 282
+    .line 301
     iput v5, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->bottomToBottom:I
 
-    .line 283
+    .line 302
     iget-object v5, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerLayout:Landroid/view/View;
 
     if-eqz v5, :cond_4
 
-    .line 284
+    .line 303
     invoke-virtual {v5}, Landroid/view/View;->getId()I
 
     move-result v5
 
     iput v5, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->topToBottom:I
 
-    .line 286
+    .line 305
     :cond_4
     iget-object v5, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->legendBar:Landroid/view/View;
 
     if-eqz v5, :cond_5
 
-    .line 287
+    .line 306
     invoke-virtual {v5}, Landroid/view/View;->getId()I
 
     move-result v5
 
     iput v5, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->bottomToTop:I
 
-    .line 289
+    .line 308
     :cond_5
     iput v2, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->startToStart:I
 
-    .line 290
+    .line 309
     iput v2, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->endToEnd:I
 
-    .line 291
+    .line 310
     iput v2, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->rightMargin:I
 
-    .line 292
+    .line 311
     iput v2, v4, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->leftMargin:I
 
-    .line 294
+    .line 313
     :goto_2
     iget-object v2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v2, v4}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 297
+    .line 316
     :cond_6
     iget-object v2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
-    new-instance v4, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$7;
+    new-instance v4, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;
 
-    invoke-direct {v4, p0, p1, v0, v3}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$7;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;ZFI)V
+    invoke-direct {v4, p0, p1, v0, v3}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;ZFI)V
 
     invoke-virtual {v2, v4}, Landroidx/recyclerview/widget/RecyclerView;->post(Ljava/lang/Runnable;)Z
 
-    .line 315
+    .line 334
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->snapHelper:Landroidx/recyclerview/widget/LinearSnapHelper;
 
     if-nez p1, :cond_7
 
-    .line 316
+    .line 335
     new-instance p1, Landroidx/recyclerview/widget/LinearSnapHelper;
 
     invoke-direct {p1}, Landroidx/recyclerview/widget/LinearSnapHelper;-><init>()V
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->snapHelper:Landroidx/recyclerview/widget/LinearSnapHelper;
 
-    .line 317
+    .line 336
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/LinearSnapHelper;->attachToRecyclerView(Landroidx/recyclerview/widget/RecyclerView;)V
 
-    .line 320
+    .line 339
     :cond_7
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
-    new-instance v0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;
+    new-instance v0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;
 
-    invoke-direct {v0, p0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Landroidx/recyclerview/widget/LinearLayoutManager;)V
+    invoke-direct {v0, p0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Landroidx/recyclerview/widget/LinearLayoutManager;)V
 
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->addOnScrollListener(Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;)V
 
@@ -2421,7 +3810,7 @@
 .method private toggleOrientation()V
     .locals 3
 
-    .line 830
+    .line 1046
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -2430,20 +3819,20 @@
 
     return-void
 
-    .line 832
+    .line 1048
     :cond_0
     invoke-static {v0}, Landroidx/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
-    .line 833
+    .line 1049
     iget-boolean v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->isVerticalOrientation:Z
 
     xor-int/lit8 v1, v1, 0x1
 
     iput-boolean v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->isVerticalOrientation:Z
 
-    .line 834
+    .line 1050
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
@@ -2468,12 +3857,12 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 835
+    .line 1051
     iget-boolean v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->isVerticalOrientation:Z
 
     invoke-direct {p0, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->setupRecyclerView(Z)V
 
-    .line 836
+    .line 1052
     invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->loadAndPopulatePlatforms()V
 
     return-void
@@ -2481,10 +3870,55 @@
 
 
 # virtual methods
+.method public onActivityResult(IILandroid/content/Intent;)V
+    .locals 1
+
+    .line 238
+    invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/Fragment;->onActivityResult(IILandroid/content/Intent;)V
+
+    const/16 v0, 0x26c4
+
+    if-ne p1, v0, :cond_0
+
+    const/4 p1, -0x1
+
+    if-ne p2, p1, :cond_0
+
+    if-eqz p3, :cond_0
+
+    .line 240
+    invoke-virtual {p3}, Landroid/content/Intent;->getData()Landroid/net/Uri;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 241
+    invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p2
+
+    if-eqz p2, :cond_0
+
+    .line 242
+    invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+
+    move-result-object p2
+
+    new-instance p3, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$7;
+
+    invoke-direct {p3, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$7;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
+
+    invoke-static {p2, p1, p3}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->importFromUri(Landroid/app/Activity;Landroid/net/Uri;Ljava/lang/Runnable;)V
+
+    :cond_0
+    return-void
+.end method
+
 .method public onAppClick(Lcom/magneticchen/daijishou/arcade/ArcadeAppItem;I)V
     .locals 3
 
-    .line 632
+    .line 718
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -2495,7 +3929,7 @@
 
     goto :goto_0
 
-    .line 635
+    .line 721
     :cond_0
     :try_start_0
     new-instance p2, Landroid/content/Intent;
@@ -2504,12 +3938,12 @@
 
     invoke-direct {p2, v0}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 636
+    .line 722
     const-string v0, "android.intent.category.LAUNCHER"
 
     invoke-virtual {p2, v0}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 637
+    .line 723
     new-instance v0, Landroid/content/ComponentName;
 
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeAppItem;->getPackageName()Ljava/lang/String;
@@ -2526,10 +3960,10 @@
 
     const/high16 v0, 0x10200000
 
-    .line 638
+    .line 724
     invoke-virtual {p2, v0}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 639
+    .line 725
     invoke-virtual {p0, p2}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -2539,10 +3973,10 @@
     :catch_0
     move-exception p2
 
-    .line 641
+    .line 727
     invoke-virtual {p2}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 643
+    .line 729
     :try_start_1
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -2560,10 +3994,10 @@
 
     const/high16 p2, 0x10000000
 
-    .line 645
+    .line 731
     invoke-virtual {p1, p2}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
-    .line 646
+    .line 732
     invoke-virtual {p0, p1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
@@ -2573,7 +4007,7 @@
     :catch_1
     move-exception p0
 
-    .line 649
+    .line 735
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_1
@@ -2684,7 +4118,15 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->scrimView:Landroid/view/View;
 
-    .line 124
+    if-eqz p1, :cond_0
+
+    const/16 p2, 0x8
+
+    .line 125
+    invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
+
+    .line 127
+    :cond_0
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_header_layout"
@@ -2699,7 +4141,7 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerLayout:Landroid/view/View;
 
-    .line 125
+    .line 128
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_system_header_title"
@@ -2716,7 +4158,7 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerTitle:Landroid/widget/TextView;
 
-    .line 126
+    .line 129
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_system_header_subtitle"
@@ -2733,7 +4175,7 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerSubtitle:Landroid/widget/TextView;
 
-    .line 127
+    .line 130
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_systems_list"
@@ -2750,7 +4192,7 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->systemsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 128
+    .line 131
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_legend_bar"
@@ -2765,7 +4207,7 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->legendBar:Landroid/view/View;
 
-    .line 130
+    .line 133
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_legend_menu_text"
@@ -2782,7 +4224,7 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->legendMenuText:Landroid/widget/TextView;
 
-    .line 131
+    .line 134
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_legend_select_text"
@@ -2799,7 +4241,7 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->legendSelectText:Landroid/widget/TextView;
 
-    .line 132
+    .line 135
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_legend_back_text"
@@ -2816,7 +4258,7 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->legendBackText:Landroid/widget/TextView;
 
-    .line 135
+    .line 138
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_apps_container"
@@ -2831,7 +4273,7 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsContainer:Landroid/view/View;
 
-    .line 136
+    .line 139
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_apps_list"
@@ -2848,7 +4290,7 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 137
+    .line 140
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_apps_loading"
@@ -2865,7 +4307,7 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsLoading:Landroid/widget/ProgressBar;
 
-    .line 138
+    .line 141
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_apps_count"
@@ -2882,10 +4324,10 @@
 
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->appsCountText:Landroid/widget/TextView;
 
-    .line 140
+    .line 143
     invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->setupAppsRecyclerView()V
 
-    .line 143
+    .line 146
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string p2, "arcade_btn_action_x"
@@ -2898,7 +4340,7 @@
 
     move-result-object p1
 
-    .line 144
+    .line 147
     iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string v0, "arcade_btn_action_a"
@@ -2911,7 +4353,7 @@
 
     move-result-object p2
 
-    .line 145
+    .line 148
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const-string v1, "arcade_btn_action_b"
@@ -2924,42 +4366,42 @@
 
     move-result-object v0
 
-    if-eqz p1, :cond_0
+    if-eqz p1, :cond_1
 
-    .line 148
+    .line 151
     new-instance v1, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$3;
 
     invoke-direct {v1, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$3;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    :cond_0
-    if-eqz p2, :cond_1
+    :cond_1
+    if-eqz p2, :cond_2
 
-    .line 156
+    .line 159
     new-instance p1, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$4;
 
     invoke-direct {p1, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$4;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
 
     invoke-virtual {p2, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    :cond_1
-    if-eqz v0, :cond_2
+    :cond_2
+    if-eqz v0, :cond_3
 
-    .line 168
+    .line 171
     new-instance p1, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$5;
 
     invoke-direct {p1, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$5;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 181
-    :cond_2
+    .line 184
+    :cond_3
     invoke-static {p3}, Landroidx/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object p1
 
-    .line 182
+    .line 185
     const-string p2, "arcade_scroll_direction"
 
     const-string p3, "1"
@@ -2968,24 +4410,24 @@
 
     move-result-object p1
 
-    .line 183
+    .line 186
     invoke-virtual {p3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     iput-boolean p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->isVerticalOrientation:Z
 
-    .line 185
+    .line 188
     invoke-direct {p0, p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->setupRecyclerView(Z)V
 
-    .line 188
+    .line 191
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     const/4 p2, 0x1
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
-    .line 189
+    .line 192
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     new-instance p2, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$6;
@@ -2994,7 +4436,7 @@
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    .line 214
+    .line 217
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->rootView:Landroid/view/View;
 
     return-object p0
@@ -3003,20 +4445,20 @@
 .method public onResume()V
     .locals 1
 
-    .line 225
+    .line 228
     invoke-super {p0}, Landroidx/fragment/app/Fragment;->onResume()V
 
-    .line 226
+    .line 229
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 228
+    .line 231
     invoke-static {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->applyUIMode(Landroid/app/Activity;)V
 
-    .line 230
+    .line 233
     :cond_0
     invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->loadAndPopulatePlatforms()V
 
@@ -3026,35 +4468,35 @@
 .method public onSystemFocused(Lcom/magneticchen/daijishou/arcade/ArcadeItem;I)V
     .locals 4
 
-    .line 451
+    .line 478
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->currentlyFocusedItem:Lcom/magneticchen/daijishou/arcade/ArcadeItem;
 
-    .line 453
+    .line 480
     iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerTitle:Landroid/widget/TextView;
 
     if-eqz p2, :cond_0
 
-    .line 454
+    .line 481
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getName()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 456
+    .line 483
     :cond_0
     iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerSubtitle:Landroid/widget/TextView;
 
-    if-eqz p2, :cond_3
+    if-eqz p2, :cond_5
 
-    .line 457
+    .line 484
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->isAndroidApps()Z
 
     move-result p2
 
     if-eqz p2, :cond_1
 
-    .line 458
+    .line 485
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerSubtitle:Landroid/widget/TextView;
 
     const-string p2, "Android Launcher"
@@ -3063,7 +4505,7 @@
 
     goto :goto_0
 
-    .line 459
+    .line 486
     :cond_1
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
 
@@ -3073,20 +4515,62 @@
 
     cmp-long p2, v0, v2
 
-    .line 462
-    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerSubtitle:Landroid/widget/TextView;
-
     if-nez p2, :cond_2
 
-    .line 460
-    const-string p1, "Biblioteca Completa"
+    .line 487
+    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerSubtitle:Landroid/widget/TextView;
+
+    const-string p2, "Biblioteca Completa"
+
+    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    goto :goto_0
+
+    .line 488
+    :cond_2
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
+
+    move-result-wide v0
+
+    const-wide/16 v2, -0x3e5
+
+    cmp-long p2, v0, v2
+
+    if-nez p2, :cond_3
+
+    .line 489
+    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerSubtitle:Landroid/widget/TextView;
+
+    const-string p2, "Cole\u00e7\u00f5es Especiais"
+
+    invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    goto :goto_0
+
+    .line 490
+    :cond_3
+    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getId()J
+
+    move-result-wide v0
+
+    const-wide/16 v2, -0x3e4
+
+    cmp-long p2, v0, v2
+
+    .line 493
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->headerSubtitle:Landroid/widget/TextView;
+
+    if-nez p2, :cond_4
+
+    .line 491
+    const-string p1, "Configura\u00e7\u00f5es do Sistema"
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
-    .line 462
-    :cond_2
+    .line 493
+    :cond_4
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeItem;->getShortname()Ljava/lang/String;
 
     move-result-object p1
@@ -3097,8 +4581,8 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 466
-    :cond_3
+    .line 497
+    :cond_5
     :goto_0
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->wallpaperDebounceHandler:Landroid/os/Handler;
 
@@ -3106,7 +4590,7 @@
 
     invoke-virtual {p1, p2}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 467
+    .line 498
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->wallpaperDebounceHandler:Landroid/os/Handler;
 
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->wallpaperDebounceRunnable:Ljava/lang/Runnable;
@@ -3121,10 +4605,10 @@
 .method public onSystemSelected(Lcom/magneticchen/daijishou/arcade/ArcadeItem;I)V
     .locals 0
 
-    .line 472
+    .line 503
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->currentlyFocusedItem:Lcom/magneticchen/daijishou/arcade/ArcadeItem;
 
-    .line 473
+    .line 504
     invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->launchSelectedSystem()V
 
     return-void
@@ -3133,10 +4617,10 @@
 .method public onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
     .locals 0
 
-    .line 219
+    .line 222
     invoke-super {p0, p1, p2}, Landroidx/fragment/app/Fragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
-    .line 220
+    .line 223
     invoke-direct {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->loadAndPopulatePlatforms()V
 
     return-void

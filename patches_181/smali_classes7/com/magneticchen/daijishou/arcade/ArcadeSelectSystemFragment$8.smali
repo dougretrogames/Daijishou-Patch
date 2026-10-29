@@ -1,6 +1,9 @@
 .class Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;
-.super Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;
+.super Ljava/lang/Object;
 .source "ArcadeSelectSystemFragment.java"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
@@ -17,105 +20,154 @@
 # instance fields
 .field final synthetic this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-.field final synthetic val$layoutManager:Landroidx/recyclerview/widget/LinearLayoutManager;
+.field final synthetic val$density:F
+
+.field final synthetic val$screenWidth:I
+
+.field final synthetic val$vertical:Z
 
 
 # direct methods
-.method constructor <init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Landroidx/recyclerview/widget/LinearLayoutManager;)V
+.method constructor <init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;ZFI)V
     .locals 0
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
             0x8010,
+            0x1010,
+            0x1010,
             0x1010
         }
         names = {
+            null,
+            null,
             null,
             null
         }
     .end annotation
 
-    .line 320
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    .line 316
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    iput-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->val$layoutManager:Landroidx/recyclerview/widget/LinearLayoutManager;
+    iput-boolean p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->val$vertical:Z
 
-    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;-><init>()V
+    iput p3, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->val$density:F
+
+    iput p4, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->val$screenWidth:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
-    .locals 1
+.method public run()V
+    .locals 4
 
-    .line 323
-    invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$OnScrollListener;->onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
-
-    if-nez p2, :cond_0
-
-    .line 325
-    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
-
-    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/LinearSnapHelper;
-
-    move-result-object p1
-
-    iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->val$layoutManager:Landroidx/recyclerview/widget/LinearLayoutManager;
-
-    invoke-virtual {p1, p2}, Landroidx/recyclerview/widget/LinearSnapHelper;->findSnapView(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)Landroid/view/View;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    .line 327
-    iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->val$layoutManager:Landroidx/recyclerview/widget/LinearLayoutManager;
-
-    invoke-virtual {p2, p1}, Landroidx/recyclerview/widget/LinearLayoutManager;->getPosition(Landroid/view/View;)I
-
-    move-result p1
-
-    const/4 p2, -0x1
-
-    if-eq p1, p2, :cond_0
-
-    .line 329
-    iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
-
-    invoke-static {p2}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$900(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
-
-    move-result-object p2
-
-    invoke-virtual {p2, p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->setSelectedPosition(I)V
-
-    .line 330
-    iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
-
-    invoke-static {p2}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$900(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
-
-    move-result-object p2
-
-    invoke-virtual {p2, p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->getItem(I)Lcom/magneticchen/daijishou/arcade/ArcadeItem;
-
-    move-result-object p2
-
-    if-eqz p2, :cond_0
-
-    .line 331
+    .line 319
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    invoke-static {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$000(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Lcom/magneticchen/daijishou/arcade/ArcadeItem;
+    invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->isAdded()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 320
+    :cond_0
+    iget-boolean v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->val$vertical:Z
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_1
+
+    const/high16 v0, 0x43520000    # 210.0f
+
+    .line 321
+    iget v2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->val$density:F
+
+    mul-float/2addr v2, v0
+
+    float-to-int v0, v2
+
+    .line 322
+    iget v2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->val$screenWidth:I
+
+    sub-int/2addr v2, v0
+
+    div-int/lit8 v2, v2, 0x2
+
+    invoke-static {v1, v2}, Ljava/lang/Math;->max(II)I
+
+    move-result v0
+
+    .line 323
+    iget-object v2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
+
+    invoke-static {v2}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/RecyclerView;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v0, v1, v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setPadding(IIII)V
+
+    goto :goto_0
+
+    .line 325
+    :cond_1
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
+
+    invoke-static {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/RecyclerView;
 
     move-result-object v0
 
-    if-eq p2, v0, :cond_0
+    invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getHeight()I
 
-    .line 332
+    move-result v0
+
+    const/high16 v2, 0x42dc0000    # 110.0f
+
+    .line 326
+    iget v3, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->val$density:F
+
+    mul-float/2addr v3, v2
+
+    float-to-int v2, v3
+
+    sub-int/2addr v0, v2
+
+    .line 327
+    div-int/lit8 v0, v0, 0x2
+
+    invoke-static {v1, v0}, Ljava/lang/Math;->max(II)I
+
+    move-result v0
+
+    .line 328
+    iget-object v2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
+
+    invoke-static {v2}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/RecyclerView;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1, v0, v1, v0}, Landroidx/recyclerview/widget/RecyclerView;->setPadding(IIII)V
+
+    .line 330
+    :goto_0
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$8;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    invoke-virtual {p0, p2, p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->onSystemFocused(Lcom/magneticchen/daijishou/arcade/ArcadeItem;I)V
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/RecyclerView;
 
-    :cond_0
+    move-result-object p0
+
+    invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setClipToPadding(Z)V
+
     return-void
 .end method

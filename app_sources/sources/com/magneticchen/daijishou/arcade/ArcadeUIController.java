@@ -116,4 +116,70 @@ public class ArcadeUIController {
             prefs.registerOnSharedPreferenceChangeListener(prefListener);
         }
     }
+
+    public static void setupLibraryLegendBar(final androidx.fragment.app.Fragment fragment, final View rootView) {
+        if (fragment == null || rootView == null) return;
+        Context context = rootView.getContext();
+        boolean arcade = isArcadeMode(context);
+
+        int barId = ArcadeRes.getId(context, "arcade_legend_bar");
+        final View legendBar = (barId != 0) ? rootView.findViewById(barId) : null;
+        if (legendBar != null) {
+            legendBar.setVisibility(arcade ? View.VISIBLE : View.GONE);
+        }
+
+        if (!arcade) return;
+
+        // Button A: Play game
+        int btnAId = ArcadeRes.getId(context, "arcade_btn_action_a");
+        View btnA = (btnAId != 0) ? rootView.findViewById(btnAId) : null;
+        if (btnA != null) {
+            btnA.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int playId = ArcadeRes.getId(rootView.getContext(), "platform_library_play_button");
+                    View playBtn = (playId != 0) ? rootView.findViewById(playId) : null;
+                    if (playBtn != null && playBtn.getVisibility() == View.VISIBLE) {
+                        playBtn.performClick();
+                    }
+                }
+            });
+        }
+
+        // Button B: Back to Arcade system select
+        int btnBId = ArcadeRes.getId(context, "arcade_btn_action_b");
+        View btnB = (btnBId != 0) ? rootView.findViewById(btnBId) : null;
+        if (btnB != null) {
+            btnB.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (fragment.getActivity() != null) {
+                        fragment.getActivity().onBackPressed();
+                    }
+                }
+            });
+        }
+
+        // Button X: Game Options / Details
+        int btnXId = ArcadeRes.getId(context, "arcade_btn_action_x");
+        View btnX = (btnXId != 0) ? rootView.findViewById(btnXId) : null;
+        if (btnX != null) {
+            btnX.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int detailId = ArcadeRes.getId(rootView.getContext(), "platform_library_detail_button");
+                    View detailBtn = (detailId != 0) ? rootView.findViewById(detailId) : null;
+                    if (detailBtn != null && detailBtn.getVisibility() == View.VISIBLE) {
+                        detailBtn.performClick();
+                        return;
+                    }
+                    int editId = ArcadeRes.getId(rootView.getContext(), "platform_library_edit_button");
+                    View editBtn = (editId != 0) ? rootView.findViewById(editId) : null;
+                    if (editBtn != null) {
+                        editBtn.performClick();
+                    }
+                }
+            });
+        }
+    }
 }

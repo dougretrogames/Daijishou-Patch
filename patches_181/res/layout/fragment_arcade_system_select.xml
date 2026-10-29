@@ -30,11 +30,12 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Gradient Scrim for contrast & readability -->
+    <!-- Gradient Scrim for contrast & readability (disabled per user request) -->
     <View
         android:id="@+id/arcade_scrim"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:visibility="gone"
         android:background="@drawable/arcade_scrim_gradient"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

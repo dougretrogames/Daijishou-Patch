@@ -189,3 +189,155 @@
 
     return-void
 .end method
+
+.method public static setupLibraryLegendBar(Landroidx/fragment/app/Fragment;Landroid/view/View;)V
+    .locals 5
+
+    if-eqz p0, :cond_a
+
+    if-nez p1, :cond_0
+
+    goto/16 :goto_4
+
+    .line 122
+    :cond_0
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    .line 123
+    invoke-static {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->isArcadeMode(Landroid/content/Context;)Z
+
+    move-result v1
+
+    .line 125
+    const-string v2, "arcade_legend_bar"
+
+    invoke-static {v0, v2}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getId(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    if-eqz v2, :cond_1
+
+    .line 126
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v2
+
+    goto :goto_0
+
+    :cond_1
+    move-object v2, v3
+
+    :goto_0
+    if-eqz v2, :cond_3
+
+    if-eqz v1, :cond_2
+
+    const/4 v4, 0x0
+
+    goto :goto_1
+
+    :cond_2
+    const/16 v4, 0x8
+
+    .line 128
+    :goto_1
+    invoke-virtual {v2, v4}, Landroid/view/View;->setVisibility(I)V
+
+    :cond_3
+    if-nez v1, :cond_4
+
+    goto :goto_4
+
+    .line 134
+    :cond_4
+    const-string v1, "arcade_btn_action_a"
+
+    invoke-static {v0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getId(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v1
+
+    if-eqz v1, :cond_5
+
+    .line 135
+    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    goto :goto_2
+
+    :cond_5
+    move-object v1, v3
+
+    :goto_2
+    if-eqz v1, :cond_6
+
+    .line 137
+    new-instance v2, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$3;
+
+    invoke-direct {v2, p1}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$3;-><init>(Landroid/view/View;)V
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 150
+    :cond_6
+    const-string v1, "arcade_btn_action_b"
+
+    invoke-static {v0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getId(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v1
+
+    if-eqz v1, :cond_7
+
+    .line 151
+    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v1
+
+    goto :goto_3
+
+    :cond_7
+    move-object v1, v3
+
+    :goto_3
+    if-eqz v1, :cond_8
+
+    .line 153
+    new-instance v2, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$4;
+
+    invoke-direct {v2, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$4;-><init>(Landroidx/fragment/app/Fragment;)V
+
+    invoke-virtual {v1, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 164
+    :cond_8
+    const-string p0, "arcade_btn_action_x"
+
+    invoke-static {v0, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getId(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result p0
+
+    if-eqz p0, :cond_9
+
+    .line 165
+    invoke-virtual {p1, p0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v3
+
+    :cond_9
+    if-eqz v3, :cond_a
+
+    .line 167
+    new-instance p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$5;
+
+    invoke-direct {p0, p1}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$5;-><init>(Landroid/view/View;)V
+
+    invoke-virtual {v3, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    :cond_a
+    :goto_4
+    return-void
+.end method

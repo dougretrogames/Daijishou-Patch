@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:backgroundTintMode="src_over">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/constraintLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="4.0dip"
+        android:layout_marginEnd="12.0dip"
+        android:layout_marginBottom="8.0dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth="match_constraint">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/platform_library_card_container"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_marginTop="2.0dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/platform_library_list_recycler_view"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@id/platform_library_background"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:alpha="0.15"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/RoundedCorners" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@id/platform_library_background_gradient"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:alpha="1.0"
+                android:background="@drawable/background_grad"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/RoundedCornersTop" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@id/constraintLayout5"
+                android:layout_width="0.0dip"
+                android:layout_height="0.0dip"
+                android:padding="1.0dip"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0.0dip"
+                    android:layout_height="0.0dip"
+                    android:clipToPadding="false"
+                    android:paddingLeft="2.0dip"
+                    android:paddingTop="12.0dip"
+                    android:paddingRight="2.0dip"
+                    android:paddingBottom="16.0dip"
+                    app:layout_constraintBottom_toTopOf="@id/player_associated_platforms_horizontal_scroll_view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@id/platform_library_background_set"
+                        android:layout_width="0.0dip"
+                        android:layout_height="0.0dip"
+                        android:layout_marginStart="20.0dip"
+                        android:layout_marginEnd="20.0dip"
+                        android:background="@drawable/selectable_rounder_ripple_background"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="false"
+                        android:nextFocusLeft="@id/platform_library_list_recycler_view"
+                        android:nextFocusRight="@id/platform_library_play_button"
+                        android:nextFocusUp="@id/platform_library_list_recycler_view"
+                        android:nextFocusDown="@id/platform_library_play_button"
+                        android:padding="1.0dip"
+                        app:layout_constraintBottom_toTopOf="@id/platform_library_title_description"
+                        app:layout_constraintDimensionRatio="1:1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHeight_max="360.0dip"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:layout_constraintWidth_max="360.0dip">
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@id/platform_library_thumbnail"
+                            android:layout_width="0.0dip"
+                            android:layout_height="0.0dip"
+                            android:background="?themeSecondaryBackgroundColor"
+                            android:elevation="4.0dip"
+                            android:padding="5.0dip"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:shapeAppearanceOverlay="@style/RoundedCorners"
+                            app:strokeWidth="1.0dip" />
+
+                        <ImageView
+                            android:id="@id/platform_library_placeholder"
+                            android:layout_width="0.0dip"
+                            android:layout_height="0.0dip"
+                            android:elevation="4.0dip"
+                            android:visibility="visible"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHeight_percent="0.5"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.35"
+                            app:layout_constraintWidth_percent="0.5"
+                            app:srcCompat="@drawable/ic_outline_sports_esports_24"
+                            app:tint="?colorPrimary" />
+
+                        <TextView
+                            android:id="@id/platform_library_platform_text_view"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8.0dip"
+                            android:layout_marginEnd="8.0dip"
+                            android:alpha="0.8"
+                            android:elevation="4.0dip"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="Platform"
+                            android:textAllCaps="true"
+                            android:textColor="?themeTextColor"
+                            android:textSize="20.0sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/platform_library_placeholder" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@id/platform_library_title_description"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4.0dip"
+                        android:scrollbarTrackVertical="@null"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/platform_library_background_set"
+                        app:layout_constraintWidth_max="330.0dip">
+
+                        <TextView
+                            android:id="@id/platform_library_title_text_view"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16.0dip"
+                            android:layout_marginEnd="16.0dip"
+                            android:alpha="0.9"
+                            android:gravity="center"
+                            android:maxLines="2"
+                            android:scrollbarSize="0.0dip"
+                            android:scrollbarTrackVertical="@null"
+                            android:singleLine="false"
+                            android:text="@string/empty_library"
+                            android:textSize="19.0sp"
+                            android:textStyle="bold|italic"
+                            app:autoSizeTextType="none"
+                            app:layout_constraintBottom_toTopOf="@id/platform_library_description_text_view"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_chainStyle="packed" />
+
+                        <TextView
+                            android:id="@id/platform_library_description_text_view"
+                            android:layout_width="0.0dip"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="marquee"
+                            android:gravity="center"
+                            android:maxWidth="10.0dip"
+                            android:scrollbarTrackVertical="@null"
+                            android:singleLine="true"
+                            android:text="@string/empty_library_description"
+                            android:textColor="?colorControlNormal"
+                            android:textSize="13.5sp"
+                            android:textStyle="normal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/platform_library_title_text_view" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <HorizontalScrollView
+                    android:id="@id/player_associated_platforms_horizontal_scroll_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2.0dip"
+                    android:fadingEdgeLength="20.0dip"
+                    android:orientation="horizontal"
+                    android:requiresFadingEdge="horizontal"
+                    android:scrollbars="none"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@id/player_associated_platforms_chip_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:animateLayoutChanges="true"
+                        android:orientation="horizontal"
+                        android:paddingEnd="0.0dip"
+                        app:singleLine="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@id/platform_library_play_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8.0dip"
+                            android:clickable="true"
+                            android:elevation="4.0dip"
+                            android:focusable="true"
+                            android:gravity="center_horizontal"
+                            android:nextFocusLeft="@id/platform_library_list_recycler_view"
+                            android:nextFocusRight="@id/platform_library_favorite_button"
+                            android:nextFocusUp="@id/platform_library_background_set"
+                            android:nextFocusDown="@id/platform_library_list_recycler_view"
+                            android:text="@string/play"
+                            android:textColor="@color/chip_highlight_text_color"
+                            android:textSize="15.0sp"
+                            android:textStyle="normal"
+                            app:chipBackgroundColor="@color/chip_highlight_background_color"
+                            app:chipIcon="@drawable/ic_round_play_arrow_24"
+                            app:chipIconTint="@color/chip_highlight_text_color"
+                            app:chipMinTouchTargetSize="48.0dip"
+                            app:chipStrokeColor="@color/material_on_surface_stroke"
+                            app:chipStrokeWidth="2.0dip"
+                            app:textStartPadding="6.0dip" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@id/platform_library_favorite_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:elevation="4.0dip"
+                            android:focusable="true"
+                            android:gravity="center_horizontal"
+                            android:nextFocusDown="@id/platform_library_list_recycler_view"
+                            android:text="@string/add_favorite"
+                            android:textColor="@color/chip_highlight_text_color"
+                            android:textSize="15.0sp"
+                            android:textStyle="normal"
+                            app:chipBackgroundColor="@color/chip_highlight_background_color"
+                            app:chipIcon="@drawable/ic_round_favorite_border_24"
+                            app:chipIconSize="19.0dip"
+                            app:chipIconTint="@color/chip_highlight_text_color"
+                            app:chipMinTouchTargetSize="48.0dip"
+                            app:iconStartPadding="4.0dip"
+                            app:textStartPadding="6.0dip" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@id/platform_library_completed_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8.0dip"
+                            android:clickable="true"
+                            android:elevation="4.0dip"
+                            android:focusable="true"
+                            android:gravity="center_horizontal"
+                            android:nextFocusDown="@id/platform_library_list_recycler_view"
+                            android:text="@string/mark_completed"
+                            android:textColor="@color/chip_highlight_text_color"
+                            android:textSize="15.0sp"
+                            android:textStyle="bold"
+                            app:chipBackgroundColor="@color/chip_highlight_background_color"
+                            app:chipIcon="@drawable/round_check_circle_outline_24"
+                            app:chipIconSize="19.0dip"
+                            app:chipIconTint="@color/chip_highlight_text_color"
+                            app:chipMinTouchTargetSize="48.0dip"
+                            app:iconStartPadding="4.0dip"
+                            app:textStartPadding="6.0dip" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@id/platform_library_pin_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:elevation="4.0dip"
+                            android:focusable="true"
+                            android:gravity="center_horizontal"
+                            android:nextFocusDown="@id/platform_library_list_recycler_view"
+                            android:text="@string/pin_item"
+                            android:textColor="@color/chip_normal_text_color"
+                            android:textSize="15.0sp"
+                            android:textStyle="normal"
+                            app:chipBackgroundColor="@color/chip_normal_background_color"
+                            app:chipIcon="@drawable/outline_push_pin_24"
+                            app:chipIconSize="19.0dip"
+                            app:chipIconTint="@color/chip_normal_text_color"
+                            app:chipMinTouchTargetSize="48.0dip"
+                            app:iconStartPadding="4.0dip"
+                            app:textStartPadding="6.0dip" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@id/platform_library_recent_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:elevation="4.0dip"
+                            android:focusable="true"
+                            android:gravity="center_horizontal"
+                            android:nextFocusDown="@id/platform_library_list_recycler_view"
+                            android:text="@string/recent"
+                            android:textColor="@color/chip_normal_text_color"
+                            android:textSize="15.0sp"
+                            android:textStyle="normal"
+                            android:visibility="gone"
+                            app:chipBackgroundColor="@color/chip_normal_background_color"
+                            app:chipIcon="@drawable/ic_baseline_update_24"
+                            app:chipIconSize="18.0dip"
+                            app:chipIconTint="@color/chip_normal_text_color"
+                            app:chipMinTouchTargetSize="48.0dip"
+                            app:iconStartPadding="4.0dip" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@id/platform_library_newly_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:elevation="4.0dip"
+                            android:focusable="true"
+                            android:gravity="center_horizontal"
+                            android:nextFocusDown="@id/platform_library_list_recycler_view"
+                            android:text="@string/_new"
+                            android:textColor="@color/chip_normal_text_color"
+                            android:textSize="15.0sp"
+                            android:textStyle="normal"
+                            android:visibility="gone"
+                            app:chipBackgroundColor="@color/chip_normal_background_color"
+                            app:chipIcon="@drawable/ic_baseline_auto_awesome_24"
+                            app:chipIconSize="18.0dip"
+                            app:chipIconTint="@color/chip_normal_text_color"
+                            app:chipMinTouchTargetSize="48.0dip"
+                            app:iconStartPadding="4.0dip" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@id/platform_library_detail_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:elevation="4.0dip"
+                            android:focusable="true"
+                            android:gravity="center_horizontal"
+                            android:nextFocusDown="@id/platform_library_list_recycler_view"
+                            android:text="@string/detail"
+                            android:textColor="@color/chip_normal_text_color"
+                            android:textSize="15.0sp"
+                            android:textStyle="normal"
+                            android:visibility="visible"
+                            app:chipBackgroundColor="@color/chip_normal_background_color"
+                            app:chipIcon="@drawable/ic_baseline_egg_24"
+                            app:chipIconSize="18.0dip"
+                            app:chipIconTint="@color/chip_normal_text_color"
+                            app:chipMinTouchTargetSize="48.0dip"
+                            app:iconStartPadding="4.0dip" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@id/platform_library_grid_view_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:elevation="4.0dip"
+                            android:focusable="true"
+                            android:gravity="center_horizontal"
+                            android:nextFocusDown="@id/platform_library_list_recycler_view"
+                            android:text="@string/grid_view"
+                            android:textColor="@color/chip_normal_text_color"
+                            android:textSize="15.0sp"
+                            android:textStyle="normal"
+                            android:visibility="visible"
+                            app:chipBackgroundColor="@color/chip_normal_background_color"
+                            app:chipIcon="@drawable/ic_round_grid_view_24"
+                            app:chipIconSize="18.0dip"
+                            app:chipIconTint="@color/chip_normal_text_color"
+                            app:chipMinTouchTargetSize="48.0dip"
+                            app:iconStartPadding="4.0dip" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@id/platform_library_edit_button"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="8.0dip"
+                            android:clickable="true"
+                            android:elevation="4.0dip"
+                            android:focusable="true"
+                            android:gravity="center_horizontal"
+                            android:nextFocusRight="@id/platform_library_play_button"
+                            android:nextFocusDown="@id/platform_library_list_recycler_view"
+                            android:text="@string/edit_item"
+                            android:textColor="@color/chip_mono_text_color"
+                            android:textSize="15.0sp"
+                            android:textStyle="normal"
+                            app:chipBackgroundColor="@color/chip_mono_background_color"
+                            app:chipIcon="@drawable/ic_baseline_edit_24"
+                            app:chipIconSize="18.0dip"
+                            app:chipIconTint="@color/chip_mono_icon_color"
+                            app:chipMinTouchTargetSize="48.0dip"
+                            app:iconStartPadding="6.0dip" />
+                    </com.google.android.material.chip.ChipGroup>
+                </HorizontalScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.magneticchen.daijishou.ui.views.FadingEdgeRecyclerView
+            android:id="@id/platform_library_list_recycler_view"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:clipToPadding="false"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="2.0dip"
+            android:paddingLeft="8.0dip"
+            android:paddingTop="2.0dip"
+            android:paddingRight="8.0dip"
+            android:paddingBottom="80.0dip"
+            android:requiresFadingEdge="vertical"
+            android:scrollbarDefaultDelayBeforeFade="100"
+            android:scrollbarFadeDuration="200"
+            android:scrollbarSize="2.0dip"
+            android:scrollbarStyle="outsideOverlay"
+            app:cardBackgroundColor="?android:colorBackground"
+            app:cardCornerRadius="8.0dip"
+            app:cardElevation="8.0dip"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="H,16:11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- Centered Controller Legend Bar (Arcade Mode) -->
+    <LinearLayout
+        android:id="@+id/arcade_legend_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/arcade_legend_pill_bg"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Button X (OPÇÕES) - First on the left as in reference image -->
+        <LinearLayout
+            android:id="@+id/arcade_btn_action_x"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/ic_baseline_brightness_1_24"
+                android:backgroundTint="#2979FF"
+                android:gravity="center"
+                android:text="X"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/arcade_legend_menu_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/arcade_legend_menu"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Button A (SELECIONAR / INICIAR) - Center as in reference image -->
+        <LinearLayout
+            android:id="@+id/arcade_btn_action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/arcade_legend_btn_a_badge"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/ic_baseline_brightness_1_24"
+                android:backgroundTint="#00C853"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/arcade_legend_select_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/arcade_legend_select"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Button B (VOLTAR) - Right as in reference image -->
+        <LinearLayout
+            android:id="@+id/arcade_btn_action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp">
+
+            <TextView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/ic_baseline_brightness_1_24"
+                android:backgroundTint="#D50000"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/arcade_legend_back_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/arcade_legend_back"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

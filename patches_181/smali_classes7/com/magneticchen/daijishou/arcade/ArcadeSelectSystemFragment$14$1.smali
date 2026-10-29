@@ -1,4 +1,4 @@
-.class Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$12$1;
+.class Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14$1;
 .super Ljava/lang/Object;
 .source "ArcadeSelectSystemFragment.java"
 
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$12;->run()V
+    value = Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;->run()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -27,11 +27,11 @@
 
 
 # instance fields
-.field final synthetic this$1:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$12;
+.field final synthetic this$1:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;
 
 
 # direct methods
-.method constructor <init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$12;)V
+.method constructor <init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;)V
     .locals 0
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
@@ -42,8 +42,8 @@
         }
     .end annotation
 
-    .line 601
-    iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$12$1;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$12;
+    .line 687
+    iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14$1;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +55,7 @@
 .method public compare(Lcom/magneticchen/daijishou/arcade/ArcadeAppItem;Lcom/magneticchen/daijishou/arcade/ArcadeAppItem;)I
     .locals 0
 
-    .line 604
+    .line 690
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeAppItem;->getLabel()Ljava/lang/String;
 
     move-result-object p0
@@ -84,12 +84,12 @@
         }
     .end annotation
 
-    .line 601
+    .line 687
     check-cast p1, Lcom/magneticchen/daijishou/arcade/ArcadeAppItem;
 
     check-cast p2, Lcom/magneticchen/daijishou/arcade/ArcadeAppItem;
 
-    invoke-virtual {p0, p1, p2}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$12$1;->compare(Lcom/magneticchen/daijishou/arcade/ArcadeAppItem;Lcom/magneticchen/daijishou/arcade/ArcadeAppItem;)I
+    invoke-virtual {p0, p1, p2}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$14$1;->compare(Lcom/magneticchen/daijishou/arcade/ArcadeAppItem;Lcom/magneticchen/daijishou/arcade/ArcadeAppItem;)I
 
     move-result p0
 

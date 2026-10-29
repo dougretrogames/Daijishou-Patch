@@ -33,7 +33,7 @@
         }
     .end annotation
 
-    .line 156
+    .line 159
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$4;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 159
+    .line 162
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$4;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
     invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$300(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Z
@@ -57,7 +57,7 @@
 
     return-void
 
-    .line 162
+    .line 165
     :cond_0
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$4;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 

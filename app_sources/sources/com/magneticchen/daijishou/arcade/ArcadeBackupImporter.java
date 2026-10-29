@@ -103,9 +103,9 @@ public class ArcadeBackupImporter {
         List<String> options = new ArrayList<>();
         for (File f : knownFiles) {
             long sizeMb = f.length() / (1024 * 1024);
-            options.add("📂 " + f.getName() + " (" + sizeMb + " MB)");
+            options.add(f.getName() + " (" + sizeMb + " MB)");
         }
-        options.add("🔍 Escolher outro arquivo (.tar)...");
+        options.add("Escolher outro arquivo (.tar)...");
 
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setTitle("Importar Backup do ARC Browser");
@@ -158,9 +158,9 @@ public class ArcadeBackupImporter {
         List<String> options = new ArrayList<>();
         for (File f : knownFiles) {
             long sizeMb = f.length() / (1024 * 1024);
-            options.add("📂 " + f.getName() + " (" + sizeMb + " MB)");
+            options.add(f.getName() + " (" + sizeMb + " MB)");
         }
-        options.add("🔍 Escolher outro arquivo (.tar)...");
+        options.add("Escolher outro arquivo (.tar)...");
 
         AlertDialog.Builder builder = new AlertDialog.Builder(activity);
         builder.setTitle("Importar Backup do ARC Browser");
@@ -267,7 +267,7 @@ public class ArcadeBackupImporter {
                                 public void run() {
                                     if (progressDialog.isShowing()) progressDialog.dismiss();
                                     new AlertDialog.Builder(activity)
-                                        .setTitle("Importação Concluída! 🎉")
+                                        .setTitle("Importação Concluída")
                                         .setMessage("O backup do ARC Browser foi importado com sucesso!\n\n"
                                             + "• Plataformas importadas: " + platformsCount + "\n"
                                             + "• Jogos importados: " + gamesCount + "\n\n"
@@ -368,7 +368,7 @@ public class ArcadeBackupImporter {
             dbFile.getParentFile().mkdirs();
         }
 
-        SQLiteDatabase db = SQLiteDatabase.openDatabase(dbFile.getAbsolutePath(), null, SQLiteDatabase.OPEN_READWRITE);
+        SQLiteDatabase db = SQLiteDatabase.openOrCreateDatabase(dbFile, null);
 
         try {
             // Ensure schema exists
@@ -384,10 +384,12 @@ public class ArcadeBackupImporter {
             // 4. Parse Emulators and insert platforms
             listener.onProgress("Configurando sistemas e plataformas...", 20, 100);
             Map<String, PlatformInfo> emulatorMap = parseAndInsertPlatforms(db, emulatorsFile);
+            Log.i(TAG, "Mapeados " + emulatorMap.size() + " emuladores/sistemas do ARC Browser.");
 
             // 5. Parse Games and batch insert
             listener.onProgress("Importando jogos (isso levará apenas alguns segundos)...", 30, 100);
             int importedGames = parseAndInsertGames(db, gamesFile, emulatorMap, gameCollectionsMap, listener);
+            Log.i(TAG, "Importados " + importedGames + " jogos para o Daijishou.");
 
             listener.onProgress("Finalizando importação...", 100, 100);
             listener.onSuccess(emulatorMap.size(), importedGames);
@@ -410,6 +412,8 @@ public class ArcadeBackupImporter {
         String currentKey = null;
         Map<String, String> currentData = new HashMap<>();
         int position = 0;
+        boolean insideEmulator = false;
+        boolean insideExtra = false;
 
         // Check max position existing in PlatformEntity
         Cursor posCursor = db.rawQuery("SELECT max(position) FROM PlatformEntity", null);
@@ -422,65 +426,79 @@ public class ArcadeBackupImporter {
             String tag = parser.getName();
             if (event == XmlPullParser.START_TAG) {
                 if ("entry".equals(tag)) {
-                    currentEid = parser.getAttributeValue(null, "id");
-                    currentData.clear();
+                    String type = parser.getAttributeValue(null, "type");
+                    if ("emulator".equals(type)) {
+                        insideEmulator = true;
+                        insideExtra = false;
+                        currentEid = parser.getAttributeValue(null, "id");
+                        currentData.clear();
+                    } else {
+                        insideExtra = true;
+                    }
                 } else if ("data".equals(tag)) {
-                    currentKey = parser.getAttributeValue(null, "key");
+                    if (insideEmulator && !insideExtra) {
+                        currentKey = parser.getAttributeValue(null, "key");
+                    }
                 }
             } else if (event == XmlPullParser.TEXT) {
-                if (currentKey != null && currentEid != null) {
+                if (currentKey != null && currentEid != null && insideEmulator && !insideExtra) {
                     currentData.put(currentKey, parser.getText());
                 }
             } else if (event == XmlPullParser.END_TAG) {
                 if ("data".equals(tag)) {
                     currentKey = null;
-                } else if ("entry".equals(tag) && currentEid != null) {
-                    String romDir = currentData.get("romDirectory");
-                    String name = currentData.get("name");
-                    if (name == null || name.trim().isEmpty()) {
-                        name = currentData.get("description");
-                    }
-
-                    if (romDir != null && !romDir.trim().isEmpty() && !"None".equalsIgnoreCase(romDir)) {
-                        String folder = new File(romDir).getName();
-                        String shortname = (folder != null && !folder.isEmpty()) ? folder : "unknown";
-
-                        // Check if platform exists in DB
-                        long pid = -1;
-                        Cursor c = db.rawQuery("SELECT id FROM PlatformEntity WHERE shortname = ? OR name = ? LIMIT 1", new String[]{shortname, name});
-                        if (c != null && c.moveToFirst()) {
-                            pid = c.getLong(0);
-                            c.close();
-                        } else {
-                            if (c != null) c.close();
-
-                            // Insert new PlatformEntity
-                            JSONArray syncTreeArr = new JSONArray();
-                            syncTreeArr.put("file://" + romDir);
-
-                            SQLiteStatement stmt = db.compileStatement(
-                                "INSERT INTO PlatformEntity (" +
-                                "name, shortname, is_visible, scrape_preview_media, " +
-                                "wallpaper_path, thumbnail_path, accept_filename_regex, " +
-                                "default_player_id, player_id_list, scraper_source_list, " +
-                                "box_art_aspect_ratio_id, use_custom_box_art_aspect_ratio, " +
-                                "screen_aspect_ratio_id, use_custom_screen_aspect_ratio, " +
-                                "items_sync_tree_uri_list, retro_achievements_console_id_list, " +
-                                "position, extra) " +
-                                "VALUES (?, ?, 1, 0, null, null, '.*', 0, '[]', '[]', 0, 0, 0, 0, ?, '[]', ?, '{}')"
-                            );
-                            stmt.bindString(1, name != null ? name : shortname);
-                            stmt.bindString(2, shortname);
-                            stmt.bindString(3, syncTreeArr.toString());
-                            stmt.bindLong(4, position++);
-                            pid = stmt.executeInsert();
+                } else if ("entry".equals(tag)) {
+                    if (insideExtra) {
+                        insideExtra = false;
+                    } else if (insideEmulator && currentEid != null) {
+                        insideEmulator = false;
+                        String romDir = currentData.get("romDirectory");
+                        String name = currentData.get("name");
+                        if (name == null || name.trim().isEmpty()) {
+                            name = currentData.get("description");
                         }
 
-                        if (pid > 0) {
-                            result.put(currentEid, new PlatformInfo(pid, name, shortname, romDir));
+                        if (romDir != null && !romDir.trim().isEmpty() && !"None".equalsIgnoreCase(romDir)) {
+                            String folder = new File(romDir).getName();
+                            String shortname = (folder != null && !folder.isEmpty()) ? folder : "unknown";
+
+                            // Check if platform exists in DB
+                            long pid = -1;
+                            Cursor c = db.rawQuery("SELECT id FROM PlatformEntity WHERE shortname = ? OR name = ? LIMIT 1", new String[]{shortname, name});
+                            if (c != null && c.moveToFirst()) {
+                                pid = c.getLong(0);
+                                c.close();
+                            } else {
+                                if (c != null) c.close();
+
+                                // Insert new PlatformEntity
+                                JSONArray syncTreeArr = new JSONArray();
+                                syncTreeArr.put("file://" + romDir);
+
+                                SQLiteStatement stmt = db.compileStatement(
+                                    "INSERT INTO PlatformEntity (" +
+                                    "name, shortname, is_visible, scrape_preview_media, " +
+                                    "wallpaper_path, thumbnail_path, accept_filename_regex, " +
+                                    "default_player_id, player_id_list, scraper_source_list, " +
+                                    "box_art_aspect_ratio_id, use_custom_box_art_aspect_ratio, " +
+                                    "screen_aspect_ratio_id, use_custom_screen_aspect_ratio, " +
+                                    "items_sync_tree_uri_list, retro_achievements_console_id_list, " +
+                                    "position, extra) " +
+                                    "VALUES (?, ?, 1, 0, null, null, '.*', 0, '[]', '[]', 0, 0, 0, 0, ?, '[]', ?, '{}')"
+                                );
+                                stmt.bindString(1, name != null ? name : shortname);
+                                stmt.bindString(2, shortname);
+                                stmt.bindString(3, syncTreeArr.toString());
+                                stmt.bindLong(4, position++);
+                                pid = stmt.executeInsert();
+                            }
+
+                            if (pid > 0) {
+                                result.put(currentEid, new PlatformInfo(pid, name, shortname, romDir));
+                            }
                         }
+                        currentEid = null;
                     }
-                    currentEid = null;
                 }
             }
             event = parser.next();

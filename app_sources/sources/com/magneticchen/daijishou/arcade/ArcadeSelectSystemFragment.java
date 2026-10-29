@@ -121,6 +121,9 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         wallpaperView1 = rootView.findViewById(ArcadeRes.getId(context, "arcade_wallpaper_1"));
         wallpaperView2 = rootView.findViewById(ArcadeRes.getId(context, "arcade_wallpaper_2"));
         scrimView = rootView.findViewById(ArcadeRes.getId(context, "arcade_scrim"));
+        if (scrimView != null) {
+            scrimView.setVisibility(View.GONE); // Dark shading removed per user request
+        }
         headerLayout = rootView.findViewById(ArcadeRes.getId(context, "arcade_header_layout"));
         headerTitle = rootView.findViewById(ArcadeRes.getId(context, "arcade_system_header_title"));
         headerSubtitle = rootView.findViewById(ArcadeRes.getId(context, "arcade_system_header_subtitle"));
@@ -278,8 +281,8 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         if (lp instanceof ConstraintLayout.LayoutParams) {
             ConstraintLayout.LayoutParams clp = (ConstraintLayout.LayoutParams) lp;
             if (vertical) {
-                // Align right ~35% screen width, matching user reference image
-                clp.width = (int) (310 * density);
+                // Align right, smaller width & positioned further right per user request
+                clp.width = (int) (225 * density);
                 clp.height = 0;
                 clp.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
                 if (legendBar != null) {
@@ -289,7 +292,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                 }
                 clp.endToEnd = ConstraintLayout.LayoutParams.PARENT_ID;
                 clp.startToStart = ConstraintLayout.LayoutParams.UNSET;
-                clp.rightMargin = (int) (36 * density);
+                clp.rightMargin = (int) (12 * density);
                 clp.leftMargin = 0;
             } else {
                 clp.width = 0;
@@ -315,7 +318,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             public void run() {
                 if (!isAdded()) return;
                 if (!vertical) {
-                    int cardWidth = (int) (260 * density);
+                    int cardWidth = (int) (210 * density);
                     int horizontalPadding = Math.max(0, (screenWidth - cardWidth) / 2);
                     systemsRecyclerView.setPadding(horizontalPadding, 0, horizontalPadding, 0);
                 } else {
@@ -546,13 +549,14 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
 
         Context context = requireContext();
         SharedPreferences platformPrefs = context.getSharedPreferences(String.valueOf(platformId), Context.MODE_PRIVATE);
-        int viewMode = platformPrefs.getInt("view_mode", 1); // default to grid
+        // Always force list view in arcade mode per user request
+        platformPrefs.edit().putInt("view_mode", 0).apply();
 
         NavController navController = Navigation.findNavController(rootView);
         int actionGrid = ArcadeRes.getId(context, "arcadeToPlatformLibraryGridViewAction");
         int actionList = ArcadeRes.getId(context, "arcadeToPlatformLibraryListViewAction");
 
-        if (viewMode == 0 && actionList != 0) {
+        if (actionList != 0) {
             navController.navigate(actionList);
         } else if (actionGrid != 0) {
             navController.navigate(actionGrid);
@@ -745,7 +749,44 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
 
         File storage = android.os.Environment.getExternalStorageDirectory();
 
-        // 1. Special collections / virtual items from 2-Jogos
+        // 1. Priority 1: Explicit path assigned to the item / platform (downloaded themes or custom wallpaper)
+        String path = item.getWallpaperPath();
+        if (path != null && !path.trim().isEmpty()) {
+            try {
+                if (path.startsWith("file://")) {
+                    File f = new File(java.net.URI.create(path).getPath());
+                    if (f.exists()) return f.getAbsolutePath();
+                } else if (path.startsWith("/")) {
+                    File f = new File(path);
+                    if (f.exists()) return f.getAbsolutePath();
+                } else {
+                    return path;
+                }
+            } catch (Exception ignored) {
+                return path;
+            }
+        }
+
+        // 2. Priority 2: Downloaded theme pack platform_wallpapers in internal storage
+        try {
+            File internalDir = new File(context.getFilesDir(), "platform_wallpapers");
+            if (internalDir.exists() && internalDir.isDirectory()) {
+                if (item.getId() > 0) {
+                    File byIdPng = new File(internalDir, item.getId() + ".png");
+                    if (byIdPng.exists()) return byIdPng.getAbsolutePath();
+                    File byIdJpg = new File(internalDir, item.getId() + ".jpg");
+                    if (byIdJpg.exists()) return byIdJpg.getAbsolutePath();
+                }
+                if (item.getShortname() != null) {
+                    File bySnPng = new File(internalDir, item.getShortname() + ".png");
+                    if (bySnPng.exists()) return bySnPng.getAbsolutePath();
+                    File bySnJpg = new File(internalDir, item.getShortname() + ".jpg");
+                    if (bySnJpg.exists()) return bySnJpg.getAbsolutePath();
+                }
+            }
+        } catch (Exception ignored) {}
+
+        // 3. Priority 3: Special collections / virtual items from 2-Jogos
         if (item.getId() == -998L || "all_games".equalsIgnoreCase(item.getShortname())) {
             File f = new File(storage, "2-Jogos/background_allsystems.png");
             if (f.exists()) return f.getAbsolutePath();
@@ -776,7 +817,18 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             if (fJpg.exists()) return fJpg.getAbsolutePath();
         }
 
-        // 2. 2-Jogos system backgrounds: 2-Jogos/{shortname}/media/background.png
+        // 4. Priority 4: External storage /sdcard/Daijishou/wallpapers/
+        try {
+            File extDir = new File(storage, "Daijishou/wallpapers");
+            if (extDir.exists() && item.getShortname() != null) {
+                File extPng = new File(extDir, item.getShortname() + ".png");
+                if (extPng.exists()) return extPng.getAbsolutePath();
+                File extJpg = new File(extDir, item.getShortname() + ".jpg");
+                if (extJpg.exists()) return extJpg.getAbsolutePath();
+            }
+        } catch (Exception ignored) {}
+
+        // 5. Priority 5: 2-Jogos system backgrounds: 2-Jogos/{shortname}/media/background.png
         if (item.getShortname() != null) {
             String[] aliases = getShortnameAliases(item.getShortname());
             for (String alias : aliases) {
@@ -791,61 +843,13 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             }
         }
 
-        // 3. Explicit path assigned to the item
-        String path = item.getWallpaperPath();
-        if (path != null && !path.trim().isEmpty()) {
-            try {
-                if (path.startsWith("file://")) {
-                    File f = new File(java.net.URI.create(path).getPath());
-                    if (f.exists()) return f.getAbsolutePath();
-                } else if (path.startsWith("/")) {
-                    File f = new File(path);
-                    if (f.exists()) return f.getAbsolutePath();
-                } else {
-                    return path;
-                }
-            } catch (Exception ignored) {
-                return path;
-            }
-        }
-
-        // 4. Check platform_wallpapers in app internal storage (by id or shortname)
-        try {
-            File internalDir = new File(context.getFilesDir(), "platform_wallpapers");
-            if (internalDir.exists() && internalDir.isDirectory()) {
-                if (item.getId() > 0) {
-                    File byIdPng = new File(internalDir, item.getId() + ".png");
-                    if (byIdPng.exists()) return byIdPng.getAbsolutePath();
-                    File byIdJpg = new File(internalDir, item.getId() + ".jpg");
-                    if (byIdJpg.exists()) return byIdJpg.getAbsolutePath();
-                }
-                if (item.getShortname() != null) {
-                    File bySnPng = new File(internalDir, item.getShortname() + ".png");
-                    if (bySnPng.exists()) return bySnPng.getAbsolutePath();
-                    File bySnJpg = new File(internalDir, item.getShortname() + ".jpg");
-                    if (bySnJpg.exists()) return bySnJpg.getAbsolutePath();
-                }
-            }
-        } catch (Exception ignored) {}
-
-        // 5. Check external storage /sdcard/Daijishou/wallpapers/
-        try {
-            File extDir = new File(storage, "Daijishou/wallpapers");
-            if (extDir.exists() && item.getShortname() != null) {
-                File extPng = new File(extDir, item.getShortname() + ".png");
-                if (extPng.exists()) return extPng.getAbsolutePath();
-                File extJpg = new File(extDir, item.getShortname() + ".jpg");
-                if (extJpg.exists()) return extJpg.getAbsolutePath();
-            }
-        } catch (Exception ignored) {}
-
-        // 6. Default background from 2-Jogos
+        // 6. Priority 6: Default background from 2-Jogos
         File default2Jogos = new File(storage, "2-Jogos/default_background.png");
         if (default2Jogos.exists()) {
             return default2Jogos.getAbsolutePath();
         }
 
-        // 7. Global Daijishou wallpaper fallback
+        // 7. Priority 7: Global Daijishou wallpaper fallback
         try {
             File globalWp = new File(context.getFilesDir(), "wallpaper");
             if (globalWp.exists()) {
@@ -954,7 +958,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
 
         CharSequence[] options = new CharSequence[] {
             (strSwitch != 0) ? getString(strSwitch) : "Alternar para Interface Mobile (Original)",
-            "📥 Importar Backup do ARC Browser (.tar)",
+            "Importar Backup do ARC Browser (.tar)",
             "Baixar Pacote de Clearlogos (GitHub)",
             "Baixar Temas e Papéis de Parede (GitHub)",
             "Baixar Pacotes de Miniaturas (GitHub)",

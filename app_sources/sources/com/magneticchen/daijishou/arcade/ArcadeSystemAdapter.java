@@ -136,8 +136,8 @@ public class ArcadeSystemAdapter extends RecyclerView.Adapter<ArcadeSystemAdapte
     }
 
     private void applyItemVisuals(ViewHolder holder, boolean isFocused, boolean animate) {
-        float targetScale = isFocused ? 1.12f : 0.85f;
-        float targetAlpha = isFocused ? 1.0f : 0.45f;
+        float targetScale = 1.0f; // Fixed 1.0f scale: does not enlarge on selection per user request
+        float targetAlpha = isFocused ? 1.0f : 0.55f;
 
         if (isFocused) {
             if (focusedBadgeDrawable != null) {
@@ -149,14 +149,14 @@ public class ArcadeSystemAdapter extends RecyclerView.Adapter<ArcadeSystemAdapte
 
         if (animate) {
             holder.itemView.animate()
-                .scaleX(targetScale)
-                .scaleY(targetScale)
+                .scaleX(1.0f)
+                .scaleY(1.0f)
                 .alpha(targetAlpha)
-                .setDuration(180)
+                .setDuration(120)
                 .start();
         } else {
-            holder.itemView.setScaleX(targetScale);
-            holder.itemView.setScaleY(targetScale);
+            holder.itemView.setScaleX(1.0f);
+            holder.itemView.setScaleY(1.0f);
             holder.itemView.setAlpha(targetAlpha);
         }
     }
