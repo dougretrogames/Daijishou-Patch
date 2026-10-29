@@ -3,11 +3,15 @@ name: Build Debug APK
 on:
   push:
     branches:
+      - main
       - master
+      - feature/arcade-mode
       - Daijishou-Backup
   pull_request:
     branches:
+      - main
       - master
+      - feature/arcade-mode
   workflow_dispatch:
 
 concurrency:

@@ -13,7 +13,6 @@ resourcesInfo:
   packageId: 127
 doNotCompress:
 - arsc
-- dex
 - mp3
 - ogg
 - png

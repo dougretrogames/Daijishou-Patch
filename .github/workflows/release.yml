@@ -3,13 +3,17 @@ name: Build Release APK
 on:
   push:
     branches:
+      - main
       - master
+      - feature/arcade-mode
       - Daijishou-Backup
     tags:
       - 'v*'
   pull_request:
     branches:
+      - main
       - master
+      - feature/arcade-mode
   workflow_dispatch:
     inputs:
       release_tag:
