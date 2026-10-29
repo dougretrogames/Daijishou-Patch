@@ -56,7 +56,7 @@ public class ArcadeLogoResolver {
             }
         }
 
-        if ("collections".equalsIgnoreCase(item.getShortname()) || "colecoes".equalsIgnoreCase(item.getShortname())) {
+        if (item.getId() == -997L || "collections".equalsIgnoreCase(item.getShortname()) || "colecoes".equalsIgnoreCase(item.getShortname())) {
             File collectionsLogo = findSpecialLogoFile("clearlogo_collections.png");
             if (collectionsLogo != null && collectionsLogo.exists()) {
                 loadInto(context, collectionsLogo, logoView, fallbackTitle);

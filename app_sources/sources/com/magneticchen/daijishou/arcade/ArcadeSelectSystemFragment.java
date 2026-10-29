@@ -680,7 +680,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             if (f2.exists()) return f2.getAbsolutePath();
         }
 
-        if ("collections".equalsIgnoreCase(item.getShortname()) || "colecoes".equalsIgnoreCase(item.getShortname())) {
+        if (item.getId() == -997L || "collections".equalsIgnoreCase(item.getShortname()) || "colecoes".equalsIgnoreCase(item.getShortname())) {
             File f = new File(storage, "2-Jogos/background_collections.png");
             if (f.exists()) return f.getAbsolutePath();
         }
