@@ -36,6 +36,7 @@ import androidx.navigation.Navigation;
 import androidx.preference.PreferenceManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSmoothScroller;
 import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -417,6 +418,8 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             Cursor cursor = null;
             try {
                 db = SQLiteDatabase.openDatabase(dbFile.getAbsolutePath(), null, SQLiteDatabase.OPEN_READWRITE);
+                // Ensure platforms are linked to RetroArch cores
+                ArcadeBackupImporter.autoLinkRetroArchPlayers(db);
                 Cursor countCursor = db.rawQuery("SELECT count(*) FROM PlatformEntity", null);
                 int count = 0;
                 if (countCursor != null && countCursor.moveToFirst()) {
@@ -542,8 +545,39 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
 
     @Override
     public void onSystemSelected(ArcadeItem item, int position) {
-        this.currentlyFocusedItem = item;
-        launchSelectedSystem();
+        if (currentlyFocusedItem != null && currentlyFocusedItem.getId() == item.getId()) {
+            // Already selected: Enter the system!
+            launchSelectedSystem();
+        } else {
+            // Unselected: Select, center and preview!
+            selectSystem(item, position);
+        }
+    }
+
+    private void selectSystem(ArcadeItem item, int position) {
+        if (adapter != null) {
+            adapter.setSelectedPosition(position);
+        }
+        onSystemFocused(item, position);
+        scrollToCenterPosition(position);
+    }
+
+    private void scrollToCenterPosition(int position) {
+        if (systemsRecyclerView == null) return;
+        final RecyclerView.LayoutManager lm = systemsRecyclerView.getLayoutManager();
+        if (lm == null) return;
+        try {
+            LinearSmoothScroller smoothScroller = new LinearSmoothScroller(requireContext()) {
+                @Override
+                public int calculateDtToFit(int viewStart, int viewEnd, int boxStart, int boxEnd, int snapPreference) {
+                    return (boxStart + (boxEnd - boxStart) / 2) - (viewStart + (viewEnd - viewStart) / 2);
+                }
+            };
+            smoothScroller.setTargetPosition(position);
+            lm.startSmoothScroll(smoothScroller);
+        } catch (Throwable t) {
+            systemsRecyclerView.smoothScrollToPosition(position);
+        }
     }
 
     private void launchSelectedSystem() {
@@ -1001,6 +1035,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         CharSequence[] options = new CharSequence[] {
             (strSwitch != 0) ? getString(strSwitch) : "Alternar para Interface Mobile (Original)",
             "Importar Backup do ARC Browser (.tar)",
+            "Vincular Núcleos do RetroArch aos Sistemas",
             "Baixar Pacote de Clearlogos (GitHub)",
             "Baixar Temas e Papéis de Parede (GitHub)",
             "Baixar Pacotes de Miniaturas (GitHub)",
@@ -1032,6 +1067,33 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                             }
                         });
                     } else if (which == 2) {
+                        // Vincular Nucleos do RetroArch aos Sistemas
+                        AsyncTask.execute(new Runnable() {
+                            @Override
+                            public void run() {
+                                File dbFile = context.getDatabasePath("Daijishou.db");
+                                int count = 0;
+                                if (dbFile.exists()) {
+                                    try {
+                                        SQLiteDatabase db = SQLiteDatabase.openDatabase(dbFile.getAbsolutePath(), null, SQLiteDatabase.OPEN_READWRITE);
+                                        count = ArcadeBackupImporter.autoLinkRetroArchPlayers(db);
+                                        db.close();
+                                    } catch (Throwable t) {
+                                        t.printStackTrace();
+                                    }
+                                }
+                                final int finalCount = count;
+                                new Handler(Looper.getMainLooper()).post(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        if (!isAdded()) return;
+                                        android.widget.Toast.makeText(context, finalCount + " sistemas vinculados aos núcleos do RetroArch com sucesso!", android.widget.Toast.LENGTH_LONG).show();
+                                        loadAndPopulatePlatforms();
+                                    }
+                                });
+                            }
+                        });
+                    } else if (which == 3) {
                         // Directly download Clearlogos pack from GitHub
                         try {
                             Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformThumbnailsPackDialogFragment");
@@ -1045,7 +1107,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                         } catch (Throwable t) {
                             t.printStackTrace();
                         }
-                    } else if (which == 3) {
+                    } else if (which == 4) {
                         // Download Wallpapers / Themes
                         try {
                             Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformWallpapersPackListDialogFragment");
@@ -1054,7 +1116,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                         } catch (Throwable t) {
                             t.printStackTrace();
                         }
-                    } else if (which == 4) {
+                    } else if (which == 5) {
                         // Download Thumbnails list
                         try {
                             Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformThumbnailsPackListDialogFragment");
@@ -1063,7 +1125,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                         } catch (Throwable t) {
                             t.printStackTrace();
                         }
-                    } else if (which == 5 || which == 6) {
+                    } else if (which == 6 || which == 7) {
                         Activity act = getActivity();
                         if (act != null) {
                             try {
@@ -1073,9 +1135,9 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                                 t.printStackTrace();
                             }
                         }
-                    } else if (which == 7) {
-                        toggleOrientation();
                     } else if (which == 8) {
+                        toggleOrientation();
+                    } else if (which == 9) {
                         loadAndPopulatePlatforms();
                     }
                 }

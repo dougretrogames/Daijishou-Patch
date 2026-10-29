@@ -102,6 +102,7 @@ $jars = (Resolve-Path "reconstructed/jars_compile/*" -ErrorAction SilentlyContin
 $cp = if ($jars) { "$jars;$androidJar" } else { $androidJar }
 
 & $javac -nowarn -proc:none -source 8 -target 8 -bootclasspath $androidJar -cp $cp -d $customClassesDir $customSrcs
+if ($LASTEXITCODE -ne 0) { throw "Falha na compilacao javac" }
 
 $customDexDir = "build_tmp/custom_dex"
 if (Test-Path $customDexDir) { Remove-Item -Recurse -Force $customDexDir }

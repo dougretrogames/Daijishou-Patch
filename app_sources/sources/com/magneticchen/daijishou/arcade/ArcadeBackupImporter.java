@@ -33,6 +33,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class ArcadeBackupImporter {
 
@@ -399,6 +401,11 @@ public class ArcadeBackupImporter {
             int importedGames = parseAndInsertGames(db, gamesFile, emulatorMap, gameCollectionsMap, listener);
             Log.i(TAG, "Importados " + importedGames + " jogos para o Daijishou.");
 
+            // Link any platforms to RetroArch cores
+            listener.onProgress("Vinculando núcleos do RetroArch...", 95, 100);
+            int linkedCount = autoLinkRetroArchPlayers(db);
+            Log.i(TAG, "Vinculadas " + linkedCount + " plataformas aos núcleos do RetroArch.");
+
             listener.onProgress("Finalizando importação...", 100, 100);
             listener.onSuccess(emulatorMap.size(), importedGames);
 
@@ -419,6 +426,8 @@ public class ArcadeBackupImporter {
         String currentEid = null;
         String currentKey = null;
         Map<String, String> currentData = new HashMap<>();
+        Map<String, String> currentExtras = new HashMap<>();
+        Map<String, String> currentExtraData = new HashMap<>();
         int position = 0;
         boolean insideEmulator = false;
         boolean insideExtra = false;
@@ -440,23 +449,35 @@ public class ArcadeBackupImporter {
                         insideExtra = false;
                         currentEid = parser.getAttributeValue(null, "id");
                         currentData.clear();
+                        currentExtras.clear();
+                    } else if ("extra".equals(type) && insideEmulator) {
+                        insideExtra = true;
+                        currentExtraData.clear();
+                        currentKey = null;
                     } else {
                         insideExtra = true;
                     }
                 } else if ("data".equals(tag)) {
-                    if (insideEmulator && !insideExtra) {
-                        currentKey = parser.getAttributeValue(null, "key");
-                    }
+                    currentKey = parser.getAttributeValue(null, "key");
                 }
             } else if (event == XmlPullParser.TEXT) {
-                if (currentKey != null && currentEid != null && insideEmulator && !insideExtra) {
-                    currentData.put(currentKey, parser.getText());
+                if (currentKey != null && currentEid != null && insideEmulator) {
+                    if (insideExtra) {
+                        currentExtraData.put(currentKey, parser.getText());
+                    } else {
+                        currentData.put(currentKey, parser.getText());
+                    }
                 }
             } else if (event == XmlPullParser.END_TAG) {
                 if ("data".equals(tag)) {
                     currentKey = null;
                 } else if ("entry".equals(tag)) {
                     if (insideExtra) {
+                        String exName = currentExtraData.get("name");
+                        String exVal = currentExtraData.get("value");
+                        if (exName != null && exVal != null) {
+                            currentExtras.put(exName, exVal);
+                        }
                         insideExtra = false;
                     } else if (insideEmulator && currentEid != null) {
                         insideEmulator = false;
@@ -470,16 +491,36 @@ public class ArcadeBackupImporter {
                             String folder = new File(romDir).getName();
                             String shortname = (folder != null && !folder.isEmpty()) ? folder : "unknown";
 
+                            String libretro = currentExtras.get("LIBRETRO");
+                            String configFile = currentExtras.get("CONFIGFILE");
+                            String launchComp = currentData.get("launchComponent");
+                            String coreKey = extractCoreKey(libretro, name, currentData.get("description"));
+
+                            PlayerResolution pRes = resolveOrPopulatePlayers(db, shortname, name, coreKey, launchComp, configFile);
+
                             // Check if platform exists in DB
                             long pid = -1;
-                            Cursor c = db.rawQuery("SELECT id FROM PlatformEntity WHERE shortname = ? OR name = ? LIMIT 1", new String[]{shortname, name});
+                            Cursor c = db.rawQuery("SELECT id, default_player_id, player_id_list FROM PlatformEntity WHERE shortname = ? OR name = ? LIMIT 1", new String[]{shortname, name});
                             if (c != null && c.moveToFirst()) {
                                 pid = c.getLong(0);
+                                long existingDefPlayer = c.getLong(1);
+                                String existingPList = c.getString(2);
                                 c.close();
+
+                                // If existing platform has no player linked, link it now!
+                                if (existingDefPlayer == 0 || existingPList == null || "[]".equals(existingPList.trim())) {
+                                    if (pRes != null && pRes.defaultPlayerId > 0) {
+                                        SQLiteStatement uStmt = db.compileStatement("UPDATE PlatformEntity SET default_player_id = ?, player_id_list = ? WHERE id = ?");
+                                        uStmt.bindLong(1, pRes.defaultPlayerId);
+                                        uStmt.bindString(2, pRes.playerIdListJson);
+                                        uStmt.bindLong(3, pid);
+                                        uStmt.executeUpdateDelete();
+                                    }
+                                }
                             } else {
                                 if (c != null) c.close();
 
-                                // Insert new PlatformEntity
+                                // Insert new PlatformEntity with resolved player!
                                 JSONArray syncTreeArr = new JSONArray();
                                 syncTreeArr.put("file://" + romDir);
 
@@ -492,12 +533,14 @@ public class ArcadeBackupImporter {
                                     "screen_aspect_ratio_id, use_custom_screen_aspect_ratio, " +
                                     "items_sync_tree_uri_list, retro_achievements_console_id_list, " +
                                     "position, extra) " +
-                                    "VALUES (?, ?, 1, 0, null, null, '.*', 0, '[]', '[]', 0, 0, 0, 0, ?, '[]', ?, '{}')"
+                                    "VALUES (?, ?, 1, 0, null, null, '.*', ?, ?, '[]', 0, 0, 0, 0, ?, '[]', ?, '{}')"
                                 );
                                 stmt.bindString(1, name != null ? name : shortname);
                                 stmt.bindString(2, shortname);
-                                stmt.bindString(3, syncTreeArr.toString());
-                                stmt.bindLong(4, position++);
+                                stmt.bindLong(3, (pRes != null) ? pRes.defaultPlayerId : 0L);
+                                stmt.bindString(4, (pRes != null) ? pRes.playerIdListJson : "[]");
+                                stmt.bindString(5, syncTreeArr.toString());
+                                stmt.bindLong(6, position++);
                                 pid = stmt.executeInsert();
                             }
 
@@ -513,6 +556,229 @@ public class ArcadeBackupImporter {
         }
         reader.close();
         return result;
+    }
+
+    public static class PlayerResolution {
+        public long defaultPlayerId;
+        public String playerIdListJson;
+
+        public PlayerResolution(long defaultPlayerId, String playerIdListJson) {
+            this.defaultPlayerId = defaultPlayerId;
+            this.playerIdListJson = playerIdListJson;
+        }
+    }
+
+    private static String extractCoreKey(String libretroVal, String name, String desc) {
+        if (libretroVal != null && !libretroVal.trim().isEmpty() && !"None".equalsIgnoreCase(libretroVal)) {
+            String base = new File(libretroVal).getName();
+            return base.replaceAll("(?i)(_libretro_android\\.so|_libretro\\.so|\\.so)$", "").trim();
+        }
+        String combined = ((desc != null ? desc : "") + " " + (name != null ? name : "")).toLowerCase();
+        Matcher m = Pattern.compile("core:\\s*([a-zA-Z0-9_\\-]+)").matcher(combined);
+        if (m.find()) {
+            return m.group(1).replaceAll("(?i)(_libretro_android\\.so|_libretro\\.so|\\.so)$", "").trim();
+        }
+        Matcher m2 = Pattern.compile("\\(([^)]+)\\)").matcher(combined);
+        if (m2.find()) {
+            String inside = m2.group(1).trim().toLowerCase().replaceAll("[^a-z0-9_]", "");
+            if (inside.contains("retroarch") || inside.contains("mame") || inside.contains("fba") || inside.contains("snes")) {
+                return inside;
+            }
+        }
+        return null;
+    }
+
+    public static String getDefaultCoreForShortname(String shortname) {
+        if (shortname == null) return null;
+        String s = shortname.toLowerCase();
+        switch (s) {
+            case "arcade": return "mame2010";
+            case "mame": case "verticalarcade": return "mame2003_plus";
+            case "cps1": return "fbalpha2012_cps1";
+            case "cps2": return "fbalpha2012_cps2";
+            case "cps3": return "fbalpha2012_cps3";
+            case "neogeo": return "fbalpha2012_neogeo";
+            case "kofhacks": case "streetfighterhacks": return "fbalpha2012";
+            case "gba": return "mgba";
+            case "gb": case "gbc": return "gambatte";
+            case "nes": case "fds": return "fceumm";
+            case "snes": return "snes9x2005";
+            case "megadrive": case "genesis": case "segacd": case "sg1000": return "genesis_plus_gx";
+            case "mastersystem": case "master": case "sega32x": return "picodrive";
+            case "gamegear": return "genesis_plus_gx";
+            case "psx": return "pcsx_rearmed";
+            case "pcengine": case "tg16": return "mednafen_pce_fast";
+            case "supergrafx": return "mednafen_supergrafx";
+            case "atari2600": return "stella2014";
+            case "atari5200": return "a5200";
+            case "atari7800": return "prosystem";
+            case "lynx": return "handy";
+            case "colecovision": case "coleco": case "msx": case "msx2": return "bluemsx";
+            case "intellivision": return "freeintv";
+            case "ngp": case "ngpc": return "mednafen_ngp";
+            case "vectrex": return "vecx";
+            case "virtualboy": return "mednafen_vb";
+            case "wswanc": case "wsc": return "mednafen_wswan";
+            default: return null;
+        }
+    }
+
+    public static PlayerResolution resolveOrPopulatePlayers(SQLiteDatabase db, String shortname, String platformName, String coreKey, String launchComponent, String configFile) {
+        List<Long> matchedIds = new ArrayList<>();
+        long bestPlayerId = 0L;
+
+        try {
+            Cursor c = db.rawQuery("SELECT id, name, unique_id, am_start_arguments FROM PlayerEntity", null);
+            if (c != null) {
+                while (c.moveToNext()) {
+                    long pId = c.getLong(0);
+                    String pName = c.getString(1);
+                    String pUniqueId = c.getString(2);
+                    String pArgs = c.getString(3);
+
+                    boolean exactCoreMatch = false;
+                    boolean platformMatch = false;
+
+                    if (coreKey != null && !coreKey.isEmpty()) {
+                        String normCore = coreKey.toLowerCase().replace("_", "").replace("-", "");
+                        String normName = pName != null ? pName.toLowerCase().replace("_", "").replace("-", "") : "";
+                        String normArgs = pArgs != null ? pArgs.toLowerCase().replace("_", "").replace("-", "") : "";
+
+                        if (normArgs.contains("libretro " + normCore) || normArgs.contains("libretro=" + normCore) || normArgs.contains(normCore)) {
+                            exactCoreMatch = true;
+                        } else if (normName.contains(normCore)) {
+                            exactCoreMatch = true;
+                        }
+                    }
+
+                    if (shortname != null && !shortname.isEmpty()) {
+                        String sLower = shortname.toLowerCase();
+                        if (pName != null && (pName.toLowerCase().startsWith(sLower + " - ") || pName.toLowerCase().startsWith(sLower + " "))) {
+                            platformMatch = true;
+                        } else if (pUniqueId != null && pUniqueId.toLowerCase().startsWith(sLower + "_")) {
+                            platformMatch = true;
+                        }
+                    }
+
+                    if (launchComponent != null && !launchComponent.isEmpty() && !launchComponent.contains("retroarch")) {
+                        String pkg = launchComponent.contains("/") ? launchComponent.substring(0, launchComponent.indexOf('/')) : launchComponent;
+                        if (pArgs != null && pArgs.contains(pkg)) {
+                            exactCoreMatch = true;
+                        }
+                    }
+
+                    if (exactCoreMatch) {
+                        matchedIds.add(0, pId);
+                        if (bestPlayerId == 0) bestPlayerId = pId;
+                    } else if (platformMatch) {
+                        if (!matchedIds.contains(pId)) {
+                            matchedIds.add(pId);
+                        }
+                    }
+                }
+                c.close();
+            }
+        } catch (Throwable t) {
+            Log.e(TAG, "Error querying PlayerEntity", t);
+        }
+
+        // If no player matched, create standard players
+        if (matchedIds.isEmpty()) {
+            if (coreKey != null && !coreKey.isEmpty()) {
+                long p64 = insertPlayer(db,
+                    shortname.toUpperCase() + " - RetroArch 64 - " + coreKey,
+                    shortname + "_retroarch64_" + coreKey,
+                    "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO " + coreKey + "\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg");
+
+                long pDef = insertPlayer(db,
+                    shortname.toUpperCase() + " - RetroArch - " + coreKey,
+                    shortname + "_retroarch_" + coreKey,
+                    "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO " + coreKey + "\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg");
+
+                long p32 = insertPlayer(db,
+                    shortname.toUpperCase() + " - RetroArch 32 - " + coreKey,
+                    shortname + "_retroarch32_" + coreKey,
+                    "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO " + coreKey + "\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg");
+
+                if (p64 > 0) matchedIds.add(p64);
+                if (pDef > 0) matchedIds.add(pDef);
+                if (p32 > 0) matchedIds.add(p32);
+                bestPlayerId = (p64 > 0) ? p64 : ((pDef > 0) ? pDef : p32);
+            } else if (launchComponent != null && !launchComponent.isEmpty()) {
+                long pStandalone = insertPlayer(db,
+                    platformName + " (" + shortname.toUpperCase() + ")",
+                    shortname + "_standalone",
+                    "-n " + launchComponent + "\n  -d {file.uri}\n  -a android.intent.action.VIEW");
+                if (pStandalone > 0) {
+                    matchedIds.add(pStandalone);
+                    bestPlayerId = pStandalone;
+                }
+            }
+        }
+
+        if (bestPlayerId == 0 && !matchedIds.isEmpty()) {
+            bestPlayerId = matchedIds.get(0);
+        }
+
+        JSONArray jArr = new JSONArray();
+        for (Long id : matchedIds) {
+            jArr.put(id);
+        }
+        return new PlayerResolution(bestPlayerId, jArr.toString());
+    }
+
+    private static long insertPlayer(SQLiteDatabase db, String name, String uniqueId, String amStartArguments) {
+        try {
+            SQLiteStatement stmt = db.compileStatement(
+                "INSERT INTO PlayerEntity (unique_id, player, name, description, am_start_arguments, kill_package_processes, kill_package_processes_warning, accepted_filename_regex, extra) " +
+                "VALUES (?, 1, ?, '', ?, 0, 0, '.*', '{}')"
+            );
+            stmt.bindString(1, uniqueId != null ? uniqueId : "");
+            stmt.bindString(2, name != null ? name : "");
+            stmt.bindString(3, amStartArguments != null ? amStartArguments : "");
+            return stmt.executeInsert();
+        } catch (Throwable t) {
+            Log.e(TAG, "Error inserting PlayerEntity: " + name, t);
+            return -1L;
+        }
+    }
+
+    public static int autoLinkRetroArchPlayers(SQLiteDatabase db) {
+        if (db == null) return 0;
+        int linkedCount = 0;
+        try {
+            Cursor c = db.rawQuery("SELECT id, name, shortname, default_player_id, player_id_list FROM PlatformEntity", null);
+            if (c != null) {
+                List<PlatformInfo> toLinkList = new ArrayList<>();
+                while (c.moveToNext()) {
+                    long id = c.getLong(0);
+                    String name = c.getString(1);
+                    String shortname = c.getString(2);
+                    long defPlayer = c.getLong(3);
+                    String pList = c.getString(4);
+                    if (defPlayer == 0 || pList == null || "[]".equals(pList.trim())) {
+                        toLinkList.add(new PlatformInfo(id, name, shortname, null));
+                    }
+                }
+                c.close();
+
+                for (PlatformInfo p : toLinkList) {
+                    String defaultCore = getDefaultCoreForShortname(p.shortname);
+                    PlayerResolution res = resolveOrPopulatePlayers(db, p.shortname, p.name, defaultCore, null, null);
+                    if (res != null && res.defaultPlayerId > 0) {
+                        SQLiteStatement uStmt = db.compileStatement("UPDATE PlatformEntity SET default_player_id = ?, player_id_list = ? WHERE id = ?");
+                        uStmt.bindLong(1, res.defaultPlayerId);
+                        uStmt.bindString(2, res.playerIdListJson);
+                        uStmt.bindLong(3, p.platformId);
+                        uStmt.executeUpdateDelete();
+                        linkedCount++;
+                    }
+                }
+            }
+        } catch (Throwable t) {
+            Log.e(TAG, "autoLinkRetroArchPlayers error", t);
+        }
+        return linkedCount;
     }
 
     private static void parseCollections(File collectionsFile, Map<String, List<String>> gameCollectionsMap) throws Exception {
