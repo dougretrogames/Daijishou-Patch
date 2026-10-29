@@ -4578,15 +4578,6 @@
 .method public onBackPressedCallback()V
     .locals 4
 
-    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->handleBackPressed(Landroid/app/Activity;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_arcade_back
-
-    return-void
-
-    :cond_arcade_back
     .line 594
     invoke-direct {p0}, Lcom/magneticchen/daijishou/ui/activities/MainActivity;->getMainViewPagerAdapter()Lcom/magneticchen/daijishou/ui/activities/MainActivity$ScreenSlidePagerAdapter;
 
@@ -4608,6 +4599,15 @@
 
     if-eqz v1, :cond_2
 
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->handleRootBackPressed(Landroid/app/Activity;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_arcade_not_root
+
+    return-void
+
+    :cond_arcade_not_root
     .line 597
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/ui/activities/MainActivity;->getDefaultSharedPreferences()Landroid/content/SharedPreferences;
 

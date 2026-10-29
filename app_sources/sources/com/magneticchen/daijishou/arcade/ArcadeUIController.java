@@ -256,6 +256,12 @@ public class ArcadeUIController {
         View.OnClickListener bListener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                try {
+                    androidx.navigation.NavController nc = androidx.navigation.fragment.FragmentKt.findNavController(fragment);
+                    if (nc.navigateUp()) {
+                        return;
+                    }
+                } catch (Throwable ignored) {}
                 if (fragment.getActivity() != null) {
                     fragment.getActivity().onBackPressed();
                 }
@@ -353,7 +359,7 @@ public class ArcadeUIController {
             t.printStackTrace();
         }
     }
-    public static boolean handleBackPressed(Activity activity) {
+    public static boolean handleRootBackPressed(Activity activity) {
         if (activity == null || !isArcadeMode(activity)) {
             return false;
         }
@@ -364,14 +370,6 @@ public class ArcadeUIController {
                 return true;
             }
 
-            if (activity instanceof androidx.fragment.app.FragmentActivity) {
-                androidx.fragment.app.FragmentManager fm = ((androidx.fragment.app.FragmentActivity) activity).getSupportFragmentManager();
-                if (fm.getBackStackEntryCount() > 0) {
-                    fm.popBackStack();
-                    return true;
-                }
-            }
-
             // On the root screen of Arcade mode, minimize app to Android Home, avoiding getting stuck in other tabs
             activity.moveTaskToBack(true);
             return true;
@@ -379,6 +377,10 @@ public class ArcadeUIController {
             t.printStackTrace();
         }
         return false;
+    }
+
+    public static boolean handleBackPressed(Activity activity) {
+        return handleRootBackPressed(activity);
     }
 
 }
