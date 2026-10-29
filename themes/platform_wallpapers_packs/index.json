@@ -1,5 +1,5 @@
 {
-  "baseUri": "https://raw.githubusercontent.com/magneticchen/Daijishou/main/themes/platform_wallpapers_packs/",
+  "baseUri": "https://raw.githubusercontent.com/dougretrogames/Daijishou-Patch/main/themes/platform_wallpapers_packs/",
   "platformWallpapersPackList": [
     {
       "platformWallpapersPackAuthors": [
@@ -138,7 +138,7 @@
         "Jamesinorbit",
         "anthonycaccese"
       ],
-      "platformWallpapersPackDescription": "An EmulationStation theme, initially created by anthonycaccese for JELOS. Ported and updated for Daijish\u014d by Jamesinorbit",
+      "platformWallpapersPackDescription": "An EmulationStation theme, initially created by anthonycaccese for JELOS. Ported and updated for Daijishō by Jamesinorbit",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "Art-Book-Next",
       "platformWallpapersPackPreviewThumbnailPath": "art-book-next/thumbnail.jpg",
@@ -149,7 +149,7 @@
         "Jamesinorbit",
         "anthonycaccese"
       ],
-      "platformWallpapersPackDescription": "An EmulationStation theme, initially created by anthonycaccese for JELOS. Ported and updated for Daijish\u014d by Jamesinorbit",
+      "platformWallpapersPackDescription": "An EmulationStation theme, initially created by anthonycaccese for JELOS. Ported and updated for Daijishō by Jamesinorbit",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "Art-Book-Next-Fade",
       "platformWallpapersPackPreviewThumbnailPath": "art-book-next-fade/thumbnail.jpg",
@@ -220,7 +220,7 @@
         "viking",
         "iShade"
       ],
-      "platformWallpapersPackDescription": "The pack contains colorful yet simple wallpapers of physical looks for each devices. Originated from viking on launchbox. Modified by UsagiShade, indexing by TapiocaFox for Daijish\u014d.",
+      "platformWallpapersPackDescription": "The pack contains colorful yet simple wallpapers of physical looks for each devices. Originated from viking on launchbox. Modified by UsagiShade, indexing by TapiocaFox for Daijishō.",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "COLORFUL",
       "platformWallpapersPackPreviewThumbnailPath": "colorful/COLORFUL.jpg",
@@ -241,7 +241,7 @@
         "Jamesinorbit",
         "Viking"
       ],
-      "platformWallpapersPackDescription": "Vikings theme work on launchbox. Modified and ported / updates by jamesinorbit for Daijish\u014d..",
+      "platformWallpapersPackDescription": "Vikings theme work on launchbox. Modified and ported / updates by jamesinorbit for Daijishō..",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "Colorfully",
       "platformWallpapersPackPreviewThumbnailPath": "Colorfully/thumbnail.jpg",
@@ -252,7 +252,7 @@
         "Jamesinorbit",
         "Viking"
       ],
-      "platformWallpapersPackDescription": "Vikings theme work on launchbox. Modified and ported / details update by jamesinorbit for Daijish\u014d..",
+      "platformWallpapersPackDescription": "Vikings theme work on launchbox. Modified and ported / details update by jamesinorbit for Daijishō..",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "Colorfully Details",
       "platformWallpapersPackPreviewThumbnailPath": "ColorfullyDetails/thumbnail.jpg",
@@ -260,12 +260,12 @@
     },
     {
       "platformWallpapersPackAuthors": [
-        "Daijish\u014d",
+        "Daijishō",
         "TapiocaFox"
       ],
       "platformWallpapersPackDescription": "A platform wallpapers pack consists images of waifus with coloured background. This pack will set all your wallpaper to waifus related to the platforms. :3",
       "platformWallpapersPackIsNSFW": true,
-      "platformWallpapersPackName": "Colorful Waifus\u2122 (Beta)",
+      "platformWallpapersPackName": "Colorful Waifus™ (Beta)",
       "platformWallpapersPackPreviewThumbnailPath": "ColorfulWaifus/preview.png",
       "platformWallpapersPackRootPath": "ColorfulWaifus"
     },
@@ -275,7 +275,7 @@
       ],
       "platformWallpapersPackDescription": "A retro gaming theme that brings back the nostalgia of classic video games from the 80s and 90s.",
       "platformWallpapersPackIsNSFW": false,
-      "platformWallpapersPackName": "Daijish\u014d Box",
+      "platformWallpapersPackName": "Daijishō Box",
       "platformWallpapersPackPreviewThumbnailPath": "Daijisho Box/Thumbnails.png",
       "platformWallpapersPackRootPath": "Daijisho Box"
     },
@@ -391,9 +391,9 @@
     },
     {
       "platformWallpapersPackAuthors": [
-        "\u3066Rey\u591c"
+        "てRey夜"
       ],
-      "platformWallpapersPackDescription": "An angled and minimal design, featuring system logos. Widescreen and smallsceen compatible. Wallpaper for Daijish\u014d menus available here: https://shorturl.at/opsHZ",
+      "platformWallpapersPackDescription": "An angled and minimal design, featuring system logos. Widescreen and smallsceen compatible. Wallpaper for Daijishō menus available here: https://shorturl.at/opsHZ",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "Geometry",
       "platformWallpapersPackPreviewThumbnailPath": "geometry/thumbnail.png",
@@ -401,9 +401,9 @@
     },
     {
       "platformWallpapersPackAuthors": [
-        "\u3066Rey\u591c"
+        "てRey夜"
       ],
-      "platformWallpapersPackDescription": "A dark version of 'Geometry'. Wallpaper for Daijish\u014d menus available here: https://shorturl.at/knsVY",
+      "platformWallpapersPackDescription": "A dark version of 'Geometry'. Wallpaper for Daijishō menus available here: https://shorturl.at/knsVY",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "Geometry Dark",
       "platformWallpapersPackPreviewThumbnailPath": "geometry dark/thumbnail-dark.png",
@@ -411,9 +411,9 @@
     },
     {
       "platformWallpapersPackAuthors": [
-        "\u3066Rey\u591c"
+        "てRey夜"
       ],
-      "platformWallpapersPackDescription": "A neon version of 'Geometry Dark'. Wallpaper for Daijish\u014d menus available here: https://shorturl.at/iLU79",
+      "platformWallpapersPackDescription": "A neon version of 'Geometry Dark'. Wallpaper for Daijishō menus available here: https://shorturl.at/iLU79",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "Geometry Dark Neon",
       "platformWallpapersPackPreviewThumbnailPath": "geometry dark neon/thumbnail-neon.png",
@@ -481,10 +481,10 @@
     },
     {
       "platformWallpapersPackAuthors": [
-        "Daijish\u014d",
+        "Daijishō",
         "TapiocaFox"
       ],
-      "platformWallpapersPackDescription": "This pack will set all your wallpaper to mount niitaka. Niitaka (\u65b0\u9ad8) is the highest mountain in Taiwan at 3,952 m above sea level. \"Was\" the tallest mountain in the Japanese Empire.",
+      "platformWallpapersPackDescription": "This pack will set all your wallpaper to mount niitaka. Niitaka (新高) is the highest mountain in Taiwan at 3,952 m above sea level. \"Was\" the tallest mountain in the Japanese Empire.",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "Mount niitaka",
       "platformWallpapersPackPreviewThumbnailPath": "mount-niitaka/preview_thumbnail_2.jpg",
@@ -504,7 +504,7 @@
       "platformWallpapersPackAuthors": [
         "Gris"
       ],
-      "platformWallpapersPackDescription": "A set of wallpapers containing pixel art-style consoles against a minimalist backdrop. Optimized for 4:3 and 16:9 aspect ratios. Icons sourced from YoshiPixel, Logos sourced from Dan Patrick. Special thanks to iShade, Post Mortem, Sarantula, Lan_DKZd and \u3066Rey\u3299. (LIMITED SUPPORT)",
+      "platformWallpapersPackDescription": "A set of wallpapers containing pixel art-style consoles against a minimalist backdrop. Optimized for 4:3 and 16:9 aspect ratios. Icons sourced from YoshiPixel, Logos sourced from Dan Patrick. Special thanks to iShade, Post Mortem, Sarantula, Lan_DKZd and てRey㊙. (LIMITED SUPPORT)",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "Pixels",
       "platformWallpapersPackPreviewThumbnailPath": "Pixels/preview_thumbnail_2.png",
@@ -554,7 +554,7 @@
       "platformWallpapersPackAuthors": [
         "LuisMz"
       ],
-      "platformWallpapersPackDescription": "This pack contains images of the devices and minimalistic system logo, made for the Daijish\u00f4 Launcher.",
+      "platformWallpapersPackDescription": "This pack contains images of the devices and minimalistic system logo, made for the Daijishô Launcher.",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "RetroArtx",
       "platformWallpapersPackPreviewThumbnailPath": "retro-artx/thumbnail.jpg",
@@ -562,7 +562,7 @@
     },
     {
       "platformWallpapersPackAuthors": [
-        "Daijish\u014d",
+        "Daijishō",
         "TapiocaFox"
       ],
       "platformWallpapersPackDescription": "A platform wallpapers pack template contains only single wallpaper of retro futuristic wallpaper.",
@@ -809,7 +809,7 @@
         "Jamesinorbit",
         "anthonycaccese"
       ],
-      "platformWallpapersPackDescription": "An EmulationStation theme, initially created by anthonycaccese for micro handhelds. Modified and ported / updates by jamesinorbit for Daijish\u014d..",
+      "platformWallpapersPackDescription": "An EmulationStation theme, initially created by anthonycaccese for micro handhelds. Modified and ported / updates by jamesinorbit for Daijishō..",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "TFT Grid Next",
       "platformWallpapersPackPreviewThumbnailPath": "tft-grid-next/thumbnail.jpg",
@@ -820,7 +820,7 @@
         "Jamesinorbit",
         "anthonycaccese"
       ],
-      "platformWallpapersPackDescription": "An EmulationStation theme, initially created by anthonycaccese for micro handhelds. Modified and ported / updates by jamesinorbit for Daijish\u014d. This version is for 4:3 640x480 devices.",
+      "platformWallpapersPackDescription": "An EmulationStation theme, initially created by anthonycaccese for micro handhelds. Modified and ported / updates by jamesinorbit for Daijishō. This version is for 4:3 640x480 devices.",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "TFT Grid Next 640",
       "platformWallpapersPackPreviewThumbnailPath": "tft-grid-next-640/thumbnail.jpg",
@@ -850,7 +850,7 @@
       "platformWallpapersPackAuthors": [
         "Retro Devils"
       ],
-      "platformWallpapersPackDescription": "The pack contains red-themed backgrounds, devices and titles wallpapers for each platforms. It's a platform wallpapers pack for Daijish\u014d made by Retro Devils.",
+      "platformWallpapersPackDescription": "The pack contains red-themed backgrounds, devices and titles wallpapers for each platforms. It's a platform wallpapers pack for Daijishō made by Retro Devils.",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "Theme 9000",
       "platformWallpapersPackPreviewThumbnailPath": "theme-9000/thumbnail.jpg",
@@ -892,7 +892,7 @@
         "UnbelievableFlavour",
         "Richard_75"
       ],
-      "platformWallpapersPackDescription": "Theme designed by jimgray and uploaded on his behalf. Later modified and expanded by other authors, indexing by Post Mortem for Daijish\u014d.",
+      "platformWallpapersPackDescription": "Theme designed by jimgray and uploaded on his behalf. Later modified and expanded by other authors, indexing by Post Mortem for Daijishō.",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "Vivid",
       "platformWallpapersPackPreviewThumbnailPath": "Vivid/thumbnail.png",
@@ -905,7 +905,7 @@
         "Richard_75",
         "RowdyRomero"
       ],
-      "platformWallpapersPackDescription": "Extended version of Vivid by jimgray, new platforms as well as year and maker have been added to the theme. This version has been created by RowdyR76, indexing by Post Mortem for Daijish\u014d.",
+      "platformWallpapersPackDescription": "Extended version of Vivid by jimgray, new platforms as well as year and maker have been added to the theme. This version has been created by RowdyR76, indexing by Post Mortem for Daijishō.",
       "platformWallpapersPackIsNSFW": false,
       "platformWallpapersPackName": "Vivid Extended",
       "platformWallpapersPackPreviewThumbnailPath": "Vivid Extended/thumbnail.png",

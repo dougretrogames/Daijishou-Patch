@@ -1,0 +1,684 @@
+{
+  "platformThumbnailList": [
+    {
+      "platformThumbnailPath": "3do.png",
+      "platformThumbnailShortname": "3do"
+    },
+    {
+      "platformThumbnailPath": "3ds.png",
+      "platformThumbnailShortname": "3ds"
+    },
+    {
+      "platformThumbnailPath": "all_games.png",
+      "platformThumbnailShortname": "all_games"
+    },
+    {
+      "platformThumbnailPath": "allsystems.png",
+      "platformThumbnailShortname": "allsystems"
+    },
+    {
+      "platformThumbnailPath": "android.png",
+      "platformThumbnailShortname": "android"
+    },
+    {
+      "platformThumbnailPath": "apps.png",
+      "platformThumbnailShortname": "apps"
+    },
+    {
+      "platformThumbnailPath": "arcade.png",
+      "platformThumbnailShortname": "arcade"
+    },
+    {
+      "platformThumbnailPath": "atari2600.png",
+      "platformThumbnailShortname": "atari2600"
+    },
+    {
+      "platformThumbnailPath": "atari5200.png",
+      "platformThumbnailShortname": "atari5200"
+    },
+    {
+      "platformThumbnailPath": "atari7800.png",
+      "platformThumbnailShortname": "atari7800"
+    },
+    {
+      "platformThumbnailPath": "atomiswave.png",
+      "platformThumbnailShortname": "atomiswave"
+    },
+    {
+      "platformThumbnailPath": "c64.png",
+      "platformThumbnailShortname": "c64"
+    },
+    {
+      "platformThumbnailPath": "capcom.png",
+      "platformThumbnailShortname": "capcom"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_3do.png",
+      "platformThumbnailShortname": "3do"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_3ds.png",
+      "platformThumbnailShortname": "3ds"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_allsystems.png",
+      "platformThumbnailShortname": "allsystems"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_apps.png",
+      "platformThumbnailShortname": "apps"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_arcade.png",
+      "platformThumbnailShortname": "arcade"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_atari2600.png",
+      "platformThumbnailShortname": "atari2600"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_atari5200.png",
+      "platformThumbnailShortname": "atari5200"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_atari7800.png",
+      "platformThumbnailShortname": "atari7800"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_atomiswave.png",
+      "platformThumbnailShortname": "atomiswave"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_c64.png",
+      "platformThumbnailShortname": "c64"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_capcom.png",
+      "platformThumbnailShortname": "capcom"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_colecovision.png",
+      "platformThumbnailShortname": "colecovision"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_collections.png",
+      "platformThumbnailShortname": "collections"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_cps1.png",
+      "platformThumbnailShortname": "cps1"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_cps2.png",
+      "platformThumbnailShortname": "cps2"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_cps3.png",
+      "platformThumbnailShortname": "cps3"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_dreamcast.png",
+      "platformThumbnailShortname": "dreamcast"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_favorites.png",
+      "platformThumbnailShortname": "favorites"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_fds.png",
+      "platformThumbnailShortname": "fds"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_gamecube.png",
+      "platformThumbnailShortname": "gamecube"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_gamegear.png",
+      "platformThumbnailShortname": "gamegear"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_gb.png",
+      "platformThumbnailShortname": "gb"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_gba.png",
+      "platformThumbnailShortname": "gba"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_gbc.png",
+      "platformThumbnailShortname": "gbc"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_intellivision.png",
+      "platformThumbnailShortname": "intellivision"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_kofhacks.png",
+      "platformThumbnailShortname": "kofhacks"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_lynx.png",
+      "platformThumbnailShortname": "lynx"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_mame.png",
+      "platformThumbnailShortname": "mame"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_mastersystem.png",
+      "platformThumbnailShortname": "mastersystem"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_megadrive.png",
+      "platformThumbnailShortname": "megadrive"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_mortalkombat.png",
+      "platformThumbnailShortname": "mortalkombat"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_msx.png",
+      "platformThumbnailShortname": "msx"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_msx2.png",
+      "platformThumbnailShortname": "msx2"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_n64.png",
+      "platformThumbnailShortname": "n64"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_naomi.png",
+      "platformThumbnailShortname": "naomi"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_nds.png",
+      "platformThumbnailShortname": "nds"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_neogeo.png",
+      "platformThumbnailShortname": "neogeo"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_nes.png",
+      "platformThumbnailShortname": "nes"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_ngp.png",
+      "platformThumbnailShortname": "ngp"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_ngpc.png",
+      "platformThumbnailShortname": "ngpc"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_odyssey2.png",
+      "platformThumbnailShortname": "odyssey2"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_pcengine.png",
+      "platformThumbnailShortname": "pcengine"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_pcenginecd.png",
+      "platformThumbnailShortname": "pcenginecd"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_ps2.png",
+      "platformThumbnailShortname": "ps2"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_psp.png",
+      "platformThumbnailShortname": "psp"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_pspminis.png",
+      "platformThumbnailShortname": "pspminis"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_psx.png",
+      "platformThumbnailShortname": "psx"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_recentlyplayed.png",
+      "platformThumbnailShortname": "recentlyplayed"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_saturn.png",
+      "platformThumbnailShortname": "saturn"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_sega32x.png",
+      "platformThumbnailShortname": "sega32x"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_segacd.png",
+      "platformThumbnailShortname": "segacd"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_sg1000.png",
+      "platformThumbnailShortname": "sg1000"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_snes.png",
+      "platformThumbnailShortname": "snes"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_streetfighterhacks.png",
+      "platformThumbnailShortname": "streetfighterhacks"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_suggestions.png",
+      "platformThumbnailShortname": "suggestions"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_supergrafx.png",
+      "platformThumbnailShortname": "supergrafx"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_switch.png",
+      "platformThumbnailShortname": "switch"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_tools.png",
+      "platformThumbnailShortname": "tools"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_vectrex.png",
+      "platformThumbnailShortname": "vectrex"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_verticalarcade.png",
+      "platformThumbnailShortname": "verticalarcade"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_virtualboy.png",
+      "platformThumbnailShortname": "virtualboy"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_wii.png",
+      "platformThumbnailShortname": "wii"
+    },
+    {
+      "platformThumbnailPath": "clearlogo_wswanc.png",
+      "platformThumbnailShortname": "wswanc"
+    },
+    {
+      "platformThumbnailPath": "coleco.png",
+      "platformThumbnailShortname": "coleco"
+    },
+    {
+      "platformThumbnailPath": "colecoes.png",
+      "platformThumbnailShortname": "colecoes"
+    },
+    {
+      "platformThumbnailPath": "colecovision.png",
+      "platformThumbnailShortname": "colecovision"
+    },
+    {
+      "platformThumbnailPath": "collection_alexkidd.png",
+      "platformThumbnailShortname": "collection_alexkidd"
+    },
+    {
+      "platformThumbnailPath": "collection_aof.png",
+      "platformThumbnailShortname": "collection_aof"
+    },
+    {
+      "platformThumbnailPath": "collection_batman.png",
+      "platformThumbnailShortname": "collection_batman"
+    },
+    {
+      "platformThumbnailPath": "collection_bomberman.png",
+      "platformThumbnailShortname": "collection_bomberman"
+    },
+    {
+      "platformThumbnailPath": "collection_castlevania.png",
+      "platformThumbnailShortname": "collection_castlevania"
+    },
+    {
+      "platformThumbnailPath": "collection_crashbandicoot.png",
+      "platformThumbnailShortname": "collection_crashbandicoot"
+    },
+    {
+      "platformThumbnailPath": "collection_dbz.png",
+      "platformThumbnailShortname": "collection_dbz"
+    },
+    {
+      "platformThumbnailPath": "collection_donkeykong.png",
+      "platformThumbnailShortname": "collection_donkeykong"
+    },
+    {
+      "platformThumbnailPath": "collection_doubledragon.png",
+      "platformThumbnailShortname": "collection_doubledragon"
+    },
+    {
+      "platformThumbnailPath": "collection_fatalfury.png",
+      "platformThumbnailShortname": "collection_fatalfury"
+    },
+    {
+      "platformThumbnailPath": "collection_finalfight.png",
+      "platformThumbnailShortname": "collection_finalfight"
+    },
+    {
+      "platformThumbnailPath": "collection_kirby.png",
+      "platformThumbnailShortname": "collection_kirby"
+    },
+    {
+      "platformThumbnailPath": "collection_kof.png",
+      "platformThumbnailShortname": "collection_kof"
+    },
+    {
+      "platformThumbnailPath": "collection_mario.png",
+      "platformThumbnailShortname": "collection_mario"
+    },
+    {
+      "platformThumbnailPath": "collection_marvel.png",
+      "platformThumbnailShortname": "collection_marvel"
+    },
+    {
+      "platformThumbnailPath": "collection_megaman.png",
+      "platformThumbnailShortname": "collection_megaman"
+    },
+    {
+      "platformThumbnailPath": "collection_metalslug.png",
+      "platformThumbnailShortname": "collection_metalslug"
+    },
+    {
+      "platformThumbnailPath": "collection_mortalkombat.png",
+      "platformThumbnailShortname": "collection_mortalkombat"
+    },
+    {
+      "platformThumbnailPath": "collection_pacman.png",
+      "platformThumbnailShortname": "collection_pacman"
+    },
+    {
+      "platformThumbnailPath": "collection_pokemon.png",
+      "platformThumbnailShortname": "collection_pokemon"
+    },
+    {
+      "platformThumbnailPath": "collection_residentevil.png",
+      "platformThumbnailShortname": "collection_residentevil"
+    },
+    {
+      "platformThumbnailPath": "collection_samuraishodown.png",
+      "platformThumbnailShortname": "collection_samuraishodown"
+    },
+    {
+      "platformThumbnailPath": "collection_sonic.png",
+      "platformThumbnailShortname": "collection_sonic"
+    },
+    {
+      "platformThumbnailPath": "collection_spiderman.png",
+      "platformThumbnailShortname": "collection_spiderman"
+    },
+    {
+      "platformThumbnailPath": "collection_streetfighter.png",
+      "platformThumbnailShortname": "collection_streetfighter"
+    },
+    {
+      "platformThumbnailPath": "collection_streetsofrage.png",
+      "platformThumbnailShortname": "collection_streetsofrage"
+    },
+    {
+      "platformThumbnailPath": "collection_tmnt.png",
+      "platformThumbnailShortname": "collection_tmnt"
+    },
+    {
+      "platformThumbnailPath": "collection_zelda.png",
+      "platformThumbnailShortname": "collection_zelda"
+    },
+    {
+      "platformThumbnailPath": "collections.png",
+      "platformThumbnailShortname": "collections"
+    },
+    {
+      "platformThumbnailPath": "configuracoes.png",
+      "platformThumbnailShortname": "configuracoes"
+    },
+    {
+      "platformThumbnailPath": "cps1.png",
+      "platformThumbnailShortname": "cps1"
+    },
+    {
+      "platformThumbnailPath": "cps2.png",
+      "platformThumbnailShortname": "cps2"
+    },
+    {
+      "platformThumbnailPath": "cps3.png",
+      "platformThumbnailShortname": "cps3"
+    },
+    {
+      "platformThumbnailPath": "dreamcast.png",
+      "platformThumbnailShortname": "dreamcast"
+    },
+    {
+      "platformThumbnailPath": "famicom.png",
+      "platformThumbnailShortname": "famicom"
+    },
+    {
+      "platformThumbnailPath": "favorites.png",
+      "platformThumbnailShortname": "favorites"
+    },
+    {
+      "platformThumbnailPath": "fds.png",
+      "platformThumbnailShortname": "fds"
+    },
+    {
+      "platformThumbnailPath": "gamecube.png",
+      "platformThumbnailShortname": "gamecube"
+    },
+    {
+      "platformThumbnailPath": "gamegear.png",
+      "platformThumbnailShortname": "gamegear"
+    },
+    {
+      "platformThumbnailPath": "gb.png",
+      "platformThumbnailShortname": "gb"
+    },
+    {
+      "platformThumbnailPath": "gba.png",
+      "platformThumbnailShortname": "gba"
+    },
+    {
+      "platformThumbnailPath": "gbc.png",
+      "platformThumbnailShortname": "gbc"
+    },
+    {
+      "platformThumbnailPath": "genesis.png",
+      "platformThumbnailShortname": "genesis"
+    },
+    {
+      "platformThumbnailPath": "intellivision.png",
+      "platformThumbnailShortname": "intellivision"
+    },
+    {
+      "platformThumbnailPath": "kofhacks.png",
+      "platformThumbnailShortname": "kofhacks"
+    },
+    {
+      "platformThumbnailPath": "lynx.png",
+      "platformThumbnailShortname": "lynx"
+    },
+    {
+      "platformThumbnailPath": "mame.png",
+      "platformThumbnailShortname": "mame"
+    },
+    {
+      "platformThumbnailPath": "master.png",
+      "platformThumbnailShortname": "master"
+    },
+    {
+      "platformThumbnailPath": "mastersystem.png",
+      "platformThumbnailShortname": "mastersystem"
+    },
+    {
+      "platformThumbnailPath": "megadrive.png",
+      "platformThumbnailShortname": "megadrive"
+    },
+    {
+      "platformThumbnailPath": "mortalkombat.png",
+      "platformThumbnailShortname": "mortalkombat"
+    },
+    {
+      "platformThumbnailPath": "msx.png",
+      "platformThumbnailShortname": "msx"
+    },
+    {
+      "platformThumbnailPath": "msx2.png",
+      "platformThumbnailShortname": "msx2"
+    },
+    {
+      "platformThumbnailPath": "n64.png",
+      "platformThumbnailShortname": "n64"
+    },
+    {
+      "platformThumbnailPath": "naomi.png",
+      "platformThumbnailShortname": "naomi"
+    },
+    {
+      "platformThumbnailPath": "nds.png",
+      "platformThumbnailShortname": "nds"
+    },
+    {
+      "platformThumbnailPath": "neogeo.png",
+      "platformThumbnailShortname": "neogeo"
+    },
+    {
+      "platformThumbnailPath": "nes.png",
+      "platformThumbnailShortname": "nes"
+    },
+    {
+      "platformThumbnailPath": "ngp.png",
+      "platformThumbnailShortname": "ngp"
+    },
+    {
+      "platformThumbnailPath": "ngpc.png",
+      "platformThumbnailShortname": "ngpc"
+    },
+    {
+      "platformThumbnailPath": "odyssey2.png",
+      "platformThumbnailShortname": "odyssey2"
+    },
+    {
+      "platformThumbnailPath": "pce.png",
+      "platformThumbnailShortname": "pce"
+    },
+    {
+      "platformThumbnailPath": "pcengine.png",
+      "platformThumbnailShortname": "pcengine"
+    },
+    {
+      "platformThumbnailPath": "pcenginecd.png",
+      "platformThumbnailShortname": "pcenginecd"
+    },
+    {
+      "platformThumbnailPath": "ps1.png",
+      "platformThumbnailShortname": "ps1"
+    },
+    {
+      "platformThumbnailPath": "ps2.png",
+      "platformThumbnailShortname": "ps2"
+    },
+    {
+      "platformThumbnailPath": "psp.png",
+      "platformThumbnailShortname": "psp"
+    },
+    {
+      "platformThumbnailPath": "pspminis.png",
+      "platformThumbnailShortname": "pspminis"
+    },
+    {
+      "platformThumbnailPath": "psx.png",
+      "platformThumbnailShortname": "psx"
+    },
+    {
+      "platformThumbnailPath": "recentlyplayed.png",
+      "platformThumbnailShortname": "recentlyplayed"
+    },
+    {
+      "platformThumbnailPath": "saturn.png",
+      "platformThumbnailShortname": "saturn"
+    },
+    {
+      "platformThumbnailPath": "sega32x.png",
+      "platformThumbnailShortname": "sega32x"
+    },
+    {
+      "platformThumbnailPath": "segacd.png",
+      "platformThumbnailShortname": "segacd"
+    },
+    {
+      "platformThumbnailPath": "settings.png",
+      "platformThumbnailShortname": "settings"
+    },
+    {
+      "platformThumbnailPath": "sfc.png",
+      "platformThumbnailShortname": "sfc"
+    },
+    {
+      "platformThumbnailPath": "sg1000.png",
+      "platformThumbnailShortname": "sg1000"
+    },
+    {
+      "platformThumbnailPath": "sms.png",
+      "platformThumbnailShortname": "sms"
+    },
+    {
+      "platformThumbnailPath": "snes.png",
+      "platformThumbnailShortname": "snes"
+    },
+    {
+      "platformThumbnailPath": "streetfighterhacks.png",
+      "platformThumbnailShortname": "streetfighterhacks"
+    },
+    {
+      "platformThumbnailPath": "suggestions.png",
+      "platformThumbnailShortname": "suggestions"
+    },
+    {
+      "platformThumbnailPath": "supergrafx.png",
+      "platformThumbnailShortname": "supergrafx"
+    },
+    {
+      "platformThumbnailPath": "switch.png",
+      "platformThumbnailShortname": "switch"
+    },
+    {
+      "platformThumbnailPath": "tg16.png",
+      "platformThumbnailShortname": "tg16"
+    },
+    {
+      "platformThumbnailPath": "todos_jogos.png",
+      "platformThumbnailShortname": "todos_jogos"
+    },
+    {
+      "platformThumbnailPath": "tools.png",
+      "platformThumbnailShortname": "tools"
+    },
+    {
+      "platformThumbnailPath": "vectrex.png",
+      "platformThumbnailShortname": "vectrex"
+    },
+    {
+      "platformThumbnailPath": "verticalarcade.png",
+      "platformThumbnailShortname": "verticalarcade"
+    },
+    {
+      "platformThumbnailPath": "virtualboy.png",
+      "platformThumbnailShortname": "virtualboy"
+    },
+    {
+      "platformThumbnailPath": "wii.png",
+      "platformThumbnailShortname": "wii"
+    },
+    {
+      "platformThumbnailPath": "wsc.png",
+      "platformThumbnailShortname": "wsc"
+    },
+    {
+      "platformThumbnailPath": "wswanc.png",
+      "platformThumbnailShortname": "wswanc"
+    }
+  ]
+}
