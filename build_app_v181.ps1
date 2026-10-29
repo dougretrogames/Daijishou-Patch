@@ -174,8 +174,7 @@ if (-not (Test-Path $Keystore)) {
 if (Test-Path $OutApk) { Remove-Item -Force $OutApk }
 & $apksigner sign --ks $Keystore --ks-pass pass:android --key-pass pass:android --ks-key-alias androiddebugkey --min-sdk-version 24 --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true --out $OutApk $alignedApk
 
-Write-Host "`n=== Verificacao de Assinatura ==="
-& $apksigner verify --verbose --min-sdk-version 23 --max-sdk-version 23 $OutApk
-& $apksigner verify --verbose --min-sdk-version 24 $OutApk
+Write-Host "`n=== Verificacao de Assinatura (v1, v2 e v3) ==="
+& $apksigner verify --verbose --min-sdk-version 21 $OutApk
 
 Write-Host "`n=== SUCESSO: Build concluido em $OutApk ==="
