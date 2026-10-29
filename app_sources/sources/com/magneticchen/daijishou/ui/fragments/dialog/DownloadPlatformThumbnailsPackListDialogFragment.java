@@ -149,7 +149,7 @@ public final class DownloadPlatformThumbnailsPackListDialogFragment extends Daij
                 kotlinx.serialization.KSerializer r5 = r5.serializer()     // Catch: java.lang.Exception -> L66
                 kotlinx.serialization.DeserializationStrategy r5 = (kotlinx.serialization.DeserializationStrategy) r5     // Catch: java.lang.Exception -> L66
                 com.magneticchen.daijishou.utils.Utils r6 = com.magneticchen.daijishou.utils.Utils.INSTANCE     // Catch: java.lang.Exception -> L66
-                java.lang.String r7 = "https://raw.githubusercontent.com/TapiocaFox/Daijishou/main/themes/platform_thumbnails_packs/index.json"
+                java.lang.String r7 = com.magneticchen.daijishou.data.Constants.platformThumbnailsPacksIndexUri;
                 java.lang.String r6 = r6.readEntireTextFromURL(r7)     // Catch: java.lang.Exception -> L66
                 java.lang.Object r1 = r1.decodeFromString(r5, r6)     // Catch: java.lang.Exception -> L66
                 com.magneticchen.daijishou.data.portables.PlatformThumbnailsPacksIndexJson r1 = (com.magneticchen.daijishou.data.portables.PlatformThumbnailsPacksIndexJson) r1     // Catch: java.lang.Exception -> L66

@@ -661,7 +661,46 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         Context context = getContext();
         if (context == null) return item.getWallpaperPath();
 
-        // 1. Explicit path assigned to the item
+        File storage = android.os.Environment.getExternalStorageDirectory();
+
+        // 1. Special collections / virtual items from 2-Jogos
+        if (item.getId() == -998L || "all_games".equalsIgnoreCase(item.getShortname())) {
+            File f = new File(storage, "2-Jogos/background_allsystems.png");
+            if (f.exists()) return f.getAbsolutePath();
+            File fJpg = new File(storage, "2-Jogos/background_allsystems.jpg");
+            if (fJpg.exists()) return fJpg.getAbsolutePath();
+        }
+
+        if (item.isAndroidApps() || item.getId() == -999L || "android".equalsIgnoreCase(item.getShortname()) || "apps".equalsIgnoreCase(item.getShortname())) {
+            File f1 = new File(storage, "2-Jogos/apps/media/background.png");
+            if (f1.exists()) return f1.getAbsolutePath();
+            File f1Jpg = new File(storage, "2-Jogos/apps/media/background.jpg");
+            if (f1Jpg.exists()) return f1Jpg.getAbsolutePath();
+            File f2 = new File(storage, "2-Jogos/background_apps.png");
+            if (f2.exists()) return f2.getAbsolutePath();
+        }
+
+        if ("collections".equalsIgnoreCase(item.getShortname()) || "colecoes".equalsIgnoreCase(item.getShortname())) {
+            File f = new File(storage, "2-Jogos/background_collections.png");
+            if (f.exists()) return f.getAbsolutePath();
+        }
+
+        // 2. 2-Jogos system backgrounds: 2-Jogos/{shortname}/media/background.png
+        if (item.getShortname() != null) {
+            String[] aliases = getShortnameAliases(item.getShortname());
+            for (String alias : aliases) {
+                File f = new File(storage, "2-Jogos" + File.separator + alias + File.separator + "media" + File.separator + "background.png");
+                if (f.exists()) return f.getAbsolutePath();
+                File fJpg = new File(storage, "2-Jogos" + File.separator + alias + File.separator + "media" + File.separator + "background.jpg");
+                if (fJpg.exists()) return fJpg.getAbsolutePath();
+                File fBg = new File(storage, "2-Jogos" + File.separator + "background_" + alias + ".png");
+                if (fBg.exists()) return fBg.getAbsolutePath();
+                File fColBg = new File(storage, "2-Jogos" + File.separator + "collection_" + alias + "_background.png");
+                if (fColBg.exists()) return fColBg.getAbsolutePath();
+            }
+        }
+
+        // 3. Explicit path assigned to the item
         String path = item.getWallpaperPath();
         if (path != null && !path.trim().isEmpty()) {
             try {
@@ -679,7 +718,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             }
         }
 
-        // 2. Check platform_wallpapers in app internal storage (by id or shortname)
+        // 4. Check platform_wallpapers in app internal storage (by id or shortname)
         try {
             File internalDir = new File(context.getFilesDir(), "platform_wallpapers");
             if (internalDir.exists() && internalDir.isDirectory()) {
@@ -698,9 +737,9 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             }
         } catch (Exception ignored) {}
 
-        // 3. Check external storage /sdcard/Daijishou/wallpapers/
+        // 5. Check external storage /sdcard/Daijishou/wallpapers/
         try {
-            File extDir = new File(android.os.Environment.getExternalStorageDirectory(), "Daijishou/wallpapers");
+            File extDir = new File(storage, "Daijishou/wallpapers");
             if (extDir.exists() && item.getShortname() != null) {
                 File extPng = new File(extDir, item.getShortname() + ".png");
                 if (extPng.exists()) return extPng.getAbsolutePath();
@@ -709,7 +748,13 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             }
         } catch (Exception ignored) {}
 
-        // 4. Global Daijishou wallpaper fallback
+        // 6. Default background from 2-Jogos
+        File default2Jogos = new File(storage, "2-Jogos/default_background.png");
+        if (default2Jogos.exists()) {
+            return default2Jogos.getAbsolutePath();
+        }
+
+        // 7. Global Daijishou wallpaper fallback
         try {
             File globalWp = new File(context.getFilesDir(), "wallpaper");
             if (globalWp.exists()) {
@@ -718,6 +763,38 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         } catch (Exception ignored) {}
 
         return null;
+    }
+
+    private String[] getShortnameAliases(String shortname) {
+        String sn = shortname.toLowerCase();
+        if ("genesis".equals(sn) || "megadrive".equals(sn)) {
+            return new String[]{sn, "genesis", "megadrive"};
+        }
+        if ("gc".equals(sn) || "gamecube".equals(sn)) {
+            return new String[]{sn, "gc", "gamecube"};
+        }
+        if ("master".equals(sn) || "mastersystem".equals(sn)) {
+            return new String[]{sn, "master", "mastersystem"};
+        }
+        if ("tg16".equals(sn) || "pce".equals(sn) || "pcengine".equals(sn)) {
+            return new String[]{sn, "pcengine", "tg16", "pce"};
+        }
+        if ("tgcd".equals(sn) || "pcecd".equals(sn) || "pcenginecd".equals(sn)) {
+            return new String[]{sn, "pcenginecd", "tgcd", "pcecd"};
+        }
+        if ("coleco".equals(sn) || "colecovision".equals(sn)) {
+            return new String[]{sn, "colecovision", "coleco"};
+        }
+        if ("wsc".equals(sn) || "ws".equals(sn) || "wswanc".equals(sn)) {
+            return new String[]{sn, "wswanc", "wsc", "ws"};
+        }
+        if ("arcade".equals(sn) || "mame".equals(sn) || "fbneo".equals(sn)) {
+            return new String[]{sn, "arcade", "mame", "fbneo"};
+        }
+        if ("android".equals(sn) || "apps".equals(sn)) {
+            return new String[]{sn, "apps", "android"};
+        }
+        return new String[]{sn};
     }
 
     private void displayWallpaper(String wallpaperPath) {
