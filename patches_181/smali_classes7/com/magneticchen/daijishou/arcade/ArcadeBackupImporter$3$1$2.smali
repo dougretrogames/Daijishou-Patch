@@ -47,7 +47,7 @@
         }
     .end annotation
 
-    .line 265
+    .line 269
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1$2;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;
 
     iput p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1$2;->val$platformsCount:I
@@ -64,7 +64,7 @@
 .method public run()V
     .locals 3
 
-    .line 268
+    .line 272
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1$2;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;
 
     iget-object v0, v0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;
@@ -85,7 +85,7 @@
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
-    .line 269
+    .line 273
     :cond_0
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
@@ -99,7 +99,7 @@
 
     const-string v1, "Importa\u00e7\u00e3o Conclu\u00edda"
 
-    .line 270
+    .line 274
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
@@ -138,7 +138,7 @@
 
     move-result-object v1
 
-    .line 271
+    .line 275
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
@@ -147,15 +147,23 @@
 
     invoke-direct {v1, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1$2$1;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1$2;)V
 
-    .line 275
+    .line 279
     const-string p0, "OK"
 
     invoke-virtual {v0, p0, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object p0
 
-    .line 281
-    invoke-virtual {p0}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+    .line 285
+    invoke-virtual {p0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+
+    move-result-object p0
+
+    .line 286
+    invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
+
+    .line 287
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->styleArcadeDialog(Landroid/app/AlertDialog;)V
 
     return-void
 .end method

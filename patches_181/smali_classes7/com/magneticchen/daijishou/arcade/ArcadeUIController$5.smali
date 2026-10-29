@@ -30,7 +30,7 @@
         }
     .end annotation
 
-    .line 167
+    .line 173
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$5;->val$rootView:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 170
+    .line 176
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$5;->val$rootView:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -60,7 +60,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 171
+    .line 177
     iget-object v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$5;->val$rootView:Landroid/view/View;
 
     invoke-virtual {v1, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -75,19 +75,19 @@
     :goto_0
     if-eqz p1, :cond_1
 
-    .line 172
+    .line 178
     invoke-virtual {p1}, Landroid/view/View;->getVisibility()I
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 173
+    .line 179
     invoke-virtual {p1}, Landroid/view/View;->performClick()Z
 
     return-void
 
-    .line 176
+    .line 182
     :cond_1
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$5;->val$rootView:Landroid/view/View;
 
@@ -103,7 +103,7 @@
 
     if-eqz p1, :cond_2
 
-    .line 177
+    .line 183
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$5;->val$rootView:Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -113,7 +113,7 @@
     :cond_2
     if-eqz v0, :cond_3
 
-    .line 179
+    .line 185
     invoke-virtual {v0}, Landroid/view/View;->performClick()Z
 
     :cond_3

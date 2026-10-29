@@ -43,7 +43,7 @@
         }
     .end annotation
 
-    .line 302
+    .line 310
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;
 
     iput-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$2;->val$t:Ljava/lang/Throwable;
@@ -58,7 +58,7 @@
 .method public run()V
     .locals 3
 
-    .line 305
+    .line 313
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;
 
     iget-object v0, v0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;->val$progressDialog:Landroid/app/ProgressDialog;
@@ -75,7 +75,7 @@
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
-    .line 306
+    .line 314
     :cond_0
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;
 

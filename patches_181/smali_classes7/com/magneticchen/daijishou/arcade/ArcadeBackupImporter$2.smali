@@ -34,7 +34,7 @@
         }
     .end annotation
 
-    .line 169
+    .line 171
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$2;->val$knownFiles:Ljava/util/List;
 
     iput-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$2;->val$activity:Landroid/app/Activity;
@@ -51,7 +51,7 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 172
+    .line 174
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$2;->val$knownFiles:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -60,7 +60,7 @@
 
     if-ge p2, p1, :cond_0
 
-    .line 174
+    .line 176
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$2;->val$knownFiles:Ljava/util/List;
 
     invoke-interface {p1, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -69,7 +69,7 @@
 
     check-cast p1, Ljava/io/File;
 
-    .line 175
+    .line 177
     iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$2;->val$activity:Landroid/app/Activity;
 
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$2;->val$onComplete:Ljava/lang/Runnable;
@@ -78,7 +78,7 @@
 
     return-void
 
-    .line 178
+    .line 180
     :cond_0
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$2;->val$activity:Landroid/app/Activity;
 

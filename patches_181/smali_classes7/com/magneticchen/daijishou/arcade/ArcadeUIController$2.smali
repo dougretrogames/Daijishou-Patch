@@ -30,7 +30,7 @@
         }
     .end annotation
 
-    .line 98
+    .line 104
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$2;->val$activity:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
 .method public onSharedPreferenceChanged(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     .locals 1
 
-    .line 101
+    .line 107
     const-string v0, "ui_interface_mode"
 
     invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -52,19 +52,19 @@
 
     if-eqz p2, :cond_1
 
-    .line 102
+    .line 108
     const-string p2, "arcade"
 
     invoke-interface {p1, v0, p2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 104
+    .line 110
     invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object p1
 
-    .line 105
+    .line 111
     invoke-virtual {p2, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p2
@@ -85,10 +85,10 @@
 
     move-result-object p1
 
-    .line 106
+    .line 112
     invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 107
+    .line 113
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$2;->val$activity:Landroid/app/Activity;
 
     new-instance p2, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$2$1;

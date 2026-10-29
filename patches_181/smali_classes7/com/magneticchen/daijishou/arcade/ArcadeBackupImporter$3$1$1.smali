@@ -51,7 +51,7 @@
         }
     .end annotation
 
-    .line 249
+    .line 253
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1$1;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;
 
     iput-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1$1;->val$message:Ljava/lang/String;
@@ -70,7 +70,7 @@
 .method public run()V
     .locals 2
 
-    .line 252
+    .line 256
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1$1;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;
 
     iget-object v0, v0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;
@@ -83,7 +83,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 253
+    .line 257
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1$1;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;
 
     iget-object v0, v0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;
@@ -94,12 +94,12 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 254
+    .line 258
     iget v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1$1;->val$total:I
 
     if-lez v0, :cond_0
 
-    .line 255
+    .line 259
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1$1;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;
 
     iget-object v0, v0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;
@@ -110,7 +110,7 @@
 
     invoke-virtual {v0, v1}, Landroid/app/ProgressDialog;->setMax(I)V
 
-    .line 256
+    .line 260
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1$1;->this$1:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;
 
     iget-object v0, v0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;

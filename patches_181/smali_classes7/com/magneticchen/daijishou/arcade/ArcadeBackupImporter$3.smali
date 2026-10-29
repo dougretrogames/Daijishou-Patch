@@ -38,7 +38,7 @@
         }
     .end annotation
 
-    .line 242
+    .line 246
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;->val$activity:Landroid/app/Activity;
 
     iput-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;->val$rawInputStream:Ljava/io/InputStream;
@@ -59,7 +59,7 @@
 .method public run()V
     .locals 3
 
-    .line 246
+    .line 250
     :try_start_0
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;->val$activity:Landroid/app/Activity;
 
@@ -78,7 +78,7 @@
     :catchall_0
     move-exception v0
 
-    .line 302
+    .line 310
     iget-object v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;->val$mainHandler:Landroid/os/Handler;
 
     new-instance v2, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$2;

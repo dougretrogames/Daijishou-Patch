@@ -968,7 +968,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             (strReload != 0) ? getString(strReload) : "Recarregar Sistemas"
         };
 
-        new AlertDialog.Builder(context)
+        AlertDialog dialog = new AlertDialog.Builder(context)
             .setTitle((strMenuTitle != 0) ? getString(strMenuTitle) : "Menu Arcade")
             .setItems(options, new DialogInterface.OnClickListener() {
                 @Override
@@ -1039,7 +1039,9 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                 }
             })
             .setNegativeButton((strClose != 0) ? getString(strClose) : "Fechar", null)
-            .show();
+            .create();
+        dialog.show();
+        ArcadeUIController.styleArcadeDialog(dialog);
     }
 
     private void toggleOrientation() {

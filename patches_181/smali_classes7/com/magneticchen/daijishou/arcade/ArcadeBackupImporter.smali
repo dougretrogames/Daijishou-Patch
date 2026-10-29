@@ -43,27 +43,27 @@
 .method private static createSchemaIfNeeded(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
 
-    .line 690
+    .line 698
     const-string v0, "CREATE TABLE IF NOT EXISTS `PlatformEntity` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `unique_id` TEXT, `name` TEXT NOT NULL, `shortname` TEXT NOT NULL, `description` TEXT, `is_visible` INTEGER NOT NULL, `scrape_preview_media` INTEGER NOT NULL, `wallpaper_path` TEXT, `thumbnail_path` TEXT, `color_theme` INTEGER, `color_on_theme` INTEGER, `accept_filename_regex` TEXT NOT NULL, `default_player_id` INTEGER NOT NULL, `player_id_list` TEXT NOT NULL, `scraper_source_list` TEXT NOT NULL, `box_art_aspect_ratio_id` INTEGER NOT NULL, `use_custom_box_art_aspect_ratio` INTEGER NOT NULL, `custom_box_art_aspect_ratio` TEXT, `screen_aspect_ratio_id` INTEGER NOT NULL, `use_custom_screen_aspect_ratio` INTEGER NOT NULL, `custom_screen_aspect_ratio` TEXT, `items_sync_tree_uri_list` TEXT NOT NULL, `retro_achievements_console_id_list` TEXT NOT NULL, `position` INTEGER NOT NULL, `extra` TEXT NOT NULL)"
 
     invoke-virtual {p0, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 691
+    .line 699
     const-string v0, "CREATE TABLE IF NOT EXISTS `PlayableItemEntity` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `is_singleton_disjoint_set` INTEGER NOT NULL, `use_disjoint_set_primary_playable_item` INTEGER NOT NULL, `disjoint_set_primary_playable_item_id` INTEGER, `playable_item_type` INTEGER NOT NULL, `name` TEXT NOT NULL, `do_scrape_name` INTEGER NOT NULL, `description` TEXT, `scraper_keyword_list` TEXT NOT NULL, `scrape_scraper_keywords` INTEGER NOT NULL, `is_favorite` INTEGER NOT NULL, `is_searchable` INTEGER NOT NULL, `is_visible` INTEGER NOT NULL, `preview_media_path` TEXT, `attached_platform_id` INTEGER, `uri` TEXT NOT NULL, `sync_tree_uri` TEXT NOT NULL, `md5` TEXT NOT NULL, `activity_component_string` TEXT, `use_custom_player` INTEGER NOT NULL, `custom_player_id` INTEGER, `play_count` INTEGER NOT NULL, `last_played_timestamp` INTEGER, `added_date_timestamp` INTEGER NOT NULL, `do_not_prettify` INTEGER NOT NULL, `is_completed` INTEGER NOT NULL, `extra` TEXT NOT NULL)"
 
     invoke-virtual {p0, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 692
+    .line 700
     const-string v0, "CREATE TABLE IF NOT EXISTS `PlayableItemToGenrePairEntity` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `playable_item_id` INTEGER NOT NULL, `genre_id` TEXT NOT NULL, `extra` TEXT NOT NULL)"
 
     invoke-virtual {p0, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 693
+    .line 701
     const-string v0, "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)"
 
     invoke-virtual {p0, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
-    .line 694
+    .line 702
     const-string v0, "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \'ca3ff695079ec67187ce163b62fe671c\')"
 
     invoke-virtual {p0, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
@@ -74,21 +74,21 @@
 .method private static deleteRecursive(Ljava/io/File;)V
     .locals 4
 
-    .line 772
+    .line 780
     invoke-virtual {p0}, Ljava/io/File;->isDirectory()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 773
+    .line 781
     invoke-virtual {p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 775
+    .line 783
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -104,7 +104,7 @@
 
     goto :goto_0
 
-    .line 778
+    .line 786
     :cond_0
     invoke-virtual {p0}, Ljava/io/File;->delete()Z
 
@@ -121,7 +121,7 @@
 
     move-object/from16 v0, p2
 
-    .line 315
+    .line 323
     const-string v1, "ArcadeBackupImporter"
 
     const-string v2, "Extraindo arquivos do backup..."
@@ -132,7 +132,7 @@
 
     invoke-interface {v0, v2, v3, v4}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$OnImportListener;->onProgress(Ljava/lang/String;II)V
 
-    .line 317
+    .line 325
     new-instance v2, Ljava/io/File;
 
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
@@ -143,21 +143,21 @@
 
     invoke-direct {v2, v5, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 318
+    .line 326
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v5
 
     if-eqz v5, :cond_0
 
-    .line 319
+    .line 327
     invoke-static {v2}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->deleteRecursive(Ljava/io/File;)V
 
-    .line 321
+    .line 329
     :cond_0
     invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
 
-    .line 324
+    .line 332
     new-instance v5, Ljava/io/BufferedInputStream;
 
     const/high16 v6, 0x10000
@@ -168,7 +168,7 @@
 
     const/16 v6, 0x200
 
-    .line 325
+    .line 333
     new-array v7, v6, [B
 
     const/4 v8, 0x0
@@ -179,7 +179,7 @@
 
     move-object v11, v10
 
-    .line 332
+    .line 340
     :goto_0
     invoke-static {v5, v7, v3, v6}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->readFully(Ljava/io/InputStream;[BII)I
 
@@ -187,7 +187,7 @@
 
     if-lt v12, v6, :cond_9
 
-    .line 333
+    .line 341
     invoke-static {v7}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->isAllZero([B)Z
 
     move-result v12
@@ -196,7 +196,7 @@
 
     goto/16 :goto_5
 
-    .line 337
+    .line 345
     :cond_1
     invoke-static {v7, v3, v4}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->parseTarString([BII)Ljava/lang/String;
 
@@ -206,14 +206,14 @@
 
     const/16 v14, 0xc
 
-    .line 338
+    .line 346
     invoke-static {v7, v13, v14}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->parseTarOctal([BII)J
 
     move-result-wide v13
 
     const-wide/16 v15, 0x200
 
-    .line 339
+    .line 347
     rem-long v17, v13, v15
 
     sub-long v17, v15, v17
@@ -222,7 +222,7 @@
 
     rem-long v6, v17, v15
 
-    .line 341
+    .line 349
     const-string v15, "emulators.xml"
 
     invoke-virtual {v15, v12}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
@@ -241,7 +241,7 @@
 
     goto :goto_3
 
-    .line 344
+    .line 352
     :cond_2
     const-string v3, "games.xml"
 
@@ -261,7 +261,7 @@
 
     goto :goto_2
 
-    .line 347
+    .line 355
     :cond_3
     const-string v3, "collections.xml"
 
@@ -281,44 +281,44 @@
 
     goto :goto_1
 
-    .line 352
+    .line 360
     :cond_4
     invoke-static {v5, v13, v14}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->skipFully(Ljava/io/InputStream;J)V
 
     goto :goto_4
 
-    .line 348
+    .line 356
     :cond_5
     :goto_1
     new-instance v11, Ljava/io/File;
 
     invoke-direct {v11, v2, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 349
+    .line 357
     invoke-static {v5, v13, v14, v11}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->extractEntryToFile(Ljava/io/InputStream;JLjava/io/File;)V
 
     goto :goto_4
 
-    .line 345
+    .line 353
     :cond_6
     :goto_2
     new-instance v10, Ljava/io/File;
 
     invoke-direct {v10, v2, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 346
+    .line 354
     invoke-static {v5, v13, v14, v10}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->extractEntryToFile(Ljava/io/InputStream;JLjava/io/File;)V
 
     goto :goto_4
 
-    .line 342
+    .line 350
     :cond_7
     :goto_3
     new-instance v9, Ljava/io/File;
 
     invoke-direct {v9, v2, v15}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 343
+    .line 351
     invoke-static {v5, v13, v14, v9}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->extractEntryToFile(Ljava/io/InputStream;JLjava/io/File;)V
 
     :goto_4
@@ -328,7 +328,7 @@
 
     if-lez v3, :cond_8
 
-    .line 357
+    .line 365
     invoke-static {v5, v6, v7}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->skipFully(Ljava/io/InputStream;J)V
 
     :cond_8
@@ -344,7 +344,7 @@
     :goto_5
     if-eqz v9, :cond_e
 
-    .line 361
+    .line 369
     invoke-virtual {v9}, Ljava/io/File;->exists()Z
 
     move-result v3
@@ -359,7 +359,7 @@
 
     if-eqz v3, :cond_e
 
-    .line 366
+    .line 374
     const-string v3, "Daijishou.db"
 
     move-object/from16 v5, p0
@@ -368,55 +368,55 @@
 
     move-result-object v3
 
-    .line 367
+    .line 375
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
     move-result v5
 
     if-nez v5, :cond_a
 
-    .line 368
+    .line 376
     invoke-virtual {v3}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
     move-result-object v5
 
     invoke-virtual {v5}, Ljava/io/File;->mkdirs()Z
 
-    .line 371
+    .line 379
     :cond_a
     invoke-static {v3, v8}, Landroid/database/sqlite/SQLiteDatabase;->openOrCreateDatabase(Ljava/io/File;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v3
 
-    .line 375
+    .line 383
     :try_start_0
     invoke-static {v3}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->createSchemaIfNeeded(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    .line 378
+    .line 386
     const-string v5, "Processando cole\u00e7\u00f5es..."
 
     const/16 v6, 0xa
 
     invoke-interface {v0, v5, v6, v4}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$OnImportListener;->onProgress(Ljava/lang/String;II)V
 
-    .line 379
+    .line 387
     new-instance v5, Ljava/util/HashMap;
 
     invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
 
     if-eqz v11, :cond_b
 
-    .line 380
+    .line 388
     invoke-virtual {v11}, Ljava/io/File;->exists()Z
 
     move-result v6
 
     if-eqz v6, :cond_b
 
-    .line 381
+    .line 389
     invoke-static {v11, v5}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->parseCollections(Ljava/io/File;Ljava/util/Map;)V
 
-    .line 385
+    .line 393
     :cond_b
     const-string v6, "Configurando sistemas e plataformas..."
 
@@ -424,12 +424,12 @@
 
     invoke-interface {v0, v6, v7, v4}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$OnImportListener;->onProgress(Ljava/lang/String;II)V
 
-    .line 386
+    .line 394
     invoke-static {v3, v9}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->parseAndInsertPlatforms(Landroid/database/sqlite/SQLiteDatabase;Ljava/io/File;)Ljava/util/Map;
 
     move-result-object v6
 
-    .line 387
+    .line 395
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -460,19 +460,19 @@
 
     invoke-static {v1, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 390
+    .line 398
     const-string v7, "Importando jogos (isso levar\u00e1 apenas alguns segundos)..."
 
     const/16 v8, 0x1e
 
     invoke-interface {v0, v7, v8, v4}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$OnImportListener;->onProgress(Ljava/lang/String;II)V
 
-    .line 391
+    .line 399
     invoke-static {v3, v10, v6, v5, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->parseAndInsertGames(Landroid/database/sqlite/SQLiteDatabase;Ljava/io/File;Ljava/util/Map;Ljava/util/Map;Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$OnImportListener;)I
 
     move-result v5
 
-    .line 392
+    .line 400
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -499,12 +499,12 @@
 
     invoke-static {v1, v7}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 394
+    .line 402
     const-string v1, "Finalizando importa\u00e7\u00e3o..."
 
     invoke-interface {v0, v1, v4, v4}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$OnImportListener;->onProgress(Ljava/lang/String;II)V
 
-    .line 395
+    .line 403
     invoke-interface {v6}, Ljava/util/Map;->size()I
 
     move-result v1
@@ -515,10 +515,10 @@
 
     if-eqz v3, :cond_c
 
-    .line 398
+    .line 406
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 399
+    .line 407
     :cond_c
     invoke-static {v2}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->deleteRecursive(Ljava/io/File;)V
 
@@ -529,17 +529,17 @@
 
     if-eqz v3, :cond_d
 
-    .line 398
+    .line 406
     invoke-virtual {v3}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
-    .line 399
+    .line 407
     :cond_d
     invoke-static {v2}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->deleteRecursive(Ljava/io/File;)V
 
-    .line 400
+    .line 408
     throw v0
 
-    .line 362
+    .line 370
     :cond_e
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -558,14 +558,14 @@
         }
     .end annotation
 
-    .line 757
+    .line 765
     new-instance v0, Ljava/io/FileOutputStream;
 
     invoke-direct {v0, p3}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
     const p3, 0x8000
 
-    .line 758
+    .line 766
     new-array p3, p3, [B
 
     :goto_0
@@ -577,7 +577,7 @@
 
     const-wide/32 v1, 0x8000
 
-    .line 761
+    .line 769
     invoke-static {v1, v2, p1, p2}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v1
@@ -586,7 +586,7 @@
 
     const/4 v2, 0x0
 
-    .line 762
+    .line 770
     invoke-virtual {p0, p3, v2, v1}, Ljava/io/InputStream;->read([BII)I
 
     move-result v1
@@ -595,7 +595,7 @@
 
     goto :goto_1
 
-    .line 764
+    .line 772
     :cond_0
     invoke-virtual {v0, p3, v2, v1}, Ljava/io/FileOutputStream;->write([BII)V
 
@@ -605,12 +605,12 @@
 
     goto :goto_0
 
-    .line 767
+    .line 775
     :cond_1
     :goto_1
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->flush()V
 
-    .line 768
+    .line 776
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
 
     return-void
@@ -820,7 +820,7 @@
 
     if-eqz p1, :cond_1
 
-    .line 204
+    .line 208
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -829,14 +829,14 @@
 
     goto :goto_0
 
-    .line 210
+    .line 214
     :cond_0
     :try_start_0
     new-instance v0, Ljava/io/FileInputStream;
 
     invoke-direct {v0, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    .line 211
+    .line 215
     invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p1
@@ -850,7 +850,7 @@
     :catch_0
     move-exception p1
 
-    .line 213
+    .line 217
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string v0, "Erro ao abrir arquivo: "
@@ -879,7 +879,7 @@
 
     return-void
 
-    .line 205
+    .line 209
     :cond_1
     :goto_0
     const-string p1, "Arquivo de backup n\u00e3o encontrado."
@@ -898,38 +898,38 @@
 .method public static importFromInputStream(Landroid/app/Activity;Ljava/io/InputStream;Ljava/lang/String;Ljava/lang/Runnable;)V
     .locals 6
 
-    .line 232
+    .line 236
     new-instance v4, Landroid/app/ProgressDialog;
 
     invoke-direct {v4, p0}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
-    .line 233
+    .line 237
     const-string p2, "Importando Backup do ARC Browser"
 
     invoke-virtual {v4, p2}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 234
+    .line 238
     const-string p2, "Descompactando e analisando dados..."
 
     invoke-virtual {v4, p2}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
     const/4 p2, 0x1
 
-    .line 235
+    .line 239
     invoke-virtual {v4, p2}, Landroid/app/ProgressDialog;->setProgressStyle(I)V
 
     const/4 p2, 0x0
 
-    .line 236
+    .line 240
     invoke-virtual {v4, p2}, Landroid/app/ProgressDialog;->setIndeterminate(Z)V
 
-    .line 237
+    .line 241
     invoke-virtual {v4, p2}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    .line 238
+    .line 242
     invoke-virtual {v4}, Landroid/app/ProgressDialog;->show()V
 
-    .line 240
+    .line 244
     new-instance v3, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -938,7 +938,7 @@
 
     invoke-direct {v3, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 242
+    .line 246
     new-instance v0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;
 
     move-object v1, p0
@@ -961,7 +961,7 @@
 
     return-void
 
-    .line 220
+    .line 224
     :cond_0
     :try_start_0
     invoke-virtual {p0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
@@ -974,7 +974,7 @@
 
     if-nez p1, :cond_1
 
-    .line 222
+    .line 226
     const-string p1, "N\u00e3o foi poss\u00edvel ler o arquivo selecionado."
 
     const/4 p2, 0x0
@@ -987,7 +987,7 @@
 
     return-void
 
-    .line 225
+    .line 229
     :cond_1
     const-string v0, "backup.tar"
 
@@ -1000,7 +1000,7 @@
     :catch_0
     move-exception p1
 
-    .line 227
+    .line 231
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string v0, "Erro ao ler arquivo: "
@@ -1033,7 +1033,7 @@
 .method private static isAllZero([B)Z
     .locals 4
 
-    .line 724
+    .line 732
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -1063,7 +1063,7 @@
 .method public static openFilePicker(Landroid/app/Activity;)V
     .locals 4
 
-    .line 188
+    .line 192
     const-string v0, "*/*"
 
     const/16 v1, 0x26c4
@@ -1075,22 +1075,22 @@
 
     invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 189
+    .line 193
     const-string v3, "android.intent.category.OPENABLE"
 
     invoke-virtual {v2, v3}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 190
+    .line 194
     invoke-virtual {v2, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 191
+    .line 195
     invoke-virtual {p0, v2, v1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     return-void
 
-    .line 194
+    .line 198
     :catch_0
     :try_start_1
     new-instance v2, Landroid/content/Intent;
@@ -1099,17 +1099,17 @@
 
     invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 195
+    .line 199
     invoke-virtual {v2, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 196
+    .line 200
     invoke-virtual {p0, v2, v1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
     goto :goto_0
 
-    .line 198
+    .line 202
     :catch_1
     const-string v0, "N\u00e3o foi poss\u00edvel abrir o seletor de arquivos."
 
@@ -1128,7 +1128,7 @@
 .method public static openFilePicker(Landroidx/fragment/app/Fragment;)V
     .locals 4
 
-    .line 133
+    .line 135
     const-string v0, "*/*"
 
     const/16 v1, 0x26c4
@@ -1140,22 +1140,22 @@
 
     invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 134
+    .line 136
     const-string v3, "android.intent.category.OPENABLE"
 
     invoke-virtual {v2, v3}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 135
+    .line 137
     invoke-virtual {v2, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 136
+    .line 138
     invoke-virtual {p0, v2, v1}, Landroidx/fragment/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     return-void
 
-    .line 139
+    .line 141
     :catch_0
     :try_start_1
     new-instance v2, Landroid/content/Intent;
@@ -1164,17 +1164,17 @@
 
     invoke-direct {v2, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 140
+    .line 142
     invoke-virtual {v2, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 141
+    .line 143
     invoke-virtual {p0, v2, v1}, Landroidx/fragment/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
 
     goto :goto_0
 
-    .line 143
+    .line 145
     :catch_1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
@@ -1182,7 +1182,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 144
+    .line 146
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object p0
@@ -1231,7 +1231,7 @@
 
     move-object/from16 v1, p0
 
-    .line 551
+    .line 559
     const-string v0, "releaseYear"
 
     const-string v2, "publisher"
@@ -1246,7 +1246,7 @@
 
     move-result-object v6
 
-    .line 552
+    .line 560
     new-instance v7, Ljava/io/InputStreamReader;
 
     new-instance v8, Ljava/io/FileInputStream;
@@ -1259,37 +1259,37 @@
 
     invoke-direct {v7, v8, v9}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
 
-    .line 553
+    .line 561
     invoke-interface {v6, v7}, Lorg/xmlpull/v1/XmlPullParser;->setInput(Ljava/io/Reader;)V
 
-    .line 555
+    .line 563
     invoke-interface {v6}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
 
     move-result v8
 
-    .line 558
+    .line 566
     new-instance v9, Ljava/util/HashMap;
 
     invoke-direct {v9}, Ljava/util/HashMap;-><init>()V
 
-    .line 560
+    .line 568
     const-string v10, "INSERT OR REPLACE INTO PlayableItemEntity (is_singleton_disjoint_set, use_disjoint_set_primary_playable_item, playable_item_type, name, do_scrape_name, description, scraper_keyword_list, scrape_scraper_keywords, is_favorite, is_searchable, is_visible, attached_platform_id, uri, sync_tree_uri, md5, use_custom_player, play_count, added_date_timestamp, do_not_prettify, is_completed, extra) VALUES (1, 0, 1, ?, 1, ?, ?, 1, ?, 1, 1, ?, ?, ?, \'\', 0, 0, ?, 0, 0, ?)"
 
     invoke-virtual {v1, v10}, Landroid/database/sqlite/SQLiteDatabase;->compileStatement(Ljava/lang/String;)Landroid/database/sqlite/SQLiteStatement;
 
     move-result-object v10
 
-    .line 571
+    .line 579
     const-string v11, "INSERT OR IGNORE INTO PlayableItemToGenrePairEntity (playable_item_id, genre_id, extra) VALUES (?, ?, \'{}\')"
 
     invoke-virtual {v1, v11}, Landroid/database/sqlite/SQLiteDatabase;->compileStatement(Ljava/lang/String;)Landroid/database/sqlite/SQLiteStatement;
 
     move-result-object v11
 
-    .line 575
+    .line 583
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
-    .line 577
+    .line 585
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v12
@@ -1305,7 +1305,7 @@
 
     if-eq v8, v14, :cond_13
 
-    .line 581
+    .line 589
     :try_start_0
     invoke-interface {v6}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
@@ -1313,7 +1313,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 582
+    .line 590
     const-string v1, "data"
 
     move-object/from16 v19, v7
@@ -1326,7 +1326,7 @@
 
     if-ne v8, v11, :cond_2
 
-    .line 583
+    .line 591
     :try_start_1
     invoke-virtual {v7, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1334,7 +1334,7 @@
 
     if-eqz v7, :cond_1
 
-    .line 584
+    .line 592
     const-string v1, "type"
 
     const/4 v7, 0x0
@@ -1343,7 +1343,7 @@
 
     move-result-object v1
 
-    .line 585
+    .line 593
     const-string v8, "game"
 
     invoke-virtual {v8, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1352,14 +1352,14 @@
 
     if-eqz v1, :cond_0
 
-    .line 586
+    .line 594
     const-string v1, "id"
 
     invoke-interface {v6, v7, v1}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v17
 
-    .line 587
+    .line 595
     invoke-interface {v9}, Ljava/util/Map;->clear()V
 
     :cond_0
@@ -1381,7 +1381,7 @@
 
     goto :goto_2
 
-    .line 589
+    .line 597
     :cond_1
     invoke-virtual {v1, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1389,7 +1389,7 @@
 
     if-eqz v1, :cond_0
 
-    .line 590
+    .line 598
     const-string v1, "key"
 
     const/4 v7, 0x0
@@ -1435,7 +1435,7 @@
 
     if-eqz v17, :cond_3
 
-    .line 594
+    .line 602
     invoke-interface {v6}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
 
     move-result-object v1
@@ -1462,7 +1462,7 @@
 
     if-ne v8, v6, :cond_12
 
-    .line 597
+    .line 605
     invoke-virtual {v1, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -1488,7 +1488,7 @@
 
     goto/16 :goto_c
 
-    .line 599
+    .line 607
     :cond_5
     invoke-virtual {v7, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1498,7 +1498,7 @@
 
     if-eqz v11, :cond_12
 
-    .line 600
+    .line 608
     const-string v1, "emulatorId"
 
     invoke-interface {v9, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1507,7 +1507,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 601
+    .line 609
     const-string v7, "romFilename"
 
     invoke-interface {v9, v7}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1518,7 +1518,7 @@
 
     move-object/from16 v8, p2
 
-    .line 602
+    .line 610
     invoke-interface {v8, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -1529,7 +1529,7 @@
 
     if-eqz v7, :cond_11
 
-    .line 604
+    .line 612
     invoke-virtual {v7}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v14
@@ -1540,7 +1540,7 @@
 
     if-nez v14, :cond_11
 
-    .line 605
+    .line 613
     const-string v14, "name"
 
     invoke-interface {v9, v14}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1551,7 +1551,7 @@
 
     if-eqz v14, :cond_6
 
-    .line 606
+    .line 614
     invoke-virtual {v14}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v21
@@ -1565,7 +1565,7 @@
     :cond_6
     move-object v14, v7
 
-    .line 609
+    .line 617
     :cond_7
     const-string v6, "description"
 
@@ -1577,10 +1577,10 @@
 
     if-nez v6, :cond_8
 
-    .line 610
+    .line 618
     const-string v6, ""
 
-    .line 612
+    .line 620
     :cond_8
     const-string v8, "true"
 
@@ -1598,7 +1598,7 @@
 
     move-result v8
 
-    .line 614
+    .line 622
     new-instance v15, Ljava/lang/StringBuilder;
 
     invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
@@ -1629,7 +1629,7 @@
 
     move-result-object v7
 
-    .line 615
+    .line 623
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -1648,59 +1648,59 @@
 
     move-result-object v8
 
-    .line 617
+    .line 625
     new-instance v15, Lorg/json/JSONArray;
 
     invoke-direct {v15}, Lorg/json/JSONArray;-><init>()V
 
-    .line 618
+    .line 626
     invoke-virtual {v15, v14}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     move-object/from16 v24, v4
 
-    .line 620
+    .line 628
     new-instance v4, Lorg/json/JSONObject;
 
     invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
 
     move-object/from16 v25, v15
 
-    .line 621
+    .line 629
     invoke-interface {v9, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v15
 
     invoke-virtual {v4, v3, v15}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 622
+    .line 630
     invoke-interface {v9, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v15
 
     invoke-virtual {v4, v2, v15}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 623
+    .line 631
     invoke-interface {v9, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v15
 
     invoke-virtual {v4, v0, v15}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 624
+    .line 632
     invoke-interface {v9, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v15
 
     invoke-virtual {v4, v5, v15}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 625
+    .line 633
     const-string v15, "arcGameId"
 
     invoke-virtual {v4, v15, v11}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     move-object/from16 v15, p3
 
-    .line 627
+    .line 635
     invoke-interface {v15, v11}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v11
@@ -1711,12 +1711,12 @@
 
     move-object/from16 v26, v0
 
-    .line 629
+    .line 637
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
-    .line 630
+    .line 638
     invoke-interface {v11}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v27
@@ -1747,7 +1747,7 @@
     :cond_9
     move-object/from16 v29, v2
 
-    .line 631
+    .line 639
     const-string v2, "collections"
 
     invoke-virtual {v4, v2, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
@@ -1762,15 +1762,15 @@
     :goto_5
     const/4 v0, 0x1
 
-    .line 634
+    .line 642
     invoke-virtual {v10, v0, v14}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
     const/4 v0, 0x2
 
-    .line 635
+    .line 643
     invoke-virtual {v10, v0, v6}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 636
+    .line 644
     invoke-virtual/range {v25 .. v25}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -1799,10 +1799,10 @@
     :goto_6
     const/4 v6, 0x4
 
-    .line 637
+    .line 645
     invoke-virtual {v10, v6, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 638
+    .line 646
     iget-wide v1, v1, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$PlatformInfo;->platformId:J
 
     const/4 v3, 0x5
@@ -1811,20 +1811,20 @@
 
     const/4 v1, 0x6
 
-    .line 639
+    .line 647
     invoke-virtual {v10, v1, v7}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
     const/4 v1, 0x7
 
-    .line 640
+    .line 648
     invoke-virtual {v10, v1, v8}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
     const/16 v1, 0x8
 
-    .line 641
+    .line 649
     invoke-virtual {v10, v1, v12, v13}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 642
+    .line 650
     invoke-virtual {v4}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -1833,7 +1833,7 @@
 
     invoke-virtual {v10, v2, v1}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 644
+    .line 652
     invoke-virtual {v10}, Landroid/database/sqlite/SQLiteStatement;->executeInsert()J
 
     move-result-wide v1
@@ -1842,7 +1842,7 @@
 
     if-lez v3, :cond_e
 
-    .line 648
+    .line 656
     invoke-interface {v9, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -1851,7 +1851,7 @@
 
     if-eqz v3, :cond_d
 
-    .line 649
+    .line 657
     invoke-virtual {v3}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v4
@@ -1862,14 +1862,14 @@
 
     if-nez v4, :cond_d
 
-    .line 650
+    .line 658
     const-string v4, "[,;/]"
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v3
 
-    .line 651
+    .line 659
     array-length v4, v3
 
     const/4 v6, 0x0
@@ -1879,12 +1879,12 @@
 
     aget-object v7, v3, v6
 
-    .line 652
+    .line 660
     invoke-virtual {v7}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 653
+    .line 661
     invoke-virtual {v7}, Ljava/lang/String;->isEmpty()Z
 
     move-result v8
@@ -1895,15 +1895,15 @@
 
     const/4 v14, 0x1
 
-    .line 654
+    .line 662
     invoke-virtual {v8, v14, v1, v2}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
     const/4 v14, 0x2
 
-    .line 655
+    .line 663
     invoke-virtual {v8, v14, v7}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 656
+    .line 664
     invoke-virtual {v8}, Landroid/database/sqlite/SQLiteStatement;->executeInsert()J
 
     goto :goto_8
@@ -1923,7 +1923,7 @@
 
     if-eqz v11, :cond_f
 
-    .line 662
+    .line 670
     invoke-interface {v11}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -1943,10 +1943,10 @@
 
     const/4 v14, 0x1
 
-    .line 663
+    .line 671
     invoke-virtual {v8, v14, v1, v2}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 664
+    .line 672
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -1969,7 +1969,7 @@
 
     invoke-virtual {v8, v6, v4}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 665
+    .line 673
     invoke-virtual {v8}, Landroid/database/sqlite/SQLiteStatement;->executeInsert()J
 
     goto :goto_9
@@ -1980,12 +1980,12 @@
     :cond_f
     add-int/lit8 v1, v16, 0x1
 
-    .line 671
+    .line 679
     rem-int/lit16 v2, v1, 0x1f4
 
     if-nez v2, :cond_10
 
-    .line 672
+    .line 680
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -2065,7 +2065,7 @@
 
     goto/16 :goto_3
 
-    .line 678
+    .line 686
     :goto_c
     invoke-interface/range {v17 .. v17}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -2105,15 +2105,15 @@
     :cond_13
     move-object/from16 v19, v7
 
-    .line 680
+    .line 688
     invoke-virtual/range {p0 .. p0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 682
+    .line 690
     invoke-virtual/range {p0 .. p0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 683
+    .line 691
     invoke-virtual/range {v19 .. v19}, Ljava/io/InputStreamReader;->close()V
 
     return v16
@@ -2121,14 +2121,14 @@
     :catchall_1
     move-exception v0
 
-    .line 682
+    .line 690
     :goto_d
     invoke-virtual/range {p0 .. p0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 683
+    .line 691
     invoke-virtual/range {v19 .. v19}, Ljava/io/InputStreamReader;->close()V
 
-    .line 684
+    .line 692
     throw v0
 .end method
 
@@ -2155,17 +2155,17 @@
 
     move-object/from16 v0, p0
 
-    .line 404
+    .line 412
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 406
+    .line 414
     invoke-static {}, Landroid/util/Xml;->newPullParser()Lorg/xmlpull/v1/XmlPullParser;
 
     move-result-object v2
 
-    .line 407
+    .line 415
     new-instance v3, Ljava/io/InputStreamReader;
 
     new-instance v4, Ljava/io/FileInputStream;
@@ -2178,20 +2178,20 @@
 
     invoke-direct {v3, v4, v5}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
 
-    .line 408
+    .line 416
     invoke-interface {v2, v3}, Lorg/xmlpull/v1/XmlPullParser;->setInput(Ljava/io/Reader;)V
 
-    .line 410
+    .line 418
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
 
     move-result v4
 
-    .line 413
+    .line 421
     new-instance v5, Ljava/util/HashMap;
 
     invoke-direct {v5}, Ljava/util/HashMap;-><init>()V
 
-    .line 419
+    .line 427
     const-string v6, "SELECT max(position) FROM PlatformEntity"
 
     const/4 v7, 0x0
@@ -2206,21 +2206,21 @@
 
     if-eqz v6, :cond_0
 
-    .line 420
+    .line 428
     invoke-interface {v6}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v10
 
     if-eqz v10, :cond_0
 
-    .line 421
+    .line 429
     invoke-interface {v6, v9}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v10
 
     add-int/2addr v10, v8
 
-    .line 422
+    .line 430
     invoke-interface {v6}, Landroid/database/Cursor;->close()V
 
     move-object v6, v7
@@ -2246,12 +2246,12 @@
     :goto_1
     if-eq v4, v8, :cond_f
 
-    .line 426
+    .line 434
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v14
 
-    .line 427
+    .line 435
     const-string v15, "data"
 
     move/from16 p1, v8
@@ -2264,21 +2264,21 @@
 
     if-ne v4, v9, :cond_3
 
-    .line 428
+    .line 436
     invoke-virtual {v8, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 429
+    .line 437
     const-string v4, "type"
 
     invoke-interface {v2, v7, v4}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 430
+    .line 438
     const-string v8, "emulator"
 
     invoke-virtual {v8, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2287,14 +2287,14 @@
 
     if-eqz v4, :cond_1
 
-    .line 433
+    .line 441
     const-string v4, "id"
 
     invoke-interface {v2, v7, v4}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
 
-    .line 434
+    .line 442
     invoke-interface {v5}, Ljava/util/Map;->clear()V
 
     move/from16 v12, p1
@@ -2306,7 +2306,7 @@
 
     goto/16 :goto_6
 
-    .line 438
+    .line 446
     :cond_2
     invoke-virtual {v15, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2318,7 +2318,7 @@
 
     if-nez v13, :cond_e
 
-    .line 440
+    .line 448
     const-string v4, "key"
 
     invoke-interface {v2, v7, v4}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -2340,7 +2340,7 @@
 
     if-nez v13, :cond_e
 
-    .line 445
+    .line 453
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
 
     move-result-object v4
@@ -2354,7 +2354,7 @@
 
     if-ne v4, v7, :cond_e
 
-    .line 448
+    .line 456
     invoke-virtual {v15, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -2365,7 +2365,7 @@
 
     goto/16 :goto_6
 
-    .line 450
+    .line 458
     :cond_5
     invoke-virtual {v8, v14}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2385,7 +2385,7 @@
 
     if-eqz v11, :cond_e
 
-    .line 455
+    .line 463
     const-string v4, "romDirectory"
 
     invoke-interface {v5, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2394,7 +2394,7 @@
 
     check-cast v4, Ljava/lang/String;
 
-    .line 456
+    .line 464
     const-string v8, "name"
 
     invoke-interface {v5, v8}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2405,7 +2405,7 @@
 
     if-eqz v8, :cond_7
 
-    .line 457
+    .line 465
     invoke-virtual {v8}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v12
@@ -2416,7 +2416,7 @@
 
     if-eqz v12, :cond_8
 
-    .line 458
+    .line 466
     :cond_7
     const-string v8, "description"
 
@@ -2431,7 +2431,7 @@
 
     if-eqz v4, :cond_d
 
-    .line 461
+    .line 469
     invoke-virtual {v4}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v8
@@ -2450,7 +2450,7 @@
 
     if-nez v8, :cond_d
 
-    .line 462
+    .line 470
     new-instance v8, Ljava/io/File;
 
     invoke-direct {v8, v4}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -2461,7 +2461,7 @@
 
     if-eqz v8, :cond_9
 
-    .line 463
+    .line 471
     invoke-virtual {v8}, Ljava/lang/String;->isEmpty()Z
 
     move-result v12
@@ -2473,7 +2473,7 @@
     :cond_9
     const-string v8, "unknown"
 
-    .line 467
+    .line 475
     :goto_3
     new-array v12, v9, [Ljava/lang/String;
 
@@ -2489,7 +2489,7 @@
 
     if-eqz v12, :cond_a
 
-    .line 468
+    .line 476
     invoke-interface {v12}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v14
@@ -2498,12 +2498,12 @@
 
     move/from16 v14, v16
 
-    .line 469
+    .line 477
     invoke-interface {v12, v14}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v15
 
-    .line 470
+    .line 478
     invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
     move-object/from16 v21, v8
@@ -2517,16 +2517,16 @@
 
     if-eqz v12, :cond_b
 
-    .line 472
+    .line 480
     invoke-interface {v12}, Landroid/database/Cursor;->close()V
 
-    .line 475
+    .line 483
     :cond_b
     new-instance v12, Lorg/json/JSONArray;
 
     invoke-direct {v12}, Lorg/json/JSONArray;-><init>()V
 
-    .line 476
+    .line 484
     new-instance v15, Ljava/lang/StringBuilder;
 
     const-string v14, "file://"
@@ -2543,7 +2543,7 @@
 
     invoke-virtual {v12, v14}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
-    .line 478
+    .line 486
     const-string v14, "INSERT INTO PlatformEntity (name, shortname, is_visible, scrape_preview_media, wallpaper_path, thumbnail_path, accept_filename_regex, default_player_id, player_id_list, scraper_source_list, box_art_aspect_ratio_id, use_custom_box_art_aspect_ratio, screen_aspect_ratio_id, use_custom_screen_aspect_ratio, items_sync_tree_uri_list, retro_achievements_console_id_list, position, extra) VALUES (?, ?, 1, 0, null, null, \'.*\', 0, \'[]\', \'[]\', 0, 0, 0, 0, ?, \'[]\', ?, \'{}\')"
 
     invoke-virtual {v0, v14}, Landroid/database/sqlite/SQLiteDatabase;->compileStatement(Ljava/lang/String;)Landroid/database/sqlite/SQLiteStatement;
@@ -2562,13 +2562,13 @@
     :goto_4
     move/from16 v7, p1
 
-    .line 489
+    .line 497
     invoke-virtual {v14, v7, v15}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 490
+    .line 498
     invoke-virtual {v14, v9, v8}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 491
+    .line 499
     invoke-virtual {v12}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
 
     move-result-object v9
@@ -2585,10 +2585,10 @@
 
     const/4 v10, 0x4
 
-    .line 492
+    .line 500
     invoke-virtual {v14, v10, v7, v8}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 493
+    .line 501
     invoke-virtual {v14}, Landroid/database/sqlite/SQLiteStatement;->executeInsert()J
 
     move-result-wide v7
@@ -2604,7 +2604,7 @@
 
     if-lez v7, :cond_d
 
-    .line 497
+    .line 505
     new-instance v17, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$PlatformInfo;
 
     move-object/from16 v22, v4
@@ -2620,7 +2620,7 @@
 
     const/4 v12, 0x0
 
-    .line 504
+    .line 512
     :cond_e
     :goto_6
     invoke-interface {v2}, Lorg/xmlpull/v1/XmlPullParser;->next()I
@@ -2635,7 +2635,7 @@
 
     goto/16 :goto_1
 
-    .line 506
+    .line 514
     :cond_f
     invoke-virtual {v3}, Ljava/io/InputStreamReader;->close()V
 
@@ -2662,12 +2662,12 @@
         }
     .end annotation
 
-    .line 511
+    .line 519
     invoke-static {}, Landroid/util/Xml;->newPullParser()Lorg/xmlpull/v1/XmlPullParser;
 
     move-result-object v0
 
-    .line 512
+    .line 520
     new-instance v1, Ljava/io/InputStreamReader;
 
     new-instance v2, Ljava/io/FileInputStream;
@@ -2678,10 +2678,10 @@
 
     invoke-direct {v1, v2, p0}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
 
-    .line 513
+    .line 521
     invoke-interface {v0, v1}, Lorg/xmlpull/v1/XmlPullParser;->setInput(Ljava/io/Reader;)V
 
-    .line 515
+    .line 523
     invoke-interface {v0}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
 
     move-result p0
@@ -2697,19 +2697,19 @@
 
     if-eq p0, v5, :cond_5
 
-    .line 520
+    .line 528
     invoke-interface {v0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v5
 
     const/4 v6, 0x2
 
-    .line 521
+    .line 529
     const-string v7, "data"
 
     if-ne p0, v6, :cond_2
 
-    .line 522
+    .line 530
     const-string p0, "entry"
 
     invoke-virtual {p0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2718,21 +2718,21 @@
 
     if-eqz p0, :cond_1
 
-    .line 523
+    .line 531
     const-string p0, "type"
 
     invoke-interface {v0, v2, p0}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 524
+    .line 532
     const-string v5, "id"
 
     invoke-interface {v0, v2, v5}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 525
+    .line 533
     const-string v6, "game"
 
     invoke-virtual {v6, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2745,7 +2745,7 @@
 
     if-eqz v4, :cond_4
 
-    .line 526
+    .line 534
     invoke-interface {p1, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -2754,21 +2754,21 @@
 
     if-nez p0, :cond_0
 
-    .line 528
+    .line 536
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 529
+    .line 537
     invoke-interface {p1, v5, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 531
+    .line 539
     :cond_0
     invoke-interface {p0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 533
+    .line 541
     :cond_1
     invoke-virtual {v7, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2776,7 +2776,7 @@
 
     if-eqz p0, :cond_4
 
-    .line 534
+    .line 542
     const-string p0, "key"
 
     invoke-interface {v0, v2, p0}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -2790,7 +2790,7 @@
 
     if-ne p0, v6, :cond_3
 
-    .line 537
+    .line 545
     const-string p0, "name"
 
     invoke-virtual {p0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2799,7 +2799,7 @@
 
     if-eqz p0, :cond_4
 
-    .line 538
+    .line 546
     invoke-interface {v0}, Lorg/xmlpull/v1/XmlPullParser;->getText()Ljava/lang/String;
 
     move-result-object v4
@@ -2811,7 +2811,7 @@
 
     if-ne p0, v6, :cond_4
 
-    .line 541
+    .line 549
     invoke-virtual {v7, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -2820,7 +2820,7 @@
 
     move-object v3, v2
 
-    .line 545
+    .line 553
     :cond_4
     :goto_1
     invoke-interface {v0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
@@ -2829,7 +2829,7 @@
 
     goto :goto_0
 
-    .line 547
+    .line 555
     :cond_5
     invoke-virtual {v1}, Ljava/io/InputStreamReader;->close()V
 
@@ -2846,7 +2846,7 @@
 
     if-ge p1, p2, :cond_1
 
-    .line 709
+    .line 717
     aget-byte v1, p0, p1
 
     const/16 v2, 0x20
@@ -2866,7 +2866,7 @@
     :goto_1
     if-ge p1, p2, :cond_2
 
-    .line 713
+    .line 721
     aget-byte v3, p0, p1
 
     if-lt v3, v0, :cond_2
@@ -2903,7 +2903,7 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 699
+    .line 707
     aget-byte v1, p0, v0
 
     if-eqz v1, :cond_0
@@ -2912,7 +2912,7 @@
 
     goto :goto_0
 
-    .line 702
+    .line 710
     :cond_0
     new-instance p2, Ljava/lang/String;
 
@@ -2934,7 +2934,7 @@
 
     if-eqz p0, :cond_2
 
-    .line 154
+    .line 156
     invoke-virtual {p0}, Landroid/app/Activity;->isFinishing()Z
 
     move-result v0
@@ -2943,18 +2943,18 @@
 
     goto :goto_1
 
-    .line 156
+    .line 158
     :cond_0
     invoke-static {}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter;->findKnownBackupFiles()Ljava/util/List;
 
     move-result-object v0
 
-    .line 158
+    .line 160
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 159
+    .line 161
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -2972,7 +2972,7 @@
 
     check-cast v3, Ljava/io/File;
 
-    .line 160
+    .line 162
     invoke-virtual {v3}, Ljava/io/File;->length()J
 
     move-result-wide v4
@@ -2981,7 +2981,7 @@
 
     div-long/2addr v4, v6
 
-    .line 161
+    .line 163
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -3018,25 +3018,25 @@
 
     goto :goto_0
 
-    .line 163
+    .line 165
     :cond_1
     const-string v2, "Escolher outro arquivo (.tar)..."
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 165
+    .line 167
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v2, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 166
+    .line 168
     const-string v3, "Importar Backup do ARC Browser"
 
     invoke-virtual {v2, v3}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     const/4 v3, 0x0
 
-    .line 168
+    .line 170
     new-array v3, v3, [Ljava/lang/CharSequence;
 
     invoke-interface {v1, v3}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -3045,22 +3045,30 @@
 
     check-cast v1, [Ljava/lang/CharSequence;
 
-    .line 169
+    .line 171
     new-instance v3, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$2;
 
     invoke-direct {v3, v0, p0, p1}, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$2;-><init>(Ljava/util/List;Landroid/app/Activity;Ljava/lang/Runnable;)V
 
     invoke-virtual {v2, v1, v3}, Landroid/app/AlertDialog$Builder;->setItems([Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 182
+    .line 184
     const-string p0, "Cancelar"
 
     const/4 p1, 0x0
 
     invoke-virtual {v2, p0, p1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
-    .line 183
-    invoke-virtual {v2}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+    .line 185
+    invoke-virtual {v2}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+
+    move-result-object p0
+
+    .line 186
+    invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
+
+    .line 187
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->styleArcadeDialog(Landroid/app/AlertDialog;)V
 
     :cond_2
     :goto_1
@@ -3089,7 +3097,7 @@
 
     if-eqz v0, :cond_0
 
-    goto :goto_1
+    goto/16 :goto_1
 
     .line 100
     :cond_0
@@ -3213,7 +3221,15 @@
     invoke-virtual {v3, p0, p1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 128
-    invoke-virtual {v3}, Landroid/app/AlertDialog$Builder;->show()Landroid/app/AlertDialog;
+    invoke-virtual {v3}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
+
+    move-result-object p0
+
+    .line 129
+    invoke-virtual {p0}, Landroid/app/AlertDialog;->show()V
+
+    .line 130
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->styleArcadeDialog(Landroid/app/AlertDialog;)V
 
     :cond_2
     :goto_1
@@ -3237,7 +3253,7 @@
 
     sub-int v2, p3, v0
 
-    .line 733
+    .line 741
     invoke-virtual {p0, p1, v1, v2}, Ljava/io/InputStream;->read([BII)I
 
     move-result v1
@@ -3266,7 +3282,7 @@
 
     const/16 v0, 0x2000
 
-    .line 742
+    .line 750
     new-array v0, v0, [B
 
     :goto_0
@@ -3276,7 +3292,7 @@
 
     if-lez v3, :cond_2
 
-    .line 744
+    .line 752
     invoke-virtual {p0, p1, p2}, Ljava/io/InputStream;->skip(J)J
 
     move-result-wide v3
@@ -3287,7 +3303,7 @@
 
     const-wide/16 v1, 0x2000
 
-    .line 746
+    .line 754
     invoke-static {v1, v2, p1, p2}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v1
@@ -3296,7 +3312,7 @@
 
     const/4 v2, 0x0
 
-    .line 747
+    .line 755
     invoke-virtual {p0, v0, v2, v1}, Ljava/io/InputStream;->read([BII)I
 
     move-result v1

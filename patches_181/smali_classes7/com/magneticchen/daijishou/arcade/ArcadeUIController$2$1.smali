@@ -33,7 +33,7 @@
         }
     .end annotation
 
-    .line 107
+    .line 113
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$2$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeUIController$2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public run()V
     .locals 0
 
-    .line 110
+    .line 116
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$2$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeUIController$2;
 
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$2;->val$activity:Landroid/app/Activity;

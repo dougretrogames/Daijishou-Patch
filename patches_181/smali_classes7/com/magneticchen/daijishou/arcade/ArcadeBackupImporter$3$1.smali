@@ -33,7 +33,7 @@
         }
     .end annotation
 
-    .line 246
+    .line 250
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +46,7 @@
 .method public onError(Ljava/lang/String;)V
     .locals 2
 
-    .line 288
+    .line 294
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;
 
     iget-object v0, v0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;->val$mainHandler:Landroid/os/Handler;
@@ -63,7 +63,7 @@
 .method public onProgress(Ljava/lang/String;II)V
     .locals 2
 
-    .line 249
+    .line 253
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;
 
     iget-object v0, v0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;->val$mainHandler:Landroid/os/Handler;
@@ -80,7 +80,7 @@
 .method public onSuccess(II)V
     .locals 2
 
-    .line 265
+    .line 269
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;
 
     iget-object v0, v0, Lcom/magneticchen/daijishou/arcade/ArcadeBackupImporter$3;->val$mainHandler:Landroid/os/Handler;

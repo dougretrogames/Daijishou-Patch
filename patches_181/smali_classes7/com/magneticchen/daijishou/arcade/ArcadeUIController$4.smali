@@ -30,7 +30,7 @@
         }
     .end annotation
 
-    .line 153
+    .line 159
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$4;->val$fragment:Landroidx/fragment/app/Fragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +43,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 156
+    .line 162
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$4;->val$fragment:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -52,7 +52,7 @@
 
     if-eqz p1, :cond_0
 
-    .line 157
+    .line 163
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeUIController$4;->val$fragment:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;

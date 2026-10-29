@@ -125,7 +125,9 @@ public class ArcadeBackupImporter {
             }
         });
         builder.setNegativeButton("Cancelar", null);
-        builder.show();
+        AlertDialog dialog = builder.create();
+        dialog.show();
+        ArcadeUIController.styleArcadeDialog(dialog);
     }
 
     public static void openFilePicker(androidx.fragment.app.Fragment fragment) {
@@ -180,7 +182,9 @@ public class ArcadeBackupImporter {
             }
         });
         builder.setNegativeButton("Cancelar", null);
-        builder.show();
+        AlertDialog dialog = builder.create();
+        dialog.show();
+        ArcadeUIController.styleArcadeDialog(dialog);
     }
 
     public static void openFilePicker(Activity activity) {
@@ -266,7 +270,7 @@ public class ArcadeBackupImporter {
                                 @Override
                                 public void run() {
                                     if (progressDialog.isShowing()) progressDialog.dismiss();
-                                    new AlertDialog.Builder(activity)
+                                    AlertDialog dialog = new AlertDialog.Builder(activity)
                                         .setTitle("Importação Concluída")
                                         .setMessage("O backup do ARC Browser foi importado com sucesso!\n\n"
                                             + "• Plataformas importadas: " + platformsCount + "\n"
@@ -278,7 +282,9 @@ public class ArcadeBackupImporter {
                                                 if (onComplete != null) onComplete.run();
                                             }
                                         })
-                                        .show();
+                                        .create();
+                                    dialog.show();
+                                    ArcadeUIController.styleArcadeDialog(dialog);
                                 }
                             });
                         }
@@ -289,11 +295,13 @@ public class ArcadeBackupImporter {
                                 @Override
                                 public void run() {
                                     if (progressDialog.isShowing()) progressDialog.dismiss();
-                                    new AlertDialog.Builder(activity)
+                                    AlertDialog dialog = new AlertDialog.Builder(activity)
                                         .setTitle("Erro na Importação")
                                         .setMessage("Ocorreu uma falha ao importar o backup:\n" + error)
                                         .setPositiveButton("OK", null)
-                                        .show();
+                                        .create();
+                                    dialog.show();
+                                    ArcadeUIController.styleArcadeDialog(dialog);
                                 }
                             });
                         }

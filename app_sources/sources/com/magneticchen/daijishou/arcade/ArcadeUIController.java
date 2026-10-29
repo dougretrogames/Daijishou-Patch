@@ -1,9 +1,15 @@
 package com.magneticchen.daijishou.arcade;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.TextView;
 import androidx.preference.PreferenceManager;
 import java.lang.reflect.Method;
 
@@ -180,6 +186,45 @@ public class ArcadeUIController {
                     }
                 }
             });
+        }
+    }
+
+    public static void styleArcadeDialog(final AlertDialog dialog) {
+        if (dialog == null) return;
+        try {
+            Context context = dialog.getContext();
+            Window window = dialog.getWindow();
+            if (window != null) {
+                int bgId = ArcadeRes.getDrawable(context, "arcade_dialog_bg");
+                if (bgId != 0) {
+                    window.setBackgroundDrawableResource(bgId);
+                }
+            }
+            ListView listView = dialog.getListView();
+            if (listView != null) {
+                int selId = ArcadeRes.getDrawable(context, "arcade_dialog_item_selector");
+                if (selId != 0) {
+                    listView.setSelector(selId);
+                }
+            }
+            int titleId = context.getResources().getIdentifier("alertTitle", "id", "android");
+            if (titleId != 0) {
+                TextView tv = dialog.findViewById(titleId);
+                if (tv != null) tv.setTextColor(0xFFFFFFFF);
+            }
+            int msgId = context.getResources().getIdentifier("message", "id", "android");
+            if (msgId != 0) {
+                TextView tv = dialog.findViewById(msgId);
+                if (tv != null) tv.setTextColor(0xFFEEEEEE);
+            }
+            Button btnPos = dialog.getButton(DialogInterface.BUTTON_POSITIVE);
+            if (btnPos != null) btnPos.setTextColor(0xFF9C27B0);
+            Button btnNeg = dialog.getButton(DialogInterface.BUTTON_NEGATIVE);
+            if (btnNeg != null) btnNeg.setTextColor(0xFF9C27B0);
+            Button btnNeu = dialog.getButton(DialogInterface.BUTTON_NEUTRAL);
+            if (btnNeu != null) btnNeu.setTextColor(0xFF9C27B0);
+        } catch (Throwable t) {
+            t.printStackTrace();
         }
     }
 }
