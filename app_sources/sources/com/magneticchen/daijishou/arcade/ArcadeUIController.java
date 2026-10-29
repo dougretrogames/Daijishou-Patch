@@ -18,7 +18,7 @@ public class ArcadeUIController {
     public static boolean isArcadeMode(Context context) {
         if (context == null) return true;
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        String mode = prefs.getString(PREF_UI_MODE, null);
+        String mode = prefs.getString(PREF_UI_MODE, MODE_ARCADE);
         if (mode != null) {
             return MODE_ARCADE.equalsIgnoreCase(mode);
         }

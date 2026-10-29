@@ -29,7 +29,7 @@ public class ArcadeNavHelper {
         boolean appsEnabled = !"2".equals(appsFilter);
         boolean hasPlatforms = (platforms != null && !platforms.isEmpty());
 
-        if (!hasPlatforms && !appsEnabled) {
+        if (false && !hasPlatforms && !appsEnabled) {
             return false;
         }
 

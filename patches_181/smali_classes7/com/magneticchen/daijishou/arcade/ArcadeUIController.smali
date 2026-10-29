@@ -68,7 +68,7 @@
     .line 21
     const-string v0, "ui_interface_mode"
 
-    const/4 v1, 0x0
+    const-string v1, "arcade"
 
     invoke-interface {p0, v0, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -77,9 +77,7 @@
     if-eqz v0, :cond_1
 
     .line 23
-    const-string p0, "arcade"
-
-    invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p0
 

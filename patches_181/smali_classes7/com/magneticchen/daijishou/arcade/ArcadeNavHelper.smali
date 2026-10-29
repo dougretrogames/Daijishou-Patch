@@ -27,11 +27,11 @@
 
     const/4 v0, 0x0
 
-    if-eqz p0, :cond_9
+    if-eqz p0, :cond_8
 
     if-nez p1, :cond_0
 
-    goto/16 :goto_2
+    goto/16 :goto_1
 
     .line 19
     :cond_0
@@ -73,8 +73,6 @@
 
     invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
-
     if-eqz p2, :cond_3
 
     .line 30
@@ -82,18 +80,8 @@
 
     move-result p2
 
-    if-nez p2, :cond_3
-
-    goto :goto_0
-
-    :cond_3
-    if-eqz v1, :cond_4
-
-    return v0
-
     .line 36
-    :cond_4
-    :goto_0
+    :cond_3
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p2
@@ -110,12 +98,12 @@
 
     move-result p2
 
-    if-nez p2, :cond_5
+    if-nez p2, :cond_4
 
     return v0
 
     .line 39
-    :cond_5
+    :cond_4
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -137,13 +125,13 @@
 
     const/4 v2, 0x1
 
-    if-eqz v0, :cond_6
+    if-eqz v0, :cond_5
 
     .line 43
     invoke-virtual {v1, v0, v2}, Landroidx/navigation/NavOptions$Builder;->setPopUpTo(IZ)Landroidx/navigation/NavOptions$Builder;
 
     .line 45
-    :cond_6
+    :cond_5
     invoke-virtual {v1}, Landroidx/navigation/NavOptions$Builder;->build()Landroidx/navigation/NavOptions;
 
     move-result-object v1
@@ -160,14 +148,14 @@
 
     move-result-object v4
 
-    if-eqz v4, :cond_8
+    if-eqz v4, :cond_7
 
     .line 49
     invoke-virtual {v4}, Landroidx/navigation/NavDestination;->getId()I
 
     move-result v4
 
-    if-ne v4, v0, :cond_8
+    if-ne v4, v0, :cond_7
 
     .line 50
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -186,22 +174,22 @@
 
     const/4 v0, 0x0
 
-    if-eqz p0, :cond_7
+    if-eqz p0, :cond_6
 
     .line 52
     invoke-virtual {p1, p0, v0, v1}, Landroidx/navigation/NavController;->navigate(ILandroid/os/Bundle;Landroidx/navigation/NavOptions;)V
 
-    goto :goto_1
+    goto :goto_0
 
     .line 54
-    :cond_7
+    :cond_6
     invoke-virtual {p1, p2, v0, v1}, Landroidx/navigation/NavController;->navigate(ILandroid/os/Bundle;Landroidx/navigation/NavOptions;)V
+
+    :cond_7
+    :goto_0
+    return v2
 
     :cond_8
     :goto_1
-    return v2
-
-    :cond_9
-    :goto_2
     return v0
 .end method
