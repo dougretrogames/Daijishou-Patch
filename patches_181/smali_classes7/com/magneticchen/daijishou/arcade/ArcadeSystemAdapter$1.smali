@@ -43,7 +43,7 @@
         }
     .end annotation
 
-    .line 80
+    .line 104
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
     iput-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$1;->val$holder:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;
@@ -58,7 +58,7 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 83
+    .line 107
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$1;->val$holder:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;
 
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;->getBindingAdapterPosition()I
@@ -69,7 +69,7 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 85
+    .line 109
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$1;->val$holder:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;
 
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;->getAdapterPosition()I
@@ -79,7 +79,7 @@
     :cond_0
     if-eq p1, v0, :cond_1
 
-    .line 87
+    .line 111
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
     invoke-static {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->access$000(Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;)Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$OnSystemActionListener;
@@ -88,7 +88,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 88
+    .line 112
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
+
+    invoke-virtual {v0, p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->setSelectedPosition(I)V
+
+    .line 113
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$1;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
     invoke-static {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->access$000(Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;)Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$OnSystemActionListener;

@@ -543,6 +543,8 @@
     .line 216
     invoke-direct {p0}, Lcom/magneticchen/daijishou/ui/activities/MainActivity;->initialize()V
 
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->applyUIMode(Landroid/app/Activity;)V
+
     return-void
 
     .line 218
@@ -5696,6 +5698,8 @@
 
     .line 399
     invoke-super {p0}, Lcom/magneticchen/daijishou/ui/activities/abstract_classes/DaijishouAppCompatActivity;->onResume()V
+
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->applyUIMode(Landroid/app/Activity;)V
 
     .line 401
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/ui/activities/MainActivity;->getApplication()Landroid/app/Application;

@@ -15,42 +15,64 @@
 
 
 # instance fields
-.field private final fallbackTitle:Landroid/widget/TextView;
+.field public final cardRoot:Landroid/widget/FrameLayout;
 
-.field private final logoView:Landroid/widget/ImageView;
+.field public final fallbackTitle:Landroid/widget/TextView;
+
+.field public final logoView:Landroid/widget/ImageView;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
-    .locals 3
+    .locals 4
 
-    .line 134
+    .line 175
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$ViewHolder;-><init>(Landroid/view/View;)V
 
-    .line 135
+    .line 176
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    const-string v1, "arcade_system_logo"
+    const-string v1, "arcade_card_root"
 
     invoke-static {v0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getId(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v0
 
-    .line 136
+    .line 177
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    const-string v2, "arcade_system_title_fallback"
+    const-string v2, "arcade_system_logo"
 
     invoke-static {v1, v2}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getId(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v1
 
-    .line 137
+    .line 178
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v2
+
+    const-string v3, "arcade_system_title_fallback"
+
+    invoke-static {v2, v3}, Lcom/magneticchen/daijishou/arcade/ArcadeRes;->getId(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v2
+
+    .line 179
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/FrameLayout;
+
+    iput-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;->cardRoot:Landroid/widget/FrameLayout;
+
+    .line 180
+    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
@@ -58,8 +80,8 @@
 
     iput-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;->logoView:Landroid/widget/ImageView;
 
-    .line 138
-    invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    .line 181
+    invoke-virtual {p1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
@@ -75,7 +97,7 @@
 .method public bind(Lcom/magneticchen/daijishou/arcade/ArcadeItem;)V
     .locals 2
 
-    .line 142
+    .line 185
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;->itemView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;

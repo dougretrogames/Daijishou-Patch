@@ -43,7 +43,7 @@
         }
     .end annotation
 
-    .line 93
+    .line 118
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
     iput-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$2;->val$holder:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;
@@ -56,61 +56,42 @@
 
 # virtual methods
 .method public onFocusChange(Landroid/view/View;Z)V
-    .locals 2
+    .locals 3
 
-    const-wide/16 v0, 0xc8
-
-    if-eqz p2, :cond_2
-
-    .line 97
-    invoke-virtual {p1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    const p2, 0x3f933333    # 1.15f
-
-    invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->scaleX(F)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->scaleY(F)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    const/high16 p2, 0x3f800000    # 1.0f
-
-    invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    invoke-virtual {p1, v0, v1}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V
-
-    .line 98
+    .line 121
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$2;->val$holder:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;
 
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;->getBindingAdapterPosition()I
 
     move-result p1
 
-    const/4 p2, -0x1
+    const/4 v0, -0x1
 
-    if-ne p1, p2, :cond_0
+    if-ne p1, v0, :cond_0
 
-    .line 100
+    .line 123
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$2;->val$holder:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;
 
     invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;->getAdapterPosition()I
 
     move-result p1
 
+    .line 132
     :cond_0
-    if-eq p1, p2, :cond_1
+    iget-object v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
-    .line 102
+    const/4 v2, 0x1
+
+    if-eqz p2, :cond_2
+
+    .line 126
+    iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$2;->val$holder:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;
+
+    invoke-static {v1, p2, v2, v2}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->access$200(Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;ZZ)V
+
+    if-eq p1, v0, :cond_1
+
+    .line 127
     iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
     invoke-static {p2}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->access$000(Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;)Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$OnSystemActionListener;
@@ -119,12 +100,12 @@
 
     if-eqz p2, :cond_1
 
-    .line 103
+    .line 128
     iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
-    invoke-static {p2, p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->access$202(Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;I)I
+    invoke-static {p2, p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->access$302(Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;I)I
 
-    .line 104
+    .line 129
     iget-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
     invoke-static {p2}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->access$000(Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;)Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$OnSystemActionListener;
@@ -148,33 +129,13 @@
     :cond_1
     return-void
 
-    .line 107
+    .line 132
     :cond_2
-    invoke-virtual {p1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
+    iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$2;->val$holder:Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;
 
-    move-result-object p0
+    const/4 p1, 0x0
 
-    const p1, 0x3f6147ae    # 0.88f
-
-    invoke-virtual {p0, p1}, Landroid/view/ViewPropertyAnimator;->scaleX(F)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p0
-
-    invoke-virtual {p0, p1}, Landroid/view/ViewPropertyAnimator;->scaleY(F)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p0
-
-    const p1, 0x3f266666    # 0.65f
-
-    invoke-virtual {p0, p1}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p0
-
-    invoke-virtual {p0, v0, v1}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroid/view/ViewPropertyAnimator;->start()V
+    invoke-static {v1, p0, p1, v2}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->access$200(Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter$ViewHolder;ZZ)V
 
     return-void
 .end method

@@ -33,7 +33,7 @@
         }
     .end annotation
 
-    .line 116
+    .line 156
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$4;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,24 +46,22 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 119
+    .line 159
     iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$4;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    invoke-virtual {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$200(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Z
 
-    move-result-object p1
+    move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 120
+    return-void
+
+    .line 162
+    :cond_0
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$4;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$500(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
 
-    move-result-object p0
-
-    invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->onBackPressed()V
-
-    :cond_0
     return-void
 .end method

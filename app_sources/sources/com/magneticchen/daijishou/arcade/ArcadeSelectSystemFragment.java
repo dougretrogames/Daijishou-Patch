@@ -2,12 +2,17 @@ package com.magneticchen.daijishou.arcade;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
@@ -17,6 +22,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import androidx.activity.OnBackPressedCallback;
@@ -28,6 +34,7 @@ import androidx.lifecycle.ViewModelProvider;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.preference.PreferenceManager;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.LinearSnapHelper;
 import androidx.recyclerview.widget.RecyclerView;
@@ -41,24 +48,40 @@ import com.bumptech.glide.request.target.Target;
 import java.io.File;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
-public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystemAdapter.OnSystemActionListener {
+public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystemAdapter.OnSystemActionListener, ArcadeAppAdapter.OnAppActionListener {
 
     private View rootView;
     private ImageView wallpaperView1;
     private ImageView wallpaperView2;
     private View scrimView;
+    private View headerLayout;
     private TextView headerTitle;
     private TextView headerSubtitle;
     private RecyclerView systemsRecyclerView;
     private View legendBar;
+    private TextView legendMenuText;
+    private TextView legendSelectText;
+    private TextView legendBackText;
+
+    // Embedded Apps UI
+    private View appsContainer;
+    private RecyclerView appsRecyclerView;
+    private ProgressBar appsLoading;
+    private TextView appsCountText;
+    private ArcadeAppAdapter appAdapter;
+    private boolean isAppsGridOpen = false;
+    private List<ArcadeAppItem> cachedAppList = null;
+
     private ArcadeSystemAdapter adapter;
     private LinearSnapHelper snapHelper;
 
     private int activeWallpaperIndex = 0;
     private ArcadeItem currentlyFocusedItem = null;
-    private boolean isVerticalOrientation = false;
+    private boolean isVerticalOrientation = true;
     private final Handler wallpaperDebounceHandler = new Handler(Looper.getMainLooper());
 
     private final Runnable wallpaperDebounceRunnable = new Runnable() {
@@ -76,6 +99,10 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         requireActivity().getOnBackPressedDispatcher().addCallback(this, new OnBackPressedCallback(true) {
             @Override
             public void handleOnBackPressed() {
+                if (isAppsGridOpen) {
+                    closeAppsGrid();
+                    return;
+                }
                 setEnabled(false);
                 if (getActivity() != null) {
                     getActivity().onBackPressed();
@@ -94,34 +121,29 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         wallpaperView1 = rootView.findViewById(ArcadeRes.getId(context, "arcade_wallpaper_1"));
         wallpaperView2 = rootView.findViewById(ArcadeRes.getId(context, "arcade_wallpaper_2"));
         scrimView = rootView.findViewById(ArcadeRes.getId(context, "arcade_scrim"));
+        headerLayout = rootView.findViewById(ArcadeRes.getId(context, "arcade_header_layout"));
         headerTitle = rootView.findViewById(ArcadeRes.getId(context, "arcade_system_header_title"));
         headerSubtitle = rootView.findViewById(ArcadeRes.getId(context, "arcade_system_header_subtitle"));
         systemsRecyclerView = rootView.findViewById(ArcadeRes.getId(context, "arcade_systems_list"));
         legendBar = rootView.findViewById(ArcadeRes.getId(context, "arcade_legend_bar"));
 
+        legendMenuText = rootView.findViewById(ArcadeRes.getId(context, "arcade_legend_menu_text"));
+        legendSelectText = rootView.findViewById(ArcadeRes.getId(context, "arcade_legend_select_text"));
+        legendBackText = rootView.findViewById(ArcadeRes.getId(context, "arcade_legend_back_text"));
+
+        // Setup embedded Apps UI
+        appsContainer = rootView.findViewById(ArcadeRes.getId(context, "arcade_apps_container"));
+        appsRecyclerView = rootView.findViewById(ArcadeRes.getId(context, "arcade_apps_list"));
+        appsLoading = rootView.findViewById(ArcadeRes.getId(context, "arcade_apps_loading"));
+        appsCountText = rootView.findViewById(ArcadeRes.getId(context, "arcade_apps_count"));
+
+        setupAppsRecyclerView();
+
         // Setup controller legend bar click actions
+        View btnX = rootView.findViewById(ArcadeRes.getId(context, "arcade_btn_action_x"));
         View btnA = rootView.findViewById(ArcadeRes.getId(context, "arcade_btn_action_a"));
         View btnB = rootView.findViewById(ArcadeRes.getId(context, "arcade_btn_action_b"));
-        View btnX = rootView.findViewById(ArcadeRes.getId(context, "arcade_btn_action_x"));
 
-        if (btnA != null) {
-            btnA.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    launchSelectedSystem();
-                }
-            });
-        }
-        if (btnB != null) {
-            btnB.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (getActivity() != null) {
-                        getActivity().onBackPressed();
-                    }
-                }
-            });
-        }
         if (btnX != null) {
             btnX.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -130,10 +152,34 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                 }
             });
         }
+        if (btnA != null) {
+            btnA.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (isAppsGridOpen) {
+                        // Launch app from click handled by item listener
+                    } else {
+                        launchSelectedSystem();
+                    }
+                }
+            });
+        }
+        if (btnB != null) {
+            btnB.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (isAppsGridOpen) {
+                        closeAppsGrid();
+                    } else if (getActivity() != null) {
+                        getActivity().onBackPressed();
+                    }
+                }
+            });
+        }
 
         // Determine orientation from preferences
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        String scrollDir = prefs.getString("arcade_scroll_direction", "0");
+        String scrollDir = prefs.getString("arcade_scroll_direction", "1"); // Default to 1 (Vertical) matching reference
         isVerticalOrientation = "1".equals(scrollDir);
 
         setupRecyclerView(isVerticalOrientation);
@@ -144,9 +190,17 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             @Override
             public boolean onKey(View v, int keyCode, KeyEvent event) {
                 if (event.getAction() == KeyEvent.ACTION_DOWN) {
+                    if (keyCode == KeyEvent.KEYCODE_BUTTON_B || keyCode == KeyEvent.KEYCODE_BACK) {
+                        if (isAppsGridOpen) {
+                            closeAppsGrid();
+                            return true;
+                        }
+                    }
                     if (keyCode == KeyEvent.KEYCODE_BUTTON_A || keyCode == KeyEvent.KEYCODE_DPAD_CENTER || keyCode == KeyEvent.KEYCODE_ENTER) {
-                        launchSelectedSystem();
-                        return true;
+                        if (!isAppsGridOpen) {
+                            launchSelectedSystem();
+                            return true;
+                        }
                     }
                     if (keyCode == KeyEvent.KEYCODE_BUTTON_X || keyCode == KeyEvent.KEYCODE_MENU) {
                         openArcadeMenu();
@@ -169,10 +223,24 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
     @Override
     public void onResume() {
         super.onResume();
+        Activity act = getActivity();
+        if (act != null) {
+            ArcadeUIController.applyUIMode(act);
+        }
         loadAndPopulatePlatforms();
     }
 
-    private void setupRecyclerView(boolean vertical) {
+    private void setupAppsRecyclerView() {
+        Context context = requireContext();
+        int spanCount = getResources().getConfiguration().orientation == android.content.res.Configuration.ORIENTATION_LANDSCAPE ? 6 : 4;
+        GridLayoutManager glm = new GridLayoutManager(context, spanCount);
+        appsRecyclerView.setLayoutManager(glm);
+
+        appAdapter = new ArcadeAppAdapter(context, this);
+        appsRecyclerView.setAdapter(appAdapter);
+    }
+
+    private void setupRecyclerView(final boolean vertical) {
         Context context = requireContext();
         int orientation = vertical ? LinearLayoutManager.VERTICAL : LinearLayoutManager.HORIZONTAL;
         final LinearLayoutManager layoutManager = new LinearLayoutManager(context, orientation, false);
@@ -181,38 +249,72 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         adapter = new ArcadeSystemAdapter(context, vertical, this);
         systemsRecyclerView.setAdapter(adapter);
 
-        // Center carousel items so the active card snaps to the exact center
-        int cardWidth = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 280, getResources().getDisplayMetrics());
-        int screenWidth = getResources().getDisplayMetrics().widthPixels;
-        int horizontalPadding = Math.max(0, (screenWidth - cardWidth) / 2);
-        if (!vertical) {
-            systemsRecyclerView.setPadding(horizontalPadding, 0, horizontalPadding, 0);
-            systemsRecyclerView.setClipToPadding(false);
-        } else {
-            int cardHeight = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 120, getResources().getDisplayMetrics());
-            int screenHeight = getResources().getDisplayMetrics().heightPixels;
-            int verticalPadding = Math.max(0, (screenHeight - cardHeight) / 2);
-            systemsRecyclerView.setPadding(0, verticalPadding, 0, verticalPadding);
-            systemsRecyclerView.setClipToPadding(false);
+        final float density = getResources().getDisplayMetrics().density;
+        final int screenWidth = getResources().getDisplayMetrics().widthPixels;
+
+        // In vertical mode, hide the top center header to keep clean artwork
+        if (headerLayout != null) {
+            headerLayout.setVisibility(vertical ? View.GONE : View.VISIBLE);
         }
 
-        if (snapHelper == null) {
-            snapHelper = new LinearSnapHelper();
-            snapHelper.attachToRecyclerView(systemsRecyclerView);
-        }
-
-        // Adjust RecyclerView constraints for vertical wheel if needed
+        // Adjust RecyclerView constraints for vertical wheel vs horizontal carousel
         ViewGroup.LayoutParams lp = systemsRecyclerView.getLayoutParams();
         if (lp instanceof ConstraintLayout.LayoutParams) {
             ConstraintLayout.LayoutParams clp = (ConstraintLayout.LayoutParams) lp;
             if (vertical) {
-                clp.width = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 320, getResources().getDisplayMetrics());
+                // Align right ~35% screen width, matching user reference image
+                clp.width = (int) (310 * density);
                 clp.height = 0;
+                clp.topToTop = ConstraintLayout.LayoutParams.PARENT_ID;
+                if (legendBar != null) {
+                    clp.bottomToTop = legendBar.getId();
+                } else {
+                    clp.bottomToBottom = ConstraintLayout.LayoutParams.PARENT_ID;
+                }
+                clp.endToEnd = ConstraintLayout.LayoutParams.PARENT_ID;
+                clp.startToStart = ConstraintLayout.LayoutParams.UNSET;
+                clp.rightMargin = (int) (36 * density);
+                clp.leftMargin = 0;
             } else {
                 clp.width = 0;
-                clp.height = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 160, getResources().getDisplayMetrics());
+                clp.height = (int) (160 * density);
+                clp.topToTop = ConstraintLayout.LayoutParams.UNSET;
+                clp.bottomToBottom = ConstraintLayout.LayoutParams.UNSET;
+                if (headerLayout != null) {
+                    clp.topToBottom = headerLayout.getId();
+                }
+                if (legendBar != null) {
+                    clp.bottomToTop = legendBar.getId();
+                }
+                clp.startToStart = ConstraintLayout.LayoutParams.PARENT_ID;
+                clp.endToEnd = ConstraintLayout.LayoutParams.PARENT_ID;
+                clp.rightMargin = 0;
+                clp.leftMargin = 0;
             }
             systemsRecyclerView.setLayoutParams(clp);
+        }
+
+        systemsRecyclerView.post(new Runnable() {
+            @Override
+            public void run() {
+                if (!isAdded()) return;
+                if (!vertical) {
+                    int cardWidth = (int) (260 * density);
+                    int horizontalPadding = Math.max(0, (screenWidth - cardWidth) / 2);
+                    systemsRecyclerView.setPadding(horizontalPadding, 0, horizontalPadding, 0);
+                } else {
+                    int rvHeight = systemsRecyclerView.getHeight();
+                    int cardHeight = (int) (110 * density);
+                    int verticalPadding = Math.max(0, (rvHeight - cardHeight) / 2);
+                    systemsRecyclerView.setPadding(0, verticalPadding, 0, verticalPadding);
+                }
+                systemsRecyclerView.setClipToPadding(false);
+            }
+        });
+
+        if (snapHelper == null) {
+            snapHelper = new LinearSnapHelper();
+            snapHelper.attachToRecyclerView(systemsRecyclerView);
         }
 
         systemsRecyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
@@ -224,6 +326,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                     if (centerView != null) {
                         int pos = layoutManager.getPosition(centerView);
                         if (pos != RecyclerView.NO_POSITION) {
+                            adapter.setSelectedPosition(pos);
                             ArcadeItem item = adapter.getItem(pos);
                             if (item != null && item != currentlyFocusedItem) {
                                 onSystemFocused(item, pos);
@@ -240,8 +343,11 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         if (context == null) return;
 
         List<ArcadeItem> items = new ArrayList<>();
+
+        // Virtual "TODOS OS JOGOS" system item (matching user's reference image!)
+        items.add(new ArcadeItem(-998L, "Todos os Jogos", "all_games", null, null, false));
+
         File dbFile = context.getDatabasePath("Daijishou.db");
-        android.util.Log.d("ArcadeSelect", "dbFile path: " + dbFile.getAbsolutePath() + ", exists=" + dbFile.exists());
         if (dbFile.exists()) {
             SQLiteDatabase db = null;
             Cursor cursor = null;
@@ -253,7 +359,6 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                     count = countCursor.getInt(0);
                     countCursor.close();
                 }
-                android.util.Log.d("ArcadeSelect", "Total rows in PlatformEntity: " + count);
 
                 if (count == 0) {
                     try {
@@ -270,7 +375,6 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                     "SELECT id, name, shortname, wallpaper_path, thumbnail_path FROM PlatformEntity WHERE is_visible = 1 ORDER BY shortname COLLATE NOCASE ASC",
                     null
                 );
-                android.util.Log.d("ArcadeSelect", "Cursor: " + (cursor != null ? cursor.getCount() : "null"));
                 if (cursor != null && cursor.moveToFirst()) {
                     do {
                         long id = cursor.getLong(0);
@@ -289,12 +393,12 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             }
         }
 
-        // Virtual "Android Apps" System
+        // Virtual "Android Apps" System (alongside retro systems as requested by user)
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         String appsFilter = prefs.getString("arcade_android_apps_filter", "0");
         if (!"2".equals(appsFilter)) { // 2 = disabled
             int titleRes = ArcadeRes.getString(context, "arcade_android_apps_title");
-            String appsTitle = (titleRes != 0) ? getString(titleRes) : "Android Apps";
+            String appsTitle = (titleRes != 0) ? getString(titleRes) : "Apps";
             items.add(new ArcadeItem(-999L, appsTitle, "android", null, null, true));
         }
 
@@ -310,6 +414,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                 @Override
                 public void run() {
                     systemsRecyclerView.scrollToPosition(initialPos);
+                    adapter.setSelectedPosition(initialPos);
                     ArcadeItem initialItem = adapter.getItem(initialPos);
                     if (initialItem != null) {
                         onSystemFocused(initialItem, initialPos);
@@ -351,6 +456,8 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         if (headerSubtitle != null) {
             if (item.isAndroidApps()) {
                 headerSubtitle.setText("Android Launcher");
+            } else if (item.getId() == -998L) {
+                headerSubtitle.setText("Biblioteca Completa");
             } else {
                 headerSubtitle.setText(item.getShortname().toUpperCase());
             }
@@ -369,27 +476,29 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
     private void launchSelectedSystem() {
         if (currentlyFocusedItem == null) return;
 
+        // When "Apps" system is selected, open embedded Apps Grid right inside Arcade!
         if (currentlyFocusedItem.isAndroidApps()) {
-            // Switch to Apps tab in MainActivity via navigatePage("apps", null)
-            Activity act = getActivity();
-            if (act != null) {
-                try {
-                    Method navMethod = act.getClass().getMethod("navigatePage", String.class, Object.class);
-                    navMethod.invoke(act, "apps", null);
-                } catch (Throwable t) {
-                    t.printStackTrace();
-                }
-            }
+            openAppsGrid();
             return;
         }
 
-        // Console platform
+        // Console platform or All Games
         long platformId = currentlyFocusedItem.getId();
+        if (platformId == -998L) {
+            // First console if available
+            if (adapter.getItemCount() > 2) {
+                ArcadeItem firstConsole = adapter.getItem(1);
+                if (firstConsole != null && !firstConsole.isAndroidApps()) {
+                    platformId = firstConsole.getId();
+                }
+            }
+        }
+
         setSelectedPlatformIdInVm(platformId);
 
         Context context = requireContext();
         SharedPreferences platformPrefs = context.getSharedPreferences(String.valueOf(platformId), Context.MODE_PRIVATE);
-        int viewMode = platformPrefs.getInt("view_mode", 1); // 0 = list, 1 = grid (default to grid)
+        int viewMode = platformPrefs.getInt("view_mode", 1); // default to grid
 
         NavController navController = Navigation.findNavController(rootView);
         int actionGrid = ArcadeRes.getId(context, "arcadeToPlatformLibraryGridViewAction");
@@ -400,6 +509,151 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         } else if (actionGrid != 0) {
             navController.navigate(actionGrid);
         }
+    }
+
+    // --- Embedded Android Apps Grid ---
+    private void openAppsGrid() {
+        isAppsGridOpen = true;
+
+        if (headerLayout != null) headerLayout.setVisibility(View.GONE);
+        if (systemsRecyclerView != null) systemsRecyclerView.setVisibility(View.GONE);
+
+        if (appsContainer != null) {
+            appsContainer.setAlpha(0f);
+            appsContainer.setVisibility(View.VISIBLE);
+            appsContainer.animate().alpha(1f).setDuration(220).start();
+        }
+
+        if (legendSelectText != null) legendSelectText.setText("INICIAR");
+        if (legendBackText != null) legendBackText.setText("VOLTAR");
+        if (legendMenuText != null) legendMenuText.setText("OPÇÕES");
+
+        loadInstalledApps();
+    }
+
+    private void closeAppsGrid() {
+        isAppsGridOpen = false;
+
+        if (appsContainer != null) {
+            appsContainer.animate().alpha(0f).setDuration(180).withEndAction(new Runnable() {
+                @Override
+                public void run() {
+                    appsContainer.setVisibility(View.GONE);
+                }
+            }).start();
+        }
+
+        if (headerLayout != null) {
+            headerLayout.setVisibility(isVerticalOrientation ? View.GONE : View.VISIBLE);
+        }
+        if (systemsRecyclerView != null) {
+            systemsRecyclerView.setVisibility(View.VISIBLE);
+            systemsRecyclerView.requestFocus();
+        }
+
+        if (legendSelectText != null) legendSelectText.setText(getString(ArcadeRes.getString(requireContext(), "arcade_legend_select")));
+        if (legendBackText != null) legendBackText.setText(getString(ArcadeRes.getString(requireContext(), "arcade_legend_back")));
+        if (legendMenuText != null) legendMenuText.setText(getString(ArcadeRes.getString(requireContext(), "arcade_legend_menu")));
+    }
+
+    private void loadInstalledApps() {
+        if (cachedAppList != null && !cachedAppList.isEmpty()) {
+            appAdapter.setItems(cachedAppList);
+            if (appsCountText != null) {
+                appsCountText.setText(cachedAppList.size() + " aplicativos");
+            }
+            appsRecyclerView.post(new Runnable() {
+                @Override
+                public void run() {
+                    appsRecyclerView.requestFocus();
+                }
+            });
+            return;
+        }
+
+        if (appsLoading != null) appsLoading.setVisibility(View.VISIBLE);
+
+        AsyncTask.execute(new Runnable() {
+            @Override
+            public void run() {
+                Context ctx = getContext();
+                if (ctx == null) return;
+
+                PackageManager pm = ctx.getPackageManager();
+                Intent mainIntent = new Intent(Intent.ACTION_MAIN, null);
+                mainIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+
+                List<ResolveInfo> resolved = pm.queryIntentActivities(mainIntent, 0);
+                final List<ArcadeAppItem> list = new ArrayList<>();
+
+                String myPackage = ctx.getPackageName();
+                for (ResolveInfo ri : resolved) {
+                    if (ri.activityInfo != null && !myPackage.equals(ri.activityInfo.packageName)) {
+                        String pkg = ri.activityInfo.packageName;
+                        String act = ri.activityInfo.name;
+                        CharSequence labelSeq = ri.loadLabel(pm);
+                        String label = (labelSeq != null) ? labelSeq.toString() : pkg;
+                        Drawable icon = ri.loadIcon(pm);
+                        list.add(new ArcadeAppItem(pkg, act, label, icon));
+                    }
+                }
+
+                Collections.sort(list, new Comparator<ArcadeAppItem>() {
+                    @Override
+                    public int compare(ArcadeAppItem o1, ArcadeAppItem o2) {
+                        return o1.getLabel().compareToIgnoreCase(o2.getLabel());
+                    }
+                });
+
+                new Handler(Looper.getMainLooper()).post(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (!isAdded()) return;
+                        cachedAppList = list;
+                        if (appsLoading != null) appsLoading.setVisibility(View.GONE);
+                        appAdapter.setItems(list);
+                        if (appsCountText != null) {
+                            appsCountText.setText(list.size() + " aplicativos");
+                        }
+                        appsRecyclerView.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                appsRecyclerView.requestFocus();
+                            }
+                        });
+                    }
+                });
+            }
+        });
+    }
+
+    @Override
+    public void onAppClick(ArcadeAppItem item, int position) {
+        Context context = getContext();
+        if (context == null || item == null) return;
+        try {
+            Intent launchIntent = new Intent(Intent.ACTION_MAIN);
+            launchIntent.addCategory(Intent.CATEGORY_LAUNCHER);
+            launchIntent.setComponent(new ComponentName(item.getPackageName(), item.getActivityName()));
+            launchIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED);
+            context.startActivity(launchIntent);
+        } catch (Exception e) {
+            e.printStackTrace();
+            try {
+                Intent fallback = context.getPackageManager().getLaunchIntentForPackage(item.getPackageName());
+                if (fallback != null) {
+                    fallback.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    context.startActivity(fallback);
+                }
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+
+    @Override
+    public void onAppFocused(ArcadeAppItem item, int position) {
+        // App focus changed in grid
     }
 
     private void displayWallpaper(String wallpaperPath) {
@@ -429,6 +683,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                     incomingView.bringToFront();
                     scrimView.bringToFront();
                     systemsRecyclerView.bringToFront();
+                    if (appsContainer != null) appsContainer.bringToFront();
                     legendBar.bringToFront();
 
                     incomingView.animate()
@@ -454,6 +709,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         if (context == null) return;
 
         CharSequence[] options = new CharSequence[] {
+            "Alternar para Interface Original do Daijishō",
             "Configurações de Aparência",
             "Configurações Gerais",
             "Alternar Orientação (Horizontal / Vertical)",
@@ -465,7 +721,15 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             .setItems(options, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    if (which == 0 || which == 1) {
+                    if (which == 0) {
+                        // Switch to Original Interface
+                        ArcadeUIController.setInterfaceMode(context, "original");
+                        Activity act = getActivity();
+                        if (act != null) {
+                            ArcadeUIController.applyUIMode(act);
+                            act.recreate();
+                        }
+                    } else if (which == 1 || which == 2) {
                         Activity act = getActivity();
                         if (act != null) {
                             try {
@@ -475,9 +739,9 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                                 t.printStackTrace();
                             }
                         }
-                    } else if (which == 2) {
-                        toggleOrientation();
                     } else if (which == 3) {
+                        toggleOrientation();
+                    } else if (which == 4) {
                         loadAndPopulatePlatforms();
                     }
                 }

@@ -1,0 +1,119 @@
+package com.magneticchen.daijishou.arcade;
+
+import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.view.View;
+import androidx.preference.PreferenceManager;
+import java.lang.reflect.Method;
+
+public class ArcadeUIController {
+
+    public static final String PREF_UI_MODE = "ui_interface_mode";
+    public static final String MODE_ARCADE = "arcade";
+    public static final String MODE_ORIGINAL = "original";
+
+    private static SharedPreferences.OnSharedPreferenceChangeListener prefListener = null;
+
+    public static boolean isArcadeMode(Context context) {
+        if (context == null) return true;
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        String mode = prefs.getString(PREF_UI_MODE, null);
+        if (mode != null) {
+            return MODE_ARCADE.equalsIgnoreCase(mode);
+        }
+        // Fallback to library_collection_view_mode
+        String collMode = prefs.getString("library_collection_view_mode", "3");
+        return "3".equals(collMode);
+    }
+
+    public static void setInterfaceMode(Context context, String mode) {
+        if (context == null) return;
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = prefs.edit();
+        editor.putString(PREF_UI_MODE, mode);
+        if (MODE_ARCADE.equalsIgnoreCase(mode)) {
+            editor.putString("library_collection_view_mode", "3");
+        } else {
+            editor.putString("library_collection_view_mode", "0");
+        }
+        editor.apply();
+    }
+
+    public static void applyUIMode(final Activity activity) {
+        if (activity == null) return;
+
+        registerPreferenceListener(activity);
+
+        activity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    boolean arcade = isArcadeMode(activity);
+                    int visibility = arcade ? View.GONE : View.VISIBLE;
+
+                    int tabId = ArcadeRes.getId(activity, "tab_layout");
+                    int statusId = ArcadeRes.getId(activity, "system_status_layout");
+                    int searchId = ArcadeRes.getId(activity, "search_button_layout");
+                    int syncId = ArcadeRes.getId(activity, "sync_and_backup_button_layout");
+                    int loggerId = ArcadeRes.getId(activity, "logger_button_layout");
+                    int dividerId = ArcadeRes.getId(activity, "view");
+                    int coordinatorId = ArcadeRes.getId(activity, "coordinatorLayout");
+
+                    View tab = activity.findViewById(tabId);
+                    View status = activity.findViewById(statusId);
+                    View search = activity.findViewById(searchId);
+                    View sync = activity.findViewById(syncId);
+                    View logger = activity.findViewById(loggerId);
+                    View divider = activity.findViewById(dividerId);
+                    View coordinator = activity.findViewById(coordinatorId);
+
+                    if (tab != null) tab.setVisibility(visibility);
+                    if (status != null) status.setVisibility(visibility);
+                    if (search != null) search.setVisibility(visibility);
+                    if (sync != null) sync.setVisibility(visibility);
+                    if (divider != null) divider.setVisibility(visibility);
+                    if (coordinator != null) coordinator.setVisibility(visibility);
+                    if (logger != null) {
+                        logger.setVisibility(View.GONE);
+                    }
+
+                    if (arcade) {
+                        try {
+                            Method navMethod = activity.getClass().getMethod("navigatePage", String.class, Object.class);
+                            navMethod.invoke(activity, "library", null);
+                        } catch (Throwable ignored) {}
+                    }
+                } catch (Throwable t) {
+                    t.printStackTrace();
+                }
+            }
+        });
+    }
+
+    public static void registerPreferenceListener(final Activity activity) {
+        if (activity == null) return;
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(activity);
+        if (prefListener == null) {
+            prefListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
+                @Override
+                public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
+                    if (PREF_UI_MODE.equals(key)) {
+                        String newMode = sharedPreferences.getString(PREF_UI_MODE, MODE_ARCADE);
+                        // Also sync library_collection_view_mode
+                        sharedPreferences.edit()
+                            .putString("library_collection_view_mode", MODE_ARCADE.equalsIgnoreCase(newMode) ? "3" : "0")
+                            .apply();
+                        activity.runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                activity.recreate();
+                            }
+                        });
+                    }
+                }
+            };
+            prefs.registerOnSharedPreferenceChangeListener(prefListener);
+        }
+    }
+}

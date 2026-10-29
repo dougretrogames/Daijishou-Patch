@@ -14,7 +14,7 @@
 .end method
 
 .method public static handleEmptyNav(Landroidx/fragment/app/Fragment;Landroidx/navigation/NavController;Ljava/util/List;)Z
-    .locals 4
+    .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -27,20 +27,11 @@
 
     const/4 v0, 0x0
 
-    if-eqz p0, :cond_5
+    if-eqz p0, :cond_9
 
-    if-eqz p1, :cond_5
+    if-nez p1, :cond_0
 
-    if-eqz p2, :cond_5
-
-    .line 16
-    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
-
-    move-result p2
-
-    if-eqz p2, :cond_0
-
-    goto :goto_0
+    goto/16 :goto_2
 
     .line 19
     :cond_0
@@ -52,34 +43,57 @@
 
     return v0
 
-    .line 22
-    :cond_1
-    invoke-static {p0}, Landroidx/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
-
-    move-result-object p2
-
     .line 23
-    const-string v1, "library_collection_view_mode"
+    :cond_1
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->isArcadeMode(Landroid/content/Context;)Z
 
-    const-string v2, "0"
+    move-result v1
 
-    invoke-interface {p2, v1, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p2
-
-    .line 24
-    const-string v1, "3"
-
-    invoke-virtual {v1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p2
-
-    if-nez p2, :cond_2
+    if-nez v1, :cond_2
 
     return v0
 
-    .line 28
+    .line 27
     :cond_2
+    invoke-static {p0}, Landroidx/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+
+    move-result-object v1
+
+    .line 28
+    const-string v2, "arcade_android_apps_filter"
+
+    const-string v3, "0"
+
+    invoke-interface {v1, v2, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 29
+    const-string v2, "2"
+
+    invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz p2, :cond_3
+
+    .line 30
+    invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
+
+    move-result p2
+
+    if-nez p2, :cond_3
+
+    goto :goto_0
+
+    :cond_3
+    if-eqz v1, :cond_4
+
+    return v0
+
+    .line 36
+    :cond_4
+    :goto_0
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p2
@@ -96,12 +110,12 @@
 
     move-result p2
 
-    if-nez p2, :cond_3
+    if-nez p2, :cond_5
 
     return v0
 
-    .line 31
-    :cond_3
+    .line 39
+    :cond_5
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -110,59 +124,84 @@
 
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
+    move-result-object v2
+
+    invoke-virtual {v0, v1, v3, v2}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+
+    move-result v0
+
+    .line 41
+    new-instance v1, Landroidx/navigation/NavOptions$Builder;
+
+    invoke-direct {v1}, Landroidx/navigation/NavOptions$Builder;-><init>()V
+
+    const/4 v2, 0x1
+
+    if-eqz v0, :cond_6
+
+    .line 43
+    invoke-virtual {v1, v0, v2}, Landroidx/navigation/NavOptions$Builder;->setPopUpTo(IZ)Landroidx/navigation/NavOptions$Builder;
+
+    .line 45
+    :cond_6
+    invoke-virtual {v1}, Landroidx/navigation/NavOptions$Builder;->build()Landroidx/navigation/NavOptions;
+
+    move-result-object v1
+
+    .line 47
+    invoke-virtual {p1}, Landroidx/navigation/NavController;->getGraph()Landroidx/navigation/NavGraph;
+
+    move-result-object v4
+
+    invoke-virtual {v4, p2}, Landroidx/navigation/NavGraph;->setStartDestination(I)V
+
+    .line 48
+    invoke-virtual {p1}, Landroidx/navigation/NavController;->getCurrentDestination()Landroidx/navigation/NavDestination;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_8
+
+    .line 49
+    invoke-virtual {v4}, Landroidx/navigation/NavDestination;->getId()I
+
+    move-result v4
+
+    if-ne v4, v0, :cond_8
+
+    .line 50
+    invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    const-string v4, "platformEmptyToArcadeAction"
+
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
     move-result-object p0
 
-    invoke-virtual {v0, v1, v3, p0}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {v0, v4, v3, p0}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p0
 
-    .line 33
-    new-instance v0, Landroidx/navigation/NavOptions$Builder;
+    const/4 v0, 0x0
 
-    invoke-direct {v0}, Landroidx/navigation/NavOptions$Builder;-><init>()V
+    if-eqz p0, :cond_7
 
-    const/4 v1, 0x1
+    .line 52
+    invoke-virtual {p1, p0, v0, v1}, Landroidx/navigation/NavController;->navigate(ILandroid/os/Bundle;Landroidx/navigation/NavOptions;)V
 
-    .line 34
-    invoke-virtual {v0, p0, v1}, Landroidx/navigation/NavOptions$Builder;->setPopUpTo(IZ)Landroidx/navigation/NavOptions$Builder;
+    goto :goto_1
 
-    move-result-object v0
+    .line 54
+    :cond_7
+    invoke-virtual {p1, p2, v0, v1}, Landroidx/navigation/NavController;->navigate(ILandroid/os/Bundle;Landroidx/navigation/NavOptions;)V
 
-    .line 35
-    invoke-virtual {v0}, Landroidx/navigation/NavOptions$Builder;->build()Landroidx/navigation/NavOptions;
+    :cond_8
+    :goto_1
+    return v2
 
-    move-result-object v0
-
-    .line 37
-    invoke-virtual {p1}, Landroidx/navigation/NavController;->getGraph()Landroidx/navigation/NavGraph;
-
-    move-result-object v2
-
-    invoke-virtual {v2, p2}, Landroidx/navigation/NavGraph;->setStartDestination(I)V
-
-    .line 38
-    invoke-virtual {p1}, Landroidx/navigation/NavController;->getCurrentDestination()Landroidx/navigation/NavDestination;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_4
-
-    .line 39
-    invoke-virtual {v2}, Landroidx/navigation/NavDestination;->getId()I
-
-    move-result v2
-
-    if-ne v2, p0, :cond_4
-
-    const/4 p0, 0x0
-
-    .line 40
-    invoke-virtual {p1, p2, p0, v0}, Landroidx/navigation/NavController;->navigate(ILandroid/os/Bundle;Landroidx/navigation/NavOptions;)V
-
-    :cond_4
-    return v1
-
-    :cond_5
-    :goto_0
+    :cond_9
+    :goto_2
     return v0
 .end method

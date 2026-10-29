@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
   xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
-    <Preference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/download_platform_wallpapers_pack_title" android:key="download_platform_wallpapers_pack_button" android:summary="@string/download_platform_wallpapers_pack_summary" app:icon="@drawable/ic_round_add_photo_alternate_24" />
-        <PreferenceCategory android:title="@string/arcade_settings_category">
-        <ListPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/library_collection_view_mode_title" android:key="library_collection_view_mode" android:summary="@string/library_collection_view_mode_summary" app:defaultValue="0" app:entries="@array/library_collection_view_mode_array" app:entryValues="@array/library_collection_view_mode_value_array" app:icon="@drawable/ic_baseline_sports_esports_24" />
-        <ListPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/arcade_scroll_direction_title" android:key="arcade_scroll_direction" android:summary="@string/arcade_scroll_direction_summary" app:defaultValue="0" app:entries="@array/arcade_scroll_direction_array" app:entryValues="@array/arcade_scroll_direction_value_array" app:icon="@drawable/ic_outline_view_carousel_24" />
+    <PreferenceCategory android:title="@string/ui_interface_mode_category">
+        <ListPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:key="ui_interface_mode"
+            android:title="@string/ui_interface_mode_title"
+            android:summary="@string/ui_interface_mode_summary"
+            app:defaultValue="arcade"
+            app:entries="@array/ui_interface_mode_array"
+            app:entryValues="@array/ui_interface_mode_value_array"
+            app:icon="@drawable/ic_baseline_sports_esports_24" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/arcade_settings_category">
+        <ListPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/arcade_scroll_direction_title" android:key="arcade_scroll_direction" android:summary="@string/arcade_scroll_direction_summary" app:defaultValue="1" app:entries="@array/arcade_scroll_direction_array" app:entryValues="@array/arcade_scroll_direction_value_array" app:icon="@drawable/ic_outline_view_carousel_24" />
         <ListPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/arcade_android_apps_filter_title" android:key="arcade_android_apps_filter" android:summary="@string/arcade_android_apps_filter_summary" app:defaultValue="0" app:entries="@array/arcade_android_apps_filter_array" app:entryValues="@array/arcade_android_apps_filter_value_array" app:icon="@drawable/ic_baseline_android_24" />
     </PreferenceCategory>
+    <Preference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/download_platform_wallpapers_pack_title" android:key="download_platform_wallpapers_pack_button" android:summary="@string/download_platform_wallpapers_pack_summary" app:icon="@drawable/ic_round_add_photo_alternate_24" />
     <PreferenceCategory android:title="@string/appearance_settings_title">
+        <ListPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/library_collection_view_mode_title" android:key="library_collection_view_mode" android:summary="@string/library_collection_view_mode_summary" app:defaultValue="0" app:entries="@array/library_collection_view_mode_array" app:entryValues="@array/library_collection_view_mode_value_array" app:icon="@drawable/ic_baseline_sports_esports_24" />
         <ListPreference android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/theme_color_title" android:key="theme_id" android:summary="@string/theme_color_summary" app:defaultValue="purple" app:entries="@array/theme_color_display_array" app:entryValues="@array/theme_color_value_array" app:icon="@drawable/ic_baseline_color_lens_24" />
         <ListPreference android:entries="@array/dark_mode_array" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/use_dark_theme_title" android:key="use_dark_theme" android:summary="@string/use_dark_theme_summary" app:defaultValue="0" app:entryValues="@array/dark_mode_value_array" app:icon="@drawable/round_dark_mode_24" />
         <SwitchPreferenceCompat android:icon="@drawable/twotone_dark_mode_24" android:layout_width="wrap_content" android:layout_height="wrap_content" android:title="@string/use_pure_dark_theme_title" android:key="use_pure_dark_theme" android:summary="@string/use_pure_dark_theme_summary" android:defaultValue="false" />

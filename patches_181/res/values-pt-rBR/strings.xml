@@ -1094,12 +1094,16 @@
     <string name="play_music_summary">"Reproduzir músicas de fundo encontradas na pasta 'music' de onde as roms estão localizadas."</string>
     <string name="arcade_mode">Modo Arcade</string>
     <string name="arcade_settings_category">Modo Arcade</string>
+    <string name="ui_interface_mode_category">Modo de Interface</string>
+    <string name="ui_interface_mode_title">Interface Principal</string>
+    <string name="ui_interface_mode_summary">Escolha entre a Interface Arcade (tela cheia com foco em controles) ou a Interface Original do Daijishō (com abas superiores e barra de status).</string>
     <string name="arcade_scroll_direction_title">Orientação dos Sistemas Arcade</string>
-    <string name="arcade_scroll_direction_summary">Escolha entre rolagem horizontal em carrossel ou vertical.</string>
+    <string name="arcade_scroll_direction_summary">Escolha entre carrossel horizontal ou lista vertical de sistemas.</string>
     <string name="arcade_android_apps_filter_title">Plataforma Android Apps</string>
-    <string name="arcade_android_apps_filter_summary">Exibir todos os aplicativos ou apenas jogos detectados no sistema Android Apps.</string>
-    <string name="arcade_legend_select">A: Iniciar</string>
-    <string name="arcade_legend_back">B: Voltar</string>
-    <string name="arcade_legend_menu">X: Menu</string>
-    <string name="arcade_android_apps_title">Android Apps</string>
+    <string name="arcade_android_apps_filter_summary">Exibir todos os aplicativos instalados ou apenas jogos na lista Android.</string>
+    <string name="arcade_legend_select">SELECIONAR</string>
+    <string name="arcade_legend_back">VOLTAR</string>
+    <string name="arcade_legend_menu">OPÇÕES</string>
+    <string name="arcade_legend_start">INICIAR</string>
+    <string name="arcade_android_apps_title">Apps</string>
 </resources>

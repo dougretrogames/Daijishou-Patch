@@ -32,7 +32,7 @@
         }
     .end annotation
 
-    .line 76
+    .line 99
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
     invoke-direct {p0, p2}, Landroidx/activity/OnBackPressedCallback;-><init>(Z)V
@@ -45,21 +45,38 @@
 .method public handleOnBackPressed()V
     .locals 1
 
+    .line 102
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
+
+    invoke-static {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$200(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 103
+    iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
+
+    invoke-static {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$300(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)V
+
+    return-void
+
+    :cond_0
     const/4 v0, 0x0
 
-    .line 79
+    .line 106
     invoke-virtual {p0, v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$2;->setEnabled(Z)V
 
-    .line 80
+    .line 107
     iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
     invoke-virtual {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_1
 
-    .line 81
+    .line 108
     iget-object p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$2;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
     invoke-virtual {p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -68,6 +85,6 @@
 
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->onBackPressed()V
 
-    :cond_0
+    :cond_1
     return-void
 .end method

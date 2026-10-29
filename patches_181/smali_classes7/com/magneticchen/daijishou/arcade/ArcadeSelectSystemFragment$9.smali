@@ -3,12 +3,12 @@
 .source "ArcadeSelectSystemFragment.java"
 
 # interfaces
-.implements Lcom/bumptech/glide/request/RequestListener;
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->displayWallpaper(Ljava/lang/String;)V
+    value = Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->loadAndPopulatePlatforms()V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -16,35 +16,22 @@
     name = null
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lcom/bumptech/glide/request/RequestListener<",
-        "Landroid/graphics/drawable/Drawable;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
 .field final synthetic this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-.field final synthetic val$incomingView:Landroid/widget/ImageView;
-
-.field final synthetic val$outgoingView:Landroid/widget/ImageView;
+.field final synthetic val$initialPos:I
 
 
 # direct methods
-.method constructor <init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;Landroid/widget/ImageView;Landroid/widget/ImageView;)V
+.method constructor <init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;I)V
     .locals 0
     .annotation system Ldalvik/annotation/MethodParameters;
         accessFlags = {
             0x8010,
-            0x1010,
             0x1010
         }
         names = {
-            null,
             null,
             null
         }
@@ -56,12 +43,10 @@
         }
     .end annotation
 
-    .line 383
+    .line 413
     iput-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    iput-object p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->val$incomingView:Landroid/widget/ImageView;
-
-    iput-object p3, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->val$outgoingView:Landroid/widget/ImageView;
+    iput p2, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->val$initialPos:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,146 +55,53 @@
 
 
 # virtual methods
-.method public onLoadFailed(Lcom/bumptech/glide/load/engine/GlideException;Ljava/lang/Object;Lcom/bumptech/glide/request/target/Target;Z)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/bumptech/glide/load/engine/GlideException;",
-            "Ljava/lang/Object;",
-            "Lcom/bumptech/glide/request/target/Target<",
-            "Landroid/graphics/drawable/Drawable;",
-            ">;Z)Z"
-        }
-    .end annotation
+.method public run()V
+    .locals 2
 
-    const/4 p0, 0x0
+    .line 416
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    return p0
-.end method
+    invoke-static {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$600(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/RecyclerView;
 
-.method public onResourceReady(Landroid/graphics/drawable/Drawable;Ljava/lang/Object;Lcom/bumptech/glide/request/target/Target;Lcom/bumptech/glide/load/DataSource;Z)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/graphics/drawable/Drawable;",
-            "Ljava/lang/Object;",
-            "Lcom/bumptech/glide/request/target/Target<",
-            "Landroid/graphics/drawable/Drawable;",
-            ">;",
-            "Lcom/bumptech/glide/load/DataSource;",
-            "Z)Z"
-        }
-    .end annotation
+    move-result-object v0
 
-    .line 391
-    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->val$incomingView:Landroid/widget/ImageView;
+    iget v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->val$initialPos:I
 
-    const/4 p2, 0x0
+    invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->scrollToPosition(I)V
 
-    invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setAlpha(F)V
+    .line 417
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    .line 392
-    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->val$incomingView:Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
-    const/4 p2, 0x0
+    move-result-object v0
 
-    invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setVisibility(I)V
+    iget v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->val$initialPos:I
 
-    .line 393
-    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->val$incomingView:Landroid/widget/ImageView;
+    invoke-virtual {v0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->setSelectedPosition(I)V
 
-    invoke-virtual {p1}, Landroid/widget/ImageView;->bringToFront()V
+    .line 418
+    iget-object v0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    .line 394
-    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
+    invoke-static {v0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;
 
-    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$700(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
+    move-result-object v0
 
-    move-result-object p1
+    iget v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->val$initialPos:I
 
-    invoke-virtual {p1}, Landroid/view/View;->bringToFront()V
+    invoke-virtual {v0, v1}, Lcom/magneticchen/daijishou/arcade/ArcadeSystemAdapter;->getItem(I)Lcom/magneticchen/daijishou/arcade/ArcadeItem;
 
-    .line 395
-    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
+    move-result-object v0
 
-    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$600(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroidx/recyclerview/widget/RecyclerView;
+    if-eqz v0, :cond_0
 
-    move-result-object p1
+    .line 420
+    iget-object v1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
 
-    invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->bringToFront()V
+    iget p0, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->val$initialPos:I
 
-    .line 396
-    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->this$0:Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;
+    invoke-virtual {v1, v0, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->onSystemFocused(Lcom/magneticchen/daijishou/arcade/ArcadeItem;I)V
 
-    invoke-static {p1}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;->access$800(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment;)Landroid/view/View;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/view/View;->bringToFront()V
-
-    .line 398
-    iget-object p1, p0, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->val$incomingView:Landroid/widget/ImageView;
-
-    invoke-virtual {p1}, Landroid/widget/ImageView;->animate()Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    const/high16 p3, 0x3f800000    # 1.0f
-
-    .line 399
-    invoke-virtual {p1, p3}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    const-wide/16 p3, 0x12c
-
-    .line 400
-    invoke-virtual {p1, p3, p4}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p1
-
-    new-instance p3, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9$1;
-
-    invoke-direct {p3, p0}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9$1;-><init>(Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;)V
-
-    .line 401
-    invoke-virtual {p1, p3}, Landroid/view/ViewPropertyAnimator;->withEndAction(Ljava/lang/Runnable;)Landroid/view/ViewPropertyAnimator;
-
-    move-result-object p0
-
-    .line 409
-    invoke-virtual {p0}, Landroid/view/ViewPropertyAnimator;->start()V
-
-    return p2
-.end method
-
-.method public bridge synthetic onResourceReady(Ljava/lang/Object;Ljava/lang/Object;Lcom/bumptech/glide/request/target/Target;Lcom/bumptech/glide/load/DataSource;Z)Z
-    .locals 0
-    .annotation system Ldalvik/annotation/MethodParameters;
-        accessFlags = {
-            0x1000,
-            0x1000,
-            0x1000,
-            0x1000,
-            0x1000
-        }
-        names = {
-            null,
-            null,
-            null,
-            null,
-            null
-        }
-    .end annotation
-
-    .line 383
-    check-cast p1, Landroid/graphics/drawable/Drawable;
-
-    invoke-virtual/range {p0 .. p5}, Lcom/magneticchen/daijishou/arcade/ArcadeSelectSystemFragment$9;->onResourceReady(Landroid/graphics/drawable/Drawable;Ljava/lang/Object;Lcom/bumptech/glide/request/target/Target;Lcom/bumptech/glide/load/DataSource;Z)Z
-
-    move-result p0
-
-    return p0
+    :cond_0
+    return-void
 .end method

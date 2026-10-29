@@ -19,13 +19,12 @@ public class ArcadeNavHelper {
         Context context = fragment.getContext();
         if (context == null) return false;
 
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        String mode = prefs.getString("library_collection_view_mode", "0");
-        android.util.Log.d("ArcadeNavHelper", "handleEmptyNav called: mode=" + mode + ", platforms=" + platforms);
-        if (!"3".equals(mode)) {
+        // Only redirect if Arcade Interface is active
+        if (!ArcadeUIController.isArcadeMode(context)) {
             return false;
         }
 
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         String appsFilter = prefs.getString("arcade_android_apps_filter", "0");
         boolean appsEnabled = !"2".equals(appsFilter);
         boolean hasPlatforms = (platforms != null && !platforms.isEmpty());
