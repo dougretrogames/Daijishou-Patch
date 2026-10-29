@@ -7,12 +7,12 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@id/constraintLayout4"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="4.0dip"
         android:layout_marginEnd="12.0dip"
-        android:layout_marginBottom="8.0dip"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="4.0dip"
+        app:layout_constraintBottom_toTopOf="@+id/arcade_legend_divider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -454,126 +454,209 @@
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <!-- Centered Controller Legend Bar (Arcade Mode) -->
-    <LinearLayout
+            <!-- Divider above the bottom legend bar (Arcade Mode) -->
+    <View
+        android:id="@+id/arcade_legend_divider"
+        style="@style/Divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:alpha="0.75"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/arcade_legend_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Bottom docked legend bar matching mobile coordinatorLayout design -->
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/arcade_legend_bar"
-        android:layout_width="wrap_content"
-        android:layout_height="36dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/arcade_legend_pill_bg"
-        android:elevation="8dp"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="2dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <!-- Button X (OPÇÕES) - First on the left as in reference image -->
-        <LinearLayout
-            android:id="@+id/arcade_btn_action_x"
+        <TextView
+            android:id="@+id/arcade_clock_text_view"
             android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="1dp"
+            android:gravity="center"
+            android:paddingRight="4dp"
+            android:text="00:00 am"
+            android:textSize="14.5sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/arcade_tips_text_view"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:clickable="true"
-            android:focusable="false"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="1dp"
+            android:background="?selectableItemBackground"
+            android:ellipsize="marquee"
             android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingLeft="6dp"
-            android:paddingRight="12dp">
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingLeft="4sp"
+            android:paddingRight="4sp"
+            android:paddingBottom="0dp"
+            android:singleLine="true"
+            android:text="Daijishō retro launcher"
+            android:textAllCaps="false"
+            android:textColor="?colorControlNormal"
+            android:textSize="12.25sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/arcade_btn_action_a"
+            app:layout_constraintStart_toEndOf="@+id/arcade_clock_text_view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
 
-            <TextView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:background="@drawable/ic_baseline_brightness_1_24"
-                android:backgroundTint="#2979FF"
-                android:gravity="center"
-                android:text="X"
-                android:textColor="#FFFFFF"
-                android:textSize="11sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/arcade_legend_menu_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:text="@string/arcade_legend_menu"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <!-- Button A (SELECIONAR / INICIAR) - Center as in reference image -->
-        <LinearLayout
+        <!-- Button A (SELECIONAR) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/arcade_btn_action_a"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:alpha="0.9"
+            android:background="?selectableItemBackground"
             android:clickable="true"
-            android:focusable="false"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingLeft="6dp"
-            android:paddingRight="12dp">
+            android:focusable="true"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/arcade_btn_action_b"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/arcade_select_button_icon"
+                android:layout_width="17dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="4dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/arcade_select_text_view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_brightness_1_24"
+                app:tint="?themeTextColor" />
 
             <TextView
-                android:id="@+id/arcade_legend_btn_a_badge"
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:background="@drawable/ic_baseline_brightness_1_24"
-                android:backgroundTint="#00C853"
+                android:id="@+id/arcade_select_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/arcade_legend_select"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="12.5sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/arcade_select_icon_text_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="1dp"
+                android:clickable="false"
+                android:focusable="false"
                 android:gravity="center"
                 android:text="A"
-                android:textColor="#FFFFFF"
-                android:textSize="11sp"
-                android:textStyle="bold" />
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="?themeBackgroundColor"
+                android:textSize="9.75sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/arcade_select_button_icon"
+                app:layout_constraintEnd_toEndOf="@+id/arcade_select_button_icon"
+                app:layout_constraintStart_toStartOf="@+id/arcade_select_button_icon"
+                app:layout_constraintTop_toTopOf="@+id/arcade_select_button_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
-                android:id="@+id/arcade_legend_select_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:text="@string/arcade_legend_select"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-        <!-- Button B (VOLTAR) - Right as in reference image -->
-        <LinearLayout
+        <!-- Button B (VOLTAR) -->
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/arcade_btn_action_b"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginEnd="16dp"
+            android:alpha="0.9"
+            android:background="?selectableItemBackground"
             android:clickable="true"
-            android:focusable="false"
-            android:gravity="center_vertical"
-            android:orientation="horizontal"
-            android:paddingLeft="6dp"
-            android:paddingRight="6dp">
+            android:focusable="true"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/arcade_back_button_icon"
+                android:layout_width="17dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="4dp"
+                android:clickable="false"
+                android:focusable="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/arcade_back_text_view"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_brightness_1_24"
+                app:tint="?themeTextColor" />
 
             <TextView
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:background="@drawable/ic_baseline_brightness_1_24"
-                android:backgroundTint="#D50000"
+                android:id="@+id/arcade_back_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:gravity="center"
+                android:text="@string/arcade_legend_back"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="12.5sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/arcade_back_icon_text_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="1dp"
+                android:clickable="false"
+                android:focusable="false"
                 android:gravity="center"
                 android:text="B"
-                android:textColor="#FFFFFF"
-                android:textSize="11sp"
-                android:textStyle="bold" />
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="?themeBackgroundColor"
+                android:textSize="9.75sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/arcade_back_button_icon"
+                app:layout_constraintEnd_toEndOf="@+id/arcade_back_button_icon"
+                app:layout_constraintStart_toStartOf="@+id/arcade_back_button_icon"
+                app:layout_constraintTop_toTopOf="@+id/arcade_back_button_icon" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
-                android:id="@+id/arcade_legend_back_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="6dp"
-                android:text="@string/arcade_legend_back"
-                android:textColor="#FFFFFF"
-                android:textSize="12sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
