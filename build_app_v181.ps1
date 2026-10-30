@@ -159,11 +159,7 @@ if ($LASTEXITCODE -ne 0 -or -not (Test-Path $patchedApk)) {
 }
 
 # 8. Alinhamento e Assinatura
-Write-Host "`n[5/5] Executando zipalign e apksigner (v1, v2 e v3 habilitados para minSdk 24)..."
-$alignedApk = "build_tmp/aligned_181.apk"
-if (Test-Path $alignedApk) { Remove-Item -Force $alignedApk }
-& $zipalign -f -p 4 $patchedApk $alignedApk
-
+Write-Host "`n[5/5] Executando jarsigner (v1), zipalign e apksigner (v2 e v3)..."
 # Criar debug keystore se nao existir
 if (-not (Test-Path $Keystore)) {
     Write-Host "Criando debug.keystore..."
@@ -172,10 +168,17 @@ if (-not (Test-Path $Keystore)) {
     & $keytoolPath -genkey -v -keystore $Keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
 }
 
+# Assinar esquema v1 com jarsigner
+jarsigner -keystore $Keystore -storepass android -keypass android $patchedApk androiddebugkey
+
+$alignedApk = "build_tmp/aligned_181.apk"
+if (Test-Path $alignedApk) { Remove-Item -Force $alignedApk }
+& $zipalign -f -p 4 $patchedApk $alignedApk
+
 if (Test-Path $OutApk) { Remove-Item -Force $OutApk }
-& $apksigner sign --ks $Keystore --ks-pass pass:android --key-pass pass:android --ks-key-alias androiddebugkey --min-sdk-version 24 --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true --out $OutApk $alignedApk
+& $apksigner sign --ks $Keystore --ks-pass pass:android --key-pass pass:android --ks-key-alias androiddebugkey --v1-signing-enabled true --v2-signing-enabled true --v3-signing-enabled true --out $OutApk $alignedApk
 
 Write-Host "`n=== Verificacao de Assinatura (v1, v2 e v3) ==="
-& $apksigner verify --verbose --min-sdk-version 21 $OutApk
+& $apksigner verify --verbose --min-sdk-version 23 $OutApk
 
 Write-Host "`n=== SUCESSO: Build concluido em $OutApk ==="
