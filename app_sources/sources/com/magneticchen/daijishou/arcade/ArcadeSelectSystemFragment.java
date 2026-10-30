@@ -155,6 +155,12 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
 
         activeInstance = this;
 
+        SharedPreferences prefsInit = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean showLegendInit = prefsInit.getBoolean("arcade_show_legend_bar", true);
+        if (legendBar != null) {
+            legendBar.setVisibility(showLegendInit ? View.VISIBLE : View.GONE);
+        }
+
         // Setup swap A/B buttons if enabled
         SharedPreferences prefsLocal = PreferenceManager.getDefaultSharedPreferences(context);
         boolean swapAB = prefsLocal.getBoolean("swap_a_b_buttons", false);
@@ -419,7 +425,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             try {
                 db = SQLiteDatabase.openDatabase(dbFile.getAbsolutePath(), null, SQLiteDatabase.OPEN_READWRITE);
                 // Ensure platforms are linked to RetroArch cores
-                ArcadeBackupImporter.autoLinkRetroArchPlayers(db);
+                ArcadeBackupImporter.autoLinkAllPlayers(context, db);
                 Cursor countCursor = db.rawQuery("SELECT count(*) FROM PlatformEntity", null);
                 int count = 0;
                 if (countCursor != null && countCursor.moveToFirst()) {
@@ -1032,10 +1038,14 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         int strMenuTitle = ArcadeRes.getString(context, "arcade_menu_title");
         int strClose = ArcadeRes.getString(context, "arcade_menu_close");
 
+        final SharedPreferences prefsMenu = PreferenceManager.getDefaultSharedPreferences(context);
+        final boolean showLegend = prefsMenu.getBoolean("arcade_show_legend_bar", true);
+
         CharSequence[] options = new CharSequence[] {
             (strSwitch != 0) ? getString(strSwitch) : "Alternar para Interface Mobile (Original)",
             "Importar Backup do ARC Browser (.tar)",
-            "Vincular Núcleos do RetroArch aos Sistemas",
+            "Vincular Emuladores e Núcleos (RetroArch, Mupen64Plus, PPSSPP)",
+            showLegend ? "Ocultar Barra Inferior de Botões" : "Exibir Barra Inferior de Botões",
             "Baixar Pacote de Clearlogos (GitHub)",
             "Baixar Temas e Papéis de Parede (GitHub)",
             "Baixar Pacotes de Miniaturas (GitHub)",
@@ -1067,7 +1077,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                             }
                         });
                     } else if (which == 2) {
-                        // Vincular Nucleos do RetroArch aos Sistemas
+                        // Vincular Emuladores e Nucleos (RetroArch, Mupen64Plus, PPSSPP)
                         AsyncTask.execute(new Runnable() {
                             @Override
                             public void run() {
@@ -1076,7 +1086,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                                 if (dbFile.exists()) {
                                     try {
                                         SQLiteDatabase db = SQLiteDatabase.openDatabase(dbFile.getAbsolutePath(), null, SQLiteDatabase.OPEN_READWRITE);
-                                        count = ArcadeBackupImporter.autoLinkRetroArchPlayers(db);
+                                        count = ArcadeBackupImporter.autoLinkAllPlayers(context, db);
                                         db.close();
                                     } catch (Throwable t) {
                                         t.printStackTrace();
@@ -1087,13 +1097,20 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                                     @Override
                                     public void run() {
                                         if (!isAdded()) return;
-                                        android.widget.Toast.makeText(context, finalCount + " sistemas vinculados aos núcleos do RetroArch com sucesso!", android.widget.Toast.LENGTH_LONG).show();
+                                        android.widget.Toast.makeText(context, finalCount + " sistemas e emuladores vinculados com sucesso!", android.widget.Toast.LENGTH_LONG).show();
                                         loadAndPopulatePlatforms();
                                     }
                                 });
                             }
                         });
                     } else if (which == 3) {
+                        // Toggle Legend Bar Visibility
+                        boolean newState = !showLegend;
+                        prefsMenu.edit().putBoolean("arcade_show_legend_bar", newState).apply();
+                        if (legendBar != null) {
+                            legendBar.setVisibility(newState ? View.VISIBLE : View.GONE);
+                        }
+                    } else if (which == 4) {
                         // Directly download Clearlogos pack from GitHub
                         try {
                             Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformThumbnailsPackDialogFragment");
@@ -1107,7 +1124,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                         } catch (Throwable t) {
                             t.printStackTrace();
                         }
-                    } else if (which == 4) {
+                    } else if (which == 5) {
                         // Download Wallpapers / Themes
                         try {
                             Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformWallpapersPackListDialogFragment");
@@ -1116,7 +1133,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                         } catch (Throwable t) {
                             t.printStackTrace();
                         }
-                    } else if (which == 5) {
+                    } else if (which == 6) {
                         // Download Thumbnails list
                         try {
                             Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformThumbnailsPackListDialogFragment");
@@ -1125,7 +1142,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                         } catch (Throwable t) {
                             t.printStackTrace();
                         }
-                    } else if (which == 6 || which == 7) {
+                    } else if (which == 7 || which == 8) {
                         Activity act = getActivity();
                         if (act != null) {
                             try {
@@ -1135,9 +1152,9 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                                 t.printStackTrace();
                             }
                         }
-                    } else if (which == 8) {
-                        toggleOrientation();
                     } else if (which == 9) {
+                        toggleOrientation();
+                    } else if (which == 10) {
                         loadAndPopulatePlatforms();
                     }
                 }

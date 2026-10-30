@@ -180,144 +180,15 @@ public class ArcadeUIController {
     public static void setupLibraryLegendBar(final androidx.fragment.app.Fragment fragment, final View rootView) {
         if (fragment == null || rootView == null) return;
         final Context context = rootView.getContext();
-        boolean arcade = isArcadeMode(context);
-
         int barId = ArcadeRes.getId(context, "arcade_legend_bar");
-        final View legendBar = (barId != 0) ? rootView.findViewById(barId) : null;
+        View legendBar = (barId != 0) ? rootView.findViewById(barId) : null;
         if (legendBar != null) {
-            legendBar.setVisibility(arcade ? View.VISIBLE : View.GONE);
+            legendBar.setVisibility(View.GONE);
         }
-
         int divId = ArcadeRes.getId(context, "arcade_legend_divider");
-        final View divider = (divId != 0) ? rootView.findViewById(divId) : null;
+        View divider = (divId != 0) ? rootView.findViewById(divId) : null;
         if (divider != null) {
-            divider.setVisibility(arcade ? View.VISIBLE : View.GONE);
-        }
-
-        if (!arcade) return;
-
-        // Update Clock
-        int clockId = ArcadeRes.getId(context, "arcade_clock_text_view");
-        TextView clockView = (clockId != 0) ? (TextView) rootView.findViewById(clockId) : null;
-        if (clockView != null) {
-            try {
-                java.text.DateFormat df = android.text.format.DateFormat.getTimeFormat(context);
-                clockView.setText(df.format(new java.util.Date()));
-            } catch (Throwable ignored) {}
-        }
-
-        // Update Tips / Platform Marquee
-        int tipsId = ArcadeRes.getId(context, "arcade_tips_text_view");
-        TextView tipsView = (tipsId != 0) ? (TextView) rootView.findViewById(tipsId) : null;
-        if (tipsView != null) {
-            int titleId = ArcadeRes.getId(context, "platform_library_title_text_view");
-            View titleView = (titleId != 0) ? rootView.findViewById(titleId) : null;
-            if (titleView instanceof TextView) {
-                CharSequence title = ((TextView) titleView).getText();
-                if (title != null && title.length() > 0) {
-                    tipsView.setText("Daijishō • " + title);
-                }
-            }
-            tipsView.setSelected(true);
-        }
-
-        // Swap A/B buttons if preference is enabled
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean swapAB = prefs.getBoolean("swap_a_b_buttons", false);
-
-        int selectIconId = ArcadeRes.getId(context, "arcade_select_icon_text_view");
-        TextView selectIcon = (selectIconId != 0) ? (TextView) rootView.findViewById(selectIconId) : null;
-        if (selectIcon != null) {
-            selectIcon.setText(swapAB ? "B" : "A");
-        }
-
-        int backIconId = ArcadeRes.getId(context, "arcade_back_icon_text_view");
-        TextView backIcon = (backIconId != 0) ? (TextView) rootView.findViewById(backIconId) : null;
-        if (backIcon != null) {
-            backIcon.setText(swapAB ? "A" : "B");
-        }
-
-        // Button A: Play game / Select item
-        int btnAId = ArcadeRes.getId(context, "arcade_btn_action_a");
-        View btnA = (btnAId != 0) ? rootView.findViewById(btnAId) : null;
-        View.OnClickListener aListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                int playId = ArcadeRes.getId(context, "platform_library_play_button");
-                View playBtn = (playId != 0) ? rootView.findViewById(playId) : null;
-                if (playBtn != null && playBtn.getVisibility() == View.VISIBLE) {
-                    playBtn.performClick();
-                } else if (fragment.getActivity() != null) {
-                    View focused = fragment.getActivity().getCurrentFocus();
-                    if (focused != null) {
-                        focused.performClick();
-                    }
-                }
-            }
-        };
-        if (btnA != null) {
-            btnA.setClickable(true);
-            btnA.setFocusable(true);
-            btnA.setOnClickListener(aListener);
-        }
-        if (selectIcon != null) selectIcon.setOnClickListener(aListener);
-        int selectTextId = ArcadeRes.getId(context, "arcade_select_text_view");
-        View selectText = (selectTextId != 0) ? rootView.findViewById(selectTextId) : null;
-        if (selectText != null) selectText.setOnClickListener(aListener);
-        int selectButtonIconId = ArcadeRes.getId(context, "arcade_select_button_icon");
-        View selectButtonIcon = (selectButtonIconId != 0) ? rootView.findViewById(selectButtonIconId) : null;
-        if (selectButtonIcon != null) selectButtonIcon.setOnClickListener(aListener);
-
-        // Button B: Back to Arcade system select
-        int btnBId = ArcadeRes.getId(context, "arcade_btn_action_b");
-        View btnB = (btnBId != 0) ? rootView.findViewById(btnBId) : null;
-        View.OnClickListener bListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    androidx.navigation.NavController nc = androidx.navigation.fragment.FragmentKt.findNavController(fragment);
-                    if (nc.navigateUp()) {
-                        return;
-                    }
-                } catch (Throwable ignored) {}
-                if (fragment.getActivity() != null) {
-                    fragment.getActivity().onBackPressed();
-                }
-            }
-        };
-        if (btnB != null) {
-            btnB.setClickable(true);
-            btnB.setFocusable(true);
-            btnB.setOnClickListener(bListener);
-        }
-        if (backIcon != null) backIcon.setOnClickListener(bListener);
-        int backTextId = ArcadeRes.getId(context, "arcade_back_text_view");
-        View backText = (backTextId != 0) ? rootView.findViewById(backTextId) : null;
-        if (backText != null) backText.setOnClickListener(bListener);
-        int backButtonIconId = ArcadeRes.getId(context, "arcade_back_button_icon");
-        View backButtonIcon = (backButtonIconId != 0) ? rootView.findViewById(backButtonIconId) : null;
-        if (backButtonIcon != null) backButtonIcon.setOnClickListener(bListener);
-
-        // Button X (fallback for options if present)
-        int btnXId = ArcadeRes.getId(context, "arcade_btn_action_x");
-        View btnX = (btnXId != 0) ? rootView.findViewById(btnXId) : null;
-        if (btnX != null) {
-            btnX.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    int detailId = ArcadeRes.getId(rootView.getContext(), "platform_library_detail_button");
-                    View detailBtn = (detailId != 0) ? rootView.findViewById(detailId) : null;
-                    if (detailBtn != null && detailBtn.getVisibility() == View.VISIBLE) {
-                        detailBtn.performClick();
-                        return;
-                    }
-                    int editId = ArcadeRes.getId(rootView.getContext(), "platform_library_edit_button");
-                    View editBtn = (editId != 0) ? rootView.findViewById(editId) : null;
-                    if (editBtn != null) {
-                        editBtn.performClick();
-                    }
-                }
-            });
+            divider.setVisibility(View.GONE);
         }
     }
 

@@ -181,8 +181,8 @@
     <LinearLayout
         android:id="@+id/arcade_legend_bar"
         android:layout_width="wrap_content"
-        android:layout_height="36dp"
-        android:layout_marginBottom="4dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="0dp"
         android:background="@drawable/arcade_legend_pill_bg"
         android:elevation="8dp"
         android:gravity="center"

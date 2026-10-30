@@ -395,7 +395,7 @@ public class ArcadeBackupImporter {
 
             // 4. Parse Emulators and insert platforms
             listener.onProgress("Configurando sistemas e plataformas...", 20, 100);
-            Map<String, PlatformInfo> emulatorMap = parseAndInsertPlatforms(db, emulatorsFile);
+            Map<String, PlatformInfo> emulatorMap = parseAndInsertPlatforms(context, db, emulatorsFile);
             Log.i(TAG, "Mapeados " + emulatorMap.size() + " emuladores/sistemas do ARC Browser.");
 
             // 5. Parse Games and batch insert
@@ -405,7 +405,7 @@ public class ArcadeBackupImporter {
 
             // Link any platforms to RetroArch cores
             listener.onProgress("Vinculando núcleos do RetroArch...", 95, 100);
-            int linkedCount = autoLinkRetroArchPlayers(db);
+            int linkedCount = autoLinkAllPlayers(context, db);
             Log.i(TAG, "Vinculadas " + linkedCount + " plataformas aos núcleos do RetroArch.");
 
             listener.onProgress("Finalizando importação...", 100, 100);
@@ -417,7 +417,7 @@ public class ArcadeBackupImporter {
         }
     }
 
-    private static Map<String, PlatformInfo> parseAndInsertPlatforms(SQLiteDatabase db, File emulatorsFile) throws Exception {
+    private static Map<String, PlatformInfo> parseAndInsertPlatforms(Context context, SQLiteDatabase db, File emulatorsFile) throws Exception {
         Map<String, PlatformInfo> result = new HashMap<>();
 
         XmlPullParser parser = Xml.newPullParser();
@@ -501,7 +501,7 @@ public class ArcadeBackupImporter {
                                 coreKey = getDefaultCoreForShortname(shortname);
                             }
 
-                            PlayerResolution pRes = resolveOrPopulatePlayers(db, shortname, name, coreKey, launchComp, configFile);
+                            PlayerResolution pRes = resolveOrPopulatePlayers(context, db, shortname, name, coreKey, launchComp, configFile);
 
                             // Check if platform exists in DB
                             long pid = -1;
@@ -575,6 +575,9 @@ public class ArcadeBackupImporter {
             return base.replaceAll("(?i)(_libretro_android\\.so|_libretro\\.so|\\.so)$", "").trim();
         }
         String combined = ((desc != null ? desc : "") + " " + (name != null ? name : "")).toLowerCase();
+        if (combined.contains("mupen") || combined.contains("ppsspp")) {
+            return null;
+        }
         Matcher m = Pattern.compile("core:\\s*([a-zA-Z0-9_\\-]+)").matcher(combined);
         if (m.find()) {
             return m.group(1).replaceAll("(?i)(_libretro_android\\.so|_libretro\\.so|\\.so)$", "").trim();
@@ -615,6 +618,8 @@ public class ArcadeBackupImporter {
             case "atari7800": return "prosystem";
             case "lynx": return "handy";
             case "colecovision": case "coleco": case "msx": case "msx2": return "bluemsx";
+            case "n64": return "mupen64plus_next_gles3";
+            case "psp": return "ppsspp";
             case "intellivision": return "freeintv";
             case "ngp": case "ngpc": return "mednafen_ngp";
             case "vectrex": return "vecx";
@@ -624,7 +629,151 @@ public class ArcadeBackupImporter {
         }
     }
 
+    public static boolean isPackageInstalled(Context context, String packageName) {
+        if (context == null || packageName == null || packageName.isEmpty()) return false;
+        try {
+            context.getPackageManager().getPackageInfo(packageName, 0);
+            return true;
+        } catch (Throwable t) {
+            return false;
+        }
+    }
+
+    public static long insertOrGetPlayer(SQLiteDatabase db, String name, String uniqueId, String amStartArguments) {
+        if (db == null) return -1;
+        try {
+            Cursor c = db.rawQuery("SELECT id FROM PlayerEntity WHERE unique_id = ? OR (name = ? AND am_start_arguments = ?) LIMIT 1",
+                new String[]{uniqueId != null ? uniqueId : "", name != null ? name : "", amStartArguments != null ? amStartArguments : ""});
+            if (c != null) {
+                if (c.moveToFirst()) {
+                    long id = c.getLong(0);
+                    c.close();
+                    return id;
+                }
+                c.close();
+            }
+            SQLiteStatement stmt = db.compileStatement(
+                "INSERT INTO PlayerEntity (unique_id, player, name, description, am_start_arguments, kill_package_processes, kill_package_processes_warning, accepted_filename_regex, extra) " +
+                "VALUES (?, 1, ?, '', ?, 0, 0, '.*', '{}')"
+            );
+            stmt.bindString(1, uniqueId != null ? uniqueId : "");
+            stmt.bindString(2, name != null ? name : "");
+            stmt.bindString(3, amStartArguments != null ? amStartArguments : "");
+            long inserted = stmt.executeInsert();
+            if (inserted > 0) return inserted;
+
+            c = db.rawQuery("SELECT id FROM PlayerEntity WHERE unique_id = ? LIMIT 1", new String[]{uniqueId != null ? uniqueId : ""});
+            if (c != null && c.moveToFirst()) {
+                long id = c.getLong(0);
+                c.close();
+                return id;
+            }
+            if (c != null) c.close();
+        } catch (Throwable t) {
+            Log.e(TAG, "Error in insertOrGetPlayer: " + name, t);
+        }
+        return -1L;
+    }
+
+    public static PlayerResolution resolveStandalonePlayers(Context context, SQLiteDatabase db, String shortname, String platformName, String launchComponent) {
+        if (db == null) return null;
+        List<Long> playerIds = new ArrayList<>();
+        long defaultPlayerId = 0L;
+
+        if ("n64".equalsIgnoreCase(shortname) || (platformName != null && platformName.toLowerCase().contains("nintendo 64"))) {
+            long pFz = insertOrGetPlayer(db, "N64 - Mupen64Plus FZ", "n64.org.mupen64plusae.v3.fzurita",
+                "-n org.mupen64plusae.v3.fzurita/paulscode.android.mupen64plusae.SplashActivity\n  -a android.intent.action.VIEW\n  -d {file.uri}");
+            long pFzPro = insertOrGetPlayer(db, "N64 - Mupen64Plus FZ Pro", "n64.org.mupen64plusae.v3.fzurita.pro",
+                "-n org.mupen64plusae.v3.fzurita.pro/paulscode.android.mupen64plusae.SplashActivity\n  -a android.intent.action.VIEW\n  -d {file.uri}");
+            long pAlpha = insertOrGetPlayer(db, "N64 - Mupen64Plus AE v3 Alpha", "n64.org.mupen64plusae.v3.alpha",
+                "-n org.mupen64plusae.v3.alpha/paulscode.android.mupen64plusae.SplashActivity\n  -a android.intent.action.VIEW\n  -d {file.uri}");
+            long pPaul = insertOrGetPlayer(db, "N64 - Mupen64Plus AE", "n64.paulscode.android.mupen64plusae",
+                "-n paulscode.android.mupen64plusae/.MainActivity\n  -a android.intent.action.VIEW\n  -d {file.path}");
+            long pRaDef = insertOrGetPlayer(db, "N64 - RetroArch - mupen64plus_next_gles3", "n64_retroarch_mupen64plus_next_gles3",
+                "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO mupen64plus_next_gles3\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg");
+            long pRa64 = insertOrGetPlayer(db, "N64 - RetroArch 64 - mupen64plus_next_gles3", "n64_retroarch64_mupen64plus_next_gles3",
+                "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO mupen64plus_next_gles3\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg");
+
+            if (isPackageInstalled(context, "org.mupen64plusae.v3.fzurita")) {
+                defaultPlayerId = pFz;
+            } else if (isPackageInstalled(context, "org.mupen64plusae.v3.fzurita.pro")) {
+                defaultPlayerId = pFzPro;
+            } else if (isPackageInstalled(context, "org.mupen64plusae.v3.alpha")) {
+                defaultPlayerId = pAlpha;
+            } else if (isPackageInstalled(context, "paulscode.android.mupen64plusae")) {
+                defaultPlayerId = pPaul;
+            } else if (launchComponent != null && launchComponent.contains("alpha")) {
+                defaultPlayerId = pAlpha;
+            } else if (launchComponent != null && launchComponent.contains("fzurita.pro")) {
+                defaultPlayerId = pFzPro;
+            } else if (launchComponent != null && launchComponent.contains("fzurita")) {
+                defaultPlayerId = pFz;
+            } else if (launchComponent != null && launchComponent.contains("paulscode")) {
+                defaultPlayerId = pPaul;
+            } else {
+                defaultPlayerId = pFz;
+            }
+
+            long[] allN64 = new long[]{pFz, pFzPro, pAlpha, pPaul, pRaDef, pRa64};
+            for (long id : allN64) {
+                if (id > 0 && !playerIds.contains(id)) playerIds.add(id);
+            }
+        } else if ("psp".equalsIgnoreCase(shortname) || (platformName != null && platformName.toLowerCase().contains("psp"))) {
+            long pPpsspp = insertOrGetPlayer(db, "PSP - PPSSPP", "psp.org.ppsspp.ppsspp",
+                "-n org.ppsspp.ppsspp/.PpssppActivity\n  -a android.intent.action.VIEW\n  -c android.intent.category.DEFAULT\n  -d {file.uri}\n  -t application/octet-stream\n  --activity-clear-task  --activity-clear-top  --activity-no-history");
+            long pPpssppGold = insertOrGetPlayer(db, "PSP - PPSSPP Gold", "psp.org.ppsspp.ppssppgold",
+                "-n org.ppsspp.ppssppgold/org.ppsspp.ppsspp.PpssppActivity\n  -a android.intent.action.VIEW\n  -c android.intent.category.DEFAULT\n  -d {file.uri}\n  -t application/octet-stream\n  --activity-clear-task  --activity-clear-top  --activity-no-history");
+            long pPpssppLegacy = insertOrGetPlayer(db, "PSP - PPSSPP Legacy", "psp.org.ppsspp.ppsspplegacy",
+                "-n org.ppsspp.ppsspplegacy/org.ppsspp.ppsspp.PpssppActivity\n  -a android.intent.action.VIEW\n  -c android.intent.category.DEFAULT\n  -d {file.uri}\n  -t application/octet-stream\n  --activity-clear-task  --activity-clear-top  --activity-no-history");
+            long pRaPspDef = insertOrGetPlayer(db, "PSP - RetroArch - ppsspp", "psp_retroarch_ppsspp",
+                "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO ppsspp\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg");
+            long pRaPsp64 = insertOrGetPlayer(db, "PSP - RetroArch 64 - ppsspp", "psp_retroarch64_ppsspp",
+                "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO ppsspp\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg");
+
+            if (isPackageInstalled(context, "org.ppsspp.ppsspp")) {
+                defaultPlayerId = pPpsspp;
+            } else if (isPackageInstalled(context, "org.ppsspp.ppssppgold")) {
+                defaultPlayerId = pPpssppGold;
+            } else if (isPackageInstalled(context, "org.ppsspp.ppsspplegacy")) {
+                defaultPlayerId = pPpssppLegacy;
+            } else if (launchComponent != null && launchComponent.contains("ppssppgold")) {
+                defaultPlayerId = pPpssppGold;
+            } else if (launchComponent != null && launchComponent.contains("ppsspplegacy")) {
+                defaultPlayerId = pPpssppLegacy;
+            } else {
+                defaultPlayerId = pPpsspp;
+            }
+
+            long[] allPsp = new long[]{pPpsspp, pPpssppGold, pPpssppLegacy, pRaPspDef, pRaPsp64};
+            for (long id : allPsp) {
+                if (id > 0 && !playerIds.contains(id)) playerIds.add(id);
+            }
+        }
+
+        if (defaultPlayerId == 0 && !playerIds.isEmpty()) {
+            defaultPlayerId = playerIds.get(0);
+        }
+
+        JSONArray jArr = new JSONArray();
+        for (Long id : playerIds) {
+            jArr.put(id);
+        }
+        return new PlayerResolution(defaultPlayerId, jArr.toString());
+    }
+
     public static PlayerResolution resolveOrPopulatePlayers(SQLiteDatabase db, String shortname, String platformName, String coreKey, String launchComponent, String configFile) {
+        return resolveOrPopulatePlayers(null, db, shortname, platformName, coreKey, launchComponent, configFile);
+    }
+
+    public static PlayerResolution resolveOrPopulatePlayers(Context context, SQLiteDatabase db, String shortname, String platformName, String coreKey, String launchComponent, String configFile) {
+        if ("n64".equalsIgnoreCase(shortname) || (platformName != null && platformName.toLowerCase().contains("nintendo 64"))
+            || (launchComponent != null && launchComponent.contains("mupen"))) {
+            return resolveStandalonePlayers(context, db, "n64", platformName, launchComponent);
+        }
+        if ("psp".equalsIgnoreCase(shortname) || (platformName != null && platformName.toLowerCase().contains("psp"))
+            || (launchComponent != null && launchComponent.contains("ppsspp"))) {
+            return resolveStandalonePlayers(context, db, "psp", platformName, launchComponent);
+        }
         final List<long[]> scoredPlayers = new ArrayList<>();
 
         try {
@@ -716,17 +865,17 @@ public class ArcadeBackupImporter {
         // If no player matched, create standard players prioritizing com.retroarch
         if (matchedIds.isEmpty()) {
             if (coreKey != null && !coreKey.isEmpty()) {
-                long pDef = insertPlayer(db,
+                long pDef = insertOrGetPlayer(db,
                     shortname.toUpperCase() + " - RetroArch - " + coreKey,
                     shortname + "_retroarch_" + coreKey,
                     "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO " + coreKey + "\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg");
 
-                long p64 = insertPlayer(db,
+                long p64 = insertOrGetPlayer(db,
                     shortname.toUpperCase() + " - RetroArch 64 - " + coreKey,
                     shortname + "_retroarch64_" + coreKey,
                     "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO " + coreKey + "\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg");
 
-                long p32 = insertPlayer(db,
+                long p32 = insertOrGetPlayer(db,
                     shortname.toUpperCase() + " - RetroArch 32 - " + coreKey,
                     shortname + "_retroarch32_" + coreKey,
                     "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO " + coreKey + "\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg");
@@ -736,7 +885,7 @@ public class ArcadeBackupImporter {
                 if (p32 > 0) matchedIds.add(p32);
                 bestPlayerId = (pDef > 0) ? pDef : ((p64 > 0) ? p64 : p32);
             } else if (launchComponent != null && !launchComponent.isEmpty()) {
-                long pStandalone = insertPlayer(db,
+                long pStandalone = insertOrGetPlayer(db,
                     platformName + " (" + shortname.toUpperCase() + ")",
                     shortname + "_standalone",
                     "-n " + launchComponent + "\n  -d {file.uri}\n  -a android.intent.action.VIEW");
@@ -775,6 +924,10 @@ public class ArcadeBackupImporter {
     }
 
     public static int autoLinkRetroArchPlayers(SQLiteDatabase db) {
+        return autoLinkAllPlayers(null, db);
+    }
+
+    public static int autoLinkAllPlayers(Context context, SQLiteDatabase db) {
         if (db == null) return 0;
         int linkedCount = 0;
         try {
@@ -790,22 +943,30 @@ public class ArcadeBackupImporter {
                 c.close();
 
                 for (PlatformInfo p : toLinkList) {
-                    String defaultCore = getDefaultCoreForShortname(p.shortname);
-                    if (defaultCore != null) {
-                        PlayerResolution res = resolveOrPopulatePlayers(db, p.shortname, p.name, defaultCore, null, null);
-                        if (res != null && res.defaultPlayerId > 0) {
-                            SQLiteStatement uStmt = db.compileStatement("UPDATE PlatformEntity SET default_player_id = ?, player_id_list = ? WHERE id = ?");
-                            uStmt.bindLong(1, res.defaultPlayerId);
-                            uStmt.bindString(2, res.playerIdListJson);
-                            uStmt.bindLong(3, p.platformId);
-                            uStmt.executeUpdateDelete();
-                            linkedCount++;
+                    PlayerResolution res = null;
+                    if ("n64".equalsIgnoreCase(p.shortname) || (p.name != null && p.name.toLowerCase().contains("nintendo 64"))) {
+                        res = resolveStandalonePlayers(context, db, "n64", p.name, null);
+                    } else if ("psp".equalsIgnoreCase(p.shortname) || (p.name != null && p.name.toLowerCase().contains("psp"))) {
+                        res = resolveStandalonePlayers(context, db, "psp", p.name, null);
+                    } else {
+                        String defaultCore = getDefaultCoreForShortname(p.shortname);
+                        if (defaultCore != null) {
+                            res = resolveOrPopulatePlayers(context, db, p.shortname, p.name, defaultCore, null, null);
                         }
+                    }
+
+                    if (res != null && res.defaultPlayerId > 0) {
+                        SQLiteStatement uStmt = db.compileStatement("UPDATE PlatformEntity SET default_player_id = ?, player_id_list = ? WHERE id = ?");
+                        uStmt.bindLong(1, res.defaultPlayerId);
+                        uStmt.bindString(2, res.playerIdListJson);
+                        uStmt.bindLong(3, p.platformId);
+                        uStmt.executeUpdateDelete();
+                        linkedCount++;
                     }
                 }
             }
         } catch (Throwable t) {
-            Log.e(TAG, "autoLinkRetroArchPlayers error", t);
+            Log.e(TAG, "autoLinkAllPlayers error", t);
         }
         return linkedCount;
     }
