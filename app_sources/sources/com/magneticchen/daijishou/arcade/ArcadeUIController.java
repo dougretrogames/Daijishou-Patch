@@ -209,6 +209,23 @@ public class ArcadeUIController {
                 });
             }
 
+            int playBtnId = ArcadeRes.getId(context, "arcade_btn_action_play");
+            View btnPlay = (playBtnId != 0) ? rootView.findViewById(playBtnId) : null;
+            if (btnPlay != null) {
+                btnPlay.setClickable(true);
+                btnPlay.setFocusable(true);
+                btnPlay.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        int playChipId = ArcadeRes.getId(context, "platform_library_play_button");
+                        View chipPlay = rootView.findViewById(playChipId);
+                        if (chipPlay != null) {
+                            chipPlay.performClick();
+                        }
+                    }
+                });
+            }
+
             int backBtnId = ArcadeRes.getId(context, "arcade_btn_action_back");
             View btnBack = (backBtnId != 0) ? rootView.findViewById(backBtnId) : null;
             if (btnBack != null) {
@@ -222,6 +239,25 @@ public class ArcadeUIController {
                         }
                     }
                 });
+            }
+
+            try {
+                android.content.SharedPreferences prefsLocal = androidx.preference.PreferenceManager.getDefaultSharedPreferences(context);
+                boolean swapAB = prefsLocal.getBoolean("swap_a_b_buttons", false);
+                int aBadgeId = ArcadeRes.getId(context, "arcade_footer_btn_a_badge");
+                android.widget.TextView aBadge = (aBadgeId != 0) ? (android.widget.TextView) rootView.findViewById(aBadgeId) : null;
+                if (aBadge != null) {
+                    aBadge.setText(swapAB ? "B" : "A");
+                    aBadge.setBackgroundTintList(android.content.res.ColorStateList.valueOf(swapAB ? 0xFFD50000 : 0xFF00C853));
+                }
+                int bBadgeId = ArcadeRes.getId(context, "arcade_footer_btn_b_badge");
+                android.widget.TextView bBadge = (bBadgeId != 0) ? (android.widget.TextView) rootView.findViewById(bBadgeId) : null;
+                if (bBadge != null) {
+                    bBadge.setText(swapAB ? "A" : "B");
+                    bBadge.setBackgroundTintList(android.content.res.ColorStateList.valueOf(swapAB ? 0xFF00C853 : 0xFFD50000));
+                }
+            } catch (Throwable tSwap) {
+                tSwap.printStackTrace();
             }
         } catch (Throwable t) {
             t.printStackTrace();

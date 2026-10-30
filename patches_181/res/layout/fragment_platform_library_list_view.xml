@@ -455,7 +455,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <!-- Footer bar with (X) EDITAR ITEM button for touch & visual prompt -->
+        <!-- Footer bar with (X) EDITAR ITEM, (A) JOGAR, (B) VOLTAR for touch & visual prompt -->
     <LinearLayout
         android:id="@+id/arcade_game_footer_bar"
         android:layout_width="wrap_content"
@@ -465,8 +465,8 @@
         android:elevation="8dp"
         android:gravity="center"
         android:orientation="horizontal"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -502,6 +502,44 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
                 android:text="@string/edit_item"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Button A: JOGAR -->
+        <LinearLayout
+            android:id="@+id/arcade_btn_action_play"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="6dp"
+            android:paddingRight="12dp">
+
+            <TextView
+                android:id="@+id/arcade_footer_btn_a_badge"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:background="@drawable/ic_baseline_brightness_1_24"
+                android:backgroundTint="#00C853"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="#FFFFFF"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/arcade_footer_play_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:text="@string/play"
+                android:textAllCaps="true"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"
                 android:textStyle="bold" />
@@ -521,6 +559,7 @@
             android:paddingRight="6dp">
 
             <TextView
+                android:id="@+id/arcade_footer_btn_b_badge"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:background="@drawable/ic_baseline_brightness_1_24"
@@ -537,6 +576,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="6dp"
                 android:text="@string/arcade_legend_back"
+                android:textAllCaps="true"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp"
                 android:textStyle="bold" />
