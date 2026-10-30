@@ -30,6 +30,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -495,6 +497,9 @@ public class ArcadeBackupImporter {
                             String configFile = currentExtras.get("CONFIGFILE");
                             String launchComp = currentData.get("launchComponent");
                             String coreKey = extractCoreKey(libretro, name, currentData.get("description"));
+                            if (coreKey == null || coreKey.isEmpty()) {
+                                coreKey = getDefaultCoreForShortname(shortname);
+                            }
 
                             PlayerResolution pRes = resolveOrPopulatePlayers(db, shortname, name, coreKey, launchComp, configFile);
 
@@ -503,19 +508,15 @@ public class ArcadeBackupImporter {
                             Cursor c = db.rawQuery("SELECT id, default_player_id, player_id_list FROM PlatformEntity WHERE shortname = ? OR name = ? LIMIT 1", new String[]{shortname, name});
                             if (c != null && c.moveToFirst()) {
                                 pid = c.getLong(0);
-                                long existingDefPlayer = c.getLong(1);
-                                String existingPList = c.getString(2);
                                 c.close();
 
-                                // If existing platform has no player linked, link it now!
-                                if (existingDefPlayer == 0 || existingPList == null || "[]".equals(existingPList.trim())) {
-                                    if (pRes != null && pRes.defaultPlayerId > 0) {
-                                        SQLiteStatement uStmt = db.compileStatement("UPDATE PlatformEntity SET default_player_id = ?, player_id_list = ? WHERE id = ?");
-                                        uStmt.bindLong(1, pRes.defaultPlayerId);
-                                        uStmt.bindString(2, pRes.playerIdListJson);
-                                        uStmt.bindLong(3, pid);
-                                        uStmt.executeUpdateDelete();
-                                    }
+                                // Update platform with prioritized com.retroarch player
+                                if (pRes != null && pRes.defaultPlayerId > 0) {
+                                    SQLiteStatement uStmt = db.compileStatement("UPDATE PlatformEntity SET default_player_id = ?, player_id_list = ? WHERE id = ?");
+                                    uStmt.bindLong(1, pRes.defaultPlayerId);
+                                    uStmt.bindString(2, pRes.playerIdListJson);
+                                    uStmt.bindLong(3, pid);
+                                    uStmt.executeUpdateDelete();
                                 }
                             } else {
                                 if (c != null) c.close();
@@ -581,7 +582,7 @@ public class ArcadeBackupImporter {
         Matcher m2 = Pattern.compile("\\(([^)]+)\\)").matcher(combined);
         if (m2.find()) {
             String inside = m2.group(1).trim().toLowerCase().replaceAll("[^a-z0-9_]", "");
-            if (inside.contains("retroarch") || inside.contains("mame") || inside.contains("fba") || inside.contains("snes")) {
+            if (!inside.isEmpty()) {
                 return inside;
             }
         }
@@ -624,8 +625,7 @@ public class ArcadeBackupImporter {
     }
 
     public static PlayerResolution resolveOrPopulatePlayers(SQLiteDatabase db, String shortname, String platformName, String coreKey, String launchComponent, String configFile) {
-        List<Long> matchedIds = new ArrayList<>();
-        long bestPlayerId = 0L;
+        final List<long[]> scoredPlayers = new ArrayList<>();
 
         try {
             Cursor c = db.rawQuery("SELECT id, name, unique_id, am_start_arguments FROM PlayerEntity", null);
@@ -667,13 +667,28 @@ public class ArcadeBackupImporter {
                         }
                     }
 
-                    if (exactCoreMatch) {
-                        matchedIds.add(0, pId);
-                        if (bestPlayerId == 0) bestPlayerId = pId;
-                    } else if (platformMatch) {
-                        if (!matchedIds.contains(pId)) {
-                            matchedIds.add(pId);
+                    if (exactCoreMatch || platformMatch) {
+                        int score = 0;
+                        if (exactCoreMatch && platformMatch) {
+                            score += 1000;
+                        } else if (exactCoreMatch) {
+                            score += 500;
+                        } else {
+                            score += 200;
                         }
+
+                        String args = pArgs != null ? pArgs : "";
+                        String uid = pUniqueId != null ? pUniqueId : "";
+                        // Prioritize package com.retroarch (standard)
+                        if (args.contains("com.retroarch/") || (uid.contains("_retroarch_") && !uid.contains("64") && !uid.contains("32"))) {
+                            score += 100;
+                        } else if (args.contains("com.retroarch.aarch64/") || uid.contains("_retroarch64_")) {
+                            score += 50;
+                        } else if (args.contains("com.retroarch.ra32/") || uid.contains("_retroarch32_")) {
+                            score += 25;
+                        }
+
+                        scoredPlayers.add(new long[]{pId, score});
                     }
                 }
                 c.close();
@@ -682,28 +697,44 @@ public class ArcadeBackupImporter {
             Log.e(TAG, "Error querying PlayerEntity", t);
         }
 
-        // If no player matched, create standard players
+        Collections.sort(scoredPlayers, new Comparator<long[]>() {
+            @Override
+            public int compare(long[] a, long[] b) {
+                return Long.compare(b[1], a[1]);
+            }
+        });
+
+        List<Long> matchedIds = new ArrayList<>();
+        for (long[] sp : scoredPlayers) {
+            if (!matchedIds.contains(sp[0])) {
+                matchedIds.add(sp[0]);
+            }
+        }
+
+        long bestPlayerId = !matchedIds.isEmpty() ? matchedIds.get(0) : 0L;
+
+        // If no player matched, create standard players prioritizing com.retroarch
         if (matchedIds.isEmpty()) {
             if (coreKey != null && !coreKey.isEmpty()) {
-                long p64 = insertPlayer(db,
-                    shortname.toUpperCase() + " - RetroArch 64 - " + coreKey,
-                    shortname + "_retroarch64_" + coreKey,
-                    "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO " + coreKey + "\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg");
-
                 long pDef = insertPlayer(db,
                     shortname.toUpperCase() + " - RetroArch - " + coreKey,
                     shortname + "_retroarch_" + coreKey,
                     "-n com.retroarch/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO " + coreKey + "\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch/files/retroarch.cfg");
+
+                long p64 = insertPlayer(db,
+                    shortname.toUpperCase() + " - RetroArch 64 - " + coreKey,
+                    shortname + "_retroarch64_" + coreKey,
+                    "-n com.retroarch.aarch64/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO " + coreKey + "\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg");
 
                 long p32 = insertPlayer(db,
                     shortname.toUpperCase() + " - RetroArch 32 - " + coreKey,
                     shortname + "_retroarch32_" + coreKey,
                     "-n com.retroarch.ra32/com.retroarch.browser.retroactivity.RetroActivityFuture\n  -e ROM {file.path}\n  -e LIBRETRO " + coreKey + "\n  -e CONFIGFILE /storage/emulated/0/Android/data/com.retroarch.ra32/files/retroarch.cfg");
 
-                if (p64 > 0) matchedIds.add(p64);
                 if (pDef > 0) matchedIds.add(pDef);
+                if (p64 > 0) matchedIds.add(p64);
                 if (p32 > 0) matchedIds.add(p32);
-                bestPlayerId = (p64 > 0) ? p64 : ((pDef > 0) ? pDef : p32);
+                bestPlayerId = (pDef > 0) ? pDef : ((p64 > 0) ? p64 : p32);
             } else if (launchComponent != null && !launchComponent.isEmpty()) {
                 long pStandalone = insertPlayer(db,
                     platformName + " (" + shortname.toUpperCase() + ")",
@@ -747,31 +778,29 @@ public class ArcadeBackupImporter {
         if (db == null) return 0;
         int linkedCount = 0;
         try {
-            Cursor c = db.rawQuery("SELECT id, name, shortname, default_player_id, player_id_list FROM PlatformEntity", null);
+            Cursor c = db.rawQuery("SELECT id, name, shortname FROM PlatformEntity", null);
             if (c != null) {
                 List<PlatformInfo> toLinkList = new ArrayList<>();
                 while (c.moveToNext()) {
                     long id = c.getLong(0);
                     String name = c.getString(1);
                     String shortname = c.getString(2);
-                    long defPlayer = c.getLong(3);
-                    String pList = c.getString(4);
-                    if (defPlayer == 0 || pList == null || "[]".equals(pList.trim())) {
-                        toLinkList.add(new PlatformInfo(id, name, shortname, null));
-                    }
+                    toLinkList.add(new PlatformInfo(id, name, shortname, null));
                 }
                 c.close();
 
                 for (PlatformInfo p : toLinkList) {
                     String defaultCore = getDefaultCoreForShortname(p.shortname);
-                    PlayerResolution res = resolveOrPopulatePlayers(db, p.shortname, p.name, defaultCore, null, null);
-                    if (res != null && res.defaultPlayerId > 0) {
-                        SQLiteStatement uStmt = db.compileStatement("UPDATE PlatformEntity SET default_player_id = ?, player_id_list = ? WHERE id = ?");
-                        uStmt.bindLong(1, res.defaultPlayerId);
-                        uStmt.bindString(2, res.playerIdListJson);
-                        uStmt.bindLong(3, p.platformId);
-                        uStmt.executeUpdateDelete();
-                        linkedCount++;
+                    if (defaultCore != null) {
+                        PlayerResolution res = resolveOrPopulatePlayers(db, p.shortname, p.name, defaultCore, null, null);
+                        if (res != null && res.defaultPlayerId > 0) {
+                            SQLiteStatement uStmt = db.compileStatement("UPDATE PlatformEntity SET default_player_id = ?, player_id_list = ? WHERE id = ?");
+                            uStmt.bindLong(1, res.defaultPlayerId);
+                            uStmt.bindString(2, res.playerIdListJson);
+                            uStmt.bindLong(3, p.platformId);
+                            uStmt.executeUpdateDelete();
+                            linkedCount++;
+                        }
                     }
                 }
             }

@@ -636,7 +636,7 @@
 
     move-result-object p2
 
-    invoke-static {p2}, Lkotlin/jvm/internal/Intrinsics;->checkNotNull(Ljava/lang/Object;)V
+    if-eqz p2, :cond_custom_genre
 
     check-cast p2, Lcom/magneticchen/daijishou/data/Genre;
 
@@ -648,6 +648,12 @@
 
     move-result-object p2
 
+    goto :goto_chip_genre
+
+    :cond_custom_genre
+    move-object p2, p5
+
+    :goto_chip_genre
     check-cast p2, Ljava/lang/CharSequence;
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/chip/Chip;->setText(Ljava/lang/CharSequence;)V
