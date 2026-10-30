@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.view.View;
+import android.view.KeyEvent;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.ListView;
@@ -179,17 +180,84 @@ public class ArcadeUIController {
 
     public static void setupLibraryLegendBar(final androidx.fragment.app.Fragment fragment, final View rootView) {
         if (fragment == null || rootView == null) return;
-        final Context context = rootView.getContext();
-        int barId = ArcadeRes.getId(context, "arcade_legend_bar");
-        View legendBar = (barId != 0) ? rootView.findViewById(barId) : null;
-        if (legendBar != null) {
-            legendBar.setVisibility(View.GONE);
+        try {
+            final Context context = rootView.getContext();
+            boolean arcade = isArcadeMode(context);
+
+            int footerId = ArcadeRes.getId(context, "arcade_game_footer_bar");
+            View footer = (footerId != 0) ? rootView.findViewById(footerId) : null;
+            if (footer != null) {
+                footer.setVisibility(arcade ? View.VISIBLE : View.GONE);
+            }
+
+            if (!arcade) return;
+
+            int editBtnId = ArcadeRes.getId(context, "arcade_btn_action_edit");
+            View btnEdit = (editBtnId != 0) ? rootView.findViewById(editBtnId) : null;
+            if (btnEdit != null) {
+                btnEdit.setClickable(true);
+                btnEdit.setFocusable(true);
+                btnEdit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        int chipEditId = ArcadeRes.getId(context, "platform_library_edit_button");
+                        View chipEdit = rootView.findViewById(chipEditId);
+                        if (chipEdit != null) {
+                            chipEdit.performClick();
+                        }
+                    }
+                });
+            }
+
+            int backBtnId = ArcadeRes.getId(context, "arcade_btn_action_back");
+            View btnBack = (backBtnId != 0) ? rootView.findViewById(backBtnId) : null;
+            if (btnBack != null) {
+                btnBack.setClickable(true);
+                btnBack.setFocusable(true);
+                btnBack.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        if (fragment.getActivity() != null) {
+                            fragment.getActivity().onBackPressed();
+                        }
+                    }
+                });
+            }
+        } catch (Throwable t) {
+            t.printStackTrace();
         }
-        int divId = ArcadeRes.getId(context, "arcade_legend_divider");
-        View divider = (divId != 0) ? rootView.findViewById(divId) : null;
-        if (divider != null) {
-            divider.setVisibility(View.GONE);
+    }
+
+    public static boolean handleActivityKeyDown(Activity activity, int keyCode, KeyEvent event) {
+        if (activity == null || !isArcadeMode(activity)) return false;
+        if (event != null && event.getAction() != KeyEvent.ACTION_DOWN) return false;
+
+        // X Button on Gamepad (KEYCODE_BUTTON_X = 99) or Keyboard X (KEYCODE_X = 52)
+        if (keyCode == KeyEvent.KEYCODE_BUTTON_X || keyCode == KeyEvent.KEYCODE_X) {
+            // First check if game library screen edit button is present & shown
+            int chipEditId = ArcadeRes.getId(activity, "platform_library_edit_button");
+            View chipEdit = (chipEditId != 0) ? activity.findViewById(chipEditId) : null;
+            if (chipEdit != null && chipEdit.isShown()) {
+                chipEdit.performClick();
+                return true;
+            }
+            int footerEditId = ArcadeRes.getId(activity, "arcade_btn_action_edit");
+            View footerEdit = (footerEditId != 0) ? activity.findViewById(footerEditId) : null;
+            if (footerEdit != null && footerEdit.isShown()) {
+                footerEdit.performClick();
+                return true;
+            }
+
+            // Next check if arcade main screen menu button is present & shown
+            int optBtnId = ArcadeRes.getId(activity, "arcade_btn_action_x");
+            View optBtn = (optBtnId != 0) ? activity.findViewById(optBtnId) : null;
+            if (optBtn != null && optBtn.isShown()) {
+                optBtn.performClick();
+                return true;
+            }
         }
+
+        return false;
     }
 
     public static void styleArcadeDialog(final AlertDialog dialog) {

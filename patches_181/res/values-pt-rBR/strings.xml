@@ -726,7 +726,7 @@
     <string name="play_preview_video_summary">Alternar visualização de vídeo.</string>
     <string name="play_preview_video_title">Visualizar vídeo</string>
     <string name="playable_item_and_player_have_different_type">O item jogável e o player têm um tipo diferente.</string>
-    <string name="playable_item_custom_player_settings_hint">Leitor personalizado</string>
+    <string name="playable_item_custom_player_settings_hint">Emulador / Núcleo personalizado</string>
     <string name="playable_item_name_settings_hint">Nome do item jogável</string>
     <string name="playable_item_no_longer_exists_on_analysed_path_warning_format">Este elemento ya no existe en la ruta del archivo analizado, \nrequerido por \"{file.path}\" en el argumento \"am start\". Desanexe e ressincronize.\nCaminho: %s\nURI: %s\nCaminho do URI: %s\nAutoridade do URI: %s</string>
     <string name="playable_item_no_longer_exists_on_uri_warning_format">Este item não existe mais no URI (%s). \nDesanexe e ressincronize.\nURI path: %s\nURI Authority: %s</string>

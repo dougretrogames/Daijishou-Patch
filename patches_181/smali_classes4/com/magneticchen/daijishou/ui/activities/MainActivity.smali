@@ -4855,6 +4855,17 @@
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 11
 
+    invoke-static {p0, p1, p2}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->handleActivityKeyDown(Landroid/app/Activity;ILandroid/view/KeyEvent;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_arcade_key_pass
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_arcade_key_pass
     const-string v0, "keyEvent"
 
     invoke-static {p2, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
