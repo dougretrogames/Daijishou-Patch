@@ -2183,7 +2183,7 @@
 .end method
 
 .method private static final onCreateView$lambda$25(Lcom/magneticchen/daijishou/ui/fragments/nav/PlatformLibraryListViewNavFragment;Landroid/view/View;)V
-    .locals 2
+    .locals 1
 
     const-string p1, "this$0"
 
@@ -2195,21 +2195,7 @@
     if-eqz p1, :cond_0
 
     .line 1010
-    invoke-virtual {p0}, Lcom/magneticchen/daijishou/ui/fragments/nav/PlatformLibraryListViewNavFragment;->getDaijishouLibrary()Lcom/magneticchen/daijishou/ui/model/DaijishouLibraryModel;
-
-    move-result-object v0
-
-    invoke-virtual {p0}, Lcom/magneticchen/daijishou/ui/fragments/nav/PlatformLibraryListViewNavFragment;->requireActivity()Landroidx/fragment/app/FragmentActivity;
-
-    move-result-object p0
-
-    const-string v1, "requireActivity(...)"
-
-    invoke-static {p0, v1}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullExpressionValue(Ljava/lang/Object;Ljava/lang/String;)V
-
-    check-cast p0, Landroid/app/Activity;
-
-    invoke-virtual {v0, p0, p1}, Lcom/magneticchen/daijishou/ui/model/DaijishouLibraryModel;->editPlayableItem(Landroid/app/Activity;Lcom/magneticchen/daijishou/data/db/entity/PlayableItemEntity;)V
+    invoke-static {p0, p1}, Lcom/magneticchen/daijishou/arcade/ArcadeUIController;->safeEditPlayableItem(Landroidx/fragment/app/Fragment;Ljava/lang/Object;)V
 
     :cond_0
     return-void

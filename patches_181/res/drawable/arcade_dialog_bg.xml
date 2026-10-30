@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<inset xmlns:android="http://schemas.android.com/apk/res/android"
-    android:insetLeft="24dp"
-    android:insetTop="24dp"
-    android:insetRight="24dp"
-    android:insetBottom="24dp">
-    <shape android:shape="rectangle">
-        <solid android:color="#FF000000" />
-        <stroke
-            android:width="2.5dp"
-            android:color="#FF9C27B0" />
-        <corners android:radius="16dp" />
-    </shape>
-</inset>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#F50D0D15" />
+    <stroke
+        android:width="2.5dp"
+        android:color="#FF8A2BE2" />
+    <corners android:radius="16dp" />
+</shape>
