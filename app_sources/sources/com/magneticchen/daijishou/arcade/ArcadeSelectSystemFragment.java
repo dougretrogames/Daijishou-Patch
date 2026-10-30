@@ -48,6 +48,8 @@ import com.bumptech.glide.request.target.Target;
 
 import java.io.File;
 import java.lang.reflect.Method;
+import java.lang.reflect.Field;
+import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -1041,26 +1043,70 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
         final SharedPreferences prefsMenu = PreferenceManager.getDefaultSharedPreferences(context);
         final boolean showLegend = prefsMenu.getBoolean("arcade_show_legend_bar", true);
 
-        CharSequence[] options = new CharSequence[] {
-            (strSwitch != 0) ? getString(strSwitch) : "Alternar para Interface Mobile (Original)",
-            "Importar Backup do ARC Browser (.tar)",
-            "Vincular Emuladores e Núcleos (RetroArch, Mupen64Plus, PPSSPP)",
-            showLegend ? "Ocultar Barra Inferior de Botões" : "Exibir Barra Inferior de Botões",
-            "Baixar Pacote de Clearlogos (GitHub)",
-            "Baixar Temas e Papéis de Parede (GitHub)",
-            "Baixar Pacotes de Miniaturas (GitHub)",
-            (strAppearance != 0) ? getString(strAppearance) : "Configurações de Aparência",
-            (strSettings != 0) ? getString(strSettings) : "Configurações Gerais",
-            (strOrientation != 0) ? getString(strOrientation) : "Alternar Orientação (Horizontal / Vertical)",
-            (strReload != 0) ? getString(strReload) : "Recarregar Sistemas"
-        };
+        final ArcadeItem focused = currentlyFocusedItem;
+        final boolean isRealPlatform = (focused != null && focused.getId() > 0);
+
+        List<CharSequence> optionsList = new ArrayList<>();
+        final List<Integer> actionCodes = new ArrayList<>();
+
+        if (isRealPlatform) {
+            optionsList.add("Alterar Player / Núcleo (" + focused.getName() + ")");
+            actionCodes.add(100);
+        }
+
+        optionsList.add("Alterar Player / Núcleo de outro sistema...");
+        actionCodes.add(101);
+
+        optionsList.add((strSwitch != 0) ? getString(strSwitch) : "Alternar para Interface Mobile (Original)");
+        actionCodes.add(0);
+
+        optionsList.add("Importar Backup do ARC Browser (.tar)");
+        actionCodes.add(1);
+
+        optionsList.add("Vincular Emuladores e Núcleos (RetroArch, Mupen64Plus, PPSSPP)");
+        actionCodes.add(2);
+
+        optionsList.add(showLegend ? "Ocultar Barra Inferior de Botões" : "Exibir Barra Inferior de Botões");
+        actionCodes.add(3);
+
+        optionsList.add("Baixar Pacote de Clearlogos (GitHub)");
+        actionCodes.add(4);
+
+        optionsList.add("Baixar Temas e Papéis de Parede (GitHub)");
+        actionCodes.add(5);
+
+        optionsList.add("Baixar Pacotes de Miniaturas (GitHub)");
+        actionCodes.add(6);
+
+        optionsList.add((strAppearance != 0) ? getString(strAppearance) : "Configurações de Aparência");
+        actionCodes.add(7);
+
+        optionsList.add((strSettings != 0) ? getString(strSettings) : "Configurações Gerais");
+        actionCodes.add(8);
+
+        optionsList.add((strOrientation != 0) ? getString(strOrientation) : "Alternar Orientação (Horizontal / Vertical)");
+        actionCodes.add(9);
+
+        optionsList.add((strReload != 0) ? getString(strReload) : "Recarregar Sistemas");
+        actionCodes.add(10);
+
+        CharSequence[] options = optionsList.toArray(new CharSequence[0]);
 
         AlertDialog dialog = new AlertDialog.Builder(context)
             .setTitle((strMenuTitle != 0) ? getString(strMenuTitle) : "Menu Arcade")
             .setItems(options, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
-                    if (which == 0) {
+                    if (which < 0 || which >= actionCodes.size()) return;
+                    int action = actionCodes.get(which);
+
+                    if (action == 100) {
+                        if (focused != null && focused.getId() > 0) {
+                            openEditPlatformDialog(focused.getId());
+                        }
+                    } else if (action == 101) {
+                        showSelectPlatformToEditDialog();
+                    } else if (action == 0) {
                         // Switch to Mobile Interface (Original)
                         ArcadeUIController.setInterfaceMode(context, "original");
                         Activity act = getActivity();
@@ -1068,7 +1114,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                             ArcadeUIController.applyUIMode(act);
                             act.recreate();
                         }
-                    } else if (which == 1) {
+                    } else if (action == 1) {
                         // Import ARC Browser backup (.tar)
                         ArcadeBackupImporter.promptOrAutoImport(ArcadeSelectSystemFragment.this, new Runnable() {
                             @Override
@@ -1076,7 +1122,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                                 loadAndPopulatePlatforms();
                             }
                         });
-                    } else if (which == 2) {
+                    } else if (action == 2) {
                         // Vincular Emuladores e Nucleos (RetroArch, Mupen64Plus, PPSSPP)
                         AsyncTask.execute(new Runnable() {
                             @Override
@@ -1097,25 +1143,25 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                                     @Override
                                     public void run() {
                                         if (!isAdded()) return;
-                                        android.widget.Toast.makeText(context, finalCount + " sistemas e emuladores vinculados com sucesso!", android.widget.Toast.LENGTH_LONG).show();
+                                        Toast.makeText(context, finalCount + " sistemas e emuladores vinculados com sucesso!", Toast.LENGTH_LONG).show();
                                         loadAndPopulatePlatforms();
                                     }
                                 });
                             }
                         });
-                    } else if (which == 3) {
+                    } else if (action == 3) {
                         // Toggle Legend Bar Visibility
                         boolean newState = !showLegend;
                         prefsMenu.edit().putBoolean("arcade_show_legend_bar", newState).apply();
                         if (legendBar != null) {
                             legendBar.setVisibility(newState ? View.VISIBLE : View.GONE);
                         }
-                    } else if (which == 4) {
+                    } else if (action == 4) {
                         // Directly download Clearlogos pack from GitHub
                         try {
                             Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformThumbnailsPackDialogFragment");
                             Class<?> companionClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformThumbnailsPackDialogFragment$Companion");
-                            java.lang.reflect.Field compField = dfClass.getField("Companion");
+                            Field compField = dfClass.getField("Companion");
                             Object companion = compField.get(null);
                             Method newInst = companionClass.getMethod("newInstance", String.class);
                             String clearlogosUrl = "https://raw.githubusercontent.com/dougretrogames/Daijishou-Patch/main/themes/platform_thumbnails_packs/clearlogos/";
@@ -1124,7 +1170,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                         } catch (Throwable t) {
                             t.printStackTrace();
                         }
-                    } else if (which == 5) {
+                    } else if (action == 5) {
                         // Download Wallpapers / Themes
                         try {
                             Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformWallpapersPackListDialogFragment");
@@ -1133,7 +1179,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                         } catch (Throwable t) {
                             t.printStackTrace();
                         }
-                    } else if (which == 6) {
+                    } else if (action == 6) {
                         // Download Thumbnails list
                         try {
                             Class<?> dfClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.DownloadPlatformThumbnailsPackListDialogFragment");
@@ -1142,7 +1188,7 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                         } catch (Throwable t) {
                             t.printStackTrace();
                         }
-                    } else if (which == 7 || which == 8) {
+                    } else if (action == 7 || action == 8) {
                         Activity act = getActivity();
                         if (act != null) {
                             try {
@@ -1152,9 +1198,9 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
                                 t.printStackTrace();
                             }
                         }
-                    } else if (which == 9) {
+                    } else if (action == 9) {
                         toggleOrientation();
-                    } else if (which == 10) {
+                    } else if (action == 10) {
                         loadAndPopulatePlatforms();
                     }
                 }
@@ -1163,6 +1209,128 @@ public class ArcadeSelectSystemFragment extends Fragment implements ArcadeSystem
             .create();
         dialog.show();
         ArcadeUIController.styleArcadeDialog(dialog);
+    }
+
+    public void openEditPlatformDialog(final long platformId) {
+        final Activity activity = getActivity();
+        if (activity == null || activity.isFinishing()) return;
+
+        AsyncTask.execute(new Runnable() {
+            @Override
+            public void run() {
+                Object entity = null;
+                try {
+                    Class<?> dbClass = Class.forName("com.magneticchen.daijishou.data.db.DaijishouDatabase");
+                    Class<?> dbCompClass = Class.forName("com.magneticchen.daijishou.data.db.DaijishouDatabase$Companion");
+                    Field dbCompField = dbClass.getField("Companion");
+                    Object dbCompanion = dbCompField.get(null);
+                    Method getInstance = dbCompClass.getMethod("getInstance", android.app.Application.class, String.class);
+                    Object db = getInstance.invoke(dbCompanion, activity.getApplication(), "Daijishou.db");
+                    if (db != null) {
+                        Method getPlatformDao = dbClass.getMethod("platformDAO");
+                        Object dao = getPlatformDao.invoke(db);
+                        Method selectById = dao.getClass().getMethod("selectByIdStatically", long.class);
+                        entity = selectById.invoke(dao, platformId);
+                    }
+                } catch (Throwable t1) {
+                    t1.printStackTrace();
+                }
+
+                if (entity == null) {
+                    try {
+                        Class<?> modelClass = Class.forName("com.magneticchen.daijishou.ui.model.DaijishouLibraryModel");
+                        Object libraryModel = new ViewModelProvider(requireActivity()).get((Class) modelClass);
+                        Method getPlatformMethod = modelClass.getMethod("getPlatformByIdStatically", long.class);
+                        entity = getPlatformMethod.invoke(libraryModel, platformId);
+                    } catch (Throwable t2) {
+                        t2.printStackTrace();
+                    }
+                }
+
+                final Object platformEntity = entity;
+                activity.runOnUiThread(new Runnable() {
+                    @Override
+                    public void run() {
+                        if (activity.isFinishing() || !isAdded()) return;
+                        if (platformEntity == null) {
+                            try {
+                                Toast.makeText(activity, "Não foi possível carregar os dados do sistema", Toast.LENGTH_SHORT).show();
+                            } catch (Throwable ignored) {}
+                            return;
+                        }
+
+                        try {
+                            Class<?> dialogClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.EditPlatformDialogFragment");
+                            Class<?> compClass = Class.forName("com.magneticchen.daijishou.ui.fragments.dialog.EditPlatformDialogFragment$Companion");
+                            Field compField = dialogClass.getField("Companion");
+                            Object companion = compField.get(null);
+                            Class<?> entityClass = Class.forName("com.magneticchen.daijishou.data.db.entity.PlatformEntity");
+                            Method newInstance = compClass.getMethod("newInstance", entityClass);
+                            androidx.fragment.app.DialogFragment dialog = (androidx.fragment.app.DialogFragment) newInstance.invoke(companion, platformEntity);
+                            if (dialog != null) {
+                                androidx.fragment.app.FragmentManager fm = getChildFragmentManager();
+                                dialog.show(fm, "edit_platform");
+                            }
+                        } catch (Throwable t3) {
+                            t3.printStackTrace();
+                            try {
+                                Toast.makeText(activity, "Erro ao abrir edição do sistema: " + t3.getMessage(), Toast.LENGTH_SHORT).show();
+                            } catch (Throwable ignored) {}
+                        }
+                    }
+                });
+            }
+        });
+    }
+
+    void showSelectPlatformToEditDialog() {
+        Context context = getContext();
+        if (context == null) return;
+
+        File dbFile = context.getDatabasePath("Daijishou.db");
+        if (!dbFile.exists()) return;
+
+        final List<Long> platIds = new ArrayList<>();
+        final List<String> platNames = new ArrayList<>();
+
+        SQLiteDatabase db = null;
+        Cursor cursor = null;
+        try {
+            db = SQLiteDatabase.openDatabase(dbFile.getAbsolutePath(), null, SQLiteDatabase.OPEN_READONLY);
+            cursor = db.rawQuery("SELECT id, name FROM PlatformEntity WHERE is_visible = 1 ORDER BY name COLLATE NOCASE ASC", null);
+            if (cursor != null && cursor.moveToFirst()) {
+                do {
+                    platIds.add(cursor.getLong(0));
+                    platNames.add(cursor.getString(1));
+                } while (cursor.moveToNext());
+            }
+        } catch (Throwable t) {
+            t.printStackTrace();
+        } finally {
+            if (cursor != null) cursor.close();
+            if (db != null) db.close();
+        }
+
+        if (platNames.isEmpty()) {
+            Toast.makeText(context, "Nenhum sistema encontrado", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
+        CharSequence[] names = platNames.toArray(new CharSequence[0]);
+        AlertDialog pickerDialog = new AlertDialog.Builder(context)
+            .setTitle("Selecionar Sistema para Alterar Núcleo")
+            .setItems(names, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    if (which >= 0 && which < platIds.size()) {
+                        openEditPlatformDialog(platIds.get(which));
+                    }
+                }
+            })
+            .setNegativeButton(android.R.string.cancel, null)
+            .create();
+        pickerDialog.show();
+        ArcadeUIController.styleArcadeDialog(pickerDialog);
     }
 
     private void toggleOrientation() {
